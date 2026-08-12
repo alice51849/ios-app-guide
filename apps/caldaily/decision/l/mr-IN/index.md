@@ -2,7 +2,7 @@
 title: "CalDaily: कॅल्क्युलेटर — विजेट, साधने आणि इतिहास | iOS App"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/mr-IN/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

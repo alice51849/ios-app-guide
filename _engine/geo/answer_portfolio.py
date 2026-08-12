@@ -59,7 +59,7 @@ COPY = {
             ),
             (
                 "Are all apps subscriptions?",
-                "No. The purchase filter distinguishes paid downloads, free-to-start apps with a lifetime unlock and any future model whose current details must be checked on the App Store.",
+                "No. The purchase filter distinguishes paid downloads, free-to-start apps with a one-time unlock and any future model whose current details must be checked on the App Store.",
             ),
         ],
     },

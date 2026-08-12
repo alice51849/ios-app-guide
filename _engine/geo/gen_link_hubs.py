@@ -42,6 +42,10 @@ NON_BROWSE_PARENTS = {
     "publications",
 }
 BROWSE_BASENAME = "browse"
+BROWSE_RE = re.compile(r"^browse(-\d+)?\.html$")
+# 產出的 browse 頁一定帶這個註記。刪除舊檔前先確認它有這個記號,才不會誤刪
+# 別人的檔案(這支是唯一會寫 browse*.html 的產生器)。
+BROWSE_MARKER = "<!--iag-link-hub-browse-->"
 MAX_LINKS_PER_PAGE = 1200
 # 讀整個 head 區。曾經只讀 4096 bytes,結果 <title> 落在邊界附近的頁面會
 # 因為 head 多一條 hreflang 就被切掉、退回別的標題,排序位置跟著翻,兩次
@@ -435,10 +439,14 @@ def render_browse(parent, locale, groups, page_no, page_urls, parent_index_url):
     )
     return (
         f'<!DOCTYPE html>\n<html lang="{e(lang)}"{dir_attr}><head>'
+        f"{BROWSE_MARKER}"
         '<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         f"<title>{e(title)}{e(suffix)} | iOS</title>\n"
         f'<meta name="description" content="{e(lead)}">\n'
+        # browse 頁的用途是讓爬蟲走得到子頁,不是自己被收錄:它只有一行正文
+        # 加幾百條連結,進索引只會多出薄頁。noindex,follow 讓發現效果一分不減。
+        '<meta name="robots" content="noindex,follow">\n'
         f'<link rel="canonical" href="{e(canonical, quote=True)}">\n'
         f"{STYLE}\n{feed_discovery_block()}</head><body><main>\n"
         f"{up}"
@@ -573,6 +581,11 @@ def process_parent(name, locale, state):
             continue
         if re.fullmatch(rf"{BROWSE_BASENAME}-\d+\.html", rel):
             continue
+        # 註:曾嘗試在此過濾掉 noindex 頁(理由是不該把爬取預算花在停損頁),
+        # 但它與下方的 skip_browse 判定連動 —— entries 變少會讓「父索引已涵蓋
+        # 大部分子頁」更容易成立,於是部分 browse 頁不再產生,實測反而讓 1,093
+        # 個**可索引**頁失去唯一入連路徑。要重做這個過濾,必須同時把
+        # skip_browse 改成以未過濾的母體計算,並補上清理不再產生的 browse 頁。
         entries.append((rel, path))
     if not entries:
         return
@@ -624,8 +637,11 @@ def process_parent(name, locale, state):
         fname = (
             f"{base_name}.html" if i == 0 else f"{BROWSE_BASENAME}-{i + 1}.html"
         )
+        dest = os.path.join(root, fname)
+        if BROWSE_RE.match(fname):
+            state["kept"].add(os.path.abspath(dest))
         write_if_changed(
-            os.path.join(root, fname),
+            dest,
             render_browse(
                 name, locale, chunk_groups, i + 1, page_urls, parent_index_url
             ),
@@ -694,6 +710,34 @@ def process_parent(name, locale, state):
         inject(sec_index, FULL_BLOCK, full_block(locale, missing, name), state)
 
 
+def cleanup_stale_browse(state):
+    """刪掉這一輪不再產生的 browse 頁。
+
+    沒有這一步的話,父目錄一旦變成「index 已列近全部」(skip_browse)或整個
+    目錄被停損,舊的 browse.html 會留在磁碟上、留在 sitemap 裡,卻沒有任何頁
+    連它 —— 2026-08-10 稽核抓到的 `api/browse.html` 就是這樣變成孤兒的。
+    """
+    for dirpath, dirnames, filenames in os.walk(PAGES):
+        dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS]
+        for fname in filenames:
+            if not BROWSE_RE.match(fname):
+                continue
+            path = os.path.abspath(os.path.join(dirpath, fname))
+            if path in state["kept"]:
+                continue
+            try:
+                with open(path, "r", encoding="utf-8", errors="ignore") as fh:
+                    if BROWSE_MARKER not in fh.read(4096):
+                        continue
+            except OSError:
+                continue
+            state["changed"].append(
+                "- " + os.path.relpath(path, PAGES).replace(os.sep, "/")
+            )
+            if not state["check"]:
+                os.remove(path)
+
+
 def process_root(parents, state):
     root_index = os.path.join(PAGES, "index.html")
     if not os.path.exists(root_index):
@@ -733,11 +777,14 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="只回報會改什麼")
     args = parser.parse_args()
-    state = {"check": args.check, "changed": []}
+    state = {"check": args.check, "changed": [], "kept": set()}
 
     parents = parent_dirs()
     for name, locale in parents:
         process_parent(name, locale, state)
+    # 先清掉不再產生的 browse 頁,再處理首頁 —— 順序反過來的話首頁會連到
+    # 下一秒就被刪掉的檔案。
+    cleanup_stale_browse(state)
     process_root(parents, state)
 
     print(

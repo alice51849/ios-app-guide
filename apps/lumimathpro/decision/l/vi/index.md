@@ -2,7 +2,7 @@
 title: "ứng dụng học toán đầy đủ tốt nhất cho trẻ mẫu giáo và tiểu học"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/vi/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

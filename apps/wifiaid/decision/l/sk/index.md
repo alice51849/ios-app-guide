@@ -2,7 +2,7 @@
 title: "WiFi Aid — Diagnostika siete s dôkazmi | iOS App"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/sk/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

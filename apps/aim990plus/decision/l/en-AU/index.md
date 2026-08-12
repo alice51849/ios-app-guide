@@ -2,7 +2,7 @@
 title: "Aim990 Plus — English Exam Practice Offline | iOS App"
 lang: "en-AU"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/en-AU/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"

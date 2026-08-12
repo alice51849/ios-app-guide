@@ -338,7 +338,7 @@ COPY = {
         "app_title": "Need sound and blending practice before sentences?",
         "app_text": (
             "Lumi Bopomofo is an optional practice layer for listening, tracing, "
-            "tones and syllable blending. It has a one-time lifetime unlock with no "
+            "tones and syllable blending. It has a one-time unlock with no "
             "ads, subscription or account. The free reading cards remain complete "
             "without the app."
         ),

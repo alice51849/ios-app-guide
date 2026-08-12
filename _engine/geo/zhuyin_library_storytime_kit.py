@@ -202,7 +202,7 @@ COPY = {
             "The complete storytime works without an app. Families who want structured "
             "practice after the event can use Lumi Bopomofo for listening, tracing, tones "
             "and blending across all 37 symbols. It is free to download with an optional "
-            "one-time lifetime unlock, has no ads and requires no account."
+            "one-time unlock, has no ads and requires no account."
         ),
         "app_cta": "Try Lumi Bopomofo",
         "related": "Related free resources",

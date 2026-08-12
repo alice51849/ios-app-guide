@@ -216,7 +216,7 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             "free-travel-planner-for-one-journey-with-a-packing-list.html"
         ]
         self.assertIn("packing workflow remains visible", packing)
-        self.assertIn("requires the optional lifetime unlock", packing)
+        self.assertIn("requires the optional one-time unlock", packing)
         self.assertIn("sharing, backup and restore", packing)
 
         sharing = by_path[

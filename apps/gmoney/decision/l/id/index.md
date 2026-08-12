@@ -2,7 +2,7 @@
 title: "aplikasi pelacak anggaran perjalanan terbaik tanpa langganan untuk iPhone"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/id/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

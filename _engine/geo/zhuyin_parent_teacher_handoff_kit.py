@@ -209,7 +209,7 @@ COPY = {
             "The kit works without an app. If the teacher selects symbols, tones or "
             "blends for extra practice, Lumi Bopomofo covers all 37 symbols with "
             "listening, tracing, tone and blending activities. It is free to download "
-            "with an optional one-time lifetime unlock, has no ads and requires no account."
+            "with an optional one-time unlock, has no ads and requires no account."
         ),
         "app_cta": "Try Lumi Bopomofo",
         "related": "Related free resources",

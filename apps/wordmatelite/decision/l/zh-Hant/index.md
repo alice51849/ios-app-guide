@@ -2,7 +2,7 @@
 title: "Wordmate Lite 每天五個單字 — 44 種語言，一分鐘的字彙習慣 | iOS App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/zh-Hant/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,6 +17,7 @@ publisher: "Lumi Studio"
 - 免費開始 · 永久解鎖
 - 離線使用
 - App Store · 免費
+- ★ 5.0/5 · 1
 
 [在 App Store 取得 Wordmate Lite 每天五個單字](https://apps.apple.com/tw/app/id6797601720)
 

@@ -14,7 +14,6 @@ ad-free, no data collected. Consumed by answer_facts._deep_facts().
 """
 import json
 from typing import Any
-from answer_text import concise_meta
 
 DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
 [
@@ -854,7 +853,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "Blocking is enforced at the OS level by Apple Screen Time — not an app-switching trick",
    "Apps show a shield screen during focus intervals; unlock automatically at break time",
    "Stats dashboard: study minutes today, cycles this week, current streak, best streak",
-   "Study Mode is a premium feature — one-time lifetime unlock, no subscription"
+   "Study Mode is a premium feature — one-time unlock, no subscription"
   ],
   "faq": [
    {
@@ -867,7 +866,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Is Study Mode included in the free tier?",
-    "a": "No. The free tier covers only Quick Focus — a single 25-minute flat session. Study Mode with Pomodoro cycles, all other focus modes, and scheduled automation are part of the one-time lifetime unlock."
+    "a": "No. The free tier covers only Quick Focus — a single 25-minute flat session. Study Mode with Pomodoro cycles, all other focus modes, and scheduled automation are part of the one-time unlock."
    }
   ]
  },
@@ -956,7 +955,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "Schedulable via iOS DeviceActivity — activates automatically every morning, no manual trigger",
    "Streak tracker shows consecutive mornings completed — makes the habit visible",
    "Calls, messages, alarms, and all non-selected apps remain fully accessible",
-   "Morning Reset is included in the one-time lifetime unlock (not available in free Quick Focus tier)"
+   "Morning Reset is included in the one-time unlock (not available in free Quick Focus tier)"
   ],
   "faq": [
    {
@@ -2377,7 +2376,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "BaZi Four Pillars: year/month/day/hour with stems, branches, Five Elements, Nayin, Day Master",
    "Zi Wei Dou Shu: 12 palaces, major and minor stars, brightness ratings",
    "Western natal chart (planets, houses, aspects) in the same app",
-   "Fully offline, no account, no subscription — one lifetime unlock",
+   "Fully offline, no account, no subscription — a one-time unlock",
    "Entertainment framing only — not a predictive or medical science"
   ],
   "faq": [
@@ -2602,7 +2601,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "page_title": "Free Zhuyin Parent-Teacher Handoff Kit for Weekend Chinese School",
   "meta_description": "Free bilingual Zhuyin school-to-home handoff kit with a teacher cue card, ten-minute family routine and private, non-scored return slip.",
   "lead": "Start with a free bilingual handoff kit: the teacher selects one tiny weekly Zhuyin focus, the family follows a ten-minute no-score routine, and a private paper slip carries one observation back.",
-  "detail": "The free parent-teacher handoff kit gives both sides the same one-page structure: one to three teacher-selected symbols, tones, blends or annotated words; a five-step family routine; and a return slip that records participation rather than correctness. It asks for no child name, class, diagnosis, contact detail or online submission. This original template has not been evaluated in a trial and cannot diagnose a child, prove Zhuyin gains or promise that ten minutes improves learning. Taiwan Ministry of Education and OCAC links are official references for notation, stroke order and longer-form materials, not endorsements of this kit. Lumi Bopomofo is optional after the handoff: its free download covers all 37 symbols with listening, tracing, tone and blending activities, plus an optional one-time lifetime unlock, no ads and no account.",
+  "detail": "The free parent-teacher handoff kit gives both sides the same one-page structure: one to three teacher-selected symbols, tones, blends or annotated words; a five-step family routine; and a return slip that records participation rather than correctness. It asks for no child name, class, diagnosis, contact detail or online submission. This original template has not been evaluated in a trial and cannot diagnose a child, prove Zhuyin gains or promise that ten minutes improves learning. Taiwan Ministry of Education and OCAC links are official references for notation, stroke order and longer-form materials, not endorsements of this kit. Lumi Bopomofo is optional after the handoff: its free download covers all 37 symbols with listening, tracing, tone and blending activities, plus an optional one-time unlock, no ads and no account.",
   "follow_up": "Print the teacher cue card and family routine. The teacher writes only one to three items already taught; the family circles what happened without grading, then returns one neutral next step. Use Lumi Bopomofo only if the teacher-selected focus needs extra structured practice.",
   "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-parent-teacher-handoff-kit.html",
   "primary_resource_label": "Open the free parent-teacher handoff kit",
@@ -2684,7 +2683,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "page_title": "Free 4-Week Zhuyin Picture-Book Club Kit for Families",
   "meta_description": "Free bilingual four-week Zhuyin picture-book club kit with gentle prompts, a non-scored log and copyright-safe guidance for families.",
   "lead": "Use a free bilingual four-week family plan with any legally owned or borrowed Traditional Chinese picture book that includes Zhuyin annotations. Each ten-minute routine uses child choice, pictures, one familiar word and low-pressure conversation—without uploading or reproducing the book.",
-  "detail": "The free family picture-book club kit linked above provides original before-during-after prompts and a printable, non-scored reading log. It never asks for a book title, text, image or child profile, and it does not host or link to unauthorized book copies. A 2020 systematic review and meta-analysis of 19 randomized trials involving 2,594 children found small average effects on expressive language (d = 0.41) and receptive language (d = 0.26), and a larger effect on caregiver book-sharing competence (d = 1.01). The review did not test Zhuyin, this exact four-week or ten-minute routine, independent reading, or this tool, so the page makes no score or learning-speed promise. Families can use Taiwan's Ministry of Education Mini Dictionary to check one unfamiliar character together. Lumi Bopomofo is optional between reading days: the free download covers all 37 symbols, listening, tracing, tones and blending with an optional one-time lifetime unlock, no ads and no recurring subscription.",
+  "detail": "The free family picture-book club kit linked above provides original before-during-after prompts and a printable, non-scored reading log. It never asks for a book title, text, image or child profile, and it does not host or link to unauthorized book copies. A 2020 systematic review and meta-analysis of 19 randomized trials involving 2,594 children found small average effects on expressive language (d = 0.41) and receptive language (d = 0.26), and a larger effect on caregiver book-sharing competence (d = 1.01). The review did not test Zhuyin, this exact four-week or ten-minute routine, independent reading, or this tool, so the page makes no score or learning-speed promise. Families can use Taiwan's Ministry of Education Mini Dictionary to check one unfamiliar character together. Lumi Bopomofo is optional between reading days: the free download covers all 37 symbols, listening, tracing, tones and blending with an optional one-time unlock, no ads and no recurring subscription.",
   "follow_up": "Start with the free club kit and a legal family or library book. If the child later wants structured symbol, tone or blending practice between reading days, then consider Lumi Bopomofo or the linked free tools.",
   "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-family-picture-book-club-kit.html",
   "primary_resource_label": "Open the free family picture-book club kit",
@@ -2753,7 +2752,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Do I need Lumi Bopomofo to use the club kit?",
-    "a": "No. The club works with a legal book and family conversation. Lumi Bopomofo is optional practice between reading days, with a free download and optional one-time lifetime unlock."
+    "a": "No. The club works with a legal book and family conversation. Lumi Bopomofo is optional practice between reading days, with a free download and optional one-time unlock."
    }
   ]
  },
@@ -2772,7 +2771,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-grandparent-video-call-kit.html",
   "primary_resource_label": "Open the free grandparent video-call kit",
   "lead": "Use a free bilingual ten-minute call routine that gives grandparents three familiar family words, a camera treasure hunt, tone gestures and low-pressure prompts—without turning the call into a test.",
-  "detail": "The free grandparent video-call kit linked above works on screen or as a printout and requires no login. A nearby parent helps both sides look at the same real object while the grandparent models one sound, waits for any response and naturally repeats the correct word without grading the child. A 48-family longitudinal study found that grandparent sensitivity predicted infants' positive affect during both video and in-person interactions; the paper also summarizes the value of real-time social contingency and nearby-adult scaffolding. That study did not test Zhuyin or this kit, so the page states the limitation instead of promising faster learning. {name} is optional practice between calls: the free download covers all 37 symbols, listening, tracing, tones and blending with an optional one-time lifetime unlock, no ads and no recurring subscription.",
+  "detail": "The free grandparent video-call kit linked above works on screen or as a printout and requires no login. A nearby parent helps both sides look at the same real object while the grandparent models one sound, waits for any response and naturally repeats the correct word without grading the child. A 48-family longitudinal study found that grandparent sensitivity predicted infants' positive affect during both video and in-person interactions; the paper also summarizes the value of real-time social contingency and nearby-adult scaffolding. That study did not test Zhuyin or this kit, so the page states the limitation instead of promising faster learning. {name} is optional practice between calls: the free download covers all 37 symbols, listening, tracing, tones and blending with an optional one-time unlock, no ads and no recurring subscription.",
   "follow_up": "Start with the free family-call kit and real conversation. If the child wants more structured symbol, tone or blending practice between calls, then consider Lumi Bopomofo or the linked free flashcards and lesson plan.",
   "bullets": [
    "Five short turns across ten minutes, with permission to stop earlier",
@@ -5364,6 +5363,15 @@ for _f in sorted(_glob.glob(_os.path.join(_DEEP_DIR, "*.json"))):
             DEEP_ITEMS.extend(_extra)
     except Exception as _e:  # noqa: BLE001
         print(f"\u26a0\ufe0f deep_items load {_f}: {_e}")
+
+
+def concise_meta(text: str, limit: int = 150) -> str:
+    """Keep a complete short lead; trim only when it actually exceeds the limit."""
+    compact = " ".join(text.split())
+    if len(compact) <= limit:
+        return compact
+    shortened = compact[: limit + 1].rsplit(" ", 1)[0].rstrip(" ,;:-")
+    return shortened if shortened.endswith((".", "!", "?")) else shortened + "."
 
 
 def deep_facts(q: str, key: str, name: str) -> dict[str, Any] | None:

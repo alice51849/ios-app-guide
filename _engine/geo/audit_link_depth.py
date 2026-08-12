@@ -25,7 +25,9 @@ from urllib.parse import unquote, urljoin, urlsplit
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
-REPORTS = os.path.join(HERE, "reports")
+# 測試會把 GEO_PAGES 指到合成的小樹上;報告輸出也要跟著搬,否則測試會覆寫
+# 真正的 geo/reports/link_depth.json。
+REPORTS = os.environ.get("GEO_REPORTS", os.path.join(HERE, "reports"))
 SITE = os.environ.get(
     "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
 ).rstrip("/")
@@ -168,31 +170,53 @@ def summarize(result):
 
     # 孤兒頁要分兩種:真的該修的(可索引),與刻意 noindex 停損的微語言叢集。
     # 混在一起看會把「已經處理過的決策」誤判成待辦。
-    orphan_noindex = 0
+    # crawl() 已經在讀整份檔案時記過可達頁的 noindex,這裡只要補讀不可達的。
+    noindex_all = set(result["noindex"])
     for url in unreachable:
         try:
             with open(
                 result["url_to_path"][url], "r", encoding="utf-8", errors="ignore"
             ) as fh:
-                head = fh.read(4096)
+                # robots 標籤未必在前 4KB(實測有頁面落在第 10,685 byte),
+                # 截斷讀取會把已停損的頁誤判成可索引。整份讀。
+                head = fh.read()
         except OSError:
             continue
         if NOINDEX_RE.search(head):
-            orphan_noindex += 1
+            noindex_all.add(url)
+    orphan_noindex = len(unreachable & noindex_all)
     orphan_indexable = len(unreachable) - orphan_noindex
+
+    # 主要分母是**可索引頁**。把 noindex 頁算進「3 click 內覆蓋率」等於用一堆
+    # 永遠不會排名的頁充數(2026-08-10 稽核 R3 的主要指正)。noindex 頁單獨列。
+    indexable = known - noindex_all
+    idx_reach = sum(1 for u in indexable if u in depth)
+    idx_within3 = sum(1 for u in indexable if depth.get(u, 99) <= 3)
+    noidx_reach = sum(1 for u in noindex_all if u in depth)
 
     dist = collections.Counter(depth.values())
     by_section = collections.defaultdict(
-        lambda: {"total": 0, "reachable": 0, "unreachable": 0, "depths": collections.Counter()}
+        lambda: {
+            "total": 0,
+            "reachable": 0,
+            "unreachable": 0,
+            "indexable": 0,
+            "indexable_unreachable": 0,
+            "depths": collections.Counter(),
+        }
     )
     for url in known:
         sec = by_section[section_of(url)]
         sec["total"] += 1
+        if url not in noindex_all:
+            sec["indexable"] += 1
         if url in depth:
             sec["reachable"] += 1
             sec["depths"][depth[url]] += 1
         else:
             sec["unreachable"] += 1
+            if url not in noindex_all:
+                sec["indexable_unreachable"] += 1
 
     top = collections.defaultdict(
         lambda: {"total": 0, "reachable": 0, "unreachable": 0, "depth_sum": 0}
@@ -212,6 +236,16 @@ def summarize(result):
             for name, s in by_section.items()
             if s["total"] >= 20 and s["reachable"] == 0
         )
+    )
+    # ≥20 頁的門檻會讓「每個目錄只有 18 頁、分 5 個子目錄」的殘留孤兒永遠計不到
+    # (稽核 R3 §5-D)。可索引頁一頁都不該漏,所以這一份**不設門檻**。
+    orphan_sections_indexable = sorted(
+        (
+            (name, s["indexable_unreachable"])
+            for name, s in by_section.items()
+            if s["indexable_unreachable"]
+        ),
+        key=lambda kv: (-kv[1], kv[0]),
     )
     deep = sorted(
         (
@@ -233,6 +267,22 @@ def summarize(result):
     return {
         "site": SITE,
         "total_pages": len(known),
+        # ── 主要母體:可索引頁 ──────────────────────────────────────────────
+        "indexable_pages": len(indexable),
+        "indexable_reachable": idx_reach,
+        "indexable_orphans": len(indexable) - idx_reach,
+        "indexable_reachable_pct": round(
+            100 * idx_reach / max(1, len(indexable)), 2
+        ),
+        "indexable_within_3_clicks": idx_within3,
+        "indexable_within_3_clicks_pct": round(
+            100 * idx_within3 / max(1, len(indexable)), 2
+        ),
+        # ── 分開列:刻意 noindex 的頁(不進索引,只影響爬取預算)───────────
+        "noindex_pages": len(noindex_all),
+        "noindex_reachable_total": noidx_reach,
+        "noindex_orphans": len(noindex_all) - noidx_reach,
+        # ── 全站(含 noindex)的舊指標,保留給快照對比用 ────────────────────
         "reachable": len(depth),
         "unreachable": len(unreachable),
         "unreachable_indexable": orphan_indexable,
@@ -263,6 +313,12 @@ def summarize(result):
         },
         "fully_orphaned_sections": fully_orphan,
         "fully_orphaned_section_count": len(fully_orphan),
+        "fully_orphaned_section_min_pages": 20,
+        "indexable_orphan_sections": [
+            {"section": name, "indexable_orphans": n}
+            for name, n in orphan_sections_indexable[:200]
+        ],
+        "indexable_orphan_section_count": len(orphan_sections_indexable),
         "sections_min_depth_over_3": deep[:200],
         "unreachable_samples": sorted(unreachable)[:MAX_SAMPLE],
         "read_mb": result["read_mb"],
@@ -275,14 +331,37 @@ def write_markdown(summary, path):
         "",
         f"站台:{summary['site']}",
         "",
+        "## 主要指標(母體=**可索引頁**)",
+        "",
+        "noindex 頁永遠不會排名,算進分母只是充數;下表只看能排名的頁。",
+        "",
+        "| 指標 | 值 |",
+        "|---|---:|",
+        f"| 可索引頁數 | {summary['indexable_pages']:,} |",
+        f"| 從首頁可達 | {summary['indexable_reachable']:,} "
+        f"({summary['indexable_reachable_pct']}%) |",
+        f"| **可索引孤兒(真的要修)** | **{summary['indexable_orphans']:,}** |",
+        f"| 3 次點擊內可達 | {summary['indexable_within_3_clicks']:,} "
+        f"({summary['indexable_within_3_clicks_pct']}%) |",
+        f"| 有可索引孤兒的區塊數(無頁數門檻) | "
+        f"{summary['indexable_orphan_section_count']} |",
+        "",
+        "## 刻意 noindex 的頁(分開列)",
+        "",
+        "| 指標 | 值 |",
+        "|---|---:|",
+        f"| noindex 頁數 | {summary['noindex_pages']:,} |",
+        f"| 其中可達 | {summary['noindex_reachable_total']:,} |",
+        f"| 其中不可達(刻意不接回,省爬取預算) | "
+        f"{summary['noindex_orphans']:,} |",
+        "",
+        "## 全站(含 noindex,僅供對比歷史快照)",
+        "",
         "| 指標 | 值 |",
         "|---|---:|",
         f"| HTML 總頁數 | {summary['total_pages']:,} |",
         f"| 從首頁可達 | {summary['reachable']:,} ({summary['reachable_pct']}%) |",
-        f"| **不可達(孤兒頁)** | **{summary['unreachable']:,}** |",
-        f"| └ 其中可索引(真的要修) | {summary['unreachable_indexable']:,} |",
-        f"| └ 其中刻意 noindex(微語言停損) | "
-        f"{summary['unreachable_noindex_by_design']:,} |",
+        f"| 不可達(孤兒頁) | {summary['unreachable']:,} |",
         f"| 3 次點擊內可達 | {summary['within_3_clicks']:,} "
         f"({summary['within_3_clicks_pct']}%) |",
         f"| 可達頁平均深度 | {summary['avg_depth_reachable']} |",
@@ -309,6 +388,16 @@ def write_markdown(summary, path):
             f"| {name} | {v['total']:,} | {v['reachable']:,} | "
             f"{v['unreachable']:,} | {v['avg_depth'] if v['avg_depth'] is not None else '—'} |"
         )
+    if summary["indexable_orphan_sections"]:
+        lines += [
+            "",
+            "## 還有可索引孤兒的區塊(前 40)",
+            "",
+            "| 區塊 | 可索引孤兒 |",
+            "|---|---:|",
+        ]
+        for row in summary["indexable_orphan_sections"][:40]:
+            lines.append(f"| {row['section']} | {row['indexable_orphans']:,} |")
     if summary["fully_orphaned_sections"]:
         lines += [
             "",
@@ -347,6 +436,15 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--tag", help="另存一份快照 link_depth_<tag>.json")
     ap.add_argument("--compare", help="與 link_depth_<tag>.json 對比")
+    ap.add_argument(
+        "--max-indexable-orphans",
+        type=int,
+        default=None,
+        help=(
+            "可索引孤兒超過這個數就以非 0 結束。publish.py 用它當發布前的閘門:"
+            "連結圖被下游產生器洗掉時,寧可讓管線炸掉,也不要把孤兒站推上線。"
+        ),
+    )
     args = ap.parse_args()
 
     os.makedirs(REPORTS, exist_ok=True)
@@ -362,14 +460,21 @@ def main():
             json.dump(summary, fh, ensure_ascii=False, indent=2)
 
     print(
-        f"總頁 {summary['total_pages']:,} / 可達 {summary['reachable']:,} "
-        f"({summary['reachable_pct']}%) / 孤兒 {summary['unreachable']:,} / "
-        f"3 click 內 {summary['within_3_clicks_pct']}% / "
-        f"平均深度 {summary['avg_depth_reachable']} / 最大 {summary['max_depth']}"
+        f"可索引 {summary['indexable_pages']:,} / 可達 "
+        f"{summary['indexable_reachable']:,} "
+        f"({summary['indexable_reachable_pct']}%) / **可索引孤兒 "
+        f"{summary['indexable_orphans']:,}** / 3 click 內 "
+        f"{summary['indexable_within_3_clicks_pct']}%"
     )
     print(
-        f"孤兒頁拆解:可索引 {summary['unreachable_indexable']:,} / "
-        f"刻意 noindex {summary['unreachable_noindex_by_design']:,}"
+        f"noindex(分開列):{summary['noindex_pages']:,} 頁,"
+        f"可達 {summary['noindex_reachable_total']:,} / "
+        f"不可達 {summary['noindex_orphans']:,}"
+    )
+    print(
+        f"全站 {summary['total_pages']:,} / 可達 {summary['reachable']:,} "
+        f"({summary['reachable_pct']}%) / 孤兒 {summary['unreachable']:,} / "
+        f"平均深度 {summary['avg_depth_reachable']} / 最大 {summary['max_depth']}"
     )
     print("深度分佈:" + ", ".join(
         f"{k}:{v:,}" for k, v in summary["depth_distribution"].items()
@@ -379,21 +484,38 @@ def main():
         snap = os.path.join(REPORTS, f"link_depth_{args.compare}.json")
         if not os.path.exists(snap):
             print(f"(找不到快照 {snap})")
-            return
-        with open(snap, encoding="utf-8") as fh:
-            old = json.load(fh)
-        print(
-            f"\n對比 {args.compare}:"
-            f"\n  不可達 {old['unreachable']:,} → {summary['unreachable']:,}"
-            f" ({summary['unreachable'] - old['unreachable']:+,})"
-            f"\n  其中可索引 {old.get('unreachable_indexable', '?')} → "
-            f"{summary['unreachable_indexable']:,}"
-            f"\n  3 click 內 {old['within_3_clicks']:,} → "
-            f"{summary['within_3_clicks']:,}"
-            f" ({summary['within_3_clicks'] - old['within_3_clicks']:+,})"
-            f"\n  平均深度 {old['avg_depth_reachable']} → "
-            f"{summary['avg_depth_reachable']}"
-        )
+        else:
+            with open(snap, encoding="utf-8") as fh:
+                old = json.load(fh)
+            old_orphans = old.get("indexable_orphans",
+                                  old.get("unreachable_indexable", "?"))
+            print(
+                f"\n對比 {args.compare}:"
+                f"\n  可索引孤兒 {old_orphans:,} → "
+                f"{summary['indexable_orphans']:,}"
+                f"\n  可索引 3 click 內 "
+                f"{old.get('indexable_within_3_clicks', '?')} → "
+                f"{summary['indexable_within_3_clicks']:,}"
+                f"\n  全站不可達 {old['unreachable']:,} → "
+                f"{summary['unreachable']:,}"
+                f" ({summary['unreachable'] - old['unreachable']:+,})"
+                f"\n  平均深度 {old['avg_depth_reachable']} → "
+                f"{summary['avg_depth_reachable']}"
+            )
+
+    if args.max_indexable_orphans is not None:
+        if summary["indexable_orphans"] > args.max_indexable_orphans:
+            worst = ", ".join(
+                f"{r['section']}={r['indexable_orphans']}"
+                for r in summary["indexable_orphan_sections"][:8]
+            )
+            print(
+                f"❌ 可索引孤兒 {summary['indexable_orphans']:,} 頁,超過允許的 "
+                f"{args.max_indexable_orphans}。最嚴重的區塊:{worst}",
+                file=sys.stderr,
+            )
+            return 1
+    return 0
 
 
 if __name__ == "__main__":

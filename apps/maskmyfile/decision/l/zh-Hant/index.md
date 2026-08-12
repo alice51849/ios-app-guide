@@ -2,7 +2,7 @@
 title: "best on-device file redaction app for freelancers sharing client documents"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/zh-Hant/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,6 +17,7 @@ Before a client document leaves your phone, the safest workflow is to hide only 
 - 免費開始 · 永久解鎖
 - 隱私優先／裝置端
 - App Store · 免費
+- ★ 5.0/5 · 1
 
 [Get Mask My File on the App Store →](https://apps.apple.com/tw/app/id6792850916)
 

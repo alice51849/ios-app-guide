@@ -2,7 +2,7 @@
 title: "best passport photo app for babies and toddlers at home"
 lang: "en-US"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/en-US/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

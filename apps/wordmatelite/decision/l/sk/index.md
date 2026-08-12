@@ -2,7 +2,7 @@
 title: "Wordmate Lite: slovíčka denne — Jedna minúta, päť nových slov | iOS App"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/sk/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

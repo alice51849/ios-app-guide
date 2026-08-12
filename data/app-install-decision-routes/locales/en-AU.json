@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "en-AU",
-  "dateModified": "2026-08-10",
-  "content_digest": "47a1f20b0c326142c669281dff07742690caf9951e0ba7a162515d80943f36b0",
-  "generation_digest": "f25707616008a6adb18e1430d1282f1edc5b98aa800618cddbf47f7689b417c0",
+  "dateModified": "2026-08-12",
+  "content_digest": "fd7860852fe532f71023c9ffcc53bbeac22eccc87a2e36bb15660f857eeb7aaf",
+  "generation_digest": "be04b4a04a272df7fe6094c20681d3c37f1efa7b6270a325dcc8ae13e08ac69e",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -1320,7 +1320,8 @@
         "Productivity",
         "Free to start · lifetime unlock",
         "No ads",
-        "App Store · Free"
+        "App Store · Free",
+        "★ 3.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/en-AU/index.html",
@@ -1333,7 +1334,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "AUD",
-        "formatted_price": "Free"
+        "formatted_price": "Free",
+        "rating_value": 3.0,
+        "rating_count": 1
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",

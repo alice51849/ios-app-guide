@@ -2,7 +2,7 @@
 title: "melhor app completo de aprendizagem de matemática para pré-escolar e primeiros anos"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/pt-PT/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

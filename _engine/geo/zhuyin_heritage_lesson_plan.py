@@ -237,7 +237,7 @@ COPY = {
             "The lesson works without an app. Lumi Bopomofo can provide short "
             "listen-and-tap, tracing, tone and blending practice between classes. "
             "It has no ads or account requirement. The free download offers an "
-            "optional one-time lifetime unlock; Lumi Bopomofo Pro is a one-time paid download."
+            "optional one-time unlock; Lumi Bopomofo Pro is a one-time paid download."
         ),
         "free_cta": "Try Lumi Bopomofo",
         "pro_cta": "Get the complete Pro edition",

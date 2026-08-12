@@ -2,7 +2,7 @@
 title: "適合雙語兒童的最佳完整注音學習 App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/zh-Hant/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "أفضل تطبيق لعبارات اللغة العملية للمسافرين مع Apple Watch"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/ar-SA/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

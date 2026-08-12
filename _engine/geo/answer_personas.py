@@ -536,7 +536,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "travel money app no subscription",
             ],
             "persona": "travellers testing a private multi-currency budget before unlocking unlimited trips",
-            "lead": "For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before deciding whether unlimited trips are worth one lifetime unlock.",
+            "lead": "For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before deciding whether unlimited trips are worth a one-time unlock.",
             "paras": [
                 "G+Money Lite includes one trip and up to three expenses free, together with rates, a budget, category statistics, and a summary. Enter each purchase in the local currency and see it in your home currency using a live, saved, or manually set rate; saved rates keep the workflow usable offline.",
                 "If you need more entries or trips, one lifetime purchase removes those limits. There is no subscription, account, or tracking, and the App also supports a Home Screen widget and Apple Watch.",
@@ -546,7 +546,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Local-currency entry with immediate home-currency totals.",
                 "Budget, category statistics, and summary available before purchase.",
                 "Saved or manual exchange rates for offline use.",
-                "One lifetime unlock with no subscription, account, or tracking.",
+                "One one-time unlock with no subscription, account, or tracking.",
             ],
             "steps": [
                 "Set your home currency and create the free trip.",
@@ -620,7 +620,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "Before buying, convert the price into take-home work hours, then label the choice as a need, want or impulse so the trade-off is clear before money leaves your account.",
             "paras": [
                 "HoursTag Lite is a purchase-before Worth Lens rather than a bank-linked budget. It calculates life cost from your take-home value per work hour, keeps the choice and category visible, and builds private value insights from the decisions you save.",
-                "One complete choice can be saved free. A single lifetime unlock adds unlimited choices and edits, targets and progress, sharing, complete insights, and backup and restore without a subscription.",
+                "One complete choice can be saved free. A single one-time unlock adds unlimited choices and edits, targets and progress, sharing, complete insights, and backup and restore without a subscription.",
             ],
             "look": [
                 "Price converted into take-home work hours before purchase.",
@@ -644,7 +644,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
                 {
                     "q": "What can I save for free?",
-                    "a": "You can save one complete choice free; the optional lifetime unlock adds unlimited choices, targets, sharing, complete insights, and backup and restore.",
+                    "a": "You can save one complete choice free; the optional one-time unlock adds unlimited choices, targets, sharing, complete insights, and backup and restore.",
                 },
                 {
                     "q": "Does it require an account or subscription?",
@@ -1673,7 +1673,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Precise image and PDF selections plus searchable text matches.",
                 "Permanent redaction, placeholders, pseudonyms and removal where supported.",
                 "A reopened-output verification step before sharing.",
-                "Batch protection for up to 100 files with one lifetime unlock option.",
+                "Batch protection for up to 100 files with a one-time unlock option.",
             ],
             "steps": [
                 "Import the image, PDF or structured text file you need to share.",
@@ -1828,7 +1828,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Use the free export to check the result against official requirements.",
                 "Unlock more exports once only if you need them.",
             ],
-            "fits": "fits people who need one passport or ID photo now, want to keep photos on their own iPhone, and prefer testing the full workflow free before a single lifetime unlock.",
+            "fits": "fits people who need one passport or ID photo now, want to keep photos on their own iPhone, and prefer testing the full workflow free before a single one-time unlock.",
             "faq": [
                 {
                     "q": "What is free in Snapport Lite?",
@@ -1877,7 +1877,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Save the phrases you expect to need on your trip.",
                 "Unlock the full library once only if the practice style fits you.",
             ],
-            "fits": "fits people preparing for a trip or real conversations who want situational speaking practice free first, then one lifetime unlock for the complete library.",
+            "fits": "fits people preparing for a trip or real conversations who want situational speaking practice free first, then a one-time unlock for the complete library.",
             "faq": [
                 {
                     "q": "What can I use without paying?",
@@ -1976,7 +1976,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Save the words you want to revisit and choose a voice for pronunciation.",
                 "Unlock every language, path and level once only if the daily rhythm sticks.",
             ],
-            "fits": "fits adults who want vocabulary as a one-minute daily habit rather than a flashcard project, with a free path and level to test the rhythm before a single lifetime unlock.",
+            "fits": "fits adults who want vocabulary as a one-minute daily habit rather than a flashcard project, with a free path and level to test the rhythm before a single one-time unlock.",
             "faq": [
                 {
                     "q": "How much can I learn without paying?",

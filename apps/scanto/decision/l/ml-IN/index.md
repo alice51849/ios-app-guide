@@ -2,7 +2,7 @@
 title: "ക്ലൗഡ് ഇല്ലാതെ മികച്ച ഓഫ്ലൈൻ ഡോക്യുമെന്റ് സ്കാനർ ആപ്പ് നഴ്സുമാർക്കായി"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/ml-IN/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

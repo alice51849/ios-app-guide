@@ -12934,7 +12934,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("不是閱讀測驗、程度分級或診斷", traditional)
         self.assertIn("不能證明熟練度", traditional)
         self.assertIn("所有短句皆為本站原創", traditional)
-        self.assertIn("one-time lifetime unlock", english)
+        self.assertIn("one-time unlock", english)
         self.assertIn("一次付費永久解鎖", traditional)
 
     def test_zhuyin_sentence_cards_build_both_pages_and_indexes_idempotently(self):
@@ -13064,7 +13064,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("三篇故事與 18 句文字全部為本站原創", traditional)
         self.assertIn("不是測驗、程度分級或診斷", traditional)
         self.assertIn("注音依教育部辭典標示本調", traditional)
-        self.assertIn("one-time lifetime unlock", english)
+        self.assertIn("one-time unlock", english)
         self.assertIn("一次付費永久解鎖", traditional)
 
     def test_zhuyin_mini_reader_builds_both_pages_and_indexes_idempotently(self):
@@ -13174,7 +13174,7 @@ class GeneratorTests(unittest.TestCase):
             main = page.split("<main>", 1)[1]
             self.assertLess(main.index('id="generator"'), main.index("id6773017109"))
         self.assertIn("no score, timer, level, pass or diagnostic result", english)
-        self.assertIn("one-time lifetime unlock", english)
+        self.assertIn("one-time unlock", english)
         self.assertIn("沒有分數、計時、等級、通過或診斷結果", traditional)
         self.assertIn("一次付費永久解鎖", traditional)
 
@@ -20072,7 +20072,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("records participation, not correctness", english)
         self.assertIn("尚未經試驗評估", traditional)
         self.assertIn("不標對錯，也不給分", traditional)
-        self.assertIn("optional one-time lifetime unlock", english)
+        self.assertIn("optional one-time unlock", english)
         self.assertIn("一次性永久解鎖", traditional)
 
     def test_parent_teacher_handoff_builds_both_pages_and_index_card(self):
@@ -20282,7 +20282,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("did not test Zhuyin", english)
         self.assertIn("不託管、不重製", traditional)
         self.assertIn("沒有測試注音", traditional)
-        self.assertIn("one-time lifetime unlock", english)
+        self.assertIn("one-time unlock", english)
         self.assertIn("一次性永久解鎖", traditional)
 
     def test_picture_book_club_builds_both_pages_and_index_card(self):
@@ -20389,7 +20389,7 @@ class GeneratorTests(unittest.TestCase):
             self.assertNotIn("getUserMedia", page)
         self.assertIn("did not test Zhuyin learning or this kit", english)
         self.assertIn("沒有測試注音學習，也沒有測試本工具", traditional)
-        self.assertIn("one-time lifetime unlock", english)
+        self.assertIn("one-time unlock", english)
         self.assertIn("一次性永久解鎖", traditional)
 
     def test_grandparent_call_kit_builds_both_pages_and_index_card(self):
@@ -20522,7 +20522,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("不是學校評量", traditional)
         self.assertIn("不是官方評量", traditional)
         self.assertIn("不產生總分或分級", traditional)
-        self.assertIn("one-time lifetime unlock", english)
+        self.assertIn("one-time unlock", english)
         self.assertIn("一次性永久解鎖", traditional)
         schemas = [
             json.loads(block)
@@ -20788,7 +20788,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("台灣教育部", traditional)
         self.assertIn("does not claim to teach all 37", english)
         self.assertIn("不宣稱五天就能學完全部 37 個注音", traditional)
-        self.assertIn("one-time lifetime unlock", english)
+        self.assertIn("one-time unlock", english)
         self.assertNotIn("subscription option", english)
 
     def test_heritage_lesson_plan_builds_both_pages_and_sitemap(self):
@@ -21865,7 +21865,7 @@ class GeneratorTests(unittest.TestCase):
             fallback["gap_queries"],
         )
         self.assertEqual("aibriefpack-free-to-start", slug)
-        self.assertIn("one-time lifetime unlock", page)
+        self.assertIn("one-time unlock", page)
         self.assertIn("Publisher disclosure:", page)
         self.assertIn(
             "not an independent review or ranking",
@@ -21976,7 +21976,7 @@ class GeneratorTests(unittest.TestCase):
                 Path(directory) / "answers" / f"{cyca_slug}.html"
             ).read_text(encoding="utf-8")
             self.assertIn("free to download", cyca.lower())
-            self.assertIn("one-time lifetime unlock", cyca.lower())
+            self.assertIn("one-time unlock", cyca.lower())
             self.assertNotIn("paid download", cyca.lower())
 
             snapport_slug = gen_cost_compare.build("snapport")
@@ -24916,7 +24916,7 @@ class GeneratorTests(unittest.TestCase):
         slug, page = aeo_pages.hub_page("aim990", [])
         self.assertEqual("aim990-free-to-start", slug)
         self.assertEqual(slug, aeo_pages.alternative_hub_slug("aim990"))
-        self.assertIn("one-time lifetime unlock", page)
+        self.assertIn("one-time unlock", page)
         self.assertIn("free to download", page)
         self.assertIn("no recurring subscription", page)
         self.assertNotIn("optional subscription plans", page)
@@ -24971,7 +24971,7 @@ class GeneratorTests(unittest.TestCase):
                 elif profile == "free_to_start":
                     self.assertIn("free to download", actual_page.lower())
                     self.assertIn(
-                        "one-time lifetime unlock", actual_page.lower()
+                        "one-time unlock", actual_page.lower()
                     )
                 else:
                     self.assertNotIn("pay once", actual_page.lower())

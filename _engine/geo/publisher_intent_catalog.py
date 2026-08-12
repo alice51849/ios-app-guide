@@ -398,7 +398,7 @@ METHODOLOGY = (
 
 PURCHASE_LABELS = {
     "paid_upfront": "Paid download",
-    "free_with_lifetime_unlock": "Free to start · lifetime unlock",
+    "free_with_lifetime_unlock": "Free to start · one-time unlock",
     "free": "Free",
     "flexible": "Flexible · check listing",
     "neutral": "Check current listing",

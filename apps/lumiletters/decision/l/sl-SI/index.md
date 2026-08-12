@@ -2,7 +2,7 @@
 title: "najboljša izobraževalna igra za otroke brez oglasov na iPhonu"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/sl-SI/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

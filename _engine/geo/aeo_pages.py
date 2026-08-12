@@ -95,7 +95,132 @@ CURATED_FALLBACK = {
             "on-device OCR brief app with no account",
             "free-to-start AI brief app with a one-time unlock",
         ],
-        "top_competitors": [],
+        "top_competitors": [
+            ["notion", 0],
+            ["google keep", 0],
+            ["microsoft onenote", 0],
+            ["evernote", 0],
+        ],
+    },
+    "dailymatelite": {
+        "key": "dailymatelite",
+        "gap_queries": [
+            "best free travel phrasebook app with real dialogues for iphone",
+            "free travel phrase app you can try before paying anything",
+            "situational travel phrases app without a subscription",
+            "travel phrasebook app with a one-time unlock",
+        ],
+        "top_competitors": [
+            ["duolingo", 0],
+            ["drops", 0],
+            ["memrise", 0],
+            ["pimsleur", 0],
+        ],
+    },
+    "snapportlite": {
+        "key": "snapportlite",
+        "gap_queries": [
+            "best free passport photo app for iphone that works offline",
+            "id photo at home without uploading to a website",
+            "passport photo app with a one-time unlock instead of per-photo fees",
+            "print-ready visa photo sheet from an iphone",
+        ],
+        "top_competitors": [
+            ["passport photo maker", 0],
+            ["passport photo booth", 0],
+            ["id photo passport photo", 0],
+            ["idphoto4you", 0],
+        ],
+    },
+    "mochidonestamp": {
+        "key": "mochidonestamp",
+        "gap_queries": [
+            "best last time tracker app for household maintenance without a subscription",
+            "app to record when i last changed the sheets or watered the plants",
+            "when did i last do it app for iphone",
+            "home maintenance reminder app with a one-time unlock",
+        ],
+        "top_competitors": [
+            ["tody", 0],
+            ["sweepy", 0],
+            ["homeroutines", 0],
+            ["cozi family organizer", 0],
+        ],
+    },
+    "hourstaglite": {
+        "key": "hourstaglite",
+        "gap_queries": [
+            "best app to convert prices into work hours before buying",
+            "app that shows how many hours of work a purchase costs",
+            "spending awareness app without a subscription",
+            "free price in work hours calculator for iphone",
+        ],
+        "top_competitors": [
+            ["spendee budget expense tracker", 0],
+            ["ynab you need a budget", 0],
+            ["toshl finance", 0],
+            ["everydollar budgeting app", 0],
+        ],
+    },
+    "gmoneylite": {
+        "key": "gmoneylite",
+        "gap_queries": [
+            "best free travel expense tracker with currency conversion for iphone",
+            "travel money app that logs spending in local and home currency",
+            "trip expense tracker without a monthly subscription",
+            "offline currency and expense app for travellers",
+        ],
+        "top_competitors": [
+            ["trail wallet", 0],
+            ["splitwise", 0],
+            ["currency converter plus", 0],
+            ["tricount", 0],
+        ],
+    },
+    "wifiaid": {
+        "key": "wifiaid",
+        "gap_queries": [
+            "best wifi troubleshooting app for remote workers with connected but no internet",
+            "app that tells me whether wifi dns or the server is the problem",
+            "iphone network diagnostic app without an account",
+            "pay once wifi diagnostics app for iphone",
+        ],
+        "top_competitors": [
+            ["fing network scanner", 0],
+            ["speedtest by ookla", 0],
+            ["network analyzer", 0],
+            ["wifi sweetspots", 0],
+        ],
+    },
+    "maskmyfile": {
+        "key": "maskmyfile",
+        "gap_queries": [
+            "best on-device file redaction app for freelancers sharing client documents",
+            "redact names and account numbers in a pdf on iphone",
+            "blur private data in screenshots before sharing",
+            "offline redaction app with no cloud upload",
+        ],
+        "top_competitors": [
+            ["adobe acrobat reader", 0],
+            ["pdf expert", 0],
+            ["redacted", 0],
+            ["pdfelement", 0],
+        ],
+    },
+    "aim990plus": {
+        "key": "aim990plus",
+        "gap_queries": [
+            "best offline English listening and reading exam trainer for iPhone",
+            "toeic style listening practice app without a subscription",
+            "english exam trainer that works with no internet",
+            "pay once english listening and reading practice app",
+        ],
+        "top_competitors": [
+            ["toeic practice test", 0],
+            ["magoosh toeic prep", 0],
+            ["english listening speaking", 0],
+            ["toeic vocabulary builder", 0],
+        ],
     },
 }
 
@@ -145,6 +270,18 @@ BRAND = {
     "anki": "Anki", "drops": "Drops", "memrise": "Memrise", "quizlet": "Quizlet",
     "duolingo": "Duolingo", "pimsleur": "Pimsleur",
     "wanderlog": "Wanderlog", "tripit": "TripIt", "tripsy": "Tripsy", "lambus": "Lambus",
+    # 2026-08 新增:Lite / 工具型 App 的常見對照組
+    "notion": "Notion", "evernote": "Evernote", "idphoto4you": "IDPhoto4You",
+    "tody": "Tody", "sweepy": "Sweepy", "homeroutines": "HomeRoutines",
+    "toshl finance": "Toshl Finance", "trail wallet": "Trail Wallet",
+    "splitwise": "Splitwise", "tricount": "Tricount",
+    "fing network scanner": "Fing", "speedtest by ookla": "Speedtest by Ookla",
+    "network analyzer": "Network Analyzer", "wifi sweetspots": "WiFi SweetSpots",
+    "adobe acrobat reader": "Adobe Acrobat Reader", "pdf expert": "PDF Expert",
+    "redacted": "Redacted", "pdfelement": "PDFelement",
+    "toeic practice test": "TOEIC Practice Test", "magoosh toeic prep": "Magoosh TOEIC Prep",
+    "english listening speaking": "English Listening & Speaking",
+    "toeic vocabulary builder": "TOEIC Vocabulary Builder",
 }
 
 ATTRS = [  # (顯示, cta_bullets 命中關鍵詞)
@@ -274,13 +411,13 @@ def positioning(key, noun):
                 "slug": f"{key}-free-to-start",
             }
         return {
-            "suffix": "free download, lifetime unlock",
-            "description": f"{name} is free to download, with a one-time lifetime unlock and no recurring subscription.",
-            "intro": f"{name} is a {noun} that is free to download, with a one-time lifetime unlock.",
+            "suffix": "free download, one-time unlock",
+            "description": f"{name} is free to download, with a one-time unlock and no recurring subscription.",
+            "intro": f"{name} is a {noun} that is free to download, with a one-time unlock.",
             "heading": f"Why people choose a free-to-start {noun}",
             "cta": f"Download {name} free on the App Store",
-            "hub_title": f"Free-download {noun} with lifetime unlock — {name}",
-            "hub_heading": f"A free-download {noun} with lifetime unlock: {name}",
+            "hub_title": f"Free-download {noun} with one-time unlock — {name}",
+            "hub_heading": f"A free-download {noun} with one-time unlock: {name}",
             "hub_section": "What the app includes",
             "slug": f"{key}-free-to-start",
         }
@@ -325,6 +462,22 @@ def cat_noun(key):
         return "one-trip itinerary planner", "TravelApplication"
     if key == "wordmate":
         return "vocabulary learning app", "EducationalApplication"
+    if key == "dailymatelite":
+        return "travel phrasebook app", "EducationalApplication"
+    if key == "snapportlite":
+        return "passport photo app", "PhotoApplication"
+    if key == "mochidonestamp":
+        return "last-time tracker for household tasks", "LifestyleApplication"
+    if key == "hourstaglite":
+        return "price-in-work-hours app", "FinanceApplication"
+    if key == "gmoneylite":
+        return "travel expense and currency app", "FinanceApplication"
+    if key == "wifiaid":
+        return "Wi-Fi diagnostics app", "UtilitiesApplication"
+    if key == "maskmyfile":
+        return "on-device file redaction app", "UtilitiesApplication"
+    if key == "aim990plus":
+        return "English listening and reading exam trainer", "EducationalApplication"
     return CAT_NOUN.get(APPS[key].get("category", "productivity"), ("app", "MobileApplication"))
 
 
@@ -411,7 +564,7 @@ def comparison_table(key, comp_name):
                 "flexible": "✅ One-time unlock option; optional subscriptions",
                 "pay_once": "✅ One-time purchase; no subscription",
                 "no_subscription": "✅ No subscription",
-                "free_to_start": "✅ Free download; one-time lifetime unlock",
+                "free_to_start": "✅ Free download; one-time unlock",
                 "free": "✅ Free",
                 "neutral": "Check current App Store listing",
             }[profile]
@@ -476,11 +629,11 @@ def faq_for(key, comp_name, gap_queries):
         else:
             qa = [
                 (f"Can I try {a['name']} for free?",
-                 f"Yes. {a['name']} is free to download and offers a one-time lifetime unlock, "
+                 f"Yes. {a['name']} is free to download and offers a one-time unlock, "
                  "with no recurring subscription. "
                  f"See the current App Store listing: {url}"),
                 (f"What makes {a['name']} an alternative to {comp_name}?",
-                 f"{a['name']} is a free-to-start {noun} for iPhone with a one-time lifetime unlock."),
+                 f"{a['name']} is a free-to-start {noun} for iPhone with a one-time unlock."),
             ]
     elif profile == "free":
         qa = [

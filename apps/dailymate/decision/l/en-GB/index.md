@@ -2,7 +2,7 @@
 title: "best practical language phrase app for travelers with apple watch"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/en-GB/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

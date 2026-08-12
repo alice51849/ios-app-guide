@@ -145,7 +145,7 @@ COPY = {
         "app_title": "Need symbol, tone or blending practice before story work?",
         "app_text": (
             "Lumi Bopomofo is an optional practice layer for listening, tracing, tones "
-            "and syllable blending. It has a one-time lifetime unlock with no ads, "
+            "and syllable blending. It has a one-time unlock with no ads, "
             "subscription or account. These free sequencing cards remain complete without it."
         ),
         "app_cta": "Parents: see Lumi Bopomofo on the App Store",

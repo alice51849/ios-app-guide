@@ -4,9 +4,9 @@
   "name": "Lumi Studio App Install Decision Routes",
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.json",
-  "dateModified": "2026-08-10",
-  "content_digest": "47a1f20b0c326142c669281dff07742690caf9951e0ba7a162515d80943f36b0",
-  "generation_digest": "f25707616008a6adb18e1430d1282f1edc5b98aa800618cddbf47f7689b417c0",
+  "dateModified": "2026-08-12",
+  "content_digest": "fd7860852fe532f71023c9ffcc53bbeac22eccc87a2e36bb15660f857eeb7aaf",
+  "generation_digest": "be04b4a04a272df7fe6094c20681d3c37f1efa7b6270a325dcc8ae13e08ac69e",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -15017,7 +15017,8 @@
         "Productivity",
         "Free to start · lifetime unlock",
         "No ads",
-        "App Store · Free"
+        "App Store · Free",
+        "★ 3.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/en-AU/index.html",
@@ -15030,7 +15031,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "AUD",
-        "formatted_price": "Free"
+        "formatted_price": "Free",
+        "rating_value": 3.0,
+        "rating_count": 1
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
@@ -71956,7 +71959,7 @@
       "category": "photo-utility",
       "category_label": "Фото и инструменты",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -71968,7 +71971,7 @@
       "device_labels": [],
       "badge_labels": [
         "Фото и инструменты",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Лично / на устройстве",
         "App Store · Бесплатно"
       ],
@@ -72051,7 +72054,7 @@
       "category": "lifestyle",
       "category_label": "Образ жизни",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -72059,7 +72062,7 @@
       "device_labels": [],
       "badge_labels": [
         "Образ жизни",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "App Store · Бесплатно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/mochidonestamp.html",
@@ -72096,7 +72099,7 @@
       "category": "productivity",
       "category_label": "Работа и организация",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -72108,7 +72111,7 @@
       "device_labels": [],
       "badge_labels": [
         "Работа и организация",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Лично / на устройстве",
         "App Store · Бесплатно"
       ],
@@ -72146,7 +72149,7 @@
       "category": "education",
       "category_label": "Образование",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -72154,7 +72157,7 @@
       "device_labels": [],
       "badge_labels": [
         "Образование",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "App Store · Бесплатно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -72236,7 +72239,7 @@
       "category": "utility",
       "category_label": "Ещё",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -72248,7 +72251,7 @@
       ],
       "badge_labels": [
         "Ещё",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Виджет",
         "App Store · Бесплатно"
       ],
@@ -72286,7 +72289,7 @@
       "category": "productivity",
       "category_label": "Работа и организация",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -72294,7 +72297,7 @@
       "device_labels": [],
       "badge_labels": [
         "Работа и организация",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "App Store · Бесплатно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -72331,7 +72334,7 @@
       "category": "health",
       "category_label": "Здоровье",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -72343,7 +72346,7 @@
       "device_labels": [],
       "badge_labels": [
         "Здоровье",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Лично / на устройстве",
         "App Store · Бесплатно"
       ],
@@ -72431,7 +72434,7 @@
       "category": "kids",
       "category_label": "Дети и обучение",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -72439,7 +72442,7 @@
       "device_labels": [],
       "badge_labels": [
         "Дети и обучение",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "App Store · Бесплатно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/dailymatelite.html",
@@ -72529,7 +72532,7 @@
       "category": "finance",
       "category_label": "Финансы и путешествия",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -72541,7 +72544,7 @@
       "device_labels": [],
       "badge_labels": [
         "Финансы и путешествия",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Автономно",
         "App Store · Бесплатно"
       ],
@@ -72579,7 +72582,7 @@
       "category": "finance",
       "category_label": "Финансы и путешествия",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -72587,7 +72590,7 @@
       "device_labels": [],
       "badge_labels": [
         "Финансы и путешествия",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "App Store · Бесплатно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/hourstaglite.html",
@@ -72677,7 +72680,7 @@
       "category": "productivity",
       "category_label": "Работа и организация",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -72691,7 +72694,7 @@
       "device_labels": [],
       "badge_labels": [
         "Работа и организация",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Без рекламы",
         "Лично / на устройстве",
         "App Store · Бесплатно"
@@ -72730,7 +72733,7 @@
       "category": "kids",
       "category_label": "Дети и обучение",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -72742,7 +72745,7 @@
       "device_labels": [],
       "badge_labels": [
         "Дети и обучение",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Без рекламы",
         "App Store · Бесплатно"
       ],
@@ -72830,7 +72833,7 @@
       "category": "kids",
       "category_label": "Дети и обучение",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -72842,7 +72845,7 @@
       "device_labels": [],
       "badge_labels": [
         "Дети и обучение",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Без рекламы",
         "App Store · Бесплатно"
       ],
@@ -72930,7 +72933,7 @@
       "category": "kids",
       "category_label": "Дети и обучение",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -72942,7 +72945,7 @@
       "device_labels": [],
       "badge_labels": [
         "Дети и обучение",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Без рекламы",
         "App Store · Бесплатно"
       ],
@@ -73030,7 +73033,7 @@
       "category": "kids",
       "category_label": "Дети и обучение",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -73042,7 +73045,7 @@
       "device_labels": [],
       "badge_labels": [
         "Дети и обучение",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Без рекламы",
         "App Store · Бесплатно"
       ],
@@ -73130,7 +73133,7 @@
       "category": "kids",
       "category_label": "Дети и обучение",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -73142,7 +73145,7 @@
       "device_labels": [],
       "badge_labels": [
         "Дети и обучение",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Без рекламы",
         "App Store · Бесплатно"
       ],
@@ -73180,7 +73183,7 @@
       "category": "kids",
       "category_label": "Дети и обучение",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -73194,7 +73197,7 @@
       "device_labels": [],
       "badge_labels": [
         "Дети и обучение",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Без рекламы",
         "Без отслеживания",
         "App Store · Бесплатно"
@@ -73233,7 +73236,7 @@
       "category": "productivity",
       "category_label": "Работа и организация",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -73245,7 +73248,7 @@
       "device_labels": [],
       "badge_labels": [
         "Работа и организация",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Без рекламы",
         "App Store · Бесплатно"
       ],
@@ -73283,7 +73286,7 @@
       "category": "photo-utility",
       "category_label": "Фото и инструменты",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -73291,7 +73294,7 @@
       "device_labels": [],
       "badge_labels": [
         "Фото и инструменты",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "App Store · Бесплатно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -73328,7 +73331,7 @@
       "category": "photo-utility",
       "category_label": "Фото и инструменты",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -73340,7 +73343,7 @@
       "device_labels": [],
       "badge_labels": [
         "Фото и инструменты",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Лично / на устройстве",
         "App Store · Бесплатно"
       ],
@@ -73378,7 +73381,7 @@
       "category": "productivity",
       "category_label": "Работа и организация",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -73390,7 +73393,7 @@
       "device_labels": [],
       "badge_labels": [
         "Работа и организация",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Лично / на устройстве",
         "App Store · Бесплатно"
       ],
@@ -73428,7 +73431,7 @@
       "category": "sleep-sound",
       "category_label": "Сон и концентрация",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -73442,7 +73445,7 @@
       "device_labels": [],
       "badge_labels": [
         "Сон и концентрация",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Автономно",
         "Без рекламы",
         "App Store · Бесплатно"
@@ -73531,7 +73534,7 @@
       "category": "photo-utility",
       "category_label": "Фото и инструменты",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -73543,7 +73546,7 @@
       "device_labels": [],
       "badge_labels": [
         "Фото и инструменты",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Автономно",
         "App Store · Бесплатно"
       ],
@@ -73581,7 +73584,7 @@
       "category": "productivity",
       "category_label": "Работа и организация",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -73593,7 +73596,7 @@
       "device_labels": [],
       "badge_labels": [
         "Работа и организация",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Лично / на устройстве",
         "App Store · Бесплатно"
       ],
@@ -73631,7 +73634,7 @@
       "category": "travel",
       "category_label": "Путешествия",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -73639,7 +73642,7 @@
       "device_labels": [],
       "badge_labels": [
         "Путешествия",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "App Store · Бесплатно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -73732,7 +73735,7 @@
       "category": "photo-utility",
       "category_label": "Фото и инструменты",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -73744,7 +73747,7 @@
       "device_labels": [],
       "badge_labels": [
         "Фото и инструменты",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Лично / на устройстве",
         "App Store · Бесплатно"
       ],
@@ -73782,7 +73785,7 @@
       "category": "kids",
       "category_label": "Дети и обучение",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Бесплатно начать · пожизненная разблокировка",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -73794,7 +73797,7 @@
       "device_labels": [],
       "badge_labels": [
         "Дети и обучение",
-        "Бесплатно начать · пожизненная разблокировка",
+        "Бесплатно начать · разблокировка за одну покупку",
         "Автономно",
         "App Store · Бесплатно"
       ],
@@ -95221,7 +95224,8 @@
         "照片與實用工具",
         "免費開始 · 永久解鎖",
         "隱私優先／裝置端",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/zh-Hant/index.html",
@@ -95234,7 +95238,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -95314,7 +95320,8 @@
       "badge_labels": [
         "生活",
         "免費開始 · 永久解鎖",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/zh-Hant/index.html",
@@ -95327,7 +95334,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -95364,7 +95373,8 @@
         "效率工具",
         "免費開始 · 永久解鎖",
         "隱私優先／裝置端",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/zh-Hant/index.html",
@@ -95377,7 +95387,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -95507,7 +95519,8 @@
         "更多",
         "免費開始 · 永久解鎖",
         "主畫面小工具",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/zh-Hant/index.html",
@@ -95520,7 +95533,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
@@ -95703,7 +95718,8 @@
       "badge_labels": [
         "兒童與學習",
         "免費開始 · 永久解鎖",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/dailymatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/zh-Hant/index.html",
@@ -95716,7 +95732,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
@@ -95809,7 +95827,8 @@
         "理財與旅行",
         "免費開始 · 永久解鎖",
         "離線使用",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/zh-Hant/index.html",
@@ -95822,7 +95841,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -97110,7 +97131,8 @@
         "兒童與學習",
         "免費開始 · 永久解鎖",
         "離線使用",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/zh-Hant/index.html",
@@ -97123,7 +97145,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",

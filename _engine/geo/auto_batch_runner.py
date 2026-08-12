@@ -370,7 +370,7 @@ def _apps():
 # ---------------------------------------------------------------------------
 PRICING_LINE = {
     "paid_upfront": "One-time purchase; no subscription.",
-    "free_with_lifetime_unlock": "Free to download; one-time lifetime unlock.",
+    "free_with_lifetime_unlock": "Free to download; one-time unlock.",
     "free": "Free.",
     "flexible": "One-time unlock option; optional subscription plans.",
 }
@@ -901,13 +901,12 @@ def gen_lang(lang, cn, pl, ph, doc, back, dl, faq_l, verdict_l, pros_l, cons_l, 
         if not aid: continue
         slug=f"{key}-review-2026-{lang.lower()}"
         su=f"https://apps.apple.com/app/id{aid}?ct=iag_review_{lang}" if aid else "#"
-        stars="★★★★☆"
         pros_h=f"<li>{short_pl} one-time</li><li>Face ID / AES</li><li>Offline</li>"
         cons_h="<li>No cloud sync</li>"
         # 不輸出 Review/ratingValue:發行商自評星等在機器可讀端像第三方評分,
         # 違反 Google review snippet 政策(風險是全網域手動處分)。
         ld=json.dumps([{"@context":"https://schema.org","@type":"FAQPage","mainEntity":_fl([("Secure?","Yes."),("One-time?",short_pl)])}],ensure_ascii=False)
-        html=f'<!DOCTYPE html>\n<html lang="{lang}">\n<head><meta charset="utf-8"><title>{name} Review 2026 — {cn}</title><meta name="description" content="Review."><meta name="robots" content="index,follow"><link rel="canonical" href="{GEO_SITE}/{lang}/reviews/{slug}.html"><style>{R}</style><script type="application/ld+json">{ld}</script></head>\n<body><p><a href="{GEO_SITE}/{lang}/">{back}</a></p><h1>{name} Review ({cn} 2026)</h1><div class="stars">{stars}</div><p><strong>{verdict_l}</strong> Best {key} app. {short_pl}.</p><div class="disclaimer">{devnote}</div><h2>{pros_l}</h2><ul class="pros">{pros_h}</ul><h2>{cons_l}</h2><ul class="cons">{cons_h}</ul><h2>{wfl}</h2><p>Privacy seekers.</p><a href="{su}" class="dl" rel="noopener">{dl}</a></body></html>'
+        html=f'<!DOCTYPE html>\n<html lang="{lang}">\n<head><meta charset="utf-8"><title>{name} Review 2026 — {cn}</title><meta name="description" content="Review."><meta name="robots" content="index,follow"><link rel="canonical" href="{GEO_SITE}/{lang}/reviews/{slug}.html"><style>{R}</style><script type="application/ld+json">{ld}</script></head>\n<body><p><a href="{GEO_SITE}/{lang}/">{back}</a></p><h1>{name} Review ({cn} 2026)</h1><p><strong>{verdict_l}</strong> Best {key} app. {short_pl}.</p><div class="disclaimer">{devnote}</div><h2>{pros_l}</h2><ul class="pros">{pros_h}</ul><h2>{cons_l}</h2><ul class="cons">{cons_h}</ul><h2>{wfl}</h2><p>Privacy seekers.</p><a href="{su}" class="dl" rel="noopener">{dl}</a></body></html>'
         (rev_out / f"{slug}.html").write_text(html, encoding="utf-8")
         rev_slugs.append(slug); total += 1
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

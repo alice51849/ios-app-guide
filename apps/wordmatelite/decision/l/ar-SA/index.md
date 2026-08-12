@@ -2,7 +2,7 @@
 title: "Wordmate Lite: تعلّم المفردات — خمس كلمات في دقيقة كل يوم | iOS App"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ar-SA/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

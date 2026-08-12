@@ -2,7 +2,7 @@
 title: "मुलांसाठी सर्वोत्तम संपूर्ण सकाळ व झोपेची दिनचर्या अ‍ॅप"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/mr-IN/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"

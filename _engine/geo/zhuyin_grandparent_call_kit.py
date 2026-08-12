@@ -243,7 +243,7 @@ COPY = {
         "app_title": "Optional practice between family calls",
         "app_text": (
             "Lumi Bopomofo adds listening, tracing, tone and blending games for all 37 "
-            "symbols. It is free to download with an optional one-time lifetime unlock, "
+            "symbols. It is free to download with an optional one-time unlock, "
             "has no ads and requires no recurring subscription."
         ),
         "app_cta": "Try Lumi Bopomofo",

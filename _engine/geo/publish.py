@@ -264,12 +264,39 @@ def main():
     require([PY, os.path.join(HERE, "gen_link_hubs.py")], env=env)
     require([PY, os.path.join(HERE, "gen_store_reach.py")], env=env)
     require([PY, os.path.join(HERE, "gen_locale_indexation.py")], env=env)
+    # 內容其實沒在地化的頁(標題+描述與英文一字不差,正文也是英文)不該以
+    # 獨立頁面身分進索引 —— 它們只會跟自己的英文原頁互搶 canonical。這支
+    # 先前只被手動跑過一次,沒進管線,於是每次發布都把 noindex 洗掉
+    # (2026-08-12 實測 noindexed=0、重複 21,713 頁)。
+    require(
+        [PY, os.path.join(HERE, "dedupe_locale_meta.py"), "--apply"], env=env
+    )
+    # 連結圖第二趟(冪等,靜態樹上 0 變更,約 15 秒)。gen_link_hubs 是「注入
+    # 受管理區塊」,而 build_pages_i18n / dedupe_locale_meta 這類產生器會整份
+    # 重寫語系首頁 —— 只要有一支跑在它後面把區塊洗掉,整個語系的子樹就會在
+    # 下一次發布前變成孤兒(2026-08-10 就這樣上線過:全站語系首頁都沒有 hub
+    # 導覽,4,413 個可索引頁零入連)。dedupe 也會改頁面的 noindex 狀態,連結圖
+    # 要用**最終**的 noindex 狀態重算才正確。跑第二趟讓最後落地的狀態一定是對的。
+    require([PY, os.path.join(HERE, "gen_link_hubs.py")], env=env)
     require([PY, os.path.join(HERE, "gen_store_attribution.py")], env=env)
     require([PY, os.path.join(HERE, "validate_webstories.py")], env=env)
     require([PY, os.path.join(HERE, "gen_llms.py"), "--cached-live"], env=env)
     require([PY, os.path.join(HERE, "zhuyin_resourcesync.py")], env=env)
     require([PY, os.path.join(HERE, "gen_feed.py")], env=env)
     require([PY, os.path.join(HERE, "gen_sitemap_lastmod.py")], env=env)
+    # 發布前的硬閘門:可索引頁一頁都不可以從首頁點不到。這是量測不是產生 ——
+    # 它擋的是「某支下游產生器把連結圖洗掉,結果我們把孤兒站推上線」。
+    # 失敗時整條管線中止、不 commit、不 push、不送 IndexNow;工作樹留在原地,
+    # 修好再跑一次就好。noindex 頁不算在內(它們本來就不進索引)。
+    require(
+        [
+            PY,
+            os.path.join(HERE, "audit_link_depth.py"),
+            "--max-indexable-orphans",
+            "0",
+        ],
+        env=env,
+    )
     if "--no-push" in sys.argv:
         print("\n(--no-push:略過部署/推送)")
         return

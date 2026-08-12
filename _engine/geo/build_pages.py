@@ -72,7 +72,7 @@ def pricing_copy(key):
         return "Paid download with one upfront price and no subscription."
     if model == "free_with_lifetime_unlock":
         return (
-            "Free to download with an optional one-time lifetime unlock "
+            "Free to download with an optional one-time unlock "
             "and no recurring subscription."
         )
     if profile == "free":

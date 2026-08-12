@@ -2,7 +2,7 @@
 title: "bästa CV-byggarappen för karriärbytare 2026"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/sv/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -74,7 +74,7 @@ UI = {
         "all_purchase": "Every current model",
         "one_time": "Any one-time option",
         "paid_upfront": "Paid download",
-        "free_with_lifetime_unlock": "Free to start · lifetime unlock",
+        "free_with_lifetime_unlock": "Free to start · one-time unlock",
         "free": "Free",
         "flexible": "Flexible · check listing",
         "neutral": "Check current listing",
@@ -95,7 +95,7 @@ UI = {
         "category_labels": gen_app_catalog.L10N["en"]["categories"],
         "purchase_labels": {
             "paid_upfront": "Paid download",
-            "free_with_lifetime_unlock": "Free to start · lifetime unlock",
+            "free_with_lifetime_unlock": "Free to start · one-time unlock",
             "free": "Free",
             "flexible": "Flexible · check listing",
             "neutral": "Check current listing",

@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na hlasové poznámky, ktorá zhrňuje stretnutia na iPhone"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/sk/index.html"
-modified: "2026-08-10"
+modified: "2026-08-12"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

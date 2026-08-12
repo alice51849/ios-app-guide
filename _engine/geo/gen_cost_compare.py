@@ -82,10 +82,10 @@ def build(key):
         )
         disclosure = (
             f"We develop {name}, a free-download {topic} app with a one-time "
-            "lifetime unlock and no recurring subscription."
+            "one-time unlock and no recurring subscription."
         )
         access_label = (
-            "Free download · one-time lifetime unlock · no subscription."
+            "Free download · one-time unlock · no subscription."
         )
     elif purchase_model == "paid_upfront":
         access_answer = (

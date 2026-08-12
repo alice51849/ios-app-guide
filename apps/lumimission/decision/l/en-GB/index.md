@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 For a preschooler, a bedtime routine works best when it is short, visual and predictable enough for the child to follow without another round of reminders — Lumi Mission Planet is built for this.
 
 - Children & learning
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - No adverts
 - App Store · Free
 

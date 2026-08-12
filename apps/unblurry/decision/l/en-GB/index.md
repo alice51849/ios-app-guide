@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Kids never hold still, so soft-focus and camera-shake shots are inevitable — Unblurry is built for this.
 
 - Photo & utility
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - Private / on-device
 - App Store · Free
 

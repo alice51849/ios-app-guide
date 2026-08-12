@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Parents travelling with young children need activities that turn packing, waiting and discovering a new place into part of the adventure instead of another source of stress — Lumi Trip Planet is built for this.
 
 - Kids & learning
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - No ads
 - App Store · Free
 

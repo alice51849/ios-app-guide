@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 For a child first learning Zhuyin, the app should cover all 37 symbols through tracing and play — designed for the 4–7 first-learning window, ad-free, with no data collected — Lumi Bopomofo is built for this.
 
 - Children & learning
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - No adverts
 - App Store · Free
 

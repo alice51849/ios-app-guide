@@ -139,6 +139,6 @@ JSON, JSONL và CSV chứa cùng 1.950 bản ghi.
 
 [Trang chủ](https://alice51849.github.io/ios-app-guide/vi/index.html) · [Dữ liệu mở](https://alice51849.github.io/ios-app-guide/vi/data/lumi-studio-publisher-search-intent-catalog.html) · [Giấy phép](https://creativecommons.org/licenses/by/4.0/)
 
-Cập nhật: 2026-08-10
+Cập nhật: 2026-08-12
 
 CC BY 4.0 áp dụng cho bản tổng hợp danh mục gốc; tên ứng dụng và nhãn hiệu App Store thuộc sở hữu của chủ sở hữu tương ứng.

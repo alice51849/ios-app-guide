@@ -5,8 +5,8 @@
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.json",
   "dateModified": "2026-08-12",
-  "content_digest": "fd7860852fe532f71023c9ffcc53bbeac22eccc87a2e36bb15660f857eeb7aaf",
-  "generation_digest": "be04b4a04a272df7fe6094c20681d3c37f1efa7b6270a325dcc8ae13e08ac69e",
+  "content_digest": "eabb52c2e5caf759f126670f165d581f1de75dccc78a8d07f2e41c3cda651c7a",
+  "generation_digest": "2e7091822485b8a451b951bf8fcefb98f6cf4d1da8ddab7b253cab721d1fe739",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -13726,7 +13726,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -13738,7 +13738,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -13821,7 +13821,7 @@
       "category": "lifestyle",
       "category_label": "Lifestyle",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -13829,7 +13829,7 @@
       "device_labels": [],
       "badge_labels": [
         "Lifestyle",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/mochidonestamp.html",
@@ -13866,7 +13866,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -13878,7 +13878,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -13916,7 +13916,7 @@
       "category": "education",
       "category_label": "Education",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -13924,7 +13924,7 @@
       "device_labels": [],
       "badge_labels": [
         "Education",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -14006,7 +14006,7 @@
       "category": "utility",
       "category_label": "More",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -14018,7 +14018,7 @@
       ],
       "badge_labels": [
         "More",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Widget",
         "App Store · Free"
       ],
@@ -14056,7 +14056,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -14064,7 +14064,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -14101,7 +14101,7 @@
       "category": "health",
       "category_label": "Health",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -14113,7 +14113,7 @@
       "device_labels": [],
       "badge_labels": [
         "Health",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -14201,7 +14201,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -14209,7 +14209,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/dailymatelite.html",
@@ -14299,7 +14299,7 @@
       "category": "finance",
       "category_label": "Money & travel",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -14311,7 +14311,7 @@
       "device_labels": [],
       "badge_labels": [
         "Money & travel",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Offline",
         "App Store · Free"
       ],
@@ -14349,7 +14349,7 @@
       "category": "finance",
       "category_label": "Money & travel",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -14357,7 +14357,7 @@
       "device_labels": [],
       "badge_labels": [
         "Money & travel",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/hourstaglite.html",
@@ -14447,7 +14447,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -14461,7 +14461,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "Private / on-device",
         "App Store · Free"
@@ -14500,7 +14500,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -14512,7 +14512,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -14600,7 +14600,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -14612,7 +14612,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -14700,7 +14700,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -14712,7 +14712,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -14800,7 +14800,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -14812,7 +14812,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -14900,7 +14900,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -14912,7 +14912,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -14950,7 +14950,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -14964,7 +14964,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "No tracking",
         "App Store · Free"
@@ -15003,7 +15003,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -15015,7 +15015,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free",
         "★ 3.0/5 · 1"
@@ -15056,7 +15056,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -15064,7 +15064,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -15101,7 +15101,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -15113,7 +15113,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -15151,7 +15151,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -15163,7 +15163,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -15201,7 +15201,7 @@
       "category": "sleep-sound",
       "category_label": "Sleep & focus",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -15215,7 +15215,7 @@
       "device_labels": [],
       "badge_labels": [
         "Sleep & focus",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Offline",
         "No ads",
         "App Store · Free"
@@ -15304,7 +15304,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -15316,7 +15316,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Offline",
         "App Store · Free"
       ],
@@ -15354,7 +15354,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -15366,7 +15366,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -15404,7 +15404,7 @@
       "category": "travel",
       "category_label": "Travel",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -15412,7 +15412,7 @@
       "device_labels": [],
       "badge_labels": [
         "Travel",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -15505,7 +15505,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -15517,7 +15517,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -15555,7 +15555,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -15567,7 +15567,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Offline",
         "App Store · Free"
       ],
@@ -15669,7 +15669,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -15681,7 +15681,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -15764,7 +15764,7 @@
       "category": "lifestyle",
       "category_label": "Lifestyle",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -15772,7 +15772,7 @@
       "device_labels": [],
       "badge_labels": [
         "Lifestyle",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/mochidonestamp.html",
@@ -15809,7 +15809,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -15821,7 +15821,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -15859,7 +15859,7 @@
       "category": "education",
       "category_label": "Education",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -15867,7 +15867,7 @@
       "device_labels": [],
       "badge_labels": [
         "Education",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -15949,7 +15949,7 @@
       "category": "utility",
       "category_label": "More",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -15961,7 +15961,7 @@
       ],
       "badge_labels": [
         "More",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Widget",
         "App Store · Free"
       ],
@@ -15999,7 +15999,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -16007,7 +16007,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -16044,7 +16044,7 @@
       "category": "health",
       "category_label": "Health",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -16056,7 +16056,7 @@
       "device_labels": [],
       "badge_labels": [
         "Health",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -16144,7 +16144,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -16152,7 +16152,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/dailymatelite.html",
@@ -16242,7 +16242,7 @@
       "category": "finance",
       "category_label": "Money & travel",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -16254,7 +16254,7 @@
       "device_labels": [],
       "badge_labels": [
         "Money & travel",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Offline",
         "App Store · Free"
       ],
@@ -16292,7 +16292,7 @@
       "category": "finance",
       "category_label": "Money & travel",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -16300,7 +16300,7 @@
       "device_labels": [],
       "badge_labels": [
         "Money & travel",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/hourstaglite.html",
@@ -16390,7 +16390,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -16404,7 +16404,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "Private / on-device",
         "App Store · Free"
@@ -16443,7 +16443,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -16455,7 +16455,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -16543,7 +16543,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -16555,7 +16555,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -16643,7 +16643,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -16655,7 +16655,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -16743,7 +16743,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -16755,7 +16755,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -16843,7 +16843,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -16855,7 +16855,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -16893,7 +16893,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -16907,7 +16907,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "No tracking",
         "App Store · Free"
@@ -16946,7 +16946,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -16958,7 +16958,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -16996,7 +16996,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -17004,7 +17004,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -17041,7 +17041,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -17053,7 +17053,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -17091,7 +17091,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -17103,7 +17103,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -17141,7 +17141,7 @@
       "category": "sleep-sound",
       "category_label": "Sleep & focus",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -17155,7 +17155,7 @@
       "device_labels": [],
       "badge_labels": [
         "Sleep & focus",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Offline",
         "No ads",
         "App Store · Free"
@@ -17244,7 +17244,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -17256,7 +17256,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Offline",
         "App Store · Free"
       ],
@@ -17294,7 +17294,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -17306,7 +17306,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -17344,7 +17344,7 @@
       "category": "travel",
       "category_label": "Travel",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -17352,7 +17352,7 @@
       "device_labels": [],
       "badge_labels": [
         "Travel",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -17445,7 +17445,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -17457,7 +17457,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -17495,7 +17495,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -17507,7 +17507,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Offline",
         "App Store · Free"
       ],
@@ -17609,7 +17609,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -17621,7 +17621,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -17704,7 +17704,7 @@
       "category": "lifestyle",
       "category_label": "Lifestyle",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -17712,7 +17712,7 @@
       "device_labels": [],
       "badge_labels": [
         "Lifestyle",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/mochidonestamp.html",
@@ -17749,7 +17749,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -17761,7 +17761,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -17799,7 +17799,7 @@
       "category": "education",
       "category_label": "Education",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -17807,7 +17807,7 @@
       "device_labels": [],
       "badge_labels": [
         "Education",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -17889,7 +17889,7 @@
       "category": "utility",
       "category_label": "More",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -17901,7 +17901,7 @@
       ],
       "badge_labels": [
         "More",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Widget",
         "App Store · Free"
       ],
@@ -17939,7 +17939,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -17947,7 +17947,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -17984,7 +17984,7 @@
       "category": "health",
       "category_label": "Health",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -17996,7 +17996,7 @@
       "device_labels": [],
       "badge_labels": [
         "Health",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -18084,7 +18084,7 @@
       "category": "kids",
       "category_label": "Children & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -18092,7 +18092,7 @@
       "device_labels": [],
       "badge_labels": [
         "Children & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/dailymatelite.html",
@@ -18182,7 +18182,7 @@
       "category": "finance",
       "category_label": "Money & travel",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -18194,7 +18194,7 @@
       "device_labels": [],
       "badge_labels": [
         "Money & travel",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Offline",
         "App Store · Free"
       ],
@@ -18232,7 +18232,7 @@
       "category": "finance",
       "category_label": "Money & travel",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -18240,7 +18240,7 @@
       "device_labels": [],
       "badge_labels": [
         "Money & travel",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/hourstaglite.html",
@@ -18330,7 +18330,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -18344,7 +18344,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No adverts",
         "Private / on-device",
         "App Store · Free"
@@ -18383,7 +18383,7 @@
       "category": "kids",
       "category_label": "Children & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -18395,7 +18395,7 @@
       "device_labels": [],
       "badge_labels": [
         "Children & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No adverts",
         "App Store · Free"
       ],
@@ -18483,7 +18483,7 @@
       "category": "kids",
       "category_label": "Children & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -18495,7 +18495,7 @@
       "device_labels": [],
       "badge_labels": [
         "Children & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No adverts",
         "App Store · Free"
       ],
@@ -18583,7 +18583,7 @@
       "category": "kids",
       "category_label": "Children & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -18595,7 +18595,7 @@
       "device_labels": [],
       "badge_labels": [
         "Children & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No adverts",
         "App Store · Free"
       ],
@@ -18683,7 +18683,7 @@
       "category": "kids",
       "category_label": "Children & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -18695,7 +18695,7 @@
       "device_labels": [],
       "badge_labels": [
         "Children & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No adverts",
         "App Store · Free"
       ],
@@ -18783,7 +18783,7 @@
       "category": "kids",
       "category_label": "Children & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -18795,7 +18795,7 @@
       "device_labels": [],
       "badge_labels": [
         "Children & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No adverts",
         "App Store · Free"
       ],
@@ -18833,7 +18833,7 @@
       "category": "kids",
       "category_label": "Children & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -18847,7 +18847,7 @@
       "device_labels": [],
       "badge_labels": [
         "Children & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No adverts",
         "No tracking",
         "App Store · Free"
@@ -18886,7 +18886,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -18898,7 +18898,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No adverts",
         "App Store · Free"
       ],
@@ -18936,7 +18936,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -18944,7 +18944,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -18981,7 +18981,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -18993,7 +18993,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -19031,7 +19031,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -19043,7 +19043,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -19081,7 +19081,7 @@
       "category": "sleep-sound",
       "category_label": "Sleep & focus",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -19095,7 +19095,7 @@
       "device_labels": [],
       "badge_labels": [
         "Sleep & focus",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Offline",
         "No adverts",
         "App Store · Free"
@@ -19184,7 +19184,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -19196,7 +19196,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Offline",
         "App Store · Free"
       ],
@@ -19234,7 +19234,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -19246,7 +19246,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -19284,7 +19284,7 @@
       "category": "travel",
       "category_label": "Travel",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -19292,7 +19292,7 @@
       "device_labels": [],
       "badge_labels": [
         "Travel",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -19385,7 +19385,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -19397,7 +19397,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -19435,7 +19435,7 @@
       "category": "kids",
       "category_label": "Children & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -19447,7 +19447,7 @@
       "device_labels": [],
       "badge_labels": [
         "Children & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Offline",
         "App Store · Free"
       ],
@@ -19549,7 +19549,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -19561,7 +19561,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -19644,7 +19644,7 @@
       "category": "lifestyle",
       "category_label": "Lifestyle",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -19652,7 +19652,7 @@
       "device_labels": [],
       "badge_labels": [
         "Lifestyle",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free",
         "★ 5.0/5 · 1"
       ],
@@ -19692,7 +19692,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -19704,7 +19704,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -19742,7 +19742,7 @@
       "category": "education",
       "category_label": "Education",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -19750,7 +19750,7 @@
       "device_labels": [],
       "badge_labels": [
         "Education",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -19832,7 +19832,7 @@
       "category": "utility",
       "category_label": "More",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -19844,7 +19844,7 @@
       ],
       "badge_labels": [
         "More",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Widget",
         "App Store · Free"
       ],
@@ -19882,7 +19882,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -19890,7 +19890,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -19927,7 +19927,7 @@
       "category": "health",
       "category_label": "Health",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -19939,7 +19939,7 @@
       "device_labels": [],
       "badge_labels": [
         "Health",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free",
         "★ 5.0/5 · 1"
@@ -20030,7 +20030,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -20038,7 +20038,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/dailymatelite.html",
@@ -20128,7 +20128,7 @@
       "category": "finance",
       "category_label": "Money & travel",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -20140,7 +20140,7 @@
       "device_labels": [],
       "badge_labels": [
         "Money & travel",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Offline",
         "App Store · Free"
       ],
@@ -20178,7 +20178,7 @@
       "category": "finance",
       "category_label": "Money & travel",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -20186,7 +20186,7 @@
       "device_labels": [],
       "badge_labels": [
         "Money & travel",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/hourstaglite.html",
@@ -20276,7 +20276,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -20290,7 +20290,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "Private / on-device",
         "App Store · Free"
@@ -20329,7 +20329,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -20341,7 +20341,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -20429,7 +20429,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -20441,7 +20441,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -20529,7 +20529,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -20541,7 +20541,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -20629,7 +20629,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -20641,7 +20641,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -20729,7 +20729,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -20741,7 +20741,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -20779,7 +20779,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -20793,7 +20793,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "No tracking",
         "App Store · Free"
@@ -20832,7 +20832,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -20844,7 +20844,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "No ads",
         "App Store · Free",
         "★ 4.0/5 · 1"
@@ -20885,7 +20885,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -20893,7 +20893,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -20930,7 +20930,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -20942,7 +20942,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -20980,7 +20980,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -20992,7 +20992,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free",
         "★ 5.0/5 · 1"
@@ -21033,7 +21033,7 @@
       "category": "sleep-sound",
       "category_label": "Sleep & focus",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -21047,7 +21047,7 @@
       "device_labels": [],
       "badge_labels": [
         "Sleep & focus",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Offline",
         "No ads",
         "App Store · Free"
@@ -21136,7 +21136,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -21148,7 +21148,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Offline",
         "App Store · Free"
       ],
@@ -21186,7 +21186,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -21198,7 +21198,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -21236,7 +21236,7 @@
       "category": "travel",
       "category_label": "Travel",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -21244,7 +21244,7 @@
       "device_labels": [],
       "badge_labels": [
         "Travel",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -21337,7 +21337,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -21349,7 +21349,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Private / on-device",
         "App Store · Free",
         "★ 1.0/5 · 1"
@@ -21390,7 +21390,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · lifetime unlock",
+      "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -21402,7 +21402,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · lifetime unlock",
+        "Free to start · one-time unlock",
         "Offline",
         "App Store · Free"
       ],

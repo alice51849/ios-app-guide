@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 The best kids' math app trains reasoning — patterns, sequences, spatial thinking — not just arithmetic drill, and it hides that inside a game the child wants to play — Lumi Math Planet is built for this.
 
 - Children & learning
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - No adverts
 - App Store · Free
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 If you scan patient consent forms, discharge paperwork or referrals, the scanner has to keep that paperwork on the device — never uploaded to someone else's cloud — ScanTo Pro is built for this.
 
 - Productivity
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - Private / on-device
 - App Store · Free
 - ★ 5.0/5 · 1

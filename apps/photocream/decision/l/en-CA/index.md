@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Travel creators need a repeatable film look that adds grain, halation and colour character without reducing every destination to the same flat filter — PhotoCream is built for this.
 
 - Photo & utility
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - App Store · Free
 
 [Get PhotoCream on the App Store →](https://apps.apple.com/ca/app/id6781808054)

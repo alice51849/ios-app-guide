@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 When you're switching fields, the resume problem is different: your experience is real but 'unrelated' on paper, and ATS filters reject you before a human reads it — CV Desk is built for this.
 
 - Productivity
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - App Store · Free
 
 [Get CV Desk on the App Store →](https://apps.apple.com/ca/app/id6781337213)

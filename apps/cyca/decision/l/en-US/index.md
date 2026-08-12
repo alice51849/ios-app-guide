@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 In a category where data sensitivity is the whole story, the right period tracker keeps everything — flow, mood, symptoms, temperature, intimacy — on your device, with no account and no cloud sync — Cyca is built for this.
 
 - Health
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - Private / on-device
 - App Store · Free
 - ★ 5.0/5 · 1

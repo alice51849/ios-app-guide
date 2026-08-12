@@ -7,6 +7,7 @@ import csv
 import hashlib
 import html
 import importlib.util
+import io
 import json
 import os
 from pathlib import Path
@@ -17,6 +18,8 @@ import tempfile
 import unittest
 import unicodedata
 from unittest import mock
+import urllib.error
+import urllib.request
 from urllib.parse import urlparse
 
 
@@ -37,6 +40,105 @@ def normalized_digits(value: str) -> str:
         except (TypeError, ValueError):
             continue
     return result
+
+
+def mcp_distribution_fixture(
+    version: str,
+) -> tuple[dict[str, object], dict[str, bytes]]:
+    mcpb = b"verified mcpb"
+    npx = b"verified npx"
+    mcpb_sha256 = hashlib.sha256(mcpb).hexdigest()
+    npx_sha256 = hashlib.sha256(npx).hexdigest()
+    release_base = (
+        f"{catalog.MCP_REPOSITORY_URL}/releases/download/v{version}"
+    )
+    registry = {
+        "server": {
+            "name": catalog.MCP_SERVER_NAME,
+            "version": version,
+            "repository": {
+                "url": catalog.MCP_REPOSITORY_URL,
+                "source": "github",
+            },
+            "packages": [
+                {
+                    "registryType": "mcpb",
+                    "identifier": f"{release_base}/lumi-app-finder.mcpb",
+                    "fileSha256": mcpb_sha256,
+                    "transport": {"type": "stdio"},
+                }
+            ],
+        },
+        "_meta": {
+            "io.modelcontextprotocol.registry/official": {
+                "status": "active",
+                "isLatest": True,
+            }
+        },
+    }
+    checksums = (
+        f"{mcpb_sha256}  lumi-app-finder.mcpb\n"
+        f"{npx_sha256}  lumi-app-finder-npx.tgz\n"
+    ).encode("ascii")
+    distribution = catalog._validated_mcp_distribution(
+        {
+            "schema_version": 1,
+            "server_name": catalog.MCP_SERVER_NAME,
+            "version": version,
+            "registry_url": (
+                f"{catalog.MCP_REGISTRY_BASE_URL}/{version}"
+            ),
+            "registry_latest_url": catalog.MCP_REGISTRY_LATEST_URL,
+            "repository_url": catalog.MCP_REPOSITORY_URL,
+            "mcpb_url": f"{release_base}/lumi-app-finder.mcpb",
+            "mcpb_sha256": mcpb_sha256,
+            "npx_url": f"{release_base}/lumi-app-finder-npx.tgz",
+            "npx_sha256": npx_sha256,
+            "checksums_url": f"{release_base}/SHA256SUMS",
+        }
+    )
+    responses = {
+        catalog.MCP_REGISTRY_LATEST_URL: json.dumps(registry).encode("utf-8"),
+        str(distribution["checksums_url"]): checksums,
+        str(distribution["mcpb_url"]): mcpb,
+        str(distribution["npx_url"]): npx,
+    }
+    return distribution, responses
+
+
+def write_mcp_distribution_state(
+    pages: Path,
+    distribution: dict[str, object],
+) -> Path:
+    path = pages / "data" / catalog.MCP_DISTRIBUTION_STATE_FILENAME
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(distribution, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    return path
+
+
+def registry_then_http_error(
+    responses: dict[str, bytes],
+    status: int,
+):
+    def urlopen(
+        request: urllib.request.Request,
+        **_kwargs: object,
+    ) -> io.BytesIO:
+        url = request.full_url
+        if url == catalog.MCP_REGISTRY_LATEST_URL:
+            return io.BytesIO(responses[url])
+        raise urllib.error.HTTPError(
+            url,
+            status,
+            "temporary upstream failure",
+            hdrs=None,
+            fp=None,
+        )
+
+    return urlopen
 
 
 class PublisherIntentLocalizationTests(unittest.TestCase):
@@ -207,54 +309,10 @@ class PublisherIntentLocalizationTests(unittest.TestCase):
 
     def test_live_mcp_distribution_is_exact_and_hash_verified(self) -> None:
         version = "9.8.7"
-        mcpb = b"verified mcpb"
-        npx = b"verified npx"
-        mcpb_sha256 = hashlib.sha256(mcpb).hexdigest()
-        npx_sha256 = hashlib.sha256(npx).hexdigest()
-        release_base = (
-            f"{catalog.MCP_REPOSITORY_URL}/releases/download/v{version}"
-        )
-        registry = {
-            "server": {
-                "name": catalog.MCP_SERVER_NAME,
-                "version": version,
-                "repository": {
-                    "url": catalog.MCP_REPOSITORY_URL,
-                    "source": "github",
-                },
-                "packages": [
-                    {
-                        "registryType": "mcpb",
-                        "identifier": (
-                            f"{release_base}/lumi-app-finder.mcpb"
-                        ),
-                        "fileSha256": mcpb_sha256,
-                        "transport": {"type": "stdio"},
-                    }
-                ],
-            },
-            "_meta": {
-                "io.modelcontextprotocol.registry/official": {
-                    "status": "active",
-                    "isLatest": True,
-                }
-            },
-        }
-        checksums = (
-            f"{mcpb_sha256}  lumi-app-finder.mcpb\n"
-            f"{npx_sha256}  lumi-app-finder-npx.tgz\n"
-        ).encode("ascii")
-        responses = {
-            catalog.MCP_REGISTRY_LATEST_URL: json.dumps(
-                registry
-            ).encode("utf-8"),
-            f"{release_base}/SHA256SUMS": checksums,
-            f"{release_base}/lumi-app-finder.mcpb": mcpb,
-            f"{release_base}/lumi-app-finder-npx.tgz": npx,
-        }
+        expected, responses = mcp_distribution_fixture(version)
         original = dict(catalog.MCP_DISTRIBUTION)
         self.addCleanup(catalog._configure_mcp_distribution, original)
-        with tempfile.TemporaryDirectory() as directory:
+        with tempfile.TemporaryDirectory(dir=GEO) as directory:
             state_path = (
                 Path(directory)
                 / "data"
@@ -276,7 +334,7 @@ class PublisherIntentLocalizationTests(unittest.TestCase):
                 f"{catalog.MCP_REGISTRY_BASE_URL}/{version}",
                 distribution["registry_url"],
             )
-            self.assertEqual(npx_sha256, distribution["npx_sha256"])
+            self.assertEqual(expected, distribution)
             self.assertEqual(version, catalog.MCP_VERSION)
             self.assertEqual(version, catalog.AGENT_SKILL_VERSION)
             self.assertIn(f"/tree/v{version}/", catalog.AGENT_SKILL_URL)
@@ -298,26 +356,241 @@ class PublisherIntentLocalizationTests(unittest.TestCase):
                     )
                 ),
             )
-            responses[
-                f"{release_base}/lumi-app-finder-npx.tgz"
-            ] = b"tampered"
+
+    def test_live_hash_mismatch_does_not_fall_back_to_frozen_state(
+        self,
+    ) -> None:
+        frozen, _ = mcp_distribution_fixture("8.7.6")
+        expected_live, responses = mcp_distribution_fixture("9.8.7")
+        responses[str(expected_live["npx_url"])] = b"tampered"
+        original = dict(catalog.MCP_DISTRIBUTION)
+        self.addCleanup(catalog._configure_mcp_distribution, original)
+        with tempfile.TemporaryDirectory(dir=GEO) as directory:
+            pages = Path(directory)
+            state_path = write_mcp_distribution_state(pages, frozen)
+            stderr = io.StringIO()
             with mock.patch.object(
                 catalog,
                 "_fetch_bytes",
                 side_effect=lambda url, _limit: responses[url],
-            ):
+            ) as fetch, mock.patch.object(catalog.sys, "stderr", stderr):
                 with self.assertRaisesRegex(
                     ValueError,
                     "asset hash mismatch",
                 ):
-                    catalog.refresh_live_mcp_distribution(Path(directory))
+                    catalog.refresh_live_mcp_distribution(pages)
+            self.assertEqual(4, fetch.call_count)
             self.assertEqual(
-                distribution,
+                frozen,
                 json.loads(state_path.read_text(encoding="utf-8")),
+            )
+            self.assertEqual(original, catalog.MCP_DISTRIBUTION)
+            self.assertNotIn(
+                "MCP_DISTRIBUTION_FROZEN_FALLBACK",
+                stderr.getvalue(),
+            )
+
+    def test_mcp_fetch_retry_limit_is_bounded(self) -> None:
+        for error in (
+            TimeoutError("temporary timeout"),
+            urllib.error.URLError("temporary resolver failure"),
+        ):
+            with self.subTest(error=type(error).__name__):
+                with mock.patch.object(
+                    catalog.urllib.request,
+                    "urlopen",
+                    side_effect=error,
+                ) as urlopen, mock.patch.object(
+                    catalog.time,
+                    "sleep",
+                ) as sleep:
+                    with self.assertRaises(
+                        catalog._MCPTransientFetchError
+                    ) as caught:
+                        catalog._fetch_bytes(
+                            "https://example.invalid/state",
+                            1024,
+                        )
+                self.assertIsInstance(caught.exception.__cause__, type(error))
+                self.assertEqual(
+                    catalog.MCP_FETCH_MAX_ATTEMPTS,
+                    caught.exception.attempts,
+                )
+                self.assertEqual(
+                    catalog.MCP_FETCH_MAX_ATTEMPTS,
+                    urlopen.call_count,
+                )
+                self.assertEqual(
+                    list(catalog.MCP_FETCH_RETRY_DELAYS_SECONDS),
+                    [call.args[0] for call in sleep.call_args_list],
+                )
+
+    def test_http_4xx_does_not_retry_or_use_frozen_state(self) -> None:
+        frozen, _ = mcp_distribution_fixture("8.7.6")
+        _, responses = mcp_distribution_fixture("9.8.7")
+        original = dict(catalog.MCP_DISTRIBUTION)
+        self.addCleanup(catalog._configure_mcp_distribution, original)
+        with tempfile.TemporaryDirectory(dir=GEO) as directory:
+            pages = Path(directory)
+            state_path = write_mcp_distribution_state(pages, frozen)
+            stderr = io.StringIO()
+            with mock.patch.object(
+                catalog.urllib.request,
+                "urlopen",
+                side_effect=registry_then_http_error(responses, 404),
+            ) as urlopen, mock.patch.object(
+                catalog.time,
+                "sleep",
+            ) as sleep, mock.patch.object(catalog.sys, "stderr", stderr):
+                with self.assertRaises(urllib.error.HTTPError) as caught:
+                    catalog.refresh_live_mcp_distribution(pages)
+            self.assertEqual(404, caught.exception.code)
+            self.assertEqual(2, urlopen.call_count)
+            self.assertEqual(0, sleep.call_count)
+            self.assertEqual(
+                frozen,
+                json.loads(state_path.read_text(encoding="utf-8")),
+            )
+            self.assertEqual(original, catalog.MCP_DISTRIBUTION)
+            self.assertNotIn(
+                "MCP_DISTRIBUTION_FROZEN_FALLBACK",
+                stderr.getvalue(),
+            )
+
+    def test_invalid_registry_identity_does_not_use_frozen_state(self) -> None:
+        frozen, _ = mcp_distribution_fixture("8.7.6")
+        _, responses = mcp_distribution_fixture("9.8.7")
+        registry = json.loads(
+            responses[catalog.MCP_REGISTRY_LATEST_URL].decode("utf-8")
+        )
+        registry["server"]["name"] = "invalid.example/server"
+        original = dict(catalog.MCP_DISTRIBUTION)
+        self.addCleanup(catalog._configure_mcp_distribution, original)
+        with tempfile.TemporaryDirectory(dir=GEO) as directory:
+            pages = Path(directory)
+            state_path = write_mcp_distribution_state(pages, frozen)
+            stderr = io.StringIO()
+            with mock.patch.object(
+                catalog,
+                "_fetch_bytes",
+                return_value=json.dumps(registry).encode("utf-8"),
+            ) as fetch, mock.patch.object(catalog.sys, "stderr", stderr):
+                with self.assertRaisesRegex(
+                    ValueError,
+                    "Registry latest identity is invalid",
+                ):
+                    catalog.refresh_live_mcp_distribution(pages)
+            self.assertEqual(1, fetch.call_count)
+            self.assertEqual(
+                frozen,
+                json.loads(state_path.read_text(encoding="utf-8")),
+            )
+            self.assertEqual(original, catalog.MCP_DISTRIBUTION)
+            self.assertNotIn(
+                "MCP_DISTRIBUTION_FROZEN_FALLBACK",
+                stderr.getvalue(),
+            )
+
+    def test_persistent_5xx_rejects_missing_or_corrupt_frozen_state(
+        self,
+    ) -> None:
+        _, responses = mcp_distribution_fixture("9.8.7")
+        cases = (
+            (
+                "missing",
+                None,
+                FileNotFoundError,
+                "Frozen MCP distribution state is missing",
+            ),
+            (
+                "corrupt",
+                '{"truncated":',
+                ValueError,
+                "Frozen MCP distribution state is invalid",
+            ),
+        )
+        for name, content, error_type, message in cases:
+            with self.subTest(state=name):
+                with tempfile.TemporaryDirectory(dir=GEO) as directory:
+                    pages = Path(directory)
+                    if content is not None:
+                        state_path = (
+                            pages
+                            / "data"
+                            / catalog.MCP_DISTRIBUTION_STATE_FILENAME
+                        )
+                        state_path.parent.mkdir(parents=True)
+                        state_path.write_text(content, encoding="utf-8")
+                    stderr = io.StringIO()
+                    with mock.patch.object(
+                        catalog.urllib.request,
+                        "urlopen",
+                        side_effect=registry_then_http_error(
+                            responses,
+                            500,
+                        ),
+                    ) as urlopen, mock.patch.object(
+                        catalog.time,
+                        "sleep",
+                    ), mock.patch.object(catalog.sys, "stderr", stderr):
+                        with self.assertRaisesRegex(error_type, message):
+                            catalog.refresh_live_mcp_distribution(pages)
+                    self.assertEqual(
+                        catalog.MCP_FETCH_MAX_ATTEMPTS + 1,
+                        urlopen.call_count,
+                    )
+                    self.assertNotIn(
+                        "MCP_DISTRIBUTION_FROZEN_FALLBACK",
+                        stderr.getvalue(),
+                    )
+
+    def test_persistent_5xx_uses_validated_frozen_state(self) -> None:
+        frozen, _ = mcp_distribution_fixture("8.7.6")
+        _, responses = mcp_distribution_fixture("9.8.7")
+        original = dict(catalog.MCP_DISTRIBUTION)
+        self.addCleanup(catalog._configure_mcp_distribution, original)
+
+        with tempfile.TemporaryDirectory(dir=GEO) as directory:
+            pages = Path(directory)
+            state_path = write_mcp_distribution_state(pages, frozen)
+            stderr = io.StringIO()
+            with mock.patch.object(
+                catalog.urllib.request,
+                "urlopen",
+                side_effect=registry_then_http_error(responses, 500),
+            ) as urlopen, mock.patch.object(
+                catalog.time,
+                "sleep",
+            ) as sleep, mock.patch.object(catalog.sys, "stderr", stderr):
+                distribution = catalog.refresh_live_mcp_distribution(pages)
+            self.assertEqual(frozen, distribution)
+            self.assertEqual("8.7.6", catalog.MCP_VERSION)
+            self.assertEqual(
+                catalog.MCP_FETCH_MAX_ATTEMPTS + 1,
+                urlopen.call_count,
+            )
+            self.assertEqual(
+                len(catalog.MCP_FETCH_RETRY_DELAYS_SECONDS),
+                sleep.call_count,
+            )
+            self.assertEqual(
+                frozen,
+                json.loads(state_path.read_text(encoding="utf-8")),
+            )
+            warning = stderr.getvalue()
+            self.assertIn(
+                "WARNING MCP_DISTRIBUTION_FROZEN_FALLBACK",
+                warning,
+            )
+            self.assertIn("source=validated_frozen", warning)
+            self.assertIn("http_status=500", warning)
+            self.assertIn(
+                f"attempts={catalog.MCP_FETCH_MAX_ATTEMPTS}",
+                warning,
             )
 
     def test_frozen_mcp_distribution_rejects_corrupt_state(self) -> None:
-        with tempfile.TemporaryDirectory() as directory:
+        with tempfile.TemporaryDirectory(dir=GEO) as directory:
             path = (
                 Path(directory)
                 / "data"

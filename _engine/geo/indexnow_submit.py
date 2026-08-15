@@ -27,6 +27,7 @@ ENDPOINTS = (
 ACCEPTED_STATUSES = {200, 202}
 RETRYABLE_STATUSES = {429, 500, 502, 503, 504}
 KEY_RE = re.compile(r"[A-Za-z0-9_-]{8,128}")
+SHA_RE = re.compile(r"[0-9a-f]{40}")
 DEFAULT_BATCH_SIZE = 10_000
 REQUEST_TIMEOUT_SECONDS = 30
 PRIVATE_TOP_LEVEL_PATHS = {"_engine", ".git", ".github"}
@@ -118,31 +119,60 @@ def read_urls(pages_dir: Path, site: str) -> list[str]:
     return urls
 
 
-def git_change_set(
+def git_head_sha(
     pages_dir: Path,
-    since: str,
     *,
     runner=subprocess.run,
-) -> tuple[str | None, list[Path]]:
-    if not since.strip() or any(character in since for character in "\r\n\0"):
-        raise ValueError("IndexNow git since value must be non-empty single-line text")
-    baseline_result = runner(
+) -> str:
+    result = runner(
         [
             "git",
             "-C",
             str(pages_dir),
-            "rev-list",
-            "-1",
-            "--first-parent",
-            f"--before={since}",
-            "HEAD",
+            "rev-parse",
+            "--verify",
+            "HEAD^{commit}",
         ],
         check=True,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         text=True,
     )
-    baseline = baseline_result.stdout.strip() or None
+    sha = result.stdout.strip().lower()
+    if not SHA_RE.fullmatch(sha):
+        raise ValueError("IndexNow HEAD must resolve to a full commit hash")
+    return sha
+
+
+def read_last_submitted_sha(path: Path) -> str | None:
+    if not path.is_file():
+        return None
+    sha = path.read_text(encoding="utf-8").strip().lower()
+    if not SHA_RE.fullmatch(sha):
+        raise ValueError("IndexNow last-submitted SHA is invalid")
+    return sha
+
+
+def write_last_submitted_sha(path: Path, sha: str) -> None:
+    normalized = sha.strip().lower()
+    if not SHA_RE.fullmatch(normalized):
+        raise ValueError("IndexNow last-submitted SHA is invalid")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    pending = path.with_name(f".{path.name}.new")
+    pending.write_text(f"{normalized}\n", encoding="utf-8")
+    pending.replace(path)
+
+
+def git_changed_paths(
+    pages_dir: Path,
+    baseline: str | None,
+    *,
+    runner=subprocess.run,
+) -> list[Path]:
+    if baseline is not None and (
+        not baseline or any(character in baseline for character in "\r\n\0")
+    ):
+        raise ValueError("IndexNow git baseline must be single-line text")
     command = (
         [
             "git",
@@ -178,7 +208,39 @@ def git_change_set(
         if path.is_absolute() or ".." in path.parts:
             raise ValueError(f"Unsafe changed path from git: {raw_path}")
         paths.add(path)
-    return baseline, sorted(paths, key=lambda path: path.as_posix())
+    return sorted(paths, key=lambda path: path.as_posix())
+
+
+def git_change_set(
+    pages_dir: Path,
+    since: str,
+    *,
+    runner=subprocess.run,
+) -> tuple[str | None, list[Path]]:
+    if not since.strip() or any(character in since for character in "\r\n\0"):
+        raise ValueError("IndexNow git since value must be non-empty single-line text")
+    baseline_result = runner(
+        [
+            "git",
+            "-C",
+            str(pages_dir),
+            "rev-list",
+            "-1",
+            "--first-parent",
+            f"--before={since}",
+            "HEAD",
+        ],
+        check=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+    )
+    baseline = baseline_result.stdout.strip() or None
+    return baseline, git_changed_paths(
+        pages_dir,
+        baseline,
+        runner=runner,
+    )
 
 
 def git_sitemap_urls(
@@ -293,9 +355,14 @@ def read_changed_urls(
     site: str,
     since: str,
     *,
+    baseline_sha: str | None = None,
     runner=subprocess.run,
 ) -> list[str]:
-    baseline, paths = git_change_set(pages_dir, since, runner=runner)
+    if baseline_sha is None:
+        baseline, paths = git_change_set(pages_dir, since, runner=runner)
+    else:
+        baseline = baseline_sha
+        paths = git_changed_paths(pages_dir, baseline, runner=runner)
     previous_urls = (
         git_sitemap_urls(pages_dir, site, baseline, runner=runner)
         if baseline
@@ -422,6 +489,88 @@ def submit_all(
     return accepted
 
 
+def run(
+    pages_dir: Path,
+    site: str,
+    key_file: Path,
+    *,
+    batch_size: int = DEFAULT_BATCH_SIZE,
+    git_since: str | None = None,
+    state_file: Path | None = None,
+    limit: int | None = None,
+    runner=subprocess.run,
+    sender=submit_endpoint,
+) -> int:
+    site = site.rstrip("/")
+    current_sha = (
+        git_head_sha(pages_dir, runner=runner)
+        if state_file is not None
+        else None
+    )
+    last_submitted_sha = (
+        read_last_submitted_sha(state_file)
+        if state_file is not None and git_since
+        else None
+    )
+    if (
+        git_since
+        and last_submitted_sha is not None
+        and last_submitted_sha == current_sha
+    ):
+        urls: list[str] = []
+        print(
+            f"baseline={last_submitted_sha} "
+            "changed_paths=0 changed_public_urls=0"
+        )
+    else:
+        urls = (
+            read_changed_urls(
+                pages_dir,
+                site,
+                git_since,
+                baseline_sha=last_submitted_sha,
+                runner=runner,
+            )
+            if git_since
+            else read_urls(pages_dir, site)
+        )
+    complete_change_set = True
+    if limit is not None:
+        if limit <= 0:
+            raise ValueError("IndexNow limit must be positive")
+        complete_change_set = len(urls) <= limit
+        urls = urls[:limit]
+    if not urls:
+        if state_file is not None and current_sha is not None:
+            write_last_submitted_sha(state_file, current_sha)
+        print("No changed public URLs; nothing to submit")
+        return 0
+    key = read_key(key_file)
+    print(
+        f"host={urllib.parse.urlsplit(site).netloc} "
+        f"key={key[:8]}... urls={len(urls)}"
+    )
+    accepted = submit_all(
+        urls,
+        key,
+        site,
+        batch_size=batch_size,
+        sender=sender,
+    )
+    print(f"Accepted {accepted}/{len(urls)} URLs by every IndexNow endpoint")
+    if accepted != len(urls):
+        raise SubmissionError(
+            f"Only {accepted}/{len(urls)} IndexNow URLs were accepted"
+        )
+    if (
+        state_file is not None
+        and current_sha is not None
+        and complete_change_set
+    ):
+        write_last_submitted_sha(state_file, current_sha)
+    return accepted
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--pages-dir", type=Path, default=HERE / "pages")
@@ -441,38 +590,23 @@ def main() -> None:
             "git date expression; omit for an explicit full refresh"
         ),
     )
+    parser.add_argument(
+        "--state-file",
+        type=Path,
+        help="Durable last successfully processed git SHA.",
+    )
     parser.add_argument("--limit", type=int)
     args = parser.parse_args()
 
-    site = args.site.rstrip("/")
-    urls = (
-        read_changed_urls(args.pages_dir, site, args.git_since)
-        if args.git_since
-        else read_urls(args.pages_dir, site)
-    )
-    if args.limit is not None:
-        if args.limit <= 0:
-            raise ValueError("IndexNow limit must be positive")
-        urls = urls[: args.limit]
-    if not urls:
-        print("No changed public URLs; nothing to submit")
-        return
-    key = read_key(args.key_file)
-    print(
-        f"host={urllib.parse.urlsplit(site).netloc} "
-        f"key={key[:8]}... urls={len(urls)}"
-    )
-    accepted = submit_all(
-        urls,
-        key,
-        site,
+    run(
+        args.pages_dir,
+        args.site,
+        args.key_file,
         batch_size=args.batch_size,
+        git_since=args.git_since,
+        state_file=args.state_file,
+        limit=args.limit,
     )
-    print(f"Accepted {accepted}/{len(urls)} URLs by every IndexNow endpoint")
-    if accepted != len(urls):
-        raise SubmissionError(
-            f"Only {accepted}/{len(urls)} IndexNow URLs were accepted"
-        )
 
 
 if __name__ == "__main__":

@@ -56,6 +56,13 @@ ZHUYIN_LIBRARY_CATALOG = "zhuyin-bopomofo-library-catalog-records"
 ZHUYIN_OER_METADATA = "zhuyin-bopomofo-oer-repository-metadata"
 ZHUYIN_DCAT_CATALOG = "zhuyin-bopomofo-dcat3-open-data-catalog"
 RESOURCE_SYNC_SOURCE = "https://alice51849.github.io/.well-known/resourcesync"
+DATA_DISTRIBUTIONS = (
+    ("JSON", ".json"),
+    ("JSONL", ".jsonl"),
+    ("CSV", ".csv"),
+    ("JSON Schema", ".schema.json"),
+    ("Croissant 1.1", ".croissant.jsonld"),
+)
 
 AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
            "Claude-Web", "PerplexityBot", "Perplexity-User", "Google-Extended",
@@ -172,11 +179,12 @@ def build_llms(comp_map, live_keys):
         if ds:
             lines += ["", "## Open data (machine-readable, CC BY 4.0 — free to cite)"]
             for f in ds:
-                title = re.sub(r"[-_]", " ", f[:-5])
+                stem = f[:-5]
+                title = re.sub(r"[-_]", " ", stem)
                 line = f"- [{title}]({SITE}/data/{f})"
-                json_path = os.path.join(DATA_DIR, f"{f[:-5]}.json")
-                if os.path.exists(json_path):
-                    line += f" · JSON: {SITE}/data/{f[:-5]}.json"
+                for label, suffix in DATA_DISTRIBUTIONS:
+                    if os.path.exists(os.path.join(DATA_DIR, f"{stem}{suffix}")):
+                        line += f" · {label}: {SITE}/data/{stem}{suffix}"
                 lines.append(line)
     static_apis = [
         descriptor
@@ -639,9 +647,10 @@ def build_llms_full(comp_map, live_keys):
         for title, url in resources:
             lines.append(f"- [{title}]({url})")
             if prefix == "data":
-                json_path = os.path.join(directory, os.path.basename(url)[:-5] + ".json")
-                if os.path.exists(json_path):
-                    lines.append(f"  - JSON: {url[:-5]}.json")
+                stem = os.path.basename(url)[:-5]
+                for label, suffix in DATA_DISTRIBUTIONS:
+                    if os.path.exists(os.path.join(directory, f"{stem}{suffix}")):
+                        lines.append(f"  - {label}: {url[:-5]}{suffix}")
 
     static_apis = [
         descriptor
@@ -6955,6 +6964,7 @@ def build_sitemap_index():
         "sitemap_bestfor_bjn.xml", "sitemap_workflow_bjn.xml", "sitemap_vs_bjn.xml",
         "sitemap_seasonal_bjn.xml", "sitemap_reviews_bjn.xml",
     ])
+    maps = list(dict.fromkeys(maps))
     items = "\n".join(f"  <sitemap><loc>{SITE}/{m}</loc></sitemap>" for m in maps
                       if os.path.exists(os.path.join(PAGES, m)))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'

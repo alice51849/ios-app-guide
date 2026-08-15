@@ -142,6 +142,11 @@ def registry_then_http_error(
 
 
 class PublisherIntentLocalizationTests(unittest.TestCase):
+    def test_purchase_labels_exist_in_i18n_strings(self) -> None:
+        payload = json.loads(catalog.I18N_PATH.read_text(encoding="utf-8"))
+        missing = set(catalog.PURCHASE_LABELS.values()) - set(payload["strings"])
+        self.assertEqual(set(), missing)
+
     def test_ui_localizations_cover_all_official_locales(self) -> None:
         payload = json.loads(catalog.I18N_PATH.read_text(encoding="utf-8"))
         localizations = catalog.load_ui_i18n()

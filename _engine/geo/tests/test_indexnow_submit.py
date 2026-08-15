@@ -298,6 +298,133 @@ class IndexNowTests(unittest.TestCase):
             )
         self.assertEqual([], urls)
 
+    def test_successful_sha_is_durable_and_same_sha_replay_is_zero(self) -> None:
+        site = "https://example.com/apps"
+        sha = "a" * 40
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            key_file = root / "indexnow-key.txt"
+            key_file.write_text("valid-key-123", encoding="utf-8")
+            state_file = root / "state" / "last-submitted-sha"
+            runner = mock.Mock(
+                return_value=SimpleNamespace(stdout=f"{sha}\n")
+            )
+            sender = mock.Mock()
+            with mock.patch.object(
+                indexnow,
+                "read_changed_urls",
+                return_value=[f"{site}/one.html"],
+            ):
+                accepted = indexnow.run(
+                    root,
+                    site,
+                    key_file,
+                    git_since="25 hours ago",
+                    state_file=state_file,
+                    runner=runner,
+                    sender=sender,
+                )
+            self.assertEqual(1, accepted)
+            self.assertEqual(2, sender.call_count)
+            self.assertEqual(sha, state_file.read_text(encoding="utf-8").strip())
+
+            sender.reset_mock()
+            output = io.StringIO()
+            with mock.patch("sys.stdout", output):
+                accepted = indexnow.run(
+                    root,
+                    site,
+                    key_file,
+                    git_since="25 hours ago",
+                    state_file=state_file,
+                    runner=runner,
+                    sender=sender,
+                )
+        self.assertEqual(0, accepted)
+        sender.assert_not_called()
+        self.assertIn("changed_public_urls=0", output.getvalue())
+        self.assertIn("nothing to submit", output.getvalue())
+
+    def test_durable_sha_replaces_the_time_window_baseline(self) -> None:
+        site = "https://example.com/apps"
+        previous_sha = "a" * 40
+        current_sha = "b" * 40
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            state_file = root / "state" / "last-submitted-sha"
+            indexnow.write_last_submitted_sha(state_file, previous_sha)
+            reader = mock.Mock(return_value=[])
+            runner = mock.Mock(
+                return_value=SimpleNamespace(stdout=f"{current_sha}\n")
+            )
+            with mock.patch.object(indexnow, "read_changed_urls", reader):
+                accepted = indexnow.run(
+                    root,
+                    site,
+                    root / "unused-key.txt",
+                    git_since="25 hours ago",
+                    state_file=state_file,
+                    runner=runner,
+                )
+            self.assertEqual(
+                current_sha,
+                state_file.read_text(encoding="utf-8").strip(),
+            )
+        self.assertEqual(0, accepted)
+        reader.assert_called_once_with(
+            root,
+            site,
+            "25 hours ago",
+            baseline_sha=previous_sha,
+            runner=runner,
+        )
+
+    def test_failed_delivery_does_not_advance_submission_sha(self) -> None:
+        site = "https://example.com/apps"
+        sha = "b" * 40
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            key_file = root / "indexnow-key.txt"
+            key_file.write_text("valid-key-123", encoding="utf-8")
+            state_file = root / "state" / "last-submitted-sha"
+            with (
+                mock.patch.object(
+                    indexnow,
+                    "read_changed_urls",
+                    return_value=[f"{site}/one.html"],
+                ),
+                self.assertRaises(indexnow.SubmissionError),
+            ):
+                indexnow.run(
+                    root,
+                    site,
+                    key_file,
+                    git_since="25 hours ago",
+                    state_file=state_file,
+                    runner=mock.Mock(
+                        return_value=SimpleNamespace(stdout=f"{sha}\n")
+                    ),
+                    sender=mock.Mock(
+                        side_effect=indexnow.SubmissionError("offline")
+                    ),
+                )
+            self.assertFalse(state_file.exists())
+
+    def test_workflow_gates_geo_success_and_caches_submission_sha(self) -> None:
+        workflow = (
+            Path(__file__).resolve().parents[3]
+            / ".github"
+            / "workflows"
+            / "indexnow-daily.yml"
+        ).read_text(encoding="utf-8")
+        self.assertIn(
+            "github.event.workflow_run.conclusion == 'success'",
+            workflow,
+        )
+        self.assertIn("actions/cache/restore@v4", workflow)
+        self.assertIn("actions/cache/save@v4", workflow)
+        self.assertIn('--state-file "$state_file"', workflow)
+
     def test_submit_all_requires_every_endpoint_and_chunks_safely(self) -> None:
         calls: list[tuple[str, int]] = []
 

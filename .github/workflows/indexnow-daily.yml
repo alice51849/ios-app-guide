@@ -24,15 +24,24 @@ concurrency:
 
 jobs:
   ping:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Restore durable IndexNow state
+        uses: actions/cache/restore@v4
+        with:
+          path: .indexnow-state
+          key: indexnow-state-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            indexnow-state-v1-
       - name: Verify strict IndexNow delivery
         run: python3 _engine/geo/tests/test_indexnow_submit.py
       - name: Submit changed public URLs to IndexNow
         run: |
+          state_file=".indexnow-state/last-submitted-sha"
           keyfile="$(find . -maxdepth 1 -type f -name '*.txt' \
             | grep -E '/[a-f0-9]{32}\.txt$' | head -1)"
           test -n "$keyfile"
@@ -45,4 +54,11 @@ jobs:
             --site https://alice51849.github.io/ios-app-guide \
             --key-file "$keyfile" \
             --batch-size 10000 \
+            --state-file "$state_file" \
             "${mode[@]}"
+      - name: Save durable IndexNow state
+        if: success()
+        uses: actions/cache/save@v4
+        with:
+          path: .indexnow-state
+          key: indexnow-state-v1-${{ github.run_id }}-${{ github.run_attempt }}

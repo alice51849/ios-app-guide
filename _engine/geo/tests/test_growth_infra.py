@@ -377,6 +377,25 @@ class GeneratorTests(unittest.TestCase):
             self.assertFalse(gen_feed._write_if_changed(str(output), "stable"))
             self.assertEqual(modified, output.stat().st_mtime_ns)
 
+    def test_sitemap_index_locations_are_stably_unique(self):
+        with mock.patch.object(gen_llms.os.path, "exists", return_value=True):
+            root = ET.fromstring(gen_llms.build_sitemap_index())
+        namespace = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+        locations = [
+            node.findtext(f"{namespace}loc")
+            for node in root.findall(f"{namespace}sitemap")
+        ]
+        self.assertEqual(list(dict.fromkeys(locations)), locations)
+        self.assertEqual(
+            [
+                f"{gen_llms.SITE}/sitemap.xml",
+                f"{gen_llms.SITE}/sitemap_alternatives.xml",
+                f"{gen_llms.SITE}/sitemap_answers.xml",
+                f"{gen_llms.SITE}/sitemap_guides.xml",
+            ],
+            locations[:4],
+        )
+
     def test_image_sitemap_maps_every_canonical_story_to_its_owned_poster(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)

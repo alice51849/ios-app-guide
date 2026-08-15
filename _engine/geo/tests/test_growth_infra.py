@@ -15696,7 +15696,7 @@ class GeneratorTests(unittest.TestCase):
             execute.index("result.optional_cv_desk"),
         )
 
-    def test_resume_evidence_planner_builds_nine_locales_and_replaces_old_cards(self):
+    def test_resume_evidence_planner_builds_all_locales_and_replaces_old_cards(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
             old_card = (
@@ -15737,7 +15737,7 @@ class GeneratorTests(unittest.TestCase):
                     "Keep query reference</a></main>",
                     encoding="utf-8",
                 )
-            other_answers = pages / "pl" / "answers"
+            other_answers = pages / "ar-SA" / "answers"
             other_answers.mkdir(parents=True)
             (other_answers / "resume-answer.html").write_text(
                 '<a href="/tools/ats-resume-keyword-checker.html">'
@@ -15753,7 +15753,10 @@ class GeneratorTests(unittest.TestCase):
                 pages,
                 app_public=False,
             )
-            self.assertEqual(9, len(urls))
+            self.assertEqual(
+                len(resume_evidence_planner.ALT_LOCALES),
+                len(urls),
+            )
             for locale in resume_evidence_planner.ALT_LOCALES:
                 tools = (
                     pages / "tools"
@@ -15792,7 +15795,7 @@ class GeneratorTests(unittest.TestCase):
                 self.assertIn(">Keep data attribute</a>", answer_text)
                 self.assertIn(">Keep query reference</a>", answer_text)
             for migrated in (
-                pages / "pl" / "answers" / "resume-answer.html",
+                pages / "ar-SA" / "answers" / "resume-answer.html",
                 pages / "resume-formats.html",
             ):
                 text = migrated.read_text(encoding="utf-8")
@@ -16285,6 +16288,16 @@ class GeneratorTests(unittest.TestCase):
             "ko": ("이력서", "채용 공고"),
             "zh-Hant": ("履歷", "職缺"),
             "zh-Hans": ("简历", "职位信息"),
+            "vi": ("sơ yếu lý lịch", "tin tuyển dụng"),
+            "th": ("เรซูเม่", "ประกาศงาน"),
+            "id": ("resume", "lowongan kerja"),
+            "tr": ("özgeçmiş", "iş ilanı"),
+            "hi": ("रिज़्यूमे", "नौकरी का विज्ञापन"),
+            "ms": ("resume", "iklan kerja"),
+            "ru": ("резюме", "вакансия"),
+            "uk": ("резюме", "вакансія"),
+            "pl": ("CV", "oferta pracy"),
+            "ta-IN": ("சுயவிவரம்", "வேலை அறிவிப்பு"),
         }
         for locale, page in pages.items():
             for fragment in stale_intro_fragments[locale]:
@@ -16599,7 +16612,7 @@ class GeneratorTests(unittest.TestCase):
         schema = toeic_study_allocation_planner.webmcp_input_schema("en")
         self.assertFalse(schema["additionalProperties"])
 
-    def test_toeic_study_allocation_planner_builds_nine_locales_and_indexes(
+    def test_toeic_study_allocation_planner_builds_all_locales_and_indexes(
         self,
     ):
         with tempfile.TemporaryDirectory() as directory:
@@ -16640,7 +16653,7 @@ class GeneratorTests(unittest.TestCase):
                     "no anchor present.</p></main>",
                     encoding="utf-8",
                 )
-            unsupported = pages / "th" / "answers"
+            unsupported = pages / "ar-SA" / "answers"
             unsupported.mkdir(parents=True)
             (unsupported / "toeic-answer.html").write_text(
                 "<main><p>Unsupported locale.</p>"
@@ -16653,7 +16666,10 @@ class GeneratorTests(unittest.TestCase):
                 pages,
                 app_public=False,
             )
-            self.assertEqual(9, len(urls))
+            self.assertEqual(
+                len(toeic_study_allocation_planner.ALT_LOCALES),
+                len(urls),
+            )
             for locale in toeic_study_allocation_planner.ALT_LOCALES:
                 tools = (
                     pages / "tools"
@@ -24800,13 +24816,12 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("/zh-Hant/answers/", hub)
 
     def test_topic_hub_rejects_answer_slug_owned_by_another_app(self):
-        collision = next(
-            question
-            for question in queries.ALL["aim990plus"]
-            if question in queries.ALL["aim990"]
-        )
+        collision = queries.ALL["aim990"][0]
         slug = gen_hubs.slugify(collision)
-        with tempfile.TemporaryDirectory() as directory:
+        with tempfile.TemporaryDirectory() as directory, mock.patch.dict(
+            queries.ALL,
+            {"aim990plus": [collision]},
+        ):
             pages = Path(directory)
             localized = pages / "en-US" / "answers" / f"{slug}.html"
             root = pages / "answers" / f"{slug}.html"

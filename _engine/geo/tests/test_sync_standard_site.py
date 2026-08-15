@@ -103,6 +103,51 @@ class ProjectScratchCase(unittest.TestCase):
 
 
 class ContractSyncTests(ProjectScratchCase):
+    def test_repairs_exact_legacy_store_reach_head_corruption(self):
+        page = self.write_html(
+            "tr/answers/index.html",
+            "<html><head><script>{}</script>"
+            "<<!-- store-reach-style:start --><style>x</style>"
+            "<!-- store-reach-style:end -->/head>"
+            "<body>Home</body></html>\n",
+        )
+        result = sync.synchronize_payload(
+            self.contract(),
+            site_root=self.site,
+            state_path=self.state,
+        )
+        source = page.read_text(encoding="utf-8")
+        self.assertEqual("applied", result.status)
+        self.assertIn(
+            "</script><!-- store-reach-style:start -->",
+            source,
+        )
+        self.assertIn(
+            "<!-- store-reach-style:end -->",
+            source,
+        )
+        self.assertIn("</head><body>", source)
+        self.assertNotIn(sync.LEGACY_STORE_REACH_HEAD_OPEN, source)
+        self.assertNotIn(sync.LEGACY_STORE_REACH_HEAD_CLOSE, source)
+        self.assertEqual(1, len(sync.HEAD_BLOCK_RE.findall(source)))
+
+    def test_partial_legacy_store_reach_corruption_still_fails_closed(self):
+        self.write_html(
+            "tr/answers/index.html",
+            "<html><head><script>{}</script>"
+            "<<!-- store-reach-style:start --><style>x</style>"
+            "</head><body>Home</body></html>\n",
+        )
+        with self.assertRaisesRegex(
+            sync.SyncError,
+            "invalid legacy store-reach head structure",
+        ):
+            sync.synchronize_payload(
+                self.contract(),
+                site_root=self.site,
+                state_path=self.state,
+            )
+
     def test_applies_publication_to_all_html_and_document_to_published_page(self):
         guide = self.write_html(
             "guides/demo.html",

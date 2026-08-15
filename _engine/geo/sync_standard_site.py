@@ -61,6 +61,12 @@ REL_ATTRIBUTE_RE = re.compile(
     flags=re.IGNORECASE,
 )
 MANAGED_RELATIONS = {PUBLICATION_COLLECTION, DOCUMENT_COLLECTION}
+LEGACY_STORE_REACH_HEAD_OPEN = (
+    "</script><<!-- store-reach-style:start -->"
+)
+LEGACY_STORE_REACH_HEAD_CLOSE = (
+    "<!-- store-reach-style:end -->/head>"
+)
 
 
 class SyncError(RuntimeError):
@@ -520,6 +526,23 @@ def render_html(
     document_link_tag: str | None,
     label: str,
 ) -> str:
+    malformed_open = source.count(LEGACY_STORE_REACH_HEAD_OPEN)
+    malformed_close = source.count(LEGACY_STORE_REACH_HEAD_CLOSE)
+    if malformed_open or malformed_close:
+        if malformed_open != 1 or malformed_close != 1:
+            raise SyncError(
+                "HTML file has an invalid legacy store-reach head structure: "
+                f"{label}"
+            )
+        source = source.replace(
+            LEGACY_STORE_REACH_HEAD_OPEN,
+            "</script><!-- store-reach-style:start -->",
+            1,
+        ).replace(
+            LEGACY_STORE_REACH_HEAD_CLOSE,
+            "<!-- store-reach-style:end --></head>",
+            1,
+        )
     heads = list(HEAD_BLOCK_RE.finditer(source))
     if (
         not heads

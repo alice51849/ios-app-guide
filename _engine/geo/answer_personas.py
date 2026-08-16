@@ -1993,6 +1993,102 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "onepageppt": [
+        {
+            "query": "app that turns meeting notes into one presentation slide",
+            "guide_title": "Notes to one slide: what to check before your next meeting recap",
+            "triggers": [
+                "turn notes into a slide",
+                "one slide summary of a report",
+                "executive summary slide maker",
+                "meeting recap single slide",
+                "make a slide from a pdf",
+                "editable pptx export from notes",
+            ],
+            "persona": "consultants, founders and project managers who owe someone one clear page, not a deck",
+            "lead": "Most slide tools assume you want a deck. When the deliverable is a single recap page, the real test is whether the app can take raw notes, a PDF or a table and lay them out as one readable 16:9 slide without template fiddling.",
+            "paras": [
+                "OnePage PPT takes whatever you already have — typed or pasted notes, screenshots, photos, PDFs, CSV tables — pulls out the key points on the device, and lays them out as one presentation-ready 16:9 slide. Numbers become column, bar, line, donut or funnel charts; steps become a process flow; dates become a timeline; two options become a comparison. It only draws a chart the data can honestly support — it never invents figures.",
+                "If the first layout isn't right, six one-tap redesigns — Cleaner, More Visual, More Professional, More Bold, More Compact, More Editorial — each genuinely rebuild the slide with different chart forms, typography and layout, and you can lock any element and redesign around it. Export is an editable .pptx for PowerPoint, Keynote or Google Slides, a PDF, or a high-resolution PNG. Everything runs on the device: no account, no sign-in, no tracking, and it works with no network at all. It's free to try, and Lifetime Pro is a single one-time purchase with no subscription.",
+            ],
+            "look": [
+                "Accepts what you already have: notes, screenshots, PDFs, CSV tables.",
+                "Picks the right visual — chart, flow, timeline, comparison — from the actual data.",
+                "Never invents figures; charts only what the data supports.",
+                "Exports an editable .pptx, not just a flat image.",
+                "Runs fully on-device with no account, and a one-time purchase instead of a subscription.",
+            ],
+            "steps": [
+                "Paste your meeting notes or import the source PDF or CSV.",
+                "Tap Make My Slide and check the headline summary is faithful.",
+                "Cycle the six redesigns until the layout fits the audience.",
+                "Lock the elements you like and redesign around them.",
+                "Export .pptx for the deck owner, or PDF/PNG for email and chat.",
+            ],
+            "fits": "fits anyone who has to compress a report, meeting or dataset into one page a busy reader will actually look at, without opening a full deck editor.",
+            "faq": [
+                {
+                    "q": "Can I edit the slide afterwards in PowerPoint or Keynote?",
+                    "a": "Yes — it exports an editable .pptx that opens in PowerPoint, Keynote and Google Slides, plus PDF and high-resolution PNG.",
+                },
+                {
+                    "q": "Will it make up numbers for the charts?",
+                    "a": "No — it only draws a chart the supplied data can honestly support, and never invents figures.",
+                },
+                {
+                    "q": "Does my content leave the device?",
+                    "a": "No — everything runs on your iPhone or iPad, with no account, no sign-in, no tracking, and it works fully offline.",
+                },
+            ],
+        },
+        {
+            "query": "make a one slide summary of a pdf for a class presentation",
+            "guide_title": "One-slide class presentations: turning readings and data into a single page",
+            "triggers": [
+                "one page presentation for class",
+                "summarize a pdf into a slide",
+                "csv to chart slide",
+                "single slide assignment",
+                "turn lecture notes into a slide",
+                "student presentation one slide",
+            ],
+            "persona": "students and teachers who need one clear slide from a reading, dataset or lesson",
+            "lead": "For a one-slide assignment or a lesson recap, the slow part isn't the content — it's fighting a deck editor. The better test is whether an app can read the source PDF or CSV itself and produce one honest, presentation-ready page.",
+            "paras": [
+                "OnePage PPT reads the material you give it — pasted notes, a photographed handout, a PDF reading or a CSV of results — summarises the key points on the device, and lays them out as a single 16:9 slide. Data becomes a real chart only when the numbers support one; steps become a process flow and dates a timeline, so a methods section or a history topic gets the right visual form instead of a wall of bullets.",
+                "Every element stays editable: tap to rewrite a headline, swap an image, reorder blocks, or run one of the six redesign styles until it looks right, with version history to step back to any earlier draft. Export a PDF or PNG to hand in, or an editable .pptx to drop into a class deck. It runs entirely on the device with no account and works offline, so it's usable in class or on the bus; it's free to try, with a single one-time Lifetime Pro purchase and no subscription.",
+            ],
+            "look": [
+                "Reads PDFs, photos of handouts, notes and CSV tables directly.",
+                "Chooses chart, timeline, flow or comparison from the actual content.",
+                "Everything stays editable, with version history to undo a bad draft.",
+                "Exports PDF/PNG to submit, or editable .pptx for a shared deck.",
+                "Works offline on-device with no account, free to try, one-time unlock.",
+            ],
+            "steps": [
+                "Import the reading PDF, dataset CSV, or a photo of the handout.",
+                "Tap Make My Slide and check the summary against the source.",
+                "Fix any headline by tapping it and rewriting in place.",
+                "Try the redesign styles until the page reads clearly from the back row.",
+                "Export PDF or PNG to submit, or .pptx if it joins a group deck.",
+            ],
+            "fits": "fits students and teachers who need one accurate, good-looking page from real course material without learning a deck editor.",
+            "faq": [
+                {
+                    "q": "Can it chart my experiment or survey data?",
+                    "a": "Yes — import a CSV or paste the numbers and it picks a column, bar, line, donut or funnel chart the data actually supports; it never fabricates values.",
+                },
+                {
+                    "q": "Do I need an account or internet in class?",
+                    "a": "No — it runs fully on-device with no account or sign-in, and everything works with no network at all.",
+                },
+                {
+                    "q": "Is it a subscription?",
+                    "a": "No — it's free to try, and Lifetime Pro is a single one-time purchase with no recurring fee.",
+                },
+            ],
+        },
+    ],
 }
 
 

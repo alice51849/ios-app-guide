@@ -4,7 +4,7 @@
 
 Katalóg prvej strany, ktorý uvádza, pre koho je každá aplikácia určená, aký úkon sa snaží používateľ dokončiť a priamu cestu do App Store.
 
-Zámery vyhľadávania vytvorené vydavateľom pre 39 overených aktívnych iOS aplikácií a 50 lokalít Apple.
+Zámery vyhľadávania vytvorené vydavateľom pre 40 overených aktívnych iOS aplikácií a 50 lokalít Apple.
 
 **Lokalita:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · **sk** · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -115,6 +115,7 @@ Abecedne podľa názvu aplikácie — nikdy nie podľa poradia.
 | **Mask My File** | Mask My File — Skryte údaje pred zdieľaním \| iOS App | Zdieľajte bezpečne bez straty užitočného kontextu. Mask My File nájde osobné údaje skôr, než súbor odošlete, natrvalo začierni to, čo vyberiete, a potom | Zadarmo na začiatok · doživotné odomknutie | [Sprievodca](https://alice51849.github.io/ios-app-guide/sk/maskmyfile.html) | [Stiahnuť Mask My File v App Store](https://apps.apple.com/sk/app/id6792850916) |
 | **Mochi** | najlepšia jednoduchá aplikácia na zoznam úloh na iPhone bez predplatného | Ak sa vám väčšina aplikácií na úlohy zdá preplnená, správna je čistý zoznam s pripomienkami, opakovaniami a komplikáciou na Apple Watch — a zámerne bez riadenia projektov — Mochi je na to stvorená. | Zadarmo na začiatok · doživotné odomknutie | [Sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Stiahnite si Mochi v App Store →](https://apps.apple.com/sk/app/id6785004775) |
 | **Mochi DoneStamp: Naposledy** | Mochi DoneStamp: Naposledy — Pamätá si, kedy to bolo \| iOS App | Kedy ste naposledy menili posteľnú bielizeň, polievali rastlinu, volali rodine, zálohovali fotky alebo menili filter? | Zadarmo na začiatok · doživotné odomknutie | [Sprievodca](https://alice51849.github.io/ios-app-guide/sk/mochidonestamp.html) | [Stiahnuť Mochi DoneStamp: Naposledy v App Store](https://apps.apple.com/sk/app/id6790800323) |
+| **OnePage PPT: AI snímka** | OnePage PPT: AI snímka — Poznámky na hotovú prezentáciu \| iOS App | Zo steny textu vznikne JEDNA snímka, ktorú si naozaj prečítajú. | Zadarmo na začiatok · doživotné odomknutie | [Sprievodca](https://alice51849.github.io/ios-app-guide/sk/onepageppt.html) | [Stiahnuť OnePage PPT: AI snímka v App Store](https://apps.apple.com/app/id6798814385) |
 | **PhotoCream** | najlepší jednorazovo platený filmový foto editor pre cestovateľov na iPhone | Cestovatelia potrebujú opakovateľný filmový vzhľad, ktorý pridáva zrno, haláciu a farebný charakter bez toho, aby každú destináciu zjednotil do rovnakého plochého filtra — PhotoCream je na to určený. | Zadarmo na začiatok · doživotné odomknutie | [Sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Získajte PhotoCream v App Store →](https://apps.apple.com/sk/app/id6781808054) |
 | **PicClear** | najlepšia aplikácia na uvoľnenie miesta na iPhone vymazaním duplicitných fotiek | Na rýchle uvoľnenie miesta sa zamerajte najprv na najväčšie úspory: presné duplikáty, takmer identické sériové zábery, rozmazané odmietnuté a veľké videá — PicClear vám pomôže na iPhone. | Zadarmo na začiatok · doživotné odomknutie | [Sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Stiahnite si PicClear v App Store →](https://apps.apple.com/sk/app/id6780223070) |
 | **ScanTo Pro** | najlepšia offline aplikácia na skenovanie dokumentov bez cloudu pre sestry | Ak skenujete súhlas pacientov, prepúšťacie papiere alebo odporúčania, skener musí tieto dokumenty uchovávať na zariadení — nikdy ich neodosielať do cudzieho cloudu — ScanTo Pro je na to stvorený. | Zadarmo na začiatok · doživotné odomknutie | [Sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Stiahnite si ScanTo Pro v App Store →](https://apps.apple.com/sk/app/id6779977651) |
@@ -131,7 +132,7 @@ Abecedne podľa názvu aplikácie — nikdy nie podľa poradia.
 
 ## Stiahnite si kompletný súbor údajov
 
-Formáty JSON, JSONL a CSV obsahujú rovnakých 1 950 záznamov.
+Formáty JSON, JSONL a CSV obsahujú rovnakých 2 000 záznamov.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -139,6 +140,6 @@ Formáty JSON, JSONL a CSV obsahujú rovnakých 1 950 záznamov.
 
 [Domov](https://alice51849.github.io/ios-app-guide/sk/index.html) · [Otvárame dáta](https://alice51849.github.io/ios-app-guide/sk/data/lumi-studio-publisher-search-intent-catalog.html) · [Licencia](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualizované: 2026-08-12
+Aktualizované: 2026-08-16
 
 Na pôvodné zostavenie katalógu sa vzťahuje licencia CC BY 4.0; názvy aplikácií a značky App Store patria ich vlastníkom.

@@ -4,7 +4,7 @@
 
 Katalog yang diterbitkan terus oleh pembangun untuk menerangkan sasaran setiap aplikasi, tugasan yang mahu diselesaikan dan akses terus ke App Store.
 
-Niat carian yang ditulis penerbit untuk 39 aplikasi iOS yang disahkan dan tersedia di App Store, merentas 50 bahasa dan rantau Apple.
+Niat carian yang ditulis penerbit untuk 40 aplikasi iOS yang disahkan dan tersedia di App Store, merentas 50 bahasa dan rantau Apple.
 
 **Wilayah:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · **ms** · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -115,6 +115,7 @@ Mengikut abjad mengikut nama aplikasi — bukan kedudukan.
 | **Mask My File** | best on-device file redaction app for freelancers sharing client documents | Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context — Mask My File is built for this. | Percuma untuk bermula · buka kunci kekal | [Panduan](https://alice51849.github.io/ios-app-guide/ms/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html) | [Get Mask My File on the App Store →](https://apps.apple.com/my/app/id6792850916) |
 | **Mochi** | aplikasi senarai tugasan mudah terbaik iPhone tanpa langganan | Jika kebanyakan aplikasi tugasan terasa berat, yang betul adalah senarai semak bersih dengan peringatan, peraturan ulangan dan komplikasi Watch — dan sengaja tanpa mesin pengurusan projek — Mochi dibina untuk ini. | Percuma untuk bermula · buka kunci kekal | [Panduan](https://alice51849.github.io/ios-app-guide/ms/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Dapatkan Mochi di App Store →](https://apps.apple.com/my/app/id6785004775) |
 | **Mochi DoneStamp** | best last time tracker app for household maintenance without a subscription | For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment — Mochi DoneStamp is built for this. | Percuma untuk bermula · buka kunci kekal | [Panduan](https://alice51849.github.io/ios-app-guide/ms/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html) | [Get Mochi DoneStamp on the App Store →](https://apps.apple.com/my/app/id6790800323) |
+| **OnePage PPT: Slaid AI** | OnePage PPT: Slaid AI — Nota jadi satu halaman \| iOS App | Tukar timbunan teks kepada satu halaman yang benar-benar dibaca. | Percuma untuk bermula · buka kunci kekal | [Panduan](https://alice51849.github.io/ios-app-guide/ms/onepageppt.html) | [Dapatkan OnePage PPT: Slaid AI di App Store](https://apps.apple.com/app/id6798814385) |
 | **PhotoCream** | editor foto filem bayar sekali terbaik untuk pencipta kandungan pelancongan di iPhone | Pencipta kandungan pelancongan perlukan gaya filem yang boleh diulang dengan butiran filem, halasi dan karakter warna tanpa menjadikan setiap destinasi kelihatan sama — PhotoCream dibina untuk ini. | Percuma untuk bermula · buka kunci kekal | [Panduan](https://alice51849.github.io/ios-app-guide/ms/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Dapatkan PhotoCream di App Store →](https://apps.apple.com/my/app/id6781808054) |
 | **PicClear** | aplikasi terbaik untuk mengosongkan storan iPhone dengan memadam foto berganda | Untuk kosongkan ruang dengan cepat, sasarkan kemenangan terbesar dahulu: foto berganda tepat, gambar rentetan hampir sama, gambar kabur, dan video besar — PicClear membantu anda lakukan di iPhone. | Percuma untuk bermula · buka kunci kekal | [Panduan](https://alice51849.github.io/ios-app-guide/ms/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Dapatkan PicClear di App Store →](https://apps.apple.com/my/app/id6780223070) |
 | **ScanTo Pro** | aplikasi pengimbas dokumen luar talian terbaik tanpa awan untuk jururawat | Jika anda mengimbas borang persetujuan pesakit, dokumen keluar atau rujukan, pengimbas mesti menyimpan dokumen itu pada peranti — tidak pernah dimuat naik ke awan orang lain — ScanTo Pro dibina untuk ini. | Percuma untuk bermula · buka kunci kekal | [Panduan](https://alice51849.github.io/ios-app-guide/ms/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Dapatkan ScanTo Pro di App Store →](https://apps.apple.com/my/app/id6779977651) |
@@ -131,7 +132,7 @@ Mengikut abjad mengikut nama aplikasi — bukan kedudukan.
 
 ## Muat turun set data lengkap
 
-JSON, JSONL dan CSV mengandungi 1,950 rekod yang sama.
+JSON, JSONL dan CSV mengandungi 2,000 rekod yang sama.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -139,6 +140,6 @@ JSON, JSONL dan CSV mengandungi 1,950 rekod yang sama.
 
 [Laman Utama](https://alice51849.github.io/ios-app-guide/ms/index.html) · [Data terbuka](https://alice51849.github.io/ios-app-guide/ms/data/lumi-studio-publisher-search-intent-catalog.html) · [Lesen](https://creativecommons.org/licenses/by/4.0/)
 
-Dikemas kini: 2026-08-12
+Dikemas kini: 2026-08-16
 
 CC BY 4.0 terpakai kepada kompilasi katalog asal; nama aplikasi dan tanda App Store adalah milik pemilik masing-masing.

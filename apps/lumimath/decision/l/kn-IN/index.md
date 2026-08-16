@@ -2,7 +2,7 @@
 title: "ಮಕ್ಕಳಿಗೆ ತರ್ಕ ಕೌಶಲ್ಯಗಳನ್ನು ನಿರ್ಮಿಸಲು ಉತ್ತಮ ಗಣಿತ ಆಟ ಆಪ್ iPhone"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/kn-IN/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "mejor app de vocabulario para personas ocupadas con Apple Watch"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/es-MX/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "구독 없이 잠들기 좋은 최고의 백색소음 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/ko/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 수면에 구독이 매달 귀찮게 하는 것은 휴식에 반대입니다 — Sereno는 이를 위해 만들어졌습니다.
 
 - 수면 & 집중
-- 무료로 시작 · 평생 잠금 해제
+- 무료로 시작 · 한 번 구매 잠금 해제
 - 오프라인
 - 광고 없음
 - App Store · 무료

@@ -4,7 +4,7 @@
 
 प्रत्येक अॅप कोणासाठी डिझाइन केले आहे, ते कोणते कार्य पूर्ण करण्याचा प्रयत्न करत आहेत, आणि थेट App Store मार्ग यांचा प्रथम पक्ष निर्देशिका.
 
-39 प्रमाणित लाइव्ह iOS अॅप्स आणि 50 Apple स्थानिकांसाठी प्रकाशकांनी लिहिलेली शोध हेतू.
+40 प्रमाणित लाइव्ह iOS अॅप्स आणि 50 Apple स्थानिकांसाठी प्रकाशकांनी लिहिलेली शोध हेतू.
 
 **स्थानिक:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · **mr-IN** · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -115,6 +115,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Mask My File** | Mask My File — शेअर करण्यापूर्वी माहिती लपवा \| iOS App | उपयुक्त संदर्भ न गमावता सुरक्षित शेअर करा. Mask My File तुम्ही फाइल पाठवण्यापूर्वी खासगी तपशील शोधतो, तुम्ही निवडलेला भाग कायमचा लपवतो, नंतर नवी फाइल | सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/maskmyfile.html) | [App Store वरून Mask My File मिळवा](https://apps.apple.com/in/app/id6792850916) |
 | **Mochi** | iPhone साठी सदस्यता नसलेले सर्वोत्तम सोपे टू-डू लिस्ट अॅप | जर बहुतेक टू-डू अॅप्स जड वाटत असतील, तर योग्य अॅप म्हणजे स्वच्छ चेकलिस्ट ज्यात आठवणी, पुनरावृत्ती नियम आणि Watch कॉम्प्लिकेशन आहे — आणि जाणूनबुजून प्रोजेक्ट व्यवस्थापन नाही — Mochi यासाठी तयार केलेले आहे. | सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [App Store वरून Mochi मिळवा →](https://apps.apple.com/in/app/id6785004775) |
 | **Mochi DoneStamp: शेवटची वेळ** | Mochi DoneStamp: शेवटची वेळ — कधी केले ते लक्षात ठेवा \| iOS App | तुम्ही शेवटची चादर कधी बदलली, झाडाला पाणी कधी दिले, कुटुंबाला फोन, फोटो बॅकअप किंवा फिल्टर कधी बदलला? | सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/mochidonestamp.html) | [App Store वरून Mochi DoneStamp: शेवटची वेळ मिळवा](https://apps.apple.com/in/app/id6790800323) |
+| **OnePage PPT: स्लाइड मेकर** | OnePage PPT: स्लाइड मेकर — नोट्सचे नेटके सादरीकरण \| iOS App | मजकुराच्या ढिगाऱ्याचे रूपांतर अशा एका स्लाइडमध्ये करा, जी लोक खरोखर वाचतील. | सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/onepageppt.html) | [App Store वरून OnePage PPT: स्लाइड मेकर मिळवा](https://apps.apple.com/app/id6798814385) |
 | **PhotoCream** | iPhone वर प्रवास निर्मात्यांसाठी एकदाच पैसे देऊन मिळणारा सर्वोत्तम फिल्म फोटो संपादक | प्रवास निर्मात्यांना असा फिल्म लुक हवा असतो जो प्रत्येक गंतव्यस्थान एकसारखा न करता ग्रेन, हॅलेशन आणि रंगाचा विशेषपणा जोडतो — PhotoCream यासाठी तयार केले आहे. | सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [PhotoCream App Store वर मिळवा →](https://apps.apple.com/in/app/id6781808054) |
 | **PicClear** | iPhone साठवणूक मोकळी करण्यासाठी डुप्लिकेट फोटो हटवणारे सर्वोत्तम अॅप | जागा पटकन मोकळी करण्यासाठी, सर्वात मोठ्या फायद्यांवर लक्ष केंद्रित करा: अचूक डुप्लिकेट फोटो, जवळजवळ सारखे बर्स्ट शॉट्स, धूसर फोटो आणि मोठे व्हिडिओ — PicClear तुमच्या iPhone वर हे करण्यास मदत करते. | सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App Store वरून PicClear मिळवा →](https://apps.apple.com/in/app/id6780223070) |
 | **ScanTo Pro** | नर्सेससाठी सर्वोत्तम ऑफलाइन दस्तऐवज स्कॅनर अॅप, कोणतीही क्लाउड नाही | जर तुम्ही रुग्ण संमती फॉर्म, डिस्चार्ज कागदपत्रे किंवा रेफरल स्कॅन करत असाल, तर स्कॅनरने ती कागदपत्रे डिव्हाइसवरच ठेवली पाहिजेत — कधीही दुसऱ्याच्या क्लाउडवर अपलोड केली जाऊ नयेत — ScanTo Pro यासाठी तयार केलेले आहे. | सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [App Store वरून ScanTo Pro मिळवा →](https://apps.apple.com/in/app/id6779977651) |
@@ -131,7 +132,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## पूर्ण डेटासेट डाउनलोड करा
 
-JSON, JSONL आणि CSV मध्ये समान 1,950 नोंदी आहेत.
+JSON, JSONL आणि CSV मध्ये समान 2,000 नोंदी आहेत.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -139,6 +140,6 @@ JSON, JSONL आणि CSV मध्ये समान 1,950 नोंदी आ
 
 [मुख्यपृष्ठ](https://alice51849.github.io/ios-app-guide/mr-IN/index.html) · [मुक्त डेटा](https://alice51849.github.io/ios-app-guide/mr-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [परवाना](https://creativecommons.org/licenses/by/4.0/)
 
-अपडेट केलेले: 2026-08-12
+अपडेट केलेले: 2026-08-16
 
 CC BY 4.0 मूळ निर्देशिका संकलनावर लागू होते; अॅप नावे आणि App Store चिन्हे त्यांच्या मालकांची आहेत.

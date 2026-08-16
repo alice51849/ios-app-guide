@@ -2,7 +2,7 @@
 title: "가족 여행에서 아이들을 위한 최고의 여행 활동 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/ko/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 어린 자녀와 여행하는 부모는 짐 싸기, 대기, 새로운 장소 탐험을 모험의 일부로 만들어주는 활동이 필요하며, Lumi Trip Planet은 이를 위해 만들어졌습니다.
 
 - 어린이 & 학습
-- 무료로 시작 · 평생 잠금 해제
+- 무료로 시작 · 한 번 구매 잠금 해제
 - 광고 없음
 - App Store · 무료
 

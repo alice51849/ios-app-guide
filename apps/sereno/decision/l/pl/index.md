@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja z białym szumem do zasypiania bez subskrypcji"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/pl/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

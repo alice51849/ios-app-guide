@@ -2,7 +2,7 @@
 title: "아이폰에서 아이들 흐릿한 사진을 보정하는 최고의 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/ko/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 아이들은 가만히 있지 않으므로 부드러운 초점과 흔들림은 피할 수 없습니다 — Unblurry는 이를 위해 만들어졌습니다.
 
 - 사진 & 유틸리티
-- 무료로 시작 · 평생 잠금 해제
+- 무료로 시작 · 한 번 구매 잠금 해제
 - 프라이빗 / 기기 내
 - App Store · 무료
 

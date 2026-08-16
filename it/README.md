@@ -4,7 +4,7 @@
 
 Un catalogo pubblicato direttamente dallo sviluppatore che indica a chi è destinata ogni app, l'attività da completare e l'accesso diretto all'App Store.
 
-Intenti di ricerca redatti dall'editore per 39 app iOS verificate e disponibili in 50 lingue e aree geografiche Apple.
+Intenti di ricerca redatti dall'editore per 40 app iOS verificate e disponibili in 50 lingue e aree geografiche Apple.
 
 **Lingua e area geografica:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · **it** · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -115,6 +115,7 @@ In ordine alfabetico per nome dell'app — mai una classifica.
 | **Mask My File** | Mask My File — Nascondi i dati sensibili \| iOS App | Condividi senza esporre più del necessario. Mask My File individua i dati personali prima che tu invii un file, oscura in modo permanente ciò che scegli | Gratis per iniziare · sblocco permanente | [Guida](https://alice51849.github.io/ios-app-guide/it/maskmyfile.html) | [Scarica Mask My File sull'App Store](https://apps.apple.com/it/app/id6792850916) |
 | **Mochi** | migliore app lista cose da fare semplice su iPhone senza abbonamento | Se la maggior parte delle app per liste ti sembra troppo complessa, quella giusta è una lista pulita con promemoria, regole di ripetizione e una complicazione per Watch — e volutamente senza gestione progetti — Mochi è fatta per questo. | Gratis per iniziare · sblocco permanente | [Guida](https://alice51849.github.io/ios-app-guide/it/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Scarica Mochi dall'App Store →](https://apps.apple.com/it/app/id6785004775) |
 | **Mochi DoneStamp: Ultima volta** | Mochi DoneStamp: Ultima volta — Ricorda quando l’hai fatto \| iOS App | Quando hai cambiato le lenzuola, annaffiato una pianta, chiamato la famiglia, salvato le foto o sostituito un filtro l’ultima volta? | Gratis per iniziare · sblocco permanente | [Guida](https://alice51849.github.io/ios-app-guide/it/mochidonestamp.html) | [Scarica Mochi DoneStamp: Ultima volta sull'App Store](https://apps.apple.com/it/app/id6790800323) |
+| **OnePage PPT: slide con IA** | OnePage PPT: slide con IA — I tuoi appunti in una slide \| iOS App | Trasforma un muro di testo in UNA slide che si legge davvero. | Gratis per iniziare · sblocco permanente | [Guida](https://alice51849.github.io/ios-app-guide/it/onepageppt.html) | [Scarica OnePage PPT: slide con IA sull'App Store](https://apps.apple.com/app/id6798814385) |
 | **PhotoCream** | miglior editor foto effetto pellicola a pagamento unico per creator di viaggio su iPhone | I creator di viaggio cercano un look pellicola ripetibile che aggiunga grana, halation e carattere cromatico senza appiattire ogni destinazione — PhotoCream è pensato per questo. | Gratis per iniziare · sblocco permanente | [Guida](https://alice51849.github.io/ios-app-guide/it/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Scarica PhotoCream su App Store →](https://apps.apple.com/it/app/id6781808054) |
 | **PicClear** | migliore app per liberare spazio su iPhone eliminando foto duplicate | Per liberare spazio velocemente, punta prima ai guadagni maggiori: foto duplicate esatte, scatti a raffica quasi identici, foto sfocate e video grandi — PicClear ti aiuta a farlo sul tuo iPhone. | Gratis per iniziare · sblocco permanente | [Guida](https://alice51849.github.io/ios-app-guide/it/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Scarica PicClear dall'App Store →](https://apps.apple.com/it/app/id6780223070) |
 | **ScanTo Pro** | migliore scanner documenti offline senza cloud per infermieri | Se scansionate moduli di consenso, documenti di dimissione o referti, lo scanner deve mantenere quei documenti sul dispositivo — mai caricati su cloud di terzi — ScanTo Pro è fatta per questo. | Gratis per iniziare · sblocco permanente | [Guida](https://alice51849.github.io/ios-app-guide/it/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Scarica ScanTo Pro dall'App Store →](https://apps.apple.com/it/app/id6779977651) |
@@ -131,7 +132,7 @@ In ordine alfabetico per nome dell'app — mai una classifica.
 
 ## Scarica il set di dati completo
 
-JSON, JSONL e CSV contengono gli stessi 1.950 record.
+JSON, JSONL e CSV contengono gli stessi 2.000 record.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -139,6 +140,6 @@ JSON, JSONL e CSV contengono gli stessi 1.950 record.
 
 [Home](https://alice51849.github.io/ios-app-guide/it/index.html) · [Dati aperti](https://alice51849.github.io/ios-app-guide/it/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenza](https://creativecommons.org/licenses/by/4.0/)
 
-Aggiornato: 2026-08-12
+Aggiornato: 2026-08-16
 
 La licenza CC BY 4.0 si applica alla compilazione originale del catalogo; i nomi delle app e i marchi dell'App Store appartengono ai rispettivi proprietari.

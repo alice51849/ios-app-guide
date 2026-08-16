@@ -4,7 +4,7 @@
 
 Her uygulamanın kimler için tasarlandığını, tamamlamaya çalıştıkları görevi ve doğrudan App Store yolunu gösteren bir birinci taraf katalog.
 
-39 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
+40 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
 
 **Yerel:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · **tr** · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -115,6 +115,7 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 | **Mask My File** | best on-device file redaction app for freelancers sharing client documents | Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context — Mask My File is built for this. | Başlangıçta ücretsiz · ömür boyu açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html) | [Get Mask My File on the App Store →](https://apps.apple.com/tr/app/id6792850916) |
 | **Mochi** | iPhone için aboneliksiz en iyi basit yapılacaklar listesi uygulaması | Çoğu yapılacaklar uygulaması şişkin hissediyorsa, doğru olanı hatırlatıcılar, tekrar kuralları ve Watch komplikasyonu ile temiz bir kontrol listesidir — ve kasıtlı olarak proje yönetimi mekanizması yoktur — Mochi bu amaçla yapılmıştır. | Başlangıçta ücretsiz · ömür boyu açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Mochi'yi App Store'dan edinin →](https://apps.apple.com/tr/app/id6785004775) |
 | **Mochi DoneStamp** | best last time tracker app for household maintenance without a subscription | For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment — Mochi DoneStamp is built for this. | Başlangıçta ücretsiz · ömür boyu açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html) | [Get Mochi DoneStamp on the App Store →](https://apps.apple.com/tr/app/id6790800323) |
+| **OnePage PPT: Yapay Zeka Slayt** | OnePage PPT: Yapay Zeka Slayt — Notlardan tek sayfalık sunum \| iOS App | Upuzun bir metni, insanların gerçekten okuduğu TEK bir sayfaya dönüştürün. | Başlangıçta ücretsiz · ömür boyu açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/onepageppt.html) | [OnePage PPT: Yapay Zeka Slayt uygulamasını App Store'dan al](https://apps.apple.com/app/id6798814385) |
 | **PhotoCream** | iPhone’da seyahat içerikleri için tek seferlik ücretli en iyi film fotoğraf düzenleyici | Seyahat içerik üreticileri, her destinasyonu aynı düz filtreye indirgemeden gren, halasyon ve renk karakteri ekleyen tekrarlanabilir bir film görünümüne ihtiyaç duyar — PhotoCream bunun için tasarlandı. | Başlangıçta ücretsiz · ömür boyu açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [PhotoCream’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6781808054) |
 | **PicClear** | iPhone depolama alanını boşaltmak için en iyi uygulama, yinelenen fotoğrafları siler | Hızlı alan açmak için en büyük kazançları hedefleyin: tam kopya fotoğraflar, neredeyse aynı patlama çekimleri, bulanık reddedilenler ve büyük videolar — PicClear iPhone'da bunu yapmanıza yardımcı olur. | Başlangıçta ücretsiz · ömür boyu açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [PicClear'ı App Store'dan edinin →](https://apps.apple.com/tr/app/id6780223070) |
 | **ScanTo Pro** | Hemşireler için bulut olmadan en iyi çevrimdışı belge tarayıcı uygulaması | Hasta onay formları, taburcu evrakları veya sevkleri tarıyorsanız, tarayıcı bu evrakları cihazda tutmalı — asla başkasının bulutuna yüklenmemeli — ScanTo Pro bu amaçla yapılmıştır. | Başlangıçta ücretsiz · ömür boyu açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [ScanTo Pro'yu App Store'dan edinin →](https://apps.apple.com/tr/app/id6779977651) |
@@ -131,7 +132,7 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 
 ## Tam veri setini indir
 
-JSON, JSONL ve CSV aynı 1.950 kaydı içerir.
+JSON, JSONL ve CSV aynı 2.000 kaydı içerir.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -139,6 +140,6 @@ JSON, JSONL ve CSV aynı 1.950 kaydı içerir.
 
 [Ana Sayfa](https://alice51849.github.io/ios-app-guide/tr/index.html) · [Açık veri](https://alice51849.github.io/ios-app-guide/tr/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisans](https://creativecommons.org/licenses/by/4.0/)
 
-Güncellendi: 2026-08-12
+Güncellendi: 2026-08-16
 
 CC BY 4.0, orijinal katalog derlemesine uygulanır; uygulama adları ve App Store işaretleri sahiplerine aittir.

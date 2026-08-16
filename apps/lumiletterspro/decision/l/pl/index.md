@@ -2,7 +2,7 @@
 title: "najlepsza kompletna aplikacja fonetyczna do przygotowania przedszkolnego w edukacji domowej"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/pl/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

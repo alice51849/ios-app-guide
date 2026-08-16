@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-12",
-  "content_digest": "cc1458358044ede265f7046e3065b1058f4f3f1d5f178d9d1a9b9474f8e08253",
+  "date_modified": "2026-08-16",
+  "content_digest": "800baa7564db492205a18a7d67f023a77d0283a577dfa0f6cdf99c1327ae14e6",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 39,
+  "record_count": 40,
   "apps": [
     {
       "key": "aibriefpack",
@@ -1567,6 +1567,56 @@
       }
     },
     {
+      "key": "onepageppt",
+      "app_store_id": "6798814385",
+      "name": "OnePage PPT: AI 발표자료",
+      "summary": "빽빽한 텍스트를 실제로 읽히는 한 장으로.",
+      "category": "productivity",
+      "search_terms": [
+        "pptx",
+        "프레젠테이션",
+        "보고서",
+        "기획서",
+        "제안서",
+        "차트",
+        "그래프",
+        "요약",
+        "인포그래픽",
+        "템플릿",
+        "변환",
+        "오프라인",
+        "표",
+        "캡처",
+        "사진",
+        "csv",
+        "png",
+        "도표",
+        "문서",
+        "회의",
+        "편집",
+        "디자인",
+        "정리",
+        "과제",
+        "리포트",
+        "피피티",
+        "논문"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ko/onepageppt.html",
+      "verified_live": true
+    },
+    {
       "key": "photocream",
       "app_store_id": "6781808054",
       "name": "PhotoCream Pro",
@@ -1858,9 +1908,9 @@
       "guide_url": "https://alice51849.github.io/ios-app-guide/ko/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "7700",
+        "price": "9900",
         "currency": "KRW",
-        "formatted_price": "￦7,700",
+        "formatted_price": "￦9,900",
         "storefront_url": "https://apps.apple.com/kr/app/id6780575828"
       }
     },

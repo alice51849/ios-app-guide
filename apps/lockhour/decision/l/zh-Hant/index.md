@@ -2,7 +2,7 @@
 title: "最佳學習時封鎖社群媒體應用程式 iPhone"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/zh-Hant/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 考試期間，意志力不是工具——嚴格的定時封鎖才是——LockHour Pro 專為此設計。
 
 - 效率工具
-- 免費開始 · 永久解鎖
+- 免費開始 · 一次購買解鎖
 - 無廣告
 - 隱私優先／裝置端
 - App Store · 免費

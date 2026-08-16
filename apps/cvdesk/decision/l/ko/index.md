@@ -2,7 +2,7 @@
 title: "2026년 경력 전환자를 위한 최고의 이력서 작성 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/ko/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 분야를 바꿀 때 이력서 문제는 다릅니다: 경험은 실제지만 서류상 '관련 없음'으로 ATS 필터가 인간 검토 전에 걸러냅니다 — CV Desk는 이를 위해 만들어졌습니다.
 
 - 생산성
-- 무료로 시작 · 평생 잠금 해제
+- 무료로 시작 · 한 번 구매 잠금 해제
 - App Store · 무료
 
 [앱 스토어에서 CV Desk 받기 →](https://apps.apple.com/kr/app/id6781337213)

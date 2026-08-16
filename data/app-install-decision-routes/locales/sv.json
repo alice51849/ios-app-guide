@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "sv",
-  "dateModified": "2026-08-12",
-  "content_digest": "eabb52c2e5caf759f126670f165d581f1de75dccc78a8d07f2e41c3cda651c7a",
-  "generation_digest": "2e7091822485b8a451b951bf8fcefb98f6cf4d1da8ddab7b253cab721d1fe739",
+  "dateModified": "2026-08-16",
+  "content_digest": "ca9003f82b6334546cf20f8b860d7b7e8b87554b960a4e240d4b0fb52b3e3dcf",
+  "generation_digest": "95421419b8278dc0ce219aa681af0aa80363593e2af4aa7ba238e0f7395ea4d8",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 39,
+  "record_count": 40,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/sv.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/sv.rss.xml",
@@ -1348,6 +1348,46 @@
       "verified_live": true
     },
     {
+      "record_id": "sv:onepageppt",
+      "locale": "sv",
+      "app_key": "onepageppt",
+      "app_name": "OnePage PPT: AI-bildspel",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "OnePage PPT: AI-bildspel — Anteckningar till en slide | iOS App",
+      "decision_context": "Gör en vägg av text till EN bild som folk faktiskt läser. OnePage PPT läser det du matar in — skriven text, inklistrad text, skärmbilder, foton, PDF:er, CSV-tabeller —, hittar det viktigaste och sätter ihop allt till en enda presentationsfärdig 16:9-bild. SÅ FUNGERAR DET 1. Lägg in vad som helst: skriv, klistra in, fota eller importera en PDF eller ett kalkylark. 2. Tryck på «Skapa min bild» — innehållet kokas ned till budskap och rätt visualisering. 3. Presentera eller exportera. RÄTT VISUALISERING AUTOMATISKT Siffror blir stapel-, liggande stapel-, linje-, ring- eller trattdiagram. Steg blir flödesschema, datum tidslinje, två alternativ en jämförelse, insikter en matris eller ett träd. Ett diagram ritas bara när underlaget räcker — siffror hittas aldrig på. GÖR OM TILLS DET SITTER Sex omgörningar med en tryckning — Renare, Mer visuell, Mer professionell, Djärvare, Mer kompakt, Mer redaktionell — bygger om bilden med andra diagramformer, typografi och layout. Lås det du redan gillar. EXPORTERA VART SOM HELST • Redigerbar .pptx för PowerPoint, Keynote och Google Presentationer • PDF för att dela och skriva ut • PNG i hög upplösning för dokument, e-post och chatt ÄNDRA VARJE DETALJ Tryck på ett element för att skriva om det, byta bild, flytta block eller byta stil; versionshistoriken tar dig tillbaka till valfritt utkast. PRIVAT FRÅN GRUNDEN Allt körs på din enhet och lämnar aldrig iPhone eller iPad. Inget konto, ingen inloggning, ingen spårning — och det funkar helt utan nät. ETT KÖP, SEDAN KLART Testa gratis. Lifetime Pro är ett engångsköp — ingen prenumeration.",
+      "category": "productivity",
+      "category_label": "Produktivitet",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "one_time_option": true,
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Produktivitet",
+        "Gratis att börja · livstidsupplåsning"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/onepageppt.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/sv/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/sv/onepageppt.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fonepageppt%2Fdecision%2Fl%2Fsv%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
+      "app_store_id": "6798814385",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_cta_label": "Hämta OnePage PPT: AI-bildspel i App Store",
+      "storefront_facts": null,
+      "guide_cta_label": "Läs hela guiden",
+      "publisher_disclosure": "Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.",
+      "source_persona_query": "app that turns meeting notes into one presentation slide",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "sv:photocream",
       "locale": "sv",
       "app_key": "photocream",
@@ -1571,7 +1611,7 @@
         "Foto & verktyg",
         "Betald nedladdning",
         "Privat / på enheten",
-        "App Store · 69,00 kr"
+        "App Store · 79,00 kr"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/sv/index.html",
@@ -1582,9 +1622,9 @@
       "app_store_url": "https://apps.apple.com/se/app/id6780575828",
       "app_store_cta_label": "Skaffa Snapport i App Store →",
       "storefront_facts": {
-        "price": "69",
+        "price": "79",
         "currency": "SEK",
-        "formatted_price": "69,00 kr"
+        "formatted_price": "79,00 kr"
       },
       "guide_cta_label": "Läs hela guiden",
       "publisher_disclosure": "Guide från Lumi Studio, apputvecklaren. Appnamn är varumärken som tillhör sina ägare och används endast för identifiering. För dokument, hälsa, skola och produktivitetsbeslut, kontrollera officiella krav där det är relevant.",

@@ -2,7 +2,7 @@
 title: "HoursTag: ਘੰਟਿਆਂ ਦੀ ਕੀਮਤ — ਅਸਲ ਕੀਮਤ ਕੀ ਹੈ? | iOS App"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/pa-IN/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

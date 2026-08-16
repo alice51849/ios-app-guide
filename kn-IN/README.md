@@ -4,7 +4,7 @@
 
 ಪ್ರತಿ ಆ್ಯಪ್ ಯಾರಿಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ, ಅವರು ಪೂರ್ಣಗೊಳಿಸಲು ಯತ್ನಿಸುತ್ತಿರುವ ಕಾರ್ಯ ಮತ್ತು ನೇರ App Store ಮಾರ್ಗದ ಮೊದಲ-ಪಕ್ಷ ಕ್ಯಾಟಲಾಗ್.
 
-39 ಪರಿಶೀಲಿತ ಸಜೀವ iOS ಆ್ಯಪ್ಗಳು ಮತ್ತು 50 Apple ಸ್ಥಳೀಯತೆಗಳಾದ್ಯಂತ ಪ್ರಕಾಶಕರಿಂದ ರಚಿಸಲಾದ ಹುಡುಕಾಟ ಉದ್ದೇಶಗಳು.
+40 ಪರಿಶೀಲಿತ ಸಜೀವ iOS ಆ್ಯಪ್ಗಳು ಮತ್ತು 50 Apple ಸ್ಥಳೀಯತೆಗಳಾದ್ಯಂತ ಪ್ರಕಾಶಕರಿಂದ ರಚಿಸಲಾದ ಹುಡುಕಾಟ ಉದ್ದೇಶಗಳು.
 
 **ಸ್ಥಳೀಯತೆ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · **kn-IN** · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -115,6 +115,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Mask My File** | Mask My File — ಹಂಚುವ ಮೊದಲು ಮಾಹಿತಿ ಮರೆಮಾಡಿ \| iOS App | ಉಪಯುಕ್ತ ಸಂದರ್ಭ ಕಳೆದುಕೊಳ್ಳದೆ ಸುರಕ್ಷಿತವಾಗಿ ಹಂಚಿಕೊಳ್ಳಿ. Mask My File ನೀವು ಫೈಲ್ ಕಳಿಸುವ ಮೊದಲು ಖಾಸಗಿ ವಿವರಗಳನ್ನು ಹುಡುಕುತ್ತದೆ, ನೀವು ಆಯ್ದ ಭಾಗವನ್ನು ಶಾಶ್ವತವಾಗಿ | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/maskmyfile.html) | [App Store ನಲ್ಲಿ Mask My File ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6792850916) |
 | **Mochi** | ಸರಳ ಟು ಡು ಲಿಸ್ಟ್ ಆಪ್ iPhone ಚಂದಾದಾರಿಕೆ ಇಲ್ಲದೆ | ಬಹುತೇಕ ಟು ಡು ಆಪ್‌ಗಳು ಭಾರವಾಗಿರುವಂತೆ ಭಾಸವಾದರೆ, ಸರಿಯಾದದು ನೆನಪಿನ ಸೂಚನೆಗಳು, ಪುನರಾವೃತ್ತಿ ನಿಯಮಗಳು ಮತ್ತು ವಾಚ್ ಕಾಂಪ್ಲಿಕೇಶನ್ ಹೊಂದಿರುವ ಸ್ವಚ್ಛ ಚೆಕ್‌ಲಿಸ್ಟ್ — ಮತ್ತು ಉದ್ದೇಶಪೂರ್ವಕವಾಗಿ ಯಾವುದೇ ಯೋಜನಾ ನಿರ್ವಹಣಾ ಯಂತ್ರವಿಲ್ಲ — Mochi ಇದಕ್ಕಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [App Store ನಲ್ಲಿ Mochi ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6785004775) |
 | **Mochi DoneStamp: ಕೊನೆಯ ಬಾರಿ** | Mochi DoneStamp: ಕೊನೆಯ ಬಾರಿ — ಯಾವಾಗ ಮಾಡಿದ್ದೀರಿ ಎಂದು ನೆನಪಿಡಿ \| iOS App | ಕೊನೆಯ ಬಾರಿ ಹಾಸಿಗೆ ಚಾದರ ಬದಲಿಸಿದ್ದು, ಗಿಡಕ್ಕೆ ನೀರು ಹಾಕಿದ್ದು, ಕುಟುಂಬಕ್ಕೆ ಕರೆ ಮಾಡಿದ್ದು, ಫೋಟೋ ಬ್ಯಾಕಪ್ ಅಥವಾ ಫಿಲ್ಟರ್ ಬದಲಿಸಿದ್ದು ಯಾವಾಗ? | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/mochidonestamp.html) | [App Store ನಲ್ಲಿ Mochi DoneStamp: ಕೊನೆಯ ಬಾರಿ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6790800323) |
+| **OnePage PPT: ಸ್ಲೈಡ್ ಮೇಕರ್** | OnePage PPT: ಸ್ಲೈಡ್ ಮೇಕರ್ — ಟಿಪ್ಪಣಿಯಿಂದ ಸಿದ್ಧ ಪ್ರಸ್ತುತಿ \| iOS App | ಪದಗಳ ರಾಶಿಯನ್ನು ಜನರು ನಿಜಕ್ಕೂ ಓದುವ ಒಂದೇ ಸ್ಲೈಡ್ ಆಗಿ ಬದಲಿಸಿ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/onepageppt.html) | [App Store ನಲ್ಲಿ OnePage PPT: ಸ್ಲೈಡ್ ಮೇಕರ್ ಪಡೆಯಿರಿ](https://apps.apple.com/app/id6798814385) |
 | **PhotoCream** | iPhone‌ನಲ್ಲಿ ಪ್ರಯಾಣಿಕ ನಿರ್ಮಾಪಕರಿಗೆ ಒಮ್ಮೆ ಪಾವತಿ ಮಾಡುವ ಅತ್ಯುತ್ತಮ ಫಿಲ್ಮ್ ಫೋಟೋ ಸಂಪಾದಕ | ಪ್ರಯಾಣದ ವಿಷಯ ರಚಿಸುವವರಿಗೆ, ಪ್ರತಿಯೊಂದು ತಾಣವನ್ನೂ ಒಂದೇ ಸಪ್ಪೆ ಫಿಲ್ಟರ್‌ನಂತೆ ಮಾಡದೆ ಗ್ರೇನ್, ಹ್ಯಾಲೇಶನ್ ಮತ್ತು ವಿಶಿಷ್ಟ ಬಣ್ಣದ ಛಾಯೆ ನೀಡುವ, ಮತ್ತೆ ಮತ್ತೆ ಬಳಸಬಹುದಾದ ಫಿಲ್ಮ್ ಲುಕ್ ಬೇಕಾಗುತ್ತದೆ — PhotoCream ಇದಕ್ಕಾಗಿ ರೂಪಿಸಲಾಗಿದೆ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [PhotoCream ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6781808054) |
 | **PicClear** | iPhone ಸಂಗ್ರಹಣೆಯನ್ನು ಖಾಲಿ ಮಾಡಲು ಉತ್ತಮ ಆಪ್ ನಕಲಿ ಫೋಟೋಗಳನ್ನು ಅಳಿಸುವುದು | ತ್ವರಿತವಾಗಿ ಸ್ಥಳವನ್ನು ತೆರವುಗೊಳಿಸಲು, ದೊಡ್ಡ ಗೆಲುವುಗಳನ್ನು ಮೊದಲು ಗುರಿಯಾಗಿಸಿ: ನಿಖರ ನಕಲಿ ಫೋಟೋಗಳು, ಸಮೀಪದ ಸಮಾನ ಬರ್ಸ್ಟ್ ಶಾಟ್‌ಗಳು, ಅಸ್ಪಷ್ಟ ನಿರಾಕರಣೆಗಳು ಮತ್ತು ದೊಡ್ಡ ವೀಡಿಯೊಗಳು — PicClear ನಿಮ್ಮ iPhone ನಲ್ಲಿ ಇದನ್ನು ಮಾಡಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App Store ನಲ್ಲಿ PicClear ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6780223070) |
 | **ScanTo Pro** | ನರ್ಸುಗಳಿಗೆ ಕ್ಲೌಡ್ ಇಲ್ಲದ ಉತ್ತಮ ಆಫ್‌ಲೈನ್ ಡಾಕ್ಯುಮೆಂಟ್ ಸ್ಕ್ಯಾನರ್ ಆಪ್ | ನೀವು ರೋಗಿಯ ಅನುಮತಿ ಫಾರ್ಮ್‌ಗಳು, ಡಿಸ್ಚಾರ್ಜ್ ದಾಖಲೆಗಳು ಅಥವಾ ರೆಫರಲ್‌ಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿದರೆ, ಸ್ಕ್ಯಾನರ್ ಆ ದಾಖಲೆಗಳನ್ನು ಸಾಧನದಲ್ಲಿ ಇಡಬೇಕು — ಯಾರಾದರೂ ಇತರರ ಕ್ಲೌಡ್‌ಗೆ ಅಪ್ಲೋಡ್ ಮಾಡಬಾರದು — ScanTo Pro ಇದಕ್ಕಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [App Store ನಲ್ಲಿ ScanTo Pro ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6779977651) |
@@ -131,7 +132,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ಪೂರ್ಣ ಡೇಟಾಸೆಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ
 
-JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 1,950 ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿವೆ.
+JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 2,000 ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿವೆ.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -139,6 +140,6 @@ JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 1,950 ದಾಖಲೆಗಳನ್�
 
 [ಮುಖಪುಟ](https://alice51849.github.io/ios-app-guide/kn-IN/index.html) · [ತೆರೆದ ಡೇಟಾ](https://alice51849.github.io/ios-app-guide/kn-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ಲೈಸೆನ್ಸ್](https://creativecommons.org/licenses/by/4.0/)
 
-ನವೀಕರಿಸಲಾಗಿದೆ: 2026-08-12
+ನವೀಕರಿಸಲಾಗಿದೆ: 2026-08-16
 
 CC BY 4.0 ಮೂಲ ಕ್ಯಾಟಲೋಗ್ ಸಂಗ್ರಹಣೆಗೆ ಅನ್ವಯಿಸುತ್ತದೆ; ಆ್ಯಪ್ ಹೆಸರುಗಳು ಮತ್ತು App Store ಗುರುತುಗಳು ಅವರ ಮಾಲೀಕರಿಗೆ ಸೇರಿವೆ.

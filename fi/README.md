@@ -4,7 +4,7 @@
 
 Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, mitä tehtävää he pyrkivät suorittamaan ja suora App Store -polku.
 
-Julkaisijan laatimat hakutarkoitukset 39 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
+Julkaisijan laatimat hakutarkoitukset 40 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
 
 **Lokaali:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · **fi** · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -115,6 +115,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 | **Mask My File** | Mask My File — Suojaa ennen jakamista \| iOS App | Jaa turvallisesti menettämättä hyödyllistä asiayhteyttä. Mask My File löytää yksityiset tiedot ennen kuin lähetät tiedoston, peittää pysyvästi | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/maskmyfile.html) | [Lataa Mask My File App Storesta](https://apps.apple.com/fi/app/id6792850916) |
 | **Mochi** | paras yksinkertainen muistilistasovellus iPhonelle ilman tilausta | Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkistuslista muistutuksilla, toistosäännöillä ja Watch-komplikaatiolla — ja tarkoituksella ilman projektinhallinnan koneistoa — Mochi on tehty tätä varten. | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Hanki Mochi App Storesta →](https://apps.apple.com/fi/app/id6785004775) |
 | **Mochi DoneStamp: Viimeksi** | Mochi DoneStamp: Viimeksi — Muista, milloin teit sen \| iOS App | Milloin viimeksi vaihdoit lakanat, kastelit kasvin, soitit läheisille, varmuuskopioit kuvat tai vaihdoit suodattimen? | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/mochidonestamp.html) | [Lataa Mochi DoneStamp: Viimeksi App Storesta](https://apps.apple.com/fi/app/id6790800323) |
+| **OnePage PPT: tekoälyesitys** | OnePage PPT: tekoälyesitys — Muistiinpanoista yksi dia \| iOS App | Muuta tekstiseinä YHDEKSI diaksi, jonka joku oikeasti lukee. | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/onepageppt.html) | [Lataa OnePage PPT: tekoälyesitys App Storesta](https://apps.apple.com/app/id6798814385) |
 | **PhotoCream** | paras kertamaksullinen filmikuvien editori matkasisällön tekijöille iPhonella | Matkasisällön tekijät tarvitsevat toistettavan filmityylin, joka lisää rakeen, halation ja värin luonteen ilman että jokainen kohde näyttää samalta filttereiltä — PhotoCream on tehty tätä varten. | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Hanki PhotoCream App Storesta →](https://apps.apple.com/fi/app/id6781808054) |
 | **PicClear** | paras sovellus iPhonen tallennustilan vapauttamiseen poistamalla kaksoiskuvat | Vapauta tilaa nopeasti kohdistamalla suurimpiin voittoihin: täsmälliset kaksoiskuvat, lähes identtiset sarjakuvat, epätarkat hylätyt ja suuret videot — PicClear auttaa sinua tekemään sen iPhonellasi. | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Hanki PicClear App Storesta →](https://apps.apple.com/fi/app/id6780223070) |
 | **ScanTo Pro** | paras offline-asiakirjaskanneri ilman pilveä sairaanhoitajille | Jos skannaat potilaan suostumuslomakkeita, kotiutuspapereita tai lähetteitä, skannerin on säilytettävä ne laitteella — ei koskaan ladattava toisen pilveen — ScanTo Pro on tehty tätä varten. | Ilmainen aloitus · elinikäinen avaus | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Hanki ScanTo Pro App Storesta →](https://apps.apple.com/fi/app/id6779977651) |
@@ -131,7 +132,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 
 ## Lataa koko tietoaineisto
 
-JSON, JSONL ja CSV sisältävät samat 1 950 tietuetta.
+JSON, JSONL ja CSV sisältävät samat 2 000 tietuetta.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -139,6 +140,6 @@ JSON, JSONL ja CSV sisältävät samat 1 950 tietuetta.
 
 [Etusivu](https://alice51849.github.io/ios-app-guide/fi/index.html) · [Avoin data](https://alice51849.github.io/ios-app-guide/fi/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisenssi](https://creativecommons.org/licenses/by/4.0/)
 
-Päivitetty: 2026-08-12
+Päivitetty: 2026-08-16
 
 CC BY 4.0 koskee alkuperäisen luettelon kokoamista; sovellusten nimet ja App Store -merkit kuuluvat omistajilleen.

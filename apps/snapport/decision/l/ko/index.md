@@ -2,7 +2,7 @@
 title: "집에서 아기와 유아용 여권 사진 앱 추천"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/ko/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - 사진 & 유틸리티
 - 유료 다운로드
 - 프라이빗 / 기기 내
-- App Store · ￦7,700
+- App Store · ￦9,900
 
 [App Store에서 Snapport 받기 →](https://apps.apple.com/kr/app/id6780575828)
 

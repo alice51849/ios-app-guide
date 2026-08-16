@@ -2,7 +2,7 @@
 title: "melhor app de preparação TOEIC plano de estudo offline para iPhone"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/pt-PT/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

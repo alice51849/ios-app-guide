@@ -2,7 +2,7 @@
 title: "പഠിക്കാൻ കുട്ടികൾക്ക് മികച്ച ബൊപ്പോമോഫോ ആപ്പ് iPhone-ൽ"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/ml-IN/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

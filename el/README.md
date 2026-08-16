@@ -4,7 +4,7 @@
 
 Ένας πρωτογενής κατάλογος που δείχνει για ποιον προορίζεται κάθε εφαρμογή, το έργο που προσπαθεί να ολοκληρώσει και την άμεση διαδρομή στο App Store.
 
-Προθέσεις αναζήτησης που έχουν συνταχθεί από τον εκδότη για 39 επαληθευμένες ενεργές εφαρμογές iOS και 50 Apple τοπικές γλώσσες.
+Προθέσεις αναζήτησης που έχουν συνταχθεί από τον εκδότη για 40 επαληθευμένες ενεργές εφαρμογές iOS και 50 Apple τοπικές γλώσσες.
 
 **Τοπική γλώσσα:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · **el** · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -115,6 +115,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Mask My File** | Mask My File — Απόκρυψη πριν την κοινοποίηση \| iOS App | Μοιραστείτε με ασφάλεια χωρίς να χάσετε το χρήσιμο πλαίσιο. Το Mask My File εντοπίζει ιδιωτικά στοιχεία προτού στείλετε ένα αρχείο, αποκρύπτει μόνιμα | Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/maskmyfile.html) | [Αποκτήστε το Mask My File από το App Store](https://apps.apple.com/gr/app/id6792850916) |
 | **Mochi** | η καλύτερη απλή εφαρμογή λίστας εργασιών iPhone χωρίς συνδρομή | Αν οι περισσότερες εφαρμογές λίστας εργασιών σας φαίνονται φορτωμένες, η σωστή είναι μια καθαρή λίστα με υπενθυμίσεις, κανόνες επανάληψης και υποστήριξη Watch — και σκόπιμα χωρίς μηχανισμούς διαχείρισης έργων — το Mochi είναι φτιαγμένο γι' αυτό. | Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Κατεβάστε το Mochi από το App Store →](https://apps.apple.com/gr/app/id6785004775) |
 | **Mochi DoneStamp: Τελευταία** | Mochi DoneStamp: Τελευταία — Θυμήσου πότε το έκανες \| iOS App | Πότε άλλαξες τελευταία τα σεντόνια, πότισες ένα φυτό, τηλεφώνησες στην οικογένεια, αποθήκευσες φωτογραφίες ή άλλαξες φίλτρο; | Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/mochidonestamp.html) | [Αποκτήστε το Mochi DoneStamp: Τελευταία από το App Store](https://apps.apple.com/gr/app/id6790800323) |
+| **OnePage PPT: Παρουσίαση AI** | OnePage PPT: Παρουσίαση AI — Σημειώσεις σε μία διαφάνεια \| iOS App | Μετατρέψτε έναν τοίχο κειμένου σε ΜΙΑ σελίδα που όντως διαβάζεται. | Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/onepageppt.html) | [Αποκτήστε το OnePage PPT: Παρουσίαση AI από το App Store](https://apps.apple.com/app/id6798814385) |
 | **PhotoCream** | καλύτερος επεξεργαστής φωτογραφιών με φιλμ για ταξιδιωτικούς δημιουργούς στο iphone με εφάπαξ πληρωμή | Οι ταξιδιωτικοί δημιουργοί χρειάζονται επαναλαμβανόμενο φιλμ εφέ που προσθέτει κόκκο, αλογονοποίηση και χρωματικό χαρακτήρα χωρίς να κάνει κάθε προορισμό ίδιο φίλτρο — το PhotoCream είναι φτιαγμένο γι’ αυτό. | Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Αποκτήστε το PhotoCream στο App Store →](https://apps.apple.com/gr/app/id6781808054) |
 | **PicClear** | η καλύτερη εφαρμογή για απελευθέρωση χώρου iPhone διαγράφοντας διπλές φωτογραφίες | Για να ελευθερώσετε χώρο γρήγορα, στοχεύστε πρώτα τα μεγαλύτερα κέρδη: ακριβή διπλότυπα, σχεδόν ίδια στιγμιότυπα burst, θολές απορρίψεις και μεγάλα βίντεο — το PicClear σας βοηθά να το κάνετε στο iPhone σας. | Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Κατεβάστε το PicClear από το App Store →](https://apps.apple.com/gr/app/id6780223070) |
 | **ScanTo Pro** | η καλύτερη εφαρμογή σαρωτή εγγράφων εκτός σύνδεσης χωρίς cloud για νοσηλευτές | Αν σαρώσετε φόρμες συγκατάθεσης ασθενών, έγγραφα εξιτηρίου ή παραπομπές, ο σαρωτής πρέπει να κρατά αυτά τα έγγραφα στη συσκευή — ποτέ ανεβασμένα σε cloud άλλου — το ScanTo Pro είναι φτιαγμένο γι' αυτό. | Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Κατεβάστε το ScanTo Pro από το App Store →](https://apps.apple.com/gr/app/id6779977651) |
@@ -131,7 +132,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## Κατεβάστε το πλήρες σύνολο δεδομένων
 
-Τα αρχεία JSON, JSONL και CSV περιέχουν τις ίδιες 1.950 εγγραφές.
+Τα αρχεία JSON, JSONL και CSV περιέχουν τις ίδιες 2.000 εγγραφές.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -139,6 +140,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [Αρχική](https://alice51849.github.io/ios-app-guide/el/index.html) · [Ανοιχτά δεδομένα](https://alice51849.github.io/ios-app-guide/el/data/lumi-studio-publisher-search-intent-catalog.html) · [Άδεια](https://creativecommons.org/licenses/by/4.0/)
 
-Ενημερώθηκε: 2026-08-12
+Ενημερώθηκε: 2026-08-16
 
 Η άδεια CC BY 4.0 ισχύει για τη σύνθεση του αρχικού καταλόγου· τα ονόματα εφαρμογών και τα σήματα του App Store ανήκουν στους ιδιοκτήτες τους.

@@ -2,7 +2,7 @@
 title: "найкращий додаток для фото на паспорт для немовлят і малюків вдома"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/uk/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - Фото та утиліти
 - Платне завантаження
 - Приватно / на пристрої
-- App Store · 5,99 USD
+- App Store · 6,99 USD
 
 [Отримайте Snapport в App Store →](https://apps.apple.com/ua/app/id6780575828)
 

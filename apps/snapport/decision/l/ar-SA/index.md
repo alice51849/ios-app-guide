@@ -2,7 +2,7 @@
 title: "أفضل تطبيق صور جواز السفر للأطفال والرضع في المنزل"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/ar-SA/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - الصورة والأدوات
 - تحميل مدفوع
 - خاص / على الجهاز
-- App Store · SAR 19.99
+- App Store · SAR 24.99
 
 [احصل على Snapport من متجر التطبيقات →](https://apps.apple.com/sa/app/id6780575828)
 

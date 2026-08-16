@@ -2,7 +2,7 @@
 title: "ಪ್ರೀಸ್ಕೂಲ್ ಮತ್ತು ಪ್ರಾರಂಭಿಕ ತರಗತಿಗಳಿಗೆ ಪೂರ್ಣ ಗಣಿತ ಕಲಿಕೆ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/kn-IN/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

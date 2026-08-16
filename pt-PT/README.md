@@ -4,7 +4,7 @@
 
 Um catálogo publicado diretamente pelo programador que explica a quem se destina cada app, a tarefa que pretende realizar e o acesso direto à App Store.
 
-Intenções de pesquisa redigidas pelo editor para 39 apps iOS verificadas e disponíveis em 50 idiomas e regiões Apple.
+Intenções de pesquisa redigidas pelo editor para 40 apps iOS verificadas e disponíveis em 50 idiomas e regiões Apple.
 
 **Local:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · **pt-PT** · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -115,6 +115,7 @@ Ordem alfabética pelo nome da app — nunca uma classificação.
 | **Mask My File** | best on-device file redaction app for freelancers sharing client documents | Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context — Mask My File is built for this. | Grátis para começar · desbloqueio permanente | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html) | [Get Mask My File on the App Store →](https://apps.apple.com/pt/app/id6792850916) |
 | **Mochi** | melhor app simples de lista de tarefas no iPhone sem subscrição | Se a maioria das apps de tarefas parecerem pesadas, a certa é uma lista limpa com lembretes, regras de repetição e complicação para Watch — e deliberadamente sem maquinaria de gestão de projetos — o Mochi foi criado para isso. | Grátis para começar · desbloqueio permanente | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Obtenha o Mochi na App Store →](https://apps.apple.com/pt/app/id6785004775) |
 | **Mochi DoneStamp** | best last time tracker app for household maintenance without a subscription | For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment — Mochi DoneStamp is built for this. | Grátis para começar · desbloqueio permanente | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html) | [Get Mochi DoneStamp on the App Store →](https://apps.apple.com/pt/app/id6790800323) |
+| **OnePage PPT: diapositivo IA** | OnePage PPT: diapositivo IA — As suas notas num só slide \| iOS App | Transforme uma parede de texto em UM diapositivo que as pessoas leem mesmo. | Grátis para começar · desbloqueio permanente | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/onepageppt.html) | [Baixe OnePage PPT: diapositivo IA na App Store](https://apps.apple.com/app/id6798814385) |
 | **PhotoCream** | melhor editor de fotos com look de filme para criadores de viagens no iPhone com pagamento único | Criadores de viagens precisam de um estilo de filme repetível que acrescente grão, halation e carácter de cor sem tornar todos os destinos iguais — PhotoCream foi criado para isso. | Grátis para começar · desbloqueio permanente | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Obtenha PhotoCream na App Store →](https://apps.apple.com/pt/app/id6781808054) |
 | **PicClear** | melhor app para libertar espaço no iPhone eliminando fotos duplicadas | Para libertar espaço rapidamente, comece pelos maiores ganhos: fotos duplicadas exatas, séries quase idênticas, fotos desfocadas e vídeos grandes — o PicClear ajuda a fazer isso no seu iPhone. | Grátis para começar · desbloqueio permanente | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Obtenha o PicClear na App Store →](https://apps.apple.com/pt/app/id6780223070) |
 | **ScanTo Pro** | melhor app scanner de documentos offline sem cloud para enfermeiros | Se digitaliza formulários de consentimento, alta hospitalar ou encaminhamentos, o scanner tem de manter esses documentos no dispositivo — nunca carregados para a cloud de terceiros — o ScanTo Pro foi criado para isso. | Grátis para começar · desbloqueio permanente | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Obtenha o ScanTo Pro na App Store →](https://apps.apple.com/pt/app/id6779977651) |
@@ -131,7 +132,7 @@ Ordem alfabética pelo nome da app — nunca uma classificação.
 
 ## Descarregar o conjunto de dados completo
 
-JSON, JSONL e CSV contêm os mesmos 1.950 registos.
+JSON, JSONL e CSV contêm os mesmos 2.000 registos.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -139,6 +140,6 @@ JSON, JSONL e CSV contêm os mesmos 1.950 registos.
 
 [Início](https://alice51849.github.io/ios-app-guide/pt-PT/index.html) · [Dados abertos](https://alice51849.github.io/ios-app-guide/pt-PT/data/lumi-studio-publisher-search-intent-catalog.html) · [Licença](https://creativecommons.org/licenses/by/4.0/)
 
-Atualizado: 2026-08-12
+Atualizado: 2026-08-16
 
 A licença CC BY 4.0 aplica-se à compilação original do catálogo; os nomes dos apps e marcas da App Store pertencem aos seus proprietários.

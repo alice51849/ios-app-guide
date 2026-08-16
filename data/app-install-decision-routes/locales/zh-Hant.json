@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "zh-Hant",
-  "dateModified": "2026-08-12",
-  "content_digest": "eabb52c2e5caf759f126670f165d581f1de75dccc78a8d07f2e41c3cda651c7a",
-  "generation_digest": "2e7091822485b8a451b951bf8fcefb98f6cf4d1da8ddab7b253cab721d1fe739",
+  "dateModified": "2026-08-16",
+  "content_digest": "ca9003f82b6334546cf20f8b860d7b7e8b87554b960a4e240d4b0fb52b3e3dcf",
+  "generation_digest": "95421419b8278dc0ce219aa681af0aa80363593e2af4aa7ba238e0f7395ea4d8",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 39,
+  "record_count": 40,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/zh-Hant.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/zh-Hant.rss.xml",
@@ -29,7 +29,7 @@
       "category": "photo-utility",
       "category_label": "照片與實用工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -41,10 +41,9 @@
       "device_labels": [],
       "badge_labels": [
         "照片與實用工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "隱私優先／裝置端",
-        "App Store · 免費",
-        "★ 5.0/5 · 1"
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/zh-Hant/index.html",
@@ -57,9 +56,7 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 1
+        "formatted_price": "免費"
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -130,7 +127,7 @@
       "category": "lifestyle",
       "category_label": "生活",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -138,7 +135,7 @@
       "device_labels": [],
       "badge_labels": [
         "生活",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "App Store · 免費",
         "★ 5.0/5 · 1"
       ],
@@ -178,7 +175,7 @@
       "category": "productivity",
       "category_label": "效率工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -190,7 +187,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 1"
@@ -231,7 +228,7 @@
       "category": "education",
       "category_label": "學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -239,7 +236,7 @@
       "device_labels": [],
       "badge_labels": [
         "學習",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "App Store · 免費",
         "★ 5.0/5 · 2"
       ],
@@ -324,7 +321,7 @@
       "category": "utility",
       "category_label": "更多",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -336,10 +333,9 @@
       ],
       "badge_labels": [
         "更多",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "主畫面小工具",
-        "App Store · 免費",
-        "★ 5.0/5 · 1"
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/zh-Hant/index.html",
@@ -352,9 +348,7 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 1
+        "formatted_price": "免費"
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
@@ -377,7 +371,7 @@
       "category": "productivity",
       "category_label": "效率工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -385,7 +379,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "App Store · 免費",
         "★ 5.0/5 · 2"
       ],
@@ -425,7 +419,7 @@
       "category": "health",
       "category_label": "健康",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -437,7 +431,7 @@
       "device_labels": [],
       "badge_labels": [
         "健康",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 1"
@@ -528,7 +522,7 @@
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -536,9 +530,8 @@
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
-        "免費開始 · 永久解鎖",
-        "App Store · 免費",
-        "★ 5.0/5 · 1"
+        "免費開始 · 一次購買解鎖",
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/dailymatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/zh-Hant/index.html",
@@ -551,9 +544,7 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 1
+        "formatted_price": "免費"
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
@@ -632,7 +623,7 @@
       "category": "finance",
       "category_label": "理財與旅行",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -644,10 +635,9 @@
       "device_labels": [],
       "badge_labels": [
         "理財與旅行",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "離線使用",
-        "App Store · 免費",
-        "★ 5.0/5 · 1"
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/zh-Hant/index.html",
@@ -660,9 +650,7 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 1
+        "formatted_price": "免費"
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -741,7 +729,7 @@
       "category": "finance",
       "category_label": "理財與旅行",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -749,7 +737,7 @@
       "device_labels": [],
       "badge_labels": [
         "理財與旅行",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
@@ -786,7 +774,7 @@
       "category": "productivity",
       "category_label": "效率工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -800,7 +788,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "無廣告",
         "隱私優先／裝置端",
         "App Store · 免費",
@@ -842,7 +830,7 @@
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -854,10 +842,10 @@
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "無廣告",
         "App Store · 免費",
-        "★ 4.5/5 · 4"
+        "★ 4.6/5 · 5"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/zh-Hant/index.html",
@@ -871,8 +859,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 4.5,
-        "rating_count": 4
+        "rating_value": 4.6,
+        "rating_count": 5
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
@@ -948,7 +936,7 @@
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -960,7 +948,7 @@
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "無廣告",
         "App Store · 免費"
       ],
@@ -1048,7 +1036,7 @@
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1060,7 +1048,7 @@
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "無廣告",
         "App Store · 免費",
         "★ 5.0/5 · 1"
@@ -1154,7 +1142,7 @@
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1166,7 +1154,7 @@
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "無廣告",
         "App Store · 免費",
         "★ 5.0/5 · 1"
@@ -1257,7 +1245,7 @@
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1269,7 +1257,7 @@
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "無廣告",
         "App Store · 免費",
         "★ 5.0/5 · 1"
@@ -1310,7 +1298,7 @@
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -1324,7 +1312,7 @@
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "無廣告",
         "無追蹤",
         "App Store · 免費",
@@ -1366,7 +1354,7 @@
       "category": "productivity",
       "category_label": "效率工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1378,7 +1366,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "無廣告",
         "App Store · 免費",
         "★ 5.0/5 · 2"
@@ -1408,6 +1396,46 @@
       "verified_live": true
     },
     {
+      "record_id": "zh-Hant:onepageppt",
+      "locale": "zh-Hant",
+      "app_key": "onepageppt",
+      "app_name": "OnePage PPT: AI 一頁簡報",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "OnePage PPT: AI 一頁簡報 — 筆記、螢幕截圖、PDF秒變投影片 | iOS App",
+      "decision_context": "把落落長的文字，變成別人真的會看完的一頁。不用再從空白頁開始，也不用把 20 頁資料硬塞成一頁。 OnePage PPT 讀得懂你丟給它的任何素材，抓出重點，排成一頁可以直接上台講的 16:9 投影片。不用挑範本，也不用一個個拖文字方塊。 ■ 什麼都吃得下 · 自己打的字、貼上的段落 · 螢幕截圖、照片 · PDF 檔案 · CSV 表格 中英文夾雜、很長的段落、拍歪了的螢幕截圖文字，都可以直接放進來。 ■ 不用先想結構 不用先定框架，也不用先選配色。把材料丟進去，先看它給的第一版，再用改版按鈕換幾個方向，挑一個最合適的收工。 ■ 為什麼只做一頁 一頁逼著你把結論講清楚。聽的人不用翻頁就能看完，你也不用維護二十張投影片的版面。內容改一次，標題、圖表和留白會一起重新排好。 ■ 怎麼用 1. 什麼都能加：打字、貼上、拍照，或匯入 PDF 與試算表。 2. 點「產生投影片」，內容會被整理成標題重點，並轉成合適的視覺呈現。 3. 直接上台，或匯出檔案。 ■ 它會挑對的視覺呈現 數字變成直條圖、橫條圖、折線圖、環圈圖或漏斗圖；步驟變成流程圖；日期變成時間軸；兩個選項變成對照欄；結論變成四象限矩陣或階層架構圖。只有在資料真的撐得住時才會畫圖，絕不自行編造數字。 ■ 可用的呈現方式 · 直條圖、橫條圖、折線圖、環圈圖、漏斗圖 · 流程圖、時間軸 · 對照欄、四象限矩陣、階層架構圖 · KPI 資料列、資料表格、重點卡片 它只會從這些形式裡挑一個真正合適的，而不是隨便套一個好看的圖。 ■ 一鍵重做，做到滿意為止 六種一鍵改版會用不同的圖表形式、字體與版面真正重排整頁：更簡潔只留最關鍵的訊息，更視覺把數字換成更大的圖表，更專業收緊格線與字級，更搶眼讓標題成為主角，更精簡把內容壓進更少的區塊，更雜誌感換成編輯式排版。喜歡的元素可以鎖定，重做時原樣保留。 ■ 想匯到哪就匯到哪 · 可編輯的 .pptx，能用 PowerPoint、Keynote、Google 簡報開啟 · 方便分享與列印的 PDF · 貼進文件、郵件、聊天室的高解析 PNG PDF 和 PNG 適合直接發出去，不怕對方沒裝辦公軟體。 匯出的 pptx 保留可編輯的文字方塊與圖表，不是一張圖片，交給同事也能繼續改。 ■ 每個細節都能改 點任何元素就能改寫文字、換掉圖片、調整順序或更換樣式。改壞了也不怕，完整的版本紀錄讓你隨時回到先前的版本；兩指縮放還能放大檢視，上台前先確認最小的字在後排看不看得清。 ■ 常見用法 · 把一小時的會議紀錄收成一頁結論 · 把 CSV 裡的季度資料變成一眼看懂的走勢 · 把訪談筆記和螢幕截圖合成一頁洞察 · 把產品方案壓成給主管看的一頁紙 · 把課程重點整理成上課就能投的講義 · 把一週的進度彙整成寄給客戶的更新 ■ 適合誰 顧問、創業者、學生、老師、專案經理，以及所有必須把一堆資訊濃縮成清楚一頁的人。週會報告、專案回顧、上課講義、投資人一頁紙、客戶提案，都派得上用場。 ■ 從設計就顧好隱私 所有處理都在你的裝置上完成，專案、圖片與匯出檔案不會離開 iPhone 或 iPad。不用帳號、不用登入、沒有追蹤，也不用等雲端排隊；開飛航模式、在高鐵上或完全沒有網路，都照樣能用。 ■ 一次買斷 可以先免費做幾張試試，覺得順手再決定要不要解鎖。Lifetime Pro 是一次性購買，不是訂閱，沒有月費，也沒有任何續約費用。",
+      "category": "productivity",
+      "category_label": "效率工具",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "免費開始 · 一次購買解鎖",
+      "one_time_option": true,
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "效率工具",
+        "免費開始 · 一次購買解鎖"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/onepageppt.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/zh-Hant/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/zh-Hant/onepageppt.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fonepageppt%2Fdecision%2Fl%2Fzh-Hant%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
+      "app_store_id": "6798814385",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_cta_label": "在 App Store 取得 OnePage PPT: AI 一頁簡報",
+      "storefront_facts": null,
+      "guide_cta_label": "閱讀完整指南",
+      "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
+      "source_persona_query": "app that turns meeting notes into one presentation slide",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "zh-Hant:photocream",
       "locale": "zh-Hant",
       "app_key": "photocream",
@@ -1419,7 +1447,7 @@
       "category": "photo-utility",
       "category_label": "照片與實用工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1427,7 +1455,7 @@
       "device_labels": [],
       "badge_labels": [
         "照片與實用工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "App Store · 免費",
         "★ 3.0/5 · 2"
       ],
@@ -1467,7 +1495,7 @@
       "category": "photo-utility",
       "category_label": "照片與實用工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1479,7 +1507,7 @@
       "device_labels": [],
       "badge_labels": [
         "照片與實用工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "隱私優先／裝置端",
         "App Store · 免費"
       ],
@@ -1517,7 +1545,7 @@
       "category": "productivity",
       "category_label": "效率工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1529,7 +1557,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 1"
@@ -1570,7 +1598,7 @@
       "category": "sleep-sound",
       "category_label": "睡眠與專注",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -1584,7 +1612,7 @@
       "device_labels": [],
       "badge_labels": [
         "睡眠與專注",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "離線使用",
         "無廣告",
         "App Store · 免費",
@@ -1640,7 +1668,7 @@
         "照片與實用工具",
         "付費下載",
         "隱私優先／裝置端",
-        "App Store · $150.00"
+        "App Store · $190.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/zh-Hant/index.html",
@@ -1651,9 +1679,9 @@
       "app_store_url": "https://apps.apple.com/tw/app/id6780575828",
       "app_store_cta_label": "在 App Store 取得 Snapport →",
       "storefront_facts": {
-        "price": "150",
+        "price": "190",
         "currency": "TWD",
-        "formatted_price": "$150.00"
+        "formatted_price": "$190.00"
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",
@@ -1676,7 +1704,7 @@
       "category": "photo-utility",
       "category_label": "照片與實用工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -1688,7 +1716,7 @@
       "device_labels": [],
       "badge_labels": [
         "照片與實用工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "離線使用",
         "App Store · 免費"
       ],
@@ -1726,7 +1754,7 @@
       "category": "productivity",
       "category_label": "效率工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1738,7 +1766,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 2"
@@ -1779,7 +1807,7 @@
       "category": "travel",
       "category_label": "旅行",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1787,7 +1815,7 @@
       "device_labels": [],
       "badge_labels": [
         "旅行",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -1883,7 +1911,7 @@
       "category": "photo-utility",
       "category_label": "照片與實用工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1895,7 +1923,7 @@
       "device_labels": [],
       "badge_labels": [
         "照片與實用工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 2"
@@ -1936,7 +1964,7 @@
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -1948,10 +1976,9 @@
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "離線使用",
-        "App Store · 免費",
-        "★ 5.0/5 · 1"
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/zh-Hant/index.html",
@@ -1964,9 +1991,7 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 1
+        "formatted_price": "免費"
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",

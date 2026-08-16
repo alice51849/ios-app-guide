@@ -2,7 +2,7 @@
 title: "mejor app para fotos de pasaporte de bebés y niños pequeños en casa"
 lang: "es-ES"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/es-ES/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Para la foto de pasaporte del bebé, nadie más puede aparecer y el fondo debe s
 - Foto y utilidad
 - Descarga de pago
 - Privado / en el dispositivo
-- App Store · 5,99 €
+- App Store · 6,99 €
 
 [Consigue Snapport en la App Store →](https://apps.apple.com/es/app/id6780575828)
 

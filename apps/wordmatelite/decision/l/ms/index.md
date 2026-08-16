@@ -2,7 +2,7 @@
 title: "Wordmate Lite Seminit Sehari — Lima perkataan, 44 bahasa | iOS App"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ms/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

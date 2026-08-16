@@ -2,7 +2,7 @@
 title: "간호사를 위한 클라우드 없는 오프라인 문서 스캐너 앱 중 최고"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/ko/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 환자 동의서, 퇴원 서류, 의뢰서를 스캔할 때 서류가 기기에만 남아야 하며 절대 다른 사람 클라우드에 업로드되지 않아야 합니다 — ScanTo Pro가 이에 맞게 설계되었습니다.
 
 - 생산성
-- 무료로 시작 · 평생 잠금 해제
+- 무료로 시작 · 한 번 구매 잠금 해제
 - 프라이빗 / 기기 내
 - App Store · 무료
 

@@ -2,7 +2,7 @@
 title: "iPhone 'ਤੇ ਬੱਚਿਆਂ ਲਈ ਬੋਪੋਮੋਫੋ ਸਿੱਖਣ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਐਪ"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/pa-IN/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

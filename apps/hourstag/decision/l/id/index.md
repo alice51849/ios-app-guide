@@ -2,7 +2,7 @@
 title: "best app to track where my money goes and save more"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/id/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

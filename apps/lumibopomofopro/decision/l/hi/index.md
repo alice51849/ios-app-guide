@@ -2,7 +2,7 @@
 title: "द्विभाषी बच्चों के लिए सबसे अच्छा पूर्ण झूयिन ऐप"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/hi/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

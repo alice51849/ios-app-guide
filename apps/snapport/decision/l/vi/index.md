@@ -2,7 +2,7 @@
 title: "ứng dụng chụp ảnh hộ chiếu tốt nhất cho bé và trẻ nhỏ tại nhà"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/vi/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - Ảnh & tiện ích
 - Tải xuống trả phí
 - Riêng tư / trên thiết bị
-- App Store · 149.000đ
+- App Store · 199.000đ
 
 [Tải Snapport trên App Store →](https://apps.apple.com/vn/app/id6780575828)
 

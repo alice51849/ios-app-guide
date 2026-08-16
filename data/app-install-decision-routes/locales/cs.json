@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "cs",
-  "dateModified": "2026-08-12",
-  "content_digest": "eabb52c2e5caf759f126670f165d581f1de75dccc78a8d07f2e41c3cda651c7a",
-  "generation_digest": "2e7091822485b8a451b951bf8fcefb98f6cf4d1da8ddab7b253cab721d1fe739",
+  "dateModified": "2026-08-16",
+  "content_digest": "ca9003f82b6334546cf20f8b860d7b7e8b87554b960a4e240d4b0fb52b3e3dcf",
+  "generation_digest": "95421419b8278dc0ce219aa681af0aa80363593e2af4aa7ba238e0f7395ea4d8",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 39,
+  "record_count": 40,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/cs.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/cs.rss.xml",
@@ -1345,6 +1345,46 @@
       "verified_live": true
     },
     {
+      "record_id": "cs:onepageppt",
+      "locale": "cs",
+      "app_key": "onepageppt",
+      "app_name": "OnePage PPT: AI snímek",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "OnePage PPT: AI snímek — Poznámky v hotovou prezentaci | iOS App",
+      "decision_context": "Ze zdi textu vznikne JEDEN snímek, který si lidé opravdu přečtou. OnePage PPT si přečte cokoli, co mu dáte: poznámky, vložený text, snímky obrazovky, fotky, PDF i tabulky CSV. Najde podstatné body a poskládá je do jediného snímku 16:9 připraveného k promítání. JAK TO FUNGUJE 1. Přidejte cokoli: napište, vložte, vyfoťte nebo importujte PDF či tabulku. 2. Klepněte na „Vytvořit snímek\". Obsah se zhustí do výstižných titulků a promění ve správnou grafiku. 3. Promítejte, nebo exportujte. VYBERE SPRÁVNOU GRAFIKU Z čísel se stane sloupcový, pruhový, spojnicový, prstencový nebo trychtýřový graf. Z kroků procesní schéma, z dat časová osa, ze dvou možností srovnání, ze zjištění matice nebo hierarchie. Graf vznikne jen tehdy, když ho data unesou — čísla si nikdy nevymýšlí. ŠEST PROMĚN Jedno klepnutí — Čistěji, Vizuálněji, Profesionálněji, Odvážněji, Kompaktněji, Magazínově — a snímek se postaví znovu: jiné typy grafů, jiná typografie, jiné rozvržení. Co se vám líbí, můžete zamknout. EXPORT KAMKOLI • Editovatelný .pptx pro PowerPoint, Keynote i Google Slides • PDF pro sdílení a tisk • PNG ve vysokém rozlišení do dokumentů a e-mailů UPRAVTE KAŽDÝ DETAIL Klepnutím na prvek přepíšete text, vyměníte obrázek, přeuspořádáte bloky nebo změníte styl. Historie verzí vás vrátí ke kterémukoli konceptu, náhled přiblížíte gestem. SOUKROMÍ Vše běží ve vašem zařízení. Projekty, obrázky ani exporty nikdy neopustí váš iPhone nebo iPad. Bez účtu, bez přihlašování, bez sledování a bez internetu. JEDNORÁZOVÝ NÁKUP Vyzkoušejte zdarma. Lifetime Pro je jednorázový nákup, žádné předplatné.",
+      "category": "productivity",
+      "category_label": "Produktivita",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Zdarma na začátek · doživotní odemknutí",
+      "one_time_option": true,
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Produktivita",
+        "Zdarma na začátek · doživotní odemknutí"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/onepageppt.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/cs/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/cs/onepageppt.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fonepageppt%2Fdecision%2Fl%2Fcs%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/cs.json",
+      "app_store_id": "6798814385",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_cta_label": "Stáhněte si OnePage PPT: AI snímek v App Storu",
+      "storefront_facts": null,
+      "guide_cta_label": "Přečtěte si celý průvodce",
+      "publisher_disclosure": "Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.",
+      "source_persona_query": "app that turns meeting notes into one presentation slide",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "cs:photocream",
       "locale": "cs",
       "app_key": "photocream",
@@ -1568,7 +1608,7 @@
         "Fotografie a nástroje",
         "Placené stažení",
         "Soukromé / v zařízení",
-        "App Store · 129,00 Kč"
+        "App Store · 149,00 Kč"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/cs/index.html",
@@ -1579,9 +1619,9 @@
       "app_store_url": "https://apps.apple.com/cz/app/id6780575828",
       "app_store_cta_label": "Stáhněte Snapport v App Store →",
       "storefront_facts": {
-        "price": "129",
+        "price": "149",
         "currency": "CZK",
-        "formatted_price": "129,00 Kč"
+        "formatted_price": "149,00 Kč"
       },
       "guide_cta_label": "Přečtěte si celý průvodce",
       "publisher_disclosure": "Průvodce vytvořený vydavatelem Lumi Studio, vývojářem aplikace. Názvy aplikací jsou ochranné známky jejich vlastníků a používají se pouze pro identifikaci. U dokumentů, zdravotních, školních a pracovních rozhodnutí ověřte oficiální požadavky, pokud jsou relevantní.",

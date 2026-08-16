@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "fr-CA",
-  "dateModified": "2026-08-12",
-  "content_digest": "eabb52c2e5caf759f126670f165d581f1de75dccc78a8d07f2e41c3cda651c7a",
-  "generation_digest": "2e7091822485b8a451b951bf8fcefb98f6cf4d1da8ddab7b253cab721d1fe739",
+  "dateModified": "2026-08-16",
+  "content_digest": "ca9003f82b6334546cf20f8b860d7b7e8b87554b960a4e240d4b0fb52b3e3dcf",
+  "generation_digest": "95421419b8278dc0ce219aa681af0aa80363593e2af4aa7ba238e0f7395ea4d8",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 39,
+  "record_count": 40,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/fr-CA.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/fr-CA.rss.xml",
@@ -1345,6 +1345,46 @@
       "verified_live": true
     },
     {
+      "record_id": "fr-CA:onepageppt",
+      "locale": "fr-CA",
+      "app_key": "onepageppt",
+      "app_name": "OnePage PPT : diapos par IA",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "OnePage PPT : diapos par IA — Vos notes en une page claire | iOS App",
+      "decision_context": "Transformez un mur de texte en UNE diapo qui se lit vraiment. OnePage PPT lit ce que vous lui donnez — texte tapé ou collé, captures d'écran, photos, PDF, tableaux CSV —, en dégage les points clés et les met sur une seule diapo 16:9 prête à présenter. COMMENT ÇA MARCHE 1. Ajoutez tout : tapez, collez, photographiez ou importez un PDF ou un chiffrier. 2. Touchez « Créer ma diapo » : le contenu devient des messages clés et le bon graphique. 3. Présentez ou exportez. LE BON VISUEL Les chiffres deviennent des graphiques à colonnes, barres, courbes, anneau ou entonnoir. Les étapes donnent un organigramme, les dates une frise, deux options un comparatif, les constats une matrice ou un arbre. Un graphique n'apparaît que si les données le soutiennent : aucun chiffre n'est inventé. REFAITES-LA À VOTRE GOÛT Six refontes d'un geste — Plus épuré, Plus visuel, Plus professionnel, Plus affirmé, Plus compact, Plus éditorial — refont la diapo avec d'autres graphiques, typographies et mises en page. Verrouillez ce qui vous plaît. EXPORTEZ PARTOUT • .pptx modifiable pour PowerPoint, Keynote et Google Slides • PDF pour partager et imprimer • PNG haute résolution pour documents et courriels MODIFIEZ TOUT Touchez un élément pour le réécrire, changer une image, réordonner les blocs ou le style; l'historique des versions ramène toute version antérieure. CONFIDENTIEL Tout roule sur votre appareil et ne quitte jamais votre iPhone ou iPad. Aucun compte, aucune session ni pistage — et ça marche sans réseau. ACHAT UNIQUE Essayez gratuitement. Lifetime Pro s'achète une fois, sans abonnement.",
+      "category": "productivity",
+      "category_label": "Productivité",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratuit au départ · déverrouillage définitif",
+      "one_time_option": true,
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Productivité",
+        "Gratuit au départ · déverrouillage définitif"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/onepageppt.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/fr-CA/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/fr-CA/onepageppt.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fonepageppt%2Fdecision%2Fl%2Ffr-CA%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-CA.json",
+      "app_store_id": "6798814385",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_cta_label": "Obtenir OnePage PPT : diapos par IA sur l'App Store",
+      "storefront_facts": null,
+      "guide_cta_label": "Lire le guide complet",
+      "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque app listée.",
+      "source_persona_query": "app that turns meeting notes into one presentation slide",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "fr-CA:photocream",
       "locale": "fr-CA",
       "app_key": "photocream",
@@ -1568,7 +1608,7 @@
         "Photo et utilitaire",
         "Téléchargement payant",
         "Privé / sur l'appareil",
-        "App Store · $6.99"
+        "App Store · $7.99"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/fr-CA/index.html",
@@ -1579,9 +1619,9 @@
       "app_store_url": "https://apps.apple.com/ca/app/id6780575828",
       "app_store_cta_label": "Obtenez Snapport sur l’App Store →",
       "storefront_facts": {
-        "price": "6.99",
+        "price": "7.99",
         "currency": "CAD",
-        "formatted_price": "$6.99"
+        "formatted_price": "$7.99"
       },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Guide rédigé par l’éditeur Lumi Studio, le développeur de l’application. Les noms d’applications sont des marques déposées de leurs propriétaires et sont utilisés uniquement à des fins d’identification. Pour les documents, la santé, l’école et les décisions liées à la productivité, vérifiez les exigences officielles lorsque pertinent.",

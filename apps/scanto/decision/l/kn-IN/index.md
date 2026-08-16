@@ -2,7 +2,7 @@
 title: "ನರ್ಸುಗಳಿಗೆ ಕ್ಲೌಡ್ ಇಲ್ಲದ ಉತ್ತಮ ಆಫ್‌ಲೈನ್ ಡಾಕ್ಯುಮೆಂಟ್ ಸ್ಕ್ಯಾನರ್ ಆಪ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/kn-IN/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

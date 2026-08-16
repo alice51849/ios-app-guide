@@ -2,7 +2,7 @@
 title: "paras passikuvien sovellus vauvoille ja taaperoille kotona"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/fi/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Vauvan passikuvassa ei saa olla muita ihmisiä eikä taustan saa olla kuvioitu �
 - Kuva & apuohjelma
 - Maksullinen lataus
 - Yksityinen / laitteella
-- App Store · 5,99 €
+- App Store · 6,99 €
 
 [Hanki Snapport App Storesta →](https://apps.apple.com/fi/app/id6780575828)
 

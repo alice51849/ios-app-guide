@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://alice51849.github.io/ios-app-guide/visuals/",
-  "dateModified": "2026-08-12",
+  "dateModified": "2026-08-16",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,12 +10,12 @@
     "url": "https://alice51849.github.io/ios-app-guide"
   },
   "source_dataset": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "content_digest": "070f9978aa357d043bfbeada94002ab3e919022ca05384eee5e3c66cd28dffd4",
-  "generation_digest": "575a7911968829ec68e77507787bfb11d90430612c377b4fa1c69ed13057ba2b",
+  "content_digest": "62ec3474e850046e6a71173949ef5d831c9fc771bd2cd5be40de6f6a5a22342f",
+  "generation_digest": "784eb16ef5f8abf5b19e94f4642bfe14db3e3ab9dcc3cfb5efa667da21fe093e",
   "ordering": "official_locale_order_then_alphabetical_app_name",
-  "app_count": 39,
+  "app_count": 40,
   "locale_count": 50,
-  "image_count": 1950,
+  "image_count": 2000,
   "gallery_count": 51,
   "publisher_authored": true,
   "measured_search_volume": false,
@@ -288,6 +288,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6790800323",
       "sha256": "65b5ca502c9eee5b85ffb3a0d1c3b8fe046b9ab5a0a2b98f8322061338447afc"
+    },
+    {
+      "locale": "ar-SA",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ar-SA/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "4317504c45c174572557532a971a9b58e70ba65d057695151e27b882e35290a2"
     },
     {
       "locale": "ar-SA",
@@ -681,6 +691,16 @@
     },
     {
       "locale": "bn-BD",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "7fdab6781e4842b5abfc5c057704d7b3b970d9120173555e4683d882146dd87b"
+    },
+    {
+      "locale": "bn-BD",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/photocream.svg",
@@ -1068,6 +1088,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/es/app/id6790800323",
       "sha256": "9ee764f84111df88e4301e996ba7949844d6035fa960656c8f12c16af138764b"
+    },
+    {
+      "locale": "ca",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "aca524068bc2c04bb7cec520d2693f1b3301ac01ebbaaf7fe9f7b772e77ffb56"
     },
     {
       "locale": "ca",
@@ -1461,6 +1491,16 @@
     },
     {
       "locale": "cs",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "ad9d46ab2e96a45926f618e46f4033485f01f7024faca4bb3ada84a8c9f98d40"
+    },
+    {
+      "locale": "cs",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/photocream.svg",
@@ -1848,6 +1888,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/dk/app/id6790800323",
       "sha256": "af219bb14bf508056b304d020a9f2d047b45985dd0b3a646b8939188e6ff9f65"
+    },
+    {
+      "locale": "da",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "cb0d4a4d74161c686d12484c87d46a8ce51a662996cd6135dbdba3b45edf9595"
     },
     {
       "locale": "da",
@@ -2241,6 +2291,16 @@
     },
     {
       "locale": "de-DE",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "306ab6380fb8e4eec688692a829f950688aee5ecca24a86fb07a8d150b0754d6"
+    },
+    {
+      "locale": "de-DE",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/photocream.svg",
@@ -2628,6 +2688,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/gr/app/id6790800323",
       "sha256": "fe0efcf60032b0c4ec66e4d9aa020074e096bf1eb3055af143c1573d086c535f"
+    },
+    {
+      "locale": "el",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "d4d9c4e64fe983d7f1837b7e4f7231894d2100023e50b6eb4ee32708b4b29826"
     },
     {
       "locale": "el",
@@ -3021,6 +3091,16 @@
     },
     {
       "locale": "en-AU",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "71723772875a23fac2126da57b29d81b923c89f380bbe35d02450a644c335f23"
+    },
+    {
+      "locale": "en-AU",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/photocream.svg",
@@ -3408,6 +3488,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6790800323",
       "sha256": "bd8c572f1ebc3497cf3b6afe2bf4b5bce7656d7812acb3efcf5479b2dc46605e"
+    },
+    {
+      "locale": "en-CA",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "a40cede4b1182155b38a3d82817678fa09924626420c5e57db451344d72bdb82"
     },
     {
       "locale": "en-CA",
@@ -3801,6 +3891,16 @@
     },
     {
       "locale": "en-GB",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "46d73a3b6b1afe32edf30064563e74ee1f2e3fbbee3670e871d5327f7d689b0d"
+    },
+    {
+      "locale": "en-GB",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/photocream.svg",
@@ -4188,6 +4288,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/us/app/id6790800323",
       "sha256": "58090362c74bcb33a1cec3c1e8b97d598c1b7181b4b79a45f1233c7dcddbc80f"
+    },
+    {
+      "locale": "en-US",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "18385052ba774712ac3640ca7c3e050481279ce529923acea577c06300b8d84e"
     },
     {
       "locale": "en-US",
@@ -4581,6 +4691,16 @@
     },
     {
       "locale": "es-ES",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "f997098bd593a49b84aee5ba9b02021fc4f881f9c325c460bf4e3b3b00080bde"
+    },
+    {
+      "locale": "es-ES",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/photocream.svg",
@@ -4968,6 +5088,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/mx/app/id6790800323",
       "sha256": "a47b24ea11de10dcb00c0c059798977057b7e8e455f968712886a9e31bb0bdb4"
+    },
+    {
+      "locale": "es-MX",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "30bdbef701b85ee7d27a41459f66d131b2f2a653cf085b6c8425b1c2594a6fa4"
     },
     {
       "locale": "es-MX",
@@ -5361,6 +5491,16 @@
     },
     {
       "locale": "fi",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "1afa908e7063cd89ddeca977cd74db9ccc7861ec00e30610df9406bc3e0c4087"
+    },
+    {
+      "locale": "fi",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/photocream.svg",
@@ -5748,6 +5888,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6790800323",
       "sha256": "4c5fe822fb6101dcad577c16bb76101aa4f248cee9a4fb0a4346571bc3f9e496"
+    },
+    {
+      "locale": "fr-CA",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "ef0acbeb6cdece620cf90716ecf253ba8fb547e0beb7643a82a83fd355c6ede0"
     },
     {
       "locale": "fr-CA",
@@ -6141,6 +6291,16 @@
     },
     {
       "locale": "fr-FR",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "af7b8aa578a416448755cd3ffba6870bdde99436ce4aa60712bd3ffd58aa0145"
+    },
+    {
+      "locale": "fr-FR",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/photocream.svg",
@@ -6528,6 +6688,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/in/app/id6790800323",
       "sha256": "07d209a210c811c450bcd4e21509fe9e9d5f5dabf7f7159ca563e7e2b5712bc3"
+    },
+    {
+      "locale": "gu-IN",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "5f461a40613c37a393dc829d558aa601768eb3f238df61149c7458ea7bcde012"
     },
     {
       "locale": "gu-IN",
@@ -6921,6 +7091,16 @@
     },
     {
       "locale": "he",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "21213293866fc89f5eaa1d6a2235bdf4dcf301e28136112d1e4a5f188394325f"
+    },
+    {
+      "locale": "he",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/photocream.svg",
@@ -7308,6 +7488,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/in/app/id6790800323",
       "sha256": "50cff531138d44786691dd3d7797d8d22da60b27674f00112cf947a4dbd8afe2"
+    },
+    {
+      "locale": "hi",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "4623b7698f2f1478633daf90637a5d1a2c57feb899590635c264da816adfc0a1"
     },
     {
       "locale": "hi",
@@ -7701,6 +7891,16 @@
     },
     {
       "locale": "hr",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "e6ab6582bd6eb9f747b2a85ca32dbeeea31748729af18cadddd99c85bbfedcca"
+    },
+    {
+      "locale": "hr",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/photocream.svg",
@@ -8088,6 +8288,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/hu/app/id6790800323",
       "sha256": "9413f027ed8a072cd922738d5b06a48c69da183d1691b27f38b69571da2684ab"
+    },
+    {
+      "locale": "hu",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "2e4ea5a3e13e6f6309d4f4567b19fcf8af6a58fc0f35a38c98ad35f028a61ee9"
     },
     {
       "locale": "hu",
@@ -8481,6 +8691,16 @@
     },
     {
       "locale": "id",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "bfdb245ca62648b74d6e31d60a3f35004197a907bcfa8a85854b3cd9882f0703"
+    },
+    {
+      "locale": "id",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/photocream.svg",
@@ -8868,6 +9088,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/it/app/id6790800323",
       "sha256": "a1b7a84d997c974837d5b7b16024e55ce33f2d405daba538bb1cd6ad68dc67df"
+    },
+    {
+      "locale": "it",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "fc75702af5b49f60765945b077ed8bebbceda07d6df7e646ebd2d4caa91794fe"
     },
     {
       "locale": "it",
@@ -9261,6 +9491,16 @@
     },
     {
       "locale": "ja",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "ab50e422165df1fb38894a5b6f45ae30913fc0f5725000f93e2e65a7aaee794a"
+    },
+    {
+      "locale": "ja",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/photocream.svg",
@@ -9651,6 +9891,16 @@
     },
     {
       "locale": "kn-IN",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "55a4c8babe02f8eefec0ee095614585e633bfa886dc0dbf02c6e7bee33887829"
+    },
+    {
+      "locale": "kn-IN",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/photocream.svg",
@@ -9787,7 +10037,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6791658210",
-      "sha256": "f0c334d41229cbf92af653001ae15b95e31083de4c131c0232402eb01ecdfcd8"
+      "sha256": "543090a9b3d0c09f7282b6d5f43691a604fb1d746baa724a394efb29707a9398"
     },
     {
       "locale": "ko",
@@ -9797,7 +10047,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6784974530",
-      "sha256": "6b7389b71edc01ac8eb4cbce6e04ea508509d5c078353625c63941929f0ab710"
+      "sha256": "539a6366d3c6c968bf0346eb93608bf4450781dbacb3c5e9a14a925e20fda6ac"
     },
     {
       "locale": "ko",
@@ -9817,7 +10067,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/caldaily.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6794178671",
-      "sha256": "89e2fc21a910daba352c3b5cf1f839c2ba0de6aec4da9c571ec26028d1a73a47"
+      "sha256": "74a225a47b4e4e83affe664ddaf076f80850d741b0380b18d97c13d21df0addb"
     },
     {
       "locale": "ko",
@@ -9827,7 +10077,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-resume-builder-app-for-career-changers-2026.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6781337213",
-      "sha256": "da21e6bbd4f26145e7cee39ed330a41df0dd1ab79ca46d9691426da1496f3ae9"
+      "sha256": "ce7c586c91db92c46bc36a6051282e9e8baddef75b67215d69475b156bef0f3c"
     },
     {
       "locale": "ko",
@@ -9837,7 +10087,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-period-tracker-app-no-account-required-iphone.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6782251621",
-      "sha256": "09f185724acf6b8056ac7650f1da2862a2b5bf8a9df1cae94b1a3eace1d6743a"
+      "sha256": "6a94d9dcc729113a41b2700ab7287ea8d6d1330cdf8632c12a063069f2323519"
     },
     {
       "locale": "ko",
@@ -9857,7 +10107,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6794725568",
-      "sha256": "a60db0cfca3777e15a6c1be29845a496a61cdbf2f4d4c66a5062763a186d202e"
+      "sha256": "3be7b984f2eb60b04995731a9cabd007d7380a979b46746f58f0198ae8a95384"
     },
     {
       "locale": "ko",
@@ -9877,7 +10127,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6793436548",
-      "sha256": "03cbcf010bac760d65f11168a28f1ba174603fc9f282ef6f1a0035c999d4996b"
+      "sha256": "801bd8c0babc022eef7da9601d33914763eb13ae1a5ba3bb7d5862e51842b860"
     },
     {
       "locale": "ko",
@@ -9897,7 +10147,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6794039979",
-      "sha256": "f37e9c64c6cb20f3e7c96f63d702a4d3124885d2ccb732846d252edf9413486e"
+      "sha256": "232c4459b34328a3a8e28f7fc363b4fcfeab00eab2c001cf2db24089b77af0ca"
     },
     {
       "locale": "ko",
@@ -9907,7 +10157,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-block-social-media-while-studying-iphone.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6780107485",
-      "sha256": "8aac8239c0802b57a483fbac767635b3108af855e796322cf156624f274329fb"
+      "sha256": "2f4ade275fa9b069011422ee9b6f4e66190c1153b8ba1a1d331920f7ea156459"
     },
     {
       "locale": "ko",
@@ -9917,7 +10167,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6773017109",
-      "sha256": "0db0b60e661fbcf45bd61382604b1ebe1f9f5cc1583808e6603691d51f6ed7a5"
+      "sha256": "ab5966eadc986ffcc4773aa36baca41564f2c5cb31a69cea0f590f99bcf483da"
     },
     {
       "locale": "ko",
@@ -9937,7 +10187,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6778748533",
-      "sha256": "9112cdd32d32a016fe730116c9dd0c53c804698e8eefafe6eaad1269aef47d6c"
+      "sha256": "f7db0daa62a062e20259cd08c39b7f58a2bc8eba1458915eb9040d8ce2dcfed4"
     },
     {
       "locale": "ko",
@@ -9957,7 +10207,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6778269699",
-      "sha256": "4d910b53c03bc9db62bac14989a6094a23b07f997e2b48489383bfbdfe2d7b8f"
+      "sha256": "697aef4a2eadfcfe013efe22134ab7f329b13c23ca4b4da41aad761144b8486d"
     },
     {
       "locale": "ko",
@@ -9977,7 +10227,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6779750237",
-      "sha256": "27709cf91bcbde9daebf178b5e64fe4953d52b6dd73f51a50553af8a8bd6b8ee"
+      "sha256": "8f954a31eaf452ac1db8a18e128eb9b5a34ece514eecb9e519654a97cd486c86"
     },
     {
       "locale": "ko",
@@ -9997,7 +10247,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6787193643",
-      "sha256": "e6720d4a204381fbc3c861610c337fe39f346b5d43710e4d1aa0ee74e008c0a8"
+      "sha256": "1af77b60ef2930e2314ebcadf88b37b2622adbd4fde46831166555da8b403c78"
     },
     {
       "locale": "ko",
@@ -10007,7 +10257,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6779552704",
-      "sha256": "b5361384a80e9cc90372f4c4593fd9e1eedc8e52ce8892696af5c7187d769fe7"
+      "sha256": "541672ffb7271e30d6fc49095ccee6a62ff1b8fd5ddd209669f26c7e95df4e04"
     },
     {
       "locale": "ko",
@@ -10017,7 +10267,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6792850916",
-      "sha256": "48859ed376f3139e7e268e2562ffad53f2c5c5f8486f6c27cdd5179d759a5381"
+      "sha256": "45de3f66895ac4171e86aaa3725c1efa90faa7a547e0f7c31500144878e78c15"
     },
     {
       "locale": "ko",
@@ -10027,7 +10277,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6785004775",
-      "sha256": "d253831ce1ef5b6a1f46b8d3356cfb5f34d1a38dd8a03ff6991555a7032c8109"
+      "sha256": "4b38c27d89b650cf4170082c30618691abf5acc3b4b933392ca3b4b32055159c"
     },
     {
       "locale": "ko",
@@ -10037,7 +10287,17 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6790800323",
-      "sha256": "b8957de7c606ad61f6e58eea7d7a6d9fd032a1aefcee5dff14493070f3feba3c"
+      "sha256": "4d40a272a31032268387e28439b394d9d2d058c6b54b5af24a53f7236508b8b2"
+    },
+    {
+      "locale": "ko",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "6e4a3b6f1487dc94caaab12db12ab17a99234aa60aa1fb0acaefd8a3775656aa"
     },
     {
       "locale": "ko",
@@ -10047,7 +10307,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6781808054",
-      "sha256": "8be5ea3af326b1a84bf6c342ccc893cd986ed6ab3865d8354c31282c1eb04375"
+      "sha256": "91947d21c3d5617ee05ad371f0970286327f386ed7aa5e6a6b5d417f30700e1d"
     },
     {
       "locale": "ko",
@@ -10057,7 +10317,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6780223070",
-      "sha256": "a50e0d03cdb8f789fd376288a1dd4a3af2229446631b33fdb640f07829c79c78"
+      "sha256": "c6dde25e42af839457fbdbf0dd8636585d04929e91366da265ebe0ceaa641df1"
     },
     {
       "locale": "ko",
@@ -10067,7 +10327,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6779977651",
-      "sha256": "ccf1c40915d11ae494ac863fa40b471e4d9dcf445f1092f50ff55c1e011ac8f3"
+      "sha256": "2eee8f87d58528b97938778ee3e0d5d0f68abdb12623b54079acb667eacb8b2d"
     },
     {
       "locale": "ko",
@@ -10077,7 +10337,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6788236641",
-      "sha256": "342761f831bb1c266f8d14b2d2044ac7588082712cba3994d5868949cbd401b8"
+      "sha256": "4be6e7ac3fea9cf8e8e03e06bf9ee9d70855cadce4092c80fe3a0ec92baf97db"
     },
     {
       "locale": "ko",
@@ -10097,7 +10357,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/snapportlite.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6792856304",
-      "sha256": "5e909216481a74a9a0f3f77551ea7cd8c9ed2ab1611eae8aa9189e545186e719"
+      "sha256": "41e6688c1b708a744c41922b225f3b94ee1c574a8474c16b5a9a14ea4d0a106a"
     },
     {
       "locale": "ko",
@@ -10107,7 +10367,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6782139553",
-      "sha256": "599ac70fef4824737c2cdae30edbdeae4d5bc7e2eee75ba6876abac6d8550274"
+      "sha256": "5c98393ffd00c333c509bab9e354535f37c5f9bbb9ca2c72a0a84156dc9a0b82"
     },
     {
       "locale": "ko",
@@ -10117,7 +10377,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6791299610",
-      "sha256": "aa7641302effea79f2ecf39932b90a359933e3d60cdbe2bd79eb5b1107398468"
+      "sha256": "a36208a6a20048c69061f96ef258fb0156a3d881cd86487f5caae820ecfba33d"
     },
     {
       "locale": "ko",
@@ -10137,7 +10397,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6782275018",
-      "sha256": "c4347dd1964278272c3a71d0ffaccd9dca6f1e153b4f796b65ce853c02212ce2"
+      "sha256": "854a5f063eaaf2caa8e0a42d88b61f4d12c4fdbb4b691a56061acf38e1819bf7"
     },
     {
       "locale": "ko",
@@ -10157,7 +10417,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/wordmatelite.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6797601720",
-      "sha256": "ede2bb6dfe0e09ec393b7d802ab601bd09b4b8bced4929d818387d4383efe6d5"
+      "sha256": "2174a10e3c1cff8a5438d8307b32cc57b238d18e66e7f037f68e904616e584e5"
     },
     {
       "locale": "ko",
@@ -10428,6 +10688,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/in/app/id6790800323",
       "sha256": "98712720e2cf6691b1adc3e6e0949e7bd2e60ca320fd155f882816e9071be3e9"
+    },
+    {
+      "locale": "ml-IN",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "476a1c798488ddc8146f9732183566a99ec2a0530702fa1bbf734c751776088c"
     },
     {
       "locale": "ml-IN",
@@ -10821,6 +11091,16 @@
     },
     {
       "locale": "mr-IN",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "f307a9eaa62f79b7f9942e9889d987a5cae2d3fafffe76c39c24102ecb62fa57"
+    },
+    {
+      "locale": "mr-IN",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/photocream.svg",
@@ -11208,6 +11488,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
       "app_store_url": "https://apps.apple.com/my/app/id6790800323",
       "sha256": "f47281ef5a4702b9cd603ce9c37cbb2ba60767aea170eebc81f049b39d2f232f"
+    },
+    {
+      "locale": "ms",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "20fd953e729c532d91c1bfd5cf39a246857e4e131c1cdec526b74a7556fb12f1"
     },
     {
       "locale": "ms",
@@ -11601,6 +11891,16 @@
     },
     {
       "locale": "nl-NL",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "a2ea63e5da1edb2def9e43a68c3332edb05efdb364b51e3ab75f9428155c3e85"
+    },
+    {
+      "locale": "nl-NL",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/photocream.svg",
@@ -11988,6 +12288,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/no/app/id6790800323",
       "sha256": "48794588898f8dea0f9dee25f14edd3313b66599e4c8fa8d9cf3f5a305f1a474"
+    },
+    {
+      "locale": "no",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "e6a8247e7a8e4329eb05c7ac9788603c6bbc63f51a0aa0284c42a74f695d2544"
     },
     {
       "locale": "no",
@@ -12381,6 +12691,16 @@
     },
     {
       "locale": "or-IN",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "2cc1f8e55921e504110b4783378a9ecc6ffd74ae63a526e65b9bb3c6998d0199"
+    },
+    {
+      "locale": "or-IN",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/photocream.svg",
@@ -12768,6 +13088,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/in/app/id6790800323",
       "sha256": "b1a34fb90a3d2f8296db20930075cb86f500eda785ee47dcb753e1dd1a354eae"
+    },
+    {
+      "locale": "pa-IN",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "e29619cfc0cdfcb22a22ecf07e5dbf51528686b45fda762396734aee139586e6"
     },
     {
       "locale": "pa-IN",
@@ -13161,6 +13491,16 @@
     },
     {
       "locale": "pl",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "a2e4ebb2f879d2df8e959bc20ce71cf900dec31f0e6b9dafd1fb5e0244187327"
+    },
+    {
+      "locale": "pl",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/photocream.svg",
@@ -13548,6 +13888,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
       "app_store_url": "https://apps.apple.com/br/app/id6790800323",
       "sha256": "89af471c45dd19ce8cef7609b75bf9e436f4ea34d6ce1c011b87ded80e87417f"
+    },
+    {
+      "locale": "pt-BR",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "33c194518f60a9cbad7de79394e9cea9744067e7e025b491f4092c515a103370"
     },
     {
       "locale": "pt-BR",
@@ -13941,6 +14291,16 @@
     },
     {
       "locale": "pt-PT",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "c95d1bd8b5650d38e499c834cea2be5b6c7fba3cefeb231bca91dc43680e1e85"
+    },
+    {
+      "locale": "pt-PT",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/photocream.svg",
@@ -14328,6 +14688,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/ro/app/id6790800323",
       "sha256": "14642a110fc13d12f922394524867b9b976d9f18c0fc8d525781d5eb89b7b41b"
+    },
+    {
+      "locale": "ro",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "51cd082142005fe08ac5785a6e854d69e583d06feb59fe26afe5a7213a56e7c4"
     },
     {
       "locale": "ro",
@@ -14721,6 +15091,16 @@
     },
     {
       "locale": "ru",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "69becbd96be269faa23a7a01833753beeea224420c1da520ca8d279e6d40e142"
+    },
+    {
+      "locale": "ru",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/photocream.svg",
@@ -15108,6 +15488,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/sk/app/id6790800323",
       "sha256": "3e14e4c523b2f0bf58a97fee96305dc27aa91aedd7e26d738cc849835adead59"
+    },
+    {
+      "locale": "sk",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "4931406c6d973b54f08ef4ff615a23c923955c3e2654d7306a5b57afd9f509b1"
     },
     {
       "locale": "sk",
@@ -15501,6 +15891,16 @@
     },
     {
       "locale": "sl-SI",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "d016ead1acd0c96a7b06000299fd288ca849337f2a87c76375e5d0819a7c16e6"
+    },
+    {
+      "locale": "sl-SI",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/photocream.svg",
@@ -15888,6 +16288,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/se/app/id6790800323",
       "sha256": "429ccddad6f1a954c1b5b208cf6167e2d27418a45fcf10dbd813c6737522e64e"
+    },
+    {
+      "locale": "sv",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "d8c1596b04b7e2d805396f72eba9725fe2faf27dbfea4bac7f38514cd56155bb"
     },
     {
       "locale": "sv",
@@ -16281,6 +16691,16 @@
     },
     {
       "locale": "ta-IN",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "06475c73b8f8ea7de25428499dc676de756113a162f83c77bb77caae5e28b6ec"
+    },
+    {
+      "locale": "ta-IN",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/photocream.svg",
@@ -16668,6 +17088,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/in/app/id6790800323",
       "sha256": "b6d88d540cd8e61d4d2061d865a8561e04afe37f8c48a1045250d49a0b4d5e50"
+    },
+    {
+      "locale": "te-IN",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "62e5114d33d790abe331e811c095d28169535a74420087856ceab70f768f4d82"
     },
     {
       "locale": "te-IN",
@@ -17061,6 +17491,16 @@
     },
     {
       "locale": "th",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "b9a7cabc0d5057e79f0ea3cdd265a986fb8dc4c9f82393d346afa00eae253245"
+    },
+    {
+      "locale": "th",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/photocream.svg",
@@ -17448,6 +17888,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
       "app_store_url": "https://apps.apple.com/tr/app/id6790800323",
       "sha256": "0b868a28e3d21dcb39b415e1e74ca6a6f691f4b277a0d81421c991b697a476f4"
+    },
+    {
+      "locale": "tr",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "48f7fe4fcfa9153cd873acfb65713c8f967b250f34e4c8753df7c3379f949149"
     },
     {
       "locale": "tr",
@@ -17841,6 +18291,16 @@
     },
     {
       "locale": "uk",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "3e5493d21ad319a1e6f3c3f344b92155139c11df368d30fbf225c9ceecad01f2"
+    },
+    {
+      "locale": "uk",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/photocream.svg",
@@ -18228,6 +18688,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/mochidonestamp.html",
       "app_store_url": "https://apps.apple.com/pk/app/id6790800323",
       "sha256": "2456771d53dd01082384dee40769f097c1fe22ff96e6fe12923f4dd19b92a2c1"
+    },
+    {
+      "locale": "ur-PK",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "843f7f40b42e2ad9da2e025e5d466eed839b334708d9c02224c677d38a20d9a4"
     },
     {
       "locale": "ur-PK",
@@ -18621,6 +19091,16 @@
     },
     {
       "locale": "vi",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "b0747f0088c2eb670102436895689b1037f419c90e13d8002e4aebda586c4e01"
+    },
+    {
+      "locale": "vi",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/photocream.svg",
@@ -19011,6 +19491,16 @@
     },
     {
       "locale": "zh-Hans",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "f2f2571f866f2dedadbb1d6442953dc2a2ce7b6db4a92ceab23e3d3b6ba8b0a2"
+    },
+    {
+      "locale": "zh-Hans",
       "app_key": "photocream",
       "app_store_id": "6781808054",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/photocream.svg",
@@ -19147,7 +19637,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6791658210",
-      "sha256": "353d41e2adfddb983a6108ccd3e24efe110763a213871d1fe349a313f4e5a410"
+      "sha256": "368cc03058c37f557a6c0aef3330c5528b35a43ae3afdfdcea985e473d1b75fd"
     },
     {
       "locale": "zh-Hant",
@@ -19157,7 +19647,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6784974530",
-      "sha256": "d8051bf14ab24149467af622d16e9db04a237bc8747a33d99e63d4a66ca71e04"
+      "sha256": "4efba4cb3ddd6d599c93fd1027baa8cf29ef66fe5aee26de3ea05462546d556c"
     },
     {
       "locale": "zh-Hant",
@@ -19177,7 +19667,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/caldaily.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6794178671",
-      "sha256": "29df911714053a67e9cddabd9f5e3c1403ebb133c6f87bcffe44aea4340e4b47"
+      "sha256": "f59111652f3312c41f22c7bbc89d219fd1af9e36fdb2154aa4af88c7d17dc6c2"
     },
     {
       "locale": "zh-Hant",
@@ -19187,7 +19677,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-resume-builder-app-for-career-changers-2026.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6781337213",
-      "sha256": "37c79427b18d1855ceb6509a848169d3719efa5a6ce7821023e1c6bf372bc6ab"
+      "sha256": "613ebcec2efa07272e581532d731ea3a3dafd6bcb6408b96799d64eb1e037d79"
     },
     {
       "locale": "zh-Hant",
@@ -19197,7 +19687,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-period-tracker-app-no-account-required-iphone.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6782251621",
-      "sha256": "b42604e8b5fe0f1128fee26d90248c2499e7b78a34a5fcebd63699f2d5ef12a5"
+      "sha256": "7e98a9769ca9502c1ab876b51c2074f861dc3278b0976888d95cb5ad1d6d7602"
     },
     {
       "locale": "zh-Hant",
@@ -19217,7 +19707,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/dailymatelite.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6794725568",
-      "sha256": "6694fe3c7619bf7c4674f4057092d8757583e01a747264f628285bdb73d05a88"
+      "sha256": "46ea6ca02ff837bfae7a3b343a6f76420c631d5c58f9c01c501104362779dbab"
     },
     {
       "locale": "zh-Hant",
@@ -19237,7 +19727,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6793436548",
-      "sha256": "d7935fd4b02efff60f15828fa619237108703b669cdad85b9473e04680841c20"
+      "sha256": "e4d67a18b3b47befd049cdf8105eb62a5aed6a34078348baffac9fb81f7a67cc"
     },
     {
       "locale": "zh-Hant",
@@ -19257,7 +19747,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6794039979",
-      "sha256": "ed526c5926d6f46075f4babbf542ea004da4de4cb6ca8329aa78809c3fbd4b83"
+      "sha256": "2a93aa846b21504568fb4d30f3a234d556d420dc7fb53b014a69b8ac7c770e01"
     },
     {
       "locale": "zh-Hant",
@@ -19267,7 +19757,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-block-social-media-while-studying-iphone.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6780107485",
-      "sha256": "78e3bc711698938e1e6cc2dce2d26fe9ff427110ec48682becc59f6383028fb3"
+      "sha256": "c415dfeef52c1dbd7949b8a51b2a90b1ed5f17cedb9594084030679ab105f2f5"
     },
     {
       "locale": "zh-Hant",
@@ -19277,7 +19767,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6773017109",
-      "sha256": "710da8269e7a67d4d71e668ade447638ca9b640e512a8f5e566b82ed7688e1d9"
+      "sha256": "f7357c15a109e4b9aea524f70a1c537f2b4667cb2c4469d996a9486173d4d4b9"
     },
     {
       "locale": "zh-Hant",
@@ -19297,7 +19787,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6778748533",
-      "sha256": "5bab3477e0b6fc1e6415688507e9481039f079fb6f90885c5b63885fc53e48d5"
+      "sha256": "218c699492549a24975c98479341c9389f12f3b812a1dee51a261ca52a42f7a5"
     },
     {
       "locale": "zh-Hant",
@@ -19317,7 +19807,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6778269699",
-      "sha256": "c58b7a233874be2a076e8e87f8f6bc33bfbe7c1ffad7ae77730648fbc01755c9"
+      "sha256": "b46b1b93ea4721811e7c6792740aeb4d93e12a8668aadbbff438516a915e52e2"
     },
     {
       "locale": "zh-Hant",
@@ -19337,7 +19827,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6779750237",
-      "sha256": "2a29623a413e80dae498dcfe8b1a7e0cc57405dcf777417312790046c6dd5082"
+      "sha256": "5b7c8948d9147b4a3758313efabf6599b288e8d46e8c35534448fff864222286"
     },
     {
       "locale": "zh-Hant",
@@ -19357,7 +19847,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6787193643",
-      "sha256": "80474768f3f3a10bb017b3efd7f6a1fc1d6d3e98ed68b2bce5fdd0340ceddceb"
+      "sha256": "36909a1bd3183d0884f9861b0d925dd0fc623546953a3435a1e0066f7109bde0"
     },
     {
       "locale": "zh-Hant",
@@ -19367,7 +19857,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6779552704",
-      "sha256": "7783ca7ef1a8d42e37f7132f5c8614b20e22b71dd77a0dea2c7cfac5b5d91a58"
+      "sha256": "7fcda39a2dd7d6aad46d549a6015f7ae61b5b49396a3470c821ed7892e82329d"
     },
     {
       "locale": "zh-Hant",
@@ -19377,7 +19867,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6792850916",
-      "sha256": "6db8ca93ce32fb1b6cbd034aa5e37114ba162861d0fce4b92ca3836ac4611d20"
+      "sha256": "a674bfd2104209d997062bb48fffe4495f2c923c5a84f9f0ef20f25371a69f57"
     },
     {
       "locale": "zh-Hant",
@@ -19387,7 +19877,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6785004775",
-      "sha256": "8c67d66d960fd6284397b6c9baaab5f6593285a76bf5d2679ebf246cd8928dcc"
+      "sha256": "f11f8ab897160c68380539e02a96bfce3d288c682774108ff61431eec4981bbc"
     },
     {
       "locale": "zh-Hant",
@@ -19397,7 +19887,17 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6790800323",
-      "sha256": "3991e2a659bf3eb42096ba9ff4a4decd1464b124b321564e83be989f6e38617f"
+      "sha256": "f8721a1937ff0b28fb40de566aab314ea8958682070cefebf51adba40cc12625"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hant/onepageppt.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/onepageppt.html",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "sha256": "df0576899809189aef8c44efb4b9f7261e10a15595be3109884bf1ad08a34427"
     },
     {
       "locale": "zh-Hant",
@@ -19407,7 +19907,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6781808054",
-      "sha256": "bbad7c59cd200852e5ddda29bb309893d3d7ecbf85749805d44149180579742e"
+      "sha256": "3170cca0390c09da06130cd41d4f4532f69db665e995f722d8094f1a4d23981d"
     },
     {
       "locale": "zh-Hant",
@@ -19417,7 +19917,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6780223070",
-      "sha256": "9749e300763ca514d23b986b2ae42626a7e4a753e73239a2a720810afc4ebbe2"
+      "sha256": "f2d223ae49970e6e136bd9709e1eaf406a41e8e04fd3f66025526b5005d3500b"
     },
     {
       "locale": "zh-Hant",
@@ -19427,7 +19927,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6779977651",
-      "sha256": "ffbf761ad320dd9687cd87c025e00f82469ebee712bf709fc6a17819f9ee1106"
+      "sha256": "43d957b2ce830995de4f995674fad27e38e8b3d891eb40dc983b23ed7ce739ed"
     },
     {
       "locale": "zh-Hant",
@@ -19437,7 +19937,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6788236641",
-      "sha256": "70ac95e4bd4347bb55f54ef77200aac02096940c575ca4ae75a4fe05b23777e3"
+      "sha256": "d86637609ffc82ad9aaa8f2143e911eb07c67e64d46302eb9ea2f216957f3cb2"
     },
     {
       "locale": "zh-Hant",
@@ -19457,7 +19957,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/snapportlite.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6792856304",
-      "sha256": "b9eec95b1d5be5885bf496065c94b29ab412a28e43b6eaffe717969a326c9bba"
+      "sha256": "af584429ab2a7d5969b3ae2137fd0778a9cec1216b752aca623ce2f6955b9d8f"
     },
     {
       "locale": "zh-Hant",
@@ -19467,7 +19967,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6782139553",
-      "sha256": "3696605594fb8123ae9b4d27efabe4d8ea9285c151037474abaefe947a5b8019"
+      "sha256": "e3ebaa58373ffa6742816a5ef4113b12579628f0c25b9b221fea1b75ee2c6dc3"
     },
     {
       "locale": "zh-Hant",
@@ -19477,7 +19977,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6791299610",
-      "sha256": "a75fbf5a64333955b88fedd9674b72c2f30d94ea1bf9b5584b66d6ce6e487654"
+      "sha256": "abdd0706601e9c11a293a1440c6f42013d169ed39a77a34d3f04d90912e02aca"
     },
     {
       "locale": "zh-Hant",
@@ -19497,7 +19997,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6782275018",
-      "sha256": "1f3ba238c0dbeacdcff42ec9c593b5389eb836aac728500c57a7d0d98f3d958b"
+      "sha256": "78bc6afc951c7bc678f571c2bfc2ed3b6721aee57586011ab4568fbc02971561"
     },
     {
       "locale": "zh-Hant",
@@ -19517,7 +20017,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/wordmatelite.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6797601720",
-      "sha256": "4bdaa6c795118803569776ce16e3b9e7decdc7f53fe639d5fdf2fa1baae0c58e"
+      "sha256": "14a8abd06d512a99ac28a451f799e78c458444e779fa50de3767e05aa08ef57d"
     },
     {
       "locale": "zh-Hant",

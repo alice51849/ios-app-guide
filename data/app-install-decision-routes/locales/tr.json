@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "tr",
-  "dateModified": "2026-08-12",
-  "content_digest": "eabb52c2e5caf759f126670f165d581f1de75dccc78a8d07f2e41c3cda651c7a",
-  "generation_digest": "2e7091822485b8a451b951bf8fcefb98f6cf4d1da8ddab7b253cab721d1fe739",
+  "dateModified": "2026-08-16",
+  "content_digest": "ca9003f82b6334546cf20f8b860d7b7e8b87554b960a4e240d4b0fb52b3e3dcf",
+  "generation_digest": "95421419b8278dc0ce219aa681af0aa80363593e2af4aa7ba238e0f7395ea4d8",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 39,
+  "record_count": 40,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/tr.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/tr.rss.xml",
@@ -1345,6 +1345,46 @@
       "verified_live": true
     },
     {
+      "record_id": "tr:onepageppt",
+      "locale": "tr",
+      "app_key": "onepageppt",
+      "app_name": "OnePage PPT: Yapay Zeka Slayt",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "OnePage PPT: Yapay Zeka Slayt — Notlardan tek sayfalık sunum | iOS App",
+      "decision_context": "Upuzun bir metni, insanların gerçekten okuduğu TEK bir sayfaya dönüştürün. OnePage PPT verdiğiniz her şeyi okur — yazdığınız veya yapıştırdığınız metni, ekran görüntülerini, fotoğrafları, PDF'leri, CSV tablolarını — ana fikirleri çıkarıp sunuma hazır tek bir 16:9 sayfada toplar. ■ NASIL ÇALIŞIR 1. Ne olursa ekleyin: yazın, yapıştırın, fotoğraf çekin ya da PDF/tablo aktarın. 2. \"Sayfamı Oluştur\"a dokunun. İçerik başlıklara indirgenir, doğru görsele dönüşür. 3. Sunun veya dışa aktarın. ■ DOĞRU GÖRSELİ KENDİ SEÇER Sayılar sütun, çubuk, çizgi, halka veya huni grafiğine dönüşür. Adımlar süreç akışına, tarihler zaman çizelgesine, iki seçenek karşılaştırmaya, bulgular matrise veya hiyerarşiye dönüşür. KPI satırı, veri tablosu ve madde kartları da var. Yalnızca verinin desteklediği grafiği çizer; asla sayı uydurmaz. ■ TEK DOKUNUŞLA YENİDEN TASARIM Altı seçenek — Daha Sade, Daha Görsel, Daha Profesyonel, Daha Çarpıcı, Daha Derli Toplu, Daha Dergi Tarzı — sayfayı farklı grafik, tipografi ve yerleşimle baştan kurar. Beğendiğiniz öğeyi kilitleyin. ■ HER YERE AKTARIN · PowerPoint, Keynote ve Google Slaytlar'da düzenlenebilen .pptx · Paylaşmak ve yazdırmak için PDF · Yüksek çözünürlüklü PNG ■ HER AYRINTIYI DÜZENLEYİN Bir öğeye dokunup metnini, görselini, sırasını ya da stilini değiştirin. Sürüm geçmişi ve yakınlaştırılabilir önizleme de var. ■ TASARIM GEREĞİ GİZLİ Her şey cihazınızda çalışır; iPhone veya iPad'den çıkmaz. Hesap yok, giriş yok, izleme yok; internetsiz çalışır. ■ TEK SEFERLİK SATIN ALMA Ücretsiz deneyin. Lifetime Pro tek seferlik bir satın almadır, abonelik değil.",
+      "category": "productivity",
+      "category_label": "Verimlilik",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Başlangıçta ücretsiz · ömür boyu açma",
+      "one_time_option": true,
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Verimlilik",
+        "Başlangıçta ücretsiz · ömür boyu açma"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/onepageppt.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/tr/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/tr/onepageppt.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fonepageppt%2Fdecision%2Fl%2Ftr%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/tr.json",
+      "app_store_id": "6798814385",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_cta_label": "OnePage PPT: Yapay Zeka Slayt uygulamasını App Store'dan al",
+      "storefront_facts": null,
+      "guide_cta_label": "Kılavuzun tamamını oku",
+      "publisher_disclosure": "Bu, listelenen her uygulamanın geliştiricisi Lumi Studio tarafından yayımlanan birinci taraf materyaldir.",
+      "source_persona_query": "app that turns meeting notes into one presentation slide",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "tr:photocream",
       "locale": "tr",
       "app_key": "photocream",
@@ -1568,7 +1608,7 @@
         "Fotoğraf & yardımcı",
         "Ücretli indirme",
         "Gizli / cihazda",
-        "App Store · ₺249,99"
+        "App Store · ₺299,99"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/tr/index.html",
@@ -1579,9 +1619,9 @@
       "app_store_url": "https://apps.apple.com/tr/app/id6780575828",
       "app_store_cta_label": "Snapport’u App Store’dan edinin →",
       "storefront_facts": {
-        "price": "249.99",
+        "price": "299.99",
         "currency": "TRY",
-        "formatted_price": "₺249,99"
+        "formatted_price": "₺299,99"
       },
       "guide_cta_label": "Kılavuzun tamamını oku",
       "publisher_disclosure": "Lumi Studio tarafından yayımlanan, uygulama geliştiricisi tarafından hazırlanmış rehber. Uygulama isimleri sahiplerinin ticari markalarıdır ve yalnızca tanımlama amacıyla kullanılmıştır. Belgeler, sağlık, okul ve verimlilik kararları için ilgili resmi gereksinimleri doğrulayınız.",

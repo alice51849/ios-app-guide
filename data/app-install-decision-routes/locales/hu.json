@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "hu",
-  "dateModified": "2026-08-12",
-  "content_digest": "eabb52c2e5caf759f126670f165d581f1de75dccc78a8d07f2e41c3cda651c7a",
-  "generation_digest": "2e7091822485b8a451b951bf8fcefb98f6cf4d1da8ddab7b253cab721d1fe739",
+  "dateModified": "2026-08-16",
+  "content_digest": "ca9003f82b6334546cf20f8b860d7b7e8b87554b960a4e240d4b0fb52b3e3dcf",
+  "generation_digest": "95421419b8278dc0ce219aa681af0aa80363593e2af4aa7ba238e0f7395ea4d8",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 39,
+  "record_count": 40,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/hu.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/hu.rss.xml",
@@ -1345,6 +1345,46 @@
       "verified_live": true
     },
     {
+      "record_id": "hu:onepageppt",
+      "locale": "hu",
+      "app_key": "onepageppt",
+      "app_name": "OnePage PPT: MI-dia",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "OnePage PPT: MI-dia — Jegyzetből kész prezentáció | iOS App",
+      "decision_context": "Egy falnyi szövegből EGY dia, amit tényleg elolvasnak. Az OnePage PPT bármit feldolgoz: jegyzetet, szöveget, képernyőképet, fotót, PDF-et, CSV-táblát. Kiszedi a lényeget, és egyetlen, vetítésre kész 16:9-es diává rendezi. ÍGY MŰKÖDIK 1. Adj hozzá bármit: gépelj, illessz be, fényképezz vagy importálj PDF-et, táblázatot. 2. Koppints a „Dia elkészítése\" gombra. A tartalom címsorokká sűrűsödik, és megkapja az ábráját. 3. Vetítsd le, vagy exportáld. A MEGFELELŐ ÁBRA A számokból oszlop-, sáv-, vonal-, gyűrű- vagy tölcsérdiagram lesz. A lépésekből folyamatábra, a dátumokból idővonal, két lehetőségből összehasonlítás, a megállapításokból mátrix vagy hierarchia. Csak akkor rajzol diagramot, ha az adatok engedik — számot soha nem talál ki. HAT ÚJRATERVEZÉS Egy koppintás — Letisztultabb, Látványosabb, Profibb, Merészebb, Tömörebb, Magazinos —, és a dia újraépül: más ábra, más tipográfia, más elrendezés. Amit megtartanál, rögzítheted. EXPORT BÁRHOVÁ • Szerkeszthető .pptx PowerPointhoz, Keynote-hoz és Google Slideshoz • PDF megosztáshoz és nyomtatáshoz • Nagy felbontású PNG dokumentumokhoz és e-mailhez SZERKESZTHETŐ MINDEN Koppints bármely elemre: átírhatod, képet cserélhetsz, blokkokat rendezhetsz, stílust válthatsz. A verziótörténet bármelyik korábbi változatot visszahozza, az előnézet csippentéssel nagyítható. ADATVÉDELEM Minden a készülékeden fut. A projektjeid, képeid és exportjaid nem hagyják el az iPhone-t vagy iPadet. Nincs fiók, nincs bejelentkezés, nincs követés, és net sem kell. EGYSZERI VÁSÁRLÁS Próbáld ki ingyen. A Lifetime Pro egyszeri vásárlás, nem előfizetés.",
+      "category": "productivity",
+      "category_label": "Produktivitás",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "one_time_option": true,
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Produktivitás",
+        "Ingyenes kezdés · életre szóló feloldás"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/onepageppt.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/hu/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/hu/onepageppt.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fonepageppt%2Fdecision%2Fl%2Fhu%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
+      "app_store_id": "6798814385",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_cta_label": "Töltse le a(z) OnePage PPT: MI-dia appot az App Store-ból",
+      "storefront_facts": null,
+      "guide_cta_label": "Olvasd el a teljes útmutatót",
+      "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
+      "source_persona_query": "app that turns meeting notes into one presentation slide",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "hu:photocream",
       "locale": "hu",
       "app_key": "photocream",
@@ -1568,7 +1608,7 @@
         "Fotó & segédprogram",
         "Fizetős letöltés",
         "Privát / eszközön tárolt",
-        "App Store · HUF1,990.00"
+        "App Store · HUF2,490.00"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/hu/index.html",
@@ -1579,9 +1619,9 @@
       "app_store_url": "https://apps.apple.com/hu/app/id6780575828",
       "app_store_cta_label": "Szerezd be a Snapportot az App Store-ból →",
       "storefront_facts": {
-        "price": "1990",
+        "price": "2490",
         "currency": "HUF",
-        "formatted_price": "HUF1,990.00"
+        "formatted_price": "HUF2,490.00"
       },
       "guide_cta_label": "Olvasd el a teljes útmutatót",
       "publisher_disclosure": "Kiadó által készített útmutató a Lumi Studio-tól, az alkalmazás fejlesztőjétől. Az alkalmazásnevek a tulajdonosaik védjegyei, és csak azonosítás céljából használjuk őket. Dokumentumok, egészségügy, iskola és hatékonyság terén hozott döntések esetén ellenőrizze a hivatalos követelményeket, ahol releváns.",

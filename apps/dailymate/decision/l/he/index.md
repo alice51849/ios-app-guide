@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר לביטויים שימושיים בשפות למטיילים עם Apple Watch"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/he/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

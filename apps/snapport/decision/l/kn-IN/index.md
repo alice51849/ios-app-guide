@@ -2,7 +2,7 @@
 title: "ಮಕ್ಕಳು ಮತ್ತು ಬಾಲಕರಿಗೆ ಮನೆಮೇಲೆ ಉತ್ತಮ ಪಾಸ್‌ಪೋರ್ಟ್ ಫೋಟೋ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/kn-IN/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - ಫೋಟೋ ಮತ್ತು ಉಪಯೋಗ
 - ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್
 - ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
-- App Store · ₹ 499
+- App Store · ₹ 599
 
 [App Store ನಲ್ಲಿ Snapport ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6780575828)
 

@@ -2,7 +2,7 @@
 title: "ਪ੍ਰੀ-ਸਕੂਲ ਬੱਚਿਆਂ ਲਈ ਵਧੀਆ ਸੌਣ ਦੀ ਰੁਟੀਨ ਐਪ ਜਿਸ ਵਿੱਚ ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/pa-IN/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

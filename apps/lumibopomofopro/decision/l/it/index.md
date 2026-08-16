@@ -2,7 +2,7 @@
 title: "miglior app zhuyin completa per bambini bilingue"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/it/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

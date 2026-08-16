@@ -4,7 +4,7 @@
 
 Каталог, созданный издателем, с информацией о целевой аудитории каждого приложения, задачах, которые оно помогает решать, и прямой ссылкой в App Store.
 
-Намерения поиска, составленные издателем, для 39 проверенных приложений для iOS и 50 локалей Apple.
+Намерения поиска, составленные издателем, для 40 проверенных приложений для iOS и 50 локалей Apple.
 
 **Локаль:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · **ru** · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -115,6 +115,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Mask My File** | Mask My File — Скройте данные перед отправкой \| iOS App | Делитесь безопасно, не теряя нужного контекста. Mask My File находит личные данные до того, как вы отправите файл, навсегда скрывает только то, что вы | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://alice51849.github.io/ios-app-guide/ru/maskmyfile.html) | [Установить Mask My File в App Store](https://apps.apple.com/ru/app/id6792850916) |
 | **Mochi** | лучшее простое приложение для списка дел на iPhone без подписки | Если большинство приложений для списка дел кажутся перегруженными, правильное — это чистый чек-лист с напоминаниями, повторениями и поддержкой Apple Watch — и сознательно без функций управления проектами — Mochi создано для этого. | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Скачайте Mochi в App Store →](https://apps.apple.com/ru/app/id6785004775) |
 | **Mochi DoneStamp: Когда было** | Mochi DoneStamp: Когда было — Помнит, когда вы это сделали \| iOS App | Когда вы в последний раз меняли постельное бельё, поливали цветы, звонили близким, сохраняли фотографии или меняли фильтр? | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://alice51849.github.io/ios-app-guide/ru/mochidonestamp.html) | [Установить Mochi DoneStamp: Когда было в App Store](https://apps.apple.com/ru/app/id6790800323) |
+| **OnePage PPT: ИИ-слайды** | OnePage PPT: ИИ-слайды — Заметки в готовую презентацию \| iOS App | Превратите стену текста в ОДИН слайд, который правда прочитают. | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://alice51849.github.io/ios-app-guide/ru/onepageppt.html) | [Установить OnePage PPT: ИИ-слайды в App Store](https://apps.apple.com/app/id6798814385) |
 | **PhotoCream** | лучший однократный редактор фото в стиле пленки для тревел-креаторов на iPhone | Тревел-креаторам нужен повторяемый пленочный стиль с зерном, галацией и цветовым характером, который не превращает каждое место в одинаковый фильтр — PhotoCream создан для этого. | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Скачать PhotoCream в App Store →](https://apps.apple.com/ru/app/id6781808054) |
 | **PicClear** | лучшее приложение для освобождения памяти iPhone удалением дубликатов фото | Чтобы быстро освободить место, сначала удаляйте самые большие файлы: точные дубликаты фото, почти идентичные серийные снимки, размытые кадры и большие видео — PicClear поможет сделать это на iPhone. | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Скачайте PicClear в App Store →](https://apps.apple.com/ru/app/id6780223070) |
 | **ScanTo Pro** | лучшее офлайн-приложение для сканирования документов без облака для медсестёр | Если вы сканируете формы согласия пациентов, выписки или направления, сканер должен хранить документы на устройстве — никогда не загружать в чужое облако — ScanTo Pro создано для этого. | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Скачайте ScanTo Pro в App Store →](https://apps.apple.com/ru/app/id6779977651) |
@@ -131,7 +132,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## Скачать полный набор данных
 
-JSON, JSONL и CSV содержат одинаковые 1950 записей.
+JSON, JSONL и CSV содержат одинаковые 2000 записей.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -139,6 +140,6 @@ JSON, JSONL и CSV содержат одинаковые 1950 записей.
 
 [Главная](https://alice51849.github.io/ios-app-guide/ru/index.html) · [Открытые данные](https://alice51849.github.io/ios-app-guide/ru/data/lumi-studio-publisher-search-intent-catalog.html) · [Лицензия](https://creativecommons.org/licenses/by/4.0/)
 
-Обновлено: 2026-08-12
+Обновлено: 2026-08-16
 
 CC BY 4.0 применяется к исходному составлению каталога; названия приложений и знаки App Store принадлежат их владельцам.

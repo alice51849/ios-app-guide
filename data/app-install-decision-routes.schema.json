@@ -74,13 +74,13 @@
       "uniqueItems": true
     },
     "app_count": {
-      "const": 39
+      "const": 40
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 1950
+      "const": 2000
     },
     "locales": {
       "type": "array",
@@ -223,8 +223,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 1950,
-      "maxItems": 1950,
+      "minItems": 2000,
+      "maxItems": 2000,
       "items": {
         "$ref": "#/$defs/record"
       }
@@ -379,6 +379,7 @@
             "maskmyfile",
             "mochi",
             "mochidonestamp",
+            "onepageppt",
             "photocream",
             "picclear",
             "scanto",

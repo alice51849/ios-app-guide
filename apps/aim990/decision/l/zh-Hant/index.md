@@ -2,7 +2,7 @@
 title: "iPhone 最佳 TOEIC 離線準備應用程式學習計畫"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/zh-Hant/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 第 5 部分看似簡短，但不完整句子題目若文法與詞彙不熟練，會耗費大量時間。
 
 - 學習
-- 免費開始 · 永久解鎖
+- 免費開始 · 一次購買解鎖
 - App Store · 免費
 - ★ 5.0/5 · 2
 

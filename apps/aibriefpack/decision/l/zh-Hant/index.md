@@ -2,7 +2,7 @@
 title: "best private app to organize screenshots and documents into context before using AI"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/zh-Hant/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceable brief before sharing with any AI. Free to start · One-time unlock · No subscription.
 
 - 效率工具
-- 免費開始 · 永久解鎖
+- 免費開始 · 一次購買解鎖
 - 隱私優先／裝置端
 - App Store · 免費
 - ★ 5.0/5 · 1

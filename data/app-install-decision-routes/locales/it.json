@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "it",
-  "dateModified": "2026-08-12",
-  "content_digest": "eabb52c2e5caf759f126670f165d581f1de75dccc78a8d07f2e41c3cda651c7a",
-  "generation_digest": "2e7091822485b8a451b951bf8fcefb98f6cf4d1da8ddab7b253cab721d1fe739",
+  "dateModified": "2026-08-16",
+  "content_digest": "ca9003f82b6334546cf20f8b860d7b7e8b87554b960a4e240d4b0fb52b3e3dcf",
+  "generation_digest": "95421419b8278dc0ce219aa681af0aa80363593e2af4aa7ba238e0f7395ea4d8",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 39,
+  "record_count": 40,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/it.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/it.rss.xml",
@@ -1351,6 +1351,46 @@
       "verified_live": true
     },
     {
+      "record_id": "it:onepageppt",
+      "locale": "it",
+      "app_key": "onepageppt",
+      "app_name": "OnePage PPT: slide con IA",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "OnePage PPT: slide con IA — I tuoi appunti in una slide | iOS App",
+      "decision_context": "Trasforma un muro di testo in UNA slide che si legge davvero. OnePage PPT prende quello che gli dai — appunti, testo incollato, screenshot, foto, PDF, tabelle CSV — individua i punti chiave e li compone in un'unica slide 16:9 pronta da presentare. COME FUNZIONA 1. Aggiungi qualsiasi cosa: scrivi, incolla, scatta una foto o importa un PDF o un foglio di calcolo. 2. Tocca «Crea la slide»: i contenuti diventano messaggi chiave e il visual giusto. 3. Presenta o esporta. LA VISUALIZZAZIONE GIUSTA I numeri diventano grafici a colonne, a barre, a linee, ad anello o a imbuto. Le fasi diventano un diagramma di flusso, le date una timeline, due opzioni un confronto, le evidenze una matrice o una gerarchia. Un grafico compare solo se i dati lo reggono davvero: le cifre non vengono mai inventate. RIDISEGNA FINCHÉ NON TORNA Sei ridisegni con un tocco — Più pulito, Più visivo, Più professionale, Più deciso, Più compatto, Più editoriale — ricostruiscono la slide con altre forme di grafico, tipografia e impaginato. Blocca ciò che ti piace. ESPORTA OVUNQUE • .pptx modificabile per PowerPoint, Keynote e Google Slides • PDF per condividere e stampare • PNG ad alta risoluzione per documenti, email e chat MODIFICA TUTTO Tocca un elemento per riscriverlo, cambiare immagine, riordinare i blocchi o cambiare stile; la cronologia versioni riporta a ogni bozza. PRIVACY REALE Tutto gira sul tuo dispositivo: nulla lascia mai iPhone o iPad. Nessun account, nessun tracciamento, funziona anche offline. ACQUISTO UNICO Provala gratis. Lifetime Pro è un acquisto una tantum, senza abbonamento.",
+      "category": "productivity",
+      "category_label": "Produttività",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis per iniziare · sblocco permanente",
+      "one_time_option": true,
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Produttività",
+        "Gratis per iniziare · sblocco permanente"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/onepageppt.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/it/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/it/onepageppt.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fonepageppt%2Fdecision%2Fl%2Fit%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
+      "app_store_id": "6798814385",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_cta_label": "Scarica OnePage PPT: slide con IA sull'App Store",
+      "storefront_facts": null,
+      "guide_cta_label": "Leggi la guida completa",
+      "publisher_disclosure": "Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.",
+      "source_persona_query": "app that turns meeting notes into one presentation slide",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "it:photocream",
       "locale": "it",
       "app_key": "photocream",
@@ -1574,7 +1614,7 @@
         "Foto e utilità",
         "Scaricamento a pagamento",
         "Privato / su dispositivo",
-        "App Store · 5,99 €"
+        "App Store · 6,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/it/index.html",
@@ -1585,9 +1625,9 @@
       "app_store_url": "https://apps.apple.com/it/app/id6780575828",
       "app_store_cta_label": "Scarica Snapport dall’App Store →",
       "storefront_facts": {
-        "price": "5.99",
+        "price": "6.99",
         "currency": "EUR",
-        "formatted_price": "5,99 €"
+        "formatted_price": "6,99 €"
       },
       "guide_cta_label": "Leggi la guida completa",
       "publisher_disclosure": "Guida redatta dall'editore Lumi Studio, lo sviluppatore dell'app. I nomi delle app sono marchi dei rispettivi proprietari e sono utilizzati solo per identificazione. Per documenti, salute, scuola e decisioni sulla produttività, verificare i requisiti ufficiali ove rilevanti.",

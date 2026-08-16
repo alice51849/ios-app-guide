@@ -2,7 +2,7 @@
 title: "ਘਰ 'ਤੇ ਬੱਚਿਆਂ ਅਤੇ ਨੰਨੇ ਬੱਚਿਆਂ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਪਾਸਪੋਰਟ ਫੋਟੋ ਐਪ"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/pa-IN/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - ਫੋਟੋ ਅਤੇ ਯੂਟਿਲਿਟੀ
 - ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ
 - ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
-- App Store · ₹ 499
+- App Store · ₹ 599
 
 [App Store 'ਤੇ Snapport ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6780575828)
 

@@ -2,7 +2,7 @@
 title: "Snapport Lite — Crea fotos de carnet en casa | iOS App"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/es-MX/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

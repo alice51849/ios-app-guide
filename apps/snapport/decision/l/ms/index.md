@@ -2,7 +2,7 @@
 title: "aplikasi foto pasport terbaik untuk bayi dan kanak-kanak di rumah"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/ms/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Untuk foto pasport bayi, tiada orang lain boleh berada dalam gambar dan latar be
 - Foto & utiliti
 - Muat turun berbayar
 - Peribadi / pada peranti
-- App Store · RM22.90
+- App Store · RM29.90
 
 [Dapatkan Snapport di App Store →](https://apps.apple.com/my/app/id6780575828)
 

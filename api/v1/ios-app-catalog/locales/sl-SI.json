@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-12",
-  "content_digest": "cc1458358044ede265f7046e3065b1058f4f3f1d5f178d9d1a9b9474f8e08253",
+  "date_modified": "2026-08-16",
+  "content_digest": "800baa7564db492205a18a7d67f023a77d0283a577dfa0f6cdf99c1327ae14e6",
   "locale": "sl-SI",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 39,
+  "record_count": 40,
   "apps": [
     {
       "key": "aibriefpack",
@@ -1327,6 +1327,43 @@
       }
     },
     {
+      "key": "onepageppt",
+      "app_store_id": "6798814385",
+      "name": "OnePage PPT: AI prosojnica",
+      "summary": "Iz stene besedila nastane ENA prosojnica, ki jo res preberejo.",
+      "category": "productivity",
+      "search_terms": [
+        "pptx",
+        "referat",
+        "diagram",
+        "poročilo",
+        "povzetek",
+        "tabela",
+        "predloga",
+        "seminarska",
+        "izvoz",
+        "pdf",
+        "šola",
+        "graf",
+        "sestanek",
+        "načrt"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/onepageppt.html",
+      "verified_live": true
+    },
+    {
       "key": "photocream",
       "app_store_id": "6781808054",
       "name": "PhotoCream Pro",
@@ -1578,9 +1615,9 @@
       "guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/snapport.html",
       "verified_live": true,
       "storefront_facts": {
-        "price": "5.99",
+        "price": "6.99",
         "currency": "EUR",
-        "formatted_price": "5,99 €",
+        "formatted_price": "6,99 €",
         "storefront_url": "https://apps.apple.com/si/app/id6780575828"
       }
     },

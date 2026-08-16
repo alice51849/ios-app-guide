@@ -2,7 +2,7 @@
 title: "아이폰에서 구독 없는 가장 간단한 할 일 목록 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/ko/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 대부분 할 일 앱이 복잡하게 느껴진다면, 알림, 반복 규칙, Apple Watch 컴플리케이션이 포함된 깔끔한 체크리스트가 정답이며 프로젝트 관리 기능은 의도적으로 제외된 Mochi가 이에 맞게 설계되었습니다.
 
 - 생산성
-- 무료로 시작 · 평생 잠금 해제
+- 무료로 시작 · 한 번 구매 잠금 해제
 - 광고 없음
 - App Store · 무료
 

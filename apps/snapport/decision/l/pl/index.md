@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do zdjęć paszportowych dla niemowląt i małych dzieci w domu"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/pl/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Na zdjęciu paszportowym niemowlęcia nie może być innych osób, a tło musi b
 - Zdjęcia i narzędzia
 - Płatne do pobrania
 - Prywatne / na urządzeniu
-- App Store · 24,99 zł
+- App Store · 29,99 zł
 
 [Pobierz Snapport w App Store →](https://apps.apple.com/pl/app/id6780575828)
 

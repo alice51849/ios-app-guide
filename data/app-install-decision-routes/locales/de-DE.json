@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "de-DE",
-  "dateModified": "2026-08-12",
-  "content_digest": "eabb52c2e5caf759f126670f165d581f1de75dccc78a8d07f2e41c3cda651c7a",
-  "generation_digest": "2e7091822485b8a451b951bf8fcefb98f6cf4d1da8ddab7b253cab721d1fe739",
+  "dateModified": "2026-08-16",
+  "content_digest": "ca9003f82b6334546cf20f8b860d7b7e8b87554b960a4e240d4b0fb52b3e3dcf",
+  "generation_digest": "95421419b8278dc0ce219aa681af0aa80363593e2af4aa7ba238e0f7395ea4d8",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 39,
+  "record_count": 40,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/de-DE.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/de-DE.rss.xml",
@@ -133,7 +133,8 @@
       "badge_labels": [
         "Lebensstil",
         "Kostenloser Einstieg · dauerhafte Freischaltung",
-        "App Store · Kostenlos"
+        "App Store · Kostenlos",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/de-DE/index.html",
@@ -146,7 +147,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "EUR",
-        "formatted_price": "Kostenlos"
+        "formatted_price": "Kostenlos",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
       "publisher_disclosure": "Ein vom App-Entwickler Lumi Studio selbst verfasster Ratgeber. App-Namen sind Marken ihrer jeweiligen Eigentümer und werden nur zur Identifikation verwendet. Bei Entscheidungen zu Dokumenten, Gesundheit, Schule und Produktivität prüfen Sie bitte gegebenenfalls die offiziellen Vorgaben.",
@@ -1292,6 +1295,46 @@
       "verified_live": true
     },
     {
+      "record_id": "de-DE:onepageppt",
+      "locale": "de-DE",
+      "app_key": "onepageppt",
+      "app_name": "OnePage PPT: KI Folien",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "OnePage PPT: KI Folien — Notizen zu einer Folie | iOS App",
+      "decision_context": "Aus einer Textwand wird EINE Folie, die wirklich gelesen wird. OnePage PPT wertet aus, was Sie hineingeben — Notizen, eingefügten Text, Screenshots, Fotos, PDFs, CSV-Tabellen —, erkennt die Kernaussagen und setzt sie als eine einzige, präsentationsfertige 16:9-Folie. Keine Vorlagenauswahl, kein Verschieben von Kästchen. SO FUNKTIONIERT ES 1. Alles hinzufügen: tippen, einfügen, fotografieren oder PDF bzw. Tabelle importieren. 2. Auf „Folie erstellen\" tippen. Ihre Inhalte werden zu Kernaussagen verdichtet und visualisiert. 3. Präsentieren oder exportieren. DIE PASSENDE DARSTELLUNG Zahlen werden zu Säulen-, Balken-, Linien-, Ring- oder Trichterdiagrammen. Schritte werden zum Ablaufdiagramm, Daten zur Zeitleiste, Alternativen zum Vergleich, Erkenntnisse zur Matrix oder Hierarchie. Ein Diagramm entsteht nur, wenn die Daten es wirklich hergeben — Zahlen werden nie erfunden. NEU GESTALTEN, BIS ES SITZT Sechs Umgestaltungen per Tipp — Klarer, Visueller, Professioneller, Markanter, Kompakter, Editorial — bauen die Folie jeweils mit anderen Diagrammformen, Typografie und Layout neu auf. Einzelne Elemente lassen sich sperren. ÜBERALL EXPORTIEREN • Bearbeitbare .pptx für PowerPoint, Keynote und Google Slides • PDF zum Teilen und Drucken • Hochauflösendes PNG für Dokumente, E-Mail und Chat JEDES DETAIL BEARBEITEN Jedes Element antippen, umformulieren, Bild tauschen, Blöcke neu ordnen oder Stil wechseln. Die Versionshistorie führt zu jedem früheren Entwurf zurück. VON GRUND AUF PRIVAT Alles läuft auf Ihrem Gerät. Projekte, Bilder und Exporte verlassen Ihr iPhone oder iPad nie. Kein Konto, keine Anmeldung, kein Tracking — und es funktioniert ganz ohne Netz. EINMALKAUF Kostenlos testen. Lifetime Pro ist ein einmaliger Kauf — kein Abo.",
+      "category": "productivity",
+      "category_label": "Produktivität",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Kostenloser Einstieg · dauerhafte Freischaltung",
+      "one_time_option": true,
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Produktivität",
+        "Kostenloser Einstieg · dauerhafte Freischaltung"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/onepageppt.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/de-DE/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/de-DE/onepageppt.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fonepageppt%2Fdecision%2Fl%2Fde-DE%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/de-DE.json",
+      "app_store_id": "6798814385",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_cta_label": "OnePage PPT: KI Folien im App Store laden",
+      "storefront_facts": null,
+      "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
+      "publisher_disclosure": "Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.",
+      "source_persona_query": "app that turns meeting notes into one presentation slide",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "de-DE:photocream",
       "locale": "de-DE",
       "app_key": "photocream",
@@ -1515,7 +1558,7 @@
         "Foto & Dienstprogramm",
         "Kostenpflichtiger Download",
         "Privat / auf dem Gerät",
-        "App Store · 5,99 €"
+        "App Store · 6,99 €"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/de-DE/index.html",
@@ -1526,9 +1569,9 @@
       "app_store_url": "https://apps.apple.com/de/app/id6780575828",
       "app_store_cta_label": "Snapport im App Store herunterladen →",
       "storefront_facts": {
-        "price": "5.99",
+        "price": "6.99",
         "currency": "EUR",
-        "formatted_price": "5,99 €"
+        "formatted_price": "6,99 €"
       },
       "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
       "publisher_disclosure": "Vom Herausgeber verfasster Leitfaden von Lumi Studio, dem Entwickler der App. App-Namen sind Marken ihrer Eigentümer und werden nur zur Identifikation verwendet. Für Dokumente, Gesundheit, Schule und Produktivitätsentscheidungen prüfen Sie gegebenenfalls offizielle Anforderungen.",

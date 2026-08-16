@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "nl-NL",
-  "dateModified": "2026-08-12",
-  "content_digest": "eabb52c2e5caf759f126670f165d581f1de75dccc78a8d07f2e41c3cda651c7a",
-  "generation_digest": "2e7091822485b8a451b951bf8fcefb98f6cf4d1da8ddab7b253cab721d1fe739",
+  "dateModified": "2026-08-16",
+  "content_digest": "ca9003f82b6334546cf20f8b860d7b7e8b87554b960a4e240d4b0fb52b3e3dcf",
+  "generation_digest": "95421419b8278dc0ce219aa681af0aa80363593e2af4aa7ba238e0f7395ea4d8",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 39,
+  "record_count": 40,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/nl-NL.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/nl-NL.rss.xml",
@@ -1345,6 +1345,46 @@
       "verified_live": true
     },
     {
+      "record_id": "nl-NL:onepageppt",
+      "locale": "nl-NL",
+      "app_key": "onepageppt",
+      "app_name": "OnePage PPT: AI-dia maker",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "OnePage PPT: AI-dia maker — Van notities naar één dia | iOS App",
+      "decision_context": "Maak van een muur tekst ÉÉN dia die mensen echt lezen. OnePage PPT leest alles wat je erin gooit — getypte tekst, geplakte tekst, screenshots, foto's, PDF's, CSV-tabellen —, haalt de kernpunten eruit en zet ze op één presentatieklare 16:9-dia. ZO WERKT HET 1. Voeg alles toe: typ, plak, fotografeer of importeer een PDF of spreadsheet. 2. Tik op «Maak mijn dia»: je inhoud wordt kernboodschappen en de juiste weergave. 3. Presenteer of exporteer. DE JUISTE WEERGAVE, AUTOMATISCH Cijfers worden kolom-, staaf-, lijn-, ring- of trechtergrafieken. Stappen worden een processchema, datums een tijdlijn, twee opties een vergelijking, bevindingen een matrix of boomstructuur. Er komt alleen een grafiek als de data dat dragen — cijfers worden nooit verzonnen. BLIJF HERONTWERPEN Zes herontwerpen met één tik — Strakker, Visueler, Zakelijker, Gedurfder, Compacter, Redactioneler — bouwen de dia opnieuw op met andere grafiekvormen, typografie en indeling. Vergrendel wat je al goed vindt. OVERAL EXPORTEREN • Bewerkbare .pptx voor PowerPoint, Keynote en Google Presentaties • PDF om te delen en af te drukken • PNG in hoge resolutie voor documenten, e-mail en chat ALLES AANPASBAAR Tik op een element om het te herschrijven, een afbeelding te vervangen, blokken te herschikken of de stijl te wijzigen; met de versiegeschiedenis ga je terug naar elke versie. PRIVACY VOOROP Alles draait op je toestel en verlaat je iPhone of iPad nooit. Geen account, geen inloggen, geen tracking — en het werkt zonder internet. EENMALIGE AANKOOP Gratis uitproberen. Lifetime Pro koop je één keer — geen abonnement.",
+      "category": "productivity",
+      "category_label": "Productiviteit",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis te starten · levenslange ontgrendeling",
+      "one_time_option": true,
+      "privacy_facts": [],
+      "privacy_labels": [],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Productiviteit",
+        "Gratis te starten · levenslange ontgrendeling"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/onepageppt.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/nl-NL/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/nl-NL/onepageppt.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fonepageppt%2Fdecision%2Fl%2Fnl-NL%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/nl-NL.json",
+      "app_store_id": "6798814385",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_cta_label": "Download OnePage PPT: AI-dia maker in de App Store",
+      "storefront_facts": null,
+      "guide_cta_label": "Lees de volledige gids",
+      "publisher_disclosure": "Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.",
+      "source_persona_query": "app that turns meeting notes into one presentation slide",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "nl-NL:photocream",
       "locale": "nl-NL",
       "app_key": "photocream",
@@ -1568,7 +1608,7 @@
         "Foto & hulpmiddel",
         "Betaalde aanschaf",
         "Privé / op apparaat",
-        "App Store · € 5,99"
+        "App Store · € 6,99"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/nl-NL/index.html",
@@ -1579,9 +1619,9 @@
       "app_store_url": "https://apps.apple.com/nl/app/id6780575828",
       "app_store_cta_label": "Download Snapport in de App Store →",
       "storefront_facts": {
-        "price": "5.99",
+        "price": "6.99",
         "currency": "EUR",
-        "formatted_price": "€ 5,99"
+        "formatted_price": "€ 6,99"
       },
       "guide_cta_label": "Lees de volledige gids",
       "publisher_disclosure": "Gids van de uitgever Lumi Studio, de ontwikkelaar van de app. App-namen zijn handelsmerken van hun eigenaren en worden alleen gebruikt ter identificatie. Controleer officiële vereisten waar relevant voor documenten, gezondheid, school en productiviteitsbeslissingen.",

@@ -4,7 +4,7 @@
 
 Catàleg de primera mà que mostra per a qui està dissenyada cada app, la tasca que volen completar i el camí directe a l'App Store.
 
-Intencions de cerca escrites pel publicador per a 39 apps iOS verificades i actives en 50 locals d'Apple.
+Intencions de cerca escrites pel publicador per a 40 apps iOS verificades i actives en 50 locals d'Apple.
 
 **Local:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · **ca** · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -115,6 +115,7 @@ Alfabètic per nom d'app — mai és un rànquing.
 | **Mask My File** | Mask My File — Oculta dades abans d'enviar \| iOS App | Comparteix amb tranquil·litat sense perdre el context útil. Mask My File detecta les dades privades abans que enviïs un fitxer, oculta de manera | Inici gratuït · desbloqueig de per vida | [Guia](https://alice51849.github.io/ios-app-guide/ca/maskmyfile.html) | [Descarrega Mask My File a l’App Store](https://apps.apple.com/es/app/id6792850916) |
 | **Mochi** | millor app de llista de tasques simple per a iPhone sense subscripció | Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista neta amb recordatoris, regles de repetició i una complicació per a Watch — i deliberadament sense maquinària de gestió de projectes — Mochi està feta per això. | Inici gratuït · desbloqueig de per vida | [Guia](https://alice51849.github.io/ios-app-guide/ca/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Descarrega Mochi a l’App Store →](https://apps.apple.com/es/app/id6785004775) |
 | **Mochi DoneStamp: Última vegada** | Mochi DoneStamp: Última vegada — Recorda quan ho vas fer \| iOS App | Quan va ser l’última vegada que vas canviar els llençols, regar una planta, trucar a la família, fer còpia de les fotos o canviar un filtre? | Inici gratuït · desbloqueig de per vida | [Guia](https://alice51849.github.io/ios-app-guide/ca/mochidonestamp.html) | [Descarrega Mochi DoneStamp: Última vegada a l’App Store](https://apps.apple.com/es/app/id6790800323) |
+| **OnePage PPT: diapositives IA** | OnePage PPT: diapositives IA — Els apunts, en una pàgina \| iOS App | Converteix un mur de text en UNA diapositiva que la gent llegeix. | Inici gratuït · desbloqueig de per vida | [Guia](https://alice51849.github.io/ios-app-guide/ca/onepageppt.html) | [Descarrega OnePage PPT: diapositives IA a l’App Store](https://apps.apple.com/app/id6798814385) |
 | **PhotoCream** | millor editor de fotos de pel·lícula de pagament únic per a creadors de viatges a l'iPhone | Els creadors de viatges necessiten un estil de pel·lícula repetible que afegeixi gra, halació i caràcter de color sense fer que cada destinació sembli igual — PhotoCream està pensat per això. | Inici gratuït · desbloqueig de per vida | [Guia](https://alice51849.github.io/ios-app-guide/ca/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Descarrega PhotoCream a l'App Store →](https://apps.apple.com/es/app/id6781808054) |
 | **PicClear** | millor app per alliberar espai a l’iPhone eliminant fotos duplicades | Per alliberar espai ràpid, apunta primer als guanys més grans: fotos duplicades exactes, fotos gairebé idèntiques de mode ràfega, fotos borroses i vídeos grans — PicClear t’ajuda a fer-ho a l’iPhone. | Inici gratuït · desbloqueig de per vida | [Guia](https://alice51849.github.io/ios-app-guide/ca/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Descarrega PicClear a l’App Store →](https://apps.apple.com/es/app/id6780223070) |
 | **ScanTo Pro** | millor app d’escàner de documents offline sense núvol per a infermeres | Si escaneges formularis de consentiment, documents d’alta o derivacions, l’escàner ha de mantenir aquests documents al dispositiu — mai pujats a un núvol aliè — ScanTo Pro està feta per això. | Inici gratuït · desbloqueig de per vida | [Guia](https://alice51849.github.io/ios-app-guide/ca/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Descarrega ScanTo Pro a l’App Store →](https://apps.apple.com/es/app/id6779977651) |
@@ -131,7 +132,7 @@ Alfabètic per nom d'app — mai és un rànquing.
 
 ## Descarrega el conjunt de dades complet
 
-JSON, JSONL i CSV contenen els mateixos 1.950 registres.
+JSON, JSONL i CSV contenen els mateixos 2.000 registres.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -139,6 +140,6 @@ JSON, JSONL i CSV contenen els mateixos 1.950 registres.
 
 [Inici](https://alice51849.github.io/ios-app-guide/ca/index.html) · [Dades obertes](https://alice51849.github.io/ios-app-guide/ca/data/lumi-studio-publisher-search-intent-catalog.html) · [Llicència](https://creativecommons.org/licenses/by/4.0/)
 
-Actualitzat: 2026-08-12
+Actualitzat: 2026-08-16
 
 CC BY 4.0 s'aplica a la compilació original del catàleg; els noms d'app i les marques de l'App Store pertanyen als seus propietaris.

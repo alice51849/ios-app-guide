@@ -2,7 +2,7 @@
 title: "bedste pasfoto-app til babyer og småbørn derhjemme"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/da/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,7 @@ Til en babys pasfoto må ingen andre være med på billedet, og baggrunden skal 
 - Foto & værktøj
 - Betalt download
 - Privat / på enheden
-- App Store · 39,00 kr
+- App Store · 49,00 kr
 
 [Hent Snapport i App Store →](https://apps.apple.com/dk/app/id6780575828)
 

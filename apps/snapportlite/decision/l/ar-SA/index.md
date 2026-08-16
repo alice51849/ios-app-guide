@@ -2,7 +2,7 @@
 title: "Snapport Lite — أنشئ صور الوثائق في المنزل | iOS App"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/ar-SA/index.html"
-modified: "2026-08-12"
+modified: "2026-08-16"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "AI Brief — מקבצים להקשר ברור | iOS App"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/he/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - פרטי / במכשיר
 - App Store · בחינם
 
-[הורידו את AI Brief מה-App Store](https://apps.apple.com/il/app/id6791658210)
+[הורידו את AI Brief מה-App Store](https://apps.apple.com/il/app/id6791658210?pt=118326163&ct=iag_data_he&mt=8)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/aibriefpack.html)
 

@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație simplă pentru planificarea unei călătorii pe iPhone"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/ro/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Dacă planifici o singură călătorie viitoare, o cronologie liniștită pentru
 - Început gratuit · deblocare pe viață
 - App Store · Gratuit
 
-[Obține TripBee Lite din App Store →](https://apps.apple.com/ro/app/id6791299610)
+[Obține TripBee Lite din App Store →](https://apps.apple.com/ro/app/id6791299610?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

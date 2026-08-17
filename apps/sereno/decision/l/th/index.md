@@ -2,7 +2,7 @@
 title: "แอปเสียงรบกวนขาวที่ดีที่สุดสำหรับช่วยให้นอนหลับโดยไม่ต้องสมัครสมาชิก"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/th/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ไม่มีโฆษณา
 - App Store · ฟรี
 
-[ดาวน์โหลด Sereno ใน App Store →](https://apps.apple.com/th/app/id6788236641)
+[ดาวน์โหลด Sereno ใน App Store →](https://apps.apple.com/th/app/id6788236641?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

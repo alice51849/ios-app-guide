@@ -2,7 +2,7 @@
 title: "ଶିଶୁମାନଙ୍କ ପାଇଁ ସର୍ବୋତ୍ତମ ଶିକ୍ଷାମୂଳକ ଖେଳ ଆପ୍, କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ, ଆଇଫୋନ୍"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/or-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
 - App Store · ମାଗଣା
 
-[App Store ରୁ Lumi Letters ପାଆନ୍ତୁ →](https://apps.apple.com/in/app/id6778748533)
+[App Store ରୁ Lumi Letters ପାଆନ୍ତୁ →](https://apps.apple.com/in/app/id6778748533?pt=118326163&ct=iag_data_or_in&mt=8)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

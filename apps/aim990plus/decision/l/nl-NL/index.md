@@ -2,7 +2,7 @@
 title: "Aim990 Plus — Engels examen onder druk | iOS App"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/nl-NL/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Aim990 Plus is een complete trainingsomgeving voor volwassenen die Engelse luist
 - Betaalde aanschaf
 - App Store · € 6,99
 
-[Download Aim990 Plus in de App Store](https://apps.apple.com/nl/app/id6792483140)
+[Download Aim990 Plus in de App Store](https://apps.apple.com/nl/app/id6792483140?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/aim990plus.html)
 

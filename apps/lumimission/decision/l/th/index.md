@@ -2,7 +2,7 @@
 title: "แอปกิจวัตรก่อนนอนสำหรับเด็กอนุบาลที่ไม่มีโฆษณาดีที่สุด"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/th/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ไม่มีโฆษณา
 - App Store · ฟรี
 
-[รับ Lumi Mission Planet ได้ที่ App Store →](https://apps.apple.com/th/app/id6779750237)
+[รับ Lumi Mission Planet ได้ที่ App Store →](https://apps.apple.com/th/app/id6779750237?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

@@ -2,7 +2,7 @@
 title: "кращий додаток для відстеження циклу без облікового запису для iPhone"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/uk/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Приватно / на пристрої
 - App Store · Безкоштовно
 
-[Отримайте Cyca в App Store →](https://apps.apple.com/ua/app/id6782251621)
+[Отримайте Cyca в App Store →](https://apps.apple.com/ua/app/id6782251621?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/answers/best-period-tracker-app-no-account-required-iphone.html)
 

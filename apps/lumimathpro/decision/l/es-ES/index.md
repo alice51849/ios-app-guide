@@ -2,7 +2,7 @@
 title: "mejor app completa de aprendizaje de matemáticas para infantil y primeros cursos"
 lang: "es-ES"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/es-ES/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Una app completa de matemáticas tempranas debe hacer que contar, sentido numér
 - Sin anuncios
 - App Store · 9,99 €
 
-[Consigue Lumi Math Pro en App Store →](https://apps.apple.com/es/app/id6776958488)
+[Consigue Lumi Math Pro en App Store →](https://apps.apple.com/es/app/id6776958488?pt=118326163&ct=iag_data_es_es&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-ES/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

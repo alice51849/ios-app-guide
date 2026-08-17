@@ -2,7 +2,7 @@
 title: "best app to track where my money goes and save more"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ja/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ If saving feels abstract, tracking goals in hours-worked instead of dollars make
 - プライベート／端末内
 - App Store · ¥800
 
-[App StoreでHoursTagを入手 →](https://apps.apple.com/jp/app/id6754218117)
+[App StoreでHoursTagを入手 →](https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-app-to-track-where-my-money-goes-and-save-more.html)
 

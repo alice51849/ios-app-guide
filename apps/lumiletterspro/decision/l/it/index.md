@@ -2,7 +2,7 @@
 title: "miglior app fonetica completa per preparazione scuola materna a casa"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/it/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Le famiglie che preparano la scuola materna cercano un percorso completo di lett
 - Nessuna pubblicità
 - App Store · 9,99 €
 
-[Scarica Lumi Letters Pro su App Store →](https://apps.apple.com/it/app/id6778491147)
+[Scarica Lumi Letters Pro su App Store →](https://apps.apple.com/it/app/id6778491147?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

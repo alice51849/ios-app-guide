@@ -2,7 +2,7 @@
 title: "aplikasi fonik lengkap terbaik untuk persediaan tadika pendidikan di rumah"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/ms/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Keluarga yang bersedia untuk tadika perlukan laluan membaca awal lengkap yang me
 - Tiada iklan
 - App Store · RM39.90
 
-[Dapatkan Lumi Letters Pro di App Store →](https://apps.apple.com/my/app/id6778491147)
+[Dapatkan Lumi Letters Pro di App Store →](https://apps.apple.com/my/app/id6778491147?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

@@ -2,7 +2,7 @@
 title: "Aim990 Plus — दबाव में तेज़ और सटीक जवाब | iOS App"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/hi/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Aim990 Plus वयस्क शिक्षार्थियों के ल�
 - भुगतान किया गया डाउनलोड
 - App Store · ₹ 599
 
-[App Store पर Aim990 Plus पाएँ](https://apps.apple.com/in/app/id6792483140)
+[App Store पर Aim990 Plus पाएँ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_hi&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/aim990plus.html)
 

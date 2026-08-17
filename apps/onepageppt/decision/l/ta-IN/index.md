@@ -2,7 +2,7 @@
 title: "OnePage PPT: ஸ்லைடு மேக்கர் — குறிப்புகளே விளக்கக்காட்சி | iOS App"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/ta-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - தயாரிப்பு திறன்
 - இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்
+- App Store · இலவசம்
 
-[App Store-இல் OnePage PPT: ஸ்லைடு மேக்கர்-ஐப் பெறுங்கள்](https://apps.apple.com/app/id6798814385)
+[App Store-இல் OnePage PPT: ஸ்லைடு மேக்கர்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_data_ta_in&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/onepageppt.html)
 

@@ -2,7 +2,7 @@
 title: "paras opettava peli lapsille ilman mainoksia iPhonella"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/fi/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Pienelle lapselle ratkaisevaa ovat mainokset ja tietojen keruu — oppimissovell
 - Ei mainoksia
 - App Store · Ilmainen
 
-[Hanki Lumi Letters App Storesta →](https://apps.apple.com/fi/app/id6778748533)
+[Hanki Lumi Letters App Storesta →](https://apps.apple.com/fi/app/id6778748533?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

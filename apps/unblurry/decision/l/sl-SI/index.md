@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za popravljanje zamegljenih fotografij otrok na iPhonu"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/sl-SI/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Otroci se nikoli ne držijo mirno, zato so mehko fokusirane in tresoče fotograf
 - Zasebno / na napravi
 - App Store · Brezplačno
 
-[Prenesite Unblurry iz App Store →](https://apps.apple.com/si/app/id6782275018)
+[Prenesite Unblurry iz App Store →](https://apps.apple.com/si/app/id6782275018?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

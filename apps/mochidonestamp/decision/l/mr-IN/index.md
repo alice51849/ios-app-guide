@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: शेवटची वेळ — कधी केले ते लक्षात ठेवा | iOS App"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/mr-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक
 - App Store · मोफत
 
-[App Store वरून Mochi DoneStamp: शेवटची वेळ मिळवा](https://apps.apple.com/in/app/id6790800323)
+[App Store वरून Mochi DoneStamp: शेवटची वेळ मिळवा](https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=iag_data_mr_in&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/mochidonestamp.html)
 

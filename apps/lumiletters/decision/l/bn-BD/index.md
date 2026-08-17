@@ -2,7 +2,7 @@
 title: "বিজ্ঞাপন মুক্ত শিশুদের জন্য সেরা শিক্ষামূলক গেম অ্যাপ আইফোন"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/bn-BD/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - বিনামূল্যে শুরু · আজীবন আনলক
 - কোনও বিজ্ঞাপন নেই
 
-[App Store থেকে Lumi Letters পান →](https://apps.apple.com/app/id6778748533)
+[App Store থেকে Lumi Letters পান →](https://apps.apple.com/app/id6778748533?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

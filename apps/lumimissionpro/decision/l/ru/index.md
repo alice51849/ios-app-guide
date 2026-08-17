@@ -2,7 +2,7 @@
 title: "лучшее полное приложение для утренней и вечерней рутины для детей"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/ru/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Без рекламы
 - App Store · 499,00 ₽
 
-[Скачать Lumi Mission Planet Pro в App Store →](https://apps.apple.com/ru/app/id6779745474)
+[Скачать Lumi Mission Planet Pro в App Store →](https://apps.apple.com/ru/app/id6779745474?pt=118326163&ct=iag_data_ru&mt=8)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

@@ -2,7 +2,7 @@
 title: "HoursTag Lite — Spoznajte svoj hranol hodnoty | iOS App"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/sk/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,14 @@ HoursTag Lite - Pozrite sa na skutočnú cenu vecí Každý nákup stojí hodiny
 
 - Peniaze a cestovanie
 - Zadarmo na začiatok · doživotné odomknutie
+- Bez účtu
+- Bez sledovania
+- Súkromné / v zariadení
+- Widget
+- Apple Watch
 - App Store · Zadarmo
 
-[Stiahnuť HoursTag Lite v App Store](https://apps.apple.com/sk/app/id6794039979)
+[Stiahnuť HoursTag Lite v App Store](https://apps.apple.com/sk/app/id6794039979?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/hourstaglite.html)
 

@@ -2,7 +2,7 @@
 title: "G+Money Lite — Budget, uitgaven & valuta | iOS App"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/nl-NL/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,9 +16,14 @@ G+Money Lite — Slimme reisvaluta- & uitgaventracker Reisgeld, simpel gemaakt L
 - Geld & reizen
 - Gratis te starten · levenslange ontgrendeling
 - Offline
+- Geen account
+- Geen tracking
+- Privé / op apparaat
+- Widget
+- Apple Watch
 - App Store · Gratis
 
-[Download G+Money Lite in de App Store](https://apps.apple.com/nl/app/id6793436548)
+[Download G+Money Lite in de App Store](https://apps.apple.com/nl/app/id6793436548?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/gmoneylite.html)
 

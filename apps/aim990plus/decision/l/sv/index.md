@@ -2,7 +2,7 @@
 title: "Aim990 Plus — Engelska prov under press | iOS App"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/sv/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Aim990 Plus är en komplett träningsmiljö för vuxna som vill bli säkrare på
 - Betald nedladdning
 - App Store · 79,00 kr
 
-[Hämta Aim990 Plus i App Store](https://apps.apple.com/se/app/id6792483140)
+[Hämta Aim990 Plus i App Store](https://apps.apple.com/se/app/id6792483140?pt=118326163&ct=iag_data_sv&mt=8)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/aim990plus.html)
 

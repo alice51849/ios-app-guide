@@ -2,7 +2,7 @@
 title: "aplikasi terbaik untuk memperbaiki foto anak yang buram di iPhone"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/id/unblurry.html"
-modified: "2026-08-07"
+modified: "2026-08-17"
 video_url: "https://files.catbox.moe/ebnxj0.mp4"
 duration: "PT16S"
 app_store_id: "6782275018"
@@ -16,7 +16,7 @@ Anak-anak tidak pernah diam, jadi foto dengan fokus lembut dan goyangan kamera t
 
 [Tonton video](https://files.catbox.moe/ebnxj0.mp4)
 
-[Dapatkan Unblurry di App Store →](https://apps.apple.com/id/app/id6782275018)
+[Dapatkan Unblurry di App Store →](https://apps.apple.com/id/app/id6782275018?pt=118326163&ct=iag_video_id&mt=8)
 
 [Buka panduan aplikasi](https://alice51849.github.io/ios-app-guide/id/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

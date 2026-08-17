@@ -2,7 +2,7 @@
 title: "HoursTag Lite — Γνωρίστε το πρίσμα αξίας σας | iOS App"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/el/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,14 @@ HoursTag Lite - Δείτε την πραγματική τιμή των πραγ�
 
 - Χρήματα & ταξίδια
 - Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής
+- Χωρίς λογαριασμό
+- Χωρίς παρακολούθηση
+- Ιδιωτικό / στη συσκευή
+- Γραφικό στοιχείο
+- Apple Watch
 - App Store · Δωρεάν
 
-[Αποκτήστε το HoursTag Lite από το App Store](https://apps.apple.com/gr/app/id6794039979)
+[Αποκτήστε το HoursTag Lite από το App Store](https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=iag_data_el&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/hourstaglite.html)
 

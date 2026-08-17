@@ -2,7 +2,7 @@
 title: "OnePage PPT: Slaid AI — Nota jadi satu halaman | iOS App"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/ms/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ Tukar timbunan teks kepada satu halaman yang benar-benar dibaca. OnePage PPT mem
 
 - Produktiviti
 - Percuma untuk bermula · buka kunci kekal
+- App Store · Percuma
 
-[Dapatkan OnePage PPT: Slaid AI di App Store](https://apps.apple.com/app/id6798814385)
+[Dapatkan OnePage PPT: Slaid AI di App Store](https://apps.apple.com/my/app/id6798814385?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/onepageppt.html)
 

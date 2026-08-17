@@ -27,7 +27,7 @@
   "identifier": "LUMI-ZHUYIN-DCAT3-2026",
   "version": "1.5.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-08-02T09:37:24Z",
+  "dateModified": "2026-08-17T00:00:00Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -97,7 +97,7 @@
       "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ro-crate",
       "name": "Bopomofo RO-Crate 1.3 research object",
       "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
-      "dateModified": "2026-07-31"
+      "dateModified": "2026-08-17"
     },
     {
       "@type": "Dataset",
@@ -162,8 +162,8 @@
       "name": "Complete ZIP bundle",
       "encodingFormat": "application/zip",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip",
-      "contentSize": "28827 bytes",
-      "sha256": "e03e5fb8e37ec90a21273d32675c081a38fc2126e847e2b55576569be056db40"
+      "contentSize": "28807 bytes",
+      "sha256": "18cd17923b86fd0e3b52b9e1dcfebe515f234ce047b7c8e7d4109c84d258039f"
     },
     {
       "@type": "DataDownload",
@@ -171,7 +171,7 @@
       "encodingFormat": "application/ld+json",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld",
       "contentSize": "218434 bytes",
-      "sha256": "4738719df8b76b9a9761a6ad10a96f76e88d078f76d37dc2b5f7afbdb64f4d16"
+      "sha256": "427bfab32310740902b166d6e12cd183a0541291d80adfa20a95a55d9ea032b7"
     },
     {
       "@type": "DataDownload",
@@ -179,7 +179,7 @@
       "encodingFormat": "text/turtle",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl",
       "contentSize": "148253 bytes",
-      "sha256": "17d3b58b4ccc0dc5024eb8d59e155e0984294264a1efab7f324b81d166500d77"
+      "sha256": "79b928dfb38d24c5d9d1ac3b602213a8bfa49b903cfc1e4b677ffa90c1058665"
     }
   ]
 }

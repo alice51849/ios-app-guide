@@ -2,7 +2,7 @@
 title: "best complete zhuyin app for bilingual children"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/en-GB/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Bilingual children learning Zhuyin at home need a complete path through sounds, 
 - No adverts
 - App Store · £8.99
 
-[Get Lumi Bopomofo Pro on the App Store →](https://apps.apple.com/gb/app/id6775773117)
+[Get Lumi Bopomofo Pro on the App Store →](https://apps.apple.com/gb/app/id6775773117?pt=118326163&ct=iag_data_en_gb&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/answers/best-complete-zhuyin-app-for-bilingual-children.html)
 

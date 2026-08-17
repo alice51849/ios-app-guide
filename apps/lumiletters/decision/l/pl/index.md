@@ -2,7 +2,7 @@
 title: "najlepsza edukacyjna gra dla dzieci bez reklam na iPhonie"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/pl/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Dla małego dziecka kluczowe są brak reklam i brak zbierania danych — aplikac
 - Bez reklam
 - App Store · Bezpłatnie
 
-[Pobierz Lumi Letters z App Store →](https://apps.apple.com/pl/app/id6778748533)
+[Pobierz Lumi Letters z App Store →](https://apps.apple.com/pl/app/id6778748533?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

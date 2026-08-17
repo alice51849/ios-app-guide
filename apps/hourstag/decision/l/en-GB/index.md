@@ -2,7 +2,7 @@
 title: "HoursTag: Hours to Buy — Budget, Spending & Savings | iOS App"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/en-GB/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ What does it really cost? Not just in pounds, but in hours of your life.
 - Private / on-device
 - App Store · £4.99
 
-[Get HoursTag: Hours to Buy on the App Store](https://apps.apple.com/gb/app/id6754218117)
+[Get HoursTag: Hours to Buy on the App Store](https://apps.apple.com/gb/app/id6754218117?pt=118326163&ct=iag_data_en_gb&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/hourstag.html)
 

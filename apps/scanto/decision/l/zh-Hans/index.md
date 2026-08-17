@@ -2,7 +2,7 @@
 title: "护士用最佳离线文档扫描应用，无云端"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/zh-Hans/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 私密 / 设备本地
 - App Store · 免费
 
-[在 App Store 获取 ScanTo Pro →](https://apps.apple.com/cn/app/id6779977651)
+[在 App Store 获取 ScanTo Pro →](https://apps.apple.com/cn/app/id6779977651?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

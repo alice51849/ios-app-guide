@@ -2,7 +2,7 @@
 title: "Aile gezilerinde çocuklar için en iyi seyahat aktivite uygulaması"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/tr/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Genç çocuklarla seyahat eden ebeveynler, paketleme, bekleme ve yeni bir yeri k
 - Reklam yok
 - App Store · Ücretsiz
 
-[Lumi Trip Planet’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6787193643)
+[Lumi Trip Planet’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6787193643?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

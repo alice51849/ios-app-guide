@@ -2,7 +2,7 @@
 title: "بائی لنگوئل بچوں کے لیے بہترین مکمل ژوئین ایپ"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/ur-PK/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - کوئی اشتہار نہیں
 - App Store · Rs 2,500.00
 
-[Lumi Bopomofo Pro App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6775773117)
+[Lumi Bopomofo Pro App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6775773117?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-complete-zhuyin-app-for-bilingual-children.html)
 

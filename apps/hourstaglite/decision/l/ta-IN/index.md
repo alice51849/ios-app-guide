@@ -2,7 +2,7 @@
 title: "HoursTag Lite — மதிப்புப் பட்டகம் | iOS App"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ta-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,14 @@ HoursTag Lite - விஷயங்களின் உண்மையான வ�
 
 - பணம் & பயணம்
 - இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்
+- கணக்கு இல்லை
+- பின்தொடர்வு இல்லை
+- தனியுரிமை / சாதனத்தில்
+- விட்ஜெட்
+- Apple Watch
 - App Store · இலவசம்
 
-[App Store-இல் HoursTag Lite-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6794039979)
+[App Store-இல் HoursTag Lite-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_ta_in&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/hourstaglite.html)
 

@@ -2,7 +2,7 @@
 title: "适合通勤族和Apple Watch用户的最佳词汇App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/zh-Hans/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,7 +22,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ¥58.00
 
-[在App Store获取Wordmate：学习44种语言 →](https://apps.apple.com/cn/app/id6789917808)
+[在App Store获取Wordmate：学习44种语言 →](https://apps.apple.com/cn/app/id6789917808?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

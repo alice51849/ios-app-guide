@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na blokování sociálních sítí při studiu pro iPhone"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/cs/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ Během zkoušek není vůle nástrojem — je to tvrdá časová blokace — Loc
 - Soukromé / v zařízení
 - App Store · Zdarma
 
-[Stáhněte LockHour Pro v App Store →](https://apps.apple.com/cz/app/id6780107485)
+[Stáhněte LockHour Pro v App Store →](https://apps.apple.com/cz/app/id6780107485?pt=118326163&ct=iag_data_cs&mt=8)
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

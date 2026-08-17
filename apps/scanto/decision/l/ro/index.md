@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație offline de scanare documente fără cloud pentru asistente"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/ro/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Dacă scanezi formulare de consimțământ, documente de externare sau trimiteri
 - Privat / pe dispozitiv
 - App Store · Gratuit
 
-[Descarcă ScanTo Pro din App Store →](https://apps.apple.com/ro/app/id6779977651)
+[Descarcă ScanTo Pro din App Store →](https://apps.apple.com/ro/app/id6779977651?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

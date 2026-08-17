@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "en-AU",
-  "dateModified": "2026-08-16",
-  "content_digest": "ca9003f82b6334546cf20f8b860d7b7e8b87554b960a4e240d4b0fb52b3e3dcf",
-  "generation_digest": "95421419b8278dc0ce219aa681af0aa80363593e2af4aa7ba238e0f7395ea4d8",
+  "dateModified": "2026-08-17",
+  "content_digest": "7bf9a1c1c9d8e2e85c4f23e27e95d84ef7cc221c3fec20ef6ea999c451133f03",
+  "generation_digest": "977f7d6bc00a2e88bb25df2321e667f9647bf876b7c6aea1976e45e43a1328a2",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -29,7 +29,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -41,7 +41,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -51,7 +51,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6792850916",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
-      "app_store_url": "https://apps.apple.com/au/app/id6792850916",
+      "app_store_url": "https://apps.apple.com/au/app/id6792850916?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Mask My File on the App Store",
       "storefront_facts": {
         "price": "0",
@@ -96,7 +96,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6790467886",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
-      "app_store_url": "https://apps.apple.com/au/app/id6790467886",
+      "app_store_url": "https://apps.apple.com/au/app/id6790467886?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get WiFi Aid on the App Store",
       "storefront_facts": {
         "price": "9.99",
@@ -124,7 +124,7 @@
       "category": "lifestyle",
       "category_label": "Lifestyle",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -132,7 +132,7 @@
       "device_labels": [],
       "badge_labels": [
         "Lifestyle",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/mochidonestamp.html",
@@ -141,7 +141,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6790800323",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
-      "app_store_url": "https://apps.apple.com/au/app/id6790800323",
+      "app_store_url": "https://apps.apple.com/au/app/id6790800323?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Mochi DoneStamp: Last Time on the App Store",
       "storefront_facts": {
         "price": "0",
@@ -169,7 +169,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -181,7 +181,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -191,7 +191,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/au/app/id6791658210",
+      "app_store_url": "https://apps.apple.com/au/app/id6791658210?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get AI Brief on the App Store",
       "storefront_facts": {
         "price": "0",
@@ -219,7 +219,7 @@
       "category": "education",
       "category_label": "Education",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -227,7 +227,7 @@
       "device_labels": [],
       "badge_labels": [
         "Education",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -236,7 +236,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6784974530",
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
-      "app_store_url": "https://apps.apple.com/au/app/id6784974530",
+      "app_store_url": "https://apps.apple.com/au/app/id6784974530?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Aim990 on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -281,7 +281,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6792483140",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
-      "app_store_url": "https://apps.apple.com/au/app/id6792483140",
+      "app_store_url": "https://apps.apple.com/au/app/id6792483140?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Aim990 Plus on the App Store",
       "storefront_facts": {
         "price": "9.99",
@@ -309,7 +309,7 @@
       "category": "utility",
       "category_label": "More",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -321,7 +321,7 @@
       ],
       "badge_labels": [
         "More",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "Widget",
         "App Store · Free"
       ],
@@ -331,7 +331,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/au/app/id6794178671",
+      "app_store_url": "https://apps.apple.com/au/app/id6794178671?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get CalDaily: Calculator & Themes on the App Store",
       "storefront_facts": {
         "price": "0",
@@ -359,7 +359,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -367,7 +367,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -376,7 +376,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6781337213",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
-      "app_store_url": "https://apps.apple.com/au/app/id6781337213",
+      "app_store_url": "https://apps.apple.com/au/app/id6781337213?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get CV Desk on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -404,7 +404,7 @@
       "category": "health",
       "category_label": "Health",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -416,7 +416,7 @@
       "device_labels": [],
       "badge_labels": [
         "Health",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -426,7 +426,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6782251621",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
-      "app_store_url": "https://apps.apple.com/au/app/id6782251621",
+      "app_store_url": "https://apps.apple.com/au/app/id6782251621?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Cyca on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -476,7 +476,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6790418321",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
-      "app_store_url": "https://apps.apple.com/au/app/id6790418321",
+      "app_store_url": "https://apps.apple.com/au/app/id6790418321?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get DailyMate on the App Store →",
       "storefront_facts": {
         "price": "19.99",
@@ -504,7 +504,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -512,7 +512,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/dailymatelite.html",
@@ -521,7 +521,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6794725568",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
-      "app_store_url": "https://apps.apple.com/au/app/id6794725568",
+      "app_store_url": "https://apps.apple.com/au/app/id6794725568?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get DailyMate Lite: Speak Today on the App Store",
       "storefront_facts": {
         "price": "0",
@@ -574,7 +574,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6755782939",
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
-      "app_store_url": "https://apps.apple.com/au/app/id6755782939",
+      "app_store_url": "https://apps.apple.com/au/app/id6755782939?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get G+Money on the App Store →",
       "storefront_facts": {
         "price": "7.99",
@@ -602,20 +602,37 @@
       "category": "finance",
       "category_label": "Money & travel",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
-        "offline"
+        "offline",
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
       ],
       "privacy_labels": [
-        "Offline"
+        "Offline",
+        "No account",
+        "No tracking",
+        "Private / on-device"
       ],
-      "device_surfaces": [],
-      "device_labels": [],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Money & travel",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "Offline",
+        "No account",
+        "No tracking",
+        "Private / on-device",
+        "Widget",
+        "Apple Watch",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/gmoneylite.html",
@@ -624,7 +641,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6793436548",
       "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
-      "app_store_url": "https://apps.apple.com/au/app/id6793436548",
+      "app_store_url": "https://apps.apple.com/au/app/id6793436548?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get G+Money Lite on the App Store",
       "storefront_facts": {
         "price": "0",
@@ -652,15 +669,34 @@
       "category": "finance",
       "category_label": "Money & travel",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
-      "privacy_facts": [],
-      "privacy_labels": [],
-      "device_surfaces": [],
-      "device_labels": [],
+      "privacy_facts": [
+        "no_account",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "No account",
+        "No tracking",
+        "Private / on-device"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
       "badge_labels": [
         "Money & travel",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
+        "No account",
+        "No tracking",
+        "Private / on-device",
+        "Widget",
+        "Apple Watch",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/hourstaglite.html",
@@ -669,7 +705,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/au/app/id6794039979",
+      "app_store_url": "https://apps.apple.com/au/app/id6794039979?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get HoursTag Lite on the App Store",
       "storefront_facts": {
         "price": "0",
@@ -722,7 +758,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/au/app/id6754218117",
+      "app_store_url": "https://apps.apple.com/au/app/id6754218117?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get HoursTag: Hours to Buy on the App Store",
       "storefront_facts": {
         "price": "7.99",
@@ -750,7 +786,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -764,7 +800,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "No ads",
         "Private / on-device",
         "App Store · Free"
@@ -775,7 +811,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6780107485",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
-      "app_store_url": "https://apps.apple.com/au/app/id6780107485",
+      "app_store_url": "https://apps.apple.com/au/app/id6780107485?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get LockHour Pro on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -803,7 +839,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -815,7 +851,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -825,7 +861,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6773017109",
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
-      "app_store_url": "https://apps.apple.com/au/app/id6773017109",
+      "app_store_url": "https://apps.apple.com/au/app/id6773017109?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Lumi Bopomofo on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -875,7 +911,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6775773117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
-      "app_store_url": "https://apps.apple.com/au/app/id6775773117",
+      "app_store_url": "https://apps.apple.com/au/app/id6775773117?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Lumi Bopomofo Pro on the App Store →",
       "storefront_facts": {
         "price": "14.99",
@@ -903,7 +939,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -915,7 +951,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -925,7 +961,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6778748533",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
-      "app_store_url": "https://apps.apple.com/au/app/id6778748533",
+      "app_store_url": "https://apps.apple.com/au/app/id6778748533?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Lumi Letters on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -975,7 +1011,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6778491147",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
-      "app_store_url": "https://apps.apple.com/au/app/id6778491147",
+      "app_store_url": "https://apps.apple.com/au/app/id6778491147?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Lumi Letters Pro on the App Store →",
       "storefront_facts": {
         "price": "14.99",
@@ -1003,7 +1039,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1015,7 +1051,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -1025,7 +1061,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6778269699",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
-      "app_store_url": "https://apps.apple.com/au/app/id6778269699",
+      "app_store_url": "https://apps.apple.com/au/app/id6778269699?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Lumi Math Planet on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1075,7 +1111,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6776958488",
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
-      "app_store_url": "https://apps.apple.com/au/app/id6776958488",
+      "app_store_url": "https://apps.apple.com/au/app/id6776958488?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Lumi Math Pro on the App Store →",
       "storefront_facts": {
         "price": "14.99",
@@ -1103,7 +1139,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1115,7 +1151,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -1125,7 +1161,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6779750237",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
-      "app_store_url": "https://apps.apple.com/au/app/id6779750237",
+      "app_store_url": "https://apps.apple.com/au/app/id6779750237?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Lumi Mission Planet on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1175,7 +1211,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6779745474",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
-      "app_store_url": "https://apps.apple.com/au/app/id6779745474",
+      "app_store_url": "https://apps.apple.com/au/app/id6779745474?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Lumi Mission Planet Pro on the App Store →",
       "storefront_facts": {
         "price": "9.99",
@@ -1203,7 +1239,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1215,7 +1251,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "No ads",
         "App Store · Free"
       ],
@@ -1225,7 +1261,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6787193643",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "app_store_url": "https://apps.apple.com/au/app/id6787193643",
+      "app_store_url": "https://apps.apple.com/au/app/id6787193643?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Lumi Trip Planet on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1253,7 +1289,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -1267,7 +1303,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "No ads",
         "No tracking",
         "App Store · Free"
@@ -1278,7 +1314,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6779552704",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
-      "app_store_url": "https://apps.apple.com/au/app/id6779552704",
+      "app_store_url": "https://apps.apple.com/au/app/id6779552704?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Lumi Weather on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1306,7 +1342,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1318,7 +1354,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "No ads",
         "App Store · Free",
         "★ 3.0/5 · 1"
@@ -1329,7 +1365,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6785004775",
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
-      "app_store_url": "https://apps.apple.com/au/app/id6785004775",
+      "app_store_url": "https://apps.apple.com/au/app/id6785004775?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Mochi on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1359,7 +1395,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1367,7 +1403,8 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · one-time unlock"
+        "Free to start · lifetime unlock",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/onepageppt.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/en-AU/index.html",
@@ -1375,9 +1412,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6798814385",
       "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
-      "app_store_url": "https://apps.apple.com/app/id6798814385",
+      "app_store_url": "https://apps.apple.com/au/app/id6798814385?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get OnePage PPT: AI Slide Maker on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "AUD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "app that turns meeting notes into one presentation slide",
@@ -1399,7 +1440,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1407,7 +1448,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -1416,7 +1457,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6781808054",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
-      "app_store_url": "https://apps.apple.com/au/app/id6781808054",
+      "app_store_url": "https://apps.apple.com/au/app/id6781808054?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get PhotoCream on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1444,7 +1485,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1456,7 +1497,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -1466,7 +1507,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6780223070",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
-      "app_store_url": "https://apps.apple.com/au/app/id6780223070",
+      "app_store_url": "https://apps.apple.com/au/app/id6780223070?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get PicClear on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1494,7 +1535,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1506,7 +1547,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -1516,7 +1557,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6779977651",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
-      "app_store_url": "https://apps.apple.com/au/app/id6779977651",
+      "app_store_url": "https://apps.apple.com/au/app/id6779977651?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get ScanTo Pro on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1544,7 +1585,7 @@
       "category": "sleep-sound",
       "category_label": "Sleep & focus",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -1558,7 +1599,7 @@
       "device_labels": [],
       "badge_labels": [
         "Sleep & focus",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "Offline",
         "No ads",
         "App Store · Free"
@@ -1569,7 +1610,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6788236641",
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
-      "app_store_url": "https://apps.apple.com/au/app/id6788236641",
+      "app_store_url": "https://apps.apple.com/au/app/id6788236641?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Sereno on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1619,7 +1660,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6780575828",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
-      "app_store_url": "https://apps.apple.com/au/app/id6780575828",
+      "app_store_url": "https://apps.apple.com/au/app/id6780575828?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Snapport on the App Store →",
       "storefront_facts": {
         "price": "9.99",
@@ -1647,7 +1688,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -1659,7 +1700,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "Offline",
         "App Store · Free"
       ],
@@ -1669,7 +1710,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6792856304",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
-      "app_store_url": "https://apps.apple.com/au/app/id6792856304",
+      "app_store_url": "https://apps.apple.com/au/app/id6792856304?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Snapport Lite on the App Store",
       "storefront_facts": {
         "price": "0",
@@ -1697,7 +1738,7 @@
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1709,7 +1750,7 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -1719,7 +1760,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6782139553",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
-      "app_store_url": "https://apps.apple.com/au/app/id6782139553",
+      "app_store_url": "https://apps.apple.com/au/app/id6782139553?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Sono Note on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1747,7 +1788,7 @@
       "category": "travel",
       "category_label": "Travel",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1755,7 +1796,7 @@
       "device_labels": [],
       "badge_labels": [
         "Travel",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -1764,7 +1805,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6791299610",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
-      "app_store_url": "https://apps.apple.com/au/app/id6791299610",
+      "app_store_url": "https://apps.apple.com/au/app/id6791299610?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get TripBee Lite on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1820,7 +1861,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6787754435",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
-      "app_store_url": "https://apps.apple.com/au/app/id6787754435",
+      "app_store_url": "https://apps.apple.com/au/app/id6787754435?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get TripBee Pro: Trip Planner on the App Store →",
       "storefront_facts": {
         "price": "9.99",
@@ -1848,7 +1889,7 @@
       "category": "photo-utility",
       "category_label": "Photo & utility",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1860,7 +1901,7 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -1870,7 +1911,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6782275018",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
-      "app_store_url": "https://apps.apple.com/au/app/id6782275018",
+      "app_store_url": "https://apps.apple.com/au/app/id6782275018?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Unblurry on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1898,7 +1939,7 @@
       "category": "kids",
       "category_label": "Kids & learning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Free to start · one-time unlock",
+      "purchase_label": "Free to start · lifetime unlock",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -1910,7 +1951,7 @@
       "device_labels": [],
       "badge_labels": [
         "Kids & learning",
-        "Free to start · one-time unlock",
+        "Free to start · lifetime unlock",
         "Offline",
         "App Store · Free"
       ],
@@ -1920,7 +1961,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/au/app/id6797601720",
+      "app_store_url": "https://apps.apple.com/au/app/id6797601720?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Wordmate Lite: Learn Words on the App Store",
       "storefront_facts": {
         "price": "0",
@@ -1984,7 +2025,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6789917808",
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
-      "app_store_url": "https://apps.apple.com/au/app/id6789917808",
+      "app_store_url": "https://apps.apple.com/au/app/id6789917808?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get Wordmate: Learn 44 Languages on the App Store →",
       "storefront_facts": {
         "price": "14.99",

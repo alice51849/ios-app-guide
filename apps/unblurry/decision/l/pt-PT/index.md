@@ -2,7 +2,7 @@
 title: "melhor app para corrigir fotos desfocadas de crianças no iPhone"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/pt-PT/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ As crianças nunca ficam quietas, por isso fotos com foco suave e tremor da câm
 - Privado / no dispositivo
 - App Store · Grátis
 
-[Obtenha o Unblurry na App Store →](https://apps.apple.com/pt/app/id6782275018)
+[Obtenha o Unblurry na App Store →](https://apps.apple.com/pt/app/id6782275018?pt=118326163&ct=iag_data_pt_pt&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

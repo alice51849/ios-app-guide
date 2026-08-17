@@ -2,7 +2,7 @@
 title: "HoursTag Lite — Увидьте настоящую цену вещей | iOS App"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ru/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,9 +15,14 @@ HoursTag Lite - Увидьте настоящую цену вещей Кажда
 
 - Финансы и путешествия
 - Бесплатно начать · разблокировка за одну покупку
+- Без учётной записи
+- Без отслеживания
+- Лично / на устройстве
+- Виджет
+- Apple Watch
 - App Store · Бесплатно
 
-[Установить HoursTag Lite в App Store](https://apps.apple.com/ru/app/id6794039979)
+[Установить HoursTag Lite в App Store](https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=iag_data_ru&mt=8)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/hourstaglite.html)
 

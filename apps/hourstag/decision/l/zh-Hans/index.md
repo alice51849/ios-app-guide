@@ -2,7 +2,7 @@
 title: "HoursTag：价格换工时 — 预算、记账、省钱与储蓄 | iOS App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/zh-Hans/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - 私密 / 设备本地
 - App Store · ¥38.00
 
-[在 App Store 获取 HoursTag：价格换工时](https://apps.apple.com/cn/app/id6754218117)
+[在 App Store 获取 HoursTag：价格换工时](https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/hourstag.html)
 

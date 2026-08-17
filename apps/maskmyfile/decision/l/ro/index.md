@@ -2,7 +2,7 @@
 title: "Mask My File — Ascunde datele private | iOS App"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/ro/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Distribuie în siguranță fără să pierzi contextul util. Mask My File găse�
 - Privat / pe dispozitiv
 - App Store · Gratuit
 
-[Descarcă Mask My File din App Store](https://apps.apple.com/ro/app/id6792850916)
+[Descarcă Mask My File din App Store](https://apps.apple.com/ro/app/id6792850916?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/maskmyfile.html)
 

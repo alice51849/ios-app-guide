@@ -2,7 +2,7 @@
 title: "iPhone ରେ ସଭା ସାରାଂଶ କରୁଥିବା ସର୍ବୋତ୍ତମ ଭଏସ୍ ନୋଟ୍ ଆପ୍"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/or-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
 
-[App Store ରୁ Sono Note ଡାଉନଲୋଡ୍ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6782139553)
+[App Store ରୁ Sono Note ଡାଉନଲୋଡ୍ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=iag_data_or_in&mt=8)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

@@ -2,7 +2,7 @@
 title: "найкраща математична гра для дітей для розвитку логіки на iPhone"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/uk/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Без реклами
 - App Store · Безкоштовно
 
-[Отримайте Lumi Math Planet в App Store →](https://apps.apple.com/ua/app/id6778269699)
+[Отримайте Lumi Math Planet в App Store →](https://apps.apple.com/ua/app/id6778269699?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

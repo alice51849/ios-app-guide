@@ -2,7 +2,7 @@
 title: "best app to track where my money goes and save more"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/tr/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ If saving feels abstract, tracking goals in hours-worked instead of dollars make
 - Gizli / cihazda
 - App Store · ₺249,99
 
-[Get HoursTag on the App Store →](https://apps.apple.com/tr/app/id6754218117)
+[Get HoursTag on the App Store →](https://apps.apple.com/tr/app/id6754218117?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-app-to-track-where-my-money-goes-and-save-more.html)
 

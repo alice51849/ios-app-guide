@@ -2,7 +2,7 @@
 title: "meilleure application vocabulaire pour navetteurs avec Apple Watch"
 lang: "fr-FR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/fr-FR/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,7 +22,7 @@ Les navetteurs ont besoin d’une pratique du vocabulaire qui s’intègre dans 
 - Apple Watch
 - App Store · 9,99 €
 
-[Obtenir Wordmate : Apprendre 44 langues sur l’App Store →](https://apps.apple.com/fr/app/id6789917808)
+[Obtenir Wordmate : Apprendre 44 langues sur l’App Store →](https://apps.apple.com/fr/app/id6789917808?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

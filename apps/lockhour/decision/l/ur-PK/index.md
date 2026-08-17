@@ -2,7 +2,7 @@
 title: "iPhone پر پڑھائی کے دوران سوشل میڈیا بلاک کرنے کے لیے بہترین ایپ"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/ur-PK/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - نجی / آلہ پر
 - App Store · مفت
 
-[App Store سے LockHour Pro حاصل کریں →](https://apps.apple.com/pk/app/id6780107485)
+[App Store سے LockHour Pro حاصل کریں →](https://apps.apple.com/pk/app/id6780107485?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

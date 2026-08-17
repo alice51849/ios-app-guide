@@ -2,7 +2,7 @@
 title: "애플 워치와 함께 여행자에게 가장 실용적인 언어 회화 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/ko/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ￦19,000
 
-[App Store에서 DailyMate 받기 →](https://apps.apple.com/kr/app/id6790418321)
+[App Store에서 DailyMate 받기 →](https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=iag_data_ko&mt=8)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

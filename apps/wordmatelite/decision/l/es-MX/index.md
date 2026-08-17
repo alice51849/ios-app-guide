@@ -2,7 +2,7 @@
 title: "Wordmate Lite: aprende idiomas — Un minuto al día, sin conexión | iOS App"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/es-MX/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Cinco palabras, un minuto, un paso que se nota. Wordmate Lite agarra ese propós
 - Sin conexión
 - App Store · Gratis
 
-[Consigue Wordmate Lite: aprende idiomas en el App Store](https://apps.apple.com/mx/app/id6797601720)
+[Consigue Wordmate Lite: aprende idiomas en el App Store](https://apps.apple.com/mx/app/id6797601720?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/wordmatelite.html)
 

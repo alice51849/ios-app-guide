@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Última vez — Recuerda cuándo lo hiciste | iOS App"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/es-MX/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Gratis para empezar · desbloqueo permanente
 - App Store · Gratis
 
-[Consigue Mochi DoneStamp: Última vez en el App Store](https://apps.apple.com/mx/app/id6790800323)
+[Consigue Mochi DoneStamp: Última vez en el App Store](https://apps.apple.com/mx/app/id6790800323?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/mochidonestamp.html)
 

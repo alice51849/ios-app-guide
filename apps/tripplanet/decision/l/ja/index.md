@@ -2,7 +2,7 @@
 title: "家族旅行におすすめの子ども向けトラベルアクティビティアプリ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/ja/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 広告なし
 - App Store · 無料
 
-[App StoreでLumi Trip Planetを入手 →](https://apps.apple.com/jp/app/id6787193643)
+[App StoreでLumi Trip Planetを入手 →](https://apps.apple.com/jp/app/id6787193643?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

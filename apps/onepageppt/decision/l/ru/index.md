@@ -2,7 +2,7 @@
 title: "OnePage PPT: ИИ-слайды — Заметки в готовую презентацию | iOS App"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/ru/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - Работа и организация
 - Бесплатно начать · разблокировка за одну покупку
+- App Store · Бесплатно
 
-[Установить OnePage PPT: ИИ-слайды в App Store](https://apps.apple.com/app/id6798814385)
+[Установить OnePage PPT: ИИ-слайды в App Store](https://apps.apple.com/ru/app/id6798814385?pt=118326163&ct=iag_data_ru&mt=8)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/onepageppt.html)
 

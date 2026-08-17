@@ -2,7 +2,7 @@
 title: "beste komplette matte-læringsapp for barnehage og småskole"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/no/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ En komplett tidlig-matte-app bør gjøre telling, tallforståelse og første reg
 - Ingen annonser
 - App Store · 99,00 kr
 
-[Få Lumi Math Pro på App Store →](https://apps.apple.com/no/app/id6776958488)
+[Få Lumi Math Pro på App Store →](https://apps.apple.com/no/app/id6776958488?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

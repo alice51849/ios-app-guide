@@ -2,7 +2,7 @@
 title: "migliore scanner documenti offline senza cloud per infermieri"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/it/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Se scansionate moduli di consenso, documenti di dimissione o referti, lo scanner
 - Privato / su dispositivo
 - App Store · Gratis
 
-[Scarica ScanTo Pro dall'App Store →](https://apps.apple.com/it/app/id6779977651)
+[Scarica ScanTo Pro dall'App Store →](https://apps.apple.com/it/app/id6779977651?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

@@ -2,7 +2,7 @@
 title: "ಕುಟುಂಬ ಪ್ರಯಾಣಗಳಲ್ಲಿ ಮಕ್ಕಳಿಗೆ ಅತ್ಯುತ್ತಮ ಪ್ರಯಾಣ ಚಟುವಟಿಕೆ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/kn-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
 - App Store · ಉಚಿತ
 
-[Lumi Trip Planet ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6787193643)
+[Lumi Trip Planet ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_data_kn_in&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

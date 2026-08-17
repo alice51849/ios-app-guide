@@ -2,7 +2,7 @@
 title: "CalDaily കാൽക്കുലേറ്റർ — വിജറ്റ്, ടൂളുകൾ, 100 തീം | iOS App"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ml-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - വിഡ്ജറ്റ്
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് CalDaily കാൽക്കുലേറ്റർ നേടൂ](https://apps.apple.com/in/app/id6794178671)
+[App Store-ൽ നിന്ന് CalDaily കാൽക്കുലേറ്റർ നേടൂ](https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/caldaily.html)
 

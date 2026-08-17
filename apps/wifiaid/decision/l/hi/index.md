@@ -2,7 +2,7 @@
 title: "WiFi Aid — सबूत के साथ नेटवर्क जाँच | iOS App"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/hi/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - भुगतान किया गया डाउनलोड
 - App Store · ₹ 599
 
-[App Store पर WiFi Aid पाएँ](https://apps.apple.com/in/app/id6790467886)
+[App Store पर WiFi Aid पाएँ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_hi&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/wifiaid.html)
 

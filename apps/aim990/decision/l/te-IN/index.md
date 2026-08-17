@@ -2,7 +2,7 @@
 title: "iPhone కోసం ఉత్తమ TOEIC ప్రిప్ యాప్ ఆఫ్‌లైన్ స్టడీ ప్లాన్"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/te-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్
 - App Store · ఉచితం
 
-[App Storeలో Aim990 పొందండి →](https://apps.apple.com/in/app/id6784974530)
+[App Storeలో Aim990 పొందండి →](https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

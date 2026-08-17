@@ -2,7 +2,7 @@
 title: "అకౌంట్ లేకుండా ఉత్తమ ట్రావెల్ బడ్జెట్ ట్రాకర్ యాప్ iPhone కోసం"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/te-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ఖాతా అవసరం లేదు
 - App Store · ₹ 499
 
-[App Store నుండి G+Money పొందండి →](https://apps.apple.com/in/app/id6755782939)
+[App Store నుండి G+Money పొందండి →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

@@ -2,7 +2,7 @@
 title: "aplikasi derau putih terbaik untuk tidur tanpa langganan"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/id/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ Untuk tidur, langganan yang mengganggu setiap bulan bertentangan dengan ketenang
 - Tanpa iklan
 - App Store · Gratis
 
-[Dapatkan Sereno di App Store →](https://apps.apple.com/id/app/id6788236641)
+[Dapatkan Sereno di App Store →](https://apps.apple.com/id/app/id6788236641?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

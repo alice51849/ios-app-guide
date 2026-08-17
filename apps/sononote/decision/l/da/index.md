@@ -2,7 +2,7 @@
 title: "bedste app til stemme-noter, der opsummerer møder på iPhone"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/da/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Efter et opkald vil du ikke have en rå transskription — du vil have opsummeri
 - Privat / på enheden
 - App Store · Gratis
 
-[Hent Sono Note i App Store →](https://apps.apple.com/dk/app/id6782139553)
+[Hent Sono Note i App Store →](https://apps.apple.com/dk/app/id6782139553?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

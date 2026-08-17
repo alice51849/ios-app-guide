@@ -2,7 +2,7 @@
 title: "ứng dụng danh sách việc cần làm đơn giản nhất trên iPhone không đăng ký"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/vi/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Nếu hầu hết ứng dụng việc cần làm cảm thấy cồng kềnh, ứ
 - Không quảng cáo
 - App Store · Miễn phí
 
-[Tải Mochi trên App Store →](https://apps.apple.com/vn/app/id6785004775)
+[Tải Mochi trên App Store →](https://apps.apple.com/vn/app/id6785004775?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

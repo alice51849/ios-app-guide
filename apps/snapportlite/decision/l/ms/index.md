@@ -2,7 +2,7 @@
 title: "Snapport Lite — Buat foto ID di rumah | iOS App"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/ms/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Snapport Lite - Buat foto pasport, visa, dan dokumen dengan panduan saiz, alat l
 - Luar talian
 - App Store · Percuma
 
-[Dapatkan Snapport Lite di App Store](https://apps.apple.com/my/app/id6792856304)
+[Dapatkan Snapport Lite di App Store](https://apps.apple.com/my/app/id6792856304?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/snapportlite.html)
 

@@ -2,7 +2,7 @@
 title: "AI Brief — Des fichiers au contexte clair | iOS App"
 lang: "fr-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/fr-CA/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Un meilleur contexte. De meilleures réponses. Transformer des captures d'écran
 - Privé / sur l'appareil
 - App Store · Gratuit
 
-[Obtenir AI Brief sur l'App Store](https://apps.apple.com/ca/app/id6791658210)
+[Obtenir AI Brief sur l'App Store](https://apps.apple.com/ca/app/id6791658210?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/aibriefpack.html)
 

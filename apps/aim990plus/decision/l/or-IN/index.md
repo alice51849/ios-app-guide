@@ -2,7 +2,7 @@
 title: "Aim990 Plus — ଇଂରାଜୀ ଚାପ ଅଭ୍ୟାସ | iOS App"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/or-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Aim990 Plus ବୟସ୍କମାନଙ୍କ ଇଂରାଜୀ ଶ୍ରବଣ
 - ପୈସା ଦେଇ ଡାଉନଲୋଡ୍
 - App Store · ₹ 599
 
-[App Store ରୁ Aim990 Plus ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6792483140)
+[App Store ରୁ Aim990 Plus ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_or_in&mt=8)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/aim990plus.html)
 

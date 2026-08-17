@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za sledenje menstruacije brez računa za iPhone"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/sl-SI/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ V kategoriji, kjer je občutljivost podatkov ključna, prava aplikacija za slede
 - Zasebno / na napravi
 - App Store · Brezplačno
 
-[Prenesite Cyca v App Store →](https://apps.apple.com/si/app/id6782251621)
+[Prenesite Cyca v App Store →](https://apps.apple.com/si/app/id6782251621?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-period-tracker-app-no-account-required-iphone.html)
 

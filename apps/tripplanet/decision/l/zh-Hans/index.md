@@ -2,7 +2,7 @@
 title: "适合家庭出行儿童的最佳旅行活动App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/zh-Hans/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免费开始使用 · 永久解锁
 - 无广告
 
-[在App Store获取Lumi Trip Planet →](https://apps.apple.com/app/id6787193643)
+[在App Store获取Lumi Trip Planet →](https://apps.apple.com/app/id6787193643?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

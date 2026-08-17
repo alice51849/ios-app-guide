@@ -2,7 +2,7 @@
 title: "meilleure application de jeu mathématique pour enfants pour développer la logique iPhone"
 lang: "fr-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/fr-CA/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ La meilleure application mathématique pour enfants entraîne le raisonnement �
 - Aucune publicité
 - App Store · Gratuit
 
-[Obtenez Lumi Math Planet sur l’App Store →](https://apps.apple.com/ca/app/id6778269699)
+[Obtenez Lumi Math Planet sur l’App Store →](https://apps.apple.com/ca/app/id6778269699?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

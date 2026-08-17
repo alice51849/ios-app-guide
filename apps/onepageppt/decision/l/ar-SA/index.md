@@ -2,7 +2,7 @@
 title: "OnePage PPT: عرض تقديمي — من الملاحظات إلى شريحة واحدة | iOS App"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/ar-SA/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - الإنتاجية
 - بدء مجاني · فتح دائم
+- App Store · مجاني
 
-[احصل على OnePage PPT: عرض تقديمي من App Store](https://apps.apple.com/app/id6798814385)
+[احصل على OnePage PPT: عرض تقديمي من App Store](https://apps.apple.com/sa/app/id6798814385?pt=118326163&ct=iag_data_ar_sa&mt=8)
 
 [اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/onepageppt.html)
 

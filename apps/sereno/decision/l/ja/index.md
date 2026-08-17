@@ -2,7 +2,7 @@
 title: "サブスクリプション不要で眠りに落ちるための最高のホワイトノイズアプリ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/ja/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - 広告なし
 - App Store · 無料
 
-[App StoreでSerenoを入手 →](https://apps.apple.com/jp/app/id6788236641)
+[App StoreでSerenoを入手 →](https://apps.apple.com/jp/app/id6788236641?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

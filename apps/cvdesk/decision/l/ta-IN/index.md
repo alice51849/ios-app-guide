@@ -2,7 +2,7 @@
 title: "2026 க்கான சிறந்த ரெசுமே உருவாக்கும் செயலி தொழில் மாற்றுவோருக்கு"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/ta-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்
 - App Store · இலவசம்
 
-[App Store இல் CV டெஸ்க் ஐ பெறவும் →](https://apps.apple.com/in/app/id6781337213)
+[App Store இல் CV டெஸ்க் ஐ பெறவும் →](https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=iag_data_ta_in&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-resume-builder-app-for-career-changers-2026.html)
 

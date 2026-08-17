@@ -2,7 +2,7 @@
 title: "OnePage PPT: מצגת AI — מהערות לשקופית אחת מושלמת | iOS App"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/he/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - פרודוקטיביות
 - התחלה ללא תשלום · פתיחה לכל החיים
+- App Store · בחינם
 
-[הורידו את OnePage PPT: מצגת AI מה-App Store](https://apps.apple.com/app/id6798814385)
+[הורידו את OnePage PPT: מצגת AI מה-App Store](https://apps.apple.com/il/app/id6798814385?pt=118326163&ct=iag_data_he&mt=8)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/onepageppt.html)
 

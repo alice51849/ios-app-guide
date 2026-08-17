@@ -2,7 +2,7 @@
 title: "ప్రీ-స్కూల్ మరియు ప్రారంభ తరగతులకు ఉత్తమ పూర్తి గణిత అభ్యాస యాప్"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/te-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ప్రకటనలు లేవు
 - App Store · ₹ 999
 
-[Lumi Math Pro ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6776958488)
+[Lumi Math Pro ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

@@ -2,7 +2,7 @@
 title: "AI Brief — ફાઇલથી સ્પષ્ટ સંદર્ભ | iOS App"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/gu-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ખાનગી / ઉપકરણ પર
 - App Store · મફત
 
-[App Store પરથી AI Brief મેળવો](https://apps.apple.com/in/app/id6791658210)
+[App Store પરથી AI Brief મેળવો](https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=iag_data_gu_in&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/aibriefpack.html)
 

@@ -2,7 +2,7 @@
 title: "HoursTag: وقت کی قیمت — حقیقی قیمت کیا ہے؟ ڈالرز میں نہیں — زندگی کے گھنٹوں میں۔ | iOS App"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ur-PK/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - نجی / آلہ پر
 - App Store · Rs 1,300.00
 
-[App Store سے HoursTag: وقت کی قیمت حاصل کریں](https://apps.apple.com/pk/app/id6754218117)
+[App Store سے HoursTag: وقت کی قیمت حاصل کریں](https://apps.apple.com/pk/app/id6754218117?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/hourstag.html)
 

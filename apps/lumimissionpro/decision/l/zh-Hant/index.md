@@ -2,7 +2,7 @@
 title: "適合孩子的最佳完整早晚例行 App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/zh-Hant/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 無廣告
 - App Store · $190.00
 
-[在 App Store 取得 Lumi Mission Planet Pro →](https://apps.apple.com/tw/app/id6779745474)
+[在 App Store 取得 Lumi Mission Planet Pro →](https://apps.apple.com/tw/app/id6779745474?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

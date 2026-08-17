@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za belo šum za lažje spanje brez naročnine"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/sl-SI/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ Za spanje je naročnina, ki vas vsak mesec nadleguje, ravno nasprotje sprostitve
 - Brez oglasov
 - App Store · Brezplačno
 
-[Prenesite Sereno iz App Store →](https://apps.apple.com/si/app/id6788236641)
+[Prenesite Sereno iz App Store →](https://apps.apple.com/si/app/id6788236641?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja z aktywnościami podróżnymi dla dzieci na rodzinne wyjazdy"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/pl/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Rodzice podróżujący z małymi dziećmi potrzebują aktywności, które zamien
 - Bez reklam
 - App Store · Bezpłatnie
 
-[Pobierz Lumi Trip Planet z App Store →](https://apps.apple.com/pl/app/id6787193643)
+[Pobierz Lumi Trip Planet z App Store →](https://apps.apple.com/pl/app/id6787193643?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

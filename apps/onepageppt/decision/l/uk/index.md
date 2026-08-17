@@ -2,7 +2,7 @@
 title: "OnePage PPT: ШІ-слайди — Нотатки в готову презентацію | iOS App"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/uk/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - Продуктивність
 - Безкоштовно для початку · довічне розблокування
+- App Store · Безкоштовно
 
-[Завантажте OnePage PPT: ШІ-слайди з App Store](https://apps.apple.com/app/id6798814385)
+[Завантажте OnePage PPT: ШІ-слайди з App Store](https://apps.apple.com/ua/app/id6798814385?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/onepageppt.html)
 

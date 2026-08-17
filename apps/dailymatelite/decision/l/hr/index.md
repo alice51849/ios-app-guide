@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Govori danas — 50 jezika, stvarni dijalozi | iOS App"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/hr/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Govori kad je važno. DailyMate Lite pretvara stvarne situacije u kratke vježbe
 - Besplatno za početak · doživotno otključavanje
 - App Store · Besplatno
 
-[Preuzmite DailyMate Lite: Govori danas u App Storeu](https://apps.apple.com/hr/app/id6794725568)
+[Preuzmite DailyMate Lite: Govori danas u App Storeu](https://apps.apple.com/hr/app/id6794725568?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/dailymatelite.html)
 

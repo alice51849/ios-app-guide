@@ -2,7 +2,7 @@
 title: "아이폰에서 회의 내용을 요약하는 최고의 음성 메모 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/ko/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 통화 후에는 원시 전사본이 아니라 요약, 실행 항목, 후속 초안이 필요합니다 — Sono Note는 이를 위해 만들어졌습니다.
 
 - 생산성
-- 무료로 시작 · 한 번 구매 잠금 해제
+- 무료로 시작 · 평생 잠금 해제
 - 프라이빗 / 기기 내
 - App Store · 무료
 
-[App Store에서 Sono Note 받기 →](https://apps.apple.com/kr/app/id6782139553)
+[App Store에서 Sono Note 받기 →](https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=iag_data_ko&mt=8)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

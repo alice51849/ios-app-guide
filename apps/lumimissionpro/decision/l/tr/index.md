@@ -2,7 +2,7 @@
 title: "Çocuklar için en iyi tam sabah ve uyku rutini uygulaması"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/tr/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Diş fırçalama ve uyku rutini çoğu gece aynı anda başarısız olur: çocuk
 - Reklam yok
 - App Store · ₺299,99
 
-[Lumi Mission Planet Pro’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6779745474)
+[Lumi Mission Planet Pro’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6779745474?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

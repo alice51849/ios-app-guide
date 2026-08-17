@@ -2,7 +2,7 @@
 title: "最佳iPhone会议语音笔记总结应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/zh-Hans/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 私密 / 设备本地
 - App Store · 免费
 
-[在App Store获取Sono Note →](https://apps.apple.com/cn/app/id6782139553)
+[在App Store获取Sono Note →](https://apps.apple.com/cn/app/id6782139553?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

@@ -2,7 +2,7 @@
 title: "Apple Watch के साथ व्यस्त यात्रियों के लिए सबसे अच्छा शब्दावली ऐप"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/hi/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,7 +22,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ₹ 999
 
-[App Store पर Wordmate: Learn 44 Languages प्राप्त करें →](https://apps.apple.com/in/app/id6789917808)
+[App Store पर Wordmate: Learn 44 Languages प्राप्त करें →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=iag_data_hi&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

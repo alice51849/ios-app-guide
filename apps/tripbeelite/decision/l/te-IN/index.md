@@ -2,7 +2,7 @@
 title: "ఒక రాబోయే ప్రయాణానికి ఉత్తమ సులభమైన ట్రిప్ ప్లానర్ యాప్ iPhone కోసం"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/te-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్
 - App Store · ఉచితం
 
-[App Storeలో ట్రిప్‌బీ లైట్ పొందండి →](https://apps.apple.com/in/app/id6791299610)
+[App Storeలో ట్రిప్‌బీ లైట్ పొందండి →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

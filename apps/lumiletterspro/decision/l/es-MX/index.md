@@ -2,7 +2,7 @@
 title: "mejor app completa de fonética para preparación de kínder en casa"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/es-MX/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Las familias que preparan para kínder necesitan un camino completo de lectura t
 - Sin anuncios
 - App Store · $199.00
 
-[Consigue Lumi Letters Pro en App Store →](https://apps.apple.com/mx/app/id6778491147)
+[Consigue Lumi Letters Pro en App Store →](https://apps.apple.com/mx/app/id6778491147?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

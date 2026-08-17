@@ -2,7 +2,7 @@
 title: "最佳iPhone儿童模糊照片修复应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hans/unblurry.html"
-modified: "2026-08-07"
+modified: "2026-08-17"
 video_url: "https://files.catbox.moe/zsq203.mp4"
 duration: "PT16S"
 app_store_id: "6782275018"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [观看视频](https://files.catbox.moe/zsq203.mp4)
 
-[在App Store获取Unblurry →](https://apps.apple.com/cn/app/id6782275018)
+[在App Store获取Unblurry →](https://apps.apple.com/cn/app/id6782275018?pt=118326163&ct=iag_video_zh_hans&mt=8)
 
 [打开 App 指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

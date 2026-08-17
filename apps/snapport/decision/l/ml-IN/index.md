@@ -2,7 +2,7 @@
 title: "വീട്ടിൽ കുഞ്ഞുങ്ങളുടെയും ചെറുപ്പക്കാരുടെയും പാസ്പോർട്ട് ഫോട്ടോയ്ക്ക് മികച്ച ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/ml-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · ₹ 599
 
-[App Store-ൽ നിന്ന് Snapport നേടുക →](https://apps.apple.com/in/app/id6780575828)
+[App Store-ൽ നിന്ന് Snapport നേടുക →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

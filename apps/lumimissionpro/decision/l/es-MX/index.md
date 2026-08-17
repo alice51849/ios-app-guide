@@ -2,7 +2,7 @@
 title: "mejor app completa de rutina de mañana y noche para niños"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/es-MX/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ El cepillado de dientes y la hora de dormir suelen fallar en el mismo momento ca
 - Sin anuncios
 - App Store · $129.00
 
-[Consigue Lumi Mission Planet Pro en App Store →](https://apps.apple.com/mx/app/id6779745474)
+[Consigue Lumi Mission Planet Pro en App Store →](https://apps.apple.com/mx/app/id6779745474?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

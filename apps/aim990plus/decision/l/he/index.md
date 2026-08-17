@@ -2,7 +2,7 @@
 title: "Aim990 Plus — אימון שמיעה וקריאה בלחץ | iOS App"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/he/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - הורדה בתשלום
 - App Store · ₪19.90
 
-[הורידו את Aim990 Plus מה-App Store](https://apps.apple.com/il/app/id6792483140)
+[הורידו את Aim990 Plus מה-App Store](https://apps.apple.com/il/app/id6792483140?pt=118326163&ct=iag_data_he&mt=8)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/aim990plus.html)
 

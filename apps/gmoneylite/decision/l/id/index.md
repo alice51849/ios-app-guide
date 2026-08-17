@@ -2,7 +2,7 @@
 title: "best free travel expense tracker with currency conversion for iphone"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/id/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,9 +16,14 @@ A useful free travel-expense test should include the complete local-to-home-curr
 - Uang & perjalanan
 - Gratis untuk mulai · buka kunci permanen
 - Offline
+- Tanpa akun
+- Tanpa pelacakan
+- Privat / di perangkat
+- Widget
+- Apple Watch
 - App Store · Gratis
 
-[Get G+Money Lite on the App Store →](https://apps.apple.com/id/app/id6793436548)
+[Get G+Money Lite on the App Store →](https://apps.apple.com/id/app/id6793436548?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html)
 

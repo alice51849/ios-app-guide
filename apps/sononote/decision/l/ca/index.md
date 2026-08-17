@@ -2,7 +2,7 @@
 title: "Millor app de notes de veu que resumeix reunions a l’iPhone"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/ca/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Després d’una trucada no vols una transcripció en brut — vols el resum, el
 - Privat / en el dispositiu
 - App Store · Gratis
 
-[Descarrega Sono Note a l’App Store →](https://apps.apple.com/es/app/id6782139553)
+[Descarrega Sono Note a l’App Store →](https://apps.apple.com/es/app/id6782139553?pt=118326163&ct=iag_data_ca&mt=8)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

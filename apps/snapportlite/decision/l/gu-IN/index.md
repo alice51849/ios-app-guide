@@ -2,7 +2,7 @@
 title: "Snapport Lite — ઘરે ID ફોટા બનાવો | iOS App"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/gu-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Snapport Lite - માર્ગદર્શિત કદ, પૃષ્ઠભૂ�
 - ઑફલાઇન
 - App Store · મફત
 
-[App Store પરથી Snapport Lite મેળવો](https://apps.apple.com/in/app/id6792856304)
+[App Store પરથી Snapport Lite મેળવો](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_gu_in&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/snapportlite.html)
 

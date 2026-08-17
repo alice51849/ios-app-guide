@@ -2,7 +2,7 @@
 title: "najboljša celovita aplikacija za učenje matematike za predšolske otroke in zgodnje razrede"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/sl-SI/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Celovita aplikacija za zgodnjo matematiko naj omogoča, da štetje, občutek za 
 - Brez oglasov
 - App Store · 9,99 €
 
-[Pridobite Lumi Math Pro v trgovini App Store →](https://apps.apple.com/si/app/id6776958488)
+[Pridobite Lumi Math Pro v trgovini App Store →](https://apps.apple.com/si/app/id6776958488?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

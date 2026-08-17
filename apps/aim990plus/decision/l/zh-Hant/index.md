@@ -2,7 +2,7 @@
 title: "best offline English listening and reading exam trainer for iPhone"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/zh-Hant/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Aim990 Plus — Build calm, accurate decisions under time with 630 original ques
 - 付費下載
 - App Store · $190.00
 
-[Get Aim990 Plus on the App Store →](https://apps.apple.com/tw/app/id6792483140)
+[Get Aim990 Plus on the App Store →](https://apps.apple.com/tw/app/id6792483140?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html)
 

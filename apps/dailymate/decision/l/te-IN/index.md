@@ -2,7 +2,7 @@
 title: "యాపిల్ వాచ్‌తో ప్రయాణికుల కోసం ఉత్తమ ప్రాక్టికల్ భాషా వాక్యాల యాప్"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/te-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ₹ 1,199
 
-[App Storeలో డైలీమేట్ పొందండి →](https://apps.apple.com/in/app/id6790418321)
+[App Storeలో డైలీమేట్ పొందండి →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

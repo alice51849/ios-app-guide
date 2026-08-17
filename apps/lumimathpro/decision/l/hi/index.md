@@ -2,7 +2,7 @@
 title: "प्रीस्कूल और शुरुआती कक्षाओं के लिए सबसे अच्छा पूर्ण गणित सीखने वाला ऐप"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/hi/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - कोई विज्ञापन नहीं
 - App Store · ₹ 999
 
-[App Store पर Lumi Math Pro प्राप्त करें →](https://apps.apple.com/in/app/id6776958488)
+[App Store पर Lumi Math Pro प्राप्त करें →](https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=iag_data_hi&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

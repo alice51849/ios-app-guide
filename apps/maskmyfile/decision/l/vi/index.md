@@ -2,7 +2,7 @@
 title: "best on-device file redaction app for freelancers sharing client documents"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/vi/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Before a client document leaves your phone, the safest workflow is to hide only 
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 
-[Get Mask My File on the App Store →](https://apps.apple.com/vn/app/id6792850916)
+[Get Mask My File on the App Store →](https://apps.apple.com/vn/app/id6792850916?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html)
 

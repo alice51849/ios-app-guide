@@ -2,7 +2,7 @@
 title: "পরিবারিক ভ্রমণে শিশুদের জন্য সেরা ট্রাভেল অ্যাক্টিভিটি অ্যাপ"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/bn-BD/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - বিনামূল্যে শুরু · আজীবন আনলক
 - কোনও বিজ্ঞাপন নেই
 
-[App Store-এ Lumi Trip Planet পান →](https://apps.apple.com/app/id6787193643)
+[App Store-এ Lumi Trip Planet পান →](https://apps.apple.com/app/id6787193643?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

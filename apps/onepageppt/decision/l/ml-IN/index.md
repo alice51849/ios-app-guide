@@ -2,7 +2,7 @@
 title: "OnePage PPT: ഒറ്റ സ്ലൈഡ് — കുറിപ്പുകൾ പ്രസന്റേഷനാക്കൂ | iOS App"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/ml-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - ഉത്പാദനക്ഷമത
 - സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്
+- App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് OnePage PPT: ഒറ്റ സ്ലൈഡ് നേടൂ](https://apps.apple.com/app/id6798814385)
+[App Store-ൽ നിന്ന് OnePage PPT: ഒറ്റ സ്ലൈഡ് നേടൂ](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/onepageppt.html)
 

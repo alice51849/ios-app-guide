@@ -2,7 +2,7 @@
 title: "legjobb útiterv tervező alkalmazás iPhone-ra"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/hu/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Egy jó útiterv alkalmazás a kusza utazást világos napi bontású idővonalr
 - Privát / eszközön tárolt
 - App Store · HUF2,490.00
 
-[Szerezd be a TripBee Pro: Utazástervezőt az App Store-ból →](https://apps.apple.com/hu/app/id6787754435)
+[Szerezd be a TripBee Pro: Utazástervezőt az App Store-ból →](https://apps.apple.com/hu/app/id6787754435?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

@@ -2,7 +2,7 @@
 title: "iPhone 旅遊創作者最佳一次付費底片風格照片編輯 App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/zh-Hant/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 旅遊創作者需要能重複使用的底片風格，能加顆粒、光暈與色彩特色，不會讓每個目的地都變成同一種平淡濾鏡 — PhotoCream 就是為此設計。
 
 - 照片與實用工具
-- 免費開始 · 一次購買解鎖
+- 免費開始 · 永久解鎖
 - App Store · 免費
 - ★ 3.0/5 · 2
 
-[在 App Store 取得 PhotoCream →](https://apps.apple.com/tw/app/id6781808054)
+[在 App Store 取得 PhotoCream →](https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

@@ -2,16 +2,16 @@
 
 > Factual owned-asset coverage only. This does not pretend to measure live AI recommendations.
 
-Public apps: **40** · Average coverage: **95.6%**
+Public apps: **40** · Average coverage: **95.9%**
 
 | App | Coverage | Answers | Social languages | Alternatives | Hub / guide / story |
 |---|---:|---:|---:|---:|---|
-| CalDaily | 41.7% | 0/17 | 1 | 0 | hub / guide / story |
 | OnePage PPT | 41.7% | 0/18 | 1 | 0 | hub / guide / story |
 | Wordmate Lite | 41.7% | 0/17 | 1 | 0 | hub / guide / story |
+| CalDaily | 58.1% | 8/17 | 1 | 0 | hub / guide / story |
+| AI Brief | 95.0% | 17/17 | 3 | 1 | hub / guide / story |
 | Lumi Bopomofo | 99.2% | 83/85 | 5 | 5 | hub / guide / story |
 | Lumi Bopomofo Pro | 99.3% | 92/94 | 3 | 5 | hub / guide / story |
-| AI Brief | 100.0% | 17/17 | 3 | 5 | hub / guide / story |
 | Aim990 | 100.0% | 56/56 | 4 | 5 | hub / guide / story |
 | Aim990 Plus | 100.0% | 13/13 | 3 | 5 | hub / guide / story |
 | CV Desk | 100.0% | 92/92 | 5 | 5 | hub / guide / story |

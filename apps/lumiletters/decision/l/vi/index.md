@@ -2,7 +2,7 @@
 title: "ứng dụng trò chơi giáo dục tốt nhất cho trẻ em không quảng cáo trên iPhone"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/vi/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Với trẻ nhỏ, điều quan trọng là không quảng cáo và không thu t
 - Không quảng cáo
 - App Store · Miễn phí
 
-[Tải Lumi Letters trên App Store →](https://apps.apple.com/vn/app/id6778748533)
+[Tải Lumi Letters trên App Store →](https://apps.apple.com/vn/app/id6778748533?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

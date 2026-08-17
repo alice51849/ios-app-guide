@@ -2,7 +2,7 @@
 title: "beste offline dokument-skanner-app uten sky for sykepleiere"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/no/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Hvis du skanner pasientsamtykkeskjemaer, utskrivningspapirer eller henvisninger,
 - Privat / på enheten
 - App Store · Gratis
 
-[Få ScanTo Pro på App Store →](https://apps.apple.com/no/app/id6779977651)
+[Få ScanTo Pro på App Store →](https://apps.apple.com/no/app/id6779977651?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

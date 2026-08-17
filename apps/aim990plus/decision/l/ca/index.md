@@ -2,7 +2,7 @@
 title: "Aim990 Plus — Anglès a contrarellotge | iOS App"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/ca/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Entrena la comprensió de l’anglès amb sessions que posen a prova l’atenci�
 - Descàrrega de pagament
 - App Store · 6,99 €
 
-[Descarrega Aim990 Plus a l’App Store](https://apps.apple.com/es/app/id6792483140)
+[Descarrega Aim990 Plus a l’App Store](https://apps.apple.com/es/app/id6792483140?pt=118326163&ct=iag_data_ca&mt=8)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/aim990plus.html)
 

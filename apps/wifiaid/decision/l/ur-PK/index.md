@@ -2,7 +2,7 @@
 title: "WiFi Aid — نیٹ ورک تشخیص اور ثبوت | iOS App"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/ur-PK/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ادا شدہ ڈاؤن لوڈ
 - App Store · Rs 1,700.00
 
-[App Store سے WiFi Aid حاصل کریں](https://apps.apple.com/pk/app/id6790467886)
+[App Store سے WiFi Aid حاصل کریں](https://apps.apple.com/pk/app/id6790467886?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/wifiaid.html)
 

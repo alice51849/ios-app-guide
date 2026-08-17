@@ -2,7 +2,7 @@
 title: "ആപ്പിൾ വാച്ച് ഉള്ള യാത്രക്കാർക്കായി മികച്ച പ്രായോഗിക ഭാഷാ വാചക ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/ml-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ₹ 1,199
 
-[App Store-ൽ നിന്ന് ഡെയിലിമേറ്റ് നേടുക →](https://apps.apple.com/in/app/id6790418321)
+[App Store-ൽ നിന്ന് ഡെയിലിമേറ്റ് നേടുക →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

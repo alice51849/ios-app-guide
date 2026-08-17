@@ -2,7 +2,7 @@
 title: "ಪೋಷಕರು ಮಕ್ಕಳೊಂದಿಗೆ ಹೊರಗಿನ ಸಮಯ ಯೋಜನೆ ಮಾಡಲು ಸಹಾಯ ಮಾಡುವ ಅತ್ಯುತ್ತಮ ಹವಾಮಾನ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/kn-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ಹಿಂಡಿಕೆ ಇಲ್ಲ
 - App Store · ಉಚಿತ
 
-[Lumi Weather ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6779552704)
+[Lumi Weather ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=iag_data_kn_in&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

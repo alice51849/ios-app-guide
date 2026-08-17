@@ -2,7 +2,7 @@
 title: "కుటుంబ ప్రయాణాల్లో పిల్లలకు ఉత్తమ ట్రావెల్ కార్యకలాప యాప్"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/te-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ప్రకటనలు లేవు
 - App Store · ఉచితం
 
-[Lumi Trip Planet ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6787193643)
+[Lumi Trip Planet ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

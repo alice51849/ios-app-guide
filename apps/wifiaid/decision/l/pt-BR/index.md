@@ -2,7 +2,7 @@
 title: "best wifi troubleshooting app for remote workers with connected but no internet"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/pt-BR/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ When Wi-Fi says connected but work still cannot get online, the useful first ste
 - Download pago
 - App Store · R$ 39,90
 
-[Get WiFi Aid on the App Store →](https://apps.apple.com/br/app/id6790467886)
+[Get WiFi Aid on the App Store →](https://apps.apple.com/br/app/id6790467886?pt=118326163&ct=iag_data_pt_br&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html)
 

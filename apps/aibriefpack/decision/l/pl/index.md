@@ -2,7 +2,7 @@
 title: "AI Brief — Pliki w jasny kontekst | iOS App"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/pl/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Lepszy kontekst. Lepsze odpowiedzi. Przekształć zrzuty ekranu, pliki, notatki 
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 
-[Pobierz AI Brief z App Store](https://apps.apple.com/pl/app/id6791658210)
+[Pobierz AI Brief z App Store](https://apps.apple.com/pl/app/id6791658210?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/aibriefpack.html)
 

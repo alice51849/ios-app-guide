@@ -2,7 +2,7 @@
 title: "공부할 때 소셜 미디어 차단용 최고의 앱 아이폰용"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/ko/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,12 +14,12 @@ publisher: "Lumi Studio"
 시험 기간에는 의지력이 아니라 강력한 시간 제한 차단이 필요합니다 — LockHour Pro는 이를 위해 만들어졌습니다.
 
 - 생산성
-- 무료로 시작 · 한 번 구매 잠금 해제
+- 무료로 시작 · 평생 잠금 해제
 - 광고 없음
 - 프라이빗 / 기기 내
 - App Store · 무료
 
-[App Store에서 LockHour Pro 받기 →](https://apps.apple.com/kr/app/id6780107485)
+[App Store에서 LockHour Pro 받기 →](https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=iag_data_ko&mt=8)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

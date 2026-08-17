@@ -2,7 +2,7 @@
 title: "hesap gerektirmeyen en iyi adet takibi uygulaması iphone"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/tr/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Veri hassasiyetinin tüm hikaye olduğu bir kategoride, doğru adet takip uygula
 - Gizli / cihazda
 - App Store · Ücretsiz
 
-[Cyca'yı App Store'dan edinin →](https://apps.apple.com/tr/app/id6782251621)
+[Cyca'yı App Store'dan edinin →](https://apps.apple.com/tr/app/id6782251621?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-period-tracker-app-no-account-required-iphone.html)
 

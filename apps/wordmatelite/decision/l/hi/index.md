@@ -2,7 +2,7 @@
 title: "Wordmate Lite: इंग्लिश सीखें — रोज़ 5 नए शब्द, एक मिनट | iOS App"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/hi/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ऑफ़लाइन
 - App Store · मुफ़्त
 
-[App Store पर Wordmate Lite: इंग्लिश सीखें पाएँ](https://apps.apple.com/in/app/id6797601720)
+[App Store पर Wordmate Lite: इंग्लिश सीखें पाएँ](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=iag_data_hi&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/wordmatelite.html)
 

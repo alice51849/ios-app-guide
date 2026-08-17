@@ -2,7 +2,7 @@
 title: "Mask My File — ସେୟାର ପୂର୍ବରୁ ବିବରଣୀ ଲୁଚାନ୍ତୁ | iOS App"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/or-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
 
-[App Store ରୁ Mask My File ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6792850916)
+[App Store ରୁ Mask My File ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_data_or_in&mt=8)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/maskmyfile.html)
 

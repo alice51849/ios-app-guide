@@ -2,7 +2,7 @@
 title: "ứng dụng hoạt động du lịch tốt nhất cho trẻ em khi đi cùng gia đình"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/vi/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Phụ huynh đi du lịch cùng trẻ nhỏ cần hoạt động biến việc c
 - Không quảng cáo
 - App Store · Miễn phí
 
-[Tải Lumi Trip Planet trên App Store →](https://apps.apple.com/vn/app/id6787193643)
+[Tải Lumi Trip Planet trên App Store →](https://apps.apple.com/vn/app/id6787193643?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

@@ -2,7 +2,7 @@
 title: "OnePage PPT: สไลด์ AI — สรุปทุกอย่างให้เหลือหน้าเดียว | iOS App"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/th/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - เพิ่มประสิทธิภาพ
 - เริ่มใช้ฟรี · ปลดล็อกถาวร
+- App Store · ฟรี
 
-[ดาวน์โหลด OnePage PPT: สไลด์ AI บน App Store](https://apps.apple.com/app/id6798814385)
+[ดาวน์โหลด OnePage PPT: สไลด์ AI บน App Store](https://apps.apple.com/th/app/id6798814385?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/onepageppt.html)
 

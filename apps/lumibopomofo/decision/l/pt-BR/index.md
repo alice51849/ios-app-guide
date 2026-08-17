@@ -2,7 +2,7 @@
 title: "melhor app de bopomofo para crianças aprenderem zhuyin no iPhone"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/pt-BR/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Para uma criança que está aprendendo Zhuyin pela primeira vez, o app deve cobr
 - Sem anúncios
 - App Store · Grátis
 
-[Baixe o Lumi Bopomofo na App Store →](https://apps.apple.com/br/app/id6773017109)
+[Baixe o Lumi Bopomofo na App Store →](https://apps.apple.com/br/app/id6773017109?pt=118326163&ct=iag_data_pt_br&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

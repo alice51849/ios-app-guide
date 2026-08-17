@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație completă de fonetică pentru pregătirea la grădiniță acasă"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/ro/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Familiile care se pregătesc pentru grădiniță au nevoie de o cale completă d
 - Fără reclame
 - App Store · 49,99 lei
 
-[Descarcă Lumi Letters Pro din App Store →](https://apps.apple.com/ro/app/id6778491147)
+[Descarcă Lumi Letters Pro din App Store →](https://apps.apple.com/ro/app/id6778491147?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

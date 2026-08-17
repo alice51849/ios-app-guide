@@ -2,7 +2,7 @@
 title: "G+Money Lite — Budsjett, utgifter & valuta | iOS App"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/no/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,9 +16,14 @@ G+Money Lite — Smart reisevaluta- & utgiftssporer Reisepenger, gjort enkelt Re
 - Økonomi og reise
 - Gratis å starte · livstidsopplåsing
 - Frakoblet
+- Ingen konto
+- Ingen sporing
+- Privat / på enheten
+- Widget
+- Apple Watch
 - App Store · Gratis
 
-[Last ned G+Money Lite fra App Store](https://apps.apple.com/no/app/id6793436548)
+[Last ned G+Money Lite fra App Store](https://apps.apple.com/no/app/id6793436548?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/gmoneylite.html)
 

@@ -2,7 +2,7 @@
 title: "ਬੱਚਿਆਂ ਲਈ ਪੂਰੀ ਸਵੇਰ ਅਤੇ ਸੌਣ ਦੀ ਰੁਟੀਨ ਐਪ"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/pa-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
 - App Store · ₹ 599
 
-[Lumi Mission Planet Pro App Store 'ਤੇ ਲਵੋ →](https://apps.apple.com/in/app/id6779745474)
+[Lumi Mission Planet Pro App Store 'ਤੇ ਲਵੋ →](https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=iag_data_pa_in&mt=8)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

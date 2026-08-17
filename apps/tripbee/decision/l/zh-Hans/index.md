@@ -2,7 +2,7 @@
 title: "最佳iPhone旅行行程规划应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/zh-Hans/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - 私密 / 设备本地
 - App Store · ¥38.00
 
-[在App Store获取TripBee Pro：旅行规划师 →](https://apps.apple.com/cn/app/id6787754435)
+[在App Store获取TripBee Pro：旅行规划师 →](https://apps.apple.com/cn/app/id6787754435?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

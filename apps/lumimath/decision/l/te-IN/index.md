@@ -2,7 +2,7 @@
 title: "iPhoneలో పిల్లల కోసం ఉత్తమ గణితం ఆట యాప్ లాజిక్ నైపుణ్యాలను పెంపొందించడానికి"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/te-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ప్రకటనలు లేవు
 - App Store · ఉచితం
 
-[App Storeలో Lumi Math Planet పొందండి →](https://apps.apple.com/in/app/id6778269699)
+[App Storeలో Lumi Math Planet పొందండి →](https://apps.apple.com/in/app/id6778269699?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

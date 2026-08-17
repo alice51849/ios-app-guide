@@ -2,7 +2,7 @@
 title: "Aim990 Plus — Engelsk trening under press | iOS App"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/no/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Aim990 Plus er et komplett treningsverktøy for voksne som vil forstå lest og m
 - Betalt nedlasting
 - App Store · 79,00 kr
 
-[Last ned Aim990 Plus fra App Store](https://apps.apple.com/no/app/id6792483140)
+[Last ned Aim990 Plus fra App Store](https://apps.apple.com/no/app/id6792483140?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/aim990plus.html)
 

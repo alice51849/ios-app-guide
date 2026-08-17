@@ -2,7 +2,7 @@
 title: "Wordmate Lite: ಇಂಗ್ಲಿಷ್ ಕಲಿಕೆ — ದಿನಕ್ಕೆ 5 ಪದಗಳು, ಒಂದೇ ನಿಮಿಷ | iOS App"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/kn-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ಆಫ್‌ಲೈನ್
 - App Store · ಉಚಿತ
 
-[App Store ನಲ್ಲಿ Wordmate Lite: ಇಂಗ್ಲಿಷ್ ಕಲಿಕೆ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6797601720)
+[App Store ನಲ್ಲಿ Wordmate Lite: ಇಂಗ್ಲಿಷ್ ಕಲಿಕೆ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=iag_data_kn_in&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/wordmatelite.html)
 

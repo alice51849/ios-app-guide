@@ -2,7 +2,7 @@
 title: "OnePage PPT: AI snímka — Poznámky na hotovú prezentáciu | iOS App"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/sk/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ Zo steny textu vznikne JEDNA snímka, ktorú si naozaj prečítajú. OnePage PPT
 
 - Produktivita
 - Zadarmo na začiatok · doživotné odomknutie
+- App Store · Zadarmo
 
-[Stiahnuť OnePage PPT: AI snímka v App Store](https://apps.apple.com/app/id6798814385)
+[Stiahnuť OnePage PPT: AI snímka v App Store](https://apps.apple.com/sk/app/id6798814385?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/onepageppt.html)
 

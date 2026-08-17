@@ -2,7 +2,7 @@
 title: "子ども向けおすすめ完全朝・夜ルーティンアプリ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ja/lumimissionpro.html"
-modified: "2026-08-07"
+modified: "2026-08-17"
 video_url: "https://files.catbox.moe/el3gzc.mp4"
 duration: "PT16S"
 app_store_id: "6779745474"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [動画を見る](https://files.catbox.moe/el3gzc.mp4)
 
-[App StoreでLumi Mission Planet Proを入手 →](https://apps.apple.com/jp/app/id6779745474)
+[App StoreでLumi Mission Planet Proを入手 →](https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=iag_video_ja&mt=8)
 
 [アプリガイドを開く](https://alice51849.github.io/ios-app-guide/ja/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

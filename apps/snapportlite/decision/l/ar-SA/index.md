@@ -2,7 +2,7 @@
 title: "Snapport Lite — أنشئ صور الوثائق في المنزل | iOS App"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/ar-SA/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Snapport Lite - أنشئ صور جواز السفر والتأشيرة واله�
 - دون اتصال
 - App Store · مجاني
 
-[احصل على Snapport Lite من App Store](https://apps.apple.com/sa/app/id6792856304)
+[احصل على Snapport Lite من App Store](https://apps.apple.com/sa/app/id6792856304?pt=118326163&ct=iag_data_ar_sa&mt=8)
 
 [اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/snapportlite.html)
 

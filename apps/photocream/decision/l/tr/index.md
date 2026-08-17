@@ -2,7 +2,7 @@
 title: "iPhone’da seyahat içerikleri için tek seferlik ücretli en iyi film fotoğraf düzenleyici"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/tr/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Seyahat içerik üreticileri, her destinasyonu aynı düz filtreye indirgemeden 
 - Başlangıçta ücretsiz · ömür boyu açma
 - App Store · Ücretsiz
 
-[PhotoCream’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6781808054)
+[PhotoCream’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6781808054?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

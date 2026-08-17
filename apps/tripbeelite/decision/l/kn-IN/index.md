@@ -2,7 +2,7 @@
 title: "ಒಂದು ಬರುವ ಪ್ರಯಾಣಕ್ಕಾಗಿ ಅತ್ಯುತ್ತಮ ಸರಳ ಪ್ರಯಾಣ ಯೋಜಕ ಆಪ್ iPhone ಗೆ"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/kn-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್
 - App Store · ಉಚಿತ
 
-[App Store ನಲ್ಲಿ ಟ್ರಿಪ್‌ಬೀ ಲೈಟ್ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6791299610)
+[App Store ನಲ್ಲಿ ಟ್ರಿಪ್‌ಬೀ ಲೈಟ್ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=iag_data_kn_in&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

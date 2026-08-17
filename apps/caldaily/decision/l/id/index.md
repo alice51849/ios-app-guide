@@ -2,7 +2,7 @@
 title: "CalDaily: kalkulator & tema — Widget, alat, riwayat rapi | iOS App"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/id/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Kalkulator yang benar-benar akan terus Anda pakai, karena ia mengingat apa yang 
 - Widget
 - App Store · Gratis
 
-[Dapatkan CalDaily: kalkulator & tema di App Store](https://apps.apple.com/id/app/id6794178671)
+[Dapatkan CalDaily: kalkulator & tema di App Store](https://apps.apple.com/id/app/id6794178671?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/caldaily.html)
 

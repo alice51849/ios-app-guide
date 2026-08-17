@@ -2,7 +2,7 @@
 title: "แอปแก้ภาพเบลอของเด็กที่ดีที่สุดบน iPhone"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/th/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ส่วนตัว / บนอุปกรณ์
 - App Store · ฟรี
 
-[ดาวน์โหลด Unblurry ใน App Store →](https://apps.apple.com/th/app/id6782275018)
+[ดาวน์โหลด Unblurry ใน App Store →](https://apps.apple.com/th/app/id6782275018?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

@@ -2,7 +2,7 @@
 title: "ଆଇଫୋନ୍ ପାଇଁ ସରଳ ଟୁ-ଡୁ ତାଲିକା ଆପ୍, କୌଣସି ସଦସ୍ୟତା ନାହିଁ"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/or-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
 - App Store · ମାଗଣା
 
-[App Store ରୁ Mochi ପାଆନ୍ତୁ →](https://apps.apple.com/in/app/id6785004775)
+[App Store ରୁ Mochi ପାଆନ୍ତୁ →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_data_or_in&mt=8)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

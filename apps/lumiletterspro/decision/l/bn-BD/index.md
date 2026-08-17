@@ -2,7 +2,7 @@
 title: "হোমস্কুল কিন্ডারগার্টেন প্রস্তুতির জন্য সেরা সম্পূর্ণ ফনিক্স অ্যাপ"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/bn-BD/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - পেইড ডাউনলোড
 - কোনও বিজ্ঞাপন নেই
 
-[App Store-এ Lumi Letters Pro পান →](https://apps.apple.com/app/id6778491147)
+[App Store-এ Lumi Letters Pro পান →](https://apps.apple.com/app/id6778491147?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

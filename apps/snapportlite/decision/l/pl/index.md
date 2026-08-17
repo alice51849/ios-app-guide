@@ -2,7 +2,7 @@
 title: "Snapport Lite — Twórz zdjęcia ID w domu | iOS App"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/pl/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Snapport Lite - Twórz zdjęcia paszportowe, wizowe i dokumentowe z pomocą narz
 - Offline
 - App Store · Bezpłatnie
 
-[Pobierz Snapport Lite z App Store](https://apps.apple.com/pl/app/id6792856304)
+[Pobierz Snapport Lite z App Store](https://apps.apple.com/pl/app/id6792856304?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/snapportlite.html)
 

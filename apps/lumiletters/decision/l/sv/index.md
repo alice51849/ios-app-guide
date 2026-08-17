@@ -2,7 +2,7 @@
 title: "bästa pedagogiska spelapp för barn utan annonser på iPhone"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/sv/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ För ett litet barn är avgörande faktorer annonser och datainsamling – en l�
 - Inga annonser
 - App Store · Gratis
 
-[Skaffa Lumi Letters på App Store →](https://apps.apple.com/se/app/id6778748533)
+[Skaffa Lumi Letters på App Store →](https://apps.apple.com/se/app/id6778748533?pt=118326163&ct=iag_data_sv&mt=8)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

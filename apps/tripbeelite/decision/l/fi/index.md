@@ -2,7 +2,7 @@
 title: "paras yksinkertainen matkan suunnittelu -sovellus yhdelle tulevalle matkalle iPhonelle"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/fi/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Jos suunnittelet yhtä tulevaa matkaa, rauhallinen aikajana tälle matkalle on h
 - Ilmainen aloitus · elinikäinen avaus
 - App Store · Ilmainen
 
-[Hanki TripBee Lite App Storesta →](https://apps.apple.com/fi/app/id6791299610)
+[Hanki TripBee Lite App Storesta →](https://apps.apple.com/fi/app/id6791299610?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

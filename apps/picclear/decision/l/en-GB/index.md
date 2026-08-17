@@ -2,7 +2,7 @@
 title: "best app to free up iphone storage deleting duplicate photos"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/en-GB/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 To free up space fast, target the biggest wins first: exact-duplicate photos, near-identical burst shots, blurry rejects, and large videos — PicClear helps you do it on your iPhone.
 
 - Photo & utility
-- Free to start · one-time unlock
+- Free to start · lifetime unlock
 - Private / on-device
 - App Store · Free
 
-[Get PicClear on the App Store →](https://apps.apple.com/gb/app/id6780223070)
+[Get PicClear on the App Store →](https://apps.apple.com/gb/app/id6780223070?pt=118326163&ct=iag_data_en_gb&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

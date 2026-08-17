@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר לפינוי אחסון באייפון על ידי מחיקת תמונות כפולות"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/he/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - פרטי / במכשיר
 - App Store · בחינם
 
-[קבל את PicClear ב-App Store →](https://apps.apple.com/il/app/id6780223070)
+[קבל את PicClear ב-App Store →](https://apps.apple.com/il/app/id6780223070?pt=118326163&ct=iag_data_he&mt=8)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

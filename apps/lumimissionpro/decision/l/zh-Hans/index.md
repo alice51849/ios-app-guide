@@ -2,7 +2,7 @@
 title: "适合儿童的最佳完整早晚作息App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/zh-Hans/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 无广告
 - App Store · ¥38.00
 
-[在App Store获取Lumi Mission Planet Pro →](https://apps.apple.com/cn/app/id6779745474)
+[在App Store获取Lumi Mission Planet Pro →](https://apps.apple.com/cn/app/id6779745474?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

@@ -2,7 +2,7 @@
 title: "DailyMate Lite: സംസാരിക്കൂ — 50 ഭാഷകളിൽ സ്വാഭാവിക സംഭാഷണം | iOS App"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/ml-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് DailyMate Lite: സംസാരിക്കൂ നേടൂ](https://apps.apple.com/in/app/id6794725568)
+[App Store-ൽ നിന്ന് DailyMate Lite: സംസാരിക്കൂ നേടൂ](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/dailymatelite.html)
 

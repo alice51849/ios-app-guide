@@ -2,7 +2,7 @@
 title: "Mask My File — Skryte údaje pred zdieľaním | iOS App"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/sk/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Zdieľajte bezpečne bez straty užitočného kontextu. Mask My File nájde osob
 - Súkromné / v zariadení
 - App Store · Zadarmo
 
-[Stiahnuť Mask My File v App Store](https://apps.apple.com/sk/app/id6792850916)
+[Stiahnuť Mask My File v App Store](https://apps.apple.com/sk/app/id6792850916?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/maskmyfile.html)
 

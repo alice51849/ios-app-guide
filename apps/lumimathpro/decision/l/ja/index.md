@@ -2,7 +2,7 @@
 title: "未就学児・低学年向けおすすめ完全算数学習アプリ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/ja/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 広告なし
 - App Store · ¥1,500
 
-[App StoreでLumi Math Proを入手 →](https://apps.apple.com/jp/app/id6776958488)
+[App StoreでLumi Math Proを入手 →](https://apps.apple.com/jp/app/id6776958488?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

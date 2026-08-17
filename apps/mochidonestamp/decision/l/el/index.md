@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Τελευταία — Θυμήσου πότε το έκανες | iOS App"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/el/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής
 - App Store · Δωρεάν
 
-[Αποκτήστε το Mochi DoneStamp: Τελευταία από το App Store](https://apps.apple.com/gr/app/id6790800323)
+[Αποκτήστε το Mochi DoneStamp: Τελευταία από το App Store](https://apps.apple.com/gr/app/id6790800323?pt=118326163&ct=iag_data_el&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/mochidonestamp.html)
 

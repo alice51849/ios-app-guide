@@ -2,7 +2,7 @@
 title: "AI Brief — ഫയലുകൾ, വ്യക്തമായ സന്ദർഭം | iOS App"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ml-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് AI Brief നേടൂ](https://apps.apple.com/in/app/id6791658210)
+[App Store-ൽ നിന്ന് AI Brief നേടൂ](https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/aibriefpack.html)
 

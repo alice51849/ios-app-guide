@@ -2,7 +2,7 @@
 title: "계정 없이 사용할 수 있는 최고의 생리 주기 추적 앱 아이폰용"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/cyca.html"
-modified: "2026-08-07"
+modified: "2026-08-17"
 video_url: "https://files.catbox.moe/smlet6.mp4"
 duration: "PT16S"
 app_store_id: "6782251621"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [영상 보기](https://files.catbox.moe/smlet6.mp4)
 
-[앱 스토어에서 Cyca 받기 →](https://apps.apple.com/kr/app/id6782251621)
+[앱 스토어에서 Cyca 받기 →](https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=iag_video_ko&mt=8)
 
 [앱 가이드 열기](https://alice51849.github.io/ios-app-guide/ko/answers/best-period-tracker-app-no-account-required-iphone.html)
 

@@ -2,7 +2,7 @@
 title: "HoursTag: Timer at købe — Budget, udgifter & opsparing | iOS App"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/da/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ Hvad koster det egentlig? Ikke i kroner – i timer af dit liv.
 - Privat / på enheden
 - App Store · 39,00 kr
 
-[Hent HoursTag: Timer at købe i App Store](https://apps.apple.com/dk/app/id6754218117)
+[Hent HoursTag: Timer at købe i App Store](https://apps.apple.com/dk/app/id6754218117?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/hourstag.html)
 

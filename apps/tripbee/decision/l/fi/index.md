@@ -2,7 +2,7 @@
 title: "paras matka-aikataulusuunnittelusovellus iPhonelle"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/fi/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Hyvä aikataulusovellus muuttaa sekavan matkan selkeäksi päiväkohtaiseksi aik
 - Yksityinen / laitteella
 - App Store · 6,99 €
 
-[Hanki TripBee Pro: Matkasuunnittelija App Storesta →](https://apps.apple.com/fi/app/id6787754435)
+[Hanki TripBee Pro: Matkasuunnittelija App Storesta →](https://apps.apple.com/fi/app/id6787754435?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

@@ -2,7 +2,7 @@
 title: "ứng dụng thói quen đi ngủ tốt nhất cho trẻ mẫu giáo không quảng cáo"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/vi/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Với trẻ mẫu giáo, thói quen đi ngủ hiệu quả nhất khi ngắn g�
 - Không quảng cáo
 - App Store · Miễn phí
 
-[Tải Lumi Mission Planet trên App Store →](https://apps.apple.com/vn/app/id6779750237)
+[Tải Lumi Mission Planet trên App Store →](https://apps.apple.com/vn/app/id6779750237?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

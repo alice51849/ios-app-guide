@@ -2,7 +2,7 @@
 title: "best toeic prep app offline study plan for iphone"
 lang: "en-US"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/en-US/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,10 +14,10 @@ publisher: "Lumi Studio"
 Part 5 looks short, but those incomplete-sentence questions can drain time if grammar and vocabulary are not automatic.
 
 - Education
-- Free to start · one-time unlock
+- Free to start · lifetime unlock
 - App Store · Free
 
-[Get Aim990 on the App Store →](https://apps.apple.com/us/app/id6784974530)
+[Get Aim990 on the App Store →](https://apps.apple.com/us/app/id6784974530?pt=118326163&ct=iag_data_en_us&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-US/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

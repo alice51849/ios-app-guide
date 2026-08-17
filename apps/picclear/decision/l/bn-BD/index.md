@@ -2,7 +2,7 @@
 title: "আইফোনে ডুপ্লিকেট ছবি মুছে স্টোরেজ ফাঁকা করার সেরা অ্যাপ"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/bn-BD/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - বিনামূল্যে শুরু · আজীবন আনলক
 - গোপনীয় / ডিভাইসে
 
-[App Store থেকে PicClear পান →](https://apps.apple.com/app/id6780223070)
+[App Store থেকে PicClear পান →](https://apps.apple.com/app/id6780223070?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

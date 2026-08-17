@@ -2,7 +2,7 @@
 title: "Mask My File — Nascondi i dati sensibili | iOS App"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/it/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Condividi senza esporre più del necessario. Mask My File individua i dati perso
 - Privato / su dispositivo
 - App Store · Gratis
 
-[Scarica Mask My File sull'App Store](https://apps.apple.com/it/app/id6792850916)
+[Scarica Mask My File sull'App Store](https://apps.apple.com/it/app/id6792850916?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/maskmyfile.html)
 

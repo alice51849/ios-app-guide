@@ -6,20 +6,20 @@
   "name": "Catalogue des intentions de recherche de l’éditeur Lumi Studio",
   "description": "Un catalogue publié directement par le développeur qui indique à qui chaque application est destinée, la tâche à accomplir et l’accès direct à l’App Store.",
   "inLanguage": "fr-FR",
-  "dateModified": "2026-07-31",
-  "numberOfItems": 35,
+  "dateModified": "2026-08-17",
+  "numberOfItems": 40,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
-      "url": "https://apps.apple.com/fr/app/id6791658210",
+      "url": "https://apps.apple.com/fr/app/id6791658210?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-aibriefpack",
-        "url": "https://apps.apple.com/fr/app/id6791658210",
+        "url": "https://apps.apple.com/fr/app/id6791658210?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "AI Brief",
-        "description": "Un meilleur contexte. De meilleures réponses.",
+        "description": "AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceable brief before sharing with any AI. Free to start · One-time unlock · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -37,19 +37,19 @@
           "name": "AI Brief",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/fr/app/id6791658210",
-          "installUrl": "https://apps.apple.com/fr/app/id6791658210",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6791658210",
+          "url": "https://apps.apple.com/fr/app/id6791658210?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6791658210?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6791658210?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6791658210"
+            "target": "https://apps.apple.com/fr/app/id6791658210?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/aibriefpack.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6791658210",
           "inLanguage": "fr-FR",
-          "description": "Un meilleur contexte. De meilleures réponses.",
+          "description": "AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceable brief before sharing with any AI. Free to start · One-time unlock · No subscription.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-aibriefpack"
           },
@@ -79,11 +79,11 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "url": "https://apps.apple.com/fr/app/id6784974530",
+      "url": "https://apps.apple.com/fr/app/id6784974530?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-aim990",
-        "url": "https://apps.apple.com/fr/app/id6784974530",
+        "url": "https://apps.apple.com/fr/app/id6784974530?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Aim990",
         "description": "La partie 5 semble courte, mais ces questions à phrase incomplète peuvent prendre du temps si la grammaire et le vocabulaire ne sont pas automatiques.",
         "seller": {
@@ -103,12 +103,12 @@
           "name": "Aim990",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/fr/app/id6784974530",
-          "installUrl": "https://apps.apple.com/fr/app/id6784974530",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6784974530",
+          "url": "https://apps.apple.com/fr/app/id6784974530?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6784974530?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6784974530?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6784974530"
+            "target": "https://apps.apple.com/fr/app/id6784974530?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html#webpage"
@@ -145,13 +145,13 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "url": "https://apps.apple.com/fr/app/id6792483140",
+      "url": "https://apps.apple.com/fr/app/id6792483140?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-aim990plus",
-        "url": "https://apps.apple.com/fr/app/id6792483140",
+        "url": "https://apps.apple.com/fr/app/id6792483140?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Aim990 Plus",
-        "description": "Travaillez votre compréhension de l’anglais dans des conditions qui exigent attention, rythme et endurance. Aim990 Plus est conçu pour les adultes qui",
+        "description": "Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -169,19 +169,19 @@
           "name": "Aim990 Plus",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/fr/app/id6792483140",
-          "installUrl": "https://apps.apple.com/fr/app/id6792483140",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6792483140",
+          "url": "https://apps.apple.com/fr/app/id6792483140?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6792483140?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6792483140?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6792483140"
+            "target": "https://apps.apple.com/fr/app/id6792483140?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/aim990plus.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6792483140",
           "inLanguage": "fr-FR",
-          "description": "Travaillez votre compréhension de l’anglais dans des conditions qui exigent attention, rythme et endurance. Aim990 Plus est conçu pour les adultes qui",
+          "description": "Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-aim990plus"
           },
@@ -211,11 +211,77 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "url": "https://apps.apple.com/fr/app/id6781337213",
+      "url": "https://apps.apple.com/fr/app/id6794178671?pt=118326163&ct=iag_data_fr_fr&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-caldaily",
+        "url": "https://apps.apple.com/fr/app/id6794178671?pt=118326163&ct=iag_data_fr_fr&mt=8",
+        "name": "CalDaily : calculatrice",
+        "description": "Une calculatrice que vous gardez, parce qu'elle se souvient du contexte de chaque nombre.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6794178671",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6794178671"
+          },
+          "name": "CalDaily : calculatrice",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/fr/app/id6794178671?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6794178671?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6794178671?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/fr/app/id6794178671?pt=118326163&ct=iag_data_fr_fr&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/caldaily.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6794178671",
+          "inLanguage": "fr-FR",
+          "description": "Une calculatrice que vous gardez, parce qu'elle se souvient du contexte de chaque nombre.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-caldaily"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "FR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "url": "https://apps.apple.com/fr/app/id6781337213?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-cvdesk",
-        "url": "https://apps.apple.com/fr/app/id6781337213",
+        "url": "https://apps.apple.com/fr/app/id6781337213?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "CV Desk",
         "description": "Quand vous changez de domaine, le problème du CV est différent : votre expérience est réelle mais « non liée » sur papier, et les filtres ATS vous rejettent avant qu’un humain ne le lise — CV Desk est conçu pour cela.",
         "seller": {
@@ -235,12 +301,12 @@
           "name": "CV Desk",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/fr/app/id6781337213",
-          "installUrl": "https://apps.apple.com/fr/app/id6781337213",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6781337213",
+          "url": "https://apps.apple.com/fr/app/id6781337213?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6781337213?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6781337213?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6781337213"
+            "target": "https://apps.apple.com/fr/app/id6781337213?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-resume-builder-app-for-career-changers-2026.html#webpage"
@@ -276,12 +342,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 5,
-      "url": "https://apps.apple.com/fr/app/id6782251621",
+      "position": 6,
+      "url": "https://apps.apple.com/fr/app/id6782251621?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-cyca",
-        "url": "https://apps.apple.com/fr/app/id6782251621",
+        "url": "https://apps.apple.com/fr/app/id6782251621?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Cyca",
         "description": "Dans une catégorie où la sensibilité des données est primordiale, le bon suivi de règles garde tout — flux, humeur, symptômes, température, intimité — sur votre appareil, sans compte ni synchronisation cloud — Cyca est conçu pour cela.",
         "seller": {
@@ -301,12 +367,12 @@
           "name": "Cyca",
           "operatingSystem": "iOS",
           "applicationCategory": "HealthApplication",
-          "url": "https://apps.apple.com/fr/app/id6782251621",
-          "installUrl": "https://apps.apple.com/fr/app/id6782251621",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6782251621",
+          "url": "https://apps.apple.com/fr/app/id6782251621?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6782251621?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6782251621?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6782251621"
+            "target": "https://apps.apple.com/fr/app/id6782251621?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-period-tracker-app-no-account-required-iphone.html#webpage"
@@ -342,12 +408,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 6,
-      "url": "https://apps.apple.com/fr/app/id6790418321",
+      "position": 7,
+      "url": "https://apps.apple.com/fr/app/id6790418321?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-dailymate",
-        "url": "https://apps.apple.com/fr/app/id6790418321",
+        "url": "https://apps.apple.com/fr/app/id6790418321?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "DailyMate",
         "description": "Avant un voyage, des phrases complètes pour des situations réelles sont plus utiles que du vocabulaire isolé que vous devez encore assembler sous pression — DailyMate est conçu pour cela.",
         "seller": {
@@ -367,12 +433,12 @@
           "name": "DailyMate",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/fr/app/id6790418321",
-          "installUrl": "https://apps.apple.com/fr/app/id6790418321",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6790418321",
+          "url": "https://apps.apple.com/fr/app/id6790418321?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6790418321?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6790418321?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6790418321"
+            "target": "https://apps.apple.com/fr/app/id6790418321?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html#webpage"
@@ -408,12 +474,78 @@
     },
     {
       "@type": "ListItem",
-      "position": 7,
-      "url": "https://apps.apple.com/fr/app/id6755782939",
+      "position": 8,
+      "url": "https://apps.apple.com/fr/app/id6794725568?pt=118326163&ct=iag_data_fr_fr&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-dailymatelite",
+        "url": "https://apps.apple.com/fr/app/id6794725568?pt=118326163&ct=iag_data_fr_fr&mt=8",
+        "name": "DailyMate Lite",
+        "description": "Parlez avec assurance quand l’occasion se présente. DailyMate Lite transforme des situations du quotidien en courts échanges à écouter et à pratiquer",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6794725568",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6794725568"
+          },
+          "name": "DailyMate Lite",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/fr/app/id6794725568?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6794725568?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6794725568?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/fr/app/id6794725568?pt=118326163&ct=iag_data_fr_fr&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/dailymatelite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6794725568",
+          "inLanguage": "fr-FR",
+          "description": "Parlez avec assurance quand l’occasion se présente. DailyMate Lite transforme des situations du quotidien en courts échanges à écouter et à pratiquer",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-dailymatelite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "FR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "url": "https://apps.apple.com/fr/app/id6755782939?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-gmoney",
-        "url": "https://apps.apple.com/fr/app/id6755782939",
+        "url": "https://apps.apple.com/fr/app/id6755782939?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "G+Money",
         "description": "En voyage, vous avez besoin d’un suivi de budget qui fonctionne hors ligne dans un pays sans données, gère plusieurs devises, et ne demande pas de compte — organisé par voyage pour que chaque séjour soit séparé — G+Money est conçu pour cela.",
         "seller": {
@@ -433,12 +565,12 @@
           "name": "G+Money",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/fr/app/id6755782939",
-          "installUrl": "https://apps.apple.com/fr/app/id6755782939",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6755782939",
+          "url": "https://apps.apple.com/fr/app/id6755782939?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6755782939?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6755782939?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6755782939"
+            "target": "https://apps.apple.com/fr/app/id6755782939?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-travel-budget-tracker-app-no-subscription-iphone.html#webpage"
@@ -474,14 +606,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 8,
-      "url": "https://apps.apple.com/fr/app/id6793436548",
+      "position": 10,
+      "url": "https://apps.apple.com/fr/app/id6793436548?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-gmoneylite",
-        "url": "https://apps.apple.com/fr/app/id6793436548",
+        "url": "https://apps.apple.com/fr/app/id6793436548?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "G+Money Lite",
-        "description": "G+Money Lite — Convertisseur de devises & suivi de dépenses de voyage",
+        "description": "A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -499,19 +631,19 @@
           "name": "G+Money Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/fr/app/id6793436548",
-          "installUrl": "https://apps.apple.com/fr/app/id6793436548",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6793436548",
+          "url": "https://apps.apple.com/fr/app/id6793436548?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6793436548?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6793436548?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6793436548"
+            "target": "https://apps.apple.com/fr/app/id6793436548?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/gmoneylite.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "fr-FR",
-          "description": "G+Money Lite — Convertisseur de devises & suivi de dépenses de voyage",
+          "description": "A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-gmoneylite"
           },
@@ -540,14 +672,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 9,
-      "url": "https://apps.apple.com/fr/app/id6754218117",
+      "position": 11,
+      "url": "https://apps.apple.com/fr/app/id6754218117?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-hourstag",
-        "url": "https://apps.apple.com/fr/app/id6754218117",
-        "name": "HoursTag : Heures d'achat",
-        "description": "Ça coûte vraiment combien ? Pas en euros – en heures de votre vie.",
+        "url": "https://apps.apple.com/fr/app/id6754218117?pt=118326163&ct=iag_data_fr_fr&mt=8",
+        "name": "HoursTag",
+        "description": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something — HoursTag is built for this.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -562,22 +694,22 @@
             "propertyID": "Apple App Store ID",
             "value": "6754218117"
           },
-          "name": "HoursTag : Heures d'achat",
+          "name": "HoursTag",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/fr/app/id6754218117",
-          "installUrl": "https://apps.apple.com/fr/app/id6754218117",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6754218117",
+          "url": "https://apps.apple.com/fr/app/id6754218117?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6754218117?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6754218117?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6754218117"
+            "target": "https://apps.apple.com/fr/app/id6754218117?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/hourstag.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-app-to-track-where-my-money-goes-and-save-more.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6754218117",
           "inLanguage": "fr-FR",
-          "description": "Ça coûte vraiment combien ? Pas en euros – en heures de votre vie.",
+          "description": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something — HoursTag is built for this.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-hourstag"
           },
@@ -606,14 +738,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 10,
-      "url": "https://apps.apple.com/fr/app/id6794039979",
+      "position": 12,
+      "url": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-hourstaglite",
-        "url": "https://apps.apple.com/fr/app/id6794039979",
+        "url": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "HoursTag Lite",
-        "description": "HoursTag Lite - Le vrai prix des choses",
+        "description": "HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -631,19 +763,19 @@
           "name": "HoursTag Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/fr/app/id6794039979",
-          "installUrl": "https://apps.apple.com/fr/app/id6794039979",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6794039979",
+          "url": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6794039979"
+            "target": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/hourstaglite.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-app-to-convert-prices-into-work-hours-before-buying.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794039979",
           "inLanguage": "fr-FR",
-          "description": "HoursTag Lite - Le vrai prix des choses",
+          "description": "HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-hourstaglite"
           },
@@ -672,12 +804,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 11,
-      "url": "https://apps.apple.com/fr/app/id6780107485",
+      "position": 13,
+      "url": "https://apps.apple.com/fr/app/id6780107485?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-lockhour",
-        "url": "https://apps.apple.com/fr/app/id6780107485",
+        "url": "https://apps.apple.com/fr/app/id6780107485?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "LockHour Pro",
         "description": "Pendant les examens, la volonté ne suffit pas — un blocage strict et chronométré est nécessaire — LockHour Pro est conçu pour cela.",
         "seller": {
@@ -697,12 +829,12 @@
           "name": "LockHour Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/fr/app/id6780107485",
-          "installUrl": "https://apps.apple.com/fr/app/id6780107485",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6780107485",
+          "url": "https://apps.apple.com/fr/app/id6780107485?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6780107485?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6780107485?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6780107485"
+            "target": "https://apps.apple.com/fr/app/id6780107485?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-app-to-block-social-media-while-studying-iphone.html#webpage"
@@ -738,12 +870,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 12,
-      "url": "https://apps.apple.com/fr/app/id6773017109",
+      "position": 14,
+      "url": "https://apps.apple.com/fr/app/id6773017109?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-lumibopomofo",
-        "url": "https://apps.apple.com/fr/app/id6773017109",
+        "url": "https://apps.apple.com/fr/app/id6773017109?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Lumi Bopomofo",
         "description": "Pour un enfant qui apprend le Zhuyin, l’application doit couvrir les 37 symboles par traçage et jeu — conçue pour la tranche d’âge 4–7 ans, sans publicité, sans collecte de données — Lumi Bopomofo est faite pour cela.",
         "seller": {
@@ -763,12 +895,12 @@
           "name": "Lumi Bopomofo",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/fr/app/id6773017109",
-          "installUrl": "https://apps.apple.com/fr/app/id6773017109",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6773017109",
+          "url": "https://apps.apple.com/fr/app/id6773017109?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6773017109?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6773017109?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6773017109"
+            "target": "https://apps.apple.com/fr/app/id6773017109?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html#webpage"
@@ -804,12 +936,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 13,
-      "url": "https://apps.apple.com/fr/app/id6775773117",
+      "position": 15,
+      "url": "https://apps.apple.com/fr/app/id6775773117?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-lumibopomofopro",
-        "url": "https://apps.apple.com/fr/app/id6775773117",
+        "url": "https://apps.apple.com/fr/app/id6775773117?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Lumi Bopomofo Pro",
         "description": "Les enfants bilingues qui apprennent Zhuyin à la maison ont besoin d’un parcours complet à travers sons, symboles, tons et fusion, avec assez de répétition ludique pour rendre le système familier — Lumi Bopomofo Pro est conçu pour cela.",
         "seller": {
@@ -829,12 +961,12 @@
           "name": "Lumi Bopomofo Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/fr/app/id6775773117",
-          "installUrl": "https://apps.apple.com/fr/app/id6775773117",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6775773117",
+          "url": "https://apps.apple.com/fr/app/id6775773117?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6775773117?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6775773117?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6775773117"
+            "target": "https://apps.apple.com/fr/app/id6775773117?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
@@ -870,12 +1002,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 14,
-      "url": "https://apps.apple.com/fr/app/id6778748533",
+      "position": 16,
+      "url": "https://apps.apple.com/fr/app/id6778748533?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-lumiletters",
-        "url": "https://apps.apple.com/fr/app/id6778748533",
+        "url": "https://apps.apple.com/fr/app/id6778748533?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Lumi Letters",
         "description": "Pour un jeune enfant, le critère décisif est l’absence de pub et de collecte de données — une appli éducative doit enseigner dans une boucle de jeu sans pub, sans collecte de données, avec un déblocage unique fiable pour les parents — Lumi Letters est conçue pour cela.",
         "seller": {
@@ -895,12 +1027,12 @@
           "name": "Lumi Letters",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/fr/app/id6778748533",
-          "installUrl": "https://apps.apple.com/fr/app/id6778748533",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6778748533",
+          "url": "https://apps.apple.com/fr/app/id6778748533?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6778748533?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6778748533?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6778748533"
+            "target": "https://apps.apple.com/fr/app/id6778748533?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-educational-game-app-for-kids-no-ads-iphone.html#webpage"
@@ -936,12 +1068,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 15,
-      "url": "https://apps.apple.com/fr/app/id6778491147",
+      "position": 17,
+      "url": "https://apps.apple.com/fr/app/id6778491147?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-lumiletterspro",
-        "url": "https://apps.apple.com/fr/app/id6778491147",
+        "url": "https://apps.apple.com/fr/app/id6778491147?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Lumi Letters Pro",
         "description": "Les familles qui préparent la maternelle ont besoin d’un parcours complet d’apprentissage précoce qui relie sons de lettres, tracé et construction de mots au lieu d’une série de jeux alphabétiques séparés — Lumi Letters Pro est conçu pour cela.",
         "seller": {
@@ -961,12 +1093,12 @@
           "name": "Lumi Letters Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/fr/app/id6778491147",
-          "installUrl": "https://apps.apple.com/fr/app/id6778491147",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6778491147",
+          "url": "https://apps.apple.com/fr/app/id6778491147?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6778491147?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6778491147?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6778491147"
+            "target": "https://apps.apple.com/fr/app/id6778491147?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html#webpage"
@@ -1002,12 +1134,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 16,
-      "url": "https://apps.apple.com/fr/app/id6778269699",
+      "position": 18,
+      "url": "https://apps.apple.com/fr/app/id6778269699?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-lumimath",
-        "url": "https://apps.apple.com/fr/app/id6778269699",
+        "url": "https://apps.apple.com/fr/app/id6778269699?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Lumi Math Planet",
         "description": "Le meilleur jeu de maths pour enfants entraîne le raisonnement — motifs, séquences, pensée spatiale — pas seulement l’arithmétique, et il cache cela dans un jeu que l’enfant veut jouer — Lumi Math Planet est conçu pour cela.",
         "seller": {
@@ -1027,12 +1159,12 @@
           "name": "Lumi Math Planet",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/fr/app/id6778269699",
-          "installUrl": "https://apps.apple.com/fr/app/id6778269699",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6778269699",
+          "url": "https://apps.apple.com/fr/app/id6778269699?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6778269699?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6778269699?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6778269699"
+            "target": "https://apps.apple.com/fr/app/id6778269699?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html#webpage"
@@ -1068,12 +1200,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 17,
-      "url": "https://apps.apple.com/fr/app/id6776958488",
+      "position": 19,
+      "url": "https://apps.apple.com/fr/app/id6776958488?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-lumimathpro",
-        "url": "https://apps.apple.com/fr/app/id6776958488",
+        "url": "https://apps.apple.com/fr/app/id6776958488?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Lumi Math Pro",
         "description": "Une application mathématique complète doit rendre le comptage, le sens du nombre et les premières opérations comme une aventure connectée plutôt que des exercices isolés — Lumi Math Pro est conçu pour cela.",
         "seller": {
@@ -1093,12 +1225,12 @@
           "name": "Lumi Math Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/fr/app/id6776958488",
-          "installUrl": "https://apps.apple.com/fr/app/id6776958488",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6776958488",
+          "url": "https://apps.apple.com/fr/app/id6776958488?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6776958488?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6776958488?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6776958488"
+            "target": "https://apps.apple.com/fr/app/id6776958488?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html#webpage"
@@ -1134,12 +1266,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 18,
-      "url": "https://apps.apple.com/fr/app/id6779750237",
+      "position": 20,
+      "url": "https://apps.apple.com/fr/app/id6779750237?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-lumimission",
-        "url": "https://apps.apple.com/fr/app/id6779750237",
+        "url": "https://apps.apple.com/fr/app/id6779750237?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Lumi Mission Planet",
         "description": "Pour un enfant d’âge préscolaire, une routine du coucher fonctionne mieux lorsqu’elle est courte, visuelle et suffisamment prévisible pour que l’enfant puisse la suivre sans rappels répétés — Lumi Mission Planet est conçu pour cela.",
         "seller": {
@@ -1159,12 +1291,12 @@
           "name": "Lumi Mission Planet",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/fr/app/id6779750237",
-          "installUrl": "https://apps.apple.com/fr/app/id6779750237",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6779750237",
+          "url": "https://apps.apple.com/fr/app/id6779750237?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6779750237?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6779750237?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6779750237"
+            "target": "https://apps.apple.com/fr/app/id6779750237?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html#webpage"
@@ -1200,12 +1332,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 19,
-      "url": "https://apps.apple.com/fr/app/id6779745474",
+      "position": 21,
+      "url": "https://apps.apple.com/fr/app/id6779745474?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-lumimissionpro",
-        "url": "https://apps.apple.com/fr/app/id6779745474",
+        "url": "https://apps.apple.com/fr/app/id6779745474?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Lumi Mission Planet Pro",
         "description": "Le brossage des dents et le coucher échouent souvent au même moment chaque soir : l’enfant est fatigué, le parent aussi, et l’étape suivante n’est pas assez visible.",
         "seller": {
@@ -1225,12 +1357,12 @@
           "name": "Lumi Mission Planet Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/fr/app/id6779745474",
-          "installUrl": "https://apps.apple.com/fr/app/id6779745474",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6779745474",
+          "url": "https://apps.apple.com/fr/app/id6779745474?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6779745474?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6779745474?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6779745474"
+            "target": "https://apps.apple.com/fr/app/id6779745474?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html#webpage"
@@ -1266,12 +1398,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
-      "url": "https://apps.apple.com/fr/app/id6787193643",
+      "position": 22,
+      "url": "https://apps.apple.com/fr/app/id6787193643?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-tripplanet",
-        "url": "https://apps.apple.com/fr/app/id6787193643",
+        "url": "https://apps.apple.com/fr/app/id6787193643?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Lumi Trip Planet",
         "description": "Les parents qui voyagent avec de jeunes enfants ont besoin d’activités qui transforment bagage, attente et découverte d’un lieu en partie de l’aventure plutôt qu’une source de stress — Lumi Trip Planet est conçu pour cela.",
         "seller": {
@@ -1291,12 +1423,12 @@
           "name": "Lumi Trip Planet",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/fr/app/id6787193643",
-          "installUrl": "https://apps.apple.com/fr/app/id6787193643",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6787193643",
+          "url": "https://apps.apple.com/fr/app/id6787193643?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6787193643?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6787193643?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6787193643"
+            "target": "https://apps.apple.com/fr/app/id6787193643?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
@@ -1332,12 +1464,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
-      "url": "https://apps.apple.com/fr/app/id6779552704",
+      "position": 23,
+      "url": "https://apps.apple.com/fr/app/id6779552704?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-lumiweather",
-        "url": "https://apps.apple.com/fr/app/id6779552704",
+        "url": "https://apps.apple.com/fr/app/id6779552704?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Lumi Weather",
         "description": "Les parents qui prévoient une sortie ont besoin de plus qu’une température : ils veulent un aperçu rapide et adapté à l’âge pour savoir si les conditions conviennent à un enfant et quels vêtements choisir — Lumi Weather est conçu pour cela.",
         "seller": {
@@ -1357,12 +1489,12 @@
           "name": "Lumi Weather",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/fr/app/id6779552704",
-          "installUrl": "https://apps.apple.com/fr/app/id6779552704",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6779552704",
+          "url": "https://apps.apple.com/fr/app/id6779552704?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6779552704?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6779552704?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6779552704"
+            "target": "https://apps.apple.com/fr/app/id6779552704?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
@@ -1398,14 +1530,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
-      "url": "https://apps.apple.com/fr/app/id6792850916",
+      "position": 24,
+      "url": "https://apps.apple.com/fr/app/id6792850916?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-maskmyfile",
-        "url": "https://apps.apple.com/fr/app/id6792850916",
+        "url": "https://apps.apple.com/fr/app/id6792850916?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Mask My File",
-        "description": "Partagez en toute sérénité sans perdre le contexte utile. Mask My File détecte les données privées avant l'envoi d'un fichier, les masque définitivement",
+        "description": "Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context — Mask My File is built for this.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1422,20 +1554,20 @@
           },
           "name": "Mask My File",
           "operatingSystem": "iOS",
-          "applicationCategory": "UtilitiesApplication",
-          "url": "https://apps.apple.com/fr/app/id6792850916",
-          "installUrl": "https://apps.apple.com/fr/app/id6792850916",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6792850916",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/fr/app/id6792850916?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6792850916?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6792850916?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6792850916"
+            "target": "https://apps.apple.com/fr/app/id6792850916?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/maskmyfile.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "fr-FR",
-          "description": "Partagez en toute sérénité sans perdre le contexte utile. Mask My File détecte les données privées avant l'envoi d'un fichier, les masque définitivement",
+          "description": "Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context — Mask My File is built for this.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-maskmyfile"
           },
@@ -1464,12 +1596,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
-      "url": "https://apps.apple.com/fr/app/id6785004775",
+      "position": 25,
+      "url": "https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-mochi",
-        "url": "https://apps.apple.com/fr/app/id6785004775",
+        "url": "https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Mochi",
         "description": "Si la plupart des applis de tâches vous semblent trop lourdes, la bonne est une liste propre avec rappels, règles de répétition et complication Watch — et volontairement sans gestion de projet — Mochi est conçue pour cela.",
         "seller": {
@@ -1489,12 +1621,12 @@
           "name": "Mochi",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/fr/app/id6785004775",
-          "installUrl": "https://apps.apple.com/fr/app/id6785004775",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6785004775",
+          "url": "https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6785004775"
+            "target": "https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-simple-to-do-list-app-iphone-no-subscription.html#webpage"
@@ -1530,14 +1662,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
-      "url": "https://apps.apple.com/fr/app/id6790800323",
+      "position": 26,
+      "url": "https://apps.apple.com/fr/app/id6790800323?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-mochidonestamp",
-        "url": "https://apps.apple.com/fr/app/id6790800323",
-        "name": "Mochi DoneStamp : Mémo",
-        "description": "Quand avez-vous changé les draps, arrosé une plante, appelé vos proches, sauvegardé vos photos ou remplacé un filtre pour la dernière fois ?",
+        "url": "https://apps.apple.com/fr/app/id6790800323?pt=118326163&ct=iag_data_fr_fr&mt=8",
+        "name": "Mochi DoneStamp",
+        "description": "For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment — Mochi DoneStamp is built for this.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1552,22 +1684,22 @@
             "propertyID": "Apple App Store ID",
             "value": "6790800323"
           },
-          "name": "Mochi DoneStamp : Mémo",
+          "name": "Mochi DoneStamp",
           "operatingSystem": "iOS",
           "applicationCategory": "LifestyleApplication",
-          "url": "https://apps.apple.com/fr/app/id6790800323",
-          "installUrl": "https://apps.apple.com/fr/app/id6790800323",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6790800323",
+          "url": "https://apps.apple.com/fr/app/id6790800323?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6790800323?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6790800323?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6790800323"
+            "target": "https://apps.apple.com/fr/app/id6790800323?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/mochidonestamp.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "fr-FR",
-          "description": "Quand avez-vous changé les draps, arrosé une plante, appelé vos proches, sauvegardé vos photos ou remplacé un filtre pour la dernière fois ?",
+          "description": "For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment — Mochi DoneStamp is built for this.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-mochidonestamp"
           },
@@ -1596,12 +1728,78 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
-      "url": "https://apps.apple.com/fr/app/id6781808054",
+      "position": 27,
+      "url": "https://apps.apple.com/fr/app/id6798814385?pt=118326163&ct=iag_data_fr_fr&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-onepageppt",
+        "url": "https://apps.apple.com/fr/app/id6798814385?pt=118326163&ct=iag_data_fr_fr&mt=8",
+        "name": "OnePage PPT : diapo IA",
+        "description": "Transformez un mur de texte en UNE diapo réellement lue.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6798814385",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6798814385"
+          },
+          "name": "OnePage PPT : diapo IA",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/fr/app/id6798814385?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6798814385?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6798814385?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/fr/app/id6798814385?pt=118326163&ct=iag_data_fr_fr&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/onepageppt.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6798814385",
+          "inLanguage": "fr-FR",
+          "description": "Transformez un mur de texte en UNE diapo réellement lue.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-onepageppt"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "FR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 28,
+      "url": "https://apps.apple.com/fr/app/id6781808054?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-photocream",
-        "url": "https://apps.apple.com/fr/app/id6781808054",
+        "url": "https://apps.apple.com/fr/app/id6781808054?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "PhotoCream",
         "description": "Les créateurs voyage ont besoin d’un rendu argentique répétable qui ajoute grain, halation et caractère coloré sans uniformiser chaque destination avec le même filtre — PhotoCream est conçu pour cela.",
         "seller": {
@@ -1621,12 +1819,12 @@
           "name": "PhotoCream",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/fr/app/id6781808054",
-          "installUrl": "https://apps.apple.com/fr/app/id6781808054",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6781808054",
+          "url": "https://apps.apple.com/fr/app/id6781808054?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6781808054?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6781808054?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6781808054"
+            "target": "https://apps.apple.com/fr/app/id6781808054?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html#webpage"
@@ -1662,12 +1860,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
-      "url": "https://apps.apple.com/fr/app/id6780223070",
+      "position": 29,
+      "url": "https://apps.apple.com/fr/app/id6780223070?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-picclear",
-        "url": "https://apps.apple.com/fr/app/id6780223070",
+        "url": "https://apps.apple.com/fr/app/id6780223070?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "PicClear",
         "description": "Pour libérer de l’espace rapidement, ciblez d’abord les plus gros gains : photos en double exactes, rafales quasi identiques, flous rejetés et grosses vidéos — PicClear vous aide à le faire sur votre iPhone.",
         "seller": {
@@ -1687,12 +1885,12 @@
           "name": "PicClear",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/fr/app/id6780223070",
-          "installUrl": "https://apps.apple.com/fr/app/id6780223070",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6780223070",
+          "url": "https://apps.apple.com/fr/app/id6780223070?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6780223070?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6780223070?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6780223070"
+            "target": "https://apps.apple.com/fr/app/id6780223070?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html#webpage"
@@ -1728,12 +1926,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
-      "url": "https://apps.apple.com/fr/app/id6779977651",
+      "position": 30,
+      "url": "https://apps.apple.com/fr/app/id6779977651?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-scanto",
-        "url": "https://apps.apple.com/fr/app/id6779977651",
+        "url": "https://apps.apple.com/fr/app/id6779977651?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "ScanTo Pro",
         "description": "Si vous scannez des formulaires de consentement, des documents de sortie ou des références, le scanner doit garder ces documents sur l’appareil — jamais téléchargés sur un cloud tiers — ScanTo Pro est conçu pour cela.",
         "seller": {
@@ -1753,12 +1951,12 @@
           "name": "ScanTo Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/fr/app/id6779977651",
-          "installUrl": "https://apps.apple.com/fr/app/id6779977651",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6779977651",
+          "url": "https://apps.apple.com/fr/app/id6779977651?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6779977651?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6779977651?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6779977651"
+            "target": "https://apps.apple.com/fr/app/id6779977651?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html#webpage"
@@ -1794,12 +1992,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
-      "url": "https://apps.apple.com/fr/app/id6788236641",
+      "position": 31,
+      "url": "https://apps.apple.com/fr/app/id6788236641?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-sereno",
-        "url": "https://apps.apple.com/fr/app/id6788236641",
+        "url": "https://apps.apple.com/fr/app/id6788236641?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Sereno",
         "description": "Pour le sommeil, un abonnement qui vous harcèle chaque mois est l’opposé du repos — Sereno est conçu pour cela.",
         "seller": {
@@ -1819,12 +2017,12 @@
           "name": "Sereno",
           "operatingSystem": "iOS",
           "applicationCategory": "LifestyleApplication",
-          "url": "https://apps.apple.com/fr/app/id6788236641",
-          "installUrl": "https://apps.apple.com/fr/app/id6788236641",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6788236641",
+          "url": "https://apps.apple.com/fr/app/id6788236641?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6788236641?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6788236641?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6788236641"
+            "target": "https://apps.apple.com/fr/app/id6788236641?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-white-noise-app-for-falling-asleep-no-subscription.html#webpage"
@@ -1860,12 +2058,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
-      "url": "https://apps.apple.com/fr/app/id6780575828",
+      "position": 32,
+      "url": "https://apps.apple.com/fr/app/id6780575828?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-snapport",
-        "url": "https://apps.apple.com/fr/app/id6780575828",
+        "url": "https://apps.apple.com/fr/app/id6780575828?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Snapport",
         "description": "Pour une photo d’identité de bébé, personne d’autre ne doit apparaître et le fond doit être uni — mais pour les nourrissons, les yeux n’ont pas besoin d’être complètement ouverts.",
         "seller": {
@@ -1885,12 +2083,12 @@
           "name": "Snapport",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/fr/app/id6780575828",
-          "installUrl": "https://apps.apple.com/fr/app/id6780575828",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6780575828",
+          "url": "https://apps.apple.com/fr/app/id6780575828?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6780575828?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6780575828?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6780575828"
+            "target": "https://apps.apple.com/fr/app/id6780575828?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html#webpage"
@@ -1915,7 +2113,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "5.99",
+        "price": "6.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -1926,12 +2124,78 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
-      "url": "https://apps.apple.com/fr/app/id6782139553",
+      "position": 33,
+      "url": "https://apps.apple.com/fr/app/id6792856304?pt=118326163&ct=iag_data_fr_fr&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-snapportlite",
+        "url": "https://apps.apple.com/fr/app/id6792856304?pt=118326163&ct=iag_data_fr_fr&mt=8",
+        "name": "Snapport Lite",
+        "description": "Snapport Lite - Réalisez des photos de passeport, visa et documents avec repères de taille, fond et impression.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6792856304",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6792856304"
+          },
+          "name": "Snapport Lite",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/fr/app/id6792856304?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6792856304?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6792856304?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/fr/app/id6792856304?pt=118326163&ct=iag_data_fr_fr&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/snapportlite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6792856304",
+          "inLanguage": "fr-FR",
+          "description": "Snapport Lite - Réalisez des photos de passeport, visa et documents avec repères de taille, fond et impression.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-snapportlite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "FR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "url": "https://apps.apple.com/fr/app/id6782139553?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-sononote",
-        "url": "https://apps.apple.com/fr/app/id6782139553",
+        "url": "https://apps.apple.com/fr/app/id6782139553?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Sono Note",
         "description": "Après un appel, vous ne voulez pas une transcription brute — vous voulez le résumé, les actions à faire et un brouillon de suivi — Sono Note est conçu pour cela.",
         "seller": {
@@ -1951,12 +2215,12 @@
           "name": "Sono Note",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/fr/app/id6782139553",
-          "installUrl": "https://apps.apple.com/fr/app/id6782139553",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6782139553",
+          "url": "https://apps.apple.com/fr/app/id6782139553?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6782139553?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6782139553?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6782139553"
+            "target": "https://apps.apple.com/fr/app/id6782139553?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html#webpage"
@@ -1992,12 +2256,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
-      "url": "https://apps.apple.com/fr/app/id6791299610",
+      "position": 35,
+      "url": "https://apps.apple.com/fr/app/id6791299610?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-tripbeelite",
-        "url": "https://apps.apple.com/fr/app/id6791299610",
+        "url": "https://apps.apple.com/fr/app/id6791299610?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "TripBee Lite",
         "description": "Si vous planifiez un voyage à venir, une chronologie claire pour ce voyage est plus utile qu’une archive encombrée de tous les voyages que vous pourriez faire un jour — TripBee Lite est conçu pour cela.",
         "seller": {
@@ -2017,12 +2281,12 @@
           "name": "TripBee Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "TravelApplication",
-          "url": "https://apps.apple.com/fr/app/id6791299610",
-          "installUrl": "https://apps.apple.com/fr/app/id6791299610",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6791299610",
+          "url": "https://apps.apple.com/fr/app/id6791299610?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6791299610?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6791299610?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6791299610"
+            "target": "https://apps.apple.com/fr/app/id6791299610?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html#webpage"
@@ -2058,12 +2322,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
-      "url": "https://apps.apple.com/fr/app/id6787754435",
+      "position": 36,
+      "url": "https://apps.apple.com/fr/app/id6787754435?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-tripbee",
-        "url": "https://apps.apple.com/fr/app/id6787754435",
+        "url": "https://apps.apple.com/fr/app/id6787754435?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "TripBee Pro : Planificateur de voyage",
         "description": "Une bonne application d’itinéraire transforme un voyage désordonné en une chronologie claire jour par jour — vols, hôtels, activités, restaurants et transports — avec des icônes claires par type pour lire votre journée en un coup d’œil — TripBee Pro : Planificateur de voyage est conçu pour cela.",
         "seller": {
@@ -2083,12 +2347,12 @@
           "name": "TripBee Pro : Planificateur de voyage",
           "operatingSystem": "iOS",
           "applicationCategory": "TravelApplication",
-          "url": "https://apps.apple.com/fr/app/id6787754435",
-          "installUrl": "https://apps.apple.com/fr/app/id6787754435",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6787754435",
+          "url": "https://apps.apple.com/fr/app/id6787754435?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6787754435?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6787754435?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6787754435"
+            "target": "https://apps.apple.com/fr/app/id6787754435?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-trip-itinerary-planner-app-for-iphone.html#webpage"
@@ -2124,12 +2388,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
-      "url": "https://apps.apple.com/fr/app/id6782275018",
+      "position": 37,
+      "url": "https://apps.apple.com/fr/app/id6782275018?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-unblurry",
-        "url": "https://apps.apple.com/fr/app/id6782275018",
+        "url": "https://apps.apple.com/fr/app/id6782275018?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Unblurry",
         "description": "Les enfants ne tiennent jamais en place, donc les photos floues ou tremblantes sont inévitables — Unblurry est conçu pour cela.",
         "seller": {
@@ -2149,12 +2413,12 @@
           "name": "Unblurry",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/fr/app/id6782275018",
-          "installUrl": "https://apps.apple.com/fr/app/id6782275018",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6782275018",
+          "url": "https://apps.apple.com/fr/app/id6782275018?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6782275018?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6782275018?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6782275018"
+            "target": "https://apps.apple.com/fr/app/id6782275018?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html#webpage"
@@ -2190,14 +2454,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
-      "url": "https://apps.apple.com/fr/app/id6790467886",
+      "position": 38,
+      "url": "https://apps.apple.com/fr/app/id6790467886?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-wifiaid",
-        "url": "https://apps.apple.com/fr/app/id6790467886",
+        "url": "https://apps.apple.com/fr/app/id6790467886?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "WiFi Aid",
-        "description": "Identifiez la cause probable grâce aux contrôles indépendants des chemins, DNS, TCP, TLS, délais et stabilité. Achat initial unique, sans abonnement, pub",
+        "description": "When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing — WiFi Aid is built for this.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2214,20 +2478,20 @@
           },
           "name": "WiFi Aid",
           "operatingSystem": "iOS",
-          "applicationCategory": "UtilitiesApplication",
-          "url": "https://apps.apple.com/fr/app/id6790467886",
-          "installUrl": "https://apps.apple.com/fr/app/id6790467886",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6790467886",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/fr/app/id6790467886?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6790467886?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6790467886?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6790467886"
+            "target": "https://apps.apple.com/fr/app/id6790467886?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/wifiaid.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "fr-FR",
-          "description": "Identifiez la cause probable grâce aux contrôles indépendants des chemins, DNS, TCP, TLS, délais et stabilité. Achat initial unique, sans abonnement, pub",
+          "description": "When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing — WiFi Aid is built for this.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-wifiaid"
           },
@@ -2256,12 +2520,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
-      "url": "https://apps.apple.com/fr/app/id6789917808",
+      "position": 39,
+      "url": "https://apps.apple.com/fr/app/id6789917808?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-wordmate",
-        "url": "https://apps.apple.com/fr/app/id6789917808",
+        "url": "https://apps.apple.com/fr/app/id6789917808?pt=118326163&ct=iag_data_fr_fr&mt=8",
         "name": "Wordmate : Apprendre 44 langues",
         "description": "Les navetteurs ont besoin d’une pratique du vocabulaire qui s’intègre dans les moments libres sans exiger une leçon complète, un nouveau compte ou un téléphone en main pour chaque révision — Wordmate : Apprendre 44 langues est conçu pour cela.",
         "seller": {
@@ -2281,12 +2545,12 @@
           "name": "Wordmate : Apprendre 44 langues",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/fr/app/id6789917808",
-          "installUrl": "https://apps.apple.com/fr/app/id6789917808",
-          "downloadUrl": "https://apps.apple.com/fr/app/id6789917808",
+          "url": "https://apps.apple.com/fr/app/id6789917808?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6789917808?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6789917808?pt=118326163&ct=iag_data_fr_fr&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/fr/app/id6789917808"
+            "target": "https://apps.apple.com/fr/app/id6789917808?pt=118326163&ct=iag_data_fr_fr&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html#webpage"
@@ -2312,6 +2576,72 @@
           "isAccessibleForFree": false
         },
         "price": "9.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "FR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 40,
+      "url": "https://apps.apple.com/fr/app/id6797601720?pt=118326163&ct=iag_data_fr_fr&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-wordmatelite",
+        "url": "https://apps.apple.com/fr/app/id6797601720?pt=118326163&ct=iag_data_fr_fr&mt=8",
+        "name": "Wordmate Lite: vocabulaire",
+        "description": "Cinq mots, une minute, un pas visible sur votre chemin. Wordmate Lite transforme la résolution un peu vague d'apprendre une langue en une habitude assez",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6797601720",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6797601720"
+          },
+          "name": "Wordmate Lite: vocabulaire",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/fr/app/id6797601720?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "installUrl": "https://apps.apple.com/fr/app/id6797601720?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "downloadUrl": "https://apps.apple.com/fr/app/id6797601720?pt=118326163&ct=iag_data_fr_fr&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/fr/app/id6797601720?pt=118326163&ct=iag_data_fr_fr&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/fr-FR/wordmatelite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6797601720",
+          "inLanguage": "fr-FR",
+          "description": "Cinq mots, une minute, un pas visible sur votre chemin. Wordmate Lite transforme la résolution un peu vague d'apprendre une langue en une habitude assez",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-wordmatelite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

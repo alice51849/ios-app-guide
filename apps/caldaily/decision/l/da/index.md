@@ -2,7 +2,7 @@
 title: "CalDaily: lommeregner & temaer — Widget, værktøjer, historik | iOS App"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/da/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ En lommeregner, du beholder, fordi den husker, hvad hvert tal handlede om. De fl
 - Widget
 - App Store · Gratis
 
-[Hent CalDaily: lommeregner & temaer i App Store](https://apps.apple.com/dk/app/id6794178671)
+[Hent CalDaily: lommeregner & temaer i App Store](https://apps.apple.com/dk/app/id6794178671?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/caldaily.html)
 

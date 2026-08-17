@@ -2,7 +2,7 @@
 title: "ஒரு வரவிருக்கும் பயணத்திற்கான சிறந்த எளிய பயண திட்டமிடும் செயலி iPhoneக்கானது"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/ta-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்
 - App Store · இலவசம்
 
-[App Storeஇல் TripBee Lite ஐப் பெறுங்கள் →](https://apps.apple.com/in/app/id6791299610)
+[App Storeஇல் TripBee Lite ஐப் பெறுங்கள் →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=iag_data_ta_in&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

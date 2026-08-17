@@ -2,7 +2,7 @@
 title: "miglior app vocabolario per pendolari con Apple Watch"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/it/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,7 +22,7 @@ I pendolari hanno bisogno di pratica vocabolario che si adatti ai minuti liberi 
 - Apple Watch
 - App Store · 9,99 €
 
-[Scarica Wordmate: Learn 44 Languages su App Store →](https://apps.apple.com/it/app/id6789917808)
+[Scarica Wordmate: Learn 44 Languages su App Store →](https://apps.apple.com/it/app/id6789917808?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

@@ -2,7 +2,7 @@
 title: "beste cv-bouwer app voor carrièreswitchers 2026"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/nl-NL/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Bij het wisselen van vakgebied is het cv-probleem anders: je ervaring is echt ma
 - Gratis te starten · levenslange ontgrendeling
 - App Store · Gratis
 
-[Download CV Desk in de App Store →](https://apps.apple.com/nl/app/id6781337213)
+[Download CV Desk in de App Store →](https://apps.apple.com/nl/app/id6781337213?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-resume-builder-app-for-career-changers-2026.html)
 

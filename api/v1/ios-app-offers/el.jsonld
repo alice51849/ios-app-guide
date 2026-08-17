@@ -6,18 +6,18 @@
   "name": "Κατάλογος Προθέσεων Αναζήτησης Εκδότη Lumi Studio",
   "description": "Ένας πρωτογενής κατάλογος που δείχνει για ποιον προορίζεται κάθε εφαρμογή, το έργο που προσπαθεί να ολοκληρώσει και την άμεση διαδρομή στο App Store.",
   "inLanguage": "el",
-  "dateModified": "2026-07-31",
-  "numberOfItems": 35,
+  "dateModified": "2026-08-17",
+  "numberOfItems": 40,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
-      "url": "https://apps.apple.com/gr/app/id6791658210",
+      "url": "https://apps.apple.com/gr/app/id6791658210?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-aibriefpack",
-        "url": "https://apps.apple.com/gr/app/id6791658210",
+        "url": "https://apps.apple.com/gr/app/id6791658210?pt=118326163&ct=iag_data_el&mt=8",
         "name": "AI Brief",
         "description": "Καλύτερο πλαίσιο. Καλύτερες απαντήσεις.",
         "seller": {
@@ -37,12 +37,12 @@
           "name": "AI Brief",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/gr/app/id6791658210",
-          "installUrl": "https://apps.apple.com/gr/app/id6791658210",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6791658210",
+          "url": "https://apps.apple.com/gr/app/id6791658210?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6791658210?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6791658210?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6791658210"
+            "target": "https://apps.apple.com/gr/app/id6791658210?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/aibriefpack.html#webpage"
@@ -79,11 +79,11 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "url": "https://apps.apple.com/gr/app/id6784974530",
+      "url": "https://apps.apple.com/gr/app/id6784974530?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-aim990",
-        "url": "https://apps.apple.com/gr/app/id6784974530",
+        "url": "https://apps.apple.com/gr/app/id6784974530?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Aim990",
         "description": "Το Μέρος 5 φαίνεται σύντομο, αλλά οι ερωτήσεις με ελλιπείς προτάσεις μπορούν να καταναλώσουν χρόνο αν η γραμματική και το λεξιλόγιο δεν είναι αυτόματα.",
         "seller": {
@@ -103,12 +103,12 @@
           "name": "Aim990",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/gr/app/id6784974530",
-          "installUrl": "https://apps.apple.com/gr/app/id6784974530",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6784974530",
+          "url": "https://apps.apple.com/gr/app/id6784974530?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6784974530?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6784974530?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6784974530"
+            "target": "https://apps.apple.com/gr/app/id6784974530?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html#webpage"
@@ -145,11 +145,11 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "url": "https://apps.apple.com/gr/app/id6792483140",
+      "url": "https://apps.apple.com/gr/app/id6792483140?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-aim990plus",
-        "url": "https://apps.apple.com/gr/app/id6792483140",
+        "url": "https://apps.apple.com/gr/app/id6792483140?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Aim990 Plus",
         "description": "Το Aim990 Plus είναι ένα εργαλείο εξάσκησης για ενήλικες που θέλουν να κατανοούν με σιγουριά τον προφορικό και γραπτό αγγλικό λόγο όταν ο χρόνος είναι",
         "seller": {
@@ -169,12 +169,12 @@
           "name": "Aim990 Plus",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/gr/app/id6792483140",
-          "installUrl": "https://apps.apple.com/gr/app/id6792483140",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6792483140",
+          "url": "https://apps.apple.com/gr/app/id6792483140?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6792483140?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6792483140?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6792483140"
+            "target": "https://apps.apple.com/gr/app/id6792483140?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/aim990plus.html#webpage"
@@ -211,11 +211,77 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "url": "https://apps.apple.com/gr/app/id6781337213",
+      "url": "https://apps.apple.com/gr/app/id6794178671?pt=118326163&ct=iag_data_el&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-caldaily",
+        "url": "https://apps.apple.com/gr/app/id6794178671?pt=118326163&ct=iag_data_el&mt=8",
+        "name": "CalDaily αριθμομηχανή",
+        "description": "Μια αριθμομηχανή που θα συνεχίσετε πραγματικά να χρησιμοποιείτε, επειδή θυμάται τι κρύβεται πίσω από κάθε αριθμό.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6794178671",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6794178671"
+          },
+          "name": "CalDaily αριθμομηχανή",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/gr/app/id6794178671?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6794178671?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6794178671?pt=118326163&ct=iag_data_el&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/gr/app/id6794178671?pt=118326163&ct=iag_data_el&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/el/caldaily.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6794178671",
+          "inLanguage": "el",
+          "description": "Μια αριθμομηχανή που θα συνεχίσετε πραγματικά να χρησιμοποιείτε, επειδή θυμάται τι κρύβεται πίσω από κάθε αριθμό.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-caldaily"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "GR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "url": "https://apps.apple.com/gr/app/id6781337213?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-cvdesk",
-        "url": "https://apps.apple.com/gr/app/id6781337213",
+        "url": "https://apps.apple.com/gr/app/id6781337213?pt=118326163&ct=iag_data_el&mt=8",
         "name": "CV Desk",
         "description": "Όταν αλλάζετε πεδίο, το πρόβλημα με το βιογραφικό είναι διαφορετικό: η εμπειρία σας είναι πραγματική αλλά «άσχετη» στο χαρτί, και τα φίλτρα ATS σας απορρίπτουν πριν το διαβάσει άνθρωπος — το CV Desk είναι φτιαγμένο γι’ αυτό.",
         "seller": {
@@ -235,12 +301,12 @@
           "name": "CV Desk",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/gr/app/id6781337213",
-          "installUrl": "https://apps.apple.com/gr/app/id6781337213",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6781337213",
+          "url": "https://apps.apple.com/gr/app/id6781337213?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6781337213?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6781337213?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6781337213"
+            "target": "https://apps.apple.com/gr/app/id6781337213?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-resume-builder-app-for-career-changers-2026.html#webpage"
@@ -276,12 +342,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 5,
-      "url": "https://apps.apple.com/gr/app/id6782251621",
+      "position": 6,
+      "url": "https://apps.apple.com/gr/app/id6782251621?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-cyca",
-        "url": "https://apps.apple.com/gr/app/id6782251621",
+        "url": "https://apps.apple.com/gr/app/id6782251621?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Cyca",
         "description": "Σε μια κατηγορία όπου η ευαισθησία των δεδομένων είναι το παν, η σωστή εφαρμογή παρακολούθησης περιόδου κρατά όλα — ροή, διάθεση, συμπτώματα, θερμοκρασία, οικειότητα — στη συσκευή σας, χωρίς λογαριασμό και χωρίς συγχρονισμό στο cloud — το Cyca είναι φτιαγμένο γι’ αυτό.",
         "seller": {
@@ -301,12 +367,12 @@
           "name": "Cyca",
           "operatingSystem": "iOS",
           "applicationCategory": "HealthApplication",
-          "url": "https://apps.apple.com/gr/app/id6782251621",
-          "installUrl": "https://apps.apple.com/gr/app/id6782251621",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6782251621",
+          "url": "https://apps.apple.com/gr/app/id6782251621?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6782251621?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6782251621?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6782251621"
+            "target": "https://apps.apple.com/gr/app/id6782251621?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-period-tracker-app-no-account-required-iphone.html#webpage"
@@ -342,12 +408,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 6,
-      "url": "https://apps.apple.com/gr/app/id6790418321",
+      "position": 7,
+      "url": "https://apps.apple.com/gr/app/id6790418321?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-dailymate",
-        "url": "https://apps.apple.com/gr/app/id6790418321",
+        "url": "https://apps.apple.com/gr/app/id6790418321?pt=118326163&ct=iag_data_el&mt=8",
         "name": "DailyMate",
         "description": "Πριν από ένα ταξίδι, οι πλήρεις φράσεις για πραγματικές καταστάσεις είναι πιο χρήσιμες από απομονωμένο λεξιλόγιο που πρέπει ακόμα να συνθέσετε υπό πίεση — το DailyMate είναι φτιαγμένο γι’ αυτό.",
         "seller": {
@@ -367,12 +433,12 @@
           "name": "DailyMate",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/gr/app/id6790418321",
-          "installUrl": "https://apps.apple.com/gr/app/id6790418321",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6790418321",
+          "url": "https://apps.apple.com/gr/app/id6790418321?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6790418321?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6790418321?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6790418321"
+            "target": "https://apps.apple.com/gr/app/id6790418321?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html#webpage"
@@ -408,12 +474,78 @@
     },
     {
       "@type": "ListItem",
-      "position": 7,
-      "url": "https://apps.apple.com/gr/app/id6755782939",
+      "position": 8,
+      "url": "https://apps.apple.com/gr/app/id6794725568?pt=118326163&ct=iag_data_el&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-dailymatelite",
+        "url": "https://apps.apple.com/gr/app/id6794725568?pt=118326163&ct=iag_data_el&mt=8",
+        "name": "DailyMate Lite: Μίλα σήμερα",
+        "description": "Μιλήστε φυσικά όταν έρθει η στιγμή. Το DailyMate Lite μετατρέπει καθημερινές καταστάσεις σε σύντομη εξάσκηση με ατάκες και απαντήσεις σε 50 γλώσσες",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6794725568",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6794725568"
+          },
+          "name": "DailyMate Lite: Μίλα σήμερα",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/gr/app/id6794725568?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6794725568?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6794725568?pt=118326163&ct=iag_data_el&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/gr/app/id6794725568?pt=118326163&ct=iag_data_el&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/el/dailymatelite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6794725568",
+          "inLanguage": "el",
+          "description": "Μιλήστε φυσικά όταν έρθει η στιγμή. Το DailyMate Lite μετατρέπει καθημερινές καταστάσεις σε σύντομη εξάσκηση με ατάκες και απαντήσεις σε 50 γλώσσες",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-dailymatelite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "GR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "url": "https://apps.apple.com/gr/app/id6755782939?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-gmoney",
-        "url": "https://apps.apple.com/gr/app/id6755782939",
+        "url": "https://apps.apple.com/gr/app/id6755782939?pt=118326163&ct=iag_data_el&mt=8",
         "name": "G+Money",
         "description": "Σε ένα ταξίδι χρειάζεστε έναν προϋπολογισμό που λειτουργεί εκτός σύνδεσης σε χώρα χωρίς δεδομένα, διαχειρίζεται πολλαπλά νομίσματα και δεν απαιτεί λογαριασμό — οργανωμένο ανά ταξίδι ώστε κάθε διακοπές να είναι ξεχωριστές — το G+Money είναι φτιαγμένο γι’ αυτό.",
         "seller": {
@@ -433,12 +565,12 @@
           "name": "G+Money",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/gr/app/id6755782939",
-          "installUrl": "https://apps.apple.com/gr/app/id6755782939",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6755782939",
+          "url": "https://apps.apple.com/gr/app/id6755782939?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6755782939?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6755782939?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6755782939"
+            "target": "https://apps.apple.com/gr/app/id6755782939?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-travel-budget-tracker-app-no-subscription-iphone.html#webpage"
@@ -474,12 +606,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 8,
-      "url": "https://apps.apple.com/gr/app/id6793436548",
+      "position": 10,
+      "url": "https://apps.apple.com/gr/app/id6793436548?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-gmoneylite",
-        "url": "https://apps.apple.com/gr/app/id6793436548",
+        "url": "https://apps.apple.com/gr/app/id6793436548?pt=118326163&ct=iag_data_el&mt=8",
         "name": "G+Money Lite",
         "description": "G+Money Lite — Έξυπνος μετατροπέας νομισμάτων & παρακολούθησης εξόδων",
         "seller": {
@@ -499,12 +631,12 @@
           "name": "G+Money Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/gr/app/id6793436548",
-          "installUrl": "https://apps.apple.com/gr/app/id6793436548",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6793436548",
+          "url": "https://apps.apple.com/gr/app/id6793436548?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6793436548?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6793436548?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6793436548"
+            "target": "https://apps.apple.com/gr/app/id6793436548?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/gmoneylite.html#webpage"
@@ -540,12 +672,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 9,
-      "url": "https://apps.apple.com/gr/app/id6794039979",
+      "position": 11,
+      "url": "https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-hourstaglite",
-        "url": "https://apps.apple.com/gr/app/id6794039979",
+        "url": "https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=iag_data_el&mt=8",
         "name": "HoursTag Lite",
         "description": "HoursTag Lite - Δείτε την πραγματική τιμή των πραγμάτων",
         "seller": {
@@ -565,12 +697,12 @@
           "name": "HoursTag Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/gr/app/id6794039979",
-          "installUrl": "https://apps.apple.com/gr/app/id6794039979",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6794039979",
+          "url": "https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6794039979"
+            "target": "https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/hourstaglite.html#webpage"
@@ -606,12 +738,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 10,
-      "url": "https://apps.apple.com/gr/app/id6754218117",
+      "position": 12,
+      "url": "https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-hourstag",
-        "url": "https://apps.apple.com/gr/app/id6754218117",
+        "url": "https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=iag_data_el&mt=8",
         "name": "HoursTag: Ώρες αγοράς",
         "description": "Πόσο κοστίζει πραγματικά; Όχι σε ευρώ, αλλά σε ώρες από τη ζωή σου.",
         "seller": {
@@ -631,12 +763,12 @@
           "name": "HoursTag: Ώρες αγοράς",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/gr/app/id6754218117",
-          "installUrl": "https://apps.apple.com/gr/app/id6754218117",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6754218117",
+          "url": "https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6754218117"
+            "target": "https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/hourstag.html#webpage"
@@ -672,12 +804,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 11,
-      "url": "https://apps.apple.com/gr/app/id6780107485",
+      "position": 13,
+      "url": "https://apps.apple.com/gr/app/id6780107485?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lockhour",
-        "url": "https://apps.apple.com/gr/app/id6780107485",
+        "url": "https://apps.apple.com/gr/app/id6780107485?pt=118326163&ct=iag_data_el&mt=8",
         "name": "LockHour Pro",
         "description": "Κατά τη διάρκεια εξετάσεων, η θέληση δεν αρκεί — χρειάζεται αυστηρό χρονικό μπλοκάρισμα — το LockHour Pro είναι φτιαγμένο γι’ αυτό.",
         "seller": {
@@ -697,12 +829,12 @@
           "name": "LockHour Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/gr/app/id6780107485",
-          "installUrl": "https://apps.apple.com/gr/app/id6780107485",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6780107485",
+          "url": "https://apps.apple.com/gr/app/id6780107485?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6780107485?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6780107485?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6780107485"
+            "target": "https://apps.apple.com/gr/app/id6780107485?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-app-to-block-social-media-while-studying-iphone.html#webpage"
@@ -738,12 +870,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 12,
-      "url": "https://apps.apple.com/gr/app/id6773017109",
+      "position": 14,
+      "url": "https://apps.apple.com/gr/app/id6773017109?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumibopomofo",
-        "url": "https://apps.apple.com/gr/app/id6773017109",
+        "url": "https://apps.apple.com/gr/app/id6773017109?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Bopomofo",
         "description": "Για παιδί που μαθαίνει Zhuyin για πρώτη φορά, η εφαρμογή πρέπει να καλύπτει όλα τα 37 σύμβολα μέσω σχεδίασης και παιχνιδιού — σχεδιασμένη για την ηλικία 4–7, χωρίς διαφημίσεις, χωρίς συλλογή δεδομένων — το Lumi Bopomofo είναι φτιαγμένο γι' αυτό.",
         "seller": {
@@ -763,12 +895,12 @@
           "name": "Lumi Bopomofo",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/gr/app/id6773017109",
-          "installUrl": "https://apps.apple.com/gr/app/id6773017109",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6773017109",
+          "url": "https://apps.apple.com/gr/app/id6773017109?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6773017109?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6773017109?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6773017109"
+            "target": "https://apps.apple.com/gr/app/id6773017109?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html#webpage"
@@ -804,12 +936,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 13,
-      "url": "https://apps.apple.com/gr/app/id6775773117",
+      "position": 15,
+      "url": "https://apps.apple.com/gr/app/id6775773117?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumibopomofopro",
-        "url": "https://apps.apple.com/gr/app/id6775773117",
+        "url": "https://apps.apple.com/gr/app/id6775773117?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Bopomofo Pro",
         "description": "Δίγλωσσα παιδιά που μαθαίνουν Zhuyin στο σπίτι χρειάζονται πλήρη διαδρομή μέσα από ήχους, σύμβολα, τόνους και συνδυασμό, με αρκετή παιχνιδιάρικη επανάληψη ώστε το σύστημα να γίνει οικείο — το Lumi Bopomofo Pro είναι φτιαγμένο γι’ αυτό.",
         "seller": {
@@ -829,12 +961,12 @@
           "name": "Lumi Bopomofo Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/gr/app/id6775773117",
-          "installUrl": "https://apps.apple.com/gr/app/id6775773117",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6775773117",
+          "url": "https://apps.apple.com/gr/app/id6775773117?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6775773117?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6775773117?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6775773117"
+            "target": "https://apps.apple.com/gr/app/id6775773117?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
@@ -870,12 +1002,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 14,
-      "url": "https://apps.apple.com/gr/app/id6778748533",
+      "position": 16,
+      "url": "https://apps.apple.com/gr/app/id6778748533?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumiletters",
-        "url": "https://apps.apple.com/gr/app/id6778748533",
+        "url": "https://apps.apple.com/gr/app/id6778748533?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Letters",
         "description": "Για μικρό παιδί, το κρίσιμο είναι οι διαφημίσεις και η συλλογή δεδομένων — μια εκπαιδευτική εφαρμογή πρέπει να διδάσκει μέσα σε παιχνίδι χωρίς διαφημίσεις, χωρίς συλλογή δεδομένων από το παιδί και με μία πληρωμή που εμπιστεύονται οι γονείς — το Lumi Letters είναι φτιαγμένο γι' αυτό.",
         "seller": {
@@ -895,12 +1027,12 @@
           "name": "Lumi Letters",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/gr/app/id6778748533",
-          "installUrl": "https://apps.apple.com/gr/app/id6778748533",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6778748533",
+          "url": "https://apps.apple.com/gr/app/id6778748533?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6778748533?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6778748533?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6778748533"
+            "target": "https://apps.apple.com/gr/app/id6778748533?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-educational-game-app-for-kids-no-ads-iphone.html#webpage"
@@ -936,12 +1068,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 15,
-      "url": "https://apps.apple.com/gr/app/id6778491147",
+      "position": 17,
+      "url": "https://apps.apple.com/gr/app/id6778491147?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumiletterspro",
-        "url": "https://apps.apple.com/gr/app/id6778491147",
+        "url": "https://apps.apple.com/gr/app/id6778491147?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Letters Pro",
         "description": "Οι οικογένειες που προετοιμάζουν για νηπιαγωγείο χρειάζονται πλήρη διαδρομή πρώιμης ανάγνωσης που συνδέει ήχους γραμμάτων, ιχνογράφηση και δημιουργία λέξεων αντί για συλλογή ασύνδετων παιχνιδιών αλφαβήτου — το Lumi Letters Pro είναι φτιαγμένο γι’ αυτό.",
         "seller": {
@@ -961,12 +1093,12 @@
           "name": "Lumi Letters Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/gr/app/id6778491147",
-          "installUrl": "https://apps.apple.com/gr/app/id6778491147",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6778491147",
+          "url": "https://apps.apple.com/gr/app/id6778491147?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6778491147?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6778491147?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6778491147"
+            "target": "https://apps.apple.com/gr/app/id6778491147?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html#webpage"
@@ -1002,12 +1134,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 16,
-      "url": "https://apps.apple.com/gr/app/id6778269699",
+      "position": 18,
+      "url": "https://apps.apple.com/gr/app/id6778269699?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimath",
-        "url": "https://apps.apple.com/gr/app/id6778269699",
+        "url": "https://apps.apple.com/gr/app/id6778269699?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Math Planet",
         "description": "Η καλύτερη μαθηματική εφαρμογή για παιδιά εκπαιδεύει τη λογική — μοτίβα, ακολουθίες, χωρική σκέψη — όχι απλή αριθμητική, και το κρύβει μέσα σε παιχνίδι που το παιδί θέλει να παίξει — το Lumi Math Planet είναι φτιαγμένο γι' αυτό.",
         "seller": {
@@ -1027,12 +1159,12 @@
           "name": "Lumi Math Planet",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/gr/app/id6778269699",
-          "installUrl": "https://apps.apple.com/gr/app/id6778269699",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6778269699",
+          "url": "https://apps.apple.com/gr/app/id6778269699?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6778269699?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6778269699?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6778269699"
+            "target": "https://apps.apple.com/gr/app/id6778269699?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html#webpage"
@@ -1068,12 +1200,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 17,
-      "url": "https://apps.apple.com/gr/app/id6776958488",
+      "position": 19,
+      "url": "https://apps.apple.com/gr/app/id6776958488?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimathpro",
-        "url": "https://apps.apple.com/gr/app/id6776958488",
+        "url": "https://apps.apple.com/gr/app/id6776958488?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Math Pro",
         "description": "Μια πλήρης εφαρμογή πρώιμων μαθηματικών πρέπει να κάνει το μέτρημα, την αίσθηση αριθμών και τις πρώτες πράξεις να μοιάζουν με μία συνδεδεμένη περιπέτεια αντί για μεμονωμένες ασκήσεις — το Lumi Math Pro είναι φτιαγμένο γι’ αυτό.",
         "seller": {
@@ -1093,12 +1225,12 @@
           "name": "Lumi Math Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/gr/app/id6776958488",
-          "installUrl": "https://apps.apple.com/gr/app/id6776958488",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6776958488",
+          "url": "https://apps.apple.com/gr/app/id6776958488?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6776958488?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6776958488?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6776958488"
+            "target": "https://apps.apple.com/gr/app/id6776958488?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html#webpage"
@@ -1134,12 +1266,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 18,
-      "url": "https://apps.apple.com/gr/app/id6779750237",
+      "position": 20,
+      "url": "https://apps.apple.com/gr/app/id6779750237?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimission",
-        "url": "https://apps.apple.com/gr/app/id6779750237",
+        "url": "https://apps.apple.com/gr/app/id6779750237?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Mission Planet",
         "description": "Για ένα παιδί προσχολικής ηλικίας, η βραδινή ρουτίνα λειτουργεί καλύτερα όταν είναι σύντομη, οπτική και αρκετά προβλέψιμη ώστε το παιδί να την ακολουθεί χωρίς άλλη υπενθύμιση — Το Lumi Mission Planet έχει δημιουργηθεί γι’ αυτό.",
         "seller": {
@@ -1159,12 +1291,12 @@
           "name": "Lumi Mission Planet",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/gr/app/id6779750237",
-          "installUrl": "https://apps.apple.com/gr/app/id6779750237",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6779750237",
+          "url": "https://apps.apple.com/gr/app/id6779750237?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6779750237?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6779750237?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6779750237"
+            "target": "https://apps.apple.com/gr/app/id6779750237?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html#webpage"
@@ -1200,12 +1332,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 19,
-      "url": "https://apps.apple.com/gr/app/id6779745474",
+      "position": 21,
+      "url": "https://apps.apple.com/gr/app/id6779745474?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimissionpro",
-        "url": "https://apps.apple.com/gr/app/id6779745474",
+        "url": "https://apps.apple.com/gr/app/id6779745474?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Mission Planet Pro",
         "description": "Το βούρτσισμα δοντιών και η ώρα ύπνου συχνά αποτυγχάνουν την ίδια στιγμή κάθε βράδυ: το παιδί είναι κουρασμένο, ο γονέας είναι κουρασμένος και το επόμενο βήμα δεν είναι αρκετά ορατό.",
         "seller": {
@@ -1225,12 +1357,12 @@
           "name": "Lumi Mission Planet Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/gr/app/id6779745474",
-          "installUrl": "https://apps.apple.com/gr/app/id6779745474",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6779745474",
+          "url": "https://apps.apple.com/gr/app/id6779745474?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6779745474?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6779745474?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6779745474"
+            "target": "https://apps.apple.com/gr/app/id6779745474?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html#webpage"
@@ -1266,12 +1398,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
-      "url": "https://apps.apple.com/gr/app/id6787193643",
+      "position": 22,
+      "url": "https://apps.apple.com/gr/app/id6787193643?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-tripplanet",
-        "url": "https://apps.apple.com/gr/app/id6787193643",
+        "url": "https://apps.apple.com/gr/app/id6787193643?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Trip Planet",
         "description": "Οι γονείς που ταξιδεύουν με μικρά παιδιά χρειάζονται δραστηριότητες που μετατρέπουν το πακετάρισμα, την αναμονή και την ανακάλυψη νέου τόπου σε μέρος της περιπέτειας αντί για άλλη πηγή άγχους — το Lumi Trip Planet είναι φτιαγμένο γι’ αυτό.",
         "seller": {
@@ -1291,12 +1423,12 @@
           "name": "Lumi Trip Planet",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/gr/app/id6787193643",
-          "installUrl": "https://apps.apple.com/gr/app/id6787193643",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6787193643",
+          "url": "https://apps.apple.com/gr/app/id6787193643?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6787193643?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6787193643?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6787193643"
+            "target": "https://apps.apple.com/gr/app/id6787193643?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
@@ -1332,12 +1464,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
-      "url": "https://apps.apple.com/gr/app/id6779552704",
+      "position": 23,
+      "url": "https://apps.apple.com/gr/app/id6779552704?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumiweather",
-        "url": "https://apps.apple.com/gr/app/id6779552704",
+        "url": "https://apps.apple.com/gr/app/id6779552704?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Weather",
         "description": "Οι γονείς που σχεδιάζουν εξωτερικές δραστηριότητες χρειάζονται κάτι περισσότερο από θερμοκρασία: χρειάζονται γρήγορη, προσαρμοσμένη στην ηλικία εικόνα αν οι συνθήκες ταιριάζουν σε παιδί και τι ρούχα χρειάζονται — το Lumi Weather είναι φτιαγμένο γι’ αυτό.",
         "seller": {
@@ -1357,12 +1489,12 @@
           "name": "Lumi Weather",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/gr/app/id6779552704",
-          "installUrl": "https://apps.apple.com/gr/app/id6779552704",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6779552704",
+          "url": "https://apps.apple.com/gr/app/id6779552704?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6779552704?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6779552704?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6779552704"
+            "target": "https://apps.apple.com/gr/app/id6779552704?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
@@ -1398,12 +1530,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
-      "url": "https://apps.apple.com/gr/app/id6792850916",
+      "position": 24,
+      "url": "https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-maskmyfile",
-        "url": "https://apps.apple.com/gr/app/id6792850916",
+        "url": "https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Mask My File",
         "description": "Μοιραστείτε με ασφάλεια χωρίς να χάσετε το χρήσιμο πλαίσιο. Το Mask My File εντοπίζει ιδιωτικά στοιχεία προτού στείλετε ένα αρχείο, αποκρύπτει μόνιμα",
         "seller": {
@@ -1422,13 +1554,13 @@
           },
           "name": "Mask My File",
           "operatingSystem": "iOS",
-          "applicationCategory": "UtilitiesApplication",
-          "url": "https://apps.apple.com/gr/app/id6792850916",
-          "installUrl": "https://apps.apple.com/gr/app/id6792850916",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6792850916",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6792850916"
+            "target": "https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/maskmyfile.html#webpage"
@@ -1464,12 +1596,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
-      "url": "https://apps.apple.com/gr/app/id6785004775",
+      "position": 25,
+      "url": "https://apps.apple.com/gr/app/id6785004775?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-mochi",
-        "url": "https://apps.apple.com/gr/app/id6785004775",
+        "url": "https://apps.apple.com/gr/app/id6785004775?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Mochi",
         "description": "Αν οι περισσότερες εφαρμογές λίστας εργασιών σας φαίνονται φορτωμένες, η σωστή είναι μια καθαρή λίστα με υπενθυμίσεις, κανόνες επανάληψης και υποστήριξη Watch — και σκόπιμα χωρίς μηχανισμούς διαχείρισης έργων — το Mochi είναι φτιαγμένο γι' αυτό.",
         "seller": {
@@ -1489,12 +1621,12 @@
           "name": "Mochi",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/gr/app/id6785004775",
-          "installUrl": "https://apps.apple.com/gr/app/id6785004775",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6785004775",
+          "url": "https://apps.apple.com/gr/app/id6785004775?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6785004775?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6785004775?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6785004775"
+            "target": "https://apps.apple.com/gr/app/id6785004775?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-simple-to-do-list-app-iphone-no-subscription.html#webpage"
@@ -1530,12 +1662,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
-      "url": "https://apps.apple.com/gr/app/id6790800323",
+      "position": 26,
+      "url": "https://apps.apple.com/gr/app/id6790800323?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-mochidonestamp",
-        "url": "https://apps.apple.com/gr/app/id6790800323",
+        "url": "https://apps.apple.com/gr/app/id6790800323?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Mochi DoneStamp: Τελευταία",
         "description": "Πότε άλλαξες τελευταία τα σεντόνια, πότισες ένα φυτό, τηλεφώνησες στην οικογένεια, αποθήκευσες φωτογραφίες ή άλλαξες φίλτρο;",
         "seller": {
@@ -1555,12 +1687,12 @@
           "name": "Mochi DoneStamp: Τελευταία",
           "operatingSystem": "iOS",
           "applicationCategory": "LifestyleApplication",
-          "url": "https://apps.apple.com/gr/app/id6790800323",
-          "installUrl": "https://apps.apple.com/gr/app/id6790800323",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6790800323",
+          "url": "https://apps.apple.com/gr/app/id6790800323?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6790800323?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6790800323?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6790800323"
+            "target": "https://apps.apple.com/gr/app/id6790800323?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/mochidonestamp.html#webpage"
@@ -1596,12 +1728,78 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
-      "url": "https://apps.apple.com/gr/app/id6781808054",
+      "position": 27,
+      "url": "https://apps.apple.com/gr/app/id6798814385?pt=118326163&ct=iag_data_el&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-onepageppt",
+        "url": "https://apps.apple.com/gr/app/id6798814385?pt=118326163&ct=iag_data_el&mt=8",
+        "name": "OnePage PPT: Παρουσίαση AI",
+        "description": "Μετατρέψτε έναν τοίχο κειμένου σε ΜΙΑ σελίδα που όντως διαβάζεται.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6798814385",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6798814385"
+          },
+          "name": "OnePage PPT: Παρουσίαση AI",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/gr/app/id6798814385?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6798814385?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6798814385?pt=118326163&ct=iag_data_el&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/gr/app/id6798814385?pt=118326163&ct=iag_data_el&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/el/onepageppt.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6798814385",
+          "inLanguage": "el",
+          "description": "Μετατρέψτε έναν τοίχο κειμένου σε ΜΙΑ σελίδα που όντως διαβάζεται.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-onepageppt"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "GR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 28,
+      "url": "https://apps.apple.com/gr/app/id6781808054?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-photocream",
-        "url": "https://apps.apple.com/gr/app/id6781808054",
+        "url": "https://apps.apple.com/gr/app/id6781808054?pt=118326163&ct=iag_data_el&mt=8",
         "name": "PhotoCream",
         "description": "Οι ταξιδιωτικοί δημιουργοί χρειάζονται επαναλαμβανόμενο φιλμ εφέ που προσθέτει κόκκο, αλογονοποίηση και χρωματικό χαρακτήρα χωρίς να κάνει κάθε προορισμό ίδιο φίλτρο — το PhotoCream είναι φτιαγμένο γι’ αυτό.",
         "seller": {
@@ -1621,12 +1819,12 @@
           "name": "PhotoCream",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/gr/app/id6781808054",
-          "installUrl": "https://apps.apple.com/gr/app/id6781808054",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6781808054",
+          "url": "https://apps.apple.com/gr/app/id6781808054?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6781808054?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6781808054?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6781808054"
+            "target": "https://apps.apple.com/gr/app/id6781808054?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html#webpage"
@@ -1662,12 +1860,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
-      "url": "https://apps.apple.com/gr/app/id6780223070",
+      "position": 29,
+      "url": "https://apps.apple.com/gr/app/id6780223070?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-picclear",
-        "url": "https://apps.apple.com/gr/app/id6780223070",
+        "url": "https://apps.apple.com/gr/app/id6780223070?pt=118326163&ct=iag_data_el&mt=8",
         "name": "PicClear",
         "description": "Για να ελευθερώσετε χώρο γρήγορα, στοχεύστε πρώτα τα μεγαλύτερα κέρδη: ακριβή διπλότυπα, σχεδόν ίδια στιγμιότυπα burst, θολές απορρίψεις και μεγάλα βίντεο — το PicClear σας βοηθά να το κάνετε στο iPhone σας.",
         "seller": {
@@ -1687,12 +1885,12 @@
           "name": "PicClear",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/gr/app/id6780223070",
-          "installUrl": "https://apps.apple.com/gr/app/id6780223070",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6780223070",
+          "url": "https://apps.apple.com/gr/app/id6780223070?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6780223070?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6780223070?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6780223070"
+            "target": "https://apps.apple.com/gr/app/id6780223070?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html#webpage"
@@ -1728,12 +1926,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
-      "url": "https://apps.apple.com/gr/app/id6779977651",
+      "position": 30,
+      "url": "https://apps.apple.com/gr/app/id6779977651?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-scanto",
-        "url": "https://apps.apple.com/gr/app/id6779977651",
+        "url": "https://apps.apple.com/gr/app/id6779977651?pt=118326163&ct=iag_data_el&mt=8",
         "name": "ScanTo Pro",
         "description": "Αν σαρώσετε φόρμες συγκατάθεσης ασθενών, έγγραφα εξιτηρίου ή παραπομπές, ο σαρωτής πρέπει να κρατά αυτά τα έγγραφα στη συσκευή — ποτέ ανεβασμένα σε cloud άλλου — το ScanTo Pro είναι φτιαγμένο γι' αυτό.",
         "seller": {
@@ -1753,12 +1951,12 @@
           "name": "ScanTo Pro",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/gr/app/id6779977651",
-          "installUrl": "https://apps.apple.com/gr/app/id6779977651",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6779977651",
+          "url": "https://apps.apple.com/gr/app/id6779977651?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6779977651?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6779977651?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6779977651"
+            "target": "https://apps.apple.com/gr/app/id6779977651?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html#webpage"
@@ -1794,12 +1992,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
-      "url": "https://apps.apple.com/gr/app/id6788236641",
+      "position": 31,
+      "url": "https://apps.apple.com/gr/app/id6788236641?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-sereno",
-        "url": "https://apps.apple.com/gr/app/id6788236641",
+        "url": "https://apps.apple.com/gr/app/id6788236641?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Sereno",
         "description": "Για τον ύπνο, μια συνδρομή που ενοχλεί κάθε μήνα είναι το αντίθετο της ηρεμίας — το Sereno είναι φτιαγμένο γι’ αυτό.",
         "seller": {
@@ -1819,12 +2017,12 @@
           "name": "Sereno",
           "operatingSystem": "iOS",
           "applicationCategory": "LifestyleApplication",
-          "url": "https://apps.apple.com/gr/app/id6788236641",
-          "installUrl": "https://apps.apple.com/gr/app/id6788236641",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6788236641",
+          "url": "https://apps.apple.com/gr/app/id6788236641?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6788236641?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6788236641?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6788236641"
+            "target": "https://apps.apple.com/gr/app/id6788236641?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-white-noise-app-for-falling-asleep-no-subscription.html#webpage"
@@ -1860,12 +2058,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
-      "url": "https://apps.apple.com/gr/app/id6780575828",
+      "position": 32,
+      "url": "https://apps.apple.com/gr/app/id6780575828?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-snapport",
-        "url": "https://apps.apple.com/gr/app/id6780575828",
+        "url": "https://apps.apple.com/gr/app/id6780575828?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Snapport",
         "description": "Για φωτογραφία διαβατηρίου μωρού, κανείς άλλος δεν πρέπει να φαίνεται και το φόντο πρέπει να είναι απλό — αλλά για βρέφη τα μάτια δεν χρειάζεται να είναι πλήρως ανοιχτά.",
         "seller": {
@@ -1885,12 +2083,12 @@
           "name": "Snapport",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/gr/app/id6780575828",
-          "installUrl": "https://apps.apple.com/gr/app/id6780575828",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6780575828",
+          "url": "https://apps.apple.com/gr/app/id6780575828?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6780575828?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6780575828?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6780575828"
+            "target": "https://apps.apple.com/gr/app/id6780575828?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html#webpage"
@@ -1915,7 +2113,7 @@
           ],
           "isAccessibleForFree": false
         },
-        "price": "5.99",
+        "price": "6.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {
@@ -1926,12 +2124,78 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
-      "url": "https://apps.apple.com/gr/app/id6782139553",
+      "position": 33,
+      "url": "https://apps.apple.com/gr/app/id6792856304?pt=118326163&ct=iag_data_el&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-snapportlite",
+        "url": "https://apps.apple.com/gr/app/id6792856304?pt=118326163&ct=iag_data_el&mt=8",
+        "name": "Snapport Lite",
+        "description": "Snapport Lite - Φτιάξτε φωτογραφίες διαβατηρίου, βίζας και εγγράφων με καθοδηγούμενες διαστάσεις, εργαλεία φόντου και εξαγωγή έτοιμη προς εκτύπωση.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6792856304",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6792856304"
+          },
+          "name": "Snapport Lite",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/gr/app/id6792856304?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6792856304?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6792856304?pt=118326163&ct=iag_data_el&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/gr/app/id6792856304?pt=118326163&ct=iag_data_el&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/el/snapportlite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6792856304",
+          "inLanguage": "el",
+          "description": "Snapport Lite - Φτιάξτε φωτογραφίες διαβατηρίου, βίζας και εγγράφων με καθοδηγούμενες διαστάσεις, εργαλεία φόντου και εξαγωγή έτοιμη προς εκτύπωση.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-snapportlite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "GR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "url": "https://apps.apple.com/gr/app/id6782139553?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-sononote",
-        "url": "https://apps.apple.com/gr/app/id6782139553",
+        "url": "https://apps.apple.com/gr/app/id6782139553?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Sono Note",
         "description": "Μετά από μια κλήση δεν θέλετε μια ακατέργαστη μεταγραφή — θέλετε τη σύνοψη, τις ενέργειες και ένα προσχέδιο παρακολούθησης — το Sono Note είναι φτιαγμένο γι’ αυτό.",
         "seller": {
@@ -1951,12 +2215,12 @@
           "name": "Sono Note",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
-          "url": "https://apps.apple.com/gr/app/id6782139553",
-          "installUrl": "https://apps.apple.com/gr/app/id6782139553",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6782139553",
+          "url": "https://apps.apple.com/gr/app/id6782139553?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6782139553?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6782139553?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6782139553"
+            "target": "https://apps.apple.com/gr/app/id6782139553?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html#webpage"
@@ -1992,12 +2256,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
-      "url": "https://apps.apple.com/gr/app/id6791299610",
+      "position": 35,
+      "url": "https://apps.apple.com/gr/app/id6791299610?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-tripbeelite",
-        "url": "https://apps.apple.com/gr/app/id6791299610",
+        "url": "https://apps.apple.com/gr/app/id6791299610?pt=118326163&ct=iag_data_el&mt=8",
         "name": "TripBee Lite",
         "description": "Αν προγραμματίζετε ένα επερχόμενο ταξίδι, ένα ήρεμο χρονοδιάγραμμα για αυτό το ταξίδι είναι πιο χρήσιμο από ένα γεμάτο αρχείο με κάθε ταξίδι που μπορεί να κάνετε κάποια μέρα — το TripBee Lite είναι φτιαγμένο γι’ αυτό.",
         "seller": {
@@ -2017,12 +2281,12 @@
           "name": "TripBee Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "TravelApplication",
-          "url": "https://apps.apple.com/gr/app/id6791299610",
-          "installUrl": "https://apps.apple.com/gr/app/id6791299610",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6791299610",
+          "url": "https://apps.apple.com/gr/app/id6791299610?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6791299610?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6791299610?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6791299610"
+            "target": "https://apps.apple.com/gr/app/id6791299610?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html#webpage"
@@ -2058,12 +2322,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
-      "url": "https://apps.apple.com/gr/app/id6787754435",
+      "position": 36,
+      "url": "https://apps.apple.com/gr/app/id6787754435?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-tripbee",
-        "url": "https://apps.apple.com/gr/app/id6787754435",
+        "url": "https://apps.apple.com/gr/app/id6787754435?pt=118326163&ct=iag_data_el&mt=8",
         "name": "TripBee Pro: Σχεδιασμός Ταξιδιού",
         "description": "Μια καλή εφαρμογή προγράμματος μετατρέπει ένα ακατάστατο ταξίδι σε καθαρό χρονοδιάγραμμα ημέρας — πτήσεις, ξενοδοχεία, δραστηριότητες, εστιατόρια και μεταφορές — με καθαρά εικονίδια τύπου ώστε να διαβάζετε τη μέρα σας με μια ματιά — το TripBee Pro: Trip Planner είναι φτιαγμένο γι’ αυτό.",
         "seller": {
@@ -2083,12 +2347,12 @@
           "name": "TripBee Pro: Σχεδιασμός Ταξιδιού",
           "operatingSystem": "iOS",
           "applicationCategory": "TravelApplication",
-          "url": "https://apps.apple.com/gr/app/id6787754435",
-          "installUrl": "https://apps.apple.com/gr/app/id6787754435",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6787754435",
+          "url": "https://apps.apple.com/gr/app/id6787754435?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6787754435?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6787754435?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6787754435"
+            "target": "https://apps.apple.com/gr/app/id6787754435?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-trip-itinerary-planner-app-for-iphone.html#webpage"
@@ -2124,12 +2388,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
-      "url": "https://apps.apple.com/gr/app/id6782275018",
+      "position": 37,
+      "url": "https://apps.apple.com/gr/app/id6782275018?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-unblurry",
-        "url": "https://apps.apple.com/gr/app/id6782275018",
+        "url": "https://apps.apple.com/gr/app/id6782275018?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Unblurry",
         "description": "Τα παιδιά δεν μένουν ποτέ ακίνητα, οπότε οι μαλακές εστιασμένες και κουνημένες λήψεις είναι αναπόφευκτες — το Unblurry είναι φτιαγμένο γι’ αυτό.",
         "seller": {
@@ -2149,12 +2413,12 @@
           "name": "Unblurry",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/gr/app/id6782275018",
-          "installUrl": "https://apps.apple.com/gr/app/id6782275018",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6782275018",
+          "url": "https://apps.apple.com/gr/app/id6782275018?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6782275018?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6782275018?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6782275018"
+            "target": "https://apps.apple.com/gr/app/id6782275018?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html#webpage"
@@ -2190,12 +2454,12 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
-      "url": "https://apps.apple.com/gr/app/id6790467886",
+      "position": 38,
+      "url": "https://apps.apple.com/gr/app/id6790467886?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wifiaid",
-        "url": "https://apps.apple.com/gr/app/id6790467886",
+        "url": "https://apps.apple.com/gr/app/id6790467886?pt=118326163&ct=iag_data_el&mt=8",
         "name": "WiFi Aid",
         "description": "Βρείτε την πιθανότερη αιτία με ανεξάρτητους ελέγχους διαδρομών, DNS, TCP, TLS, χρόνων και σταθερότητας. Μία αρχική πληρωμή, χωρίς συνδρομή, διαφημίσεις ή",
         "seller": {
@@ -2214,13 +2478,13 @@
           },
           "name": "WiFi Aid",
           "operatingSystem": "iOS",
-          "applicationCategory": "UtilitiesApplication",
-          "url": "https://apps.apple.com/gr/app/id6790467886",
-          "installUrl": "https://apps.apple.com/gr/app/id6790467886",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6790467886",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/gr/app/id6790467886?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6790467886?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6790467886?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6790467886"
+            "target": "https://apps.apple.com/gr/app/id6790467886?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/wifiaid.html#webpage"
@@ -2256,12 +2520,78 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
-      "url": "https://apps.apple.com/gr/app/id6789917808",
+      "position": 39,
+      "url": "https://apps.apple.com/gr/app/id6797601720?pt=118326163&ct=iag_data_el&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wordmatelite",
+        "url": "https://apps.apple.com/gr/app/id6797601720?pt=118326163&ct=iag_data_el&mt=8",
+        "name": "Wordmate Lite: λεξιλόγιο",
+        "description": "Θέλεις επιτέλους να προχωρήσεις σε μια ξένη γλώσσα, αλλά το βράδυ περνάει ξανά χωρίς ούτε μία καινούργια λέξη. Το Wordmate Lite περιορίζει τη μελέτη σε ένα",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6797601720",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6797601720"
+          },
+          "name": "Wordmate Lite: λεξιλόγιο",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/gr/app/id6797601720?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6797601720?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6797601720?pt=118326163&ct=iag_data_el&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/gr/app/id6797601720?pt=118326163&ct=iag_data_el&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/el/wordmatelite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6797601720",
+          "inLanguage": "el",
+          "description": "Θέλεις επιτέλους να προχωρήσεις σε μια ξένη γλώσσα, αλλά το βράδυ περνάει ξανά χωρίς ούτε μία καινούργια λέξη. Το Wordmate Lite περιορίζει τη μελέτη σε ένα",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wordmatelite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "GR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 40,
+      "url": "https://apps.apple.com/gr/app/id6789917808?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wordmate",
-        "url": "https://apps.apple.com/gr/app/id6789917808",
+        "url": "https://apps.apple.com/gr/app/id6789917808?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Wordmate: Learn 44 Languages",
         "description": "Οι πολυάσχολοι μετακινούμενοι χρειάζονται εξάσκηση λεξιλογίου που ταιριάζει σε ελεύθερα λεπτά χωρίς να απαιτεί πλήρες μάθημα, νέο λογαριασμό ή τηλέφωνο στο χέρι για κάθε επανάληψη — το Wordmate: Learn 44 Languages είναι φτιαγμένο γι’ αυτό.",
         "seller": {
@@ -2281,12 +2611,12 @@
           "name": "Wordmate: Learn 44 Languages",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/gr/app/id6789917808",
-          "installUrl": "https://apps.apple.com/gr/app/id6789917808",
-          "downloadUrl": "https://apps.apple.com/gr/app/id6789917808",
+          "url": "https://apps.apple.com/gr/app/id6789917808?pt=118326163&ct=iag_data_el&mt=8",
+          "installUrl": "https://apps.apple.com/gr/app/id6789917808?pt=118326163&ct=iag_data_el&mt=8",
+          "downloadUrl": "https://apps.apple.com/gr/app/id6789917808?pt=118326163&ct=iag_data_el&mt=8",
           "potentialAction": {
             "@type": "InstallAction",
-            "target": "https://apps.apple.com/gr/app/id6789917808"
+            "target": "https://apps.apple.com/gr/app/id6789917808?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
             "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html#webpage"

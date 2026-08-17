@@ -2,7 +2,7 @@
 title: "bedste app til at frigøre iPhone-lager ved at slette dublerede fotos"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/da/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ For at frigøre plads hurtigt, fokuser på de største gevinster først: nøjagt
 - Privat / på enheden
 - App Store · Gratis
 
-[Hent PicClear i App Store →](https://apps.apple.com/dk/app/id6780223070)
+[Hent PicClear i App Store →](https://apps.apple.com/dk/app/id6780223070?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

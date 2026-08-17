@@ -2,7 +2,7 @@
 title: "melhor app de meteorologia para ajudar pais a planear tempo ao ar livre com crianças"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/pt-PT/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ Pais a planear tempo ao ar livre precisam de mais do que temperatura: precisam d
 - Sem rastreamento
 - App Store · Grátis
 
-[Obtenha Lumi Weather na App Store →](https://apps.apple.com/pt/app/id6779552704)
+[Obtenha Lumi Weather na App Store →](https://apps.apple.com/pt/app/id6779552704?pt=118326163&ct=iag_data_pt_pt&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

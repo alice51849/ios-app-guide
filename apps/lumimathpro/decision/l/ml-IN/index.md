@@ -2,7 +2,7 @@
 title: "പ്രീസ്കൂൾ, പ്രാരംഭ ക്ലാസുകൾക്കായി മികച്ച പൂർണ്ണ ഗണിത പഠന ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/ml-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - വ്യാപനങ്ങൾ ഇല്ല
 - App Store · ₹ 999
 
-[Lumi Math Pro App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6776958488)
+[Lumi Math Pro App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

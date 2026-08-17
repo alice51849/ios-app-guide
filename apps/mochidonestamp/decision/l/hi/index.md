@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: पिछली बार — याद रखें आपने कब किया था | iOS App"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/hi/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - मुफ़्त शुरुआत · हमेशा के लिए अनलॉक
 - App Store · मुफ़्त
 
-[App Store पर Mochi DoneStamp: पिछली बार पाएँ](https://apps.apple.com/in/app/id6790800323)
+[App Store पर Mochi DoneStamp: पिछली बार पाएँ](https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=iag_data_hi&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/mochidonestamp.html)
 

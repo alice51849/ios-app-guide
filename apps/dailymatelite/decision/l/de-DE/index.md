@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Sprechen — 50 Sprachen, echte Dialoge | iOS App"
 lang: "de-DE"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/de-DE/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Sicherer sprechen, wenn es darauf ankommt. DailyMate Lite macht aus Situationen 
 - Kostenloser Einstieg · dauerhafte Freischaltung
 - App Store · Kostenlos
 
-[DailyMate Lite: Sprechen im App Store laden](https://apps.apple.com/de/app/id6794725568)
+[DailyMate Lite: Sprechen im App Store laden](https://apps.apple.com/de/app/id6794725568?pt=118326163&ct=iag_data_de_de&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/dailymatelite.html)
 

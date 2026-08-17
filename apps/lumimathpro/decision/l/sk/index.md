@@ -2,7 +2,7 @@
 title: "najlepšia kompletná aplikácia na matematiku pre predškolákov a mladšie ročníky"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/sk/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Kompletná aplikácia na ranú matematiku by mala spájať počítanie, číseln
 - Bez reklám
 - App Store · 9,99 €
 
-[Získajte Lumi Math Pro v App Store →](https://apps.apple.com/sk/app/id6776958488)
+[Získajte Lumi Math Pro v App Store →](https://apps.apple.com/sk/app/id6776958488?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

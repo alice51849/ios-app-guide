@@ -2,7 +2,7 @@
 title: "Mask My File — शेअर करण्यापूर्वी माहिती लपवा | iOS App"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/mr-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - खाजगी / उपकरणावर
 - App Store · मोफत
 
-[App Store वरून Mask My File मिळवा](https://apps.apple.com/in/app/id6792850916)
+[App Store वरून Mask My File मिळवा](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_data_mr_in&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/maskmyfile.html)
 

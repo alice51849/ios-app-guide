@@ -2,7 +2,7 @@
 title: "cel mai bun joc educațional pentru copii fără reclame pe iPhone"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/ro/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Pentru un copil mic, factorul decisiv sunt reclamele și colectarea de date — 
 - Fără reclame
 - App Store · Gratuit
 
-[Descarcă Lumi Letters din App Store →](https://apps.apple.com/ro/app/id6778748533)
+[Descarcă Lumi Letters din App Store →](https://apps.apple.com/ro/app/id6778748533?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

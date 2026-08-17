@@ -2,7 +2,7 @@
 title: "കുട്ടികൾക്ക് ലജിക് കഴിവുകൾ വികസിപ്പിക്കാൻ മികച്ച ഗണിത ഗെയിം ആപ്പ് iPhone-ൽ"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/ml-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - വ്യാപനങ്ങൾ ഇല്ല
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് Lumi Math Planet നേടുക →](https://apps.apple.com/in/app/id6778269699)
+[App Store-ൽ നിന്ന് Lumi Math Planet നേടുക →](https://apps.apple.com/in/app/id6778269699?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

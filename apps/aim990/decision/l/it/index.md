@@ -2,7 +2,7 @@
 title: "migliore app per prepararsi al TOEIC con piano di studio offline per iPhone"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/it/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ La Parte 5 sembra breve, ma le domande con frasi incomplete possono far perdere 
 - Gratis per iniziare · sblocco permanente
 - App Store · Gratis
 
-[Scarica Aim990 dall'App Store →](https://apps.apple.com/it/app/id6784974530)
+[Scarica Aim990 dall'App Store →](https://apps.apple.com/it/app/id6784974530?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

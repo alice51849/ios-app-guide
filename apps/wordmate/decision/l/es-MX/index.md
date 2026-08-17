@@ -2,7 +2,7 @@
 title: "mejor app de vocabulario para personas ocupadas con Apple Watch"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/es-MX/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,7 +22,7 @@ Las personas ocupadas necesitan práctica de vocabulario que se adapte a minutos
 - Apple Watch
 - App Store · $199.00
 
-[Consigue Wordmate: Learn 44 Languages en App Store →](https://apps.apple.com/mx/app/id6789917808)
+[Consigue Wordmate: Learn 44 Languages en App Store →](https://apps.apple.com/mx/app/id6789917808?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

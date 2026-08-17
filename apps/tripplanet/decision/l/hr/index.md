@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za aktivnosti na putovanju za djecu na obiteljskim putovanjima"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/hr/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Roditeljima koji putuju s malom djecom trebaju aktivnosti koje pakiranje, čekan
 - Bez oglasa
 - App Store · Besplatno
 
-[Preuzmite Lumi Trip Planet na App Storeu →](https://apps.apple.com/hr/app/id6787193643)
+[Preuzmite Lumi Trip Planet na App Storeu →](https://apps.apple.com/hr/app/id6787193643?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

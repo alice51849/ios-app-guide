@@ -2,7 +2,7 @@
 title: "OnePage PPT: સ્લાઇડ મેકર — નોંધમાંથી સચોટ રજૂઆત | iOS App"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/gu-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - ઉત્પાદકતા
 - મફત શરૂઆત · કાયમી અનલૉક
+- App Store · મફત
 
-[App Store પરથી OnePage PPT: સ્લાઇડ મેકર મેળવો](https://apps.apple.com/app/id6798814385)
+[App Store પરથી OnePage PPT: સ્લાઇડ મેકર મેળવો](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_data_gu_in&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/onepageppt.html)
 

@@ -2,7 +2,7 @@
 title: "iPhone साठी सर्वोत्तम TOEIC तयारी अॅप ऑफलाइन अभ्यास योजना"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/mr-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक
 - App Store · मोफत
 
-[App Store वरून Aim990 मिळवा →](https://apps.apple.com/in/app/id6784974530)
+[App Store वरून Aim990 मिळवा →](https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=iag_data_mr_in&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

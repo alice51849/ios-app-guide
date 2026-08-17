@@ -2,7 +2,7 @@
 title: "প্রিস্কুল ও প্রাথমিক শ্রেণির জন্য সেরা সম্পূর্ণ গণিত শেখার অ্যাপ"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/bn-BD/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - পেইড ডাউনলোড
 - কোনও বিজ্ঞাপন নেই
 
-[App Store-এ Lumi Math Pro পান →](https://apps.apple.com/app/id6776958488)
+[App Store-এ Lumi Math Pro পান →](https://apps.apple.com/app/id6776958488?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

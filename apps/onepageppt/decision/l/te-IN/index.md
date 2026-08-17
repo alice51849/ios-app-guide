@@ -2,7 +2,7 @@
 title: "OnePage PPT: స్లయిడ్ మేకర్ — నోట్స్ నుండి ప్రజెంటేషన్ | iOS App"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/te-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - ఉత్పాదకత
 - ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్
+- App Store · ఉచితం
 
-[App Store నుంచి OnePage PPT: స్లయిడ్ మేకర్ పొందండి](https://apps.apple.com/app/id6798814385)
+[App Store నుంచి OnePage PPT: స్లయిడ్ మేకర్ పొందండి](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/onepageppt.html)
 

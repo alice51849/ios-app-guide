@@ -2,7 +2,7 @@
 title: "trình chỉnh sửa ảnh phim trả phí một lần tốt nhất cho nhà sáng tạo du lịch trên iPhone"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/vi/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Nhà sáng tạo du lịch cần hiệu ứng phim lặp lại, thêm hạt ản
 - Bắt đầu miễn phí · mở khóa vĩnh viễn
 - App Store · Miễn phí
 
-[Tải PhotoCream trên App Store →](https://apps.apple.com/vn/app/id6781808054)
+[Tải PhotoCream trên App Store →](https://apps.apple.com/vn/app/id6781808054?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

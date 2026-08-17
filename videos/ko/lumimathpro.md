@@ -2,7 +2,7 @@
 title: "유치원 및 초등 저학년을 위한 최고의 완전한 수학 학습 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/lumimathpro.html"
-modified: "2026-08-07"
+modified: "2026-08-17"
 video_url: "https://files.catbox.moe/2kxtzu.mp4"
 duration: "PT16S"
 app_store_id: "6776958488"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [영상 보기](https://files.catbox.moe/2kxtzu.mp4)
 
-[App Store에서 Lumi Math Pro 다운로드 →](https://apps.apple.com/kr/app/id6776958488)
+[App Store에서 Lumi Math Pro 다운로드 →](https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=iag_video_ko&mt=8)
 
 [앱 가이드 열기](https://alice51849.github.io/ios-app-guide/ko/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

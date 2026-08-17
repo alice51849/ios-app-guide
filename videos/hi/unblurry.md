@@ -2,7 +2,7 @@
 title: "iPhone पर बच्चों की धुंधली तस्वीरें ठीक करने के लिए सबसे अच्छा ऐप"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/hi/unblurry.html"
-modified: "2026-08-07"
+modified: "2026-08-17"
 video_url: "https://files.catbox.moe/oiiwl3.mp4"
 duration: "PT16S"
 app_store_id: "6782275018"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [वीडियो देखें](https://files.catbox.moe/oiiwl3.mp4)
 
-[App Store से Unblurry प्राप्त करें →](https://apps.apple.com/in/app/id6782275018)
+[App Store से Unblurry प्राप्त करें →](https://apps.apple.com/in/app/id6782275018?pt=118326163&ct=iag_video_hi&mt=8)
 
 [ऐप गाइड खोलें](https://alice51849.github.io/ios-app-guide/hi/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

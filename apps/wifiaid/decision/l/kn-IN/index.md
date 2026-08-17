@@ -2,7 +2,7 @@
 title: "WiFi Aid — ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ & ಪುರಾವೆ | iOS App"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/kn-IN/index.html"
-modified: "2026-08-16"
+modified: "2026-08-17"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್
 - App Store · ₹ 599
 
-[App Store ನಲ್ಲಿ WiFi Aid ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6790467886)
+[App Store ನಲ್ಲಿ WiFi Aid ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_kn_in&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/wifiaid.html)
 

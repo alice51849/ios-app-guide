@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html
 import json
 import os
@@ -1823,6 +1824,623 @@ def localize_body_links(source: str, lang: str) -> str:
 RTL_LANGS = {"ar-SA", "he", "ur-PK", "fa"}
 
 
+# --------------------------------------------------------------------------- #
+# Locale-specific metadata frames (2026-08-17)
+#
+# Measurement (reports/geo_measure.py) found weighted duplicate_metadata_share
+# ≈ 0.67: most localized answer pages still shipped a <title> and meta
+# description byte-identical to the English original, because the translation
+# cache never covered those strings and the renderer fell back to English.
+# These frames guarantee every localized page gets locale-specific metadata
+# that still carries the page-specific facts (the query and the recommended
+# app), even when full body translation is unavailable. They intentionally
+# describe only what the page really is — an answer plus honest app guidance —
+# and never claim the body text is translated.
+#
+# ensure_locale_meta() is idempotent: it only rewrites pages whose <title>
+# still matches the English answer-title pattern. It never touches robots
+# meta, canonical/hreflang, body copy or JSON-LD.
+# --------------------------------------------------------------------------- #
+_EN_ANSWER_TITLE_RE = re.compile(
+    r"^(?P<query>.+?):\s*honest iPhone app buying guide$", re.S
+)
+_TITLE_TAG_RE = re.compile(r"(<title>)(.*?)(</title>)", re.S)
+_META_DESC_TAG_RE = re.compile(r'(<meta name="description" content=")(.*?)(")', re.S)
+_OG_TITLE_TAG_RE = re.compile(r'(<meta property="og:title" content=")(.*?)(")', re.S)
+_OG_DESC_TAG_RE = re.compile(
+    r'(<meta property="og:description" content=")(.*?)(")', re.S
+)
+_OG_IMG_ALT_RE = re.compile(
+    r'<meta property="og:image:alt" content="([^"]*?) iOS app preview"'
+)
+
+LOCALE_META_FRAMES: dict[str, dict[str, Any]] = {
+    "ja": {
+        "title": "{query}|iPhoneアプリの正直な購入ガイド",
+        "desc_app": [
+            "「{query}」への実践的な答え:{app} を例に、iPhoneでの解決手順と、"
+            "誇張のないアプリの選び方をまとめた購入ガイドです。",
+            "「{query}」で迷ったら:{app} を使った現実的な解決の流れと、"
+            "支払う前に確認すべきポイントを正直に整理しました。",
+        ],
+        "desc": "「{query}」への実践的な答えと、iPhoneアプリの正直な選び方を"
+        "まとめた購入ガイドです。",
+    },
+    "ko": {
+        "title": "{query} | 정직한 iPhone 앱 구매 가이드",
+        "desc_app": [
+            "'{query}'에 대한 실용적인 답변: {app} 사례로 iPhone에서 해결하는 "
+            "순서와 과장 없는 앱 선택 기준을 정리한 구매 가이드입니다.",
+            "'{query}' 고민이라면: {app} 기반의 현실적인 해결 과정과 결제 전에 "
+            "확인할 점을 정직하게 정리했습니다.",
+        ],
+        "desc": "'{query}'에 대한 실용적인 답변과 정직한 iPhone 앱 선택 "
+        "기준을 정리한 구매 가이드입니다.",
+    },
+    "zh-Hant": {
+        "title": "{query}|iPhone App 誠實選購指南",
+        "desc_app": [
+            "針對「{query}」的務實解法:以 {app} 為例,整理 iPhone 上的操作"
+            "步驟,以及不誇大的 App 選購建議。",
+            "「{query}」怎麼解?本頁以 {app} 示範實際流程,並誠實說明付費前"
+            "該確認的重點。",
+        ],
+        "desc": "針對「{query}」的實用解答,以及不誇大的 iPhone App 選購"
+        "建議。",
+    },
+    "zh-Hans": {
+        "title": "{query}|iPhone 应用诚实选购指南",
+        "desc_app": [
+            "针对“{query}”的务实解法:以 {app} 为例,整理 iPhone 上的操作"
+            "步骤,以及不夸大的应用选购建议。",
+            "“{query}”怎么解决?本页以 {app} 演示实际流程,并诚实说明付费前"
+            "该确认的要点。",
+        ],
+        "desc": "针对“{query}”的实用解答,以及不夸大的 iPhone 应用选购建议。",
+    },
+    "de-DE": {
+        "title": "{query} – ehrlicher Kaufratgeber für iPhone-Apps",
+        "desc_app": [
+            "Praktische Antwort auf „{query}“: Schritt für Schritt auf dem "
+            "iPhone gelöst – am Beispiel von {app}, ohne Übertreibung.",
+            "„{query}“ – ein realistischer Lösungsweg mit {app} und ehrliche "
+            "Hinweise, worauf Sie vor dem Kauf einer iPhone-App achten sollten.",
+        ],
+        "desc": "Praktische Antwort auf „{query}“ und ein ehrlicher Ratgeber "
+        "für die Auswahl der passenden iPhone-App.",
+    },
+    "fr-FR": {
+        "title": "{query} : guide d’achat transparent pour iPhone",
+        "desc_app": [
+            "Réponse concrète à « {query} » : la démarche pas à pas sur "
+            "iPhone avec {app}, sans promesses exagérées.",
+            "« {query} » : un parcours réaliste avec {app} et des conseils "
+            "honnêtes sur ce qu’il faut vérifier avant de payer une app.",
+        ],
+        "desc": "Réponse concrète à « {query} » et conseils honnêtes pour "
+        "choisir la bonne app iPhone.",
+    },
+    "fr-CA": {
+        "title": "{query} : guide d’achat transparent pour iPhone",
+        "desc_app": [
+            "Réponse concrète à « {query} » : la démarche pas à pas sur "
+            "iPhone avec {app}, sans promesses exagérées.",
+        ],
+        "desc": "Réponse concrète à « {query} » et conseils honnêtes pour "
+        "choisir la bonne app iPhone.",
+    },
+    "es-ES": {
+        "title": "{query}: guía honesta para elegir apps para iPhone",
+        "desc_app": [
+            "Respuesta práctica a «{query}»: cómo resolverlo en el iPhone con "
+            "{app}, con consejos honestos y sin exageraciones.",
+            "«{query}»: un recorrido realista con {app} y lo que conviene "
+            "comprobar antes de pagar por una app.",
+        ],
+        "desc": "Respuesta práctica a «{query}» y consejos honestos para "
+        "elegir la app de iPhone adecuada.",
+    },
+    "es-MX": {
+        "title": "{query}: guía honesta para elegir apps de iPhone",
+        "desc_app": [
+            "Respuesta práctica a “{query}”: cómo resolverlo en el iPhone con "
+            "{app}, con consejos honestos y sin exageraciones.",
+        ],
+        "desc": "Respuesta práctica a “{query}” y consejos honestos para "
+        "elegir la app de iPhone adecuada.",
+    },
+    "pt-BR": {
+        "title": "{query}: guia transparente para escolher apps para iPhone",
+        "desc_app": [
+            "Resposta prática para “{query}”: como resolver no iPhone com o "
+            "{app}, com orientações honestas e sem exagero.",
+            "“{query}” — um passo a passo realista com o {app} e o que "
+            "conferir antes de pagar por um app.",
+        ],
+        "desc": "Resposta prática para “{query}” e orientações honestas para "
+        "escolher o app de iPhone certo.",
+    },
+    "pt-PT": {
+        "title": "{query}: guia transparente para escolher aplicações para iPhone",
+        "desc_app": [
+            "Resposta prática a “{query}”: como resolver no iPhone com a "
+            "{app}, com conselhos honestos e sem exageros.",
+            "“{query}” — um percurso realista com a {app} e o que confirmar "
+            "antes de pagar por uma aplicação.",
+        ],
+        "desc": "Resposta prática a “{query}” e conselhos honestos para "
+        "escolher a aplicação de iPhone certa.",
+    },
+    "it": {
+        "title": "{query}: guida trasparente all’acquisto di app per iPhone",
+        "desc_app": [
+            "Risposta pratica a «{query}»: come risolvere su iPhone con "
+            "{app}, con consigli onesti e senza esagerazioni.",
+        ],
+        "desc": "Risposta pratica a «{query}» e consigli onesti per scegliere "
+        "l’app per iPhone giusta.",
+    },
+    "tr": {
+        "title": "{query} – iPhone uygulamaları için dürüst satın alma rehberi",
+        "desc_app": [
+            "“{query}” için pratik yanıt: {app} örneğiyle iPhone’da adım adım "
+            "çözüm ve abartısız, dürüst uygulama seçme önerileri.",
+            "“{query}” sorusuna gerçekçi bir çözüm yolu: {app} ile uygulamalı "
+            "adımlar ve ödeme yapmadan önce kontrol edilmesi gerekenler.",
+        ],
+        "desc": "“{query}” için pratik yanıt ve doğru iPhone uygulamasını "
+        "seçmek için dürüst öneriler.",
+    },
+    "id": {
+        "title": "{query} – panduan jujur memilih aplikasi iPhone",
+        "desc_app": [
+            "Jawaban praktis untuk “{query}”: langkah penyelesaian di iPhone "
+            "dengan contoh {app}, plus saran jujur tanpa melebih-lebihkan.",
+            "“{query}” — alur penyelesaian yang realistis dengan {app} dan "
+            "hal yang perlu dicek sebelum membayar sebuah aplikasi.",
+        ],
+        "desc": "Jawaban praktis untuk “{query}” dan saran jujur memilih "
+        "aplikasi iPhone yang tepat.",
+    },
+    "ms": {
+        "title": "{query} – panduan jujur memilih aplikasi iPhone",
+        "desc_app": [
+            "Jawapan praktikal untuk “{query}”: langkah penyelesaian di "
+            "iPhone dengan contoh {app}, serta panduan jujur tanpa "
+            "berlebih-lebihan.",
+            "“{query}” — laluan penyelesaian yang realistik dengan {app} dan "
+            "perkara yang perlu disemak sebelum membayar sesebuah aplikasi.",
+        ],
+        "desc": "Jawapan praktikal untuk “{query}” dan panduan jujur memilih "
+        "aplikasi iPhone yang sesuai.",
+    },
+    "vi": {
+        "title": "{query} – cẩm nang chọn ứng dụng iPhone trung thực",
+        "desc_app": [
+            "Câu trả lời thiết thực cho “{query}”: cách xử lý trên iPhone với "
+            "{app}, kèm lời khuyên trung thực, không phóng đại.",
+            "“{query}” — quy trình giải quyết thực tế với {app} và những điều "
+            "nên kiểm tra trước khi trả tiền cho một ứng dụng.",
+        ],
+        "desc": "Câu trả lời thiết thực cho “{query}” và lời khuyên trung "
+        "thực để chọn đúng ứng dụng iPhone.",
+    },
+    "th": {
+        "title": "{query} – คู่มือเลือกแอป iPhone อย่างตรงไปตรงมา",
+        "desc_app": [
+            "คำตอบที่ใช้ได้จริงสำหรับ “{query}”: วิธีจัดการบน iPhone โดยใช้ {app} "
+            "พร้อมคำแนะนำแบบตรงไปตรงมา ไม่เกินจริง",
+            "“{query}” — แนวทางแก้ปัญหาที่เป็นจริงด้วย {app} และสิ่งที่ควรตรวจสอบ"
+            "ก่อนจ่ายเงินซื้อแอป",
+        ],
+        "desc": "คำตอบที่ใช้ได้จริงสำหรับ “{query}” พร้อมคำแนะนำเลือกแอป iPhone "
+        "อย่างตรงไปตรงมา",
+    },
+    "ar-SA": {
+        "title": "{query} – دليل صادق لاختيار تطبيقات iPhone",
+        "desc_app": [
+            "إجابة عملية عن «{query}»: خطوات الحل على iPhone بمثال {app}، مع "
+            "نصائح صادقة من دون مبالغة.",
+            "«{query}» — مسار حل واقعي مع {app} وما ينبغي التحقق منه قبل الدفع "
+            "مقابل أي تطبيق.",
+        ],
+        "desc": "إجابة عملية عن «{query}» ونصائح صادقة لاختيار تطبيق iPhone "
+        "المناسب.",
+    },
+    "ru": {
+        "title": "{query} — честный гид по выбору приложений для iPhone",
+        "desc_app": [
+            "Практичный ответ на запрос «{query}»: как решить задачу на "
+            "iPhone на примере {app}, с честными советами без преувеличений.",
+        ],
+        "desc": "Практичный ответ на запрос «{query}» и честные советы по "
+        "выбору подходящего приложения для iPhone.",
+    },
+    "uk": {
+        "title": "{query} — чесний гід із вибору застосунків для iPhone",
+        "desc_app": [
+            "Практична відповідь на «{query}»: як розв’язати задачу на iPhone "
+            "на прикладі {app}, з чесними порадами без перебільшень.",
+        ],
+        "desc": "Практична відповідь на «{query}» та чесні поради з вибору "
+        "застосунку для iPhone.",
+    },
+    "pl": {
+        "title": "{query} — szczery przewodnik po wyborze aplikacji na iPhone’a",
+        "desc_app": [
+            "Praktyczna odpowiedź na „{query}”: jak rozwiązać to na iPhonie "
+            "na przykładzie {app}, ze szczerymi wskazówkami bez przesady.",
+        ],
+        "desc": "Praktyczna odpowiedź na „{query}” i szczere wskazówki, jak "
+        "wybrać właściwą aplikację na iPhone’a.",
+    },
+    "nl-NL": {
+        "title": "{query} – eerlijke koopgids voor iPhone-apps",
+        "desc_app": [
+            "Praktisch antwoord op “{query}”: stap voor stap opgelost op de "
+            "iPhone met {app}, met eerlijk advies zonder overdrijving.",
+        ],
+        "desc": "Praktisch antwoord op “{query}” en eerlijk advies om de "
+        "juiste iPhone-app te kiezen.",
+    },
+    "sv": {
+        "title": "{query} – ärlig guide för att välja iPhone-appar",
+        "desc_app": [
+            "Praktiskt svar på ”{query}”: så löser du det på iPhone med "
+            "{app}, med ärliga råd utan överdrifter.",
+        ],
+        "desc": "Praktiskt svar på ”{query}” och ärliga råd för att välja "
+        "rätt iPhone-app.",
+    },
+    "da": {
+        "title": "{query} – ærlig guide til valg af iPhone-apps",
+        "desc_app": [
+            "Praktisk svar på “{query}”: sådan løser du det på iPhone med "
+            "{app}, med ærlige råd uden overdrivelser.",
+        ],
+        "desc": "Praktisk svar på “{query}” og ærlige råd til at vælge den "
+        "rigtige iPhone-app.",
+    },
+    "no": {
+        "title": "{query} – ærlig guide til valg av iPhone-apper",
+        "desc_app": [
+            "Praktisk svar på «{query}»: slik løser du det på iPhone med "
+            "{app}, med ærlige råd uten overdrivelser.",
+        ],
+        "desc": "Praktisk svar på «{query}» og ærlige råd for å velge riktig "
+        "iPhone-app.",
+    },
+    "fi": {
+        "title": "{query} – rehellinen opas iPhone-sovellusten valintaan",
+        "desc_app": [
+            "Käytännön vastaus kysymykseen ”{query}”: näin ratkaiset sen "
+            "iPhonella {app}-sovelluksen avulla, rehellisin neuvoin.",
+        ],
+        "desc": "Käytännön vastaus kysymykseen ”{query}” ja rehelliset neuvot "
+        "oikean iPhone-sovelluksen valintaan.",
+    },
+    "cs": {
+        "title": "{query} – upřímný průvodce výběrem aplikací pro iPhone",
+        "desc_app": [
+            "Praktická odpověď na „{query}“: jak to vyřešit na iPhonu na "
+            "příkladu aplikace {app}, s upřímnými radami bez přehánění.",
+        ],
+        "desc": "Praktická odpověď na „{query}“ a upřímné rady, jak vybrat "
+        "správnou aplikaci pro iPhone.",
+    },
+    "sk": {
+        "title": "{query} – úprimný sprievodca výberom aplikácií pre iPhone",
+        "desc_app": [
+            "Praktická odpoveď na „{query}“: ako to vyriešiť na iPhone na "
+            "príklade aplikácie {app}, s úprimnými radami bez preháňania.",
+        ],
+        "desc": "Praktická odpoveď na „{query}“ a úprimné rady, ako vybrať "
+        "správnu aplikáciu pre iPhone.",
+    },
+    "hu": {
+        "title": "{query} – őszinte útmutató iPhone-alkalmazások kiválasztásához",
+        "desc_app": [
+            "Gyakorlati válasz erre: „{query}” – így oldható meg iPhone-on a "
+            "{app} példáján, őszinte tanácsokkal, túlzások nélkül.",
+        ],
+        "desc": "Gyakorlati válasz erre: „{query}”, valamint őszinte tanácsok "
+        "a megfelelő iPhone-alkalmazás kiválasztásához.",
+    },
+    "ro": {
+        "title": "{query} – ghid onest pentru alegerea aplicațiilor de iPhone",
+        "desc_app": [
+            "Răspuns practic la „{query}”: cum rezolvi pe iPhone cu {app}, "
+            "cu sfaturi oneste, fără exagerări.",
+        ],
+        "desc": "Răspuns practic la „{query}” și sfaturi oneste pentru a "
+        "alege aplicația de iPhone potrivită.",
+    },
+    "el": {
+        "title": "{query} – ειλικρινής οδηγός επιλογής εφαρμογών iPhone",
+        "desc_app": [
+            "Πρακτική απάντηση στο «{query}»: πώς να το λύσετε στο iPhone με "
+            "το {app}, με ειλικρινείς συμβουλές χωρίς υπερβολές.",
+        ],
+        "desc": "Πρακτική απάντηση στο «{query}» και ειλικρινείς συμβουλές "
+        "για να επιλέξετε τη σωστή εφαρμογή iPhone.",
+    },
+    "he": {
+        "title": "{query} – מדריך כן לבחירת אפליקציות iPhone",
+        "desc_app": [
+            "תשובה מעשית ל‑“{query}”: איך פותרים זאת ב‑iPhone בעזרת {app}, עם "
+            "עצות כנות וללא הגזמות.",
+        ],
+        "desc": "תשובה מעשית ל‑“{query}” ועצות כנות לבחירת אפליקציית iPhone "
+        "מתאימה.",
+    },
+    "hr": {
+        "title": "{query} – iskren vodič za odabir iPhone aplikacija",
+        "desc_app": [
+            "Praktičan odgovor na „{query}”: kako to riješiti na iPhoneu na "
+            "primjeru aplikacije {app}, uz iskrene savjete bez pretjerivanja.",
+        ],
+        "desc": "Praktičan odgovor na „{query}” i iskreni savjeti za odabir "
+        "prave iPhone aplikacije.",
+    },
+    "sl-SI": {
+        "title": "{query} – iskren vodnik za izbiro aplikacij za iPhone",
+        "desc_app": [
+            "Praktičen odgovor na »{query}«: kako to rešiti na iPhonu na "
+            "primeru aplikacije {app}, z iskrenimi nasveti brez pretiravanja.",
+        ],
+        "desc": "Praktičen odgovor na »{query}« in iskreni nasveti za izbiro "
+        "prave aplikacije za iPhone.",
+    },
+    "ca": {
+        "title": "{query}: guia honesta per triar apps per a iPhone",
+        "desc_app": [
+            "Resposta pràctica a «{query}»: com resoldre-ho a l’iPhone amb "
+            "{app}, amb consells honestos i sense exageracions.",
+        ],
+        "desc": "Resposta pràctica a «{query}» i consells honestos per triar "
+        "l’app d’iPhone adequada.",
+    },
+    "hi": {
+        "title": "{query} – iPhone ऐप चुनने की ईमानदार गाइड",
+        "desc_app": [
+            "“{query}” का व्यावहारिक जवाब: {app} के उदाहरण से iPhone पर समाधान "
+            "के चरण, बिना बढ़ा-चढ़ाकर ईमानदार सलाह के साथ।",
+        ],
+        "desc": "“{query}” का व्यावहारिक जवाब और सही iPhone ऐप चुनने की "
+        "ईमानदार सलाह।",
+    },
+    "bn-BD": {
+        "title": "{query} – iPhone অ্যাপ বাছাইয়ের সৎ গাইড",
+        "desc_app": [
+            "“{query}”-এর ব্যবহারিক উত্তর: {app}-এর উদাহরণে iPhone-এ সমাধানের "
+            "ধাপ, অতিরঞ্জন ছাড়া সৎ পরামর্শসহ।",
+        ],
+        "desc": "“{query}”-এর ব্যবহারিক উত্তর এবং সঠিক iPhone অ্যাপ বাছাইয়ের "
+        "সৎ পরামর্শ।",
+    },
+    "gu-IN": {
+        "title": "{query} – iPhone એપ પસંદ કરવાની પ્રામાણિક માર્ગદર્શિકા",
+        "desc_app": [
+            "“{query}”નો વ્યવહારુ જવાબ: {app}ના ઉદાહરણ સાથે iPhone પર ઉકેલનાં "
+            "પગલાં, અતિશયોક્તિ વિનાની પ્રામાણિક સલાહ સાથે.",
+        ],
+        "desc": "“{query}”નો વ્યવહારુ જવાબ અને યોગ્ય iPhone એપ પસંદ કરવાની "
+        "પ્રામાણિક સલાહ.",
+    },
+    "kn-IN": {
+        "title": "{query} – iPhone ಆ್ಯಪ್ ಆಯ್ಕೆಗೆ ಪ್ರಾಮಾಣಿಕ ಮಾರ್ಗದರ್ಶಿ",
+        "desc_app": [
+            "“{query}”ಗೆ ಪ್ರಾಯೋಗಿಕ ಉತ್ತರ: {app} ಉದಾಹರಣೆಯೊಂದಿಗೆ iPhone ನಲ್ಲಿ "
+            "ಪರಿಹಾರದ ಹಂತಗಳು, ಉತ್ಪ್ರೇಕ್ಷೆ ಇಲ್ಲದ ಪ್ರಾಮಾಣಿಕ ಸಲಹೆಗಳೊಂದಿಗೆ.",
+        ],
+        "desc": "“{query}”ಗೆ ಪ್ರಾಯೋಗಿಕ ಉತ್ತರ ಮತ್ತು ಸರಿಯಾದ iPhone ಆ್ಯಪ್ "
+        "ಆಯ್ಕೆಗೆ ಪ್ರಾಮಾಣಿಕ ಸಲಹೆ.",
+    },
+    "ml-IN": {
+        "title": "{query} – iPhone ആപ്പ് തിരഞ്ഞെടുക്കാനുള്ള സത്യസന്ധമായ ഗൈഡ്",
+        "desc_app": [
+            "“{query}”-ന് പ്രായോഗിക ഉത്തരം: {app} ഉദാഹരണമാക്കി iPhone-ൽ "
+            "പരിഹാരത്തിന്റെ ഘട്ടങ്ങൾ, അതിശയോക്തിയില്ലാത്ത സത്യസന്ധമായ നിർദേശങ്ങളോടെ.",
+        ],
+        "desc": "“{query}”-ന് പ്രായോഗിക ഉത്തരവും ശരിയായ iPhone ആപ്പ് "
+        "തിരഞ്ഞെടുക്കാനുള്ള സത്യസന്ധമായ നിർദേശങ്ങളും.",
+    },
+    "mr-IN": {
+        "title": "{query} – iPhone अ‍ॅप निवडीसाठी प्रामाणिक मार्गदर्शक",
+        "desc_app": [
+            "“{query}”चे व्यावहारिक उत्तर: {app}च्या उदाहरणासह iPhone वर "
+            "समाधानाच्या पायऱ्या, अतिशयोक्तीशिवाय प्रामाणिक सल्ल्यांसह.",
+        ],
+        "desc": "“{query}”चे व्यावहारिक उत्तर आणि योग्य iPhone अ‍ॅप निवडण्यासाठी "
+        "प्रामाणिक सल्ला.",
+    },
+    "or-IN": {
+        "title": "{query} – iPhone ଆପ୍ ବାଛିବା ପାଇଁ ସଚ୍ଚୋଟ ଗାଇଡ୍",
+        "desc_app": [
+            "“{query}”ର ବ୍ୟାବହାରିକ ଉତ୍ତର: {app}ର ଉଦାହରଣ ସହିତ iPhoneରେ ସମାଧାନର "
+            "ପଦକ୍ଷେପ, ଅତିରଞ୍ଜନ ବିନା ସଚ୍ଚୋଟ ପରାମର୍ଶ ସହିତ।",
+        ],
+        "desc": "“{query}”ର ବ୍ୟାବହାରିକ ଉତ୍ତର ଏବଂ ଠିକ୍ iPhone ଆପ୍ ବାଛିବା ପାଇଁ "
+        "ସଚ୍ଚୋଟ ପରାମର୍ଶ।",
+    },
+    "pa-IN": {
+        "title": "{query} – iPhone ਐਪ ਚੁਣਨ ਲਈ ਇਮਾਨਦਾਰ ਗਾਈਡ",
+        "desc_app": [
+            "“{query}” ਦਾ ਵਿਹਾਰਕ ਜਵਾਬ: {app} ਦੀ ਉਦਾਹਰਣ ਨਾਲ iPhone ’ਤੇ ਹੱਲ ਦੇ "
+            "ਕਦਮ, ਬਿਨਾਂ ਵਧਾ-ਚੜ੍ਹਾਅ ਇਮਾਨਦਾਰ ਸਲਾਹ ਸਮੇਤ।",
+        ],
+        "desc": "“{query}” ਦਾ ਵਿਹਾਰਕ ਜਵਾਬ ਅਤੇ ਸਹੀ iPhone ਐਪ ਚੁਣਨ ਲਈ ਇਮਾਨਦਾਰ "
+        "ਸਲਾਹ।",
+    },
+    "ta-IN": {
+        "title": "{query} – iPhone ஆப் தேர்வுக்கான நேர்மையான வழிகாட்டி",
+        "desc_app": [
+            "“{query}”க்கு நடைமுறை பதில்: {app} உதாரணத்துடன் iPhone-இல் தீர்வு "
+            "படிகள், மிகைப்படுத்தல் இல்லாத நேர்மையான அறிவுரையுடன்.",
+        ],
+        "desc": "“{query}”க்கு நடைமுறை பதிலும், சரியான iPhone ஆப்பைத் "
+        "தேர்ந்தெடுக்க நேர்மையான அறிவுரையும்.",
+    },
+    "te-IN": {
+        "title": "{query} – iPhone యాప్ ఎంపికకు నిజాయితీ గైడ్",
+        "desc_app": [
+            "“{query}”కి ఆచరణాత్మక సమాధానం: {app} ఉదాహరణతో iPhone లో పరిష్కార "
+            "దశలు, అతిశయోక్తి లేని నిజాయితీ సూచనలతో.",
+        ],
+        "desc": "“{query}”కి ఆచరణాత్మక సమాధానం మరియు సరైన iPhone యాప్ "
+        "ఎంపికకు నిజాయితీ సూచనలు.",
+    },
+    "ur-PK": {
+        "title": "{query} – iPhone ایپ منتخب کرنے کی دیانت دار گائیڈ",
+        "desc_app": [
+            "”{query}“ کا عملی جواب: {app} کی مثال کے ساتھ iPhone پر حل کے "
+            "مراحل، مبالغے کے بغیر دیانت دار مشوروں کے ساتھ۔",
+        ],
+        "desc": "”{query}“ کا عملی جواب اور درست iPhone ایپ منتخب کرنے کے "
+        "لیے دیانت دار مشورے۔",
+    },
+    "bg": {
+        "title": "{query} – честен наръчник за избор на iPhone приложения",
+        "desc_app": [
+            "Практичен отговор на „{query}“: как да го решите на iPhone с "
+            "{app}, с честни съвети без преувеличения.",
+        ],
+        "desc": "Практичен отговор на „{query}“ и честни съвети за избор на "
+        "подходящото iPhone приложение.",
+    },
+    # English storefront variants: keep the page-specific description and add
+    # a truthful, region-specific frame so metadata is no longer byte-identical
+    # to the base English page.
+    "en-GB": {
+        "title": "{query}: honest iPhone app buying guide for UK users",
+        "desc_append": " For iPhone users in the UK.",
+    },
+    "en-AU": {
+        "title": "{query}: honest iPhone app buying guide for Australian users",
+        "desc_append": " For iPhone users in Australia.",
+    },
+    "en-CA": {
+        "title": "{query}: honest iPhone app buying guide for Canadian users",
+        "desc_append": " For iPhone users in Canada.",
+    },
+    "en-US": {
+        "title": "{query}: honest iPhone app buying guide for US users",
+        "desc_append": " For iPhone users in the United States.",
+    },
+}
+
+# Directory aliases seen under pages/ that should reuse an existing frame.
+_META_FRAME_ALIASES = {
+    "zh-CN": "zh-Hans",
+    "nb-NO": "no",
+}
+_META_FRAME_BASE_INDEX: dict[str, str] = {}
+for _key in LOCALE_META_FRAMES:
+    _META_FRAME_BASE_INDEX.setdefault(_key.split("-")[0], _key)
+
+
+def resolve_meta_frames(lang: str) -> dict[str, Any] | None:
+    frames = LOCALE_META_FRAMES.get(lang)
+    if frames:
+        return frames
+    alias = _META_FRAME_ALIASES.get(lang)
+    if alias:
+        return LOCALE_META_FRAMES.get(alias)
+    return LOCALE_META_FRAMES.get(
+        _META_FRAME_BASE_INDEX.get(lang.split("-")[0], "")
+    )
+
+
+def ensure_locale_meta(source: str, lang: str, slug: str) -> str:
+    """Give a localized page locale-specific <title>/description metadata.
+
+    Only fires while the <title> still matches the English answer-title
+    pattern (i.e. translation fell back to English), so a properly translated
+    page is left untouched and the rewrite is idempotent.
+    """
+    frames = resolve_meta_frames(lang)
+    if not frames:
+        return source
+    title_match = _TITLE_TAG_RE.search(source)
+    if not title_match:
+        return source
+    title = html.unescape(title_match.group(2)).strip()
+    query_match = _EN_ANSWER_TITLE_RE.match(title)
+    if not query_match:
+        return source
+    query = query_match.group("query").strip()
+    app_match = _OG_IMG_ALT_RE.search(source)
+    app = html.unescape(app_match.group(1)).strip() if app_match else ""
+    desc_match = _META_DESC_TAG_RE.search(source)
+    old_desc = html.unescape(desc_match.group(2)).strip() if desc_match else ""
+
+    new_title = frames["title"].format(query=query)
+    if "desc_append" in frames:
+        new_desc = (
+            old_desc + frames["desc_append"] if old_desc else new_title
+        )
+    else:
+        variants = frames["desc_app"] if app else [frames["desc"]]
+        digest = hashlib.sha1(slug.encode("utf-8")).hexdigest()
+        new_desc = variants[int(digest[:8], 16) % len(variants)].format(
+            query=query, app=app
+        )
+
+    title_text = html.escape(new_title, quote=False)
+    title_attr = html.escape(new_title, quote=True)
+    desc_attr = html.escape(new_desc, quote=True)
+    source = _TITLE_TAG_RE.sub(
+        lambda m: m.group(1) + title_text + m.group(3), source, count=1
+    )
+    if desc_match:
+        source = _META_DESC_TAG_RE.sub(
+            lambda m: m.group(1) + desc_attr + m.group(3), source, count=1
+        )
+    source = _OG_TITLE_TAG_RE.sub(
+        lambda m: m.group(1) + title_attr + m.group(3), source, count=1
+    )
+    source = _OG_DESC_TAG_RE.sub(
+        lambda m: m.group(1) + desc_attr + m.group(3), source, count=1
+    )
+    return source
+
+
+def run_meta_only(langs: list[str] | None = None) -> int:
+    """Sweep existing localized answer pages, fixing English-fallback metadata.
+
+    Never touches robots meta, body copy, canonical/hreflang or JSON-LD, and
+    never rewrites a page whose metadata is already localized.
+    """
+    changed = scanned = 0
+    locale_dirs = (
+        [ROOT / lang for lang in langs]
+        if langs
+        else sorted(
+            p
+            for p in ROOT.iterdir()
+            if p.is_dir()
+            and re.fullmatch(r"[a-z]{2,3}(-[A-Za-z]{2,4})?", p.name)
+            and p.name != "en"
+        )
+    )
+    for locale_dir in locale_dirs:
+        answers_dir = locale_dir / "answers"
+        if not answers_dir.is_dir():
+            continue
+        lang = locale_dir.name
+        if not resolve_meta_frames(lang):
+            continue
+        for path in sorted(answers_dir.glob("*.html")):
+            scanned += 1
+            source = path.read_text(encoding="utf-8")
+            updated = ensure_locale_meta(source, lang, path.stem)
+            if updated != source:
+                path.write_text(updated, encoding="utf-8")
+                changed += 1
+    print(json.dumps({"scanned": scanned, "changed": changed}), flush=True)
+    return 0
+
+
 def reconcile_microformat_url(source: str, lang: str, slug: str) -> str:
     """Keep the hidden h-entry URL aligned with the localized canonical."""
     if "<!-- answer-microformat:start -->" not in source:
@@ -1870,7 +2488,11 @@ def finalize_html(source: str, lang: str, slug: str) -> str:
     source = reconcile_structured_data_urls(source, lang, slug)
     if lang in RTL_LANGS:
         source = source.replace("→", "←")
-    return localize_body_links(source, lang)
+    source = localize_body_links(source, lang)
+    # Metadata must never fall back to the byte-identical English title/
+    # description (duplicate_metadata_share); frames only fire when the
+    # translation mapping left the English title in place.
+    return ensure_locale_meta(source, lang, slug)
 
 
 def render_localized(source: str, lang: str, slug: str, mapping: dict[str, str]) -> str:
@@ -1903,6 +2525,7 @@ def main() -> int:
     parser.add_argument("slugs", nargs="*", help="Optional answer slugs, with or without .html")
     parser.add_argument("--langs", help="Locales to generate (comma or space separated)")
     parser.add_argument("--limit", type=int, help="Limit number of discovered slugs when no positional slugs are provided")
+    parser.add_argument("--meta-only", action="store_true", help="只重寫既有在地化 answers 頁仍是英文 fallback 的 <title>/meta description/og:title/og:description(每語言句式+頁面特異 query/app),不翻譯內文、不動 robots/canonical/JSON-LD。--langs 可鎖定語言,預設掃全部 locale 目錄。")
     parser.add_argument("--dump", metavar="DIR", help="不翻譯,僅把每個 slug 的待譯字串輸出成 DIR/<slug>.json,供 agent 自行在地化(不用 OpenAI key)。")
     parser.add_argument("--trans", metavar="DIR", help="從全域 DIR/<lang>.json {原文:譯文}(agent 自產)組 mapping,免用 OpenAI key。字串全覆蓋才生成;缺漏寫到 DIR/_missing.<lang>.json 供補譯。")
     parser.add_argument("--allow-partial", action="store_true", help="搭配 --trans:即使有字串未譯也生成(未譯者維持原文)。預設關閉以免英文 fallback。")
@@ -1933,6 +2556,13 @@ def main() -> int:
         ),
     )
     args = parser.parse_args()
+    if args.meta_only:
+        langs = (
+            [x.strip() for x in args.langs.replace(",", " ").split() if x.strip()]
+            if args.langs
+            else None
+        )
+        return run_meta_only(langs)
     if sum(
         bool(value)
         for value in (

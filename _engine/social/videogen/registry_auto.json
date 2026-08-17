@@ -187,9 +187,15 @@
     "sub": "Smart travel currency and expense tracker — log each spend and see it in your home currency.",
     "tag": "Free to start · One-time unlock · No subscription",
     "cta_bullets": [
-      "Free to start",
-      "One-time unlock",
-      "No subscription"
+      "1 trip and 3 expenses free",
+      "One-time lifetime unlock",
+      "No subscription",
+      "Offline with saved rates",
+      "Private on-device storage",
+      "No account",
+      "No tracking",
+      "Home Screen widget",
+      "Apple Watch"
     ],
     "purchase_model": "free_with_lifetime_unlock",
     "keywords": [
@@ -276,7 +282,12 @@
     "cta_bullets": [
       "Free to start",
       "One-time unlock",
-      "No subscription"
+      "No subscription",
+      "On-device privacy",
+      "No account",
+      "No tracking",
+      "Home Screen widget",
+      "Apple Watch"
     ],
     "purchase_model": "free_with_lifetime_unlock",
     "keywords": [
@@ -364,7 +375,15 @@
       "free language phrasebook",
       "travel phrases no subscription"
     ],
-    "keyword_source": "reviewed_persona"
+    "keyword_source": "reviewed_persona",
+    "icon": "~/38_DailyMateLite/ios/DailyMateLite/Images.xcassets/AppIcon.appiconset/App-Icon-1024x1024@1x.png",
+    "shots_dir": "~/00_GrowthEngine/social/assets/dailymatelite",
+    "locale": "",
+    "shots": [
+      "01",
+      "02",
+      "03"
+    ]
   },
   "snapportlite": {
     "appstore_id": "6792856304",
@@ -387,7 +406,15 @@
       "print passport photos at home",
       "offline passport photo app"
     ],
-    "keyword_source": "reviewed_persona"
+    "keyword_source": "reviewed_persona",
+    "icon": "~/36_SnapportLite/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
+    "shots_dir": "~/00_GrowthEngine/social/assets/snapportlite",
+    "locale": "",
+    "shots": [
+      "01",
+      "02",
+      "03"
+    ]
   },
   "wordmatelite": {
     "appstore_id": "6797601720",
@@ -410,7 +437,18 @@
       "daily streak language habit",
       "vocabulary app no subscription"
     ],
-    "keyword_source": "reviewed_persona"
+    "keyword_source": "reviewed_persona",
+    "icon": "~/37_WordmateLite/ios/WordmateLite/Images.xcassets/AppIcon.appiconset/App-Icon-1024x1024@1x.png",
+    "shots_dir": "~/00_GrowthEngine/social/assets/wordmatelite",
+    "locale": "",
+    "shots": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
   },
   "caldaily": {
     "appstore_id": "6794178671",
@@ -433,7 +471,18 @@
       "export calculations to csv",
       "calculator no subscription"
     ],
-    "keyword_source": "reviewed_persona"
+    "keyword_source": "reviewed_persona",
+    "icon": "~/42_CalDaily/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+    "shots_dir": "~/00_GrowthEngine/social/assets/caldaily",
+    "locale": "",
+    "shots": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
   },
   "onepageppt": {
     "appstore_id": "6798814385",
@@ -456,6 +505,17 @@
       "make a slide from a pdf",
       "editable pptx export from notes"
     ],
-    "keyword_source": "reviewed_persona"
+    "keyword_source": "reviewed_persona",
+    "icon": "~/44_OnePagePPT/OnePagePPT/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+    "shots_dir": "~/00_GrowthEngine/social/assets/onepageppt",
+    "locale": "",
+    "shots": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
   }
 }

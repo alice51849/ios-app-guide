@@ -25,6 +25,11 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GEO_SITE: https://alice51849.github.io/ios-app-guide
+      # Apple campaign-link provider token. Not a secret: it is published
+      # verbatim inside every ?pt= App Store link on this site. Without it
+      # gen_store_attribution.py is a silent no-op and the daily rebuild
+      # strips campaign tokens off every page it regenerates.
+      APP_STORE_PROVIDER_TOKEN: "118326163"
       STANDARD_SITE_GUIDE_CONTRACT_URL: https://raw.githubusercontent.com/alice51849/alice51849.github.io/main/standard_site_guide_contract.json
     steps:
       - uses: actions/checkout@v5
@@ -96,6 +101,9 @@ jobs:
           python3 gen_mobile_store_ctas.py
           python3 gen_app_store_qr_ctas.py
           python3 gen_app_store_share_ctas.py
+          # Must stay after every generator that rewrites page bodies: those
+          # emit clean store URLs, and this is what re-attaches ?pt&ct&mt.
+          python3 gen_store_attribution.py
           python3 validate_webstories.py
           python3 gen_llms.py --cached-live
           python3 gen_feed.py
@@ -235,6 +243,9 @@ jobs:
           python3 gen_mobile_store_ctas.py
           python3 gen_app_store_qr_ctas.py
           python3 gen_app_store_share_ctas.py
+          # Must stay after every generator that rewrites page bodies: those
+          # emit clean store URLs, and this is what re-attaches ?pt&ct&mt.
+          python3 gen_store_attribution.py
           python3 validate_webstories.py
           python3 gen_llms.py --cached-live
           python3 zhuyin_resourcesync.py
@@ -328,6 +339,9 @@ jobs:
           python3 gen_mobile_store_ctas.py
           python3 gen_app_store_qr_ctas.py
           python3 gen_app_store_share_ctas.py
+          # Must stay after every generator that rewrites page bodies: those
+          # emit clean store URLs, and this is what re-attaches ?pt&ct&mt.
+          python3 gen_store_attribution.py
           python3 validate_webstories.py
           python3 gen_llms.py --cached-live
           python3 zhuyin_resourcesync.py

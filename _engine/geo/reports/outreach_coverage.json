@@ -1,8 +1,8 @@
 {
-  "generated_on": "2026-08-10",
+  "generated_on": "2026-08-17",
   "metric": "owned outreach asset coverage (not AI recommendation share-of-voice)",
-  "public_apps": 39,
-  "average_public_coverage": 0.97,
+  "public_apps": 40,
+  "average_public_coverage": 0.956,
   "rows": [
     {
       "key": "snapport",
@@ -881,6 +881,25 @@
       "coverage_score": 0.417,
       "answers": 0,
       "planned_answers": 17,
+      "social_posts": 1,
+      "social_languages": [
+        "zh-Hant"
+      ],
+      "alternatives": 0,
+      "detail": true,
+      "hub": true,
+      "guide": true,
+      "story": true,
+      "catalog": true
+    },
+    {
+      "key": "onepageppt",
+      "name": "OnePage PPT",
+      "public": true,
+      "appstore": "https://apps.apple.com/app/id6798814385",
+      "coverage_score": 0.417,
+      "answers": 0,
+      "planned_answers": 18,
       "social_posts": 1,
       "social_languages": [
         "zh-Hant"

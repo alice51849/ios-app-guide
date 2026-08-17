@@ -20,6 +20,10 @@ GEO = Path(__file__).resolve().parents[1]
 if str(GEO) not in sys.path:
     sys.path.insert(0, str(GEO))
 
+from app_store_storefronts import (
+    campaign_app_store_url,
+    validated_app_store_url,
+)
 from official_locales import OFFICIAL_LOCALES
 import publisher_intent_catalog as catalog
 import publisher_intent_visuals as visuals
@@ -84,10 +88,17 @@ class PublisherIntentVisualUnitTests(unittest.TestCase):
         self.assertEqual("end", app_name.attrib["text-anchor"])
         self.assertEqual("ltr", app_name.attrib["direction"])
         store = visuals.visual_store_url(record)
+        # The site stamps Apple campaign attribution when a provider token is
+        # configured, so pin the storefront link itself and let the shared
+        # validator reject anything that is not a complete pt+ct+mt triple.
         self.assertEqual(
-            "https://apps.apple.com/sa/app/id1234567890",
+            campaign_app_store_url(
+                "https://apps.apple.com/sa/app/id1234567890",
+                visuals.visual_campaign_token("ar-SA"),
+            ),
             store,
         )
+        self.assertEqual(store, validated_app_store_url(store))
 
     def test_gallery_hreflang_covers_root_and_official_locales(self) -> None:
         alternates = visuals._alternates()
@@ -221,7 +232,10 @@ class PublisherIntentVisualOutputTests(unittest.TestCase):
                 f"id{record['app_store_id']}",
                 parsed_store.path,
             )
-            self.assertEqual("", parsed_store.query)
+            self.assertEqual(
+                str(record["app_store_url"]),
+                validated_app_store_url(str(record["app_store_url"])),
+            )
             self.assertEqual(
                 visuals.gallery_url(locale),
                 record["gallery_url"],
@@ -254,16 +268,16 @@ class PublisherIntentVisualOutputTests(unittest.TestCase):
             self.assertIn("white-space:nowrap", source)
             store_urls = re.findall(
                 r'href="(https://apps\.apple\.com/'
-                r'(?:[a-z]{2}/)?app/id[0-9]+)"',
+                r'(?:[a-z]{2}/)?app/id[0-9]+(?:\?[^"]*)?)"',
                 source,
             )
             self.assertEqual(
                 catalog.EXPECTED_APP_COUNT * 2,
                 len(store_urls),
             )
-            self.assertTrue(
-                all(not urlparse(html.unescape(url)).query for url in store_urls)
-            )
+            for url in store_urls:
+                decoded = html.unescape(url)
+                self.assertEqual(decoded, validated_app_store_url(decoded))
             schema_match = re.search(
                 r'<script type="application/ld\+json">(.*?)</script>',
                 source,

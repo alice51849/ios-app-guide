@@ -16,6 +16,11 @@ from official_locales import OFFICIAL_LOCALES
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide")
+STANDARD_SITE_GUIDE_CONTRACT_URL = os.environ.get(
+    "STANDARD_SITE_GUIDE_CONTRACT_URL",
+    "https://raw.githubusercontent.com/alice51849/"
+    "alice51849.github.io/main/standard_site_guide_contract.json",
+)
 PY = sys.executable
 COMMIT_TRAILERS = (
     "\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
@@ -41,7 +46,31 @@ def require(cmd, cwd=None, env=None):
     return output
 
 
+def sync_standard_site(env):
+    """Reconcile the verified Standard.site discovery links (see geo-daily.yml)."""
+    require(
+        [
+            PY,
+            os.path.join(HERE, "sync_standard_site.py"),
+            "--site-root",
+            PAGES,
+            "--contract-url",
+            STANDARD_SITE_GUIDE_CONTRACT_URL,
+            "--allow-initial-404",
+            "--timeout",
+            "10",
+            "--retries",
+            "3",
+            "--retry-delay",
+            "2",
+        ],
+        env=env,
+    )
+
+
 def reconcile_lastmod_after_rebase(env):
+    sync_standard_site(env)
+    require([PY, os.path.join(HERE, "reconcile_answer_semantics.py")], env=env)
     require([PY, os.path.join(HERE, "gen_sitemap_lastmod.py")], env=env)
     require(["git", "add", "-A"], cwd=PAGES)
     returncode, output = run(
@@ -187,6 +216,14 @@ def main():
         env=env,
     )
     require(
+        [
+            PY,
+            os.path.join(HERE, "reconcile_answer_semantics.py"),
+            "--repair",
+        ],
+        env=env,
+    )
+    require(
         [PY, os.path.join(HERE, "family_outing_weather_planner.py")],
         env=env,
     )
@@ -283,6 +320,8 @@ def main():
     require([PY, os.path.join(HERE, "gen_llms.py"), "--cached-live"], env=env)
     require([PY, os.path.join(HERE, "zhuyin_resourcesync.py")], env=env)
     require([PY, os.path.join(HERE, "gen_feed.py")], env=env)
+    sync_standard_site(env)
+    require([PY, os.path.join(HERE, "reconcile_answer_semantics.py")], env=env)
     require([PY, os.path.join(HERE, "gen_sitemap_lastmod.py")], env=env)
     # 發布前的硬閘門:可索引頁一頁都不可以從首頁點不到。這是量測不是產生 ——
     # 它擋的是「某支下游產生器把連結圖洗掉,結果我們把孤兒站推上線」。

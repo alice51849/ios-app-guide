@@ -235,7 +235,7 @@ def _purchase_copy(model: object) -> str:
     if model == "free_with_lifetime_unlock":
         return (
             "The maintained publisher catalog describes it as free to start "
-            "with an optional one-time unlock and no subscription."
+            "with an optional one-time lifetime unlock and no subscription."
         )
     if model == "free":
         return (

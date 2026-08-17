@@ -387,11 +387,21 @@ class AppVideoLessonPublishedOutputTests(unittest.TestCase):
             "incremental_publisher_video_archive",
             self.manifest["coverage_status"],
         )
-        self.assertFalse(self.manifest["campaign_link_attribution_ready"])
+        # The manifest must state the policy the run actually applied: with a
+        # provider token configured the links are attributed, without one they
+        # stay clean. Either way the two fields have to agree.
+        campaign_ready = bool(self.manifest["campaign_link_attribution_ready"])
         self.assertEqual(
-            "clean_direct_until_provider_token_available",
+            "attributed_direct"
+            if campaign_ready
+            else "clean_direct_until_provider_token_available",
             self.manifest["app_store_link_policy"],
         )
+        for record in self.records:
+            query = urllib.parse.parse_qs(
+                urllib.parse.urlsplit(str(record["app_store_url"])).query
+            )
+            self.assertEqual(campaign_ready, bool(query.get("ct")))
         self.assertLess(
             self.manifest["app_count"],
             self.manifest["portfolio_app_count"],

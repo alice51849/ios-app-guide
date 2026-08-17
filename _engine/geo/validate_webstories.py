@@ -126,7 +126,12 @@ def validate_story(path, key, locale=None, localization=None):
         expected_alternates(f"/stories/{key}.html"),
         label,
     )
-    meta_matches = APP_META_RE.findall(document)
+    # The attribute is HTML-escaped in the document, so a campaign URL with
+    # "&pt=...&ct=...&mt=8" arrives here as "&amp;". Compare the decoded value.
+    meta_matches = [
+        (app_id, html.unescape(argument))
+        for app_id, argument in APP_META_RE.findall(document)
+    ]
     campaign_url = appstore_url(key, "iag_story")
     if meta_matches != [(APPSTORE[key], campaign_url)]:
         raise ValueError(f"{label}: invalid Smart App Banner campaign URL")

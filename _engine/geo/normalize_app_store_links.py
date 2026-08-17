@@ -34,17 +34,36 @@ APP_STORE_URL_RE = re.compile(
     r"https://apps\.apple\.com/"
     r"(?:(?P<country>[a-z]{2})/)?app/"
     r"(?:[-A-Za-z0-9._~%]+/)?id(?P<app_id>\d{9,12})"
+    # "&(amp;)*" covers raw, HTML-escaped and doubly-escaped separators: an
+    # Atom <content type="html"> block carries "&amp;amp;" between pt/ct/mt.
     r"(?:\?(?:pt|ct|mt)=[A-Za-z0-9_/%+.-]+"
-    r"(?:(?:&|&amp;)(?:pt|ct|mt)=[A-Za-z0-9_/%+.-]+)*)?"
-    r"(?![?&])",
+    r"(?:&(?:amp;)*(?:pt|ct|mt)=[A-Za-z0-9_/%+.-]+)*)?"
+    # Refuse to stop inside a query value. With a bare "(?![?&])" the engine
+    # backtracks into the middle of "pt=118326163", matches a truncated URL
+    # and rewrites it — that is what shredded the decision feeds.
+    r"(?![?&A-Za-z0-9_/%+.-])",
     flags=re.IGNORECASE,
 )
 QUERY_APP_STORE_URL_RE = re.compile(
     r"https://apps\.apple\.com/(?:[a-z]{2}/)?app/"
     r"(?:[-A-Za-z0-9._~%]+/)?id\d{9,12}"
-    r"\?[^\"'<>\s\\]+",
+    # Only characters that can legitimately belong to the query (or to an
+    # invalid one we must reject) — an "everything but quotes" class swallows
+    # whatever the surrounding document puts after the URL and then rejects a
+    # perfectly valid campaign link: ")" ends a Markdown link target in every
+    # generated README, and "," ends a CSV field in the published datasets.
+    r"\?[-A-Za-z0-9._~%+=&;/:!*$#]+",
     flags=re.IGNORECASE,
 )
+
+
+def _decode_ampersands(value: str) -> tuple[str, int]:
+    """Undo every layer of "&amp;" escaping and report how many there were."""
+    depth = 0
+    while "&amp;" in value:
+        value = value.replace("&amp;", "&")
+        depth += 1
+    return value, depth
 
 
 def normalize_source(source: str) -> tuple[str, int]:
@@ -53,8 +72,7 @@ def normalize_source(source: str) -> tuple[str, int]:
     def replace(match: re.Match[str]) -> str:
         nonlocal changed
         raw = match.group(0)
-        html_encoded = "&amp;" in raw
-        decoded = raw.replace("&amp;", "&")
+        decoded, escape_depth = _decode_ampersands(raw)
         parsed = urllib.parse.urlsplit(decoded)
         country = match.group("country")
         canonical_path = (
@@ -66,7 +84,7 @@ def normalize_source(source: str) -> tuple[str, int]:
             parsed._replace(path=canonical_path, fragment="")
         )
         normalized = normalize_app_store_campaign_url(canonical)
-        if html_encoded:
+        for _ in range(escape_depth):
             normalized = normalized.replace("&", "&amp;")
         changed += int(normalized != raw)
         return normalized
@@ -76,7 +94,7 @@ def normalize_source(source: str) -> tuple[str, int]:
 
 def assert_no_partial_campaigns(source: str, path: Path) -> None:
     for match in QUERY_APP_STORE_URL_RE.finditer(source):
-        url = match.group(0).replace("&amp;", "&")
+        url, _ = _decode_ampersands(match.group(0))
         try:
             validated_app_store_url(url)
         except ValueError as error:

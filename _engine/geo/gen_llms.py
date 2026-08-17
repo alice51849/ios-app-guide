@@ -29,6 +29,7 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 import app_install_decision_routes  # noqa: E402
+import app_video_lessons  # noqa: E402
 import build_pages_i18n  # noqa: E402
 from app_store_storefronts import (  # noqa: E402
     load_storefront_availability,
@@ -43,7 +44,12 @@ from official_locales import (  # noqa: E402
 )
 import portfolio_offer_catalog  # noqa: E402
 import publisher_intent_catalog  # noqa: E402
+from rsscloud_config import (  # noqa: E402
+    RSSCLOUD_NOTIFY_URL,
+    RSSCLOUD_WEBSUB_HUB,
+)
 from static_api_catalog import API_DESCRIPTORS  # noqa: E402
+from websub_config import WEBSUB_HUBS  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 ALT = os.path.join(PAGES, "alternatives")
@@ -71,9 +77,33 @@ ZHUYIN_EPUB = "zhuyin-bopomofo-epub-reference"
 ZHUYIN_LIBRARY_CATALOG = "zhuyin-bopomofo-library-catalog-records"
 ZHUYIN_OER_METADATA = "zhuyin-bopomofo-oer-repository-metadata"
 ZHUYIN_DCAT_CATALOG = "zhuyin-bopomofo-dcat3-open-data-catalog"
+ZHUYIN_METS_PREMIS = "zhuyin-bopomofo-mets2-premis3"
+ZHUYIN_ORE = "zhuyin-bopomofo-oai-ore"
+ZHUYIN_LDES = "zhuyin-bopomofo-ldes"
 RESOURCE_SYNC_SOURCE = "https://alice51849.github.io/.well-known/resourcesync"
+WORDMATE_LANGUAGE_DATASET = "wordmate-language-support"
+WORDMATE_LANGUAGE_TOOL = "wordmate-44-language-support-checker"
+PORTFOLIO_FINDER_DATASET = "verified-ios-app-finder-catalog"
 PORTFOLIO_FINDER_TOOL = "private-pay-once-iphone-app-finder"
 PORTFOLIO_COST_TOOL = "subscription-cost-calculator"
+PUBLISHER_INTENT_VISUALS = "lumi-studio-publisher-intent-visuals"
+PUBLISHER_INTENT_VISUALS_SITEMAP = "sitemap_intent_visuals.xml"
+# Truthful titles for tool slugs whose filename would otherwise read as a
+# capability the tool does not have (e.g. "ats resume keyword checker").
+RESOURCE_TITLES = {
+    ("tools", "ats-resume-keyword-checker"): (
+        "Private resume evidence coverage planner"
+    ),
+    ("tools", "private-toeic-study-allocation-planner"): (
+        "Private TOEIC study allocation planner"
+    ),
+    ("tools", "private-bopomofo-symbol-contrast-cards"): (
+        "Private Bopomofo symbol contrast cards"
+    ),
+    ("tools", "private-bopomofo-matching-pair-cards"): (
+        "Private Bopomofo matching-pair cards"
+    ),
+}
 DATA_DISTRIBUTIONS = (
     ("JSON", ".json"),
     ("JSONL", ".jsonl"),
@@ -163,6 +193,160 @@ def agent_skill_install_lines(prefix=""):
             ("Vercel skills.sh", "vercel_skills"),
         )
     ]
+
+
+def wordmate_language_support_lines(*, full):
+    """Describe the checker only after its canonical dataset exists."""
+    if not os.path.exists(
+        os.path.join(DATA_DIR, f"{WORDMATE_LANGUAGE_DATASET}.json")
+    ):
+        return []
+    if full:
+        return [
+            "",
+            "## Wordmate 44-language support dataset",
+            f"- [Bilingual purchase-readiness checker]({SITE}/tools/{WORDMATE_LANGUAGE_TOOL}.html)",
+            f"  - Traditional Chinese: {SITE}/zh-Hant/tools/{WORDMATE_LANGUAGE_TOOL}.html",
+            f"  - JSON dataset: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.json",
+            f"  - UTF-8 CSV: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.csv",
+            f"  - W3C CSVW metadata: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.csv-metadata.json",
+            f"  - JSON Schema: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.schema.json",
+        ]
+    return [
+        "",
+        "## Wordmate 44-language support dataset (CC BY 4.0)",
+        f"- Bilingual purchase-readiness checker: {SITE}/tools/{WORDMATE_LANGUAGE_TOOL}.html",
+        f"- Traditional Chinese edition: {SITE}/zh-Hant/tools/{WORDMATE_LANGUAGE_TOOL}.html",
+        f"- JSON dataset: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.json",
+        f"- UTF-8 CSV: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.csv",
+        f"- W3C CSVW metadata: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.csv-metadata.json",
+        f"- JSON Schema: {SITE}/data/{WORDMATE_LANGUAGE_DATASET}.schema.json",
+    ]
+
+
+def portfolio_finder_lines(*, full):
+    """Disclose the finder as first-party, only once its catalogue exists.
+
+    The finder ships as a page, a PWA, an MCP server and an Agent Skill; every
+    surface has to carry the same first-party disclosure, so both llms.txt and
+    llms-full.txt render from this single block.
+    """
+    if not os.path.exists(
+        os.path.join(DATA_DIR, f"{PORTFOLIO_FINDER_DATASET}.json")
+    ):
+        return []
+    distribution = [
+        f"- Finder · PWA manifest: {SITE}/tools/{PORTFOLIO_FINDER_TOOL}.webmanifest",
+        f"- Finder · VS Code: {publisher_intent_catalog.MCP_VSCODE_INSTALL_URL}",
+        f"- Finder · Cursor: {publisher_intent_catalog.MCP_CURSOR_INSTALL_URL}",
+        f"- Finder · Claude Desktop (MCPB): {publisher_intent_catalog.MCP_BUNDLE_URL}",
+        f"- Finder · MCP Registry: {publisher_intent_catalog.MCP_REGISTRY_URL}",
+        f"- Finder · MCP SHA256SUMS: {publisher_intent_catalog.MCP_CHECKSUMS_URL}",
+        (
+            "- Finder · MCP distribution state: "
+            f"{publisher_intent_catalog.MCP_DISTRIBUTION_STATE_URL}"
+        ),
+        (
+            "- Finder · MCP client config: "
+            f"{publisher_intent_catalog.MCP_CLIENT_CONFIG_URL}"
+        ),
+        f"- Finder · Agent Skill: {publisher_intent_catalog.AGENT_SKILL_URL}",
+        *agent_skill_install_lines("Finder · "),
+        *(
+            f"- Finder · MCP · {label}: "
+            f"{publisher_intent_catalog.MCP_INSTALL_COMMANDS[key]}"
+            for label, key in (
+                ("Claude Code", "claude_code"),
+                ("Codex", "codex"),
+                ("Gemini CLI", "gemini_cli"),
+            )
+        ),
+    ]
+    disclosure = (
+        "- Publisher disclosure: this is a first-party catalogue of the "
+        "publisher's own iOS apps, ordered alphabetically. It is not a "
+        "ranking, a review score or a paid placement."
+    )
+    if full:
+        return [
+            "",
+            "## First-party pay-once iOS app finder",
+            f"- [English private and pay-once finder]({SITE}/tools/{PORTFOLIO_FINDER_TOOL}.html)",
+            f"- [Traditional Chinese finder]({SITE}/zh-Hant/tools/{PORTFOLIO_FINDER_TOOL}.html)",
+            f"  - Agent-readable JSON: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.json",
+            f"  - JSON Schema: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.schema.json",
+            *distribution,
+            disclosure,
+        ]
+    return [
+        "",
+        "## First-party pay-once iOS app finder (alphabetical, not ranked)",
+        f"- English finder: {SITE}/tools/{PORTFOLIO_FINDER_TOOL}.html",
+        f"- Traditional Chinese finder: {SITE}/zh-Hant/tools/{PORTFOLIO_FINDER_TOOL}.html",
+        f"- Agent-readable JSON: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.json",
+        f"- JSON Schema: {SITE}/data/{PORTFOLIO_FINDER_DATASET}.schema.json",
+        *distribution,
+        disclosure,
+    ]
+
+
+def publisher_intent_visual_lines(*, full):
+    """Describe localized visual cards after their manifest exists."""
+    manifest = os.path.join(DATA_DIR, f"{PUBLISHER_INTENT_VISUALS}.json")
+    if not os.path.exists(manifest):
+        return []
+    localized = [
+        f"  - {locale}: {SITE}/{locale}/visuals/"
+        for locale in OFFICIAL_LOCALES
+    ]
+    lines = [
+        "",
+        "## Publisher-authored visual buyer-intent cards",
+        f"- English visual gallery: {SITE}/visuals/",
+        f"- Official Apple locales: {len(OFFICIAL_LOCALES)}/{len(OFFICIAL_LOCALES)}",
+        *localized,
+        f"- Image sitemap: {SITE}/{PUBLISHER_INTENT_VISUALS_SITEMAP}",
+        f"- Machine-readable manifest: {SITE}/data/{PUBLISHER_INTENT_VISUALS}.json",
+    ]
+    if full:
+        lines.append(
+            "- Every image links to a matching guide and direct App Store route; "
+            "the collection is first-party, alphabetical, and not a ranking"
+        )
+    return lines
+
+
+def portfolio_offer_catalog_lines(*, full):
+    """Expose locale-aware App Store offers after their index exists."""
+    index_path = os.path.join(PAGES, portfolio_offer_catalog.INDEX_RELATIVE)
+    if not os.path.exists(index_path):
+        return []
+    lines = [
+        "",
+        "## Verified locale-aware App Store offers",
+        f"- Schema.org OfferCatalog index: {portfolio_offer_catalog.index_url()}",
+        f"- Official Apple locales: {len(OFFICIAL_LOCALES)}/{len(OFFICIAL_LOCALES)}",
+    ]
+    if full:
+        lines.extend(
+            f"  - {locale}: {portfolio_offer_catalog.catalog_url(locale)}"
+            for locale in OFFICIAL_LOCALES
+        )
+    return lines
+
+
+def _localized_app_guides(key):
+    if not os.path.isdir(PAGES):
+        return []
+    rows = []
+    for locale in sorted(os.listdir(PAGES)):
+        if locale == "en-US" or not re.fullmatch(
+            r"[a-z]{2}(?:-(?:[A-Z]{2}|[A-Z][a-z]{3}))?", locale
+        ):
+            continue
+        if os.path.isfile(os.path.join(PAGES, locale, f"{key}.html")):
+            rows.append((locale, f"{SITE}/{locale}/{key}.html"))
+    return rows
 
 
 def portfolio_cost_calculator_lines(*, full):
@@ -633,6 +817,11 @@ def build_llms(comp_map, live_keys):
                     if os.path.exists(os.path.join(DATA_DIR, f"{stem}{suffix}")):
                         line += f" · {label}: {SITE}/data/{stem}{suffix}"
                 lines.append(line)
+    lines += wordmate_language_support_lines(full=False)
+    lines += portfolio_finder_lines(full=False)
+    lines += publisher_intent_visual_lines(full=False)
+    lines += app_video_lessons.llms_lines(full=False)
+    lines += portfolio_offer_catalog_lines(full=False)
     static_apis = [
         descriptor
         for descriptor in API_DESCRIPTORS
@@ -648,12 +837,18 @@ def build_llms(comp_map, live_keys):
             "## Open static APIs (versioned, read-only, no API key)",
         ]
         for descriptor in static_apis:
+            api_directory = os.path.join(API_DIR, "v1", descriptor["slug"])
             base = f"{SITE}/api/v1/{descriptor['slug']}"
             lines += [
                 f"- {descriptor['title']}: {base}/",
                 f"  - OpenAPI 3.1: {base}/openapi.json",
                 f"  - API index: {base}/index.json",
             ]
+            feed_path = descriptor.get("feed")
+            if isinstance(feed_path, str) and os.path.exists(
+                os.path.join(api_directory, feed_path)
+            ):
+                lines.append(f"  - JSON Feed 1.1: {base}/{feed_path}")
     if os.path.exists(os.path.join(TOOLS, f"{FAMILY_TRAVEL_OER}.metadata.json")):
         opds2 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.json"
         opds1 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.xml"
@@ -734,6 +929,26 @@ def build_llms(comp_map, live_keys):
         os.path.join(
             DATA_DIR,
             "packages",
+            ZHUYIN_LDES,
+            "bopomofo-event-stream.jsonld",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_LDES}"
+        lines += [
+            "",
+            "## Bopomofo LDES 1.0 + TREE event stream",
+            f"- English guide: {package}/",
+            f"- Traditional Chinese guide: {SITE}/zh-Hant/data/packages/{ZHUYIN_LDES}/",
+            f"- Canonical JSON-LD entry point: {package}/bopomofo-event-stream.jsonld",
+            f"- Turtle discovery overview: {package}/bopomofo-event-stream.ttl",
+            f"- SHACL member shape: {package}/bopomofo-event-member.shacl.ttl",
+            f"- Deterministic bundle: {package}/bopomofo-37-symbols-ldes-tree.zip",
+            f"- SHA-256 checksums: {package}/checksums-sha256.txt",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
             ZHUYIN_BAGIT_PACKAGE,
             "metadata.jsonld",
         )
@@ -798,6 +1013,47 @@ def build_llms(comp_map, live_keys):
             f"- Attached deterministic ZIP: {package}/bopomofo-37-symbols-ro-crate-1.3.zip",
             f"- RO-Crate metadata: {package}/ro-crate-metadata.json",
             f"- Static crate preview: {package}/ro-crate-preview.html",
+            f"- SHA-256 checksums: {package}/checksums-sha256.txt",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
+            ZHUYIN_METS_PREMIS,
+            "mets.xml",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_METS_PREMIS}"
+        lines += [
+            "",
+            "## Bopomofo METS 2.0 + PREMIS 3.0 preservation package",
+            f"- English guide: {package}/",
+            f"- Traditional Chinese guide: {SITE}/zh-Hant/data/packages/{ZHUYIN_METS_PREMIS}/",
+            f"- Deterministic transfer ZIP: {package}/bopomofo-37-symbols-mets2-premis3.zip",
+            f"- METS 2.0 record: {package}/mets.xml",
+            f"- PREMIS 3.0 record: {package}/premis.xml",
+            f"- SHA-256 checksums: {package}/checksums-sha256.txt",
+            f"- Package metadata: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
+            ZHUYIN_ORE,
+            "bopomofo-resource-map.ore.rdf",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_ORE}"
+        lines += [
+            "",
+            "## Bopomofo OAI-ORE 1.0 compound-object Resource Map",
+            f"- English guide: {package}/",
+            f"- Traditional Chinese guide: {SITE}/zh-Hant/data/packages/{ZHUYIN_ORE}/",
+            f"- Authoritative RDF/XML Resource Map: {package}/bopomofo-resource-map.ore.rdf",
+            f"- Aggregation hash URI: {package}/bopomofo-resource-map.ore.rdf#aggregation",
+            f"- Turtle Resource Map: {package}/bopomofo-resource-map.ore.ttl",
+            f"- JSON-LD Resource Map: {package}/bopomofo-resource-map.ore.jsonld",
+            f"- Deterministic bundle: {package}/bopomofo-37-symbols-oai-ore-bundle.zip",
             f"- SHA-256 checksums: {package}/checksums-sha256.txt",
         ]
     if os.path.exists(
@@ -949,13 +1205,33 @@ def build_llms(comp_map, live_keys):
               "https://apps.apple.com/developer/id1136144960",
               "- Telegram channel (free tools + app updates): https://t.me/LumiApps2026",
               f"- Full crawler index (all apps, comparison pages, datasets, multilingual hubs): {SITE}/llms-full.txt"]
-    lines += ["", "## Sitemaps",
+    lines += ["", "## RFC 9264 Web Linkset",
+              f"- App relationship graph: {SITE}/linkset.json",
+              f"- Linkset sitemap: {SITE}/sitemap_linkset.xml",
+              "", "## Social preview and oEmbed discovery",
+              f"- oEmbed endpoint sitemap: {SITE}/sitemap_oembed.xml",
+              "- Every live app has localized Open Graph, X Card, and "
+              "oEmbed discovery in all 50 App Store locales; each oEmbed "
+              "response includes an attributable App Store link.",
+              "", "## Sitemaps",
               f"- {SITE}/sitemap.xml", f"- {SITE}/sitemap_alternatives.xml",
               f"- {SITE}/sitemap_answers.xml",
               "", "## Featured: escape subscriptions (pay-once swaps)",
               f"- {SITE}/subscription-swap.html — real 5-year cost of popular subscription apps "
               "vs the one-time-purchase iPhone app that replaces each.",
-              "", "## Latest updates (Atom feed)", f"- {SITE}/feed.xml", ""]
+              "", "## Latest updates (syndication feeds)",
+              f"- Atom: {SITE}/feed.xml",
+              f"- RSS 2.0: {SITE}/rss.xml",
+              f"- JSON Feed 1.1: {SITE}/feed.json",
+              "- Real-time updates: independent WebSub hubs advertised inside "
+              "every feed:"]
+    lines.extend(f"  - {hub}" for hub in WEBSUB_HUBS)
+    lines += [
+        "- RSS real-time updates: rssCloud discovery is advertised in RSS 2.0:",
+        f"  - {RSSCLOUD_NOTIFY_URL}",
+        f"  - {RSSCLOUD_WEBSUB_HUB}",
+    ]
+    lines.append("")
     return "\n".join(lines)
 
 
@@ -970,7 +1246,10 @@ def _resource_files(directory, live_keys, prefix):
         stem = filename[:-5]
         if stem in inactive or any(stem.startswith(key + "-") for key in inactive):
             continue
-        title = re.sub(r"[-_]", " ", stem)
+        title = RESOURCE_TITLES.get(
+            (prefix, stem),
+            re.sub(r"[-_]", " ", stem),
+        )
         rows.append((title, f"{SITE}/{prefix}/{filename}"))
     return rows
 
@@ -994,6 +1273,15 @@ def build_llms_full(comp_map, live_keys):
         ("High-intent answers", "answers/index.html"),
         ("Comparison pages", "alternatives/index.html"),
         ("Visual stories", "stories/index.html"),
+        (
+            "50-locale Open Graph, X Card, and oEmbed endpoints "
+            "with App Store links",
+            "sitemap_oembed.xml",
+        ),
+        (
+            "50-locale visual buyer-intent galleries",
+            "visuals/index.html",
+        ),
         ("Open data", "data/index.html"),
         ("Open static APIs", "api/index.html"),
         (
@@ -1007,6 +1295,18 @@ def build_llms_full(comp_map, live_keys):
         (
             "Bopomofo RO-Crate 1.3 research object",
             f"data/packages/{ZHUYIN_RO_CRATE}/",
+        ),
+        (
+            "Bopomofo METS 2.0 and PREMIS 3.0 preservation package",
+            f"data/packages/{ZHUYIN_METS_PREMIS}/",
+        ),
+        (
+            "Bopomofo LDES 1.0 and TREE event stream",
+            f"data/packages/{ZHUYIN_LDES}/",
+        ),
+        (
+            "Bopomofo OAI-ORE 1.0 compound-object Resource Map",
+            f"data/packages/{ZHUYIN_ORE}/",
         ),
         (
             "Bopomofo LMS question bank",
@@ -1071,6 +1371,13 @@ def build_llms_full(comp_map, live_keys):
             detail = os.path.join(PAGES, "en-US", f"{key}.html")
             if os.path.exists(detail):
                 lines.append(f"- Canonical app guide: {SITE}/en-US/{key}.html")
+            localized_guides = _localized_app_guides(key)
+            if localized_guides:
+                lines.append("- Localized app guides:")
+                lines.extend(
+                    f"  - [{locale}]({url})"
+                    for locale, url in localized_guides
+                )
             hub = os.path.join(PAGES, "hubs", f"{key}.html")
             if os.path.exists(hub):
                 lines.append(f"- Topic hub: {SITE}/hubs/{key}.html")
@@ -1126,12 +1433,22 @@ def build_llms_full(comp_map, live_keys):
                 f"  - OpenAPI 3.1: {base}/openapi.json",
                 f"  - API index: {base}/index.json",
             ]
+            feed_path = descriptor.get("feed")
+            if isinstance(feed_path, str) and os.path.exists(
+                os.path.join(api_directory, feed_path)
+            ):
+                lines.append(f"  - JSON Feed 1.1: {base}/{feed_path}")
             for filename in sorted(
                 name
                 for name in os.listdir(api_directory)
                 if name.endswith(".schema.json")
             ):
                 lines.append(f"  - JSON Schema: {base}/{filename}")
+    lines += wordmate_language_support_lines(full=True)
+    lines += portfolio_finder_lines(full=True)
+    lines += publisher_intent_visual_lines(full=True)
+    lines += app_video_lessons.llms_lines(full=True)
+    lines += portfolio_offer_catalog_lines(full=True)
     if os.path.exists(os.path.join(TOOLS, f"{FAMILY_TRAVEL_OER}.metadata.json")):
         opds2 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.json"
         opds1 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.xml"
@@ -1214,6 +1531,26 @@ def build_llms_full(comp_map, live_keys):
         os.path.join(
             DATA_DIR,
             "packages",
+            ZHUYIN_LDES,
+            "bopomofo-event-stream.jsonld",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_LDES}"
+        lines += [
+            "",
+            "## Bopomofo LDES 1.0 + TREE event stream",
+            f"- [English guide]({package}/)",
+            f"- [Traditional Chinese guide]({SITE}/zh-Hant/data/packages/{ZHUYIN_LDES}/)",
+            f"  - Canonical JSON-LD entry point: {package}/bopomofo-event-stream.jsonld",
+            f"  - Turtle discovery overview: {package}/bopomofo-event-stream.ttl",
+            f"  - SHACL member shape: {package}/bopomofo-event-member.shacl.ttl",
+            f"  - Deterministic bundle: {package}/bopomofo-37-symbols-ldes-tree.zip",
+            f"  - SHA-256 checksums: {package}/checksums-sha256.txt",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
             ZHUYIN_BAGIT_PACKAGE,
             "metadata.jsonld",
         )
@@ -1278,6 +1615,47 @@ def build_llms_full(comp_map, live_keys):
             f"  - Attached deterministic ZIP: {package}/bopomofo-37-symbols-ro-crate-1.3.zip",
             f"  - RO-Crate metadata: {package}/ro-crate-metadata.json",
             f"  - Static crate preview: {package}/ro-crate-preview.html",
+            f"  - SHA-256 checksums: {package}/checksums-sha256.txt",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
+            ZHUYIN_METS_PREMIS,
+            "mets.xml",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_METS_PREMIS}"
+        lines += [
+            "",
+            "## Bopomofo METS 2.0 + PREMIS 3.0 preservation package",
+            f"- [English guide]({package}/)",
+            f"- [Traditional Chinese guide]({SITE}/zh-Hant/data/packages/{ZHUYIN_METS_PREMIS}/)",
+            f"  - Deterministic transfer ZIP: {package}/bopomofo-37-symbols-mets2-premis3.zip",
+            f"  - METS 2.0 record: {package}/mets.xml",
+            f"  - PREMIS 3.0 record: {package}/premis.xml",
+            f"  - SHA-256 checksums: {package}/checksums-sha256.txt",
+            f"  - Package metadata: {package}/metadata.jsonld",
+        ]
+    if os.path.exists(
+        os.path.join(
+            DATA_DIR,
+            "packages",
+            ZHUYIN_ORE,
+            "bopomofo-resource-map.ore.rdf",
+        )
+    ):
+        package = f"{SITE}/data/packages/{ZHUYIN_ORE}"
+        lines += [
+            "",
+            "## Bopomofo OAI-ORE 1.0 compound-object Resource Map",
+            f"- [English guide]({package}/)",
+            f"- [Traditional Chinese guide]({SITE}/zh-Hant/data/packages/{ZHUYIN_ORE}/)",
+            f"  - Authoritative RDF/XML Resource Map: {package}/bopomofo-resource-map.ore.rdf",
+            f"  - Aggregation hash URI: {package}/bopomofo-resource-map.ore.rdf#aggregation",
+            f"  - Turtle Resource Map: {package}/bopomofo-resource-map.ore.ttl",
+            f"  - JSON-LD Resource Map: {package}/bopomofo-resource-map.ore.jsonld",
+            f"  - Deterministic bundle: {package}/bopomofo-37-symbols-oai-ore-bundle.zip",
             f"  - SHA-256 checksums: {package}/checksums-sha256.txt",
         ]
     if os.path.exists(
@@ -1434,9 +1812,15 @@ def build_llms_full(comp_map, live_keys):
     lines += ["", "## Sitemaps and feed"]
     for filename in (
         "sitemap_index.xml", "sitemap.xml", "sitemap_alternatives.xml",
-        "sitemap_answers.xml", "sitemap_guides.xml", "sitemap_stories.xml",
+        "sitemap_answers.xml", "sitemap_guides.xml", "sitemap_apps.xml",
+        "sitemap_stories.xml", "sitemap_llms.xml",
+        "sitemap_images.xml", PUBLISHER_INTENT_VISUALS_SITEMAP,
+        app_video_lessons.SITEMAP_NAME,
+        "sitemap_linkset.xml", "sitemap_oembed.xml",
+        "linkset.json", app_install_decision_routes.SITEMAP_NAME,
         "sitemap_hubs.xml", "sitemap_topic_hubs.xml", "sitemap_review_hubs.xml", "sitemap_tools.xml", "sitemap_data.xml",
-        "sitemap_api.xml", "sitemap_swap.xml", "feed.xml",
+        "sitemap_api.xml", portfolio_offer_catalog.SITEMAP_NAME,
+        "sitemap_swap.xml", "feed.xml", "rss.xml", "feed.json",
         "sitemap_opds.xml", "sitemap_ro_crate.xml",
         "sitemap_anki.xml",
         "sitemap_vocab.xml",
@@ -1447,6 +1831,9 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_ocfl.xml",
         "sitemap_iiif.xml",
         "sitemap_ro_crate_bopomofo.xml",
+        "sitemap_mets_premis.xml",
+        "sitemap_ldes.xml",
+        "sitemap_ore.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",
@@ -4404,9 +4791,246 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_seasonal_ban.xml", "sitemap_reviews_ban.xml",
         "sitemap_bestfor_bjn.xml", "sitemap_workflow_bjn.xml", "sitemap_vs_bjn.xml",
         "sitemap_seasonal_bjn.xml", "sitemap_reviews_bjn.xml",
+        # Locale-specific intent sitemaps kept in the growth-engine copy
+        # of this generator; listed here so the two stay one file. Every
+        # entry is filtered by os.path.exists below, so unbuilt locales
+        # never reach the published index.
+        "sitemap_problems_ven.xml",
+        "sitemap_problems_tso.xml",
+        "sitemap_problems_ssw.xml",
+        "sitemap_problems_loz.xml",
+        "sitemap_problems_bho.xml",
+        "sitemap_problems_en.xml",
+        "sitemap_problems_en-GB.xml",
+        "sitemap_problems_en-AU.xml",
+        "sitemap_problems_en-CA.xml",
+        "sitemap_problems_de-DE.xml",
+        "sitemap_problems_fr-FR.xml",
+        "sitemap_problems_es-ES.xml",
+        "sitemap_problems_es-MX.xml",
+        "sitemap_problems_it-IT.xml",
+        "sitemap_problems_pt-BR.xml",
+        "sitemap_problems_ja-JP.xml",
+        "sitemap_problems_ko-KR.xml",
+        "sitemap_problems_zh-Hant.xml",
+        "sitemap_problems_th.xml",
+        "sitemap_problems_vi.xml",
+        "sitemap_problems_id.xml",
+        "sitemap_problems_ms.xml",
+        "sitemap_problems_tr.xml",
+        "sitemap_problems_ru.xml",
+        "sitemap_problems_pl.xml",
+        "sitemap_problems_hi.xml",
+        "sitemap_problems_ar-SA.xml",
+        "sitemap_problems_nb-NO.xml",
+        "sitemap_problems_fi.xml",
+        "sitemap_problems_cs.xml",
+        "sitemap_payonce_en.xml",
+        "sitemap_payonce_en-GB.xml",
+        "sitemap_payonce_en-AU.xml",
+        "sitemap_payonce_en-CA.xml",
+        "sitemap_payonce_de-DE.xml",
+        "sitemap_payonce_fr-FR.xml",
+        "sitemap_payonce_es-ES.xml",
+        "sitemap_payonce_es-MX.xml",
+        "sitemap_payonce_it-IT.xml",
+        "sitemap_payonce_pt-BR.xml",
+        "sitemap_payonce_ja-JP.xml",
+        "sitemap_payonce_ko-KR.xml",
+        "sitemap_payonce_zh-Hant.xml",
+        "sitemap_payonce_th.xml",
+        "sitemap_payonce_vi.xml",
+        "sitemap_payonce_id.xml",
+        "sitemap_payonce_ms.xml",
+        "sitemap_payonce_tr.xml",
+        "sitemap_payonce_ru.xml",
+        "sitemap_payonce_pl.xml",
+        "sitemap_payonce_hi.xml",
+        "sitemap_payonce_ar-SA.xml",
+        "sitemap_payonce_nb-NO.xml",
+        "sitemap_payonce_fi.xml",
+        "sitemap_payonce_cs.xml",
+        "sitemap_bestfor_zh-Hans.xml",
+        "sitemap_workflow_zh-Hans.xml",
+        "sitemap_vs_zh-Hans.xml",
+        "sitemap_seasonal_zh-Hans.xml",
+        "sitemap_reviews_zh-Hans.xml",
+        "sitemap_bestfor_sv.xml",
+        "sitemap_workflow_sv.xml",
+        "sitemap_vs_sv.xml",
+        "sitemap_seasonal_sv.xml",
+        "sitemap_reviews_sv.xml",
+        "sitemap_bestfor_da.xml",
+        "sitemap_workflow_da.xml",
+        "sitemap_vs_da.xml",
+        "sitemap_seasonal_da.xml",
+        "sitemap_reviews_da.xml",
+        "sitemap_problems_zh-Hans.xml",
+        "sitemap_problems_sv.xml",
+        "sitemap_problems_da.xml",
+        "sitemap_payonce_zh-Hans.xml",
+        "sitemap_payonce_sv.xml",
+        "sitemap_payonce_da.xml",
+        "sitemap_noaccount_en.xml",
+        "sitemap_noaccount_en-GB.xml",
+        "sitemap_noaccount_en-AU.xml",
+        "sitemap_noaccount_en-CA.xml",
+        "sitemap_noaccount_de-DE.xml",
+        "sitemap_noaccount_fr-FR.xml",
+        "sitemap_noaccount_es-ES.xml",
+        "sitemap_noaccount_es-MX.xml",
+        "sitemap_noaccount_it-IT.xml",
+        "sitemap_noaccount_pt-BR.xml",
+        "sitemap_noaccount_ja-JP.xml",
+        "sitemap_noaccount_ko-KR.xml",
+        "sitemap_noaccount_zh-Hant.xml",
+        "sitemap_noaccount_zh-Hans.xml",
+        "sitemap_noaccount_th.xml",
+        "sitemap_noaccount_vi.xml",
+        "sitemap_noaccount_id.xml",
+        "sitemap_noaccount_ms.xml",
+        "sitemap_noaccount_tr.xml",
+        "sitemap_noaccount_ru.xml",
+        "sitemap_noaccount_pl.xml",
+        "sitemap_noaccount_hi.xml",
+        "sitemap_noaccount_ar-SA.xml",
+        "sitemap_noaccount_sv.xml",
+        "sitemap_noaccount_da.xml",
+        "sitemap_noaccount_nb-NO.xml",
+        "sitemap_noaccount_fi.xml",
+        "sitemap_noaccount_cs.xml",
+        "sitemap_family_en.xml",
+        "sitemap_family_en-GB.xml",
+        "sitemap_family_en-AU.xml",
+        "sitemap_family_en-CA.xml",
+        "sitemap_family_de-DE.xml",
+        "sitemap_family_fr-FR.xml",
+        "sitemap_family_es-ES.xml",
+        "sitemap_family_es-MX.xml",
+        "sitemap_family_it-IT.xml",
+        "sitemap_family_pt-BR.xml",
+        "sitemap_family_ja-JP.xml",
+        "sitemap_family_ko-KR.xml",
+        "sitemap_family_zh-Hant.xml",
+        "sitemap_family_zh-Hans.xml",
+        "sitemap_family_th.xml",
+        "sitemap_family_vi.xml",
+        "sitemap_family_id.xml",
+        "sitemap_family_ms.xml",
+        "sitemap_family_tr.xml",
+        "sitemap_family_ru.xml",
+        "sitemap_family_pl.xml",
+        "sitemap_family_hi.xml",
+        "sitemap_family_ar-SA.xml",
+        "sitemap_family_sv.xml",
+        "sitemap_family_da.xml",
+        "sitemap_family_nb-NO.xml",
+        "sitemap_family_fi.xml",
+        "sitemap_family_cs.xml",
+        "sitemap_gifting_en.xml",
+        "sitemap_gifting_en-GB.xml",
+        "sitemap_gifting_en-AU.xml",
+        "sitemap_gifting_en-CA.xml",
+        "sitemap_gifting_de-DE.xml",
+        "sitemap_gifting_fr-FR.xml",
+        "sitemap_gifting_es-ES.xml",
+        "sitemap_gifting_es-MX.xml",
+        "sitemap_gifting_it-IT.xml",
+        "sitemap_gifting_pt-BR.xml",
+        "sitemap_gifting_ja-JP.xml",
+        "sitemap_gifting_ko-KR.xml",
+        "sitemap_gifting_zh-Hant.xml",
+        "sitemap_gifting_zh-Hans.xml",
+        "sitemap_gifting_th.xml",
+        "sitemap_gifting_vi.xml",
+        "sitemap_gifting_id.xml",
+        "sitemap_gifting_ms.xml",
+        "sitemap_gifting_tr.xml",
+        "sitemap_gifting_ru.xml",
+        "sitemap_gifting_pl.xml",
+        "sitemap_gifting_hi.xml",
+        "sitemap_gifting_ar-SA.xml",
+        "sitemap_gifting_sv.xml",
+        "sitemap_gifting_da.xml",
+        "sitemap_gifting_nb-NO.xml",
+        "sitemap_gifting_fi.xml",
+        "sitemap_gifting_cs.xml",
+        "sitemap_switching_en.xml",
+        "sitemap_switching_en-GB.xml",
+        "sitemap_switching_en-AU.xml",
+        "sitemap_switching_en-CA.xml",
+        "sitemap_switching_de-DE.xml",
+        "sitemap_switching_fr-FR.xml",
+        "sitemap_switching_es-ES.xml",
+        "sitemap_switching_es-MX.xml",
+        "sitemap_switching_it-IT.xml",
+        "sitemap_switching_pt-BR.xml",
+        "sitemap_switching_ja-JP.xml",
+        "sitemap_switching_ko-KR.xml",
+        "sitemap_switching_zh-Hant.xml",
+        "sitemap_switching_zh-Hans.xml",
+        "sitemap_switching_th.xml",
+        "sitemap_switching_vi.xml",
+        "sitemap_switching_id.xml",
+        "sitemap_switching_ms.xml",
+        "sitemap_switching_tr.xml",
+        "sitemap_switching_ru.xml",
+        "sitemap_switching_pl.xml",
+        "sitemap_switching_hi.xml",
+        "sitemap_switching_ar-SA.xml",
+        "sitemap_switching_sv.xml",
+        "sitemap_switching_da.xml",
+        "sitemap_switching_nb-NO.xml",
+        "sitemap_switching_fi.xml",
+        "sitemap_switching_cs.xml",
+        "sitemap_choose_en.xml",
+        "sitemap_choose_en-GB.xml",
+        "sitemap_choose_en-AU.xml",
+        "sitemap_choose_en-CA.xml",
+        "sitemap_choose_de-DE.xml",
+        "sitemap_choose_fr-FR.xml",
+        "sitemap_choose_es-ES.xml",
+        "sitemap_choose_es-MX.xml",
+        "sitemap_choose_it-IT.xml",
+        "sitemap_choose_pt-BR.xml",
+        "sitemap_choose_ja-JP.xml",
+        "sitemap_choose_ko-KR.xml",
+        "sitemap_choose_zh-Hant.xml",
+        "sitemap_choose_zh-Hans.xml",
+        "sitemap_choose_th.xml",
+        "sitemap_choose_vi.xml",
+        "sitemap_choose_id.xml",
+        "sitemap_choose_ms.xml",
+        "sitemap_choose_tr.xml",
+        "sitemap_choose_ru.xml",
+        "sitemap_choose_pl.xml",
+        "sitemap_choose_hi.xml",
+        "sitemap_choose_ar-SA.xml",
+        "sitemap_choose_sv.xml",
+        "sitemap_choose_da.xml",
+        "sitemap_choose_nb-NO.xml",
+        "sitemap_choose_fi.xml",
+        "sitemap_choose_cs.xml",
+        "sitemap_problems_mag.xml",
+        "sitemap_problems_new.xml",
+        "sitemap_problems_mai.xml",
+        "sitemap_problems_raj.xml",
+        "sitemap_problems_mah.xml",
+        "sitemap_problems_tvl.xml",
+        "sitemap_problems_sm.xml",
+        "sitemap_problems_nah.xml",
     ):
         if os.path.exists(os.path.join(PAGES, filename)):
             lines.append(f"- {SITE}/{filename}")
+    lines.extend(
+        f"- WebSub real-time hub: {hub} "
+        "(topic URLs are advertised inside all three feeds)"
+        for hub in WEBSUB_HUBS
+    )
+    lines += [
+        f"- rssCloud subscriber registration: {RSSCLOUD_NOTIFY_URL}",
+        f"- rssCloud WebSub hub: {RSSCLOUD_WEBSUB_HUB}",
+    ]
     lines += portfolio_cost_calculator_lines(full=True)
     lines += app_install_decision_route_lines(full=True)
     lines += localized_llms_discovery_lines()
@@ -4415,7 +5039,11 @@ def build_llms_full(comp_map, live_keys):
 
 
 def build_robots():
-    out = ["# AI assistants and search crawlers are welcome to index and cite this site.", ""]
+    out = [
+        "# AI assistants and search crawlers are welcome to index and cite this site.",
+        f"# Localized AI app catalogs: {SITE}/llms/index.json",
+        "",
+    ]
     for bot in AI_BOTS:
         out.append(f"User-agent: {bot}")
         out.append("Allow: /")
@@ -4425,7 +5053,13 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_alternatives.xml",
             f"Sitemap: {SITE}/sitemap_answers.xml",
             f"Sitemap: {SITE}/sitemap_guides.xml",
+            f"Sitemap: {SITE}/sitemap_apps.xml",
             f"Sitemap: {SITE}/sitemap_stories.xml",
+            f"Sitemap: {SITE}/sitemap_images.xml",
+            f"Sitemap: {SITE}/{PUBLISHER_INTENT_VISUALS_SITEMAP}",
+            f"Sitemap: {SITE}/{app_video_lessons.SITEMAP_NAME}",
+            f"Sitemap: {SITE}/sitemap_linkset.xml",
+            f"Sitemap: {SITE}/sitemap_oembed.xml",
             f"Sitemap: {SITE}/sitemap_llms.xml",
             f"Sitemap: {SITE}/{app_install_decision_routes.SITEMAP_NAME}",
             f"Sitemap: {SITE}/sitemap_hubs.xml",
@@ -4434,6 +5068,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_tools.xml",
             f"Sitemap: {SITE}/sitemap_data.xml",
             f"Sitemap: {SITE}/sitemap_api.xml",
+            f"Sitemap: {SITE}/{portfolio_offer_catalog.SITEMAP_NAME}",
             f"Sitemap: {SITE}/sitemap_swap.xml",
             f"Sitemap: {SITE}/sitemap_opds.xml",
             f"Sitemap: {SITE}/sitemap_ro_crate.xml",
@@ -4446,6 +5081,9 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_ocfl.xml",
             f"Sitemap: {SITE}/sitemap_iiif.xml",
             f"Sitemap: {SITE}/sitemap_ro_crate_bopomofo.xml",
+            f"Sitemap: {SITE}/sitemap_mets_premis.xml",
+            f"Sitemap: {SITE}/sitemap_ldes.xml",
+            f"Sitemap: {SITE}/sitemap_ore.xml",
             f"Sitemap: {SITE}/sitemap_lms.xml",
             f"Sitemap: {SITE}/sitemap_epub.xml",
             f"Sitemap: {SITE}/sitemap_library_catalog.xml",
@@ -4459,10 +5097,15 @@ def build_robots():
 
 def build_sitemap_index():
     maps = ["sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml", "sitemap_guides.xml",
-            "sitemap_stories.xml", "sitemap_llms.xml",
+            "sitemap_apps.xml",
+            "sitemap_stories.xml", "sitemap_images.xml", "sitemap_linkset.xml",
+            PUBLISHER_INTENT_VISUALS_SITEMAP,
+            app_video_lessons.SITEMAP_NAME,
+            "sitemap_oembed.xml", "sitemap_llms.xml",
             app_install_decision_routes.SITEMAP_NAME,
             "sitemap_hubs.xml", "sitemap_topic_hubs.xml", "sitemap_review_hubs.xml", "sitemap_tools.xml",
-            "sitemap_data.xml", "sitemap_api.xml", "sitemap_swap.xml"]
+            "sitemap_data.xml", "sitemap_api.xml",
+            portfolio_offer_catalog.SITEMAP_NAME, "sitemap_swap.xml"]
     maps.extend([
         "sitemap_opds.xml",
         "sitemap_ro_crate.xml",
@@ -4475,6 +5118,9 @@ def build_sitemap_index():
         "sitemap_ocfl.xml",
         "sitemap_iiif.xml",
         "sitemap_ro_crate_bopomofo.xml",
+        "sitemap_mets_premis.xml",
+        "sitemap_ldes.xml",
+        "sitemap_ore.xml",
         "sitemap_lms.xml",
         "sitemap_epub.xml",
         "sitemap_library_catalog.xml",
@@ -7420,6 +8066,234 @@ def build_sitemap_index():
         "sitemap_seasonal_ban.xml", "sitemap_reviews_ban.xml",
         "sitemap_bestfor_bjn.xml", "sitemap_workflow_bjn.xml", "sitemap_vs_bjn.xml",
         "sitemap_seasonal_bjn.xml", "sitemap_reviews_bjn.xml",
+        # Locale-specific intent sitemaps kept in the growth-engine copy
+        # of this generator; listed here so the two stay one file. Every
+        # entry is filtered by os.path.exists below, so unbuilt locales
+        # never reach the published index.
+        "sitemap_problems_ven.xml",
+        "sitemap_problems_tso.xml",
+        "sitemap_problems_ssw.xml",
+        "sitemap_problems_loz.xml",
+        "sitemap_problems_bho.xml",
+        "sitemap_problems_en.xml",
+        "sitemap_problems_en-GB.xml",
+        "sitemap_problems_en-AU.xml",
+        "sitemap_problems_en-CA.xml",
+        "sitemap_problems_de-DE.xml",
+        "sitemap_problems_fr-FR.xml",
+        "sitemap_problems_es-ES.xml",
+        "sitemap_problems_es-MX.xml",
+        "sitemap_problems_it-IT.xml",
+        "sitemap_problems_pt-BR.xml",
+        "sitemap_problems_ja-JP.xml",
+        "sitemap_problems_ko-KR.xml",
+        "sitemap_problems_zh-Hant.xml",
+        "sitemap_problems_th.xml",
+        "sitemap_problems_vi.xml",
+        "sitemap_problems_id.xml",
+        "sitemap_problems_ms.xml",
+        "sitemap_problems_tr.xml",
+        "sitemap_problems_ru.xml",
+        "sitemap_problems_pl.xml",
+        "sitemap_problems_hi.xml",
+        "sitemap_problems_ar-SA.xml",
+        "sitemap_problems_nb-NO.xml",
+        "sitemap_problems_fi.xml",
+        "sitemap_problems_cs.xml",
+        "sitemap_payonce_en.xml",
+        "sitemap_payonce_en-GB.xml",
+        "sitemap_payonce_en-AU.xml",
+        "sitemap_payonce_en-CA.xml",
+        "sitemap_payonce_de-DE.xml",
+        "sitemap_payonce_fr-FR.xml",
+        "sitemap_payonce_es-ES.xml",
+        "sitemap_payonce_es-MX.xml",
+        "sitemap_payonce_it-IT.xml",
+        "sitemap_payonce_pt-BR.xml",
+        "sitemap_payonce_ja-JP.xml",
+        "sitemap_payonce_ko-KR.xml",
+        "sitemap_payonce_zh-Hant.xml",
+        "sitemap_payonce_th.xml",
+        "sitemap_payonce_vi.xml",
+        "sitemap_payonce_id.xml",
+        "sitemap_payonce_ms.xml",
+        "sitemap_payonce_tr.xml",
+        "sitemap_payonce_ru.xml",
+        "sitemap_payonce_pl.xml",
+        "sitemap_payonce_hi.xml",
+        "sitemap_payonce_ar-SA.xml",
+        "sitemap_payonce_nb-NO.xml",
+        "sitemap_payonce_fi.xml",
+        "sitemap_payonce_cs.xml",
+        "sitemap_bestfor_zh-Hans.xml",
+        "sitemap_workflow_zh-Hans.xml",
+        "sitemap_vs_zh-Hans.xml",
+        "sitemap_seasonal_zh-Hans.xml",
+        "sitemap_reviews_zh-Hans.xml",
+        "sitemap_bestfor_sv.xml",
+        "sitemap_workflow_sv.xml",
+        "sitemap_vs_sv.xml",
+        "sitemap_seasonal_sv.xml",
+        "sitemap_reviews_sv.xml",
+        "sitemap_bestfor_da.xml",
+        "sitemap_workflow_da.xml",
+        "sitemap_vs_da.xml",
+        "sitemap_seasonal_da.xml",
+        "sitemap_reviews_da.xml",
+        "sitemap_problems_zh-Hans.xml",
+        "sitemap_problems_sv.xml",
+        "sitemap_problems_da.xml",
+        "sitemap_payonce_zh-Hans.xml",
+        "sitemap_payonce_sv.xml",
+        "sitemap_payonce_da.xml",
+        "sitemap_noaccount_en.xml",
+        "sitemap_noaccount_en-GB.xml",
+        "sitemap_noaccount_en-AU.xml",
+        "sitemap_noaccount_en-CA.xml",
+        "sitemap_noaccount_de-DE.xml",
+        "sitemap_noaccount_fr-FR.xml",
+        "sitemap_noaccount_es-ES.xml",
+        "sitemap_noaccount_es-MX.xml",
+        "sitemap_noaccount_it-IT.xml",
+        "sitemap_noaccount_pt-BR.xml",
+        "sitemap_noaccount_ja-JP.xml",
+        "sitemap_noaccount_ko-KR.xml",
+        "sitemap_noaccount_zh-Hant.xml",
+        "sitemap_noaccount_zh-Hans.xml",
+        "sitemap_noaccount_th.xml",
+        "sitemap_noaccount_vi.xml",
+        "sitemap_noaccount_id.xml",
+        "sitemap_noaccount_ms.xml",
+        "sitemap_noaccount_tr.xml",
+        "sitemap_noaccount_ru.xml",
+        "sitemap_noaccount_pl.xml",
+        "sitemap_noaccount_hi.xml",
+        "sitemap_noaccount_ar-SA.xml",
+        "sitemap_noaccount_sv.xml",
+        "sitemap_noaccount_da.xml",
+        "sitemap_noaccount_nb-NO.xml",
+        "sitemap_noaccount_fi.xml",
+        "sitemap_noaccount_cs.xml",
+        "sitemap_family_en.xml",
+        "sitemap_family_en-GB.xml",
+        "sitemap_family_en-AU.xml",
+        "sitemap_family_en-CA.xml",
+        "sitemap_family_de-DE.xml",
+        "sitemap_family_fr-FR.xml",
+        "sitemap_family_es-ES.xml",
+        "sitemap_family_es-MX.xml",
+        "sitemap_family_it-IT.xml",
+        "sitemap_family_pt-BR.xml",
+        "sitemap_family_ja-JP.xml",
+        "sitemap_family_ko-KR.xml",
+        "sitemap_family_zh-Hant.xml",
+        "sitemap_family_zh-Hans.xml",
+        "sitemap_family_th.xml",
+        "sitemap_family_vi.xml",
+        "sitemap_family_id.xml",
+        "sitemap_family_ms.xml",
+        "sitemap_family_tr.xml",
+        "sitemap_family_ru.xml",
+        "sitemap_family_pl.xml",
+        "sitemap_family_hi.xml",
+        "sitemap_family_ar-SA.xml",
+        "sitemap_family_sv.xml",
+        "sitemap_family_da.xml",
+        "sitemap_family_nb-NO.xml",
+        "sitemap_family_fi.xml",
+        "sitemap_family_cs.xml",
+        "sitemap_gifting_en.xml",
+        "sitemap_gifting_en-GB.xml",
+        "sitemap_gifting_en-AU.xml",
+        "sitemap_gifting_en-CA.xml",
+        "sitemap_gifting_de-DE.xml",
+        "sitemap_gifting_fr-FR.xml",
+        "sitemap_gifting_es-ES.xml",
+        "sitemap_gifting_es-MX.xml",
+        "sitemap_gifting_it-IT.xml",
+        "sitemap_gifting_pt-BR.xml",
+        "sitemap_gifting_ja-JP.xml",
+        "sitemap_gifting_ko-KR.xml",
+        "sitemap_gifting_zh-Hant.xml",
+        "sitemap_gifting_zh-Hans.xml",
+        "sitemap_gifting_th.xml",
+        "sitemap_gifting_vi.xml",
+        "sitemap_gifting_id.xml",
+        "sitemap_gifting_ms.xml",
+        "sitemap_gifting_tr.xml",
+        "sitemap_gifting_ru.xml",
+        "sitemap_gifting_pl.xml",
+        "sitemap_gifting_hi.xml",
+        "sitemap_gifting_ar-SA.xml",
+        "sitemap_gifting_sv.xml",
+        "sitemap_gifting_da.xml",
+        "sitemap_gifting_nb-NO.xml",
+        "sitemap_gifting_fi.xml",
+        "sitemap_gifting_cs.xml",
+        "sitemap_switching_en.xml",
+        "sitemap_switching_en-GB.xml",
+        "sitemap_switching_en-AU.xml",
+        "sitemap_switching_en-CA.xml",
+        "sitemap_switching_de-DE.xml",
+        "sitemap_switching_fr-FR.xml",
+        "sitemap_switching_es-ES.xml",
+        "sitemap_switching_es-MX.xml",
+        "sitemap_switching_it-IT.xml",
+        "sitemap_switching_pt-BR.xml",
+        "sitemap_switching_ja-JP.xml",
+        "sitemap_switching_ko-KR.xml",
+        "sitemap_switching_zh-Hant.xml",
+        "sitemap_switching_zh-Hans.xml",
+        "sitemap_switching_th.xml",
+        "sitemap_switching_vi.xml",
+        "sitemap_switching_id.xml",
+        "sitemap_switching_ms.xml",
+        "sitemap_switching_tr.xml",
+        "sitemap_switching_ru.xml",
+        "sitemap_switching_pl.xml",
+        "sitemap_switching_hi.xml",
+        "sitemap_switching_ar-SA.xml",
+        "sitemap_switching_sv.xml",
+        "sitemap_switching_da.xml",
+        "sitemap_switching_nb-NO.xml",
+        "sitemap_switching_fi.xml",
+        "sitemap_switching_cs.xml",
+        "sitemap_choose_en.xml",
+        "sitemap_choose_en-GB.xml",
+        "sitemap_choose_en-AU.xml",
+        "sitemap_choose_en-CA.xml",
+        "sitemap_choose_de-DE.xml",
+        "sitemap_choose_fr-FR.xml",
+        "sitemap_choose_es-ES.xml",
+        "sitemap_choose_es-MX.xml",
+        "sitemap_choose_it-IT.xml",
+        "sitemap_choose_pt-BR.xml",
+        "sitemap_choose_ja-JP.xml",
+        "sitemap_choose_ko-KR.xml",
+        "sitemap_choose_zh-Hant.xml",
+        "sitemap_choose_zh-Hans.xml",
+        "sitemap_choose_th.xml",
+        "sitemap_choose_vi.xml",
+        "sitemap_choose_id.xml",
+        "sitemap_choose_ms.xml",
+        "sitemap_choose_tr.xml",
+        "sitemap_choose_ru.xml",
+        "sitemap_choose_pl.xml",
+        "sitemap_choose_hi.xml",
+        "sitemap_choose_ar-SA.xml",
+        "sitemap_choose_sv.xml",
+        "sitemap_choose_da.xml",
+        "sitemap_choose_nb-NO.xml",
+        "sitemap_choose_fi.xml",
+        "sitemap_choose_cs.xml",
+        "sitemap_problems_mag.xml",
+        "sitemap_problems_new.xml",
+        "sitemap_problems_mai.xml",
+        "sitemap_problems_raj.xml",
+        "sitemap_problems_mah.xml",
+        "sitemap_problems_tvl.xml",
+        "sitemap_problems_sm.xml",
+        "sitemap_problems_nah.xml",
     ])
     maps = list(dict.fromkeys(maps))
     items = "\n".join(f"  <sitemap><loc>{SITE}/{m}</loc></sitemap>" for m in maps

@@ -27,6 +27,7 @@ GEO = Path(__file__).resolve().parents[1]
 if str(GEO) not in sys.path:
     sys.path.insert(0, str(GEO))
 
+from app_store_storefronts import validated_app_store_url
 import publisher_intent_catalog as catalog
 from aeo_answers_i18n import require_translation_quality
 from official_locales import OFFICIAL_LOCALES
@@ -691,7 +692,12 @@ class PublisherIntentOutputTests(unittest.TestCase):
                 self.availability,
             )
             self.assertEqual(urlparse(expected_store).path, parsed.path)
-            self.assertEqual("", parsed.query)
+            # Campaign attribution is stamped when a provider token exists;
+            # the validator still rejects any partial or foreign query.
+            self.assertEqual(
+                record["app_store_url"],
+                validated_app_store_url(record["app_store_url"]),
+            )
             self.assertFalse(record["measured_search_volume"])
             self.assertFalse(record["is_ranking"])
             self.assertTrue(record["verified_live"])
@@ -982,13 +988,13 @@ class PublisherIntentOutputTests(unittest.TestCase):
             )
             store_urls = re.findall(
                 r'href="(https://apps\.apple\.com/'
-                r'(?:[a-z]{2}/)?app/id[0-9]+)"',
+                r'(?:[a-z]{2}/)?app/id[0-9]+(?:\?[^"]*)?)"',
                 table_body.group(1),
             )
             self.assertEqual(catalog.EXPECTED_APP_COUNT, len(store_urls))
-            self.assertTrue(
-                all(not urlparse(url).query for url in store_urls)
-            )
+            for url in store_urls:
+                decoded = html.unescape(url)
+                self.assertEqual(decoded, validated_app_store_url(decoded))
             visual_locale = "" if locale == "en" else f"/{locale}"
             self.assertEqual(
                 1,

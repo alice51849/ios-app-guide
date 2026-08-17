@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import html
 import json
 import os
 from pathlib import Path
@@ -101,16 +102,21 @@ class HoursTagWorkHoursToolTests(unittest.TestCase):
         self.assertIn("不替你決定該不該買", chinese)
 
     def test_public_pages_use_clean_direct_app_store_links(self):
-        direct = tool.appstore_url(tool.APP_KEY)
         for locale in tool.COPY:
             page = tool.render_page(locale, app_public=True)
+            # Direct Apple link only. It carries this page's own campaign
+            # token when a provider token is configured, and nothing else:
+            # no redirector, no affiliate, no third-party tracker.
+            direct = tool.appstore_url(
+                tool.APP_KEY,
+                f"iag_hours_{locale.lower().replace('-', '_')}",
+            )
             self.assertIn(f"id{tool.APP_ID}", page)
             self.assertIn(
                 f'<meta name="apple-itunes-app" content="app-id={tool.APP_ID}">',
                 page,
             )
-            self.assertIn(f'href="{direct}"', page)
-            self.assertNotIn(f"id{tool.APP_ID}?", page)
+            self.assertIn(f'href="{html.escape(direct, quote=True)}"', page)
             schemas = [
                 json.loads(payload)
                 for payload in re.findall(

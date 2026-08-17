@@ -95,12 +95,9 @@ CURATED_FALLBACK = {
             "on-device OCR brief app with no account",
             "free-to-start AI brief app with a one-time unlock",
         ],
-        "top_competitors": [
-            ["notion", 0],
-            ["google keep", 0],
-            ["microsoft onenote", 0],
-            ["evernote", 0],
-        ],
+        # AI Brief's hub is a first-party page, so it must not name third
+        # parties as if it were an independent comparison.
+        "top_competitors": [],
     },
     "dailymatelite": {
         "key": "dailymatelite",

@@ -148,10 +148,12 @@ import zhuyin_static_api
 import websub_config
 import validate_webstories
 from official_locales import OFFICIAL_LOCALES
+from videogen import registry  # noqa: E402
 from videogen.registry import (  # noqa: E402
     APPS,
     APPSTORE,
     VALID_PURCHASE_MODELS,
+    appstore_url,
     classify_purchase_model,
 )
 
@@ -1042,8 +1044,10 @@ class GeneratorTests(unittest.TestCase):
                 ["en", "x-default"], app["alternate"][0]["hreflang"]
             )
             related = [target["href"] for target in app["related"]]
+            # Carries this site's own campaign attribution when a provider
+            # token is configured; still a direct Apple link either way.
             self.assertEqual(
-                "https://apps.apple.com/app/id6773017109",
+                appstore_url("lumibopomofo", "iag_linkset"),
                 related[0],
             )
             self.assertEqual(
@@ -1323,7 +1327,10 @@ class GeneratorTests(unittest.TestCase):
                 embed["_lumi_guide_url"],
             )
             self.assertEqual(
-                "https://apps.apple.com/app/id6773017109",
+                appstore_url(
+                    "lumibopomofo",
+                    gen_social_previews._oembed_campaign("en"),
+                ),
                 embed["_lumi_app_store_url"],
             )
             self.assertEqual(
@@ -1331,7 +1338,15 @@ class GeneratorTests(unittest.TestCase):
                 embed["_lumi_buyer_intent_image_url"],
             )
             self.assertIn(
-                'href="https://apps.apple.com/app/id6773017109"',
+                'href="'
+                + html.escape(
+                    appstore_url(
+                        "lumibopomofo",
+                        gen_social_previews._oembed_campaign("en"),
+                    ),
+                    quote=True,
+                )
+                + '"',
                 embed["html"],
             )
             self.assertIn(
@@ -1354,7 +1369,10 @@ class GeneratorTests(unittest.TestCase):
                 localized_embed["_lumi_guide_url"],
             )
             self.assertEqual(
-                "https://apps.apple.com/jp/app/id6773017109",
+                app_store_storefronts.campaign_app_store_url(
+                    "https://apps.apple.com/jp/app/id6773017109",
+                    gen_social_previews._oembed_campaign("ja"),
+                ),
                 localized_embed["_lumi_app_store_url"],
             )
             self.assertEqual("rich", localized_embed["type"])
@@ -1528,7 +1546,12 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(1, source.count(gen_social_previews.HERO_START))
             self.assertEqual(1, source.count('class="iag-app-preview__image"'))
             self.assertIn(
-                'href="https://apps.apple.com/app/id6773017109"',
+                'href="'
+                + html.escape(
+                    appstore_url("lumibopomofo", "iag_hero"),
+                    quote=True,
+                )
+                + '"',
                 source,
             )
             self.assertIn(
@@ -1734,14 +1757,24 @@ class GeneratorTests(unittest.TestCase):
                         availability,
                     )
                 )
-                expected_store_urls.add(expected_store)
+                expected_store_urls.add(
+                    app_store_storefronts.campaign_app_store_url(
+                        expected_store,
+                        gen_social_previews._oembed_campaign(locale),
+                    )
+                )
                 self.assertEqual(
                     urllib.parse.urlsplit(expected_store).path,
                     parsed_store.path,
                 )
+                # Attribution is stamped per locale when a provider token is
+                # configured; anything else in the query is rejected.
                 self.assertEqual(
-                    "",
-                    parsed_store.query,
+                    app_store_storefronts.campaign_app_store_url(
+                        expected_store,
+                        gen_social_previews._oembed_campaign(locale),
+                    ),
+                    urllib.parse.urlunsplit(parsed_store),
                 )
                 expected_visual = (
                     gen_social_previews.buyer_intent_image_url(
@@ -2267,7 +2300,14 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn("Get the app", generated_source)
             self.assertNotIn("Plain link", generated_source)
             self.assertIn(
-                'href="https://apps.apple.com/app/id6773017109"',
+                'href="'
+                + html.escape(
+                    app_store_storefronts.normalize_app_store_campaign_url(
+                        "https://apps.apple.com/app/id6773017109?ct=hero"
+                    ),
+                    quote=True,
+                )
+                + '"',
                 generated_source,
             )
             self.assertNotIn("?ct=", generated_source)
@@ -2275,7 +2315,14 @@ class GeneratorTests(unittest.TestCase):
             slug_generated = gen_mobile_store_ctas.BLOCK_RE.search(slug_source)
             self.assertIsNotNone(slug_generated)
             self.assertIn(
-                'href="https://apps.apple.com/us/app/id6773017109"',
+                'href="'
+                + html.escape(
+                    app_store_storefronts.normalize_app_store_campaign_url(
+                        "https://apps.apple.com/us/app/id6773017109?ct=slug"
+                    ),
+                    quote=True,
+                )
+                + '"',
                 slug_generated.group(0),
             )
             self.assertNotIn(
@@ -3259,8 +3306,14 @@ class GeneratorTests(unittest.TestCase):
                 source,
             )
             self.assertIn(
-                'data-app-store-url="https://apps.apple.com/app/'
-                'id6773017109"',
+                'data-app-store-url="'
+                + html.escape(
+                    app_store_storefronts.normalize_app_store_campaign_url(
+                        "https://apps.apple.com/app/id6773017109?ct=page"
+                    ),
+                    quote=True,
+                )
+                + '"',
                 source,
             )
             self.assertIn(
@@ -13427,7 +13480,10 @@ class GeneratorTests(unittest.TestCase):
                 "zh-Hant",
                 "zh-Hans",
             ),
-            m.ALT_LOCALES,
+            # Floor, not a ceiling: the nine launch locales may never be
+            # dropped, while the per-locale loop below still demands
+            # complete native copy for every locale the module declares.
+            m.ALT_LOCALES[:9],
         )
         self.assertEqual(set(m.ALT_LOCALES), set(m.COPY))
         expected_keys = set(m.COPY["en"])
@@ -13674,7 +13730,7 @@ class GeneratorTests(unittest.TestCase):
                     encoding="utf-8",
                 )
             urls = m.build(pages)
-            self.assertEqual(9, len(urls))
+            self.assertEqual(len(m.ALT_LOCALES), len(urls))
             for locale in m.ALT_LOCALES:
                 root = pages if locale == "en" else pages / locale
                 output = root / "tools" / f"{m.SLUG}.html"
@@ -13707,7 +13763,10 @@ class GeneratorTests(unittest.TestCase):
                     f'id{m.APP_ID}?ct=untouched">ScanTo</a>',
                     encoding="utf-8",
                 )
-            self.assertEqual(18, m.insert_answer_links(pages))
+            self.assertEqual(
+                len(m.ALT_LOCALES) * len(m.TARGET_ANSWER_SLUGS),
+                m.insert_answer_links(pages),
+            )
             self.assertEqual(0, m.insert_answer_links(pages))
             for locale in m.ALT_LOCALES:
                 root = pages if locale == "en" else pages / locale
@@ -14140,7 +14199,10 @@ class GeneratorTests(unittest.TestCase):
         m = daily_checklist_planner
         self.assertEqual(
             ("en", "es-ES", "pt-BR", "de-DE", "fr-FR", "ja", "ko", "zh-Hant", "zh-Hans"),
-            m.ALT_LOCALES,
+            # Floor, not a ceiling: the nine launch locales may never be
+            # dropped, while the per-locale loop below still demands
+            # complete native copy for every locale the module declares.
+            m.ALT_LOCALES[:9],
         )
         self.assertEqual(set(m.ALT_LOCALES), set(m.COPY))
         keys = set(m.COPY["en"])
@@ -14195,7 +14257,10 @@ class GeneratorTests(unittest.TestCase):
             self.assertNotIn('type="file"', page)
             self.assertNotIn("<textarea", page)
             for marker in m.COPY[locale]["feature_list"]:
-                self.assertIn(html.escape(marker), page)
+                # The feature list is carried by the ld+json block, which is
+                # dumped with ensure_ascii=False and no HTML escaping, so an
+                # apostrophe (uk "здоров'я") stays literal on the page.
+                self.assertIn(marker, page)
             if locale != "en":
                 for marker in english_markers:
                     self.assertNotIn(marker, page, (locale, marker))
@@ -14287,7 +14352,7 @@ class GeneratorTests(unittest.TestCase):
                     '<main><section class="wrap grid"></section></main>',
                     encoding="utf-8",
                 )
-            self.assertEqual(9, len(m.build(pages)))
+            self.assertEqual(len(m.ALT_LOCALES), len(m.build(pages)))
             for locale in m.ALT_LOCALES:
                 root = pages if locale == "en" else pages / locale
                 output = root / "tools" / f"{m.SLUG}.html"
@@ -14315,7 +14380,10 @@ class GeneratorTests(unittest.TestCase):
                         f'id{m.APP_ID}?ct=existing_mochi">Mochi</a>',
                         encoding="utf-8",
                     )
-            self.assertEqual(18, m.insert_answer_links(pages))
+            self.assertEqual(
+                len(m.ALT_LOCALES) * len(m.TARGET_ANSWER_SLUGS),
+                m.insert_answer_links(pages),
+            )
             self.assertEqual(0, m.insert_answer_links(pages))
             for locale in m.ALT_LOCALES:
                 root = pages if locale == "en" else pages / locale
@@ -14334,7 +14402,10 @@ class GeneratorTests(unittest.TestCase):
         m = cycle_privacy_planner
         self.assertEqual(
             ("en", "es-ES", "pt-BR", "de-DE", "fr-FR", "ja", "ko", "zh-Hant", "zh-Hans"),
-            m.ALT_LOCALES,
+            # Floor, not a ceiling: the nine launch locales may never be
+            # dropped, while the per-locale loop below still demands
+            # complete native copy for every locale the module declares.
+            m.ALT_LOCALES[:9],
         )
         self.assertEqual(set(m.ALT_LOCALES), set(m.COPY))
         keys = set(m.COPY["en"])
@@ -14425,7 +14496,7 @@ class GeneratorTests(unittest.TestCase):
                         encoding="utf-8",
                     )
             with mock.patch.object(m, "live_app_keys") as live:
-                self.assertEqual(9, len(m.build(pages)))
+                self.assertEqual(len(m.ALT_LOCALES), len(m.build(pages)))
                 live.assert_not_called()
             self.assertEqual(0, m.insert_answer_links(pages))
             for locale in m.ALT_LOCALES:
@@ -14598,7 +14669,11 @@ class GeneratorTests(unittest.TestCase):
                 pages,
                 app_public=False,
             )
-            self.assertEqual(2, len(urls))
+            # COPY is the set this planner actually ships pages for;
+            # ALT_LOCALES additionally declares hreflang siblings.
+            self.assertEqual(
+                len(screen_time_block_planner.COPY), len(urls)
+            )
             english = tools / f"{screen_time_block_planner.SLUG}.html"
             chinese = (
                 localized_tools
@@ -15152,7 +15227,10 @@ class GeneratorTests(unittest.TestCase):
                 "zh-Hant",
                 "zh-Hans",
             ),
-            m.ALT_LOCALES,
+            # Floor, not a ceiling: the nine launch locales may never be
+            # dropped, while the per-locale loop below still demands
+            # complete native copy for every locale the module declares.
+            m.ALT_LOCALES[:9],
         )
         self.assertEqual(set(m.ALT_LOCALES), set(m.COPY))
         english_heading = m.COPY["en"]["heading"]
@@ -15346,7 +15424,10 @@ class GeneratorTests(unittest.TestCase):
                 "zh-Hant",
                 "zh-Hans",
             ),
-            m.ALT_LOCALES,
+            # Floor, not a ceiling: the nine launch locales may never be
+            # dropped, while the per-locale loop below still demands
+            # complete native copy for every locale the module declares.
+            m.ALT_LOCALES[:9],
         )
         self.assertEqual(set(m.ALT_LOCALES), set(m.COPY))
         english_heading = m.COPY["en"]["heading"]
@@ -15404,13 +15485,18 @@ class GeneratorTests(unittest.TestCase):
                 self.assertNotIn(forbidden.lower(), private.lower())
             self.assertNotIn(f"id{m.APP_ID}", private)
             self.assertIn(f"id{m.APP_ID}", public)
+            # Copy is HTML-escaped on the page, and uk carries an
+            # apostrophe ("батьки–дитина" section title), so escape before
+            # locating the sections.
+            sources_title = html.escape(m.COPY[locale]["sources_title"])
+            app_title = html.escape(m.COPY[locale]["app_title"])
             self.assertLess(
                 public.index('id="routine-planner"'),
-                public.index(m.COPY[locale]["sources_title"]),
+                public.index(sources_title),
             )
             self.assertLess(
-                public.index(m.COPY[locale]["sources_title"]),
-                public.index(m.COPY[locale]["app_title"]),
+                public.index(sources_title),
+                public.index(app_title),
             )
             self.assertIn(
                 f'<link rel="canonical" href="{m.canonical(locale)}">',
@@ -15859,11 +15945,21 @@ class GeneratorTests(unittest.TestCase):
             '<section class="wrap card"><h2>FAQ</h2>',
             1,
         )
-        direct_store_link = (
-            'href="https://apps.apple.com/app/id6780575828"'
+        # The App Store link may only appear after the FAQ, and it must be a
+        # direct Apple link — clean, or carrying this site's own complete
+        # campaign triple once a provider token is configured.
+        store_href = re.compile(
+            r'href="(https://apps\.apple\.com/'
+            r'(?:[a-z]{2}/)?app/id6780575828[^"]*)"'
         )
-        self.assertNotIn(direct_store_link, before_faq)
-        self.assertIn(direct_store_link, after_faq)
+        self.assertIsNone(store_href.search(before_faq))
+        found = store_href.search(after_faq)
+        self.assertIsNotNone(found)
+        decoded_store = html.unescape(found.group(1))
+        self.assertEqual(
+            decoded_store,
+            app_store_storefronts.validated_app_store_url(decoded_store),
+        )
         with tempfile.TemporaryDirectory() as directory:
             answer_path = Path(directory) / "answer.html"
             answer_path.write_text(
@@ -19012,8 +19108,8 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(2, len(tool_records))
         self.assertEqual(
             [
-                "https://apps.apple.com/app/id6780575828",
-                "https://apps.apple.com/app/id6789917808",
+                appstore_url("snapport", "iag_finder_snapport"),
+                appstore_url("wordmate", "iag_finder_wordmate"),
             ],
             [record["app_store_url"] for record in tool_records],
         )
@@ -19564,18 +19660,26 @@ class GeneratorTests(unittest.TestCase):
         for locale in (english, japanese):
             self.assertEqual(2, locale["record_count"])
             for app in locale["apps"]:
-                self.assertNotIn("?", app["app_store_url"])
-        for app in english["apps"]:
-            self.assertEqual(
-                "https://apps.apple.com/us/app/"
-                f"id{app['app_store_id']}",
-                app["app_store_url"],
-            )
-        for app in japanese["apps"]:
-            self.assertEqual(
-                f"https://apps.apple.com/app/id{app['app_store_id']}",
-                app["app_store_url"],
-            )
+                # Direct Apple link; the only query it may carry is this
+                # site's own complete pt+ct+mt campaign triple.
+                self.assertEqual(
+                    app["app_store_url"],
+                    app_store_storefronts.validated_app_store_url(
+                        app["app_store_url"]
+                    ),
+                )
+        for locale_key, payload, prefix in (
+            ("en-US", english, "https://apps.apple.com/us/app/id"),
+            ("ja", japanese, "https://apps.apple.com/app/id"),
+        ):
+            for app in payload["apps"]:
+                self.assertEqual(
+                    app_store_storefronts.campaign_app_store_url(
+                        f"{prefix}{app['app_store_id']}",
+                        portfolio_app_catalog_api._campaign(locale_key),
+                    ),
+                    app["app_store_url"],
+                )
         self.assertEqual(
             portfolio_app_catalog_api.JSON_FEED_VERSION,
             english_feed["version"],
@@ -19611,7 +19715,12 @@ class GeneratorTests(unittest.TestCase):
         )
         for feed in (english_feed, japanese_feed):
             for item in feed["items"]:
-                self.assertNotIn("?", item["external_url"])
+                self.assertEqual(
+                    item["external_url"],
+                    app_store_storefronts.validated_app_store_url(
+                        item["external_url"]
+                    ),
+                )
                 self.assertLessEqual(
                     item["date_modified"],
                     portfolio_app_catalog_api._utc_timestamp(),
@@ -21301,6 +21410,11 @@ class GeneratorTests(unittest.TestCase):
             "hourstaglite",
             "gmoneylite",
             "aibriefpack",
+            "snapportlite",
+            "wordmatelite",
+            "dailymatelite",
+            "caldaily",
+            "onepageppt",
         }
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:
@@ -22124,7 +22238,14 @@ class GeneratorTests(unittest.TestCase):
         fallback = aeo_answers.default_content(
             "best one-trip planner app", "tripbeelite"
         )
-        self.assertIn("Keep one active journey", fallback["lead"])
+        # The lead has to carry the app's own verified subtitle from the
+        # registry, never generic buying-guide boilerplate. Asserting the
+        # registry value (instead of one frozen sentence) keeps the gate
+        # closed while letting the App Store subtitle be updated.
+        self.assertIn(
+            gen_app_decision_cards.APPS["tripbeelite"]["sub"],
+            fallback["lead"],
+        )
         self.assertNotIn("practical buying guide", fallback["lead"].lower())
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)
@@ -22265,7 +22386,10 @@ class GeneratorTests(unittest.TestCase):
                 "sk",
                 availability,
             )
-            self.assertIn("Keep one active journey", decision["promise"])
+            self.assertIn(
+                gen_app_decision_cards.APPS["tripbeelite"]["sub"],
+                decision["promise"],
+            )
             weak = rendered.replace(
                 '<data value="4.9">4.9</data>',
                 '<data value="1.0">1.0</data>',
@@ -22644,6 +22768,21 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("bopomofo_bingo_cards.py", materialize_block)
         self.assertNotIn("bopomofo_flashcards.py", materialize_block)
         self.assertNotIn("bopomofo_practice_sheet.py", materialize_block)
+        # Self-healing before the fail-closed gate: a newly live app gets
+        # its decision routes, then the finder that must link to them,
+        # and published answers get repaired before they are audited.
+        self.assertLess(
+            materialize_block.index("app_install_decision_routes.py"),
+            materialize_block.index("portfolio_app_finder.py"),
+        )
+        self.assertIn(
+            "reconcile_answer_semantics.py --repair",
+            materialize_block,
+        )
+        self.assertLess(
+            materialize_block.index("reconcile_answer_semantics.py"),
+            materialize_block.index("gen_store_attribution.py"),
+        )
         availability_block = workflow.split(
             "- name: Refresh verified App Store availability once", 1
         )[1].split("- name: Generate new answer pages", 1)[0]
@@ -22760,7 +22899,9 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(1, workflow.count("bopomofo_flashcards.py"))
         self.assertEqual(1, workflow.count("bopomofo_practice_sheet.py"))
         self.assertEqual(1, workflow.count("wordmate_language_support.py"))
-        self.assertEqual(1, workflow.count("portfolio_app_finder.py"))
+        # Twice: once before the verification gate so a newly live app's
+        # finder links exist, and once after the availability refresh.
+        self.assertEqual(2, workflow.count("portfolio_app_finder.py"))
         self.assertEqual(1, workflow.count("portfolio_cost_calculator.py"))
         self.assertEqual(2, workflow.count("outreach_scorecard.py"))
         first_scorecard = workflow.index("outreach_scorecard.py")
@@ -22770,7 +22911,7 @@ class GeneratorTests(unittest.TestCase):
         )
         english_commit = workflow.index("Commit English content first")
         self.assertLess(
-            workflow.index("portfolio_app_finder.py"),
+            workflow.rindex("portfolio_app_finder.py"),
             workflow.index("portfolio_cost_calculator.py"),
         )
         self.assertLess(
@@ -22875,7 +23016,7 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertLess(
             workflow.index("refresh=True"),
-            workflow.index("portfolio_app_finder.py"),
+            workflow.rindex("portfolio_app_finder.py"),
         )
         self.assertEqual(1, workflow.count("refresh_primary_resource_answers.py"))
         self.assertIn("zhuyin_grade1_guide.py", workflow)
@@ -22988,7 +23129,10 @@ class GeneratorTests(unittest.TestCase):
         )
         workflow_positions = [refresh_block.index(item) for item in workflow_chain]
         self.assertEqual(sorted(workflow_positions), workflow_positions)
-        self.assertEqual(5, workflow.count("reconcile_answer_semantics.py"))
+        # Six: the five below plus the pre-gate repair inside the
+        # materialization step, which is what makes the fail-closed
+        # semantic-integrity gate self-healing instead of deadlocked.
+        self.assertEqual(6, workflow.count("reconcile_answer_semantics.py"))
         self.assertLess(
             refresh_block.rindex("gen_feed.py"),
             refresh_block.rindex("reconcile_answer_semantics.py"),
@@ -23890,6 +24034,61 @@ class GeneratorTests(unittest.TestCase):
                 normalized,
                 Path("sample.html"),
             )
+        # Generators build ct labels from locale codes and long prefixes;
+        # Apple only accepts [A-Za-z0-9_]{1,30}, so the registry must fold
+        # them into legal, still-distinct tokens instead of raising.
+        self.assertEqual(
+            "iag_vocab_planner_es_ES",
+            registry.normalize_campaign_token("iag_vocab_planner_es-ES"),
+        )
+        long_tokens = {
+            registry.normalize_campaign_token(f"iag_bopomofo_library_catalog_{locale}")
+            for locale in ("en", "zh-Hant", "zh-Hans")
+        }
+        self.assertEqual(3, len(long_tokens))
+        for token in long_tokens:
+            self.assertRegex(token, r"^[A-Za-z0-9_]{1,30}$")
+        markdown_campaign = app_store_storefronts.campaign_app_store_url(
+            expected["zh-Hant"],
+            "iag_gh_en_us",
+            provider_token="123456789",
+        )
+        # Markdown link targets end in ")" and CSV fields end in ",": the
+        # campaign gate must read the URL, not the delimiter that follows it,
+        # or every generated README and dataset fails closed.
+        normalize_app_store_links.assert_no_partial_campaigns(
+            f"[Get the app on the App Store]({markdown_campaign})",
+            Path("README.md"),
+        )
+        normalize_app_store_links.assert_no_partial_campaigns(
+            f"slug,url,label\nlumi,{markdown_campaign},دليل\n",
+            Path("catalog.csv"),
+        )
+        # An Atom <content type="html"> block escapes the HTML again, so the
+        # separators arrive as "&amp;amp;". Rewriting must survive that
+        # untouched instead of matching a truncated "?pt=1183261" prefix and
+        # shredding the rest of the query into the document.
+        feed_fragment = (
+            '<a href="'
+            + markdown_campaign.replace("&", "&amp;amp;")
+            + '"><img src="x"></a>'
+        )
+        rewritten, changed = normalize_app_store_links.normalize_source(
+            feed_fragment
+        )
+        self.assertEqual(0, changed)
+        self.assertEqual(feed_fragment, rewritten)
+        normalize_app_store_links.assert_no_partial_campaigns(
+            rewritten,
+            Path("feed.xml"),
+        )
+        with self.assertRaisesRegex(
+            ValueError, "Partial or invalid App Store campaign URL"
+        ):
+            normalize_app_store_links.assert_no_partial_campaigns(
+                f"[Get the app]({expected['zh-Hant']}?pt=123456789)",
+                Path("README.md"),
+            )
         with self.assertRaisesRegex(ValueError, "Invalid direct App Store URL"):
             app_store_storefronts.normalize_app_store_campaign_url(
                 f"{expected['zh-Hant']}?ct="
@@ -24789,19 +24988,20 @@ class GeneratorTests(unittest.TestCase):
         self.assertTrue(represented.issubset(live))
 
     def test_topic_hub_falls_back_to_native_guide_for_new_live_app(self):
-        self.assertEqual(
-            [],
-            gen_hubs.localized_answer_links(
+        # A newly live app has no localized answers yet. Force that state
+        # instead of depending on which answers happen to be published, so
+        # the fallback path stays covered once the answers do exist.
+        with mock.patch.object(
+            gen_hubs,
+            "localized_answer_links",
+            return_value=[],
+        ) as links:
+            hub = gen_hubs.build_localized_hub(
                 "aim990plus",
                 "zh-Hant",
-                required=False,
-            ),
-        )
-        hub = gen_hubs.build_localized_hub(
-            "aim990plus",
-            "zh-Hant",
-            {"tw": frozenset({gen_hubs.APPSTORE["aim990plus"]})},
-        )
+                {"tw": frozenset({gen_hubs.APPSTORE["aim990plus"]})},
+            )
+        links.assert_called_once_with("aim990plus", "zh-Hant", required=False)
         self.assertIn(
             "<title>Aim990 Plus · 可能適合的原因</title>",
             hub,

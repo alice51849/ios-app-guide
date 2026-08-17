@@ -15,7 +15,11 @@ WORKFLOW = ROOT / ".github/workflows/geo-daily.yml"
 os.environ.setdefault("STANDARD_SITE_ENGINE_ROOT", str(ROOT / "_engine"))
 os.environ.setdefault("GEO_PAGES", str(ROOT))
 sys.path.insert(0, str(ROOT / "_engine/social"))
+sys.path.insert(0, str(ROOT / "_engine/geo"))
 
+from app_store_storefronts import (  # noqa: E402
+    validated_app_store_url,
+)
 import gen_standard_site as generator  # noqa: E402
 
 
@@ -216,7 +220,7 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             "free-travel-planner-for-one-journey-with-a-packing-list.html"
         ]
         self.assertIn("packing workflow remains visible", packing)
-        self.assertIn("requires the optional one-time unlock", packing)
+        self.assertIn("requires the optional lifetime unlock", packing)
         self.assertIn("sharing, backup and restore", packing)
 
         sharing = by_path[
@@ -334,16 +338,24 @@ class StandardSiteWorkflowTests(unittest.TestCase):
                 html,
             )
             self.assertIn('content="app-id=6790467886"', html)
-            self.assertIn(
-                'href="https://apps.apple.com/app/id6790467886"',
+            # Direct Apple links only; they carry this site's own campaign
+            # attribution once a provider token is configured, so match the
+            # target app and let the validator reject anything malformed.
+            store_urls = re.findall(
+                r'href="(https://apps\.apple\.com/'
+                r'(?:[a-z]{2}/)?app/id6790467886(?:\?[^"]*)?)"',
                 html,
             )
-            self.assertIn(
-                '<a class="cta" '
-                'href="https://apps.apple.com/app/id6790467886" '
-                'rel="nofollow noopener">'
-                "Get WiFi Aid on the App Store →</a>",
+            self.assertTrue(store_urls)
+            for url in store_urls:
+                # "html" is the page source here, so unescape by hand.
+                decoded = url.replace("&amp;", "&")
+                self.assertEqual(decoded, validated_app_store_url(decoded))
+            self.assertRegex(
                 html,
+                r'<a class="cta" href="https://apps\.apple\.com/app/'
+                r'id6790467886(?:\?[^"]*)?" rel="nofollow noopener">'
+                r"Get WiFi Aid on the App Store →</a>",
             )
             self.assertIn(
                 "This is a publisher-authored buying guide from the app "

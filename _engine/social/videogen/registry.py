@@ -6,6 +6,7 @@ Each entry: display name, App Store search term, icon, screenshots dir+locale, t
 strongest screenshots (self-captioned framed shots), and the opening hook + CTA bullets.
 Hooks are pain-point / savings / before-after angles — the virality lever.
 """
+import hashlib
 import os
 import re
 
@@ -432,6 +433,23 @@ APPSTORE = {
 }
 
 
+def normalize_campaign_token(campaign):
+    """Make any caller's label a legal Apple ``ct`` token, deterministically.
+
+    Apple only accepts ``[A-Za-z0-9_]`` up to 30 characters, but the callers
+    build labels from locale codes ("es-ES") and long descriptive prefixes.
+    Rewriting the separators and folding the overflow into a short digest keeps
+    every locale's token distinct instead of silently colliding on a truncation.
+    """
+    token = re.sub(r"[^A-Za-z0-9_]", "_", str(campaign))
+    if not token:
+        raise ValueError(f"Empty App Store campaign token: {campaign!r}")
+    if len(token) > 30:
+        digest = hashlib.sha1(token.encode("utf-8")).hexdigest()[:6]
+        token = f"{token[:23]}_{digest}"
+    return token
+
+
 def appstore_url(key, campaign=None):
     """Direct App Store link, with attribution only when a provider token exists."""
     aid = APPSTORE.get(key)
@@ -445,9 +463,10 @@ def appstore_url(key, campaign=None):
         return url
     if not re.fullmatch(r"[0-9]{1,20}", provider):
         raise ValueError(f"Invalid App Store provider token: {provider!r}")
-    if not re.fullmatch(r"[A-Za-z0-9_]{1,30}", campaign):
+    token = normalize_campaign_token(campaign)
+    if not re.fullmatch(r"[A-Za-z0-9_]{1,30}", token):
         raise ValueError(f"Invalid App Store campaign token: {campaign!r}")
-    return f"{url}?pt={provider}&ct={campaign}&mt=8"
+    return f"{url}?pt={provider}&ct={token}&mt=8"
 
 
 # --- 自動偵測的新 App(由 new_app_catchup.py 維護,免手動改碼即自動納入全部宣傳)---

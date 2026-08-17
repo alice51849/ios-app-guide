@@ -16,9 +16,11 @@ CURRENT_LIVE_APPS = {
     "aibriefpack",
     "aim990",
     "aim990plus",
+    "caldaily",
     "cvdesk",
     "cyca",
     "dailymate",
+    "dailymatelite",
     "gmoney",
     "gmoneylite",
     "hourstag",
@@ -36,11 +38,13 @@ CURRENT_LIVE_APPS = {
     "maskmyfile",
     "mochi",
     "mochidonestamp",
+    "onepageppt",
     "photocream",
     "picclear",
     "scanto",
     "sereno",
     "snapport",
+    "snapportlite",
     "sononote",
     "tripbee",
     "tripbeelite",
@@ -48,6 +52,7 @@ CURRENT_LIVE_APPS = {
     "unblurry",
     "wifiaid",
     "wordmate",
+    "wordmatelite",
 }
 
 

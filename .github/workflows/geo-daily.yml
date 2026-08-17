@@ -94,6 +94,10 @@ jobs:
           python3 gen_guide_design.py
           python3 gen_app_store_facts.py
           python3 app_install_decision_routes.py
+          # A newly live app gets its decision routes above, so the finder has
+          # to be rebuilt here — before the verification gate — or the gate
+          # fails on inbound links that only the next step would create.
+          python3 portfolio_app_finder.py
           python3 normalize_app_store_links.py
           python3 gen_app_decision_cards.py
           python3 cleanup_localized_assets.py --cached-live
@@ -101,6 +105,10 @@ jobs:
           python3 gen_mobile_store_ctas.py
           python3 gen_app_store_qr_ctas.py
           python3 gen_app_store_share_ctas.py
+          # Same reason: the semantic-integrity gate runs before the repair
+          # step further down, so repair here and let it fail closed if the
+          # published answers still cannot be reconciled.
+          python3 reconcile_answer_semantics.py --repair
           # Must stay after every generator that rewrites page bodies: those
           # emit clean store URLs, and this is what re-attaches ?pt&ct&mt.
           python3 gen_store_attribution.py

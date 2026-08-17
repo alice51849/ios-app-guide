@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 from datetime import datetime
+import html
 import json
 import os
 from pathlib import Path
@@ -143,8 +144,12 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
                     enclosure.attrib,
                 )
                 content_html = entry.find(f"{atom_ns}content").text
+                # The embedded HTML keeps its entities, so a campaign URL
+                # arrives here as "&amp;" between pt/ct/mt.
                 self.assertIn(
-                    f'<a href="{record["app_store_url"]}"><img ',
+                    '<a href="'
+                    + html.escape(record["app_store_url"], quote=True)
+                    + '"><img ',
                     content_html,
                 )
                 self.assertIn(f'src="{image_url}"', content_html)
@@ -206,7 +211,9 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
                     item.find(f"{media_ns}thumbnail").attrib,
                 )
                 self.assertIn(
-                    f'href="{record["app_store_url"]}"><img ',
+                    'href="'
+                    + html.escape(record["app_store_url"], quote=True)
+                    + '"><img ',
                     item.find("description").text,
                 )
 
@@ -260,7 +267,9 @@ class AppInstallDecisionFeedTests(unittest.TestCase):
                     item["attachments"],
                 )
                 self.assertIn(
-                    f'<a href="{record["app_store_url"]}"><img ',
+                    '<a href="'
+                    + html.escape(record["app_store_url"], quote=True)
+                    + '"><img ',
                     item["content_html"],
                 )
                 storefront_facts = record["storefront_facts"]

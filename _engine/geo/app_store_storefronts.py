@@ -19,6 +19,12 @@ CAMPAIGN_TOKEN_RE = re.compile(r"[A-Za-z0-9_/]{1,30}")
 PROVIDER_TOKEN_RE = re.compile(r"[0-9]{1,20}")
 MEDIA_TYPE = "8"
 PROVIDER_TOKEN_ENV = "APP_STORE_PROVIDER_TOKEN"
+# Two spellings exist in the wild (provider_token.py writes the first,
+# older shell tooling wrote the second); read both, write only the first.
+PROVIDER_TOKEN_FILES = (
+    Path.home() / ".growth-private" / "app-store-provider-token",
+    Path.home() / ".growth-private" / "app_store_provider_token",
+)
 PROMOTIONAL_RATING_MIN_VALUE = 4.0
 PROMOTIONAL_RATING_MIN_COUNT = 2
 LOCALE_STOREFRONTS = {
@@ -199,6 +205,33 @@ def validated_app_store_url(
     return urllib.parse.urlunsplit(
         parsed._replace(query=urllib.parse.urlencode(parameters))
     )
+
+
+def resolve_provider_token() -> str:
+    """Apple's account-wide campaign-link provider token (``pt``), opt-in.
+
+    The environment always wins, *including when it is deliberately set to an
+    empty string* — that is how tests and one-off runs turn attribution off.
+    Only when the variable is entirely absent do we fall back to the private
+    token file, so a hand-run pipeline in a non-login shell still produces
+    attributable links.
+
+    Deliberately NOT used by ``_provider_token`` below: the shared helpers stay
+    strictly environment-driven so that generator unit tests remain hermetic on
+    a machine that has the real token on disk.  Only
+    ``gen_store_attribution.py`` — the one whole-site stamper — opts in.
+    """
+    env = os.environ.get(PROVIDER_TOKEN_ENV)
+    if env is not None:
+        return env.strip()
+    for name in PROVIDER_TOKEN_FILES:
+        try:
+            value = name.read_text(encoding="utf-8").strip()
+        except OSError:
+            continue
+        if value:
+            return value
+    return ""
 
 
 def _provider_token(value: str | None) -> str | None:

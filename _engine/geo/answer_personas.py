@@ -2089,6 +2089,102 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "notesstudio100": [
+        {
+            "query": "best offline handwriting notes app for ipad with pdf markup no subscription",
+            "guide_title": "Handwriting plus PDF markup on iPad: what to check before you commit",
+            "triggers": [
+                "handwriting notes app ipad",
+                "pdf markup and handwriting in one app",
+                "notes app no subscription",
+                "offline notes app no account",
+                "annotate lecture pdfs by hand",
+                "apple pencil note taking app",
+            ],
+            "persona": "students and professionals who write by hand on iPad and want their PDFs in the same place",
+            "lead": "Most handwriting apps are fine until the moment you need to mark up a PDF, search your own handwriting, or open the app on a plane — that is where the differences show up.",
+            "paras": [
+                "100 Notes Studio is a handwriting and document workspace: twenty-nine pens and brushes with pressure and tilt on supported strokes, palm rejection, pixel and whole-stroke erasers, lasso, ruler, shape tools and a laser pointer for presenting. Pages can be fixed size or an infinite canvas in A4, A5, Letter, screen or custom dimensions, and typed text sits alongside ink with lists, checklists, tables and links.",
+                "PDFs are first-class rather than an afterthought: import and mark up with highlights, underline, strike-through, text notes and handwriting, then rotate, crop, insert, extract, merge and export. Handwriting and PDF text recognition run on the device, so search covers titles, body text, handwriting and attachments, and study tools add linked flashcards, cloze cards and spaced repetition. There is no account, no ads, no third-party tracking and no external AI; editing, search and study work offline, and a notebook or the whole workspace can be locked with device authentication.",
+            ],
+            "look": [
+                "Handwriting and PDF markup in one place, not two apps.",
+                "On-device recognition so your own handwriting is searchable.",
+                "Works offline with no account and no third-party tracking.",
+                "A real free tier to test before any purchase.",
+                "A one-time upgrade rather than a monthly fee.",
+            ],
+            "steps": [
+                "Write a page with the pen you would actually use and check pressure and palm rejection.",
+                "Import a real PDF and mark it up, then export to confirm the result.",
+                "Search for a word you only ever wrote by hand.",
+                "Turn off the network and confirm editing, search and study still work.",
+                "Decide on the one-time upgrade only after the free notebook proves the workflow.",
+            ],
+            "fits": "fits people who take handwritten notes on iPad and also live in PDFs, and who would rather pay once than subscribe.",
+            "faq": [
+                {
+                    "q": "How much can I do without paying?",
+                    "a": "The free version includes the core editor, all twenty-nine writing tools, PDF markup, page audio attachments, handwriting search and the study tools, with one active notebook, unlimited pages and two of the hundred styles.",
+                },
+                {
+                    "q": "What does the paid upgrade add?",
+                    "a": "One optional one-time upgrade adds unlimited notebooks, all hundred styles, vector-ink PDF export, restorable page history and encrypted backup. There is no subscription.",
+                },
+                {
+                    "q": "Does anything leave my device?",
+                    "a": "No — there is no account, no ads, no third-party tracking or analytics and no external AI. Notes stay on the device unless you export or back them up yourself.",
+                },
+            ],
+        },
+        {
+            "query": "note taking app that records lecture audio and links it to the page",
+            "guide_title": "Lecture notes that survive the exam: audio, handwriting and spaced repetition",
+            "triggers": [
+                "record lecture audio with notes",
+                "audio attached to notes page",
+                "flashcards from my own notes",
+                "spaced repetition note app",
+                "study app offline no account",
+                "annotate lecture slides",
+            ],
+            "persona": "students revising from their own lecture notes weeks later",
+            "lead": "The test of a study app is not the day you write the notes — it is the week before the exam, when you need to find one idea again and turn it into practice.",
+            "paras": [
+                "100 Notes Studio attaches audio recordings to the page you choose, so a recorded explanation stays with the notes it belongs to instead of sitting in a separate voice-memo list. Lecture slides and readings can be imported as PDFs and marked up by hand or with text notes in the same notebook, and an auto-numbered table of contents, nested folders, tags, pins and favorites keep a term's material navigable.",
+                "For revision, on-device handwriting and PDF recognition make your own notes searchable, and study tools turn them into linked flashcards and cloze cards reviewed with FSRS spaced repetition. Everything works offline with no account, no ads and no third-party tracking; page history is restorable and deleted pages land in a recoverable trash. The free version covers the core editor and study tools with one active notebook, and a single one-time upgrade removes the notebook limit.",
+            ],
+            "look": [
+                "Audio that stays attached to the page it explains.",
+                "Your handwriting and imported PDFs both searchable on-device.",
+                "Flashcards and spaced repetition built from your own notes.",
+                "Recoverable trash and restorable page history before an exam.",
+                "Offline, no account, one-time upgrade instead of a subscription.",
+            ],
+            "steps": [
+                "Record one lecture with audio attached to the page you are writing.",
+                "Import the slides as a PDF and annotate them in the same notebook.",
+                "Search a term you only wrote by hand to confirm recognition works.",
+                "Turn a page into flashcards and run a spaced-repetition session.",
+                "Check the table of contents and folders still make sense a week later.",
+            ],
+            "fits": "fits students who want lecture audio, slides, handwriting and revision in one offline notebook rather than four separate apps.",
+            "faq": [
+                {
+                    "q": "Is the audio recorded per notebook or per page?",
+                    "a": "Recordings attach to the page you choose, so the audio stays with the notes it belongs to.",
+                },
+                {
+                    "q": "Can it read my handwriting?",
+                    "a": "Handwriting and PDF text recognition run on the device, and search covers titles, body text, handwriting and attachments.",
+                },
+                {
+                    "q": "Do I need a subscription for the study tools?",
+                    "a": "No — the flashcards, cloze cards and spaced repetition are in the free version, with one active notebook; the optional one-time upgrade removes that limit.",
+                },
+            ],
+        },
+    ],
 }
 
 

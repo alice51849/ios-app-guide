@@ -16,7 +16,7 @@
     ],
     "retirement_rule": "Retire after three consecutive verified misses"
   },
-  "record_count": 41,
+  "record_count": 42,
   "apps": [
     {
       "key": "notesstudio100",
@@ -1760,6 +1760,50 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
+      "verified_live": true
+    },
+    {
+      "key": "wifiaidlite",
+      "app_store_id": "6793414462",
+      "name": "WiFi Aid Lite",
+      "category": "utility",
+      "category_labels": {
+        "en": "More",
+        "zh-Hant": "更多"
+      },
+      "summaries": {
+        "en": "Find the real problem. Each tool includes one free complete use. Optional one-time lifetime unlock for unlimited use—no subscription, ads or tracking.",
+        "zh-Hant": "「網路又卡住了」——問題到底出在路由器、DNS、ISP,還是網站本身?WiFi Aid Lite 用多條獨立路徑同時檢測 DNS、TCP、TLS、回應時間與穩定度,交叉比對各項證據,告訴你最可能的故障原因,不必再瞎猜、重開機碰運氣。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Free to start",
+        "One-time unlock",
+        "No subscription"
+      ],
+      "keywords": [
+        "is it my wifi or the website",
+        "wifi connected but no internet",
+        "check if a website is down",
+        "dns not resolving iphone",
+        "slow wifi diagnose",
+        "network test app no account"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
       "verified_live": true
     },
     {

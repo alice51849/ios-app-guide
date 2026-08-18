@@ -74,13 +74,13 @@
       "const": "official_locale_order_then_alphabetical_app_name"
     },
     "app_count": {
-      "const": 41
+      "const": 42
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 2050
+      "const": 2100
     },
     "locales": {
       "type": "array",
@@ -144,8 +144,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 2050,
-      "maxItems": 2050,
+      "minItems": 2100,
+      "maxItems": 2100,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -270,6 +270,7 @@
               "tripplanet",
               "unblurry",
               "wifiaid",
+              "wifiaidlite",
               "wordmate",
               "wordmatelite"
             ]

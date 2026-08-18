@@ -148,6 +148,30 @@ class PublisherIntentLocalizationTests(unittest.TestCase):
         missing = set(catalog.PURCHASE_LABELS.values()) - set(payload["strings"])
         self.assertEqual(set(), missing)
 
+    def test_truncated_finder_dataset_fails_closed(self) -> None:
+        # The 50-locale catalog is derived from the finder dataset. If a
+        # partial finder run ever writes fewer apps than the portfolio owns,
+        # this must stop the build instead of publishing a shrunken catalog.
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            (pages / "data").mkdir(parents=True)
+            keys = sorted(catalog.PERSONAS)[:2]
+            (
+                pages / "data" / catalog.FINDER_DATASET
+            ).write_text(
+                json.dumps({"apps": [{"key": key} for key in keys]}),
+                encoding="utf-8",
+            )
+            with self.assertRaises(ValueError) as caught:
+                catalog.build(pages)
+            message = str(caught.exception)
+            self.assertIn("coverage differs", message)
+            for key in sorted(set(catalog.PERSONAS) - set(keys))[:1]:
+                self.assertIn(key, message)
+            self.assertFalse(
+                (pages / "data" / f"{catalog.SLUG}.json").exists()
+            )
+
     def test_ui_localizations_cover_all_official_locales(self) -> None:
         payload = json.loads(catalog.I18N_PATH.read_text(encoding="utf-8"))
         localizations = catalog.load_ui_i18n()

@@ -17,7 +17,11 @@ sys.path.insert(0, str(ROOT / "social"))
 
 import answer_portfolio  # noqa: E402
 from app_store_storefronts import campaign_app_store_url  # noqa: E402
-from appstore_live import LOOKUP_COUNTRIES, live_app_keys  # noqa: E402
+from appstore_live import (  # noqa: E402
+    LOOKUP_COUNTRIES,
+    STATE_FILE,
+    live_app_keys,
+)
 import gen_app_catalog  # noqa: E402
 from gen_calculator import write_tools_sitemap  # noqa: E402
 from gen_feed import feed_discovery_links  # noqa: E402
@@ -1736,11 +1740,26 @@ def build(
         pages / "apps.json",
         legacy_apps_json(records, pages),
     )
-    # Every live app must own a persona; personas for apps that exist in
-    # App Store Connect but are not public yet (the catch-up pipeline
-    # requires those ahead of launch) must not downgrade the finder.
+    # The 50-locale buyer-intent catalog is a whole-portfolio artifact: it is
+    # rebuilt from the finder dataset written just above and its schema pins
+    # app_count to len(PERSONAS). So it may only be rebuilt when this run
+    # really did write a record for every persona. A partial live set (an
+    # incremental materialization or a focused test build) must never reach
+    # publisher_intent_catalog.build, or it truncates the catalog to the
+    # handful of apps it happened to carry.
+    #
+    # answer_personas.PERSONAS is contractually the live set — apps still in
+    # review are staged in answer_personas_prelaunch.PRELAUNCH_PERSONAS — so a
+    # live app without a persona is a hard error, never a silent downgrade.
+    live_set = {str(key) for key in live_keys}
     expected_live = set(publisher_intent_catalog.PERSONAS)
-    if {str(key) for key in live_keys} <= expected_live:
+    uncovered = live_set - expected_live
+    if uncovered:
+        raise ValueError(
+            "Live apps are missing from the 50-locale buyer-intent catalog: "
+            f"{sorted(uncovered)}"
+        )
+    if live_set == expected_live:
         publisher_intent_catalog.build(pages)
         page_records = localized_page_records(records, pages)
         page_locales = ["en", *OFFICIAL_LOCALES]
@@ -1785,13 +1804,19 @@ def main() -> None:
     if uncovered:
         raise RuntimeError(
             "Live apps are missing from the 50-locale buyer-intent catalog: "
-            f"{sorted(uncovered)}"
+            f"{sorted(uncovered)} — add their personas to answer_personas."
         )
-    prelaunch = expected - set(live)
-    if prelaunch:
-        print(
-            "pre-launch personas (not yet public, excluded from the finder): "
-            f"{sorted(prelaunch)}"
+    # Personas are the live portfolio by contract (see
+    # answer_personas_prelaunch.PRELAUNCH_PERSONAS for apps still in review).
+    # A persona without a live app means either the cached App Store state is
+    # stale or the app was pulled; both need a decision, and continuing would
+    # silently drop the finder and its 48 extra locales to a bilingual stub.
+    stale = expected - set(live)
+    if stale:
+        raise RuntimeError(
+            "Personas exist for apps that are not verified live: "
+            f"{sorted(stale)} — refresh {STATE_FILE} if they are public, or "
+            "stage them in answer_personas_prelaunch.PRELAUNCH_PERSONAS."
         )
     for output in build(live_keys=live):
         print(f"portfolio app finder -> {output}")

@@ -18718,6 +18718,81 @@ class GeneratorTests(unittest.TestCase):
             [value for value in strings if value not in translations],
         )
 
+    def test_partial_live_keys_cannot_truncate_the_intent_catalog(self):
+        # Regression (CI run 32141442536): the daily workflow rebuilds the
+        # finder from whatever live set the caller carries. A build holding
+        # only part of the portfolio must stay out of
+        # publisher_intent_catalog, whose 50-locale dataset pins app_count to
+        # the full persona set — otherwise a 2-app finder file either
+        # truncates or hard-fails the 42-app buyer-intent catalog.
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            for locale in ("en-US", "zh-Hant"):
+                for key in ("snapport", "wordmate", "zafe", "zodira"):
+                    path = pages / locale / f"{key}.html"
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    path.write_text(
+                        '<meta name="description" content="Verified app.">',
+                        encoding="utf-8",
+                    )
+            for path in (
+                pages / "tools" / "index.html",
+                pages / "zh-Hant" / "tools" / "index.html",
+            ):
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(
+                    '<section class="wrap grid"></section>',
+                    encoding="utf-8",
+                )
+
+            portfolio_app_finder.build(
+                pages,
+                live_keys={"wordmate", "snapport"},
+            )
+            data = json.loads(
+                (
+                    pages / "data" / "verified-ios-app-finder-catalog.json"
+                ).read_text(encoding="utf-8")
+            )
+            self.assertEqual(
+                {"snapport", "wordmate"},
+                {str(app["key"]) for app in data["apps"]},
+            )
+            # The whole-portfolio artifacts must not exist at all: a partial
+            # run may publish neither a truncated intent catalog nor the
+            # 50-locale finder pages that are derived from it.
+            self.assertFalse(
+                (
+                    pages
+                    / "data"
+                    / f"{publisher_intent_catalog.SLUG}.json"
+                ).exists()
+            )
+            self.assertFalse(
+                (
+                    pages
+                    / "ar-SA"
+                    / "tools"
+                    / f"{portfolio_app_finder.SLUG}.html"
+                ).exists()
+            )
+            # zafe/zodira are staged in answer_personas_prelaunch, so a live
+            # app that owns no persona has to fail closed instead of being
+            # dropped from the published catalog.
+            with self.assertRaises(ValueError) as caught:
+                portfolio_app_finder.build(
+                    pages,
+                    live_keys={"wordmate", "snapport", "zafe"},
+                )
+            self.assertIn("zafe", str(caught.exception))
+            self.assertFalse(
+                (
+                    pages
+                    / "data"
+                    / f"{publisher_intent_catalog.SLUG}.json"
+                ).exists()
+            )
+
     def test_portfolio_app_finder_is_bilingual_factual_and_idempotent(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)

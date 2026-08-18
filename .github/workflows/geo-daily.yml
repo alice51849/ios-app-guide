@@ -23,6 +23,9 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    # A hung generator used to spin for 10+ hours and block every later
+    # scheduled run; fail loudly instead so the next schedule can retry.
+    timeout-minutes: 180
     env:
       GEO_SITE: https://alice51849.github.io/ios-app-guide
       # Apple campaign-link provider token. Not a secret: it is published

@@ -16,8 +16,10 @@ from pathlib import Path
 import re
 import sys
 import tempfile
+import time
 from typing import Any, Iterator
 import unicodedata
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -81,6 +83,23 @@ MCP_DISTRIBUTION_STATE_KEYS = frozenset(
         "checksums_url",
     }
 )
+MCP_FETCH_RETRY_DELAYS_SECONDS = (1.0, 2.0)
+MCP_FETCH_MAX_ATTEMPTS = len(MCP_FETCH_RETRY_DELAYS_SECONDS) + 1
+
+
+class _MCPTransientFetchError(RuntimeError):
+    def __init__(
+        self,
+        url: str,
+        attempts: int,
+        cause: TimeoutError | urllib.error.URLError,
+    ) -> None:
+        super().__init__(
+            f"MCP distribution fetch failed after {attempts} attempts: {url}"
+        )
+        self.url = url
+        self.attempts = attempts
+        self.cause = cause
 
 
 def _mcp_stdio_config(
@@ -596,14 +615,37 @@ def _fetch_bytes(url: str, max_bytes: int) -> bytes:
         url,
         headers={"User-Agent": "Lumi-GEO-MCP-Distribution/1.0"},
     )
-    with urllib.request.urlopen(request, timeout=45) as response:
-        payload = response.read(max_bytes + 1)
-    if len(payload) > max_bytes:
-        raise ValueError(f"MCP distribution response is too large: {url}")
-    return payload
+    for attempt in range(1, MCP_FETCH_MAX_ATTEMPTS + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=45) as response:
+                payload = response.read(max_bytes + 1)
+        except urllib.error.HTTPError as error:
+            if not 500 <= error.code <= 599:
+                raise
+            if attempt == MCP_FETCH_MAX_ATTEMPTS:
+                raise _MCPTransientFetchError(
+                    url,
+                    attempt,
+                    error,
+                ) from error
+        except (TimeoutError, urllib.error.URLError) as error:
+            if attempt == MCP_FETCH_MAX_ATTEMPTS:
+                raise _MCPTransientFetchError(
+                    url,
+                    attempt,
+                    error,
+                ) from error
+        else:
+            if len(payload) > max_bytes:
+                raise ValueError(
+                    f"MCP distribution response is too large: {url}"
+                )
+            return payload
+        time.sleep(MCP_FETCH_RETRY_DELAYS_SECONDS[attempt - 1])
+    raise RuntimeError("MCP distribution retry loop exhausted unexpectedly")
 
 
-def refresh_live_mcp_distribution(
+def _refresh_live_mcp_distribution(
     pages: Path = PAGES,
 ) -> dict[str, object]:
     registry_payload = json.loads(
@@ -729,6 +771,40 @@ def refresh_live_mcp_distribution(
         flush=True,
     )
     return distribution
+
+
+def _fallback_to_frozen_mcp_distribution(
+    pages: Path,
+    error: _MCPTransientFetchError,
+) -> dict[str, object]:
+    distribution = use_frozen_mcp_distribution(pages)
+    http_status = (
+        f" http_status={error.cause.code}"
+        if isinstance(error.cause, urllib.error.HTTPError)
+        else ""
+    )
+    print(
+        "WARNING MCP_DISTRIBUTION_FROZEN_FALLBACK "
+        "source=validated_frozen "
+        f"version={distribution['version']} "
+        f"error={type(error.cause).__name__}{http_status} "
+        f"attempts={error.attempts} "
+        f"url={error.url} "
+        "state="
+        f"{pages / 'data' / MCP_DISTRIBUTION_STATE_FILENAME}",
+        file=sys.stderr,
+        flush=True,
+    )
+    return distribution
+
+
+def refresh_live_mcp_distribution(
+    pages: Path = PAGES,
+) -> dict[str, object]:
+    try:
+        return _refresh_live_mcp_distribution(pages)
+    except _MCPTransientFetchError as error:
+        return _fallback_to_frozen_mcp_distribution(pages, error)
 
 
 def slugify(value: str) -> str:
@@ -1021,20 +1097,15 @@ def _finder_records(pages: Path) -> dict[str, dict[str, Any]]:
         if isinstance(app, dict) and app.get("key")
     }
     expected = set(PERSONAS)
-    # The finder lists public apps only; personas may run ahead of a launch
-    # because the catch-up pipeline requires a reviewed persona before an
-    # app goes public. Every listed app still needs its persona.
-    unbacked = set(records) - expected
-    if unbacked:
+    if set(records) != expected:
         raise ValueError(
-            "Finder apps without a reviewed persona: "
-            f"{sorted(unbacked)}"
+            "Finder/persona app coverage differs: "
+            f"missing={sorted(expected - set(records))}, "
+            f"extra={sorted(set(records) - expected)}"
         )
-    prelaunch = expected - set(records)
-    if len(records) != EXPECTED_APP_COUNT - len(prelaunch):
+    if len(records) != EXPECTED_APP_COUNT:
         raise ValueError(
-            f"Expected {EXPECTED_APP_COUNT - len(prelaunch)} verified apps, "
-            f"got {len(records)}"
+            f"Expected {EXPECTED_APP_COUNT} verified apps, got {len(records)}"
         )
     return records
 

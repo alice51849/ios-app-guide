@@ -18,7 +18,7 @@ Pred potovanjem so celovite fraze za resnične situacije bolj uporabne kot posam
 - Apple Watch
 - App Store · 12,99 €
 
-[Prenesite DailyMate v App Store →](https://apps.apple.com/si/app/id6790418321)
+[Prenesite DailyMate v App Store →](https://apps.apple.com/si/app/id6790418321?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

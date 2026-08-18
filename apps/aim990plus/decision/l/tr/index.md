@@ -17,7 +17,7 @@ Aim990 Plus — Build calm, accurate decisions under time with 630 original ques
 - Ücretli indirme
 - App Store · ₺299,99
 
-[Get Aim990 Plus on the App Store →](https://apps.apple.com/tr/app/id6792483140)
+[Get Aim990 Plus on the App Store →](https://apps.apple.com/tr/app/id6792483140?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html)
 

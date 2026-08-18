@@ -18,7 +18,7 @@ Escovar os dentes e dormir falham muitas vezes no mesmo momento: a criança est�
 - Sem anúncios
 - App Store · 6,99 €
 
-[Obtenha Lumi Mission Planet Pro na App Store →](https://apps.apple.com/pt/app/id6779745474)
+[Obtenha Lumi Mission Planet Pro na App Store →](https://apps.apple.com/pt/app/id6779745474?pt=118326163&ct=iag_data_pt_pt&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

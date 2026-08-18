@@ -18,7 +18,7 @@ Před cestou jsou kompletní fráze pro reálné situace užitečnější než i
 - Apple Watch
 - App Store · 299,00 Kč
 
-[Stáhněte si DailyMate v App Store →](https://apps.apple.com/cz/app/id6790418321)
+[Stáhněte si DailyMate v App Store →](https://apps.apple.com/cz/app/id6790418321?pt=118326163&ct=iag_data_cs&mt=8)
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

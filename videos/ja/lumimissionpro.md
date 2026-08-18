@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [動画を見る](https://files.catbox.moe/el3gzc.mp4)
 
-[App StoreでLumi Mission Planet Proを入手 →](https://apps.apple.com/jp/app/id6779745474)
+[App StoreでLumi Mission Planet Proを入手 →](https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=iag_video_ja&mt=8)
 
 [アプリガイドを開く](https://alice51849.github.io/ios-app-guide/ja/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

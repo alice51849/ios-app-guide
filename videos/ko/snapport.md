@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [영상 보기](https://files.catbox.moe/z8apkg.mp4)
 
-[App Store에서 Snapport 받기 →](https://apps.apple.com/kr/app/id6780575828)
+[App Store에서 Snapport 받기 →](https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=iag_video_ko&mt=8)
 
 [앱 가이드 열기](https://alice51849.github.io/ios-app-guide/ko/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

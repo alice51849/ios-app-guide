@@ -17,7 +17,7 @@ Els creadors de viatges necessiten un estil de pel·lícula repetible que afegei
 - Inici gratuït · desbloqueig de per vida
 - App Store · Gratis
 
-[Descarrega PhotoCream a l'App Store →](https://apps.apple.com/es/app/id6781808054)
+[Descarrega PhotoCream a l'App Store →](https://apps.apple.com/es/app/id6781808054?pt=118326163&ct=iag_data_ca&mt=8)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

@@ -18,7 +18,7 @@ En iyi çocuk matematik uygulaması, mantık eğitimi verir — kalıplar, dizil
 - Reklam yok
 - App Store · Ücretsiz
 
-[Lumi Math Planet'i App Store'dan edinin →](https://apps.apple.com/tr/app/id6778269699)
+[Lumi Math Planet'i App Store'dan edinin →](https://apps.apple.com/tr/app/id6778269699?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

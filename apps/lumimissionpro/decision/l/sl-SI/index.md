@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Brez oglasov
 - App Store · 6,99 €
 
-[Pridobite Lumi Mission Planet Pro v trgovini App Store →](https://apps.apple.com/si/app/id6779745474)
+[Pridobite Lumi Mission Planet Pro v trgovini App Store →](https://apps.apple.com/si/app/id6779745474?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

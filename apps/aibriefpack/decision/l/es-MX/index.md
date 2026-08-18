@@ -18,7 +18,7 @@ Mejor contexto. Mejores respuestas. Convierte capturas de pantalla, archivos, no
 - Privado / en el dispositivo
 - App Store · Gratis
 
-[Consigue AI Brief en el App Store](https://apps.apple.com/mx/app/id6791658210)
+[Consigue AI Brief en el App Store](https://apps.apple.com/mx/app/id6791658210?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/aibriefpack.html)
 

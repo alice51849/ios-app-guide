@@ -18,7 +18,7 @@ Snapport Lite - നിർദ്ദേശിച്ച വലുപ്പം, പ�
 - ഓഫ്‌ലൈൻ
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് Snapport Lite നേടൂ](https://apps.apple.com/in/app/id6792856304)
+[App Store-ൽ നിന്ന് Snapport Lite നേടൂ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/snapportlite.html)
 

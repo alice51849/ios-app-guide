@@ -18,7 +18,7 @@ Snapport Lite - ପାସପୋର୍ଟ, ଭିସା, ଓ ଡକ୍ୟୁମ�
 - ଅଫଲାଇନ
 - App Store · ମାଗଣା
 
-[App Store ରୁ Snapport Lite ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6792856304)
+[App Store ରୁ Snapport Lite ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_or_in&mt=8)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/snapportlite.html)
 

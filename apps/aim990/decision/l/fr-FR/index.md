@@ -17,7 +17,7 @@ La partie 5 semble courte, mais ces questions à phrase incomplète peuvent pren
 - Gratuit au départ · déverrouillage définitif
 - App Store · Gratuit
 
-[Obtenez Aim990 sur l’App Store →](https://apps.apple.com/fr/app/id6784974530)
+[Obtenez Aim990 sur l’App Store →](https://apps.apple.com/fr/app/id6784974530?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

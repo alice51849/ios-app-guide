@@ -18,7 +18,7 @@ Jeśli większość aplikacji do zadań wydaje się przeładowana, właściwa to
 - Bez reklam
 - App Store · Bezpłatnie
 
-[Pobierz Mochi z App Store →](https://apps.apple.com/pl/app/id6785004775)
+[Pobierz Mochi z App Store →](https://apps.apple.com/pl/app/id6785004775?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - เริ่มใช้ฟรี · ปลดล็อกถาวร
 - App Store · ฟรี
 
-[ดาวน์โหลด PhotoCream ใน App Store →](https://apps.apple.com/th/app/id6781808054)
+[ดาวน์โหลด PhotoCream ใน App Store →](https://apps.apple.com/th/app/id6781808054?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

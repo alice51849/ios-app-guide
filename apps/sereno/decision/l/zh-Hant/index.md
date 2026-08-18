@@ -14,13 +14,13 @@ publisher: "Lumi Studio"
 睡眠時，每月煩人的訂閱正好相反——Sereno 專為此打造。
 
 - 睡眠與專注
-- 免費開始 · 一次購買解鎖
+- 免費開始 · 永久解鎖
 - 離線使用
 - 無廣告
 - App Store · 免費
 - ★ 5.0/5 · 1
 
-[在 App Store 取得 Sereno →](https://apps.apple.com/tw/app/id6788236641)
+[在 App Store 取得 Sereno →](https://apps.apple.com/tw/app/id6788236641?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

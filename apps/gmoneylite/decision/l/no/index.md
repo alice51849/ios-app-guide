@@ -23,7 +23,7 @@ G+Money Lite — Smart reisevaluta- & utgiftssporer Reisepenger, gjort enkelt Re
 - Apple Watch
 - App Store · Gratis
 
-[Last ned G+Money Lite fra App Store](https://apps.apple.com/no/app/id6793436548)
+[Last ned G+Money Lite fra App Store](https://apps.apple.com/no/app/id6793436548?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/gmoneylite.html)
 

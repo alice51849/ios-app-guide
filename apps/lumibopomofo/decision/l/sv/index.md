@@ -18,7 +18,7 @@ För ett barn som lär sig Zhuyin för första gången bör appen täcka alla 37
 - Inga annonser
 - App Store · Gratis
 
-[Skaffa Lumi Bopomofo på App Store →](https://apps.apple.com/se/app/id6773017109)
+[Skaffa Lumi Bopomofo på App Store →](https://apps.apple.com/se/app/id6773017109?pt=118326163&ct=iag_data_sv&mt=8)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

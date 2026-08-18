@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - ছবি ও ইউটিলিটি
 - পেইড ডাউনলোড
 
-[App Store থেকে WiFi Aid ডাউনলোড করুন](https://apps.apple.com/app/id6790467886)
+[App Store থেকে WiFi Aid ডাউনলোড করুন](https://apps.apple.com/app/id6790467886?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/wifiaid.html)
 

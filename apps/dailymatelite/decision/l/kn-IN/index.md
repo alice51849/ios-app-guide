@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್
 - App Store · ಉಚಿತ
 
-[App Store ನಲ್ಲಿ DailyMate Lite: ದಿನವೂ ಮಾತನಾಡಿ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6794725568)
+[App Store ನಲ್ಲಿ DailyMate Lite: ದಿನವೂ ಮಾತನಾಡಿ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_data_kn_in&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/dailymatelite.html)
 

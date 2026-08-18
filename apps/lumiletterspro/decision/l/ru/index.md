@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Без рекламы
 - App Store · 799,00 ₽
 
-[Скачать Lumi Letters Pro в App Store →](https://apps.apple.com/ru/app/id6778491147)
+[Скачать Lumi Letters Pro в App Store →](https://apps.apple.com/ru/app/id6778491147?pt=118326163&ct=iag_data_ru&mt=8)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

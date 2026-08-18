@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Không quảng cáo
 - App Store · 199.000đ
 
-[Tải Lumi Mission Planet Pro trên App Store →](https://apps.apple.com/vn/app/id6779745474)
+[Tải Lumi Mission Planet Pro trên App Store →](https://apps.apple.com/vn/app/id6779745474?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

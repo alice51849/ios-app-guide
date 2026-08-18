@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Без учётной записи
 - App Store · 449,00 ₽
 
-[Скачать G+Money в App Store →](https://apps.apple.com/ru/app/id6755782939)
+[Скачать G+Money в App Store →](https://apps.apple.com/ru/app/id6755782939?pt=118326163&ct=iag_data_ru&mt=8)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

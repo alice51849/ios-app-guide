@@ -17,7 +17,7 @@ Parla amb naturalitat quan arribi el moment. DailyMate Lite et permet practicar 
 - Inici gratuït · desbloqueig de per vida
 - App Store · Gratis
 
-[Descarrega DailyMate Lite: Parla avui a l’App Store](https://apps.apple.com/es/app/id6794725568)
+[Descarrega DailyMate Lite: Parla avui a l’App Store](https://apps.apple.com/es/app/id6794725568?pt=118326163&ct=iag_data_ca&mt=8)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/dailymatelite.html)
 

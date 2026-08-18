@@ -23,7 +23,7 @@ G+Money Lite — Okos utazási pénznem- és költségkövető Utazási pénz, e
 - Apple Watch
 - App Store · Ingyenes
 
-[Töltse le a(z) G+Money Lite appot az App Store-ból](https://apps.apple.com/hu/app/id6793436548)
+[Töltse le a(z) G+Money Lite appot az App Store-ból](https://apps.apple.com/hu/app/id6793436548?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/gmoneylite.html)
 

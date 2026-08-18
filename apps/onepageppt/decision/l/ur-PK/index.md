@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - مفت آغاز · مستقل ان لاک
 - App Store · مفت
 
-[App Store سے OnePage PPT: سلائیڈ میکر حاصل کریں](https://apps.apple.com/pk/app/id6798814385)
+[App Store سے OnePage PPT: سلائیڈ میکر حاصل کریں](https://apps.apple.com/pk/app/id6798814385?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/onepageppt.html)
 

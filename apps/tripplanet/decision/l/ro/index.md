@@ -18,7 +18,7 @@ Părinții care călătoresc cu copii mici au nevoie de activități care transf
 - Fără reclame
 - App Store · Gratuit
 
-[Descarcă Lumi Trip Planet din App Store →](https://apps.apple.com/ro/app/id6787193643)
+[Descarcă Lumi Trip Planet din App Store →](https://apps.apple.com/ro/app/id6787193643?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

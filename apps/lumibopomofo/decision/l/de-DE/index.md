@@ -18,7 +18,7 @@ Für ein Kind, das Zhuyin erstmals lernt, sollte die App alle 37 Symbole durch N
 - Keine Werbung
 - App Store · Kostenlos
 
-[Holen Sie sich Lumi Bopomofo im App Store →](https://apps.apple.com/de/app/id6773017109)
+[Holen Sie sich Lumi Bopomofo im App Store →](https://apps.apple.com/de/app/id6773017109?pt=118326163&ct=iag_data_de_de&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

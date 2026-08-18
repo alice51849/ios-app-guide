@@ -18,7 +18,7 @@ Før en rejse er komplette sætninger til virkelige situationer mere nyttige end
 - Apple Watch
 - App Store · 99,00 kr
 
-[Hent DailyMate i App Store →](https://apps.apple.com/dk/app/id6790418321)
+[Hent DailyMate i App Store →](https://apps.apple.com/dk/app/id6790418321?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

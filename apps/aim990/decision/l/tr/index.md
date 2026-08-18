@@ -17,7 +17,7 @@ Bölüm 5 kısa görünebilir, ancak tamamlanmamış cümle soruları, dilbilgis
 - Başlangıçta ücretsiz · ömür boyu açma
 - App Store · Ücretsiz
 
-[Aim990’ı App Store’dan edinin →](https://apps.apple.com/tr/app/id6784974530)
+[Aim990’ı App Store’dan edinin →](https://apps.apple.com/tr/app/id6784974530?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

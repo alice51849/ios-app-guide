@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - কোনও অ্যাকাউন্ট নেই
 - গোপনীয় / ডিভাইসে
 
-[App Store-এ TripBee Pro: ট্রিপ প্ল্যানার পান →](https://apps.apple.com/app/id6787754435)
+[App Store-এ TripBee Pro: ট্রিপ প্ল্যানার পান →](https://apps.apple.com/app/id6787754435?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

@@ -18,7 +18,7 @@ Děti se nikdy nehýbou klidně, takže mírně rozostřené a roztřesené sní
 - Soukromé / v zařízení
 - App Store · Zdarma
 
-[Stáhněte Unblurry v App Store →](https://apps.apple.com/cz/app/id6782275018)
+[Stáhněte Unblurry v App Store →](https://apps.apple.com/cz/app/id6782275018?pt=118326163&ct=iag_data_cs&mt=8)
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

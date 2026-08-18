@@ -18,7 +18,7 @@ Etter en samtale vil du ikke ha en rå transkripsjon — du vil ha oppsummeringe
 - Privat / på enheten
 - App Store · Gratis
 
-[Last ned Sono Note i App Store →](https://apps.apple.com/no/app/id6782139553)
+[Last ned Sono Note i App Store →](https://apps.apple.com/no/app/id6782139553?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

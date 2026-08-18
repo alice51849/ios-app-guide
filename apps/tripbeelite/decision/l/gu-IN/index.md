@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - મફત શરૂઆત · કાયમી અનલૉક
 - App Store · મફત
 
-[App Store પર ટ્રિપબી લાઇટ મેળવો →](https://apps.apple.com/in/app/id6791299610)
+[App Store પર ટ્રિપબી લાઇટ મેળવો →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=iag_data_gu_in&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [영상 보기](https://files.catbox.moe/zmjvl6.mp4)
 
-[App Store에서 Lumi Math Planet 받기 →](https://apps.apple.com/kr/app/id6778269699)
+[App Store에서 Lumi Math Planet 받기 →](https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=iag_video_ko&mt=8)
 
 [앱 가이드 열기](https://alice51849.github.io/ios-app-guide/ko/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

@@ -18,7 +18,7 @@ Memberus gigi dan tidur sering gagal pada masa yang sama setiap malam: anak leti
 - Tiada iklan
 - App Store · RM29.90
 
-[Dapatkan Lumi Mission Planet Pro di App Store →](https://apps.apple.com/my/app/id6779745474)
+[Dapatkan Lumi Mission Planet Pro di App Store →](https://apps.apple.com/my/app/id6779745474?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

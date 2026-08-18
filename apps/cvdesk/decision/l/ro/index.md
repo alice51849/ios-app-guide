@@ -17,7 +17,7 @@ Când schimbi domeniul, problema CV-ului este diferită: experiența ta este rea
 - Început gratuit · deblocare pe viață
 - App Store · Gratuit
 
-[Obține CV Desk din App Store →](https://apps.apple.com/ro/app/id6781337213)
+[Obține CV Desk din App Store →](https://apps.apple.com/ro/app/id6781337213?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-resume-builder-app-for-career-changers-2026.html)
 

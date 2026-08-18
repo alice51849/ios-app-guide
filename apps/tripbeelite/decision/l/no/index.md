@@ -17,7 +17,7 @@ Hvis du planlegger én kommende reise, er en rolig tidslinje for den turen mer n
 - Gratis å starte · livstidsopplåsing
 - App Store · Gratis
 
-[Få TripBee Lite i App Store →](https://apps.apple.com/no/app/id6791299610)
+[Få TripBee Lite i App Store →](https://apps.apple.com/no/app/id6791299610?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

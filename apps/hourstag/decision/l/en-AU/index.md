@@ -19,7 +19,7 @@ What does it really cost? Not just in dollars, but in hours of your life.
 - Private / on-device
 - App Store · $7.99
 
-[Get HoursTag: Hours to Buy on the App Store](https://apps.apple.com/au/app/id6754218117)
+[Get HoursTag: Hours to Buy on the App Store](https://apps.apple.com/au/app/id6754218117?pt=118326163&ct=iag_data_en_au&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-AU/hourstag.html)
 

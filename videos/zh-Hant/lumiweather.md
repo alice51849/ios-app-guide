@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [觀看影片](https://files.catbox.moe/yyac60.mp4)
 
-[在 App Store 取得 Lumi Weather →](https://apps.apple.com/tw/app/id6779552704)
+[在 App Store 取得 Lumi Weather →](https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=iag_video_zh_hant&mt=8)
 
 [開啟 App 指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

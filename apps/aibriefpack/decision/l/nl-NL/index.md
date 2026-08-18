@@ -18,7 +18,7 @@ Betere context. Betere antwoorden. Verander schermafbeeldingen, bestanden, notit
 - Privé / op apparaat
 - App Store · Gratis
 
-[Download AI Brief in de App Store](https://apps.apple.com/nl/app/id6791658210)
+[Download AI Brief in de App Store](https://apps.apple.com/nl/app/id6791658210?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/aibriefpack.html)
 

@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 
-[Tải 100 Notes Studio: Pen & Paper trên App Store](https://apps.apple.com/vn/app/id6798813048)
+[Tải 100 Notes Studio: Pen & Paper trên App Store](https://apps.apple.com/vn/app/id6798813048?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/notesstudio100.html)
 

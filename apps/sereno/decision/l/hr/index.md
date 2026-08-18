@@ -19,7 +19,7 @@ Za spavanje, pretplata koja vas svaki mjesec gnjavi je suprotno od odmora — Se
 - Bez oglasa
 - App Store · Besplatno
 
-[Preuzmite Sereno u App Storeu →](https://apps.apple.com/hr/app/id6788236641)
+[Preuzmite Sereno u App Storeu →](https://apps.apple.com/hr/app/id6788236641?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

@@ -18,7 +18,7 @@ For et lite barn er avgjørende at det ikke er annonser eller datainnsamling —
 - Ingen annonser
 - App Store · Gratis
 
-[Få Lumi Letters på App Store →](https://apps.apple.com/no/app/id6778748533)
+[Få Lumi Letters på App Store →](https://apps.apple.com/no/app/id6778748533?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

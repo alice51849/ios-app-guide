@@ -18,7 +18,7 @@ Družine, ki se pripravljajo na vrtec, potrebujejo celovito pot zgodnjega branja
 - Brez oglasov
 - App Store · 9,99 €
 
-[Pridobite Lumi Letters Pro v trgovini App Store →](https://apps.apple.com/si/app/id6778491147)
+[Pridobite Lumi Letters Pro v trgovini App Store →](https://apps.apple.com/si/app/id6778491147?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

@@ -18,7 +18,7 @@ Cinque parole, un minuto, un passo visibile sul tuo percorso. Wordmate Lite pren
 - Offline
 - App Store · Gratis
 
-[Scarica Wordmate Lite: vocabolario sull'App Store](https://apps.apple.com/it/app/id6797601720)
+[Scarica Wordmate Lite: vocabolario sull'App Store](https://apps.apple.com/it/app/id6797601720?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/wordmatelite.html)
 

@@ -22,7 +22,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ¥1,500
 
-[App StoreでWordmate: Learn 44 Languagesを入手 →](https://apps.apple.com/jp/app/id6789917808)
+[App StoreでWordmate: Learn 44 Languagesを入手 →](https://apps.apple.com/jp/app/id6789917808?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

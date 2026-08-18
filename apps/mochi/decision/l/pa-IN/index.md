@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
 - App Store · ਮੁਫ਼ਤ
 
-[App Store ਤੋਂ Mochi ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6785004775)
+[App Store ਤੋਂ Mochi ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_data_pa_in&mt=8)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

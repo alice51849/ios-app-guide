@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [觀看影片](https://files.catbox.moe/n2pa81.mp4)
 
-[在 App Store 取得 Lumi Math Pro →](https://apps.apple.com/tw/app/id6776958488)
+[在 App Store 取得 Lumi Math Pro →](https://apps.apple.com/tw/app/id6776958488?pt=118326163&ct=iag_video_zh_hant&mt=8)
 
 [開啟 App 指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

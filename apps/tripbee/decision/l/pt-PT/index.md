@@ -20,7 +20,7 @@ Uma boa app de itinerário transforma uma viagem confusa numa linha temporal cla
 - Privado / no dispositivo
 - App Store · 6,99 €
 
-[Obtenha o TripBee Pro: Planeador de Viagens na App Store →](https://apps.apple.com/pt/app/id6787754435)
+[Obtenha o TripBee Pro: Planeador de Viagens na App Store →](https://apps.apple.com/pt/app/id6787754435?pt=118326163&ct=iag_data_pt_pt&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

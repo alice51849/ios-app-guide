@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 After a call you don't want a raw transcript — you want the summary, the action items, and a draft follow-up — Sono Note is built for this.
 
 - Productivity
-- Free to start · one-time unlock
+- Free to start · lifetime unlock
 - Private / on-device
 - App Store · Free
 
-[Get Sono Note on the App Store →](https://apps.apple.com/ca/app/id6782139553)
+[Get Sono Note on the App Store →](https://apps.apple.com/ca/app/id6782139553?pt=118326163&ct=iag_data_en_ca&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-CA/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

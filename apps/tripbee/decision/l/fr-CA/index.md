@@ -20,7 +20,7 @@ Une bonne application d’itinéraire transforme un voyage désordonné en une c
 - Privé / sur l'appareil
 - App Store · $7.99
 
-[Obtenez TripBee Pro : Planificateur de voyage sur l’App Store →](https://apps.apple.com/ca/app/id6787754435)
+[Obtenez TripBee Pro : Planificateur de voyage sur l’App Store →](https://apps.apple.com/ca/app/id6787754435?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

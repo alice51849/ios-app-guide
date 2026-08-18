@@ -18,7 +18,7 @@ Forældre, der rejser med små børn, har brug for aktiviteter, der gør pakning
 - Ingen reklamer
 - App Store · Gratis
 
-[Hent Lumi Trip Planet i App Store →](https://apps.apple.com/dk/app/id6787193643)
+[Hent Lumi Trip Planet i App Store →](https://apps.apple.com/dk/app/id6787193643?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

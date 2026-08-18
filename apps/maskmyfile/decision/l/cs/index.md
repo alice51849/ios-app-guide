@@ -18,7 +18,7 @@ Sdílejte bezpečně a přitom zachovejte užitečný kontext. Mask My File najd
 - Soukromé / v zařízení
 - App Store · Zdarma
 
-[Stáhněte si Mask My File v App Storu](https://apps.apple.com/cz/app/id6792850916)
+[Stáhněte si Mask My File v App Storu](https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=iag_data_cs&mt=8)
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/maskmyfile.html)
 

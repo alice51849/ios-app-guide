@@ -17,7 +17,7 @@ Fortalece tu comprensión del inglés con sesiones creadas para mantener la conc
 - Descarga de pago
 - App Store · $129.00
 
-[Consigue Aim990 Plus en el App Store](https://apps.apple.com/mx/app/id6792483140)
+[Consigue Aim990 Plus en el App Store](https://apps.apple.com/mx/app/id6792483140?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/aim990plus.html)
 

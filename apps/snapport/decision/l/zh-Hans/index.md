@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 私密 / 设备本地
 - App Store · ¥38.00
 
-[在App Store获取Snapport →](https://apps.apple.com/cn/app/id6780575828)
+[在App Store获取Snapport →](https://apps.apple.com/cn/app/id6780575828?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

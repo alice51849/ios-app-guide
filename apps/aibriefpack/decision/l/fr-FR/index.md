@@ -18,7 +18,7 @@ AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceabl
 - Privé / sur l’appareil
 - App Store · Gratuit
 
-[Get AI Brief on the App Store →](https://apps.apple.com/fr/app/id6791658210)
+[Get AI Brief on the App Store →](https://apps.apple.com/fr/app/id6791658210?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html)
 

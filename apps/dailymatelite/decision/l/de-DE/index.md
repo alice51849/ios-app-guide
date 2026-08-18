@@ -17,7 +17,7 @@ Sicherer sprechen, wenn es darauf ankommt. DailyMate Lite macht aus Situationen 
 - Kostenloser Einstieg · dauerhafte Freischaltung
 - App Store · Kostenlos
 
-[DailyMate Lite: Sprechen im App Store laden](https://apps.apple.com/de/app/id6794725568)
+[DailyMate Lite: Sprechen im App Store laden](https://apps.apple.com/de/app/id6794725568?pt=118326163&ct=iag_data_de_de&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/dailymatelite.html)
 

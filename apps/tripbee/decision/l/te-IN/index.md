@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - గోప్యంగా / పరికరంలో
 - App Store · ₹ 599
 
-[App Storeలో TripBee Pro: ట్రిప్ ప్లానర్ పొందండి →](https://apps.apple.com/in/app/id6787754435)
+[App Storeలో TripBee Pro: ట్రిప్ ప్లానర్ పొందండి →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

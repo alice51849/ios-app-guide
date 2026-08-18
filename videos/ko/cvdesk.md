@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [영상 보기](https://files.catbox.moe/fdknhv.mp4)
 
-[앱 스토어에서 CV Desk 받기 →](https://apps.apple.com/kr/app/id6781337213)
+[앱 스토어에서 CV Desk 받기 →](https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=iag_video_ko&mt=8)
 
 [앱 가이드 열기](https://alice51849.github.io/ios-app-guide/ko/answers/best-resume-builder-app-for-career-changers-2026.html)
 

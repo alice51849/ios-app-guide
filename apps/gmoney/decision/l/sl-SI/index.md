@@ -19,7 +19,7 @@ Na potovanju potrebujete proračunsko aplikacijo, ki deluje brez povezave v drž
 - Brez računa
 - App Store · 5,99 €
 
-[Prenesite G+Money v App Store →](https://apps.apple.com/si/app/id6755782939)
+[Prenesite G+Money v App Store →](https://apps.apple.com/si/app/id6755782939?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

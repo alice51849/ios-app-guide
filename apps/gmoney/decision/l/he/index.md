@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ללא חשבון
 - App Store · ₪17.90
 
-[קבל את G+Money ב-App Store →](https://apps.apple.com/il/app/id6755782939)
+[קבל את G+Money ב-App Store →](https://apps.apple.com/il/app/id6755782939?pt=118326163&ct=iag_data_he&mt=8)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

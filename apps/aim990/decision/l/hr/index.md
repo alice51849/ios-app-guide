@@ -17,7 +17,7 @@ Dio 5 izgleda kratak, ali pitanja s nepotpunim rečenicama mogu oduzeti vrijeme 
 - Besplatno za početak · doživotno otključavanje
 - App Store · Besplatno
 
-[Preuzmite Aim990 u App Storeu →](https://apps.apple.com/hr/app/id6784974530)
+[Preuzmite Aim990 u App Storeu →](https://apps.apple.com/hr/app/id6784974530?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

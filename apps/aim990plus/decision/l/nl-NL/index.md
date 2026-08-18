@@ -17,7 +17,7 @@ Aim990 Plus is een complete trainingsomgeving voor volwassenen die Engelse luist
 - Betaalde aanschaf
 - App Store · € 6,99
 
-[Download Aim990 Plus in de App Store](https://apps.apple.com/nl/app/id6792483140)
+[Download Aim990 Plus in de App Store](https://apps.apple.com/nl/app/id6792483140?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/aim990plus.html)
 

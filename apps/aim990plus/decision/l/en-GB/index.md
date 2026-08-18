@@ -17,7 +17,7 @@ Build a dependable routine under time pressure Aim990 Plus is an independent lis
 - Paid download
 - App Store · £5.99
 
-[Get Aim990 Plus on the App Store](https://apps.apple.com/gb/app/id6792483140)
+[Get Aim990 Plus on the App Store](https://apps.apple.com/gb/app/id6792483140?pt=118326163&ct=iag_data_en_gb&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/aim990plus.html)
 

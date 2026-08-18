@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ไม่มีการติดตาม
 - App Store · ฟรี
 
-[ดาวน์โหลด Lumi Weather ใน App Store →](https://apps.apple.com/th/app/id6779552704)
+[ดาวน์โหลด Lumi Weather ใน App Store →](https://apps.apple.com/th/app/id6779552704?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

@@ -16,7 +16,7 @@ Les enfants ne tiennent jamais en place, donc les photos floues ou tremblantes s
 
 [Regarder la vidéo](https://files.catbox.moe/sbugs3.mp4)
 
-[Téléchargez Unblurry sur l’App Store →](https://apps.apple.com/fr/app/id6782275018)
+[Téléchargez Unblurry sur l’App Store →](https://apps.apple.com/fr/app/id6782275018?pt=118326163&ct=iag_video_fr_fr&mt=8)
 
 [Ouvrir le guide de l’app](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

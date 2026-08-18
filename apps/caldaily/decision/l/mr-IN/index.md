@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - विजेट
 - App Store · मोफत
 
-[App Store वरून CalDaily: कॅल्क्युलेटर मिळवा](https://apps.apple.com/in/app/id6794178671)
+[App Store वरून CalDaily: कॅल्क्युलेटर मिळवा](https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_data_mr_in&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/caldaily.html)
 

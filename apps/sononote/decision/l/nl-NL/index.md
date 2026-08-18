@@ -18,7 +18,7 @@ Na een gesprek wil je geen ruwe transcriptie — je wilt de samenvatting, de act
 - Privé / op apparaat
 - App Store · Gratis
 
-[Download Sono Note in de App Store →](https://apps.apple.com/nl/app/id6782139553)
+[Download Sono Note in de App Store →](https://apps.apple.com/nl/app/id6782139553?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

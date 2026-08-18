@@ -18,7 +18,7 @@ Sau cuộc gọi bạn không muốn bản ghi thô — bạn muốn bản tóm 
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 
-[Tải Sono Note trên App Store →](https://apps.apple.com/vn/app/id6782139553)
+[Tải Sono Note trên App Store →](https://apps.apple.com/vn/app/id6782139553?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

@@ -18,7 +18,7 @@ Banyak orang berhenti belajar bahasa tepat di titik kartu hafalannya belum juga 
 - Offline
 - App Store · Gratis
 
-[Dapatkan Wordmate Lite 5 Kata Sehari di App Store](https://apps.apple.com/id/app/id6797601720)
+[Dapatkan Wordmate Lite 5 Kata Sehari di App Store](https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/wordmatelite.html)
 

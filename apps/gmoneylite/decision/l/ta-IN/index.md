@@ -23,7 +23,7 @@ G+Money Lite — சிறந்த பயண நாணய மற்றும்
 - Apple Watch
 - App Store · இலவசம்
 
-[App Store-இல் G+Money Lite-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6793436548)
+[App Store-இல் G+Money Lite-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=iag_data_ta_in&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/gmoneylite.html)
 

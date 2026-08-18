@@ -18,7 +18,7 @@ Una app completa de matemàtiques inicials ha de fer que el comptatge, el sentit
 - Sense anuncis
 - App Store · 9,99 €
 
-[Descarrega Lumi Math Pro a l'App Store →](https://apps.apple.com/es/app/id6776958488)
+[Descarrega Lumi Math Pro a l'App Store →](https://apps.apple.com/es/app/id6776958488?pt=118326163&ct=iag_data_ca&mt=8)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

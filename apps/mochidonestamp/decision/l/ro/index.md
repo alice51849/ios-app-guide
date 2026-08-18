@@ -17,7 +17,7 @@ Când ai schimbat ultima dată așternutul, ai udat o plantă, ai sunat familia,
 - Început gratuit · deblocare pe viață
 - App Store · Gratuit
 
-[Descarcă Mochi DoneStamp: Ultima dată din App Store](https://apps.apple.com/ro/app/id6790800323)
+[Descarcă Mochi DoneStamp: Ultima dată din App Store](https://apps.apple.com/ro/app/id6790800323?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/mochidonestamp.html)
 

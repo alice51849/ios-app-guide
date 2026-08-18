@@ -17,7 +17,7 @@ Apabila anda menukar bidang, masalah resume berbeza: pengalaman anda nyata tetap
 - Percuma untuk bermula · buka kunci kekal
 - App Store · Percuma
 
-[Dapatkan CV Desk di App Store →](https://apps.apple.com/my/app/id6781337213)
+[Dapatkan CV Desk di App Store →](https://apps.apple.com/my/app/id6781337213?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-resume-builder-app-for-career-changers-2026.html)
 

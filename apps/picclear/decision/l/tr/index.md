@@ -18,7 +18,7 @@ Hızlı alan açmak için en büyük kazançları hedefleyin: tam kopya fotoğra
 - Gizli / cihazda
 - App Store · Ücretsiz
 
-[PicClear'ı App Store'dan edinin →](https://apps.apple.com/tr/app/id6780223070)
+[PicClear'ı App Store'dan edinin →](https://apps.apple.com/tr/app/id6780223070?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

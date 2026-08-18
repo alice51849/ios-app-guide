@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [動画を見る](https://files.catbox.moe/5zbdo5.mp4)
 
-[App StoreでUnblurryを入手 →](https://apps.apple.com/jp/app/id6782275018)
+[App StoreでUnblurryを入手 →](https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=iag_video_ja&mt=8)
 
 [アプリガイドを開く](https://alice51849.github.io/ios-app-guide/ja/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

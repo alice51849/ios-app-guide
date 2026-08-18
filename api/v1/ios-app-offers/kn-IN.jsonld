@@ -6,13 +6,79 @@
   "name": "Lumi Studio ಪ್ರಕಾಶಕರ ಹುಡುಕಾಟ ಉದ್ದೇಶ ಕ್ಯಾಟಲಾಗ್",
   "description": "ಪ್ರತಿ ಆ್ಯಪ್ ಯಾರಿಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ, ಅವರು ಪೂರ್ಣಗೊಳಿಸಲು ಯತ್ನಿಸುತ್ತಿರುವ ಕಾರ್ಯ ಮತ್ತು ನೇರ App Store ಮಾರ್ಗದ ಮೊದಲ-ಪಕ್ಷ ಕ್ಯಾಟಲಾಗ್.",
   "inLanguage": "kn-IN",
-  "dateModified": "2026-08-17",
-  "numberOfItems": 40,
+  "dateModified": "2026-08-18",
+  "numberOfItems": 42,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
+      "url": "https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_kn_in&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-notesstudio100",
+        "url": "https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_kn_in&mt=8",
+        "name": "100 Notes Studio: Pen & Paper",
+        "description": "100 Notes Studio ಕೈಬರಹ, ಟೈಪಿಂಗ್, PDF ಅಧ್ಯಯನ ಮತ್ತು ವಿಷಯ ಸಂಘಟನೆಯನ್ನು ಖಾಸಗಿ ಕೆಲಸದ ಹರಿವಿನಲ್ಲಿ ಸೇರಿಸುತ್ತದೆ. ಪ್ರಮುಖ ಸಂಪಾದನಾ ಸಾಧನಗಳನ್ನು ಜಾಲ ಸಂಪರ್ಕವಿಲ್ಲದೆಯೂ",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6798813048",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6798813048"
+          },
+          "name": "100 Notes Studio: Pen & Paper",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_kn_in&mt=8",
+          "installUrl": "https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_kn_in&mt=8",
+          "downloadUrl": "https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_kn_in&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_kn_in&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/kn-IN/notesstudio100.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6798813048",
+          "inLanguage": "kn-IN",
+          "description": "100 Notes Studio ಕೈಬರಹ, ಟೈಪಿಂಗ್, PDF ಅಧ್ಯಯನ ಮತ್ತು ವಿಷಯ ಸಂಘಟನೆಯನ್ನು ಖಾಸಗಿ ಕೆಲಸದ ಹರಿವಿನಲ್ಲಿ ಸೇರಿಸುತ್ತದೆ. ಪ್ರಮುಖ ಸಂಪಾದನಾ ಸಾಧನಗಳನ್ನು ಜಾಲ ಸಂಪರ್ಕವಿಲ್ಲದೆಯೂ",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-notesstudio100"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "IN"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
       "url": "https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -78,7 +144,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 2,
+      "position": 3,
       "url": "https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -144,7 +210,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 3,
+      "position": 4,
       "url": "https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -210,7 +276,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 4,
+      "position": 5,
       "url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -276,7 +342,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 5,
+      "position": 6,
       "url": "https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -342,7 +408,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 6,
+      "position": 7,
       "url": "https://apps.apple.com/in/app/id6782251621?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -408,7 +474,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 7,
+      "position": 8,
       "url": "https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -474,7 +540,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 8,
+      "position": 9,
       "url": "https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -540,7 +606,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 9,
+      "position": 10,
       "url": "https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -606,7 +672,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 10,
+      "position": 11,
       "url": "https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -672,7 +738,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 11,
+      "position": 12,
       "url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -738,7 +804,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 12,
+      "position": 13,
       "url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -804,7 +870,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 13,
+      "position": 14,
       "url": "https://apps.apple.com/in/app/id6780107485?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -870,7 +936,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 14,
+      "position": 15,
       "url": "https://apps.apple.com/in/app/id6773017109?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -936,7 +1002,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 15,
+      "position": 16,
       "url": "https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -1002,7 +1068,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 16,
+      "position": 17,
       "url": "https://apps.apple.com/in/app/id6778748533?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -1068,7 +1134,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 17,
+      "position": 18,
       "url": "https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -1134,7 +1200,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 18,
+      "position": 19,
       "url": "https://apps.apple.com/in/app/id6778269699?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -1200,7 +1266,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 19,
+      "position": 20,
       "url": "https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -1266,7 +1332,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 21,
       "url": "https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -1332,7 +1398,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 22,
       "url": "https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -1398,7 +1464,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
+      "position": 23,
       "url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -1464,7 +1530,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
+      "position": 24,
       "url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -1530,7 +1596,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 25,
       "url": "https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -1596,7 +1662,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
+      "position": 26,
       "url": "https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -1662,7 +1728,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
+      "position": 27,
       "url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -1728,7 +1794,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 28,
       "url": "https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -1794,7 +1860,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 29,
       "url": "https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -1860,7 +1926,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 30,
       "url": "https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -1926,7 +1992,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 31,
       "url": "https://apps.apple.com/in/app/id6779977651?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -1992,7 +2058,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 32,
       "url": "https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -2058,7 +2124,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 33,
       "url": "https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -2124,7 +2190,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 34,
       "url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -2190,7 +2256,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 35,
       "url": "https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -2256,7 +2322,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 36,
       "url": "https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -2322,7 +2388,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 37,
       "url": "https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -2388,7 +2454,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 38,
       "url": "https://apps.apple.com/in/app/id6782275018?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -2454,7 +2520,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 39,
       "url": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -2520,7 +2586,73 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 40,
+      "url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=iag_data_kn_in&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-wifiaidlite",
+        "url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=iag_data_kn_in&mt=8",
+        "name": "WiFi Aid Lite",
+        "description": "ನಿಜವಾದ ಸಮಸ್ಯೆಯನ್ನು ಹುಡುಕಿ. ಪ್ರತಿ ಟೂಲ್ ಒಂದು ಬಾರಿ ಉಚಿತ ಸಂಪೂರ್ಣ ಬಳಕೆಯನ್ನು ಒಳಗೊಂಡಿದೆ. ಅಪರಿಮಿತ ಬಳಕೆಗೆ ಐಚ್ಛಿಕ ಒಂದು-ಬಾರಿಯ ಆಜೀವ ಅನ್‌ಲಾಕ್—ಚಂದಾದಾರಿಕೆ, ಜಾಹೀರಾತು",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6793414462",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6793414462"
+          },
+          "name": "WiFi Aid Lite",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=iag_data_kn_in&mt=8",
+          "installUrl": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=iag_data_kn_in&mt=8",
+          "downloadUrl": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=iag_data_kn_in&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=iag_data_kn_in&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/kn-IN/wifiaidlite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6793414462",
+          "inLanguage": "kn-IN",
+          "description": "ನಿಜವಾದ ಸಮಸ್ಯೆಯನ್ನು ಹುಡುಕಿ. ಪ್ರತಿ ಟೂಲ್ ಒಂದು ಬಾರಿ ಉಚಿತ ಸಂಪೂರ್ಣ ಬಳಕೆಯನ್ನು ಒಳಗೊಂಡಿದೆ. ಅಪರಿಮಿತ ಬಳಕೆಗೆ ಐಚ್ಛಿಕ ಒಂದು-ಬಾರಿಯ ಆಜೀವ ಅನ್‌ಲಾಕ್—ಚಂದಾದಾರಿಕೆ, ಜಾಹೀರಾತು",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-wifiaidlite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "IN"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 41,
       "url": "https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",
@@ -2586,7 +2718,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 42,
       "url": "https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=iag_data_kn_in&mt=8",
       "item": {
         "@type": "Offer",

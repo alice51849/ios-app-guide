@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - खाजगी / उपकरणावर
 - App Store · मोफत
 
-[App Store वरून Unblurry मिळवा →](https://apps.apple.com/in/app/id6782275018)
+[App Store वरून Unblurry मिळवा →](https://apps.apple.com/in/app/id6782275018?pt=118326163&ct=iag_data_mr_in&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

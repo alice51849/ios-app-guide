@@ -20,7 +20,7 @@ Eine gute Reiseplaner-App verwandelt eine chaotische Reise in eine klare Tagesü
 - Privat / auf dem Gerät
 - App Store · 6,99 €
 
-[TripBee Pro: Reiseplaner im App Store herunterladen →](https://apps.apple.com/de/app/id6787754435)
+[TripBee Pro: Reiseplaner im App Store herunterladen →](https://apps.apple.com/de/app/id6787754435?pt=118326163&ct=iag_data_de_de&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

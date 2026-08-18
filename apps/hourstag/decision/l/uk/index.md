@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Приватно / на пристрої
 - App Store · 5,99 USD
 
-[Завантажте HoursTag: Години до покупки з App Store](https://apps.apple.com/ua/app/id6754218117)
+[Завантажте HoursTag: Години до покупки з App Store](https://apps.apple.com/ua/app/id6754218117?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/hourstag.html)
 

@@ -23,7 +23,7 @@ G+Money Lite — ਸਮਾਰਟ ਯਾਤਰਾ ਮੁਦਰਾ ਅਤੇ ਖ�
 - Apple Watch
 - App Store · ਮੁਫ਼ਤ
 
-[App Store ਤੋਂ G+Money Lite ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6793436548)
+[App Store ਤੋਂ G+Money Lite ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=iag_data_pa_in&mt=8)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/gmoneylite.html)
 

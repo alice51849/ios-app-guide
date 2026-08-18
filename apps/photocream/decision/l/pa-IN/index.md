@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ
 - App Store · ਮੁਫ਼ਤ
 
-[PhotoCream App Store 'ਤੇ ਲਵੋ →](https://apps.apple.com/in/app/id6781808054)
+[PhotoCream App Store 'ਤੇ ਲਵੋ →](https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=iag_data_pa_in&mt=8)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

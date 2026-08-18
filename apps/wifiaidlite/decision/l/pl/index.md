@@ -18,7 +18,7 @@ Znajdź prawdziwy problem. Każde narzędzie obejmuje jedno bezpłatne pełne u�
 - Bez konta
 - App Store · Bezpłatnie
 
-[Pobierz WiFi Aid Lite z App Store](https://apps.apple.com/pl/app/id6793414462)
+[Pobierz WiFi Aid Lite z App Store](https://apps.apple.com/pl/app/id6793414462?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/wifiaidlite.html)
 

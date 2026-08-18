@@ -18,7 +18,7 @@ Para liberar espacio rápido, apunta primero a las mayores ganancias: fotos dupl
 - Privado / en el dispositivo
 - App Store · Gratis
 
-[Consigue PicClear en la App Store →](https://apps.apple.com/mx/app/id6780223070)
+[Consigue PicClear en la App Store →](https://apps.apple.com/mx/app/id6780223070?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

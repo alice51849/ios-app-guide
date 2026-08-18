@@ -18,7 +18,7 @@ Per a un nen petit, el factor decisiu són els anuncis i la recollida de dades �
 - Sense anuncis
 - App Store · Gratis
 
-[Descarrega Lumi Letters a l’App Store →](https://apps.apple.com/es/app/id6778748533)
+[Descarrega Lumi Letters a l’App Store →](https://apps.apple.com/es/app/id6778748533?pt=118326163&ct=iag_data_ca&mt=8)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

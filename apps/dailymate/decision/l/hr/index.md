@@ -18,7 +18,7 @@ Prije putovanja, kompletne fraze za stvarne situacije korisnije su od izoliranih
 - Apple Watch
 - App Store · 12,99 €
 
-[Preuzmite DailyMate u App Storeu →](https://apps.apple.com/hr/app/id6790418321)
+[Preuzmite DailyMate u App Storeu →](https://apps.apple.com/hr/app/id6790418321?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

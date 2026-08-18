@@ -23,7 +23,7 @@ G+Money Lite — ସମ୍ପ୍ରତି ଯାତ୍ରା ମୁଦ୍ରା 
 - Apple Watch
 - App Store · ମାଗଣା
 
-[App Store ରୁ G+Money Lite ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6793436548)
+[App Store ରୁ G+Money Lite ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=iag_data_or_in&mt=8)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/gmoneylite.html)
 

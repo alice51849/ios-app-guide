@@ -19,7 +19,7 @@ Vad kostar det egentligen? Inte i kronor – i timmar av ditt liv.
 - Privat / på enheten
 - App Store · 69,00 kr
 
-[Hämta HoursTag: Timmar att köpa i App Store](https://apps.apple.com/se/app/id6754218117)
+[Hämta HoursTag: Timmar att köpa i App Store](https://apps.apple.com/se/app/id6754218117?pt=118326163&ct=iag_data_sv&mt=8)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/hourstag.html)
 

@@ -20,7 +20,7 @@ En god rejseplanlægningsapp forvandler en rodet rejse til en klar dag-for-dag t
 - Privat / på enheden
 - App Store · 49,00 kr
 
-[Hent TripBee Pro: Rejseplanlægger i App Store →](https://apps.apple.com/dk/app/id6787754435)
+[Hent TripBee Pro: Rejseplanlægger i App Store →](https://apps.apple.com/dk/app/id6787754435?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

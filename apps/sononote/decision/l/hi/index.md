@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - निजी / डिवाइस पर
 - App Store · मुफ़्त
 
-[App Store से Sono Note प्राप्त करें →](https://apps.apple.com/in/app/id6782139553)
+[App Store से Sono Note प्राप्त करें →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=iag_data_hi&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

@@ -17,7 +17,7 @@ Si planeas un solo viaje próximo, una línea de tiempo tranquila para ese viaje
 - Gratis para empezar · desbloqueo permanente
 - App Store · Gratis
 
-[Consigue TripBee Lite en la App Store →](https://apps.apple.com/mx/app/id6791299610)
+[Consigue TripBee Lite en la App Store →](https://apps.apple.com/mx/app/id6791299610?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

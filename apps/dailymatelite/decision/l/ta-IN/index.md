@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்
 - App Store · இலவசம்
 
-[App Store-இல் DailyMate Lite-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6794725568)
+[App Store-இல் DailyMate Lite-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_data_ta_in&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/dailymatelite.html)
 

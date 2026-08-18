@@ -18,7 +18,7 @@ Los padres que viajan con niños pequeños necesitan actividades que conviertan 
 - Sin anuncios
 - App Store · Gratis
 
-[Consigue Lumi Trip Planet en App Store →](https://apps.apple.com/mx/app/id6787193643)
+[Consigue Lumi Trip Planet en App Store →](https://apps.apple.com/mx/app/id6787193643?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

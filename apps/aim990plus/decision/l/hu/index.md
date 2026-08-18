@@ -17,7 +17,7 @@ Az angoltudás mellett arra is szükség van, hogy az idő szorításában is po
 - Fizetős letöltés
 - App Store · HUF2,490.00
 
-[Töltse le a(z) Aim990 Plus appot az App Store-ból](https://apps.apple.com/hu/app/id6792483140)
+[Töltse le a(z) Aim990 Plus appot az App Store-ból](https://apps.apple.com/hu/app/id6792483140?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/aim990plus.html)
 

@@ -18,7 +18,7 @@ Za brzo oslobađanje prostora ciljajte na najveće dobitke prvo: točne duplikat
 - Privatno / na uređaju
 - App Store · Besplatno
 
-[Preuzmite PicClear u App Storeu →](https://apps.apple.com/hr/app/id6780223070)
+[Preuzmite PicClear u App Storeu →](https://apps.apple.com/hr/app/id6780223070?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

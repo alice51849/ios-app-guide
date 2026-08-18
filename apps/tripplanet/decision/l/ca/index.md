@@ -18,7 +18,7 @@ Els pares que viatgen amb infants petits necessiten activitats que converteixin 
 - Sense anuncis
 - App Store · Gratis
 
-[Descarrega Lumi Trip Planet a l'App Store →](https://apps.apple.com/es/app/id6787193643)
+[Descarrega Lumi Trip Planet a l'App Store →](https://apps.apple.com/es/app/id6787193643?pt=118326163&ct=iag_data_ca&mt=8)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

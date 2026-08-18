@@ -18,7 +18,7 @@ A teljes korai matematika alkalmazásnak a számolást, számérzéket és első
 - Nincs reklám
 - App Store · HUF3,990.00
 
-[Szerezd be a Lumi Math Pro-t az App Store-ban →](https://apps.apple.com/hu/app/id6776958488)
+[Szerezd be a Lumi Math Pro-t az App Store-ban →](https://apps.apple.com/hu/app/id6776958488?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

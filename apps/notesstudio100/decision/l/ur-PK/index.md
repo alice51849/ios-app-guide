@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - نجی / آلہ پر
 - App Store · مفت
 
-[App Store سے 100 Notes Studio: Pen & Paper حاصل کریں](https://apps.apple.com/pk/app/id6798813048)
+[App Store سے 100 Notes Studio: Pen & Paper حاصل کریں](https://apps.apple.com/pk/app/id6798813048?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/notesstudio100.html)
 

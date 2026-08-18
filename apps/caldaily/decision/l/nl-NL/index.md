@@ -18,7 +18,7 @@ Een rekenmachine die je houdt, omdat hij onthoudt waar elk getal over ging. De m
 - Widget
 - App Store · Gratis
 
-[Download CalDaily: rekenmachine+thema's in de App Store](https://apps.apple.com/nl/app/id6794178671)
+[Download CalDaily: rekenmachine+thema's in de App Store](https://apps.apple.com/nl/app/id6794178671?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/caldaily.html)
 

@@ -17,7 +17,7 @@ Allena la comprensione dell’inglese con sessioni che richiedono concentrazione
 - Scaricamento a pagamento
 - App Store · 6,99 €
 
-[Scarica Aim990 Plus sull'App Store](https://apps.apple.com/it/app/id6792483140)
+[Scarica Aim990 Plus sull'App Store](https://apps.apple.com/it/app/id6792483140?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/aim990plus.html)
 

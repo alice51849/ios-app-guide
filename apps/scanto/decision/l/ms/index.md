@@ -18,7 +18,7 @@ Jika anda mengimbas borang persetujuan pesakit, dokumen keluar atau rujukan, pen
 - Peribadi / pada peranti
 - App Store · Percuma
 
-[Dapatkan ScanTo Pro di App Store →](https://apps.apple.com/my/app/id6779977651)
+[Dapatkan ScanTo Pro di App Store →](https://apps.apple.com/my/app/id6779977651?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

@@ -18,7 +18,7 @@ Untuk foto paspor bayi, tidak boleh ada orang lain dalam foto dan latar belakang
 - Privat / di perangkat
 - App Store · Rp 99ribu
 
-[Dapatkan Snapport di App Store →](https://apps.apple.com/id/app/id6780575828)
+[Dapatkan Snapport di App Store →](https://apps.apple.com/id/app/id6780575828?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

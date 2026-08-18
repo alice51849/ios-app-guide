@@ -17,7 +17,7 @@ Găsește cauza cea mai probabilă prin teste independente de traseu, DNS, TCP, 
 - Descărcare plătită
 - App Store · 29,99 lei
 
-[Descarcă WiFi Aid din App Store](https://apps.apple.com/ro/app/id6790467886)
+[Descarcă WiFi Aid din App Store](https://apps.apple.com/ro/app/id6790467886?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/wifiaid.html)
 

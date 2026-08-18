@@ -17,7 +17,7 @@ Wanneer verschoonde je voor het laatst het bed, gaf je een plant water, belde je
 - Gratis te starten · levenslange ontgrendeling
 - App Store · Gratis
 
-[Download Mochi DoneStamp: Laatste keer in de App Store](https://apps.apple.com/nl/app/id6790800323)
+[Download Mochi DoneStamp: Laatste keer in de App Store](https://apps.apple.com/nl/app/id6790800323?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/mochidonestamp.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ￦19,000
 
-[App Store에서 DailyMate 받기 →](https://apps.apple.com/kr/app/id6790418321)
+[App Store에서 DailyMate 받기 →](https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=iag_data_ko&mt=8)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

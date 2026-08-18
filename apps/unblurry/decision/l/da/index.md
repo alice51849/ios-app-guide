@@ -18,7 +18,7 @@ Børn står aldrig stille, så bløde og rystede billeder er uundgåelige — Un
 - Privat / på enheden
 - App Store · Gratis
 
-[Hent Unblurry i App Store →](https://apps.apple.com/dk/app/id6782275018)
+[Hent Unblurry i App Store →](https://apps.apple.com/dk/app/id6782275018?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

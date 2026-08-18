@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक
 - App Store · मोफत
 
-[App Store वरून DailyMate Lite: आजच बोला मिळवा](https://apps.apple.com/in/app/id6794725568)
+[App Store वरून DailyMate Lite: आजच बोला मिळवा](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_data_mr_in&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/dailymatelite.html)
 

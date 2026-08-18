@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - کوئی اشتہار نہیں
 - App Store · مفت
 
-[App Store سے Lumi Bopomofo حاصل کریں →](https://apps.apple.com/pk/app/id6773017109)
+[App Store سے Lumi Bopomofo حاصل کریں →](https://apps.apple.com/pk/app/id6773017109?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

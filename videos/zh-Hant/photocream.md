@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [觀看影片](https://files.catbox.moe/sxlk6d.mp4)
 
-[在 App Store 取得 PhotoCream →](https://apps.apple.com/tw/app/id6781808054)
+[在 App Store 取得 PhotoCream →](https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=iag_video_zh_hant&mt=8)
 
 [開啟 App 指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

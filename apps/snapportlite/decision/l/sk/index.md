@@ -18,7 +18,7 @@ Snapport Lite - Vytvorte pasové, vízové a dokumentové fotografie s usmernen�
 - Offline
 - App Store · Zadarmo
 
-[Stiahnuť Snapport Lite v App Store](https://apps.apple.com/sk/app/id6792856304)
+[Stiahnuť Snapport Lite v App Store](https://apps.apple.com/sk/app/id6792856304?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/snapportlite.html)
 

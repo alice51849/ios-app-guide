@@ -18,7 +18,7 @@ For et barn, der først lærer Zhuyin, skal appen dække alle 37 symboler gennem
 - Ingen reklamer
 - App Store · Gratis
 
-[Hent Lumi Bopomofo i App Store →](https://apps.apple.com/dk/app/id6773017109)
+[Hent Lumi Bopomofo i App Store →](https://apps.apple.com/dk/app/id6773017109?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

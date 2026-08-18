@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免费开始使用 · 永久解锁
 - App Store · 免费
 
-[在App Store获取TripBee Lite →](https://apps.apple.com/cn/app/id6791299610)
+[在App Store获取TripBee Lite →](https://apps.apple.com/cn/app/id6791299610?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

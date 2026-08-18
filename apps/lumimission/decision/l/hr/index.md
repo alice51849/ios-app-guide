@@ -18,7 +18,7 @@ Za predškolca, večernja rutina najbolje funkcionira kada je kratka, vizualna i
 - Bez oglasa
 - App Store · Besplatno
 
-[Preuzmite Lumi Mission Planet na App Store →](https://apps.apple.com/hr/app/id6779750237)
+[Preuzmite Lumi Mission Planet na App Store →](https://apps.apple.com/hr/app/id6779750237?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

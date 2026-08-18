@@ -19,7 +19,7 @@ Na ceste potrebujete aplikáciu na rozpočet, ktorá funguje offline v krajine b
 - Bez účtu
 - App Store · 5,99 €
 
-[Získajte G+Money v App Store →](https://apps.apple.com/sk/app/id6755782939)
+[Získajte G+Money v App Store →](https://apps.apple.com/sk/app/id6755782939?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

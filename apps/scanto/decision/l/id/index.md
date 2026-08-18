@@ -18,7 +18,7 @@ Jika Anda memindai formulir persetujuan pasien, dokumen keluar rumah sakit, atau
 - Privat / di perangkat
 - App Store · Gratis
 
-[Dapatkan ScanTo Pro di App Store →](https://apps.apple.com/id/app/id6779977651)
+[Dapatkan ScanTo Pro di App Store →](https://apps.apple.com/id/app/id6779977651?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

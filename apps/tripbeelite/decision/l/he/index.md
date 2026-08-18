@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - התחלה ללא תשלום · פתיחה לכל החיים
 - App Store · בחינם
 
-[קבלו את TripBee Lite ב-App Store →](https://apps.apple.com/il/app/id6791299610)
+[קבלו את TripBee Lite ב-App Store →](https://apps.apple.com/il/app/id6791299610?pt=118326163&ct=iag_data_he&mt=8)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

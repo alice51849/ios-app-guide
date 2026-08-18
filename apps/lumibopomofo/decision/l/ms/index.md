@@ -18,7 +18,7 @@ Untuk kanak-kanak yang mula belajar Zhuyin, aplikasi harus merangkumi semua 37 s
 - Tiada iklan
 - App Store · Percuma
 
-[Dapatkan Lumi Bopomofo di App Store →](https://apps.apple.com/my/app/id6773017109)
+[Dapatkan Lumi Bopomofo di App Store →](https://apps.apple.com/my/app/id6773017109?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

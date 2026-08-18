@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Riêng tư / trên thiết bị
 - App Store · 199.000đ
 
-[Tải Snapport trên App Store →](https://apps.apple.com/vn/app/id6780575828)
+[Tải Snapport trên App Store →](https://apps.apple.com/vn/app/id6780575828?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

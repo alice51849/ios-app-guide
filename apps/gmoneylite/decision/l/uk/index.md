@@ -23,7 +23,7 @@ G+Money Lite — Розумний конвертер валют для подо�
 - Apple Watch
 - App Store · Безкоштовно
 
-[Завантажте G+Money Lite з App Store](https://apps.apple.com/ua/app/id6793436548)
+[Завантажте G+Money Lite з App Store](https://apps.apple.com/ua/app/id6793436548?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/gmoneylite.html)
 

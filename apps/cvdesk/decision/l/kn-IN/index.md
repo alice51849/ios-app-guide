@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್
 - App Store · ಉಚಿತ
 
-[App Store ನಲ್ಲಿ CV ಡೆಸ್ಕ್ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6781337213)
+[App Store ನಲ್ಲಿ CV ಡೆಸ್ಕ್ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=iag_data_kn_in&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-resume-builder-app-for-career-changers-2026.html)
 

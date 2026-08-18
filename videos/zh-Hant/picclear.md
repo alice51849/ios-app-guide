@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [觀看影片](https://files.catbox.moe/goh2d7.mp4)
 
-[在 App Store 取得 PicClear →](https://apps.apple.com/tw/app/id6780223070)
+[在 App Store 取得 PicClear →](https://apps.apple.com/tw/app/id6780223070?pt=118326163&ct=iag_video_zh_hant&mt=8)
 
 [開啟 App 指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

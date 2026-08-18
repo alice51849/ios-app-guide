@@ -18,7 +18,7 @@ Jeśli skanujesz formularze zgody pacjentów, dokumenty wypisu lub skierowania, 
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 
-[Pobierz ScanTo Pro z App Store →](https://apps.apple.com/pl/app/id6779977651)
+[Pobierz ScanTo Pro z App Store →](https://apps.apple.com/pl/app/id6779977651?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

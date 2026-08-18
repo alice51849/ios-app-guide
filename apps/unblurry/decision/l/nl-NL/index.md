@@ -18,7 +18,7 @@ Kinderen blijven nooit stilzitten, dus zachte focus en cameratrilling zijn onver
 - Privé / op apparaat
 - App Store · Gratis
 
-[Download Unblurry in de App Store →](https://apps.apple.com/nl/app/id6782275018)
+[Download Unblurry in de App Store →](https://apps.apple.com/nl/app/id6782275018?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

@@ -17,7 +17,7 @@ Resekreatörer behöver ett återkommande filmutseende som lägger till korn, ha
 - Gratis att börja · livstidsupplåsning
 - App Store · Gratis
 
-[Hämta PhotoCream på App Store →](https://apps.apple.com/se/app/id6781808054)
+[Hämta PhotoCream på App Store →](https://apps.apple.com/se/app/id6781808054?pt=118326163&ct=iag_data_sv&mt=8)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

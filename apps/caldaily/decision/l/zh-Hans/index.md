@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 小组件
 - App Store · 免费
 
-[在 App Store 获取 CalDaily 计算器与主题](https://apps.apple.com/cn/app/id6794178671)
+[在 App Store 获取 CalDaily 计算器与主题](https://apps.apple.com/cn/app/id6794178671?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/caldaily.html)
 

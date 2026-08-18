@@ -18,7 +18,7 @@ Nájdite skutočný problém. Každý nástroj zahŕňa jedno bezplatné plné p
 - Bez účtu
 - App Store · Zadarmo
 
-[Stiahnuť WiFi Aid Lite v App Store](https://apps.apple.com/sk/app/id6793414462)
+[Stiahnuť WiFi Aid Lite v App Store](https://apps.apple.com/sk/app/id6793414462?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/wifiaidlite.html)
 

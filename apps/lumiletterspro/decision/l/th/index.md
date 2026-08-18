@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ไม่มีโฆษณา
 - App Store · ฿299.00
 
-[ดาวน์โหลด Lumi Letters Pro ใน App Store →](https://apps.apple.com/th/app/id6778491147)
+[ดาวน์โหลด Lumi Letters Pro ใน App Store →](https://apps.apple.com/th/app/id6778491147?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

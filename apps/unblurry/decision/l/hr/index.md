@@ -18,7 +18,7 @@ Djeca se nikad ne drže mirno, pa su blago zamućene i podrhtale fotografije nei
 - Privatno / na uređaju
 - App Store · Besplatno
 
-[Preuzmite Unblurry u App Storeu →](https://apps.apple.com/hr/app/id6782275018)
+[Preuzmite Unblurry u App Storeu →](https://apps.apple.com/hr/app/id6782275018?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

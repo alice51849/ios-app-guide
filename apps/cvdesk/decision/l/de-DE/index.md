@@ -17,7 +17,7 @@ Beim Branchenwechsel ist das Lebenslaufproblem anders: Ihre Erfahrung ist echt, 
 - Kostenloser Einstieg · dauerhafte Freischaltung
 - App Store · Kostenlos
 
-[CV Desk im App Store herunterladen →](https://apps.apple.com/de/app/id6781337213)
+[CV Desk im App Store herunterladen →](https://apps.apple.com/de/app/id6781337213?pt=118326163&ct=iag_data_de_de&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-resume-builder-app-for-career-changers-2026.html)
 

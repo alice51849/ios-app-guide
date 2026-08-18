@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Χωρίς λογαριασμό
 - App Store · 5,99 €
 
-[Κατεβάστε το G+Money από το App Store →](https://apps.apple.com/gr/app/id6755782939)
+[Κατεβάστε το G+Money από το App Store →](https://apps.apple.com/gr/app/id6755782939?pt=118326163&ct=iag_data_el&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

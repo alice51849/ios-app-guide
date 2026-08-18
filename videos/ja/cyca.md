@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [動画を見る](https://files.catbox.moe/vew5n7.mp4)
 
-[App StoreでCycaを入手 →](https://apps.apple.com/jp/app/id6782251621)
+[App StoreでCycaを入手 →](https://apps.apple.com/jp/app/id6782251621?pt=118326163&ct=iag_video_ja&mt=8)
 
 [アプリガイドを開く](https://alice51849.github.io/ios-app-guide/ja/answers/best-period-tracker-app-no-account-required-iphone.html)
 

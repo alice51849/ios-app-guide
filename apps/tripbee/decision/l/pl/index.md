@@ -20,7 +20,7 @@ Dobra aplikacja do planowania zmienia chaotyczną podróż w jasny plan dzień p
 - Prywatne / na urządzeniu
 - App Store · 29,99 zł
 
-[Pobierz TripBee Pro: Planer podróży w App Store →](https://apps.apple.com/pl/app/id6787754435)
+[Pobierz TripBee Pro: Planer podróży w App Store →](https://apps.apple.com/pl/app/id6787754435?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

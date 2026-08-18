@@ -18,7 +18,7 @@ Rodiny pripravujúce sa na škôlku potrebujú kompletnú cestu raného čítani
 - Bez reklám
 - App Store · 9,99 €
 
-[Získajte Lumi Letters Pro v App Store →](https://apps.apple.com/sk/app/id6778491147)
+[Získajte Lumi Letters Pro v App Store →](https://apps.apple.com/sk/app/id6778491147?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

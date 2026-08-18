@@ -19,7 +19,7 @@ Tijdens examens is wilskracht niet het hulpmiddel — een harde getimede blokkad
 - Privé / op apparaat
 - App Store · Gratis
 
-[Download LockHour Pro in de App Store →](https://apps.apple.com/nl/app/id6780107485)
+[Download LockHour Pro in de App Store →](https://apps.apple.com/nl/app/id6780107485?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

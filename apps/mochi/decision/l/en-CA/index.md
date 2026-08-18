@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 If most to-do apps feel bloated, the right one is a clean checklist with reminders, repeat rules and a Watch complication — and deliberately no project-management machinery — Mochi is built for this.
 
 - Productivity
-- Free to start · one-time unlock
+- Free to start · lifetime unlock
 - No ads
 - App Store · Free
 
-[Get Mochi on the App Store →](https://apps.apple.com/ca/app/id6785004775)
+[Get Mochi on the App Store →](https://apps.apple.com/ca/app/id6785004775?pt=118326163&ct=iag_data_en_ca&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-CA/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

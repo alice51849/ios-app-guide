@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Gratis para empezar · desbloqueo permanente
 - App Store · Gratis
 
-[Consigue Mochi DoneStamp: Última vez en el App Store](https://apps.apple.com/mx/app/id6790800323)
+[Consigue Mochi DoneStamp: Última vez en el App Store](https://apps.apple.com/mx/app/id6790800323?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/mochidonestamp.html)
 

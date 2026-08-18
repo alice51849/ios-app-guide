@@ -18,7 +18,7 @@ Vrei să avansezi într-o limbă străină, dar seara trece iar și nu ai rețin
 - Offline
 - App Store · Gratuit
 
-[Descarcă Wordmate Lite: cuvinte zilnic din App Store](https://apps.apple.com/ro/app/id6797601720)
+[Descarcă Wordmate Lite: cuvinte zilnic din App Store](https://apps.apple.com/ro/app/id6797601720?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/wordmatelite.html)
 

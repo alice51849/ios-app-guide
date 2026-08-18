@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Izvan mreže
 - App Store · Besplatno
 
-[Preuzmite Wordmate Lite: vokabular u App Storeu](https://apps.apple.com/hr/app/id6797601720)
+[Preuzmite Wordmate Lite: vokabular u App Storeu](https://apps.apple.com/hr/app/id6797601720?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/wordmatelite.html)
 

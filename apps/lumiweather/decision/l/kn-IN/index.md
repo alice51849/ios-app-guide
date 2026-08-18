@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ಹಿಂಡಿಕೆ ಇಲ್ಲ
 - App Store · ಉಚಿತ
 
-[Lumi Weather ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6779552704)
+[Lumi Weather ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=iag_data_kn_in&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

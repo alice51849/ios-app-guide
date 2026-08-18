@@ -18,7 +18,7 @@ Viisi sanaa. Yksi minuutti. Polku, jonka todella näet. Useimmat sanastosovelluk
 - Offline
 - App Store · Ilmainen
 
-[Lataa Wordmate Lite: Sanasto App Storesta](https://apps.apple.com/fi/app/id6797601720)
+[Lataa Wordmate Lite: Sanasto App Storesta](https://apps.apple.com/fi/app/id6797601720?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/wordmatelite.html)
 

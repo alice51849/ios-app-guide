@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - గోప్యంగా / పరికరంలో
 - App Store · ఉచితం
 
-[App Storeలో Sono Note పొందండి →](https://apps.apple.com/in/app/id6782139553)
+[App Storeలో Sono Note పొందండి →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

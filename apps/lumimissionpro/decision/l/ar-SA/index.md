@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - بدون إعلانات
 - App Store · SAR 24.99
 
-[احصل على Lumi Mission Planet Pro من App Store →](https://apps.apple.com/sa/app/id6779745474)
+[احصل على Lumi Mission Planet Pro من App Store →](https://apps.apple.com/sa/app/id6779745474?pt=118326163&ct=iag_data_ar_sa&mt=8)
 
 [اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

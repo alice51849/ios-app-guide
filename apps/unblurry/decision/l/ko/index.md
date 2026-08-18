@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 아이들은 가만히 있지 않으므로 부드러운 초점과 흔들림은 피할 수 없습니다 — Unblurry는 이를 위해 만들어졌습니다.
 
 - 사진 & 유틸리티
-- 무료로 시작 · 한 번 구매 잠금 해제
+- 무료로 시작 · 평생 잠금 해제
 - 프라이빗 / 기기 내
 - App Store · 무료
 
-[App Store에서 Unblurry 받기 →](https://apps.apple.com/kr/app/id6782275018)
+[App Store에서 Unblurry 받기 →](https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=iag_data_ko&mt=8)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

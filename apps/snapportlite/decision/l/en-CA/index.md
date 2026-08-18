@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 Snapport Lite - Make passport, visa, and document photos with guided sizing, background tools, and print-ready export. Free version supports 1 export - One purchase · yours forever · no subscription - No ads, no tracking Templates - Passport, visa & ID photos — print-ready. - Snapport Lite works fully offline. Checking only downloads a public list of common sizes — no personal data is sent. Crop & Align - Align your face inside the guide. Requirements may vary, so review official rules before submitting. Background - Background removal may need review. Adjust - Keep your appearance natural for official documents. Export - Export a single photo or a print sheet. Privacy - Your photos stay on your iPhone. - No account - No cloud upload - Face detection runs on device to help align your photo. No biometric identity is stored. - You control export and sharing Photo requirements vary by country, agency, and application type. Please review the official requirements before submitting.
 
 - Photo & utility
-- Free to start · one-time unlock
+- Free to start · lifetime unlock
 - Offline
 - App Store · Free
 
-[Get Snapport Lite on the App Store](https://apps.apple.com/ca/app/id6792856304)
+[Get Snapport Lite on the App Store](https://apps.apple.com/ca/app/id6792856304?pt=118326163&ct=iag_data_en_ca&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-CA/snapportlite.html)
 

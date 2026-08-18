@@ -18,7 +18,7 @@ Egy számológép, amit tényleg tovább használsz, mert megjegyzi, mi állt az
 - Widget
 - App Store · Ingyenes
 
-[Töltse le a(z) CalDaily: számológép, témák appot az App Store-ból](https://apps.apple.com/hu/app/id6794178671)
+[Töltse le a(z) CalDaily: számológép, témák appot az App Store-ból](https://apps.apple.com/hu/app/id6794178671?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/caldaily.html)
 

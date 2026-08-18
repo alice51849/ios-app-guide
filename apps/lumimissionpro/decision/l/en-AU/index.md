@@ -18,7 +18,7 @@ Tooth brushing and bedtime often fail at the same moment every night: the child 
 - No ads
 - App Store · $9.99
 
-[Get Lumi Mission Planet Pro on the App Store →](https://apps.apple.com/au/app/id6779745474)
+[Get Lumi Mission Planet Pro on the App Store →](https://apps.apple.com/au/app/id6779745474?pt=118326163&ct=iag_data_en_au&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-AU/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

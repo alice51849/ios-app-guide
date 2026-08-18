@@ -22,7 +22,7 @@ Upptagna pendlare behöver vokabulärträning som passar in i lediga minuter uta
 - Apple Watch
 - App Store · 119,00 kr
 
-[Hämta Wordmate: Learn 44 Languages på App Store →](https://apps.apple.com/se/app/id6789917808)
+[Hämta Wordmate: Learn 44 Languages på App Store →](https://apps.apple.com/se/app/id6789917808?pt=118326163&ct=iag_data_sv&mt=8)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 無料で開始・買い切りで永久解除
 - App Store · 無料
 
-[App StoreでAim990を入手 →](https://apps.apple.com/jp/app/id6784974530)
+[App StoreでAim990を入手 →](https://apps.apple.com/jp/app/id6784974530?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

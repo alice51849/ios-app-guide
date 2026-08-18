@@ -18,7 +18,7 @@ Sikat gigi dan waktu tidur sering gagal di saat yang sama setiap malam: anak lel
 - Tanpa iklan
 - App Store · Rp 99ribu
 
-[Dapatkan Lumi Mission Planet Pro di App Store →](https://apps.apple.com/id/app/id6779745474)
+[Dapatkan Lumi Mission Planet Pro di App Store →](https://apps.apple.com/id/app/id6779745474?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

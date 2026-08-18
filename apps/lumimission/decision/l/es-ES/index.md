@@ -18,7 +18,7 @@ Para infantil, una rutina para dormir funciona mejor cuando es corta, visual y l
 - Sin anuncios
 - App Store · Gratis
 
-[Consigue Lumi Mission Planet en el App Store →](https://apps.apple.com/es/app/id6779750237)
+[Consigue Lumi Mission Planet en el App Store →](https://apps.apple.com/es/app/id6779750237?pt=118326163&ct=iag_data_es_es&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-ES/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

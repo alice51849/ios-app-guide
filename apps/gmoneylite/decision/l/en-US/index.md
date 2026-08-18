@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 G+Money Lite — Smart travel currency & expense tracker Travel money, made simple Log each purchase in the local currency and see it instantly in your home currency — online or off. Convert • Live or manual rates: We can fetch the latest rates automatically, or you can set them yourself. It always works offline. • Fetch the latest rates when you open the app (about every 6 hours). Always works offline with your saved rates. • Mid-market reference rate. Cards and cash may differ. Spending • Daily limit: Optional. See how each day tracks against it. • By category · Trips · Filters · Records • Backup & restore: Includes expenses, rates, categories and settings. • Widget · Apple Watch Everything stays on your device. No account, no tracking. Rates use a public exchange-rate service. Free: rates, budget, summary · 1 trip · 3 expenses One payment · Lifetime access · No subscription Unlock unlimited expenses and trips forever.
 
 - Money & travel
-- Free to start · one-time unlock
+- Free to start · lifetime unlock
 - Offline
 - No account
 - No tracking
@@ -23,7 +23,7 @@ G+Money Lite — Smart travel currency & expense tracker Travel money, made simp
 - Apple Watch
 - App Store · Free
 
-[Get G+Money Lite on the App Store](https://apps.apple.com/us/app/id6793436548)
+[Get G+Money Lite on the App Store](https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=iag_data_en_us&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-US/gmoneylite.html)
 

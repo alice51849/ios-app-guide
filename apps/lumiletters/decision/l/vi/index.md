@@ -18,7 +18,7 @@ Với trẻ nhỏ, điều quan trọng là không quảng cáo và không thu t
 - Không quảng cáo
 - App Store · Miễn phí
 
-[Tải Lumi Letters trên App Store →](https://apps.apple.com/vn/app/id6778748533)
+[Tải Lumi Letters trên App Store →](https://apps.apple.com/vn/app/id6778748533?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

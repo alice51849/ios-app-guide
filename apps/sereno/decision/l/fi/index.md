@@ -19,7 +19,7 @@ Unen kannalta kuukausittainen tilaus, joka ärsyttää, on kaikkea muuta kuin re
 - Ei mainoksia
 - App Store · Ilmainen
 
-[Hanki Sereno App Storesta →](https://apps.apple.com/fi/app/id6788236641)
+[Hanki Sereno App Storesta →](https://apps.apple.com/fi/app/id6788236641?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

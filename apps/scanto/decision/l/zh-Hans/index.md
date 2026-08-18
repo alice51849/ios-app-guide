@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 私密 / 设备本地
 - App Store · 免费
 
-[在 App Store 获取 ScanTo Pro →](https://apps.apple.com/cn/app/id6779977651)
+[在 App Store 获取 ScanTo Pro →](https://apps.apple.com/cn/app/id6779977651?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

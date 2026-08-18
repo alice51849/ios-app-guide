@@ -18,7 +18,7 @@ Das echte Problem. Jedes Tool bietet eine kostenlose vollständige Nutzung. Opti
 - Kein Konto
 - App Store · Kostenlos
 
-[WiFi Aid Lite im App Store laden](https://apps.apple.com/de/app/id6793414462)
+[WiFi Aid Lite im App Store laden](https://apps.apple.com/de/app/id6793414462?pt=118326163&ct=iag_data_de_de&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/wifiaidlite.html)
 

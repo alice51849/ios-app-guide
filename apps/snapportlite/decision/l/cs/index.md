@@ -18,7 +18,7 @@ Snapport Lite - Vytvářejte pasové, vízové a dokumentové fotografie s veden
 - Offline
 - App Store · Zdarma
 
-[Stáhněte si Snapport Lite v App Storu](https://apps.apple.com/cz/app/id6792856304)
+[Stáhněte si Snapport Lite v App Storu](https://apps.apple.com/cz/app/id6792856304?pt=118326163&ct=iag_data_cs&mt=8)
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/snapportlite.html)
 

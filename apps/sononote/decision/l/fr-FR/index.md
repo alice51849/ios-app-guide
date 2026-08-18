@@ -18,7 +18,7 @@ Après un appel, vous ne voulez pas une transcription brute — vous voulez le r
 - Privé / sur l’appareil
 - App Store · Gratuit
 
-[Téléchargez Sono Note sur l’App Store →](https://apps.apple.com/fr/app/id6782139553)
+[Téléchargez Sono Note sur l’App Store →](https://apps.apple.com/fr/app/id6782139553?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

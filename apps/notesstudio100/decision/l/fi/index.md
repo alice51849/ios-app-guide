@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Yksityinen / laitteella
 - App Store · Ilmainen
 
-[Lataa 100 Notes Studio: Pen & Paper App Storesta](https://apps.apple.com/fi/app/id6798813048)
+[Lataa 100 Notes Studio: Pen & Paper App Storesta](https://apps.apple.com/fi/app/id6798813048?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/notesstudio100.html)
 

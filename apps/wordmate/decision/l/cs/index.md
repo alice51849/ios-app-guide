@@ -22,7 +22,7 @@ Vytížení cestující potřebují procvičování slovní zásoby, které se v
 - Apple Watch
 - App Store · 249,00 Kč
 
-[Stáhněte si Wordmate: Learn 44 Languages v App Store →](https://apps.apple.com/cz/app/id6789917808)
+[Stáhněte si Wordmate: Learn 44 Languages v App Store →](https://apps.apple.com/cz/app/id6789917808?pt=118326163&ct=iag_data_cs&mt=8)
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

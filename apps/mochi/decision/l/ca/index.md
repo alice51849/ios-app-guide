@@ -18,7 +18,7 @@ Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista
 - Sense anuncis
 - App Store · Gratis
 
-[Descarrega Mochi a l’App Store →](https://apps.apple.com/es/app/id6785004775)
+[Descarrega Mochi a l’App Store →](https://apps.apple.com/es/app/id6785004775?pt=118326163&ct=iag_data_ca&mt=8)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

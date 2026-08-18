@@ -18,7 +18,7 @@ For a baby's passport photo, no one else can be in the shot and the background m
 - Private / on-device
 - App Store · $5.99
 
-[Get Snapport on the App Store →](https://apps.apple.com/us/app/id6780575828)
+[Get Snapport on the App Store →](https://apps.apple.com/us/app/id6780575828?pt=118326163&ct=iag_data_en_us&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-US/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

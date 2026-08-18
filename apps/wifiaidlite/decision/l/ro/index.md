@@ -18,7 +18,7 @@ Găsește problema reală. Fiecare instrument include o utilizare completă grat
 - Fără cont
 - App Store · Gratuit
 
-[Descarcă WiFi Aid Lite din App Store](https://apps.apple.com/ro/app/id6793414462)
+[Descarcă WiFi Aid Lite din App Store](https://apps.apple.com/ro/app/id6793414462?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/wifiaidlite.html)
 

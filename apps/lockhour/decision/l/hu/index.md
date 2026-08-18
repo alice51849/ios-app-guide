@@ -19,7 +19,7 @@ Vizsgák alatt az akaraterő nem elég — kemény, időzített blokkolás kell 
 - Privát / eszközön tárolt
 - App Store · Ingyenes
 
-[Szerezze be a LockHour Pro-t az App Store-ból →](https://apps.apple.com/hu/app/id6780107485)
+[Szerezze be a LockHour Pro-t az App Store-ból →](https://apps.apple.com/hu/app/id6780107485?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

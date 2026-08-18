@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Платне завантаження
 - App Store · 6,99 USD
 
-[Завантажте WiFi Aid з App Store](https://apps.apple.com/ua/app/id6790467886)
+[Завантажте WiFi Aid з App Store](https://apps.apple.com/ua/app/id6790467886?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/wifiaid.html)
 

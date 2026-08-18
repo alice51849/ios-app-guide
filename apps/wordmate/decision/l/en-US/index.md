@@ -22,7 +22,7 @@ Busy commuters need vocabulary practice that fits into spare minutes without req
 - Apple Watch
 - App Store · $8.99
 
-[Get Wordmate: Learn 44 Languages on the App Store →](https://apps.apple.com/us/app/id6789917808)
+[Get Wordmate: Learn 44 Languages on the App Store →](https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=iag_data_en_us&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-US/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

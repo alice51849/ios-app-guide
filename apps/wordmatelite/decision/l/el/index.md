@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Εκτός σύνδεσης
 - App Store · Δωρεάν
 
-[Αποκτήστε το Wordmate Lite: λεξιλόγιο από το App Store](https://apps.apple.com/gr/app/id6797601720)
+[Αποκτήστε το Wordmate Lite: λεξιλόγιο από το App Store](https://apps.apple.com/gr/app/id6797601720?pt=118326163&ct=iag_data_el&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/wordmatelite.html)
 

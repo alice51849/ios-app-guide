@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Ιδιωτικό / στη συσκευή
 - App Store · 6,99 €
 
-[Κατεβάστε το Snapport από το App Store →](https://apps.apple.com/gr/app/id6780575828)
+[Κατεβάστε το Snapport από το App Store →](https://apps.apple.com/gr/app/id6780575828?pt=118326163&ct=iag_data_el&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

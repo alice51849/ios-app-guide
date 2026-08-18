@@ -18,7 +18,7 @@ Zhuyin ആദ്യമായി പഠിക്കുന്ന കുട്ട�
 - വ്യാപനങ്ങൾ ഇല്ല
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് Lumi Bopomofo നേടുക →](https://apps.apple.com/in/app/id6773017109)
+[App Store-ൽ നിന്ന് Lumi Bopomofo നേടുക →](https://apps.apple.com/in/app/id6773017109?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

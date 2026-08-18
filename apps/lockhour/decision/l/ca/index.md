@@ -19,7 +19,7 @@ Durant els exàmens, la força de voluntat no és l’eina — un bloqueig ferm 
 - Privat / en el dispositiu
 - App Store · Gratis
 
-[Descarrega LockHour Pro a l’App Store →](https://apps.apple.com/es/app/id6780107485)
+[Descarrega LockHour Pro a l’App Store →](https://apps.apple.com/es/app/id6780107485?pt=118326163&ct=iag_data_ca&mt=8)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

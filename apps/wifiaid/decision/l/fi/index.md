@@ -17,7 +17,7 @@ Löydä todennäköisin syy riippumattomilla reitti-, DNS-, TCP-, TLS-, ajoitus-
 - Maksullinen lataus
 - App Store · 6,99 €
 
-[Lataa WiFi Aid App Storesta](https://apps.apple.com/fi/app/id6790467886)
+[Lataa WiFi Aid App Storesta](https://apps.apple.com/fi/app/id6790467886?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/wifiaid.html)
 

@@ -17,7 +17,7 @@ Odkrijte najverjetnejši vzrok težave z neodvisnimi preverjanji DNS, TCP, TLS, 
 - Plačljiv prenos
 - App Store · 6,99 €
 
-[Prenesite WiFi Aid iz trgovine App Store](https://apps.apple.com/si/app/id6790467886)
+[Prenesite WiFi Aid iz trgovine App Store](https://apps.apple.com/si/app/id6790467886?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/wifiaid.html)
 

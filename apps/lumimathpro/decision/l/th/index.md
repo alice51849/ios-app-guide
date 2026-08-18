@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ไม่มีโฆษณา
 - App Store · ฿299.00
 
-[ดาวน์โหลด Lumi Math Pro ใน App Store →](https://apps.apple.com/th/app/id6776958488)
+[ดาวน์โหลด Lumi Math Pro ใน App Store →](https://apps.apple.com/th/app/id6776958488?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

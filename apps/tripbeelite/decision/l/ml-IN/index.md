@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് ട്രിപ്പ്‌ബി ലൈറ്റ് നേടുക →](https://apps.apple.com/in/app/id6791299610)
+[App Store-ൽ നിന്ന് ട്രിപ്പ്‌ബി ലൈറ്റ് നേടുക →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

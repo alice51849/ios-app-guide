@@ -19,7 +19,7 @@ If saving feels abstract, tracking goals in hours-worked instead of dollars make
 - プライベート／端末内
 - App Store · ¥800
 
-[App StoreでHoursTagを入手 →](https://apps.apple.com/jp/app/id6754218117)
+[App StoreでHoursTagを入手 →](https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-app-to-track-where-my-money-goes-and-save-more.html)
 

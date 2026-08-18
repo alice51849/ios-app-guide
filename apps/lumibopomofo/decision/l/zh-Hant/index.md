@@ -14,12 +14,12 @@ publisher: "Lumi Studio"
 對於初學注音的孩子，應用程式應涵蓋全部 37 個符號，透過描紅和遊戲學習 — 專為 4–7 歲初學階段設計，無廣告且不蒐集資料 — Lumi Bopomofo 專為此打造。
 
 - 兒童與學習
-- 免費開始 · 一次購買解鎖
+- 免費開始 · 永久解鎖
 - 無廣告
 - App Store · 免費
 - ★ 4.6/5 · 5
 
-[在 App Store 取得 Lumi Bopomofo →](https://apps.apple.com/tw/app/id6773017109)
+[在 App Store 取得 Lumi Bopomofo →](https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

@@ -18,7 +18,7 @@ Para uma criança a aprender Zhuyin pela primeira vez, o app deve cobrir os 37 s
 - Sem anúncios
 - App Store · Grátis
 
-[Obtenha o Lumi Bopomofo na App Store →](https://apps.apple.com/pt/app/id6773017109)
+[Obtenha o Lumi Bopomofo na App Store →](https://apps.apple.com/pt/app/id6773017109?pt=118326163&ct=iag_data_pt_pt&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 轉換領域時，履歷問題不同：經驗真實但紙本看似「不相關」，ATS 過濾器會在人工審閱前拒絕你 — CV Desk 專為此設計。
 
 - 效率工具
-- 免費開始 · 一次購買解鎖
+- 免費開始 · 永久解鎖
 - App Store · 免費
 - ★ 5.0/5 · 2
 
-[在 App Store 取得 CV Desk →](https://apps.apple.com/tw/app/id6781337213)
+[在 App Store 取得 CV Desk →](https://apps.apple.com/tw/app/id6781337213?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-resume-builder-app-for-career-changers-2026.html)
 

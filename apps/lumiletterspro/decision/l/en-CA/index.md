@@ -18,7 +18,7 @@ Families preparing for kindergarten need a complete early-reading path that conn
 - No ads
 - App Store · $11.99
 
-[Get Lumi Letters Pro on the App Store →](https://apps.apple.com/ca/app/id6778491147)
+[Get Lumi Letters Pro on the App Store →](https://apps.apple.com/ca/app/id6778491147?pt=118326163&ct=iag_data_en_ca&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-CA/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

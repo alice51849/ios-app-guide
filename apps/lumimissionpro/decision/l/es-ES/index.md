@@ -18,7 +18,7 @@ El cepillado de dientes y la hora de dormir suelen fallar en el mismo momento ca
 - Sin anuncios
 - App Store · 6,99 €
 
-[Consigue Lumi Mission Planet Pro en App Store →](https://apps.apple.com/es/app/id6779745474)
+[Consigue Lumi Mission Planet Pro en App Store →](https://apps.apple.com/es/app/id6779745474?pt=118326163&ct=iag_data_es_es&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-ES/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

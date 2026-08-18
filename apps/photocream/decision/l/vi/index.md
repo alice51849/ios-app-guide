@@ -17,7 +17,7 @@ Nhà sáng tạo du lịch cần hiệu ứng phim lặp lại, thêm hạt ản
 - Bắt đầu miễn phí · mở khóa vĩnh viễn
 - App Store · Miễn phí
 
-[Tải PhotoCream trên App Store →](https://apps.apple.com/vn/app/id6781808054)
+[Tải PhotoCream trên App Store →](https://apps.apple.com/vn/app/id6781808054?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

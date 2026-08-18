@@ -17,7 +17,7 @@ Rozumieť angličtine je jedna vec. Zachovať si presnosť, keď ubiehajú minú
 - Platené stiahnutie
 - App Store · 6,99 €
 
-[Stiahnuť Aim990 Plus v App Store](https://apps.apple.com/sk/app/id6792483140)
+[Stiahnuť Aim990 Plus v App Store](https://apps.apple.com/sk/app/id6792483140?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/aim990plus.html)
 

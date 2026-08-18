@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 隱私優先／裝置端
 - App Store · $190.00
 
-[在 App Store 取得 Snapport →](https://apps.apple.com/tw/app/id6780575828)
+[在 App Store 取得 Snapport →](https://apps.apple.com/tw/app/id6780575828?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

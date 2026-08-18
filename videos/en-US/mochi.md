@@ -16,7 +16,7 @@ If most to-do apps feel bloated, the right one is a clean checklist with reminde
 
 [Watch video](https://alice51849.github.io/ios-app-guide/media/app-videos/mochi-en-us.mp4)
 
-[Get Mochi on the App Store →](https://apps.apple.com/us/app/id6785004775)
+[Get Mochi on the App Store →](https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=iag_video_en_us&mt=8)
 
 [Open the app guide](https://alice51849.github.io/ios-app-guide/en-US/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

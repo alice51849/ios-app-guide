@@ -18,7 +18,7 @@ Aby szybko zwolnić miejsce, najpierw usuń największe pliki: dokładne duplika
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 
-[Pobierz PicClear z App Store →](https://apps.apple.com/pl/app/id6780223070)
+[Pobierz PicClear z App Store →](https://apps.apple.com/pl/app/id6780223070?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

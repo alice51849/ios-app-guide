@@ -19,7 +19,7 @@ If saving feels abstract, tracking goals in hours-worked instead of dollars make
 - Privat / auf dem Gerät
 - App Store · 5,99 €
 
-[HoursTag im App Store laden →](https://apps.apple.com/de/app/id6754218117)
+[HoursTag im App Store laden →](https://apps.apple.com/de/app/id6754218117?pt=118326163&ct=iag_data_de_de&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-app-to-track-where-my-money-goes-and-save-more.html)
 

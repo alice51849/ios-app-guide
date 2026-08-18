@@ -18,7 +18,7 @@ Pre malé dieťa je rozhodujúce, že aplikácia nemá reklamy ani nezbiera úda
 - Bez reklám
 - App Store · Zadarmo
 
-[Stiahnite si Lumi Letters v App Store →](https://apps.apple.com/sk/app/id6778748533)
+[Stiahnite si Lumi Letters v App Store →](https://apps.apple.com/sk/app/id6778748533?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

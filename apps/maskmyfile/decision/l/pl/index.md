@@ -18,7 +18,7 @@ Udostępniaj bezpiecznie, nie tracąc potrzebnego kontekstu. Mask My File znajdu
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 
-[Pobierz Mask My File z App Store](https://apps.apple.com/pl/app/id6792850916)
+[Pobierz Mask My File z App Store](https://apps.apple.com/pl/app/id6792850916?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/maskmyfile.html)
 

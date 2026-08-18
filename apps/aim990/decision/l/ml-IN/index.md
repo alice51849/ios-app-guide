@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്
 - App Store · സൗജന്യം
 
-[App Store-ൽ Aim990 നേടുക →](https://apps.apple.com/in/app/id6784974530)
+[App Store-ൽ Aim990 നേടുക →](https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

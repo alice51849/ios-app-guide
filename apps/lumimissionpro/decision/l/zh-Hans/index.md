@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 无广告
 - App Store · ¥38.00
 
-[在App Store获取Lumi Mission Planet Pro →](https://apps.apple.com/cn/app/id6779745474)
+[在App Store获取Lumi Mission Planet Pro →](https://apps.apple.com/cn/app/id6779745474?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

@@ -19,7 +19,7 @@ Vanhemmat tarvitsevat ulkoilun suunnitteluun enemmän kuin lämpötilan: he tarv
 - Ei seurantaa
 - App Store · Ilmainen
 
-[Hanki Lumi Weather App Storesta →](https://apps.apple.com/fi/app/id6779552704)
+[Hanki Lumi Weather App Storesta →](https://apps.apple.com/fi/app/id6779552704?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

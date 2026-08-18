@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ખાનગી / ઉપકરણ પર
 - App Store · મફત
 
-[App Store પર LockHour Pro મેળવો →](https://apps.apple.com/in/app/id6780107485)
+[App Store પર LockHour Pro મેળવો →](https://apps.apple.com/in/app/id6780107485?pt=118326163&ct=iag_data_gu_in&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

@@ -23,7 +23,7 @@ publisher: "Lumi Studio"
 - App Store · $290.00
 - ★ 5.0/5 · 1
 
-[在 App Store 取得 Wordmate：學習 44 種語言 →](https://apps.apple.com/tw/app/id6789917808)
+[在 App Store 取得 Wordmate：學習 44 種語言 →](https://apps.apple.com/tw/app/id6789917808?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

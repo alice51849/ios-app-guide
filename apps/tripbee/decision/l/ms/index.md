@@ -20,7 +20,7 @@ Aplikasi jadual perjalanan yang baik mengubah perjalanan yang berselerak menjadi
 - Peribadi / pada peranti
 - App Store · RM29.90
 
-[Dapatkan TripBee Pro: Perancang Perjalanan di App Store →](https://apps.apple.com/my/app/id6787754435)
+[Dapatkan TripBee Pro: Perancang Perjalanan di App Store →](https://apps.apple.com/my/app/id6787754435?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

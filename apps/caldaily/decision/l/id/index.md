@@ -18,7 +18,7 @@ Kalkulator yang benar-benar akan terus Anda pakai, karena ia mengingat apa yang 
 - Widget
 - App Store · Gratis
 
-[Dapatkan CalDaily: kalkulator & tema di App Store](https://apps.apple.com/id/app/id6794178671)
+[Dapatkan CalDaily: kalkulator & tema di App Store](https://apps.apple.com/id/app/id6794178671?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/caldaily.html)
 

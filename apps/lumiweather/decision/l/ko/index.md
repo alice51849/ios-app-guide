@@ -14,12 +14,12 @@ publisher: "Lumi Studio"
 야외 시간을 계획하는 부모는 온도만으로는 부족합니다: 아이에게 적합한 조건인지, 어떤 옷이 필요한지 빠르고 연령별로 확인해야 합니다 — Lumi Weather는 바로 이런 용도로 만들어졌습니다.
 
 - 어린이 & 학습
-- 무료로 시작 · 한 번 구매 잠금 해제
+- 무료로 시작 · 평생 잠금 해제
 - 광고 없음
 - 추적 없음
 - App Store · 무료
 
-[App Store에서 Lumi Weather 받기 →](https://apps.apple.com/kr/app/id6779552704)
+[App Store에서 Lumi Weather 받기 →](https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=iag_data_ko&mt=8)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

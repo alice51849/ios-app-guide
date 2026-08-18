@@ -19,7 +19,7 @@ Pour le sommeil, un abonnement qui vous harcèle chaque mois est l’opposé du 
 - Sans publicité
 - App Store · Gratuit
 
-[Téléchargez Sereno sur l’App Store →](https://apps.apple.com/fr/app/id6788236641)
+[Téléchargez Sereno sur l’App Store →](https://apps.apple.com/fr/app/id6788236641?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

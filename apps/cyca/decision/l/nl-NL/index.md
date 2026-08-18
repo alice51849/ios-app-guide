@@ -18,7 +18,7 @@ In een categorie waar gegevensgevoeligheid centraal staat, houdt de juiste menst
 - Privé / op apparaat
 - App Store · Gratis
 
-[Download Cyca in de App Store →](https://apps.apple.com/nl/app/id6782251621)
+[Download Cyca in de App Store →](https://apps.apple.com/nl/app/id6782251621?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-period-tracker-app-no-account-required-iphone.html)
 

@@ -18,7 +18,7 @@ Cinco palabras, un minuto, un paso visible en tu camino. Wordmate Lite convierte
 - Sin conexión
 - App Store · Gratis
 
-[Consigue Wordmate Lite: vocabulario en el App Store](https://apps.apple.com/es/app/id6797601720)
+[Consigue Wordmate Lite: vocabulario en el App Store](https://apps.apple.com/es/app/id6797601720?pt=118326163&ct=iag_data_es_es&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-ES/wordmatelite.html)
 

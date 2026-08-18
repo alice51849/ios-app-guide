@@ -17,7 +17,7 @@ Znajdź najbardziej prawdopodobną przyczynę dzięki niezależnym testom tras, 
 - Płatne do pobrania
 - App Store · 29,99 zł
 
-[Pobierz WiFi Aid z App Store](https://apps.apple.com/pl/app/id6790467886)
+[Pobierz WiFi Aid z App Store](https://apps.apple.com/pl/app/id6790467886?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/wifiaid.html)
 

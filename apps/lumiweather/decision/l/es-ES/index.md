@@ -19,7 +19,7 @@ Los padres que planifican actividades al aire libre necesitan más que una tempe
 - Sin seguimiento
 - App Store · Gratis
 
-[Consigue Lumi Weather en App Store →](https://apps.apple.com/es/app/id6779552704)
+[Consigue Lumi Weather en App Store →](https://apps.apple.com/es/app/id6779552704?pt=118326163&ct=iag_data_es_es&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-ES/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

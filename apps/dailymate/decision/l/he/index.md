@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ₪39.90
 
-[הורידו את DailyMate מה-App Store →](https://apps.apple.com/il/app/id6790418321)
+[הורידו את DailyMate מה-App Store →](https://apps.apple.com/il/app/id6790418321?pt=118326163&ct=iag_data_he&mt=8)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

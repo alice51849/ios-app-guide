@@ -17,7 +17,7 @@ Aim990 Plus ವಯಸ್ಕರು ತಮ್ಮ ಇಂಗ್ಲಿಷ್ ಕೇ�
 - ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್
 - App Store · ₹ 599
 
-[App Store ನಲ್ಲಿ Aim990 Plus ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6792483140)
+[App Store ನಲ್ಲಿ Aim990 Plus ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_kn_in&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/aim990plus.html)
 

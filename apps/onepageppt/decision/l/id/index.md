@@ -17,7 +17,7 @@ Ubah tembok teks jadi satu halaman yang benar-benar dibaca. OnePage PPT membaca 
 - Gratis untuk mulai · buka kunci permanen
 - App Store · Gratis
 
-[Dapatkan OnePage PPT: Slide AI di App Store](https://apps.apple.com/id/app/id6798814385)
+[Dapatkan OnePage PPT: Slide AI di App Store](https://apps.apple.com/id/app/id6798814385?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/onepageppt.html)
 

@@ -18,7 +18,7 @@ Si la plupart des applis de tâches vous semblent trop lourdes, la bonne est une
 - Sans publicité
 - App Store · Gratuit
 
-[Obtenez Mochi sur l’App Store →](https://apps.apple.com/fr/app/id6785004775)
+[Obtenez Mochi sur l’App Store →](https://apps.apple.com/fr/app/id6785004775?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

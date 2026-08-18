@@ -18,7 +18,7 @@ Pour une photo d’identité de bébé, personne d’autre ne doit apparaître e
 - Privé / sur l’appareil
 - App Store · 6,99 €
 
-[Téléchargez Snapport sur l’App Store →](https://apps.apple.com/fr/app/id6780575828)
+[Téléchargez Snapport sur l’App Store →](https://apps.apple.com/fr/app/id6780575828?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ઑફલાઇન
 - App Store · મફત
 
-[App Store પરથી Wordmate Lite: અંગ્રેજી શીખો મેળવો](https://apps.apple.com/in/app/id6797601720)
+[App Store પરથી Wordmate Lite: અંગ્રેજી શીખો મેળવો](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=iag_data_gu_in&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/wordmatelite.html)
 

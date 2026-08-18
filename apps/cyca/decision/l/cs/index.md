@@ -18,7 +18,7 @@ V kategorii, kde je citlivost dat zásadní, správná aplikace na sledování m
 - Soukromé / v zařízení
 - App Store · Zdarma
 
-[Získejte Cyca v App Store →](https://apps.apple.com/cz/app/id6782251621)
+[Získejte Cyca v App Store →](https://apps.apple.com/cz/app/id6782251621?pt=118326163&ct=iag_data_cs&mt=8)
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-period-tracker-app-no-account-required-iphone.html)
 

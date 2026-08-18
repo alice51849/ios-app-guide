@@ -17,7 +17,7 @@ Deel 5 lijkt kort, maar die vragen met onvolledige zinnen kunnen tijd kosten als
 - Gratis te starten · levenslange ontgrendeling
 - App Store · Gratis
 
-[Download Aim990 in de App Store →](https://apps.apple.com/nl/app/id6784974530)
+[Download Aim990 in de App Store →](https://apps.apple.com/nl/app/id6784974530?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

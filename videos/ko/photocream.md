@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [영상 보기](https://files.catbox.moe/1072ns.mp4)
 
-[App Store에서 PhotoCream 받기 →](https://apps.apple.com/kr/app/id6781808054)
+[App Store에서 PhotoCream 받기 →](https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=iag_video_ko&mt=8)
 
 [앱 가이드 열기](https://alice51849.github.io/ios-app-guide/ko/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

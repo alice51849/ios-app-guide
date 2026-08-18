@@ -19,7 +19,7 @@ Hva koster det egentlig? Ikke i kroner – i timer av livet ditt.
 - Privat / på enheten
 - App Store · 59,00 kr
 
-[Last ned HoursTag: Timer å kjøpe fra App Store](https://apps.apple.com/no/app/id6754218117)
+[Last ned HoursTag: Timer å kjøpe fra App Store](https://apps.apple.com/no/app/id6754218117?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/hourstag.html)
 

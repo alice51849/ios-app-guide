@@ -22,7 +22,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ¥58.00
 
-[在App Store获取Wordmate：学习44种语言 →](https://apps.apple.com/cn/app/id6789917808)
+[在App Store获取Wordmate：学习44种语言 →](https://apps.apple.com/cn/app/id6789917808?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

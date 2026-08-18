@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - বিনামূল্যে শুরু · আজীবন আনলক
 - গোপনীয় / ডিভাইসে
 
-[App Store থেকে AI Brief ডাউনলোড করুন](https://apps.apple.com/app/id6791658210)
+[App Store থেকে AI Brief ডাউনলোড করুন](https://apps.apple.com/app/id6791658210?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/aibriefpack.html)
 

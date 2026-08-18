@@ -18,7 +18,7 @@ Untuk anak kecil, hal yang paling penting adalah tanpa iklan dan pengumpulan dat
 - Tanpa iklan
 - App Store · Gratis
 
-[Dapatkan Lumi Letters di App Store →](https://apps.apple.com/id/app/id6778748533)
+[Dapatkan Lumi Letters di App Store →](https://apps.apple.com/id/app/id6778748533?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

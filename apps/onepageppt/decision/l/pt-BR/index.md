@@ -17,7 +17,7 @@ Transforme aquele paredão de texto em UM slide que as pessoas realmente leem. O
 - Grátis para começar · desbloqueio permanente
 - App Store · Grátis
 
-[Baixe OnePage PPT: slide com IA na App Store](https://apps.apple.com/br/app/id6798814385)
+[Baixe OnePage PPT: slide com IA na App Store](https://apps.apple.com/br/app/id6798814385?pt=118326163&ct=iag_data_pt_br&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/onepageppt.html)
 

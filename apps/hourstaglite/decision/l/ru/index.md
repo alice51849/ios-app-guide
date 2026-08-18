@@ -22,7 +22,7 @@ HoursTag Lite - Увидьте настоящую цену вещей Кажда
 - Apple Watch
 - App Store · Бесплатно
 
-[Установить HoursTag Lite в App Store](https://apps.apple.com/ru/app/id6794039979)
+[Установить HoursTag Lite в App Store](https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=iag_data_ru&mt=8)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/hourstaglite.html)
 

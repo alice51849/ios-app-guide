@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ללא פרסומות
 - App Store · בחינם
 
-[קבלו את Lumi Mission Planet ב-App Store →](https://apps.apple.com/il/app/id6779750237)
+[קבלו את Lumi Mission Planet ב-App Store →](https://apps.apple.com/il/app/id6779750237?pt=118326163&ct=iag_data_he&mt=8)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

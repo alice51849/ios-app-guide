@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ఖాతా అవసరం లేదు
 - App Store · ₹ 499
 
-[App Store నుండి G+Money పొందండి →](https://apps.apple.com/in/app/id6755782939)
+[App Store నుండి G+Money పొందండి →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

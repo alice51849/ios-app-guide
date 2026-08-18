@@ -18,7 +18,7 @@ Vauvan passikuvassa ei saa olla muita ihmisiä eikä taustan saa olla kuvioitu �
 - Yksityinen / laitteella
 - App Store · 6,99 €
 
-[Hanki Snapport App Storesta →](https://apps.apple.com/fi/app/id6780575828)
+[Hanki Snapport App Storesta →](https://apps.apple.com/fi/app/id6780575828?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

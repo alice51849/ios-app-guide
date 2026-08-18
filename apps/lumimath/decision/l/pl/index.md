@@ -18,7 +18,7 @@ Najlepsza matematyczna aplikacja dla dzieci rozwija rozumowanie — wzory, sekwe
 - Bez reklam
 - App Store · Bezpłatnie
 
-[Pobierz Lumi Math Planet z App Store →](https://apps.apple.com/pl/app/id6778269699)
+[Pobierz Lumi Math Planet z App Store →](https://apps.apple.com/pl/app/id6778269699?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

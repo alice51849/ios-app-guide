@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - भुगतान किया गया डाउनलोड
 - App Store · ₹ 599
 
-[App Store पर WiFi Aid पाएँ](https://apps.apple.com/in/app/id6790467886)
+[App Store पर WiFi Aid पाएँ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_hi&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/wifiaid.html)
 

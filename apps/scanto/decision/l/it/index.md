@@ -18,7 +18,7 @@ Se scansionate moduli di consenso, documenti di dimissione o referti, lo scanner
 - Privato / su dispositivo
 - App Store · Gratis
 
-[Scarica ScanTo Pro dall'App Store →](https://apps.apple.com/it/app/id6779977651)
+[Scarica ScanTo Pro dall'App Store →](https://apps.apple.com/it/app/id6779977651?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Лично / на устройстве
 - App Store · Бесплатно
 
-[Скачать Cyca в App Store →](https://apps.apple.com/ru/app/id6782251621)
+[Скачать Cyca в App Store →](https://apps.apple.com/ru/app/id6782251621?pt=118326163&ct=iag_data_ru&mt=8)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-period-tracker-app-no-account-required-iphone.html)
 

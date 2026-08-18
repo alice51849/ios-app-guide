@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - مفت آغاز · مستقل ان لاک
 - App Store · مفت
 
-[App Store سے TripBee Lite حاصل کریں →](https://apps.apple.com/pk/app/id6791299610)
+[App Store سے TripBee Lite حاصل کریں →](https://apps.apple.com/pk/app/id6791299610?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

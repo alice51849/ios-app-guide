@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - 私密 / 设备本地
 - App Store · ¥38.00
 
-[在 App Store 获取 HoursTag：价格换工时](https://apps.apple.com/cn/app/id6754218117)
+[在 App Store 获取 HoursTag：价格换工时](https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/hourstag.html)
 

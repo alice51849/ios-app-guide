@@ -18,7 +18,7 @@ In einer Kategorie, in der Datenschutz entscheidend ist, speichert der richtige 
 - Privat / auf dem Gerät
 - App Store · Kostenlos
 
-[Holen Sie sich Cyca im App Store →](https://apps.apple.com/de/app/id6782251621)
+[Holen Sie sich Cyca im App Store →](https://apps.apple.com/de/app/id6782251621?pt=118326163&ct=iag_data_de_de&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-period-tracker-app-no-account-required-iphone.html)
 

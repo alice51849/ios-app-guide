@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - התחלה ללא תשלום · פתיחה לכל החיים
 - App Store · בחינם
 
-[הורידו את Mochi DoneStamp: מתי לאחרונה מה-App Store](https://apps.apple.com/il/app/id6790800323)
+[הורידו את Mochi DoneStamp: מתי לאחרונה מה-App Store](https://apps.apple.com/il/app/id6790800323?pt=118326163&ct=iag_data_he&mt=8)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/mochidonestamp.html)
 

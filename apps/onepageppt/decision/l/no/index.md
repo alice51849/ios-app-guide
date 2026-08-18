@@ -17,7 +17,7 @@ Gjør en vegg av tekst om til ÉTT lysbilde folk faktisk leser. OnePage PPT lese
 - Gratis å starte · livstidsopplåsing
 - App Store · Gratis
 
-[Last ned OnePage PPT: AI-lysbilder fra App Store](https://apps.apple.com/no/app/id6798814385)
+[Last ned OnePage PPT: AI-lysbilder fra App Store](https://apps.apple.com/no/app/id6798814385?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/onepageppt.html)
 

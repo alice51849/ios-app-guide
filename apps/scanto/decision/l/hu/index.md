@@ -18,7 +18,7 @@ Ha beteg beleegyező nyomtatványokat, elbocsátási papírokat vagy beutalókat
 - Privát / eszközön tárolt
 - App Store · Ingyenes
 
-[Szerezze be a ScanTo Pro-t az App Store-ból →](https://apps.apple.com/hu/app/id6779977651)
+[Szerezze be a ScanTo Pro-t az App Store-ból →](https://apps.apple.com/hu/app/id6779977651?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

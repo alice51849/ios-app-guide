@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Không quảng cáo
 - App Store · Miễn phí
 
-[Tải Lumi Bopomofo trên App Store →](https://apps.apple.com/vn/app/id6773017109)
+[Tải Lumi Bopomofo trên App Store →](https://apps.apple.com/vn/app/id6773017109?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

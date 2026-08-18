@@ -18,7 +18,7 @@ Comparteix amb tranquil·litat sense perdre el context útil. Mask My File detec
 - Privat / en el dispositiu
 - App Store · Gratis
 
-[Descarrega Mask My File a l’App Store](https://apps.apple.com/es/app/id6792850916)
+[Descarrega Mask My File a l’App Store](https://apps.apple.com/es/app/id6792850916?pt=118326163&ct=iag_data_ca&mt=8)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/maskmyfile.html)
 

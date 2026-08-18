@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Лично / на устройстве
 - App Store · Бесплатно
 
-[Установить 100 Notes Studio: Pen & Paper в App Store](https://apps.apple.com/ru/app/id6798813048)
+[Установить 100 Notes Studio: Pen & Paper в App Store](https://apps.apple.com/ru/app/id6798813048?pt=118326163&ct=iag_data_ru&mt=8)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/notesstudio100.html)
 

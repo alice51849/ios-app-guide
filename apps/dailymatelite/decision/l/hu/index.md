@@ -17,7 +17,7 @@ Szólalj meg természetesen, amikor eljön a pillanat. A DailyMate Lite hétköz
 - Ingyenes kezdés · életre szóló feloldás
 - App Store · Ingyenes
 
-[Töltse le a(z) DailyMate Lite: Beszélj ma appot az App Store-ból](https://apps.apple.com/hu/app/id6794725568)
+[Töltse le a(z) DailyMate Lite: Beszélj ma appot az App Store-ból](https://apps.apple.com/hu/app/id6794725568?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/dailymatelite.html)
 

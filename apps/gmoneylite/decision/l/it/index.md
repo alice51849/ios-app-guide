@@ -23,7 +23,7 @@ G+Money Lite — Convertitore di valute e spese di viaggio I soldi in viaggio, s
 - Apple Watch
 - App Store · Gratis
 
-[Scarica G+Money Lite sull'App Store](https://apps.apple.com/it/app/id6793436548)
+[Scarica G+Money Lite sull'App Store](https://apps.apple.com/it/app/id6793436548?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/gmoneylite.html)
 

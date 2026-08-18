@@ -18,7 +18,7 @@ Snapport Lite - پاسپورٹ، ویزا، اور دستاویزات کی تص�
 - آف لائن
 - App Store · مفت
 
-[App Store سے Snapport Lite حاصل کریں](https://apps.apple.com/pk/app/id6792856304)
+[App Store سے Snapport Lite حاصل کریں](https://apps.apple.com/pk/app/id6792856304?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/snapportlite.html)
 

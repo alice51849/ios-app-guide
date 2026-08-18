@@ -17,7 +17,7 @@ Kreator perjalanan membutuhkan tampilan film yang bisa diulang, menambah bintik 
 - Gratis untuk mulai · buka kunci permanen
 - App Store · Gratis
 
-[Dapatkan PhotoCream di App Store →](https://apps.apple.com/id/app/id6781808054)
+[Dapatkan PhotoCream di App Store →](https://apps.apple.com/id/app/id6781808054?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

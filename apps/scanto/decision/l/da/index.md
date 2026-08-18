@@ -18,7 +18,7 @@ Hvis du scanner patient-samtykkeerklæringer, udskrivningspapirer eller henvisni
 - Privat / på enheden
 - App Store · Gratis
 
-[Hent ScanTo Pro i App Store →](https://apps.apple.com/dk/app/id6779977651)
+[Hent ScanTo Pro i App Store →](https://apps.apple.com/dk/app/id6779977651?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

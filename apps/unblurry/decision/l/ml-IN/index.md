@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് Unblurry നേടുക →](https://apps.apple.com/in/app/id6782275018)
+[App Store-ൽ നിന്ന് Unblurry നേടുക →](https://apps.apple.com/in/app/id6782275018?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

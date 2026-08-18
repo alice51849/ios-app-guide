@@ -18,7 +18,7 @@ Pranje zubi i odlazak na spavanje često zapnu u istom trenutku svake večeri: d
 - Bez oglasa
 - App Store · 6,99 €
 
-[Preuzmite Lumi Mission Planet Pro na App Storeu →](https://apps.apple.com/hr/app/id6779745474)
+[Preuzmite Lumi Mission Planet Pro na App Storeu →](https://apps.apple.com/hr/app/id6779745474?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

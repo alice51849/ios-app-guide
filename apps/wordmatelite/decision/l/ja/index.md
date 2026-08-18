@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - オフライン
 - App Store · 無料
 
-[App Store で Wordmate Lite 1日5単語 を入手](https://apps.apple.com/jp/app/id6797601720)
+[App Store で Wordmate Lite 1日5単語 を入手](https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/wordmatelite.html)
 

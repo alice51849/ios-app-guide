@@ -19,7 +19,7 @@ Per dormire, un abbonamento che ti disturba ogni mese è l’opposto del riposo 
 - Nessuna pubblicità
 - App Store · Gratis
 
-[Scarica Sereno dall’App Store →](https://apps.apple.com/it/app/id6788236641)
+[Scarica Sereno dall’App Store →](https://apps.apple.com/it/app/id6788236641?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

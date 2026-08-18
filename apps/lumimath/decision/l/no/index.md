@@ -18,7 +18,7 @@ Den beste matteappen for barn trener resonnement — mønstre, sekvenser, romlig
 - Ingen annonser
 - App Store · Gratis
 
-[Få Lumi Math Planet på App Store →](https://apps.apple.com/no/app/id6778269699)
+[Få Lumi Math Planet på App Store →](https://apps.apple.com/no/app/id6778269699?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

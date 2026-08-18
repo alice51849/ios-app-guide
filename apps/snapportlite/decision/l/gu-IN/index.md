@@ -18,7 +18,7 @@ Snapport Lite - માર્ગદર્શિત કદ, પૃષ્ઠભૂ�
 - ઑફલાઇન
 - App Store · મફત
 
-[App Store પરથી Snapport Lite મેળવો](https://apps.apple.com/in/app/id6792856304)
+[App Store પરથી Snapport Lite મેળવો](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_gu_in&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/snapportlite.html)
 

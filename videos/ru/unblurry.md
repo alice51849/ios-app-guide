@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [Смотреть видео](https://files.catbox.moe/3algui.mp4)
 
-[Скачайте Unblurry в App Store →](https://apps.apple.com/ru/app/id6782275018)
+[Скачайте Unblurry в App Store →](https://apps.apple.com/ru/app/id6782275018?pt=118326163&ct=iag_video_ru&mt=8)
 
 [Открыть руководство по приложению](https://alice51849.github.io/ios-app-guide/ru/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

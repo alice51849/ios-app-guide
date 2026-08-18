@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 无需账户
 - App Store · 免费
 
-[在 App Store 获取 WiFi Aid Lite](https://apps.apple.com/cn/app/id6793414462)
+[在 App Store 获取 WiFi Aid Lite](https://apps.apple.com/cn/app/id6793414462?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/wifiaidlite.html)
 

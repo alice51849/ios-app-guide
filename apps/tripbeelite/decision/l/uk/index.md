@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Безкоштовно для початку · довічне розблокування
 - App Store · Безкоштовно
 
-[Отримайте TripBee Lite в App Store →](https://apps.apple.com/ua/app/id6791299610)
+[Отримайте TripBee Lite в App Store →](https://apps.apple.com/ua/app/id6791299610?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

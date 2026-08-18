@@ -22,7 +22,7 @@ HoursTag Lite - Asioiden todellinen hinta Jokainen ostos maksaa tunteja elämäs
 - Apple Watch
 - App Store · Ilmainen
 
-[Lataa HoursTag Lite App Storesta](https://apps.apple.com/fi/app/id6794039979)
+[Lataa HoursTag Lite App Storesta](https://apps.apple.com/fi/app/id6794039979?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/hourstaglite.html)
 

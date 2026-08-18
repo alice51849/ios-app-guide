@@ -19,7 +19,7 @@ Les parents qui planifient des sorties ont besoin de plus qu’une température 
 - Aucun suivi
 - App Store · Gratuit
 
-[Obtenez Lumi Weather sur l’App Store →](https://apps.apple.com/ca/app/id6779552704)
+[Obtenez Lumi Weather sur l’App Store →](https://apps.apple.com/ca/app/id6779552704?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

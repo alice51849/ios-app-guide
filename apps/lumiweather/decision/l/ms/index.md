@@ -19,7 +19,7 @@ Ibu bapa yang merancang masa luar perlukan lebih daripada suhu: mereka perlukan 
 - Tiada penjejakan
 - App Store · Percuma
 
-[Dapatkan Lumi Weather di App Store →](https://apps.apple.com/my/app/id6779552704)
+[Dapatkan Lumi Weather di App Store →](https://apps.apple.com/my/app/id6779552704?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

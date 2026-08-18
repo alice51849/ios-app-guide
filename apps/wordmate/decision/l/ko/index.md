@@ -22,7 +22,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ￦15,000
 
-[App Store에서 Wordmate: 44개 언어 학습 받기 →](https://apps.apple.com/kr/app/id6789917808)
+[App Store에서 Wordmate: 44개 언어 학습 받기 →](https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=iag_data_ko&mt=8)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

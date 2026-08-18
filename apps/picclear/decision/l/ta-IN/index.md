@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - தனியுரிமை / சாதனத்தில்
 - App Store · இலவசம்
 
-[App Store-இல் PicClear பெறவும் →](https://apps.apple.com/in/app/id6780223070)
+[App Store-இல் PicClear பெறவும் →](https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=iag_data_ta_in&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

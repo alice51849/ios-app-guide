@@ -14,12 +14,12 @@ publisher: "Lumi Studio"
 在資料敏感度極高的類別中，合適的生理期追蹤器會將所有資料 — 流量、心情、症狀、體溫、親密行為 — 保留在裝置上，無需帳號且無雲端同步 — Cyca 專為此設計。
 
 - 健康
-- 免費開始 · 一次購買解鎖
+- 免費開始 · 永久解鎖
 - 隱私優先／裝置端
 - App Store · 免費
 - ★ 5.0/5 · 1
 
-[在 App Store 取得 Cyca →](https://apps.apple.com/tw/app/id6782251621)
+[在 App Store 取得 Cyca →](https://apps.apple.com/tw/app/id6782251621?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-period-tracker-app-no-account-required-iphone.html)
 

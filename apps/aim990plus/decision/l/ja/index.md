@@ -17,7 +17,7 @@ Aim990 Plus — Build calm, accurate decisions under time with 630 original ques
 - 有料ダウンロード
 - App Store · ¥1,000
 
-[Get Aim990 Plus on the App Store →](https://apps.apple.com/jp/app/id6792483140)
+[Get Aim990 Plus on the App Store →](https://apps.apple.com/jp/app/id6792483140?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html)
 

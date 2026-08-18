@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 第 5 部分看似簡短，但不完整句子題目若文法與詞彙不熟練，會耗費大量時間。
 
 - 學習
-- 免費開始 · 一次購買解鎖
+- 免費開始 · 永久解鎖
 - App Store · 免費
 - ★ 5.0/5 · 2
 
-[在 App Store 取得 Aim990 →](https://apps.apple.com/tw/app/id6784974530)
+[在 App Store 取得 Aim990 →](https://apps.apple.com/tw/app/id6784974530?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

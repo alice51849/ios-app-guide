@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్
 - App Store · ఉచితం
 
-[App Store నుంచి DailyMate Lite పొందండి](https://apps.apple.com/in/app/id6794725568)
+[App Store నుంచి DailyMate Lite పొందండి](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/dailymatelite.html)
 

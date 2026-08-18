@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - വ്യാപനങ്ങൾ ഇല്ല
 - App Store · സൗജന്യം
 
-[Lumi Mission Planet App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6779750237)
+[Lumi Mission Planet App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

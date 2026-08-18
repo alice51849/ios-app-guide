@@ -20,7 +20,7 @@ A good itinerary app turns a messy trip into a clear day-by-day timeline — fli
 - Private / on-device
 - App Store · £5.99
 
-[Get TripBee Pro: Trip Planner on the App Store →](https://apps.apple.com/gb/app/id6787754435)
+[Get TripBee Pro: Trip Planner on the App Store →](https://apps.apple.com/gb/app/id6787754435?pt=118326163&ct=iag_data_en_gb&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

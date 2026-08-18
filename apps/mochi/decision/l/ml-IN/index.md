@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - വ്യാപനങ്ങൾ ഇല്ല
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് Mochi നേടുക →](https://apps.apple.com/in/app/id6785004775)
+[App Store-ൽ നിന്ന് Mochi നേടുക →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

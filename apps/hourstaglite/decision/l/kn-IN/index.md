@@ -22,7 +22,7 @@ HoursTag Lite - ವಸ್ತುಗಳ ನಿಜವಾದ ಬೆಲೆಯನ್�
 - Apple Watch
 - App Store · ಉಚಿತ
 
-[App Store ನಲ್ಲಿ HoursTag Lite ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6794039979)
+[App Store ನಲ್ಲಿ HoursTag Lite ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_kn_in&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/hourstaglite.html)
 

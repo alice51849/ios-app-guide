@@ -19,7 +19,7 @@ Podczas egzaminów siła woli nie wystarczy — potrzebna jest twarda blokada na
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 
-[Pobierz LockHour Pro z App Store →](https://apps.apple.com/pl/app/id6780107485)
+[Pobierz LockHour Pro z App Store →](https://apps.apple.com/pl/app/id6780107485?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

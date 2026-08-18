@@ -23,7 +23,7 @@ G+Money Lite — Умный трекер валюты и расходов для
 - Apple Watch
 - App Store · Бесплатно
 
-[Установить G+Money Lite в App Store](https://apps.apple.com/ru/app/id6793436548)
+[Установить G+Money Lite в App Store](https://apps.apple.com/ru/app/id6793436548?pt=118326163&ct=iag_data_ru&mt=8)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/gmoneylite.html)
 

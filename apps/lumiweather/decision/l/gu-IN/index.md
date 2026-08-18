@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - કોઈ ટ્રેકિંગ નથી
 - App Store · મફત
 
-[App Store પર Lumi Weather મેળવો →](https://apps.apple.com/in/app/id6779552704)
+[App Store પર Lumi Weather મેળવો →](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=iag_data_gu_in&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

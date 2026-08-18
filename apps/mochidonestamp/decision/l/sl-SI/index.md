@@ -17,7 +17,7 @@ Kdaj ste nazadnje zamenjali posteljnino, zalili rastlino, poklicali družino, va
 - Brezplačen začetek · doživljenjska odklenitev
 - App Store · Brezplačno
 
-[Prenesite Mochi DoneStamp: Nazadnje iz trgovine App Store](https://apps.apple.com/si/app/id6790800323)
+[Prenesite Mochi DoneStamp: Nazadnje iz trgovine App Store](https://apps.apple.com/si/app/id6790800323?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/mochidonestamp.html)
 

@@ -23,7 +23,7 @@ G+Money Lite — స్మార్ట్ ట్రావెల్ కరెన�
 - Apple Watch
 - App Store · ఉచితం
 
-[App Store నుంచి G+Money Lite పొందండి](https://apps.apple.com/in/app/id6793436548)
+[App Store నుంచి G+Money Lite పొందండి](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/gmoneylite.html)
 

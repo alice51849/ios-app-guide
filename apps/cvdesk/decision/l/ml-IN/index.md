@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്
 - App Store · സൗജന്യം
 
-[App Store-ൽ CV Desk നേടുക →](https://apps.apple.com/in/app/id6781337213)
+[App Store-ൽ CV Desk നേടുക →](https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-resume-builder-app-for-career-changers-2026.html)
 

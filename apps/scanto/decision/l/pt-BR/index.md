@@ -18,7 +18,7 @@ Se você digitaliza formulários de consentimento, documentos de alta hospitalar
 - Privado / no dispositivo
 - App Store · Grátis
 
-[Baixe o ScanTo Pro na App Store →](https://apps.apple.com/br/app/id6779977651)
+[Baixe o ScanTo Pro na App Store →](https://apps.apple.com/br/app/id6779977651?pt=118326163&ct=iag_data_pt_br&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

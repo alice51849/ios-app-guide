@@ -18,7 +18,7 @@ Najlepšia detská matematická aplikácia trénuje uvažovanie — vzory, postu
 - Bez reklám
 - App Store · Zadarmo
 
-[Stiahnite si Lumi Math Planet v App Store →](https://apps.apple.com/sk/app/id6778269699)
+[Stiahnite si Lumi Math Planet v App Store →](https://apps.apple.com/sk/app/id6778269699?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

@@ -18,7 +18,7 @@ Dijelite bez brige i zadržite koristan kontekst. Mask My File pronalazi privatn
 - Privatno / na uređaju
 - App Store · Besplatno
 
-[Preuzmite Mask My File u App Storeu](https://apps.apple.com/hr/app/id6792850916)
+[Preuzmite Mask My File u App Storeu](https://apps.apple.com/hr/app/id6792850916?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/maskmyfile.html)
 

@@ -18,7 +18,7 @@ Selepas panggilan, anda tidak mahu transkrip mentah — anda mahu ringkasan, ite
 - Peribadi / pada peranti
 - App Store · Percuma
 
-[Dapatkan Sono Note di App Store →](https://apps.apple.com/my/app/id6782139553)
+[Dapatkan Sono Note di App Store →](https://apps.apple.com/my/app/id6782139553?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

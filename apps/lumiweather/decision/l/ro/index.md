@@ -19,7 +19,7 @@ Părinții care planifică timpul afară au nevoie de mai mult decât o temperat
 - Fără urmărire
 - App Store · Gratuit
 
-[Descarcă Lumi Weather din App Store →](https://apps.apple.com/ro/app/id6779552704)
+[Descarcă Lumi Weather din App Store →](https://apps.apple.com/ro/app/id6779552704?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

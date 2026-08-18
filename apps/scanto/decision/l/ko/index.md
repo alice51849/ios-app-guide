@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 환자 동의서, 퇴원 서류, 의뢰서를 스캔할 때 서류가 기기에만 남아야 하며 절대 다른 사람 클라우드에 업로드되지 않아야 합니다 — ScanTo Pro가 이에 맞게 설계되었습니다.
 
 - 생산성
-- 무료로 시작 · 한 번 구매 잠금 해제
+- 무료로 시작 · 평생 잠금 해제
 - 프라이빗 / 기기 내
 - App Store · 무료
 
-[App Store에서 ScanTo Pro 받기 →](https://apps.apple.com/kr/app/id6779977651)
+[App Store에서 ScanTo Pro 받기 →](https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=iag_data_ko&mt=8)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

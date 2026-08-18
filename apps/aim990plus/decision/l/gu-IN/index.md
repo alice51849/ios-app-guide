@@ -17,7 +17,7 @@ Aim990 Plus પુખ્ત વયના શીખનારાઓ માટે �
 - ચુકવેલ ડાઉનલોડ
 - App Store · ₹ 599
 
-[App Store પરથી Aim990 Plus મેળવો](https://apps.apple.com/in/app/id6792483140)
+[App Store પરથી Aim990 Plus મેળવો](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_gu_in&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/aim990plus.html)
 

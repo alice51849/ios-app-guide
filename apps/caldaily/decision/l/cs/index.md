@@ -18,7 +18,7 @@ Kalkulačka, kterou budete opravdu používat dál, protože si pamatuje, co za 
 - Widget
 - App Store · Zdarma
 
-[Stáhněte si CalDaily: kalkulačka a motivy v App Storu](https://apps.apple.com/cz/app/id6794178671)
+[Stáhněte si CalDaily: kalkulačka a motivy v App Storu](https://apps.apple.com/cz/app/id6794178671?pt=118326163&ct=iag_data_cs&mt=8)
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/caldaily.html)
 

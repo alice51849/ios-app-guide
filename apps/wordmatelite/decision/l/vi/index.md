@@ -18,7 +18,7 @@ Nhiều người dừng việc học ngoại ngữ đúng ở chỗ bộ thẻ t
 - Ngoại tuyến
 - App Store · Miễn phí
 
-[Tải Wordmate Lite 5 từ mỗi ngày trên App Store](https://apps.apple.com/vn/app/id6797601720)
+[Tải Wordmate Lite 5 từ mỗi ngày trên App Store](https://apps.apple.com/vn/app/id6797601720?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/wordmatelite.html)
 

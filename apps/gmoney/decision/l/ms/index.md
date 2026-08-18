@@ -19,7 +19,7 @@ Dalam perjalanan anda perlukan penjejak bajet yang berfungsi luar talian di nega
 - Tiada akaun
 - App Store · RM22.90
 
-[Dapatkan G+Money di App Store →](https://apps.apple.com/my/app/id6755782939)
+[Dapatkan G+Money di App Store →](https://apps.apple.com/my/app/id6755782939?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

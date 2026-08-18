@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - గోప్యంగా / పరికరంలో
 - App Store · ఉచితం
 
-[App Store నుంచి Mask My File పొందండి](https://apps.apple.com/in/app/id6792850916)
+[App Store నుంచి Mask My File పొందండి](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/maskmyfile.html)
 

@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - เริ่มใช้ฟรี · ปลดล็อกถาวร
 - App Store · ฟรี
 
-[ดาวน์โหลด TripBee Lite ได้ที่ App Store →](https://apps.apple.com/th/app/id6791299610)
+[ดาวน์โหลด TripBee Lite ได้ที่ App Store →](https://apps.apple.com/th/app/id6791299610?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

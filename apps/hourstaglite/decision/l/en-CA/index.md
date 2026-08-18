@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 HoursTag Lite - See the real price of things Every purchase costs hours of your life. HoursTag Lite turns prices into work time — so you spend with clarity. Meet your Worth Lens - Life cost: Your take-home value per work hour - Type: Need - Want - Impulse - Your value pattern - Complete value insights - What will a goal cost?: See the work behind a goal — and track your progress. - Backup & restore: Includes income, spending, goals and preferences. - Widget - Apple Watch Everything stays on your device. No account, no tracking. One payment · Lifetime access · No subscription Unlimited choices and edits Unlimited targets and progress Sharing, insights and backups
 
 - Money & travel
-- Free to start · one-time unlock
+- Free to start · lifetime unlock
 - No account
 - No tracking
 - Private / on-device
@@ -22,7 +22,7 @@ HoursTag Lite - See the real price of things Every purchase costs hours of your 
 - Apple Watch
 - App Store · Free
 
-[Get HoursTag Lite on the App Store](https://apps.apple.com/ca/app/id6794039979)
+[Get HoursTag Lite on the App Store](https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=iag_data_en_ca&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-CA/hourstaglite.html)
 

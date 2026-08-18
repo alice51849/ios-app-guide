@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - বিনামূল্যে শুরু · আজীবন আনলক
 - অফলাইন
 
-[App Store থেকে Wordmate Lite: ইংরেজি শেখা ডাউনলোড করুন](https://apps.apple.com/app/id6797601720)
+[App Store থেকে Wordmate Lite: ইংরেজি শেখা ডাউনলোড করুন](https://apps.apple.com/app/id6797601720?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/wordmatelite.html)
 

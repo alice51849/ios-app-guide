@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ખાનગી / ઉપકરણ પર
 - App Store · ₹ 499
 
-[App Store પરથી HoursTag: સમયથી ખરીદી મેળવો](https://apps.apple.com/in/app/id6754218117)
+[App Store પરથી HoursTag: સમયથી ખરીદી મેળવો](https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_data_gu_in&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/hourstag.html)
 

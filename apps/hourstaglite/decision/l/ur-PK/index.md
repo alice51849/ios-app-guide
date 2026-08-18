@@ -22,7 +22,7 @@ HoursTag Lite - چیزوں کی اصل قیمت دیکھیں ہر خریداری
 - Apple Watch
 - App Store · مفت
 
-[App Store سے HoursTag Lite حاصل کریں](https://apps.apple.com/pk/app/id6794039979)
+[App Store سے HoursTag Lite حاصل کریں](https://apps.apple.com/pk/app/id6794039979?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/hourstaglite.html)
 

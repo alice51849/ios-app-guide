@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - เริ่มใช้ฟรี · ปลดล็อกถาวร
 - App Store · ฟรี
 
-[รับ CV Desk ใน App Store →](https://apps.apple.com/th/app/id6781337213)
+[รับ CV Desk ใน App Store →](https://apps.apple.com/th/app/id6781337213?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-resume-builder-app-for-career-changers-2026.html)
 

@@ -18,7 +18,7 @@ Voor een kleuter werkt een bedtijdroutine het beste als deze kort, visueel en vo
 - Geen advertenties
 - App Store · Gratis
 
-[Download Lumi Mission Planet in de App Store →](https://apps.apple.com/nl/app/id6779750237)
+[Download Lumi Mission Planet in de App Store →](https://apps.apple.com/nl/app/id6779750237?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

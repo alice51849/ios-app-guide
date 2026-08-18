@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ട്രാക്കിംഗ് ഇല്ല
 - App Store · സൗജന്യം
 
-[Lumi Weather App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6779552704)
+[Lumi Weather App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

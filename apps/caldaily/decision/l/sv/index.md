@@ -18,7 +18,7 @@ En kalkylator du behåller, eftersom den minns vad varje tal handlade om. De fle
 - Widget
 - App Store · Gratis
 
-[Hämta CalDaily: kalkylator och teman i App Store](https://apps.apple.com/se/app/id6794178671)
+[Hämta CalDaily: kalkylator och teman i App Store](https://apps.apple.com/se/app/id6794178671?pt=118326163&ct=iag_data_sv&mt=8)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/caldaily.html)
 

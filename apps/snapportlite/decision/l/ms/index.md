@@ -18,7 +18,7 @@ Snapport Lite - Buat foto pasport, visa, dan dokumen dengan panduan saiz, alat l
 - Luar talian
 - App Store · Percuma
 
-[Dapatkan Snapport Lite di App Store](https://apps.apple.com/my/app/id6792856304)
+[Dapatkan Snapport Lite di App Store](https://apps.apple.com/my/app/id6792856304?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/snapportlite.html)
 

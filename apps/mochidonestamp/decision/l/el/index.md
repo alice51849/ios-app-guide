@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής
 - App Store · Δωρεάν
 
-[Αποκτήστε το Mochi DoneStamp: Τελευταία από το App Store](https://apps.apple.com/gr/app/id6790800323)
+[Αποκτήστε το Mochi DoneStamp: Τελευταία από το App Store](https://apps.apple.com/gr/app/id6790800323?pt=118326163&ct=iag_data_el&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/mochidonestamp.html)
 

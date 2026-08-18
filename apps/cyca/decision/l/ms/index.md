@@ -18,7 +18,7 @@ Dalam kategori di mana kepekaan data adalah perkara utama, penjejak haid yang be
 - Peribadi / pada peranti
 - App Store · Percuma
 
-[Dapatkan Cyca di App Store →](https://apps.apple.com/my/app/id6782251621)
+[Dapatkan Cyca di App Store →](https://apps.apple.com/my/app/id6782251621?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-period-tracker-app-no-account-required-iphone.html)
 

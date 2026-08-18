@@ -18,7 +18,7 @@ Dla małego dziecka kluczowe są brak reklam i brak zbierania danych — aplikac
 - Bez reklam
 - App Store · Bezpłatnie
 
-[Pobierz Lumi Letters z App Store →](https://apps.apple.com/pl/app/id6778748533)
+[Pobierz Lumi Letters z App Store →](https://apps.apple.com/pl/app/id6778748533?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

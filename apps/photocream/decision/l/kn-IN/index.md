@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್
 - App Store · ಉಚಿತ
 
-[PhotoCream ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6781808054)
+[PhotoCream ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=iag_data_kn_in&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

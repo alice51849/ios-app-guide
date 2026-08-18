@@ -22,7 +22,7 @@ HoursTag Lite - Il vero prezzo delle cose Ogni acquisto costa ore della tua vita
 - Apple Watch
 - App Store · Gratis
 
-[Scarica HoursTag Lite sull'App Store](https://apps.apple.com/it/app/id6794039979)
+[Scarica HoursTag Lite sull'App Store](https://apps.apple.com/it/app/id6794039979?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/hourstaglite.html)
 

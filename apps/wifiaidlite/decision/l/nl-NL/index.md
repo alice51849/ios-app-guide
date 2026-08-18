@@ -18,7 +18,7 @@ Vind het echte probleem. Elke tool bevat één gratis volledig gebruik. Optionel
 - Geen account
 - App Store · Gratis
 
-[Download WiFi Aid Lite in de App Store](https://apps.apple.com/nl/app/id6793414462)
+[Download WiFi Aid Lite in de App Store](https://apps.apple.com/nl/app/id6793414462?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/wifiaidlite.html)
 

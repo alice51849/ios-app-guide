@@ -23,7 +23,7 @@ G+Money Lite — Pametna potovalna valuta in sledilnik stroškov Potovalni denar
 - Apple Watch
 - App Store · Brezplačno
 
-[Prenesite G+Money Lite iz trgovine App Store](https://apps.apple.com/si/app/id6793436548)
+[Prenesite G+Money Lite iz trgovine App Store](https://apps.apple.com/si/app/id6793436548?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/gmoneylite.html)
 

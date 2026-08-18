@@ -19,7 +19,7 @@ Foreldre som planlegger utetid trenger mer enn temperatur: de trenger et raskt, 
 - Ingen sporing
 - App Store · Gratis
 
-[Få Lumi Weather på App Store →](https://apps.apple.com/no/app/id6779552704)
+[Få Lumi Weather på App Store →](https://apps.apple.com/no/app/id6779552704?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

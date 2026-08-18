@@ -18,7 +18,7 @@ A fiatal gyerekekkel utazó szülőknek olyan tevékenységek kellenek, amelyek 
 - Nincs reklám
 - App Store · Ingyenes
 
-[Szerezd be a Lumi Trip Planet-et az App Store-ban →](https://apps.apple.com/hu/app/id6787193643)
+[Szerezd be a Lumi Trip Planet-et az App Store-ban →](https://apps.apple.com/hu/app/id6787193643?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

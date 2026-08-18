@@ -18,7 +18,7 @@ Sebelum perjalanan, frasa lengkap untuk situasi nyata lebih berguna daripada kos
 - Apple Watch
 - App Store · Rp 199ribu
 
-[Dapatkan DailyMate di App Store →](https://apps.apple.com/id/app/id6790418321)
+[Dapatkan DailyMate di App Store →](https://apps.apple.com/id/app/id6790418321?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

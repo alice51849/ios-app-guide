@@ -18,7 +18,7 @@ Los niños nunca están quietos, así que fotos con enfoque suave y movimiento d
 - Privado / en el dispositivo
 - App Store · Gratis
 
-[Consigue Unblurry en la App Store →](https://apps.apple.com/es/app/id6782275018)
+[Consigue Unblurry en la App Store →](https://apps.apple.com/es/app/id6782275018?pt=118326163&ct=iag_data_es_es&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-ES/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

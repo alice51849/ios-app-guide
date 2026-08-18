@@ -2089,6 +2089,55 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "wifiaidlite": [
+        {
+            "query": "how to tell if the wifi or the website is down free app",
+            "guide_title": "Wi-Fi or the site: how to tell which one is actually broken",
+            "triggers": [
+                "is it my wifi or the website",
+                "wifi connected but no internet",
+                "check if a website is down",
+                "dns not resolving iphone",
+                "slow wifi diagnose",
+                "network test app no account",
+            ],
+            "persona": "anyone staring at a page that will not load and guessing which part failed",
+            "lead": "Rebooting the router is a guess. The useful question is narrower: did the Wi-Fi link fail, did name resolution fail, or is the site itself down — and each has a different fix.",
+            "paras": [
+                "WiFi Aid Lite runs Wi-Fi, DNS and internet checks in one tap, then shows the evidence rather than a verdict: DNS, TCP, TLS, time to first byte, HTTP, direct IP, IPv4 and IPv6. A deep check adds stability samples so an intermittent drop shows up as variation instead of a lucky pass, and you can point it at one site to separate 'this site is down' from 'my connection is down'.",
+                "Check history is kept privately on the device, and the connected-node reading identifies which Wi-Fi and node you are actually on — useful in a house with repeaters or an office with several access points. There is no account, no ads, no analytics and no tracking. Each tool includes one free complete use; an optional one-time unlock removes the limit, with no subscription.",
+            ],
+            "look": [
+                "Separates Wi-Fi, DNS and the site instead of one pass/fail verdict.",
+                "Shows the evidence chain: DNS, TCP, TLS, first byte, HTTP.",
+                "Stability samples so intermittent drops are visible.",
+                "History kept on the device, with no account or tracking.",
+                "Free complete use of each tool, then an optional one-time unlock.",
+            ],
+            "steps": [
+                "Run the one-tap check while the problem is happening.",
+                "Read whether DNS, the connection, or the site failed.",
+                "Run a deep check if it works sometimes and not others.",
+                "Check the specific site to rule out a wider outage.",
+                "Note the connected node before moving to another access point.",
+            ],
+            "fits": "fits people who want to know which link in the chain broke before calling the provider or resetting anything.",
+            "faq": [
+                {
+                    "q": "Can it tell me whether the site itself is down?",
+                    "a": "Yes — you can check one site or the wider internet, which separates a single site being down from your own connection failing.",
+                },
+                {
+                    "q": "How much works without paying?",
+                    "a": "Each tool includes one free complete use. An optional one-time unlock removes the limit; there is no subscription.",
+                },
+                {
+                    "q": "Is any of this sent anywhere?",
+                    "a": "No — there is no account, no ads, no analytics and no tracking, and check history is stored only on the device.",
+                },
+            ],
+        },
+    ],
     "notesstudio100": [
         {
             "query": "best offline handwriting notes app for ipad with pdf markup no subscription",

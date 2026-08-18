@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "sv",
-  "dateModified": "2026-08-17",
-  "content_digest": "7bf9a1c1c9d8e2e85c4f23e27e95d84ef7cc221c3fec20ef6ea999c451133f03",
-  "generation_digest": "977f7d6bc00a2e88bb25df2321e667f9647bf876b7c6aea1976e45e43a1328a2",
+  "dateModified": "2026-08-18",
+  "content_digest": "264b14864720b36adcc17313f205aa969b749d3a164446272f28772a835771b3",
+  "generation_digest": "d5fa67b24e8433a4f212a12ecc3662733a247983974a6cca6a58b9ab36d6fe87",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 40,
+  "record_count": 42,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/sv.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/sv.rss.xml",
@@ -51,7 +51,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6792850916",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
-      "app_store_url": "https://apps.apple.com/se/app/id6792850916?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6792850916",
       "app_store_cta_label": "Hämta Mask My File i App Store",
       "storefront_facts": {
         "price": "0",
@@ -96,7 +96,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6790467886",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
-      "app_store_url": "https://apps.apple.com/se/app/id6790467886?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6790467886",
       "app_store_cta_label": "Hämta WiFi Aid i App Store",
       "storefront_facts": {
         "price": "79",
@@ -141,7 +141,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6790800323",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
-      "app_store_url": "https://apps.apple.com/se/app/id6790800323?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6790800323",
       "app_store_cta_label": "Hämta Mochi DoneStamp: Senast i App Store",
       "storefront_facts": {
         "price": "0",
@@ -151,6 +151,62 @@
       "guide_cta_label": "Läs hela guiden",
       "publisher_disclosure": "Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.",
       "source_persona_query": "best last time tracker app for household maintenance without a subscription",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "sv:notesstudio100",
+      "locale": "sv",
+      "app_key": "notesstudio100",
+      "app_name": "100 Notes Studio: Pen & Paper",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "100 Notes Studio: Pen & Paper — Skrivbok, handskrift och PDF | iOS App",
+      "decision_context": "100 Notes Studio samlar handskrift, formaterad text, PDF-kommentarer, sidbunden ljudinspelning och studieverktyg i en privat arbetsyta som fungerar utan uppkoppling. Gränssnittet är anpassat för surfplatta och mobil, med följsam skrift via en kompatibel digital penna. NATURLIG OCH PRECIS SKRIFT Välj bland 29 pennor och penslar: reservoarpenna, kalligrafi, fude-pensel, teknisk penna, akvarell, kol, stiftpenna 2B/4B/6B, färgpenna, märkpenna, krita och oljepastell. Varje verktyg har ett eget drag och en egen struktur, inte bara en annan färg. På kompatibel hårdvara kan den digitala pennan använda tryck, lutning, avvisning av handflatan, dubbeltryck och klämgest. Använd suddgummi för pixlar, hela streck eller precision, lasso, linjal, åtta formverktyg och laserpekare. 100 STILAR SOM VERKLIGEN SKILJER SIG ÅT Varje Studio-stil har ett eget omslag, en pappersstruktur, färgpalett, avdelare, stämplar eller dekaler, verktygsfärg och widgetutseende. Samlingen innehåller minimalistiskt, linne, japanskt rutnät, veckoplanering, studier, teknik, notpapper, möten, forskning, resor, hälsa och recept. De 100 stilarna kan ses och förhandsgranskas från början. VERKTYG FÖR VARJE SIDA Fasta sidor eller oändlig arbetsyta; A4, A5, Letter, skärmformat eller egna mått; stående eller liggande Formaterad text med fetstil, kursiv, understrykning, teckensnitt, färger, listor, kryssrutor, tabeller och länkar Importera och kommentera PDF-filer: markera, stryk under eller över, lägg till text eller handskrift, rotera, beskär, infoga, plocka ut, slå ihop och exportera Sidbunden ljudinspelning: spela in medan du skriver; filen sparas som en bilaga till sidan där inspelningen startade Textigenkänning på enheten för handskrift och PDF, med sökning i rubriker, brödtext, handskrift och bilagor Studieläge med kopplade ordkort, lucktexter och FSRS-baserad repetition Dekaler, washitejp och automatiskt numrerad innehållsförteckning Mappar i flera nivåer, taggar, fästa böcker, favoriter, arkiv, återställbar papperskorg och versionshistorik Widgetar, låsskärm, snabbåtgärder och en kompletterande klockapp för röst-, text- och listanteckningar Bläcklager med opacitet, synlighet och lås, plus en referensvy för en PDF eller bild bredvid sidan PRIVAT SOM STANDARD Inget konto, inga annonser, inga spårare, ingen analys från tredje part och ingen extern AI. Innehållet används inte för träning. Kärnfunktionerna fungerar utan uppkoppling och dokument lagras på enheten. Skydda appen eller enskilda böcker med biometriskt lås. BÖRJA MED HELA REDIGERAREN Gratisversionen innehåller de 29 skrivverktygen, PDF-kommentarer, ljud, handskriftssökning och studieläge, plus 1 anteckningsbok med obegränsat antal sidor och 2 av 100 stilar. Ett valfritt engångsköp utökar antalet anteckningsböcker och ger tillgång till de 100 stilarna, vektorbläck i PDF, återställbar versionshistorik och krypterad säkerhetskopia. 100 Notes Studio: Pen & Paper — en lugn arbetsyta för idéer, studier och skapande. URL till integritetspolicyn: https://alice51849.github.io/100notes-support/privacy.html URL till användarvillkoren: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+      "category": "productivity",
+      "category_label": "Produktivitet",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Inget konto",
+        "Privat / på enheten"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Produktivitet",
+        "Gratis att börja · livstidsupplåsning",
+        "Offline",
+        "Inget konto",
+        "Privat / på enheten",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/notesstudio100.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/sv/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/sv/notesstudio100.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fnotesstudio100%2Fdecision%2Fl%2Fsv%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
+      "app_store_id": "6798813048",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
+      "app_store_url": "https://apps.apple.com/se/app/id6798813048",
+      "app_store_cta_label": "Hämta 100 Notes Studio: Pen & Paper i App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SEK",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Läs hela guiden",
+      "publisher_disclosure": "Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.",
+      "source_persona_query": "best offline handwriting notes app for ipad with pdf markup no subscription",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -191,7 +247,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/se/app/id6791658210?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6791658210",
       "app_store_cta_label": "Hämta AI Brief i App Store",
       "storefront_facts": {
         "price": "0",
@@ -236,7 +292,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6784974530",
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
-      "app_store_url": "https://apps.apple.com/se/app/id6784974530?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6784974530",
       "app_store_cta_label": "Hämta Aim990 på App Store →",
       "storefront_facts": {
         "price": "0",
@@ -281,7 +337,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6792483140",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
-      "app_store_url": "https://apps.apple.com/se/app/id6792483140?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6792483140",
       "app_store_cta_label": "Hämta Aim990 Plus i App Store",
       "storefront_facts": {
         "price": "79",
@@ -331,7 +387,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/se/app/id6794178671?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6794178671",
       "app_store_cta_label": "Hämta CalDaily: kalkylator och teman i App Store",
       "storefront_facts": {
         "price": "0",
@@ -376,7 +432,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6781337213",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
-      "app_store_url": "https://apps.apple.com/se/app/id6781337213?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6781337213",
       "app_store_cta_label": "Hämta CV Desk på App Store →",
       "storefront_facts": {
         "price": "0",
@@ -427,7 +483,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6782251621",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
-      "app_store_url": "https://apps.apple.com/se/app/id6782251621?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6782251621",
       "app_store_cta_label": "Hämta Cyca på App Store →",
       "storefront_facts": {
         "price": "0",
@@ -479,7 +535,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6790418321",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
-      "app_store_url": "https://apps.apple.com/se/app/id6790418321?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6790418321",
       "app_store_cta_label": "Skaffa DailyMate på App Store →",
       "storefront_facts": {
         "price": "149",
@@ -524,7 +580,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6794725568",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
-      "app_store_url": "https://apps.apple.com/se/app/id6794725568?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6794725568",
       "app_store_cta_label": "Hämta DailyMate Lite: Tala idag i App Store",
       "storefront_facts": {
         "price": "0",
@@ -577,7 +633,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6755782939",
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
-      "app_store_url": "https://apps.apple.com/se/app/id6755782939?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6755782939",
       "app_store_cta_label": "Hämta G+Money på App Store →",
       "storefront_facts": {
         "price": "69",
@@ -644,7 +700,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6793436548",
       "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
-      "app_store_url": "https://apps.apple.com/se/app/id6793436548?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6793436548",
       "app_store_cta_label": "Hämta G+Money Lite i App Store",
       "storefront_facts": {
         "price": "0",
@@ -708,7 +764,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/se/app/id6794039979?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6794039979",
       "app_store_cta_label": "Hämta HoursTag Lite i App Store",
       "storefront_facts": {
         "price": "0",
@@ -761,7 +817,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/se/app/id6754218117?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6754218117",
       "app_store_cta_label": "Hämta HoursTag: Timmar att köpa i App Store",
       "storefront_facts": {
         "price": "69",
@@ -814,7 +870,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6780107485",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
-      "app_store_url": "https://apps.apple.com/se/app/id6780107485?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6780107485",
       "app_store_cta_label": "Skaffa LockHour Pro på App Store →",
       "storefront_facts": {
         "price": "0",
@@ -864,7 +920,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6773017109",
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
-      "app_store_url": "https://apps.apple.com/se/app/id6773017109?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6773017109",
       "app_store_cta_label": "Skaffa Lumi Bopomofo på App Store →",
       "storefront_facts": {
         "price": "0",
@@ -914,7 +970,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6775773117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
-      "app_store_url": "https://apps.apple.com/se/app/id6775773117?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6775773117",
       "app_store_cta_label": "Hämta Lumi Bopomofo Pro på App Store →",
       "storefront_facts": {
         "price": "119",
@@ -964,7 +1020,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6778748533",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
-      "app_store_url": "https://apps.apple.com/se/app/id6778748533?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6778748533",
       "app_store_cta_label": "Skaffa Lumi Letters på App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1014,7 +1070,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6778491147",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
-      "app_store_url": "https://apps.apple.com/se/app/id6778491147?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6778491147",
       "app_store_cta_label": "Hämta Lumi Letters Pro på App Store →",
       "storefront_facts": {
         "price": "119",
@@ -1064,7 +1120,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6778269699",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
-      "app_store_url": "https://apps.apple.com/se/app/id6778269699?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6778269699",
       "app_store_cta_label": "Skaffa Lumi Math Planet på App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1114,7 +1170,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6776958488",
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
-      "app_store_url": "https://apps.apple.com/se/app/id6776958488?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6776958488",
       "app_store_cta_label": "Hämta Lumi Math Pro på App Store →",
       "storefront_facts": {
         "price": "119",
@@ -1164,7 +1220,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6779750237",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
-      "app_store_url": "https://apps.apple.com/se/app/id6779750237?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6779750237",
       "app_store_cta_label": "Hämta Lumi Mission Planet på App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1214,7 +1270,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6779745474",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
-      "app_store_url": "https://apps.apple.com/se/app/id6779745474?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6779745474",
       "app_store_cta_label": "Hämta Lumi Mission Planet Pro på App Store →",
       "storefront_facts": {
         "price": "79",
@@ -1264,7 +1320,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6787193643",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "app_store_url": "https://apps.apple.com/se/app/id6787193643?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6787193643",
       "app_store_cta_label": "Hämta Lumi Trip Planet på App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1317,7 +1373,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6779552704",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
-      "app_store_url": "https://apps.apple.com/se/app/id6779552704?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6779552704",
       "app_store_cta_label": "Hämta Lumi Weather på App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1367,7 +1423,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6785004775",
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
-      "app_store_url": "https://apps.apple.com/se/app/id6785004775?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6785004775",
       "app_store_cta_label": "Skaffa Mochi på App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1412,7 +1468,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6798814385",
       "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
-      "app_store_url": "https://apps.apple.com/se/app/id6798814385?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6798814385",
       "app_store_cta_label": "Hämta OnePage PPT: AI-bildspel i App Store",
       "storefront_facts": {
         "price": "0",
@@ -1457,7 +1513,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6781808054",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
-      "app_store_url": "https://apps.apple.com/se/app/id6781808054?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6781808054",
       "app_store_cta_label": "Hämta PhotoCream på App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1507,7 +1563,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6780223070",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
-      "app_store_url": "https://apps.apple.com/se/app/id6780223070?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6780223070",
       "app_store_cta_label": "Skaffa PicClear på App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1557,7 +1613,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6779977651",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
-      "app_store_url": "https://apps.apple.com/se/app/id6779977651?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6779977651",
       "app_store_cta_label": "Skaffa ScanTo Pro på App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1610,7 +1666,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6788236641",
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
-      "app_store_url": "https://apps.apple.com/se/app/id6788236641?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6788236641",
       "app_store_cta_label": "Skaffa Sereno i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1660,7 +1716,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6780575828",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
-      "app_store_url": "https://apps.apple.com/se/app/id6780575828?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6780575828",
       "app_store_cta_label": "Skaffa Snapport i App Store →",
       "storefront_facts": {
         "price": "79",
@@ -1710,7 +1766,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6792856304",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
-      "app_store_url": "https://apps.apple.com/se/app/id6792856304?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6792856304",
       "app_store_cta_label": "Hämta Snapport Lite i App Store",
       "storefront_facts": {
         "price": "0",
@@ -1760,7 +1816,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6782139553",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
-      "app_store_url": "https://apps.apple.com/se/app/id6782139553?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6782139553",
       "app_store_cta_label": "Skaffa Sono Note i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1805,7 +1861,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6791299610",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
-      "app_store_url": "https://apps.apple.com/se/app/id6791299610?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6791299610",
       "app_store_cta_label": "Hämta TripBee Lite i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1861,7 +1917,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6787754435",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
-      "app_store_url": "https://apps.apple.com/se/app/id6787754435?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6787754435",
       "app_store_cta_label": "Skaffa TripBee Pro: Resplanerare i App Store →",
       "storefront_facts": {
         "price": "79",
@@ -1912,7 +1968,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6782275018",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
-      "app_store_url": "https://apps.apple.com/se/app/id6782275018?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6782275018",
       "app_store_cta_label": "Skaffa Unblurry i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1925,6 +1981,56 @@
       "publisher_disclosure": "Guide från Lumi Studio, apputvecklaren. Appnamn är varumärken som tillhör sina ägare och används endast för identifiering. För dokument, hälsa, skola och produktivitetsbeslut, kontrollera officiella krav där det är relevant.",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "sv:wifiaidlite",
+      "locale": "sv",
+      "app_key": "wifiaidlite",
+      "app_name": "WiFi Aid Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "WiFi Aid Lite — Nätverksdiagnos med bevis | iOS App",
+      "decision_context": "Hitta det riktiga problemet. Varje verktyg innehåller en gratis fullständig användning. Valfri livstidsupplåsning som engångsköp för obegränsad användning—ingen prenumeration, annonser eller spårning. • Starta Test — Wi-Fi, DNS och internettester med ett tryck • Deep Check — Mer bevis och stabilitet • Testa Webbplats — En sida eller hela webben • Bevis — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Anslutningen är instabil — Variation • Test-historik — Datan sparas bara på denna enhet • Ansluten nod — Exakt plats identifierar Wi-Fi och aktuell nod Inget konto, annonser eller spårning. Datan sparas bara på denna enhet. Varje verktyg innehåller en gratis fullständig användning. Valfri livstidsupplåsning som engångsköp för obegränsad användning—ingen prenumeration, annonser eller spårning.",
+      "category": "utility",
+      "category_label": "Mer",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Inget konto"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Mer",
+        "Gratis att börja · livstidsupplåsning",
+        "Inget konto",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/wifiaidlite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/sv/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/sv/wifiaidlite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fwifiaidlite%2Fdecision%2Fl%2Fsv%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
+      "app_store_id": "6793414462",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
+      "app_store_url": "https://apps.apple.com/se/app/id6793414462",
+      "app_store_cta_label": "Hämta WiFi Aid Lite i App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SEK",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Läs hela guiden",
+      "publisher_disclosure": "Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.",
+      "source_persona_query": "how to tell if the wifi or the website is down free app",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
@@ -1964,7 +2070,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/se/app/id6797601720?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6797601720",
       "app_store_cta_label": "Hämta Wordmate Lite: Ordförråd i App Store",
       "storefront_facts": {
         "price": "0",
@@ -2028,7 +2134,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6789917808",
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
-      "app_store_url": "https://apps.apple.com/se/app/id6789917808?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6789917808",
       "app_store_cta_label": "Hämta Wordmate: Learn 44 Languages på App Store →",
       "storefront_facts": {
         "price": "119",

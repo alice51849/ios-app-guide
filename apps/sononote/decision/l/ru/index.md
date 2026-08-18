@@ -2,7 +2,7 @@
 title: "лучшее приложение для голосовых заметок с автоматическим резюме встреч на iPhone"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/ru/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Лично / на устройстве
 - App Store · Бесплатно
 
-[Скачайте Sono Note в App Store →](https://apps.apple.com/ru/app/id6782139553?pt=118326163&ct=iag_data_ru&mt=8)
+[Скачайте Sono Note в App Store →](https://apps.apple.com/ru/app/id6782139553)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

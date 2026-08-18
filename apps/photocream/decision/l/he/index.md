@@ -2,7 +2,7 @@
 title: "עורך תמונות בסגנון פילם בתשלום חד-פעמי לטיולים באייפון"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/he/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - התחלה ללא תשלום · פתיחה לכל החיים
 - App Store · בחינם
 
-[קבל את PhotoCream ב-App Store →](https://apps.apple.com/il/app/id6781808054?pt=118326163&ct=iag_data_he&mt=8)
+[קבל את PhotoCream ב-App Store →](https://apps.apple.com/il/app/id6781808054)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

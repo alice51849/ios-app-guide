@@ -2,7 +2,7 @@
 title: "G+Money Lite — પ્રવાસ ખર્ચ અને ચલણ | iOS App"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/gu-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -23,7 +23,7 @@ G+Money Lite — સ્માર્ટ મુસાફરી ચલણ અને
 - Apple Watch
 - App Store · મફત
 
-[App Store પરથી G+Money Lite મેળવો](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=iag_data_gu_in&mt=8)
+[App Store પરથી G+Money Lite મેળવો](https://apps.apple.com/in/app/id6793436548)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/gmoneylite.html)
 

@@ -2,7 +2,7 @@
 title: "iPhone-এর জন্য সেরা ট্রিপ ইটিনারারি প্ল্যানার অ্যাপ"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/bn-BD/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - কোনও অ্যাকাউন্ট নেই
 - গোপনীয় / ডিভাইসে
 
-[App Store-এ TripBee Pro: ট্রিপ প্ল্যানার পান →](https://apps.apple.com/app/id6787754435?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store-এ TripBee Pro: ট্রিপ প্ল্যানার পান →](https://apps.apple.com/app/id6787754435)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

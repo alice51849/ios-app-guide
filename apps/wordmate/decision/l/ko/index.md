@@ -2,7 +2,7 @@
 title: "Apple Watch로 바쁜 출퇴근길에 적합한 최고의 단어 학습 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/ko/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,7 +22,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ￦15,000
 
-[App Store에서 Wordmate: 44개 언어 학습 받기 →](https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=iag_data_ko&mt=8)
+[App Store에서 Wordmate: 44개 언어 학습 받기 →](https://apps.apple.com/kr/app/id6789917808)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

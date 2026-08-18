@@ -2,7 +2,7 @@
 title: "తల్లిదండ్రులు పిల్లలతో బయట సమయం ప్లాన్ చేయడానికి సహాయపడే ఉత్తమ వాతావరణ యాప్"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/te-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ట్రాకింగ్ లేదు
 - App Store · ఉచితం
 
-[App Storeలో Lumi Weather పొందండి →](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=iag_data_te_in&mt=8)
+[App Storeలో Lumi Weather పొందండి →](https://apps.apple.com/in/app/id6779552704)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

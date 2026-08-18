@@ -2,7 +2,7 @@
 title: "best free travel expense tracker with currency conversion for iphone"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ko/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.
 
 - 금융 & 여행
-- 무료로 시작 · 평생 잠금 해제
+- 무료로 시작 · 한 번 구매 잠금 해제
 - 오프라인
 - 계정 없음
 - 추적 없음
@@ -23,7 +23,7 @@ A useful free travel-expense test should include the complete local-to-home-curr
 - Apple Watch
 - App Store · 무료
 
-[Get G+Money Lite on the App Store →](https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=iag_data_ko&mt=8)
+[Get G+Money Lite on the App Store →](https://apps.apple.com/kr/app/id6793436548)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html)
 

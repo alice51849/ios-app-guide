@@ -2,7 +2,7 @@
 title: "適合家長規劃親子戶外時間的最佳天氣 App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hant/lumiweather.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 video_url: "https://files.catbox.moe/yyac60.mp4"
 duration: "PT16S"
 app_store_id: "6779552704"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [觀看影片](https://files.catbox.moe/yyac60.mp4)
 
-[在 App Store 取得 Lumi Weather →](https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=iag_video_zh_hant&mt=8)
+[在 App Store 取得 Lumi Weather →](https://apps.apple.com/tw/app/id6779552704)
 
 [開啟 App 指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

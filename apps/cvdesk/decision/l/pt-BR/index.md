@@ -2,7 +2,7 @@
 title: "melhor app construtor de currículo para quem muda de carreira 2026"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/pt-BR/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Quando você muda de área, o problema do currículo é diferente: sua experiên
 - Grátis para começar · desbloqueio permanente
 - App Store · Grátis
 
-[Obtenha o CV Desk na App Store →](https://apps.apple.com/br/app/id6781337213?pt=118326163&ct=iag_data_pt_br&mt=8)
+[Obtenha o CV Desk na App Store →](https://apps.apple.com/br/app/id6781337213)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-resume-builder-app-for-career-changers-2026.html)
 

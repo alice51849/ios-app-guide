@@ -3,7 +3,7 @@
 > Informasi terstruktur tiap aplikasi iOS — fitur, harga, dan FAQ.
 
 locale: id
-apps: 40
+apps: 42
 - Direktori aplikasi: https://alice51849.github.io/ios-app-guide/id/tools/private-pay-once-iphone-app-finder.html
 - Direktori aplikasi · PWA: https://alice51849.github.io/ios-app-guide/id/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/id.jsonld
@@ -27,6 +27,10 @@ apps: 40
 - Direktori aplikasi · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Direktori aplikasi · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/id/notesstudio100.html) — Catatan tulis tangan & PDF
+  - Ruang menulis privat dan offline dengan 29 pena serta kuas, 100 gaya buku, anotasi PDF, rekaman melekat pada halaman, dan kartu belajar dengan pengulangan berkala.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6798813048
 - [AI Brief](https://alice51849.github.io/ios-app-guide/id/aibriefpack.html) — File jadi konteks yang jelas
   - Kumpulkan tangkapan layar, dokumen, dan catatan. Simpan faktanya. Tinjau detail pribadi. Salin satu brief yang jelas.
   - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
@@ -179,6 +183,10 @@ apps: 40
   - Temukan penyebab paling mungkin lewat pemeriksaan jalur, DNS, TCP, TLS, waktu, dan kestabilan. Sekali bayar di muka, tanpa langganan, iklan, atau pelacakan.
   - Harga: Unduhan berbayar dengan satu harga di muka dan tanpa langganan.
   - App Store: https://apps.apple.com/id/app/id6790467886
+- [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/id/wifiaidlite.html) — Diagnosis jaringan berbukti
+  - Temukan masalah aslinya. Tiap alat: satu penggunaan penuh gratis. Buka kunci seumur hidup opsional untuk penggunaan tanpa batas—tanpa langganan.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6793414462
 - [Wordmate Lite 5 Kata Sehari](https://alice51849.github.io/ios-app-guide/id/wordmatelite.html) — 44 bahasa, satu menit per hari
   - Hari ini cukup lima. Satu menit selesai, lalu kerikilnya menyusun jalan sendiri. Ada 44 bahasa, 14 tema, 3 tingkat. Tanpa akun dan tanpa koneksi.
   - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.

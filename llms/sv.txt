@@ -3,7 +3,7 @@
 > Strukturerad info om varje iOS-app — funktioner, pris och FAQ.
 
 locale: sv
-apps: 40
+apps: 42
 - Appkatalog: https://alice51849.github.io/ios-app-guide/sv/tools/private-pay-once-iphone-app-finder.html
 - Appkatalog · PWA: https://alice51849.github.io/ios-app-guide/sv/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/sv.jsonld
@@ -27,6 +27,10 @@ apps: 40
 - Appkatalog · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Appkatalog · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/sv/notesstudio100.html) — Skrivbok, handskrift och PDF
+  - Skriv för hand, kommentera PDF-filer, ordna dina böcker och spela in ljud som sparas med sidan. En privat arbetsyta som fungerar utan uppkoppling.
+  - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
+  - App Store: https://apps.apple.com/se/app/id6798813048
 - [AI Brief](https://alice51849.github.io/ios-app-guide/sv/aibriefpack.html) — Filer till tydlig kontext
   - Samla skärmbilder, dokument och anteckningar. Behåll fakta. Granska privata uppgifter. Kopiera ett tydligt underlag.
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
@@ -179,6 +183,10 @@ apps: 40
   - Hitta den troligaste orsaken med oberoende tester av vägar, DNS, TCP, TLS, svarstid och stabilitet. En betalning i förskott, utan abonnemang, reklam eller spårning.
   - Pris: Betald nedladdning till ett engångspris, utan prenumeration.
   - App Store: https://apps.apple.com/se/app/id6790467886
+- [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/sv/wifiaidlite.html) — Nätverksdiagnos med bevis
+  - Hitta det riktiga problemet. Varje verktyg: en gratis fullständig användning. Valfri livstidsupplåsning för obegränsad användning—ingen prenumeration.
+  - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.
+  - App Store: https://apps.apple.com/se/app/id6793414462
 - [Wordmate Lite: Ordförråd](https://alice51849.github.io/ios-app-guide/sv/wordmatelite.html) — Fem nya ord om dagen
   - Fem ord. En minut. Ett steg du faktiskt ser. Inga kortlekar att bygga och ingen repetitionskö som växer. Öppna appen, gå dagens stig, sedan är det klart.
   - Pris: Gratis nedladdning, ett engångsköp låser upp allt. Inga prenumerationsfällor.

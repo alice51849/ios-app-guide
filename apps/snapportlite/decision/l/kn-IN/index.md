@@ -2,7 +2,7 @@
 title: "Snapport Lite — ಮನೆದಲ್ಲಿ ಐಡಿ ಫೋಟೋಗಳನ್ನು ರಚಿಸಿ | iOS App"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/kn-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Snapport Lite - ಮಾರ್ಗದರ್ಶನದ ಗಾತ್ರ, ಹಿನ್�
 - ಆಫ್‌ಲೈನ್
 - App Store · ಉಚಿತ
 
-[App Store ನಲ್ಲಿ Snapport Lite ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_kn_in&mt=8)
+[App Store ನಲ್ಲಿ Snapport Lite ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6792856304)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/snapportlite.html)
 

@@ -2,7 +2,7 @@
 title: "migliore gioco educativo per bambini senza pubblicità su iPhone"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/it/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Per un bambino piccolo, il problema principale sono pubblicità e raccolta dati 
 - Nessuna pubblicità
 - App Store · Gratis
 
-[Scarica Lumi Letters dall'App Store →](https://apps.apple.com/it/app/id6778748533?pt=118326163&ct=iag_data_it&mt=8)
+[Scarica Lumi Letters dall'App Store →](https://apps.apple.com/it/app/id6778748533)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

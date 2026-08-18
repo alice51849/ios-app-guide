@@ -2,7 +2,7 @@
 title: "아이폰용 최고의 여행 일정 계획 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/ko/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - 프라이빗 / 기기 내
 - App Store · ￦9,900
 
-[App Store에서 TripBee Pro: 여행 플래너 받기 →](https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=iag_data_ko&mt=8)
+[App Store에서 TripBee Pro: 여행 플래너 받기 →](https://apps.apple.com/kr/app/id6787754435)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

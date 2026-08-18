@@ -2,7 +2,7 @@
 title: "η καλύτερη πρακτική εφαρμογή φράσεων γλωσσών για ταξιδιώτες με Apple Watch"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/el/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · 12,99 €
 
-[Κατεβάστε το DailyMate από το App Store →](https://apps.apple.com/gr/app/id6790418321?pt=118326163&ct=iag_data_el&mt=8)
+[Κατεβάστε το DailyMate από το App Store →](https://apps.apple.com/gr/app/id6790418321)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

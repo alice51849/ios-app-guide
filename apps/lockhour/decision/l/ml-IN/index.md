@@ -2,7 +2,7 @@
 title: "പഠന സമയത്ത് സോഷ്യൽ മീഡിയ ബ്ലോക്ക് ചെയ്യാൻ മികച്ച ആപ്പ് iPhone"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/ml-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് LockHour Pro നേടുക →](https://apps.apple.com/in/app/id6780107485?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് LockHour Pro നേടുക →](https://apps.apple.com/in/app/id6780107485)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

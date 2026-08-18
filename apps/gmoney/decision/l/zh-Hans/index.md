@@ -2,7 +2,7 @@
 title: "无需订阅的最佳旅行预算追踪应用 iPhone"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/zh-Hans/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - 无需账户
 - App Store · ¥38.00
 
-[在 App Store 获取 G+Money →](https://apps.apple.com/cn/app/id6755782939?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在 App Store 获取 G+Money →](https://apps.apple.com/cn/app/id6755782939)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

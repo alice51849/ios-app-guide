@@ -2,7 +2,7 @@
 title: "适合双语儿童的最佳完整注音App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/zh-Hans/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 付费下载
 - 无广告
 
-[在App Store获取Lumi Bopomofo Pro →](https://apps.apple.com/app/id6775773117?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在App Store获取Lumi Bopomofo Pro →](https://apps.apple.com/app/id6775773117)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-complete-zhuyin-app-for-bilingual-children.html)
 

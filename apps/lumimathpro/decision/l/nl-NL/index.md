@@ -2,7 +2,7 @@
 title: "beste complete rekenapp voor kleuters en onderbouw"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/nl-NL/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Een complete vroege rekenapp moet tellen, getalbegrip en eerste bewerkingen late
 - Geen advertenties
 - App Store · € 9,99
 
-[Lumi Math Pro downloaden in de App Store →](https://apps.apple.com/nl/app/id6776958488?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Lumi Math Pro downloaden in de App Store →](https://apps.apple.com/nl/app/id6776958488)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

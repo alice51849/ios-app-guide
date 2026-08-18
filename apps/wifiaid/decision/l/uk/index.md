@@ -2,7 +2,7 @@
 title: "WiFi Aid — Діагностика мережі з доказами | iOS App"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/uk/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Платне завантаження
 - App Store · 6,99 USD
 
-[Завантажте WiFi Aid з App Store](https://apps.apple.com/ua/app/id6790467886?pt=118326163&ct=iag_data_uk&mt=8)
+[Завантажте WiFi Aid з App Store](https://apps.apple.com/ua/app/id6790467886)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/wifiaid.html)
 

@@ -2,7 +2,7 @@
 title: "WiFi Aid — Diagnoza omrežja in dokazi | iOS App"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/sl-SI/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Odkrijte najverjetnejši vzrok težave z neodvisnimi preverjanji DNS, TCP, TLS, 
 - Plačljiv prenos
 - App Store · 6,99 €
 
-[Prenesite WiFi Aid iz trgovine App Store](https://apps.apple.com/si/app/id6790467886?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite WiFi Aid iz trgovine App Store](https://apps.apple.com/si/app/id6790467886)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/wifiaid.html)
 

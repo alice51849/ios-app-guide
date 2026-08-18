@@ -2,7 +2,7 @@
 title: "aplikasi pembina resume terbaik untuk penukar kerjaya 2026"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/ms/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Apabila anda menukar bidang, masalah resume berbeza: pengalaman anda nyata tetap
 - Percuma untuk bermula · buka kunci kekal
 - App Store · Percuma
 
-[Dapatkan CV Desk di App Store →](https://apps.apple.com/my/app/id6781337213?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan CV Desk di App Store →](https://apps.apple.com/my/app/id6781337213)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-resume-builder-app-for-career-changers-2026.html)
 

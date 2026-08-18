@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za fotografiju putovnice za bebe i malu djecu kod kuće"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/hr/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Za bebinu fotografiju putovnice nitko drugi ne smije biti u kadru, a pozadina mo
 - Privatno / na uređaju
 - App Store · 6,99 €
 
-[Preuzmite Snapport u App Storeu →](https://apps.apple.com/hr/app/id6780575828?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite Snapport u App Storeu →](https://apps.apple.com/hr/app/id6780575828)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

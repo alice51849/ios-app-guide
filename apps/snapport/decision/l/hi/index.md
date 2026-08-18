@@ -2,7 +2,7 @@
 title: "बच्चों और शिशुओं के लिए घर पर सबसे अच्छा पासपोर्ट फोटो ऐप"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/hi/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - निजी / डिवाइस पर
 - App Store · ₹ 599
 
-[App Store से Snapport प्राप्त करें →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=iag_data_hi&mt=8)
+[App Store से Snapport प्राप्त करें →](https://apps.apple.com/in/app/id6780575828)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

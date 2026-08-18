@@ -2,7 +2,7 @@
 title: "Mask My File — Skryjte citlivé informace | iOS App"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/cs/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Sdílejte bezpečně a přitom zachovejte užitečný kontext. Mask My File najd
 - Soukromé / v zařízení
 - App Store · Zdarma
 
-[Stáhněte si Mask My File v App Storu](https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte si Mask My File v App Storu](https://apps.apple.com/cz/app/id6792850916)
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/maskmyfile.html)
 

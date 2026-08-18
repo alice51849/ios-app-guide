@@ -2,7 +2,7 @@
 title: "best last time tracker app for household maintenance without a subscription"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/id/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ For chores and upkeep that do not belong on a rigid calendar, a useful tracker r
 - Gratis untuk mulai · buka kunci permanen
 - App Store · Gratis
 
-[Get Mochi DoneStamp on the App Store →](https://apps.apple.com/id/app/id6790800323?pt=118326163&ct=iag_data_id&mt=8)
+[Get Mochi DoneStamp on the App Store →](https://apps.apple.com/id/app/id6790800323)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html)
 

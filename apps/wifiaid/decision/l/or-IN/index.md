@@ -2,7 +2,7 @@
 title: "WiFi Aid — ନେଟୱର୍କ ନିଦାନ ଓ ପ୍ରମାଣ | iOS App"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/or-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ପୈସା ଦେଇ ଡାଉନଲୋଡ୍
 - App Store · ₹ 599
 
-[App Store ରୁ WiFi Aid ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_or_in&mt=8)
+[App Store ରୁ WiFi Aid ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6790467886)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/wifiaid.html)
 

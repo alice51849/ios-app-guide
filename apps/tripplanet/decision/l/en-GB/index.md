@@ -2,7 +2,7 @@
 title: "best travel activity app for kids on family trips"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/en-GB/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 Parents travelling with young children need activities that turn packing, waiting and discovering a new place into part of the adventure instead of another source of stress — Lumi Trip Planet is built for this.
 
 - Children & learning
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - No adverts
 - App Store · Free
 
-[Get Lumi Trip Planet on the App Store →](https://apps.apple.com/gb/app/id6787193643?pt=118326163&ct=iag_data_en_gb&mt=8)
+[Get Lumi Trip Planet on the App Store →](https://apps.apple.com/gb/app/id6787193643)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

@@ -3,7 +3,7 @@
 > Strukturert informasjon om funksjoner, priser og vanlige spørsmål for hver iOS-app.
 
 locale: no
-apps: 40
+apps: 42
 - Appkatalog: https://alice51849.github.io/ios-app-guide/no/tools/private-pay-once-iphone-app-finder.html
 - Appkatalog · PWA: https://alice51849.github.io/ios-app-guide/no/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/no.jsonld
@@ -27,6 +27,10 @@ apps: 40
 - Appkatalog · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Appkatalog · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/no/notesstudio100.html) — Notatbok, håndskrift og PDF
+  - Skriv for hånd, merk PDF-er og lag lydopptak som blir liggende på siden der de ble gjort. Organiser notatbøker, søk lokalt og repeter uten nett.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner permanent—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6798813048
 - [AI Brief](https://alice51849.github.io/ios-app-guide/no/aibriefpack.html) — Filer til tydelig kontekst
   - Samle skjermbilder, dokumenter og notater. Behold fakta. Gå gjennom private opplysninger. Kopier én tydelig oppsummering.
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner permanent—uten abonnement.
@@ -179,6 +183,10 @@ apps: 40
   - Finn den mest sannsynlige årsaken med uavhengige tester av ruter, DNS, TCP, TLS, svartid og stabilitet. Én forhåndsbetaling, uten abonnement, reklame eller sporing.
   - Pris: Betalt nedlasting til én fast pris uten abonnement.
   - App Store: https://apps.apple.com/no/app/id6790467886
+- [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/no/wifiaidlite.html) — Nettverksdiagnose med bevis
+  - Finn det virkelige problemet. Hvert verktøy har én gratis full bruk. Valgfri livstidsopplåsing for ubegrenset bruk—ingen abonnement.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner permanent—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6793414462
 - [Wordmate Lite: Ordforråd](https://alice51849.github.io/ios-app-guide/no/wordmatelite.html) — Fem nye ord hver dag
   - Fem ord. Ett minutt. Ett skritt du faktisk ser. Ingen kort å lage og ingen kø av repetisjoner. Åpne appen, gå dagens sti, så er dagen unnagjort.
   - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner permanent—uten abonnement.

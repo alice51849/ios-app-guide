@@ -2,7 +2,7 @@
 title: "iPhone-ல் பயண உருவாக்குநர்களுக்கான ஒருமுறை கட்டணம் செலுத்தும் சிறந்த திரைப்பட புகைப்பட திருத்தி"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/ta-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்
 - App Store · இலவசம்
 
-[PhotoCream ஐ App Store-இல் பெறுங்கள் →](https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=iag_data_ta_in&mt=8)
+[PhotoCream ஐ App Store-இல் பெறுங்கள் →](https://apps.apple.com/in/app/id6781808054)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

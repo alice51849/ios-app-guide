@@ -2,7 +2,7 @@
 title: "Aim990 Plus — English Exam Practice Offline | iOS App"
 lang: "en-AU"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/en-AU/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Get comfortable working against the clock Aim990 Plus is a dedicated listening a
 - Paid download
 - App Store · $9.99
 
-[Get Aim990 Plus on the App Store](https://apps.apple.com/au/app/id6792483140?pt=118326163&ct=iag_data_en_au&mt=8)
+[Get Aim990 Plus on the App Store](https://apps.apple.com/au/app/id6792483140)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-AU/aim990plus.html)
 

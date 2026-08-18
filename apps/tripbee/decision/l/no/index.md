@@ -2,7 +2,7 @@
 title: "beste app for reiseplanlegger på iPhone"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/no/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ En god reiseplan-app gjør en rotete tur om til en klar dag-for-dag tidslinje �
 - Privat / på enheten
 - App Store · 79,00 kr
 
-[Last ned TripBee Pro: Reiseplanlegger i App Store →](https://apps.apple.com/no/app/id6787754435?pt=118326163&ct=iag_data_no&mt=8)
+[Last ned TripBee Pro: Reiseplanlegger i App Store →](https://apps.apple.com/no/app/id6787754435)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

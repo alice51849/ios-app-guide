@@ -3,7 +3,7 @@
 > Strukturerede oplysninger om funktioner, priser og ofte stillede spørgsmål for hver iOS-app.
 
 locale: da
-apps: 40
+apps: 42
 - Appoversigt: https://alice51849.github.io/ios-app-guide/da/tools/private-pay-once-iphone-app-finder.html
 - Appoversigt · PWA: https://alice51849.github.io/ios-app-guide/da/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld
@@ -27,6 +27,10 @@ apps: 40
 - Appoversigt · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Appoversigt · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/da/notesstudio100.html) — Håndskrift, noter og PDF
+  - Skriv og tegn med 29 karakterfulde værktøjer, markér i PDF'er, udforsk 100 stile og læs med ordkort. Lydoptagelser bliver på den side, hvor de blev optaget.
+  - Pris: Download gratis. Et engangskøb låser alle funktioner op permanent—uden abonnement.
+  - App Store: https://apps.apple.com/dk/app/id6798813048
 - [AI Brief](https://alice51849.github.io/ios-app-guide/da/aibriefpack.html) — Filer til klar kontekst
   - Saml skærmbilleder, dokumenter og noter. Behold fakta. Gennemgå private oplysninger. Kopiér ét tydeligt resumé.
   - Pris: Download gratis. Et engangskøb låser alle funktioner op permanent—uden abonnement.
@@ -179,6 +183,10 @@ apps: 40
   - Find den mest sandsynlige årsag med uafhængige test af ruter, DNS, TCP, TLS, svartid og stabilitet. Én forudbetaling, intet abonnement, reklamer eller sporing.
   - Pris: Betalt download til én fast pris uden abonnement.
   - App Store: https://apps.apple.com/dk/app/id6790467886
+- [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/da/wifiaidlite.html) — Netværksdiagnose med beviser
+  - Find det rigtige problem. Hvert værktøj har én gratis fuld brug. Valgfri livstidsoplåsning til ubegrænset brug—intet abonnement.
+  - Pris: Download gratis. Et engangskøb låser alle funktioner op permanent—uden abonnement.
+  - App Store: https://apps.apple.com/dk/app/id6793414462
 - [Wordmate Lite: Ordforråd](https://alice51849.github.io/ios-app-guide/da/wordmatelite.html) — Fem nye ord hver eneste dag
   - Fem ord. Ét minut. Et skridt du kan se. Ingen kartotekskort at bygge og ingen kø af gentagelser. Åbn appen, gå dagens sti, og så er den dag klaret.
   - Pris: Download gratis. Et engangskøb låser alle funktioner op permanent—uden abonnement.

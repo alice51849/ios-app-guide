@@ -2,7 +2,7 @@
 title: "아이폰 여행 크리에이터를 위한 일회성 결제 필름 사진 편집 앱 추천"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/photocream.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 video_url: "https://files.catbox.moe/1072ns.mp4"
 duration: "PT16S"
 app_store_id: "6781808054"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [영상 보기](https://files.catbox.moe/1072ns.mp4)
 
-[App Store에서 PhotoCream 받기 →](https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=iag_video_ko&mt=8)
+[App Store에서 PhotoCream 받기 →](https://apps.apple.com/kr/app/id6781808054)
 
 [앱 가이드 열기](https://alice51849.github.io/ios-app-guide/ko/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

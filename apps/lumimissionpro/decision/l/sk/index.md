@@ -2,7 +2,7 @@
 title: "najlepšia kompletná aplikácia na rannú a večernú rutinu pre deti"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/sk/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Bez reklám
 - App Store · 6,99 €
 
-[Získajte Lumi Mission Planet Pro v App Store →](https://apps.apple.com/sk/app/id6779745474?pt=118326163&ct=iag_data_sk&mt=8)
+[Získajte Lumi Mission Planet Pro v App Store →](https://apps.apple.com/sk/app/id6779745474)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

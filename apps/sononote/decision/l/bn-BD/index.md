@@ -2,7 +2,7 @@
 title: "iPhone-এ মিটিং সারাংশ তৈরি করে সেরা ভয়েস নোট অ্যাপ"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/bn-BD/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - বিনামূল্যে শুরু · আজীবন আনলক
 - গোপনীয় / ডিভাইসে
 
-[App Store-এ Sono Note পান →](https://apps.apple.com/app/id6782139553?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store-এ Sono Note পান →](https://apps.apple.com/app/id6782139553)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

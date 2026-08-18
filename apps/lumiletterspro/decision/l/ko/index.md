@@ -2,7 +2,7 @@
 title: "홈스쿨 유치원 준비를 위한 최고의 완전한 파닉스 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/ko/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 광고 없음
 - App Store · ￦15,000
 
-[App Store에서 Lumi Letters Pro 받기 →](https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=iag_data_ko&mt=8)
+[App Store에서 Lumi Letters Pro 받기 →](https://apps.apple.com/kr/app/id6778491147)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

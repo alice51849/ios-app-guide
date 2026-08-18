@@ -2,7 +2,7 @@
 title: "Apple Watch সহ ব্যস্ত যাত্রীদের জন্য সেরা শব্দভাণ্ডার অ্যাপ"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/bn-BD/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -21,7 +21,7 @@ publisher: "Lumi Studio"
 - উইজেট
 - Apple Watch
 
-[App Store-এ Wordmate: Learn 44 Languages পান →](https://apps.apple.com/app/id6789917808?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store-এ Wordmate: Learn 44 Languages পান →](https://apps.apple.com/app/id6789917808)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

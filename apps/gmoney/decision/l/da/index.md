@@ -2,7 +2,7 @@
 title: "bedste rejsebudget-app uden abonnement til iPhone"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/da/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ På en rejse har du brug for en budgetapp, der virker offline i et land uden dat
 - Ingen konto
 - App Store · 39,00 kr
 
-[Hent G+Money i App Store →](https://apps.apple.com/dk/app/id6755782939?pt=118326163&ct=iag_data_da&mt=8)
+[Hent G+Money i App Store →](https://apps.apple.com/dk/app/id6755782939)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

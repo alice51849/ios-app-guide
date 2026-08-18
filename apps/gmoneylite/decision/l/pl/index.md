@@ -2,7 +2,7 @@
 title: "G+Money Lite — Wydatki, budżet i waluty | iOS App"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/pl/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -23,7 +23,7 @@ G+Money Lite — Sprytny przelicznik walut i wydatków podróżnych Pieniądze w
 - Apple Watch
 - App Store · Bezpłatnie
 
-[Pobierz G+Money Lite z App Store](https://apps.apple.com/pl/app/id6793436548?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz G+Money Lite z App Store](https://apps.apple.com/pl/app/id6793436548)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/gmoneylite.html)
 

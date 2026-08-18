@@ -2,7 +2,7 @@
 title: "καλύτερη πλήρης εφαρμογή μαθηματικών για παιδιά προσχολικής ηλικίας και πρώτες τάξεις"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/el/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Χωρίς διαφημίσεις
 - App Store · 9,99 €
 
-[Αποκτήστε το Lumi Math Pro στο App Store →](https://apps.apple.com/gr/app/id6776958488?pt=118326163&ct=iag_data_el&mt=8)
+[Αποκτήστε το Lumi Math Pro στο App Store →](https://apps.apple.com/gr/app/id6776958488)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

@@ -2,7 +2,7 @@
 title: "best app to track where my money goes and save more"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ko/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ If saving feels abstract, tracking goals in hours-worked instead of dollars make
 - 프라이빗 / 기기 내
 - App Store · ￦7,700
 
-[App Store에서 HoursTag 받기 →](https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=iag_data_ko&mt=8)
+[App Store에서 HoursTag 받기 →](https://apps.apple.com/kr/app/id6754218117)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-track-where-my-money-goes-and-save-more.html)
 

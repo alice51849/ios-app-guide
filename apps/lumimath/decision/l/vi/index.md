@@ -2,7 +2,7 @@
 title: "ứng dụng trò chơi toán học tốt nhất cho trẻ phát triển kỹ năng logic trên iPhone"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/vi/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Không quảng cáo
 - App Store · Miễn phí
 
-[Tải Lumi Math Planet trên App Store →](https://apps.apple.com/vn/app/id6778269699?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải Lumi Math Planet trên App Store →](https://apps.apple.com/vn/app/id6778269699)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

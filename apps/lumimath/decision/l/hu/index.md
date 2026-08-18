@@ -2,7 +2,7 @@
 title: "legjobb matek játék alkalmazás gyerekeknek logikai készségek fejlesztésére iPhone-on"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/hu/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ A legjobb gyerek matek alkalmazás az érvelést fejleszti — minták, sorozato
 - Nincs reklám
 - App Store · Ingyenes
 
-[Szerezze be a Lumi Math Planet-et az App Store-ból →](https://apps.apple.com/hu/app/id6778269699?pt=118326163&ct=iag_data_hu&mt=8)
+[Szerezze be a Lumi Math Planet-et az App Store-ból →](https://apps.apple.com/hu/app/id6778269699)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

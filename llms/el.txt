@@ -3,7 +3,7 @@
 > Οργανωμένες πληροφορίες για τις λειτουργίες, την τιμή και τις συχνές ερωτήσεις κάθε εφαρμογής iOS.
 
 locale: el
-apps: 40
+apps: 42
 - Κατάλογος εφαρμογών: https://alice51849.github.io/ios-app-guide/el/tools/private-pay-once-iphone-app-finder.html
 - Κατάλογος εφαρμογών · PWA: https://alice51849.github.io/ios-app-guide/el/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld
@@ -27,6 +27,10 @@ apps: 40
 - Κατάλογος εφαρμογών · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Κατάλογος εφαρμογών · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/el/notesstudio100.html) — Χειρόγραφες σημειώσεις & PDF
+  - Ιδιωτικό και offline στούντιο για tablet και γραφίδα: χειρόγραφο, σχολιασμός PDF, ηχογράφηση στη σελίδα και μελέτη με κάρτες. Μία αγορά προσθέτει προηγμένες δυνατότητες.
+  - Τιμή: Κατεβάστε δωρεάν. Με μία μόνο αγορά ξεκλειδώνετε μόνιμα όλες τις λειτουργίες—χωρίς συνδρομή.
+  - App Store: https://apps.apple.com/gr/app/id6798813048
 - [AI Brief](https://alice51849.github.io/ios-app-guide/el/aibriefpack.html) — Αρχεία σε σαφές πλαίσιο
   - Συγκεντρώστε στιγμιότυπα οθόνης, έγγραφα και σημειώσεις. Διατηρήστε τα γεγονότα. Ελέγξτε τις ιδιωτικές λεπτομέρειες. Αντιγράψτε μια σαφή σύνοψη.
   - Τιμή: Κατεβάστε δωρεάν. Με μία μόνο αγορά ξεκλειδώνετε μόνιμα όλες τις λειτουργίες—χωρίς συνδρομή.
@@ -179,6 +183,10 @@ apps: 40
   - Βρείτε την πιθανότερη αιτία με ανεξάρτητους ελέγχους διαδρομών, DNS, TCP, TLS, χρόνων και σταθερότητας. Μία αρχική πληρωμή, χωρίς συνδρομή, διαφημίσεις ή παρακολούθηση.
   - Τιμή: Πληρωμένη λήψη με μία προκαθορισμένη τιμή και χωρίς συνδρομή.
   - App Store: https://apps.apple.com/gr/app/id6790467886
+- [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/el/wifiaidlite.html) — Διάγνωση δικτύου με στοιχεία
+  - Βρείτε το πραγματικό πρόβλημα. Κάθε εργαλείο: μία δωρεάν πλήρης χρήση. Προαιρετικό ξεκλείδωμα εφ' όρου ζωής για απεριόριστη χρήση—χωρίς συνδρομή.
+  - Τιμή: Κατεβάστε δωρεάν. Με μία μόνο αγορά ξεκλειδώνετε μόνιμα όλες τις λειτουργίες—χωρίς συνδρομή.
+  - App Store: https://apps.apple.com/gr/app/id6793414462
 - [Wordmate Lite: λεξιλόγιο](https://alice51849.github.io/ios-app-guide/el/wordmatelite.html) — Πέντε νέες λέξεις κάθε μέρα
   - Ένα λεπτό την ημέρα, τίποτε άλλο. Πέντε λέξεις, προφορά με φωνή και ένα μονοπάτι από βότσαλα που μεγαλώνει. Χωρίς κάρτες να φτιάχνεις, χωρίς ουρές επαναλήψεων.
   - Τιμή: Κατεβάστε δωρεάν. Με μία μόνο αγορά ξεκλειδώνετε μόνιμα όλες τις λειτουργίες—χωρίς συνδρομή.

@@ -2,7 +2,7 @@
 title: "ഉറങ്ങാൻ സഹായിക്കുന്ന മികച്ച വൈറ്റ് നോയിസ് ആപ്പ്, സബ്സ്ക്രിപ്ഷൻ ഇല്ലാതെ"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/ml-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - വ്യാപനങ്ങൾ ഇല്ല
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് Sereno നേടുക →](https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് Sereno നേടുക →](https://apps.apple.com/in/app/id6788236641)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

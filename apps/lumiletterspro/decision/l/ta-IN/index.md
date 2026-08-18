@@ -2,7 +2,7 @@
 title: "வீட்டில் முன்கூட்டிய குழந்தை பள்ளி பயிற்சிக்கு முழுமையான சிறந்த ஃபோனிக்ஸ் பயன்பாடு"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/ta-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - விளம்பரங்கள் இல்லை
 - App Store · ₹ 999
 
-[Lumi Letters Pro-ஐ App Store-இல் பெறுங்கள் →](https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=iag_data_ta_in&mt=8)
+[Lumi Letters Pro-ஐ App Store-இல் பெறுங்கள் →](https://apps.apple.com/in/app/id6778491147)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

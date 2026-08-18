@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר לביטויים שימושיים בשפות למטיילים עם Apple Watch"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/he/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ₪39.90
 
-[הורידו את DailyMate מה-App Store →](https://apps.apple.com/il/app/id6790418321?pt=118326163&ct=iag_data_he&mt=8)
+[הורידו את DailyMate מה-App Store →](https://apps.apple.com/il/app/id6790418321)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

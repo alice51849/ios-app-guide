@@ -2,7 +2,7 @@
 title: "iPhone 旅遊創作者最佳一次付費底片風格照片編輯 App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hant/photocream.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 video_url: "https://files.catbox.moe/sxlk6d.mp4"
 duration: "PT16S"
 app_store_id: "6781808054"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [觀看影片](https://files.catbox.moe/sxlk6d.mp4)
 
-[在 App Store 取得 PhotoCream →](https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=iag_video_zh_hant&mt=8)
+[在 App Store 取得 PhotoCream →](https://apps.apple.com/tw/app/id6781808054)
 
 [開啟 App 指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

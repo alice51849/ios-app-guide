@@ -2,7 +2,7 @@
 title: "best offline English listening and reading exam trainer for iPhone"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/pt-PT/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Aim990 Plus — Build calm, accurate decisions under time with 630 original ques
 - Descarregamento pago
 - App Store · 6,99 €
 
-[Get Aim990 Plus on the App Store →](https://apps.apple.com/pt/app/id6792483140?pt=118326163&ct=iag_data_pt_pt&mt=8)
+[Get Aim990 Plus on the App Store →](https://apps.apple.com/pt/app/id6792483140)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html)
 

@@ -3,7 +3,7 @@
 > ਹਰੇਕ iOS ਐਪ ਦੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ, ਕੀਮਤ ਅਤੇ ਆਮ ਸਵਾਲਾਂ ਬਾਰੇ ਵਿਵਸਥਿਤ ਜਾਣਕਾਰੀ।
 
 locale: pa-IN
-apps: 40
+apps: 42
 - ਐਪ ਡਾਇਰੈਕਟਰੀ: https://alice51849.github.io/ios-app-guide/pa-IN/tools/private-pay-once-iphone-app-finder.html
 - ਐਪ ਡਾਇਰੈਕਟਰੀ · PWA: https://alice51849.github.io/ios-app-guide/pa-IN/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pa-IN.jsonld
@@ -27,6 +27,10 @@ apps: 40
 - ਐਪ ਡਾਇਰੈਕਟਰੀ · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - ਐਪ ਡਾਇਰੈਕਟਰੀ · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/pa-IN/notesstudio100.html) — ਹੱਥ-ਲਿਖਤ ਨੋਟਸ, PDF ਟਿੱਪਣੀ
+  - ਨਿੱਜੀ ਹੱਥ-ਲਿਖਤ, PDF ਟਿੱਪਣੀ, ਸਫ਼ੇ ਨਾਲ ਜੁੜੀ ਆਡੀਓ ਅਤੇ ਪੜ੍ਹਾਈ ਕਾਰਡਾਂ ਲਈ ਸੁਚੱਜਾ ਸਥਾਨ। ਸਮੱਗਰੀ ਨੂੰ ਡਿਵਾਈਸ ਉੱਤੇ ਸੰਭਾਲੋ ਅਤੇ ਖੋਜੋ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਹਮੇਸ਼ਾਂ ਲਈ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6798813048
 - [AI Brief](https://alice51849.github.io/ios-app-guide/pa-IN/aibriefpack.html) — ਫਾਈਲਾਂ ਤੋਂ ਸਪਸ਼ਟ ਸੰਦਰਭ
   - ਸਕ੍ਰੀਨਸ਼ਾਟ, ਦਸਤਾਵੇਜ਼ ਅਤੇ ਨੋਟਸ ਇਕੱਠੇ ਲਿਆਓ। ਤੱਥਾਂ ਨੂੰ ਬਰਕਰਾਰ ਰੱਖੋ। ਨਿੱਜੀ ਵੇਰਵਿਆਂ ਦੀ ਸਮੀਖਿਆ ਕਰੋ। ਇੱਕ ਸਪਸ਼ਟ ਸੰਖੇਪ ਕਾਪੀ ਕਰੋ।
   - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਹਮੇਸ਼ਾਂ ਲਈ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
@@ -179,6 +183,10 @@ apps: 40
   - ਸੁਤੰਤਰ ਮਾਰਗ, DNS, TCP, TLS, ਸਮੇਂ ਅਤੇ ਸਥਿਰਤਾ ਜਾਂਚਾਂ ਨਾਲ ਕਨੈਕਸ਼ਨ ਸਮੱਸਿਆ ਦਾ ਸੰਭਾਵਿਤ ਕਾਰਨ ਲੱਭੋ। ਇੱਕ ਵਾਰ ਖਰੀਦੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ, ਇਸ਼ਤਿਹਾਰ ਜਾਂ ਟਰੈਕਿੰਗ ਨਹੀਂ।
   - ਕੀਮਤ: ਇੱਕ ਨਿਸ਼ਚਿਤ ਅਗਾਊਂ ਕੀਮਤ ਵਾਲਾ ਭੁਗਤਾਨਯੋਗ ਡਾਊਨਲੋਡ, ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
   - App Store: https://apps.apple.com/in/app/id6790467886
+- [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/pa-IN/wifiaidlite.html) — ਨੈੱਟ ਸਮੱਸਿਆ ਲੱਭੋ ਤੇ ਠੀਕ ਕਰੋ
+  - ਅਸਲ ਸਮੱਸਿਆ ਲੱਭੋ. ਹਰ ਟੂਲ ਵਿੱਚ ਇੱਕ ਵਾਰ ਮੁਫ਼ਤ ਪੂਰੀ ਵਰਤੋਂ ਸ਼ਾਮਲ ਹੈ। ਬੇਅੰਤ ਵਰਤੋਂ ਲਈ ਵਿਕਲਪਿਕ ਇੱਕ-ਵਾਰ ਜੀਵਨ ਭਰ ਦਾ ਅਨਲੌਕ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ, ਇਸ਼ਤਿਹਾਰ ਜਾਂ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਹਮੇਸ਼ਾਂ ਲਈ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6793414462
 - [Wordmate Lite: ਅੰਗਰੇਜ਼ੀ ਸਿੱਖੋ](https://alice51849.github.io/ios-app-guide/pa-IN/wordmatelite.html) — ਰੋਜ਼ 5 ਨਵੇਂ ਸ਼ਬਦ, ਇੱਕ ਮਿੰਟ
   - ਵੱਡਾ ਕੋਰਸ ਨਹੀਂ, ਦਿਨ ਵਿੱਚ ਸਿਰਫ਼ ਇੱਕ ਮਿੰਟ। ਪੰਜ ਨਵੇਂ ਸ਼ਬਦ ਸਿੱਖੋ ਅਤੇ ਆਪਣਾ ਰਾਹ ਲੰਮਾ ਹੁੰਦਾ ਵੇਖੋ। 44 ਭਾਸ਼ਾਵਾਂ, 14 ਵਿਸ਼ੇ, ਤਿੰਨ ਪੱਧਰ, ਸਭ ਕੁਝ ਆਫ਼ਲਾਈਨ।
   - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਹਮੇਸ਼ਾਂ ਲਈ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।

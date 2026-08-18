@@ -2,7 +2,7 @@
 title: "meilleure application de bruit blanc pour s’endormir sans abonnement"
 lang: "fr-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/fr-CA/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ Pour le sommeil, un abonnement qui vous harcèle chaque mois est l’opposé du 
 - Aucune publicité
 - App Store · Gratuit
 
-[Obtenez Sereno sur l’App Store →](https://apps.apple.com/ca/app/id6788236641?pt=118326163&ct=iag_data_fr_ca&mt=8)
+[Obtenez Sereno sur l’App Store →](https://apps.apple.com/ca/app/id6788236641)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

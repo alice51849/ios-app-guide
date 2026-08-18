@@ -2,7 +2,7 @@
 title: "iPhone ପାଇଁ ସର୍ବୋତ୍ତମ ଟ୍ରାଭେଲ୍ ବଜେଟ୍ ଟ୍ରାକର୍ ଆପ୍ କୌଣସି ସଦସ୍ୟତା ନାହିଁ"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/or-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - କୌଣସି ଖାତା ନାହିଁ
 - App Store · ₹ 499
 
-[App Store ରୁ G+Money ପାଆନ୍ତୁ →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=iag_data_or_in&mt=8)
+[App Store ରୁ G+Money ପାଆନ୍ତୁ →](https://apps.apple.com/in/app/id6755782939)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

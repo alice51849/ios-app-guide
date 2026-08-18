@@ -2,7 +2,7 @@
 title: "Snapport Lite — বাড়িতে আইডি ছবি তৈরি করুন | iOS App"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/bn-BD/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Snapport Lite - নির্দেশিত আকার, পটভূমি ট
 - বিনামূল্যে শুরু · আজীবন আনলক
 - অফলাইন
 
-[App Store থেকে Snapport Lite ডাউনলোড করুন](https://apps.apple.com/app/id6792856304?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে Snapport Lite ডাউনলোড করুন](https://apps.apple.com/app/id6792856304)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/snapportlite.html)
 

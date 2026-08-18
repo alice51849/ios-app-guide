@@ -2,7 +2,7 @@
 title: "DailyMate Lite: রোজ কথা বলুন — ৫০ ভাষায় স্বাভাবিক কথোপকথন | iOS App"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/bn-BD/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - শিশু ও শেখা
 - বিনামূল্যে শুরু · আজীবন আনলক
 
-[App Store থেকে DailyMate Lite: রোজ কথা বলুন ডাউনলোড করুন](https://apps.apple.com/app/id6794725568?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে DailyMate Lite: রোজ কথা বলুন ডাউনলোড করুন](https://apps.apple.com/app/id6794725568)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/dailymatelite.html)
 

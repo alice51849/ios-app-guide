@@ -2,7 +2,7 @@
 title: "광고 없는 유아용 최고의 잠자리 습관 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/ko/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 유아에게는 잠자리 습관이 짧고 시각적이며 예측 가능해야 아이가 반복적인 알림 없이 스스로 따라갈 수 있습니다 — Lumi Mission Planet은 이를 위해 만들어졌습니다.
 
 - 어린이 & 학습
-- 무료로 시작 · 평생 잠금 해제
+- 무료로 시작 · 한 번 구매 잠금 해제
 - 광고 없음
 - App Store · 무료
 
-[App Store에서 Lumi Mission Planet 받기 →](https://apps.apple.com/kr/app/id6779750237?pt=118326163&ct=iag_data_ko&mt=8)
+[App Store에서 Lumi Mission Planet 받기 →](https://apps.apple.com/kr/app/id6779750237)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

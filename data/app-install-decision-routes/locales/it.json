@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "it",
-  "dateModified": "2026-08-17",
-  "content_digest": "7bf9a1c1c9d8e2e85c4f23e27e95d84ef7cc221c3fec20ef6ea999c451133f03",
-  "generation_digest": "977f7d6bc00a2e88bb25df2321e667f9647bf876b7c6aea1976e45e43a1328a2",
+  "dateModified": "2026-08-18",
+  "content_digest": "264b14864720b36adcc17313f205aa969b749d3a164446272f28772a835771b3",
+  "generation_digest": "d5fa67b24e8433a4f212a12ecc3662733a247983974a6cca6a58b9ab36d6fe87",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 40,
+  "record_count": 42,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/it.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/it.rss.xml",
@@ -51,7 +51,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6792850916",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
-      "app_store_url": "https://apps.apple.com/it/app/id6792850916?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6792850916",
       "app_store_cta_label": "Scarica Mask My File sull'App Store",
       "storefront_facts": {
         "price": "0",
@@ -96,7 +96,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6790467886",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
-      "app_store_url": "https://apps.apple.com/it/app/id6790467886?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6790467886",
       "app_store_cta_label": "Scarica WiFi Aid sull'App Store",
       "storefront_facts": {
         "price": "6.99",
@@ -141,7 +141,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6790800323",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
-      "app_store_url": "https://apps.apple.com/it/app/id6790800323?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6790800323",
       "app_store_cta_label": "Scarica Mochi DoneStamp: Ultima volta sull'App Store",
       "storefront_facts": {
         "price": "0",
@@ -151,6 +151,62 @@
       "guide_cta_label": "Leggi la guida completa",
       "publisher_disclosure": "Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.",
       "source_persona_query": "best last time tracker app for household maintenance without a subscription",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "it:notesstudio100",
+      "locale": "it",
+      "app_key": "notesstudio100",
+      "app_name": "100 Notes Studio: Pen & Paper",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "100 Notes Studio: Pen & Paper — Quaderno a mano, PDF e studio | iOS App",
+      "decision_context": "Riunisci scrittura a mano, testo digitato, annotazione di documenti, registrazioni e ripasso in uno spazio ordinato che funziona offline. 100 Notes Studio è progettato per tablet e smartphone, con un flusso completo su entrambi. SCRIVERE COME SULLA CARTA 29 strumenti di scrittura davvero diversi: stilografica, calligrafia, pennello fude, penna tecnica, velatura ad acquerello, carboncino, penna a sfera, penna gel e portamine 2B/4B/6B. Ognuno ha una texture propria, non è la stessa punta ricolorata. Uno stilo compatibile permette di usare pressione, inclinazione, rifiuto del palmo e i gesti rapidi disponibili. Scegli tra gomme a pixel, a tratto intero e di precisione; usa il lazo per spostare, ridimensionare, copiare o cancellare. Sono inclusi anche righello, otto strumenti di forme precise e puntatore laser. 100 STILI DI QUADERNO REALMENTE DIVERSI Non un modello ricolorato cento volte. Ogni stile ha copertina, struttura della carta, palette, separatori, timbri, adesivi, colore della barra strumenti e aspetto del widget dedicati. La raccolta comprende minimal, lino, griglia giapponese, schemi di studio, planner puntinati, università, ingegneria, musica, riunioni, ricerca, viaggio, benessere e ricette. Tutti e 100 possono essere esplorati con anteprime reali fin dall'inizio. MOLTO PIÙ DI UNA TELA Pagine fisse o tela infinita; formati A4, A5, Letter, schermo o personalizzato; verticale e orizzontale Testo formattato con grassetto, corsivo, sottolineato, font, colori, elenchi, caselle, tabelle e link Importazione e annotazione PDF con evidenziazione, sottolineatura, barrato, note di testo, scrittura a mano, rotazione, ritaglio, inserimento, estrazione, unione ed esportazione Registra mentre scrivi; l'audio resta legato alla pagina in cui è stato creato Riconoscimento della grafia e del testo PDF sul dispositivo, con ricerca in titoli, contenuto, scrittura e allegati Schede collegate alle pagine, esercizi cloze e ripetizione dilazionata FSRS Adesivi, nastro washi e indice numerato automaticamente Cartelle annidate, tag, elementi fissati, preferiti, archivio, cestino recuperabile e cronologia delle versioni Widget di acquisizione rapida e azioni dalla schermata di blocco Livelli di inchiostro con opacità, visibilità e blocco, più uno spazio di riferimento per tenere un PDF o un'immagine accanto alla pagina PRIVATO PER SCELTA Nessun account, pubblicità, tracker o servizio di analisi di terze parti. I contenuti non vengono inviati a sistemi esterni di intelligenza artificiale e restano offline sul dispositivo. L'intera applicazione o singoli quaderni possono essere protetti con la sicurezza biometrica del dispositivo. INIZIA GRATIS, SBLOCCA LE FUNZIONI AGGIUNTIVE UNA VOLTA La versione gratuita offre l'editor completo, tutti gli strumenti, l'annotazione PDF, le registrazioni, la ricerca nella grafia e il ripasso, con 1 quaderno dalle pagine illimitate e 2 stili su 100. Con un solo sblocco si aggiungono quaderni illimitati, tutti i 100 stili, esportazione PDF vettoriale, cronologia ripristinabile e backup cifrato. Scrivi, leggi, organizza e ripassa in uno spazio tranquillo e privato. Informativa sulla privacy: https://alice51849.github.io/100notes-support/privacy.html Condizioni d'uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+      "category": "productivity",
+      "category_label": "Produttività",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis per iniziare · sblocco permanente",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Nessun account",
+        "Privato / su dispositivo"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Produttività",
+        "Gratis per iniziare · sblocco permanente",
+        "Offline",
+        "Nessun account",
+        "Privato / su dispositivo",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/notesstudio100.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/it/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/it/notesstudio100.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fnotesstudio100%2Fdecision%2Fl%2Fit%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
+      "app_store_id": "6798813048",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
+      "app_store_url": "https://apps.apple.com/it/app/id6798813048",
+      "app_store_cta_label": "Scarica 100 Notes Studio: Pen & Paper sull'App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Leggi la guida completa",
+      "publisher_disclosure": "Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.",
+      "source_persona_query": "best offline handwriting notes app for ipad with pdf markup no subscription",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -191,7 +247,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/it/app/id6791658210?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6791658210",
       "app_store_cta_label": "Scarica AI Brief sull'App Store",
       "storefront_facts": {
         "price": "0",
@@ -236,7 +292,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6784974530",
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
-      "app_store_url": "https://apps.apple.com/it/app/id6784974530?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6784974530",
       "app_store_cta_label": "Scarica Aim990 dall'App Store →",
       "storefront_facts": {
         "price": "0",
@@ -281,7 +337,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6792483140",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
-      "app_store_url": "https://apps.apple.com/it/app/id6792483140?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6792483140",
       "app_store_cta_label": "Scarica Aim990 Plus sull'App Store",
       "storefront_facts": {
         "price": "6.99",
@@ -331,7 +387,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/it/app/id6794178671?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6794178671",
       "app_store_cta_label": "Scarica CalDaily: calcolatrice e temi sull'App Store",
       "storefront_facts": {
         "price": "0",
@@ -376,7 +432,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6781337213",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
-      "app_store_url": "https://apps.apple.com/it/app/id6781337213?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6781337213",
       "app_store_cta_label": "Scarica CV Desk dall'App Store →",
       "storefront_facts": {
         "price": "0",
@@ -427,7 +483,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6782251621",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
-      "app_store_url": "https://apps.apple.com/it/app/id6782251621?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6782251621",
       "app_store_cta_label": "Scarica Cyca dall'App Store →",
       "storefront_facts": {
         "price": "0",
@@ -479,7 +535,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6790418321",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
-      "app_store_url": "https://apps.apple.com/it/app/id6790418321?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6790418321",
       "app_store_cta_label": "Scarica DailyMate dall’App Store →",
       "storefront_facts": {
         "price": "12.99",
@@ -524,7 +580,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6794725568",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
-      "app_store_url": "https://apps.apple.com/it/app/id6794725568?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6794725568",
       "app_store_cta_label": "Scarica DailyMate Lite: Parla ora sull'App Store",
       "storefront_facts": {
         "price": "0",
@@ -577,7 +633,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6755782939",
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
-      "app_store_url": "https://apps.apple.com/it/app/id6755782939?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6755782939",
       "app_store_cta_label": "Scarica G+Money dall'App Store →",
       "storefront_facts": {
         "price": "5.99",
@@ -644,7 +700,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6793436548",
       "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
-      "app_store_url": "https://apps.apple.com/it/app/id6793436548?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6793436548",
       "app_store_cta_label": "Scarica G+Money Lite sull'App Store",
       "storefront_facts": {
         "price": "0",
@@ -708,7 +764,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/it/app/id6794039979?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6794039979",
       "app_store_cta_label": "Scarica HoursTag Lite sull'App Store",
       "storefront_facts": {
         "price": "0",
@@ -761,7 +817,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/it/app/id6754218117?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6754218117",
       "app_store_cta_label": "Scarica HoursTag: Ore per comprare sull'App Store",
       "storefront_facts": {
         "price": "5.99",
@@ -814,7 +870,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6780107485",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
-      "app_store_url": "https://apps.apple.com/it/app/id6780107485?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6780107485",
       "app_store_cta_label": "Scarica LockHour Pro dall'App Store →",
       "storefront_facts": {
         "price": "0",
@@ -864,7 +920,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6773017109",
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
-      "app_store_url": "https://apps.apple.com/it/app/id6773017109?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6773017109",
       "app_store_cta_label": "Scarica Lumi Bopomofo dall'App Store →",
       "storefront_facts": {
         "price": "0",
@@ -914,7 +970,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6775773117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
-      "app_store_url": "https://apps.apple.com/it/app/id6775773117?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6775773117",
       "app_store_cta_label": "Scarica Lumi Bopomofo Pro su App Store →",
       "storefront_facts": {
         "price": "9.99",
@@ -964,7 +1020,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6778748533",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
-      "app_store_url": "https://apps.apple.com/it/app/id6778748533?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6778748533",
       "app_store_cta_label": "Scarica Lumi Letters dall'App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1014,7 +1070,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6778491147",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
-      "app_store_url": "https://apps.apple.com/it/app/id6778491147?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6778491147",
       "app_store_cta_label": "Scarica Lumi Letters Pro su App Store →",
       "storefront_facts": {
         "price": "9.99",
@@ -1064,7 +1120,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6778269699",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
-      "app_store_url": "https://apps.apple.com/it/app/id6778269699?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6778269699",
       "app_store_cta_label": "Scarica Lumi Math Planet dall'App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1114,7 +1170,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6776958488",
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
-      "app_store_url": "https://apps.apple.com/it/app/id6776958488?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6776958488",
       "app_store_cta_label": "Scarica Lumi Math Pro su App Store →",
       "storefront_facts": {
         "price": "9.99",
@@ -1164,7 +1220,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6779750237",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
-      "app_store_url": "https://apps.apple.com/it/app/id6779750237?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6779750237",
       "app_store_cta_label": "Scarica Lumi Mission Planet sull’App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1214,7 +1270,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6779745474",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
-      "app_store_url": "https://apps.apple.com/it/app/id6779745474?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6779745474",
       "app_store_cta_label": "Scarica Lumi Mission Planet Pro su App Store →",
       "storefront_facts": {
         "price": "6.99",
@@ -1264,7 +1320,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6787193643",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "app_store_url": "https://apps.apple.com/it/app/id6787193643?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6787193643",
       "app_store_cta_label": "Scarica Lumi Trip Planet su App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1317,7 +1373,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6779552704",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
-      "app_store_url": "https://apps.apple.com/it/app/id6779552704?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6779552704",
       "app_store_cta_label": "Scarica Lumi Weather su App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1368,7 +1424,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6785004775",
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
-      "app_store_url": "https://apps.apple.com/it/app/id6785004775?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6785004775",
       "app_store_cta_label": "Scarica Mochi dall'App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1415,7 +1471,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6798814385",
       "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
-      "app_store_url": "https://apps.apple.com/it/app/id6798814385?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6798814385",
       "app_store_cta_label": "Scarica OnePage PPT: slide con IA sull'App Store",
       "storefront_facts": {
         "price": "0",
@@ -1460,7 +1516,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6781808054",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
-      "app_store_url": "https://apps.apple.com/it/app/id6781808054?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6781808054",
       "app_store_cta_label": "Scarica PhotoCream su App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1510,7 +1566,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6780223070",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
-      "app_store_url": "https://apps.apple.com/it/app/id6780223070?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6780223070",
       "app_store_cta_label": "Scarica PicClear dall'App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1560,7 +1616,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6779977651",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
-      "app_store_url": "https://apps.apple.com/it/app/id6779977651?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6779977651",
       "app_store_cta_label": "Scarica ScanTo Pro dall'App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1613,7 +1669,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6788236641",
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
-      "app_store_url": "https://apps.apple.com/it/app/id6788236641?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6788236641",
       "app_store_cta_label": "Scarica Sereno dall’App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1663,7 +1719,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6780575828",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
-      "app_store_url": "https://apps.apple.com/it/app/id6780575828?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6780575828",
       "app_store_cta_label": "Scarica Snapport dall’App Store →",
       "storefront_facts": {
         "price": "6.99",
@@ -1713,7 +1769,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6792856304",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
-      "app_store_url": "https://apps.apple.com/it/app/id6792856304?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6792856304",
       "app_store_cta_label": "Scarica Snapport Lite sull'App Store",
       "storefront_facts": {
         "price": "0",
@@ -1763,7 +1819,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6782139553",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
-      "app_store_url": "https://apps.apple.com/it/app/id6782139553?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6782139553",
       "app_store_cta_label": "Scarica Sono Note dall’App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1808,7 +1864,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6791299610",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
-      "app_store_url": "https://apps.apple.com/it/app/id6791299610?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6791299610",
       "app_store_cta_label": "Scarica TripBee Lite dall'App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1864,7 +1920,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6787754435",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
-      "app_store_url": "https://apps.apple.com/it/app/id6787754435?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6787754435",
       "app_store_cta_label": "Scarica TripBee Pro: Pianificatore di Viaggi dall’App Store →",
       "storefront_facts": {
         "price": "6.99",
@@ -1914,7 +1970,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6782275018",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
-      "app_store_url": "https://apps.apple.com/it/app/id6782275018?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6782275018",
       "app_store_cta_label": "Scarica Unblurry dall’App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1925,6 +1981,56 @@
       "publisher_disclosure": "Guida redatta dall'editore Lumi Studio, lo sviluppatore dell'app. I nomi delle app sono marchi dei rispettivi proprietari e sono utilizzati solo per identificazione. Per documenti, salute, scuola e decisioni sulla produttività, verificare i requisiti ufficiali ove rilevanti.",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "it:wifiaidlite",
+      "locale": "it",
+      "app_key": "wifiaidlite",
+      "app_name": "WiFi Aid Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "WiFi Aid Lite — Diagnosi di rete affidabile | iOS App",
+      "decision_context": "Trova il vero problema. Ogni strumento include un uso gratuito. Sblocco a vita opzionale una tantum per uso illimitato: nessun abbonamento, pubblicità o tracciamento. • Avvia test — Test Wi-Fi e DNS in un tocco • Test profondo — Più prove e stabilità di rete • Testa un sito — Un sito o internet in generale • Prove — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connessione instabile — Variazione • Cronologia — Dati privati solo su questo dispositivo • Nodo connesso — La posizione precisa identifica il Wi-Fi e il nodo attuale Nessun account, annuncio o tracciamento. Dati privati solo su questo dispositivo. Ogni strumento include un uso gratuito. Sblocco a vita opzionale una tantum per uso illimitato: nessun abbonamento, pubblicità o tracciamento.",
+      "category": "utility",
+      "category_label": "Altro",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis per iniziare · sblocco permanente",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Nessun account"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Altro",
+        "Gratis per iniziare · sblocco permanente",
+        "Nessun account",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/wifiaidlite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/it/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/it/wifiaidlite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fwifiaidlite%2Fdecision%2Fl%2Fit%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
+      "app_store_id": "6793414462",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
+      "app_store_url": "https://apps.apple.com/it/app/id6793414462",
+      "app_store_cta_label": "Scarica WiFi Aid Lite sull'App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Leggi la guida completa",
+      "publisher_disclosure": "Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.",
+      "source_persona_query": "how to tell if the wifi or the website is down free app",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
@@ -1964,7 +2070,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/it/app/id6797601720?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6797601720",
       "app_store_cta_label": "Scarica Wordmate Lite: vocabolario sull'App Store",
       "storefront_facts": {
         "price": "0",
@@ -2028,7 +2134,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6789917808",
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
-      "app_store_url": "https://apps.apple.com/it/app/id6789917808?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6789917808",
       "app_store_cta_label": "Scarica Wordmate: Learn 44 Languages su App Store →",
       "storefront_facts": {
         "price": "9.99",

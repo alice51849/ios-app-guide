@@ -2,7 +2,7 @@
 title: "부모가 아이와 야외 시간을 계획할 때 도움이 되는 최고의 날씨 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/lumiweather.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 video_url: "https://files.catbox.moe/fu7uq6.mp4"
 duration: "PT16S"
 app_store_id: "6779552704"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [영상 보기](https://files.catbox.moe/fu7uq6.mp4)
 
-[App Store에서 Lumi Weather 받기 →](https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=iag_video_ko&mt=8)
+[App Store에서 Lumi Weather 받기 →](https://apps.apple.com/kr/app/id6779552704)
 
 [앱 가이드 열기](https://alice51849.github.io/ios-app-guide/ko/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

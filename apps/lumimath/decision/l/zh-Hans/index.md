@@ -2,7 +2,7 @@
 title: "iPhone 上最佳儿童数学游戏应用，培养逻辑思维能力"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/zh-Hans/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免费开始使用 · 永久解锁
 - 无广告
 
-[在 App Store 获取 Lumi Math Planet →](https://apps.apple.com/app/id6778269699?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在 App Store 获取 Lumi Math Planet →](https://apps.apple.com/app/id6778269699)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

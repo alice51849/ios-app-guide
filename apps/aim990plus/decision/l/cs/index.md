@@ -2,7 +2,7 @@
 title: "Aim990 Plus — Jistota pod časovým tlakem | iOS App"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/cs/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Když běží čas, nestačí angličtině jen rozumět. Je potřeba udržet poz
 - Placené stažení
 - App Store · 149,00 Kč
 
-[Stáhněte si Aim990 Plus v App Storu](https://apps.apple.com/cz/app/id6792483140?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte si Aim990 Plus v App Storu](https://apps.apple.com/cz/app/id6792483140)
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/aim990plus.html)
 

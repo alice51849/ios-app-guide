@@ -2,7 +2,7 @@
 title: "아이폰에서 회의 내용을 요약하는 최고의 음성 메모 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/sononote.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 video_url: "https://files.catbox.moe/xpoyjw.mp4"
 duration: "PT16S"
 app_store_id: "6782139553"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [영상 보기](https://files.catbox.moe/xpoyjw.mp4)
 
-[App Store에서 Sono Note 받기 →](https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=iag_video_ko&mt=8)
+[App Store에서 Sono Note 받기 →](https://apps.apple.com/kr/app/id6782139553)
 
 [앱 가이드 열기](https://alice51849.github.io/ios-app-guide/ko/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

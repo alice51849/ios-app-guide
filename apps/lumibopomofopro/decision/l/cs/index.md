@@ -2,7 +2,7 @@
 title: "nejlepší kompletní aplikace na zhuyin pro bilingvní děti"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/cs/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Bilingvní děti, které se učí Zhuyin doma, potřebují kompletní cestu pře
 - Bez reklam
 - App Store · 249,00 Kč
 
-[Stáhněte si Lumi Bopomofo Pro v App Store →](https://apps.apple.com/cz/app/id6775773117?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte si Lumi Bopomofo Pro v App Store →](https://apps.apple.com/cz/app/id6775773117)
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-complete-zhuyin-app-for-bilingual-children.html)
 

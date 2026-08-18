@@ -2,7 +2,7 @@
 title: "സബ്സ്ക്രിപ്ഷൻ ഇല്ലാത്ത മികച്ച യാത്ര ബജറ്റ് ട്രാക്കർ ആപ്പ് iPhone"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/ml-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - അക്കൗണ്ട് ഇല്ല
 - App Store · ₹ 499
 
-[App Store-ൽ G+Money നേടുക →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ G+Money നേടുക →](https://apps.apple.com/in/app/id6755782939)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

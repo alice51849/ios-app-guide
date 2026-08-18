@@ -2,7 +2,7 @@
 title: "Mask My File — Skjul data før du deler | iOS App"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/da/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Del trygt uden at miste den nyttige sammenhæng. Mask My File finder private opl
 - Privat / på enheden
 - App Store · Gratis
 
-[Hent Mask My File i App Store](https://apps.apple.com/dk/app/id6792850916?pt=118326163&ct=iag_data_da&mt=8)
+[Hent Mask My File i App Store](https://apps.apple.com/dk/app/id6792850916)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/maskmyfile.html)
 

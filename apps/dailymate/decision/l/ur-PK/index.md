@@ -2,7 +2,7 @@
 title: "ایپل واچ کے ساتھ مسافروں کے لیے بہترین عملی زبان کے جملوں کی ایپ"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/ur-PK/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · Rs 3,500.00
 
-[App Store سے DailyMate حاصل کریں →](https://apps.apple.com/pk/app/id6790418321?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[App Store سے DailyMate حاصل کریں →](https://apps.apple.com/pk/app/id6790418321)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

@@ -1,13 +1,55 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-17",
-  "content_digest": "052462b7dd587fcbe5af1850d770c1ed940eeeb8cbfa470d896427327437c120",
+  "date_modified": "2026-08-18",
+  "content_digest": "a0b615db14c804941947a8604d25454726fab469dc4b3f7f578d0f468d6323ab",
   "locale": "en-AU",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 40,
+  "record_count": 42,
   "apps": [
+    {
+      "key": "notesstudio100",
+      "app_store_id": "6798813048",
+      "name": "100 Notes Studio: Pen & Paper",
+      "summary": "100 Notes Studio brings handwriting, typed text, PDF markup, notebook organisation and study tools into a calm workspace that also works offline.",
+      "category": "productivity",
+      "search_terms": [
+        "journal",
+        "planner",
+        "flashcards",
+        "annotate",
+        "sketch",
+        "draw",
+        "university",
+        "exam",
+        "lecture",
+        "organiser",
+        "offline",
+        "ocr",
+        "diary"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/au/app/id6798813048",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/notesstudio100.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "AUD",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/au/app/id6798813048"
+      }
+    },
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
@@ -40,7 +82,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6791658210?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6791658210",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/aibriefpack.html",
       "verified_live": true,
       "storefront_facts": {
@@ -76,7 +118,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6784974530?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6784974530",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/aim990.html",
       "verified_live": true,
       "storefront_facts": {
@@ -117,7 +159,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6792483140?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6792483140",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/aim990plus.html",
       "verified_live": true,
       "storefront_facts": {
@@ -160,7 +202,7 @@
         "widget": true,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6794178671?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6794178671",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/caldaily.html",
       "verified_live": true,
       "storefront_facts": {
@@ -220,7 +262,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6781337213?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6781337213",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/cvdesk.html",
       "verified_live": true,
       "storefront_facts": {
@@ -280,7 +322,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6782251621?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6782251621",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/cyca.html",
       "verified_live": true,
       "storefront_facts": {
@@ -320,7 +362,7 @@
         "widget": false,
         "apple_watch": true
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6790418321?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6790418321",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/dailymate.html",
       "verified_live": true,
       "storefront_facts": {
@@ -359,7 +401,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6794725568?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6794725568",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/dailymatelite.html",
       "verified_live": true,
       "storefront_facts": {
@@ -417,7 +459,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6755782939?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6755782939",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/gmoney.html",
       "verified_live": true,
       "storefront_facts": {
@@ -453,7 +495,7 @@
         "widget": true,
         "apple_watch": true
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6793436548?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6793436548",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/gmoneylite.html",
       "verified_live": true,
       "storefront_facts": {
@@ -511,7 +553,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6754218117?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6754218117",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/hourstag.html",
       "verified_live": true,
       "storefront_facts": {
@@ -548,7 +590,7 @@
         "widget": true,
         "apple_watch": true
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6794039979?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6794039979",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/hourstaglite.html",
       "verified_live": true,
       "storefront_facts": {
@@ -601,7 +643,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6780107485?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6780107485",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/lockhour.html",
       "verified_live": true,
       "storefront_facts": {
@@ -654,7 +696,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6773017109?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6773017109",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/lumibopomofo.html",
       "verified_live": true,
       "storefront_facts": {
@@ -707,7 +749,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6775773117?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6775773117",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/lumibopomofopro.html",
       "verified_live": true,
       "storefront_facts": {
@@ -760,7 +802,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6778748533?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6778748533",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/lumiletters.html",
       "verified_live": true,
       "storefront_facts": {
@@ -813,7 +855,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6778491147?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6778491147",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/lumiletterspro.html",
       "verified_live": true,
       "storefront_facts": {
@@ -903,7 +945,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6778269699?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6778269699",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/lumimath.html",
       "verified_live": true,
       "storefront_facts": {
@@ -963,7 +1005,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6776958488?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6776958488",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/lumimathpro.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1023,7 +1065,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6779750237?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6779750237",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/lumimission.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1083,7 +1125,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6779745474?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6779745474",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/lumimissionpro.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1122,7 +1164,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6787193643?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6787193643",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/tripplanet.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1188,7 +1230,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6779552704?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6779552704",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/lumiweather.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1228,7 +1270,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6792850916?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6792850916",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/maskmyfile.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1270,7 +1312,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6785004775?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6785004775",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/mochi.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1313,7 +1355,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6790800323?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6790800323",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/mochidonestamp.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1356,7 +1398,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6798814385?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6798814385",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/onepageppt.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1414,7 +1456,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6781808054?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6781808054",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/photocream.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1478,7 +1520,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6780223070?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6780223070",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/picclear.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1520,7 +1562,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6779977651?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6779977651",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/scanto.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1560,7 +1602,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6788236641?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6788236641",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/sereno.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1623,7 +1665,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6780575828?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6780575828",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/snapport.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1660,7 +1702,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6792856304?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6792856304",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/snapportlite.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1713,7 +1755,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6782139553?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6782139553",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/sononote.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1751,7 +1793,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6791299610?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6791299610",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/tripbeelite.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1790,7 +1832,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6787754435?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6787754435",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/tripbee.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1853,7 +1895,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6782275018?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6782275018",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/unblurry.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1896,7 +1938,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6790467886?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6790467886",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/wifiaid.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1904,6 +1946,49 @@
         "currency": "AUD",
         "formatted_price": "$9.99",
         "storefront_url": "https://apps.apple.com/au/app/id6790467886"
+      }
+    },
+    {
+      "key": "wifiaidlite",
+      "app_store_id": "6793414462",
+      "name": "WiFi Aid Lite",
+      "summary": "Find the real problem. Each tool includes one free complete use. Optional one-time lifetime unlock for unlimited use—no subscription, ads or tracking.",
+      "category": "utility",
+      "search_terms": [
+        "nbn fault",
+        "dropout",
+        "modem",
+        "router",
+        "troubleshoot",
+        "latency",
+        "jitter",
+        "captive",
+        "portal",
+        "dns",
+        "http",
+        "ipv4",
+        "ipv6",
+        "website"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/au/app/id6793414462",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/wifiaidlite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "AUD",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/au/app/id6793414462"
       }
     },
     {
@@ -1937,7 +2022,7 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6797601720?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6797601720",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/wordmatelite.html",
       "verified_live": true,
       "storefront_facts": {
@@ -1976,7 +2061,7 @@
         "widget": true,
         "apple_watch": true
       },
-      "app_store_url": "https://apps.apple.com/au/app/id6789917808?pt=118326163&ct=iag_api_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6789917808",
       "guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/wordmate.html",
       "verified_live": true,
       "storefront_facts": {

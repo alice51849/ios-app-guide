@@ -2,7 +2,7 @@
 title: "Snapport Lite — ବାସାରେ ID ଫଟୋ ସୃଷ୍ଟି କରନ୍ତୁ | iOS App"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/or-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Snapport Lite - ପାସପୋର୍ଟ, ଭିସା, ଓ ଡକ୍ୟୁମ�
 - ଅଫଲାଇନ
 - App Store · ମାଗଣା
 
-[App Store ରୁ Snapport Lite ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_or_in&mt=8)
+[App Store ରୁ Snapport Lite ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6792856304)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/snapportlite.html)
 

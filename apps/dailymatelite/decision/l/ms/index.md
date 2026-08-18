@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Cakap Hari Ini — 50 Bahasa, Dialog Sebenar | iOS App"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/ms/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Bercakap secara semula jadi apabila tiba masanya. DailyMate Lite mengubah situas
 - Percuma untuk bermula · buka kunci kekal
 - App Store · Percuma
 
-[Dapatkan DailyMate Lite: Cakap Hari Ini di App Store](https://apps.apple.com/my/app/id6794725568?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan DailyMate Lite: Cakap Hari Ini di App Store](https://apps.apple.com/my/app/id6794725568)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/dailymatelite.html)
 

@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație de urmărire buget de călătorie fără abonament pentru iPhone"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/ro/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Fără cont
 - App Store · 29,99 lei
 
-[Obține G+Money din App Store →](https://apps.apple.com/ro/app/id6755782939?pt=118326163&ct=iag_data_ro&mt=8)
+[Obține G+Money din App Store →](https://apps.apple.com/ro/app/id6755782939)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

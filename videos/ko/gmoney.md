@@ -2,7 +2,7 @@
 title: "구독 없이 사용할 수 있는 최고의 여행 예산 추적 앱 아이폰용"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/gmoney.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 video_url: "https://files.catbox.moe/3xucog.mp4"
 duration: "PT16.2S"
 app_store_id: "6755782939"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [영상 보기](https://files.catbox.moe/3xucog.mp4)
 
-[앱 스토어에서 G+Money 받기 →](https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=iag_video_ko&mt=8)
+[앱 스토어에서 G+Money 받기 →](https://apps.apple.com/kr/app/id6755782939)
 
 [앱 가이드 열기](https://alice51849.github.io/ios-app-guide/ko/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

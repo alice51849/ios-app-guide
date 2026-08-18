@@ -2,7 +2,7 @@
 title: "HoursTag Lite — Lásd a dolgok valódi árát | iOS App"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/hu/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,7 +22,7 @@ HoursTag Lite - Lásd a dolgok valódi árát Minden vásárlás órákat vesz e
 - Apple Watch
 - App Store · Ingyenes
 
-[Töltse le a(z) HoursTag Lite appot az App Store-ból](https://apps.apple.com/hu/app/id6794039979?pt=118326163&ct=iag_data_hu&mt=8)
+[Töltse le a(z) HoursTag Lite appot az App Store-ból](https://apps.apple.com/hu/app/id6794039979)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/hourstaglite.html)
 

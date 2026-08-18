@@ -1,0 +1,25 @@
+---
+title: "WiFi Aid Lite — Diagnòstic de xarxa amb proves | iOS App"
+lang: "ca"
+canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/ca/index.html"
+modified: "2026-08-18"
+app_store_id: "6793414462"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# WiFi Aid Lite — Diagnòstic de xarxa amb proves | iOS App
+
+Troba el problema real. Cada eina inclou un ús complet gratuït. Desbloqueig de per vida opcional de pagament únic per a un ús il·limitat—sense subscripcions, anuncis ni seguiment. • Fer un test — Tests de Wi-Fi i DNS en un toc • Test profund — Més proves i estabilitat de xarxa • Provar un web — Un lloc o internet en general • Proves — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connexió inestable — Fluctuació • Historial — Registres privats només en aquest dispositiu • Node connectat — La ubicació precisa identifica el Wi-Fi i el node actual Sense compte, anuncis ni rastreig. Registres privats només en aquest dispositiu. Cada eina inclou un ús complet gratuït. Desbloqueig de per vida opcional de pagament únic per a un ús il·limitat—sense subscripcions, anuncis ni seguiment.
+
+- Més
+- Inici gratuït · desbloqueig de per vida
+- Sense compte
+- App Store · Gratis
+
+[Descarrega WiFi Aid Lite a l’App Store](https://apps.apple.com/es/app/id6793414462)
+
+[Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/wifiaidlite.html)
+
+> Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.

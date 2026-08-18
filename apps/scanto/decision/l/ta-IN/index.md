@@ -2,7 +2,7 @@
 title: "முகாமையாளர்களுக்கான சிறந்த ஆஃப்லைன் ஆவண ஸ்கேனர் பயன்பாடு, கிளவுட் இல்லாமல்"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/ta-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - தனியுரிமை / சாதனத்தில்
 - App Store · இலவசம்
 
-[App Store-இல் ScanTo Pro பெறவும் →](https://apps.apple.com/in/app/id6779977651?pt=118326163&ct=iag_data_ta_in&mt=8)
+[App Store-இல் ScanTo Pro பெறவும் →](https://apps.apple.com/in/app/id6779977651)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

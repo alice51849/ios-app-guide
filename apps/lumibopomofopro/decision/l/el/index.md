@@ -2,7 +2,7 @@
 title: "καλύτερη πλήρης εφαρμογή zhuyin για δίγλωσσα παιδιά"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/el/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Χωρίς διαφημίσεις
 - App Store · 9,99 €
 
-[Αποκτήστε το Lumi Bopomofo Pro στο App Store →](https://apps.apple.com/gr/app/id6775773117?pt=118326163&ct=iag_data_el&mt=8)
+[Αποκτήστε το Lumi Bopomofo Pro στο App Store →](https://apps.apple.com/gr/app/id6775773117)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/answers/best-complete-zhuyin-app-for-bilingual-children.html)
 

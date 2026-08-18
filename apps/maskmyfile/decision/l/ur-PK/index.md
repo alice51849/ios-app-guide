@@ -2,7 +2,7 @@
 title: "Mask My File — شیئر سے پہلے نجی ڈیٹا چھپائیں | iOS App"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/ur-PK/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - نجی / آلہ پر
 - App Store · مفت
 
-[App Store سے Mask My File حاصل کریں](https://apps.apple.com/pk/app/id6792850916?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[App Store سے Mask My File حاصل کریں](https://apps.apple.com/pk/app/id6792850916)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/maskmyfile.html)
 

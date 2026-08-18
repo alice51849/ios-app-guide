@@ -3,7 +3,7 @@
 > Strukturierte Infos zu jeder iOS-App — Funktionen, Preis und FAQ.
 
 locale: de-DE
-apps: 40
+apps: 42
 - App-Verzeichnis: https://alice51849.github.io/ios-app-guide/de-DE/tools/private-pay-once-iphone-app-finder.html
 - App-Verzeichnis · PWA: https://alice51849.github.io/ios-app-guide/de-DE/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld
@@ -27,6 +27,10 @@ apps: 40
 - App-Verzeichnis · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - App-Verzeichnis · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/de-DE/notesstudio100.html) — Notizbuch, Handschrift & PDF
+  - Privates Offline-Notizstudio für Tablet und Stift. Schreiben Sie von Hand, kommentieren Sie PDFs, hängen Sie Audio an Seiten und lernen Sie. Einmaliger Kauf für Extras.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6798813048
 - [AI Brief](https://alice51849.github.io/ios-app-guide/de-DE/aibriefpack.html) — Dateien in klaren Kontext
   - Führe Screenshots, Dokumente und Notizen zusammen. Behalte die Fakten. Überprüfe private Details. Kopiere einen übersichtlichen Zusammenfassung.
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
@@ -179,6 +183,10 @@ apps: 40
   - Erkennt die wahrscheinlichste Störung anhand unabhängiger Pfade, DNS, TCP, TLS, Laufzeit und Stabilität. Einmal vorab bezahlen – kein Abo, keine Werbung, kein Tracking.
   - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
   - App Store: https://apps.apple.com/de/app/id6790467886
+- [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/de-DE/wifiaidlite.html) — Netzdiagnose mit Belegen
+  - Das echte Problem. Jedes Tool bietet eine kostenlose vollständige Nutzung. Optionaler Einmalkauf für dauerhaft unbegrenzte Nutzung—kein Abo, keine Werbung oder Tracking.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6793414462
 - [Wordmate Lite: Vokabeltrainer](https://alice51849.github.io/ios-app-guide/de-DE/wordmatelite.html) — Fünf Wörter täglich, offline
   - Eine Minute, fünf neue Wörter, ein sichtbarer Schritt. 44 Sprachen, 14 Themen aus dem Alltag, ohne Konto und ohne Netz. Die Lerngewohnheit, die man durchhält.
   - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.

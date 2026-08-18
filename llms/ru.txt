@@ -3,7 +3,7 @@
 > Структурированная информация о каждом приложении iOS — функции, цена и FAQ.
 
 locale: ru
-apps: 40
+apps: 42
 - Каталог приложений: https://alice51849.github.io/ios-app-guide/ru/tools/private-pay-once-iphone-app-finder.html
 - Каталог приложений · PWA: https://alice51849.github.io/ios-app-guide/ru/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ru.jsonld
@@ -27,6 +27,10 @@ apps: 40
 - Каталог приложений · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Каталог приложений · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/ru/notesstudio100.html) — Заметки от руки и PDF
+  - Личное пространство для записей от руки, разметки PDF, аудио на странице и учебных карточек. Упорядочивайте материалы и находите нужное прямо на устройстве.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6798813048
 - [AI Brief](https://alice51849.github.io/ios-app-guide/ru/aibriefpack.html) — Файлы в ясный контекст
   - Соберите вместе снимки экрана, документы и заметки. Сохраните факты. Проверьте личные данные. Скопируйте одну чёткую сводку.
   - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
@@ -179,6 +183,10 @@ apps: 40
   - Найдите вероятную причину с помощью независимых проверок маршрутов, DNS, TCP, TLS, времени отклика и стабильности. Разовая оплата, без подписки, рекламы и слежки.
   - Цена: Платная загрузка по единой цене, без подписки.
   - App Store: https://apps.apple.com/ru/app/id6790467886
+- [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/ru/wifiaidlite.html) — Точная диагностика сети
+  - Найдите реальную проблему. Один раз бесплатно для каждого инструмента. Разовая пожизненная разблокировка для безлимитного доступа — без подписок, рекламы и слежки.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6793414462
 - [Wordmate Lite: 5 слов в день](https://alice51849.github.io/ios-app-guide/ru/wordmatelite.html) — Учим языки без зубрёжки
   - Одна минута, пять слов и один заметный шаг по тропе. Выберите язык и тему, послушайте произношение, следите за серией дней. Без аккаунта, без интернета, без слежки.
   - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.

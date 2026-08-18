@@ -2,7 +2,7 @@
 title: "nejlepší jednorázově placený filmový foto editor pro cestovatelské tvůrce na iPhonu"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/cs/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Tvůrci cestovatelského obsahu potřebují opakovatelný filmový vzhled, kter�
 - Zdarma na začátek · doživotní odemknutí
 - App Store · Zdarma
 
-[Získejte PhotoCream v App Store →](https://apps.apple.com/cz/app/id6781808054?pt=118326163&ct=iag_data_cs&mt=8)
+[Získejte PhotoCream v App Store →](https://apps.apple.com/cz/app/id6781808054)
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

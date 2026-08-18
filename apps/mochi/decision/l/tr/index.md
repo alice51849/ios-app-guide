@@ -2,7 +2,7 @@
 title: "iPhone için aboneliksiz en iyi basit yapılacaklar listesi uygulaması"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/tr/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Reklam yok
 - App Store · Ücretsiz
 
-[Mochi'yi App Store'dan edinin →](https://apps.apple.com/tr/app/id6785004775?pt=118326163&ct=iag_data_tr&mt=8)
+[Mochi'yi App Store'dan edinin →](https://apps.apple.com/tr/app/id6785004775)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

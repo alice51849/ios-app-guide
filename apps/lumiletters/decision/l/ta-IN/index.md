@@ -2,7 +2,7 @@
 title: "விளம்பரமில்லாத சிறந்த கல்வி விளையாட்டு பயன்பாடு iPhone-க்கு"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/ta-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - விளம்பரங்கள் இல்லை
 - App Store · இலவசம்
 
-[App Store-இல் Lumi Letters பெறவும் →](https://apps.apple.com/in/app/id6778748533?pt=118326163&ct=iag_data_ta_in&mt=8)
+[App Store-இல் Lumi Letters பெறவும் →](https://apps.apple.com/in/app/id6778748533)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

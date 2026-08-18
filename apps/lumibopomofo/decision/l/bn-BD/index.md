@@ -2,7 +2,7 @@
 title: "আইফোনে বাচ্চাদের জন্য বোপোমোফো শেখার সেরা অ্যাপ"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/bn-BD/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - বিনামূল্যে শুরু · আজীবন আনলক
 - কোনও বিজ্ঞাপন নেই
 
-[App Store থেকে Lumi Bopomofo পান →](https://apps.apple.com/app/id6773017109?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে Lumi Bopomofo পান →](https://apps.apple.com/app/id6773017109)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

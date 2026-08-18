@@ -2,7 +2,7 @@
 title: "DailyMate Lite: พร้อมคุย — 50 ภาษา ใช้ได้ในชีวิตจริง | iOS App"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/th/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - เริ่มใช้ฟรี · ปลดล็อกถาวร
 - App Store · ฟรี
 
-[ดาวน์โหลด DailyMate Lite: พร้อมคุย บน App Store](https://apps.apple.com/th/app/id6794725568?pt=118326163&ct=iag_data_th&mt=8)
+[ดาวน์โหลด DailyMate Lite: พร้อมคุย บน App Store](https://apps.apple.com/th/app/id6794725568)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/dailymatelite.html)
 

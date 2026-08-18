@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "zh-Hant",
-  "dateModified": "2026-08-17",
-  "content_digest": "7bf9a1c1c9d8e2e85c4f23e27e95d84ef7cc221c3fec20ef6ea999c451133f03",
-  "generation_digest": "977f7d6bc00a2e88bb25df2321e667f9647bf876b7c6aea1976e45e43a1328a2",
+  "dateModified": "2026-08-18",
+  "content_digest": "264b14864720b36adcc17313f205aa969b749d3a164446272f28772a835771b3",
+  "generation_digest": "d5fa67b24e8433a4f212a12ecc3662733a247983974a6cca6a58b9ab36d6fe87",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 40,
+  "record_count": 42,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/zh-Hant.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/zh-Hant.rss.xml",
@@ -29,7 +29,7 @@
       "category": "photo-utility",
       "category_label": "照片與實用工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -41,7 +41,7 @@
       "device_labels": [],
       "badge_labels": [
         "照片與實用工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "隱私優先／裝置端",
         "App Store · 免費"
       ],
@@ -51,7 +51,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6792850916",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
-      "app_store_url": "https://apps.apple.com/tw/app/id6792850916?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6792850916",
       "app_store_cta_label": "Get Mask My File on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -97,7 +97,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6790467886",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
-      "app_store_url": "https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6790467886",
       "app_store_cta_label": "Get WiFi Aid on the App Store →",
       "storefront_facts": {
         "price": "190",
@@ -127,7 +127,7 @@
       "category": "lifestyle",
       "category_label": "生活",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -135,7 +135,7 @@
       "device_labels": [],
       "badge_labels": [
         "生活",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "App Store · 免費",
         "★ 5.0/5 · 1"
       ],
@@ -145,7 +145,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6790800323",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
-      "app_store_url": "https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6790800323",
       "app_store_cta_label": "Get Mochi DoneStamp on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -164,6 +164,62 @@
       "verified_live": true
     },
     {
+      "record_id": "zh-Hant:notesstudio100",
+      "locale": "zh-Hant",
+      "app_key": "notesstudio100",
+      "app_name": "100 Notes Studio: Pen & Paper",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "100 Notes Studio: Pen & Paper — 手寫筆記本、PDF標註、錄音與複習 | iOS App",
+      "decision_context": "把手寫、鍵入、PDF 閱讀標註、頁面錄音與學習複習整合到一個安靜的工作空間。100 Notes Studio 以平板體驗為主，也為手機提供完整流程；核心編輯不需連網即可使用。 自然細膩的書寫手感 29 種筆與筆刷各有獨立質感，包括鋼筆、鋼珠筆、2B／4B／6B 鉛筆、毛筆、麥克筆、蠟筆、水彩暈染與炭筆等。相容數位筆可依裝置能力使用壓力、傾斜、防誤觸、輕點兩下與按壓手勢。橡皮擦提供像素、整筆與精準模式；套索可移動、縮放、複製或刪除筆跡。另有尺規、八種圖形工具與簡報用雷射筆。 100 款各具特色的筆記本風格 每款 Studio Style 都有獨立封面、紙張結構、配色、分隔頁、印章或貼紙、工具列配色與小工具外觀，並非同一模板反覆換色。風格包含極簡、亞麻紋理、日式方格、點陣規劃、雙欄學習版面、學術、工程、音樂、會議、研究、行事曆、旅行、健康與食譜等。100 款風格均提供真實預覽，尚未解鎖也可查看效果。 書寫、整理與學習工具 固定頁面或無限畫布，支援 A4／A5／Letter／螢幕與自訂尺寸，可選直向或橫向 鍵入排版包含粗體、斜體、底線、字型、顏色、清單、待辦事項、表格與連結 匯入並標註 PDF，支援螢光標示、底線、刪除線、文字註記、手寫標記、頁面旋轉、裁切、插入、擷取、合併與匯出 在筆記本中錄音；每段錄音會保存在開始錄製的頁面中 裝置端手寫辨識與 PDF 文字辨識，可搜尋標題、內文、手寫內容與附件 學習模式包含關聯式抽認卡、填空卡與 FSRS 間隔重複排程 貼紙、和紙膠帶與自動編號目錄 巢狀資料夾、標籤、釘選、收藏、封存、可復原垃圾桶與版本歷史 主畫面與鎖定畫面小工具、系統捷徑，以及用於語音、文字與清單記錄的穿戴裝置 App 可調不透明度、顯示與鎖定的墨水圖層，以及把 PDF 或圖片放在書寫頁旁的參考工作區 重視隱私 不需帳號，沒有廣告、第三方追蹤或分析，也不使用外部 AI。核心編輯可離線使用，手寫辨識與搜尋在裝置端處理。未啟用系統同步或分享時，內容保存在本機。可用裝置提供的生物辨識鎖保護整個 App 或個別筆記本。 從核心功能開始 免費方案包含核心編輯、各類筆刷、PDF 標註、頁面錄音、手寫搜尋與學習模式，並提供 1 本頁數不限的筆記本，以及 100 款風格中的 2 款免費風格。一次購買可加入不限數量的筆記本、100 款風格、向量墨跡 PDF 匯出、可復原版本歷史與加密備份。 100 Notes Studio: Pen & Paper 適合日常書寫、資料整理與學習複習。 隱私權政策 https://alice51849.github.io/100notes-support/privacy.html 使用條款 https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+      "category": "productivity",
+      "category_label": "效率工具",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "免費開始 · 一次購買解鎖",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "離線使用",
+        "免帳號",
+        "隱私優先／裝置端"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "效率工具",
+        "免費開始 · 一次購買解鎖",
+        "離線使用",
+        "免帳號",
+        "隱私優先／裝置端",
+        "App Store · 免費"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/notesstudio100.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/zh-Hant/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/zh-Hant/notesstudio100.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fnotesstudio100%2Fdecision%2Fl%2Fzh-Hant%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
+      "app_store_id": "6798813048",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
+      "app_store_url": "https://apps.apple.com/tw/app/id6798813048",
+      "app_store_cta_label": "在 App Store 取得 100 Notes Studio: Pen & Paper",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費"
+      },
+      "guide_cta_label": "閱讀完整指南",
+      "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
+      "source_persona_query": "best offline handwriting notes app for ipad with pdf markup no subscription",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "zh-Hant:aibriefpack",
       "locale": "zh-Hant",
       "app_key": "aibriefpack",
@@ -175,7 +231,7 @@
       "category": "productivity",
       "category_label": "效率工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -187,7 +243,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 1"
@@ -198,7 +254,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/tw/app/id6791658210?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6791658210",
       "app_store_cta_label": "Get AI Brief on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -228,7 +284,7 @@
       "category": "education",
       "category_label": "學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -236,7 +292,7 @@
       "device_labels": [],
       "badge_labels": [
         "學習",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "App Store · 免費",
         "★ 5.0/5 · 2"
       ],
@@ -246,7 +302,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6784974530",
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
-      "app_store_url": "https://apps.apple.com/tw/app/id6784974530?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6784974530",
       "app_store_cta_label": "在 App Store 取得 Aim990 →",
       "storefront_facts": {
         "price": "0",
@@ -293,7 +349,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6792483140",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
-      "app_store_url": "https://apps.apple.com/tw/app/id6792483140?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6792483140",
       "app_store_cta_label": "Get Aim990 Plus on the App Store →",
       "storefront_facts": {
         "price": "190",
@@ -321,7 +377,7 @@
       "category": "utility",
       "category_label": "更多",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -333,7 +389,7 @@
       ],
       "badge_labels": [
         "更多",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "主畫面小工具",
         "App Store · 免費"
       ],
@@ -343,7 +399,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/tw/app/id6794178671?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6794178671",
       "app_store_cta_label": "在 App Store 取得 CalDaily 計算機與主題",
       "storefront_facts": {
         "price": "0",
@@ -371,7 +427,7 @@
       "category": "productivity",
       "category_label": "效率工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -379,7 +435,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "App Store · 免費",
         "★ 5.0/5 · 2"
       ],
@@ -389,7 +445,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6781337213",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
-      "app_store_url": "https://apps.apple.com/tw/app/id6781337213?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6781337213",
       "app_store_cta_label": "在 App Store 取得 CV Desk →",
       "storefront_facts": {
         "price": "0",
@@ -419,7 +475,7 @@
       "category": "health",
       "category_label": "健康",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -431,7 +487,7 @@
       "device_labels": [],
       "badge_labels": [
         "健康",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 1"
@@ -442,7 +498,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6782251621",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
-      "app_store_url": "https://apps.apple.com/tw/app/id6782251621?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6782251621",
       "app_store_cta_label": "在 App Store 取得 Cyca →",
       "storefront_facts": {
         "price": "0",
@@ -494,7 +550,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6790418321",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
-      "app_store_url": "https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6790418321",
       "app_store_cta_label": "前往 App Store 下載 DailyMate →",
       "storefront_facts": {
         "price": "390",
@@ -522,7 +578,7 @@
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -530,7 +586,7 @@
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/dailymatelite.html",
@@ -539,7 +595,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6794725568",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
-      "app_store_url": "https://apps.apple.com/tw/app/id6794725568?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6794725568",
       "app_store_cta_label": "在 App Store 取得 DailyMate Lite：開口練習",
       "storefront_facts": {
         "price": "0",
@@ -593,7 +649,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6755782939",
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
-      "app_store_url": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6755782939",
       "app_store_cta_label": "在 App Store 取得 G+Money →",
       "storefront_facts": {
         "price": "150",
@@ -623,7 +679,7 @@
       "category": "finance",
       "category_label": "理財與旅行",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -647,7 +703,7 @@
       ],
       "badge_labels": [
         "理財與旅行",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "離線使用",
         "免帳號",
         "無追蹤",
@@ -662,7 +718,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6793436548",
       "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
-      "app_store_url": "https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6793436548",
       "app_store_cta_label": "Get G+Money Lite on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -716,7 +772,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/tw/app/id6754218117?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6754218117",
       "app_store_cta_label": "Get HoursTag on the App Store →",
       "storefront_facts": {
         "price": "150",
@@ -746,7 +802,7 @@
       "category": "finance",
       "category_label": "理財與旅行",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
@@ -768,7 +824,7 @@
       ],
       "badge_labels": [
         "理財與旅行",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "免帳號",
         "無追蹤",
         "隱私優先／裝置端",
@@ -782,7 +838,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/tw/app/id6794039979?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6794039979",
       "app_store_cta_label": "Get HoursTag Lite on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -810,7 +866,7 @@
       "category": "productivity",
       "category_label": "效率工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -824,7 +880,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "無廣告",
         "隱私優先／裝置端",
         "App Store · 免費",
@@ -836,7 +892,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6780107485",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
-      "app_store_url": "https://apps.apple.com/tw/app/id6780107485?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6780107485",
       "app_store_cta_label": "在 App Store 取得 LockHour Pro →",
       "storefront_facts": {
         "price": "0",
@@ -866,7 +922,7 @@
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -878,7 +934,7 @@
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "無廣告",
         "App Store · 免費",
         "★ 4.6/5 · 5"
@@ -889,7 +945,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6773017109",
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
-      "app_store_url": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6773017109",
       "app_store_cta_label": "在 App Store 取得 Lumi Bopomofo →",
       "storefront_facts": {
         "price": "0",
@@ -942,7 +998,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6775773117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
-      "app_store_url": "https://apps.apple.com/tw/app/id6775773117?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6775773117",
       "app_store_cta_label": "在 App Store 取得 Lumi Bopomofo Pro →",
       "storefront_facts": {
         "price": "290",
@@ -972,7 +1028,7 @@
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -984,7 +1040,7 @@
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "無廣告",
         "App Store · 免費"
       ],
@@ -994,7 +1050,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6778748533",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
-      "app_store_url": "https://apps.apple.com/tw/app/id6778748533?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6778748533",
       "app_store_cta_label": "在 App Store 取得 Lumi Letters →",
       "storefront_facts": {
         "price": "0",
@@ -1044,7 +1100,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6778491147",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
-      "app_store_url": "https://apps.apple.com/tw/app/id6778491147?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6778491147",
       "app_store_cta_label": "在 App Store 取得 Lumi Letters Pro →",
       "storefront_facts": {
         "price": "290",
@@ -1072,7 +1128,7 @@
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1084,7 +1140,7 @@
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "無廣告",
         "App Store · 免費",
         "★ 5.0/5 · 1"
@@ -1095,7 +1151,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6778269699",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
-      "app_store_url": "https://apps.apple.com/tw/app/id6778269699?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6778269699",
       "app_store_cta_label": "在 App Store 取得 Lumi Math Planet →",
       "storefront_facts": {
         "price": "0",
@@ -1148,7 +1204,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6776958488",
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
-      "app_store_url": "https://apps.apple.com/tw/app/id6776958488?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6776958488",
       "app_store_cta_label": "在 App Store 取得 Lumi Math Pro →",
       "storefront_facts": {
         "price": "290",
@@ -1178,7 +1234,7 @@
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1190,7 +1246,7 @@
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "無廣告",
         "App Store · 免費",
         "★ 5.0/5 · 1"
@@ -1201,7 +1257,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6779750237",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
-      "app_store_url": "https://apps.apple.com/tw/app/id6779750237?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6779750237",
       "app_store_cta_label": "在App Store取得Lumi Mission Planet →",
       "storefront_facts": {
         "price": "0",
@@ -1253,7 +1309,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6779745474",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
-      "app_store_url": "https://apps.apple.com/tw/app/id6779745474?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6779745474",
       "app_store_cta_label": "在 App Store 取得 Lumi Mission Planet Pro →",
       "storefront_facts": {
         "price": "190",
@@ -1281,7 +1337,7 @@
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1293,7 +1349,7 @@
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "無廣告",
         "App Store · 免費",
         "★ 5.0/5 · 1"
@@ -1304,7 +1360,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6787193643",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "app_store_url": "https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6787193643",
       "app_store_cta_label": "在 App Store 取得 Lumi Trip Planet →",
       "storefront_facts": {
         "price": "0",
@@ -1334,7 +1390,7 @@
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -1348,7 +1404,7 @@
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "無廣告",
         "無追蹤",
         "App Store · 免費",
@@ -1360,7 +1416,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6779552704",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
-      "app_store_url": "https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6779552704",
       "app_store_cta_label": "在 App Store 取得 Lumi Weather →",
       "storefront_facts": {
         "price": "0",
@@ -1390,7 +1446,7 @@
       "category": "productivity",
       "category_label": "效率工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1402,7 +1458,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "無廣告",
         "App Store · 免費",
         "★ 5.0/5 · 2"
@@ -1413,7 +1469,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6785004775",
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
-      "app_store_url": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6785004775",
       "app_store_cta_label": "在 App Store 取得 Mochi →",
       "storefront_facts": {
         "price": "0",
@@ -1443,7 +1499,7 @@
       "category": "productivity",
       "category_label": "效率工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1451,7 +1507,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/onepageppt.html",
@@ -1460,7 +1516,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6798814385",
       "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
-      "app_store_url": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6798814385",
       "app_store_cta_label": "在 App Store 取得 OnePage PPT: AI 一頁簡報",
       "storefront_facts": {
         "price": "0",
@@ -1488,7 +1544,7 @@
       "category": "photo-utility",
       "category_label": "照片與實用工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1496,7 +1552,7 @@
       "device_labels": [],
       "badge_labels": [
         "照片與實用工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "App Store · 免費",
         "★ 3.0/5 · 2"
       ],
@@ -1506,7 +1562,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6781808054",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
-      "app_store_url": "https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6781808054",
       "app_store_cta_label": "在 App Store 取得 PhotoCream →",
       "storefront_facts": {
         "price": "0",
@@ -1536,7 +1592,7 @@
       "category": "photo-utility",
       "category_label": "照片與實用工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1548,7 +1604,7 @@
       "device_labels": [],
       "badge_labels": [
         "照片與實用工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "隱私優先／裝置端",
         "App Store · 免費"
       ],
@@ -1558,7 +1614,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6780223070",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
-      "app_store_url": "https://apps.apple.com/tw/app/id6780223070?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6780223070",
       "app_store_cta_label": "在 App Store 取得 PicClear →",
       "storefront_facts": {
         "price": "0",
@@ -1586,7 +1642,7 @@
       "category": "productivity",
       "category_label": "效率工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1598,7 +1654,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 1"
@@ -1609,7 +1665,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6779977651",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
-      "app_store_url": "https://apps.apple.com/tw/app/id6779977651?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6779977651",
       "app_store_cta_label": "在 App Store 取得 ScanTo Pro →",
       "storefront_facts": {
         "price": "0",
@@ -1639,7 +1695,7 @@
       "category": "sleep-sound",
       "category_label": "睡眠與專注",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -1653,7 +1709,7 @@
       "device_labels": [],
       "badge_labels": [
         "睡眠與專注",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "離線使用",
         "無廣告",
         "App Store · 免費",
@@ -1665,7 +1721,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6788236641",
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
-      "app_store_url": "https://apps.apple.com/tw/app/id6788236641?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6788236641",
       "app_store_cta_label": "在 App Store 取得 Sereno →",
       "storefront_facts": {
         "price": "0",
@@ -1717,7 +1773,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6780575828",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
-      "app_store_url": "https://apps.apple.com/tw/app/id6780575828?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6780575828",
       "app_store_cta_label": "在 App Store 取得 Snapport →",
       "storefront_facts": {
         "price": "190",
@@ -1745,7 +1801,7 @@
       "category": "photo-utility",
       "category_label": "照片與實用工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -1757,7 +1813,7 @@
       "device_labels": [],
       "badge_labels": [
         "照片與實用工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "離線使用",
         "App Store · 免費"
       ],
@@ -1767,7 +1823,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6792856304",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
-      "app_store_url": "https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6792856304",
       "app_store_cta_label": "在 App Store 取得 Snapport Lite",
       "storefront_facts": {
         "price": "0",
@@ -1795,7 +1851,7 @@
       "category": "productivity",
       "category_label": "效率工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1807,7 +1863,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 2"
@@ -1818,7 +1874,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6782139553",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
-      "app_store_url": "https://apps.apple.com/tw/app/id6782139553?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6782139553",
       "app_store_cta_label": "在 App Store 取得 Sono Note →",
       "storefront_facts": {
         "price": "0",
@@ -1848,7 +1904,7 @@
       "category": "travel",
       "category_label": "旅行",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1856,7 +1912,7 @@
       "device_labels": [],
       "badge_labels": [
         "旅行",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -1865,7 +1921,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6791299610",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
-      "app_store_url": "https://apps.apple.com/tw/app/id6791299610?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6791299610",
       "app_store_cta_label": "於 App Store 取得 TripBee Lite →",
       "storefront_facts": {
         "price": "0",
@@ -1922,7 +1978,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6787754435",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
-      "app_store_url": "https://apps.apple.com/tw/app/id6787754435?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6787754435",
       "app_store_cta_label": "在 App Store 取得 TripBee Pro：旅遊規劃師 →",
       "storefront_facts": {
         "price": "190",
@@ -1952,7 +2008,7 @@
       "category": "photo-utility",
       "category_label": "照片與實用工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1964,7 +2020,7 @@
       "device_labels": [],
       "badge_labels": [
         "照片與實用工具",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "隱私優先／裝置端",
         "App Store · 免費",
         "★ 5.0/5 · 2"
@@ -1975,7 +2031,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6782275018",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
-      "app_store_url": "https://apps.apple.com/tw/app/id6782275018?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6782275018",
       "app_store_cta_label": "在 App Store 取得 Unblurry →",
       "storefront_facts": {
         "price": "0",
@@ -1994,6 +2050,56 @@
       "verified_live": true
     },
     {
+      "record_id": "zh-Hant:wifiaidlite",
+      "locale": "zh-Hant",
+      "app_key": "wifiaidlite",
+      "app_name": "WiFi Aid Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "WiFi Aid Lite — 網路診斷與連線證據 | iOS App",
+      "decision_context": "「網路又卡住了」——問題到底出在路由器、DNS、ISP,還是網站本身?WiFi Aid Lite 用多條獨立路徑同時檢測 DNS、TCP、TLS、回應時間與穩定度,交叉比對各項證據,告訴你最可能的故障原因,不必再瞎猜、重開機碰運氣。 • 執行檢查:一鍵完成 Wi-Fi、DNS 與網際網路連線的完整檢測,幾秒內就能看到結果與診斷結論。 • 深度檢查:蒐集更多證據與穩定度樣本,適合排查時好時壞的間歇性問題。 • 網站檢查:輸入任一網址,立刻判斷是單一網站出狀況,還是整條網路都有問題。 • 完整證據:DNS、TCP、TLS、TTFB、HTTP、直連 IP、IPv4 與 IPv6 逐項列出,每個結論都有依據。 • 穩定度分析:透過連續取樣觀察延遲抖動,揪出「看起來有連上、用起來卻很卡」的不穩定連線。 • 檢查紀錄:歷次結果自動保存,方便比對網路狀況的變化;所有紀錄僅儲存在你的裝置上。 • 目前節點:以精確位置辨識目前連線的 Wi-Fi 與節點;位置資訊僅用於此用途,且僅在本機處理。 免費就能完整體驗:每項工具皆含一次免費的完整使用,不是功能閹割的試用版。覺得好用,再選擇一次性付費的終身解鎖,即可不限次數使用全部工具——一次解鎖,永久有效,絕無訂閱。 無需帳號,沒有廣告、沒有分析工具、沒有任何追蹤;檢查紀錄僅存於本機,不上傳雲端。",
+      "category": "utility",
+      "category_label": "更多",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "免費開始 · 一次購買解鎖",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "免帳號"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "更多",
+        "免費開始 · 一次購買解鎖",
+        "免帳號",
+        "App Store · 免費"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/wifiaidlite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/zh-Hant/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/zh-Hant/wifiaidlite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fwifiaidlite%2Fdecision%2Fl%2Fzh-Hant%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
+      "app_store_id": "6793414462",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
+      "app_store_url": "https://apps.apple.com/tw/app/id6793414462",
+      "app_store_cta_label": "在 App Store 取得 WiFi Aid Lite",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費"
+      },
+      "guide_cta_label": "閱讀完整指南",
+      "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
+      "source_persona_query": "how to tell if the wifi or the website is down free app",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "zh-Hant:wordmatelite",
       "locale": "zh-Hant",
       "app_key": "wordmatelite",
@@ -2005,7 +2111,7 @@
       "category": "kids",
       "category_label": "兒童與學習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免費開始 · 永久解鎖",
+      "purchase_label": "免費開始 · 一次購買解鎖",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -2017,7 +2123,7 @@
       "device_labels": [],
       "badge_labels": [
         "兒童與學習",
-        "免費開始 · 永久解鎖",
+        "免費開始 · 一次購買解鎖",
         "離線使用",
         "App Store · 免費"
       ],
@@ -2027,7 +2133,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/tw/app/id6797601720?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6797601720",
       "app_store_cta_label": "在 App Store 取得 Wordmate Lite 每天五個單字",
       "storefront_facts": {
         "price": "0",
@@ -2092,7 +2198,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6789917808",
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
-      "app_store_url": "https://apps.apple.com/tw/app/id6789917808?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6789917808",
       "app_store_cta_label": "在 App Store 取得 Wordmate：學習 44 種語言 →",
       "storefront_facts": {
         "price": "290",

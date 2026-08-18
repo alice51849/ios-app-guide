@@ -2,7 +2,7 @@
 title: "Apple Watch உடன் பயணிக்கும் நேரமில்லா பயணிகளுக்கான சிறந்த சொற்பொருள் செயலி"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/ta-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,7 +22,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ₹ 999
 
-[Wordmate: Learn 44 Languages-ஐ App Store-இல் பெறுங்கள் →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=iag_data_ta_in&mt=8)
+[Wordmate: Learn 44 Languages-ஐ App Store-இல் பெறுங்கள் →](https://apps.apple.com/in/app/id6789917808)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

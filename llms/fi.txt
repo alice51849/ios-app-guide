@@ -3,7 +3,7 @@
 > Jäsennellyt tiedot jokaisen iOS-sovelluksen ominaisuuksista, hinnasta ja usein kysytyistä kysymyksistä.
 
 locale: fi
-apps: 40
+apps: 42
 - Sovellushakemisto: https://alice51849.github.io/ios-app-guide/fi/tools/private-pay-once-iphone-app-finder.html
 - Sovellushakemisto · PWA: https://alice51849.github.io/ios-app-guide/fi/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fi.jsonld
@@ -27,13 +27,17 @@ apps: 40
 - Sovellushakemisto · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Sovellushakemisto · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/fi/notesstudio100.html) — Muistikirja, käsiala ja PDF
+  - Yksityinen, ilman verkkoyhteyttä toimiva työtila käsinkirjoitukselle, tekstille ja PDF-merkinnöille. Liitä äänite sivuun ja kertaa sanakorteilla.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6798813048
 - [AI Brief](https://alice51849.github.io/ios-app-guide/fi/aibriefpack.html) — Tiedostoista selkeä konteksti
   - Tuo näyttökuvat, dokumentit ja muistiinpanot yhteen. Säilytä faktat. Tarkista yksityiset tiedot. Kopioi yksi selkeä kooste.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6791658210
 - [Aim990 - TOEIC Valmennus](https://alice51849.github.io/ios-app-guide/fi/aim990.html) — Saavuta huipputuloksesi!
   - Valmistaudu TOEIC-testin huipentumaan! 30 päivän opas, joka vie sinut kohti unelmiesi pistettä.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6784974530
 - [Aim990 Plus](https://alice51849.github.io/ios-app-guide/fi/aim990plus.html) — Englantia paineen alla
   - Harjoittele englantia aidon koetilanteen tuntuisessa paineessa: lämmittely, ajastettu tehtäväsarja ja omiin virheisiin perustuva kertaus.
@@ -41,19 +45,19 @@ apps: 40
   - App Store: https://apps.apple.com/fi/app/id6792483140
 - [CalDaily: laskin ja teemat](https://alice51849.github.io/ios-app-guide/fi/caldaily.html) — Widget, työkalut ja historia
   - Jokaiselle tallennetulle tulokselle voi antaa nimen ja tyypin, ja löydät sen myöhemmin. Kahdeksan työkalua, kotinäytön widget ja sata teemaa, kaikki laitteessasi.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6794178671
 - [CV Desk: ATS-ansioluettelo](https://alice51849.github.io/ios-app-guide/fi/cvdesk.html) — ATS-CV ja ansioluettelo
   - Päihitä rekrytointirobotit. ATS-pisteet laitteessa, viimeistele CV ja vie ATS-yhteensopivana PDF:nä tai Wordina. Yksityinen, ei vesileimaa, kertaosto.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6781337213
 - [Cyca: Kuukautiskalenteri](https://alice51849.github.io/ios-app-guide/fi/cyca.html) — Ovulaatio, kierto & PMS
   - Ymmärrä kehoasi rauhassa. Seuraa kuukautisia, ovulaatiota, hedelmällisiä päiviä ja PMS:ää rauhoittavassa kalenterissa. Kaikki laitteellasi, mainokseton, kertaosto.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6782251621
 - [DailyMate Lite: Puhu tänään](https://alice51849.github.io/ios-app-guide/fi/dailymatelite.html) — 50 kieltä, aitoja keskusteluja
   - Harjoittele luontevia aloituksia ja vastauksia 50 kielellä. Kokeile matkailuaiheen alkeistasoa maksutta ja avaa kaikki 8 400 harjoitusta kertaostoksella. Ei tilausta.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6794725568
 - [DailyMate: Lauseita elämään](https://alice51849.github.io/ios-app-guide/fi/dailymate.html) — 47 kieltä arjen tilanteisiin
   - Unohda irralliset sanat. Opi 8 400 kokonaista lausetta 47 kielellä, kuuntele järjestelmä-äänellä ja jatka widgetissä tai Apple Watchissa. Yksi maksu, ei tilausta.
@@ -65,11 +69,11 @@ apps: 40
   - App Store: https://apps.apple.com/fi/app/id6755782939
 - [G+Money Lite](https://alice51849.github.io/ios-app-guide/fi/gmoneylite.html) — Budjetti, menot & valuutta
   - Matkaraha, helposti · Ilmainen: kurssit, budjetti, yhteenveto · 1 matka · 3 kulua · Yksi maksu · Elinikäinen käyttö · Ei tilausta
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6793436548
 - [HoursTag Lite](https://alice51849.github.io/ios-app-guide/fi/hourstaglite.html) — Asioiden todellinen hinta
   - Asioiden todellinen hinta - Tutustu arvoprismaasi - Aikakustannus - Kaikki pysyy laitteellasi. Ei tiliä, ei seurantaa
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6794039979
 - [HoursTag: Ostotunnit](https://alice51849.github.io/ios-app-guide/fi/hourstag.html) — Budjetti, menot & säästöt
   - Muuta jokainen hinta työtunneiksi. Syötä tulosi, näe mitä asiat oikeasti maksavat aikana ja pysäytä heräteostokset. Tavoitteet ja menot. Mainokseton, kertaosto.
@@ -77,11 +81,11 @@ apps: 40
   - App Store: https://apps.apple.com/fi/app/id6754218117
 - [LockHour Pro](https://alice51849.github.io/ios-app-guide/fi/lockhour.html) — Sovellusten esto & ajastin
   - Lukitse häiritsevät sovellukset. Aloita keskittymisjakso, estä sovellukset, kerää putkia ja ota aikasi takaisin. Yksityinen, mainokseton, kertaosto.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6780107485
 - [Lumi Bopomofo](https://alice51849.github.io/ios-app-guide/fi/lumibopomofo.html) — Zhuyin: kiinan äänteet
   - Zhuyinista tulee äänteiden, sävelten ja piirtämisen planeetta! Lapsi kuulee, kirjoittaa ja muistaa. 3-7-vuotiaille. Mainokseton, yksityinen, kertaosto.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6773017109
 - [Lumi Bopomofo Pro: Zhuyin](https://alice51849.github.io/ios-app-guide/fi/lumibopomofopro.html) — Zhuyin-peli lapsille
   - Opi kaikki 37 zhuyin-äännettä: sävelet, yhdistely, piirtäminen ja pelit. Täysi kiinan fonetiikka. 3-7 v, mainokseton, offline, kertaosto.
@@ -89,7 +93,7 @@ apps: 40
   - App Store: https://apps.apple.com/fi/app/id6775773117
 - [Lumi Letters Lite: ABC Kids](https://alice51849.github.io/ios-app-guide/fi/lumiletters.html) — Piirrä ABC ja äänteet
   - Ensimmäinen ABC-seikkailu! Piirrä kirjaimia, kuuntele äänteitä, pelaa ja saa itseluottamusta. 3-7-vuotiaille, mainokseton ja yksityinen.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6778748533
 - [Lumi Letters Pro: ABC Phonics](https://alice51849.github.io/ios-app-guide/fi/lumiletterspro.html) — ABC-äänteet: lue ja kirjoita
   - Koko ABC-matka: kirjaimet, äänteet, piirtäminen, lukupelit ja tulostettavat tehtävät. 3-7-vuotiaille. Mainokseton, yksityinen, kertaosto.
@@ -97,7 +101,7 @@ apps: 40
   - App Store: https://apps.apple.com/fi/app/id6778491147
 - [Lumi Math Planet: Explorer](https://alice51849.github.io/ios-app-guide/fi/lumimath.html) — Matematiikkaa lapsille 3-6
   - Rakastu matematiikkaan! Laskemista, yhteenlaskua, muotoja ja logiikkaa leikkien, 3-6 v. Montessori-henkinen, mainokseton, yksityinen, kertaosto.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6778269699
 - [Lumi Math Pro: Numerot](https://alice51849.github.io/ios-app-guide/fi/lumimathpro.html) — Matikkapelit: päässälasku 5-8
   - Matikasta tulee avaruusseikkailu! Päässälasku, kertotaulu, logiikka ja kilpailutehtävät 5-8-vuotiaille ja vanhemmille. Mainokseton, ei tilausta, yksityinen.
@@ -105,7 +109,7 @@ apps: 40
   - App Store: https://apps.apple.com/fi/app/id6776958488
 - [Lumi Mission Planet](https://alice51849.github.io/ios-app-guide/fi/lumimission.html) — Palkintotaulu ja rutiinit
   - Muuta hampaiden pesu, siivous ja nukkumaanmeno iloisiksi tehtäviksi! Palkintotaulu, jota lapset rakastavat. Ei mainoksia, kertaosto, ei tilausta, yksityinen.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6779750237
 - [Lumi Mission Planet Pro](https://alice51849.github.io/ios-app-guide/fi/lumimissionpro.html) — Lasten rutiinit ja tavat
   - Hampaiden pesu, ruoka, siivous ja nukkumaanmeno muuttuvat iloisiksi tehtäviksi, ei riidaksi. Hyvät tavat 3-7-vuotiaille. Ei mainoksia, ei tilausta, kertaosto, perhejako.
@@ -113,47 +117,47 @@ apps: 40
   - App Store: https://apps.apple.com/fi/app/id6779745474
 - [Lumi Trip Planet: Matkat](https://alice51849.github.io/ios-app-guide/fi/tripplanet.html) — Perhematkaseikkailu
   - Käännä 'Olemmeko jo perillä?' hauskanpitoon. Offline-matkatehtävät, pakkausapu ja palkinnot, jotka saavat koko perheen hymyilemään koko matkan ajan.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6787193643
 - [Lumi Weather: Perhesää](https://alice51849.github.io/ios-app-guide/fi/lumiweather.html) — Sääennuste ja sadetutka
   - Näe heti, onko hyvä päivä lähteä ulos lasten kanssa. Tarkka ennuste tunneittain ja viikoksi, sade, UV ja pukeutumisvinkki. Ei mainoksia, ei tilausta, kertaosto.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6779552704
 - [Mask My File](https://alice51849.github.io/ios-app-guide/fi/maskmyfile.html) — Suojaa ennen jakamista
   - Piilota yksityiset tiedot ennen jakamista. Jokainen kopio avataan ja tarkistetaan uudelleen, ja suojaat jopa 100 tiedostoa kerralla. Kertaosto, ei tilauksia.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6792850916
 - [Mochi DoneStamp: Viimeksi](https://alice51849.github.io/ios-app-guide/fi/mochidonestamp.html) — Muista, milloin teit sen
   - Tee se, napauta – me muistamme milloin. Kirjaa satunnaiset ja toistuvat elämäntapahtumat yksityisesti ilman verkkoa. Kertaostos, ei koskaan tilausta.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6790800323
 - [Mochi: Söpö tehtävälista](https://alice51849.github.io/ios-app-guide/fi/mochi.html) — Suunnittele päivä lempeästi
   - Tehtävälista, jota oikeasti tykkäät käyttää. Kotoisa, söpö ja niin palkitseva rastittaa – ilmainen, ei mainoksia. Hoida asiat rauhassa.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6785004775
 - [OnePage PPT: tekoälyesitys](https://alice51849.github.io/ios-app-guide/fi/onepageppt.html) — Muistiinpanoista yksi dia
   - Liitä muistiinpanot, kuvakaappaukset tai PDF ja saat yhden viimeistellyn 16:9-dian oikeine kaavioineen. Esitä tai vie PowerPointiin. Toimii ilman verkkoa.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6798814385
 - [PhotoCream Pro](https://alice51849.github.io/ios-app-guide/fi/photocream.html) — Filmikamera & retro suodatin
   - Anna jokaiselle kuvalle filmin sielu: aitoa rakeisuutta, valovuotoja, 100+ vintage-tyyliä ja pro-kauneusretusointi. Kaikki laitteessa, mainokseton, kertaosto.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6781808054
 - [PicClear Pro](https://alice51849.github.io/ios-app-guide/fi/picclear.html) — Kuvapuhdistaja vapauttaa tilaa
   - Löydä kaksoiskuvat, kuvakaappaukset, sumeat kuvat ja suuret videot. Tarkista kaikki laitteessa ennen poistoa. Ei mainoksia, ei tilausta.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6780223070
 - [ScanTo Pro: PDF ja OCR](https://alice51849.github.io/ios-app-guide/fi/scanto.html) — Yksityinen offline-skanneri
   - Skannaa mitä vain, löydä ainiaaksi. Terävät PDF:t, haettava OCR-teksti ja Face ID -lukitus – täysin offline. Kertamaksu, ei tilausta.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6779977651
 - [Sereno: Unen Äänet](https://alice51849.github.io/ios-app-guide/fi/sereno.html) — Valkoista kohinaa & rauhaa
   - Osta kerran, nuku ikuisesti. Yhdistä kymmeniä eläviä ääniä yli 1000 ainutlaatuiseen äänimaisemaan — reaaliajassa, ei koskaan silmukkaa, ei koskaan tilausta, 100% offline.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6788236641
 - [Snapport Lite](https://alice51849.github.io/ios-app-guide/fi/snapportlite.html) — Luo ID-valokuvia kotona
   - Ota passin, viisumin ja asiakirjojen valokuvia ohjatulla koon säädöllä, taustatyökaluilla ja tulostukseen valmiilla viennillä. | Ilmaisversio · Tukee 1 vientiä
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6792856304
 - [Snapport: Passikuvat](https://alice51849.github.io/ios-app-guide/fi/snapport.html) — Passikuva viisumi ID
   - Tee passi, viisumi ja ID kuvat kotona: kokopohjat, siisti tausta ja tulostusarkit. Yksityisesti laitteessa, ei mainoksia, kertamaksu.
@@ -161,11 +165,11 @@ apps: 40
   - App Store: https://apps.apple.com/fi/app/id6780575828
 - [Sono Note](https://alice51849.github.io/ios-app-guide/fi/sononote.html) — Puhe tekstiksi · Äänimuistio
   - Puhu minuutti ja saat siistin muistiinpanon, selkeän tiivistelmän, tehtävät ja valmiin sähköpostin. Kaikki laitteessa, 100% yksityistä. Ei tiliä, ei mainoksia. Kertaosto.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6782139553
 - [TripBee Lite: Matkasuunnitelma](https://alice51849.github.io/ios-app-guide/fi/tripbeelite.html) — Yksi matka, kaikki järjestetty
   - Keskity täysin seuraavaan matkaan. TripBee Lite on rauhallinen ja viimeistelty suunnittelija yhdelle aktiiviselle matkalle.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6791299610
 - [TripBee: Matkasuunnittelu](https://alice51849.github.io/ios-app-guide/fi/tripbee.html) — Matkaohjelma ja pakkauslista
   - Suunnittele fiksummin, pakkaa kevyemmin, matkusta iloisemmin. Kertaosto ilman tilausta ja mainoksia — matkasi yksityisiä ja offline.
@@ -173,15 +177,19 @@ apps: 40
   - App Store: https://apps.apple.com/fi/app/id6787754435
 - [Unblurry Pro: Terävät kuvat](https://alice51849.github.io/ios-app-guide/fi/unblurry.html) — Sumeat kuvat HD teräviksi
   - Pelasta sumeat ja tärähtäneet kuvat sekunneissa. Terävöitä, paranna HDksi, suurenna 4Kksi ja palauta vanhat kuvat iPhonessa. Ei tilausta.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6782275018
 - [WiFi Aid](https://alice51849.github.io/ios-app-guide/fi/wifiaid.html) — Verkon vianmääritys näytöin
   - Löydä todennäköisin syy riippumattomilla reitti-, DNS-, TCP-, TLS-, ajoitus- ja vakaustesteillä. Yksi ennakkomaksu, ei tilausta, mainoksia eikä seurantaa.
   - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6790467886
+- [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/fi/wifiaidlite.html) — Verkon vianmääritys näytöin
+  - Löydä oikea ongelma. Jokaisessa työkalussa yksi ilmainen täysi käyttö. Valinnainen elinikäinen avaus rajattomaan käyttöön—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6793414462
 - [Wordmate Lite: Sanasto](https://alice51849.github.io/ios-app-guide/fi/wordmatelite.html) — Viisi uutta sanaa päivässä
   - Viisi sanaa. Yksi minuutti. Yksi askel, jonka näet. Ei korttipakkoja rakennettavaksi eikä loputonta kertausjonoa. Avaa, kulje päivän polku, ja se on tehty.
-  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6797601720
 - [Wordmate: Opi 44 kieltä](https://alice51849.github.io/ios-app-guide/fi/wordmate.html) — Sanat, ääntäminen ja widget
   - Osta Wordmate kerran ja saat koko sovelluksen: 44 kieltä, kaikki tasot, widgetti ja Apple Watch sisältyvät. Ei tilauksia, sovelluksen sisäisiä ostoja tai lisäostoja.

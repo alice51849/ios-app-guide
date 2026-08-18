@@ -2,7 +2,7 @@
 title: "beste menstruatie-app zonder account vereist iPhone"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/nl-NL/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ In een categorie waar gegevensgevoeligheid centraal staat, houdt de juiste menst
 - Privé / op apparaat
 - App Store · Gratis
 
-[Download Cyca in de App Store →](https://apps.apple.com/nl/app/id6782251621?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download Cyca in de App Store →](https://apps.apple.com/nl/app/id6782251621)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-period-tracker-app-no-account-required-iphone.html)
 

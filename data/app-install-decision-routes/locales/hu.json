@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "hu",
-  "dateModified": "2026-08-17",
-  "content_digest": "7bf9a1c1c9d8e2e85c4f23e27e95d84ef7cc221c3fec20ef6ea999c451133f03",
-  "generation_digest": "977f7d6bc00a2e88bb25df2321e667f9647bf876b7c6aea1976e45e43a1328a2",
+  "dateModified": "2026-08-18",
+  "content_digest": "264b14864720b36adcc17313f205aa969b749d3a164446272f28772a835771b3",
+  "generation_digest": "d5fa67b24e8433a4f212a12ecc3662733a247983974a6cca6a58b9ab36d6fe87",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 40,
+  "record_count": 42,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/hu.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/hu.rss.xml",
@@ -51,7 +51,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6792850916",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
-      "app_store_url": "https://apps.apple.com/hu/app/id6792850916?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6792850916",
       "app_store_cta_label": "Töltse le a(z) Mask My File appot az App Store-ból",
       "storefront_facts": {
         "price": "0",
@@ -96,7 +96,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6790467886",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
-      "app_store_url": "https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6790467886",
       "app_store_cta_label": "Töltse le a(z) WiFi Aid appot az App Store-ból",
       "storefront_facts": {
         "price": "2490",
@@ -141,7 +141,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6790800323",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
-      "app_store_url": "https://apps.apple.com/hu/app/id6790800323?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6790800323",
       "app_store_cta_label": "Töltse le a(z) Mochi DoneStamp: Legutóbb appot az App Store-ból",
       "storefront_facts": {
         "price": "0",
@@ -151,6 +151,62 @@
       "guide_cta_label": "Olvasd el a teljes útmutatót",
       "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
       "source_persona_query": "best last time tracker app for household maintenance without a subscription",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "hu:notesstudio100",
+      "locale": "hu",
+      "app_key": "notesstudio100",
+      "app_name": "100 Notes Studio: Pen & Paper",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "100 Notes Studio: Pen & Paper — Kézírás, PDF-jelölés, tanulás | iOS App",
+      "decision_context": "Ne oszd szét a kézírást, a gépelt szöveget, a dokumentumjelölést, a hangfelvételeket és a tanulást több alkalmazás között. A 100 Notes Studio mindezt egy rendezett, teljesen offline munkatérben fogja össze, táblagépre és telefonra szabva. ÚGY ÍRJ, AHOGY NEKED TERMÉSZETES 29 különböző toll és ecset: töltőtoll, kalligráfia, fude ecsettoll, tustoll, akvarell lazúr, szén, golyóstoll, zseléstoll, valamint 2B/4B/6B grafitceruza. Mindegyiknek saját textúrája van, nem csupán másik színe. Kompatibilis érintőtollal nyomásérzékelés, dőlésszög, tenyér-elutasítás és az elérhető gyors gesztusok is használhatók. Pixel-, teljes vonás- és precíziós radír, lasszós kijelölés, mozgatás, átméretezés, másolás és törlés, továbbá vonalzó, nyolc pontos alakzateszköz és lézermutató segíti a munkát. 100 TÉNYLEG ELTÉRŐ STÍLUS Nem ugyanaz a sablon százféle színben. Mindegyik stílus saját borítót, papírszerkezetet, színpalettát, elválasztókat, bélyegzőket, matricákat, eszköztárszínt és widget-megjelenést kapott. A választékban minimál, lenvászon, japán rács, strukturált tanulási elrendezés, pontozott tervező, akadémiai, mérnöki, kotta, megbeszélés, kutatás, utazás, recept és wellness is található. Mind a 100 valódi előnézettel megtekinthető. TÖBB, MINT EGY VÁSZON Rögzített oldalak vagy végtelen vászon; A4, A5, Letter, képernyőméret vagy egyedi méret; álló és fekvő tájolás Formázott szöveg félkövérrel, dőlttel, aláhúzással, betűtípusokkal, színekkel, listákkal, pipálható listákkal, táblázatokkal és hivatkozásokkal PDF importálása és jelölése kiemeléssel, aláhúzással, áthúzással, szöveges jegyzettel, kézírással, forgatással, vágással, beszúrással, oldalak kinyerésével, egyesítéssel és exportálással Rögzíts írás közben; a hangfelvétel ahhoz az oldalhoz kapcsolódik, ahol elkészült Eszközön futó kézírás- és PDF-szövegfelismerés, valamint keresés a címekben, a törzsszövegben, a kézírásban és a mellékletekben Oldalakhoz kapcsolt tanulókártyák, kiegészítendő szövegek és FSRS-alapú, időben elosztott ismétlés Matricák, washi szalagok és automatikusan számozott tartalomjegyzék Egymásba ágyazott mappák, címkék, rögzítés, kedvencek, archívum, visszaállítható kuka és verziótörténet Gyorsrögzítő widgetek és zárolt képernyős műveletek Tintarétegek átlátszósággal, láthatósággal és zárolással, valamint referenciafelület, amely egy PDF-et vagy képet nyitva tart az oldal mellett ADATVÉDELEMRE TERVEZVE Nincs fiók, hirdetés, külső nyomkövető vagy analitika. A tartalom nem kerül külső mesterséges intelligenciához, és offline a készüléken marad. Az egész alkalmazás vagy egy-egy füzet a készülék biometrikus védelmével lezárható. KEZDD INGYEN, A TOVÁBBI FUNKCIÓKAT EGYSZER NYISD MEG Az ingyenes változatban elérhető a teljes szerkesztő, minden toll, a PDF-jelölés, a hangfelvétel, a kézíráskeresés és az ismétlő mód; emellett 1 füzet használható korlátlan oldalszámmal, valamint 2 stílus a 100-ból. Az egyszeri feloldás korlátlan számú füzetet, mind a 100 stílust, vektoros PDF-exportot, visszaállítható verziótörténetet és titkosított biztonsági mentést ad hozzá. Íráshoz, olvasáshoz, rendszerezéshez és ismétléshez egy nyugodt, privát munkateret kapsz. Adatvédelmi szabályzat: https://alice51849.github.io/100notes-support/privacy.html Felhasználási feltételek: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+      "category": "productivity",
+      "category_label": "Produktivitás",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Nincs fiók",
+        "Privát / eszközön tárolt"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Produktivitás",
+        "Ingyenes kezdés · életre szóló feloldás",
+        "Offline",
+        "Nincs fiók",
+        "Privát / eszközön tárolt",
+        "App Store · Ingyenes"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/notesstudio100.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/hu/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/hu/notesstudio100.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fnotesstudio100%2Fdecision%2Fl%2Fhu%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
+      "app_store_id": "6798813048",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
+      "app_store_url": "https://apps.apple.com/hu/app/id6798813048",
+      "app_store_cta_label": "Töltse le a(z) 100 Notes Studio: Pen & Paper appot az App Store-ból",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "HUF",
+        "formatted_price": "Ingyenes"
+      },
+      "guide_cta_label": "Olvasd el a teljes útmutatót",
+      "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
+      "source_persona_query": "best offline handwriting notes app for ipad with pdf markup no subscription",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -191,7 +247,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/hu/app/id6791658210?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6791658210",
       "app_store_cta_label": "Töltse le a(z) AI Brief appot az App Store-ból",
       "storefront_facts": {
         "price": "0",
@@ -236,7 +292,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6784974530",
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
-      "app_store_url": "https://apps.apple.com/hu/app/id6784974530?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6784974530",
       "app_store_cta_label": "Szerezd be az Aim990-et az App Store-ból →",
       "storefront_facts": {
         "price": "0",
@@ -281,7 +337,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6792483140",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
-      "app_store_url": "https://apps.apple.com/hu/app/id6792483140?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6792483140",
       "app_store_cta_label": "Töltse le a(z) Aim990 Plus appot az App Store-ból",
       "storefront_facts": {
         "price": "2490",
@@ -331,7 +387,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/hu/app/id6794178671?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6794178671",
       "app_store_cta_label": "Töltse le a(z) CalDaily: számológép, témák appot az App Store-ból",
       "storefront_facts": {
         "price": "0",
@@ -376,7 +432,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6781337213",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
-      "app_store_url": "https://apps.apple.com/hu/app/id6781337213?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6781337213",
       "app_store_cta_label": "Szerezd be a CV Desk-et az App Store-ból →",
       "storefront_facts": {
         "price": "0",
@@ -426,7 +482,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6782251621",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
-      "app_store_url": "https://apps.apple.com/hu/app/id6782251621?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6782251621",
       "app_store_cta_label": "Szerezd be a Cycát az App Store-ból →",
       "storefront_facts": {
         "price": "0",
@@ -476,7 +532,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6790418321",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
-      "app_store_url": "https://apps.apple.com/hu/app/id6790418321?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6790418321",
       "app_store_cta_label": "Szerezd be a DailyMate-et az App Store-ból →",
       "storefront_facts": {
         "price": "4990",
@@ -521,7 +577,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6794725568",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
-      "app_store_url": "https://apps.apple.com/hu/app/id6794725568?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6794725568",
       "app_store_cta_label": "Töltse le a(z) DailyMate Lite: Beszélj ma appot az App Store-ból",
       "storefront_facts": {
         "price": "0",
@@ -574,7 +630,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6755782939",
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
-      "app_store_url": "https://apps.apple.com/hu/app/id6755782939?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6755782939",
       "app_store_cta_label": "Szerezd be a G+Money-t az App Store-ból →",
       "storefront_facts": {
         "price": "1990",
@@ -641,7 +697,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6793436548",
       "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
-      "app_store_url": "https://apps.apple.com/hu/app/id6793436548?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6793436548",
       "app_store_cta_label": "Töltse le a(z) G+Money Lite appot az App Store-ból",
       "storefront_facts": {
         "price": "0",
@@ -705,7 +761,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/hu/app/id6794039979?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6794039979",
       "app_store_cta_label": "Töltse le a(z) HoursTag Lite appot az App Store-ból",
       "storefront_facts": {
         "price": "0",
@@ -758,7 +814,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/hu/app/id6754218117?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6754218117",
       "app_store_cta_label": "Töltse le a(z) HoursTag: Órák a vásárláshoz appot az App Store-ból",
       "storefront_facts": {
         "price": "1990",
@@ -811,7 +867,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6780107485",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
-      "app_store_url": "https://apps.apple.com/hu/app/id6780107485?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6780107485",
       "app_store_cta_label": "Szerezze be a LockHour Pro-t az App Store-ból →",
       "storefront_facts": {
         "price": "0",
@@ -861,7 +917,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6773017109",
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
-      "app_store_url": "https://apps.apple.com/hu/app/id6773017109?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6773017109",
       "app_store_cta_label": "Szerezze be a Lumi Bopomofo-t az App Store-ból →",
       "storefront_facts": {
         "price": "0",
@@ -911,7 +967,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6775773117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
-      "app_store_url": "https://apps.apple.com/hu/app/id6775773117?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6775773117",
       "app_store_cta_label": "Szerezd be a Lumi Bopomofo Pro-t az App Store-ban →",
       "storefront_facts": {
         "price": "3990",
@@ -961,7 +1017,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6778748533",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
-      "app_store_url": "https://apps.apple.com/hu/app/id6778748533?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6778748533",
       "app_store_cta_label": "Szerezze be a Lumi Letters-t az App Store-ból →",
       "storefront_facts": {
         "price": "0",
@@ -1011,7 +1067,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6778491147",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
-      "app_store_url": "https://apps.apple.com/hu/app/id6778491147?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6778491147",
       "app_store_cta_label": "Szerezd be a Lumi Letters Pro-t az App Store-ban →",
       "storefront_facts": {
         "price": "3990",
@@ -1061,7 +1117,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6778269699",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
-      "app_store_url": "https://apps.apple.com/hu/app/id6778269699?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6778269699",
       "app_store_cta_label": "Szerezze be a Lumi Math Planet-et az App Store-ból →",
       "storefront_facts": {
         "price": "0",
@@ -1111,7 +1167,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6776958488",
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
-      "app_store_url": "https://apps.apple.com/hu/app/id6776958488?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6776958488",
       "app_store_cta_label": "Szerezd be a Lumi Math Pro-t az App Store-ban →",
       "storefront_facts": {
         "price": "3990",
@@ -1161,7 +1217,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6779750237",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
-      "app_store_url": "https://apps.apple.com/hu/app/id6779750237?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6779750237",
       "app_store_cta_label": "Szerezze be a Lumi Mission Planet alkalmazást az App Store-ban →",
       "storefront_facts": {
         "price": "0",
@@ -1211,7 +1267,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6779745474",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
-      "app_store_url": "https://apps.apple.com/hu/app/id6779745474?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6779745474",
       "app_store_cta_label": "Szerezd be a Lumi Mission Planet Pro-t az App Store-ban →",
       "storefront_facts": {
         "price": "2490",
@@ -1261,7 +1317,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6787193643",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "app_store_url": "https://apps.apple.com/hu/app/id6787193643?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6787193643",
       "app_store_cta_label": "Szerezd be a Lumi Trip Planet-et az App Store-ban →",
       "storefront_facts": {
         "price": "0",
@@ -1314,7 +1370,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6779552704",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
-      "app_store_url": "https://apps.apple.com/hu/app/id6779552704?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6779552704",
       "app_store_cta_label": "Szerezd be a Lumi Weather-t az App Store-ban →",
       "storefront_facts": {
         "price": "0",
@@ -1364,7 +1420,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6785004775",
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
-      "app_store_url": "https://apps.apple.com/hu/app/id6785004775?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6785004775",
       "app_store_cta_label": "Szerezze be a Mochi-t az App Store-ból →",
       "storefront_facts": {
         "price": "0",
@@ -1409,7 +1465,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6798814385",
       "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
-      "app_store_url": "https://apps.apple.com/hu/app/id6798814385?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6798814385",
       "app_store_cta_label": "Töltse le a(z) OnePage PPT: MI-dia appot az App Store-ból",
       "storefront_facts": {
         "price": "0",
@@ -1454,7 +1510,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6781808054",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
-      "app_store_url": "https://apps.apple.com/hu/app/id6781808054?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6781808054",
       "app_store_cta_label": "Szerezd be a PhotoCream-et az App Store-ban →",
       "storefront_facts": {
         "price": "0",
@@ -1504,7 +1560,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6780223070",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
-      "app_store_url": "https://apps.apple.com/hu/app/id6780223070?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6780223070",
       "app_store_cta_label": "Szerezze be a PicClear-t az App Store-ból →",
       "storefront_facts": {
         "price": "0",
@@ -1554,7 +1610,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6779977651",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
-      "app_store_url": "https://apps.apple.com/hu/app/id6779977651?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6779977651",
       "app_store_cta_label": "Szerezze be a ScanTo Pro-t az App Store-ból →",
       "storefront_facts": {
         "price": "0",
@@ -1607,7 +1663,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6788236641",
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
-      "app_store_url": "https://apps.apple.com/hu/app/id6788236641?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6788236641",
       "app_store_cta_label": "Szerezd be a Sereno-t az App Store-ból →",
       "storefront_facts": {
         "price": "0",
@@ -1657,7 +1713,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6780575828",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
-      "app_store_url": "https://apps.apple.com/hu/app/id6780575828?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6780575828",
       "app_store_cta_label": "Szerezd be a Snapportot az App Store-ból →",
       "storefront_facts": {
         "price": "2490",
@@ -1707,7 +1763,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6792856304",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
-      "app_store_url": "https://apps.apple.com/hu/app/id6792856304?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6792856304",
       "app_store_cta_label": "Töltse le a(z) Snapport Lite appot az App Store-ból",
       "storefront_facts": {
         "price": "0",
@@ -1757,7 +1813,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6782139553",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
-      "app_store_url": "https://apps.apple.com/hu/app/id6782139553?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6782139553",
       "app_store_cta_label": "Szerezd be a Sono Note-ot az App Store-ból →",
       "storefront_facts": {
         "price": "0",
@@ -1802,7 +1858,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6791299610",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
-      "app_store_url": "https://apps.apple.com/hu/app/id6791299610?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6791299610",
       "app_store_cta_label": "Szerezd be a TripBee Lite-ot az App Store-ból →",
       "storefront_facts": {
         "price": "0",
@@ -1858,7 +1914,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6787754435",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
-      "app_store_url": "https://apps.apple.com/hu/app/id6787754435?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6787754435",
       "app_store_cta_label": "Szerezd be a TripBee Pro: Utazástervezőt az App Store-ból →",
       "storefront_facts": {
         "price": "2490",
@@ -1908,7 +1964,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6782275018",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
-      "app_store_url": "https://apps.apple.com/hu/app/id6782275018?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6782275018",
       "app_store_cta_label": "Szerezd be az Unblurry-t az App Store-ból →",
       "storefront_facts": {
         "price": "0",
@@ -1919,6 +1975,56 @@
       "publisher_disclosure": "Kiadó által készített útmutató a Lumi Studio-tól, az alkalmazás fejlesztőjétől. Az alkalmazásnevek a tulajdonosaik védjegyei, és csak azonosítás céljából használjuk őket. Dokumentumok, egészségügy, iskola és hatékonyság terén hozott döntések esetén ellenőrizze a hivatalos követelményeket, ahol releváns.",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "hu:wifiaidlite",
+      "locale": "hu",
+      "app_key": "wifiaidlite",
+      "app_name": "WiFi Aid Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "WiFi Aid Lite — Hálózatdiagnosztika tényekkel | iOS App",
+      "decision_context": "Találd meg a valódi problémát. Minden eszköz egy ingyenes teljes használatot tartalmaz. Választható egyszeri örökös feloldás a korlátlan használatért—előfizetés, hirdetések és követés nélkül. • Teszt Indítása — Wi-Fi, DNS és internet egyetlen érintéssel • Deep Check — Több bizonyíték és stabilitás • Weboldal Teszt — Egy oldal vagy az egész web • Bizonyíték — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • A kapcsolat instabil — Ingadozás • Teszt Előzmények — Az adatokat csak az eszköz tárolja • Csatlakozott csomópont — A pontos hely azonosítja a Wi-Fi-t és az aktuális csomópontot Nincs fiók, hirdetés vagy követés. Az adatokat csak az eszköz tárolja. Minden eszköz egy ingyenes teljes használatot tartalmaz. Választható egyszeri örökös feloldás a korlátlan használatért—előfizetés, hirdetések és követés nélkül.",
+      "category": "utility",
+      "category_label": "Továbbiak",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Nincs fiók"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Továbbiak",
+        "Ingyenes kezdés · életre szóló feloldás",
+        "Nincs fiók",
+        "App Store · Ingyenes"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/wifiaidlite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/hu/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/hu/wifiaidlite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fwifiaidlite%2Fdecision%2Fl%2Fhu%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
+      "app_store_id": "6793414462",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
+      "app_store_url": "https://apps.apple.com/hu/app/id6793414462",
+      "app_store_cta_label": "Töltse le a(z) WiFi Aid Lite appot az App Store-ból",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "HUF",
+        "formatted_price": "Ingyenes"
+      },
+      "guide_cta_label": "Olvasd el a teljes útmutatót",
+      "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
+      "source_persona_query": "how to tell if the wifi or the website is down free app",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
@@ -1958,7 +2064,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/hu/app/id6797601720?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6797601720",
       "app_store_cta_label": "Töltse le a(z) Wordmate Lite: szótanulás appot az App Store-ból",
       "storefront_facts": {
         "price": "0",
@@ -2022,7 +2128,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6789917808",
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
-      "app_store_url": "https://apps.apple.com/hu/app/id6789917808?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6789917808",
       "app_store_cta_label": "Szerezd be a Wordmate: Learn 44 Languages-t az App Store-ban →",
       "storefront_facts": {
         "price": "3990",

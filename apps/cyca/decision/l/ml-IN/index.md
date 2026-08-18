@@ -2,7 +2,7 @@
 title: "അക്കൗണ്ട് ആവശ്യമില്ലാത്ത മികച്ച പീരിയഡ് ട്രാക്കർ ആപ്പ് iPhone"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/ml-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · സൗജന്യം
 
-[App Store-ൽ Cyca നേടുക →](https://apps.apple.com/in/app/id6782251621?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ Cyca നേടുക →](https://apps.apple.com/in/app/id6782251621)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-period-tracker-app-no-account-required-iphone.html)
 

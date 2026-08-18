@@ -3,7 +3,7 @@
 > Her iOS uygulaması için yapılandırılmış bilgi — özellikler, fiyat ve SSS.
 
 locale: tr
-apps: 40
+apps: 42
 - Uygulama dizini: https://alice51849.github.io/ios-app-guide/tr/tools/private-pay-once-iphone-app-finder.html
 - Uygulama dizini · PWA: https://alice51849.github.io/ios-app-guide/tr/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/tr.jsonld
@@ -27,6 +27,10 @@ apps: 40
 - Uygulama dizini · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Uygulama dizini · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/tr/notesstudio100.html) — Not defteri, el yazısı ve PDF
+  - Çevrimdışı el yazısı, PDF işaretleme ve çalışma alanı. Ses kayıtları yalnızca başlatıldıkları sayfada kalır. Tek satın alma ek defter ve tasarımlar sunar.
+  - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
+  - App Store: https://apps.apple.com/tr/app/id6798813048
 - [AI Brief](https://alice51849.github.io/ios-app-guide/tr/aibriefpack.html) — Dosyadan net bağlama
   - Ekran görüntülerini, belgeleri ve notları bir araya getirin. Gerçekleri koruyun. Özel detayları gözden geçirin. Tek, net bir özet kopyalayın.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
@@ -179,6 +183,10 @@ apps: 40
   - Bağımsız yol, DNS, TCP, TLS, süre ve kararlılık kontrolleriyle en olası nedeni bulun. Baştan tek ödeme; abonelik, reklam ve takip yok.
   - Fiyat: Tek peşin fiyatlı ücretli indirme; abonelik yok.
   - App Store: https://apps.apple.com/tr/app/id6790467886
+- [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/tr/wifiaidlite.html) — Kanıta dayalı ağ tanısı
+  - Gerçek sorunu bulun. Her araç: bir ücretsiz tam kullanım. Sınırsız kullanım için isteğe bağlı ömür boyu kilit açma—abonelik yok.
+  - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
+  - App Store: https://apps.apple.com/tr/app/id6793414462
 - [Wordmate Lite: Kelime Ezberle](https://alice51849.github.io/ios-app-guide/tr/wordmatelite.html) — Günde beş sözcük, bir dakika
   - Günde bir dakika, beş kelime ve patikada görünen tek bir adım. Dilini ve konunu seç, okunuşu dinle, serinin büyümesini izle. Hesap yok, internet yok, izleme yok.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.

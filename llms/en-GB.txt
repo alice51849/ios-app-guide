@@ -3,7 +3,7 @@
 > Structured information about each iOS app — features, pricing and FAQs.
 
 locale: en-GB
-apps: 40
+apps: 42
 - Apps directory: https://alice51849.github.io/ios-app-guide/en-GB/tools/private-pay-once-iphone-app-finder.html
 - Apps directory · PWA: https://alice51849.github.io/ios-app-guide/en-GB/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-GB.jsonld
@@ -27,6 +27,10 @@ apps: 40
 - Apps directory · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Apps directory · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/en-GB/notesstudio100.html) — Handwriting & PDF Workspace
+  - A private, offline studio for handwriting, typed notes and PDF markup. Build notebooks, attach audio to pages and revise with spaced repetition.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/gb/app/id6798813048
 - [AI Brief](https://alice51849.github.io/ios-app-guide/en-GB/aibriefpack.html) — Files to Clear Context
   - Bring screenshots, documents, and notes together. Keep the facts. Review private details. Copy one clear brief.
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
@@ -179,6 +183,10 @@ apps: 40
   - Find the most likely connection fault with independent path, DNS, TCP, TLS, timing and stability checks. One upfront payment—no subscription, adverts or tracking.
   - Pricing: Paid download with one upfront price and no subscription.
   - App Store: https://apps.apple.com/gb/app/id6790467886
+- [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/en-GB/wifiaidlite.html) — Network Diagnosis & Evidence
+  - Find the real problem. Each tool includes one free complete use. Optional one-time lifetime unlock for unlimited use—no subscription, ads or tracking.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/gb/app/id6793414462
 - [Wordmate Lite: Vocabulary](https://alice51849.github.io/ios-app-guide/en-GB/wordmatelite.html) — Five new words in a minute
   - Five words, one minute, one step you can see. No decks to build and no revision queue that never ends. Walk today's trail and it is done.
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.

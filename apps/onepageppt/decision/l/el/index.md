@@ -2,7 +2,7 @@
 title: "OnePage PPT: Παρουσίαση AI — Σημειώσεις σε μία διαφάνεια | iOS App"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/el/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής
 - App Store · Δωρεάν
 
-[Αποκτήστε το OnePage PPT: Παρουσίαση AI από το App Store](https://apps.apple.com/gr/app/id6798814385?pt=118326163&ct=iag_data_el&mt=8)
+[Αποκτήστε το OnePage PPT: Παρουσίαση AI από το App Store](https://apps.apple.com/gr/app/id6798814385)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/onepageppt.html)
 

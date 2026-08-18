@@ -2,7 +2,7 @@
 title: "2026 年最佳职业转型简历制作应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/zh-Hans/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免费开始使用 · 永久解锁
 - App Store · 免费
 
-[在 App Store 获取 CV Desk →](https://apps.apple.com/cn/app/id6781337213?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在 App Store 获取 CV Desk →](https://apps.apple.com/cn/app/id6781337213)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-resume-builder-app-for-career-changers-2026.html)
 

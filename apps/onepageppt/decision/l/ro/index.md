@@ -2,7 +2,7 @@
 title: "OnePage PPT: slide-uri AI — Din notițe într-o pagină | iOS App"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/ro/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Transformă un zid de text într-UN slide pe care oamenii chiar îl citesc. OneP
 - Început gratuit · deblocare pe viață
 - App Store · Gratuit
 
-[Descarcă OnePage PPT: slide-uri AI din App Store](https://apps.apple.com/ro/app/id6798814385?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă OnePage PPT: slide-uri AI din App Store](https://apps.apple.com/ro/app/id6798814385)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/onepageppt.html)
 

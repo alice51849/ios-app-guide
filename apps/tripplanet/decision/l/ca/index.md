@@ -2,7 +2,7 @@
 title: "millor app d'activitats de viatge per a infants en viatges familiars"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/ca/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Els pares que viatgen amb infants petits necessiten activitats que converteixin 
 - Sense anuncis
 - App Store · Gratis
 
-[Descarrega Lumi Trip Planet a l'App Store →](https://apps.apple.com/es/app/id6787193643?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega Lumi Trip Planet a l'App Store →](https://apps.apple.com/es/app/id6787193643)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

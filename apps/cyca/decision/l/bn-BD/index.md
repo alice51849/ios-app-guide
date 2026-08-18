@@ -2,7 +2,7 @@
 title: "সেরা পিরিয়ড ট্র্যাকার অ্যাপ কোনো অ্যাকাউন্ট ছাড়াই আইফোনের জন্য"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/bn-BD/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - বিনামূল্যে শুরু · আজীবন আনলক
 - গোপনীয় / ডিভাইসে
 
-[App Store থেকে Cyca পান →](https://apps.apple.com/app/id6782251621?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে Cyca পান →](https://apps.apple.com/app/id6782251621)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-period-tracker-app-no-account-required-iphone.html)
 

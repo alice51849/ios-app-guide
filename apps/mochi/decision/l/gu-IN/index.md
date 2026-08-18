@@ -2,7 +2,7 @@
 title: "શ્રેષ્ઠ સરળ ટુ-ડુ લિસ્ટ એપ iPhone માટે, કોઈ સબ્સ્ક્રિપ્શન નહીં"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/gu-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - કોઈ જાહેરાત નથી
 - App Store · મફત
 
-[App Store પર Mochi મેળવો →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_data_gu_in&mt=8)
+[App Store પર Mochi મેળવો →](https://apps.apple.com/in/app/id6785004775)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

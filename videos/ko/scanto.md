@@ -2,7 +2,7 @@
 title: "간호사를 위한 클라우드 없는 오프라인 문서 스캐너 앱 중 최고"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/scanto.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 video_url: "https://files.catbox.moe/zhmncf.mp4"
 duration: "PT16S"
 app_store_id: "6779977651"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [영상 보기](https://files.catbox.moe/zhmncf.mp4)
 
-[App Store에서 ScanTo Pro 받기 →](https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=iag_video_ko&mt=8)
+[App Store에서 ScanTo Pro 받기 →](https://apps.apple.com/kr/app/id6779977651)
 
 [앱 가이드 열기](https://alice51849.github.io/ios-app-guide/ko/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

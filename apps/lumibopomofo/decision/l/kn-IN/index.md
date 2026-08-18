@@ -2,7 +2,7 @@
 title: "iPhone ನಲ್ಲಿ ಮಕ್ಕಳಿಗೆ ಜುಯಿನ್ ಕಲಿಸಲು ಉತ್ತಮ ಬೋಪೊಮೊಫೋ ಆಪ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/kn-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
 - App Store · ಉಚಿತ
 
-[App Store ನಲ್ಲಿ Lumi Bopomofo ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6773017109?pt=118326163&ct=iag_data_kn_in&mt=8)
+[App Store ನಲ್ಲಿ Lumi Bopomofo ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6773017109)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

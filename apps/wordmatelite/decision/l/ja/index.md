@@ -2,7 +2,7 @@
 title: "Wordmate Lite 1日5単語 — 毎日1分、44言語の語彙トレーニング | iOS App"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ja/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - オフライン
 - App Store · 無料
 
-[App Store で Wordmate Lite 1日5単語 を入手](https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=iag_data_ja&mt=8)
+[App Store で Wordmate Lite 1日5単語 を入手](https://apps.apple.com/jp/app/id6797601720)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/wordmatelite.html)
 

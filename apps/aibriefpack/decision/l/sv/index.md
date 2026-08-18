@@ -2,7 +2,7 @@
 title: "AI Brief — Filer till tydlig kontext | iOS App"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/sv/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Bättre sammanhang. Bättre svar. Gör om skärmbilder, filer, anteckningar och 
 - Privat / på enheten
 - App Store · Gratis
 
-[Hämta AI Brief i App Store](https://apps.apple.com/se/app/id6791658210?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta AI Brief i App Store](https://apps.apple.com/se/app/id6791658210)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/aibriefpack.html)
 

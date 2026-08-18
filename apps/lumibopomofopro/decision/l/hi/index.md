@@ -2,7 +2,7 @@
 title: "द्विभाषी बच्चों के लिए सबसे अच्छा पूर्ण झूयिन ऐप"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/hi/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - कोई विज्ञापन नहीं
 - App Store · ₹ 999
 
-[App Store पर Lumi Bopomofo Pro प्राप्त करें →](https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=iag_data_hi&mt=8)
+[App Store पर Lumi Bopomofo Pro प्राप्त करें →](https://apps.apple.com/in/app/id6775773117)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/answers/best-complete-zhuyin-app-for-bilingual-children.html)
 

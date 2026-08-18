@@ -2,7 +2,7 @@
 title: "G+Money Lite — ভ্রমণ খরচ ও মুদ্রা | iOS App"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/bn-BD/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,7 +22,7 @@ G+Money Lite — স্মার্ট ভ্রমণ মুদ্রা ও �
 - উইজেট
 - Apple Watch
 
-[App Store থেকে G+Money Lite ডাউনলোড করুন](https://apps.apple.com/app/id6793436548?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে G+Money Lite ডাউনলোড করুন](https://apps.apple.com/app/id6793436548)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/gmoneylite.html)
 

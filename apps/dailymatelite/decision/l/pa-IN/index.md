@@ -2,7 +2,7 @@
 title: "DailyMate Lite: ਅੱਜ ਬੋਲੋ — ਰੋਜ਼ਾਨਾ ਗੱਲਬਾਤ ਅਭਿਆਸ | iOS App"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/pa-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ
 - App Store · ਮੁਫ਼ਤ
 
-[App Store ਤੋਂ DailyMate Lite: ਅੱਜ ਬੋਲੋ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_data_pa_in&mt=8)
+[App Store ਤੋਂ DailyMate Lite: ਅੱਜ ਬੋਲੋ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6794725568)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/dailymatelite.html)
 

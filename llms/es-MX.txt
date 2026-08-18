@@ -3,7 +3,7 @@
 > Información estructurada de cada app iOS — funciones, precio y FAQ.
 
 locale: es-MX
-apps: 40
+apps: 42
 - Directorio de apps: https://alice51849.github.io/ios-app-guide/es-MX/tools/private-pay-once-iphone-app-finder.html
 - Directorio de apps · PWA: https://alice51849.github.io/ios-app-guide/es-MX/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/es-MX.jsonld
@@ -27,6 +27,10 @@ apps: 40
 - Directorio de apps · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Directorio de apps · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/es-MX/notesstudio100.html) — Notas a mano y anotación PDF
+  - Escribe a mano, marca documentos PDF, organiza tus cuadernos y graba audio que queda unido a la página. Un espacio privado que funciona sin conexión.
+  - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
+  - App Store: https://apps.apple.com/mx/app/id6798813048
 - [AI Brief](https://alice51849.github.io/ios-app-guide/es-MX/aibriefpack.html) — Archivos a contexto claro
   - Reúne capturas de pantalla, documentos y notas. Conserva los hechos. Revisa los detalles privados. Copia un brief claro.
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
@@ -179,6 +183,10 @@ apps: 40
   - Encuentra la causa más probable con pruebas independientes de rutas, DNS, TCP, TLS, tiempos y estabilidad. Un solo pago inicial, sin suscripciones, anuncios ni rastreo.
   - Precio: Descarga de pago con un único precio inicial y sin suscripción.
   - App Store: https://apps.apple.com/mx/app/id6790467886
+- [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/es-MX/wifiaidlite.html) — Diagnóstico de red confiable
+  - Cada herramienta incluye un uso gratuito. Desbloqueo de por vida opcional de un solo pago para uso ilimitado: sin suscripciones, anuncios ni rastreo.
+  - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.
+  - App Store: https://apps.apple.com/mx/app/id6793414462
 - [Wordmate Lite: aprende idiomas](https://alice51849.github.io/ios-app-guide/es-MX/wordmatelite.html) — Un minuto al día, sin conexión
   - Cinco palabras y listo. 44 idiomas, 14 temas de la vida diaria, sin cuenta y sin internet. El avance chiquito que sí se sostiene todos los días.
   - Precio: Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.

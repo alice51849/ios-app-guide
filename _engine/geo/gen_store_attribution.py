@@ -40,7 +40,10 @@ from app_store_storefronts import (  # noqa: E402
 )
 
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
-EXCLUDED_PARTS = {".git", "_engine", "node_modules"}
+# Web Stories carry their own per-surface campaign (iag_story), which their
+# AMP gate verifies against the Smart App Banner meta tag; re-stamping them
+# here would break that contract for no measurement gain.
+EXCLUDED_PARTS = {".git", "_engine", "node_modules", "stories"}
 ANCHOR_HREF_RE = re.compile(
     r'(?P<prefix><a\b[^>]*?\bhref=")'
     r"(?P<url>https://apps\.apple\.com/[^\"]*)"

@@ -2,7 +2,7 @@
 title: "বাচ্চাদের এবং ছোটদের জন্য সেরা পাসপোর্ট ফটো অ্যাপ বাড়িতে"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/bn-BD/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - পেইড ডাউনলোড
 - গোপনীয় / ডিভাইসে
 
-[App Store-এ Snapport পান →](https://apps.apple.com/app/id6780575828?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store-এ Snapport পান →](https://apps.apple.com/app/id6780575828)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

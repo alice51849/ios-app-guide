@@ -3,7 +3,7 @@
 > Infos structurées sur chaque app iOS — fonctions, prix et FAQ.
 
 locale: fr-CA
-apps: 40
+apps: 42
 - Répertoire d'apps: https://alice51849.github.io/ios-app-guide/fr-CA/tools/private-pay-once-iphone-app-finder.html
 - Répertoire d'apps · PWA: https://alice51849.github.io/ios-app-guide/fr-CA/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld
@@ -27,6 +27,10 @@ apps: 40
 - Répertoire d'apps · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Répertoire d'apps · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/fr-CA/notesstudio100.html) — Carnet manuscrit et PDF
+  - Un espace privé hors ligne pour écrire, saisir du texte et annoter des PDF. Organisez vos cahiers, joignez un enregistrement à une page et révisez avec des fiches.
+  - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
+  - App Store: https://apps.apple.com/ca/app/id6798813048
 - [AI Brief](https://alice51849.github.io/ios-app-guide/fr-CA/aibriefpack.html) — Des fichiers au contexte clair
   - Rassemblez captures d'écran, documents et notes. Conservez les faits. Vérifiez les détails privés. Copiez un résumé clair.
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
@@ -179,6 +183,10 @@ apps: 40
   - Repérez la cause probable grâce aux vérifications indépendantes des chemins, DNS, TCP, TLS, délais et stabilité. Un seul achat initial, sans abonnement, pub ni suivi.
   - Tarif: Téléchargement payant à prix unique, sans abonnement.
   - App Store: https://apps.apple.com/ca/app/id6790467886
+- [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/fr-CA/wifiaidlite.html) — Diagnostic réseau précis
+  - Chaque outil inclut une utilisation complète gratuite. Déblocage à vie unique en option pour un accès illimité : pas d'abonnement, ni pub, ni suivi.
+  - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
+  - App Store: https://apps.apple.com/ca/app/id6793414462
 - [Wordmate : vocabulaire](https://alice51849.github.io/ios-app-guide/fr-CA/wordmate.html) — 44 langues et widget de mots
   - Achetez Wordmate une fois : 44 langues, tous les niveaux, le widget interactif et l’app Apple Watch sont inclus. Sans abonnement, achat intégré ni mise à niveau payante.
   - Tarif: Téléchargement payant à prix unique, sans abonnement.

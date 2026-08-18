@@ -3,7 +3,7 @@
 > Prehľadné informácie o každej aplikácii pre iOS — funkcie, cena a časté otázky.
 
 locale: sk
-apps: 40
+apps: 42
 - Katalóg aplikácií: https://alice51849.github.io/ios-app-guide/sk/tools/private-pay-once-iphone-app-finder.html
 - Katalóg aplikácií · PWA: https://alice51849.github.io/ios-app-guide/sk/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/sk.jsonld
@@ -27,6 +27,10 @@ apps: 40
 - Katalóg aplikácií · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Katalóg aplikácií · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/sk/notesstudio100.html) — Ručné poznámky a PDF
+  - Súkromný priestor na ručné písanie, komentovanie PDF, nahrávky pripojené k strane a študijné kartičky. Usporiadajte si obsah a hľadajte priamo v zariadení.
+  - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
+  - App Store: https://apps.apple.com/sk/app/id6798813048
 - [AI Brief](https://alice51849.github.io/ios-app-guide/sk/aibriefpack.html) — Súbory na jasný kontext
   - Zhromaždite snímky obrazovky, dokumenty a poznámky. Ponechajte fakty. Skontrolujte súkromné údaje. Skopírujte jeden zrozumiteľný súhrn.
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
@@ -179,6 +183,10 @@ apps: 40
   - Nájdite najpravdepodobnejšiu príčinu pomocou nezávislých testov trás, DNS, TCP, TLS, odozvy a stability. Jedna platba vopred, bez predplatného, reklám a sledovania.
   - Cena: Platené stiahnutie za jednu cenu vopred, bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6790467886
+- [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/sk/wifiaidlite.html) — Diagnostika siete s dôkazmi
+  - Nájdite skutočný problém. Každý nástroj má jedno bezplatné plné použitie. Voliteľné doživotné odomknutie pre neobmedzené používanie—bez predplatného.
+  - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
+  - App Store: https://apps.apple.com/sk/app/id6793414462
 - [Wordmate Lite: slovíčka denne](https://alice51849.github.io/ios-app-guide/sk/wordmatelite.html) — Jedna minúta, päť nových slov
   - Jedna minúta denne, ktorú naozaj zvládnete. Päť slovíčok, výslovnosť a kamienková cestička, ktorá sa pred očami predlžuje. Bez balíčkov, bez fronty opakovaní, bez účtu.
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.

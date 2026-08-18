@@ -2,7 +2,7 @@
 title: "paras yksinkertainen muistilistasovellus iPhonelle ilman tilausta"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/fi/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkist
 - Ei mainoksia
 - App Store · Ilmainen
 
-[Hanki Mochi App Storesta →](https://apps.apple.com/fi/app/id6785004775?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki Mochi App Storesta →](https://apps.apple.com/fi/app/id6785004775)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

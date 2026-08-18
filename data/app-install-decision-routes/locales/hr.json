@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "hr",
-  "dateModified": "2026-08-17",
-  "content_digest": "7bf9a1c1c9d8e2e85c4f23e27e95d84ef7cc221c3fec20ef6ea999c451133f03",
-  "generation_digest": "977f7d6bc00a2e88bb25df2321e667f9647bf876b7c6aea1976e45e43a1328a2",
+  "dateModified": "2026-08-18",
+  "content_digest": "264b14864720b36adcc17313f205aa969b749d3a164446272f28772a835771b3",
+  "generation_digest": "d5fa67b24e8433a4f212a12ecc3662733a247983974a6cca6a58b9ab36d6fe87",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 40,
+  "record_count": 42,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/hr.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/hr.rss.xml",
@@ -51,7 +51,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6792850916",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
-      "app_store_url": "https://apps.apple.com/hr/app/id6792850916?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6792850916",
       "app_store_cta_label": "Preuzmite Mask My File u App Storeu",
       "storefront_facts": {
         "price": "0",
@@ -96,7 +96,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6790467886",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
-      "app_store_url": "https://apps.apple.com/hr/app/id6790467886?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6790467886",
       "app_store_cta_label": "Preuzmite WiFi Aid u App Storeu",
       "storefront_facts": {
         "price": "6.99",
@@ -141,7 +141,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6790800323",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
-      "app_store_url": "https://apps.apple.com/hr/app/id6790800323?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6790800323",
       "app_store_cta_label": "Preuzmite Mochi DoneStamp: Zadnji put u App Storeu",
       "storefront_facts": {
         "price": "0",
@@ -151,6 +151,62 @@
       "guide_cta_label": "Pročitajte cijeli vodič",
       "publisher_disclosure": "Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.",
       "source_persona_query": "best last time tracker app for household maintenance without a subscription",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "hr:notesstudio100",
+      "locale": "hr",
+      "app_key": "notesstudio100",
+      "app_name": "100 Notes Studio: Pen & Paper",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "100 Notes Studio: Pen & Paper — Rukopis, bilješke i PDF | iOS App",
+      "decision_context": "100 Notes Studio povezuje rukopis, tipkanje, označavanje PDF dokumenata, organizaciju bilježnica i učenje u miran radni prostor koji radi i bez mreže. PIŠITE PRIRODNO Birajte među 29 različitih pera i kistova, uključujući nalivpero, kaligrafsko i tehničko pero, akvarelni kist, ugljen, tehničku olovku, grafit 2B/4B/6B, drvenu bojicu, marker i uljni pastel. Svaki alat ima vlastitu teksturu i odziv. Digitalna olovka osjetljiva na pritisak može koristiti pritisak, nagib, odbacivanje dlana i podržane geste. Dostupne su pikselna, potezna i precizna gumica, odabir lasom za pomicanje, promjenu veličine, kopiranje ili brisanje poteza, ravnalo, osam alata za oblike i laserski pokazivač. 100 PAŽLJIVO OBLIKOVANIH STILOVA Svaki stil ima vlastite korice, strukturu papira, paletu boja, razdjelnike, pečate ili naljepnice, naglasak alatne trake i izgled widgeta. Zbirka obuhvaća minimalističke i lanene bilježnice, japansku mrežu, točkasto planiranje, dvostupčani raspored za učenje te akademske, inženjerske, notne, sastanačke, istraživačke, putne, wellness i kulinarske rasporede. Stilove možete pregledati prije otključavanja. ALATI ZA BILJEŠKE I UČENJE Fiksne stranice ili beskonačno platno; A4, A5, Letter, veličina zaslona ili prilagođena veličina; uspravno ili vodoravno Oblikovani tekst s podebljanjem, kurzivom, podcrtavanjem, fontovima, bojama, popisima, zadacima, tablicama, citatima, kodom i poveznicama Uvoz i označavanje PDF-a s isticanjem, podcrtavanjem, precrtavanjem, tekstualnim bilješkama, rukopisom, rotacijom, obrezivanjem, umetanjem, izdvajanjem, spajanjem i izvozom Snimke zvuka ostaju priložene stranici na kojoj su snimljene Prepoznavanje rukopisa i PDF sadržaja na uređaju te pretraživanje naslova, teksta, rukopisa i privitaka Način učenja s povezanim karticama, zadacima s prazninama i rasporedom ponavljanja FSRS Naljepnice, washi trake i automatski numeriran sadržaj Ugniježđene mape, oznake, prikvačivanje, favoriti, arhiva, koš s obnovom i povijest verzija Widgeti za početni i zaključani zaslon, brze automatizacije te prateća aplikacija za nosivi uređaj s glasovnim, tekstualnim i kontrolnim bilješkama Slojevi tinte s prozirnošću, vidljivošću i zaključavanjem te referentni prostor za PDF ili sliku uz stranicu PRIVATNOST I RAD BEZ MREŽE Za osnovni rad nisu potrebni račun ni mrežna veza. Aplikacija je oblikovana bez oglasa, vanjskog praćenja, analitike trećih strana i vanjske obrade umjetnom inteligencijom. Prepoznavanje rukopisa i pretraživanje izvode se na uređaju. Aplikaciju ili pojedinu bilježnicu možete zaključati biometrijom ili šifrom uređaja. JEZGRA I DODATNO OTKLJUČAVANJE Osnovni uređivač uključuje 29 alata, označavanje PDF-a, snimke zvuka uz stranicu na kojoj su snimljene, pretraživanje rukopisa i način učenja, uz 1 aktivnu bilježnicu, neograničen broj stranica i 2 od 100 uključenih stilova. Neobavezno jednokratno otključavanje dodaje stvaranje dodatnih bilježnica, primjenu 100 stilova, izvoz u vektorski PDF, obnovljivu povijest verzija i šifriranu sigurnosnu kopiju. Usredotočen prostor za rukopis, dokumente i organizirano učenje. Pravila privatnosti: https://alice51849.github.io/100notes-support/privacy.html Uvjeti korištenja: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+      "category": "productivity",
+      "category_label": "Produktivnost",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Besplatno za početak · doživotno otključavanje",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Izvan mreže",
+        "Bez računa",
+        "Privatno / na uređaju"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Produktivnost",
+        "Besplatno za početak · doživotno otključavanje",
+        "Izvan mreže",
+        "Bez računa",
+        "Privatno / na uređaju",
+        "App Store · Besplatno"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/notesstudio100.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/hr/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/hr/notesstudio100.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fnotesstudio100%2Fdecision%2Fl%2Fhr%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
+      "app_store_id": "6798813048",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
+      "app_store_url": "https://apps.apple.com/hr/app/id6798813048",
+      "app_store_cta_label": "Preuzmite 100 Notes Studio: Pen & Paper u App Storeu",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno"
+      },
+      "guide_cta_label": "Pročitajte cijeli vodič",
+      "publisher_disclosure": "Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.",
+      "source_persona_query": "best offline handwriting notes app for ipad with pdf markup no subscription",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -191,7 +247,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/hr/app/id6791658210?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6791658210",
       "app_store_cta_label": "Preuzmite AI Brief u App Storeu",
       "storefront_facts": {
         "price": "0",
@@ -236,7 +292,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6784974530",
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
-      "app_store_url": "https://apps.apple.com/hr/app/id6784974530?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6784974530",
       "app_store_cta_label": "Preuzmite Aim990 u App Storeu →",
       "storefront_facts": {
         "price": "0",
@@ -281,7 +337,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6792483140",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
-      "app_store_url": "https://apps.apple.com/hr/app/id6792483140?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6792483140",
       "app_store_cta_label": "Preuzmite Aim990 Plus u App Storeu",
       "storefront_facts": {
         "price": "6.99",
@@ -331,7 +387,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/hr/app/id6794178671?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6794178671",
       "app_store_cta_label": "Preuzmite CalDaily: kalkulator i teme u App Storeu",
       "storefront_facts": {
         "price": "0",
@@ -376,7 +432,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6781337213",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
-      "app_store_url": "https://apps.apple.com/hr/app/id6781337213?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6781337213",
       "app_store_cta_label": "Preuzmite CV Desk u App Storeu →",
       "storefront_facts": {
         "price": "0",
@@ -426,7 +482,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6782251621",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
-      "app_store_url": "https://apps.apple.com/hr/app/id6782251621?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6782251621",
       "app_store_cta_label": "Preuzmite Cyca u App Storeu →",
       "storefront_facts": {
         "price": "0",
@@ -476,7 +532,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6790418321",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
-      "app_store_url": "https://apps.apple.com/hr/app/id6790418321?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6790418321",
       "app_store_cta_label": "Preuzmite DailyMate u App Storeu →",
       "storefront_facts": {
         "price": "12.99",
@@ -521,7 +577,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6794725568",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
-      "app_store_url": "https://apps.apple.com/hr/app/id6794725568?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6794725568",
       "app_store_cta_label": "Preuzmite DailyMate Lite: Govori danas u App Storeu",
       "storefront_facts": {
         "price": "0",
@@ -574,7 +630,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6755782939",
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
-      "app_store_url": "https://apps.apple.com/hr/app/id6755782939?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6755782939",
       "app_store_cta_label": "Preuzmite G+Money u App Storeu →",
       "storefront_facts": {
         "price": "5.99",
@@ -641,7 +697,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6793436548",
       "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
-      "app_store_url": "https://apps.apple.com/hr/app/id6793436548?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6793436548",
       "app_store_cta_label": "Preuzmite G+Money Lite u App Storeu",
       "storefront_facts": {
         "price": "0",
@@ -705,7 +761,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6794039979",
       "app_store_cta_label": "Preuzmite HoursTag Lite u App Storeu",
       "storefront_facts": {
         "price": "0",
@@ -758,7 +814,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/hr/app/id6754218117?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6754218117",
       "app_store_cta_label": "Preuzmite HoursTag: Sati za kupnju u App Storeu",
       "storefront_facts": {
         "price": "5.99",
@@ -811,7 +867,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6780107485",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
-      "app_store_url": "https://apps.apple.com/hr/app/id6780107485?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6780107485",
       "app_store_cta_label": "Preuzmite LockHour Pro u App Storeu →",
       "storefront_facts": {
         "price": "0",
@@ -861,7 +917,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6773017109",
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
-      "app_store_url": "https://apps.apple.com/hr/app/id6773017109?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6773017109",
       "app_store_cta_label": "Preuzmite Lumi Bopomofo u App Storeu →",
       "storefront_facts": {
         "price": "0",
@@ -911,7 +967,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6775773117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
-      "app_store_url": "https://apps.apple.com/hr/app/id6775773117?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6775773117",
       "app_store_cta_label": "Preuzmite Lumi Bopomofo Pro na App Storeu →",
       "storefront_facts": {
         "price": "9.99",
@@ -961,7 +1017,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6778748533",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
-      "app_store_url": "https://apps.apple.com/hr/app/id6778748533?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6778748533",
       "app_store_cta_label": "Preuzmite Lumi Letters u App Storeu →",
       "storefront_facts": {
         "price": "0",
@@ -1011,7 +1067,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6778491147",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
-      "app_store_url": "https://apps.apple.com/hr/app/id6778491147?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6778491147",
       "app_store_cta_label": "Preuzmite Lumi Letters Pro na App Storeu →",
       "storefront_facts": {
         "price": "9.99",
@@ -1061,7 +1117,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6778269699",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
-      "app_store_url": "https://apps.apple.com/hr/app/id6778269699?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6778269699",
       "app_store_cta_label": "Preuzmite Lumi Math Planet u App Storeu →",
       "storefront_facts": {
         "price": "0",
@@ -1111,7 +1167,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6776958488",
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
-      "app_store_url": "https://apps.apple.com/hr/app/id6776958488?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6776958488",
       "app_store_cta_label": "Preuzmite Lumi Math Pro na App Storeu →",
       "storefront_facts": {
         "price": "9.99",
@@ -1161,7 +1217,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6779750237",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
-      "app_store_url": "https://apps.apple.com/hr/app/id6779750237?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6779750237",
       "app_store_cta_label": "Preuzmite Lumi Mission Planet na App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1211,7 +1267,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6779745474",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
-      "app_store_url": "https://apps.apple.com/hr/app/id6779745474?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6779745474",
       "app_store_cta_label": "Preuzmite Lumi Mission Planet Pro na App Storeu →",
       "storefront_facts": {
         "price": "6.99",
@@ -1261,7 +1317,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6787193643",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "app_store_url": "https://apps.apple.com/hr/app/id6787193643?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6787193643",
       "app_store_cta_label": "Preuzmite Lumi Trip Planet na App Storeu →",
       "storefront_facts": {
         "price": "0",
@@ -1314,7 +1370,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6779552704",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
-      "app_store_url": "https://apps.apple.com/hr/app/id6779552704?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6779552704",
       "app_store_cta_label": "Preuzmite Lumi Weather na App Storeu →",
       "storefront_facts": {
         "price": "0",
@@ -1364,7 +1420,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6785004775",
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
-      "app_store_url": "https://apps.apple.com/hr/app/id6785004775?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6785004775",
       "app_store_cta_label": "Preuzmite Mochi u App Storeu →",
       "storefront_facts": {
         "price": "0",
@@ -1409,7 +1465,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6798814385",
       "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
-      "app_store_url": "https://apps.apple.com/hr/app/id6798814385?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6798814385",
       "app_store_cta_label": "Preuzmite OnePage PPT: AI slajd u App Storeu",
       "storefront_facts": {
         "price": "0",
@@ -1454,7 +1510,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6781808054",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
-      "app_store_url": "https://apps.apple.com/hr/app/id6781808054?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6781808054",
       "app_store_cta_label": "Preuzmite PhotoCream na App Storeu →",
       "storefront_facts": {
         "price": "0",
@@ -1504,7 +1560,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6780223070",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
-      "app_store_url": "https://apps.apple.com/hr/app/id6780223070?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6780223070",
       "app_store_cta_label": "Preuzmite PicClear u App Storeu →",
       "storefront_facts": {
         "price": "0",
@@ -1554,7 +1610,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6779977651",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
-      "app_store_url": "https://apps.apple.com/hr/app/id6779977651?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6779977651",
       "app_store_cta_label": "Preuzmite ScanTo Pro u App Storeu →",
       "storefront_facts": {
         "price": "0",
@@ -1607,7 +1663,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6788236641",
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
-      "app_store_url": "https://apps.apple.com/hr/app/id6788236641?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6788236641",
       "app_store_cta_label": "Preuzmite Sereno u App Storeu →",
       "storefront_facts": {
         "price": "0",
@@ -1657,7 +1713,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6780575828",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
-      "app_store_url": "https://apps.apple.com/hr/app/id6780575828?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6780575828",
       "app_store_cta_label": "Preuzmite Snapport u App Storeu →",
       "storefront_facts": {
         "price": "6.99",
@@ -1707,7 +1763,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6792856304",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
-      "app_store_url": "https://apps.apple.com/hr/app/id6792856304?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6792856304",
       "app_store_cta_label": "Preuzmite Snapport Lite u App Storeu",
       "storefront_facts": {
         "price": "0",
@@ -1757,7 +1813,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6782139553",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
-      "app_store_url": "https://apps.apple.com/hr/app/id6782139553?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6782139553",
       "app_store_cta_label": "Preuzmite Sono Note u App Storeu →",
       "storefront_facts": {
         "price": "0",
@@ -1802,7 +1858,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6791299610",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
-      "app_store_url": "https://apps.apple.com/hr/app/id6791299610?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6791299610",
       "app_store_cta_label": "Preuzmite TripBee Lite na App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1858,7 +1914,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6787754435",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
-      "app_store_url": "https://apps.apple.com/hr/app/id6787754435?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6787754435",
       "app_store_cta_label": "Preuzmite TripBee Pro: Planer putovanja u App Storeu →",
       "storefront_facts": {
         "price": "6.99",
@@ -1908,7 +1964,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6782275018",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
-      "app_store_url": "https://apps.apple.com/hr/app/id6782275018?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6782275018",
       "app_store_cta_label": "Preuzmite Unblurry u App Storeu →",
       "storefront_facts": {
         "price": "0",
@@ -1919,6 +1975,56 @@
       "publisher_disclosure": "Vodič koji je napisao izdavač Lumi Studio, programer aplikacije. Nazivi aplikacija su zaštićeni znakovi njihovih vlasnika i koriste se samo za identifikaciju. Za dokumente, zdravlje, školu i odluke o produktivnosti provjerite službene zahtjeve gdje je to relevantno.",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "hr:wifiaidlite",
+      "locale": "hr",
+      "app_key": "wifiaidlite",
+      "app_name": "WiFi Aid Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "WiFi Aid Lite — Dijagnostika mreže s dokazima | iOS App",
+      "decision_context": "Pronađi stvarni problem. Svaki alat uključuje jednu besplatnu potpunu upotrebu. Neobavezno jednokratno doživotno otključavanje za neograničenu upotrebu—bez pretplate, oglasa ili praćenja. • Pokreni test — Provjere Wi-Fi-ja i DNS-a jednim dodirom • Dubinski test — Više dokaza i stabilnost mreže • Testiraj web stranicu — Jednu stranicu ili cijeli internet • Dokazi — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Veza se čini nestabilnom — Varijacija • Povijest — Privatni zapisi samo na ovom uređaju • Povezani čvor — Precizna lokacija prepoznaje Wi-Fi i trenutačni čvor Bez računa, oglasa ili praćenja. Privatni zapisi samo na ovom uređaju. Svaki alat uključuje jednu besplatnu potpunu upotrebu. Neobavezno jednokratno doživotno otključavanje za neograničenu upotrebu—bez pretplate, oglasa ili praćenja.",
+      "category": "utility",
+      "category_label": "Više",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Besplatno za početak · doživotno otključavanje",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Bez računa"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Više",
+        "Besplatno za početak · doživotno otključavanje",
+        "Bez računa",
+        "App Store · Besplatno"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/wifiaidlite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/hr/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/hr/wifiaidlite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fwifiaidlite%2Fdecision%2Fl%2Fhr%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
+      "app_store_id": "6793414462",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
+      "app_store_url": "https://apps.apple.com/hr/app/id6793414462",
+      "app_store_cta_label": "Preuzmite WiFi Aid Lite u App Storeu",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno"
+      },
+      "guide_cta_label": "Pročitajte cijeli vodič",
+      "publisher_disclosure": "Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.",
+      "source_persona_query": "how to tell if the wifi or the website is down free app",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
@@ -1958,7 +2064,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/hr/app/id6797601720?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6797601720",
       "app_store_cta_label": "Preuzmite Wordmate Lite: vokabular u App Storeu",
       "storefront_facts": {
         "price": "0",
@@ -2022,7 +2128,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6789917808",
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
-      "app_store_url": "https://apps.apple.com/hr/app/id6789917808?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6789917808",
       "app_store_cta_label": "Preuzmite Wordmate: Learn 44 Languages na App Storeu →",
       "storefront_facts": {
         "price": "9.99",

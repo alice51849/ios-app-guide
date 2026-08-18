@@ -2,7 +2,7 @@
 title: "лучшее полное приложение для обучения фонетике для подготовки к домашнему детскому саду"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/ru/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Без рекламы
 - App Store · 799,00 ₽
 
-[Скачать Lumi Letters Pro в App Store →](https://apps.apple.com/ru/app/id6778491147?pt=118326163&ct=iag_data_ru&mt=8)
+[Скачать Lumi Letters Pro в App Store →](https://apps.apple.com/ru/app/id6778491147)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Zadnji put — Pamti kada ste to učinili | iOS App"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/hr/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Kada ste zadnji put promijenili posteljinu, zalili biljku, nazvali obitelj, sigu
 - Besplatno za početak · doživotno otključavanje
 - App Store · Besplatno
 
-[Preuzmite Mochi DoneStamp: Zadnji put u App Storeu](https://apps.apple.com/hr/app/id6790800323?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite Mochi DoneStamp: Zadnji put u App Storeu](https://apps.apple.com/hr/app/id6790800323)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/mochidonestamp.html)
 

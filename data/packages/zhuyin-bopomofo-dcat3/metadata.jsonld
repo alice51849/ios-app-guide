@@ -27,7 +27,7 @@
   "identifier": "LUMI-ZHUYIN-DCAT3-2026",
   "version": "1.5.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-08-17T00:00:00Z",
+  "dateModified": "2026-08-18T00:00:00Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -97,7 +97,7 @@
       "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ro-crate",
       "name": "Bopomofo RO-Crate 1.3 research object",
       "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
-      "dateModified": "2026-08-17"
+      "dateModified": "2026-08-18"
     },
     {
       "@type": "Dataset",
@@ -162,8 +162,8 @@
       "name": "Complete ZIP bundle",
       "encodingFormat": "application/zip",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip",
-      "contentSize": "28807 bytes",
-      "sha256": "18cd17923b86fd0e3b52b9e1dcfebe515f234ce047b7c8e7d4109c84d258039f"
+      "contentSize": "28822 bytes",
+      "sha256": "45e615a32000bbbb331baad3096d477ead76717ad8b95f4424fcd721ab73d9d4"
     },
     {
       "@type": "DataDownload",
@@ -171,7 +171,7 @@
       "encodingFormat": "application/ld+json",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld",
       "contentSize": "218434 bytes",
-      "sha256": "427bfab32310740902b166d6e12cd183a0541291d80adfa20a95a55d9ea032b7"
+      "sha256": "cdab006afea74a25557b5c2e9e92fd681fdccc7f705b3cfd74e24f1d214bf72e"
     },
     {
       "@type": "DataDownload",
@@ -179,7 +179,7 @@
       "encodingFormat": "text/turtle",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl",
       "contentSize": "148253 bytes",
-      "sha256": "79b928dfb38d24c5d9d1ac3b602213a8bfa49b903cfc1e4b677ffa90c1058665"
+      "sha256": "e00e7a68487774a5b9b43892ab5f44eaa261388e91d8ff257ea31c54d6db524a"
     }
   ]
 }

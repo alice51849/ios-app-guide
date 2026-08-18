@@ -2,7 +2,7 @@
 title: "aplikasi permainan matematik terbaik untuk kanak-kanak membina kemahiran logik iPhone"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/ms/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Aplikasi matematik kanak-kanak terbaik melatih penaakulan — corak, urutan, pem
 - Tiada iklan
 - App Store · Percuma
 
-[Dapatkan Lumi Math Planet di App Store →](https://apps.apple.com/my/app/id6778269699?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan Lumi Math Planet di App Store →](https://apps.apple.com/my/app/id6778269699)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

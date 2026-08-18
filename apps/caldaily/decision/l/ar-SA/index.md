@@ -2,7 +2,7 @@
 title: "CalDaily حاسبة وسمات — ويدجت وأدوات وسجل مرتب | iOS App"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ar-SA/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - عنصر واجهة
 - App Store · مجاني
 
-[احصل على CalDaily حاسبة وسمات من App Store](https://apps.apple.com/sa/app/id6794178671?pt=118326163&ct=iag_data_ar_sa&mt=8)
+[احصل على CalDaily حاسبة وسمات من App Store](https://apps.apple.com/sa/app/id6794178671)
 
 [اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/caldaily.html)
 

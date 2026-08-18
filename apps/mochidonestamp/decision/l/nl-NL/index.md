@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Laatste keer — Onthoud wanneer je het deed | iOS App"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/nl-NL/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Wanneer verschoonde je voor het laatst het bed, gaf je een plant water, belde je
 - Gratis te starten · levenslange ontgrendeling
 - App Store · Gratis
 
-[Download Mochi DoneStamp: Laatste keer in de App Store](https://apps.apple.com/nl/app/id6790800323?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download Mochi DoneStamp: Laatste keer in de App Store](https://apps.apple.com/nl/app/id6790800323)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/mochidonestamp.html)
 

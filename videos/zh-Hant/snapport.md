@@ -2,7 +2,7 @@
 title: "最佳在家拍攝嬰幼兒護照照片App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hant/snapport.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 video_url: "https://files.catbox.moe/21npng.mp4"
 duration: "PT16S"
 app_store_id: "6780575828"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [觀看影片](https://files.catbox.moe/21npng.mp4)
 
-[在 App Store 取得 Snapport →](https://apps.apple.com/tw/app/id6780575828?pt=118326163&ct=iag_video_zh_hant&mt=8)
+[在 App Store 取得 Snapport →](https://apps.apple.com/tw/app/id6780575828)
 
 [開啟 App 指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

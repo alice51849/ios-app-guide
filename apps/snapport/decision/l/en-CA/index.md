@@ -2,7 +2,7 @@
 title: "best passport photo app for babies and toddlers at home"
 lang: "en-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/en-CA/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ For a baby's passport photo, no one else can be in the shot and the background m
 - Private / on-device
 - App Store · $7.99
 
-[Get Snapport on the App Store →](https://apps.apple.com/ca/app/id6780575828?pt=118326163&ct=iag_data_en_ca&mt=8)
+[Get Snapport on the App Store →](https://apps.apple.com/ca/app/id6780575828)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-CA/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

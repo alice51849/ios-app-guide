@@ -2,7 +2,7 @@
 title: "ứng dụng học từ vựng tốt nhất cho người đi làm bận rộn có Apple Watch"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/vi/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,7 +22,7 @@ Người đi làm bận rộn cần luyện tập từ vựng phù hợp thời 
 - Apple Watch
 - App Store · 299.000đ
 
-[Tải Wordmate: Learn 44 Languages trên App Store →](https://apps.apple.com/vn/app/id6789917808?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải Wordmate: Learn 44 Languages trên App Store →](https://apps.apple.com/vn/app/id6789917808)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

@@ -2,7 +2,7 @@
 title: "Aim990 Plus — ഇംഗ്ലീഷ് സമ്മർദ പരിശീലനം | iOS App"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/ml-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Aim990 Plus മുതിർന്നവർക്ക് ഇംഗ്ലീഷ് 
 - പണം നൽകേണ്ട ഡൗൺലോഡ്
 - App Store · ₹ 599
 
-[App Store-ൽ നിന്ന് Aim990 Plus നേടൂ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് Aim990 Plus നേടൂ](https://apps.apple.com/in/app/id6792483140)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/aim990plus.html)
 

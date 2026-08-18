@@ -2,7 +2,7 @@
 title: "HoursTag Lite — ವಸ್ತುಗಳ ನಿಜವಾದ ಬೆಲೆಯನ್ನು ನೋಡಿ | iOS App"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/kn-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,7 +22,7 @@ HoursTag Lite - ವಸ್ತುಗಳ ನಿಜವಾದ ಬೆಲೆಯನ್�
 - Apple Watch
 - App Store · ಉಚಿತ
 
-[App Store ನಲ್ಲಿ HoursTag Lite ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_kn_in&mt=8)
+[App Store ನಲ್ಲಿ HoursTag Lite ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6794039979)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/hourstaglite.html)
 

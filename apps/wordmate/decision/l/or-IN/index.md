@@ -2,7 +2,7 @@
 title: "Apple Watch ସହ ବ୍ୟସ୍ତ ଯାତ୍ରୀମାନେ ପାଇଁ ସର୍ବୋତ୍ତମ ଶବ୍ଦକୋଷ ଆପ୍"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/or-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,7 +22,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ₹ 999
 
-[App Store ରେ Wordmate: Learn 44 Languages ପ୍ରାପ୍ତ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=iag_data_or_in&mt=8)
+[App Store ରେ Wordmate: Learn 44 Languages ପ୍ରାପ୍ତ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6789917808)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

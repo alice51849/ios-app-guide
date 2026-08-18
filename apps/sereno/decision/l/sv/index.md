@@ -2,7 +2,7 @@
 title: "bästa appen för vitt brus för att somna utan prenumeration"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/sv/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ För sömn är en prenumeration som tjatar varje månad motsatsen till rogivande
 - Inga annonser
 - App Store · Gratis
 
-[Skaffa Sereno i App Store →](https://apps.apple.com/se/app/id6788236641?pt=118326163&ct=iag_data_sv&mt=8)
+[Skaffa Sereno i App Store →](https://apps.apple.com/se/app/id6788236641)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

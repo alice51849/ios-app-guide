@@ -2,7 +2,7 @@
 title: "Wordmate Lite วันละ 5 คำ — 44 ภาษา 14 หมวด ใน 1 นาที | iOS App"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/th/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ออฟไลน์
 - App Store · ฟรี
 
-[ดาวน์โหลด Wordmate Lite วันละ 5 คำ บน App Store](https://apps.apple.com/th/app/id6797601720?pt=118326163&ct=iag_data_th&mt=8)
+[ดาวน์โหลด Wordmate Lite วันละ 5 คำ บน App Store](https://apps.apple.com/th/app/id6797601720)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/wordmatelite.html)
 

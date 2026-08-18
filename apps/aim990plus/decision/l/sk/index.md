@@ -2,7 +2,7 @@
 title: "Aim990 Plus — Istota pod časovým tlakom | iOS App"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/sk/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Rozumieť angličtine je jedna vec. Zachovať si presnosť, keď ubiehajú minú
 - Platené stiahnutie
 - App Store · 6,99 €
 
-[Stiahnuť Aim990 Plus v App Store](https://apps.apple.com/sk/app/id6792483140?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnuť Aim990 Plus v App Store](https://apps.apple.com/sk/app/id6792483140)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/aim990plus.html)
 

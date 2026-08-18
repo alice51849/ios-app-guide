@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "da",
-  "dateModified": "2026-08-17",
-  "content_digest": "7bf9a1c1c9d8e2e85c4f23e27e95d84ef7cc221c3fec20ef6ea999c451133f03",
-  "generation_digest": "977f7d6bc00a2e88bb25df2321e667f9647bf876b7c6aea1976e45e43a1328a2",
+  "dateModified": "2026-08-18",
+  "content_digest": "264b14864720b36adcc17313f205aa969b749d3a164446272f28772a835771b3",
+  "generation_digest": "d5fa67b24e8433a4f212a12ecc3662733a247983974a6cca6a58b9ab36d6fe87",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 40,
+  "record_count": 42,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/da.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/da.rss.xml",
@@ -51,7 +51,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6792850916",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
-      "app_store_url": "https://apps.apple.com/dk/app/id6792850916?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6792850916",
       "app_store_cta_label": "Hent Mask My File i App Store",
       "storefront_facts": {
         "price": "0",
@@ -96,7 +96,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6790467886",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
-      "app_store_url": "https://apps.apple.com/dk/app/id6790467886?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6790467886",
       "app_store_cta_label": "Hent WiFi Aid i App Store",
       "storefront_facts": {
         "price": "49",
@@ -141,7 +141,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6790800323",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
-      "app_store_url": "https://apps.apple.com/dk/app/id6790800323?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6790800323",
       "app_store_cta_label": "Hent Mochi DoneStamp: Sidst i App Store",
       "storefront_facts": {
         "price": "0",
@@ -151,6 +151,62 @@
       "guide_cta_label": "Læs hele vejledningen",
       "publisher_disclosure": "Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.",
       "source_persona_query": "best last time tracker app for household maintenance without a subscription",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "da:notesstudio100",
+      "locale": "da",
+      "app_key": "notesstudio100",
+      "app_name": "100 Notes Studio: Pen & Paper",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "100 Notes Studio: Pen & Paper — Håndskrift, noter og PDF | iOS App",
+      "decision_context": "100 Notes Studio samler håndskrift, tastaturtekst, PDF-kommentarer, notesbogsstruktur og studieværktøjer i et roligt arbejdsrum, der også fungerer uden netforbindelse. SKRIV NATURLIGT Vælg mellem 29 forskellige penne og pensler, herunder fyldepen, kalligrafipen, teknisk pen, akvarelpensel, kul, stiftblyant, 2B/4B/6B-blyanter, farveblyant, tusch og oliepastel. Hvert værktøj har sin egen tekstur og respons. En trykfølsom digital pen kan bruge tryk, hældning, håndfladeafvisning og understøttede bevægelser. Du får viskelædere til pixels, hele streger og præcisionsarbejde, lasso til at flytte, skalere, kopiere eller slette streger, en lineal, otte formværktøjer og en laserpointer. 100 GENNEMARBEJDEDE STILE Hver stil har sit eget omslag, papirstruktur, farvepalet, faneblade, stempler eller klistermærker, værktøjsfarve og widget-udseende. Samlingen rummer minimalistiske og hørprægede bøger, japansk gitter, planlægning på prikgitter, studielayout med to kolonner samt akademiske, tekniske, node-, møde-, research-, rejse-, velvære- og opskriftssider. Stile kan ses før oplåsning. VÆRKTØJER TIL NOTER OG STUDIE Faste sider eller uendeligt lærred; A4, A5, Letter, skærmformat eller egne mål; stående eller liggende Formateret tekst med fed, kursiv, understregning, skrifttyper, farver, lister, opgaver, tabeller, citater, kode og links Import og kommentarer i PDF'er med fremhævning, understregning, gennemstregning, tekstnoter, håndskrift, rotation, beskæring, indsættelse, udtræk, samling og eksport Lydoptagelser bliver ved den side, hvor de blev optaget Tekstgenkendelse af håndskrift og PDF-indhold på enheden samt søgning i titler, tekst, håndskrift og vedhæftede filer Studietilstand med sammenknyttede ordkort, udfyldningskort og FSRS-planlagt repetition Klistermærker, washi-tape og automatisk nummereret indholdsfortegnelse Indlejrede mapper, tags, fastgørelse, favoritter, arkiv, papirkurv med gendannelse og versionshistorik Widgets til hjemmeskærm og låseskærm, hurtige automatiseringer og en ledsagerapp til smartur med tale-, tekst- og tjeklistenoter Blæklag med opacitet, synlighed og lås samt et referencefelt til en PDF eller et billede ved siden af siden PRIVATLIV OG OFFLINE ARBEJDE Grundlæggende arbejde kræver hverken konto eller netforbindelse. Appen er udviklet uden reklamer, ekstern sporing, tredjepartsanalyse og ekstern behandling med kunstig intelligens. Håndskriftsgenkendelse og søgning foregår på enheden. Appen eller enkelte notesbøger kan låses med enhedens biometri eller kode. KERNEN OG VALGFRI OPLÅSNING Grundeditoren omfatter 29 værktøjer, PDF-kommentarer, lydoptagelser ved den side, hvor de blev optaget, håndskriftssøgning og studietilstand samt 1 aktiv notesbog, ubegrænset antal sider og 2 af 100 inkluderede stilarter. En valgfri engangsoplåsning tilføjer flere notesbøger, brug af 100 stile, eksport til vektor-PDF, versionshistorik med gendannelse og krypteret backup. Et fokuseret arbejdsrum til håndskrift, dokumenter og struktureret studie. Privatlivspolitik: https://alice51849.github.io/100notes-support/privacy.html Brugsvilkår: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+      "category": "productivity",
+      "category_label": "Produktivitet",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis at komme i gang · permanent oplåsning",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Ingen konto",
+        "Privat / på enheden"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Produktivitet",
+        "Gratis at komme i gang · permanent oplåsning",
+        "Offline",
+        "Ingen konto",
+        "Privat / på enheden",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/notesstudio100.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/da/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/da/notesstudio100.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fnotesstudio100%2Fdecision%2Fl%2Fda%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
+      "app_store_id": "6798813048",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
+      "app_store_url": "https://apps.apple.com/dk/app/id6798813048",
+      "app_store_cta_label": "Hent 100 Notes Studio: Pen & Paper i App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "DKK",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Læs hele vejledningen",
+      "publisher_disclosure": "Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.",
+      "source_persona_query": "best offline handwriting notes app for ipad with pdf markup no subscription",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -191,7 +247,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/dk/app/id6791658210?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6791658210",
       "app_store_cta_label": "Hent AI Brief i App Store",
       "storefront_facts": {
         "price": "0",
@@ -236,7 +292,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6784974530",
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
-      "app_store_url": "https://apps.apple.com/dk/app/id6784974530?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6784974530",
       "app_store_cta_label": "Hent Aim990 i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -281,7 +337,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6792483140",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
-      "app_store_url": "https://apps.apple.com/dk/app/id6792483140?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6792483140",
       "app_store_cta_label": "Hent Aim990 Plus i App Store",
       "storefront_facts": {
         "price": "49",
@@ -331,7 +387,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/dk/app/id6794178671?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6794178671",
       "app_store_cta_label": "Hent CalDaily: lommeregner & temaer i App Store",
       "storefront_facts": {
         "price": "0",
@@ -376,7 +432,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6781337213",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
-      "app_store_url": "https://apps.apple.com/dk/app/id6781337213?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6781337213",
       "app_store_cta_label": "Hent CV Desk i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -426,7 +482,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6782251621",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
-      "app_store_url": "https://apps.apple.com/dk/app/id6782251621?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6782251621",
       "app_store_cta_label": "Hent Cyca i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -476,7 +532,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6790418321",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
-      "app_store_url": "https://apps.apple.com/dk/app/id6790418321?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6790418321",
       "app_store_cta_label": "Hent DailyMate i App Store →",
       "storefront_facts": {
         "price": "99",
@@ -521,7 +577,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6794725568",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
-      "app_store_url": "https://apps.apple.com/dk/app/id6794725568?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6794725568",
       "app_store_cta_label": "Hent DailyMate Lite: Tal i dag i App Store",
       "storefront_facts": {
         "price": "0",
@@ -574,7 +630,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6755782939",
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
-      "app_store_url": "https://apps.apple.com/dk/app/id6755782939?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6755782939",
       "app_store_cta_label": "Hent G+Money i App Store →",
       "storefront_facts": {
         "price": "39",
@@ -641,7 +697,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6793436548",
       "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
-      "app_store_url": "https://apps.apple.com/dk/app/id6793436548?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6793436548",
       "app_store_cta_label": "Hent G+Money Lite i App Store",
       "storefront_facts": {
         "price": "0",
@@ -705,7 +761,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/dk/app/id6794039979?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6794039979",
       "app_store_cta_label": "Hent HoursTag Lite i App Store",
       "storefront_facts": {
         "price": "0",
@@ -758,7 +814,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/dk/app/id6754218117?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6754218117",
       "app_store_cta_label": "Hent HoursTag: Timer at købe i App Store",
       "storefront_facts": {
         "price": "39",
@@ -811,7 +867,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6780107485",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
-      "app_store_url": "https://apps.apple.com/dk/app/id6780107485?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6780107485",
       "app_store_cta_label": "Hent LockHour Pro i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -861,7 +917,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6773017109",
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
-      "app_store_url": "https://apps.apple.com/dk/app/id6773017109?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6773017109",
       "app_store_cta_label": "Hent Lumi Bopomofo i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -911,7 +967,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6775773117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
-      "app_store_url": "https://apps.apple.com/dk/app/id6775773117?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6775773117",
       "app_store_cta_label": "Hent Lumi Bopomofo Pro i App Store →",
       "storefront_facts": {
         "price": "79",
@@ -961,7 +1017,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6778748533",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
-      "app_store_url": "https://apps.apple.com/dk/app/id6778748533?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6778748533",
       "app_store_cta_label": "Hent Lumi Letters i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1011,7 +1067,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6778491147",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
-      "app_store_url": "https://apps.apple.com/dk/app/id6778491147?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6778491147",
       "app_store_cta_label": "Hent Lumi Letters Pro i App Store →",
       "storefront_facts": {
         "price": "79",
@@ -1061,7 +1117,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6778269699",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
-      "app_store_url": "https://apps.apple.com/dk/app/id6778269699?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6778269699",
       "app_store_cta_label": "Hent Lumi Math Planet i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1111,7 +1167,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6776958488",
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
-      "app_store_url": "https://apps.apple.com/dk/app/id6776958488?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6776958488",
       "app_store_cta_label": "Hent Lumi Math Pro i App Store →",
       "storefront_facts": {
         "price": "79",
@@ -1161,7 +1217,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6779750237",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
-      "app_store_url": "https://apps.apple.com/dk/app/id6779750237?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6779750237",
       "app_store_cta_label": "Hent Lumi Mission Planet på App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1211,7 +1267,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6779745474",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
-      "app_store_url": "https://apps.apple.com/dk/app/id6779745474?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6779745474",
       "app_store_cta_label": "Hent Lumi Mission Planet Pro i App Store →",
       "storefront_facts": {
         "price": "49",
@@ -1261,7 +1317,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6787193643",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "app_store_url": "https://apps.apple.com/dk/app/id6787193643?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6787193643",
       "app_store_cta_label": "Hent Lumi Trip Planet i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1314,7 +1370,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6779552704",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
-      "app_store_url": "https://apps.apple.com/dk/app/id6779552704?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6779552704",
       "app_store_cta_label": "Hent Lumi Weather i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1364,7 +1420,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6785004775",
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
-      "app_store_url": "https://apps.apple.com/dk/app/id6785004775?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6785004775",
       "app_store_cta_label": "Hent Mochi i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1409,7 +1465,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6798814385",
       "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
-      "app_store_url": "https://apps.apple.com/dk/app/id6798814385?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6798814385",
       "app_store_cta_label": "Hent OnePage PPT: AI-slides i App Store",
       "storefront_facts": {
         "price": "0",
@@ -1454,7 +1510,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6781808054",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
-      "app_store_url": "https://apps.apple.com/dk/app/id6781808054?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6781808054",
       "app_store_cta_label": "Hent PhotoCream i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1504,7 +1560,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6780223070",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
-      "app_store_url": "https://apps.apple.com/dk/app/id6780223070?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6780223070",
       "app_store_cta_label": "Hent PicClear i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1554,7 +1610,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6779977651",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
-      "app_store_url": "https://apps.apple.com/dk/app/id6779977651?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6779977651",
       "app_store_cta_label": "Hent ScanTo Pro i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1607,7 +1663,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6788236641",
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
-      "app_store_url": "https://apps.apple.com/dk/app/id6788236641?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6788236641",
       "app_store_cta_label": "Hent Sereno i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1657,7 +1713,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6780575828",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
-      "app_store_url": "https://apps.apple.com/dk/app/id6780575828?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6780575828",
       "app_store_cta_label": "Hent Snapport i App Store →",
       "storefront_facts": {
         "price": "49",
@@ -1707,7 +1763,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6792856304",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
-      "app_store_url": "https://apps.apple.com/dk/app/id6792856304?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6792856304",
       "app_store_cta_label": "Hent Snapport Lite i App Store",
       "storefront_facts": {
         "price": "0",
@@ -1757,7 +1813,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6782139553",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
-      "app_store_url": "https://apps.apple.com/dk/app/id6782139553?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6782139553",
       "app_store_cta_label": "Hent Sono Note i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1802,7 +1858,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6791299610",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
-      "app_store_url": "https://apps.apple.com/dk/app/id6791299610?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6791299610",
       "app_store_cta_label": "Hent TripBee Lite i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1858,7 +1914,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6787754435",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
-      "app_store_url": "https://apps.apple.com/dk/app/id6787754435?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6787754435",
       "app_store_cta_label": "Hent TripBee Pro: Rejseplanlægger i App Store →",
       "storefront_facts": {
         "price": "49",
@@ -1908,7 +1964,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6782275018",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
-      "app_store_url": "https://apps.apple.com/dk/app/id6782275018?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6782275018",
       "app_store_cta_label": "Hent Unblurry i App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1919,6 +1975,56 @@
       "publisher_disclosure": "Vejledning udarbejdet af Lumi Studio, app-udvikleren. App-navne er varemærker tilhørende deres ejere og bruges kun til identifikation. For dokumenter, sundhed, skole og produktivitetsbeslutninger, bekræft officielle krav hvor relevant.",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "da:wifiaidlite",
+      "locale": "da",
+      "app_key": "wifiaidlite",
+      "app_name": "WiFi Aid Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "WiFi Aid Lite — Netværksdiagnose med beviser | iOS App",
+      "decision_context": "Find det rigtige problem. Hvert værktøj inkluderer én gratis fuld brug. Valgfri livstidsoplåsning som engangskøb til ubegrænset brug—ingen abonnement, reklamer eller sporing. • Start Test — Wi-Fi, DNS og internet med ét tryk • Deep Check — Flere beviser og stabilitet • Tjek Website — Én side eller hele nettet • Beviser — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Ustabil forbindelse — Variation • Testhistorik — Dine data forbliver på denne enhed • Tilsluttet node — Præcis placering finder Wi-Fi og aktuel node Ingen konto, reklamer eller sporing. Dine data forbliver på denne enhed. Hvert værktøj inkluderer én gratis fuld brug. Valgfri livstidsoplåsning som engangskøb til ubegrænset brug—ingen abonnement, reklamer eller sporing.",
+      "category": "utility",
+      "category_label": "Mere",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis at komme i gang · permanent oplåsning",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Ingen konto"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Mere",
+        "Gratis at komme i gang · permanent oplåsning",
+        "Ingen konto",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/wifiaidlite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/da/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/da/wifiaidlite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fwifiaidlite%2Fdecision%2Fl%2Fda%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
+      "app_store_id": "6793414462",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
+      "app_store_url": "https://apps.apple.com/dk/app/id6793414462",
+      "app_store_cta_label": "Hent WiFi Aid Lite i App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "DKK",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Læs hele vejledningen",
+      "publisher_disclosure": "Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.",
+      "source_persona_query": "how to tell if the wifi or the website is down free app",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
@@ -1958,7 +2064,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/dk/app/id6797601720?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6797601720",
       "app_store_cta_label": "Hent Wordmate Lite: Ordforråd i App Store",
       "storefront_facts": {
         "price": "0",
@@ -2022,7 +2128,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6789917808",
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
-      "app_store_url": "https://apps.apple.com/dk/app/id6789917808?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6789917808",
       "app_store_cta_label": "Hent Wordmate: Learn 44 Languages i App Store →",
       "storefront_facts": {
         "price": "79",

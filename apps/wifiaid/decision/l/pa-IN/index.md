@@ -2,7 +2,7 @@
 title: "WiFi Aid — ਨੈੱਟਵਰਕ ਜਾਂਚ ਅਤੇ ਸਬੂਤ | iOS App"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/pa-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ
 - App Store · ₹ 599
 
-[App Store ਤੋਂ WiFi Aid ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_pa_in&mt=8)
+[App Store ਤੋਂ WiFi Aid ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6790467886)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/wifiaid.html)
 

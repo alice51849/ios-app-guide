@@ -2,7 +2,7 @@
 title: "najbolja offline aplikacija za skeniranje dokumenata bez oblaka za medicinske sestre"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/hr/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Ako skenirate obrasce pristanka pacijenata, otpustne papire ili upute, skener mo
 - Privatno / na uređaju
 - App Store · Besplatno
 
-[Preuzmite ScanTo Pro u App Storeu →](https://apps.apple.com/hr/app/id6779977651?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite ScanTo Pro u App Storeu →](https://apps.apple.com/hr/app/id6779977651)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

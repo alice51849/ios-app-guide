@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ro",
-  "dateModified": "2026-08-17",
-  "content_digest": "7bf9a1c1c9d8e2e85c4f23e27e95d84ef7cc221c3fec20ef6ea999c451133f03",
-  "generation_digest": "977f7d6bc00a2e88bb25df2321e667f9647bf876b7c6aea1976e45e43a1328a2",
+  "dateModified": "2026-08-18",
+  "content_digest": "264b14864720b36adcc17313f205aa969b749d3a164446272f28772a835771b3",
+  "generation_digest": "d5fa67b24e8433a4f212a12ecc3662733a247983974a6cca6a58b9ab36d6fe87",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 40,
+  "record_count": 42,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ro.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ro.rss.xml",
@@ -51,7 +51,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6792850916",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
-      "app_store_url": "https://apps.apple.com/ro/app/id6792850916?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6792850916",
       "app_store_cta_label": "Descarcă Mask My File din App Store",
       "storefront_facts": {
         "price": "0",
@@ -96,7 +96,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6790467886",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
-      "app_store_url": "https://apps.apple.com/ro/app/id6790467886?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6790467886",
       "app_store_cta_label": "Descarcă WiFi Aid din App Store",
       "storefront_facts": {
         "price": "29.99",
@@ -141,7 +141,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6790800323",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
-      "app_store_url": "https://apps.apple.com/ro/app/id6790800323?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6790800323",
       "app_store_cta_label": "Descarcă Mochi DoneStamp: Ultima dată din App Store",
       "storefront_facts": {
         "price": "0",
@@ -151,6 +151,62 @@
       "guide_cta_label": "Citește ghidul complet",
       "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
       "source_persona_query": "best last time tracker app for household maintenance without a subscription",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ro:notesstudio100",
+      "locale": "ro",
+      "app_key": "notesstudio100",
+      "app_name": "100 Notes Studio: Pen & Paper",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "100 Notes Studio: Pen & Paper — Notițe de mână și PDF | iOS App",
+      "decision_context": "Adună scrisul de mână, textul tastat, adnotările PDF și instrumentele de studiu într-un spațiu de lucru clar. Editorul pune accent pe utilizarea privată; funcțiile esențiale sunt disponibile fără conexiune, iar o înregistrare audio rămâne atașată paginii pe care a fost creată. INSTRUMENTE PENTRU SCRIS NATURAL Alege dintre 29 de penițe și pensule: stilou, caligrafie, pensulă fude, liner tehnic, acuarelă, cărbune, creion mecanic, grafit 2B/4B/6B, creion colorat, marker și pastel. Instrumentele au texturi și răspunsuri diferite. Pentru instrumentele digitale compatibile sunt disponibile presiunea, înclinarea și respingerea palmei. Radierea pe pixel, pe traseu și de precizie, selecția cu lasou, rigla, opt instrumente pentru forme și indicatorul laser ajută la editare și prezentare. 100 DE STILURI SELECTATE Catalogul cuprinde 100 de stiluri cu coperți, structuri de hârtie, palete, separatoare, ștampile, abțibilduri, accente pentru bara de instrumente și aspecte de widget diferite. Găsești variante minimaliste, din in, cu grilă japoneză, academice, tehnice, muzicale, pentru ședințe, cercetare, călătorii și rețete. Stilurile pot fi previzualizate înainte de aplicare. PAGINI, DOCUMENTE ȘI STUDIU Pagini fixe sau pânză continuă, formate A4, A5, Letter, ecran ori personalizat, în orientare portret sau peisaj Text formatat cu aldin, cursiv, subliniere, fonturi, culori, liste, casete de bifat, tabele și linkuri Import și adnotare PDF cu evidențiere, subliniere, tăiere, note text sau de mână, rotire, decupare, inserare, extragere, îmbinare și export Înregistrarea audio se atașează paginii active și poate fi redată de acolo Recunoașterea scrisului de mână și căutarea în titluri, text, scris și atașamente sunt procesate pe dispozitiv Mod de studiu cu fișe legate, exerciții cloze și programare FSRS Abțibilduri, bandă washi și cuprins numerotat automat Foldere imbricate, etichete, elemente fixate, favorite, arhivă, coș recuperabil și istoric de versiuni Straturi de cerneală cu opacitate, vizibilitate și blocare, plus un spațiu de referință pentru PDF-uri sau imagini Widgeturi și capturare rapidă pentru acțiunile frecvente CONFIDENȚIALITATE Nu este necesar un cont. Nu sunt incluse reclame, instrumente de urmărire sau analiză de la terți. Scrierea și căutarea de bază sunt procesate pe dispozitiv. Aplicația ori un caiet ales poate fi protejat prin blocarea dispozitivului. UTILIZARE GRATUITĂ ȘI DEBLOCARE OPȚIONALĂ Versiunea gratuită include editorul, 1 caiet activ cu pagini nelimitate și 2 dintre cele 100 de stiluri. Deblocarea opțională adaugă caiete suplimentare, stilurile rămase din catalog, export PDF vectorial, istoric de versiuni restaurabil și copie de siguranță criptată. Politica de confidențialitate https://alice51849.github.io/100notes-support/privacy.html Condiții de utilizare https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+      "category": "productivity",
+      "category_label": "Productivitate",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Început gratuit · deblocare pe viață",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Fără cont",
+        "Privat / pe dispozitiv"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Productivitate",
+        "Început gratuit · deblocare pe viață",
+        "Offline",
+        "Fără cont",
+        "Privat / pe dispozitiv",
+        "App Store · Gratuit"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/notesstudio100.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/ro/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ro/notesstudio100.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fnotesstudio100%2Fdecision%2Fl%2Fro%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
+      "app_store_id": "6798813048",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
+      "app_store_url": "https://apps.apple.com/ro/app/id6798813048",
+      "app_store_cta_label": "Descarcă 100 Notes Studio: Pen & Paper din App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RON",
+        "formatted_price": "Gratuit"
+      },
+      "guide_cta_label": "Citește ghidul complet",
+      "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
+      "source_persona_query": "best offline handwriting notes app for ipad with pdf markup no subscription",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -191,7 +247,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/ro/app/id6791658210?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6791658210",
       "app_store_cta_label": "Descarcă AI Brief din App Store",
       "storefront_facts": {
         "price": "0",
@@ -236,7 +292,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6784974530",
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
-      "app_store_url": "https://apps.apple.com/ro/app/id6784974530?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6784974530",
       "app_store_cta_label": "Obține Aim990 din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -281,7 +337,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6792483140",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
-      "app_store_url": "https://apps.apple.com/ro/app/id6792483140?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6792483140",
       "app_store_cta_label": "Descarcă Aim990 Plus din App Store",
       "storefront_facts": {
         "price": "29.99",
@@ -331,7 +387,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/ro/app/id6794178671?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6794178671",
       "app_store_cta_label": "Descarcă CalDaily: calculator și teme din App Store",
       "storefront_facts": {
         "price": "0",
@@ -376,7 +432,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6781337213",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
-      "app_store_url": "https://apps.apple.com/ro/app/id6781337213?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6781337213",
       "app_store_cta_label": "Obține CV Desk din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -426,7 +482,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6782251621",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
-      "app_store_url": "https://apps.apple.com/ro/app/id6782251621?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6782251621",
       "app_store_cta_label": "Obține Cyca din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -476,7 +532,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6790418321",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
-      "app_store_url": "https://apps.apple.com/ro/app/id6790418321?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6790418321",
       "app_store_cta_label": "Obține DailyMate din App Store →",
       "storefront_facts": {
         "price": "69.99",
@@ -521,7 +577,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6794725568",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
-      "app_store_url": "https://apps.apple.com/ro/app/id6794725568?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6794725568",
       "app_store_cta_label": "Descarcă DailyMate Lite: Vorbește azi din App Store",
       "storefront_facts": {
         "price": "0",
@@ -574,7 +630,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6755782939",
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
-      "app_store_url": "https://apps.apple.com/ro/app/id6755782939?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6755782939",
       "app_store_cta_label": "Obține G+Money din App Store →",
       "storefront_facts": {
         "price": "29.99",
@@ -641,7 +697,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6793436548",
       "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
-      "app_store_url": "https://apps.apple.com/ro/app/id6793436548?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6793436548",
       "app_store_cta_label": "Descarcă G+Money Lite din App Store",
       "storefront_facts": {
         "price": "0",
@@ -705,7 +761,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/ro/app/id6794039979?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6794039979",
       "app_store_cta_label": "Descarcă HoursTag Lite din App Store",
       "storefront_facts": {
         "price": "0",
@@ -758,7 +814,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/ro/app/id6754218117?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6754218117",
       "app_store_cta_label": "Descarcă HoursTag: Ore pentru cumpărat din App Store",
       "storefront_facts": {
         "price": "29.99",
@@ -811,7 +867,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6780107485",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
-      "app_store_url": "https://apps.apple.com/ro/app/id6780107485?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6780107485",
       "app_store_cta_label": "Descarcă LockHour Pro din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -861,7 +917,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6773017109",
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
-      "app_store_url": "https://apps.apple.com/ro/app/id6773017109?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6773017109",
       "app_store_cta_label": "Descarcă Lumi Bopomofo din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -911,7 +967,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6775773117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
-      "app_store_url": "https://apps.apple.com/ro/app/id6775773117?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6775773117",
       "app_store_cta_label": "Descarcă Lumi Bopomofo Pro din App Store →",
       "storefront_facts": {
         "price": "49.99",
@@ -961,7 +1017,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6778748533",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
-      "app_store_url": "https://apps.apple.com/ro/app/id6778748533?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6778748533",
       "app_store_cta_label": "Descarcă Lumi Letters din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1011,7 +1067,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6778491147",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
-      "app_store_url": "https://apps.apple.com/ro/app/id6778491147?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6778491147",
       "app_store_cta_label": "Descarcă Lumi Letters Pro din App Store →",
       "storefront_facts": {
         "price": "49.99",
@@ -1061,7 +1117,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6778269699",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
-      "app_store_url": "https://apps.apple.com/ro/app/id6778269699?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6778269699",
       "app_store_cta_label": "Descarcă Lumi Math Planet din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1111,7 +1167,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6776958488",
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
-      "app_store_url": "https://apps.apple.com/ro/app/id6776958488?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6776958488",
       "app_store_cta_label": "Descarcă Lumi Math Pro din App Store →",
       "storefront_facts": {
         "price": "49.99",
@@ -1161,7 +1217,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6779750237",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
-      "app_store_url": "https://apps.apple.com/ro/app/id6779750237?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6779750237",
       "app_store_cta_label": "Obține Lumi Mission Planet din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1211,7 +1267,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6779745474",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
-      "app_store_url": "https://apps.apple.com/ro/app/id6779745474?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6779745474",
       "app_store_cta_label": "Descarcă Lumi Mission Planet Pro din App Store →",
       "storefront_facts": {
         "price": "29.99",
@@ -1261,7 +1317,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6787193643",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "app_store_url": "https://apps.apple.com/ro/app/id6787193643?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6787193643",
       "app_store_cta_label": "Descarcă Lumi Trip Planet din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1314,7 +1370,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6779552704",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
-      "app_store_url": "https://apps.apple.com/ro/app/id6779552704?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6779552704",
       "app_store_cta_label": "Descarcă Lumi Weather din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1364,7 +1420,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6785004775",
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
-      "app_store_url": "https://apps.apple.com/ro/app/id6785004775?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6785004775",
       "app_store_cta_label": "Descarcă Mochi din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1409,7 +1465,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6798814385",
       "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
-      "app_store_url": "https://apps.apple.com/ro/app/id6798814385?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6798814385",
       "app_store_cta_label": "Descarcă OnePage PPT: slide-uri AI din App Store",
       "storefront_facts": {
         "price": "0",
@@ -1454,7 +1510,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6781808054",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
-      "app_store_url": "https://apps.apple.com/ro/app/id6781808054?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6781808054",
       "app_store_cta_label": "Descarcă PhotoCream din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1504,7 +1560,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6780223070",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
-      "app_store_url": "https://apps.apple.com/ro/app/id6780223070?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6780223070",
       "app_store_cta_label": "Descarcă PicClear din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1554,7 +1610,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6779977651",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
-      "app_store_url": "https://apps.apple.com/ro/app/id6779977651?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6779977651",
       "app_store_cta_label": "Descarcă ScanTo Pro din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1607,7 +1663,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6788236641",
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
-      "app_store_url": "https://apps.apple.com/ro/app/id6788236641?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6788236641",
       "app_store_cta_label": "Descarcă Sereno din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1657,7 +1713,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6780575828",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
-      "app_store_url": "https://apps.apple.com/ro/app/id6780575828?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6780575828",
       "app_store_cta_label": "Descarcă Snapport din App Store →",
       "storefront_facts": {
         "price": "29.99",
@@ -1707,7 +1763,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6792856304",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
-      "app_store_url": "https://apps.apple.com/ro/app/id6792856304?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6792856304",
       "app_store_cta_label": "Descarcă Snapport Lite din App Store",
       "storefront_facts": {
         "price": "0",
@@ -1757,7 +1813,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6782139553",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
-      "app_store_url": "https://apps.apple.com/ro/app/id6782139553?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6782139553",
       "app_store_cta_label": "Descarcă Sono Note din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1802,7 +1858,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6791299610",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
-      "app_store_url": "https://apps.apple.com/ro/app/id6791299610?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6791299610",
       "app_store_cta_label": "Obține TripBee Lite din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1858,7 +1914,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6787754435",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
-      "app_store_url": "https://apps.apple.com/ro/app/id6787754435?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6787754435",
       "app_store_cta_label": "Descarcă TripBee Pro: Planificator de călătorii din App Store →",
       "storefront_facts": {
         "price": "29.99",
@@ -1908,7 +1964,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6782275018",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
-      "app_store_url": "https://apps.apple.com/ro/app/id6782275018?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6782275018",
       "app_store_cta_label": "Descarcă Unblurry din App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1919,6 +1975,56 @@
       "publisher_disclosure": "Ghid realizat de editor de către Lumi Studio, dezvoltatorul aplicației. Numele aplicațiilor sunt mărci comerciale ale proprietarilor lor și sunt folosite doar pentru identificare. Pentru documente, sănătate, școală și decizii legate de productivitate, verificați cerințele oficiale acolo unde este cazul.",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ro:wifiaidlite",
+      "locale": "ro",
+      "app_key": "wifiaidlite",
+      "app_name": "WiFi Aid Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "WiFi Aid Lite — Diagnoză de rețea cu dovezi | iOS App",
+      "decision_context": "Găsește problema reală. Fiecare instrument include o utilizare completă gratuită. Deblocare pe viață opțională, printr-o singură plată, pentru utilizare nelimitată—fără abonament, reclame sau urmărire. • Rulează un Test — Verificări Wi-Fi și DNS cu o atingere • Test Profund — Mai multe dovezi și mostre de stabilitate • Test Website — Un site sau întregul internet • Dovezi — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Conexiune instabilă — Variație • Istoric Teste — Înregistrări private doar pe acest dispozitiv • Nod conectat — Locația precisă identifică Wi-Fi-ul și nodul actual Fără cont, reclame sau urmărire. Înregistrări private doar pe acest dispozitiv. Fiecare instrument include o utilizare completă gratuită. Deblocare pe viață opțională, printr-o singură plată, pentru utilizare nelimitată—fără abonament, reclame sau urmărire.",
+      "category": "utility",
+      "category_label": "Mai mult",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Început gratuit · deblocare pe viață",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Fără cont"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Mai mult",
+        "Început gratuit · deblocare pe viață",
+        "Fără cont",
+        "App Store · Gratuit"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/wifiaidlite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/ro/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ro/wifiaidlite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fwifiaidlite%2Fdecision%2Fl%2Fro%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
+      "app_store_id": "6793414462",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
+      "app_store_url": "https://apps.apple.com/ro/app/id6793414462",
+      "app_store_cta_label": "Descarcă WiFi Aid Lite din App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RON",
+        "formatted_price": "Gratuit"
+      },
+      "guide_cta_label": "Citește ghidul complet",
+      "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
+      "source_persona_query": "how to tell if the wifi or the website is down free app",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
@@ -1958,7 +2064,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/ro/app/id6797601720?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6797601720",
       "app_store_cta_label": "Descarcă Wordmate Lite: cuvinte zilnic din App Store",
       "storefront_facts": {
         "price": "0",
@@ -2022,7 +2128,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6789917808",
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
-      "app_store_url": "https://apps.apple.com/ro/app/id6789917808?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6789917808",
       "app_store_cta_label": "Descarcă Wordmate: Learn 44 Languages din App Store →",
       "storefront_facts": {
         "price": "49.99",

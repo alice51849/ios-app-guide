@@ -3,7 +3,7 @@
 > معلومات منظمة عن كل تطبيق iOS — الميزات والسعر والأسئلة الشائعة.
 
 locale: ar-SA
-apps: 40
+apps: 42
 - دليل التطبيقات: https://alice51849.github.io/ios-app-guide/ar-SA/tools/private-pay-once-iphone-app-finder.html
 - دليل التطبيقات · PWA: https://alice51849.github.io/ios-app-guide/ar-SA/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld
@@ -27,6 +27,10 @@ apps: 40
 - دليل التطبيقات · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - دليل التطبيقات · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/ar-SA/notesstudio100.html) — دفتر ملاحظات بخط اليد وPDF
+  - استوديو خاص يعمل دون اتصال للكتابة بالقلم الرقمي على الجهاز اللوحي. علّق على PDF، واحفظ التسجيل في صفحته، وراجع بالبطاقات. شراء واحد يضيف دفاتر وأنماطًا متقدمة.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6798813048
 - [AI Brief](https://alice51849.github.io/ios-app-guide/ar-SA/aibriefpack.html) — حوّل الملفات إلى سياق واضح
   - اجمع لقطات الشاشة والمستندات والملاحظات معًا. احتفظ بالحقائق. راجع التفاصيل الخاصة. انسخ ملخصًا واحدًا واضحًا.
   - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
@@ -179,6 +183,10 @@ apps: 40
   - اعثر على السبب الأرجح عبر فحوص مستقلة للمسارات وDNS وTCP وTLS والتوقيت والثبات. دفعة مقدمة واحدة، بلا اشتراك أو إعلانات أو تتبع.
   - السعر: تنزيل مدفوع بسعر واحد مقدمًا ومن دون اشتراك.
   - App Store: https://apps.apple.com/sa/app/id6790467886
+- [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/ar-SA/wifiaidlite.html) — تشخيص الشبكة بالأدلة
+  - اكتشف المشكلة الحقيقية. كل أداة مجانية لمرة واحدة. شراء لمرة واحدة (مدى الحياة) لفتح الاستخدام غير المحدود—بدون اشتراكات، إعلانات، أو تتبع.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6793414462
 - [Wordmate Lite: تعلّم المفردات](https://alice51849.github.io/ios-app-guide/ar-SA/wordmatelite.html) — خمس كلمات في دقيقة كل يوم
   - دقيقة واحدة، خمس كلمات، وخطوة واضحة على المسار. اختر لغتك ومجالك، واستمع إلى النطق، وشاهد سلسلتك تكبر يومًا بعد يوم. بلا حساب، وبلا إنترنت، وبلا تتبّع.
   - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.

@@ -2,7 +2,7 @@
 title: "iPhone ଉପରେ ଯାତ୍ରା ସୃଜନକାରୀମାନେ ପାଇଁ ଏକମାତ୍ର ଦେୟ ଦେଇ ଚଳଚ୍ଚିତ୍ର ଫଟୋ ସମ୍ପାଦକ ସର୍ବଶ୍ରେଷ୍ଠ"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/or-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍
 - App Store · ମାଗଣା
 
-[PhotoCream ଏପ୍ ଷ୍ଟୋରରେ ପାନ୍ତୁ →](https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=iag_data_or_in&mt=8)
+[PhotoCream ଏପ୍ ଷ୍ଟୋରରେ ପାନ୍ତୁ →](https://apps.apple.com/in/app/id6781808054)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

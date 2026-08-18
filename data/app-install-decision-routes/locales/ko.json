@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ko",
-  "dateModified": "2026-08-17",
-  "content_digest": "7bf9a1c1c9d8e2e85c4f23e27e95d84ef7cc221c3fec20ef6ea999c451133f03",
-  "generation_digest": "977f7d6bc00a2e88bb25df2321e667f9647bf876b7c6aea1976e45e43a1328a2",
+  "dateModified": "2026-08-18",
+  "content_digest": "264b14864720b36adcc17313f205aa969b749d3a164446272f28772a835771b3",
+  "generation_digest": "d5fa67b24e8433a4f212a12ecc3662733a247983974a6cca6a58b9ab36d6fe87",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 40,
+  "record_count": 42,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ko.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ko.rss.xml",
@@ -29,7 +29,7 @@
       "category": "photo-utility",
       "category_label": "사진 & 유틸리티",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -41,7 +41,7 @@
       "device_labels": [],
       "badge_labels": [
         "사진 & 유틸리티",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "프라이빗 / 기기 내",
         "App Store · 무료"
       ],
@@ -51,7 +51,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6792850916",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
-      "app_store_url": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6792850916",
       "app_store_cta_label": "Get Mask My File on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -96,7 +96,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6790467886",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
-      "app_store_url": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6790467886",
       "app_store_cta_label": "Get WiFi Aid on the App Store →",
       "storefront_facts": {
         "price": "9900",
@@ -124,7 +124,7 @@
       "category": "lifestyle",
       "category_label": "라이프스타일",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -132,7 +132,7 @@
       "device_labels": [],
       "badge_labels": [
         "라이프스타일",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
@@ -141,7 +141,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6790800323",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
-      "app_store_url": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6790800323",
       "app_store_cta_label": "Get Mochi DoneStamp on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -152,6 +152,62 @@
       "publisher_disclosure": "앱 개발자인 Lumi Studio에서 직접 작성한 가이드입니다. 앱 이름은 해당 소유자의 상표이며 식별 목적으로만 사용됩니다. 문서, 건강, 학교 및 생산성과 관련된 결정을 내릴 때는 필요에 따라 관련 기관의 공식 요건을 확인하시기 바랍니다.",
       "source_persona_query": "best last time tracker app for household maintenance without a subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ko:notesstudio100",
+      "locale": "ko",
+      "app_key": "notesstudio100",
+      "app_name": "100 Notes Studio: Pen & Paper",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "100 Notes Studio: Pen & Paper — 필기 노트·PDF 주석 | iOS App",
+      "decision_context": "100 Notes Studio는 손글씨, 타이핑, PDF 학습과 자료 정리를 한 흐름으로 묶은 개인용 작업 공간입니다. 주요 편집 기능은 네트워크 연결 없이도 사용할 수 있습니다. 만년필, 캘리그래피, 붓펜, 제도펜, 수채 브러시, 목탄, 볼펜, 2B/4B/6B 연필을 포함한 29종 펜과 브러시를 제공합니다. 필압과 기울기에 반응하는 선, 손바닥 오입력 방지, 올가미, 세 가지 지우개, 자, 도형 도구와 레이저 포인터로 세밀하게 작업할 수 있습니다. 서로 다른 100종 스튜디오 스타일은 표지, 종이 구조, 색 조합, 구분선, 도장 또는 스티커, 도구 막대 강조색과 위젯 모양을 갖습니다. 미니멀, 리넨, 모눈, 학술, 제도, 음악, 회의, 연구, 여행, 요리 같은 구성을 살펴보고 잠긴 스타일도 실제 미리보기로 확인할 수 있습니다. 고정 페이지와 확장형 캔버스, A4/A5/레터/화면/사용자 지정 크기를 지원합니다. 서식 있는 텍스트, PDF 강조, 밑줄, 회전, 자르기, 페이지 삽입, 추출과 병합, 기기 내 문자 인식과 검색, 암기 카드와 FSRS 간격 반복을 사용할 수 있습니다. 녹음은 시작한 페이지에 첨부되어 그 페이지 안에서 관리됩니다. 잉크 레이어, 스티커, 마스킹 테이프, 하위 폴더, 태그, 보관함, 복구 가능한 휴지통과 버전 기록으로 자료를 정리할 수 있습니다. 계정 생성은 필요하지 않습니다. 광고나 서드파티 분석 도구를 넣지 않았으며 손글씨 인식, 문자 인식과 검색은 기기에서 처리됩니다. 내보내기와 공유는 사용자가 직접 시작합니다. 무료 사용 범위에서는 활성 노트 1권에 무제한 페이지를 만들고 100종 중 2종 스타일을 사용할 수 있으며, 편집기와 PDF 주석, 페이지에 첨부되는 녹음, 손글씨 검색, 학습 모드를 이용할 수 있습니다. 한 번 잠금 해제하면 추가 노트, 100종 스타일 카탈로그, 벡터 PDF 내보내기, 복원 가능한 버전 기록과 암호화 백업이 제공됩니다. 개인정보 처리방침: https://alice51849.github.io/100notes-support/privacy.html 이용 약관: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+      "category": "productivity",
+      "category_label": "생산성",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "오프라인",
+        "계정 없음",
+        "프라이빗 / 기기 내"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "생산성",
+        "무료로 시작 · 한 번 구매 잠금 해제",
+        "오프라인",
+        "계정 없음",
+        "프라이빗 / 기기 내",
+        "App Store · 무료"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/notesstudio100.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/ko/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ko/notesstudio100.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fnotesstudio100%2Fdecision%2Fl%2Fko%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
+      "app_store_id": "6798813048",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
+      "app_store_url": "https://apps.apple.com/kr/app/id6798813048",
+      "app_store_cta_label": "App Store에서 100 Notes Studio: Pen & Paper 받기",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료"
+      },
+      "guide_cta_label": "전체 안내서 읽기",
+      "publisher_disclosure": "이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.",
+      "source_persona_query": "best offline handwriting notes app for ipad with pdf markup no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
@@ -169,7 +225,7 @@
       "category": "productivity",
       "category_label": "생산성",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -181,7 +237,7 @@
       "device_labels": [],
       "badge_labels": [
         "생산성",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "프라이빗 / 기기 내",
         "App Store · 무료"
       ],
@@ -191,7 +247,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6791658210",
       "app_store_cta_label": "Get AI Brief on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -219,7 +275,7 @@
       "category": "education",
       "category_label": "교육",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -227,7 +283,7 @@
       "device_labels": [],
       "badge_labels": [
         "교육",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -236,7 +292,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6784974530",
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
-      "app_store_url": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6784974530",
       "app_store_cta_label": "앱 스토어에서 Aim990 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -281,7 +337,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6792483140",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
-      "app_store_url": "https://apps.apple.com/kr/app/id6792483140?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6792483140",
       "app_store_cta_label": "Get Aim990 Plus on the App Store →",
       "storefront_facts": {
         "price": "9900",
@@ -309,7 +365,7 @@
       "category": "utility",
       "category_label": "더 보기",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -321,7 +377,7 @@
       ],
       "badge_labels": [
         "더 보기",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "위젯",
         "App Store · 무료"
       ],
@@ -331,7 +387,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6794178671",
       "app_store_cta_label": "App Store에서 CalDaily 계산기 및 테마 받기",
       "storefront_facts": {
         "price": "0",
@@ -359,7 +415,7 @@
       "category": "productivity",
       "category_label": "생산성",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -367,7 +423,7 @@
       "device_labels": [],
       "badge_labels": [
         "생산성",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -376,7 +432,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6781337213",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
-      "app_store_url": "https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6781337213",
       "app_store_cta_label": "앱 스토어에서 CV Desk 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -404,7 +460,7 @@
       "category": "health",
       "category_label": "건강",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -416,7 +472,7 @@
       "device_labels": [],
       "badge_labels": [
         "건강",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "프라이빗 / 기기 내",
         "App Store · 무료"
       ],
@@ -426,7 +482,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6782251621",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
-      "app_store_url": "https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6782251621",
       "app_store_cta_label": "앱 스토어에서 Cyca 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -476,7 +532,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6790418321",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
-      "app_store_url": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6790418321",
       "app_store_cta_label": "App Store에서 DailyMate 받기 →",
       "storefront_facts": {
         "price": "19000",
@@ -504,7 +560,7 @@
       "category": "kids",
       "category_label": "어린이 & 학습",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -512,7 +568,7 @@
       "device_labels": [],
       "badge_labels": [
         "어린이 & 학습",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/dailymatelite.html",
@@ -521,7 +577,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6794725568",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
-      "app_store_url": "https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6794725568",
       "app_store_cta_label": "App Store에서 DailyMate Lite: 바로 쓰는 한마디 받기",
       "storefront_facts": {
         "price": "0",
@@ -574,7 +630,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6755782939",
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
-      "app_store_url": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6755782939",
       "app_store_cta_label": "앱 스토어에서 G+Money 받기 →",
       "storefront_facts": {
         "price": "7700",
@@ -602,7 +658,7 @@
       "category": "finance",
       "category_label": "금융 & 여행",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -626,7 +682,7 @@
       ],
       "badge_labels": [
         "금융 & 여행",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "오프라인",
         "계정 없음",
         "추적 없음",
@@ -641,7 +697,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6793436548",
       "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
-      "app_store_url": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6793436548",
       "app_store_cta_label": "Get G+Money Lite on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -694,7 +750,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6754218117",
       "app_store_cta_label": "App Store에서 HoursTag 받기 →",
       "storefront_facts": {
         "price": "7700",
@@ -722,7 +778,7 @@
       "category": "finance",
       "category_label": "금융 & 여행",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
@@ -744,7 +800,7 @@
       ],
       "badge_labels": [
         "금융 & 여행",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "계정 없음",
         "추적 없음",
         "프라이빗 / 기기 내",
@@ -758,7 +814,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6794039979",
       "app_store_cta_label": "Get HoursTag Lite on the App Store →",
       "storefront_facts": {
         "price": "0",
@@ -786,7 +842,7 @@
       "category": "productivity",
       "category_label": "생산성",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -800,7 +856,7 @@
       "device_labels": [],
       "badge_labels": [
         "생산성",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "광고 없음",
         "프라이빗 / 기기 내",
         "App Store · 무료"
@@ -811,7 +867,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6780107485",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
-      "app_store_url": "https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6780107485",
       "app_store_cta_label": "App Store에서 LockHour Pro 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -839,7 +895,7 @@
       "category": "kids",
       "category_label": "어린이 & 학습",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -851,7 +907,7 @@
       "device_labels": [],
       "badge_labels": [
         "어린이 & 학습",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "광고 없음",
         "App Store · 무료"
       ],
@@ -861,7 +917,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6773017109",
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
-      "app_store_url": "https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6773017109",
       "app_store_cta_label": "App Store에서 Lumi Bopomofo 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -911,7 +967,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6775773117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
-      "app_store_url": "https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6775773117",
       "app_store_cta_label": "App Store에서 Lumi Bopomofo Pro 다운로드 →",
       "storefront_facts": {
         "price": "15000",
@@ -939,7 +995,7 @@
       "category": "kids",
       "category_label": "어린이 & 학습",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -951,7 +1007,7 @@
       "device_labels": [],
       "badge_labels": [
         "어린이 & 학습",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "광고 없음",
         "App Store · 무료"
       ],
@@ -961,7 +1017,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6778748533",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
-      "app_store_url": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6778748533",
       "app_store_cta_label": "App Store에서 Lumi Letters 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -1011,7 +1067,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6778491147",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
-      "app_store_url": "https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6778491147",
       "app_store_cta_label": "App Store에서 Lumi Letters Pro 받기 →",
       "storefront_facts": {
         "price": "15000",
@@ -1039,7 +1095,7 @@
       "category": "kids",
       "category_label": "어린이 & 학습",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1051,7 +1107,7 @@
       "device_labels": [],
       "badge_labels": [
         "어린이 & 학습",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "광고 없음",
         "App Store · 무료"
       ],
@@ -1061,7 +1117,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6778269699",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
-      "app_store_url": "https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6778269699",
       "app_store_cta_label": "App Store에서 Lumi Math Planet 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -1111,7 +1167,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6776958488",
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
-      "app_store_url": "https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6776958488",
       "app_store_cta_label": "App Store에서 Lumi Math Pro 다운로드 →",
       "storefront_facts": {
         "price": "15000",
@@ -1139,7 +1195,7 @@
       "category": "kids",
       "category_label": "어린이 & 학습",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1151,7 +1207,7 @@
       "device_labels": [],
       "badge_labels": [
         "어린이 & 학습",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "광고 없음",
         "App Store · 무료"
       ],
@@ -1161,7 +1217,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6779750237",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
-      "app_store_url": "https://apps.apple.com/kr/app/id6779750237?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6779750237",
       "app_store_cta_label": "App Store에서 Lumi Mission Planet 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -1211,7 +1267,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6779745474",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
-      "app_store_url": "https://apps.apple.com/kr/app/id6779745474?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6779745474",
       "app_store_cta_label": "App Store에서 Lumi Mission Planet Pro 받기 →",
       "storefront_facts": {
         "price": "9900",
@@ -1239,7 +1295,7 @@
       "category": "kids",
       "category_label": "어린이 & 학습",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1251,7 +1307,7 @@
       "device_labels": [],
       "badge_labels": [
         "어린이 & 학습",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "광고 없음",
         "App Store · 무료"
       ],
@@ -1261,7 +1317,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6787193643",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "app_store_url": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6787193643",
       "app_store_cta_label": "App Store에서 Lumi Trip Planet 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -1289,7 +1345,7 @@
       "category": "kids",
       "category_label": "어린이 & 학습",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -1303,7 +1359,7 @@
       "device_labels": [],
       "badge_labels": [
         "어린이 & 학습",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "광고 없음",
         "추적 없음",
         "App Store · 무료"
@@ -1314,7 +1370,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6779552704",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
-      "app_store_url": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6779552704",
       "app_store_cta_label": "App Store에서 Lumi Weather 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -1342,7 +1398,7 @@
       "category": "productivity",
       "category_label": "생산성",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1354,7 +1410,7 @@
       "device_labels": [],
       "badge_labels": [
         "생산성",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "광고 없음",
         "App Store · 무료"
       ],
@@ -1364,7 +1420,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6785004775",
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
-      "app_store_url": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6785004775",
       "app_store_cta_label": "App Store에서 Mochi 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -1392,7 +1448,7 @@
       "category": "productivity",
       "category_label": "생산성",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1400,7 +1456,7 @@
       "device_labels": [],
       "badge_labels": [
         "생산성",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/onepageppt.html",
@@ -1409,7 +1465,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6798814385",
       "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
-      "app_store_url": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6798814385",
       "app_store_cta_label": "App Store에서 OnePage PPT: AI 발표자료 받기",
       "storefront_facts": {
         "price": "0",
@@ -1437,7 +1493,7 @@
       "category": "photo-utility",
       "category_label": "사진 & 유틸리티",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1445,7 +1501,7 @@
       "device_labels": [],
       "badge_labels": [
         "사진 & 유틸리티",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -1454,7 +1510,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6781808054",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
-      "app_store_url": "https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6781808054",
       "app_store_cta_label": "App Store에서 PhotoCream 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -1482,7 +1538,7 @@
       "category": "photo-utility",
       "category_label": "사진 & 유틸리티",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1494,7 +1550,7 @@
       "device_labels": [],
       "badge_labels": [
         "사진 & 유틸리티",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "프라이빗 / 기기 내",
         "App Store · 무료"
       ],
@@ -1504,7 +1560,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6780223070",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
-      "app_store_url": "https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6780223070",
       "app_store_cta_label": "App Store에서 PicClear 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -1532,7 +1588,7 @@
       "category": "productivity",
       "category_label": "생산성",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1544,7 +1600,7 @@
       "device_labels": [],
       "badge_labels": [
         "생산성",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "프라이빗 / 기기 내",
         "App Store · 무료"
       ],
@@ -1554,7 +1610,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6779977651",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
-      "app_store_url": "https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6779977651",
       "app_store_cta_label": "App Store에서 ScanTo Pro 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -1582,7 +1638,7 @@
       "category": "sleep-sound",
       "category_label": "수면 & 집중",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -1596,7 +1652,7 @@
       "device_labels": [],
       "badge_labels": [
         "수면 & 집중",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "오프라인",
         "광고 없음",
         "App Store · 무료"
@@ -1607,7 +1663,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6788236641",
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
-      "app_store_url": "https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6788236641",
       "app_store_cta_label": "App Store에서 Sereno 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -1657,7 +1713,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6780575828",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
-      "app_store_url": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6780575828",
       "app_store_cta_label": "App Store에서 Snapport 받기 →",
       "storefront_facts": {
         "price": "9900",
@@ -1685,7 +1741,7 @@
       "category": "photo-utility",
       "category_label": "사진 & 유틸리티",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -1697,7 +1753,7 @@
       "device_labels": [],
       "badge_labels": [
         "사진 & 유틸리티",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "오프라인",
         "App Store · 무료"
       ],
@@ -1707,7 +1763,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6792856304",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
-      "app_store_url": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6792856304",
       "app_store_cta_label": "App Store에서 Snapport Lite 받기",
       "storefront_facts": {
         "price": "0",
@@ -1735,7 +1791,7 @@
       "category": "productivity",
       "category_label": "생산성",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1747,7 +1803,7 @@
       "device_labels": [],
       "badge_labels": [
         "생산성",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "프라이빗 / 기기 내",
         "App Store · 무료"
       ],
@@ -1757,7 +1813,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6782139553",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
-      "app_store_url": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6782139553",
       "app_store_cta_label": "App Store에서 Sono Note 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -1785,7 +1841,7 @@
       "category": "travel",
       "category_label": "여행",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1793,7 +1849,7 @@
       "device_labels": [],
       "badge_labels": [
         "여행",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -1802,7 +1858,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6791299610",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
-      "app_store_url": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6791299610",
       "app_store_cta_label": "앱 스토어에서 트립비 라이트 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -1858,7 +1914,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6787754435",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
-      "app_store_url": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6787754435",
       "app_store_cta_label": "App Store에서 TripBee Pro: 여행 플래너 받기 →",
       "storefront_facts": {
         "price": "9900",
@@ -1886,7 +1942,7 @@
       "category": "photo-utility",
       "category_label": "사진 & 유틸리티",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1898,7 +1954,7 @@
       "device_labels": [],
       "badge_labels": [
         "사진 & 유틸리티",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "프라이빗 / 기기 내",
         "App Store · 무료"
       ],
@@ -1908,7 +1964,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6782275018",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
-      "app_store_url": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6782275018",
       "app_store_cta_label": "App Store에서 Unblurry 받기 →",
       "storefront_facts": {
         "price": "0",
@@ -1919,6 +1975,56 @@
       "publisher_disclosure": "루미 스튜디오에서 제공하는 개발자 작성 가이드입니다. 앱 이름은 각 소유자의 상표이며 식별 목적으로만 사용됩니다. 문서, 건강, 학교, 생산성 관련 결정 시 공식 요구 사항을 반드시 확인하세요.",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ko:wifiaidlite",
+      "locale": "ko",
+      "app_key": "wifiaidlite",
+      "app_name": "WiFi Aid Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "WiFi Aid Lite — 네트워크 진단과 원인 분석 | iOS App",
+      "decision_context": "\"또 인터넷이 느려졌다\" — 원인은 공유기일까요, DNS일까요, 통신사일까요, 아니면 사이트 자체일까요? WiFi Aid Lite는 여러 독립 경로로 DNS, TCP, TLS, 응답 시간, 안정성을 동시에 검사하고 증거를 교차 비교해 가장 가능성 높은 원인을 알려 줍니다. 감으로 재부팅을 반복할 필요가 없습니다. • 검사 실행: 한 번의 탭으로 Wi-Fi, DNS, 인터넷 연결을 한꺼번에 진단하고 몇 초 만에 결과와 결론을 확인하세요. • 정밀 검사: 더 많은 증거와 안정성 샘플을 수집합니다. 됐다 안 됐다 하는 간헐적 문제를 가려내는 데 좋습니다. • 웹사이트 검사: 특정 사이트만 문제인지, 인터넷 전체에 장애가 있는지 바로 판별합니다. • 증거: DNS, TCP, TLS, TTFB, HTTP, 직접 IP, IPv4, IPv6 결과를 항목별로 보여 주므로 모든 결론에 근거가 있습니다. • 안정성 분석: 연속 샘플링으로 지연 시간의 변동(지터)을 관찰해 \"연결은 됐는데 자꾸 끊기는\" 불안정한 상태를 찾아냅니다. • 검사 기록: 지난 결과를 자동 저장해 네트워크 상태의 변화를 비교할 수 있습니다. 기록은 이 기기에만 저장됩니다. • 연결된 노드: 정확한 위치를 사용해 현재 연결된 Wi-Fi와 노드를 식별합니다. 위치 정보는 이 용도로만, 기기 안에서만 사용됩니다. 먼저 무료로 써 보세요: 각 도구는 한 번씩 제한 없이 완전하게 무료로 사용할 수 있습니다. 마음에 들면 1회 결제로 평생 잠금을 해제해 모든 도구를 무제한으로 사용하세요. 구독은 없습니다. 계정이 필요 없고 광고, 분석 도구, 추적이 전혀 없습니다. 모든 기록은 이 기기에만 저장되며 클라우드로 전송되지 않습니다.",
+      "category": "utility",
+      "category_label": "더 보기",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "계정 없음"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "더 보기",
+        "무료로 시작 · 한 번 구매 잠금 해제",
+        "계정 없음",
+        "App Store · 무료"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/wifiaidlite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/ko/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ko/wifiaidlite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fwifiaidlite%2Fdecision%2Fl%2Fko%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
+      "app_store_id": "6793414462",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
+      "app_store_url": "https://apps.apple.com/kr/app/id6793414462",
+      "app_store_cta_label": "App Store에서 WiFi Aid Lite 받기",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료"
+      },
+      "guide_cta_label": "전체 안내서 읽기",
+      "publisher_disclosure": "이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.",
+      "source_persona_query": "how to tell if the wifi or the website is down free app",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
@@ -1936,7 +2042,7 @@
       "category": "kids",
       "category_label": "어린이 & 학습",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -1948,7 +2054,7 @@
       "device_labels": [],
       "badge_labels": [
         "어린이 & 학습",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "오프라인",
         "App Store · 무료"
       ],
@@ -1958,7 +2064,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6797601720",
       "app_store_cta_label": "App Store에서 Wordmate Lite 하루 5단어 받기",
       "storefront_facts": {
         "price": "0",
@@ -2022,7 +2128,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6789917808",
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
-      "app_store_url": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6789917808",
       "app_store_cta_label": "App Store에서 Wordmate: 44개 언어 학습 받기 →",
       "storefront_facts": {
         "price": "15000",

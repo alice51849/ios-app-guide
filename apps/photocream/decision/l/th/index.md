@@ -2,7 +2,7 @@
 title: "แอปแต่งภาพฟิล์มแบบจ่ายครั้งเดียวที่ดีที่สุดสำหรับนักสร้างคอนเทนต์ท่องเที่ยวบน iPhone"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/th/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - เริ่มใช้ฟรี · ปลดล็อกถาวร
 - App Store · ฟรี
 
-[ดาวน์โหลด PhotoCream ใน App Store →](https://apps.apple.com/th/app/id6781808054?pt=118326163&ct=iag_data_th&mt=8)
+[ดาวน์โหลด PhotoCream ใน App Store →](https://apps.apple.com/th/app/id6781808054)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

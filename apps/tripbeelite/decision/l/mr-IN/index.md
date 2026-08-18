@@ -2,7 +2,7 @@
 title: "आगामी एका प्रवासासाठी सर्वोत्तम सोपा प्रवास नियोजक अॅप iPhone साठी"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/mr-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक
 - App Store · मोफत
 
-[App Store वरून TripBee Lite मिळवा →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=iag_data_mr_in&mt=8)
+[App Store वरून TripBee Lite मिळवा →](https://apps.apple.com/in/app/id6791299610)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

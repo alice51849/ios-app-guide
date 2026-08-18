@@ -74,13 +74,13 @@
       "uniqueItems": true
     },
     "app_count": {
-      "const": 40
+      "const": 42
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 2000
+      "const": 2100
     },
     "locales": {
       "type": "array",
@@ -223,8 +223,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 2000,
-      "maxItems": 2000,
+      "minItems": 2100,
+      "maxItems": 2100,
       "items": {
         "$ref": "#/$defs/record"
       }
@@ -379,6 +379,7 @@
             "maskmyfile",
             "mochi",
             "mochidonestamp",
+            "notesstudio100",
             "onepageppt",
             "photocream",
             "picclear",
@@ -392,6 +393,7 @@
             "tripplanet",
             "unblurry",
             "wifiaid",
+            "wifiaidlite",
             "wordmate",
             "wordmatelite"
           ]

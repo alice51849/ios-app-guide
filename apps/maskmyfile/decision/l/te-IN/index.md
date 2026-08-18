@@ -2,7 +2,7 @@
 title: "Mask My File — పంచుకునే ముందు వివరాలు దాచండి | iOS App"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/te-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - గోప్యంగా / పరికరంలో
 - App Store · ఉచితం
 
-[App Store నుంచి Mask My File పొందండి](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_data_te_in&mt=8)
+[App Store నుంచి Mask My File పొందండి](https://apps.apple.com/in/app/id6792850916)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/maskmyfile.html)
 

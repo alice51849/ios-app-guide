@@ -2,7 +2,7 @@
 title: "ಹೋಮ್‌ಸ್ಕೂಲ್ ಕಿಂಡರ್ಗಾರ್ಟನ್ ತಯಾರಿಗಾಗಿ ಪೂರ್ಣ ಫೋನಿಕ್ಸ್ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/kn-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
 - App Store · ₹ 999
 
-[Lumi Letters Pro ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=iag_data_kn_in&mt=8)
+[Lumi Letters Pro ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6778491147)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

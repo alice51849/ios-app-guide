@@ -2,7 +2,7 @@
 title: "millor aplicació per controlar el cicle sense compte per a iPhone"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/ca/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ En una categoria on la sensibilitat de dades és clau, el control adequat manté
 - Privat / en el dispositiu
 - App Store · Gratis
 
-[Descarrega Cyca a l'App Store →](https://apps.apple.com/es/app/id6782251621?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega Cyca a l'App Store →](https://apps.apple.com/es/app/id6782251621)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/answers/best-period-tracker-app-no-account-required-iphone.html)
 

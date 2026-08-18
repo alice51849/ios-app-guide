@@ -2,7 +2,7 @@
 title: "G+Money Lite — Stroški, proračun & valute | iOS App"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/sl-SI/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -23,7 +23,7 @@ G+Money Lite — Pametna potovalna valuta in sledilnik stroškov Potovalni denar
 - Apple Watch
 - App Store · Brezplačno
 
-[Prenesite G+Money Lite iz trgovine App Store](https://apps.apple.com/si/app/id6793436548?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite G+Money Lite iz trgovine App Store](https://apps.apple.com/si/app/id6793436548)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/gmoneylite.html)
 

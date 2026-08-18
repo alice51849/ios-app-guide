@@ -2,7 +2,7 @@
 title: "bedste app til sengetidsrutine for børnehavebørn uden reklamer"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/da/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ For et børnehavebarn fungerer en sengetidsrutine bedst, når den er kort, visue
 - Ingen reklamer
 - App Store · Gratis
 
-[Hent Lumi Mission Planet på App Store →](https://apps.apple.com/dk/app/id6779750237?pt=118326163&ct=iag_data_da&mt=8)
+[Hent Lumi Mission Planet på App Store →](https://apps.apple.com/dk/app/id6779750237)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

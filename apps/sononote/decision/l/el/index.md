@@ -2,7 +2,7 @@
 title: "καλύτερη εφαρμογή φωνητικών σημειώσεων που συνοψίζει συναντήσεις σε iPhone"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/el/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Ιδιωτικό / στη συσκευή
 - App Store · Δωρεάν
 
-[Κατεβάστε το Sono Note από το App Store →](https://apps.apple.com/gr/app/id6782139553?pt=118326163&ct=iag_data_el&mt=8)
+[Κατεβάστε το Sono Note από το App Store →](https://apps.apple.com/gr/app/id6782139553)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

@@ -2,7 +2,7 @@
 title: "aplikasi bopomofo terbaik untuk kanak-kanak belajar zhuyin di iPhone"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/ms/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Untuk kanak-kanak yang mula belajar Zhuyin, aplikasi harus merangkumi semua 37 s
 - Tiada iklan
 - App Store · Percuma
 
-[Dapatkan Lumi Bopomofo di App Store →](https://apps.apple.com/my/app/id6773017109?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan Lumi Bopomofo di App Store →](https://apps.apple.com/my/app/id6773017109)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

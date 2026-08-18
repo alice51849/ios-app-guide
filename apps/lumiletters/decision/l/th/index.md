@@ -2,7 +2,7 @@
 title: "แอปเกมการศึกษาที่ดีที่สุดสำหรับเด็ก ไม่มีโฆษณา บน iPhone"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/th/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ไม่มีโฆษณา
 - App Store · ฟรี
 
-[ดาวน์โหลด Lumi Letters ใน App Store →](https://apps.apple.com/th/app/id6778748533?pt=118326163&ct=iag_data_th&mt=8)
+[ดาวน์โหลด Lumi Letters ใน App Store →](https://apps.apple.com/th/app/id6778748533)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

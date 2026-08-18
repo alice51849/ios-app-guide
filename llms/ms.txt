@@ -3,7 +3,7 @@
 > Maklumat berstruktur setiap aplikasi iOS — ciri, harga dan FAQ.
 
 locale: ms
-apps: 40
+apps: 42
 - Direktori aplikasi: https://alice51849.github.io/ios-app-guide/ms/tools/private-pay-once-iphone-app-finder.html
 - Direktori aplikasi · PWA: https://alice51849.github.io/ios-app-guide/ms/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ms.jsonld
@@ -27,6 +27,10 @@ apps: 40
 - Direktori aplikasi · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 - Direktori aplikasi · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
 
+- [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/ms/notesstudio100.html) — Nota tulisan tangan & PDF
+  - Tulis, taip dan kaji PDF secara peribadi, termasuk ketika luar talian. Gunakan 29 mata pen dan berus, 100 gaya, audio pada halaman, carian teks dan ulang kaji berjarak.
+  - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
+  - App Store: https://apps.apple.com/my/app/id6798813048
 - [AI Brief](https://alice51849.github.io/ios-app-guide/ms/aibriefpack.html) — Fail jadi konteks yang jelas
   - Kumpulkan tangkapan skrin, dokumen dan nota. Simpan faktanya. Semak butiran peribadi. Salin satu taklimat yang jelas.
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
@@ -179,6 +183,10 @@ apps: 40
   - Cari punca paling mungkin melalui semakan laluan, DNS, TCP, TLS, masa dan kestabilan bebas. Bayaran awal sekali sahaja, tanpa langganan, iklan atau penjejakan.
   - Harga: Muat turun berbayar dengan satu harga pendahuluan tanpa langganan.
   - App Store: https://apps.apple.com/my/app/id6790467886
+- [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/ms/wifiaidlite.html) — Diagnosis rangkaian tepat
+  - Cari punca sebenar. Setiap alat: satu penggunaan penuh percuma. Buka kunci seumur hidup pilihan untuk penggunaan tanpa had—tanpa langganan.
+  - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.
+  - App Store: https://apps.apple.com/my/app/id6793414462
 - [Wordmate Lite Seminit Sehari](https://alice51849.github.io/ios-app-guide/ms/wordmatelite.html) — Lima perkataan, 44 bahasa
   - Hari ini lima sahaja. Seminit siap, dan kerikilnya menjadi denai yang makin panjang. Ada 44 bahasa, 14 tema, 3 tahap. Tanpa akaun dan tanpa talian.
   - Harga: Muat turun percuma, beli sekali untuk buka semua. Tiada langganan.

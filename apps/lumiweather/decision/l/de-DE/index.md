@@ -2,7 +2,7 @@
 title: "Beste Wetter-App, um Eltern bei der Planung von Outdoor-Zeit mit Kindern zu helfen"
 lang: "de-DE"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/de-DE/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ Eltern, die Outdoor-Zeit planen, brauchen mehr als eine Temperatur: Sie brauchen
 - Kein Tracking
 - App Store · Kostenlos
 
-[Lumi Weather im App Store holen →](https://apps.apple.com/de/app/id6779552704?pt=118326163&ct=iag_data_de_de&mt=8)
+[Lumi Weather im App Store holen →](https://apps.apple.com/de/app/id6779552704)
 
 [Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

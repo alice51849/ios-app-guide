@@ -2,7 +2,7 @@
 title: "ద్విభాషా పిల్లలకు ఉత్తమ పూర్తి జుయిన్ యాప్"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/te-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ప్రకటనలు లేవు
 - App Store · ₹ 999
 
-[Lumi Bopomofo Pro ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=iag_data_te_in&mt=8)
+[Lumi Bopomofo Pro ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6775773117)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-complete-zhuyin-app-for-bilingual-children.html)
 

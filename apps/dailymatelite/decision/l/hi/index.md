@@ -2,7 +2,7 @@
 title: "DailyMate Lite: रोज़ बोलें — 50 भाषाओं में सहज बातचीत | iOS App"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/hi/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - मुफ़्त शुरुआत · हमेशा के लिए अनलॉक
 - App Store · मुफ़्त
 
-[App Store पर DailyMate Lite: रोज़ बोलें पाएँ](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_data_hi&mt=8)
+[App Store पर DailyMate Lite: रोज़ बोलें पाएँ](https://apps.apple.com/in/app/id6794725568)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/dailymatelite.html)
 

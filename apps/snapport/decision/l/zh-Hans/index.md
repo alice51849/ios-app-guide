@@ -2,7 +2,7 @@
 title: "最佳婴幼儿居家护照照片应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/zh-Hans/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 私密 / 设备本地
 - App Store · ¥38.00
 
-[在App Store获取Snapport →](https://apps.apple.com/cn/app/id6780575828?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在App Store获取Snapport →](https://apps.apple.com/cn/app/id6780575828)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

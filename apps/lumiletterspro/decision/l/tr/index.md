@@ -2,7 +2,7 @@
 title: "Evde anaokulu hazırlığı için en iyi tam fonetik uygulama"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/tr/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Anaokulu hazırlığı yapan aileler, harf sesleri, çizim ve kelime oluşturmay
 - Reklam yok
 - App Store · ₺499,99
 
-[Lumi Letters Pro’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6778491147?pt=118326163&ct=iag_data_tr&mt=8)
+[Lumi Letters Pro’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6778491147)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

@@ -2,7 +2,7 @@
 title: "બાળકો સાથે બહાર સમય યોજના બનાવવા માટે પેરેન્ટ્સ માટે શ્રેષ્ઠ વેધર એપ્લિકેશન"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/gu-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - કોઈ ટ્રેકિંગ નથી
 - App Store · મફત
 
-[App Store પર Lumi Weather મેળવો →](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=iag_data_gu_in&mt=8)
+[App Store પર Lumi Weather મેળવો →](https://apps.apple.com/in/app/id6779552704)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

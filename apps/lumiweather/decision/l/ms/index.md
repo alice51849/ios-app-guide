@@ -2,7 +2,7 @@
 title: "aplikasi cuaca terbaik untuk bantu ibu bapa rancang masa luar bersama anak"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/ms/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ Ibu bapa yang merancang masa luar perlukan lebih daripada suhu: mereka perlukan 
 - Tiada penjejakan
 - App Store · Percuma
 
-[Dapatkan Lumi Weather di App Store →](https://apps.apple.com/my/app/id6779552704?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan Lumi Weather di App Store →](https://apps.apple.com/my/app/id6779552704)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

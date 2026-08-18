@@ -2,7 +2,7 @@
 title: "DailyMate Lite：ひとこと練習 — 50言語の実践フレーズ | iOS App"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/ja/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 無料で開始・買い切りで永久解除
 - App Store · 無料
 
-[App Store で DailyMate Lite：ひとこと練習 を入手](https://apps.apple.com/jp/app/id6794725568?pt=118326163&ct=iag_data_ja&mt=8)
+[App Store で DailyMate Lite：ひとこと練習 を入手](https://apps.apple.com/jp/app/id6794725568)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/dailymatelite.html)
 

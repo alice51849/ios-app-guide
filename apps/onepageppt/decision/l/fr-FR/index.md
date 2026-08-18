@@ -2,7 +2,7 @@
 title: "OnePage PPT : diapo IA — Vos notes en une diapo | iOS App"
 lang: "fr-FR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/fr-FR/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Transformez un mur de texte en UNE diapo réellement lue. OnePage PPT analyse to
 - Gratuit au départ · déverrouillage définitif
 - App Store · Gratuit
 
-[Obtenir OnePage PPT : diapo IA sur l'App Store](https://apps.apple.com/fr/app/id6798814385?pt=118326163&ct=iag_data_fr_fr&mt=8)
+[Obtenir OnePage PPT : diapo IA sur l'App Store](https://apps.apple.com/fr/app/id6798814385)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/onepageppt.html)
 

@@ -2,7 +2,7 @@
 title: "WiFi Aid — Diagnòstic de xarxa amb proves | iOS App"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/ca/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Troba la causa més probable amb proves independents de rutes, DNS, TCP, TLS, te
 - Descàrrega de pagament
 - App Store · 6,99 €
 
-[Descarrega WiFi Aid a l’App Store](https://apps.apple.com/es/app/id6790467886?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega WiFi Aid a l’App Store](https://apps.apple.com/es/app/id6790467886)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/wifiaid.html)
 

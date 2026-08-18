@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Tala idag — 50 språk, riktiga dialoger | iOS App"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/sv/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Prata när det verkligen gäller. Med DailyMate Lite tränar du kompletta replik
 - Gratis att börja · livstidsupplåsning
 - App Store · Gratis
 
-[Hämta DailyMate Lite: Tala idag i App Store](https://apps.apple.com/se/app/id6794725568?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta DailyMate Lite: Tala idag i App Store](https://apps.apple.com/se/app/id6794725568)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/dailymatelite.html)
 

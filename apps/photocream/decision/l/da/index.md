@@ -2,7 +2,7 @@
 title: "bedste engangsbetalte filmfoto-redigeringsapp til rejseindhold på iPhone"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/da/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Rejseindholdsskabere har brug for et gentageligt filmudtryk, der tilføjer korn,
 - Gratis at komme i gang · permanent oplåsning
 - App Store · Gratis
 
-[Hent PhotoCream i App Store →](https://apps.apple.com/dk/app/id6781808054?pt=118326163&ct=iag_data_da&mt=8)
+[Hent PhotoCream i App Store →](https://apps.apple.com/dk/app/id6781808054)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

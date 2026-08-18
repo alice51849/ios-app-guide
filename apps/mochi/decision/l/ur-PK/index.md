@@ -2,7 +2,7 @@
 title: "iPhone کے لیے بہترین سادہ ٹو ڈو لسٹ ایپ بغیر سبسکرپشن کے"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/ur-PK/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - کوئی اشتہار نہیں
 - App Store · مفت
 
-[App Store سے Mochi حاصل کریں →](https://apps.apple.com/pk/app/id6785004775?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[App Store سے Mochi حاصل کریں →](https://apps.apple.com/pk/app/id6785004775)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

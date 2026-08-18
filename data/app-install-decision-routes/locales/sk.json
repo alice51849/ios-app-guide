@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "sk",
-  "dateModified": "2026-08-17",
-  "content_digest": "7bf9a1c1c9d8e2e85c4f23e27e95d84ef7cc221c3fec20ef6ea999c451133f03",
-  "generation_digest": "977f7d6bc00a2e88bb25df2321e667f9647bf876b7c6aea1976e45e43a1328a2",
+  "dateModified": "2026-08-18",
+  "content_digest": "264b14864720b36adcc17313f205aa969b749d3a164446272f28772a835771b3",
+  "generation_digest": "d5fa67b24e8433a4f212a12ecc3662733a247983974a6cca6a58b9ab36d6fe87",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 40,
+  "record_count": 42,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/sk.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/sk.rss.xml",
@@ -51,7 +51,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6792850916",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
-      "app_store_url": "https://apps.apple.com/sk/app/id6792850916?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6792850916",
       "app_store_cta_label": "Stiahnuť Mask My File v App Store",
       "storefront_facts": {
         "price": "0",
@@ -96,7 +96,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6790467886",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
-      "app_store_url": "https://apps.apple.com/sk/app/id6790467886?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6790467886",
       "app_store_cta_label": "Stiahnuť WiFi Aid v App Store",
       "storefront_facts": {
         "price": "6.99",
@@ -141,7 +141,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6790800323",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
-      "app_store_url": "https://apps.apple.com/sk/app/id6790800323?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6790800323",
       "app_store_cta_label": "Stiahnuť Mochi DoneStamp: Naposledy v App Store",
       "storefront_facts": {
         "price": "0",
@@ -151,6 +151,62 @@
       "guide_cta_label": "Prečítať celý sprievodca",
       "publisher_disclosure": "Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.",
       "source_persona_query": "best last time tracker app for household maintenance without a subscription",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "sk:notesstudio100",
+      "locale": "sk",
+      "app_key": "notesstudio100",
+      "app_name": "100 Notes Studio: Pen & Paper",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "100 Notes Studio: Pen & Paper — Ručné poznámky a PDF | iOS App",
+      "decision_context": "Spojte ručné písanie, text z klávesnice, komentovanie PDF a študijné nástroje do prehľadného pracovného priestoru. Základné funkcie sú dostupné bez pripojenia a zvuková nahrávka sa pripojí k strane, na ktorej vznikla. NÁSTROJE NA PRIRODZENÉ PÍSANIE Vyberte si z 29 pier a štetcov: plniace pero, kaligrafia, štetcové pero fude, technické pero, akvarel, uhlík, mikroceruzka, grafit 2B/4B/6B, pastelka, fixka a olejový pastel. Nástroje majú odlišnú textúru a odozvu. Pri kompatibilných digitálnych perách je k dispozícii prítlak, náklon a odmietnutie nechceného dotyku dlane. Pixelová, ťahová a presná guma, výber lasom, pravítko, osem nástrojov na tvary a laserové ukazovadlo pomáhajú pri úpravách aj prezentovaní. 100 VYBRANÝCH ŠTÝLOV Katalóg obsahuje 100 štýlov s odlišnými obalmi, štruktúrami papiera, paletami, rozraďovačmi, pečiatkami, nálepkami, akcentmi panela nástrojov a vzhľadom widgetov. Nájdete minimalistické, ľanové, s japonskou mriežkou, akademické, technické, notové, na porady, výskum, cestovanie a recepty. Štýl si možno prezrieť pred použitím. STRANY, DOKUMENTY A ŠTÚDIUM Pevné strany alebo súvislé plátno, formáty A4, A5, Letter, veľkosť obrazovky alebo vlastná, na výšku aj na šírku Formátovaný text: tučné, kurzíva, podčiarknutie, písma, farby, zoznamy, zaškrtávacie polia, tabuľky a odkazy Import a komentovanie PDF: zvýraznenie, podčiarknutie, prečiarknutie, textové a ručné vpisky, otočenie, orezanie, vloženie, vybratie, zlúčenie a export Zvuková nahrávka sa pripojí k aktívnej strane a prehráva sa odtiaľ Rozpoznávanie rukopisu a hľadanie v názvoch, texte, ručných vpiskoch a prílohách prebieha v zariadení Študijný režim s prepojenými kartičkami, doplňovačkami a rozvrhom FSRS Nálepky, washi pásky a automaticky číslovaný obsah Vnorené priečinky, štítky, pripnutia, obľúbené, archív, obnoviteľný kôš a história verzií Atramentové vrstvy s krytím, viditeľnosťou a zámkom, plus priestor pre PDF alebo obrázok vedľa strany Widgety a rýchle zachytenie pre časté úkony SÚKROMIE Účet nie je potrebný. Aplikácia neobsahuje reklamy, sledovacie nástroje ani analytiku tretích strán. Základné písanie a hľadanie sa spracúva v zariadení. Aplikáciu alebo vybraný zošit možno chrániť zámkom zariadenia. BEZPLATNÉ POUŽÍVANIE A VOLITEĽNÉ ODOMKNUTIE Bezplatná verzia obsahuje editor, 1 aktívny zošit s neobmedzeným počtom strán a 2 zo 100 štýlov. Voliteľné odomknutie pridá ďalšie zošity, zostávajúce štýly katalógu, export do vektorového PDF, obnoviteľnú históriu verzií a šifrovanú zálohu. Zásady ochrany súkromia https://alice51849.github.io/100notes-support/privacy.html Podmienky používania https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+      "category": "productivity",
+      "category_label": "Produktivita",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Zadarmo na začiatok · doživotné odomknutie",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Bez účtu",
+        "Súkromné / v zariadení"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Produktivita",
+        "Zadarmo na začiatok · doživotné odomknutie",
+        "Offline",
+        "Bez účtu",
+        "Súkromné / v zariadení",
+        "App Store · Zadarmo"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/notesstudio100.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/sk/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/sk/notesstudio100.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fnotesstudio100%2Fdecision%2Fl%2Fsk%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
+      "app_store_id": "6798813048",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
+      "app_store_url": "https://apps.apple.com/sk/app/id6798813048",
+      "app_store_cta_label": "Stiahnuť 100 Notes Studio: Pen & Paper v App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Zadarmo"
+      },
+      "guide_cta_label": "Prečítať celý sprievodca",
+      "publisher_disclosure": "Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.",
+      "source_persona_query": "best offline handwriting notes app for ipad with pdf markup no subscription",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -191,7 +247,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/sk/app/id6791658210?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6791658210",
       "app_store_cta_label": "Stiahnuť AI Brief v App Store",
       "storefront_facts": {
         "price": "0",
@@ -236,7 +292,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6784974530",
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
-      "app_store_url": "https://apps.apple.com/sk/app/id6784974530?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6784974530",
       "app_store_cta_label": "Získajte Aim990 v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -281,7 +337,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6792483140",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
-      "app_store_url": "https://apps.apple.com/sk/app/id6792483140?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6792483140",
       "app_store_cta_label": "Stiahnuť Aim990 Plus v App Store",
       "storefront_facts": {
         "price": "6.99",
@@ -331,7 +387,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/sk/app/id6794178671?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6794178671",
       "app_store_cta_label": "Stiahnuť CalDaily: kalkulačka a témy v App Store",
       "storefront_facts": {
         "price": "0",
@@ -376,7 +432,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6781337213",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
-      "app_store_url": "https://apps.apple.com/sk/app/id6781337213?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6781337213",
       "app_store_cta_label": "Získajte CV Desk v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -426,7 +482,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6782251621",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
-      "app_store_url": "https://apps.apple.com/sk/app/id6782251621?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6782251621",
       "app_store_cta_label": "Získajte Cyca v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -476,7 +532,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6790418321",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
-      "app_store_url": "https://apps.apple.com/sk/app/id6790418321?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6790418321",
       "app_store_cta_label": "Stiahnite si DailyMate v App Store →",
       "storefront_facts": {
         "price": "12.99",
@@ -521,7 +577,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6794725568",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
-      "app_store_url": "https://apps.apple.com/sk/app/id6794725568?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6794725568",
       "app_store_cta_label": "Stiahnuť DailyMate Lite: Hovorte smelo v App Store",
       "storefront_facts": {
         "price": "0",
@@ -574,7 +630,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6755782939",
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
-      "app_store_url": "https://apps.apple.com/sk/app/id6755782939?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6755782939",
       "app_store_cta_label": "Získajte G+Money v App Store →",
       "storefront_facts": {
         "price": "5.99",
@@ -641,7 +697,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6793436548",
       "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
-      "app_store_url": "https://apps.apple.com/sk/app/id6793436548?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6793436548",
       "app_store_cta_label": "Stiahnuť G+Money Lite v App Store",
       "storefront_facts": {
         "price": "0",
@@ -705,7 +761,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/sk/app/id6794039979?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6794039979",
       "app_store_cta_label": "Stiahnuť HoursTag Lite v App Store",
       "storefront_facts": {
         "price": "0",
@@ -758,7 +814,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/sk/app/id6754218117?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6754218117",
       "app_store_cta_label": "Stiahnuť HoursTag: Hodiny na nákup v App Store",
       "storefront_facts": {
         "price": "5.99",
@@ -811,7 +867,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6780107485",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
-      "app_store_url": "https://apps.apple.com/sk/app/id6780107485?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6780107485",
       "app_store_cta_label": "Stiahnite si LockHour Pro v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -861,7 +917,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6773017109",
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
-      "app_store_url": "https://apps.apple.com/sk/app/id6773017109?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6773017109",
       "app_store_cta_label": "Stiahnite si Lumi Bopomofo v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -911,7 +967,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6775773117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
-      "app_store_url": "https://apps.apple.com/sk/app/id6775773117?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6775773117",
       "app_store_cta_label": "Získajte Lumi Bopomofo Pro v App Store →",
       "storefront_facts": {
         "price": "9.99",
@@ -961,7 +1017,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6778748533",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
-      "app_store_url": "https://apps.apple.com/sk/app/id6778748533?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6778748533",
       "app_store_cta_label": "Stiahnite si Lumi Letters v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1011,7 +1067,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6778491147",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
-      "app_store_url": "https://apps.apple.com/sk/app/id6778491147?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6778491147",
       "app_store_cta_label": "Získajte Lumi Letters Pro v App Store →",
       "storefront_facts": {
         "price": "9.99",
@@ -1061,7 +1117,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6778269699",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
-      "app_store_url": "https://apps.apple.com/sk/app/id6778269699?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6778269699",
       "app_store_cta_label": "Stiahnite si Lumi Math Planet v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1111,7 +1167,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6776958488",
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
-      "app_store_url": "https://apps.apple.com/sk/app/id6776958488?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6776958488",
       "app_store_cta_label": "Získajte Lumi Math Pro v App Store →",
       "storefront_facts": {
         "price": "9.99",
@@ -1161,7 +1217,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6779750237",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
-      "app_store_url": "https://apps.apple.com/sk/app/id6779750237?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6779750237",
       "app_store_cta_label": "Získajte Lumi Mission Planet v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1211,7 +1267,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6779745474",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
-      "app_store_url": "https://apps.apple.com/sk/app/id6779745474?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6779745474",
       "app_store_cta_label": "Získajte Lumi Mission Planet Pro v App Store →",
       "storefront_facts": {
         "price": "6.99",
@@ -1261,7 +1317,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6787193643",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "app_store_url": "https://apps.apple.com/sk/app/id6787193643?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6787193643",
       "app_store_cta_label": "Získajte Lumi Trip Planet v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1314,7 +1370,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6779552704",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
-      "app_store_url": "https://apps.apple.com/sk/app/id6779552704?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6779552704",
       "app_store_cta_label": "Získajte Lumi Weather v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1364,7 +1420,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6785004775",
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
-      "app_store_url": "https://apps.apple.com/sk/app/id6785004775?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6785004775",
       "app_store_cta_label": "Stiahnite si Mochi v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1409,7 +1465,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6798814385",
       "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
-      "app_store_url": "https://apps.apple.com/sk/app/id6798814385?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6798814385",
       "app_store_cta_label": "Stiahnuť OnePage PPT: AI snímka v App Store",
       "storefront_facts": {
         "price": "0",
@@ -1454,7 +1510,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6781808054",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
-      "app_store_url": "https://apps.apple.com/sk/app/id6781808054?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6781808054",
       "app_store_cta_label": "Získajte PhotoCream v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1504,7 +1560,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6780223070",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
-      "app_store_url": "https://apps.apple.com/sk/app/id6780223070?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6780223070",
       "app_store_cta_label": "Stiahnite si PicClear v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1554,7 +1610,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6779977651",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
-      "app_store_url": "https://apps.apple.com/sk/app/id6779977651?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6779977651",
       "app_store_cta_label": "Stiahnite si ScanTo Pro v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1607,7 +1663,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6788236641",
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
-      "app_store_url": "https://apps.apple.com/sk/app/id6788236641?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6788236641",
       "app_store_cta_label": "Stiahnite si Sereno v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1657,7 +1713,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6780575828",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
-      "app_store_url": "https://apps.apple.com/sk/app/id6780575828?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6780575828",
       "app_store_cta_label": "Stiahnite si Snapport v App Store →",
       "storefront_facts": {
         "price": "6.99",
@@ -1707,7 +1763,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6792856304",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
-      "app_store_url": "https://apps.apple.com/sk/app/id6792856304?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6792856304",
       "app_store_cta_label": "Stiahnuť Snapport Lite v App Store",
       "storefront_facts": {
         "price": "0",
@@ -1757,7 +1813,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6782139553",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
-      "app_store_url": "https://apps.apple.com/sk/app/id6782139553?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6782139553",
       "app_store_cta_label": "Stiahnite si Sono Note v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1802,7 +1858,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6791299610",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
-      "app_store_url": "https://apps.apple.com/sk/app/id6791299610?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6791299610",
       "app_store_cta_label": "Stiahnite si TripBee Lite v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1858,7 +1914,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6787754435",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
-      "app_store_url": "https://apps.apple.com/sk/app/id6787754435?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6787754435",
       "app_store_cta_label": "Stiahnite si TripBee Pro: Plánovač ciest v App Store →",
       "storefront_facts": {
         "price": "6.99",
@@ -1908,7 +1964,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6782275018",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
-      "app_store_url": "https://apps.apple.com/sk/app/id6782275018?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6782275018",
       "app_store_cta_label": "Stiahnite si Unblurry v App Store →",
       "storefront_facts": {
         "price": "0",
@@ -1919,6 +1975,56 @@
       "publisher_disclosure": "Sprievodca od vydavateľa Lumi Studio, vývojára aplikácie. Názvy aplikácií sú ochranné známky ich vlastníkov a používajú sa len na identifikáciu. Pri dokumentoch, zdraví, škole a rozhodnutiach o produktivite overte oficiálne požiadavky, kde je to relevantné.",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "sk:wifiaidlite",
+      "locale": "sk",
+      "app_key": "wifiaidlite",
+      "app_name": "WiFi Aid Lite",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "WiFi Aid Lite — Diagnostika siete s dôkazmi | iOS App",
+      "decision_context": "Nájdite skutočný problém. Každý nástroj zahŕňa jedno bezplatné plné použitie. Voliteľné jednorazové doživotné odomknutie pre neobmedzené používanie—bez predplatného, reklám a sledovania. • Spustiť — Wi-Fi, DNS a internet jedným ťuknutím • Deep Check — Viac dôkazov a stabilita • Test Webstránky — Jeden web alebo celý internet • Dôkazy — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Pripojenie je nestabilné — Kolísanie (Jitter) • História — Údaje sú uložené iba na tomto zariadení • Pripojený uzol — Presná poloha rozpozná Wi-Fi a aktuálny uzol Žiadne účty, reklamy alebo sledovanie. Údaje sú uložené iba na tomto zariadení. Každý nástroj zahŕňa jedno bezplatné plné použitie. Voliteľné jednorazové doživotné odomknutie pre neobmedzené používanie—bez predplatného, reklám a sledovania.",
+      "category": "utility",
+      "category_label": "Viac",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Zadarmo na začiatok · doživotné odomknutie",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account"
+      ],
+      "privacy_labels": [
+        "Bez účtu"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Viac",
+        "Zadarmo na začiatok · doživotné odomknutie",
+        "Bez účtu",
+        "App Store · Zadarmo"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/wifiaidlite.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/sk/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/sk/wifiaidlite.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fwifiaidlite%2Fdecision%2Fl%2Fsk%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
+      "app_store_id": "6793414462",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
+      "app_store_url": "https://apps.apple.com/sk/app/id6793414462",
+      "app_store_cta_label": "Stiahnuť WiFi Aid Lite v App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Zadarmo"
+      },
+      "guide_cta_label": "Prečítať celý sprievodca",
+      "publisher_disclosure": "Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.",
+      "source_persona_query": "how to tell if the wifi or the website is down free app",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,
@@ -1958,7 +2064,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/sk/app/id6797601720?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6797601720",
       "app_store_cta_label": "Stiahnuť Wordmate Lite: slovíčka denne v App Store",
       "storefront_facts": {
         "price": "0",
@@ -2022,7 +2128,7 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6789917808",
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
-      "app_store_url": "https://apps.apple.com/sk/app/id6789917808?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6789917808",
       "app_store_cta_label": "Získajte Wordmate: Learn 44 Languages v App Store →",
       "storefront_facts": {
         "price": "9.99",

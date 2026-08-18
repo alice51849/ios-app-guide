@@ -2,7 +2,7 @@
 title: "DailyMate Lite: ଆଜି କୁହନ୍ତୁ — ଦୈନନ୍ଦିନ କଥାବାର୍ତ୍ତା ଅଭ୍ୟାସ | iOS App"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/or-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍
 - App Store · ମାଗଣା
 
-[App Store ରୁ DailyMate Lite: ଆଜି କୁହନ୍ତୁ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_data_or_in&mt=8)
+[App Store ରୁ DailyMate Lite: ଆଜି କୁହନ୍ତୁ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6794725568)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/dailymatelite.html)
 

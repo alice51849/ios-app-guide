@@ -2,7 +2,7 @@
 title: "migliore app per correggere foto sfocate di bambini su iPhone"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/it/unblurry.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 video_url: "https://files.catbox.moe/h90ie5.mp4"
 duration: "PT16S"
 app_store_id: "6782275018"
@@ -16,7 +16,7 @@ I bambini non stanno mai fermi, quindi foto sfocate o mosse sono inevitabili —
 
 [Guarda il video](https://files.catbox.moe/h90ie5.mp4)
 
-[Scarica Unblurry dall’App Store →](https://apps.apple.com/it/app/id6782275018?pt=118326163&ct=iag_video_it&mt=8)
+[Scarica Unblurry dall’App Store →](https://apps.apple.com/it/app/id6782275018)
 
 [Apri la guida dell’app](https://alice51849.github.io/ios-app-guide/it/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

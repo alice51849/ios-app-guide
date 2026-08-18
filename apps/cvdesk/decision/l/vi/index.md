@@ -2,7 +2,7 @@
 title: "ứng dụng tạo hồ sơ xin việc tốt nhất cho người đổi nghề 2026"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/vi/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Khi bạn chuyển ngành, vấn đề hồ sơ khác: kinh nghiệm thật như
 - Bắt đầu miễn phí · mở khóa vĩnh viễn
 - App Store · Miễn phí
 
-[Tải CV Desk trên App Store →](https://apps.apple.com/vn/app/id6781337213?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải CV Desk trên App Store →](https://apps.apple.com/vn/app/id6781337213)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-resume-builder-app-for-career-changers-2026.html)
 

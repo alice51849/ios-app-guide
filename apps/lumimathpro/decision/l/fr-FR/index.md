@@ -2,7 +2,7 @@
 title: "meilleure application mathématique complète pour maternelle et début primaire"
 lang: "fr-FR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/fr-FR/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Une application mathématique complète doit rendre le comptage, le sens du nomb
 - Sans publicité
 - App Store · 9,99 €
 
-[Obtenir Lumi Math Pro sur l’App Store →](https://apps.apple.com/fr/app/id6776958488?pt=118326163&ct=iag_data_fr_fr&mt=8)
+[Obtenir Lumi Math Pro sur l’App Store →](https://apps.apple.com/fr/app/id6776958488)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

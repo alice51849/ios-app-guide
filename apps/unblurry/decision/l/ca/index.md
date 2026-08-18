@@ -2,7 +2,7 @@
 title: "Millor app per arreglar fotos borroses de nens a l’iPhone"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/ca/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Els nens no es queden quiets mai, així que les fotos desenfocades i tremolades 
 - Privat / en el dispositiu
 - App Store · Gratis
 
-[Descarrega Unblurry a l’App Store →](https://apps.apple.com/es/app/id6782275018?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega Unblurry a l’App Store →](https://apps.apple.com/es/app/id6782275018)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

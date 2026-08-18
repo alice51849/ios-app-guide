@@ -2,7 +2,7 @@
 title: "melhor app completo de rotina de manhã e noite para crianças"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/pt-PT/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Escovar os dentes e dormir falham muitas vezes no mesmo momento: a criança est�
 - Sem anúncios
 - App Store · 6,99 €
 
-[Obtenha Lumi Mission Planet Pro na App Store →](https://apps.apple.com/pt/app/id6779745474?pt=118326163&ct=iag_data_pt_pt&mt=8)
+[Obtenha Lumi Mission Planet Pro na App Store →](https://apps.apple.com/pt/app/id6779745474)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

@@ -2,7 +2,7 @@
 title: "બાળકો માટે શ્રેષ્ઠ શૈક્ષણિક રમત એપ, કોઈ જાહેરાત, iPhone"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/gu-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - કોઈ જાહેરાત નથી
 - App Store · મફત
 
-[App Store પર Lumi Letters મેળવો →](https://apps.apple.com/in/app/id6778748533?pt=118326163&ct=iag_data_gu_in&mt=8)
+[App Store પર Lumi Letters મેળવો →](https://apps.apple.com/in/app/id6778748533)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

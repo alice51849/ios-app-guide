@@ -2,7 +2,7 @@
 title: "WiFi Aid — Nätverksdiagnos med bevis | iOS App"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/sv/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Hitta den troligaste orsaken med oberoende tester av vägar, DNS, TCP, TLS, svar
 - Betald nedladdning
 - App Store · 79,00 kr
 
-[Hämta WiFi Aid i App Store](https://apps.apple.com/se/app/id6790467886?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta WiFi Aid i App Store](https://apps.apple.com/se/app/id6790467886)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/wifiaid.html)
 

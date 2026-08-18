@@ -2,7 +2,7 @@
 title: "best complete phonics app for homeschool kindergarten prep"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/en-GB/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Families preparing for kindergarten need a complete early-reading path that conn
 - No adverts
 - App Store · £8.99
 
-[Get Lumi Letters Pro on the App Store →](https://apps.apple.com/gb/app/id6778491147?pt=118326163&ct=iag_data_en_gb&mt=8)
+[Get Lumi Letters Pro on the App Store →](https://apps.apple.com/gb/app/id6778491147)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

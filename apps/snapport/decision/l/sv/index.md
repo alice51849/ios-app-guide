@@ -2,7 +2,7 @@
 title: "bästa appen för passfoto för bebisar och småbarn hemma"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/sv/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ För bebisens passfoto får ingen annan synas och bakgrunden måste vara enfärg
 - Privat / på enheten
 - App Store · 79,00 kr
 
-[Skaffa Snapport i App Store →](https://apps.apple.com/se/app/id6780575828?pt=118326163&ct=iag_data_sv&mt=8)
+[Skaffa Snapport i App Store →](https://apps.apple.com/se/app/id6780575828)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

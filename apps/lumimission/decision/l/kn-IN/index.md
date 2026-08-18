@@ -2,7 +2,7 @@
 title: "ಪ್ರೀ-ಸ್ಕೂಲ್ ಮಕ್ಕಳಿಗೆ ಜಾಹೀರಾತು ಇಲ್ಲದ ಅತ್ಯುತ್ತಮ ಮಲಗುವ ಸಮಯ ಕ್ರಮ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/kn-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
 - App Store · ಉಚಿತ
 
-[Lumi Mission Planet ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=iag_data_kn_in&mt=8)
+[Lumi Mission Planet ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6779750237)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

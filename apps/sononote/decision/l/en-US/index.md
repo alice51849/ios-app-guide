@@ -2,7 +2,7 @@
 title: "best voice notes app that summarizes meetings on iphone"
 lang: "en-US"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/en-US/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 After a call you don't want a raw transcript — you want the summary, the action items, and a draft follow-up — Sono Note is built for this.
 
 - Productivity
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - Private / on-device
 - App Store · Free
 
-[Get Sono Note on the App Store →](https://apps.apple.com/us/app/id6782139553?pt=118326163&ct=iag_data_en_us&mt=8)
+[Get Sono Note on the App Store →](https://apps.apple.com/us/app/id6782139553)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-US/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

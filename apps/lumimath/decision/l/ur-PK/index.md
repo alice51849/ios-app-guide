@@ -2,7 +2,7 @@
 title: "بچوں کے لیے بہترین ریاضی کا گیم ایپ تاکہ منطق کی مہارتیں بنائیں iPhone"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/ur-PK/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - کوئی اشتہار نہیں
 - App Store · مفت
 
-[App Store سے Lumi Math Planet حاصل کریں →](https://apps.apple.com/pk/app/id6778269699?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[App Store سے Lumi Math Planet حاصل کریں →](https://apps.apple.com/pk/app/id6778269699)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

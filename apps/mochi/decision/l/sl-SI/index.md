@@ -2,7 +2,7 @@
 title: "najboljša preprosta aplikacija za seznam opravil na iPhonu brez naročnine"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/sl-SI/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Brez oglasov
 - App Store · Brezplačno
 
-[Prenesite Mochi iz App Store →](https://apps.apple.com/si/app/id6785004775?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite Mochi iz App Store →](https://apps.apple.com/si/app/id6785004775)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

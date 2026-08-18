@@ -2,7 +2,7 @@
 title: "AI Brief — फ़ाइलों से साफ़ संदर्भ | iOS App"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/hi/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - निजी / डिवाइस पर
 - App Store · मुफ़्त
 
-[App Store पर AI Brief पाएँ](https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=iag_data_hi&mt=8)
+[App Store पर AI Brief पाएँ](https://apps.apple.com/in/app/id6791658210)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/aibriefpack.html)
 

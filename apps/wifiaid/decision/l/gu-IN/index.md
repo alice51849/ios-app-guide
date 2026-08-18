@@ -2,7 +2,7 @@
 title: "WiFi Aid — નેટવર્ક ડાયગ્નોસિસ અને પુરાવા | iOS App"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/gu-IN/index.html"
-modified: "2026-08-17"
+modified: "2026-08-18"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ચુકવેલ ડાઉનલોડ
 - App Store · ₹ 599
 
-[App Store પરથી WiFi Aid મેળવો](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_gu_in&mt=8)
+[App Store પરથી WiFi Aid મેળવો](https://apps.apple.com/in/app/id6790467886)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/wifiaid.html)
 

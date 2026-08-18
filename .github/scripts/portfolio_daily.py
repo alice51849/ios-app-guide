@@ -337,7 +337,13 @@ def already_published_today(
     return False
 
 
-def filter_reachable_apps(apps, validator=validate_url, max_workers=8):
+def filter_reachable_apps(apps, validator=validate_url, max_workers=3):
+    # 這一步會對 apps.apple.com 連打整個 portfolio(40+ 個 URL)。原本 8 條
+    # 併發 + 3 次重試(1s、2s)對 Apple 來說是一陣突刺,GitHub-hosted runner
+    # 的共用出口 IP 很容易被回 HTTP 429,整個 Telegram 日報就 fail 掉 ——
+    # 2026-08-18 連續兩次都是這樣掛的,而它一天只跑一次、掛了就等於當天沒發。
+    # 降低併發並改用較長的指數退避:對 Apple 更客氣,對我們更不容易整批失敗。
+    # 這裡只影響「發文前的 URL 可達性檢查」,不改變任何發文頻率或配額。
     apps = list(apps)
     if not apps:
         raise CoverageError("Public app registry is empty")
@@ -350,8 +356,8 @@ def filter_reachable_apps(apps, validator=validate_url, max_workers=8):
                 validator,
                 app.appstore_url(),
                 timeout=10,
-                attempts=3,
-                retry_delays=(1, 2),
+                attempts=6,
+                retry_delays=(2, 5, 10, 20, 40),
             )
             for app in apps
         }

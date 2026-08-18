@@ -337,13 +337,13 @@ class StandardSiteWorkflowTests(unittest.TestCase):
                 f'https://alice51849.github.io/ios-app-guide{path}">',
                 html,
             )
-            self.assertIn('content="app-id=6790467886"', html)
+            self.assertIn('content="app-id=6793414462"', html)
             # Direct Apple links only; they carry this site's own campaign
             # attribution once a provider token is configured, so match the
             # target app and let the validator reject anything malformed.
             store_urls = re.findall(
                 r'href="(https://apps\.apple\.com/'
-                r'(?:[a-z]{2}/)?app/id6790467886(?:\?[^"]*)?)"',
+                r'(?:[a-z]{2}/)?app/id6793414462(?:\?[^"]*)?)"',
                 html,
             )
             self.assertTrue(store_urls)
@@ -354,8 +354,8 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             self.assertRegex(
                 html,
                 r'<a class="cta" href="https://apps\.apple\.com/app/'
-                r'id6790467886(?:\?[^"]*)?" rel="nofollow noopener">'
-                r"Get WiFi Aid on the App Store →</a>",
+                r'id6793414462(?:\?[^"]*)?" rel="nofollow noopener">'
+                r"Get WiFi Aid Lite on the App Store →</a>",
             )
             self.assertIn(
                 "This is a publisher-authored buying guide from the app "

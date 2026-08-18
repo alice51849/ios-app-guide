@@ -37,7 +37,17 @@ jobs:
         run: python3 .github/scripts/portfolio_daily.py --platform telegram
 
   threads:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    # 停用(2026-08-18)。這個 job 用 repo secret `THREADS_TOKEN` 一次把全部
+    # 公開 App 發成一份 Threads 日報,完全繞過 threads-autopilot 的
+    # guardrails.py(新帳號爬坡、每小時 1 篇、每日 3 篇、隨機抖動)。
+    # 舊 Threads 帳號正是死於「每天 30-48 篇、100% 帶商店連結」的畫像;
+    # 帳號在 2026-08-10 重開後 secret 沒換,這個 job 從 2026-08-09 起每天
+    # 以 OAuthException 190「invalid user id」失敗 —— 也就是說它已經 9 天
+    # 沒有發出任何東西,只是每天把 workflow 染紅。
+    # 姐妹 workflow `threads-daily.yml` 當時已被手動停用,這個 job 被漏掉。
+    # Threads 只保留 threads-autopilot 一條受管控的通道;要重新啟用必須先
+    # 讓這條路徑走 guardrails.py 的配額,不可只補上新 token。
+    if: false
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

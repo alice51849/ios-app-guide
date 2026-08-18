@@ -16,8 +16,52 @@
     ],
     "retirement_rule": "Retire after three consecutive verified misses"
   },
-  "record_count": 40,
+  "record_count": 41,
   "apps": [
+    {
+      "key": "notesstudio100",
+      "app_store_id": "6798813048",
+      "name": "100 Notes Studio",
+      "category": "productivity",
+      "category_labels": {
+        "en": "Productivity",
+        "zh-Hant": "效率工具"
+      },
+      "summaries": {
+        "en": "100 Notes Studio is a private, offline workspace for handwriting, typed notes, PDF markup, page-attached audio recordings and study.",
+        "zh-Hant": "把手寫、鍵入、PDF 閱讀標註、頁面錄音與學習複習整合到一個安靜的工作空間。100 Notes Studio 以平板體驗為主，也為手機提供完整流程；核心編輯不需連網即可使用。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Free to start",
+        "One-time unlock",
+        "No subscription"
+      ],
+      "keywords": [
+        "handwriting notes app ipad",
+        "pdf markup and handwriting in one app",
+        "notes app no subscription",
+        "offline notes app no account",
+        "annotate lecture pdfs by hand",
+        "apple pencil note taking app"
+      ],
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
+      "verified_live": true
+    },
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
@@ -33,8 +77,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -77,8 +121,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -164,8 +208,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -208,8 +252,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -253,8 +297,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -342,8 +386,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -430,8 +474,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -524,8 +568,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -573,8 +617,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -618,8 +662,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -708,8 +752,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -798,8 +842,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -888,8 +932,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -978,8 +1022,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -1023,8 +1067,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -1067,8 +1111,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -1108,8 +1152,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -1154,8 +1198,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -1198,8 +1242,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -1242,8 +1286,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -1287,8 +1331,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -1331,8 +1375,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -1376,8 +1420,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -1469,8 +1513,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -1513,8 +1557,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -1558,8 +1602,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -1648,8 +1692,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [
@@ -1733,8 +1777,8 @@
       },
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_labels": {
-        "en": "Free to start · lifetime unlock",
-        "zh-Hant": "免費開始 · 永久解鎖"
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
       },
       "one_time_option": true,
       "features": [

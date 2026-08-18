@@ -176,7 +176,7 @@ UI = {
         "all_purchase": "全部目前模式",
         "one_time": "任何一次性付費選項",
         "paid_upfront": "付費下載",
-        "free_with_lifetime_unlock": "免費開始 · 永久解鎖",
+        "free_with_lifetime_unlock": "免費開始 · 一次購買解鎖",
         "free": "免費",
         "flexible": "彈性模式 · 查看上架頁",
         "neutral": "查看目前上架頁",
@@ -197,7 +197,7 @@ UI = {
         "category_labels": gen_app_catalog.L10N["zh-Hant"]["categories"],
         "purchase_labels": {
             "paid_upfront": "付費下載",
-            "free_with_lifetime_unlock": "免費開始 · 永久解鎖",
+            "free_with_lifetime_unlock": "免費開始 · 一次購買解鎖",
             "free": "免費",
             "flexible": "彈性模式 · 查看上架頁",
             "neutral": "查看目前上架頁",
@@ -1736,8 +1736,11 @@ def build(
         pages / "apps.json",
         legacy_apps_json(records, pages),
     )
+    # Every live app must own a persona; personas for apps that exist in
+    # App Store Connect but are not public yet (the catch-up pipeline
+    # requires those ahead of launch) must not downgrade the finder.
     expected_live = set(publisher_intent_catalog.PERSONAS)
-    if {str(key) for key in live_keys} == expected_live:
+    if {str(key) for key in live_keys} <= expected_live:
         publisher_intent_catalog.build(pages)
         page_records = localized_page_records(records, pages)
         page_locales = ["en", *OFFICIAL_LOCALES]
@@ -1778,11 +1781,17 @@ def build(
 def main() -> None:
     live = live_app_keys(APPSTORE, str(PAGES), refresh=False)
     expected = set(publisher_intent_catalog.PERSONAS)
-    if set(live) != expected:
+    uncovered = set(live) - expected
+    if uncovered:
         raise RuntimeError(
-            "The live portfolio and 50-locale buyer-intent catalog differ: "
-            f"missing={sorted(expected - set(live))}, "
-            f"unexpected={sorted(set(live) - expected)}"
+            "Live apps are missing from the 50-locale buyer-intent catalog: "
+            f"{sorted(uncovered)}"
+        )
+    prelaunch = expected - set(live)
+    if prelaunch:
+        print(
+            "pre-launch personas (not yet public, excluded from the finder): "
+            f"{sorted(prelaunch)}"
         )
     for output in build(live_keys=live):
         print(f"portfolio app finder -> {output}")

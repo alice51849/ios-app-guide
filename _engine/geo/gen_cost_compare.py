@@ -72,12 +72,12 @@ def build(key):
     canon = f"{SITE}/answers/{slug}.html"
     if purchase_model == "free_with_lifetime_unlock":
         access_answer = (
-            f"Yes. {name} is free to download, with a one-time lifetime "
+            f"Yes. {name} is free to download, with a one-time "
             "unlock for complete access and no recurring charge. Check the "
             "current App Store listing before unlocking."
         )
         alternative_intro = (
-            f"{name} is free to download, then offers a one-time lifetime "
+            f"{name} is free to download, then offers a one-time "
             "unlock instead of a recurring subscription."
         )
         disclosure = (

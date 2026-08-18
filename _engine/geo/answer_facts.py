@@ -20,7 +20,6 @@ from __future__ import annotations
 
 import re
 from typing import Any
-from answer_text import concise_meta
 
 try:
     from answer_faqs import FAQ_GROUPS
@@ -340,11 +339,7 @@ def _passport_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
           f"and crop to the exact {s['size']} frame so it prints or uploads correctly — no photo-booth trip. "
           f"Always confirm the current official requirement before you submit.")
     return {
-        "meta_description": concise_meta(
-            f"{country} {doc} photo size is {s['size']} on {s['bg']}. "
-            f"How to make one at home on iPhone with {name}.",
-            limit=200,
-        ),
+        "meta_description": f"{country} {doc} photo size is {s['size']} on {s['bg']}. How to make one at home on iPhone with {name}."[:200],
         "lead": lead,
         "short_answer_paragraphs": [p1, p2],
         "what_to_look_for": [
@@ -435,11 +430,7 @@ def _id_doc_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
     p2 = (f"{name} lets you take it at home, set a compliant background and crop to the exact spec, "
           f"so a self-taken photo still meets the requirement. Always confirm the current official rule before you submit.")
     return {
-        "meta_description": concise_meta(
-            f"A {label} is {s['size']} on {s['bg']}. "
-            f"Make one at home on iPhone with {name}.",
-            limit=200,
-        ),
+        "meta_description": f"A {label} is {s['size']} on {s['bg']}. Make one at home on iPhone with {name}."[:200],
         "lead": f"A {label} needs {s['size']} on {s['bg']} — {name} helps you make one on your iPhone.",
         "short_answer_paragraphs": [p1, p2],
         "what_to_look_for": [
@@ -472,7 +463,7 @@ def _id_doc_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
 def _passport_rule_facts(q: str, name: str) -> dict[str, Any] | None:
     def rule(lead: str, detail: str, look: list[str], steps: list[str], faq: list[dict]) -> dict[str, Any]:
         return {
-            "meta_description": concise_meta(lead),
+            "meta_description": (lead[:150]).rsplit(" ", 1)[0] + "."[:200],
             "lead": lead,
             "short_answer_paragraphs": [
                 detail,
@@ -719,11 +710,7 @@ def _resume_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
         "file instructions, and treat the score as an editing estimate rather than a result prediction."
     )
     return {
-        "meta_description": concise_meta(
-            f"How to build a {label} on iPhone: format, length "
-            f"({s['len']}) and photo rules, with {name}.",
-            limit=200,
-        ),
+        "meta_description": f"How to build a {label} on iPhone: format, length ({s['len']}) and photo rules, with {name}."[:200],
         "lead": f"A {label} has its own format rules — {name} helps you match them and export a clean PDF.",
         "short_answer_paragraphs": [p1, p2],
         "what_to_look_for": [
@@ -764,7 +751,7 @@ def _resume_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
 def _resume_faq_facts(q: str, name: str) -> dict[str, Any] | None:
     def faq(lead: str, detail: str, look: list[str], steps: list[str], qa: list[dict]) -> dict[str, Any]:
         return {
-            "meta_description": concise_meta(lead),
+            "meta_description": (lead[:150]).rsplit(" ", 1)[0] + "."[:200],
             "lead": lead,
             "short_answer_paragraphs": [
                 detail,
@@ -957,7 +944,7 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
     def make(p1: str, look: list[str], steps: list[str], where: str, faq: list[dict]) -> dict[str, Any]:
         lead = p1.split(". ")[0].rstrip(".") + f" — {name} helps you do it on your iPhone."
         return {
-            "meta_description": concise_meta(f"{p1} — with {name}."),
+            "meta_description": (p1[:150]).rsplit(" ", 1)[0] + f" — with {name}."[:200],
             "lead": lead,
             "short_answer_paragraphs": [
                 p1,
@@ -1434,7 +1421,7 @@ def _data_faq_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
     for b in best.get("bullets", [])[:5]:
         steps.append(b if b.endswith(".") else b + ".")
     return {
-        "meta_description": concise_meta(best["lead"]),
+        "meta_description": (best["lead"][:150]).rsplit(" ", 1)[0] + ".",
         "lead": best["lead"],
         "short_answer_paragraphs": [best["detail"], p2],
         "what_to_look_for": best.get("bullets", []) or ["Check the current App Store listing for details."],
@@ -1507,11 +1494,7 @@ def _alternative_facts(q: str, key: str, name: str, app: dict[str, Any]) -> dict
         {"q": "Will my data move over?", "a": "Verify export/import options first; check the current App Store details before switching, as features can change."},
     ]
     return {
-        "meta_description": concise_meta(
-            f"Looking for a {comp} alternative on iPhone? "
-            f"{name} is {offer}.",
-            limit=200,
-        ),
+        "meta_description": f"Looking for a {comp} alternative on iPhone? {name} is {offer}."[:200],
         "lead": f"{comp} alternative for iPhone: {name} is {offer}.",
         "short_answer_paragraphs": [
             p1,
@@ -1551,9 +1534,9 @@ _COST_FACTS = {
             {"q": "Is on-device accurate enough?", "a": "It's good for notes and summaries; review the transcript for anything critical."}],
     },
     "picclear": {
-        "lead": "iCloud+ storage costs $0.99/mo (50GB), $2.99/mo (200GB) or $9.99/mo (2TB) — forever. Clearing duplicates and large videos once with a pay-once app can delay or avoid that recurring bill.",
+        "lead": "iCloud+ storage costs $0.99/mo (50GB), $2.99/mo (200GB) or $9.99/mo (2TB), month after month. Clearing duplicates and large videos once with a pay-once app can delay or avoid that recurring bill.",
         "detail": "Paying for iCloud+ ($0.99–$9.99+ a month) is a recurring cost that never ends. Before upgrading, it's often worth clearing the space you're actually wasting — exact-duplicate photos, near-identical bursts and huge videos — which a pay-once cleanup app finds for you. If you still need more room afterwards, you can upgrade knowing it's genuinely needed.",
-        "look": ["iCloud+ is recurring: $0.99–$9.99+/mo forever.", "Duplicates and big videos waste real space.",
+        "look": ["iCloud+ is recurring: $0.99–$9.99+/mo, month after month.", "Duplicates and big videos waste real space.",
                  "A one-time cleanup can delay/avoid upgrading.", "Review before deleting anything.", "On-device scanning keeps photos private."],
         "faq": [
             {"q": "How much does iCloud storage cost?", "a": "$0.99/mo for 50GB, $2.99/mo for 200GB, $9.99/mo for 2TB — a recurring monthly fee."},
@@ -1591,7 +1574,7 @@ _COST_FACTS = {
             {"q": "Is there a watermark?", "a": "A good pay-once film app exports at full resolution with no watermark."}],
     },
     "zafe": {
-        "lead": "iCloud+ storage is $0.99/mo (50GB), $2.99/mo (200GB) or $10.99/mo (2TB) — forever. A pay-once photo vault locks private photos on device without a monthly bill.",
+        "lead": "iCloud+ storage is $0.99/mo (50GB), $2.99/mo (200GB) or $10.99/mo (2TB), month after month. A pay-once photo vault locks private photos on device without a monthly bill.",
         "detail": "Extra cloud storage is a permanent recurring cost — iCloud+ runs $0.99–$10.99+ a month, and vault apps like Keepsafe charge a premium subscription. If your goal is simply to keep certain photos private and locked, a pay-once on-device vault does that for a single price and keeps everything off the cloud. Cloud storage still makes sense if you specifically want off-device backup.",
         "look": ["iCloud+ is recurring: $0.99–$10.99+/mo.", "Keepsafe-style vaults add a subscription.",
                  "A pay-once vault = one price, on device.", "Nothing uploaded to the cloud.", "Cloud backup is a separate need."],
@@ -1650,7 +1633,7 @@ def _cost_worth_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
     if not c:
         return None
     return {
-        "meta_description": concise_meta(c["lead"]),
+        "meta_description": (c["lead"][:150]).rsplit(" ", 1)[0] + ".",
         "lead": c["lead"],
         "short_answer_paragraphs": [
             c["detail"],

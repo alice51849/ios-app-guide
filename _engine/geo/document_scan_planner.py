@@ -350,7 +350,7 @@ COPY = {
     "app_title": "需要 iPhone 紙本轉 PDF 工作流程？",
     "app_text": (
       "ScanTo Pro 是選用 iPhone 工具；目前商店頁說明包含文件掃描、PDF 建立、"
-      "OCR 搜尋及 Face ID 文件保護，並提供一次性終身解鎖。供應地區與確切功能"
+      "OCR 搜尋及 Face ID 文件保護，並提供一次性解鎖。供應地區與確切功能"
       "請以目前商店頁為準；這個免費規劃器不需 App 也能使用。"
     ),
     "app_cta": "在 App Store 查看 ScanTo Pro",
@@ -457,7 +457,7 @@ COPY = {
     "webmcp_source": "Vista previa de la API imperativa WebMCP de Chrome (sujeta a cambios)",
     "webmcp_description": "Calcula un plan privado con valores acotados de papel, detalle, color, orientación y páginas. Devuelve píxeles exactos y límites raster sin comprimir sin recibir, leer, subir, guardar ni procesar por OCR documentos, y sin prometer precisión ni cumplimiento.",
     "app_title": "¿Necesitas un flujo de papel a PDF en iPhone?",
-    "app_text": "ScanTo Pro es una herramienta opcional para iPhone cuya ficha actual describe escaneo de documentos, creación de PDF, búsqueda OCR y protección con Face ID mediante un desbloqueo vitalicio de pago único. Consulta la ficha vigente para conocer disponibilidad y funciones exactas. Este planificador funciona sin la app.",
+    "app_text": "ScanTo Pro es una herramienta opcional para iPhone cuya ficha actual describe escaneo de documentos, creación de PDF, búsqueda OCR y protección con Face ID mediante un desbloqueo de pago único. Consulta la ficha vigente para conocer disponibilidad y funciones exactas. Este planificador funciona sin la app.",
     "app_cta": "Ver ScanTo Pro en App Store",
     "faq_title": "Preguntas antes de escanear",
     "faq": (
@@ -643,7 +643,7 @@ COPY = {
     "webmcp_source": "Vorschau der imperativen Chrome-WebMCP-API (Änderungen vorbehalten)",
     "webmcp_description": "Berechnet aus begrenzten Papier-, Detail-, Farb-, Ausrichtungs- und Seitenangaben einen privaten Scanplan. Gibt exakte Pixel und transparente unkomprimierte Rastergrenzen zurück, ohne Dokumente anzunehmen, zu lesen, hochzuladen, zu speichern oder per OCR zu verarbeiten und ohne Genauigkeit oder Konformität zu versprechen.",
     "app_title": "Wird ein Papier-zu-PDF-Ablauf auf dem iPhone benötigt?",
-    "app_text": "ScanTo Pro ist ein optionales iPhone-Werkzeug. Laut aktuellem Store-Eintrag bietet es Dokumentenscans, PDF-Erstellung, OCR-Suche und Dokumentenschutz per Face ID mit einmaliger lebenslanger Freischaltung. Verfügbarkeit und genaue Funktionen bitte im aktuellen Eintrag prüfen. Dieser Planer funktioniert ohne App.",
+    "app_text": "ScanTo Pro ist ein optionales iPhone-Werkzeug. Laut aktuellem Store-Eintrag bietet es Dokumentenscans, PDF-Erstellung, OCR-Suche und Dokumentenschutz per Face ID mit einmaliger Freischaltung. Verfügbarkeit und genaue Funktionen bitte im aktuellen Eintrag prüfen. Dieser Planer funktioniert ohne App.",
     "app_cta": "ScanTo Pro im App Store ansehen",
     "faq_title": "Fragen vor dem Scannen",
     "faq": (
@@ -922,7 +922,7 @@ COPY = {
     "webmcp_source": "Chrome WebMCP 명령형 API 미리보기(변경될 수 있음)",
     "webmcp_description": "범위가 제한된 용지, 세부 수준, 색상, 방향과 페이지 수로 비공개 스캔 계획을 계산합니다. 문서를 수신, 읽기, 업로드, 저장 또는 OCR 처리하지 않고 정확도나 규정 준수를 주장하지 않으며 정확한 픽셀 크기와 비압축 래스터 범위를 반환합니다.",
     "app_title": "iPhone에서 종이를 PDF로 만드는 과정이 필요한가요?",
-    "app_text": "ScanTo Pro는 선택적으로 사용할 수 있는 iPhone 도구입니다. 현재 스토어 설명에는 문서 스캔, PDF 생성, OCR 검색, Face ID 문서 보호와 일회성 평생 잠금 해제가 기재되어 있습니다. 제공 여부와 정확한 기능은 현재 스토어 설명을 확인하세요. 이 무료 계획 도구는 App 없이도 작동합니다.",
+    "app_text": "ScanTo Pro는 선택적으로 사용할 수 있는 iPhone 도구입니다. 현재 스토어 설명에는 문서 스캔, PDF 생성, OCR 검색, Face ID 문서 보호와 일회성 한 번 구매 잠금 해제가 기재되어 있습니다. 제공 여부와 정확한 기능은 현재 스토어 설명을 확인하세요. 이 무료 계획 도구는 App 없이도 작동합니다.",
     "app_cta": "App Store에서 ScanTo Pro 보기",
     "faq_title": "스캔 전 질문",
     "faq": (
@@ -1015,7 +1015,7 @@ COPY = {
     "webmcp_source": "Chrome WebMCP 命令式 API 预览（规范可能变更）",
     "webmcp_description": "仅用有界的纸张、细节、色彩、方向与页数输入计算私密文档扫描规划，返回精确像素与透明的未压缩容量边界；不接收、读取、上传、存储或 OCR 处理文档，也不宣称准确度或规范符合性。",
     "app_title": "需要 iPhone 纸质文档转 PDF 流程？",
-    "app_text": "ScanTo Pro 是可选的 iPhone 工具；当前商店页面说明包含文档扫描、PDF 创建、OCR 搜索及 Face ID 文档保护，并提供一次性终身解锁。供应地区与确切功能请以当前商店页面为准；这个免费规划器无需 App 也能使用。",
+    "app_text": "ScanTo Pro 是可选的 iPhone 工具；当前商店页面说明包含文档扫描、PDF 创建、OCR 搜索及 Face ID 文档保护，并提供一次性一次购买解锁。供应地区与确切功能请以当前商店页面为准；这个免费规划器无需 App 也能使用。",
     "app_cta": "在 App Store 查看 ScanTo Pro",
     "faq_title": "扫描前常见问题",
     "faq": (
@@ -1094,7 +1094,7 @@ COPY = {
     "webmcp_source": "Bản xem trước API mệnh lệnh Chrome WebMCP (có thể thay đổi)",
     "webmcp_description": "Tính kế hoạch quét tài liệu riêng tư từ các lựa chọn giấy, chi tiết, màu, hướng và số trang có giới hạn. Trả về kích thước pixel chính xác và giới hạn raster chưa nén minh bạch, không nhận, đọc, tải lên, lưu hay OCR tài liệu, và không tuyên bố độ chính xác hay tuân thủ.",
     "app_title": "Cần quy trình giấy-sang-PDF trên iPhone?",
-    "app_text": "ScanTo Pro là công cụ iPhone tùy chọn; trang hiện tại mô tả quét tài liệu, tạo PDF, tìm kiếm OCR và bảo vệ tài liệu bằng Face ID với mở khóa trọn đời một lần. Kiểm tra trang hiện tại để biết tính năng chính xác. Công cụ miễn phí này hoạt động không cần ứng dụng.",
+    "app_text": "ScanTo Pro là công cụ iPhone tùy chọn; trang hiện tại mô tả quét tài liệu, tạo PDF, tìm kiếm OCR và bảo vệ tài liệu bằng Face ID với mở khóa một lần. Kiểm tra trang hiện tại để biết tính năng chính xác. Công cụ miễn phí này hoạt động không cần ứng dụng.",
     "app_cta": "Xem ScanTo Pro trên App Store",
     "faq_title": "Câu hỏi trước khi quét",
     "faq": (
@@ -1173,7 +1173,7 @@ COPY = {
     "webmcp_source": "ตัวอย่าง API เชิงคำสั่ง Chrome WebMCP (อาจเปลี่ยนแปลง)",
     "webmcp_description": "คำนวณแผนสแกนเอกสารส่วนตัวจากตัวเลือกกระดาษ รายละเอียด สี แนว และจำนวนหน้าแบบมีขอบเขต คืนขนาดพิกเซลแน่นอนและขอบเขตราสเตอร์ไม่บีบอัดโปร่งใส โดยไม่รับ อ่าน อัปโหลด เก็บ หรือ OCR เอกสาร และไม่อ้างความแม่นยำหรือการปฏิบัติตามกฎ",
     "app_title": "ต้องการเวิร์กโฟลว์กระดาษเป็น PDF บน iPhone ไหม?",
-    "app_text": "ScanTo Pro เป็นเครื่องมือ iPhone แบบเลือกได้ หน้าปัจจุบันอธิบายการสแกนเอกสาร สร้าง PDF ค้นหา OCR และปกป้องเอกสารด้วย Face ID พร้อมปลดล็อกตลอดชีพครั้งเดียว ตรวจหน้าปัจจุบันสำหรับฟีเจอร์ที่แน่นอน เครื่องมือฟรีนี้ใช้ได้โดยไม่ต้องมีแอป",
+    "app_text": "ScanTo Pro เป็นเครื่องมือ iPhone แบบเลือกได้ หน้าปัจจุบันอธิบายการสแกนเอกสาร สร้าง PDF ค้นหา OCR และปกป้องเอกสารด้วย Face ID พร้อมปลดล็อกครั้งเดียว ตรวจหน้าปัจจุบันสำหรับฟีเจอร์ที่แน่นอน เครื่องมือฟรีนี้ใช้ได้โดยไม่ต้องมีแอป",
     "app_cta": "ดู ScanTo Pro บน App Store",
     "faq_title": "คำถามก่อนสแกน",
     "faq": (
@@ -1252,7 +1252,7 @@ COPY = {
     "webmcp_source": "Pratinjau API imperatif Chrome WebMCP (dapat berubah)",
     "webmcp_description": "Hitung rencana pindai dokumen privat dari input kertas, detail, warna, orientasi, dan jumlah halaman yang terbatas. Kembalikan dimensi piksel persis dan batas raster tak terkompresi yang transparan tanpa menerima, membaca, mengunggah, menyimpan, atau meng-OCR dokumen, dan tanpa mengklaim akurasi atau kepatuhan.",
     "app_title": "Perlu alur kertas-ke-PDF di iPhone?",
-    "app_text": "ScanTo Pro adalah alat iPhone opsional; halaman terbarunya menjelaskan pemindaian dokumen, pembuatan PDF, pencarian OCR, dan perlindungan dokumen Face ID dengan buka kunci seumur hidup sekali bayar. Periksa halaman terbaru untuk fitur pastinya. Perencana gratis ini bekerja tanpa aplikasi tersebut.",
+    "app_text": "ScanTo Pro adalah alat iPhone opsional; halaman terbarunya menjelaskan pemindaian dokumen, pembuatan PDF, pencarian OCR, dan perlindungan dokumen Face ID dengan buka kunci sekali bayar. Periksa halaman terbaru untuk fitur pastinya. Perencana gratis ini bekerja tanpa aplikasi tersebut.",
     "app_cta": "Lihat ScanTo Pro di App Store",
     "faq_title": "Pertanyaan sebelum memindai",
     "faq": (
@@ -1331,7 +1331,7 @@ COPY = {
     "webmcp_source": "Chrome WebMCP buyruk API önizlemesi (değişebilir)",
     "webmcp_description": "Sınırlı kâğıt, ayrıntı, renk, yön ve sayfa sayısı girdilerinden gizli bir belge tarama planı hesaplar. Belge almadan, okumadan, yüklemeden, saklamadan veya OCR işlemeden; doğruluk ya da uygunluk iddia etmeden tam piksel boyutları ve şeffaf sıkıştırılmamış raster sınırları döndürür.",
     "app_title": "iPhone'da kâğıttan PDF'e bir akış mı gerekiyor?",
-    "app_text": "ScanTo Pro isteğe bağlı bir iPhone aracıdır; güncel sayfası belge taramayı, PDF oluşturmayı, OCR aramayı ve tek seferlik ömür boyu kilit açmayla Face ID belge korumasını anlatır. Kesin özellikler için güncel sayfayı kontrol edin. Bu ücretsiz planlayıcı uygulama olmadan da çalışır.",
+    "app_text": "ScanTo Pro isteğe bağlı bir iPhone aracıdır; güncel sayfası belge taramayı, PDF oluşturmayı, OCR aramayı ve tek seferlik kilit açmayla Face ID belge korumasını anlatır. Kesin özellikler için güncel sayfayı kontrol edin. Bu ücretsiz planlayıcı uygulama olmadan da çalışır.",
     "app_cta": "App Store'da ScanTo Pro'yu görüntüle",
     "faq_title": "Taramadan önce sorular",
     "faq": (
@@ -1410,7 +1410,7 @@ COPY = {
     "webmcp_source": "Chrome WebMCP अनिवार्य API पूर्वावलोकन (परिवर्तनशील)",
     "webmcp_description": "सीमित काग़ज़, विवरण, रंग, दिशा और पृष्ठ-संख्या इनपुट से एक निजी दस्तावेज़ स्कैन योजना गणना करता है। दस्तावेज़ लिए, पढ़े, अपलोड, संग्रहीत या OCR किए बिना; सटीकता या उपयुक्तता का दावा किए बिना सटीक पिक्सेल आयाम और पारदर्शी असम्पीड़ित रास्टर सीमाएँ लौटाता है।",
     "app_title": "iPhone पर काग़ज़-से-PDF फ़्लो चाहिए?",
-    "app_text": "ScanTo Pro एक वैकल्पिक iPhone उपकरण है; इसका वर्तमान पृष्ठ दस्तावेज़ स्कैन, PDF निर्माण, OCR खोज और एक-बार आजीवन अनलॉक के साथ Face ID दस्तावेज़-सुरक्षा बताता है। सटीक विशेषताओं के लिए वर्तमान पृष्ठ जाँचें। यह मुफ़्त योजनाकार ऐप के बिना भी काम करता है।",
+    "app_text": "ScanTo Pro एक वैकल्पिक iPhone उपकरण है; इसका वर्तमान पृष्ठ दस्तावेज़ स्कैन, PDF निर्माण, OCR खोज और एक-बार अनलॉक के साथ Face ID दस्तावेज़-सुरक्षा बताता है। सटीक विशेषताओं के लिए वर्तमान पृष्ठ जाँचें। यह मुफ़्त योजनाकार ऐप के बिना भी काम करता है।",
     "app_cta": "App Store पर ScanTo Pro देखें",
     "faq_title": "स्कैन से पहले प्रश्न",
     "faq": (
@@ -1489,7 +1489,7 @@ COPY = {
     "webmcp_source": "Pratonton API imperatif Chrome WebMCP (boleh berubah)",
     "webmcp_description": "Mengira pelan imbasan dokumen peribadi daripada input kertas, perincian, warna, orientasi dan bilangan halaman yang terhad. Memulangkan dimensi piksel tepat dan had raster tak termampat yang telus tanpa menerima, membaca, memuat naik, menyimpan atau membuat OCR dokumen dan tanpa mendakwa ketepatan atau kesesuaian.",
     "app_title": "Perlukan aliran kertas-ke-PDF di iPhone?",
-    "app_text": "ScanTo Pro ialah alat iPhone pilihan; halaman semasanya menerangkan imbasan dokumen, penciptaan PDF, carian OCR dan perlindungan dokumen Face ID dengan buka kunci seumur hidup sekali bayar. Semak halaman semasa untuk ciri tepat. Perancang percuma ini berfungsi tanpa aplikasi.",
+    "app_text": "ScanTo Pro ialah alat iPhone pilihan; halaman semasanya menerangkan imbasan dokumen, penciptaan PDF, carian OCR dan perlindungan dokumen Face ID dengan buka kunci sekali bayar. Semak halaman semasa untuk ciri tepat. Perancang percuma ini berfungsi tanpa aplikasi.",
     "app_cta": "Lihat ScanTo Pro di App Store",
     "faq_title": "Soalan sebelum mengimbas",
     "faq": (
@@ -1647,7 +1647,7 @@ COPY = {
     "webmcp_source": "Попередня версія імперативного API Chrome WebMCP (може змінюватися)",
     "webmcp_description": "Рахує приватний план сканування документів з обмежених вхідних: папір, деталізація, колір, орієнтація й кількість сторінок. Повертає точні розміри в пікселях і прозорі ліміти нестисненого растру — не приймаючи, не читаючи, не завантажуючи, не зберігаючи й не розпізнаючи документи та не заявляючи точність чи придатність.",
     "app_title": "Потрібен потік «папір → PDF» на iPhone?",
-    "app_text": "ScanTo Pro — необов'язковий інструмент для iPhone; його поточна сторінка описує сканування документів, створення PDF, пошук за OCR і захист документів Face ID з разовим довічним розблокуванням. Точні функції дивіться на актуальній сторінці. Цей безкоштовний планувальник працює й без застосунку.",
+    "app_text": "ScanTo Pro — необов'язковий інструмент для iPhone; його поточна сторінка описує сканування документів, створення PDF, пошук за OCR і захист документів Face ID з разовим розблокуванням. Точні функції дивіться на актуальній сторінці. Цей безкоштовний планувальник працює й без застосунку.",
     "app_cta": "Відкрити ScanTo Pro в App Store",
     "faq_title": "Питання перед скануванням",
     "faq": (
@@ -1726,7 +1726,7 @@ COPY = {
     "webmcp_source": "Podgląd imperatywnego API Chrome WebMCP (może się zmienić)",
     "webmcp_description": "Oblicza prywatny plan skanowania dokumentów z ograniczonych danych: papier, szczegółowość, kolor, orientacja i liczba stron. Zwraca dokładne wymiary w pikselach i przejrzyste limity nieskompresowanego rastra — nie przyjmując, nie czytając, nie przesyłając, nie przechowując ani nie wykonując OCR dokumentów i nie deklarując dokładności ani przydatności.",
     "app_title": "Potrzebujesz przepływu papier → PDF na iPhonie?",
-    "app_text": "ScanTo Pro to opcjonalne narzędzie na iPhone'a; jego bieżąca strona opisuje skanowanie dokumentów, tworzenie PDF, wyszukiwanie OCR i ochronę dokumentów Face ID z jednorazowym dożywotnim odblokowaniem. Dokładne funkcje sprawdź na aktualnej stronie. Ten bezpłatny planer działa też bez aplikacji.",
+    "app_text": "ScanTo Pro to opcjonalne narzędzie na iPhone'a; jego bieżąca strona opisuje skanowanie dokumentów, tworzenie PDF, wyszukiwanie OCR i ochronę dokumentów Face ID z jednorazowym odblokowaniem. Dokładne funkcje sprawdź na aktualnej stronie. Ten bezpłatny planer działa też bez aplikacji.",
     "app_cta": "Zobacz ScanTo Pro w App Store",
     "faq_title": "Pytania przed skanowaniem",
     "faq": (
@@ -1805,7 +1805,7 @@ COPY = {
     "webmcp_source": "Chrome WebMCP கட்டளை API முன்னோட்டம் (மாறக்கூடும்)",
     "webmcp_description": "வரம்பிட்ட காகிதம், விவரம், வண்ணம், திசை, பக்க எண்ணிக்கை உள்ளீடுகளிலிருந்து தனியுரிமை ஆவண ஸ்கேன் திட்டத்தைக் கணக்கிடுகிறது. ஆவணங்களை எடுக்காமல், படிக்காமல், பதிவேற்றாமல், சேமிக்காமல், OCR செய்யாமல்; துல்லியமோ தகுதியோ கூறாமல் துல்லியமான பிக்சல் பரிமாணங்களையும் வெளிப்படையான அழுத்தப்படாத ராஸ்டர் வரம்புகளையும் தருகிறது.",
     "app_title": "iPhone-இல் காகிதம்→PDF ஓட்டம் தேவையா?",
-    "app_text": "ScanTo Pro ஒரு விருப்ப iPhone கருவி; அதன் தற்போதைய பக்கம் ஆவண ஸ்கேன், PDF உருவாக்கம், OCR தேடல், ஒருமுறை வாழ்நாள் திறப்புடன் Face ID ஆவணப் பாதுகாப்பை விவரிக்கிறது. துல்லியமான அம்சங்களைத் தற்போதைய பக்கத்தில் பார்க்கவும். இந்த இலவசத் திட்டமிடி ஆப் இல்லாமலும் இயங்கும்.",
+    "app_text": "ScanTo Pro ஒரு விருப்ப iPhone கருவி; அதன் தற்போதைய பக்கம் ஆவண ஸ்கேன், PDF உருவாக்கம், OCR தேடல், ஒருமுறை திறப்புடன் Face ID ஆவணப் பாதுகாப்பை விவரிக்கிறது. துல்லியமான அம்சங்களைத் தற்போதைய பக்கத்தில் பார்க்கவும். இந்த இலவசத் திட்டமிடி ஆப் இல்லாமலும் இயங்கும்.",
     "app_cta": "App Store-இல் ScanTo Pro-ஐப் பார்க்கவும்",
     "faq_title": "ஸ்கேன் செய்யும் முன் கேள்விகள்",
     "faq": (

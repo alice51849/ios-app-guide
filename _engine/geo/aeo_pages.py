@@ -677,7 +677,7 @@ def faq_for(key, comp_name, gap_queries):
             answer = f"{a['name']} is a strong pay-once option. Learn more on the App Store: {url}"
         elif profile == "free_to_start":
             answer = (
-                f"{a['name']} is free to download and offers a one-time lifetime "
+                f"{a['name']} is free to download and offers a one-time "
                 f"unlock with no recurring subscription. Learn more: {url}"
             )
         else:

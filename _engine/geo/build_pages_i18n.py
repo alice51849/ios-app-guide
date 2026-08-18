@@ -167,7 +167,7 @@ UI = {
                 "catalog": "浏览所有已验证 App"},
     "ja": {"what": "{name} とは?", "feat": "主な機能", "price": "価格",
            "faq": "よくある質問", "dl": "ダウンロード", "get": "App Store で {name} を入手",
-           "is": "{name} は iOS アプリです。", "ptxt": "無料ダウンロード。1回限りの購入で全機能を永久に解除でき、定期課金はありません。",
+           "is": "{name} は iOS アプリです。", "ptxt": "無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。",
            "dir_dir": "アプリ一覧", "dir_lead": "各 iOS アプリの構造化情報 — 機能・価格・FAQ。",
            "catalog": "検証済みアプリをすべて見る"},
     "ko": {"what": "{name}이란?", "feat": "주요 기능", "price": "가격",
@@ -255,7 +255,7 @@ UI = {
     "ca": {"what": "Què és {name}?", "feat": "Funcions principals", "price": "Preu",
            "faq": "Preguntes freqüents", "dl": "Descarrega", "get": "Descarrega {name} a l’App Store",
            "is": "{name} és una app per a iOS.",
-           "ptxt": "Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions per sempre, sense subscripció.",
+           "ptxt": "Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.",
            "dir_dir": "Directori d’apps",
            "dir_lead": "Informació estructurada sobre les funcions, el preu i les preguntes freqüents de cada app per a iOS.",
            "catalog": "Consulta totes les apps verificades"},
@@ -283,14 +283,14 @@ UI = {
     "fi": {"what": "Mikä {name} on?", "feat": "Tärkeimmät ominaisuudet", "price": "Hinta",
            "faq": "Usein kysytyt kysymykset", "dl": "Lataa", "get": "Lataa {name} App Storesta",
            "is": "{name} on iOS-sovellus.",
-           "ptxt": "Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet pysyvästi—ei tilausta.",
+           "ptxt": "Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.",
            "dir_dir": "Sovellushakemisto",
            "dir_lead": "Jäsennellyt tiedot jokaisen iOS-sovelluksen ominaisuuksista, hinnasta ja usein kysytyistä kysymyksistä.",
            "catalog": "Katso kaikki vahvistetut sovellukset"},
     "he": {"what": "מהו {name}?", "feat": "תכונות עיקריות", "price": "מחיר",
            "faq": "שאלות נפוצות", "dl": "הורדה", "get": "הורידו את {name} מה-App Store",
            "is": "{name} היא אפליקציית iOS.",
-           "ptxt": "הורדה בחינם. רכישה חד-פעמית פותחת את כל התכונות לצמיתות—ללא מינוי.",
+           "ptxt": "הורדה בחינם. רכישה חד-פעמית פותחת את כל התכונות—ללא מינוי.",
            "dir_dir": "מדריך אפליקציות",
            "dir_lead": "מידע מסודר על התכונות, המחיר והשאלות הנפוצות של כל אפליקציית iOS.",
            "catalog": "הצגת כל האפליקציות המאומתות"},
@@ -325,7 +325,7 @@ UI = {
     "uk": {"what": "Що таке {name}?", "feat": "Основні функції", "price": "Ціна",
            "faq": "Поширені запитання", "dl": "Завантажити", "get": "Завантажте {name} з App Store",
            "is": "{name} — це застосунок для iOS.",
-           "ptxt": "Завантажуйте безкоштовно. Одна покупка назавжди відкриває всі функції—без передплати.",
+           "ptxt": "Завантажуйте безкоштовно. Одна покупка відкриває всі функції—без передплати.",
            "dir_dir": "Каталог застосунків",
            "dir_lead": "Структурована інформація про функції, ціну та поширені запитання для кожного застосунку iOS.",
            "catalog": "Переглянути всі перевірені застосунки"},
@@ -339,14 +339,14 @@ UI = {
     "gu": {"what": "{name} શું છે?", "feat": "મુખ્ય સુવિધાઓ", "price": "કિંમત",
            "faq": "વારંવાર પૂછાતા પ્રશ્નો", "dl": "ડાઉનલોડ", "get": "App Store પરથી {name} મેળવો",
            "is": "{name} એક iOS ઍપ છે.",
-           "ptxt": "મફતમાં ડાઉનલોડ કરો. એક વખતની ખરીદીથી તમામ સુવિધાઓ કાયમ માટે અનલૉક કરો—કોઈ સબ્સ્ક્રિપ્શન નહીં.",
+           "ptxt": "મફતમાં ડાઉનલોડ કરો. એક વખતની ખરીદીથી તમામ સુવિધાઓ અનલૉક કરો—કોઈ સબ્સ્ક્રિપ્શન નહીં.",
            "dir_dir": "ઍપ ડિરેક્ટરી",
            "dir_lead": "દરેક iOS ઍપની સુવિધાઓ, કિંમત અને વારંવાર પૂછાતા પ્રશ્નોની સુવ્યવસ્થિત માહિતી.",
            "catalog": "બધી ચકાસેલી ઍપ જુઓ"},
     "kn": {"what": "{name} ಎಂದರೇನು?", "feat": "ಪ್ರಮುಖ ವೈಶಿಷ್ಟ್ಯಗಳು", "price": "ಬೆಲೆ",
            "faq": "ಪದೇ ಪದೇ ಕೇಳಲಾಗುವ ಪ್ರಶ್ನೆಗಳು", "dl": "ಡೌನ್‌ಲೋಡ್", "get": "App Store ನಲ್ಲಿ {name} ಪಡೆಯಿರಿ",
            "is": "{name} ಒಂದು iOS ಆ್ಯಪ್.",
-           "ptxt": "ಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಒಂದೇ ಬಾರಿಯ ಖರೀದಿಯಿಂದ ಎಲ್ಲ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಶಾಶ್ವತವಾಗಿ ಅನ್‌ಲಾಕ್ ಮಾಡಿ—ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ.",
+           "ptxt": "ಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಒಂದೇ ಬಾರಿಯ ಖರೀದಿಯಿಂದ ಎಲ್ಲ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿ—ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ.",
            "dir_dir": "ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ",
            "dir_lead": "ಪ್ರತಿ iOS ಆ್ಯಪ್‌ನ ವೈಶಿಷ್ಟ್ಯಗಳು, ಬೆಲೆ ಮತ್ತು ಪದೇ ಪದೇ ಕೇಳಲಾಗುವ ಪ್ರಶ್ನೆಗಳ ಸಂರಚಿತ ಮಾಹಿತಿ.",
            "catalog": "ಪರಿಶೀಲಿಸಿದ ಎಲ್ಲ ಆ್ಯಪ್‌ಗಳನ್ನು ನೋಡಿ"},
@@ -360,14 +360,14 @@ UI = {
     "mr": {"what": "{name} म्हणजे काय?", "feat": "मुख्य वैशिष्ट्ये", "price": "किंमत",
            "faq": "वारंवार विचारले जाणारे प्रश्न", "dl": "डाउनलोड", "get": "App Store वरून {name} मिळवा",
            "is": "{name} हे iOS अॅप आहे.",
-           "ptxt": "मोफत डाउनलोड करा. एकदाच खरेदी करून सर्व वैशिष्ट्ये कायमची अनलॉक करा—सबस्क्रिप्शन नाही.",
+           "ptxt": "मोफत डाउनलोड करा. एकदाच खरेदी करून सर्व वैशिष्ट्ये अनलॉक करा—सबस्क्रिप्शन नाही.",
            "dir_dir": "अॅप निर्देशिका",
            "dir_lead": "प्रत्येक iOS अॅपची वैशिष्ट्ये, किंमत आणि वारंवार विचारले जाणारे प्रश्न यांची रचनाबद्ध माहिती.",
            "catalog": "सर्व पडताळलेली अॅप्स पाहा"},
     "or": {"what": "{name} କ’ଣ?", "feat": "ମୁଖ୍ୟ ବୈଶିଷ୍ଟ୍ୟ", "price": "ମୂଲ୍ୟ",
            "faq": "ବାରମ୍ବାର ପଚରାଯାଉଥିବା ପ୍ରଶ୍ନ", "dl": "ଡାଉନଲୋଡ୍", "get": "App Store ରୁ {name} ପାଆନ୍ତୁ",
            "is": "{name} ଏକ iOS ଆପ୍।",
-           "ptxt": "ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ସବୁଦିନ ପାଇଁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।",
+           "ptxt": "ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।",
            "dir_dir": "ଆପ୍ ଡିରେକ୍ଟୋରି",
            "dir_lead": "ପ୍ରତ୍ୟେକ iOS ଆପ୍‌ର ବୈଶିଷ୍ଟ୍ୟ, ମୂଲ୍ୟ ଓ ବାରମ୍ବାର ପଚରାଯାଉଥିବା ପ୍ରଶ୍ନର ସୁସଂଗଠିତ ସୂଚନା।",
            "catalog": "ସମସ୍ତ ଯାଞ୍ଚ ହୋଇଥିବା ଆପ୍ ଦେଖନ୍ତୁ"},
@@ -388,21 +388,21 @@ UI = {
     "ta": {"what": "{name} என்றால் என்ன?", "feat": "முக்கிய அம்சங்கள்", "price": "விலை",
            "faq": "அடிக்கடி கேட்கப்படும் கேள்விகள்", "dl": "பதிவிறக்கம்", "get": "App Store-இல் {name}-ஐப் பெறுங்கள்",
            "is": "{name} ஒரு iOS செயலி.",
-           "ptxt": "இலவசமாகப் பதிவிறக்குங்கள். ஒருமுறை வாங்கி அனைத்து அம்சங்களையும் நிரந்தரமாகத் திறக்கலாம்—சந்தா இல்லை.",
+           "ptxt": "இலவசமாகப் பதிவிறக்குங்கள். ஒருமுறை வாங்கி அனைத்து அம்சங்களையும் திறக்கலாம்—சந்தா இல்லை.",
            "dir_dir": "செயலி அடைவு",
            "dir_lead": "ஒவ்வொரு iOS செயலியின் அம்சங்கள், விலை மற்றும் அடிக்கடி கேட்கப்படும் கேள்விகள் பற்றிய ஒழுங்கமைக்கப்பட்ட தகவல்.",
            "catalog": "சரிபார்க்கப்பட்ட அனைத்து செயலிகளையும் பார்க்கவும்"},
     "te": {"what": "{name} అంటే ఏమిటి?", "feat": "ముఖ్య ఫీచర్లు", "price": "ధర",
            "faq": "తరచుగా అడిగే ప్రశ్నలు", "dl": "డౌన్‌లోడ్", "get": "App Store నుంచి {name} పొందండి",
            "is": "{name} ఒక iOS యాప్.",
-           "ptxt": "ఉచితంగా డౌన్‌లోడ్ చేసుకోండి. ఒకసారి కొనుగోలుతో అన్ని ఫీచర్లను శాశ్వతంగా అన్‌లాక్ చేసుకోండి—సబ్‌స్క్రిప్షన్ లేదు.",
+           "ptxt": "ఉచితంగా డౌన్‌లోడ్ చేసుకోండి. ఒకసారి కొనుగోలుతో అన్ని ఫీచర్లను అన్‌లాక్ చేసుకోండి—సబ్‌స్క్రిప్షన్ లేదు.",
            "dir_dir": "యాప్ డైరెక్టరీ",
            "dir_lead": "ప్రతి iOS యాప్ ఫీచర్లు, ధరలు మరియు తరచుగా అడిగే ప్రశ్నలపై క్రమబద్ధమైన సమాచారం.",
            "catalog": "ధృవీకరించిన అన్ని యాప్‌లను చూడండి"},
     "ur": {"what": "{name} کیا ہے؟", "feat": "اہم خصوصیات", "price": "قیمت",
            "faq": "اکثر پوچھے جانے والے سوالات", "dl": "ڈاؤن لوڈ", "get": "App Store سے {name} حاصل کریں",
            "is": "{name} ایک iOS ایپ ہے۔",
-           "ptxt": "مفت ڈاؤن لوڈ کریں۔ ایک بار خرید کر تمام خصوصیات ہمیشہ کے لیے اَن لاک کریں—کوئی سبسکرپشن نہیں۔",
+           "ptxt": "مفت ڈاؤن لوڈ کریں۔ ایک بار خرید کر تمام خصوصیات اَن لاک کریں—کوئی سبسکرپشن نہیں۔",
            "dir_dir": "ایپس کی فہرست",
            "dir_lead": "ہر iOS ایپ کی خصوصیات، قیمت اور اکثر پوچھے جانے والے سوالات کی منظم معلومات۔",
            "catalog": "تمام تصدیق شدہ ایپس دیکھیں"},
@@ -2031,8 +2031,46 @@ def build_locale_index(locale, keys, locales):
 """
     outdir = os.path.join(PAGES, locale)
     os.makedirs(outdir, exist_ok=True)
-    with open(os.path.join(outdir, "index.html"), "w", encoding="utf-8") as f:
+    dest = os.path.join(outdir, "index.html")
+    # 一定要先讀舊檔再開 "w":open(..., "w") 會先截斷,顛倒過來就永遠讀到空檔。
+    idx = carry_over_link_hub_blocks(dest, idx)
+    with open(dest, "w", encoding="utf-8") as f:
         f.write(idx)
+
+
+LINK_HUB_BLOCK_RE = re.compile(
+    r"\n?<!--iag-link-hub-(nav|full)-->.*?<!--/iag-link-hub-\1-->\n?", re.S
+)
+
+
+def carry_over_link_hub_blocks(path, content):
+    """把 gen_link_hubs 注入的受管理區塊原樣帶到重寫後的頁面上。
+
+    這支產生器每次發布都會整份重寫語系首頁與站台首頁,而把「全部頁面」導覽
+    (browse.html 的唯一入連)注入這些檔案的 gen_link_hubs 排在管線的最尾端,
+    中間隔著一百多支產生器。只要其中任何一支失敗,發布就停在「首頁已經被
+    重寫、導覽還沒補回來」的狀態 —— 2026-08-10 這個中間狀態被 commit 上線:
+    全站只剩 6 個檔案帶著導覽,4,413 個**可索引**頁瞬間零入連,整個語系的
+    stories / vs / best-for 子樹全部變成孤兒。
+
+    把舊區塊帶過來,這個空窗期就不存在了。gen_link_hubs 之後照樣會用最新內容
+    整塊覆蓋(它自己先 sub 掉再重插),所以不會妨礙更新,也不影響冪等。
+    """
+    try:
+        with open(path, "r", encoding="utf-8") as fh:
+            old = fh.read()
+    except OSError:
+        return content
+    blocks = "".join(match.group(0) for match in LINK_HUB_BLOCK_RE.finditer(old))
+    if not blocks:
+        return content
+    # 落點必須跟 gen_link_hubs.splice() 完全一致(最後一個 </main> 正後方),
+    # 否則它每次都會看到「位置不對」而重寫,兩支就永遠有幾十個檔案在互相翻。
+    cut = content.rfind("</main>")
+    if cut == -1:
+        return content
+    cut += len("</main>")
+    return content[:cut] + blocks + content[cut:]
 
 
 def build_root_index(locales):
@@ -2064,7 +2102,9 @@ def build_root_index(locales):
 </main></body></html>
 """
     os.makedirs(PAGES, exist_ok=True)
-    with open(os.path.join(PAGES, "index.html"), "w", encoding="utf-8") as f:
+    dest = os.path.join(PAGES, "index.html")
+    idx = carry_over_link_hub_blocks(dest, idx)
+    with open(dest, "w", encoding="utf-8") as f:
         f.write(idx)
 
 

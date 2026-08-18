@@ -182,7 +182,7 @@ def build_hub():
     h1 = "Stop renting your apps: the pay-once escape list"
     lead = ("Subscriptions quietly add up. Below are popular subscription apps with their real yearly "
             "cost, the {y}-year total, and the pay-once iPhone app that does the same job — so you can "
-            "switch once and stop paying forever.").format(y=YEARS)
+            "switch once and stop paying the monthly fee.").format(y=YEARS)
     page = HUB.format(
         title=html.escape(title), desc=html.escape(desc), h1=html.escape(h1),
         lead=html.escape(lead), site=SITE, schema=schema, cards=cards, faqs=faqs,

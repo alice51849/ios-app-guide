@@ -65,7 +65,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "For scanning lecture notes and handouts, the thing that matters most to a student is that one purchase covers unlimited scans — no paywall reappearing mid-semester.",
             "paras": [
                 "A student scanner should turn a stack of handwritten notes or printed handouts into a clean, searchable PDF in seconds, with OCR so you can find a topic before an exam. Batch multiple pages into one file per lecture.",
-                "Pay-once matters here: a single purchase should give unlimited scans forever, with no monthly fee and no watermark on the exported PDF.",
+                "Pay-once matters here: a single purchase should give unlimited scans, with no monthly fee and no watermark on the exported PDF.",
             ],
             "look": [
                 "Pay once — unlimited scans, no monthly fee.",
@@ -539,7 +539,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before deciding whether unlimited trips are worth a one-time unlock.",
             "paras": [
                 "G+Money Lite includes one trip and up to three expenses free, together with rates, a budget, category statistics, and a summary. Enter each purchase in the local currency and see it in your home currency using a live, saved, or manually set rate; saved rates keep the workflow usable offline.",
-                "If you need more entries or trips, one lifetime purchase removes those limits. There is no subscription, account, or tracking, and the App also supports a Home Screen widget and Apple Watch.",
+                "If you need more entries or trips, a single one-time purchase removes those limits. There is no subscription, account, or tracking, and the App also supports a Home Screen widget and Apple Watch.",
             ],
             "look": [
                 "A useful free allowance that includes one trip and three expenses.",
@@ -555,7 +555,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Review the budget, category statistics, and home-currency summary.",
                 "Unlock unlimited expenses and trips once only if the free allowance fits your travel workflow.",
             ],
-            "fits": "fits travellers who want to test a private local-to-home-currency expense workflow free, then remove trip and entry limits with one lifetime purchase.",
+            "fits": "fits travellers who want to test a private local-to-home-currency expense workflow free, then remove trip and entry limits with a single one-time purchase.",
             "faq": [
                 {
                     "q": "What can I use without paying?",
@@ -567,7 +567,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
                 {
                     "q": "Is the full version a subscription?",
-                    "a": "No — one optional lifetime purchase unlocks unlimited expenses and trips.",
+                    "a": "No — one optional one-time purchase unlocks unlimited expenses and trips.",
                 },
             ],
         },
@@ -1538,7 +1538,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Open directions and keep the current day easy to scan.",
                 "Unlock unlimited journeys only if your planning needs grow.",
             ],
-            "fits": "fits occasional travellers who want one uncluttered active-trip planner free, with an optional lifetime upgrade.",
+            "fits": "fits occasional travellers who want one uncluttered active-trip planner free, with an optional one-time upgrade.",
             "faq": [
                 {
                     "q": "Can I plan a complete trip for free?",
@@ -1770,7 +1770,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "On-device extraction with source references, confidence and conflict review.",
                 "Explicit keep, replace or remove choices for detected private details.",
                 "Structured briefs with templates, version history and Share Extension intake.",
-                "A free entry point with one lifetime Pro unlock and no subscription, account, ads or tracking.",
+                "A free entry point with a single one-time Pro unlock and no subscription, account, ads or tracking.",
             ],
             "steps": [
                 "Collect the relevant sources through import, paste or the Share Extension.",
@@ -1791,7 +1791,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
                 {
                     "q": "Is AI Brief a subscription?",
-                    "a": "No — it is free to start, with one optional lifetime Pro purchase and no recurring subscription. It also has no account, third-party advertising, tracking, analytics or content telemetry.",
+                    "a": "No — it is free to start, with one optional one-time Pro purchase and no recurring subscription. It also has no account, third-party advertising, tracking, analytics or content telemetry.",
                 },
             ],
         },
@@ -1812,7 +1812,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "A trustworthy free passport-photo app should let you complete a real photo — guided sizing, background, and a print-ready export — before asking for money, and it should do the work on your phone rather than a server.",
             "paras": [
                 "Snapport Lite includes the full guided workflow free — passport, visa, and document templates, face-guided crop and alignment, background tools, and adjustment — with one free export included so you can finish and inspect a real result. It works fully offline; checking sizes only downloads a public list of common formats, and no personal data is sent.",
-                "If you need more exports, one lifetime purchase unlocks them — no subscription, no ads, no tracking, no account. Face detection for alignment runs on device and no biometric identity is stored. Photo requirements vary by country and agency, so always review the official rules before submitting, and note that automatic background removal may still need your review.",
+                "If you need more exports, a single one-time purchase unlocks them — no subscription, no ads, no tracking, no account. Face detection for alignment runs on device and no biometric identity is stored. Photo requirements vary by country and agency, so always review the official rules before submitting, and note that automatic background removal may still need your review.",
             ],
             "look": [
                 "A free tier that lets you finish a real export, not just preview.",
@@ -1832,7 +1832,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "faq": [
                 {
                     "q": "What is free in Snapport Lite?",
-                    "a": "The complete guided workflow — templates, crop, background, adjust — with one free export included. Additional exports use a one-time lifetime purchase; there is no subscription.",
+                    "a": "The complete guided workflow — templates, crop, background, adjust — with one free export included. Additional exports use a one-time purchase; there is no subscription.",
                 },
                 {
                     "q": "Do my photos get uploaded?",
@@ -1861,7 +1861,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "A useful free phrasebook should teach complete exchanges — the cue you will hear and a natural reply — and let you finish a real topic free, not lock everything behind a subscription after three cards.",
             "paras": [
                 "DailyMate Lite starts free with the complete Traveler topic at Beginner level in any of 50 learning languages, using cue-and-reply cards so you learn what to say when it is your turn to speak. Other topics and levels stay visible through genuine previews, and each language keeps separate progress, streaks, and saved phrases.",
-                "One lifetime purchase unlocks the full library — 8,400 original cue-and-reply pairs across 14 topics, 84 situations, and three levels — plus unlimited saved phrases, widgets, Apple Watch, and App Intents. There is no subscription, account, ads, or tracking, and pronunciation uses the on-device system voices installed on your iPhone.",
+                "A single one-time purchase unlocks the full library — 8,400 original cue-and-reply pairs across 14 topics, 84 situations, and three levels — plus unlimited saved phrases, widgets, Apple Watch, and App Intents. There is no subscription, account, ads, or tracking, and pronunciation uses the on-device system voices installed on your iPhone.",
             ],
             "look": [
                 "A complete free topic you can actually finish, not a teaser.",

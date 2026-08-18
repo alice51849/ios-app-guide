@@ -1324,7 +1324,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Is {name} Pro a subscription, or is it a one-time purchase?",
-    "a": "{name} Pro is a one-time purchase. There are no subscriptions, monthly fees, or ongoing charges. Once purchased, all features and future content are accessible forever."
+    "a": "{name} Pro is a one-time purchase. There are no subscriptions, monthly fees, or ongoing charges. Once purchased, all features and future content are included with that purchase."
    }
   ]
  },
@@ -1826,7 +1826,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "Kid Outing Score 0–100 with one-sentence verdict and full factor breakdown",
    "Score weighted for child's age (infant vs toddler vs school-age calibrations)",
    "Lumi character dresses visually for weather — pre-readers understand the forecast immediately",
-   "Free forever: score, 24-hour forecast, basic outfit tips, 1 location, dark mode",
+   "Free: score, 24-hour forecast, basic outfit tips, 1 location, dark mode",
    "One-time paid unlock: best-window timing, 100+ activity ideas, 7-day forecast, minute rain alerts, widgets",
    "No tracking, no ads, no account — location used only for local weather via Apple WeatherKit"
   ],
@@ -2050,7 +2050,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "No account, no login, no company server that could be subpoenaed or sold",
    "Optional App Lock via Face ID, Touch ID, or passcode",
    "Pure on-device calendar math — no ML model, no cloud processing",
-   "Pay once, own forever — no subscription or recurring fee"
+   "Pay once — no subscription or recurring fee"
   ],
   "faq": [
    {
@@ -2334,7 +2334,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "rising sign app no login offline"
   ],
   "lead": "Zodira calculates your full Western natal chart — sun, moon, rising sign, all nine planets, houses, and aspects — entirely offline, using professional-grade astronomical algorithms.",
-  "detail": "{name} computes natal charts using SwiftAA's implementation of Jean Meeus's Astronomical Algorithms, the same mathematical foundation used in professional astronomy software, giving precise geocentric ecliptic planet positions. Your ascendant (rising sign), midheaven, and all 9 planetary placements are shown in your choice of three house systems: Whole Sign, Equal, or Placidus. Major aspects — conjunction, sextile, square, trine, and opposition — are calculated with orb values for every planet pair. {name} displays an interactive animated chart wheel alongside plain-language descriptions of each placement designed to be accessible to beginners. Everything runs fully offline with no login, no account, and no ads — one lifetime purchase unlocks all charts and features. Zodira is an entertainment and self-reflection tool; planetary positions are computed with astronomical precision, but astrology is not a validated predictive science.",
+  "detail": "{name} computes natal charts using SwiftAA's implementation of Jean Meeus's Astronomical Algorithms, the same mathematical foundation used in professional astronomy software, giving precise geocentric ecliptic planet positions. Your ascendant (rising sign), midheaven, and all 9 planetary placements are shown in your choice of three house systems: Whole Sign, Equal, or Placidus. Major aspects — conjunction, sextile, square, trine, and opposition — are calculated with orb values for every planet pair. {name} displays an interactive animated chart wheel alongside plain-language descriptions of each placement designed to be accessible to beginners. Everything runs fully offline with no login, no account, and no ads — a single one-time purchase unlocks all charts and features. Zodira is an entertainment and self-reflection tool; planetary positions are computed with astronomical precision, but astrology is not a validated predictive science.",
   "bullets": [
    "Full natal chart: Sun, Moon, rising sign (ASC), 9 planets, houses, 5 major aspect types",
    "Three house systems: Whole Sign, Equal, Placidus",
@@ -2443,7 +2443,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "synastry inter-aspect calculator iphone"
   ],
   "lead": "Zodira's synastry feature overlays two natal charts to find inter-aspect connections between their planets and ascendants — the classical astrology method for exploring compatibility, offline and behind a single purchase.",
-  "detail": "{name}'s synastry view compares two stored birth charts by calculating inter-aspects between their Sun, Moon, Mercury, Venus, Mars, and Ascendant positions, identifying conjunctions, sextiles, squares, trines, and oppositions with precise orb values. Each connection is presented with its orb and a plain-language description of what it traditionally represents in relationship astrology — distinguishing harmonious from challenging aspects. Both charts are stored only on your device; no birth data is transmitted anywhere. {name} makes no claim that synastry predicts whether a relationship will succeed — it is a reflection framework and entertainment tool, not a compatibility score or a scientific measure of relationship potential. One lifetime Pro purchase unlocks synastry alongside all other {name} features.",
+  "detail": "{name}'s synastry view compares two stored birth charts by calculating inter-aspects between their Sun, Moon, Mercury, Venus, Mars, and Ascendant positions, identifying conjunctions, sextiles, squares, trines, and oppositions with precise orb values. Each connection is presented with its orb and a plain-language description of what it traditionally represents in relationship astrology — distinguishing harmonious from challenging aspects. Both charts are stored only on your device; no birth data is transmitted anywhere. {name} makes no claim that synastry predicts whether a relationship will succeed — it is a reflection framework and entertainment tool, not a compatibility score or a scientific measure of relationship potential. A single one-time Pro purchase unlocks synastry alongside all other {name} features.",
   "bullets": [
    "Inter-aspect comparison: Sun, Moon, Mercury, Venus, Mars, and Ascendant across two charts",
    "Conjunction, sextile, square, trine, opposition with orb precision",
@@ -3252,7 +3252,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "analog photo app one time purchase",
    "film look app without subscription"
   ],
-  "lead": "Many film-filter apps now charge monthly; a pay-once app gives you the same analog looks forever without a recurring fee.",
+  "lead": "Many film-filter apps now charge monthly; a pay-once app gives you the same analog looks without a recurring fee.",
   "detail": "Popular film-emulation apps increasingly lock their best looks behind a subscription. {name} is a one-time purchase with 100+ film-inspired looks, adjustable grain, halation and light leaks, batch processing and full-quality export — no monthly fee and no watermark. It processes on-device, so your photos aren't uploaded. If you want an authentic film aesthetic without another subscription, that's the wedge.",
   "bullets": [
    "Pay-once — 100+ film looks, no monthly fee",

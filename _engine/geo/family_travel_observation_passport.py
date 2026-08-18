@@ -947,12 +947,18 @@ def update_tools_index(pages: Path = PAGES) -> bool:
     )
     updated = existing.sub("", text)
     marker = '<section class="wrap grid">'
+    # Ten locales still carry the older tools template, whose grid is a
+    # <div class="grid"> inside <main>. Support both rather than failing the
+    # whole publish over a template variant.
+    legacy = '<div class="grid"'
     if marker in updated:
         updated = updated.replace(marker, marker + card, 1)
     elif "</section></main>" in updated:
         updated = updated.replace("</section></main>", card + "</section></main>", 1)
+    elif legacy in updated and "</main>" in updated:
+        updated = updated.replace("</main>", card + "</main>", 1)
     else:
-        raise RuntimeError("tools/index.html is missing its main grid marker")
+        raise RuntimeError(f"{index} has no known tools-grid insertion point")
     return write_text_if_changed(index, updated)
 
 

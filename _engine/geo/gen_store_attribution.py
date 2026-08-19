@@ -72,7 +72,7 @@ MAX_TOKEN = 30
 TOKEN_PREFIX = "geo_"
 
 # --------------------------------------------------------------------------- #
-# Campaign taxonomy — deliberately four buckets, on ONE axis
+# Campaign taxonomy — deliberately three buckets, on ONE axis
 #
 # Apple only reports a campaign once it has produced first-time downloads from
 # at least five individual users inside the report window, and the row is
@@ -240,7 +240,8 @@ def rewrite(text: str, token: str, provider: str | None) -> tuple[str, int]:
     This is the single authority on campaign tokens for the site tree.  Before
     2026-08-20 it skipped any URL a generator had already tagged, which left
     ~614 generator-minted tokens (108k links on iag_decision alone) outside the
-    taxonomy and pushed the whole site past Apple's privacy threshold.  The one
+    taxonomy and split the site so finely that no bucket could reach Apple's
+    five-download disclosure threshold.  The one
     exception is PROTECTED_CAMPAIGNS, whose tokens are part of a contract that
     is checked elsewhere.
     """

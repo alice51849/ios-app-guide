@@ -1230,7 +1230,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "phonics app four languages bilingual family"
   ],
   "lead": "Lumi Letters Pro adds a Parent Zone that exports PDF practice sheets and learning insights — making it a digital-plus-paper phonics curriculum in one app for homeschooling and bilingual families.",
-  "detail": "Where the Lite version of {name} focuses on child-directed play, the Pro version adds a Parent Zone designed for parents who want to close the loop between screen-time learning and paper practice. From the Parent Zone, parents can export a printable PDF practice sheet matched to their child's current level, review learning data to see which letters need more practice, and back up or restore progress when switching devices. {name} Pro also runs in four languages — Traditional Chinese, English, Japanese, and Korean — switching automatically based on device settings, making it practical for multilingual households or for Chinese-heritage families in the US, Canada, or Australia who need both English phonics and Chinese-language support in one place.",
+  "detail": "Where the Lite version of {name} focuses on child-directed play, the Pro version adds a Parent Zone designed for parents who want to close the loop between screen-time learning and paper practice. From the Parent Zone, parents can export a printable PDF practice sheet matched to their child's current level, review learning data to see which letters need more practice, and back up or restore progress when switching devices. {name} also runs in four languages — Traditional Chinese, English, Japanese, and Korean — switching automatically based on device settings, making it practical for multilingual households or for Chinese-heritage families in the US, Canada, or Australia who need both English phonics and Chinese-language support in one place.",
   "bullets": [
    "Parent Zone: export printable PDF practice sheets at the child's current level",
    "Learning data insights: see which letters need more reinforcement",
@@ -1242,15 +1242,15 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "faq": [
    {
     "q": "Can {name} generate printable worksheets so my child can practice letters off-screen?",
-    "a": "Yes — {name} Pro's Parent Zone lets you export a PDF practice sheet matched to your child's current learning level. You can print it or save it for offline use."
+    "a": "Yes — {name}'s Parent Zone lets you export a PDF practice sheet matched to your child's current learning level. You can print it or save it for offline use."
    },
    {
-    "q": "Does {name} Pro support languages other than English?",
-    "a": "{name} Pro runs in Traditional Chinese, English, Japanese, and Korean. The app detects your device language automatically and switches accordingly — or you can switch manually in the Parent Zone."
+    "q": "Does {name} support languages other than English?",
+    "a": "{name} runs in Traditional Chinese, English, Japanese, and Korean. The app detects your device language automatically and switches accordingly — or you can switch manually in the Parent Zone."
    },
    {
-    "q": "Is {name} Pro suitable for a Chinese-heritage family teaching English phonics?",
-    "a": "Yes — {name} Pro was specifically designed for bilingual and multilingual families. The English phonics content (A–Z, phonics sounds, tracing) is delivered with full Traditional Chinese interface support, so Chinese-speaking parents can guide the experience while the child learns English sounds."
+    "q": "Is {name} suitable for a Chinese-heritage family teaching English phonics?",
+    "a": "Yes — {name} was specifically designed for bilingual and multilingual families. The English phonics content (A–Z, phonics sounds, tracing) is delivered with full Traditional Chinese interface support, so Chinese-speaking parents can guide the experience while the child learns English sounds."
    }
   ]
  },
@@ -1267,7 +1267,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "app learn english phonics for chinese-speaking kids"
   ],
   "lead": "Lumi Letters Pro is used by Chinese-heritage families worldwide to introduce English phonics in a bilingual environment — the app interface runs in Traditional Chinese while teaching English letter sounds, names, and stroke-order tracing.",
-  "detail": "For Chinese-heritage families in the US, Canada, Australia, Singapore, and the UK who speak Traditional Chinese at home but need their child to build English reading foundations, {name} Pro bridges both needs. The parent-facing interface, instructions, and Parent Zone run in Traditional Chinese; the phonics content (letter sounds, first-word examples, challenge types) delivers English learning. The four-language support means Chinese grandparents can navigate the parent controls while the child receives native-quality English phonics instruction. There is no need for account creation or data sharing — all progress stays on the device, which matters to families concerned about children's data privacy.",
+  "detail": "For Chinese-heritage families in the US, Canada, Australia, Singapore, and the UK who speak Traditional Chinese at home but need their child to build English reading foundations, {name} bridges both needs. The parent-facing interface, instructions, and Parent Zone run in Traditional Chinese; the phonics content (letter sounds, first-word examples, challenge types) delivers English learning. The four-language support means Chinese grandparents can navigate the parent controls while the child receives native-quality English phonics instruction. There is no need for account creation or data sharing — all progress stays on the device, which matters to families concerned about children's data privacy.",
   "bullets": [
    "Interface available in Traditional Chinese so Chinese-speaking parents can navigate fully",
    "Child learns English phonics (A–Z, sounds, stroke order) through the Chinese-interface app",
@@ -1278,15 +1278,15 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   ],
   "faq": [
    {
-    "q": "My family speaks Traditional Chinese at home. Can I still use {name} Pro to teach my child English phonics?",
-    "a": "Yes — {name} Pro supports Traditional Chinese as a full interface language. Parents navigate in Chinese while the child learns English letters, phonics sounds, and tracing. The app automatically selects the appropriate language, or you can set it manually."
+    "q": "My family speaks Traditional Chinese at home. Can I still use {name} to teach my child English phonics?",
+    "a": "Yes — {name} supports Traditional Chinese as a full interface language. Parents navigate in Chinese while the child learns English letters, phonics sounds, and tracing. The app automatically selects the appropriate language, or you can set it manually."
    },
    {
-    "q": "Does {name} Pro require an account or internet connection for a Chinese-heritage family to use it abroad?",
-    "a": "{name} Pro requires no account and no internet connection during play. All content and progress is stored locally on the device — it works fully offline and collects no data."
+    "q": "Does {name} require an account or internet connection for a Chinese-heritage family to use it abroad?",
+    "a": "{name} requires no account and no internet connection during play. All content and progress is stored locally on the device — it works fully offline and collects no data."
    },
    {
-    "q": "What does my child actually learn from {name} Pro in an English phonics context?",
+    "q": "What does my child actually learn from {name} in an English phonics context?",
     "a": "Your child learns to recognize and name all 26 letters (uppercase and lowercase), associate each letter with its phonics sound, trace letters with correct stroke order, and distinguish beginning, ending, and vowel sounds — the foundational skills for early reading in English."
    }
   ]
@@ -1304,7 +1304,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "phonics curriculum app one time purchase vs subscription"
   ],
   "lead": "Lumi Letters Pro's Parent Zone gives parents a view of learning data, the ability to export PDF practice sheets, and a progress backup that survives phone replacements — all with a one-time purchase, no subscription.",
-  "detail": "{name} Pro is designed with two users in mind: the child who plays, and the parent who wants to understand what their child has learned without interrogating them. The Parent Zone is accessible behind a parental gate and shows which letters are mastered, which still need reinforcement, and at what level the child is currently working. Parents can export a level-matched PDF practice sheet to bridge screen and paper learning. Progress can be exported as a local backup file and restored on a new device — so a phone replacement or family sharing across devices does not erase months of progress.",
+  "detail": "{name} is designed with two users in mind: the child who plays, and the parent who wants to understand what their child has learned without interrogating them. The Parent Zone is accessible behind a parental gate and shows which letters are mastered, which still need reinforcement, and at what level the child is currently working. Parents can export a level-matched PDF practice sheet to bridge screen and paper learning. Progress can be exported as a local backup file and restored on a new device — so a phone replacement or family sharing across devices does not erase months of progress.",
   "bullets": [
    "Parent Zone: learning data showing per-letter mastery and areas for more practice",
    "PDF practice-sheet export matched to child's current level",
@@ -1315,16 +1315,16 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   ],
   "faq": [
    {
-    "q": "How does the Parent Zone in {name} Pro show my child's progress?",
-    "a": "The Parent Zone in {name} Pro shows which letters your child has mastered and which need more practice. You can also generate a PDF practice sheet at your child's current level to use offline."
+    "q": "How does the Parent Zone in {name} show my child's progress?",
+    "a": "The Parent Zone in {name} shows which letters your child has mastered and which need more practice. You can also generate a PDF practice sheet at your child's current level to use offline."
    },
    {
-    "q": "If we upgrade to a new iPhone, will my child's progress in {name} Pro transfer?",
-    "a": "Yes — {name} Pro includes a local progress backup feature. You export a backup file from the Parent Zone, transfer it to the new device, and restore — all without cloud accounts or external services."
+    "q": "If we upgrade to a new iPhone, will my child's progress in {name} transfer?",
+    "a": "Yes — {name} includes a local progress backup feature. You export a backup file from the Parent Zone, transfer it to the new device, and restore — all without cloud accounts or external services."
    },
    {
-    "q": "Is {name} Pro a subscription, or is it a one-time purchase?",
-    "a": "{name} Pro is a one-time purchase. There are no subscriptions, monthly fees, or ongoing charges. Once purchased, all features and future content are included with that purchase."
+    "q": "Is {name} a subscription, or is it a one-time purchase?",
+    "a": "{name} is a one-time purchase. There are no subscriptions, monthly fees, or ongoing charges. Once purchased, all features and future content are included with that purchase."
    }
   ]
  },
@@ -1450,8 +1450,8 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "homeschool math app with progress documentation",
    "math competition prep app printable practice"
   ],
-  "lead": "Lumi Math Planet Pro generates printable 20-question PDF worksheets at your child's current level (with answer key) and a one-page Learning Report PDF showing skill scores across five domains — designed for parents who want evidence of progress alongside the in-app experience.",
-  "detail": "For homeschooling parents, competition-track families, or parents coordinating with teachers, {name} Pro closes the gap between app-based practice and paper/portfolio documentation. From the Parent Zone, a parent can generate a 20-question worksheet matched to the child's current level in any question category, save it as a PDF, and print it for screen-free practice anywhere. The Learning Report PDF gives a one-page snapshot of the child's skill scores across number sense, patterns, logic, spatial reasoning, and real-life math — suitable for sharing with teachers, tutors, or for academic program applications. {name} Pro also adds four auto-detected languages (English, Traditional Chinese, Japanese, Korean) and local progress backup, making it the right choice for multilingual families or frequent phone upgrades.",
+  "lead": "Lumi Math Pro generates printable 20-question PDF worksheets at your child's current level (with answer key) and a one-page Learning Report PDF showing skill scores across five domains — designed for parents who want evidence of progress alongside the in-app experience.",
+  "detail": "For homeschooling parents, competition-track families, or parents coordinating with teachers, {name} closes the gap between app-based practice and paper/portfolio documentation. From the Parent Zone, a parent can generate a 20-question worksheet matched to the child's current level in any question category, save it as a PDF, and print it for screen-free practice anywhere. The Learning Report PDF gives a one-page snapshot of the child's skill scores across number sense, patterns, logic, spatial reasoning, and real-life math — suitable for sharing with teachers, tutors, or for academic program applications. {name} also adds four auto-detected languages (English, Traditional Chinese, Japanese, Korean) and local progress backup, making it the right choice for multilingual families or frequent phone upgrades.",
   "bullets": [
    "Printable worksheet generator: 20-question PDF at child's current level, with answer key",
    "Learning Report PDF: skill scores across number sense, patterns, logic, space, real-life",
@@ -1462,16 +1462,16 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   ],
   "faq": [
    {
-    "q": "What does the printable worksheet from {name} Pro look like?",
-    "a": "{name} Pro generates a 20-question practice sheet matched to your child's current level in the app, formatted as a clean PDF with an answer key. You can print it for paper practice, save it for a portfolio, or share it with a teacher or tutor."
+    "q": "What does the printable worksheet from {name} look like?",
+    "a": "{name} generates a 20-question practice sheet matched to your child's current level in the app, formatted as a clean PDF with an answer key. You can print it for paper practice, save it for a portfolio, or share it with a teacher or tutor."
    },
    {
-    "q": "Can I share my child's {name} Pro learning data with their teacher?",
-    "a": "Yes — {name} Pro's Learning Report PDF is a one-page summary of your child's skill scores across five mathematical domains (number sense, patterns, logic, space, real-life) and their overall progress. It can be exported and shared with teachers, tutors, or kept for academic records."
+    "q": "Can I share my child's {name} learning data with their teacher?",
+    "a": "Yes — {name}'s Learning Report PDF is a one-page summary of your child's skill scores across five mathematical domains (number sense, patterns, logic, space, real-life) and their overall progress. It can be exported and shared with teachers, tutors, or kept for academic records."
    },
    {
-    "q": "Does {name} Pro work in Japanese or Korean for our multilingual family?",
-    "a": "Yes — {name} Pro supports English, Traditional Chinese, Japanese, and Korean. The app detects your device language automatically, so questions, voice guidance, and the parent interface all display in your family's language."
+    "q": "Does {name} work in Japanese or Korean for our multilingual family?",
+    "a": "Yes — {name} supports English, Traditional Chinese, Japanese, and Korean. The app detects your device language automatically, so questions, voice guidance, and the parent interface all display in your family's language."
    }
   ]
  },
@@ -1487,8 +1487,8 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "math olympiad junior level app parents track",
    "advanced math app for 7 year old four languages"
   ],
-  "lead": "Lumi Math Planet Pro is the most complete version of the WMI-style competition math app — it adds PDF worksheet generation, a Learning Report, four languages, and progress backup on top of the full 14-planet adventure and weak-spot tracking.",
-  "detail": "For families seriously preparing for WMI or similar early-grade math competitions, {name} Pro provides the full in-app curriculum (14 planets, WMI-style question types, weak-spot drilling) plus the offline practice infrastructure: a parent can generate a 20-question worksheet at the child's current competition-prep level, print it, and use it during the car ride to the competition, at a tutor session, or over breakfast. The Learning Report PDF shows parents exactly which of the five skill domains need more work before a competition, removing guesswork from targeted preparation. For families outside English-speaking countries — particularly Japan and Korea where math competitions are popular — {name} Pro delivers the complete experience in Japanese or Korean with auto-detected language switching.",
+  "lead": "Lumi Math Pro is the most complete version of the WMI-style competition math app — it adds PDF worksheet generation, a Learning Report, four languages, and progress backup on top of the full 14-planet adventure and weak-spot tracking.",
+  "detail": "For families seriously preparing for WMI or similar early-grade math competitions, {name} provides the full in-app curriculum (14 planets, WMI-style question types, weak-spot drilling) plus the offline practice infrastructure: a parent can generate a 20-question worksheet at the child's current competition-prep level, print it, and use it during the car ride to the competition, at a tutor session, or over breakfast. The Learning Report PDF shows parents exactly which of the five skill domains need more work before a competition, removing guesswork from targeted preparation. For families outside English-speaking countries — particularly Japan and Korea where math competitions are popular — {name} delivers the complete experience in Japanese or Korean with auto-detected language switching.",
   "bullets": [
    "Full WMI-style question set (patterns, logic, sequences, ordinals, combinations, shapes, story problems + arithmetic)",
    "20-question printable worksheet at child's current level + answer key",
@@ -1499,15 +1499,15 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   ],
   "faq": [
    {
-    "q": "How does {name} Pro help my child prepare for WMI specifically?",
-    "a": "{name} Pro is built on WMI and similar international contest question types for the kids/early-grade level: number patterns, sequences, logical reasoning, ordinals, combinations, shape recognition, and applied story problems. The weak-spot tracker and printable worksheets let you target exactly the question types your child misses before the competition."
+    "q": "How does {name} help my child prepare for WMI specifically?",
+    "a": "{name} is built on WMI and similar international contest question types for the kids/early-grade level: number patterns, sequences, logical reasoning, ordinals, combinations, shape recognition, and applied story problems. The weak-spot tracker and printable worksheets let you target exactly the question types your child misses before the competition."
    },
    {
-    "q": "Does {name} Pro work in Japanese for a family competing in Japan's math olympiad circuit?",
-    "a": "Yes — {name} Pro fully supports Japanese, including localized questions and voice. The app auto-detects device language or can be set manually."
+    "q": "Does {name} work in Japanese for a family competing in Japan's math olympiad circuit?",
+    "a": "Yes — {name} fully supports Japanese, including localized questions and voice. The app auto-detects device language or can be set manually."
    },
    {
-    "q": "Is the Learning Report in {name} Pro useful for a math tutor or teacher?",
+    "q": "Is the Learning Report in {name} useful for a math tutor or teacher?",
     "a": "Yes — the Learning Report PDF is a shareable one-pager showing your child's score across number sense, patterns, logic, spatial reasoning, and real-life math. Most tutors find it useful for quickly identifying the 1–2 domains that need the most focused work."
    }
   ]

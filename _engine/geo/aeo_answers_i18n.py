@@ -1361,6 +1361,127 @@ def call_ollama(
     return translations
 
 
+APP_NAME_SUFFIXES = (" Pro", " Lite", " Plus")
+
+
+@functools.cache
+def portfolio_app_names() -> tuple[str, ...]:
+    """Registry app names, longest first so "X Pro" wins over "X"."""
+    social = str(Path(__file__).resolve().parent / ".." / "social")
+    if social not in sys.path:
+        sys.path.insert(0, social)
+    from videogen.registry import APPS  # noqa: PLC0415 - optional dependency
+
+    return tuple(
+        sorted(
+            {
+                app["name"]
+                for app in APPS.values()
+                if len(app["name"]) >= 4
+            },
+            key=len,
+            reverse=True,
+        )
+    )
+
+
+def _app_name_base(name: str) -> str:
+    changed = True
+    while changed:
+        changed = False
+        for suffix in APP_NAME_SUFFIXES:
+            if name.endswith(suffix):
+                name = name[: -len(suffix)]
+                changed = True
+    return name
+
+
+def portfolio_app_names_in(text: str) -> list[str]:
+    """Names present in *text*, consuming each match so a longer name wins."""
+    found: list[str] = []
+    remaining = text
+    for name in portfolio_app_names():
+        # Case-sensitive on purpose: app names are proper nouns, and matching
+        # loosely turns ordinary words into false hits (Spanish "sereno" is not
+        # the Sereno app).
+        pattern = re.compile(rf"(?<!\w){re.escape(name)}(?!\w)")
+        if pattern.search(remaining):
+            found.append(name)
+            remaining = pattern.sub(" ", remaining)
+    return found
+
+
+def _same_app_family(name: str, bases: set[str]) -> bool:
+    base = _app_name_base(name)
+    return any(
+        base == other
+        or base.startswith(f"{other} ")
+        or other.startswith(f"{base} ")
+        for other in bases
+    )
+
+
+def cross_app_names_introduced(
+    source: str,
+    target: str,
+    allowed_bases: set[str] | None = None,
+) -> list[str]:
+    """App names the translation adds that the English copy never names.
+
+    A translation may legitimately keep, drop or reorder the app name it was
+    given, and sibling editions (``X`` / ``X Pro``) count as the same family so
+    a Pro/base slip is left to the publish-time answer gate.  What must never
+    happen is an *unrelated* portfolio app appearing out of nowhere: that is a
+    hallucinated recommendation, and it sends readers of one app's page to a
+    different app.  Fail closed on it.
+
+    ``allowed_bases`` carries the app families named anywhere in the English
+    page, because a translator may name the page's own app in a sentence whose
+    English original left it implicit -- that is a phrasing choice, not a
+    hallucination.
+    """
+    bases = {_app_name_base(name) for name in portfolio_app_names_in(source)}
+    if allowed_bases:
+        bases |= allowed_bases
+    return sorted(
+        {
+            name
+            for name in portfolio_app_names_in(target)
+            if not _same_app_family(name, bases)
+        }
+    )
+
+
+def require_no_cross_app_translation(
+    strings: list[str],
+    mapping: dict[str, str],
+    slug: str,
+    lang: str,
+) -> None:
+    allowed_bases = {
+        _app_name_base(name)
+        for source in strings
+        for name in portfolio_app_names_in(source)
+    }
+    injected = [
+        (source, names)
+        for source in strings
+        for names in [
+            cross_app_names_introduced(
+                source,
+                mapping.get(source, ""),
+                allowed_bases,
+            )
+        ]
+        if names
+    ]
+    if injected:
+        raise ValueError(
+            f"translation names an unrelated portfolio app in {slug} {lang}: "
+            f"{injected[:3]}"
+        )
+
+
 def require_complete_mapping(
     strings: list[str], mapping: dict[str, str], slug: str, lang: str
 ) -> None:
@@ -1379,6 +1500,7 @@ def require_translation_quality(
     slug: str,
     lang: str,
 ) -> None:
+    require_no_cross_app_translation(strings, mapping, slug, lang)
     if lang in ENGLISH_LOCALES:
         return
     untranslated = []
@@ -2662,6 +2784,7 @@ def run_refresh(
             gm = global_maps[lang]
             mapping = {x: gm.get(x, x) for x in strings}
             mapping = apply_locale_text_overrides(mapping, lang)
+            require_no_cross_app_translation(strings, mapping, slug, lang)
             new_ratio = _untranslated_ratio(strings, mapping)
             try:
                 existing = target.read_text(encoding="utf-8")

@@ -13,10 +13,16 @@ Rules that keep it safe:
   • No provider token (``APP_STORE_PROVIDER_TOKEN``, else
     ``~/.growth-private/app-store-provider-token``) => every URL is returned
     unchanged, so this is a no-op until Apple's token is configured.
-  • Only ``<a href>`` targets in HTML are touched.  JSON-LD ``url``/``sameAs``,
+  • Only ``<a href>`` and the share block's ``data-app-store-url`` are
+    touched — the two surfaces a visitor can actually click.  JSON-LD ``url``/``sameAs``,
     feeds and APIs keep the clean canonical URL, because a tracking query string
     there would break entity identity for search and AI engines.
-  • Links that already carry a ``ct`` campaign from a generator are left alone.
+  • Generator-minted campaigns are re-stamped (see "single authority" below),
+    except the ones in ``PROTECTED_CAMPAIGNS`` — today only Web Stories'
+    ``iag_story``, which ``validate_webstories.py`` checks against the Smart App
+    Banner meta tag.
+  • The original ``&`` / ``&amp;`` escaping of the href is preserved, so the
+    rewrite never changes how a page is parsed.
 
     python geo/gen_store_attribution.py           # apply
     python geo/gen_store_attribution.py --check   # report only
@@ -50,168 +56,219 @@ ANCHOR_HREF_RE = re.compile(
     r'(?P<suffix>")',
     flags=re.IGNORECASE,
 )
+# The share block (gen_app_store_share_ctas.py) hands this URL to the Web Share
+# API, so a visitor's shared link carries whatever campaign is in the attribute.
+# It is the same measurement surface as an anchor and must carry the same token,
+# otherwise 27k links keep reporting under a legacy campaign.
+SHARE_URL_RE = re.compile(
+    r'(?P<prefix>\bdata-app-store-url=")'
+    r"(?P<url>https://apps\.apple\.com/[^\"]*)"
+    r'(?P<suffix>")',
+    flags=re.IGNORECASE,
+)
+STORE_URL_PATTERNS = (ANCHOR_HREF_RE, SHARE_URL_RE)
 CAMPAIGN_SAFE_RE = re.compile(r"[^A-Za-z0-9_]")
 MAX_TOKEN = 30
 TOKEN_PREFIX = "geo_"
 
 # --------------------------------------------------------------------------- #
-# Campaign taxonomy
+# Campaign taxonomy — deliberately four buckets, on ONE axis
 #
-# Apple only shows a campaign once it has produced first-time downloads from at
-# least five individual users, so the taxonomy has to stay COARSE or every
-# bucket dies under that privacy threshold and we learn nothing.  Budget: the
-# site currently earns ~29 web-referrer downloads/day (~870/month).  Splitting
-# that over more than ~100 campaigns would leave almost every one invisible.
+# Apple only reports a campaign once it has produced first-time downloads from
+# at least five individual users inside the report window, and the row is
+# namespaced per app.  The real unit is therefore the (app, campaign) cell, and
+# the budget that has to fill those cells is tiny:
 #
-# Two axes, deliberately:
-#   section      - the page type.  This is the axis we act on (write more of
-#                  what converts), so it stays granular.
-#   locale group - markets bucketed down to six.  Per-locale tokens would mean
-#                  1,000+ campaigns (the tree has 1,043 language directories).
+#   * Web-referrer first-time downloads, whole portfolio, 30 days: 29–30
+#     (reports/geo_performance_history.jsonl, 2026-08-17..19 — an earlier
+#     version of this comment read that as ~29/DAY, which was wrong by 30x).
+#   * The Campaign column only exists in the "App Downloads Detailed" report,
+#     and Apple only generates that report for apps that clear their own
+#     privacy floor: 12 of 42 apps today (reports/referrer_sources.json).
+#     Of those 12, six have any web-referrer download at all, and one (Mochi,
+#     14/month) is 58% of the eligible volume.
 #
-# The App axis is NOT in the token on purpose: acquisition_feedback.py already
-# pulls Analytics per app, so every campaign row arrives namespaced by app for
-# free.  Encoding it again would multiply the buckets ~40x for no new signal.
+# So the honest budget is ~24 attributable downloads/month spread over the apps
+# Apple will report on.  Before this rewrite the site emitted 703 distinct
+# campaign tokens (89 minted here plus ~614 generator-minted iag_* ones), i.e.
+# ~29,500 (app, campaign) cells for ~24 downloads/month — nothing could ever
+# reach five, and the biggest token by far (iag_decision, 108k links) was not
+# reversible into a page type, so even if it did report it answered nothing.
 #
-# Token shape: geo_<section>_<group>, e.g. geo_answers_ja, geo_best_for_en.
-# parse_campaign_token() reverses it (group never contains "_", so rsplit works
-# even for hyphenated sections like best-for -> best_for).
+# What survives in the token: ONE axis, content intent, three values.  It is the
+# only axis we can act on editorially (write more of what converts).
+#
+# What is deliberately NOT in the token, because Apple already gives it back as
+# a free dimension on the very same report rows:
+#   * app     — Analytics reports are pulled per app (acquisition_feedback.py).
+#   * market  — "Territory" is a column on the download rows; encoding a locale
+#               group as well multiplied the buckets 7x for data we already had.
+#   * page / tool identity — unaffordable at this volume; folded into the three.
+#
+# Token shape: geo_ask | geo_pick | geo_learn.
 # --------------------------------------------------------------------------- #
 
-# Page types worth telling apart, measured against the real tree.  Anything
-# else collapses into "other" rather than inventing a long tail of dead
-# campaigns.
-KNOWN_SECTIONS = {
-    "answers", "guides", "alternatives", "hubs", "stories", "tools", "apps",
-    "vs", "workflow", "best-for", "reviews", "seasonal",
+ASK = "ask"      # question / problem intent — the AEO surface
+PICK = "pick"    # browse & choose: hubs, roundups, comparisons, reviews
+LEARN = "learn"  # how-to, workflow, tools, media — instructional intent
+BUCKETS = (ASK, PICK, LEARN)
+
+# Directory name -> bucket.  PICK is also the residual: hub and locale-home
+# pages, theme roundups (pay-once / gifting / no-account / switching …) and any
+# page type nobody has classified yet are all "browse a curated set of apps"
+# surfaces, so they belong there rather than in a fourth bucket.  A fourth
+# bucket was measured and rejected: it would have held 13% of links, i.e. ~1.8
+# downloads/month for even our biggest app — permanently under the threshold.
+SECTION_BUCKETS = {
+    "answers": ASK, "problems": ASK, "faq": ASK, "faqs": ASK,
+    "questions": ASK,
+
+    "vs": PICK, "cross": PICK, "alternatives": PICK, "best-for": PICK,
+    "reviews": PICK, "review-hubs": PICK, "seasonal": PICK, "apps": PICK,
+    "bundle": PICK, "compare": PICK, "hubs": PICK, "topic-hubs": PICK,
+    "data": PICK,
+
+    "guides": LEARN, "tutorials": LEARN, "workflow": LEARN, "scenario": LEARN,
+    "tools": LEARN, "stories": LEARN, "videos": LEARN, "visuals": LEARN,
+    "persona": LEARN, "publications": LEARN, "lessons": LEARN,
 }
-# Directory names that are sections in spirit but should roll up.
-SECTION_ALIASES = {
-    "topic-hubs": "hubs",
-    "review-hubs": "reviews",
-    "tutorials": "guides",
-    "videos": "stories",
-    "visuals": "stories",
-    "persona": "stories",
-    "scenario": "workflow",
-    "cross": "vs",
-    "bundle": "apps",
-    "publications": "stories",
-    "problems": "answers",
-    "data": "other",
-}
-OTHER_SECTION = "other"
-HOME_SECTION = "home"
 
-# Seven market buckets.  Everything not listed is "intl".  "sea" is split out
-# because ms/th/vi/id are four of the fifteen largest locale trees on the site;
-# leaving them inside "intl" made one bucket carry ~19% of all store links.
-LOCALE_GROUPS = {
-    "sea": {"ms", "th", "vi", "id", "fil", "tl", "km", "lo", "my", "jv", "su"},
-    "zh": {"zh", "zh-Hant", "zh-Hans", "zh-TW", "zh-CN", "zh-HK", "yue", "wuu",
-           "nan", "hak"},
-    "ja": {"ja", "ja-JP"},
-    "ko": {"ko", "ko-KR"},
-    "eu": {"de-DE", "de", "de-AT", "de-CH", "fr-FR", "fr", "fr-CA", "fr-BE",
-           "es-ES", "es", "es-MX", "es-419", "it", "it-IT", "nl-NL", "nl",
-           "pt-PT", "pt-BR", "pt", "pl", "ru", "sv", "uk", "fi", "da", "nb",
-           "no", "cs", "el", "hu", "ro", "sk", "hr", "ca", "bg", "et", "lt",
-           "lv", "sl", "sr", "is", "ga", "cy", "eu", "gl"},
-}
-ENGLISH_LOCALES = {"en", "en-US", "en-GB", "en-AU", "en-CA", "en-IN", "en-NZ",
-                   "en-ZA", "en-IE", "en-SG"}
-DEFAULT_GROUP = "intl"
+# Campaigns this pass must not touch.  Web Stories mint iag_story and
+# validate_webstories.py checks it against the Smart App Banner meta tag; the
+# stories/ directories are skipped anyway, this is the belt to that braces.
+PROTECTED_CAMPAIGNS = frozenset({"iag_story"})
+
+# Historical tokens -> the bucket they roll up into, so the report keeps one
+# continuous series across the 2026-08-20 change instead of starting at zero.
+# Legacy geo_<section>_<market> tokens are reversed through SECTION_BUCKETS;
+# these prefixes cover the generator-minted iag_* family.  Longest match wins.
+LEGACY_IAG_BUCKETS = (
+    ("iag_ans", ASK),
+    ("iag_blur_guide", LEARN),
+    ("iag_alt", PICK),
+    ("iag_bestfor", PICK),
+    ("iag_bf", PICK),
+    ("iag_bundle", PICK),
+    ("iag_decision", PICK),
+    ("iag_review", PICK),
+    ("iag_seasonal", PICK),
+    ("iag_vs", PICK),
+    ("iag_find", LEARN),
+    ("iag_guide", LEARN),
+    ("iag_story", LEARN),
+    ("iag_video", LEARN),
+    ("iag_visual", LEARN),
+    ("iag_data", PICK),
+    ("iag_lp", PICK),
+)
 
 
-def locale_group(locale: str) -> str:
-    """Seven coarse market buckets; unknown/long-tail languages become 'intl'."""
-    if not locale or locale in ENGLISH_LOCALES:
-        return "en"
-    for group, members in LOCALE_GROUPS.items():
-        if locale in members:
-            return group
-    return DEFAULT_GROUP
-
-
-def _section_of(part: str) -> str | None:
-    if part in KNOWN_SECTIONS:
-        return part
-    return SECTION_ALIASES.get(part)
+def _bucket_of(part: str) -> str | None:
+    return SECTION_BUCKETS.get(part)
 
 
 def campaign_token(rel: str) -> str:
-    """Stable per-section/per-market campaign token, <=30 chars of [A-Za-z0-9_/].
+    """Bucket a page path into one of four campaign tokens.
 
-    ``rel`` is the page path relative to pages/, e.g.
-    ``ja/answers/foo.html`` or ``answers/foo.html`` (the English tree has no
-    locale prefix — the old code read "answers" as the locale there and emitted
-    geo_answers_answers).
+    ``rel`` is the page path relative to pages/, e.g. ``ja/answers/foo.html``
+    or ``answers/foo.html`` (the English tree has no locale prefix).  The
+    locale segment is ignored on purpose — market comes back for free as the
+    Territory column of the download report.
     """
     parts = [part for part in rel.split("/") if part]
     directories = parts[:-1]
-    if not directories:
-        return TOKEN_PREFIX + HOME_SECTION + "_en"
-
-    # A leading directory is the locale only when it is not itself a section.
-    first = directories[0]
-    if _section_of(first) is not None:
-        locale, rest = "en", directories
-    else:
-        locale, rest = first, directories[1:]
-
-    section = OTHER_SECTION
-    for part in rest:
-        resolved = _section_of(part)
+    bucket = PICK
+    for part in directories:
+        resolved = _bucket_of(part)
         if resolved is not None:
-            section = resolved
+            bucket = resolved
             break
-    else:
-        if not rest:
-            section = HOME_SECTION
-
-    token = "{}{}_{}".format(
-        TOKEN_PREFIX,
-        CAMPAIGN_SAFE_RE.sub("_", section),
-        CAMPAIGN_SAFE_RE.sub("_", locale_group(locale)),
-    )
+    token = TOKEN_PREFIX + CAMPAIGN_SAFE_RE.sub("_", bucket)
     return token[:MAX_TOKEN].rstrip("_") or "geo"
 
 
 def parse_campaign_token(token: str) -> tuple[str, str] | None:
-    """Reverse campaign_token(): 'geo_best_for_ja' -> ('best_for', 'ja')."""
+    """Reverse a campaign token into ``(bucket, legacy_market)``.
+
+    Current tokens carry no market, so the second element is "" and callers
+    should read the market off the report's Territory column instead.  Tokens
+    minted before 2026-08-20 still reverse — ``geo_best_for_ja`` ->
+    ``("pick", "ja")``, ``iag_decision`` -> ``("pick", "")`` — so history rolls
+    up into the same three buckets rather than breaking the series.
+    """
+    if not token:
+        return None
+    if token.startswith("iag_"):
+        match = max(
+            (prefix for prefix, _ in LEGACY_IAG_BUCKETS
+             if token == prefix or token.startswith(prefix + "_")),
+            key=len,
+            default=None,
+        )
+        if match is None:
+            return PICK, ""
+        return dict(LEGACY_IAG_BUCKETS)[match], ""
     if not token.startswith(TOKEN_PREFIX):
         return None
     body = token[len(TOKEN_PREFIX):]
-    if "_" not in body:
+    if body in BUCKETS:
+        return body, ""
+    section, _, market = body.rpartition("_")
+    if not section or not market:
         return None
-    section, _, group = body.rpartition("_")
-    if not section or not group:
-        return None
-    return section, group
+    # legacy sections were emitted with "_" swapped in for "-"
+    bucket = _bucket_of(section.replace("_", "-")) or PICK
+    return bucket, market
+
+
+CAMPAIGN_PARAM_RE = re.compile(r"[?&]ct=([A-Za-z0-9_/]*)")
+
+
+def existing_campaign(url: str) -> str | None:
+    """The ct= token already on a URL, or None."""
+    match = CAMPAIGN_PARAM_RE.search(url)
+    return match.group(1) if match else None
 
 
 def has_campaign(url: str) -> bool:
-    return "ct=" in url
+    return existing_campaign(url) is not None
 
 
 def rewrite(text: str, token: str, provider: str | None) -> tuple[str, int]:
+    """Re-stamp every store anchor in ``text`` with ``token``.
+
+    This is the single authority on campaign tokens for the site tree.  Before
+    2026-08-20 it skipped any URL a generator had already tagged, which left
+    ~614 generator-minted tokens (108k links on iag_decision alone) outside the
+    taxonomy and pushed the whole site past Apple's privacy threshold.  The one
+    exception is PROTECTED_CAMPAIGNS, whose tokens are part of a contract that
+    is checked elsewhere.
+    """
     changes = 0
 
     def replace(match: re.Match[str]) -> str:
         nonlocal changes
-        url = match.group("url")
-        if has_campaign(url):
+        raw = match.group("url")
+        # Half the tree writes the query as &amp;; decode before parsing and
+        # re-encode afterwards so the rewrite never changes how a page parses.
+        escaped = "&amp;" in raw
+        url = raw.replace("&amp;", "&") if escaped else raw
+        if existing_campaign(url) in PROTECTED_CAMPAIGNS:
             return match.group(0)
         try:
             updated = campaign_app_store_url(url, token, provider_token=provider)
         except ValueError:
             return match.group(0)  # never break a page over an odd URL
-        if updated == url:
+        if escaped:
+            updated = updated.replace("&", "&amp;")
+        if updated == raw:
             return match.group(0)
         changes += 1
         return match.group("prefix") + updated + match.group("suffix")
 
-    return ANCHOR_HREF_RE.sub(replace, text), changes
+    for pattern in STORE_URL_PATTERNS:
+        text = pattern.sub(replace, text)
+    return text, changes
 
 
 def iter_html(pages: Path):
@@ -232,16 +289,24 @@ def generate(pages: Path, check: bool) -> dict[str, object]:
         text = path.read_text(encoding="utf-8", errors="ignore")
         if "apps.apple.com" not in text:
             continue
-        anchors = ANCHOR_HREF_RE.findall(text)
+        anchors = [
+            match
+            for pattern in STORE_URL_PATTERNS
+            for match in pattern.findall(text)
+        ]
         if not anchors:
             continue
         files_with_links += 1
         links_total += len(anchors)
         token = campaign_token(rel)
         updated, changes = rewrite(text, token, provider)
+        # Census the token for every anchor on the page, not just the ones this
+        # run had to touch — otherwise a second (idempotent) run reports zero
+        # campaigns and the taxonomy looks empty.
+        if provider:
+            tokens[token] += len(anchors)
         if changes:
             links_stamped += changes
-            tokens[token] += changes
             files_changed += 1
             if not check:
                 path.write_text(updated, encoding="utf-8")
@@ -252,6 +317,7 @@ def generate(pages: Path, check: bool) -> dict[str, object]:
         "anchors_stamped": links_stamped,
         "pages_changed": files_changed,
         "distinct_campaigns": len(tokens),
+        "links_by_campaign": dict(tokens.most_common()),
     }
 
 
@@ -261,7 +327,10 @@ def main() -> None:
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     stats = generate(args.pages_dir, args.check)
+    by_campaign = stats.pop("links_by_campaign", {})
     print("store-attribution: " + " ".join(f"{k}={v}" for k, v in stats.items()))
+    for campaign, count in by_campaign.items():
+        print(f"store-attribution:   {campaign} links={count:,}")
     if not stats["provider_token_configured"]:
         print(
             f"store-attribution: {PROVIDER_TOKEN_ENV} is unset — links left clean; "

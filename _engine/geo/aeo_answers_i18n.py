@@ -1420,16 +1420,18 @@ def apply_locale_text_overrides(
     lang: str,
 ) -> dict[str, str]:
     overrides = LOCALE_TEXT_OVERRIDES.get(lang, {})
-    return {
-        source: apply_locale_target_replacements(
-            overrides.get(
-                source,
-                source if source in BRANDS else target,
-            ),
-            lang,
-        )
-        for source, target in mapping.items()
-    }
+    out: dict[str, str] = {}
+    for source, target in mapping.items():
+        text = overrides.get(source, source if source in BRANDS else target)
+        # The per-locale word table exists to nativise leftover English inside
+        # an already translated sentence.  Running it over a sentence that is
+        # still English yields half-translated copy ("One-time buka kunci"),
+        # which reads worse than either language on its own -- so a string that
+        # came back unchanged is left exactly as the English page had it.
+        if text != source:
+            text = apply_locale_target_replacements(text, lang)
+        out[source] = text
+    return out
 
 
 def apply_locale_target_replacements(text: str, lang: str) -> str:

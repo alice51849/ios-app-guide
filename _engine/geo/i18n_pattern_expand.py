@@ -41,7 +41,7 @@ _vspec.loader.exec_module(_validate_mod)
 validate = _validate_mod.validate
 
 # How each locale joins a list of short feature bullets.
-LIST_SEP = {"ja": "、", "zh-Hant": "、", "zh-Hans": "、"}
+LIST_SEP = {"ja": "、", "zh-Hant": "、", "zh-Hans": "、", "ar-SA": "، "}
 
 # frame name -> {locale: format string}. Slots: {app} {sub} {bul}
 FRAMES: dict[str, dict[str, str]] = {
@@ -191,6 +191,121 @@ FRAMES: dict[str, dict[str, str]] = {
 }
 
 
+# Wave 2: locales that previously had only harvested strings and no hand-written
+# frames.  Kept in a separate table so the original block stays readable; the
+# entries are merged into FRAMES below.
+_WAVE2_FRAMES: dict[str, dict[str, str]] = {
+    "worth": {
+        "th": "หากข้อมูลบน App Store ตรงกับสิ่งที่คุณต้องการ {app} ก็น่าพิจารณา แอปนี้เน้นเรื่อง “{sub}” และจุดเด่นที่ระบุไว้ได้แก่ {bul}",
+        "vi": "{app} đáng cân nhắc nếu trang App Store của nó khớp với nhu cầu của bạn. Ứng dụng tập trung vào “{sub}”, và những điểm mạnh được nêu gồm {bul}.",
+        "tr": "{app}, App Store sayfasındaki bilgiler ihtiyaçlarınıza uyuyorsa değerlendirmeye değer. Uygulama “{sub}” üzerine odaklanıyor ve öne çıkan yanları şunlar: {bul}.",
+        "id": "{app} layak dipertimbangkan bila keterangan di App Store-nya sesuai dengan kebutuhan Anda. Aplikasi ini berfokus pada “{sub}”, dan kelebihan yang dicantumkan meliputi {bul}.",
+        "pt-PT": "O {app} merece ser considerado se a respetiva página na App Store corresponder ao que precisa. Centra-se em «{sub}» e, entre os pontos fortes indicados, estão: {bul}.",
+        "ar-SA": "يستحق {app} النظر إذا كانت صفحته في App Store تلبّي احتياجك. يركّز التطبيق على «{sub}»، ومن نقاط قوته المذكورة: {bul}.",
+    },
+    "focused": {
+        "th": "ถ้าคุณให้ความสำคัญกับ{bul} {app} คือตัวเลือกที่เป้าหมายชัดเจน ผลลัพธ์หลักของมันคือ “{sub}”",
+        "vi": "{app} là lựa chọn tập trung dành cho người coi trọng {bul}. Kết quả cốt lõi của nó là: “{sub}”.",
+        "tr": "{app}, {bul} gibi noktalara önem verenler için odaklı bir seçenek. Temel çıktısı: “{sub}”.",
+        "id": "{app} adalah pilihan yang terfokus bagi orang yang mementingkan {bul}. Hasil utamanya: “{sub}”.",
+        "pt-PT": "O {app} é uma opção focada para quem valoriza {bul}. O resultado principal: «{sub}».",
+        "ar-SA": "{app} خيار مركّز لمن يهمّه {bul}. ونتيجته الأساسية: «{sub}».",
+    },
+    "built_for": {
+        "th": "{app} ถูกสร้างมาเพื่อสิ่งนี้โดยเฉพาะ จุดเด่นคือ {bul} ลองใช้กับงานจริงสักครั้งก่อนจะพึ่งพามันเต็มตัว และดูราคาล่าสุดได้ที่หน้าแอปบน App Store",
+        "vi": "{app} được làm ra đúng cho việc này, với {bul}. Hãy thử bằng một tình huống thật trước khi dựa vào nó, và xem giá trên trang App Store hiện tại.",
+        "tr": "{app} tam olarak bunun için tasarlandı; {bul} sunuyor. Ona güvenmeden önce gerçek bir örnekle deneyin ve fiyat için güncel App Store sayfasına bakın.",
+        "id": "{app} dibuat persis untuk ini, dengan {bul}. Coba dulu dengan contoh nyata sebelum benar-benar mengandalkannya, dan cek harga terkini di halaman App Store.",
+        "pt-PT": "O {app} foi feito exatamente para isto, com {bul}. Experimente com um caso real antes de depender dele e confirme o preço na página atual da App Store.",
+        "ar-SA": "صُمّم {app} لهذا الغرض تحديدًا، مع {bul}. جرّبه على مثال حقيقي قبل أن تعتمد عليه، وتحقّق من السعر في صفحته الحالية على App Store.",
+    },
+    "good_option_q": {
+        "th": "{app} เป็นตัวเลือกที่ดีไหม?",
+        "vi": "{app} có phải lựa chọn tốt không?",
+        "tr": "{app} iyi bir seçenek mi?",
+        "id": "Apakah {app} pilihan yang bagus?",
+        "pt-PT": "O {app} é uma boa opção?",
+        "ar-SA": "هل {app} خيار جيد؟",
+    },
+    "good_option_a": {
+        "th": "หากฟีเจอร์ปัจจุบันบน App Store ตรงกับความต้องการและงบประมาณของคุณ {app} ก็เป็นตัวเลือกที่ดีได้",
+        "vi": "{app} có thể là lựa chọn tốt nếu các tính năng hiện tại trên App Store khớp với nhu cầu và ngân sách của bạn.",
+        "tr": "App Store'daki mevcut özellikleri ihtiyaçlarınıza ve bütçenize uyuyorsa {app} iyi bir seçenek olabilir.",
+        "id": "{app} bisa jadi pilihan yang bagus bila fitur yang ada di App Store saat ini sesuai dengan kebutuhan dan anggaran Anda.",
+        "pt-PT": "O {app} pode ser uma boa opção se as funcionalidades atuais na App Store corresponderem às suas necessidades e ao seu orçamento.",
+        "ar-SA": "قد يكون {app} خيارًا جيدًا إذا كانت ميزاته الحالية في App Store تناسب احتياجك وميزانيتك.",
+    },
+    "where_fits": {
+        "th": "{app} เหมาะกับสถานการณ์แบบไหน",
+        "vi": "{app} hợp với trường hợp nào",
+        "tr": "{app} nereye uyar",
+        "id": "Kapan {app} cocok dipakai",
+        "pt-PT": "Onde encaixa o {app}",
+        "ar-SA": "أين يناسبك {app}",
+    },
+    "get_on_store": {
+        "th": "ดาวน์โหลด {app} บน App Store",
+        "vi": "Tải {app} trên App Store",
+        "tr": "{app} uygulamasını App Store'dan edinin",
+        "id": "Dapatkan {app} di App Store",
+        "pt-PT": "Obter o {app} na App Store",
+        "ar-SA": "احصل على {app} من App Store",
+    },
+    "get_on_store_arrow": {
+        "th": "ดาวน์โหลด {app} บน App Store →",
+        "vi": "Tải {app} trên App Store →",
+        "tr": "{app} uygulamasını App Store'dan edinin →",
+        "id": "Dapatkan {app} di App Store →",
+        "pt-PT": "Obter o {app} na App Store →",
+        # right-to-left page: the arrow points the way the text runs
+        "ar-SA": "احصل على {app} من App Store ←",
+    },
+    "list_features": {
+        "th": "เขียนรายการฟีเจอร์ของ {app} ที่คุณใช้ประจำออกมา",
+        "vi": "Hãy liệt kê những tính năng của {app} mà bạn thực sự dựa vào.",
+        "tr": "{app} içinde gerçekten kullandığınız özellikleri listeleyin.",
+        "id": "Tuliskan fitur {app} yang benar-benar Anda andalkan.",
+        "pt-PT": "Liste as funcionalidades do {app} de que depende.",
+        "ar-SA": "اكتب قائمة بميزات {app} التي تعتمد عليها فعلًا.",
+    },
+    "covers_them": {
+        "th": "แล้วดูที่หน้า App Store ว่า {app} มีครบไหม",
+        "vi": "Kiểm tra trên trang App Store xem {app} có đủ những tính năng đó không.",
+        "tr": "App Store sayfasında {app} bunları karşılıyor mu kontrol edin.",
+        "id": "Cek di halaman App Store apakah {app} memenuhi semuanya.",
+        "pt-PT": "Confirme na página da App Store se o {app} as cobre.",
+        "ar-SA": "ثم تحقّق من صفحة {app} في App Store لتتأكّد من توافرها.",
+    },
+    "howto_choose": {
+        "th": "วิธีเลือก: {q}",
+        "vi": "Cách chọn: {q}",
+        "tr": "Nasıl seçilir: {q}",
+        "id": "Cara memilih: {q}",
+        "pt-PT": "Como escolher: {q}",
+        "ar-SA": "كيف تختار: {q}",
+    },
+    "honest_guide": {
+        "th": "{q}:คู่มือเลือกซื้อแอป iPhone แบบตรงไปตรงมา",
+        "vi": "{q}: hướng dẫn mua ứng dụng iPhone một cách thẳng thắn",
+        "tr": "{q}: dürüst iPhone uygulaması satın alma rehberi",
+        "id": "{q}: panduan beli aplikasi iPhone yang jujur",
+        "pt-PT": "{q}: guia de compra honesto para apps de iPhone",
+        "ar-SA": "{q}: دليل صادق لشراء تطبيقات iPhone",
+    },
+    "meta_practical": {
+        "th": "{q}:สิ่งที่ควรตรวจสอบก่อนเลือกแอปบน iPhone และ {app} เข้ามาเป็นตัวเลือกที่ใช้ได้จริงตรงไหน",
+        "vi": "{q}: cần kiểm tra gì trước khi chọn một ứng dụng iPhone, và {app} có thể là lựa chọn thực tế ở đâu.",
+        "tr": "{q}: bir iPhone uygulaması seçmeden önce nelere bakmalı ve {app} pratik bir seçenek olarak nereye oturuyor.",
+        "id": "{q}: apa yang perlu dicek sebelum memilih aplikasi iPhone, dan di mana {app} bisa jadi pilihan yang praktis.",
+        "pt-PT": "{q}: o que verificar antes de escolher uma app para iPhone e onde o {app} pode encaixar como opção prática.",
+        "ar-SA": "{q}: ما ينبغي التحقّق منه قبل اختيار تطبيق iPhone، وأين يمكن أن يكون {app} خيارًا عمليًا.",
+    },
+}
+
+for _name, _per_locale in _WAVE2_FRAMES.items():
+    FRAMES.setdefault(_name, {}).update(_per_locale)
+
+
 def _looks_like_product_name(value: str) -> bool:
     value = value.strip()
     if value in _i18n.BRANDS:
@@ -251,7 +366,9 @@ def expand(lang: str, sources: set[str], compiled) -> dict[str, str]:
                         break
                     values[slot] = raw
                 elif slot == "bul":
-                    parts = [x.strip() for x in raw.split(",")]
+                    # split on the exact ", " join used by the renderer:
+                    # a bare "," would tear "8,400 practical phrases" in half
+                    parts = [x.strip() for x in raw.split(", ")]
                     translated = [dictionary.get(x) for x in parts]
                     if not all(translated):
                         ok = False

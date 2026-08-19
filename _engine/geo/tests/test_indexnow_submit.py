@@ -14,6 +14,23 @@ from types import SimpleNamespace
 
 
 MODULE_PATH = Path(__file__).resolve().parents[1] / "indexnow_submit.py"
+
+
+def _site_workflow(name: str) -> str:
+    """Read a pages-repo workflow from either engine layout.
+
+    Cloud runs execute this file as ``<site>/_engine/geo/tests/...`` so the
+    workflows sit three levels up; the 00_GrowthEngine checkout keeps the site
+    in ``geo/pages`` — which is also the path the GEO workflow symlinks
+    ``_engine/geo/pages`` to. Probing both keeps one copy of this file valid
+    on both sides of the mirror.
+    """
+    here = Path(__file__).resolve()
+    for candidate in (here.parents[3], here.parents[1] / "pages"):
+        path = candidate / ".github" / "workflows" / name
+        if path.is_file():
+            return path.read_text(encoding="utf-8")
+    raise unittest.SkipTest(f"{name} is not reachable from this checkout")
 SPEC = importlib.util.spec_from_file_location("indexnow_submit", MODULE_PATH)
 indexnow = importlib.util.module_from_spec(SPEC)
 assert SPEC and SPEC.loader
@@ -411,12 +428,7 @@ class IndexNowTests(unittest.TestCase):
             self.assertFalse(state_file.exists())
 
     def test_workflow_gates_geo_success_and_caches_submission_sha(self) -> None:
-        workflow = (
-            Path(__file__).resolve().parents[3]
-            / ".github"
-            / "workflows"
-            / "indexnow-daily.yml"
-        ).read_text(encoding="utf-8")
+        workflow = _site_workflow("indexnow-daily.yml")
         self.assertIn(
             "github.event.workflow_run.conclusion == 'success'",
             workflow,

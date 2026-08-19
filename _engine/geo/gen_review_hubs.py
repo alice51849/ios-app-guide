@@ -280,12 +280,11 @@ def build_review_hub(app_cfg, lang_dirs):
             "applicationCategory": "UtilitiesApplication",
             "operatingSystem": "iOS",
             "url": store_url,
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4",
-                "bestRating": "5",
-                "ratingCount": str(len(links))
-            }
+            # No aggregateRating. The previous value was invented: a hardcoded
+            # 4 stars with ratingCount set to the number of translated pages,
+            # which is not a rating count at all. Publisher-authored ratings
+            # also breach Google's review-snippet policy and risk a manual
+            # action across the domain.
         },
         {
             "@context": "https://schema.org",
@@ -314,7 +313,7 @@ def build_review_hub(app_cfg, lang_dirs):
 <body>
 <p><a class="back" href="{GEO_SITE}/">← iOS App Guide</a></p>
 <h1>{app_cfg['emoji']} {name} Review 2026 — All Languages</h1>
-<div class="stars">★★★★☆</div>
+
 <p>Pay once, no subscription. Read honest reviews in {len(links)} languages.</p>
 <a href="{store_url}?ct=iag_review_hub_{key}" class="dl" rel="noopener">Download on App Store →</a>
 <p class="count">Reviews available in {len(links)} languages:</p>

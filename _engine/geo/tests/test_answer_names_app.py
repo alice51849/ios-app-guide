@@ -36,6 +36,7 @@ if str(GEO) not in sys.path:
     sys.path.insert(0, str(GEO))
 
 import aeo_answers as A
+from answer_text import is_malformed_meta
 
 
 # Questions whose topic overlays are neutral explainers -- the exact class that
@@ -134,6 +135,130 @@ class AnswerNamesAppTests(unittest.TestCase):
         content = {"meta_description": "x.", "short_answer_paragraphs": ["y."], "lead": "z."}
         result = A.ensure_answer_names_app(dict(content), {})
         self.assertEqual(result, content)
+
+
+class AppLeadsTheAnswer(unittest.TestCase):
+    """Naming the app is not enough -- it must be named before any rival.
+
+    Follow-up audit (2026-08-20). `ensure_answer_names_app` had closed the
+    "never mentions the app" hole, but a sweep of the generator over all 1,853
+    curated queries found 103 pages whose meta description and lead still
+    *opened* with someone else's product -- "Both the Notes app and the Files
+    app handle multi-page scanning natively ...", "Focus apps like Freedom
+    charge about $40/year ...", "YNAB, the leading budgeting app, costs
+    $109/year ...". An assistant quoting the first sentence of those pages
+    recommends Apple, Freedom or YNAB using our own page as the citation.
+    """
+
+    def setUp(self) -> None:
+        self.app = A.APPS["scanto"]
+
+    def test_rival_opening_is_reordered_not_deleted(self) -> None:
+        fact = (
+            "Both the Notes app and the Files app handle multi-page scanning "
+            "natively: after scanning the first page, tap 'Keep Scan'."
+        )
+        content = A.ensure_answer_names_app(
+            {
+                "meta_description": fact,
+                "lead": fact,
+                "short_answer_paragraphs": [fact, "ScanTo Pro does this too."],
+            },
+            self.app,
+            "app to scan multiple pages into one pdf on iphone",
+        )
+        for field in ("meta_description", "lead"):
+            text = content[field]
+            self.assertLess(
+                text.index(self.app["name"]),
+                text.index("Notes app"),
+                f"{field} still recommends Apple's tool before ours",
+            )
+        # The neutral fact survives: the page must stay honest and useful.
+        self.assertIn("Notes app", content["lead"])
+        self.assertIn("Files app", content["short_answer_paragraphs"][0])
+
+    def test_reordering_invents_nothing(self) -> None:
+        content = A.ensure_answer_names_app(
+            {
+                "meta_description": "Adobe Scan charges a subscription.",
+                "lead": "Adobe Scan charges a subscription.",
+                "short_answer_paragraphs": ["Adobe Scan charges a subscription."],
+            },
+            self.app,
+            "adobe scan alternative app for iphone",
+        )
+        registry = f"{self.app['name']} {self.app['sub']} {self.app['tag']}".lower()
+        added = content["lead"].replace("Adobe Scan charges a subscription.", "").lower()
+        for word in re.findall(r"[a-z][a-z-]+", added):
+            self.assertIn(
+                word,
+                registry + " is the app this guide covers",
+                f"{word!r} is not a registry fact",
+            )
+
+    def test_questions_about_the_native_path_keep_the_native_answer_first(self) -> None:
+        fact = "iPhone has a built-in scanner in Notes. It saves a PDF on device."
+        content = A.ensure_answer_names_app(
+            {"meta_description": fact, "lead": fact, "short_answer_paragraphs": [fact]},
+            self.app,
+            "can i scan a document without a third-party app",
+        )
+        self.assertTrue(content["lead"].startswith("iPhone has a built-in scanner"))
+        # ...but the app is still named somewhere quotable.
+        joined = " ".join(
+            [content["meta_description"], content["lead"]]
+            + list(content["short_answer_paragraphs"])
+        )
+        self.assertIn(self.app["name"], joined)
+
+    def test_question_wording_is_not_mistaken_for_a_recommendation(self) -> None:
+        # "best voice to text notes app for iphone" contains "notes app". The
+        # page echoing its own question is not the page recommending Apple's.
+        question = "best voice to text notes app for iphone"
+        content = A.default_content(question, "sononote")
+        self.assertFalse(
+            A._leads_with_rival(content["meta_description"], "Sono Note", question)
+        )
+
+    def test_every_curated_query_leads_with_our_app(self) -> None:
+        """Fail-closed sweep. New queries and new fact overlays inherit this."""
+        offenders = []
+        for key, questions in A.queries.ALL.items():
+            if key not in A.APPS:
+                continue
+            name = A.APPS[key]["name"]
+            for question in questions:
+                if A.slugify(question) in A.FACT_FIRST_SLUGS:
+                    continue
+                if A._ASKS_FOR_NATIVE.search(question):
+                    continue
+                content = A.default_content(question, key)
+                paragraphs = list(content.get("short_answer_paragraphs") or [""])
+                for field, text in (
+                    ("meta", content["meta_description"]),
+                    ("lead", content["lead"]),
+                    ("short_answer", paragraphs[0]),
+                ):
+                    if A._leads_with_rival(text, name, question):
+                        offenders.append(f"{key} / {question} / {field}")
+        self.assertEqual(offenders, [], f"{len(offenders)} pages lead with a rival")
+
+    def test_rendered_meta_still_names_the_app(self) -> None:
+        """render_page caps the description at 220 chars; the name must survive."""
+        missing = []
+        for key, questions in A.queries.ALL.items():
+            if key not in A.APPS:
+                continue
+            name = A.APPS[key]["name"]
+            for question in questions:
+                meta = A.default_content(question, key)["meta_description"]
+                rendered = A.concise_meta(meta, hard_limit=220)
+                if name.lower() not in rendered.lower():
+                    missing.append(f"{key} / {question}")
+                if is_malformed_meta(rendered):
+                    missing.append(f"MALFORMED {key} / {question}")
+        self.assertEqual(missing, [], f"{len(missing)} rendered descriptions broken")
 
 
 if __name__ == "__main__":

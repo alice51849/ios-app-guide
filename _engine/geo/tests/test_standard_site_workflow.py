@@ -10,7 +10,29 @@ import sys
 import unittest
 
 
-ROOT = Path(__file__).resolve().parents[3]
+def _deployed_site_root() -> Path | None:
+    """The published site checkout this file is deployed inside, if any.
+
+    Unlike the other mirrored tests this one cannot be made layout-agnostic:
+    it pins sha256 digests of ``_engine/social/*`` and imports the engine from
+    ``ROOT/_engine``. Pointed at ``geo/pages`` from the 00_GrowthEngine
+    checkout it would build a hybrid import graph (canon modules already on
+    ``sys.path``, mirror data under ROOT) and fail for reasons that say
+    nothing about the site. So it asserts only where it is deployed — the
+    pages repo — and skips elsewhere, while the file itself stays
+    byte-identical on both sides so the mirror audit keeps covering it.
+    """
+    root = Path(__file__).resolve().parents[3]
+    if (root / ".github/workflows/geo-daily.yml").is_file():
+        return root
+    return None
+
+
+DEPLOYED_ROOT = _deployed_site_root()
+IS_DEPLOYED = DEPLOYED_ROOT is not None
+# Placeholder keeps the module importable (and the engine resolvable) in the
+# 00_GrowthEngine checkout; every assertion is skipped there.
+ROOT = DEPLOYED_ROOT or Path(__file__).resolve().parents[1] / "pages"
 WORKFLOW = ROOT / ".github/workflows/geo-daily.yml"
 os.environ.setdefault("STANDARD_SITE_ENGINE_ROOT", str(ROOT / "_engine"))
 os.environ.setdefault("GEO_PAGES", str(ROOT))
@@ -36,6 +58,9 @@ MIRROR_SHA256 = {
 }
 
 
+@unittest.skipUnless(
+    IS_DEPLOYED, "runs from the deployed pages checkout (<site>/_engine/geo/tests)"
+)
 class StandardSiteWorkflowTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:

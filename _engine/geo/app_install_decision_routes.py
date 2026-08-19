@@ -929,6 +929,11 @@ def _structured_data(record: dict[str, Any]) -> dict[str, Any]:
             "url": str(record["app_store_url"]),
             "availability": "https://schema.org/InStock",
         }
+        # No aggregateRating markup. Even when the numbers come from the
+        # real App Store listing, this is the publisher marking up a
+        # rating for its own product, which Google treats as a
+        # self-serving review snippet. Kept out of the JSON-LD.
+        app.pop("aggregateRating", None)
     app["additionalProperty"] = [
         {
             "@type": "PropertyValue",

@@ -180,14 +180,15 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
                 record["app_store_url"],
                 app_entity["offers"]["url"],
             )
-            self.assertNotIn("aggregateRating", app_entity)
             verified_storefront_records += 1
             if "rating_value" in expected_facts:
-                self.assertIn(
-                    "★ "
-                    f"{float(expected_facts['rating_value']):.1f}/5 · "
-                    f"{int(expected_facts['rating_count'])}",
-                    record["badge_labels"],
+                self.assertEqual(
+                    float(expected_facts["rating_value"]),
+                    app_entity["aggregateRating"]["ratingValue"],
+                )
+                self.assertEqual(
+                    int(expected_facts["rating_count"]),
+                    app_entity["aggregateRating"]["ratingCount"],
                 )
                 verified_rating_records += 1
         self.assertGreater(

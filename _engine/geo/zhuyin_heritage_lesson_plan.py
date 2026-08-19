@@ -332,7 +332,7 @@ COPY = {
         "app": "選用的練習層",
         "app_text": (
             "不用 App 也能完成教案。課間若要加強聽音點選、描寫、聲調與拼讀，"
-            "可選用無廣告、免帳號的 Lumi Bopomofo。免費版可下載試用並選擇一次性永久解鎖；"
+            "可選用無廣告、免帳號的 Lumi Bopomofo。免費版可下載試用並選擇一次性一次購買解鎖；"
             "Lumi Bopomofo Pro 則是一次付費下載的完整版本。"
         ),
         "free_cta": "試用 Lumi Bopomofo",

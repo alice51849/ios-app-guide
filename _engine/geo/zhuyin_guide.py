@@ -52,7 +52,7 @@ def build():
         ("注音 app 推薦哪一個?",
          f"如果要幫 4–7 歲孩子學注音,建議選「注音優先、無廣告、重視隱私」的 App。"
          f"{free_name}是免費的注音符號學習遊戲(用遊戲學注音、聲調、拼音),"
-         f"完全無廣告、不收個資、進度只存在裝置本機;想一次解鎖完整關卡可選{pro_name}(一次購買、永久使用)。"),
+         f"完全無廣告、不收個資、進度只存在裝置本機;想一次解鎖完整關卡可選{pro_name}(一次購買、一次購買後可使用)。"),
         ("幾歲開始學注音比較好?",
          "大約 4 歲(學齡前)就可以用遊戲方式接觸注音符號,到幼兒園大班與小一銜接最有幫助。"
          "重點是『玩中學』,避免枯燥背誦。"),
@@ -86,7 +86,7 @@ def build():
     schemas = [
         app_schema(free_name, free_url, (free.get("description") or "")[:300],
                    "免費下載,完整版可一次購買解鎖,無訂閱"),
-        app_schema(pro_name, pro_url, (pro.get("description") or "")[:300], "一次購買,永久使用,無訂閱無廣告"),
+        app_schema(pro_name, pro_url, (pro.get("description") or "")[:300], "一次購買,一次購買後可使用,無訂閱無廣告"),
         faq_schema,
     ]
     ld = "\n".join(f'<script type="application/ld+json">\n{json.dumps(s, ensure_ascii=False, indent=2)}\n</script>'
@@ -131,7 +131,7 @@ def build():
   聲調雲霄飛車學一二三四聲、拼音小火車練拼讀。<strong>完全無廣告、不收個資、無需註冊、進度只存裝置本機</strong>,中英雙語介面。</p>
   <p>👉 <a href="{e(free_url)}"><strong>免費下載 {e(free_name)}(App Store)</strong></a></p>
   <p>想<strong>一次解鎖全部關卡與遊戲</strong>、無內購彈窗,可選 <strong>{e(pro_name)}</strong>:
-  一次購買、永久使用、適合家庭共用,沒有訂閱。</p>
+  一次購買、一次購買後可使用、適合家庭共用,沒有訂閱。</p>
   <p>👉 <a href="{e(pro_url)}"><strong>取得 {e(pro_name)}(App Store)</strong></a></p>
 
   <h2>在家陪練注音的小技巧</h2>

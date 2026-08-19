@@ -11,6 +11,21 @@ import unittest
 GEO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(GEO))
 
+
+def _geo_daily_workflow() -> str:
+    """Read geo-daily.yml from either engine layout.
+
+    Cloud runs execute this file as ``<site>/_engine/geo/tests/...`` so the
+    workflow is two levels above ``geo``; the 00_GrowthEngine checkout keeps
+    the site in ``geo/pages`` (the same path the workflow symlinks). Probing
+    both keeps a single copy of this file valid on both sides of the mirror.
+    """
+    for candidate in (GEO.parents[1], GEO / "pages"):
+        path = candidate / ".github" / "workflows" / "geo-daily.yml"
+        if path.is_file():
+            return path.read_text(encoding="utf-8")
+    raise unittest.SkipTest("geo-daily.yml is not reachable from this checkout")
+
 import answer_deep  # noqa: E402
 import answer_facts  # noqa: E402
 import answer_personas  # noqa: E402
@@ -165,9 +180,7 @@ class HoursTagOutreachIntentTests(unittest.TestCase):
             )
 
     def test_geo_materialization_cleans_redirects_before_mobile_ctas(self):
-        workflow = (
-            GEO.parents[1] / ".github" / "workflows" / "geo-daily.yml"
-        ).read_text(encoding="utf-8")
+        workflow = _geo_daily_workflow()
         sequence = (
             "          python3 gen_app_decision_cards.py\n"
             "          python3 cleanup_localized_assets.py --cached-live\n"

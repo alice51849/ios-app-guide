@@ -16,6 +16,7 @@ sys.path.insert(0, HERE)
 from appstore_live import live_app_keys  # noqa: E402
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 import queries  # noqa: E402
+from aeo_answers import is_english_answer_question  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 REPORTS = os.environ.get("GEO_REPORTS", os.path.join(HERE, "reports"))
@@ -102,10 +103,14 @@ def build_rows(public_keys):
         languages = sorted({
             item.get("lang") for item in app_posts if item.get("lang")
         })
+        # Only English questions produce a page under answers/. CJK-only queries
+        # (e.g. "教小孩注音的 app") collapse to a degenerate slug and are served by
+        # the localized pipeline under <locale>/answers/, so counting them here
+        # invented a permanent gap that could never be closed.
         planned = {
             slugify(question)
             for question in queries.ALL.get(key, queries.CURATED.get(key, []))
-            if slugify(question)
+            if slugify(question) and is_english_answer_question(question)
         }
         answers = sum(
             _exists(f"answers/{slug}.html") for slug in planned

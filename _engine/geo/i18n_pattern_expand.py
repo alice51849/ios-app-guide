@@ -144,6 +144,39 @@ FRAMES: dict[str, dict[str, str]] = {
         "es-ES": "Anota las funciones de {app} de las que dependes.",
         "pt-BR": "Liste os recursos do {app} dos quais você depende.",
     },
+    "howto_choose": {
+        "en": "How to choose: {q}",
+        "ja": "{q} の選び方",
+        "ko": "{q} 고르는 법",
+        "zh-Hant": "{q} 怎麼挑",
+        "zh-Hans": "{q} 怎么挑",
+        "de-DE": "So wählen Sie: {q}",
+        "fr-FR": "Comment choisir : {q}",
+        "es-ES": "Cómo elegir: {q}",
+        "pt-BR": "Como escolher: {q}",
+    },
+    "honest_guide": {
+        "en": "{q}: honest iPhone app buying guide",
+        "ja": "{q}:正直な iPhone アプリ購入ガイド",
+        "ko": "{q}: 솔직한 iPhone 앱 구매 가이드",
+        "zh-Hant": "{q}:誠實的 iPhone App 選購指南",
+        "zh-Hans": "{q}:诚实的 iPhone App 选购指南",
+        "de-DE": "{q}: ehrlicher Kaufratgeber für iPhone-Apps",
+        "fr-FR": "{q} : guide d'achat honnête pour les apps iPhone",
+        "es-ES": "{q}: guía de compra honesta de apps para iPhone",
+        "pt-BR": "{q}: guia de compra honesto de apps para iPhone",
+    },
+    "meta_practical": {
+        "en": "{q}: what to check before choosing an iPhone app, and where {app} may fit as a practical option.",
+        "ja": "{q}:iPhone アプリを選ぶ前に確認すべきことと、{app} が現実的な選択肢としてどこに合うか。",
+        "ko": "{q}: iPhone 앱을 고르기 전에 확인할 점과, {app}가 현실적인 선택지로 어디에 맞는지.",
+        "zh-Hant": "{q}:挑 iPhone App 前該確認什麼,以及 {app} 在其中可能是什麼樣的實際選擇。",
+        "zh-Hans": "{q}:挑 iPhone App 前该确认什么,以及 {app} 在其中可能是什么样的实际选择。",
+        "de-DE": "{q}: worauf Sie vor der Wahl einer iPhone-App achten sollten und wo {app} als praktische Option passen kann.",
+        "fr-FR": "{q} : ce qu'il faut vérifier avant de choisir une app iPhone, et où {app} peut s'inscrire comme option concrète.",
+        "es-ES": "{q}: qué comprobar antes de elegir una app para iPhone y dónde puede encajar {app} como opción práctica.",
+        "pt-BR": "{q}: o que verificar antes de escolher um app para iPhone e onde o {app} pode se encaixar como opção prática.",
+    },
     "covers_them": {
         "en": "Check that {app} covers them on its App Store page.",
         "ja": "それらを {app} が備えているか、App Store の配信ページで確認しましょう。",
@@ -184,7 +217,7 @@ def compile_frames() -> list[tuple[str, re.Pattern[str]]]:
     compiled = []
     for name, per_locale in FRAMES.items():
         pattern = re.escape(per_locale["en"])
-        for slot in ("app", "sub", "bul"):
+        for slot in ("app", "sub", "bul", "q"):
             pattern = pattern.replace(re.escape("{" + slot + "}"), f"(?P<{slot}>.+?)")
         compiled.append((name, re.compile("^" + pattern + "$", re.S)))
     return compiled
@@ -224,6 +257,13 @@ def expand(lang: str, sources: set[str], compiled) -> dict[str, str]:
                         ok = False
                         break
                     values[slot] = sep.join(translated)
+                elif slot == "q":
+                    # the page query, translated as its own dictionary entry
+                    target = dictionary.get(raw)
+                    if not target:
+                        ok = False
+                        break
+                    values[slot] = target
                 else:
                     # "sub" is stored with its trailing period stripped
                     target = dictionary.get(raw) or dictionary.get(raw + ".")

@@ -247,6 +247,97 @@ def call_openai(messages: list[dict[str, str]]) -> dict[str, Any]:
     raise RuntimeError(f"OpenAI request failed after retries: {last_err}")
 
 
+def _app_named(text: str, name: str) -> bool:
+    """True when `text` already refers to the app by name (case-insensitive)."""
+    return name.lower() in (text or "").lower()
+
+
+def ensure_answer_names_app(content: dict[str, Any], app: dict[str, Any]) -> dict[str, Any]:
+    """Guarantee the machine-extractable answer actually names the app.
+
+    AI assistants (ChatGPT / Perplexity / Gemini) quote the meta description and
+    the first "Short answer" paragraphs verbatim.  Topic fact overlays are written
+    as neutral domain explainers, so ~19% of generated pages produced a quotable
+    answer that never mentioned the app the page funnels to -- some even ended by
+    recommending Apple's built-in tool instead.  This appends one truthful,
+    listing-derived sentence (no new claims) so a citation still resolves to the
+    app.  Verified 2026-08-19 against live pages.
+    """
+    name = safe_text(app.get("name"))
+    if not name:
+        return content
+    outcome = safe_text(app.get("sub")).rstrip(". ")
+    access = safe_text(app.get("tag")).rstrip(". ")
+
+    bridge = f"{name} is the app this guide covers"
+    if outcome:
+        bridge += f": {outcome}"
+    bridge += "."
+    if access:
+        bridge += f" {access}."
+    bridge += " Check the current App Store listing for exact features and pricing."
+
+    paras = list(content.get("short_answer_paragraphs") or [])
+    if not any(_app_named(p, name) for p in paras):
+        paras.append(bridge)
+        content["short_answer_paragraphs"] = paras
+
+    lead = safe_text(content.get("lead"))
+    if lead and not _app_named(lead, name):
+        tail = f" {name}"
+        if outcome:
+            tail += f" — {outcome}"
+        content["lead"] = f"{lead.rstrip()}{tail}."
+
+    meta = safe_text(content.get("meta_description"))
+    if meta and not _app_named(meta, name):
+        suffix = f" Where {name} fits"
+        if outcome:
+            suffix += f": {outcome}"
+        suffix += "."
+        # render_page runs concise_meta(..., hard_limit=220), which keeps only
+        # whole sentences that fit inside 220 chars -- so a suffix pushed past
+        # that limit is silently dropped and the app name never reaches the
+        # snippet. Budget against the same 220 ceiling, and fall back to a bare
+        # naming clause when the subtitle alone is too long to fit.
+        if len(suffix) > 120:
+            suffix = f" Where {name} fits."
+        budget = 220 - len(suffix)
+        # Keep the description within a snippet-friendly length, cutting on a
+        # sentence boundary so the snippet never ends mid-clause.
+        if len(meta) > budget:
+            head = meta[:budget]
+            cut = max(head.rfind(". "), head.rfind("! "), head.rfind("? "))
+            if cut > 60:
+                meta = head[: cut + 1]
+            else:
+                # No sentence end fits; fall back to a clause boundary so the
+                # snippet reads as a finished thought rather than a chopped one.
+                clause = max(
+                    head.rfind("; "), head.rfind(", "), head.rfind(" — "),
+                    head.rfind(": "),
+                )
+                if clause > 60:
+                    meta = head[:clause]
+                else:
+                    # Nothing cuts cleanly (a long comma-free run). A mangled
+                    # fact reads worse than a short honest one, so drop the
+                    # fact rather than publish a chopped sentence.
+                    meta = f"{name}"
+                    if outcome:
+                        meta += f" — {outcome}"
+                    meta += "."
+                    if access:
+                        meta += f" {access}."
+                    content["meta_description"] = meta
+                    return content
+        meta = meta.rstrip()
+        if not meta.endswith((".", "!", "?")):
+            meta = meta.rstrip(" ,;:-—") + "."
+        content["meta_description"] = meta + suffix
+    return content
+
+
 def default_content(question: str, key: str) -> dict[str, Any]:
     app = APPS[key]
     name = app["name"]
@@ -318,7 +409,7 @@ def default_content(question: str, key: str) -> dict[str, Any]:
     overlay = answer_facts.topic_facts(question, key, app)
     if overlay:
         base.update(overlay)
-    return base
+    return ensure_answer_names_app(base, app)
 
 
 def normalized_content(raw: dict[str, Any], question: str, key: str) -> dict[str, Any]:
@@ -375,7 +466,7 @@ def normalized_content(raw: dict[str, Any], question: str, key: str) -> dict[str
             joined,
         ):
             raise ValueError("Unsafe Aim990 optional-subscription claim detected")
-    return content
+    return ensure_answer_names_app(content, APPS[key])
 
 
 def j(obj: Any) -> str:

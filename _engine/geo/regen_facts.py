@@ -27,10 +27,12 @@ def run(
     dry_run: bool = False,
     keys: list[str] | None = None,
     questions: list[str] | None = None,
+    existing_only: bool = False,
 ) -> dict:
     upgraded: list[str] = []
     created: list[str] = []
     failed: list[str] = []
+    skipped_new: list[str] = []
     seen: set[str] = set()
     requested_questions = set(questions or [])
     matched_questions: set[str] = set()
@@ -57,6 +59,9 @@ def run(
                 continue  # only touch topic-matched pages
             path = A.ANSWERS_DIR / f"{slug}.html"
             existed = path.exists()
+            if existing_only and not existed:
+                skipped_new.append(slug)
+                continue
             if dry_run:
                 (upgraded if existed else created).append(slug)
                 continue
@@ -78,6 +83,7 @@ def run(
         "upgraded": len(upgraded),
         "created": len(created),
         "failed": len(failed),
+        "skipped_new": len(skipped_new),
         "sample_new": created[:6],
         "sample_upgraded": upgraded[:6],
         "failures": failed[:5],
@@ -96,9 +102,15 @@ if __name__ == "__main__":
         help="Regenerate one exact question; may be repeated.",
     )
     ap.add_argument("--dry-run", action="store_true", help="Report only; write nothing.")
+    ap.add_argument(
+        "--existing-only",
+        action="store_true",
+        help="Refresh pages that already exist; never create new slugs.",
+    )
     args = ap.parse_args()
     run(
         dry_run=args.dry_run,
         keys=args.apps or None,
         questions=args.query or None,
+        existing_only=args.existing_only,
     )

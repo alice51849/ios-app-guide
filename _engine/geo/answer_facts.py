@@ -295,6 +295,31 @@ _COUNTRY_ALIASES = {
 }
 
 
+def _snippet(text: str, limit: int = 200, tail: str = "") -> str:
+    """Cut `text` to a search/AI-snippet length on a sentence or clause boundary.
+
+    The previous `(text[:150]).rsplit(" ", 1)[0] + "."` pattern chopped mid-clause
+    and produced descriptions such as "...in your own words rather than." or
+    "...(tap ... Scan Documents),." which read as broken to both users and the
+    assistants that quote them verbatim. Verified 2026-08-19 on live pages.
+    """
+    text = (text or "").strip()
+    budget = max(40, limit - len(tail))
+    if len(text) <= budget:
+        body = text
+    else:
+        head = text[:budget]
+        cut = max(head.rfind(". "), head.rfind("! "), head.rfind("? "))
+        if cut >= 60:
+            body = head[: cut + 1]
+        else:
+            clause = max(head.rfind("; "), head.rfind(", "), head.rfind(" — "))
+            body = head[:clause] if clause >= 60 else head.rsplit(" ", 1)[0]
+    body = body.rstrip().rstrip(" ,;:—-")
+    if not body.endswith((".", "!", "?")):
+        body += "."
+    return (body + tail) if tail else body
+
 def _contains_phrase(text: str, phrase: str) -> bool:
     phrase = phrase.strip()
     return bool(
@@ -463,7 +488,7 @@ def _id_doc_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
 def _passport_rule_facts(q: str, name: str) -> dict[str, Any] | None:
     def rule(lead: str, detail: str, look: list[str], steps: list[str], faq: list[dict]) -> dict[str, Any]:
         return {
-            "meta_description": (lead[:150]).rsplit(" ", 1)[0] + "."[:200],
+            "meta_description": _snippet(lead, 200),
             "lead": lead,
             "short_answer_paragraphs": [
                 detail,
@@ -751,7 +776,7 @@ def _resume_facts(q: str, name: str, spec_key: str) -> dict[str, Any]:
 def _resume_faq_facts(q: str, name: str) -> dict[str, Any] | None:
     def faq(lead: str, detail: str, look: list[str], steps: list[str], qa: list[dict]) -> dict[str, Any]:
         return {
-            "meta_description": (lead[:150]).rsplit(" ", 1)[0] + "."[:200],
+            "meta_description": _snippet(lead, 200),
             "lead": lead,
             "short_answer_paragraphs": [
                 detail,
@@ -944,7 +969,7 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
     def make(p1: str, look: list[str], steps: list[str], where: str, faq: list[dict]) -> dict[str, Any]:
         lead = p1.split(". ")[0].rstrip(".") + f" — {name} helps you do it on your iPhone."
         return {
-            "meta_description": (p1[:150]).rsplit(" ", 1)[0] + f" — with {name}."[:200],
+            "meta_description": _snippet(p1, 200, tail=f" — with {name}."),
             "lead": lead,
             "short_answer_paragraphs": [
                 p1,
@@ -1421,7 +1446,7 @@ def _data_faq_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
     for b in best.get("bullets", [])[:5]:
         steps.append(b if b.endswith(".") else b + ".")
     return {
-        "meta_description": (best["lead"][:150]).rsplit(" ", 1)[0] + ".",
+        "meta_description": _snippet(best["lead"], 200),
         "lead": best["lead"],
         "short_answer_paragraphs": [best["detail"], p2],
         "what_to_look_for": best.get("bullets", []) or ["Check the current App Store listing for details."],
@@ -1633,7 +1658,7 @@ def _cost_worth_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
     if not c:
         return None
     return {
-        "meta_description": (c["lead"][:150]).rsplit(" ", 1)[0] + ".",
+        "meta_description": _snippet(c["lead"], 200),
         "lead": c["lead"],
         "short_answer_paragraphs": [
             c["detail"],

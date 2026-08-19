@@ -2,7 +2,7 @@
 title: "Aim990 Plus — Практика в режимі таймера | iOS App"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/uk/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Aim990 Plus — тренажер для дорослих, яким важлив�
 - Платне завантаження
 - App Store · 6,99 USD
 
-[Завантажте Aim990 Plus з App Store](https://apps.apple.com/ua/app/id6792483140?pt=118326163&ct=iag_data_uk&mt=8)
+[Завантажте Aim990 Plus з App Store](https://apps.apple.com/ua/app/id6792483140)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/aim990plus.html)
 

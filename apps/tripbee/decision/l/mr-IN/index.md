@@ -2,7 +2,7 @@
 title: "iPhone साठी सर्वोत्तम ट्रिप इटिनरेरी प्लॅनर अॅप"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/mr-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - खाजगी / उपकरणावर
 - App Store · ₹ 599
 
-[App Store वरून TripBee Pro: Trip Planner मिळवा →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=iag_data_mr_in&mt=8)
+[App Store वरून TripBee Pro: Trip Planner मिळवा →](https://apps.apple.com/in/app/id6787754435)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

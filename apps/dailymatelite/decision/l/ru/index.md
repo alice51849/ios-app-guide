@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Живые фразы — 50 языков для общения | iOS App"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/ru/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Бесплатно начать · разблокировка за одну покупку
 - App Store · Бесплатно
 
-[Установить DailyMate Lite: Живые фразы в App Store](https://apps.apple.com/ru/app/id6794725568?pt=118326163&ct=iag_data_ru&mt=8)
+[Установить DailyMate Lite: Живые фразы в App Store](https://apps.apple.com/ru/app/id6794725568)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/dailymatelite.html)
 

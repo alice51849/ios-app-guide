@@ -2,7 +2,7 @@
 title: "最佳在家拍攝嬰幼兒護照照片App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/zh-Hant/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 隱私優先／裝置端
 - App Store · $190.00
 
-[在 App Store 取得 Snapport →](https://apps.apple.com/tw/app/id6780575828?pt=118326163&ct=iag_data_zh_hant&mt=8)
+[在 App Store 取得 Snapport →](https://apps.apple.com/tw/app/id6780575828)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

@@ -2,7 +2,7 @@
 title: "miglior app routine completa mattina e buonanotte per bambini"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/it/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Lavaggio dei denti e buonanotte spesso falliscono nello stesso momento ogni sera
 - Nessuna pubblicità
 - App Store · 6,99 €
 
-[Scarica Lumi Mission Planet Pro su App Store →](https://apps.apple.com/it/app/id6779745474?pt=118326163&ct=iag_data_it&mt=8)
+[Scarica Lumi Mission Planet Pro su App Store →](https://apps.apple.com/it/app/id6779745474)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

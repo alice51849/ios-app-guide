@@ -2,7 +2,7 @@
 title: "CalDaily: calculadora y temas — Widget, utilidades e historial | iOS App"
 lang: "es-ES"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/es-ES/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Una calculadora que conservarás, porque recuerda de qué iba cada número. La m
 - Widget
 - App Store · Gratis
 
-[Consigue CalDaily: calculadora y temas en el App Store](https://apps.apple.com/es/app/id6794178671?pt=118326163&ct=iag_data_es_es&mt=8)
+[Consigue CalDaily: calculadora y temas en el App Store](https://apps.apple.com/es/app/id6794178671)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-ES/caldaily.html)
 

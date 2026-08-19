@@ -2,7 +2,7 @@
 title: "bästa CV-byggarappen för karriärbytare 2026"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/sv/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ När du byter bransch är CV-problemet annorlunda: din erfarenhet är verklig me
 - Gratis att börja · livstidsupplåsning
 - App Store · Gratis
 
-[Hämta CV Desk på App Store →](https://apps.apple.com/se/app/id6781337213?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta CV Desk på App Store →](https://apps.apple.com/se/app/id6781337213)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/answers/best-resume-builder-app-for-career-changers-2026.html)
 

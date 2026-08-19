@@ -2,7 +2,7 @@
 title: "ప్రీ-స్కూల్ పిల్లలకు ప్రకటనలు లేని ఉత్తమ నిద్రపోయే అలవాటు యాప్"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/te-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ప్రకటనలు లేవు
 - App Store · ఉచితం
 
-[Lumi Mission Planet ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=iag_data_te_in&mt=8)
+[Lumi Mission Planet ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6779750237)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

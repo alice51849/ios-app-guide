@@ -2,7 +2,7 @@
 title: "iPhone'da mantık becerilerini geliştirmek için çocuklar için en iyi matematik oyunu uygulaması"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/tr/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ En iyi çocuk matematik uygulaması, mantık eğitimi verir — kalıplar, dizil
 - Reklam yok
 - App Store · Ücretsiz
 
-[Lumi Math Planet'i App Store'dan edinin →](https://apps.apple.com/tr/app/id6778269699?pt=118326163&ct=iag_data_tr&mt=8)
+[Lumi Math Planet'i App Store'dan edinin →](https://apps.apple.com/tr/app/id6778269699)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

@@ -2,7 +2,7 @@
 title: "Mask My File — Cachez vos infos avant l'envoi | iOS App"
 lang: "fr-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/fr-CA/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Partagez en toute confiance sans perdre le contexte utile. Mask My File repère 
 - Privé / sur l'appareil
 - App Store · Gratuit
 
-[Obtenir Mask My File sur l'App Store](https://apps.apple.com/ca/app/id6792850916?pt=118326163&ct=iag_data_fr_ca&mt=8)
+[Obtenir Mask My File sur l'App Store](https://apps.apple.com/ca/app/id6792850916)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/maskmyfile.html)
 

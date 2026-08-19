@@ -2,7 +2,7 @@
 title: "Aim990 Plus — Offline Exam Pressure Trainer | iOS App"
 lang: "en-US"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/en-US/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Train for clear decisions under exam pressure Aim990 Plus is a focused listening
 - Paid download
 - App Store · $5.99
 
-[Get Aim990 Plus on the App Store](https://apps.apple.com/us/app/id6792483140?pt=118326163&ct=iag_data_en_us&mt=8)
+[Get Aim990 Plus on the App Store](https://apps.apple.com/us/app/id6792483140)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-US/aim990plus.html)
 

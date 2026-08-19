@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Netværksdiagnose med beviser | iOS App"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/da/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Find det rigtige problem. Hvert værktøj inkluderer én gratis fuld brug. Valgf
 - Ingen konto
 - App Store · Gratis
 
-[Hent WiFi Aid Lite i App Store](https://apps.apple.com/dk/app/id6793414462?pt=118326163&ct=iag_data_da&mt=8)
+[Hent WiFi Aid Lite i App Store](https://apps.apple.com/dk/app/id6793414462)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/wifiaidlite.html)
 

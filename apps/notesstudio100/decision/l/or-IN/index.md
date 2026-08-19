@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — ହସ୍ତଲିଖିତ ନୋଟ୍, PDF ଟିପ୍ପଣୀ | iOS App"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/or-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
 
-[App Store ରୁ 100 Notes Studio: Pen & Paper ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_or_in&mt=8)
+[App Store ରୁ 100 Notes Studio: Pen & Paper ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6798813048)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/notesstudio100.html)
 

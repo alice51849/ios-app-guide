@@ -2,7 +2,7 @@
 title: "Aim990 Plus — Încredere contra cronometru | iOS App"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/ro/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Să înțelegi engleza este important; să rămâi precis când timpul se scurge
 - Descărcare plătită
 - App Store · 29,99 lei
 
-[Descarcă Aim990 Plus din App Store](https://apps.apple.com/ro/app/id6792483140?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă Aim990 Plus din App Store](https://apps.apple.com/ro/app/id6792483140)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/aim990plus.html)
 

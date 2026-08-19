@@ -2,7 +2,7 @@
 title: "beste bopomofo app voor kinderen om zhuyin te leren op iPhone"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/nl-NL/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Voor een kind dat Zhuyin voor het eerst leert, moet de app alle 37 symbolen beha
 - Geen advertenties
 - App Store · Gratis
 
-[Download Lumi Bopomofo in de App Store →](https://apps.apple.com/nl/app/id6773017109?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download Lumi Bopomofo in de App Store →](https://apps.apple.com/nl/app/id6773017109)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

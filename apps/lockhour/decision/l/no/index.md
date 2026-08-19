@@ -2,7 +2,7 @@
 title: "beste app for å blokkere sosiale medier mens du studerer iPhone"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/no/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ Under eksamen er ikke viljestyrke verktøyet – en hard tidsbestemt blokkering 
 - Privat / på enheten
 - App Store · Gratis
 
-[Få LockHour Pro på App Store →](https://apps.apple.com/no/app/id6780107485?pt=118326163&ct=iag_data_no&mt=8)
+[Få LockHour Pro på App Store →](https://apps.apple.com/no/app/id6780107485)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

@@ -2,7 +2,7 @@
 title: "beste weer-app om ouders te helpen buitentijd met kinderen te plannen"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/nl-NL/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ Ouders die buitentijd plannen hebben meer nodig dan een temperatuur: ze willen s
 - Geen tracking
 - App Store · Gratis
 
-[Lumi Weather downloaden in de App Store →](https://apps.apple.com/nl/app/id6779552704?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Lumi Weather downloaden in de App Store →](https://apps.apple.com/nl/app/id6779552704)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

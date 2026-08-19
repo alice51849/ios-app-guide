@@ -2,7 +2,7 @@
 title: "paras sovellus epäselvien lasten kuvien korjaamiseen iPhonella"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/fi/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Lapset eivät koskaan pysy paikallaan, joten pehmeät ja tärähtäneet kuvat ov
 - Yksityinen / laitteella
 - App Store · Ilmainen
 
-[Hanki Unblurry App Storesta →](https://apps.apple.com/fi/app/id6782275018?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki Unblurry App Storesta →](https://apps.apple.com/fi/app/id6782275018)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

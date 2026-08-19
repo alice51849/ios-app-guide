@@ -2,7 +2,7 @@
 title: "Wordmate Lite 每天五个单词 — 44 种语言，一分钟记词习惯 | iOS App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/zh-Hans/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 离线
 - App Store · 免费
 
-[在 App Store 获取 Wordmate Lite 每天五个单词](https://apps.apple.com/cn/app/id6797601720?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在 App Store 获取 Wordmate Lite 每天五个单词](https://apps.apple.com/cn/app/id6797601720)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/wordmatelite.html)
 

@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — Not defteri, el yazısı ve PDF | iOS App"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/tr/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Gizli / cihazda
 - App Store · Ücretsiz
 
-[100 Notes Studio: Pen & Paper uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6798813048?pt=118326163&ct=iag_data_tr&mt=8)
+[100 Notes Studio: Pen & Paper uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6798813048)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/notesstudio100.html)
 

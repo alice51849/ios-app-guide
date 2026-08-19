@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za blokiranje društvenih mreža tijekom učenja na iPhoneu"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/hr/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ Tijekom ispita, snaga volje nije alat — stroga vremenski ograničena blokada j
 - Privatno / na uređaju
 - App Store · Besplatno
 
-[Preuzmite LockHour Pro u App Storeu →](https://apps.apple.com/hr/app/id6780107485?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite LockHour Pro u App Storeu →](https://apps.apple.com/hr/app/id6780107485)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

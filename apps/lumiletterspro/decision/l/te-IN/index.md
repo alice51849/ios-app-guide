@@ -2,7 +2,7 @@
 title: "హోంస్కూల్ కిండర్‌గార్టెన్ ప్రిప్‌కు పూర్తి ఫోనిక్స్ యాప్‌లో ఉత్తమం"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/te-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ప్రకటనలు లేవు
 - App Store · ₹ 999
 
-[Lumi Letters Pro ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=iag_data_te_in&mt=8)
+[Lumi Letters Pro ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6778491147)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

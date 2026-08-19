@@ -2,7 +2,7 @@
 title: "meilleure application phonics complète pour préparation maternelle à domicile"
 lang: "fr-FR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/fr-FR/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Les familles qui préparent la maternelle ont besoin d’un parcours complet d�
 - Sans publicité
 - App Store · 9,99 €
 
-[Obtenir Lumi Letters Pro sur l’App Store →](https://apps.apple.com/fr/app/id6778491147?pt=118326163&ct=iag_data_fr_fr&mt=8)
+[Obtenir Lumi Letters Pro sur l’App Store →](https://apps.apple.com/fr/app/id6778491147)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

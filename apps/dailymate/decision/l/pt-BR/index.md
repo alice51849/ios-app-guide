@@ -2,7 +2,7 @@
 title: "melhor app de frases úteis para viagens com Apple Watch"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/pt-BR/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Antes da viagem, frases completas para situações reais são mais úteis do que
 - Apple Watch
 - App Store · R$ 79,90
 
-[Baixe o DailyMate na App Store →](https://apps.apple.com/br/app/id6790418321?pt=118326163&ct=iag_data_pt_br&mt=8)
+[Baixe o DailyMate na App Store →](https://apps.apple.com/br/app/id6790418321)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

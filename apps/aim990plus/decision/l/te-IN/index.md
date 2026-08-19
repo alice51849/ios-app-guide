@@ -2,7 +2,7 @@
 title: "Aim990 Plus — ఆంగ్ల ఒత్తిడి సాధన | iOS App"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/te-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Aim990 Plus అనేది పెద్దలు తమ ఆంగ్ల శ్�
 - చెల్లింపు డౌన్లోడ్
 - App Store · ₹ 599
 
-[App Store నుంచి Aim990 Plus పొందండి](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_te_in&mt=8)
+[App Store నుంచి Aim990 Plus పొందండి](https://apps.apple.com/in/app/id6792483140)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/aim990plus.html)
 

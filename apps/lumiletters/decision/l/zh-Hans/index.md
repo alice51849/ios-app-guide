@@ -2,7 +2,7 @@
 title: "iPhone 上最佳无广告儿童教育游戏应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/zh-Hans/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免费开始使用 · 永久解锁
 - 无广告
 
-[在 App Store 获取 Lumi Letters →](https://apps.apple.com/app/id6778748533?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在 App Store 获取 Lumi Letters →](https://apps.apple.com/app/id6778748533)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

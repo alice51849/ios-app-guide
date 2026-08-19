@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za sprostitev prostora na iPhonu z brisanjem podvojenih fotografij"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/sl-SI/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Za hitro sprostitev prostora najprej ciljate največje zmage: natančne podvojen
 - Zasebno / na napravi
 - App Store · Brezplačno
 
-[Prenesite PicClear iz App Store →](https://apps.apple.com/si/app/id6780223070?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite PicClear iz App Store →](https://apps.apple.com/si/app/id6780223070)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

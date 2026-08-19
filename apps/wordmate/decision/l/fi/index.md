@@ -2,7 +2,7 @@
 title: "paras sanastoharjoitussovellus kiireisille Apple Watch -käyttäjille"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/fi/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,7 +22,7 @@ Kiireiset työmatkalaiset tarvitsevat sanastoharjoituksia, jotka mahtuvat vapais
 - Apple Watch
 - App Store · 9,99 €
 
-[Hanki Wordmate: Learn 44 Languages App Storesta →](https://apps.apple.com/fi/app/id6789917808?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki Wordmate: Learn 44 Languages App Storesta →](https://apps.apple.com/fi/app/id6789917808)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

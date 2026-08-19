@@ -2,7 +2,7 @@
 title: "แอปโฟนิกส์ครบวงจรสำหรับเตรียมอนุบาลที่ดีที่สุด"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/th/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ไม่มีโฆษณา
 - App Store · ฿299.00
 
-[ดาวน์โหลด Lumi Letters Pro ใน App Store →](https://apps.apple.com/th/app/id6778491147?pt=118326163&ct=iag_data_th&mt=8)
+[ดาวน์โหลด Lumi Letters Pro ใน App Store →](https://apps.apple.com/th/app/id6778491147)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

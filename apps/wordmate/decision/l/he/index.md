@@ -2,7 +2,7 @@
 title: "אפליקציית אוצר מילים למשתמשים עסוקים עם Apple Watch"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/he/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,7 +22,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ₪29.90
 
-[קבל את Wordmate: Learn 44 Languages ב-App Store →](https://apps.apple.com/il/app/id6789917808?pt=118326163&ct=iag_data_he&mt=8)
+[קבל את Wordmate: Learn 44 Languages ב-App Store →](https://apps.apple.com/il/app/id6789917808)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

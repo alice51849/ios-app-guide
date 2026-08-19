@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — Заметки от руки и PDF | iOS App"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/ru/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Лично / на устройстве
 - App Store · Бесплатно
 
-[Установить 100 Notes Studio: Pen & Paper в App Store](https://apps.apple.com/ru/app/id6798813048?pt=118326163&ct=iag_data_ru&mt=8)
+[Установить 100 Notes Studio: Pen & Paper в App Store](https://apps.apple.com/ru/app/id6798813048)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/notesstudio100.html)
 

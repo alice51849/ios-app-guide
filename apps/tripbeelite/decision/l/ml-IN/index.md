@@ -2,7 +2,7 @@
 title: "ഒരു വരാനിരിക്കുന്ന യാത്രയ്ക്കായി ഏറ്റവും മികച്ച ലളിതമായ യാത്രാ പദ്ധതിയിടുന്ന ആപ്പ് iPhone-ന്"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/ml-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് ട്രിപ്പ്‌ബി ലൈറ്റ് നേടുക →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് ട്രിപ്പ്‌ബി ലൈറ്റ് നേടുക →](https://apps.apple.com/in/app/id6791299610)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

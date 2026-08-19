@@ -2,7 +2,7 @@
 title: "Snapport Lite — Creează fotografii ID acasă | iOS App"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/ro/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Snapport Lite - Realizează fotografii pentru pașaport, viză și documente cu 
 - Offline
 - App Store · Gratuit
 
-[Descarcă Snapport Lite din App Store](https://apps.apple.com/ro/app/id6792856304?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă Snapport Lite din App Store](https://apps.apple.com/ro/app/id6792856304)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/snapportlite.html)
 

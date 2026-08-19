@@ -2,7 +2,7 @@
 title: "melhor app completo de zhuyin para crianças bilíngues"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/pt-BR/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Crianças bilíngues aprendendo Zhuyin em casa precisam de um caminho completo p
 - Sem anúncios
 - App Store · R$ 59,90
 
-[Baixe Lumi Bopomofo Pro na App Store →](https://apps.apple.com/br/app/id6775773117?pt=118326163&ct=iag_data_pt_br&mt=8)
+[Baixe Lumi Bopomofo Pro na App Store →](https://apps.apple.com/br/app/id6775773117)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-complete-zhuyin-app-for-bilingual-children.html)
 

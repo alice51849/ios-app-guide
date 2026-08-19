@@ -2,7 +2,7 @@
 title: "একটি আসন্ন সফরের জন্য সেরা সহজ ট্রিপ প্ল্যানার অ্যাপ আইফোনের জন্য"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/bn-BD/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - ভ্রমণ
 - বিনামূল্যে শুরু · আজীবন আনলক
 
-[অ্যাপ স্টোর থেকে ট্রিপবি লাইট পান →](https://apps.apple.com/app/id6791299610?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[অ্যাপ স্টোর থেকে ট্রিপবি লাইট পান →](https://apps.apple.com/app/id6791299610)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

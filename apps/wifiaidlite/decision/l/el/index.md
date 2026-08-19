@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Διάγνωση δικτύου με στοιχεία | iOS App"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/el/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Χωρίς λογαριασμό
 - App Store · Δωρεάν
 
-[Αποκτήστε το WiFi Aid Lite από το App Store](https://apps.apple.com/gr/app/id6793414462?pt=118326163&ct=iag_data_el&mt=8)
+[Αποκτήστε το WiFi Aid Lite από το App Store](https://apps.apple.com/gr/app/id6793414462)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/wifiaidlite.html)
 

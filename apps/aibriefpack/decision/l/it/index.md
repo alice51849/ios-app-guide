@@ -2,7 +2,7 @@
 title: "AI Brief — Dai file a un contesto chiaro | iOS App"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/it/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Un contesto migliore, risposte migliori. Trasforma screenshot, file, note e docu
 - Privato / su dispositivo
 - App Store · Gratis
 
-[Scarica AI Brief sull'App Store](https://apps.apple.com/it/app/id6791658210?pt=118326163&ct=iag_data_it&mt=8)
+[Scarica AI Brief sull'App Store](https://apps.apple.com/it/app/id6791658210)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/aibriefpack.html)
 

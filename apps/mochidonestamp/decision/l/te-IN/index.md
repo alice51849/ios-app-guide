@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: చివరిసారి — ఎప్పుడు చేశారో గుర్తుంచుకోండి | iOS App"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/te-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్
 - App Store · ఉచితం
 
-[App Store నుంచి Mochi DoneStamp: చివరిసారి పొందండి](https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=iag_data_te_in&mt=8)
+[App Store నుంచి Mochi DoneStamp: చివరిసారి పొందండి](https://apps.apple.com/in/app/id6790800323)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/mochidonestamp.html)
 

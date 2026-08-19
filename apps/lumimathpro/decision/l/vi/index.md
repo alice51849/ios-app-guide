@@ -2,7 +2,7 @@
 title: "ứng dụng học toán đầy đủ tốt nhất cho trẻ mẫu giáo và tiểu học"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/vi/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Không quảng cáo
 - App Store · 299.000đ
 
-[Tải Lumi Math Pro trên App Store →](https://apps.apple.com/vn/app/id6776958488?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải Lumi Math Pro trên App Store →](https://apps.apple.com/vn/app/id6776958488)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

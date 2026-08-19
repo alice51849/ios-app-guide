@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — دفتر ملاحظات بخط اليد وPDF | iOS App"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/ar-SA/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - خاص / على الجهاز
 - App Store · مجاني
 
-[احصل على 100 Notes Studio: Pen & Paper من App Store](https://apps.apple.com/sa/app/id6798813048?pt=118326163&ct=iag_data_ar_sa&mt=8)
+[احصل على 100 Notes Studio: Pen & Paper من App Store](https://apps.apple.com/sa/app/id6798813048)
 
 [اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/notesstudio100.html)
 

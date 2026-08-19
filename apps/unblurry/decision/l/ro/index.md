@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație pentru a corecta fotografii neclare cu copii pe iPhone"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/ro/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Copiii nu stau niciodată nemișcați, așa că fotografiile cu focalizare moale
 - Privat / pe dispozitiv
 - App Store · Gratuit
 
-[Descarcă Unblurry din App Store →](https://apps.apple.com/ro/app/id6782275018?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă Unblurry din App Store →](https://apps.apple.com/ro/app/id6782275018)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

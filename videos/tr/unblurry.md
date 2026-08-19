@@ -2,7 +2,7 @@
 title: "iPhone’da çocukların bulanık fotoğraflarını düzeltmek için en iyi uygulama"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/tr/unblurry.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 video_url: "https://files.catbox.moe/l3nqgr.mp4"
 duration: "PT16S"
 app_store_id: "6782275018"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [Videoyu izle](https://files.catbox.moe/l3nqgr.mp4)
 
-[Unblurry’yi App Store’dan edinin →](https://apps.apple.com/tr/app/id6782275018?pt=118326163&ct=iag_video_tr&mt=8)
+[Unblurry’yi App Store’dan edinin →](https://apps.apple.com/tr/app/id6782275018)
 
 [Uygulama rehberini aç](https://alice51849.github.io/ios-app-guide/tr/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

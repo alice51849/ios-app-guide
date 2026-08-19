@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație de notițe vocale care rezumă întâlnirile pe iPhone"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/ro/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ După un apel nu vrei o transcriere brută — vrei rezumatul, punctele de acți
 - Privat / pe dispozitiv
 - App Store · Gratuit
 
-[Descarcă Sono Note din App Store →](https://apps.apple.com/ro/app/id6782139553?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă Sono Note din App Store →](https://apps.apple.com/ro/app/id6782139553)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

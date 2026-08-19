@@ -2,7 +2,7 @@
 title: "iPhone ରେ ଶିଶୁଙ୍କର ଧୁସର ଫଟୋ ସଠିକ୍ କରିବା ପାଇଁ ସର୍ବୋତ୍ତମ ଆପ୍"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/or-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
 
-[App Store ରୁ Unblurry ଡାଉନଲୋଡ୍ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6782275018?pt=118326163&ct=iag_data_or_in&mt=8)
+[App Store ରୁ Unblurry ଡାଉନଲୋଡ୍ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6782275018)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

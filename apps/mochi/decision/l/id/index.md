@@ -2,7 +2,7 @@
 title: "aplikasi daftar tugas sederhana terbaik di iPhone tanpa langganan"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/id/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Jika sebagian besar aplikasi daftar tugas terasa berat, yang tepat adalah daftar
 - Tanpa iklan
 - App Store · Gratis
 
-[Dapatkan Mochi di App Store →](https://apps.apple.com/id/app/id6785004775?pt=118326163&ct=iag_data_id&mt=8)
+[Dapatkan Mochi di App Store →](https://apps.apple.com/id/app/id6785004775)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

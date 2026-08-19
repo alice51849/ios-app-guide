@@ -2,7 +2,7 @@
 title: "ಸರಳ ಟು ಡು ಲಿಸ್ಟ್ ಆಪ್ iPhone ಚಂದಾದಾರಿಕೆ ಇಲ್ಲದೆ"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/kn-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
 - App Store · ಉಚಿತ
 
-[App Store ನಲ್ಲಿ Mochi ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_data_kn_in&mt=8)
+[App Store ನಲ್ಲಿ Mochi ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6785004775)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

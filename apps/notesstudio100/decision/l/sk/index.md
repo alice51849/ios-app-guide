@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — Ručné poznámky a PDF | iOS App"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/sk/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ Spojte ručné písanie, text z klávesnice, komentovanie PDF a študijné nást
 - Súkromné / v zariadení
 - App Store · Zadarmo
 
-[Stiahnuť 100 Notes Studio: Pen & Paper v App Store](https://apps.apple.com/sk/app/id6798813048?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnuť 100 Notes Studio: Pen & Paper v App Store](https://apps.apple.com/sk/app/id6798813048)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/notesstudio100.html)
 

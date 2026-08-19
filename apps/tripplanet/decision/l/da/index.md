@@ -2,7 +2,7 @@
 title: "bedste rejseaktivitetsapp til børn på familieture"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/da/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Forældre, der rejser med små børn, har brug for aktiviteter, der gør pakning
 - Ingen reklamer
 - App Store · Gratis
 
-[Hent Lumi Trip Planet i App Store →](https://apps.apple.com/dk/app/id6787193643?pt=118326163&ct=iag_data_da&mt=8)
+[Hent Lumi Trip Planet i App Store →](https://apps.apple.com/dk/app/id6787193643)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

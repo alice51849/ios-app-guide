@@ -2,7 +2,7 @@
 title: "ପରିବାର ଯାତ୍ରାରେ ଶିଶୁମାନେ ପାଇଁ ସର୍ବୋତ୍ତମ ଭ୍ରମଣ କାର୍ଯ୍ୟ ଆପ୍"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/or-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
 - App Store · ମାଗଣା
 
-[App Store ରେ Lumi Trip Planet ପ୍ରାପ୍ତ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_data_or_in&mt=8)
+[App Store ରେ Lumi Trip Planet ପ୍ରାପ୍ତ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6787193643)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

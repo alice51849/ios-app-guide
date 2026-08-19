@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za pripravo na TOEIC brez povezave s študijskim načrtom za iPhone"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/sl-SI/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Del 5 se zdi kratek, a vprašanja z nepopolnimi stavki lahko vzamejo veliko čas
 - Brezplačen začetek · doživljenjska odklenitev
 - App Store · Brezplačno
 
-[Prenesite Aim990 v App Store →](https://apps.apple.com/si/app/id6784974530?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite Aim990 v App Store →](https://apps.apple.com/si/app/id6784974530)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

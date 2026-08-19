@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Parla ora — 50 lingue, dialoghi reali | iOS App"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/it/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Parla con più sicurezza quando serve. DailyMate Lite trasforma situazioni di vi
 - Gratis per iniziare · sblocco permanente
 - App Store · Gratis
 
-[Scarica DailyMate Lite: Parla ora sull'App Store](https://apps.apple.com/it/app/id6794725568?pt=118326163&ct=iag_data_it&mt=8)
+[Scarica DailyMate Lite: Parla ora sull'App Store](https://apps.apple.com/it/app/id6794725568)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/dailymatelite.html)
 

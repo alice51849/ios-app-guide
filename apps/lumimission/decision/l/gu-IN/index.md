@@ -2,7 +2,7 @@
 title: "પ્રી-સ્કૂલ બાળકો માટે શ્રેષ્ઠ શયનકાળ રૂટીન એપ્લિકેશન, જેમાં કોઈ જાહેરાત નથી"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/gu-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - કોઈ જાહેરાત નથી
 - App Store · મફત
 
-[Lumi Mission Planet App Store પર મેળવો →](https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=iag_data_gu_in&mt=8)
+[Lumi Mission Planet App Store પર મેળવો →](https://apps.apple.com/in/app/id6779750237)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

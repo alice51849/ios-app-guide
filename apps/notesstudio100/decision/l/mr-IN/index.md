@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — हाताने लिहा, PDF वर टिपा | iOS App"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/mr-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - खाजगी / उपकरणावर
 - App Store · मोफत
 
-[App Store वरून 100 Notes Studio: Pen & Paper मिळवा](https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_mr_in&mt=8)
+[App Store वरून 100 Notes Studio: Pen & Paper मिळवा](https://apps.apple.com/in/app/id6798813048)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/notesstudio100.html)
 

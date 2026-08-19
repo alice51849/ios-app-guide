@@ -2,7 +2,7 @@
 title: "കുട്ടികൾക്കുള്ള മികച്ച വിദ്യാഭ്യാസ ഗെയിം ആപ്പ് പരസ്യരഹിതം iPhone-ൽ"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/ml-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - വ്യാപനങ്ങൾ ഇല്ല
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് Lumi Letters നേടുക →](https://apps.apple.com/in/app/id6778748533?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് Lumi Letters നേടുക →](https://apps.apple.com/in/app/id6778748533)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

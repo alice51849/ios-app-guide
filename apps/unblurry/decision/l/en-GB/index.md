@@ -2,7 +2,7 @@
 title: "best app to fix blurry photos of kids on iphone"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/en-GB/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 Kids never hold still, so soft-focus and camera-shake shots are inevitable — Unblurry is built for this.
 
 - Photo & utility
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - Private / on-device
 - App Store · Free
 
-[Get Unblurry on the App Store →](https://apps.apple.com/gb/app/id6782275018?pt=118326163&ct=iag_data_en_gb&mt=8)
+[Get Unblurry on the App Store →](https://apps.apple.com/gb/app/id6782275018)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

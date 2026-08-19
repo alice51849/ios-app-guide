@@ -2,7 +2,7 @@
 title: "ホームスクール幼稚園準備におすすめの完全フォニックスアプリ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ja/lumiletterspro.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 video_url: "https://files.catbox.moe/0rbgg6.mp4"
 duration: "PT16S"
 app_store_id: "6778491147"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [動画を見る](https://files.catbox.moe/0rbgg6.mp4)
 
-[App StoreでLumi Letters Proを入手 →](https://apps.apple.com/jp/app/id6778491147?pt=118326163&ct=iag_video_ja&mt=8)
+[App StoreでLumi Letters Proを入手 →](https://apps.apple.com/jp/app/id6778491147)
 
 [アプリガイドを開く](https://alice51849.github.io/ios-app-guide/ja/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

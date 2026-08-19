@@ -2,7 +2,7 @@
 title: "适合学龄前儿童且无广告的最佳睡前习惯应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/zh-Hans/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 无广告
 - App Store · 免费
 
-[在App Store获取Lumi Mission Planet →](https://apps.apple.com/cn/app/id6779750237?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在App Store获取Lumi Mission Planet →](https://apps.apple.com/cn/app/id6779750237)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

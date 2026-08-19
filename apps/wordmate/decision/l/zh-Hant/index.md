@@ -2,7 +2,7 @@
 title: "適合通勤族搭配 Apple Watch 的最佳單字學習 App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/zh-Hant/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -23,7 +23,7 @@ publisher: "Lumi Studio"
 - App Store · $290.00
 - ★ 5.0/5 · 1
 
-[在 App Store 取得 Wordmate：學習 44 種語言 →](https://apps.apple.com/tw/app/id6789917808?pt=118326163&ct=iag_data_zh_hant&mt=8)
+[在 App Store 取得 Wordmate：學習 44 種語言 →](https://apps.apple.com/tw/app/id6789917808)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

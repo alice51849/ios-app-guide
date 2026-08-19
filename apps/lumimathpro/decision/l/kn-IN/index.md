@@ -2,7 +2,7 @@
 title: "ಪ್ರೀಸ್ಕೂಲ್ ಮತ್ತು ಪ್ರಾರಂಭಿಕ ತರಗತಿಗಳಿಗೆ ಪೂರ್ಣ ಗಣಿತ ಕಲಿಕೆ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/kn-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
 - App Store · ₹ 999
 
-[Lumi Math Pro ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=iag_data_kn_in&mt=8)
+[Lumi Math Pro ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6776958488)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

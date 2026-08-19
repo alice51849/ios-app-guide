@@ -2,7 +2,7 @@
 title: "แอปติดตามรอบเดือนที่ดีที่สุด ไม่ต้องมีบัญชีสำหรับ iPhone"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/th/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ส่วนตัว / บนอุปกรณ์
 - App Store · ฟรี
 
-[รับ Cyca ใน App Store →](https://apps.apple.com/th/app/id6782251621?pt=118326163&ct=iag_data_th&mt=8)
+[รับ Cyca ใน App Store →](https://apps.apple.com/th/app/id6782251621)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-period-tracker-app-no-account-required-iphone.html)
 

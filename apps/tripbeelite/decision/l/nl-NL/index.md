@@ -2,7 +2,7 @@
 title: "beste eenvoudige reisplanner-app voor één aankomende reis iPhone"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/nl-NL/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Als je één aankomende reis plant, is een rustige tijdlijn voor die reis nuttig
 - Gratis te starten · levenslange ontgrendeling
 - App Store · Gratis
 
-[Download TripBee Lite in de App Store →](https://apps.apple.com/nl/app/id6791299610?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download TripBee Lite in de App Store →](https://apps.apple.com/nl/app/id6791299610)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

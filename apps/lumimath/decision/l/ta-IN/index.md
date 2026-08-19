@@ -2,7 +2,7 @@
 title: "குழந்தைகளுக்கான சிறந்த கணித விளையாட்டு பயன்பாடு iPhone-க்கு, தர்க்க திறன்களை வளர்க்க"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/ta-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - விளம்பரங்கள் இல்லை
 - App Store · இலவசம்
 
-[App Store-இல் Lumi Math Planet பெறவும் →](https://apps.apple.com/in/app/id6778269699?pt=118326163&ct=iag_data_ta_in&mt=8)
+[App Store-இல் Lumi Math Planet பெறவும் →](https://apps.apple.com/in/app/id6778269699)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

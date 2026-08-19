@@ -2,7 +2,7 @@
 title: "bedste app til at rette slørede billeder af børn på iPhone"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/da/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Børn står aldrig stille, så bløde og rystede billeder er uundgåelige — Un
 - Privat / på enheden
 - App Store · Gratis
 
-[Hent Unblurry i App Store →](https://apps.apple.com/dk/app/id6782275018?pt=118326163&ct=iag_data_da&mt=8)
+[Hent Unblurry i App Store →](https://apps.apple.com/dk/app/id6782275018)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

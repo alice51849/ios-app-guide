@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — Ročni zapiski in PDF | iOS App"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/sl-SI/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ Združite pisanje na roko, tipkano besedilo, označevanje PDF-jev in učna orodj
 - Zasebno / na napravi
 - App Store · Brezplačno
 
-[Prenesite 100 Notes Studio: Pen & Paper iz trgovine App Store](https://apps.apple.com/si/app/id6798813048?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite 100 Notes Studio: Pen & Paper iz trgovine App Store](https://apps.apple.com/si/app/id6798813048)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/notesstudio100.html)
 

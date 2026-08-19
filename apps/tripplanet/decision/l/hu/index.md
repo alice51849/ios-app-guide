@@ -2,7 +2,7 @@
 title: "legjobb utazós tevékenység alkalmazás gyerekeknek családi utazáshoz"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/hu/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ A fiatal gyerekekkel utazó szülőknek olyan tevékenységek kellenek, amelyek 
 - Nincs reklám
 - App Store · Ingyenes
 
-[Szerezd be a Lumi Trip Planet-et az App Store-ban →](https://apps.apple.com/hu/app/id6787193643?pt=118326163&ct=iag_data_hu&mt=8)
+[Szerezd be a Lumi Trip Planet-et az App Store-ban →](https://apps.apple.com/hu/app/id6787193643)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

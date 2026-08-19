@@ -2,7 +2,7 @@
 title: "Beste vollständige Mathe-Lern-App für Vorschule und frühe Klassen"
 lang: "de-DE"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/de-DE/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Eine vollständige Frühmathe-App sollte Zählen, Zahlensinn und erste Rechenope
 - Keine Werbung
 - App Store · 9,99 €
 
-[Lumi Math Pro im App Store holen →](https://apps.apple.com/de/app/id6776958488?pt=118326163&ct=iag_data_de_de&mt=8)
+[Lumi Math Pro im App Store holen →](https://apps.apple.com/de/app/id6776958488)
 
 [Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

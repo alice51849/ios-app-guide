@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — Catatan tulis tangan & PDF | iOS App"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/id/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ Satukan tulisan tangan, teks ketik, anotasi dokumen, rekaman, dan bahan belajar 
 - Privat / di perangkat
 - App Store · Gratis
 
-[Dapatkan 100 Notes Studio: Pen & Paper di App Store](https://apps.apple.com/id/app/id6798813048?pt=118326163&ct=iag_data_id&mt=8)
+[Dapatkan 100 Notes Studio: Pen & Paper di App Store](https://apps.apple.com/id/app/id6798813048)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/notesstudio100.html)
 

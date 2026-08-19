@@ -2,7 +2,7 @@
 title: "படிப்பதற்குப் போது சமூக ஊடகங்களை தடுக்கும் சிறந்த செயலி iPhone க்கான"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/ta-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - தனியுரிமை / சாதனத்தில்
 - App Store · இலவசம்
 
-[App Store-இல் LockHour Pro பெறவும் →](https://apps.apple.com/in/app/id6780107485?pt=118326163&ct=iag_data_ta_in&mt=8)
+[App Store-இல் LockHour Pro பெறவும் →](https://apps.apple.com/in/app/id6780107485)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

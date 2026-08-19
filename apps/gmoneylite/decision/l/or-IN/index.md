@@ -2,7 +2,7 @@
 title: "G+Money Lite — ଯାତ୍ରା ଖର୍ଚ୍ଚ ଓ ମୁଦ୍ରା | iOS App"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/or-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -23,7 +23,7 @@ G+Money Lite — ସମ୍ପ୍ରତି ଯାତ୍ରା ମୁଦ୍ରା 
 - Apple Watch
 - App Store · ମାଗଣା
 
-[App Store ରୁ G+Money Lite ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=iag_data_or_in&mt=8)
+[App Store ରୁ G+Money Lite ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6793436548)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/gmoneylite.html)
 

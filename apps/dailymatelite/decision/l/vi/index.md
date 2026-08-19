@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Luyện nói — 50 ngôn ngữ, hội thoại thực tế | iOS App"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/vi/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Bắt đầu miễn phí · mở khóa vĩnh viễn
 - App Store · Miễn phí
 
-[Tải DailyMate Lite: Luyện nói trên App Store](https://apps.apple.com/vn/app/id6794725568?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải DailyMate Lite: Luyện nói trên App Store](https://apps.apple.com/vn/app/id6794725568)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/dailymatelite.html)
 

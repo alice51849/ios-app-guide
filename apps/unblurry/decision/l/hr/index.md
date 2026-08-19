@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za ispravljanje zamućenih fotografija djece na iPhoneu"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/hr/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Djeca se nikad ne drže mirno, pa su blago zamućene i podrhtale fotografije nei
 - Privatno / na uređaju
 - App Store · Besplatno
 
-[Preuzmite Unblurry u App Storeu →](https://apps.apple.com/hr/app/id6782275018?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite Unblurry u App Storeu →](https://apps.apple.com/hr/app/id6782275018)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

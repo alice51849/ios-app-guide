@@ -2,7 +2,7 @@
 title: "पालकांना मुलांसोबत बाहेर जाण्याचे वेळ नियोजन करण्यासाठी सर्वोत्तम हवामान अनुप्रयोग"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/mr-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ट्रॅकिंग नाही
 - App Store · मोफत
 
-[Lumi Weather App Store वर मिळवा →](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=iag_data_mr_in&mt=8)
+[Lumi Weather App Store वर मिळवा →](https://apps.apple.com/in/app/id6779552704)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

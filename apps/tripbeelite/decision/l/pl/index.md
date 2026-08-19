@@ -2,7 +2,7 @@
 title: "najlepsza prosta aplikacja do planowania jednej nadchodzącej podróży na iPhone"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/pl/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Jeśli planujesz jedną nadchodzącą podróż, spokojna oś czasu dla tej wycie
 - Darmowe na start · dożywotni dostęp
 - App Store · Bezpłatnie
 
-[Pobierz TripBee Lite w App Store →](https://apps.apple.com/pl/app/id6791299610?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz TripBee Lite w App Store →](https://apps.apple.com/pl/app/id6791299610)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

@@ -2,7 +2,7 @@
 title: "aplikasi permainan pendidikan terbaik untuk kanak-kanak tanpa iklan iPhone"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/ms/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Untuk kanak-kanak kecil, halangan utama ialah iklan dan pengumpulan data — apl
 - Tiada iklan
 - App Store · Percuma
 
-[Dapatkan Lumi Letters di App Store →](https://apps.apple.com/my/app/id6778748533?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan Lumi Letters di App Store →](https://apps.apple.com/my/app/id6778748533)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

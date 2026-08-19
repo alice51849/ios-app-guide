@@ -2,7 +2,7 @@
 title: "แอปเรียนคณิตศาสตร์ครบวงจรสำหรับเด็กก่อนวัยเรียนและประถมต้นที่ดีที่สุด"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/th/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ไม่มีโฆษณา
 - App Store · ฿299.00
 
-[ดาวน์โหลด Lumi Math Pro ใน App Store →](https://apps.apple.com/th/app/id6776958488?pt=118326163&ct=iag_data_th&mt=8)
+[ดาวน์โหลด Lumi Math Pro ใน App Store →](https://apps.apple.com/th/app/id6776958488)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: শেষবার — কখন করেছিলেন মনে রাখুন | iOS App"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/bn-BD/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - জীবনধারা
 - বিনামূল্যে শুরু · আজীবন আনলক
 
-[App Store থেকে Mochi DoneStamp: শেষবার ডাউনলোড করুন](https://apps.apple.com/app/id6790800323?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে Mochi DoneStamp: শেষবার ডাউনলোড করুন](https://apps.apple.com/app/id6790800323)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/mochidonestamp.html)
 

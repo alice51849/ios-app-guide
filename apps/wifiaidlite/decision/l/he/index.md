@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — אבחון רשת מבוסס ראיות | iOS App"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/he/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ללא חשבון
 - App Store · בחינם
 
-[הורידו את WiFi Aid Lite מה-App Store](https://apps.apple.com/il/app/id6793414462?pt=118326163&ct=iag_data_he&mt=8)
+[הורידו את WiFi Aid Lite מה-App Store](https://apps.apple.com/il/app/id6793414462)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/wifiaidlite.html)
 

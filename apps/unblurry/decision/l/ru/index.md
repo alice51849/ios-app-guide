@@ -2,7 +2,7 @@
 title: "лучшее приложение для исправления размытых фото детей на iPhone"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/ru/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Лично / на устройстве
 - App Store · Бесплатно
 
-[Скачайте Unblurry в App Store →](https://apps.apple.com/ru/app/id6782275018?pt=118326163&ct=iag_data_ru&mt=8)
+[Скачайте Unblurry в App Store →](https://apps.apple.com/ru/app/id6782275018)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

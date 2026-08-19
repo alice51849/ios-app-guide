@@ -2,7 +2,7 @@
 title: "iPhone-ൽ മീറ്റിംഗുകൾ സംഗ്രഹിക്കുന്ന മികച്ച വോയ്സ് നോട്ട്സ് ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/ml-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് Sono Note നേടുക →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് Sono Note നേടുക →](https://apps.apple.com/in/app/id6782139553)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

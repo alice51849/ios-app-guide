@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Коли востаннє — Пам’ятає, коли ви це зробили | iOS App"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/uk/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Безкоштовно для початку · довічне розблокування
 - App Store · Безкоштовно
 
-[Завантажте Mochi DoneStamp: Коли востаннє з App Store](https://apps.apple.com/ua/app/id6790800323?pt=118326163&ct=iag_data_uk&mt=8)
+[Завантажте Mochi DoneStamp: Коли востаннє з App Store](https://apps.apple.com/ua/app/id6790800323)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/mochidonestamp.html)
 

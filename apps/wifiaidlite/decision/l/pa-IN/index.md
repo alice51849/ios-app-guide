@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — ਨੈੱਟ ਸਮੱਸਿਆ ਲੱਭੋ ਤੇ ਠੀਕ ਕਰੋ | iOS App"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/pa-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ਕੋਈ ਖਾਤਾ ਨਹੀਂ
 - App Store · ਮੁਫ਼ਤ
 
-[App Store ਤੋਂ WiFi Aid Lite ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=iag_data_pa_in&mt=8)
+[App Store ਤੋਂ WiFi Aid Lite ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6793414462)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/wifiaidlite.html)
 

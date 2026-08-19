@@ -2,7 +2,7 @@
 title: "ବାଳକ ଏବଂ ଶିଶୁଙ୍କ ପାଇଁ ସର୍ବୋତ୍ତମ ପାସପୋର୍ଟ ଫଟୋ ଆପ୍ ଘରେ"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/or-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ₹ 599
 
-[App Store ରୁ Snapport ଡାଉନଲୋଡ୍ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=iag_data_or_in&mt=8)
+[App Store ରୁ Snapport ଡାଉନଲୋଡ୍ କରନ୍ତୁ →](https://apps.apple.com/in/app/id6780575828)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

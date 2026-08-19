@@ -2,7 +2,7 @@
 title: "migliore app per monitorare il ciclo senza account richiesta per iPhone"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/it/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ In una categoria dove la sensibilità dei dati è tutto, il giusto monitor del c
 - App Store · Gratis
 - ★ 4.0/5 · 1
 
-[Scarica Cyca dall'App Store →](https://apps.apple.com/it/app/id6782251621?pt=118326163&ct=iag_data_it&mt=8)
+[Scarica Cyca dall'App Store →](https://apps.apple.com/it/app/id6782251621)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-period-tracker-app-no-account-required-iphone.html)
 

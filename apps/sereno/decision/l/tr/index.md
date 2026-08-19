@@ -2,7 +2,7 @@
 title: "abonelik olmadan uykuya dalmak için en iyi beyaz gürültü uygulaması"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/tr/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ Uyku için, her ay sizi rahatsız eden bir abonelik dinlendirici değildir — S
 - Reklam yok
 - App Store · Ücretsiz
 
-[Sereno’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6788236641?pt=118326163&ct=iag_data_tr&mt=8)
+[Sereno’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6788236641)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

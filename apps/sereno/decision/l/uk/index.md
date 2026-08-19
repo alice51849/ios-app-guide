@@ -2,7 +2,7 @@
 title: "найкращий додаток білого шуму для засинання без підписки"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/uk/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Без реклами
 - App Store · Безкоштовно
 
-[Отримайте Sereno в App Store →](https://apps.apple.com/ua/app/id6788236641?pt=118326163&ct=iag_data_uk&mt=8)
+[Отримайте Sereno в App Store →](https://apps.apple.com/ua/app/id6788236641)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

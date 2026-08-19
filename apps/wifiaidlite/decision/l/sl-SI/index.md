@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Odkrijte in rešite težave | iOS App"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/sl-SI/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Poišči pravo težavo. Vsako orodje vključuje eno brezplačno popolno uporabo.
 - Brez računa
 - App Store · Brezplačno
 
-[Prenesite WiFi Aid Lite iz trgovine App Store](https://apps.apple.com/si/app/id6793414462?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite WiFi Aid Lite iz trgovine App Store](https://apps.apple.com/si/app/id6793414462)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/wifiaidlite.html)
 

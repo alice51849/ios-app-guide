@@ -2,7 +2,7 @@
 title: "iPhoneの重複写真削除でストレージを空けるおすすめアプリ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ja/picclear.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 video_url: "https://files.catbox.moe/cx5hf5.mp4"
 duration: "PT16S"
 app_store_id: "6780223070"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [動画を見る](https://files.catbox.moe/cx5hf5.mp4)
 
-[App StoreでPicClearを入手 →](https://apps.apple.com/jp/app/id6780223070?pt=118326163&ct=iag_video_ja&mt=8)
+[App StoreでPicClearを入手 →](https://apps.apple.com/jp/app/id6780223070)
 
 [アプリガイドを開く](https://alice51849.github.io/ios-app-guide/ja/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

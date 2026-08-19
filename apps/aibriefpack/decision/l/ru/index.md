@@ -2,7 +2,7 @@
 title: "AI Brief — Файлы в ясный контекст | iOS App"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ru/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Лично / на устройстве
 - App Store · Бесплатно
 
-[Установить AI Brief в App Store](https://apps.apple.com/ru/app/id6791658210?pt=118326163&ct=iag_data_ru&mt=8)
+[Установить AI Brief в App Store](https://apps.apple.com/ru/app/id6791658210)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/aibriefpack.html)
 

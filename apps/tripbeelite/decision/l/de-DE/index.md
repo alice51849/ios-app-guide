@@ -2,7 +2,7 @@
 title: "Beste einfache Reiseplaner-App für eine bevorstehende Reise iPhone"
 lang: "de-DE"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/de-DE/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Wenn Sie eine bevorstehende Reise planen, ist eine ruhige Zeitachse für diese R
 - Kostenloser Einstieg · dauerhafte Freischaltung
 - App Store · Kostenlos
 
-[Holen Sie sich TripBee Lite im App Store →](https://apps.apple.com/de/app/id6791299610?pt=118326163&ct=iag_data_de_de&mt=8)
+[Holen Sie sich TripBee Lite im App Store →](https://apps.apple.com/de/app/id6791299610)
 
 [Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

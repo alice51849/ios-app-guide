@@ -2,7 +2,7 @@
 title: "iPhone-ക്കുള്ള മികച്ച യാത്രാ യാത്രാമാർഗ്ഗം പ്ലാനർ ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/ml-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · ₹ 599
 
-[App Store-ൽ നിന്ന് TripBee Pro: Trip Planner നേടുക →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് TripBee Pro: Trip Planner നേടുക →](https://apps.apple.com/in/app/id6787754435)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

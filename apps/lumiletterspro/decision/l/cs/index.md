@@ -2,7 +2,7 @@
 title: "nejlepší kompletní aplikace pro fonetiku pro domácí přípravu do mateřské školy"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/cs/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Rodiny připravující děti na školku potřebují ucelenou cestu k prvnímu č
 - Bez reklam
 - App Store · 249,00 Kč
 
-[Stáhněte si Lumi Letters Pro v App Store →](https://apps.apple.com/cz/app/id6778491147?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte si Lumi Letters Pro v App Store →](https://apps.apple.com/cz/app/id6778491147)
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

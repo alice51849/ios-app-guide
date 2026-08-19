@@ -2,7 +2,7 @@
 title: "పిల్లలకు ఉత్తమ పూర్తి ఉదయం మరియు రాత్రి రూటీన్ యాప్"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/te-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ప్రకటనలు లేవు
 - App Store · ₹ 599
 
-[App Storeలో Lumi Mission Planet Pro పొందండి →](https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=iag_data_te_in&mt=8)
+[App Storeలో Lumi Mission Planet Pro పొందండి →](https://apps.apple.com/in/app/id6779745474)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

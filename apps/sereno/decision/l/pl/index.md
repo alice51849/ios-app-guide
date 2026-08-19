@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja z białym szumem do zasypiania bez subskrypcji"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/pl/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ Na sen subskrypcja, która co miesiąc przypomina o opłacie, to przeciwieństwo
 - Bez reklam
 - App Store · Bezpłatnie
 
-[Pobierz Sereno w App Store →](https://apps.apple.com/pl/app/id6788236641?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz Sereno w App Store →](https://apps.apple.com/pl/app/id6788236641)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

@@ -2,7 +2,7 @@
 title: "mejor app para seguimiento de presupuesto de viaje sin suscripción para iPhone"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/es-MX/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ En un viaje necesitas un rastreador de presupuesto que funcione offline en un pa
 - Sin cuenta
 - App Store · $99.00
 
-[Obtén G+Money en la App Store →](https://apps.apple.com/mx/app/id6755782939?pt=118326163&ct=iag_data_es_mx&mt=8)
+[Obtén G+Money en la App Store →](https://apps.apple.com/mx/app/id6755782939)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

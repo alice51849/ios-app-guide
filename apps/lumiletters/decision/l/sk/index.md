@@ -2,7 +2,7 @@
 title: "najlepšia vzdelávacia hra pre deti bez reklám na iPhone"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/sk/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Pre malé dieťa je rozhodujúce, že aplikácia nemá reklamy ani nezbiera úda
 - Bez reklám
 - App Store · Zadarmo
 
-[Stiahnite si Lumi Letters v App Store →](https://apps.apple.com/sk/app/id6778748533?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnite si Lumi Letters v App Store →](https://apps.apple.com/sk/app/id6778748533)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

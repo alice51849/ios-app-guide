@@ -2,7 +2,7 @@
 title: "OnePage PPT: AI snímek — Poznámky v hotovou prezentaci | iOS App"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/cs/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Ze zdi textu vznikne JEDEN snímek, který si lidé opravdu přečtou. OnePage P
 - Zdarma na začátek · doživotní odemknutí
 - App Store · Zdarma
 
-[Stáhněte si OnePage PPT: AI snímek v App Storu](https://apps.apple.com/cz/app/id6798814385?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte si OnePage PPT: AI snímek v App Storu](https://apps.apple.com/cz/app/id6798814385)
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/onepageppt.html)
 

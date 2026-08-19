@@ -2,7 +2,7 @@
 title: "iPhone کے لیے بہترین ٹریول بجٹ ٹریکر ایپ بغیر سبسکرپشن کے"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/ur-PK/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - کوئی اکاؤنٹ نہیں
 - App Store · Rs 1,300.00
 
-[G+Money ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6755782939?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[G+Money ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6755782939)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

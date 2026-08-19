@@ -180,7 +180,7 @@
     "@id": "https://alice51849.github.io/ios-app-guide/#organization"
   },
   "datePublished": "2026-07-19",
-  "dateModified": "2026-08-18",
+  "dateModified": "2026-08-19",
   "version": "1.0.0",
   "sdVersion": "1.0.0",
   "isLiveDataset": false,
@@ -261,9 +261,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.csv",
       "description": "Canonical UTF-8 table loaded by the publisher_intents RecordSet.",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv",
-      "contentSize": "2341440 B",
+      "contentSize": "2268696 B",
       "encodingFormat": "text/csv",
-      "sha256": "909271cce3ea9ddc39deadd5fc3b683adfffed6dd6032c8af559bd46443b0a1a"
+      "sha256": "e46f83f6592a5df04bd9bc8dc6d069a5f40591450ad9e702b4c04c1f706cc1de"
     },
     {
       "@type": "cr:FileObject",
@@ -271,9 +271,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.jsonl",
       "description": "The same 2,100 records serialized as newline-delimited JSON.",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl",
-      "contentSize": "3194754 B",
+      "contentSize": "3122010 B",
       "encodingFormat": "application/x-ndjson",
-      "sha256": "5e60eb25ebe7b5a74b1720eaf2f54ce892c94aee21ed25aab3bef2c2c48aaa09"
+      "sha256": "3da06dff6f3cecfab6bea0548c4bde088543a7d1514b805a4e81b38640c74598"
     },
     {
       "@type": "cr:FileObject",
@@ -281,9 +281,9 @@
       "name": "lumi-studio-publisher-search-intent-catalog.json",
       "description": "Dataset envelope with provenance, coverage and all 2,100 records.",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-      "contentSize": "3537103 B",
+      "contentSize": "3464359 B",
       "encodingFormat": "application/json",
-      "sha256": "fccbec5786b78902d7fd20164bae0a2f61ee15c80a02b96c93c1aa2e9147a5c5"
+      "sha256": "f3d2bdf417c87f1897f4bd06f174f760805f44558f6cc1f90b1a5244fc99f1bc"
     }
   ],
   "recordSet": [
@@ -310,7 +310,7 @@
           "publisher_intents/source_persona_query": "best offline handwriting notes app for ipad with pdf markup no subscription",
           "publisher_intents/canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/notesstudio100.html",
           "publisher_intents/canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
-          "publisher_intents/app_store_url": "https://apps.apple.com/sa/app/id6798813048?pt=118326163&ct=iag_data_ar_sa&mt=8",
+          "publisher_intents/app_store_url": "https://apps.apple.com/sa/app/id6798813048",
           "publisher_intents/publisher_disclosure": "هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.",
           "publisher_intents/query_origin": "publisher_authored_editorially_localized",
           "publisher_intents/measured_search_volume": false,
@@ -330,7 +330,7 @@
           "publisher_intents/source_persona_query": "best private app to organize screenshots and documents into context before using AI",
           "publisher_intents/canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html",
           "publisher_intents/canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-          "publisher_intents/app_store_url": "https://apps.apple.com/sa/app/id6791658210?pt=118326163&ct=iag_data_ar_sa&mt=8",
+          "publisher_intents/app_store_url": "https://apps.apple.com/sa/app/id6791658210",
           "publisher_intents/publisher_disclosure": "دليل من إعداد الناشر Lumi Studio، مطوّر التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم للتعريف فقط. لقرارات المستندات والصحة والمدرسة والإنتاجية، تحقق من المتطلبات الرسمية عند الحاجة.",
           "publisher_intents/query_origin": "publisher_authored_editorially_localized",
           "publisher_intents/measured_search_volume": false,

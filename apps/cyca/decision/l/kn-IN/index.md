@@ -2,7 +2,7 @@
 title: "ಅಕೌಂಟ್ ಅಗತ್ಯವಿಲ್ಲದ ಅತ್ಯುತ್ತಮ ಪೀರಿಯಡ್ ಟ್ರ್ಯಾಕರ್ ಅಪ್ಲಿಕೇಶನ್ iPhone"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/kn-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - App Store · ಉಚಿತ
 
-[App Store ನಲ್ಲಿ Cyca ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6782251621?pt=118326163&ct=iag_data_kn_in&mt=8)
+[App Store ನಲ್ಲಿ Cyca ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6782251621)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-period-tracker-app-no-account-required-iphone.html)
 

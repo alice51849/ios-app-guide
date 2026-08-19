@@ -2,7 +2,7 @@
 title: "শিশুদের জন্য সেরা সম্পূর্ণ সকাল ও ঘুমের রুটিন অ্যাপ"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/bn-BD/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - পেইড ডাউনলোড
 - কোনও বিজ্ঞাপন নেই
 
-[App Store-এ Lumi Mission Planet Pro পান →](https://apps.apple.com/app/id6779745474?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store-এ Lumi Mission Planet Pro পান →](https://apps.apple.com/app/id6779745474)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

@@ -2,7 +2,7 @@
 title: "मुलांसाठी सर्वोत्तम संपूर्ण सकाळ व झोपेची दिनचर्या अ‍ॅप"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/mr-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - जाहिराती नाहीत
 - App Store · ₹ 599
 
-[Lumi Mission Planet Pro App Store वर मिळवा →](https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=iag_data_mr_in&mt=8)
+[Lumi Mission Planet Pro App Store वर मिळवा →](https://apps.apple.com/in/app/id6779745474)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

@@ -2,7 +2,7 @@
 title: "Aim990 Plus — Sigurnost pod štopericom | iOS App"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/hr/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Razumjeti engleski nije isto što i ostati precizan dok vrijeme istječe. Aim990
 - Plaćeno preuzimanje
 - App Store · 6,99 €
 
-[Preuzmite Aim990 Plus u App Storeu](https://apps.apple.com/hr/app/id6792483140?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite Aim990 Plus u App Storeu](https://apps.apple.com/hr/app/id6792483140)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/aim990plus.html)
 

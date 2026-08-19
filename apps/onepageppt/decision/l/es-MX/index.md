@@ -2,7 +2,7 @@
 title: "OnePage PPT: crea diapositivas — Tus notas en una sola lámina | iOS App"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/es-MX/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Convierte un muro de texto en UNA lámina que sí se lee. OnePage PPT lee lo que
 - Gratis para empezar · desbloqueo permanente
 - App Store · Gratis
 
-[Consigue OnePage PPT: crea diapositivas en el App Store](https://apps.apple.com/mx/app/id6798814385?pt=118326163&ct=iag_data_es_mx&mt=8)
+[Consigue OnePage PPT: crea diapositivas en el App Store](https://apps.apple.com/mx/app/id6798814385)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/onepageppt.html)
 

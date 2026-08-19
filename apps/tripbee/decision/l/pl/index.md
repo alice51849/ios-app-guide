@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do planowania planu podróży na iPhone"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/pl/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ Dobra aplikacja do planowania zmienia chaotyczną podróż w jasny plan dzień p
 - Prywatne / na urządzeniu
 - App Store · 29,99 zł
 
-[Pobierz TripBee Pro: Planer podróży w App Store →](https://apps.apple.com/pl/app/id6787754435?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz TripBee Pro: Planer podróży w App Store →](https://apps.apple.com/pl/app/id6787754435)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

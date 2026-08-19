@@ -2,7 +2,7 @@
 title: "پری اسکول بچوں کے لیے بغیر اشتہارات کے بہترین سونے کی روٹین ایپ"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/ur-PK/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - کوئی اشتہار نہیں
 - App Store · مفت
 
-[Lumi Mission Planet App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6779750237?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[Lumi Mission Planet App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6779750237)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

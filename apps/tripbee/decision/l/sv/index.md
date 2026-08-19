@@ -2,7 +2,7 @@
 title: "bästa appen för reseplanering på iPhone"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/sv/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ En bra reseplanerare förvandlar en rörig resa till en tydlig dag-för-dag-tids
 - Privat / på enheten
 - App Store · 79,00 kr
 
-[Skaffa TripBee Pro: Resplanerare i App Store →](https://apps.apple.com/se/app/id6787754435?pt=118326163&ct=iag_data_sv&mt=8)
+[Skaffa TripBee Pro: Resplanerare i App Store →](https://apps.apple.com/se/app/id6787754435)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

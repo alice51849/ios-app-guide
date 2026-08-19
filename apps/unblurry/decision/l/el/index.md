@@ -2,7 +2,7 @@
 title: "καλύτερη εφαρμογή για διόρθωση θολών φωτογραφιών παιδιών σε iPhone"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/el/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Ιδιωτικό / στη συσκευή
 - App Store · Δωρεάν
 
-[Κατεβάστε το Unblurry από το App Store →](https://apps.apple.com/gr/app/id6782275018?pt=118326163&ct=iag_data_el&mt=8)
+[Κατεβάστε το Unblurry από το App Store →](https://apps.apple.com/gr/app/id6782275018)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

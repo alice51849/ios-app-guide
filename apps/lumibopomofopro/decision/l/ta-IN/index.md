@@ -2,7 +2,7 @@
 title: "இருமொழி குழந்தைகளுக்கான சிறந்த முழுமையான ழுயின் செயலி"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/ta-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - விளம்பரங்கள் இல்லை
 - App Store · ₹ 999
 
-[Lumi Bopomofo Pro-ஐ App Store-இல் பெறுங்கள் →](https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=iag_data_ta_in&mt=8)
+[Lumi Bopomofo Pro-ஐ App Store-இல் பெறுங்கள் →](https://apps.apple.com/in/app/id6775773117)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-complete-zhuyin-app-for-bilingual-children.html)
 

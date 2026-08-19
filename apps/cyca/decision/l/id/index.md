@@ -2,7 +2,7 @@
 title: "aplikasi pelacak siklus terbaik tanpa perlu akun untuk iPhone"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/id/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Dalam kategori di mana sensitivitas data adalah segalanya, pelacak siklus yang t
 - Privat / di perangkat
 - App Store · Gratis
 
-[Dapatkan Cyca di App Store →](https://apps.apple.com/id/app/id6782251621?pt=118326163&ct=iag_data_id&mt=8)
+[Dapatkan Cyca di App Store →](https://apps.apple.com/id/app/id6782251621)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-period-tracker-app-no-account-required-iphone.html)
 

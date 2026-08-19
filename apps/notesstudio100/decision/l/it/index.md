@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — Quaderno a mano, PDF e studio | iOS App"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/it/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ Riunisci scrittura a mano, testo digitato, annotazione di documenti, registrazio
 - Privato / su dispositivo
 - App Store · Gratis
 
-[Scarica 100 Notes Studio: Pen & Paper sull'App Store](https://apps.apple.com/it/app/id6798813048?pt=118326163&ct=iag_data_it&mt=8)
+[Scarica 100 Notes Studio: Pen & Paper sull'App Store](https://apps.apple.com/it/app/id6798813048)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/notesstudio100.html)
 

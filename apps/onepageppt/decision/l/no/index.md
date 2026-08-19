@@ -2,7 +2,7 @@
 title: "OnePage PPT: AI-lysbilder — Notater blir én ferdig side | iOS App"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/no/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ Gjør en vegg av tekst om til ÉTT lysbilde folk faktisk leser. OnePage PPT lese
 - Gratis å starte · livstidsopplåsing
 - App Store · Gratis
 
-[Last ned OnePage PPT: AI-lysbilder fra App Store](https://apps.apple.com/no/app/id6798814385?pt=118326163&ct=iag_data_no&mt=8)
+[Last ned OnePage PPT: AI-lysbilder fra App Store](https://apps.apple.com/no/app/id6798814385)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/onepageppt.html)
 

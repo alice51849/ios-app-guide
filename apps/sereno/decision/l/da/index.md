@@ -2,7 +2,7 @@
 title: "bedste app til hvid støj for at falde i søvn uden abonnement"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/da/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ For søvn er et abonnement, der irriterer hver måned, det modsatte af afslappen
 - Ingen reklamer
 - App Store · Gratis
 
-[Hent Sereno i App Store →](https://apps.apple.com/dk/app/id6788236641?pt=118326163&ct=iag_data_da&mt=8)
+[Hent Sereno i App Store →](https://apps.apple.com/dk/app/id6788236641)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

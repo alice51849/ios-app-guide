@@ -2,7 +2,7 @@
 title: "iPhone کی اسٹوریج خالی کرنے کے لیے بہترین ایپ جو نقل شدہ تصاویر حذف کرے"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/ur-PK/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - نجی / آلہ پر
 - App Store · مفت
 
-[App Store سے PicClear حاصل کریں →](https://apps.apple.com/pk/app/id6780223070?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[App Store سے PicClear حاصل کریں →](https://apps.apple.com/pk/app/id6780223070)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

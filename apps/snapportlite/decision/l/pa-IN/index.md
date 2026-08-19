@@ -2,7 +2,7 @@
 title: "Snapport Lite — ਘਰ ਵਿੱਚ ID ਫੋਟੋਆਂ ਬਣਾਓ | iOS App"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/pa-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Snapport Lite - ਪਾਸਪੋਰਟ, ਵੀਜ਼ਾ ਅਤੇ ਦਸਤਾਵ
 - ਆਫਲਾਈਨ
 - App Store · ਮੁਫ਼ਤ
 
-[App Store ਤੋਂ Snapport Lite ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_pa_in&mt=8)
+[App Store ਤੋਂ Snapport Lite ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6792856304)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/snapportlite.html)
 

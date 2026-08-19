@@ -2,7 +2,7 @@
 title: "适用于即将出行的iPhone最佳简易行程规划应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/zh-Hans/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免费开始使用 · 永久解锁
 - App Store · 免费
 
-[在App Store获取TripBee Lite →](https://apps.apple.com/cn/app/id6791299610?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在App Store获取TripBee Lite →](https://apps.apple.com/cn/app/id6791299610)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

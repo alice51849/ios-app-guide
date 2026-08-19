@@ -2,7 +2,7 @@
 title: "CalDaily: kalkulator i teme — Widget, alati i povijest | iOS App"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/hr/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Kalkulator koji ćete zaista nastaviti koristiti, jer pamti razmišljanje iza sv
 - Widget
 - App Store · Besplatno
 
-[Preuzmite CalDaily: kalkulator i teme u App Storeu](https://apps.apple.com/hr/app/id6794178671?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite CalDaily: kalkulator i teme u App Storeu](https://apps.apple.com/hr/app/id6794178671)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/caldaily.html)
 

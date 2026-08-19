@@ -2,7 +2,7 @@
 title: "Snapport Lite — Crea fotos de carnet en casa | iOS App"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/es-MX/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Snapport Lite - Haz fotos de pasaporte, visado y documentos con guías de tamañ
 - Sin conexión
 - App Store · Gratis
 
-[Consigue Snapport Lite en el App Store](https://apps.apple.com/mx/app/id6792856304?pt=118326163&ct=iag_data_es_mx&mt=8)
+[Consigue Snapport Lite en el App Store](https://apps.apple.com/mx/app/id6792856304)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/snapportlite.html)
 

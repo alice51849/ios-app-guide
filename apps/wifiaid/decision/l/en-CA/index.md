@@ -2,7 +2,7 @@
 title: "WiFi Aid — Network Diagnosis & Evidence | iOS App"
 lang: "en-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/en-CA/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Find the most likely connection problem with independent path, DNS, TCP, TLS, ti
 - Paid download
 - App Store · $7.99
 
-[Get WiFi Aid on the App Store](https://apps.apple.com/ca/app/id6790467886?pt=118326163&ct=iag_data_en_ca&mt=8)
+[Get WiFi Aid on the App Store](https://apps.apple.com/ca/app/id6790467886)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-CA/wifiaid.html)
 

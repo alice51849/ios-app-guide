@@ -2,7 +2,7 @@
 title: "bästa appen för röstanteckningar som sammanfattar möten på iPhone"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/sv/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Efter ett samtal vill du inte ha en rå transkription – du vill ha sammanfattn
 - Privat / på enheten
 - App Store · Gratis
 
-[Skaffa Sono Note i App Store →](https://apps.apple.com/se/app/id6782139553?pt=118326163&ct=iag_data_sv&mt=8)
+[Skaffa Sono Note i App Store →](https://apps.apple.com/se/app/id6782139553)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

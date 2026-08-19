@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za vokabular za zaposlene putnike s Apple Watchom"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/hr/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,7 +22,7 @@ Zaposlenim putnicima treba vježba vokabulara koja stane u slobodne minute bez p
 - Apple Watch
 - App Store · 9,99 €
 
-[Preuzmite Wordmate: Learn 44 Languages na App Storeu →](https://apps.apple.com/hr/app/id6789917808?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite Wordmate: Learn 44 Languages na App Storeu →](https://apps.apple.com/hr/app/id6789917808)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

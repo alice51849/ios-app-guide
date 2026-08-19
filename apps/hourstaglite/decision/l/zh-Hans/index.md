@@ -2,7 +2,7 @@
 title: "HoursTag Lite — 看见每样东西的真实代价 | iOS App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/zh-Hans/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,7 +22,7 @@ HoursTag Lite - 看见每样东西的真实代价 每一笔花费，都消耗你
 - Apple Watch
 - App Store · 免费
 
-[在 App Store 获取 HoursTag Lite](https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在 App Store 获取 HoursTag Lite](https://apps.apple.com/cn/app/id6794039979)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/hourstaglite.html)
 

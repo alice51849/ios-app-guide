@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — రాత గమనికలు, PDF వ్యాఖ్యలు | iOS App"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/te-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - గోప్యంగా / పరికరంలో
 - App Store · ఉచితం
 
-[App Store నుంచి 100 Notes Studio: Pen & Paper పొందండి](https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_te_in&mt=8)
+[App Store నుంచి 100 Notes Studio: Pen & Paper పొందండి](https://apps.apple.com/in/app/id6798813048)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/notesstudio100.html)
 

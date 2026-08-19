@@ -2,7 +2,7 @@
 title: "Snapport Lite — Snapport Lite - നിർദ്ദേശിച്ച വലുപ്പം, പശ്ചാത്തല ഉപകരണങ്ങൾ | iOS App"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/ml-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Snapport Lite - നിർദ്ദേശിച്ച വലുപ്പം, പ�
 - ഓഫ്‌ലൈൻ
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് Snapport Lite നേടൂ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് Snapport Lite നേടൂ](https://apps.apple.com/in/app/id6792856304)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/snapportlite.html)
 

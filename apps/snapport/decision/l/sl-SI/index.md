@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za potniško fotografijo dojenčkov in malčkov doma"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/sl-SI/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Za potniško fotografijo dojenčka ne sme biti drugih oseb v kadru, ozadje mora 
 - Zasebno / na napravi
 - App Store · 6,99 €
 
-[Prenesite Snapport iz App Store →](https://apps.apple.com/si/app/id6780575828?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite Snapport iz App Store →](https://apps.apple.com/si/app/id6780575828)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

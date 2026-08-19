@@ -2,7 +2,7 @@
 title: "найкращий повний додаток Zhuyin для білінгвальних дітей"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/uk/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Без реклами
 - App Store · 9,99 USD
 
-[Отримати Lumi Bopomofo Pro в App Store →](https://apps.apple.com/ua/app/id6775773117?pt=118326163&ct=iag_data_uk&mt=8)
+[Отримати Lumi Bopomofo Pro в App Store →](https://apps.apple.com/ua/app/id6775773117)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/answers/best-complete-zhuyin-app-for-bilingual-children.html)
 

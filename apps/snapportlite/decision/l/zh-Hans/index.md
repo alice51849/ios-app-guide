@@ -2,7 +2,7 @@
 title: "Snapport Lite — 在家制作证件照 | iOS App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/zh-Hans/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Snapport Lite - 通过尺寸引导、背景工具和可打印输出，制作护�
 - 离线
 - App Store · 免费
 
-[在 App Store 获取 Snapport Lite](https://apps.apple.com/cn/app/id6792856304?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在 App Store 获取 Snapport Lite](https://apps.apple.com/cn/app/id6792856304)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/snapportlite.html)
 

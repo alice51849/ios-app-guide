@@ -2,7 +2,7 @@
 title: "iPhone சேமிப்பிடத்தை விடுவிக்க சிறந்த பயன்பாடு, நகல் புகைப்படங்களை நீக்குதல்"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/ta-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - தனியுரிமை / சாதனத்தில்
 - App Store · இலவசம்
 
-[App Store-இல் PicClear பெறவும் →](https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=iag_data_ta_in&mt=8)
+[App Store-இல் PicClear பெறவும் →](https://apps.apple.com/in/app/id6780223070)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

@@ -2,7 +2,7 @@
 title: "முன்பள்ளி குழந்தைகளுக்கான விளம்பரமில்லாத சிறந்த உறங்கும் நேர ஒழுங்கு பயன்பாடு"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/ta-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - விளம்பரங்கள் இல்லை
 - App Store · இலவசம்
 
-[Lumi Mission Planet-ஐ App Store-ல் பெறுங்கள் →](https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=iag_data_ta_in&mt=8)
+[Lumi Mission Planet-ஐ App Store-ல் பெறுங்கள் →](https://apps.apple.com/in/app/id6779750237)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — Notizbuch, Handschrift & PDF | iOS App"
 lang: "de-DE"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/de-DE/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ Eine App statt fünf. 100 Notes Studio ist ein privates Offline-Studio für Stif
 - Privat / auf dem Gerät
 - App Store · Kostenlos
 
-[100 Notes Studio: Pen & Paper im App Store laden](https://apps.apple.com/de/app/id6798813048?pt=118326163&ct=iag_data_de_de&mt=8)
+[100 Notes Studio: Pen & Paper im App Store laden](https://apps.apple.com/de/app/id6798813048)
 
 [Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/notesstudio100.html)
 

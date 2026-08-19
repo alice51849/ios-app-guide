@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — Notițe de mână și PDF | iOS App"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/ro/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ Adună scrisul de mână, textul tastat, adnotările PDF și instrumentele de st
 - Privat / pe dispozitiv
 - App Store · Gratuit
 
-[Descarcă 100 Notes Studio: Pen & Paper din App Store](https://apps.apple.com/ro/app/id6798813048?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă 100 Notes Studio: Pen & Paper din App Store](https://apps.apple.com/ro/app/id6798813048)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/notesstudio100.html)
 

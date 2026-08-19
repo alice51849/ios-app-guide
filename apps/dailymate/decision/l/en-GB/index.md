@@ -2,7 +2,7 @@
 title: "best practical language phrase app for travelers with apple watch"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/en-GB/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Before a trip, complete phrases for real situations are more useful than isolate
 - Apple Watch
 - App Store · £11.99
 
-[Get DailyMate on the App Store →](https://apps.apple.com/gb/app/id6790418321?pt=118326163&ct=iag_data_en_gb&mt=8)
+[Get DailyMate on the App Store →](https://apps.apple.com/gb/app/id6790418321)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

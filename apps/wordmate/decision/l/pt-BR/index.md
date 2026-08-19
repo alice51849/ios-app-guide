@@ -2,7 +2,7 @@
 title: "melhor app de vocabulário para quem usa Apple Watch no transporte"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/pt-BR/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,7 +22,7 @@ Quem usa transporte precisa de prática de vocabulário que caiba em minutos liv
 - Apple Watch
 - App Store · R$ 59,90
 
-[Baixe Wordmate: Aprenda 44 Idiomas na App Store →](https://apps.apple.com/br/app/id6789917808?pt=118326163&ct=iag_data_pt_br&mt=8)
+[Baixe Wordmate: Aprenda 44 Idiomas na App Store →](https://apps.apple.com/br/app/id6789917808)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

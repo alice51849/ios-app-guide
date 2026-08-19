@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Dijagnostika mreže s dokazima | iOS App"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/hr/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Pronađi stvarni problem. Svaki alat uključuje jednu besplatnu potpunu upotrebu
 - Bez računa
 - App Store · Besplatno
 
-[Preuzmite WiFi Aid Lite u App Storeu](https://apps.apple.com/hr/app/id6793414462?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite WiFi Aid Lite u App Storeu](https://apps.apple.com/hr/app/id6793414462)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/wifiaidlite.html)
 

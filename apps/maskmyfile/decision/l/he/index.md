@@ -2,7 +2,7 @@
 title: "Mask My File — השחרת מידע לפני שיתוף | iOS App"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/he/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - פרטי / במכשיר
 - App Store · בחינם
 
-[הורידו את Mask My File מה-App Store](https://apps.apple.com/il/app/id6792850916?pt=118326163&ct=iag_data_he&mt=8)
+[הורידו את Mask My File מה-App Store](https://apps.apple.com/il/app/id6792850916)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/maskmyfile.html)
 

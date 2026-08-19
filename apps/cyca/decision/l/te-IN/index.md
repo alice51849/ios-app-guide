@@ -2,7 +2,7 @@
 title: "అకౌంట్ అవసరం లేని ఉత్తమ పీరియడ్ ట్రాకర్ యాప్ iPhone కోసం"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/te-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - గోప్యంగా / పరికరంలో
 - App Store · ఉచితం
 
-[App Store నుండి Cyca పొందండి →](https://apps.apple.com/in/app/id6782251621?pt=118326163&ct=iag_data_te_in&mt=8)
+[App Store నుండి Cyca పొందండి →](https://apps.apple.com/in/app/id6782251621)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-period-tracker-app-no-account-required-iphone.html)
 

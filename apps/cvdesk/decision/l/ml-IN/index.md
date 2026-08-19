@@ -2,7 +2,7 @@
 title: "2026-ലെ കരിയർ മാറ്റം ചെയ്യുന്നവർക്കുള്ള മികച്ച റിസ്യൂം ബിൽഡർ ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/ml-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്
 - App Store · സൗജന്യം
 
-[App Store-ൽ CV Desk നേടുക →](https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ CV Desk നേടുക →](https://apps.apple.com/in/app/id6781337213)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-resume-builder-app-for-career-changers-2026.html)
 

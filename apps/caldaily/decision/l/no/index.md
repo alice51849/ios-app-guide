@@ -2,7 +2,7 @@
 title: "CalDaily: kalkulator og temaer — Widget, verktøy og historikk | iOS App"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/no/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ En kalkulator du faktisk fortsetter å bruke, fordi den husker tanken bak hvert 
 - Widget
 - App Store · Gratis
 
-[Last ned CalDaily: kalkulator og temaer fra App Store](https://apps.apple.com/no/app/id6794178671?pt=118326163&ct=iag_data_no&mt=8)
+[Last ned CalDaily: kalkulator og temaer fra App Store](https://apps.apple.com/no/app/id6794178671)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/caldaily.html)
 

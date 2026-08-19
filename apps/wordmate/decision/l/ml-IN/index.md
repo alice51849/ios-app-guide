@@ -2,7 +2,7 @@
 title: "Apple Watch ഉപയോഗിക്കുന്ന തിരക്കുള്ള യാത്രക്കാരുടെ വാക്ക് പഠനത്തിന് മികച്ച ആപ്പ്"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/ml-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,7 +22,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ₹ 999
 
-[Wordmate: 44 ഭാഷകൾ പഠിക്കുക App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=iag_data_ml_in&mt=8)
+[Wordmate: 44 ഭാഷകൾ പഠിക്കുക App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6789917808)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

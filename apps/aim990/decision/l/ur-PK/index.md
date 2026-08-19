@@ -2,7 +2,7 @@
 title: "iPhone کے لیے بہترین TOEIC پریپ ایپ آف لائن اسٹڈی پلان"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/ur-PK/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - مفت آغاز · مستقل ان لاک
 - App Store · مفت
 
-[Aim990 ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6784974530?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[Aim990 ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6784974530)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

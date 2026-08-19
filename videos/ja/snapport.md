@@ -2,7 +2,7 @@
 title: "赤ちゃんや幼児の自宅で使える最高のパスポート写真アプリ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ja/snapport.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 video_url: "https://files.catbox.moe/liceen.mp4"
 duration: "PT16S"
 app_store_id: "6780575828"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [動画を見る](https://files.catbox.moe/liceen.mp4)
 
-[App StoreでSnapportを入手 →](https://apps.apple.com/jp/app/id6780575828?pt=118326163&ct=iag_video_ja&mt=8)
+[App StoreでSnapportを入手 →](https://apps.apple.com/jp/app/id6780575828)
 
 [アプリガイドを開く](https://alice51849.github.io/ios-app-guide/ja/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

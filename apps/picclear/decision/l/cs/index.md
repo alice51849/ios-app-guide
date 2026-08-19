@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na uvolnění místa na iPhonu mazáním duplicitních fotek"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/cs/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Pro rychlé uvolnění místa se zaměřte nejdříve na největší úspory: p�
 - Soukromé / v zařízení
 - App Store · Zdarma
 
-[Stáhněte PicClear v App Store →](https://apps.apple.com/cz/app/id6780223070?pt=118326163&ct=iag_data_cs&mt=8)
+[Stáhněte PicClear v App Store →](https://apps.apple.com/cz/app/id6780223070)
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

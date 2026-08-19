@@ -2,7 +2,7 @@
 title: "paras kattava aamu- ja iltarutiiinisovellus lapsille"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/fi/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ Hampaiden harjaus ja ilta usein epäonnistuvat samassa hetkessä joka ilta: laps
 - Ei mainoksia
 - App Store · 6,99 €
 
-[Hanki Lumi Mission Planet Pro App Storesta →](https://apps.apple.com/fi/app/id6779745474?pt=118326163&ct=iag_data_fi&mt=8)
+[Hanki Lumi Mission Planet Pro App Storesta →](https://apps.apple.com/fi/app/id6779745474)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

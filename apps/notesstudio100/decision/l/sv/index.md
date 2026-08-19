@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — Skrivbok, handskrift och PDF | iOS App"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/sv/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Privat / på enheten
 - App Store · Gratis
 
-[Hämta 100 Notes Studio: Pen & Paper i App Store](https://apps.apple.com/se/app/id6798813048?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta 100 Notes Studio: Pen & Paper i App Store](https://apps.apple.com/se/app/id6798813048)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/notesstudio100.html)
 

@@ -2,7 +2,7 @@
 title: "أفضل تطبيق Zhuyin كامل للأطفال ثنائيي اللغة"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/ar-SA/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - بدون إعلانات
 - App Store · SAR 39.99
 
-[احصل على Lumi Bopomofo Pro من App Store →](https://apps.apple.com/sa/app/id6775773117?pt=118326163&ct=iag_data_ar_sa&mt=8)
+[احصل على Lumi Bopomofo Pro من App Store →](https://apps.apple.com/sa/app/id6775773117)
 
 [اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-complete-zhuyin-app-for-bilingual-children.html)
 

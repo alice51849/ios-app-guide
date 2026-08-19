@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — Notatnik odręczny, PDF, nauka | iOS App"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/pl/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 
-[Pobierz 100 Notes Studio: Pen & Paper z App Store](https://apps.apple.com/pl/app/id6798813048?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz 100 Notes Studio: Pen & Paper z App Store](https://apps.apple.com/pl/app/id6798813048)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/notesstudio100.html)
 

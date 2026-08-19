@@ -2,7 +2,7 @@
 title: "best vocabulary app for busy commuters with apple watch"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/en-GB/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,7 +22,7 @@ Busy commuters need vocabulary practice that fits into spare minutes without req
 - Apple Watch
 - App Store · £8.99
 
-[Get Wordmate: Learn 44 Languages on the App Store →](https://apps.apple.com/gb/app/id6789917808?pt=118326163&ct=iag_data_en_gb&mt=8)
+[Get Wordmate: Learn 44 Languages on the App Store →](https://apps.apple.com/gb/app/id6789917808)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

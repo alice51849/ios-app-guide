@@ -2,7 +2,7 @@
 title: "iPhone కోసం ఉత్తమ ట్రిప్ ఇటికరరీ ప్లానర్ యాప్"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/te-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - గోప్యంగా / పరికరంలో
 - App Store · ₹ 599
 
-[App Storeలో TripBee Pro: ట్రిప్ ప్లానర్ పొందండి →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=iag_data_te_in&mt=8)
+[App Storeలో TripBee Pro: ట్రిప్ ప్లానర్ పొందండి →](https://apps.apple.com/in/app/id6787754435)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

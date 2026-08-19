@@ -2,7 +2,7 @@
 title: "OnePage PPT: এক স্লাইড — নোট থেকে নিখুঁত উপস্থাপনা | iOS App"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/bn-BD/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - উৎপাদনশীলতা
 - বিনামূল্যে শুরু · আজীবন আনলক
 
-[App Store থেকে OnePage PPT: এক স্লাইড ডাউনলোড করুন](https://apps.apple.com/app/id6798814385?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে OnePage PPT: এক স্লাইড ডাউনলোড করুন](https://apps.apple.com/app/id6798814385)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/onepageppt.html)
 

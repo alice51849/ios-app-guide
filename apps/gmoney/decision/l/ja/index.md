@@ -2,7 +2,7 @@
 title: "サブスクリプション不要の最高の旅行予算管理アプリiPhone向け"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/ja/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - アカウント不要
 - App Store · ¥800
 
-[App StoreでG+Moneyを入手 →](https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=iag_data_ja&mt=8)
+[App StoreでG+Moneyを入手 →](https://apps.apple.com/jp/app/id6755782939)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

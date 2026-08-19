@@ -2,7 +2,7 @@
 title: "2026년 경력 전환자를 위한 최고의 이력서 작성 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/cvdesk.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 video_url: "https://files.catbox.moe/fdknhv.mp4"
 duration: "PT16S"
 app_store_id: "6781337213"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [영상 보기](https://files.catbox.moe/fdknhv.mp4)
 
-[앱 스토어에서 CV Desk 받기 →](https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=iag_video_ko&mt=8)
+[앱 스토어에서 CV Desk 받기 →](https://apps.apple.com/kr/app/id6781337213)
 
 [앱 가이드 열기](https://alice51849.github.io/ios-app-guide/ko/answers/best-resume-builder-app-for-career-changers-2026.html)
 

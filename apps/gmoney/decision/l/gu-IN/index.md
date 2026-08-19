@@ -2,7 +2,7 @@
 title: "iPhone માટે શ્રેષ્ઠ પ્રવાસ બજેટ ટ્રેકર એપ કોઈ સબ્સ્ક્રિપ્શન વગર"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/gu-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - કોઈ ખાતું નથી
 - App Store · ₹ 499
 
-[App Store પર G+Money મેળવો →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=iag_data_gu_in&mt=8)
+[App Store પર G+Money મેળવો →](https://apps.apple.com/in/app/id6755782939)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

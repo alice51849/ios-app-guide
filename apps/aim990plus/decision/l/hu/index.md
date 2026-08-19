@@ -2,7 +2,7 @@
 title: "Aim990 Plus — Magabiztosság időnyomásban | iOS App"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/hu/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ Az angoltudás mellett arra is szükség van, hogy az idő szorításában is po
 - Fizetős letöltés
 - App Store · HUF2,490.00
 
-[Töltse le a(z) Aim990 Plus appot az App Store-ból](https://apps.apple.com/hu/app/id6792483140?pt=118326163&ct=iag_data_hu&mt=8)
+[Töltse le a(z) Aim990 Plus appot az App Store-ból](https://apps.apple.com/hu/app/id6792483140)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/aim990plus.html)
 

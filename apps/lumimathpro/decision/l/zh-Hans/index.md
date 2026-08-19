@@ -2,7 +2,7 @@
 title: "适合学前及低年级的最佳完整数学学习App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/zh-Hans/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 付费下载
 - 无广告
 
-[在App Store获取Lumi Math Pro →](https://apps.apple.com/app/id6776958488?pt=118326163&ct=iag_data_zh_hans&mt=8)
+[在App Store获取Lumi Math Pro →](https://apps.apple.com/app/id6776958488)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

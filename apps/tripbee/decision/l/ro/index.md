@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație de planificare itinerar pentru iPhone"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/ro/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -20,7 +20,7 @@ O aplicație bună de itinerar transformă o călătorie dezordonată într-un c
 - Privat / pe dispozitiv
 - App Store · 29,99 lei
 
-[Descarcă TripBee Pro: Planificator de călătorii din App Store →](https://apps.apple.com/ro/app/id6787754435?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă TripBee Pro: Planificator de călătorii din App Store →](https://apps.apple.com/ro/app/id6787754435)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

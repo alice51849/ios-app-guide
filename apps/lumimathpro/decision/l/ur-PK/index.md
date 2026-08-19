@@ -2,7 +2,7 @@
 title: "پری اسکول اور ابتدائی جماعتوں کے لیے بہترین مکمل میتھ لرننگ ایپ"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/ur-PK/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - کوئی اشتہار نہیں
 - App Store · Rs 2,500.00
 
-[Lumi Math Pro App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6776958488?pt=118326163&ct=iag_data_ur_pk&mt=8)
+[Lumi Math Pro App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6776958488)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

@@ -2,7 +2,7 @@
 title: "aplikasi penjejak haid terbaik tanpa akaun diperlukan iPhone"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/ms/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Dalam kategori di mana kepekaan data adalah perkara utama, penjejak haid yang be
 - Peribadi / pada peranti
 - App Store · Percuma
 
-[Dapatkan Cyca di App Store →](https://apps.apple.com/my/app/id6782251621?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan Cyca di App Store →](https://apps.apple.com/my/app/id6782251621)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-period-tracker-app-no-account-required-iphone.html)
 

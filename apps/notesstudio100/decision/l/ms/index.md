@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — Nota tulisan tangan & PDF | iOS App"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/ms/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Peribadi / pada peranti
 - App Store · Percuma
 
-[Dapatkan 100 Notes Studio: Pen & Paper di App Store](https://apps.apple.com/my/app/id6798813048?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan 100 Notes Studio: Pen & Paper di App Store](https://apps.apple.com/my/app/id6798813048)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/notesstudio100.html)
 

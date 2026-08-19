@@ -2,7 +2,7 @@
 title: "Mask My File — Kitakarás megosztás előtt | iOS App"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/hu/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ Oszd meg biztonságosan úgy, hogy a fontos szövegkörnyezet megmarad. A Mask M
 - Privát / eszközön tárolt
 - App Store · Ingyenes
 
-[Töltse le a(z) Mask My File appot az App Store-ból](https://apps.apple.com/hu/app/id6792850916?pt=118326163&ct=iag_data_hu&mt=8)
+[Töltse le a(z) Mask My File appot az App Store-ból](https://apps.apple.com/hu/app/id6792850916)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/maskmyfile.html)
 

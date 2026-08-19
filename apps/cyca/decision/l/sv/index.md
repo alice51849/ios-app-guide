@@ -2,7 +2,7 @@
 title: "bästa menscykel-appen utan konto för iPhone"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/sv/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ I en kategori där datas känslighet är hela historien, håller rätt menscykel
 - App Store · Gratis
 - ★ 2.0/5 · 1
 
-[Hämta Cyca på App Store →](https://apps.apple.com/se/app/id6782251621?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta Cyca på App Store →](https://apps.apple.com/se/app/id6782251621)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/answers/best-period-tracker-app-no-account-required-iphone.html)
 

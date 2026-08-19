@@ -2,7 +2,7 @@
 title: "ఇంట్లో బిడ్డల మరియు చిన్నపిల్లల కోసం ఉత్తమ పాస్‌పోర్ట్ ఫోటో యాప్"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/te-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - గోప్యంగా / పరికరంలో
 - App Store · ₹ 599
 
-[App Storeలో Snapport పొందండి →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=iag_data_te_in&mt=8)
+[App Storeలో Snapport పొందండి →](https://apps.apple.com/in/app/id6780575828)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

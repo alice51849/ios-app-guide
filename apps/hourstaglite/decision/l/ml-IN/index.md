@@ -2,7 +2,7 @@
 title: "HoursTag Lite — വസ്തുക്കളുടെ യഥാർത്ഥ വില കാണുക | iOS App"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ml-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,7 +22,7 @@ HoursTag Lite - വസ്തുക്കളുടെ യഥാർത്ഥ വ�
 - Apple Watch
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് HoursTag Lite നേടൂ](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് HoursTag Lite നേടൂ](https://apps.apple.com/in/app/id6794039979)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/hourstaglite.html)
 

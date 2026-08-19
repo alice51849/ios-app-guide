@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — കുറിപ്പെഴുത്തും PDF പഠനവും | iOS App"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/ml-IN/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് 100 Notes Studio: Pen & Paper നേടൂ](https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_ml_in&mt=8)
+[App Store-ൽ നിന്ന് 100 Notes Studio: Pen & Paper നേടൂ](https://apps.apple.com/in/app/id6798813048)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/notesstudio100.html)
 

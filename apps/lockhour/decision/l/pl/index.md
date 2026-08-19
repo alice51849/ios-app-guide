@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do blokowania mediów społecznościowych podczas nauki na iPhone"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/pl/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ Podczas egzaminów siła woli nie wystarczy — potrzebna jest twarda blokada na
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 
-[Pobierz LockHour Pro z App Store →](https://apps.apple.com/pl/app/id6780107485?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz LockHour Pro z App Store →](https://apps.apple.com/pl/app/id6780107485)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

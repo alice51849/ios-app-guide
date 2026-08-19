@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר למעקב מחזור ללא צורך בחשבון לאייפון"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/he/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - פרטי / במכשיר
 - App Store · בחינם
 
-[קבל את Cyca ב-App Store →](https://apps.apple.com/il/app/id6782251621?pt=118326163&ct=iag_data_he&mt=8)
+[קבל את Cyca ב-App Store →](https://apps.apple.com/il/app/id6782251621)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/answers/best-period-tracker-app-no-account-required-iphone.html)
 

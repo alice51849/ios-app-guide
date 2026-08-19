@@ -2,7 +2,7 @@
 title: "η καλύτερη εφαρμογή bopomofo για παιδιά να μάθουν zhuyin στο iPhone"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/el/index.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Χωρίς διαφημίσεις
 - App Store · Δωρεάν
 
-[Κατεβάστε το Lumi Bopomofo από το App Store →](https://apps.apple.com/gr/app/id6773017109?pt=118326163&ct=iag_data_el&mt=8)
+[Κατεβάστε το Lumi Bopomofo από το App Store →](https://apps.apple.com/gr/app/id6773017109)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

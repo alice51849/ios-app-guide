@@ -2,7 +2,7 @@
 title: "아이폰에서 논리력 향상을 위한 어린이용 수학 게임 앱 중 최고"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/lumimath.html"
-modified: "2026-08-18"
+modified: "2026-08-19"
 video_url: "https://files.catbox.moe/zmjvl6.mp4"
 duration: "PT16S"
 app_store_id: "6778269699"
@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [영상 보기](https://files.catbox.moe/zmjvl6.mp4)
 
-[App Store에서 Lumi Math Planet 받기 →](https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=iag_video_ko&mt=8)
+[App Store에서 Lumi Math Planet 받기 →](https://apps.apple.com/kr/app/id6778269699)
 
 [앱 가이드 열기](https://alice51849.github.io/ios-app-guide/ko/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

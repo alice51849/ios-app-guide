@@ -1,5 +1,5 @@
 ---
-title: "best free travel expense tracker with currency conversion for iphone"
+title: "penjejak perbelanjaan perjalanan percuma terbaik dengan penukaran mata wang untuk iphone"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ms/index.html"
 modified: "2026-08-19"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# best free travel expense tracker with currency conversion for iphone
+# penjejak perbelanjaan perjalanan percuma terbaik dengan penukaran mata wang untuk iphone
 
-A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.
+A useful free perjalanan-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.
 
 - Wang & perjalanan
 - Percuma untuk bermula · buka kunci kekal
@@ -19,11 +19,11 @@ A useful free travel-expense test should include the complete local-to-home-curr
 - Tiada akaun
 - Tiada penjejakan
 - Peribadi / pada peranti
-- Widget
+- Widjet
 - Apple Watch
 - App Store · Percuma
 
-[Get G+Money Lite on the App Store →](https://apps.apple.com/my/app/id6793436548?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan G+Money Lite di App Store →](https://apps.apple.com/my/app/id6793436548?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html)
 

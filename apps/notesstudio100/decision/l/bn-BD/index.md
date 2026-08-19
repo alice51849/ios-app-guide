@@ -18,8 +18,9 @@ publisher: "Lumi Studio"
 - অফলাইন
 - কোনও অ্যাকাউন্ট নেই
 - গোপনীয় / ডিভাইসে
+- App Store · বিনামূল্যে
 
-[App Store থেকে 100 Notes Studio: Pen & Paper ডাউনলোড করুন](https://apps.apple.com/app/id6798813048?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে 100 Notes Studio: Pen & Paper ডাউনলোড করুন](https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/notesstudio100.html)
 

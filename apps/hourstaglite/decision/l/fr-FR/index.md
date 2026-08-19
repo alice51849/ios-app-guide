@@ -22,7 +22,7 @@ HoursTag Lite — HoursTag Lite - See the real price of things Every purchase co
 - Apple Watch
 - App Store · Gratuit
 
-[Get HoursTag Lite on the App Store →](https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=iag_data_fr_fr&mt=8)
+[Télécharger HoursTag Lite sur l’App Store →](https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-app-to-convert-prices-into-work-hours-before-buying.html)
 

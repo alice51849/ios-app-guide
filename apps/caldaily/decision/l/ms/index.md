@@ -15,7 +15,7 @@ Kalkulator yang anda akan terus guna, kerana ia mengingati apa yang ada di sebal
 
 - Lagi
 - Percuma untuk bermula · buka kunci kekal
-- Widget
+- Widjet
 - App Store · Percuma
 
 [Dapatkan CalDaily: kalkulator & tema di App Store](https://apps.apple.com/my/app/id6794178671?pt=118326163&ct=iag_data_ms&mt=8)

@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - শিশু ও শেখা
 - বিনামূল্যে শুরু · আজীবন আনলক
 - কোনও বিজ্ঞাপন নেই
+- App Store · বিনামূল্যে
 
-[App Store থেকে Lumi Letters পান →](https://apps.apple.com/app/id6778748533?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে Lumi Letters পান →](https://apps.apple.com/in/app/id6778748533?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - আরও
 - বিনামূল্যে শুরু · আজীবন আনলক
 - উইজেট
+- App Store · বিনামূল্যে
 
-[App Store থেকে CalDaily ক্যালকুলেটর ও থিম ডাউনলোড করুন](https://apps.apple.com/app/id6794178671?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে CalDaily ক্যালকুলেটর ও থিম ডাউনলোড করুন](https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/caldaily.html)
 

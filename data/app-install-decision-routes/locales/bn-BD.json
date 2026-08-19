@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "bn-BD",
   "dateModified": "2026-08-19",
-  "content_digest": "69864bfa95bb833971b82a132505fe2859561b1032b4187b1f8f41befe3f018e",
-  "generation_digest": "c573610b0f9bc7dc842a25887b67c0b73295c57c2d405c8a8cd94cf5f5716d0b",
+  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
+  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -42,7 +42,8 @@
       "badge_labels": [
         "ছবি ও ইউটিলিটি",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "গোপনীয় / ডিভাইসে"
+        "গোপনীয় / ডিভাইসে",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/maskmyfile.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/bn-BD/index.html",
@@ -50,9 +51,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6792850916",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
-      "app_store_url": "https://apps.apple.com/app/id6792850916?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে Mask My File ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "best on-device file redaction app for freelancers sharing client documents",
@@ -82,7 +87,8 @@
       "device_labels": [],
       "badge_labels": [
         "ছবি ও ইউটিলিটি",
-        "পেইড ডাউনলোড"
+        "পেইড ডাউনলোড",
+        "App Store · ₹ 599"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/wifiaid.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/bn-BD/index.html",
@@ -90,9 +96,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6790467886",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
-      "app_store_url": "https://apps.apple.com/app/id6790467886?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে WiFi Aid ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "599",
+        "currency": "INR",
+        "formatted_price": "₹ 599"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "best wifi troubleshooting app for remote workers with connected but no internet",
@@ -122,7 +132,8 @@
       "device_labels": [],
       "badge_labels": [
         "জীবনধারা",
-        "বিনামূল্যে শুরু · আজীবন আনলক"
+        "বিনামূল্যে শুরু · আজীবন আনলক",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/mochidonestamp.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/bn-BD/index.html",
@@ -130,9 +141,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6790800323",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
-      "app_store_url": "https://apps.apple.com/app/id6790800323?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে Mochi DoneStamp: শেষবার ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "best last time tracker app for household maintenance without a subscription",
@@ -173,7 +188,8 @@
         "বিনামূল্যে শুরু · আজীবন আনলক",
         "অফলাইন",
         "কোনও অ্যাকাউন্ট নেই",
-        "গোপনীয় / ডিভাইসে"
+        "গোপনীয় / ডিভাইসে",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/notesstudio100.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/bn-BD/index.html",
@@ -181,9 +197,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6798813048",
       "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
-      "app_store_url": "https://apps.apple.com/app/id6798813048?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে 100 Notes Studio: Pen & Paper ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "best offline handwriting notes app for ipad with pdf markup no subscription",
@@ -218,7 +238,8 @@
       "badge_labels": [
         "উৎপাদনশীলতা",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "গোপনীয় / ডিভাইসে"
+        "গোপনীয় / ডিভাইসে",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/aibriefpack.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/bn-BD/index.html",
@@ -226,9 +247,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
-      "app_store_url": "https://apps.apple.com/app/id6791658210?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে AI Brief ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "best private app to organize screenshots and documents into context before using AI",
@@ -258,7 +283,8 @@
       "device_labels": [],
       "badge_labels": [
         "শিক্ষা",
-        "বিনামূল্যে শুরু · আজীবন আনলক"
+        "বিনামূল্যে শুরু · আজীবন আনলক",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/bn-BD/index.html",
@@ -266,9 +292,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6784974530",
       "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
-      "app_store_url": "https://apps.apple.com/app/id6784974530?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে Aim990 পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best toeic prep app offline study plan for iphone",
@@ -298,7 +328,8 @@
       "device_labels": [],
       "badge_labels": [
         "শিশু ও শেখা",
-        "পেইড ডাউনলোড"
+        "পেইড ডাউনলোড",
+        "App Store · ₹ 599"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/aim990plus.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/bn-BD/index.html",
@@ -306,9 +337,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6792483140",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
-      "app_store_url": "https://apps.apple.com/app/id6792483140?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে Aim990 Plus ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "599",
+        "currency": "INR",
+        "formatted_price": "₹ 599"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "best offline English listening and reading exam trainer for iPhone",
@@ -343,7 +378,8 @@
       "badge_labels": [
         "আরও",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "উইজেট"
+        "উইজেট",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/caldaily.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/bn-BD/index.html",
@@ -351,9 +387,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6794178671",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
-      "app_store_url": "https://apps.apple.com/app/id6794178671?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে CalDaily ক্যালকুলেটর ও থিম ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "best calculator app iphone that saves history you can name and search",
@@ -383,7 +423,8 @@
       "device_labels": [],
       "badge_labels": [
         "উৎপাদনশীলতা",
-        "বিনামূল্যে শুরু · আজীবন আনলক"
+        "বিনামূল্যে শুরু · আজীবন আনলক",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-resume-builder-app-for-career-changers-2026.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/bn-BD/index.html",
@@ -391,9 +432,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6781337213",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
-      "app_store_url": "https://apps.apple.com/app/id6781337213?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে CV Desk পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best resume builder app for career changers 2026",
@@ -428,7 +473,8 @@
       "badge_labels": [
         "স্বাস্থ্য",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "গোপনীয় / ডিভাইসে"
+        "গোপনীয় / ডিভাইসে",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-period-tracker-app-no-account-required-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/bn-BD/index.html",
@@ -436,9 +482,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6782251621",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
-      "app_store_url": "https://apps.apple.com/app/id6782251621?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6782251621?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে Cyca পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best period tracker app no account required iphone",
@@ -473,7 +523,8 @@
       "badge_labels": [
         "শিশু ও শেখা",
         "পেইড ডাউনলোড",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · ₹ 1,199"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/bn-BD/index.html",
@@ -481,9 +532,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6790418321",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
-      "app_store_url": "https://apps.apple.com/app/id6790418321?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "অ্যাপ স্টোর থেকে ডেইলিমেট পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "1199",
+        "currency": "INR",
+        "formatted_price": "₹ 1,199"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best practical language phrase app for travelers with apple watch",
@@ -513,7 +568,8 @@
       "device_labels": [],
       "badge_labels": [
         "শিশু ও শেখা",
-        "বিনামূল্যে শুরু · আজীবন আনলক"
+        "বিনামূল্যে শুরু · আজীবন আনলক",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/dailymatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/bn-BD/index.html",
@@ -521,9 +577,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6794725568",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
-      "app_store_url": "https://apps.apple.com/app/id6794725568?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে DailyMate Lite: রোজ কথা বলুন ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "best free travel phrasebook app with real dialogues for iphone",
@@ -561,7 +621,8 @@
         "অর্থ ও ভ্রমণ",
         "পেইড ডাউনলোড",
         "অফলাইন",
-        "কোনও অ্যাকাউন্ট নেই"
+        "কোনও অ্যাকাউন্ট নেই",
+        "App Store · ₹ 499"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/bn-BD/index.html",
@@ -569,9 +630,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6755782939",
       "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
-      "app_store_url": "https://apps.apple.com/app/id6755782939?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে G+Money পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "499",
+        "currency": "INR",
+        "formatted_price": "₹ 499"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best travel budget tracker app no subscription iphone",
@@ -623,7 +688,8 @@
         "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে",
         "উইজেট",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/gmoneylite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/bn-BD/index.html",
@@ -631,9 +697,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6793436548",
       "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
-      "app_store_url": "https://apps.apple.com/app/id6793436548?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে G+Money Lite ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "best free travel expense tracker with currency conversion for iphone",
@@ -682,7 +752,8 @@
         "কোনও ট্র্যাকিং নেই",
         "গোপনীয় / ডিভাইসে",
         "উইজেট",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/hourstaglite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/bn-BD/index.html",
@@ -690,9 +761,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "app_store_url": "https://apps.apple.com/app/id6794039979?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে HoursTag Lite ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "best app to convert prices into work hours before buying",
@@ -730,7 +805,8 @@
         "অর্থ ও ভ্রমণ",
         "পেইড ডাউনলোড",
         "কোনও ট্র্যাকিং নেই",
-        "গোপনীয় / ডিভাইসে"
+        "গোপনীয় / ডিভাইসে",
+        "App Store · ₹ 499"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/hourstag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/bn-BD/index.html",
@@ -738,9 +814,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6754218117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "app_store_url": "https://apps.apple.com/app/id6754218117?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে HoursTag: সময়ে কেনাকাটা ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "499",
+        "currency": "INR",
+        "formatted_price": "₹ 499"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "best app to track where my money goes and save more",
@@ -778,7 +858,8 @@
         "উৎপাদনশীলতা",
         "বিনামূল্যে শুরু · আজীবন আনলক",
         "কোনও বিজ্ঞাপন নেই",
-        "গোপনীয় / ডিভাইসে"
+        "গোপনীয় / ডিভাইসে",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-app-to-block-social-media-while-studying-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/bn-BD/index.html",
@@ -786,9 +867,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6780107485",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
-      "app_store_url": "https://apps.apple.com/app/id6780107485?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6780107485?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে LockHour Pro পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best app to block social media while studying iphone",
@@ -823,7 +908,8 @@
       "badge_labels": [
         "শিশু ও শেখা",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও বিজ্ঞাপন নেই",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/bn-BD/index.html",
@@ -831,9 +917,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6773017109",
       "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
-      "app_store_url": "https://apps.apple.com/app/id6773017109?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6773017109?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে Lumi Bopomofo পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best bopomofo app for kids to learn zhuyin on iphone",
@@ -868,7 +958,8 @@
       "badge_labels": [
         "শিশু ও শেখা",
         "পেইড ডাউনলোড",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও বিজ্ঞাপন নেই",
+        "App Store · ₹ 999"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-complete-zhuyin-app-for-bilingual-children.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/bn-BD/index.html",
@@ -876,9 +967,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6775773117",
       "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
-      "app_store_url": "https://apps.apple.com/app/id6775773117?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store-এ Lumi Bopomofo Pro পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "999",
+        "currency": "INR",
+        "formatted_price": "₹ 999"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best complete zhuyin app for bilingual children",
@@ -913,7 +1008,8 @@
       "badge_labels": [
         "শিশু ও শেখা",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও বিজ্ঞাপন নেই",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/bn-BD/index.html",
@@ -921,9 +1017,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6778748533",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
-      "app_store_url": "https://apps.apple.com/app/id6778748533?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6778748533?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে Lumi Letters পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best educational game app for kids no ads iphone",
@@ -958,7 +1058,8 @@
       "badge_labels": [
         "শিশু ও শেখা",
         "পেইড ডাউনলোড",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও বিজ্ঞাপন নেই",
+        "App Store · ₹ 999"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/bn-BD/index.html",
@@ -966,9 +1067,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6778491147",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
-      "app_store_url": "https://apps.apple.com/app/id6778491147?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store-এ Lumi Letters Pro পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "999",
+        "currency": "INR",
+        "formatted_price": "₹ 999"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best complete phonics app for homeschool kindergarten prep",
@@ -1003,7 +1108,8 @@
       "badge_labels": [
         "শিশু ও শেখা",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও বিজ্ঞাপন নেই",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/bn-BD/index.html",
@@ -1011,9 +1117,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6778269699",
       "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
-      "app_store_url": "https://apps.apple.com/app/id6778269699?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6778269699?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে Lumi Math Planet পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best math game app for kids to build logic skills iphone",
@@ -1048,7 +1158,8 @@
       "badge_labels": [
         "শিশু ও শেখা",
         "পেইড ডাউনলোড",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও বিজ্ঞাপন নেই",
+        "App Store · ₹ 999"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/bn-BD/index.html",
@@ -1056,9 +1167,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6776958488",
       "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
-      "app_store_url": "https://apps.apple.com/app/id6776958488?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store-এ Lumi Math Pro পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "999",
+        "currency": "INR",
+        "formatted_price": "₹ 999"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best complete math learning app for preschool and early grades",
@@ -1093,7 +1208,8 @@
       "badge_labels": [
         "শিশু ও শেখা",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও বিজ্ঞাপন নেই",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/bn-BD/index.html",
@@ -1101,9 +1217,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6779750237",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
-      "app_store_url": "https://apps.apple.com/app/id6779750237?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "Lumi Mission Planet App Store-এ পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best bedtime routine app for preschoolers with no ads",
@@ -1138,7 +1258,8 @@
       "badge_labels": [
         "শিশু ও শেখা",
         "পেইড ডাউনলোড",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও বিজ্ঞাপন নেই",
+        "App Store · ₹ 599"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/bn-BD/index.html",
@@ -1146,9 +1267,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6779745474",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
-      "app_store_url": "https://apps.apple.com/app/id6779745474?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store-এ Lumi Mission Planet Pro পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "599",
+        "currency": "INR",
+        "formatted_price": "₹ 599"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best complete morning and bedtime routine app for kids",
@@ -1183,7 +1308,8 @@
       "badge_labels": [
         "শিশু ও শেখা",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও বিজ্ঞাপন নেই",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/bn-BD/index.html",
@@ -1191,9 +1317,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6787193643",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "app_store_url": "https://apps.apple.com/app/id6787193643?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store-এ Lumi Trip Planet পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best travel activity app for kids on family trips",
@@ -1231,7 +1361,8 @@
         "শিশু ও শেখা",
         "বিনামূল্যে শুরু · আজীবন আনলক",
         "কোনও বিজ্ঞাপন নেই",
-        "কোনও ট্র্যাকিং নেই"
+        "কোনও ট্র্যাকিং নেই",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/bn-BD/index.html",
@@ -1239,9 +1370,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6779552704",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
-      "app_store_url": "https://apps.apple.com/app/id6779552704?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store-এ Lumi Weather পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best weather app to help parents plan outdoor time with kids",
@@ -1276,7 +1411,8 @@
       "badge_labels": [
         "উৎপাদনশীলতা",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও বিজ্ঞাপন নেই",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/bn-BD/index.html",
@@ -1284,9 +1420,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6785004775",
       "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
-      "app_store_url": "https://apps.apple.com/app/id6785004775?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে Mochi পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best simple to do list app iphone no subscription",
@@ -1316,7 +1456,8 @@
       "device_labels": [],
       "badge_labels": [
         "উৎপাদনশীলতা",
-        "বিনামূল্যে শুরু · আজীবন আনলক"
+        "বিনামূল্যে শুরু · আজীবন আনলক",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/onepageppt.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/bn-BD/index.html",
@@ -1324,9 +1465,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6798814385",
       "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
-      "app_store_url": "https://apps.apple.com/app/id6798814385?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে OnePage PPT: এক স্লাইড ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "app that turns meeting notes into one presentation slide",
@@ -1356,7 +1501,8 @@
       "device_labels": [],
       "badge_labels": [
         "ছবি ও ইউটিলিটি",
-        "বিনামূল্যে শুরু · আজীবন আনলক"
+        "বিনামূল্যে শুরু · আজীবন আনলক",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/bn-BD/index.html",
@@ -1364,9 +1510,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6781808054",
       "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
-      "app_store_url": "https://apps.apple.com/app/id6781808054?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store-এ PhotoCream পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best pay once film photo editor for travel creators on iphone",
@@ -1401,7 +1551,8 @@
       "badge_labels": [
         "ছবি ও ইউটিলিটি",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "গোপনীয় / ডিভাইসে"
+        "গোপনীয় / ডিভাইসে",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/bn-BD/index.html",
@@ -1409,9 +1560,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6780223070",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
-      "app_store_url": "https://apps.apple.com/app/id6780223070?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে PicClear পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best app to free up iphone storage deleting duplicate photos",
@@ -1446,7 +1601,8 @@
       "badge_labels": [
         "উৎপাদনশীলতা",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "গোপনীয় / ডিভাইসে"
+        "গোপনীয় / ডিভাইসে",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/bn-BD/index.html",
@@ -1454,9 +1610,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6779977651",
       "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
-      "app_store_url": "https://apps.apple.com/app/id6779977651?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6779977651?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে ScanTo Pro পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best offline document scanner app no cloud for nurses",
@@ -1494,7 +1654,8 @@
         "ঘুম ও মনোযোগ",
         "বিনামূল্যে শুরু · আজীবন আনলক",
         "অফলাইন",
-        "কোনও বিজ্ঞাপন নেই"
+        "কোনও বিজ্ঞাপন নেই",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/bn-BD/index.html",
@@ -1502,9 +1663,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6788236641",
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
-      "app_store_url": "https://apps.apple.com/app/id6788236641?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store-এ Sereno পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best white noise app for falling asleep no subscription",
@@ -1539,7 +1704,8 @@
       "badge_labels": [
         "ছবি ও ইউটিলিটি",
         "পেইড ডাউনলোড",
-        "গোপনীয় / ডিভাইসে"
+        "গোপনীয় / ডিভাইসে",
+        "App Store · ₹ 599"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/bn-BD/index.html",
@@ -1547,9 +1713,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6780575828",
       "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
-      "app_store_url": "https://apps.apple.com/app/id6780575828?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store-এ Snapport পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "599",
+        "currency": "INR",
+        "formatted_price": "₹ 599"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best passport photo app for babies and toddlers at home",
@@ -1584,7 +1754,8 @@
       "badge_labels": [
         "ছবি ও ইউটিলিটি",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "অফলাইন"
+        "অফলাইন",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/snapportlite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/bn-BD/index.html",
@@ -1592,9 +1763,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6792856304",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
-      "app_store_url": "https://apps.apple.com/app/id6792856304?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে Snapport Lite ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "best free passport photo app for iphone that works offline",
@@ -1629,7 +1804,8 @@
       "badge_labels": [
         "উৎপাদনশীলতা",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "গোপনীয় / ডিভাইসে"
+        "গোপনীয় / ডিভাইসে",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/bn-BD/index.html",
@@ -1637,9 +1813,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6782139553",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
-      "app_store_url": "https://apps.apple.com/app/id6782139553?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store-এ Sono Note পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best voice notes app that summarizes meetings on iphone",
@@ -1669,7 +1849,8 @@
       "device_labels": [],
       "badge_labels": [
         "ভ্রমণ",
-        "বিনামূল্যে শুরু · আজীবন আনলক"
+        "বিনামূল্যে শুরু · আজীবন আনলক",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/bn-BD/index.html",
@@ -1677,9 +1858,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6791299610",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
-      "app_store_url": "https://apps.apple.com/app/id6791299610?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "অ্যাপ স্টোর থেকে ট্রিপবি লাইট পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best simple trip planner app for one upcoming trip iphone",
@@ -1720,7 +1905,8 @@
         "পেইড ডাউনলোড",
         "অফলাইন",
         "কোনও অ্যাকাউন্ট নেই",
-        "গোপনীয় / ডিভাইসে"
+        "গোপনীয় / ডিভাইসে",
+        "App Store · ₹ 599"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-trip-itinerary-planner-app-for-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/bn-BD/index.html",
@@ -1728,9 +1914,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6787754435",
       "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
-      "app_store_url": "https://apps.apple.com/app/id6787754435?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store-এ TripBee Pro: ট্রিপ প্ল্যানার পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "599",
+        "currency": "INR",
+        "formatted_price": "₹ 599"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best trip itinerary planner app for iphone",
@@ -1765,7 +1955,8 @@
       "badge_labels": [
         "ছবি ও ইউটিলিটি",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "গোপনীয় / ডিভাইসে"
+        "গোপনীয় / ডিভাইসে",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/bn-BD/index.html",
@@ -1773,9 +1964,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6782275018",
       "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
-      "app_store_url": "https://apps.apple.com/app/id6782275018?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6782275018?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store-এ Unblurry পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best app to fix blurry photos of kids on iphone",
@@ -1810,7 +2005,8 @@
       "badge_labels": [
         "আরও",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "কোনও অ্যাকাউন্ট নেই"
+        "কোনও অ্যাকাউন্ট নেই",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/wifiaidlite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/bn-BD/index.html",
@@ -1818,9 +2014,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6793414462",
       "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
-      "app_store_url": "https://apps.apple.com/app/id6793414462?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে WiFi Aid Lite ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "how to tell if the wifi or the website is down free app",
@@ -1855,7 +2055,8 @@
       "badge_labels": [
         "শিশু ও শেখা",
         "বিনামূল্যে শুরু · আজীবন আনলক",
-        "অফলাইন"
+        "অফলাইন",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/wordmatelite.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/bn-BD/index.html",
@@ -1863,9 +2064,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6797601720",
       "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
-      "app_store_url": "https://apps.apple.com/app/id6797601720?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে Wordmate Lite: ইংরেজি শেখা ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "best free vocabulary app for adults one minute a day no flashcard decks",
@@ -1914,7 +2119,8 @@
         "কোনও বিজ্ঞাপন নেই",
         "কোনও ট্র্যাকিং নেই",
         "উইজেট",
-        "Apple Watch"
+        "Apple Watch",
+        "App Store · ₹ 999"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/bn-BD/index.html",
@@ -1922,9 +2128,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6789917808",
       "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
-      "app_store_url": "https://apps.apple.com/app/id6789917808?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store-এ Wordmate: Learn 44 Languages পান →",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "999",
+        "currency": "INR",
+        "formatted_price": "₹ 999"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best vocabulary app for busy commuters with apple watch",

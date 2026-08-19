@@ -18,11 +18,11 @@ HoursTag Lite — HoursTag Lite - See the real price of things Every purchase co
 - Tiada akaun
 - Tiada penjejakan
 - Peribadi / pada peranti
-- Widget
+- Widjet
 - Apple Watch
 - App Store · Percuma
 
-[Get HoursTag Lite on the App Store →](https://apps.apple.com/my/app/id6794039979?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan HoursTag Lite di App Store →](https://apps.apple.com/my/app/id6794039979?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-app-to-convert-prices-into-work-hours-before-buying.html)
 

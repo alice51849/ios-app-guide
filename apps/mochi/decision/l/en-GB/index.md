@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 If most to-do apps feel bloated, the right one is a clean checklist with reminders, repeat rules and a Watch complication — and deliberately no project-management machinery — Mochi is built for this.
 
 - Productivity
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - No adverts
 - App Store · Free
 

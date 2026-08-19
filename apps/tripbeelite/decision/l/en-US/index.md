@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 If you are planning one upcoming journey, a calm timeline for that trip is more useful than a crowded archive of every trip you might take someday — TripBee Lite is built for this.
 
 - Travel
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - App Store · Free
 
 [Get TripBee Lite on the App Store →](https://apps.apple.com/us/app/id6791299610?pt=118326163&ct=iag_data_en_us&mt=8)

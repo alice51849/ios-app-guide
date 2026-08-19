@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Better context. Better answers. Transform screenshots, files, notes and documents into a single clear AI brief. BRING THE COMPLETE CONTEXT • Add screenshots, PDFs, files, copied text, notes, or links. You choose what stays in the final brief. • OCR, PDF reading, duplicate checks, fact extraction and privacy detection use Apple frameworks locally. • Choose one or more sources above. Processing begins only when you continue. VERIFY FACTS BEFORE AI SEES THEM • Every fact retains its source and confidence. Correct anything requiring context. • Find facts, conflicts, and open questions • Check every fact, source, and confidence before AI sees it. PROTECT PRIVACY • Detected details are never removed automatically. Keep, replace, or remove each item before export. • Adjust each detection: keep, replace, or remove. AI Brief never promises anonymity. • Replacements and removals apply at export. CLEAN CONTEXT FOR ANY AI ASSISTANT • Structured headings and source-ready formatting • Build context once. Reuse it anytime. • Copy AI Brief • Version History • Purpose-built templates YOUR CONTEXT STAYS PRIVATE • AI Brief does not include third-party ads, tracking, analytics, or content telemetry. • Review the brief before sending it to any AI service.
 
 - Productivity
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - Private / on-device
 - App Store · Free
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 For sleep, a subscription that nags you every month is the opposite of restful — Sereno is built for this.
 
 - Sleep & focus
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - Offline
 - No ads
 - App Store · Free

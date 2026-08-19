@@ -17,8 +17,8 @@ When Wi-Fi says connected but work still cannot get online, the useful first ste
 - Ücretli indirme
 - App Store · ₺299,99
 
-[Get WiFi Aid on the App Store →](https://apps.apple.com/tr/app/id6790467886?pt=118326163&ct=iag_data_tr&mt=8)
+[WiFi Aid uygulamasını App Store'dan edinin →](https://apps.apple.com/tr/app/id6790467886?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html)
 
-> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.
+> Uygulamanın geliştiricisi Lumi Studio tarafından hazırlanan rehber. Uygulama adları ilgili sahiplerinin ticari markalarıdır ve yalnızca tanımlama amacıyla kullanılır. Belgeler, sağlık, okul ve verimlilikle ilgili kararlarda, geçerli olduğu yerlerde resmi gereklilikleri doğrulayın.

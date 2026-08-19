@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - উৎপাদনশীলতা
 - বিনামূল্যে শুরু · আজীবন আনলক
 - কোনও বিজ্ঞাপন নেই
+- App Store · বিনামূল্যে
 
-[App Store থেকে Mochi পান →](https://apps.apple.com/app/id6785004775?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে Mochi পান →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

@@ -17,7 +17,7 @@ Aim990 Plus — Build calm, accurate decisions under time with 630 original ques
 - Download pago
 - App Store · R$ 39,90
 
-[Get Aim990 Plus on the App Store →](https://apps.apple.com/br/app/id6792483140?pt=118326163&ct=iag_data_pt_br&mt=8)
+[Baixar o Aim990 Plus na App Store →](https://apps.apple.com/br/app/id6792483140?pt=118326163&ct=iag_data_pt_br&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html)
 

@@ -18,8 +18,8 @@ Before a client document leaves your phone, the safest workflow is to hide only 
 - Gizli / cihazda
 - App Store · Ücretsiz
 
-[Get Mask My File on the App Store →](https://apps.apple.com/tr/app/id6792850916?pt=118326163&ct=iag_data_tr&mt=8)
+[Mask My File uygulamasını App Store'dan edinin →](https://apps.apple.com/tr/app/id6792850916?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html)
 
-> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.
+> Uygulamanın geliştiricisi Lumi Studio tarafından hazırlanan rehber. Uygulama adları ilgili sahiplerinin ticari markalarıdır ve yalnızca tanımlama amacıyla kullanılır. Belgeler, sağlık, okul ve verimlilikle ilgili kararlarda, geçerli olduğu yerlerde resmi gereklilikleri doğrulayın.

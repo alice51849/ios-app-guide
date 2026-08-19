@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - শিশু ও শেখা
 - পেইড ডাউনলোড
 - কোনও বিজ্ঞাপন নেই
+- App Store · ₹ 999
 
-[App Store-এ Lumi Letters Pro পান →](https://apps.apple.com/app/id6778491147?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store-এ Lumi Letters Pro পান →](https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

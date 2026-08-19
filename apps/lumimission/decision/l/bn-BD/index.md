@@ -16,8 +16,9 @@ publisher: "Lumi Studio"
 - শিশু ও শেখা
 - বিনামূল্যে শুরু · আজীবন আনলক
 - কোনও বিজ্ঞাপন নেই
+- App Store · বিনামূল্যে
 
-[Lumi Mission Planet App Store-এ পান →](https://apps.apple.com/app/id6779750237?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[Lumi Mission Planet App Store-এ পান →](https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

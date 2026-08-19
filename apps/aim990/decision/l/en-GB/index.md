@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Part 5 looks short, but those incomplete-sentence questions can drain time if grammar and vocabulary are not automatic.
 
 - Education
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - App Store · Free
 
 [Get Aim990 on the App Store →](https://apps.apple.com/gb/app/id6784974530?pt=118326163&ct=iag_data_en_gb&mt=8)

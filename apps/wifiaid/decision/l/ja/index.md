@@ -17,7 +17,7 @@ When Wi-Fi says connected but work still cannot get online, the useful first ste
 - 有料ダウンロード
 - App Store · ¥1,000
 
-[Get WiFi Aid on the App Store →](https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=iag_data_ja&mt=8)
+[App Store で WiFi Aid を入手 →](https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html)
 

@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ko",
   "dateModified": "2026-08-19",
-  "content_digest": "69864bfa95bb833971b82a132505fe2859561b1032b4187b1f8f41befe3f018e",
-  "generation_digest": "c573610b0f9bc7dc842a25887b67c0b73295c57c2d405c8a8cd94cf5f5716d0b",
+  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
+  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -29,7 +29,7 @@
       "category": "photo-utility",
       "category_label": "사진 & 유틸리티",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -41,7 +41,7 @@
       "device_labels": [],
       "badge_labels": [
         "사진 & 유틸리티",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "프라이빗 / 기기 내",
         "App Store · 무료"
       ],
@@ -52,7 +52,7 @@
       "app_store_id": "6792850916",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
       "app_store_url": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=iag_data_ko&mt=8",
-      "app_store_cta_label": "Get Mask My File on the App Store →",
+      "app_store_cta_label": "App Store에서 Mask My File 받기 →",
       "storefront_facts": {
         "price": "0",
         "currency": "KRW",
@@ -97,7 +97,7 @@
       "app_store_id": "6790467886",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
       "app_store_url": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=iag_data_ko&mt=8",
-      "app_store_cta_label": "Get WiFi Aid on the App Store →",
+      "app_store_cta_label": "App Store에서 WiFi Aid 받기 →",
       "storefront_facts": {
         "price": "9900",
         "currency": "KRW",
@@ -120,11 +120,11 @@
       "priority_rank": 3,
       "priority_group": "launch_boost",
       "publisher_query": "best last time tracker app for household maintenance without a subscription",
-      "decision_context": "For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment — Mochi DoneStamp is built for this.",
+      "decision_context": "딱딱한 캘린더에 넣기 어려운 집안일과 관리에는, 실제로 언제 끝냈는지를 기억하고 그 시점부터 다음까지의 간격을 재 주는 기록 앱이 잘 맞습니다 — Mochi DoneStamp가 바로 그렇게 만들어졌습니다.",
       "category": "lifestyle",
       "category_label": "라이프스타일",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -132,7 +132,7 @@
       "device_labels": [],
       "badge_labels": [
         "라이프스타일",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
@@ -142,7 +142,7 @@
       "app_store_id": "6790800323",
       "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
       "app_store_url": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=iag_data_ko&mt=8",
-      "app_store_cta_label": "Get Mochi DoneStamp on the App Store →",
+      "app_store_cta_label": "App Store에서 Mochi DoneStamp 받기 →",
       "storefront_facts": {
         "price": "0",
         "currency": "KRW",
@@ -169,7 +169,7 @@
       "category": "productivity",
       "category_label": "생산성",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -185,7 +185,7 @@
       "device_labels": [],
       "badge_labels": [
         "생산성",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "오프라인",
         "계정 없음",
         "프라이빗 / 기기 내",
@@ -225,7 +225,7 @@
       "category": "productivity",
       "category_label": "생산성",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -237,7 +237,7 @@
       "device_labels": [],
       "badge_labels": [
         "생산성",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "프라이빗 / 기기 내",
         "App Store · 무료"
       ],
@@ -248,7 +248,7 @@
       "app_store_id": "6791658210",
       "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
       "app_store_url": "https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=iag_data_ko&mt=8",
-      "app_store_cta_label": "Get AI Brief on the App Store →",
+      "app_store_cta_label": "App Store에서 AI Brief 받기 →",
       "storefront_facts": {
         "price": "0",
         "currency": "KRW",
@@ -275,7 +275,7 @@
       "category": "education",
       "category_label": "교육",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -283,7 +283,7 @@
       "device_labels": [],
       "badge_labels": [
         "교육",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -338,7 +338,7 @@
       "app_store_id": "6792483140",
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
       "app_store_url": "https://apps.apple.com/kr/app/id6792483140?pt=118326163&ct=iag_data_ko&mt=8",
-      "app_store_cta_label": "Get Aim990 Plus on the App Store →",
+      "app_store_cta_label": "App Store에서 Aim990 Plus 받기 →",
       "storefront_facts": {
         "price": "9900",
         "currency": "KRW",
@@ -365,7 +365,7 @@
       "category": "utility",
       "category_label": "더 보기",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -377,7 +377,7 @@
       ],
       "badge_labels": [
         "더 보기",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "위젯",
         "App Store · 무료"
       ],
@@ -415,7 +415,7 @@
       "category": "productivity",
       "category_label": "생산성",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -423,7 +423,7 @@
       "device_labels": [],
       "badge_labels": [
         "생산성",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -460,7 +460,7 @@
       "category": "health",
       "category_label": "건강",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -472,7 +472,7 @@
       "device_labels": [],
       "badge_labels": [
         "건강",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "프라이빗 / 기기 내",
         "App Store · 무료"
       ],
@@ -560,7 +560,7 @@
       "category": "kids",
       "category_label": "어린이 & 학습",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -568,7 +568,7 @@
       "device_labels": [],
       "badge_labels": [
         "어린이 & 학습",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/dailymatelite.html",
@@ -658,7 +658,7 @@
       "category": "finance",
       "category_label": "금융 & 여행",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -682,7 +682,7 @@
       ],
       "badge_labels": [
         "금융 & 여행",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "오프라인",
         "계정 없음",
         "추적 없음",
@@ -698,7 +698,7 @@
       "app_store_id": "6793436548",
       "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
       "app_store_url": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=iag_data_ko&mt=8",
-      "app_store_cta_label": "Get G+Money Lite on the App Store →",
+      "app_store_cta_label": "App Store에서 G+Money Lite 받기 →",
       "storefront_facts": {
         "price": "0",
         "currency": "KRW",
@@ -778,7 +778,7 @@
       "category": "finance",
       "category_label": "금융 & 여행",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
@@ -800,7 +800,7 @@
       ],
       "badge_labels": [
         "금융 & 여행",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "계정 없음",
         "추적 없음",
         "프라이빗 / 기기 내",
@@ -815,7 +815,7 @@
       "app_store_id": "6794039979",
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
       "app_store_url": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=iag_data_ko&mt=8",
-      "app_store_cta_label": "Get HoursTag Lite on the App Store →",
+      "app_store_cta_label": "App Store에서 HoursTag Lite 받기 →",
       "storefront_facts": {
         "price": "0",
         "currency": "KRW",
@@ -842,7 +842,7 @@
       "category": "productivity",
       "category_label": "생산성",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -856,7 +856,7 @@
       "device_labels": [],
       "badge_labels": [
         "생산성",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "광고 없음",
         "프라이빗 / 기기 내",
         "App Store · 무료"
@@ -895,7 +895,7 @@
       "category": "kids",
       "category_label": "어린이 & 학습",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -907,7 +907,7 @@
       "device_labels": [],
       "badge_labels": [
         "어린이 & 학습",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "광고 없음",
         "App Store · 무료"
       ],
@@ -995,7 +995,7 @@
       "category": "kids",
       "category_label": "어린이 & 학습",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1007,7 +1007,7 @@
       "device_labels": [],
       "badge_labels": [
         "어린이 & 학습",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "광고 없음",
         "App Store · 무료"
       ],
@@ -1095,7 +1095,7 @@
       "category": "kids",
       "category_label": "어린이 & 학습",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1107,7 +1107,7 @@
       "device_labels": [],
       "badge_labels": [
         "어린이 & 학습",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "광고 없음",
         "App Store · 무료"
       ],
@@ -1195,7 +1195,7 @@
       "category": "kids",
       "category_label": "어린이 & 학습",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1207,7 +1207,7 @@
       "device_labels": [],
       "badge_labels": [
         "어린이 & 학습",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "광고 없음",
         "App Store · 무료"
       ],
@@ -1295,7 +1295,7 @@
       "category": "kids",
       "category_label": "어린이 & 학습",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1307,7 +1307,7 @@
       "device_labels": [],
       "badge_labels": [
         "어린이 & 학습",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "광고 없음",
         "App Store · 무료"
       ],
@@ -1345,7 +1345,7 @@
       "category": "kids",
       "category_label": "어린이 & 학습",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -1359,7 +1359,7 @@
       "device_labels": [],
       "badge_labels": [
         "어린이 & 학습",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "광고 없음",
         "추적 없음",
         "App Store · 무료"
@@ -1398,7 +1398,7 @@
       "category": "productivity",
       "category_label": "생산성",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1410,7 +1410,7 @@
       "device_labels": [],
       "badge_labels": [
         "생산성",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "광고 없음",
         "App Store · 무료"
       ],
@@ -1448,7 +1448,7 @@
       "category": "productivity",
       "category_label": "생산성",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1456,7 +1456,7 @@
       "device_labels": [],
       "badge_labels": [
         "생산성",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/onepageppt.html",
@@ -1493,7 +1493,7 @@
       "category": "photo-utility",
       "category_label": "사진 & 유틸리티",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1501,7 +1501,7 @@
       "device_labels": [],
       "badge_labels": [
         "사진 & 유틸리티",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -1538,7 +1538,7 @@
       "category": "photo-utility",
       "category_label": "사진 & 유틸리티",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1550,7 +1550,7 @@
       "device_labels": [],
       "badge_labels": [
         "사진 & 유틸리티",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "프라이빗 / 기기 내",
         "App Store · 무료"
       ],
@@ -1588,7 +1588,7 @@
       "category": "productivity",
       "category_label": "생산성",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1600,7 +1600,7 @@
       "device_labels": [],
       "badge_labels": [
         "생산성",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "프라이빗 / 기기 내",
         "App Store · 무료"
       ],
@@ -1638,7 +1638,7 @@
       "category": "sleep-sound",
       "category_label": "수면 & 집중",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -1652,7 +1652,7 @@
       "device_labels": [],
       "badge_labels": [
         "수면 & 집중",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "오프라인",
         "광고 없음",
         "App Store · 무료"
@@ -1741,7 +1741,7 @@
       "category": "photo-utility",
       "category_label": "사진 & 유틸리티",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -1753,7 +1753,7 @@
       "device_labels": [],
       "badge_labels": [
         "사진 & 유틸리티",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "오프라인",
         "App Store · 무료"
       ],
@@ -1791,7 +1791,7 @@
       "category": "productivity",
       "category_label": "생산성",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1803,7 +1803,7 @@
       "device_labels": [],
       "badge_labels": [
         "생산성",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "프라이빗 / 기기 내",
         "App Store · 무료"
       ],
@@ -1841,7 +1841,7 @@
       "category": "travel",
       "category_label": "여행",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1849,7 +1849,7 @@
       "device_labels": [],
       "badge_labels": [
         "여행",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -1942,7 +1942,7 @@
       "category": "photo-utility",
       "category_label": "사진 & 유틸리티",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1954,7 +1954,7 @@
       "device_labels": [],
       "badge_labels": [
         "사진 & 유틸리티",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "프라이빗 / 기기 내",
         "App Store · 무료"
       ],
@@ -1992,7 +1992,7 @@
       "category": "utility",
       "category_label": "더 보기",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "no_account"
@@ -2004,7 +2004,7 @@
       "device_labels": [],
       "badge_labels": [
         "더 보기",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "계정 없음",
         "App Store · 무료"
       ],
@@ -2042,7 +2042,7 @@
       "category": "kids",
       "category_label": "어린이 & 학습",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 평생 잠금 해제",
+      "purchase_label": "무료로 시작 · 한 번 구매 잠금 해제",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -2054,7 +2054,7 @@
       "device_labels": [],
       "badge_labels": [
         "어린이 & 학습",
-        "무료로 시작 · 평생 잠금 해제",
+        "무료로 시작 · 한 번 구매 잠금 해제",
         "오프라인",
         "App Store · 무료"
       ],

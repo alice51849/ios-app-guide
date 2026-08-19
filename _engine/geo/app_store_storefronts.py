@@ -29,7 +29,13 @@ PROMOTIONAL_RATING_MIN_VALUE = 4.0
 PROMOTIONAL_RATING_MIN_COUNT = 2
 LOCALE_STOREFRONTS = {
     "ar-SA": "sa",
-    "bn-BD": "bd",
+    # Bengali readers are served by the India storefront. Apple has no "bd"
+    # storefront at all -- apps.apple.com/bd/... 301s to /us, and an iTunes
+    # lookup with country=bd returns 0 results for *every* app, including
+    # Facebook and WhatsApp. Pointing bn-BD at "bd" silently redirected all
+    # Bengali store links to the US store, where the apps are not purchasable.
+    # See NON_STOREFRONTS below for the guard that keeps this from recurring.
+    "bn-BD": "in",
     "ca": "es",
     "cs": "cz",
     "da": "dk",
@@ -138,8 +144,28 @@ APP_STORE_PATH_RE = re.compile(
     r"/(?:(?P<country>[a-z]{2})/)?app/id(?P<app_id>\d{9,12})"
 )
 
+# Two-letter codes that look like plausible storefronts but are not ones Apple
+# operates. A locale mapped here produces links that 301 to /us, sending readers
+# to a storefront where the app is usually not for sale -- a silent failure, so
+# it is rejected at import time instead. Verified with a control app that ships
+# in every real storefront (Facebook, id284882215): a storefront is real if the
+# control app resolves there. Re-check with ``verify_storefronts_live()``.
+NON_STOREFRONTS = frozenset({"bd"})
+
 if set(LOCALE_STOREFRONTS) != OFFICIAL_LOCALE_SET:
     raise RuntimeError("App Store storefront mapping must cover 50 official locales")
+_dead = {
+    locale: country
+    for locale, country in LOCALE_STOREFRONTS.items()
+    if country in NON_STOREFRONTS
+}
+if _dead:
+    raise RuntimeError(
+        "App Store storefront mapping points at storefronts Apple does not "
+        f"operate: {_dead}. Links to these 301 to /us. Map the locale to the "
+        "storefront that actually serves those readers."
+    )
+del _dead
 if set(FREE_LABELS) != OFFICIAL_LOCALE_SET:
     raise RuntimeError("Free labels must cover 50 official locales")
 
@@ -446,3 +472,36 @@ def verified_app_store_url(
     if app_id in availability.get(country, frozenset()):
         return localized
     return value.strip()
+
+
+# Facebook. Ships in every storefront Apple operates, so it separates "this
+# storefront does not exist" from "our app is not sold there" -- a distinction
+# that is invisible when you only probe your own catalogue.
+STOREFRONT_CONTROL_APP_ID = "284882215"
+
+
+def verify_storefronts_live(control_app_id: str = STOREFRONT_CONTROL_APP_ID):
+    """Return the storefront codes in LOCALE_STOREFRONTS Apple does not operate.
+
+    Network call, so this is a maintenance helper rather than an import-time
+    check; NON_STOREFRONTS carries the result. Run it when adding a locale.
+    """
+    import json
+    import time
+    import urllib.request
+
+    dead = []
+    for country in sorted(set(LOCALE_STOREFRONTS.values())):
+        url = (
+            "https://itunes.apple.com/lookup"
+            f"?id={control_app_id}&country={country}"
+        )
+        try:
+            with urllib.request.urlopen(url, timeout=15) as response:
+                payload = json.load(response)
+        except Exception:  # network flake -- inconclusive, not a failure
+            continue
+        if not payload.get("resultCount"):
+            dead.append(country)
+        time.sleep(0.25)
+    return dead

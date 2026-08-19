@@ -17,8 +17,8 @@ When Wi-Fi says connected but work still cannot get online, the useful first ste
 - Tải xuống trả phí
 - App Store · 199.000đ
 
-[Get WiFi Aid on the App Store →](https://apps.apple.com/vn/app/id6790467886?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải WiFi Aid trên App Store →](https://apps.apple.com/vn/app/id6790467886?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html)
 
-> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.
+> Hướng dẫn do Lumi Studio, nhà phát triển ứng dụng, biên soạn. Tên các ứng dụng là thương hiệu của chủ sở hữu tương ứng và chỉ được dùng để nhận diện. Với những quyết định liên quan đến giấy tờ, sức khỏe, học tập và công việc, hãy kiểm tra các yêu cầu chính thức tương ứng khi cần.

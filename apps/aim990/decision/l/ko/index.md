@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 파트 5는 짧아 보이지만, 문장이 완성되지 않은 문제들이 문법과 어휘가 자동화되지 않으면 시간을 많이 소모할 수 있습니다.
 
 - 교육
-- 무료로 시작 · 평생 잠금 해제
+- 무료로 시작 · 한 번 구매 잠금 해제
 - App Store · 무료
 
 [앱 스토어에서 Aim990 받기 →](https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=iag_data_ko&mt=8)

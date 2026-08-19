@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 After a call you don't want a raw transcript — you want the summary, the action items, and a draft follow-up — Sono Note is built for this.
 
 - Productivity
-- Free to start · lifetime unlock
+- Free to start · one-time unlock
 - Private / on-device
 - App Store · Free
 

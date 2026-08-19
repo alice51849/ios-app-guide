@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - শিক্ষা
 - বিনামূল্যে শুরু · আজীবন আনলক
+- App Store · বিনামূল্যে
 
-[App Store থেকে Aim990 পান →](https://apps.apple.com/app/id6784974530?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে Aim990 পান →](https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

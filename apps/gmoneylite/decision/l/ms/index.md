@@ -19,7 +19,7 @@ A useful free travel-expense test should include the complete local-to-home-curr
 - Tiada akaun
 - Tiada penjejakan
 - Peribadi / pada peranti
-- Widjet
+- Widget
 - Apple Watch
 - App Store · Percuma
 

@@ -18,7 +18,7 @@ HoursTag Lite — HoursTag Lite - See the real price of things Every purchase co
 - Tiada akaun
 - Tiada penjejakan
 - Peribadi / pada peranti
-- Widjet
+- Widget
 - Apple Watch
 - App Store · Percuma
 

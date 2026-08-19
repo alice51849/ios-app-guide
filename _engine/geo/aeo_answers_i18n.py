@@ -678,8 +678,10 @@ LOCALE_TARGET_REPLACEMENTS = {
         ("peluru anda", "butiran anda"),
         ("gambar letusan", "gambar rentetan"),
         ("mata wang rumah", "mata wang negara asal"),
-        ("Widget", "Widjet"),
-        ("widget", "widjet"),
+        # "widjet" is not a Malay word -- Malay borrows "widget" unchanged, and
+        # this rule was silently misspelling it across the ms pages.
+        ("Widjet", "Widget"),
+        ("widjet", "widget"),
     ),
     "no": (
         ("Streksporing", "Skriveøving"),

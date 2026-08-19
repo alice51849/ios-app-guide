@@ -15,17 +15,48 @@ Validation performed before a translation is accepted:
   * zh-Hant must not contain Bopomofo
   * CJK/Korean locales must reach a minimum native-script letter ratio
   * no stray placeholder markers such as {app} left in the output
+  * none of the verified wrong renderings collected in ``i18n_semantic_audit``
+    (antonyms such as Spanish "desenfocar" for *unblur*, mistransliterations,
+    off-topic phrases) -- otherwise a wave re-introduces a defect a later wave
+    already had to clean out of thousands of pages
+  * a "no X" claim in the English keeps a negation marker in the target, so a
+    pricing or capability promise cannot silently flip
 Rejected entries are reported and skipped -- never written.
 """
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
 import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 TRANS = ROOT / "i18n_trans"
+
+
+def _semantic_audit():
+    """Load the shared semantic rule tables (optional, but normally present)."""
+    path = ROOT / "i18n_semantic_audit.py"
+    if not path.exists():
+        return None
+    spec = importlib.util.spec_from_file_location("_i18n_semantic_audit", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+_AUDIT = _semantic_audit()
+_BANNED = {
+    locale: [(re.compile(pattern), note)
+             for pattern, _fix, _category, note in rules]
+    for locale, rules in (getattr(_AUDIT, "REVERSAL_RULES", {}) or {}).items()
+}
+_NEGATION = {
+    locale: re.compile(pattern, re.I)
+    for locale, pattern in (getattr(_AUDIT, "NEGATION", {}) or {}).items()
+}
+_NEG_TRIGGER = getattr(_AUDIT, "NEG_TRIGGER", None)
 
 BOPOMOFO = re.compile(r"[ㄅ-ㄯㆠ-ㆿ]")
 # characters that exist only in Traditional Chinese usage and must never appear
@@ -82,6 +113,20 @@ def validate(en: str, locale: str, target: str) -> str | None:
         ratio = native_ratio(t, locale)
         if ratio < MIN_NATIVE:
             return f"native-script ratio {ratio:.2f} < {MIN_NATIVE}"
+    # Verified wrong renderings for this locale must never come back.
+    normalized = _AUDIT.nfc(t) if _AUDIT else t
+    for rx, note in _BANNED.get(locale, ()):
+        if rx.search(normalized):
+            return f"known bad rendering ({rx.pattern}): {note}"
+    # A "no X" promise in English has to survive as a negation in the target.
+    # Only headline-length strings are checked: in a long paragraph the negation
+    # is often carried by a construction no closed marker list can enumerate
+    # ("خالٍ من الإعلانات", "L'absence de compte"), and false rejections there
+    # would block correct translations.
+    if len(en) <= 120 and _NEG_TRIGGER is not None and _NEG_TRIGGER.search(en):
+        marker = _NEGATION.get(locale)
+        if marker is not None and not marker.search(t):
+            return "English states a 'no X' claim but the translation has no negation marker"
     return None
 
 

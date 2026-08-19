@@ -13,8 +13,6 @@ from official_locales import OFFICIAL_LOCALES
 
 
 CURRENT_LIVE_APPS = {
-    "notesstudio100",
-    "wifiaidlite",
     "aibriefpack",
     "aim990",
     "aim990plus",
@@ -40,7 +38,6 @@ CURRENT_LIVE_APPS = {
     "maskmyfile",
     "mochi",
     "mochidonestamp",
-    "onepageppt",
     "photocream",
     "picclear",
     "scanto",
@@ -304,14 +301,14 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
         self.assertIn("source and confidence", copy)
         self.assertIn("never removed automatically", copy)
         self.assertIn("does not promise anonymity", copy)
-        self.assertIn("one optional one-time pro purchase", copy)
+        self.assertIn("one optional lifetime pro purchase", copy)
         self.assertNotIn("sends my files to an ai service automatically?': 'yes", copy)
 
     def test_gmoney_lite_persona_preserves_free_and_purchase_boundaries(self):
         copy = str(PERSONAS["gmoneylite"]).lower()
         self.assertIn("one trip and up to three expenses free", copy)
         self.assertIn("category statistics", copy)
-        self.assertIn("one optional one-time purchase", copy)
+        self.assertIn("one optional lifetime purchase", copy)
         self.assertIn("internet connection is needed only when fetching", copy)
         self.assertNotIn("subscription unlock", copy)
 
@@ -437,9 +434,12 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
                 "Layar Utama; derau putih; pengatur waktu; buka kunci",
             ),
             (
+                # "Widjet" used to be produced here; Malay borrows "widget"
+                # unchanged, so the table now normalises the misspelling instead
+                # of creating it.
                 "ms",
-                "ubah peluru anda; gambar letusan; mata wang rumah; Widget",
-                "ubah butiran anda; gambar rentetan; mata wang negara asal; Widjet",
+                "ubah peluru anda; gambar letusan; mata wang rumah; Widjet",
+                "ubah butiran anda; gambar rentetan; mata wang negara asal; Widget",
             ),
             (
                 "th",

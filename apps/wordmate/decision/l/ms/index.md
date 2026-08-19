@@ -18,7 +18,7 @@ Komuter sibuk perlukan latihan kosa kata yang sesuai untuk masa terluang tanpa p
 - Tiada akaun
 - Tiada iklan
 - Tiada penjejakan
-- Widjet
+- Widget
 - Apple Watch
 - App Store · RM39.90
 

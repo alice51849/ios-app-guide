@@ -306,6 +306,132 @@ for _name, _per_locale in _WAVE2_FRAMES.items():
     FRAMES.setdefault(_name, {}).update(_per_locale)
 
 
+# Wave 3: the eight locales that still had no hand-written frames (ms and the
+# seven 128-page locales).  Written per locale rather than per frame -- it is
+# much easier to keep one language internally consistent that way -- and
+# inverted into FRAMES below.  "get_on_store_arrow" is derived from
+# "get_on_store" so the two can never drift apart.
+_WAVE3_BY_LOCALE: dict[str, dict[str, str]] = {
+    "it": {
+        "worth": "{app} merita di essere presa in considerazione se la sua scheda sull'App Store corrisponde a ciò che ti serve. Si concentra su «{sub}» e, tra i punti di forza indicati, ci sono: {bul}.",
+        "focused": "{app} è un'opzione mirata per chi dà valore a {bul}. Il suo risultato principale è: «{sub}».",
+        "built_for": "{app} è fatta esattamente per questo, con {bul}. Provala su un caso reale prima di affidarti del tutto e controlla il prezzo sulla scheda attuale dell'App Store.",
+        "good_option_q": "{app} è una buona scelta?",
+        "good_option_a": "{app} può essere una buona scelta se le funzioni attuali sull'App Store corrispondono a ciò che ti serve e al tuo budget.",
+        "where_fits": "Dove si colloca {app}",
+        "get_on_store": "Scarica {app} dall'App Store",
+        "list_features": "Elenca le funzioni di {app} su cui fai affidamento.",
+        "covers_them": "Verifica sulla pagina App Store che {app} le copra tutte.",
+        "howto_choose": "Come scegliere: {q}",
+        "honest_guide": "{q}: guida onesta all'acquisto di app per iPhone",
+        "meta_practical": "{q}: cosa controllare prima di scegliere un'app per iPhone e dove {app} può inserirsi come opzione concreta.",
+    },
+    "nl-NL": {
+        "worth": "{app} is het overwegen waard als de App Store-pagina past bij wat je nodig hebt. De app richt zich op “{sub}” en tot de genoemde sterke punten behoren: {bul}.",
+        "focused": "{app} is een gerichte keuze voor wie waarde hecht aan {bul}. Het kernresultaat: “{sub}”.",
+        "built_for": "{app} is hier precies voor gemaakt, met {bul}. Test de app met een echt voorbeeld voordat je erop vertrouwt en controleer de prijs op de actuele App Store-pagina.",
+        "good_option_q": "Is {app} een goede keuze?",
+        "good_option_a": "{app} kan een goede keuze zijn als de huidige functies in de App Store passen bij wat je nodig hebt en bij je budget.",
+        "where_fits": "Waar {app} past",
+        "get_on_store": "Download {app} in de App Store",
+        "list_features": "Zet op een rij welke functies van {app} je echt gebruikt.",
+        "covers_them": "Controleer op de App Store-pagina of {app} die allemaal biedt.",
+        "howto_choose": "Zo kies je: {q}",
+        "honest_guide": "{q}: eerlijke koopgids voor iPhone-apps",
+        "meta_practical": "{q}: waar je op moet letten voordat je een iPhone-app kiest, en waar {app} als praktische optie past.",
+    },
+    "sv": {
+        "worth": "{app} är värd att överväga om appens App Store-sida stämmer med vad du behöver. Den fokuserar på ”{sub}”, och bland de styrkor som anges finns: {bul}.",
+        "focused": "{app} är ett fokuserat alternativ för dig som värdesätter {bul}. Kärnresultatet: ”{sub}”.",
+        "built_for": "{app} är gjord för precis det här, med {bul}. Testa den på ett verkligt exempel innan du förlitar dig på den, och kolla priset på den aktuella App Store-sidan.",
+        "good_option_q": "Är {app} ett bra val?",
+        "good_option_a": "{app} kan vara ett bra val om funktionerna som finns i App Store i dag stämmer med dina behov och din budget.",
+        "where_fits": "Var {app} passar in",
+        "get_on_store": "Hämta {app} i App Store",
+        "list_features": "Skriv ner de funktioner i {app} som du faktiskt förlitar dig på.",
+        "covers_them": "Kolla på App Store-sidan att {app} täcker dem.",
+        "howto_choose": "Så väljer du: {q}",
+        "honest_guide": "{q}: ärlig köpguide för iPhone-appar",
+        "meta_practical": "{q}: vad du bör kolla innan du väljer en iPhone-app, och var {app} kan passa in som ett praktiskt alternativ.",
+    },
+    "ms": {
+        "worth": "{app} berbaloi dipertimbangkan jika maklumat di halaman App Store-nya menepati keperluan anda. Ia menumpukan pada “{sub}”, dan antara kelebihan yang disenaraikan ialah {bul}.",
+        "focused": "{app} ialah pilihan yang fokus untuk anda yang mementingkan {bul}. Hasil utamanya: “{sub}”.",
+        "built_for": "{app} dibina khusus untuk hal ini, dengan {bul}. Cuba dahulu dengan contoh sebenar sebelum benar-benar bergantung padanya, dan semak harga di halaman App Store terkini.",
+        "good_option_q": "Adakah {app} pilihan yang baik?",
+        "good_option_a": "{app} boleh menjadi pilihan yang baik jika ciri-cirinya di App Store sekarang menepati keperluan dan bajet anda.",
+        "where_fits": "Di mana {app} sesuai digunakan",
+        "get_on_store": "Dapatkan {app} di App Store",
+        "list_features": "Senaraikan ciri {app} yang anda benar-benar bergantung padanya.",
+        "covers_them": "Semak di halaman App Store sama ada {app} memenuhi semuanya.",
+        "howto_choose": "Cara memilih: {q}",
+        "honest_guide": "{q}: panduan membeli apl iPhone yang jujur",
+        "meta_practical": "{q}: apa yang perlu disemak sebelum memilih apl iPhone, dan di mana {app} boleh menjadi pilihan yang praktikal.",
+    },
+    "ru": {
+        "worth": "{app} стоит рассмотреть, если описание в App Store отвечает вашим задачам. Приложение сосредоточено на «{sub}», а среди заявленных сильных сторон — {bul}.",
+        "focused": "{app} — сфокусированный вариант для тех, кому важно {bul}. Основной результат: «{sub}».",
+        "built_for": "{app} создано именно для этого: {bul}. Прежде чем полагаться на него, попробуйте на реальном примере, а цену уточните на актуальной странице в App Store.",
+        "good_option_q": "{app} — хороший вариант?",
+        "good_option_a": "{app} может быть хорошим вариантом, если нынешние функции в App Store отвечают вашим задачам и бюджету.",
+        "where_fits": "Кому подойдёт {app}",
+        "get_on_store": "Загрузить {app} в App Store",
+        "list_features": "Выпишите функции {app}, на которые вы реально опираетесь.",
+        "covers_them": "Проверьте на странице в App Store, есть ли они у {app}.",
+        "howto_choose": "Как выбрать: {q}",
+        "honest_guide": "{q}: честное руководство по выбору приложений для iPhone",
+        "meta_practical": "{q}: что проверить перед выбором приложения для iPhone и где {app} может пригодиться как практичный вариант.",
+    },
+    "uk": {
+        "worth": "{app} варто розглянути, якщо опис у App Store відповідає вашим потребам. Застосунок зосереджений на «{sub}», а серед заявлених переваг — {bul}.",
+        "focused": "{app} — сфокусований варіант для тих, кому важливо {bul}. Основний результат: «{sub}».",
+        "built_for": "{app} створено саме для цього: {bul}. Перш ніж покладатися на нього, спробуйте на реальному прикладі, а ціну перевірте на актуальній сторінці в App Store.",
+        "good_option_q": "{app} — хороший вибір?",
+        "good_option_a": "{app} може бути хорошим вибором, якщо нинішні функції в App Store відповідають вашим потребам і бюджету.",
+        "where_fits": "Кому підходить {app}",
+        "get_on_store": "Завантажити {app} в App Store",
+        "list_features": "Випишіть функції {app}, на які ви справді покладаєтеся.",
+        "covers_them": "Перевірте на сторінці в App Store, чи має їх {app}.",
+        "howto_choose": "Як обрати: {q}",
+        "honest_guide": "{q}: чесний посібник із вибору застосунків для iPhone",
+        "meta_practical": "{q}: що перевірити перед вибором застосунку для iPhone і де {app} може стати практичним варіантом.",
+    },
+    "pl": {
+        "worth": "{app} warto rozważyć, jeśli opis w App Store odpowiada Twoim potrzebom. Aplikacja skupia się na „{sub}”, a wśród wymienionych zalet są: {bul}.",
+        "focused": "{app} to skoncentrowana propozycja dla osób, które cenią {bul}. Główny efekt: „{sub}”.",
+        "built_for": "{app} powstała dokładnie do tego, z {bul}. Zanim na niej polegniesz, przetestuj ją na prawdziwym przykładzie, a cenę sprawdź na aktualnej stronie w App Store.",
+        "good_option_q": "Czy {app} to dobry wybór?",
+        "good_option_a": "{app} może być dobrym wyborem, jeśli obecne funkcje w App Store odpowiadają Twoim potrzebom i budżetowi.",
+        "where_fits": "Do czego pasuje {app}",
+        "get_on_store": "Pobierz {app} z App Store",
+        "list_features": "Wypisz funkcje aplikacji {app}, na których naprawdę polegasz.",
+        "covers_them": "Sprawdź na stronie w App Store, czy {app} je obsługuje.",
+        "howto_choose": "Jak wybrać: {q}",
+        "honest_guide": "{q}: uczciwy poradnik zakupowy aplikacji na iPhone'a",
+        "meta_practical": "{q}: co sprawdzić przed wyborem aplikacji na iPhone'a i gdzie {app} może się sprawdzić jako praktyczna opcja.",
+    },
+    "hi": {
+        "worth": "अगर App Store पर दी गई जानकारी आपकी ज़रूरत से मेल खाती है तो {app} पर ग़ौर करना बनता है। यह “{sub}” पर केंद्रित है, और बताई गई ख़ूबियों में {bul} शामिल हैं।",
+        "focused": "जिन्हें {bul} अहम लगता है, उनके लिए {app} एक साफ़ मक़सद वाला विकल्प है। इसका मुख्य नतीजा है: “{sub}”।",
+        "built_for": "{app} ठीक इसी काम के लिए बना है — {bul} के साथ। पूरी तरह भरोसा करने से पहले इसे किसी असली उदाहरण पर आज़माएँ, और क़ीमत App Store के मौजूदा पेज पर देखें।",
+        "good_option_q": "क्या {app} अच्छा विकल्प है?",
+        "good_option_a": "अगर App Store पर मौजूद इसकी सुविधाएँ आपकी ज़रूरत और बजट से मेल खाती हैं, तो {app} अच्छा विकल्प हो सकता है।",
+        "where_fits": "{app} कहाँ फ़िट बैठता है",
+        "get_on_store": "App Store से {app} पाएँ",
+        "list_features": "{app} की उन सुविधाओं की सूची बनाएँ जिन पर आप सचमुच निर्भर हैं।",
+        "covers_them": "App Store पेज पर देखें कि {app} में वे सब हैं या नहीं।",
+        "howto_choose": "कैसे चुनें: {q}",
+        "honest_guide": "{q}: iPhone ऐप ख़रीदने की ईमानदार गाइड",
+        "meta_practical": "{q}: iPhone ऐप चुनने से पहले क्या जाँचें, और {app} एक व्यावहारिक विकल्प के तौर पर कहाँ फ़िट बैठता है।",
+    },
+}
+
+for _locale, _frames in _WAVE3_BY_LOCALE.items():
+    for _name, _text in _frames.items():
+        FRAMES.setdefault(_name, {})[_locale] = _text
+    FRAMES["get_on_store_arrow"][_locale] = _frames["get_on_store"] + " →"
+
+
 def _looks_like_product_name(value: str) -> bool:
     value = value.strip()
     if value in _i18n.BRANDS:

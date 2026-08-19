@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import functools
 import hashlib
 import html
 import json
@@ -2353,6 +2354,68 @@ def resolve_meta_frames(lang: str) -> dict[str, Any] | None:
     )
 
 
+_H1_TAG_RE = re.compile(r"<h1\b[^>]*>(.*?)</h1>", re.S | re.I)
+
+
+@functools.lru_cache(maxsize=None)
+def english_meta_description(slug: str) -> str:
+    """The meta description on the English source page for this slug."""
+    path = ANSWERS / f"{slug}.html"
+    try:
+        source = path.read_text(encoding="utf-8")
+    except OSError:
+        return ""
+    match = _META_DESC_TAG_RE.search(source)
+    return html.unescape(match.group(2)).strip() if match else ""
+
+
+def repair_locale_description(source: str, lang: str, slug: str) -> str:
+    """Re-localize a description that fell back to English on a translated page.
+
+    ``run_refresh`` rebuilds a page from the English source plus the current
+    dictionary, which silently drops a description that the meta-only sweep had
+    written earlier: the title and body come out localized while the
+    description reverts to the English one.  This repairs exactly that case --
+    the title is already localized (so ``ensure_locale_meta`` skips the page)
+    but the description is still byte-identical to the English page's.  The
+    localized ``<h1>`` supplies the query slot, so the rebuilt description is in
+    the same words the reader already sees as the headline.
+    """
+    frames = resolve_meta_frames(lang)
+    desc_match = _META_DESC_TAG_RE.search(source)
+    if not frames or not desc_match:
+        return source
+    old_desc = html.unescape(desc_match.group(2)).strip()
+    english = english_meta_description(slug)
+    if not english or old_desc != english:
+        return source
+    h1_match = _H1_TAG_RE.search(source)
+    if not h1_match:
+        return source
+    query = html.unescape(re.sub(r"<.*?>", "", h1_match.group(1))).strip()
+    if not query:
+        return source
+    app_match = _OG_IMG_ALT_RE.search(source)
+    app = html.unescape(app_match.group(1)).strip() if app_match else ""
+
+    if "desc_append" in frames:
+        new_desc = query + frames["desc_append"]
+    else:
+        variants = frames["desc_app"] if app else [frames["desc"]]
+        digest = hashlib.sha1(slug.encode("utf-8")).hexdigest()
+        new_desc = variants[int(digest[:8], 16) % len(variants)].format(
+            query=query, app=app
+        )
+    desc_attr = html.escape(new_desc, quote=True)
+    source = _META_DESC_TAG_RE.sub(
+        lambda m: m.group(1) + desc_attr + m.group(3), source, count=1
+    )
+    source = _OG_DESC_TAG_RE.sub(
+        lambda m: m.group(1) + desc_attr + m.group(3), source, count=1
+    )
+    return source
+
+
 def ensure_locale_meta(source: str, lang: str, slug: str) -> str:
     """Give a localized page locale-specific <title>/description metadata.
 
@@ -2436,6 +2499,7 @@ def run_meta_only(langs: list[str] | None = None) -> int:
             scanned += 1
             source = path.read_text(encoding="utf-8")
             updated = ensure_locale_meta(source, lang, path.stem)
+            updated = repair_locale_description(updated, lang, path.stem)
             if updated != source:
                 path.write_text(updated, encoding="utf-8")
                 changed += 1

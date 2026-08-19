@@ -17,7 +17,7 @@ Razumevanje angleščine je le del izziva. Drugi del je ohraniti natančnost, ko
 - Plačljiv prenos
 - App Store · 6,99 €
 
-[Prenesite Aim990 Plus iz trgovine App Store](https://apps.apple.com/si/app/id6792483140)
+[Prenesite Aim990 Plus iz trgovine App Store](https://apps.apple.com/si/app/id6792483140?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/aim990plus.html)
 

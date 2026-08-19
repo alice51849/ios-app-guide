@@ -14,12 +14,12 @@ publisher: "Lumi Studio"
 In a category where data sensitivity is the whole story, the right period tracker keeps everything — flow, mood, symptoms, temperature, intimacy — on your device, with no account and no cloud sync — Cyca is built for this.
 
 - Health
-- Free to start · one-time unlock
+- Free to start · lifetime unlock
 - Private / on-device
 - App Store · Free
 - ★ 5.0/5 · 1
 
-[Get Cyca on the App Store →](https://apps.apple.com/us/app/id6782251621)
+[Get Cyca on the App Store →](https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=iag_data_en_us&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-US/answers/best-period-tracker-app-no-account-required-iphone.html)
 

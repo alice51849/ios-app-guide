@@ -17,7 +17,7 @@ A Parte 5 parece curta, mas essas perguntas de frases incompletas podem consumir
 - Grátis para começar · desbloqueio permanente
 - App Store · Grátis
 
-[Obtenha o Aim990 na App Store →](https://apps.apple.com/br/app/id6784974530)
+[Obtenha o Aim990 na App Store →](https://apps.apple.com/br/app/id6784974530?pt=118326163&ct=iag_data_pt_br&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

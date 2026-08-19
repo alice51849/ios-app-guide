@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് DailyMate Lite: സംസാരിക്കൂ നേടൂ](https://apps.apple.com/in/app/id6794725568)
+[App Store-ൽ നിന്ന് DailyMate Lite: സംസാരിക്കൂ നേടൂ](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/dailymatelite.html)
 

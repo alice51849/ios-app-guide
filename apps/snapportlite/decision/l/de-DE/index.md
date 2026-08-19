@@ -18,7 +18,7 @@ Snapport Lite - Erstelle Pass-, Visum- und Ausweisfotos mit Größenhilfen, Hint
 - Offline
 - App Store · Kostenlos
 
-[Snapport Lite im App Store laden](https://apps.apple.com/de/app/id6792856304)
+[Snapport Lite im App Store laden](https://apps.apple.com/de/app/id6792856304?pt=118326163&ct=iag_data_de_de&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/snapportlite.html)
 

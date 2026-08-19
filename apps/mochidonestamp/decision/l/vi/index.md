@@ -17,7 +17,7 @@ For chores and upkeep that do not belong on a rigid calendar, a useful tracker r
 - Bắt đầu miễn phí · mở khóa vĩnh viễn
 - App Store · Miễn phí
 
-[Get Mochi DoneStamp on the App Store →](https://apps.apple.com/vn/app/id6790800323)
+[Get Mochi DoneStamp on the App Store →](https://apps.apple.com/vn/app/id6790800323?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html)
 

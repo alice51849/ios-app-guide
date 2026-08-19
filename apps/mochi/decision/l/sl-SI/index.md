@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Brez oglasov
 - App Store · Brezplačno
 
-[Prenesite Mochi iz App Store →](https://apps.apple.com/si/app/id6785004775)
+[Prenesite Mochi iz App Store →](https://apps.apple.com/si/app/id6785004775?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

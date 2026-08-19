@@ -18,7 +18,7 @@ Als je toestemmingsformulieren, ontslagpapieren of verwijzingen scant, moet de s
 - Privé / op apparaat
 - App Store · Gratis
 
-[Download ScanTo Pro in de App Store →](https://apps.apple.com/nl/app/id6779977651)
+[Download ScanTo Pro in de App Store →](https://apps.apple.com/nl/app/id6779977651?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

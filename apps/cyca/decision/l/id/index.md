@@ -18,7 +18,7 @@ Dalam kategori di mana sensitivitas data adalah segalanya, pelacak siklus yang t
 - Privat / di perangkat
 - App Store · Gratis
 
-[Dapatkan Cyca di App Store →](https://apps.apple.com/id/app/id6782251621)
+[Dapatkan Cyca di App Store →](https://apps.apple.com/id/app/id6782251621?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-period-tracker-app-no-account-required-iphone.html)
 

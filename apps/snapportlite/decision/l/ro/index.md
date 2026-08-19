@@ -18,7 +18,7 @@ Snapport Lite - Realizează fotografii pentru pașaport, viză și documente cu 
 - Offline
 - App Store · Gratuit
 
-[Descarcă Snapport Lite din App Store](https://apps.apple.com/ro/app/id6792856304)
+[Descarcă Snapport Lite din App Store](https://apps.apple.com/ro/app/id6792856304?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/snapportlite.html)
 

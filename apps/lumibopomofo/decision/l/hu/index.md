@@ -18,7 +18,7 @@ Zhuyin-t először tanuló gyermeknek az alkalmazásnak minden 37 szimbólumot l
 - Nincs reklám
 - App Store · Ingyenes
 
-[Szerezze be a Lumi Bopomofo-t az App Store-ból →](https://apps.apple.com/hu/app/id6773017109)
+[Szerezze be a Lumi Bopomofo-t az App Store-ból →](https://apps.apple.com/hu/app/id6773017109?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

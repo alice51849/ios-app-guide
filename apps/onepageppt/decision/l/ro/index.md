@@ -17,7 +17,7 @@ Transformă un zid de text într-UN slide pe care oamenii chiar îl citesc. OneP
 - Început gratuit · deblocare pe viață
 - App Store · Gratuit
 
-[Descarcă OnePage PPT: slide-uri AI din App Store](https://apps.apple.com/ro/app/id6798814385)
+[Descarcă OnePage PPT: slide-uri AI din App Store](https://apps.apple.com/ro/app/id6798814385?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/onepageppt.html)
 

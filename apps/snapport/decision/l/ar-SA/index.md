@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - خاص / على الجهاز
 - App Store · SAR 24.99
 
-[احصل على Snapport من متجر التطبيقات →](https://apps.apple.com/sa/app/id6780575828)
+[احصل على Snapport من متجر التطبيقات →](https://apps.apple.com/sa/app/id6780575828?pt=118326163&ct=iag_data_ar_sa&mt=8)
 
 [اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

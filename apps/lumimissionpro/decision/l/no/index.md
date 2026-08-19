@@ -18,7 +18,7 @@ Tannpuss og leggetid mislykkes ofte samtidig hver kveld: barnet er trøtt, forel
 - Ingen annonser
 - App Store · 79,00 kr
 
-[Få Lumi Mission Planet Pro på App Store →](https://apps.apple.com/no/app/id6779745474)
+[Få Lumi Mission Planet Pro på App Store →](https://apps.apple.com/no/app/id6779745474?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

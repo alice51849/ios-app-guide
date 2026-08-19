@@ -18,7 +18,7 @@ Na zdjęciu paszportowym niemowlęcia nie może być innych osób, a tło musi b
 - Prywatne / na urządzeniu
 - App Store · 29,99 zł
 
-[Pobierz Snapport w App Store →](https://apps.apple.com/pl/app/id6780575828)
+[Pobierz Snapport w App Store →](https://apps.apple.com/pl/app/id6780575828?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

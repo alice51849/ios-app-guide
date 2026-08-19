@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ऑफलाइन
 - App Store · मोफत
 
-[App Store वरून Wordmate Lite: इंग्रजी शिका मिळवा](https://apps.apple.com/in/app/id6797601720)
+[App Store वरून Wordmate Lite: इंग्रजी शिका मिळवा](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=iag_data_mr_in&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/wordmatelite.html)
 

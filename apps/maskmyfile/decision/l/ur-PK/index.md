@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - نجی / آلہ پر
 - App Store · مفت
 
-[App Store سے Mask My File حاصل کریں](https://apps.apple.com/pk/app/id6792850916)
+[App Store سے Mask My File حاصل کریں](https://apps.apple.com/pk/app/id6792850916?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/maskmyfile.html)
 

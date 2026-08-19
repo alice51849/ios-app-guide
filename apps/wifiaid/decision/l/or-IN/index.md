@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ପୈସା ଦେଇ ଡାଉନଲୋଡ୍
 - App Store · ₹ 599
 
-[App Store ରୁ WiFi Aid ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6790467886)
+[App Store ରୁ WiFi Aid ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_or_in&mt=8)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/wifiaid.html)
 

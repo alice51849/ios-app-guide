@@ -17,7 +17,7 @@ Si vous planifiez un voyage à venir, une chronologie claire pour ce voyage est 
 - Gratuit au départ · déverrouillage définitif
 - App Store · Gratuit
 
-[Obtenez TripBee Lite sur l’App Store →](https://apps.apple.com/fr/app/id6791299610)
+[Obtenez TripBee Lite sur l’App Store →](https://apps.apple.com/fr/app/id6791299610?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

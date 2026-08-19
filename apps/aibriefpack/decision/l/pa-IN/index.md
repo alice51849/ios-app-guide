@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
 - App Store · ਮੁਫ਼ਤ
 
-[App Store ਤੋਂ AI Brief ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6791658210)
+[App Store ਤੋਂ AI Brief ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=iag_data_pa_in&mt=8)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/aibriefpack.html)
 

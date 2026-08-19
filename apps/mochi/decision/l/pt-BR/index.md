@@ -19,7 +19,7 @@ Se a maioria dos apps de tarefas parece inchada, o ideal é uma lista limpa com 
 - App Store · Grátis
 - ★ 5.0/5 · 1
 
-[Baixe o Mochi na App Store →](https://apps.apple.com/br/app/id6785004775)
+[Baixe o Mochi na App Store →](https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=iag_data_pt_br&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

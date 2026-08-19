@@ -18,7 +18,7 @@ Snapport Lite - Buat foto paspor, visa, dan kartu identitas dengan panduan ukura
 - Offline
 - App Store · Gratis
 
-[Dapatkan Snapport Lite di App Store](https://apps.apple.com/id/app/id6792856304)
+[Dapatkan Snapport Lite di App Store](https://apps.apple.com/id/app/id6792856304?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/snapportlite.html)
 

@@ -18,7 +18,7 @@ Els nens no es queden quiets mai, així que les fotos desenfocades i tremolades 
 - Privat / en el dispositiu
 - App Store · Gratis
 
-[Descarrega Unblurry a l’App Store →](https://apps.apple.com/es/app/id6782275018)
+[Descarrega Unblurry a l’App Store →](https://apps.apple.com/es/app/id6782275018?pt=118326163&ct=iag_data_ca&mt=8)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

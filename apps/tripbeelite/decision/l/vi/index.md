@@ -17,7 +17,7 @@ Nếu bạn đang lên kế hoạch cho một hành trình sắp tới, một d�
 - Bắt đầu miễn phí · mở khóa vĩnh viễn
 - App Store · Miễn phí
 
-[Tải TripBee Lite trên App Store →](https://apps.apple.com/vn/app/id6791299610)
+[Tải TripBee Lite trên App Store →](https://apps.apple.com/vn/app/id6791299610?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

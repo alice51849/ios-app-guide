@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - বিনামূল্যে শুরু · আজীবন আনলক
 - গোপনীয় / ডিভাইসে
 
-[App Store থেকে Mask My File ডাউনলোড করুন](https://apps.apple.com/app/id6792850916)
+[App Store থেকে Mask My File ডাউনলোড করুন](https://apps.apple.com/app/id6792850916?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/maskmyfile.html)
 

@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Безкоштовно для початку · довічне розблокування
 - App Store · Безкоштовно
 
-[Завантажте OnePage PPT: ШІ-слайди з App Store](https://apps.apple.com/ua/app/id6798814385)
+[Завантажте OnePage PPT: ШІ-слайди з App Store](https://apps.apple.com/ua/app/id6798814385?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/onepageppt.html)
 

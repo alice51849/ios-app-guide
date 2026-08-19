@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.
 
 - 理財與旅行
-- 免費開始 · 一次購買解鎖
+- 免費開始 · 永久解鎖
 - 免帳號
 - 無追蹤
 - 隱私優先／裝置端
@@ -22,7 +22,7 @@ HoursTag Lite — HoursTag Lite - See the real price of things Every purchase co
 - Apple Watch
 - App Store · 免費
 
-[Get HoursTag Lite on the App Store →](https://apps.apple.com/tw/app/id6794039979)
+[Get HoursTag Lite on the App Store →](https://apps.apple.com/tw/app/id6794039979?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-convert-prices-into-work-hours-before-buying.html)
 

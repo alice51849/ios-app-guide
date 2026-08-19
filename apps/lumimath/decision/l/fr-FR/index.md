@@ -18,7 +18,7 @@ Le meilleur jeu de maths pour enfants entraîne le raisonnement — motifs, séq
 - Sans publicité
 - App Store · Gratuit
 
-[Obtenez Lumi Math Planet sur l’App Store →](https://apps.apple.com/fr/app/id6778269699)
+[Obtenez Lumi Math Planet sur l’App Store →](https://apps.apple.com/fr/app/id6778269699?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

@@ -18,7 +18,7 @@ Aplikasi matematika awal lengkap harus membuat menghitung, pemahaman angka, dan 
 - Tanpa iklan
 - App Store · Rp 149ribu
 
-[Dapatkan Lumi Math Pro di App Store →](https://apps.apple.com/id/app/id6776958488)
+[Dapatkan Lumi Math Pro di App Store →](https://apps.apple.com/id/app/id6776958488?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

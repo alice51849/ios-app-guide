@@ -17,7 +17,7 @@ Når du bytter felt, er CV-problemet annerledes: erfaringen din er ekte, men 'ir
 - Gratis å starte · livstidsopplåsing
 - App Store · Gratis
 
-[Få CV Desk i App Store →](https://apps.apple.com/no/app/id6781337213)
+[Få CV Desk i App Store →](https://apps.apple.com/no/app/id6781337213?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-resume-builder-app-for-career-changers-2026.html)
 

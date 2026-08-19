@@ -17,7 +17,7 @@ Bahagian 5 nampak pendek, tetapi soalan ayat tidak lengkap boleh mengambil masa 
 - Percuma untuk bermula · buka kunci kekal
 - App Store · Percuma
 
-[Dapatkan Aim990 di App Store →](https://apps.apple.com/my/app/id6784974530)
+[Dapatkan Aim990 di App Store →](https://apps.apple.com/my/app/id6784974530?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

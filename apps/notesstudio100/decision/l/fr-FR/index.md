@@ -20,7 +20,7 @@ Une seule app au lieu d'en jongler avec cinq. 100 Notes Studio est un atelier pa
 - Privé / sur l’appareil
 - App Store · Gratuit
 
-[Obtenir 100 Notes Studio: Pen & Paper sur l'App Store](https://apps.apple.com/fr/app/id6798813048)
+[Obtenir 100 Notes Studio: Pen & Paper sur l'App Store](https://apps.apple.com/fr/app/id6798813048?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/notesstudio100.html)
 

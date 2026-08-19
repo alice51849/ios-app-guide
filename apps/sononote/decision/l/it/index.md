@@ -18,7 +18,7 @@ Dopo una chiamata non vuoi una trascrizione grezza — vuoi il riassunto, le azi
 - Privato / su dispositivo
 - App Store · Gratis
 
-[Scarica Sono Note dall’App Store →](https://apps.apple.com/it/app/id6782139553)
+[Scarica Sono Note dall’App Store →](https://apps.apple.com/it/app/id6782139553?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

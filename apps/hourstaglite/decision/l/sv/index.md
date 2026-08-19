@@ -22,7 +22,7 @@ HoursTag Lite - Det verkliga priset på saker Varje köp kostar timmar av ditt l
 - Apple Watch
 - App Store · Gratis
 
-[Hämta HoursTag Lite i App Store](https://apps.apple.com/se/app/id6794039979)
+[Hämta HoursTag Lite i App Store](https://apps.apple.com/se/app/id6794039979?pt=118326163&ct=iag_data_sv&mt=8)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/hourstaglite.html)
 

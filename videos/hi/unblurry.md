@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [वीडियो देखें](https://files.catbox.moe/oiiwl3.mp4)
 
-[App Store से Unblurry प्राप्त करें →](https://apps.apple.com/in/app/id6782275018)
+[App Store से Unblurry प्राप्त करें →](https://apps.apple.com/in/app/id6782275018?pt=118326163&ct=iag_video_hi&mt=8)
 
 [ऐप गाइड खोलें](https://alice51849.github.io/ios-app-guide/hi/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

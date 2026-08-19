@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - プライベート／端末内
 - App Store · ¥1,000
 
-[App StoreでTripBee Pro: Trip Plannerを入手 →](https://apps.apple.com/jp/app/id6787754435)
+[App StoreでTripBee Pro: Trip Plannerを入手 →](https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

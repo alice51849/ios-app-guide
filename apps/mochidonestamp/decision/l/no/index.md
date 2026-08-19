@@ -17,7 +17,7 @@ Når skiftet du sist sengetøy, vannet en plante, ringte familien, sikkerhetskop
 - Gratis å starte · livstidsopplåsing
 - App Store · Gratis
 
-[Last ned Mochi DoneStamp: Sist fra App Store](https://apps.apple.com/no/app/id6790800323)
+[Last ned Mochi DoneStamp: Sist fra App Store](https://apps.apple.com/no/app/id6790800323?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/mochidonestamp.html)
 

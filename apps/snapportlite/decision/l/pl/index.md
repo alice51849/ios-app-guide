@@ -18,7 +18,7 @@ Snapport Lite - Twórz zdjęcia paszportowe, wizowe i dokumentowe z pomocą narz
 - Offline
 - App Store · Bezpłatnie
 
-[Pobierz Snapport Lite z App Store](https://apps.apple.com/pl/app/id6792856304)
+[Pobierz Snapport Lite z App Store](https://apps.apple.com/pl/app/id6792856304?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/snapportlite.html)
 

@@ -18,7 +18,7 @@ Bedre kontekst. Bedre svar. Gjør skjermbilder, filer, notater og dokumenter om 
 - Privat / på enheten
 - App Store · Gratis
 
-[Last ned AI Brief fra App Store](https://apps.apple.com/no/app/id6791658210)
+[Last ned AI Brief fra App Store](https://apps.apple.com/no/app/id6791658210?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/aibriefpack.html)
 

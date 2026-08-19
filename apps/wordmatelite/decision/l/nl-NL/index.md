@@ -18,7 +18,7 @@ Vijf woorden. Eén minuut. Een pad dat je echt ziet liggen. De meeste apps voor 
 - Offline
 - App Store · Gratis
 
-[Download Wordmate Lite: Woordenschat in de App Store](https://apps.apple.com/nl/app/id6797601720)
+[Download Wordmate Lite: Woordenschat in de App Store](https://apps.apple.com/nl/app/id6797601720?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/wordmatelite.html)
 

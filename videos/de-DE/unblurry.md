@@ -16,7 +16,7 @@ Kinder halten nie still, daher sind leicht unscharfe und verwackelte Fotos unver
 
 [Video ansehen](https://files.catbox.moe/m4nly0.mp4)
 
-[Unblurry im App Store herunterladen →](https://apps.apple.com/de/app/id6782275018)
+[Unblurry im App Store herunterladen →](https://apps.apple.com/de/app/id6782275018?pt=118326163&ct=iag_video_de_de&mt=8)
 
 [App-Leitfaden öffnen](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

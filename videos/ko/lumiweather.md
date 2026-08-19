@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [영상 보기](https://files.catbox.moe/fu7uq6.mp4)
 
-[App Store에서 Lumi Weather 받기 →](https://apps.apple.com/kr/app/id6779552704)
+[App Store에서 Lumi Weather 받기 →](https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=iag_video_ko&mt=8)
 
 [앱 가이드 열기](https://alice51849.github.io/ios-app-guide/ko/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

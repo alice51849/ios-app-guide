@@ -17,7 +17,7 @@ Prata när det verkligen gäller. Med DailyMate Lite tränar du kompletta replik
 - Gratis att börja · livstidsupplåsning
 - App Store · Gratis
 
-[Hämta DailyMate Lite: Tala idag i App Store](https://apps.apple.com/se/app/id6794725568)
+[Hämta DailyMate Lite: Tala idag i App Store](https://apps.apple.com/se/app/id6794725568?pt=118326163&ct=iag_data_sv&mt=8)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/dailymatelite.html)
 

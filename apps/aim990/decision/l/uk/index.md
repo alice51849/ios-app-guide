@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Безкоштовно для початку · довічне розблокування
 - App Store · Безкоштовно
 
-[Отримайте Aim990 в App Store →](https://apps.apple.com/ua/app/id6784974530)
+[Отримайте Aim990 в App Store →](https://apps.apple.com/ua/app/id6784974530?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

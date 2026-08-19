@@ -18,7 +18,7 @@ Barn holder aldri helt stille, så myk fokus og kameraristing er uunngåelig —
 - Privat / på enheten
 - App Store · Gratis
 
-[Last ned Unblurry i App Store →](https://apps.apple.com/no/app/id6782275018)
+[Last ned Unblurry i App Store →](https://apps.apple.com/no/app/id6782275018?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

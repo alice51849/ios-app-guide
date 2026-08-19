@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Χωρίς διαφημίσεις
 - App Store · Δωρεάν
 
-[Κατεβάστε το Lumi Letters από το App Store →](https://apps.apple.com/gr/app/id6778748533)
+[Κατεβάστε το Lumi Letters από το App Store →](https://apps.apple.com/gr/app/id6778748533?pt=118326163&ct=iag_data_el&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

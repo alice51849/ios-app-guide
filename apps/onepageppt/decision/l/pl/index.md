@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Darmowe na start · dożywotni dostęp
 - App Store · Bezpłatnie
 
-[Pobierz OnePage PPT: slajd z AI z App Store](https://apps.apple.com/pl/app/id6798814385)
+[Pobierz OnePage PPT: slajd z AI z App Store](https://apps.apple.com/pl/app/id6798814385?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/onepageppt.html)
 

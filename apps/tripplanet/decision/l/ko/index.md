@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 어린 자녀와 여행하는 부모는 짐 싸기, 대기, 새로운 장소 탐험을 모험의 일부로 만들어주는 활동이 필요하며, Lumi Trip Planet은 이를 위해 만들어졌습니다.
 
 - 어린이 & 학습
-- 무료로 시작 · 한 번 구매 잠금 해제
+- 무료로 시작 · 평생 잠금 해제
 - 광고 없음
 - App Store · 무료
 
-[App Store에서 Lumi Trip Planet 받기 →](https://apps.apple.com/kr/app/id6787193643)
+[App Store에서 Lumi Trip Planet 받기 →](https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=iag_data_ko&mt=8)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

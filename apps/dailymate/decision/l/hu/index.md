@@ -18,7 +18,7 @@ Utazás előtt a valós helyzetekhez illő teljes kifejezések hasznosabbak, min
 - Apple Watch
 - App Store · HUF4,990.00
 
-[Szerezd be a DailyMate-et az App Store-ból →](https://apps.apple.com/hu/app/id6790418321)
+[Szerezd be a DailyMate-et az App Store-ból →](https://apps.apple.com/hu/app/id6790418321?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

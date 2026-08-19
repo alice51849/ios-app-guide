@@ -18,7 +18,7 @@ Rodičia cestujúci s malými deťmi potrebujú aktivity, ktoré premenia baleni
 - Bez reklám
 - App Store · Zadarmo
 
-[Získajte Lumi Trip Planet v App Store →](https://apps.apple.com/sk/app/id6787193643)
+[Získajte Lumi Trip Planet v App Store →](https://apps.apple.com/sk/app/id6787193643?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

@@ -18,7 +18,7 @@ La migliore app di matematica per bambini allena il ragionamento — schemi, seq
 - Nessuna pubblicità
 - App Store · Gratis
 
-[Scarica Lumi Math Planet dall'App Store →](https://apps.apple.com/it/app/id6778269699)
+[Scarica Lumi Math Planet dall'App Store →](https://apps.apple.com/it/app/id6778269699?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

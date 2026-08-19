@@ -18,7 +18,7 @@ Después de una llamada no quieres una transcripción cruda — quieres el resum
 - Privado / en el dispositivo
 - App Store · Gratis
 
-[Obtén Sono Note en la App Store →](https://apps.apple.com/mx/app/id6782139553)
+[Obtén Sono Note en la App Store →](https://apps.apple.com/mx/app/id6782139553?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

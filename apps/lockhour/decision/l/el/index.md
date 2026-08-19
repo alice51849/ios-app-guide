@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Ιδιωτικό / στη συσκευή
 - App Store · Δωρεάν
 
-[Κατεβάστε το LockHour Pro από το App Store →](https://apps.apple.com/gr/app/id6780107485)
+[Κατεβάστε το LockHour Pro από το App Store →](https://apps.apple.com/gr/app/id6780107485?pt=118326163&ct=iag_data_el&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

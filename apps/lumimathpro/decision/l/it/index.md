@@ -18,7 +18,7 @@ Un’app matematica completa dovrebbe far percepire conteggio, senso numerico e 
 - Nessuna pubblicità
 - App Store · 9,99 €
 
-[Scarica Lumi Math Pro su App Store →](https://apps.apple.com/it/app/id6776958488)
+[Scarica Lumi Math Pro su App Store →](https://apps.apple.com/it/app/id6776958488?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

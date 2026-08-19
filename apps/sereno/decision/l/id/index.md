@@ -19,7 +19,7 @@ Untuk tidur, langganan yang mengganggu setiap bulan bertentangan dengan ketenang
 - Tanpa iklan
 - App Store · Gratis
 
-[Dapatkan Sereno di App Store →](https://apps.apple.com/id/app/id6788236641)
+[Dapatkan Sereno di App Store →](https://apps.apple.com/id/app/id6788236641?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

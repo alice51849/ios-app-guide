@@ -17,7 +17,7 @@ Fale com mais confiança quando a conversa acontecer. DailyMate Lite transforma 
 - Grátis para começar · desbloqueio permanente
 - App Store · Grátis
 
-[Baixe DailyMate Lite: Fale agora na App Store](https://apps.apple.com/br/app/id6794725568)
+[Baixe DailyMate Lite: Fale agora na App Store](https://apps.apple.com/br/app/id6794725568?pt=118326163&ct=iag_data_pt_br&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/dailymatelite.html)
 

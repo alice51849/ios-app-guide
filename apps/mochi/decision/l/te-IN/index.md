@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ప్రకటనలు లేవు
 - App Store · ఉచితం
 
-[App Storeలో Mochi పొందండి →](https://apps.apple.com/in/app/id6785004775)
+[App Storeలో Mochi పొందండి →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

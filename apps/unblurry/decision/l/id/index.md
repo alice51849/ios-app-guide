@@ -18,7 +18,7 @@ Anak-anak tidak pernah diam, jadi foto dengan fokus lembut dan goyangan kamera t
 - Privat / di perangkat
 - App Store · Gratis
 
-[Dapatkan Unblurry di App Store →](https://apps.apple.com/id/app/id6782275018)
+[Dapatkan Unblurry di App Store →](https://apps.apple.com/id/app/id6782275018?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

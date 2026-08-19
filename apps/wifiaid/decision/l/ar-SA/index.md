@@ -17,7 +17,7 @@ When Wi-Fi says connected but work still cannot get online, the useful first ste
 - تحميل مدفوع
 - App Store · SAR 24.99
 
-[Get WiFi Aid on the App Store →](https://apps.apple.com/sa/app/id6790467886)
+[Get WiFi Aid on the App Store →](https://apps.apple.com/sa/app/id6790467886?pt=118326163&ct=iag_data_ar_sa&mt=8)
 
 [اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html)
 

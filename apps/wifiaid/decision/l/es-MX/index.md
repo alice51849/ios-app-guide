@@ -17,7 +17,7 @@ Encuentra la causa más probable con pruebas independientes de rutas, DNS, TCP, 
 - Descarga de pago
 - App Store · $129.00
 
-[Consigue WiFi Aid en el App Store](https://apps.apple.com/mx/app/id6790467886)
+[Consigue WiFi Aid en el App Store](https://apps.apple.com/mx/app/id6790467886?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/wifiaid.html)
 

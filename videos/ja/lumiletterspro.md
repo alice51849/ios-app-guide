@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [動画を見る](https://files.catbox.moe/0rbgg6.mp4)
 
-[App StoreでLumi Letters Proを入手 →](https://apps.apple.com/jp/app/id6778491147)
+[App StoreでLumi Letters Proを入手 →](https://apps.apple.com/jp/app/id6778491147?pt=118326163&ct=iag_video_ja&mt=8)
 
 [アプリガイドを開く](https://alice51849.github.io/ios-app-guide/ja/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

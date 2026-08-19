@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Без учётной записи
 - App Store · Бесплатно
 
-[Установить WiFi Aid Lite в App Store](https://apps.apple.com/ru/app/id6793414462)
+[Установить WiFi Aid Lite в App Store](https://apps.apple.com/ru/app/id6793414462?pt=118326163&ct=iag_data_ru&mt=8)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/wifiaidlite.html)
 

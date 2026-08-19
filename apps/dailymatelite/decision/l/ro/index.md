@@ -17,7 +17,7 @@ Vorbește când contează. DailyMate Lite transformă situațiile reale în exer
 - Început gratuit · deblocare pe viață
 - App Store · Gratuit
 
-[Descarcă DailyMate Lite: Vorbește azi din App Store](https://apps.apple.com/ro/app/id6794725568)
+[Descarcă DailyMate Lite: Vorbește azi din App Store](https://apps.apple.com/ro/app/id6794725568?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/dailymatelite.html)
 

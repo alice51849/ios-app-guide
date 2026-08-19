@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Χωρίς διαφημίσεις
 - App Store · Δωρεάν
 
-[Κατεβάστε το Lumi Math Planet από το App Store →](https://apps.apple.com/gr/app/id6778269699)
+[Κατεβάστε το Lumi Math Planet από το App Store →](https://apps.apple.com/gr/app/id6778269699?pt=118326163&ct=iag_data_el&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

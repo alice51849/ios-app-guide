@@ -18,7 +18,7 @@ Lapselle, joka oppii Zhuyiniä ensimmäistä kertaa, sovelluksen tulee kattaa ka
 - Ei mainoksia
 - App Store · Ilmainen
 
-[Hanki Lumi Bopomofo App Storesta →](https://apps.apple.com/fi/app/id6773017109)
+[Hanki Lumi Bopomofo App Storesta →](https://apps.apple.com/fi/app/id6773017109?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

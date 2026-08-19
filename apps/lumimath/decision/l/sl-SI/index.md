@@ -18,7 +18,7 @@ Najboljša otroška matematična aplikacija trenira razmišljanje — vzorce, za
 - Brez oglasov
 - App Store · Brezplačno
 
-[Prenesite Lumi Math Planet iz App Store →](https://apps.apple.com/si/app/id6778269699)
+[Prenesite Lumi Math Planet iz App Store →](https://apps.apple.com/si/app/id6778269699?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

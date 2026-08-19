@@ -22,7 +22,7 @@ HoursTag Lite - Den virkelige prisen på ting Hvert kjøp koster timer av livet 
 - Apple Watch
 - App Store · Gratis
 
-[Last ned HoursTag Lite fra App Store](https://apps.apple.com/no/app/id6794039979)
+[Last ned HoursTag Lite fra App Store](https://apps.apple.com/no/app/id6794039979?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/hourstaglite.html)
 

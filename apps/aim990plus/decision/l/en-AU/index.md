@@ -17,7 +17,7 @@ Get comfortable working against the clock Aim990 Plus is a dedicated listening a
 - Paid download
 - App Store · $9.99
 
-[Get Aim990 Plus on the App Store](https://apps.apple.com/au/app/id6792483140)
+[Get Aim990 Plus on the App Store](https://apps.apple.com/au/app/id6792483140?pt=118326163&ct=iag_data_en_au&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-AU/aim990plus.html)
 

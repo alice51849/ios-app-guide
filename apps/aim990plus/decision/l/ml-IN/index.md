@@ -17,7 +17,7 @@ Aim990 Plus മുതിർന്നവർക്ക് ഇംഗ്ലീഷ് 
 - പണം നൽകേണ്ട ഡൗൺലോഡ്
 - App Store · ₹ 599
 
-[App Store-ൽ നിന്ന് Aim990 Plus നേടൂ](https://apps.apple.com/in/app/id6792483140)
+[App Store-ൽ നിന്ന് Aim990 Plus നേടൂ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/aim990plus.html)
 

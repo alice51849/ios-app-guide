@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - プライベート／端末内
 - App Store · 無料
 
-[App Store で 100 Notes Studio: Pen & Paper を入手](https://apps.apple.com/jp/app/id6798813048)
+[App Store で 100 Notes Studio: Pen & Paper を入手](https://apps.apple.com/jp/app/id6798813048?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/notesstudio100.html)
 

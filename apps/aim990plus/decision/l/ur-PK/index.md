@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ادا شدہ ڈاؤن لوڈ
 - App Store · Rs 1,700.00
 
-[App Store سے Aim990 Plus حاصل کریں](https://apps.apple.com/pk/app/id6792483140)
+[App Store سے Aim990 Plus حاصل کریں](https://apps.apple.com/pk/app/id6792483140?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/aim990plus.html)
 

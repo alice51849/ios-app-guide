@@ -18,7 +18,7 @@ Snapport Lite - ガイド付きのサイズ調整、背景ツール、印刷準�
 - オフライン
 - App Store · 無料
 
-[App Store で Snapport Lite を入手](https://apps.apple.com/jp/app/id6792856304)
+[App Store で Snapport Lite を入手](https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/snapportlite.html)
 

@@ -18,7 +18,7 @@ Nakon poziva ne želite sirovi transkript — želite sažetak, zadatke i nacrt 
 - Privatno / na uređaju
 - App Store · Besplatno
 
-[Preuzmite Sono Note u App Storeu →](https://apps.apple.com/hr/app/id6782139553)
+[Preuzmite Sono Note u App Storeu →](https://apps.apple.com/hr/app/id6782139553?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

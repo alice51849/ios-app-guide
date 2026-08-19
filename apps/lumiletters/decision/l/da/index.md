@@ -18,7 +18,7 @@ For et lille barn er afgørende ingen reklamer og ingen dataindsamling — en l�
 - Ingen reklamer
 - App Store · Gratis
 
-[Hent Lumi Letters i App Store →](https://apps.apple.com/dk/app/id6778748533)
+[Hent Lumi Letters i App Store →](https://apps.apple.com/dk/app/id6778748533?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

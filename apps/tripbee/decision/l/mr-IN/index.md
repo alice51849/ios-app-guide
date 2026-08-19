@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - खाजगी / उपकरणावर
 - App Store · ₹ 599
 
-[App Store वरून TripBee Pro: Trip Planner मिळवा →](https://apps.apple.com/in/app/id6787754435)
+[App Store वरून TripBee Pro: Trip Planner मिळवा →](https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=iag_data_mr_in&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

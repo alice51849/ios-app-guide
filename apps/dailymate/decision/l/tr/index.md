@@ -18,7 +18,7 @@ Seyahatten önce, gerçek durumlar için tam ifadeler, baskı altında hâlâ bi
 - Apple Watch
 - App Store · ₺599,99
 
-[DailyMate’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6790418321)
+[DailyMate’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6790418321?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

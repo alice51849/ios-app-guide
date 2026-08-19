@@ -18,7 +18,7 @@ Otroci se nikoli ne držijo mirno, zato so mehko fokusirane in tresoče fotograf
 - Zasebno / na napravi
 - App Store · Brezplačno
 
-[Prenesite Unblurry iz App Store →](https://apps.apple.com/si/app/id6782275018)
+[Prenesite Unblurry iz App Store →](https://apps.apple.com/si/app/id6782275018?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

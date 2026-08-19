@@ -17,7 +17,7 @@ Kada ste zadnji put promijenili posteljinu, zalili biljku, nazvali obitelj, sigu
 - Besplatno za početak · doživotno otključavanje
 - App Store · Besplatno
 
-[Preuzmite Mochi DoneStamp: Zadnji put u App Storeu](https://apps.apple.com/hr/app/id6790800323)
+[Preuzmite Mochi DoneStamp: Zadnji put u App Storeu](https://apps.apple.com/hr/app/id6790800323?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/mochidonestamp.html)
 

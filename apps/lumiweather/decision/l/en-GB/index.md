@@ -14,12 +14,12 @@ publisher: "Lumi Studio"
 Parents planning outdoor time need more than a temperature: they need a quick, age-aware view of whether conditions suit a child and what clothing makes sense — Lumi Weather is built for this.
 
 - Children & learning
-- Free to start · one-time unlock
+- Free to start · lifetime unlock
 - No adverts
 - No tracking
 - App Store · Free
 
-[Get Lumi Weather on the App Store →](https://apps.apple.com/gb/app/id6779552704)
+[Get Lumi Weather on the App Store →](https://apps.apple.com/gb/app/id6779552704?pt=118326163&ct=iag_data_en_gb&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

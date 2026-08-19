@@ -22,7 +22,7 @@ Komuter sibuk perlukan latihan kosa kata yang sesuai untuk masa terluang tanpa p
 - Apple Watch
 - App Store · RM39.90
 
-[Dapatkan Wordmate: Learn 44 Languages di App Store →](https://apps.apple.com/my/app/id6789917808)
+[Dapatkan Wordmate: Learn 44 Languages di App Store →](https://apps.apple.com/my/app/id6789917808?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

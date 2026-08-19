@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Privat / på enheten
 - App Store · Gratis
 
-[Last ned 100 Notes Studio: Pen & Paper fra App Store](https://apps.apple.com/no/app/id6798813048)
+[Last ned 100 Notes Studio: Pen & Paper fra App Store](https://apps.apple.com/no/app/id6798813048?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/notesstudio100.html)
 

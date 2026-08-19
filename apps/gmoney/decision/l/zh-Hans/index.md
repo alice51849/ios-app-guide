@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - 无需账户
 - App Store · ¥38.00
 
-[在 App Store 获取 G+Money →](https://apps.apple.com/cn/app/id6755782939)
+[在 App Store 获取 G+Money →](https://apps.apple.com/cn/app/id6755782939?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

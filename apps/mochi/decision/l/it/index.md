@@ -19,7 +19,7 @@ Se la maggior parte delle app per liste ti sembra troppo complessa, quella giust
 - App Store · Gratis
 - ★ 5.0/5 · 1
 
-[Scarica Mochi dall'App Store →](https://apps.apple.com/it/app/id6785004775)
+[Scarica Mochi dall'App Store →](https://apps.apple.com/it/app/id6785004775?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ไม่มีบัญชี
 - App Store · ฿199.00
 
-[รับ G+Money ใน App Store →](https://apps.apple.com/th/app/id6755782939)
+[รับ G+Money ใน App Store →](https://apps.apple.com/th/app/id6755782939?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

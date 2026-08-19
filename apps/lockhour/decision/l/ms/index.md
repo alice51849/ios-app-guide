@@ -19,7 +19,7 @@ Semasa peperiksaan, kekuatan kehendak bukan alatnya — sekatan masa keras adala
 - Peribadi / pada peranti
 - App Store · Percuma
 
-[Dapatkan LockHour Pro di App Store →](https://apps.apple.com/my/app/id6780107485)
+[Dapatkan LockHour Pro di App Store →](https://apps.apple.com/my/app/id6780107485?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

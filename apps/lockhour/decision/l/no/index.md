@@ -19,7 +19,7 @@ Under eksamen er ikke viljestyrke verktøyet – en hard tidsbestemt blokkering 
 - Privat / på enheten
 - App Store · Gratis
 
-[Få LockHour Pro på App Store →](https://apps.apple.com/no/app/id6780107485)
+[Få LockHour Pro på App Store →](https://apps.apple.com/no/app/id6780107485?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

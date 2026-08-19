@@ -23,7 +23,7 @@ G+Money Lite — સ્માર્ટ મુસાફરી ચલણ અને
 - Apple Watch
 - App Store · મફત
 
-[App Store પરથી G+Money Lite મેળવો](https://apps.apple.com/in/app/id6793436548)
+[App Store પરથી G+Money Lite મેળવો](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=iag_data_gu_in&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/gmoneylite.html)
 

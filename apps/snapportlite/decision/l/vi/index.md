@@ -18,7 +18,7 @@ Snapport Lite - Tạo ảnh hộ chiếu, visa và giấy tờ với hướng d�
 - Ngoại tuyến
 - App Store · Miễn phí
 
-[Tải Snapport Lite trên App Store](https://apps.apple.com/vn/app/id6792856304)
+[Tải Snapport Lite trên App Store](https://apps.apple.com/vn/app/id6792856304?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/snapportlite.html)
 

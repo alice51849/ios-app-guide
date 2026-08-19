@@ -17,7 +17,7 @@ Să înțelegi engleza este important; să rămâi precis când timpul se scurge
 - Descărcare plătită
 - App Store · 29,99 lei
 
-[Descarcă Aim990 Plus din App Store](https://apps.apple.com/ro/app/id6792483140)
+[Descarcă Aim990 Plus din App Store](https://apps.apple.com/ro/app/id6792483140?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/aim990plus.html)
 

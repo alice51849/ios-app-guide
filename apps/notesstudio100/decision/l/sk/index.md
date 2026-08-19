@@ -20,7 +20,7 @@ Spojte ručné písanie, text z klávesnice, komentovanie PDF a študijné nást
 - Súkromné / v zariadení
 - App Store · Zadarmo
 
-[Stiahnuť 100 Notes Studio: Pen & Paper v App Store](https://apps.apple.com/sk/app/id6798813048)
+[Stiahnuť 100 Notes Studio: Pen & Paper v App Store](https://apps.apple.com/sk/app/id6798813048?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/notesstudio100.html)
 

@@ -18,7 +18,7 @@ Cinq mots, une minute, un pas de plus sur ton chemin. Wordmate Lite prend la vie
 - Hors ligne
 - App Store · Gratuit
 
-[Obtenir Wordmate Lite: 5 mots par jour sur l'App Store](https://apps.apple.com/ca/app/id6797601720)
+[Obtenir Wordmate Lite: 5 mots par jour sur l'App Store](https://apps.apple.com/ca/app/id6797601720?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/wordmatelite.html)
 

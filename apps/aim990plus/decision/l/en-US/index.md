@@ -17,7 +17,7 @@ Train for clear decisions under exam pressure Aim990 Plus is a focused listening
 - Paid download
 - App Store · $5.99
 
-[Get Aim990 Plus on the App Store](https://apps.apple.com/us/app/id6792483140)
+[Get Aim990 Plus on the App Store](https://apps.apple.com/us/app/id6792483140?pt=118326163&ct=iag_data_en_us&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-US/aim990plus.html)
 

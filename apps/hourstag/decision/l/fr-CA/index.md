@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Privé / sur l'appareil
 - App Store · $6.99
 
-[Obtenir HoursTag : Heures d’achat sur l'App Store](https://apps.apple.com/ca/app/id6754218117)
+[Obtenir HoursTag : Heures d’achat sur l'App Store](https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/hourstag.html)
 

@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Χωρίς παρακολούθηση
 - App Store · Δωρεάν
 
-[Αποκτήστε το Lumi Weather στο App Store →](https://apps.apple.com/gr/app/id6779552704)
+[Αποκτήστε το Lumi Weather στο App Store →](https://apps.apple.com/gr/app/id6779552704?pt=118326163&ct=iag_data_el&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

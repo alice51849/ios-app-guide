@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Приватно / на пристрої
 - App Store · 6,99 USD
 
-[Отримайте Snapport в App Store →](https://apps.apple.com/ua/app/id6780575828)
+[Отримайте Snapport в App Store →](https://apps.apple.com/ua/app/id6780575828?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

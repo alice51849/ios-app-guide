@@ -19,7 +19,7 @@ Para dormir, uma subscrição que incomoda todos os meses é o oposto de repousa
 - Sem anúncios
 - App Store · Grátis
 
-[Obtenha o Sereno na App Store →](https://apps.apple.com/pt/app/id6788236641)
+[Obtenha o Sereno na App Store →](https://apps.apple.com/pt/app/id6788236641?pt=118326163&ct=iag_data_pt_pt&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

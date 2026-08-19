@@ -17,7 +17,7 @@ Convierte un muro de texto en UNA lámina que sí se lee. OnePage PPT lee lo que
 - Gratis para empezar · desbloqueo permanente
 - App Store · Gratis
 
-[Consigue OnePage PPT: crea diapositivas en el App Store](https://apps.apple.com/mx/app/id6798814385)
+[Consigue OnePage PPT: crea diapositivas en el App Store](https://apps.apple.com/mx/app/id6798814385?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/onepageppt.html)
 

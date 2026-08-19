@@ -17,7 +17,7 @@ Ha egy közelgő utazást tervezel, egy nyugodt idővonal az adott útra hasznos
 - Ingyenes kezdés · életre szóló feloldás
 - App Store · Ingyenes
 
-[Szerezd be a TripBee Lite-ot az App Store-ból →](https://apps.apple.com/hu/app/id6791299610)
+[Szerezd be a TripBee Lite-ot az App Store-ból →](https://apps.apple.com/hu/app/id6791299610?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

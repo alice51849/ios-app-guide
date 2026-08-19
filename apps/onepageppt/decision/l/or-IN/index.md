@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍
 - App Store · ମାଗଣା
 
-[App Store ରୁ OnePage PPT: ଏକ ସ୍ଲାଇଡ୍ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6798814385)
+[App Store ରୁ OnePage PPT: ଏକ ସ୍ଲାଇଡ୍ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_data_or_in&mt=8)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/onepageppt.html)
 

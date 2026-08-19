@@ -14,10 +14,10 @@ publisher: "Lumi Studio"
 Part 5 looks short, but those incomplete-sentence questions can drain time if grammar and vocabulary are not automatic.
 
 - Education
-- Free to start · one-time unlock
+- Free to start · lifetime unlock
 - App Store · Free
 
-[Get Aim990 on the App Store →](https://apps.apple.com/ca/app/id6784974530)
+[Get Aim990 on the App Store →](https://apps.apple.com/ca/app/id6784974530?pt=118326163&ct=iag_data_en_ca&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-CA/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

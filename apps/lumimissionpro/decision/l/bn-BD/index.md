@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - পেইড ডাউনলোড
 - কোনও বিজ্ঞাপন নেই
 
-[App Store-এ Lumi Mission Planet Pro পান →](https://apps.apple.com/app/id6779745474)
+[App Store-এ Lumi Mission Planet Pro পান →](https://apps.apple.com/app/id6779745474?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

@@ -17,7 +17,7 @@ Los creadores de viajes necesitan un estilo de película repetible que agregue g
 - Gratis para empezar · desbloqueo permanente
 - App Store · Gratis
 
-[Consigue PhotoCream en App Store →](https://apps.apple.com/mx/app/id6781808054)
+[Consigue PhotoCream en App Store →](https://apps.apple.com/mx/app/id6781808054?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

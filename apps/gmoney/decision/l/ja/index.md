@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - アカウント不要
 - App Store · ¥800
 
-[App StoreでG+Moneyを入手 →](https://apps.apple.com/jp/app/id6755782939)
+[App StoreでG+Moneyを入手 →](https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

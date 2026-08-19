@@ -19,7 +19,7 @@ Sınavlarda irade gücü yeterli değildir — kesin zamanlı engelleme gerekir 
 - Gizli / cihazda
 - App Store · Ücretsiz
 
-[LockHour Pro'yu App Store'dan edinin →](https://apps.apple.com/tr/app/id6780107485)
+[LockHour Pro'yu App Store'dan edinin →](https://apps.apple.com/tr/app/id6780107485?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

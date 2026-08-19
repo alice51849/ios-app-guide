@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
 - App Store · ਮੁਫ਼ਤ
 
-[Lumi Trip Planet App Store 'ਤੇ ਲਵੋ →](https://apps.apple.com/in/app/id6787193643)
+[Lumi Trip Planet App Store 'ਤੇ ਲਵੋ →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_data_pa_in&mt=8)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

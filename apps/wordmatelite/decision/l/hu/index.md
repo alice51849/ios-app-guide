@@ -18,7 +18,7 @@ Szeretnél végre haladni egy nyelvvel, de estére megint elfogy a nap, és egye
 - Offline
 - App Store · Ingyenes
 
-[Töltse le a(z) Wordmate Lite: szótanulás appot az App Store-ból](https://apps.apple.com/hu/app/id6797601720)
+[Töltse le a(z) Wordmate Lite: szótanulás appot az App Store-ból](https://apps.apple.com/hu/app/id6797601720?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/wordmatelite.html)
 

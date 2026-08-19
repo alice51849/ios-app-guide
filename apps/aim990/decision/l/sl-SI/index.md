@@ -17,7 +17,7 @@ Del 5 se zdi kratek, a vprašanja z nepopolnimi stavki lahko vzamejo veliko čas
 - Brezplačen začetek · doživljenjska odklenitev
 - App Store · Brezplačno
 
-[Prenesite Aim990 v App Store →](https://apps.apple.com/si/app/id6784974530)
+[Prenesite Aim990 v App Store →](https://apps.apple.com/si/app/id6784974530?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

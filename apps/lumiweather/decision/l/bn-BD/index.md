@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - কোনও বিজ্ঞাপন নেই
 - কোনও ট্র্যাকিং নেই
 
-[App Store-এ Lumi Weather পান →](https://apps.apple.com/app/id6779552704)
+[App Store-এ Lumi Weather পান →](https://apps.apple.com/app/id6779552704?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

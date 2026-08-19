@@ -17,7 +17,7 @@ Kedy ste naposledy menili posteľnú bielizeň, polievali rastlinu, volali rodin
 - Zadarmo na začiatok · doživotné odomknutie
 - App Store · Zadarmo
 
-[Stiahnuť Mochi DoneStamp: Naposledy v App Store](https://apps.apple.com/sk/app/id6790800323)
+[Stiahnuť Mochi DoneStamp: Naposledy v App Store](https://apps.apple.com/sk/app/id6790800323?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/mochidonestamp.html)
 

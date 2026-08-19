@@ -23,7 +23,7 @@ G+Money Lite — 聪明的旅行汇率记账 旅行记账，从此简单 用当�
 - Apple Watch
 - App Store · 免费
 
-[在 App Store 获取 G+Money Lite](https://apps.apple.com/cn/app/id6793436548)
+[在 App Store 获取 G+Money Lite](https://apps.apple.com/cn/app/id6793436548?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/gmoneylite.html)
 

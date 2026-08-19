@@ -22,7 +22,7 @@ HoursTag Lite - De echte prijs van dingen Elke aankoop kost uren van je leven. H
 - Apple Watch
 - App Store · Gratis
 
-[Download HoursTag Lite in de App Store](https://apps.apple.com/nl/app/id6794039979)
+[Download HoursTag Lite in de App Store](https://apps.apple.com/nl/app/id6794039979?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/hourstaglite.html)
 

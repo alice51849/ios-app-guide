@@ -19,7 +19,7 @@ En voyage, vous avez besoin d’un suivi de budget qui fonctionne hors ligne dan
 - Aucun compte
 - App Store · $6.99
 
-[Obtenez G+Money sur l’App Store →](https://apps.apple.com/ca/app/id6755782939)
+[Obtenez G+Money sur l’App Store →](https://apps.apple.com/ca/app/id6755782939?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

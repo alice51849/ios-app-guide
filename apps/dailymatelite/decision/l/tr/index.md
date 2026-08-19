@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Başlangıçta ücretsiz · ömür boyu açma
 - App Store · Ücretsiz
 
-[DailyMate Lite: Bugün Konuşun uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6794725568)
+[DailyMate Lite: Bugün Konuşun uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6794725568?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/dailymatelite.html)
 

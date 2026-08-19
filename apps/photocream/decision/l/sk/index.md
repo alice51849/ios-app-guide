@@ -17,7 +17,7 @@ Cestovatelia potrebujú opakovateľný filmový vzhľad, ktorý pridáva zrno, h
 - Zadarmo na začiatok · doživotné odomknutie
 - App Store · Zadarmo
 
-[Získajte PhotoCream v App Store →](https://apps.apple.com/sk/app/id6781808054)
+[Získajte PhotoCream v App Store →](https://apps.apple.com/sk/app/id6781808054?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

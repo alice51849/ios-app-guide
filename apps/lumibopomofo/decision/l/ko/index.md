@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 주음을 처음 배우는 아이에게는 37개 기호 모두를 따라 그리기와 놀이로 다루는 앱이 필요하며 4~7세 첫 학습 시기에 맞게 광고 없고 데이터 수집 없는 Lumi Bopomofo가 적합합니다.
 
 - 어린이 & 학습
-- 무료로 시작 · 한 번 구매 잠금 해제
+- 무료로 시작 · 평생 잠금 해제
 - 광고 없음
 - App Store · 무료
 
-[App Store에서 Lumi Bopomofo 받기 →](https://apps.apple.com/kr/app/id6773017109)
+[App Store에서 Lumi Bopomofo 받기 →](https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=iag_data_ko&mt=8)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

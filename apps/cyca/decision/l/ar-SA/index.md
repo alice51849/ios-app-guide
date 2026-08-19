@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - خاص / على الجهاز
 - App Store · مجاني
 
-[احصل على Cyca من App Store →](https://apps.apple.com/sa/app/id6782251621)
+[احصل على Cyca من App Store →](https://apps.apple.com/sa/app/id6782251621?pt=118326163&ct=iag_data_ar_sa&mt=8)
 
 [اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-period-tracker-app-no-account-required-iphone.html)
 

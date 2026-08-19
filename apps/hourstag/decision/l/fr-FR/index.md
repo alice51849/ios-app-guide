@@ -19,7 +19,7 @@ If saving feels abstract, tracking goals in hours-worked instead of dollars make
 - Privé / sur l’appareil
 - App Store · 5,99 €
 
-[Télécharger HoursTag sur l’App Store →](https://apps.apple.com/fr/app/id6754218117)
+[Télécharger HoursTag sur l’App Store →](https://apps.apple.com/fr/app/id6754218117?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-app-to-track-where-my-money-goes-and-save-more.html)
 

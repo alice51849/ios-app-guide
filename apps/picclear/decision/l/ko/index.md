@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 빠르게 공간을 확보하려면 가장 큰 효과부터 노리세요: 정확한 중복 사진, 거의 동일한 연속 촬영, 흐릿한 사진, 큰 동영상 — PicClear가 아이폰에서 도와줍니다.
 
 - 사진 & 유틸리티
-- 무료로 시작 · 한 번 구매 잠금 해제
+- 무료로 시작 · 평생 잠금 해제
 - 프라이빗 / 기기 내
 - App Store · 무료
 
-[App Store에서 PicClear 받기 →](https://apps.apple.com/kr/app/id6780223070)
+[App Store에서 PicClear 받기 →](https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=iag_data_ko&mt=8)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

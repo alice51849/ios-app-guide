@@ -18,7 +18,7 @@ Une calculatrice que vous gardez, parce qu'elle se souvient du contexte de chaqu
 - Widget
 - App Store · Gratuit
 
-[Obtenir CalDaily : calculatrice sur l'App Store](https://apps.apple.com/fr/app/id6794178671)
+[Obtenir CalDaily : calculatrice sur l'App Store](https://apps.apple.com/fr/app/id6794178671?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/caldaily.html)
 

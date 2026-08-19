@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - জীবনধারা
 - বিনামূল্যে শুরু · আজীবন আনলক
 
-[App Store থেকে Mochi DoneStamp: শেষবার ডাউনলোড করুন](https://apps.apple.com/app/id6790800323)
+[App Store থেকে Mochi DoneStamp: শেষবার ডাউনলোড করুন](https://apps.apple.com/app/id6790800323?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/mochidonestamp.html)
 

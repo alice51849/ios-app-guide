@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - मुफ़्त शुरुआत · हमेशा के लिए अनलॉक
 - App Store · मुफ़्त
 
-[App Store पर Mochi DoneStamp: पिछली बार पाएँ](https://apps.apple.com/in/app/id6790800323)
+[App Store पर Mochi DoneStamp: पिछली बार पाएँ](https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=iag_data_hi&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/mochidonestamp.html)
 

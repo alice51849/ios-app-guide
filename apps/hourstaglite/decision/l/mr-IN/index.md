@@ -22,7 +22,7 @@ HoursTag Lite - सामानांची खरी किंमत पहा 
 - Apple Watch
 - App Store · मोफत
 
-[App Store वरून HoursTag Lite मिळवा](https://apps.apple.com/in/app/id6794039979)
+[App Store वरून HoursTag Lite मिळवा](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_mr_in&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/hourstaglite.html)
 

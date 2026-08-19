@@ -17,7 +17,7 @@ Amikor területet váltasz, az önéletrajz problémája más: a tapasztalat val
 - Ingyenes kezdés · életre szóló feloldás
 - App Store · Ingyenes
 
-[Szerezd be a CV Desk-et az App Store-ból →](https://apps.apple.com/hu/app/id6781337213)
+[Szerezd be a CV Desk-et az App Store-ból →](https://apps.apple.com/hu/app/id6781337213?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/answers/best-resume-builder-app-for-career-changers-2026.html)
 

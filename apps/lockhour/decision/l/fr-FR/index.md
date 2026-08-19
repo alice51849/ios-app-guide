@@ -19,7 +19,7 @@ Pendant les examens, la volonté ne suffit pas — un blocage strict et chronom�
 - Privé / sur l’appareil
 - App Store · Gratuit
 
-[Obtenez LockHour Pro sur l’App Store →](https://apps.apple.com/fr/app/id6780107485)
+[Obtenez LockHour Pro sur l’App Store →](https://apps.apple.com/fr/app/id6780107485?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

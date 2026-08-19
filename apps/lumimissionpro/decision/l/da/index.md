@@ -18,7 +18,7 @@ Tandbørstning og sengetid mislykkes ofte på samme tidspunkt hver aften: barnet
 - Ingen reklamer
 - App Store · 49,00 kr
 
-[Hent Lumi Mission Planet Pro i App Store →](https://apps.apple.com/dk/app/id6779745474)
+[Hent Lumi Mission Planet Pro i App Store →](https://apps.apple.com/dk/app/id6779745474?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

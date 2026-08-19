@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - ส่วนตัว / บนอุปกรณ์
 - App Store · ฟรี
 
-[ดาวน์โหลด LockHour Pro ใน App Store →](https://apps.apple.com/th/app/id6780107485)
+[ดาวน์โหลด LockHour Pro ใน App Store →](https://apps.apple.com/th/app/id6780107485?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

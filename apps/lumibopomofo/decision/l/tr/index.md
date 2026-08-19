@@ -18,7 +18,7 @@ Zhuyin'i ilk kez öğrenen bir çocuk için, uygulama tüm 37 sembolü çizerek 
 - Reklam yok
 - App Store · Ücretsiz
 
-[Lumi Bopomofo'yu App Store'dan edinin →](https://apps.apple.com/tr/app/id6773017109)
+[Lumi Bopomofo'yu App Store'dan edinin →](https://apps.apple.com/tr/app/id6773017109?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

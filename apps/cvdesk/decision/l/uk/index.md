@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Безкоштовно для початку · довічне розблокування
 - App Store · Безкоштовно
 
-[Отримайте CV Desk в App Store →](https://apps.apple.com/ua/app/id6781337213)
+[Отримайте CV Desk в App Store →](https://apps.apple.com/ua/app/id6781337213?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/answers/best-resume-builder-app-for-career-changers-2026.html)
 

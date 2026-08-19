@@ -18,7 +18,7 @@ Pre pasovú fotografiu bábätka nesmie byť v zábere nikto iný a pozadie mus�
 - Súkromné / v zariadení
 - App Store · 6,99 €
 
-[Stiahnite si Snapport v App Store →](https://apps.apple.com/sk/app/id6780575828)
+[Stiahnite si Snapport v App Store →](https://apps.apple.com/sk/app/id6780575828?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

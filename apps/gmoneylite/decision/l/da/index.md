@@ -23,7 +23,7 @@ G+Money Lite — Smart rejsevaluta- & udgiftstracker Rejsepenge, gjort enkelt Re
 - Apple Watch
 - App Store · Gratis
 
-[Hent G+Money Lite i App Store](https://apps.apple.com/dk/app/id6793436548)
+[Hent G+Money Lite i App Store](https://apps.apple.com/dk/app/id6793436548?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/gmoneylite.html)
 

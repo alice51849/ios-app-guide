@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [영상 보기](https://files.catbox.moe/3xucog.mp4)
 
-[앱 스토어에서 G+Money 받기 →](https://apps.apple.com/kr/app/id6755782939)
+[앱 스토어에서 G+Money 받기 →](https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=iag_video_ko&mt=8)
 
 [앱 가이드 열기](https://alice51849.github.io/ios-app-guide/ko/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 

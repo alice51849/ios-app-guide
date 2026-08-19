@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Privat / pe dispozitiv
 - App Store · Gratuit
 
-[Obține Cyca din App Store →](https://apps.apple.com/ro/app/id6782251621)
+[Obține Cyca din App Store →](https://apps.apple.com/ro/app/id6782251621?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-period-tracker-app-no-account-required-iphone.html)
 

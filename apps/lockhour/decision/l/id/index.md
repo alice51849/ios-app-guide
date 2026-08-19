@@ -19,7 +19,7 @@ Saat ujian, kemauan bukan alatnya — blok waktu yang ketat adalah — LockHour 
 - Privat / di perangkat
 - App Store · Gratis
 
-[Dapatkan LockHour Pro di App Store →](https://apps.apple.com/id/app/id6780107485)
+[Dapatkan LockHour Pro di App Store →](https://apps.apple.com/id/app/id6780107485?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

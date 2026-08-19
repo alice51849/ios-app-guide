@@ -17,7 +17,7 @@ Creatorii de călătorii au nevoie de un aspect de film repetabil care adaugă g
 - Început gratuit · deblocare pe viață
 - App Store · Gratuit
 
-[Descarcă PhotoCream din App Store →](https://apps.apple.com/ro/app/id6781808054)
+[Descarcă PhotoCream din App Store →](https://apps.apple.com/ro/app/id6781808054?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

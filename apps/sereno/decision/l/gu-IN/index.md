@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - કોઈ જાહેરાત નથી
 - App Store · મફત
 
-[App Store પર Sereno મેળવો →](https://apps.apple.com/in/app/id6788236641)
+[App Store પર Sereno મેળવો →](https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_data_gu_in&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

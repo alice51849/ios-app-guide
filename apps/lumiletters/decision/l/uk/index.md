@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Без реклами
 - App Store · Безкоштовно
 
-[Отримайте Lumi Letters в App Store →](https://apps.apple.com/ua/app/id6778748533)
+[Отримайте Lumi Letters в App Store →](https://apps.apple.com/ua/app/id6778748533?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Офлайн
 - App Store · Безкоштовно
 
-[Завантажте Wordmate Lite: вивчення мов з App Store](https://apps.apple.com/ua/app/id6797601720)
+[Завантажте Wordmate Lite: вивчення мов з App Store](https://apps.apple.com/ua/app/id6797601720?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/wordmatelite.html)
 

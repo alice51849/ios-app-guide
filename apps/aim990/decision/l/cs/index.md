@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Zdarma na začátek · doživotní odemknutí
 - App Store · Zdarma
 
-[Získejte Aim990 v App Store →](https://apps.apple.com/cz/app/id6784974530)
+[Získejte Aim990 v App Store →](https://apps.apple.com/cz/app/id6784974530?pt=118326163&ct=iag_data_cs&mt=8)
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [動画を見る](https://files.catbox.moe/v5n8j1.mp4)
 
-[App StoreでLumi Mission Planetを入手する →](https://apps.apple.com/jp/app/id6779750237)
+[App StoreでLumi Mission Planetを入手する →](https://apps.apple.com/jp/app/id6779750237?pt=118326163&ct=iag_video_ja&mt=8)
 
 [アプリガイドを開く](https://alice51849.github.io/ios-app-guide/ja/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

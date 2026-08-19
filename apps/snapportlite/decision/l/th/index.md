@@ -18,7 +18,7 @@ Snapport Lite - สร้างรูปพาสปอร์ต วีซ่า
 - ออฟไลน์
 - App Store · ฟรี
 
-[ดาวน์โหลด Snapport Lite บน App Store](https://apps.apple.com/th/app/id6792856304)
+[ดาวน์โหลด Snapport Lite บน App Store](https://apps.apple.com/th/app/id6792856304?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/snapportlite.html)
 

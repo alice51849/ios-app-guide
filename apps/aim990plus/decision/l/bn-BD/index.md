@@ -16,7 +16,7 @@ Aim990 Plus প্রাপ্তবয়স্ক শিক্ষার্থ�
 - শিশু ও শেখা
 - পেইড ডাউনলোড
 
-[App Store থেকে Aim990 Plus ডাউনলোড করুন](https://apps.apple.com/app/id6792483140)
+[App Store থেকে Aim990 Plus ডাউনলোড করুন](https://apps.apple.com/app/id6792483140?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/aim990plus.html)
 

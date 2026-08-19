@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - วิดเจ็ต
 - App Store · ฟรี
 
-[ดาวน์โหลด CalDaily: เครื่องคิดเลข บน App Store](https://apps.apple.com/th/app/id6794178671)
+[ดาวน์โหลด CalDaily: เครื่องคิดเลข บน App Store](https://apps.apple.com/th/app/id6794178671?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/caldaily.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
 
-[App Store ରୁ AI Brief ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6791658210)
+[App Store ରୁ AI Brief ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=iag_data_or_in&mt=8)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/aibriefpack.html)
 

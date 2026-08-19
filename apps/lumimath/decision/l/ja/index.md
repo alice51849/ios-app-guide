@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 広告なし
 - App Store · 無料
 
-[App StoreでLumi Math Planetを入手 →](https://apps.apple.com/jp/app/id6778269699)
+[App StoreでLumi Math Planetを入手 →](https://apps.apple.com/jp/app/id6778269699?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

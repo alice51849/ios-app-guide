@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - பின்தொடர்வு இல்லை
 - App Store · இலவசம்
 
-[Lumi Weather ஐ App Store-இல் பெறுங்கள் →](https://apps.apple.com/in/app/id6779552704)
+[Lumi Weather ஐ App Store-இல் பெறுங்கள் →](https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=iag_data_ta_in&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

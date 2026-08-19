@@ -18,7 +18,7 @@ Snapport Lite - 通过尺寸引导、背景工具和可打印输出，制作护�
 - 离线
 - App Store · 免费
 
-[在 App Store 获取 Snapport Lite](https://apps.apple.com/cn/app/id6792856304)
+[在 App Store 获取 Snapport Lite](https://apps.apple.com/cn/app/id6792856304?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/snapportlite.html)
 

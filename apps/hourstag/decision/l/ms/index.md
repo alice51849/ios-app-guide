@@ -19,7 +19,7 @@ If saving feels abstract, tracking goals in hours-worked instead of dollars make
 - Peribadi / pada peranti
 - App Store · RM22.90
 
-[Get HoursTag on the App Store →](https://apps.apple.com/my/app/id6754218117)
+[Get HoursTag on the App Store →](https://apps.apple.com/my/app/id6754218117?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-app-to-track-where-my-money-goes-and-save-more.html)
 

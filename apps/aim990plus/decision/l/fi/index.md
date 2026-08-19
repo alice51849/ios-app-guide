@@ -17,7 +17,7 @@ Aim990 Plus on aikuisille suunniteltu englannin kuuntelu- ja lukuharjoittelun ko
 - Maksullinen lataus
 - App Store · 6,99 €
 
-[Lataa Aim990 Plus App Storesta](https://apps.apple.com/fi/app/id6792483140)
+[Lataa Aim990 Plus App Storesta](https://apps.apple.com/fi/app/id6792483140?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/aim990plus.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - खाजगी / उपकरणावर
 - App Store · ₹ 599
 
-[App Store वरून Snapport मिळवा →](https://apps.apple.com/in/app/id6780575828)
+[App Store वरून Snapport मिळवा →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=iag_data_mr_in&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक
 - App Store · मोफत
 
-[App Store वरून OnePage PPT: स्लाइड मेकर मिळवा](https://apps.apple.com/in/app/id6798814385)
+[App Store वरून OnePage PPT: स्लाइड मेकर मिळवा](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_data_mr_in&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/onepageppt.html)
 

@@ -18,7 +18,7 @@ Nach einem Anruf wollen Sie kein rohes Transkript, sondern die Zusammenfassung, 
 - Privat / auf dem Gerät
 - App Store · Kostenlos
 
-[Sono Note im App Store herunterladen →](https://apps.apple.com/de/app/id6782139553)
+[Sono Note im App Store herunterladen →](https://apps.apple.com/de/app/id6782139553?pt=118326163&ct=iag_data_de_de&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

@@ -17,7 +17,7 @@ Lav en mur af tekst om til ÉT dias, folk rent faktisk læser. OnePage PPT læse
 - Gratis at komme i gang · permanent oplåsning
 - App Store · Gratis
 
-[Hent OnePage PPT: AI-slides i App Store](https://apps.apple.com/dk/app/id6798814385)
+[Hent OnePage PPT: AI-slides i App Store](https://apps.apple.com/dk/app/id6798814385?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/onepageppt.html)
 

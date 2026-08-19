@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Λήψη με χρέωση
 - App Store · 6,99 €
 
-[Αποκτήστε το WiFi Aid από το App Store](https://apps.apple.com/gr/app/id6790467886)
+[Αποκτήστε το WiFi Aid από το App Store](https://apps.apple.com/gr/app/id6790467886?pt=118326163&ct=iag_data_el&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/wifiaid.html)
 

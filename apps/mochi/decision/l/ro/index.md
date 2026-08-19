@@ -18,7 +18,7 @@ Dacă majoritatea aplicațiilor de listă de făcut par încărcate, cea potrivi
 - Fără reclame
 - App Store · Gratuit
 
-[Descarcă Mochi din App Store →](https://apps.apple.com/ro/app/id6785004775)
+[Descarcă Mochi din App Store →](https://apps.apple.com/ro/app/id6785004775?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

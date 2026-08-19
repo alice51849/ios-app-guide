@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context — Mask My File is built for this.
 
 - 照片與實用工具
-- 免費開始 · 一次購買解鎖
+- 免費開始 · 永久解鎖
 - 隱私優先／裝置端
 - App Store · 免費
 
-[Get Mask My File on the App Store →](https://apps.apple.com/tw/app/id6792850916)
+[Get Mask My File on the App Store →](https://apps.apple.com/tw/app/id6792850916?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html)
 

@@ -18,7 +18,7 @@ A fogmosás és esti rutin gyakran ugyanabban a pillanatban bukik el minden este
 - Nincs reklám
 - App Store · HUF2,490.00
 
-[Szerezd be a Lumi Mission Planet Pro-t az App Store-ban →](https://apps.apple.com/hu/app/id6779745474)
+[Szerezd be a Lumi Mission Planet Pro-t az App Store-ban →](https://apps.apple.com/hu/app/id6779745474?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

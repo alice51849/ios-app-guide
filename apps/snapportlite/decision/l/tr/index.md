@@ -18,7 +18,7 @@ Snapport Lite - Boyut, arka plan ve baskı kılavuzlarıyla pasaport, vize ve ki
 - Çevrimdışı
 - App Store · Ücretsiz
 
-[Snapport Lite uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6792856304)
+[Snapport Lite uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6792856304?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/snapportlite.html)
 

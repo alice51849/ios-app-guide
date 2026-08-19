@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [영상 보기](https://files.catbox.moe/smlet6.mp4)
 
-[앱 스토어에서 Cyca 받기 →](https://apps.apple.com/kr/app/id6782251621)
+[앱 스토어에서 Cyca 받기 →](https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=iag_video_ko&mt=8)
 
 [앱 가이드 열기](https://alice51849.github.io/ios-app-guide/ko/answers/best-period-tracker-app-no-account-required-iphone.html)
 

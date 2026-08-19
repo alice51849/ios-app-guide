@@ -22,7 +22,7 @@ HoursTag Lite - Pogledaj pravu cijenu stvari Svaka kupovina košta sate tvog ži
 - Apple Watch
 - App Store · Besplatno
 
-[Preuzmite HoursTag Lite u App Storeu](https://apps.apple.com/hr/app/id6794039979)
+[Preuzmite HoursTag Lite u App Storeu](https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/hourstaglite.html)
 

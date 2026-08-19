@@ -17,7 +17,7 @@ La Parte 5 sembra breve, ma le domande con frasi incomplete possono far perdere 
 - Gratis per iniziare · sblocco permanente
 - App Store · Gratis
 
-[Scarica Aim990 dall'App Store →](https://apps.apple.com/it/app/id6784974530)
+[Scarica Aim990 dall'App Store →](https://apps.apple.com/it/app/id6784974530?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

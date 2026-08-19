@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ¥88.00
 
-[在 App Store 获取 DailyMate →](https://apps.apple.com/cn/app/id6790418321)
+[在 App Store 获取 DailyMate →](https://apps.apple.com/cn/app/id6790418321?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

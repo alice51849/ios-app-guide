@@ -17,7 +17,7 @@ Si planifiques un viatge proper, una línia de temps tranquil·la per a aquest v
 - Inici gratuït · desbloqueig de per vida
 - App Store · Gratis
 
-[Descarrega TripBee Lite a l’App Store →](https://apps.apple.com/es/app/id6791299610)
+[Descarrega TripBee Lite a l’App Store →](https://apps.apple.com/es/app/id6791299610?pt=118326163&ct=iag_data_ca&mt=8)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

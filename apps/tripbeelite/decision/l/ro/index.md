@@ -17,7 +17,7 @@ Dacă planifici o singură călătorie viitoare, o cronologie liniștită pentru
 - Început gratuit · deblocare pe viață
 - App Store · Gratuit
 
-[Obține TripBee Lite din App Store →](https://apps.apple.com/ro/app/id6791299610)
+[Obține TripBee Lite din App Store →](https://apps.apple.com/ro/app/id6791299610?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

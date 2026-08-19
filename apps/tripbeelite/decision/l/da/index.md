@@ -17,7 +17,7 @@ Hvis du planlægger én kommende rejse, er en rolig tidslinje for den rejse mere
 - Gratis at komme i gang · permanent oplåsning
 - App Store · Gratis
 
-[Hent TripBee Lite i App Store →](https://apps.apple.com/dk/app/id6791299610)
+[Hent TripBee Lite i App Store →](https://apps.apple.com/dk/app/id6791299610?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

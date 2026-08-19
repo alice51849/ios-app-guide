@@ -18,7 +18,7 @@ Oszd meg biztonságosan úgy, hogy a fontos szövegkörnyezet megmarad. A Mask M
 - Privát / eszközön tárolt
 - App Store · Ingyenes
 
-[Töltse le a(z) Mask My File appot az App Store-ból](https://apps.apple.com/hu/app/id6792850916)
+[Töltse le a(z) Mask My File appot az App Store-ból](https://apps.apple.com/hu/app/id6792850916?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/maskmyfile.html)
 

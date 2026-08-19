@@ -18,7 +18,7 @@ A complete early-math app should make counting, number sense and first operation
 - No ads
 - App Store · $8.99
 
-[Get Lumi Math Pro on the App Store →](https://apps.apple.com/us/app/id6776958488)
+[Get Lumi Math Pro on the App Store →](https://apps.apple.com/us/app/id6776958488?pt=118326163&ct=iag_data_en_us&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-US/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

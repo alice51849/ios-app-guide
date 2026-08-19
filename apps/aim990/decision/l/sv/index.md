@@ -17,7 +17,7 @@ Del 5 ser kort ut, men de ofullständiga meningarna kan ta tid om grammatik och 
 - Gratis att börja · livstidsupplåsning
 - App Store · Gratis
 
-[Hämta Aim990 på App Store →](https://apps.apple.com/se/app/id6784974530)
+[Hämta Aim990 på App Store →](https://apps.apple.com/se/app/id6784974530?pt=118326163&ct=iag_data_sv&mt=8)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

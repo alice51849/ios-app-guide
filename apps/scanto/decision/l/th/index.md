@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ส่วนตัว / บนอุปกรณ์
 - App Store · ฟรี
 
-[ดาวน์โหลด ScanTo Pro ใน App Store →](https://apps.apple.com/th/app/id6779977651)
+[ดาวน์โหลด ScanTo Pro ใน App Store →](https://apps.apple.com/th/app/id6779977651?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

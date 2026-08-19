@@ -17,7 +17,7 @@ Transforme uma parede de texto em UM diapositivo que as pessoas leem mesmo. O On
 - Grátis para começar · desbloqueio permanente
 - App Store · Grátis
 
-[Baixe OnePage PPT: diapositivo IA na App Store](https://apps.apple.com/pt/app/id6798814385)
+[Baixe OnePage PPT: diapositivo IA na App Store](https://apps.apple.com/pt/app/id6798814385?pt=118326163&ct=iag_data_pt_pt&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/onepageppt.html)
 

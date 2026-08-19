@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - Приватно / на пристрої
 - App Store · 6,99 USD
 
-[Отримайте TripBee Pro: планувальник подорожей в App Store →](https://apps.apple.com/ua/app/id6787754435)
+[Отримайте TripBee Pro: планувальник подорожей в App Store →](https://apps.apple.com/ua/app/id6787754435?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

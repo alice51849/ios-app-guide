@@ -18,7 +18,7 @@ Mycie zębów i rutyna przed snem często nie wychodzą w tym samym momencie ka�
 - Bez reklam
 - App Store · 29,99 zł
 
-[Pobierz Lumi Mission Planet Pro z App Store →](https://apps.apple.com/pl/app/id6779745474)
+[Pobierz Lumi Mission Planet Pro z App Store →](https://apps.apple.com/pl/app/id6779745474?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 

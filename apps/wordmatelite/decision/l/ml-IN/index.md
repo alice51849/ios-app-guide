@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ഓഫ്‌ലൈൻ
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് Wordmate Lite: ഇംഗ്ലീഷ് പഠനം നേടൂ](https://apps.apple.com/in/app/id6797601720)
+[App Store-ൽ നിന്ന് Wordmate Lite: ഇംഗ്ലീഷ് പഠനം നേടൂ](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/wordmatelite.html)
 

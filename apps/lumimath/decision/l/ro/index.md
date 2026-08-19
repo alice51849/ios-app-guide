@@ -18,7 +18,7 @@ Cea mai bună aplicație de matematică pentru copii antrenează raționamentul 
 - Fără reclame
 - App Store · Gratuit
 
-[Descarcă Lumi Math Planet din App Store →](https://apps.apple.com/ro/app/id6778269699)
+[Descarcă Lumi Math Planet din App Store →](https://apps.apple.com/ro/app/id6778269699?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

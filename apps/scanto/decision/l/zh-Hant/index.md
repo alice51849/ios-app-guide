@@ -14,12 +14,12 @@ publisher: "Lumi Studio"
 如果你掃描病患同意書、出院文件或轉診單，掃描器必須將文件保留在裝置內，絕不上傳他人雲端 — ScanTo Pro 專為此打造。
 
 - 效率工具
-- 免費開始 · 一次購買解鎖
+- 免費開始 · 永久解鎖
 - 隱私優先／裝置端
 - App Store · 免費
 - ★ 5.0/5 · 1
 
-[在 App Store 取得 ScanTo Pro →](https://apps.apple.com/tw/app/id6779977651)
+[在 App Store 取得 ScanTo Pro →](https://apps.apple.com/tw/app/id6779977651?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

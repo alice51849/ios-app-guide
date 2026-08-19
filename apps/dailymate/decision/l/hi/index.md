@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ₹ 1,199
 
-[App Store पर DailyMate प्राप्त करें →](https://apps.apple.com/in/app/id6790418321)
+[App Store पर DailyMate प्राप्त करें →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=iag_data_hi&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

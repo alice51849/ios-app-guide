@@ -18,7 +18,7 @@ Pre dieťa, ktoré sa učí Zhuyin prvýkrát, by aplikácia mala pokrývať vš
 - Bez reklám
 - App Store · Zadarmo
 
-[Stiahnite si Lumi Bopomofo v App Store →](https://apps.apple.com/sk/app/id6773017109)
+[Stiahnite si Lumi Bopomofo v App Store →](https://apps.apple.com/sk/app/id6773017109?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

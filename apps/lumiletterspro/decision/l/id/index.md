@@ -18,7 +18,7 @@ Keluarga yang mempersiapkan TK butuh jalur membaca awal lengkap yang menghubungk
 - Tanpa iklan
 - App Store · Rp 149ribu
 
-[Dapatkan Lumi Letters Pro di App Store →](https://apps.apple.com/id/app/id6778491147)
+[Dapatkan Lumi Letters Pro di App Store →](https://apps.apple.com/id/app/id6778491147?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

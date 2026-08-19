@@ -17,7 +17,7 @@ Se está a planear uma viagem única, uma linha temporal calma para essa viagem 
 - Grátis para começar · desbloqueio permanente
 - App Store · Grátis
 
-[Obtenha o TripBee Lite na App Store →](https://apps.apple.com/pt/app/id6791299610)
+[Obtenha o TripBee Lite na App Store →](https://apps.apple.com/pt/app/id6791299610?pt=118326163&ct=iag_data_pt_pt&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

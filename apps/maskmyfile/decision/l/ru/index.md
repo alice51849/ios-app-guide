@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Лично / на устройстве
 - App Store · Бесплатно
 
-[Установить Mask My File в App Store](https://apps.apple.com/ru/app/id6792850916)
+[Установить Mask My File в App Store](https://apps.apple.com/ru/app/id6792850916?pt=118326163&ct=iag_data_ru&mt=8)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/maskmyfile.html)
 

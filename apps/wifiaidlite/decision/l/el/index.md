@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Χωρίς λογαριασμό
 - App Store · Δωρεάν
 
-[Αποκτήστε το WiFi Aid Lite από το App Store](https://apps.apple.com/gr/app/id6793414462)
+[Αποκτήστε το WiFi Aid Lite από το App Store](https://apps.apple.com/gr/app/id6793414462?pt=118326163&ct=iag_data_el&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/wifiaidlite.html)
 

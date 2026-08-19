@@ -19,7 +19,7 @@ Under tentor är viljestyrka inte verktyget – en hård tidsbegränsad blockeri
 - Privat / på enheten
 - App Store · Gratis
 
-[Skaffa LockHour Pro på App Store →](https://apps.apple.com/se/app/id6780107485)
+[Skaffa LockHour Pro på App Store →](https://apps.apple.com/se/app/id6780107485?pt=118326163&ct=iag_data_sv&mt=8)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

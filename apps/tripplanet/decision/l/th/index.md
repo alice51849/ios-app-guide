@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ไม่มีโฆษณา
 - App Store · ฟรี
 
-[ดาวน์โหลด Lumi Trip Planet ใน App Store →](https://apps.apple.com/th/app/id6787193643)
+[ดาวน์โหลด Lumi Trip Planet ใน App Store →](https://apps.apple.com/th/app/id6787193643?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

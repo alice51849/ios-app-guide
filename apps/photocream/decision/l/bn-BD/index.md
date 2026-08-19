@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 - ছবি ও ইউটিলিটি
 - বিনামূল্যে শুরু · আজীবন আনলক
 
-[App Store-এ PhotoCream পান →](https://apps.apple.com/app/id6781808054)
+[App Store-এ PhotoCream পান →](https://apps.apple.com/app/id6781808054?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

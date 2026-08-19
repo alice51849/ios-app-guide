@@ -17,7 +17,7 @@ Del 5 virker kort, men spørsmål med ufullstendige setninger kan ta tid hvis gr
 - Gratis å starte · livstidsopplåsing
 - App Store · Gratis
 
-[Få Aim990 i App Store →](https://apps.apple.com/no/app/id6784974530)
+[Få Aim990 i App Store →](https://apps.apple.com/no/app/id6784974530?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

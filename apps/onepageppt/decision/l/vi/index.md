@@ -17,7 +17,7 @@ Biến một bức tường chữ thành đúng một trang mà người ta ch�
 - Bắt đầu miễn phí · mở khóa vĩnh viễn
 - App Store · Miễn phí
 
-[Tải OnePage PPT: Slide AI trên App Store](https://apps.apple.com/vn/app/id6798814385)
+[Tải OnePage PPT: Slide AI trên App Store](https://apps.apple.com/vn/app/id6798814385?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/onepageppt.html)
 

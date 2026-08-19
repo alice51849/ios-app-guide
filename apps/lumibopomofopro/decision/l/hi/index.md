@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - कोई विज्ञापन नहीं
 - App Store · ₹ 999
 
-[App Store पर Lumi Bopomofo Pro प्राप्त करें →](https://apps.apple.com/in/app/id6775773117)
+[App Store पर Lumi Bopomofo Pro प्राप्त करें →](https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=iag_data_hi&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/answers/best-complete-zhuyin-app-for-bilingual-children.html)
 

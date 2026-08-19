@@ -18,7 +18,7 @@ Ako skenirate obrasce pristanka pacijenata, otpustne papire ili upute, skener mo
 - Privatno / na uređaju
 - App Store · Besplatno
 
-[Preuzmite ScanTo Pro u App Storeu →](https://apps.apple.com/hr/app/id6779977651)
+[Preuzmite ScanTo Pro u App Storeu →](https://apps.apple.com/hr/app/id6779977651?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

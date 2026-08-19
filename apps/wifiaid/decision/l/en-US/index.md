@@ -17,7 +17,7 @@ Find the most likely connection problem with independent path, DNS, TCP, TLS, ti
 - Paid download
 - App Store · $5.99
 
-[Get WiFi Aid on the App Store](https://apps.apple.com/us/app/id6790467886)
+[Get WiFi Aid on the App Store](https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-US/wifiaid.html)
 

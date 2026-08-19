@@ -17,7 +17,7 @@ Travel kreatorima treba ponovljiv filmski izgled koji dodaje zrnatost, halaciju 
 - Besplatno za početak · doživotno otključavanje
 - App Store · Besplatno
 
-[Preuzmite PhotoCream na App Storeu →](https://apps.apple.com/hr/app/id6781808054)
+[Preuzmite PhotoCream na App Storeu →](https://apps.apple.com/hr/app/id6781808054?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

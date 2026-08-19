@@ -18,7 +18,7 @@ Snapport Lite - आकार, पृष्ठभूमि और प्रिं
 - ऑफ़लाइन
 - App Store · मुफ़्त
 
-[App Store पर Snapport Lite पाएँ](https://apps.apple.com/in/app/id6792856304)
+[App Store पर Snapport Lite पाएँ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_hi&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/snapportlite.html)
 

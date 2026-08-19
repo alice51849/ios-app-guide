@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 広告なし
 - App Store · ¥1,500
 
-[App StoreでLumi Math Proを入手 →](https://apps.apple.com/jp/app/id6776958488)
+[App StoreでLumi Math Proを入手 →](https://apps.apple.com/jp/app/id6776958488?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

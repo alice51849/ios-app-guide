@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - بدء مجاني · فتح دائم
 - App Store · مجاني
 
-[احصل على CV Desk من App Store →](https://apps.apple.com/sa/app/id6781337213)
+[احصل على CV Desk من App Store →](https://apps.apple.com/sa/app/id6781337213?pt=118326163&ct=iag_data_ar_sa&mt=8)
 
 [اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-resume-builder-app-for-career-changers-2026.html)
 

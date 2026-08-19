@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - खाजगी / उपकरणावर
 - App Store · मोफत
 
-[App Store वरून ScanTo Pro मिळवा →](https://apps.apple.com/in/app/id6779977651)
+[App Store वरून ScanTo Pro मिळवा →](https://apps.apple.com/in/app/id6779977651?pt=118326163&ct=iag_data_mr_in&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

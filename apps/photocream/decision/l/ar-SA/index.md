@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - بدء مجاني · فتح دائم
 - App Store · مجاني
 
-[احصل على PhotoCream من App Store →](https://apps.apple.com/sa/app/id6781808054)
+[احصل على PhotoCream من App Store →](https://apps.apple.com/sa/app/id6781808054?pt=118326163&ct=iag_data_ar_sa&mt=8)
 
 [اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

@@ -18,7 +18,7 @@ Lepszy kontekst. Lepsze odpowiedzi. Przekształć zrzuty ekranu, pliki, notatki 
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 
-[Pobierz AI Brief z App Store](https://apps.apple.com/pl/app/id6791658210)
+[Pobierz AI Brief z App Store](https://apps.apple.com/pl/app/id6791658210?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/aibriefpack.html)
 

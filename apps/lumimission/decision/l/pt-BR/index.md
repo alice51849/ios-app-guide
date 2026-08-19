@@ -18,7 +18,7 @@ Para crianças pequenas, uma rotina noturna funciona melhor quando é curta, vis
 - Sem anúncios
 - App Store · Grátis
 
-[Obtenha Lumi Mission Planet na App Store →](https://apps.apple.com/br/app/id6779750237)
+[Obtenha Lumi Mission Planet na App Store →](https://apps.apple.com/br/app/id6779750237?pt=118326163&ct=iag_data_pt_br&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

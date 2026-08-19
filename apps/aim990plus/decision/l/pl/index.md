@@ -17,7 +17,7 @@ Zachowaj jasność myślenia, gdy liczy się każda sekunda. Aim990 Plus to inte
 - Płatne do pobrania
 - App Store · 29,99 zł
 
-[Pobierz Aim990 Plus z App Store](https://apps.apple.com/pl/app/id6792483140)
+[Pobierz Aim990 Plus z App Store](https://apps.apple.com/pl/app/id6792483140?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/aim990plus.html)
 

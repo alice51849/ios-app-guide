@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ
 - App Store · ਮੁਫ਼ਤ
 
-[App Store ਤੋਂ Mochi DoneStamp: ਪਿਛਲੀ ਵਾਰ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6790800323)
+[App Store ਤੋਂ Mochi DoneStamp: ਪਿਛਲੀ ਵਾਰ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=iag_data_pa_in&mt=8)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/mochidonestamp.html)
 

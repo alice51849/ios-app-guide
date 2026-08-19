@@ -18,7 +18,7 @@ Cada herramienta incluye un uso gratuito. Desbloqueo de por vida opcional de un 
 - Sin cuenta
 - App Store · Gratis
 
-[Consigue WiFi Aid Lite en el App Store](https://apps.apple.com/mx/app/id6793414462)
+[Consigue WiFi Aid Lite en el App Store](https://apps.apple.com/mx/app/id6793414462?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/wifiaidlite.html)
 

@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [動画を見る](https://files.catbox.moe/ak7xda.mp4)
 
-[App StoreでLockHour Proを入手 →](https://apps.apple.com/jp/app/id6780107485)
+[App StoreでLockHour Proを入手 →](https://apps.apple.com/jp/app/id6780107485?pt=118326163&ct=iag_video_ja&mt=8)
 
 [アプリガイドを開く](https://alice51849.github.io/ios-app-guide/ja/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

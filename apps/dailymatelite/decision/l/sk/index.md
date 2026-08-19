@@ -17,7 +17,7 @@ Hovorte s istotou práve vtedy, keď to potrebujete. DailyMate Lite mení situá
 - Zadarmo na začiatok · doživotné odomknutie
 - App Store · Zadarmo
 
-[Stiahnuť DailyMate Lite: Hovorte smelo v App Store](https://apps.apple.com/sk/app/id6794725568)
+[Stiahnuť DailyMate Lite: Hovorte smelo v App Store](https://apps.apple.com/sk/app/id6794725568?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/dailymatelite.html)
 

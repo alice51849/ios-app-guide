@@ -20,7 +20,7 @@ Aplikasi rencana perjalanan yang baik mengubah perjalanan yang berantakan menjad
 - Privat / di perangkat
 - App Store · Rp 99ribu
 
-[Dapatkan TripBee Pro: Trip Planner di App Store →](https://apps.apple.com/id/app/id6787754435)
+[Dapatkan TripBee Pro: Trip Planner di App Store →](https://apps.apple.com/id/app/id6787754435?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

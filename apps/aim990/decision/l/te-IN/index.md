@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్
 - App Store · ఉచితం
 
-[App Storeలో Aim990 పొందండి →](https://apps.apple.com/in/app/id6784974530)
+[App Storeలో Aim990 పొందండి →](https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

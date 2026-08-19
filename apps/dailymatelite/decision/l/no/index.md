@@ -17,7 +17,7 @@ Snakk når det teller. Med DailyMate Lite øver du på komplette replikkveksling
 - Gratis å starte · livstidsopplåsing
 - App Store · Gratis
 
-[Last ned DailyMate Lite: Snakk i dag fra App Store](https://apps.apple.com/no/app/id6794725568)
+[Last ned DailyMate Lite: Snakk i dag fra App Store](https://apps.apple.com/no/app/id6794725568?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/dailymatelite.html)
 

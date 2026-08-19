@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [動画を見る](https://files.catbox.moe/liceen.mp4)
 
-[App StoreでSnapportを入手 →](https://apps.apple.com/jp/app/id6780575828)
+[App StoreでSnapportを入手 →](https://apps.apple.com/jp/app/id6780575828?pt=118326163&ct=iag_video_ja&mt=8)
 
 [アプリガイドを開く](https://alice51849.github.io/ios-app-guide/ja/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 

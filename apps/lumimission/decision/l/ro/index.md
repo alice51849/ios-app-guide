@@ -18,7 +18,7 @@ Pentru un preșcolar, rutina de culcare funcționează cel mai bine când este s
 - Fără reclame
 - App Store · Gratuit
 
-[Obține Lumi Mission Planet din App Store →](https://apps.apple.com/ro/app/id6779750237)
+[Obține Lumi Mission Planet din App Store →](https://apps.apple.com/ro/app/id6779750237?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

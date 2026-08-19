@@ -17,7 +17,7 @@ Egy falnyi szövegből EGY dia, amit tényleg elolvasnak. Az OnePage PPT bármit
 - Ingyenes kezdés · életre szóló feloldás
 - App Store · Ingyenes
 
-[Töltse le a(z) OnePage PPT: MI-dia appot az App Store-ból](https://apps.apple.com/hu/app/id6798814385)
+[Töltse le a(z) OnePage PPT: MI-dia appot az App Store-ból](https://apps.apple.com/hu/app/id6798814385?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/onepageppt.html)
 

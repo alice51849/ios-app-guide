@@ -17,7 +17,7 @@ Maak van een muur tekst ÉÉN dia die mensen echt lezen. OnePage PPT leest alles
 - Gratis te starten · levenslange ontgrendeling
 - App Store · Gratis
 
-[Download OnePage PPT: AI-dia maker in de App Store](https://apps.apple.com/nl/app/id6798814385)
+[Download OnePage PPT: AI-dia maker in de App Store](https://apps.apple.com/nl/app/id6798814385?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/onepageppt.html)
 

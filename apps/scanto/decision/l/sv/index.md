@@ -18,7 +18,7 @@ Om du skannar patienters samtyckesformulär, utskrivningspapper eller remisser m
 - Privat / på enheten
 - App Store · Gratis
 
-[Skaffa ScanTo Pro på App Store →](https://apps.apple.com/se/app/id6779977651)
+[Skaffa ScanTo Pro på App Store →](https://apps.apple.com/se/app/id6779977651?pt=118326163&ct=iag_data_sv&mt=8)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

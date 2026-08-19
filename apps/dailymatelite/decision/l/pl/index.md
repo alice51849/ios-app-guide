@@ -17,7 +17,7 @@ Mów pewnie wtedy, gdy naprawdę tego potrzebujesz. DailyMate Lite zmienia codzi
 - Darmowe na start · dożywotni dostęp
 - App Store · Bezpłatnie
 
-[Pobierz DailyMate Lite: Nauka mówienia z App Store](https://apps.apple.com/pl/app/id6794725568)
+[Pobierz DailyMate Lite: Nauka mówienia z App Store](https://apps.apple.com/pl/app/id6794725568?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/dailymatelite.html)
 

@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - বিনামূল্যে শুরু · আজীবন আনলক
 - গোপনীয় / ডিভাইসে
 
-[App Store-এ Sono Note পান →](https://apps.apple.com/app/id6782139553)
+[App Store-এ Sono Note পান →](https://apps.apple.com/app/id6782139553?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 

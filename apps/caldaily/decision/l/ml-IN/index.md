@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - വിഡ്ജറ്റ്
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് CalDaily കാൽക്കുലേറ്റർ നേടൂ](https://apps.apple.com/in/app/id6794178671)
+[App Store-ൽ നിന്ന് CalDaily കാൽക്കുലേറ്റർ നേടൂ](https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/caldaily.html)
 

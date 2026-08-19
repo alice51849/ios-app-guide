@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Ιδιωτικό / στη συσκευή
 - App Store · Δωρεάν
 
-[Αποκτήστε το Mask My File από το App Store](https://apps.apple.com/gr/app/id6792850916)
+[Αποκτήστε το Mask My File από το App Store](https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=iag_data_el&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/maskmyfile.html)
 

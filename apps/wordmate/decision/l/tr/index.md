@@ -22,7 +22,7 @@ Yoğun yolculuklarda kelime pratiği, tam ders, yeni hesap veya her tekrar için
 - Apple Watch
 - App Store · ₺499,99
 
-[Wordmate: Learn 44 Languages’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6789917808)
+[Wordmate: Learn 44 Languages’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6789917808?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

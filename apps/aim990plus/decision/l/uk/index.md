@@ -17,7 +17,7 @@ Aim990 Plus — тренажер для дорослих, яким важлив�
 - Платне завантаження
 - App Store · 6,99 USD
 
-[Завантажте Aim990 Plus з App Store](https://apps.apple.com/ua/app/id6792483140)
+[Завантажте Aim990 Plus з App Store](https://apps.apple.com/ua/app/id6792483140?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/aim990plus.html)
 

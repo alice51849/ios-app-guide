@@ -18,7 +18,7 @@ Ak skenujete súhlas pacientov, prepúšťacie papiere alebo odporúčania, sken
 - Súkromné / v zariadení
 - App Store · Zadarmo
 
-[Stiahnite si ScanTo Pro v App Store →](https://apps.apple.com/sk/app/id6779977651)
+[Stiahnite si ScanTo Pro v App Store →](https://apps.apple.com/sk/app/id6779977651?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

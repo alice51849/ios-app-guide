@@ -14,12 +14,12 @@ publisher: "Lumi Studio"
 對學齡前兒童而言，睡前流程以簡短、視覺化且可預期為佳，讓孩子能自行完成而無需再次提醒 — Lumi Mission Planet正是為此而設計。
 
 - 兒童與學習
-- 免費開始 · 一次購買解鎖
+- 免費開始 · 永久解鎖
 - 無廣告
 - App Store · 免費
 - ★ 5.0/5 · 1
 
-[在App Store取得Lumi Mission Planet →](https://apps.apple.com/tw/app/id6779750237)
+[在App Store取得Lumi Mission Planet →](https://apps.apple.com/tw/app/id6779750237?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

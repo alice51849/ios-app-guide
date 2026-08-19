@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 付费下载
 - App Store · ¥38.00
 
-[在 App Store 获取 Aim990 Plus](https://apps.apple.com/cn/app/id6792483140)
+[在 App Store 获取 Aim990 Plus](https://apps.apple.com/cn/app/id6792483140?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/aim990plus.html)
 

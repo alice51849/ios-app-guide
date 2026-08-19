@@ -18,7 +18,7 @@ Löydä oikea ongelma. Jokainen työkalu sisältää yhden ilmaisen täyden käy
 - Ei tiliä
 - App Store · Ilmainen
 
-[Lataa WiFi Aid Lite App Storesta](https://apps.apple.com/fi/app/id6793414462)
+[Lataa WiFi Aid Lite App Storesta](https://apps.apple.com/fi/app/id6793414462?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/wifiaidlite.html)
 

@@ -18,7 +18,7 @@ Una calculadora que continuaràs fent servir, perquè recorda el raonament que h
 - Widget
 - App Store · Gratis
 
-[Descarrega CalDaily: calculadora i temes a l’App Store](https://apps.apple.com/es/app/id6794178671)
+[Descarrega CalDaily: calculadora i temes a l’App Store](https://apps.apple.com/es/app/id6794178671?pt=118326163&ct=iag_data_ca&mt=8)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/caldaily.html)
 

@@ -18,7 +18,7 @@ V kategoriji, kjer je občutljivost podatkov ključna, prava aplikacija za slede
 - Zasebno / na napravi
 - App Store · Brezplačno
 
-[Prenesite Cyca v App Store →](https://apps.apple.com/si/app/id6782251621)
+[Prenesite Cyca v App Store →](https://apps.apple.com/si/app/id6782251621?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-period-tracker-app-no-account-required-iphone.html)
 

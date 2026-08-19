@@ -18,7 +18,7 @@ Para un niño que aprende Zhuyin por primera vez, la app debe cubrir los 37 sím
 - Sin anuncios
 - App Store · Gratis
 
-[Consigue Lumi Bopomofo en la App Store →](https://apps.apple.com/es/app/id6773017109)
+[Consigue Lumi Bopomofo en la App Store →](https://apps.apple.com/es/app/id6773017109?pt=118326163&ct=iag_data_es_es&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-ES/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

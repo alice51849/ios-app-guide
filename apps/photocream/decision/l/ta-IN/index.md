@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்
 - App Store · இலவசம்
 
-[PhotoCream ஐ App Store-இல் பெறுங்கள் →](https://apps.apple.com/in/app/id6781808054)
+[PhotoCream ஐ App Store-இல் பெறுங்கள் →](https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=iag_data_ta_in&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

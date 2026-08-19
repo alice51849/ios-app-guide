@@ -22,7 +22,7 @@ HoursTag Lite - Vezi adevărata valoare a lucrurilor Fiecare achiziție costă o
 - Apple Watch
 - App Store · Gratuit
 
-[Descarcă HoursTag Lite din App Store](https://apps.apple.com/ro/app/id6794039979)
+[Descarcă HoursTag Lite din App Store](https://apps.apple.com/ro/app/id6794039979?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/hourstaglite.html)
 

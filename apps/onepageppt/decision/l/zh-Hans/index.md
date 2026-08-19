@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免费开始使用 · 永久解锁
 - App Store · 免费
 
-[在 App Store 获取 OnePage PPT: AI一页幻灯片](https://apps.apple.com/cn/app/id6798814385)
+[在 App Store 获取 OnePage PPT: AI一页幻灯片](https://apps.apple.com/cn/app/id6798814385?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/onepageppt.html)
 

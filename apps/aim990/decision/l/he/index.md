@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - התחלה ללא תשלום · פתיחה לכל החיים
 - App Store · בחינם
 
-[קבל את Aim990 ב-App Store →](https://apps.apple.com/il/app/id6784974530)
+[קבל את Aim990 ב-App Store →](https://apps.apple.com/il/app/id6784974530?pt=118326163&ct=iag_data_he&mt=8)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 

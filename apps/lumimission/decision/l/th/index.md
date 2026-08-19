@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ไม่มีโฆษณา
 - App Store · ฟรี
 
-[รับ Lumi Mission Planet ได้ที่ App Store →](https://apps.apple.com/th/app/id6779750237)
+[รับ Lumi Mission Planet ได้ที่ App Store →](https://apps.apple.com/th/app/id6779750237?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

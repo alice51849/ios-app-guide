@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 광고 없음
 - App Store · ￦15,000
 
-[App Store에서 Lumi Letters Pro 받기 →](https://apps.apple.com/kr/app/id6778491147)
+[App Store에서 Lumi Letters Pro 받기 →](https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=iag_data_ko&mt=8)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

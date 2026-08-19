@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
 - App Store · ಉಚಿತ
 
-[App Store ನಲ್ಲಿ Lumi Letters ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6778748533)
+[App Store ನಲ್ಲಿ Lumi Letters ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6778748533?pt=118326163&ct=iag_data_kn_in&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

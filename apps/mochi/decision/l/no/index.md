@@ -18,7 +18,7 @@ Hvis de fleste oppgaveapper føles oppblåste, er den rette en ren sjekkliste me
 - Ingen annonser
 - App Store · Gratis
 
-[Få Mochi på App Store →](https://apps.apple.com/no/app/id6785004775)
+[Få Mochi på App Store →](https://apps.apple.com/no/app/id6785004775?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

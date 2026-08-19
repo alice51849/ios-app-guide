@@ -23,7 +23,7 @@ G+Money Lite — Convertisseur de devises & suivi de dépenses de voyage L’arg
 - Apple Watch
 - App Store · Gratuit
 
-[Obtenir G+Money Lite sur l'App Store](https://apps.apple.com/ca/app/id6793436548)
+[Obtenir G+Money Lite sur l'App Store](https://apps.apple.com/ca/app/id6793436548?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/gmoneylite.html)
 

@@ -18,7 +18,7 @@ Snapport Lite - Realizza foto per passaporto, visto e documenti con guide di dim
 - Offline
 - App Store · Gratis
 
-[Scarica Snapport Lite sull'App Store](https://apps.apple.com/it/app/id6792856304)
+[Scarica Snapport Lite sull'App Store](https://apps.apple.com/it/app/id6792856304?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/snapportlite.html)
 

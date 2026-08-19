@@ -17,7 +17,7 @@ Milloin viimeksi vaihdoit lakanat, kastelit kasvin, soitit läheisille, varmuusk
 - Ilmainen aloitus · elinikäinen avaus
 - App Store · Ilmainen
 
-[Lataa Mochi DoneStamp: Viimeksi App Storesta](https://apps.apple.com/fi/app/id6790800323)
+[Lataa Mochi DoneStamp: Viimeksi App Storesta](https://apps.apple.com/fi/app/id6790800323?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/mochidonestamp.html)
 

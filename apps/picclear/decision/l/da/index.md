@@ -18,7 +18,7 @@ For at frigøre plads hurtigt, fokuser på de største gevinster først: nøjagt
 - Privat / på enheden
 - App Store · Gratis
 
-[Hent PicClear i App Store →](https://apps.apple.com/dk/app/id6780223070)
+[Hent PicClear i App Store →](https://apps.apple.com/dk/app/id6780223070?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

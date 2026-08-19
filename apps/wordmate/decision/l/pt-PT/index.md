@@ -22,7 +22,7 @@ Utilizadores em deslocação precisam de prática de vocabulário que encaixe em
 - Apple Watch
 - App Store · 9,99 €
 
-[Obtenha Wordmate: Learn 44 Languages na App Store →](https://apps.apple.com/pt/app/id6789917808)
+[Obtenha Wordmate: Learn 44 Languages na App Store →](https://apps.apple.com/pt/app/id6789917808?pt=118326163&ct=iag_data_pt_pt&mt=8)
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 

@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Без рекламы
 - App Store · Бесплатно
 
-[Скачать Lumi Trip Planet в App Store →](https://apps.apple.com/ru/app/id6787193643)
+[Скачать Lumi Trip Planet в App Store →](https://apps.apple.com/ru/app/id6787193643?pt=118326163&ct=iag_data_ru&mt=8)
 
 [Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

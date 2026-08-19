@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ללא פרסומות
 - App Store · ₪29.90
 
-[קבל את Lumi Bopomofo Pro ב-App Store →](https://apps.apple.com/il/app/id6775773117)
+[קבל את Lumi Bopomofo Pro ב-App Store →](https://apps.apple.com/il/app/id6775773117?pt=118326163&ct=iag_data_he&mt=8)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/answers/best-complete-zhuyin-app-for-bilingual-children.html)
 

@@ -18,7 +18,7 @@ De beste wiskunde-app voor kinderen traint redeneren — patronen, reeksen, ruim
 - Geen advertenties
 - App Store · Gratis
 
-[Download Lumi Math Planet in de App Store →](https://apps.apple.com/nl/app/id6778269699)
+[Download Lumi Math Planet in de App Store →](https://apps.apple.com/nl/app/id6778269699?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

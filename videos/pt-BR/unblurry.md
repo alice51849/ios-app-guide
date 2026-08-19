@@ -16,7 +16,7 @@ Crianças nunca ficam paradas, então fotos com foco suave e tremor da câmera s
 
 [Assistir ao vídeo](https://files.catbox.moe/kbrxl1.mp4)
 
-[Baixe o Unblurry na App Store →](https://apps.apple.com/br/app/id6782275018)
+[Baixe o Unblurry na App Store →](https://apps.apple.com/br/app/id6782275018?pt=118326163&ct=iag_video_pt_br&mt=8)
 
 [Abrir o guia do app](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

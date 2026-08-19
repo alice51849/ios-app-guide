@@ -17,7 +17,7 @@ Pencipta kandungan pelancongan perlukan gaya filem yang boleh diulang dengan but
 - Percuma untuk bermula · buka kunci kekal
 - App Store · Percuma
 
-[Dapatkan PhotoCream di App Store →](https://apps.apple.com/my/app/id6781808054)
+[Dapatkan PhotoCream di App Store →](https://apps.apple.com/my/app/id6781808054?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

@@ -17,7 +17,7 @@ Hvornår skiftede du sidst sengetøj, vandede en plante, ringede til familien, s
 - Gratis at komme i gang · permanent oplåsning
 - App Store · Gratis
 
-[Hent Mochi DoneStamp: Sidst i App Store](https://apps.apple.com/dk/app/id6790800323)
+[Hent Mochi DoneStamp: Sidst i App Store](https://apps.apple.com/dk/app/id6790800323?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/mochidonestamp.html)
 

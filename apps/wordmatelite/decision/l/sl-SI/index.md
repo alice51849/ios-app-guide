@@ -18,7 +18,7 @@ Tuji jezik bi rad končno premaknil naprej, a večer spet mine brez ene same nov
 - Brez povezave
 - App Store · Brezplačno
 
-[Prenesite Wordmate Lite: besedišče iz trgovine App Store](https://apps.apple.com/si/app/id6797601720)
+[Prenesite Wordmate Lite: besedišče iz trgovine App Store](https://apps.apple.com/si/app/id6797601720?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/wordmatelite.html)
 

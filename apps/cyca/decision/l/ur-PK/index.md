@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - نجی / آلہ پر
 - App Store · مفت
 
-[Cyca ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6782251621)
+[Cyca ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6782251621?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-period-tracker-app-no-account-required-iphone.html)
 

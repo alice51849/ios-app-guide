@@ -18,7 +18,7 @@ Snapport Lite - Ustvari potniške, vizumske in dokumentne fotografije s pomočjo
 - Brez povezave
 - App Store · Brezplačno
 
-[Prenesite Snapport Lite iz trgovine App Store](https://apps.apple.com/si/app/id6792856304)
+[Prenesite Snapport Lite iz trgovine App Store](https://apps.apple.com/si/app/id6792856304?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/snapportlite.html)
 

@@ -17,7 +17,7 @@ Gör en vägg av text till EN bild som folk faktiskt läser. OnePage PPT läser 
 - Gratis att börja · livstidsupplåsning
 - App Store · Gratis
 
-[Hämta OnePage PPT: AI-bildspel i App Store](https://apps.apple.com/se/app/id6798814385)
+[Hämta OnePage PPT: AI-bildspel i App Store](https://apps.apple.com/se/app/id6798814385?pt=118326163&ct=iag_data_sv&mt=8)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/onepageppt.html)
 

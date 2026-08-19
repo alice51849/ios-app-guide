@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - தனியுரிமை / சாதனத்தில்
 - App Store · இலவசம்
 
-[App Store-இல் Mask My File-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6792850916)
+[App Store-இல் Mask My File-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_data_ta_in&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/maskmyfile.html)
 

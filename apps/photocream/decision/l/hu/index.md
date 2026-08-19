@@ -17,7 +17,7 @@ Az utazó alkotóknak ismételhető filmes hatásra van szükségük, ami szemcs
 - Ingyenes kezdés · életre szóló feloldás
 - App Store · Ingyenes
 
-[Szerezd be a PhotoCream-et az App Store-ban →](https://apps.apple.com/hu/app/id6781808054)
+[Szerezd be a PhotoCream-et az App Store-ban →](https://apps.apple.com/hu/app/id6781808054?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

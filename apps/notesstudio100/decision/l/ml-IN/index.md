@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · സൗജന്യം
 
-[App Store-ൽ നിന്ന് 100 Notes Studio: Pen & Paper നേടൂ](https://apps.apple.com/in/app/id6798813048)
+[App Store-ൽ നിന്ന് 100 Notes Studio: Pen & Paper നേടൂ](https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/notesstudio100.html)
 

@@ -23,7 +23,7 @@ G+Money Lite — Converter de valută și tracker de cheltuieli inteligent pentr
 - Apple Watch
 - App Store · Gratuit
 
-[Descarcă G+Money Lite din App Store](https://apps.apple.com/ro/app/id6793436548)
+[Descarcă G+Money Lite din App Store](https://apps.apple.com/ro/app/id6793436548?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/gmoneylite.html)
 

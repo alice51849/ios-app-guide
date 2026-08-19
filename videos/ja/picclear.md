@@ -16,7 +16,7 @@ publisher: "Lumi Studio"
 
 [動画を見る](https://files.catbox.moe/cx5hf5.mp4)
 
-[App StoreでPicClearを入手 →](https://apps.apple.com/jp/app/id6780223070)
+[App StoreでPicClearを入手 →](https://apps.apple.com/jp/app/id6780223070?pt=118326163&ct=iag_video_ja&mt=8)
 
 [アプリガイドを開く](https://alice51849.github.io/ios-app-guide/ja/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 

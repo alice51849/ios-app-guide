@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ไม่มีโฆษณา
 - App Store · ฟรี
 
-[ดาวน์โหลด Mochi ใน App Store →](https://apps.apple.com/th/app/id6785004775)
+[ดาวน์โหลด Mochi ใน App Store →](https://apps.apple.com/th/app/id6785004775?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

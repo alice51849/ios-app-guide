@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免费开始使用 · 永久解锁
 - App Store · 免费
 
-[在 App Store 获取 DailyMate Lite：开口练习](https://apps.apple.com/cn/app/id6794725568)
+[在 App Store 获取 DailyMate Lite：开口练习](https://apps.apple.com/cn/app/id6794725568?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/dailymatelite.html)
 

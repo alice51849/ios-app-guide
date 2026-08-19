@@ -18,7 +18,7 @@ Familiile care se pregătesc pentru grădiniță au nevoie de o cale completă d
 - Fără reclame
 - App Store · 49,99 lei
 
-[Descarcă Lumi Letters Pro din App Store →](https://apps.apple.com/ro/app/id6778491147)
+[Descarcă Lumi Letters Pro din App Store →](https://apps.apple.com/ro/app/id6778491147?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

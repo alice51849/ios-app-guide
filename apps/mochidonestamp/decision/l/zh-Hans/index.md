@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免费开始使用 · 永久解锁
 - App Store · 免费
 
-[在 App Store 获取 Mochi DoneStamp：上次何时](https://apps.apple.com/cn/app/id6790800323)
+[在 App Store 获取 Mochi DoneStamp：上次何时](https://apps.apple.com/cn/app/id6790800323?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/mochidonestamp.html)
 

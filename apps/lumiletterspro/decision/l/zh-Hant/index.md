@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - 無廣告
 - App Store · $290.00
 
-[在 App Store 取得 Lumi Letters Pro →](https://apps.apple.com/tw/app/id6778491147)
+[在 App Store 取得 Lumi Letters Pro →](https://apps.apple.com/tw/app/id6778491147?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 

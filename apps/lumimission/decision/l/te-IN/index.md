@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ప్రకటనలు లేవు
 - App Store · ఉచితం
 
-[Lumi Mission Planet ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6779750237)
+[Lumi Mission Planet ను App Store లో పొందండి →](https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

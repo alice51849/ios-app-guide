@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍
 - App Store · ମାଗଣା
 
-[PhotoCream ଏପ୍ ଷ୍ଟୋରରେ ପାନ୍ତୁ →](https://apps.apple.com/in/app/id6781808054)
+[PhotoCream ଏପ୍ ଷ୍ଟୋରରେ ପାନ୍ତୁ →](https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=iag_data_or_in&mt=8)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

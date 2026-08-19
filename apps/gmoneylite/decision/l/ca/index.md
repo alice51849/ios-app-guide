@@ -23,7 +23,7 @@ G+Money Lite — Conversor de moneda de viatge intel·ligent i rastrejador de de
 - Apple Watch
 - App Store · Gratis
 
-[Descarrega G+Money Lite a l’App Store](https://apps.apple.com/es/app/id6793436548)
+[Descarrega G+Money Lite a l’App Store](https://apps.apple.com/es/app/id6793436548?pt=118326163&ct=iag_data_ca&mt=8)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/gmoneylite.html)
 

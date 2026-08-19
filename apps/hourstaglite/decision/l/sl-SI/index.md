@@ -22,7 +22,7 @@ HoursTag Lite - Oglejte si pravo ceno stvari Vsak nakup stane ure vašega življ
 - Apple Watch
 - App Store · Brezplačno
 
-[Prenesite HoursTag Lite iz trgovine App Store](https://apps.apple.com/si/app/id6794039979)
+[Prenesite HoursTag Lite iz trgovine App Store](https://apps.apple.com/si/app/id6794039979?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/hourstaglite.html)
 

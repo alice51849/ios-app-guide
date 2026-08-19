@@ -18,7 +18,7 @@ Per un bambino in età prescolare, una routine della buonanotte funziona meglio 
 - Nessuna pubblicità
 - App Store · Gratis
 
-[Scarica Lumi Mission Planet sull’App Store →](https://apps.apple.com/it/app/id6779750237)
+[Scarica Lumi Mission Planet sull’App Store →](https://apps.apple.com/it/app/id6779750237?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

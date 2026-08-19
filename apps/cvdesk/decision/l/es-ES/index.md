@@ -17,7 +17,7 @@ Al cambiar de campo, el problema del currículum es distinto: tu experiencia es 
 - Gratis para empezar · desbloqueo permanente
 - App Store · Gratis
 
-[Consigue CV Desk en la App Store →](https://apps.apple.com/es/app/id6781337213)
+[Consigue CV Desk en la App Store →](https://apps.apple.com/es/app/id6781337213?pt=118326163&ct=iag_data_es_es&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-ES/answers/best-resume-builder-app-for-career-changers-2026.html)
 

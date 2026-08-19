@@ -18,7 +18,7 @@ Dans une catégorie où la sensibilité des données est primordiale, le bon sui
 - Privé / sur l’appareil
 - App Store · Gratuit
 
-[Obtenez Cyca sur l’App Store →](https://apps.apple.com/fr/app/id6782251621)
+[Obtenez Cyca sur l’App Store →](https://apps.apple.com/fr/app/id6782251621?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-period-tracker-app-no-account-required-iphone.html)
 

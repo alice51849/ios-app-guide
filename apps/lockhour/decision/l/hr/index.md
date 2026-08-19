@@ -19,7 +19,7 @@ Tijekom ispita, snaga volje nije alat — stroga vremenski ograničena blokada j
 - Privatno / na uređaju
 - App Store · Besplatno
 
-[Preuzmite LockHour Pro u App Storeu →](https://apps.apple.com/hr/app/id6780107485)
+[Preuzmite LockHour Pro u App Storeu →](https://apps.apple.com/hr/app/id6780107485?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

@@ -18,7 +18,7 @@ I en kategori der datasensitivitet er hele poenget, holder riktig menstruasjonss
 - Privat / på enheten
 - App Store · Gratis
 
-[Få Cyca i App Store →](https://apps.apple.com/no/app/id6782251621)
+[Få Cyca i App Store →](https://apps.apple.com/no/app/id6782251621?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-period-tracker-app-no-account-required-iphone.html)
 

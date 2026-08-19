@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - Apple Watch
 - App Store · ฿399.00
 
-[ดาวน์โหลด DailyMate จาก App Store →](https://apps.apple.com/th/app/id6790418321)
+[ดาวน์โหลด DailyMate จาก App Store →](https://apps.apple.com/th/app/id6790418321?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

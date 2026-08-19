@@ -14,12 +14,12 @@ publisher: "Lumi Studio"
 For sleep, a subscription that nags you every month is the opposite of restful — Sereno is built for this.
 
 - Sleep & focus
-- Free to start · one-time unlock
+- Free to start · lifetime unlock
 - Offline
 - No ads
 - App Store · Free
 
-[Get Sereno on the App Store →](https://apps.apple.com/ca/app/id6788236641)
+[Get Sereno on the App Store →](https://apps.apple.com/ca/app/id6788236641?pt=118326163&ct=iag_data_en_ca&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-CA/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

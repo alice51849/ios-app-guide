@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 For a young child, the dealbreaker is ads and data collection — a learning app should teach inside a game loop with zero ads, nothing collected from the child, and a one-time unlock parents can trust — Lumi Letters is built for this.
 
 - Children & learning
-- Free to start · one-time unlock
+- Free to start · lifetime unlock
 - No adverts
 - App Store · Free
 
-[Get Lumi Letters on the App Store →](https://apps.apple.com/gb/app/id6778748533)
+[Get Lumi Letters on the App Store →](https://apps.apple.com/gb/app/id6778748533?pt=118326163&ct=iag_data_en_gb&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免费开始使用 · 永久解锁
 - 无广告
 
-[在 App Store 获取 Lumi Letters →](https://apps.apple.com/app/id6778748533)
+[在 App Store 获取 Lumi Letters →](https://apps.apple.com/app/id6778748533?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

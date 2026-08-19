@@ -18,7 +18,7 @@ Zhuyin सीखने वाले बच्चे के लिए, ऐप क
 - कोई विज्ञापन नहीं
 - App Store · मुफ़्त
 
-[App Store से Lumi Bopomofo प्राप्त करें →](https://apps.apple.com/in/app/id6773017109)
+[App Store से Lumi Bopomofo प्राप्त करें →](https://apps.apple.com/in/app/id6773017109?pt=118326163&ct=iag_data_hi&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 

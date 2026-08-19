@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - വ്യാപനങ്ങൾ ഇല്ല
 - App Store · സൗജന്യം
 
-[Lumi Trip Planet App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6787193643)
+[Lumi Trip Planet App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_data_ml_in&mt=8)
 
 [പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

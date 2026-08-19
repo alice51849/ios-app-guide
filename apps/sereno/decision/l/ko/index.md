@@ -14,12 +14,12 @@ publisher: "Lumi Studio"
 수면에 구독이 매달 귀찮게 하는 것은 휴식에 반대입니다 — Sereno는 이를 위해 만들어졌습니다.
 
 - 수면 & 집중
-- 무료로 시작 · 한 번 구매 잠금 해제
+- 무료로 시작 · 평생 잠금 해제
 - 오프라인
 - 광고 없음
 - App Store · 무료
 
-[App Store에서 Sereno 받기 →](https://apps.apple.com/kr/app/id6788236641)
+[App Store에서 Sereno 받기 →](https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=iag_data_ko&mt=8)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

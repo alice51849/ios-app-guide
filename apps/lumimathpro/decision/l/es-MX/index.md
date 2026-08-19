@@ -18,7 +18,7 @@ Una app completa de matemáticas tempranas debe hacer que el conteo, el sentido 
 - Sin anuncios
 - App Store · $199.00
 
-[Consigue Lumi Math Pro en App Store →](https://apps.apple.com/mx/app/id6776958488)
+[Consigue Lumi Math Pro en App Store →](https://apps.apple.com/mx/app/id6776958488?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 

@@ -17,7 +17,7 @@ Parlez avec assurance quand l’occasion se présente. DailyMate Lite transforme
 - Gratuit au départ · déverrouillage définitif
 - App Store · Gratuit
 
-[Obtenir DailyMate Lite sur l'App Store](https://apps.apple.com/fr/app/id6794725568)
+[Obtenir DailyMate Lite sur l'App Store](https://apps.apple.com/fr/app/id6794725568?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/dailymatelite.html)
 

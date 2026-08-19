@@ -19,7 +19,7 @@ För sömn är en prenumeration som tjatar varje månad motsatsen till rogivande
 - Inga annonser
 - App Store · Gratis
 
-[Skaffa Sereno i App Store →](https://apps.apple.com/se/app/id6788236641)
+[Skaffa Sereno i App Store →](https://apps.apple.com/se/app/id6788236641?pt=118326163&ct=iag_data_sv&mt=8)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 

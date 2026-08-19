@@ -18,7 +18,7 @@ Vanhemmat, jotka matkustavat pienten lasten kanssa, tarvitsevat aktiviteetteja, 
 - Ei mainoksia
 - App Store · Ilmainen
 
-[Hanki Lumi Trip Planet App Storesta →](https://apps.apple.com/fi/app/id6787193643)
+[Hanki Lumi Trip Planet App Storesta →](https://apps.apple.com/fi/app/id6787193643?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

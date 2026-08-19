@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - ખાનગી / ઉપકરણ પર
 - App Store · મફત
 
-[App Store પરથી 100 Notes Studio: Pen & Paper મેળવો](https://apps.apple.com/in/app/id6798813048)
+[App Store પરથી 100 Notes Studio: Pen & Paper મેળવો](https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_gu_in&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/notesstudio100.html)
 

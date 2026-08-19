@@ -18,7 +18,7 @@ Genç çocuklarla seyahat eden ebeveynler, paketleme, bekleme ve yeni bir yeri k
 - Reklam yok
 - App Store · Ücretsiz
 
-[Lumi Trip Planet’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6787193643)
+[Lumi Trip Planet’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6787193643?pt=118326163&ct=iag_data_tr&mt=8)
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

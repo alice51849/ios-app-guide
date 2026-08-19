@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ไม่มีโฆษณา
 - App Store · ฟรี
 
-[ดาวน์โหลด Lumi Letters ใน App Store →](https://apps.apple.com/th/app/id6778748533)
+[ดาวน์โหลด Lumi Letters ใน App Store →](https://apps.apple.com/th/app/id6778748533?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 

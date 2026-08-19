@@ -18,7 +18,7 @@ Before a trip, complete phrases for real situations are more useful than isolate
 - Apple Watch
 - App Store · $14.99
 
-[Get DailyMate on the App Store →](https://apps.apple.com/ca/app/id6790418321)
+[Get DailyMate on the App Store →](https://apps.apple.com/ca/app/id6790418321?pt=118326163&ct=iag_data_en_ca&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-CA/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 

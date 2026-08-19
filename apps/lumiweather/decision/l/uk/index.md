@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - Без відстеження
 - App Store · Безкоштовно
 
-[Отримати Lumi Weather в App Store →](https://apps.apple.com/ua/app/id6779552704)
+[Отримати Lumi Weather в App Store →](https://apps.apple.com/ua/app/id6779552704?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

@@ -14,12 +14,12 @@ publisher: "Lumi Studio"
 Kids never hold still, so soft-focus and camera-shake shots are inevitable — Unblurry is built for this.
 
 - Photo & utility
-- Free to start · one-time unlock
+- Free to start · lifetime unlock
 - Private / on-device
 - App Store · Free
 - ★ 1.0/5 · 1
 
-[Get Unblurry on the App Store →](https://apps.apple.com/us/app/id6782275018)
+[Get Unblurry on the App Store →](https://apps.apple.com/us/app/id6782275018?pt=118326163&ct=iag_data_en_us&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-US/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
 

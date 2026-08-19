@@ -18,7 +18,7 @@ Distribuie în siguranță fără să pierzi contextul util. Mask My File găse�
 - Privat / pe dispozitiv
 - App Store · Gratuit
 
-[Descarcă Mask My File din App Store](https://apps.apple.com/ro/app/id6792850916)
+[Descarcă Mask My File din App Store](https://apps.apple.com/ro/app/id6792850916?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/maskmyfile.html)
 

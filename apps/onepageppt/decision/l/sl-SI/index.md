@@ -17,7 +17,7 @@ Iz stene besedila nastane ENA prosojnica, ki jo res preberejo. OnePage PPT prebe
 - Brezplačen začetek · doživljenjska odklenitev
 - App Store · Brezplačno
 
-[Prenesite OnePage PPT: AI prosojnica iz trgovine App Store](https://apps.apple.com/si/app/id6798814385)
+[Prenesite OnePage PPT: AI prosojnica iz trgovine App Store](https://apps.apple.com/si/app/id6798814385?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/onepageppt.html)
 

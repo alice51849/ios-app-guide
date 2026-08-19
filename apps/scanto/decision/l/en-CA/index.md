@@ -14,11 +14,11 @@ publisher: "Lumi Studio"
 If you scan patient consent forms, discharge paperwork or referrals, the scanner has to keep that paperwork on the device — never uploaded to someone else's cloud — ScanTo Pro is built for this.
 
 - Productivity
-- Free to start · one-time unlock
+- Free to start · lifetime unlock
 - Private / on-device
 - App Store · Free
 
-[Get ScanTo Pro on the App Store →](https://apps.apple.com/ca/app/id6779977651)
+[Get ScanTo Pro on the App Store →](https://apps.apple.com/ca/app/id6779977651?pt=118326163&ct=iag_data_en_ca&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-CA/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 

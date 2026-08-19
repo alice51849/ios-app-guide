@@ -17,7 +17,7 @@ Se stai pianificando un viaggio imminente, una timeline chiara per quel viaggio 
 - Gratis per iniziare · sblocco permanente
 - App Store · Gratis
 
-[Scarica TripBee Lite dall'App Store →](https://apps.apple.com/it/app/id6791299610)
+[Scarica TripBee Lite dall'App Store →](https://apps.apple.com/it/app/id6791299610?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 

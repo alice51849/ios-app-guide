@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - פרטי / במכשיר
 - App Store · ₪17.90
 
-[הורידו את HoursTag: שעות לקנייה מה-App Store](https://apps.apple.com/il/app/id6754218117)
+[הורידו את HoursTag: שעות לקנייה מה-App Store](https://apps.apple.com/il/app/id6754218117?pt=118326163&ct=iag_data_he&mt=8)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/hourstag.html)
 

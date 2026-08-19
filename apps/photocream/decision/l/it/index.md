@@ -17,7 +17,7 @@ I creator di viaggio cercano un look pellicola ripetibile che aggiunga grana, ha
 - Gratis per iniziare · sblocco permanente
 - App Store · Gratis
 
-[Scarica PhotoCream su App Store →](https://apps.apple.com/it/app/id6781808054)
+[Scarica PhotoCream su App Store →](https://apps.apple.com/it/app/id6781808054?pt=118326163&ct=iag_data_it&mt=8)
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 

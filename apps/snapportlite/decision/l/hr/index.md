@@ -18,7 +18,7 @@ Snapport Lite - Izradite fotografije za putovnicu, vizu i dokumente uz vođene v
 - Izvan mreže
 - App Store · Besplatno
 
-[Preuzmite Snapport Lite u App Storeu](https://apps.apple.com/hr/app/id6792856304)
+[Preuzmite Snapport Lite u App Storeu](https://apps.apple.com/hr/app/id6792856304?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/snapportlite.html)
 

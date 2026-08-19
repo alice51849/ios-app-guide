@@ -17,7 +17,7 @@ Transformez un mur de texte en UNE diapo qui se lit vraiment. OnePage PPT lit ce
 - Gratuit au départ · déverrouillage définitif
 - App Store · Gratuit
 
-[Obtenir OnePage PPT : diapos par IA sur l'App Store](https://apps.apple.com/ca/app/id6798814385)
+[Obtenir OnePage PPT : diapos par IA sur l'App Store](https://apps.apple.com/ca/app/id6798814385?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/onepageppt.html)
 

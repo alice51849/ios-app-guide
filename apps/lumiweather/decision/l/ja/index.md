@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - App Store · 無料
 - ★ 5.0/5 · 1
 
-[App StoreでLumi Weatherを入手 →](https://apps.apple.com/jp/app/id6779552704)
+[App StoreでLumi Weatherを入手 →](https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 

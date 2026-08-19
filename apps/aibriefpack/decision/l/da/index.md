@@ -18,7 +18,7 @@ Bedre kontekst. Bedre svar. Omdan skærmbilleder, filer, noter og dokumenter til
 - Privat / på enheden
 - App Store · Gratis
 
-[Hent AI Brief i App Store](https://apps.apple.com/dk/app/id6791658210)
+[Hent AI Brief i App Store](https://apps.apple.com/dk/app/id6791658210?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/aibriefpack.html)
 

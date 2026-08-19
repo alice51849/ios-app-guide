@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - بدون إعلانات
 - App Store · مجاني
 
-[احصل على Mochi من متجر التطبيقات →](https://apps.apple.com/sa/app/id6785004775)
+[احصل على Mochi من متجر التطبيقات →](https://apps.apple.com/sa/app/id6785004775?pt=118326163&ct=iag_data_ar_sa&mt=8)
 
 [اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 

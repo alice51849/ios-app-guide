@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - خاص / على الجهاز
 - App Store · مجاني
 
-[احصل على 100 Notes Studio: Pen & Paper من App Store](https://apps.apple.com/sa/app/id6798813048)
+[احصل على 100 Notes Studio: Pen & Paper من App Store](https://apps.apple.com/sa/app/id6798813048?pt=118326163&ct=iag_data_ar_sa&mt=8)
 
 [اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/notesstudio100.html)
 

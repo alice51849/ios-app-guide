@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ஆஃப்லைன்
 - App Store · இலவசம்
 
-[App Store-இல் Wordmate Lite: ஆங்கிலம் கற்க-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6797601720)
+[App Store-இல் Wordmate Lite: ஆங்கிலம் கற்க-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=iag_data_ta_in&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/wordmatelite.html)
 

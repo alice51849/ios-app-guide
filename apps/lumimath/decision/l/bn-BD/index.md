@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - বিনামূল্যে শুরু · আজীবন আনলক
 - কোনও বিজ্ঞাপন নেই
 
-[App Store থেকে Lumi Math Planet পান →](https://apps.apple.com/app/id6778269699)
+[App Store থেকে Lumi Math Planet পান →](https://apps.apple.com/app/id6778269699?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 

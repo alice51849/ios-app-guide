@@ -18,7 +18,7 @@ Một máy tính bạn sẽ thật sự dùng lâu dài, vì nó nhớ cả suy 
 - Tiện ích
 - App Store · Miễn phí
 
-[Tải CalDaily: máy tính và chủ đề trên App Store](https://apps.apple.com/vn/app/id6794178671)
+[Tải CalDaily: máy tính và chủ đề trên App Store](https://apps.apple.com/vn/app/id6794178671?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/caldaily.html)
 

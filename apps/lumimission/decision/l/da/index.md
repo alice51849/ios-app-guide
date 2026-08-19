@@ -18,7 +18,7 @@ For et børnehavebarn fungerer en sengetidsrutine bedst, når den er kort, visue
 - Ingen reklamer
 - App Store · Gratis
 
-[Hent Lumi Mission Planet på App Store →](https://apps.apple.com/dk/app/id6779750237)
+[Hent Lumi Mission Planet på App Store →](https://apps.apple.com/dk/app/id6779750237?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 

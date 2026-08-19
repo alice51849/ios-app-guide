@@ -18,7 +18,7 @@ publisher: "Lumi Studio"
 - ऑफ़लाइन
 - App Store · मुफ़्त
 
-[App Store पर Wordmate Lite: इंग्लिश सीखें पाएँ](https://apps.apple.com/in/app/id6797601720)
+[App Store पर Wordmate Lite: इंग्लिश सीखें पाएँ](https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=iag_data_hi&mt=8)
 
 [पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/wordmatelite.html)
 

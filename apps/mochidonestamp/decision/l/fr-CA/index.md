@@ -17,7 +17,7 @@ Quand avez-vous changé le filtre de la fournaise, hivérisé le robinet extéri
 - Gratuit au départ · déverrouillage définitif
 - App Store · Gratuit
 
-[Obtenir Mochi DoneStamp : Mémo sur l'App Store](https://apps.apple.com/ca/app/id6790800323)
+[Obtenir Mochi DoneStamp : Mémo sur l'App Store](https://apps.apple.com/ca/app/id6790800323?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/mochidonestamp.html)
 

@@ -18,7 +18,7 @@ Chcete sa v cudzom jazyku konečne pohnúť, no večer zase ubehne a nové slov�
 - Offline
 - App Store · Zadarmo
 
-[Stiahnuť Wordmate Lite: slovíčka denne v App Store](https://apps.apple.com/sk/app/id6797601720)
+[Stiahnuť Wordmate Lite: slovíčka denne v App Store](https://apps.apple.com/sk/app/id6797601720?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/wordmatelite.html)
 

@@ -19,7 +19,7 @@ Trong kỳ thi, ý chí không phải là công cụ — mà là chặn nghiêm 
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 
-[Tải LockHour Pro trên App Store →](https://apps.apple.com/vn/app/id6780107485)
+[Tải LockHour Pro trên App Store →](https://apps.apple.com/vn/app/id6780107485?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

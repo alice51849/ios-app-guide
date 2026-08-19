@@ -37,7 +37,7 @@ from appstore_live import live_app_keys  # noqa: E402
 import queries  # noqa: E402
 import answer_facts  # noqa: E402
 import sync_standard_site  # noqa: E402
-from answer_text import concise_meta  # noqa: E402
+from answer_text import clause_snippet, concise_meta  # noqa: E402
 from aeo_pages import alternative_hub_slug  # noqa: E402
 
 TEMPLATE = ANSWERS_DIR / "best-offline-document-scanner-app-for-iphone.html"
@@ -252,7 +252,186 @@ def _app_named(text: str, name: str) -> bool:
     return name.lower() in (text or "").lower()
 
 
-def ensure_answer_names_app(content: dict[str, Any], app: dict[str, Any]) -> dict[str, Any]:
+# Names of tools an answer page can legitimately mention but must never
+# *recommend first*: Apple's bundled features and the third-party apps our
+# topic overlays use as context. `answer_faqs` / `answer_deep` are written as
+# neutral domain explainers, so their opening sentence is frequently "iPhone has
+# a built-in scanner in Notes and Files ..." -- true, useful, and exactly the
+# sentence an assistant quotes when it cites the page. The page then reads as a
+# recommendation for Apple's tool, which is the opposite of why it exists.
+_RIVAL_FIRST = re.compile(
+    r"(built-?in|Notes app|Files app|Photos app|Reminders app|Voice Memos|"
+    r"Shortcuts app|Screen Time|Apple's own|iPhone has|iOS has|Apple provides|"
+    r"Adobe Scan|CamScanner|Microsoft Lens|Genius Scan|Scanner Pro|Evernote|"
+    r"Notion|Todoist|Google Keep|Google Drive|Dropbox|Lightroom|Snapseed|"
+    r"Duolingo|Anki|Quizlet|Freedom|Opal|YNAB|Splitwise)",
+    re.I,
+)
+
+# Questions that *ask about* the native path. "Can I scan without a third-party
+# app?" must be answered "yes, Notes and Files do this" first; leading with our
+# own app would be a dishonest answer to the question actually asked, and an
+# assistant would rightly stop citing us. The app still has to be named inside
+# the quotable region -- ensure_answer_names_app guarantees that -- it just does
+# not get to jump the queue.
+_ASKS_FOR_NATIVE = re.compile(
+    r"(without (?:a |an |any )?(?:third[- ]party |extra |separate |additional |paid )?app"
+    r"|without downloading|without installing|no third[- ]party app"
+    r"|do i (?:really )?need (?:a |an )?(?:separate|third[- ]party|paid)"
+    r"|is apple .* enough|does (?:the )?iphone (?:have|come with)"
+    r"|built-?in|free way to|natively)",
+    re.I,
+)
+
+# Slugs where the honest answer is *not* one of our apps, so the ordering rule
+# is deliberately not applied. Keep this list short, and justify every entry --
+# a silent exemption is how the ScanTo Pro defect survived this long. These
+# pages still name the app (ensure_answer_names_app); it just does not get to
+# stand in front of the real answer.
+FACT_FIRST_SLUGS = {
+    # Typing Zhuyin is done with the iOS keyboard. Lumi Bopomofo teaches
+    # children to *read* Zhuyin; it is not an input method, so presenting it as
+    # the answer to "how do I type with it" would be untrue.
+    "how-do-you-type-chinese-using-zhuyin-bopomofo-on-an-iphone",
+    # A WHO screen-time guideline question. Lumi Weather is a weather app with
+    # a kid-outing score; it is not a screen-time tool, so the guideline has to
+    # lead and the app can only follow as an adjacent option.
+    "how-much-screen-time-is-appropriate-for-young-children",
+}
+
+
+def _strip_question_echo(text: str, question: str) -> str:
+    """Blank out the page's own question inside `text`.
+
+    Several templates open with the question verbatim ("best voice to text
+    notes app for iphone: what to check ..."). A rival name that only appears
+    because the *user* typed it is not the page recommending that rival, so it
+    must not trip the ordering rule.
+    """
+    q = (question or "").strip()
+    if not q:
+        return text or ""
+    return re.sub(re.escape(q), " ", text or "", flags=re.I)
+
+
+def _leads_with_rival(text: str, name: str, question: str) -> bool:
+    """True when `text` names a rival/built-in tool before it names our app."""
+    probe = _strip_question_echo(text, question)
+    hit = _RIVAL_FIRST.search(probe)
+    if not hit:
+        return False
+    ours = probe.lower().find(name.lower())
+    return ours < 0 or hit.start() < ours
+
+
+LISTING_DISCLAIMER = (
+    "Check the current App Store listing for exact features and pricing."
+)
+
+
+def _bridge_sentence(name: str, outcome: str, access: str) -> str:
+    """One truthful sentence, built only from registry fields (no new claims)."""
+    bridge = f"{name} is the app this guide covers"
+    if outcome:
+        bridge += f": {outcome}"
+    bridge += "."
+    if access:
+        bridge += f" {access}."
+    return bridge
+
+
+def _fit(head: str, rest: str, limit: int = 220) -> str:
+    """`head` plus whole sentences of `rest` that fit render_page's 220-char cap.
+
+    concise_meta keeps whole sentences only, so anything that overflows is
+    dropped silently -- budget here or the fact disappears from the snippet.
+    Only complete sentences are carried over: cutting at a comma produced
+    snippets like "... friction (moving distracting apps off the home screen."
+    -- a chopped clause with an unclosed bracket, which reads worse to a human
+    and to an assistant than simply saying less.
+    """
+    head = head.strip()
+    rest = (rest or "").strip()
+    if not rest:
+        return head
+    out = head
+    for sentence in re.split(r"(?<=[.!?])\s+", rest):
+        sentence = sentence.strip()
+        if not sentence or not sentence.endswith((".", "!", "?")):
+            break
+        if len(out) + 1 + len(sentence) > limit:
+            break
+        out = f"{out} {sentence}"
+    if out == head:
+        # The fact is one long sentence. Keep as much of it as ends on a clause
+        # boundary with balanced brackets rather than dropping it entirely.
+        clause = clause_snippet(rest, limit - len(head) - 1)
+        if clause:
+            out = f"{head} {clause}"
+    return out
+
+
+def ensure_app_leads_the_answer(
+    content: dict[str, Any], app: dict[str, Any], question: str
+) -> dict[str, Any]:
+    """Stop the quotable answer from recommending a rival before naming our app.
+
+    `ensure_answer_names_app` guarantees the app is named *somewhere* quotable.
+    That is not the same as being the answer: 44 of the 1,853 curated queries
+    still produced a meta description and lead whose first sentence was "iPhone
+    has a built-in document scanner in the Notes app and the Files app ...",
+    with ScanTo Pro appended afterwards. An assistant quoting the opening
+    sentence hands the user Apple's tool.
+
+    So when a rival/built-in name appears ahead of ours, the registry-derived
+    bridge sentence moves to the *front* of the meta description, the lead and
+    the short answer. Nothing is deleted -- the neutral fact still follows, so
+    the page stays honest and still answers the question -- and nothing new is
+    claimed, because the bridge only restates name / subtitle / access tag.
+
+    Exempt: questions that explicitly ask about the native path
+    (`_ASKS_FOR_NATIVE`), and the slugs in `NATIVE_ANSWER_SLUGS` where our app
+    genuinely is not the answer.
+    """
+    name = safe_text(app.get("name"))
+    if not name:
+        return content
+    if slugify(question) in FACT_FIRST_SLUGS:
+        return content
+    if _ASKS_FOR_NATIVE.search(question or ""):
+        return content
+
+    outcome = safe_text(app.get("sub")).rstrip(". ")
+    access = safe_text(app.get("tag")).rstrip(". ")
+    bridge = _bridge_sentence(name, outcome, access)
+    opener = f"{name} — {outcome}." if outcome else f"{name}."
+
+    lead = safe_text(content.get("lead"))
+    meta = safe_text(content.get("meta_description"))
+    if meta and _leads_with_rival(meta, name, question):
+        # Rebuild from the lead rather than the existing description: overlays
+        # produce the description through answer_facts._snippet, which may have
+        # already cut the fact at a clause boundary. Re-cutting a cut string
+        # yields snippets like "... off the home screen." with an unclosed
+        # bracket. The lead holds the same fact as whole sentences.
+        content["meta_description"] = _fit(opener, lead or meta)
+
+    if lead and _leads_with_rival(lead, name, question):
+        content["lead"] = f"{opener} {lead.strip()}"
+
+    paras = list(content.get("short_answer_paragraphs") or [])
+    if paras and _leads_with_rival(paras[0], name, question):
+        first = str(paras[0]).strip()
+        # The disclaimer goes last, so the paragraph reads answer -> context ->
+        # caveat rather than interrupting the fact with a caveat.
+        paras[0] = f"{bridge} {first} {LISTING_DISCLAIMER}"
+        content["short_answer_paragraphs"] = paras
+    return content
+
+
+def ensure_answer_names_app(
+    content: dict[str, Any], app: dict[str, Any], question: str = ""
+) -> dict[str, Any]:
     """Guarantee the machine-extractable answer actually names the app.
 
     AI assistants (ChatGPT / Perplexity / Gemini) quote the meta description and
@@ -266,16 +445,14 @@ def ensure_answer_names_app(content: dict[str, Any], app: dict[str, Any]) -> dic
     name = safe_text(app.get("name"))
     if not name:
         return content
+    # Ordering first: naming the app is necessary but not sufficient, and a
+    # prepended opener also satisfies the checks below -- running it afterwards
+    # instead left the name at both ends of the same paragraph.
+    content = ensure_app_leads_the_answer(content, app, question)
     outcome = safe_text(app.get("sub")).rstrip(". ")
     access = safe_text(app.get("tag")).rstrip(". ")
 
-    bridge = f"{name} is the app this guide covers"
-    if outcome:
-        bridge += f": {outcome}"
-    bridge += "."
-    if access:
-        bridge += f" {access}."
-    bridge += " Check the current App Store listing for exact features and pricing."
+    bridge = f"{_bridge_sentence(name, outcome, access)} {LISTING_DISCLAIMER}"
 
     paras = list(content.get("short_answer_paragraphs") or [])
     if not any(_app_named(p, name) for p in paras):
@@ -409,7 +586,7 @@ def default_content(question: str, key: str) -> dict[str, Any]:
     overlay = answer_facts.topic_facts(question, key, app)
     if overlay:
         base.update(overlay)
-    return ensure_answer_names_app(base, app)
+    return ensure_answer_names_app(base, app, question)
 
 
 def normalized_content(raw: dict[str, Any], question: str, key: str) -> dict[str, Any]:
@@ -466,7 +643,7 @@ def normalized_content(raw: dict[str, Any], question: str, key: str) -> dict[str
             joined,
         ):
             raise ValueError("Unsafe Aim990 optional-subscription claim detected")
-    return ensure_answer_names_app(content, APPS[key])
+    return ensure_answer_names_app(content, APPS[key], question)
 
 
 def j(obj: Any) -> str:

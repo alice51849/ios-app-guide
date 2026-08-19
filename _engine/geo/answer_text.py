@@ -187,6 +187,38 @@ def _finish_sentence(text: str) -> str:
     return cleaned + ("\u3002" if _CJK_RE.search(cleaned) else ".")
 
 
+def clause_snippet(text: str, limit: int, minimum: int = 40) -> str:
+    """Longest clause-boundary prefix of `text` that fits `limit`, as a sentence.
+
+    `concise_meta` only falls back to clauses when *no* complete sentence fits.
+    Callers that already hold a complete opening sentence and want to add as
+    much of a long following fact as will fit need the clause logic on its own
+    -- otherwise they must either drop the fact entirely or cut it at a fixed
+    character count, which is what produced snippets like "... friction (moving
+    distracting apps off the home screen." with an unclosed bracket.
+
+    Returns "" when nothing clean fits, so the caller can safely say less.
+    """
+    compact = " ".join((text or "").split())
+    if not compact:
+        return ""
+    if len(compact) <= limit and not is_malformed_meta(compact):
+        finished = _finish_sentence(compact)
+        if finished and not is_malformed_meta(finished):
+            return finished
+    best = ""
+    for match in _CLAUSE_BOUNDARY_RE.finditer(compact):
+        candidate = compact[: match.start()].rstrip()
+        if len(candidate) < minimum or len(candidate) > limit:
+            continue
+        if not _balanced_brackets(candidate):
+            continue
+        finished = _finish_sentence(candidate)
+        if finished and len(finished) <= limit and not is_malformed_meta(finished):
+            best = finished
+    return best
+
+
 def concise_meta(
     text: str,
     limit: int = 150,

@@ -302,10 +302,31 @@ jobs:
       - name: Localize from curated dictionaries (zero-cost, no API)
         run: |
           cd _engine/geo
-          timeout 10m python3 aeo_answers_i18n.py \
+          # 1) Recover translations already published inside localized pages back
+          #    into the shared dictionaries. Free, no API, and every later page
+          #    benefits from what earlier runs already translated.
+          timeout 10m python3 i18n_harvest_existing.py \
+            || echo "i18n_harvest_existing exited $?"
+          # 2) Create localized pages for slugs that still have none — all 50
+          #    official locales, not just the 8 we used to cover.
+          timeout 15m python3 aeo_answers_i18n.py \
             --trans i18n_trans \
-            --langs "zh-Hant ja ko de-DE es-ES fr-FR pt-BR ms" \
-            --limit 2
+            --limit 40 \
+            || echo "new-page localization exited $?"
+          # 3) Top up already-published pages the dictionaries can now localize
+          #    better. --refresh only writes when the new render localizes more
+          #    of the page, so a page can never regress, and the pass is
+          #    resumable across runs. Without this step pages stayed frozen at
+          #    whatever coverage existed the day they were first written.
+          timeout 20m python3 aeo_answers_i18n.py \
+            --trans i18n_trans \
+            --refresh --limit 300 \
+            || echo "refresh localization exited $?"
+          # 4) Publish the current per-locale body-localization scoreboard.
+          python3 l10n_coverage.py --sample 40 \
+            --json reports/l10n_coverage.json \
+            --markdown reports/l10n_coverage.md \
+            || echo "l10n_coverage exited $?"
       - name: Fix EN hreflang reciprocity (declare newly-added locale versions)
         run: |
           cd _engine/geo

@@ -36,12 +36,14 @@ from __future__ import annotations
 import argparse
 import importlib.util
 import json
+import os
 import re
 import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-PAGES = ROOT / "pages"
+# CI symlinks _engine/geo/pages at the site root; GEO_PAGES overrides it.
+PAGES = Path(os.environ.get("GEO_PAGES", ROOT / "pages")).resolve()
 
 _spec = importlib.util.spec_from_file_location(
     "_aeo_i18n", ROOT / "aeo_answers_i18n.py"

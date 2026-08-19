@@ -5,7 +5,7 @@
     <link>https://alice51849.github.io/ios-app-guide/</link>
     <description>Fresh publisher-disclosed iOS app guides, answers, free tools and open datasets.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 19 Aug 2026 00:26:52 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2026 00:00:00 GMT</lastBuildDate>
     <generator>iOS App Guide static syndication generator</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <ttl>360</ttl>
@@ -17,6 +17,34 @@
     <atom:link href="https://rpc.rsscloud.io/websub" rel="hub"/>
     <atom:link href="https://alice51849.github.io/ios-app-guide/feed.xml" rel="alternate" type="application/atom+xml"/>
     <atom:link href="https://alice51849.github.io/ios-app-guide/feed.json" rel="alternate" type="application/feed+json"/>
+    <item>
+      <title>Free Bopomofo Anki Deck - All 37 Zhuyin Symbols</title>
+      <link>https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.html</link>
+      <description>Download a free UTF-8 Anki import deck covering all 37 Bopomofo symbols with Pinyin, IPA, categories and Traditional Chinese examples.</description>
+      <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.html</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Free Family Travel Observation Passport</title>
+      <link>https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html</link>
+      <description>Download a privacy-first, print-ready 14-page family travel observation passport for 12 settings, with A4 and US Letter PDFs.</description>
+      <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Bopomofo SKOS Vocabulary - 37 Zhuyin Symbols as Linked Open Data</title>
+      <link>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</link>
+      <description>Download a CC BY 4.0 SKOS vocabulary for all 37 Zhuyin symbols in JSON-LD, Turtle and N-Triples, with SHACL and DCAT/VoID metadata.</description>
+      <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>DCAT 3 open-data catalog for Bopomofo resources</title>
+      <link>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</link>
+      <description>Download a static W3C DCAT 3 catalog covering sixteen verified Bopomofo datasets and 80 exact distributions.</description>
+      <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Free Zhuyin Parent-Teacher Handoff Kit</title>
       <link>https://alice51849.github.io/ios-app-guide/tools/zhuyin-parent-teacher-handoff-kit.html</link>
@@ -571,13 +599,6 @@
       <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/aibriefpack-share.jpg" width="1200" height="675"/>
     </item>
     <item>
-      <title>All pages | iOS</title>
-      <link>https://alice51849.github.io/ios-app-guide/data/browse.html</link>
-      <description>Every page in this section, grouped by topic.</description>
-      <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/data/browse.html</guid>
-      <pubDate>Wed, 19 Aug 2026 00:26:52 GMT</pubDate>
-    </item>
-    <item>
       <title>Download a RO-Crate 1.3 Research Object for All 37 Bopomofo Symbols</title>
       <link>https://alice51849.github.io/ios-app-guide/answers/where-can-i-download-a-ro-crate-1-3-research-object-for-all-37-bopomofo-symbols.html</link>
       <description>Download an attached RO-Crate 1.3 package for all 37 Bopomofo symbols with CSV, JSON Lines, Croissant, CSVW, SKOS and SHA-256.</description>
@@ -765,6 +786,13 @@
       <description>免費 14 天小一注音暑假暖身指南：三條彈性起點、每天 8–10 分鐘，不打卡、不評分、不設定入學門檻，並附教育部符號與筆順來源。</description>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/guides/zhuyin-grade-1-preparation.html</guid>
       <pubDate>Tue, 18 Aug 2026 11:15:19 GMT</pubDate>
+    </item>
+    <item>
+      <title>Lumi Studio Publisher Search Intent Catalog</title>
+      <link>https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html</link>
+      <description>A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.</description>
+      <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html</guid>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title>注音 app 推薦|2026 最好的注音符號學習 App(免費・無廣告)</title>

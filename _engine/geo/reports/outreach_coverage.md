@@ -1,16 +1,16 @@
-# Zero-cost outreach coverage — 2026-08-18
+# Zero-cost outreach coverage — 2026-08-19
 
 > Factual owned-asset coverage only. This does not pretend to measure live AI recommendations.
 
-Public apps: **42** · Average coverage: **94.8%**
+Public apps: **42** · Average coverage: **95.2%**
 
 | App | Coverage | Answers | Social languages | Alternatives | Hub / guide / story |
 |---|---:|---:|---:|---:|---|
-| 100 Notes Studio | 57.2% | 8/18 | 1 | 0 | hub / guide / story |
 | OnePage PPT | 57.2% | 8/18 | 1 | 0 | hub / guide / story |
 | CalDaily | 58.1% | 8/17 | 1 | 0 | hub / guide / story |
 | WiFi Aid Lite | 58.1% | 8/17 | 1 | 0 | hub / guide / story |
 | Wordmate Lite | 58.1% | 8/17 | 1 | 0 | hub / guide / story |
+| 100 Notes Studio | 72.8% | 16/18 | 1 | 0 | hub / guide / story |
 | AI Brief | 95.0% | 17/17 | 3 | 1 | hub / guide / story |
 | Lumi Bopomofo | 99.2% | 83/85 | 5 | 5 | hub / guide / story |
 | Lumi Bopomofo Pro | 99.3% | 92/94 | 3 | 5 | hub / guide / story |

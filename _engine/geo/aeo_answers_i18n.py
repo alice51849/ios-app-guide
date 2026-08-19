@@ -2520,6 +2520,117 @@ def render_localized(source: str, lang: str, slug: str, mapping: dict[str, str])
     return finalize_html(localized, lang, slug)
 
 
+def _untranslated_ratio(strings: list[str], mapping: dict[str, str]) -> float:
+    """Share of visible characters that are still byte-identical to English."""
+    total = sum(len(x) for x in strings)
+    if not total:
+        return 0.0
+    same = sum(
+        len(x) for x in strings if mapping.get(x, x).strip() == x.strip()
+    )
+    return same / total
+
+
+def _existing_untranslated_ratio(existing: str, english_strings: list[str]) -> float:
+    """Same basis as _untranslated_ratio: share of the *English source* char
+    mass that still shows up verbatim in the already-published localized page.
+    Measuring both sides against the English strings keeps the comparison fair
+    for languages whose translations are much shorter than English (CJK).
+    """
+    total = sum(len(x) for x in english_strings)
+    if not total:
+        return 1.0
+    present = set(extract_strings(existing)[0])
+    same = sum(len(x) for x in english_strings if x in present)
+    return same / total
+
+
+def run_refresh(
+    langs: list[str],
+    trans_dir: str,
+    limit: int | None = None,
+    min_gain: float = 0.01,
+    slugs: list[str] | None = None,
+) -> int:
+    """Re-localize *already generated* answer pages after the dictionaries grew.
+
+    discover_slugs() only ever finds slugs that have no localized page yet, so
+    once a page exists it is frozen at whatever coverage the dictionary had on
+    the day it was written -- which is why thousands of pages sit at ~25% body
+    localization.  This mode walks the existing pages instead and rewrites one
+    only when the current dictionary demonstrably localizes *more* of it
+    (min_gain of the visible characters).  A page can therefore never be made
+    worse, and the pass is safe to interrupt and resume.
+    """
+    global_maps: dict[str, dict[str, str]] = {}
+    for lang in langs:
+        gp = Path(trans_dir) / f"{lang}.json"
+        global_maps[lang] = (
+            json.loads(gp.read_text(encoding="utf-8")) if gp.exists() else {}
+        )
+
+    if slugs:
+        candidates = [Path(x).stem for x in slugs]
+    else:
+        candidates = sorted(
+            q.stem for q in ANSWERS.glob("*.html") if q.name != "index.html"
+        )
+
+    improved = unchanged = failed = 0
+    touched_slugs: list[str] = []
+    for slug in candidates:
+        src_path = ANSWERS / f"{slug}.html"
+        if not src_path.exists():
+            continue
+        source = src_path.read_text(encoding="utf-8")
+        strings, _, _ = extract_strings(source)
+        slug_touched = False
+        for lang in langs:
+            if lang in ENGLISH_LOCALES:
+                continue
+            target = ROOT / lang / "answers" / f"{slug}.html"
+            if not target.exists():
+                continue
+            gm = global_maps[lang]
+            mapping = {x: gm.get(x, x) for x in strings}
+            mapping = apply_locale_text_overrides(mapping, lang)
+            new_ratio = _untranslated_ratio(strings, mapping)
+            try:
+                existing = target.read_text(encoding="utf-8")
+            except OSError:
+                continue
+            old_ratio = _existing_untranslated_ratio(existing, strings)
+            if new_ratio > old_ratio - min_gain:
+                unchanged += 1
+                continue
+            try:
+                localized = render_localized(source, lang, slug, mapping)
+                target.write_text(localized, encoding="utf-8")
+                improved += 1
+                slug_touched = True
+                print(
+                    f"refreshed {lang}/{slug}.html "
+                    f"{(1 - old_ratio) * 100:.0f}% -> {(1 - new_ratio) * 100:.0f}%",
+                    flush=True,
+                )
+            except Exception as exc:  # noqa: BLE001 - report and continue
+                failed += 1
+                print(f"failed {lang}/{slug}.html: {exc}", file=sys.stderr, flush=True)
+        if slug_touched:
+            touched_slugs.append(slug)
+        if limit and len(touched_slugs) >= limit:
+            break
+
+    print(
+        json.dumps(
+            {"refreshed": improved, "unchanged": unchanged, "failed": failed},
+            ensure_ascii=False,
+        ),
+        flush=True,
+    )
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Localize new AEO/GEO answer pages. Writes HTML only; never uses git.")
     parser.add_argument("slugs", nargs="*", help="Optional answer slugs, with or without .html")
@@ -2528,6 +2639,28 @@ def main() -> int:
     parser.add_argument("--meta-only", action="store_true", help="只重寫既有在地化 answers 頁仍是英文 fallback 的 <title>/meta description/og:title/og:description(每語言句式+頁面特異 query/app),不翻譯內文、不動 robots/canonical/JSON-LD。--langs 可鎖定語言,預設掃全部 locale 目錄。")
     parser.add_argument("--dump", metavar="DIR", help="不翻譯,僅把每個 slug 的待譯字串輸出成 DIR/<slug>.json,供 agent 自行在地化(不用 OpenAI key)。")
     parser.add_argument("--trans", metavar="DIR", help="從全域 DIR/<lang>.json {原文:譯文}(agent 自產)組 mapping,免用 OpenAI key。字串全覆蓋才生成;缺漏寫到 DIR/_missing.<lang>.json 供補譯。")
+    parser.add_argument(
+        "--refresh",
+        action="store_true",
+        help=(
+            "重新在地化『已存在』的 answers 頁"
+            "（字典變大後補譯）；"
+            "只有新字典能多譯出至少 --min-gain "
+            "比例的可見字元才覆寫，"
+            "絕不讓頁面倒退；可隨時中斷續跑。"
+            "需搭配 --trans DIR。"
+        ),
+    )
+    parser.add_argument(
+        "--min-gain",
+        type=float,
+        default=0.01,
+        help=(
+            "--refresh 覆寫門檻：新版本至少要多"
+            "在地化這個比例的可見字元"
+            "（預設 0.01）。"
+        ),
+    )
     parser.add_argument("--allow-partial", action="store_true", help="搭配 --trans:即使有字串未譯也生成(未譯者維持原文)。預設關閉以免英文 fallback。")
     parser.add_argument("--openai", action="store_true", help="Explicitly opt in to OpenAI translation. Default requires --trans or --dump.")
     parser.add_argument("--ollama", action="store_true", help="Use the local Ollama service for zero-cost, on-device translation.")
@@ -2563,6 +2696,16 @@ def main() -> int:
             else None
         )
         return run_meta_only(langs)
+    if args.refresh:
+        if not args.trans:
+            parser.error("--refresh 需搭配 --trans DIR")
+        return run_refresh(
+            parse_langs(args.langs),
+            args.trans,
+            limit=args.limit,
+            min_gain=args.min_gain,
+            slugs=args.slugs or None,
+        )
     if sum(
         bool(value)
         for value in (

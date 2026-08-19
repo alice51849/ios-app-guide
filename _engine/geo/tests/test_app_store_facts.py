@@ -174,8 +174,9 @@ class AppStoreFactsTests(unittest.TestCase):
                 },
                 schema["offers"],
             )
-            self.assertEqual(4.8, schema["aggregateRating"]["ratingValue"])
-            self.assertEqual(12, schema["aggregateRating"]["ratingCount"])
+            # Visible above, structured never: see the note in
+            # test_every_verified_generated_fact_matches_schema.
+            self.assertNotIn("aggregateRating", schema)
 
             fallback = (
                 pages / "bn-BD" / f"{key}.html"
@@ -275,11 +276,15 @@ class AppStoreFactsTests(unittest.TestCase):
                         f">{html.escape(str(detail['formatted_price']))}</data>",
                         source,
                     )
+                    # The visible rating stays -- it is a real fact a reader
+                    # can check on the listing. The structured
+                    # aggregateRating never does: publisher-authored ratings
+                    # for one's own app are a self-serving rich-snippet
+                    # signal, which gen_app_store_facts strips on purpose.
+                    # Asserting it in both branches is what keeps the split
+                    # honest once an app finally earns its first review.
+                    self.assertNotIn("aggregateRating", schema)
                     if "rating_value" in detail:
-                        self.assertEqual(
-                            detail["rating_count"],
-                            schema["aggregateRating"]["ratingCount"],
-                        )
                         rating_value = f"{float(detail['rating_value']):.1f}"
                         self.assertIn(
                             f'value="{rating_value}">{rating_value}</data>/5',
@@ -290,8 +295,6 @@ class AppStoreFactsTests(unittest.TestCase):
                             f'{detail["rating_count"]}</data>',
                             source,
                         )
-                    else:
-                        self.assertNotIn("aggregateRating", schema)
         self.assertGreater(checked, 1200)
 
 

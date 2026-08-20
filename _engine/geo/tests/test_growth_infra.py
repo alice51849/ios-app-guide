@@ -280,6 +280,27 @@ class AppStoreAvailabilityTests(unittest.TestCase):
 
 
 class GeneratorTests(unittest.TestCase):
+    def test_robots_welcome_current_answer_engine_crawlers(self):
+        with tempfile.TemporaryDirectory() as directory, mock.patch.object(
+            build_pages_i18n,
+            "PAGES",
+            directory,
+        ):
+            build_pages_i18n.build_robots()
+            robots_documents = (
+                Path(directory, "robots.txt").read_text(encoding="utf-8"),
+                gen_llms.build_robots(),
+            )
+        for robots in robots_documents:
+            for agent in (
+                "OAI-SearchBot",
+                "Claude-User",
+                "Claude-SearchBot",
+                "PerplexityBot",
+                "BraveSearchBot",
+                "Applebot",
+            ):
+                self.assertIn(f"User-agent: {agent}\nAllow: /", robots)
     def test_live_guide_fallback_only_creates_missing_pages(self):
         with tempfile.TemporaryDirectory() as directory:
             guides = Path(directory) / "guides"

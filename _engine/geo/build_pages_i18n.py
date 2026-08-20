@@ -2161,8 +2161,9 @@ def build_sitemap(keys, locales):
 
 def build_robots():
     # 明確歡迎各大 AI/搜尋爬蟲(GEO/AEO 核心)+ 列出全部 sitemap + 指向 llms.txt。
-    ai_bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
-               "Claude-Web", "PerplexityBot", "Perplexity-User", "Google-Extended",
+    ai_bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User",
+               "Claude-SearchBot", "anthropic-ai", "Claude-Web", "PerplexityBot",
+               "Perplexity-User", "BraveSearchBot", "Google-Extended",
                "Googlebot", "Bingbot", "Applebot", "Applebot-Extended", "CCBot",
                "Amazonbot", "Bytespider", "Meta-ExternalAgent", "DuckDuckBot",
                "cohere-ai", "YandexBot", "PetalBot"]

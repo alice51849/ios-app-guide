@@ -112,8 +112,9 @@ DATA_DISTRIBUTIONS = (
     ("Croissant 1.1", ".croissant.jsonld"),
 )
 
-AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai",
-           "Claude-Web", "PerplexityBot", "Perplexity-User", "Google-Extended",
+AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User",
+           "Claude-SearchBot", "anthropic-ai", "Claude-Web", "PerplexityBot",
+           "Perplexity-User", "BraveSearchBot", "Google-Extended",
            "Googlebot", "Bingbot", "Applebot", "Applebot-Extended", "CCBot",
            "Amazonbot", "Bytespider", "Meta-ExternalAgent", "DuckDuckBot",
            "cohere-ai", "YandexBot", "PetalBot"]

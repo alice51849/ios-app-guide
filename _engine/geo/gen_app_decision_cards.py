@@ -25,6 +25,7 @@ from app_store_storefronts import (  # noqa: E402
     verified_app_store_url,
 )
 import gen_smart_app_banners  # noqa: E402
+import gen_store_attribution  # noqa: E402
 from official_locales import OFFICIAL_LOCALE_SET  # noqa: E402
 from videogen.registry import APPS, APPSTORE  # noqa: E402
 
@@ -277,6 +278,26 @@ STYLESHEET = """\
 """
 
 
+def page_campaign(path: Path, pages: Path) -> str:
+    """Campaign token for the page this card is being written into.
+
+    The decision card used to mint a fixed ``iag_decision`` token.  Since the
+    2026-08-20 taxonomy collapse ``gen_store_attribution`` rewrites every store
+    anchor to ``geo_ask``/``geo_pick``/``geo_learn``, and it runs *after* the
+    QR generator has already hashed the pre-rewrite URL into the QR image file
+    name — so a stale constant here silently desynchronises the QR code from
+    the link beside it.  Mint the final token here instead, from the same
+    function the attribution pass uses, so the URL never changes underneath.
+    """
+    root = pages.resolve()
+    resolved = path.resolve()
+    try:
+        relative = resolved.relative_to(root).as_posix()
+    except ValueError:
+        relative = path.name
+    return gen_store_attribution.campaign_token(relative)
+
+
 def _plain_text(fragment: str) -> str:
     return " ".join(html.unescape(TAG_RE.sub(" ", fragment)).split())
 
@@ -286,6 +307,7 @@ def _campaign_url(
     app_id: str,
     locale: str = "en-US",
     availability: dict[str, frozenset[str]] | None = None,
+    campaign: str = gen_store_attribution.campaign_token(""),
 ) -> str:
     parsed = urllib.parse.urlsplit(html.unescape(url))
     path = re.fullmatch(r"/(?:[a-z]{2}/)?app/id(\d+)", parsed.path)
@@ -314,7 +336,7 @@ def _campaign_url(
     )
     return campaign_app_store_url(
         destination,
-        "iag_decision",
+        campaign,
         provider_token=provider_values[0] if provider_values else None,
     )
 
@@ -324,6 +346,7 @@ def _store_link(
     app_id: str,
     locale: str,
     availability: dict[str, frozenset[str]],
+    campaign: str = gen_store_attribution.campaign_token(""),
 ) -> tuple[str, str]:
     for anchor in ANCHOR_RE.finditer(source):
         href_match = HREF_RE.search(anchor.group("attrs"))
@@ -331,12 +354,14 @@ def _store_link(
             continue
         href = html.unescape(href_match.group("href"))
         try:
-            campaign = _campaign_url(href, app_id, locale, availability)
+            store_url = _campaign_url(
+                href, app_id, locale, availability, campaign
+            )
         except ValueError:
             continue
         label = _plain_text(anchor.group("label"))
         if label:
-            return campaign, label
+            return store_url, label
     raise ValueError(f"No App Store CTA found for app ID {app_id}")
 
 
@@ -417,6 +442,7 @@ def _page_content(
     answer: bool,
     locale: str = "en-US",
     availability: dict[str, frozenset[str]] | None = None,
+    campaign: str = gen_store_attribution.campaign_token(""),
 ) -> dict[str, object]:
     heading = H1_RE.search(source)
     promise_match = (
@@ -431,6 +457,7 @@ def _page_content(
         app_id,
         locale,
         availability or {},
+        campaign,
     )
     promise = _plain_text(promise_match.group(1))
     if answer and promise.lower().startswith("a practical buying guide for"):
@@ -580,6 +607,7 @@ def ensure_card(
         availability
         if availability is not None
         else load_storefront_availability(pages),
+        page_campaign(path, pages),
     )
     updated = _inject_style(cleaned, style_block(site))
     updated = _inject_card(updated, card_block(key, app_id, content), answer)

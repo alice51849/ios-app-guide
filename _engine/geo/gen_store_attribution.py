@@ -30,6 +30,8 @@ Rules that keep it safe:
 from __future__ import annotations
 
 import argparse
+import hashlib
+import html
 import os
 from pathlib import Path
 import re
@@ -42,6 +44,7 @@ sys.path.insert(0, str(HERE))
 from app_store_storefronts import (  # noqa: E402
     PROVIDER_TOKEN_ENV,
     campaign_app_store_url,
+    normalize_app_store_campaign_url,
     resolve_provider_token,
 )
 
@@ -272,6 +275,53 @@ def rewrite(text: str, token: str, provider: str | None) -> tuple[str, int]:
     return text, changes
 
 
+# --------------------------------------------------------------------------- #
+# Fail-closed guard: gen_app_store_qr_ctas.py mints one SVG per *URL* and puts
+# the sha256 of that URL in the file name, so a QR image is only correct for
+# the exact link printed beside it.  This pass runs last and rewrites those
+# links, which means any generator that mints a campaign token this pass does
+# not agree with silently leaves 2,100+ pages whose QR code scans to a
+# different campaign than the button next to it.  That is what happened on
+# 2026-08-20, when gen_app_decision_cards.py still minted the pre-collapse
+# `iag_decision` token: the only symptom was 2,100 opaque assertion failures
+# in the growth-infra gate, hours after the fact.  Detect it here, at the
+# moment the desynchronisation is created, and name the page.
+# --------------------------------------------------------------------------- #
+QR_CARD_LINK_RE = re.compile(
+    r'app-store-qr-card__link"\s+href="(?P<href>[^"]+)"'
+)
+QR_CARD_IMAGE_RE = re.compile(
+    r'app-store-qr-card__image"\s+src="[^"]*/'
+    r'id(?P<app>\d+)-(?P<digest>[0-9a-f]{20})\.svg"'
+)
+
+
+def qr_card_desync(text: str) -> tuple[str, str, str] | None:
+    """``(href, image_digest, expected_digest)`` when a QR image is stale.
+
+    ``None`` when the page has no QR card, or when its image still encodes the
+    very URL the card links to.
+    """
+    link = QR_CARD_LINK_RE.search(text)
+    image = QR_CARD_IMAGE_RE.search(text)
+    if not link or not image:
+        return None
+    try:
+        url = normalize_app_store_campaign_url(
+            html.unescape(link.group("href"))
+        )
+    except ValueError:
+        return None
+    expected = hashlib.sha256(url.encode("utf-8")).hexdigest()[:20]
+    if expected == image.group("digest"):
+        return None
+    return link.group("href"), image.group("digest"), expected
+
+
+class QrCardDesyncError(RuntimeError):
+    """Raised when this pass would outdate a page's App Store QR image."""
+
+
 def iter_html(pages: Path):
     for path in pages.rglob("*.html"):
         if EXCLUDED_PARTS.intersection(path.relative_to(pages).parts):
@@ -301,6 +351,16 @@ def generate(pages: Path, check: bool) -> dict[str, object]:
         links_total += len(anchors)
         token = campaign_token(rel)
         updated, changes = rewrite(text, token, provider)
+        if changes and qr_card_desync(updated) and not qr_card_desync(text):
+            href, stale, expected = qr_card_desync(updated)
+            raise QrCardDesyncError(
+                "store attribution would outdate the App Store QR image on "
+                f"{rel}: the card now links to {href} (sha {expected}) but its "
+                f"QR image still encodes sha {stale}. Whichever generator "
+                "minted that link must use gen_store_attribution."
+                "campaign_token() so the URL is already final before "
+                "gen_app_store_qr_ctas.py hashes it."
+            )
         # Census the token for every anchor on the page, not just the ones this
         # run had to touch — otherwise a second (idempotent) run reports zero
         # campaigns and the taxonomy looks empty.

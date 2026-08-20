@@ -181,15 +181,12 @@ class AppInstallDecisionRouteTests(unittest.TestCase):
                 app_entity["offers"]["url"],
             )
             verified_storefront_records += 1
+            # The route JSON-LD never carries aggregateRating, even when the
+            # storefront snapshot has real numbers: a publisher marking up a
+            # rating for its own product is a self-serving review snippet, so
+            # app_install_decision_routes strips it on purpose.
+            self.assertNotIn("aggregateRating", app_entity)
             if "rating_value" in expected_facts:
-                self.assertEqual(
-                    float(expected_facts["rating_value"]),
-                    app_entity["aggregateRating"]["ratingValue"],
-                )
-                self.assertEqual(
-                    int(expected_facts["rating_count"]),
-                    app_entity["aggregateRating"]["ratingCount"],
-                )
                 verified_rating_records += 1
         self.assertGreater(
             verified_storefront_records,

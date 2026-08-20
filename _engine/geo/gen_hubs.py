@@ -19,6 +19,7 @@ sys.path.insert(0, os.path.join(ROOT, "social"))
 sys.path.insert(0, HERE)
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from app_store_storefronts import (  # noqa: E402
+    campaign_app_store_url,
     load_storefront_availability,
     verified_app_store_url,
 )
@@ -26,6 +27,7 @@ from appstore_live import live_app_keys  # noqa: E402
 from official_locales import OFFICIAL_LOCALES, open_graph_locale  # noqa: E402
 from portfolio_app_finder import RTL_LOCALES, UI  # noqa: E402
 import gen_mobile_app_identity  # noqa: E402
+import gen_store_attribution  # noqa: E402
 import queries  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
@@ -302,6 +304,15 @@ def build_localized_hub(key, locale, availability=None):
         locale,
         availability,
     )
+    # gen_app_store_qr_ctas.py hashes this page's first App Store link into the
+    # QR image file name, and gen_store_attribution.py rewrites that link
+    # afterwards, so a token minted here that the attribution pass disagrees
+    # with silently makes the QR code scan to a different campaign than the
+    # button beside it.  Mint the final token from the same authority instead.
+    store_href = campaign_app_store_url(
+        store_url,
+        gen_store_attribution.campaign_token(f"{locale}/hubs/{key}.html"),
+    )
     section_label = questions_label if answers else why_label
     title = f"{name} · {section_label}"
     social_metadata = _social_metadata(
@@ -362,7 +373,7 @@ def build_localized_hub(key, locale, availability=None):
 </head><body>
 <header class="top"><div class="wrap nav"><a href="{e(guide_url)}">{e(guide_label)}</a></div></header>
 <main class="wrap">
-<section class="hero">{_preview_html(key, store_url, store_label, name)}<h1>{e(name)}</h1><p class="lead">{e(description)}</p><a class="cta" href="{e(store_url)}" rel="nofollow noopener">{e(store_label)}</a></section>
+<section class="hero">{_preview_html(key, store_href, store_label, name)}<h1>{e(name)}</h1><p class="lead">{e(description)}</p><a class="cta" href="{e(store_href)}" rel="nofollow noopener">{e(store_label)}</a></section>
 <section class="card"><h2>{e(section_label)}</h2><div class="ll">{resources_html}</div></section>
 </main>
 <footer class="footer"><div class="wrap"><a href="{e(guide_url)}">{e(name)}</a></div></footer>
@@ -374,7 +385,14 @@ def build_hub(key):
     e = html.escape
     name = a["name"]
     sub = (a.get("sub") or a.get("tag") or "").strip()
-    url = appstore_url(key, "iag_hub") or f"{SITE}/en-US/{key}.html"
+    # gen_app_store_qr_ctas.py hashes this page's first App Store link into the
+    # QR image file name, and gen_store_attribution.py rewrites that link
+    # afterwards, so a token minted here that the attribution pass disagrees
+    # with silently makes the QR code scan to a different campaign than the
+    # button beside it.  Mint the final token from the same authority instead.
+    url = appstore_url(
+        key, gen_store_attribution.campaign_token(f"hubs/{key}.html")
+    ) or f"{SITE}/en-US/{key}.html"
     canon = hub_url(key)
     title = f"{name}: guides, answers & alternatives | iOS App Guide"
     description = (

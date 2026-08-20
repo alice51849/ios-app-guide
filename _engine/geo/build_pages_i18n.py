@@ -37,6 +37,7 @@ from app_store_storefronts import (  # noqa: E402
     verified_app_store_url,
 )
 from appstore_live import live_app_keys  # noqa: E402
+import gen_store_attribution  # noqa: E402
 from external_app_locales import (  # noqa: E402
     EXTERNAL_APP_LOCALES,
     EXTERNAL_APP_LOCALE_OVERRIDES,
@@ -1487,7 +1488,13 @@ def build_one(key, locale, all_locales):
     loc = external_localized_values(key, locale, locdata)
     name, sub, desc, kws = _meta_from(loc, a)
     desc = sanitize_description(key, locale, desc)
-    url = appstore_url(key, "iag_lp") or f"{SITE}/{locale}/{key}.html"
+    # gen_app_store_qr_ctas.py hashes this page's first App Store link into the
+    # QR image file name, and gen_store_attribution.py rewrites that link
+    # afterwards, so a token minted here that the attribution pass disagrees
+    # with silently makes the QR code scan to a different campaign than the
+    # button beside it.  Mint the final token from the same authority instead.
+    campaign = gen_store_attribution.campaign_token(f"{locale}/{key}.html")
+    url = appstore_url(key, campaign) or f"{SITE}/{locale}/{key}.html"
     ui = get_ui(locale)
     cat = SCHEMA_CAT.get(a.get("category", "utility"), "UtilitiesApplication")
     is_rtl = base_lang(locale) in RTL
@@ -1511,7 +1518,7 @@ def build_one(key, locale, all_locales):
         "inLanguage": locale,
         "description": desc or sub,
         "url": url,
-        "installUrl": appstore_url(key, "iag_lp") or url,
+        "installUrl": appstore_url(key, campaign) or url,
         "featureList": feats,
         "keywords": ", ".join(kws),
     }
@@ -1572,7 +1579,7 @@ def build_one(key, locale, all_locales):
   <p>{e(pricing_text)}</p>
 {faq_section}
   <h2>{e(ui["dl"])}</h2>
-  <p><a href="{e(appstore_url(key, "iag_lp") or url)}">{e(ui["get"].format(name=name))}</a></p>
+  <p><a href="{e(appstore_url(key, campaign) or url)}">{e(ui["get"].format(name=name))}</a></p>
 </main>
 </body>
 </html>

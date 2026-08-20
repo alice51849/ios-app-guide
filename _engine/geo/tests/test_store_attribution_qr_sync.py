@@ -42,6 +42,13 @@ def _page(href: str, digest: str) -> str:
     )
 
 
+def _module_source(module_name: str) -> str:
+    with open(
+        os.path.join(GEO, module_name + ".py"), encoding="utf-8"
+    ) as handle:
+        return handle.read()
+
+
 def _digest(url: str) -> str:
     relative = gen_app_store_qr_ctas.qr_asset_relative("6791658210", url)
     return relative.stem.split("-", 1)[1]
@@ -72,6 +79,118 @@ class DecisionCardCampaignTests(unittest.TestCase):
                     "legacy iag_* tokens get rewritten by the attribution "
                     "pass, which outdates every QR image minted from them",
                 )
+
+
+class QrEligiblePageFamilyTests(unittest.TestCase):
+    """QR 卡只長在這五個頁面家族;每個家族的產生器都必須用最終 token。
+
+    2026-08-20 第二次踩到同一顆雷:decision card 修好之後,`gen_hubs.py`
+    (`iag_hub`)與 `aeo_pages.py`(`iag_alt`)還在自己鑄 token,雲端鏈就
+    卡在 `alternatives/gmoneylite-vs-tricount.html`。QR 卡的連結取自頁面
+    「第一條」商店連結(`gen_mobile_store_ctas.app_store_cta`),所以只要
+    任何一個家族的產生器鑄出 attribution 會再改掉的 token,那一頁的 QR 圖
+    就會過期。這裡把家族與其擁有者釘住,讓下一個犯規在單元測試就現形,
+    不必等雲端跑 40 分鐘才炸一頁。
+    """
+
+    # section -> (module name, expected bucket token)
+    FAMILIES = {
+        "answers": ("aeo_answers", "geo_ask"),
+        "guides": ("aeo_guide", "geo_learn"),
+        "hubs": ("gen_hubs", "geo_pick"),
+        "alternatives": ("aeo_pages", "geo_pick"),
+    }
+
+    def test_sections_match_the_qr_eligible_surface(self):
+        """家族清單必須跟 QR 產生器實際掛卡的地方一致。"""
+        import gen_smart_app_banners
+
+        self.assertEqual(
+            set(gen_smart_app_banners.BUYER_INTENT_SECTIONS)
+            | {"guides"},
+            set(self.FAMILIES),
+        )
+
+    def test_each_family_generator_mints_the_final_token(self):
+        for section, (module_name, expected) in self.FAMILIES.items():
+            with self.subTest(section=section):
+                self.assertEqual(
+                    expected,
+                    gen_store_attribution.campaign_token(
+                        f"{section}/page.html"
+                    ),
+                )
+                text = _module_source(module_name)
+                self.assertNotIn(
+                    '"iag_',
+                    text,
+                    f"{module_name}.py mints a legacy campaign token; the "
+                    "attribution pass rewrites it after gen_app_store_qr_ctas "
+                    "has already hashed it into the QR image name",
+                )
+
+    def test_localized_app_pages_use_the_final_token(self):
+        """`<locale>/<app>.html` 也掛 QR 卡(_guide_pages 收了它)。"""
+        import build_pages_i18n
+
+        self.assertEqual(
+            "geo_pick",
+            gen_store_attribution.campaign_token("ja/lumibopomofo.html"),
+        )
+        text = _module_source("build_pages_i18n")
+        self.assertNotIn('"iag_', text)
+        self.assertTrue(hasattr(build_pages_i18n, "gen_store_attribution"))
+
+    def test_campaign_constants_agree_with_the_attribution_authority(self):
+        import aeo_answers
+        import aeo_guide
+        import gen_roundups
+
+        for module, constant, relative in (
+            (aeo_answers, "ANSWER_CAMPAIGN", "answers/page.html"),
+            (aeo_guide, "GUIDE_CAMPAIGN", "guides/page.html"),
+            # roundups are published into answers/, so they share ASK
+            (gen_roundups, "ROUNDUP_CAMPAIGN", "answers/page.html"),
+        ):
+            with self.subTest(module=module.__name__):
+                minted = getattr(module, constant)
+                self.assertEqual(
+                    gen_store_attribution.campaign_token(relative), minted
+                )
+                self.assertFalse(minted.startswith("iag_"))
+
+    def test_alternatives_landing_url_survives_the_attribution_pass(self):
+        """landing_url() 產出的連結,attribution 必須一個字都不用改。"""
+        import aeo_pages
+
+        previous = os.environ.get(gen_store_attribution.PROVIDER_TOKEN_ENV)
+        os.environ[gen_store_attribution.PROVIDER_TOKEN_ENV] = "118326163"
+        try:
+            key = next(
+                k
+                for k in aeo_pages.APPS
+                if aeo_pages.APPSTORE.get(k)
+            )
+            url = aeo_pages.landing_url(key)
+            self.assertIn("ct=geo_pick", url)
+            anchor = f'<a class="app-store-qr-card__link" href="{url}">x</a>'
+            _, changes = gen_store_attribution.rewrite(
+                anchor,
+                gen_store_attribution.campaign_token(
+                    "alternatives/page.html"
+                ),
+                "118326163",
+            )
+            self.assertEqual(0, changes)
+        finally:
+            if previous is None:
+                os.environ.pop(
+                    gen_store_attribution.PROVIDER_TOKEN_ENV, None
+                )
+            else:
+                os.environ[
+                    gen_store_attribution.PROVIDER_TOKEN_ENV
+                ] = previous
 
 
 class QrCardDesyncGuardTests(unittest.TestCase):

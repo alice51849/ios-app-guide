@@ -247,6 +247,9 @@ jobs:
           python3 gen_app_store_facts.py
           python3 app_install_decision_routes.py
           python3 normalize_app_store_links.py
+          # ResourceSync emits a Bopomofo page with a clean store URL. Keep it
+          # before every conversion surface and the final attribution pass.
+          python3 zhuyin_resourcesync.py
           python3 gen_app_decision_cards.py
           # Full-tree cleanup 2/3 runs after every English body generator.
           python3 cleanup_localized_assets.py --cached-live
@@ -259,7 +262,6 @@ jobs:
           python3 gen_store_attribution.py
           python3 validate_webstories.py
           python3 gen_llms.py --cached-live
-          python3 zhuyin_resourcesync.py
           python3 gen_feed.py
           python3 reconcile_answer_semantics.py
           python3 outreach_scorecard.py
@@ -360,6 +362,9 @@ jobs:
           python3 gen_app_store_facts.py
           python3 normalize_app_store_links.py
           python3 app_install_decision_routes.py
+          # ResourceSync must not recreate an unattributed store URL after the
+          # final attribution pass.
+          python3 zhuyin_resourcesync.py
           python3 gen_app_decision_cards.py
           # Full-tree cleanup 3/3 runs after every localized body generator.
           python3 cleanup_localized_assets.py --cached-live
@@ -372,7 +377,6 @@ jobs:
           python3 gen_store_attribution.py
           python3 validate_webstories.py
           python3 gen_llms.py --cached-live
-          python3 zhuyin_resourcesync.py
           python3 gen_feed.py
           python3 reconcile_answer_semantics.py
           python3 live_app_guard.py --site-root pages

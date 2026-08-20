@@ -2415,7 +2415,11 @@ class GeneratorTests(unittest.TestCase):
                 generated_source,
             )
             self.assertIn(
-                '<span class="mobile-store-cta__label">Get the app</span>',
+                'aria-label="Get the app"',
+                generated_source,
+            )
+            self.assertIn(
+                '<span class="mobile-store-cta__label">App Store</span>',
                 generated_source,
             )
             self.assertIn("defer", generated_source)
@@ -2424,8 +2428,10 @@ class GeneratorTests(unittest.TestCase):
                 "text-overflow:ellipsis", gen_mobile_store_ctas.SCRIPT
             )
             self.assertIn(
-                "justify-content:flex-start", gen_mobile_store_ctas.SCRIPT
+                "justify-content:center", gen_mobile_store_ctas.SCRIPT
             )
+            self.assertNotIn("overflow-x:auto", gen_mobile_store_ctas.SCRIPT)
+            self.assertNotIn("scrollbar", gen_mobile_store_ctas.SCRIPT)
             self.assertIn(
                 ".mobile-store-cta__label{margin-inline:auto}",
                 gen_mobile_store_ctas.SCRIPT,
@@ -2513,6 +2519,9 @@ class GeneratorTests(unittest.TestCase):
                 f"{gen_app_store_qr_ctas.FEED_DISCOVERY_ANCHOR} "
                 'href="/feed.xml"></head><body><main>'
                 f'<a class="cta" href="{legacy_app_href}">Localized label</a>'
+                f"{gen_app_decision_cards.CARD_START}"
+                "<aside>Decision</aside>"
+                f"{gen_app_decision_cards.CARD_END}"
                 "</main></body>",
                 encoding="utf-8",
             )
@@ -2574,6 +2583,10 @@ class GeneratorTests(unittest.TestCase):
             self.assertLess(
                 source.index(gen_app_store_qr_ctas.DECISION_STYLE_ANCHOR),
                 source.index(gen_app_store_qr_ctas.FEED_DISCOVERY_ANCHOR),
+            )
+            self.assertLess(
+                source.index(gen_app_decision_cards.CARD_END),
+                source.index(gen_app_store_qr_ctas.CARD_BLOCK_START),
             )
             self.assertLess(
                 source.index(gen_app_store_qr_ctas.CARD_BLOCK_START),
@@ -3388,7 +3401,7 @@ class GeneratorTests(unittest.TestCase):
 
         expected_locales = {
             "ar-sa", "bn-bd", "ca", "cs", "da", "de-de", "el", "en",
-            "es-es", "es-mx", "fi", "fr-fr", "gu-in", "he", "hi", "hr",
+            "es-es", "es-mx", "fi", "fr-ca", "fr-fr", "gu-in", "he", "hi", "hr",
             "hu", "id", "it", "ja", "kn-in", "ko", "ml-in", "mr-in",
             "ms", "nl-nl", "no", "or-in", "pa-in", "pl", "pt-br",
             "pt-pt", "ro", "ru", "sk", "sl-si", "sv", "ta-in", "te-in",
@@ -22505,6 +22518,14 @@ class GeneratorTests(unittest.TestCase):
                 "white-space: nowrap",
                 gen_app_decision_cards.STYLESHEET,
             )
+            self.assertNotIn(
+                "text-overflow: ellipsis",
+                gen_app_decision_cards.STYLESHEET,
+            )
+            self.assertNotIn(
+                "nth-child(n + 3)",
+                gen_app_decision_cards.STYLESHEET,
+            )
             generic = answer.read_text(encoding="utf-8").replace(
                 "Majte jednu cestu prehľadne pokope.",
                 "A practical buying guide for a trip planner.",
@@ -23247,6 +23268,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_guide_design.py",
             "gen_app_store_facts.py",
             "app_install_decision_routes.py",
+            "zhuyin_resourcesync.py",
             "gen_app_decision_cards.py",
             "gen_smart_app_banners.py",
             "gen_mobile_store_ctas.py",
@@ -23254,7 +23276,6 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_share_ctas.py",
             "validate_webstories.py",
             "gen_llms.py --cached-live",
-            "zhuyin_resourcesync.py",
             "gen_feed.py",
             "gen_sitemap_lastmod.py",
         )
@@ -23335,6 +23356,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_guide_design.py",
             "gen_app_store_facts.py",
             "app_install_decision_routes.py",
+            "zhuyin_resourcesync.py",
             "gen_app_decision_cards.py",
             "cleanup_localized_assets.py --cached-live",
             "gen_smart_app_banners.py",
@@ -23342,7 +23364,6 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_qr_ctas.py",
             "gen_app_store_share_ctas.py",
             "gen_llms.py --cached-live",
-            "zhuyin_resourcesync.py",
             "gen_feed.py",
             "reconcile_answer_semantics.py",
             "gen_sitemap_lastmod.py",
@@ -23647,6 +23668,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_guide_design.py",
             "gen_app_store_facts.py",
             "app_install_decision_routes.py",
+            "zhuyin_resourcesync.py",
             "gen_app_decision_cards.py",
             "gen_smart_app_banners.py",
             "gen_mobile_store_ctas.py",
@@ -23654,7 +23676,6 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_share_ctas.py",
             "validate_webstories.py",
             "gen_llms.py",
-            "zhuyin_resourcesync.py",
             "gen_feed.py",
             "gen_sitemap_lastmod.py",
         )

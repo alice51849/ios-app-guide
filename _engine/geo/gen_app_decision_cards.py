@@ -109,7 +109,7 @@ STYLESHEET = """\
   margin-block: clamp(0.75rem, 2.5vw, 1.5rem) clamp(1.5rem, 4vw, 2.5rem);
   margin-inline: auto;
   padding: clamp(0.9rem, 3vw, 1.4rem);
-  overflow: hidden;
+  overflow: visible;
   color: #f8fafc;
   background:
     radial-gradient(circle at 0 0, rgba(125, 211, 252, 0.22), transparent 42%),
@@ -144,8 +144,6 @@ STYLESHEET = """\
 .iag-decision-card__fact,
 .iag-decision-card__cta {
   min-inline-size: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
@@ -160,7 +158,7 @@ STYLESHEET = """\
 .iag-decision-card__terms {
   margin: 0;
   color: rgba(248, 250, 252, 0.84);
-  font-size: clamp(0.86rem, 0.82rem + 0.2vw, 1rem);
+  font-size: clamp(0.68rem, 0.62rem + 0.7vw, 1rem);
   line-height: 1.35;
 }
 
@@ -168,7 +166,8 @@ STYLESHEET = """\
   display: flex;
   min-inline-size: 0;
   gap: 0.4rem;
-  overflow: hidden;
+  flex-wrap: wrap;
+  overflow: visible;
 }
 
 .iag-decision-card__storefront {
@@ -192,7 +191,7 @@ STYLESHEET = """\
 }
 
 .iag-decision-card__fact {
-  flex: 0 1 auto;
+  flex: 0 0 auto;
   padding: 0.28rem 0.55rem;
   color: #eef2ff;
   background: rgba(255, 255, 255, 0.1);
@@ -230,16 +229,17 @@ STYLESHEET = """\
 
 @media (max-width: 34rem) {
   .iag-decision-card {
-    grid-template-columns: 4.75rem minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
     gap: 0.8rem;
   }
 
-  .iag-decision-card__fact:nth-child(n + 3) {
-    display: none;
+  .iag-decision-card__icon {
+    inline-size: 4.75rem;
   }
 
   .iag-decision-card__cta {
     inline-size: 100%;
+    font-size: clamp(0.7rem, 3.5vw, 1rem);
   }
 }
 

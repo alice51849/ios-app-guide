@@ -384,7 +384,13 @@ def ensure_qr_card(
         + "\n"
         + cleaned[head_index:].lstrip()
     )
-    main_index = with_style.rfind("</main>")
+    decision_end = "<!-- app-decision-card:end -->"
+    decision_index = with_style.find(decision_end)
+    main_index = (
+        decision_index + len(decision_end)
+        if decision_index >= 0
+        else with_style.rfind("</main>")
+    )
     if main_index < 0:
         main_index = with_style.rfind('<div class="footer">')
     if main_index < 0:

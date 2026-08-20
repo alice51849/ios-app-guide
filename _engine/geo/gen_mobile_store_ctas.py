@@ -56,9 +56,8 @@ SCRIPT = """\
     style.textContent = `
 .mobile-store-cta{position:fixed;z-index:2147483000;left:12px;left:max(12px,env(safe-area-inset-left));right:12px;right:max(12px,env(safe-area-inset-right));bottom:10px;bottom:max(10px,env(safe-area-inset-bottom));display:flex;box-sizing:border-box;padding:6px;border:1px solid rgba(255,255,255,.72);border-radius:20px;background:rgba(255,255,255,.9);box-shadow:0 14px 44px rgba(20,22,45,.2);-webkit-backdrop-filter:blur(18px) saturate(1.35);backdrop-filter:blur(18px) saturate(1.35);opacity:0;transform:translateY(calc(100% + 28px));pointer-events:none;transition:opacity .22s ease,transform .28s cubic-bezier(.22,1,.36,1)}
 .mobile-store-cta.is-visible{opacity:1;transform:translateY(0);pointer-events:auto}
-.mobile-store-cta__link{display:flex;align-items:center;justify-content:flex-start;width:100%;min-height:48px;padding:0 18px;border-radius:14px;background:linear-gradient(135deg,#4f55e8,#8057d9);box-shadow:0 7px 18px rgba(79,85,232,.28);color:#fff!important;text-decoration:none;font-size:clamp(.72rem,3.2vw,1rem);font-weight:850;letter-spacing:-.01em;line-height:1;white-space:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-tap-highlight-color:transparent}
+.mobile-store-cta__link{display:flex;align-items:center;justify-content:center;width:100%;min-height:48px;padding:0 18px;border-radius:14px;background:linear-gradient(135deg,#4f55e8,#8057d9);box-shadow:0 7px 18px rgba(79,85,232,.28);color:#fff!important;text-decoration:none;font-size:clamp(.78rem,4vw,1rem);font-weight:850;letter-spacing:-.01em;line-height:1;white-space:nowrap;overflow:visible;-webkit-tap-highlight-color:transparent}
 .mobile-store-cta__label{margin-inline:auto}
-.mobile-store-cta__link::-webkit-scrollbar{display:none}
 .mobile-store-cta__link:focus-visible{outline:3px solid #fff;outline-offset:-5px}
 @media(min-width:760px),print{.mobile-store-cta{display:none!important}}
 @media(max-width:759px){body.mobile-store-cta-active{padding-bottom:calc(82px + env(safe-area-inset-bottom))}}
@@ -179,7 +178,7 @@ def mobile_cta_block(
     escaped_label = html.escape(label)
     return f"""{BLOCK_START}
 <div class="mobile-store-cta" data-mobile-store-cta hidden aria-hidden="true">
-<a class="mobile-store-cta__link" href="{escaped_href}" rel="nofollow noopener" tabindex="-1"><span class="mobile-store-cta__label">{escaped_label}</span></a>
+<a class="mobile-store-cta__link" href="{escaped_href}" rel="nofollow noopener" tabindex="-1" aria-label="{escaped_label}" title="{escaped_label}"><span class="mobile-store-cta__label">App Store</span></a>
 </div>
 <script src="{script_href}" defer></script>
 {BLOCK_END}"""

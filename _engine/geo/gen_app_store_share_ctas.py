@@ -39,6 +39,7 @@ SHARE_LABELS = {
     "es-es": "Compartir",
     "es-mx": "Compartir",
     "fi": "Jaa",
+    "fr-ca": "Partager",
     "fr-fr": "Partager",
     "gu-in": "શેર કરો",
     "he": "שיתוף",

@@ -280,6 +280,9 @@ def main():
     require([PY, os.path.join(HERE, "gen_app_store_facts.py")], env=env)
     require([PY, os.path.join(HERE, "app_install_decision_routes.py")], env=env)
     require([PY, os.path.join(HERE, "normalize_app_store_links.py")], env=env)
+    # ResourceSync writes a Bopomofo page with a clean App Store URL, so it
+    # must run before every conversion surface and the attribution pass.
+    require([PY, os.path.join(HERE, "zhuyin_resourcesync.py")], env=env)
     require([PY, os.path.join(HERE, "gen_app_decision_cards.py")], env=env)
     require([PY, os.path.join(HERE, "gen_smart_app_banners.py")], env=env)
     require([PY, os.path.join(HERE, "gen_mobile_store_ctas.py")], env=env)
@@ -318,7 +321,6 @@ def main():
     require([PY, os.path.join(HERE, "gen_store_attribution.py")], env=env)
     require([PY, os.path.join(HERE, "validate_webstories.py")], env=env)
     require([PY, os.path.join(HERE, "gen_llms.py"), "--cached-live"], env=env)
-    require([PY, os.path.join(HERE, "zhuyin_resourcesync.py")], env=env)
     require([PY, os.path.join(HERE, "gen_feed.py")], env=env)
     sync_standard_site(env)
     require([PY, os.path.join(HERE, "reconcile_answer_semantics.py")], env=env)

@@ -2234,6 +2234,56 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "moneytag": [
+        {
+            "query": "best income and expense tracker for freelance projects no subscription",
+            "guide_title": "Project profit tracking for freelancers: what to keep separate",
+            "triggers": [
+                "income and expense tracker for freelance projects",
+                "freelance project income and expenses",
+                "track profit by client project",
+                "side hustle income expense tracker",
+                "project bookkeeping no subscription",
+                "tag expenses across projects",
+                "multi currency freelance ledger",
+            ],
+            "persona": "freelancers and side-hustle owners who need a separate bottom line for every project",
+            "lead": "A monthly budget cannot tell a freelancer whether one client project actually made money — each project needs its own income, expenses and net result.",
+            "paras": [
+                "MoneyTag treats every job, client or side hustle as a separate ledger. Income and expenses stay distinct, the project card shows the running net result, and each entry can carry multiple tags so costs such as equipment, travel or tax deductions can also be compared across projects.",
+                "Entries can use a local currency with an automatic or manual exchange rate while the project keeps one reporting currency. Reports break results down by period, type, category, month and day, with CSV and PDF export available through an optional one-time Lifetime Pro unlock. The app works offline with no account, ads, analytics or third-party tracking.",
+            ],
+            "look": [
+                "A separate income, expense and net total for every project.",
+                "Tags that can compare the same cost across multiple projects.",
+                "Multi-currency entries without changing the project's base currency.",
+                "Useful reports and export that remain under your control.",
+                "Offline use with a one-time upgrade instead of a subscription.",
+            ],
+            "steps": [
+                "Create one ledger for a real client project or side hustle.",
+                "Record both income and expenses in the currencies you actually use.",
+                "Tag shared costs such as equipment, travel or tax deductions.",
+                "Check the project net result and compare one tag across projects.",
+                "Preview the filtered report before deciding whether export is useful.",
+            ],
+            "fits": "fits freelancers and side-hustle owners who want project-level profit and cross-project tags without moving their financial records into an account-based subscription service.",
+            "faq": [
+                {
+                    "q": "Can I keep each client or side hustle separate?",
+                    "a": "Yes — every project has its own ledger, reporting currency, income, expenses and net result.",
+                },
+                {
+                    "q": "Can I compare one expense type across projects?",
+                    "a": "Yes — assign the same tag to entries in different projects, then switch the tag view from the current project to all projects.",
+                },
+                {
+                    "q": "Is there a subscription or online account?",
+                    "a": "No — the core workflow works offline with no account, and the optional Pro upgrade is a one-time purchase.",
+                },
+            ],
+        },
+    ],
 }
 
 

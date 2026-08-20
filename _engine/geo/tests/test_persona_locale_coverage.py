@@ -51,6 +51,7 @@ CURRENT_LIVE_APPS = {
     "unblurry",
     "notesstudio100",
     "onepageppt",
+    "moneytag",
     "wifiaid",
     "wifiaidlite",
     "wordmate",

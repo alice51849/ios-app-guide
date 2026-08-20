@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "te-IN",
-  "dateModified": "2026-08-19",
-  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
-  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
+  "dateModified": "2026-08-20",
+  "content_digest": "08cf1f31e6bc352f5475e375af6e995cbd78b8edfadde161d4cfd16cff4becd3",
+  "generation_digest": "fad6ea45224faa2da20fd98029fa695291d7a154a99e6731d1c67c0f18c1d1ce",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 42,
+  "record_count": 43,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/te-IN.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/te-IN.rss.xml",
@@ -1431,6 +1431,76 @@
       "publisher_disclosure": "లూమి స్టూడియో నుండి ప్రచురకుడు రాసిన మార్గదర్శకం, యాప్ అభివృద్ధికర్త. యాప్ పేర్లు వాటి యజమానుల ట్రేడ్‌మార్కులు మరియు గుర్తింపు కోసం మాత్రమే ఉపయోగించబడతాయి. పత్రాలు, ఆరోగ్యం, పాఠశాల మరియు ఉత్పాదకత నిర్ణయాల కోసం, సంబంధిత అధికారిక అవసరాలను ధృవీకరించండి.",
       "source_persona_query": "best simple to do list app iphone no subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "te-IN:moneytag",
+      "locale": "te-IN",
+      "app_key": "moneytag",
+      "app_name": "MoneyTag: ఆదాయం & ఖర్చు",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "MoneyTag: ఆదాయం & ఖర్చు — ప్రాజెక్టులు · ట్యాగ్‌లు | iOS App",
+      "decision_context": "ఆదాయం & ఖర్చు ప్రతి ప్రాజెక్ట్ తన సొంత లెక్క ఉంచుకుంటుంది: ఆదాయంలోంచి ఖర్చు తీసేస్తే వచ్చేదే దాని నికర మొత్తం. ఎక్కువగా అడిగే ప్రశ్నలు ఇక్కడ ఉన్నాయి. మీ ప్రశ్నకు జవాబు దొరకకపోతే రాయండి — ప్రతి సందేశాన్నీ నిజమైన మనిషే చదువుతారు. • ప్రతి ప్రాజెక్ట్‌కు సొంత నికర మొత్తం • అన్ని ప్రాజెక్ట్‌లలో ట్యాగ్ మొత్తం • ఒక ప్రాజెక్ట్‌కు ఒకే కరెన్సీ • జీవిత రేట్లు లేదా మాన్యువల్ రేట్లు • Apple Watch యాప్ • హోమ్, లాక్ స్క్రీన్ విడ్జెట్‌లు ప్రాజెక్ట్ అంటే అసలు ఏమిటి? ప్రాజెక్ట్ అంటే తనలో తానే పూర్తయ్యే ఒక లెక్క పుస్తకం: సొంత లావాదేవీలు, సొంత కరెన్సీ, సొంత తుది ఫలితం. MoneyTag ఆ ప్రాజెక్ట్ ఆదాయాన్ని కూడి, ఖర్చును తీసివేసి, దానికే సంబంధించిన నికర మొత్తాన్ని చూపుతుంది. MoneyTag కరెన్సీలను మార్చి చూపిస్తుందా? ప్రతి ప్రాజెక్ట్‌కు తనదైన ప్రాథమిక కరెన్సీ ఉంటుంది. హోమ్ స్క్రీన్‌లో ఇన్‌పుట్ కరెన్సీని నేరుగా ఎంచుకోవచ్చు. MoneyTag సుమారు ప్రతి 6 గంటలకు పబ్లిక్ మారకపు రేట్లను అప్‌డేట్ చేస్తుంది; మాన్యువల్ రేటును సెట్ చేసి తర్వాత మళ్లీ ఆటోమేటిక్‌కు మారవచ్చు. మార్చిన మొత్తం ప్రాజెక్ట్ ప్రాథమిక కరెన్సీలో సేవ్ అవుతుంది, సేవ్ చేసిన రేట్లు ఆఫ్‌లైన్‌లోనూ అందుబాటులో ఉంటాయి. సూచన రేట్లను Frankfurter లేదా ExchangeRate-API అందిస్తుంది; సమాచార ప్రయోజనం కోసం మాత్రమే. ట్యాగ్‌లు ఎలా పనిచేస్తాయి? MoneyTag లో ట్యాగ్‌లు ప్రధాన సదుపాయం, తర్వాత జోడించిన అదనపు అంశం కాదు. ఏ ఆదాయానికైనా ఖర్చుకైనా ట్యాగ్ ఇవ్వండి; ట్యాగ్ స్క్రీన్ అదే ట్యాగ్ లెక్కను మీ అన్ని ప్రాజెక్ట్‌లలో ఒకేసారి కూడి చూపుతుంది — ఆదాయం, ఖర్చు, ఆ ట్యాగ్ నికర మొత్తం. ప్రాజెక్ట్‌ల మధ్య ట్యాగ్ విశ్లేషణ Lifetime Pro లో భాగం. ఉచితంగా ఏమి వస్తుంది, Lifetime Pro ఏమి జోడిస్తుంది? ఉచితం · 1 ప్రాజెక్టు · 5 నమోదులు మిగిలాయి. అపరిమిత ప్రాజెక్టులు, ట్యాగ్‌లు, నివేదికలు — ఒకసారి కొనండి, ఎప్పటికీ. ఎగుమతి CSV · ఎగుమతి PDF · చిత్రాన్ని ఎగుమతి చేయండి · బ్యాకప్ & పునరుద్ధరణ. Apple Watch యాప్, విడ్జెట్‌లు ఏమి చూపుతాయి? వాచ్ యాప్ మణికట్టు నుంచే ఒక లావాదేవీని జోడించనిస్తుంది, ప్రస్తుత ప్రాజెక్ట్ ఆదాయం, ఖర్చు, నికర మొత్తాన్ని చూపుతుంది. విడ్జెట్‌లు అదే స్థితిని హోమ్ స్క్రీన్, లాక్ స్క్రీన్‌లపై చూపుతాయి. ప్రాజెక్ట్‌లు, లావాదేవీలు, మొత్తాలు, గమనికలు, ట్యాగ్‌లు, వర్గాలు మరియు సెట్టింగ్‌లు MoneyTag పరికర నిల్వలో ఉంటాయి; Frankfurter / ExchangeRate-APIకు పంపబడవు. నా లెక్కను ఎలా ఎక్స్‌పోర్ట్ చేయాలి లేదా మరో పరికరానికి ఎలా తరలించాలి? ఎగుమతి CSV · ఎగుమతి PDF · చిత్రాన్ని ఎగుమతి చేయండి · బ్యాకప్ & పునరుద్ధరణ. ప్రాజెక్టులు, నమోదులు, ట్యాగ్‌లు, సెట్టింగ్‌లు ఉంటాయి. ప్రాజెక్ట్‌లు, లావాదేవీలు, మొత్తాలు, గమనికలు, ట్యాగ్‌లు, వర్గాలు మరియు సెట్టింగ్‌లు MoneyTag పరికర నిల్వలో ఉంటాయి; Frankfurter / ExchangeRate-APIకు పంపబడవు. ఆటోమేటిక్ రేట్లు ఆన్‌లో ఉన్నప్పుడు MoneyTag మూడు అక్షరాల బేస్ కరెన్సీ కోడ్‌ను మరియు అవసరమైన నెట్‌వర్క్ అభ్యర్థనను api.frankfurter.dev / open.er-api.comకు పంపుతుంది. Frankfurter / ExchangeRate-API యొక్క Cloudflare మౌలిక సదుపాయం IP చిరునామా, సుమారు ప్రాంతం, పరస్పర చర్య డేటా మరియు డయాగ్నస్టిక్ సమాచారాన్ని ప్రాసెస్ చేయవచ్చు. ఈ ప్రాసెసింగ్ App పనితీరు మరియు విశ్లేషణ కోసం, మీతో అనుసంధానించబడవచ్చు, ట్రాకింగ్‌కు ఉపయోగించబడదు మరియు ప్రకటనలు ఉండవు. ఈ అభ్యర్థనలను నివారించడానికి ఆటోమేటిక్ రేట్లను ఆఫ్ చేసి మాన్యువల్ రేటును ఉపయోగించండి. సూచన రేట్లను Frankfurter లేదా ExchangeRate-API అందిస్తుంది; సమాచార ప్రయోజనం కోసం మాత్రమే.",
+      "category": "finance",
+      "category_label": "డబ్బు & ప్రయాణం",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "విడ్జెట్",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "డబ్బు & ప్రయాణం",
+        "ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్",
+        "ఆఫ్‌లైన్",
+        "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
+        "ట్రాకింగ్ లేదు",
+        "గోప్యంగా / పరికరంలో",
+        "విడ్జెట్",
+        "Apple Watch",
+        "App Store · ఉచితం"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/moneytag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/te-IN/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/te-IN/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fte-IN%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/te-IN.json",
+      "app_store_id": "6801956402",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=iag_data_te_in&mt=8",
+      "app_store_cta_label": "App Store నుంచి MoneyTag: ఆదాయం & ఖర్చు పొందండి",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ఉచితం"
+      },
+      "guide_cta_label": "పూర్తి మార్గదర్శకాన్ని చదవండి",
+      "publisher_disclosure": "ఇది Lumi Studio ద్వారా ప్రచురించబడిన స్వంత సంస్థ పదార్థం, ప్రతి జాబితా చేయబడిన యాప్ యొక్క అభివృద్ధికర్త.",
+      "source_persona_query": "best income and expense tracker for freelance projects no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

@@ -2,7 +2,7 @@
 title: "meilleure application de bruit blanc pour s’endormir sans abonnement"
 lang: "fr-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/fr-CA/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

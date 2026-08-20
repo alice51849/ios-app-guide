@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "uk",
-  "dateModified": "2026-08-19",
-  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
-  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
+  "dateModified": "2026-08-20",
+  "content_digest": "08cf1f31e6bc352f5475e375af6e995cbd78b8edfadde161d4cfd16cff4becd3",
+  "generation_digest": "fad6ea45224faa2da20fd98029fa695291d7a154a99e6731d1c67c0f18c1d1ce",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 42,
+  "record_count": 43,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/uk.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/uk.rss.xml",
@@ -1431,6 +1431,76 @@
       "publisher_disclosure": "Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.",
       "source_persona_query": "best simple to do list app iphone no subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "uk:moneytag",
+      "locale": "uk",
+      "app_key": "moneytag",
+      "app_name": "MoneyTag: Доходи та витрати",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "MoneyTag: Доходи та витрати — Проєкти · Мітки · Звіт | iOS App",
+      "decision_context": "Доходи та витрати Кожен проєкт веде власну книгу обліку: доходи мінус витрати — це його чистий підсумок. Тут зібрано найчастіші запитання. Якщо вашого немає, напишіть нам — кожен лист читає жива людина. • У кожного проєкту свій чистий підсумок • Мітки підсумовуються між проєктами • Одна валюта на проєкт • Живі або ручні курси • Програма для Apple Watch • Віджети на початковому екрані та екрані блокування Що таке проєкт? Проєкт. Чи перераховує MoneyTag валюти? Кожен проєкт має власну базову валюту. На головному екрані можна відразу вибрати валюту введення. MoneyTag оновлює загальнодоступні курси приблизно кожні 6 годин; також можна встановити курс вручну, а потім повернутися до автоматичного режиму. Конвертована сума зберігається в базовій валюті проєкту, а збережені курси доступні й без інтернету. Довідкові курси надає Frankfurter або ExchangeRate-API; вони призначені лише для інформації. Як працюють мітки? Мітки — одна з ключових частин MoneyTag, а не додаток на потім. Позначте будь-який дохід чи витрату, і екран «Мітки» одразу підсумує цю мітку по всіх ваших проєктах: доходи, витрати та чистий підсумок за міткою. Аналіз міток між проєктами входить до Lifetime Pro. Що безкоштовно та що додає Lifetime Pro? Безкоштовно · проєктів: 1 · лишилось 5 записів. Безліміт проєктів, міток і звітів — одна покупка назавжди. Експортувати CSV · Експортувати PDF · Експортувати зображення · Резервне копіювання та відновлення. Що показують програма для Apple Watch і віджети? У програмі для Watch можна додати операцію просто із зап’ястка й побачити доходи, витрати та чистий підсумок поточного проєкту. Віджети показують ту саму картину на початковому екрані та екрані блокування. Проєкти, операції, суми, нотатки, теги, категорії та налаштування зберігаються локально в MoneyTag і не надсилаються до Frankfurter / ExchangeRate-API. Як експортувати облік або перенести його на інший пристрій? Експортувати CSV · Експортувати PDF · Експортувати зображення · Резервне копіювання та відновлення. Містить проєкти, записи, мітки та налаштування. Проєкти, операції, суми, нотатки, теги, категорії та налаштування зберігаються локально в MoneyTag і не надсилаються до Frankfurter / ExchangeRate-API. Коли автокурси ввімкнено, MoneyTag надсилає трибуквений код базової валюти та необхідний мережевий запит на api.frankfurter.dev / open.er-api.com. Інфраструктура Cloudflare, яку використовує Frankfurter / ExchangeRate-API, може обробляти IP-адресу, приблизний регіон, дані взаємодії та діагностику. Ця обробка потрібна для функцій і аналітики App, може бути пов’язана з вами, не використовується для відстеження й не містить реклами. Вимкніть автокурси та використовуйте ручний курс, щоб уникнути цих запитів. Довідкові курси надає Frankfurter або ExchangeRate-API; вони призначені лише для інформації.",
+      "category": "finance",
+      "category_label": "Гроші та подорожі",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Безкоштовно для початку · довічне розблокування",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Офлайн",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Віджет",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Гроші та подорожі",
+        "Безкоштовно для початку · довічне розблокування",
+        "Офлайн",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої",
+        "Віджет",
+        "Apple Watch",
+        "App Store · Безкоштовно"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/moneytag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/uk/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/uk/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fuk%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/uk.json",
+      "app_store_id": "6801956402",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "app_store_url": "https://apps.apple.com/ua/app/id6801956402?pt=118326163&ct=iag_data_uk&mt=8",
+      "app_store_cta_label": "Завантажте MoneyTag: Доходи та витрати з App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
+      "guide_cta_label": "Прочитати повний довідник",
+      "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
+      "source_persona_query": "best income and expense tracker for freelance projects no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

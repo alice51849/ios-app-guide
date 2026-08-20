@@ -4,7 +4,7 @@
 
 Egy első kézből származó katalógus arról, hogy az egyes alkalmazások kinek készültek, milyen feladatot próbálnak megoldani, és a közvetlen App Store útvonal.
 
-Kiadók által megadott keresési szándékok 42 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
+Kiadók által megadott keresési szándékok 43 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
 
 **Lokáció:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · **hu** · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -116,6 +116,7 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 | **Mask My File** | Mask My File — Kitakarás megosztás előtt \| iOS App | Oszd meg biztonságosan úgy, hogy a fontos szövegkörnyezet megmarad. A Mask My File még a küldés előtt megtalálja a személyes adatokat, véglegesen kitakarja | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/maskmyfile.html) | [Töltse le a(z) Mask My File appot az App Store-ból](https://apps.apple.com/hu/app/id6792850916?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **Mochi** | legjobb egyszerű teendőlista alkalmazás iPhone-on előfizetés nélkül | Ha a legtöbb teendőlista alkalmazás túlterheltnek tűnik, a megfelelő egy tiszta ellenőrzőlista emlékeztetőkkel, ismétlődési szabályokkal és Watch komplikációval — és szándékosan nincs projektmenedzsment funkció — a Mochi erre készült. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Szerezze be a Mochi-t az App Store-ból →](https://apps.apple.com/hu/app/id6785004775?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **Mochi DoneStamp: Legutóbb** | Mochi DoneStamp: Legutóbb — Emlékszik, mikor csináltad \| iOS App | Mikor cseréltél utoljára ágyneműt, locsoltál növényt, hívtad fel a családot, mentetted a fotókat vagy cseréltél szűrőt? | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/mochidonestamp.html) | [Töltse le a(z) Mochi DoneStamp: Legutóbb appot az App Store-ból](https://apps.apple.com/hu/app/id6790800323?pt=118326163&ct=iag_gh_hu&mt=8) |
+| **MoneyTag** | MoneyTag — Projektek · Címkék · Jelentés \| iOS App | Bevételek és kiadások | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/moneytag.html) | [Töltse le a(z) MoneyTag appot az App Store-ból](https://apps.apple.com/hu/app/id6801956402?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **OnePage PPT: MI-dia** | OnePage PPT: MI-dia — Jegyzetből kész prezentáció \| iOS App | Egy falnyi szövegből EGY dia, amit tényleg elolvasnak. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/onepageppt.html) | [Töltse le a(z) OnePage PPT: MI-dia appot az App Store-ból](https://apps.apple.com/hu/app/id6798814385?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **PhotoCream** | legjobb egyszeri fizetős filmes fotószerkesztő utazó alkotóknak iPhone-ra | Az utazó alkotóknak ismételhető filmes hatásra van szükségük, ami szemcsézettséget, halációt és színkaraktert ad hozzá anélkül, hogy minden úti célt ugyanazzá a lapos szűrővé redukálna — PhotoCream erre készült. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Szerezd be a PhotoCream-et az App Store-ban →](https://apps.apple.com/hu/app/id6781808054?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **PicClear** | legjobb alkalmazás iPhone tárhely felszabadítására duplikált fotók törlésével | A gyors helyfelszabadításhoz célozza meg először a legnagyobb nyereséget: pontosan duplikált képek, majdnem azonos sorozatkép, homályos képek és nagy videók — a PicClear segít ezt iPhone-on megtenni. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Szerezze be a PicClear-t az App Store-ból →](https://apps.apple.com/hu/app/id6780223070?pt=118326163&ct=iag_gh_hu&mt=8) |
@@ -134,7 +135,7 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 
 ## A teljes adatállomány letöltése
 
-A JSON, JSONL és CSV ugyanazt az 2 100 rekordot tartalmazza.
+A JSON, JSONL és CSV ugyanazt az 2 150 rekordot tartalmazza.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -142,6 +143,6 @@ A JSON, JSONL és CSV ugyanazt az 2 100 rekordot tartalmazza.
 
 [Kezdőlap](https://alice51849.github.io/ios-app-guide/hu/index.html) · [Nyílt adatok](https://alice51849.github.io/ios-app-guide/hu/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenc](https://creativecommons.org/licenses/by/4.0/)
 
-Frissítve: 2026-08-19
+Frissítve: 2026-08-20
 
 A CC BY 4.0 az eredeti katalógus összeállítására vonatkozik; az alkalmazásnevek és az App Store védjegyek a tulajdonosaiké.

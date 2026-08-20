@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ru",
-  "dateModified": "2026-08-19",
-  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
-  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
+  "dateModified": "2026-08-20",
+  "content_digest": "08cf1f31e6bc352f5475e375af6e995cbd78b8edfadde161d4cfd16cff4becd3",
+  "generation_digest": "fad6ea45224faa2da20fd98029fa695291d7a154a99e6731d1c67c0f18c1d1ce",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 42,
+  "record_count": 43,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ru.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ru.rss.xml",
@@ -1431,6 +1431,76 @@
       "publisher_disclosure": "Руководство от издателя Lumi Studio, разработчика приложения. Названия приложений являются товарными знаками их владельцев и используются только для идентификации. Для документов, здоровья, учебы и продуктивности проверяйте официальные требования, если это необходимо.",
       "source_persona_query": "best simple to do list app iphone no subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ru:moneytag",
+      "locale": "ru",
+      "app_key": "moneytag",
+      "app_name": "MoneyTag: Доходы и расходы",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "MoneyTag: Доходы и расходы — Проекты · Метки · Отчёт | iOS App",
+      "decision_context": "Доходы и расходы У каждого проекта своя книга учёта: доходы минус расходы — это его чистый итог. Здесь собраны вопросы, которые задают чаще всего. Если вашего нет, напишите нам — каждое письмо читает живой человек. • У каждого проекта свой чистый итог • Метки суммируются по всем проектам • Одна валюта на проект • Живые или ручные курсы • Приложение для Apple Watch • Виджеты на домашнем экране и экране блокировки Что такое проект? Проект. MoneyTag пересчитывает валюты? У каждого проекта своя базовая валюта. На главном экране можно сразу выбрать валюту ввода. MoneyTag обновляет общедоступные курсы примерно каждые 6 часов; можно также задать курс вручную, а затем вернуться к автоматическому режиму. Сумма после пересчёта сохраняется в базовой валюте проекта, а сохранённые курсы доступны без подключения к интернету. Справочные курсы предоставляются Frankfurter или ExchangeRate-API и предназначены только для информации. Как работают метки? Метки — одна из главных частей MoneyTag, а не второстепенная функция. Поставьте метку любому доходу или расходу, и на экране «Метки» приложение сразу подсчитает эту метку по всем вашим проектам: доходы, расходы и чистый итог по метке. Анализ меток между проектами входит в Lifetime Pro. Что бесплатно и что даёт Lifetime Pro? Бесплатно · проектов: 1 · осталось 5 записей. Без ограничений: проекты, метки и отчёты. Одна покупка навсегда. Экспорт CSV · Экспорт PDF · Экспорт изображения · Резервное копирование и восстановление. Что показывают приложение для Apple Watch и виджеты? В приложении для Watch можно добавить операцию прямо с запястья и увидеть доходы, расходы и чистый итог текущего проекта. Виджеты показывают ту же картину на домашнем экране и на экране блокировки. Проекты, операции, суммы, заметки, теги, категории и настройки хранятся локально в MoneyTag и не отправляются в Frankfurter / ExchangeRate-API. Как выгрузить учёт или перенести его на другое устройство? Экспорт CSV · Экспорт PDF · Экспорт изображения · Резервное копирование и восстановление. Включает проекты, операции, метки и настройки. Проекты, операции, суммы, заметки, теги, категории и настройки хранятся локально в MoneyTag и не отправляются в Frankfurter / ExchangeRate-API. При включённых автокурсах MoneyTag отправляет трёхбуквенный код базовой валюты и необходимый сетевой запрос на api.frankfurter.dev / open.er-api.com. Инфраструктура Cloudflare, используемая Frankfurter / ExchangeRate-API, может обрабатывать IP-адрес, примерный регион, данные взаимодействия и диагностику. Эта обработка нужна для работы и аналитики App, может быть связана с вами, не используется для отслеживания и не включает рекламу. Отключите автокурсы и используйте ручной курс, чтобы избежать этих запросов. Справочные курсы предоставляются Frankfurter или ExchangeRate-API и предназначены только для информации.",
+      "category": "finance",
+      "category_label": "Финансы и путешествия",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Бесплатно начать · разблокировка за одну покупку",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Автономно",
+        "Без учётной записи",
+        "Без рекламы",
+        "Без отслеживания",
+        "Лично / на устройстве"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Виджет",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Финансы и путешествия",
+        "Бесплатно начать · разблокировка за одну покупку",
+        "Автономно",
+        "Без учётной записи",
+        "Без рекламы",
+        "Без отслеживания",
+        "Лично / на устройстве",
+        "Виджет",
+        "Apple Watch",
+        "App Store · Бесплатно"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/moneytag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ru/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ru/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fru%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ru.json",
+      "app_store_id": "6801956402",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "app_store_url": "https://apps.apple.com/ru/app/id6801956402?pt=118326163&ct=iag_data_ru&mt=8",
+      "app_store_cta_label": "Установить MoneyTag: Доходы и расходы в App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RUB",
+        "formatted_price": "Бесплатно"
+      },
+      "guide_cta_label": "Прочитать полное руководство",
+      "publisher_disclosure": "Это материал, созданный Lumi Studio, разработчиком всех перечисленных приложений.",
+      "source_persona_query": "best income and expense tracker for freelance projects no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

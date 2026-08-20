@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-19",
-  "content_digest": "048004401ed2fc269d9fbbfca9e238f8ad3dc2227c63d0d37d41abaa6a545208",
+  "date_modified": "2026-08-20",
+  "content_digest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
   "locale": "te-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 42,
+  "record_count": 43,
   "apps": [
     {
       "key": "notesstudio100",
@@ -1372,6 +1372,42 @@
         "currency": "INR",
         "formatted_price": "ఉచితం",
         "storefront_url": "https://apps.apple.com/in/app/id6790800323"
+      }
+    },
+    {
+      "key": "moneytag",
+      "app_store_id": "6801956402",
+      "name": "MoneyTag: ఆదాయం & ఖర్చు",
+      "summary": "ప్రతి ప్రాజెక్ట్ తన సొంత లెక్క ఉంచుకుంటుంది: ఆదాయంలోంచి ఖర్చు తీసేస్తే వచ్చేదే దాని నికర మొత్తం. ఎక్కువగా అడిగే ప్రశ్నలు ఇక్కడ ఉన్నాయి. మీ ప్రశ్నకు జవాబు దొరకకపోతే రాయండి — ప్రతి సందేశాన్నీ నిజమైన మనిషే చదువుతారు.",
+      "category": "finance",
+      "search_terms": [
+        "బడ్జెట్",
+        "డబ్బు",
+        "కరెన్సీ కన్వర్టర్",
+        "వ్యక్తిగత ఆర్థికం",
+        "మార్పిడి రేట్లు",
+        "నెలవారీ ధోరణి",
+        "బ్యాకప్ & పునరుద్ధరణ"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=iag_api_te_in&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/moneytag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ఉచితం",
+        "storefront_url": "https://apps.apple.com/in/app/id6801956402"
       }
     },
     {

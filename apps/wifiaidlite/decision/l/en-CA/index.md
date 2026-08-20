@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Network Diagnosis & Evidence | iOS App"
 lang: "en-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/en-CA/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

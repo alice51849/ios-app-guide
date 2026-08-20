@@ -2,7 +2,7 @@
 title: "iPhone 上最佳清理重複照片釋放儲存空間應用程式"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hant/picclear.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 video_url: "https://files.catbox.moe/goh2d7.mp4"
 duration: "PT16S"
 app_store_id: "6780223070"

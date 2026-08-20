@@ -4,7 +4,7 @@
 
 ഓരോ ആപ്പും ആരെ ലക്ഷ്യമിട്ട് രൂപകൽപ്പന ചെയ്തതാണെന്ന്, അവർ പൂർത്തിയാക്കാൻ ശ്രമിക്കുന്ന ജോലി, നേരിട്ട് App Store വഴി എത്താനുള്ള വഴി എന്നിവയുടെ ആദ്യകക്ഷി കാറ്റലോഗ്
 
-42 സ്ഥിരീകരിച്ച സജീവ iOS ആപ്പുകളിലും 50 Apple ലൊക്കലുകളിലും പ്രസാധകർ എഴുതിയ തിരയൽ ഉദ്ദേശ്യങ്ങൾ
+43 സ്ഥിരീകരിച്ച സജീവ iOS ആപ്പുകളിലും 50 Apple ലൊക്കലുകളിലും പ്രസാധകർ എഴുതിയ തിരയൽ ഉദ്ദേശ്യങ്ങൾ
 
 **ലൊക്കൽ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · **ml-IN** · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -116,6 +116,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Mask My File** | Mask My File — പങ്കിടും മുൻപ് വിവരം മറയ്ക്കൂ \| iOS App | ഉപകാരപ്രദമായ പശ്ചാത്തലം നഷ്ടപ്പെടാതെ സുരക്ഷിതമായി പങ്കിടൂ. Mask My File നിങ്ങൾ ഫയൽ അയയ്ക്കും മുൻപ് സ്വകാര്യ വിവരങ്ങൾ കണ്ടെത്തുന്നു, തിരഞ്ഞെടുത്ത ഭാഗം | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/maskmyfile.html) | [App Store-ൽ നിന്ന് Mask My File നേടൂ](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_gh_ml_in&mt=8) |
 | **Mochi** | എളുപ്പമുള്ള ടു-ഡു ലിസ്റ്റ് ആപ്പ് iPhone-ൽ സബ്സ്ക്രിപ്ഷൻ ഇല്ലാതെ | മിക്ക ടു-ഡു ആപ്പുകൾ ഭാരം കൂടിയതായി തോന്നുമ്പോൾ, ശരിയായത് റിമൈൻഡറുകൾ, ആവർത്തന നിയമങ്ങൾ, Watch കോംപ്ലിക്കേഷൻ ഉള്ള ശുചിത്വമുള്ള ലിസ്റ്റ് ആണ് — പ്രോജക്ട് മാനേജ്മെന്റ് ഇല്ലാതെ — Mochi ഇതിന് അനുയോജ്യമാണ്. | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [App Store-ൽ നിന്ന് Mochi നേടുക →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_gh_ml_in&mt=8) |
 | **Mochi DoneStamp: അവസാനമായി** | Mochi DoneStamp: അവസാനമായി — എപ്പോൾ ചെയ്തെന്ന് ഓർക്കുക \| iOS App | അവസാനമായി കിടക്കവിരി മാറ്റിയത്, ചെടിക്ക് വെള്ളം നൽകിയതു, കുടുംബത്തെ വിളിച്ചത്, ഫോട്ടോ ബാക്കപ്പ് ചെയ്തതു, ഫിൽട്ടർ മാറ്റിയത് എപ്പോൾ? | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/mochidonestamp.html) | [App Store-ൽ നിന്ന് Mochi DoneStamp: അവസാനമായി നേടൂ](https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=iag_gh_ml_in&mt=8) |
+| **MoneyTag: വരവും ചെലവും** | MoneyTag: വരവും ചെലവും — പ്രോജക്റ്റുകൾ · ടാഗുകൾ \| iOS App | വരവും ചെലവും ഓരോ പ്രോജക്ടിനും സ്വന്തം കണക്കുണ്ട്: വരവിൽ നിന്ന് ചെലവ് കുറച്ചാൽ കിട്ടുന്നതാണ് അതിന്റെ അറ്റ തുക. ഏറ്റവുമധികം ചോദിക്കപ്പെടുന്ന ചോദ്യങ്ങളാണ് ഇവിടെ. നിങ്ങളുടേത് ഇല്ലെങ്കിൽ എഴുതൂ — ഓരോ സന്ദേശവും ഒരു യഥാർത്ഥ വ്യക്തി വായിക്കുന്നുണ്ട്. | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/moneytag.html) | [App Store-ൽ നിന്ന് MoneyTag: വരവും ചെലവും നേടൂ](https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=iag_gh_ml_in&mt=8) |
 | **OnePage PPT: ഒറ്റ സ്ലൈഡ്** | OnePage PPT: ഒറ്റ സ്ലൈഡ് — കുറിപ്പുകൾ പ്രസന്റേഷനാക്കൂ \| iOS App | വാചകക്കൂമ്പാരത്തെ ആളുകൾ ശരിക്കും വായിക്കുന്ന ഒറ്റ സ്ലൈഡാക്കി മാറ്റൂ. | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/onepageppt.html) | [App Store-ൽ നിന്ന് OnePage PPT: ഒറ്റ സ്ലൈഡ് നേടൂ](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_gh_ml_in&mt=8) |
 | **PhotoCream** | iPhone-ൽ യാത്രാ സൃഷ്ടാക്കൾക്കായി ഒരിക്കൽ മാത്രം പണമടച്ച് ഉപയോഗിക്കാവുന്ന മികച്ച ഫിലിം ഫോട്ടോ എഡിറ്റർ | യാത്രാ സൃഷ്ടാക്കൾക്ക് ആവർത്തിക്കാവുന്ന ഫിലിം ലുക്ക് ആവശ്യമാണ്; ഓരോ സ്ഥലത്തെയും ഒരേ ഫ്ലാറ്റ് ഫിൽട്ടറായി ചുരുക്കാതെ ഗ്രെയിൻ, ഹാലേഷൻ, നിറത്തിന്റെ സവിശേഷത എന്നിവ ചേർക്കണം — PhotoCream ഇതിനായി രൂപകൽപ്പന ചെയ്തിരിക്കുന്നു. | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [PhotoCream App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=iag_gh_ml_in&mt=8) |
 | **PicClear** | iPhone സ്റ്റോറേജ് ഒഴിവാക്കാൻ ഡ്യൂപ്ലിക്കേറ്റ് ഫോട്ടോകൾ ഇല്ലാതാക്കാനുള്ള മികച്ച ആപ്പ് | സ്ഥലം വേഗത്തിൽ ഒഴിവാക്കാൻ വലിയ വിജയങ്ങൾ ആദ്യം ലക്ഷ്യമിടുക: കൃത്യമായ ഡ്യൂപ്ലിക്കേറ്റ് ഫോട്ടോകൾ, സമാനമായ ബർസ്റ്റ് ഷോട്ടുകൾ, മങ്ങിയ ഫോട്ടോകൾ, വലിയ വീഡിയോകൾ — PicClear iPhone-ൽ സഹായിക്കുന്നു. | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App Store-ൽ നിന്ന് PicClear നേടുക →](https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=iag_gh_ml_in&mt=8) |
@@ -134,7 +135,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## പൂർണ്ണ ഡാറ്റാസെറ്റ് ഡൗൺലോഡ് ചെയ്യുക
 
-JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 2,100 രേഖകൾ ഉൾക്കൊള്ളുന്നു
+JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 2,150 രേഖകൾ ഉൾക്കൊള്ളുന്നു
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -142,6 +143,6 @@ JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 2,100 രേഖകൾ ഉ
 
 [ഹോം](https://alice51849.github.io/ios-app-guide/ml-IN/index.html) · [തുറന്ന ഡാറ്റ](https://alice51849.github.io/ios-app-guide/ml-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ലൈസൻസ്](https://creativecommons.org/licenses/by/4.0/)
 
-അപ്ഡേറ്റ് ചെയ്തത്: 2026-08-19
+അപ്ഡേറ്റ് ചെയ്തത്: 2026-08-20
 
 CC BY 4.0 യഥാർത്ഥ കാറ്റലോഗ് സംയോജനത്തിന് ബാധകമാണ്; ആപ്പ് നാമങ്ങളും App Store മാർക്കുകളും അവയുടെ ഉടമകളുടെതാണ്

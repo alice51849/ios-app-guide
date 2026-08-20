@@ -2,7 +2,7 @@
 title: "HoursTag: Sati za kupnju — Budžet, troškovi i ušteda | iOS App"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/hr/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

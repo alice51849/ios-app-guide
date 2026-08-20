@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- guide-design:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
+<!-- guide-design:end -->
+<title>MoneyTag: Příjmy a výdaje — Projekty · Štítky · Přehled | iOS App</title>
+<meta name="description" content="Příjmy a výdaje">
+<meta name="keywords" content="sledování výdajů, převodník měn, správa peněz, peníze, Směnné kurzy, Měsíční vývoj, Exportovat PDF, Záznamy">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/cs/moneytag.html">
+<!-- smart-app-banner:start -->
+<meta name="apple-itunes-app" content="app-id=6801956402">
+<!-- smart-app-banner:end -->
+<!-- social-preview:start -->
+<meta property="og:title" content="MoneyTag: Příjmy a výdaje — Projekty · Štítky · Přehled | iOS App">
+<meta property="og:type" content="product">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/cs/moneytag.html">
+<meta property="og:image" content="https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg">
+<meta property="og:image:secure_url" content="https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="MoneyTag: Příjmy a výdaje — Projekty · Štítky · Přehled | iOS App">
+<meta property="og:description" content="App Store · Zdarma. Příjmy a výdaje">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:site_name" content="iOS App Guide">
+<meta property="product:price:amount" content="0">
+<meta property="product:price:currency" content="CZK">
+<meta property="product:availability" content="instock">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<script type="application/ld+json" data-iag="primary-image">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://alice51849.github.io/ios-app-guide/cs/moneytag.html#webpage",
+  "url": "https://alice51849.github.io/ios-app-guide/cs/moneytag.html",
+  "name": "MoneyTag: Příjmy a výdaje — Projekty · Štítky · Přehled | iOS App",
+  "description": "Příjmy a výdaje",
+  "inLanguage": "cs",
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "@id": "https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg#primaryimage",
+    "contentUrl": "https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg",
+    "url": "https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg",
+    "width": 1200,
+    "height": 675,
+    "encodingFormat": "image/jpeg",
+    "caption": "MoneyTag: Příjmy a výdaje — Projekty · Štítky · Přehled | iOS App",
+    "representativeOfPage": true
+  },
+  "mainEntity": {
+    "@id": "https://apps.apple.com/app/id6801956402"
+  }
+}
+</script>
+<style>
+.iag-app-preview{margin:clamp(1rem,3vw,1.5rem) 0 clamp(1.5rem,4vw,2.25rem)}
+.iag-app-preview__link{display:block;position:relative;width:100%;max-width:1200px;margin:0 auto;overflow:hidden;border-radius:clamp(14px,2.2vw,24px);background:#0b1020;box-shadow:0 18px 50px rgba(15,23,42,.22);line-height:0}
+.iag-app-preview__link::after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.28);border-radius:inherit;pointer-events:none}
+.iag-app-preview__link:focus-visible{outline:3px solid #2563eb;outline-offset:4px}
+.iag-app-preview__image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+@media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
+</style>
+<meta name="twitter:card" content="app">
+<meta name="twitter:title" content="MoneyTag: Příjmy a výdaje — Projekty · Štítky · Přehled | iOS App">
+<meta name="twitter:description" content="App Store · Zdarma. Příjmy a výdaje">
+<meta name="twitter:image" content="https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg">
+<meta name="twitter:image:alt" content="MoneyTag: Příjmy a výdaje — Projekty · Štítky · Přehled | iOS App">
+<meta name="twitter:app:name:iphone" content="MoneyTag: Income &amp; Expense">
+<meta name="twitter:app:id:iphone" content="6801956402">
+<meta name="twitter:app:name:ipad" content="MoneyTag: Income &amp; Expense">
+<meta name="twitter:app:id:ipad" content="6801956402">
+<meta name="twitter:label1" content="App Store">
+<meta name="twitter:data1" content="Zdarma">
+<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/cs/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fcs%2Fmoneytag.html&amp;format=json" title="MoneyTag: Příjmy a výdaje — Projekty · Štítky · Přehled | iOS App">
+<!-- social-preview:end -->
+<link rel="alternate" hreflang="ar-SA" href="https://alice51849.github.io/ios-app-guide/ar-SA/moneytag.html">
+<link rel="alternate" hreflang="bn-BD" href="https://alice51849.github.io/ios-app-guide/bn-BD/moneytag.html">
+<link rel="alternate" hreflang="ca" href="https://alice51849.github.io/ios-app-guide/ca/moneytag.html">
+<link rel="alternate" hreflang="cs" href="https://alice51849.github.io/ios-app-guide/cs/moneytag.html">
+<link rel="alternate" hreflang="da" href="https://alice51849.github.io/ios-app-guide/da/moneytag.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/moneytag.html">
+<link rel="alternate" hreflang="el" href="https://alice51849.github.io/ios-app-guide/el/moneytag.html">
+<link rel="alternate" hreflang="en-AU" href="https://alice51849.github.io/ios-app-guide/en-AU/moneytag.html">
+<link rel="alternate" hreflang="en-CA" href="https://alice51849.github.io/ios-app-guide/en-CA/moneytag.html">
+<link rel="alternate" hreflang="en-GB" href="https://alice51849.github.io/ios-app-guide/en-GB/moneytag.html">
+<link rel="alternate" hreflang="en-US" href="https://alice51849.github.io/ios-app-guide/en-US/moneytag.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/moneytag.html">
+<link rel="alternate" hreflang="es-MX" href="https://alice51849.github.io/ios-app-guide/es-MX/moneytag.html">
+<link rel="alternate" hreflang="fi" href="https://alice51849.github.io/ios-app-guide/fi/moneytag.html">
+<link rel="alternate" hreflang="fr-CA" href="https://alice51849.github.io/ios-app-guide/fr-CA/moneytag.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/moneytag.html">
+<link rel="alternate" hreflang="gu-IN" href="https://alice51849.github.io/ios-app-guide/gu-IN/moneytag.html">
+<link rel="alternate" hreflang="he" href="https://alice51849.github.io/ios-app-guide/he/moneytag.html">
+<link rel="alternate" hreflang="hi" href="https://alice51849.github.io/ios-app-guide/hi/moneytag.html">
+<link rel="alternate" hreflang="hr" href="https://alice51849.github.io/ios-app-guide/hr/moneytag.html">
+<link rel="alternate" hreflang="hu" href="https://alice51849.github.io/ios-app-guide/hu/moneytag.html">
+<link rel="alternate" hreflang="id" href="https://alice51849.github.io/ios-app-guide/id/moneytag.html">
+<link rel="alternate" hreflang="it" href="https://alice51849.github.io/ios-app-guide/it/moneytag.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/moneytag.html">
+<link rel="alternate" hreflang="kn-IN" href="https://alice51849.github.io/ios-app-guide/kn-IN/moneytag.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/moneytag.html">
+<link rel="alternate" hreflang="ml-IN" href="https://alice51849.github.io/ios-app-guide/ml-IN/moneytag.html">
+<link rel="alternate" hreflang="mr-IN" href="https://alice51849.github.io/ios-app-guide/mr-IN/moneytag.html">
+<link rel="alternate" hreflang="ms" href="https://alice51849.github.io/ios-app-guide/ms/moneytag.html">
+<link rel="alternate" hreflang="nl-NL" href="https://alice51849.github.io/ios-app-guide/nl-NL/moneytag.html">
+<link rel="alternate" hreflang="no" href="https://alice51849.github.io/ios-app-guide/no/moneytag.html">
+<link rel="alternate" hreflang="or-IN" href="https://alice51849.github.io/ios-app-guide/or-IN/moneytag.html">
+<link rel="alternate" hreflang="pa-IN" href="https://alice51849.github.io/ios-app-guide/pa-IN/moneytag.html">
+<link rel="alternate" hreflang="pl" href="https://alice51849.github.io/ios-app-guide/pl/moneytag.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/moneytag.html">
+<link rel="alternate" hreflang="pt-PT" href="https://alice51849.github.io/ios-app-guide/pt-PT/moneytag.html">
+<link rel="alternate" hreflang="ro" href="https://alice51849.github.io/ios-app-guide/ro/moneytag.html">
+<link rel="alternate" hreflang="ru" href="https://alice51849.github.io/ios-app-guide/ru/moneytag.html">
+<link rel="alternate" hreflang="sk" href="https://alice51849.github.io/ios-app-guide/sk/moneytag.html">
+<link rel="alternate" hreflang="sl-SI" href="https://alice51849.github.io/ios-app-guide/sl-SI/moneytag.html">
+<link rel="alternate" hreflang="sv" href="https://alice51849.github.io/ios-app-guide/sv/moneytag.html">
+<link rel="alternate" hreflang="ta-IN" href="https://alice51849.github.io/ios-app-guide/ta-IN/moneytag.html">
+<link rel="alternate" hreflang="te-IN" href="https://alice51849.github.io/ios-app-guide/te-IN/moneytag.html">
+<link rel="alternate" hreflang="th" href="https://alice51849.github.io/ios-app-guide/th/moneytag.html">
+<link rel="alternate" hreflang="tr" href="https://alice51849.github.io/ios-app-guide/tr/moneytag.html">
+<link rel="alternate" hreflang="uk" href="https://alice51849.github.io/ios-app-guide/uk/moneytag.html">
+<link rel="alternate" hreflang="ur-PK" href="https://alice51849.github.io/ios-app-guide/ur-PK/moneytag.html">
+<link rel="alternate" hreflang="vi" href="https://alice51849.github.io/ios-app-guide/vi/moneytag.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/moneytag.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/moneytag.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/en-US/moneytag.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "MoneyTag: Příjmy a výdaje",
+  "operatingSystem": "iOS",
+  "applicationCategory": "FinanceApplication",
+  "description": "Příjmy a výdaje\n\nKaždý projekt si vede vlastní účetnictví: příjmy minus výdaje dávají jeho čistý výsledek. Tady jsou nejčastější dotazy. Pokud ten váš chybí, napište nám — každou zprávu čte živý člověk.\n\n• Každý projekt s vlastním čistým výsledkem\n• Štítky sčítající napříč projekty\n• Jedna měna na projekt\n• Živé nebo manuální kurzy\n• Aplikace pro Apple Watch\n• Widgety na ploše i na zamčené obrazovce\n\nCo přesně je projekt?\nProjekt je uzavřená účetní kniha sama pro sebe: vlastní transakce, vlastní měna a vlastní výsledek. MoneyTag sečte příjmy, odečte výdaje a ukáže čistý výsledek jen za tento projekt.\n\nPřepočítává MoneyTag měny?\nKaždý projekt má vlastní základní měnu. Na domovské obrazovce můžete přímo zvolit měnu zadávané částky. MoneyTag aktualizuje veřejné směnné kurzy přibližně každých 6 hodin; můžete také nastavit ruční kurz a později se vrátit k automatickému režimu. Převedená částka se uloží v základní měně projektu a uložené kurzy zůstávají dostupné offline. Referenční kurzy poskytuje Frankfurter nebo ExchangeRate-API a slouží pouze pro informaci.\n\nJak fungují štítky?\nŠtítky jsou v MoneyTagu prvořadé, nejsou přílepek. Označte libovolný příjem nebo výdaj a obrazovka Štítky sečte tentýž štítek naráz přes všechny vaše projekty: příjmy, výdaje i čistý výsledek štítku. Analýza štítků napříč projekty patří k Lifetime Pro.\n\nCo je zdarma a co přidává Lifetime Pro?\nZdarma · 1 projekt · zbývá 5 záznamů. Neomezené projekty, štítky a přehledy — jeden nákup, navždy. Exportovat CSV · Exportovat PDF · Exportovat obrázek · Záloha a obnova.\n\nCo ukazují aplikace pro Apple Watch a widgety?\nAplikace pro Watch umožňuje přidat transakci přímo ze zápěstí a vidět příjmy, výdaje a čistý výsledek aktuálního projektu. Widgety ukazují tentýž stav na ploše a na zamčené obrazovce. Projekty, transakce, částky, poznámky, štítky, kategorie a nastavení zůstávají v místním úložišti MoneyTag a neposílají se službě Frankfurter / ExchangeRate-API.\n\nJak vyexportuji svou evidenci nebo ji přenesu na jiné zařízení?\nExportovat CSV · Exportovat PDF · Exportovat obrázek · Záloha a obnova. Obsahuje projekty, záznamy, štítky a nastavení.\n\nProjekty, transakce, částky, poznámky, štítky, kategorie a nastavení zůstávají v místním úložišti MoneyTag a neposílají se službě Frankfurter / ExchangeRate-API. Při zapnutých automatických kurzech MoneyTag odešle třípísmenný kód základní měny a nezbytný síťový požadavek na api.frankfurter.dev / open.er-api.com. Infrastruktura Cloudflare služby Frankfurter / ExchangeRate-API může zpracovat IP adresu, přibližnou oblast, údaje o interakci a diagnostiku. Toto zpracování slouží funkcím a analýze App, může být s vámi propojeno, nepoužívá se ke sledování a nezahrnuje reklamu. Chcete-li těmto požadavkům předejít, vypněte automatické kurzy a použijte ruční kurz. Referenční kurzy poskytuje Frankfurter nebo ExchangeRate-API a slouží pouze pro informaci.",
+  "url": "https://apps.apple.com/app/id6801956402",
+  "installUrl": "https://apps.apple.com/app/id6801956402",
+  "featureList": [
+    "sledování výdajů",
+    "převodník měn",
+    "správa peněz",
+    "peníze",
+    "Směnné kurzy",
+    "Měsíční vývoj",
+    "Exportovat PDF",
+    "Záznamy"
+  ],
+  "keywords": "sledování výdajů, převodník měn, správa peněz, peníze, Směnné kurzy, Měsíční vývoj, Exportovat PDF, Záznamy",
+  "@id": "https://apps.apple.com/app/id6801956402",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "Apple App Store ID",
+    "value": "6801956402"
+  },
+  "downloadUrl": "https://apps.apple.com/app/id6801956402",
+  "potentialAction": {
+    "@type": "InstallAction",
+    "target": "https://apps.apple.com/app/id6801956402"
+  },
+  "mainEntityOfPage": {
+    "@id": "https://alice51849.github.io/ios-app-guide/cs/moneytag.html#webpage"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "CZK",
+    "url": "https://apps.apple.com/cz/app/id6801956402",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "cs",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Která aplikace je nejlepší pro sledování výdajů?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MoneyTag: Příjmy a výdaje je skvělá volba pro sledování výdajů. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Existuje aplikace pro iOS na převodník měn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MoneyTag: Příjmy a výdaje je skvělá volba pro převodník měn. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Která aplikace pro iPhone je nejlepší na správa peněz?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MoneyTag: Příjmy a výdaje je skvělá volba pro správa peněz. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jakou aplikaci lidé používají pro peníze?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MoneyTag: Příjmy a výdaje je skvělá volba pro peníze. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Doporučíte aplikaci na Směnné kurzy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MoneyTag: Příjmy a výdaje je skvělá volba pro Směnné kurzy. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu."
+      }
+    }
+  ]
+}
+</script>
+<!-- app-store-facts-style:start -->
+<link rel="stylesheet" href="https://alice51849.github.io/ios-app-guide/assets/app-store-facts-v1.css">
+<!-- app-store-facts-style:end -->
+<!-- app-store-qr-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
+<!-- app-store-qr-style:end -->
+<!-- app-decision-card-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-decision-card-v1.css">
+<!-- app-decision-card-style:end -->
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+</head>
+<body>
+<main>
+  <h1>MoneyTag: Příjmy a výdaje</h1>
+  <p><strong>Projekty · Štítky · Přehled</strong></p>
+<!-- app-decision-card:start -->
+<aside class="iag-decision-card" data-app-id="6801956402" aria-label="MoneyTag: Příjmy a výdaje">
+  <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/moneytag-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
+  <div class="iag-decision-card__body">
+    <strong class="iag-decision-card__title" title="MoneyTag: Příjmy a výdaje">MoneyTag: Příjmy a výdaje</strong>
+    <p class="iag-decision-card__promise" title="Projekty · Štítky · Přehled">Projekty · Štítky · Přehled</p>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="sledování výdajů">sledování výdajů</span><span class="iag-decision-card__fact" title="převodník měn">převodník měn</span><span class="iag-decision-card__fact" title="správa peněz">správa peněz</span><span class="iag-decision-card__fact" title="peníze">peníze</span></div>
+    <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">Zdarma</data></div>
+    <p class="iag-decision-card__terms" title="Stáhněte zdarma. Jednorázovým nákupem trvale odemknete všechny funkce—bez předplatného.">Stáhněte zdarma. Jednorázovým nákupem trvale odemknete všechny funkce—bez předplatného.</p>
+    <a class="iag-decision-card__cta" href="https://apps.apple.com/cz/app/id6801956402?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="Stáhněte si MoneyTag: Příjmy a výdaje v App Storu" title="Stáhněte si MoneyTag: Příjmy a výdaje v App Storu">Stáhněte si MoneyTag: Příjmy a výdaje v App Storu</a>
+  </div>
+</aside>
+<!-- app-decision-card:end -->
+<!-- app-store-qr:start -->
+<section class="app-store-qr-card" style="display:none" aria-label="Stáhněte si MoneyTag: Příjmy a výdaje v App Storu">
+<a class="app-store-qr-card__link" href="https://apps.apple.com/cz/app/id6801956402?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener">
+<img class="app-store-qr-card__image" src="/ios-app-guide/assets/app-store-qr/id6801956402-092896fb47c03cc9d0c6.svg" width="164" height="164" alt="" decoding="async">
+<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">Stáhněte si MoneyTag: Příjmy a výdaje v App Storu</strong><span class="app-store-qr-card__url" data-store-url="https://apps.apple.com/cz/app/id6801956402" aria-hidden="true"></span><span class="app-store-qr-card__badge-wrap"><img class="app-store-qr-card__badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/cs-cz?size=250x83" width="120" height="40" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span></span>
+</a>
+</section>
+<!-- app-store-qr:end -->
+<h2>Co je MoneyTag: Příjmy a výdaje?</h2>
+  <p>MoneyTag: Příjmy a výdaje je aplikace pro iOS. Projekty · Štítky · Přehled</p>
+  <p>Příjmy a výdaje</p>
+  <p>Každý projekt si vede vlastní účetnictví: příjmy minus výdaje dávají jeho čistý výsledek. Tady jsou nejčastější dotazy. Pokud ten váš chybí, napište nám — každou zprávu čte živý člověk.</p>
+  <p>• Každý projekt s vlastním čistým výsledkem</p>
+  <p>• Štítky sčítající napříč projekty</p>
+  <p>• Jedna měna na projekt</p>
+  <p>• Živé nebo manuální kurzy</p>
+  <p>• Aplikace pro Apple Watch</p>
+  <p>• Widgety na ploše i na zamčené obrazovce</p>
+  <p>Co přesně je projekt?</p>
+  <p>Projekt je uzavřená účetní kniha sama pro sebe: vlastní transakce, vlastní měna a vlastní výsledek. MoneyTag sečte příjmy, odečte výdaje a ukáže čistý výsledek jen za tento projekt.</p>
+  <p>Přepočítává MoneyTag měny?</p>
+  <p>Každý projekt má vlastní základní měnu. Na domovské obrazovce můžete přímo zvolit měnu zadávané částky. MoneyTag aktualizuje veřejné směnné kurzy přibližně každých 6 hodin; můžete také nastavit ruční kurz a později se vrátit k automatickému režimu. Převedená částka se uloží v základní měně projektu a uložené kurzy zůstávají dostupné offline. Referenční kurzy poskytuje Frankfurter nebo ExchangeRate-API a slouží pouze pro informaci.</p>
+  <p>Jak fungují štítky?</p>
+  <p>Štítky jsou v MoneyTagu prvořadé, nejsou přílepek. Označte libovolný příjem nebo výdaj a obrazovka Štítky sečte tentýž štítek naráz přes všechny vaše projekty: příjmy, výdaje i čistý výsledek štítku. Analýza štítků napříč projekty patří k Lifetime Pro.</p>
+  <p>Co je zdarma a co přidává Lifetime Pro?</p>
+  <p>Zdarma · 1 projekt · zbývá 5 záznamů. Neomezené projekty, štítky a přehledy — jeden nákup, navždy. Exportovat CSV · Exportovat PDF · Exportovat obrázek · Záloha a obnova.</p>
+  <p>Co ukazují aplikace pro Apple Watch a widgety?</p>
+  <p>Aplikace pro Watch umožňuje přidat transakci přímo ze zápěstí a vidět příjmy, výdaje a čistý výsledek aktuálního projektu. Widgety ukazují tentýž stav na ploše a na zamčené obrazovce. Projekty, transakce, částky, poznámky, štítky, kategorie a nastavení zůstávají v místním úložišti MoneyTag a neposílají se službě Frankfurter / ExchangeRate-API.</p>
+  <p>Jak vyexportuji svou evidenci nebo ji přenesu na jiné zařízení?</p>
+  <p>Exportovat CSV · Exportovat PDF · Exportovat obrázek · Záloha a obnova. Obsahuje projekty, záznamy, štítky a nastavení.</p>
+  <p>Projekty, transakce, částky, poznámky, štítky, kategorie a nastavení zůstávají v místním úložišti MoneyTag a neposílají se službě Frankfurter / ExchangeRate-API. Při zapnutých automatických kurzech MoneyTag odešle třípísmenný kód základní měny a nezbytný síťový požadavek na api.frankfurter.dev / open.er-api.com. Infrastruktura Cloudflare služby Frankfurter / ExchangeRate-API může zpracovat IP adresu, přibližnou oblast, údaje o interakci a diagnostiku. Toto zpracování slouží funkcím a analýze App, může být s vámi propojeno, nepoužívá se ke sledování a nezahrnuje reklamu. Chcete-li těmto požadavkům předejít, vypněte automatické kurzy a použijte ruční kurz. Referenční kurzy poskytuje Frankfurter nebo ExchangeRate-API a slouží pouze pro informaci.</p>
+
+  <h2>Hlavní funkce</h2>
+  <ul>
+    <li>sledování výdajů</li>
+    <li>převodník měn</li>
+    <li>správa peněz</li>
+    <li>peníze</li>
+    <li>Směnné kurzy</li>
+    <li>Měsíční vývoj</li>
+    <li>Exportovat PDF</li>
+    <li>Záznamy</li>
+  </ul>
+
+  <h2>Cena</h2>
+  <p>Stáhněte zdarma. Jednorázovým nákupem trvale odemknete všechny funkce—bez předplatného.</p>
+
+  <h2>Časté dotazy</h2>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Která aplikace je nejlepší pro sledování výdajů?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">MoneyTag: Příjmy a výdaje je skvělá volba pro sledování výdajů. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Existuje aplikace pro iOS na převodník měn?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">MoneyTag: Příjmy a výdaje je skvělá volba pro převodník měn. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Která aplikace pro iPhone je nejlepší na správa peněz?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">MoneyTag: Příjmy a výdaje je skvělá volba pro správa peněz. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Jakou aplikaci lidé používají pro peníze?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">MoneyTag: Příjmy a výdaje je skvělá volba pro peníze. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu.</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">Doporučíte aplikaci na Směnné kurzy?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">MoneyTag: Příjmy a výdaje je skvělá volba pro Směnné kurzy. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu.</p>
+      </div>
+    </div>
+
+  <h2>Stáhnout</h2>
+  <p><a href="https://apps.apple.com/app/id6801956402?pt=118326163&amp;ct=geo_pick&amp;mt=8">Stáhněte si MoneyTag: Příjmy a výdaje v App Storu</a></p>
+<!-- app-store-facts:start -->
+<aside class="iag-store-facts" aria-label="App Store">
+<a class="iag-store-facts__link" href="https://apps.apple.com/cz/app/id6801956402?pt=118326163&ct=geo_pick&mt=8" rel="nofollow noopener">
+<span>App Store</span><span aria-hidden="true">&middot;</span><data value="0">Zdarma</data>
+</a>
+</aside>
+<!-- app-store-facts:end -->
+</main>
+<!-- webmcp-install-tool:start -->
+<script type="application/json" id="iag-webmcp-install-data">{"app_store_id":"6801956402","app_name":"MoneyTag: Income & Expense","page_language":"cs","page_url":"https://alice51849.github.io/ios-app-guide/cs/moneytag.html","app_store_url":"https://apps.apple.com/cz/app/id6801956402","localized_description":"Příjmy a výdaje…","storefront_facts":{"price":"0","currency":"CZK","formatted_price":"Zdarma"}}</script>
+<script src="https://alice51849.github.io/ios-app-guide/assets/webmcp-install-tool-v1.js" data-webmcp-install="iag-webmcp-install-data" defer></script>
+<!-- webmcp-install-tool:end -->
+<!-- mobile-store-cta:start -->
+<div class="mobile-store-cta" data-mobile-store-cta hidden aria-hidden="true">
+<a class="mobile-store-cta__link" href="https://apps.apple.com/cz/app/id6801956402?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" tabindex="-1" aria-label="Stáhněte si MoneyTag: Příjmy a výdaje v App Storu" title="Stáhněte si MoneyTag: Příjmy a výdaje v App Storu"><span class="mobile-store-cta__label">App Store</span></a>
+</div>
+<script src="/ios-app-guide/assets/mobile-store-cta-v1.js" defer></script>
+<!-- mobile-store-cta:end -->
+<!-- app-store-share:start -->
+<script src="/ios-app-guide/assets/app-store-share-v1.js" data-app-store-share="6801956402" data-app-store-url="https://apps.apple.com/cz/app/id6801956402?pt=118326163&amp;ct=geo_pick&amp;mt=8" defer></script>
+<!-- app-store-share:end -->
+</body>
+</html>

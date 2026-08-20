@@ -2,7 +2,7 @@
 title: "Snapport Lite — ઘરે ID ફોટા બનાવો | iOS App"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/gu-IN/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

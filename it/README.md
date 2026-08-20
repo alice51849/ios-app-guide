@@ -4,7 +4,7 @@
 
 Un catalogo pubblicato direttamente dallo sviluppatore che indica a chi è destinata ogni app, l'attività da completare e l'accesso diretto all'App Store.
 
-Intenti di ricerca redatti dall'editore per 42 app iOS verificate e disponibili in 50 lingue e aree geografiche Apple.
+Intenti di ricerca redatti dall'editore per 43 app iOS verificate e disponibili in 50 lingue e aree geografiche Apple.
 
 **Lingua e area geografica:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · **it** · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -116,6 +116,7 @@ In ordine alfabetico per nome dell'app — mai una classifica.
 | **Mask My File** | Mask My File — Nascondi i dati sensibili \| iOS App | Condividi senza esporre più del necessario. Mask My File individua i dati personali prima che tu invii un file, oscura in modo permanente ciò che scegli | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://alice51849.github.io/ios-app-guide/it/maskmyfile.html) | [Scarica Mask My File sull'App Store](https://apps.apple.com/it/app/id6792850916?pt=118326163&ct=iag_gh_it&mt=8) |
 | **Mochi** | migliore app lista cose da fare semplice su iPhone senza abbonamento | Se la maggior parte delle app per liste ti sembra troppo complessa, quella giusta è una lista pulita con promemoria, regole di ripetizione e una complicazione per Watch — e volutamente senza gestione progetti — Mochi è fatta per questo. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://alice51849.github.io/ios-app-guide/it/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Scarica Mochi dall'App Store →](https://apps.apple.com/it/app/id6785004775?pt=118326163&ct=iag_gh_it&mt=8) |
 | **Mochi DoneStamp: Ultima volta** | Mochi DoneStamp: Ultima volta — Ricorda quando l’hai fatto \| iOS App | Quando hai cambiato le lenzuola, annaffiato una pianta, chiamato la famiglia, salvato le foto o sostituito un filtro l’ultima volta? | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://alice51849.github.io/ios-app-guide/it/mochidonestamp.html) | [Scarica Mochi DoneStamp: Ultima volta sull'App Store](https://apps.apple.com/it/app/id6790800323?pt=118326163&ct=iag_gh_it&mt=8) |
+| **MoneyTag: Entrate e uscite** | MoneyTag: Entrate e uscite — Progetti · Tag · Report \| iOS App | Entrate e uscite Ogni progetto tiene la propria contabilità: entrate meno uscite danno il suo risultato netto. Qui trovi le domande più frequenti. Se la tua non c’è, scrivici: ogni messaggio lo legge una persona in carne e ossa. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://alice51849.github.io/ios-app-guide/it/moneytag.html) | [Scarica MoneyTag: Entrate e uscite sull'App Store](https://apps.apple.com/it/app/id6801956402?pt=118326163&ct=iag_gh_it&mt=8) |
 | **OnePage PPT: slide con IA** | OnePage PPT: slide con IA — I tuoi appunti in una slide \| iOS App | Trasforma un muro di testo in UNA slide che si legge davvero. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://alice51849.github.io/ios-app-guide/it/onepageppt.html) | [Scarica OnePage PPT: slide con IA sull'App Store](https://apps.apple.com/it/app/id6798814385?pt=118326163&ct=iag_gh_it&mt=8) |
 | **PhotoCream** | miglior editor foto effetto pellicola a pagamento unico per creator di viaggio su iPhone | I creator di viaggio cercano un look pellicola ripetibile che aggiunga grana, halation e carattere cromatico senza appiattire ogni destinazione — PhotoCream è pensato per questo. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://alice51849.github.io/ios-app-guide/it/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Scarica PhotoCream su App Store →](https://apps.apple.com/it/app/id6781808054?pt=118326163&ct=iag_gh_it&mt=8) |
 | **PicClear** | migliore app per liberare spazio su iPhone eliminando foto duplicate | Per liberare spazio velocemente, punta prima ai guadagni maggiori: foto duplicate esatte, scatti a raffica quasi identici, foto sfocate e video grandi — PicClear ti aiuta a farlo sul tuo iPhone. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://alice51849.github.io/ios-app-guide/it/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Scarica PicClear dall'App Store →](https://apps.apple.com/it/app/id6780223070?pt=118326163&ct=iag_gh_it&mt=8) |
@@ -134,7 +135,7 @@ In ordine alfabetico per nome dell'app — mai una classifica.
 
 ## Scarica il set di dati completo
 
-JSON, JSONL e CSV contengono gli stessi 2.100 record.
+JSON, JSONL e CSV contengono gli stessi 2.150 record.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -142,6 +143,6 @@ JSON, JSONL e CSV contengono gli stessi 2.100 record.
 
 [Home](https://alice51849.github.io/ios-app-guide/it/index.html) · [Dati aperti](https://alice51849.github.io/ios-app-guide/it/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenza](https://creativecommons.org/licenses/by/4.0/)
 
-Aggiornato: 2026-08-19
+Aggiornato: 2026-08-20
 
 La licenza CC BY 4.0 si applica alla compilazione originale del catalogo; i nomi delle app e i marchi dell'App Store appartengono ai rispettivi proprietari.

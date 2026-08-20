@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "no",
-  "dateModified": "2026-08-19",
-  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
-  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
+  "dateModified": "2026-08-20",
+  "content_digest": "08cf1f31e6bc352f5475e375af6e995cbd78b8edfadde161d4cfd16cff4becd3",
+  "generation_digest": "fad6ea45224faa2da20fd98029fa695291d7a154a99e6731d1c67c0f18c1d1ce",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 42,
+  "record_count": 43,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/no.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/no.rss.xml",
@@ -1431,6 +1431,76 @@
       "publisher_disclosure": "Veiledning skrevet av utgiveren Lumi Studio, apputvikleren. Appnavn er varemerker for sine eiere og brukes kun for identifikasjon. For dokumenter, helse, skole og produktivitetsbeslutninger, bekreft offisielle krav der det er relevant.",
       "source_persona_query": "best simple to do list app iphone no subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "no:moneytag",
+      "locale": "no",
+      "app_key": "moneytag",
+      "app_name": "MoneyTag",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "MoneyTag — Prosjekter · Tagger · Rapport | iOS App",
+      "decision_context": "Inntekter og utgifter Hvert prosjekt fører sitt eget regnskap: inntekter minus utgifter gir nettoresultatet. Her er spørsmålene vi får oftest. Er ikke ditt med, så skriv til oss — hver melding blir lest av et menneske. • Prosjekter med eget nettoresultat • Tagger som summeres på tvers av prosjekter • Én valuta per prosjekt • Live- eller manuelle kurser • App for Apple Watch • Widgets på hjem- og låst skjerm Hva er egentlig et prosjekt? Et prosjekt er et regnskap som står på egne bein: egne posteringer, egen valuta og sin egen bunnlinje. MoneyTag summerer inntektene, trekker fra utgiftene og viser nettoresultatet for akkurat det prosjektet. Regner MoneyTag om mellom valutaer? Hvert prosjekt har sin egen basisvaluta. På startskjermen velger du inndatavaluta direkte. MoneyTag oppdaterer offentlige vekslingskurser omtrent hver 6. time; du kan også angi en manuell kurs og senere gå tilbake til automatisk. Det omregnede beløpet lagres i prosjektets basisvaluta, og lagrede kurser er fortsatt tilgjengelige uten nett. Referansekurser leveres av Frankfurter eller ExchangeRate-API og er kun til informasjon. Hvordan fungerer tagger? Tagger er en bærebjelke i MoneyTag, ikke et tillegg. Sett en tagg på en inntekt eller utgift, og Tagger-skjermen summerer den samme taggen på tvers av alle prosjektene dine på én gang — inntekter, utgifter og netto for taggen. Tagganalyse på tvers av prosjekter er en del av Lifetime Pro. Hva er gratis, og hva gir Lifetime Pro? Gratis · 1 prosjekt · 5 poster igjen. Ubegrenset prosjekter, tagger og rapporter — ett kjøp, for alltid. Eksporter CSV · Eksporter PDF · Eksporter bilde · Sikkerhetskopi & gjenoppretting. Hva viser Apple Watch-appen og widgetene? Watch-appen lar deg legge inn en postering fra håndleddet og se inntekter, utgifter og netto for prosjektet du står i. Widgetene viser det samme bildet på hjemskjermen og på låst skjerm. Prosjekter, transaksjoner, beløp, notater, etiketter, kategorier og innstillinger blir i MoneyTags lokale lagring og sendes ikke til Frankfurter / ExchangeRate-API. Hvordan eksporterer jeg regnskapet eller flytter det til en annen enhet? Eksporter CSV · Eksporter PDF · Eksporter bilde · Sikkerhetskopi & gjenoppretting. Inneholder prosjekter, poster, tagger og innstillinger. Prosjekter, transaksjoner, beløp, notater, etiketter, kategorier og innstillinger blir i MoneyTags lokale lagring og sendes ikke til Frankfurter / ExchangeRate-API. Når automatiske kurser er på, sender MoneyTag den trebokstavers koden for basisvalutaen og den nødvendige nettverksforespørselen til api.frankfurter.dev / open.er-api.com. Frankfurter / ExchangeRate-APIs Cloudflare-infrastruktur kan behandle IP-adresse, omtrentlig region, samhandlingsdata og diagnostikk. Behandlingen brukes til App-funksjonalitet og analyse, kan knyttes til deg, brukes ikke til sporing og omfatter ingen annonser. Slå av automatiske kurser og bruk en manuell kurs for å unngå disse forespørslene. Referansekurser leveres av Frankfurter eller ExchangeRate-API og er kun til informasjon.",
+      "category": "finance",
+      "category_label": "Økonomi og reise",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis å starte · livstidsopplåsing",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Frakoblet",
+        "Ingen konto",
+        "Ingen annonser",
+        "Ingen sporing",
+        "Privat / på enheten"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Økonomi og reise",
+        "Gratis å starte · livstidsopplåsing",
+        "Frakoblet",
+        "Ingen konto",
+        "Ingen annonser",
+        "Ingen sporing",
+        "Privat / på enheten",
+        "Widget",
+        "Apple Watch",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/moneytag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/no/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/no/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fno%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/no.json",
+      "app_store_id": "6801956402",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "app_store_url": "https://apps.apple.com/no/app/id6801956402?pt=118326163&ct=iag_data_no&mt=8",
+      "app_store_cta_label": "Last ned MoneyTag fra App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "NOK",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Les hele veiledningen",
+      "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",
+      "source_persona_query": "best income and expense tracker for freelance projects no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

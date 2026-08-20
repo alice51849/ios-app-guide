@@ -2,7 +2,7 @@
 title: "OnePage PPT: ИИ-слайды — Заметки в готовую презентацию | iOS App"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/ru/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

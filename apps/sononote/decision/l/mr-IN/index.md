@@ -2,7 +2,7 @@
 title: "iPhone साठी सर्वोत्तम व्हॉइस नोट्स अॅप जे मीटिंग्सचे सारांश तयार करते"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/mr-IN/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

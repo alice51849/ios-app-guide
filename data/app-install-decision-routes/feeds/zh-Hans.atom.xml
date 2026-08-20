@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-Hans">
-  <title>已验证的实时应用共42款</title>
+  <title>已验证的实时应用共43款</title>
   <subtitle>这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。</subtitle>
   <id>https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/zh-Hans.atom.xml</id>
   <link rel="self" type="application/atom+xml" href="https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/zh-Hans.atom.xml"/>
@@ -9,7 +9,7 @@
   <link rel="alternate" type="text/html" href="https://alice51849.github.io/ios-app-guide/zh-Hans/index.html"/>
   <link rel="alternate" type="application/rss+xml" href="https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/zh-Hans.rss.xml"/>
   <link rel="alternate" type="application/feed+json" href="https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/zh-Hans.feed.json"/>
-  <updated>2026-08-19T21:09:07Z</updated>
+  <updated>2026-08-20T18:45:07Z</updated>
   <author><name>Lumi Studio</name></author>
   <entry>
     <title>Mask My File — 分享前遮挡隐私敏感信息 | iOS App</title>
@@ -318,6 +318,17 @@
     <summary>如果大多数待办应用感觉臃肿，合适的就是带提醒、重复规则和 Watch 复杂功能的干净清单——且刻意无项目管理功能——Mochi 正是为此打造。</summary>
     <content type="html">&lt;p&gt;&lt;a href="https://apps.apple.com/cn/app/id6785004775?pt=118326163&amp;amp;ct=iag_data_zh_hans&amp;amp;mt=8"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/mochi-share.jpg" alt="iPhone 上最佳简单待办事项应用，无订阅" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;如果大多数待办应用感觉臃肿，合适的就是带提醒、重复规则和 Watch 复杂功能的干净清单——且刻意无项目管理功能——Mochi 正是为此打造。&lt;/p&gt;&lt;p&gt;App Store · 免费&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/cn/app/id6785004775?pt=118326163&amp;amp;ct=iag_data_zh_hans&amp;amp;mt=8"&gt;在 App Store 获取 Mochi →&lt;/a&gt;&lt;/p&gt;</content>
     <category term="productivity" label="效率"/>
+  </entry>
+  <entry>
+    <title>MoneyTag: 收入与支出 — 项目 · 标签 · 报表 | iOS App</title>
+    <id>https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/zh-Hans/index.html</id>
+    <link rel="alternate" type="text/html" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/zh-Hans/index.html"/>
+    <link rel="enclosure" type="image/jpeg" href="https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg" length="55801" title="MoneyTag: 收入与支出 — 项目 · 标签 · 报表 | iOS App"/>
+    <link rel="related" type="text/html" href="https://apps.apple.com/cn/app/id6801956402?pt=118326163&amp;ct=iag_data_zh_hans&amp;mt=8" title="在 App Store 获取 MoneyTag: 收入与支出"/>
+    <updated>2026-08-20T18:45:07Z</updated>
+    <summary>收入与支出 每个项目都有自己的账本：收入减支出，就是这个项目的净额。以下是大家最常问的问题；没有找到答案，欢迎写信给我们，每封信都有人亲自看。 • 每个项目各自算净额 • 同一标签跨项目合计 • 每个项目一种币种 • 自动或手动汇率 • Apple Watch App • 主屏幕与锁定屏幕小组件 “项目”到底是什么？ 项目就是一本独立的账：有自己的交易、自己的币种，也有自己的盈亏。MoneyTag 会把该项目的收入合计、扣除支出，只显示这个项目的净额。 MoneyTag 会做汇率换算吗？ 每个项目都有自己的基准币种。你可以直接在首页选择输入币种；MoneyTag 约每 6 小时更新一次公开汇率，也可改用手动汇率，之后再恢复为自动。换算后会以项目的基准币种保存，已保存的汇率在离线时仍可使用。 参考汇率由 Frankfurter 或 ExchangeRate-API 提供；仅供信息参考。 标签怎么用？ 标签在 MoneyTag 中是一级功能，而不是附属品。任何一笔收入或支出都可以打标签，标签页会把同一个标签在所有项目中的收入、支出与净额一次性合计。跨项目标签分析属于永久版功能。 免费版能用什么？永久版多了什么？ 免费版 · 1 个项目 · 还可记 5 笔. 无限项目、标签与报表，一次购买永久使用. 导出 CSV · 导出 PDF · 导出图片 · 备份与还原. Apple Watch App 和小组件会显示什么？ 手表 App 可以直接在手腕上记一笔，并查看当前项目的收入、支出与净额；小组件则把同样的状态显示在主屏幕与锁定屏幕。 项目、交易、金额、备注、标签、分类和设置都保存在 MoneyTag 的设备端存储中，不会发送给 Frankfurter / ExchangeRate-API。 怎么导出账本或迁移到另一台设备？ 导出 CSV · 导出 PDF · 导出图片 · 备份与还原. 包含项目、交易、标签与设置. 项目、交易、金额、备注、标签、分类和设置都保存在 MoneyTag 的设备端存储中，不会发送给 Frankfurter / ExchangeRate-API。 启用自动汇率时，MoneyTag 会将三位基准货币代码和必要的网络请求发送到 api.frankfurter.dev / open.er-api.com。 Frankfurter / ExchangeRate-API 使用的 Cloudflare 基础设施可能处理 IP 地址、大致区域、交互数据和诊断信息。 这些处理仅用于 App 功能和分析，数据可能与你关联，但不会用于跟踪，也不涉及广告。 关闭自动汇率并使用手动汇率，即可避免这些请求。 参考汇率由 Frankfurter 或 ExchangeRate-API 提供；仅供信息参考。</summary>
+    <content type="html">&lt;p&gt;&lt;a href="https://apps.apple.com/cn/app/id6801956402?pt=118326163&amp;amp;ct=iag_data_zh_hans&amp;amp;mt=8"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg" alt="MoneyTag: 收入与支出 — 项目 · 标签 · 报表 | iOS App" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;收入与支出 每个项目都有自己的账本：收入减支出，就是这个项目的净额。以下是大家最常问的问题；没有找到答案，欢迎写信给我们，每封信都有人亲自看。 • 每个项目各自算净额 • 同一标签跨项目合计 • 每个项目一种币种 • 自动或手动汇率 • Apple Watch App • 主屏幕与锁定屏幕小组件 “项目”到底是什么？ 项目就是一本独立的账：有自己的交易、自己的币种，也有自己的盈亏。MoneyTag 会把该项目的收入合计、扣除支出，只显示这个项目的净额。 MoneyTag 会做汇率换算吗？ 每个项目都有自己的基准币种。你可以直接在首页选择输入币种；MoneyTag 约每 6 小时更新一次公开汇率，也可改用手动汇率，之后再恢复为自动。换算后会以项目的基准币种保存，已保存的汇率在离线时仍可使用。 参考汇率由 Frankfurter 或 ExchangeRate-API 提供；仅供信息参考。 标签怎么用？ 标签在 MoneyTag 中是一级功能，而不是附属品。任何一笔收入或支出都可以打标签，标签页会把同一个标签在所有项目中的收入、支出与净额一次性合计。跨项目标签分析属于永久版功能。 免费版能用什么？永久版多了什么？ 免费版 · 1 个项目 · 还可记 5 笔. 无限项目、标签与报表，一次购买永久使用. 导出 CSV · 导出 PDF · 导出图片 · 备份与还原. Apple Watch App 和小组件会显示什么？ 手表 App 可以直接在手腕上记一笔，并查看当前项目的收入、支出与净额；小组件则把同样的状态显示在主屏幕与锁定屏幕。 项目、交易、金额、备注、标签、分类和设置都保存在 MoneyTag 的设备端存储中，不会发送给 Frankfurter / ExchangeRate-API。 怎么导出账本或迁移到另一台设备？ 导出 CSV · 导出 PDF · 导出图片 · 备份与还原. 包含项目、交易、标签与设置. 项目、交易、金额、备注、标签、分类和设置都保存在 MoneyTag 的设备端存储中，不会发送给 Frankfurter / ExchangeRate-API。 启用自动汇率时，MoneyTag 会将三位基准货币代码和必要的网络请求发送到 api.frankfurter.dev / open.er-api.com。 Frankfurter / ExchangeRate-API 使用的 Cloudflare 基础设施可能处理 IP 地址、大致区域、交互数据和诊断信息。 这些处理仅用于 App 功能和分析，数据可能与你关联，但不会用于跟踪，也不涉及广告。 关闭自动汇率并使用手动汇率，即可避免这些请求。 参考汇率由 Frankfurter 或 ExchangeRate-API 提供；仅供信息参考。&lt;/p&gt;&lt;p&gt;App Store · 免费&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/cn/app/id6801956402?pt=118326163&amp;amp;ct=iag_data_zh_hans&amp;amp;mt=8"&gt;在 App Store 获取 MoneyTag: 收入与支出&lt;/a&gt;&lt;/p&gt;</content>
+    <category term="finance" label="理财与出行"/>
   </entry>
   <entry>
     <title>OnePage PPT: AI一页幻灯片 — 笔记、截图、PDF秒变演示文稿 | iOS App</title>

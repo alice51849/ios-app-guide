@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "th",
-  "dateModified": "2026-08-19",
-  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
-  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
+  "dateModified": "2026-08-20",
+  "content_digest": "08cf1f31e6bc352f5475e375af6e995cbd78b8edfadde161d4cfd16cff4becd3",
+  "generation_digest": "fad6ea45224faa2da20fd98029fa695291d7a154a99e6731d1c67c0f18c1d1ce",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 42,
+  "record_count": 43,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/th.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/th.rss.xml",
@@ -1431,6 +1431,76 @@
       "publisher_disclosure": "คู่มือที่จัดทำโดยผู้พัฒนาแอป Lumi Studio ชื่อแอปเป็นเครื่องหมายการค้าของเจ้าของและใช้เพื่อการระบุเท่านั้น สำหรับเอกสาร สุขภาพ โรงเรียน และการตัดสินใจด้านประสิทธิภาพ โปรดตรวจสอบข้อกำหนดอย่างเป็นทางการเมื่อเกี่ยวข้อง",
       "source_persona_query": "best simple to do list app iphone no subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "th:moneytag",
+      "locale": "th",
+      "app_key": "moneytag",
+      "app_name": "MoneyTag: รายรับและรายจ่าย",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "MoneyTag: รายรับและรายจ่าย — โปรเจกต์ · แท็ก · รายงาน | iOS App",
+      "decision_context": "รายรับและรายจ่าย ทุกโปรเจกต์มีบัญชีของตัวเอง: รายรับลบรายจ่ายคือยอดสุทธิของโปรเจกต์นั้น นี่คือคำถามที่พบบ่อยที่สุด หากไม่มีคำตอบที่ต้องการ เขียนมาหาเราได้เลย ทุกข้อความมีคนอ่านจริง • แต่ละโปรเจกต์มียอดสุทธิของตัวเอง • แท็กรวมยอดข้ามทุกโปรเจกต์ • หนึ่งโปรเจกต์ใช้หนึ่งสกุลเงิน • อัตราแบบสดหรือด้วยมือ • แอปบน Apple Watch • วิดเจ็ตหน้าโฮมและหน้าล็อก โปรเจกต์คืออะไรกันแน่ โปรเจกต์คือบัญชีที่จบในตัวเอง มีรายการของตัวเอง มีสกุลเงินของตัวเอง และมีบรรทัดสุดท้ายของตัวเอง MoneyTag จะรวมรายรับ หักรายจ่าย แล้วแสดงยอดสุทธิเฉพาะของโปรเจกต์นั้น MoneyTag แปลงค่าเงินให้ไหม แต่ละโปรเจกต์มีสกุลเงินหลักของตัวเอง บนหน้าหลักคุณเลือกสกุลเงินที่กรอกได้โดยตรง MoneyTag อัปเดตอัตราแลกเปลี่ยนสาธารณะประมาณทุก 6 ชั่วโมง หรือจะตั้งอัตราเองแล้วกลับมาใช้แบบอัตโนมัติก็ได้ จำนวนเงินหลังแปลงจะบันทึกเป็นสกุลเงินหลักของโปรเจกต์ และอัตราที่บันทึกไว้ยังใช้แบบออฟไลน์ได้ อัตราอ้างอิงให้บริการโดย Frankfurter หรือ ExchangeRate-API และใช้เพื่อให้ข้อมูลเท่านั้น แท็กทำงานอย่างไร แท็กเป็นฟีเจอร์หลักของ MoneyTag ไม่ใช่ของแถม ติดแท็กให้รายรับหรือรายจ่ายรายการไหนก็ได้ แล้วหน้าแท็กจะรวมยอดของแท็กเดียวกันจากทุกโปรเจกต์ให้ในคราวเดียว ทั้งรายรับ รายจ่าย และยอดสุทธิของแท็กนั้น การวิเคราะห์แท็กข้ามโปรเจกต์เป็นส่วนหนึ่งของ Lifetime Pro ใช้ฟรีได้แค่ไหน และ Lifetime Pro เพิ่มอะไรบ้าง ฟรี · 1 โปรเจกต์ · เหลืออีก 5 รายการ. โปรเจกต์ แท็ก และรายงานไม่จำกัด จ่ายครั้งเดียวใช้ตลอด. ส่งออก CSV · ส่งออก PDF · ส่งออกรูปภาพ · สำรองข้อมูล & กู้คืน. แอปบน Apple Watch และวิดเจ็ตแสดงอะไร แอปบนนาฬิกาให้คุณบันทึกรายการจากข้อมือได้ทันที พร้อมดูรายรับ รายจ่าย และยอดสุทธิของโปรเจกต์ปัจจุบัน ส่วนวิดเจ็ตแสดงสถานะเดียวกันบนหน้าโฮมและหน้าล็อก โปรเจกต์ รายการ จำนวนเงิน บันทึก แท็ก หมวดหมู่ และการตั้งค่าจะอยู่ในพื้นที่จัดเก็บบนอุปกรณ์ของ MoneyTag และไม่ถูกส่งไปยัง Frankfurter / ExchangeRate-API / ExchangeRate-API จะส่งออกบัญชีหรือย้ายไปเครื่องอื่นอย่างไร ส่งออก CSV · ส่งออก PDF · ส่งออกรูปภาพ · สำรองข้อมูล & กู้คืน. รวมโปรเจกต์ รายการ แท็ก และการตั้งค่า. โปรเจกต์ รายการ จำนวนเงิน บันทึก แท็ก หมวดหมู่ และการตั้งค่าจะอยู่ในพื้นที่จัดเก็บบนอุปกรณ์ของ MoneyTag และไม่ถูกส่งไปยัง Frankfurter / ExchangeRate-API เมื่อเปิดอัตราแลกเปลี่ยนอัตโนมัติ MoneyTag จะส่งรหัสสกุลเงินหลักสามตัวอักษรและคำขอเครือข่ายที่จำเป็นไปยัง api.frankfurter.dev / open.er-api.com โครงสร้างพื้นฐาน Cloudflare ของ Frankfurter / ExchangeRate-API อาจประมวลผลที่อยู่ IP ภูมิภาคโดยประมาณ ข้อมูลการโต้ตอบ และข้อมูลวินิจฉัย การประมวลผลนี้ใช้เพื่อการทำงานและการวิเคราะห์ของ App อาจเชื่อมโยงกับคุณ ไม่ใช้เพื่อติดตาม และไม่มีโฆษณา ปิดอัตราแลกเปลี่ยนอัตโนมัติและใช้อัตราแบบกำหนดเองเพื่อหลีกเลี่ยงคำขอเหล่านี้ อัตราอ้างอิงให้บริการโดย Frankfurter หรือ ExchangeRate-API และใช้เพื่อให้ข้อมูลเท่านั้น",
+      "category": "finance",
+      "category_label": "เงิน & การเดินทาง",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "เริ่มใช้ฟรี · ปลดล็อกถาวร",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "วิดเจ็ต",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "เงิน & การเดินทาง",
+        "เริ่มใช้ฟรี · ปลดล็อกถาวร",
+        "ออฟไลน์",
+        "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
+        "ไม่มีการติดตาม",
+        "ส่วนตัว / บนอุปกรณ์",
+        "วิดเจ็ต",
+        "Apple Watch",
+        "App Store · ฟรี"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/moneytag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/th/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/th/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fth%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/th.json",
+      "app_store_id": "6801956402",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "app_store_url": "https://apps.apple.com/th/app/id6801956402?pt=118326163&ct=iag_data_th&mt=8",
+      "app_store_cta_label": "ดาวน์โหลด MoneyTag: รายรับและรายจ่าย บน App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี"
+      },
+      "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
+      "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
+      "source_persona_query": "best income and expense tracker for freelance projects no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

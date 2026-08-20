@@ -4,7 +4,7 @@
 
 Een catalogus van de eerste partij met informatie over voor wie elke app is ontworpen, welke taak ze proberen te voltooien en het directe App Store-pad.
 
-Door uitgevers opgestelde zoekintenties voor 42 geverifieerde actieve iOS-apps en 50 Apple-regio's.
+Door uitgevers opgestelde zoekintenties voor 43 geverifieerde actieve iOS-apps en 50 Apple-regio's.
 
 **Regio:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · **nl-NL** · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -116,6 +116,7 @@ Alfabetisch op app-naam — nooit een ranglijst.
 | **Mask My File** | Mask My File — Verberg gegevens vóór delen \| iOS App | Deel veilig zonder de nuttige context te verliezen. Mask My File vindt privégegevens voordat u een bestand verstuurt, maakt permanent onleesbaar wat u | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/maskmyfile.html) | [Download Mask My File in de App Store](https://apps.apple.com/nl/app/id6792850916?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
 | **Mochi** | beste eenvoudige takenlijst app iPhone zonder abonnement | Als de meeste takenlijst-apps te vol voelen, is de juiste een overzichtelijke checklist met herinneringen, herhalingsregels en een Watch-complicatie — en bewust zonder projectmanagementfuncties — Mochi is hiervoor gemaakt. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Download Mochi in de App Store →](https://apps.apple.com/nl/app/id6785004775?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
 | **Mochi DoneStamp: Laatste keer** | Mochi DoneStamp: Laatste keer — Onthoud wanneer je het deed \| iOS App | Wanneer verschoonde je voor het laatst het bed, gaf je een plant water, belde je familie, maakte je een fotoback-up of verving je een filter? | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/mochidonestamp.html) | [Download Mochi DoneStamp: Laatste keer in de App Store](https://apps.apple.com/nl/app/id6790800323?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
+| **MoneyTag: Inkomsten & uitgaven** | MoneyTag: Inkomsten & uitgaven — Projecten · Tags · Rapport \| iOS App | Inkomsten & uitgaven | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/moneytag.html) | [Download MoneyTag: Inkomsten & uitgaven in de App Store](https://apps.apple.com/nl/app/id6801956402?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
 | **OnePage PPT: AI-dia maker** | OnePage PPT: AI-dia maker — Van notities naar één dia \| iOS App | Maak van een muur tekst ÉÉN dia die mensen echt lezen. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/onepageppt.html) | [Download OnePage PPT: AI-dia maker in de App Store](https://apps.apple.com/nl/app/id6798814385?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
 | **PhotoCream** | beste eenmalige filmfoto-editor voor reiscreators op iPhone | Reiscreators hebben een herhaalbare filmlook nodig die korrel, halatie en kleurkarakter toevoegt zonder elke bestemming te reduceren tot dezelfde vlakke filter — PhotoCream is hiervoor gemaakt. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [PhotoCream downloaden in de App Store →](https://apps.apple.com/nl/app/id6781808054?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
 | **PicClear** | beste app om iPhone-opslag vrij te maken door dubbele foto’s te verwijderen | Om snel ruimte vrij te maken, richt je je eerst op de grootste winst: exacte dubbele foto’s, bijna identieke burstfoto’s, wazige afkeuringen en grote video’s — PicClear helpt je dit op je iPhone te doen. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Download PicClear in de App Store →](https://apps.apple.com/nl/app/id6780223070?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
@@ -134,7 +135,7 @@ Alfabetisch op app-naam — nooit een ranglijst.
 
 ## Haal de volledige dataset binnen
 
-JSON, JSONL en CSV bevatten dezelfde 2.100 gegevensitems.
+JSON, JSONL en CSV bevatten dezelfde 2.150 gegevensitems.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -142,6 +143,6 @@ JSON, JSONL en CSV bevatten dezelfde 2.100 gegevensitems.
 
 [Startpagina](https://alice51849.github.io/ios-app-guide/nl-NL/index.html) · [Open data](https://alice51849.github.io/ios-app-guide/nl-NL/data/lumi-studio-publisher-search-intent-catalog.html) · [Licentie](https://creativecommons.org/licenses/by/4.0/)
 
-Bijgewerkt: 2026-08-19
+Bijgewerkt: 2026-08-20
 
 CC BY 4.0 is van toepassing op de originele catalogussamenstelling; app-namen en App Store-merken behoren toe aan hun eigenaren.

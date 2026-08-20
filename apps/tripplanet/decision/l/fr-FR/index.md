@@ -2,7 +2,7 @@
 title: "meilleure application activité voyage pour enfants en famille"
 lang: "fr-FR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/fr-FR/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

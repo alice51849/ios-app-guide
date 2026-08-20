@@ -2,7 +2,7 @@
 title: "പ്രസൂതികാലം കുട്ടികൾക്ക് പരസ്യങ്ങൾ ഇല്ലാത്ത മികച്ച ഉറക്കക്രമം അപ്ലിക്കേഷൻ"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/ml-IN/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

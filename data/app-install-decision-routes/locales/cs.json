@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "cs",
-  "dateModified": "2026-08-19",
-  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
-  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
+  "dateModified": "2026-08-20",
+  "content_digest": "08cf1f31e6bc352f5475e375af6e995cbd78b8edfadde161d4cfd16cff4becd3",
+  "generation_digest": "fad6ea45224faa2da20fd98029fa695291d7a154a99e6731d1c67c0f18c1d1ce",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 42,
+  "record_count": 43,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/cs.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/cs.rss.xml",
@@ -1431,6 +1431,76 @@
       "publisher_disclosure": "Průvodce vytvořený vydavatelem Lumi Studio, vývojářem aplikace. Názvy aplikací jsou ochranné známky jejich vlastníků a používají se pouze pro identifikaci. U dokumentů, zdravotních, školních a pracovních rozhodnutí ověřte oficiální požadavky, pokud jsou relevantní.",
       "source_persona_query": "best simple to do list app iphone no subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "cs:moneytag",
+      "locale": "cs",
+      "app_key": "moneytag",
+      "app_name": "MoneyTag: Příjmy a výdaje",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "MoneyTag: Příjmy a výdaje — Projekty · Štítky · Přehled | iOS App",
+      "decision_context": "Příjmy a výdaje Každý projekt si vede vlastní účetnictví: příjmy minus výdaje dávají jeho čistý výsledek. Tady jsou nejčastější dotazy. Pokud ten váš chybí, napište nám — každou zprávu čte živý člověk. • Každý projekt s vlastním čistým výsledkem • Štítky sčítající napříč projekty • Jedna měna na projekt • Živé nebo manuální kurzy • Aplikace pro Apple Watch • Widgety na ploše i na zamčené obrazovce Co přesně je projekt? Projekt je uzavřená účetní kniha sama pro sebe: vlastní transakce, vlastní měna a vlastní výsledek. MoneyTag sečte příjmy, odečte výdaje a ukáže čistý výsledek jen za tento projekt. Přepočítává MoneyTag měny? Každý projekt má vlastní základní měnu. Na domovské obrazovce můžete přímo zvolit měnu zadávané částky. MoneyTag aktualizuje veřejné směnné kurzy přibližně každých 6 hodin; můžete také nastavit ruční kurz a později se vrátit k automatickému režimu. Převedená částka se uloží v základní měně projektu a uložené kurzy zůstávají dostupné offline. Referenční kurzy poskytuje Frankfurter nebo ExchangeRate-API a slouží pouze pro informaci. Jak fungují štítky? Štítky jsou v MoneyTagu prvořadé, nejsou přílepek. Označte libovolný příjem nebo výdaj a obrazovka Štítky sečte tentýž štítek naráz přes všechny vaše projekty: příjmy, výdaje i čistý výsledek štítku. Analýza štítků napříč projekty patří k Lifetime Pro. Co je zdarma a co přidává Lifetime Pro? Zdarma · 1 projekt · zbývá 5 záznamů. Neomezené projekty, štítky a přehledy — jeden nákup, navždy. Exportovat CSV · Exportovat PDF · Exportovat obrázek · Záloha a obnova. Co ukazují aplikace pro Apple Watch a widgety? Aplikace pro Watch umožňuje přidat transakci přímo ze zápěstí a vidět příjmy, výdaje a čistý výsledek aktuálního projektu. Widgety ukazují tentýž stav na ploše a na zamčené obrazovce. Projekty, transakce, částky, poznámky, štítky, kategorie a nastavení zůstávají v místním úložišti MoneyTag a neposílají se službě Frankfurter / ExchangeRate-API. Jak vyexportuji svou evidenci nebo ji přenesu na jiné zařízení? Exportovat CSV · Exportovat PDF · Exportovat obrázek · Záloha a obnova. Obsahuje projekty, záznamy, štítky a nastavení. Projekty, transakce, částky, poznámky, štítky, kategorie a nastavení zůstávají v místním úložišti MoneyTag a neposílají se službě Frankfurter / ExchangeRate-API. Při zapnutých automatických kurzech MoneyTag odešle třípísmenný kód základní měny a nezbytný síťový požadavek na api.frankfurter.dev / open.er-api.com. Infrastruktura Cloudflare služby Frankfurter / ExchangeRate-API může zpracovat IP adresu, přibližnou oblast, údaje o interakci a diagnostiku. Toto zpracování slouží funkcím a analýze App, může být s vámi propojeno, nepoužívá se ke sledování a nezahrnuje reklamu. Chcete-li těmto požadavkům předejít, vypněte automatické kurzy a použijte ruční kurz. Referenční kurzy poskytuje Frankfurter nebo ExchangeRate-API a slouží pouze pro informaci.",
+      "category": "finance",
+      "category_label": "Finance a cestování",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Zdarma na začátek · doživotní odemknutí",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Finance a cestování",
+        "Zdarma na začátek · doživotní odemknutí",
+        "Offline",
+        "Bez účtu",
+        "Bez reklam",
+        "Bez sledování",
+        "Soukromé / v zařízení",
+        "Widget",
+        "Apple Watch",
+        "App Store · Zdarma"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/moneytag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/cs/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/cs/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fcs%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/cs.json",
+      "app_store_id": "6801956402",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "app_store_url": "https://apps.apple.com/cz/app/id6801956402?pt=118326163&ct=iag_data_cs&mt=8",
+      "app_store_cta_label": "Stáhněte si MoneyTag: Příjmy a výdaje v App Storu",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CZK",
+        "formatted_price": "Zdarma"
+      },
+      "guide_cta_label": "Přečtěte si celý průvodce",
+      "publisher_disclosure": "Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.",
+      "source_persona_query": "best income and expense tracker for freelance projects no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

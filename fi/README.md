@@ -4,7 +4,7 @@
 
 Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, mitä tehtävää he pyrkivät suorittamaan ja suora App Store -polku.
 
-Julkaisijan laatimat hakutarkoitukset 42 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
+Julkaisijan laatimat hakutarkoitukset 43 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
 
 **Lokaali:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · **fi** · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -116,6 +116,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 | **Mask My File** | Mask My File — Suojaa ennen jakamista \| iOS App | Jaa turvallisesti menettämättä hyödyllistä asiayhteyttä. Mask My File löytää yksityiset tiedot ennen kuin lähetät tiedoston, peittää pysyvästi | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://alice51849.github.io/ios-app-guide/fi/maskmyfile.html) | [Lataa Mask My File App Storesta](https://apps.apple.com/fi/app/id6792850916?pt=118326163&ct=iag_gh_fi&mt=8) |
 | **Mochi** | paras yksinkertainen muistilistasovellus iPhonelle ilman tilausta | Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkistuslista muistutuksilla, toistosäännöillä ja Watch-komplikaatiolla — ja tarkoituksella ilman projektinhallinnan koneistoa — Mochi on tehty tätä varten. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Hanki Mochi App Storesta →](https://apps.apple.com/fi/app/id6785004775?pt=118326163&ct=iag_gh_fi&mt=8) |
 | **Mochi DoneStamp: Viimeksi** | Mochi DoneStamp: Viimeksi — Muista, milloin teit sen \| iOS App | Milloin viimeksi vaihdoit lakanat, kastelit kasvin, soitit läheisille, varmuuskopioit kuvat tai vaihdoit suodattimen? | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://alice51849.github.io/ios-app-guide/fi/mochidonestamp.html) | [Lataa Mochi DoneStamp: Viimeksi App Storesta](https://apps.apple.com/fi/app/id6790800323?pt=118326163&ct=iag_gh_fi&mt=8) |
+| **MoneyTag: Tulot ja menot** | MoneyTag: Tulot ja menot — Projektit · Tunnisteet \| iOS App | Tulot ja menot Jokainen projekti pitää omaa kirjanpitoaan: tulot miinus menot on sen nettotulos. Tässä ovat useimmin kysytyt kysymykset. Jos omaasi ei löydy, laita viestiä — jokaisen viestin lukee oikea ihminen. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://alice51849.github.io/ios-app-guide/fi/moneytag.html) | [Lataa MoneyTag: Tulot ja menot App Storesta](https://apps.apple.com/fi/app/id6801956402?pt=118326163&ct=iag_gh_fi&mt=8) |
 | **OnePage PPT: tekoälyesitys** | OnePage PPT: tekoälyesitys — Muistiinpanoista yksi dia \| iOS App | Muuta tekstiseinä YHDEKSI diaksi, jonka joku oikeasti lukee. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://alice51849.github.io/ios-app-guide/fi/onepageppt.html) | [Lataa OnePage PPT: tekoälyesitys App Storesta](https://apps.apple.com/fi/app/id6798814385?pt=118326163&ct=iag_gh_fi&mt=8) |
 | **PhotoCream** | paras kertamaksullinen filmikuvien editori matkasisällön tekijöille iPhonella | Matkasisällön tekijät tarvitsevat toistettavan filmityylin, joka lisää rakeen, halation ja värin luonteen ilman että jokainen kohde näyttää samalta filttereiltä — PhotoCream on tehty tätä varten. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Hanki PhotoCream App Storesta →](https://apps.apple.com/fi/app/id6781808054?pt=118326163&ct=iag_gh_fi&mt=8) |
 | **PicClear** | paras sovellus iPhonen tallennustilan vapauttamiseen poistamalla kaksoiskuvat | Vapauta tilaa nopeasti kohdistamalla suurimpiin voittoihin: täsmälliset kaksoiskuvat, lähes identtiset sarjakuvat, epätarkat hylätyt ja suuret videot — PicClear auttaa sinua tekemään sen iPhonellasi. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Hanki PicClear App Storesta →](https://apps.apple.com/fi/app/id6780223070?pt=118326163&ct=iag_gh_fi&mt=8) |
@@ -134,7 +135,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 
 ## Lataa koko tietoaineisto
 
-JSON, JSONL ja CSV sisältävät samat 2 100 tietuetta.
+JSON, JSONL ja CSV sisältävät samat 2 150 tietuetta.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -142,6 +143,6 @@ JSON, JSONL ja CSV sisältävät samat 2 100 tietuetta.
 
 [Etusivu](https://alice51849.github.io/ios-app-guide/fi/index.html) · [Avoin data](https://alice51849.github.io/ios-app-guide/fi/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisenssi](https://creativecommons.org/licenses/by/4.0/)
 
-Päivitetty: 2026-08-19
+Päivitetty: 2026-08-20
 
 CC BY 4.0 koskee alkuperäisen luettelon kokoamista; sovellusten nimet ja App Store -merkit kuuluvat omistajilleen.

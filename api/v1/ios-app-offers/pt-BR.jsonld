@@ -6,8 +6,8 @@
   "name": "Catálogo de intenções de busca da publicadora Lumi Studio",
   "description": "Um catálogo publicado diretamente pela desenvolvedora que mostra para quem cada app foi criado, a tarefa que a pessoa quer concluir e o acesso direto à App Store.",
   "inLanguage": "pt-BR",
-  "dateModified": "2026-08-19",
-  "numberOfItems": 42,
+  "dateModified": "2026-08-20",
+  "numberOfItems": 43,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -1735,7 +1735,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/br/app/id6790800323?pt=118326163&ct=iag_data_pt_br&mt=8",
         "name": "Mochi DoneStamp",
-        "description": "For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment — Mochi DoneStamp is built for this.",
+        "description": "Para tarefas e manutenção que não cabem em um calendário rígido, um bom registro lembra quando você realmente concluiu e conta o próximo intervalo a partir desse momento. O Mochi DoneStamp foi feito exatamente para isso.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1765,7 +1765,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "pt-BR",
-          "description": "For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment — Mochi DoneStamp is built for this.",
+          "description": "Para tarefas e manutenção que não cabem em um calendário rígido, um bom registro lembra quando você realmente concluiu e conta o próximo intervalo a partir desse momento. O Mochi DoneStamp foi feito exatamente para isso.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-mochidonestamp"
           },
@@ -1795,6 +1795,72 @@
     {
       "@type": "ListItem",
       "position": 28,
+      "url": "https://apps.apple.com/br/app/id6801956402?pt=118326163&ct=iag_data_pt_br&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-moneytag",
+        "url": "https://apps.apple.com/br/app/id6801956402?pt=118326163&ct=iag_data_pt_br&mt=8",
+        "name": "MoneyTag: Receitas e despesas",
+        "description": "Receitas e despesas Cada projeto tem a própria contabilidade: receitas menos despesas dão o resultado líquido dele. Aqui estão as dúvidas mais comuns. Se a sua não estiver na lista, escreva para nós — cada mensagem é lida por uma pessoa de verdade.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6801956402",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6801956402"
+          },
+          "name": "MoneyTag: Receitas e despesas",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/br/app/id6801956402?pt=118326163&ct=iag_data_pt_br&mt=8",
+          "installUrl": "https://apps.apple.com/br/app/id6801956402?pt=118326163&ct=iag_data_pt_br&mt=8",
+          "downloadUrl": "https://apps.apple.com/br/app/id6801956402?pt=118326163&ct=iag_data_pt_br&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/br/app/id6801956402?pt=118326163&ct=iag_data_pt_br&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/pt-BR/moneytag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6801956402",
+          "inLanguage": "pt-BR",
+          "description": "Receitas e despesas Cada projeto tem a própria contabilidade: receitas menos despesas dão o resultado líquido dele. Aqui estão as dúvidas mais comuns. Se a sua não estiver na lista, escreva para nós — cada mensagem é lida por uma pessoa de verdade.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-moneytag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "BRL",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "BR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 29,
       "url": "https://apps.apple.com/br/app/id6798814385?pt=118326163&ct=iag_data_pt_br&mt=8",
       "item": {
         "@type": "Offer",
@@ -1860,7 +1926,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 30,
       "url": "https://apps.apple.com/br/app/id6781808054?pt=118326163&ct=iag_data_pt_br&mt=8",
       "item": {
         "@type": "Offer",
@@ -1926,7 +1992,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 31,
       "url": "https://apps.apple.com/br/app/id6780223070?pt=118326163&ct=iag_data_pt_br&mt=8",
       "item": {
         "@type": "Offer",
@@ -1992,7 +2058,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 32,
       "url": "https://apps.apple.com/br/app/id6779977651?pt=118326163&ct=iag_data_pt_br&mt=8",
       "item": {
         "@type": "Offer",
@@ -2058,7 +2124,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 33,
       "url": "https://apps.apple.com/br/app/id6788236641?pt=118326163&ct=iag_data_pt_br&mt=8",
       "item": {
         "@type": "Offer",
@@ -2124,7 +2190,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 34,
       "url": "https://apps.apple.com/br/app/id6780575828?pt=118326163&ct=iag_data_pt_br&mt=8",
       "item": {
         "@type": "Offer",
@@ -2190,7 +2256,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 35,
       "url": "https://apps.apple.com/br/app/id6792856304?pt=118326163&ct=iag_data_pt_br&mt=8",
       "item": {
         "@type": "Offer",
@@ -2256,7 +2322,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 36,
       "url": "https://apps.apple.com/br/app/id6782139553?pt=118326163&ct=iag_data_pt_br&mt=8",
       "item": {
         "@type": "Offer",
@@ -2322,7 +2388,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 37,
       "url": "https://apps.apple.com/br/app/id6791299610?pt=118326163&ct=iag_data_pt_br&mt=8",
       "item": {
         "@type": "Offer",
@@ -2388,7 +2454,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 38,
       "url": "https://apps.apple.com/br/app/id6787754435?pt=118326163&ct=iag_data_pt_br&mt=8",
       "item": {
         "@type": "Offer",
@@ -2454,7 +2520,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 39,
       "url": "https://apps.apple.com/br/app/id6782275018?pt=118326163&ct=iag_data_pt_br&mt=8",
       "item": {
         "@type": "Offer",
@@ -2520,7 +2586,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 40,
       "url": "https://apps.apple.com/br/app/id6790467886?pt=118326163&ct=iag_data_pt_br&mt=8",
       "item": {
         "@type": "Offer",
@@ -2586,7 +2652,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 41,
       "url": "https://apps.apple.com/br/app/id6793414462?pt=118326163&ct=iag_data_pt_br&mt=8",
       "item": {
         "@type": "Offer",
@@ -2652,7 +2718,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 42,
       "url": "https://apps.apple.com/br/app/id6797601720?pt=118326163&ct=iag_data_pt_br&mt=8",
       "item": {
         "@type": "Offer",
@@ -2718,7 +2784,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 43,
       "url": "https://apps.apple.com/br/app/id6789917808?pt=118326163&ct=iag_data_pt_br&mt=8",
       "item": {
         "@type": "Offer",

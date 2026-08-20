@@ -4,7 +4,7 @@
 
 प्रत्येक अॅप कोणासाठी डिझाइन केले आहे, ते कोणते कार्य पूर्ण करण्याचा प्रयत्न करत आहेत, आणि थेट App Store मार्ग यांचा प्रथम पक्ष निर्देशिका.
 
-42 प्रमाणित लाइव्ह iOS अॅप्स आणि 50 Apple स्थानिकांसाठी प्रकाशकांनी लिहिलेली शोध हेतू.
+43 प्रमाणित लाइव्ह iOS अॅप्स आणि 50 Apple स्थानिकांसाठी प्रकाशकांनी लिहिलेली शोध हेतू.
 
 **स्थानिक:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · **mr-IN** · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -116,6 +116,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Mask My File** | Mask My File — शेअर करण्यापूर्वी माहिती लपवा \| iOS App | उपयुक्त संदर्भ न गमावता सुरक्षित शेअर करा. Mask My File तुम्ही फाइल पाठवण्यापूर्वी खासगी तपशील शोधतो, तुम्ही निवडलेला भाग कायमचा लपवतो, नंतर नवी फाइल | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/maskmyfile.html) | [App Store वरून Mask My File मिळवा](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_gh_mr_in&mt=8) |
 | **Mochi** | iPhone साठी सदस्यता नसलेले सर्वोत्तम सोपे टू-डू लिस्ट अॅप | जर बहुतेक टू-डू अॅप्स जड वाटत असतील, तर योग्य अॅप म्हणजे स्वच्छ चेकलिस्ट ज्यात आठवणी, पुनरावृत्ती नियम आणि Watch कॉम्प्लिकेशन आहे — आणि जाणूनबुजून प्रोजेक्ट व्यवस्थापन नाही — Mochi यासाठी तयार केलेले आहे. | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [App Store वरून Mochi मिळवा →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_gh_mr_in&mt=8) |
 | **Mochi DoneStamp: शेवटची वेळ** | Mochi DoneStamp: शेवटची वेळ — कधी केले ते लक्षात ठेवा \| iOS App | तुम्ही शेवटची चादर कधी बदलली, झाडाला पाणी कधी दिले, कुटुंबाला फोन, फोटो बॅकअप किंवा फिल्टर कधी बदलला? | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/mochidonestamp.html) | [App Store वरून Mochi DoneStamp: शेवटची वेळ मिळवा](https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=iag_gh_mr_in&mt=8) |
+| **MoneyTag: उत्पन्न आणि खर्च** | MoneyTag: उत्पन्न आणि खर्च — प्रकल्प · टॅग · अहवाल \| iOS App | उत्पन्न आणि खर्च प्रत्येक प्रोजेक्टचा हिशेब स्वतंत्र राहतो: उत्पन्नातून खर्च वजा केला की त्याची निव्वळ रक्कम मिळते. सर्वाधिक विचारले जाणारे प्रश्न इथे आहेत. तुमचा प्रश्न सापडला नाही तर लिहा — प्रत्येक संदेश खरी व्यक्ती वाचते. | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/moneytag.html) | [App Store वरून MoneyTag: उत्पन्न आणि खर्च मिळवा](https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=iag_gh_mr_in&mt=8) |
 | **OnePage PPT: स्लाइड मेकर** | OnePage PPT: स्लाइड मेकर — नोट्सचे नेटके सादरीकरण \| iOS App | मजकुराच्या ढिगाऱ्याचे रूपांतर अशा एका स्लाइडमध्ये करा, जी लोक खरोखर वाचतील. | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/onepageppt.html) | [App Store वरून OnePage PPT: स्लाइड मेकर मिळवा](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_gh_mr_in&mt=8) |
 | **PhotoCream** | iPhone वर प्रवास निर्मात्यांसाठी एकदाच पैसे देऊन मिळणारा सर्वोत्तम फिल्म फोटो संपादक | प्रवास निर्मात्यांना असा फिल्म लुक हवा असतो जो प्रत्येक गंतव्यस्थान एकसारखा न करता ग्रेन, हॅलेशन आणि रंगाचा विशेषपणा जोडतो — PhotoCream यासाठी तयार केले आहे. | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [PhotoCream App Store वर मिळवा →](https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=iag_gh_mr_in&mt=8) |
 | **PicClear** | iPhone साठवणूक मोकळी करण्यासाठी डुप्लिकेट फोटो हटवणारे सर्वोत्तम अॅप | जागा पटकन मोकळी करण्यासाठी, सर्वात मोठ्या फायद्यांवर लक्ष केंद्रित करा: अचूक डुप्लिकेट फोटो, जवळजवळ सारखे बर्स्ट शॉट्स, धूसर फोटो आणि मोठे व्हिडिओ — PicClear तुमच्या iPhone वर हे करण्यास मदत करते. | सुरुवात करण्यासाठी मोफत · एकदाच खरेदी करून अनलॉक | [मार्गदर्शक](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App Store वरून PicClear मिळवा →](https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=iag_gh_mr_in&mt=8) |
@@ -134,7 +135,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## पूर्ण डेटासेट डाउनलोड करा
 
-JSON, JSONL आणि CSV मध्ये समान 2,100 नोंदी आहेत.
+JSON, JSONL आणि CSV मध्ये समान 2,150 नोंदी आहेत.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -142,6 +143,6 @@ JSON, JSONL आणि CSV मध्ये समान 2,100 नोंदी आ
 
 [मुख्यपृष्ठ](https://alice51849.github.io/ios-app-guide/mr-IN/index.html) · [मुक्त डेटा](https://alice51849.github.io/ios-app-guide/mr-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [परवाना](https://creativecommons.org/licenses/by/4.0/)
 
-अपडेट केलेले: 2026-08-19
+अपडेट केलेले: 2026-08-20
 
 CC BY 4.0 मूळ निर्देशिका संकलनावर लागू होते; अॅप नावे आणि App Store चिन्हे त्यांच्या मालकांची आहेत.

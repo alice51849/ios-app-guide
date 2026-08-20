@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "fi",
-  "dateModified": "2026-08-19",
-  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
-  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
+  "dateModified": "2026-08-20",
+  "content_digest": "08cf1f31e6bc352f5475e375af6e995cbd78b8edfadde161d4cfd16cff4becd3",
+  "generation_digest": "fad6ea45224faa2da20fd98029fa695291d7a154a99e6731d1c67c0f18c1d1ce",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 42,
+  "record_count": 43,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/fi.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/fi.rss.xml",
@@ -1431,6 +1431,76 @@
       "publisher_disclosure": "Lumi Studion julkaisijan laatima opas, sovelluksen kehittäjältä. Sovellusten nimet ovat niiden omistajien tavaramerkkejä ja niitä käytetään vain tunnistamiseen. Tarkista viralliset vaatimukset asiakirjojen, terveyden, koulun ja tuottavuuden päätöksissä tarpeen mukaan.",
       "source_persona_query": "best simple to do list app iphone no subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "fi:moneytag",
+      "locale": "fi",
+      "app_key": "moneytag",
+      "app_name": "MoneyTag: Tulot ja menot",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "MoneyTag: Tulot ja menot — Projektit · Tunnisteet | iOS App",
+      "decision_context": "Tulot ja menot Jokainen projekti pitää omaa kirjanpitoaan: tulot miinus menot on sen nettotulos. Tässä ovat useimmin kysytyt kysymykset. Jos omaasi ei löydy, laita viestiä — jokaisen viestin lukee oikea ihminen. • Jokaisella projektilla oma nettotulos • Tunnisteet laskevat yhteen projektien yli • Yksi valuutta per projekti • Live- tai manuaaliset kurssit • Apple Watch -sovellus • Widgetit Koti- ja lukitusnäytöllä Mikä projekti oikeastaan on? Projekti on oma itsenäinen kirjanpitonsa: omat tapahtumat, oma valuutta ja oma tulos. MoneyTag laskee tulot yhteen, vähentää menot ja näyttää nettotuloksen vain siltä projektilta. Muuntaako MoneyTag valuuttoja? Jokaisella projektilla on oma perusvaluuttansa. Aloitusnäytössä voit valita syöttövaluutan suoraan. MoneyTag päivittää julkiset valuuttakurssit noin 6 tunnin välein; voit myös asettaa kurssin käsin ja palauttaa myöhemmin automaattisen tilan. Muunnettu summa tallennetaan projektin perusvaluutassa, ja tallennetut kurssit ovat käytettävissä myös offline-tilassa. Viitekurssit tarjoaa Frankfurter tai ExchangeRate-API, ja ne ovat vain tiedoksi. Miten tunnisteet toimivat? Tunnisteet ovat MoneyTagin ydintä, eivät jälkikäteen lisätty pikkuominaisuus. Merkitse mikä tahansa tulo tai meno tunnisteella, niin Tunnisteet-näkymä laskee saman tunnisteen yhteen kaikista projekteistasi kerralla: tulot, menot ja tunnisteen netto. Projektien välinen tunnisteanalyysi kuuluu Lifetime Prohon. Mikä on ilmaista ja mitä Lifetime Pro tuo lisää? Ilmainen · 1 projekti · 5 merkintää jäljellä. Rajattomasti projekteja, tunnisteita ja raportteja — kertaosto, ikuisesti. Vie CSV · Vie PDF · Vie kuvana · Varmuuskopio & palautus. Mitä Apple Watch -sovellus ja widgetit näyttävät? Watch-sovelluksella kirjaat tapahtuman ranteesta ja näet nykyisen projektin tulot, menot ja neton. Widgetit näyttävät saman tilanteen Koti- ja lukitusnäytöllä. Projektit, tapahtumat, summat, muistiinpanot, tunnisteet, luokat ja asetukset pysyvät MoneyTagin laitetallennuksessa eikä niitä lähetetä Frankfurter / ExchangeRate-APIille. Miten vien kirjanpitoni tai siirrän sen toiselle laitteelle? Vie CSV · Vie PDF · Vie kuvana · Varmuuskopio & palautus. Sisältää projektit, merkinnät, tunnisteet ja asetukset. Projektit, tapahtumat, summat, muistiinpanot, tunnisteet, luokat ja asetukset pysyvät MoneyTagin laitetallennuksessa eikä niitä lähetetä Frankfurter / ExchangeRate-APIille. Kun automaattiset kurssit ovat käytössä, MoneyTag lähettää kolmikirjaimisen perusvaluuttakoodin ja tarvittavan verkkopyynnön osoitteeseen api.frankfurter.dev / open.er-api.com. Frankfurter / ExchangeRate-APIin Cloudflare-infrastruktuuri voi käsitellä IP-osoitetta, likimääräistä aluetta, vuorovaikutustietoja ja diagnostiikkaa. Käsittely palvelee Appin toimintoja ja analytiikkaa, voidaan yhdistää sinuun, sitä ei käytetä seurantaan eikä siihen liity mainontaa. Poista automaattiset kurssit käytöstä ja käytä manuaalista kurssia välttääksesi nämä pyynnöt. Viitekurssit tarjoaa Frankfurter tai ExchangeRate-API, ja ne ovat vain tiedoksi.",
+      "category": "finance",
+      "category_label": "Raha & matkailu",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Ilmainen aloitus · elinikäinen avaus",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Ei tiliä",
+        "Ei mainoksia",
+        "Ei seurantaa",
+        "Yksityinen / laitteella"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Raha & matkailu",
+        "Ilmainen aloitus · elinikäinen avaus",
+        "Offline",
+        "Ei tiliä",
+        "Ei mainoksia",
+        "Ei seurantaa",
+        "Yksityinen / laitteella",
+        "Widget",
+        "Apple Watch",
+        "App Store · Ilmainen"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/moneytag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/fi/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/fi/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Ffi%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fi.json",
+      "app_store_id": "6801956402",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "app_store_url": "https://apps.apple.com/fi/app/id6801956402?pt=118326163&ct=iag_data_fi&mt=8",
+      "app_store_cta_label": "Lataa MoneyTag: Tulot ja menot App Storesta",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen"
+      },
+      "guide_cta_label": "Lue koko opas",
+      "publisher_disclosure": "Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.",
+      "source_persona_query": "best income and expense tracker for freelance projects no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

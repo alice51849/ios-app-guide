@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-19",
-  "content_digest": "048004401ed2fc269d9fbbfca9e238f8ad3dc2227c63d0d37d41abaa6a545208",
+  "date_modified": "2026-08-20",
+  "content_digest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
   "locale": "ar-SA",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 42,
+  "record_count": 43,
   "apps": [
     {
       "key": "notesstudio100",
@@ -1451,6 +1451,43 @@
         "currency": "SAR",
         "formatted_price": "مجاني",
         "storefront_url": "https://apps.apple.com/sa/app/id6790800323"
+      }
+    },
+    {
+      "key": "moneytag",
+      "app_store_id": "6801956402",
+      "name": "MoneyTag: الدخل والمصروفات",
+      "summary": "لكل مشروع دفتره الخاص: الدخل ناقص المصروفات هو صافي نتيجته. هذه أكثر الأسئلة تكراراً، وإن لم تجد سؤالك بينها فراسلنا — يقرأ كل رسالة شخص حقيقي.",
+      "category": "finance",
+      "search_terms": [
+        "تتبع المصاريف",
+        "مالية",
+        "محول العملات",
+        "سعر الصرف",
+        "إدارة المال",
+        "الاتجاه الشهري",
+        "نسخ احتياطي واستعادة",
+        "تصدير PDF"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/sa/app/id6801956402?pt=118326163&ct=iag_api_ar_sa&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/moneytag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SAR",
+        "formatted_price": "مجاني",
+        "storefront_url": "https://apps.apple.com/sa/app/id6801956402"
       }
     },
     {

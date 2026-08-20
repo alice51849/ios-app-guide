@@ -2,7 +2,7 @@
 title: "விளம்பரமில்லாத சிறந்த கல்வி விளையாட்டு பயன்பாடு iPhone-க்கு"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/ta-IN/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

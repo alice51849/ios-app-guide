@@ -2,7 +2,7 @@
 title: "лучшее приложение для фото на паспорт для малышей и детей дома"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/ru/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

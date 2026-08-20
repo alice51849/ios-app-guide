@@ -1,8 +1,8 @@
 {
-  "generated_on": "2026-08-19",
+  "generated_on": "2026-08-20",
   "metric": "owned outreach asset coverage (not AI recommendation share-of-voice)",
-  "public_apps": 42,
-  "average_public_coverage": 0.96,
+  "public_apps": 43,
+  "average_public_coverage": 0.951,
   "rows": [
     {
       "key": "snapport",
@@ -81,8 +81,8 @@
       "public": true,
       "appstore": "https://apps.apple.com/app/id6780223070",
       "coverage_score": 1.0,
-      "answers": 60,
-      "planned_answers": 60,
+      "answers": 59,
+      "planned_answers": 59,
       "social_posts": 5,
       "social_languages": [
         "ar",
@@ -418,9 +418,9 @@
       "name": "Lumi Bopomofo",
       "public": true,
       "appstore": "https://apps.apple.com/app/id6773017109",
-      "coverage_score": 0.992,
-      "answers": 83,
-      "planned_answers": 85,
+      "coverage_score": 1.0,
+      "answers": 78,
+      "planned_answers": 78,
       "social_posts": 37,
       "social_languages": [
         "de",
@@ -441,9 +441,9 @@
       "name": "Lumi Bopomofo Pro",
       "public": true,
       "appstore": "https://apps.apple.com/app/id6775773117",
-      "coverage_score": 0.993,
-      "answers": 92,
-      "planned_answers": 94,
+      "coverage_score": 1.0,
+      "answers": 86,
+      "planned_answers": 86,
       "social_posts": 4,
       "social_languages": [
         "en",
@@ -935,6 +935,25 @@
       "name": "WiFi Aid Lite",
       "public": true,
       "appstore": "https://apps.apple.com/app/id6793414462",
+      "coverage_score": 0.581,
+      "answers": 8,
+      "planned_answers": 17,
+      "social_posts": 1,
+      "social_languages": [
+        "zh-Hant"
+      ],
+      "alternatives": 0,
+      "detail": true,
+      "hub": true,
+      "guide": true,
+      "story": true,
+      "catalog": true
+    },
+    {
+      "key": "moneytag",
+      "name": "MoneyTag: Income & Expense",
+      "public": true,
+      "appstore": "https://apps.apple.com/app/id6801956402",
       "coverage_score": 0.581,
       "answers": 8,
       "planned_answers": 17,

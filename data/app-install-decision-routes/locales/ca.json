@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ca",
-  "dateModified": "2026-08-19",
-  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
-  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
+  "dateModified": "2026-08-20",
+  "content_digest": "08cf1f31e6bc352f5475e375af6e995cbd78b8edfadde161d4cfd16cff4becd3",
+  "generation_digest": "fad6ea45224faa2da20fd98029fa695291d7a154a99e6731d1c67c0f18c1d1ce",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 42,
+  "record_count": 43,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ca.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ca.rss.xml",
@@ -1431,6 +1431,76 @@
       "publisher_disclosure": "Guia creada per l'editor de Lumi Studio, el desenvolupador de l'aplicació. Els noms de les aplicacions són marques comercials dels seus propietaris i s'utilitzen només per a la identificació. Per a documents, salut, escola i decisions de productivitat, verifiqueu els requisits oficials quan sigui pertinent.",
       "source_persona_query": "best simple to do list app iphone no subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ca:moneytag",
+      "locale": "ca",
+      "app_key": "moneytag",
+      "app_name": "MoneyTag: Ingressos i despeses",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "MoneyTag: Ingressos i despeses — Projectes · Etiquetes | iOS App",
+      "decision_context": "Ingressos i despeses Cada projecte porta els seus propis comptes: els ingressos menys les despeses donen el seu resultat net. Aquestes són les preguntes més habituals. Si no hi trobes la teva, escriu-nos: cada missatge el llegeix una persona de debò. • Cada projecte amb el seu resultat net • Etiquetes que sumen entre projectes • Una sola moneda per projecte • Tipus en viu o manuals • App per a l’Apple Watch • Widgets a la pantalla d’inici i la de bloqueig Què és exactament un projecte? Un projecte és un llibre de comptes tancat en si mateix: moviments propis, moneda pròpia i resultat propi. El MoneyTag suma els ingressos, resta les despeses i mostra el resultat net només d’aquell projecte. El MoneyTag converteix monedes? Cada projecte té la seva pròpia moneda base. A la pantalla d’inici pots triar directament la moneda d’entrada. MoneyTag actualitza els tipus de canvi públics aproximadament cada 6 hores; també pots definir un tipus manual i després tornar al mode automàtic. L’import convertit es desa en la moneda base del projecte i els tipus desats continuen disponibles sense connexió. Els tipus de referència els proporcionen Frankfurter o ExchangeRate-API; només amb finalitat informativa. Com funcionen les etiquetes? Les etiquetes són una peça central del MoneyTag, no un afegit. Etiqueta qualsevol ingrés o despesa i la pantalla Etiquetes suma aquesta mateixa etiqueta a tots els teus projectes alhora: ingressos, despeses i el net de l’etiqueta. L’anàlisi d’etiquetes entre projectes forma part del Lifetime Pro. Què és gratuït i què aporta el Lifetime Pro? Gratuït · 1 projecte · queden 5 apunts. Projectes, etiquetes i informes il·limitats: una sola compra, per sempre. Exporta CSV · Exporta PDF · Exporta imatge · Còpia de seguretat i restauració. Què mostren l’app de l’Apple Watch i els widgets? L’app del Watch et permet afegir un moviment des del canell i veure els ingressos, les despeses i el net del projecte actual. Els widgets mostren aquest mateix estat a la pantalla d’inici i a la de bloqueig. Projectes, operacions, imports, notes, etiquetes, categories i ajustos romanen a l’emmagatzematge local de MoneyTag i no s’envien a Frankfurter / ExchangeRate-API. Com exporto els meus comptes o els passo a un altre dispositiu? Exporta CSV · Exporta PDF · Exporta imatge · Còpia de seguretat i restauració. Inclou projectes, apunts, etiquetes i ajustos. Projectes, operacions, imports, notes, etiquetes, categories i ajustos romanen a l’emmagatzematge local de MoneyTag i no s’envien a Frankfurter / ExchangeRate-API. Quan els tipus automàtics estan activats, MoneyTag envia el codi de tres lletres de la moneda base i la sol·licitud de xarxa necessària a api.frankfurter.dev / open.er-api.com. La infraestructura Cloudflare de Frankfurter / ExchangeRate-API pot tractar l’adreça IP, la regió aproximada, les dades d’interacció i els diagnòstics. Aquest tractament serveix per a la funcionalitat i l’anàlisi de l’App, pot estar vinculat amb tu, no s’utilitza per al seguiment i no inclou publicitat. Desactiva els tipus automàtics i fes servir un tipus manual per evitar aquestes sol·licituds. Els tipus de referència els proporcionen Frankfurter o ExchangeRate-API; només amb finalitat informativa.",
+      "category": "finance",
+      "category_label": "Diners i viatges",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Inici gratuït · desbloqueig de per vida",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Fora de línia",
+        "Sense compte",
+        "Sense anuncis",
+        "Sense seguiment",
+        "Privat / en el dispositiu"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Diners i viatges",
+        "Inici gratuït · desbloqueig de per vida",
+        "Fora de línia",
+        "Sense compte",
+        "Sense anuncis",
+        "Sense seguiment",
+        "Privat / en el dispositiu",
+        "Widget",
+        "Apple Watch",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/moneytag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ca/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ca/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fca%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ca.json",
+      "app_store_id": "6801956402",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "app_store_url": "https://apps.apple.com/es/app/id6801956402?pt=118326163&ct=iag_data_ca&mt=8",
+      "app_store_cta_label": "Descarrega MoneyTag: Ingressos i despeses a l’App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Llegeix la guia completa",
+      "publisher_disclosure": "Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.",
+      "source_persona_query": "best income and expense tracker for freelance projects no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

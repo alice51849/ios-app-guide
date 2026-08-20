@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "pt-PT",
-  "dateModified": "2026-08-19",
-  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
-  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
+  "dateModified": "2026-08-20",
+  "content_digest": "08cf1f31e6bc352f5475e375af6e995cbd78b8edfadde161d4cfd16cff4becd3",
+  "generation_digest": "fad6ea45224faa2da20fd98029fa695291d7a154a99e6731d1c67c0f18c1d1ce",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 42,
+  "record_count": 43,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/pt-PT.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/pt-PT.rss.xml",
@@ -1431,6 +1431,76 @@
       "publisher_disclosure": "Guia elaborado pelo editor Lumi Studio, o desenvolvedor da aplicação. Os nomes das aplicações são marcas registadas dos seus proprietários e são usados apenas para identificação. Para documentos, saúde, escola e decisões de produtividade, verifique os requisitos oficiais quando aplicável.",
       "source_persona_query": "best simple to do list app iphone no subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "pt-PT:moneytag",
+      "locale": "pt-PT",
+      "app_key": "moneytag",
+      "app_name": "MoneyTag: Receitas e despesas",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "MoneyTag: Receitas e despesas — Projetos · Etiquetas | iOS App",
+      "decision_context": "Receitas e despesas Cada projeto tem as suas próprias contas: receitas menos despesas dão o respetivo resultado líquido. Estas são as perguntas mais frequentes. Se a sua não estiver aqui, escreva-nos — cada mensagem é lida por uma pessoa. • Cada projeto com o seu resultado líquido • Etiquetas que somam entre projetos • Uma moeda por projeto • Taxas ao vivo ou manuais • Aplicação para Apple Watch • Widgets no ecrã principal e no ecrã bloqueado O que é exatamente um projeto? Um projeto é um livro de contas fechado sobre si mesmo: movimentos próprios, moeda própria e resultado próprio. O MoneyTag soma as receitas, subtrai as despesas e mostra o resultado líquido apenas desse projeto. O MoneyTag converte moedas? Cada projeto tem a sua própria moeda base. No ecrã principal, pode escolher diretamente a moeda de entrada. O MoneyTag atualiza taxas de câmbio públicas aproximadamente de 6 em 6 horas; também pode definir uma taxa manual e depois repor o modo automático. O montante convertido é guardado na moeda base do projeto, e as taxas guardadas continuam disponíveis offline. As taxas de referência são fornecidas pelo Frankfurter ou ExchangeRate-API; apenas para fins informativos. Como funcionam as etiquetas? As etiquetas são uma peça central do MoneyTag e não um extra. Etiquete qualquer receita ou despesa e o ecrã Etiquetas soma essa mesma etiqueta em todos os seus projetos de uma só vez: receitas, despesas e o líquido da etiqueta. A análise de etiquetas entre projetos faz parte do Lifetime Pro. O que é gratuito e o que acrescenta o Lifetime Pro? Grátis · 1 projeto · restam 5 lançamentos. Projetos, etiquetas e relatórios ilimitados — uma compra, para sempre. Exportar CSV · Exportar PDF · Exportar imagem · Backup e restauração. O que mostram a aplicação para Apple Watch e os widgets? A aplicação para Watch permite lançar um movimento a partir do pulso e ver as receitas, as despesas e o líquido do projeto atual. Os widgets mostram esse mesmo estado no ecrã principal e no ecrã bloqueado. Projetos, transações, montantes, notas, etiquetas, categorias e definições ficam no armazenamento local do MoneyTag e não são enviados ao Frankfurter / ExchangeRate-API. Como exporto as minhas contas ou passo-as para outro dispositivo? Exportar CSV · Exportar PDF · Exportar imagem · Backup e restauração. Inclui projetos, lançamentos, etiquetas e ajustes. Projetos, transações, montantes, notas, etiquetas, categorias e definições ficam no armazenamento local do MoneyTag e não são enviados ao Frankfurter / ExchangeRate-API. Com as taxas automáticas ativas, o MoneyTag envia o código de três letras da moeda base e o pedido de rede necessário para api.frankfurter.dev / open.er-api.com. A infraestrutura Cloudflare do Frankfurter / ExchangeRate-API pode processar o endereço IP, a região aproximada, dados de interação e diagnósticos. Este processamento serve a funcionalidade e a análise da App, pode estar associado a si, não é usado para seguimento e não envolve publicidade. Desative as taxas automáticas e use uma taxa manual para evitar estes pedidos. As taxas de referência são fornecidas pelo Frankfurter ou ExchangeRate-API; apenas para fins informativos.",
+      "category": "finance",
+      "category_label": "Dinheiro e viagens",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Sem conta",
+        "Sem anúncios",
+        "Sem rastreamento",
+        "Privado / no dispositivo"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Dinheiro e viagens",
+        "Grátis para começar · desbloqueio permanente",
+        "Offline",
+        "Sem conta",
+        "Sem anúncios",
+        "Sem rastreamento",
+        "Privado / no dispositivo",
+        "Widget",
+        "Apple Watch",
+        "App Store · Grátis"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/moneytag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/pt-PT/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/pt-PT/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fpt-PT%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-PT.json",
+      "app_store_id": "6801956402",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "app_store_url": "https://apps.apple.com/pt/app/id6801956402?pt=118326163&ct=iag_data_pt_pt&mt=8",
+      "app_store_cta_label": "Baixe MoneyTag: Receitas e despesas na App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Grátis"
+      },
+      "guide_cta_label": "Leia o guia completo",
+      "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, que desenvolve todas as apps apresentadas.",
+      "source_persona_query": "best income and expense tracker for freelance projects no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

@@ -2,7 +2,7 @@
 title: "millor app senzilla per planificar un viatge a l'iPhone"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/ca/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

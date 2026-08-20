@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ta-IN",
-  "dateModified": "2026-08-19",
-  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
-  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
+  "dateModified": "2026-08-20",
+  "content_digest": "08cf1f31e6bc352f5475e375af6e995cbd78b8edfadde161d4cfd16cff4becd3",
+  "generation_digest": "fad6ea45224faa2da20fd98029fa695291d7a154a99e6731d1c67c0f18c1d1ce",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 42,
+  "record_count": 43,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ta-IN.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ta-IN.rss.xml",
@@ -1431,6 +1431,76 @@
       "publisher_disclosure": "லூமி ஸ்டுடியோவின் வெளியீட்டாளர் எழுதிய வழிகாட்டி, இது செயலி உருவாக்குநர். செயலி பெயர்கள் அவற்றின் உரிமையாளர்களின் வர்த்தக அடையாளங்கள் ஆகும் மற்றும் அடையாளப்படுத்துவதற்காக மட்டுமே பயன்படுத்தப்படுகின்றன. ஆவணங்கள், சுகாதாரம், பள்ளி மற்றும் உற்பத்தித்திறன் தொடர்பான முடிவுகளுக்கு, தொடர்புடைய அதிகாரப்பூர்வ தேவைகளை சரிபார்க்கவும்.",
       "source_persona_query": "best simple to do list app iphone no subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ta-IN:moneytag",
+      "locale": "ta-IN",
+      "app_key": "moneytag",
+      "app_name": "MoneyTag: வரவு & செலவு",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "MoneyTag: வரவு & செலவு — திட்டங்கள் · குறிச்சொற்கள் | iOS App",
+      "decision_context": "வரவு & செலவு ஒவ்வொரு திட்டமும் தனது சொந்தக் கணக்கை வைத்திருக்கிறது: வரவில் இருந்து செலவைக் கழித்தால் கிடைப்பதுதான் அதன் நிகரத் தொகை. அதிகம் கேட்கப்படும் கேள்விகள் இங்கே. உங்கள் கேள்விக்கு விடை இல்லையெனில் எழுதுங்கள் — ஒவ்வொரு செய்தியையும் ஒரு நிஜ மனிதர் படிக்கிறார். • ஒவ்வொரு திட்டத்துக்கும் தனி நிகரத் தொகை • எல்லா திட்டங்களிலும் குறிச்சொல் கூட்டுத்தொகை • ஒரு திட்டத்திற்கு ஒரே நாணயம் • உயிருடன் அல்லது கையேடு விகிதங்கள் • Apple Watch ஆப் • முகப்பு மற்றும் பூட்டுத் திரை விட்ஜெட்டுகள் திட்டம் என்பது சரியாக என்ன? திட்டம் என்பது தன்னளவிலேயே முழுமையான ஒரு கணக்குப் புத்தகம்: சொந்தப் பரிவர்த்தனைகள், சொந்த நாணயம், சொந்த இறுதி முடிவு. MoneyTag அந்தத் திட்டத்தின் வரவைக் கூட்டி, செலவைக் கழித்து, அதன் மட்டுமே நிகரத் தொகையைக் காட்டுகிறது. MoneyTag நாணயங்களை மாற்றித் தருமா? ஒவ்வொரு திட்டத்திற்கும் தனித்த அடிப்படை நாணயம் உள்ளது. முகப்புத் திரையில் உள்ளீட்டு நாணயத்தை நேரடியாகத் தேர்ந்தெடுக்கலாம். MoneyTag பொது மாற்று விகிதங்களை சுமார் ஒவ்வொரு 6 மணி நேரத்திற்கும் புதுப்பிக்கும்; கைமுறை விகிதத்தை அமைத்து பின்னர் மீண்டும் தானியக்கத்திற்கு மாற்றவும் முடியும். மாற்றிய தொகை திட்டத்தின் அடிப்படை நாணயத்தில் சேமிக்கப்படும்; சேமித்த விகிதங்கள் ஆஃப்லைனிலும் கிடைக்கும். குறிப்பு விகிதங்களை Frankfurter அல்லது ExchangeRate-API வழங்குகிறது; தகவலுக்காக மட்டும். குறிச்சொற்கள் எப்படி வேலை செய்கின்றன? MoneyTag-இல் குறிச்சொற்கள் முதன்மையான வசதி; பின்னால் சேர்க்கப்பட்ட ஒன்றல்ல. எந்த வரவுக்கும் செலவுக்கும் குறிச்சொல் இடுங்கள்; குறிச்சொல் திரை அதே குறிச்சொல்லை உங்கள் அனைத்துத் திட்டங்களிலும் ஒரே நேரத்தில் கூட்டிக் காட்டும் — வரவு, செலவு, அந்தக் குறிச்சொல்லின் நிகரத் தொகை. திட்டங்களைக் கடந்த குறிச்சொல் பகுப்பாய்வு Lifetime Pro-வின் பகுதி. இலவசமாக என்ன கிடைக்கும், Lifetime Pro என்ன சேர்க்கிறது? இலவசம் · 1 திட்டம் · 5 பதிவுகள் மீதம். வரம்பற்ற திட்டம், குறிச்சொல், அறிக்கை — ஒரே வாங்கல், நிரந்தரம். ஏற்றுமதி CSV · ஏற்றுமதி PDF · படத்தை ஏற்றுமதி செய் · பின்வாங்கவும் & மீட்டெடுக்கவும். Apple Watch ஆப்பும் விட்ஜெட்டுகளும் என்ன காட்டுகின்றன? கடிகார ஆப் மணிக்கட்டிலிருந்தே ஒரு பரிவர்த்தனையைச் சேர்க்க அனுமதிக்கிறது, தற்போதைய திட்டத்தின் வரவு, செலவு, நிகரத் தொகையையும் காட்டுகிறது. விட்ஜெட்டுகள் அதே நிலையை முகப்புத் திரையிலும் பூட்டுத் திரையிலும் காட்டுகின்றன. திட்டங்கள், பரிவர்த்தனைகள், தொகைகள், குறிப்புகள், குறிச்சொற்கள், வகைகள் மற்றும் அமைப்புகள் MoneyTag-ன் சாதனச் சேமிப்பில் இருக்கும்; Frankfurter / ExchangeRate-API-க்கு அனுப்பப்படாது. என் கணக்கை எப்படி எக்ஸ்போர்ட் செய்வது அல்லது வேறு சாதனத்துக்கு நகர்த்துவது? ஏற்றுமதி CSV · ஏற்றுமதி PDF · படத்தை ஏற்றுமதி செய் · பின்வாங்கவும் & மீட்டெடுக்கவும். திட்டங்கள், பதிவுகள், குறிச்சொற்கள், அமைப்புகள் அடங்கும். திட்டங்கள், பரிவர்த்தனைகள், தொகைகள், குறிப்புகள், குறிச்சொற்கள், வகைகள் மற்றும் அமைப்புகள் MoneyTag-ன் சாதனச் சேமிப்பில் இருக்கும்; Frankfurter / ExchangeRate-API-க்கு அனுப்பப்படாது. தானியங்கி விகிதங்கள் இயக்கப்பட்டால் MoneyTag மூன்றெழுத்து அடிப்படை நாணயக் குறியீட்டையும் தேவையான பிணையக் கோரிக்கையையும் api.frankfurter.dev / open.er-api.com-க்கு அனுப்பும். Frankfurter / ExchangeRate-API பயன்படுத்தும் Cloudflare கட்டமைப்பு IP முகவரி, தோராயமான பகுதி, தொடர்புத் தரவு மற்றும் கண்டறிதல் தகவலை செயலாக்கலாம். இந்தச் செயலாக்கம் App செயல்பாடு மற்றும் பகுப்பாய்வுக்காக மட்டுமே; உங்களுடன் இணைக்கப்படலாம், கண்காணிப்புக்கு பயன்படுத்தப்படாது, விளம்பரமும் இல்லை. இந்தக் கோரிக்கைகளைத் தவிர்க்க தானியங்கி விகிதங்களை அணைத்து கையேடு விகிதத்தைப் பயன்படுத்துங்கள். குறிப்பு விகிதங்களை Frankfurter அல்லது ExchangeRate-API வழங்குகிறது; தகவலுக்காக மட்டும்.",
+      "category": "finance",
+      "category_label": "பணம் & பயணம்",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ஆஃப்லைன்",
+        "கணக்கு இல்லை",
+        "விளம்பரங்கள் இல்லை",
+        "பின்தொடர்வு இல்லை",
+        "தனியுரிமை / சாதனத்தில்"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "விட்ஜெட்",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "பணம் & பயணம்",
+        "இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்",
+        "ஆஃப்லைன்",
+        "கணக்கு இல்லை",
+        "விளம்பரங்கள் இல்லை",
+        "பின்தொடர்வு இல்லை",
+        "தனியுரிமை / சாதனத்தில்",
+        "விட்ஜெட்",
+        "Apple Watch",
+        "App Store · இலவசம்"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/moneytag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ta-IN/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ta-IN/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fta-IN%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ta-IN.json",
+      "app_store_id": "6801956402",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=iag_data_ta_in&mt=8",
+      "app_store_cta_label": "App Store-இல் MoneyTag: வரவு & செலவு-ஐப் பெறுங்கள்",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "இலவசம்"
+      },
+      "guide_cta_label": "முழு வழிகாட்டியை படிக்கவும்",
+      "publisher_disclosure": "இது Lumi Studio வெளியிட்ட முதல்-பார்ட்டி தரவு, இது பட்டியலிடப்பட்ட ஒவ்வொரு செயலியின் உருவாக்குநர்.",
+      "source_persona_query": "best income and expense tracker for freelance projects no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

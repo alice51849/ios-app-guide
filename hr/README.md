@@ -4,7 +4,7 @@
 
 Katalog iz prve ruke o tome za koga je svaka aplikacija namijenjena, koji zadatak žele izvršiti i izravnom putu do App Storea.
 
-Namjere pretraživanja koje je napisao izdavač za 42 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
+Namjere pretraživanja koje je napisao izdavač za 43 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
 
 **Lokalitet:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · **hr** · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -116,6 +116,7 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 | **Mask My File** | Mask My File — Sakrij podatke prije slanja \| iOS App | Dijelite bez brige i zadržite koristan kontekst. Mask My File pronalazi privatne podatke prije nego što pošaljete datoteku, trajno prekriva ono što | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/maskmyfile.html) | [Preuzmite Mask My File u App Storeu](https://apps.apple.com/hr/app/id6792850916?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **Mochi** | najbolja jednostavna aplikacija za popis zadataka na iPhoneu bez pretplate | Ako vam većina aplikacija za zadatke djeluje pretrpano, prava je čista lista zadataka s podsjetnicima, pravilima ponavljanja i komplikacijom za Apple Watch — i namjerno bez upravljanja projektima — Mochi je stvoren za to. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Preuzmite Mochi u App Storeu →](https://apps.apple.com/hr/app/id6785004775?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **Mochi DoneStamp: Zadnji put** | Mochi DoneStamp: Zadnji put — Pamti kada ste to učinili \| iOS App | Kada ste zadnji put promijenili posteljinu, zalili biljku, nazvali obitelj, sigurnosno kopirali fotografije ili zamijenili filtar? | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/mochidonestamp.html) | [Preuzmite Mochi DoneStamp: Zadnji put u App Storeu](https://apps.apple.com/hr/app/id6790800323?pt=118326163&ct=iag_gh_hr&mt=8) |
+| **MoneyTag: Prihodi i troškovi** | MoneyTag: Prihodi i troškovi — Projekti · Oznake · Izvještaj \| iOS App | Prihodi i troškovi Svaki projekt vodi svoje knjige: prihodi minus troškovi daju njegov neto rezultat. Ovdje su pitanja koja najčešće dobivamo. Ako vašeg nema, javite nam se — svaku poruku čita stvarna osoba. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/moneytag.html) | [Preuzmite MoneyTag: Prihodi i troškovi u App Storeu](https://apps.apple.com/hr/app/id6801956402?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **OnePage PPT: AI slajd** | OnePage PPT: AI slajd — Bilješke u gotovu prezentaciju \| iOS App | Od zida teksta nastaje JEDAN slajd koji ljudi doista pročitaju. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/onepageppt.html) | [Preuzmite OnePage PPT: AI slajd u App Storeu](https://apps.apple.com/hr/app/id6798814385?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **PhotoCream** | najbolji jednokratno plaćeni filmski foto editor za travel kreatore na iPhoneu | Travel kreatorima treba ponovljiv filmski izgled koji dodaje zrnatost, halaciju i karakter boje bez da svaku destinaciju svede na isti filter — PhotoCream je napravljen za to. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Preuzmite PhotoCream na App Storeu →](https://apps.apple.com/hr/app/id6781808054?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **PicClear** | najbolja aplikacija za oslobađanje prostora na iPhoneu brisanjem duplikata fotografija | Za brzo oslobađanje prostora ciljajte na najveće dobitke prvo: točne duplikate fotografija, gotovo identične serije snimaka, mutne odbacene i velike videozapise — PicClear vam pomaže to učiniti na iPhoneu. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Preuzmite PicClear u App Storeu →](https://apps.apple.com/hr/app/id6780223070?pt=118326163&ct=iag_gh_hr&mt=8) |
@@ -134,7 +135,7 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 
 ## Preuzmite kompletan skup podataka
 
-JSON, JSONL i CSV sadrže istih 2.100 zapisa.
+JSON, JSONL i CSV sadrže istih 2.150 zapisa.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -142,6 +143,6 @@ JSON, JSONL i CSV sadrže istih 2.100 zapisa.
 
 [Početna](https://alice51849.github.io/ios-app-guide/hr/index.html) · [Otvoreni podaci](https://alice51849.github.io/ios-app-guide/hr/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Ažurirano: 2026-08-19
+Ažurirano: 2026-08-20
 
 CC BY 4.0 primjenjuje se na izvornu kompilaciju kataloga; nazivi aplikacija i oznake App Store pripadaju njihovim vlasnicima.

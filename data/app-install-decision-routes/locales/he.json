@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "he",
-  "dateModified": "2026-08-19",
-  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
-  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
+  "dateModified": "2026-08-20",
+  "content_digest": "08cf1f31e6bc352f5475e375af6e995cbd78b8edfadde161d4cfd16cff4becd3",
+  "generation_digest": "fad6ea45224faa2da20fd98029fa695291d7a154a99e6731d1c67c0f18c1d1ce",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 42,
+  "record_count": 43,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/he.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/he.rss.xml",
@@ -1431,6 +1431,76 @@
       "publisher_disclosure": "מדריך שפורסם על ידי Lumi Studio, מפתח האפליקציה. שמות האפליקציות הם סימני מסחר של בעליהן ומשמשים לזיהוי בלבד. עבור מסמכים, בריאות, לימודים והחלטות פרודוקטיביות, יש לוודא דרישות רשמיות במידת הצורך.",
       "source_persona_query": "best simple to do list app iphone no subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "he:moneytag",
+      "locale": "he",
+      "app_key": "moneytag",
+      "app_name": "MoneyTag: הכנסות והוצאות",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "MoneyTag: הכנסות והוצאות — פרויקטים · תגיות · דוח | iOS App",
+      "decision_context": "הכנסות והוצאות לכל פרויקט יש ספרים משלו: הכנסות פחות הוצאות הן התוצאה נטו שלו. אלה השאלות הנפוצות ביותר; אם לא מצאתם כאן תשובה, כתבו לנו — אדם אמיתי קורא כל הודעה. • לכל פרויקט תוצאה נטו משלו • תגיות שמסתכמות בין הפרויקטים • מטבע אחד לכל פרויקט • שערים חיים או ידניים • אפליקציה ל-Apple Watch • וידג'טים במסך הבית ובמסך הנעילה מה זה בעצם פרויקט? פרויקט הוא ספר חשבונות עצמאי: תנועות משלו, מטבע משלו ושורה תחתונה משלו. MoneyTag מסכם את ההכנסות, מחסיר את ההוצאות ומציג את התוצאה נטו של אותו פרויקט בלבד. האם MoneyTag ממיר בין מטבעות? לכל פרויקט מטבע בסיס משלו. במסך הבית אפשר לבחור ישירות את מטבע הקלט. MoneyTag מעדכן שערי חליפין ציבוריים בערך כל 6 שעות; אפשר גם לקבוע שער ידני ואחר כך לחזור לעדכון אוטומטי. הסכום לאחר ההמרה נשמר במטבע הבסיס של הפרויקט, והשערים השמורים זמינים גם במצב לא מקוון. שערי הייחוס מסופקים על ידי Frankfurter או ExchangeRate-API ומיועדים למידע בלבד. איך עובדות התגיות? תגיות הן חלק מרכזי ב-MoneyTag, לא תוספת מאוחרת. תייגו כל הכנסה או הוצאה, ומסך התגיות יסכם את אותה תגית בכל הפרויקטים שלכם בבת אחת — הכנסות, הוצאות והתוצאה נטו של התגית. ניתוח תגיות בין פרויקטים כלול ב-Lifetime Pro. מה חינם ומה מוסיף Lifetime Pro? חינם · 1 פרויקט · נותרו 5 רשומות. פרויקטים, תגיות ודוחות ללא הגבלה — רכישה אחת, לתמיד. ייצוא CSV · ייצוא PDF · ייצוא תמונה · גיבוי ושחזור. מה מציגים אפליקציית Apple Watch והווידג'טים? אפליקציית השעון מאפשרת להוסיף תנועה ישירות מהיד ולראות את ההכנסות, ההוצאות והתוצאה נטו של הפרויקט הנוכחי. הווידג'טים מציגים את אותו מצב במסך הבית ובמסך הנעילה. פרויקטים, עסקאות, סכומים, הערות, תגיות, קטגוריות והגדרות נשארים באחסון המקומי של MoneyTag ואינם נשלחים ל‑Frankfurter / ExchangeRate-API. איך אני מייצא את הספרים או מעביר אותם למכשיר אחר? ייצוא CSV · ייצוא PDF · ייצוא תמונה · גיבוי ושחזור. כולל פרויקטים, רשומות, תגיות והגדרות. פרויקטים, עסקאות, סכומים, הערות, תגיות, קטגוריות והגדרות נשארים באחסון המקומי של MoneyTag ואינם נשלחים ל‑Frankfurter / ExchangeRate-API. כאשר שערים אוטומטיים פעילים, MoneyTag שולח את קוד מטבע הבסיס בן שלוש האותיות ואת בקשת הרשת הנחוצה אל api.frankfurter.dev / open.er-api.com. תשתית Cloudflare של Frankfurter / ExchangeRate-API עשויה לעבד כתובת IP, אזור משוער, נתוני אינטראקציה ואבחון. העיבוד נועד לתפקוד ולניתוח של ה‑App, עשוי להיות מקושר אליך, אינו משמש למעקב ואינו כולל פרסום. כדי להימנע מהבקשות האלה, כבה שערים אוטומטיים והשתמש בשער ידני. שערי הייחוס מסופקים על ידי Frankfurter או ExchangeRate-API ומיועדים למידע בלבד.",
+      "category": "finance",
+      "category_label": "כסף ונסיעות",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "התחלה ללא תשלום · פתיחה לכל החיים",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "לא מקוון",
+        "ללא חשבון",
+        "ללא פרסומות",
+        "ללא מעקב",
+        "פרטי / במכשיר"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "וידג'ט",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "כסף ונסיעות",
+        "התחלה ללא תשלום · פתיחה לכל החיים",
+        "לא מקוון",
+        "ללא חשבון",
+        "ללא פרסומות",
+        "ללא מעקב",
+        "פרטי / במכשיר",
+        "וידג'ט",
+        "Apple Watch",
+        "App Store · בחינם"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/moneytag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/he/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/he/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fhe%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/he.json",
+      "app_store_id": "6801956402",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "app_store_url": "https://apps.apple.com/il/app/id6801956402?pt=118326163&ct=iag_data_he&mt=8",
+      "app_store_cta_label": "הורידו את MoneyTag: הכנסות והוצאות מה-App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "ILS",
+        "formatted_price": "בחינם"
+      },
+      "guide_cta_label": "קרא את המדריך המלא",
+      "publisher_disclosure": "זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.",
+      "source_persona_query": "best income and expense tracker for freelance projects no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

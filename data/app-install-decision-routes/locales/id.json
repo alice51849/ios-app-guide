@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "id",
-  "dateModified": "2026-08-19",
-  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
-  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
+  "dateModified": "2026-08-20",
+  "content_digest": "08cf1f31e6bc352f5475e375af6e995cbd78b8edfadde161d4cfd16cff4becd3",
+  "generation_digest": "fad6ea45224faa2da20fd98029fa695291d7a154a99e6731d1c67c0f18c1d1ce",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 42,
+  "record_count": 43,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/id.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/id.rss.xml",
@@ -1431,6 +1431,76 @@
       "publisher_disclosure": "Panduan yang dibuat oleh penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan hanya digunakan untuk identifikasi. Untuk dokumen, kesehatan, sekolah, dan keputusan produktivitas, verifikasi persyaratan resmi jika relevan.",
       "source_persona_query": "best simple to do list app iphone no subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "id:moneytag",
+      "locale": "id",
+      "app_key": "moneytag",
+      "app_name": "MoneyTag",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "MoneyTag — Proyek · Tag · Laporan | iOS App",
+      "decision_context": "Pemasukan & Pengeluaran Setiap proyek punya pembukuannya sendiri: pemasukan dikurangi pengeluaran adalah hasil bersihnya. Ini pertanyaan yang paling sering diajukan. Kalau jawabannya belum ada, kirim pesan — setiap pesan dibaca orang sungguhan. • Tiap proyek punya hasil bersih sendiri • Tag yang menjumlah lintas proyek • Satu mata uang per proyek • Kurs langsung atau manual • Aplikasi Apple Watch • Widget Layar Utama dan Layar Terkunci Apa sebenarnya sebuah proyek itu? Proyek adalah buku kas yang berdiri sendiri: transaksinya sendiri, mata uangnya sendiri, dan hasil akhirnya sendiri. MoneyTag menjumlahkan pemasukan, mengurangi pengeluaran, lalu menampilkan hasil bersih untuk proyek itu saja. Apakah MoneyTag mengonversi mata uang? Setiap proyek memiliki mata uang dasar sendiri. Di layar Utama, Anda dapat langsung memilih mata uang input. MoneyTag memperbarui kurs publik kira-kira setiap 6 jam; Anda juga dapat menetapkan kurs manual lalu kembali ke mode otomatis. Jumlah hasil konversi disimpan dalam mata uang dasar proyek, dan kurs yang tersimpan tetap dapat digunakan saat offline. Kurs referensi disediakan oleh Frankfurter atau ExchangeRate-API dan hanya untuk informasi. Bagaimana cara kerja tag? Tag adalah bagian utama MoneyTag, bukan tempelan belakangan. Beri tag pada pemasukan atau pengeluaran mana pun, lalu layar Tag akan menjumlahkan tag yang sama di seluruh proyek Anda sekaligus — pemasukan, pengeluaran, dan hasil bersih untuk tag tersebut. Analisis tag lintas proyek termasuk dalam Lifetime Pro. Apa yang gratis, dan apa tambahan Lifetime Pro? Gratis · 1 proyek · sisa 5 catatan. Proyek, tag, dan laporan tanpa batas — sekali beli, selamanya. Ekspor CSV · Ekspor PDF · Ekspor gambar · Cadangkan & pulihkan. Apa yang ditampilkan aplikasi Apple Watch dan widget? Aplikasi jam memungkinkan Anda mencatat transaksi langsung dari pergelangan tangan serta melihat pemasukan, pengeluaran, dan hasil bersih proyek yang sedang aktif. Widget menampilkan status yang sama di Layar Utama dan Layar Terkunci. Proyek, transaksi, jumlah, catatan, tag, kategori, dan pengaturan tetap di penyimpanan perangkat MoneyTag dan tidak dikirim ke Frankfurter / ExchangeRate-API. Bagaimana cara mengekspor pembukuan atau memindahkannya ke perangkat lain? Ekspor CSV · Ekspor PDF · Ekspor gambar · Cadangkan & pulihkan. Berisi proyek, catatan, tag, dan pengaturan. Proyek, transaksi, jumlah, catatan, tag, kategori, dan pengaturan tetap di penyimpanan perangkat MoneyTag dan tidak dikirim ke Frankfurter / ExchangeRate-API. Saat kurs otomatis aktif, MoneyTag mengirim kode tiga huruf mata uang dasar dan permintaan jaringan yang diperlukan ke api.frankfurter.dev / open.er-api.com. Infrastruktur Cloudflare Frankfurter / ExchangeRate-API dapat memproses alamat IP, perkiraan wilayah, data interaksi, dan diagnostik. Pemrosesan ini untuk fungsi dan analitik App, dapat ditautkan kepada Anda, tidak digunakan untuk pelacakan, dan tidak melibatkan iklan. Matikan kurs otomatis dan gunakan kurs manual untuk menghindari permintaan ini. Kurs referensi disediakan oleh Frankfurter atau ExchangeRate-API dan hanya untuk informasi.",
+      "category": "finance",
+      "category_label": "Uang & perjalanan",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis untuk mulai · buka kunci permanen",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Tanpa akun",
+        "Tanpa iklan",
+        "Tanpa pelacakan",
+        "Privat / di perangkat"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Uang & perjalanan",
+        "Gratis untuk mulai · buka kunci permanen",
+        "Offline",
+        "Tanpa akun",
+        "Tanpa iklan",
+        "Tanpa pelacakan",
+        "Privat / di perangkat",
+        "Widget",
+        "Apple Watch",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/moneytag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/id/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/id/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fid%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/id.json",
+      "app_store_id": "6801956402",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "app_store_url": "https://apps.apple.com/id/app/id6801956402?pt=118326163&ct=iag_data_id&mt=8",
+      "app_store_cta_label": "Dapatkan MoneyTag di App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "IDR",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Baca panduan lengkap",
+      "publisher_disclosure": "Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.",
+      "source_persona_query": "best income and expense tracker for freelance projects no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
-  <title>42件の認証済みライブアプリ</title>
+  <title>43件の認証済みライブアプリ</title>
   <subtitle>アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。</subtitle>
   <id>https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ja.atom.xml</id>
   <link rel="self" type="application/atom+xml" href="https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ja.atom.xml"/>
@@ -9,7 +9,7 @@
   <link rel="alternate" type="text/html" href="https://alice51849.github.io/ios-app-guide/ja/index.html"/>
   <link rel="alternate" type="application/rss+xml" href="https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ja.rss.xml"/>
   <link rel="alternate" type="application/feed+json" href="https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ja.feed.json"/>
-  <updated>2026-08-19T21:09:07Z</updated>
+  <updated>2026-08-20T18:45:07Z</updated>
   <author><name>Lumi Studio</name></author>
   <entry>
     <title>best on-device file redaction app for freelancers sharing client documents</title>
@@ -318,6 +318,17 @@
     <summary>多くのToDoアプリが重く感じるなら、リマインダー、繰り返しルール、Watchコンプリケーションを備えたクリーンなチェックリストで、意図的にプロジェクト管理機能を省いたMochiが最適です。</summary>
     <content type="html">&lt;p&gt;&lt;a href="https://apps.apple.com/jp/app/id6785004775?pt=118326163&amp;amp;ct=iag_data_ja&amp;amp;mt=8"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/mochi-share.jpg" alt="サブスクリプションなしのシンプルなToDoリストアプリiPhone版おすすめ" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;多くのToDoアプリが重く感じるなら、リマインダー、繰り返しルール、Watchコンプリケーションを備えたクリーンなチェックリストで、意図的にプロジェクト管理機能を省いたMochiが最適です。&lt;/p&gt;&lt;p&gt;App Store · 無料&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/jp/app/id6785004775?pt=118326163&amp;amp;ct=iag_data_ja&amp;amp;mt=8"&gt;App StoreでMochiを入手 →&lt;/a&gt;&lt;/p&gt;</content>
     <category term="productivity" label="生産性"/>
+  </entry>
+  <entry>
+    <title>MoneyTag: 収入と支出 — プロジェクト · タグ · レポート | iOS App</title>
+    <id>https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ja/index.html</id>
+    <link rel="alternate" type="text/html" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ja/index.html"/>
+    <link rel="enclosure" type="image/jpeg" href="https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg" length="55801" title="MoneyTag: 収入と支出 — プロジェクト · タグ · レポート | iOS App"/>
+    <link rel="related" type="text/html" href="https://apps.apple.com/jp/app/id6801956402?pt=118326163&amp;ct=iag_data_ja&amp;mt=8" title="App Store で MoneyTag: 収入と支出 を入手"/>
+    <updated>2026-08-20T18:45:07Z</updated>
+    <summary>収入と支出 プロジェクトごとに帳簿は独立しています。収入から支出を引いた金額が、そのプロジェクトの純額です。よくある質問をまとめました。解決しない場合はメールでご連絡ください。すべて開発者本人が読んでいます。 • プロジェクトごとの純額 • タグはプロジェクトをまたいで集計 • 1プロジェクトに1通貨 • 自動または手動レート • Apple Watch アプリ • ホーム画面・ロック画面ウィジェット 「プロジェクト」とは何ですか？ プロジェクトは独立した1冊の帳簿です。。取引も通貨も収支もそれぞれ別に管理されます。。MoneyTag はそのプロジェクトの収入を合計し、支出を差し引いて、そのプロジェクトだけの純額を表示します。 通貨は換算されますか？ 各プロジェクトにはそれぞれ基準通貨があります。ホーム画面で入力通貨を直接選択できます。MoneyTag は公開為替レートを約6時間ごとに更新し、手動レートに切り替えたり、後から自動に戻したりできます。換算後の金額はプロジェクトの基準通貨で保存され、保存済みレートはオフラインでも利用できます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。 タグはどう使いますか？ タグは MoneyTag の中心機能で、おまけではありません。収入にも支出にもタグを付けられ、タグ画面では同じタグの収入・支出・純額をすべてのプロジェクトを横断して一度に集計します。プロジェクト横断のタグ分析は買い切り版の機能です。 無料でどこまで使えますか？買い切り版で何が増えますか？ 無料版 · プロジェクト 1 件 · 残り 5 件. プロジェクト・タグ・レポートが無制限。買い切りでずっと使えます. CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. Apple Watch アプリとウィジェットには何が表示されますか？ Watch アプリでは手首から取引を追加でき、現在のプロジェクトの収入・支出・純額を確認できます。ウィジェットは同じ状況をホーム画面とロック画面に表示します。 プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 帳簿を書き出したり、別の端末に移すには？ CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. プロジェクト・取引・タグ・設定を含みます. プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 自動レートをオンにすると、MoneyTag は3文字の基準通貨コードと必要なネットワークリクエストを api.frankfurter.dev / open.er-api.com に送信します。 Frankfurter / ExchangeRate-API が利用する Cloudflare 基盤では、IP アドレス、おおよその地域、操作データ、診断情報が処理される場合があります。 この処理は App の機能提供と分析のために行われ、あなたに関連付けられる場合がありますが、トラッキングには使われず、広告もありません。 自動レートをオフにして手動レートを使えば、これらのリクエストを避けられます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。</summary>
+    <content type="html">&lt;p&gt;&lt;a href="https://apps.apple.com/jp/app/id6801956402?pt=118326163&amp;amp;ct=iag_data_ja&amp;amp;mt=8"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg" alt="MoneyTag: 収入と支出 — プロジェクト · タグ · レポート | iOS App" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;収入と支出 プロジェクトごとに帳簿は独立しています。収入から支出を引いた金額が、そのプロジェクトの純額です。よくある質問をまとめました。解決しない場合はメールでご連絡ください。すべて開発者本人が読んでいます。 • プロジェクトごとの純額 • タグはプロジェクトをまたいで集計 • 1プロジェクトに1通貨 • 自動または手動レート • Apple Watch アプリ • ホーム画面・ロック画面ウィジェット 「プロジェクト」とは何ですか？ プロジェクトは独立した1冊の帳簿です。。取引も通貨も収支もそれぞれ別に管理されます。。MoneyTag はそのプロジェクトの収入を合計し、支出を差し引いて、そのプロジェクトだけの純額を表示します。 通貨は換算されますか？ 各プロジェクトにはそれぞれ基準通貨があります。ホーム画面で入力通貨を直接選択できます。MoneyTag は公開為替レートを約6時間ごとに更新し、手動レートに切り替えたり、後から自動に戻したりできます。換算後の金額はプロジェクトの基準通貨で保存され、保存済みレートはオフラインでも利用できます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。 タグはどう使いますか？ タグは MoneyTag の中心機能で、おまけではありません。収入にも支出にもタグを付けられ、タグ画面では同じタグの収入・支出・純額をすべてのプロジェクトを横断して一度に集計します。プロジェクト横断のタグ分析は買い切り版の機能です。 無料でどこまで使えますか？買い切り版で何が増えますか？ 無料版 · プロジェクト 1 件 · 残り 5 件. プロジェクト・タグ・レポートが無制限。買い切りでずっと使えます. CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. Apple Watch アプリとウィジェットには何が表示されますか？ Watch アプリでは手首から取引を追加でき、現在のプロジェクトの収入・支出・純額を確認できます。ウィジェットは同じ状況をホーム画面とロック画面に表示します。 プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 帳簿を書き出したり、別の端末に移すには？ CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. プロジェクト・取引・タグ・設定を含みます. プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 自動レートをオンにすると、MoneyTag は3文字の基準通貨コードと必要なネットワークリクエストを api.frankfurter.dev / open.er-api.com に送信します。 Frankfurter / ExchangeRate-API が利用する Cloudflare 基盤では、IP アドレス、おおよその地域、操作データ、診断情報が処理される場合があります。 この処理は App の機能提供と分析のために行われ、あなたに関連付けられる場合がありますが、トラッキングには使われず、広告もありません。 自動レートをオフにして手動レートを使えば、これらのリクエストを避けられます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。&lt;/p&gt;&lt;p&gt;App Store · 無料&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/jp/app/id6801956402?pt=118326163&amp;amp;ct=iag_data_ja&amp;amp;mt=8"&gt;App Store で MoneyTag: 収入と支出 を入手&lt;/a&gt;&lt;/p&gt;</content>
+    <category term="finance" label="お金・旅行"/>
   </entry>
   <entry>
     <title>OnePage PPT: AI資料作成 — メモやPDFが伝わる16:9スライドに | iOS App</title>

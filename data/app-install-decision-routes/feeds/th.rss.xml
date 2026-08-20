@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>42 แอปสดที่ตรวจสอบแล้ว</title>
+    <title>43 แอปสดที่ตรวจสอบแล้ว</title>
     <link>https://alice51849.github.io/ios-app-guide/th/index.html</link>
     <description>คู่มือนี้จัดทำโดย Lumi Studio ซึ่งเป็นผู้พัฒนาแอป ชื่อแอปทั้งหมดเป็นเครื่องหมายการค้าของเจ้าของแต่ละราย และใช้เพื่อการอ้างอิงเท่านั้น สำหรับการตัดสินใจที่เกี่ยวกับเอกสาร สุขภาพ การเรียน และการทำงาน โปรดตรวจสอบข้อกำหนดอย่างเป็นทางการที่เกี่ยวข้องด้วย</description>
     <language>th</language>
-    <lastBuildDate>Wed, 19 Aug 2026 21:09:07 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 18:45:07 GMT</lastBuildDate>
     <generator>iOS App Guide install-decision feeds</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/th.rss.xml"/>
     <atom:link rel="alternate" type="application/atom+xml" href="https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/th.atom.xml"/>
@@ -345,6 +345,18 @@
         <media:title type="plain">แอปจดบันทึกง่ายๆ ที่ดีที่สุดบน iPhone ไม่มีการสมัครสมาชิก</media:title>
       </media:content>
       <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/mochi-share.jpg" width="1200" height="675"/>
+    </item>
+    <item>
+      <title>MoneyTag: รายรับและรายจ่าย — โปรเจกต์ · แท็ก · รายงาน | iOS App</title>
+      <link>https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/th/index.html</link>
+      <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/th/index.html</guid>
+      <pubDate>Thu, 20 Aug 2026 18:45:07 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/th/app/id6801956402?pt=118326163&amp;amp;ct=iag_data_th&amp;amp;mt=8"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg" alt="MoneyTag: รายรับและรายจ่าย — โปรเจกต์ · แท็ก · รายงาน | iOS App" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;รายรับและรายจ่าย ทุกโปรเจกต์มีบัญชีของตัวเอง: รายรับลบรายจ่ายคือยอดสุทธิของโปรเจกต์นั้น นี่คือคำถามที่พบบ่อยที่สุด หากไม่มีคำตอบที่ต้องการ เขียนมาหาเราได้เลย ทุกข้อความมีคนอ่านจริง • แต่ละโปรเจกต์มียอดสุทธิของตัวเอง • แท็กรวมยอดข้ามทุกโปรเจกต์ • หนึ่งโปรเจกต์ใช้หนึ่งสกุลเงิน • อัตราแบบสดหรือด้วยมือ • แอปบน Apple Watch • วิดเจ็ตหน้าโฮมและหน้าล็อก โปรเจกต์คืออะไรกันแน่ โปรเจกต์คือบัญชีที่จบในตัวเอง มีรายการของตัวเอง มีสกุลเงินของตัวเอง และมีบรรทัดสุดท้ายของตัวเอง MoneyTag จะรวมรายรับ หักรายจ่าย แล้วแสดงยอดสุทธิเฉพาะของโปรเจกต์นั้น MoneyTag แปลงค่าเงินให้ไหม แต่ละโปรเจกต์มีสกุลเงินหลักของตัวเอง บนหน้าหลักคุณเลือกสกุลเงินที่กรอกได้โดยตรง MoneyTag อัปเดตอัตราแลกเปลี่ยนสาธารณะประมาณทุก 6 ชั่วโมง หรือจะตั้งอัตราเองแล้วกลับมาใช้แบบอัตโนมัติก็ได้ จำนวนเงินหลังแปลงจะบันทึกเป็นสกุลเงินหลักของโปรเจกต์ และอัตราที่บันทึกไว้ยังใช้แบบออฟไลน์ได้ อัตราอ้างอิงให้บริการโดย Frankfurter หรือ ExchangeRate-API และใช้เพื่อให้ข้อมูลเท่านั้น แท็กทำงานอย่างไร แท็กเป็นฟีเจอร์หลักของ MoneyTag ไม่ใช่ของแถม ติดแท็กให้รายรับหรือรายจ่ายรายการไหนก็ได้ แล้วหน้าแท็กจะรวมยอดของแท็กเดียวกันจากทุกโปรเจกต์ให้ในคราวเดียว ทั้งรายรับ รายจ่าย และยอดสุทธิของแท็กนั้น การวิเคราะห์แท็กข้ามโปรเจกต์เป็นส่วนหนึ่งของ Lifetime Pro ใช้ฟรีได้แค่ไหน และ Lifetime Pro เพิ่มอะไรบ้าง ฟรี · 1 โปรเจกต์ · เหลืออีก 5 รายการ. โปรเจกต์ แท็ก และรายงานไม่จำกัด จ่ายครั้งเดียวใช้ตลอด. ส่งออก CSV · ส่งออก PDF · ส่งออกรูปภาพ · สำรองข้อมูล &amp;amp; กู้คืน. แอปบน Apple Watch และวิดเจ็ตแสดงอะไร แอปบนนาฬิกาให้คุณบันทึกรายการจากข้อมือได้ทันที พร้อมดูรายรับ รายจ่าย และยอดสุทธิของโปรเจกต์ปัจจุบัน ส่วนวิดเจ็ตแสดงสถานะเดียวกันบนหน้าโฮมและหน้าล็อก โปรเจกต์ รายการ จำนวนเงิน บันทึก แท็ก หมวดหมู่ และการตั้งค่าจะอยู่ในพื้นที่จัดเก็บบนอุปกรณ์ของ MoneyTag และไม่ถูกส่งไปยัง Frankfurter / ExchangeRate-API / ExchangeRate-API จะส่งออกบัญชีหรือย้ายไปเครื่องอื่นอย่างไร ส่งออก CSV · ส่งออก PDF · ส่งออกรูปภาพ · สำรองข้อมูล &amp;amp; กู้คืน. รวมโปรเจกต์ รายการ แท็ก และการตั้งค่า. โปรเจกต์ รายการ จำนวนเงิน บันทึก แท็ก หมวดหมู่ และการตั้งค่าจะอยู่ในพื้นที่จัดเก็บบนอุปกรณ์ของ MoneyTag และไม่ถูกส่งไปยัง Frankfurter / ExchangeRate-API เมื่อเปิดอัตราแลกเปลี่ยนอัตโนมัติ MoneyTag จะส่งรหัสสกุลเงินหลักสามตัวอักษรและคำขอเครือข่ายที่จำเป็นไปยัง api.frankfurter.dev / open.er-api.com โครงสร้างพื้นฐาน Cloudflare ของ Frankfurter / ExchangeRate-API อาจประมวลผลที่อยู่ IP ภูมิภาคโดยประมาณ ข้อมูลการโต้ตอบ และข้อมูลวินิจฉัย การประมวลผลนี้ใช้เพื่อการทำงานและการวิเคราะห์ของ App อาจเชื่อมโยงกับคุณ ไม่ใช้เพื่อติดตาม และไม่มีโฆษณา ปิดอัตราแลกเปลี่ยนอัตโนมัติและใช้อัตราแบบกำหนดเองเพื่อหลีกเลี่ยงคำขอเหล่านี้ อัตราอ้างอิงให้บริการโดย Frankfurter หรือ ExchangeRate-API และใช้เพื่อให้ข้อมูลเท่านั้น&lt;/p&gt;&lt;p&gt;App Store · ฟรี&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/th/app/id6801956402?pt=118326163&amp;amp;ct=iag_data_th&amp;amp;mt=8"&gt;ดาวน์โหลด MoneyTag: รายรับและรายจ่าย บน App Store&lt;/a&gt;&lt;/p&gt;</description>
+      <atom:link rel="related" type="text/html" href="https://apps.apple.com/th/app/id6801956402?pt=118326163&amp;ct=iag_data_th&amp;mt=8" title="ดาวน์โหลด MoneyTag: รายรับและรายจ่าย บน App Store"/>
+      <media:content url="https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg" fileSize="55801" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
+        <media:title type="plain">MoneyTag: รายรับและรายจ่าย — โปรเจกต์ · แท็ก · รายงาน | iOS App</media:title>
+      </media:content>
+      <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg" width="1200" height="675"/>
     </item>
     <item>
       <title>OnePage PPT: สไลด์ AI — สรุปทุกอย่างให้เหลือหน้าเดียว | iOS App</title>

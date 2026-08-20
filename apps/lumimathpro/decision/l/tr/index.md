@@ -2,7 +2,7 @@
 title: "Okul öncesi ve ilk sınıflar için en iyi tam matematik öğrenme uygulaması"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/tr/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

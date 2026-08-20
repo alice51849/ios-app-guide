@@ -2,7 +2,7 @@
 title: "iPhone ପାଇଁ ସର୍ବୋତ୍ତମ ପିରିଅଡ୍ ଟ୍ରାକର୍ ଆପ୍ ଯାହାକୁ ଖାତା ଆବଶ୍ୟକ ନାହିଁ"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/or-IN/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

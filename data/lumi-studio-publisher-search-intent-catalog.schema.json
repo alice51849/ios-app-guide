@@ -74,13 +74,13 @@
       "const": "official_locale_order_then_alphabetical_app_name"
     },
     "app_count": {
-      "const": 42
+      "const": 43
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 2100
+      "const": 2150
     },
     "locales": {
       "type": "array",
@@ -144,8 +144,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 2100,
-      "maxItems": 2100,
+      "minItems": 2150,
+      "maxItems": 2150,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -256,6 +256,7 @@
               "maskmyfile",
               "mochi",
               "mochidonestamp",
+              "moneytag",
               "notesstudio100",
               "onepageppt",
               "photocream",

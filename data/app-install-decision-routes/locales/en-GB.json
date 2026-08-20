@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "en-GB",
-  "dateModified": "2026-08-19",
-  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
-  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
+  "dateModified": "2026-08-20",
+  "content_digest": "08cf1f31e6bc352f5475e375af6e995cbd78b8edfadde161d4cfd16cff4becd3",
+  "generation_digest": "fad6ea45224faa2da20fd98029fa695291d7a154a99e6731d1c67c0f18c1d1ce",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 42,
+  "record_count": 43,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/en-GB.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/en-GB.rss.xml",
@@ -1412,7 +1412,8 @@
         "Productivity",
         "Free to start · one-time unlock",
         "No adverts",
-        "App Store · Free"
+        "App Store · Free",
+        "★ 1.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/en-GB/index.html",
@@ -1425,12 +1426,84 @@
       "storefront_facts": {
         "price": "0",
         "currency": "GBP",
-        "formatted_price": "Free"
+        "formatted_price": "Free",
+        "rating_value": 1.0,
+        "rating_count": 1
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
       "source_persona_query": "best simple to do list app iphone no subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "en-GB:moneytag",
+      "locale": "en-GB",
+      "app_key": "moneytag",
+      "app_name": "MoneyTag: Income & Expenses",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "MoneyTag: Income & Expenses — Projects · Tags · Report | iOS App",
+      "decision_context": "Income & Expenses Every project keeps its own books: income minus expenses is its net result. Here are the questions we are asked most often. If yours is not answered, drop us a line — a real person reads every message. • Projects with their own net result • Tags that total up across projects • One currency per project • Live or manual rates • Apple Watch app • Home Screen and Lock Screen widgets What exactly is a project? A project is a self-contained set of books: its own transactions, its own currency and its own bottom line. MoneyTag totals up the income, takes off the expenses and shows the net result for that project alone. Does MoneyTag convert between currencies? Each project has its own base currency. On the Home screen, choose the input currency directly. MoneyTag uses public exchange rates refreshed about every 6 hours, or you can set a manual rate and later reset to automatic. The converted amount is saved in the project’s base currency, and saved rates remain available offline. Reference rates are provided by Frankfurter or ExchangeRate-API; for informational use. How do tags work? Tags are central to MoneyTag, not an afterthought. Tag any income or expense, and the Tags screen totals that same tag across all of your projects at once — income, expenses and the net for the tag. Cross-project tag analysis is part of Lifetime Pro. What is free, and what does Lifetime Pro add? Free · 1 project · 5 entries left. Unlimited projects, tags and reports — one purchase, yours forever. Export CSV · Export PDF · Export Photo · Backup & restore. What do the Apple Watch app and the widgets show? The Watch app lets you add a transaction from your wrist and see the current project's income, expenses and net. The widgets show that same position on the Home Screen and the Lock Screen. Projects, transactions, amounts, notes, tags, categories and settings stay in MoneyTag’s on-device storage and are not sent to Frankfurter / ExchangeRate-API. How do I export my books or move them to another device? Export CSV · Export PDF · Export Photo · Backup & restore. Includes projects, transactions, tags and settings. Projects, transactions, amounts, notes, tags, categories and settings stay in MoneyTag’s on-device storage and are not sent to Frankfurter / ExchangeRate-API. When automatic rates are on, MoneyTag sends the three-letter base-currency code and the necessary network request to api.frankfurter.dev / open.er-api.com. Frankfurter / ExchangeRate-API’s Cloudflare infrastructure may process the IP address, approximate region, interaction data and diagnostics. This processing is for app functionality and analytics, may be linked to you, is not used for tracking, and involves no advertising. Turn off automatic rates and use a manual rate to avoid these requests. Reference rates are provided by Frankfurter or ExchangeRate-API; for informational use.",
+      "category": "finance",
+      "category_label": "Money & travel",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Free to start · one-time unlock",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "No account",
+        "No adverts",
+        "No tracking",
+        "Private / on-device"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Money & travel",
+        "Free to start · one-time unlock",
+        "Offline",
+        "No account",
+        "No adverts",
+        "No tracking",
+        "Private / on-device",
+        "Widget",
+        "Apple Watch",
+        "App Store · Free"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/moneytag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/en-GB/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/en-GB/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fen-GB%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-GB.json",
+      "app_store_id": "6801956402",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "app_store_url": "https://apps.apple.com/gb/app/id6801956402?pt=118326163&ct=iag_data_en_gb&mt=8",
+      "app_store_cta_label": "Get MoneyTag: Income & Expenses on the App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
+      "guide_cta_label": "Read the full guide",
+      "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
+      "source_persona_query": "best income and expense tracker for freelance projects no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

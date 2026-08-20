@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ro",
-  "dateModified": "2026-08-19",
-  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
-  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
+  "dateModified": "2026-08-20",
+  "content_digest": "08cf1f31e6bc352f5475e375af6e995cbd78b8edfadde161d4cfd16cff4becd3",
+  "generation_digest": "fad6ea45224faa2da20fd98029fa695291d7a154a99e6731d1c67c0f18c1d1ce",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 42,
+  "record_count": 43,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ro.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ro.rss.xml",
@@ -1431,6 +1431,76 @@
       "publisher_disclosure": "Ghid realizat de editor de către Lumi Studio, dezvoltatorul aplicației. Numele aplicațiilor sunt mărci comerciale ale proprietarilor lor și sunt folosite doar pentru identificare. Pentru documente, sănătate, școală și decizii legate de productivitate, verificați cerințele oficiale acolo unde este cazul.",
       "source_persona_query": "best simple to do list app iphone no subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ro:moneytag",
+      "locale": "ro",
+      "app_key": "moneytag",
+      "app_name": "MoneyTag",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "MoneyTag — Proiecte · Etichete · Raport | iOS App",
+      "decision_context": "Venituri și cheltuieli Fiecare proiect își ține propriile socoteli: veniturile minus cheltuielile dau rezultatul lui net. Mai jos sunt întrebările primite cel mai des. Dacă a ta nu se află printre ele, scrie-ne — fiecare mesaj este citit de un om. • Fiecare proiect cu rezultatul lui net • Etichete care se însumează între proiecte • O singură monedă pe proiect • Cursuri live sau manuale • Aplicație pentru Apple Watch • Widgeturi pe ecranul principal și pe cel blocat Ce este, mai exact, un proiect? Un proiect este un registru de sine stătător: tranzacțiile lui, moneda lui și rezultatul lui. MoneyTag adună veniturile, scade cheltuielile și arată rezultatul net doar pentru acel proiect. MoneyTag face conversie valutară? Fiecare proiect are propria monedă de bază. Pe ecranul principal poți alege direct moneda de intrare. MoneyTag actualizează cursurile publice aproximativ la fiecare 6 ore; poți și să setezi un curs manual, apoi să revii la modul automat. Suma convertită este salvată în moneda de bază a proiectului, iar cursurile salvate rămân disponibile offline. Cursurile de referință sunt furnizate de Frankfurter sau ExchangeRate-API și sunt doar informative. Cum funcționează etichetele? Etichetele sunt o parte centrală din MoneyTag, nu un adaos. Pune o etichetă pe orice venit sau cheltuială, iar ecranul Etichete însumează aceeași etichetă în toate proiectele tale deodată: venituri, cheltuieli și rezultatul net al etichetei. Analiza etichetelor între proiecte face parte din Lifetime Pro. Ce este gratuit și ce adaugă Lifetime Pro? Gratuit · 1 proiect · au rămas 5 înregistrări. Proiecte, etichete și rapoarte nelimitate — o singură achiziție, pentru totdeauna. Exportă CSV · Exportă PDF · Exportă imaginea · Backup & restaurare. Ce arată aplicația pentru Apple Watch și widgeturile? Aplicația pentru Watch îți permite să adaugi o tranzacție de la încheietură și să vezi veniturile, cheltuielile și rezultatul net al proiectului curent. Widgeturile arată aceeași situație pe ecranul principal și pe ecranul blocat. Proiectele, tranzacțiile, sumele, notițele, etichetele, categoriile și setările rămân în stocarea locală MoneyTag și nu sunt trimise la Frankfurter / ExchangeRate-API. Cum îmi export registrul sau îl mut pe alt dispozitiv? Exportă CSV · Exportă PDF · Exportă imaginea · Backup & restaurare. Include proiecte, înregistrări, etichete și setări. Proiectele, tranzacțiile, sumele, notițele, etichetele, categoriile și setările rămân în stocarea locală MoneyTag și nu sunt trimise la Frankfurter / ExchangeRate-API. Când cursurile automate sunt active, MoneyTag trimite codul de trei litere al monedei de bază și cererea de rețea necesară la api.frankfurter.dev / open.er-api.com. Infrastructura Cloudflare a Frankfurter / ExchangeRate-API poate prelucra adresa IP, regiunea aproximativă, datele de interacțiune și informațiile de diagnostic. Această prelucrare servește funcționalității și analizei App, poate fi asociată cu dvs., nu este folosită pentru urmărire și nu implică publicitate. Dezactivați cursurile automate și folosiți un curs manual pentru a evita aceste cereri. Cursurile de referință sunt furnizate de Frankfurter sau ExchangeRate-API și sunt doar informative.",
+      "category": "finance",
+      "category_label": "Bani & călătorii",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Început gratuit · deblocare pe viață",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Fără cont",
+        "Fără reclame",
+        "Fără urmărire",
+        "Privat / pe dispozitiv"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Bani & călătorii",
+        "Început gratuit · deblocare pe viață",
+        "Offline",
+        "Fără cont",
+        "Fără reclame",
+        "Fără urmărire",
+        "Privat / pe dispozitiv",
+        "Widget",
+        "Apple Watch",
+        "App Store · Gratuit"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/moneytag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ro/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/ro/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fro%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
+      "app_store_id": "6801956402",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "app_store_url": "https://apps.apple.com/ro/app/id6801956402?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_cta_label": "Descarcă MoneyTag din App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RON",
+        "formatted_price": "Gratuit"
+      },
+      "guide_cta_label": "Citește ghidul complet",
+      "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
+      "source_persona_query": "best income and expense tracker for freelance projects no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

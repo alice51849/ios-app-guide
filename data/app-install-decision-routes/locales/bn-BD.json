@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "bn-BD",
-  "dateModified": "2026-08-19",
-  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
-  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
+  "dateModified": "2026-08-20",
+  "content_digest": "08cf1f31e6bc352f5475e375af6e995cbd78b8edfadde161d4cfd16cff4becd3",
+  "generation_digest": "fad6ea45224faa2da20fd98029fa695291d7a154a99e6731d1c67c0f18c1d1ce",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 42,
+  "record_count": 43,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/bn-BD.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/bn-BD.rss.xml",
@@ -1431,6 +1431,76 @@
       "publisher_disclosure": "লুমি স্টুডিও থেকে প্রকাশক-লিখিত গাইড, অ্যাপ ডেভেলপার। অ্যাপ নামগুলি তাদের মালিকদের ট্রেডমার্ক এবং শুধুমাত্র সনাক্তকরণের জন্য ব্যবহৃত হয়। নথি, স্বাস্থ্য, স্কুল এবং উৎপাদনশীলতা সংক্রান্ত সিদ্ধান্তের জন্য প্রাসঙ্গিক হলে অফিসিয়াল প্রয়োজনীয়তা যাচাই করুন।",
       "source_persona_query": "best simple to do list app iphone no subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "bn-BD:moneytag",
+      "locale": "bn-BD",
+      "app_key": "moneytag",
+      "app_name": "MoneyTag: আয় ও ব্যয়",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "MoneyTag: আয় ও ব্যয় — প্রকল্প · ট্যাগ · রিপোর্ট | iOS App",
+      "decision_context": "আয় ও ব্যয় প্রতিটি প্রজেক্টের হিসাব আলাদা: আয় থেকে ব্যয় বাদ দিলে যা থাকে, সেটিই সেই প্রজেক্টের নিট ফলাফল। সবচেয়ে বেশি জিজ্ঞাসা করা প্রশ্নগুলো এখানে। উত্তর না পেলে লিখুন — প্রতিটি বার্তা একজন সত্যিকারের মানুষ পড়েন। • প্রতিটি প্রজেক্টের নিজস্ব নিট ফলাফল • সব প্রজেক্ট মিলিয়ে ট্যাগের যোগফল • প্রতি প্রজেক্টে একটিই মুদ্রা • লাইভ বা ম্যানুয়াল হার • Apple Watch অ্যাপ • হোম ও লক স্ক্রিন উইজেট প্রজেক্ট আসলে কী? প্রজেক্ট হলো নিজেই একটি স্বয়ংসম্পূর্ণ খাতা: নিজস্ব লেনদেন, নিজস্ব মুদ্রা আর নিজস্ব চূড়ান্ত হিসাব। MoneyTag ওই প্রজেক্টের আয় যোগ করে, ব্যয় বাদ দেয় এবং কেবল সেটিরই নিট ফলাফল দেখায়। MoneyTag কি এক মুদ্রা থেকে আরেক মুদ্রায় রূপান্তর করে? প্রতিটি প্রজেক্টের নিজস্ব ভিত্তি মুদ্রা থাকে। হোম স্ক্রিনেই ইনপুট মুদ্রা সরাসরি বেছে নেওয়া যায়। MoneyTag প্রায় প্রতি 6 ঘণ্টায় প্রকাশ্য বিনিময় হার আপডেট করে; চাইলে ম্যানুয়াল হার সেট করে পরে আবার স্বয়ংক্রিয় মোডে ফিরতে পারেন। রূপান্তরিত অর্থ প্রজেক্টের ভিত্তি মুদ্রায় সংরক্ষিত হয়, আর সংরক্ষিত হার অফলাইনেও ব্যবহার করা যায়। রেফারেন্স হার Frankfurter বা ExchangeRate-API প্রদান করে; শুধু তথ্যের জন্য। ট্যাগ কীভাবে কাজ করে? MoneyTag-এ ট্যাগ মূল সুবিধাগুলোর একটি, পরে জুড়ে দেওয়া কিছু নয়। যেকোনো আয় বা ব্যয়ে ট্যাগ দিন, আর ট্যাগ স্ক্রিন সেই একই ট্যাগের হিসাব আপনার সব প্রজেক্ট মিলিয়ে একসঙ্গে দেখাবে — আয়, ব্যয় ও ওই ট্যাগের নিট ফলাফল। প্রজেক্ট জুড়ে ট্যাগ বিশ্লেষণ Lifetime Pro-এর অংশ। বিনামূল্যে কী থাকে, আর Lifetime Pro কী যোগ করে? ফ্রি · 1 প্রকল্প · 5 এন্ট্রি বাকি. সীমাহীন প্রকল্প, ট্যাগ ও রিপোর্ট — একবার কিনুন, চিরকাল।. CSV রপ্তানি · PDF রপ্তানি · ছবি রপ্তানি করুন · ব্যাকআপ ও পুনরুদ্ধার. Apple Watch অ্যাপ ও উইজেট কী দেখায়? ঘড়ির অ্যাপ থেকে হাতের কব্জিতেই একটি লেনদেন যোগ করা যায় এবং চলতি প্রজেক্টের আয়, ব্যয় ও নিট ফলাফল দেখা যায়। উইজেট সেই একই অবস্থা হোম স্ক্রিন ও লক স্ক্রিনে দেখায়। প্রজেক্ট, লেনদেন, পরিমাণ, নোট, ট্যাগ, বিভাগ ও সেটিং MoneyTag-এর ডিভাইস-ভিত্তিক স্টোরেজে থাকে এবং Frankfurter / ExchangeRate-API-এ পাঠানো হয় না। খাতা কীভাবে এক্সপোর্ট করব বা অন্য ডিভাইসে নেব? CSV রপ্তানি · PDF রপ্তানি · ছবি রপ্তানি করুন · ব্যাকআপ ও পুনরুদ্ধার. প্রকল্প, এন্ট্রি, ট্যাগ ও সেটিংস অন্তর্ভুক্ত।. প্রজেক্ট, লেনদেন, পরিমাণ, নোট, ট্যাগ, বিভাগ ও সেটিং MoneyTag-এর ডিভাইস-ভিত্তিক স্টোরেজে থাকে এবং Frankfurter / ExchangeRate-API-এ পাঠানো হয় না। স্বয়ংক্রিয় হার চালু থাকলে MoneyTag তিন অক্ষরের ভিত্তি মুদ্রার কোড ও প্রয়োজনীয় নেটওয়ার্ক অনুরোধ api.frankfurter.dev / open.er-api.com-এ পাঠায়। Frankfurter / ExchangeRate-API-এর Cloudflare অবকাঠামো IP ঠিকানা, আনুমানিক অঞ্চল, ইন্টারঅ্যাকশন ডেটা ও ডায়াগনস্টিক তথ্য প্রক্রিয়া করতে পারে। এই প্রক্রিয়াকরণ App-এর কার্যকারিতা ও বিশ্লেষণের জন্য, আপনার সঙ্গে যুক্ত হতে পারে, ট্র্যাকিংয়ে ব্যবহৃত হয় না এবং এতে বিজ্ঞাপন নেই। এসব অনুরোধ এড়াতে স্বয়ংক্রিয় হার বন্ধ করে ম্যানুয়াল হার ব্যবহার করুন। রেফারেন্স হার Frankfurter বা ExchangeRate-API প্রদান করে; শুধু তথ্যের জন্য।",
+      "category": "finance",
+      "category_label": "অর্থ ও ভ্রমণ",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "বিনামূল্যে শুরু · আজীবন আনলক",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "উইজেট",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "অর্থ ও ভ্রমণ",
+        "বিনামূল্যে শুরু · আজীবন আনলক",
+        "অফলাইন",
+        "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
+        "কোনও ট্র্যাকিং নেই",
+        "গোপনীয় / ডিভাইসে",
+        "উইজেট",
+        "Apple Watch",
+        "App Store · বিনামূল্যে"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/moneytag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/bn-BD/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/bn-BD/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fbn-BD%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
+      "app_store_id": "6801956402",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_cta_label": "App Store থেকে MoneyTag: আয় ও ব্যয় ডাউনলোড করুন",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
+      "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
+      "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
+      "source_persona_query": "best income and expense tracker for freelance projects no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

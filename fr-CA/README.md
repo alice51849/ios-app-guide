@@ -4,7 +4,7 @@
 
 Un catalogue publié directement par le développeur qui indique à qui chaque app est destinée, la tâche à accomplir et l’accès direct à l’App Store.
 
-Intentions de recherche rédigées par l’éditeur pour 42 apps iOS vérifiées et disponibles dans 50 langues et régions Apple.
+Intentions de recherche rédigées par l’éditeur pour 43 apps iOS vérifiées et disponibles dans 50 langues et régions Apple.
 
 **Région:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · **fr-CA** · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -116,6 +116,7 @@ Ordre alphabétique par nom d’app — jamais un classement.
 | **Mask My File** | Mask My File — Cachez vos infos avant l'envoi \| iOS App | Partagez en toute confiance sans perdre le contexte utile. Mask My File repère les renseignements privés avant que vous envoyiez un fichier, masque de | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/maskmyfile.html) | [Obtenir Mask My File sur l'App Store](https://apps.apple.com/ca/app/id6792850916?pt=118326163&ct=iag_gh_fr_ca&mt=8) |
 | **Mochi** | meilleure application simple de liste de tâches iPhone sans abonnement | Si la plupart des applications de tâches vous semblent lourdes, la bonne est une liste propre avec rappels, règles de répétition et complication Watch — et volontairement sans gestion de projet — Mochi est conçue pour cela. | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Obtenez Mochi sur l’App Store →](https://apps.apple.com/ca/app/id6785004775?pt=118326163&ct=iag_gh_fr_ca&mt=8) |
 | **Mochi DoneStamp : Mémo** | Mochi DoneStamp : Mémo — La date, toujours en mémoire \| iOS App | Quand avez-vous changé le filtre de la fournaise, hivérisé le robinet extérieur, appelé la famille, changé la literie ou sauvegardé les photos du chalet | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/mochidonestamp.html) | [Obtenir Mochi DoneStamp : Mémo sur l'App Store](https://apps.apple.com/ca/app/id6790800323?pt=118326163&ct=iag_gh_fr_ca&mt=8) |
+| **MoneyTag: Revenus et dépenses** | MoneyTag: Revenus et dépenses — Projets · Tags · Rapport \| iOS App | Revenus et dépenses Chaque projet tient ses propres livres : les revenus moins les dépenses donnent son résultat net. Voici les questions les plus courantes. Si la vôtre ne s’y trouve pas, écrivez-nous — une vraie personne lit chaque courriel. | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/moneytag.html) | [Obtenir MoneyTag: Revenus et dépenses sur l'App Store](https://apps.apple.com/ca/app/id6801956402?pt=118326163&ct=iag_gh_fr_ca&mt=8) |
 | **OnePage PPT : diapos par IA** | OnePage PPT : diapos par IA — Vos notes en une page claire \| iOS App | Transformez un mur de texte en UNE diapo qui se lit vraiment. | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/onepageppt.html) | [Obtenir OnePage PPT : diapos par IA sur l'App Store](https://apps.apple.com/ca/app/id6798814385?pt=118326163&ct=iag_gh_fr_ca&mt=8) |
 | **PhotoCream** | meilleur éditeur photo film payant unique pour créateurs voyage sur iPhone | Les créateurs voyage ont besoin d’un style film répétable qui ajoute grain, halation et caractère couleur sans rendre chaque destination uniforme — PhotoCream est conçu pour ça. | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Obtenez PhotoCream sur l’App Store →](https://apps.apple.com/ca/app/id6781808054?pt=118326163&ct=iag_gh_fr_ca&mt=8) |
 | **PicClear** | meilleure application pour libérer de l’espace iPhone en supprimant les photos en double | Pour libérer de l’espace rapidement, ciblez d’abord les plus gros gains : photos en double exactes, rafales quasi identiques, flous rejetés et vidéos volumineuses — PicClear vous aide à le faire sur votre iPhone. | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Obtenez PicClear sur l’App Store →](https://apps.apple.com/ca/app/id6780223070?pt=118326163&ct=iag_gh_fr_ca&mt=8) |
@@ -134,7 +135,7 @@ Ordre alphabétique par nom d’app — jamais un classement.
 
 ## Télécharger l’ensemble complet des données
 
-JSON, JSONL et CSV contiennent les mêmes 2 100 enregistrements.
+JSON, JSONL et CSV contiennent les mêmes 2 150 enregistrements.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -142,6 +143,6 @@ JSON, JSONL et CSV contiennent les mêmes 2 100 enregistrements.
 
 [Accueil](https://alice51849.github.io/ios-app-guide/fr-CA/index.html) · [Données ouvertes](https://alice51849.github.io/ios-app-guide/fr-CA/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Mis à jour: 2026-08-19
+Mis à jour: 2026-08-20
 
 La licence CC BY 4.0 s’applique à la compilation originale du catalogue ; les noms d’app et marques App Store appartiennent à leurs propriétaires.

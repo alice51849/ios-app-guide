@@ -6,8 +6,8 @@
   "name": "Lumi Studio 开发者搜索意图目录",
   "description": "第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。",
   "inLanguage": "zh-Hans",
-  "dateModified": "2026-08-19",
-  "numberOfItems": 42,
+  "dateModified": "2026-08-20",
+  "numberOfItems": 43,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -943,7 +943,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-lumibopomofo",
         "url": "https://apps.apple.com/app/id6773017109?pt=118326163&ct=iag_data_zh_hans&mt=8",
         "name": "Lumi Bopomofo",
-        "description": "对于初学注音的儿童，应用应涵盖全部 37 个符号，通过描摹和游戏教学——专为 4–7 岁初学阶段设计，无广告且不收集数据——Lumi Bopomofo 正是为此打造。",
+        "description": "对第一次学注音的孩子,App 应通过描摹与游戏涵盖全部 37 个符号 —— 专为 4 到 7 岁初学阶段设计、无广告、不搜集数据 —— Lumi Bopomofo 正是为此打造。",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6773017109",
           "inLanguage": "zh-Hans",
-          "description": "对于初学注音的儿童，应用应涵盖全部 37 个符号，通过描摹和游戏教学——专为 4–7 岁初学阶段设计，无广告且不收集数据——Lumi Bopomofo 正是为此打造。",
+          "description": "对第一次学注音的孩子,App 应通过描摹与游戏涵盖全部 37 个符号 —— 专为 4 到 7 岁初学阶段设计、无广告、不搜集数据 —— Lumi Bopomofo 正是为此打造。",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-lumibopomofo"
           },
@@ -1739,6 +1739,72 @@
     {
       "@type": "ListItem",
       "position": 28,
+      "url": "https://apps.apple.com/cn/app/id6801956402?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-moneytag",
+        "url": "https://apps.apple.com/cn/app/id6801956402?pt=118326163&ct=iag_data_zh_hans&mt=8",
+        "name": "MoneyTag: 收入与支出",
+        "description": "收入与支出 每个项目都有自己的账本：收入减支出，就是这个项目的净额。以下是大家最常问的问题；没有找到答案，欢迎写信给我们，每封信都有人亲自看。",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6801956402",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6801956402"
+          },
+          "name": "MoneyTag: 收入与支出",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/cn/app/id6801956402?pt=118326163&ct=iag_data_zh_hans&mt=8",
+          "installUrl": "https://apps.apple.com/cn/app/id6801956402?pt=118326163&ct=iag_data_zh_hans&mt=8",
+          "downloadUrl": "https://apps.apple.com/cn/app/id6801956402?pt=118326163&ct=iag_data_zh_hans&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/cn/app/id6801956402?pt=118326163&ct=iag_data_zh_hans&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/zh-Hans/moneytag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6801956402",
+          "inLanguage": "zh-Hans",
+          "description": "收入与支出 每个项目都有自己的账本：收入减支出，就是这个项目的净额。以下是大家最常问的问题；没有找到答案，欢迎写信给我们，每封信都有人亲自看。",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-moneytag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CNY",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CN"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 29,
       "url": "https://apps.apple.com/cn/app/id6798814385?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1804,7 +1870,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 30,
       "url": "https://apps.apple.com/cn/app/id6781808054?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1870,7 +1936,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 31,
       "url": "https://apps.apple.com/cn/app/id6780223070?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1936,7 +2002,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 32,
       "url": "https://apps.apple.com/cn/app/id6779977651?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2002,7 +2068,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 33,
       "url": "https://apps.apple.com/cn/app/id6788236641?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2068,7 +2134,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 34,
       "url": "https://apps.apple.com/cn/app/id6780575828?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2134,7 +2200,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 35,
       "url": "https://apps.apple.com/cn/app/id6792856304?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2200,7 +2266,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 36,
       "url": "https://apps.apple.com/cn/app/id6782139553?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2266,7 +2332,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 37,
       "url": "https://apps.apple.com/cn/app/id6791299610?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2332,7 +2398,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 38,
       "url": "https://apps.apple.com/cn/app/id6787754435?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2398,7 +2464,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 39,
       "url": "https://apps.apple.com/cn/app/id6782275018?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2464,7 +2530,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 40,
       "url": "https://apps.apple.com/cn/app/id6790467886?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2530,7 +2596,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 41,
       "url": "https://apps.apple.com/cn/app/id6793414462?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2596,7 +2662,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 42,
       "url": "https://apps.apple.com/cn/app/id6797601720?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2662,7 +2728,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 43,
       "url": "https://apps.apple.com/cn/app/id6789917808?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",

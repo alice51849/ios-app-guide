@@ -2,7 +2,7 @@
 title: "iPhone 上最佳無廣告兒童教育遊戲應用程式"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hant/lumiletters.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 video_url: "https://files.catbox.moe/tc9do5.mp4"
 duration: "PT16S"
 app_store_id: "6778748533"

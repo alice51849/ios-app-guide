@@ -4,7 +4,7 @@
 
 ప్రతి యాప్ ఎవరికోసం రూపొందించబడిందో, వారు పూర్తి చేయదలచుకున్న పని ఏమిటో, మరియు ప్రత్యక్ష App Store మార్గం ఏదో ఒక స్వంత సంస్థ క్యాటలాగ్.
 
-42 ధృవీకరించబడిన ప్రత్యక్ష iOS యాప్స్ మరియు 50 Apple స్థానికీకరణలపై ప్రచురకుడు రచించిన శోధన ఉద్దేశ్యాలు.
+43 ధృవీకరించబడిన ప్రత్యక్ష iOS యాప్స్ మరియు 50 Apple స్థానికీకరణలపై ప్రచురకుడు రచించిన శోధన ఉద్దేశ్యాలు.
 
 **స్థానికీకరణ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · **te-IN** · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -116,6 +116,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Mask My File** | Mask My File — పంచుకునే ముందు వివరాలు దాచండి \| iOS App | ఉపయోగకరమైన సందర్భాన్ని కోల్పోకుండా సురక్షితంగా పంచుకోండి. Mask My File మీరు ఫైల్ పంపే ముందు వ్యక్తిగత వివరాలను కనుగొని, మీరు ఎంచుకున్న భాగాన్ని శాశ్వతంగా | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://alice51849.github.io/ios-app-guide/te-IN/maskmyfile.html) | [App Store నుంచి Mask My File పొందండి](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_gh_te_in&mt=8) |
 | **Mochi** | iPhoneలో సబ్‌స్క్రిప్షన్ లేని సులభమైన టు-డూ లిస్ట్ యాప్ | అధిక భాగం టు-డూ యాప్‌లు బరువు ఎక్కువగా అనిపిస్తే, సరైనది రిమైండర్లు, పునరావృతాలు మరియు Watch కంప్లికేషన్‌తో శుభ్రమైన చెక్లిస్ట్ — మరియు ఉద్దేశపూర్వకంగా ప్రాజెక్ట్ నిర్వహణ యంత్రాంగం లేని — Mochi దీనికోసం రూపొందించబడింది. | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [App Storeలో Mochi పొందండి →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_gh_te_in&mt=8) |
 | **Mochi DoneStamp: చివరిసారి** | Mochi DoneStamp: చివరిసారి — ఎప్పుడు చేశారో గుర్తుంచుకోండి \| iOS App | చివరిసారి పరుపు దుప్పట్లు మార్చింది, మొక్కకు నీరు పోసింది, కుటుంబానికి ఫోన్ చేసింది, ఫోటో బ్యాకప్ లేదా ఫిల్టర్ మార్చింది ఎప్పుడు? | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://alice51849.github.io/ios-app-guide/te-IN/mochidonestamp.html) | [App Store నుంచి Mochi DoneStamp: చివరిసారి పొందండి](https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=iag_gh_te_in&mt=8) |
+| **MoneyTag: ఆదాయం & ఖర్చు** | MoneyTag: ఆదాయం & ఖర్చు — ప్రాజెక్టులు · ట్యాగ్‌లు \| iOS App | ఆదాయం & ఖర్చు ప్రతి ప్రాజెక్ట్ తన సొంత లెక్క ఉంచుకుంటుంది: ఆదాయంలోంచి ఖర్చు తీసేస్తే వచ్చేదే దాని నికర మొత్తం. ఎక్కువగా అడిగే ప్రశ్నలు ఇక్కడ ఉన్నాయి. మీ ప్రశ్నకు జవాబు దొరకకపోతే రాయండి — ప్రతి సందేశాన్నీ నిజమైన మనిషే చదువుతారు. | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://alice51849.github.io/ios-app-guide/te-IN/moneytag.html) | [App Store నుంచి MoneyTag: ఆదాయం & ఖర్చు పొందండి](https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=iag_gh_te_in&mt=8) |
 | **OnePage PPT: స్లయిడ్ మేకర్** | OnePage PPT: స్లయిడ్ మేకర్ — నోట్స్ నుండి ప్రజెంటేషన్ \| iOS App | పేజీల కొద్దీ టెక్స్ట్‌ను, జనం నిజంగా చదివే ఒకే ఒక్క స్లయిడ్‌గా మార్చండి. | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://alice51849.github.io/ios-app-guide/te-IN/onepageppt.html) | [App Store నుంచి OnePage PPT: స్లయిడ్ మేకర్ పొందండి](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_gh_te_in&mt=8) |
 | **PhotoCream** | iPhone‌లో ప్రయాణ సృష్టికర్తలకు ఒకసారి చెల్లించే ఉత్తమ ఫిల్మ్ ఫోటో ఎడిటర్ | ప్రయాణ సృష్టికర్తలకు ప్రతి గమ్యస్థానాన్ని ఒకే ఫ్లాట్ ఫిల్టర్‌గా మార్చకుండా, గ్రెయిన్, హాలేషన్ మరియు రంగు లక్షణాన్ని జోడించే పునరావృత ఫిల్మ్ లుక్ అవసరం — PhotoCream దీనికోసం రూపొందించబడింది. | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [App Storeలో PhotoCream పొందండి →](https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=iag_gh_te_in&mt=8) |
 | **PicClear** | iPhone నిల్వను ఖాళీ చేయడానికి ఉత్తమ యాప్ డూప్లికేట్ ఫోటోలు తొలగించడం | తక్కువ సమయంలో స్థలం ఖాళీ చేయడానికి, పెద్ద లాభాలను ముందుగా లక్ష్యంగా పెట్టండి: ఖచ్చితమైన డూప్లికేట్ ఫోటోలు, సమీపమైన బర్స్‌ట్ షాట్లు, మబ్బుగా ఉన్న ఫోటోలు, మరియు పెద్ద వీడియోలు — PicClear మీ iPhoneలో సహాయపడుతుంది. | ఉచితంగా ప్రారంభించండి · ఒకసారి కొనుగోలుతో అన్‌లాక్ | [గైడ్](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App Storeలో PicClear పొందండి →](https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=iag_gh_te_in&mt=8) |
@@ -134,7 +135,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## పూర్తి డేటాసెట్‌ను డౌన్లోడ్ చేసుకోండి
 
-JSON, JSONL మరియు CSV లో అదే 2,100 రికార్డులు ఉన్నాయి.
+JSON, JSONL మరియు CSV లో అదే 2,150 రికార్డులు ఉన్నాయి.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -142,6 +143,6 @@ JSON, JSONL మరియు CSV లో అదే 2,100 రికార్డు�
 
 [హోమ్](https://alice51849.github.io/ios-app-guide/te-IN/index.html) · [ఓపెన్ డేటా](https://alice51849.github.io/ios-app-guide/te-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [లైసెన్స్](https://creativecommons.org/licenses/by/4.0/)
 
-నవీకరించబడింది: 2026-08-19
+నవీకరించబడింది: 2026-08-20
 
 CC BY 4.0 అసలు క్యాటలాగ్ సంకలనం పై వర్తిస్తుంది; యాప్ పేర్లు మరియు App Store గుర్తులు వాటి యజమానులకు చెందుతాయి.

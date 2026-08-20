@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za fotografiju putovnice za bebe i malu djecu kod kuće"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/hr/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

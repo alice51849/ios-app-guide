@@ -2,7 +2,7 @@
 title: "iPhone-ல் பயண உருவாக்குநர்களுக்கான ஒருமுறை கட்டணம் செலுத்தும் சிறந்த திரைப்பட புகைப்பட திருத்தி"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/ta-IN/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

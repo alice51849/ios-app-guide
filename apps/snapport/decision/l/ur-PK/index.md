@@ -2,7 +2,7 @@
 title: "بچوں اور ننھے بچوں کے لیے گھر پر بہترین پاسپورٹ فوٹو ایپ"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/ur-PK/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

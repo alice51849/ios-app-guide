@@ -2,7 +2,7 @@
 title: "WiFi Aid — 网络诊断与连接证据 | iOS App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/zh-Hans/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — सबूत के साथ नेटवर्क जाँच | iOS App"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/hi/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

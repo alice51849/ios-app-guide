@@ -4,7 +4,7 @@
 
 ਇੱਕ ਪਹਿਲਾ-ਪੱਖ ਕੈਟਾਲੌਗ ਜਿਸ ਵਿੱਚ ਦਰਸਾਇਆ ਗਿਆ ਹੈ ਕਿ ਹਰ ਐਪ ਕਿਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ, ਉਹ ਕਿਹੜਾ ਕੰਮ ਪੂਰਾ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹੈ, ਅਤੇ ਸਿੱਧਾ App Store ਪੱਥ।
 
-42 ਪ੍ਰਮਾਣਿਤ ਜੀਵੰਤ iOS ਐਪਸ ਅਤੇ 50 Apple ਸਥਾਨਕ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਪ੍ਰਕਾਸ਼ਕ-ਲਿਖੇ ਖੋਜ ਇਰਾਦੇ।
+43 ਪ੍ਰਮਾਣਿਤ ਜੀਵੰਤ iOS ਐਪਸ ਅਤੇ 50 Apple ਸਥਾਨਕ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਪ੍ਰਕਾਸ਼ਕ-ਲਿਖੇ ਖੋਜ ਇਰਾਦੇ।
 
 **ਸਥਾਨਕ ਭਾਸ਼ਾ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · **pa-IN** · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -116,6 +116,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Mask My File** | Mask My File — ਭੇਜਣ ਤੋਂ ਪਹਿਲਾਂ ਵੇਰਵੇ ਲੁਕਾਓ \| iOS App | ਲੋੜੀਂਦਾ ਪ੍ਰਸੰਗ ਗੁਆਏ ਬਿਨਾਂ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਸਾਂਝਾ ਕਰੋ। Mask My File ਤੁਹਾਡੇ ਫਾਈਲ ਭੇਜਣ ਤੋਂ ਪਹਿਲਾਂ ਨਿੱਜੀ ਵੇਰਵੇ ਲੱਭਦਾ ਹੈ, ਤੁਹਾਡੇ ਚੁਣੇ ਹਿੱਸੇ ਨੂੰ ਪੱਕੇ ਤੌਰ 'ਤੇ | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://alice51849.github.io/ios-app-guide/pa-IN/maskmyfile.html) | [App Store ਤੋਂ Mask My File ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_gh_pa_in&mt=8) |
 | **Mochi** | iPhone ਲਈ ਸਭ ਤੋਂ ਸਧਾਰਣ ਟੂ-ਡੂ ਲਿਸਟ ਐਪ, ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ | ਜੇ ਜ਼ਿਆਦਾਤਰ ਟੂ-ਡੂ ਐਪ ਭਾਰੀ ਲੱਗਦੇ ਹਨ, ਤਾਂ ਸਹੀ ਐਪ ਇੱਕ ਸਾਫ਼ ਚੈੱਕਲਿਸਟ ਹੈ ਯਾਦ ਦਿਵਾਉਣ ਵਾਲੇ, ਦੁਹਰਾਅ ਨਿਯਮ ਅਤੇ Watch ਕੰਪਲੀਕੇਸ਼ਨ ਨਾਲ — ਅਤੇ ਜਾਣ-ਬੂਝ ਕੇ ਕੋਈ ਪ੍ਰੋਜੈਕਟ-ਮੈਨੇਜਮੈਂਟ ਮਸ਼ੀਨਰੀ ਨਹੀਂ — Mochi ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ। | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://alice51849.github.io/ios-app-guide/pa-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [App Store ਤੋਂ Mochi ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_gh_pa_in&mt=8) |
 | **Mochi DoneStamp: ਪਿਛਲੀ ਵਾਰ** | Mochi DoneStamp: ਪਿਛਲੀ ਵਾਰ — ਯਾਦ ਰੱਖੋ ਤੁਸੀਂ ਕਦੋਂ ਕੀਤਾ \| iOS App | ਤੁਸੀਂ ਪਿਛਲੀ ਵਾਰ ਚਾਦਰ ਕਦੋਂ ਬਦਲੀ, ਪੌਦੇ ਨੂੰ ਪਾਣੀ ਕਦੋਂ ਦਿੱਤਾ, ਪਰਿਵਾਰ ਨੂੰ ਫੋਨ, ਫੋਟੋ ਬੈਕਅੱਪ ਜਾਂ ਫਿਲਟਰ ਕਦੋਂ ਬਦਲਿਆ? | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://alice51849.github.io/ios-app-guide/pa-IN/mochidonestamp.html) | [App Store ਤੋਂ Mochi DoneStamp: ਪਿਛਲੀ ਵਾਰ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=iag_gh_pa_in&mt=8) |
+| **MoneyTag: ਆਮਦਨ ਤੇ ਖਰਚ** | MoneyTag: ਆਮਦਨ ਤੇ ਖਰਚ — ਪ੍ਰੋਜੈਕਟ · ਟੈਗ · ਰਿਪੋਰਟ \| iOS App | ਆਮਦਨ ਤੇ ਖਰਚ ਹਰ ਪ੍ਰੋਜੈਕਟ ਦਾ ਆਪਣਾ ਹਿਸਾਬ ਵੱਖਰਾ ਰਹਿੰਦਾ ਹੈ: ਆਮਦਨ ਵਿੱਚੋਂ ਖਰਚ ਘਟਾਓ ਤਾਂ ਜੋ ਬਚਦਾ ਹੈ, ਉਹੀ ਉਸ ਦੀ ਸ਼ੁੱਧ ਰਕਮ ਹੈ। ਸਭ ਤੋਂ ਵੱਧ ਪੁੱਛੇ ਜਾਂਦੇ ਸਵਾਲ ਇੱਥੇ ਹਨ। ਤੁਹਾਡਾ ਸਵਾਲ ਨਾ ਮਿਲੇ ਤਾਂ ਲਿਖੋ — ਹਰ ਸੁਨੇਹਾ ਇੱਕ ਅਸਲੀ ਬੰਦਾ ਪੜ੍ਹਦਾ ਹੈ। | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://alice51849.github.io/ios-app-guide/pa-IN/moneytag.html) | [App Store ਤੋਂ MoneyTag: ਆਮਦਨ ਤੇ ਖਰਚ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=iag_gh_pa_in&mt=8) |
 | **OnePage PPT: ਸਲਾਈਡ ਮੇਕਰ** | OnePage PPT: ਸਲਾਈਡ ਮੇਕਰ — ਨੋਟਾਂ ਤੋਂ ਸ਼ਾਨਦਾਰ ਪੇਸ਼ਕਾਰੀ \| iOS App | ਲਿਖਤ ਦੇ ਢੇਰ ਨੂੰ ਇੱਕ ਅਜਿਹੀ ਸਲਾਈਡ ਵਿੱਚ ਬਦਲੋ, ਜਿਸਨੂੰ ਲੋਕ ਸੱਚਮੁੱਚ ਪੜ੍ਹਨ। | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://alice51849.github.io/ios-app-guide/pa-IN/onepageppt.html) | [App Store ਤੋਂ OnePage PPT: ਸਲਾਈਡ ਮੇਕਰ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_gh_pa_in&mt=8) |
 | **PhotoCream** | iPhone 'ਤੇ ਯਾਤਰਾ ਕਰਣ ਵਾਲੇ ਨਿਰਮਾਤਾਵਾਂ ਲਈ ਇੱਕ ਵਾਰੀ ਭੁਗਤਾਨ ਕਰਕੇ ਸਭ ਤੋਂ ਵਧੀਆ ਫਿਲਮ ਫੋਟੋ ਸੰਪਾਦਕ | ਯਾਤਰਾ ਨਿਰਮਾਤਾਵਾਂ ਨੂੰ ਇੱਕ ਦੁਹਰਾਉਣਯੋਗ ਫਿਲਮ ਲੁਕ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ ਜੋ ਗ੍ਰੇਨ, ਹਲੇਸ਼ਨ ਅਤੇ ਰੰਗ ਦਾ ਚਰਿੱਤਰ ਜੋੜਦਾ ਹੈ, ਹਰ ਟਿਕਾਣੇ ਨੂੰ ਇੱਕੋ ਜਿਹਾ ਫਿਲਟਰ ਨਹੀਂ ਬਣਾਉਂਦਾ — PhotoCream ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ। | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://alice51849.github.io/ios-app-guide/pa-IN/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [PhotoCream App Store 'ਤੇ ਲਵੋ →](https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=iag_gh_pa_in&mt=8) |
 | **PicClear** | iPhone ਸਟੋਰੇਜ ਖਾਲੀ ਕਰਨ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਐਪ ਜੋ ਨਕਲ ਫੋਟੋਆਂ ਨੂੰ ਮਿਟਾਉਂਦਾ ਹੈ | ਤੇਜ਼ੀ ਨਾਲ ਜਗ੍ਹਾ ਖਾਲੀ ਕਰਨ ਲਈ ਸਭ ਤੋਂ ਵੱਡੀਆਂ ਜਿੱਤਾਂ ਨੂੰ ਨਿਸ਼ਾਨਾ ਬਣਾਓ: ਸਹੀ-ਨਕਲ ਫੋਟੋਆਂ, ਲਗਭਗ ਇਕੋ ਜਿਹੀਆਂ ਬਰਸਟ ਸ਼ਾਟਸ, ਧੁੰਦਲੇ ਰੱਦ, ਅਤੇ ਵੱਡੇ ਵੀਡੀਓ — PicClear ਤੁਹਾਡੇ iPhone 'ਤੇ ਇਹ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ। | ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ | [ਗਾਈਡ](https://alice51849.github.io/ios-app-guide/pa-IN/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App Store ਤੋਂ PicClear ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=iag_gh_pa_in&mt=8) |
@@ -134,7 +135,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ਪੂਰਾ ਡੇਟਾਸੈੱਟ ਡਾਊਨਲੋਡ ਕਰੋ
 
-JSON, JSONL ਅਤੇ CSV ਵਿੱਚ ਉਹੀ 2,100 ਰਿਕਾਰਡ ਹਨ।
+JSON, JSONL ਅਤੇ CSV ਵਿੱਚ ਉਹੀ 2,150 ਰਿਕਾਰਡ ਹਨ।
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -142,6 +143,6 @@ JSON, JSONL ਅਤੇ CSV ਵਿੱਚ ਉਹੀ 2,100 ਰਿਕਾਰਡ ਹਨ
 
 [ਮੁੱਖ ਪੰਨਾ](https://alice51849.github.io/ios-app-guide/pa-IN/index.html) · [ਖੁੱਲਾ ਡੇਟਾ](https://alice51849.github.io/ios-app-guide/pa-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ਲਾਇਸੈਂਸ](https://creativecommons.org/licenses/by/4.0/)
 
-ਅਪਡੇਟ ਕੀਤਾ ਗਿਆ: 2026-08-19
+ਅਪਡੇਟ ਕੀਤਾ ਗਿਆ: 2026-08-20
 
 CC BY 4.0 ਮੂਲ ਕੈਟਾਲੌਗ ਸੰਕਲਨ 'ਤੇ ਲਾਗੂ ਹੁੰਦਾ ਹੈ; ਐਪ ਨਾਮ ਅਤੇ App Store ਨਿਸ਼ਾਨ ਆਪਣੇ ਮਾਲਕਾਂ ਦੇ ਹਨ।

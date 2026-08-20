@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-19",
-  "content_digest": "048004401ed2fc269d9fbbfca9e238f8ad3dc2227c63d0d37d41abaa6a545208",
+  "date_modified": "2026-08-20",
+  "content_digest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 42,
+  "record_count": 43,
   "apps": [
     {
       "key": "notesstudio100",
@@ -1717,6 +1717,56 @@
         "rating_value": 5.0,
         "rating_count": 1,
         "storefront_url": "https://apps.apple.com/tw/app/id6790800323"
+      }
+    },
+    {
+      "key": "moneytag",
+      "app_store_id": "6801956402",
+      "name": "MoneyTag: 收入與支出",
+      "summary": "每個專案都有自己的帳本：收入減支出，就是這個專案的淨額。以下是大家最常問的問題；沒有找到答案的話，寫信給我們，每一封信都有人親自看。",
+      "category": "finance",
+      "search_terms": [
+        "記帳app",
+        "理財",
+        "記帳軟體",
+        "開銷",
+        "花費",
+        "帳本",
+        "消費記錄",
+        "貨幣換算",
+        "個人理財",
+        "預算管理",
+        "記帳本",
+        "消費追蹤",
+        "匯率換算",
+        "匯率換算器",
+        "生活記帳",
+        "離線記帳",
+        "自訂匯率",
+        "每月趨勢",
+        "備份與還原",
+        "匯出 PDF",
+        "最近記錄"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/tw/app/id6801956402?pt=118326163&ct=iag_api_zh_hant&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/moneytag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6801956402"
       }
     },
     {

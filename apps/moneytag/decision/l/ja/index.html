@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ja" dir="ltr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6801956402">
+<meta name="description" content="収入と支出 プロジェクトごとに帳簿は独立しています。収入から支出を引いた金額が、そのプロジェクトの純額です。よくある質問をまとめました。解決しない場合はメールでご連絡ください。すべて開発者本人が読んでいます。 • プロジェクトごとの純額 • タグはプロジェクトをまたいで集計 • 1プロジェクトに1通貨 • 自動または手動レート • Apple Watch アプリ • ホーム画面・ロック画面ウィジェット 「プロジェクト」とは何ですか？ プロジェクトは独立した1冊の帳簿です。。取引も通貨も収支もそれぞれ別に管理されます。。MoneyTag はそのプロジェクトの収入を合計し、支出を差し引いて、そのプロジェクトだけの純額を表示します。 通貨は換算されますか？ 各プロジェクトにはそれぞれ基準通貨があります。ホーム画面で入力通貨を直接選択できます。MoneyTag は公開為替レートを約6時間ごとに更新し、手動レートに切り替えたり、後から自動に戻したりできます。換算後の金額はプロジェクトの基準通貨で保存され、保存済みレートはオフラインでも利用できます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。 タグはどう使いますか？ タグは MoneyTag の中心機能で、おまけではありません。収入にも支出にもタグを付けられ、タグ画面では同じタグの収入・支出・純額をすべてのプロジェクトを横断して一度に集計します。プロジェクト横断のタグ分析は買い切り版の機能です。 無料でどこまで使えますか？買い切り版で何が増えますか？ 無料版 · プロジェクト 1 件 · 残り 5 件. プロジェクト・タグ・レポートが無制限。買い切りでずっと使えます. CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. Apple Watch アプリとウィジェットには何が表示されますか？ Watch アプリでは手首から取引を追加でき、現在のプロジェクトの収入・支出・純額を確認できます。ウィジェットは同じ状況をホーム画面とロック画面に表示します。 プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 帳簿を書き出したり、別の端末に移すには？ CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. プロジェクト・取引・タグ・設定を含みます. プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 自動レートをオンにすると、MoneyTag は3文字の基準通貨コードと必要なネットワークリクエストを api.frankfurter.dev / open.er-api.com に送信します。 Frankfurter / ExchangeRate-API が利用する Cloudflare 基盤では、IP アドレス、おおよその地域、操作データ、診断情報が処理される場合があります。 この処理は App の機能提供と分析のために行われ、あなたに関連付けられる場合がありますが、トラッキングには使われず、広告もありません。 自動レートをオフにして手動レートを使えば、これらのリクエストを避けられます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。">
+<meta name="content-modified" content="2026-08-20">
+<!-- social-preview:start -->
+<meta property="og:title" content="MoneyTag: 収入と支出 — プロジェクト · タグ · レポート | iOS App">
+<meta property="og:type" content="product">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ja/index.html">
+<meta property="og:image" content="https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg">
+<meta property="og:image:secure_url" content="https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="MoneyTag: 収入と支出 — プロジェクト · タグ · レポート | iOS App">
+<meta property="og:description" content="App Store · 無料. 収入と支出 プロジェクトごとに帳簿は独立しています。収入から支出を引いた金額が、そのプロジェクトの純額です。よくある質問をまとめました。解決しない場合はメールでご連絡ください。すべて開発者本人が読んでいます。 • プロジェクトごとの純額 • タグはプロジェクトをまたいで集計 • 1プロジェクトに1通貨 • 自動または手動レート • Apple Watch アプリ • ホーム画面・ロック画面ウィジェット 「プロジェクト」とは何ですか？ プロジェクトは独立した1冊の帳簿です。。取引も通貨も収支もそれぞれ別に管理されます。。MoneyTag はそのプロジェクトの収入を合計し、支出を差し引いて、そのプロジェクトだけの純額を表示します。 通貨は換算されますか？ 各プロジェクトにはそれぞれ基準通貨があります。ホーム画面で入力通貨を直接選択できます。MoneyTag は公開為替レートを約6時間ごとに更新し、手動レートに切り替えたり、後から自動に戻したりできます。換算後の金額はプロジェクトの基準通貨で保存され、保存済みレートはオフラインでも利用できます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。 タグはどう使いますか？ タグは MoneyTag の中心機能で、おまけではありません。収入にも支出にもタグを付けられ、タグ画面では同じタグの収入・支出・純額をすべてのプロジェクトを横断して一度に集計します。プロジェクト横断のタグ分析は買い切り版の機能です。 無料でどこまで使えますか？買い切り版で何が増えますか？ 無料版 · プロジェクト 1 件 · 残り 5 件. プロジェクト・タグ・レポートが無制限。買い切りでずっと使えます. CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. Apple Watch アプリとウィジェットには何が表示されますか？ Watch アプリでは手首から取引を追加でき、現在のプロジェクトの収入・支出・純額を確認できます。ウィジェットは同じ状況をホーム画面とロック画面に表示します。 プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 帳簿を書き出したり、別の端末に移すには？ CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. プロジェクト・取引・タグ・設定を含みます. プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 自動レートをオンにすると、MoneyTag は3文字の基準通貨コードと必要なネットワークリクエストを api.frankfurter.dev / open.er-api.com に送信します。 Frankfurter / ExchangeRate-API が利用する Cloudflare 基盤では、IP アドレス、おおよその地域、操作データ、診断情報が処理される場合があります。 この処理は App の機能提供と分析のために行われ、あなたに関連付けられる場合がありますが、トラッキングには使われず、広告もありません。 自動レートをオフにして手動レートを使えば、これらのリクエストを避けられます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="iOS App Guide">
+<meta property="product:price:amount" content="0">
+<meta property="product:price:currency" content="JPY">
+<meta property="product:availability" content="instock">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="twitter:card" content="app">
+<meta name="twitter:title" content="MoneyTag: 収入と支出 — プロジェクト · タグ · レポート | iOS App">
+<meta name="twitter:description" content="App Store · 無料. 収入と支出 プロジェクトごとに帳簿は独立しています。収入から支出を引いた金額が、そのプロジェクトの純額です。よくある質問をまとめました。解決しない場合はメールでご連絡ください。すべて開発者本人が読んでいます。 • プロジェクトごとの純額 • タグはプロジェクトをまたいで集計 • 1プロジェクトに1通貨 • 自動または手動レート • Apple Watch アプリ • ホーム画面・ロック画面ウィジェット 「プロジェクト」とは何ですか？ プロジェクトは独立した1冊の帳簿です。。取引も通貨も収支もそれぞれ別に管理されます。。MoneyTag はそのプロジェクトの収入を合計し、支出を差し引いて、そのプロジェクトだけの純額を表示します。 通貨は換算されますか？ 各プロジェクトにはそれぞれ基準通貨があります。ホーム画面で入力通貨を直接選択できます。MoneyTag は公開為替レートを約6時間ごとに更新し、手動レートに切り替えたり、後から自動に戻したりできます。換算後の金額はプロジェクトの基準通貨で保存され、保存済みレートはオフラインでも利用できます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。 タグはどう使いますか？ タグは MoneyTag の中心機能で、おまけではありません。収入にも支出にもタグを付けられ、タグ画面では同じタグの収入・支出・純額をすべてのプロジェクトを横断して一度に集計します。プロジェクト横断のタグ分析は買い切り版の機能です。 無料でどこまで使えますか？買い切り版で何が増えますか？ 無料版 · プロジェクト 1 件 · 残り 5 件. プロジェクト・タグ・レポートが無制限。買い切りでずっと使えます. CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. Apple Watch アプリとウィジェットには何が表示されますか？ Watch アプリでは手首から取引を追加でき、現在のプロジェクトの収入・支出・純額を確認できます。ウィジェットは同じ状況をホーム画面とロック画面に表示します。 プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 帳簿を書き出したり、別の端末に移すには？ CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. プロジェクト・取引・タグ・設定を含みます. プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 自動レートをオンにすると、MoneyTag は3文字の基準通貨コードと必要なネットワークリクエストを api.frankfurter.dev / open.er-api.com に送信します。 Frankfurter / ExchangeRate-API が利用する Cloudflare 基盤では、IP アドレス、おおよその地域、操作データ、診断情報が処理される場合があります。 この処理は App の機能提供と分析のために行われ、あなたに関連付けられる場合がありますが、トラッキングには使われず、広告もありません。 自動レートをオフにして手動レートを使えば、これらのリクエストを避けられます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。">
+<meta name="twitter:image" content="https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg">
+<meta name="twitter:image:alt" content="MoneyTag: 収入と支出 — プロジェクト · タグ · レポート | iOS App">
+<meta name="twitter:app:name:iphone" content="MoneyTag: 収入と支出">
+<meta name="twitter:app:id:iphone" content="6801956402">
+<meta name="twitter:app:name:ipad" content="MoneyTag: 収入と支出">
+<meta name="twitter:app:id:ipad" content="6801956402">
+<meta name="twitter:label1" content="App Store">
+<meta name="twitter:data1" content="無料">
+<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/decision/ja/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fja%2Findex.html&amp;format=json" title="MoneyTag: 収入と支出 — プロジェクト · タグ · レポート | iOS App">
+<!-- social-preview:end -->
+<title>MoneyTag: 収入と支出 — プロジェクト · タグ · レポート | iOS App | MoneyTag: 収入と支出</title>
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ja/index.html">
+<link rel="alternate" type="text/markdown" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ja/index.md">
+<link rel="alternate" type="application/json" href="https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ja.json">
+<link rel="alternate" type="application/schema+json" href="https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.schema.json">
+<link rel="alternate" hreflang="ar-SA" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ar-SA/index.html">
+<link rel="alternate" hreflang="bn-BD" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/bn-BD/index.html">
+<link rel="alternate" hreflang="ca" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ca/index.html">
+<link rel="alternate" hreflang="cs" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/cs/index.html">
+<link rel="alternate" hreflang="da" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/da/index.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/de-DE/index.html">
+<link rel="alternate" hreflang="el" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/el/index.html">
+<link rel="alternate" hreflang="en-AU" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/en-AU/index.html">
+<link rel="alternate" hreflang="en-CA" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/en-CA/index.html">
+<link rel="alternate" hreflang="en-GB" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/en-GB/index.html">
+<link rel="alternate" hreflang="en-US" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/en-US/index.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/es-ES/index.html">
+<link rel="alternate" hreflang="es-MX" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/es-MX/index.html">
+<link rel="alternate" hreflang="fi" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/fi/index.html">
+<link rel="alternate" hreflang="fr-CA" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/fr-CA/index.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/fr-FR/index.html">
+<link rel="alternate" hreflang="gu-IN" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/gu-IN/index.html">
+<link rel="alternate" hreflang="he" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/he/index.html">
+<link rel="alternate" hreflang="hi" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/hi/index.html">
+<link rel="alternate" hreflang="hr" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/hr/index.html">
+<link rel="alternate" hreflang="hu" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/hu/index.html">
+<link rel="alternate" hreflang="id" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/id/index.html">
+<link rel="alternate" hreflang="it" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/it/index.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ja/index.html">
+<link rel="alternate" hreflang="kn-IN" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/kn-IN/index.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ko/index.html">
+<link rel="alternate" hreflang="ml-IN" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ml-IN/index.html">
+<link rel="alternate" hreflang="mr-IN" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/mr-IN/index.html">
+<link rel="alternate" hreflang="ms" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ms/index.html">
+<link rel="alternate" hreflang="nl-NL" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/nl-NL/index.html">
+<link rel="alternate" hreflang="no" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/no/index.html">
+<link rel="alternate" hreflang="or-IN" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/or-IN/index.html">
+<link rel="alternate" hreflang="pa-IN" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/pa-IN/index.html">
+<link rel="alternate" hreflang="pl" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/pl/index.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/pt-BR/index.html">
+<link rel="alternate" hreflang="pt-PT" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/pt-PT/index.html">
+<link rel="alternate" hreflang="ro" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ro/index.html">
+<link rel="alternate" hreflang="ru" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ru/index.html">
+<link rel="alternate" hreflang="sk" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/sk/index.html">
+<link rel="alternate" hreflang="sl-SI" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/sl-SI/index.html">
+<link rel="alternate" hreflang="sv" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/sv/index.html">
+<link rel="alternate" hreflang="ta-IN" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ta-IN/index.html">
+<link rel="alternate" hreflang="te-IN" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/te-IN/index.html">
+<link rel="alternate" hreflang="th" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/th/index.html">
+<link rel="alternate" hreflang="tr" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/tr/index.html">
+<link rel="alternate" hreflang="uk" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/uk/index.html">
+<link rel="alternate" hreflang="ur-PK" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ur-PK/index.html">
+<link rel="alternate" hreflang="vi" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/vi/index.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/zh-Hans/index.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/zh-Hant/index.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/en-US/index.html">
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<link rel="alternate" type="application/atom+xml" title="43件の認証済みライブアプリ (Atom)" href="https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ja.atom.xml">
+<link rel="alternate" type="application/rss+xml" title="43件の認証済みライブアプリ (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ja.rss.xml">
+<link rel="alternate" type="application/feed+json" title="43件の認証済みライブアプリ (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ja.feed.json">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"MobileApplication","@id":"https://apps.apple.com/app/id6801956402","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6801956402"},"name":"MoneyTag: 収入と支出","operatingSystem":"iOS","applicationCategory":"FinanceApplication","url":"https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=iag_data_ja&mt=8","installUrl":"https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=iag_data_ja&mt=8","downloadUrl":"https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=iag_data_ja&mt=8","potentialAction":{"@type":"InstallAction","target":"https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=iag_data_ja&mt=8"},"mainEntityOfPage":{"@id":"https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ja/index.html#webpage"},"description":"収入と支出 プロジェクトごとに帳簿は独立しています。収入から支出を引いた金額が、そのプロジェクトの純額です。よくある質問をまとめました。解決しない場合はメールでご連絡ください。すべて開発者本人が読んでいます。 • プロジェクトごとの純額 • タグはプロジェクトをまたいで集計 • 1プロジェクトに1通貨 • 自動または手動レート • Apple Watch アプリ • ホーム画面・ロック画面ウィジェット 「プロジェクト」とは何ですか？ プロジェクトは独立した1冊の帳簿です。。取引も通貨も収支もそれぞれ別に管理されます。。MoneyTag はそのプロジェクトの収入を合計し、支出を差し引いて、そのプロジェクトだけの純額を表示します。 通貨は換算されますか？ 各プロジェクトにはそれぞれ基準通貨があります。ホーム画面で入力通貨を直接選択できます。MoneyTag は公開為替レートを約6時間ごとに更新し、手動レートに切り替えたり、後から自動に戻したりできます。換算後の金額はプロジェクトの基準通貨で保存され、保存済みレートはオフラインでも利用できます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。 タグはどう使いますか？ タグは MoneyTag の中心機能で、おまけではありません。収入にも支出にもタグを付けられ、タグ画面では同じタグの収入・支出・純額をすべてのプロジェクトを横断して一度に集計します。プロジェクト横断のタグ分析は買い切り版の機能です。 無料でどこまで使えますか？買い切り版で何が増えますか？ 無料版 · プロジェクト 1 件 · 残り 5 件. プロジェクト・タグ・レポートが無制限。買い切りでずっと使えます. CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. Apple Watch アプリとウィジェットには何が表示されますか？ Watch アプリでは手首から取引を追加でき、現在のプロジェクトの収入・支出・純額を確認できます。ウィジェットは同じ状況をホーム画面とロック画面に表示します。 プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 帳簿を書き出したり、別の端末に移すには？ CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. プロジェクト・取引・タグ・設定を含みます. プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 自動レートをオンにすると、MoneyTag は3文字の基準通貨コードと必要なネットワークリクエストを api.frankfurter.dev / open.er-api.com に送信します。 Frankfurter / ExchangeRate-API が利用する Cloudflare 基盤では、IP アドレス、おおよその地域、操作データ、診断情報が処理される場合があります。 この処理は App の機能提供と分析のために行われ、あなたに関連付けられる場合がありますが、トラッキングには使われず、広告もありません。 自動レートをオフにして手動レートを使えば、これらのリクエストを避けられます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY","url":"https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=iag_data_ja&mt=8","availability":"https://schema.org/InStock"},"additionalProperty":[{"@type":"PropertyValue","name":"Purchase model","value":"無料で開始・買い切りで永久解除"},{"@type":"PropertyValue","name":"Published fact","value":"お金・旅行"},{"@type":"PropertyValue","name":"Published fact","value":"無料で開始・買い切りで永久解除"},{"@type":"PropertyValue","name":"Published fact","value":"オフライン"},{"@type":"PropertyValue","name":"Published fact","value":"アカウント不要"},{"@type":"PropertyValue","name":"Published fact","value":"広告なし"},{"@type":"PropertyValue","name":"Published fact","value":"追跡なし"},{"@type":"PropertyValue","name":"Published fact","value":"プライベート／端末内"},{"@type":"PropertyValue","name":"Published fact","value":"ウィジェット"},{"@type":"PropertyValue","name":"Published fact","value":"Apple Watch"},{"@type":"PropertyValue","name":"Published fact","value":"App Store · 無料"}]},{"@type":"WebPage","@id":"https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ja/index.html#webpage","url":"https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ja/index.html","name":"MoneyTag: 収入と支出 — プロジェクト · タグ · レポート | iOS App","description":"収入と支出 プロジェクトごとに帳簿は独立しています。収入から支出を引いた金額が、そのプロジェクトの純額です。よくある質問をまとめました。解決しない場合はメールでご連絡ください。すべて開発者本人が読んでいます。 • プロジェクトごとの純額 • タグはプロジェクトをまたいで集計 • 1プロジェクトに1通貨 • 自動または手動レート • Apple Watch アプリ • ホーム画面・ロック画面ウィジェット 「プロジェクト」とは何ですか？ プロジェクトは独立した1冊の帳簿です。。取引も通貨も収支もそれぞれ別に管理されます。。MoneyTag はそのプロジェクトの収入を合計し、支出を差し引いて、そのプロジェクトだけの純額を表示します。 通貨は換算されますか？ 各プロジェクトにはそれぞれ基準通貨があります。ホーム画面で入力通貨を直接選択できます。MoneyTag は公開為替レートを約6時間ごとに更新し、手動レートに切り替えたり、後から自動に戻したりできます。換算後の金額はプロジェクトの基準通貨で保存され、保存済みレートはオフラインでも利用できます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。 タグはどう使いますか？ タグは MoneyTag の中心機能で、おまけではありません。収入にも支出にもタグを付けられ、タグ画面では同じタグの収入・支出・純額をすべてのプロジェクトを横断して一度に集計します。プロジェクト横断のタグ分析は買い切り版の機能です。 無料でどこまで使えますか？買い切り版で何が増えますか？ 無料版 · プロジェクト 1 件 · 残り 5 件. プロジェクト・タグ・レポートが無制限。買い切りでずっと使えます. CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. Apple Watch アプリとウィジェットには何が表示されますか？ Watch アプリでは手首から取引を追加でき、現在のプロジェクトの収入・支出・純額を確認できます。ウィジェットは同じ状況をホーム画面とロック画面に表示します。 プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 帳簿を書き出したり、別の端末に移すには？ CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. プロジェクト・取引・タグ・設定を含みます. プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 自動レートをオンにすると、MoneyTag は3文字の基準通貨コードと必要なネットワークリクエストを api.frankfurter.dev / open.er-api.com に送信します。 Frankfurter / ExchangeRate-API が利用する Cloudflare 基盤では、IP アドレス、おおよその地域、操作データ、診断情報が処理される場合があります。 この処理は App の機能提供と分析のために行われ、あなたに関連付けられる場合がありますが、トラッキングには使われず、広告もありません。 自動レートをオフにして手動レートを使えば、これらのリクエストを避けられます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。","inLanguage":"ja","about":{"@id":"https://apps.apple.com/app/id6801956402"},"isPartOf":{"@id":"https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.json"},"mainEntity":{"@id":"https://apps.apple.com/app/id6801956402"},"primaryImageOfPage":{"@type":"ImageObject","@id":"https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg#primaryimage","contentUrl":"https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg","url":"https://alice51849.github.io/ios-app-guide/social/img/moneytag-share.jpg","width":1200,"height":675,"encodingFormat":"image/jpeg","caption":"MoneyTag: 収入と支出 — プロジェクト · タグ · レポート | iOS App","representativeOfPage":true}},{"@type":"Dataset","@id":"https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.json","name":"Lumi Studio App Install Decision Routes","description":"First-party install decision routes for verified live iOS apps in every official Apple locale.","url":"https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.json","distribution":{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ja.json"}}]}</script>
+<script id="decision-record" type="application/json">{"record_id":"ja:moneytag","locale":"ja","app_key":"moneytag","app_name":"MoneyTag: 収入と支出","priority_rank":null,"priority_group":"baseline_coverage","publisher_query":"MoneyTag: 収入と支出 — プロジェクト · タグ · レポート | iOS App","decision_context":"収入と支出 プロジェクトごとに帳簿は独立しています。収入から支出を引いた金額が、そのプロジェクトの純額です。よくある質問をまとめました。解決しない場合はメールでご連絡ください。すべて開発者本人が読んでいます。 • プロジェクトごとの純額 • タグはプロジェクトをまたいで集計 • 1プロジェクトに1通貨 • 自動または手動レート • Apple Watch アプリ • ホーム画面・ロック画面ウィジェット 「プロジェクト」とは何ですか？ プロジェクトは独立した1冊の帳簿です。。取引も通貨も収支もそれぞれ別に管理されます。。MoneyTag はそのプロジェクトの収入を合計し、支出を差し引いて、そのプロジェクトだけの純額を表示します。 通貨は換算されますか？ 各プロジェクトにはそれぞれ基準通貨があります。ホーム画面で入力通貨を直接選択できます。MoneyTag は公開為替レートを約6時間ごとに更新し、手動レートに切り替えたり、後から自動に戻したりできます。換算後の金額はプロジェクトの基準通貨で保存され、保存済みレートはオフラインでも利用できます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。 タグはどう使いますか？ タグは MoneyTag の中心機能で、おまけではありません。収入にも支出にもタグを付けられ、タグ画面では同じタグの収入・支出・純額をすべてのプロジェクトを横断して一度に集計します。プロジェクト横断のタグ分析は買い切り版の機能です。 無料でどこまで使えますか？買い切り版で何が増えますか？ 無料版 · プロジェクト 1 件 · 残り 5 件. プロジェクト・タグ・レポートが無制限。買い切りでずっと使えます. CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. Apple Watch アプリとウィジェットには何が表示されますか？ Watch アプリでは手首から取引を追加でき、現在のプロジェクトの収入・支出・純額を確認できます。ウィジェットは同じ状況をホーム画面とロック画面に表示します。 プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 帳簿を書き出したり、別の端末に移すには？ CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. プロジェクト・取引・タグ・設定を含みます. プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 自動レートをオンにすると、MoneyTag は3文字の基準通貨コードと必要なネットワークリクエストを api.frankfurter.dev / open.er-api.com に送信します。 Frankfurter / ExchangeRate-API が利用する Cloudflare 基盤では、IP アドレス、おおよその地域、操作データ、診断情報が処理される場合があります。 この処理は App の機能提供と分析のために行われ、あなたに関連付けられる場合がありますが、トラッキングには使われず、広告もありません。 自動レートをオフにして手動レートを使えば、これらのリクエストを避けられます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。","category":"finance","category_label":"お金・旅行","purchase_model":"free_with_lifetime_unlock","purchase_label":"無料で開始・買い切りで永久解除","one_time_option":true,"privacy_facts":["offline","no_account","no_ads","no_tracking","private_or_on_device"],"privacy_labels":["オフライン","アカウント不要","広告なし","追跡なし","プライベート／端末内"],"device_surfaces":["widget","apple_watch"],"device_labels":["ウィジェット","Apple Watch"],"badge_labels":["お金・旅行","無料で開始・買い切りで永久解除","オフライン","アカウント不要","広告なし","追跡なし","プライベート／端末内","ウィジェット","Apple Watch","App Store · 無料"],"canonical_guide_url":"https://alice51849.github.io/ios-app-guide/ja/moneytag.html","decision_page_url":"https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ja/index.html","oembed_url":"https://alice51849.github.io/ios-app-guide/oembed/decision/ja/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fja%2Findex.html&format=json","locale_index_url":"https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ja.json","app_store_id":"6801956402","canonical_app_store_url":"https://apps.apple.com/app/id6801956402","app_store_url":"https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=iag_data_ja&mt=8","app_store_cta_label":"App Store で MoneyTag: 収入と支出 を入手","storefront_facts":{"price":"0","currency":"JPY","formatted_price":"無料"},"guide_cta_label":"完全ガイドを読む","publisher_disclosure":"これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。","source_persona_query":"best income and expense tracker for freelance projects no subscription","source_surface":"app_guide_page","query_origin":"publisher_authored_editorially_localized","measured_search_volume":false,"is_ranking":false,"verified_live":true}</script>
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #f7f4ff;
+  --card: rgba(255,255,255,.88);
+  --ink: #17172a;
+  --muted: #5b5b77;
+  --line: rgba(61,55,111,.12);
+  --brand: #4f46e5;
+  --brand2: #9333ea;
+  --shadow: rgba(40,31,92,.16);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 10%, rgba(79,70,229,.18), transparent 24rem),
+    radial-gradient(circle at 90% 0, rgba(147,51,234,.15), transparent 22rem),
+    linear-gradient(180deg, #fcfbff, var(--bg));
+}
+main {
+  width: min(68rem, calc(100% - 2rem));
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 1.75rem;
+  box-shadow: 0 24px 64px var(--shadow);
+  padding: clamp(1.2rem, 3vw, 2rem);
+  backdrop-filter: blur(18px);
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: .8rem;
+  max-inline-size: 100%;
+  font-size: .85rem;
+  font-weight: 850;
+  letter-spacing: .05em;
+  color: var(--brand);
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.icon {
+  inline-size: 2.6rem;
+  block-size: 2.6rem;
+  border-radius: 22%;
+  border: 1px solid rgba(79,70,229,.15);
+}
+h1 {
+  margin: .65rem 0 0;
+  font-size: clamp(1.9rem, 5vw, 3.8rem);
+  line-height: 1.02;
+  letter-spacing: -.04em;
+}
+.lead {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(1rem, 2.1vw, 1.2rem);
+}
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+}
+.fact {
+  display: inline-flex;
+  max-inline-size: 100%;
+  padding: .42rem .72rem;
+  border-radius: 999px;
+  border: 1px solid rgba(79,70,229,.14);
+  background: rgba(79,70,229,.08);
+  font-size: .82rem;
+  font-weight: 760;
+  white-space: nowrap;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8rem;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0 .95rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.72);
+  color: var(--ink);
+  font-weight: 820;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.button.primary {
+  color: #fff;
+  border: 0;
+  background: linear-gradient(120deg, var(--brand), var(--brand2));
+}
+footer {
+  color: var(--muted);
+  font-size: .88rem;
+}
+@media (max-width: 42rem) {
+  main { width: min(100%, calc(100% - 1rem)); padding: .5rem 0; }
+  .actions { flex-direction: column; }
+  .button { width: 100%; }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12111f;
+    --card: rgba(23,23,42,.86);
+    --ink: #f5f4ff;
+    --muted: #d2cfff;
+    --line: rgba(227,224,255,.12);
+    --shadow: rgba(0,0,0,.35);
+  }
+  body {
+    background:
+      radial-gradient(circle at 10% 10%, rgba(99,102,241,.2), transparent 24rem),
+      radial-gradient(circle at 90% 0, rgba(192,132,252,.14), transparent 22rem),
+      linear-gradient(180deg, #0f0d19, var(--bg));
+  }
+  .fact { background: rgba(99,102,241,.12); }
+  .button { background: rgba(255,255,255,.06); color: var(--ink); }
+}
+</style>
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+</head><body><main>
+<section class="card">
+  <div class="eyebrow"><img class="icon" src="https://alice51849.github.io/ios-app-guide/stories/img/moneytag-icon.jpg" alt=""><span>MoneyTag: 収入と支出</span></div>
+  <h1>MoneyTag: 収入と支出 — プロジェクト · タグ · レポート | iOS App</h1>
+  <p class="lead">収入と支出 プロジェクトごとに帳簿は独立しています。収入から支出を引いた金額が、そのプロジェクトの純額です。よくある質問をまとめました。解決しない場合はメールでご連絡ください。すべて開発者本人が読んでいます。 • プロジェクトごとの純額 • タグはプロジェクトをまたいで集計 • 1プロジェクトに1通貨 • 自動または手動レート • Apple Watch アプリ • ホーム画面・ロック画面ウィジェット 「プロジェクト」とは何ですか？ プロジェクトは独立した1冊の帳簿です。。取引も通貨も収支もそれぞれ別に管理されます。。MoneyTag はそのプロジェクトの収入を合計し、支出を差し引いて、そのプロジェクトだけの純額を表示します。 通貨は換算されますか？ 各プロジェクトにはそれぞれ基準通貨があります。ホーム画面で入力通貨を直接選択できます。MoneyTag は公開為替レートを約6時間ごとに更新し、手動レートに切り替えたり、後から自動に戻したりできます。換算後の金額はプロジェクトの基準通貨で保存され、保存済みレートはオフラインでも利用できます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。 タグはどう使いますか？ タグは MoneyTag の中心機能で、おまけではありません。収入にも支出にもタグを付けられ、タグ画面では同じタグの収入・支出・純額をすべてのプロジェクトを横断して一度に集計します。プロジェクト横断のタグ分析は買い切り版の機能です。 無料でどこまで使えますか？買い切り版で何が増えますか？ 無料版 · プロジェクト 1 件 · 残り 5 件. プロジェクト・タグ・レポートが無制限。買い切りでずっと使えます. CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. Apple Watch アプリとウィジェットには何が表示されますか？ Watch アプリでは手首から取引を追加でき、現在のプロジェクトの収入・支出・純額を確認できます。ウィジェットは同じ状況をホーム画面とロック画面に表示します。 プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 帳簿を書き出したり、別の端末に移すには？ CSV書き出し · PDF書き出し · 画像を書き出す · バックアップと復元. プロジェクト・取引・タグ・設定を含みます. プロジェクト、取引、金額、メモ、タグ、カテゴリ、設定は MoneyTag のデバイス内ストレージに保存され、Frankfurter / ExchangeRate-API には送信されません。 自動レートをオンにすると、MoneyTag は3文字の基準通貨コードと必要なネットワークリクエストを api.frankfurter.dev / open.er-api.com に送信します。 Frankfurter / ExchangeRate-API が利用する Cloudflare 基盤では、IP アドレス、おおよその地域、操作データ、診断情報が処理される場合があります。 この処理は App の機能提供と分析のために行われ、あなたに関連付けられる場合がありますが、トラッキングには使われず、広告もありません。 自動レートをオフにして手動レートを使えば、これらのリクエストを避けられます。 参考レートは Frankfurter または ExchangeRate-API から提供され、情報提供のみを目的とします。</p>
+</section>
+<section class="card">
+  <div class="facts"><span class="fact">お金・旅行</span><span class="fact">無料で開始・買い切りで永久解除</span><span class="fact">オフライン</span><span class="fact">アカウント不要</span><span class="fact">広告なし</span><span class="fact">追跡なし</span><span class="fact">プライベート／端末内</span><span class="fact">ウィジェット</span><span class="fact">Apple Watch</span><span class="fact">App Store · 無料</span></div>
+</section>
+<section class="card">
+  <div class="actions">
+    <a class="button primary" rel="nofollow noopener" href="https://apps.apple.com/jp/app/id6801956402?pt=118326163&amp;ct=geo_pick&amp;mt=8">App Store で MoneyTag: 収入と支出 を入手</a>
+    <a class="button" href="https://alice51849.github.io/ios-app-guide/ja/moneytag.html">完全ガイドを読む</a>
+  </div>
+</section>
+<footer class="card">これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。</footer>
+</main></body></html>

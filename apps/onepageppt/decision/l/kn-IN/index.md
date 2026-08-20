@@ -2,7 +2,7 @@
 title: "OnePage PPT: ಸ್ಲೈಡ್ ಮೇಕರ್ — ಟಿಪ್ಪಣಿಯಿಂದ ಸಿದ್ಧ ಪ್ರಸ್ತುತಿ | iOS App"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/kn-IN/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

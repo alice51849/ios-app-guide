@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za izradu životopisa za promjenu karijere 2026"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/hr/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

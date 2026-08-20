@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "hr",
-  "dateModified": "2026-08-19",
-  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
-  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
+  "dateModified": "2026-08-20",
+  "content_digest": "08cf1f31e6bc352f5475e375af6e995cbd78b8edfadde161d4cfd16cff4becd3",
+  "generation_digest": "fad6ea45224faa2da20fd98029fa695291d7a154a99e6731d1c67c0f18c1d1ce",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 42,
+  "record_count": 43,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/hr.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/hr.rss.xml",
@@ -1431,6 +1431,76 @@
       "publisher_disclosure": "Vodič koji je napisao izdavač Lumi Studio, programer aplikacije. Nazivi aplikacija su zaštićeni znakovi njihovih vlasnika i koriste se samo za identifikaciju. Za dokumente, zdravlje, školu i odluke o produktivnosti provjerite službene zahtjeve gdje je to relevantno.",
       "source_persona_query": "best simple to do list app iphone no subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "hr:moneytag",
+      "locale": "hr",
+      "app_key": "moneytag",
+      "app_name": "MoneyTag: Prihodi i troškovi",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "MoneyTag: Prihodi i troškovi — Projekti · Oznake · Izvještaj | iOS App",
+      "decision_context": "Prihodi i troškovi Svaki projekt vodi svoje knjige: prihodi minus troškovi daju njegov neto rezultat. Ovdje su pitanja koja najčešće dobivamo. Ako vašeg nema, javite nam se — svaku poruku čita stvarna osoba. • Svaki projekt sa svojim neto rezultatom • Oznake koje zbrajaju kroz projekte • Jedna valuta po projektu • Živi ili ručni tečajevi • Aplikacija za Apple Watch • Widgeti na početnom i zaključanom zaslonu Što je zapravo projekt? Projekt je zasebna knjiga: vlastite transakcije, vlastita valuta i vlastiti rezultat. MoneyTag zbraja prihode, oduzima troškove i prikazuje neto rezultat samo tog projekta. Pretvara li MoneyTag valute? Svaki projekt ima vlastitu osnovnu valutu. Na početnom zaslonu možete izravno odabrati valutu unosa. MoneyTag ažurira javno dostupne tečajeve otprilike svakih 6 sati; možete postaviti i ručni tečaj te se poslije vratiti na automatski. Preračunati iznos sprema se u osnovnoj valuti projekta, a spremljeni tečajevi ostaju dostupni izvan mreže. Referentne tečajeve pruža Frankfurter ili ExchangeRate-API i služe samo za informiranje. Kako rade oznake? Oznake su temeljni dio MoneyTaga, a ne dodatak. Označite bilo koji prihod ili trošak i zaslon Oznake odjednom zbroji istu oznaku kroz sve vaše projekte: prihode, troškove i neto rezultat oznake. Analiza oznaka kroz projekte dio je Lifetime Pro. Što je besplatno, a što donosi Lifetime Pro? Besplatno · 1 projekt · preostalo 5 stavki. Neograničeni projekti, oznake i izvještaji — jedna kupnja, zauvijek. Izvezi CSV · Izvezi PDF · Izvezi sliku · Sigurnosna kopija i obnova. Što prikazuju aplikacija za Apple Watch i widgeti? Aplikacija za Watch omogućuje unos transakcije sa zapešća te prikaz prihoda, troškova i neto rezultata trenutnog projekta. Widgeti prikazuju isto stanje na početnom i zaključanom zaslonu. Projekti, transakcije, iznosi, bilješke, oznake, kategorije i postavke ostaju u lokalnoj pohrani MoneyTaga i ne šalju se Frankfurter / ExchangeRate-APIu. Kako izvesti svoje knjige ili ih prenijeti na drugi uređaj? Izvezi CSV · Izvezi PDF · Izvezi sliku · Sigurnosna kopija i obnova. Sadrži projekte, stavke, oznake i postavke. Projekti, transakcije, iznosi, bilješke, oznake, kategorije i postavke ostaju u lokalnoj pohrani MoneyTaga i ne šalju se Frankfurter / ExchangeRate-APIu. Kad su automatski tečajevi uključeni, MoneyTag šalje troslovni kod osnovne valute i potreban mrežni zahtjev na api.frankfurter.dev / open.er-api.com. Cloudflare infrastruktura koju koristi Frankfurter / ExchangeRate-API može obrađivati IP adresu, približnu regiju, podatke o interakciji i dijagnostiku. Obrada služi funkcionalnosti i analitici App, može biti povezana s vama, ne koristi se za praćenje i ne uključuje oglašavanje. Isključite automatske tečajeve i koristite ručni tečaj kako biste izbjegli te zahtjeve. Referentne tečajeve pruža Frankfurter ili ExchangeRate-API i služe samo za informiranje.",
+      "category": "finance",
+      "category_label": "Novac i putovanja",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Besplatno za početak · doživotno otključavanje",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Izvan mreže",
+        "Bez računa",
+        "Bez oglasa",
+        "Bez praćenja",
+        "Privatno / na uređaju"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Novac i putovanja",
+        "Besplatno za početak · doživotno otključavanje",
+        "Izvan mreže",
+        "Bez računa",
+        "Bez oglasa",
+        "Bez praćenja",
+        "Privatno / na uređaju",
+        "Widget",
+        "Apple Watch",
+        "App Store · Besplatno"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/moneytag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/hr/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/hr/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fhr%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
+      "app_store_id": "6801956402",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "app_store_url": "https://apps.apple.com/hr/app/id6801956402?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_cta_label": "Preuzmite MoneyTag: Prihodi i troškovi u App Storeu",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno"
+      },
+      "guide_cta_label": "Pročitajte cijeli vodič",
+      "publisher_disclosure": "Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.",
+      "source_persona_query": "best income and expense tracker for freelance projects no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

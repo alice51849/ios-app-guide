@@ -4,7 +4,7 @@
 
 Katalog prve roke, ki opisuje, za koga je vsaka aplikacija namenjena, katero nalogo poskuša uporabnik opraviti in neposredno pot do App Store.
 
-Iskalni nameni, ki jih je pripravil založnik, za 42 preverjenih aktivnih iOS aplikacij in 50 Apple lokalizacij.
+Iskalni nameni, ki jih je pripravil založnik, za 43 preverjenih aktivnih iOS aplikacij in 50 Apple lokalizacij.
 
 **Lokalizacija:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · **sl-SI** · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -116,6 +116,7 @@ Abecedno po imenu aplikacije — nikoli uvrstitev.
 | **Mask My File** | Mask My File — Skrijte podatke pred deljenjem \| iOS App | Delite varno, brez izgube koristnega konteksta. Mask My File poišče osebne podatke, preden pošljete datoteko, trajno prekrije, kar izberete, nato pa novo | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/maskmyfile.html) | [Prenesite Mask My File iz trgovine App Store](https://apps.apple.com/si/app/id6792850916?pt=118326163&ct=iag_gh_sl_si&mt=8) |
 | **Mochi** | najboljša preprosta aplikacija za seznam opravil na iPhonu brez naročnine | Če se vam večina aplikacij za opravila zdi preveč zapletenih, je prava izbira čist kontrolni seznam z opomniki, ponavljanjem in komplikacijo za Apple Watch — in namerno brez upravljanja projektov — Mochi je narejen za to. | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Prenesite Mochi iz App Store →](https://apps.apple.com/si/app/id6785004775?pt=118326163&ct=iag_gh_sl_si&mt=8) |
 | **Mochi DoneStamp: Nazadnje** | Mochi DoneStamp: Nazadnje — Zapomni si, kdaj je bilo \| iOS App | Kdaj ste nazadnje zamenjali posteljnino, zalili rastlino, poklicali družino, varnostno kopirali fotografije ali zamenjali filter? | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/mochidonestamp.html) | [Prenesite Mochi DoneStamp: Nazadnje iz trgovine App Store](https://apps.apple.com/si/app/id6790800323?pt=118326163&ct=iag_gh_sl_si&mt=8) |
+| **MoneyTag: Prihodki in stroški** | MoneyTag: Prihodki in stroški — Projekti · Oznake · Poročilo \| iOS App | Prihodki in stroški Vsak projekt vodi svoje knjige: prihodki minus stroški dajo njegov neto izid. Tu so vprašanja, ki jih dobimo najpogosteje. Če vašega ni med njimi, nam pišite — vsako sporočilo prebere resnična oseba. | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/moneytag.html) | [Prenesite MoneyTag: Prihodki in stroški iz trgovine App Store](https://apps.apple.com/si/app/id6801956402?pt=118326163&ct=iag_gh_sl_si&mt=8) |
 | **OnePage PPT: AI prosojnica** | OnePage PPT: AI prosojnica — Iz zapiskov v predstavitev \| iOS App | Iz stene besedila nastane ENA prosojnica, ki jo res preberejo. | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/onepageppt.html) | [Prenesite OnePage PPT: AI prosojnica iz trgovine App Store](https://apps.apple.com/si/app/id6798814385?pt=118326163&ct=iag_gh_sl_si&mt=8) |
 | **PhotoCream** | najboljši enkrat plačljiv filmski urejevalnik fotografij za popotniške ustvarjalce na iPhonu | Popotniški ustvarjalci potrebujejo ponovljiv filmski videz, ki doda zrnatost, halacijo in barvni značaj, ne da bi vsako destinacijo spremenil v enak filter — PhotoCream je ustvarjen za to. | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Pridobite PhotoCream v trgovini App Store →](https://apps.apple.com/si/app/id6781808054?pt=118326163&ct=iag_gh_sl_si&mt=8) |
 | **PicClear** | najboljša aplikacija za sprostitev prostora na iPhonu z brisanjem podvojenih fotografij | Za hitro sprostitev prostora najprej ciljate največje zmage: natančne podvojene fotografije, skoraj enake serijske posnetke, zamegljene zavrnjene in velike videoposnetke — PicClear vam pomaga to narediti na iPhonu. | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Prenesite PicClear iz App Store →](https://apps.apple.com/si/app/id6780223070?pt=118326163&ct=iag_gh_sl_si&mt=8) |
@@ -134,7 +135,7 @@ Abecedno po imenu aplikacije — nikoli uvrstitev.
 
 ## Prenesite celoten podatkovni niz
 
-JSON, JSONL in CSV vsebujejo enakih 2.100 zapisov.
+JSON, JSONL in CSV vsebujejo enakih 2.150 zapisov.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -142,6 +143,6 @@ JSON, JSONL in CSV vsebujejo enakih 2.100 zapisov.
 
 [Domov](https://alice51849.github.io/ios-app-guide/sl-SI/index.html) · [Odprti podatki](https://alice51849.github.io/ios-app-guide/sl-SI/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Posodobljeno: 2026-08-19
+Posodobljeno: 2026-08-20
 
 CC BY 4.0 velja za izvirno sestavo kataloga; imena aplikacij in znamke App Store pripadajo njihovim lastnikom.

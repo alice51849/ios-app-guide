@@ -2,7 +2,7 @@
 title: "適合家長規劃親子戶外時間的最佳天氣 App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hant/lumiweather.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 video_url: "https://files.catbox.moe/yyac60.mp4"
 duration: "PT16S"
 app_store_id: "6779552704"

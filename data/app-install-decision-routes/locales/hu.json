@@ -2,15 +2,15 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "hu",
-  "dateModified": "2026-08-19",
-  "content_digest": "8f735b3390726d0031ba8ea9197c5c482aeffda1965ed1bf468306499bc4342d",
-  "generation_digest": "ec37ab770d8e8cc1aa90e3b2c5e48224fd711e0c0f374b016bb8465bf3375da7",
+  "dateModified": "2026-08-20",
+  "content_digest": "08cf1f31e6bc352f5475e375af6e995cbd78b8edfadde161d4cfd16cff4becd3",
+  "generation_digest": "fad6ea45224faa2da20fd98029fa695291d7a154a99e6731d1c67c0f18c1d1ce",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 42,
+  "record_count": 43,
   "syndication": {
     "atom": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/hu.atom.xml",
     "rss": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/hu.rss.xml",
@@ -1431,6 +1431,76 @@
       "publisher_disclosure": "Kiadó által készített útmutató a Lumi Studio-tól, az alkalmazás fejlesztőjétől. Az alkalmazásnevek a tulajdonosaik védjegyei, és csak azonosítás céljából használjuk őket. Dokumentumok, egészségügy, iskola és hatékonyság terén hozott döntések esetén ellenőrizze a hivatalos követelményeket, ahol releváns.",
       "source_persona_query": "best simple to do list app iphone no subscription",
       "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "hu:moneytag",
+      "locale": "hu",
+      "app_key": "moneytag",
+      "app_name": "MoneyTag",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "MoneyTag — Projektek · Címkék · Jelentés | iOS App",
+      "decision_context": "Bevételek és kiadások Minden projekt külön könyvelést vezet: a bevétel mínusz a kiadás adja a nettó eredményét. Itt vannak a leggyakoribb kérdések. Ha a tiéd nincs köztük, írj nekünk — minden üzenetet ember olvas el. • Minden projektnek saját nettó eredménye • Címkék, amelyek projekteken átívelve összegeznek • Projektenként egyetlen pénznem • Élő vagy kézi árfolyamok • Apple Watch-alkalmazás • Widgetek a kezdő- és a zárolási képernyőn Mi is pontosan egy projekt? A projekt önmagában zárt könyvelés: saját tételek, saját pénznem és saját eredmény. A MoneyTag összeadja a bevételeket, levonja a kiadásokat, és csak arra a projektre mutatja a nettó eredményt. Átvált a MoneyTag pénznemek között? Minden projektnek saját alapértelmezett pénzneme van. A kezdőképernyőn közvetlenül kiválaszthatod a bevitel pénznemét. A MoneyTag körülbelül 6 óránként frissíti a nyilvános árfolyamokat; kézi árfolyamot is beállíthatsz, majd később visszakapcsolhatsz automatikusra. Az átváltott összeg a projekt alapértelmezett pénznemében kerül mentésre, a mentett árfolyamok pedig offline is elérhetők. A referenciaárfolyamokat a Frankfurter vagy az ExchangeRate-API biztosítja, kizárólag tájékoztatásul. Hogyan működnek a címkék? A címkék a MoneyTag gerincét adják, nem utólagos ötletek. Címkézz meg bármilyen bevételt vagy kiadást, és a Címkék képernyő egyszerre összesíti ugyanazt a címkét az összes projekteden: bevétel, kiadás és a címke nettó eredménye. A projekteken átívelő címkeelemzés a Lifetime Pro része. Mi ingyenes, és mit ad hozzá a Lifetime Pro? Ingyenes · 1 projekt · még 5 tétel. Korlátlan projekt, címke és jelentés — egyszeri vásárlás, örökre. CSV exportálása · PDF exportálása · Kép exportálása · Biztonsági mentés és visszaállítás. Mit mutat az Apple Watch-alkalmazás és a widgetek? A Watch-alkalmazásban a csuklódról rögzíthetsz egy tételt, és láthatod az aktuális projekt bevételét, kiadását és nettó eredményét. A widgetek ugyanezt az állapotot mutatják a kezdőképernyőn és a zárolási képernyőn. A projektek, tranzakciók, összegek, jegyzetek, címkék, kategóriák és beállítások a MoneyTag eszközön tárolt adatai között maradnak, és nem kerülnek a Frankfurter / ExchangeRate-APIhez. Hogyan exportálhatom a könyvelésemet, vagy vihetem át másik készülékre? CSV exportálása · PDF exportálása · Kép exportálása · Biztonsági mentés és visszaállítás. Tartalmazza a projekteket, tételeket, címkéket és beállításokat. A projektek, tranzakciók, összegek, jegyzetek, címkék, kategóriák és beállítások a MoneyTag eszközön tárolt adatai között maradnak, és nem kerülnek a Frankfurter / ExchangeRate-APIhez. Bekapcsolt automatikus árfolyamoknál a MoneyTag elküldi a hárombetűs alapdeviza-kódot és a szükséges hálózati kérést az api.frankfurter.dev / open.er-api.com címre. A Frankfurter / ExchangeRate-API Cloudflare-infrastruktúrája kezelheti az IP-címet, a hozzávetőleges régiót, az interakciós adatokat és a diagnosztikát. Ez a kezelés az App működését és elemzését szolgálja, Önhöz kapcsolható, nem használjuk követésre, és nem jár hirdetéssel. A kérések elkerüléséhez kapcsolja ki az automatikus árfolyamokat, és használjon kézi árfolyamot. A referenciaárfolyamokat a Frankfurter vagy az ExchangeRate-API biztosítja, kizárólag tájékoztatásul.",
+      "category": "finance",
+      "category_label": "Pénzügy & utazás",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Nincs fiók",
+        "Nincs reklám",
+        "Nincs követés",
+        "Privát / eszközön tárolt"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Pénzügy & utazás",
+        "Ingyenes kezdés · életre szóló feloldás",
+        "Offline",
+        "Nincs fiók",
+        "Nincs reklám",
+        "Nincs követés",
+        "Privát / eszközön tárolt",
+        "Widget",
+        "Apple Watch",
+        "App Store · Ingyenes"
+      ],
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/moneytag.html",
+      "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/hu/index.html",
+      "oembed_url": "https://alice51849.github.io/ios-app-guide/oembed/decision/hu/moneytag.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fapps%2Fmoneytag%2Fdecision%2Fl%2Fhu%2Findex.html&format=json",
+      "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
+      "app_store_id": "6801956402",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "app_store_url": "https://apps.apple.com/hu/app/id6801956402?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_cta_label": "Töltse le a(z) MoneyTag appot az App Store-ból",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "HUF",
+        "formatted_price": "Ingyenes"
+      },
+      "guide_cta_label": "Olvasd el a teljes útmutatót",
+      "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
+      "source_persona_query": "best income and expense tracker for freelance projects no subscription",
+      "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
       "is_ranking": false,

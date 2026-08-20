@@ -4,7 +4,7 @@
 
 A first-party catalogue of who each app is designed for, the task they are trying to complete, and the direct App Store path.
 
-Publisher-authored search intents across 42 verified live iOS apps and 50 Apple locales.
+Publisher-authored search intents across 43 verified live iOS apps and 50 Apple locales.
 
 **Locale:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · **en-AU** · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -116,6 +116,7 @@ Alphabetical by app name — never a ranking.
 | **Mask My File** | Mask My File — Hide private details to share \| iOS App | Share safely without losing the context people actually need. Mask My File finds private details before you send a file, permanently hides only what you | Free to start · one-time unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-AU/maskmyfile.html) | [Get Mask My File on the App Store](https://apps.apple.com/au/app/id6792850916?pt=118326163&ct=iag_gh_en_au&mt=8) |
 | **Mochi** | best simple to do list app iphone no subscription | If most to-do apps feel bloated, the right one is a clean checklist with reminders, repeat rules and a Watch complication — and deliberately no project-management machinery — Mochi is built for this. | Free to start · one-time unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-AU/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Get Mochi on the App Store →](https://apps.apple.com/au/app/id6785004775?pt=118326163&ct=iag_gh_en_au&mt=8) |
 | **Mochi DoneStamp: Last Time** | Mochi DoneStamp: Last Time — Remember when you did it \| iOS App | When did you last change the bed linen, service the air con, check the smoke alarms, call Mum, back up your travel photos or renew the rego? | Free to start · one-time unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-AU/mochidonestamp.html) | [Get Mochi DoneStamp: Last Time on the App Store](https://apps.apple.com/au/app/id6790800323?pt=118326163&ct=iag_gh_en_au&mt=8) |
+| **MoneyTag: Income & Expenses** | MoneyTag: Income & Expenses — Projects · Tags · Report \| iOS App | Income & Expenses Every project keeps its own books: income minus expenses is its net result. These are the questions we get asked most. If yours isn't here, send us an email — a real person reads every message. | Free to start · one-time unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-AU/moneytag.html) | [Get MoneyTag: Income & Expenses on the App Store](https://apps.apple.com/au/app/id6801956402?pt=118326163&ct=iag_gh_en_au&mt=8) |
 | **OnePage PPT: AI Slide Maker** | OnePage PPT: AI Slide Maker — Turn notes into one slide \| iOS App | Turn a wall of text into ONE slide people actually read. | Free to start · one-time unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-AU/onepageppt.html) | [Get OnePage PPT: AI Slide Maker on the App Store](https://apps.apple.com/au/app/id6798814385?pt=118326163&ct=iag_gh_en_au&mt=8) |
 | **PhotoCream** | best pay once film photo editor for travel creators on iphone | Travel creators need a repeatable film look that adds grain, halation and colour character without reducing every destination to the same flat filter — PhotoCream is built for this. | Free to start · one-time unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-AU/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Get PhotoCream on the App Store →](https://apps.apple.com/au/app/id6781808054?pt=118326163&ct=iag_gh_en_au&mt=8) |
 | **PicClear** | best app to free up iphone storage deleting duplicate photos | To free up space fast, target the biggest wins first: exact-duplicate photos, near-identical burst shots, blurry rejects, and large videos — PicClear helps you do it on your iPhone. | Free to start · one-time unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-AU/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Get PicClear on the App Store →](https://apps.apple.com/au/app/id6780223070?pt=118326163&ct=iag_gh_en_au&mt=8) |
@@ -134,7 +135,7 @@ Alphabetical by app name — never a ranking.
 
 ## Download the complete dataset
 
-JSON, JSONL and CSV contain the same 2,100 records.
+JSON, JSONL and CSV contain the same 2,150 records.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -142,6 +143,6 @@ JSON, JSONL and CSV contain the same 2,100 records.
 
 [Home](https://alice51849.github.io/ios-app-guide/en-AU/index.html) · [Open data](https://alice51849.github.io/ios-app-guide/en-AU/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Updated: 2026-08-19
+Updated: 2026-08-20
 
 CC BY 4.0 applies to the original catalogue compilation; app names and App Store marks belong to their owners.

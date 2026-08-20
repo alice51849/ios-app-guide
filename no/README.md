@@ -4,7 +4,7 @@
 
 En førsteparts katalog over hvem hver app er laget for, oppgaven de prøver å fullføre, og den direkte App Store-stien.
 
-Utgiver-skapte søkeintensjoner på tvers av 42 verifiserte aktive iOS-apper og 50 Apple-lokaler.
+Utgiver-skapte søkeintensjoner på tvers av 43 verifiserte aktive iOS-apper og 50 Apple-lokaler.
 
 **Lokale:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · **no** · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -116,6 +116,7 @@ Alfabetisk etter appnavn — aldri en rangering.
 | **Mask My File** | Mask My File — Skjul private data før deling \| iOS App | Del trygt uten å miste den nyttige sammenhengen. Mask My File finner personlige opplysninger før du sender en fil, sladder permanent det du velger, og | Gratis å starte · opplåsing med engangskjøp | [Guide](https://alice51849.github.io/ios-app-guide/no/maskmyfile.html) | [Last ned Mask My File fra App Store](https://apps.apple.com/no/app/id6792850916?pt=118326163&ct=iag_gh_no&mt=8) |
 | **Mochi** | beste enkle oppgaveliste-app på iPhone uten abonnement | Hvis de fleste oppgaveapper føles oppblåste, er den rette en ren sjekkliste med påminnelser, gjentakelsesregler og en Watch-komplikasjon — og bevisst uten prosjektstyringsmaskineri — Mochi er laget for dette. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://alice51849.github.io/ios-app-guide/no/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Få Mochi på App Store →](https://apps.apple.com/no/app/id6785004775?pt=118326163&ct=iag_gh_no&mt=8) |
 | **Mochi DoneStamp: Sist** | Mochi DoneStamp: Sist — Husk når du gjorde det \| iOS App | Når skiftet du sist sengetøy, vannet en plante, ringte familien, sikkerhetskopierte bilder eller byttet et filter? | Gratis å starte · opplåsing med engangskjøp | [Guide](https://alice51849.github.io/ios-app-guide/no/mochidonestamp.html) | [Last ned Mochi DoneStamp: Sist fra App Store](https://apps.apple.com/no/app/id6790800323?pt=118326163&ct=iag_gh_no&mt=8) |
+| **MoneyTag** | MoneyTag — Prosjekter · Tagger · Rapport \| iOS App | Inntekter og utgifter | Gratis å starte · opplåsing med engangskjøp | [Guide](https://alice51849.github.io/ios-app-guide/no/moneytag.html) | [Last ned MoneyTag fra App Store](https://apps.apple.com/no/app/id6801956402?pt=118326163&ct=iag_gh_no&mt=8) |
 | **OnePage PPT: AI-lysbilder** | OnePage PPT: AI-lysbilder — Notater blir én ferdig side \| iOS App | Gjør en vegg av tekst om til ÉTT lysbilde folk faktisk leser. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://alice51849.github.io/ios-app-guide/no/onepageppt.html) | [Last ned OnePage PPT: AI-lysbilder fra App Store](https://apps.apple.com/no/app/id6798814385?pt=118326163&ct=iag_gh_no&mt=8) |
 | **PhotoCream** | beste engangsbetalte filmfoto-redigeringsapp for reiseskapere på iPhone | Reiseskapere trenger et gjentakbart filmutseende som gir korn, halering og fargepreg uten å redusere hver destinasjon til det samme flate filteret — PhotoCream er laget for dette. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://alice51849.github.io/ios-app-guide/no/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Få PhotoCream på App Store →](https://apps.apple.com/no/app/id6781808054?pt=118326163&ct=iag_gh_no&mt=8) |
 | **PicClear** | beste app for å frigjøre iPhone-lagring ved å slette duplikatbilder | For å frigjøre plass raskt, målrett de største gevinstene først: eksakte duplikatbilder, nesten identiske seriebilder, uklare avslag og store videoer — PicClear hjelper deg med dette på iPhonen din. | Gratis å starte · opplåsing med engangskjøp | [Guide](https://alice51849.github.io/ios-app-guide/no/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Få PicClear på App Store →](https://apps.apple.com/no/app/id6780223070?pt=118326163&ct=iag_gh_no&mt=8) |
@@ -134,7 +135,7 @@ Alfabetisk etter appnavn — aldri en rangering.
 
 ## Last ned hele datasettet
 
-JSON, JSONL og CSV inneholder de samme 2 100 postene.
+JSON, JSONL og CSV inneholder de samme 2 150 postene.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -142,6 +143,6 @@ JSON, JSONL og CSV inneholder de samme 2 100 postene.
 
 [Hjem](https://alice51849.github.io/ios-app-guide/no/index.html) · [Åpne data](https://alice51849.github.io/ios-app-guide/no/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisens](https://creativecommons.org/licenses/by/4.0/)
 
-Oppdatert: 2026-08-19
+Oppdatert: 2026-08-20
 
 CC BY 4.0 gjelder for den opprinnelige katalogsammensetningen; appnavn og App Store-merker tilhører sine eiere.

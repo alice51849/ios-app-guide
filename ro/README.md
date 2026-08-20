@@ -4,7 +4,7 @@
 
 O listă de primă parte a destinatarilor fiecărei aplicații, a sarcinii pe care încearcă să o îndeplinească și a traseului direct către App Store.
 
-Intenții de căutare redactate de editori pentru 42 de aplicații iOS verificate și active și 50 de regiuni Apple.
+Intenții de căutare redactate de editori pentru 43 de aplicații iOS verificate și active și 50 de regiuni Apple.
 
 **Localizare:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · **ro** · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -116,6 +116,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 | **Mask My File** | Mask My File — Ascunde datele private \| iOS App | Distribuie în siguranță fără să pierzi contextul util. Mask My File găsește datele personale înainte să trimiți un fișier, acoperă definitiv ce alegi, apoi | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://alice51849.github.io/ios-app-guide/ro/maskmyfile.html) | [Descarcă Mask My File din App Store](https://apps.apple.com/ro/app/id6792850916?pt=118326163&ct=iag_gh_ro&mt=8) |
 | **Mochi** | cea mai bună aplicație simplă de listă de făcut pe iPhone fără abonament | Dacă majoritatea aplicațiilor de listă de făcut par încărcate, cea potrivită este o listă curată cu memento-uri, reguli de repetare și o complicație pentru Watch — și fără mecanisme de management de proiect — Mochi este construită pentru asta. | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://alice51849.github.io/ios-app-guide/ro/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [Descarcă Mochi din App Store →](https://apps.apple.com/ro/app/id6785004775?pt=118326163&ct=iag_gh_ro&mt=8) |
 | **Mochi DoneStamp: Ultima dată** | Mochi DoneStamp: Ultima dată — Ține minte când ai făcut-o \| iOS App | Când ai schimbat ultima dată așternutul, ai udat o plantă, ai sunat familia, ai salvat fotografiile sau ai înlocuit un filtru? | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://alice51849.github.io/ios-app-guide/ro/mochidonestamp.html) | [Descarcă Mochi DoneStamp: Ultima dată din App Store](https://apps.apple.com/ro/app/id6790800323?pt=118326163&ct=iag_gh_ro&mt=8) |
+| **MoneyTag** | MoneyTag — Proiecte · Etichete · Raport \| iOS App | Venituri și cheltuieli | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://alice51849.github.io/ios-app-guide/ro/moneytag.html) | [Descarcă MoneyTag din App Store](https://apps.apple.com/ro/app/id6801956402?pt=118326163&ct=iag_gh_ro&mt=8) |
 | **OnePage PPT: slide-uri AI** | OnePage PPT: slide-uri AI — Din notițe într-o pagină \| iOS App | Transformă un zid de text într-UN slide pe care oamenii chiar îl citesc. | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://alice51849.github.io/ios-app-guide/ro/onepageppt.html) | [Descarcă OnePage PPT: slide-uri AI din App Store](https://apps.apple.com/ro/app/id6798814385?pt=118326163&ct=iag_gh_ro&mt=8) |
 | **PhotoCream** | cel mai bun editor foto cu efect de film cu plată unică pentru creatori de călătorii pe iPhone | Creatorii de călătorii au nevoie de un aspect de film repetabil care adaugă granulație, halou și caracter cromatic fără să reducă fiecare destinație la același filtru plat — PhotoCream este creat pentru asta. | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://alice51849.github.io/ios-app-guide/ro/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Descarcă PhotoCream din App Store →](https://apps.apple.com/ro/app/id6781808054?pt=118326163&ct=iag_gh_ro&mt=8) |
 | **PicClear** | cea mai bună aplicație pentru eliberarea spațiului pe iPhone prin ștergerea fotografiilor duplicate | Pentru a elibera spațiu rapid, țintește cele mai mari câștiguri mai întâi: fotografii duplicate exacte, serii aproape identice, fotografii neclare și videoclipuri mari — PicClear te ajută să faci asta pe iPhone. | Început gratuit · deblocare cu o singură achiziție | [Ghid](https://alice51849.github.io/ios-app-guide/ro/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Descarcă PicClear din App Store →](https://apps.apple.com/ro/app/id6780223070?pt=118326163&ct=iag_gh_ro&mt=8) |
@@ -134,7 +135,7 @@ Alfabetic după numele aplicației — niciodată un clasament.
 
 ## Descarcă setul complet de date
 
-JSON, JSONL și CSV conțin aceleași 2.100 de înregistrări.
+JSON, JSONL și CSV conțin aceleași 2.150 de înregistrări.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -142,6 +143,6 @@ JSON, JSONL și CSV conțin aceleași 2.100 de înregistrări.
 
 [Acasă](https://alice51849.github.io/ios-app-guide/ro/index.html) · [Date deschise](https://alice51849.github.io/ios-app-guide/ro/data/lumi-studio-publisher-search-intent-catalog.html) · [Licență](https://creativecommons.org/licenses/by/4.0/)
 
-Actualizat: 2026-08-19
+Actualizat: 2026-08-20
 
 CC BY 4.0 se aplică compilației originale a catalogului; numele aplicațiilor și mărcile App Store aparțin proprietarilor lor.

@@ -4,7 +4,7 @@
 
 ایسا کیٹلاگ جسے ڈویلپر براہ راست شائع کرتا ہے اور جو بتاتا ہے کہ ہر ایپ کس کے لیے بنائی گئی ہے، صارف کون سا کام مکمل کرنا چاہتا ہے اور App Store تک براہ راست کیسے پہنچنا ہے۔
 
-42 تصدیق شدہ اور App Store پر دستیاب iOS ایپس اور Apple کے 50 زبان و خطہ لوکیلز کے لیے پبلشر کی تحریر کردہ سرچ انٹینٹس۔
+43 تصدیق شدہ اور App Store پر دستیاب iOS ایپس اور Apple کے 50 زبان و خطہ لوکیلز کے لیے پبلشر کی تحریر کردہ سرچ انٹینٹس۔
 
 **زبان و خطہ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · **ur-PK** · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -116,6 +116,7 @@ App Store پر دستیابی کی تصدیق شدہ ہر ایپ کے لیے ا�
 | **Mask My File** | Mask My File — شیئر سے پہلے نجی ڈیٹا چھپائیں \| iOS App | مفید سیاق کھوئے بغیر محفوظ طریقے سے شیئر کریں۔ Mask My File فائل بھیجنے سے پہلے نجی تفصیلات ڈھونڈتا ہے، انہیں ہمیشہ کے لیے چھپاتا ہے، پھر تیار فائل | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/maskmyfile.html) | [App Store سے Mask My File حاصل کریں](https://apps.apple.com/pk/app/id6792850916?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **Mochi** | iPhone کے لیے بہترین سادہ ٹو ڈو لسٹ ایپ بغیر سبسکرپشن کے | اگر زیادہ تر ٹو ڈو ایپس بھاری محسوس ہوتی ہیں، تو صحیح ایپ ایک صاف چیک لسٹ ہے جس میں یاد دہانیاں، دہرائی کے اصول اور واچ کمپلیکیشن ہے — اور جان بوجھ کر کوئی پروجیکٹ مینجمنٹ کا نظام نہیں — Mochi اس کے لیے بنایا گیا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [App Store سے Mochi حاصل کریں →](https://apps.apple.com/pk/app/id6785004775?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **Mochi DoneStamp: آخری بار** | Mochi DoneStamp: آخری بار — یاد رکھیں آپ نے کب کیا تھا \| iOS App | آپ نے آخری بار چادر کب بدلی، پودے کو پانی کب دیا، گھر والوں کو فون، تصاویر کا بیک اپ یا فلٹر کب بدلا؟ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/mochidonestamp.html) | [App Store سے Mochi DoneStamp: آخری بار حاصل کریں](https://apps.apple.com/pk/app/id6790800323?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
+| **MoneyTag: آمدنی اور اخراجات** | MoneyTag: آمدنی اور اخراجات — پروجیکٹ · ٹیگز · رپورٹ \| iOS App | آمدنی اور اخراجات ہر پروجیکٹ کا اپنا کھاتہ ہوتا ہے: آمدنی میں سے اخراجات نکال کر اس کی خالص رقم بنتی ہے۔ سب سے زیادہ پوچھے جانے والے سوال یہ رہے۔ آپ کا سوال یہاں نہ ملے تو ہمیں لکھیے — ہر پیغام ایک حقیقی شخص پڑھتا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/moneytag.html) | [App Store سے MoneyTag: آمدنی اور اخراجات حاصل کریں](https://apps.apple.com/pk/app/id6801956402?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **OnePage PPT: سلائیڈ میکر** | OnePage PPT: سلائیڈ میکر — نوٹس سے مکمل پریزنٹیشن \| iOS App | متن کے ڈھیر کو ایک ایسی سلائیڈ میں بدلیں جسے لوگ واقعی پڑھیں۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/onepageppt.html) | [App Store سے OnePage PPT: سلائیڈ میکر حاصل کریں](https://apps.apple.com/pk/app/id6798814385?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **PhotoCream** | سفر کرنے والے کریئیٹرز کے لیے iPhone پر بہترین ایک بار ادائیگی والی فلم فوٹو ایڈیٹر | سفر کرنے والے کریئیٹرز کو ایک ایسا فلم لک چاہیے جو گرین، ہیلیشن اور کلر کیریکٹر شامل کرے بغیر ہر منزل کو ایک جیسے فلیٹ فلٹر میں نہ بدل دے — PhotoCream اسی مقصد کے لیے بنایا گیا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [PhotoCream App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6781808054?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **PicClear** | iPhone کی اسٹوریج خالی کرنے کے لیے بہترین ایپ جو نقل شدہ تصاویر حذف کرے | جلدی جگہ خالی کرنے کے لیے سب سے بڑے فائدے پہلے ہدف بنائیں: بالکل نقل شدہ تصاویر، قریب قریب ایک جیسی برسٹ شاٹس، دھندلی تصاویر، اور بڑے ویڈیوز — PicClear آپ کے iPhone پر مدد کرتا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App Store سے PicClear حاصل کریں →](https://apps.apple.com/pk/app/id6780223070?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
@@ -134,7 +135,7 @@ App Store پر دستیابی کی تصدیق شدہ ہر ایپ کے لیے ا�
 
 ## مکمل ڈیٹا سیٹ ڈاؤن لوڈ کریں
 
-JSON، JSONL اور CSV میں وہی 2,100 ریکارڈز شامل ہیں۔
+JSON، JSONL اور CSV میں وہی 2,150 ریکارڈز شامل ہیں۔
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -142,6 +143,6 @@ JSON، JSONL اور CSV میں وہی 2,100 ریکارڈز شامل ہیں۔
 
 [ہوم](https://alice51849.github.io/ios-app-guide/ur-PK/index.html) · [کھلا ڈیٹا](https://alice51849.github.io/ios-app-guide/ur-PK/data/lumi-studio-publisher-search-intent-catalog.html) · [لائسنس](https://creativecommons.org/licenses/by/4.0/)
 
-اپ ڈیٹ کیا گیا: 2026-08-19
+اپ ڈیٹ کیا گیا: 2026-08-20
 
 CC BY 4.0 اصل کیٹلاگ کی تدوین پر لاگو ہوتا ہے؛ ایپس کے نام اور App Store کے نشانات ان کے مالکان کی ملکیت ہیں۔

@@ -2,7 +2,7 @@
 title: "DailyMate Lite：ひとこと練習 — 50言語の実践フレーズ | iOS App"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/ja/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

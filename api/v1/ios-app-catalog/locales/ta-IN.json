@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-19",
-  "content_digest": "048004401ed2fc269d9fbbfca9e238f8ad3dc2227c63d0d37d41abaa6a545208",
+  "date_modified": "2026-08-20",
+  "content_digest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
   "locale": "ta-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 42,
+  "record_count": 43,
   "apps": [
     {
       "key": "notesstudio100",
@@ -1317,6 +1317,42 @@
         "currency": "INR",
         "formatted_price": "இலவசம்",
         "storefront_url": "https://apps.apple.com/in/app/id6790800323"
+      }
+    },
+    {
+      "key": "moneytag",
+      "app_store_id": "6801956402",
+      "name": "MoneyTag: வரவு & செலவு",
+      "summary": "ஒவ்வொரு திட்டமும் தனது சொந்தக் கணக்கை வைத்திருக்கிறது: வரவில் இருந்து செலவைக் கழித்தால் கிடைப்பதுதான் அதன் நிகரத் தொகை. அதிகம் கேட்கப்படும் கேள்விகள் இங்கே. உங்கள் கேள்விக்கு விடை இல்லையெனில் எழுதுங்கள் — ஒவ்வொரு செய்தியையும் ஒரு நிஜ மனிதர் படிக்கிறார்.",
+      "category": "finance",
+      "search_terms": [
+        "பட்ஜெட்",
+        "சேமிப்பு",
+        "நாணய மாற்றி",
+        "தனிப்பட்ட நிதி",
+        "பண மேலாண்மை",
+        "பின்வாங்கவும் & மீட்டெடுக்கவும்",
+        "ஏற்றுமதி PDF"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=iag_api_ta_in&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/moneytag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "இலவசம்",
+        "storefront_url": "https://apps.apple.com/in/app/id6801956402"
       }
     },
     {

@@ -4,7 +4,7 @@
 
 第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。
 
-由开发者撰写的搜索意图，涵盖 42 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
+由开发者撰写的搜索意图，涵盖 43 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
 
 **地区语言:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · **zh-Hans** · [zh-Hant](../zh-Hant/)
 
@@ -103,7 +103,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **HoursTag Lite** | HoursTag Lite — 看见每样东西的真实代价 \| iOS App | HoursTag Lite - 看见每样东西的真实代价 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/hourstaglite.html) | [在 App Store 获取 HoursTag Lite](https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **HoursTag：价格换工时** | HoursTag：价格换工时 — 预算、记账、省钱与储蓄 \| iOS App | 这真正要花你多少？不是多少钱——是你生命中的几个小时。 | 付费下载 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/hourstag.html) | [在 App Store 获取 HoursTag：价格换工时](https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **LockHour Pro** | 学习时阻断社交媒体的最佳应用 iPhone | 考试期间，意志力不是工具——硬性定时屏蔽才是——LockHour Pro专为此设计。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-app-to-block-social-media-while-studying-iphone.html) | [在 App Store 获取 LockHour Pro →](https://apps.apple.com/cn/app/id6780107485?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
-| **Lumi Bopomofo** | iPhone 上儿童学习注音符号的最佳注音应用 | 对于初学注音的儿童，应用应涵盖全部 37 个符号，通过描摹和游戏教学——专为 4–7 岁初学阶段设计，无广告且不收集数据——Lumi Bopomofo 正是为此打造。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [在 App Store 获取 Lumi Bopomofo →](https://apps.apple.com/app/id6773017109?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
+| **Lumi Bopomofo** | 让孩子在 iPhone 上学注音的最佳注音 App | 对第一次学注音的孩子,App 应通过描摹与游戏涵盖全部 37 个符号 —— 专为 4 到 7 岁初学阶段设计、无广告、不搜集数据 —— Lumi Bopomofo 正是为此打造。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html) | [在 App Store 取得 Lumi Bopomofo →](https://apps.apple.com/app/id6773017109?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **Lumi Bopomofo Pro** | 适合双语儿童的最佳完整注音App | 双语儿童在家学习注音需要一条完整路径，涵盖发音、符号、声调和拼读，并有足够趣味重复让系统变得熟悉 —— Lumi Bopomofo Pro正是为此设计。 | 付费下载 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-complete-zhuyin-app-for-bilingual-children.html) | [在App Store获取Lumi Bopomofo Pro →](https://apps.apple.com/app/id6775773117?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **Lumi Letters** | iPhone 上最佳无广告儿童教育游戏应用 | 对幼儿来说，关键是无广告和不收集数据——学习应用应在无广告、无数据收集且家长可信赖的一次解锁中教学——Lumi Letters 正是为此打造。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-educational-game-app-for-kids-no-ads-iphone.html) | [在 App Store 获取 Lumi Letters →](https://apps.apple.com/app/id6778748533?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **Lumi Letters Pro** | 适合家庭学前启蒙的完整拼读应用推荐 | 准备入园的家庭需要一条完整的早期阅读路径，将字母发音、书写和单词构建有机结合，而不是一组无关联的字母游戏 —— Lumi Letters Pro正是为此设计。 | 付费下载 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html) | [在App Store获取Lumi Letters Pro →](https://apps.apple.com/app/id6778491147?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
@@ -116,6 +116,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **Mask My File** | Mask My File — 分享前遮挡隐私敏感信息 \| iOS App | 安心分享，同时保留有用的上下文。Mask My File 会在你发送文件前找出隐私信息，永久遮挡后，再重新打开并核对新导出的文件，确认无误才显示 Private Ready。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/maskmyfile.html) | [在 App Store 获取 Mask My File](https://apps.apple.com/cn/app/id6792850916?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **Mochi** | iPhone 上最佳简单待办事项应用，无订阅 | 如果大多数待办应用感觉臃肿，合适的就是带提醒、重复规则和 Watch 复杂功能的干净清单——且刻意无项目管理功能——Mochi 正是为此打造。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-simple-to-do-list-app-iphone-no-subscription.html) | [在 App Store 获取 Mochi →](https://apps.apple.com/cn/app/id6785004775?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **Mochi DoneStamp：上次何时** | Mochi DoneStamp：上次何时 — 生活事件、周期与完成记录 \| iOS App | 上次换床单、给植物浇水、打电话给家人、备份照片或更换滤芯，是什么时候？ | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/mochidonestamp.html) | [在 App Store 获取 Mochi DoneStamp：上次何时](https://apps.apple.com/cn/app/id6790800323?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
+| **MoneyTag: 收入与支出** | MoneyTag: 收入与支出 — 项目 · 标签 · 报表 \| iOS App | 收入与支出 每个项目都有自己的账本：收入减支出，就是这个项目的净额。以下是大家最常问的问题；没有找到答案，欢迎写信给我们，每封信都有人亲自看。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/moneytag.html) | [在 App Store 获取 MoneyTag: 收入与支出](https://apps.apple.com/cn/app/id6801956402?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **OnePage PPT: AI一页幻灯片** | OnePage PPT: AI一页幻灯片 — 笔记、截图、PDF秒变演示文稿 \| iOS App | 把一大段文字，变成别人真的会看完的一页。不用再从空白页开始，也不用把 20 页素材硬塞成一页。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/onepageppt.html) | [在 App Store 获取 OnePage PPT: AI一页幻灯片](https://apps.apple.com/cn/app/id6798814385?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **PhotoCream** | iPhone旅行创作者一次付费胶片风格照片编辑器推荐 | 旅行创作者需要可重复的胶片风格，能添加颗粒、光晕和色彩特征，而不会让每个目的地都变成同一种平淡滤镜——PhotoCream专为此打造。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [在App Store获取PhotoCream →](https://apps.apple.com/cn/app/id6781808054?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **PicClear** | iPhone 上最佳释放存储空间删除重复照片的应用 | 快速释放空间，优先处理最大收益：完全重复照片、近似连拍、模糊废片和大视频——PicClear 助你在 iPhone 上完成。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [在 App Store 获取 PicClear →](https://apps.apple.com/cn/app/id6780223070?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
@@ -134,7 +135,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## 下载完整数据集
 
-JSON、JSONL 和 CSV 格式包含相同的 2,100 条记录。
+JSON、JSONL 和 CSV 格式包含相同的 2,150 条记录。
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -142,6 +143,6 @@ JSON、JSONL 和 CSV 格式包含相同的 2,100 条记录。
 
 [首页](https://alice51849.github.io/ios-app-guide/zh-Hans/index.html) · [开放数据](https://alice51849.github.io/ios-app-guide/zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html) · [许可协议](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-08-19
+更新日期: 2026-08-20
 
 CC BY 4.0 适用于原始目录编纂；应用名称和 App Store 标识归其所有者所有。

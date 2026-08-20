@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-19",
-  "content_digest": "048004401ed2fc269d9fbbfca9e238f8ad3dc2227c63d0d37d41abaa6a545208",
+  "date_modified": "2026-08-20",
+  "content_digest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
   "locale": "pl",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 42,
+  "record_count": 43,
   "apps": [
     {
       "key": "notesstudio100",
@@ -1348,6 +1348,42 @@
         "currency": "PLN",
         "formatted_price": "Bezpłatnie",
         "storefront_url": "https://apps.apple.com/pl/app/id6790800323"
+      }
+    },
+    {
+      "key": "moneytag",
+      "app_store_id": "6801956402",
+      "name": "MoneyTag: Przychody i wydatki",
+      "summary": "Każdy projekt prowadzi własną księgę: przychody minus wydatki dają jego wynik netto. Poniżej najczęstsze pytania. Jeśli nie ma wśród nich Twojego, napisz do nas — każdą wiadomość czyta żywy człowiek.",
+      "category": "finance",
+      "search_terms": [
+        "kontrola wydatków",
+        "przelicznik walut",
+        "oszczędzanie",
+        "Waluta",
+        "Kursy wymiany",
+        "Trend miesięczny",
+        "Eksportuj PDF"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/pl/app/id6801956402?pt=118326163&ct=iag_api_pl&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/pl/moneytag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PLN",
+        "formatted_price": "Bezpłatnie",
+        "storefront_url": "https://apps.apple.com/pl/app/id6801956402"
       }
     },
     {

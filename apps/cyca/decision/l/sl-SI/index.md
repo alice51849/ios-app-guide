@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za sledenje menstruacije brez računa za iPhone"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/sl-SI/index.html"
-modified: "2026-08-19"
+modified: "2026-08-20"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

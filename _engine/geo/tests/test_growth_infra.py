@@ -3623,6 +3623,11 @@ class GeneratorTests(unittest.TestCase):
         linked = set()
         guide_pages = gen_smart_app_banners._guide_pages(pages)
         for path in guide_pages:
+          # Name the page in the failure. Without this the whole sweep reports
+          # a bare "1 != 0" and the only way to find which of ~31k pages drifted
+          # is to re-derive the loop by hand -- which is exactly what the
+          # 2026-08 rebuild outage cost an afternoon of.
+          with self.subTest(page=str(path.relative_to(pages))):
             source = path.read_text(encoding="utf-8")
             if gen_guide_design.BLOCK_START in source:
                 linked.add(path)

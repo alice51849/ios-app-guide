@@ -98,11 +98,11 @@ jobs:
           python3 gen_publisher_disclosures.py
           python3 gen_guide_design.py
           python3 gen_app_store_facts.py
-          python3 app_install_decision_routes.py
-          # A newly live app gets its decision routes above, so the finder has
-          # to be rebuilt here — before the verification gate — or the gate
-          # fails on inbound links that only the next step would create.
+          # The Finder first writes the newly live app's raw catalogue record
+          # and rebuilds publisher intents from it. Decision routes consume
+          # that exact-coverage intent dataset, so they cannot bootstrap first.
           python3 portfolio_app_finder.py
+          python3 app_install_decision_routes.py
           # The buyer-intent catalog requires exact Finder/persona coverage,
           # so every Finder-dependent surface must follow the rebuild above.
           python3 publisher_intent_catalog.py

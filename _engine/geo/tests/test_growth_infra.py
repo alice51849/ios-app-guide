@@ -22929,12 +22929,15 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("bopomofo_bingo_cards.py", materialize_block)
         self.assertNotIn("bopomofo_flashcards.py", materialize_block)
         self.assertNotIn("bopomofo_practice_sheet.py", materialize_block)
-        # Self-healing before the fail-closed gate: a newly live app gets
-        # its decision routes, then the finder that must link to them,
-        # and published answers get repaired before they are audited.
+        # Self-healing before the fail-closed gate: the finder bootstraps
+        # the new app's publisher intents before decision routes consume them.
+        self.assertLess(
+            materialize_block.index("portfolio_app_finder.py"),
+            materialize_block.index("app_install_decision_routes.py"),
+        )
         self.assertLess(
             materialize_block.index("app_install_decision_routes.py"),
-            materialize_block.index("portfolio_app_finder.py"),
+            materialize_block.index("publisher_intent_catalog.py"),
         )
         self.assertLess(
             materialize_block.index("portfolio_app_finder.py"),

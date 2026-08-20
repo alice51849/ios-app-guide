@@ -22928,6 +22928,10 @@ class GeneratorTests(unittest.TestCase):
             materialize_block.index("app_install_decision_routes.py"),
             materialize_block.index("portfolio_app_finder.py"),
         )
+        self.assertLess(
+            materialize_block.index("portfolio_app_finder.py"),
+            materialize_block.index("publisher_intent_catalog.py"),
+        )
         self.assertIn(
             "reconcile_answer_semantics.py --repair",
             materialize_block,

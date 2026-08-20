@@ -87,11 +87,6 @@ jobs:
           python3 gen_mobile_app_identity.py
           python3 gen_webmcp_install_tools.py
           python3 portfolio_app_catalog_api.py
-          python3 publisher_intent_catalog.py
-          python3 portfolio_offer_catalog.py
-          python3 publisher_intent_visuals.py
-          python3 app_video_lessons.py
-          python3 gen_social_previews.py --oembed-only
           python3 gen_github_discovery_readmes.py
           python3 gen_publisher_disclosures.py
           python3 gen_guide_design.py
@@ -101,6 +96,13 @@ jobs:
           # to be rebuilt here — before the verification gate — or the gate
           # fails on inbound links that only the next step would create.
           python3 portfolio_app_finder.py
+          # The buyer-intent catalog requires exact Finder/persona coverage,
+          # so every Finder-dependent surface must follow the rebuild above.
+          python3 publisher_intent_catalog.py
+          python3 portfolio_offer_catalog.py
+          python3 publisher_intent_visuals.py
+          python3 app_video_lessons.py
+          python3 gen_social_previews.py --oembed-only
           python3 normalize_app_store_links.py
           python3 gen_app_decision_cards.py
           # Full-tree cleanup 1/3 keeps the pre-gate snapshot self-healing.

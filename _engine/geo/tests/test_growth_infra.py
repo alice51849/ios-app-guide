@@ -23271,27 +23271,26 @@ class GeneratorTests(unittest.TestCase):
             '--state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"',
             refresh_block,
         )
-        first_cleanup = refresh_block.index(
+        cleanup = refresh_block.index(
             "cleanup_localized_assets.py --cached-live"
         )
-        second_cleanup = refresh_block.rindex(
-            "cleanup_localized_assets.py --cached-live"
-        )
-        self.assertLess(
-            refresh_block.index("fix_en_hreflang.py"),
-            first_cleanup,
-        )
-        self.assertLess(
-            first_cleanup,
-            refresh_block.index("add_related_answers.py"),
+        self.assertEqual(
+            cleanup,
+            refresh_block.rindex(
+                "cleanup_localized_assets.py --cached-live"
+            ),
         )
         self.assertLess(
             refresh_block.index("add_related_tools.py"),
-            second_cleanup,
+            cleanup,
         )
         self.assertLess(
-            second_cleanup,
-            refresh_block.index("zhuyin_resourcesync.py"),
+            refresh_block.index("gen_app_decision_cards.py"),
+            cleanup,
+        )
+        self.assertLess(
+            cleanup,
+            refresh_block.index("gen_smart_app_banners.py"),
         )
         self.assertEqual(2, workflow.count("zhuyin_resourcesync.py"))
         self.assertEqual(3, workflow.count("gen_webstories_i18n.py"))
@@ -23306,7 +23305,6 @@ class GeneratorTests(unittest.TestCase):
             "- name: Final link and availability cleanup", 1
         )[1].split("- name: Commit localized pages if any", 1)[0]
         final_chain = (
-            "cleanup_localized_assets.py --cached-live",
             "gen_linkset.py",
             "gen_social_previews.py",
             "gen_image_sitemap.py",
@@ -23317,6 +23315,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_facts.py",
             "app_install_decision_routes.py",
             "gen_app_decision_cards.py",
+            "cleanup_localized_assets.py --cached-live",
             "gen_smart_app_banners.py",
             "gen_mobile_store_ctas.py",
             "gen_app_store_qr_ctas.py",
@@ -23406,8 +23405,9 @@ class GeneratorTests(unittest.TestCase):
             Path(GEO) / "refresh_primary_resource_answers.py"
         ).read_text(encoding="utf-8")
         self.assertIn("force=True", refresh_script)
-        self.assertGreaterEqual(
-            workflow.count("cleanup_localized_assets.py --cached-live"), 3
+        self.assertEqual(
+            3,
+            workflow.count("cleanup_localized_assets.py --cached-live"),
         )
         publish = (Path(GEO) / "publish.py").read_text(encoding="utf-8")
         self.assertNotIn("reset --hard", publish)

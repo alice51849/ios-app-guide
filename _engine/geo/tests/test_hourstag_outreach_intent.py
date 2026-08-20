@@ -182,7 +182,6 @@ class HoursTagOutreachIntentTests(unittest.TestCase):
     def test_geo_materialization_cleans_redirects_before_mobile_ctas(self):
         workflow = _geo_daily_workflow()
         sequence = (
-            "          python3 gen_app_decision_cards.py\n"
             "          python3 cleanup_localized_assets.py --cached-live\n"
             "          python3 gen_smart_app_banners.py\n"
             "          python3 gen_mobile_store_ctas.py"

@@ -103,6 +103,7 @@ jobs:
           python3 portfolio_app_finder.py
           python3 normalize_app_store_links.py
           python3 gen_app_decision_cards.py
+          # Full-tree cleanup 1/3 keeps the pre-gate snapshot self-healing.
           python3 cleanup_localized_assets.py --cached-live
           python3 gen_smart_app_banners.py
           python3 gen_mobile_store_ctas.py
@@ -219,7 +220,6 @@ jobs:
           python3 reconcile_answer_semantics.py --repair
           python3 family_outing_weather_planner.py
           python3 fix_en_hreflang.py || echo "fix_en_hreflang exited $?"
-          python3 cleanup_localized_assets.py --cached-live
           for loc in "" "--locale zh-Hant" "--locale zh-Hans" "--locale ja" "--locale ko" "--locale es-ES" "--locale es-MX" "--locale de-DE" "--locale fr-FR" "--locale pt-BR" "--locale ms" "--locale ar-SA" "--locale pl"; do
             python3 add_related_answers.py $loc || echo "add_related_answers $loc exited $?"
           done
@@ -227,7 +227,6 @@ jobs:
           for locale in $(python3 -c 'from official_locales import OFFICIAL_LOCALES; print(" ".join(OFFICIAL_LOCALES))'); do
             python3 add_related_tools.py --locale "$locale"
           done
-          python3 cleanup_localized_assets.py --cached-live
           python3 ensure_live_guides.py
           python3 gen_webstories.py
           python3 gen_webstories_i18n.py
@@ -249,6 +248,7 @@ jobs:
           python3 app_install_decision_routes.py
           python3 normalize_app_store_links.py
           python3 gen_app_decision_cards.py
+          # Full-tree cleanup 2/3 runs after every English body generator.
           python3 cleanup_localized_assets.py --cached-live
           python3 gen_smart_app_banners.py
           python3 gen_mobile_store_ctas.py
@@ -331,10 +331,6 @@ jobs:
         run: |
           cd _engine/geo
           python3 fix_en_hreflang.py || echo "fix_en_hreflang exited $?"
-      - name: Prune stale localized assets and pricing links
-        run: |
-          cd _engine/geo
-          python3 cleanup_localized_assets.py --cached-live
       - name: Add related-answers internal links (EN + major locales)
         run: |
           cd _engine/geo
@@ -351,7 +347,6 @@ jobs:
       - name: Final link and availability cleanup
         run: |
           cd _engine/geo
-          python3 cleanup_localized_assets.py --cached-live
           python3 ensure_live_guides.py
           python3 gen_webstories.py
           python3 gen_webstories_i18n.py
@@ -366,6 +361,7 @@ jobs:
           python3 normalize_app_store_links.py
           python3 app_install_decision_routes.py
           python3 gen_app_decision_cards.py
+          # Full-tree cleanup 3/3 runs after every localized body generator.
           python3 cleanup_localized_assets.py --cached-live
           python3 gen_smart_app_banners.py
           python3 gen_mobile_store_ctas.py

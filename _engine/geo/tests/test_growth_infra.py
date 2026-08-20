@@ -21559,6 +21559,7 @@ class GeneratorTests(unittest.TestCase):
             "onepageppt",
             "notesstudio100",
             "wifiaidlite",
+            "moneytag",
         }
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:

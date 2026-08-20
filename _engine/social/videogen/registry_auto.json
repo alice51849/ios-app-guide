@@ -586,5 +586,48 @@
       "network test app no account"
     ],
     "keyword_source": "reviewed_persona"
+  },
+  "moneytag": {
+    "appstore_id": "6801956402",
+    "name": "MoneyTag: Income & Expense",
+    "search": "MoneyTag Income Expense",
+    "category": "finance",
+    "sub": "Give every project its own income, expenses and net result, then analyze tags across projects.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "1 project and 5 entries free",
+      "Project income, expenses and net result",
+      "Cross-project tag analysis",
+      "One-time lifetime unlock",
+      "No subscription",
+      "Private on-device ledger data",
+      "Apple Watch",
+      "Home Screen widget",
+      "Offline with saved or manual exchange rates",
+      "No account",
+      "No ads",
+      "No tracking"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "project income expense tracker",
+      "profit and loss by project",
+      "tag expenses across projects",
+      "freelance project bookkeeping",
+      "small business project ledger",
+      "income expense app no subscription"
+    ],
+    "keyword_source": "reviewed_persona",
+    "icon": "~/46_MoneyTag/assets/app-icon.png",
+    "shots_dir": "~/46_MoneyTag/marketing/moneytag_raw/iphone",
+    "locale": "",
+    "shots": [
+      "en_01_home",
+      "en_02_entry",
+      "en_03_tags",
+      "en_04_report",
+      "en_07_projects",
+      "en_09_privacy"
+    ]
   }
 }

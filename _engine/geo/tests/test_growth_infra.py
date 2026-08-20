@@ -22894,6 +22894,10 @@ class GeneratorTests(unittest.TestCase):
             "cp _engine/geo/sitemap_lastmod_state.json",
             snapshot_block,
         )
+        self.assertLess(
+            workflow.index("- name: Refresh verified App Store availability once"),
+            workflow.index("- name: Materialize newly live app surfaces"),
+        )
         materialize_block = workflow.split(
             "- name: Materialize newly live app surfaces", 1
         )[1].split("- name: Verify zero-cost growth infrastructure", 1)[0]
@@ -22961,7 +22965,9 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertNotIn(
             "portfolio_app_catalog_api.py",
-            availability_block,
+            workflow.split(
+                "- name: Rebuild availability-dependent surfaces", 1
+            )[1].split("- name: Generate new answer pages", 1)[0],
         )
         self.assertLess(
             availability_block.index("refresh=True"),

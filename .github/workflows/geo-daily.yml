@@ -73,6 +73,11 @@ jobs:
               "$state"
           fi
           echo "SITEMAP_LASTMOD_INTERMEDIATE_STATE=$state" >> "$GITHUB_ENV"
+      - name: Refresh verified App Store availability once
+        run: |
+          cd _engine/geo
+          python3 -c 'import sys; sys.path.insert(0, "../social"); from appstore_live import live_app_keys; from videogen.registry import APPSTORE; print("verified public apps:", len(live_app_keys(APPSTORE, "pages", refresh=True)))'
+          python3 refresh_storefront_availability.py
       - name: Materialize newly live app surfaces
         run: |
           cd _engine/geo
@@ -138,11 +143,9 @@ jobs:
             python3 -m unittest discover \
               -s _engine/social/tests \
               -p "test_standard_site.py"
-      - name: Refresh verified App Store availability once
+      - name: Rebuild availability-dependent surfaces
         run: |
           cd _engine/geo
-          python3 -c 'import sys; sys.path.insert(0, "../social"); from appstore_live import live_app_keys; from videogen.registry import APPSTORE; print("verified public apps:", len(live_app_keys(APPSTORE, "pages", refresh=True)))'
-          python3 refresh_storefront_availability.py
           python3 build_pages_i18n.py --cached-live
           python3 passport_photo_print_sheet.py
           python3 document_scan_planner.py

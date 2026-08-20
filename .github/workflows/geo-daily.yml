@@ -102,13 +102,15 @@ jobs:
           # and rebuilds publisher intents from it. Decision routes consume
           # that exact-coverage intent dataset, so they cannot bootstrap first.
           python3 portfolio_app_finder.py
-          python3 app_install_decision_routes.py
           # The buyer-intent catalog requires exact Finder/persona coverage,
           # so every Finder-dependent surface must follow the rebuild above.
           python3 publisher_intent_catalog.py
+          # Decision-route oEmbed records fail closed unless every localized
+          # buyer-intent visual already exists.
+          python3 publisher_intent_visuals.py
+          python3 app_install_decision_routes.py
           python3 gen_github_discovery_readmes.py
           python3 portfolio_offer_catalog.py
-          python3 publisher_intent_visuals.py
           python3 app_video_lessons.py
           python3 gen_social_previews.py --oembed-only
           python3 normalize_app_store_links.py

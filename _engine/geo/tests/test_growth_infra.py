@@ -22933,15 +22933,15 @@ class GeneratorTests(unittest.TestCase):
         # the new app's publisher intents before decision routes consume them.
         self.assertLess(
             materialize_block.index("portfolio_app_finder.py"),
-            materialize_block.index("app_install_decision_routes.py"),
-        )
-        self.assertLess(
-            materialize_block.index("app_install_decision_routes.py"),
             materialize_block.index("publisher_intent_catalog.py"),
         )
         self.assertLess(
-            materialize_block.index("portfolio_app_finder.py"),
             materialize_block.index("publisher_intent_catalog.py"),
+            materialize_block.index("publisher_intent_visuals.py"),
+        )
+        self.assertLess(
+            materialize_block.index("publisher_intent_visuals.py"),
+            materialize_block.index("app_install_decision_routes.py"),
         )
         self.assertLess(
             materialize_block.index("publisher_intent_catalog.py"),

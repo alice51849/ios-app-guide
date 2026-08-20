@@ -22910,6 +22910,10 @@ class GeneratorTests(unittest.TestCase):
             materialize_block.index("aeo_guide.py --missing"),
             materialize_block.index("ensure_live_guides.py"),
         )
+        self.assertLess(
+            materialize_block.index("gen_hubs.py"),
+            materialize_block.index("gen_linkset.py"),
+        )
         self.assertNotIn("passport_photo_print_sheet.py", materialize_block)
         self.assertNotIn("document_scan_planner.py", materialize_block)
         self.assertNotIn("blurry_photo_diagnostic.py", materialize_block)

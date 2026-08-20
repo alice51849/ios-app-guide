@@ -86,6 +86,9 @@ jobs:
           python3 ensure_live_guides.py
           python3 gen_webstories.py
           python3 gen_webstories_i18n.py
+          # Linkset validation owns each live App's hub, so create new hubs
+          # before the Linkset is allowed to fail closed on missing resources.
+          python3 gen_hubs.py
           python3 gen_linkset.py
           python3 gen_social_previews.py
           python3 gen_image_sitemap.py

@@ -32,6 +32,29 @@ GEO = os.path.dirname(HERE)
 if GEO not in sys.path:
     sys.path.insert(0, GEO)
 
+
+def _page_label(path, root):
+    """A short, human-findable name for ``path`` inside ``root``.
+
+    Purely a subTest label, so it must never raise: the cloud checkout reaches
+    the site through ``_engine/geo/pages``, a symlink to the repo root, and the
+    walked paths come back resolved. Comparing a resolved path against the
+    un-resolved prefix makes ``relative_to`` raise ValueError and fails a test
+    that has nothing to do with the page. Resolve both sides, then fall back to
+    the full path rather than let a label decide the outcome.
+    """
+    from pathlib import Path as _Path
+
+    for candidate, base in (
+        (_Path(path), _Path(root)),
+        (_Path(path).resolve(), _Path(root).resolve()),
+    ):
+        try:
+            return str(candidate.relative_to(base))
+        except ValueError:
+            continue
+    return str(path)
+
 import aeo_answers
 import aeo_answers_i18n
 import aeo_guide
@@ -3627,7 +3650,12 @@ class GeneratorTests(unittest.TestCase):
           # a bare "1 != 0" and the only way to find which of ~31k pages drifted
           # is to re-derive the loop by hand -- which is exactly what the
           # 2026-08 rebuild outage cost an afternoon of.
-          with self.subTest(page=str(path.relative_to(pages))):
+          #
+          # The label must never be able to fail the test it is labelling. In
+          # the cloud layout `_engine/geo/pages` is a symlink to the repo root,
+          # so the walked paths resolve outside the un-resolved `pages` prefix
+          # and a bare relative_to() raises ValueError.
+          with self.subTest(page=_page_label(path, pages)):
             source = path.read_text(encoding="utf-8")
             if gen_guide_design.BLOCK_START in source:
                 linked.add(path)

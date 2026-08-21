@@ -2,7 +2,7 @@
 title: "best complete math learning app for preschool and early grades"
 lang: "en-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/en-CA/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -142,7 +142,7 @@ def crawl():
         read_bytes += len(text)
         if NOINDEX_RE.search(text):
             noindex.add(url)
-        for target in extract_links(text, url):
+        for target in sorted(extract_links(text, url)):
             if target not in known:
                 broken[top_section(url)] += 1
                 if len(broken_samples[top_section(url)]) < 5:
@@ -294,9 +294,12 @@ def summarize(result):
         "max_depth": max(reachable_depths) if reachable_depths else 0,
         "depth_distribution": {str(k): dist[k] for k in sorted(dist)},
         "noindex_reachable": len(result["noindex"]),
-        "broken_links_by_section": dict(result["broken"]),
+        "broken_links_by_section": dict(
+            sorted(result["broken"].items())
+        ),
         "broken_samples": {
-            k: sorted(v) for k, v in result["broken_samples"].items()
+            k: sorted(v)
+            for k, v in sorted(result["broken_samples"].items())
         },
         "top_level": {
             k: {
@@ -309,7 +312,10 @@ def summarize(result):
                     else None
                 ),
             }
-            for k, v in sorted(top.items(), key=lambda kv: -kv[1]["total"])
+            for k, v in sorted(
+                top.items(),
+                key=lambda kv: (-kv[1]["total"], kv[0]),
+            )
         },
         "fully_orphaned_sections": fully_orphan,
         "fully_orphaned_section_count": len(fully_orphan),

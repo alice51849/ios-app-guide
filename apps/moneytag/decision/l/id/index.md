@@ -2,7 +2,7 @@
 title: "MoneyTag — Proyek · Tag · Laporan | iOS App"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/id/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

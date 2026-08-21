@@ -2,7 +2,7 @@
 title: "iPhoneపై పిల్లల మబ్బుగా ఉన్న ఫోటోలని సరిచేసే ఉత్తమ యాప్"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/te-IN/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

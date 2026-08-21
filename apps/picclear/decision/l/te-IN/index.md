@@ -2,7 +2,7 @@
 title: "iPhone నిల్వను ఖాళీ చేయడానికి ఉత్తమ యాప్ డూప్లికేట్ ఫోటోలు తొలగించడం"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/te-IN/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

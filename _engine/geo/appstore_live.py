@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import os
+import tempfile
 import time
 import urllib.error
 import urllib.parse
@@ -14,6 +15,7 @@ LOOKUP_COUNTRIES = ("us", "tw", "jp", "gb")
 RETRYABLE_HTTP = {429, 500, 502, 503, 504}
 RETIRE_AFTER_MISSES = 3
 STATE_FILE = ".appstore_live_state.json"
+STATE_SOURCE = "Apple iTunes Lookup API (US, TW, JP, GB)"
 UA = "Mozilla/5.0 (Lumi Apps availability checker)"
 
 
@@ -58,24 +60,48 @@ def fetch_live_ids(ids):
     return live & wanted
 
 
-def _read_state(path):
+def _read_state(path, *, strict=False):
     try:
         with open(path, encoding="utf-8") as handle:
             raw = json.load(handle)
-        return {
-            "live_ids": {str(value) for value in raw.get("live_ids", [])},
-            "miss_counts": {
-                str(key): int(value)
-                for key, value in raw.get("miss_counts", {}).items()
-            },
+        if not isinstance(raw, dict):
+            raise ValueError("state must be a JSON object")
+        live_values = raw.get("live_ids")
+        miss_values = raw.get("miss_counts")
+        if not isinstance(live_values, list) or not isinstance(
+            miss_values, dict
+        ):
+            raise ValueError("state must include live_ids and miss_counts")
+        live_ids = {str(value) for value in live_values}
+        miss_counts = {
+            str(key): int(value)
+            for key, value in miss_values.items()
         }
-    except (OSError, ValueError, TypeError, json.JSONDecodeError):
+        if (
+            raw.get("source") != STATE_SOURCE
+            or raw.get("retire_after_consecutive_misses")
+            != RETIRE_AFTER_MISSES
+            or any(not value.isdigit() for value in live_ids)
+            or any(
+                key not in live_ids
+                or value < 0
+                or value >= RETIRE_AFTER_MISSES
+                for key, value in miss_counts.items()
+            )
+        ):
+            raise ValueError("state metadata or values are invalid")
+        return {"live_ids": live_ids, "miss_counts": miss_counts}
+    except FileNotFoundError:
+        return {"live_ids": set(), "miss_counts": {}}
+    except (OSError, ValueError, TypeError, json.JSONDecodeError) as error:
+        if strict:
+            raise RuntimeError(f"Invalid App Store live state: {path}") from error
         return {"live_ids": set(), "miss_counts": {}}
 
 
 def _write_state(path, live_ids, miss_counts):
     payload = {
-        "source": "Apple iTunes Lookup API (US, TW, JP, GB)",
+        "source": STATE_SOURCE,
         "retire_after_consecutive_misses": RETIRE_AFTER_MISSES,
         "live_ids": sorted(live_ids),
         "miss_counts": dict(sorted(miss_counts.items())),
@@ -88,15 +114,62 @@ def _write_state(path, live_ids, miss_counts):
     except OSError:
         pass
     if text != previous:
-        with open(path, "w", encoding="utf-8") as handle:
-            handle.write(text)
+        directory = os.path.dirname(os.path.abspath(path))
+        os.makedirs(directory, mode=0o700, exist_ok=True)
+        descriptor, temporary_path = tempfile.mkstemp(
+            prefix=f".{os.path.basename(path)}.",
+            suffix=".tmp",
+            dir=directory,
+        )
+        try:
+            with os.fdopen(descriptor, "w", encoding="utf-8") as handle:
+                handle.write(text)
+                handle.flush()
+                os.fsync(handle.fileno())
+            os.chmod(temporary_path, 0o600)
+            os.replace(temporary_path, path)
+            directory_descriptor = os.open(directory, os.O_RDONLY)
+            try:
+                os.fsync(directory_descriptor)
+            finally:
+                os.close(directory_descriptor)
+        finally:
+            if os.path.exists(temporary_path):
+                os.unlink(temporary_path)
 
 
-def live_app_keys(appstore, pages_dir, refresh=True):
+def live_app_keys(
+    appstore,
+    pages_dir,
+    refresh=True,
+    *,
+    seed_state_path=None,
+    strict_state=False,
+):
     """Return public app keys, retaining a formerly-live app until 3 clean misses."""
     state_path = os.path.join(pages_dir, STATE_FILE)
-    state = _read_state(state_path)
     known_ids = {str(value) for value in appstore.values() if value}
+    state_exists = os.path.exists(state_path)
+    state = _read_state(state_path, strict=strict_state)
+    if not state_exists and seed_state_path:
+        if not os.path.exists(seed_state_path):
+            raise RuntimeError(
+                "Verified App Store live-state baseline is missing: "
+                f"{seed_state_path}"
+            )
+        seed = _read_state(seed_state_path, strict=True)
+        seed_live = seed["live_ids"] & known_ids
+        if not seed_live:
+            raise RuntimeError(
+                "Verified App Store live-state baseline has no current apps"
+            )
+        seed_misses = {
+            app_id: count
+            for app_id, count in seed["miss_counts"].items()
+            if app_id in seed_live
+        }
+        _write_state(state_path, seed_live, seed_misses)
+        state = {"live_ids": seed_live, "miss_counts": seed_misses}
 
     if refresh:
         try:

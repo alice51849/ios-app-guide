@@ -302,9 +302,21 @@ jobs:
               --timeout 10 \
               --retries 3 \
               --retry-delay 2
-             python3 _engine/geo/reconcile_answer_semantics.py
-             python3 _engine/geo/gen_sitemap_lastmod.py \
+            python3 _engine/geo/reconcile_answer_semantics.py
+            cd _engine/geo
+            python3 dedupe_locale_meta.py --apply
+            python3 gen_locale_indexation.py
+            python3 gen_link_hubs.py
+            python3 gen_locale_indexation.py
+            python3 gen_link_hubs.py --check
+            python3 audit_link_depth.py --max-indexable-orphans 0
+            cd "$GITHUB_WORKSPACE"
+            python3 _engine/geo/gen_sitemap_lastmod.py \
               --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+            python3 -m unittest discover \
+              -s _engine/geo/tests \
+              -p "test_*.py" \
+              -q -b
             git add -A
             if ! git diff --cached --quiet; then
               git commit -m "Reconcile truthful sitemap lastmod after rebase"
@@ -388,8 +400,6 @@ jobs:
           python3 validate_webstories.py
           python3 gen_llms.py --cached-live
           python3 gen_feed.py
-          python3 reconcile_answer_semantics.py
-          python3 live_app_guard.py --site-root pages
           cd "$GITHUB_WORKSPACE"
           python3 _engine/geo/sync_standard_site.py \
             --site-root "$GITHUB_WORKSPACE" \
@@ -398,7 +408,25 @@ jobs:
             --timeout 10 \
             --retries 3 \
             --retry-delay 2
-           python3 _engine/geo/gen_sitemap_lastmod.py
+          python3 _engine/geo/reconcile_answer_semantics.py
+          cd _engine/geo
+          python3 live_app_guard.py --site-root pages
+          # Pass A marks non-store locales before hubs choose indexable pages.
+          # Pass B closes the sitemap over every page the hubs create/remove.
+          python3 dedupe_locale_meta.py --apply
+          python3 gen_locale_indexation.py
+          python3 gen_link_hubs.py
+          python3 gen_locale_indexation.py
+          python3 gen_link_hubs.py --check
+          python3 audit_link_depth.py --max-indexable-orphans 0
+          cd "$GITHUB_WORKSPACE"
+          python3 _engine/geo/gen_sitemap_lastmod.py
+      - name: Verify localized output before commit
+        run: |
+          python3 -m unittest discover \
+            -s _engine/geo/tests \
+            -p "test_*.py" \
+            -q -b
       - name: Commit localized pages if any
         run: |
           git add -A
@@ -414,8 +442,20 @@ jobs:
               --timeout 10 \
               --retries 3 \
               --retry-delay 2
-             python3 _engine/geo/reconcile_answer_semantics.py
-             python3 _engine/geo/gen_sitemap_lastmod.py
+            python3 _engine/geo/reconcile_answer_semantics.py
+            cd _engine/geo
+            python3 dedupe_locale_meta.py --apply
+            python3 gen_locale_indexation.py
+            python3 gen_link_hubs.py
+            python3 gen_locale_indexation.py
+            python3 gen_link_hubs.py --check
+            python3 audit_link_depth.py --max-indexable-orphans 0
+            cd "$GITHUB_WORKSPACE"
+            python3 _engine/geo/gen_sitemap_lastmod.py
+            python3 -m unittest discover \
+              -s _engine/geo/tests \
+              -p "test_*.py" \
+              -q -b
             git add -A
             if ! git diff --cached --quiet; then
               git commit -m "Reconcile truthful sitemap lastmod after rebase"

@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za sledenje potovalnega proračuna brez naročnine za iPhone"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/sl-SI/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "Aim990 Plus — Engelsk træning under pres | iOS App"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/da/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"

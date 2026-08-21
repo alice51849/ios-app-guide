@@ -2,7 +2,7 @@
 title: "Wordmate Lite: ഇംഗ്ലീഷ് പഠനം — ദിവസം 5 വാക്ക്, ഒരു മിനിറ്റ് | iOS App"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ml-IN/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

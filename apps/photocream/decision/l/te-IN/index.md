@@ -2,7 +2,7 @@
 title: "iPhone‌లో ప్రయాణ సృష్టికర్తలకు ఒకసారి చెల్లించే ఉత్తమ ఫిల్మ్ ఫోటో ఎడిటర్"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/te-IN/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "aplikasi fonik lengkap terbaik untuk persediaan tadika pendidikan di rumah"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/ms/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

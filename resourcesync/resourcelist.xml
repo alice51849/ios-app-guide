@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:rs="http://www.openarchives.org/rs/terms/">
   <rs:ln rel="describedby" href="https://alice51849.github.io/ios-app-guide/resourcesync/bopomofo-collection.jsonld" type="application/ld+json"/>
   <rs:ln rel="up" href="https://alice51849.github.io/ios-app-guide/resourcesync/capabilitylist.xml" type="application/xml"/>
-  <rs:md capability="resourcelist" at="2026-08-20T19:44:35Z"/>
+  <rs:md capability="resourcelist" at="2026-08-21T18:45:29Z"/>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:0ccf33a40e515f3d7ea448ea122eef5886b6d07715fbf87b717a834ca47bb5f3" length="15319" type="text/html"/>
   </url>
@@ -177,7 +177,7 @@
     <rs:md hash="sha-256:80efcd4adad386e9838f53b5d415f38be84ab4b5e3ecc6d9156b0284f7e1ab94" length="2165" type="application/json"/>
   </url>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:7e4f8e030c807db55350667a313507e5324d3e886749c2bc5785a4a22db0c6f4" length="15610" type="text/html"/>
   </url>
@@ -198,7 +198,7 @@
     <rs:md hash="sha-256:000818b69543fd9b7f56b45aa3b7eff0abfd07eb1e62b44b53746a559f7f13dc" length="104" type="text/plain"/>
   </url>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:4ca34360485b49e807d4a4f567bcbfca07799ecb2957e70ef946b3327d06493a" length="12351" type="text/html"/>
   </url>
@@ -215,7 +215,7 @@
     <rs:md hash="sha-256:9b26f04fb3eef881df3a983e590f565bc155e9fe3d4782d19ecaf60391a26495" length="362" type="text/plain"/>
   </url>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:a86b06dbd418a7df41461ebeb5f5227a20f0064402adfde34611e26bcb806ed8" length="18906" type="text/html"/>
   </url>
@@ -280,7 +280,7 @@
     <rs:md hash="sha-256:48745bb04a5c97139a0e2e121d6dfc99c65fac7e31bc6b621d6036a3555a4c1e" length="704" type="text/plain"/>
   </url>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:e258b7c4937d4c52a8845ab980a4e18a1fed0a030372ed38597e6bd725e77e73" length="13446" type="text/html"/>
   </url>
@@ -385,7 +385,7 @@
     <rs:md hash="sha-256:e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a" length="79017" type="application/ld+json"/>
   </url>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:d261b397df5e8a5ef8db67642edf4e418036eae21ad631f8d69e586ed8d799c3" length="15531" type="text/html"/>
   </url>
@@ -430,7 +430,7 @@
     <rs:md hash="sha-256:6c20d3710cd3a4bd918023f8ac87eaa6e68b0a8c97fb923eb4b56502756fcc47" length="446" type="text/plain"/>
   </url>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:f8592fe31937d731095d67aeb8edf3d210ae3eb9ef0a6ed163b44d81927f2193" length="22064" type="text/html"/>
   </url>
@@ -447,7 +447,7 @@
     <rs:md hash="sha-256:0e508eab13b6fe4d687bfe44f486f1e329b724b72bae087d4d659bc2594a2fc7" length="99" type="text/plain"/>
   </url>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:77f83bf56c768fb5a08f8063830f359ac355f68d421115b135f31d46ba663bd7" length="12769" type="text/html"/>
   </url>
@@ -516,7 +516,7 @@
     <rs:md hash="sha-256:e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a" length="79017" type="application/ld+json"/>
   </url>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:99e0b6ba3fbf762f9fad2a62794b012e8d681709f9357baa0a43558d572e5477" length="10671" type="text/html"/>
   </url>
@@ -581,8 +581,8 @@
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html</loc>
-    <lastmod>2026-08-20</lastmod>
-    <rs:md hash="sha-256:59f35840724795beb961652948f75500bfd9a573b827482fed581b48a3aeff4d" length="8869" type="text/html"/>
+    <lastmod>2026-08-22</lastmod>
+    <rs:md hash="sha-256:6177f716abc152cce363651f7f1d41dc9127d7b073d31550ee1ab26bab555e47" length="8869" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</loc>
@@ -947,47 +947,47 @@
     <rs:md hash="sha-256:86a4ce0dbe75bf5ed11349fe4188f672f3752f999db5d347af27e729c08e85ba" length="33360" type="text/html"/>
   </url>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/api/v1/bopomofo-symbols/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/api/v1/bopomofo-symbols/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:be758bc3adeb28144d11ea7f34989c8cde6146996589cce511a7f6eaee961cd4" length="15250" type="text/html"/>
   </url>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:8523d8b6ed8c11e01ad23fcb1e24dbc093fe0866401399ff2afab71f3a860ef4" length="15387" type="text/html"/>
   </url>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-bagit/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-bagit/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:246d1da5bb9bfb221e9d41a8066827ed2099dd335dc59d241cacb809d4cb15b5" length="12199" type="text/html"/>
   </url>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-csvw/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-csvw/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:cf256e468c76933d11cad474eb1976266600b4ed092101fb6bedae261148b18d" length="18615" type="text/html"/>
   </url>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ldes/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ldes/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:5b5a8e5fe0aeabd2b7003f0033b31c1e56d8b32aa07ce1756f75b14f1130bf6f" length="13384" type="text/html"/>
   </url>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-mets2-premis3/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-mets2-premis3/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:1c683095d507ae33bc8a67e06b367cd1896d5cee6aadbfe9373127cbe71abad4" length="15449" type="text/html"/>
   </url>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-oai-ore/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-oai-ore/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:5191b41ed3845c409d498ec33b633e85feaf5643432d16286c5e782e9934a930" length="21988" type="text/html"/>
   </url>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ocfl/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ocfl/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:85b15160838b353ef44a01579780559aed544d744e83084df2c488b7b73cc729" length="12606" type="text/html"/>
   </url>
   <url>
-    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ro-crate/index.html</loc>
+    <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ro-crate/</loc>
     <lastmod>2026-08-20</lastmod>
     <rs:md hash="sha-256:cc136bcf64ab34b8aef297e1c64c9abbaf93e4c41d8c8098e7de40d50348328a" length="10515" type="text/html"/>
   </url>
@@ -1028,8 +1028,8 @@
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-resourcesync.html</loc>
-    <lastmod>2026-08-20</lastmod>
-    <rs:md hash="sha-256:b82ac1b549f684561a78f9c959a0a47ac987b955c94bbf060091539e469a72d8" length="8719" type="text/html"/>
+    <lastmod>2026-08-22</lastmod>
+    <rs:md hash="sha-256:bd0a83ee85a3191150ce392729c398fbf033101a808da03953400d82dbfc713f" length="8719" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-vocabulary.html</loc>

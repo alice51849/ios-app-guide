@@ -2,7 +2,7 @@
 title: "najlepšia kompletná aplikácia na zhuyin pre bilingválne deti"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/sk/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

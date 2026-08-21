@@ -2,7 +2,7 @@
 title: "OnePage PPT: Slaid AI — Nota jadi satu halaman | iOS App"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/ms/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

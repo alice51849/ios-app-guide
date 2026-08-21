@@ -20,6 +20,10 @@ ROOT = HERE.parent
 sys.path.insert(0, str(ROOT / "social"))
 
 from appstore_live import live_app_keys  # noqa: E402
+from canonical_urls import (  # noqa: E402
+    canonical_url_for_html,
+    content_relative,
+)
 from family_travel_dataset import (  # noqa: E402
     render_versioned_page,
     write_text_if_changed,
@@ -47,7 +51,7 @@ CAPABILITY_LIST_PATH = Path("resourcesync") / "capabilitylist.xml"
 RESOURCE_LIST_PATH = Path("resourcesync") / "resourcelist.xml"
 COLLECTION_PATH = Path("resourcesync") / "bopomofo-collection.jsonld"
 STATE_PATH = Path("resourcesync") / "snapshot.json"
-STATE_VERSION = 2
+STATE_VERSION = 3
 LANDING_PATH = Path("data") / "zhuyin-bopomofo-resourcesync.html"
 ZH_LANDING_PATH = Path("zh-Hant") / LANDING_PATH
 SITEMAP_PATH = Path("sitemap_resourcesync.xml")
@@ -481,10 +485,25 @@ def discover_resources(pages: Path) -> list[Resource]:
     for path in sorted(paths):
         content = path.read_bytes()
         relative = path.relative_to(pages)
+        url = f"{SITE}/{relative.as_posix()}"
+        if path.suffix.lower() == ".html":
+            canonical = canonical_url_for_html(path, url, SITE)
+            canonical_relative = content_relative(canonical, SITE)
+            if canonical_relative != relative.as_posix():
+                if (
+                    canonical_relative
+                    and (pages / canonical_relative).is_file()
+                ):
+                    continue
+                raise ValueError(
+                    "ResourceSync HTML canonical target is unavailable: "
+                    f"{relative.as_posix()} -> {canonical}"
+                )
+            url = canonical
         resources.append(
             Resource(
                 relative_path=relative,
-                url=f"{SITE}/{relative.as_posix()}",
+                url=url,
                 media_type=_media_type(path),
                 byte_length=len(content),
                 sha256=hashlib.sha256(content).hexdigest(),
@@ -498,6 +517,9 @@ def validate_resources(resources: list[Resource]) -> None:
     paths = [resource.relative_path for resource in resources]
     if len(paths) != len(set(paths)):
         raise ValueError("ResourceSync paths must be unique")
+    urls = [resource.url for resource in resources]
+    if len(urls) != len(set(urls)):
+        raise ValueError("ResourceSync URLs must be canonical and unique")
     missing = [path for path in REQUIRED_PATHS if path not in set(paths)]
     if missing:
         raise ValueError(
@@ -553,6 +575,7 @@ def _snapshot(pages: Path, resources: list[Resource]) -> dict:
         ":".join(
             (
                 resource.relative_path.as_posix(),
+                resource.url,
                 resource.sha256,
                 str(resource.byte_length),
                 resource.media_type,

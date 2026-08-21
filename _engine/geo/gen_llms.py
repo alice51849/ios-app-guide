@@ -5096,6 +5096,26 @@ def build_robots():
     return "\n".join(out)
 
 
+SITEMAP_ENTRY_RE = re.compile(
+    r"<(?:[A-Za-z_][\w.-]*:)?(?:url|sitemap)(?:\s|>)",
+    re.IGNORECASE,
+)
+
+
+def sitemap_has_entries(path: Path) -> bool:
+    try:
+        with path.open(encoding="utf-8", errors="ignore") as sitemap:
+            tail = ""
+            while chunk := sitemap.read(65536):
+                source = tail + chunk
+                if SITEMAP_ENTRY_RE.search(source):
+                    return True
+                tail = source[-128:]
+    except OSError:
+        return False
+    return False
+
+
 def build_sitemap_index():
     maps = ["sitemap.xml", "sitemap_alternatives.xml", "sitemap_answers.xml", "sitemap_guides.xml",
             "sitemap_apps.xml",
@@ -8297,8 +8317,11 @@ def build_sitemap_index():
         "sitemap_problems_nah.xml",
     ])
     maps = list(dict.fromkeys(maps))
-    items = "\n".join(f"  <sitemap><loc>{SITE}/{m}</loc></sitemap>" for m in maps
-                      if os.path.exists(os.path.join(PAGES, m)))
+    items = "\n".join(
+        f"  <sitemap><loc>{SITE}/{m}</loc></sitemap>"
+        for m in maps
+        if sitemap_has_entries(Path(PAGES) / m)
+    )
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
             + items + "\n</sitemapindex>\n")

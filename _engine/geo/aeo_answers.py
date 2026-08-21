@@ -743,12 +743,28 @@ def _remove_classes_from_first_tag(
     return document[:match.start()] + rewritten + document[match.end():]
 
 
+def is_noindex_html(document: str) -> bool:
+    head = document[:262144]
+    for tag in re.findall(r"<meta\b[^>]*>", head, re.IGNORECASE):
+        if (
+            re.search(
+                r"\bname\s*=\s*[\"']robots[\"']",
+                tag,
+                re.IGNORECASE,
+            )
+            and re.search(
+                r"\bcontent\s*=\s*[\"'][^\"']*\bnoindex\b",
+                tag,
+                re.IGNORECASE,
+            )
+        ):
+            return True
+    return False
+
+
 def is_redirect_html(document: str) -> bool:
-    head = document[:4096].lower()
-    return (
-        'http-equiv="refresh"' in head
-        and 'name="robots" content="noindex' in head
-    )
+    head = document[:262144].lower()
+    return 'http-equiv="refresh"' in head and is_noindex_html(head)
 
 
 def microformat_answer_html(document: str) -> str:
@@ -1230,7 +1246,13 @@ def parse_page_info(path: Path) -> tuple[str, str]:
 
 
 def is_redirect_page(path: Path) -> bool:
-    return is_redirect_html(path.read_text(encoding="utf-8", errors="replace"))
+    with path.open(encoding="utf-8", errors="replace") as page:
+        return is_redirect_html(page.read(262144))
+
+
+def is_noindex_page(path: Path) -> bool:
+    with path.open(encoding="utf-8", errors="replace") as page:
+        return is_noindex_html(page.read(262144))
 
 
 def feed_discovery_links() -> str:
@@ -1335,11 +1357,11 @@ def write_sitemap(pages_root: Path | None = None) -> None:
     pages_dir = (pages_root or PAGES_ROOT).resolve()
     entries: list[tuple[str, Path]] = []
     for p in sorted(pages_dir.glob("answers/*.html")):
-        if not is_redirect_page(p):
+        if not is_noindex_page(p):
             entries.append((f"{SITE}/answers/{p.name}", p))
     for p in sorted(pages_dir.glob("*/answers/*.html")):
         rel = p.relative_to(pages_dir).as_posix()
-        if not is_redirect_page(p):
+        if not is_noindex_page(p):
             entries.append((f"{SITE}/{rel}", p))
 
     def _lm(p: Path) -> str:

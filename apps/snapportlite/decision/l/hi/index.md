@@ -2,7 +2,7 @@
 title: "Snapport Lite — घर पर ही पासपोर्ट फ़ोटो बनाएँ | iOS App"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/hi/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "แอปสแกนเอกสารออฟไลน์ที่ดีที่สุด ไม่มีคลาวด์ สำหรับพยาบาล"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/th/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

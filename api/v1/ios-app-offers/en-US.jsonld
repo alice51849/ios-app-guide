@@ -6,7 +6,7 @@
   "name": "Lumi Studio Publisher Search Intent Catalog",
   "description": "A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.",
   "inLanguage": "en-US",
-  "dateModified": "2026-08-20",
+  "dateModified": "2026-08-21",
   "numberOfItems": 43,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1866,8 +1866,8 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-onepageppt",
         "url": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=iag_data_en_us&mt=8",
-        "name": "OnePage PPT: AI Slide Maker",
-        "description": "Turn a wall of text into ONE slide people actually read.",
+        "name": "OnePage PPT",
+        "description": "OnePage PPT — Turn a wall of text into ONE slide people actually read. Free to start · One-time unlock · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1882,7 +1882,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6798814385"
           },
-          "name": "OnePage PPT: AI Slide Maker",
+          "name": "OnePage PPT",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=iag_data_en_us&mt=8",
@@ -1893,11 +1893,11 @@
             "target": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=iag_data_en_us&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-US/onepageppt.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/en-US/answers/app-that-turns-meeting-notes-into-one-presentation-slide.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6798814385",
           "inLanguage": "en-US",
-          "description": "Turn a wall of text into ONE slide people actually read.",
+          "description": "OnePage PPT — Turn a wall of text into ONE slide people actually read. Free to start · One-time unlock · No subscription.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-onepageppt"
           },

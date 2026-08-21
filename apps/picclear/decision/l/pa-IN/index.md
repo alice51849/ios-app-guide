@@ -2,7 +2,7 @@
 title: "iPhone ਸਟੋਰੇਜ ਖਾਲੀ ਕਰਨ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਐਪ ਜੋ ਨਕਲ ਫੋਟੋਆਂ ਨੂੰ ਮਿਟਾਉਂਦਾ ਹੈ"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/pa-IN/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

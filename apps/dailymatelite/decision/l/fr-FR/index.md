@@ -2,7 +2,7 @@
 title: "DailyMate Lite — 50 langues, dialogues naturels | iOS App"
 lang: "fr-FR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/fr-FR/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

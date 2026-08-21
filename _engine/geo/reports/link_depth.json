@@ -1,0 +1,6387 @@
+{
+  "site": "https://alice51849.github.io/ios-app-guide",
+  "total_pages": 58682,
+  "indexable_pages": 37545,
+  "indexable_reachable": 37545,
+  "indexable_orphans": 0,
+  "indexable_reachable_pct": 100.0,
+  "indexable_within_3_clicks": 37545,
+  "indexable_within_3_clicks_pct": 100.0,
+  "noindex_pages": 21137,
+  "noindex_reachable_total": 16758,
+  "noindex_orphans": 4379,
+  "reachable": 54303,
+  "unreachable": 4379,
+  "unreachable_indexable": 0,
+  "unreachable_noindex_by_design": 4379,
+  "reachable_pct": 92.54,
+  "within_3_clicks": 54230,
+  "within_3_clicks_pct": 92.41,
+  "avg_depth_reachable": 2.903,
+  "max_depth": 5,
+  "depth_distribution": {
+    "0": 1,
+    "1": 89,
+    "2": 5172,
+    "3": 48968,
+    "4": 61,
+    "5": 12
+  },
+  "noindex_reachable": 16758,
+  "broken_links_by_section": {},
+  "broken_samples": {},
+  "top_level": {
+    "apps": {
+      "total": 3233,
+      "reachable": 3233,
+      "unreachable": 0,
+      "avg_depth": 2.98
+    },
+    "zh-Hant": {
+      "total": 1960,
+      "reachable": 1960,
+      "unreachable": 0,
+      "avg_depth": 2.97
+    },
+    "de-DE": {
+      "total": 1917,
+      "reachable": 1917,
+      "unreachable": 0,
+      "avg_depth": 2.97
+    },
+    "pt-BR": {
+      "total": 1909,
+      "reachable": 1909,
+      "unreachable": 0,
+      "avg_depth": 2.97
+    },
+    "es-ES": {
+      "total": 1904,
+      "reachable": 1904,
+      "unreachable": 0,
+      "avg_depth": 2.97
+    },
+    "fr-FR": {
+      "total": 1903,
+      "reachable": 1903,
+      "unreachable": 0,
+      "avg_depth": 2.97
+    },
+    "ja": {
+      "total": 1888,
+      "reachable": 1888,
+      "unreachable": 0,
+      "avg_depth": 2.97
+    },
+    "ko": {
+      "total": 1884,
+      "reachable": 1884,
+      "unreachable": 0,
+      "avg_depth": 2.97
+    },
+    "ms": {
+      "total": 1856,
+      "reachable": 1856,
+      "unreachable": 0,
+      "avg_depth": 2.97
+    },
+    "tr": {
+      "total": 1854,
+      "reachable": 1854,
+      "unreachable": 0,
+      "avg_depth": 2.97
+    },
+    "vi": {
+      "total": 1852,
+      "reachable": 1852,
+      "unreachable": 0,
+      "avg_depth": 2.97
+    },
+    "th": {
+      "total": 1849,
+      "reachable": 1849,
+      "unreachable": 0,
+      "avg_depth": 2.97
+    },
+    "id": {
+      "total": 1847,
+      "reachable": 1847,
+      "unreachable": 0,
+      "avg_depth": 2.97
+    },
+    "ar-SA": {
+      "total": 1840,
+      "reachable": 1840,
+      "unreachable": 0,
+      "avg_depth": 2.97
+    },
+    "answers": {
+      "total": 1803,
+      "reachable": 1803,
+      "unreachable": 0,
+      "avg_depth": 2.0
+    },
+    "pt-PT": {
+      "total": 1791,
+      "reachable": 1791,
+      "unreachable": 0,
+      "avg_depth": 2.97
+    },
+    "zh-Hans": {
+      "total": 431,
+      "reachable": 431,
+      "unreachable": 0,
+      "avg_depth": 2.88
+    },
+    "hi": {
+      "total": 362,
+      "reachable": 362,
+      "unreachable": 0,
+      "avg_depth": 2.86
+    },
+    "pl": {
+      "total": 346,
+      "reachable": 346,
+      "unreachable": 0,
+      "avg_depth": 2.86
+    },
+    "ru": {
+      "total": 346,
+      "reachable": 346,
+      "unreachable": 0,
+      "avg_depth": 2.86
+    },
+    "sv": {
+      "total": 335,
+      "reachable": 335,
+      "unreachable": 0,
+      "avg_depth": 2.85
+    },
+    "uk": {
+      "total": 317,
+      "reachable": 317,
+      "unreachable": 0,
+      "avg_depth": 2.84
+    },
+    "nl-NL": {
+      "total": 312,
+      "reachable": 312,
+      "unreachable": 0,
+      "avg_depth": 2.84
+    },
+    "it": {
+      "total": 288,
+      "reachable": 288,
+      "unreachable": 0,
+      "avg_depth": 2.83
+    },
+    "cs": {
+      "total": 262,
+      "reachable": 262,
+      "unreachable": 0,
+      "avg_depth": 2.81
+    },
+    "da": {
+      "total": 262,
+      "reachable": 262,
+      "unreachable": 0,
+      "avg_depth": 2.81
+    },
+    "fi": {
+      "total": 262,
+      "reachable": 262,
+      "unreachable": 0,
+      "avg_depth": 2.81
+    },
+    "en-AU": {
+      "total": 257,
+      "reachable": 257,
+      "unreachable": 0,
+      "avg_depth": 2.81
+    },
+    "en-CA": {
+      "total": 257,
+      "reachable": 257,
+      "unreachable": 0,
+      "avg_depth": 2.81
+    },
+    "en-GB": {
+      "total": 257,
+      "reachable": 257,
+      "unreachable": 0,
+      "avg_depth": 2.81
+    },
+    "es-MX": {
+      "total": 241,
+      "reachable": 241,
+      "unreachable": 0,
+      "avg_depth": 2.8
+    },
+    "ca": {
+      "total": 233,
+      "reachable": 233,
+      "unreachable": 0,
+      "avg_depth": 2.79
+    },
+    "el": {
+      "total": 233,
+      "reachable": 233,
+      "unreachable": 0,
+      "avg_depth": 2.79
+    },
+    "he": {
+      "total": 233,
+      "reachable": 233,
+      "unreachable": 0,
+      "avg_depth": 2.79
+    },
+    "hr": {
+      "total": 233,
+      "reachable": 233,
+      "unreachable": 0,
+      "avg_depth": 2.79
+    },
+    "hu": {
+      "total": 233,
+      "reachable": 233,
+      "unreachable": 0,
+      "avg_depth": 2.79
+    },
+    "ro": {
+      "total": 233,
+      "reachable": 233,
+      "unreachable": 0,
+      "avg_depth": 2.79
+    },
+    "sk": {
+      "total": 233,
+      "reachable": 233,
+      "unreachable": 0,
+      "avg_depth": 2.79
+    },
+    "no": {
+      "total": 215,
+      "reachable": 215,
+      "unreachable": 0,
+      "avg_depth": 2.77
+    },
+    "gu-IN": {
+      "total": 212,
+      "reachable": 212,
+      "unreachable": 0,
+      "avg_depth": 2.77
+    },
+    "kn-IN": {
+      "total": 212,
+      "reachable": 212,
+      "unreachable": 0,
+      "avg_depth": 2.77
+    },
+    "ml-IN": {
+      "total": 212,
+      "reachable": 212,
+      "unreachable": 0,
+      "avg_depth": 2.77
+    },
+    "mr-IN": {
+      "total": 212,
+      "reachable": 212,
+      "unreachable": 0,
+      "avg_depth": 2.77
+    },
+    "or-IN": {
+      "total": 212,
+      "reachable": 212,
+      "unreachable": 0,
+      "avg_depth": 2.77
+    },
+    "pa-IN": {
+      "total": 212,
+      "reachable": 212,
+      "unreachable": 0,
+      "avg_depth": 2.77
+    },
+    "sl-SI": {
+      "total": 212,
+      "reachable": 212,
+      "unreachable": 0,
+      "avg_depth": 2.77
+    },
+    "te-IN": {
+      "total": 211,
+      "reachable": 211,
+      "unreachable": 0,
+      "avg_depth": 2.77
+    },
+    "en-US": {
+      "total": 209,
+      "reachable": 209,
+      "unreachable": 0,
+      "avg_depth": 2.77
+    },
+    "ta-IN": {
+      "total": 205,
+      "reachable": 205,
+      "unreachable": 0,
+      "avg_depth": 2.76
+    },
+    "bn-BD": {
+      "total": 194,
+      "reachable": 194,
+      "unreachable": 0,
+      "avg_depth": 2.75
+    },
+    "ur-PK": {
+      "total": 193,
+      "reachable": 193,
+      "unreachable": 0,
+      "avg_depth": 2.75
+    },
+    "alternatives": {
+      "total": 182,
+      "reachable": 182,
+      "unreachable": 0,
+      "avg_depth": 1.99
+    },
+    "fr-CA": {
+      "total": 170,
+      "reachable": 170,
+      "unreachable": 0,
+      "avg_depth": 2.71
+    },
+    "tools": {
+      "total": 66,
+      "reachable": 66,
+      "unreachable": 0,
+      "avg_depth": 1.98
+    },
+    "videos": {
+      "total": 61,
+      "reachable": 61,
+      "unreachable": 0,
+      "avg_depth": 1.98
+    },
+    "en": {
+      "total": 55,
+      "reachable": 55,
+      "unreachable": 0,
+      "avg_depth": 1.98
+    },
+    "guides": {
+      "total": 54,
+      "reachable": 54,
+      "unreachable": 0,
+      "avg_depth": 2.06
+    },
+    "it-IT": {
+      "total": 52,
+      "reachable": 52,
+      "unreachable": 0,
+      "avg_depth": 1.98
+    },
+    "nb-NO": {
+      "total": 50,
+      "reachable": 50,
+      "unreachable": 0,
+      "avg_depth": 1.98
+    },
+    "ja-JP": {
+      "total": 48,
+      "reachable": 48,
+      "unreachable": 0,
+      "avg_depth": 1.98
+    },
+    "ko-KR": {
+      "total": 47,
+      "reachable": 47,
+      "unreachable": 0,
+      "avg_depth": 1.98
+    },
+    "hubs": {
+      "total": 44,
+      "reachable": 44,
+      "unreachable": 0,
+      "avg_depth": 1.98
+    },
+    "stories": {
+      "total": 44,
+      "reachable": 44,
+      "unreachable": 0,
+      "avg_depth": 1.98
+    },
+    "zh-CN": {
+      "total": 34,
+      "reachable": 34,
+      "unreachable": 0,
+      "avg_depth": 1.97
+    },
+    "data": {
+      "total": 33,
+      "reachable": 33,
+      "unreachable": 0,
+      "avg_depth": 2.0
+    },
+    "bg": {
+      "total": 27,
+      "reachable": 8,
+      "unreachable": 19,
+      "avg_depth": 3.88
+    },
+    "cross": {
+      "total": 27,
+      "reachable": 27,
+      "unreachable": 0,
+      "avg_depth": 1.96
+    },
+    "sot": {
+      "total": 27,
+      "reachable": 18,
+      "unreachable": 9,
+      "avg_depth": 3.0
+    },
+    "bho": {
+      "total": 23,
+      "reachable": 18,
+      "unreachable": 5,
+      "avg_depth": 3.0
+    },
+    "loz": {
+      "total": 23,
+      "reachable": 18,
+      "unreachable": 5,
+      "avg_depth": 3.0
+    },
+    "mag": {
+      "total": 23,
+      "reachable": 18,
+      "unreachable": 5,
+      "avg_depth": 3.0
+    },
+    "mah": {
+      "total": 23,
+      "reachable": 18,
+      "unreachable": 5,
+      "avg_depth": 3.0
+    },
+    "mai": {
+      "total": 23,
+      "reachable": 18,
+      "unreachable": 5,
+      "avg_depth": 3.0
+    },
+    "nah": {
+      "total": 23,
+      "reachable": 18,
+      "unreachable": 5,
+      "avg_depth": 3.0
+    },
+    "new": {
+      "total": 23,
+      "reachable": 18,
+      "unreachable": 5,
+      "avg_depth": 3.0
+    },
+    "raj": {
+      "total": 23,
+      "reachable": 18,
+      "unreachable": 5,
+      "avg_depth": 3.0
+    },
+    "sm": {
+      "total": 23,
+      "reachable": 18,
+      "unreachable": 5,
+      "avg_depth": 3.0
+    },
+    "ssw": {
+      "total": 23,
+      "reachable": 18,
+      "unreachable": 5,
+      "avg_depth": 3.0
+    },
+    "sv-SE": {
+      "total": 23,
+      "reachable": 23,
+      "unreachable": 0,
+      "avg_depth": 1.96
+    },
+    "tso": {
+      "total": 23,
+      "reachable": 18,
+      "unreachable": 5,
+      "avg_depth": 3.0
+    },
+    "tvl": {
+      "total": 23,
+      "reachable": 18,
+      "unreachable": 5,
+      "avg_depth": 3.0
+    },
+    "ven": {
+      "total": 23,
+      "reachable": 18,
+      "unreachable": 5,
+      "avg_depth": 3.0
+    },
+    "da-DK": {
+      "total": 21,
+      "reachable": 21,
+      "unreachable": 0,
+      "avg_depth": 1.95
+    },
+    "reviews": {
+      "total": 19,
+      "reachable": 19,
+      "unreachable": 0,
+      "avg_depth": 1.95
+    },
+    "aa": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ab": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "abr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "abs": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ace": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ace-ID": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ach": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ach-UG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "acm": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "acq": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "acw": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ada": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ady": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "aeb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "aec": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "af": {
+      "total": 18,
+      "reachable": 7,
+      "unreachable": 11,
+      "avg_depth": 4.0
+    },
+    "af-ZA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "afb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "agi": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "agn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "agq": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "agr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ahr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ak": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "akl": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "alt": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "alz": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "am": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "am-ET": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ami": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "amo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "an": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "anp": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "anr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "anu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "any": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "apc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "apd": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ar-BH": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ar-DZ": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ar-EG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ar-IQ": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ar-JO": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ar-KW": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ar-LY": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ar-MA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ar-OM": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ar-PS": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ar-QA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ar-SD": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ar-YE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "arn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ary": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "arz": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "as": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "as-IN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "asa": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "av": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "avn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "avu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "awa": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ay": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ay-BO": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "aym": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "az": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "az-AZ": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ba": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ba-RU": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "bal": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ban": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ban-ID": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "bar": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bas": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bax": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bbc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bbj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bcc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bci": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bcl": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bcl-PH": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "be": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bej": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bem": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bew": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bex": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bez": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bfa": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bfa2": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bfd": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bfo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bft": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bfw": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bfy": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bgc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bgn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bgp": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bgq": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bhb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bhi": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bi": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bin": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bis": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bjj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bjn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bjn-ID": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "bjt": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bkm": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bkn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "blk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "blt": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bm": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bm-ML": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "bmq": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bn": {
+      "total": 18,
+      "reachable": 8,
+      "unreachable": 10,
+      "avg_depth": 3.5
+    },
+    "bnj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bns": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bo-CN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "box": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bpy": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bqc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bqi": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bqv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "br": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "br-FR": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "bra": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "brx": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "brx-IN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "bs": {
+      "total": 18,
+      "reachable": 8,
+      "unreachable": 10,
+      "avg_depth": 3.88
+    },
+    "bs-BA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "bsc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bsc2": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bsh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bsq": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bss": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bua": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bud": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bug": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bug-ID": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "bum": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bwq": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bwu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "byv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bza": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "bze": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ca-ES": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "cak": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "cbk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "cce": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "cdo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ce": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ceb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ceb-PH": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "cgg": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "cgg-UG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ch": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "che": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "che-RU": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "chk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "cho": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "chr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "cjk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "cjs": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "cjy": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ckb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "cnh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "cni": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "co": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "co-FR": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "cos": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "cps": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "cr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "cre": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "crh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "crs": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "csb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "csk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ctg": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "cv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "cv-RU": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "cy": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "cy-GB": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "daa": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dag": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dan": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dar": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dav": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dcc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "de-AT": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "de-CH": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "dee": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dga": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dga2": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dgo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dgo-IN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "dhd": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dhn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "din": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dip": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dlg": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dnj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "doi": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dop": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dry": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dsb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dtp": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dty": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dua": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dyo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dyu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dyu-CI": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "dz": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "dz-BT": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "dzo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ebu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "edo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ee": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "efi": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "egl": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "emx": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "en-BW": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-ER": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-ET": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-GH": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-GM": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-IN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-KE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-LR": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-LS": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-MW": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-MY": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-NA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-NG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-NZ": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-PH": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-PK": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-RW": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-SG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-SL": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-SO": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-SS": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-TZ": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-UG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-ZA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-ZM": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-ZW": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "en-ZW2": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "eo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "es-AR": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "es-BO": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "es-CL": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "es-CO": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "es-CR": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "es-DO": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "es-EC": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "es-GT": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "es-HN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "es-NI": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "es-PA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "es-PE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "es-PR": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "es-PY": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "es-SV": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "es-US": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "es-UY": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "es-VE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "et": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "et-EE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "etu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "eu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "eu-ES": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "evn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ewe": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ewe-GH": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ewo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ext": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "fa": {
+      "total": 18,
+      "reachable": 8,
+      "unreachable": 10,
+      "avg_depth": 4.12
+    },
+    "fat": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ff": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ff-SN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fij": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "fit": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "fj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "fj-FJ": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fkv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "fo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "fon": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "fr-BE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-BF": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-BI": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-BJ": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-CD": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-CG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-CH": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-CI": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-CM": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-CV": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-DJ": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-DZ": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-GA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-GN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-HT": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-KM": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-MA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-MG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-ML": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-MR": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-NE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-RW": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-SN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-SN2": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-TD": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-TG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fr-TN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "frp": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "frr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "fub": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "fuf": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "fur": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "fur-IT": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "fuv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "fy": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ga": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ga-IE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "gaa": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gag": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gag-MD": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "gan": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gas": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gbj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gbk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gbm": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gbo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gbr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gcf": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gcr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gd": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gdx": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gej": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gez": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gid": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gil": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gjn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gju": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gkp": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gl": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gl-ES": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "glk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gn-PY": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "gng": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gog": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gom": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gom-IN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "gon": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gor-ID": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "grj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "grn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "grt": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gsw": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gu": {
+      "total": 18,
+      "reachable": 14,
+      "unreachable": 4,
+      "avg_depth": 3.14
+    },
+    "guc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gud": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gutn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "guw": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "guz": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "guz-KE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "gv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gvr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gwc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "gwr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ha": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ha-NG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "hag": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "hak": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "hat": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "hay": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "haz": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "heh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "hif": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "hil": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "hmo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "hnd": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "hne": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "hnj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "hnn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "hno": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ho": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "hoc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "hoj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "hsb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "hsn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ht": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ht-HT": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "hy": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "hy-AM": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "hz": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ia": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ibb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "idu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ig": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ig-NG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "igl": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ii": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ik": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ikt": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "iku": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ilo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ilo-PH": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "inh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "is": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "is-IS": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "iu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ixl": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "jam": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "jgo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "jmc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "jut": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "jv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "jv-ID": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "jya": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ka": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ka-GE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "kaa": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kab": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kab-DZ": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "kac": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kam": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kam-KE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "kao": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kas": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kbd": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kbn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kbp2": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kby": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kcg": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kck": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kdc2": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kde": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kdh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kdj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kdq": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kdr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kea": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kek": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kel": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "keo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ket": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kex": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kfe": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kfq": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kfr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kfx": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kfy": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kg": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kha": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "khb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "khw": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ki": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kim": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kin": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kjh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kjo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kk-KZ": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "kkj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kl": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kln": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kln-KE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "km": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "km-KH": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "kmb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "knc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "knf": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "koi": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kok": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "koq": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kpe": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kpv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kpy": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kqn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kqs": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "krc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kri": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "krj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "krl": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kru": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ks": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ks-IN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ksb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ksf": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ksh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ksw": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ktu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ku": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kum": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kus": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kvx": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kw": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kxp": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "kxv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ky": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ky-KG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "la": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lad": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lag": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "laj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "las": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lb-LU": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "lbe": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lep": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lez": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lg": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lg-UG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "lgg": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "li": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lif": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lij": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "liv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lkt": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lld": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lmn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lmo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ln": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lo-LA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "lom": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lot": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lrc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lt": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "lt-LT": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "lu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lua": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lua-CD": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "luc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lue": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lug": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lun": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "luo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "luo-KE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "lus": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "luy": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "luz": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "lv": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "lv-LV": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "mad": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mad-ID": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "mai-IN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "mak": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mak-ID": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "mam": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mas": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mas-KE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "maz": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mcn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mcp": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mcu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mdf": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mdh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "men": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mer": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mer-KE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "meu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mfa": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mfe": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mfi": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mfk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mfq": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mfz": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mg": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mg-MG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "mgh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mgo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mhr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mi": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mi-NZ": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "min": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "min-ID": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "mjl": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mjt": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mjz": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mk": {
+      "total": 18,
+      "reachable": 8,
+      "unreachable": 10,
+      "avg_depth": 3.88
+    },
+    "mk-MK": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ml": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mn-MN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "mni": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mni-IN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "mnk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mnw": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mnw-MM": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "moh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mos": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mr": {
+      "total": 18,
+      "reachable": 11,
+      "unreachable": 7,
+      "avg_depth": 3.27
+    },
+    "mrj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mrw": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "msb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "msm": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mt": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mt-MT": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "mta": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mtr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mua": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mup": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mwl": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mwr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "my": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "my-MM": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "myk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "myv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "myx": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mzn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "mzw": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "na": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nag": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nan": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nap": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "naq": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nav": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ncu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nd": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ndc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ndc-ZW": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "nde": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ndh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nds": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ne": {
+      "total": 18,
+      "reachable": 17,
+      "unreachable": 1,
+      "avg_depth": 3.0
+    },
+    "ne-NP": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "new-NP": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ng": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ngb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nhx": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nia": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nij": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nim": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "niq": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "niu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "niv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "njo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nl-BE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "nmg": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nmz": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nnh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nnq": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nod": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "noe": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nog": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nr-ZA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "nrf": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nso": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nso-ZA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ntr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nup": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nus": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nus-SS": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "nv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ny": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ny-MW": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "nya": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nyf": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nym-TZ": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "nyn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nyn-UG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "nyo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "nzi": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "obo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "oc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "oc-FR": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "oci": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "odk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "oj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "oji": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "olo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "om": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "om-ET": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "or": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "os": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "os-RU": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ovd": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "pa": {
+      "total": 18,
+      "reachable": 16,
+      "unreachable": 2,
+      "avg_depth": 3.0
+    },
+    "pag": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "pag-PH": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "pam": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "pam-PH": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "pap": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "pau": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "pcd": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "pce": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "pcm": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "pfl": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "pis": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "pko": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "pms": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "pmu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "pnb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "poh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "pon": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "prs": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "prv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ps": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ps-AF": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "pt-AO": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "pt-GW": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "pt-MZ": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "pt-ST": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "pwo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "qom": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "qu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "qu-PE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "quc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "que": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "quz": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rag": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rag2": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rap": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rej": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rgn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rif": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rim": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rki": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rkt": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rm": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rm-CH": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "rmc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rmn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rmy": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rof": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rop": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rue": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "run": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rup": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rw": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "rw-RW": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "rwk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sa": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "saf": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sah": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sah-RU": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "saq": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sas": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sat": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sat-IN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "sba": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sbp": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sc": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sc-IT": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "scenario": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 1.94
+    },
+    "sck": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "scn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "scn-IT": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "sco": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sd": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sd-PK": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "sdh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sdr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "se": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sef": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "seh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sg": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sg2": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sgj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "shi": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "shk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "shn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "shn-MM": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "shp": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "si": {
+      "total": 18,
+      "reachable": 17,
+      "unreachable": 1,
+      "avg_depth": 3.0
+    },
+    "si-LK": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "sid": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sip": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sje": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sju": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "skr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sl": {
+      "total": 18,
+      "reachable": 8,
+      "unreachable": 10,
+      "avg_depth": 4.12
+    },
+    "sm-WS": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "sma": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "smj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "smn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sms": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sn-ZW": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "snf": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "snk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "snn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "so": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "so-SO": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "sou": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sq": {
+      "total": 18,
+      "reachable": 8,
+      "unreachable": 10,
+      "avg_depth": 3.88
+    },
+    "sq-AL": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "sr": {
+      "total": 18,
+      "reachable": 8,
+      "unreachable": 10,
+      "avg_depth": 4.12
+    },
+    "sr-ME": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "srd": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "srn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "srx": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ss": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ss-SZ": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "st": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "st-ZA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "su": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "su-ID": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "suk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sus": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sw": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "sw-KE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "swb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "swc-CD": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "swg": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "swv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "sxu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "syl": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "szl": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ta": {
+      "total": 18,
+      "reachable": 8,
+      "unreachable": 10,
+      "avg_depth": 3.5
+    },
+    "tab": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tay": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tbl": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tbw": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tcy": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tdb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tdg": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "te": {
+      "total": 18,
+      "reachable": 11,
+      "unreachable": 7,
+      "avg_depth": 3.27
+    },
+    "tem": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "teo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "teo-UG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "tet": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tg": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tg-TJ": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "the": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "thk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "thl": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "thq": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ti": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ti-ER": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "tig": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tik": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tiv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tk": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tk-TM": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "tl": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tl-PH": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "tly": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tn": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tn-ZA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "tnr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "to": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "to-TO": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "toi": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "toj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ton": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "topic-hubs": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 1.94
+    },
+    "tpi": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ts": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ts-ZA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "tsg": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tsj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tt": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tt-RU": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ttj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tts": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tui": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tum": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tw": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tw-GH": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "twd": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "twi": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "twi-GH": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "ty": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tyv": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tzh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tzj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tzm": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "tzo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "udm": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ug": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ug-CN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "unr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "unx": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ur": {
+      "total": 18,
+      "reachable": 7,
+      "unreachable": 11,
+      "avg_depth": 4.0
+    },
+    "urh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "uz": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "uz-UZ": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "vah": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "vai": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ve": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ve-ZA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "vec": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "vec-IT": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "vid": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "vls": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "vmf": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "vo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "vro": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "vun": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "wa": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "wa-BE": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "wae": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "wal": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "war": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "war-PH": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "wbm": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "wbr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "wep": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "wln": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "wo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "wo-SN": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "wob": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "wol": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "wtm": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "wuu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "xal": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "xh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "xh-ZA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "xka": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "xmf": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "xnj": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "xnr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "xog": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "xog-UG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "xon": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "xpe": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "xsr": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "yav": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ybb": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "yi": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "ymm": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "yo": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "yo-NG": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "yom": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "yre": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "yua": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "yue": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "za": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "zea": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "zga": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "zgh": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "zgh-MA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "zu": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "zu-ZA": {
+      "total": 18,
+      "reachable": 0,
+      "unreachable": 18,
+      "avg_depth": null
+    },
+    "zza": {
+      "total": 18,
+      "reachable": 18,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    },
+    "root": {
+      "total": 11,
+      "reachable": 11,
+      "unreachable": 0,
+      "avg_depth": 0.91
+    },
+    "tutorials": {
+      "total": 11,
+      "reachable": 11,
+      "unreachable": 0,
+      "avg_depth": 1.91
+    },
+    "seasonal": {
+      "total": 9,
+      "reachable": 9,
+      "unreachable": 0,
+      "avg_depth": 1.89
+    },
+    "persona": {
+      "total": 7,
+      "reachable": 7,
+      "unreachable": 0,
+      "avg_depth": 1.86
+    },
+    "bundle": {
+      "total": 6,
+      "reachable": 6,
+      "unreachable": 0,
+      "avg_depth": 1.83
+    },
+    "api": {
+      "total": 5,
+      "reachable": 5,
+      "unreachable": 0,
+      "avg_depth": 1.8
+    },
+    "pl-PL": {
+      "total": 5,
+      "reachable": 5,
+      "unreachable": 0,
+      "avg_depth": 1.8
+    },
+    "review-hubs": {
+      "total": 5,
+      "reachable": 5,
+      "unreachable": 0,
+      "avg_depth": 1.8
+    },
+    "ar": {
+      "total": 4,
+      "reachable": 0,
+      "unreachable": 4,
+      "avg_depth": null
+    },
+    "fi-FI": {
+      "total": 4,
+      "reachable": 4,
+      "unreachable": 0,
+      "avg_depth": 1.75
+    },
+    "visuals": {
+      "total": 1,
+      "reachable": 1,
+      "unreachable": 0,
+      "avg_depth": 3.0
+    }
+  },
+  "fully_orphaned_sections": [],
+  "fully_orphaned_section_count": 0,
+  "fully_orphaned_section_min_pages": 20,
+  "indexable_orphan_sections": [],
+  "indexable_orphan_section_count": 0,
+  "sections_min_depth_over_3": [
+    "af:best-for",
+    "af:reviews",
+    "af:seasonal",
+    "af:vs",
+    "bg:best-for",
+    "bg:reviews",
+    "bg:seasonal",
+    "bg:vs",
+    "bn:best-for",
+    "bn:reviews",
+    "bn:seasonal",
+    "bs:best-for",
+    "bs:reviews",
+    "bs:seasonal",
+    "bs:vs",
+    "fa:best-for",
+    "fa:reviews",
+    "fa:seasonal",
+    "fa:vs",
+    "mk:best-for",
+    "mk:reviews",
+    "mk:seasonal",
+    "mk:vs",
+    "mr:reviews",
+    "sl:best-for",
+    "sl:reviews",
+    "sl:seasonal",
+    "sl:vs",
+    "sq:best-for",
+    "sq:reviews",
+    "sq:seasonal",
+    "sq:vs",
+    "sr:best-for",
+    "sr:reviews",
+    "sr:seasonal",
+    "sr:vs",
+    "ta:best-for",
+    "ta:reviews",
+    "ta:seasonal",
+    "te:reviews",
+    "ur:best-for",
+    "ur:reviews",
+    "ur:seasonal",
+    "ur:vs"
+  ],
+  "unreachable_samples": [
+    "https://alice51849.github.io/ios-app-guide/ace-ID/best-for/iphone-best-app-document-mask-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ace-ID/best-for/iphone-best-app-passport-photo-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ace-ID/best-for/iphone-best-app-photo-hide-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ace-ID/best-for/iphone-best-app-scan-offline-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ace-ID/best-for/iphone-best-app-social-block-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ace-ID/reviews/maskmyfile-review-2026-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ace-ID/reviews/scanto-review-2026-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ace-ID/reviews/snapport-review-2026-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ace-ID/reviews/zafe-review-2026-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ace-ID/seasonal/iphone-apps-school-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ace-ID/seasonal/iphone-apps-summer-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ace-ID/seasonal/iphone-apps-year-end-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ace-ID/vs/scanto-vs-apple-notes-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ace-ID/vs/snapport-vs-photographer-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ace-ID/vs/zafe-vs-hidden-album-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ace-ID/workflow/iphone-privacy-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ace-ID/workflow/iphone-workflow-freelancer-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ace-ID/workflow/iphone-workflow-student-ace-id.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/best-for/iphone-best-app-document-mask-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/best-for/iphone-best-app-passport-photo-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/best-for/iphone-best-app-photo-hide-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/best-for/iphone-best-app-scan-offline-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/best-for/iphone-best-app-social-block-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/reviews/maskmyfile-review-2026-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/reviews/scanto-review-2026-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/reviews/snapport-review-2026-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/reviews/zafe-review-2026-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/seasonal/iphone-apps-school-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/seasonal/iphone-apps-summer-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/seasonal/iphone-apps-year-end-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/vs/scanto-vs-apple-notes-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/vs/snapport-vs-photographer-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/vs/zafe-vs-hidden-album-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/workflow/iphone-privacy-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/workflow/iphone-workflow-freelancer-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/ach-UG/workflow/iphone-workflow-student-ach-ug.html",
+    "https://alice51849.github.io/ios-app-guide/af-ZA/best-for/iphone-best-app-document-mask-af-za.html",
+    "https://alice51849.github.io/ios-app-guide/af-ZA/best-for/iphone-best-app-passport-photo-af-za.html",
+    "https://alice51849.github.io/ios-app-guide/af-ZA/best-for/iphone-best-app-photo-hide-af-za.html",
+    "https://alice51849.github.io/ios-app-guide/af-ZA/best-for/iphone-best-app-scan-offline-af-za.html"
+  ],
+  "read_mb": 913.3
+}

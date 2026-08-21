@@ -2,7 +2,7 @@
 title: "aplikasi rutinitas pagi dan tidur lengkap terbaik untuk anak"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/id/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"

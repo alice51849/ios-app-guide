@@ -2,7 +2,7 @@
 title: "najbolja jednostavna aplikacija za popis zadataka na iPhoneu bez pretplate"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/hr/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -258,6 +258,90 @@ class AppStoreAvailabilityTests(unittest.TestCase):
                 keys = appstore_live.live_app_keys(apps, pages)
             self.assertEqual({"second"}, keys)
 
+    def test_seeded_baseline_protects_the_first_private_miss(self):
+        with tempfile.TemporaryDirectory() as directory:
+            public = os.path.join(directory, "public")
+            private = os.path.join(directory, "private")
+            os.makedirs(public)
+            appstore_live._write_state(
+                os.path.join(public, appstore_live.STATE_FILE),
+                {"1", "2"},
+                {},
+            )
+            with mock.patch.object(
+                appstore_live, "fetch_live_ids", return_value={"2"}
+            ):
+                keys = appstore_live.live_app_keys(
+                    {"first": "1", "second": "2"},
+                    private,
+                    seed_state_path=os.path.join(
+                        public, appstore_live.STATE_FILE
+                    ),
+                    strict_state=True,
+                )
+            self.assertEqual({"first", "second"}, keys)
+            state = appstore_live._read_state(
+                os.path.join(private, appstore_live.STATE_FILE),
+                strict=True,
+            )
+            self.assertEqual(1, state["miss_counts"]["1"])
+
+    def test_existing_private_state_wins_over_malformed_seed(self):
+        with tempfile.TemporaryDirectory() as directory:
+            private = os.path.join(directory, "private")
+            os.makedirs(private)
+            appstore_live._write_state(
+                os.path.join(private, appstore_live.STATE_FILE),
+                {"1", "2"},
+                {},
+            )
+            seed = os.path.join(directory, "malformed.json")
+            with open(seed, "w", encoding="utf-8") as handle:
+                handle.write("{}")
+            with mock.patch.object(
+                appstore_live, "fetch_live_ids", return_value={"1", "2"}
+            ):
+                keys = appstore_live.live_app_keys(
+                    {"first": "1", "second": "2"},
+                    private,
+                    seed_state_path=seed,
+                    strict_state=True,
+                )
+            self.assertEqual({"first", "second"}, keys)
+
+    def test_malformed_seed_fails_closed(self):
+        with tempfile.TemporaryDirectory() as directory:
+            seed = os.path.join(directory, "malformed.json")
+            with open(seed, "w", encoding="utf-8") as handle:
+                handle.write("{}")
+            with self.assertRaisesRegex(RuntimeError, "Invalid App Store"):
+                appstore_live.live_app_keys(
+                    {"first": "1"},
+                    os.path.join(directory, "private"),
+                    seed_state_path=seed,
+                    strict_state=True,
+                )
+
+    def test_missing_seed_fails_closed_before_first_private_refresh(self):
+        with tempfile.TemporaryDirectory() as directory:
+            with mock.patch.object(
+                appstore_live,
+                "fetch_live_ids",
+                return_value={"2"},
+            ) as fetch:
+                with self.assertRaisesRegex(
+                    RuntimeError, "baseline is missing"
+                ):
+                    appstore_live.live_app_keys(
+                        {"first": "1", "second": "2"},
+                        os.path.join(directory, "private"),
+                        seed_state_path=os.path.join(
+                            directory, "missing-state.json"
+                        ),
+                        strict_state=True,
+                    )
+            fetch.assert_not_called()
+
     def test_transient_lookup_failure_keeps_verified_snapshot(self):
         with tempfile.TemporaryDirectory() as pages:
             apps = {"live": "1"}
@@ -424,7 +508,11 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(modified, output.stat().st_mtime_ns)
 
     def test_sitemap_index_locations_are_stably_unique(self):
-        with mock.patch.object(gen_llms.os.path, "exists", return_value=True):
+        with mock.patch.object(
+            gen_llms,
+            "sitemap_has_entries",
+            return_value=True,
+        ):
             root = ET.fromstring(gen_llms.build_sitemap_index())
         namespace = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
         locations = [
@@ -12033,6 +12121,15 @@ class GeneratorTests(unittest.TestCase):
                 for resource in resources
             }
             self.assertEqual(
+                (
+                    "https://alice51849.github.io/ios-app-guide/"
+                    "api/v1/bopomofo-symbols/"
+                ),
+                resources_by_path[
+                    "api/v1/bopomofo-symbols/index.html"
+                ].url,
+            )
+            self.assertEqual(
                 "application/atom+xml",
                 resources_by_path[
                     "opds/bopomofo-37-symbol-reference.xml"
@@ -23448,15 +23545,84 @@ class GeneratorTests(unittest.TestCase):
         )
         for block in (english_commit_block, localized_commit_block):
             pull = block.index("git pull --rebase")
-            reconcile = block.index(
-                "python3 _engine/geo/gen_sitemap_lastmod.py",
+            sync = block.index(
+                "python3 _engine/geo/sync_standard_site.py",
                 pull,
             )
-            restage = block.index("git add -A", reconcile)
+            semantics = block.index(
+                "python3 _engine/geo/reconcile_answer_semantics.py",
+                sync,
+            )
+            dedupe = block.index(
+                "python3 dedupe_locale_meta.py --apply",
+                semantics,
+            )
+            first_indexation = block.index(
+                "python3 gen_locale_indexation.py",
+                dedupe,
+            )
+            hubs = block.index(
+                "python3 gen_link_hubs.py",
+                first_indexation,
+            )
+            second_indexation = block.index(
+                "python3 gen_locale_indexation.py",
+                first_indexation + 1,
+            )
+            hubs_check = block.index(
+                "python3 gen_link_hubs.py --check",
+                second_indexation,
+            )
+            depth_gate = block.index(
+                "python3 audit_link_depth.py --max-indexable-orphans 0",
+                hubs_check,
+            )
+            reconcile = block.index(
+                "python3 _engine/geo/gen_sitemap_lastmod.py",
+                depth_gate,
+            )
+            final_tests = block.index(
+                "python3 -m unittest discover",
+                reconcile,
+            )
+            restage = block.index("git add -A", final_tests)
             push = block.index("git push", restage)
+            self.assertLess(sync, semantics)
+            self.assertLess(semantics, dedupe)
+            self.assertLess(dedupe, first_indexation)
+            self.assertLess(first_indexation, hubs)
+            self.assertLess(hubs, second_indexation)
+            self.assertLess(second_indexation, hubs_check)
+            self.assertLess(hubs_check, depth_gate)
             self.assertLess(pull, reconcile)
-            self.assertLess(reconcile, restage)
+            self.assertLess(reconcile, final_tests)
+            self.assertLess(final_tests, restage)
             self.assertLess(restage, push)
+        self.assertEqual(6, workflow.count("gen_locale_indexation.py"))
+        self.assertEqual(
+            3,
+            workflow.count(
+                "audit_link_depth.py --max-indexable-orphans 0"
+            ),
+        )
+        precommit_tail = final_cleanup_block[
+            final_cleanup_block.index("dedupe_locale_meta.py --apply"):
+        ]
+        first_indexation = precommit_tail.index(
+            "gen_locale_indexation.py"
+        )
+        hubs = precommit_tail.index("gen_link_hubs.py", first_indexation)
+        second_indexation = precommit_tail.index(
+            "gen_locale_indexation.py",
+            first_indexation + 1,
+        )
+        hubs_check = precommit_tail.index(
+            "gen_link_hubs.py --check",
+            second_indexation,
+        )
+        self.assertLess(first_indexation, hubs)
+        self.assertLess(hubs, second_indexation)
+        self.assertLess(second_indexation, hubs_check)
         self.assertEqual(
             2,
             workflow.count(

@@ -2,7 +2,7 @@
 title: "meilleure application météo pour aider les parents à organiser des sorties avec enfants"
 lang: "fr-FR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/fr-FR/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "migliore app per creare curriculum per chi cambia carriera 2026"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/it/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

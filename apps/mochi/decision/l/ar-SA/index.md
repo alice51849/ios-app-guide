@@ -2,7 +2,7 @@
 title: "أفضل تطبيق قائمة مهام بسيط على آيفون بدون اشتراك"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/ar-SA/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

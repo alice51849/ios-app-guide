@@ -2,7 +2,7 @@
 title: "परिवार यात्रा पर बच्चों के लिए सबसे अच्छा ट्रैवल एक्टिविटी ऐप"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/hi/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "MoneyTag: 收入與支出 — 專案 · 標籤 · 報表 | iOS App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/zh-Hant/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "Snapport Lite — Створіть ID-фотографії вдома | iOS App"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/uk/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

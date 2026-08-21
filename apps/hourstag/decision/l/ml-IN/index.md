@@ -2,7 +2,7 @@
 title: "HoursTag: സമയം വാങ്ങുക — വില എത്രയെന്ന് അറിയാമോ? | iOS App"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ml-IN/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

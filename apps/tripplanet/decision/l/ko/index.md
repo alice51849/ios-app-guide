@@ -2,7 +2,7 @@
 title: "가족 여행에서 아이들을 위한 최고의 여행 활동 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/ko/index.html"
-modified: "2026-08-20"
+modified: "2026-08-21"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

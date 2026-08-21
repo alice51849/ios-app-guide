@@ -143,6 +143,6 @@ JSON, JSONL i CSV sadrže istih 2.150 zapisa.
 
 [Početna](https://alice51849.github.io/ios-app-guide/hr/index.html) · [Otvoreni podaci](https://alice51849.github.io/ios-app-guide/hr/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Ažurirano: 2026-08-22
+Ažurirano: 2026-08-21
 
 CC BY 4.0 primjenjuje se na izvornu kompilaciju kataloga; nazivi aplikacija i oznake App Store pripadaju njihovim vlasnicima.

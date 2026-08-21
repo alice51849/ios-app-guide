@@ -143,6 +143,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [בית](https://alice51849.github.io/ios-app-guide/he/index.html) · [נתונים פתוחים](https://alice51849.github.io/ios-app-guide/he/data/lumi-studio-publisher-search-intent-catalog.html) · [רישיון](https://creativecommons.org/licenses/by/4.0/)
 
-עודכן: 2026-08-22
+עודכן: 2026-08-21
 
 רישיון CC BY 4.0 חל על הרכב הקטלוג המקורי; שמות האפליקציות וסימני App Store שייכים לבעליהם.

@@ -143,6 +143,6 @@ A JSON, JSONL és CSV ugyanazt az 2 150 rekordot tartalmazza.
 
 [Kezdőlap](https://alice51849.github.io/ios-app-guide/hu/index.html) · [Nyílt adatok](https://alice51849.github.io/ios-app-guide/hu/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenc](https://creativecommons.org/licenses/by/4.0/)
 
-Frissítve: 2026-08-22
+Frissítve: 2026-08-21
 
 A CC BY 4.0 az eredeti katalógus összeállítására vonatkozik; az alkalmazásnevek és az App Store védjegyek a tulajdonosaiké.

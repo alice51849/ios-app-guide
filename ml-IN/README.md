@@ -143,6 +143,6 @@ JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 2,150 രേഖകൾ ഉ
 
 [ഹോം](https://alice51849.github.io/ios-app-guide/ml-IN/index.html) · [തുറന്ന ഡാറ്റ](https://alice51849.github.io/ios-app-guide/ml-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ലൈസൻസ്](https://creativecommons.org/licenses/by/4.0/)
 
-അപ്ഡേറ്റ് ചെയ്തത്: 2026-08-22
+അപ്ഡേറ്റ് ചെയ്തത്: 2026-08-21
 
 CC BY 4.0 യഥാർത്ഥ കാറ്റലോഗ് സംയോജനത്തിന് ബാധകമാണ്; ആപ്പ് നാമങ്ങളും App Store മാർക്കുകളും അവയുടെ ഉടമകളുടെതാണ്

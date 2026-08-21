@@ -22972,9 +22972,9 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("aeo_pages.py --cached-live", workflow)
         self.assertIn("gen_llms.py --cached-live", workflow)
         self.assertIn("fetch-depth: 0", workflow)
-        self.assertEqual(4, workflow.count("gen_sitemap_lastmod.py"))
+        self.assertEqual(5, workflow.count("gen_sitemap_lastmod.py"))
         self.assertEqual(
-            2,
+            3,
             workflow.count(
                 '--state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"'
             ),
@@ -22995,9 +22995,26 @@ class GeneratorTests(unittest.TestCase):
             workflow.index("- name: Refresh verified App Store availability once"),
             workflow.index("- name: Materialize newly live app surfaces"),
         )
+        preflight_closure = workflow.split(
+            "- name: Close preflight sitemap graph", 1
+        )[1].split("- name: Verify zero-cost growth infrastructure", 1)[0]
+        closure_commands = [
+            "dedupe_locale_meta.py --apply",
+            "gen_locale_indexation.py",
+            "gen_link_hubs.py",
+            "gen_locale_indexation.py",
+            "gen_link_hubs.py --check",
+            "audit_link_depth.py --max-indexable-orphans 0",
+            "gen_sitemap_lastmod.py",
+        ]
+        cursor = 0
+        for command in closure_commands:
+            cursor = preflight_closure.index(command, cursor) + len(command)
         materialize_block = workflow.split(
             "- name: Materialize newly live app surfaces", 1
-        )[1].split("- name: Verify zero-cost growth infrastructure", 1)[0]
+        )[1].split(
+            "- name: Reconcile verified Standard.site discovery links", 1
+        )[0]
         self.assertEqual(1, materialize_block.count("aeo_guide.py --missing"))
         self.assertLess(
             materialize_block.index("build_pages_i18n.py --cached-live"),
@@ -23598,9 +23615,9 @@ class GeneratorTests(unittest.TestCase):
             self.assertLess(reconcile, final_tests)
             self.assertLess(final_tests, restage)
             self.assertLess(restage, push)
-        self.assertEqual(6, workflow.count("gen_locale_indexation.py"))
+        self.assertEqual(8, workflow.count("gen_locale_indexation.py"))
         self.assertEqual(
-            3,
+            4,
             workflow.count(
                 "audit_link_depth.py --max-indexable-orphans 0"
             ),

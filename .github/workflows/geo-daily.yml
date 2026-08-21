@@ -141,6 +141,20 @@ jobs:
             --timeout 10 \
             --retries 3 \
             --retry-delay 2
+      - name: Close preflight sitemap graph
+        run: |
+          cd _engine/geo
+          # Materialization can add locale and per-App sitemaps. Close their
+          # recursive union before the full-tree hygiene test inspects it.
+          python3 dedupe_locale_meta.py --apply
+          python3 gen_locale_indexation.py
+          python3 gen_link_hubs.py
+          python3 gen_locale_indexation.py
+          python3 gen_link_hubs.py --check
+          python3 audit_link_depth.py --max-indexable-orphans 0
+          cd "$GITHUB_WORKSPACE"
+          python3 _engine/geo/gen_sitemap_lastmod.py \
+            --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
       - name: Verify zero-cost growth infrastructure
         run: |
           python3 -m unittest discover -s _engine/geo/tests -p "test_*.py"

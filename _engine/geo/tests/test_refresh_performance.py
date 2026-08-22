@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -19,6 +20,14 @@ import gen_mobile_store_ctas  # noqa: E402
 import gen_smart_app_banners  # noqa: E402
 import reconcile_answer_semantics  # noqa: E402
 from videogen.registry import APPSTORE  # noqa: E402
+
+
+def guide_workflow() -> str:
+    root = Path(os.environ.get("GEO_GUIDE_ROOT", GEO.parents[1]))
+    path = root / ".github" / "workflows" / "geo-daily.yml"
+    if not path.is_file():
+        raise unittest.SkipTest("materialized Guide workflow is unavailable")
+    return path.read_text(encoding="utf-8")
 
 
 class RefreshPerformanceTests(unittest.TestCase):
@@ -115,9 +124,7 @@ class RefreshPerformanceTests(unittest.TestCase):
         )
 
     def test_workflow_uses_shared_conversion_inventory_three_times(self):
-        workflow = (
-            GEO.parents[1] / ".github" / "workflows" / "geo-daily.yml"
-        ).read_text(encoding="utf-8")
+        workflow = guide_workflow()
         sequence = (
             "          python3 cleanup_localized_assets.py --cached-live\n"
             "          python3 gen_app_store_conversion_surfaces.py"

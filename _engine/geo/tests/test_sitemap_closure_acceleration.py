@@ -169,7 +169,7 @@ class SharedClosureTests(unittest.TestCase):
 class PublishedMatrixTests(unittest.TestCase):
     def test_all_43_live_apps_have_all_50_localized_guide_pages(self):
         pages = Path(gen_locale_indexation.PAGES)
-        if not pages.is_dir():
+        if not pages.is_dir() or not (pages / "en-US").is_dir():
             self.skipTest("materialized Pages tree is unavailable")
         keys = sorted(
             live_app_keys(

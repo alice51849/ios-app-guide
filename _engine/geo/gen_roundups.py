@@ -22,6 +22,16 @@ sys.path.insert(0, str(HERE.parent / "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from aeo_pages import pricing_profile  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
+import gen_store_attribution  # noqa: E402
+
+# Campaign token for this page family.  gen_store_attribution.py is the
+# single authority on ?ct= for the whole tree and it runs last, *after*
+# gen_app_store_qr_ctas.py has already hashed the page's first App Store
+# link into the QR image file name.  Minting a different token here would
+# leave the printed QR code pointing at a campaign the button no longer
+# uses, so take the final token from the same function the rewrite uses.
+# Roundups are published into answers/, so they share the ASK bucket.
+ROUNDUP_CAMPAIGN = gen_store_attribution.campaign_token("answers/page.html")
 
 # 每個 App 的榜單主題名詞(人們搜「best <topic> apps」用語)。
 TOPICS = {
@@ -329,7 +339,7 @@ def build(key):
     name = a["name"]
     sub = a.get("sub", "")
     bullets = a.get("cta_bullets", []) or ["Independent", "Purpose-built", "iPhone"]
-    url = appstore_url(key, "iag_roundup") or appstore_url(key)
+    url = appstore_url(key, ROUNDUP_CAMPAIGN) or appstore_url(key)
     comps = COMP.get(key) or EXTRA_COMP.get(key, [])
     copy = roundup_copy(key, topic)
     slug = (

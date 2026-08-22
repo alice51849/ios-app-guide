@@ -29,6 +29,15 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
+import gen_store_attribution  # noqa: E402
+
+# Campaign token for this page family.  gen_store_attribution.py is the
+# single authority on ?ct= for the whole tree and it runs last, *after*
+# gen_app_store_qr_ctas.py has already hashed the page's first App Store
+# link into the QR image file name.  Minting a different token here would
+# leave the printed QR code pointing at a campaign the button no longer
+# uses, so take the final token from the same function the rewrite uses.
+GUIDE_CAMPAIGN = gen_store_attribution.campaign_token("guides/page.html")
 from answer_personas import PERSONAS  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
@@ -167,7 +176,7 @@ def deterministic_content(key):
 
 def render(key, c):
     a = APPS[key]
-    url = appstore_url(key, "iag_gd")
+    url = appstore_url(key, GUIDE_CAMPAIGN)
     scat = SCHEMA_CAT.get(a.get("category", ""), "MobileApplication")
     title = (c.get("title") or f"{a['name']} — iPhone app guide")[:65]
     meta = (c.get("meta") or (a.get("sub") or "").replace("\n", " "))[:155]

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 import sys
 import tempfile
@@ -17,6 +18,14 @@ import aeo_answers_i18n  # noqa: E402
 import build_pages_i18n  # noqa: E402
 import i18n_harvest_existing  # noqa: E402
 from official_locales import OFFICIAL_LOCALES  # noqa: E402
+
+
+def guide_workflow() -> str:
+    root = Path(os.environ.get("GEO_GUIDE_ROOT", ROOT))
+    path = root / ".github" / "workflows" / "geo-daily.yml"
+    if not path.is_file():
+        raise unittest.SkipTest("materialized Guide workflow is unavailable")
+    return path.read_text(encoding="utf-8")
 
 
 class PipelineAccelerationTests(unittest.TestCase):
@@ -276,9 +285,7 @@ class PipelineAccelerationTests(unittest.TestCase):
         )
 
     def test_workflow_uses_incremental_and_batched_modes(self):
-        workflow = (
-            ROOT / ".github" / "workflows" / "geo-daily.yml"
-        ).read_text(encoding="utf-8")
+        workflow = guide_workflow()
         self.assertIn(
             "build_pages_i18n.py --cached-live --missing-apps",
             workflow,

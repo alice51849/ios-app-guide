@@ -24,10 +24,12 @@
 import argparse
 import html
 import os
+from pathlib import Path
 import re
 import sys
 
 from official_locales import OFFICIAL_LOCALES
+from site_tree_index import SiteTreeIndex
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
@@ -322,7 +324,11 @@ def read_head(path):
         return ""
 
 
-def page_title(path, fallback):
+def page_title(path, fallback, tree=None):
+    if tree is not None:
+        relative = tree.relative(Path(path))
+        if tree.contains(relative):
+            return tree.basic_facts(relative).title or fallback
     head = read_head(path)
     for regex in (TITLE_RE, H1_RE):
         match = regex.search(head)
@@ -342,7 +348,23 @@ def slug_title(rel):
     return stem.replace("-", " ").replace("_", " ").strip()
 
 
-def html_files(root):
+def html_files(root, tree=None):
+    if tree is not None:
+        prefix = tree.relative(Path(root))
+        if prefix == ".":
+            prefix = ""
+        relatives = (
+            tree.html_relatives_under(prefix)
+            if prefix
+            else tree.html_relatives()
+        )
+        return [
+            str(tree.path(relative))
+            for relative in relatives
+            if not any(
+                part in SKIP_DIRS for part in Path(relative).parts
+            )
+        ]
     out = []
     for dirpath, dirnames, filenames in os.walk(root):
         dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS]
@@ -352,28 +374,37 @@ def html_files(root):
     return out
 
 
-def is_noindex(path):
+def is_noindex(path, tree=None):
+    if tree is not None:
+        relative = tree.relative(Path(path))
+        if tree.contains(relative):
+            return tree.basic_facts(relative).noindex
     return bool(NOINDEX_RE.search(read_head(path)))
 
 
-def detect_lang(path, default="en"):
+def detect_lang(path, default="en", tree=None):
+    if tree is not None:
+        relative = tree.relative(Path(path))
+        if tree.contains(relative):
+            return tree.basic_facts(relative).lang or default
     match = LANG_RE.search(read_head(path))
     return match.group(1) if match else default
 
 
-def parent_dirs():
+def parent_dirs(tree=None, pages=None):
     """回傳 [(dir_name, locale)],只含官方語系與內容區塊;微語言目錄跳過。"""
+    pages = str(pages or PAGES)
     official = set(OFFICIAL_LOCALES)
     out = []
-    for name in sorted(os.listdir(PAGES)):
-        path = os.path.join(PAGES, name)
+    for name in sorted(os.listdir(pages)):
+        path = os.path.join(pages, name)
         if not os.path.isdir(path) or name in SKIP_DIRS or name.startswith("."):
             continue
         if name in NON_BROWSE_PARENTS:
             continue
         # 一定要排序:os.walk 的檔名順序是不保證的,拿「第一個檔案」去判語言
         # 會讓同一份輸入每次產出不同結果,兩支產生器就會永遠互相翻頁。
-        files = sorted(html_files(path))
+        files = sorted(html_files(path, tree))
         if len(files) < 2:
             continue
         if name in official:
@@ -381,10 +412,15 @@ def parent_dirs():
             continue
         sample = files[: min(8, len(files))]
         index = os.path.join(path, "index.html")
-        lang = detect_lang(index if os.path.exists(index) else sample[0])
+        lang = detect_lang(
+            index if os.path.exists(index) else sample[0],
+            tree=tree,
+        )
         # 刻意 noindex 的微語言叢集不接回連結圖:那 990 個語言在 App Store 沒有
         # 商店,已由 gen_locale_indexation.py 停損,再花爬取預算反而有害。
-        if sum(1 for p in sample if is_noindex(p)) >= max(1, len(sample) * 4 // 5):
+        if sum(1 for p in sample if is_noindex(p, tree)) >= max(
+            1, len(sample) * 4 // 5
+        ):
             continue
         out.append((name, lang if lang else "en"))
     return out
@@ -457,18 +493,22 @@ def render_browse(parent, locale, groups, page_no, page_urls, parent_index_url):
     )
 
 
-def write_if_changed(path, content, state):
+def write_if_changed(path, content, state, tree=None, pages=None):
+    pages = str(pages or PAGES)
     old = None
     if os.path.exists(path):
         with open(path, "r", encoding="utf-8", errors="ignore") as fh:
             old = fh.read()
     if old == content:
         return False
-    state["changed"].append(os.path.relpath(path, PAGES))
+    relative = os.path.relpath(path, pages).replace(os.sep, "/")
+    state["changed"].append(relative)
     if not state["check"]:
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w", encoding="utf-8") as fh:
             fh.write(content)
+        if tree is not None:
+            tree.update_source(relative, content)
     return True
 
 
@@ -502,7 +542,7 @@ def splice(source, block):
     return source[:idx] + block + source[idx:]
 
 
-def inject(path, block_re, block, state):
+def inject(path, block_re, block, state, tree=None, pages=None):
     """把受管理區塊塞在 </main>(或 </body>)之前,冪等取代。"""
     if not os.path.exists(path):
         return False
@@ -510,8 +550,14 @@ def inject(path, block_re, block, state):
         source = fh.read()
     cleaned = block_re.sub("", source)
     if not block:
-        return write_if_changed(path, cleaned, state)
-    return write_if_changed(path, splice(cleaned, block), state)
+        return write_if_changed(path, cleaned, state, tree, pages)
+    return write_if_changed(
+        path,
+        splice(cleaned, block),
+        state,
+        tree,
+        pages,
+    )
 
 
 def nav_block(locale, links, extra=""):
@@ -568,12 +614,13 @@ def linked_targets(path):
     return out
 
 
-def process_parent(name, locale, state):
-    root = os.path.join(PAGES, name)
+def process_parent(name, locale, state, tree=None, pages=None):
+    pages = str(pages or PAGES)
+    root = os.path.join(pages, name)
     parent_index = os.path.join(root, "index.html")
     has_index = os.path.exists(parent_index)
 
-    files = sorted(html_files(root))
+    files = sorted(html_files(root, tree))
     entries = []
     for path in files:
         rel = os.path.relpath(path, root).replace(os.sep, "/")
@@ -607,7 +654,7 @@ def process_parent(name, locale, state):
     groups = {}
     for rel, path in entries:
         groups.setdefault(group_of(rel), []).append(
-            (rel, page_title(path, slug_title(rel)))
+            (rel, page_title(path, slug_title(rel), tree))
         )
     for values in groups.values():
         # 次要鍵一定要放 rel:站上有上百頁共用「Guide moved」這種標題,
@@ -646,6 +693,8 @@ def process_parent(name, locale, state):
                 name, locale, chunk_groups, i + 1, page_urls, parent_index_url
             ),
             state,
+            tree,
+            pages,
         )
 
     # 父目錄 index.html:連到 browse 索引 + 每個區塊自己的 index。
@@ -662,7 +711,11 @@ def process_parent(name, locale, state):
             if os.path.exists(sec_index):
                 links.append((
                     f"{SITE}/{name}/{section}/index.html",
-                    page_title(sec_index, section_label(section, locale)),
+                    page_title(
+                        sec_index,
+                        section_label(section, locale),
+                        tree,
+                    ),
                 ))
         # 沒產 browse(index 已列近全部)時,把漏掉的那幾頁補進完整索引。
         extra = ""
@@ -677,8 +730,22 @@ def process_parent(name, locale, state):
             ]
             if missing:
                 extra = full_section(locale, missing, name)
-        inject(parent_index, FULL_BLOCK, "", state)  # 清掉舊版獨立區塊
-        inject(parent_index, NAV_BLOCK, nav_block(locale, links, extra), state)
+        inject(
+            parent_index,
+            FULL_BLOCK,
+            "",
+            state,
+            tree,
+            pages,
+        )  # 清掉舊版獨立區塊
+        inject(
+            parent_index,
+            NAV_BLOCK,
+            nav_block(locale, links, extra),
+            state,
+            tree,
+            pages,
+        )
 
     # 區塊已有 index 但沒列全同層頁面時(例:ja/answers 只列 73/1633),補完整索引。
     for section, items in ordered:
@@ -705,25 +772,54 @@ def process_parent(name, locale, state):
             and rel.split("/")[-1] not in already
         ]
         if len(missing) * 5 < len(items):  # 已列出 ≥80%,不必再補
-            inject(sec_index, FULL_BLOCK, "", state)
+            inject(sec_index, FULL_BLOCK, "", state, tree, pages)
             continue
-        inject(sec_index, FULL_BLOCK, full_block(locale, missing, name), state)
+        inject(
+            sec_index,
+            FULL_BLOCK,
+            full_block(locale, missing, name),
+            state,
+            tree,
+            pages,
+        )
 
 
-def cleanup_stale_browse(state):
+def cleanup_stale_browse(state, tree=None, pages=None):
     """刪掉這一輪不再產生的 browse 頁。
 
     沒有這一步的話,父目錄一旦變成「index 已列近全部」(skip_browse)或整個
     目錄被停損,舊的 browse.html 會留在磁碟上、留在 sitemap 裡,卻沒有任何頁
     連它 —— 2026-08-10 稽核抓到的 `api/browse.html` 就是這樣變成孤兒的。
     """
-    for dirpath, dirnames, filenames in os.walk(PAGES):
-        dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS]
-        for fname in filenames:
-            if not BROWSE_RE.match(fname):
+    pages = str(pages or PAGES)
+    if tree is not None:
+        candidates = [
+            (str(tree.path(relative)), os.path.basename(relative))
+            for relative in tree.html_relatives()
+            if not any(
+                part in SKIP_DIRS for part in Path(relative).parts
+            )
+        ]
+    else:
+        candidates = []
+        for dirpath, dirnames, filenames in os.walk(pages):
+            dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS]
+            candidates.extend(
+                (os.path.join(dirpath, fname), fname)
+                for fname in filenames
+            )
+    for path, fname in candidates:
+        if not BROWSE_RE.match(fname):
+            continue
+        absolute = os.path.abspath(path)
+        if absolute in state["kept"]:
+            continue
+        if tree is not None:
+            relative = tree.relative(Path(path))
+            if not tree.basic_facts(relative).managed_browse:
                 continue
-            path = os.path.abspath(os.path.join(dirpath, fname))
-            if path in state["kept"]:
+        else:
+            if not BROWSE_RE.match(fname):
                 continue
             try:
                 with open(path, "r", encoding="utf-8", errors="ignore") as fh:
@@ -731,22 +827,24 @@ def cleanup_stale_browse(state):
                         continue
             except OSError:
                 continue
-            state["changed"].append(
-                "- " + os.path.relpath(path, PAGES).replace(os.sep, "/")
-            )
-            if not state["check"]:
-                os.remove(path)
+        relative = os.path.relpath(path, pages).replace(os.sep, "/")
+        state["changed"].append("- " + relative)
+        if not state["check"]:
+            os.remove(path)
+            if tree is not None:
+                tree.remove(relative)
 
 
-def process_root(parents, state):
-    root_index = os.path.join(PAGES, "index.html")
+def process_root(parents, state, tree=None, pages=None):
+    pages = str(pages or PAGES)
+    root_index = os.path.join(pages, "index.html")
     if not os.path.exists(root_index):
         return
     already = linked_targets(root_index)
     links = []
     for name, locale in parents:
         for candidate in ("index.html", "browse.html"):
-            path = os.path.join(PAGES, name, candidate)
+            path = os.path.join(pages, name, candidate)
             if not os.path.exists(path):
                 continue
             rel = f"{name}/{candidate}"
@@ -754,44 +852,71 @@ def process_root(parents, state):
                 break
             links.append((
                 f"{SITE}/{rel}",
-                page_title(path, name.replace("-", " ")),
+                page_title(path, name.replace("-", " "), tree),
             ))
             break
     # 根目錄下的單頁(find-app.html 之類)也要有入口,否則永遠是孤兒。
-    for name in sorted(os.listdir(PAGES)):
+    for name in sorted(os.listdir(pages)):
         if not name.endswith(".html") or name == "index.html":
             continue
         if name in already:
             continue
-        path = os.path.join(PAGES, name)
-        if is_noindex(path):
+        path = os.path.join(pages, name)
+        if is_noindex(path, tree):
             continue
-        links.append((f"{SITE}/{name}", page_title(path, slug_title(name))))
+        links.append(
+            (
+                f"{SITE}/{name}",
+                page_title(path, slug_title(name), tree),
+            )
+        )
     if not links:
-        inject(root_index, NAV_BLOCK, "", state)
+        inject(root_index, NAV_BLOCK, "", state, tree, pages)
         return
-    inject(root_index, NAV_BLOCK, nav_block("en", links), state)
+    inject(
+        root_index,
+        NAV_BLOCK,
+        nav_block("en", links),
+        state,
+        tree,
+        pages,
+    )
+
+
+def run_link_hubs(
+    pages,
+    *,
+    check=False,
+    tree=None,
+):
+    pages = Path(pages).resolve()
+    tree = tree or SiteTreeIndex.scan(pages)
+    state = {"check": check, "changed": [], "kept": set()}
+
+    parents = parent_dirs(tree, pages)
+    for name, locale in parents:
+        process_parent(name, locale, state, tree, pages)
+    cleanup_stale_browse(state, tree, pages)
+    process_root(parents, state, tree, pages)
+    return {
+        "parents": len(parents),
+        "changed": state["changed"],
+        "tree": tree,
+    }
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="只回報會改什麼")
     args = parser.parse_args()
-    state = {"check": args.check, "changed": [], "kept": set()}
-
-    parents = parent_dirs()
-    for name, locale in parents:
-        process_parent(name, locale, state)
-    # 先清掉不再產生的 browse 頁,再處理首頁 —— 順序反過來的話首頁會連到
-    # 下一秒就被刪掉的檔案。
-    cleanup_stale_browse(state)
-    process_root(parents, state)
+    result = run_link_hubs(PAGES, check=args.check)
 
     print(
-        f"link hubs: {len(parents)} 個父目錄, "
-        f"{len(state['changed'])} 個檔案{'需更新' if args.check else '已更新'}"
+        f"link hubs: {result['parents']} 個父目錄, "
+        f"{len(result['changed'])} 個檔案"
+        f"{'需更新' if args.check else '已更新'}"
     )
-    if args.check and state["changed"]:
+    if args.check and result["changed"]:
         return 1
     return 0
 

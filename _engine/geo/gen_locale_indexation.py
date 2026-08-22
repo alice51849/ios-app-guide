@@ -21,6 +21,7 @@ pages that no sitemap ever listed.
 from __future__ import annotations
 
 import argparse
+from dataclasses import dataclass
 import os
 from pathlib import Path
 import re
@@ -31,6 +32,7 @@ sys.path.insert(0, str(HERE))
 
 from official_locales import OFFICIAL_LOCALES  # noqa: E402
 from canonical_urls import canonical_url_for_html  # noqa: E402
+from site_tree_index import SiteTreeIndex  # noqa: E402
 
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
@@ -42,7 +44,6 @@ SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").
 # duplicate-content signal without being able to convert.
 INDEXABLE_LOCALES = set(OFFICIAL_LOCALES) | {"en"}
 
-HTML_LANG_RE = re.compile(r'<html[^>]*\blang="([^"]+)"', re.I)
 ROBOTS_META_RE = re.compile(
     r'<meta[^>]*\bname="robots"[^>]*>', re.I
 )
@@ -62,14 +63,35 @@ SITEMAP_ENTRY_RE = re.compile(
 ORPHAN_SITEMAP = "sitemap_orphans.xml"
 
 
+@dataclass
+class IndexationResult:
+    tree: SiteTreeIndex
+    dead_locales: set[str]
+    indexable_relatives: set[str]
+    canonical_by_relative: dict[str, str]
+    page_stats: dict[str, int]
+    sitemap_stats: dict[str, int]
+    dropped_sitemaps: int
+    orphan_urls: int
+
+
 # ------------------------------------------------------------------ locale model
-def first_html(directory: Path) -> Path | None:
+def first_html(
+    directory: Path,
+    tree: SiteTreeIndex | None = None,
+) -> Path | None:
+    if tree is not None:
+        relatives = tree.html_relatives_under(directory.name)
+        return tree.path(relatives[0]) if relatives else None
     for path in sorted(directory.rglob("*.html")):
         return path
     return None
 
 
-def true_locale_dirs(pages: Path) -> dict[str, bool]:
+def true_locale_dirs(
+    pages: Path,
+    tree: SiteTreeIndex | None = None,
+) -> dict[str, bool]:
     """Map top-level directory -> is-a-locale-directory.
 
     A directory is a locale only when its pages declare that exact language.
@@ -77,24 +99,27 @@ def true_locale_dirs(pages: Path) -> dict[str, bool]:
     content directories (answers/, apps/, tools/ ...) and the real store-locale
     aliases (ja-JP, zh-CN, nb-NO ...).
     """
+    tree = tree or SiteTreeIndex.scan(pages)
     result: dict[str, bool] = {}
     for child in sorted(pages.iterdir()):
         if not child.is_dir() or child.name.startswith((".", "_")):
             continue
-        sample = first_html(child)
+        sample = first_html(child, tree)
         if sample is None:
             result[child.name] = False
             continue
-        head = sample.read_text(encoding="utf-8", errors="ignore")[:3000]
-        match = HTML_LANG_RE.search(head)
-        result[child.name] = bool(match and match.group(1).strip() == child.name)
+        facts = tree.basic_facts(tree.relative(sample))
+        result[child.name] = facts.lang == child.name
     return result
 
 
-def non_store_locales(pages: Path) -> set[str]:
+def non_store_locales(
+    pages: Path,
+    tree: SiteTreeIndex | None = None,
+) -> set[str]:
     return {
         name
-        for name, is_locale in true_locale_dirs(pages).items()
+        for name, is_locale in true_locale_dirs(pages, tree).items()
         if is_locale and name not in INDEXABLE_LOCALES
     }
 
@@ -128,14 +153,18 @@ def strip_dead_alternates(text: str, dead: set[str]) -> str:
     return ALTERNATE_RE.sub(drop, text)
 
 
-def rewrite_pages(pages: Path, dead: set[str], check: bool) -> dict[str, int]:
+def rewrite_pages(
+    pages: Path,
+    dead: set[str],
+    check: bool,
+    tree: SiteTreeIndex | None = None,
+) -> dict[str, int]:
+    tree = tree or SiteTreeIndex.scan(pages)
     noindexed = 0
     alternates_cleaned = 0
     reindexed = 0
-    for path in pages.rglob("*.html"):
-        rel = path.relative_to(pages).as_posix()
-        if rel.startswith(("_engine/", ".git/")):
-            continue
+    for rel in tree.html_relatives():
+        path = tree.path(rel)
         text = path.read_text(encoding="utf-8", errors="ignore")
         updated = text
         locale = rel.split("/")[0] if "/" in rel else ""
@@ -152,6 +181,9 @@ def rewrite_pages(pages: Path, dead: set[str], check: bool) -> dict[str, int]:
             alternates_cleaned += 1
         if updated != text and not check:
             path.write_text(updated, encoding="utf-8")
+            tree.update_source(rel, updated)
+        else:
+            tree.update_source(rel, text)
     return {
         "noindexed": noindexed,
         "reindexed": reindexed,
@@ -174,7 +206,14 @@ def url_to_content_relative(url: str) -> str | None:
     return rel
 
 
-def is_noindex_html(path: Path) -> bool:
+def is_noindex_html(
+    path: Path,
+    tree: SiteTreeIndex | None = None,
+) -> bool:
+    if tree is not None:
+        relative = tree.relative(path)
+        if tree.contains(relative):
+            return tree.facts(relative).noindex
     try:
         with path.open(encoding="utf-8", errors="ignore") as page:
             text = page.read(262144)
@@ -200,22 +239,38 @@ def sitemap_has_entries(path: Path) -> bool:
     return False
 
 
-def sitemap_candidates(pages: Path) -> list[Path]:
+def sitemap_candidates(
+    pages: Path,
+    tree: SiteTreeIndex | None = None,
+) -> list[Path]:
     excluded_names = {"sitemap_index.xml", ORPHAN_SITEMAP}
+    candidates = (
+        tuple(
+            pages / path.relative_to(tree.root)
+            for path in tree.sitemap_paths()
+        )
+        if tree is not None
+        else tuple(pages.rglob("sitemap*.xml"))
+    )
     return [
         candidate
-        for candidate in sorted(pages.rglob("sitemap*.xml"))
+        for candidate in sorted(candidates)
         if candidate.name not in excluded_names
     ]
 
 
-def prune_sitemaps(pages: Path, dead: set[str], check: bool) -> dict[str, int]:
+def prune_sitemaps(
+    pages: Path,
+    dead: set[str],
+    check: bool,
+    tree: SiteTreeIndex | None = None,
+) -> dict[str, int]:
     removed_dead = 0
     removed_ghost = 0
     removed_noindex = 0
     emptied: set[str] = set()
     kept_urls: set[str] = set()
-    for path in sitemap_candidates(pages):
+    for path in sitemap_candidates(pages, tree):
         source = path.read_text(encoding="utf-8")
         stats = {"dead": 0, "ghost": 0, "noindex": 0, "kept": 0}
 
@@ -238,10 +293,15 @@ def prune_sitemaps(pages: Path, dead: set[str], check: bool) -> dict[str, int]:
                 stats["dead"] += 1
                 return ""
             target = pages / content_rel
-            if content_rel.endswith(".html") and not target.is_file():
+            target_exists = (
+                tree.contains(content_rel)
+                if tree is not None and content_rel.endswith(".html")
+                else target.is_file()
+            )
+            if content_rel.endswith(".html") and not target_exists:
                 stats["ghost"] += 1
                 return ""
-            if content_rel.endswith(".html") and is_noindex_html(target):
+            if content_rel.endswith(".html") and is_noindex_html(target, tree):
                 stats["noindex"] += 1
                 return ""
             stats["kept"] += 1
@@ -266,23 +326,53 @@ def prune_sitemaps(pages: Path, dead: set[str], check: bool) -> dict[str, int]:
     }
 
 
-def indexable_pages(pages: Path, dead: set[str]) -> set[str]:
+def indexable_pages(
+    pages: Path,
+    dead: set[str],
+    tree: SiteTreeIndex | None = None,
+) -> set[str]:
+    tree = tree or SiteTreeIndex.scan(pages)
     out: set[str] = set()
-    for path in pages.rglob("*.html"):
-        rel = path.relative_to(pages).as_posix()
-        if rel.startswith(("_engine/", ".git/")):
-            continue
+    for rel in tree.html_relatives():
         locale = rel.split("/")[0] if "/" in rel else ""
         if locale in dead:
             continue
-        text = path.read_text(encoding="utf-8", errors="ignore")
-        close = HEAD_CLOSE_RE.search(text)
-        head = text[: close.start()] if close else text
-        robots = ROBOTS_META_RE.search(head)
-        if robots and "noindex" in robots.group(0).lower():
+        if tree.facts(rel).noindex:
             continue
         out.add(rel)
     return out
+
+
+def canonical_url_for_relative(
+    pages: Path,
+    relative: str,
+    fallback: str,
+    tree: SiteTreeIndex | None = None,
+) -> str:
+    if tree is None or not tree.contains(relative):
+        return canonical_url_for_html(pages / relative, fallback, SITE)
+    canonical = tree.canonical(relative)
+    if canonical == SITE:
+        return f"{SITE}/"
+    if canonical and canonical.startswith(f"{SITE}/"):
+        return canonical
+    return fallback
+
+
+def indexable_canonical_map(
+    pages: Path,
+    relatives: set[str],
+    tree: SiteTreeIndex | None = None,
+) -> dict[str, str]:
+    return {
+        relative: canonical_url_for_relative(
+            pages,
+            relative,
+            f"{SITE}/{relative}",
+            tree,
+        )
+        for relative in sorted(relatives)
+    }
 
 
 def write_orphan_sitemap(
@@ -290,13 +380,15 @@ def write_orphan_sitemap(
     missing: list[str],
     check: bool,
     covered_urls: set[str] | None = None,
+    tree: SiteTreeIndex | None = None,
 ) -> int:
     path = pages / ORPHAN_SITEMAP
     urls = {
-        canonical_url_for_html(
-            pages / relative,
+        canonical_url_for_relative(
+            pages,
+            relative,
             f"{SITE}/{relative}",
-            SITE,
+            tree,
         )
         for relative in missing
     }
@@ -319,7 +411,11 @@ def write_orphan_sitemap(
 
 
 def update_sitemap_index(
-    pages: Path, emptied: set[str], add_orphans: bool, check: bool
+    pages: Path,
+    emptied: set[str],
+    add_orphans: bool,
+    check: bool,
+    tree: SiteTreeIndex | None = None,
 ) -> int:
     path = pages / "sitemap_index.xml"
     if not path.is_file():
@@ -333,7 +429,7 @@ def update_sitemap_index(
 
     candidates = previous | {
         candidate.relative_to(pages).as_posix()
-        for candidate in sitemap_candidates(pages)
+        for candidate in sitemap_candidates(pages, tree)
     }
     if add_orphans:
         candidates.add(ORPHAN_SITEMAP)
@@ -379,16 +475,26 @@ def update_robots(pages: Path, add_orphans: bool, check: bool) -> bool:
     return True
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--pages-dir", type=Path, default=PAGES)
-    parser.add_argument("--check", action="store_true")
-    args = parser.parse_args()
-    pages = args.pages_dir
-
-    dead = non_store_locales(pages)
-    page_stats = rewrite_pages(pages, dead, args.check)
-    sitemap_stats = prune_sitemaps(pages, dead, args.check)
+def run_indexation(
+    pages: Path,
+    *,
+    check: bool = False,
+    tree: SiteTreeIndex | None = None,
+    rewrite_html: bool = True,
+) -> IndexationResult:
+    pages = pages.resolve()
+    tree = tree or SiteTreeIndex.scan(pages)
+    dead = non_store_locales(pages, tree)
+    page_stats = (
+        rewrite_pages(pages, dead, check, tree)
+        if rewrite_html
+        else {
+            "noindexed": 0,
+            "reindexed": 0,
+            "alternates_cleaned": 0,
+        }
+    )
+    sitemap_stats = prune_sitemaps(pages, dead, check, tree)
     kept_urls = sitemap_stats.pop("_kept")
     kept = {
         rel
@@ -399,10 +505,11 @@ def main() -> None:
         if rel
     }
     covered_urls = {
-        canonical_url_for_html(
-            pages / relative,
+        canonical_url_for_relative(
+            pages,
+            relative,
             url,
-            SITE,
+            tree,
         )
         if relative and relative.endswith(".html")
         else url
@@ -410,21 +517,47 @@ def main() -> None:
         for relative in [url_to_content_relative(url)]
     }
     emptied = sitemap_stats.pop("_emptied")
-    missing = sorted(indexable_pages(pages, dead) - kept)
+    indexable = indexable_pages(pages, dead, tree)
+    missing = sorted(indexable - kept)
     orphans = write_orphan_sitemap(
         pages,
         missing,
-        args.check,
+        check,
         covered_urls,
+        tree,
     )
-    dropped_sitemaps = update_sitemap_index(pages, emptied, bool(orphans), args.check)
-    update_robots(pages, bool(orphans), args.check)
+    dropped_sitemaps = update_sitemap_index(
+        pages,
+        emptied,
+        bool(orphans),
+        check,
+        tree,
+    )
+    update_robots(pages, bool(orphans), check)
+    canonical_by_relative = indexable_canonical_map(
+        pages,
+        indexable,
+        tree,
+    )
+    return IndexationResult(
+        tree=tree,
+        dead_locales=dead,
+        indexable_relatives=indexable,
+        canonical_by_relative=canonical_by_relative,
+        page_stats=page_stats,
+        sitemap_stats=sitemap_stats,
+        dropped_sitemaps=dropped_sitemaps,
+        orphan_urls=orphans,
+    )
 
+
+def print_result(result: IndexationResult) -> None:
     print(
         "locale-indexation: non_store_locales={dead} "
         "pages_noindexed={noindexed} pages_reindexed={reindexed} "
         "pages_alternates_cleaned={alternates_cleaned}".format(
-            dead=len(dead), **page_stats
+            dead=len(result.dead_locales),
+            **result.page_stats,
         )
     )
     print(
@@ -432,7 +565,22 @@ def main() -> None:
         "dropped_missing_file={urls_dropped_missing_file} "
         "dropped_noindex={urls_dropped_noindex} "
         "sitemaps_unhooked={dropped} orphan_urls_added={orphans}".format(
-            dropped=dropped_sitemaps, orphans=orphans, **sitemap_stats
+            dropped=result.dropped_sitemaps,
+            orphans=result.orphan_urls,
+            **result.sitemap_stats,
+        )
+    )
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--pages-dir", type=Path, default=PAGES)
+    parser.add_argument("--check", action="store_true")
+    args = parser.parse_args()
+    print_result(
+        run_indexation(
+            args.pages_dir,
+            check=args.check,
         )
     )
 

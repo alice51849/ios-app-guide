@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 from datetime import date, datetime, timezone
+from functools import lru_cache
 import hashlib
 import html
 import json
@@ -24,6 +25,13 @@ STATE_RELATIVE_PATH = Path("_engine/geo/sitemap_lastmod_state.json")
 SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 DATE_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
 SHA256_RE = re.compile(r"[0-9a-f]{64}")
+DATE_MODIFIED_RE = re.compile(
+    r'"dateModified"\s*:\s*"(?P<value>\d{4}-\d{2}-\d{2})"'
+)
+PUBLISHER_VISUAL_SITEMAP = Path("sitemap_intent_visuals.xml")
+PUBLISHER_VISUAL_MANIFEST = Path(
+    "data/lumi-studio-publisher-intent-visuals.json"
+)
 URL_BLOCK_RE = re.compile(
     r"(?P<open><url(?:\s[^>]*)?>)(?P<body>.*?)(?P<close></url>)",
     flags=re.DOTALL,
@@ -54,7 +62,13 @@ def _valid_date(value: Any, *, today: str | None = None) -> bool:
 
 
 def _sha256(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    with path.open("rb") as source:
+        if hasattr(hashlib, "file_digest"):
+            return hashlib.file_digest(source, "sha256").hexdigest()
+        digest = hashlib.sha256()
+        for chunk in iter(lambda: source.read(1024 * 1024), b""):
+            digest.update(chunk)
+        return digest.hexdigest()
 
 
 def _write_if_changed(path: Path, content: str) -> bool:
@@ -66,7 +80,7 @@ def _write_if_changed(path: Path, content: str) -> bool:
 
 def _sitemap_paths(pages: Path) -> list[Path]:
     paths = {
-        path.resolve()
+        path
         for path in (
             *pages.glob("sitemap*.xml"),
             *pages.glob("*/sitemap.xml"),
@@ -177,10 +191,18 @@ def _site_relative(url: str, site: str) -> str | None:
     return unquote(parsed.path[len(prefix) :])
 
 
+@lru_cache(maxsize=None)
+def _resolved_directory(path: Path) -> Path:
+    return path.resolve()
+
+
 def _owned_target(url: str, pages: Path, site: str) -> Path | None:
     relative = _site_relative(url, site)
     if relative is None:
         return None
+    relative_path = Path(relative)
+    if relative_path.is_absolute() or ".." in relative_path.parts:
+        raise ValueError(f"Sitemap URL escapes Pages root: {url}")
     if not relative:
         candidates = [pages / "index.html"]
     elif relative.endswith("/"):
@@ -189,10 +211,13 @@ def _owned_target(url: str, pages: Path, site: str) -> Path | None:
         candidates = [pages / relative]
         if not Path(relative).suffix:
             candidates.append(pages / relative / "index.html")
-    pages_root = pages.resolve()
+    pages_root = pages
     resolved: list[Path] = []
     for candidate in candidates:
-        target = candidate.resolve()
+        parent = _resolved_directory(candidate.parent)
+        target = parent / candidate.name
+        if target.is_symlink():
+            target = target.resolve()
         try:
             target.relative_to(pages_root)
         except ValueError as error:
@@ -208,7 +233,7 @@ def _owned_target(url: str, pages: Path, site: str) -> Path | None:
 
 
 def _relative_path(path: Path, pages: Path) -> str:
-    return path.resolve().relative_to(pages.resolve()).as_posix()
+    return path.relative_to(pages).as_posix()
 
 
 def _run_git(pages: Path, args: list[str]) -> str:
@@ -250,6 +275,9 @@ def git_history_dates(
 ) -> dict[str, str]:
     if not wanted:
         return {}
+    pathspecs = sorted(wanted)
+    if len(pathspecs) > 512 or sum(map(len, pathspecs)) > 100000:
+        pathspecs = ["."]
     output = _run_git(
         pages,
         [
@@ -260,7 +288,7 @@ def git_history_dates(
             "--name-only",
             "--no-renames",
             "--",
-            ".",
+            *pathspecs,
         ],
     )
     dates: dict[str, str] = {}
@@ -313,6 +341,89 @@ def _load_state(path: Path, today: str) -> dict[str, Any]:
     return state
 
 
+def _publisher_visual_lastmod(
+    sitemap: Path,
+    pages: Path,
+    locations: list[str],
+    targets: dict[str, Path],
+    url_records: dict[str, dict[str, str]],
+    today: str,
+) -> str | None:
+    if _relative_path(sitemap, pages) != PUBLISHER_VISUAL_SITEMAP.as_posix():
+        return None
+    manifest_path = pages / PUBLISHER_VISUAL_MANIFEST
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as error:
+        raise ValueError(
+            f"Invalid publisher visual manifest: {error}"
+        ) from error
+    if not isinstance(manifest, dict):
+        raise ValueError("Invalid publisher visual manifest contract")
+    modified = manifest.get("dateModified")
+    records = manifest.get("records")
+    app_count = manifest.get("app_count")
+    locale_count = manifest.get("locale_count")
+    image_count = manifest.get("image_count")
+    gallery_count = manifest.get("gallery_count")
+    if (
+        not _valid_date(modified, today=today)
+        or not SHA256_RE.fullmatch(
+            str(manifest.get("content_digest", ""))
+        )
+        or not SHA256_RE.fullmatch(
+            str(manifest.get("generation_digest", ""))
+        )
+        or not isinstance(records, list)
+        or not isinstance(app_count, int)
+        or app_count <= 0
+        or not isinstance(locale_count, int)
+        or locale_count <= 0
+        or not isinstance(image_count, int)
+        or image_count != len(records)
+        or image_count != app_count * locale_count
+        or not isinstance(gallery_count, int)
+        or gallery_count != locale_count + 1
+        or gallery_count != len(locations)
+        or len(set(locations)) != len(locations)
+    ):
+        raise ValueError("Invalid publisher visual manifest contract")
+
+    for location in locations:
+        target = targets.get(location)
+        record = url_records.get(location)
+        if target is None or record is None:
+            raise ValueError(
+                f"Publisher visual sitemap has an unmanaged URL: {location}"
+            )
+        relative = _relative_path(target, pages)
+        parts = Path(relative).parts
+        if not (
+            relative == "visuals/index.html"
+            or (
+                len(parts) == 3
+                and parts[1:] == ("visuals", "index.html")
+            )
+        ):
+            raise ValueError(
+                f"Publisher visual sitemap has an invalid gallery: {relative}"
+            )
+        declared_dates = DATE_MODIFIED_RE.findall(
+            target.read_text(encoding="utf-8")
+        )
+        if declared_dates != [modified]:
+            raise ValueError(
+                "Publisher visual gallery date does not match manifest: "
+                f"{relative}"
+            )
+        if record["lastmod"] > modified:
+            raise ValueError(
+                "Publisher visual manifest is older than gallery content: "
+                f"{relative} ({modified} < {record['lastmod']})"
+            )
+    return modified
+
+
 def _record_for(
     url: str,
     target: Path,
@@ -360,6 +471,7 @@ def generate(
     dirty_paths: set[str] | None = None,
 ) -> dict[str, int]:
     pages = pages.resolve()
+    _resolved_directory.cache_clear()
     site = site.rstrip("/")
     today = today or datetime.now(timezone.utc).date().isoformat()
     if not _valid_date(today, today=today):
@@ -436,15 +548,21 @@ def generate(
         _relative_path(target, pages): target
         for target in targets.values()
     }
+    index_targets_by_path = (
+        {
+            _relative_path(target, pages): target
+            for target in index_document[3].values()
+        }
+        if index_document is not None
+        else {}
+    )
+    all_targets_by_path = targets_by_path | index_targets_by_path
     target_digests = {
         path: _sha256(target)
-        for path, target in targets_by_path.items()
+        for path, target in all_targets_by_path.items()
     }
     if index_document is not None:
-        wanted_paths.update(
-            _relative_path(target, pages)
-            for target in index_document[3].values()
-        )
+        wanted_paths.update(index_targets_by_path)
     if dirty_paths is None:
         dirty_paths = git_dirty_paths(pages)
     if history_dates is None:
@@ -465,7 +583,8 @@ def generate(
                 if _relative_path(target, pages) not in dirty_paths
                 and (
                     url not in state["sitemaps"]
-                    or state["sitemaps"][url]["sha256"] != _sha256(target)
+                    or state["sitemaps"][url]["sha256"]
+                    != target_digests[_relative_path(target, pages)]
                 )
             )
         history_dates = git_history_dates(pages, missing_history)
@@ -490,6 +609,14 @@ def generate(
     changed_sitemaps: set[str] = set()
     changed_dates = 0
     for sitemap, source, blocks, locations in documents:
+        managed_lastmod = _publisher_visual_lastmod(
+            sitemap,
+            pages,
+            locations,
+            targets,
+            url_records,
+            today,
+        )
         replacements: dict[int, str] = {}
         for index, (block, location) in enumerate(zip(blocks, locations)):
             record = url_records.get(location)
@@ -499,7 +626,7 @@ def generate(
             updated = _with_lastmod(
                 sitemap,
                 body,
-                record["lastmod"],
+                managed_lastmod or record["lastmod"],
             )
             if updated != body:
                 changed_dates += 1
@@ -527,6 +654,11 @@ def generate(
                 history_dates,
                 dirty_paths | changed_sitemaps,
                 today,
+                (
+                    _sha256(target)
+                    if relative in changed_sitemaps
+                    else target_digests[relative]
+                ),
             )
             sitemap_records[location] = record
             body = block.group("body")

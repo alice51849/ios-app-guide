@@ -3729,10 +3729,12 @@ class GeneratorTests(unittest.TestCase):
             gen_guide_design.SITE
         )
 
-        def assert_qr_card(path: Path, source: str) -> None:
+        def assert_qr_card(
+            path: Path,
+            source: str,
+            cta: tuple[str, str],
+        ) -> None:
             app_id = targets[path]
-            cta = gen_mobile_store_ctas.app_store_cta(source, app_id)
-            self.assertIsNotNone(cta)
             relative = gen_app_store_qr_ctas.qr_asset_relative(
                 app_id, cta[0]
             )
@@ -3796,7 +3798,7 @@ class GeneratorTests(unittest.TestCase):
                         gen_mobile_store_ctas.mobile_cta_block(*cta)
                     ),
                 )
-                assert_qr_card(path, source)
+                assert_qr_card(path, source, cta)
                 self.assertEqual(
                     1,
                     source.count(
@@ -3824,15 +3826,11 @@ class GeneratorTests(unittest.TestCase):
                     gen_smart_app_banners.banner_block(targets[path])
                 ),
             )
-            cta = gen_mobile_store_ctas.app_store_cta(
-                source, targets[path]
-            )
-            self.assertIsNotNone(cta)
             self.assertEqual(
                 1,
                 source.count(gen_mobile_store_ctas.mobile_cta_block(*cta)),
             )
-            assert_qr_card(path, source)
+            assert_qr_card(path, source, cta)
             self.assertEqual(
                 1,
                 source.count(
@@ -23561,62 +23559,151 @@ class GeneratorTests(unittest.TestCase):
             "SITEMAP_LASTMOD_INTERMEDIATE_STATE",
             localized_commit_block,
         )
-        for block in (english_commit_block, localized_commit_block):
-            pull = block.index("git pull --rebase")
-            sync = block.index(
-                "python3 _engine/geo/sync_standard_site.py",
+        pull = english_commit_block.index("git pull --rebase")
+        sync = english_commit_block.index(
+            "python3 _engine/geo/sync_standard_site.py",
+            pull,
+        )
+        semantics = english_commit_block.index(
+            "python3 _engine/geo/reconcile_answer_semantics.py",
+            sync,
+        )
+        dedupe = english_commit_block.index(
+            "python3 dedupe_locale_meta.py --apply",
+            semantics,
+        )
+        first_indexation = english_commit_block.index(
+            "python3 gen_locale_indexation.py",
+            dedupe,
+        )
+        hubs = english_commit_block.index(
+            "python3 gen_link_hubs.py",
+            first_indexation,
+        )
+        second_indexation = english_commit_block.index(
+            "python3 gen_locale_indexation.py",
+            first_indexation + 1,
+        )
+        hubs_check = english_commit_block.index(
+            "python3 gen_link_hubs.py --check",
+            second_indexation,
+        )
+        depth_gate = english_commit_block.index(
+            "python3 audit_link_depth.py --max-indexable-orphans 0",
+            hubs_check,
+        )
+        reconcile = english_commit_block.index(
+            "python3 _engine/geo/gen_sitemap_lastmod.py",
+            depth_gate,
+        )
+        final_tests = english_commit_block.index(
+            "python3 -m unittest discover",
+            reconcile,
+        )
+        restage = english_commit_block.index("git add -A", final_tests)
+        push = english_commit_block.index("git push", restage)
+        self.assertEqual(
+            sorted(
+                (
+                    pull,
+                    sync,
+                    semantics,
+                    dedupe,
+                    first_indexation,
+                    hubs,
+                    second_indexation,
+                    hubs_check,
+                    depth_gate,
+                    reconcile,
+                    final_tests,
+                    restage,
+                    push,
+                )
+            ),
+            [
                 pull,
-            )
-            semantics = block.index(
-                "python3 _engine/geo/reconcile_answer_semantics.py",
                 sync,
-            )
-            dedupe = block.index(
-                "python3 dedupe_locale_meta.py --apply",
                 semantics,
-            )
-            first_indexation = block.index(
-                "python3 gen_locale_indexation.py",
                 dedupe,
-            )
-            hubs = block.index(
-                "python3 gen_link_hubs.py",
                 first_indexation,
-            )
-            second_indexation = block.index(
-                "python3 gen_locale_indexation.py",
-                first_indexation + 1,
-            )
-            hubs_check = block.index(
-                "python3 gen_link_hubs.py --check",
+                hubs,
                 second_indexation,
-            )
-            depth_gate = block.index(
-                "python3 audit_link_depth.py --max-indexable-orphans 0",
                 hubs_check,
-            )
-            reconcile = block.index(
-                "python3 _engine/geo/gen_sitemap_lastmod.py",
                 depth_gate,
-            )
-            final_tests = block.index(
-                "python3 -m unittest discover",
                 reconcile,
-            )
-            restage = block.index("git add -A", final_tests)
-            push = block.index("git push", restage)
-            self.assertLess(sync, semantics)
-            self.assertLess(semantics, dedupe)
-            self.assertLess(dedupe, first_indexation)
-            self.assertLess(first_indexation, hubs)
-            self.assertLess(hubs, second_indexation)
-            self.assertLess(second_indexation, hubs_check)
-            self.assertLess(hubs_check, depth_gate)
-            self.assertLess(pull, reconcile)
-            self.assertLess(reconcile, final_tests)
-            self.assertLess(final_tests, restage)
-            self.assertLess(restage, push)
-        self.assertEqual(8, workflow.count("gen_locale_indexation.py"))
+                final_tests,
+                restage,
+                push,
+            ],
+        )
+
+        pull = localized_commit_block.index("git pull --rebase")
+        exact_tree = localized_commit_block.index(
+            "verified_tree.py matches-head",
+            pull,
+        )
+        sync = localized_commit_block.index(
+            "python3 _engine/geo/sync_standard_site.py",
+            exact_tree,
+        )
+        semantics = localized_commit_block.index(
+            "python3 _engine/geo/reconcile_answer_semantics.py",
+            sync,
+        )
+        dedupe = localized_commit_block.index(
+            "python3 dedupe_locale_meta.py --apply",
+            semantics,
+        )
+        closure = localized_commit_block.index(
+            "python3 close_sitemap_graph.py",
+            dedupe,
+        )
+        depth_gate = localized_commit_block.index(
+            "python3 audit_link_depth.py --max-indexable-orphans 0",
+            closure,
+        )
+        reconcile = localized_commit_block.index(
+            "python3 _engine/geo/gen_sitemap_lastmod.py",
+            depth_gate,
+        )
+        final_tests = localized_commit_block.index(
+            "python3 _engine/geo/parallel_unittest.py --jobs 3",
+            reconcile,
+        )
+        restage = localized_commit_block.index("git add -A", final_tests)
+        push = localized_commit_block.index("git push", restage)
+        self.assertEqual(
+            [
+                pull,
+                exact_tree,
+                sync,
+                semantics,
+                dedupe,
+                closure,
+                depth_gate,
+                reconcile,
+                final_tests,
+                restage,
+                push,
+            ],
+            sorted(
+                (
+                    pull,
+                    exact_tree,
+                    sync,
+                    semantics,
+                    dedupe,
+                    closure,
+                    depth_gate,
+                    reconcile,
+                    final_tests,
+                    restage,
+                    push,
+                )
+            ),
+        )
+        self.assertEqual(4, workflow.count("gen_locale_indexation.py"))
+        self.assertEqual(2, workflow.count("close_sitemap_graph.py"))
         self.assertEqual(
             4,
             workflow.count(
@@ -23626,21 +23713,22 @@ class GeneratorTests(unittest.TestCase):
         precommit_tail = final_cleanup_block[
             final_cleanup_block.index("dedupe_locale_meta.py --apply"):
         ]
-        first_indexation = precommit_tail.index(
-            "gen_locale_indexation.py"
+        self.assertIn("close_sitemap_graph.py", precommit_tail)
+        self.assertNotIn("gen_locale_indexation.py", precommit_tail)
+        self.assertNotIn("gen_link_hubs.py", precommit_tail)
+        verification_block = workflow.split(
+            "- name: Verify localized output before commit",
+            1,
+        )[1].split("- name: Commit localized pages if any", 1)[0]
+        prepare = verification_block.index("verified_tree.py prepare")
+        tests = verification_block.index("parallel_unittest.py --jobs 3")
+        seal = verification_block.index("verified_tree.py seal")
+        self.assertLess(prepare, tests)
+        self.assertLess(tests, seal)
+        self.assertEqual(
+            2,
+            verification_block.count("--suite geo-full-suite"),
         )
-        hubs = precommit_tail.index("gen_link_hubs.py", first_indexation)
-        second_indexation = precommit_tail.index(
-            "gen_locale_indexation.py",
-            first_indexation + 1,
-        )
-        hubs_check = precommit_tail.index(
-            "gen_link_hubs.py --check",
-            second_indexation,
-        )
-        self.assertLess(first_indexation, hubs)
-        self.assertLess(hubs, second_indexation)
-        self.assertLess(second_indexation, hubs_check)
         self.assertEqual(
             2,
             workflow.count(

@@ -70,6 +70,10 @@ class TruthfulSitemapLastmodTests(unittest.TestCase):
             dates,
         )
         self.assertIn("--format=@@%ct", run_git.call_args.args[1])
+        self.assertIn(
+            "answers/example.html",
+            run_git.call_args.args[1],
+        )
 
     def test_history_bootstrap_hash_changes_and_duplicates(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
@@ -213,6 +217,123 @@ class TruthfulSitemapLastmodTests(unittest.TestCase):
                     f"{SITE}/guides/app.html"
                 ]["lastmod"],
             )
+
+    def test_managed_visual_sitemap_uses_manifest_date_without_masking_newer_content(
+        self,
+    ) -> None:
+        with tempfile.TemporaryDirectory(dir=GEO / "tests") as directory:
+            pages = Path(directory)
+            root_gallery = pages / "visuals" / "index.html"
+            localized_gallery = pages / "ja" / "visuals" / "index.html"
+            guide = pages / "guides" / "app.html"
+            for path in (root_gallery, localized_gallery, guide):
+                path.parent.mkdir(parents=True, exist_ok=True)
+            modified = "2026-07-10"
+            gallery_source = (
+                '<script type="application/ld+json">'
+                f'{{"dateModified":"{modified}"}}'
+                "</script>"
+            )
+            root_gallery.write_text(gallery_source, encoding="utf-8")
+            localized_gallery.write_text(gallery_source, encoding="utf-8")
+            guide.write_text("<h1>Guide</h1>", encoding="utf-8")
+
+            managed = pages / gen_sitemap_lastmod.PUBLISHER_VISUAL_SITEMAP
+            managed.write_text(
+                urlset(
+                    f"<loc>{SITE}/visuals/</loc>"
+                    "<lastmod>2026-01-01</lastmod>",
+                    f"<loc>{SITE}/ja/visuals/</loc>"
+                    "<lastmod>2026-01-02</lastmod>",
+                ),
+                encoding="utf-8",
+            )
+            regular = pages / "sitemap_guides.xml"
+            regular.write_text(
+                urlset(
+                    f"<loc>{SITE}/guides/app.html</loc>"
+                    "<lastmod>2026-01-03</lastmod>",
+                ),
+                encoding="utf-8",
+            )
+            pages.joinpath("sitemap_index.xml").write_text(
+                sitemap_index(
+                    f"{SITE}/{managed.name}",
+                    f"{SITE}/{regular.name}",
+                ),
+                encoding="utf-8",
+            )
+            manifest = pages / gen_sitemap_lastmod.PUBLISHER_VISUAL_MANIFEST
+            manifest.parent.mkdir()
+            manifest.write_text(
+                json.dumps(
+                    {
+                        "dateModified": modified,
+                        "content_digest": "a" * 64,
+                        "generation_digest": "b" * 64,
+                        "app_count": 1,
+                        "locale_count": 1,
+                        "image_count": 1,
+                        "gallery_count": 2,
+                        "records": [{}],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            state = pages / "state.json"
+            history = {
+                "visuals/index.html": "2026-06-01",
+                "ja/visuals/index.html": "2026-06-02",
+                "guides/app.html": "2026-06-03",
+                managed.name: "2026-06-04",
+                regular.name: "2026-06-05",
+            }
+
+            gen_sitemap_lastmod.generate(
+                pages,
+                state_path=state,
+                today="2026-07-14",
+                history_dates=history,
+                dirty_paths=set(),
+            )
+            managed_source = managed.read_text(encoding="utf-8")
+            self.assertEqual(
+                2,
+                managed_source.count(
+                    f"<lastmod>{modified}</lastmod>"
+                ),
+            )
+            self.assertIn(
+                "<lastmod>2026-06-03</lastmod>",
+                regular.read_text(encoding="utf-8"),
+            )
+            state_document = json.loads(state.read_text(encoding="utf-8"))
+            self.assertEqual(
+                "2026-06-01",
+                state_document["urls"][f"{SITE}/visuals/"]["lastmod"],
+            )
+            self.assertEqual(
+                "2026-06-02",
+                state_document["urls"][
+                    f"{SITE}/ja/visuals/"
+                ]["lastmod"],
+            )
+
+            localized_gallery.write_text(
+                gallery_source + "<p>newer content</p>",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(
+                ValueError,
+                "manifest is older than gallery content",
+            ):
+                gen_sitemap_lastmod.generate(
+                    pages,
+                    state_path=state,
+                    today="2026-07-14",
+                    history_dates=history,
+                    dirty_paths={"ja/visuals/index.html"},
+                )
 
     def test_out_of_scope_preserved_and_bad_urls_rejected(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

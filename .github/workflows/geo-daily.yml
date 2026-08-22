@@ -410,22 +410,28 @@ jobs:
           python3 _engine/geo/reconcile_answer_semantics.py
           cd _engine/geo
           python3 live_app_guard.py --site-root pages
-          # Pass A marks non-store locales before hubs choose indexable pages.
-          # Pass B closes the sitemap over every page the hubs create/remove.
+          # One inventory powers both passes. The second sitemap pass is
+          # skipped only when the generated hub changes preserve the exact
+          # indexable path + canonical URL set; convergence still runs.
           python3 dedupe_locale_meta.py --apply
-          python3 gen_locale_indexation.py
-          python3 gen_link_hubs.py
-          python3 gen_locale_indexation.py
-          python3 gen_link_hubs.py --check
+          python3 close_sitemap_graph.py
           python3 audit_link_depth.py --max-indexable-orphans 0
           cd "$GITHUB_WORKSPACE"
           python3 _engine/geo/gen_sitemap_lastmod.py
       - name: Verify localized output before commit
         run: |
-          python3 -m unittest discover \
-            -s _engine/geo/tests \
-            -p "test_*.py" \
-            -q -b
+          attestation="$RUNNER_TEMP/localized-verified-tree.json"
+          rm -f "$attestation"
+          python3 _engine/geo/verified_tree.py prepare \
+            --root "$GITHUB_WORKSPACE" \
+            --output "$attestation" \
+            --suite geo-full-suite
+          python3 _engine/geo/parallel_unittest.py --jobs 3
+          python3 _engine/geo/verified_tree.py seal \
+            --root "$GITHUB_WORKSPACE" \
+            --output "$attestation" \
+            --suite geo-full-suite
+          echo "LOCALIZED_VERIFIED_TREE=$attestation" >> "$GITHUB_ENV"
       - name: Commit localized pages if any
         run: |
           git add -A
@@ -434,30 +440,31 @@ jobs:
           else
             git commit -m "Daily GEO content: localized answer pages"
             git pull --rebase --autostash -X theirs
-            python3 _engine/geo/sync_standard_site.py \
-              --site-root "$GITHUB_WORKSPACE" \
-              --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
-              --allow-initial-404 \
-              --timeout 10 \
-              --retries 3 \
-              --retry-delay 2
-            python3 _engine/geo/reconcile_answer_semantics.py
-            cd _engine/geo
-            python3 dedupe_locale_meta.py --apply
-            python3 gen_locale_indexation.py
-            python3 gen_link_hubs.py
-            python3 gen_locale_indexation.py
-            python3 gen_link_hubs.py --check
-            python3 audit_link_depth.py --max-indexable-orphans 0
-            cd "$GITHUB_WORKSPACE"
-            python3 _engine/geo/gen_sitemap_lastmod.py
-            python3 -m unittest discover \
-              -s _engine/geo/tests \
-              -p "test_*.py" \
-              -q -b
-            git add -A
-            if ! git diff --cached --quiet; then
-              git commit -m "Reconcile truthful sitemap lastmod after rebase"
+            if python3 _engine/geo/verified_tree.py matches-head \
+              --root "$GITHUB_WORKSPACE" \
+              --output "$LOCALIZED_VERIFIED_TREE" \
+              --suite geo-full-suite; then
+              echo "Rebase preserved the exact fully-tested content tree."
+            else
+              python3 _engine/geo/sync_standard_site.py \
+                --site-root "$GITHUB_WORKSPACE" \
+                --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
+                --allow-initial-404 \
+                --timeout 10 \
+                --retries 3 \
+                --retry-delay 2
+              python3 _engine/geo/reconcile_answer_semantics.py
+              cd _engine/geo
+              python3 dedupe_locale_meta.py --apply
+              python3 close_sitemap_graph.py
+              python3 audit_link_depth.py --max-indexable-orphans 0
+              cd "$GITHUB_WORKSPACE"
+              python3 _engine/geo/gen_sitemap_lastmod.py
+              python3 _engine/geo/parallel_unittest.py --jobs 3
+              git add -A
+              if ! git diff --cached --quiet; then
+                git commit -m "Reconcile truthful sitemap lastmod after rebase"
+              fi
             fi
             git push
           fi

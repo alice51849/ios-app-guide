@@ -312,27 +312,40 @@ class SitemapHygieneTests(unittest.TestCase):
         index_path = pages / "sitemap_index.xml"
         if not pages.is_dir() or not index_path.is_file():
             self.skipTest("materialized Pages tree is unavailable")
+        tree = gen_locale_indexation.SiteTreeIndex.scan(pages)
 
         referenced: list[Path] = []
         referenced_relatives: set[str] = set()
-        for url in gen_locale_indexation.LOC_RE.findall(
-            index_path.read_text(encoding="utf-8")
-        ):
-            relative = gen_locale_indexation.url_to_relative(url)
-            if relative is None or not relative.endswith(".xml"):
+        visited: set[Path] = set()
+        pending = [index_path]
+        while pending:
+            sitemap = pending.pop()
+            if sitemap in visited:
                 continue
-            sitemap = pages / relative
-            self.assertTrue(sitemap.is_file(), relative)
-            self.assertTrue(
-                gen_locale_indexation.sitemap_has_entries(sitemap),
-                relative,
-            )
-            referenced.append(sitemap)
-            referenced_relatives.add(relative)
+            visited.add(sitemap)
+            source = sitemap.read_text(encoding="utf-8")
+            if "<sitemapindex" not in source:
+                referenced.append(sitemap)
+                continue
+            for url in gen_locale_indexation.LOC_RE.findall(source):
+                relative = gen_locale_indexation.url_to_relative(url)
+                if relative is None or not relative.endswith(".xml"):
+                    continue
+                child = pages / relative
+                self.assertTrue(child.is_file(), relative)
+                self.assertTrue(
+                    gen_locale_indexation.sitemap_has_entries(child),
+                    relative,
+                )
+                referenced_relatives.add(relative)
+                pending.append(child)
 
         discovered = {
             sitemap.relative_to(pages).as_posix()
-            for sitemap in gen_locale_indexation.sitemap_candidates(pages)
+            for sitemap in gen_locale_indexation.sitemap_candidates(
+                pages,
+                tree,
+            )
             if gen_locale_indexation.sitemap_has_entries(sitemap)
         }
         self.assertEqual(set(), discovered - referenced_relatives)
@@ -350,13 +363,18 @@ class SitemapHygieneTests(unittest.TestCase):
                     listed.add(relative)
                     listed_urls.add(url)
 
-        dead = gen_locale_indexation.non_store_locales(pages)
-        indexable = gen_locale_indexation.indexable_pages(pages, dead)
+        dead = gen_locale_indexation.non_store_locales(pages, tree)
+        indexable = gen_locale_indexation.indexable_pages(
+            pages,
+            dead,
+            tree,
+        )
         indexable_urls = {
-            gen_locale_indexation.canonical_url_for_html(
-                pages / relative,
+            gen_locale_indexation.canonical_url_for_relative(
+                pages,
+                relative,
                 f"{gen_locale_indexation.SITE}/{relative}",
-                gen_locale_indexation.SITE,
+                tree,
             )
             for relative in indexable
         }
@@ -368,11 +386,40 @@ class SitemapHygieneTests(unittest.TestCase):
         noindex = {
             relative
             for relative in listed
-            if gen_locale_indexation.is_noindex_html(pages / relative)
+            if gen_locale_indexation.is_noindex_html(
+                pages / relative,
+                tree,
+            )
+        }
+        canonical_mismatches = {
+            relative: (
+                url,
+                gen_locale_indexation.canonical_url_for_relative(
+                    pages,
+                    relative,
+                    url,
+                    tree,
+                ),
+            )
+            for url in listed_urls
+            for relative in [
+                gen_locale_indexation.url_to_content_relative(url)
+            ]
+            if relative
+            and relative.endswith(".html")
+            and tree.contains(relative)
+            and gen_locale_indexation.canonical_url_for_relative(
+                pages,
+                relative,
+                url,
+                tree,
+            )
+            != url
         }
         self.assertEqual(set(), indexable_urls - listed_urls)
         self.assertEqual(set(), ghosts)
         self.assertEqual(set(), noindex)
+        self.assertEqual({}, canonical_mismatches)
 
 
 if __name__ == "__main__":

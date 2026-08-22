@@ -96,9 +96,99 @@ CURATED_FALLBACK = {
             "on-device OCR brief app with no account",
             "free-to-start AI brief app with a one-time unlock",
         ],
-        # AI Brief's hub is a first-party page, so it must not name third
-        # parties as if it were an independent comparison.
-        "top_competitors": [],
+        # Keep this first-party surface vendor-neutral: compare the product
+        # with the manual workflow it replaces, not with another AI brand.
+        "top_competitors": [["manual context folder", 0]],
+    },
+    "wordmatelite": {
+        "key": "wordmatelite",
+        "gap_queries": [
+            "free vocabulary app for learning five words a day",
+            "simple daily vocabulary habit without making flashcard decks",
+            "offline vocabulary practice app with no subscription",
+            "vocabulary streak app with a one-time unlock",
+        ],
+        "top_competitors": [
+            ["anki", 0],
+            ["quizlet", 0],
+            ["drops", 0],
+            ["memrise", 0],
+        ],
+    },
+    "caldaily": {
+        "key": "caldaily",
+        "gap_queries": [
+            "calculator app that saves the reason behind each calculation",
+            "iphone calculator with named history and tags",
+            "calculator with tip split discount and tax tools",
+            "calculator widget with csv export and no subscription",
+        ],
+        "top_competitors": [
+            ["apple calculator", 0],
+            ["pcalc", 0],
+            ["soulver", 0],
+            ["calzy", 0],
+        ],
+    },
+    "onepageppt": {
+        "key": "onepageppt",
+        "gap_queries": [
+            "turn meeting notes into one executive summary slide",
+            "make one editable powerpoint slide from a report",
+            "convert a pdf into a concise presentation slide",
+            "one slide recap maker with pptx export",
+        ],
+        "top_competitors": [
+            ["microsoft powerpoint", 0],
+            ["apple keynote", 0],
+            ["canva", 0],
+            ["gamma", 0],
+        ],
+    },
+    "notesstudio100": {
+        "key": "notesstudio100",
+        "gap_queries": [
+            "offline handwriting notes app for ipad with no account",
+            "annotate lecture pdfs with apple pencil",
+            "notes app with handwriting pdf markup and page audio",
+            "private ipad notes app with a one-time unlock",
+        ],
+        "top_competitors": [
+            ["goodnotes", 0],
+            ["notability", 0],
+            ["apple notes", 0],
+            ["pdf expert", 0],
+        ],
+    },
+    "wifiaidlite": {
+        "key": "wifiaidlite",
+        "gap_queries": [
+            "is my wifi dns or the website causing the problem",
+            "iphone app to diagnose wifi connected but no internet",
+            "check dns tcp and tls without creating an account",
+            "network diagnostic app with a one-time unlock",
+        ],
+        "top_competitors": [
+            ["fing", 0],
+            ["speedtest by ookla", 0],
+            ["network analyzer", 0],
+            ["wifi sweetspots", 0],
+        ],
+    },
+    "moneytag": {
+        "key": "moneytag",
+        "gap_queries": [
+            "track income expenses and profit by freelance project",
+            "project bookkeeping app for client work with no subscription",
+            "tag expenses across side hustles and client projects",
+            "private offline project ledger with a one-time unlock",
+        ],
+        "top_competitors": [
+            ["ynab", 0],
+            ["spendee", 0],
+            ["toshl finance", 0],
+            ["moneywiz", 0],
+        ],
     },
     "dailymatelite": {
         "key": "dailymatelite",
@@ -458,6 +548,8 @@ def cat_noun(key):
         return "travel phrasebook app", "EducationalApplication"
     if key == "tripbeelite":
         return "one-trip itinerary planner", "TravelApplication"
+    if key == "wordmatelite":
+        return "vocabulary learning app", "EducationalApplication"
     if key == "wordmate":
         return "vocabulary learning app", "EducationalApplication"
     if key == "dailymatelite":
@@ -658,7 +750,16 @@ def faq_for(key, comp_name, gap_queries):
             (f"How much does {a['name']} cost?",
              f"Pricing can vary by storefront. Check the current App Store listing: {url}"),
         ]
-    if app_attrs(key).get("Works offline / on-device"):
+    if key == "moneytag":
+        qa.append((
+            "Does MoneyTag work offline / on device?",
+            "Ledger data stays on the device, and saved or manual exchange "
+            "rates work offline. Automatic rate updates contact Frankfurter "
+            "or ExchangeRate-API; their Cloudflare infrastructure may process "
+            "connection, usage and diagnostic data for functionality and "
+            "analytics, as disclosed in the app's privacy information.",
+        ))
+    elif app_attrs(key).get("Works offline / on-device"):
         qa.append((f"Does {a['name']} work offline / on device?",
                    f"Yes, {a['name']} runs on your iPhone and processes your data on-device for privacy."))
     for q in (gap_queries or [])[:3]:

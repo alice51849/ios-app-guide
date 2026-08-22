@@ -2,6 +2,7 @@
 """Build a zero-cost, factual outreach coverage scorecard for every app."""
 from __future__ import annotations
 
+import argparse
 import json
 import os
 import re
@@ -22,6 +23,60 @@ PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 REPORTS = os.environ.get("GEO_REPORTS", os.path.join(HERE, "reports"))
 JSON_OUT = os.path.join(REPORTS, "outreach_coverage.json")
 MD_OUT = os.path.join(REPORTS, "outreach_coverage.md")
+
+
+def validate_public_inventory(public_keys, baseline_path, appstore=APPSTORE):
+    """Reject an empty or unexpectedly shrunken public-app inventory."""
+    try:
+        with open(baseline_path, encoding="utf-8") as handle:
+            catalog = json.load(handle)
+    except (OSError, json.JSONDecodeError) as error:
+        raise RuntimeError(
+            f"Public App inventory baseline is unavailable: {baseline_path}"
+        ) from error
+    if not isinstance(catalog, list) or not catalog:
+        raise RuntimeError("Public App inventory baseline must be a non-empty array")
+
+    baseline_ids = []
+    for item in catalog:
+        if not isinstance(item, dict):
+            raise RuntimeError("Public App inventory entries must be objects")
+        match = re.fullmatch(
+            r"https://apps\.apple\.com/app/id(\d+)",
+            str(item.get("appStoreUrl", "")),
+        )
+        if not match:
+            raise RuntimeError(
+                "Public App inventory has an invalid App Store URL"
+            )
+        baseline_ids.append(match.group(1))
+    if len(baseline_ids) != len(set(baseline_ids)):
+        raise RuntimeError("Public App inventory contains duplicate App IDs")
+
+    known_ids = {str(app_id) for app_id in appstore.values() if app_id}
+    unknown_ids = set(baseline_ids) - known_ids
+    if unknown_ids:
+        raise RuntimeError(
+            "Public App inventory contains unregistered App IDs: "
+            + ", ".join(sorted(unknown_ids))
+        )
+    unknown_keys = set(public_keys) - set(appstore)
+    if unknown_keys:
+        raise RuntimeError(
+            "Live App inventory contains unregistered keys: "
+            + ", ".join(sorted(unknown_keys))
+        )
+    live_ids = {
+        str(appstore[key])
+        for key in public_keys
+        if key in appstore and appstore[key]
+    }
+    missing_ids = set(baseline_ids) - live_ids
+    if missing_ids:
+        raise RuntimeError(
+            "Live App inventory unexpectedly shrank; missing App IDs: "
+            + ", ".join(sorted(missing_ids))
+        )
 
 
 def slugify(question):
@@ -207,14 +262,54 @@ def write_reports(rows):
     return payload
 
 
-def main():
-    public = live_app_keys(APPSTORE, PAGES, refresh=False)
-    payload = write_reports(build_rows(public))
+def incomplete_public_rows(rows):
+    return [
+        row
+        for row in rows
+        if row["public"] and row["coverage_score"] < 1.0
+    ]
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--require-complete",
+        action="store_true",
+        help="Exit non-zero when any public App has less than full coverage.",
+    )
+    args = parser.parse_args(argv)
+    public = live_app_keys(
+        APPSTORE,
+        PAGES,
+        refresh=False,
+        strict_state=args.require_complete,
+    )
+    if args.require_complete:
+        baseline = os.environ.get(
+            "GEO_PUBLIC_INVENTORY_BASELINE",
+            os.path.join(PAGES, "apps.json"),
+        )
+        try:
+            validate_public_inventory(public, baseline)
+        except RuntimeError as error:
+            print(f"outreach inventory invalid: {error}", file=sys.stderr)
+            return 1
+    rows = build_rows(public)
+    payload = write_reports(rows)
     print(
         f"✓ outreach coverage: {payload['public_apps']} public apps · "
         f"{payload['average_public_coverage']:.1%} average"
     )
+    incomplete = incomplete_public_rows(rows)
+    if args.require_complete and incomplete:
+        summary = ", ".join(
+            f"{row['key']}={row['coverage_score']:.1%}"
+            for row in incomplete
+        )
+        print(f"outreach coverage incomplete: {summary}", file=sys.stderr)
+        return 1
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

@@ -2246,12 +2246,15 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "project bookkeeping no subscription",
                 "tag expenses across projects",
                 "multi currency freelance ledger",
+                "freelance project bookkeeping",
+                "profit and loss by project",
+                "project income expense tracker",
             ],
             "persona": "freelancers and side-hustle owners who need a separate bottom line for every project",
             "lead": "A monthly budget cannot tell a freelancer whether one client project actually made money — each project needs its own income, expenses and net result.",
             "paras": [
                 "MoneyTag treats every job, client or side hustle as a separate ledger. Income and expenses stay distinct, the project card shows the running net result, and each entry can carry multiple tags so costs such as equipment, travel or tax deductions can also be compared across projects.",
-                "Entries can use a local currency with an automatic or manual exchange rate while the project keeps one reporting currency. Reports break results down by period, type, category, month and day, with CSV and PDF export available through an optional one-time Lifetime Pro unlock. The app works offline with no account, ads, analytics or third-party tracking.",
+                "Entries can use a local currency with an automatic or manual exchange rate while the project keeps one reporting currency. Reports break results down by period, type, category, month and day, with CSV and PDF export available through an optional one-time Lifetime Pro unlock. Ledger data stays on the device, and saved or manual exchange rates work offline with no account or ads. Automatic rate updates contact Frankfurter or ExchangeRate-API; their Cloudflare infrastructure may process connection, usage and diagnostic data for functionality and analytics, as disclosed in the app's privacy information.",
             ],
             "look": [
                 "A separate income, expense and net total for every project.",

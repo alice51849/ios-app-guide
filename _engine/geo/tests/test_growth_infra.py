@@ -22244,7 +22244,10 @@ class GeneratorTests(unittest.TestCase):
 
     def test_ai_brief_has_disclosed_first_party_alternative_hub(self):
         fallback = aeo_pages.CURATED_FALLBACK["aibriefpack"]
-        self.assertEqual([], fallback["top_competitors"])
+        self.assertEqual(
+            [["manual context folder", 0]],
+            fallback["top_competitors"],
+        )
         self.assertEqual(
             ("context organizer for AI", "BusinessApplication"),
             aeo_pages.cat_noun("aibriefpack"),
@@ -22261,6 +22264,63 @@ class GeneratorTests(unittest.TestCase):
             " ".join(page.split()),
         )
         self.assertNotIn("Independent comparison", page)
+        comparison_slug, comparison = aeo_pages.alt_page(
+            "aibriefpack",
+            "manual context folder",
+            fallback["gap_queries"],
+        )
+        self.assertEqual(
+            "aibriefpack-vs-manual-context-folder",
+            comparison_slug,
+        )
+        self.assertIn("Publisher disclosure:", comparison)
+
+    def test_recent_public_apps_have_curated_alternative_inputs(self):
+        app_ids = {
+            "wordmatelite": "6797601720",
+            "caldaily": "6794178671",
+            "onepageppt": "6798814385",
+            "notesstudio100": "6798813048",
+            "wifiaidlite": "6793414462",
+            "moneytag": "6801956402",
+        }
+        for key, app_id in app_ids.items():
+            with self.subTest(key=key):
+                fallback = aeo_pages.CURATED_FALLBACK[key]
+                self.assertGreaterEqual(len(fallback["gap_queries"]), 4)
+                self.assertGreaterEqual(
+                    len(fallback["top_competitors"]),
+                    2,
+                )
+                competitor = fallback["top_competitors"][0][0]
+                slug, page = aeo_pages.alt_page(
+                    key,
+                    competitor,
+                    fallback["gap_queries"],
+                )
+                self.assertTrue(slug.startswith(f"{key}-vs-"))
+                self.assertIn(
+                    f"https://apps.apple.com/app/id{app_id}",
+                    page,
+                )
+                self.assertIn("Publisher disclosure:", page)
+                if key == "moneytag":
+                    self.assertIn(
+                        "Ledger data stays on the device",
+                        page,
+                    )
+                    self.assertIn(
+                        "Automatic rate updates contact Frankfurter",
+                        page,
+                    )
+                    self.assertNotIn(
+                        "processes your data on-device for privacy",
+                        page,
+                    )
+        self.assertEqual(
+            ("vocabulary learning app", "EducationalApplication"),
+            aeo_pages.cat_noun("wordmatelite"),
+        )
 
     def test_roundup_cli_can_generate_only_selected_apps(self):
         argv = ["gen_roundups.py", "dailymate"]
@@ -22947,8 +23007,11 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(0, result.returncode, result.stderr)
 
     def test_daily_workflow_refreshes_app_availability_only_once(self):
+        guide_root = Path(
+            os.environ.get("GEO_GUIDE_ROOT", Path(GEO) / "pages")
+        )
         workflow = (
-            Path(GEO) / "pages" / ".github" / "workflows" / "geo-daily.yml"
+            guide_root / ".github" / "workflows" / "geo-daily.yml"
         ).read_text(encoding="utf-8")
         self.assertEqual(1, workflow.count("refresh=True"))
         self.assertEqual(
@@ -23195,13 +23258,30 @@ class GeneratorTests(unittest.TestCase):
         # finder links exist, and once after the availability refresh.
         self.assertEqual(2, workflow.count("portfolio_app_finder.py"))
         self.assertEqual(1, workflow.count("portfolio_cost_calculator.py"))
-        self.assertEqual(2, workflow.count("outreach_scorecard.py"))
+        self.assertEqual(4, workflow.count("outreach_scorecard.py"))
+        self.assertEqual(
+            3,
+            workflow.count("outreach_scorecard.py --require-complete"),
+        )
+        self.assertIn("GEO_PUBLIC_INVENTORY_BASELINE", workflow)
+        self.assertIn("cp apps.json", workflow)
         first_scorecard = workflow.index("outreach_scorecard.py")
         answer_generation = workflow.index("aeo_answers.py --cached-live")
         final_scorecard = workflow.index(
             "outreach_scorecard.py", first_scorecard + 1
         )
         english_commit = workflow.index("Commit English content first")
+        english_rebase = workflow.index(
+            "git pull --rebase --autostash -X theirs",
+            english_commit,
+        )
+        english_push = workflow.index("git push", english_rebase)
+        localized_commit = workflow.index("Commit localized pages if any")
+        localized_rebase = workflow.index(
+            "git pull --rebase --autostash -X theirs",
+            localized_commit,
+        )
+        localized_push = workflow.index("git push", localized_rebase)
         self.assertLess(
             workflow.rindex("portfolio_app_finder.py"),
             workflow.index("portfolio_cost_calculator.py"),
@@ -23216,6 +23296,14 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertLess(answer_generation, final_scorecard)
         self.assertLess(final_scorecard, english_commit)
+        self.assertIn(
+            "outreach_scorecard.py --require-complete",
+            workflow[english_rebase:english_push],
+        )
+        self.assertIn(
+            "outreach_scorecard.py --require-complete",
+            workflow[localized_rebase:localized_push],
+        )
         self.assertEqual(
             1,
             workflow.count("refresh_storefront_availability.py"),
@@ -26660,6 +26748,79 @@ class GeneratorTests(unittest.TestCase):
         self.assertGreater(by_key["lumibopomofo"]["coverage_score"], 0)
         self.assertFalse(by_key["zafe"]["public"])
         self.assertEqual("", by_key["zafe"]["appstore"])
+
+    def test_scorecard_completion_gate_only_blocks_incomplete_public_apps(self):
+        rows = [
+            {"key": "ready", "public": True, "coverage_score": 1.0},
+            {"key": "gap", "public": True, "coverage_score": 0.95},
+            {"key": "unavailable", "public": False, "coverage_score": 0.0},
+        ]
+        self.assertEqual(
+            ["gap"],
+            [
+                row["key"]
+                for row in outreach_scorecard.incomplete_public_rows(rows)
+            ],
+        )
+
+    def test_scorecard_completion_gate_rejects_shrunken_public_inventory(self):
+        with tempfile.TemporaryDirectory() as directory:
+            baseline = Path(directory) / "apps.json"
+            baseline.write_text(
+                json.dumps([
+                    {"appStoreUrl": "https://apps.apple.com/app/id1"},
+                    {"appStoreUrl": "https://apps.apple.com/app/id2"},
+                ]),
+                encoding="utf-8",
+            )
+            appstore = {"first": "1", "second": "2", "new": "3"}
+            outreach_scorecard.validate_public_inventory(
+                {"first", "second", "new"},
+                baseline,
+                appstore,
+            )
+            for public in ({"first"}, set()):
+                with self.subTest(public=public):
+                    with self.assertRaisesRegex(
+                        RuntimeError,
+                        "unexpectedly shrank",
+                    ):
+                        outreach_scorecard.validate_public_inventory(
+                            public,
+                            baseline,
+                            appstore,
+                        )
+
+    def test_moneytag_answer_discloses_automatic_rate_network_boundary(self):
+        from answer_personas import PERSONAS
+
+        copy = " ".join(PERSONAS["moneytag"][0]["paras"])
+        self.assertIn("Ledger data stays on the device", copy)
+        self.assertIn("Automatic rate updates contact", copy)
+        self.assertIn("functionality and analytics", copy)
+        self.assertNotIn("no account, ads, analytics", copy)
+
+    def test_published_moneytag_answers_bound_automatic_rate_privacy(self):
+        guide_root = Path(
+            os.environ.get("GEO_GUIDE_ROOT", Path(GEO) / "pages")
+        )
+        pages = []
+        for path in (guide_root / "answers").glob("*.html"):
+            text = path.read_text(encoding="utf-8")
+            if (
+                '<meta name="apple-itunes-app" '
+                'content="app-id=6801956402">' in text
+            ):
+                pages.append((path, text))
+        self.assertGreaterEqual(len(pages), 21)
+        for path, text in pages:
+            with self.subTest(path=path.name):
+                self.assertIn(
+                    "Automatic rate updates contact "
+                    "Frankfurter or ExchangeRate-API",
+                    text,
+                )
+                self.assertNotIn("no account, ads, analytics", text)
 
     def test_scorecard_counts_dynamic_portfolio_social_coverage(self):
         with tempfile.TemporaryDirectory() as directory:

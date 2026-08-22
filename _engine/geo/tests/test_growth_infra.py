@@ -22954,16 +22954,22 @@ class GeneratorTests(unittest.TestCase):
         ).read_text(encoding="utf-8")
         self.assertEqual(1, workflow.count("refresh=True"))
         self.assertEqual(
-            2,
+            0,
             workflow.count(
                 "from official_locales import OFFICIAL_LOCALES; "
                 'print(" ".join(OFFICIAL_LOCALES))'
             ),
         )
         self.assertEqual(
-            2,
+            0,
             workflow.count(
                 'python3 add_related_tools.py --locale "$locale"'
+            ),
+        )
+        self.assertEqual(
+            2,
+            workflow.count(
+                "python3 add_related_tools.py --all-official-locales"
             ),
         )
         self.assertNotIn("add_related_tools $loc", workflow)
@@ -23406,10 +23412,7 @@ class GeneratorTests(unittest.TestCase):
             "app_install_decision_routes.py",
             "zhuyin_resourcesync.py",
             "gen_app_decision_cards.py",
-            "gen_smart_app_banners.py",
-            "gen_mobile_store_ctas.py",
-            "gen_app_store_qr_ctas.py",
-            "gen_app_store_share_ctas.py",
+            "gen_app_store_conversion_surfaces.py",
             "validate_webstories.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
@@ -23468,7 +23471,7 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertLess(
             cleanup,
-            refresh_block.index("gen_smart_app_banners.py"),
+            refresh_block.index("gen_app_store_conversion_surfaces.py"),
         )
         self.assertEqual(2, workflow.count("zhuyin_resourcesync.py"))
         self.assertEqual(3, workflow.count("gen_webstories_i18n.py"))
@@ -23495,10 +23498,7 @@ class GeneratorTests(unittest.TestCase):
             "zhuyin_resourcesync.py",
             "gen_app_decision_cards.py",
             "cleanup_localized_assets.py --cached-live",
-            "gen_smart_app_banners.py",
-            "gen_mobile_store_ctas.py",
-            "gen_app_store_qr_ctas.py",
-            "gen_app_store_share_ctas.py",
+            "gen_app_store_conversion_surfaces.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
             "reconcile_answer_semantics.py",
@@ -23524,10 +23524,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_app_store_facts.py",
             "app_install_decision_routes.py",
             "gen_app_decision_cards.py",
-            "gen_smart_app_banners.py",
-            "gen_mobile_store_ctas.py",
-            "gen_app_store_qr_ctas.py",
-            "gen_app_store_share_ctas.py",
+            "gen_app_store_conversion_surfaces.py",
             "validate_webstories.py",
             "gen_llms.py --cached-live",
             "gen_feed.py",
@@ -23538,6 +23535,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(
             sorted(materialize_positions),
             materialize_positions,
+        )
+        self.assertEqual(
+            3,
+            workflow.count("gen_app_store_conversion_surfaces.py"),
         )
         stable_lastmod_chain = (
             *stable_surface_chain,

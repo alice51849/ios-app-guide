@@ -259,14 +259,14 @@ def share_block(
     )
 
 
-def ensure_share(
+def render_share(
     path: Path,
+    source: str,
     app_id: str,
     script_href: str | None = None,
     *,
     store_url: str | None = None,
-) -> bool:
-    source = path.read_text(encoding="utf-8")
+) -> str:
     if "</body>" not in source:
         raise ValueError(f"App Store share page has no closing body: {path}")
     if store_url is None:
@@ -283,16 +283,47 @@ def ensure_share(
         + "\n"
         + cleaned[body_index:].lstrip()
     )
-    return _write_if_changed(path, updated)
+    return updated
+
+
+def ensure_share(
+    path: Path,
+    app_id: str,
+    script_href: str | None = None,
+    *,
+    store_url: str | None = None,
+    source: str | None = None,
+) -> bool:
+    if source is None:
+        source = path.read_text(encoding="utf-8")
+    updated = render_share(
+        path,
+        source,
+        app_id,
+        script_href,
+        store_url=store_url,
+    )
+    return _write_if_changed(path, updated, previous=source)
 
 
 def remove_share(path: Path) -> bool:
     source = path.read_text(encoding="utf-8")
-    return _write_if_changed(path, BLOCK_RE.sub("\n", source))
+    return _write_if_changed(
+        path,
+        BLOCK_RE.sub("\n", source),
+        previous=source,
+    )
 
 
-def _write_if_changed(path: Path, content: str) -> bool:
-    if path.exists() and path.read_text(encoding="utf-8") == content:
+def _write_if_changed(
+    path: Path,
+    content: str,
+    *,
+    previous: str | None = None,
+) -> bool:
+    if previous is None and path.exists():
+        previous = path.read_text(encoding="utf-8")
+    if previous == content:
         return False
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
@@ -303,15 +334,20 @@ def generate(
     pages: Path = PAGES,
     live_keys: set[str] | None = None,
     site: str = SITE,
+    *,
+    inventory: gen_smart_app_banners.SurfaceInventory | None = None,
 ) -> dict[str, int]:
-    if live_keys is None:
-        live_keys = set(live_app_keys(APPSTORE, str(pages), refresh=False))
-    targets, app_count = gen_smart_app_banners.build_install_targets(
-        pages, set(live_keys), site
-    )
-    guide_pages = gen_smart_app_banners._guide_pages(pages)
-    answer_pages = gen_smart_app_banners._answer_pages(pages)
-    buyer_intent_pages = gen_smart_app_banners._buyer_intent_pages(pages)
+    if inventory is None:
+        if live_keys is None:
+            live_keys = set(live_app_keys(APPSTORE, str(pages), refresh=False))
+        inventory = gen_smart_app_banners.build_surface_inventory(
+            pages, set(live_keys), site
+        )
+    targets = inventory.targets
+    app_count = inventory.app_count
+    guide_pages = set(inventory.guide_pages)
+    answer_pages = set(inventory.answer_pages)
+    buyer_intent_pages = set(inventory.buyer_intent_pages)
     eligible_pages = guide_pages | buyer_intent_pages
     share_targets = {
         path: app_id for path, app_id in targets.items() if path in eligible_pages
@@ -326,15 +362,17 @@ def generate(
         if cta is None:
             raise ValueError(f"App Store share page has no direct CTA: {path}")
         store_url = cta[0]
-        changed += int(
-            ensure_share(
-                path,
-                app_id,
-                script_href,
-                store_url=store_url,
-            )
+        updated = render_share(
+            path,
+            source,
+            app_id,
+            script_href,
+            store_url=store_url,
         )
-        block = BLOCK_RE.search(path.read_text(encoding="utf-8"))
+        changed += int(
+            _write_if_changed(path, updated, previous=source)
+        )
+        block = BLOCK_RE.search(updated)
         expected = share_block(
             app_id,
             script_href,

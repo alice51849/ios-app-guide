@@ -91,6 +91,14 @@ for _key in APPS:
         _legacy = f"{_key}-{_suffix}"
         if _legacy != _current:
             LEGACY_ALT_SLUGS[_legacy] = _current
+LEGACY_ALT_PATH_RE = re.compile(
+    r"/alternatives/(?P<slug>"
+    + "|".join(
+        re.escape(slug)
+        for slug in sorted(LEGACY_ALT_SLUGS, key=len, reverse=True)
+    )
+    + r")\.html"
+)
 RETIRED_ANSWER_REDIRECTS = {
     "app-to-convert-a-shopping-price-into-hours-of-work-before-buying-pay-once-no-subscription":
         "best-app-to-track-where-my-money-goes-and-save-more",
@@ -147,6 +155,36 @@ RETIRED_ANSWER_HREF_PATTERN = (
     + RETIRED_ANSWER_REFERENCE_PATTERN
     + r"(?:[?#][^\"']*)?[\"']"
 )
+RETIRED_HTML_ENTRY_RES = (
+    re.compile(
+        r"<article\b(?=[^>]*\b(?:h-entry|hentry)\b)[^>]*>"
+        r"(?:(?!</article>).)*?"
+        + RETIRED_ANSWER_HREF_PATTERN
+        + r"(?:(?!</article>).)*?</article>\s*",
+        flags=re.IGNORECASE | re.DOTALL,
+    ),
+    re.compile(
+        r"<li\b[^>]*>(?:(?!</li>).)*?"
+        + RETIRED_ANSWER_HREF_PATTERN
+        + r"(?:(?!</li>).)*?</li>\s*",
+        flags=re.IGNORECASE | re.DOTALL,
+    ),
+    re.compile(
+        r"<a\b(?=[^>]*"
+        + RETIRED_ANSWER_HREF_PATTERN
+        + r")[^>]*>.*?</a>\s*",
+        flags=re.IGNORECASE | re.DOTALL,
+    ),
+)
+RETIRED_XML_ENTRY_RES = tuple(
+    re.compile(
+        rf"<{tag}\b[^>]*>(?:(?!</{tag}>).)*?"
+        + RETIRED_ANSWER_REFERENCE_PATTERN
+        + rf"(?:(?!</{tag}>).)*?</{tag}>\s*",
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    for tag in ("url", "item", "entry")
+)
 PUBLIC_TEXT_SUFFIXES = {
     ".csv",
     ".html",
@@ -156,6 +194,7 @@ PUBLIC_TEXT_SUFFIXES = {
     ".md",
     ".xml",
 }
+PUBLIC_EXCLUDED_PARTS = {".git", "_engine"}
 ACCURATE_LEGACY_PROFILES = {"pay_once"}
 PAID_UPFRONT_KEYS = {
     key
@@ -167,6 +206,109 @@ STALE_LOCALIZED_ROUNDUP_SLUGS = {
     for key, topic in TOPICS.items()
     if pricing_profile(key) != "pay_once"
 }
+
+
+class SiteTreeIndex:
+    """One filesystem walk shared by cleanup, link checks, and canonical reads."""
+
+    def __init__(self, pages: Path):
+        self.pages = pages
+        files = sorted(path for path in pages.rglob("*") if path.is_file())
+        self.files = {self.key(path) for path in files}
+        self.public_files = tuple(
+            path
+            for path in files
+            if not PUBLIC_EXCLUDED_PARTS.intersection(
+                path.relative_to(pages).parts
+            )
+        )
+        self.html_files = tuple(
+            path for path in self.public_files if path.suffix == ".html"
+        )
+        html_by_top_level: dict[str, list[Path]] = {}
+        for path in self.html_files:
+            relative = path.relative_to(pages)
+            top_level = relative.parts[0] if len(relative.parts) > 1 else ""
+            html_by_top_level.setdefault(top_level, []).append(path)
+        self.html_by_top_level = {
+            key: tuple(value) for key, value in html_by_top_level.items()
+        }
+        localized_by_suffix: dict[
+            tuple[str, ...], list[tuple[str, Path]]
+        ] = {}
+        for path in self.html_files:
+            relative = path.relative_to(pages)
+            if (
+                len(relative.parts) < 2
+                or relative.parts[0] in RESERVED_TOP_LEVEL_DIRS
+                or not LOCALE_RE.fullmatch(relative.parts[0])
+            ):
+                continue
+            localized_by_suffix.setdefault(relative.parts[1:], []).append(
+                (relative.parts[0], path)
+            )
+        self.localized_by_suffix = {
+            key: tuple(sorted(value))
+            for key, value in localized_by_suffix.items()
+        }
+        self.public_text_files = tuple(
+            path
+            for path in self.public_files
+            if path.suffix in PUBLIC_TEXT_SUFFIXES
+        )
+        self.canonical_cache: dict[Path, str | None | bool] = {}
+        self.hreflang_cache: dict[tuple[str, ...], str | None] = {}
+
+    @staticmethod
+    def key(path: Path) -> Path:
+        return Path(os.path.normpath(os.fspath(path)))
+
+    def contains(self, path: Path) -> bool:
+        return self.key(path) in self.files
+
+    def discard(self, path: Path) -> None:
+        key = self.key(path)
+        self.files.discard(key)
+        self.canonical_cache.pop(key, None)
+        try:
+            relative = key.relative_to(self.pages)
+        except ValueError:
+            return
+        if (
+            len(relative.parts) >= 2
+            and LOCALE_RE.fullmatch(relative.parts[0])
+        ):
+            self.hreflang_cache.pop(relative.parts[1:], None)
+        else:
+            self.hreflang_cache.pop(relative.parts, None)
+
+    def html_under(self, directory: Path) -> tuple[Path, ...]:
+        relative = directory.relative_to(self.pages)
+        candidates = (
+            self.html_by_top_level.get(relative.parts[0], ())
+            if len(relative.parts) == 1
+            else self.html_files
+        )
+        return tuple(
+            path
+            for path in candidates
+            if path.is_relative_to(directory) and self.contains(path)
+        )
+
+    def localized_variants(
+        self,
+        suffix: tuple[str, ...],
+        locale_names: set[str],
+    ) -> tuple[tuple[str, Path], ...]:
+        return tuple(
+            (locale, path)
+            for locale, path in self.localized_by_suffix.get(suffix, ())
+            if locale in locale_names and self.contains(path)
+        )
+
+
+def _path_exists(path: Path, tree: SiteTreeIndex | None = None) -> bool:
+    return tree.contains(path) if tree is not None else path.exists()
 AIM990_FALSE_COPY = {
     "en-US": (
         "Aim990 is a pay-once app with no subscriptions or ads, allowing for an uninterrupted learning experience.",
@@ -274,7 +416,11 @@ def app_key_for_alternative(filename: str) -> str | None:
     )
 
 
-def replace_retired_answer_slugs(text: str, pages: Path = PAGES) -> str:
+def replace_retired_answer_slugs(
+    text: str,
+    pages: Path = PAGES,
+    tree: SiteTreeIndex | None = None,
+) -> str:
     def repl(match: re.Match[str]) -> str:
         locale = match.group("locale")
         replacement = RETIRED_ANSWER_REDIRECTS[match.group("slug")]
@@ -283,9 +429,9 @@ def replace_retired_answer_slugs(text: str, pages: Path = PAGES) -> str:
             localized_answer = (
                 locale_dir / "answers" / f"{replacement}.html"
             )
-            if localized_answer.exists():
+            if _path_exists(localized_answer, tree):
                 return f"/{locale}/answers/{replacement}.html"
-            if (locale_dir / "hourstag.html").exists():
+            if _path_exists(locale_dir / "hourstag.html", tree):
                 return f"/{locale}/hourstag.html"
         return f"/answers/{replacement}.html"
 
@@ -293,38 +439,13 @@ def replace_retired_answer_slugs(text: str, pages: Path = PAGES) -> str:
 
 
 def remove_retired_html_entries(text: str) -> str:
-    h_entry = re.compile(
-        r"<article\b(?=[^>]*\b(?:h-entry|hentry)\b)[^>]*>"
-        r"(?:(?!</article>).)*?"
-        + RETIRED_ANSWER_HREF_PATTERN
-        + r"(?:(?!</article>).)*?</article>\s*",
-        flags=re.IGNORECASE | re.DOTALL,
-    )
-    list_item = re.compile(
-        r"<li\b[^>]*>(?:(?!</li>).)*?"
-        + RETIRED_ANSWER_HREF_PATTERN
-        + r"(?:(?!</li>).)*?</li>\s*",
-        flags=re.IGNORECASE | re.DOTALL,
-    )
-    anchor = re.compile(
-        r"<a\b(?=[^>]*"
-        + RETIRED_ANSWER_HREF_PATTERN
-        + r")[^>]*>.*?</a>\s*",
-        flags=re.IGNORECASE | re.DOTALL,
-    )
-    for pattern in (h_entry, list_item, anchor):
+    for pattern in RETIRED_HTML_ENTRY_RES:
         text = pattern.sub("", text)
     return text
 
 
 def remove_retired_xml_entries(text: str) -> str:
-    for tag in ("url", "item", "entry"):
-        pattern = re.compile(
-            rf"<{tag}\b[^>]*>(?:(?!</{tag}>).)*?"
-            + RETIRED_ANSWER_REFERENCE_PATTERN
-            + rf"(?:(?!</{tag}>).)*?</{tag}>\s*",
-            flags=re.IGNORECASE | re.DOTALL,
-        )
+    for pattern in RETIRED_XML_ENTRY_RES:
         text = pattern.sub("", text)
     return text
 
@@ -391,30 +512,73 @@ def dedupe_json_ld_item_lists(text: str) -> str:
     return JSON_LD_SCRIPT_RE.sub(sanitize_script, text)
 
 
-def replace_legacy_slugs(text: str, pages: Path = PAGES) -> str:
-    for old, new in LEGACY_ALT_SLUGS.items():
-        text = text.replace(f"/alternatives/{old}.html", f"/alternatives/{new}.html")
-    return replace_retired_answer_slugs(text, pages)
+def replace_legacy_slugs(
+    text: str,
+    pages: Path = PAGES,
+    tree: SiteTreeIndex | None = None,
+) -> str:
+    if "/alternatives/" in text:
+        text = LEGACY_ALT_PATH_RE.sub(
+            lambda match: (
+                f"/alternatives/"
+                f"{LEGACY_ALT_SLUGS[match.group('slug')]}.html"
+            ),
+            text,
+        )
+    if "/answers/" in text:
+        text = replace_retired_answer_slugs(text, pages, tree)
+    return text
 
 
-def reconcile_retired_answer_references(pages: Path) -> int:
+def reconcile_retired_answer_references(
+    pages: Path,
+    *,
+    tree: SiteTreeIndex | None = None,
+    skip_html: bool = False,
+) -> int:
     changed = 0
-    for path in pages.rglob("*"):
-        if not path.is_file() or path.suffix not in PUBLIC_TEXT_SUFFIXES:
-            continue
-        relative = path.relative_to(pages)
-        if relative.parts[0] in {".git", "_engine"}:
+    paths = (
+        (
+            path
+            for path in tree.public_text_files
+            if tree.contains(path)
+        )
+        if tree is not None
+        else (
+            path
+            for path in pages.rglob("*")
+            if (
+                path.is_file()
+                and path.suffix in PUBLIC_TEXT_SUFFIXES
+                and not PUBLIC_EXCLUDED_PARTS.intersection(
+                    path.relative_to(pages).parts
+                )
+            )
+        )
+    )
+    for path in paths:
+        if skip_html and path.suffix == ".html":
             continue
         try:
             original = path.read_text(encoding="utf-8")
         except (OSError, UnicodeDecodeError):
             continue
+        has_retired_answer = (
+            "/answers/" in original
+            and RETIRED_ANSWER_PATH_RE.search(original) is not None
+        )
+        has_legacy_alternative = (
+            "/alternatives/" in original
+            and LEGACY_ALT_PATH_RE.search(original) is not None
+        )
+        if not has_retired_answer and not has_legacy_alternative:
+            continue
         updated = original
-        if path.suffix == ".html":
+        if has_retired_answer and path.suffix == ".html":
             updated = remove_retired_html_entries(updated)
-        elif path.suffix == ".xml":
+        elif has_retired_answer and path.suffix == ".xml":
             updated = remove_retired_xml_entries(updated)
-        updated = replace_retired_answer_slugs(updated, pages)
+        updated = replace_legacy_slugs(updated, pages, tree)
         if updated != original and path.suffix == ".html":
             updated = dedupe_json_ld_item_lists(updated)
         if updated == original:
@@ -558,22 +722,34 @@ def sanitize_aim990_optional_claims(
     return text, count
 
 
-def repair_root_alternative_urls(text: str, root_alternatives: Path) -> str:
+def repair_root_alternative_urls(
+    text: str,
+    root_alternatives: Path,
+    tree: SiteTreeIndex | None = None,
+) -> str:
     root_pattern = re.compile(
         re.escape(f"{SITE}/alternatives/") + r"([^\"'#?]+\.html)"
     )
 
     def repl(match: re.Match[str]) -> str:
         target = root_alternatives / match.group(1)
-        return match.group(0) if target.exists() else f"{SITE}/alternatives/index.html"
+        return (
+            match.group(0)
+            if _path_exists(target, tree)
+            else f"{SITE}/alternatives/index.html"
+        )
 
     return root_pattern.sub(
         repl,
-        replace_legacy_slugs(text, root_alternatives.parent),
+        replace_legacy_slugs(text, root_alternatives.parent, tree),
     )
 
 
-def repair_localized_internal_urls(text: str, locale_dir: Path) -> str:
+def repair_localized_internal_urls(
+    text: str,
+    locale_dir: Path,
+    tree: SiteTreeIndex | None = None,
+) -> str:
     prefix = f"{SITE}/{locale_dir.name}/"
     pattern = re.compile(re.escape(prefix) + r'([^"\'<>\s]+)')
     pages = locale_dir.parent
@@ -585,12 +761,12 @@ def repair_localized_internal_urls(text: str, locale_dir: Path) -> str:
         localized = locale_dir / relative
         if relative.endswith("/"):
             localized /= "index.html"
-        if localized.exists():
+        if _path_exists(localized, tree):
             return match.group(0)
         fallback = pages / relative
         if relative.endswith("/"):
             fallback /= "index.html"
-        if not fallback.exists():
+        if not _path_exists(fallback, tree):
             return match.group(0)
         result = f"{SITE}/{relative}"
         if parsed.query:
@@ -603,7 +779,11 @@ def repair_localized_internal_urls(text: str, locale_dir: Path) -> str:
 
 
 def repair_html_hreflang(
-    path: Path, text: str, pages: Path, locale_names: set[str]
+    path: Path,
+    text: str,
+    pages: Path,
+    locale_names: set[str],
+    tree: SiteTreeIndex | None = None,
 ) -> str:
     head = text[:4096].lower()
     if (
@@ -622,7 +802,6 @@ def repair_html_hreflang(
     if not suffix:
         return text
 
-    candidates: list[tuple[str, Path, str]] = []
     is_directory_index = suffix == ("index.html",)
     if not is_directory_index and suffix[0] not in {
         "answers",
@@ -631,54 +810,74 @@ def repair_html_hreflang(
         "alternatives",
     }:
         return text
-    if not is_directory_index:
-        english = pages.joinpath(*suffix)
-        if english.exists():
-            english_url = indexable_canonical_url(
-                english, f"{SITE}/{'/'.join(suffix)}"
-            )
-            if english_url:
-                candidates.append(("en", english, english_url))
-    for locale in sorted(locale_names):
-        target = pages / locale
-        target = target.joinpath(*suffix)
-        if target.exists():
-            target_url = indexable_canonical_url(
-                target, f"{SITE}/{locale}/{'/'.join(suffix)}"
-            )
-            if target_url:
-                candidates.append(
-                    (
-                        locale,
-                        target,
-                        target_url,
-                    )
+    replacement = (
+        tree.hreflang_cache.get(suffix)
+        if tree is not None and suffix in tree.hreflang_cache
+        else None
+    )
+    if tree is None or suffix not in tree.hreflang_cache:
+        candidates: list[tuple[str, Path, str]] = []
+        if not is_directory_index:
+            english = pages.joinpath(*suffix)
+            if _path_exists(english, tree):
+                english_url = indexable_canonical_url(
+                    english,
+                    f"{SITE}/{'/'.join(suffix)}",
+                    tree,
                 )
-    if not candidates:
-        return text
-    default_url = (
-        f"{SITE}/index.html"
-        if is_directory_index
-        else next(
-            (url for code, _target, url in candidates if code == "en"),
-            next(
-                (
-                    url
-                    for code, _target, url in candidates
-                    if code == "en-US"
-                ),
-                candidates[0][2],
-            ),
+                if english_url:
+                    candidates.append(("en", english, english_url))
+        localized_targets = (
+            tree.localized_variants(suffix, locale_names)
+            if tree is not None
+            else tuple(
+                (locale, pages.joinpath(locale, *suffix))
+                for locale in sorted(locale_names)
+                if (pages.joinpath(locale, *suffix)).exists()
+            )
         )
-    )
-    lines = [
-        f'<link rel="alternate" hreflang="{code}" href="{url}">'
-        for code, _target, url in candidates
-    ]
-    lines.append(
-        f'<link rel="alternate" hreflang="x-default" href="{default_url}">'
-    )
-    replacement = "\n" + "\n".join(lines)
+        for locale, target in localized_targets:
+            if _path_exists(target, tree):
+                target_url = indexable_canonical_url(
+                    target,
+                    f"{SITE}/{locale}/{'/'.join(suffix)}",
+                    tree,
+                )
+                if target_url:
+                    candidates.append((locale, target, target_url))
+        if candidates:
+            default_url = (
+                f"{SITE}/index.html"
+                if is_directory_index
+                else next(
+                    (
+                        url
+                        for code, _target, url in candidates
+                        if code == "en"
+                    ),
+                    next(
+                        (
+                            url
+                            for code, _target, url in candidates
+                            if code == "en-US"
+                        ),
+                        candidates[0][2],
+                    ),
+                )
+            )
+            lines = [
+                f'<link rel="alternate" hreflang="{code}" href="{url}">'
+                for code, _target, url in candidates
+            ]
+            lines.append(
+                '<link rel="alternate" hreflang="x-default" '
+                f'href="{default_url}">'
+            )
+            replacement = "\n" + "\n".join(lines)
+        if tree is not None:
+            tree.hreflang_cache[suffix] = replacement
+    if replacement is None:
+        return text
     if HTML_HREFLANG_BLOCK_RE.search(text):
         return HTML_HREFLANG_BLOCK_RE.sub(replacement, text, count=1)
     canonical = re.search(r'<link rel="canonical" href="[^"]+">', text)
@@ -687,16 +886,33 @@ def repair_html_hreflang(
     return text[: canonical.end()] + replacement + text[canonical.end() :]
 
 
-def indexable_canonical_url(path: Path, fallback: str) -> str | None:
+def indexable_canonical_url(
+    path: Path,
+    fallback: str,
+    tree: SiteTreeIndex | None = None,
+) -> str | None:
+    key = tree.key(path) if tree is not None else None
+    if tree is not None and key in tree.canonical_cache:
+        cached = tree.canonical_cache[key]
+        return fallback if cached is False else cached
     head = path.read_text(encoding="utf-8", errors="replace")[:4096]
     if 'name="robots" content="noindex' in head.lower():
+        if tree is not None:
+            tree.canonical_cache[key] = None
         return None
     canonical = re.search(
         r'<link\b[^>]*\brel="canonical"[^>]*\bhref="([^"]+)"[^>]*>',
         head,
         re.IGNORECASE,
     )
-    return html.unescape(canonical.group(1)) if canonical else fallback
+    if canonical:
+        result = html.unescape(canonical.group(1))
+        if tree is not None:
+            tree.canonical_cache[key] = result
+        return result
+    if tree is not None:
+        tree.canonical_cache[key] = False
+    return fallback
 
 
 def scrub_inaccurate_paid_app_offers(text: str) -> str:
@@ -799,13 +1015,18 @@ def internal_link_target(
     return target
 
 
-def remove_missing_html_links(path: Path, text: str, pages: Path) -> str:
+def remove_missing_html_links(
+    path: Path,
+    text: str,
+    pages: Path,
+    tree: SiteTreeIndex | None = None,
+) -> str:
     def container_repl(match: re.Match[str]) -> str:
         fragment = match.group(0)
         links = ANCHOR_RE.findall(fragment)
         for _attrs, href, _body in links:
             target = internal_link_target(href, path, pages)
-            if target is not None and not target.exists():
+            if target is not None and not _path_exists(target, tree):
                 return ""
         return fragment
 
@@ -814,7 +1035,7 @@ def remove_missing_html_links(path: Path, text: str, pages: Path) -> str:
 
     def anchor_repl(match: re.Match[str]) -> str:
         target = internal_link_target(match.group("href"), path, pages)
-        if target is not None and not target.exists():
+        if target is not None and not _path_exists(target, tree):
             return match.group("body")
         return match.group(0)
 
@@ -826,9 +1047,10 @@ def rewrite_html_links(
     locale: str,
     pages: Path,
     locale_names: set[str],
+    tree: SiteTreeIndex | None = None,
 ) -> bool:
     original = path.read_text(encoding="utf-8")
-    updated = replace_legacy_slugs(original, pages)
+    updated = replace_legacy_slugs(original, pages, tree)
     updated, _ = sanitize_known_aim990_claims(updated, locale)
     updated, _ = sanitize_aim990_optional_claims(updated, locale)
     updated = scrub_inaccurate_paid_app_offers(updated)
@@ -842,7 +1064,7 @@ def rewrite_html_links(
 
         def repl(match: re.Match[str]) -> str:
             target = locale_dir / "alternatives" / match.group(1)
-            return match.group(0) if target.exists() else (
+            return match.group(0) if _path_exists(target, tree) else (
                 f"{SITE}/alternatives/{match.group(1)}"
             )
 
@@ -851,13 +1073,15 @@ def rewrite_html_links(
             updated,
         )
     updated = repair_root_alternative_urls(
-        updated, locale_dir.parent / "alternatives"
+        updated,
+        locale_dir.parent / "alternatives",
+        tree,
     )
-    updated = repair_localized_internal_urls(updated, locale_dir)
+    updated = repair_localized_internal_urls(updated, locale_dir, tree)
     updated = repair_html_hreflang(
-        path, updated, pages, locale_names
+        path, updated, pages, locale_names, tree
     )
-    updated = remove_missing_html_links(path, updated, pages)
+    updated = remove_missing_html_links(path, updated, pages, tree)
     if updated == original:
         return False
     path.write_text(updated, encoding="utf-8")
@@ -865,27 +1089,37 @@ def rewrite_html_links(
 
 
 def rewrite_root_html_links(
-    path: Path, pages: Path, locale_names: set[str]
+    path: Path,
+    pages: Path,
+    locale_names: set[str],
+    tree: SiteTreeIndex | None = None,
 ) -> bool:
     original = path.read_text(encoding="utf-8")
-    updated = replace_legacy_slugs(original, pages)
-    updated = repair_root_alternative_urls(updated, pages / "alternatives")
+    updated = replace_legacy_slugs(original, pages, tree)
+    updated = repair_root_alternative_urls(
+        updated, pages / "alternatives", tree
+    )
     updated, _ = sanitize_known_aim990_claims(updated, "en-US")
     updated, _ = sanitize_aim990_optional_claims(updated, "en-US")
     updated = scrub_inaccurate_paid_app_offers(updated)
     if path.parent.name in {"answers", "guides"}:
         updated = ZERO_PRICE_OFFER_RE.sub("", updated)
         updated = ZERO_PRICE_LAST_OFFER_RE.sub("", updated)
-    updated = repair_html_hreflang(path, updated, pages, locale_names)
-    updated = remove_missing_html_links(path, updated, pages)
+    updated = repair_html_hreflang(
+        path, updated, pages, locale_names, tree
+    )
+    updated = remove_missing_html_links(path, updated, pages, tree)
     if updated == original:
         return False
     path.write_text(updated, encoding="utf-8")
     return True
 
 
-def remove_missing_index_items(index_path: Path) -> bool:
-    if not index_path.exists():
+def remove_missing_index_items(
+    index_path: Path,
+    tree: SiteTreeIndex | None = None,
+) -> bool:
+    if not _path_exists(index_path, tree):
         return False
     original = index_path.read_text(encoding="utf-8")
 
@@ -894,7 +1128,7 @@ def remove_missing_index_items(index_path: Path) -> bool:
         if "://" in href or href.startswith(("/", "#")):
             return match.group(0)
         target = index_path.parent / href.split("?", 1)[0]
-        return match.group(0) if target.exists() else ""
+        return match.group(0) if _path_exists(target, tree) else ""
 
     updated = INDEX_ITEM_RE.sub(repl, original)
     if updated == original:
@@ -921,9 +1155,12 @@ def sitemap_target(pages: Path, url: str, locales: set[str]) -> Path | None:
 
 
 def remove_missing_sitemap_urls(
-    sitemap: Path, pages: Path, locales: set[str]
+    sitemap: Path,
+    pages: Path,
+    locales: set[str],
+    tree: SiteTreeIndex | None = None,
 ) -> int:
-    if not sitemap.exists():
+    if not _path_exists(sitemap, tree):
         return 0
     original = sitemap.read_text(encoding="utf-8")
     removed = 0
@@ -935,7 +1172,7 @@ def remove_missing_sitemap_urls(
         if not loc:
             return block
         target = sitemap_target(pages, loc.group(1).strip(), locales)
-        if target is not None and not target.exists():
+        if target is not None and not _path_exists(target, tree):
             removed += 1
             return ""
 
@@ -944,7 +1181,9 @@ def remove_missing_sitemap_urls(
             alternate_target = sitemap_target(
                 pages, alternate.group(1).strip(), locales
             )
-            if alternate_target is None or alternate_target.exists():
+            if alternate_target is None or _path_exists(
+                alternate_target, tree
+            ):
                 return alternate.group(0)
             removed += 1
             return ""
@@ -1187,6 +1426,7 @@ def cleanup(pages: Path, live_keys: set[str]) -> dict[str, int]:
         reconcile_hourstag_guide_redirects(pages, locales)
     )
 
+    tree = SiteTreeIndex(pages)
     for locale_dir in locales:
         alt_dir = locale_dir / "alternatives"
         if alt_dir.is_dir():
@@ -1196,20 +1436,24 @@ def cleanup(pages: Path, live_keys: set[str]) -> dict[str, int]:
                 key = app_key_for_alternative(page.name)
                 if page.name not in valid_alternatives or key in unsafe_keys:
                     page.unlink()
+                    tree.discard(page)
                     stats["removed_alternatives"] += 1
 
         for key in inactive_keys:
             app_page = locale_dir / f"{key}.html"
             if app_page.exists():
                 app_page.unlink()
+                tree.discard(app_page)
                 stats["removed_unlisted_pages"] += 1
             guide_page = locale_dir / "guides" / f"{key}.html"
             if guide_page.exists():
                 guide_page.unlink()
+                tree.discard(guide_page)
                 stats["removed_unlisted_pages"] += 1
             story_page = locale_dir / "stories" / f"{key}.html"
             if story_page.exists():
                 story_page.unlink()
+                tree.discard(story_page)
                 stats["removed_unlisted_pages"] += 1
 
         answers = locale_dir / "answers"
@@ -1217,16 +1461,22 @@ def cleanup(pages: Path, live_keys: set[str]) -> dict[str, int]:
             for page in answers.glob("*.html"):
                 if page.stem in STALE_LOCALIZED_ROUNDUP_SLUGS:
                     page.unlink()
+                    tree.discard(page)
                     stats["removed_stale_roundups"] += 1
                 elif page.name != "index.html" and not (
-                    pages / "answers" / page.name
-                ).exists():
+                    _path_exists(pages / "answers" / page.name, tree)
+                ):
                     page.unlink()
+                    tree.discard(page)
                     stats["removed_orphan_answers"] += 1
 
-        for page in locale_dir.rglob("*.html"):
+        for page in tree.html_under(locale_dir):
             if rewrite_html_links(
-                page, locale_dir.name, pages, locale_names
+                page,
+                locale_dir.name,
+                pages,
+                locale_names,
+                tree,
             ):
                 stats["rewritten_html"] += 1
 
@@ -1244,30 +1494,41 @@ def cleanup(pages: Path, live_keys: set[str]) -> dict[str, int]:
     if prune_find_app(pages / "find-app.html", inactive_keys, inactive_names):
         stats["rewritten_html"] += 1
 
-    for page in pages.rglob("*.html"):
+    for page in tree.html_files:
+        if not tree.contains(page):
+            continue
         relative = page.relative_to(pages)
         if relative.parts and relative.parts[0] in locale_names:
             continue
-        if rewrite_root_html_links(page, pages, locale_names):
+        if rewrite_root_html_links(
+            page, pages, locale_names, tree
+        ):
             stats["rewritten_html"] += 1
 
-    for index_path in pages.rglob("index.html"):
-        if "_engine" in index_path.relative_to(pages).parts:
+    for index_path in tree.html_files:
+        if (
+            index_path.name != "index.html"
+            or not tree.contains(index_path)
+        ):
             continue
-        if remove_missing_index_items(index_path):
+        if remove_missing_index_items(index_path, tree):
             stats["updated_indexes"] += 1
 
     for sitemap in pages.glob("sitemap*.xml"):
         stats["removed_sitemap_urls"] += remove_missing_sitemap_urls(
-            sitemap, pages, locale_names
+            sitemap, pages, locale_names, tree
         )
     for locale_dir in locales:
         for sitemap in locale_dir.glob("sitemap*.xml"):
             stats["removed_sitemap_urls"] += remove_missing_sitemap_urls(
-                sitemap, pages, locale_names
+                sitemap, pages, locale_names, tree
             )
     stats["rewritten_retired_references"] = (
-        reconcile_retired_answer_references(pages)
+        reconcile_retired_answer_references(
+            pages,
+            tree=tree,
+            skip_html=True,
+        )
     )
     return stats
 

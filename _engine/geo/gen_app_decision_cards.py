@@ -611,17 +611,26 @@ def ensure_card(
     )
     updated = _inject_style(cleaned, style_block(site))
     updated = _inject_card(updated, card_block(key, app_id, content), answer)
-    return _write_if_changed(path, updated)
+    return _write_if_changed(path, updated, previous=source)
 
 
 def remove_card(path: Path) -> bool:
     source = path.read_text(encoding="utf-8")
     cleaned = CARD_RE.sub("\n", STYLE_RE.sub("\n", source))
-    return source != cleaned and _write_if_changed(path, cleaned)
+    return source != cleaned and _write_if_changed(
+        path, cleaned, previous=source
+    )
 
 
-def _write_if_changed(path: Path, content: str) -> bool:
-    if path.exists() and path.read_text(encoding="utf-8") == content:
+def _write_if_changed(
+    path: Path,
+    content: str,
+    *,
+    previous: str | None = None,
+) -> bool:
+    if previous is None and path.exists():
+        previous = path.read_text(encoding="utf-8")
+    if previous == content:
         return False
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")

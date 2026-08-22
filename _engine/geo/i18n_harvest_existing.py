@@ -97,8 +97,14 @@ def locale_dirs() -> list[str]:
     )
 
 
-def harvest(lang: str, verbose: bool = False, link_labels: set[str] | None = None) -> dict[str, str]:
+def harvest(
+    lang: str,
+    verbose: bool = False,
+    link_labels: set[str] | None = None,
+    english_cache: dict[str, list] | None = None,
+) -> dict[str, str]:
     link_labels = page_link_labels() if link_labels is None else link_labels
+    english_cache = {} if english_cache is None else english_cache
     en_dir = PAGES / "answers"
     loc_dir = PAGES / lang / "answers"
     votes: dict[str, collections.Counter] = collections.defaultdict(collections.Counter)
@@ -110,7 +116,12 @@ def harvest(lang: str, verbose: bool = False, link_labels: set[str] | None = Non
         if not en_path.exists():
             continue
         try:
-            _, en_spans, _ = _i18n.extract_strings(en_path.read_text(encoding="utf-8"))
+            if loc_path.name not in english_cache:
+                _, en_spans, _ = _i18n.extract_strings(
+                    en_path.read_text(encoding="utf-8")
+                )
+                english_cache[loc_path.name] = en_spans
+            en_spans = english_cache[loc_path.name]
             _, loc_spans, _ = _i18n.extract_strings(loc_path.read_text(encoding="utf-8"))
         except OSError:
             continue
@@ -161,11 +172,17 @@ def main() -> int:
         langs = [l for l in langs if l in want]
 
     labels = page_link_labels()
+    english_cache: dict[str, list] = {}
     grand = 0
     for lang in langs:
         if lang in _i18n.ENGLISH_LOCALES:
             continue
-        found = harvest(lang, verbose=True, link_labels=labels)
+        found = harvest(
+            lang,
+            verbose=True,
+            link_labels=labels,
+            english_cache=english_cache,
+        )
         path = TRANS / f"{lang}.json"
         current = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
         added = {k: v for k, v in found.items() if k not in current}

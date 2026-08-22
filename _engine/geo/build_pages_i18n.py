@@ -1236,22 +1236,40 @@ def split_keywords(kw):
     return out
 
 
+_APP_LOCALE_CACHE = {}
+
+
 def load_app_locales(key):
     fn = KEY2DATA.get(key, f"{key}_full.json")
-    stored = {}
-    if fn:
-        path = os.path.join(DATA, fn)
-        if os.path.exists(path):
-            with open(path, encoding="utf-8") as f:
-                stored = json.load(f)
+    path = os.path.join(DATA, fn) if fn else ""
+    try:
+        stat = os.stat(path)
+        file_signature = (stat.st_mtime_ns, stat.st_size)
+    except OSError:
+        file_signature = None
     curated = EXTERNAL_APP_LOCALES.get(key, {})
-    return {
+    signature = (
+        path,
+        file_signature,
+        json.dumps(curated, ensure_ascii=False, sort_keys=True),
+    )
+    cached = _APP_LOCALE_CACHE.get(key)
+    if cached is not None and cached[0] == signature:
+        return cached[1]
+
+    stored = {}
+    if file_signature is not None:
+        with open(path, encoding="utf-8") as f:
+            stored = json.load(f)
+    result = {
         locale: {
             **curated.get(locale, {}),
             **stored.get(locale, {}),
         }
         for locale in dict.fromkeys((*curated, *stored))
     }
+    _APP_LOCALE_CACHE[key] = (signature, result)
+    return result
 
 
 def _meta_from(loc_data, fallback):
@@ -1587,8 +1605,7 @@ def build_one(key, locale, all_locales):
     outdir = os.path.join(PAGES, locale)
     os.makedirs(outdir, exist_ok=True)
     out = os.path.join(outdir, f"{key}.html")
-    with open(out, "w", encoding="utf-8") as f:
-        f.write(page)
+    write_text_if_changed(out, page)
     return out
 
 
@@ -1969,6 +1986,18 @@ def locale_section_nav(locale):
     )
 
 
+def write_text_if_changed(path, content):
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            if f.read() == content:
+                return False
+    except OSError:
+        pass
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(content)
+    return True
+
+
 def build_locale_index(locale, keys, locales):
     ui = get_ui(locale)
     finder_ui = get_finder_ui(locale)
@@ -2041,8 +2070,7 @@ def build_locale_index(locale, keys, locales):
     dest = os.path.join(outdir, "index.html")
     # 一定要先讀舊檔再開 "w":open(..., "w") 會先截斷,顛倒過來就永遠讀到空檔。
     idx = carry_over_link_hub_blocks(dest, idx)
-    with open(dest, "w", encoding="utf-8") as f:
-        f.write(idx)
+    write_text_if_changed(dest, idx)
 
 
 LINK_HUB_BLOCK_RE = re.compile(
@@ -2111,8 +2139,7 @@ def build_root_index(locales):
     os.makedirs(PAGES, exist_ok=True)
     dest = os.path.join(PAGES, "index.html")
     idx = carry_over_link_hub_blocks(dest, idx)
-    with open(dest, "w", encoding="utf-8") as f:
-        f.write(idx)
+    write_text_if_changed(dest, idx)
 
 
 def build_sitemap(keys, locales):
@@ -2154,8 +2181,7 @@ def build_sitemap(keys, locales):
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
            'xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
            f"{body}\n</urlset>\n")
-    with open(os.path.join(PAGES, "sitemap.xml"), "w", encoding="utf-8") as f:
-        f.write(xml)
+    write_text_if_changed(os.path.join(PAGES, "sitemap.xml"), xml)
     return len(urls)
 
 
@@ -2178,10 +2204,11 @@ def build_robots():
                "sitemap_tools.xml", "sitemap_apps.xml", "sitemap_index.xml"):
         out.append(f"Sitemap: {SITE}/{sm}")
     txt = "\n".join(out) + "\n"
-    with open(os.path.join(PAGES, "robots.txt"), "w", encoding="utf-8") as f:
-        f.write(txt)
+    write_text_if_changed(os.path.join(PAGES, "robots.txt"), txt)
     # .nojekyll:GitHub Pages 原樣提供所有檔案(不跑 Jekyll)
-    open(os.path.join(PAGES, ".nojekyll"), "w").close()
+    nojekyll = os.path.join(PAGES, ".nojekyll")
+    if not os.path.exists(nojekyll):
+        open(nojekyll, "w").close()
 
 
 def all_locales_for(key):
@@ -2196,47 +2223,101 @@ def master_locales_for(keys):
     return list(OFFICIAL_LOCALES)
 
 
+def missing_page_keys(keys):
+    return [
+        key
+        for key in keys
+        if any(
+            not os.path.exists(os.path.join(PAGES, locale, f"{key}.html"))
+            for locale in all_locales_for(key)
+        )
+    ]
+
+
+def materialization_plan(
+    available_keys,
+    requested_keys,
+    want_locales,
+    missing_apps,
+):
+    if not available_keys:
+        raise SystemExit("No verified publicly available apps were found.")
+    if missing_apps and want_locales:
+        raise SystemExit(
+            "--missing-apps cannot be combined with positional locales."
+        )
+    keys = (
+        [key for key in requested_keys if key in available_keys]
+        if requested_keys
+        else list(available_keys)
+    )
+    if requested_keys and not keys:
+        raise SystemExit("No publicly available app pages matched the request.")
+    publication_locales = master_locales_for(available_keys)
+    render_locales = [
+        locale
+        for locale in publication_locales
+        if not want_locales or locale in want_locales
+    ]
+    if missing_apps:
+        keys = missing_page_keys(keys)
+    return keys, publication_locales, render_locales
+
+
 if __name__ == "__main__":
     cached_live = "--cached-live" in sys.argv[1:]
-    args = [x for x in sys.argv[1:] if x != "--cached-live"]
+    missing_apps = "--missing-apps" in sys.argv[1:]
+    args = [
+        x
+        for x in sys.argv[1:]
+        if x not in {"--cached-live", "--missing-apps"}
+    ]
     requested_keys = [a for a in args if a in APPS]
     want_locales = [a for a in args if a not in APPS]
     public_keys = live_app_keys(
         APPSTORE, PAGES, refresh=not cached_live
     )
     available_keys = [key for key in APPS if key in public_keys]
-    keys = [key for key in requested_keys if key in available_keys] or (
-        available_keys if not requested_keys else []
+    keys, publication_locales, render_locales = materialization_plan(
+        available_keys,
+        requested_keys,
+        want_locales,
+        missing_apps,
     )
-    if not keys:
+    if not keys and not missing_apps:
         raise SystemExit("No publicly available app pages matched the request.")
-
-    master_locales = master_locales_for(keys)
-    locales = [lc for lc in master_locales if (not want_locales or lc in want_locales)]
 
     n = 0
     for k in keys:
         app_locales = sorted(all_locales_for(k) or ["en-US"])
-        use = [lc for lc in app_locales if (not want_locales or lc in want_locales)]
+        use = [
+            locale
+            for locale in app_locales
+            if locale in render_locales
+        ]
         for lc in use:
             build_one(k, lc, app_locales)
             n += 1
         # 每語 index 只在做全部 app 時重建
-    if set(keys) == set(available_keys):
+    if missing_apps or set(keys) == set(available_keys):
         public_page_keys = [key for key in APPS if key in public_keys]
-        for lc in locales:
+        for lc in publication_locales:
             locale_keys = [
                 key
                 for key in public_page_keys
                 if os.path.exists(os.path.join(PAGES, lc, f"{key}.html"))
             ]
-            build_locale_index(lc, locale_keys, locales)
-        build_root_index(locales)
-        nurls = build_sitemap(public_page_keys, locales)
+            build_locale_index(
+                lc,
+                locale_keys,
+                publication_locales,
+            )
+        build_root_index(publication_locales)
+        nurls = build_sitemap(public_page_keys, publication_locales)
         build_robots()
         print(
             f"✅ 多語 GEO:{len(available_keys)} app = {n} 頁 + "
-            f"{len(locales)} 語 index + 根中樞"
+            f"{len(publication_locales)} 語 index + 根中樞"
         )
         print(f"   sitemap.xml({nurls} URLs)+ robots.txt + .nojekyll 已產出")
     else:

@@ -435,17 +435,24 @@ def ensure_design(path: Path, href: str) -> bool:
         + "\n"
         + cleaned[insert_index:].lstrip()
     )
-    return _write_if_changed(path, updated)
+    return _write_if_changed(path, updated, previous=source)
 
 
 def remove_design(path: Path) -> bool:
     source = path.read_text(encoding="utf-8")
     cleaned = _without_generated_block(source, path)
-    return _write_if_changed(path, cleaned)
+    return _write_if_changed(path, cleaned, previous=source)
 
 
-def _write_if_changed(path: Path, content: str) -> bool:
-    if path.exists() and path.read_text(encoding="utf-8") == content:
+def _write_if_changed(
+    path: Path,
+    content: str,
+    *,
+    previous: str | None = None,
+) -> bool:
+    if previous is None and path.exists():
+        previous = path.read_text(encoding="utf-8")
+    if previous == content:
         return False
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")

@@ -10,9 +10,12 @@ internal links. Idempotent; per-locale (same-locale tool pages + localized headi
 import os, re, glob, html, sys
 from pathlib import Path
 
-from official_locales import require_official_locale_coverage
+from official_locales import OFFICIAL_LOCALES, require_official_locale_coverage
 
-ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pages")
+ROOT = os.environ.get(
+    "GEO_PAGES",
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), "pages"),
+)
 SITE = "https://alice51849.github.io/ios-app-guide"
 SEC_RE = re.compile(r'<section class="wrap related-tools">.*?</section>', re.S)
 APP_ID_RE = re.compile(
@@ -125,39 +128,42 @@ def related_app_ids(app_id, slug):
         return BOPOMOFO_APP_IDS
     return (app_id,)
 
-def main():
-    dry = "--dry-run" in sys.argv
-    locale = ""
-    for i, a in enumerate(sys.argv):
-        if a == "--locale" and i + 1 < len(sys.argv):
-            locale = sys.argv[i + 1]
+def load_canonical_tools():
     en_tools_dir = os.path.join(ROOT, "tools")
+    tools = []
+    tool_files = glob.glob(os.path.join(en_tools_dir, "*.html"))
+    tool_files.sort(key=tool_sort_key)
+    for path in tool_files:
+        slug = os.path.basename(path)[:-5]
+        if slug == "index":
+            continue
+        source = Path(path).read_text(encoding="utf-8")
+        app_ids = appids(source)
+        if app_ids:
+            tools.append((slug, source, app_ids, get_h1(source)))
+    return tools
+
+
+def apply_locale(locale, canonical_tools, dry=False):
     ans_dir = os.path.join(ROOT, locale, "answers") if locale else os.path.join(ROOT, "answers")
     heading = HEADINGS[locale] if locale else "Free tools"
     # group tools by app id from the canonical EN /tools/ set
     by_app = {}
-    tool_files = glob.glob(os.path.join(en_tools_dir, "*.html"))
-    tool_files.sort(key=tool_sort_key)
-    for f in tool_files:
-        slug = os.path.basename(f)[:-5]
-        if slug == "index":
-            continue
-        h = Path(f).read_text(encoding="utf-8")
-        app_ids = appids(h)
-        if not app_ids:
-            continue
+    for slug, source, app_ids, en_h1 in canonical_tools:
         # link to locale tool if it exists, else EN; label from locale h1 if exists, else EN label
         loc_tool = os.path.join(ROOT, locale, "tools", f"{slug}.html") if locale else ""
         if locale and os.path.exists(loc_tool):
             url = f"{SITE}/{locale}/tools/{slug}.html"
             lbl = get_h1(Path(loc_tool).read_text(encoding="utf-8")) or label(
-                slug, get_h1(h), locale
+                slug, en_h1, locale
             )
         else:
             url = f"{SITE}/tools/{slug}.html"
             # EN page: clean English (CJK-fallback). Locale page linking an EN-only tool:
             # use the EN h1 as-is (zhuyin tool titles are Traditional Chinese, right for zh pages).
-            lbl = label(slug, get_h1(h), "") if not locale else (get_h1(h) or label(slug, None, locale))
+            lbl = label(slug, en_h1, "") if not locale else (
+                en_h1 or label(slug, None, locale)
+            )
         for app_id in app_ids:
             for related_app_id in related_app_ids(app_id, slug):
                 by_app.setdefault(related_app_id, []).append((url, lbl))
@@ -193,6 +199,21 @@ def main():
             if not dry:
                 Path(f).write_text(h2, encoding="utf-8")
     print(f"{'DRY ' if dry else ''}locale={locale or 'en'} changed={changed} / {total} pages")
+    return changed, total
+
+
+def main():
+    dry = "--dry-run" in sys.argv
+    all_official = "--all-official-locales" in sys.argv
+    locale = ""
+    for i, a in enumerate(sys.argv):
+        if a == "--locale" and i + 1 < len(sys.argv):
+            locale = sys.argv[i + 1]
+    locales = ["", *OFFICIAL_LOCALES] if all_official else [locale]
+    canonical_tools = load_canonical_tools()
+    for current_locale in locales:
+        apply_locale(current_locale, canonical_tools, dry=dry)
+    return 0
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

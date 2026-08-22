@@ -184,18 +184,20 @@ def mobile_cta_block(
 {BLOCK_END}"""
 
 
-def ensure_mobile_cta(
-    path: Path, app_id: str, script_href: str | None = None
-) -> bool:
-    source = path.read_text(encoding="utf-8")
+def render_mobile_cta(
+    path: Path,
+    source: str,
+    app_id: str,
+    script_href: str | None = None,
+) -> str:
     if "</body>" not in source:
         raise ValueError(f"Mobile App Store CTA page has no closing body: {path}")
     cleaned = BLOCK_RE.sub("\n", source)
     if gen_smart_app_banners.FREE_RESOURCE_FIRST_META in cleaned:
-        return _write_if_changed(path, cleaned)
+        return cleaned
     cta = app_store_cta(cleaned, app_id)
     if cta is None:
-        return _write_if_changed(path, cleaned)
+        return cleaned
     href, label = cta
     body_index = cleaned.index("</body>")
     share_index = cleaned.find(
@@ -211,11 +213,26 @@ def ensure_mobile_cta(
         + "\n"
         + cleaned[insert_index:].lstrip()
     )
-    return _write_if_changed(path, updated)
+    return updated
 
 
-def _write_if_changed(path: Path, content: str) -> bool:
-    if path.exists() and path.read_text(encoding="utf-8") == content:
+def ensure_mobile_cta(
+    path: Path, app_id: str, script_href: str | None = None
+) -> bool:
+    source = path.read_text(encoding="utf-8")
+    updated = render_mobile_cta(path, source, app_id, script_href)
+    return _write_if_changed(path, updated, previous=source)
+
+
+def _write_if_changed(
+    path: Path,
+    content: str,
+    *,
+    previous: str | None = None,
+) -> bool:
+    if previous is None and path.exists():
+        previous = path.read_text(encoding="utf-8")
+    if previous == content:
         return False
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
@@ -226,15 +243,20 @@ def generate(
     pages: Path = PAGES,
     live_keys: set[str] | None = None,
     site: str = SITE,
+    *,
+    inventory: gen_smart_app_banners.SurfaceInventory | None = None,
 ) -> dict[str, int]:
-    if live_keys is None:
-        live_keys = set(live_app_keys(APPSTORE, str(pages), refresh=False))
-    targets, app_count = gen_smart_app_banners.build_install_targets(
-        pages, set(live_keys), site
-    )
-    guide_pages = gen_smart_app_banners._guide_pages(pages)
-    answer_pages = gen_smart_app_banners._answer_pages(pages)
-    buyer_intent_pages = gen_smart_app_banners._buyer_intent_pages(pages)
+    if inventory is None:
+        if live_keys is None:
+            live_keys = set(live_app_keys(APPSTORE, str(pages), refresh=False))
+        inventory = gen_smart_app_banners.build_surface_inventory(
+            pages, set(live_keys), site
+        )
+    targets = inventory.targets
+    app_count = inventory.app_count
+    guide_pages = set(inventory.guide_pages)
+    answer_pages = set(inventory.answer_pages)
+    buyer_intent_pages = set(inventory.buyer_intent_pages)
     eligible_pages = guide_pages | buyer_intent_pages
     mobile_targets = {
         path: app_id for path, app_id in targets.items() if path in eligible_pages
@@ -244,15 +266,25 @@ def generate(
     installed: set[Path] = set()
     installed_ids: set[str] = set()
     for path, app_id in sorted(mobile_targets.items()):
-        changed += int(ensure_mobile_cta(path, app_id, script_href))
-        if BLOCK_RE.search(path.read_text(encoding="utf-8")):
+        source = path.read_text(encoding="utf-8")
+        updated = render_mobile_cta(path, source, app_id, script_href)
+        changed += int(
+            _write_if_changed(path, updated, previous=source)
+        )
+        if BLOCK_RE.search(updated):
             installed.add(path)
             installed_ids.add(app_id)
 
     for path in sorted(eligible_pages - set(mobile_targets)):
         source = path.read_text(encoding="utf-8")
         if BLOCK_RE.search(source):
-            changed += int(_write_if_changed(path, BLOCK_RE.sub("\n", source)))
+            changed += int(
+                _write_if_changed(
+                    path,
+                    BLOCK_RE.sub("\n", source),
+                    previous=source,
+                )
+            )
 
     expected_ids = {
         app_id for path, app_id in mobile_targets.items() if path in guide_pages

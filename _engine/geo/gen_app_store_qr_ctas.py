@@ -359,16 +359,16 @@ def card_block(
 {CARD_BLOCK_END}"""
 
 
-def ensure_qr_card(
+def render_qr_card(
     path: Path,
+    source: str,
     app_id: str,
     href: str,
     label: str,
     stylesheet_href: str,
     image_href: str,
     locale: str = "en-US",
-) -> bool:
-    source = path.read_text(encoding="utf-8")
+) -> str:
     if "</head>" not in source or "</body>" not in source:
         raise ValueError(f"App Store QR page is missing head or body: {path}")
     cleaned = HEAD_BLOCK_RE.sub("\n", CARD_BLOCK_RE.sub("\n", source))
@@ -406,17 +406,50 @@ def ensure_qr_card(
         + "\n"
         + with_style[main_index:].lstrip()
     )
-    return _write_if_changed(path, updated)
+    return updated
+
+
+def ensure_qr_card(
+    path: Path,
+    app_id: str,
+    href: str,
+    label: str,
+    stylesheet_href: str,
+    image_href: str,
+    locale: str = "en-US",
+    *,
+    source: str | None = None,
+) -> bool:
+    if source is None:
+        source = path.read_text(encoding="utf-8")
+    updated = render_qr_card(
+        path,
+        source,
+        app_id,
+        href,
+        label,
+        stylesheet_href,
+        image_href,
+        locale,
+    )
+    return _write_if_changed(path, updated, previous=source)
 
 
 def remove_qr_card(path: Path) -> bool:
     source = path.read_text(encoding="utf-8")
     updated = HEAD_BLOCK_RE.sub("\n", CARD_BLOCK_RE.sub("\n", source))
-    return _write_if_changed(path, updated)
+    return _write_if_changed(path, updated, previous=source)
 
 
-def _write_if_changed(path: Path, content: str) -> bool:
-    if path.exists() and path.read_text(encoding="utf-8") == content:
+def _write_if_changed(
+    path: Path,
+    content: str,
+    *,
+    previous: str | None = None,
+) -> bool:
+    if previous is None and path.exists():
+        previous = path.read_text(encoding="utf-8")
+    if previous == content:
         return False
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
@@ -459,40 +492,44 @@ def generate(
     pages: Path = PAGES,
     live_keys: set[str] | None = None,
     site: str = SITE,
+    *,
+    inventory: gen_smart_app_banners.SurfaceInventory | None = None,
 ) -> dict[str, int]:
-    if live_keys is None:
-        live_keys = set(live_app_keys(APPSTORE, str(pages), refresh=False))
-    targets, app_count = gen_smart_app_banners.build_install_targets(
-        pages, set(live_keys), site
-    )
-    guide_pages = gen_smart_app_banners._guide_pages(pages)
-    answer_pages = gen_smart_app_banners._answer_pages(pages)
-    buyer_intent_pages = gen_smart_app_banners._buyer_intent_pages(pages)
+    if inventory is None:
+        if live_keys is None:
+            live_keys = set(live_app_keys(APPSTORE, str(pages), refresh=False))
+        inventory = gen_smart_app_banners.build_surface_inventory(
+            pages, set(live_keys), site
+        )
+    targets = inventory.targets
+    app_count = inventory.app_count
+    guide_pages = set(inventory.guide_pages)
+    answer_pages = set(inventory.answer_pages)
+    buyer_intent_pages = set(inventory.buyer_intent_pages)
     eligible_pages = guide_pages | buyer_intent_pages
     qr_targets = {
         path: app_id for path, app_id in targets.items() if path in eligible_pages
     }
-    prepared: dict[Path, tuple[str, str, str]] = {}
+    prepared: dict[Path, tuple[str, str, str, str]] = {}
     for path, app_id in sorted(qr_targets.items()):
-        cta = gen_mobile_store_ctas.app_store_cta(
-            path.read_text(encoding="utf-8"), app_id
-        )
+        source = path.read_text(encoding="utf-8")
+        cta = gen_mobile_store_ctas.app_store_cta(source, app_id)
         if cta is None:
             raise ValueError(f"App Store QR page has no direct app link: {path}")
-        prepared[path] = (app_id, *cta)
+        prepared[path] = (app_id, *cta, source)
 
-    app_ids = {app_id for app_id, _, _ in prepared.values()}
+    app_ids = {app_id for app_id, _, _, _ in prepared.values()}
     if len(app_ids) != app_count:
         raise ValueError(
             f"App Store QR coverage mismatch: {len(app_ids)}/{app_count} apps"
         )
     stylesheet_href = _site_asset_href(site, STYLESHEET_RELATIVE)
     qr_assets = {
-        (app_id, href) for app_id, href, _ in prepared.values()
+        (app_id, href) for app_id, href, _, _ in prepared.values()
     }
     changed = sync_assets(pages, qr_assets)
     installed: set[Path] = set()
-    for path, (app_id, href, label) in sorted(prepared.items()):
+    for path, (app_id, href, label, source) in sorted(prepared.items()):
         image_href = _site_asset_href(
             site, qr_asset_relative(app_id, href)
         )
@@ -505,6 +542,7 @@ def generate(
                 stylesheet_href,
                 image_href,
                 page_locale(path, pages),
+                source=source,
             )
         )
         installed.add(path)

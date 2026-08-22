@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from dataclasses import dataclass
 import os
 from pathlib import Path
 import re
@@ -78,8 +79,19 @@ RESERVED_TOP_LEVEL_DIRS = {"api"}
 BUYER_INTENT_SECTIONS = ("answers", "alternatives", "hubs")
 
 
-def _is_noindex_redirect(path: Path) -> bool:
-    head = path.read_text(encoding="utf-8", errors="replace")[:4096].lower()
+@dataclass(frozen=True)
+class SurfaceInventory:
+    targets: dict[Path, str]
+    app_count: int
+    guide_pages: frozenset[Path]
+    answer_pages: frozenset[Path]
+    buyer_intent_pages: frozenset[Path]
+
+
+def _is_noindex_redirect(path: Path, source: str | None = None) -> bool:
+    if source is None:
+        source = path.read_text(encoding="utf-8", errors="replace")
+    head = source[:4096].lower()
     return 'http-equiv="refresh"' in head and bool(
         re.search(
             r'<meta\b[^>]*\bname=["\']robots["\'][^>]*'
@@ -123,8 +135,9 @@ def _add_single_app_targets(
     live_ids: set[str],
 ) -> None:
     for path in paths:
-        app_id = single_app_id(path, live_ids)
-        if app_id is None:
+        source = path.read_text(encoding="utf-8")
+        app_id = single_app_id(path, live_ids, source)
+        if app_id is None or _is_noindex_redirect(path, source):
             continue
         existing = targets.get(path)
         if existing and existing != app_id:
@@ -135,8 +148,16 @@ def _add_single_app_targets(
         targets[path] = app_id
 
 
-def single_app_id(path: Path, live_ids: set[str]) -> str | None:
-    source = _unmanaged_source(path)
+def single_app_id(
+    path: Path,
+    live_ids: set[str],
+    source: str | None = None,
+) -> str | None:
+    source = (
+        unmanaged_app_store_source(source)
+        if source is not None
+        else _unmanaged_source(path)
+    )
     if FREE_RESOURCE_FIRST_META in source:
         return None
     app_ids = direct_app_store_ids(source, path)
@@ -191,16 +212,16 @@ def build_targets(
             )
         targets[path] = app_id
 
-    _add_single_app_targets(
-        targets,
-        _answer_pages(pages),
-        {APPSTORE[key] for key in live_keys},
-    )
     targets = {
         path: app_id
         for path, app_id in targets.items()
         if not _is_noindex_redirect(path)
     }
+    _add_single_app_targets(
+        targets,
+        _answer_pages(pages),
+        {APPSTORE[key] for key in live_keys},
+    )
     return targets, len(records)
 
 
@@ -213,20 +234,15 @@ def build_install_targets(
         _alternative_pages(pages) | _hub_pages(pages),
         {APPSTORE[key] for key in live_keys},
     )
-    return {
-        path: app_id
-        for path, app_id in targets.items()
-        if not _is_noindex_redirect(path)
-    }, app_count
+    return targets, app_count
 
 
-def ensure_banner(path: Path, app_id: str) -> bool:
-    source = path.read_text(encoding="utf-8")
+def render_banner(path: Path, source: str, app_id: str) -> str:
     if "</head>" not in source:
         raise ValueError(f"Smart App Banner guide has no closing head: {path}")
     cleaned = BLOCK_RE.sub("\n", source)
     if FREE_RESOURCE_FIRST_META in cleaned:
-        return _write_if_changed(path, cleaned)
+        return cleaned
     linkset_match = gen_linkset.DISCOVERY_RE.search(cleaned)
     social_indices = (
         cleaned.find("<!-- social-preview:start -->"),
@@ -254,7 +270,13 @@ def ensure_banner(path: Path, app_id: str) -> bool:
         + "\n"
         + cleaned[insert_index:].lstrip()
     )
-    return _write_if_changed(path, updated)
+    return updated
+
+
+def ensure_banner(path: Path, app_id: str) -> bool:
+    source = path.read_text(encoding="utf-8")
+    updated = render_banner(path, source, app_id)
+    return _write_if_changed(path, updated, previous=source)
 
 
 def _localized_app_pages(pages: Path, app_keys: set[str]) -> set[Path]:
@@ -325,8 +347,30 @@ def _buyer_intent_pages(pages: Path) -> set[Path]:
     return set().union(*pages_by_section)
 
 
-def _write_if_changed(path: Path, content: str) -> bool:
-    if path.exists() and path.read_text(encoding="utf-8") == content:
+def build_surface_inventory(
+    pages: Path,
+    live_keys: set[str],
+    site: str = SITE,
+) -> SurfaceInventory:
+    targets, app_count = build_install_targets(pages, live_keys, site)
+    return SurfaceInventory(
+        targets=targets,
+        app_count=app_count,
+        guide_pages=frozenset(_guide_pages(pages)),
+        answer_pages=frozenset(_answer_pages(pages)),
+        buyer_intent_pages=frozenset(_buyer_intent_pages(pages)),
+    )
+
+
+def _write_if_changed(
+    path: Path,
+    content: str,
+    *,
+    previous: str | None = None,
+) -> bool:
+    if previous is None and path.exists():
+        previous = path.read_text(encoding="utf-8")
+    if previous == content:
         return False
     path.write_text(content, encoding="utf-8")
     return True
@@ -344,13 +388,18 @@ def generate(
     pages: Path = PAGES,
     live_keys: set[str] | None = None,
     site: str = SITE,
+    *,
+    inventory: SurfaceInventory | None = None,
 ) -> dict[str, int]:
-    if live_keys is None:
-        live_keys = set(live_app_keys(APPSTORE, str(pages), refresh=False))
-    targets, app_count = build_install_targets(pages, set(live_keys), site)
-    guide_pages = _guide_pages(pages)
-    answer_pages = _answer_pages(pages)
-    buyer_intent_pages = _buyer_intent_pages(pages)
+    if inventory is None:
+        if live_keys is None:
+            live_keys = set(live_app_keys(APPSTORE, str(pages), refresh=False))
+        inventory = build_surface_inventory(pages, set(live_keys), site)
+    targets = inventory.targets
+    app_count = inventory.app_count
+    guide_pages = set(inventory.guide_pages)
+    answer_pages = set(inventory.answer_pages)
+    buyer_intent_pages = set(inventory.buyer_intent_pages)
     changed = 0
     for path in sorted(targets):
         changed += int(ensure_banner(path, targets[path]))
@@ -358,7 +407,13 @@ def generate(
     for path in sorted((guide_pages | buyer_intent_pages) - set(targets)):
         source = path.read_text(encoding="utf-8")
         if BLOCK_RE.search(source):
-            changed += int(_write_if_changed(path, BLOCK_RE.sub("\n", source)))
+            changed += int(
+                _write_if_changed(
+                    path,
+                    BLOCK_RE.sub("\n", source),
+                    previous=source,
+                )
+            )
 
     languages = {_page_language(path, pages) for path in targets}
     return {

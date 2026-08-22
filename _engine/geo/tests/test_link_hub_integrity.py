@@ -149,11 +149,11 @@ class RewriteSurvivalTests(unittest.TestCase):
             )
 
     def test_carry_over_is_read_before_truncate(self):
-        """讀舊檔一定要在 open(..., "w") 之前 —— 顛倒過來永遠讀到空檔。"""
+        """Read the old hub blocks before the idempotent write decision."""
         source = inspect_source(build_pages_i18n, "build_locale_index")
         carry = source.index("carry_over_link_hub_blocks(dest")
-        truncate = source.index('open(dest, "w"')
-        self.assertLess(carry, truncate)
+        write = source.index("write_text_if_changed(dest")
+        self.assertLess(carry, write)
 
 
 def inspect_source(module, func_name):

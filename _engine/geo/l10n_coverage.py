@@ -110,6 +110,14 @@ def locale_dirs() -> list[str]:
 
 def page_coverage(en_src: str, loc_src: str, lang: str) -> tuple[int, int, float | None]:
     en_strings, _, _ = extract_strings(en_src)
+    return page_coverage_from_english_strings(en_strings, loc_src, lang)
+
+
+def page_coverage_from_english_strings(
+    en_strings: list[str],
+    loc_src: str,
+    lang: str,
+) -> tuple[int, int, float | None]:
     loc_strings, _, _ = extract_strings(loc_src)
     en_set = set(en_strings)
     total = 0
@@ -140,6 +148,7 @@ def main() -> int:
 
     en_dir = PAGES / "answers"
     en_slugs = sorted(p.stem for p in en_dir.glob("*.html"))
+    english_cache: dict[str, list[str]] = {}
 
     rows = []
     for lang in langs:
@@ -155,11 +164,19 @@ def main() -> int:
         fully_en = 0
         for s in slugs:
             try:
-                en_src = (en_dir / f"{s}.html").read_text(encoding="utf-8")
+                if s not in english_cache:
+                    en_src = (en_dir / f"{s}.html").read_text(
+                        encoding="utf-8"
+                    )
+                    english_cache[s] = extract_strings(en_src)[0]
                 loc_src = (d / f"{s}.html").read_text(encoding="utf-8")
             except OSError:
                 continue
-            t, u, nr = page_coverage(en_src, loc_src, lang)
+            t, u, nr = page_coverage_from_english_strings(
+                english_cache[s],
+                loc_src,
+                lang,
+            )
             tot += t
             unt += u
             if nr is not None:

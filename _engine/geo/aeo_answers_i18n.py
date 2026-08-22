@@ -2685,8 +2685,23 @@ def finalize_html(source: str, lang: str, slug: str) -> str:
     return ensure_locale_meta(source, lang, slug)
 
 
-def render_localized(source: str, lang: str, slug: str, mapping: dict[str, str]) -> str:
-    strings, spans, json_spans = extract_strings(source)
+def render_localized(
+    source: str,
+    lang: str,
+    slug: str,
+    mapping: dict[str, str],
+    *,
+    strings: list[str] | None = None,
+    spans: list[tuple[int, int, str, str]] | None = None,
+    json_spans: list[tuple[int, int, str]] | None = None,
+) -> str:
+    parsed = (strings, spans, json_spans)
+    if all(value is None for value in parsed):
+        strings, spans, json_spans = extract_strings(source)
+    elif any(value is None for value in parsed):
+        raise ValueError(
+            "render_localized requires strings, spans and json_spans together"
+        )
 
     replacements: list[tuple[int, int, str]] = []
     for start, end, original, kind in spans:
@@ -2773,7 +2788,7 @@ def run_refresh(
         if not src_path.exists():
             continue
         source = src_path.read_text(encoding="utf-8")
-        strings, _, _ = extract_strings(source)
+        strings, spans, json_spans = extract_strings(source)
         slug_touched = False
         for lang in langs:
             if lang in ENGLISH_LOCALES:
@@ -2795,7 +2810,15 @@ def run_refresh(
                 unchanged += 1
                 continue
             try:
-                localized = render_localized(source, lang, slug, mapping)
+                localized = render_localized(
+                    source,
+                    lang,
+                    slug,
+                    mapping,
+                    strings=strings,
+                    spans=spans,
+                    json_spans=json_spans,
+                )
                 target.write_text(localized, encoding="utf-8")
                 improved += 1
                 slug_touched = True
@@ -3002,6 +3025,7 @@ def main() -> int:
             failed += len(langs)
             continue
         source = src_path.read_text(encoding="utf-8")
+        strings, spans, json_spans = extract_strings(source)
         for lang in langs:
             target = ROOT / lang / "answers" / f"{slug}.html"
             if target.exists() and not args.force:
@@ -3010,7 +3034,6 @@ def main() -> int:
                 continue
             try:
                 if args.trans:
-                    strings, _, _ = extract_strings(source)
                     if lang in ENGLISH_LOCALES:
                         mapping = {s: s for s in strings}
                         miss = []
@@ -3025,7 +3048,6 @@ def main() -> int:
                         print(f"incomplete {lang}/{slug}.html — 缺 {len(miss)} 字串,略過", flush=True)
                         continue
                 else:
-                    strings, _, _ = extract_strings(source)
                     mapping = (
                         english_mapping(strings, lang)
                         if lang in ENGLISH_LOCALES
@@ -3052,7 +3074,15 @@ def main() -> int:
                 mapping = apply_locale_text_overrides(mapping, lang)
                 require_complete_mapping(strings, mapping, slug, lang)
                 require_translation_quality(strings, mapping, slug, lang)
-                localized = render_localized(source, lang, slug, mapping)
+                localized = render_localized(
+                    source,
+                    lang,
+                    slug,
+                    mapping,
+                    strings=strings,
+                    spans=spans,
+                    json_spans=json_spans,
+                )
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_text(localized, encoding="utf-8")
                 created += 1

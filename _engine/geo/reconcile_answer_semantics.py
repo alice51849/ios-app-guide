@@ -290,8 +290,10 @@ def planned_page_metadata_repair(
     path: Path,
     force: bool = False,
     english: bool = True,
+    source: str | None = None,
 ) -> str | None:
-    source = path.read_text(encoding="utf-8")
+    if source is None:
+        source = path.read_text(encoding="utf-8")
     if aeo_answers.is_redirect_html(source):
         return None
     old_description = meta_description(source)
@@ -373,8 +375,13 @@ def _localized_copies(pages: Path, slug: str) -> list[Path]:
     ]
 
 
-def refresh_cross_topic_page(path: Path, pages: Path) -> bool:
-    source = path.read_text(encoding="utf-8")
+def refresh_cross_topic_page(
+    path: Path,
+    pages: Path,
+    source: str | None = None,
+) -> bool:
+    if source is None:
+        source = path.read_text(encoding="utf-8")
     if not has_cross_topic_passport_content(source):
         return False
     localized = _localized_copies(pages, path.stem)
@@ -408,131 +415,151 @@ def refresh_cross_topic_page(path: Path, pages: Path) -> bool:
     return True
 
 
-def audit_pages(pages: Path = PAGES) -> list[dict[str, str]]:
-    issues: list[dict[str, str]] = []
-    for path in _english_answer_paths(pages):
-        source = path.read_text(encoding="utf-8")
-        if aeo_answers.is_redirect_html(source):
-            continue
-        try:
-            description = meta_description(source)
-            if is_malformed_meta(description):
-                issues.append(
-                    {
-                        "path": str(path),
-                        "code": "malformed-meta",
-                        "detail": description,
-                    }
-                )
-            if has_cross_topic_passport_content(source):
-                issues.append(
-                    {
-                        "path": str(path),
-                        "code": "cross-topic-passport",
-                        "detail": _element_text(source, "h1"),
-                    }
-                )
-            unexpected_apps = unexpected_portfolio_apps_in_lead(source, path)
-            if unexpected_apps:
-                issues.append(
-                    {
-                        "path": str(path),
-                        "code": "cross-app-lead",
-                        "detail": ", ".join(unexpected_apps),
-                    }
-                )
-        except ValueError as exc:
+def _audit_english_source(
+    issues: list[dict[str, str]],
+    path: Path,
+    source: str,
+) -> None:
+    if aeo_answers.is_redirect_html(source):
+        return
+    try:
+        description = meta_description(source)
+        if is_malformed_meta(description):
             issues.append(
                 {
                     "path": str(path),
-                    "code": "invalid-answer",
-                    "detail": str(exc),
+                    "code": "malformed-meta",
+                    "detail": description,
                 }
             )
+        if has_cross_topic_passport_content(source):
+            issues.append(
+                {
+                    "path": str(path),
+                    "code": "cross-topic-passport",
+                    "detail": _element_text(source, "h1"),
+                }
+            )
+        unexpected_apps = unexpected_portfolio_apps_in_lead(source, path)
+        if unexpected_apps:
+            issues.append(
+                {
+                    "path": str(path),
+                    "code": "cross-app-lead",
+                    "detail": ", ".join(unexpected_apps),
+                }
+            )
+    except ValueError as exc:
+        issues.append(
+            {
+                "path": str(path),
+                "code": "invalid-answer",
+                "detail": str(exc),
+            }
+        )
+
+
+def _audit_localized_source(
+    issues: list[dict[str, str]],
+    path: Path,
+    source: str,
+    locale: str,
+) -> None:
+    if aeo_answers.is_redirect_html(source):
+        return
+    try:
+        description = meta_description(source)
+        if is_malformed_localized_meta(
+            description,
+            locale,
+            answer_lead(source),
+        ):
+            issues.append(
+                {
+                    "path": str(path),
+                    "code": "malformed-localized-meta",
+                    "detail": description,
+                }
+            )
+        expected_microformat = aeo_answers_i18n.reconcile_microformat_url(
+            source,
+            locale,
+            path.stem,
+        )
+        if expected_microformat != source:
+            issues.append(
+                {
+                    "path": str(path),
+                    "code": "localized-microformat-url",
+                    "detail": aeo_answers_i18n.page_url(
+                        path.stem,
+                        locale,
+                    ),
+                }
+            )
+        structured_data_issues = localized_structured_data_url_issues(source)
+        if structured_data_issues:
+            issues.append(
+                {
+                    "path": str(path),
+                    "code": "localized-structured-data-url",
+                    "detail": ", ".join(structured_data_issues),
+                }
+            )
+        unexpected_apps = unexpected_portfolio_apps_in_lead(source, path)
+        if unexpected_apps:
+            issues.append(
+                {
+                    "path": str(path),
+                    "code": "cross-app-localized-lead",
+                    "detail": ", ".join(unexpected_apps),
+                }
+            )
+    except ValueError as exc:
+        issues.append(
+            {
+                "path": str(path),
+                "code": "invalid-localized-answer",
+                "detail": str(exc),
+            }
+        )
+
+
+def audit_pages(pages: Path = PAGES) -> list[dict[str, str]]:
+    issues: list[dict[str, str]] = []
+    for path in _english_answer_paths(pages):
+        _audit_english_source(
+            issues,
+            path,
+            path.read_text(encoding="utf-8"),
+        )
     for directory in _localized_answer_dirs(pages):
         locale = directory.parent.name
         for path in sorted(directory.glob("*.html")):
-            if path.name == "index.html":
-                continue
-            source = path.read_text(encoding="utf-8")
-            if aeo_answers.is_redirect_html(source):
-                continue
-            try:
-                description = meta_description(source)
-                if is_malformed_localized_meta(
-                    description,
-                    locale,
-                    answer_lead(source),
-                ):
-                    issues.append(
-                        {
-                            "path": str(path),
-                            "code": "malformed-localized-meta",
-                            "detail": description,
-                        }
-                    )
-                expected_microformat = (
-                    aeo_answers_i18n.reconcile_microformat_url(
-                        source,
-                        locale,
-                        path.stem,
-                    )
-                )
-                if expected_microformat != source:
-                    issues.append(
-                        {
-                            "path": str(path),
-                            "code": "localized-microformat-url",
-                            "detail": aeo_answers_i18n.page_url(
-                                path.stem,
-                                locale,
-                            ),
-                        }
-                    )
-                structured_data_issues = localized_structured_data_url_issues(
-                    source
-                )
-                if structured_data_issues:
-                    issues.append(
-                        {
-                            "path": str(path),
-                            "code": "localized-structured-data-url",
-                            "detail": ", ".join(structured_data_issues),
-                        }
-                    )
-                unexpected_apps = unexpected_portfolio_apps_in_lead(
-                    source,
+            if path.name != "index.html":
+                _audit_localized_source(
+                    issues,
                     path,
-                )
-                if unexpected_apps:
-                    issues.append(
-                        {
-                            "path": str(path),
-                            "code": "cross-app-localized-lead",
-                            "detail": ", ".join(unexpected_apps),
-                        }
-                    )
-            except ValueError as exc:
-                issues.append(
-                    {
-                        "path": str(path),
-                        "code": "invalid-localized-answer",
-                        "detail": str(exc),
-                    }
+                    path.read_text(encoding="utf-8"),
+                    locale,
                 )
     return issues
 
 
 def repair(pages: Path = PAGES) -> dict[str, int]:
     english_paths = _english_answer_paths(pages)
-    refreshed = sum(
-        int(refresh_cross_topic_page(path, pages)) for path in english_paths
-    )
+    refreshed = 0
     operations: list[tuple[Path, str, bool]] = []
-    for path in _english_answer_paths(pages):
-        updated = planned_page_metadata_repair(path)
+    issues: list[dict[str, str]] = []
+    for path in english_paths:
+        source = path.read_text(encoding="utf-8")
+        if refresh_cross_topic_page(path, pages, source):
+            refreshed += 1
+            source = path.read_text(encoding="utf-8")
+        updated = planned_page_metadata_repair(path, source=source)
         if updated is not None:
             operations.append((path, updated, True))
+        _audit_english_source(issues, path, updated or source)
     localized_metadata = 0
     localized_microformats = 0
     localized_structured_data = 0
@@ -541,17 +568,15 @@ def repair(pages: Path = PAGES) -> dict[str, int]:
         for path in sorted(directory.glob("*.html")):
             if path.name == "index.html":
                 continue
+            source = path.read_text(encoding="utf-8")
             updated = planned_page_metadata_repair(
                 path,
                 english=False,
+                source=source,
             )
-            source = (
-                updated
-                if updated is not None
-                else path.read_text(encoding="utf-8")
-            )
+            metadata_source = updated if updated is not None else source
             reconciled = aeo_answers_i18n.reconcile_microformat_url(
-                source,
+                metadata_source,
                 locale,
                 path.stem,
             )
@@ -562,19 +587,19 @@ def repair(pages: Path = PAGES) -> dict[str, int]:
             )
             if updated is not None:
                 localized_metadata += 1
-            if reconciled != source:
+            if reconciled != metadata_source:
                 localized_microformats += 1
             if structured != reconciled:
                 localized_structured_data += 1
             if updated is not None or structured != source:
                 operations.append((path, structured, False))
+            _audit_localized_source(issues, path, structured, locale)
     for path, updated, _ in operations:
         path.write_text(updated, encoding="utf-8")
     english_metadata = sum(int(english) for _, _, english in operations)
     if refreshed:
         aeo_answers.regenerate_index(pages)
         aeo_answers.write_sitemap(pages)
-    issues = audit_pages(pages)
     if issues:
         sample = json.dumps(issues[:10], ensure_ascii=False, indent=2)
         raise RuntimeError(

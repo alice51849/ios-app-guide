@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://alice51849.github.io/ios-app-guide/visuals/",
-  "dateModified": "2026-08-21",
+  "dateModified": "2026-08-22",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -11,7 +11,7 @@
   },
   "source_dataset": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
   "content_digest": "8cbf65b8a0faac71c12a6c996a07047f1eab7415eb7c836e5826171578f0f540",
-  "generation_digest": "3603ffafb6b632cb54b5602e3b032bb8637351589a0046e190236bc38ec3a465",
+  "generation_digest": "9e6ca37a705f7f7f875c24a4f85f0ba8ccbb02ca2329af1ae0ac63fb6b083899",
   "ordering": "official_locale_order_then_alphabetical_app_name",
   "app_count": 43,
   "locale_count": 50,
@@ -22,6 +22,7 @@
   "is_ranking": false,
   "app_store_link_policy": {
     "default": "clean_direct",
+    "campaign_scope": "per_locale_visual",
     "campaign_requires": [
       "pt",
       "ct",

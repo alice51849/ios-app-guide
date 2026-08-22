@@ -16,7 +16,9 @@ token `iag_decision`,於是 QR 圖鎖在 `ct=iag_decision`、按鈕卻被改成
    失步的當下**就炸掉並指名頁面,而不是留給下游閘門去猜。
 """
 import os
+import pathlib
 import sys
+import tempfile
 import unittest
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -191,6 +193,60 @@ class QrEligiblePageFamilyTests(unittest.TestCase):
                 os.environ[
                     gen_store_attribution.PROVIDER_TOKEN_ENV
                 ] = previous
+
+    def test_publisher_visual_campaigns_are_not_restamped(self):
+        visual_url = (
+            "https://apps.apple.com/us/app/id6791658210"
+            "?pt=118326163&amp;ct=iag_visual_en_us&amp;mt=8"
+        )
+        guide_url = "https://apps.apple.com/us/app/id6791658210"
+        with tempfile.TemporaryDirectory() as tmp:
+            root = pathlib.Path(tmp)
+            visual_paths = (
+                root / "visuals" / "index.html",
+                root / "ja" / "visuals" / "index.html",
+            )
+            for path in visual_paths:
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(
+                    f'<a href="{visual_url}">Visual</a>',
+                    encoding="utf-8",
+                )
+            guide = root / "guides" / "page.html"
+            guide.parent.mkdir()
+            guide.write_text(
+                f'<a href="{guide_url}">Guide</a>',
+                encoding="utf-8",
+            )
+
+            previous = os.environ.get(
+                gen_store_attribution.PROVIDER_TOKEN_ENV
+            )
+            os.environ[
+                gen_store_attribution.PROVIDER_TOKEN_ENV
+            ] = "118326163"
+            try:
+                result = gen_store_attribution.generate(root, check=False)
+            finally:
+                if previous is None:
+                    os.environ.pop(
+                        gen_store_attribution.PROVIDER_TOKEN_ENV, None
+                    )
+                else:
+                    os.environ[
+                        gen_store_attribution.PROVIDER_TOKEN_ENV
+                    ] = previous
+
+            for path in visual_paths:
+                self.assertIn(
+                    "ct=iag_visual_en_us",
+                    path.read_text(encoding="utf-8"),
+                )
+            self.assertIn(
+                "ct=geo_learn",
+                guide.read_text(encoding="utf-8"),
+            )
+            self.assertEqual(1, result["pages_with_store_anchors"])
 
 
 class QrCardDesyncGuardTests(unittest.TestCase):

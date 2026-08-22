@@ -18,9 +18,8 @@ Rules that keep it safe:
     feeds and APIs keep the clean canonical URL, because a tracking query string
     there would break entity identity for search and AI engines.
   • Generator-minted campaigns are re-stamped (see "single authority" below),
-    except the ones in ``PROTECTED_CAMPAIGNS`` — today only Web Stories'
-    ``iag_story``, which ``validate_webstories.py`` checks against the Smart App
-    Banner meta tag.
+    except publisher-managed surfaces: Web Stories own ``iag_story`` and the
+    localized visual collection owns ``iag_visual_<locale>``.
   • The original ``&`` / ``&amp;`` escaping of the href is preserved, so the
     rewrite never changes how a page is parsed.
 
@@ -49,10 +48,16 @@ from app_store_storefronts import (  # noqa: E402
 )
 
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
-# Web Stories carry their own per-surface campaign (iag_story), which their
-# AMP gate verifies against the Smart App Banner meta tag; re-stamping them
-# here would break that contract for no measurement gain.
-EXCLUDED_PARTS = {".git", "_engine", "node_modules", "stories"}
+# Web Stories and publisher intent visuals carry their own per-surface
+# campaigns. Their generators and gates validate those links as atomic
+# collections, so a generic final pass must not mutate them.
+EXCLUDED_PARTS = {
+    ".git",
+    "_engine",
+    "node_modules",
+    "stories",
+    "visuals",
+}
 ANCHOR_HREF_RE = re.compile(
     r'(?P<prefix><a\b[^>]*?\bhref=")'
     r"(?P<url>https://apps\.apple\.com/[^\"]*)"

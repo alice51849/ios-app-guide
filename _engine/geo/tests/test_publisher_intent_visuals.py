@@ -30,6 +30,28 @@ import publisher_intent_visuals as visuals
 
 
 class PublisherIntentVisualUnitTests(unittest.TestCase):
+    def test_gallery_writer_preserves_standard_site_discovery(self) -> None:
+        publication = (
+            '<link rel="site.standard.publication" '
+            'href="at://did:plc:publisher/site.standard.publication/record">'
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "visuals" / "index.html"
+            path.parent.mkdir()
+            path.write_text(
+                f"<html><head>{publication}</head><body>Old</body></html>",
+                encoding="utf-8",
+            )
+            self.assertTrue(
+                visuals.write_gallery_if_changed(
+                    path,
+                    "<html><head></head><body>New</body></html>",
+                )
+            )
+            rendered = path.read_text(encoding="utf-8")
+            self.assertIn(publication, rendered)
+            self.assertIn("<body>New</body>", rendered)
+
     def test_campaign_tokens_are_unique_and_app_store_safe(self) -> None:
         tokens = [
             visuals.visual_campaign_token(locale)
@@ -191,6 +213,7 @@ class PublisherIntentVisualOutputTests(unittest.TestCase):
         self.assertEqual(
             {
                 "default": "clean_direct",
+                "campaign_scope": "per_locale_visual",
                 "campaign_requires": ["pt", "ct", "mt=8"],
             },
             self.manifest["app_store_link_policy"],

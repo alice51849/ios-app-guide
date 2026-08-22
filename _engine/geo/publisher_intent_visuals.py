@@ -25,6 +25,7 @@ from app_store_storefronts import (
 from gen_feed import feed_discovery_links
 from official_locales import OFFICIAL_LOCALES
 import publisher_intent_catalog as catalog
+import sync_standard_site
 
 
 HERE = Path(__file__).resolve().parent
@@ -66,6 +67,20 @@ def write_text_if_changed(path: Path, content: str) -> bool:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
     return True
+
+
+def write_gallery_if_changed(path: Path, content: str) -> bool:
+    try:
+        previous = path.read_text(encoding="utf-8")
+    except FileNotFoundError:
+        previous = ""
+    if previous:
+        content = sync_standard_site.preserve_managed_links(
+            previous,
+            content,
+            label=str(path),
+        )
+    return write_text_if_changed(path, content)
 
 
 def visual_campaign_token(locale: str) -> str:
@@ -858,7 +873,7 @@ def build(
 
     root_records = records_by_locale["en-US"]
     changed += int(
-        write_text_if_changed(
+        write_gallery_if_changed(
             pages / gallery_relative_path("en"),
             render_gallery(
                 "en",
@@ -871,7 +886,7 @@ def build(
     )
     for locale in OFFICIAL_LOCALES:
         changed += int(
-            write_text_if_changed(
+            write_gallery_if_changed(
                 pages / gallery_relative_path(locale),
                 render_gallery(
                     locale,
@@ -910,6 +925,7 @@ def build(
         "is_ranking": False,
         "app_store_link_policy": {
             "default": "clean_direct",
+            "campaign_scope": "per_locale_visual",
             "campaign_requires": ["pt", "ct", "mt=8"],
         },
         "records": manifest_records,

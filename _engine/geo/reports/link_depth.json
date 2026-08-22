@@ -1,29 +1,29 @@
 {
   "site": "https://alice51849.github.io/ios-app-guide",
-  "total_pages": 59105,
-  "indexable_pages": 37932,
-  "indexable_reachable": 37932,
+  "total_pages": 59265,
+  "indexable_pages": 38092,
+  "indexable_reachable": 38092,
   "indexable_orphans": 0,
   "indexable_reachable_pct": 100.0,
-  "indexable_within_3_clicks": 37932,
+  "indexable_within_3_clicks": 38092,
   "indexable_within_3_clicks_pct": 100.0,
   "noindex_pages": 21173,
   "noindex_reachable_total": 16794,
   "noindex_orphans": 4379,
-  "reachable": 54726,
+  "reachable": 54886,
   "unreachable": 4379,
   "unreachable_indexable": 0,
   "unreachable_noindex_by_design": 4379,
-  "reachable_pct": 92.59,
-  "within_3_clicks": 54653,
-  "within_3_clicks_pct": 92.47,
-  "avg_depth_reachable": 2.902,
+  "reachable_pct": 92.61,
+  "within_3_clicks": 54813,
+  "within_3_clicks_pct": 92.49,
+  "avg_depth_reachable": 2.903,
   "max_depth": 5,
   "depth_distribution": {
     "0": 1,
     "1": 89,
     "2": 5251,
-    "3": 49312,
+    "3": 49472,
     "4": 61,
     "5": 12
   },
@@ -133,6 +133,24 @@
       "unreachable": 0,
       "avg_depth": 2.88
     },
+    "en-AU": {
+      "total": 377,
+      "reachable": 377,
+      "unreachable": 0,
+      "avg_depth": 2.87
+    },
+    "en-CA": {
+      "total": 377,
+      "reachable": 377,
+      "unreachable": 0,
+      "avg_depth": 2.87
+    },
+    "en-GB": {
+      "total": 377,
+      "reachable": 377,
+      "unreachable": 0,
+      "avg_depth": 2.87
+    },
     "hi": {
       "total": 362,
       "reachable": 362,
@@ -151,27 +169,15 @@
       "unreachable": 0,
       "avg_depth": 2.86
     },
-    "en-AU": {
-      "total": 337,
-      "reachable": 337,
-      "unreachable": 0,
-      "avg_depth": 2.85
-    },
-    "en-CA": {
-      "total": 337,
-      "reachable": 337,
-      "unreachable": 0,
-      "avg_depth": 2.85
-    },
-    "en-GB": {
-      "total": 337,
-      "reachable": 337,
-      "unreachable": 0,
-      "avg_depth": 2.85
-    },
     "sv": {
       "total": 335,
       "reachable": 335,
+      "unreachable": 0,
+      "avg_depth": 2.85
+    },
+    "en-US": {
+      "total": 329,
+      "reachable": 329,
       "unreachable": 0,
       "avg_depth": 2.85
     },
@@ -186,12 +192,6 @@
       "reachable": 312,
       "unreachable": 0,
       "avg_depth": 2.84
-    },
-    "en-US": {
-      "total": 289,
-      "reachable": 289,
-      "unreachable": 0,
-      "avg_depth": 2.83
     },
     "it": {
       "total": 288,
@@ -6383,5 +6383,5 @@
     "https://alice51849.github.io/ios-app-guide/af-ZA/best-for/iphone-best-app-photo-hide-af-za.html",
     "https://alice51849.github.io/ios-app-guide/af-ZA/best-for/iphone-best-app-scan-offline-af-za.html"
   ],
-  "read_mb": 922.4
+  "read_mb": 926.6
 }

@@ -2,7 +2,7 @@
 title: "Apple Watch로 바쁜 출퇴근길에 적합한 최고의 단어 학습 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/ko/index.html"
-modified: "2026-08-21"
+modified: "2026-08-22"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"

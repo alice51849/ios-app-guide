@@ -2,7 +2,7 @@
 title: "CalDaily: kalkulačka a motivy — Widget, nástroje a historie | iOS App"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/cs/index.html"
-modified: "2026-08-21"
+modified: "2026-08-22"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

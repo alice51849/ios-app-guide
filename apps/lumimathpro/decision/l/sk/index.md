@@ -2,7 +2,7 @@
 title: "najlepšia kompletná aplikácia na matematiku pre predškolákov a mladšie ročníky"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/sk/index.html"
-modified: "2026-08-21"
+modified: "2026-08-22"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

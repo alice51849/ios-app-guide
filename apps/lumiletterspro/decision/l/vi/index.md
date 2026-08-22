@@ -2,7 +2,7 @@
 title: "ứng dụng học đánh vần đầy đủ tốt nhất cho chuẩn bị mẫu giáo tại nhà"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/vi/index.html"
-modified: "2026-08-21"
+modified: "2026-08-22"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

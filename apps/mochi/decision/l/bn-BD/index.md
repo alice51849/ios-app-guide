@@ -2,7 +2,7 @@
 title: "আইফোনে সেরা সহজ টু-ডু লিস্ট অ্যাপ কোন সাবস্ক্রিপশন ছাড়া"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/bn-BD/index.html"
-modified: "2026-08-21"
+modified: "2026-08-22"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

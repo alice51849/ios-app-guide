@@ -4,9 +4,9 @@
   "name": "Lumi Studio App Install Decision Routes",
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.json",
-  "dateModified": "2026-08-21",
-  "content_digest": "01398609c5b210caba8bf1d8648c018104a6126c1dca8846b5f11cc1482055d5",
-  "generation_digest": "c99fc6e36e9c8fb60108ec408530c458e39a7a2032f7334948b26fa2643677eb",
+  "dateModified": "2026-08-22",
+  "content_digest": "32cec84950a33a532911e9ae279737d9f8a60f8e3a3fd403a37999a96d55b459",
+  "generation_digest": "07315b41df1f17af667d3742a54d1f1371894e98b5bf4cad8700905b23114fab",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -109017,8 +109017,7 @@
         "兒童與學習",
         "免費開始 · 一次購買解鎖",
         "無廣告",
-        "App Store · 免費",
-        "★ 5.0/5 · 1"
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/zh-Hant/index.html",
@@ -109031,9 +109030,7 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 1
+        "formatted_price": "免費"
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。",

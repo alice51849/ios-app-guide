@@ -2,7 +2,7 @@
 title: "2026 க்கான சிறந்த ரெசுமே உருவாக்கும் செயலி தொழில் மாற்றுவோருக்கு"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/ta-IN/index.html"
-modified: "2026-08-21"
+modified: "2026-08-22"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

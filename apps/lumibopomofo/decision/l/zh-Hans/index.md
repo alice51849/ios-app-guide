@@ -2,7 +2,7 @@
 title: "让孩子在 iPhone 上学注音的最佳注音 App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/zh-Hans/index.html"
-modified: "2026-08-21"
+modified: "2026-08-22"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

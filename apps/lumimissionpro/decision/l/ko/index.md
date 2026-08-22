@@ -2,7 +2,7 @@
 title: "아이들을 위한 완전한 아침 및 취침 루틴 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/ko/index.html"
-modified: "2026-08-21"
+modified: "2026-08-22"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"

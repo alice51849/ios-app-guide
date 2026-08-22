@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — 手写笔记本、PDF批注、录音与复习 | iOS App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/zh-Hans/index.html"
-modified: "2026-08-21"
+modified: "2026-08-22"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

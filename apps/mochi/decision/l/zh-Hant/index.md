@@ -2,7 +2,7 @@
 title: "iPhone 上最佳簡單待辦清單應用程式，無訂閱"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/zh-Hant/index.html"
-modified: "2026-08-21"
+modified: "2026-08-22"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

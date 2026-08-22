@@ -2,7 +2,7 @@
 title: "Aim990 Plus — ਦਬਾਅ ਵਿੱਚ ਤੇਜ਼ ਸਹੀ ਜਵਾਬ | iOS App"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/pa-IN/index.html"
-modified: "2026-08-21"
+modified: "2026-08-22"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"

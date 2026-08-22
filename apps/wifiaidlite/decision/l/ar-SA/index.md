@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — تشخيص الشبكة بالأدلة | iOS App"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/ar-SA/index.html"
-modified: "2026-08-21"
+modified: "2026-08-22"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

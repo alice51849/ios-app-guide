@@ -2,7 +2,7 @@
 title: "DailyMate Lite: રોજ બોલો — 50 ભાષાઓમાં સહજ વાતચીત | iOS App"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/gu-IN/index.html"
-modified: "2026-08-21"
+modified: "2026-08-22"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "beste complete zhuyin-app voor tweetalige kinderen"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/nl-NL/index.html"
-modified: "2026-08-21"
+modified: "2026-08-22"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

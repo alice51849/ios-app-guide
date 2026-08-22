@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na tvorbu životopisu pre zmenu kariéry 2026"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/sk/index.html"
-modified: "2026-08-21"
+modified: "2026-08-22"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

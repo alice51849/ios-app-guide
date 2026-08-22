@@ -2,7 +2,7 @@
 title: "iPhone 上最佳简单待办事项应用，无订阅"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/zh-Hans/index.html"
-modified: "2026-08-21"
+modified: "2026-08-22"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

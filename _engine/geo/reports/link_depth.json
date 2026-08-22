@@ -1,33 +1,33 @@
 {
   "site": "https://alice51849.github.io/ios-app-guide",
-  "total_pages": 58714,
-  "indexable_pages": 37573,
-  "indexable_reachable": 37573,
+  "total_pages": 58898,
+  "indexable_pages": 37725,
+  "indexable_reachable": 37725,
   "indexable_orphans": 0,
   "indexable_reachable_pct": 100.0,
-  "indexable_within_3_clicks": 37573,
+  "indexable_within_3_clicks": 37725,
   "indexable_within_3_clicks_pct": 100.0,
-  "noindex_pages": 21141,
-  "noindex_reachable_total": 16762,
+  "noindex_pages": 21173,
+  "noindex_reachable_total": 16794,
   "noindex_orphans": 4379,
-  "reachable": 54335,
+  "reachable": 54519,
   "unreachable": 4379,
   "unreachable_indexable": 0,
   "unreachable_noindex_by_design": 4379,
-  "reachable_pct": 92.54,
-  "within_3_clicks": 54262,
-  "within_3_clicks_pct": 92.42,
-  "avg_depth_reachable": 2.902,
+  "reachable_pct": 92.57,
+  "within_3_clicks": 54446,
+  "within_3_clicks_pct": 92.44,
+  "avg_depth_reachable": 2.903,
   "max_depth": 5,
   "depth_distribution": {
     "0": 1,
     "1": 89,
     "2": 5204,
-    "3": 48968,
+    "3": 49152,
     "4": 61,
     "5": 12
   },
-  "noindex_reachable": 16762,
+  "noindex_reachable": 16794,
   "broken_links_by_section": {},
   "broken_samples": {},
   "top_level": {
@@ -128,8 +128,8 @@
       "avg_depth": 2.97
     },
     "zh-Hans": {
-      "total": 431,
-      "reachable": 431,
+      "total": 432,
+      "reachable": 432,
       "unreachable": 0,
       "avg_depth": 2.88
     },
@@ -169,6 +169,24 @@
       "unreachable": 0,
       "avg_depth": 2.84
     },
+    "en-AU": {
+      "total": 297,
+      "reachable": 297,
+      "unreachable": 0,
+      "avg_depth": 2.84
+    },
+    "en-CA": {
+      "total": 297,
+      "reachable": 297,
+      "unreachable": 0,
+      "avg_depth": 2.84
+    },
+    "en-GB": {
+      "total": 297,
+      "reachable": 297,
+      "unreachable": 0,
+      "avg_depth": 2.84
+    },
     "it": {
       "total": 288,
       "reachable": 288,
@@ -176,164 +194,146 @@
       "avg_depth": 2.83
     },
     "cs": {
-      "total": 262,
-      "reachable": 262,
+      "total": 263,
+      "reachable": 263,
       "unreachable": 0,
       "avg_depth": 2.81
     },
     "da": {
-      "total": 262,
-      "reachable": 262,
+      "total": 263,
+      "reachable": 263,
       "unreachable": 0,
       "avg_depth": 2.81
     },
     "fi": {
-      "total": 262,
-      "reachable": 262,
+      "total": 263,
+      "reachable": 263,
       "unreachable": 0,
       "avg_depth": 2.81
     },
-    "en-AU": {
-      "total": 257,
-      "reachable": 257,
+    "en-US": {
+      "total": 249,
+      "reachable": 249,
       "unreachable": 0,
-      "avg_depth": 2.81
-    },
-    "en-CA": {
-      "total": 257,
-      "reachable": 257,
-      "unreachable": 0,
-      "avg_depth": 2.81
-    },
-    "en-GB": {
-      "total": 257,
-      "reachable": 257,
-      "unreachable": 0,
-      "avg_depth": 2.81
+      "avg_depth": 2.8
     },
     "es-MX": {
-      "total": 241,
-      "reachable": 241,
+      "total": 242,
+      "reachable": 242,
       "unreachable": 0,
       "avg_depth": 2.8
     },
     "ca": {
-      "total": 233,
-      "reachable": 233,
+      "total": 234,
+      "reachable": 234,
       "unreachable": 0,
       "avg_depth": 2.79
     },
     "el": {
-      "total": 233,
-      "reachable": 233,
+      "total": 234,
+      "reachable": 234,
       "unreachable": 0,
       "avg_depth": 2.79
     },
     "he": {
-      "total": 233,
-      "reachable": 233,
+      "total": 234,
+      "reachable": 234,
       "unreachable": 0,
       "avg_depth": 2.79
     },
     "hr": {
-      "total": 233,
-      "reachable": 233,
+      "total": 234,
+      "reachable": 234,
       "unreachable": 0,
       "avg_depth": 2.79
     },
     "hu": {
-      "total": 233,
-      "reachable": 233,
+      "total": 234,
+      "reachable": 234,
       "unreachable": 0,
       "avg_depth": 2.79
     },
     "ro": {
-      "total": 233,
-      "reachable": 233,
+      "total": 234,
+      "reachable": 234,
       "unreachable": 0,
       "avg_depth": 2.79
     },
     "sk": {
-      "total": 233,
-      "reachable": 233,
+      "total": 234,
+      "reachable": 234,
       "unreachable": 0,
       "avg_depth": 2.79
     },
     "no": {
-      "total": 215,
-      "reachable": 215,
+      "total": 216,
+      "reachable": 216,
       "unreachable": 0,
       "avg_depth": 2.77
     },
     "gu-IN": {
-      "total": 212,
-      "reachable": 212,
+      "total": 213,
+      "reachable": 213,
       "unreachable": 0,
       "avg_depth": 2.77
     },
     "kn-IN": {
-      "total": 212,
-      "reachable": 212,
+      "total": 213,
+      "reachable": 213,
       "unreachable": 0,
       "avg_depth": 2.77
     },
     "ml-IN": {
-      "total": 212,
-      "reachable": 212,
+      "total": 213,
+      "reachable": 213,
       "unreachable": 0,
       "avg_depth": 2.77
     },
     "mr-IN": {
-      "total": 212,
-      "reachable": 212,
+      "total": 213,
+      "reachable": 213,
       "unreachable": 0,
       "avg_depth": 2.77
     },
     "or-IN": {
-      "total": 212,
-      "reachable": 212,
+      "total": 213,
+      "reachable": 213,
       "unreachable": 0,
       "avg_depth": 2.77
     },
     "pa-IN": {
-      "total": 212,
-      "reachable": 212,
+      "total": 213,
+      "reachable": 213,
       "unreachable": 0,
       "avg_depth": 2.77
     },
     "sl-SI": {
+      "total": 213,
+      "reachable": 213,
+      "unreachable": 0,
+      "avg_depth": 2.77
+    },
+    "te-IN": {
       "total": 212,
       "reachable": 212,
       "unreachable": 0,
       "avg_depth": 2.77
     },
-    "te-IN": {
-      "total": 211,
-      "reachable": 211,
-      "unreachable": 0,
-      "avg_depth": 2.77
-    },
-    "en-US": {
-      "total": 209,
-      "reachable": 209,
-      "unreachable": 0,
-      "avg_depth": 2.77
-    },
     "ta-IN": {
-      "total": 205,
-      "reachable": 205,
+      "total": 206,
+      "reachable": 206,
       "unreachable": 0,
       "avg_depth": 2.76
     },
     "bn-BD": {
-      "total": 194,
-      "reachable": 194,
+      "total": 195,
+      "reachable": 195,
       "unreachable": 0,
       "avg_depth": 2.75
     },
     "ur-PK": {
-      "total": 193,
-      "reachable": 193,
+      "total": 194,
+      "reachable": 194,
       "unreachable": 0,
       "avg_depth": 2.75
     },
@@ -6383,5 +6383,5 @@
     "https://alice51849.github.io/ios-app-guide/af-ZA/best-for/iphone-best-app-photo-hide-af-za.html",
     "https://alice51849.github.io/ios-app-guide/af-ZA/best-for/iphone-best-app-scan-offline-af-za.html"
   ],
-  "read_mb": 913.1
+  "read_mb": 917.4
 }

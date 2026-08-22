@@ -9,23 +9,23 @@ apps: 43
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/mr-IN.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/mr-IN.json
 - अॅप निर्देशिका · SVG: https://alice51849.github.io/ios-app-guide/mr-IN/visuals/
-- अॅप निर्देशिका · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- अॅप निर्देशिका · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- अॅप निर्देशिका · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb
-- अॅप निर्देशिका · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3
-- अॅप निर्देशिका · MCP v1.1.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS
+- अॅप निर्देशिका · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- अॅप निर्देशिका · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- अॅप निर्देशिका · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
+- अॅप निर्देशिका · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
+- अॅप निर्देशिका · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
 - अॅप निर्देशिका · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- अॅप निर्देशिका · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder
-- अॅप निर्देशिका · Agent Skill · mr-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.3/skills/lumi-app-finder/references/mr-IN.json
-- अॅप निर्देशिका · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
-- अॅप निर्देशिका · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
-- अॅप निर्देशिका · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
-- अॅप निर्देशिका · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
-- अॅप निर्देशिका · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
-- अॅप निर्देशिका · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- अॅप निर्देशिका · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
-- अॅप निर्देशिका · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
-- अॅप निर्देशिका · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
+- अॅप निर्देशिका · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
+- अॅप निर्देशिका · Agent Skill · mr-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/mr-IN.json
+- अॅप निर्देशिका · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
+- अॅप निर्देशिका · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
+- अॅप निर्देशिका · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
+- अॅप निर्देशिका · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
+- अॅप निर्देशिका · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
+- अॅप निर्देशिका · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- अॅप निर्देशिका · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- अॅप निर्देशिका · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- अॅप निर्देशिका · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/mr-IN/notesstudio100.html) — हाताने लिहा, PDF वर टिपा
   - हाताने लिहा, टाइप करा आणि PDF चा अभ्यास करा. 29 पेन व ब्रश, 100 वेगळ्या शैली, पानाला जोडलेला ऑडिओ, डिव्हाइसवरील शोध आणि अंतरित उजळणी उपलब्ध आहेत.

@@ -9,23 +9,23 @@ apps: 43
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/or-IN.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/or-IN.json
 - ଆପ୍ ଡିରେକ୍ଟୋରି · SVG: https://alice51849.github.io/ios-app-guide/or-IN/visuals/
-- ଆପ୍ ଡିରେକ୍ଟୋରି · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb
-- ଆପ୍ ଡିରେକ୍ଟୋରି · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3
-- ଆପ୍ ଡିରେକ୍ଟୋରି · MCP v1.1.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS
+- ଆପ୍ ଡିରେକ୍ଟୋରି · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
+- ଆପ୍ ଡିରେକ୍ଟୋରି · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
+- ଆପ୍ ଡିରେକ୍ଟୋରି · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
 - ଆପ୍ ଡିରେକ୍ଟୋରି · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · or-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.3/skills/lumi-app-finder/references/or-IN.json
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
-- ଆପ୍ ଡିରେକ୍ଟୋରି · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · or-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/or-IN.json
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/or-IN/notesstudio100.html) — ହସ୍ତଲିଖିତ ନୋଟ୍, PDF ଟିପ୍ପଣୀ
   - ହାତରେ ଲେଖନ୍ତୁ, PDF ରେ ଟିପ୍ପଣୀ ଦିଅନ୍ତୁ ଓ ଅଡିଓ ରେକର୍ଡିଂକୁ ସମ୍ପୃକ୍ତ ପୃଷ୍ଠାରେ ରଖନ୍ତୁ। ଖାତା ସଜାନ୍ତୁ, ସ୍ଥାନୀୟ ଭାବେ ଖୋଜନ୍ତୁ ଏବଂ ଅଫଲାଇନ୍‌ରେ ପଢ଼ନ୍ତୁ।

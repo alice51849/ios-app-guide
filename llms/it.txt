@@ -9,23 +9,23 @@ apps: 43
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/it.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json
 - Elenco app · SVG: https://alice51849.github.io/ios-app-guide/it/visuals/
-- Elenco app · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- Elenco app · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- Elenco app · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb
-- Elenco app · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3
-- Elenco app · MCP v1.1.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS
+- Elenco app · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Elenco app · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Elenco app · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
+- Elenco app · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
+- Elenco app · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
 - Elenco app · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- Elenco app · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder
-- Elenco app · Agent Skill · it: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.3/skills/lumi-app-finder/references/it.json
-- Elenco app · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
-- Elenco app · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
-- Elenco app · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
-- Elenco app · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
-- Elenco app · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
-- Elenco app · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- Elenco app · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
-- Elenco app · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
-- Elenco app · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
+- Elenco app · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
+- Elenco app · Agent Skill · it: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/it.json
+- Elenco app · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
+- Elenco app · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
+- Elenco app · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
+- Elenco app · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
+- Elenco app · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
+- Elenco app · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Elenco app · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- Elenco app · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- Elenco app · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/it/notesstudio100.html) — Quaderno a mano, PDF e studio
   - Uno spazio privato e offline con 29 strumenti di scrittura, 100 stili di quaderno, annotazione PDF, audio legato alla pagina e schede per il ripasso programmato.

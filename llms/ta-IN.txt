@@ -9,23 +9,23 @@ apps: 43
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ta-IN.json
 - செயலி அடைவு · SVG: https://alice51849.github.io/ios-app-guide/ta-IN/visuals/
-- செயலி அடைவு · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.1.3%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- செயலி அடைவு · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjEuMy9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- செயலி அடைவு · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder.mcpb
-- செயலி அடைவு · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.1.3
-- செயலி அடைவு · MCP v1.1.3 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/SHA256SUMS
+- செயலி அடைவு · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- செயலி அடைவு · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- செயலி அடைவு · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
+- செயலி அடைவு · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
+- செயலி அடைவு · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
 - செயலி அடைவு · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- செயலி அடைவு · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder
-- செயலி அடைவு · Agent Skill · ta-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.1.3/skills/lumi-app-finder/references/ta-IN.json
-- செயலி அடைவு · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user
-- செயலி அடைவு · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent claude-code
-- செயலி அடைவு · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent cursor
-- செயலி அடைவு · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent codex
-- செயலி அடைவு · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.1.3 --scope user --agent gemini-cli
-- செயலி அடைவு · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.1.3/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- செயலி அடைவு · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
-- செயலி அடைவு · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
-- செயலி அடைவு · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.1.3/lumi-app-finder-npx.tgz
+- செயலி அடைவு · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
+- செயலி அடைவு · Agent Skill · ta-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/ta-IN.json
+- செயலி அடைவு · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
+- செயலி அடைவு · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
+- செயலி அடைவு · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
+- செயலி அடைவு · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
+- செயலி அடைவு · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
+- செயலி அடைவு · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- செயலி அடைவு · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- செயலி அடைவு · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- செயலி அடைவு · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/ta-IN/notesstudio100.html) — கையால் எழுது, PDF குறியிடு
   - கையால் எழுதுங்கள், PDF-ஐக் குறியிடுங்கள், குறிப்பேடுகளை ஒழுங்குபடுத்துங்கள். பதிவு செய்யும் ஒலி அதே பக்கத்துடன் இணைந்து இருக்கும்; வேலைகள் இணையமின்றி இயங்கும்.

@@ -33,15 +33,6 @@ OPENAI_ENDPOINT = "https://api.openai.com/v1/chat/completions"
 
 sys.path.insert(0, str(ROOT / ".." / "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
-import gen_store_attribution  # noqa: E402
-
-# Campaign token for this page family.  gen_store_attribution.py is the
-# single authority on ?ct= for the whole tree and it runs last, *after*
-# gen_app_store_qr_ctas.py has already hashed the page's first App Store
-# link into the QR image file name.  Minting a different token here would
-# leave the printed QR code pointing at a campaign the button no longer
-# uses, so take the final token from the same function the rewrite uses.
-ANSWER_CAMPAIGN = gen_store_attribution.campaign_token("answers/page.html")
 from appstore_live import live_app_keys  # noqa: E402
 import queries  # noqa: E402
 import answer_facts  # noqa: E402
@@ -189,7 +180,7 @@ def prompt_for(question: str, key: str) -> list[dict[str, str]]:
         "sub": app.get("sub", ""),
         "cta_bullets": app.get("cta_bullets", []),
         "keywords": app.get("keywords", []),
-        "app_store_url": appstore_url(key, ANSWER_CAMPAIGN),
+        "app_store_url": appstore_url(key, "iag_ans"),
         "truth_notes": app_truth_notes(key, app),
     }
     system = (
@@ -962,7 +953,7 @@ def render_page(
     )
     app = APPS[key]
     name = app["name"]
-    url = appstore_url(key, ANSWER_CAMPAIGN)
+    url = appstore_url(key, "iag_ans")
     slug = slugify(question)
     canonical = f"{SITE}/answers/{slug}.html"
     title = content.get("page_title") or f"{question}: honest iPhone app buying guide"

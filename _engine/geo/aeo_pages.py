@@ -34,7 +34,6 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
-import gen_store_attribution  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 ALT = os.path.join(PAGES, "alternatives")
@@ -481,17 +480,7 @@ def cat_noun(key):
 
 def landing_url(key):
     """Use the live App Store URL when known; otherwise link to the generated web page."""
-    # gen_app_store_qr_ctas.py hashes this page's first App Store link into the
-    # QR image file name, and gen_store_attribution.py rewrites that link
-    # afterwards, so a token minted here that the attribution pass disagrees
-    # with silently makes the QR code scan to a different campaign than the
-    # button beside it.  Mint the final token from the same authority instead.
-    return appstore_url(
-        key,
-        gen_store_attribution.campaign_token(
-            f"alternatives/{alternative_hub_slug(key)}.html"
-        ),
-    ) or (
+    return appstore_url(key, "iag_alt") or (
         f"{SITE}/alternatives/{alternative_hub_slug(key)}.html"
     )
 

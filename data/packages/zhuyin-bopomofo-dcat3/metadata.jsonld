@@ -27,7 +27,7 @@
   "identifier": "LUMI-ZHUYIN-DCAT3-2026",
   "version": "1.5.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-08-21T00:00:00Z",
+  "dateModified": "2026-08-22T00:00:00Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -97,7 +97,7 @@
       "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ro-crate",
       "name": "Bopomofo RO-Crate 1.3 research object",
       "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
-      "dateModified": "2026-08-21"
+      "dateModified": "2026-08-22"
     },
     {
       "@type": "Dataset",
@@ -162,8 +162,8 @@
       "name": "Complete ZIP bundle",
       "encodingFormat": "application/zip",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip",
-      "contentSize": "28823 bytes",
-      "sha256": "ee8ec1fc97eabdaab09f73cfdf19befa686e6b8f11a169dd2dbe304b3f6386b7"
+      "contentSize": "28828 bytes",
+      "sha256": "3c4a52e10cf4a58dd0f0e6f99c40a23a99aaf01b22a43a4ceb61bfb18557c211"
     },
     {
       "@type": "DataDownload",
@@ -171,7 +171,7 @@
       "encodingFormat": "application/ld+json",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld",
       "contentSize": "218434 bytes",
-      "sha256": "7a1f0347f2d28090451fdea504320be9813b4c6704f8405b56a211ecc78a0656"
+      "sha256": "591069d56170046ac72ae8e69fdfaf2fdf2d5011426895c9bf9d12f603453b7f"
     },
     {
       "@type": "DataDownload",
@@ -179,7 +179,7 @@
       "encodingFormat": "text/turtle",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl",
       "contentSize": "148253 bytes",
-      "sha256": "eb0fa3e861bdc170658a07da01b249a0f3ac2f34cab881efed119e78d28b4cc4"
+      "sha256": "e7a223fe85775b2f0aa3e0639be161716233ca269fb4b90ea1307e2e279893ae"
     }
   ]
 }

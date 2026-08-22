@@ -1,28 +1,28 @@
 {
   "site": "https://alice51849.github.io/ios-app-guide",
-  "total_pages": 59058,
-  "indexable_pages": 37885,
-  "indexable_reachable": 37885,
+  "total_pages": 59105,
+  "indexable_pages": 37932,
+  "indexable_reachable": 37932,
   "indexable_orphans": 0,
   "indexable_reachable_pct": 100.0,
-  "indexable_within_3_clicks": 37885,
+  "indexable_within_3_clicks": 37932,
   "indexable_within_3_clicks_pct": 100.0,
   "noindex_pages": 21173,
   "noindex_reachable_total": 16794,
   "noindex_orphans": 4379,
-  "reachable": 54679,
+  "reachable": 54726,
   "unreachable": 4379,
   "unreachable_indexable": 0,
   "unreachable_noindex_by_design": 4379,
   "reachable_pct": 92.59,
-  "within_3_clicks": 54606,
-  "within_3_clicks_pct": 92.46,
-  "avg_depth_reachable": 2.903,
+  "within_3_clicks": 54653,
+  "within_3_clicks_pct": 92.47,
+  "avg_depth_reachable": 2.902,
   "max_depth": 5,
   "depth_distribution": {
     "0": 1,
     "1": 89,
-    "2": 5204,
+    "2": 5251,
     "3": 49312,
     "4": 61,
     "5": 12
@@ -97,6 +97,12 @@
       "unreachable": 0,
       "avg_depth": 2.97
     },
+    "answers": {
+      "total": 1851,
+      "reachable": 1851,
+      "unreachable": 0,
+      "avg_depth": 2.0
+    },
     "th": {
       "total": 1849,
       "reachable": 1849,
@@ -114,12 +120,6 @@
       "reachable": 1840,
       "unreachable": 0,
       "avg_depth": 2.97
-    },
-    "answers": {
-      "total": 1835,
-      "reachable": 1835,
-      "unreachable": 0,
-      "avg_depth": 2.0
     },
     "pt-PT": {
       "total": 1791,
@@ -271,6 +271,12 @@
       "unreachable": 0,
       "avg_depth": 2.77
     },
+    "alternatives": {
+      "total": 213,
+      "reachable": 213,
+      "unreachable": 0,
+      "avg_depth": 2.0
+    },
     "gu-IN": {
       "total": 213,
       "reachable": 213,
@@ -336,12 +342,6 @@
       "reachable": 194,
       "unreachable": 0,
       "avg_depth": 2.75
-    },
-    "alternatives": {
-      "total": 182,
-      "reachable": 182,
-      "unreachable": 0,
-      "avg_depth": 1.99
     },
     "fr-CA": {
       "total": 170,
@@ -6383,5 +6383,5 @@
     "https://alice51849.github.io/ios-app-guide/af-ZA/best-for/iphone-best-app-photo-hide-af-za.html",
     "https://alice51849.github.io/ios-app-guide/af-ZA/best-for/iphone-best-app-scan-offline-af-za.html"
   ],
-  "read_mb": 921.6
+  "read_mb": 922.4
 }

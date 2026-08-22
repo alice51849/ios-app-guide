@@ -2,19 +2,15 @@
 
 > Factual owned-asset coverage only. This does not pretend to measure live AI recommendations.
 
-Public apps: **43** · Average coverage: **96.6%**
+Public apps: **43** · Average coverage: **100.0%**
 
 | App | Coverage | Answers | Social languages | Alternatives | Hub / guide / story |
 |---|---:|---:|---:|---:|---|
-| 100 Notes Studio | 76.7% | 18/18 | 1 | 0 | hub / guide / story |
-| CalDaily | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
-| MoneyTag: Income & Expense | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
-| OnePage PPT | 76.7% | 18/18 | 1 | 0 | hub / guide / story |
-| WiFi Aid Lite | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
-| Wordmate Lite | 76.7% | 17/17 | 1 | 0 | hub / guide / story |
-| AI Brief | 95.0% | 17/17 | 3 | 1 | hub / guide / story |
+| 100 Notes Studio | 100.0% | 18/18 | 3 | 5 | hub / guide / story |
+| AI Brief | 100.0% | 17/17 | 3 | 2 | hub / guide / story |
 | Aim990 | 100.0% | 56/56 | 4 | 5 | hub / guide / story |
 | Aim990 Plus | 100.0% | 13/13 | 3 | 5 | hub / guide / story |
+| CalDaily | 100.0% | 17/17 | 3 | 5 | hub / guide / story |
 | CV Desk | 100.0% | 92/92 | 5 | 5 | hub / guide / story |
 | Cyca | 100.0% | 50/50 | 6 | 5 | hub / guide / story |
 | DailyMate | 100.0% | 25/25 | 3 | 5 | hub / guide / story |
@@ -37,6 +33,8 @@ Public apps: **43** · Average coverage: **96.6%**
 | Mask My File | 100.0% | 15/15 | 3 | 5 | hub / guide / story |
 | Mochi | 100.0% | 44/44 | 4 | 5 | hub / guide / story |
 | Mochi DoneStamp | 100.0% | 17/17 | 3 | 5 | hub / guide / story |
+| MoneyTag: Income & Expense | 100.0% | 17/17 | 3 | 5 | hub / guide / story |
+| OnePage PPT | 100.0% | 18/18 | 3 | 5 | hub / guide / story |
 | PhotoCream | 100.0% | 43/43 | 8 | 5 | hub / guide / story |
 | PicClear | 100.0% | 59/59 | 4 | 5 | hub / guide / story |
 | ScanTo Pro | 100.0% | 66/66 | 7 | 5 | hub / guide / story |
@@ -48,6 +46,8 @@ Public apps: **43** · Average coverage: **96.6%**
 | TripBee Pro: Trip Planner | 100.0% | 51/51 | 5 | 5 | hub / guide / story |
 | Unblurry | 100.0% | 52/52 | 9 | 5 | hub / guide / story |
 | WiFi Aid | 100.0% | 16/16 | 3 | 5 | hub / guide / story |
+| WiFi Aid Lite | 100.0% | 17/17 | 3 | 5 | hub / guide / story |
+| Wordmate Lite | 100.0% | 17/17 | 3 | 5 | hub / guide / story |
 | Wordmate: Learn 44 Languages | 100.0% | 25/25 | 3 | 5 | hub / guide / story |
 
 ## Excluded until publicly available

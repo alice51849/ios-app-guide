@@ -1,4 +1,4 @@
-# Zero-cost outreach coverage — 2026-08-22
+# Zero-cost outreach coverage — 2026-08-23
 
 > Factual owned-asset coverage only. This does not pretend to measure live AI recommendations.
 

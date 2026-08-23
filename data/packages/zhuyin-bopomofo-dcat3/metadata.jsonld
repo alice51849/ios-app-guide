@@ -27,7 +27,7 @@
   "identifier": "LUMI-ZHUYIN-DCAT3-2026",
   "version": "1.5.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-08-22T00:00:00Z",
+  "dateModified": "2026-08-23T00:00:00Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -97,7 +97,7 @@
       "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ro-crate",
       "name": "Bopomofo RO-Crate 1.3 research object",
       "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
-      "dateModified": "2026-08-22"
+      "dateModified": "2026-08-23"
     },
     {
       "@type": "Dataset",
@@ -162,8 +162,8 @@
       "name": "Complete ZIP bundle",
       "encodingFormat": "application/zip",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip",
-      "contentSize": "28828 bytes",
-      "sha256": "3c4a52e10cf4a58dd0f0e6f99c40a23a99aaf01b22a43a4ceb61bfb18557c211"
+      "contentSize": "28824 bytes",
+      "sha256": "75508d4548a8d74bc0dbcce3d67e5eed6ad3a04512fe2125846d86725177bf63"
     },
     {
       "@type": "DataDownload",
@@ -171,7 +171,7 @@
       "encodingFormat": "application/ld+json",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld",
       "contentSize": "218434 bytes",
-      "sha256": "591069d56170046ac72ae8e69fdfaf2fdf2d5011426895c9bf9d12f603453b7f"
+      "sha256": "80ed862dc8fe66edc7cb5c949ec004bf15943e743dcec9b7aa8ce00df21068ba"
     },
     {
       "@type": "DataDownload",
@@ -179,7 +179,7 @@
       "encodingFormat": "text/turtle",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl",
       "contentSize": "148253 bytes",
-      "sha256": "e7a223fe85775b2f0aa3e0639be161716233ca269fb4b90ea1307e2e279893ae"
+      "sha256": "d4a5a475627a1660309dde4c02a99978303883069c7e7315d5625ae73f25573c"
     }
   ]
 }

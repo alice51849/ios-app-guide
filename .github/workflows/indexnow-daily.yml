@@ -52,7 +52,16 @@ jobs:
           git cat-file -e "${deployed_sha}^{commit}"
           git checkout --detach "$deployed_sha"
           test "$(git rev-parse HEAD)" = "$deployed_sha"
+          echo "DEPLOYED_SHA=$deployed_sha" >> "$GITHUB_ENV"
           python3 _engine/geo/live_app_guard.py --site-root .
+      - name: Verify deployed publish inventory before IndexNow
+        run: |
+          python3 _engine/geo/publish_inventory.py \
+            --source "$GITHUB_WORKSPACE" \
+            --source-commit "$DEPLOYED_SHA" \
+            --dry-run \
+            --manifest-out \
+              "${{ runner.temp }}/indexnow-publish-inventory.json"
       - name: Restore durable IndexNow state
         uses: actions/cache/restore@v4
         with:

@@ -4562,7 +4562,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertLess(deploy, notify)
         self.assertLess(notify, notify_rsscloud)
         self.assertLess(notify_rsscloud, enforce)
-        self.assertIn("--feed-dir \"$GITHUB_WORKSPACE\"", workflow)
+        self.assertIn(
+            '--feed-dir "${{ runner.temp }}/pages-publish"',
+            workflow,
+        )
         self.assertIn("timeout-minutes: 6", workflow)
         self.assertIn(
             'test "${{ steps.notify_websub.outcome }}" = "success"',

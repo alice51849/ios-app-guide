@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "site": "https://alice51849.github.io/ios-app-guide",
+  "entrypoints": [
+    "index.html"
+  ],
+  "allow": {
+    "exact_paths": [
+      ".nojekyll",
+      "CNAME"
+    ],
+    "extensions": [
+      ".atom",
+      ".avif",
+      ".css",
+      ".csv",
+      ".epub",
+      ".gif",
+      ".htm",
+      ".html",
+      ".ico",
+      ".jpeg",
+      ".jpg",
+      ".js",
+      ".json",
+      ".jsonl",
+      ".jsonld",
+      ".m4a",
+      ".map",
+      ".mjs",
+      ".mp3",
+      ".mp4",
+      ".nt",
+      ".otf",
+      ".pdf",
+      ".png",
+      ".rdf",
+      ".rss",
+      ".svg",
+      ".tsv",
+      ".ttf",
+      ".ttl",
+      ".txt",
+      ".wav",
+      ".webm",
+      ".webmanifest",
+      ".webp",
+      ".woff",
+      ".woff2",
+      ".xhtml",
+      ".xml",
+      ".xsd",
+      ".zip"
+    ]
+  },
+  "private_prefixes": [
+    ".git/",
+    ".github/",
+    "_engine/"
+  ],
+  "legacy_excluded_prefixes": [
+    ".git/",
+    "_engine/"
+  ],
+  "protected": {
+    "exact_paths": [
+      ".nojekyll",
+      "about.html",
+      "feed.json",
+      "feed.xml",
+      "index.html",
+      "llms-full.txt",
+      "llms.txt",
+      "robots.txt",
+      "rss.xml",
+      "sitemap.xml",
+      "sitemap_index.xml"
+    ],
+    "prefixes": [
+      ".well-known/",
+      "answers/",
+      "assets/",
+      "guides/",
+      "hubs/",
+      "tools/"
+    ],
+    "basename_globs": [
+      "*.atom.xml",
+      "feed.json",
+      "feed.xml",
+      "robots.txt",
+      "rss.xml",
+      "sitemap*.xml"
+    ]
+  },
+  "required": {
+    "exact_paths": [
+      ".nojekyll",
+      "feed.json",
+      "feed.xml",
+      "index.html",
+      "robots.txt",
+      "rss.xml",
+      "sitemap.xml",
+      "sitemap_index.xml"
+    ],
+    "nonempty_prefixes": [
+      ".well-known/",
+      "answers/",
+      "assets/",
+      "guides/",
+      "hubs/",
+      "tools/"
+    ],
+    "localized_feed_template": "data/app-install-decision-routes/feeds/{locale}.atom.xml"
+  },
+  "budgets": {
+    "max_publish_files": 75000,
+    "max_publish_bytes": 1250000000,
+    "max_publish_html_files": 58000,
+    "max_indexable_orphans": 0,
+    "max_broken_internal_html_links": 0,
+    "max_sitemap_missing_html_targets": 0,
+    "max_sitemap_noindex_html_targets": 0,
+    "min_saved_files": 1,
+    "min_saved_bytes": 1
+  }
+}

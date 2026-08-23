@@ -448,10 +448,17 @@ class IndexNowTests(unittest.TestCase):
         self.assertIn(".well-known/deployment.json", workflow)
         self.assertIn('git checkout --detach "$deployed_sha"', workflow)
         self.assertIn("live_app_guard.py --site-root .", workflow)
+        self.assertIn("publish_inventory.py", workflow)
+        self.assertIn('--source-commit "$DEPLOYED_SHA"', workflow)
         self.assertIn("actions/cache/restore@v4", workflow)
         self.assertIn("actions/cache/save@v4", workflow)
         self.assertIn('--state-file "$state_file"', workflow)
         self.assertIn("Write immutable deployment manifest", pages_workflow)
+        self.assertIn("publish_inventory.py", pages_workflow)
+        self.assertIn(
+            "path: ${{ runner.temp }}/pages-publish",
+            pages_workflow,
+        )
         self.assertIn("Verify exact deployment is live", pages_workflow)
         self.assertIn("steps.verify_live.outcome == 'success'", pages_workflow)
 

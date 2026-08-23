@@ -35,11 +35,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Quarantine unavailable App Store pages
         run: python3 _engine/geo/live_app_guard.py --site-root .
-      - name: Write immutable deployment manifest
-        run: |
-          mkdir -p .well-known
-          printf '{"version":1,"source_commit":"%s"}\n' \
-            "$(git rev-parse HEAD)" > .well-known/deployment.json
+      - name: Verify publish inventory blocking tests
+        run: python3 -m unittest -v _engine.geo.tests.test_publish_inventory
       - name: Preserve syndication notifiers and prune engine/tooling
         run: |
           cp _engine/geo/notify_websub.py "$RUNNER_TEMP/notify_websub.py"
@@ -47,11 +44,17 @@ jobs:
           cp _engine/geo/official_locales.py "$RUNNER_TEMP/official_locales.py"
           cp _engine/geo/notify_rsscloud.py "$RUNNER_TEMP/notify_rsscloud.py"
           cp _engine/geo/rsscloud_config.py "$RUNNER_TEMP/rsscloud_config.py"
+      - name: Write immutable deployment manifest into allowlisted artifact
+        run: |
+          python3 _engine/geo/publish_inventory.py \
+            --source "$GITHUB_WORKSPACE" \
+            --source-commit "$(git rev-parse HEAD)" \
+            --output "${{ runner.temp }}/pages-publish"
           rm -rf _engine
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: ${{ runner.temp }}/pages-publish
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
@@ -73,7 +76,10 @@ jobs:
           DEPLOYMENT_MANIFEST_URL: >-
             https://alice51849.github.io/ios-app-guide/.well-known/deployment.json
         run: |
-          expected="$(jq -er '.source_commit' .well-known/deployment.json)"
+          expected="$(
+            jq -er '.source_commit' \
+              "${{ runner.temp }}/pages-publish/.well-known/deployment.json"
+          )"
           for attempt in {1..30}; do
             live="$(
               curl -fsS --retry 2 --retry-all-errors \
@@ -102,7 +108,7 @@ jobs:
           GEO_SITE: https://alice51849.github.io/ios-app-guide
         run: >-
           python3 "$RUNNER_TEMP/notify_websub.py"
-          --feed-dir "$GITHUB_WORKSPACE"
+          --feed-dir "${{ runner.temp }}/pages-publish"
       - name: Notify rssCloud subscribers
         id: notify_rsscloud
         if: >-
@@ -116,7 +122,7 @@ jobs:
           GEO_SITE: https://alice51849.github.io/ios-app-guide
         run: >-
           python3 "$RUNNER_TEMP/notify_rsscloud.py"
-          --feed-dir "$GITHUB_WORKSPACE"
+          --feed-dir "${{ runner.temp }}/pages-publish"
       - name: Enforce syndication notification results
         if: >-
           always() &&

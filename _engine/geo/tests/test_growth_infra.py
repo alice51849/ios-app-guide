@@ -107,6 +107,7 @@ import gen_linkset
 import gen_llms
 import gen_mobile_app_identity
 import gen_mobile_store_ctas
+import gen_publisher_disclosures
 import normalize_app_store_links
 import gen_roundups
 import gen_sitemap_lastmod
@@ -20981,6 +20982,32 @@ class GeneratorTests(unittest.TestCase):
             english_path = (
                 tools / f"{zhuyin_readiness_tool.SLUG}.html"
             )
+            english = english_path.read_text(encoding="utf-8")
+            traditional_chinese = (
+                pages
+                / "zh-Hant"
+                / "tools"
+                / f"{zhuyin_readiness_tool.SLUG}.html"
+            ).read_text(encoding="utf-8")
+            self.assertIn(
+                "Publisher-authored, no-score educational resource "
+                "from Lumi Studio.",
+                english,
+            )
+            self.assertNotIn(
+                "Independent no-score educational resource",
+                english,
+            )
+            self.assertIn(
+                "由 Lumi Studio 製作的不評分教育資源",
+                traditional_chinese,
+            )
+            self.assertNotIn("不評分的獨立教育資源", traditional_chinese)
+            disclosure_stats = gen_publisher_disclosures.migrate(
+                pages,
+                translations_dir=Path(GEO) / "i18n_trans",
+            )
+            self.assertEqual(0, disclosure_stats["legacy_claims"])
             stable_mtime = 1_700_000_000_000_000_000
             os.utime(english_path, ns=(stable_mtime, stable_mtime))
             first_bytes = english_path.read_bytes()

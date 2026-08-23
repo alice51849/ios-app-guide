@@ -217,6 +217,23 @@ class PublisherDisclosureTests(unittest.TestCase):
             self.assertNotIn("independent guide", source, name)
             self.assertNotIn("independent buying guide", source, name)
 
+    def test_daily_geo_regenerates_tool_before_disclosure_gate(self) -> None:
+        root = Path(disclosures.__file__).resolve().parents[2]
+        workflow = (
+            root / ".github" / "workflows" / "geo-daily.yml"
+        ).read_text(encoding="utf-8")
+        materialize = workflow.split(
+            "- name: Materialize newly live app surfaces",
+            1,
+        )[1].split(
+            "- name: Reconcile verified Standard.site discovery links",
+            1,
+        )[0]
+        self.assertLess(
+            materialize.index("python3 zhuyin_readiness_tool.py"),
+            materialize.index("python3 gen_publisher_disclosures.py"),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

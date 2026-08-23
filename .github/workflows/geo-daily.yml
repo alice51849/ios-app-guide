@@ -99,6 +99,9 @@ jobs:
           python3 gen_mobile_app_identity.py
           python3 gen_webmcp_install_tools.py
           python3 portfolio_app_catalog_api.py
+          # Regenerate this tracked tool before the disclosure gate; otherwise
+          # a source-only copy update leaves the prior HTML claim in place.
+          python3 zhuyin_readiness_tool.py
           python3 gen_publisher_disclosures.py
           python3 gen_guide_design.py
           python3 gen_app_store_facts.py

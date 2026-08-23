@@ -30,6 +30,7 @@ import sys
 
 from official_locales import OFFICIAL_LOCALES
 from site_tree_index import SiteTreeIndex
+from google_images_canary import HOLDOUT_MARKER
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
@@ -382,6 +383,11 @@ def is_noindex(path, tree=None):
     return bool(NOINDEX_RE.search(read_head(path)))
 
 
+def is_sitemap_only_holdout(path):
+    """Keep the registered Google Images holdout out of every link hub."""
+    return HOLDOUT_MARKER in read_head(path)
+
+
 def detect_lang(path, default="en", tree=None):
     if tree is not None:
         relative = tree.relative(Path(path))
@@ -627,6 +633,8 @@ def process_parent(name, locale, state, tree=None, pages=None):
         if rel == "index.html" or rel.startswith(BROWSE_BASENAME + "."):
             continue
         if re.fullmatch(rf"{BROWSE_BASENAME}-\d+\.html", rel):
+            continue
+        if is_sitemap_only_holdout(path):
             continue
         # 註:曾嘗試在此過濾掉 noindex 頁(理由是不該把爬取預算花在停損頁),
         # 但它與下方的 skip_browse 判定連動 —— entries 變少會讓「父索引已涵蓋

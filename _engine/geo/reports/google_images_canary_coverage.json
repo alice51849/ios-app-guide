@@ -1,0 +1,103 @@
+{
+  "schema": "lumi.google-images-canary-coverage/v1",
+  "experiment_id": "google-images-real-task-canary-2026-08-23",
+  "qualified": 7,
+  "abstained": 0,
+  "abstentions": [],
+  "categories": 7,
+  "pairs": 50,
+  "pages": 100,
+  "treatment_urls": 50,
+  "holdout_urls": 50,
+  "authentic_assets": 38,
+  "requirements": {
+    "standard_img": true,
+    "natural_alt_and_caption": true,
+    "minimum_image_width": 1200,
+    "max_image_preview_large": true,
+    "image_object": true,
+    "software_application": true,
+    "image_sitemap": true,
+    "complete_apple_campaign_url": true,
+    "fake_ui_or_reviews": false
+  },
+  "apps": [
+    {
+      "app_key": "unblurry",
+      "app_name": "Unblurry",
+      "category": "Photo & utility",
+      "pairs": 8,
+      "treatment_urls": 8,
+      "holdout_urls": 8,
+      "authentic_assets": 3,
+      "minimum_asset_width": 1320,
+      "campaign_token": "gimg_unblurry"
+    },
+    {
+      "app_key": "scanto",
+      "app_name": "ScanTo Pro",
+      "category": "Productivity",
+      "pairs": 7,
+      "treatment_urls": 7,
+      "holdout_urls": 7,
+      "authentic_assets": 9,
+      "minimum_asset_width": 1320,
+      "campaign_token": "gimg_scanto"
+    },
+    {
+      "app_key": "cyca",
+      "app_name": "Cyca",
+      "category": "Health",
+      "pairs": 7,
+      "treatment_urls": 7,
+      "holdout_urls": 7,
+      "authentic_assets": 6,
+      "minimum_asset_width": 1320,
+      "campaign_token": "gimg_cyca"
+    },
+    {
+      "app_key": "gmoney",
+      "app_name": "G+Money",
+      "category": "Money & travel",
+      "pairs": 7,
+      "treatment_urls": 7,
+      "holdout_urls": 7,
+      "authentic_assets": 3,
+      "minimum_asset_width": 1320,
+      "campaign_token": "gimg_gmoney"
+    },
+    {
+      "app_key": "lumiletters",
+      "app_name": "Lumi Letters",
+      "category": "Kids & learning",
+      "pairs": 7,
+      "treatment_urls": 7,
+      "holdout_urls": 7,
+      "authentic_assets": 10,
+      "minimum_asset_width": 1320,
+      "campaign_token": "gimg_lumiletters"
+    },
+    {
+      "app_key": "aim990",
+      "app_name": "Aim990",
+      "category": "Education",
+      "pairs": 7,
+      "treatment_urls": 7,
+      "holdout_urls": 7,
+      "authentic_assets": 4,
+      "minimum_asset_width": 1320,
+      "campaign_token": "gimg_aim990"
+    },
+    {
+      "app_key": "sereno",
+      "app_name": "Sereno",
+      "category": "Sleep & focus",
+      "pairs": 7,
+      "treatment_urls": 7,
+      "holdout_urls": 7,
+      "authentic_assets": 3,
+      "minimum_asset_width": 1290,
+      "campaign_token": "gimg_sereno"
+    }
+  ]
+}

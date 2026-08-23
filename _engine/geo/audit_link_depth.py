@@ -23,6 +23,12 @@ import re
 import sys
 from urllib.parse import unquote, urljoin, urlsplit
 
+from google_images_canary import (
+    EXPERIMENT_SCHEMA,
+    HOLDOUT_MARKER,
+    LEDGER_NAME,
+)
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 # 測試會把 GEO_PAGES 指到合成的小樹上;報告輸出也要跟著搬,否則測試會覆寫
@@ -153,6 +159,7 @@ def crawl():
                 queue.append(target)
 
     return {
+        "root": os.path.realpath(PAGES),
         "all_files": all_files,
         "url_to_path": url_to_path,
         "depth": depth,
@@ -161,6 +168,69 @@ def crawl():
         "broken_samples": broken_samples,
         "read_mb": round(read_bytes / 1048576, 1),
     }
+
+
+def experiment_holdouts(result):
+    """Return the exact registered sitemap-only holdouts and contract errors."""
+    if result.get("root") != os.path.realpath(PAGES):
+        # Unit-level synthetic summaries do not describe the configured tree
+        # and therefore must not inherit its on-disk experiment contract.
+        return set(), []
+    ledger_path = os.path.join(REPORTS, LEDGER_NAME)
+    if not os.path.isfile(ledger_path):
+        return set(), []
+    try:
+        with open(ledger_path, encoding="utf-8") as fh:
+            ledger = json.load(fh)
+    except (OSError, ValueError, json.JSONDecodeError) as error:
+        raise ValueError(f"Google Images canary ledger is invalid: {error}") from error
+    if ledger.get("schema") != EXPERIMENT_SCHEMA:
+        raise ValueError("Google Images canary ledger schema mismatch")
+    records = ledger.get("records")
+    if not isinstance(records, list):
+        raise ValueError("Google Images canary ledger records are missing")
+    holdouts = {
+        str(record.get("page_url"))
+        for record in records
+        if isinstance(record, dict) and record.get("arm") == "holdout"
+    }
+    treatments = {
+        str(record.get("page_url"))
+        for record in records
+        if isinstance(record, dict) and record.get("arm") == "treatment"
+    }
+    if len(holdouts) != 50 or len(treatments) != 50:
+        raise ValueError(
+            "Google Images canary ledger must contain 50 treatment and "
+            "50 holdout URLs"
+        )
+    known = set(result["url_to_path"])
+    errors = []
+    missing = sorted((holdouts | treatments) - known)
+    if missing:
+        errors.append(f"ledger URLs missing from the site: {len(missing)}")
+    leaked = sorted(holdouts & set(result["depth"]))
+    if leaked:
+        errors.append(f"sitemap-only holdouts have inbound paths: {len(leaked)}")
+    unreachable_treatments = sorted(treatments - set(result["depth"]))
+    if unreachable_treatments:
+        errors.append(
+            f"treatment URLs are unreachable: {len(unreachable_treatments)}"
+        )
+    for url in sorted(holdouts & known):
+        try:
+            with open(
+                result["url_to_path"][url],
+                encoding="utf-8",
+                errors="ignore",
+            ) as fh:
+                source = fh.read()
+        except OSError:
+            errors.append(f"holdout cannot be read: {url}")
+            continue
+        if HOLDOUT_MARKER not in source:
+            errors.append(f"holdout marker missing: {url}")
+    return holdouts & known, errors
 
 
 def summarize(result):
@@ -184,14 +254,24 @@ def summarize(result):
             continue
         if NOINDEX_RE.search(head):
             noindex_all.add(url)
-    orphan_noindex = len(unreachable & noindex_all)
-    orphan_indexable = len(unreachable) - orphan_noindex
+    holdouts, experiment_errors = experiment_holdouts(result)
+    noindexed_holdouts = holdouts & noindex_all
+    if noindexed_holdouts:
+        experiment_errors.append(
+            f"sitemap-only holdouts are noindex: {len(noindexed_holdouts)}"
+        )
+    operational_unreachable = unreachable - holdouts
+    orphan_noindex = len(operational_unreachable & noindex_all)
+    orphan_indexable = len(operational_unreachable) - orphan_noindex
 
     # 主要分母是**可索引頁**。把 noindex 頁算進「3 click 內覆蓋率」等於用一堆
     # 永遠不會排名的頁充數(2026-08-10 稽核 R3 的主要指正)。noindex 頁單獨列。
     indexable = known - noindex_all
-    idx_reach = sum(1 for u in indexable if u in depth)
-    idx_within3 = sum(1 for u in indexable if depth.get(u, 99) <= 3)
+    operational_indexable = indexable - holdouts
+    idx_reach = sum(1 for u in operational_indexable if u in depth)
+    idx_within3 = sum(
+        1 for u in operational_indexable if depth.get(u, 99) <= 3
+    )
     noidx_reach = sum(1 for u in noindex_all if u in depth)
 
     dist = collections.Counter(depth.values())
@@ -215,7 +295,7 @@ def summarize(result):
             sec["depths"][depth[url]] += 1
         else:
             sec["unreachable"] += 1
-            if url not in noindex_all:
+            if url not in noindex_all and url not in holdouts:
                 sec["indexable_unreachable"] += 1
 
     top = collections.defaultdict(
@@ -269,15 +349,23 @@ def summarize(result):
         "total_pages": len(known),
         # ── 主要母體:可索引頁 ──────────────────────────────────────────────
         "indexable_pages": len(indexable),
+        "indexable_pages_excluding_experiment_holdouts": len(
+            operational_indexable
+        ),
         "indexable_reachable": idx_reach,
-        "indexable_orphans": len(indexable) - idx_reach,
+        "indexable_orphans": len(operational_indexable) - idx_reach,
         "indexable_reachable_pct": round(
-            100 * idx_reach / max(1, len(indexable)), 2
+            100 * idx_reach / max(1, len(operational_indexable)), 2
         ),
         "indexable_within_3_clicks": idx_within3,
         "indexable_within_3_clicks_pct": round(
-            100 * idx_within3 / max(1, len(indexable)), 2
+            100 * idx_within3 / max(1, len(operational_indexable)), 2
         ),
+        "sitemap_only_experiment_holdouts": len(holdouts),
+        "sitemap_only_experiment_holdouts_unreachable": len(
+            holdouts & unreachable
+        ),
+        "experiment_contract_errors": experiment_errors,
         # ── 分開列:刻意 noindex 的頁(不進索引,只影響爬取預算)───────────
         "noindex_pages": len(noindex_all),
         "noindex_reachable_total": noidx_reach,
@@ -343,7 +431,9 @@ def write_markdown(summary, path):
         "",
         "| 指標 | 值 |",
         "|---|---:|",
-        f"| 可索引頁數 | {summary['indexable_pages']:,} |",
+        f"| 可索引頁數(含實驗 holdout) | {summary['indexable_pages']:,} |",
+        f"| 可索引營運頁(扣除 sitemap-only 實驗 holdout) | "
+        f"{summary['indexable_pages_excluding_experiment_holdouts']:,} |",
         f"| 從首頁可達 | {summary['indexable_reachable']:,} "
         f"({summary['indexable_reachable_pct']}%) |",
         f"| **可索引孤兒(真的要修)** | **{summary['indexable_orphans']:,}** |",
@@ -466,12 +556,19 @@ def main():
             json.dump(summary, fh, ensure_ascii=False, indent=2)
 
     print(
-        f"可索引 {summary['indexable_pages']:,} / 可達 "
+        "可索引營運頁 "
+        f"{summary['indexable_pages_excluding_experiment_holdouts']:,} / 可達 "
         f"{summary['indexable_reachable']:,} "
         f"({summary['indexable_reachable_pct']}%) / **可索引孤兒 "
         f"{summary['indexable_orphans']:,}** / 3 click 內 "
         f"{summary['indexable_within_3_clicks_pct']}%"
     )
+    if summary["sitemap_only_experiment_holdouts"]:
+        print(
+            "Google Images sitemap-only holdout:"
+            f"{summary['sitemap_only_experiment_holdouts_unreachable']}/"
+            f"{summary['sitemap_only_experiment_holdouts']} 保持不可由站內連結到達"
+        )
     print(
         f"noindex(分開列):{summary['noindex_pages']:,} 頁,"
         f"可達 {summary['noindex_reachable_total']:,} / "
@@ -509,6 +606,13 @@ def main():
                 f"{summary['avg_depth_reachable']}"
             )
 
+    if summary["experiment_contract_errors"]:
+        print(
+            "❌ Google Images canary contract:"
+            + "; ".join(summary["experiment_contract_errors"]),
+            file=sys.stderr,
+        )
+        return 1
     if args.max_indexable_orphans is not None:
         if summary["indexable_orphans"] > args.max_indexable_orphans:
             worst = ", ".join(

@@ -88,6 +88,8 @@ PORTFOLIO_FINDER_TOOL = "private-pay-once-iphone-app-finder"
 PORTFOLIO_COST_TOOL = "subscription-cost-calculator"
 PUBLISHER_INTENT_VISUALS = "lumi-studio-publisher-intent-visuals"
 PUBLISHER_INTENT_VISUALS_SITEMAP = "sitemap_intent_visuals.xml"
+GOOGLE_IMAGES_CANARY_SITEMAP = "sitemap_google_images_canary.xml"
+GOOGLE_IMAGES_TREATMENT_SITEMAP = "sitemap_google_images_treatment.xml"
 # Truthful titles for tool slugs whose filename would otherwise read as a
 # capability the tool does not have (e.g. "ats resume keyword checker").
 RESOURCE_TITLES = {
@@ -1816,6 +1818,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_answers.xml", "sitemap_guides.xml", "sitemap_apps.xml",
         "sitemap_stories.xml", "sitemap_llms.xml",
         "sitemap_images.xml", PUBLISHER_INTENT_VISUALS_SITEMAP,
+        GOOGLE_IMAGES_CANARY_SITEMAP, GOOGLE_IMAGES_TREATMENT_SITEMAP,
         app_video_lessons.SITEMAP_NAME,
         "sitemap_linkset.xml", "sitemap_oembed.xml",
         "linkset.json", app_install_decision_routes.SITEMAP_NAME,
@@ -5058,6 +5061,8 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_stories.xml",
             f"Sitemap: {SITE}/sitemap_images.xml",
             f"Sitemap: {SITE}/{PUBLISHER_INTENT_VISUALS_SITEMAP}",
+            f"Sitemap: {SITE}/{GOOGLE_IMAGES_CANARY_SITEMAP}",
+            f"Sitemap: {SITE}/{GOOGLE_IMAGES_TREATMENT_SITEMAP}",
             f"Sitemap: {SITE}/{app_video_lessons.SITEMAP_NAME}",
             f"Sitemap: {SITE}/sitemap_linkset.xml",
             f"Sitemap: {SITE}/sitemap_oembed.xml",
@@ -5121,6 +5126,8 @@ def build_sitemap_index():
             "sitemap_apps.xml",
             "sitemap_stories.xml", "sitemap_images.xml", "sitemap_linkset.xml",
             PUBLISHER_INTENT_VISUALS_SITEMAP,
+            GOOGLE_IMAGES_CANARY_SITEMAP,
+            GOOGLE_IMAGES_TREATMENT_SITEMAP,
             app_video_lessons.SITEMAP_NAME,
             "sitemap_oembed.xml", "sitemap_llms.xml",
             app_install_decision_routes.SITEMAP_NAME,

@@ -298,6 +298,10 @@ def main():
     # 問答,下一輪再被改掉。只加站內連結,不動商店連結,所以不影響下游
     # 「一頁一個 App ID」的身份判定。
     require([PY, os.path.join(HERE, "gen_app_page_related.py")], env=env)
+    # Google Images 真實任務圖 canary。先產頁面與凍結 ledger,再讓 link hub
+    # 只接 treatment；holdout 只留在 image sitemap。產生器會要求完整
+    # pt/ct/mt=8，且 ct 固定聚合到 App×Google Images。
+    require([PY, os.path.join(HERE, "google_images_canary.py")], env=env)
     # 連結圖補完:把只存在於 sitemap 的孤兒頁接回首頁 3 次點擊內。必須跑在
     # 所有頁面產生器之後(才掃得到全部頁),而且要在 build_pages_i18n 重寫
     # 語系首頁之後,否則注入的導覽會被蓋掉。

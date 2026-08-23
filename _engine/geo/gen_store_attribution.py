@@ -57,6 +57,10 @@ EXCLUDED_PARTS = {
     "node_modules",
     "stories",
     "visuals",
+    # This measured canary owns one Apple campaign per App×Google Images.
+    # Its creative dimension is the page ID in data-creative-id / the ledger;
+    # restamping to a generic content bucket would destroy the experiment.
+    "google-images-canary",
 }
 ANCHOR_HREF_RE = re.compile(
     r'(?P<prefix><a\b[^>]*?\bhref=")'

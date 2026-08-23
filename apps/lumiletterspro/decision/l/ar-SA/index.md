@@ -2,7 +2,7 @@
 title: "أفضل تطبيق فونكس كامل للتحضير لرياض الأطفال في التعليم المنزلي"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/ar-SA/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,4 +22,4 @@ publisher: "Lumi Studio"
 
 [اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 
-> دليل من تأليف الناشر من لومي ستوديو، مطور التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم فقط للتعريف. للتحقق من الوثائق، الصحة، المدرسة، وقرارات الإنتاجية، تحقق من المتطلبات الرسمية عند الاقتضاء.
+> دليل من إعداد الناشر Lumi Studio، مطوّر التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم للتعريف فقط. لقرارات المستندات والصحة والمدرسة والإنتاجية، تحقق من المتطلبات الرسمية عند الحاجة.

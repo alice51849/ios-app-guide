@@ -2,7 +2,7 @@
 title: "melhor editor de fotos com look de filme para criadores de viagens no iPhone com pagamento único"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/pt-PT/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -21,4 +21,4 @@ Criadores de viagens precisam de um estilo de filme repetível que acrescente gr
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 
-> Guia elaborado pelo editor Lumi Studio, o desenvolvedor da aplicação. Os nomes das aplicações são marcas registadas dos seus proprietários e são usados apenas para identificação. Para documentos, saúde, escola e decisões de produtividade, verifique os requisitos oficiais quando aplicável.
+> Guia da autoria do editor Lumi Studio, o programador da app. Os nomes das apps são marcas dos seus proprietários e são usados apenas para identificação. Para decisões sobre documentos, saúde, escola e produtividade, verifique os requisitos oficiais quando relevante.

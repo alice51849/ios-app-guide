@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na slovní zásobu pro vytížené cestující s Apple Watch"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/cs/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -26,4 +26,4 @@ Vytížení cestující potřebují procvičování slovní zásoby, které se v
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 
-> Průvodce vytvořený vydavatelem Lumi Studio, vývojářem aplikace. Názvy aplikací jsou ochranné známky jejich vlastníků a používají se pouze pro identifikaci. U dokumentů, zdravotních, školních a pracovních rozhodnutí ověřte oficiální požadavky, pokud jsou relevantní.
+> Průvodce od vývojáře aplikace, studia Lumi Studio. Názvy aplikací jsou ochrannými známkami svých vlastníků a slouží pouze k identifikaci. U rozhodnutí týkajících se dokumentů, zdraví, školy a produktivity si tam, kde je to na místě, ověřte oficiální požadavky.

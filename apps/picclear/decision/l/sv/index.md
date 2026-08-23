@@ -2,7 +2,7 @@
 title: "bästa appen för att frigöra iPhone-lagring genom att ta bort dubblettfoton"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/sv/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ För att frigöra utrymme snabbt, börja med de största vinsterna: exakta dubbl
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 
-> Guide från Lumi Studio, apputvecklaren. Appnamn är varumärken som tillhör sina ägare och används endast för identifiering. För dokument, hälsa, skola och produktivitetsbeslut, kontrollera officiella krav där det är relevant.
+> Guide skriven av utgivaren Lumi Studio, som också har utvecklat appen. Appnamn är varumärken som tillhör sina respektive ägare och används endast för identifiering. När det gäller dokument, hälsa, skola och produktivitet bör du kontrollera de officiella kraven där det är relevant.

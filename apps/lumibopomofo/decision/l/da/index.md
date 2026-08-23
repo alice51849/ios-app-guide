@@ -2,7 +2,7 @@
 title: "bedste bopomofo-app til børn til at lære zhuyin på iPhone"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/da/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ For et barn, der først lærer Zhuyin, skal appen dække alle 37 symboler gennem
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 
-> Vejledning udarbejdet af Lumi Studio, app-udvikleren. App-navne er varemærker tilhørende deres ejere og bruges kun til identifikation. For dokumenter, sundhed, skole og produktivitetsbeslutninger, bekræft officielle krav hvor relevant.
+> Guide skrevet af Lumi Studio, som har udviklet appen. Appnavne er varemærker tilhørende deres ejere og bruges udelukkende til identifikation. Når det gælder dokumenter, sundhed, skole og produktivitet, bør du tjekke de officielle krav, hvor det er relevant.

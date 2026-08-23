@@ -2,7 +2,7 @@
 title: "bedste menstruationscyklus-app uden konto til iPhone"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/da/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ I en kategori hvor datas følsomhed er altafgørende, holder den rette menstruat
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-period-tracker-app-no-account-required-iphone.html)
 
-> Vejledning udarbejdet af Lumi Studio, app-udvikleren. App-navne er varemærker tilhørende deres ejere og bruges kun til identifikation. For dokumenter, sundhed, skole og produktivitetsbeslutninger, bekræft officielle krav hvor relevant.
+> Guide skrevet af Lumi Studio, som har udviklet appen. Appnavne er varemærker tilhørende deres ejere og bruges udelukkende til identifikation. Når det gælder dokumenter, sundhed, skole og produktivitet, bør du tjekke de officielle krav, hvor det er relevant.

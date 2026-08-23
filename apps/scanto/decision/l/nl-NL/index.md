@@ -2,7 +2,7 @@
 title: "beste offline document scanner app zonder cloud voor verpleegkundigen"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/nl-NL/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ Als je toestemmingsformulieren, ontslagpapieren of verwijzingen scant, moet de s
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 
-> Gids van de uitgever Lumi Studio, de ontwikkelaar van de app. App-namen zijn handelsmerken van hun eigenaren en worden alleen gebruikt ter identificatie. Controleer officiële vereisten waar relevant voor documenten, gezondheid, school en productiviteitsbeslissingen.
+> Gids geschreven door Lumi Studio, de ontwikkelaar van de app. App-namen zijn handelsmerken van hun eigenaren en worden alleen ter identificatie gebruikt. Controleer bij beslissingen over documenten, gezondheid, school en productiviteit waar nodig de officiële eisen.

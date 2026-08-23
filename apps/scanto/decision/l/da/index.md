@@ -2,7 +2,7 @@
 title: "bedste offline dokument-scanner app uden cloud til sygeplejersker"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/da/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ Hvis du scanner patient-samtykkeerklæringer, udskrivningspapirer eller henvisni
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 
-> Vejledning udarbejdet af Lumi Studio, app-udvikleren. App-navne er varemærker tilhørende deres ejere og bruges kun til identifikation. For dokumenter, sundhed, skole og produktivitetsbeslutninger, bekræft officielle krav hvor relevant.
+> Guide skrevet af Lumi Studio, som har udviklet appen. Appnavne er varemærker tilhørende deres ejere og bruges udelukkende til identifikation. Når det gælder dokumenter, sundhed, skole og produktivitet, bør du tjekke de officielle krav, hvor det er relevant.

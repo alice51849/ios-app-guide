@@ -2,7 +2,7 @@
 title: "millor app d'activitats de viatge per a infants en viatges familiars"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/ca/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ Els pares que viatgen amb infants petits necessiten activitats que converteixin 
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 
-> Guia creada per l'editor de Lumi Studio, el desenvolupador de l'aplicació. Els noms de les aplicacions són marques comercials dels seus propietaris i s'utilitzen només per a la identificació. Per a documents, salut, escola i decisions de productivitat, verifiqueu els requisits oficials quan sigui pertinent.
+> Guia escrita per Lumi Studio, el desenvolupador de l'aplicació. Els noms de les aplicacions són marques dels seus propietaris i s'utilitzen només per identificar-les. Per a decisions sobre documents, salut, escola i productivitat, comprova els requisits oficials quan sigui rellevant.

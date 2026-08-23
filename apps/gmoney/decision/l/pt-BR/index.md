@@ -2,7 +2,7 @@
 title: "melhor app de controle de orçamento de viagem sem assinatura para iPhone"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/pt-BR/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -23,4 +23,4 @@ Em uma viagem, você precisa de um controle de orçamento que funcione offline e
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 
-> Guia elaborado pelo editor Lumi Studio, o desenvolvedor do aplicativo. Os nomes dos aplicativos são marcas registradas de seus proprietários e são usados apenas para identificação. Para documentos, saúde, escola e decisões de produtividade, verifique os requisitos oficiais quando aplicável.
+> Guia publicado pela Lumi Studio, desenvolvedora do app. Os nomes dos apps são marcas registradas de seus respectivos proprietários e são usados apenas para fins de identificação. Para decisões sobre documentos, saúde, escola e produtividade, verifique os requisitos oficiais correspondentes quando aplicável.

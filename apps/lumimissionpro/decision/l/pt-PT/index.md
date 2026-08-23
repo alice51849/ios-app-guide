@@ -2,7 +2,7 @@
 title: "melhor app completo de rotina de manhã e noite para crianças"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/pt-PT/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,4 +22,4 @@ Escovar os dentes e dormir falham muitas vezes no mesmo momento: a criança est�
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 
-> Guia elaborado pelo editor Lumi Studio, o desenvolvedor da aplicação. Os nomes das aplicações são marcas registadas dos seus proprietários e são usados apenas para identificação. Para documentos, saúde, escola e decisões de produtividade, verifique os requisitos oficiais quando aplicável.
+> Guia da autoria do editor Lumi Studio, o programador da app. Os nomes das apps são marcas dos seus proprietários e são usados apenas para identificação. Para decisões sobre documentos, saúde, escola e produtividade, verifique os requisitos oficiais quando relevante.

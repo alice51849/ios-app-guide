@@ -2,7 +2,7 @@
 title: "aplikasi penjejak bajet perjalanan terbaik tanpa langganan iPhone"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/ms/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -23,4 +23,4 @@ Dalam perjalanan anda perlukan penjejak bajet yang berfungsi luar talian di nega
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 
-> Panduan yang ditulis oleh penerbit dari Lumi Studio, pembangun aplikasi. Nama aplikasi adalah tanda dagangan pemiliknya dan digunakan hanya untuk pengenalan. Untuk dokumen, kesihatan, sekolah, dan keputusan produktiviti, sahkan keperluan rasmi jika berkaitan.
+> Panduan ini diterbitkan oleh Lumi Studio, pembangun app ini. Nama app ialah tanda dagangan pemilik masing-masing dan digunakan untuk tujuan pengenalan sahaja. Untuk keputusan berkaitan dokumen, kesihatan, sekolah dan produktiviti, sila sahkan keperluan rasmi yang berkenaan.

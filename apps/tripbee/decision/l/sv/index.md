@@ -2,7 +2,7 @@
 title: "bästa appen för reseplanering på iPhone"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/sv/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -24,4 +24,4 @@ En bra reseplanerare förvandlar en rörig resa till en tydlig dag-för-dag-tids
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/answers/best-trip-itinerary-planner-app-for-iphone.html)
 
-> Guide från Lumi Studio, apputvecklaren. Appnamn är varumärken som tillhör sina ägare och används endast för identifiering. För dokument, hälsa, skola och produktivitetsbeslut, kontrollera officiella krav där det är relevant.
+> Guide skriven av utgivaren Lumi Studio, som också har utvecklat appen. Appnamn är varumärken som tillhör sina respektive ägare och används endast för identifiering. När det gäller dokument, hälsa, skola och produktivitet bör du kontrollera de officiella kraven där det är relevant.

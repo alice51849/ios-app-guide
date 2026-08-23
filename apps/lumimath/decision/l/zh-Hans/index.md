@@ -2,7 +2,7 @@
 title: "iPhone 上最佳儿童数学游戏应用，培养逻辑思维能力"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/zh-Hans/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -21,4 +21,4 @@ publisher: "Lumi Studio"
 
 [阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 
-> 由应用开发者Lumi Studio发布的指南。应用名称为其所有者的商标，仅用于识别。对于文件、健康、学校和生产力相关的决策，请在相关情况下核实官方要求。
+> 由 App 开发团队 Lumi Studio 亲自撰写的指南。App 名称为其各自所有权人的商标，仅供识别使用。若涉及文档、健康、学校及生产力相关的决定，请视情况核对相关单位的正式规定。

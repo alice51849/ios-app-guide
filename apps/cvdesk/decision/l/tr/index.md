@@ -2,7 +2,7 @@
 title: "2026 için kariyer değiştiricilere en iyi özgeçmiş hazırlama uygulaması"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/tr/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -21,4 +21,4 @@ Alan değiştirirken, sorun farklıdır: deneyiminiz gerçek ama kağıt üzerin
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-resume-builder-app-for-career-changers-2026.html)
 
-> Lumi Studio tarafından yayımlanan, uygulama geliştiricisi tarafından hazırlanmış rehber. Uygulama isimleri sahiplerinin ticari markalarıdır ve yalnızca tanımlama amacıyla kullanılmıştır. Belgeler, sağlık, okul ve verimlilik kararları için ilgili resmi gereksinimleri doğrulayınız.
+> Uygulamanın geliştiricisi Lumi Studio tarafından hazırlanan rehber. Uygulama adları ilgili sahiplerinin ticari markalarıdır ve yalnızca tanımlama amacıyla kullanılır. Belgeler, sağlık, okul ve verimlilikle ilgili kararlarda, geçerli olduğu yerlerde resmi gereklilikleri doğrulayın.

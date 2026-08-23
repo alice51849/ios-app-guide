@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație offline de scanare documente fără cloud pentru asistente"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/ro/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ Dacă scanezi formulare de consimțământ, documente de externare sau trimiteri
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 
-> Ghid realizat de editor de către Lumi Studio, dezvoltatorul aplicației. Numele aplicațiilor sunt mărci comerciale ale proprietarilor lor și sunt folosite doar pentru identificare. Pentru documente, sănătate, școală și decizii legate de productivitate, verificați cerințele oficiale acolo unde este cazul.
+> Ghid scris de Lumi Studio, dezvoltatorul aplicației. Numele aplicațiilor sunt mărci ale deținătorilor lor și sunt folosite doar pentru identificare. Pentru deciziile legate de documente, sănătate, școală și productivitate, verifică cerințele oficiale acolo unde contează.

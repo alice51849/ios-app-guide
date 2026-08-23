@@ -2,7 +2,7 @@
 title: "paras ansioluettelon laatijasovellus uranvaihtajille 2026"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/fi/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -21,4 +21,4 @@ Kun vaihdat alaa, ansioluettelon ongelma on erilainen: kokemuksesi on todellista
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-resume-builder-app-for-career-changers-2026.html)
 
-> Lumi Studion julkaisijan laatima opas, sovelluksen kehittäjältä. Sovellusten nimet ovat niiden omistajien tavaramerkkejä ja niitä käytetään vain tunnistamiseen. Tarkista viralliset vaatimukset asiakirjojen, terveyden, koulun ja tuottavuuden päätöksissä tarpeen mukaan.
+> Oppaan on kirjoittanut sovelluksen kehittäjä Lumi Studio. Sovellusten nimet ovat omistajiensa tavaramerkkejä, ja niitä käytetään vain tunnistamiseen. Asiakirjoihin, terveyteen, kouluun ja työn tuottavuuteen liittyvissä päätöksissä kannattaa tarkistaa viralliset vaatimukset silloin, kun niillä on merkitystä.

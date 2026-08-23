@@ -2,7 +2,7 @@
 title: "migliore app lista cose da fare semplice su iPhone senza abbonamento"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/it/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -23,4 +23,4 @@ Se la maggior parte delle app per liste ti sembra troppo complessa, quella giust
 
 [Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 
-> Guida redatta dall'editore Lumi Studio, lo sviluppatore dell'app. I nomi delle app sono marchi dei rispettivi proprietari e sono utilizzati solo per identificazione. Per documenti, salute, scuola e decisioni sulla produttività, verificare i requisiti ufficiali ove rilevanti.
+> Guida redatta dall'editore Lumi Studio, lo sviluppatore dell'app. I nomi delle app sono marchi dei rispettivi proprietari e sono usati solo a scopo identificativo. Per decisioni che riguardano documenti, salute, scuola e produttività, verifica i requisiti ufficiali quando è rilevante.

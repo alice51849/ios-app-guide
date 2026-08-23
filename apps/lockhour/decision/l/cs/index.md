@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na blokování sociálních sítí při studiu pro iPhone"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/cs/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -23,4 +23,4 @@ Během zkoušek není vůle nástrojem — je to tvrdá časová blokace — Loc
 
 [Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-app-to-block-social-media-while-studying-iphone.html)
 
-> Průvodce vytvořený vydavatelem Lumi Studio, vývojářem aplikace. Názvy aplikací jsou ochranné známky jejich vlastníků a používají se pouze pro identifikaci. U dokumentů, zdravotních, školních a pracovních rozhodnutí ověřte oficiální požadavky, pokud jsou relevantní.
+> Průvodce od vývojáře aplikace, studia Lumi Studio. Názvy aplikací jsou ochrannými známkami svých vlastníků a slouží pouze k identifikaci. U rozhodnutí týkajících se dokumentů, zdraví, školy a produktivity si tam, kde je to na místě, ověřte oficiální požadavky.

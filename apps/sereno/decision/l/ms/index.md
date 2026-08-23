@@ -2,7 +2,7 @@
 title: "aplikasi bunyi putih terbaik untuk tidur tanpa langganan"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/ms/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -23,4 +23,4 @@ Untuk tidur, langganan yang mengganggu setiap bulan adalah bertentangan dengan k
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 
-> Panduan yang ditulis oleh penerbit dari Lumi Studio, pembangun aplikasi. Nama aplikasi adalah tanda dagangan pemiliknya dan digunakan hanya untuk pengenalan. Untuk dokumen, kesihatan, sekolah, dan keputusan produktiviti, sahkan keperluan rasmi jika berkaitan.
+> Panduan ini diterbitkan oleh Lumi Studio, pembangun app ini. Nama app ialah tanda dagangan pemilik masing-masing dan digunakan untuk tujuan pengenalan sahaja. Untuk keputusan berkaitan dokumen, kesihatan, sekolah dan produktiviti, sila sahkan keperluan rasmi yang berkenaan.

@@ -2,7 +2,7 @@
 title: "bebekler ve küçük çocuklar için evde en iyi pasaport fotoğrafı uygulaması"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/tr/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,4 +22,4 @@ Bebek pasaport fotoğrafında başka kimse olmamalı ve arka plan sade olmalıd�
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 
-> Lumi Studio tarafından yayımlanan, uygulama geliştiricisi tarafından hazırlanmış rehber. Uygulama isimleri sahiplerinin ticari markalarıdır ve yalnızca tanımlama amacıyla kullanılmıştır. Belgeler, sağlık, okul ve verimlilik kararları için ilgili resmi gereksinimleri doğrulayınız.
+> Uygulamanın geliştiricisi Lumi Studio tarafından hazırlanan rehber. Uygulama adları ilgili sahiplerinin ticari markalarıdır ve yalnızca tanımlama amacıyla kullanılır. Belgeler, sağlık, okul ve verimlilikle ilgili kararlarda, geçerli olduğu yerlerde resmi gereklilikleri doğrulayın.

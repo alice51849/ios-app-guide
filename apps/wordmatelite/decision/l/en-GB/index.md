@@ -2,7 +2,7 @@
 title: "Wordmate Lite: Vocabulary — Five new words in a minute | iOS App"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/en-GB/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

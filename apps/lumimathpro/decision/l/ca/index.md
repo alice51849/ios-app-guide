@@ -2,7 +2,7 @@
 title: "millor app completa d'aprenentatge de matemàtiques per a infantil i primers cursos"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/ca/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,4 +22,4 @@ Una app completa de matemàtiques inicials ha de fer que el comptatge, el sentit
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 
-> Guia creada per l'editor de Lumi Studio, el desenvolupador de l'aplicació. Els noms de les aplicacions són marques comercials dels seus propietaris i s'utilitzen només per a la identificació. Per a documents, salut, escola i decisions de productivitat, verifiqueu els requisits oficials quan sigui pertinent.
+> Guia escrita per Lumi Studio, el desenvolupador de l'aplicació. Els noms de les aplicacions són marques dels seus propietaris i s'utilitzen només per identificar-les. Per a decisions sobre documents, salut, escola i productivitat, comprova els requisits oficials quan sigui rellevant.

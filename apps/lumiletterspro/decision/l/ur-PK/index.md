@@ -2,7 +2,7 @@
 title: "ہوم اسکول کنڈرگارٹن تیاری کے لیے بہترین مکمل فونکس ایپ"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/ur-PK/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,4 +22,4 @@ publisher: "Lumi Studio"
 
 [مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 
-> Lumi اسٹوڈیو کی طرف سے شائع کردہ رہنما، جو ایپ ڈویلپر ہے۔ ایپ کے نام ان کے مالکان کے تجارتی نشان ہیں اور صرف شناخت کے لیے استعمال ہوتے ہیں۔ دستاویزات، صحت، اسکول، اور پیداواری فیصلوں کے لیے، متعلقہ سرکاری تقاضوں کی تصدیق کریں۔
+> ایپ بنانے والے Lumi Studio کی لکھی ہوئی رہنمائی۔ ایپس کے نام اُن کے مالکان کے ٹریڈ مارک ہیں اور صرف شناخت کے لیے استعمال ہوئے ہیں۔ دستاویزات، صحت، تعلیم اور کام سے متعلق فیصلوں میں جہاں ضرورت ہو وہاں سرکاری یا ادارہ جاتی تقاضے ضرور دیکھ لیں۔

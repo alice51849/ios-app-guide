@@ -2,7 +2,7 @@
 title: "beste TOEIC voorbereidingsapp offline studieplan voor iPhone"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/nl-NL/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -21,4 +21,4 @@ Deel 5 lijkt kort, maar die vragen met onvolledige zinnen kunnen tijd kosten als
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 
-> Gids van de uitgever Lumi Studio, de ontwikkelaar van de app. App-namen zijn handelsmerken van hun eigenaren en worden alleen gebruikt ter identificatie. Controleer officiële vereisten waar relevant voor documenten, gezondheid, school en productiviteitsbeslissingen.
+> Gids geschreven door Lumi Studio, de ontwikkelaar van de app. App-namen zijn handelsmerken van hun eigenaren en worden alleen ter identificatie gebruikt. Controleer bij beslissingen over documenten, gezondheid, school en productiviteit waar nodig de officiële eisen.

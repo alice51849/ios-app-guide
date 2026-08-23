@@ -2,7 +2,7 @@
 title: "mejor app para planificar itinerarios de viaje para iPhone"
 lang: "es-ES"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/es-ES/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -24,4 +24,4 @@ Una buena app de itinerarios convierte un viaje caótico en una línea de tiempo
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-ES/answers/best-trip-itinerary-planner-app-for-iphone.html)
 
-> Guía elaborada por el editor de Lumi Studio, el desarrollador de la aplicación. Los nombres de las aplicaciones son marcas registradas de sus propietarios y se usan solo para identificación. Para documentos, salud, escuela y decisiones de productividad, verifique los requisitos oficiales cuando sea relevante.
+> Guía publicada por Lumi Studio, el desarrollador de la app. Los nombres de las apps son marcas comerciales de sus respectivos propietarios y se utilizan únicamente con fines de identificación. Para decisiones relacionadas con documentos, salud, escuela y productividad, verifica los requisitos oficiales correspondientes cuando sea necesario.

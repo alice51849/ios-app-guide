@@ -2,7 +2,7 @@
 title: "G+Money Lite — Travel Expenses & Currency | iOS App"
 lang: "en-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/en-CA/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

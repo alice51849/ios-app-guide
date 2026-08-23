@@ -2,7 +2,7 @@
 title: "ଶିଶୁମାନଙ୍କ ପାଇଁ ସର୍ବୋତ୍ତମ ଶିକ୍ଷାମୂଳକ ଖେଳ ଆପ୍, କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ, ଆଇଫୋନ୍"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/or-IN/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ publisher: "Lumi Studio"
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 
-> ଲୁମି ଷ୍ଟୁଡିଓ, ଆପ୍ ଡିଭେଲପର ଦ୍ୱାରା ପ୍ରକାଶକ-ଲିଖିତ ଗାଇଡ୍। ଆପ୍ ନାମଗୁଡିକ ତାଙ୍କର ମାଲିକଙ୍କର ଟ୍ରେଡମାର୍କ ଓ ସେମାନେ କେବଳ ପରିଚୟ ପାଇଁ ବ୍ୟବହୃତ। ଡକ୍ୟୁମେଣ୍ଟ, ସ୍ୱାସ୍ଥ୍ୟ, ବିଦ୍ୟାଳୟ ଓ ଉତ୍ପାଦକତା ସମ୍ବନ୍ଧୀୟ ସିଦ୍ଧାନ୍ତ ପାଇଁ, ସମ୍ବନ୍ଧିତ ସରକାରୀ ଆବଶ୍ୟକତାଗୁଡିକୁ ଯାଞ୍ଚ କରନ୍ତୁ।
+> ଆପ୍ ଡେଭଲପର Lumi Studio ଲେଖିଥିବା ମାର୍ଗଦର୍ଶିକା। ଆପ୍‌ମାନଙ୍କ ନାମ ସେମାନଙ୍କ ମାଲିକଙ୍କ ଟ୍ରେଡମାର୍କ ଏବଂ କେବଳ ଚିହ୍ନଟ ପାଇଁ ବ୍ୟବହୃତ। ଦଲିଲ, ସ୍ୱାସ୍ଥ୍ୟ, ବିଦ୍ୟାଳୟ ଓ କାର୍ଯ୍ୟ ସମ୍ବନ୍ଧୀୟ ନିଷ୍ପତ୍ତିରେ ଆବଶ୍ୟକ ସ୍ଥଳେ ସରକାରୀ ବା ଆନୁଷ୍ଠାନିକ ସର୍ତ୍ତ ଯାଞ୍ଚ କରନ୍ତୁ।

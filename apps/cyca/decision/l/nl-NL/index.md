@@ -2,7 +2,7 @@
 title: "beste menstruatie-app zonder account vereist iPhone"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/nl-NL/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ In een categorie waar gegevensgevoeligheid centraal staat, houdt de juiste menst
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-period-tracker-app-no-account-required-iphone.html)
 
-> Gids van de uitgever Lumi Studio, de ontwikkelaar van de app. App-namen zijn handelsmerken van hun eigenaren en worden alleen gebruikt ter identificatie. Controleer officiële vereisten waar relevant voor documenten, gezondheid, school en productiviteitsbeslissingen.
+> Gids geschreven door Lumi Studio, de ontwikkelaar van de app. App-namen zijn handelsmerken van hun eigenaren en worden alleen ter identificatie gebruikt. Controleer bij beslissingen over documenten, gezondheid, school en productiviteit waar nodig de officiële eisen.

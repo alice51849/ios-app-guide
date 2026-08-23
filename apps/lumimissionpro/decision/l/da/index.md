@@ -2,7 +2,7 @@
 title: "bedste komplette morgen- og sengetidsrutine-app til børn"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/da/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,4 +22,4 @@ Tandbørstning og sengetid mislykkes ofte på samme tidspunkt hver aften: barnet
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 
-> Vejledning udarbejdet af Lumi Studio, app-udvikleren. App-navne er varemærker tilhørende deres ejere og bruges kun til identifikation. For dokumenter, sundhed, skole og produktivitetsbeslutninger, bekræft officielle krav hvor relevant.
+> Guide skrevet af Lumi Studio, som har udviklet appen. Appnavne er varemærker tilhørende deres ejere og bruges udelukkende til identifikation. Når det gælder dokumenter, sundhed, skole og produktivitet, bør du tjekke de officielle krav, hvor det er relevant.

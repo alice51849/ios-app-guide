@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație simplă pentru planificarea unei călătorii pe iPhone"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/ro/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -21,4 +21,4 @@ Dacă planifici o singură călătorie viitoare, o cronologie liniștită pentru
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 
-> Ghid realizat de editor de către Lumi Studio, dezvoltatorul aplicației. Numele aplicațiilor sunt mărci comerciale ale proprietarilor lor și sunt folosite doar pentru identificare. Pentru documente, sănătate, școală și decizii legate de productivitate, verificați cerințele oficiale acolo unde este cazul.
+> Ghid scris de Lumi Studio, dezvoltatorul aplicației. Numele aplicațiilor sunt mărci ale deținătorilor lor și sunt folosite doar pentru identificare. Pentru deciziile legate de documente, sănătate, școală și productivitate, verifică cerințele oficiale acolo unde contează.

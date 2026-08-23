@@ -2,7 +2,7 @@
 title: "aplikasi terbaik untuk memblokir media sosial saat belajar di iPhone"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/id/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -23,4 +23,4 @@ Saat ujian, kemauan bukan alatnya — blok waktu yang ketat adalah — LockHour 
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-app-to-block-social-media-while-studying-iphone.html)
 
-> Panduan yang dibuat oleh penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan hanya digunakan untuk identifikasi. Untuk dokumen, kesehatan, sekolah, dan keputusan produktivitas, verifikasi persyaratan resmi jika relevan.
+> Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.

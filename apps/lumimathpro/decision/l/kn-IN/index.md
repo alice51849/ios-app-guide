@@ -2,7 +2,7 @@
 title: "ಪ್ರೀಸ್ಕೂಲ್ ಮತ್ತು ಪ್ರಾರಂಭಿಕ ತರಗತಿಗಳಿಗೆ ಪೂರ್ಣ ಗಣಿತ ಕಲಿಕೆ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/kn-IN/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,4 +22,4 @@ publisher: "Lumi Studio"
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 
-> ಲ್ಯೂಮಿ ಸ್ಟುಡಿಯೋದಿಂದ ಪ್ರಕಟಕ-ರಚಿಸಿದ ಮಾರ್ಗದರ್ಶಿ, ಆ್ಯಪ್ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದವರು. ಆ್ಯಪ್ ಹೆಸರುಗಳು ಅವರ ಮಾಲೀಕರ ಟ್ರೇಡ್‌ಮಾರ್ಕ್‌ಗಳು ಮತ್ತು ಗುರುತಿಸಲು ಮಾತ್ರ ಬಳಸಲಾಗುತ್ತವೆ. ದಾಖಲೆಗಳು, ಆರೋಗ್ಯ, ಶಾಲೆ ಮತ್ತು ಉತ್ಪಾದಕತೆ ನಿರ್ಧಾರಗಳಿಗೆ ಸಂಬಂಧಿಸಿದ ಅಧಿಕೃತ ಅಗತ್ಯಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.
+> ಆ್ಯಪ್ ಡೆವಲಪರ್ Lumi Studio ಬರೆದ ಮಾರ್ಗದರ್ಶಿ. ಆ್ಯಪ್‌ಗಳ ಹೆಸರುಗಳು ಅವುಗಳ ಮಾಲೀಕರ ವ್ಯಾಪಾರ ಚಿಹ್ನೆಗಳು; ಗುರುತಿಸಲು ಮಾತ್ರ ಬಳಸಲಾಗಿದೆ. ದಾಖಲೆ, ಆರೋಗ್ಯ, ಶಾಲೆ ಮತ್ತು ಉತ್ಪಾದಕತೆಗೆ ಸಂಬಂಧಿಸಿದ ನಿರ್ಧಾರಗಳಲ್ಲಿ ಅಗತ್ಯವಿರುವ ಕಡೆ ಅಧಿಕೃತ ನಿಯಮಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.

@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za učenje bopomofo za otroke za učenje zhuyin na iPhonu"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/sl-SI/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ Za otroka, ki se prvič uči Zhuyin, mora aplikacija pokrivati vseh 37 simbolov 
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 
-> Vodnik, ki ga je pripravil založnik Lumi Studio, razvijalec aplikacije. Imena aplikacij so blagovne znamke njihovih lastnikov in se uporabljajo samo za identifikacijo. Za dokumente, zdravje, šolo in odločitve glede produktivnosti preverite uradne zahteve, kjer je to relevantno.
+> Vodnik je napisal razvijalec aplikacije Lumi Studio. Imena aplikacij so blagovne znamke svojih lastnikov in so navedena zgolj za identifikacijo. Pri odločitvah glede dokumentov, zdravja, šole in produktivnosti tam, kjer je to pomembno, preverite uradne zahteve.

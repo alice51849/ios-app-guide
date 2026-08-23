@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na biely šum na zaspávanie bez predplatného"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/sk/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -23,4 +23,4 @@ Pre spánok je predplatné, ktoré vás každý mesiac otravuje, presný opak po
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 
-> Sprievodca od vydavateľa Lumi Studio, vývojára aplikácie. Názvy aplikácií sú ochranné známky ich vlastníkov a používajú sa len na identifikáciu. Pri dokumentoch, zdraví, škole a rozhodnutiach o produktivite overte oficiálne požiadavky, kde je to relevantné.
+> Sprievodcu napísal vývojár aplikácie, štúdio Lumi Studio. Názvy aplikácií sú ochrannými známkami svojich vlastníkov a používajú sa len na identifikáciu. Pri rozhodnutiach týkajúcich sa dokumentov, zdravia, školy a produktivity si tam, kde je to potrebné, overte oficiálne požiadavky.

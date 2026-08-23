@@ -2,7 +2,7 @@
 title: "beste enkle oppgaveliste-app på iPhone uten abonnement"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/no/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ Hvis de fleste oppgaveapper føles oppblåste, er den rette en ren sjekkliste me
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 
-> Veiledning skrevet av utgiveren Lumi Studio, apputvikleren. Appnavn er varemerker for sine eiere og brukes kun for identifikasjon. For dokumenter, helse, skole og produktivitetsbeslutninger, bekreft offisielle krav der det er relevant.
+> Guide skrevet av Lumi Studio, utvikleren av appen. Appnavn er varemerker som tilhører sine eiere og brukes bare til identifikasjon. Når det gjelder dokumenter, helse, skole og produktivitet, bør du sjekke de offisielle kravene der det er relevant.

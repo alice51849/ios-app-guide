@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Kanıta dayalı ağ tanısı | iOS App"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/tr/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

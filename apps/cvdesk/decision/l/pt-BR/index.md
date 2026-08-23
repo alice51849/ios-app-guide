@@ -2,7 +2,7 @@
 title: "melhor app construtor de currículo para quem muda de carreira 2026"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/pt-BR/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -21,4 +21,4 @@ Quando você muda de área, o problema do currículo é diferente: sua experiên
 
 [Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-resume-builder-app-for-career-changers-2026.html)
 
-> Guia elaborado pelo editor Lumi Studio, o desenvolvedor do aplicativo. Os nomes dos aplicativos são marcas registradas de seus proprietários e são usados apenas para identificação. Para documentos, saúde, escola e decisões de produtividade, verifique os requisitos oficiais quando aplicável.
+> Guia publicado pela Lumi Studio, desenvolvedora do app. Os nomes dos apps são marcas registradas de seus respectivos proprietários e são usados apenas para fins de identificação. Para decisões sobre documentos, saúde, escola e produtividade, verifique os requisitos oficiais correspondentes quando aplicável.

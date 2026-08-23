@@ -2,7 +2,7 @@
 title: "aplikasi rutinitas waktu tidur terbaik untuk anak prasekolah tanpa iklan"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/id/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ Untuk anak prasekolah, rutinitas waktu tidur paling efektif jika singkat, visual
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 
-> Panduan yang dibuat oleh penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan hanya digunakan untuk identifikasi. Untuk dokumen, kesehatan, sekolah, dan keputusan produktivitas, verifikasi persyaratan resmi jika relevan.
+> Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.

@@ -2,7 +2,7 @@
 title: "aplikasi foto paspor terbaik untuk bayi dan balita di rumah"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/id/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,4 +22,4 @@ Untuk foto paspor bayi, tidak boleh ada orang lain dalam foto dan latar belakang
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 
-> Panduan yang dibuat oleh penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan hanya digunakan untuk identifikasi. Untuk dokumen, kesehatan, sekolah, dan keputusan produktivitas, verifikasi persyaratan resmi jika relevan.
+> Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.

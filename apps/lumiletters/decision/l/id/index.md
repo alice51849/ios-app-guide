@@ -2,7 +2,7 @@
 title: "aplikasi game edukasi terbaik untuk anak tanpa iklan di iPhone"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/id/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ Untuk anak kecil, hal yang paling penting adalah tanpa iklan dan pengumpulan dat
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 
-> Panduan yang dibuat oleh penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan hanya digunakan untuk identifikasi. Untuk dokumen, kesehatan, sekolah, dan keputusan produktivitas, verifikasi persyaratan resmi jika relevan.
+> Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.

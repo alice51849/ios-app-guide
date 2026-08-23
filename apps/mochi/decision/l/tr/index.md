@@ -2,7 +2,7 @@
 title: "iPhone için aboneliksiz en iyi basit yapılacaklar listesi uygulaması"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/tr/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ publisher: "Lumi Studio"
 
 [Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 
-> Lumi Studio tarafından yayımlanan, uygulama geliştiricisi tarafından hazırlanmış rehber. Uygulama isimleri sahiplerinin ticari markalarıdır ve yalnızca tanımlama amacıyla kullanılmıştır. Belgeler, sağlık, okul ve verimlilik kararları için ilgili resmi gereksinimleri doğrulayınız.
+> Uygulamanın geliştiricisi Lumi Studio tarafından hazırlanan rehber. Uygulama adları ilgili sahiplerinin ticari markalarıdır ve yalnızca tanımlama amacıyla kullanılır. Belgeler, sağlık, okul ve verimlilikle ilgili kararlarda, geçerli olduğu yerlerde resmi gereklilikleri doğrulayın.

@@ -2,7 +2,7 @@
 title: "bästa kompletta matteappen för förskola och tidiga årskurser"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/sv/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -22,4 +22,4 @@ En komplett tidig matteapp ska göra räkning, taluppfattning och första operat
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 
-> Guide från Lumi Studio, apputvecklaren. Appnamn är varumärken som tillhör sina ägare och används endast för identifiering. För dokument, hälsa, skola och produktivitetsbeslut, kontrollera officiella krav där det är relevant.
+> Guide skriven av utgivaren Lumi Studio, som också har utvecklat appen. Appnamn är varumärken som tillhör sina respektive ägare och används endast för identifiering. När det gäller dokument, hälsa, skola och produktivitet bör du kontrollera de officiella kraven där det är relevant.

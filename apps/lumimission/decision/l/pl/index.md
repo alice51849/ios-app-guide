@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do rutyny przed snem dla przedszkolaków bez reklam"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/pl/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ Dla przedszkolaka rutyna przed snem działa najlepiej, gdy jest krótka, wizualn
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 
-> Przewodnik autorstwa wydawcy Lumi Studio, twórcy aplikacji. Nazwy aplikacji są znakami towarowymi ich właścicieli i służą wyłącznie do identyfikacji. W przypadku dokumentów, zdrowia, szkoły i decyzji dotyczących produktywności należy zweryfikować oficjalne wymagania, jeśli mają zastosowanie.
+> Poradnik przygotowany przez wydawcę Lumi Studio, twórcę aplikacji. Nazwy aplikacji są znakami towarowymi ich właścicieli i służą wyłącznie do identyfikacji. Przy decyzjach dotyczących dokumentów, zdrowia, szkoły i produktywności sprawdź oficjalne wymagania tam, gdzie ma to znaczenie.

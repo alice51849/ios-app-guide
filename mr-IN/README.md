@@ -143,6 +143,6 @@ JSON, JSONL आणि CSV मध्ये समान 2,150 नोंदी आ
 
 [मुख्यपृष्ठ](https://alice51849.github.io/ios-app-guide/mr-IN/index.html) · [मुक्त डेटा](https://alice51849.github.io/ios-app-guide/mr-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [परवाना](https://creativecommons.org/licenses/by/4.0/)
 
-अपडेट केलेले: 2026-08-21
+अपडेट केलेले: 2026-08-23
 
 CC BY 4.0 मूळ निर्देशिका संकलनावर लागू होते; अॅप नावे आणि App Store चिन्हे त्यांच्या मालकांची आहेत.

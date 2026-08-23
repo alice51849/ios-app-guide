@@ -2,7 +2,7 @@
 title: "ứng dụng chặn mạng xã hội tốt nhất khi học cho iPhone"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/vi/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -23,4 +23,4 @@ Trong kỳ thi, ý chí không phải là công cụ — mà là chặn nghiêm 
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-app-to-block-social-media-while-studying-iphone.html)
 
-> Hướng dẫn do nhà xuất bản Lumi Studio, nhà phát triển ứng dụng, biên soạn. Tên ứng dụng là nhãn hiệu của chủ sở hữu và chỉ được sử dụng để nhận diện. Đối với tài liệu, sức khỏe, trường học và các quyết định về năng suất, hãy xác minh các yêu cầu chính thức khi cần thiết.
+> Hướng dẫn do Lumi Studio, nhà phát triển ứng dụng, biên soạn. Tên các ứng dụng là thương hiệu của chủ sở hữu tương ứng và chỉ được dùng để nhận diện. Với những quyết định liên quan đến giấy tờ, sức khỏe, học tập và công việc, hãy kiểm tra các yêu cầu chính thức tương ứng khi cần.

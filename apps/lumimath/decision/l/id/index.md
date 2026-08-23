@@ -2,7 +2,7 @@
 title: "aplikasi game matematika terbaik untuk anak membangun keterampilan logika di iPhone"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/id/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ Aplikasi matematika anak terbaik melatih penalaran — pola, urutan, pemikiran s
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 
-> Panduan yang dibuat oleh penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan hanya digunakan untuk identifikasi. Untuk dokumen, kesehatan, sekolah, dan keputusan produktivitas, verifikasi persyaratan resmi jika relevan.
+> Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.

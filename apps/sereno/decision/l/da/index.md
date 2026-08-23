@@ -2,7 +2,7 @@
 title: "bedste app til hvid støj for at falde i søvn uden abonnement"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/da/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -23,4 +23,4 @@ For søvn er et abonnement, der irriterer hver måned, det modsatte af afslappen
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 
-> Vejledning udarbejdet af Lumi Studio, app-udvikleren. App-navne er varemærker tilhørende deres ejere og bruges kun til identifikation. For dokumenter, sundhed, skole og produktivitetsbeslutninger, bekræft officielle krav hvor relevant.
+> Guide skrevet af Lumi Studio, som har udviklet appen. Appnavne er varemærker tilhørende deres ejere og bruges udelukkende til identifikation. Når det gælder dokumenter, sundhed, skole og produktivitet, bør du tjekke de officielle krav, hvor det er relevant.

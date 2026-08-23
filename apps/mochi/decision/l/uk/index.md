@@ -2,7 +2,7 @@
 title: "найпростіший додаток для списку справ на iPhone без підписки"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/uk/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -22,4 +22,4 @@ publisher: "Lumi Studio"
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 
-> Посібник від видавця Lumi Studio, розробника додатка. Назви додатків є торговими марками їх власників і використовуються лише для ідентифікації. Для документів, здоров’я, навчання та продуктивності перевіряйте офіційні вимоги, якщо це доречно.
+> Посібник підготовлено видавцем Lumi Studio, розробником застосунку. Назви застосунків є торговими марками їхніх власників і використовуються лише для ідентифікації. Ухвалюючи рішення щодо документів, здоров'я, навчання та роботи, звіряйтеся з офіційними вимогами там, де це важливо.

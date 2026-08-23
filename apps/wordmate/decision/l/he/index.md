@@ -2,7 +2,7 @@
 title: "אפליקציית אוצר מילים למשתמשים עסוקים עם Apple Watch"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/he/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -26,4 +26,4 @@ publisher: "Lumi Studio"
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 
-> מדריך שפורסם על ידי Lumi Studio, מפתח האפליקציה. שמות האפליקציות הם סימני מסחר של בעליהן ומשמשים לזיהוי בלבד. עבור מסמכים, בריאות, לימודים והחלטות פרודוקטיביות, יש לוודא דרישות רשמיות במידת הצורך.
+> מדריך שנכתב על ידי Lumi Studio, מפתחת האפליקציה. שמות האפליקציות הם סימני מסחר של בעליהם ומופיעים לצורכי זיהוי בלבד. בהחלטות שנוגעות למסמכים, בריאות, לימודים ופרודוקטיביות כדאי לבדוק את הדרישות הרשמיות היכן שזה רלוונטי.

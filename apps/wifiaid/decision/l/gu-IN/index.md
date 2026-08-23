@@ -2,7 +2,7 @@
 title: "WiFi Aid — નેટવર્ક ડાયગ્નોસિસ અને પુરાવા | iOS App"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/gu-IN/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

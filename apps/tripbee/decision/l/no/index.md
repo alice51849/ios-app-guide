@@ -2,7 +2,7 @@
 title: "beste app for reiseplanlegger på iPhone"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/no/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -24,4 +24,4 @@ En god reiseplan-app gjør en rotete tur om til en klar dag-for-dag tidslinje �
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-trip-itinerary-planner-app-for-iphone.html)
 
-> Veiledning skrevet av utgiveren Lumi Studio, apputvikleren. Appnavn er varemerker for sine eiere og brukes kun for identifikasjon. For dokumenter, helse, skole og produktivitetsbeslutninger, bekreft offisielle krav der det er relevant.
+> Guide skrevet av Lumi Studio, utvikleren av appen. Appnavn er varemerker som tilhører sine eiere og brukes bare til identifikasjon. Når det gjelder dokumenter, helse, skole og produktivitet, bør du sjekke de offisielle kravene der det er relevant.

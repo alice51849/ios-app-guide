@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na plánovanie itinerára cesty pre iPhone"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/sk/index.html"
-modified: "2026-08-22"
+modified: "2026-08-23"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -24,4 +24,4 @@ Dobrá aplikácia na itinerár premení chaotickú cestu na jasný denný harmon
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-trip-itinerary-planner-app-for-iphone.html)
 
-> Sprievodca od vydavateľa Lumi Studio, vývojára aplikácie. Názvy aplikácií sú ochranné známky ich vlastníkov a používajú sa len na identifikáciu. Pri dokumentoch, zdraví, škole a rozhodnutiach o produktivite overte oficiálne požiadavky, kde je to relevantné.
+> Sprievodcu napísal vývojár aplikácie, štúdio Lumi Studio. Názvy aplikácií sú ochrannými známkami svojich vlastníkov a používajú sa len na identifikáciu. Pri rozhodnutiach týkajúcich sa dokumentov, zdravia, školy a produktivity si tam, kde je to potrebné, overte oficiálne požiadavky.

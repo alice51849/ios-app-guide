@@ -17,6 +17,7 @@ Wenn sich die meisten To-Do-Apps aufgebläht anfühlen, ist die richtige eine sa
 - Kostenloser Einstieg · dauerhafte Freischaltung
 - Keine Werbung
 - App Store · Kostenlos
+- ★ 5.0/5 · 1
 
 [Holen Sie sich Mochi im App Store →](https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=iag_data_de_de&mt=8)
 

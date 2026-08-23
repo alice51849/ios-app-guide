@@ -5,8 +5,8 @@
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.json",
   "dateModified": "2026-08-23",
-  "content_digest": "45bf16c3a507c9ebe6917d807334b70ff7719d3bf1b3131e20a328e8eb95a34e",
-  "generation_digest": "2c96c5c816d9e819e8d1dcbf9746b31a88970bb3e0d23807642d34e3499002fb",
+  "content_digest": "10c1eca17fce7bb80deebd96415414848f24ef54063ca14ee749f58baadc59f6",
+  "generation_digest": "6c262093e2c377df52e517fc4e06e786edbf07dd261b310215a327c49c78fdf8",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -12659,7 +12659,8 @@
         "Produktivität",
         "Kostenloser Einstieg · dauerhafte Freischaltung",
         "Keine Werbung",
-        "App Store · Kostenlos"
+        "App Store · Kostenlos",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/de-DE/index.html",
@@ -12672,7 +12673,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "EUR",
-        "formatted_price": "Kostenlos"
+        "formatted_price": "Kostenlos",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
       "publisher_disclosure": "Ein vom App-Entwickler Lumi Studio selbst verfasster Ratgeber. App-Namen sind Marken ihrer jeweiligen Eigentümer und werden nur zur Identifikation verwendet. Bei Entscheidungen zu Dokumenten, Gesundheit, Schule und Produktivität prüfen Sie bitte gegebenenfalls die offiziellen Vorgaben.",
@@ -23710,7 +23713,7 @@
         "Free to start · one-time unlock",
         "No ads",
         "App Store · Free",
-        "★ 4.5/5 · 4"
+        "★ 4.6/5 · 5"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/en-US/index.html",
@@ -23724,8 +23727,8 @@
         "price": "0",
         "currency": "USD",
         "formatted_price": "Free",
-        "rating_value": 4.5,
-        "rating_count": 4
+        "rating_value": 4.6,
+        "rating_count": 5
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
@@ -109017,7 +109020,8 @@
         "兒童與學習",
         "免費開始 · 一次購買解鎖",
         "無廣告",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/zh-Hant/index.html",
@@ -109030,7 +109034,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -109118,7 +109124,7 @@
         "免費開始 · 一次購買解鎖",
         "無廣告",
         "App Store · 免費",
-        "★ 5.0/5 · 1"
+        "★ 5.0/5 · 2"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/zh-Hant/index.html",
@@ -109133,7 +109139,7 @@
         "currency": "TWD",
         "formatted_price": "免費",
         "rating_value": 5.0,
-        "rating_count": 1
+        "rating_count": 2
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",

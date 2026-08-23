@@ -17,6 +17,7 @@ publisher: "Lumi Studio"
 - 免費開始 · 一次購買解鎖
 - 無廣告
 - App Store · 免費
+- ★ 5.0/5 · 1
 
 [在 App Store 取得 Lumi Letters →](https://apps.apple.com/tw/app/id6778748533?pt=118326163&ct=iag_data_zh_hant&mt=8)
 

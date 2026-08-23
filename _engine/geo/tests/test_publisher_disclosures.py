@@ -112,9 +112,12 @@ class PublisherDisclosureTests(unittest.TestCase):
                     f'<div class="wrap">{legacy_footer}</div></footer>'
                 ),
                 "fr-FR/guides/example.html": (
-                    "<main><h1>Guide</h1><p><small>"
+                    "<main><h1>Guide</h1><hr><p><small>"
                     "Ancienne déclaration indépendante."
-                    "</small></p></main>"
+                    "</small></p><!-- app-store-qr:start -->"
+                    '<section class="app-store-qr-card"></section>'
+                    '<p data-publisher-disclosure="true"><small>'
+                    f"{translated_footer}</small></p></main>"
                 ),
                 "fr-FR/hubs/index.html": (
                     "<main><h1>Hub</h1></main></body>"
@@ -168,6 +171,10 @@ class PublisherDisclosureTests(unittest.TestCase):
                             f"{translated_notice} Les prix peuvent changer. "
                             f"{translated_legal}"
                         ),
+                        disclosures.NEW_AIM990_NOTICE: (
+                            f"{translated_notice} Les prix peuvent changer. "
+                            f"{translated_legal}"
+                        ),
                         disclosures.NEW_FOOTER: "Guide publié par Lumi Studio.",
                     }
                 ),
@@ -181,6 +188,55 @@ class PublisherDisclosureTests(unittest.TestCase):
                 f"{translated_notice} {translated_legal}",
                 loaded[disclosures.NEW_AIM990_NOTICE],
             )
+
+    def test_localized_aim990_notice_is_selected_by_app_identity(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            pages = root / "pages"
+            translations = root / "translations"
+            translations.mkdir()
+            notice = "앱 개발자가 직접 작성한 구매 가이드입니다."
+            aim990_notice = (
+                f"{notice} 토익은 ETS의 등록 상표이며 Aim990은 ETS와 "
+                "제휴하거나 승인받지 않은 독립 학습 도구입니다."
+            )
+            footer = "Lumi Studio가 직접 작성한 가이드입니다."
+            (translations / "ko.json").write_text(
+                json.dumps(
+                    {
+                        disclosures.NEW_NOTICE: notice,
+                        disclosures.NEW_AIM990_NOTICE: aim990_notice,
+                        disclosures.NEW_FOOTER: footer,
+                    }
+                ),
+                encoding="utf-8",
+            )
+            path = pages / "ko" / "answers" / "best-toeic-app.html"
+            path.parent.mkdir(parents=True)
+            path.write_text(
+                '<article class="card two answer">'
+                f'<p class="notice">{aim990_notice}</p></article>'
+                '<a href="https://apps.apple.com/kr/app/id6784974530">'
+                "App Store</a>"
+                '<footer class="footer">'
+                f'<div class="wrap">{footer}</div></footer>',
+                encoding="utf-8",
+            )
+
+            first = disclosures.migrate(
+                pages,
+                translations_dir=translations,
+            )
+            second = disclosures.migrate(
+                pages,
+                translations_dir=translations,
+            )
+
+            source = path.read_text(encoding="utf-8")
+            self.assertIn(f'<p class="notice">{aim990_notice}</p>', source)
+            self.assertNotIn(f'<p class="notice">{notice}</p>', source)
+            self.assertEqual(1, first["changed_files"])
+            self.assertEqual(0, second["changed_files"])
 
     def test_canadian_french_disclosures_never_fall_back_to_english(
         self,

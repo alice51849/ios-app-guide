@@ -56,6 +56,7 @@ NEW_AIM990_NOTICE = (
     "independent study aid and is not affiliated with or endorsed by ETS. "
     "No app can guarantee a TOEIC score."
 )
+AIM990_APP_IDS = frozenset({"6784974530", "6792483140"})
 LEGACY_DOUBLED_AIM990_NOTICE = (
     f"{NEW_NOTICE} App Store features and prices can change, so confirm "
     "details on the listing before purchase. TOEIC is a registered trademark "
@@ -118,6 +119,13 @@ TERMINAL_SMALL_RE = re.compile(
     r"<p(?:\s+[^>]*)?><small>[^<]*</small></p>\s*</main>",
     re.DOTALL,
 )
+PRE_MANAGED_GUIDE_DISCLOSURE_RE = re.compile(
+    r'(?P<hr><hr(?:\s+[^>]*)?>\s*)'
+    r'<p(?![^>]*\bdata-publisher-disclosure="true")[^>]*>'
+    r"\s*<small>[^<]*</small>\s*</p>"
+    r"(?=\s*<!--\s*app-store-qr:start\s*-->)",
+    re.IGNORECASE | re.DOTALL,
+)
 AUTHOR_CARD = (
     '<data class="p-author h-card vcard" value="Lumi Studio">'
     '<data class="p-name p-org fn org" value="Lumi Studio"></data>'
@@ -164,11 +172,28 @@ def _translations(locale: str, translations_dir: Path) -> dict[str, str]:
     ):
         sentences = SENTENCE_SPLIT_RE.split(doubled.strip())
         if len(sentences) >= 5 and sentences[1] == sentences[2]:
-            payload.setdefault(NEW_NOTICE, " ".join(sentences[:2]))
-            payload.setdefault(
-                NEW_AIM990_NOTICE,
-                " ".join(sentences[:2] + sentences[3:]),
-            )
+            corrected = {
+                NEW_NOTICE: " ".join(sentences[:2]),
+                NEW_AIM990_NOTICE: " ".join(
+                    sentences[:2] + sentences[3:]
+                ),
+            }
+            for key, value in corrected.items():
+                current = payload.get(key)
+                current_sentences = (
+                    SENTENCE_SPLIT_RE.split(current.strip())
+                    if isinstance(current, str) and current.strip()
+                    else []
+                )
+                if (
+                    current is None
+                    or current == doubled
+                    or (
+                        len(current_sentences) >= 3
+                        and current_sentences[1] == current_sentences[2]
+                    )
+                ):
+                    payload[key] = value
     return payload
 
 
@@ -291,6 +316,10 @@ def _publisher_footer(text: str) -> str:
     )
 
 
+def _is_aim990_page(source: str) -> bool:
+    return any(f"/id{app_id}" in source for app_id in AIM990_APP_IDS)
+
+
 def _discover_structural_legacy(
     answer_pages: Iterable[Path],
     pages: Path,
@@ -377,7 +406,7 @@ def _answer_disclosure_errors(
     pages: Path,
     translations_dir: Path,
 ) -> list[Path]:
-    cache: dict[str, tuple[set[str], str]] = {}
+    cache: dict[str, tuple[str, str, str]] = {}
     errors: list[Path] = []
     for path in answer_pages:
         locale = _locale_for(path, pages)
@@ -391,13 +420,11 @@ def _answer_disclosure_errors(
             )
             footer, _ = _localized(NEW_FOOTER, locale, translations)
             cache[locale] = (
-                {
-                    html.escape(notice, quote=False),
-                    html.escape(aim990, quote=False),
-                },
+                html.escape(notice, quote=False),
+                html.escape(aim990, quote=False),
                 html.escape(footer, quote=False),
             )
-        expected_notices, expected_footer = cache[locale]
+        expected_notice, expected_aim990, expected_footer = cache[locale]
         source = path.read_text(encoding="utf-8")
         if (
             ANSWER_ARTICLE_MARKER not in source
@@ -414,9 +441,12 @@ def _answer_disclosure_errors(
         if ANSWER_ARTICLE_MARKER not in source:
             continue
         notice_match = NOTICE_RE.search(source)
+        expected = (
+            expected_aim990 if _is_aim990_page(source) else expected_notice
+        )
         if (
             notice_match is None
-            or notice_match.group("text") not in expected_notices
+            or notice_match.group("text") != expected
         ):
             errors.append(path)
     return errors
@@ -464,13 +494,12 @@ def _ensure_answer_disclosure(
     footer: str,
 ) -> tuple[str, int, bool]:
     replacements = 0
-    used_aim990 = False
+    used_aim990 = _is_aim990_page(source)
     updated = source
     if ANSWER_ARTICLE_MARKER in updated:
         match = NOTICE_RE.search(updated)
         if match:
             old = match.group("text")
-            used_aim990 = "Aim990" in old and "TOEIC" in old
             target = aim990_notice if used_aim990 else notice
             escaped = html.escape(target, quote=False)
             if old != escaped:
@@ -489,23 +518,28 @@ def _ensure_answer_disclosure(
 
 
 def _ensure_guide_disclosure(source: str, footer: str) -> tuple[str, int]:
-    if PUBLISHER_MARKER in source:
-        return source, 0
+    updated, removed = PRE_MANAGED_GUIDE_DISCLOSURE_RE.subn(
+        r"\g<hr>",
+        source,
+        count=1,
+    )
+    if PUBLISHER_MARKER in updated:
+        return updated, removed
     disclosure = (
         f'<p {PUBLISHER_MARKER}><small>'
         f"{html.escape(footer, quote=False)}</small></p>"
     )
     updated, count = TERMINAL_SMALL_RE.subn(
         f"{disclosure}\n</main>",
-        source,
+        updated,
         count=1,
     )
     if count:
-        return updated, count
+        return updated, removed + count
     anchor = "</main>" if "</main>" in source else "</body>"
     if anchor not in source:
         raise RuntimeError("guide page has no disclosure insertion anchor")
-    return source.replace(anchor, f"{disclosure}{anchor}", 1), 1
+    return updated.replace(anchor, f"{disclosure}{anchor}", 1), removed + 1
 
 
 def _ensure_hub_disclosure(source: str, footer: str) -> tuple[str, int]:
@@ -669,17 +703,25 @@ def migrate(
             for path in invalid_answers[:5]
         )
         raise RuntimeError(f"Answer disclosure is not localized: {sample}")
-    missing_markers = [
-        path
-        for path in all_pages
-        if _section_for(path, pages) in {"guides", "hubs"}
-        and PUBLISHER_MARKER not in path.read_text(encoding="utf-8")
-    ]
-    if missing_markers:
+    invalid_markers = []
+    for path in all_pages:
+        section = _section_for(path, pages)
+        if section not in {"guides", "hubs"}:
+            continue
+        source = path.read_text(encoding="utf-8")
+        if (
+            source.count(PUBLISHER_MARKER) != 1
+            or (
+                section == "guides"
+                and PRE_MANAGED_GUIDE_DISCLOSURE_RE.search(source)
+            )
+        ):
+            invalid_markers.append(path)
+    if invalid_markers:
         sample = ", ".join(
-            path.relative_to(pages).as_posix() for path in missing_markers[:5]
+            path.relative_to(pages).as_posix() for path in invalid_markers[:5]
         )
-        raise RuntimeError(f"Publisher disclosure missing: {sample}")
+        raise RuntimeError(f"Publisher disclosure invalid: {sample}")
 
     return {
         "scanned_files": len(all_pages),

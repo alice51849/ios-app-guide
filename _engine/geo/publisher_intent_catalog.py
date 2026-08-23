@@ -941,7 +941,8 @@ def _publisher_disclosure(
     localized_fallback: str,
 ) -> str:
     pattern = (
-        r'<footer class="footer">(?:.*?)<div class="wrap">(.*?)</div></footer>'
+        r'<footer class="footer">(?:.*?)'
+        r'<div class="wrap"[^>]*>(.*?)</div></footer>'
         if answer_page
         else r'<footer class="footer">(.*?)</footer>'
     )

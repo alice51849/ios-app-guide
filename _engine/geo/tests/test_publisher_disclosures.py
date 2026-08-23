@@ -274,9 +274,14 @@ class PublisherDisclosureTests(unittest.TestCase):
             self.assertNotIn("independent buying guide", source, name)
 
     def test_daily_geo_regenerates_tool_before_disclosure_gate(self) -> None:
-        root = Path(disclosures.__file__).resolve().parents[2]
+        engine_root = Path(disclosures.__file__).resolve().parents[1]
+        pages_root = (
+            engine_root.parent
+            if engine_root.name == "_engine"
+            else engine_root / "geo" / "pages"
+        )
         workflow = (
-            root / ".github" / "workflows" / "geo-daily.yml"
+            pages_root / ".github" / "workflows" / "geo-daily.yml"
         ).read_text(encoding="utf-8")
         materialize = workflow.split(
             "- name: Materialize newly live app surfaces",

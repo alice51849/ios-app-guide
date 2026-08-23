@@ -4275,7 +4275,7 @@ class GeneratorTests(unittest.TestCase):
         expected_guides = {
             f"{gen_feed.SITE}/guides/{path.name}"
             for path in (pages / "guides").glob("*.html")
-            if path.name != "index.html"
+            if path.name not in gen_feed.EXCLUDED_FEED_NAMES
         }
         self.assertTrue(expected_guides <= set(atom_ids))
         expected_resource_answers = set()

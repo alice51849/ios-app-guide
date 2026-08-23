@@ -232,7 +232,7 @@ def render(key, c):
 <main>
 {body}
 <hr>
-<p><small>Independent guide. App names are trademarks of their owners, used for identification only.</small></p>
+<p data-publisher-disclosure="true"><small>Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.</small></p>
 </main>
 </body>
 </html>

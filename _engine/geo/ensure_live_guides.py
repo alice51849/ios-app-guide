@@ -42,7 +42,7 @@ def fallback_content(key: str) -> dict[str, object]:
     feature_summary = ", ".join(criteria[:3]).rstrip(".")
     return {
         "title": f"{name}: iPhone App Guide",
-        "meta": summary or f"An independent guide to {name} for iPhone.",
+        "meta": summary or f"A publisher-authored guide to {name} for iPhone.",
         "intro": (
             f"When comparing {category} apps, start with the features that fit "
             f"your real situation, then confirm current compatibility and "

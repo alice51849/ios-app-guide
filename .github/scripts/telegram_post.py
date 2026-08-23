@@ -17,6 +17,7 @@ from social_post_common import (
     HTTPStatusError,
     OFFICIAL_SOCIAL_LOCALES,
     RequestError,
+    campaign_app_store_url,
     canonical_app_store_url,
     canonical_social_image_url,
     channel_candidates,
@@ -190,7 +191,7 @@ def pick(pool, now=None):
 
 
 def compose_text(item):
-    url = canonical_app_store_url(item.get("url"))
+    url = campaign_app_store_url(item.get("url"), "soc_tg_guide")
     return (
         f"{item['text']}\n\n👉 {url}\n\n"
         f"{item_footer(item)}"

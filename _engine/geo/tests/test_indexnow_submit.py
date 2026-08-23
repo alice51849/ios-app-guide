@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import importlib.util
 import io
+import os
 from pathlib import Path
 import tempfile
 import unittest
@@ -26,7 +27,13 @@ def _site_workflow(name: str) -> str:
     on both sides of the mirror.
     """
     here = Path(__file__).resolve()
-    for candidate in (here.parents[3], here.parents[1] / "pages"):
+    configured = os.environ.get("GEO_GUIDE_ROOT", "").strip()
+    candidates = (
+        *((Path(configured).expanduser().resolve(),) if configured else ()),
+        here.parents[3],
+        here.parents[1] / "pages",
+    )
+    for candidate in candidates:
         path = candidate / ".github" / "workflows" / name
         if path.is_file():
             return path.read_text(encoding="utf-8")
@@ -427,15 +434,35 @@ class IndexNowTests(unittest.TestCase):
                 )
             self.assertFalse(state_file.exists())
 
-    def test_workflow_gates_geo_success_and_caches_submission_sha(self) -> None:
+    def test_workflow_waits_for_exact_pages_deployment(self) -> None:
         workflow = _site_workflow("indexnow-daily.yml")
+        pages_workflow = _site_workflow("pages.yml")
+        self.assertIn(
+            'workflows: ["Deploy static site to Pages"]',
+            workflow,
+        )
         self.assertIn(
             "github.event.workflow_run.conclusion == 'success'",
             workflow,
         )
+        self.assertIn(".well-known/deployment.json", workflow)
+        self.assertIn('git checkout --detach "$deployed_sha"', workflow)
+        self.assertIn("live_app_guard.py --site-root .", workflow)
         self.assertIn("actions/cache/restore@v4", workflow)
         self.assertIn("actions/cache/save@v4", workflow)
         self.assertIn('--state-file "$state_file"', workflow)
+        self.assertIn("Write immutable deployment manifest", pages_workflow)
+        self.assertIn("Verify exact deployment is live", pages_workflow)
+        self.assertIn("steps.verify_live.outcome == 'success'", pages_workflow)
+
+    def test_local_burst_refuses_unpublished_or_dirty_tree(self) -> None:
+        script = MODULE_PATH.with_name("promo_burst.sh")
+        if not script.is_file():
+            raise unittest.SkipTest("promo_burst.sh is canonical-only")
+        source = script.read_text(encoding="utf-8")
+        self.assertIn("LIVE_SHA", source)
+        self.assertIn("unsafe unpublished tree", source)
+        self.assertIn('--pages-dir "$PAGES"', source)
 
     def test_submit_all_requires_every_endpoint_and_chunks_safely(self) -> None:
         calls: list[tuple[str, int]] = []

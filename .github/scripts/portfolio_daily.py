@@ -18,6 +18,7 @@ from pathlib import Path
 from social_post_common import (
     HTTPStatusError,
     RequestError,
+    campaign_app_store_url,
     canonical_app_store_url,
     request_json,
     validate_url,
@@ -41,6 +42,10 @@ TELEGRAM_LIMIT = 3900
 THREADS_LIMIT = threads_post.MAX_POST_CHARS
 THREADS_LINK_LIMIT = 5
 PORTFOLIO_WORKFLOW = "portfolio-daily.yml"
+PLATFORM_CAMPAIGNS = {
+    "telegram": "soc_tg_guide",
+    "threads": "soc_th_guide",
+}
 
 CATEGORY_ORDER = {
     "kids": 0,
@@ -79,9 +84,14 @@ class PublicApp:
     name: str
     category: str
 
-    def appstore_url(self):
-        return canonical_app_store_url(
+    def appstore_url(self, campaign=None):
+        canonical = canonical_app_store_url(
             f"https://apps.apple.com/app/id{self.app_id}"
+        )
+        return (
+            canonical
+            if campaign is None
+            else campaign_app_store_url(canonical, campaign)
         )
 
 
@@ -404,6 +414,7 @@ def _pack_apps(
 
 def telegram_messages(apps):
     total = len(apps)
+    campaign = PLATFORM_CAMPAIGNS["telegram"]
     footer = f"\n\n完整開發者頁：{DEVELOPER_URL}"
     reserved_header = (
         f"✨ 每日全 App 精選｜{total} 款｜第 99/99 則\n\n"
@@ -414,7 +425,7 @@ def telegram_messages(apps):
         category = CATEGORY_ZH.get(app.category, CATEGORY_ZH["other"])
         return (
             f"• {category}｜{app.name}\n"
-            f"  {app.appstore_url()}"
+            f"  {app.appstore_url(campaign)}"
         )
 
     batches = _pack_apps(
@@ -442,12 +453,13 @@ def telegram_messages(apps):
 
 def threads_messages(apps):
     total = len(apps)
+    campaign = PLATFORM_CAMPAIGNS["threads"]
     footer = ""
     reserved_header = (
         f"Daily portfolio 99/99 — {total} live apps, all included today.\n\n"
     )
     def entry(app):
-        return f"{app.name}\n{app.appstore_url()}"
+        return f"{app.name}\n{app.appstore_url(campaign)}"
 
     batches = _pack_apps(
         apps,
@@ -479,6 +491,9 @@ def threads_messages(apps):
 
 
 def validate_coverage(platform, apps, messages):
+    campaign = PLATFORM_CAMPAIGNS.get(platform)
+    if campaign is None:
+        raise CoverageError(f"Unsupported platform: {platform}")
     expected = [app.app_id for app in apps]
     observed = [
         app_id for message in messages for app_id in message.app_ids
@@ -495,7 +510,10 @@ def validate_coverage(platform, apps, messages):
     by_id = {app.app_id: app for app in apps}
     link_pattern = re.compile(r"https?://apps\.apple\.com/app/id\d+\S*")
     for message in messages:
-        expected_urls = [by_id[app_id].appstore_url() for app_id in message.app_ids]
+        expected_urls = [
+            by_id[app_id].appstore_url(campaign)
+            for app_id in message.app_ids
+        ]
         observed_urls = link_pattern.findall(message.text)
         if observed_urls != expected_urls:
             raise CoverageError(
@@ -503,9 +521,13 @@ def validate_coverage(platform, apps, messages):
                 f"expected={expected_urls}, observed={observed_urls}"
             )
         for url in observed_urls:
-            if canonical_app_store_url(url) != url:
+            parsed = urllib.parse.urlsplit(url)
+            bare = urllib.parse.urlunsplit(
+                (parsed.scheme, parsed.netloc, parsed.path, "", "")
+            )
+            if campaign_app_store_url(bare, campaign) != url:
                 raise CoverageError(
-                    f"{platform} App Store URL is not canonical: {url}"
+                    f"{platform} App Store URL attribution is invalid: {url}"
                 )
 
 

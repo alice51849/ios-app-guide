@@ -306,9 +306,10 @@ COPY = {
         ),
         "sources": "Method and official references",
         "sources_text": (
-            "This independent guide was designed as a low-pressure practice observation "
-            "guide. Symbol forms and notation were checked against Taiwan Ministry of "
-            "Education references; those agencies did not create or endorse this tool."
+            "This publisher-authored tool was designed as a low-pressure practice "
+            "observation guide. Symbol forms and notation were checked against Taiwan "
+            "Ministry of Education references; those agencies did not create or endorse "
+            "this tool."
         ),
         "source_labels": (
             "Ministry of Education Bopomofo Handbook",

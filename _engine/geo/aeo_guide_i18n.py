@@ -185,17 +185,23 @@ def reconcile_hreflang(keys):
 
 
 FOOTER_DISCLAIMER = {
-    "zh-Hant": "獨立指南。App 名稱為各自所有者的商標,僅供辨識之用。",
-    "zh-Hans": "独立指南。App 名称为各自所有者的商标,仅供识别之用。",
-    "ja": "独立系ガイドです。App名は各所有者の商標であり、識別のみを目的として使用しています。",
-    "ko": "독립 가이드입니다. 앱 이름은 각 소유자의 상표이며 식별 목적으로만 사용됩니다.",
-    "de-DE": "Unabhängiger Ratgeber. App-Namen sind Marken ihrer jeweiligen Eigentümer und werden nur zur Identifikation verwendet.",
-    "fr-FR": "Guide indépendant. Les noms d’apps sont des marques de leurs propriétaires respectifs, utilisés uniquement à des fins d’identification.",
-    "es-ES": "Guía independiente. Los nombres de apps son marcas de sus propietarios, usados solo con fines de identificación.",
-    "es-MX": "Guía independiente. Los nombres de apps son marcas de sus propietarios, usados solo con fines de identificación.",
-    "pt-BR": "Guia independente. Os nomes de apps são marcas de seus proprietários, usados apenas para identificação.",
-    "it": "Guida indipendente. I nomi delle app sono marchi dei rispettivi proprietari, usati solo a scopo identificativo.",
+    "zh-Hant": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
+    "zh-Hans": "由 App 开发团队 Lumi Studio 亲自撰写的指南。App 名称为其各自所有权人的商标，仅供识别使用。若涉及文档、健康、学校及生产力相关的决定，请视情况核对相关单位的正式规定。",
+    "ja": "アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。",
+    "ko": "앱 개발자인 Lumi Studio에서 직접 작성한 가이드입니다. 앱 이름은 해당 소유자의 상표이며 식별 목적으로만 사용됩니다. 문서, 건강, 학교 및 생산성과 관련된 결정을 내릴 때는 필요에 따라 관련 기관의 공식 요건을 확인하시기 바랍니다.",
+    "de-DE": "Ein vom App-Entwickler Lumi Studio selbst verfasster Ratgeber. App-Namen sind Marken ihrer jeweiligen Eigentümer und werden nur zur Identifikation verwendet. Bei Entscheidungen zu Dokumenten, Gesundheit, Schule und Produktivität prüfen Sie bitte gegebenenfalls die offiziellen Vorgaben.",
+    "fr-FR": "Guide rédigé et publié par Lumi Studio, le développeur de l'app. Les noms d'apps sont des marques déposées de leurs propriétaires respectifs et sont utilisés uniquement à des fins d'identification. Pour les décisions relatives aux documents, à la santé, à l'école et à la productivité, veuillez vérifier les exigences officielles applicables.",
+    "es-ES": "Guía publicada por Lumi Studio, el desarrollador de la app. Los nombres de las apps son marcas comerciales de sus respectivos propietarios y se utilizan únicamente con fines de identificación. Para decisiones relacionadas con documentos, salud, escuela y productividad, verifica los requisitos oficiales correspondientes cuando sea necesario.",
+    "es-MX": "Guía escrita por Lumi Studio, el desarrollador de la app. Los nombres de las apps son marcas de sus dueños y se usan solo para identificarlas. Para decisiones sobre documentos, salud, escuela y productividad, revisa los requisitos oficiales cuando aplique.",
+    "pt-BR": "Guia publicado pela Lumi Studio, desenvolvedora do app. Os nomes dos apps são marcas registradas de seus respectivos proprietários e são usados apenas para fins de identificação. Para decisões sobre documentos, saúde, escola e produtividade, verifique os requisitos oficiais correspondentes quando aplicável.",
+    "it": "Guida redatta dall'editore Lumi Studio, lo sviluppatore dell'app. I nomi delle app sono marchi dei rispettivi proprietari e sono usati solo a scopo identificativo. Per decisioni che riguardano documenti, salute, scuola e produttività, verifica i requisiti ufficiali quando è rilevante.",
 }
+DEFAULT_FOOTER_DISCLAIMER = (
+    "Publisher-authored guide from Lumi Studio, the app developer. App names "
+    "are trademarks of their owners and are used only for identification. "
+    "For documents, health, school, and productivity decisions, verify "
+    "official requirements where relevant."
+)
 
 
 def render(key, locale, c):
@@ -253,7 +259,7 @@ def render(key, locale, c):
   <h2>{e(faql)}</h2>
 {faq_html}
 <hr>
-<p><small>{e(FOOTER_DISCLAIMER.get(locale, "Independent guide. App names are trademarks of their owners, used for identification only."))}</small></p>
+<p data-publisher-disclosure="true"><small>{e(FOOTER_DISCLAIMER.get(locale, DEFAULT_FOOTER_DISCLAIMER))}</small></p>
 </main>
 </body>
 </html>

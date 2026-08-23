@@ -2144,7 +2144,7 @@ def build_root_index(locales):
 
 def build_sitemap(keys, locales):
     """多語 sitemap:每個 URL 附 hreflang alternates(爬蟲/LLM 發現全部頁面)。"""
-    def alts(maker, available_locales):
+    def alts(maker, available_locales, *, x_default_url=None):
         default_locale = (
             "en-US" if "en-US" in available_locales else available_locales[0]
         )
@@ -2153,16 +2153,19 @@ def build_sitemap(keys, locales):
             for lc in available_locales
         ) + (
             f'    <xhtml:link rel="alternate" hreflang="x-default" '
-            f'href="{maker(default_locale)}"/>\n'
+            f'href="{x_default_url or maker(default_locale)}"/>\n'
         )
     urls = []
     # 根中樞
     urls.append(f"  <url><loc>{SITE}/index.html</loc></url>")
     # 各語 index
+    directory_default = f"{SITE}/index.html"
     for lc in locales:
         urls.append(
             f"  <url>\n    <loc>{SITE}/{lc}/index.html</loc>\n"
-            f'{alts(lambda x: f"{SITE}/{x}/index.html", locales)}  </url>')
+            f"{alts(lambda x: f'{SITE}/{x}/index.html', locales, x_default_url=directory_default)}"
+            "  </url>"
+        )
     # 各 app 各語
     for k in keys:
         app_locales = [

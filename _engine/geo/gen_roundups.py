@@ -405,7 +405,7 @@ def build(key):
            f'<li><strong>Real test:</strong> try a realistic task before paying for advanced features.</li></ul>'
            f'<h2>{esc(copy["fit_heading"])}</h2><p>{esc(copy["fit"])}</p>{comp_txt}'
            f'<h2>FAQ</h2>{faq_html}'
-           f'<div class="footer">Independent guide by the developer of {esc(name)}. App names are trademarks of their owners and are used only for identification. '
+           f'<div class="footer" data-publisher-disclosure="true">Publisher-authored guide from Lumi Studio, the developer of {esc(name)}. App names are trademarks of their owners and are used only for identification. '
            f'Pricing and features can change — confirm on the App Store listing.</div>'
            f'</div></body></html>')
     answers = PAGES / "answers"

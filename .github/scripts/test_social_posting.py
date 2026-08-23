@@ -10,6 +10,7 @@ import os
 import sys
 import unittest
 import urllib.error
+import urllib.parse
 import urllib.request
 from unittest import mock
 
@@ -451,6 +452,30 @@ class FooterAndSelectionTests(unittest.TestCase):
                     self.assertNotIn("買斷", footer)
                     self.assertNotIn("訂閱", footer)
 
+    def test_social_ctas_keep_direct_low_cardinality_attribution(self):
+        item = {
+            "lang": "en",
+            "text": "Quality copy",
+            "app": "7000000000",
+            "url": "https://apps.apple.com/app/id7000000000",
+        }
+        for token, composer in (
+            ("soc_tg_guide", telegram_post.compose_text),
+            ("soc_th_guide", threads_post.compose_text),
+        ):
+            with self.subTest(token=token):
+                text = composer(item)
+                url = next(
+                    part for part in text.split() if part.startswith("https://")
+                )
+                parsed = urllib.parse.urlsplit(url)
+                query = urllib.parse.parse_qs(parsed.query)
+                self.assertEqual("apps.apple.com", parsed.netloc)
+                self.assertEqual("/app/id7000000000", parsed.path)
+                self.assertEqual(["118326163"], query["pt"])
+                self.assertEqual([token], query["ct"])
+                self.assertEqual(["8"], query["mt"])
+
     def test_official_locale_partition_is_complete_and_disjoint(self):
         locales = (
             *common.ASIA_LOCALES,
@@ -764,12 +789,14 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
                 messages = builder(self.apps)
                 portfolio_daily.validate_coverage(platform, self.apps, messages)
                 combined = "\n".join(message.text for message in messages)
+                campaign = portfolio_daily.PLATFORM_CAMPAIGNS[platform]
                 for app in self.apps:
                     self.assertIn(app.name, combined)
                     self.assertEqual(
-                        1, combined.count(app.appstore_url())
+                        1, combined.count(app.appstore_url(campaign))
                     )
-                self.assertNotIn("?ct=", combined)
+                self.assertIn("?pt=118326163&ct=", combined)
+                self.assertIn("&mt=8", combined)
                 self.assertTrue(all(len(message.text) <= limit for message in messages))
                 if platform == "threads":
                     self.assertTrue(

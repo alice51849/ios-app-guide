@@ -23,6 +23,8 @@ DEFAULT_UA = "Mozilla/5.0 (Lumi Apps poster)"
 DEAD_LINK_STATUSES = frozenset((404, 410))
 TRANSIENT_STATUSES = frozenset((408, 429))
 APP_STORE_PATH_RE = re.compile(r"^/app/id(\d+)$")
+APP_STORE_CAMPAIGN_RE = re.compile(r"^[A-Za-z0-9_]{1,30}$")
+DEFAULT_APP_STORE_PROVIDER_TOKEN = "118326163"
 SOCIAL_IMAGE_PATH_RE = re.compile(
     r"^/ios-app-guide/social/img/([a-z0-9]+)-share\.jpg$"
 )
@@ -313,6 +315,24 @@ def canonical_app_store_url(value):
     ):
         raise ValueError(f"Invalid canonical App Store URL: {value}")
     return f"https://apps.apple.com/app/id{match.group(1)}"
+
+
+def campaign_app_store_url(value, campaign):
+    """Keep a direct App Store CTA while attaching one low-cardinality token."""
+    canonical = canonical_app_store_url(value)
+    token = str(campaign or "").strip()
+    if APP_STORE_CAMPAIGN_RE.fullmatch(token) is None:
+        raise ValueError(f"Invalid App Store campaign token: {campaign!r}")
+    provider = os.environ.get(
+        "APP_STORE_PROVIDER_TOKEN",
+        DEFAULT_APP_STORE_PROVIDER_TOKEN,
+    ).strip()
+    if re.fullmatch(r"[0-9]{1,20}", provider) is None:
+        raise ValueError(f"Invalid App Store provider token: {provider!r}")
+    query = urllib.parse.urlencode(
+        {"pt": provider, "ct": token, "mt": "8"}
+    )
+    return f"{canonical}?{query}"
 
 
 def canonical_social_image_url(value):

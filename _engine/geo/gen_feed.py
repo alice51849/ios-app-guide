@@ -37,6 +37,7 @@ MEDIA_NS = "http://search.yahoo.com/mrss/"
 PREVIEW_SIZE = gen_social_previews.CARD_SIZE
 PREVIEW_MIME = "image/jpeg"
 MAX_ITEMS = 75
+EXCLUDED_FEED_NAMES = frozenset({"index.html", "browse.html"})
 REQUIRED_SUBDIRS = ("guides",)
 REQUIRED_RELATIVE_PATHS = (
     "data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
@@ -44,6 +45,8 @@ REQUIRED_RELATIVE_PATHS = (
 )
 RESERVED_SUBDIR_LIMITS = (("tools", 10), ("data", 3))
 FEED_TITLE = "iOS App Guide — latest answers &amp; guides"
+FEED_AUTHOR = "Lumi Studio"
+FEED_AUTHOR_URL = f"{SITE}/about.html"
 DATE_MODIFIED_RE = re.compile(
     r'"dateModified"\s*:\s*"([0-9]{4}-[0-9]{2}-[0-9]{2}(?:T[^"]+)?)"'
 )
@@ -296,7 +299,7 @@ def collect():
         if not os.path.isdir(d):
             continue
         for name in sorted(os.listdir(d)):
-            if not name.endswith(".html") or name == "index.html":
+            if not name.endswith(".html") or name in EXCLUDED_FEED_NAMES:
                 continue
             p = os.path.join(d, name)
             items.append(
@@ -407,6 +410,10 @@ def render_atom(items, now):
         f'  <link rel="self" href="{SITE}/feed.xml"/>\n'
         f"{hub_links}"
         f"  <id>{SITE}/</id>\n"
+        "  <author>\n"
+        f"    <name>{FEED_AUTHOR}</name>\n"
+        f"    <uri>{FEED_AUTHOR_URL}</uri>\n"
+        "  </author>\n"
         f"  <updated>{now}</updated>\n"
         + "\n".join(entries)
         + "\n</feed>\n"

@@ -35,6 +35,11 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Quarantine unavailable App Store pages
         run: python3 _engine/geo/live_app_guard.py --site-root .
+      - name: Write immutable deployment manifest
+        run: |
+          mkdir -p .well-known
+          printf '{"version":1,"source_commit":"%s"}\n' \
+            "$(git rev-parse HEAD)" > .well-known/deployment.json
       - name: Preserve syndication notifiers and prune engine/tooling
         run: |
           cp _engine/geo/notify_websub.py "$RUNNER_TEMP/notify_websub.py"
@@ -58,12 +63,39 @@ jobs:
         id: deployment_retry
         if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
+      - name: Verify exact deployment is live
+        id: verify_live
+        if: >-
+          always() &&
+          (steps.deployment.outcome == 'success' ||
+          steps.deployment_retry.outcome == 'success')
+        env:
+          DEPLOYMENT_MANIFEST_URL: >-
+            https://alice51849.github.io/ios-app-guide/.well-known/deployment.json
+        run: |
+          expected="$(jq -er '.source_commit' .well-known/deployment.json)"
+          for attempt in {1..30}; do
+            live="$(
+              curl -fsS --retry 2 --retry-all-errors \
+                --connect-timeout 10 --max-time 20 \
+                "${DEPLOYMENT_MANIFEST_URL}?run=${GITHUB_RUN_ID}-${attempt}" \
+              | jq -er '.source_commit' 2>/dev/null || true
+            )"
+            if [[ "$live" == "$expected" ]]; then
+              echo "Exact deployment is live: $live"
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "Expected deployment never reached the public CDN: $expected" >&2
+          exit 1
       - name: Notify WebSub subscribers
         id: notify_websub
         if: >-
           always() &&
           (steps.deployment.outcome == 'success' ||
-          steps.deployment_retry.outcome == 'success')
+          steps.deployment_retry.outcome == 'success') &&
+          steps.verify_live.outcome == 'success'
         continue-on-error: true
         timeout-minutes: 6
         env:
@@ -76,7 +108,8 @@ jobs:
         if: >-
           always() &&
           (steps.deployment.outcome == 'success' ||
-          steps.deployment_retry.outcome == 'success')
+          steps.deployment_retry.outcome == 'success') &&
+          steps.verify_live.outcome == 'success'
         continue-on-error: true
         timeout-minutes: 6
         env:
@@ -88,7 +121,8 @@ jobs:
         if: >-
           always() &&
           (steps.deployment.outcome == 'success' ||
-          steps.deployment_retry.outcome == 'success')
+          steps.deployment_retry.outcome == 'success') &&
+          steps.verify_live.outcome == 'success'
         run: |
           test "${{ steps.notify_websub.outcome }}" = "success"
           test "${{ steps.notify_rsscloud.outcome }}" = "success"

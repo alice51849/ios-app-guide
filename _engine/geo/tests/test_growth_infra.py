@@ -4129,6 +4129,7 @@ class GeneratorTests(unittest.TestCase):
             for subdir in ("answers", "guides", "alternatives", "tools", "data"):
                 (root / subdir).mkdir()
             page = root / "guides" / "sample-app.html"
+            browse = root / "guides" / "browse.html"
             catalog_feed = (
                 f"{gen_feed.SITE}/api/v1/ios-app-catalog/feeds/en-US.json"
             )
@@ -4140,6 +4141,10 @@ class GeneratorTests(unittest.TestCase):
                 f'href="{catalog_feed}">'
                 '<script type="application/ld+json">'
                 '{"dateModified":"2026-07-12"}</script></head><body></body></html>',
+                encoding="utf-8",
+            )
+            browse.write_text(
+                "<html><head><title>All pages</title></head></html>",
                 encoding="utf-8",
             )
             gen_feed.main()
@@ -4164,6 +4169,10 @@ class GeneratorTests(unittest.TestCase):
                     ),
                 )
             self.assertEqual(1, page_content.count(f'href="{catalog_feed}"'))
+            self.assertNotIn(
+                f"{gen_feed.SITE}/guides/browse.html",
+                (root / "feed.xml").read_text(encoding="utf-8"),
+            )
             self.assertIn('data-preserve="true"', page_content)
             gen_feed.main()
             self.assertEqual(
@@ -4187,6 +4196,16 @@ class GeneratorTests(unittest.TestCase):
         atom = ET.parse(pages / "feed.xml").getroot()
         rss = ET.parse(pages / "rss.xml").getroot()
         json_feed = json.loads((pages / "feed.json").read_text(encoding="utf-8"))
+        atom_author = atom.find(atom_ns + "author")
+        self.assertIsNotNone(atom_author)
+        self.assertEqual(
+            gen_feed.FEED_AUTHOR,
+            atom_author.findtext(atom_ns + "name"),
+        )
+        self.assertEqual(
+            gen_feed.FEED_AUTHOR_URL,
+            atom_author.findtext(atom_ns + "uri"),
+        )
         atom_ids = [
             entry.find(atom_ns + "id").text
             for entry in atom.findall(atom_ns + "entry")
@@ -22133,6 +22152,20 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn("/zh-Hant/snapport.html", sitemap)
             self.assertIn("/en-US/scanto.html", sitemap)
             self.assertNotIn("/zh-Hant/scanto.html", sitemap)
+            self.assertEqual(
+                2,
+                sitemap.count(
+                    f'hreflang="x-default" '
+                    f'href="{build_pages_i18n.SITE}/index.html"'
+                ),
+            )
+            self.assertEqual(
+                3,
+                sitemap.count(
+                    f'hreflang="x-default" '
+                    f'href="{build_pages_i18n.SITE}/en-US/'
+                ),
+            )
 
     def test_profile_aware_roundups_and_cost_assets(self):
         self.assertTrue(set(gen_roundups.TOPICS) <= set(gen_roundups.APPS))

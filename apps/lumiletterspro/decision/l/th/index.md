@@ -17,6 +17,7 @@ publisher: "Lumi Studio"
 - ดาวน์โหลดแบบชำระเงิน
 - ไม่มีโฆษณา
 - App Store · ฿299.00
+- ★ 5.0/5 · 1
 
 [ดาวน์โหลด Lumi Letters Pro ใน App Store →](https://apps.apple.com/th/app/id6778491147?pt=118326163&ct=iag_data_th&mt=8)
 

@@ -17,7 +17,7 @@ If most to-do apps feel bloated, the right one is a clean checklist with reminde
 - Free to start · one-time unlock
 - No ads
 - App Store · Free
-- ★ 4.6/5 · 5
+- ★ 4.3/5 · 6
 
 [Get Mochi on the App Store →](https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=iag_data_en_us&mt=8)
 

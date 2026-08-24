@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免費開始 · 一次購買解鎖
 - 無廣告
 - App Store · 免費
-- ★ 5.0/5 · 2
+- ★ 5.0/5 · 3
 
 [在 App Store 取得 Mochi →](https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=iag_data_zh_hant&mt=8)
 

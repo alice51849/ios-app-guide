@@ -27,7 +27,7 @@
   "identifier": "LUMI-ZHUYIN-DCAT3-2026",
   "version": "1.5.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-08-23T00:00:00Z",
+  "dateModified": "2026-08-24T00:00:00Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -97,7 +97,7 @@
       "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ro-crate",
       "name": "Bopomofo RO-Crate 1.3 research object",
       "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
-      "dateModified": "2026-08-23"
+      "dateModified": "2026-08-24"
     },
     {
       "@type": "Dataset",
@@ -162,8 +162,8 @@
       "name": "Complete ZIP bundle",
       "encodingFormat": "application/zip",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip",
-      "contentSize": "28824 bytes",
-      "sha256": "75508d4548a8d74bc0dbcce3d67e5eed6ad3a04512fe2125846d86725177bf63"
+      "contentSize": "28825 bytes",
+      "sha256": "dc8920aa37104a3b2f4f1b2a6246fcef1d53d40fab15c498fbb346056ef6e145"
     },
     {
       "@type": "DataDownload",
@@ -171,7 +171,7 @@
       "encodingFormat": "application/ld+json",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld",
       "contentSize": "218434 bytes",
-      "sha256": "80ed862dc8fe66edc7cb5c949ec004bf15943e743dcec9b7aa8ce00df21068ba"
+      "sha256": "b9042f40d5b4defabc427e38a9205411dca469fcfd900eb7061346a5e30d9e1f"
     },
     {
       "@type": "DataDownload",
@@ -179,7 +179,7 @@
       "encodingFormat": "text/turtle",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl",
       "contentSize": "148253 bytes",
-      "sha256": "d4a5a475627a1660309dde4c02a99978303883069c7e7315d5625ae73f25573c"
+      "sha256": "c8bf154b1c627a6cbb270253a0608f383b71ffa1516913c8f829ef343f90045f"
     }
   ]
 }

@@ -17,8 +17,8 @@ Public apps: **43** · Average coverage: **100.0%**
 | DailyMate Lite | 100.0% | 17/17 | 3 | 5 | hub / guide / story |
 | G+Money | 100.0% | 51/51 | 4 | 5 | hub / guide / story |
 | G+Money Lite | 100.0% | 19/19 | 3 | 5 | hub / guide / story |
-| HoursTag | 100.0% | 34/34 | 3 | 5 | hub / guide / story |
 | HoursTag Lite | 100.0% | 17/17 | 3 | 5 | hub / guide / story |
+| HoursTag: Hours to Buy | 100.0% | 34/34 | 3 | 5 | hub / guide / story |
 | LockHour Pro | 100.0% | 48/48 | 6 | 5 | hub / guide / story |
 | Lumi Bopomofo | 100.0% | 78/78 | 5 | 5 | hub / guide / story |
 | Lumi Bopomofo Pro | 100.0% | 86/86 | 3 | 5 | hub / guide / story |

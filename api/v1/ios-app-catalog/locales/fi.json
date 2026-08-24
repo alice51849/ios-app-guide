@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-08-24",
-  "content_digest": "931339133ac572e4e9203fb19760f4f0f56961c6803ffed1b394b0b2e8893634",
+  "content_digest": "09999f71d0dcccc83d53181f7a0d24ef4efe10f57a3e4c377c2680240c39cb40",
   "locale": "fi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -485,6 +485,45 @@
       }
     },
     {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite",
+      "summary": "HoursTag Lite - Asioiden todellinen hinta",
+      "category": "finance",
+      "search_terms": [
+        "säästäminen",
+        "budjetti",
+        "menot",
+        "säästöt",
+        "talous",
+        "säästä rahaa",
+        "heräteostokset",
+        "raha",
+        "kuluta vähemmän",
+        "työtunnit"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6794039979?pt=118326163&ct=iag_api_fi&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/fi/hourstaglite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6794039979"
+      }
+    },
+    {
       "key": "hourstag",
       "app_store_id": "6754218117",
       "name": "HoursTag: Ostotunnit",
@@ -539,45 +578,6 @@
         "currency": "EUR",
         "formatted_price": "5,99 €",
         "storefront_url": "https://apps.apple.com/fi/app/id6754218117"
-      }
-    },
-    {
-      "key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
-      "summary": "HoursTag Lite - Asioiden todellinen hinta",
-      "category": "finance",
-      "search_terms": [
-        "säästäminen",
-        "budjetti",
-        "menot",
-        "säästöt",
-        "talous",
-        "säästä rahaa",
-        "heräteostokset",
-        "raha",
-        "kuluta vähemmän",
-        "työtunnit"
-      ],
-      "purchase_model": "free_with_lifetime_unlock",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": false,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
-      },
-      "app_store_url": "https://apps.apple.com/fi/app/id6794039979?pt=118326163&ct=iag_api_fi&mt=8",
-      "guide_url": "https://alice51849.github.io/ios-app-guide/fi/hourstaglite.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "0",
-        "currency": "EUR",
-        "formatted_price": "Ilmainen",
-        "storefront_url": "https://apps.apple.com/fi/app/id6794039979"
       }
     },
     {

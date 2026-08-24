@@ -2,7 +2,7 @@
 title: "melhor app para liberar espaço no iPhone deletando fotos duplicadas"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/pt-BR/index.html"
-modified: "2026-08-23"
+modified: "2026-08-24"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

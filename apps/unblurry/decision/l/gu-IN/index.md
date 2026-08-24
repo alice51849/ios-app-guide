@@ -2,7 +2,7 @@
 title: "iPhone પર બાળકોની ધૂંધળી તસવીરો સુધારવા માટે શ્રેષ્ઠ એપ"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/gu-IN/index.html"
-modified: "2026-08-23"
+modified: "2026-08-24"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

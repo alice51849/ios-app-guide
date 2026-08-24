@@ -2,7 +2,7 @@
 title: "hesap gerektirmeyen en iyi adet takibi uygulaması iphone"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/tr/index.html"
-modified: "2026-08-23"
+modified: "2026-08-24"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

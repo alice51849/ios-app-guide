@@ -2,7 +2,7 @@
 title: "సబ్‌స్క్రిప్షన్ లేకుండా నిద్రపోవడానికి ఉత్తమ వైట్ నాయిస్ యాప్"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/te-IN/index.html"
-modified: "2026-08-23"
+modified: "2026-08-24"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -143,6 +143,6 @@ JSON, JSONL ja CSV sisältävät samat 2 150 tietuetta.
 
 [Etusivu](https://alice51849.github.io/ios-app-guide/fi/index.html) · [Avoin data](https://alice51849.github.io/ios-app-guide/fi/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisenssi](https://creativecommons.org/licenses/by/4.0/)
 
-Päivitetty: 2026-08-23
+Päivitetty: 2026-08-24
 
 CC BY 4.0 koskee alkuperäisen luettelon kokoamista; sovellusten nimet ja App Store -merkit kuuluvat omistajilleen.

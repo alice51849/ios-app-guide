@@ -2,7 +2,7 @@
 title: "DailyMate Lite — రోజువారీ సంభాషణ అభ్యాసం | iOS App"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/te-IN/index.html"
-modified: "2026-08-23"
+modified: "2026-08-24"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

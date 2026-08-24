@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație de zgomot alb pentru adormit fără abonament"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/ro/index.html"
-modified: "2026-08-23"
+modified: "2026-08-24"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

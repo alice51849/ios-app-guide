@@ -2,7 +2,7 @@
 title: "OnePage PPT: ஸ்லைடு மேக்கர் — குறிப்புகளே விளக்கக்காட்சி | iOS App"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/ta-IN/index.html"
-modified: "2026-08-23"
+modified: "2026-08-24"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

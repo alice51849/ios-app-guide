@@ -2,7 +2,7 @@
 title: "Wordmate Lite: ইংরেজি শেখা — প্রতিদিন ৫টি নতুন শব্দ | iOS App"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/bn-BD/index.html"
-modified: "2026-08-23"
+modified: "2026-08-24"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

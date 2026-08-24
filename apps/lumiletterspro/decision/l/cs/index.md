@@ -2,7 +2,7 @@
 title: "nejlepší kompletní aplikace pro fonetiku pro domácí přípravu do mateřské školy"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/cs/index.html"
-modified: "2026-08-23"
+modified: "2026-08-24"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

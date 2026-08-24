@@ -2,7 +2,7 @@
 title: "iPhoneలో సబ్‌స్క్రిప్షన్ లేని సులభమైన టు-డూ లిస్ట్ యాప్"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/te-IN/index.html"
-modified: "2026-08-23"
+modified: "2026-08-24"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

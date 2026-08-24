@@ -2,7 +2,7 @@
 title: "καλύτερη πλήρης εφαρμογή μαθηματικών για παιδιά προσχολικής ηλικίας και πρώτες τάξεις"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/el/index.html"
-modified: "2026-08-23"
+modified: "2026-08-24"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

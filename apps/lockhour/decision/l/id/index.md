@@ -2,7 +2,7 @@
 title: "aplikasi terbaik untuk memblokir media sosial saat belajar di iPhone"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/id/index.html"
-modified: "2026-08-23"
+modified: "2026-08-24"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

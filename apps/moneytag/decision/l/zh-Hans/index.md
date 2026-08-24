@@ -2,7 +2,7 @@
 title: "MoneyTag: 收入与支出 — 项目 · 标签 · 报表 | iOS App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/zh-Hans/index.html"
-modified: "2026-08-23"
+modified: "2026-08-24"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "Mask My File — Redact files before sharing | iOS App"
 lang: "en-US"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/en-US/index.html"
-modified: "2026-08-23"
+modified: "2026-08-24"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

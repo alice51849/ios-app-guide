@@ -2,7 +2,7 @@
 title: "MoneyTag: Income & Expense — Projects · Tags · Report | iOS App"
 lang: "en-US"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/en-US/index.html"
-modified: "2026-08-23"
+modified: "2026-08-24"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "najbolja kompletna aplikacija za učenje matematike za predškolce i niže razrede"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/hr/index.html"
-modified: "2026-08-23"
+modified: "2026-08-24"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

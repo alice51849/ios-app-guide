@@ -143,6 +143,6 @@ JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 2,150 ದಾಖಲೆಗಳನ್�
 
 [ಮುಖಪುಟ](https://alice51849.github.io/ios-app-guide/kn-IN/index.html) · [ತೆರೆದ ಡೇಟಾ](https://alice51849.github.io/ios-app-guide/kn-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ಲೈಸೆನ್ಸ್](https://creativecommons.org/licenses/by/4.0/)
 
-ನವೀಕರಿಸಲಾಗಿದೆ: 2026-08-23
+ನವೀಕರಿಸಲಾಗಿದೆ: 2026-08-24
 
 CC BY 4.0 ಮೂಲ ಕ್ಯಾಟಲೋಗ್ ಸಂಗ್ರಹಣೆಗೆ ಅನ್ವಯಿಸುತ್ತದೆ; ಆ್ಯಪ್ ಹೆಸರುಗಳು ಮತ್ತು App Store ಗುರುತುಗಳು ಅವರ ಮಾಲೀಕರಿಗೆ ಸೇರಿವೆ.

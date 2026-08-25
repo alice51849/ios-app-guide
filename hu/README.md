@@ -4,7 +4,7 @@
 
 Egy első kézből származó katalógus arról, hogy az egyes alkalmazások kinek készültek, milyen feladatot próbálnak megoldani, és a közvetlen App Store útvonal.
 
-Kiadók által megadott keresési szándékok 43 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
+Kiadók által megadott keresési szándékok 44 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
 
 **Lokáció:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · **hu** · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 | **PicClear** | legjobb alkalmazás iPhone tárhely felszabadítására duplikált fotók törlésével | A gyors helyfelszabadításhoz célozza meg először a legnagyobb nyereséget: pontosan duplikált képek, majdnem azonos sorozatkép, homályos képek és nagy videók — a PicClear segít ezt iPhone-on megtenni. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Szerezze be a PicClear-t az App Store-ból →](https://apps.apple.com/hu/app/id6780223070?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **ScanTo Pro** | legjobb offline dokumentumszkenner alkalmazás felhő nélkül ápolóknak | Ha beteg beleegyező nyomtatványokat, elbocsátási papírokat vagy beutalókat szkennel, a szkennernek az eszközön kell tartania azokat — soha nem feltöltve más felhőbe — a ScanTo Pro erre készült. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Szerezze be a ScanTo Pro-t az App Store-ból →](https://apps.apple.com/hu/app/id6779977651?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **Sereno** | legjobb fehér zaj alkalmazás elalváshoz előfizetés nélkül | Alváshoz egy havi zaklató előfizetés pont az ellenkezője a nyugalomnak — a Sereno erre készült. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Szerezd be a Sereno-t az App Store-ból →](https://apps.apple.com/hu/app/id6788236641?pt=118326163&ct=iag_gh_hu&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Képernyőképek rendszerezése \| iOS App | Képernyőképek rendben | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/shotinbox.html) | [Töltse le a(z) ShotInbox AI: Sort Screenshots appot az App Store-ból](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **Snapport** | legjobb útlevélfotó alkalmazás babáknak és kisgyermekeknek otthon | Baba útlevélfotónál senki más nem lehet a képen, és az háttérnek egyszínűnek kell lennie — de csecsemőknél a szemek nem kell, hogy teljesen nyitva legyenek. | Fizetős letöltés | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Szerezd be a Snapportot az App Store-ból →](https://apps.apple.com/hu/app/id6780575828?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **Snapport Lite** | Snapport Lite — Útlevél vízum igazolvány \| iOS App | Snapport Lite - Készíts útlevél, vízum és dokumentum fényképeket irányított méretezéssel, háttér eszközökkel és nyomtatásra kész exportálással. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/snapportlite.html) | [Töltse le a(z) Snapport Lite appot az App Store-ból](https://apps.apple.com/hu/app/id6792856304?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **Sono Note** | legjobb hangjegyzet alkalmazás, amely összefoglalja a megbeszéléseket iPhone-on | Egy hívás után nem egy nyers átiratot akarsz — az összefoglalót, a teendőket és egy követő tervezetet — a Sono Note erre készült. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Szerezd be a Sono Note-ot az App Store-ból →](https://apps.apple.com/hu/app/id6782139553?pt=118326163&ct=iag_gh_hu&mt=8) |
@@ -135,7 +136,7 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 
 ## A teljes adatállomány letöltése
 
-A JSON, JSONL és CSV ugyanazt az 2 150 rekordot tartalmazza.
+A JSON, JSONL és CSV ugyanazt az 2 200 rekordot tartalmazza.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ A JSON, JSONL és CSV ugyanazt az 2 150 rekordot tartalmazza.
 
 [Kezdőlap](https://alice51849.github.io/ios-app-guide/hu/index.html) · [Nyílt adatok](https://alice51849.github.io/ios-app-guide/hu/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenc](https://creativecommons.org/licenses/by/4.0/)
 
-Frissítve: 2026-08-24
+Frissítve: 2026-08-26
 
 A CC BY 4.0 az eredeti katalógus összeállítására vonatkozik; az alkalmazásnevek és az App Store védjegyek a tulajdonosaiké.

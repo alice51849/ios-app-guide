@@ -4,7 +4,7 @@
 
 كتالوج ينشره المطور مباشرةً ويوضح الفئة التي صُمم لها كل تطبيق، والمهمة التي تريد إنجازها، والمسار المباشر إلى App Store.
 
-نوايا بحث كتبها الناشر لـ 43 تطبيق iOS تم التحقق من توفرها و50 إعدادًا لغويًا وإقليميًا من Apple.
+نوايا بحث كتبها الناشر لـ 44 تطبيق iOS تم التحقق من توفرها و50 إعدادًا لغويًا وإقليميًا من Apple.
 
 **الإعداد اللغوي والإقليمي:** **ar-SA** · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **PicClear** | أفضل تطبيق لتحرير مساحة آيفون بحذف الصور المكررة | لتحرير مساحة بسرعة، استهدف أكبر المكاسب أولاً: الصور المكررة بالضبط، لقطات الانفجار المتشابهة، الصور الضبابية المرفوضة، والفيديوهات الكبيرة — PicClear يساعدك على ذلك على آيفون. | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [احصل على PicClear من متجر التطبيقات →](https://apps.apple.com/sa/app/id6780223070?pt=118326163&ct=iag_gh_ar_sa&mt=8) |
 | **ScanTo Pro** | أفضل تطبيق ماسح مستندات بدون اتصال سحابي للممرضات | إذا كنت تمسحين نماذج موافقة المرضى، أوراق الخروج أو الإحالات، يجب أن يحتفظ الماسح بهذه الأوراق على الجهاز — دون رفعها إلى سحابة شخص آخر — ScanTo Pro مصمم لهذا. | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [احصل على ScanTo Pro من متجر التطبيقات →](https://apps.apple.com/sa/app/id6779977651?pt=118326163&ct=iag_gh_ar_sa&mt=8) |
 | **Sereno** | أفضل تطبيق للضوضاء البيضاء للنوم بدون اشتراك | بالنسبة للنوم، الاشتراك الذي يزعجك كل شهر هو عكس الراحة — تم تصميم Sereno لهذا. | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [احصل على Sereno من متجر التطبيقات →](https://apps.apple.com/sa/app/id6788236641?pt=118326163&ct=iag_gh_ar_sa&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — شراء واحد، بلا اشتراك \| iOS App | لقطات شاشتك مرتّبة اعثر على كل لقطة شاشة وتعامل معها ونظّفها. | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/shotinbox.html) | [احصل على ShotInbox AI: Sort Screenshots من App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_ar_sa&mt=8) |
 | **Snapport** | أفضل تطبيق صور جواز السفر للأطفال والرضع في المنزل | لصورة جواز سفر الطفل، لا يجب أن يكون هناك أي شخص آخر في الصورة ويجب أن تكون الخلفية بسيطة — لكن للرضع لا يجب أن تكون العيون مفتوحة بالكامل. | تحميل مدفوع | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [احصل على Snapport من متجر التطبيقات →](https://apps.apple.com/sa/app/id6780575828?pt=118326163&ct=iag_gh_ar_sa&mt=8) |
 | **Snapport Lite** | Snapport Lite — أنشئ صور الوثائق في المنزل \| iOS App | Snapport Lite - أنشئ صور جواز السفر والتأشيرة والهوية مع إرشادات المقاس والخلفية والطباعة. | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/snapportlite.html) | [احصل على Snapport Lite من App Store](https://apps.apple.com/sa/app/id6792856304?pt=118326163&ct=iag_gh_ar_sa&mt=8) |
 | **Sono Note** | أفضل تطبيق ملاحظات صوتية يلخص الاجتماعات على iPhone | بعد المكالمة، لا تريد نصًا خامًا — تريد الملخص، عناصر العمل، ومسودة المتابعة — تم تصميم Sono Note لهذا. | بدء مجاني · فتح بعملية شراء واحدة | [الدليل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [احصل على Sono Note من متجر التطبيقات →](https://apps.apple.com/sa/app/id6782139553?pt=118326163&ct=iag_gh_ar_sa&mt=8) |
@@ -135,7 +136,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## تحميل مجموعة البيانات الكاملة
 
-تحتوي ملفات JSON وJSONL وCSV على نفس ٢٬١٥٠ سجل.
+تحتوي ملفات JSON وJSONL وCSV على نفس ٢٬٢٠٠ سجل.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [الرئيسية](https://alice51849.github.io/ios-app-guide/ar-SA/index.html) · [بيانات مفتوحة](https://alice51849.github.io/ios-app-guide/ar-SA/data/lumi-studio-publisher-search-intent-catalog.html) · [الرخصة](https://creativecommons.org/licenses/by/4.0/)
 
-آخر تحديث: 2026-08-24
+آخر تحديث: 2026-08-26
 
 تطبق CC BY 4.0 على تجميع الكتالوج الأصلي؛ أسماء التطبيقات وعلامات App Store ملك لأصحابها.

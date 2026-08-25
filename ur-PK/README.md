@@ -4,7 +4,7 @@
 
 ایسا کیٹلاگ جسے ڈویلپر براہ راست شائع کرتا ہے اور جو بتاتا ہے کہ ہر ایپ کس کے لیے بنائی گئی ہے، صارف کون سا کام مکمل کرنا چاہتا ہے اور App Store تک براہ راست کیسے پہنچنا ہے۔
 
-43 تصدیق شدہ اور App Store پر دستیاب iOS ایپس اور Apple کے 50 زبان و خطہ لوکیلز کے لیے پبلشر کی تحریر کردہ سرچ انٹینٹس۔
+44 تصدیق شدہ اور App Store پر دستیاب iOS ایپس اور Apple کے 50 زبان و خطہ لوکیلز کے لیے پبلشر کی تحریر کردہ سرچ انٹینٹس۔
 
 **زبان و خطہ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · **ur-PK** · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ App Store پر دستیابی کی تصدیق شدہ ہر ایپ کے لیے ا�
 | **PicClear** | iPhone کی اسٹوریج خالی کرنے کے لیے بہترین ایپ جو نقل شدہ تصاویر حذف کرے | جلدی جگہ خالی کرنے کے لیے سب سے بڑے فائدے پہلے ہدف بنائیں: بالکل نقل شدہ تصاویر، قریب قریب ایک جیسی برسٹ شاٹس، دھندلی تصاویر، اور بڑے ویڈیوز — PicClear آپ کے iPhone پر مدد کرتا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App Store سے PicClear حاصل کریں →](https://apps.apple.com/pk/app/id6780223070?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **ScanTo Pro** | نرسوں کے لیے بہترین آف لائن دستاویز اسکینر ایپ بغیر کلاؤڈ کے | اگر آپ مریض کی رضامندی کے فارم، ڈسچارج کاغذات یا ریفرلز اسکین کرتے ہیں، تو اسکینر کو یہ کاغذات ڈیوائس پر رکھنا چاہیے — کبھی کسی اور کے کلاؤڈ پر اپ لوڈ نہیں — ScanTo Pro اس کے لیے بنایا گیا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [App Store سے ScanTo Pro حاصل کریں →](https://apps.apple.com/pk/app/id6779977651?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **Sereno** | بغیر سبسکرپشن کے سونے کے لیے بہترین وائٹ نوائس ایپ | نیند کے لیے، ہر ماہ پریشان کرنے والا سبسکرپشن آرام کے بالکل برعکس ہے — Sereno اسی کے لیے بنایا گیا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [App Store سے Sereno حاصل کریں →](https://apps.apple.com/pk/app/id6788236641?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — ایک بار خریدیں، تاحیات استعمال \| iOS App | آپ کے اسکرین شاٹس، ترتیب سے | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/shotinbox.html) | [App Store سے ShotInbox AI: Sort Screenshots حاصل کریں](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **Snapport** | بچوں اور ننھے بچوں کے لیے گھر پر بہترین پاسپورٹ فوٹو ایپ | بچے کے پاسپورٹ فوٹو میں کوئی دوسرا شخص تصویر میں نہیں ہونا چاہیے اور پس منظر سادہ ہونا چاہیے — لیکن شیر خوار بچوں کے لیے آنکھیں مکمل طور پر کھلی ہونا ضروری نہیں۔ | ادا شدہ ڈاؤن لوڈ | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App Store سے Snapport حاصل کریں →](https://apps.apple.com/pk/app/id6780575828?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **Snapport Lite** | Snapport Lite — گھر پر شناختی تصاویر بنائیں \| iOS App | Snapport Lite - پاسپورٹ، ویزا، اور دستاویزات کی تصاویر بنائیں، رہنمائی کے سائزنگ، پس منظر کے ٹولز، اور پرنٹ کے لیے تیار برآمد کے ساتھ۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/snapportlite.html) | [App Store سے Snapport Lite حاصل کریں](https://apps.apple.com/pk/app/id6792856304?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **Sono Note** | iPhone پر میٹنگز کا خلاصہ کرنے والی بہترین وائس نوٹس ایپ | کال کے بعد آپ کو خام تحریر نہیں چاہیے — آپ کو خلاصہ، ایکشن آئٹمز اور فالو اپ کا مسودہ چاہیے — Sono Note اسی کے لیے بنایا گیا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store سے Sono Note حاصل کریں →](https://apps.apple.com/pk/app/id6782139553?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
@@ -135,7 +136,7 @@ App Store پر دستیابی کی تصدیق شدہ ہر ایپ کے لیے ا�
 
 ## مکمل ڈیٹا سیٹ ڈاؤن لوڈ کریں
 
-JSON، JSONL اور CSV میں وہی 2,150 ریکارڈز شامل ہیں۔
+JSON، JSONL اور CSV میں وہی 2,200 ریکارڈز شامل ہیں۔
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON، JSONL اور CSV میں وہی 2,150 ریکارڈز شامل ہیں۔
 
 [ہوم](https://alice51849.github.io/ios-app-guide/ur-PK/index.html) · [کھلا ڈیٹا](https://alice51849.github.io/ios-app-guide/ur-PK/data/lumi-studio-publisher-search-intent-catalog.html) · [لائسنس](https://creativecommons.org/licenses/by/4.0/)
 
-اپ ڈیٹ کیا گیا: 2026-08-24
+اپ ڈیٹ کیا گیا: 2026-08-26
 
 CC BY 4.0 اصل کیٹلاگ کی تدوین پر لاگو ہوتا ہے؛ ایپس کے نام اور App Store کے نشانات ان کے مالکان کی ملکیت ہیں۔

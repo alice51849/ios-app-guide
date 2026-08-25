@@ -4,7 +4,7 @@
 
 Katalog yang diterbitkan langsung oleh pengembang untuk menjelaskan sasaran setiap aplikasi, tugas yang ingin diselesaikan, dan akses langsung ke App Store.
 
-Niat pencarian yang ditulis penerbit untuk 43 aplikasi iOS terverifikasi dan tersedia di App Store, dalam 50 bahasa dan wilayah Apple.
+Niat pencarian yang ditulis penerbit untuk 44 aplikasi iOS terverifikasi dan tersedia di App Store, dalam 50 bahasa dan wilayah Apple.
 
 **Wilayah:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · **id** · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ Diurutkan berdasarkan abjad nama aplikasi — bukan peringkat.
 | **PicClear** | aplikasi terbaik untuk mengosongkan penyimpanan iPhone dengan menghapus foto duplikat | Untuk mengosongkan ruang dengan cepat, targetkan keuntungan terbesar terlebih dahulu: foto duplikat tepat, rentetan foto hampir identik, foto buram yang ditolak, dan video besar — PicClear membantu Anda melakukannya di iPhone. | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://alice51849.github.io/ios-app-guide/id/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Dapatkan PicClear di App Store →](https://apps.apple.com/id/app/id6780223070?pt=118326163&ct=iag_gh_id&mt=8) |
 | **ScanTo Pro** | aplikasi pemindai dokumen offline terbaik tanpa cloud untuk perawat | Jika Anda memindai formulir persetujuan pasien, dokumen keluar rumah sakit, atau rujukan, pemindai harus menyimpan dokumen itu di perangkat — tidak pernah diunggah ke cloud orang lain — ScanTo Pro dibuat untuk ini. | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://alice51849.github.io/ios-app-guide/id/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Dapatkan ScanTo Pro di App Store →](https://apps.apple.com/id/app/id6779977651?pt=118326163&ct=iag_gh_id&mt=8) |
 | **Sereno** | aplikasi derau putih terbaik untuk membantu tidur tanpa langganan | Untuk tidur, langganan yang mengganggu setiap bulan bertentangan dengan ketenangan — Sereno dibuat untuk ini. | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://alice51849.github.io/ios-app-guide/id/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Dapatkan Sereno di App Store →](https://apps.apple.com/id/app/id6788236641?pt=118326163&ct=iag_gh_id&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Tangkapan layar mudah dicari \| iOS App | Tangkapan layar Anda, rapi | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://alice51849.github.io/ios-app-guide/id/shotinbox.html) | [Dapatkan ShotInbox AI: Sort Screenshots di App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_id&mt=8) |
 | **Snapport** | aplikasi foto paspor terbaik untuk bayi dan balita di rumah | Untuk foto paspor bayi, tidak boleh ada orang lain dalam foto dan latar belakang harus polos — tapi untuk bayi, mata tidak harus sepenuhnya terbuka. | Unduhan berbayar | [Panduan](https://alice51849.github.io/ios-app-guide/id/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Dapatkan Snapport di App Store →](https://apps.apple.com/id/app/id6780575828?pt=118326163&ct=iag_gh_id&mt=8) |
 | **Snapport Lite** | Snapport Lite — Buat pasfoto di rumah \| iOS App | Snapport Lite - Buat foto paspor, visa, dan kartu identitas dengan panduan ukuran, latar, dan cetak. | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://alice51849.github.io/ios-app-guide/id/snapportlite.html) | [Dapatkan Snapport Lite di App Store](https://apps.apple.com/id/app/id6792856304?pt=118326163&ct=iag_gh_id&mt=8) |
 | **Sono Note** | aplikasi catatan suara terbaik yang merangkum rapat di iPhone | Setelah panggilan, Anda tidak ingin transkrip mentah — Anda ingin ringkasan, item tindakan, dan draf tindak lanjut — Sono Note dibuat untuk ini. | Gratis untuk mulai · buka kunci sekali beli | [Panduan](https://alice51849.github.io/ios-app-guide/id/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Dapatkan Sono Note di App Store →](https://apps.apple.com/id/app/id6782139553?pt=118326163&ct=iag_gh_id&mt=8) |
@@ -135,7 +136,7 @@ Diurutkan berdasarkan abjad nama aplikasi — bukan peringkat.
 
 ## Unduh dataset lengkap
 
-JSON, JSONL, dan CSV memuat 2.150 catatan yang sama.
+JSON, JSONL, dan CSV memuat 2.200 catatan yang sama.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL, dan CSV memuat 2.150 catatan yang sama.
 
 [Beranda](https://alice51849.github.io/ios-app-guide/id/index.html) · [Data terbuka](https://alice51849.github.io/ios-app-guide/id/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisensi](https://creativecommons.org/licenses/by/4.0/)
 
-Diperbarui: 2026-08-24
+Diperbarui: 2026-08-26
 
 CC BY 4.0 berlaku untuk kompilasi katalog asli; nama aplikasi dan merek App Store adalah milik pemiliknya masing-masing.

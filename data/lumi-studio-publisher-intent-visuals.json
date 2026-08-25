@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://alice51849.github.io/ios-app-guide/visuals/",
-  "dateModified": "2026-08-24",
+  "dateModified": "2026-08-25",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,12 +10,12 @@
     "url": "https://alice51849.github.io/ios-app-guide"
   },
   "source_dataset": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "content_digest": "d1db4626b92952e278dcdd9fce9b24f09a9fca7dbfd892fd12a205064f227f30",
-  "generation_digest": "3ea7603134e4f31c60d6a94ca0fcbc7c28a89dcc7e0a7427daf277cff6442825",
+  "content_digest": "2114ad3a0b2adba12ce1a40a2d124cb8cfb63558af568cf788a7ea138a8c88d2",
+  "generation_digest": "a69b92f8888371ccda3d729d44e96aad1e701dabaed6f97bd20704e9be6d6932",
   "ordering": "official_locale_order_then_alphabetical_app_name",
-  "app_count": 43,
+  "app_count": 44,
   "locale_count": 50,
-  "image_count": 2150,
+  "image_count": 2200,
   "gallery_count": 51,
   "publisher_authored": true,
   "measured_search_volume": false,
@@ -142,16 +142,6 @@
     },
     {
       "locale": "ar-SA",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ar-SA/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ar-SA/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
-      "app_store_url": "https://apps.apple.com/sa/app/id6794039979?pt=118326163&ct=iag_visual_ar_sa&mt=8",
-      "sha256": "3bd523f11fff2a717e2c1df43306ab24ccb3213efdc8042d7b8a297756c5c512"
-    },
-    {
-      "locale": "ar-SA",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ar-SA/hourstag.svg",
@@ -159,6 +149,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6754218117?pt=118326163&ct=iag_visual_ar_sa&mt=8",
       "sha256": "4ca801113c4e12f1d87464ab31af3ae3343715ac899aceaa15452ebefdc9e809"
+    },
+    {
+      "locale": "ar-SA",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ar-SA/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+      "app_store_url": "https://apps.apple.com/sa/app/id6794039979?pt=118326163&ct=iag_visual_ar_sa&mt=8",
+      "sha256": "3bd523f11fff2a717e2c1df43306ab24ccb3213efdc8042d7b8a297756c5c512"
     },
     {
       "locale": "ar-SA",
@@ -359,6 +359,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6788236641?pt=118326163&ct=iag_visual_ar_sa&mt=8",
       "sha256": "3d018490c2f7ec4e2e0398296dbed0d7fb724e0e7bd7c7cd2dffc9ee96feeba5"
+    },
+    {
+      "locale": "ar-SA",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ar-SA/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_ar_sa&mt=8",
+      "sha256": "f78b69d8c2bd0109f83541e1486034c3ee156f82efa1de0f36dd74cabd74bf65"
     },
     {
       "locale": "ar-SA",
@@ -572,16 +582,6 @@
     },
     {
       "locale": "bn-BD",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "a64de79ea1c46711a8612345693812bd3843dd66633a7032ed23a94dc7b606ae"
-    },
-    {
-      "locale": "bn-BD",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/hourstag.svg",
@@ -589,6 +589,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_bn_bd&mt=8",
       "sha256": "91d23606a9da5f429da4c56b6f039fa35783cc92dc97a9b83d7e79df32514958"
+    },
+    {
+      "locale": "bn-BD",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_bn_bd&mt=8",
+      "sha256": "a64de79ea1c46711a8612345693812bd3843dd66633a7032ed23a94dc7b606ae"
     },
     {
       "locale": "bn-BD",
@@ -789,6 +799,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_visual_bn_bd&mt=8",
       "sha256": "546e72c3cfde420ec0ecc7c08de57cfe8639ddb1ef67ce1bbe3bfeec0ef0e774"
+    },
+    {
+      "locale": "bn-BD",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_bn_bd&mt=8",
+      "sha256": "ac5251b351e1d1cc6e698f33669fbb98429bb073c14d5ed2ee442ed3bd6c8e6b"
     },
     {
       "locale": "bn-BD",
@@ -1002,16 +1022,6 @@
     },
     {
       "locale": "ca",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ca/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=iag_visual_ca&mt=8",
-      "sha256": "3451d15684c157ef902004b5b5adbf0cd522cbf832a5f9b86e1961e4a4c2e09a"
-    },
-    {
-      "locale": "ca",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/hourstag.svg",
@@ -1019,6 +1029,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/hourstag.html",
       "app_store_url": "https://apps.apple.com/es/app/id6754218117?pt=118326163&ct=iag_visual_ca&mt=8",
       "sha256": "ebeaa3dd64368bfb5e80d17862cf1195442d83e8c341223d25969acd4c177924"
+    },
+    {
+      "locale": "ca",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=iag_visual_ca&mt=8",
+      "sha256": "3451d15684c157ef902004b5b5adbf0cd522cbf832a5f9b86e1961e4a4c2e09a"
     },
     {
       "locale": "ca",
@@ -1219,6 +1239,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/es/app/id6788236641?pt=118326163&ct=iag_visual_ca&mt=8",
       "sha256": "942fc714f5847ab97eb717d2693bb4b2ff74a90c6b29a8a1fddeab655c323566"
+    },
+    {
+      "locale": "ca",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_ca&mt=8",
+      "sha256": "b8f46c985fa1fdad6d20fdb563b016c0b1870d427e000212531e71257ca40b4f"
     },
     {
       "locale": "ca",
@@ -1432,16 +1462,6 @@
     },
     {
       "locale": "cs",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/cs/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/cz/app/id6794039979?pt=118326163&ct=iag_visual_cs&mt=8",
-      "sha256": "ce5db360abb3fd633627261fd5c8f988f6794e6bb5e1bf153e3dd37f98c532ae"
-    },
-    {
-      "locale": "cs",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/hourstag.svg",
@@ -1449,6 +1469,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/hourstag.html",
       "app_store_url": "https://apps.apple.com/cz/app/id6754218117?pt=118326163&ct=iag_visual_cs&mt=8",
       "sha256": "70caf7b710b8b3be7b8abcf47bc51c1d94176922926e7cb5c1fd0252d573dfc3"
+    },
+    {
+      "locale": "cs",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/cz/app/id6794039979?pt=118326163&ct=iag_visual_cs&mt=8",
+      "sha256": "ce5db360abb3fd633627261fd5c8f988f6794e6bb5e1bf153e3dd37f98c532ae"
     },
     {
       "locale": "cs",
@@ -1649,6 +1679,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/cz/app/id6788236641?pt=118326163&ct=iag_visual_cs&mt=8",
       "sha256": "840f0253e7274fa21e177b0f60f0c28984af656b01d1b47848b1cab16d3804a4"
+    },
+    {
+      "locale": "cs",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_cs&mt=8",
+      "sha256": "01b6ca72cfc28785bf768ef00eb3f91b89d0d51f3937f90863601c3a3051eb59"
     },
     {
       "locale": "cs",
@@ -1862,16 +1902,6 @@
     },
     {
       "locale": "da",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/da/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/dk/app/id6794039979?pt=118326163&ct=iag_visual_da&mt=8",
-      "sha256": "2a2bb6cdcc9d65a3f7a0d48fc8eba0ea01fd2f8efefe72e5a262cedbb69be31b"
-    },
-    {
-      "locale": "da",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/hourstag.svg",
@@ -1879,6 +1909,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/hourstag.html",
       "app_store_url": "https://apps.apple.com/dk/app/id6754218117?pt=118326163&ct=iag_visual_da&mt=8",
       "sha256": "5012710362bc7db09afa8ce718603cdbe0b05c7bc0a5555e2b71c81cfc4f2935"
+    },
+    {
+      "locale": "da",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/dk/app/id6794039979?pt=118326163&ct=iag_visual_da&mt=8",
+      "sha256": "2a2bb6cdcc9d65a3f7a0d48fc8eba0ea01fd2f8efefe72e5a262cedbb69be31b"
     },
     {
       "locale": "da",
@@ -2079,6 +2119,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/dk/app/id6788236641?pt=118326163&ct=iag_visual_da&mt=8",
       "sha256": "c17bc96e550c85a19233c55367b5012299cb53fdbce001b47c5ac8261210e8df"
+    },
+    {
+      "locale": "da",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_da&mt=8",
+      "sha256": "cc8b3775b880fb384493c1020ecec8f3865668b24fb1de633a0e9eaa1ae6a756"
     },
     {
       "locale": "da",
@@ -2292,16 +2342,6 @@
     },
     {
       "locale": "de-DE",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/de-DE/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
-      "app_store_url": "https://apps.apple.com/de/app/id6794039979?pt=118326163&ct=iag_visual_de_de&mt=8",
-      "sha256": "b480d5c5017f90bab395953703b6ed3666bf8a474ae11371f02f9322523d02ba"
-    },
-    {
-      "locale": "de-DE",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/hourstag.svg",
@@ -2309,6 +2349,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/de/app/id6754218117?pt=118326163&ct=iag_visual_de_de&mt=8",
       "sha256": "552a2d96e49bbdc7239b1d9710f3dda2a93fcc31a41d99bfdd595fd126836521"
+    },
+    {
+      "locale": "de-DE",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+      "app_store_url": "https://apps.apple.com/de/app/id6794039979?pt=118326163&ct=iag_visual_de_de&mt=8",
+      "sha256": "b480d5c5017f90bab395953703b6ed3666bf8a474ae11371f02f9322523d02ba"
     },
     {
       "locale": "de-DE",
@@ -2509,6 +2559,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/de/app/id6788236641?pt=118326163&ct=iag_visual_de_de&mt=8",
       "sha256": "044ce6703eee7575ab26fb33303c02a2d174bf1df341726127af055d29f61eb1"
+    },
+    {
+      "locale": "de-DE",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_de_de&mt=8",
+      "sha256": "c0d148131b60750e425c9d27fde923193aebb66b7115defdd4db54af0a914bef"
     },
     {
       "locale": "de-DE",
@@ -2722,16 +2782,6 @@
     },
     {
       "locale": "el",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/el/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=iag_visual_el&mt=8",
-      "sha256": "30ab4cf953f549851ebaa8db1c3115249e1925d82305eb9841f0f6d7bd466a89"
-    },
-    {
-      "locale": "el",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/hourstag.svg",
@@ -2739,6 +2789,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/hourstag.html",
       "app_store_url": "https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=iag_visual_el&mt=8",
       "sha256": "dbfd83cc4bad16ad0643c39e6ab3abe9c04d6ad116530076fee50de237d2bb79"
+    },
+    {
+      "locale": "el",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=iag_visual_el&mt=8",
+      "sha256": "30ab4cf953f549851ebaa8db1c3115249e1925d82305eb9841f0f6d7bd466a89"
     },
     {
       "locale": "el",
@@ -2939,6 +2999,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/gr/app/id6788236641?pt=118326163&ct=iag_visual_el&mt=8",
       "sha256": "1ade86faa9968fa94d6a87334ba47ab47ee4891c478993aadb02cc5c9e20a44d"
+    },
+    {
+      "locale": "el",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_el&mt=8",
+      "sha256": "781e54aa7ea1a3336cc3b1c28c54bb59198eef3c1c85f4c749a14b5741560bf7"
     },
     {
       "locale": "el",
@@ -3152,16 +3222,6 @@
     },
     {
       "locale": "en-AU",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-AU/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/au/app/id6794039979?pt=118326163&ct=iag_visual_en_au&mt=8",
-      "sha256": "b7bf7b66b0288db13fd6f8394408ef888035be3910cfb024986042a926af6cde"
-    },
-    {
-      "locale": "en-AU",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/hourstag.svg",
@@ -3169,6 +3229,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/hourstag.html",
       "app_store_url": "https://apps.apple.com/au/app/id6754218117?pt=118326163&ct=iag_visual_en_au&mt=8",
       "sha256": "b9abe09d1b86ed31f2978e0fccfb981e960f83247a18da8f42ea50cee7b87627"
+    },
+    {
+      "locale": "en-AU",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/au/app/id6794039979?pt=118326163&ct=iag_visual_en_au&mt=8",
+      "sha256": "b7bf7b66b0288db13fd6f8394408ef888035be3910cfb024986042a926af6cde"
     },
     {
       "locale": "en-AU",
@@ -3369,6 +3439,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/au/app/id6788236641?pt=118326163&ct=iag_visual_en_au&mt=8",
       "sha256": "e0457ba7043352282312666431c2632e9beb2c9ef4bcbb5017c750a84bd45ede"
+    },
+    {
+      "locale": "en-AU",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_en_au&mt=8",
+      "sha256": "b6f4d19ba3eefbe69490036ac62347f7acff35002d5f88a8b5ef77cfd4e5c1d0"
     },
     {
       "locale": "en-AU",
@@ -3582,16 +3662,6 @@
     },
     {
       "locale": "en-CA",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-CA/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=iag_visual_en_ca&mt=8",
-      "sha256": "66ef8971261fbbe5ec183b9e9c6b3deb7578176232a9e4f26eda5ecc61f9d0f4"
-    },
-    {
-      "locale": "en-CA",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/hourstag.svg",
@@ -3599,6 +3669,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/hourstag.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_visual_en_ca&mt=8",
       "sha256": "8b66a3a137386541b30ef51219a518d6499fbb6fe9ee352b022720576871f6a7"
+    },
+    {
+      "locale": "en-CA",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=iag_visual_en_ca&mt=8",
+      "sha256": "66ef8971261fbbe5ec183b9e9c6b3deb7578176232a9e4f26eda5ecc61f9d0f4"
     },
     {
       "locale": "en-CA",
@@ -3799,6 +3879,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6788236641?pt=118326163&ct=iag_visual_en_ca&mt=8",
       "sha256": "5ede3b744b8f0294687a10129975bcbaa0d5847de9722cc7b5ced29ea619c049"
+    },
+    {
+      "locale": "en-CA",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_en_ca&mt=8",
+      "sha256": "b88777aee6f854ee6f4ec422a38ba0d160a05f09f8ab14ad72712892dd431338"
     },
     {
       "locale": "en-CA",
@@ -4012,16 +4102,6 @@
     },
     {
       "locale": "en-GB",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-GB/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/gb/app/id6794039979?pt=118326163&ct=iag_visual_en_gb&mt=8",
-      "sha256": "e4e583e0798938dfe5da5af6f4a9f16c343b4afa0f081f4073ca01f3e3b5e04e"
-    },
-    {
-      "locale": "en-GB",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/hourstag.svg",
@@ -4029,6 +4109,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/hourstag.html",
       "app_store_url": "https://apps.apple.com/gb/app/id6754218117?pt=118326163&ct=iag_visual_en_gb&mt=8",
       "sha256": "07cd958587cc0f2d187d0e13e803c1f18d6e507bf02d12f48f536681a1e7f28e"
+    },
+    {
+      "locale": "en-GB",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/gb/app/id6794039979?pt=118326163&ct=iag_visual_en_gb&mt=8",
+      "sha256": "e4e583e0798938dfe5da5af6f4a9f16c343b4afa0f081f4073ca01f3e3b5e04e"
     },
     {
       "locale": "en-GB",
@@ -4229,6 +4319,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/gb/app/id6788236641?pt=118326163&ct=iag_visual_en_gb&mt=8",
       "sha256": "ad7f9efb441798dc839b014104be33bcea8784f605c89cd2ce403e6230371111"
+    },
+    {
+      "locale": "en-GB",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_en_gb&mt=8",
+      "sha256": "6e52e174098d664761a54b39cf1f964e2bd4e4aef18c44292815b6d8d690f5bc"
     },
     {
       "locale": "en-GB",
@@ -4442,16 +4542,6 @@
     },
     {
       "locale": "en-US",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-US/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_visual_en_us&mt=8",
-      "sha256": "6fc03d4436ee70374e4b399dea5f92507b5c43a8bfc05eb8b7ec4402c31d6d46"
-    },
-    {
-      "locale": "en-US",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/hourstag.svg",
@@ -4459,6 +4549,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/hourstag.html",
       "app_store_url": "https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=iag_visual_en_us&mt=8",
       "sha256": "2aa1e1d5e38a2548dc8a6ed3ebb9f9f5d9e31f1d5427f7caea58e3eb8bef1c5e"
+    },
+    {
+      "locale": "en-US",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_visual_en_us&mt=8",
+      "sha256": "6fc03d4436ee70374e4b399dea5f92507b5c43a8bfc05eb8b7ec4402c31d6d46"
     },
     {
       "locale": "en-US",
@@ -4659,6 +4759,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=iag_visual_en_us&mt=8",
       "sha256": "10f352502c1fe6e68dbbb6f8aaaf2b13677b11b01ce03024dc038dafe1bea711"
+    },
+    {
+      "locale": "en-US",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_en_us&mt=8",
+      "sha256": "8b301400154da36f87b5f6f8001519b8093ec9607734f527ceb301d6ea5540e5"
     },
     {
       "locale": "en-US",
@@ -4872,16 +4982,6 @@
     },
     {
       "locale": "es-ES",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-ES/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
-      "app_store_url": "https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=iag_visual_es_es&mt=8",
-      "sha256": "f9dae23782dbc364971d1f97895375cbb6727b97fa2dcf290a2de4a269298edd"
-    },
-    {
-      "locale": "es-ES",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/hourstag.svg",
@@ -4889,6 +4989,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/es/app/id6754218117?pt=118326163&ct=iag_visual_es_es&mt=8",
       "sha256": "e8a8f59f744f17b948712cfd66d0c21afc7d96a54601ecf78c468339b0130560"
+    },
+    {
+      "locale": "es-ES",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=iag_visual_es_es&mt=8",
+      "sha256": "f9dae23782dbc364971d1f97895375cbb6727b97fa2dcf290a2de4a269298edd"
     },
     {
       "locale": "es-ES",
@@ -5089,6 +5199,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/es/app/id6788236641?pt=118326163&ct=iag_visual_es_es&mt=8",
       "sha256": "39bd382ba84817124ec9555adf3fce65f2ef68c47249ef9cd9a3337d0ecb6018"
+    },
+    {
+      "locale": "es-ES",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_es_es&mt=8",
+      "sha256": "eb96f4744de01316b7f70b76837576c9b21c1ab829d7d2ebbf8c34c8ddc24ade"
     },
     {
       "locale": "es-ES",
@@ -5302,16 +5422,6 @@
     },
     {
       "locale": "es-MX",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-MX/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/mx/app/id6794039979?pt=118326163&ct=iag_visual_es_mx&mt=8",
-      "sha256": "04179d18c0a66e26ebfb135af041ae31ff9cd45faf6eea09966a8dd6a31b2bd1"
-    },
-    {
-      "locale": "es-MX",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/hourstag.svg",
@@ -5319,6 +5429,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/hourstag.html",
       "app_store_url": "https://apps.apple.com/mx/app/id6754218117?pt=118326163&ct=iag_visual_es_mx&mt=8",
       "sha256": "7ef6249d87450ba14c92f654f920f34e73f65f6043b172f13f14c78c07e386ff"
+    },
+    {
+      "locale": "es-MX",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/mx/app/id6794039979?pt=118326163&ct=iag_visual_es_mx&mt=8",
+      "sha256": "04179d18c0a66e26ebfb135af041ae31ff9cd45faf6eea09966a8dd6a31b2bd1"
     },
     {
       "locale": "es-MX",
@@ -5519,6 +5639,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/mx/app/id6788236641?pt=118326163&ct=iag_visual_es_mx&mt=8",
       "sha256": "cf8dbc2b36e38b9b9a9a252553e60ad109e2149a188af19db27b0ab7549abccb"
+    },
+    {
+      "locale": "es-MX",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_es_mx&mt=8",
+      "sha256": "6e2a41bae3d107457fc5d475e355e83a091fbc27cb6cc235ee8e0601d79e3e59"
     },
     {
       "locale": "es-MX",
@@ -5732,16 +5862,6 @@
     },
     {
       "locale": "fi",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/fi/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/fi/app/id6794039979?pt=118326163&ct=iag_visual_fi&mt=8",
-      "sha256": "5da8a22cc5dbd5d71d4ffbc91e4cb8f86acfd7c6da33783d5be14b1be91ec620"
-    },
-    {
-      "locale": "fi",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/hourstag.svg",
@@ -5749,6 +5869,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/hourstag.html",
       "app_store_url": "https://apps.apple.com/fi/app/id6754218117?pt=118326163&ct=iag_visual_fi&mt=8",
       "sha256": "4f454444dfe6f03c5848b8156e63b0327e8b708f1385c41d56b0def3a607407f"
+    },
+    {
+      "locale": "fi",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/fi/app/id6794039979?pt=118326163&ct=iag_visual_fi&mt=8",
+      "sha256": "5da8a22cc5dbd5d71d4ffbc91e4cb8f86acfd7c6da33783d5be14b1be91ec620"
     },
     {
       "locale": "fi",
@@ -5949,6 +6079,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/fi/app/id6788236641?pt=118326163&ct=iag_visual_fi&mt=8",
       "sha256": "1b2103158bba351baffc6672c5a06ea66a5b9bd1024acde29592e47de6d40ece"
+    },
+    {
+      "locale": "fi",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_fi&mt=8",
+      "sha256": "1c870d606f3a691d6e99b8595347c56e4d3369de8a33640c739fd6b9e1d0830b"
     },
     {
       "locale": "fi",
@@ -6162,16 +6302,6 @@
     },
     {
       "locale": "fr-CA",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-CA/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=iag_visual_fr_ca&mt=8",
-      "sha256": "c837f59fca40142618d7d24ba8710d372a9d3aa6204e2066c4ec19a12075230b"
-    },
-    {
-      "locale": "fr-CA",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/hourstag.svg",
@@ -6179,6 +6309,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/hourstag.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_visual_fr_ca&mt=8",
       "sha256": "e79a26eccec5b32626ad56e8b3cf73844e4560c7f1c4b0322b25c87c9345782c"
+    },
+    {
+      "locale": "fr-CA",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=iag_visual_fr_ca&mt=8",
+      "sha256": "c837f59fca40142618d7d24ba8710d372a9d3aa6204e2066c4ec19a12075230b"
     },
     {
       "locale": "fr-CA",
@@ -6379,6 +6519,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6788236641?pt=118326163&ct=iag_visual_fr_ca&mt=8",
       "sha256": "444e0f2cd3c26d59297ea5aaa878f7ecd70fa031f6f93d61e1cc7f6655f3423c"
+    },
+    {
+      "locale": "fr-CA",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_fr_ca&mt=8",
+      "sha256": "07a379a33fb1efdcfae21d092dab15e7a9d4cc2b88100acc336741c541da6f45"
     },
     {
       "locale": "fr-CA",
@@ -6592,16 +6742,6 @@
     },
     {
       "locale": "fr-FR",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-FR/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
-      "app_store_url": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=iag_visual_fr_fr&mt=8",
-      "sha256": "de0863542e08f2e4dc2adecece8610d7a50bf5f27582e76acfe9f67bfbdde652"
-    },
-    {
-      "locale": "fr-FR",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/hourstag.svg",
@@ -6609,6 +6749,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/fr/app/id6754218117?pt=118326163&ct=iag_visual_fr_fr&mt=8",
       "sha256": "11a369783bab64264a65721647b69eddff47fb73e2da2f96faaa5127e4b58907"
+    },
+    {
+      "locale": "fr-FR",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+      "app_store_url": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=iag_visual_fr_fr&mt=8",
+      "sha256": "de0863542e08f2e4dc2adecece8610d7a50bf5f27582e76acfe9f67bfbdde652"
     },
     {
       "locale": "fr-FR",
@@ -6809,6 +6959,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/fr/app/id6788236641?pt=118326163&ct=iag_visual_fr_fr&mt=8",
       "sha256": "5affdd9fc5ce6d7bfc0c9937969e57a5ace298d0efb2805cf234507c8268c2f0"
+    },
+    {
+      "locale": "fr-FR",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_fr_fr&mt=8",
+      "sha256": "eebd85711c778667689ac02223860071c61ea6fe69de40cf35dcf1771ee33221"
     },
     {
       "locale": "fr-FR",
@@ -7022,16 +7182,6 @@
     },
     {
       "locale": "gu-IN",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/gu-IN/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_gu_in&mt=8",
-      "sha256": "d488501a4a99bc632743d7a4f55cd4b1a970f6596988513a82532719d59448e2"
-    },
-    {
-      "locale": "gu-IN",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/hourstag.svg",
@@ -7039,6 +7189,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_gu_in&mt=8",
       "sha256": "499474a708d831a6945f79fba5c10d6d34381d6ae5f50e2d189f974920439b97"
+    },
+    {
+      "locale": "gu-IN",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_gu_in&mt=8",
+      "sha256": "d488501a4a99bc632743d7a4f55cd4b1a970f6596988513a82532719d59448e2"
     },
     {
       "locale": "gu-IN",
@@ -7239,6 +7399,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_visual_gu_in&mt=8",
       "sha256": "302c6d3c8ebb249be113c528eef8c0f46e01d7fb4cd6d03d8d9ff43bf92d9f9d"
+    },
+    {
+      "locale": "gu-IN",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_gu_in&mt=8",
+      "sha256": "221120a7b68b789c6f323012286120cd88ca97952f5a14debec6d0f99ceb38d9"
     },
     {
       "locale": "gu-IN",
@@ -7452,16 +7622,6 @@
     },
     {
       "locale": "he",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/he/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/il/app/id6794039979?pt=118326163&ct=iag_visual_he&mt=8",
-      "sha256": "f58e0c0f60c57e7b66b112cd9dbc297dada80133781a59508654dc12af1b497a"
-    },
-    {
-      "locale": "he",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/hourstag.svg",
@@ -7469,6 +7629,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/hourstag.html",
       "app_store_url": "https://apps.apple.com/il/app/id6754218117?pt=118326163&ct=iag_visual_he&mt=8",
       "sha256": "309a2c502fef073e33c69c810cb06258f8dbc49218ca9d7852afa0db09d37d43"
+    },
+    {
+      "locale": "he",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/il/app/id6794039979?pt=118326163&ct=iag_visual_he&mt=8",
+      "sha256": "f58e0c0f60c57e7b66b112cd9dbc297dada80133781a59508654dc12af1b497a"
     },
     {
       "locale": "he",
@@ -7669,6 +7839,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/il/app/id6788236641?pt=118326163&ct=iag_visual_he&mt=8",
       "sha256": "4bc166c3f4e69e5273c7882de34e5b40a27a73ae290b5c699bbb5ace33908e6c"
+    },
+    {
+      "locale": "he",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_he&mt=8",
+      "sha256": "362d4cf8e43c36bee7e0630602180ed5cee47858200459b1c3de720cb2410645"
     },
     {
       "locale": "he",
@@ -7882,16 +8062,6 @@
     },
     {
       "locale": "hi",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/hi/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_hi&mt=8",
-      "sha256": "d4daad92dc040e33ea31999530b638074c20e9f9dfce31699ef4ffe7b98f2549"
-    },
-    {
-      "locale": "hi",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/hourstag.svg",
@@ -7899,6 +8069,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_hi&mt=8",
       "sha256": "677786877d15dea838e11e7639a4d824db03567ec86105fa6c922d75a2e5b239"
+    },
+    {
+      "locale": "hi",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_hi&mt=8",
+      "sha256": "d4daad92dc040e33ea31999530b638074c20e9f9dfce31699ef4ffe7b98f2549"
     },
     {
       "locale": "hi",
@@ -8099,6 +8279,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_visual_hi&mt=8",
       "sha256": "d3ab2947df6183af5c2426b21a570f8113c45c0bd523af02f3c9eba2ca17b3d7"
+    },
+    {
+      "locale": "hi",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_hi&mt=8",
+      "sha256": "01b6904b11a257696c5263ca6ad393da2f47b9f89ba517c82e292af6eccb7b2c"
     },
     {
       "locale": "hi",
@@ -8312,16 +8502,6 @@
     },
     {
       "locale": "hr",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/hr/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=iag_visual_hr&mt=8",
-      "sha256": "7d5b0893927b97e65c0fd578356a0667048b660d948a4af9d2f9977f70416926"
-    },
-    {
-      "locale": "hr",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/hourstag.svg",
@@ -8329,6 +8509,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/hourstag.html",
       "app_store_url": "https://apps.apple.com/hr/app/id6754218117?pt=118326163&ct=iag_visual_hr&mt=8",
       "sha256": "3ad299c9dc6d56f9c4eb2fd91e693807e0a93843bd3f24e9ac38baf72677f0dd"
+    },
+    {
+      "locale": "hr",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=iag_visual_hr&mt=8",
+      "sha256": "7d5b0893927b97e65c0fd578356a0667048b660d948a4af9d2f9977f70416926"
     },
     {
       "locale": "hr",
@@ -8529,6 +8719,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/hr/app/id6788236641?pt=118326163&ct=iag_visual_hr&mt=8",
       "sha256": "ca7aa38c209cbc1721b9d337711eab14843d811afae4fe029de57d5770ff1cef"
+    },
+    {
+      "locale": "hr",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_hr&mt=8",
+      "sha256": "1ad15ebaf0826193c872b8d6e527cdf0c1ec9bc46cb5f00a8bf5acc6ca0196fe"
     },
     {
       "locale": "hr",
@@ -8742,16 +8942,6 @@
     },
     {
       "locale": "hu",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/hu/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/hu/app/id6794039979?pt=118326163&ct=iag_visual_hu&mt=8",
-      "sha256": "011057b902a4cbae3372b7fa24c8643842ac911c97dcbf0b1580e25aff9c5c4f"
-    },
-    {
-      "locale": "hu",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/hourstag.svg",
@@ -8759,6 +8949,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/hourstag.html",
       "app_store_url": "https://apps.apple.com/hu/app/id6754218117?pt=118326163&ct=iag_visual_hu&mt=8",
       "sha256": "bde3bc1b53d8da74797ed6a0688f6177b1fec40c674bf6d2c6696d2af8745078"
+    },
+    {
+      "locale": "hu",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/hu/app/id6794039979?pt=118326163&ct=iag_visual_hu&mt=8",
+      "sha256": "011057b902a4cbae3372b7fa24c8643842ac911c97dcbf0b1580e25aff9c5c4f"
     },
     {
       "locale": "hu",
@@ -8959,6 +9159,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/hu/app/id6788236641?pt=118326163&ct=iag_visual_hu&mt=8",
       "sha256": "356d6cd9b4eab2daa8e9430737d6c9b95e2a95af0afbc97ded52055321e1114a"
+    },
+    {
+      "locale": "hu",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_hu&mt=8",
+      "sha256": "683c2baa30f65e345a41b5d8fc70df8c42a5e29a5b86739e1def4c6b2fe1961a"
     },
     {
       "locale": "hu",
@@ -9172,16 +9382,6 @@
     },
     {
       "locale": "id",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/id/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
-      "app_store_url": "https://apps.apple.com/id/app/id6794039979?pt=118326163&ct=iag_visual_id&mt=8",
-      "sha256": "94cd22a8ecc0069b1029c483d02637d2d6ba86b74f92e512662f3b1e38ccf482"
-    },
-    {
-      "locale": "id",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/hourstag.svg",
@@ -9189,6 +9389,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/id/app/id6754218117?pt=118326163&ct=iag_visual_id&mt=8",
       "sha256": "42793d556d3c6647d0c8d7f1970b683068c93ad84fabfce8510b6afb6a6d68b3"
+    },
+    {
+      "locale": "id",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+      "app_store_url": "https://apps.apple.com/id/app/id6794039979?pt=118326163&ct=iag_visual_id&mt=8",
+      "sha256": "94cd22a8ecc0069b1029c483d02637d2d6ba86b74f92e512662f3b1e38ccf482"
     },
     {
       "locale": "id",
@@ -9389,6 +9599,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/id/app/id6788236641?pt=118326163&ct=iag_visual_id&mt=8",
       "sha256": "401254804315c537abca4637c0b5d78cde46506af1ffe49de3b9cf7336602f66"
+    },
+    {
+      "locale": "id",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_id&mt=8",
+      "sha256": "f831eb39e6bb5c5853fafeb45a44b27c64556f1d99b6fe8ee447a70e0d139863"
     },
     {
       "locale": "id",
@@ -9602,16 +9822,6 @@
     },
     {
       "locale": "it",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/it/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/it/app/id6794039979?pt=118326163&ct=iag_visual_it&mt=8",
-      "sha256": "611e1314fecc488acd4381897bbb8653a0befdecc5b3fb7b82a99eecfe6aff31"
-    },
-    {
-      "locale": "it",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/hourstag.svg",
@@ -9619,6 +9829,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/hourstag.html",
       "app_store_url": "https://apps.apple.com/it/app/id6754218117?pt=118326163&ct=iag_visual_it&mt=8",
       "sha256": "c725be57c4309a84fac965788a015d1ddb2253e89a0295f65c194c801d58b312"
+    },
+    {
+      "locale": "it",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/it/app/id6794039979?pt=118326163&ct=iag_visual_it&mt=8",
+      "sha256": "611e1314fecc488acd4381897bbb8653a0befdecc5b3fb7b82a99eecfe6aff31"
     },
     {
       "locale": "it",
@@ -9819,6 +10039,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/it/app/id6788236641?pt=118326163&ct=iag_visual_it&mt=8",
       "sha256": "61102be7de2e1467137919a236ccc8b0f3739fc683608ff440847b2d3b3ec45b"
+    },
+    {
+      "locale": "it",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_it&mt=8",
+      "sha256": "e5eee44eb9b49dd0faafc4d7375427d041b1bb7046a9090d3750ea3be51b7ea6"
     },
     {
       "locale": "it",
@@ -10032,16 +10262,6 @@
     },
     {
       "locale": "ja",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ja/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
-      "app_store_url": "https://apps.apple.com/jp/app/id6794039979?pt=118326163&ct=iag_visual_ja&mt=8",
-      "sha256": "f55c1baff7ca7aa8b6b5d7b2ef5d19c337ef1e328b37fce91abb80a4f5ba3c94"
-    },
-    {
-      "locale": "ja",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/hourstag.svg",
@@ -10049,6 +10269,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=iag_visual_ja&mt=8",
       "sha256": "f202367405e8d286be69a59e4362df85d9ee8f873397f430c555c4030eab8e40"
+    },
+    {
+      "locale": "ja",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+      "app_store_url": "https://apps.apple.com/jp/app/id6794039979?pt=118326163&ct=iag_visual_ja&mt=8",
+      "sha256": "f55c1baff7ca7aa8b6b5d7b2ef5d19c337ef1e328b37fce91abb80a4f5ba3c94"
     },
     {
       "locale": "ja",
@@ -10249,6 +10479,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/jp/app/id6788236641?pt=118326163&ct=iag_visual_ja&mt=8",
       "sha256": "58c5506298731431c558fca582897f20b3224509d3fa39612ae376a40ea7cc92"
+    },
+    {
+      "locale": "ja",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_ja&mt=8",
+      "sha256": "96102e0999e5890550cf06dbb01f8e19481c1476f0b0ec2db27260cfc88fa059"
     },
     {
       "locale": "ja",
@@ -10462,16 +10702,6 @@
     },
     {
       "locale": "kn-IN",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/kn-IN/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_kn_in&mt=8",
-      "sha256": "ce9dfffd6f66f500f4fd12a7dbe4d605dfa3c4e9a3799da273ec65fbaf1b2c33"
-    },
-    {
-      "locale": "kn-IN",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/hourstag.svg",
@@ -10479,6 +10709,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_kn_in&mt=8",
       "sha256": "7aa6b5eb1cb2748320900fce3a67313938e9559f844076e9071122dbe634e23f"
+    },
+    {
+      "locale": "kn-IN",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_kn_in&mt=8",
+      "sha256": "ce9dfffd6f66f500f4fd12a7dbe4d605dfa3c4e9a3799da273ec65fbaf1b2c33"
     },
     {
       "locale": "kn-IN",
@@ -10679,6 +10919,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_visual_kn_in&mt=8",
       "sha256": "4afbf95e210dea7ada5ff779b73d69b142b5b1486c26ed44e4857a2aad19db97"
+    },
+    {
+      "locale": "kn-IN",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_kn_in&mt=8",
+      "sha256": "e36ee808c08a5b26ecb81bc4cb0eadc16763fd0595b8bc44d7b72992c8f9afac"
     },
     {
       "locale": "kn-IN",
@@ -10892,16 +11142,6 @@
     },
     {
       "locale": "ko",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
-      "app_store_url": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=iag_visual_ko&mt=8",
-      "sha256": "aa095c6d7a10b47bb78a48ded2a2429e6c2ff1d9837d19e1c89d968efe525169"
-    },
-    {
-      "locale": "ko",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/hourstag.svg",
@@ -10909,6 +11149,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=iag_visual_ko&mt=8",
       "sha256": "8d4b9c836f3fbf51984de412cff1826434cc0f9a6c285ef594d7518197230e9e"
+    },
+    {
+      "locale": "ko",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+      "app_store_url": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=iag_visual_ko&mt=8",
+      "sha256": "aa095c6d7a10b47bb78a48ded2a2429e6c2ff1d9837d19e1c89d968efe525169"
     },
     {
       "locale": "ko",
@@ -11109,6 +11359,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=iag_visual_ko&mt=8",
       "sha256": "380243161125af11b869c8fd1266e85340e860c31c95564d27e77867bb4808bb"
+    },
+    {
+      "locale": "ko",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_ko&mt=8",
+      "sha256": "f71318f6ccecd78426d8e3567cebef89e8a7f581a659db8c8affc9bfc78ac55d"
     },
     {
       "locale": "ko",
@@ -11322,16 +11582,6 @@
     },
     {
       "locale": "ml-IN",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ml-IN/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_ml_in&mt=8",
-      "sha256": "605c38d75a526c71ad332abbdcb27f898fbc4335797b35c3a91e0892a146362e"
-    },
-    {
-      "locale": "ml-IN",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/hourstag.svg",
@@ -11339,6 +11589,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_ml_in&mt=8",
       "sha256": "3139d99ca0807ca0a15c9659b928f551055fae74c1fc0714a0201a43538f3e91"
+    },
+    {
+      "locale": "ml-IN",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_ml_in&mt=8",
+      "sha256": "605c38d75a526c71ad332abbdcb27f898fbc4335797b35c3a91e0892a146362e"
     },
     {
       "locale": "ml-IN",
@@ -11539,6 +11799,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_visual_ml_in&mt=8",
       "sha256": "73bc73e518b911aa76ef87bd00ecbc32414b83c9ac0ef7f4c4264d154731d8ee"
+    },
+    {
+      "locale": "ml-IN",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_ml_in&mt=8",
+      "sha256": "37bb3b427cd21f745f0f0d0d06a6d0bec69a9dd284801528c8c3a2042d7503b8"
     },
     {
       "locale": "ml-IN",
@@ -11752,16 +12022,6 @@
     },
     {
       "locale": "mr-IN",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/mr-IN/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_mr_in&mt=8",
-      "sha256": "cff480111c531b04b96ed2d3fd16e1bfa9ab7ba3aa107f464bfb06308bd95053"
-    },
-    {
-      "locale": "mr-IN",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/hourstag.svg",
@@ -11769,6 +12029,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_mr_in&mt=8",
       "sha256": "d7d17485218d024b5a0971145cb784f9804a1dc9da3da20424000703e4015e61"
+    },
+    {
+      "locale": "mr-IN",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_mr_in&mt=8",
+      "sha256": "cff480111c531b04b96ed2d3fd16e1bfa9ab7ba3aa107f464bfb06308bd95053"
     },
     {
       "locale": "mr-IN",
@@ -11969,6 +12239,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_visual_mr_in&mt=8",
       "sha256": "37d5866c4aab1610157e83cfbc7c3886146e0143ff80e4910b8b4ed96dbcf17d"
+    },
+    {
+      "locale": "mr-IN",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_mr_in&mt=8",
+      "sha256": "bb674421f866a503b922f1867d369bdb7c1240be20d9fd6c5a2944e582420766"
     },
     {
       "locale": "mr-IN",
@@ -12182,16 +12462,6 @@
     },
     {
       "locale": "ms",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ms/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
-      "app_store_url": "https://apps.apple.com/my/app/id6794039979?pt=118326163&ct=iag_visual_ms&mt=8",
-      "sha256": "71ebba953ee74b75521ff434dbdda18f9be52a3339f9635e9aeff8af40d446c0"
-    },
-    {
-      "locale": "ms",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/hourstag.svg",
@@ -12199,6 +12469,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/my/app/id6754218117?pt=118326163&ct=iag_visual_ms&mt=8",
       "sha256": "cea1c5935fe11e2ea9d1f5cc76292ede05a24ca70443a5bb2c249fca47ccc7c1"
+    },
+    {
+      "locale": "ms",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+      "app_store_url": "https://apps.apple.com/my/app/id6794039979?pt=118326163&ct=iag_visual_ms&mt=8",
+      "sha256": "71ebba953ee74b75521ff434dbdda18f9be52a3339f9635e9aeff8af40d446c0"
     },
     {
       "locale": "ms",
@@ -12399,6 +12679,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/my/app/id6788236641?pt=118326163&ct=iag_visual_ms&mt=8",
       "sha256": "75ab995a307bb2fcbbec8454fa967dbc478b9bbe0572da0963801704107b9ec5"
+    },
+    {
+      "locale": "ms",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_ms&mt=8",
+      "sha256": "e6a3ac5e6697cf75ea4fdca86a3177be4efe95917b98bc3b3914cd686a7ec830"
     },
     {
       "locale": "ms",
@@ -12612,16 +12902,6 @@
     },
     {
       "locale": "nl-NL",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/nl-NL/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/nl/app/id6794039979?pt=118326163&ct=iag_visual_nl_nl&mt=8",
-      "sha256": "8271d543a2fcc2dc44c538e3dede2dbd46260ceaa53db7a10888d145ddc2bab6"
-    },
-    {
-      "locale": "nl-NL",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/hourstag.svg",
@@ -12629,6 +12909,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/hourstag.html",
       "app_store_url": "https://apps.apple.com/nl/app/id6754218117?pt=118326163&ct=iag_visual_nl_nl&mt=8",
       "sha256": "a70c5bd6e1e503a85479fb5288dee78188894a6db0e15b0a57f851bc1531809d"
+    },
+    {
+      "locale": "nl-NL",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/nl/app/id6794039979?pt=118326163&ct=iag_visual_nl_nl&mt=8",
+      "sha256": "8271d543a2fcc2dc44c538e3dede2dbd46260ceaa53db7a10888d145ddc2bab6"
     },
     {
       "locale": "nl-NL",
@@ -12829,6 +13119,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/nl/app/id6788236641?pt=118326163&ct=iag_visual_nl_nl&mt=8",
       "sha256": "bb602c6fa51ae5da4df4542f92eb3cec07c98a9e769b87321834e7cc851b7f9e"
+    },
+    {
+      "locale": "nl-NL",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_nl_nl&mt=8",
+      "sha256": "4829c608cf6975b930afab48019ef718e3e1a2a7b989818e8e33dd59d55961d3"
     },
     {
       "locale": "nl-NL",
@@ -13042,16 +13342,6 @@
     },
     {
       "locale": "no",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/no/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/no/app/id6794039979?pt=118326163&ct=iag_visual_no&mt=8",
-      "sha256": "9ad76e3680309664abd1d4d6478c4fb8bccf6df882213f117b85ef026a217c20"
-    },
-    {
-      "locale": "no",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/hourstag.svg",
@@ -13059,6 +13349,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/hourstag.html",
       "app_store_url": "https://apps.apple.com/no/app/id6754218117?pt=118326163&ct=iag_visual_no&mt=8",
       "sha256": "a38748b4de3c4c97193e60aa6ddf5b25d25ce8f000950a38a3c26319de5eefbb"
+    },
+    {
+      "locale": "no",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/no/app/id6794039979?pt=118326163&ct=iag_visual_no&mt=8",
+      "sha256": "9ad76e3680309664abd1d4d6478c4fb8bccf6df882213f117b85ef026a217c20"
     },
     {
       "locale": "no",
@@ -13259,6 +13559,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/no/app/id6788236641?pt=118326163&ct=iag_visual_no&mt=8",
       "sha256": "570ea40c4445a3ad696b04c6524cd45ecdbd54b61f64ff6ef178b4c1f342a8e8"
+    },
+    {
+      "locale": "no",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_no&mt=8",
+      "sha256": "4349cf74f17a6416571cc51cb98a2de54959ed6a74e0f333b9b7a91ee633c532"
     },
     {
       "locale": "no",
@@ -13472,16 +13782,6 @@
     },
     {
       "locale": "or-IN",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/or-IN/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_or_in&mt=8",
-      "sha256": "640cc77f2ff494652bf8778185194bbaa1d748415d1699be97f00fbd815e6fdf"
-    },
-    {
-      "locale": "or-IN",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/hourstag.svg",
@@ -13489,6 +13789,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_or_in&mt=8",
       "sha256": "c7abc69f0554ab52604b7f95af750dc4a5053a340979382fc125c17335a61ade"
+    },
+    {
+      "locale": "or-IN",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_or_in&mt=8",
+      "sha256": "640cc77f2ff494652bf8778185194bbaa1d748415d1699be97f00fbd815e6fdf"
     },
     {
       "locale": "or-IN",
@@ -13689,6 +13999,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_visual_or_in&mt=8",
       "sha256": "a26beda0aa5c906754740b452275d47947bf7608705ca6bad6f6ddb7835f5f7e"
+    },
+    {
+      "locale": "or-IN",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_or_in&mt=8",
+      "sha256": "69661ca837e3241f101d3c726337660a1c869da9042610e4645e872d11eff529"
     },
     {
       "locale": "or-IN",
@@ -13902,16 +14222,6 @@
     },
     {
       "locale": "pa-IN",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/pa-IN/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_pa_in&mt=8",
-      "sha256": "3657461ade2940c831494ec58d53bceeb3b921fd33463284b697f6220da39909"
-    },
-    {
-      "locale": "pa-IN",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/hourstag.svg",
@@ -13919,6 +14229,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_pa_in&mt=8",
       "sha256": "20d6e80122fbabe0a2c3e75a80e7763d92f425b8b958d50b64b1dea821c0e24a"
+    },
+    {
+      "locale": "pa-IN",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_pa_in&mt=8",
+      "sha256": "3657461ade2940c831494ec58d53bceeb3b921fd33463284b697f6220da39909"
     },
     {
       "locale": "pa-IN",
@@ -14119,6 +14439,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_visual_pa_in&mt=8",
       "sha256": "d02b7830134720de8f6893439d94588bbbc7434249864283b65f2c66b091582f"
+    },
+    {
+      "locale": "pa-IN",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_pa_in&mt=8",
+      "sha256": "e4aee260371a8770175b80ea8e718c56d0561ea14ce11ffa76e7311fd1c6c49d"
     },
     {
       "locale": "pa-IN",
@@ -14332,16 +14662,6 @@
     },
     {
       "locale": "pl",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/pl/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/pl/app/id6794039979?pt=118326163&ct=iag_visual_pl&mt=8",
-      "sha256": "24595fbbf07bead8b643a7b1ce17fa87ea6cfa09a044f16ffb8ad8b83597622f"
-    },
-    {
-      "locale": "pl",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/hourstag.svg",
@@ -14349,6 +14669,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/hourstag.html",
       "app_store_url": "https://apps.apple.com/pl/app/id6754218117?pt=118326163&ct=iag_visual_pl&mt=8",
       "sha256": "22a0dec8d36681ccff17743eaa1d04a355a60e692fab163b9a2e453634023434"
+    },
+    {
+      "locale": "pl",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/pl/app/id6794039979?pt=118326163&ct=iag_visual_pl&mt=8",
+      "sha256": "24595fbbf07bead8b643a7b1ce17fa87ea6cfa09a044f16ffb8ad8b83597622f"
     },
     {
       "locale": "pl",
@@ -14549,6 +14879,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/pl/app/id6788236641?pt=118326163&ct=iag_visual_pl&mt=8",
       "sha256": "f5789ccb26f40b805c1fe82f2c5a54117e8979834ef3bd59eae0f451eae43b4b"
+    },
+    {
+      "locale": "pl",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_pl&mt=8",
+      "sha256": "9414430fa418d3aa6302799828060ee4d53ce5ef2ece2aa3a1d4a37df9f19af8"
     },
     {
       "locale": "pl",
@@ -14762,16 +15102,6 @@
     },
     {
       "locale": "pt-BR",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-BR/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
-      "app_store_url": "https://apps.apple.com/br/app/id6794039979?pt=118326163&ct=iag_visual_pt_br&mt=8",
-      "sha256": "b1c3e150b76589161992da3f52e4bef4735ab719d041cbead5bae9dfe39914b8"
-    },
-    {
-      "locale": "pt-BR",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/hourstag.svg",
@@ -14779,6 +15109,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/br/app/id6754218117?pt=118326163&ct=iag_visual_pt_br&mt=8",
       "sha256": "878f318dab1a35262c9d098436d5416058fe99dc529d9aec8375793873ce70c0"
+    },
+    {
+      "locale": "pt-BR",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+      "app_store_url": "https://apps.apple.com/br/app/id6794039979?pt=118326163&ct=iag_visual_pt_br&mt=8",
+      "sha256": "b1c3e150b76589161992da3f52e4bef4735ab719d041cbead5bae9dfe39914b8"
     },
     {
       "locale": "pt-BR",
@@ -14979,6 +15319,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/br/app/id6788236641?pt=118326163&ct=iag_visual_pt_br&mt=8",
       "sha256": "38b9b89e0c747dd8e849e3b907c04f7dd6fc9d30155e973a51b694587e86e069"
+    },
+    {
+      "locale": "pt-BR",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_pt_br&mt=8",
+      "sha256": "73ca86d025518cd3855ff9473eb44badd7831b6b069a0d17951772adf71bf05d"
     },
     {
       "locale": "pt-BR",
@@ -15192,16 +15542,6 @@
     },
     {
       "locale": "pt-PT",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-PT/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
-      "app_store_url": "https://apps.apple.com/pt/app/id6794039979?pt=118326163&ct=iag_visual_pt_pt&mt=8",
-      "sha256": "9791d872783126f318f57eedc6865b4a3b4456739231655043c8d42272fc89b0"
-    },
-    {
-      "locale": "pt-PT",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/hourstag.svg",
@@ -15209,6 +15549,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/pt/app/id6754218117?pt=118326163&ct=iag_visual_pt_pt&mt=8",
       "sha256": "80938f2076a4d11b3d5f43a92e2d741577bab497f014722d2b7e55dfec020b42"
+    },
+    {
+      "locale": "pt-PT",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+      "app_store_url": "https://apps.apple.com/pt/app/id6794039979?pt=118326163&ct=iag_visual_pt_pt&mt=8",
+      "sha256": "9791d872783126f318f57eedc6865b4a3b4456739231655043c8d42272fc89b0"
     },
     {
       "locale": "pt-PT",
@@ -15409,6 +15759,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/pt/app/id6788236641?pt=118326163&ct=iag_visual_pt_pt&mt=8",
       "sha256": "39617d706a31b81cd0124b0e86136484ce68734663471d402734c49f07aa9090"
+    },
+    {
+      "locale": "pt-PT",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_pt_pt&mt=8",
+      "sha256": "2543f9eabb34fb2329e0b1e79960ece501ccfb2530b345158e2c7aa41851db8c"
     },
     {
       "locale": "pt-PT",
@@ -15622,16 +15982,6 @@
     },
     {
       "locale": "ro",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ro/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/ro/app/id6794039979?pt=118326163&ct=iag_visual_ro&mt=8",
-      "sha256": "dde127adeb5732a1554ee7df628852e67d6598e28126e3c7efdd67abf218e7f6"
-    },
-    {
-      "locale": "ro",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/hourstag.svg",
@@ -15639,6 +15989,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/hourstag.html",
       "app_store_url": "https://apps.apple.com/ro/app/id6754218117?pt=118326163&ct=iag_visual_ro&mt=8",
       "sha256": "7e5b028ce2d3e2d4b459908a1ccb279f931a96f6697307863bec285f4526f58f"
+    },
+    {
+      "locale": "ro",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/ro/app/id6794039979?pt=118326163&ct=iag_visual_ro&mt=8",
+      "sha256": "dde127adeb5732a1554ee7df628852e67d6598e28126e3c7efdd67abf218e7f6"
     },
     {
       "locale": "ro",
@@ -15839,6 +16199,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/ro/app/id6788236641?pt=118326163&ct=iag_visual_ro&mt=8",
       "sha256": "0ff608803f74c926b5c41831e2d128b218a873971e791ebb82548501e4d189a6"
+    },
+    {
+      "locale": "ro",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_ro&mt=8",
+      "sha256": "9c8374109f135c2ef9899e25cfc4d08ecc885f1bdce54292fb249dccacf0a2ad"
     },
     {
       "locale": "ro",
@@ -16052,16 +16422,6 @@
     },
     {
       "locale": "ru",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ru/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=iag_visual_ru&mt=8",
-      "sha256": "295be2f85057cf2836fdc9fff020c4702ee285404fc0e360efd0c55b408d5e12"
-    },
-    {
-      "locale": "ru",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/hourstag.svg",
@@ -16069,6 +16429,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/hourstag.html",
       "app_store_url": "https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=iag_visual_ru&mt=8",
       "sha256": "a07675e701bdd2484fd119fdbbddae7b68dcbd51c1d0fe2396b78a81a17308ef"
+    },
+    {
+      "locale": "ru",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=iag_visual_ru&mt=8",
+      "sha256": "295be2f85057cf2836fdc9fff020c4702ee285404fc0e360efd0c55b408d5e12"
     },
     {
       "locale": "ru",
@@ -16269,6 +16639,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/ru/app/id6788236641?pt=118326163&ct=iag_visual_ru&mt=8",
       "sha256": "fe091609c39f7ca0f9f58179478c5e73f7c4a2b3889382c27698b5ae29991c12"
+    },
+    {
+      "locale": "ru",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_ru&mt=8",
+      "sha256": "76e204245d261d216d1c1e1ff16e6ab233b591b6507fe67b74abfe3481ebd9f4"
     },
     {
       "locale": "ru",
@@ -16482,16 +16862,6 @@
     },
     {
       "locale": "sk",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/sk/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/sk/app/id6794039979?pt=118326163&ct=iag_visual_sk&mt=8",
-      "sha256": "d2eff58a2a2deb9e744249f99ef3947b5a3879b1d506681d43a654c71825389f"
-    },
-    {
-      "locale": "sk",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/hourstag.svg",
@@ -16499,6 +16869,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/hourstag.html",
       "app_store_url": "https://apps.apple.com/sk/app/id6754218117?pt=118326163&ct=iag_visual_sk&mt=8",
       "sha256": "d6cbdc1c5de799b84225b3028a69fcd732b6c3e86e75b76f59beefab1c3a7786"
+    },
+    {
+      "locale": "sk",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/sk/app/id6794039979?pt=118326163&ct=iag_visual_sk&mt=8",
+      "sha256": "d2eff58a2a2deb9e744249f99ef3947b5a3879b1d506681d43a654c71825389f"
     },
     {
       "locale": "sk",
@@ -16699,6 +17079,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/sk/app/id6788236641?pt=118326163&ct=iag_visual_sk&mt=8",
       "sha256": "201a3f30072b5b64bb2e5f6d20f0423f33784212986713b1154bec019bb62416"
+    },
+    {
+      "locale": "sk",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_sk&mt=8",
+      "sha256": "ca83c48988bc9017925ad0f079a19bd4c76b819414a1e7fd67d12904a76d30ce"
     },
     {
       "locale": "sk",
@@ -16912,16 +17302,6 @@
     },
     {
       "locale": "sl-SI",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/sl-SI/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/si/app/id6794039979?pt=118326163&ct=iag_visual_sl_si&mt=8",
-      "sha256": "15d4a2b42f41e8e735e3239cd3eb8ee7a89ce2b29d59e0a1c3ed80dc294abbc4"
-    },
-    {
-      "locale": "sl-SI",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/hourstag.svg",
@@ -16929,6 +17309,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/hourstag.html",
       "app_store_url": "https://apps.apple.com/si/app/id6754218117?pt=118326163&ct=iag_visual_sl_si&mt=8",
       "sha256": "b0c3945b4b30a0c19610510ecae224c4f84548502f2eaf1bd3a38e8e6a3ec05d"
+    },
+    {
+      "locale": "sl-SI",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/si/app/id6794039979?pt=118326163&ct=iag_visual_sl_si&mt=8",
+      "sha256": "15d4a2b42f41e8e735e3239cd3eb8ee7a89ce2b29d59e0a1c3ed80dc294abbc4"
     },
     {
       "locale": "sl-SI",
@@ -17129,6 +17519,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/si/app/id6788236641?pt=118326163&ct=iag_visual_sl_si&mt=8",
       "sha256": "76cbcc21d0ef3d9880c23fd5c3f6a597c9adc2818fd23fab769abb390cbe5390"
+    },
+    {
+      "locale": "sl-SI",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_sl_si&mt=8",
+      "sha256": "67b85e8a54b49a70fe1b18e95a06facae9f38c0e99575aef490049d3a1446e1d"
     },
     {
       "locale": "sl-SI",
@@ -17342,16 +17742,6 @@
     },
     {
       "locale": "sv",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/sv/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/se/app/id6794039979?pt=118326163&ct=iag_visual_sv&mt=8",
-      "sha256": "effc8d759caa18d7769c0b05cf60975079dd746e94357af5f60d26741b3d9215"
-    },
-    {
-      "locale": "sv",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/hourstag.svg",
@@ -17359,6 +17749,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/hourstag.html",
       "app_store_url": "https://apps.apple.com/se/app/id6754218117?pt=118326163&ct=iag_visual_sv&mt=8",
       "sha256": "29e4ae4e6afe479b11e974c094dc07bae5d83f6ae44235c904c602ba2633e566"
+    },
+    {
+      "locale": "sv",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/se/app/id6794039979?pt=118326163&ct=iag_visual_sv&mt=8",
+      "sha256": "effc8d759caa18d7769c0b05cf60975079dd746e94357af5f60d26741b3d9215"
     },
     {
       "locale": "sv",
@@ -17559,6 +17959,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/se/app/id6788236641?pt=118326163&ct=iag_visual_sv&mt=8",
       "sha256": "d6f0500b02e465e22a12f1589185ca9c43c217653a246000174adf1e46228e17"
+    },
+    {
+      "locale": "sv",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_sv&mt=8",
+      "sha256": "3c5bda71be73b46af0bd1c4c88eeb3dbfc7a4ada6433e3498ea0521281e97ff3"
     },
     {
       "locale": "sv",
@@ -17772,16 +18182,6 @@
     },
     {
       "locale": "ta-IN",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ta-IN/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_ta_in&mt=8",
-      "sha256": "159623bd6789db8e1ba778703cc81a7ad5a6842ea6917d8fb6843d5679f48687"
-    },
-    {
-      "locale": "ta-IN",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/hourstag.svg",
@@ -17789,6 +18189,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_ta_in&mt=8",
       "sha256": "dd16ce433217d54e520446048e96ad1c6633c2671f957fc50077ce64353cfb8c"
+    },
+    {
+      "locale": "ta-IN",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_ta_in&mt=8",
+      "sha256": "159623bd6789db8e1ba778703cc81a7ad5a6842ea6917d8fb6843d5679f48687"
     },
     {
       "locale": "ta-IN",
@@ -17989,6 +18399,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_visual_ta_in&mt=8",
       "sha256": "e7e6df293b83ed2a4bc8125b337828e273a40a05ae94b537c602bd6857846b72"
+    },
+    {
+      "locale": "ta-IN",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_ta_in&mt=8",
+      "sha256": "6a892677780880bfbf4256f96cf0c64ce89ab30d3d817d9f8340c4a3af4b6f23"
     },
     {
       "locale": "ta-IN",
@@ -18202,16 +18622,6 @@
     },
     {
       "locale": "te-IN",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/te-IN/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_te_in&mt=8",
-      "sha256": "834ff68d91e68586eb6bb79c90d58e00ed79c32314c860c2d0d8c26fad84299f"
-    },
-    {
-      "locale": "te-IN",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/hourstag.svg",
@@ -18219,6 +18629,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/hourstag.html",
       "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_te_in&mt=8",
       "sha256": "64f583b19e7d64218bd54b683fc62b9ae94d4fc444056053cbd6226429c83443"
+    },
+    {
+      "locale": "te-IN",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_te_in&mt=8",
+      "sha256": "834ff68d91e68586eb6bb79c90d58e00ed79c32314c860c2d0d8c26fad84299f"
     },
     {
       "locale": "te-IN",
@@ -18419,6 +18839,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_visual_te_in&mt=8",
       "sha256": "67738c58b3d9960fcbc4472478264118ffb155e96ad85374451fd7e2e468c5d0"
+    },
+    {
+      "locale": "te-IN",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_te_in&mt=8",
+      "sha256": "10682e4458bc347f78cadc476a3a78b309cb1cdd7c921d5c0d10b6c809192a4b"
     },
     {
       "locale": "te-IN",
@@ -18632,16 +19062,6 @@
     },
     {
       "locale": "th",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/th/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
-      "app_store_url": "https://apps.apple.com/th/app/id6794039979?pt=118326163&ct=iag_visual_th&mt=8",
-      "sha256": "eea526e396ea3506af9d86cc8f9db6413e4a6de43b354b8704f1bebb513d4bdb"
-    },
-    {
-      "locale": "th",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/hourstag.svg",
@@ -18649,6 +19069,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/th/app/id6754218117?pt=118326163&ct=iag_visual_th&mt=8",
       "sha256": "5ae6f9ef643bccdaff27e7657577a3a1df2b5b252985599a33e57ca2920a9c33"
+    },
+    {
+      "locale": "th",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+      "app_store_url": "https://apps.apple.com/th/app/id6794039979?pt=118326163&ct=iag_visual_th&mt=8",
+      "sha256": "eea526e396ea3506af9d86cc8f9db6413e4a6de43b354b8704f1bebb513d4bdb"
     },
     {
       "locale": "th",
@@ -18849,6 +19279,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/th/app/id6788236641?pt=118326163&ct=iag_visual_th&mt=8",
       "sha256": "7b31bbe56762173fb53105a720e022a237a667da982c2eab59b3538d89145f4d"
+    },
+    {
+      "locale": "th",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_th&mt=8",
+      "sha256": "401fc3bed822bd9000c22d2adb433308129000374da703631afcd3d09aa24adf"
     },
     {
       "locale": "th",
@@ -19062,16 +19502,6 @@
     },
     {
       "locale": "tr",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/tr/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
-      "app_store_url": "https://apps.apple.com/tr/app/id6794039979?pt=118326163&ct=iag_visual_tr&mt=8",
-      "sha256": "d7664e102fe4f65906fd70034c14fdc84ab5631fdca2579169941a4775c7f7e6"
-    },
-    {
-      "locale": "tr",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/hourstag.svg",
@@ -19079,6 +19509,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/tr/app/id6754218117?pt=118326163&ct=iag_visual_tr&mt=8",
       "sha256": "51fb52e2ed33fc2ba5f1c8614bdd746e0dc8287e83a5e53474bf9718744e15ee"
+    },
+    {
+      "locale": "tr",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+      "app_store_url": "https://apps.apple.com/tr/app/id6794039979?pt=118326163&ct=iag_visual_tr&mt=8",
+      "sha256": "d7664e102fe4f65906fd70034c14fdc84ab5631fdca2579169941a4775c7f7e6"
     },
     {
       "locale": "tr",
@@ -19279,6 +19719,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/tr/app/id6788236641?pt=118326163&ct=iag_visual_tr&mt=8",
       "sha256": "9ab906d10e53deef24a60e40b85723e05d64ed6a82e518128cb2aa438da52baa"
+    },
+    {
+      "locale": "tr",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_tr&mt=8",
+      "sha256": "4a4419cf233ade2ecb9c340b3f6524f1a6cd6c97b62bbf09bf11d4f8642fe4af"
     },
     {
       "locale": "tr",
@@ -19492,16 +19942,6 @@
     },
     {
       "locale": "uk",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/uk/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/ua/app/id6794039979?pt=118326163&ct=iag_visual_uk&mt=8",
-      "sha256": "219a152e63e6a0c0217594643c99555dfc8c2ed185b8e06824734fcf22ade1de"
-    },
-    {
-      "locale": "uk",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/hourstag.svg",
@@ -19509,6 +19949,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/hourstag.html",
       "app_store_url": "https://apps.apple.com/ua/app/id6754218117?pt=118326163&ct=iag_visual_uk&mt=8",
       "sha256": "8515d027d9014f7de69440748ecf932e71185fab87279a6156334571f53da302"
+    },
+    {
+      "locale": "uk",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/ua/app/id6794039979?pt=118326163&ct=iag_visual_uk&mt=8",
+      "sha256": "219a152e63e6a0c0217594643c99555dfc8c2ed185b8e06824734fcf22ade1de"
     },
     {
       "locale": "uk",
@@ -19709,6 +20159,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/ua/app/id6788236641?pt=118326163&ct=iag_visual_uk&mt=8",
       "sha256": "8674ed8e50e3cbb9e4c496ae43e65ed1a6bf2e941a3e5e4cc0bc2d2d6aaf3b18"
+    },
+    {
+      "locale": "uk",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_uk&mt=8",
+      "sha256": "fddb57850227905ff6974acc6b2fc700a7cf54c6b2a9cc4ea98c6be6618f7d9a"
     },
     {
       "locale": "uk",
@@ -19922,16 +20382,6 @@
     },
     {
       "locale": "ur-PK",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ur-PK/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/pk/app/id6794039979?pt=118326163&ct=iag_visual_ur_pk&mt=8",
-      "sha256": "9e12cb82380de77370db04d74452a1960690f1ef34f89f4a460cfd070214f6cb"
-    },
-    {
-      "locale": "ur-PK",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/hourstag.svg",
@@ -19939,6 +20389,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/hourstag.html",
       "app_store_url": "https://apps.apple.com/pk/app/id6754218117?pt=118326163&ct=iag_visual_ur_pk&mt=8",
       "sha256": "49a4b41c5b423428eddf8029e349e2a8cac68afd7e2d4dce62060ed1365ee8bb"
+    },
+    {
+      "locale": "ur-PK",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/pk/app/id6794039979?pt=118326163&ct=iag_visual_ur_pk&mt=8",
+      "sha256": "9e12cb82380de77370db04d74452a1960690f1ef34f89f4a460cfd070214f6cb"
     },
     {
       "locale": "ur-PK",
@@ -20139,6 +20599,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/pk/app/id6788236641?pt=118326163&ct=iag_visual_ur_pk&mt=8",
       "sha256": "bd17f529f4207c567e0b6b502f2d48c557e3bce98d3f7ba822d0c28f4b0adc4a"
+    },
+    {
+      "locale": "ur-PK",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_ur_pk&mt=8",
+      "sha256": "6a701be446e6de8fbd23e34f03c36cb8bfb1c24a1662f921e90bd41a6c51dc3c"
     },
     {
       "locale": "ur-PK",
@@ -20352,16 +20822,6 @@
     },
     {
       "locale": "vi",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/vi/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
-      "app_store_url": "https://apps.apple.com/vn/app/id6794039979?pt=118326163&ct=iag_visual_vi&mt=8",
-      "sha256": "4327a5fbbb7a42d5046577428da82eaf9b7503abf3c254e8f5853023ec5e69b3"
-    },
-    {
-      "locale": "vi",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/hourstag.svg",
@@ -20369,6 +20829,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/vn/app/id6754218117?pt=118326163&ct=iag_visual_vi&mt=8",
       "sha256": "d67add4253ffd28e00d3b82fd9f49ec78480dd2cc68025f7ce72ccc98b58c64c"
+    },
+    {
+      "locale": "vi",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+      "app_store_url": "https://apps.apple.com/vn/app/id6794039979?pt=118326163&ct=iag_visual_vi&mt=8",
+      "sha256": "4327a5fbbb7a42d5046577428da82eaf9b7503abf3c254e8f5853023ec5e69b3"
     },
     {
       "locale": "vi",
@@ -20569,6 +21039,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/vn/app/id6788236641?pt=118326163&ct=iag_visual_vi&mt=8",
       "sha256": "99980c7f8af6a25d91ff1b3e964b06cd959660b0cbfdb74ca2cf2b8b01961a6a"
+    },
+    {
+      "locale": "vi",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_vi&mt=8",
+      "sha256": "af3f6992f9b3f8331a7dd3e3415511b70f14229497f639d40e043ae225189004"
     },
     {
       "locale": "vi",
@@ -20782,16 +21262,6 @@
     },
     {
       "locale": "zh-Hans",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/hourstaglite.html",
-      "app_store_url": "https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=iag_visual_zh_hans&mt=8",
-      "sha256": "b35952e94778cc2ccb608d580bf5e284c814c19dc7afe73de1989f7272b24656"
-    },
-    {
-      "locale": "zh-Hans",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/hourstag.svg",
@@ -20799,6 +21269,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/hourstag.html",
       "app_store_url": "https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=iag_visual_zh_hans&mt=8",
       "sha256": "c83d35f7ff2f8f1a42dc1f7f5b6ceb70532e1bb509ea201355fdb8e22c2b3ea1"
+    },
+    {
+      "locale": "zh-Hans",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/hourstaglite.html",
+      "app_store_url": "https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=iag_visual_zh_hans&mt=8",
+      "sha256": "b35952e94778cc2ccb608d580bf5e284c814c19dc7afe73de1989f7272b24656"
     },
     {
       "locale": "zh-Hans",
@@ -20999,6 +21479,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/cn/app/id6788236641?pt=118326163&ct=iag_visual_zh_hans&mt=8",
       "sha256": "e9106ae76385a146d0a22a7bc52c06f07cc64b32368641c8a2a14b373cc02409"
+    },
+    {
+      "locale": "zh-Hans",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_zh_hans&mt=8",
+      "sha256": "15320ae7c168b31132a0c66fc3d12227aeb34e6967190f3d75060393b45396b3"
     },
     {
       "locale": "zh-Hans",
@@ -21212,16 +21702,6 @@
     },
     {
       "locale": "zh-Hant",
-      "app_key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hant/hourstaglite.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
-      "app_store_url": "https://apps.apple.com/tw/app/id6794039979?pt=118326163&ct=iag_visual_zh_hant&mt=8",
-      "sha256": "2a93aa846b21504568fb4d30f3a234d556d420dc7fb53b014a69b8ac7c770e01"
-    },
-    {
-      "locale": "zh-Hant",
       "app_key": "hourstag",
       "app_store_id": "6754218117",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hant/hourstag.svg",
@@ -21229,6 +21709,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6754218117?pt=118326163&ct=iag_visual_zh_hant&mt=8",
       "sha256": "0ffccd7fef16e31c2395dfbd040c912665dc9f1363a8695cdf2eff569b6ae325"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hant/hourstaglite.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
+      "app_store_url": "https://apps.apple.com/tw/app/id6794039979?pt=118326163&ct=iag_visual_zh_hant&mt=8",
+      "sha256": "2a93aa846b21504568fb4d30f3a234d556d420dc7fb53b014a69b8ac7c770e01"
     },
     {
       "locale": "zh-Hant",
@@ -21429,6 +21919,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6788236641?pt=118326163&ct=iag_visual_zh_hant&mt=8",
       "sha256": "d86637609ffc82ad9aaa8f2143e911eb07c67e64d46302eb9ea2f216957f3cb2"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hant/shotinbox.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/shotinbox.html",
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_visual_zh_hant&mt=8",
+      "sha256": "327df50b8916951722d5c2a7c59daaf0883e7f4efd6ef896419113d50cf575d6"
     },
     {
       "locale": "zh-Hant",

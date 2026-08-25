@@ -2,11 +2,11 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-08-25",
-  "content_digest": "66e5017649da66a6e4fc14972ff8b17c87218ccc74c3e4593cac396c12ae55d8",
+  "content_digest": "f94f64dfb84cfe62ed63711799322a1030dac9c651a8f9154743624724ad4756",
   "locale": "fr-CA",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 43,
+  "record_count": 44,
   "apps": [
     {
       "key": "notesstudio100",
@@ -495,44 +495,6 @@
       }
     },
     {
-      "key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
-      "summary": "HoursTag Lite - Le vrai prix des choses",
-      "category": "finance",
-      "search_terms": [
-        "budget",
-        "économies",
-        "dépenses",
-        "économiser",
-        "gestion budget",
-        "finances",
-        "achats impulsifs",
-        "épargne",
-        "gérer argent"
-      ],
-      "purchase_model": "free_with_lifetime_unlock",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": false,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
-      },
-      "app_store_url": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=iag_api_fr_ca&mt=8",
-      "guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/hourstaglite.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "0",
-        "currency": "CAD",
-        "formatted_price": "Gratuit",
-        "storefront_url": "https://apps.apple.com/ca/app/id6794039979"
-      }
-    },
-    {
       "key": "hourstag",
       "app_store_id": "6754218117",
       "name": "HoursTag : Heures d’achat",
@@ -587,6 +549,44 @@
         "currency": "CAD",
         "formatted_price": "$6.99",
         "storefront_url": "https://apps.apple.com/ca/app/id6754218117"
+      }
+    },
+    {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite",
+      "summary": "HoursTag Lite - Le vrai prix des choses",
+      "category": "finance",
+      "search_terms": [
+        "budget",
+        "économies",
+        "dépenses",
+        "économiser",
+        "gestion budget",
+        "finances",
+        "achats impulsifs",
+        "épargne",
+        "gérer argent"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=iag_api_fr_ca&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/hourstaglite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Gratuit",
+        "storefront_url": "https://apps.apple.com/ca/app/id6794039979"
       }
     },
     {
@@ -1619,6 +1619,41 @@
         "formatted_price": "Gratuit",
         "storefront_url": "https://apps.apple.com/ca/app/id6788236641"
       }
+    },
+    {
+      "key": "shotinbox",
+      "app_store_id": "6802166527",
+      "name": "ShotInbox AI: Sort Screenshots",
+      "summary": "Vos captures, enfin rangées Retrouvez, traitez et rangez chaque capture.",
+      "category": "photo-utility",
+      "search_terms": [
+        "écran",
+        "photos",
+        "classement",
+        "nettoyeur",
+        "doublons",
+        "similaires",
+        "texte",
+        "pellicule",
+        "stockage",
+        "reçus",
+        "liens",
+        "notes"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_api_fr_ca&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/shotinbox.html",
+      "verified_live": true
     },
     {
       "key": "snapport",

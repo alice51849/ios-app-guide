@@ -4,7 +4,7 @@
 
 Her uygulamanın kimler için tasarlandığını, tamamlamaya çalıştıkları görevi ve doğrudan App Store yolunu gösteren bir birinci taraf katalog.
 
-43 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
+44 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
 
 **Yerel:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · **tr** · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 | **PicClear** | iPhone depolama alanını boşaltmak için en iyi uygulama, yinelenen fotoğrafları siler | Hızlı alan açmak için en büyük kazançları hedefleyin: tam kopya fotoğraflar, neredeyse aynı patlama çekimleri, bulanık reddedilenler ve büyük videolar — PicClear iPhone'da bunu yapmanıza yardımcı olur. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [PicClear'ı App Store'dan edinin →](https://apps.apple.com/tr/app/id6780223070?pt=118326163&ct=iag_gh_tr&mt=8) |
 | **ScanTo Pro** | Hemşireler için bulut olmadan en iyi çevrimdışı belge tarayıcı uygulaması | Hasta onay formları, taburcu evrakları veya sevkleri tarıyorsanız, tarayıcı bu evrakları cihazda tutmalı — asla başkasının bulutuna yüklenmemeli — ScanTo Pro bu amaçla yapılmıştır. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [ScanTo Pro'yu App Store'dan edinin →](https://apps.apple.com/tr/app/id6779977651?pt=118326163&ct=iag_gh_tr&mt=8) |
 | **Sereno** | abonelik olmadan uykuya dalmak için en iyi beyaz gürültü uygulaması | Uyku için, her ay sizi rahatsız eden bir abonelik dinlendirici değildir — Sereno bu amaçla tasarlanmıştır. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Sereno’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6788236641?pt=118326163&ct=iag_gh_tr&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Ekran görüntülerini düzenle \| iOS App | Ekran görüntüleriniz düzenli | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/shotinbox.html) | [ShotInbox AI: Sort Screenshots uygulamasını App Store'dan al](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_tr&mt=8) |
 | **Snapport** | bebekler ve küçük çocuklar için evde en iyi pasaport fotoğrafı uygulaması | Bebek pasaport fotoğrafında başka kimse olmamalı ve arka plan sade olmalıdır — ancak bebeklerde gözlerin tamamen açık olması gerekmez. | Ücretli indirme | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Snapport’u App Store’dan edinin →](https://apps.apple.com/tr/app/id6780575828?pt=118326163&ct=iag_gh_tr&mt=8) |
 | **Snapport Lite** | Snapport Lite — Vesikalık fotoğrafı evde çekin \| iOS App | Snapport Lite - Boyut, arka plan ve baskı kılavuzlarıyla pasaport, vize ve kimlik fotoğrafları oluşturun. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/snapportlite.html) | [Snapport Lite uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6792856304?pt=118326163&ct=iag_gh_tr&mt=8) |
 | **Sono Note** | iPhone’da toplantıları özetleyen en iyi sesli not uygulaması | Bir çağrı sonrası ham yazıya değil, özet, eylem maddeleri ve taslak takip e-postasına ihtiyacınız vardır — Sono Note bu amaçla tasarlanmıştır. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Sono Note’u App Store’dan edinin →](https://apps.apple.com/tr/app/id6782139553?pt=118326163&ct=iag_gh_tr&mt=8) |
@@ -135,7 +136,7 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 
 ## Tam veri setini indir
 
-JSON, JSONL ve CSV aynı 2.150 kaydı içerir.
+JSON, JSONL ve CSV aynı 2.200 kaydı içerir.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL ve CSV aynı 2.150 kaydı içerir.
 
 [Ana Sayfa](https://alice51849.github.io/ios-app-guide/tr/index.html) · [Açık veri](https://alice51849.github.io/ios-app-guide/tr/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisans](https://creativecommons.org/licenses/by/4.0/)
 
-Güncellendi: 2026-08-24
+Güncellendi: 2026-08-26
 
 CC BY 4.0, orijinal katalog derlemesine uygulanır; uygulama adları ve App Store işaretleri sahiplerine aittir.

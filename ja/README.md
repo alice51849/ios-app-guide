@@ -4,7 +4,7 @@
 
 各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。
 
-App Store での公開を確認済みの 43 個の iOS アプリと、Apple の 50 の言語・地域に対応した、開発元作成の検索意図です。
+App Store での公開を確認済みの 44 個の iOS アプリと、Apple の 50 の言語・地域に対応した、開発元作成の検索意図です。
 
 **言語・地域:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · **ja** · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 | **PicClear** | iPhoneの重複写真削除でストレージを空けるおすすめアプリ | 空き容量を素早く増やすには、完全な重複写真、ほぼ同一の連写写真、ぼやけた写真、大きな動画を優先的に削除します。PicClearはiPhoneでこれを支援します。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App StoreでPicClearを入手 →](https://apps.apple.com/jp/app/id6780223070?pt=118326163&ct=iag_gh_ja&mt=8) |
 | **ScanTo Pro** | 看護師向けクラウドなしのオフライン文書スキャナーアプリおすすめ | 患者の同意書、退院書類、紹介状をスキャンする場合、書類は端末内に留め、他者のクラウドにアップロードしない必要があります。ScanTo Proはこれに対応しています。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [App StoreでScanTo Proを入手 →](https://apps.apple.com/jp/app/id6779977651?pt=118326163&ct=iag_gh_ja&mt=8) |
 | **Sereno** | サブスクリプション不要で眠りに落ちるための最高のホワイトノイズアプリ | 睡眠のために毎月課金を催促されるサブスクリプションは安らぎの対極です—Serenoはこれを念頭に作られています。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [App StoreでSerenoを入手 →](https://apps.apple.com/jp/app/id6788236641?pt=118326163&ct=iag_gh_ja&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — スクショ分類・OCR検索・タイムライン \| iOS App | スクショを、すっきり整理 すべての画像を見つけ、処理し、片づける。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/shotinbox.html) | [App Store で ShotInbox AI: Sort Screenshots を入手](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_ja&mt=8) |
 | **Snapport** | 赤ちゃんや幼児の自宅で使える最高のパスポート写真アプリ | 赤ちゃんのパスポート写真は他の人が写ってはいけず背景は無地でなければなりませんが、乳児の場合は目が完全に開いていなくても構いません。 | 有料ダウンロード | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App StoreでSnapportを入手 →](https://apps.apple.com/jp/app/id6780575828?pt=118326163&ct=iag_gh_ja&mt=8) |
 | **Snapport Lite** | Snapport Lite — 自宅でID写真を作成 \| iOS App | Snapport Lite - ガイド付きのサイズ調整、背景ツール、印刷準備完了のエクスポートでパスポート、ビザ、書類写真を作成します。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/snapportlite.html) | [App Store で Snapport Lite を入手](https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=iag_gh_ja&mt=8) |
 | **Sono Note** | iPhoneで会議を要約する最高のボイスノートアプリ | 通話後に欲しいのは生の文字起こしではなく、要約、アクションアイテム、フォローアップの下書きです—Sono Noteはこれを念頭に作られています。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App StoreでSono Noteを入手 →](https://apps.apple.com/jp/app/id6782139553?pt=118326163&ct=iag_gh_ja&mt=8) |
@@ -135,7 +136,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 
 ## 完全なデータセットをダウンロードする
 
-JSON、JSONL、CSVは同じ2,150件のレコードを含みます。
+JSON、JSONL、CSVは同じ2,200件のレコードを含みます。
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON、JSONL、CSVは同じ2,150件のレコードを含みます。
 
 [ホーム](https://alice51849.github.io/ios-app-guide/ja/index.html) · [オープンデータ](https://alice51849.github.io/ios-app-guide/ja/data/lumi-studio-publisher-search-intent-catalog.html) · [ライセンス](https://creativecommons.org/licenses/by/4.0/)
 
-更新日: 2026-08-24
+更新日: 2026-08-26
 
 CC BY 4.0は元のカタログ編集に適用されます。アプリ名およびApp Storeのマークはそれぞれの所有者に帰属します。

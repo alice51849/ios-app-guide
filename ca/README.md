@@ -4,7 +4,7 @@
 
 Catàleg de primera mà que mostra per a qui està dissenyada cada app, la tasca que volen completar i el camí directe a l'App Store.
 
-Intencions de cerca escrites pel publicador per a 43 apps iOS verificades i actives en 50 locals d'Apple.
+Intencions de cerca escrites pel publicador per a 44 apps iOS verificades i actives en 50 locals d'Apple.
 
 **Local:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · **ca** · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ Alfabètic per nom d'app — mai és un rànquing.
 | **PicClear** | millor app per alliberar espai a l’iPhone eliminant fotos duplicades | Per alliberar espai ràpid, apunta primer als guanys més grans: fotos duplicades exactes, fotos gairebé idèntiques de mode ràfega, fotos borroses i vídeos grans — PicClear t’ajuda a fer-ho a l’iPhone. | Inici gratuït · desbloqueig amb una compra única | [Guia](https://alice51849.github.io/ios-app-guide/ca/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Descarrega PicClear a l’App Store →](https://apps.apple.com/es/app/id6780223070?pt=118326163&ct=iag_gh_ca&mt=8) |
 | **ScanTo Pro** | millor app d’escàner de documents offline sense núvol per a infermeres | Si escaneges formularis de consentiment, documents d’alta o derivacions, l’escàner ha de mantenir aquests documents al dispositiu — mai pujats a un núvol aliè — ScanTo Pro està feta per això. | Inici gratuït · desbloqueig amb una compra única | [Guia](https://alice51849.github.io/ios-app-guide/ca/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Descarrega ScanTo Pro a l’App Store →](https://apps.apple.com/es/app/id6779977651?pt=118326163&ct=iag_gh_ca&mt=8) |
 | **Sereno** | Millor app de soroll blanc per adormir-se sense subscripció | Per dormir, una subscripció que molesta cada mes és tot el contrari de relaxant — Sereno està dissenyada per això. | Inici gratuït · desbloqueig amb una compra única | [Guia](https://alice51849.github.io/ios-app-guide/ca/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Descarrega Sereno a l’App Store →](https://apps.apple.com/es/app/id6788236641?pt=118326163&ct=iag_gh_ca&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Ordena captures i cerca text \| iOS App | Les teves captures, ordenades | Inici gratuït · desbloqueig amb una compra única | [Guia](https://alice51849.github.io/ios-app-guide/ca/shotinbox.html) | [Descarrega ShotInbox AI: Sort Screenshots a l’App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_ca&mt=8) |
 | **Snapport** | Millor app per fer fotos de passaport a nadons i infants a casa | Per a la foto de passaport d’un nadó, ningú més pot sortir a la foto i el fons ha de ser uniforme — però per a infants els ulls no han d’estar completament oberts. | Descarrega de pagament | [Guia](https://alice51849.github.io/ios-app-guide/ca/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Descarrega Snapport a l’App Store →](https://apps.apple.com/es/app/id6780575828?pt=118326163&ct=iag_gh_ca&mt=8) |
 | **Snapport Lite** | Snapport Lite — Crea fotos d'ID a casa \| iOS App | Snapport Lite - Fes fotos de passaport, visat i documents amb dimensions guiades, eines de fons i exportació llesta per imprimir. | Inici gratuït · desbloqueig amb una compra única | [Guia](https://alice51849.github.io/ios-app-guide/ca/snapportlite.html) | [Descarrega Snapport Lite a l’App Store](https://apps.apple.com/es/app/id6792856304?pt=118326163&ct=iag_gh_ca&mt=8) |
 | **Sono Note** | Millor app de notes de veu que resumeix reunions a l’iPhone | Després d’una trucada no vols una transcripció en brut — vols el resum, els punts d’acció i un esborrany de seguiment — Sono Note està dissenyada per això. | Inici gratuït · desbloqueig amb una compra única | [Guia](https://alice51849.github.io/ios-app-guide/ca/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Descarrega Sono Note a l’App Store →](https://apps.apple.com/es/app/id6782139553?pt=118326163&ct=iag_gh_ca&mt=8) |
@@ -135,7 +136,7 @@ Alfabètic per nom d'app — mai és un rànquing.
 
 ## Descarrega el conjunt de dades complet
 
-JSON, JSONL i CSV contenen els mateixos 2.150 registres.
+JSON, JSONL i CSV contenen els mateixos 2.200 registres.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL i CSV contenen els mateixos 2.150 registres.
 
 [Inici](https://alice51849.github.io/ios-app-guide/ca/index.html) · [Dades obertes](https://alice51849.github.io/ios-app-guide/ca/data/lumi-studio-publisher-search-intent-catalog.html) · [Llicència](https://creativecommons.org/licenses/by/4.0/)
 
-Actualitzat: 2026-08-24
+Actualitzat: 2026-08-26
 
 CC BY 4.0 s'aplica a la compilació original del catàleg; els noms d'app i les marques de l'App Store pertanyen als seus propietaris.

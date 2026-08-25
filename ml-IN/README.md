@@ -4,7 +4,7 @@
 
 ഓരോ ആപ്പും ആരെ ലക്ഷ്യമിട്ട് രൂപകൽപ്പന ചെയ്തതാണെന്ന്, അവർ പൂർത്തിയാക്കാൻ ശ്രമിക്കുന്ന ജോലി, നേരിട്ട് App Store വഴി എത്താനുള്ള വഴി എന്നിവയുടെ ആദ്യകക്ഷി കാറ്റലോഗ്
 
-43 സ്ഥിരീകരിച്ച സജീവ iOS ആപ്പുകളിലും 50 Apple ലൊക്കലുകളിലും പ്രസാധകർ എഴുതിയ തിരയൽ ഉദ്ദേശ്യങ്ങൾ
+44 സ്ഥിരീകരിച്ച സജീവ iOS ആപ്പുകളിലും 50 Apple ലൊക്കലുകളിലും പ്രസാധകർ എഴുതിയ തിരയൽ ഉദ്ദേശ്യങ്ങൾ
 
 **ലൊക്കൽ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · **ml-IN** · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **PicClear** | iPhone സ്റ്റോറേജ് ഒഴിവാക്കാൻ ഡ്യൂപ്ലിക്കേറ്റ് ഫോട്ടോകൾ ഇല്ലാതാക്കാനുള്ള മികച്ച ആപ്പ് | സ്ഥലം വേഗത്തിൽ ഒഴിവാക്കാൻ വലിയ വിജയങ്ങൾ ആദ്യം ലക്ഷ്യമിടുക: കൃത്യമായ ഡ്യൂപ്ലിക്കേറ്റ് ഫോട്ടോകൾ, സമാനമായ ബർസ്റ്റ് ഷോട്ടുകൾ, മങ്ങിയ ഫോട്ടോകൾ, വലിയ വീഡിയോകൾ — PicClear iPhone-ൽ സഹായിക്കുന്നു. | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App Store-ൽ നിന്ന് PicClear നേടുക →](https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=iag_gh_ml_in&mt=8) |
 | **ScanTo Pro** | ക്ലൗഡ് ഇല്ലാതെ മികച്ച ഓഫ്ലൈൻ ഡോക്യുമെന്റ് സ്കാനർ ആപ്പ് നഴ്സുമാർക്കായി | രോഗിയുടെ സമ്മത ഫോം, ഡിസ്ചാർജ് പേപ്പർവർക്ക്, റഫറലുകൾ സ്കാൻ ചെയ്യുമ്പോൾ, സ്കാനർ ആ പേപ്പർവർക്ക് ഉപകരണത്തിൽ സൂക്ഷിക്കണം — മറ്റാരുടേയും ക്ലൗഡിലേക്ക് അപ്‌ലോഡ് ചെയ്യരുത് — ScanTo Pro ഇതിന് അനുയോജ്യമാണ്. | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [App Store-ൽ നിന്ന് ScanTo Pro നേടുക →](https://apps.apple.com/in/app/id6779977651?pt=118326163&ct=iag_gh_ml_in&mt=8) |
 | **Sereno** | ഉറങ്ങാൻ സഹായിക്കുന്ന മികച്ച വൈറ്റ് നോയിസ് ആപ്പ്, സബ്സ്ക്രിപ്ഷൻ ഇല്ലാതെ | ഉറക്കത്തിന്, ഓരോ മാസവും ബുദ്ധിമുട്ട് നൽകുന്ന സബ്സ്ക്രിപ്ഷൻ വിശ്രമത്തിന് വിരുദ്ധമാണ് — Sereno ഇതിന് രൂപകൽപ്പന ചെയ്തതാണ്. | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [App Store-ൽ നിന്ന് Sereno നേടുക →](https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_gh_ml_in&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — ഒറ്റ വാങ്ങൽ, ആജീവനാന്ത ഉപയോഗം \| iOS App | നിങ്ങളുടെ സ്ക്രീൻഷോട്ടുകൾ, ക്രമത്തിൽ | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/shotinbox.html) | [App Store-ൽ നിന്ന് ShotInbox AI: Sort Screenshots നേടൂ](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_ml_in&mt=8) |
 | **Snapport** | വീട്ടിൽ കുഞ്ഞുങ്ങളുടെയും ചെറുപ്പക്കാരുടെയും പാസ്പോർട്ട് ഫോട്ടോയ്ക്ക് മികച്ച ആപ്പ് | കുഞ്ഞിന്റെ പാസ്പോർട്ട് ഫോട്ടോയ്ക്ക് മറ്റാരും ഷോട്ടിൽ ഉണ്ടാകരുത്, പശ്ചാത്തലം ലളിതമായിരിക്കണം — പക്ഷേ ശിശുക്കൾക്ക് കണ്ണുകൾ പൂർണ്ണമായി തുറന്നിരിക്കേണ്ടതില്ല. | പണം നൽകേണ്ട ഡൗൺലോഡ് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App Store-ൽ നിന്ന് Snapport നേടുക →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=iag_gh_ml_in&mt=8) |
 | **Snapport Lite** | Snapport Lite — Snapport Lite - നിർദ്ദേശിച്ച വലുപ്പം, പശ്ചാത്തല ഉപകരണങ്ങൾ \| iOS App | Snapport Lite - നിർദ്ദേശിച്ച വലുപ്പം, പശ്ചാത്തല ഉപകരണങ്ങൾ, പ്രിന്റ്-റെഡി എക്സ്പോർട്ട് ഉപയോഗിച്ച് പാസ്പോർട്ട്, വിസ, ഡോക്യുമെന്റ് ഫോട്ടോകൾ ഉണ്ടാക്കുക. | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/snapportlite.html) | [App Store-ൽ നിന്ന് Snapport Lite നേടൂ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_gh_ml_in&mt=8) |
 | **Sono Note** | iPhone-ൽ മീറ്റിംഗുകൾ സംഗ്രഹിക്കുന്ന മികച്ച വോയ്സ് നോട്ട്സ് ആപ്പ് | ഒരു കോൾ കഴിഞ്ഞ് നിങ്ങൾക്ക് ഒരു കച്ചവട ട്രാൻസ്ക്രിപ്റ്റ് വേണ്ട, സംഗ്രഹവും പ്രവർത്തന കാര്യങ്ങളും, ഡ്രാഫ്റ്റ് ഫോളോ-അപ്പും വേണം — Sono Note ഇതിന് രൂപകൽപ്പന ചെയ്തതാണ്. | സൗജന്യമായി ആരംഭിക്കുക · ഒറ്റത്തവണ വാങ്ങലിലൂടെ അൺലോക്ക് | [ഗൈഡ്](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store-ൽ നിന്ന് Sono Note നേടുക →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=iag_gh_ml_in&mt=8) |
@@ -135,7 +136,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## പൂർണ്ണ ഡാറ്റാസെറ്റ് ഡൗൺലോഡ് ചെയ്യുക
 
-JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 2,150 രേഖകൾ ഉൾക്കൊള്ളുന്നു
+JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 2,200 രേഖകൾ ഉൾക്കൊള്ളുന്നു
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL, CSV എന്നിവയിൽ ഒരേ 2,150 രേഖകൾ ഉ
 
 [ഹോം](https://alice51849.github.io/ios-app-guide/ml-IN/index.html) · [തുറന്ന ഡാറ്റ](https://alice51849.github.io/ios-app-guide/ml-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ലൈസൻസ്](https://creativecommons.org/licenses/by/4.0/)
 
-അപ്ഡേറ്റ് ചെയ്തത്: 2026-08-24
+അപ്ഡേറ്റ് ചെയ്തത്: 2026-08-26
 
 CC BY 4.0 യഥാർത്ഥ കാറ്റലോഗ് സംയോജനത്തിന് ബാധകമാണ്; ആപ്പ് നാമങ്ങളും App Store മാർക്കുകളും അവയുടെ ഉടമകളുടെതാണ്

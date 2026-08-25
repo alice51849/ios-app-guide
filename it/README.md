@@ -4,7 +4,7 @@
 
 Un catalogo pubblicato direttamente dallo sviluppatore che indica a chi è destinata ogni app, l'attività da completare e l'accesso diretto all'App Store.
 
-Intenti di ricerca redatti dall'editore per 43 app iOS verificate e disponibili in 50 lingue e aree geografiche Apple.
+Intenti di ricerca redatti dall'editore per 44 app iOS verificate e disponibili in 50 lingue e aree geografiche Apple.
 
 **Lingua e area geografica:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · **it** · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ In ordine alfabetico per nome dell'app — mai una classifica.
 | **PicClear** | migliore app per liberare spazio su iPhone eliminando foto duplicate | Per liberare spazio velocemente, punta prima ai guadagni maggiori: foto duplicate esatte, scatti a raffica quasi identici, foto sfocate e video grandi — PicClear ti aiuta a farlo sul tuo iPhone. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://alice51849.github.io/ios-app-guide/it/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Scarica PicClear dall'App Store →](https://apps.apple.com/it/app/id6780223070?pt=118326163&ct=iag_gh_it&mt=8) |
 | **ScanTo Pro** | migliore scanner documenti offline senza cloud per infermieri | Se scansionate moduli di consenso, documenti di dimissione o referti, lo scanner deve mantenere quei documenti sul dispositivo — mai caricati su cloud di terzi — ScanTo Pro è fatta per questo. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://alice51849.github.io/ios-app-guide/it/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Scarica ScanTo Pro dall'App Store →](https://apps.apple.com/it/app/id6779977651?pt=118326163&ct=iag_gh_it&mt=8) |
 | **Sereno** | migliore app di rumore bianco per addormentarsi senza abbonamento | Per dormire, un abbonamento che ti disturba ogni mese è l’opposto del riposo — Sereno è pensata per questo. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://alice51849.github.io/ios-app-guide/it/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Scarica Sereno dall’App Store →](https://apps.apple.com/it/app/id6788236641?pt=118326163&ct=iag_gh_it&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Cerca testo e pulisci le foto \| iOS App | Screenshot finalmente in ordine | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://alice51849.github.io/ios-app-guide/it/shotinbox.html) | [Scarica ShotInbox AI: Sort Screenshots sull'App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_it&mt=8) |
 | **Snapport** | migliore app per foto tessera di neonati e bambini piccoli a casa | Per la foto tessera del bambino, nessun altro deve comparire nella foto e lo sfondo deve essere semplice — ma per i lattanti gli occhi non devono essere necessariamente completamente aperti. | Scaricamento a pagamento | [Guida](https://alice51849.github.io/ios-app-guide/it/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Scarica Snapport dall’App Store →](https://apps.apple.com/it/app/id6780575828?pt=118326163&ct=iag_gh_it&mt=8) |
 | **Snapport Lite** | Snapport Lite — Crea foto tessera a casa \| iOS App | Snapport Lite - Realizza foto per passaporto, visto e documenti con guide di dimensione, sfondo e stampa. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://alice51849.github.io/ios-app-guide/it/snapportlite.html) | [Scarica Snapport Lite sull'App Store](https://apps.apple.com/it/app/id6792856304?pt=118326163&ct=iag_gh_it&mt=8) |
 | **Sono Note** | migliore app per note vocali che riassume riunioni su iPhone | Dopo una chiamata non vuoi una trascrizione grezza — vuoi il riassunto, le azioni da fare e una bozza di follow-up — Sono Note è pensata per questo. | Gratis per iniziare · sblocco con un acquisto unico | [Guida](https://alice51849.github.io/ios-app-guide/it/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Scarica Sono Note dall’App Store →](https://apps.apple.com/it/app/id6782139553?pt=118326163&ct=iag_gh_it&mt=8) |
@@ -135,7 +136,7 @@ In ordine alfabetico per nome dell'app — mai una classifica.
 
 ## Scarica il set di dati completo
 
-JSON, JSONL e CSV contengono gli stessi 2.150 record.
+JSON, JSONL e CSV contengono gli stessi 2.200 record.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL e CSV contengono gli stessi 2.150 record.
 
 [Home](https://alice51849.github.io/ios-app-guide/it/index.html) · [Dati aperti](https://alice51849.github.io/ios-app-guide/it/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenza](https://creativecommons.org/licenses/by/4.0/)
 
-Aggiornato: 2026-08-24
+Aggiornato: 2026-08-26
 
 La licenza CC BY 4.0 si applica alla compilazione originale del catalogo; i nomi delle app e i marchi dell'App Store appartengono ai rispettivi proprietari.

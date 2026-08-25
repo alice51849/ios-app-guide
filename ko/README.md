@@ -4,7 +4,7 @@
 
 각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
 
-App Store 제공 여부를 확인한 43개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
+App Store 제공 여부를 확인한 44개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
 
 **언어·지역:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · **ko** · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | **PicClear** | 아이폰 저장 공간 확보를 위한 중복 사진 삭제에 가장 좋은 앱 | 빠르게 공간을 확보하려면 가장 큰 효과부터 노리세요: 정확한 중복 사진, 거의 동일한 연속 촬영, 흐릿한 사진, 큰 동영상 — PicClear가 아이폰에서 도와줍니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App Store에서 PicClear 받기 →](https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=iag_gh_ko&mt=8) |
 | **ScanTo Pro** | 간호사를 위한 클라우드 없는 오프라인 문서 스캐너 앱 중 최고 | 환자 동의서, 퇴원 서류, 의뢰서를 스캔할 때 서류가 기기에만 남아야 하며 절대 다른 사람 클라우드에 업로드되지 않아야 합니다 — ScanTo Pro가 이에 맞게 설계되었습니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [App Store에서 ScanTo Pro 받기 →](https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=iag_gh_ko&mt=8) |
 | **Sereno** | 구독 없이 잠들기 좋은 최고의 백색소음 앱 | 수면에 구독이 매달 귀찮게 하는 것은 휴식에 반대입니다 — Sereno는 이를 위해 만들어졌습니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [App Store에서 Sereno 받기 →](https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=iag_gh_ko&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — 스크린샷 분류·OCR 검색·타임라인 \| iOS App | 스크린샷을 깔끔하게 모든 스크린샷을 찾고, 처리하고, 정리하세요. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/shotinbox.html) | [App Store에서 ShotInbox AI: Sort Screenshots 받기](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_ko&mt=8) |
 | **Snapport** | 집에서 아기와 유아용 여권 사진 앱 추천 | 아기 여권 사진은 다른 사람이 나오면 안 되고 배경은 단색이어야 하지만, 영아는 눈을 완전히 뜨지 않아도 됩니다. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App Store에서 Snapport 받기 →](https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=iag_gh_ko&mt=8) |
 | **Snapport Lite** | Snapport Lite — 집에서 ID 사진 만들기 \| iOS App | Snapport Lite - 가이드 크기 조정, 배경 도구 및 인쇄 준비 완료 내보내기로 여권, 비자 및 문서 사진을 만드세요. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/snapportlite.html) | [App Store에서 Snapport Lite 받기](https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=iag_gh_ko&mt=8) |
 | **Sono Note** | 아이폰에서 회의 내용을 요약하는 최고의 음성 메모 앱 | 통화 후에는 원시 전사본이 아니라 요약, 실행 항목, 후속 초안이 필요합니다 — Sono Note는 이를 위해 만들어졌습니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store에서 Sono Note 받기 →](https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=iag_gh_ko&mt=8) |
@@ -135,7 +136,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 
 ## 전체 데이터셋 다운로드
 
-JSON, JSONL, CSV 모두 동일한 2,150개 기록을 포함합니다.
+JSON, JSONL, CSV 모두 동일한 2,200개 기록을 포함합니다.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL, CSV 모두 동일한 2,150개 기록을 포함합니다.
 
 [홈](https://alice51849.github.io/ios-app-guide/ko/index.html) · [오픈 데이터](https://alice51849.github.io/ios-app-guide/ko/data/lumi-studio-publisher-search-intent-catalog.html) · [라이선스](https://creativecommons.org/licenses/by/4.0/)
 
-업데이트 날짜: 2026-08-24
+업데이트 날짜: 2026-08-26
 
 CC BY 4.0은 원본 카탈로그 편집에 적용되며, 앱 이름과 App Store 마크는 각 소유자의 권리입니다.

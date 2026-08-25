@@ -4,7 +4,7 @@
 
 Um catálogo publicado diretamente pela desenvolvedora que mostra para quem cada app foi criado, a tarefa que a pessoa quer concluir e o acesso direto à App Store.
 
-Intenções de busca redigidas pela publicadora para 43 apps iOS verificados e disponíveis em 50 idiomas e regiões da Apple.
+Intenções de busca redigidas pela publicadora para 44 apps iOS verificados e disponíveis em 50 idiomas e regiões da Apple.
 
 **Localidade:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · **pt-BR** · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ Ordem alfabética pelo nome do app — nunca uma posição.
 | **PicClear** | melhor app para liberar espaço no iPhone deletando fotos duplicadas | Para liberar espaço rápido, foque nas maiores economias primeiro: fotos duplicadas exatas, rajadas quase idênticas, fotos borradas e vídeos grandes — o PicClear ajuda você a fazer isso no iPhone. | Grátis para começar · desbloqueio com compra única | [Guia](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Baixe o PicClear na App Store →](https://apps.apple.com/br/app/id6780223070?pt=118326163&ct=iag_gh_pt_br&mt=8) |
 | **ScanTo Pro** | melhor scanner de documentos offline sem nuvem para enfermeiras | Se você digitaliza formulários de consentimento, documentos de alta hospitalar ou encaminhamentos, o scanner deve manter esses documentos no dispositivo — nunca enviados para a nuvem de terceiros — o ScanTo Pro foi feito para isso. | Grátis para começar · desbloqueio com compra única | [Guia](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Baixe o ScanTo Pro na App Store →](https://apps.apple.com/br/app/id6779977651?pt=118326163&ct=iag_gh_pt_br&mt=8) |
 | **Sereno** | melhor app de ruído branco para dormir sem assinatura | Para dormir, uma assinatura que incomoda todo mês é o oposto de relaxante — Sereno foi feito para isso. | Grátis para começar · desbloqueio com compra única | [Guia](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Baixe o Sereno na App Store →](https://apps.apple.com/br/app/id6788236641?pt=118326163&ct=iag_gh_pt_br&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Encontre e organize capturas \| iOS App | Suas capturas, organizadas | Grátis para começar · desbloqueio com compra única | [Guia](https://alice51849.github.io/ios-app-guide/pt-BR/shotinbox.html) | [Baixe ShotInbox AI: Sort Screenshots na App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_pt_br&mt=8) |
 | **Snapport** | melhor app de foto para passaporte de bebês e crianças em casa | Para foto de passaporte de bebê, ninguém mais pode aparecer na foto e o fundo deve ser liso — mas para bebês os olhos não precisam estar totalmente abertos. | Baixa paga | [Guia](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Baixe o Snapport na App Store →](https://apps.apple.com/br/app/id6780575828?pt=118326163&ct=iag_gh_pt_br&mt=8) |
 | **Snapport Lite** | Snapport Lite — Foto 3x4 passaporte \| iOS App | Snapport Lite - Faça fotos de passaporte, visto e documentos com guias de tamanho, fundo e impressão. | Grátis para começar · desbloqueio com compra única | [Guia](https://alice51849.github.io/ios-app-guide/pt-BR/snapportlite.html) | [Baixe Snapport Lite na App Store](https://apps.apple.com/br/app/id6792856304?pt=118326163&ct=iag_gh_pt_br&mt=8) |
 | **Sono Note** | melhor app de notas de voz que resume reuniões no iPhone | Após uma chamada, você não quer uma transcrição bruta — quer o resumo, os itens de ação e um rascunho de acompanhamento — Sono Note foi feito para isso. | Grátis para começar · desbloqueio com compra única | [Guia](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Baixe o Sono Note na App Store →](https://apps.apple.com/br/app/id6782139553?pt=118326163&ct=iag_gh_pt_br&mt=8) |
@@ -135,7 +136,7 @@ Ordem alfabética pelo nome do app — nunca uma posição.
 
 ## Baixe o conjunto completo de dados
 
-JSON, JSONL e CSV contêm os mesmos 2.150 registros.
+JSON, JSONL e CSV contêm os mesmos 2.200 registros.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL e CSV contêm os mesmos 2.150 registros.
 
 [Início](https://alice51849.github.io/ios-app-guide/pt-BR/index.html) · [Dados abertos](https://alice51849.github.io/ios-app-guide/pt-BR/data/lumi-studio-publisher-search-intent-catalog.html) · [Licença](https://creativecommons.org/licenses/by/4.0/)
 
-Atualizado: 2026-08-24
+Atualizado: 2026-08-26
 
 A licença CC BY 4.0 se aplica à compilação original do catálogo; nomes de apps e marcas da App Store pertencem aos seus proprietários.

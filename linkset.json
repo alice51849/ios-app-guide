@@ -128,7 +128,7 @@
           "type": "text/html",
           "title*": [
             {
-              "value": "HoursTag: Hours to Buy",
+              "value": "HoursTag",
               "language": "en"
             }
           ]
@@ -319,6 +319,16 @@
           "title*": [
             {
               "value": "Sereno",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/guides/shotinbox.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "ShotInbox AI",
               "language": "en"
             }
           ]
@@ -2519,234 +2529,10 @@
       "anchor": "https://alice51849.github.io/ios-app-guide/guides/hourstag.html",
       "alternate": [
         {
-          "href": "https://alice51849.github.io/ios-app-guide/ar-SA/guides/hourstag.html",
-          "hreflang": [
-            "ar-SA"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/ca/guides/hourstag.html",
-          "hreflang": [
-            "ca"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/cs/guides/hourstag.html",
-          "hreflang": [
-            "cs"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/da/guides/hourstag.html",
-          "hreflang": [
-            "da"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/de-DE/guides/hourstag.html",
-          "hreflang": [
-            "de-DE"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/el/guides/hourstag.html",
-          "hreflang": [
-            "el"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/es-ES/guides/hourstag.html",
-          "hreflang": [
-            "es-ES"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/fi/guides/hourstag.html",
-          "hreflang": [
-            "fi"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/fr-FR/guides/hourstag.html",
-          "hreflang": [
-            "fr-FR"
-          ],
-          "type": "text/html"
-        },
-        {
           "href": "https://alice51849.github.io/ios-app-guide/guides/hourstag.html",
           "hreflang": [
             "en",
             "x-default"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/he/guides/hourstag.html",
-          "hreflang": [
-            "he"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/hi/guides/hourstag.html",
-          "hreflang": [
-            "hi"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/hr/guides/hourstag.html",
-          "hreflang": [
-            "hr"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/hu/guides/hourstag.html",
-          "hreflang": [
-            "hu"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/id/guides/hourstag.html",
-          "hreflang": [
-            "id"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/it/guides/hourstag.html",
-          "hreflang": [
-            "it"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/ja/guides/hourstag.html",
-          "hreflang": [
-            "ja"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/ko/guides/hourstag.html",
-          "hreflang": [
-            "ko"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/ms/guides/hourstag.html",
-          "hreflang": [
-            "ms"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/nl-NL/guides/hourstag.html",
-          "hreflang": [
-            "nl-NL"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/no/guides/hourstag.html",
-          "hreflang": [
-            "no"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/pl/guides/hourstag.html",
-          "hreflang": [
-            "pl"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/pt-BR/guides/hourstag.html",
-          "hreflang": [
-            "pt-BR"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/ro/guides/hourstag.html",
-          "hreflang": [
-            "ro"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/ru/guides/hourstag.html",
-          "hreflang": [
-            "ru"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/sk/guides/hourstag.html",
-          "hreflang": [
-            "sk"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/sv/guides/hourstag.html",
-          "hreflang": [
-            "sv"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/th/guides/hourstag.html",
-          "hreflang": [
-            "th"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/tr/guides/hourstag.html",
-          "hreflang": [
-            "tr"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/uk/guides/hourstag.html",
-          "hreflang": [
-            "uk"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/vi/guides/hourstag.html",
-          "hreflang": [
-            "vi"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/zh-Hans/guides/hourstag.html",
-          "hreflang": [
-            "zh-Hans"
-          ],
-          "type": "text/html"
-        },
-        {
-          "href": "https://alice51849.github.io/ios-app-guide/zh-Hant/guides/hourstag.html",
-          "hreflang": [
-            "zh-Hant"
           ],
           "type": "text/html"
         }
@@ -2757,7 +2543,7 @@
           "type": "text/html",
           "title*": [
             {
-              "value": "HoursTag: Hours to Buy on the App Store",
+              "value": "HoursTag on the App Store",
               "language": "en"
             }
           ]
@@ -2767,7 +2553,7 @@
           "type": "text/html",
           "title*": [
             {
-              "value": "HoursTag: Hours to Buy visual story",
+              "value": "HoursTag visual story",
               "language": "en"
             }
           ]
@@ -2779,7 +2565,7 @@
           "type": "text/html",
           "title*": [
             {
-              "value": "HoursTag: Hours to Buy resource hub",
+              "value": "HoursTag resource hub",
               "language": "en"
             }
           ]
@@ -2791,7 +2577,7 @@
           "type": "image/jpeg",
           "title*": [
             {
-              "value": "HoursTag: Hours to Buy story poster",
+              "value": "HoursTag story poster",
               "language": "en"
             }
           ]
@@ -6377,6 +6163,65 @@
           "title*": [
             {
               "value": "Sereno story poster",
+              "language": "en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": "https://alice51849.github.io/ios-app-guide/guides/shotinbox.html",
+      "alternate": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/guides/shotinbox.html",
+          "hreflang": [
+            "en",
+            "x-default"
+          ],
+          "type": "text/html"
+        }
+      ],
+      "related": [
+        {
+          "href": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_linkset&mt=8",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "ShotInbox AI on the App Store",
+              "language": "en"
+            }
+          ]
+        },
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/stories/shotinbox.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "ShotInbox AI visual story",
+              "language": "en"
+            }
+          ]
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/hubs/shotinbox.html",
+          "type": "text/html",
+          "title*": [
+            {
+              "value": "ShotInbox AI resource hub",
+              "language": "en"
+            }
+          ]
+        }
+      ],
+      "preview": [
+        {
+          "href": "https://alice51849.github.io/ios-app-guide/stories/img/shotinbox-poster.jpg",
+          "type": "image/jpeg",
+          "title*": [
+            {
+              "value": "ShotInbox AI story poster",
               "language": "en"
             }
           ]

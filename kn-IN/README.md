@@ -4,7 +4,7 @@
 
 ಪ್ರತಿ ಆ್ಯಪ್ ಯಾರಿಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ, ಅವರು ಪೂರ್ಣಗೊಳಿಸಲು ಯತ್ನಿಸುತ್ತಿರುವ ಕಾರ್ಯ ಮತ್ತು ನೇರ App Store ಮಾರ್ಗದ ಮೊದಲ-ಪಕ್ಷ ಕ್ಯಾಟಲಾಗ್.
 
-43 ಪರಿಶೀಲಿತ ಸಜೀವ iOS ಆ್ಯಪ್ಗಳು ಮತ್ತು 50 Apple ಸ್ಥಳೀಯತೆಗಳಾದ್ಯಂತ ಪ್ರಕಾಶಕರಿಂದ ರಚಿಸಲಾದ ಹುಡುಕಾಟ ಉದ್ದೇಶಗಳು.
+44 ಪರಿಶೀಲಿತ ಸಜೀವ iOS ಆ್ಯಪ್ಗಳು ಮತ್ತು 50 Apple ಸ್ಥಳೀಯತೆಗಳಾದ್ಯಂತ ಪ್ರಕಾಶಕರಿಂದ ರಚಿಸಲಾದ ಹುಡುಕಾಟ ಉದ್ದೇಶಗಳು.
 
 **ಸ್ಥಳೀಯತೆ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · **kn-IN** · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **PicClear** | iPhone ಸಂಗ್ರಹಣೆಯನ್ನು ಖಾಲಿ ಮಾಡಲು ಉತ್ತಮ ಆಪ್ ನಕಲಿ ಫೋಟೋಗಳನ್ನು ಅಳಿಸುವುದು | ತ್ವರಿತವಾಗಿ ಸ್ಥಳವನ್ನು ತೆರವುಗೊಳಿಸಲು, ದೊಡ್ಡ ಗೆಲುವುಗಳನ್ನು ಮೊದಲು ಗುರಿಯಾಗಿಸಿ: ನಿಖರ ನಕಲಿ ಫೋಟೋಗಳು, ಸಮೀಪದ ಸಮಾನ ಬರ್ಸ್ಟ್ ಶಾಟ್‌ಗಳು, ಅಸ್ಪಷ್ಟ ನಿರಾಕರಣೆಗಳು ಮತ್ತು ದೊಡ್ಡ ವೀಡಿಯೊಗಳು — PicClear ನಿಮ್ಮ iPhone ನಲ್ಲಿ ಇದನ್ನು ಮಾಡಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App Store ನಲ್ಲಿ PicClear ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=iag_gh_kn_in&mt=8) |
 | **ScanTo Pro** | ನರ್ಸುಗಳಿಗೆ ಕ್ಲೌಡ್ ಇಲ್ಲದ ಉತ್ತಮ ಆಫ್‌ಲೈನ್ ಡಾಕ್ಯುಮೆಂಟ್ ಸ್ಕ್ಯಾನರ್ ಆಪ್ | ನೀವು ರೋಗಿಯ ಅನುಮತಿ ಫಾರ್ಮ್‌ಗಳು, ಡಿಸ್ಚಾರ್ಜ್ ದಾಖಲೆಗಳು ಅಥವಾ ರೆಫರಲ್‌ಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿದರೆ, ಸ್ಕ್ಯಾನರ್ ಆ ದಾಖಲೆಗಳನ್ನು ಸಾಧನದಲ್ಲಿ ಇಡಬೇಕು — ಯಾರಾದರೂ ಇತರರ ಕ್ಲೌಡ್‌ಗೆ ಅಪ್ಲೋಡ್ ಮಾಡಬಾರದು — ScanTo Pro ಇದಕ್ಕಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [App Store ನಲ್ಲಿ ScanTo Pro ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6779977651?pt=118326163&ct=iag_gh_kn_in&mt=8) |
 | **Sereno** | ನಿದ್ರೆಗೆ ಹೋಗಲು ಉತ್ತಮ ವೈಟ್ ನಾಯ್ಸ್ ಅಪ್ಲಿಕೇಶನ್ ಯಾವುದೇ ಸಬ್ಸ್ಕ್ರಿಪ್ಷನ್ ಇಲ್ಲದೆ | ನಿದ್ರೆಗೆ, ಪ್ರತಿ ತಿಂಗಳು ತೊಂದರೆ ನೀಡುವ ಸಬ್ಸ್ಕ್ರಿಪ್ಷನ್ ವಿರುದ್ದ — Sereno ಇದಕ್ಕಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [App Store ನಲ್ಲಿ Sereno ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_gh_kn_in&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — ಒಂದೇ ಖರೀದಿ, ಜೀವಮಾನ ಬಳಕೆ \| iOS App | ನಿಮ್ಮ ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳು, ವಿಂಗಡಿಸಲಾಗಿದೆ | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/shotinbox.html) | [App Store ನಲ್ಲಿ ShotInbox AI: Sort Screenshots ಪಡೆಯಿರಿ](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_kn_in&mt=8) |
 | **Snapport** | ಮಕ್ಕಳು ಮತ್ತು ಬಾಲಕರಿಗೆ ಮನೆಮೇಲೆ ಉತ್ತಮ ಪಾಸ್‌ಪೋರ್ಟ್ ಫೋಟೋ ಅಪ್ಲಿಕೇಶನ್ | ಮಗುವಿನ ಪಾಸ್‌ಪೋರ್ಟ್ ಫೋಟೋಗೆ, ಇನ್ನೊಬ್ಬರು ಫೋಟೋದಲ್ಲಿ ಇರಬಾರದು ಮತ್ತು ಹಿನ್ನೆಲೆ ಸರಳವಾಗಿರಬೇಕು — ಆದರೆ ಶಿಶುಗಳಿಗೆ ಕಣ್ಣುಗಳು ಸಂಪೂರ್ಣವಾಗಿ ತೆರೆಯಬೇಕಾಗಿಲ್ಲ. | ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App Store ನಲ್ಲಿ Snapport ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=iag_gh_kn_in&mt=8) |
 | **Snapport Lite** | Snapport Lite — ಮನೆದಲ್ಲಿ ಐಡಿ ಫೋಟೋಗಳನ್ನು ರಚಿಸಿ \| iOS App | Snapport Lite - ಮಾರ್ಗದರ್ಶನದ ಗಾತ್ರ, ಹಿನ್ನೆಲೆ ಸಾಧನಗಳು ಮತ್ತು ಮುದ್ರಣಕ್ಕೆ ತಯಾರಾದ ರಫ್ತಿನೊಂದಿಗೆ ಪಾಸ್ಪೋರ್ಟ್, ವೀಸಾ ಮತ್ತು ದಾಖಲೆ ಫೋಟೋಗಳನ್ನು ಮಾಡಿ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/snapportlite.html) | [App Store ನಲ್ಲಿ Snapport Lite ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_gh_kn_in&mt=8) |
 | **Sono Note** | iPhone ನಲ್ಲಿ ಸಭೆಗಳನ್ನು ಸಾರಾಂಶಗೊಳಿಸುವ ಉತ್ತಮ ಧ್ವನಿ ಟಿಪ್ಪಣಿಗಳು ಅಪ್ಲಿಕೇಶನ್ | ಕರೆ ನಂತರ ನೀವು ಕಚ್ಚಾ ಲಿಪ್ಯಂತರಣೆಯನ್ನು ಬಯಸುವುದಿಲ್ಲ — ನೀವು ಸಾರಾಂಶ, ಕಾರ್ಯಪಟ್ಟಿ ಮತ್ತು ಡ್ರಾಫ್ಟ್ ಅನುಸರಿಸುವ ಇಮೇಲ್ ಬಯಸುತ್ತೀರಿ — Sono Note ಇದಕ್ಕಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ. | ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಒಂದೇ ಖರೀದಿಯಲ್ಲಿ ಅನ್‌ಲಾಕ್ | [ಮಾರ್ಗದರ್ಶಕ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store ನಲ್ಲಿ Sono Note ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=iag_gh_kn_in&mt=8) |
@@ -135,7 +136,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ಪೂರ್ಣ ಡೇಟಾಸೆಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ
 
-JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 2,150 ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿವೆ.
+JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 2,200 ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿವೆ.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL ಮತ್ತು CSV ಒಂದೇ 2,150 ದಾಖಲೆಗಳನ್�
 
 [ಮುಖಪುಟ](https://alice51849.github.io/ios-app-guide/kn-IN/index.html) · [ತೆರೆದ ಡೇಟಾ](https://alice51849.github.io/ios-app-guide/kn-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ಲೈಸೆನ್ಸ್](https://creativecommons.org/licenses/by/4.0/)
 
-ನವೀಕರಿಸಲಾಗಿದೆ: 2026-08-24
+ನವೀಕರಿಸಲಾಗಿದೆ: 2026-08-26
 
 CC BY 4.0 ಮೂಲ ಕ್ಯಾಟಲೋಗ್ ಸಂಗ್ರಹಣೆಗೆ ಅನ್ವಯಿಸುತ್ತದೆ; ಆ್ಯಪ್ ಹೆಸರುಗಳು ಮತ್ತು App Store ಗುರುತುಗಳು ಅವರ ಮಾಲೀಕರಿಗೆ ಸೇರಿವೆ.

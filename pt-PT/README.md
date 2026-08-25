@@ -4,7 +4,7 @@
 
 Um catálogo publicado diretamente pelo programador que explica a quem se destina cada app, a tarefa que pretende realizar e o acesso direto à App Store.
 
-Intenções de pesquisa redigidas pelo editor para 43 apps iOS verificadas e disponíveis em 50 idiomas e regiões Apple.
+Intenções de pesquisa redigidas pelo editor para 44 apps iOS verificadas e disponíveis em 50 idiomas e regiões Apple.
 
 **Local:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · **pt-PT** · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ Ordem alfabética pelo nome da app — nunca uma classificação.
 | **PicClear** | melhor app para libertar espaço no iPhone eliminando fotos duplicadas | Para libertar espaço rapidamente, comece pelos maiores ganhos: fotos duplicadas exatas, séries quase idênticas, fotos desfocadas e vídeos grandes — o PicClear ajuda a fazer isso no seu iPhone. | Grátis para começar · desbloqueio com compra única | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Obtenha o PicClear na App Store →](https://apps.apple.com/pt/app/id6780223070?pt=118326163&ct=iag_gh_pt_pt&mt=8) |
 | **ScanTo Pro** | melhor app scanner de documentos offline sem cloud para enfermeiros | Se digitaliza formulários de consentimento, alta hospitalar ou encaminhamentos, o scanner tem de manter esses documentos no dispositivo — nunca carregados para a cloud de terceiros — o ScanTo Pro foi criado para isso. | Grátis para começar · desbloqueio com compra única | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Obtenha o ScanTo Pro na App Store →](https://apps.apple.com/pt/app/id6779977651?pt=118326163&ct=iag_gh_pt_pt&mt=8) |
 | **Sereno** | melhor app de ruído branco para adormecer sem subscrição | Para dormir, uma subscrição que incomoda todos os meses é o oposto de repousante — Sereno foi criado para isso. | Grátis para começar · desbloqueio com compra única | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Obtenha o Sereno na App Store →](https://apps.apple.com/pt/app/id6788236641?pt=118326163&ct=iag_gh_pt_pt&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Organize e encontre capturas \| iOS App | Suas capturas, organizadas | Grátis para começar · desbloqueio com compra única | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/shotinbox.html) | [Baixe ShotInbox AI: Sort Screenshots na App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_pt_pt&mt=8) |
 | **Snapport** | melhor app para fotos de passaporte de bebés e crianças pequenas em casa | Para a foto de passaporte do bebé, ninguém mais pode estar na foto e o fundo deve ser liso — mas para bebés os olhos não têm de estar totalmente abertos. | Descarregamento pago | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Obtenha o Snapport na App Store →](https://apps.apple.com/pt/app/id6780575828?pt=118326163&ct=iag_gh_pt_pt&mt=8) |
 | **Snapport Lite** | Snapport Lite — Foto passe passaporte \| iOS App | Snapport Lite - Faça fotos de passaporte, visto e documentos com guias de tamanho, fundo e impressão. | Grátis para começar · desbloqueio com compra única | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/snapportlite.html) | [Baixe Snapport Lite na App Store](https://apps.apple.com/pt/app/id6792856304?pt=118326163&ct=iag_gh_pt_pt&mt=8) |
 | **Sono Note** | melhor app de notas de voz que resume reuniões no iPhone | Depois de uma chamada, não quer uma transcrição bruta — quer o resumo, os itens de ação e um rascunho de seguimento — Sono Note foi criado para isso. | Grátis para começar · desbloqueio com compra única | [Guia](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Obtenha o Sono Note na App Store →](https://apps.apple.com/pt/app/id6782139553?pt=118326163&ct=iag_gh_pt_pt&mt=8) |
@@ -135,7 +136,7 @@ Ordem alfabética pelo nome da app — nunca uma classificação.
 
 ## Descarregar o conjunto de dados completo
 
-JSON, JSONL e CSV contêm os mesmos 2.150 registos.
+JSON, JSONL e CSV contêm os mesmos 2.200 registos.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL e CSV contêm os mesmos 2.150 registos.
 
 [Início](https://alice51849.github.io/ios-app-guide/pt-PT/index.html) · [Dados abertos](https://alice51849.github.io/ios-app-guide/pt-PT/data/lumi-studio-publisher-search-intent-catalog.html) · [Licença](https://creativecommons.org/licenses/by/4.0/)
 
-Atualizado: 2026-08-24
+Atualizado: 2026-08-26
 
 A licença CC BY 4.0 aplica-se à compilação original do catálogo; os nomes dos apps e marcas da App Store pertencem aos seus proprietários.

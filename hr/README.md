@@ -4,7 +4,7 @@
 
 Katalog iz prve ruke o tome za koga je svaka aplikacija namijenjena, koji zadatak žele izvršiti i izravnom putu do App Storea.
 
-Namjere pretraživanja koje je napisao izdavač za 43 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
+Namjere pretraživanja koje je napisao izdavač za 44 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
 
 **Lokalitet:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · **hr** · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 | **PicClear** | najbolja aplikacija za oslobađanje prostora na iPhoneu brisanjem duplikata fotografija | Za brzo oslobađanje prostora ciljajte na najveće dobitke prvo: točne duplikate fotografija, gotovo identične serije snimaka, mutne odbacene i velike videozapise — PicClear vam pomaže to učiniti na iPhoneu. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Preuzmite PicClear u App Storeu →](https://apps.apple.com/hr/app/id6780223070?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **ScanTo Pro** | najbolja offline aplikacija za skeniranje dokumenata bez oblaka za medicinske sestre | Ako skenirate obrasce pristanka pacijenata, otpustne papire ili upute, skener mora zadržati te dokumente na uređaju — nikada ih ne smije slati u tuđi oblak — ScanTo Pro je stvoren za to. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Preuzmite ScanTo Pro u App Storeu →](https://apps.apple.com/hr/app/id6779977651?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **Sereno** | najbolja aplikacija za bijeli šum za uspavljivanje bez pretplate | Za spavanje, pretplata koja vas svaki mjesec gnjavi je suprotno od odmora — Sereno je stvoren za to. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Preuzmite Sereno u App Storeu →](https://apps.apple.com/hr/app/id6788236641?pt=118326163&ct=iag_gh_hr&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Organizator snimki zaslona \| iOS App | Vaše snimke, uredno složene | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/shotinbox.html) | [Preuzmite ShotInbox AI: Sort Screenshots u App Storeu](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **Snapport** | najbolja aplikacija za fotografiju putovnice za bebe i malu djecu kod kuće | Za bebinu fotografiju putovnice nitko drugi ne smije biti u kadru, a pozadina mora biti jednobojna — no za dojenčad oči ne moraju biti potpuno otvorene. | Plaćeno preuzimanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Preuzmite Snapport u App Storeu →](https://apps.apple.com/hr/app/id6780575828?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **Snapport Lite** | Snapport Lite — Slika putovnica viza ID \| iOS App | Snapport Lite - Izradite fotografije za putovnicu, vizu i dokumente uz vođene veličine, alate za pozadinu i izvoz spreman za ispis. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/snapportlite.html) | [Preuzmite Snapport Lite u App Storeu](https://apps.apple.com/hr/app/id6792856304?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **Sono Note** | najbolja aplikacija za glasovne bilješke koja sažima sastanke na iPhoneu | Nakon poziva ne želite sirovi transkript — želite sažetak, zadatke i nacrt praćenja — Sono Note je stvoren za to. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Preuzmite Sono Note u App Storeu →](https://apps.apple.com/hr/app/id6782139553?pt=118326163&ct=iag_gh_hr&mt=8) |
@@ -135,7 +136,7 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 
 ## Preuzmite kompletan skup podataka
 
-JSON, JSONL i CSV sadrže istih 2.150 zapisa.
+JSON, JSONL i CSV sadrže istih 2.200 zapisa.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL i CSV sadrže istih 2.150 zapisa.
 
 [Početna](https://alice51849.github.io/ios-app-guide/hr/index.html) · [Otvoreni podaci](https://alice51849.github.io/ios-app-guide/hr/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Ažurirano: 2026-08-24
+Ažurirano: 2026-08-26
 
 CC BY 4.0 primjenjuje se na izvornu kompilaciju kataloga; nazivi aplikacija i oznake App Store pripadaju njihovim vlasnicima.

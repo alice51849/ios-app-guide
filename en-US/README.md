@@ -4,7 +4,7 @@
 
 A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.
 
-Publisher-authored search intents across 43 verified live iOS apps and 50 Apple locales.
+Publisher-authored search intents across 44 verified live iOS apps and 50 Apple locales.
 
 **Locale:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · **en-US** · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ Alphabetical by app name — never a ranking.
 | **PicClear** | best app to free up iphone storage deleting duplicate photos | To free up space fast, target the biggest wins first: exact-duplicate photos, near-identical burst shots, blurry rejects, and large videos — PicClear helps you do it on your iPhone. | Free to start · one-time unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-US/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Get PicClear on the App Store →](https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=iag_gh_en_us&mt=8) |
 | **ScanTo Pro** | best offline document scanner app no cloud for nurses | If you scan patient consent forms, discharge paperwork or referrals, the scanner has to keep that paperwork on the device — never uploaded to someone else's cloud — ScanTo Pro is built for this. | Free to start · one-time unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-US/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Get ScanTo Pro on the App Store →](https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=iag_gh_en_us&mt=8) |
 | **Sereno** | best white noise app for falling asleep no subscription | For sleep, a subscription that nags you every month is the opposite of restful — Sereno is built for this. | Free to start · one-time unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-US/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Get Sereno on the App Store →](https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=iag_gh_en_us&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — OCR Search & Photo Cleaner \| iOS App | Your Screenshots, Sorted | Free to start · one-time unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-US/shotinbox.html) | [Get ShotInbox AI: Sort Screenshots on the App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_en_us&mt=8) |
 | **Snapport** | best passport photo app for babies and toddlers at home | For a baby's passport photo, no one else can be in the shot and the background must be plain — but for infants the eyes don't have to be fully open. | Paid download | [Guide](https://alice51849.github.io/ios-app-guide/en-US/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Get Snapport on the App Store →](https://apps.apple.com/us/app/id6780575828?pt=118326163&ct=iag_gh_en_us&mt=8) |
 | **Snapport Lite** | Snapport Lite — Create ID photos at home \| iOS App | Snapport Lite - Make passport, visa, and document photos with guided sizing, background tools, and print-ready export. | Free to start · one-time unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-US/snapportlite.html) | [Get Snapport Lite on the App Store](https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=iag_gh_en_us&mt=8) |
 | **Sono Note** | best voice notes app that summarizes meetings on iphone | After a call you don't want a raw transcript — you want the summary, the action items, and a draft follow-up — Sono Note is built for this. | Free to start · one-time unlock | [Guide](https://alice51849.github.io/ios-app-guide/en-US/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Get Sono Note on the App Store →](https://apps.apple.com/us/app/id6782139553?pt=118326163&ct=iag_gh_en_us&mt=8) |
@@ -135,7 +136,7 @@ Alphabetical by app name — never a ranking.
 
 ## Download the complete dataset
 
-JSON, JSONL and CSV contain the same 2,150 records.
+JSON, JSONL and CSV contain the same 2,200 records.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL and CSV contain the same 2,150 records.
 
 [Home](https://alice51849.github.io/ios-app-guide/en-US/index.html) · [Open data](https://alice51849.github.io/ios-app-guide/en-US/data/lumi-studio-publisher-search-intent-catalog.html) · [License](https://creativecommons.org/licenses/by/4.0/)
 
-Updated: 2026-08-24
+Updated: 2026-08-26
 
 CC BY 4.0 applies to the original catalog compilation; app names and App Store marks belong to their owners.

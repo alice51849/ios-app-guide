@@ -2,11 +2,11 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-08-25",
-  "content_digest": "66e5017649da66a6e4fc14972ff8b17c87218ccc74c3e4593cac396c12ae55d8",
+  "content_digest": "f94f64dfb84cfe62ed63711799322a1030dac9c651a8f9154743624724ad4756",
   "locale": "nl-NL",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 43,
+  "record_count": 44,
   "apps": [
     {
       "key": "notesstudio100",
@@ -493,45 +493,6 @@
       }
     },
     {
-      "key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
-      "summary": "HoursTag Lite - De echte prijs van dingen",
-      "category": "finance",
-      "search_terms": [
-        "besparen",
-        "budget",
-        "uitgaven",
-        "sparen",
-        "financiën",
-        "geld besparen",
-        "impulsaankopen",
-        "geld",
-        "minder uitgeven",
-        "werkuren"
-      ],
-      "purchase_model": "free_with_lifetime_unlock",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": false,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
-      },
-      "app_store_url": "https://apps.apple.com/nl/app/id6794039979?pt=118326163&ct=iag_api_nl_nl&mt=8",
-      "guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/hourstaglite.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "0",
-        "currency": "EUR",
-        "formatted_price": "Gratis",
-        "storefront_url": "https://apps.apple.com/nl/app/id6794039979"
-      }
-    },
-    {
       "key": "hourstag",
       "app_store_id": "6754218117",
       "name": "HoursTag: Uren om te kopen",
@@ -586,6 +547,45 @@
         "currency": "EUR",
         "formatted_price": "€ 5,99",
         "storefront_url": "https://apps.apple.com/nl/app/id6754218117"
+      }
+    },
+    {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite",
+      "summary": "HoursTag Lite - De echte prijs van dingen",
+      "category": "finance",
+      "search_terms": [
+        "besparen",
+        "budget",
+        "uitgaven",
+        "sparen",
+        "financiën",
+        "geld besparen",
+        "impulsaankopen",
+        "geld",
+        "minder uitgeven",
+        "werkuren"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6794039979?pt=118326163&ct=iag_api_nl_nl&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/hourstaglite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6794039979"
       }
     },
     {
@@ -1629,6 +1629,39 @@
         "formatted_price": "Gratis",
         "storefront_url": "https://apps.apple.com/nl/app/id6788236641"
       }
+    },
+    {
+      "key": "shotinbox",
+      "app_store_id": "6802166527",
+      "name": "ShotInbox AI: Sort Screenshots",
+      "summary": "Je screenshots, netjes geordend Vind, verwerk en ruim elk screenshot op.",
+      "category": "photo-utility",
+      "search_terms": [
+        "foto's",
+        "dubbele",
+        "opruimen",
+        "OCR",
+        "tekstherkenning",
+        "zoeken",
+        "tijdlijn",
+        "soortgelijke",
+        "privé",
+        "eenmalige aankoop"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_api_nl_nl&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/shotinbox.html",
+      "verified_live": true
     },
     {
       "key": "snapport",

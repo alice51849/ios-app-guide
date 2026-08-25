@@ -4,7 +4,7 @@
 
 Un catalogue publié directement par le développeur qui indique à qui chaque app est destinée, la tâche à accomplir et l’accès direct à l’App Store.
 
-Intentions de recherche rédigées par l’éditeur pour 43 apps iOS vérifiées et disponibles dans 50 langues et régions Apple.
+Intentions de recherche rédigées par l’éditeur pour 44 apps iOS vérifiées et disponibles dans 50 langues et régions Apple.
 
 **Région:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · **fr-CA** · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ Ordre alphabétique par nom d’app — jamais un classement.
 | **PicClear** | meilleure application pour libérer de l’espace iPhone en supprimant les photos en double | Pour libérer de l’espace rapidement, ciblez d’abord les plus gros gains : photos en double exactes, rafales quasi identiques, flous rejetés et vidéos volumineuses — PicClear vous aide à le faire sur votre iPhone. | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Obtenez PicClear sur l’App Store →](https://apps.apple.com/ca/app/id6780223070?pt=118326163&ct=iag_gh_fr_ca&mt=8) |
 | **ScanTo Pro** | meilleure application de scanner de documents hors ligne sans cloud pour infirmières | Si vous scannez des formulaires de consentement, des documents de sortie ou des références, le scanner doit garder ces documents sur l’appareil — jamais téléversés sur un cloud tiers — ScanTo Pro est conçu pour cela. | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Obtenez ScanTo Pro sur l’App Store →](https://apps.apple.com/ca/app/id6779977651?pt=118326163&ct=iag_gh_fr_ca&mt=8) |
 | **Sereno** | meilleure application de bruit blanc pour s’endormir sans abonnement | Pour le sommeil, un abonnement qui vous harcèle chaque mois est l’opposé du repos — Sereno est conçu pour cela. | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Obtenez Sereno sur l’App Store →](https://apps.apple.com/ca/app/id6788236641?pt=118326163&ct=iag_gh_fr_ca&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — OCR: recherchez vos captures \| iOS App | Vos captures, enfin rangées | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/shotinbox.html) | [Obtenir ShotInbox AI: Sort Screenshots sur l'App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_fr_ca&mt=8) |
 | **Snapport** | meilleure application photo passeport pour bébés et tout-petits à la maison | Pour une photo passeport de bébé, personne d’autre ne doit apparaître et l’arrière-plan doit être uni — mais pour les nourrissons, les yeux n’ont pas besoin d’être complètement ouverts. | Téléchargement payant | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Obtenez Snapport sur l’App Store →](https://apps.apple.com/ca/app/id6780575828?pt=118326163&ct=iag_gh_fr_ca&mt=8) |
 | **Snapport Lite** | Snapport Lite — Photo passeport identité \| iOS App | Snapport Lite - Réalisez des photos de passeport, visa et documents avec repères de taille, fond et impression. | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/snapportlite.html) | [Obtenir Snapport Lite sur l'App Store](https://apps.apple.com/ca/app/id6792856304?pt=118326163&ct=iag_gh_fr_ca&mt=8) |
 | **Sono Note** | meilleure application de notes vocales qui résume les réunions sur iPhone | Après un appel, vous ne voulez pas une transcription brute — vous voulez le résumé, les actions à faire et un brouillon de suivi — Sono Note est conçu pour cela. | Gratuit au départ · déverrouillage en un achat unique | [Guide](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Obtenez Sono Note sur l’App Store →](https://apps.apple.com/ca/app/id6782139553?pt=118326163&ct=iag_gh_fr_ca&mt=8) |
@@ -135,7 +136,7 @@ Ordre alphabétique par nom d’app — jamais un classement.
 
 ## Télécharger l’ensemble complet des données
 
-JSON, JSONL et CSV contiennent les mêmes 2 150 enregistrements.
+JSON, JSONL et CSV contiennent les mêmes 2 200 enregistrements.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL et CSV contiennent les mêmes 2 150 enregistrements.
 
 [Accueil](https://alice51849.github.io/ios-app-guide/fr-CA/index.html) · [Données ouvertes](https://alice51849.github.io/ios-app-guide/fr-CA/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Mis à jour: 2026-08-24
+Mis à jour: 2026-08-26
 
 La licence CC BY 4.0 s’applique à la compilation originale du catalogue ; les noms d’app et marques App Store appartiennent à leurs propriétaires.

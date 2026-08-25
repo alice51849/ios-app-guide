@@ -4,7 +4,7 @@
 
 Katalog prve roke, ki opisuje, za koga je vsaka aplikacija namenjena, katero nalogo poskuša uporabnik opraviti in neposredno pot do App Store.
 
-Iskalni nameni, ki jih je pripravil založnik, za 43 preverjenih aktivnih iOS aplikacij in 50 Apple lokalizacij.
+Iskalni nameni, ki jih je pripravil založnik, za 44 preverjenih aktivnih iOS aplikacij in 50 Apple lokalizacij.
 
 **Lokalizacija:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · **sl-SI** · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ Abecedno po imenu aplikacije — nikoli uvrstitev.
 | **PicClear** | najboljša aplikacija za sprostitev prostora na iPhonu z brisanjem podvojenih fotografij | Za hitro sprostitev prostora najprej ciljate največje zmage: natančne podvojene fotografije, skoraj enake serijske posnetke, zamegljene zavrnjene in velike videoposnetke — PicClear vam pomaga to narediti na iPhonu. | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Prenesite PicClear iz App Store →](https://apps.apple.com/si/app/id6780223070?pt=118326163&ct=iag_gh_sl_si&mt=8) |
 | **ScanTo Pro** | najboljša brezžična aplikacija za skeniranje dokumentov brez oblaka za medicinske sestre | Če skenirate obrazce za soglasje pacientov, odpustno dokumentacijo ali napotnice, mora skener hraniti te dokumente na napravi — nikoli jih ne sme naložiti v tuji oblak — ScanTo Pro je narejen za to. | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Prenesite ScanTo Pro iz App Store →](https://apps.apple.com/si/app/id6779977651?pt=118326163&ct=iag_gh_sl_si&mt=8) |
 | **Sereno** | najboljša aplikacija za belo šum za lažje spanje brez naročnine | Za spanje je naročnina, ki vas vsak mesec nadleguje, ravno nasprotje sprostitve — Sereno je ustvarjeno za to. | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Prenesite Sereno iz App Store →](https://apps.apple.com/si/app/id6788236641?pt=118326163&ct=iag_gh_sl_si&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Urejanje posnetkov zaslona \| iOS App | Vaši posnetki, urejeni | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/shotinbox.html) | [Prenesite ShotInbox AI: Sort Screenshots iz trgovine App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_sl_si&mt=8) |
 | **Snapport** | najboljša aplikacija za potniško fotografijo dojenčkov in malčkov doma | Za potniško fotografijo dojenčka ne sme biti drugih oseb v kadru, ozadje mora biti enobarvno — za dojenčke oči ne morajo biti popolnoma odprte. | Plačljiv prenos | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Prenesite Snapport iz App Store →](https://apps.apple.com/si/app/id6780575828?pt=118326163&ct=iag_gh_sl_si&mt=8) |
 | **Snapport Lite** | Snapport Lite — Ustvari ID fotografije doma \| iOS App | Snapport Lite - Ustvari potniške, vizumske in dokumentne fotografije s pomočjo usmerjenega merjenja, orodij za ozadje in izvoza, pripravljenega za tisk. | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/snapportlite.html) | [Prenesite Snapport Lite iz trgovine App Store](https://apps.apple.com/si/app/id6792856304?pt=118326163&ct=iag_gh_sl_si&mt=8) |
 | **Sono Note** | najboljša aplikacija za glasovne zapiske, ki povzame sestanke na iPhonu | Po klicu ne želite surovega prepisa — želite povzetek, naloge in osnutek nadaljnjega sporočila — Sono Note je ustvarjena za to. | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Prenesite Sono Note iz App Store →](https://apps.apple.com/si/app/id6782139553?pt=118326163&ct=iag_gh_sl_si&mt=8) |
@@ -135,7 +136,7 @@ Abecedno po imenu aplikacije — nikoli uvrstitev.
 
 ## Prenesite celoten podatkovni niz
 
-JSON, JSONL in CSV vsebujejo enakih 2.150 zapisov.
+JSON, JSONL in CSV vsebujejo enakih 2.200 zapisov.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL in CSV vsebujejo enakih 2.150 zapisov.
 
 [Domov](https://alice51849.github.io/ios-app-guide/sl-SI/index.html) · [Odprti podatki](https://alice51849.github.io/ios-app-guide/sl-SI/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Posodobljeno: 2026-08-24
+Posodobljeno: 2026-08-26
 
 CC BY 4.0 velja za izvirno sestavo kataloga; imena aplikacij in znamke App Store pripadajo njihovim lastnikom.

@@ -4,7 +4,7 @@
 
 En förstapartsöversikt över vem varje app är avsedd för, uppgiften de försöker slutföra och den direkta App Store-sökvägen.
 
-Utgivarens sökintentioner för 43 verifierade aktiva iOS-appar och 50 Apple-lokaler.
+Utgivarens sökintentioner för 44 verifierade aktiva iOS-appar och 50 Apple-lokaler.
 
 **Lokal:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · **sv** · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ Alfabetisk ordning efter appnamn – aldrig en rankning.
 | **PicClear** | bästa appen för att frigöra iPhone-lagring genom att ta bort dubblettfoton | För att frigöra utrymme snabbt, börja med de största vinsterna: exakta dubblettfoton, nästan identiska seriebilder, suddiga bortkastade och stora videor – PicClear hjälper dig göra det på din iPhone. | Gratis att börja · upplåsning med ett engångsköp | [Guide](https://alice51849.github.io/ios-app-guide/sv/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Skaffa PicClear på App Store →](https://apps.apple.com/se/app/id6780223070?pt=118326163&ct=iag_gh_sv&mt=8) |
 | **ScanTo Pro** | bästa offline-dokument-skannerapp utan moln för sjuksköterskor | Om du skannar patienters samtyckesformulär, utskrivningspapper eller remisser måste skannern hålla dessa papper på enheten – aldrig uppladdade till någon annans moln – ScanTo Pro är byggd för detta. | Gratis att börja · upplåsning med ett engångsköp | [Guide](https://alice51849.github.io/ios-app-guide/sv/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Skaffa ScanTo Pro på App Store →](https://apps.apple.com/se/app/id6779977651?pt=118326163&ct=iag_gh_sv&mt=8) |
 | **Sereno** | bästa appen för vitt brus för att somna utan prenumeration | För sömn är en prenumeration som tjatar varje månad motsatsen till rogivande – Sereno är byggd för detta. | Gratis att börja · upplåsning med ett engångsköp | [Guide](https://alice51849.github.io/ios-app-guide/sv/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Skaffa Sereno i App Store →](https://apps.apple.com/se/app/id6788236641?pt=118326163&ct=iag_gh_sv&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Hitta och ordna skärmavbilder \| iOS App | Dina skärmbilder, sorterade | Gratis att börja · upplåsning med ett engångsköp | [Guide](https://alice51849.github.io/ios-app-guide/sv/shotinbox.html) | [Hämta ShotInbox AI: Sort Screenshots i App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_sv&mt=8) |
 | **Snapport** | bästa appen för passfoto för bebisar och småbarn hemma | För bebisens passfoto får ingen annan synas och bakgrunden måste vara enfärgad – men för spädbarn behöver ögonen inte vara helt öppna. | Betald nedladdning | [Guide](https://alice51849.github.io/ios-app-guide/sv/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Skaffa Snapport i App Store →](https://apps.apple.com/se/app/id6780575828?pt=118326163&ct=iag_gh_sv&mt=8) |
 | **Snapport Lite** | Snapport Lite — Skapa ID-foton hemma \| iOS App | Snapport Lite - Ta pass-, visum- och dokumentfoton med vägledd storlek, bakgrundsverktyg och utskriftsklar export. | Gratis att börja · upplåsning med ett engångsköp | [Guide](https://alice51849.github.io/ios-app-guide/sv/snapportlite.html) | [Hämta Snapport Lite i App Store](https://apps.apple.com/se/app/id6792856304?pt=118326163&ct=iag_gh_sv&mt=8) |
 | **Sono Note** | bästa appen för röstanteckningar som sammanfattar möten på iPhone | Efter ett samtal vill du inte ha en rå transkription – du vill ha sammanfattningen, åtgärdspunkterna och ett utkast till uppföljning – Sono Note är byggd för detta. | Gratis att börja · upplåsning med ett engångsköp | [Guide](https://alice51849.github.io/ios-app-guide/sv/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Skaffa Sono Note i App Store →](https://apps.apple.com/se/app/id6782139553?pt=118326163&ct=iag_gh_sv&mt=8) |
@@ -135,7 +136,7 @@ Alfabetisk ordning efter appnamn – aldrig en rankning.
 
 ## Ladda ner hela datasetet
 
-JSON, JSONL och CSV innehåller samma 2 150 poster.
+JSON, JSONL och CSV innehåller samma 2 200 poster.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL och CSV innehåller samma 2 150 poster.
 
 [Hem](https://alice51849.github.io/ios-app-guide/sv/index.html) · [Öppna data](https://alice51849.github.io/ios-app-guide/sv/data/lumi-studio-publisher-search-intent-catalog.html) · [Licens](https://creativecommons.org/licenses/by/4.0/)
 
-Uppdaterad: 2026-08-24
+Uppdaterad: 2026-08-26
 
 CC BY 4.0 gäller för den ursprungliga katalogsammanställningen; appnamn och App Store-märken tillhör sina respektive ägare.

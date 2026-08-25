@@ -180,7 +180,7 @@
     "@id": "https://alice51849.github.io/ios-app-guide/#organization"
   },
   "datePublished": "2026-07-19",
-  "dateModified": "2026-08-24",
+  "dateModified": "2026-08-26",
   "version": "1.0.0",
   "sdVersion": "1.0.0",
   "isLiveDataset": false,
@@ -261,29 +261,29 @@
       "name": "lumi-studio-publisher-search-intent-catalog.csv",
       "description": "Canonical UTF-8 table loaded by the publisher_intents RecordSet.",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv",
-      "contentSize": "2395404 B",
+      "contentSize": "2430753 B",
       "encodingFormat": "text/csv",
-      "sha256": "b78468e5d86403011f31734f86dcc8a053dc5281ae80c5abfc6798d339aeb74e"
+      "sha256": "38a8810022926d6c9d19855b320fd6997e7085f8a68b1d0b8e037fabb104775d"
     },
     {
       "@type": "cr:FileObject",
       "@id": "lumi-studio-publisher-search-intent-catalog.jsonl",
       "name": "lumi-studio-publisher-search-intent-catalog.jsonl",
-      "description": "The same 2,150 records serialized as newline-delimited JSON.",
+      "description": "The same 2,200 records serialized as newline-delimited JSON.",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl",
-      "contentSize": "3270168 B",
+      "contentSize": "3326463 B",
       "encodingFormat": "application/x-ndjson",
-      "sha256": "6cf06097a49555fe5503c034d6eec27239a79e247da80ff878a439c982d1fca4"
+      "sha256": "721ec8c83a8092f2872ddfad2fcb8456240d5efa3eff52e4f1239aa57b2ea775"
     },
     {
       "@type": "cr:FileObject",
       "@id": "lumi-studio-publisher-search-intent-catalog.json",
       "name": "lumi-studio-publisher-search-intent-catalog.json",
-      "description": "Dataset envelope with provenance, coverage and all 2,150 records.",
+      "description": "Dataset envelope with provenance, coverage and all 2,200 records.",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-      "contentSize": "3620617 B",
+      "contentSize": "3685012 B",
       "encodingFormat": "application/json",
-      "sha256": "f27c83baf584fd07a9191218dc1c4737dfe48b3b0d5405e54f19ef0f55054a9b"
+      "sha256": "9c79f5a7bd419dec2f043165a534d9d7d6587ecb6d70fa232e3fa668b5354fbf"
     }
   ],
   "recordSet": [

@@ -4,7 +4,7 @@
 
 แคตตาล็อกที่ผู้พัฒนาเผยแพร่โดยตรง ระบุว่าแต่ละแอปเหมาะกับใคร ต้องการทำงานใดให้เสร็จ และเข้าถึง App Store โดยตรงได้อย่างไร
 
-เจตนาการค้นหาที่ผู้พัฒนาเขียนสำหรับแอป iOS ที่ตรวจสอบแล้วและยังมีบน App Store จำนวน 43 แอป ครอบคลุมภาษาและภูมิภาค Apple 50 รายการ
+เจตนาการค้นหาที่ผู้พัฒนาเขียนสำหรับแอป iOS ที่ตรวจสอบแล้วและยังมีบน App Store จำนวน 44 แอป ครอบคลุมภาษาและภูมิภาค Apple 50 รายการ
 
 **โลเคล:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · **th** · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **PicClear** | แอปที่ดีที่สุดสำหรับเพิ่มพื้นที่เก็บข้อมูล iPhone โดยลบภาพถ่ายซ้ำ | เพื่อเพิ่มพื้นที่อย่างรวดเร็ว ให้ลบภาพถ่ายซ้ำที่เหมือนกันเป๊ะ ภาพถ่ายต่อเนื่องที่คล้ายกัน ภาพเบลอ และวิดีโอขนาดใหญ่ — PicClear ช่วยคุณทำบน iPhone | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [ดาวน์โหลด PicClear ใน App Store →](https://apps.apple.com/th/app/id6780223070?pt=118326163&ct=iag_gh_th&mt=8) |
 | **ScanTo Pro** | แอปสแกนเอกสารออฟไลน์ที่ดีที่สุด ไม่มีคลาวด์ สำหรับพยาบาล | ถ้าคุณสแกนแบบฟอร์มยินยอม เอกสารปลดประจำการ หรือการส่งต่อ เอกสารต้องเก็บไว้บนอุปกรณ์ ไม่ถูกอัปโหลดไปยังคลาวด์ของผู้อื่น — ScanTo Pro ถูกสร้างมาเพื่อสิ่งนี้ | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [ดาวน์โหลด ScanTo Pro ใน App Store →](https://apps.apple.com/th/app/id6779977651?pt=118326163&ct=iag_gh_th&mt=8) |
 | **Sereno** | แอปเสียงรบกวนขาวที่ดีที่สุดสำหรับช่วยให้นอนหลับโดยไม่ต้องสมัครสมาชิก | สำหรับการนอน การสมัครสมาชิกที่คอยรบกวนทุกเดือนตรงกันข้ามกับความสงบ — Sereno ถูกสร้างมาเพื่อสิ่งนี้ | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [ดาวน์โหลด Sereno ใน App Store →](https://apps.apple.com/th/app/id6788236641?pt=118326163&ct=iag_gh_th&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — แยกหมวดภาพหน้าจอ เรียงตามเวลา \| iOS App | ภาพหน้าจอของคุณ เป็นระเบียบ | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/shotinbox.html) | [ดาวน์โหลด ShotInbox AI: Sort Screenshots บน App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_th&mt=8) |
 | **Snapport** | แอปถ่ายรูปหนังสือเดินทางสำหรับเด็กทารกและเด็กเล็กที่บ้านที่ดีที่สุด | สำหรับรูปหนังสือเดินทางเด็ก ไม่มีคนอื่นในภาพและพื้นหลังต้องเรียบ แต่สำหรับทารก ดวงตาไม่จำเป็นต้องเปิดเต็มที่ | ดาวน์โหลดแบบชำระเงิน | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [ดาวน์โหลด Snapport ใน App Store →](https://apps.apple.com/th/app/id6780575828?pt=118326163&ct=iag_gh_th&mt=8) |
 | **Snapport Lite** | Snapport Lite — ถ่ายรูปติดบัตรที่บ้าน \| iOS App | Snapport Lite - สร้างรูปพาสปอร์ต วีซ่า และบัตรประจำตัวพร้อมคำแนะนำขนาด พื้นหลัง และการพิมพ์ | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/snapportlite.html) | [ดาวน์โหลด Snapport Lite บน App Store](https://apps.apple.com/th/app/id6792856304?pt=118326163&ct=iag_gh_th&mt=8) |
 | **Sono Note** | แอปบันทึกเสียงที่สรุปการประชุมบน iPhone ที่ดีที่สุด | หลังการโทร คุณไม่ต้องการแค่ถอดเสียงดิบ — คุณต้องการสรุป รายการงาน และร่างติดตามผล — Sono Note ถูกสร้างมาเพื่อสิ่งนี้ | เริ่มใช้ฟรี · ปลดล็อกด้วยการซื้อครั้งเดียว | [คู่มือ](https://alice51849.github.io/ios-app-guide/th/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [ดาวน์โหลด Sono Note ใน App Store →](https://apps.apple.com/th/app/id6782139553?pt=118326163&ct=iag_gh_th&mt=8) |
@@ -135,7 +136,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ดาวน์โหลดชุดข้อมูลทั้งหมด
 
-ไฟล์ JSON, JSONL และ CSV มีข้อมูล 2,150 รายการเหมือนกัน
+ไฟล์ JSON, JSONL และ CSV มีข้อมูล 2,200 รายการเหมือนกัน
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [หน้าแรก](https://alice51849.github.io/ios-app-guide/th/index.html) · [ข้อมูลเปิด](https://alice51849.github.io/ios-app-guide/th/data/lumi-studio-publisher-search-intent-catalog.html) · [ใบอนุญาต](https://creativecommons.org/licenses/by/4.0/)
 
-อัปเดตเมื่อ: 2026-08-24
+อัปเดตเมื่อ: 2026-08-26
 
 CC BY 4.0 ใช้กับการรวบรวมแคตตาล็อกต้นฉบับ; ชื่อแอปและเครื่องหมาย App Store เป็นของเจ้าของแต่ละราย

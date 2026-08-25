@@ -4,7 +4,7 @@
 
 Каталог, созданный издателем, с информацией о целевой аудитории каждого приложения, задачах, которые оно помогает решать, и прямой ссылкой в App Store.
 
-Намерения поиска, составленные издателем, для 43 проверенных приложений для iOS и 50 локалей Apple.
+Намерения поиска, составленные издателем, для 44 проверенных приложений для iOS и 50 локалей Apple.
 
 **Локаль:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · **ru** · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **PicClear** | лучшее приложение для освобождения памяти iPhone удалением дубликатов фото | Чтобы быстро освободить место, сначала удаляйте самые большие файлы: точные дубликаты фото, почти идентичные серийные снимки, размытые кадры и большие видео — PicClear поможет сделать это на iPhone. | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Скачайте PicClear в App Store →](https://apps.apple.com/ru/app/id6780223070?pt=118326163&ct=iag_gh_ru&mt=8) |
 | **ScanTo Pro** | лучшее офлайн-приложение для сканирования документов без облака для медсестёр | Если вы сканируете формы согласия пациентов, выписки или направления, сканер должен хранить документы на устройстве — никогда не загружать в чужое облако — ScanTo Pro создано для этого. | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Скачайте ScanTo Pro в App Store →](https://apps.apple.com/ru/app/id6779977651?pt=118326163&ct=iag_gh_ru&mt=8) |
 | **Sereno** | лучшее приложение с белым шумом для засыпания без подписки | Для сна подписка с ежемесячными напоминаниями — противоположность отдыху — Sereno создано именно для этого. | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Скачайте Sereno в App Store →](https://apps.apple.com/ru/app/id6788236641?pt=118326163&ct=iag_gh_ru&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Органайзер скриншотов \| iOS App | Все снимки по местам | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://alice51849.github.io/ios-app-guide/ru/shotinbox.html) | [Установить ShotInbox AI: Sort Screenshots в App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_ru&mt=8) |
 | **Snapport** | лучшее приложение для фото на паспорт для малышей и детей дома | Для фото на паспорт ребёнка в кадре не должно быть других людей, фон должен быть однотонным — но для младенцев глаза могут быть не полностью открыты. | Платное скачивание | [Руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Скачайте Snapport в App Store →](https://apps.apple.com/ru/app/id6780575828?pt=118326163&ct=iag_gh_ru&mt=8) |
 | **Snapport Lite** | Snapport Lite — Фото на документы дома \| iOS App | Snapport Lite - Делайте фото на паспорт, визу и документы с направляющими размера, фоном и печатью. | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://alice51849.github.io/ios-app-guide/ru/snapportlite.html) | [Установить Snapport Lite в App Store](https://apps.apple.com/ru/app/id6792856304?pt=118326163&ct=iag_gh_ru&mt=8) |
 | **Sono Note** | лучшее приложение для голосовых заметок с автоматическим резюме встреч на iPhone | После звонка вам не нужен сырой транскрипт — вам нужно резюме, пункты действий и черновик письма — Sono Note создано именно для этого. | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Скачайте Sono Note в App Store →](https://apps.apple.com/ru/app/id6782139553?pt=118326163&ct=iag_gh_ru&mt=8) |
@@ -135,7 +136,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## Скачать полный набор данных
 
-JSON, JSONL и CSV содержат одинаковые 2150 записей.
+JSON, JSONL и CSV содержат одинаковые 2200 записей.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL и CSV содержат одинаковые 2150 записей.
 
 [Главная](https://alice51849.github.io/ios-app-guide/ru/index.html) · [Открытые данные](https://alice51849.github.io/ios-app-guide/ru/data/lumi-studio-publisher-search-intent-catalog.html) · [Лицензия](https://creativecommons.org/licenses/by/4.0/)
 
-Обновлено: 2026-08-24
+Обновлено: 2026-08-26
 
 CC BY 4.0 применяется к исходному составлению каталога; названия приложений и знаки App Store принадлежат их владельцам.

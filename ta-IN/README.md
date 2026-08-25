@@ -4,7 +4,7 @@
 
 ஒவ்வொரு செயலியும் யாருக்காக வடிவமைக்கப்பட்டுள்ளதோ, அவர்கள் நிறைவேற்ற முயற்சிக்கும் பணியோ, நேரடி App Store பாதையோ ஆகியவற்றின் முதல்-பார்ட்டி அட்டவணை.
 
-43 உறுதிப்படுத்தப்பட்ட நேரடி iOS செயலிகள் மற்றும் 50 Apple உள்ளூர் மொழிகளில் வெளியீட்டாளர் எழுதிய தேடல் நோக்கங்கள்.
+44 உறுதிப்படுத்தப்பட்ட நேரடி iOS செயலிகள் மற்றும் 50 Apple உள்ளூர் மொழிகளில் வெளியீட்டாளர் எழுதிய தேடல் நோக்கங்கள்.
 
 **உள்ளூர் மொழி:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · **ta-IN** · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **PicClear** | iPhone சேமிப்பிடத்தை விடுவிக்க சிறந்த பயன்பாடு, நகல் புகைப்படங்களை நீக்குதல் | இடத்தை விரைவாக விடுவிக்க, மிகப்பெரிய வெற்றிகளை முதலில் குறிக்கவும்: துல்லிய நகல் புகைப்படங்கள், ஒத்த பறக்கல் படங்கள், மங்கலானவை, மற்றும் பெரிய வீடியோக்கள் — PicClear உங்கள் iPhone-ல் இதை செய்ய உதவும். | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App Store-இல் PicClear பெறவும் →](https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=iag_gh_ta_in&mt=8) |
 | **ScanTo Pro** | முகாமையாளர்களுக்கான சிறந்த ஆஃப்லைன் ஆவண ஸ்கேனர் பயன்பாடு, கிளவுட் இல்லாமல் | நீங்கள் நோயாளி ஒப்புதல் படிவங்கள், வெளியேற்ற ஆவணங்கள் அல்லது பரிந்துரைகளை ஸ்கேன் செய்தால், அந்த ஆவணங்கள் சாதனத்தில் மட்டுமே இருக்க வேண்டும் — வேறு யாருடைய கிளவுட்-க்கு ஒருபோதும் பதிவேற்றப்படக்கூடாது — ScanTo Pro இதற்காக உருவாக்கப்பட்டது. | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [App Store-இல் ScanTo Pro பெறவும் →](https://apps.apple.com/in/app/id6779977651?pt=118326163&ct=iag_gh_ta_in&mt=8) |
 | **Sereno** | தூங்குவதற்கு சிறந்த வெள்ளை சத்தம் செயலி, சந்தா தேவையில்லை | தூக்கத்திற்கு, மாதம் மாதம் தொந்தரவு தரும் சந்தா அமைதி தருவதை எதிர்க்கிறது — Sereno இதற்காக உருவாக்கப்பட்டது. | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [App Store இல் Sereno ஐப் பெறுங்கள் →](https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_gh_ta_in&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — ஒருமுறை வாங்கல், வாழ்நாள் பயன் \| iOS App | உங்கள் திரைப்பிடிப்புகள், ஒழுங்காக | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/shotinbox.html) | [App Store-இல் ShotInbox AI: Sort Screenshots-ஐப் பெறுங்கள்](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_ta_in&mt=8) |
 | **Snapport** | வீட்டில் குழந்தைகள் மற்றும் சிறுவர்களுக்கான சிறந்த பாஸ்போர்ட் புகைப்பட செயலி | குழந்தையின் பாஸ்போர்ட் புகைப்படத்திற்கு, வேறு யாரும் படத்தில் இருக்கக்கூடாது மற்றும் பின்னணி சுத்தமாக இருக்க வேண்டும் — ஆனால் குழந்தைகளுக்கு கண்கள் முழுமையாக திறந்திருப்பதற்கான கட்டாயம் இல்லை. | பணம் செலுத்தி பதிவிறக்கவும் | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App Store இல் Snapport ஐப் பெறுங்கள் →](https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=iag_gh_ta_in&mt=8) |
 | **Snapport Lite** | Snapport Lite — Snapport Lite - வழிகாட்டிய அளவீடுகள், பின்னணி கருவிகள் \| iOS App | Snapport Lite - வழிகாட்டிய அளவீடுகள், பின்னணி கருவிகள் மற்றும் அச்சிட தயாரான ஏற்றுமதியுடன் பாஸ்போர்ட், விசா மற்றும் ஆவண புகைப்படங்களை உருவாக்கவும். | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/snapportlite.html) | [App Store-இல் Snapport Lite-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_gh_ta_in&mt=8) |
 | **Sono Note** | iPhone இல் கூட்டங்களைக் குறுக்கமாக சுருக்கும் சிறந்த குரல் குறிப்பு செயலி | ஒரு அழைப்புக்குப் பிறகு நீங்கள் ஒரு மூல உரை வேண்டாம் — சுருக்கம், செயல் பொருட்கள் மற்றும் தொடர்ச்சி வரைவு வேண்டும் — Sono Note இதற்காக உருவாக்கப்பட்டது. | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store இல் Sono Note ஐப் பெறுங்கள் →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=iag_gh_ta_in&mt=8) |
@@ -135,7 +136,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## முழு தரவுத்தொகுப்பை பதிவிறக்கவும்
 
-JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 2,150 பதிவுகளை கொண்டுள்ளன.
+JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 2,200 பதிவுகளை கொண்டுள்ளன.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 2,150 பத�
 
 [முகப்பு](https://alice51849.github.io/ios-app-guide/ta-IN/index.html) · [திறந்த தரவு](https://alice51849.github.io/ios-app-guide/ta-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [அனுமதி](https://creativecommons.org/licenses/by/4.0/)
 
-புதுப்பிக்கப்பட்டது: 2026-08-24
+புதுப்பிக்கப்பட்டது: 2026-08-26
 
 CC BY 4.0 அசல் அட்டவணை தொகுப்பிற்கு பொருந்தும்; செயலி பெயர்கள் மற்றும் App Store குறியீடுகள் உரிமையாளர்களுக்கு சொந்தமானவை.

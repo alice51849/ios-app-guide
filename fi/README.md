@@ -4,7 +4,7 @@
 
 Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, mitä tehtävää he pyrkivät suorittamaan ja suora App Store -polku.
 
-Julkaisijan laatimat hakutarkoitukset 43 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
+Julkaisijan laatimat hakutarkoitukset 44 varmennetussa toimivassa iOS-sovelluksessa ja 50 Apple-lokaalissa.
 
 **Lokaali:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · **fi** · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 | **PicClear** | paras sovellus iPhonen tallennustilan vapauttamiseen poistamalla kaksoiskuvat | Vapauta tilaa nopeasti kohdistamalla suurimpiin voittoihin: täsmälliset kaksoiskuvat, lähes identtiset sarjakuvat, epätarkat hylätyt ja suuret videot — PicClear auttaa sinua tekemään sen iPhonellasi. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Hanki PicClear App Storesta →](https://apps.apple.com/fi/app/id6780223070?pt=118326163&ct=iag_gh_fi&mt=8) |
 | **ScanTo Pro** | paras offline-asiakirjaskanneri ilman pilveä sairaanhoitajille | Jos skannaat potilaan suostumuslomakkeita, kotiutuspapereita tai lähetteitä, skannerin on säilytettävä ne laitteella — ei koskaan ladattava toisen pilveen — ScanTo Pro on tehty tätä varten. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Hanki ScanTo Pro App Storesta →](https://apps.apple.com/fi/app/id6779977651?pt=118326163&ct=iag_gh_fi&mt=8) |
 | **Sereno** | paras valkoinen kohina -sovellus nukahtamiseen ilman tilausta | Unen kannalta kuukausittainen tilaus, joka ärsyttää, on kaikkea muuta kuin rentouttava — Sereno on tehty tätä varten. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Hanki Sereno App Storesta →](https://apps.apple.com/fi/app/id6788236641?pt=118326163&ct=iag_gh_fi&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Löydä ja järjestä näyttökuvat \| iOS App | Näyttökuvat järjestykseen | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://alice51849.github.io/ios-app-guide/fi/shotinbox.html) | [Lataa ShotInbox AI: Sort Screenshots App Storesta](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_fi&mt=8) |
 | **Snapport** | paras passikuvien sovellus vauvoille ja taaperoille kotona | Vauvan passikuvassa ei saa olla muita ihmisiä eikä taustan saa olla kuvioitu — mutta imeväisillä silmien ei tarvitse olla täysin auki. | Maksullinen ladattavaksi | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Hanki Snapport App Storesta →](https://apps.apple.com/fi/app/id6780575828?pt=118326163&ct=iag_gh_fi&mt=8) |
 | **Snapport Lite** | Snapport Lite — Luo ID-valokuvia kotona \| iOS App | Snapport Lite - Ota passin, viisumin ja asiakirjojen valokuvia ohjatulla koon säädöllä, taustatyökaluilla ja tulostukseen valmiilla viennillä. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://alice51849.github.io/ios-app-guide/fi/snapportlite.html) | [Lataa Snapport Lite App Storesta](https://apps.apple.com/fi/app/id6792856304?pt=118326163&ct=iag_gh_fi&mt=8) |
 | **Sono Note** | paras äänimuistiinpanojen sovellus, joka tiivistää kokoukset iPhonella | Puhelun jälkeen et halua raakatekstiä — haluat tiivistelmän, toimintakohdat ja jatkoseurannan luonnoksen — Sono Note on tehty tätä varten. | Ilmainen aloitus · avaus kertaostoksella | [Opas](https://alice51849.github.io/ios-app-guide/fi/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Hanki Sono Note App Storesta →](https://apps.apple.com/fi/app/id6782139553?pt=118326163&ct=iag_gh_fi&mt=8) |
@@ -135,7 +136,7 @@ Aakkosjärjestyksessä sovelluksen nimen mukaan — ei koskaan sijoitus.
 
 ## Lataa koko tietoaineisto
 
-JSON, JSONL ja CSV sisältävät samat 2 150 tietuetta.
+JSON, JSONL ja CSV sisältävät samat 2 200 tietuetta.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL ja CSV sisältävät samat 2 150 tietuetta.
 
 [Etusivu](https://alice51849.github.io/ios-app-guide/fi/index.html) · [Avoin data](https://alice51849.github.io/ios-app-guide/fi/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisenssi](https://creativecommons.org/licenses/by/4.0/)
 
-Päivitetty: 2026-08-24
+Päivitetty: 2026-08-26
 
 CC BY 4.0 koskee alkuperäisen luettelon kokoamista; sovellusten nimet ja App Store -merkit kuuluvat omistajilleen.

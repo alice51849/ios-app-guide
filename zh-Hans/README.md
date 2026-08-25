@@ -4,7 +4,7 @@
 
 第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。
 
-由开发者撰写的搜索意图，涵盖 43 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
+由开发者撰写的搜索意图，涵盖 44 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
 
 **地区语言:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · **zh-Hans** · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **PicClear** | iPhone 上最佳释放存储空间删除重复照片的应用 | 快速释放空间，优先处理最大收益：完全重复照片、近似连拍、模糊废片和大视频——PicClear 助你在 iPhone 上完成。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [在 App Store 获取 PicClear →](https://apps.apple.com/cn/app/id6780223070?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **ScanTo Pro** | 护士用最佳离线文档扫描应用，无云端 | 如果你扫描患者同意书、出院文件或转诊单，扫描器必须将文件保留在设备上——绝不上传到他人云端——ScanTo Pro 专为此设计。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [在 App Store 获取 ScanTo Pro →](https://apps.apple.com/cn/app/id6779977651?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **Sereno** | 最佳无订阅白噪音助眠应用 | 为了获得良好睡眠，每月催促你订阅恰恰与放松的目的背道而驰——Sereno正是为此设计。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [在App Store获取Sereno →](https://apps.apple.com/cn/app/id6788236641?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — 本地截图分类、OCR搜索与时间轴 \| iOS App | 截图，井然有序 让每张截图都能找到、处理、清理。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/shotinbox.html) | [在 App Store 获取 ShotInbox AI: Sort Screenshots](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **Snapport** | 最佳婴幼儿居家护照照片应用 | 婴儿护照照片中不能有其他人，背景必须纯净——但婴儿眼睛不必完全睁开。 | 付费下载 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [在App Store获取Snapport →](https://apps.apple.com/cn/app/id6780575828?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **Snapport Lite** | Snapport Lite — 在家制作证件照 \| iOS App | Snapport Lite - 通过尺寸引导、背景工具和可打印输出，制作护照、签证和证件照。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/snapportlite.html) | [在 App Store 获取 Snapport Lite](https://apps.apple.com/cn/app/id6792856304?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **Sono Note** | 最佳iPhone会议语音笔记总结应用 | 通话后你不需要原始文字记录——你需要摘要、行动事项和草拟的后续邮件——Sono Note正是为此设计。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [在App Store获取Sono Note →](https://apps.apple.com/cn/app/id6782139553?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
@@ -135,7 +136,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## 下载完整数据集
 
-JSON、JSONL 和 CSV 格式包含相同的 2,150 条记录。
+JSON、JSONL 和 CSV 格式包含相同的 2,200 条记录。
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON、JSONL 和 CSV 格式包含相同的 2,150 条记录。
 
 [首页](https://alice51849.github.io/ios-app-guide/zh-Hans/index.html) · [开放数据](https://alice51849.github.io/ios-app-guide/zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html) · [许可协议](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-08-24
+更新日期: 2026-08-26
 
 CC BY 4.0 适用于原始目录编纂；应用名称和 App Store 标识归其所有者所有。

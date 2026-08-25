@@ -74,13 +74,13 @@
       "uniqueItems": true
     },
     "app_count": {
-      "const": 43
+      "const": 44
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 2150
+      "const": 2200
     },
     "locales": {
       "type": "array",
@@ -223,8 +223,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 2150,
-      "maxItems": 2150,
+      "minItems": 2200,
+      "maxItems": 2200,
       "items": {
         "$ref": "#/$defs/record"
       }
@@ -386,6 +386,7 @@
             "picclear",
             "scanto",
             "sereno",
+            "shotinbox",
             "snapport",
             "snapportlite",
             "sononote",

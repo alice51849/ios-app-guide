@@ -4,7 +4,7 @@
 
 Katalog od první strany, který uvádí, pro koho je každá aplikace určena, jaký úkol má splnit a přímou cestu do App Store.
 
-Vyhledávací záměry vytvořené vydavatelem napříč 43 ověřenými aktivními iOS aplikacemi a 50 Apple lokalitami.
+Vyhledávací záměry vytvořené vydavatelem napříč 44 ověřenými aktivními iOS aplikacemi a 50 Apple lokalitami.
 
 **Lokalita:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · **cs** · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -122,6 +122,7 @@ Abecedně podle názvu aplikace — nikdy žebříček.
 | **PicClear** | nejlepší aplikace na uvolnění místa na iPhonu mazáním duplicitních fotek | Pro rychlé uvolnění místa se zaměřte nejdříve na největší úspory: přesné duplikáty, téměř identické série, rozmazané snímky a velká videa — PicClear vám pomůže na iPhonu. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Stáhněte PicClear v App Store →](https://apps.apple.com/cz/app/id6780223070?pt=118326163&ct=iag_gh_cs&mt=8) |
 | **ScanTo Pro** | nejlepší offline skener dokumentů bez cloudu pro zdravotní sestry | Pokud skenujete souhlas pacienta, propouštěcí dokumenty nebo doporučení, skener musí uchovat tyto dokumenty pouze na zařízení — nikdy je nenahrávat do cizího cloudu — ScanTo Pro je pro to stvořený. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Stáhněte ScanTo Pro v App Store →](https://apps.apple.com/cz/app/id6779977651?pt=118326163&ct=iag_gh_cs&mt=8) |
 | **Sereno** | nejlepší aplikace na bílý šum pro usínání bez předplatného | Pro spánek je předplatné, které vás každý měsíc obtěžuje, opakem klidu — Sereno je na to stavěné. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Stáhněte Sereno v App Store →](https://apps.apple.com/cz/app/id6788236641?pt=118326163&ct=iag_gh_cs&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Organizátor snímků obrazovky \| iOS App | Vaše snímky, přehledně | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/shotinbox.html) | [Stáhněte si ShotInbox AI: Sort Screenshots v App Storu](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_gh_cs&mt=8) |
 | **Snapport** | nejlepší aplikace na pasové fotografie pro miminka a batolata doma | Pro pasovou fotografii miminka nesmí být na snímku nikdo jiný a pozadí musí být jednobarevné — u kojenců oči nemusí být zcela otevřené. | Placené stažení | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Stáhněte Snapport v App Store →](https://apps.apple.com/cz/app/id6780575828?pt=118326163&ct=iag_gh_cs&mt=8) |
 | **Snapport Lite** | Snapport Lite — Vytvořte ID fotografie doma \| iOS App | Snapport Lite - Vytvářejte pasové, vízové a dokumentové fotografie s vedením velikosti, nástroji pro pozadí a exportem připraveným k tisku. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/snapportlite.html) | [Stáhněte si Snapport Lite v App Storu](https://apps.apple.com/cz/app/id6792856304?pt=118326163&ct=iag_gh_cs&mt=8) |
 | **Sono Note** | nejlepší aplikace na hlasové poznámky, která shrnuje schůzky na iPhonu | Po hovoru nechcete jen surový přepis — chcete shrnutí, úkoly a návrh následného e-mailu — Sono Note je na to stavěná. | Zdarma na začátek · odemknutí jednorázovým nákupem | [Průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Stáhněte Sono Note v App Store →](https://apps.apple.com/cz/app/id6782139553?pt=118326163&ct=iag_gh_cs&mt=8) |
@@ -135,7 +136,7 @@ Abecedně podle názvu aplikace — nikdy žebříček.
 
 ## Stáhnout celý dataset
 
-JSON, JSONL a CSV obsahují stejných 2 150 záznamů.
+JSON, JSONL a CSV obsahují stejných 2 200 záznamů.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +144,6 @@ JSON, JSONL a CSV obsahují stejných 2 150 záznamů.
 
 [Domů](https://alice51849.github.io/ios-app-guide/cs/index.html) · [Otevřená data](https://alice51849.github.io/ios-app-guide/cs/data/lumi-studio-publisher-search-intent-catalog.html) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualizováno: 2026-08-24
+Aktualizováno: 2026-08-26
 
 CC BY 4.0 platí pro původní sestavení katalogu; názvy aplikací a značky App Store patří jejich vlastníkům.

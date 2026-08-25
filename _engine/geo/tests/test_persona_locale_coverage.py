@@ -42,6 +42,7 @@ CURRENT_LIVE_APPS = {
     "picclear",
     "scanto",
     "sereno",
+    "shotinbox",
     "snapport",
     "snapportlite",
     "sononote",

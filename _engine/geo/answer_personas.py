@@ -2287,20 +2287,6 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
-}
-
-
-# Personas written ahead of publication.
-#
-# The catch-up chain will not admit a newly public app to the registry until
-# a reviewed buyer persona exists for it, but the finder catalog only ever
-# lists apps Apple has finished publishing to every storefront, and
-# publisher_intent_catalog requires those two sets to match exactly. An app
-# in between -- public enough to be discovered, not yet published everywhere
-# -- therefore needs its persona to exist without counting as catalog
-# coverage. That is what this holds. Move an entry into PERSONAS in the same
-# change that admits the app to the registry.
-PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
     "shotinbox": [
         {
             "query": "best app to sort screenshots on iphone offline",
@@ -2353,6 +2339,19 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
         },
     ],
 }
+
+
+# Personas written ahead of publication.
+#
+# The catch-up chain will not admit a newly public app to the registry until a
+# reviewed buyer persona exists for it, but the finder catalog only lists apps
+# Apple has finished publishing everywhere, and publisher_intent_catalog
+# requires those two sets to match exactly. An app in between -- public enough
+# to be discovered, not yet published to every storefront -- needs its persona
+# to exist without counting as catalog coverage yet. Park it here, then move it
+# into PERSONAS in the same change that admits the app to the registry.
+# ShotInbox AI went through here on 2026-08-26.
+PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {}
 
 
 def persona_meta_description(lead: str, name: str, limit: int = 160) -> str:

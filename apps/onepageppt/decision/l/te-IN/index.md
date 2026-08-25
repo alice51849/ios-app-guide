@@ -2,7 +2,7 @@
 title: "OnePage PPT: స్లయిడ్ మేకర్ — నోట్స్ నుండి ప్రజెంటేషన్ | iOS App"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/te-IN/index.html"
-modified: "2026-08-24"
+modified: "2026-08-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "best app to fix blurry photos of kids on iphone"
 lang: "en-US"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/en-US/index.html"
-modified: "2026-08-24"
+modified: "2026-08-25"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

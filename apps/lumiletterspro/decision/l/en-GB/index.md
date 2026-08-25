@@ -2,7 +2,7 @@
 title: "best complete phonics app for homeschool kindergarten prep"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/en-GB/index.html"
-modified: "2026-08-24"
+modified: "2026-08-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

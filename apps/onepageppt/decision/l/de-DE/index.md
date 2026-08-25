@@ -2,7 +2,7 @@
 title: "OnePage PPT: KI Folien — Notizen zu einer Folie | iOS App"
 lang: "de-DE"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/de-DE/index.html"
-modified: "2026-08-24"
+modified: "2026-08-25"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

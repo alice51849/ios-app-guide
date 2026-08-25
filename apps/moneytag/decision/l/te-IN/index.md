@@ -2,7 +2,7 @@
 title: "MoneyTag: ఆదాయం & ఖర్చు — ప్రాజెక్టులు · ట్యాగ్‌లు | iOS App"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/te-IN/index.html"
-modified: "2026-08-24"
+modified: "2026-08-25"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "iPhone 上最佳簡單待辦清單應用程式，無訂閱"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/zh-Hant/index.html"
-modified: "2026-08-24"
+modified: "2026-08-25"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - 免費開始 · 一次購買解鎖
 - 無廣告
 - App Store · 免費
-- ★ 5.0/5 · 3
+- ★ 5.0/5 · 2
 
 [在 App Store 取得 Mochi →](https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=iag_data_zh_hant&mt=8)
 

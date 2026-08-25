@@ -2,7 +2,7 @@
 title: "najlepšia praktická aplikácia na jazykové frázy pre cestovateľov s Apple Watch"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/sk/index.html"
-modified: "2026-08-24"
+modified: "2026-08-25"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

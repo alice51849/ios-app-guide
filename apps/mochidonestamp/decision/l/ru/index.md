@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Когда было — Помнит, когда вы это сделали | iOS App"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ru/index.html"
-modified: "2026-08-24"
+modified: "2026-08-25"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do notatek głosowych podsumowująca spotkania na iPhone"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/pl/index.html"
-modified: "2026-08-24"
+modified: "2026-08-25"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "bästa väderappen för att hjälpa föräldrar planera utetid med barn"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/sv/index.html"
-modified: "2026-08-24"
+modified: "2026-08-25"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

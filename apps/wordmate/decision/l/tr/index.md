@@ -2,7 +2,7 @@
 title: "Apple Watch ile yoğun yolculuklarda kelime öğrenmeye en uygun uygulama"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/tr/index.html"
-modified: "2026-08-24"
+modified: "2026-08-25"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "bedste komplette lydrette-app til hjemmeundervisning og børnehaveforberedelse"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/da/index.html"
-modified: "2026-08-24"
+modified: "2026-08-25"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

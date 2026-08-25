@@ -2,7 +2,7 @@
 title: "Wordmate Lite: vocabulario — Cinco palabras al día, offline | iOS App"
 lang: "es-ES"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/es-ES/index.html"
-modified: "2026-08-24"
+modified: "2026-08-25"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

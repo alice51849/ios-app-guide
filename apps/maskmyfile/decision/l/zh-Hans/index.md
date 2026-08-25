@@ -2,7 +2,7 @@
 title: "Mask My File — 分享前遮挡隐私敏感信息 | iOS App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/zh-Hans/index.html"
-modified: "2026-08-24"
+modified: "2026-08-25"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "Mask My File — Black out data before sharing | iOS App"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/en-GB/index.html"
-modified: "2026-08-24"
+modified: "2026-08-25"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

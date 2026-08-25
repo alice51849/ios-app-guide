@@ -2,7 +2,7 @@
 title: "האפליקציה הטובה ביותר למשחק מתמטי לילדים לפיתוח כישורי לוגיקה באייפון"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/he/index.html"
-modified: "2026-08-24"
+modified: "2026-08-25"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -4,9 +4,9 @@
   "name": "Lumi Studio App Install Decision Routes",
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.json",
-  "dateModified": "2026-08-24",
-  "content_digest": "198966de1fa62f71c66c68af2191c13a560680bee514634c1250ca7766f14892",
-  "generation_digest": "823f8d399306b4dbf97bcb0afa5283ca8132950f12f3f1496f33733e8d6e914b",
+  "dateModified": "2026-08-25",
+  "content_digest": "b6c0b7864fae15e6f0cba1f705a6bd8f47abc9222211111628016615fcd5f0cb",
+  "generation_digest": "8f44b4f2c19aa17914be169c223f453823be495db0927785b35662eff995cba8",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -51785,7 +51785,8 @@
         "子ども・学習",
         "無料で開始・買い切りで永久解除",
         "広告なし",
-        "App Store · 無料"
+        "App Store · 無料",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/ja/index.html",
@@ -51798,7 +51799,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "JPY",
-        "formatted_price": "無料"
+        "formatted_price": "無料",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。",
@@ -108918,7 +108921,7 @@
         "免費開始 · 一次購買解鎖",
         "無廣告",
         "App Store · 免費",
-        "★ 4.6/5 · 5"
+        "★ 4.7/5 · 6"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/zh-Hant/index.html",
@@ -108932,8 +108935,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 4.6,
-        "rating_count": 5
+        "rating_value": 4.7,
+        "rating_count": 6
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -109445,7 +109448,7 @@
         "免費開始 · 一次購買解鎖",
         "無廣告",
         "App Store · 免費",
-        "★ 5.0/5 · 3"
+        "★ 5.0/5 · 2"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/zh-Hant/index.html",
@@ -109460,7 +109463,7 @@
         "currency": "TWD",
         "formatted_price": "免費",
         "rating_value": 5.0,
-        "rating_count": 3
+        "rating_count": 2
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",

@@ -336,7 +336,18 @@ jobs:
             if ! git diff --cached --quiet; then
               git commit -m "Reconcile truthful sitemap lastmod after rebase"
             fi
-            git push
+            pushed=0
+            for attempt in 1 2 3 4 5; do
+              if git push; then pushed=1; break; fi
+              echo "push rejected (attempt ${attempt}); rebasing onto origin/main and retrying"
+              git fetch origin main
+              git pull --rebase --autostash -X theirs origin main
+              sleep $((attempt * 10))
+            done
+            if [ "$pushed" != "1" ]; then
+              echo "::error::git push still rejected after 5 rebase retries"
+              exit 1
+            fi
           fi
       - name: Localize from curated dictionaries (zero-cost, no API)
         run: |
@@ -483,7 +494,18 @@ jobs:
             if ! git diff --cached --quiet; then
               git commit -m "Reconcile complete outreach coverage after rebase"
             fi
-            git push
+            pushed=0
+            for attempt in 1 2 3 4 5; do
+              if git push; then pushed=1; break; fi
+              echo "push rejected (attempt ${attempt}); rebasing onto origin/main and retrying"
+              git fetch origin main
+              git pull --rebase --autostash -X theirs origin main
+              sleep $((attempt * 10))
+            done
+            if [ "$pushed" != "1" ]; then
+              echo "::error::git push still rejected after 5 rebase retries"
+              exit 1
+            fi
           fi
       - name: Unlink site dir
         run: rm -f _engine/geo/pages

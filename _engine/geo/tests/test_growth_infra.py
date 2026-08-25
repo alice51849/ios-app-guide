@@ -23099,9 +23099,13 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("aeo_pages.py --cached-live", workflow)
         self.assertIn("gen_llms.py --cached-live", workflow)
         self.assertIn("fetch-depth: 0", workflow)
-        self.assertEqual(5, workflow.count("gen_sitemap_lastmod.py"))
+        # Seven, not five: the two commit-and-push blocks each gained a retry
+        # loop, and a retry rebases onto whatever landed in the meantime, so
+        # the lastmod dates have to be recomputed against that new tip before
+        # the retried push. Four of the seven carry the intermediate state.
+        self.assertEqual(7, workflow.count("gen_sitemap_lastmod.py"))
         self.assertEqual(
-            3,
+            4,
             workflow.count(
                 '--state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"'
             ),
@@ -23569,7 +23573,9 @@ class GeneratorTests(unittest.TestCase):
         # Six: the five below plus the pre-gate repair inside the
         # materialization step, which is what makes the fail-closed
         # semantic-integrity gate self-healing instead of deadlocked.
-        self.assertEqual(6, workflow.count("reconcile_answer_semantics.py"))
+        # Eight for the same reason as the lastmod count above: each of the
+        # two push retry loops reconciles against the tip it just rebased onto.
+        self.assertEqual(8, workflow.count("reconcile_answer_semantics.py"))
         self.assertLess(
             refresh_block.rindex("gen_feed.py"),
             refresh_block.rindex("reconcile_answer_semantics.py"),
@@ -23877,8 +23883,11 @@ class GeneratorTests(unittest.TestCase):
             2,
             verification_block.count("--suite geo-full-suite"),
         )
+        # Four: one per push block, plus one per push retry loop -- a retry
+        # rebases, reconciles, and has to commit that reconciliation before it
+        # can push again.
         self.assertEqual(
-            2,
+            4,
             workflow.count(
                 'git commit -m "Reconcile truthful sitemap lastmod after rebase"'
             ),

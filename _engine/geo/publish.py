@@ -135,6 +135,8 @@ def main():
     require([PY, os.path.join(HERE, "demand_tools.py")], env=env)
     require([PY, os.path.join(HERE, "outreach_scorecard.py")], env=env)
     require([PY, os.path.join(HERE, "gen_data_hub.py")], env=env)
+    # 這支之前沒被任何排程呼叫過,線上那份 feed 是手動跑出來的。
+    require([PY, os.path.join(HERE, "agent_product_feed.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_static_api.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_observation_passport.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_opds_catalog.py")], env=env)
@@ -320,11 +322,6 @@ def main():
     require([PY, os.path.join(HERE, "gen_link_hubs.py")], env=env)
     require([PY, os.path.join(HERE, "gen_store_attribution.py")], env=env)
     require([PY, os.path.join(HERE, "validate_webstories.py")], env=env)
-    # 跨 App 比較面:決策矩陣與 agent product feed 都由 llms.txt 索引,所以必須
-    # 跑在 gen_llms 之前;兩支都只讀 registry + Apple 公開 storefront 快照,
-    # 手改輸出會在下一次發布被覆蓋。
-    require([PY, os.path.join(HERE, "app_decision_matrix.py")], env=env)
-    require([PY, os.path.join(HERE, "agent_product_feed.py")], env=env)
     require([PY, os.path.join(HERE, "gen_llms.py"), "--cached-live"], env=env)
     require([PY, os.path.join(HERE, "gen_feed.py")], env=env)
     sync_standard_site(env)

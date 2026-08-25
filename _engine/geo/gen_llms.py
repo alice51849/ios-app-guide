@@ -781,9 +781,12 @@ def agent_product_feed_lines(*, full):
     lines = [
         "",
         "## Agent product feed (shopping-feed field names, search-only)",
+        f"- Catalog page: {agent_product_feed.page_url()}",
         f"- Feed index: {agent_product_feed.index_url()}",
         f"- JSONL feed: {agent_product_feed.feed_url()}",
         f"- UTF-8 CSV feed: {agent_product_feed.csv_url()}",
+        f"- RSS 2.0 / merchant XML feed: {agent_product_feed.xml_url()}",
+        f"- schema.org ItemList (JSON-LD): {agent_product_feed.jsonld_url()}",
         f"- JSON Schema (one row): {agent_product_feed.schema_url()}",
     ]
     if full:

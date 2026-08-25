@@ -2290,6 +2290,71 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
 }
 
 
+# Personas written ahead of publication.
+#
+# The catch-up chain will not admit a newly public app to the registry until
+# a reviewed buyer persona exists for it, but the finder catalog only ever
+# lists apps Apple has finished publishing to every storefront, and
+# publisher_intent_catalog requires those two sets to match exactly. An app
+# in between -- public enough to be discovered, not yet published everywhere
+# -- therefore needs its persona to exist without counting as catalog
+# coverage. That is what this holds. Move an entry into PERSONAS in the same
+# change that admits the app to the registry.
+PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
+    "shotinbox": [
+        {
+            "query": "best app to sort screenshots on iphone offline",
+            "guide_title": "Screenshot backlog: sorting them is not the point, acting on them is",
+            "triggers": [
+                "sort screenshots",
+                "organize screenshots",
+                "organise screenshots",
+                "screenshot organizer",
+                "clean up screenshots",
+                "too many screenshots",
+                "find text in screenshots",
+                "screenshots taking up storage",
+            ],
+            "persona": "people whose camera roll has become a to-do list of screenshots they never went back to",
+            "lead": "Screenshots pile up because each one was a task — a receipt to file, a link to open, an address to navigate to — and the camera roll has no way to finish any of them.",
+            "paras": [
+                "ShotInbox AI reads screenshots on the device with Apple Vision OCR and NaturalLanguage, then sorts them into categories such as Shopping, Receipts, Travel, Tickets, Maps & Places, Chats & Social, Work, Study, Recipes & Food, Inspiration, QR & Codes, Errors & Tech and Sensitive. Detected events and reminders are listed in time order, so a screenshot of a booking or a deadline surfaces before it matters rather than after.",
+                "Each screenshot carries the action it was taken for: Open in Maps, Open Link, Copy Text, Open Code, Call Number, Track Package, Add Reminder, Add to Calendar. Nothing is uploaded and nothing is deleted automatically — Photos asks for a final confirmation, and ShotInbox cannot undo that step. The latest 50 screenshots include the complete core workflow for free; unlimited history, custom rules, batches, similar groups, the sensitive lock, widgets and backup or export come with the one-time Lifetime Pro purchase.",
+            ],
+            "look": [
+                "Text search across what the screenshots actually say, not just their dates.",
+                "Categories that match why the screenshot was taken.",
+                "A one-tap action per screenshot: open the link, the map, the code, the reminder.",
+                "On-device processing, with nothing uploaded.",
+                "Deletion that always asks first, so a backlog cleanup cannot go wrong silently.",
+            ],
+            "steps": [
+                "Open the last week of screenshots and see which categories they land in.",
+                "Search for a word you know is inside one of them, not its filename.",
+                "Take the offered action on one screenshot — the link, map or reminder it was saved for.",
+                "Check the detected events list for anything with a date still ahead of you.",
+                "Only then clear the ones that are finished, confirming the delete in Photos.",
+            ],
+            "fits": "fits people who keep screenshots as reminders and want to finish them — search the text, take the action, then clear the backlog on device without anything being uploaded or deleted behind their back.",
+            "faq": [
+                {
+                    "q": "Are my screenshots uploaded anywhere?",
+                    "a": "No — OCR and text analysis run on the device with Apple Vision and NaturalLanguage.",
+                },
+                {
+                    "q": "Can it delete screenshots without asking?",
+                    "a": "No — it never auto-deletes, and Photos asks for a final confirmation that ShotInbox cannot undo.",
+                },
+                {
+                    "q": "What works before paying?",
+                    "a": "The latest 50 screenshots include the complete core workflow; Lifetime Pro is a one-time purchase that removes the history limit and adds rules, batches, the sensitive lock, widgets and export.",
+                },
+            ],
+        },
+    ],
+}
+
+
 def persona_meta_description(lead: str, name: str, limit: int = 160) -> str:
     suffix = f" — {name}."
     available = max(24, limit - len(suffix))

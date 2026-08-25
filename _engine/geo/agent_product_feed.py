@@ -39,8 +39,10 @@ import io
 import json
 import os
 from pathlib import Path
+import html
 import re
 from typing import Any
+import xml.sax.saxutils as saxutils
 
 import app_decision_matrix
 from app_store_storefronts import (
@@ -66,6 +68,10 @@ INDEX_RELATIVE = FEED_DIR / "index.json"
 FEED_RELATIVE = FEED_DIR / "feed.jsonl"
 CSV_RELATIVE = FEED_DIR / "feed.csv"
 SCHEMA_RELATIVE = FEED_DIR / "feed.schema.json"
+XML_RELATIVE = FEED_DIR / "feed.xml"
+JSONLD_RELATIVE = FEED_DIR / "catalog.jsonld"
+PAGE_RELATIVE = FEED_DIR / "index.html"
+SITEMAP_RELATIVE = Path("sitemap_agent_feed.xml")
 LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
 BRAND = "Lumi Studio"
 BASE_LOCALE = "en-US"
@@ -122,6 +128,18 @@ def csv_url() -> str:
 
 def schema_url() -> str:
     return f"{SITE}/{SCHEMA_RELATIVE.as_posix()}"
+
+
+def xml_url() -> str:
+    return f"{SITE}/{XML_RELATIVE.as_posix()}"
+
+
+def jsonld_url() -> str:
+    return f"{SITE}/{JSONLD_RELATIVE.as_posix()}"
+
+
+def page_url() -> str:
+    return f"{SITE}/{FEED_DIR.as_posix()}/"
 
 
 def _snapshot_date(pages: Path) -> str:
@@ -363,6 +381,214 @@ def schema_payload() -> dict[str, Any]:
     }
 
 
+# --- Surfaces a shopping ingester cannot read -----------------------------
+#
+# The JSONL feed answers "give me the rows". It does not answer the two
+# questions everything else asks first: search engines and answer engines look
+# for schema.org markup, and several directory and merchant ingesters only
+# accept an RSS/XML feed. A directory of raw .json/.jsonl files also has
+# nothing a crawler will follow or a person will link to, which is most of why
+# the feed has no inbound links today.
+#
+# Same rows, same snapshot, three more shapes. Nothing new is asserted here:
+# every value below already appears in feed.jsonl.
+
+def _apps_in_base_locale(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """One row per app, preferring the base locale, in stable order."""
+    best: dict[str, dict[str, Any]] = {}
+    for row in rows:
+        key = str(row["item_group_id"])
+        current = best.get(key)
+        if current is None or (
+            row["content_language"] == BASE_LOCALE
+            and current["content_language"] != BASE_LOCALE
+        ):
+            best[key] = row
+    return [best[key] for key in sorted(best)]
+
+
+def jsonld_payload(rows: list[dict[str, Any]], modified: str) -> dict[str, Any]:
+    """schema.org ItemList of MobileApplication, one entry per app."""
+    languages: dict[str, list[str]] = {}
+    for row in rows:
+        languages.setdefault(str(row["item_group_id"]), []).append(
+            str(row["content_language"])
+        )
+
+    def application(row: dict[str, Any]) -> dict[str, Any]:
+        key = str(row["item_group_id"])
+        node = {
+            "@type": "MobileApplication",
+            "name": row["title"],
+            "description": row["description"],
+            "applicationCategory": row.get("product_type") or "",
+            "operatingSystem": "iOS",
+            "url": row["app_store_url"],
+            "image": row.get("image_link", ""),
+            "inLanguage": sorted(set(languages.get(key, []))),
+            "author": {"@type": "Organization", "name": BRAND},
+            "offers": {
+                "@type": "Offer",
+                "price": str(row["price_value"]),
+                "priceCurrency": row["price_currency"],
+                "availability": "https://schema.org/InStock",
+                "url": row["app_store_url"],
+            },
+        }
+        # No aggregateRating anywhere in this file. The feed carries no rating,
+        # so publishing one here would be inventing it.
+        return {k: v for k, v in node.items() if v not in ("", [], None)}
+
+    return {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": f"{BRAND} iOS app catalog",
+        "description": (
+            f"Every verified live {BRAND} iOS app, with the price and store "
+            "link Apple publishes for it. Structured form of the agent product "
+            "feed published alongside it."
+        ),
+        "url": page_url(),
+        "numberOfItems": len(rows := _apps_in_base_locale(rows)),
+        "dateModified": modified,
+        "license": LICENSE_URL,
+        "provider": {"@type": "Organization", "name": BRAND, "url": f"{SITE}/about.html"},
+        "itemListElement": [
+            {"@type": "ListItem", "position": i, "item": application(row)}
+            for i, row in enumerate(rows, 1)
+        ],
+    }
+
+
+def xml_text(rows: list[dict[str, Any]], modified: str) -> str:
+    """RSS 2.0 with the Google Merchant namespace, for XML-only ingesters."""
+    def tag(name: str, value: Any) -> str:
+        return f"      <{name}>{saxutils.escape(str(value))}</{name}>\n"
+
+    items = []
+    for row in rows:
+        entry = "    <item>\n"
+        entry += tag("g:id", row["id"])
+        entry += tag("g:item_group_id", row["item_group_id"])
+        entry += tag("g:title", row["title"])
+        entry += tag("g:description", row["description"])
+        entry += tag("g:link", row["link"])
+        if row.get("image_link"):
+            entry += tag("g:image_link", row["image_link"])
+        entry += tag("g:price", row["price"])
+        entry += tag("g:availability", "in stock")
+        entry += tag("g:condition", row["condition"])
+        entry += tag("g:brand", row["brand"])
+        entry += tag("g:product_type", row.get("product_type", ""))
+        entry += tag("g:content_language", row["content_language"])
+        entry += tag("g:identifier_exists", "no")
+        entry += "    </item>\n"
+        items.append(entry)
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">\n'
+        "  <channel>\n"
+        f"    <title>{saxutils.escape(BRAND)} iOS app product feed</title>\n"
+        f"    <link>{page_url()}</link>\n"
+        "    <description>Every verified live iOS app, one entry per app and "
+        "Apple storefront. Search-only: apps are purchased on the App Store."
+        "</description>\n"
+        f"    <lastBuildDate>{modified}</lastBuildDate>\n"
+        + "".join(items)
+        + "  </channel>\n</rss>\n"
+    )
+
+
+def page_text(rows: list[dict[str, Any]], modified: str) -> str:
+    """A page a crawler can follow and a person can link to."""
+    jsonld = jsonld_payload(rows, modified)
+    apps = _apps_in_base_locale(rows)
+    locales = sorted({str(row["content_language"]) for row in rows})
+
+    def line(row: dict[str, Any]) -> str:
+        name = html.escape(str(row["title"]))
+        url = html.escape(str(row["app_store_url"]))
+        category = html.escape(str(row.get("product_type") or ""))
+        price = html.escape(str(row["price"]))
+        model = "one-time purchase" if row["one_time_purchase"] else "free"
+        return (
+            f"<tr><td><a href=\"{url}\">{name}</a></td><td>{category}</td>"
+            f"<td>{price}</td><td>{model}</td></tr>"
+        )
+
+    rows_html = "\n".join(line(row) for row in apps)
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iOS app product feed — {html.escape(BRAND)}</title>
+<meta name="description" content="Machine-readable catalog of every verified live {html.escape(BRAND)} iOS app: JSONL, CSV, RSS and schema.org JSON-LD, covering {len(apps)} apps across {len(locales)} Apple storefronts.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="{page_url()}">
+<link rel="alternate" type="application/json" href="{jsonld_url()}">
+<link rel="alternate" type="text/csv" href="{csv_url()}">
+<link rel="alternate" type="application/rss+xml" href="{xml_url()}">
+<style>
+body{{font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:60rem;margin:0 auto;padding:2rem 1rem;color:#1c1c1e}}
+table{{border-collapse:collapse;width:100%;margin:1.5rem 0}}
+th,td{{text-align:left;padding:.5rem .6rem;border-bottom:1px solid #e5e5ea;font-size:.94rem}}
+th{{font-weight:600;background:#f7f7fa}}
+.formats a{{display:inline-block;margin:0 1rem .4rem 0}}
+</style>
+<script type="application/ld+json">
+{json.dumps(jsonld, ensure_ascii=False, indent=1)}
+</script>
+</head>
+<body>
+<h1>iOS app product feed</h1>
+<p>{len(apps)} verified live iOS apps from {html.escape(BRAND)}, published across
+{len(locales)} Apple storefronts, in the shapes directories and answer engines read.
+Snapshot taken {html.escape(modified)}.</p>
+
+<p class="formats"><strong>Formats:</strong>
+<a href="feed.jsonl">JSONL feed</a>
+<a href="feed.csv">CSV</a>
+<a href="feed.xml">RSS 2.0 / Merchant XML</a>
+<a href="catalog.jsonld">schema.org JSON-LD</a>
+<a href="feed.schema.json">JSON Schema</a>
+<a href="index.json">Feed index</a></p>
+
+<h2>What this feed does and does not claim</h2>
+<ul>
+<li>Prices and storefronts come from Apple&rsquo;s own lookup; the App Store listing is authoritative.</li>
+<li><strong>No ratings, awards or rankings appear anywhere in this feed.</strong> Nothing here is a score we assigned ourselves.</li>
+<li>Every row is search-only. Apps are purchased on the App Store; we run no checkout.</li>
+<li>Illustrations in the Lumi children&rsquo;s apps are digitally generated and narration is text-to-speech.</li>
+<li>Published under <a href="{LICENSE_URL}">CC BY 4.0</a>. Reuse is welcome.</li>
+</ul>
+
+<h2>Catalog</h2>
+<table>
+<thead><tr><th>App</th><th>Category</th><th>Price</th><th>Monetization</th></tr></thead>
+<tbody>
+{rows_html}
+</tbody>
+</table>
+
+<p><a href="{SITE}/">&larr; iOS app guide</a> &middot; <a href="{SITE}/about.html">About</a></p>
+</body>
+</html>
+"""
+
+
+def sitemap_text(modified: str) -> str:
+    urls = [page_url(), jsonld_url(), xml_url(), csv_url(), feed_url(), index_url()]
+    body = "\n".join(
+        f"  <url><loc>{url}</loc><lastmod>{modified}</lastmod></url>" for url in urls
+    )
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{body}\n</urlset>\n"
+    )
+
+
 def build(pages: Path = PAGES) -> dict[str, int]:
     rows, modified = build_rows(pages)
     if not rows:
@@ -380,6 +606,14 @@ def build(pages: Path = PAGES) -> dict[str, int]:
         json.dumps(index_payload(rows, modified), ensure_ascii=False, indent=2)
         + "\n",
     )
+    written += write_text_if_changed(
+        pages / JSONLD_RELATIVE,
+        json.dumps(jsonld_payload(rows, modified), ensure_ascii=False, indent=2)
+        + "\n",
+    )
+    written += write_text_if_changed(pages / XML_RELATIVE, xml_text(rows, modified))
+    written += write_text_if_changed(pages / PAGE_RELATIVE, page_text(rows, modified))
+    written += write_text_if_changed(pages / SITEMAP_RELATIVE, sitemap_text(modified))
     return {
         "rows": len(rows),
         "apps": len({str(row["item_group_id"]) for row in rows}),

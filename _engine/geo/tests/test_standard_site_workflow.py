@@ -446,18 +446,22 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             self.source[final_cleanup:localized_commit],
         )
 
-        for marker in (
-            'git pull --rebase --autostash -X theirs',
-        ):
-            starts = [match.start() for match in re.finditer(re.escape(marker), self.source)]
-            self.assertEqual(2, len(starts))
-            for start in starts:
-                end = self.source.find("git push", start)
-                self.assertGreater(end, start)
-                self.assertIn(
-                    "python3 _engine/geo/sync_standard_site.py",
-                    self.source[start:end],
-                )
+        # Four rebases, not two: each of the two commit-and-push blocks rebases
+        # once before its first push attempt, and once more inside the retry
+        # loop that runs when someone else pushed while this run was working.
+        # What matters is the same for all four -- a rebase pulls in other
+        # people's content, so the Standard.site links have to be reconciled
+        # against it before anything is pushed.
+        marker = 'git pull --rebase --autostash -X theirs'
+        starts = [match.start() for match in re.finditer(re.escape(marker), self.source)]
+        self.assertEqual(4, len(starts))
+        for start in starts:
+            end = self.source.find("git push", start)
+            self.assertGreater(end, start)
+            self.assertIn(
+                "python3 _engine/geo/sync_standard_site.py",
+                self.source[start:end],
+            )
 
 
 if __name__ == "__main__":

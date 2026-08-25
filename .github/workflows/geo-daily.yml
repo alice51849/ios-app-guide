@@ -206,6 +206,7 @@ jobs:
           python3 gen_cost_compare.py
           python3 gen_calculator.py
           python3 gen_data_hub.py
+          python3 agent_product_feed.py
           python3 family_travel_static_api.py
           python3 family_travel_observation_passport.py
           python3 family_travel_opds_catalog.py
@@ -339,10 +340,27 @@ jobs:
             pushed=0
             for attempt in 1 2 3 4 5; do
               if git push; then pushed=1; break; fi
-              echo "push rejected (attempt ${attempt}); rebasing onto origin/main and retrying"
-              git fetch origin main
-              git pull --rebase --autostash -X theirs origin main
+              echo "push rejected (attempt ${attempt}); reconciling onto the new tip"
               sleep $((attempt * 10))
+              # Rebasing pulls in whatever landed while this run was working,
+              # so the Standard.site links and the sitemap lastmod dates have
+              # to be reconciled against that new tip before pushing -- the
+              # same reconciliation this step already ran once above.
+              git pull --rebase --autostash -X theirs
+              python3 _engine/geo/sync_standard_site.py \
+                --site-root "$GITHUB_WORKSPACE" \
+                --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
+                --allow-initial-404 \
+                --timeout 10 \
+                --retries 3 \
+                --retry-delay 2
+              python3 _engine/geo/reconcile_answer_semantics.py
+              python3 _engine/geo/gen_sitemap_lastmod.py \
+                --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+              git add -A
+              if ! git diff --cached --quiet; then
+                git commit -m "Reconcile truthful sitemap lastmod after rebase"
+              fi
             done
             if [ "$pushed" != "1" ]; then
               echo "::error::git push still rejected after 5 rebase retries"
@@ -497,10 +515,26 @@ jobs:
             pushed=0
             for attempt in 1 2 3 4 5; do
               if git push; then pushed=1; break; fi
-              echo "push rejected (attempt ${attempt}); rebasing onto origin/main and retrying"
-              git fetch origin main
-              git pull --rebase --autostash -X theirs origin main
+              echo "push rejected (attempt ${attempt}); reconciling onto the new tip"
               sleep $((attempt * 10))
+              # Rebasing pulls in whatever landed while this run was working,
+              # so the Standard.site links and the sitemap lastmod dates have
+              # to be reconciled against that new tip before pushing -- the
+              # same reconciliation this step already ran once above.
+              git pull --rebase --autostash -X theirs
+              python3 _engine/geo/sync_standard_site.py \
+                --site-root "$GITHUB_WORKSPACE" \
+                --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
+                --allow-initial-404 \
+                --timeout 10 \
+                --retries 3 \
+                --retry-delay 2
+              python3 _engine/geo/reconcile_answer_semantics.py
+              python3 _engine/geo/gen_sitemap_lastmod.py
+              git add -A
+              if ! git diff --cached --quiet; then
+                git commit -m "Reconcile truthful sitemap lastmod after rebase"
+              fi
             done
             if [ "$pushed" != "1" ]; then
               echo "::error::git push still rejected after 5 rebase retries"

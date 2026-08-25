@@ -3645,6 +3645,27 @@
   - zh-Hans: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld
   - zh-Hant: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld
 
+## Cross-app decision matrix (identical columns, not a ranking)
+- JSON: https://alice51849.github.io/ios-app-guide/data/ios-app-decision-matrix.json
+- JSONL (one app per line): https://alice51849.github.io/ios-app-guide/data/ios-app-decision-matrix.jsonl
+- UTF-8 CSV: https://alice51849.github.io/ios-app-guide/data/ios-app-decision-matrix.csv
+- JSON Schema: https://alice51849.github.io/ios-app-guide/data/ios-app-decision-matrix.schema.json
+- Schema.org ItemList: https://alice51849.github.io/ios-app-guide/data/ios-app-decision-matrix.jsonld
+- One row per verified live app; every row carries the same columns
+- Columns include purchase model, one-time option, verified US storefront price, sibling editions, choose-when and consider-instead-when
+- Alphabetical by app key; first-party, so nothing is ranked, scored or weighted
+- Prices come from Apple's public storefront lookup snapshot
+
+## Agent product feed (shopping-feed field names, search-only)
+- Feed index: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-agent-feed/index.json
+- JSONL feed: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-agent-feed/feed.jsonl
+- UTF-8 CSV feed: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-agent-feed/feed.csv
+- JSON Schema (one row): https://alice51849.github.io/ios-app-guide/api/v1/ios-app-agent-feed/feed.schema.json
+- One row per verified live app and Apple storefront, in the storefront's own language
+- Fields: id, item_group_id, title, description, link, image_link, price, price_currency, availability, brand, condition, content_language
+- enable_search is true; enable_checkout is false — iOS apps are purchased on the Apple App Store, not here
+- A row exists only where Apple's public lookup confirms the app is sold in that storefront
+
 ## Open educational resources
 - [Family Travel Observation Passport](https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html)
   - Traditional Chinese: https://alice51849.github.io/ios-app-guide/zh-Hant/tools/family-travel-observation-passport.html

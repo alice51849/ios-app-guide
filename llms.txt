@@ -722,6 +722,19 @@ Direct answers an assistant can quote. Every answer is limited to what this cata
 - Schema.org OfferCatalog index: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/index.json
 - Official Apple locales: 50/50
 
+## Cross-app decision matrix (identical columns, not a ranking)
+- JSON: https://alice51849.github.io/ios-app-guide/data/ios-app-decision-matrix.json
+- JSONL (one app per line): https://alice51849.github.io/ios-app-guide/data/ios-app-decision-matrix.jsonl
+- UTF-8 CSV: https://alice51849.github.io/ios-app-guide/data/ios-app-decision-matrix.csv
+- JSON Schema: https://alice51849.github.io/ios-app-guide/data/ios-app-decision-matrix.schema.json
+- Schema.org ItemList: https://alice51849.github.io/ios-app-guide/data/ios-app-decision-matrix.jsonld
+
+## Agent product feed (shopping-feed field names, search-only)
+- Feed index: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-agent-feed/index.json
+- JSONL feed: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-agent-feed/feed.jsonl
+- UTF-8 CSV feed: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-agent-feed/feed.csv
+- JSON Schema (one row): https://alice51849.github.io/ios-app-guide/api/v1/ios-app-agent-feed/feed.schema.json
+
 ## Open static APIs (versioned, read-only, no API key)
 - Verified iOS App Catalog API v1: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/
   - OpenAPI 3.1: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/openapi.json

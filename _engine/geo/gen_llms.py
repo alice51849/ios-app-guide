@@ -28,6 +28,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
+import agent_product_feed  # noqa: E402
+import app_decision_matrix  # noqa: E402
 import app_install_decision_routes  # noqa: E402
 import app_video_lessons  # noqa: E402
 import build_pages_i18n  # noqa: E402
@@ -738,6 +740,69 @@ def portfolio_offer_catalog_lines(*, full):
     return lines
 
 
+def app_decision_matrix_lines(*, full):
+    """Expose the cross-app comparison table once it exists.
+
+    Every other machine-readable surface here describes one app at a time, so an
+    assistant comparing two of ours has to infer the difference. The matrix is
+    the only file that states the comparison itself, which is why it is worth a
+    section of its own rather than a line in the open-data list.
+    """
+    if not os.path.exists(os.path.join(PAGES, app_decision_matrix.JSON_RELATIVE)):
+        return []
+    lines = [
+        "",
+        "## Cross-app decision matrix (identical columns, not a ranking)",
+        f"- JSON: {app_decision_matrix.json_url()}",
+        f"- JSONL (one app per line): {app_decision_matrix.jsonl_url()}",
+        f"- UTF-8 CSV: {app_decision_matrix.csv_url()}",
+        f"- JSON Schema: {app_decision_matrix.schema_url()}",
+        f"- Schema.org ItemList: {app_decision_matrix.jsonld_url()}",
+    ]
+    if full:
+        lines.extend(
+            [
+                "- One row per verified live app; every row carries the same columns",
+                "- Columns include purchase model, one-time option, verified US "
+                "storefront price, sibling editions, choose-when and "
+                "consider-instead-when",
+                "- Alphabetical by app key; first-party, so nothing is ranked, "
+                "scored or weighted",
+                "- Prices come from Apple's public storefront lookup snapshot",
+            ]
+        )
+    return lines
+
+
+def agent_product_feed_lines(*, full):
+    """Expose the shopping-feed-shaped export once it exists."""
+    if not os.path.exists(os.path.join(PAGES, agent_product_feed.INDEX_RELATIVE)):
+        return []
+    lines = [
+        "",
+        "## Agent product feed (shopping-feed field names, search-only)",
+        f"- Feed index: {agent_product_feed.index_url()}",
+        f"- JSONL feed: {agent_product_feed.feed_url()}",
+        f"- UTF-8 CSV feed: {agent_product_feed.csv_url()}",
+        f"- JSON Schema (one row): {agent_product_feed.schema_url()}",
+    ]
+    if full:
+        lines.extend(
+            [
+                "- One row per verified live app and Apple storefront, in the "
+                "storefront's own language",
+                "- Fields: id, item_group_id, title, description, link, "
+                "image_link, price, price_currency, availability, brand, "
+                "condition, content_language",
+                "- enable_search is true; enable_checkout is false — iOS apps "
+                "are purchased on the Apple App Store, not here",
+                "- A row exists only where Apple's public lookup confirms the "
+                "app is sold in that storefront",
+            ]
+        )
+    return lines
+
+
 def _localized_app_guides(key):
     if not os.path.isdir(PAGES):
         return []
@@ -1226,6 +1291,8 @@ def build_llms(comp_map, live_keys):
     lines += publisher_intent_visual_lines(full=False)
     lines += app_video_lessons.llms_lines(full=False)
     lines += portfolio_offer_catalog_lines(full=False)
+    lines += app_decision_matrix_lines(full=False)
+    lines += agent_product_feed_lines(full=False)
     static_apis = [
         descriptor
         for descriptor in API_DESCRIPTORS
@@ -1855,6 +1922,8 @@ def build_llms_full(comp_map, live_keys):
     lines += publisher_intent_visual_lines(full=True)
     lines += app_video_lessons.llms_lines(full=True)
     lines += portfolio_offer_catalog_lines(full=True)
+    lines += app_decision_matrix_lines(full=True)
+    lines += agent_product_feed_lines(full=True)
     if os.path.exists(os.path.join(TOOLS, f"{FAMILY_TRAVEL_OER}.metadata.json")):
         opds2 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.json"
         opds1 = f"{SITE}/opds/{FAMILY_TRAVEL_OER}.xml"

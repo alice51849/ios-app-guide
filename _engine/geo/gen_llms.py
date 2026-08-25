@@ -32,7 +32,9 @@ import app_install_decision_routes  # noqa: E402
 import app_video_lessons  # noqa: E402
 import build_pages_i18n  # noqa: E402
 from app_store_storefronts import (  # noqa: E402
+    campaign_app_store_url,
     load_storefront_availability,
+    resolve_provider_token,
     verified_app_store_url,
 )
 from appstore_live import live_app_keys  # noqa: E402
@@ -158,6 +160,406 @@ def positioning(key):
     if profile == "flexible":
         return "Free to start. One-time and subscription options."
     return ""
+
+
+# --- Buyer-intent answer cards -------------------------------------------
+#
+# Assistants get asked "which X app do I buy?" far more often than they get
+# asked to summarise a catalog, so every public app also ships two to four
+# question/answer pairs an assistant can quote verbatim.  Every sentence in an
+# answer has to come from something this repository can defend: the registry
+# subtitle, the published monetization model, the positioning bullets the
+# store listing already makes, and Apple's own storefront lookup snapshot.
+# Nothing derived from private performance reporting is published here — the
+# growth review only decides *which storefronts are worth naming*, and even
+# those are dropped unless Apple's public lookup confirms the app is sold
+# there.
+BUYER_INTENT_CAMPAIGN = "llms_answer"
+
+# Storefront codes only. No download, revenue, or ranking figure belongs in a
+# public file, and none is needed: the codes just prioritise which verified
+# storefront an answer names first.
+BUYER_INTENT_STOREFRONTS = {
+    "aibriefpack": ("us", "jp"),
+    "aim990": ("fr", "tw", "jp"),
+    "caldaily": ("us",),
+    "cvdesk": ("us", "sa", "de"),
+    "cyca": ("tw", "us", "th"),
+    "gmoneylite": ("tw",),
+    "hourstaglite": ("us", "tw"),
+    "lockhour": ("jp",),
+    "lumibopomofo": ("tw", "us"),
+    "lumiletters": ("tw",),
+    "lumimath": ("tw",),
+    "lumimission": ("jp",),
+    "lumiweather": ("tw", "jp", "cn"),
+    "maskmyfile": ("us",),
+    "mochi": ("us", "br", "jp"),
+    "mochidonestamp": ("us",),
+    "notesstudio100": ("us", "de"),
+    "onepageppt": ("us",),
+    "photocream": ("ru",),
+    "scanto": ("us",),
+    "sereno": ("jp",),
+    "snapportlite": ("us",),
+    "sononote": ("us",),
+    "tripbeelite": ("il", "us", "jp"),
+    "tripplanet": ("tw",),
+    "unblurry": ("us", "jp", "tr"),
+    "wifiaidlite": ("us",),
+    "wordmatelite": ("sa",),
+}
+
+# Apps sold in every storefront get one "is this sold outside the US" answer
+# instead of a per-country series, drawn from this fixed order.
+WORLDWIDE_STOREFRONTS = ("us", "gb", "de", "jp", "fr", "au", "ca", "br", "in")
+
+STOREFRONT_ANSWER_LOCALE = {
+    "au": "en-AU", "br": "pt-BR", "ca": "en-CA", "cn": "zh-Hans",
+    "de": "de-DE", "es": "es-ES", "fr": "fr-FR", "gb": "en-GB", "il": "he",
+    "in": "hi", "it": "it", "jp": "ja", "kr": "ko", "mx": "es-MX",
+    "ru": "ru", "sa": "ar-SA", "th": "th", "tr": "tr", "tw": "zh-Hant",
+    "us": "en-US",
+}
+
+STOREFRONT_COUNTRY = {
+    "au": "Australia", "br": "Brazil", "ca": "Canada",
+    "cn": "mainland China", "de": "Germany", "es": "Spain", "fr": "France",
+    "gb": "the United Kingdom", "il": "Israel", "in": "India", "it": "Italy",
+    "jp": "Japan", "kr": "South Korea", "mx": "Mexico", "ru": "Russia",
+    "sa": "Saudi Arabia", "th": "Thailand", "tr": "Türkiye", "tw": "Taiwan",
+    "us": "the United States",
+}
+
+PRICING_SENTENCE = {
+    "pay_once": "Paid once, no subscription.",
+    "free_to_start": "Free to start, one-time unlock, no subscription.",
+    "free": "Free.",
+    "flexible": "Free to start, with one-time and subscription options.",
+}
+
+# (positioning token, answer wording, counts as a privacy claim). Only a
+# "core" token may open a privacy answer; "no ads" is real but is not a
+# privacy property, so on its own it never triggers one.
+PRIVACY_FACTS = (
+    ("on-device", "keeps your data on the device", True),
+    ("private on-device storage", "stores your data privately on the device", True),
+    ("private on-device ledger data", "stores your ledger privately on the device", True),
+    ("private", "is private by design", True),
+    ("offline with saved or manual exchange rates",
+     "works offline with saved or manual exchange rates", True),
+    ("offline with saved rates", "works offline with saved rates", True),
+    ("offline", "works offline", True),
+    ("no account", "needs no account", True),
+    ("no tracking", "does not track you", True),
+    ("no ads", "shows no ads", False),
+)
+
+# Test-prep apps may describe practice, never an outcome.
+SCORE_CAVEAT_APPS = frozenset({"aim990", "aim990plus"})
+SCORE_CAVEAT = " Practice drills and study plans only — no test score is promised."
+
+# Claims this catalog cannot support for any app: the artwork is generated and
+# the narration is synthesised, and no study app may promise a result.
+BANNED_CLAIM_RE = re.compile(
+    r"hand[-\s]?(?:drawn|made|painted|crafted|lettered)"
+    r"|(?:real|human|live)[-\s](?:human[-\s])?voices?\b"
+    r"|voice[-\s]actors?\b|voice[-\s]over artist|professionally recorded"
+    r"|guarantee",
+    re.I,
+)
+
+
+def _assert_supportable(lines):
+    """Fail the build rather than publish a claim we cannot defend."""
+    for line in lines:
+        if BANNED_CLAIM_RE.search(line):
+            raise ValueError(f"Unsupported claim in buyer-intent answer: {line}")
+    return lines
+
+
+def _buyer_intent_store_url(url):
+    """A campaign-attributed App Store link, or the plain one without a token.
+
+    ``resolve_provider_token`` rather than a bare environment read: llms.txt is
+    published by the same whole-site pipeline as the HTML stamper, and a run
+    from a non-login shell must not silently drop attribution from every answer
+    and rewrite the file. Tests stay hermetic by setting the environment
+    variable, which always wins over the token file.
+    """
+    return campaign_app_store_url(
+        url, BUYER_INTENT_CAMPAIGN, provider_token=resolve_provider_token()
+    )
+
+
+def _app_store_id(key):
+    match = re.search(r"id(\d+)", appstore_url(key) or "")
+    return match.group(1) if match else ""
+
+
+# Registry keywords are App Store search strings, not English noun phrases.
+# "free vocabulary app adults" and "is it my wifi or the website" both rank
+# fine and both read as nonsense inside a question, so a keyword only becomes
+# a question subject once it survives these filters.
+_INTENT_EDGE_JUNK = frozenset({
+    "app", "apps", "best", "download", "free", "iphone", "ipad", "online",
+})
+_INTENT_BLOCKED_INSIDE = frozenset({
+    "app", "apps", "best", "but", "download", "how", "if", "iphone", "ipad",
+    "no", "not", "online", "or", "vs", "when", "why", "without",
+})
+# A phrase that opens with a verb or a bare preposition turns the question
+# into a sentence fragment ("Is there a turn notes into a slide app...").
+_INTENT_BLOCKED_FIRST = frozenset({
+    "a", "an", "and", "are", "at", "block", "calculate", "can", "check",
+    "clean", "convert", "cue", "delete", "do", "does", "find", "fix", "get",
+    "give", "hide", "in", "is", "keep", "learn", "lock", "make", "of", "on",
+    "one", "organize", "scan", "see", "speak", "speaking", "split", "stop",
+    "summarize", "the", "track", "turn", "up", "with",
+})
+
+
+def _clean_intent(keyword):
+    words = " ".join(str(keyword).split()).lower().split()
+    while words and words[-1] in _INTENT_EDGE_JUNK:
+        words.pop()
+    # "free travel expense tracker" is about the tracker; "free up storage" is
+    # about freeing space, so a leading "free" only goes when what follows can
+    # still stand on its own.
+    if len(words) > 2 and words[0] == "free" and words[1] not in _INTENT_BLOCKED_FIRST:
+        words.pop(0)
+    while words and words[0] in _INTENT_EDGE_JUNK - {"free"}:
+        words.pop(0)
+    if not 2 <= len(words) <= 5:
+        return ""
+    if words[0] in _INTENT_BLOCKED_FIRST:
+        return ""
+    if any(word in _INTENT_BLOCKED_INSIDE for word in words[1:]):
+        return ""
+    return " ".join(words)
+
+
+def _intent_phrase(key):
+    """The search intent this app is honestly built for, or "".
+
+    Single-word registry keywords ("aid", "plus", "utilities") describe the
+    bundle far better than the product, and a couple of apps carry a stale
+    category, so an answer built on them would misdescribe the app. When no
+    keyword survives we ask a name-anchored question instead.
+    """
+    for keyword in APPS[key].get("keywords", []):
+        phrase = _clean_intent(keyword)
+        if phrase:
+            return phrase
+    return ""
+
+
+def _positioning_tokens(key):
+    app = APPS[key]
+    tokens = set()
+    for value in [app.get("tag", "")] + list(app.get("cta_bullets", [])):
+        for part in re.split(r"[·,]", str(value)):
+            part = " ".join(part.split()).lower()
+            if part:
+                tokens.add(part)
+    return tokens
+
+
+# Spelled with a vowel, pronounced with a consonant: "a one-tap...", "a user...".
+_CONSONANT_SOUNDING_VOWELS = ("one", "eu", "uni", "use", "usa", "uti", "ubi")
+
+
+def _article(phrase):
+    lowered = phrase.lower()
+    if lowered.startswith(_CONSONANT_SOUNDING_VOWELS):
+        return "a"
+    return "an" if lowered[:1] in "aeiou" else "a"
+
+
+# Registry keywords are already product phrases about half the time, so
+# appending "app" to one produces "expense tracker app". Only add the noun
+# when the phrase does not already end in one.
+INTENT_HEAD_NOUNS = frozenset({
+    "app", "apps", "blocker", "builder", "calculator", "checker", "converter",
+    "deck", "editor", "enhancer", "journal", "list", "maker", "notebook",
+    "phrasebook", "planner", "reader", "scanner", "timer", "tracker", "vault",
+})
+
+
+def _intent_subject(intent):
+    return intent if intent.split()[-1] in INTENT_HEAD_NOUNS else f"{intent} app"
+
+
+def _join_clauses(clauses):
+    if len(clauses) == 1:
+        return clauses[0]
+    return ", ".join(clauses[:-1]) + " and " + clauses[-1]
+
+
+def _availability_cards(key, availability, limit):
+    if limit <= 0 or not availability:
+        return []
+    app_id = _app_store_id(key)
+    if not app_id:
+        return []
+    name = APPS[key]["name"]
+    targeted = BUYER_INTENT_STOREFRONTS.get(key)
+    codes = targeted or WORLDWIDE_STOREFRONTS
+    verified = [
+        code for code in codes
+        if code in STOREFRONT_COUNTRY
+        and app_id in availability.get(code, frozenset())
+    ]
+    if not verified:
+        return []
+    if not targeted:
+        # The question is about the storefronts that are not the US, so the US
+        # has no business heading the list of proof.
+        elsewhere = [code for code in verified if code != "us"][:3]
+        if not elsewhere:
+            return []
+        named = _join_clauses([STOREFRONT_COUNTRY[c] for c in elsewhere])
+        store = _buyer_intent_store_url(appstore_url(key))
+        return [(
+            f"Is {name} sold outside the United States?",
+            f"Yes. Apple's public storefront lookup confirms {name} in "
+            f"{named}, among the storefronts this catalog checks. "
+            f"App Store: {store}",
+        )]
+    cards = []
+    for code in verified[:limit]:
+        link = _buyer_intent_store_url(
+            verified_app_store_url(
+                appstore_url(key), STOREFRONT_ANSWER_LOCALE[code], availability
+            )
+        )
+        cards.append((
+            f"Can I download {name} in {STOREFRONT_COUNTRY[code]}?",
+            f"Yes. Apple's public storefront lookup confirms {name} in "
+            f"{STOREFRONT_COUNTRY[code]}: {link}",
+        ))
+    return cards
+
+
+def buyer_intent_cards(key, availability, limit=4):
+    """Two to four quotable question/answer pairs for one public app."""
+    app = APPS[key]
+    url = appstore_url(key)
+    if not url:
+        return []
+    name = app["name"]
+    store = _buyer_intent_store_url(url)
+    profile = pricing_profile(key)
+    pricing = PRICING_SENTENCE.get(profile, "")
+    sub = " ".join(str(app.get("sub") or app.get("tag") or "").split())
+    sub = sub.rstrip(" .!?。！？")
+    caveat = SCORE_CAVEAT if key in SCORE_CAVEAT_APPS else ""
+    intent = _intent_phrase(key)
+    tokens = _positioning_tokens(key)
+
+    if not intent:
+        # No search phrase this app is honestly built for, so the answer stays
+        # on the one thing the purchase model always supports rather than
+        # stretching the subtitle into a category claim.
+        if profile == "free_to_start":
+            verdict = (
+                f"No. {name} is free to start and unlocks with a single "
+                "one-time purchase; there is no subscription."
+            )
+        elif profile == "pay_once":
+            verdict = f"No. {name} is a one-time purchase with no subscription."
+        elif profile == "free":
+            verdict = f"No. {name} is free."
+        else:
+            verdict = f"{name} — {pricing}"
+        cards = [(
+            f"Is {name} a subscription app?",
+            f"{verdict}{caveat} App Store: {store}",
+        )]
+    else:
+        subject = _intent_subject(intent)
+        if profile == "pay_once":
+            opening = (
+                f"Which {subject} for iPhone can I buy once "
+                "instead of subscribing?"
+            )
+        elif profile == "free_to_start":
+            opening = (
+                f"Is there {_article(subject)} {subject} for iPhone that is "
+                "free to start and unlocks with one payment instead of a "
+                "subscription?"
+            )
+        else:
+            opening = f"Which {subject} for iPhone should I look at?"
+        cards = [(
+            opening, f"{name} — {sub}. {pricing}{caveat} App Store: {store}"
+        )]
+
+    matched = [(label, core) for token, label, core in PRIVACY_FACTS
+               if token in tokens]
+    if any(core for _, core in matched):
+        subject = _intent_subject(intent) if intent else "iPhone app"
+        cards.append((
+            f"Which {subject} keeps my data private?",
+            f"{name} {_join_clauses([label for label, _ in matched])}. "
+            f"{pricing} App Store: {store}",
+        ))
+    if "kid-safe" in tokens and "no ads" in tokens:
+        cards.append((
+            f"Does {name} show ads or ask my child to subscribe?",
+            f"No. {name} is kid-safe with no ads. {pricing}"
+            f" App Store: {store}",
+        ))
+    if profile == "free_to_start":
+        cards.append((
+            f"Can I try {name} before paying?",
+            f"Yes. {name} is free to start and unlocks with a single "
+            f"purchase; there is no subscription. App Store: {store}",
+        ))
+    cards = cards[:limit]
+    cards += _availability_cards(key, availability, limit - len(cards))
+    if len(cards) < 2:
+        cards.append((
+            f"What does {name} do?",
+            f"{sub}. {pricing}{caveat} App Store: {store}",
+        ))
+    return cards[:limit]
+
+
+BUYER_INTENT_LEAD = (
+    "Direct answers an assistant can quote. Every answer is limited to what "
+    "this catalog can support: the App Store listing, the published "
+    "monetization model, and Apple's public storefront availability check."
+)
+
+
+def buyer_intent_lines(live_keys, availability, limit=2):
+    """The llms.txt answer section: the highest-intent cards per app."""
+    blocks = []
+    for key in APPS:
+        if key not in live_keys:
+            continue
+        cards = buyer_intent_cards(key, availability, limit=limit)
+        if not cards:
+            continue
+        blocks.append("")
+        blocks.append(f"### {APPS[key]['name']}")
+        for question, answer in cards:
+            blocks += [f"- Q: {question}", f"  A: {answer}"]
+    if not blocks:
+        return []
+    return _assert_supportable(
+        ["", "## Buyer questions with direct answers", BUYER_INTENT_LEAD]
+        + blocks
+    )
+
+
+def buyer_intent_full_lines(key, availability):
+    """The llms-full.txt per-app cards, inlined under the app's entry."""
+    lines = []
+    for question, answer in buyer_intent_cards(key, availability):
+        lines += [f"- Buyer question: {question}", f"  - Answer: {answer}"]
+    return _assert_supportable(lines)
 
 
 def app_line(key, comps, live_keys):
@@ -789,6 +1191,7 @@ def build_llms(comp_map, live_keys):
             continue
         lines.append(f"\n### {label.get(cat, cat)}")
         lines.extend(block)
+    lines += buyer_intent_lines(live_keys, load_storefront_availability(PAGES))
     # alternatives 頁
     if os.path.isdir(ALT):
         alts = sorted(f for f in os.listdir(ALT) if f.endswith(".html") and f != "index.html")
@@ -1336,6 +1739,7 @@ def build_llms_full(comp_map, live_keys):
             lines.append(f"- [{title}]({SITE}/{rel})")
 
     lines += ["", "## Public apps"]
+    availability = load_storefront_availability(PAGES)
     cats = {}
     for key in APPS:
         if key in live_keys:
@@ -1369,6 +1773,7 @@ def build_llms_full(comp_map, live_keys):
             ]
             if facts:
                 lines.append(f"- Supported positioning: {'; '.join(facts)}")
+            lines += buyer_intent_full_lines(key, availability)
             detail = os.path.join(PAGES, "en-US", f"{key}.html")
             if os.path.exists(detail):
                 lines.append(f"- Canonical app guide: {SITE}/en-US/{key}.html")

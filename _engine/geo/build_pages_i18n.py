@@ -2108,10 +2108,85 @@ def carry_over_link_hub_blocks(path, content):
     return content[:cut] + blocks + content[cut:]
 
 
+# The questions this site answers that people demonstrably type. Every other
+# shape we publish -- "<brand> alternative", "for <persona>", anything past
+# eight words -- measured D0/D1 in SEARCH_DEMAND_AUDIT.md, meaning nobody
+# searches it. These 23 measured D3/D4 and they are the only pages here with a
+# realistic chance of ranking, so the root index links them directly instead of
+# burying them behind an index of 1,800 siblings.
+#
+# Slugs only: a label is rendered from the file's own <title>, so a rewritten
+# page cannot end up with a stale description here, and a renamed or deleted
+# page drops out instead of 404ing.
+VERIFIED_DEMAND_ANSWERS = (
+    "how-much-does-a-passport-photo-cost",
+    "how-much-does-icloud-storage-cost",
+    "how-much-does-a-document-scanner-cost",
+    "how-much-does-a-resume-writing-service-cost",
+    "can-you-smile-in-a-passport-photo",
+    "can-you-wear-glasses-in-a-passport-photo",
+    "should-you-put-references-on-a-resume",
+    "should-i-send-my-resume-as-pdf-or-word",
+    "why-do-passport-photos-get-rejected-and-how-to-avoid-it",
+    "why-is-my-iphone-storage-always-full",
+    "what-is-the-difference-between-white-pink-and-brown-noise",
+    "best-passport-photo-app-app",
+    "best-pdf-scanner-app",
+    "best-expense-tracker-app",
+    "best-period-tracker-app-no-account-required-iphone",
+    "best-to-do-list-app",
+    "best-unblur-photo-app",
+    "best-white-noise-app-for-falling-asleep-no-subscription",
+    "how-to-fix-a-blurry-photo-on-iphone",
+    "how-to-reduce-pdf-file-size-on-iphone",
+    "how-to-scan-multiple-pages-into-one-pdf",
+    "how-to-delete-duplicate-photos-on-iphone-for-free",
+    "how-to-free-up-iphone-storage-fast",
+)
+
+_ANSWER_TITLE_RE = re.compile(r"<title>([^<]+)</title>", re.IGNORECASE)
+
+
+def verified_demand_links():
+    """<li> links for the measured-demand answers that actually exist on disk."""
+    items = []
+    for slug in VERIFIED_DEMAND_ANSWERS:
+        path = os.path.join(PAGES, "answers", f"{slug}.html")
+        try:
+            with open(path, encoding="utf-8") as fh:
+                head = fh.read(4096)
+        except OSError:
+            continue  # renamed or not built yet; skip rather than publish a 404
+        match = _ANSWER_TITLE_RE.search(head)
+        if not match:
+            continue
+        title = match.group(1).split(" | ")[0].split(" — ")[0].strip()
+        # Every answer title carries the same boilerplate tail. Twenty-three
+        # links all ending in the same eight words reads as generated filler,
+        # which is the impression this block exists to avoid, so the question
+        # is shown on its own.
+        title = re.sub(r":\s*honest iPhone app buying guide$", "", title,
+                       flags=re.IGNORECASE).strip(" :")
+        if title:
+            title = title[0].upper() + title[1:]
+        label = html.escape(title)
+        items.append(
+            f'      <li><a href="{SITE}/answers/{slug}.html">{label}</a></li>'
+        )
+    return items
+
+
 def build_root_index(locales):
     e = html.escape
     lang_links = "\n".join(
         f'    <li><a href="{lc}/index.html" hreflang="{lc}">{lc}</a></li>' for lc in locales)
+    demand_links = verified_demand_links()
+    answers_block = (
+        '<nav aria-label="Common questions">\n'
+        '    <h2>Questions people ask before buying</h2>\n    <ul>\n'
+        + "\n".join(demand_links)
+        + '\n    </ul>\n  </nav>'
+    ) if demand_links else ""
     idx = f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -2122,6 +2197,7 @@ def build_root_index(locales):
 </head><body><main>
   <h1>iOS Apps — choose your language</h1>
   <p><a href="{SITE}/apps/index.html">Browse all verified apps by category</a></p>
+  {answers_block}
   <nav aria-label="Sections">
     <ul>
       <li><a href="{SITE}/answers/index.html">Answers — buying guides by question</a></li>

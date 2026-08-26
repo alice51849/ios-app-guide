@@ -43,6 +43,27 @@ SOV = os.path.join(REPORTS, "aeo_sov.json")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 LOCALE_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$")
 CURATED_FALLBACK = {
+    # No SOV run exists for ShotInbox: aeo_sov.py calls OpenAI, which this
+    # portfolio does not use. Competitors were taken instead from the free
+    # iTunes Search API on 2026-08-26 -- the apps the App Store itself returns
+    # for "screenshot organizer", "screenshot manager" and "sort screenshots"
+    # -- keeping the strongest by rating count so the comparison is against
+    # apps people actually find.
+    "shotinbox": {
+        "key": "shotinbox",
+        "gap_queries": [
+            "best app to sort screenshots on iphone offline",
+            "screenshot organizer that reads text on device",
+            "app that turns screenshots into reminders and calendar events",
+            "screenshot cleaner that never deletes without asking",
+        ],
+        "top_competitors": [
+            ["Screenshot PRO", 0],
+            ["Captr", 0],
+            ["FlyScreen", 0],
+            ["Tote", 0],
+        ],
+    },
     "dailymate": {
         "key": "dailymate",
         "gap_queries": [

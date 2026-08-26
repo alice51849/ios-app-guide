@@ -510,6 +510,50 @@
       "verified_live": true
     },
     {
+      "key": "hourstag",
+      "app_store_id": "6754218117",
+      "name": "HoursTag",
+      "category": "finance",
+      "category_labels": {
+        "en": "Money & travel",
+        "zh-Hant": "理財與旅行"
+      },
+      "summaries": {
+        "en": "What does it really cost? Not in dollars — in hours of your life.",
+        "zh-Hant": "這真正要花你多少？不是多少錢——是你生命中的幾個小時。"
+      },
+      "purchase_model": "paid_upfront",
+      "purchase_labels": {
+        "en": "Paid download",
+        "zh-Hant": "付費下載"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "Private",
+        "No tracking"
+      ],
+      "keywords": [
+        "money mindset",
+        "budgeting",
+        "spending tracker",
+        "financial freedom",
+        "money tips",
+        "personal finance"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
+      "verified_live": true
+    },
+    {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
       "name": "HoursTag Lite",
@@ -556,50 +600,6 @@
         "apple_watch": true
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
-      "verified_live": true
-    },
-    {
-      "key": "hourstag",
-      "app_store_id": "6754218117",
-      "name": "HoursTag: Hours to Buy",
-      "category": "finance",
-      "category_labels": {
-        "en": "Money & travel",
-        "zh-Hant": "理財與旅行"
-      },
-      "summaries": {
-        "en": "What does it really cost? Not in dollars — in hours of your life.",
-        "zh-Hant": "這真正要花你多少？不是多少錢——是你生命中的幾個小時。"
-      },
-      "purchase_model": "paid_upfront",
-      "purchase_labels": {
-        "en": "Paid download",
-        "zh-Hant": "付費下載"
-      },
-      "one_time_option": true,
-      "features": [
-        "Pay once",
-        "Private",
-        "No tracking"
-      ],
-      "keywords": [
-        "money mindset",
-        "budgeting",
-        "spending tracker",
-        "financial freedom",
-        "money tips",
-        "personal finance"
-      ],
-      "capabilities": {
-        "offline": false,
-        "no_account": false,
-        "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": false,
-        "apple_watch": false
-      },
-      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
       "verified_live": true
     },
     {
@@ -1535,7 +1535,8 @@
         "organize screenshots",
         "screenshot organizer",
         "clean up screenshots",
-        "too many screenshots"
+        "too many screenshots",
+        "find text in screenshots"
       ],
       "capabilities": {
         "offline": false,

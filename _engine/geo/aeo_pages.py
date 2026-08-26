@@ -43,6 +43,30 @@ SOV = os.path.join(REPORTS, "aeo_sov.json")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 LOCALE_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$")
 CURATED_FALLBACK = {
+    # SaveTag went public 2026-08-26; no SOV run exists (aeo_sov.py calls
+    # OpenAI, which this portfolio does not use). Competitors come from the
+    # free iTunes Search API for "bookmark manager", "save links", "read
+    # later" and "link organizer", chosen for doing the same job.
+    #
+    # Collect by WeTransfer is the highest-rated result on those terms by a
+    # wide margin and is deliberately not here: it is a cloud moodboard for
+    # collaboration, not personal link filing. Instapaper and Readwise Reader
+    # are article readers -- the work is in the reading, not the sorting.
+    "savetag": {
+        "key": "savetag",
+        "gap_queries": [
+            "best app to save links from other apps on iphone",
+            "bookmark manager that files links automatically on device",
+            "read later app with no account and no cloud",
+            "save links app with a one time purchase instead of a subscription",
+        ],
+        "top_competitors": [
+            ["Albo", 0],
+            ["Raindrop.io", 0],
+            ["GoodLinks", 0],
+            ["Plinky", 0],
+        ],
+    },
     # No SOV run exists for ShotInbox: aeo_sov.py calls OpenAI, which this
     # portfolio does not use. Competitors come instead from the free iTunes
     # Search API on 2026-08-26 -- the apps the App Store itself returns for

@@ -2294,7 +2294,6 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "triggers": [
                 "sort screenshots",
                 "organize screenshots",
-                "organise screenshots",
                 "screenshot organizer",
                 "clean up screenshots",
                 "too many screenshots",

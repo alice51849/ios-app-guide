@@ -44,11 +44,16 @@ SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").
 LOCALE_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$")
 CURATED_FALLBACK = {
     # No SOV run exists for ShotInbox: aeo_sov.py calls OpenAI, which this
-    # portfolio does not use. Competitors were taken instead from the free
-    # iTunes Search API on 2026-08-26 -- the apps the App Store itself returns
-    # for "screenshot organizer", "screenshot manager" and "sort screenshots"
-    # -- keeping the strongest by rating count so the comparison is against
-    # apps people actually find.
+    # portfolio does not use. Competitors come instead from the free iTunes
+    # Search API on 2026-08-26 -- the apps the App Store itself returns for
+    # "screenshot organizer", "screenshot manager" and "sort screenshots".
+    #
+    # Chosen for what they do, not for rating count. The highest-rated results
+    # on those terms are screen recorders and screenshot *stitching* tools
+    # (Picsew, Tailor, Stitch It), which is a different job; comparing against
+    # them would be popular and wrong. Tote was dropped for the same reason --
+    # it is a general "save anything" app, and "Tote alternative" carries no
+    # screenshot intent at all.
     "shotinbox": {
         "key": "shotinbox",
         "gap_queries": [
@@ -61,7 +66,6 @@ CURATED_FALLBACK = {
             ["Screenshot PRO", 0],
             ["Captr", 0],
             ["FlyScreen", 0],
-            ["Tote", 0],
         ],
     },
     "dailymate": {

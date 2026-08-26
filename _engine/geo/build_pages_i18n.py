@@ -2130,7 +2130,7 @@ VERIFIED_DEMAND_ANSWERS = (
     "why-do-passport-photos-get-rejected-and-how-to-avoid-it",
     "why-is-my-iphone-storage-always-full",
     "what-is-the-difference-between-white-pink-and-brown-noise",
-    "best-passport-photo-app-app",
+    "best-passport-photo-app",
     "best-pdf-scanner-app",
     "best-expense-tracker-app",
     "best-period-tracker-app-no-account-required-iphone",

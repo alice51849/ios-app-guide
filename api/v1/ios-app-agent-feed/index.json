@@ -8,7 +8,7 @@
   "csv_url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-agent-feed/feed.csv",
   "schema_url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-agent-feed/feed.schema.json",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "dateModified": "2026-08-25",
+  "dateModified": "2026-08-26",
   "publisher": {
     "name": "Lumi Studio",
     "url": "https://alice51849.github.io/ios-app-guide/about.html"
@@ -18,8 +18,8 @@
   "enable_checkout": false,
   "checkout_note": "Purchase happens on the Apple App Store via app_store_url; this publisher operates no checkout endpoint.",
   "price_source": "Apple App Store public lookup snapshot",
-  "row_count": 2143,
-  "app_count": 43,
+  "row_count": 2193,
+  "app_count": 44,
   "locale_count": 50,
   "official_locale_count": 50,
   "locales": [
@@ -107,6 +107,7 @@
     "picclear",
     "scanto",
     "sereno",
+    "shotinbox",
     "snapport",
     "snapportlite",
     "sononote",
@@ -147,5 +148,5 @@
     "one_time_purchase",
     "subscription"
   ],
-  "content_digest": "sha256:994777ba4b9f87f7ab40b1523b19b412ade47e251384722ed3c93e0df73cd917"
+  "content_digest": "sha256:82d8368bd4ea6a1d78d3b3dd6e27e1f5c409d731b8a5887ac8fb8272936ecc4c"
 }

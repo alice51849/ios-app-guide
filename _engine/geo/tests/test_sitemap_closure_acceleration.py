@@ -183,7 +183,7 @@ class PublishedMatrixTests(unittest.TestCase):
         # the live set collapsing to a handful and making that pass vacuously.
         # Pinning the exact number meant every launch failed the daily run:
         # ShotInbox AI shipping on 2026-08-24 took it from 43 to 44.
-        self.assertGreaterEqual(len(keys), 40)
+        self.assertGreaterEqual(len(keys), len(APPSTORE) - 3)
         self.assertEqual(50, len(OFFICIAL_LOCALES))
         missing = [
             f"{locale}/{key}.html"

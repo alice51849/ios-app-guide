@@ -34,6 +34,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import datetime as _dt
 import hashlib
 import io
 import json
@@ -42,6 +43,7 @@ from pathlib import Path
 import html
 import re
 from typing import Any
+import email.utils
 import xml.sax.saxutils as saxutils
 
 import app_decision_matrix
@@ -393,6 +395,29 @@ def schema_payload() -> dict[str, Any]:
 # Same rows, same snapshot, three more shapes. Nothing new is asserted here:
 # every value below already appears in feed.jsonl.
 
+# schema.org publishes a closed vocabulary of ApplicationCategory values. The
+# feed's product_type is the constant "mobile application", which is not one of
+# them, so every entry was declaring a category no consumer can interpret.
+# Mapped from the registry's own category, which is what the store listing says.
+SCHEMA_APP_CATEGORY = {
+    "photo-utility": "MultimediaApplication",
+    "productivity": "BusinessApplication",
+    "health": "HealthApplication",
+    "finance": "FinanceApplication",
+    "kids": "EducationApplication",
+    "education": "EducationApplication",
+    "lifestyle": "LifestyleApplication",
+    "travel": "TravelApplication",
+    "sleep-sound": "HealthApplication",
+    "utility": "UtilitiesApplication",
+}
+
+
+def _schema_category(key):
+    from videogen.registry import APPS as _APPS
+    return SCHEMA_APP_CATEGORY.get(str(_APPS.get(key, {}).get("category") or ""), "")
+
+
 def _apps_in_base_locale(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """One row per app, preferring the base locale, in stable order."""
     best: dict[str, dict[str, Any]] = {}
@@ -421,7 +446,7 @@ def jsonld_payload(rows: list[dict[str, Any]], modified: str) -> dict[str, Any]:
             "@type": "MobileApplication",
             "name": row["title"],
             "description": row["description"],
-            "applicationCategory": row.get("product_type") or "",
+            "applicationCategory": _schema_category(key),
             "operatingSystem": "iOS",
             "url": row["app_store_url"],
             "image": row.get("image_link", ""),
@@ -439,6 +464,11 @@ def jsonld_payload(rows: list[dict[str, Any]], modified: str) -> dict[str, Any]:
         # so publishing one here would be inventing it.
         return {k: v for k, v in node.items() if v not in ("", [], None)}
 
+    # Bound before the literal: this used to be a walrus inside it, which was
+    # only correct because numberOfItems happened to be written above
+    # itemListElement. Reordering the keys would have silently turned the list
+    # into one entry per app *and locale*.
+    base_rows = _apps_in_base_locale(rows)
     return {
         "@context": "https://schema.org",
         "@type": "ItemList",
@@ -449,15 +479,26 @@ def jsonld_payload(rows: list[dict[str, Any]], modified: str) -> dict[str, Any]:
             "feed published alongside it."
         ),
         "url": page_url(),
-        "numberOfItems": len(rows := _apps_in_base_locale(rows)),
+        "numberOfItems": len(base_rows),
         "dateModified": modified,
         "license": LICENSE_URL,
         "provider": {"@type": "Organization", "name": BRAND, "url": f"{SITE}/about.html"},
         "itemListElement": [
             {"@type": "ListItem", "position": i, "item": application(row)}
-            for i, row in enumerate(rows, 1)
+            for i, row in enumerate(base_rows, 1)
         ],
     }
+
+
+def _rfc822(day: str) -> str:
+    """RSS 2.0 dates are RFC-822; a bare ISO day is not a valid value."""
+    try:
+        stamp = _dt.datetime.strptime(day, "%Y-%m-%d").replace(
+            tzinfo=_dt.timezone.utc
+        )
+    except ValueError:
+        stamp = _dt.datetime.now(_dt.timezone.utc)
+    return email.utils.format_datetime(stamp)
 
 
 def xml_text(rows: list[dict[str, Any]], modified: str) -> str:
@@ -468,6 +509,17 @@ def xml_text(rows: list[dict[str, Any]], modified: str) -> str:
     items = []
     for row in rows:
         entry = "    <item>\n"
+        # RSS 2.0 requires an item to carry at least a title or a description,
+        # and readers outside the merchant world do not know the g: namespace
+        # at all. Without these, a generic reader sees empty items -- which
+        # defeats the reason this file exists.
+        entry += tag("title", row["title"])
+        entry += tag("link", row["app_store_url"])
+        entry += tag("description", " ".join(str(row["description"]).split())[:5000])
+        entry += (
+            f'      <guid isPermaLink="false">'
+            f'{saxutils.escape(str(row["id"]))}</guid>\n'
+        )
         entry += tag("g:id", row["id"])
         entry += tag("g:item_group_id", row["item_group_id"])
         entry += tag("g:title", row["title"])
@@ -493,7 +545,7 @@ def xml_text(rows: list[dict[str, Any]], modified: str) -> str:
         "    <description>Every verified live iOS app, one entry per app and "
         "Apple storefront. Search-only: apps are purchased on the App Store."
         "</description>\n"
-        f"    <lastBuildDate>{modified}</lastBuildDate>\n"
+        f"    <lastBuildDate>{_rfc822(modified)}</lastBuildDate>\n"
         + "".join(items)
         + "  </channel>\n</rss>\n"
     )

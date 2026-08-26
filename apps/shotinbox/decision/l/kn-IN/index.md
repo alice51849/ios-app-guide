@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — ಒಂದೇ ಖರೀದಿ, ಜೀವಮಾನ ಬಳಕೆ | iOS App"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/kn-IN/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - ಫೋಟೋ ಮತ್ತು ಉಪಯೋಗ
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್
+- App Store · ಉಚಿತ
 
-[App Store ನಲ್ಲಿ ShotInbox AI: Sort Screenshots ಪಡೆಯಿರಿ](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_kn_in&mt=8)
+[App Store ನಲ್ಲಿ ShotInbox AI: Sort Screenshots ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_kn_in&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/shotinbox.html)
 

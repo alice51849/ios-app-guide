@@ -1,29 +1,29 @@
 {
   "site": "https://alice51849.github.io/ios-app-guide",
-  "total_pages": 59817,
-  "indexable_pages": 38556,
-  "indexable_reachable": 38556,
+  "total_pages": 60054,
+  "indexable_pages": 38793,
+  "indexable_reachable": 38793,
   "indexable_orphans": 0,
   "indexable_reachable_pct": 100.0,
-  "indexable_within_3_clicks": 38556,
+  "indexable_within_3_clicks": 38793,
   "indexable_within_3_clicks_pct": 100.0,
   "noindex_pages": 21261,
   "noindex_reachable_total": 16882,
   "noindex_orphans": 4379,
-  "reachable": 55438,
+  "reachable": 55675,
   "unreachable": 4379,
   "unreachable_indexable": 0,
   "unreachable_noindex_by_design": 4379,
-  "reachable_pct": 92.68,
-  "within_3_clicks": 55365,
-  "within_3_clicks_pct": 92.56,
-  "avg_depth_reachable": 2.904,
+  "reachable_pct": 92.71,
+  "within_3_clicks": 55602,
+  "within_3_clicks_pct": 92.59,
+  "avg_depth_reachable": 2.902,
   "max_depth": 5,
   "depth_distribution": {
     "0": 1,
-    "1": 89,
-    "2": 5251,
-    "3": 50024,
+    "1": 112,
+    "2": 5314,
+    "3": 50175,
     "4": 61,
     "5": 12
   },
@@ -32,320 +32,320 @@
   "broken_samples": {},
   "top_level": {
     "apps": {
-      "total": 3233,
-      "reachable": 3233,
+      "total": 3283,
+      "reachable": 3283,
       "unreachable": 0,
       "avg_depth": 2.98
     },
     "zh-Hant": {
-      "total": 1960,
-      "reachable": 1960,
+      "total": 1963,
+      "reachable": 1963,
       "unreachable": 0,
       "avg_depth": 2.97
     },
     "de-DE": {
-      "total": 1917,
-      "reachable": 1917,
+      "total": 1920,
+      "reachable": 1920,
       "unreachable": 0,
       "avg_depth": 2.97
     },
     "pt-BR": {
-      "total": 1909,
-      "reachable": 1909,
+      "total": 1912,
+      "reachable": 1912,
       "unreachable": 0,
       "avg_depth": 2.97
     },
     "es-ES": {
-      "total": 1904,
-      "reachable": 1904,
+      "total": 1907,
+      "reachable": 1907,
       "unreachable": 0,
       "avg_depth": 2.97
     },
     "fr-FR": {
-      "total": 1903,
-      "reachable": 1903,
+      "total": 1906,
+      "reachable": 1906,
       "unreachable": 0,
       "avg_depth": 2.97
     },
     "ja": {
-      "total": 1888,
-      "reachable": 1888,
+      "total": 1891,
+      "reachable": 1891,
       "unreachable": 0,
       "avg_depth": 2.97
     },
     "ko": {
-      "total": 1884,
-      "reachable": 1884,
+      "total": 1887,
+      "reachable": 1887,
       "unreachable": 0,
       "avg_depth": 2.97
     },
+    "answers": {
+      "total": 1880,
+      "reachable": 1880,
+      "unreachable": 0,
+      "avg_depth": 1.99
+    },
     "ms": {
-      "total": 1856,
-      "reachable": 1856,
+      "total": 1859,
+      "reachable": 1859,
       "unreachable": 0,
       "avg_depth": 2.97
     },
     "tr": {
-      "total": 1854,
-      "reachable": 1854,
+      "total": 1857,
+      "reachable": 1857,
       "unreachable": 0,
       "avg_depth": 2.97
     },
     "vi": {
+      "total": 1855,
+      "reachable": 1855,
+      "unreachable": 0,
+      "avg_depth": 2.97
+    },
+    "th": {
       "total": 1852,
       "reachable": 1852,
       "unreachable": 0,
       "avg_depth": 2.97
     },
-    "answers": {
-      "total": 1851,
-      "reachable": 1851,
-      "unreachable": 0,
-      "avg_depth": 2.0
-    },
-    "th": {
-      "total": 1849,
-      "reachable": 1849,
-      "unreachable": 0,
-      "avg_depth": 2.97
-    },
     "id": {
-      "total": 1847,
-      "reachable": 1847,
+      "total": 1850,
+      "reachable": 1850,
       "unreachable": 0,
       "avg_depth": 2.97
     },
     "ar-SA": {
-      "total": 1840,
-      "reachable": 1840,
+      "total": 1843,
+      "reachable": 1843,
       "unreachable": 0,
       "avg_depth": 2.97
     },
     "pt-PT": {
-      "total": 1791,
-      "reachable": 1791,
+      "total": 1794,
+      "reachable": 1794,
       "unreachable": 0,
       "avg_depth": 2.97
     },
     "en-AU": {
-      "total": 497,
-      "reachable": 497,
+      "total": 500,
+      "reachable": 500,
       "unreachable": 0,
       "avg_depth": 2.9
     },
     "en-CA": {
-      "total": 497,
-      "reachable": 497,
+      "total": 500,
+      "reachable": 500,
       "unreachable": 0,
       "avg_depth": 2.9
     },
     "en-GB": {
-      "total": 497,
-      "reachable": 497,
+      "total": 500,
+      "reachable": 500,
       "unreachable": 0,
       "avg_depth": 2.9
     },
     "en-US": {
-      "total": 449,
-      "reachable": 449,
+      "total": 452,
+      "reachable": 452,
       "unreachable": 0,
       "avg_depth": 2.89
     },
     "zh-Hans": {
-      "total": 435,
-      "reachable": 435,
+      "total": 438,
+      "reachable": 438,
       "unreachable": 0,
       "avg_depth": 2.88
     },
     "hi": {
-      "total": 362,
-      "reachable": 362,
+      "total": 365,
+      "reachable": 365,
       "unreachable": 0,
       "avg_depth": 2.86
     },
     "pl": {
-      "total": 346,
-      "reachable": 346,
+      "total": 349,
+      "reachable": 349,
       "unreachable": 0,
-      "avg_depth": 2.86
+      "avg_depth": 2.85
     },
     "ru": {
-      "total": 346,
-      "reachable": 346,
+      "total": 349,
+      "reachable": 349,
       "unreachable": 0,
-      "avg_depth": 2.86
+      "avg_depth": 2.85
     },
     "sv": {
-      "total": 335,
-      "reachable": 335,
+      "total": 338,
+      "reachable": 338,
       "unreachable": 0,
       "avg_depth": 2.85
     },
     "uk": {
-      "total": 317,
-      "reachable": 317,
+      "total": 320,
+      "reachable": 320,
       "unreachable": 0,
       "avg_depth": 2.84
     },
     "nl-NL": {
-      "total": 312,
-      "reachable": 312,
+      "total": 315,
+      "reachable": 315,
       "unreachable": 0,
       "avg_depth": 2.84
     },
     "it": {
-      "total": 288,
-      "reachable": 288,
+      "total": 291,
+      "reachable": 291,
       "unreachable": 0,
       "avg_depth": 2.83
     },
     "cs": {
-      "total": 266,
-      "reachable": 266,
+      "total": 269,
+      "reachable": 269,
       "unreachable": 0,
-      "avg_depth": 2.82
+      "avg_depth": 2.81
     },
     "da": {
-      "total": 266,
-      "reachable": 266,
+      "total": 269,
+      "reachable": 269,
       "unreachable": 0,
-      "avg_depth": 2.82
+      "avg_depth": 2.81
     },
     "fi": {
-      "total": 266,
-      "reachable": 266,
+      "total": 269,
+      "reachable": 269,
       "unreachable": 0,
-      "avg_depth": 2.82
+      "avg_depth": 2.81
     },
     "es-MX": {
-      "total": 245,
-      "reachable": 245,
+      "total": 248,
+      "reachable": 248,
       "unreachable": 0,
       "avg_depth": 2.8
     },
     "ca": {
-      "total": 237,
-      "reachable": 237,
+      "total": 240,
+      "reachable": 240,
       "unreachable": 0,
       "avg_depth": 2.79
     },
     "el": {
-      "total": 237,
-      "reachable": 237,
+      "total": 240,
+      "reachable": 240,
       "unreachable": 0,
       "avg_depth": 2.79
     },
     "he": {
-      "total": 237,
-      "reachable": 237,
+      "total": 240,
+      "reachable": 240,
       "unreachable": 0,
       "avg_depth": 2.79
     },
     "hr": {
-      "total": 237,
-      "reachable": 237,
+      "total": 240,
+      "reachable": 240,
       "unreachable": 0,
       "avg_depth": 2.79
     },
     "hu": {
-      "total": 237,
-      "reachable": 237,
+      "total": 240,
+      "reachable": 240,
       "unreachable": 0,
       "avg_depth": 2.79
     },
     "ro": {
-      "total": 237,
-      "reachable": 237,
+      "total": 240,
+      "reachable": 240,
       "unreachable": 0,
       "avg_depth": 2.79
     },
     "sk": {
-      "total": 237,
-      "reachable": 237,
+      "total": 240,
+      "reachable": 240,
       "unreachable": 0,
       "avg_depth": 2.79
     },
     "no": {
-      "total": 219,
-      "reachable": 219,
+      "total": 222,
+      "reachable": 222,
       "unreachable": 0,
-      "avg_depth": 2.78
+      "avg_depth": 2.77
     },
     "gu-IN": {
-      "total": 216,
-      "reachable": 216,
+      "total": 219,
+      "reachable": 219,
       "unreachable": 0,
       "avg_depth": 2.77
     },
     "kn-IN": {
-      "total": 216,
-      "reachable": 216,
+      "total": 219,
+      "reachable": 219,
       "unreachable": 0,
       "avg_depth": 2.77
     },
     "ml-IN": {
-      "total": 216,
-      "reachable": 216,
+      "total": 219,
+      "reachable": 219,
       "unreachable": 0,
       "avg_depth": 2.77
     },
     "mr-IN": {
-      "total": 216,
-      "reachable": 216,
+      "total": 219,
+      "reachable": 219,
       "unreachable": 0,
       "avg_depth": 2.77
     },
     "or-IN": {
-      "total": 216,
-      "reachable": 216,
+      "total": 219,
+      "reachable": 219,
       "unreachable": 0,
       "avg_depth": 2.77
     },
     "pa-IN": {
-      "total": 216,
-      "reachable": 216,
+      "total": 219,
+      "reachable": 219,
       "unreachable": 0,
       "avg_depth": 2.77
     },
     "sl-SI": {
-      "total": 216,
-      "reachable": 216,
+      "total": 219,
+      "reachable": 219,
       "unreachable": 0,
       "avg_depth": 2.77
     },
     "te-IN": {
-      "total": 215,
-      "reachable": 215,
+      "total": 218,
+      "reachable": 218,
       "unreachable": 0,
       "avg_depth": 2.77
     },
     "alternatives": {
-      "total": 213,
-      "reachable": 213,
+      "total": 217,
+      "reachable": 217,
       "unreachable": 0,
       "avg_depth": 2.0
     },
     "ta-IN": {
-      "total": 209,
-      "reachable": 209,
+      "total": 212,
+      "reachable": 212,
       "unreachable": 0,
       "avg_depth": 2.76
     },
     "bn-BD": {
-      "total": 198,
-      "reachable": 198,
+      "total": 201,
+      "reachable": 201,
       "unreachable": 0,
       "avg_depth": 2.75
     },
     "ur-PK": {
-      "total": 197,
-      "reachable": 197,
+      "total": 200,
+      "reachable": 200,
       "unreachable": 0,
       "avg_depth": 2.75
     },
     "fr-CA": {
-      "total": 170,
-      "reachable": 170,
+      "total": 173,
+      "reachable": 173,
       "unreachable": 0,
       "avg_depth": 2.71
     },
@@ -368,10 +368,10 @@
       "avg_depth": 1.98
     },
     "guides": {
-      "total": 54,
-      "reachable": 54,
+      "total": 55,
+      "reachable": 55,
       "unreachable": 0,
-      "avg_depth": 2.06
+      "avg_depth": 2.07
     },
     "it-IT": {
       "total": 52,
@@ -398,14 +398,14 @@
       "avg_depth": 1.98
     },
     "hubs": {
-      "total": 44,
-      "reachable": 44,
+      "total": 45,
+      "reachable": 45,
       "unreachable": 0,
       "avg_depth": 1.98
     },
     "stories": {
-      "total": 44,
-      "reachable": 44,
+      "total": 45,
+      "reachable": 45,
       "unreachable": 0,
       "avg_depth": 1.98
     },
@@ -6247,17 +6247,17 @@
       "unreachable": 0,
       "avg_depth": 1.86
     },
+    "api": {
+      "total": 6,
+      "reachable": 6,
+      "unreachable": 0,
+      "avg_depth": 2.0
+    },
     "bundle": {
       "total": 6,
       "reachable": 6,
       "unreachable": 0,
       "avg_depth": 1.83
-    },
-    "api": {
-      "total": 5,
-      "reachable": 5,
-      "unreachable": 0,
-      "avg_depth": 1.8
     },
     "pl-PL": {
       "total": 5,
@@ -6383,5 +6383,5 @@
     "https://alice51849.github.io/ios-app-guide/af-ZA/best-for/iphone-best-app-photo-hide-af-za.html",
     "https://alice51849.github.io/ios-app-guide/af-ZA/best-for/iphone-best-app-scan-offline-af-za.html"
   ],
-  "read_mb": 940.4
+  "read_mb": 945.8
 }

@@ -4,9 +4,9 @@
   "name": "Lumi Studio App Install Decision Routes",
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.json",
-  "dateModified": "2026-08-25",
-  "content_digest": "6f8d90427385ad1e14d876d97e559b960f33b5bdec6c81c14e66496ec1d3c75f",
-  "generation_digest": "30f4c01740975923c24083ecd9b9d73fac68f00f6a1851403c0d1646df0b564d",
+  "dateModified": "2026-08-26",
+  "content_digest": "47d9acb11c396f3d796d7cc217cd3b54876ac59d03c54d41e00bb7189edb562b",
+  "generation_digest": "6ad0f42aa76a8c009d22736a235bacb4fa72aa1925022213ad9abc1bf9af3a15",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -2081,7 +2081,8 @@
       "device_labels": [],
       "badge_labels": [
         "الصورة والأدوات",
-        "بدء مجاني · فتح دائم"
+        "بدء مجاني · فتح دائم",
+        "App Store · مجاني"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/ar-SA/index.html",
@@ -2089,9 +2090,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ar-SA.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_ar_sa&mt=8",
+      "app_store_url": "https://apps.apple.com/sa/app/id6802166527?pt=118326163&ct=iag_data_ar_sa&mt=8",
       "app_store_cta_label": "احصل على ShotInbox AI: Sort Screenshots من App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SAR",
+        "formatted_price": "مجاني"
+      },
       "guide_cta_label": "اقرأ الدليل الكامل",
       "publisher_disclosure": "هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -4318,7 +4323,8 @@
       "device_labels": [],
       "badge_labels": [
         "ছবি ও ইউটিলিটি",
-        "বিনামূল্যে শুরু · আজীবন আনলক"
+        "বিনামূল্যে শুরু · আজীবন আনলক",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/bn-BD/index.html",
@@ -4326,9 +4332,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে ShotInbox AI: Sort Screenshots ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -6555,7 +6565,8 @@
       "device_labels": [],
       "badge_labels": [
         "Fotografia i utilitat",
-        "Inici gratuït · desbloqueig de per vida"
+        "Inici gratuït · desbloqueig de per vida",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/ca/index.html",
@@ -6563,9 +6574,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ca.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_ca&mt=8",
+      "app_store_url": "https://apps.apple.com/es/app/id6802166527?pt=118326163&ct=iag_data_ca&mt=8",
       "app_store_cta_label": "Descarrega ShotInbox AI: Sort Screenshots a l’App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Llegeix la guia completa",
       "publisher_disclosure": "Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -8792,7 +8807,8 @@
       "device_labels": [],
       "badge_labels": [
         "Fotografie a nástroje",
-        "Zdarma na začátek · doživotní odemknutí"
+        "Zdarma na začátek · doživotní odemknutí",
+        "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/cs/index.html",
@@ -8800,9 +8816,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/cs.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_cs&mt=8",
+      "app_store_url": "https://apps.apple.com/cz/app/id6802166527?pt=118326163&ct=iag_data_cs&mt=8",
       "app_store_cta_label": "Stáhněte si ShotInbox AI: Sort Screenshots v App Storu",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CZK",
+        "formatted_price": "Zdarma"
+      },
       "guide_cta_label": "Přečtěte si celý průvodce",
       "publisher_disclosure": "Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -11029,7 +11049,8 @@
       "device_labels": [],
       "badge_labels": [
         "Foto & værktøj",
-        "Gratis at komme i gang · permanent oplåsning"
+        "Gratis at komme i gang · permanent oplåsning",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/da/index.html",
@@ -11037,9 +11058,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6802166527?pt=118326163&ct=iag_data_da&mt=8",
       "app_store_cta_label": "Hent ShotInbox AI: Sort Screenshots i App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "DKK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Læs hele vejledningen",
       "publisher_disclosure": "Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -13219,7 +13244,8 @@
       "device_labels": [],
       "badge_labels": [
         "Foto & Dienstprogramm",
-        "Kostenloser Einstieg · dauerhafte Freischaltung"
+        "Kostenloser Einstieg · dauerhafte Freischaltung",
+        "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/de-DE/index.html",
@@ -13227,9 +13253,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/de-DE.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_de_de&mt=8",
+      "app_store_url": "https://apps.apple.com/de/app/id6802166527?pt=118326163&ct=iag_data_de_de&mt=8",
       "app_store_cta_label": "ShotInbox AI: Sort Screenshots im App Store laden",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Kostenlos"
+      },
       "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
       "publisher_disclosure": "Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -15509,7 +15539,8 @@
       "device_labels": [],
       "badge_labels": [
         "Φωτογραφία & βοηθητικά",
-        "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής"
+        "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/el/index.html",
@@ -15517,9 +15548,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/el.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_el&mt=8",
+      "app_store_url": "https://apps.apple.com/gr/app/id6802166527?pt=118326163&ct=iag_data_el&mt=8",
       "app_store_cta_label": "Αποκτήστε το ShotInbox AI: Sort Screenshots από το App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -17749,7 +17784,8 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · one-time unlock"
+        "Free to start · one-time unlock",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/en-AU/index.html",
@@ -17757,9 +17793,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6802166527?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get ShotInbox AI: Sort Screenshots on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "AUD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -19986,7 +20026,8 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · one-time unlock"
+        "Free to start · one-time unlock",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/en-CA/index.html",
@@ -19994,9 +20035,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-CA.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_en_ca&mt=8",
+      "app_store_url": "https://apps.apple.com/ca/app/id6802166527?pt=118326163&ct=iag_data_en_ca&mt=8",
       "app_store_cta_label": "Get ShotInbox AI: Sort Screenshots on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -22226,7 +22271,8 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · one-time unlock"
+        "Free to start · one-time unlock",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/en-GB/index.html",
@@ -22234,9 +22280,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-GB.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_en_gb&mt=8",
+      "app_store_url": "https://apps.apple.com/gb/app/id6802166527?pt=118326163&ct=iag_data_en_gb&mt=8",
       "app_store_cta_label": "Get ShotInbox AI: Sort Screenshots on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -24475,7 +24525,8 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utility",
-        "Free to start · one-time unlock"
+        "Free to start · one-time unlock",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/en-US/index.html",
@@ -24483,9 +24534,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-US.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_en_us&mt=8",
+      "app_store_url": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=iag_data_en_us&mt=8",
       "app_store_cta_label": "Get ShotInbox AI: Sort Screenshots on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -26715,7 +26770,8 @@
       "device_labels": [],
       "badge_labels": [
         "Foto y utilidad",
-        "Gratis para empezar · desbloqueo permanente"
+        "Gratis para empezar · desbloqueo permanente",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/es-ES/index.html",
@@ -26723,9 +26779,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/es-ES.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_es_es&mt=8",
+      "app_store_url": "https://apps.apple.com/es/app/id6802166527?pt=118326163&ct=iag_data_es_es&mt=8",
       "app_store_cta_label": "Consigue ShotInbox AI: Sort Screenshots en el App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -28952,7 +29012,8 @@
       "device_labels": [],
       "badge_labels": [
         "Foto y utilidad",
-        "Gratis para empezar · desbloqueo permanente"
+        "Gratis para empezar · desbloqueo permanente",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/es-MX/index.html",
@@ -28960,9 +29021,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/es-MX.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "app_store_url": "https://apps.apple.com/mx/app/id6802166527?pt=118326163&ct=iag_data_es_mx&mt=8",
       "app_store_cta_label": "Consigue ShotInbox AI: Sort Screenshots en el App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MXN",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -31189,7 +31254,8 @@
       "device_labels": [],
       "badge_labels": [
         "Kuva & apuohjelma",
-        "Ilmainen aloitus · elinikäinen avaus"
+        "Ilmainen aloitus · elinikäinen avaus",
+        "App Store · Ilmainen"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/fi/index.html",
@@ -31197,9 +31263,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fi.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_fi&mt=8",
+      "app_store_url": "https://apps.apple.com/fi/app/id6802166527?pt=118326163&ct=iag_data_fi&mt=8",
       "app_store_cta_label": "Lataa ShotInbox AI: Sort Screenshots App Storesta",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen"
+      },
       "guide_cta_label": "Lue koko opas",
       "publisher_disclosure": "Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -33426,7 +33496,8 @@
       "device_labels": [],
       "badge_labels": [
         "Photo et utilitaire",
-        "Gratuit au départ · déverrouillage définitif"
+        "Gratuit au départ · déverrouillage définitif",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/fr-CA/index.html",
@@ -33434,9 +33505,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-CA.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_fr_ca&mt=8",
+      "app_store_url": "https://apps.apple.com/ca/app/id6802166527?pt=118326163&ct=iag_data_fr_ca&mt=8",
       "app_store_cta_label": "Obtenir ShotInbox AI: Sort Screenshots sur l'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque app listée.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -35663,7 +35738,8 @@
       "device_labels": [],
       "badge_labels": [
         "Photo & utilitaire",
-        "Gratuit au départ · déverrouillage définitif"
+        "Gratuit au départ · déverrouillage définitif",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/fr-FR/index.html",
@@ -35671,9 +35747,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-FR.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_fr_fr&mt=8",
+      "app_store_url": "https://apps.apple.com/fr/app/id6802166527?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "app_store_cta_label": "Obtenir ShotInbox AI: Sort Screenshots sur l'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque application répertoriée.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -37900,7 +37980,8 @@
       "device_labels": [],
       "badge_labels": [
         "ફોટો અને ઉપયોગિતા",
-        "મફત શરૂઆત · કાયમી અનલૉક"
+        "મફત શરૂઆત · કાયમી અનલૉક",
+        "App Store · મફત"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/gu-IN/index.html",
@@ -37908,9 +37989,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/gu-IN.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_gu_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_gu_in&mt=8",
       "app_store_cta_label": "App Store પરથી ShotInbox AI: Sort Screenshots મેળવો",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "મફત"
+      },
       "guide_cta_label": "પૂર્ણ માર્ગદર્શિકા વાંચો",
       "publisher_disclosure": "આ સામગ્રી Lumi Studio દ્વારા સીધી પ્રકાશિત કરવામાં આવી છે, જે સૂચિબદ્ધ તમામ એપ્સનો વિકાસકર્તા છે.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -40137,7 +40222,8 @@
       "device_labels": [],
       "badge_labels": [
         "צילום וכלי עזר",
-        "התחלה ללא תשלום · פתיחה לכל החיים"
+        "התחלה ללא תשלום · פתיחה לכל החיים",
+        "App Store · בחינם"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/he/index.html",
@@ -40145,9 +40231,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/he.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_he&mt=8",
+      "app_store_url": "https://apps.apple.com/il/app/id6802166527?pt=118326163&ct=iag_data_he&mt=8",
       "app_store_cta_label": "הורידו את ShotInbox AI: Sort Screenshots מה-App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "ILS",
+        "formatted_price": "בחינם"
+      },
       "guide_cta_label": "קרא את המדריך המלא",
       "publisher_disclosure": "זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -42374,7 +42464,8 @@
       "device_labels": [],
       "badge_labels": [
         "फोटो और उपयोगिता",
-        "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक"
+        "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक",
+        "App Store · मुफ़्त"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/hi/index.html",
@@ -42382,9 +42473,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hi.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_hi&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_hi&mt=8",
       "app_store_cta_label": "App Store पर ShotInbox AI: Sort Screenshots पाएँ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मुफ़्त"
+      },
       "guide_cta_label": "पूरा मार्गदर्शक पढ़ें",
       "publisher_disclosure": "यह सामग्री सीधे Lumi Studio ने प्रकाशित की है, जो सूचीबद्ध सभी ऐप का डेवलपर है।",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -44611,7 +44706,8 @@
       "device_labels": [],
       "badge_labels": [
         "Fotografija i pomoćni alati",
-        "Besplatno za početak · doživotno otključavanje"
+        "Besplatno za početak · doživotno otključavanje",
+        "App Store · Besplatno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/hr/index.html",
@@ -44619,9 +44715,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6802166527?pt=118326163&ct=iag_data_hr&mt=8",
       "app_store_cta_label": "Preuzmite ShotInbox AI: Sort Screenshots u App Storeu",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno"
+      },
       "guide_cta_label": "Pročitajte cijeli vodič",
       "publisher_disclosure": "Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -46848,7 +46948,8 @@
       "device_labels": [],
       "badge_labels": [
         "Fotó & segédprogram",
-        "Ingyenes kezdés · életre szóló feloldás"
+        "Ingyenes kezdés · életre szóló feloldás",
+        "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/hu/index.html",
@@ -46856,9 +46957,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6802166527?pt=118326163&ct=iag_data_hu&mt=8",
       "app_store_cta_label": "Töltse le a(z) ShotInbox AI: Sort Screenshots appot az App Store-ból",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "HUF",
+        "formatted_price": "Ingyenes"
+      },
       "guide_cta_label": "Olvasd el a teljes útmutatót",
       "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -49085,7 +49190,8 @@
       "device_labels": [],
       "badge_labels": [
         "Foto & utilitas",
-        "Gratis untuk mulai · buka kunci permanen"
+        "Gratis untuk mulai · buka kunci permanen",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/id/index.html",
@@ -49093,9 +49199,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/id.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_id&mt=8",
+      "app_store_url": "https://apps.apple.com/id/app/id6802166527?pt=118326163&ct=iag_data_id&mt=8",
       "app_store_cta_label": "Dapatkan ShotInbox AI: Sort Screenshots di App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "IDR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -51328,7 +51438,8 @@
       "device_labels": [],
       "badge_labels": [
         "Foto e utilità",
-        "Gratis per iniziare · sblocco permanente"
+        "Gratis per iniziare · sblocco permanente",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/it/index.html",
@@ -51336,9 +51447,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6802166527?pt=118326163&ct=iag_data_it&mt=8",
       "app_store_cta_label": "Scarica ShotInbox AI: Sort Screenshots sull'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Leggi la guida completa",
       "publisher_disclosure": "Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -53574,7 +53689,8 @@
       "device_labels": [],
       "badge_labels": [
         "写真・ユーティリティ",
-        "無料で開始・買い切りで永久解除"
+        "無料で開始・買い切りで永久解除",
+        "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/ja/index.html",
@@ -53582,9 +53698,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ja.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_ja&mt=8",
+      "app_store_url": "https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=iag_data_ja&mt=8",
       "app_store_cta_label": "App Store で ShotInbox AI: Sort Screenshots を入手",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料"
+      },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -55811,7 +55931,8 @@
       "device_labels": [],
       "badge_labels": [
         "ಫೋಟೋ ಮತ್ತು ಉಪಯೋಗ",
-        "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್"
+        "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್",
+        "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/kn-IN/index.html",
@@ -55819,9 +55940,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/kn-IN.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_kn_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_kn_in&mt=8",
       "app_store_cta_label": "App Store ನಲ್ಲಿ ShotInbox AI: Sort Screenshots ಪಡೆಯಿರಿ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ಉಚಿತ"
+      },
       "guide_cta_label": "ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ",
       "publisher_disclosure": "ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -58048,7 +58173,8 @@
       "device_labels": [],
       "badge_labels": [
         "사진 & 유틸리티",
-        "무료로 시작 · 한 번 구매 잠금 해제"
+        "무료로 시작 · 한 번 구매 잠금 해제",
+        "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/ko/index.html",
@@ -58056,9 +58182,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=iag_data_ko&mt=8",
       "app_store_cta_label": "App Store에서 ShotInbox AI: Sort Screenshots 받기",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료"
+      },
       "guide_cta_label": "전체 안내서 읽기",
       "publisher_disclosure": "이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -60285,7 +60415,8 @@
       "device_labels": [],
       "badge_labels": [
         "ഫോട്ടോ & ഉപകരണം",
-        "സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്"
+        "സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്",
+        "App Store · സൗജന്യം"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/ml-IN/index.html",
@@ -60293,9 +60424,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ml-IN.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_ml_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_ml_in&mt=8",
       "app_store_cta_label": "App Store-ൽ നിന്ന് ShotInbox AI: Sort Screenshots നേടൂ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം"
+      },
       "guide_cta_label": "പൂർണ്ണ ഗൈഡ് വായിക്കുക",
       "publisher_disclosure": "ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -62522,7 +62657,8 @@
       "device_labels": [],
       "badge_labels": [
         "फोटो आणि उपयुक्तता",
-        "सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक"
+        "सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक",
+        "App Store · मोफत"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/mr-IN/index.html",
@@ -62530,9 +62666,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/mr-IN.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_mr_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_mr_in&mt=8",
       "app_store_cta_label": "App Store वरून ShotInbox AI: Sort Screenshots मिळवा",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मोफत"
+      },
       "guide_cta_label": "संपूर्ण मार्गदर्शक वाचा",
       "publisher_disclosure": "हे Lumi Studio कडून प्रकाशित केलेले प्रथम पक्ष साहित्य आहे, जे प्रत्येक सूचीबद्ध अॅपचे विकसक आहे.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -64759,7 +64899,8 @@
       "device_labels": [],
       "badge_labels": [
         "Foto & utiliti",
-        "Percuma untuk bermula · buka kunci kekal"
+        "Percuma untuk bermula · buka kunci kekal",
+        "App Store · Percuma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/ms/index.html",
@@ -64767,9 +64908,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ms.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_ms&mt=8",
+      "app_store_url": "https://apps.apple.com/my/app/id6802166527?pt=118326163&ct=iag_data_ms&mt=8",
       "app_store_cta_label": "Dapatkan ShotInbox AI: Sort Screenshots di App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MYR",
+        "formatted_price": "Percuma"
+      },
       "guide_cta_label": "Baca panduan penuh",
       "publisher_disclosure": "Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -66996,7 +67141,8 @@
       "device_labels": [],
       "badge_labels": [
         "Foto & hulpmiddel",
-        "Gratis te starten · levenslange ontgrendeling"
+        "Gratis te starten · levenslange ontgrendeling",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/nl-NL/index.html",
@@ -67004,9 +67150,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/nl-NL.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_nl_nl&mt=8",
+      "app_store_url": "https://apps.apple.com/nl/app/id6802166527?pt=118326163&ct=iag_data_nl_nl&mt=8",
       "app_store_cta_label": "Download ShotInbox AI: Sort Screenshots in de App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lees de volledige gids",
       "publisher_disclosure": "Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -69233,7 +69383,8 @@
       "device_labels": [],
       "badge_labels": [
         "Foto og verktøy",
-        "Gratis å starte · livstidsopplåsing"
+        "Gratis å starte · livstidsopplåsing",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/no/index.html",
@@ -69241,9 +69392,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/no.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_no&mt=8",
+      "app_store_url": "https://apps.apple.com/no/app/id6802166527?pt=118326163&ct=iag_data_no&mt=8",
       "app_store_cta_label": "Last ned ShotInbox AI: Sort Screenshots fra App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "NOK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -71470,7 +71625,8 @@
       "device_labels": [],
       "badge_labels": [
         "ଫଟୋ ଏବଂ ସାଧନ",
-        "ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍"
+        "ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍",
+        "App Store · ମାଗଣା"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/or-IN/index.html",
@@ -71478,9 +71634,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/or-IN.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_or_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_or_in&mt=8",
       "app_store_cta_label": "App Store ରୁ ShotInbox AI: Sort Screenshots ପାଆନ୍ତୁ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ମାଗଣା"
+      },
       "guide_cta_label": "ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ",
       "publisher_disclosure": "ଏହା Lumi Studio ଦ୍ୱାରା ପ୍ରକାଶିତ ପ୍ରଥମ-ପକ୍ଷ ସାମଗ୍ରୀ, ଯାହାରେ ସମସ୍ତ ତାଲିକାଭୁକ୍ତ ଆପ୍ସର ବିକାଶକ ଅଛନ୍ତି।",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -73707,7 +73867,8 @@
       "device_labels": [],
       "badge_labels": [
         "ਫੋਟੋ ਅਤੇ ਯੂਟਿਲਿਟੀ",
-        "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ"
+        "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ",
+        "App Store · ਮੁਫ਼ਤ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/pa-IN/index.html",
@@ -73715,9 +73876,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pa-IN.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_pa_in&mt=8",
       "app_store_cta_label": "App Store ਤੋਂ ShotInbox AI: Sort Screenshots ਪ੍ਰਾਪਤ ਕਰੋ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ਮੁਫ਼ਤ"
+      },
       "guide_cta_label": "ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ",
       "publisher_disclosure": "ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -75944,7 +76109,8 @@
       "device_labels": [],
       "badge_labels": [
         "Zdjęcia i narzędzia",
-        "Darmowe na start · dożywotni dostęp"
+        "Darmowe na start · dożywotni dostęp",
+        "App Store · Bezpłatnie"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/pl/index.html",
@@ -75952,9 +76118,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pl.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_pl&mt=8",
+      "app_store_url": "https://apps.apple.com/pl/app/id6802166527?pt=118326163&ct=iag_data_pl&mt=8",
       "app_store_cta_label": "Pobierz ShotInbox AI: Sort Screenshots z App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PLN",
+        "formatted_price": "Bezpłatnie"
+      },
       "guide_cta_label": "Przeczytaj pełny przewodnik",
       "publisher_disclosure": "Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -78184,7 +78354,8 @@
       "device_labels": [],
       "badge_labels": [
         "Foto e utilidade",
-        "Grátis para começar · desbloqueio permanente"
+        "Grátis para começar · desbloqueio permanente",
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/pt-BR/index.html",
@@ -78192,9 +78363,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-BR.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_pt_br&mt=8",
+      "app_store_url": "https://apps.apple.com/br/app/id6802166527?pt=118326163&ct=iag_data_pt_br&mt=8",
       "app_store_cta_label": "Baixe ShotInbox AI: Sort Screenshots na App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis"
+      },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, desenvolvedora de todos os apps apresentados.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -80421,7 +80596,8 @@
       "device_labels": [],
       "badge_labels": [
         "Fotografia e utilidade",
-        "Grátis para começar · desbloqueio permanente"
+        "Grátis para começar · desbloqueio permanente",
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/pt-PT/index.html",
@@ -80429,9 +80605,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-PT.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_pt_pt&mt=8",
+      "app_store_url": "https://apps.apple.com/pt/app/id6802166527?pt=118326163&ct=iag_data_pt_pt&mt=8",
       "app_store_cta_label": "Baixe ShotInbox AI: Sort Screenshots na App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Grátis"
+      },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, que desenvolve todas as apps apresentadas.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -82658,7 +82838,8 @@
       "device_labels": [],
       "badge_labels": [
         "Fotografie & utilitate",
-        "Început gratuit · deblocare pe viață"
+        "Început gratuit · deblocare pe viață",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/ro/index.html",
@@ -82666,9 +82847,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6802166527?pt=118326163&ct=iag_data_ro&mt=8",
       "app_store_cta_label": "Descarcă ShotInbox AI: Sort Screenshots din App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RON",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Citește ghidul complet",
       "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -84895,7 +85080,8 @@
       "device_labels": [],
       "badge_labels": [
         "Фото и инструменты",
-        "Бесплатно начать · разблокировка за одну покупку"
+        "Бесплатно начать · разблокировка за одну покупку",
+        "App Store · Бесплатно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/ru/index.html",
@@ -84903,9 +85089,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ru.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_ru&mt=8",
+      "app_store_url": "https://apps.apple.com/ru/app/id6802166527?pt=118326163&ct=iag_data_ru&mt=8",
       "app_store_cta_label": "Установить ShotInbox AI: Sort Screenshots в App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RUB",
+        "formatted_price": "Бесплатно"
+      },
       "guide_cta_label": "Прочитать полное руководство",
       "publisher_disclosure": "Это материал, созданный Lumi Studio, разработчиком всех перечисленных приложений.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -87132,7 +87322,8 @@
       "device_labels": [],
       "badge_labels": [
         "Fotografia a nástroje",
-        "Zadarmo na začiatok · doživotné odomknutie"
+        "Zadarmo na začiatok · doživotné odomknutie",
+        "App Store · Zadarmo"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/sk/index.html",
@@ -87140,9 +87331,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6802166527?pt=118326163&ct=iag_data_sk&mt=8",
       "app_store_cta_label": "Stiahnuť ShotInbox AI: Sort Screenshots v App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Zadarmo"
+      },
       "guide_cta_label": "Prečítať celý sprievodca",
       "publisher_disclosure": "Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -89369,7 +89564,8 @@
       "device_labels": [],
       "badge_labels": [
         "Fotografija in pripomočki",
-        "Brezplačen začetek · doživljenjska odklenitev"
+        "Brezplačen začetek · doživljenjska odklenitev",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/sl-SI/index.html",
@@ -89377,9 +89573,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sl-SI.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_sl_si&mt=8",
+      "app_store_url": "https://apps.apple.com/si/app/id6802166527?pt=118326163&ct=iag_data_sl_si&mt=8",
       "app_store_cta_label": "Prenesite ShotInbox AI: Sort Screenshots iz trgovine App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -91609,7 +91809,8 @@
       "device_labels": [],
       "badge_labels": [
         "Foto & verktyg",
-        "Gratis att börja · livstidsupplåsning"
+        "Gratis att börja · livstidsupplåsning",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/sv/index.html",
@@ -91617,9 +91818,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6802166527?pt=118326163&ct=iag_data_sv&mt=8",
       "app_store_cta_label": "Hämta ShotInbox AI: Sort Screenshots i App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SEK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Läs hela guiden",
       "publisher_disclosure": "Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -93849,7 +94054,8 @@
       "device_labels": [],
       "badge_labels": [
         "புகைப்படம் & பயன்பாடு",
-        "இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்"
+        "இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்",
+        "App Store · இலவசம்"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/ta-IN/index.html",
@@ -93857,9 +94063,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ta-IN.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_ta_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_ta_in&mt=8",
       "app_store_cta_label": "App Store-இல் ShotInbox AI: Sort Screenshots-ஐப் பெறுங்கள்",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "இலவசம்"
+      },
       "guide_cta_label": "முழு வழிகாட்டியை படிக்கவும்",
       "publisher_disclosure": "இது Lumi Studio வெளியிட்ட முதல்-பார்ட்டி தரவு, இது பட்டியலிடப்பட்ட ஒவ்வொரு செயலியின் உருவாக்குநர்.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -96086,7 +96296,8 @@
       "device_labels": [],
       "badge_labels": [
         "ఫోటో & ఉపకరణం",
-        "ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్"
+        "ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్",
+        "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/te-IN/index.html",
@@ -96094,9 +96305,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/te-IN.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_te_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_te_in&mt=8",
       "app_store_cta_label": "App Store నుంచి ShotInbox AI: Sort Screenshots పొందండి",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ఉచితం"
+      },
       "guide_cta_label": "పూర్తి మార్గదర్శకాన్ని చదవండి",
       "publisher_disclosure": "ఇది Lumi Studio ద్వారా ప్రచురించబడిన స్వంత సంస్థ పదార్థం, ప్రతి జాబితా చేయబడిన యాప్ యొక్క అభివృద్ధికర్త.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -98326,7 +98541,8 @@
       "device_labels": [],
       "badge_labels": [
         "รูปภาพ & เครื่องมือ",
-        "เริ่มใช้ฟรี · ปลดล็อกถาวร"
+        "เริ่มใช้ฟรี · ปลดล็อกถาวร",
+        "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/th/index.html",
@@ -98334,9 +98550,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/th.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_th&mt=8",
+      "app_store_url": "https://apps.apple.com/th/app/id6802166527?pt=118326163&ct=iag_data_th&mt=8",
       "app_store_cta_label": "ดาวน์โหลด ShotInbox AI: Sort Screenshots บน App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี"
+      },
       "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
       "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -100563,7 +100783,8 @@
       "device_labels": [],
       "badge_labels": [
         "Fotoğraf & yardımcı",
-        "Başlangıçta ücretsiz · ömür boyu açma"
+        "Başlangıçta ücretsiz · ömür boyu açma",
+        "App Store · Ücretsiz"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/tr/index.html",
@@ -100571,9 +100792,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/tr.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_tr&mt=8",
+      "app_store_url": "https://apps.apple.com/tr/app/id6802166527?pt=118326163&ct=iag_data_tr&mt=8",
       "app_store_cta_label": "ShotInbox AI: Sort Screenshots uygulamasını App Store'dan al",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TRY",
+        "formatted_price": "Ücretsiz"
+      },
       "guide_cta_label": "Kılavuzun tamamını oku",
       "publisher_disclosure": "Bu, listelenen her uygulamanın geliştiricisi Lumi Studio tarafından yayımlanan birinci taraf materyaldir.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -102800,7 +103025,8 @@
       "device_labels": [],
       "badge_labels": [
         "Фото та утиліти",
-        "Безкоштовно для початку · довічне розблокування"
+        "Безкоштовно для початку · довічне розблокування",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/uk/index.html",
@@ -102808,9 +103034,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/uk.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_uk&mt=8",
+      "app_store_url": "https://apps.apple.com/ua/app/id6802166527?pt=118326163&ct=iag_data_uk&mt=8",
       "app_store_cta_label": "Завантажте ShotInbox AI: Sort Screenshots з App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -105037,7 +105267,8 @@
       "device_labels": [],
       "badge_labels": [
         "تصویر اور سہولت",
-        "مفت آغاز · مستقل ان لاک"
+        "مفت آغاز · مستقل ان لاک",
+        "App Store · مفت"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/ur-PK/index.html",
@@ -105045,9 +105276,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ur-PK.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_ur_pk&mt=8",
+      "app_store_url": "https://apps.apple.com/pk/app/id6802166527?pt=118326163&ct=iag_data_ur_pk&mt=8",
       "app_store_cta_label": "App Store سے ShotInbox AI: Sort Screenshots حاصل کریں",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PKR",
+        "formatted_price": "مفت"
+      },
       "guide_cta_label": "مکمل رہنمائی پڑھیں",
       "publisher_disclosure": "یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -107274,7 +107509,8 @@
       "device_labels": [],
       "badge_labels": [
         "Ảnh & tiện ích",
-        "Bắt đầu miễn phí · mở khóa vĩnh viễn"
+        "Bắt đầu miễn phí · mở khóa vĩnh viễn",
+        "App Store · Miễn phí"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/vi/index.html",
@@ -107282,9 +107518,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/vi.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_vi&mt=8",
+      "app_store_url": "https://apps.apple.com/vn/app/id6802166527?pt=118326163&ct=iag_data_vi&mt=8",
       "app_store_cta_label": "Tải ShotInbox AI: Sort Screenshots trên App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "VND",
+        "formatted_price": "Miễn phí"
+      },
       "guide_cta_label": "Đọc toàn bộ hướng dẫn",
       "publisher_disclosure": "Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -109476,7 +109716,8 @@
       "device_labels": [],
       "badge_labels": [
         "照片与工具",
-        "免费开始使用 · 永久解锁"
+        "免费开始使用 · 永久解锁",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/zh-Hans/index.html",
@@ -109484,9 +109725,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hans.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "app_store_url": "https://apps.apple.com/cn/app/id6802166527?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "app_store_cta_label": "在 App Store 获取 ShotInbox AI: Sort Screenshots",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
       "source_persona_query": "best app to sort screenshots on iphone offline",
@@ -111776,7 +112021,8 @@
       "device_labels": [],
       "badge_labels": [
         "照片與實用工具",
-        "免費開始 · 一次購買解鎖"
+        "免費開始 · 一次購買解鎖",
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/zh-Hant/index.html",
@@ -111784,9 +112030,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=iag_data_zh_hant&mt=8",
       "app_store_cta_label": "在 App Store 取得 ShotInbox AI: Sort Screenshots",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
       "source_persona_query": "best app to sort screenshots on iphone offline",

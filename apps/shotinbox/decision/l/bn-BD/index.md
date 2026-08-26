@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — একবার কিনুন, আজীবন ব্যবহার | iOS App"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/bn-BD/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - ছবি ও ইউটিলিটি
 - বিনামূল্যে শুরু · আজীবন আনলক
+- App Store · বিনামূল্যে
 
-[App Store থেকে ShotInbox AI: Sort Screenshots ডাউনলোড করুন](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে ShotInbox AI: Sort Screenshots ডাউনলোড করুন](https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/shotinbox.html)
 

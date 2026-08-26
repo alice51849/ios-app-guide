@@ -2,7 +2,7 @@
 title: "G+Money Lite — Расходы, бюджет и валюта | iOS App"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ru/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

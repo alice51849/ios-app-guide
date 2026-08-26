@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ro",
-  "dateModified": "2026-08-25",
-  "content_digest": "6f8d90427385ad1e14d876d97e559b960f33b5bdec6c81c14e66496ec1d3c75f",
-  "generation_digest": "30f4c01740975923c24083ecd9b9d73fac68f00f6a1851403c0d1646df0b564d",
+  "dateModified": "2026-08-26",
+  "content_digest": "47d9acb11c396f3d796d7cc217cd3b54876ac59d03c54d41e00bb7189edb562b",
+  "generation_digest": "6ad0f42aa76a8c009d22736a235bacb4fa72aa1925022213ad9abc1bf9af3a15",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -1769,7 +1769,8 @@
       "device_labels": [],
       "badge_labels": [
         "Fotografie & utilitate",
-        "Început gratuit · deblocare pe viață"
+        "Început gratuit · deblocare pe viață",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/ro/index.html",
@@ -1777,9 +1778,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6802166527?pt=118326163&ct=iag_data_ro&mt=8",
       "app_store_cta_label": "Descarcă ShotInbox AI: Sort Screenshots din App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RON",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Citește ghidul complet",
       "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
       "source_persona_query": "best app to sort screenshots on iphone offline",

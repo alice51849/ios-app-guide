@@ -2,7 +2,7 @@
 title: "meilleure application de création de CV pour reconversion professionnelle 2026"
 lang: "fr-FR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/fr-FR/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

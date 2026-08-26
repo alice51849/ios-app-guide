@@ -2,7 +2,7 @@
 title: "കുട്ടികൾക്കുള്ള മികച്ച വിദ്യാഭ്യാസ ഗെയിം ആപ്പ് പരസ്യരഹിതം iPhone-ൽ"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/ml-IN/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

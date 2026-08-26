@@ -2,7 +2,7 @@
 title: "iPhone ପାଇଁ ସର୍ବୋତ୍ତମ ଟ୍ରାଭେଲ୍ ବଜେଟ୍ ଟ୍ରାକର୍ ଆପ୍ କୌଣସି ସଦସ୍ୟତା ନାହିଁ"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/or-IN/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

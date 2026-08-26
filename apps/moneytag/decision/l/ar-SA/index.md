@@ -2,7 +2,7 @@
 title: "MoneyTag: الدخل والمصروفات — المشاريع · الوسوم · التقرير | iOS App"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ar-SA/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

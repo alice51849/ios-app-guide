@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Tal i dag — 50 sprog, ægte dialoger | iOS App"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/da/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

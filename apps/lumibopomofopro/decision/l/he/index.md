@@ -2,7 +2,7 @@
 title: "אפליקציית Zhuyin מלאה לילדים דו-לשוניים"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/he/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

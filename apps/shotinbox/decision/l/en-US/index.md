@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — OCR Search & Photo Cleaner | iOS App"
 lang: "en-US"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/en-US/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ Your Screenshots, Sorted Find, act on, and clear every screenshot. The latest 50
 
 - Photo & utility
 - Free to start · one-time unlock
+- App Store · Free
 
-[Get ShotInbox AI: Sort Screenshots on the App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_en_us&mt=8)
+[Get ShotInbox AI: Sort Screenshots on the App Store](https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=iag_data_en_us&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-US/shotinbox.html)
 

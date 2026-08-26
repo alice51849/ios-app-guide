@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — Органайзер знімків екрана | iOS App"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/uk/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - Фото та утиліти
 - Безкоштовно для початку · довічне розблокування
+- App Store · Безкоштовно
 
-[Завантажте ShotInbox AI: Sort Screenshots з App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_uk&mt=8)
+[Завантажте ShotInbox AI: Sort Screenshots з App Store](https://apps.apple.com/ua/app/id6802166527?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/shotinbox.html)
 

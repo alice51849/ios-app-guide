@@ -2,7 +2,7 @@
 title: "nejlepší aplikace na sledování menstruace bez nutnosti účtu pro iPhone"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/cs/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

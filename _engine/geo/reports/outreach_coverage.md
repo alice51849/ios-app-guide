@@ -1,8 +1,8 @@
-# Zero-cost outreach coverage — 2026-08-25
+# Zero-cost outreach coverage — 2026-08-26
 
 > Factual owned-asset coverage only. This does not pretend to measure live AI recommendations.
 
-Public apps: **43** · Average coverage: **100.0%**
+Public apps: **44** · Average coverage: **100.0%**
 
 | App | Coverage | Answers | Social languages | Alternatives | Hub / guide / story |
 |---|---:|---:|---:|---:|---|
@@ -39,6 +39,7 @@ Public apps: **43** · Average coverage: **100.0%**
 | PicClear | 100.0% | 59/59 | 4 | 5 | hub / guide / story |
 | ScanTo Pro | 100.0% | 66/66 | 7 | 5 | hub / guide / story |
 | Sereno | 100.0% | 58/58 | 5 | 5 | hub / guide / story |
+| ShotInbox AI | 100.0% | 17/17 | 3 | 4 | hub / guide / story |
 | Snapport | 100.0% | 154/154 | 9 | 5 | hub / guide / story |
 | Snapport Lite | 100.0% | 17/17 | 3 | 5 | hub / guide / story |
 | Sono Note | 100.0% | 57/57 | 3 | 5 | hub / guide / story |

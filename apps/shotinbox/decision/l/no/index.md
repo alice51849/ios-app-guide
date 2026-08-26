@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — Finn og organiser skjermbilder | iOS App"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/no/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ Skjermbildene dine, sortert Finn, håndter og rydd hvert skjermbilde. De nyeste 
 
 - Foto og verktøy
 - Gratis å starte · livstidsopplåsing
+- App Store · Gratis
 
-[Last ned ShotInbox AI: Sort Screenshots fra App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_no&mt=8)
+[Last ned ShotInbox AI: Sort Screenshots fra App Store](https://apps.apple.com/no/app/id6802166527?pt=118326163&ct=iag_data_no&mt=8)
 
 [Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/shotinbox.html)
 

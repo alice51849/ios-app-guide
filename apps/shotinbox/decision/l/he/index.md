@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — רכישה אחת, ללא מינוי | iOS App"
 lang: "he"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/he/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - צילום וכלי עזר
 - התחלה ללא תשלום · פתיחה לכל החיים
+- App Store · בחינם
 
-[הורידו את ShotInbox AI: Sort Screenshots מה-App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_he&mt=8)
+[הורידו את ShotInbox AI: Sort Screenshots מה-App Store](https://apps.apple.com/il/app/id6802166527?pt=118326163&ct=iag_data_he&mt=8)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/shotinbox.html)
 

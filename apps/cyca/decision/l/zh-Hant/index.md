@@ -2,7 +2,7 @@
 title: "最佳無需帳號的生理期追蹤應用程式 iPhone"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/zh-Hant/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

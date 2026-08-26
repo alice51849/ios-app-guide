@@ -2,7 +2,7 @@
 title: "แอปเรียนศัพท์สำหรับคนเดินทางที่ใช้ Apple Watch ที่ดีที่สุด"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/th/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"

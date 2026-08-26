@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "mr-IN",
-  "dateModified": "2026-08-25",
-  "content_digest": "6f8d90427385ad1e14d876d97e559b960f33b5bdec6c81c14e66496ec1d3c75f",
-  "generation_digest": "30f4c01740975923c24083ecd9b9d73fac68f00f6a1851403c0d1646df0b564d",
+  "dateModified": "2026-08-26",
+  "content_digest": "47d9acb11c396f3d796d7cc217cd3b54876ac59d03c54d41e00bb7189edb562b",
+  "generation_digest": "6ad0f42aa76a8c009d22736a235bacb4fa72aa1925022213ad9abc1bf9af3a15",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -1769,7 +1769,8 @@
       "device_labels": [],
       "badge_labels": [
         "फोटो आणि उपयुक्तता",
-        "सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक"
+        "सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक",
+        "App Store · मोफत"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/shotinbox.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/mr-IN/index.html",
@@ -1777,9 +1778,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/mr-IN.json",
       "app_store_id": "6802166527",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_mr_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_mr_in&mt=8",
       "app_store_cta_label": "App Store वरून ShotInbox AI: Sort Screenshots मिळवा",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मोफत"
+      },
       "guide_cta_label": "संपूर्ण मार्गदर्शक वाचा",
       "publisher_disclosure": "हे Lumi Studio कडून प्रकाशित केलेले प्रथम पक्ष साहित्य आहे, जे प्रत्येक सूचीबद्ध अॅपचे विकसक आहे.",
       "source_persona_query": "best app to sort screenshots on iphone offline",

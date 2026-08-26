@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-25",
-  "content_digest": "f94f64dfb84cfe62ed63711799322a1030dac9c651a8f9154743624724ad4756",
+  "date_modified": "2026-08-26",
+  "content_digest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
   "locale": "nl-NL",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -493,6 +493,45 @@
       }
     },
     {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite",
+      "summary": "HoursTag Lite - De echte prijs van dingen",
+      "category": "finance",
+      "search_terms": [
+        "besparen",
+        "budget",
+        "uitgaven",
+        "sparen",
+        "financiën",
+        "geld besparen",
+        "impulsaankopen",
+        "geld",
+        "minder uitgeven",
+        "werkuren"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6794039979?pt=118326163&ct=iag_api_nl_nl&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/hourstaglite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6794039979"
+      }
+    },
+    {
       "key": "hourstag",
       "app_store_id": "6754218117",
       "name": "HoursTag: Uren om te kopen",
@@ -547,45 +586,6 @@
         "currency": "EUR",
         "formatted_price": "€ 5,99",
         "storefront_url": "https://apps.apple.com/nl/app/id6754218117"
-      }
-    },
-    {
-      "key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
-      "summary": "HoursTag Lite - De echte prijs van dingen",
-      "category": "finance",
-      "search_terms": [
-        "besparen",
-        "budget",
-        "uitgaven",
-        "sparen",
-        "financiën",
-        "geld besparen",
-        "impulsaankopen",
-        "geld",
-        "minder uitgeven",
-        "werkuren"
-      ],
-      "purchase_model": "free_with_lifetime_unlock",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": false,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
-      },
-      "app_store_url": "https://apps.apple.com/nl/app/id6794039979?pt=118326163&ct=iag_api_nl_nl&mt=8",
-      "guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/hourstaglite.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "0",
-        "currency": "EUR",
-        "formatted_price": "Gratis",
-        "storefront_url": "https://apps.apple.com/nl/app/id6794039979"
       }
     },
     {
@@ -1659,9 +1659,15 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_api_nl_nl&mt=8",
+      "app_store_url": "https://apps.apple.com/nl/app/id6802166527?pt=118326163&ct=iag_api_nl_nl&mt=8",
       "guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/shotinbox.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6802166527"
+      }
     },
     {
       "key": "snapport",

@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — Löydä ja järjestä näyttökuvat | iOS App"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/fi/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ Näyttökuvat järjestykseen Löydä, hoida ja siivoa jokainen näyttökuva. Uus
 
 - Kuva & apuohjelma
 - Ilmainen aloitus · elinikäinen avaus
+- App Store · Ilmainen
 
-[Lataa ShotInbox AI: Sort Screenshots App Storesta](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_fi&mt=8)
+[Lataa ShotInbox AI: Sort Screenshots App Storesta](https://apps.apple.com/fi/app/id6802166527?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/shotinbox.html)
 

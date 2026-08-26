@@ -2,7 +2,7 @@
 title: "करिअर बदलणाऱ्यांसाठी सर्वोत्तम रिझ्युमे बिल्डर अॅप २०२६"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/mr-IN/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

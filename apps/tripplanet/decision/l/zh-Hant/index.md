@@ -2,7 +2,7 @@
 title: "適合家庭旅遊孩子的最佳旅遊活動 App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/zh-Hant/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

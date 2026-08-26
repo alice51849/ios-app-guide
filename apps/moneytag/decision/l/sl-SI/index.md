@@ -2,7 +2,7 @@
 title: "MoneyTag: Prihodki in stroški — Projekti · Oznake · Poročilo | iOS App"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/sl-SI/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

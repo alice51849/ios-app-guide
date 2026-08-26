@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — Orden je schermafbeeldingen | iOS App"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/nl-NL/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ Je screenshots, netjes geordend Vind, verwerk en ruim elk screenshot op. De nieu
 
 - Foto & hulpmiddel
 - Gratis te starten · levenslange ontgrendeling
+- App Store · Gratis
 
-[Download ShotInbox AI: Sort Screenshots in de App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download ShotInbox AI: Sort Screenshots in de App Store](https://apps.apple.com/nl/app/id6802166527?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/shotinbox.html)
 

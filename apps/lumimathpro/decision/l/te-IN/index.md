@@ -2,7 +2,7 @@
 title: "ప్రీ-స్కూల్ మరియు ప్రారంభ తరగతులకు ఉత్తమ పూర్తి గణిత అభ్యాస యాప్"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/te-IN/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

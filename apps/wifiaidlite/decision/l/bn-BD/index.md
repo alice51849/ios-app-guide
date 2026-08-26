@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — নেট সমস্যা খুঁজে সমাধান করুন | iOS App"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/bn-BD/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

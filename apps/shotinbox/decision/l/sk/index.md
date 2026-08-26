@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — Organizér snímok obrazovky | iOS App"
 lang: "sk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/sk/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,8 +15,9 @@ Vaše snímky, prehľadne Nájdite, vybavte a upracte každú snímku. Najnovš�
 
 - Fotografia a nástroje
 - Zadarmo na začiatok · doživotné odomknutie
+- App Store · Zadarmo
 
-[Stiahnuť ShotInbox AI: Sort Screenshots v App Store](https://apps.apple.com/app/id6802166527?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnuť ShotInbox AI: Sort Screenshots v App Store](https://apps.apple.com/sk/app/id6802166527?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/shotinbox.html)
 

@@ -2,7 +2,7 @@
 title: "mejor app de clima para ayudar a padres a planear tiempo al aire libre con niños"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/es-MX/index.html"
-modified: "2026-08-25"
+modified: "2026-08-26"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

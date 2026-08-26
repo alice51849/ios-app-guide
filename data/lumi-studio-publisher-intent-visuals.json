@@ -10,8 +10,8 @@
     "url": "https://alice51849.github.io/ios-app-guide"
   },
   "source_dataset": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "content_digest": "d85b98c683a2b5d9543b8b17cd0bc32ba450e4a0b3249082246ae2c4513fe520",
-  "generation_digest": "9d4a898ca7cf6cdd0e28890f96fa131d9391d75561950cc3bf220ca60fc74aa6",
+  "content_digest": "653f8ecd5d534e0c719c7f66a7ebd584b871a9d40070830165d1da786af392a0",
+  "generation_digest": "977732e185a19fa26b6b0f7072b94050ef8652339b2e05ecbce30c0608ebf40f",
   "ordering": "official_locale_order_then_alphabetical_app_name",
   "app_count": 44,
   "locale_count": 50,
@@ -142,16 +142,6 @@
     },
     {
       "locale": "ar-SA",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ar-SA/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ar-SA/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
-      "app_store_url": "https://apps.apple.com/sa/app/id6754218117?pt=118326163&ct=iag_visual_ar_sa&mt=8",
-      "sha256": "4ca801113c4e12f1d87464ab31af3ae3343715ac899aceaa15452ebefdc9e809"
-    },
-    {
-      "locale": "ar-SA",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ar-SA/hourstaglite.svg",
@@ -159,6 +149,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6794039979?pt=118326163&ct=iag_visual_ar_sa&mt=8",
       "sha256": "3bd523f11fff2a717e2c1df43306ab24ccb3213efdc8042d7b8a297756c5c512"
+    },
+    {
+      "locale": "ar-SA",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ar-SA/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+      "app_store_url": "https://apps.apple.com/sa/app/id6754218117?pt=118326163&ct=iag_visual_ar_sa&mt=8",
+      "sha256": "4ca801113c4e12f1d87464ab31af3ae3343715ac899aceaa15452ebefdc9e809"
     },
     {
       "locale": "ar-SA",
@@ -582,16 +582,6 @@
     },
     {
       "locale": "bn-BD",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/bn-BD/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/hourstag.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "91d23606a9da5f429da4c56b6f039fa35783cc92dc97a9b83d7e79df32514958"
-    },
-    {
-      "locale": "bn-BD",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/hourstaglite.svg",
@@ -599,6 +589,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_bn_bd&mt=8",
       "sha256": "a64de79ea1c46711a8612345693812bd3843dd66633a7032ed23a94dc7b606ae"
+    },
+    {
+      "locale": "bn-BD",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/hourstag.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_bn_bd&mt=8",
+      "sha256": "91d23606a9da5f429da4c56b6f039fa35783cc92dc97a9b83d7e79df32514958"
     },
     {
       "locale": "bn-BD",
@@ -1022,16 +1022,6 @@
     },
     {
       "locale": "ca",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ca/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/hourstag.html",
-      "app_store_url": "https://apps.apple.com/es/app/id6754218117?pt=118326163&ct=iag_visual_ca&mt=8",
-      "sha256": "ebeaa3dd64368bfb5e80d17862cf1195442d83e8c341223d25969acd4c177924"
-    },
-    {
-      "locale": "ca",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/hourstaglite.svg",
@@ -1039,6 +1029,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=iag_visual_ca&mt=8",
       "sha256": "3451d15684c157ef902004b5b5adbf0cd522cbf832a5f9b86e1961e4a4c2e09a"
+    },
+    {
+      "locale": "ca",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/hourstag.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6754218117?pt=118326163&ct=iag_visual_ca&mt=8",
+      "sha256": "ebeaa3dd64368bfb5e80d17862cf1195442d83e8c341223d25969acd4c177924"
     },
     {
       "locale": "ca",
@@ -1462,16 +1462,6 @@
     },
     {
       "locale": "cs",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/cs/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/hourstag.html",
-      "app_store_url": "https://apps.apple.com/cz/app/id6754218117?pt=118326163&ct=iag_visual_cs&mt=8",
-      "sha256": "70caf7b710b8b3be7b8abcf47bc51c1d94176922926e7cb5c1fd0252d573dfc3"
-    },
-    {
-      "locale": "cs",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/hourstaglite.svg",
@@ -1479,6 +1469,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/cz/app/id6794039979?pt=118326163&ct=iag_visual_cs&mt=8",
       "sha256": "ce5db360abb3fd633627261fd5c8f988f6794e6bb5e1bf153e3dd37f98c532ae"
+    },
+    {
+      "locale": "cs",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/hourstag.html",
+      "app_store_url": "https://apps.apple.com/cz/app/id6754218117?pt=118326163&ct=iag_visual_cs&mt=8",
+      "sha256": "70caf7b710b8b3be7b8abcf47bc51c1d94176922926e7cb5c1fd0252d573dfc3"
     },
     {
       "locale": "cs",
@@ -1902,16 +1902,6 @@
     },
     {
       "locale": "da",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/da/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/hourstag.html",
-      "app_store_url": "https://apps.apple.com/dk/app/id6754218117?pt=118326163&ct=iag_visual_da&mt=8",
-      "sha256": "5012710362bc7db09afa8ce718603cdbe0b05c7bc0a5555e2b71c81cfc4f2935"
-    },
-    {
-      "locale": "da",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/hourstaglite.svg",
@@ -1919,6 +1909,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/dk/app/id6794039979?pt=118326163&ct=iag_visual_da&mt=8",
       "sha256": "2a2bb6cdcc9d65a3f7a0d48fc8eba0ea01fd2f8efefe72e5a262cedbb69be31b"
+    },
+    {
+      "locale": "da",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/hourstag.html",
+      "app_store_url": "https://apps.apple.com/dk/app/id6754218117?pt=118326163&ct=iag_visual_da&mt=8",
+      "sha256": "5012710362bc7db09afa8ce718603cdbe0b05c7bc0a5555e2b71c81cfc4f2935"
     },
     {
       "locale": "da",
@@ -2342,16 +2342,6 @@
     },
     {
       "locale": "de-DE",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/de-DE/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
-      "app_store_url": "https://apps.apple.com/de/app/id6754218117?pt=118326163&ct=iag_visual_de_de&mt=8",
-      "sha256": "552a2d96e49bbdc7239b1d9710f3dda2a93fcc31a41d99bfdd595fd126836521"
-    },
-    {
-      "locale": "de-DE",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/hourstaglite.svg",
@@ -2359,6 +2349,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "app_store_url": "https://apps.apple.com/de/app/id6794039979?pt=118326163&ct=iag_visual_de_de&mt=8",
       "sha256": "b480d5c5017f90bab395953703b6ed3666bf8a474ae11371f02f9322523d02ba"
+    },
+    {
+      "locale": "de-DE",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+      "app_store_url": "https://apps.apple.com/de/app/id6754218117?pt=118326163&ct=iag_visual_de_de&mt=8",
+      "sha256": "552a2d96e49bbdc7239b1d9710f3dda2a93fcc31a41d99bfdd595fd126836521"
     },
     {
       "locale": "de-DE",
@@ -2782,16 +2782,6 @@
     },
     {
       "locale": "el",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/el/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/hourstag.html",
-      "app_store_url": "https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=iag_visual_el&mt=8",
-      "sha256": "dbfd83cc4bad16ad0643c39e6ab3abe9c04d6ad116530076fee50de237d2bb79"
-    },
-    {
-      "locale": "el",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/hourstaglite.svg",
@@ -2799,6 +2789,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=iag_visual_el&mt=8",
       "sha256": "30ab4cf953f549851ebaa8db1c3115249e1925d82305eb9841f0f6d7bd466a89"
+    },
+    {
+      "locale": "el",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/hourstag.html",
+      "app_store_url": "https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=iag_visual_el&mt=8",
+      "sha256": "dbfd83cc4bad16ad0643c39e6ab3abe9c04d6ad116530076fee50de237d2bb79"
     },
     {
       "locale": "el",
@@ -3222,16 +3222,6 @@
     },
     {
       "locale": "en-AU",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-AU/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/hourstag.html",
-      "app_store_url": "https://apps.apple.com/au/app/id6754218117?pt=118326163&ct=iag_visual_en_au&mt=8",
-      "sha256": "b9abe09d1b86ed31f2978e0fccfb981e960f83247a18da8f42ea50cee7b87627"
-    },
-    {
-      "locale": "en-AU",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/hourstaglite.svg",
@@ -3239,6 +3229,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/au/app/id6794039979?pt=118326163&ct=iag_visual_en_au&mt=8",
       "sha256": "b7bf7b66b0288db13fd6f8394408ef888035be3910cfb024986042a926af6cde"
+    },
+    {
+      "locale": "en-AU",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/hourstag.html",
+      "app_store_url": "https://apps.apple.com/au/app/id6754218117?pt=118326163&ct=iag_visual_en_au&mt=8",
+      "sha256": "b9abe09d1b86ed31f2978e0fccfb981e960f83247a18da8f42ea50cee7b87627"
     },
     {
       "locale": "en-AU",
@@ -3662,16 +3662,6 @@
     },
     {
       "locale": "en-CA",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-CA/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/hourstag.html",
-      "app_store_url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_visual_en_ca&mt=8",
-      "sha256": "8b66a3a137386541b30ef51219a518d6499fbb6fe9ee352b022720576871f6a7"
-    },
-    {
-      "locale": "en-CA",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/hourstaglite.svg",
@@ -3679,6 +3669,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=iag_visual_en_ca&mt=8",
       "sha256": "66ef8971261fbbe5ec183b9e9c6b3deb7578176232a9e4f26eda5ecc61f9d0f4"
+    },
+    {
+      "locale": "en-CA",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/hourstag.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_visual_en_ca&mt=8",
+      "sha256": "8b66a3a137386541b30ef51219a518d6499fbb6fe9ee352b022720576871f6a7"
     },
     {
       "locale": "en-CA",
@@ -4102,16 +4102,6 @@
     },
     {
       "locale": "en-GB",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-GB/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/hourstag.html",
-      "app_store_url": "https://apps.apple.com/gb/app/id6754218117?pt=118326163&ct=iag_visual_en_gb&mt=8",
-      "sha256": "07cd958587cc0f2d187d0e13e803c1f18d6e507bf02d12f48f536681a1e7f28e"
-    },
-    {
-      "locale": "en-GB",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/hourstaglite.svg",
@@ -4119,6 +4109,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/gb/app/id6794039979?pt=118326163&ct=iag_visual_en_gb&mt=8",
       "sha256": "e4e583e0798938dfe5da5af6f4a9f16c343b4afa0f081f4073ca01f3e3b5e04e"
+    },
+    {
+      "locale": "en-GB",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/hourstag.html",
+      "app_store_url": "https://apps.apple.com/gb/app/id6754218117?pt=118326163&ct=iag_visual_en_gb&mt=8",
+      "sha256": "07cd958587cc0f2d187d0e13e803c1f18d6e507bf02d12f48f536681a1e7f28e"
     },
     {
       "locale": "en-GB",
@@ -4542,16 +4542,6 @@
     },
     {
       "locale": "en-US",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-US/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/hourstag.html",
-      "app_store_url": "https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=iag_visual_en_us&mt=8",
-      "sha256": "2aa1e1d5e38a2548dc8a6ed3ebb9f9f5d9e31f1d5427f7caea58e3eb8bef1c5e"
-    },
-    {
-      "locale": "en-US",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/hourstaglite.svg",
@@ -4559,6 +4549,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_visual_en_us&mt=8",
       "sha256": "6fc03d4436ee70374e4b399dea5f92507b5c43a8bfc05eb8b7ec4402c31d6d46"
+    },
+    {
+      "locale": "en-US",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/hourstag.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=iag_visual_en_us&mt=8",
+      "sha256": "2aa1e1d5e38a2548dc8a6ed3ebb9f9f5d9e31f1d5427f7caea58e3eb8bef1c5e"
     },
     {
       "locale": "en-US",
@@ -4982,16 +4982,6 @@
     },
     {
       "locale": "es-ES",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-ES/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
-      "app_store_url": "https://apps.apple.com/es/app/id6754218117?pt=118326163&ct=iag_visual_es_es&mt=8",
-      "sha256": "e8a8f59f744f17b948712cfd66d0c21afc7d96a54601ecf78c468339b0130560"
-    },
-    {
-      "locale": "es-ES",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/hourstaglite.svg",
@@ -4999,6 +4989,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "app_store_url": "https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=iag_visual_es_es&mt=8",
       "sha256": "f9dae23782dbc364971d1f97895375cbb6727b97fa2dcf290a2de4a269298edd"
+    },
+    {
+      "locale": "es-ES",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+      "app_store_url": "https://apps.apple.com/es/app/id6754218117?pt=118326163&ct=iag_visual_es_es&mt=8",
+      "sha256": "e8a8f59f744f17b948712cfd66d0c21afc7d96a54601ecf78c468339b0130560"
     },
     {
       "locale": "es-ES",
@@ -5422,16 +5422,6 @@
     },
     {
       "locale": "es-MX",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-MX/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/hourstag.html",
-      "app_store_url": "https://apps.apple.com/mx/app/id6754218117?pt=118326163&ct=iag_visual_es_mx&mt=8",
-      "sha256": "7ef6249d87450ba14c92f654f920f34e73f65f6043b172f13f14c78c07e386ff"
-    },
-    {
-      "locale": "es-MX",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/hourstaglite.svg",
@@ -5439,6 +5429,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/mx/app/id6794039979?pt=118326163&ct=iag_visual_es_mx&mt=8",
       "sha256": "04179d18c0a66e26ebfb135af041ae31ff9cd45faf6eea09966a8dd6a31b2bd1"
+    },
+    {
+      "locale": "es-MX",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/hourstag.html",
+      "app_store_url": "https://apps.apple.com/mx/app/id6754218117?pt=118326163&ct=iag_visual_es_mx&mt=8",
+      "sha256": "7ef6249d87450ba14c92f654f920f34e73f65f6043b172f13f14c78c07e386ff"
     },
     {
       "locale": "es-MX",
@@ -5862,16 +5862,6 @@
     },
     {
       "locale": "fi",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/fi/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/hourstag.html",
-      "app_store_url": "https://apps.apple.com/fi/app/id6754218117?pt=118326163&ct=iag_visual_fi&mt=8",
-      "sha256": "4f454444dfe6f03c5848b8156e63b0327e8b708f1385c41d56b0def3a607407f"
-    },
-    {
-      "locale": "fi",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/hourstaglite.svg",
@@ -5879,6 +5869,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/fi/app/id6794039979?pt=118326163&ct=iag_visual_fi&mt=8",
       "sha256": "5da8a22cc5dbd5d71d4ffbc91e4cb8f86acfd7c6da33783d5be14b1be91ec620"
+    },
+    {
+      "locale": "fi",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/hourstag.html",
+      "app_store_url": "https://apps.apple.com/fi/app/id6754218117?pt=118326163&ct=iag_visual_fi&mt=8",
+      "sha256": "4f454444dfe6f03c5848b8156e63b0327e8b708f1385c41d56b0def3a607407f"
     },
     {
       "locale": "fi",
@@ -6302,16 +6302,6 @@
     },
     {
       "locale": "fr-CA",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-CA/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/hourstag.html",
-      "app_store_url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_visual_fr_ca&mt=8",
-      "sha256": "e79a26eccec5b32626ad56e8b3cf73844e4560c7f1c4b0322b25c87c9345782c"
-    },
-    {
-      "locale": "fr-CA",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/hourstaglite.svg",
@@ -6319,6 +6309,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=iag_visual_fr_ca&mt=8",
       "sha256": "c837f59fca40142618d7d24ba8710d372a9d3aa6204e2066c4ec19a12075230b"
+    },
+    {
+      "locale": "fr-CA",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/hourstag.html",
+      "app_store_url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_visual_fr_ca&mt=8",
+      "sha256": "e79a26eccec5b32626ad56e8b3cf73844e4560c7f1c4b0322b25c87c9345782c"
     },
     {
       "locale": "fr-CA",
@@ -6742,16 +6742,6 @@
     },
     {
       "locale": "fr-FR",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-FR/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
-      "app_store_url": "https://apps.apple.com/fr/app/id6754218117?pt=118326163&ct=iag_visual_fr_fr&mt=8",
-      "sha256": "11a369783bab64264a65721647b69eddff47fb73e2da2f96faaa5127e4b58907"
-    },
-    {
-      "locale": "fr-FR",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/hourstaglite.svg",
@@ -6759,6 +6749,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "app_store_url": "https://apps.apple.com/fr/app/id6794039979?pt=118326163&ct=iag_visual_fr_fr&mt=8",
       "sha256": "de0863542e08f2e4dc2adecece8610d7a50bf5f27582e76acfe9f67bfbdde652"
+    },
+    {
+      "locale": "fr-FR",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+      "app_store_url": "https://apps.apple.com/fr/app/id6754218117?pt=118326163&ct=iag_visual_fr_fr&mt=8",
+      "sha256": "11a369783bab64264a65721647b69eddff47fb73e2da2f96faaa5127e4b58907"
     },
     {
       "locale": "fr-FR",
@@ -7182,16 +7182,6 @@
     },
     {
       "locale": "gu-IN",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/gu-IN/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/hourstag.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_gu_in&mt=8",
-      "sha256": "499474a708d831a6945f79fba5c10d6d34381d6ae5f50e2d189f974920439b97"
-    },
-    {
-      "locale": "gu-IN",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/hourstaglite.svg",
@@ -7199,6 +7189,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_gu_in&mt=8",
       "sha256": "d488501a4a99bc632743d7a4f55cd4b1a970f6596988513a82532719d59448e2"
+    },
+    {
+      "locale": "gu-IN",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/hourstag.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_gu_in&mt=8",
+      "sha256": "499474a708d831a6945f79fba5c10d6d34381d6ae5f50e2d189f974920439b97"
     },
     {
       "locale": "gu-IN",
@@ -7622,16 +7622,6 @@
     },
     {
       "locale": "he",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/he/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/hourstag.html",
-      "app_store_url": "https://apps.apple.com/il/app/id6754218117?pt=118326163&ct=iag_visual_he&mt=8",
-      "sha256": "309a2c502fef073e33c69c810cb06258f8dbc49218ca9d7852afa0db09d37d43"
-    },
-    {
-      "locale": "he",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/hourstaglite.svg",
@@ -7639,6 +7629,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/il/app/id6794039979?pt=118326163&ct=iag_visual_he&mt=8",
       "sha256": "f58e0c0f60c57e7b66b112cd9dbc297dada80133781a59508654dc12af1b497a"
+    },
+    {
+      "locale": "he",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/hourstag.html",
+      "app_store_url": "https://apps.apple.com/il/app/id6754218117?pt=118326163&ct=iag_visual_he&mt=8",
+      "sha256": "309a2c502fef073e33c69c810cb06258f8dbc49218ca9d7852afa0db09d37d43"
     },
     {
       "locale": "he",
@@ -8062,16 +8062,6 @@
     },
     {
       "locale": "hi",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/hi/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/hourstag.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_hi&mt=8",
-      "sha256": "677786877d15dea838e11e7639a4d824db03567ec86105fa6c922d75a2e5b239"
-    },
-    {
-      "locale": "hi",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/hourstaglite.svg",
@@ -8079,6 +8069,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_hi&mt=8",
       "sha256": "d4daad92dc040e33ea31999530b638074c20e9f9dfce31699ef4ffe7b98f2549"
+    },
+    {
+      "locale": "hi",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/hourstag.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_hi&mt=8",
+      "sha256": "677786877d15dea838e11e7639a4d824db03567ec86105fa6c922d75a2e5b239"
     },
     {
       "locale": "hi",
@@ -8502,16 +8502,6 @@
     },
     {
       "locale": "hr",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/hr/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/hourstag.html",
-      "app_store_url": "https://apps.apple.com/hr/app/id6754218117?pt=118326163&ct=iag_visual_hr&mt=8",
-      "sha256": "3ad299c9dc6d56f9c4eb2fd91e693807e0a93843bd3f24e9ac38baf72677f0dd"
-    },
-    {
-      "locale": "hr",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/hourstaglite.svg",
@@ -8519,6 +8509,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=iag_visual_hr&mt=8",
       "sha256": "7d5b0893927b97e65c0fd578356a0667048b660d948a4af9d2f9977f70416926"
+    },
+    {
+      "locale": "hr",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/hourstag.html",
+      "app_store_url": "https://apps.apple.com/hr/app/id6754218117?pt=118326163&ct=iag_visual_hr&mt=8",
+      "sha256": "3ad299c9dc6d56f9c4eb2fd91e693807e0a93843bd3f24e9ac38baf72677f0dd"
     },
     {
       "locale": "hr",
@@ -8942,16 +8942,6 @@
     },
     {
       "locale": "hu",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/hu/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/hourstag.html",
-      "app_store_url": "https://apps.apple.com/hu/app/id6754218117?pt=118326163&ct=iag_visual_hu&mt=8",
-      "sha256": "bde3bc1b53d8da74797ed6a0688f6177b1fec40c674bf6d2c6696d2af8745078"
-    },
-    {
-      "locale": "hu",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/hourstaglite.svg",
@@ -8959,6 +8949,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/hu/app/id6794039979?pt=118326163&ct=iag_visual_hu&mt=8",
       "sha256": "011057b902a4cbae3372b7fa24c8643842ac911c97dcbf0b1580e25aff9c5c4f"
+    },
+    {
+      "locale": "hu",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/hourstag.html",
+      "app_store_url": "https://apps.apple.com/hu/app/id6754218117?pt=118326163&ct=iag_visual_hu&mt=8",
+      "sha256": "bde3bc1b53d8da74797ed6a0688f6177b1fec40c674bf6d2c6696d2af8745078"
     },
     {
       "locale": "hu",
@@ -9382,16 +9382,6 @@
     },
     {
       "locale": "id",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/id/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
-      "app_store_url": "https://apps.apple.com/id/app/id6754218117?pt=118326163&ct=iag_visual_id&mt=8",
-      "sha256": "42793d556d3c6647d0c8d7f1970b683068c93ad84fabfce8510b6afb6a6d68b3"
-    },
-    {
-      "locale": "id",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/hourstaglite.svg",
@@ -9399,6 +9389,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "app_store_url": "https://apps.apple.com/id/app/id6794039979?pt=118326163&ct=iag_visual_id&mt=8",
       "sha256": "94cd22a8ecc0069b1029c483d02637d2d6ba86b74f92e512662f3b1e38ccf482"
+    },
+    {
+      "locale": "id",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+      "app_store_url": "https://apps.apple.com/id/app/id6754218117?pt=118326163&ct=iag_visual_id&mt=8",
+      "sha256": "42793d556d3c6647d0c8d7f1970b683068c93ad84fabfce8510b6afb6a6d68b3"
     },
     {
       "locale": "id",
@@ -9822,16 +9822,6 @@
     },
     {
       "locale": "it",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/it/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/hourstag.html",
-      "app_store_url": "https://apps.apple.com/it/app/id6754218117?pt=118326163&ct=iag_visual_it&mt=8",
-      "sha256": "c725be57c4309a84fac965788a015d1ddb2253e89a0295f65c194c801d58b312"
-    },
-    {
-      "locale": "it",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/hourstaglite.svg",
@@ -9839,6 +9829,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/it/app/id6794039979?pt=118326163&ct=iag_visual_it&mt=8",
       "sha256": "611e1314fecc488acd4381897bbb8653a0befdecc5b3fb7b82a99eecfe6aff31"
+    },
+    {
+      "locale": "it",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/hourstag.html",
+      "app_store_url": "https://apps.apple.com/it/app/id6754218117?pt=118326163&ct=iag_visual_it&mt=8",
+      "sha256": "c725be57c4309a84fac965788a015d1ddb2253e89a0295f65c194c801d58b312"
     },
     {
       "locale": "it",
@@ -10262,16 +10262,6 @@
     },
     {
       "locale": "ja",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ja/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
-      "app_store_url": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=iag_visual_ja&mt=8",
-      "sha256": "f202367405e8d286be69a59e4362df85d9ee8f873397f430c555c4030eab8e40"
-    },
-    {
-      "locale": "ja",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/hourstaglite.svg",
@@ -10279,6 +10269,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "app_store_url": "https://apps.apple.com/jp/app/id6794039979?pt=118326163&ct=iag_visual_ja&mt=8",
       "sha256": "f55c1baff7ca7aa8b6b5d7b2ef5d19c337ef1e328b37fce91abb80a4f5ba3c94"
+    },
+    {
+      "locale": "ja",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+      "app_store_url": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=iag_visual_ja&mt=8",
+      "sha256": "f202367405e8d286be69a59e4362df85d9ee8f873397f430c555c4030eab8e40"
     },
     {
       "locale": "ja",
@@ -10702,16 +10702,6 @@
     },
     {
       "locale": "kn-IN",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/kn-IN/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/hourstag.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_kn_in&mt=8",
-      "sha256": "7aa6b5eb1cb2748320900fce3a67313938e9559f844076e9071122dbe634e23f"
-    },
-    {
-      "locale": "kn-IN",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/hourstaglite.svg",
@@ -10719,6 +10709,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_kn_in&mt=8",
       "sha256": "ce9dfffd6f66f500f4fd12a7dbe4d605dfa3c4e9a3799da273ec65fbaf1b2c33"
+    },
+    {
+      "locale": "kn-IN",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/hourstag.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_kn_in&mt=8",
+      "sha256": "7aa6b5eb1cb2748320900fce3a67313938e9559f844076e9071122dbe634e23f"
     },
     {
       "locale": "kn-IN",
@@ -11142,16 +11142,6 @@
     },
     {
       "locale": "ko",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
-      "app_store_url": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=iag_visual_ko&mt=8",
-      "sha256": "8d4b9c836f3fbf51984de412cff1826434cc0f9a6c285ef594d7518197230e9e"
-    },
-    {
-      "locale": "ko",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/hourstaglite.svg",
@@ -11159,6 +11149,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=iag_visual_ko&mt=8",
       "sha256": "aa095c6d7a10b47bb78a48ded2a2429e6c2ff1d9837d19e1c89d968efe525169"
+    },
+    {
+      "locale": "ko",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+      "app_store_url": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=iag_visual_ko&mt=8",
+      "sha256": "8d4b9c836f3fbf51984de412cff1826434cc0f9a6c285ef594d7518197230e9e"
     },
     {
       "locale": "ko",
@@ -11582,16 +11582,6 @@
     },
     {
       "locale": "ml-IN",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ml-IN/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/hourstag.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_ml_in&mt=8",
-      "sha256": "3139d99ca0807ca0a15c9659b928f551055fae74c1fc0714a0201a43538f3e91"
-    },
-    {
-      "locale": "ml-IN",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/hourstaglite.svg",
@@ -11599,6 +11589,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_ml_in&mt=8",
       "sha256": "605c38d75a526c71ad332abbdcb27f898fbc4335797b35c3a91e0892a146362e"
+    },
+    {
+      "locale": "ml-IN",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/hourstag.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_ml_in&mt=8",
+      "sha256": "3139d99ca0807ca0a15c9659b928f551055fae74c1fc0714a0201a43538f3e91"
     },
     {
       "locale": "ml-IN",
@@ -12022,16 +12022,6 @@
     },
     {
       "locale": "mr-IN",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/mr-IN/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/hourstag.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_mr_in&mt=8",
-      "sha256": "d7d17485218d024b5a0971145cb784f9804a1dc9da3da20424000703e4015e61"
-    },
-    {
-      "locale": "mr-IN",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/hourstaglite.svg",
@@ -12039,6 +12029,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_mr_in&mt=8",
       "sha256": "cff480111c531b04b96ed2d3fd16e1bfa9ab7ba3aa107f464bfb06308bd95053"
+    },
+    {
+      "locale": "mr-IN",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/hourstag.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_mr_in&mt=8",
+      "sha256": "d7d17485218d024b5a0971145cb784f9804a1dc9da3da20424000703e4015e61"
     },
     {
       "locale": "mr-IN",
@@ -12462,16 +12462,6 @@
     },
     {
       "locale": "ms",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ms/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
-      "app_store_url": "https://apps.apple.com/my/app/id6754218117?pt=118326163&ct=iag_visual_ms&mt=8",
-      "sha256": "cea1c5935fe11e2ea9d1f5cc76292ede05a24ca70443a5bb2c249fca47ccc7c1"
-    },
-    {
-      "locale": "ms",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/hourstaglite.svg",
@@ -12479,6 +12469,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "app_store_url": "https://apps.apple.com/my/app/id6794039979?pt=118326163&ct=iag_visual_ms&mt=8",
       "sha256": "71ebba953ee74b75521ff434dbdda18f9be52a3339f9635e9aeff8af40d446c0"
+    },
+    {
+      "locale": "ms",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+      "app_store_url": "https://apps.apple.com/my/app/id6754218117?pt=118326163&ct=iag_visual_ms&mt=8",
+      "sha256": "cea1c5935fe11e2ea9d1f5cc76292ede05a24ca70443a5bb2c249fca47ccc7c1"
     },
     {
       "locale": "ms",
@@ -12902,16 +12902,6 @@
     },
     {
       "locale": "nl-NL",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/nl-NL/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/hourstag.html",
-      "app_store_url": "https://apps.apple.com/nl/app/id6754218117?pt=118326163&ct=iag_visual_nl_nl&mt=8",
-      "sha256": "a70c5bd6e1e503a85479fb5288dee78188894a6db0e15b0a57f851bc1531809d"
-    },
-    {
-      "locale": "nl-NL",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/hourstaglite.svg",
@@ -12919,6 +12909,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/nl/app/id6794039979?pt=118326163&ct=iag_visual_nl_nl&mt=8",
       "sha256": "8271d543a2fcc2dc44c538e3dede2dbd46260ceaa53db7a10888d145ddc2bab6"
+    },
+    {
+      "locale": "nl-NL",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/hourstag.html",
+      "app_store_url": "https://apps.apple.com/nl/app/id6754218117?pt=118326163&ct=iag_visual_nl_nl&mt=8",
+      "sha256": "a70c5bd6e1e503a85479fb5288dee78188894a6db0e15b0a57f851bc1531809d"
     },
     {
       "locale": "nl-NL",
@@ -13342,16 +13342,6 @@
     },
     {
       "locale": "no",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/no/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/hourstag.html",
-      "app_store_url": "https://apps.apple.com/no/app/id6754218117?pt=118326163&ct=iag_visual_no&mt=8",
-      "sha256": "a38748b4de3c4c97193e60aa6ddf5b25d25ce8f000950a38a3c26319de5eefbb"
-    },
-    {
-      "locale": "no",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/hourstaglite.svg",
@@ -13359,6 +13349,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/no/app/id6794039979?pt=118326163&ct=iag_visual_no&mt=8",
       "sha256": "9ad76e3680309664abd1d4d6478c4fb8bccf6df882213f117b85ef026a217c20"
+    },
+    {
+      "locale": "no",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/hourstag.html",
+      "app_store_url": "https://apps.apple.com/no/app/id6754218117?pt=118326163&ct=iag_visual_no&mt=8",
+      "sha256": "a38748b4de3c4c97193e60aa6ddf5b25d25ce8f000950a38a3c26319de5eefbb"
     },
     {
       "locale": "no",
@@ -13782,16 +13782,6 @@
     },
     {
       "locale": "or-IN",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/or-IN/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/hourstag.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_or_in&mt=8",
-      "sha256": "c7abc69f0554ab52604b7f95af750dc4a5053a340979382fc125c17335a61ade"
-    },
-    {
-      "locale": "or-IN",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/hourstaglite.svg",
@@ -13799,6 +13789,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_or_in&mt=8",
       "sha256": "640cc77f2ff494652bf8778185194bbaa1d748415d1699be97f00fbd815e6fdf"
+    },
+    {
+      "locale": "or-IN",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/hourstag.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_or_in&mt=8",
+      "sha256": "c7abc69f0554ab52604b7f95af750dc4a5053a340979382fc125c17335a61ade"
     },
     {
       "locale": "or-IN",
@@ -14222,16 +14222,6 @@
     },
     {
       "locale": "pa-IN",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/pa-IN/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/hourstag.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_pa_in&mt=8",
-      "sha256": "20d6e80122fbabe0a2c3e75a80e7763d92f425b8b958d50b64b1dea821c0e24a"
-    },
-    {
-      "locale": "pa-IN",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/hourstaglite.svg",
@@ -14239,6 +14229,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_pa_in&mt=8",
       "sha256": "3657461ade2940c831494ec58d53bceeb3b921fd33463284b697f6220da39909"
+    },
+    {
+      "locale": "pa-IN",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/hourstag.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_pa_in&mt=8",
+      "sha256": "20d6e80122fbabe0a2c3e75a80e7763d92f425b8b958d50b64b1dea821c0e24a"
     },
     {
       "locale": "pa-IN",
@@ -14662,16 +14662,6 @@
     },
     {
       "locale": "pl",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/pl/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/hourstag.html",
-      "app_store_url": "https://apps.apple.com/pl/app/id6754218117?pt=118326163&ct=iag_visual_pl&mt=8",
-      "sha256": "22a0dec8d36681ccff17743eaa1d04a355a60e692fab163b9a2e453634023434"
-    },
-    {
-      "locale": "pl",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/hourstaglite.svg",
@@ -14679,6 +14669,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/pl/app/id6794039979?pt=118326163&ct=iag_visual_pl&mt=8",
       "sha256": "24595fbbf07bead8b643a7b1ce17fa87ea6cfa09a044f16ffb8ad8b83597622f"
+    },
+    {
+      "locale": "pl",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/hourstag.html",
+      "app_store_url": "https://apps.apple.com/pl/app/id6754218117?pt=118326163&ct=iag_visual_pl&mt=8",
+      "sha256": "22a0dec8d36681ccff17743eaa1d04a355a60e692fab163b9a2e453634023434"
     },
     {
       "locale": "pl",
@@ -15102,16 +15102,6 @@
     },
     {
       "locale": "pt-BR",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-BR/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
-      "app_store_url": "https://apps.apple.com/br/app/id6754218117?pt=118326163&ct=iag_visual_pt_br&mt=8",
-      "sha256": "878f318dab1a35262c9d098436d5416058fe99dc529d9aec8375793873ce70c0"
-    },
-    {
-      "locale": "pt-BR",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/hourstaglite.svg",
@@ -15119,6 +15109,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "app_store_url": "https://apps.apple.com/br/app/id6794039979?pt=118326163&ct=iag_visual_pt_br&mt=8",
       "sha256": "b1c3e150b76589161992da3f52e4bef4735ab719d041cbead5bae9dfe39914b8"
+    },
+    {
+      "locale": "pt-BR",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+      "app_store_url": "https://apps.apple.com/br/app/id6754218117?pt=118326163&ct=iag_visual_pt_br&mt=8",
+      "sha256": "878f318dab1a35262c9d098436d5416058fe99dc529d9aec8375793873ce70c0"
     },
     {
       "locale": "pt-BR",
@@ -15542,16 +15542,6 @@
     },
     {
       "locale": "pt-PT",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-PT/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
-      "app_store_url": "https://apps.apple.com/pt/app/id6754218117?pt=118326163&ct=iag_visual_pt_pt&mt=8",
-      "sha256": "80938f2076a4d11b3d5f43a92e2d741577bab497f014722d2b7e55dfec020b42"
-    },
-    {
-      "locale": "pt-PT",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/hourstaglite.svg",
@@ -15559,6 +15549,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "app_store_url": "https://apps.apple.com/pt/app/id6794039979?pt=118326163&ct=iag_visual_pt_pt&mt=8",
       "sha256": "9791d872783126f318f57eedc6865b4a3b4456739231655043c8d42272fc89b0"
+    },
+    {
+      "locale": "pt-PT",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+      "app_store_url": "https://apps.apple.com/pt/app/id6754218117?pt=118326163&ct=iag_visual_pt_pt&mt=8",
+      "sha256": "80938f2076a4d11b3d5f43a92e2d741577bab497f014722d2b7e55dfec020b42"
     },
     {
       "locale": "pt-PT",
@@ -15982,16 +15982,6 @@
     },
     {
       "locale": "ro",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ro/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/hourstag.html",
-      "app_store_url": "https://apps.apple.com/ro/app/id6754218117?pt=118326163&ct=iag_visual_ro&mt=8",
-      "sha256": "7e5b028ce2d3e2d4b459908a1ccb279f931a96f6697307863bec285f4526f58f"
-    },
-    {
-      "locale": "ro",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/hourstaglite.svg",
@@ -15999,6 +15989,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/ro/app/id6794039979?pt=118326163&ct=iag_visual_ro&mt=8",
       "sha256": "dde127adeb5732a1554ee7df628852e67d6598e28126e3c7efdd67abf218e7f6"
+    },
+    {
+      "locale": "ro",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/hourstag.html",
+      "app_store_url": "https://apps.apple.com/ro/app/id6754218117?pt=118326163&ct=iag_visual_ro&mt=8",
+      "sha256": "7e5b028ce2d3e2d4b459908a1ccb279f931a96f6697307863bec285f4526f58f"
     },
     {
       "locale": "ro",
@@ -16422,16 +16422,6 @@
     },
     {
       "locale": "ru",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ru/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/hourstag.html",
-      "app_store_url": "https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=iag_visual_ru&mt=8",
-      "sha256": "a07675e701bdd2484fd119fdbbddae7b68dcbd51c1d0fe2396b78a81a17308ef"
-    },
-    {
-      "locale": "ru",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/hourstaglite.svg",
@@ -16439,6 +16429,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=iag_visual_ru&mt=8",
       "sha256": "295be2f85057cf2836fdc9fff020c4702ee285404fc0e360efd0c55b408d5e12"
+    },
+    {
+      "locale": "ru",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/hourstag.html",
+      "app_store_url": "https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=iag_visual_ru&mt=8",
+      "sha256": "a07675e701bdd2484fd119fdbbddae7b68dcbd51c1d0fe2396b78a81a17308ef"
     },
     {
       "locale": "ru",
@@ -16862,16 +16862,6 @@
     },
     {
       "locale": "sk",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/sk/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/hourstag.html",
-      "app_store_url": "https://apps.apple.com/sk/app/id6754218117?pt=118326163&ct=iag_visual_sk&mt=8",
-      "sha256": "d6cbdc1c5de799b84225b3028a69fcd732b6c3e86e75b76f59beefab1c3a7786"
-    },
-    {
-      "locale": "sk",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/hourstaglite.svg",
@@ -16879,6 +16869,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/sk/app/id6794039979?pt=118326163&ct=iag_visual_sk&mt=8",
       "sha256": "d2eff58a2a2deb9e744249f99ef3947b5a3879b1d506681d43a654c71825389f"
+    },
+    {
+      "locale": "sk",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/hourstag.html",
+      "app_store_url": "https://apps.apple.com/sk/app/id6754218117?pt=118326163&ct=iag_visual_sk&mt=8",
+      "sha256": "d6cbdc1c5de799b84225b3028a69fcd732b6c3e86e75b76f59beefab1c3a7786"
     },
     {
       "locale": "sk",
@@ -17302,16 +17302,6 @@
     },
     {
       "locale": "sl-SI",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/sl-SI/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/hourstag.html",
-      "app_store_url": "https://apps.apple.com/si/app/id6754218117?pt=118326163&ct=iag_visual_sl_si&mt=8",
-      "sha256": "b0c3945b4b30a0c19610510ecae224c4f84548502f2eaf1bd3a38e8e6a3ec05d"
-    },
-    {
-      "locale": "sl-SI",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/hourstaglite.svg",
@@ -17319,6 +17309,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/si/app/id6794039979?pt=118326163&ct=iag_visual_sl_si&mt=8",
       "sha256": "15d4a2b42f41e8e735e3239cd3eb8ee7a89ce2b29d59e0a1c3ed80dc294abbc4"
+    },
+    {
+      "locale": "sl-SI",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/hourstag.html",
+      "app_store_url": "https://apps.apple.com/si/app/id6754218117?pt=118326163&ct=iag_visual_sl_si&mt=8",
+      "sha256": "b0c3945b4b30a0c19610510ecae224c4f84548502f2eaf1bd3a38e8e6a3ec05d"
     },
     {
       "locale": "sl-SI",
@@ -17742,16 +17742,6 @@
     },
     {
       "locale": "sv",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/sv/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/hourstag.html",
-      "app_store_url": "https://apps.apple.com/se/app/id6754218117?pt=118326163&ct=iag_visual_sv&mt=8",
-      "sha256": "29e4ae4e6afe479b11e974c094dc07bae5d83f6ae44235c904c602ba2633e566"
-    },
-    {
-      "locale": "sv",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/hourstaglite.svg",
@@ -17759,6 +17749,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/se/app/id6794039979?pt=118326163&ct=iag_visual_sv&mt=8",
       "sha256": "effc8d759caa18d7769c0b05cf60975079dd746e94357af5f60d26741b3d9215"
+    },
+    {
+      "locale": "sv",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/hourstag.html",
+      "app_store_url": "https://apps.apple.com/se/app/id6754218117?pt=118326163&ct=iag_visual_sv&mt=8",
+      "sha256": "29e4ae4e6afe479b11e974c094dc07bae5d83f6ae44235c904c602ba2633e566"
     },
     {
       "locale": "sv",
@@ -18182,16 +18182,6 @@
     },
     {
       "locale": "ta-IN",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ta-IN/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/hourstag.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_ta_in&mt=8",
-      "sha256": "dd16ce433217d54e520446048e96ad1c6633c2671f957fc50077ce64353cfb8c"
-    },
-    {
-      "locale": "ta-IN",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/hourstaglite.svg",
@@ -18199,6 +18189,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_ta_in&mt=8",
       "sha256": "159623bd6789db8e1ba778703cc81a7ad5a6842ea6917d8fb6843d5679f48687"
+    },
+    {
+      "locale": "ta-IN",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/hourstag.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_ta_in&mt=8",
+      "sha256": "dd16ce433217d54e520446048e96ad1c6633c2671f957fc50077ce64353cfb8c"
     },
     {
       "locale": "ta-IN",
@@ -18622,16 +18622,6 @@
     },
     {
       "locale": "te-IN",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/te-IN/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/hourstag.html",
-      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_te_in&mt=8",
-      "sha256": "64f583b19e7d64218bd54b683fc62b9ae94d4fc444056053cbd6226429c83443"
-    },
-    {
-      "locale": "te-IN",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/hourstaglite.svg",
@@ -18639,6 +18629,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_visual_te_in&mt=8",
       "sha256": "834ff68d91e68586eb6bb79c90d58e00ed79c32314c860c2d0d8c26fad84299f"
+    },
+    {
+      "locale": "te-IN",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/hourstag.html",
+      "app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_visual_te_in&mt=8",
+      "sha256": "64f583b19e7d64218bd54b683fc62b9ae94d4fc444056053cbd6226429c83443"
     },
     {
       "locale": "te-IN",
@@ -19062,16 +19062,6 @@
     },
     {
       "locale": "th",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/th/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
-      "app_store_url": "https://apps.apple.com/th/app/id6754218117?pt=118326163&ct=iag_visual_th&mt=8",
-      "sha256": "5ae6f9ef643bccdaff27e7657577a3a1df2b5b252985599a33e57ca2920a9c33"
-    },
-    {
-      "locale": "th",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/hourstaglite.svg",
@@ -19079,6 +19069,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "app_store_url": "https://apps.apple.com/th/app/id6794039979?pt=118326163&ct=iag_visual_th&mt=8",
       "sha256": "eea526e396ea3506af9d86cc8f9db6413e4a6de43b354b8704f1bebb513d4bdb"
+    },
+    {
+      "locale": "th",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+      "app_store_url": "https://apps.apple.com/th/app/id6754218117?pt=118326163&ct=iag_visual_th&mt=8",
+      "sha256": "5ae6f9ef643bccdaff27e7657577a3a1df2b5b252985599a33e57ca2920a9c33"
     },
     {
       "locale": "th",
@@ -19502,16 +19502,6 @@
     },
     {
       "locale": "tr",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/tr/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
-      "app_store_url": "https://apps.apple.com/tr/app/id6754218117?pt=118326163&ct=iag_visual_tr&mt=8",
-      "sha256": "51fb52e2ed33fc2ba5f1c8614bdd746e0dc8287e83a5e53474bf9718744e15ee"
-    },
-    {
-      "locale": "tr",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/hourstaglite.svg",
@@ -19519,6 +19509,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "app_store_url": "https://apps.apple.com/tr/app/id6794039979?pt=118326163&ct=iag_visual_tr&mt=8",
       "sha256": "d7664e102fe4f65906fd70034c14fdc84ab5631fdca2579169941a4775c7f7e6"
+    },
+    {
+      "locale": "tr",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+      "app_store_url": "https://apps.apple.com/tr/app/id6754218117?pt=118326163&ct=iag_visual_tr&mt=8",
+      "sha256": "51fb52e2ed33fc2ba5f1c8614bdd746e0dc8287e83a5e53474bf9718744e15ee"
     },
     {
       "locale": "tr",
@@ -19942,16 +19942,6 @@
     },
     {
       "locale": "uk",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/uk/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/hourstag.html",
-      "app_store_url": "https://apps.apple.com/ua/app/id6754218117?pt=118326163&ct=iag_visual_uk&mt=8",
-      "sha256": "8515d027d9014f7de69440748ecf932e71185fab87279a6156334571f53da302"
-    },
-    {
-      "locale": "uk",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/hourstaglite.svg",
@@ -19959,6 +19949,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/ua/app/id6794039979?pt=118326163&ct=iag_visual_uk&mt=8",
       "sha256": "219a152e63e6a0c0217594643c99555dfc8c2ed185b8e06824734fcf22ade1de"
+    },
+    {
+      "locale": "uk",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/hourstag.html",
+      "app_store_url": "https://apps.apple.com/ua/app/id6754218117?pt=118326163&ct=iag_visual_uk&mt=8",
+      "sha256": "8515d027d9014f7de69440748ecf932e71185fab87279a6156334571f53da302"
     },
     {
       "locale": "uk",
@@ -20382,16 +20382,6 @@
     },
     {
       "locale": "ur-PK",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/ur-PK/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/hourstag.html",
-      "app_store_url": "https://apps.apple.com/pk/app/id6754218117?pt=118326163&ct=iag_visual_ur_pk&mt=8",
-      "sha256": "49a4b41c5b423428eddf8029e349e2a8cac68afd7e2d4dce62060ed1365ee8bb"
-    },
-    {
-      "locale": "ur-PK",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/hourstaglite.svg",
@@ -20399,6 +20389,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/pk/app/id6794039979?pt=118326163&ct=iag_visual_ur_pk&mt=8",
       "sha256": "9e12cb82380de77370db04d74452a1960690f1ef34f89f4a460cfd070214f6cb"
+    },
+    {
+      "locale": "ur-PK",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/hourstag.html",
+      "app_store_url": "https://apps.apple.com/pk/app/id6754218117?pt=118326163&ct=iag_visual_ur_pk&mt=8",
+      "sha256": "49a4b41c5b423428eddf8029e349e2a8cac68afd7e2d4dce62060ed1365ee8bb"
     },
     {
       "locale": "ur-PK",
@@ -20822,16 +20822,6 @@
     },
     {
       "locale": "vi",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/vi/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
-      "app_store_url": "https://apps.apple.com/vn/app/id6754218117?pt=118326163&ct=iag_visual_vi&mt=8",
-      "sha256": "d67add4253ffd28e00d3b82fd9f49ec78480dd2cc68025f7ce72ccc98b58c64c"
-    },
-    {
-      "locale": "vi",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/hourstaglite.svg",
@@ -20839,6 +20829,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "app_store_url": "https://apps.apple.com/vn/app/id6794039979?pt=118326163&ct=iag_visual_vi&mt=8",
       "sha256": "4327a5fbbb7a42d5046577428da82eaf9b7503abf3c254e8f5853023ec5e69b3"
+    },
+    {
+      "locale": "vi",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+      "app_store_url": "https://apps.apple.com/vn/app/id6754218117?pt=118326163&ct=iag_visual_vi&mt=8",
+      "sha256": "d67add4253ffd28e00d3b82fd9f49ec78480dd2cc68025f7ce72ccc98b58c64c"
     },
     {
       "locale": "vi",
@@ -21262,16 +21262,6 @@
     },
     {
       "locale": "zh-Hans",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/hourstag.html",
-      "app_store_url": "https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=iag_visual_zh_hans&mt=8",
-      "sha256": "c83d35f7ff2f8f1a42dc1f7f5b6ceb70532e1bb509ea201355fdb8e22c2b3ea1"
-    },
-    {
-      "locale": "zh-Hans",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/hourstaglite.svg",
@@ -21279,6 +21269,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/hourstaglite.html",
       "app_store_url": "https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=iag_visual_zh_hans&mt=8",
       "sha256": "b35952e94778cc2ccb608d580bf5e284c814c19dc7afe73de1989f7272b24656"
+    },
+    {
+      "locale": "zh-Hans",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/hourstag.html",
+      "app_store_url": "https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=iag_visual_zh_hans&mt=8",
+      "sha256": "c83d35f7ff2f8f1a42dc1f7f5b6ceb70532e1bb509ea201355fdb8e22c2b3ea1"
     },
     {
       "locale": "zh-Hans",
@@ -21702,16 +21702,6 @@
     },
     {
       "locale": "zh-Hant",
-      "app_key": "hourstag",
-      "app_store_id": "6754218117",
-      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hant/hourstag.svg",
-      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
-      "app_store_url": "https://apps.apple.com/tw/app/id6754218117?pt=118326163&ct=iag_visual_zh_hant&mt=8",
-      "sha256": "0ffccd7fef16e31c2395dfbd040c912665dc9f1363a8695cdf2eff569b6ae325"
-    },
-    {
-      "locale": "zh-Hant",
       "app_key": "hourstaglite",
       "app_store_id": "6794039979",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hant/hourstaglite.svg",
@@ -21719,6 +21709,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6794039979?pt=118326163&ct=iag_visual_zh_hant&mt=8",
       "sha256": "2a93aa846b21504568fb4d30f3a234d556d420dc7fb53b014a69b8ac7c770e01"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hant/hourstag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
+      "app_store_url": "https://apps.apple.com/tw/app/id6754218117?pt=118326163&ct=iag_visual_zh_hant&mt=8",
+      "sha256": "0ffccd7fef16e31c2395dfbd040c912665dc9f1363a8695cdf2eff569b6ae325"
     },
     {
       "locale": "zh-Hant",

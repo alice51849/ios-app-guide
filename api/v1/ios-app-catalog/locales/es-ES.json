@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-08-26",
-  "content_digest": "e8a33c0df0d18c00c35c4e10ea789f192da397052d71c29bdaa7be6e29fd639d",
+  "content_digest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
   "locale": "es-ES",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -498,6 +498,44 @@
       }
     },
     {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite",
+      "summary": "HoursTag Lite - El precio real de las cosas",
+      "category": "finance",
+      "search_terms": [
+        "ahorrar",
+        "presupuesto",
+        "gastos",
+        "ahorro",
+        "finanzas",
+        "control de gastos",
+        "compras impulsivas",
+        "dinero",
+        "gastar menos"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=iag_api_es_es&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/hourstaglite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/es/app/id6794039979"
+      }
+    },
+    {
       "key": "hourstag",
       "app_store_id": "6754218117",
       "name": "HoursTag: Horas de compra",
@@ -552,44 +590,6 @@
         "currency": "EUR",
         "formatted_price": "5,99 €",
         "storefront_url": "https://apps.apple.com/es/app/id6754218117"
-      }
-    },
-    {
-      "key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
-      "summary": "HoursTag Lite - El precio real de las cosas",
-      "category": "finance",
-      "search_terms": [
-        "ahorrar",
-        "presupuesto",
-        "gastos",
-        "ahorro",
-        "finanzas",
-        "control de gastos",
-        "compras impulsivas",
-        "dinero",
-        "gastar menos"
-      ],
-      "purchase_model": "free_with_lifetime_unlock",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": false,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
-      },
-      "app_store_url": "https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=iag_api_es_es&mt=8",
-      "guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/hourstaglite.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "0",
-        "currency": "EUR",
-        "formatted_price": "Gratis",
-        "storefront_url": "https://apps.apple.com/es/app/id6794039979"
       }
     },
     {

@@ -2337,6 +2337,55 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "savetag": [
+        {
+            "query": "best app to save links from other apps on iphone",
+            "guide_title": "The saved-links pile: saving was never the hard part",
+            "triggers": [
+                "save links",
+                "bookmark manager",
+                "read later",
+                "link organizer",
+                "saved links",
+                "save articles to read later",
+            ],
+            "persona": "people who send themselves links all day and never open them again",
+            "lead": "Links arrive in chats, notes and screenshots, get saved somewhere, and are never seen again — the saving works, the coming back does not.",
+            "paras": [
+                "SaveTag takes a link from any app with a share sheet, or straight off the clipboard, and pulls in the title, site and preview. Every save is filed the moment it lands, into specific topics rather than one pile: shopping, food, recipes, travel, places, learning, work, tech, finance, health, style, home, news, pets, parenting, gaming, design, sports, photography, music and inspiration. Your own custom tags sit alongside those. Search runs across titles, notes, tags and sources, so a vague memory of what you saved is enough to find it.",
+                "The tagging runs on Apple's on-device text intelligence, reading your saves locally to file them. It is not a chatbot and it does not write anything for you. There is no account, no cloud and no tracking, and saves never leave the device. Rediscover surfaces a small handful of unread saves each day so the list shrinks instead of growing. The free version gives every feature on your latest 5 saves; SaveTag Pro is a one-time purchase with no subscription, lifting the save limit and adding custom tags, Markdown export and backup, and Family Sharing.",
+            ],
+            "look": [
+                "Saving from inside whatever app you are already in, not a separate trip.",
+                "Filing that happens on its own, into topics specific enough to be useful.",
+                "Search that works from a vague memory rather than the exact title.",
+                "Something that brings saves back to you, since the pile never shrinks on its own.",
+                "Export you can take elsewhere, so nothing is locked in.",
+            ],
+            "steps": [
+                "Share three links you already meant to read into it and see where they file themselves.",
+                "Search for one of them using a word you remember, not its title.",
+                "Add one custom tag for a system you already keep in your head.",
+                "Leave it a day and see what Rediscover puts back in front of you.",
+                "Check the Markdown export before deciding whether the save limit is worth lifting.",
+            ],
+            "fits": "fits people whose saved tab has become a place links go to be forgotten — it files each one as it arrives, finds it again from a half-remembered word, and hands the pile back a few at a time, entirely on the device.",
+            "faq": [
+                {
+                    "q": "What does the free version actually cover?",
+                    "a": "Every feature, on your latest 5 saves. SaveTag Pro is a one-time purchase, not a subscription, and removes that limit while adding custom tags, Markdown export and backup, and Family Sharing.",
+                },
+                {
+                    "q": "Do my saved links go to a server?",
+                    "a": "No — there is no account and no cloud, and the tagging runs on Apple's on-device text intelligence.",
+                },
+                {
+                    "q": "Is this an AI that writes summaries for me?",
+                    "a": "No. It reads your saves locally to file them by topic; it is not a chatbot and it does not write content.",
+                },
+            ],
+        },
+    ],
 }
 
 
@@ -2350,7 +2399,8 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
 # to exist without counting as catalog coverage yet. Park it here, then move it
 # into PERSONAS in the same change that admits the app to the registry.
 # ShotInbox AI went through here on 2026-08-26.
-PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {}
+PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
+}
 
 
 def persona_meta_description(lead: str, name: str, limit: int = 160) -> str:

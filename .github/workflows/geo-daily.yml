@@ -346,7 +346,16 @@ jobs:
               # so the Standard.site links and the sitemap lastmod dates have
               # to be reconciled against that new tip before pushing -- the
               # same reconciliation this step already ran once above.
-              git pull --rebase --autostash -X theirs
+              # -X theirs resolves most of it, but an add/add or
+              # delete/modify conflict still stops the rebase, and under
+              # set -e that killed the whole step -- throwing away the two
+              # hours of content this retry exists to save. Abandon the
+              # attempt instead and let the next one re-fetch.
+              if ! git pull --rebase --autostash -X theirs; then
+                echo "rebase conflicted on attempt ${attempt}; abandoning it"
+                git rebase --abort || true
+                continue
+              fi
               python3 _engine/geo/sync_standard_site.py \
                 --site-root "$GITHUB_WORKSPACE" \
                 --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
@@ -521,7 +530,16 @@ jobs:
               # so the Standard.site links and the sitemap lastmod dates have
               # to be reconciled against that new tip before pushing -- the
               # same reconciliation this step already ran once above.
-              git pull --rebase --autostash -X theirs
+              # -X theirs resolves most of it, but an add/add or
+              # delete/modify conflict still stops the rebase, and under
+              # set -e that killed the whole step -- throwing away the two
+              # hours of content this retry exists to save. Abandon the
+              # attempt instead and let the next one re-fetch.
+              if ! git pull --rebase --autostash -X theirs; then
+                echo "rebase conflicted on attempt ${attempt}; abandoning it"
+                git rebase --abort || true
+                continue
+              fi
               python3 _engine/geo/sync_standard_site.py \
                 --site-root "$GITHUB_WORKSPACE" \
                 --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \

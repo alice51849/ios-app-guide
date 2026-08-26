@@ -41,6 +41,7 @@ CURRENT_LIVE_APPS = {
     "photocream",
     "picclear",
     "scanto",
+    "savetag",
     "sereno",
     "shotinbox",
     "snapport",

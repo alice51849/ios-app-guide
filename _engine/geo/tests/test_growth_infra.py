@@ -21701,6 +21701,9 @@ class GeneratorTests(unittest.TestCase):
             "notesstudio100",
             "wifiaidlite",
             "moneytag",
+            # Free download, one $5.99 Lifetime Pro purchase, no subscription
+            # (App Store listing, checked 2026-08-26).
+            "shotinbox",
         }
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:

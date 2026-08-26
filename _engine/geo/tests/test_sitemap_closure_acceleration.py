@@ -167,7 +167,7 @@ class SharedClosureTests(unittest.TestCase):
 
 
 class PublishedMatrixTests(unittest.TestCase):
-    def test_all_43_live_apps_have_all_50_localized_guide_pages(self):
+    def test_every_live_app_has_all_50_localized_guide_pages(self):
         pages = Path(gen_locale_indexation.PAGES)
         if not pages.is_dir() or not (pages / "en-US").is_dir():
             self.skipTest("materialized Pages tree is unavailable")
@@ -178,7 +178,12 @@ class PublishedMatrixTests(unittest.TestCase):
                 refresh=False,
             )
         )
-        self.assertEqual(43, len(keys))
+        # A floor, not an exact count. The real assertion is the one below --
+        # every live app carries all 50 locales -- and this only guards against
+        # the live set collapsing to a handful and making that pass vacuously.
+        # Pinning the exact number meant every launch failed the daily run:
+        # ShotInbox AI shipping on 2026-08-24 took it from 43 to 44.
+        self.assertGreaterEqual(len(keys), 40)
         self.assertEqual(50, len(OFFICIAL_LOCALES))
         missing = [
             f"{locale}/{key}.html"

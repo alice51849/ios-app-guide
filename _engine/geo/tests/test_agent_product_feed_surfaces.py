@@ -8,10 +8,19 @@ markup stays well-formed when an app name contains characters that would
 otherwise break it.
 """
 import json
+from pathlib import Path
+import sys
 import unittest
 import xml.etree.ElementTree as ET
 
-import agent_product_feed as F
+# The cloud runs `unittest discover` from the workspace root, so the engine
+# directory is not on sys.path the way it is when running from inside geo/.
+HERE = Path(__file__).resolve().parent
+GEO = HERE.parent
+if str(GEO) not in sys.path:
+    sys.path.insert(0, str(GEO))
+
+import agent_product_feed as F  # noqa: E402
 
 
 def _row(**overrides):

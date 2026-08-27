@@ -25,6 +25,7 @@ sys.path.insert(0, str(ROOT))
 
 from official_locales import OFFICIAL_LOCALES  # noqa: E402
 import aeo_answers_i18n  # noqa: E402
+import i18n_harvest_existing  # noqa: E402
 
 
 TRANS_DIR = ROOT / "i18n_trans"
@@ -54,6 +55,15 @@ class TranslationMemoryAppNameTests(unittest.TestCase):
                 "We develop Lumi Math Pro, a pay-once kids early math app.",
                 "Wir entwickeln Lumi Math Planet, eine Frühmathe-App.",
             ),
+        )
+
+    def test_harvester_rejects_cross_app_name_substitution(self) -> None:
+        self.assertFalse(
+            i18n_harvest_existing._is_safe_harvest_candidate(
+                "Get HoursTag: Hours to Buy on the App Store →",
+                "HoursTag Lite im App Store laden →",
+                "de-DE",
+            )
         )
 
     def test_locale_dictionaries_never_introduce_another_app(self) -> None:

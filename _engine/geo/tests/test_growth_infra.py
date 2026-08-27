@@ -217,6 +217,43 @@ process.stdout.write(JSON.stringify(context.RESULT));
 
 
 class AppStoreAvailabilityTests(unittest.TestCase):
+    def test_lookup_prefers_ipv4_when_dns_returns_both_families(self):
+        addresses = [
+            (appstore_live.socket.AF_INET6, 1, 6, "", ("::1", 443, 0, 0)),
+            (appstore_live.socket.AF_INET, 1, 6, "", ("127.0.0.1", 443)),
+        ]
+        observed_families = []
+
+        def fake_urlopen(request, timeout):
+            del request, timeout
+            observed_families.extend(
+                record[0]
+                for record in appstore_live.socket.getaddrinfo(
+                    "itunes.apple.com", 443
+                )
+            )
+            return io.BytesIO(b'{"results":[{"trackId":1}]}')
+
+        with (
+            mock.patch.object(
+                appstore_live.socket,
+                "getaddrinfo",
+                return_value=addresses,
+            ) as resolver,
+            mock.patch.object(
+                appstore_live.urllib.request,
+                "urlopen",
+                side_effect=fake_urlopen,
+            ),
+        ):
+            records = appstore_live._lookup_country_records(
+                {"1"}, "us", attempts=1
+            )
+
+        self.assertEqual({"1"}, set(records))
+        self.assertEqual([appstore_live.socket.AF_INET], observed_families)
+        resolver.assert_called_once()
+
     def test_new_unlisted_apps_are_omitted_and_live_apps_are_cached(self):
         with tempfile.TemporaryDirectory() as pages:
             with mock.patch.object(

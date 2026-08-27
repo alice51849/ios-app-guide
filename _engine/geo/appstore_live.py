@@ -4,7 +4,9 @@ from __future__ import annotations
 
 import json
 import os
+import socket
 import tempfile
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -17,6 +19,23 @@ RETIRE_AFTER_MISSES = 3
 STATE_FILE = ".appstore_live_state.json"
 STATE_SOURCE = "Apple iTunes Lookup API (US, TW, JP, GB)"
 UA = "Mozilla/5.0 (Lumi Apps availability checker)"
+_IPV4_RESOLUTION_LOCK = threading.Lock()
+
+
+def _urlopen_ipv4(request, *, timeout):
+    original_getaddrinfo = socket.getaddrinfo
+
+    def ipv4_getaddrinfo(host, port, family=0, type=0, proto=0, flags=0):
+        records = original_getaddrinfo(host, port, family, type, proto, flags)
+        ipv4 = [record for record in records if record[0] == socket.AF_INET]
+        return ipv4 or records
+
+    with _IPV4_RESOLUTION_LOCK:
+        socket.getaddrinfo = ipv4_getaddrinfo
+        try:
+            return urllib.request.urlopen(request, timeout=timeout)
+        finally:
+            socket.getaddrinfo = original_getaddrinfo
 
 
 def _lookup_country_records(ids, country, attempts=3):
@@ -30,7 +49,7 @@ def _lookup_country_records(ids, country, attempts=3):
     last_error = None
     for attempt in range(attempts):
         try:
-            with urllib.request.urlopen(req, timeout=30) as response:
+            with _urlopen_ipv4(req, timeout=30) as response:
                 payload = json.load(response)
             return {
                 str(item["trackId"]): item

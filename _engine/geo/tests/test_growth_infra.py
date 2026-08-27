@@ -23377,6 +23377,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("cp apps.json", workflow)
         first_scorecard = workflow.index("outreach_scorecard.py")
         answer_generation = workflow.index("aeo_answers.py --cached-live")
+        self.assertNotIn(
+            'aeo_answers.py --cached-live --limit "$N"',
+            workflow,
+        )
         final_scorecard = workflow.index(
             "outreach_scorecard.py", first_scorecard + 1
         )

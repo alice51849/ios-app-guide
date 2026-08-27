@@ -194,9 +194,11 @@ jobs:
           python3 outreach_scorecard.py
       - name: Generate new answer pages (+ rebuild answers sitemap)
         run: |
-          N="${{ github.event.inputs.answers || '8' }}"
           cd _engine/geo
-          python3 aeo_answers.py --cached-live --limit "$N"
+          # The strict outreach gate runs in this same workflow, so a bounded
+          # batch can never commit the first generation for an App with more
+          # missing questions than the limit.
+          python3 aeo_answers.py --cached-live
           python3 refresh_primary_resource_answers.py
       - name: Refresh AI indexes + hubs
         run: |

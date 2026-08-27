@@ -17,7 +17,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: geo-content
+  group: ios-app-guide-main-writer
   cancel-in-progress: false
 
 jobs:
@@ -309,55 +309,8 @@ jobs:
             echo "No content changes."
           else
             git commit -m "Daily GEO content: new answer pages + refreshed sitemaps"
-            git pull --rebase --autostash -X theirs
-            python3 _engine/geo/sync_standard_site.py \
-              --site-root "$GITHUB_WORKSPACE" \
-              --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
-              --allow-initial-404 \
-              --timeout 10 \
-              --retries 3 \
-              --retry-delay 2
-            python3 _engine/geo/reconcile_answer_semantics.py
-            cd _engine/geo
-            python3 dedupe_locale_meta.py --apply
-            python3 gen_locale_indexation.py
-            python3 gen_link_hubs.py
-            python3 gen_locale_indexation.py
-            python3 gen_link_hubs.py --check
-            python3 audit_link_depth.py --max-indexable-orphans 0
-            cd "$GITHUB_WORKSPACE"
-            python3 _engine/geo/gen_sitemap_lastmod.py \
-              --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
-            python3 -m unittest discover \
-              -s _engine/geo/tests \
-              -p "test_*.py" \
-              -q -b
-            cd _engine/geo
-            python3 outreach_scorecard.py --require-complete
-            cd "$GITHUB_WORKSPACE"
-            git add -A
-            if ! git diff --cached --quiet; then
-              git commit -m "Reconcile truthful sitemap lastmod after rebase"
-            fi
-            pushed=0
-            for attempt in 1 2 3 4 5; do
-              if git push; then pushed=1; break; fi
-              echo "push rejected (attempt ${attempt}); reconciling onto the new tip"
-              sleep $((attempt * 10))
-              # Rebasing pulls in whatever landed while this run was working,
-              # so the Standard.site links and the sitemap lastmod dates have
-              # to be reconciled against that new tip before pushing -- the
-              # same reconciliation this step already ran once above.
-              # -X theirs resolves most of it, but an add/add or
-              # delete/modify conflict still stops the rebase, and under
-              # set -e that killed the whole step -- throwing away the two
-              # hours of content this retry exists to save. Abandon the
-              # attempt instead and let the next one re-fetch.
-              if ! git pull --rebase --autostash -X theirs; then
-                echo "rebase conflicted on attempt ${attempt}; abandoning it"
-                git rebase --abort || true
-                continue
-              fi
+            source .github/scripts/remote-first-publish.sh
+            reconcile_english_phase() {
               python3 _engine/geo/sync_standard_site.py \
                 --site-root "$GITHUB_WORKSPACE" \
                 --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
@@ -366,15 +319,25 @@ jobs:
                 --retries 3 \
                 --retry-delay 2
               python3 _engine/geo/reconcile_answer_semantics.py
+              cd _engine/geo
+              python3 dedupe_locale_meta.py --apply
+              python3 gen_locale_indexation.py
+              python3 gen_link_hubs.py
+              python3 gen_locale_indexation.py
+              python3 gen_link_hubs.py --check
+              python3 audit_link_depth.py --max-indexable-orphans 0
+              cd "$GITHUB_WORKSPACE"
               python3 _engine/geo/gen_sitemap_lastmod.py \
                 --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
-              git add -A
-              if ! git diff --cached --quiet; then
-                git commit -m "Reconcile truthful sitemap lastmod after rebase"
-              fi
-            done
-            if [ "$pushed" != "1" ]; then
-              echo "::error::git push still rejected after 5 rebase retries"
+              python3 -m unittest discover \
+                -s _engine/geo/tests \
+                -p "test_*.py" \
+                -q -b
+              cd _engine/geo
+              python3 outreach_scorecard.py --require-complete
+            }
+            export REMOTE_FIRST_RECONCILE_MESSAGE="Reconcile generated tree after origin merge"
+            if ! remote_first_publish reconcile_english_phase origin main 5; then
               exit 1
             fi
           fi
@@ -431,6 +394,15 @@ jobs:
           python3 gen_image_sitemap.py
           python3 gen_mobile_app_identity.py
           python3 gen_webmcp_install_tools.py
+          # Localization changes the answer text consumed by these catalogs.
+          # Rebuild every dependent surface before sealing the tested tree.
+          python3 portfolio_app_catalog_api.py
+          python3 publisher_intent_catalog.py
+          python3 portfolio_offer_catalog.py
+          python3 publisher_intent_visuals.py
+          python3 app_video_lessons.py
+          python3 gen_social_previews.py --oembed-only
+          python3 gen_github_discovery_readmes.py
           python3 gen_publisher_disclosures.py
           python3 gen_guide_design.py
           python3 gen_app_store_facts.py
@@ -489,75 +461,35 @@ jobs:
             echo "No localized changes."
           else
             git commit -m "Daily GEO content: localized answer pages"
-            git pull --rebase --autostash -X theirs
-            if python3 _engine/geo/verified_tree.py matches-head \
-              --root "$GITHUB_WORKSPACE" \
-              --output "$LOCALIZED_VERIFIED_TREE" \
-              --suite geo-full-suite; then
-              echo "Rebase preserved the exact fully-tested content tree."
-            else
-              python3 _engine/geo/sync_standard_site.py \
-                --site-root "$GITHUB_WORKSPACE" \
-                --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
-                --allow-initial-404 \
-                --timeout 10 \
-                --retries 3 \
-                --retry-delay 2
-              python3 _engine/geo/reconcile_answer_semantics.py
+            source .github/scripts/remote-first-publish.sh
+            reconcile_localized_phase() {
+              if python3 _engine/geo/verified_tree.py matches-head \
+                --root "$GITHUB_WORKSPACE" \
+                --output "$LOCALIZED_VERIFIED_TREE" \
+                --suite geo-full-suite; then
+                echo "Remote integration preserved the fully-tested content tree."
+              else
+                python3 _engine/geo/sync_standard_site.py \
+                  --site-root "$GITHUB_WORKSPACE" \
+                  --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
+                  --allow-initial-404 \
+                  --timeout 10 \
+                  --retries 3 \
+                  --retry-delay 2
+                python3 _engine/geo/reconcile_answer_semantics.py
+                cd _engine/geo
+                python3 dedupe_locale_meta.py --apply
+                python3 close_sitemap_graph.py
+                python3 audit_link_depth.py --max-indexable-orphans 0
+                cd "$GITHUB_WORKSPACE"
+                python3 _engine/geo/gen_sitemap_lastmod.py
+                python3 _engine/geo/parallel_unittest.py --jobs 3
+              fi
               cd _engine/geo
-              python3 dedupe_locale_meta.py --apply
-              python3 close_sitemap_graph.py
-              python3 audit_link_depth.py --max-indexable-orphans 0
-              cd "$GITHUB_WORKSPACE"
-              python3 _engine/geo/gen_sitemap_lastmod.py
-              python3 _engine/geo/parallel_unittest.py --jobs 3
-              git add -A
-              if ! git diff --cached --quiet; then
-                git commit -m "Reconcile truthful sitemap lastmod after rebase"
-              fi
-            fi
-            cd _engine/geo
-            python3 outreach_scorecard.py --require-complete
-            cd "$GITHUB_WORKSPACE"
-            git add -A
-            if ! git diff --cached --quiet; then
-              git commit -m "Reconcile complete outreach coverage after rebase"
-            fi
-            pushed=0
-            for attempt in 1 2 3 4 5; do
-              if git push; then pushed=1; break; fi
-              echo "push rejected (attempt ${attempt}); reconciling onto the new tip"
-              sleep $((attempt * 10))
-              # Rebasing pulls in whatever landed while this run was working,
-              # so the Standard.site links and the sitemap lastmod dates have
-              # to be reconciled against that new tip before pushing -- the
-              # same reconciliation this step already ran once above.
-              # -X theirs resolves most of it, but an add/add or
-              # delete/modify conflict still stops the rebase, and under
-              # set -e that killed the whole step -- throwing away the two
-              # hours of content this retry exists to save. Abandon the
-              # attempt instead and let the next one re-fetch.
-              if ! git pull --rebase --autostash -X theirs; then
-                echo "rebase conflicted on attempt ${attempt}; abandoning it"
-                git rebase --abort || true
-                continue
-              fi
-              python3 _engine/geo/sync_standard_site.py \
-                --site-root "$GITHUB_WORKSPACE" \
-                --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
-                --allow-initial-404 \
-                --timeout 10 \
-                --retries 3 \
-                --retry-delay 2
-              python3 _engine/geo/reconcile_answer_semantics.py
-              python3 _engine/geo/gen_sitemap_lastmod.py
-              git add -A
-              if ! git diff --cached --quiet; then
-                git commit -m "Reconcile truthful sitemap lastmod after rebase"
-              fi
-            done
-            if [ "$pushed" != "1" ]; then
-              echo "::error::git push still rejected after 5 rebase retries"
+              python3 outreach_scorecard.py --require-complete
+            }
+            export REMOTE_FIRST_RECONCILE_MESSAGE="Reconcile localized tree after origin merge"
+            if ! remote_first_publish reconcile_localized_phase origin main 5; then
               exit 1
             fi
           fi

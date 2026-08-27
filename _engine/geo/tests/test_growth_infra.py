@@ -23147,13 +23147,12 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("aeo_pages.py --cached-live", workflow)
         self.assertIn("gen_llms.py --cached-live", workflow)
         self.assertIn("fetch-depth: 0", workflow)
-        # Seven, not five: the two commit-and-push blocks each gained a retry
-        # loop, and a retry rebases onto whatever landed in the meantime, so
-        # the lastmod dates have to be recomputed against that new tip before
-        # the retried push. Four of the seven carry the intermediate state.
-        self.assertEqual(7, workflow.count("gen_sitemap_lastmod.py"))
+        # Each phase defines one reconciliation callback. The bounded helper
+        # can invoke it after every remote integration without duplicating the
+        # command text or weakening the phase gate.
+        self.assertEqual(5, workflow.count("gen_sitemap_lastmod.py"))
         self.assertEqual(
-            4,
+            3,
             workflow.count(
                 '--state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"'
             ),
@@ -23387,17 +23386,23 @@ class GeneratorTests(unittest.TestCase):
             "outreach_scorecard.py", first_scorecard + 1
         )
         english_commit = workflow.index("Commit English content first")
-        english_rebase = workflow.index(
-            "git pull --rebase --autostash -X theirs",
+        english_reconcile = workflow.index(
+            "reconcile_english_phase()",
             english_commit,
         )
-        english_push = workflow.index("git push", english_rebase)
+        english_publish = workflow.index(
+            "remote_first_publish reconcile_english_phase origin main 5",
+            english_reconcile,
+        )
         localized_commit = workflow.index("Commit localized pages if any")
-        localized_rebase = workflow.index(
-            "git pull --rebase --autostash -X theirs",
+        localized_reconcile = workflow.index(
+            "reconcile_localized_phase()",
             localized_commit,
         )
-        localized_push = workflow.index("git push", localized_rebase)
+        localized_publish = workflow.index(
+            "remote_first_publish reconcile_localized_phase origin main 5",
+            localized_reconcile,
+        )
         self.assertLess(
             workflow.rindex("portfolio_app_finder.py"),
             workflow.index("portfolio_cost_calculator.py"),
@@ -23414,22 +23419,22 @@ class GeneratorTests(unittest.TestCase):
         self.assertLess(final_scorecard, english_commit)
         self.assertIn(
             "outreach_scorecard.py --require-complete",
-            workflow[english_rebase:english_push],
+            workflow[english_reconcile:english_publish],
         )
         self.assertIn(
             "outreach_scorecard.py --require-complete",
-            workflow[localized_rebase:localized_push],
+            workflow[localized_reconcile:localized_publish],
         )
         self.assertEqual(
             1,
             workflow.count("refresh_storefront_availability.py"),
         )
-        self.assertEqual(2, workflow.count("portfolio_app_catalog_api.py"))
-        self.assertEqual(2, workflow.count("publisher_intent_catalog.py"))
-        self.assertEqual(2, workflow.count("portfolio_offer_catalog.py"))
-        self.assertEqual(2, workflow.count("publisher_intent_visuals.py"))
-        self.assertEqual(2, workflow.count("app_video_lessons.py"))
-        self.assertEqual(2, workflow.count("gen_github_discovery_readmes.py"))
+        self.assertEqual(3, workflow.count("portfolio_app_catalog_api.py"))
+        self.assertEqual(3, workflow.count("publisher_intent_catalog.py"))
+        self.assertEqual(3, workflow.count("portfolio_offer_catalog.py"))
+        self.assertEqual(3, workflow.count("publisher_intent_visuals.py"))
+        self.assertEqual(3, workflow.count("app_video_lessons.py"))
+        self.assertEqual(3, workflow.count("gen_github_discovery_readmes.py"))
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("passport_photo_print_sheet.py"),
@@ -23622,12 +23627,10 @@ class GeneratorTests(unittest.TestCase):
         )
         workflow_positions = [refresh_block.index(item) for item in workflow_chain]
         self.assertEqual(sorted(workflow_positions), workflow_positions)
-        # Six: the five below plus the pre-gate repair inside the
-        # materialization step, which is what makes the fail-closed
-        # semantic-integrity gate self-healing instead of deadlocked.
-        # Eight for the same reason as the lastmod count above: each of the
-        # two push retry loops reconciles against the tip it just rebased onto.
-        self.assertEqual(8, workflow.count("reconcile_answer_semantics.py"))
+        # Six: the five phase callbacks plus the pre-gate repair inside the
+        # materialization step. Retry attempts invoke the same callback rather
+        # than duplicating a weaker reconciliation block.
+        self.assertEqual(6, workflow.count("reconcile_answer_semantics.py"))
         self.assertLess(
             refresh_block.rindex("gen_feed.py"),
             refresh_block.rindex("reconcile_answer_semantics.py"),
@@ -23637,7 +23640,7 @@ class GeneratorTests(unittest.TestCase):
             refresh_block.index("gen_sitemap_lastmod.py"),
         )
         self.assertEqual(
-            2,
+            3,
             workflow.count("gen_social_previews.py --oembed-only"),
         )
         self.assertLess(
@@ -23695,6 +23698,13 @@ class GeneratorTests(unittest.TestCase):
             "gen_image_sitemap.py",
             "gen_mobile_app_identity.py",
             "gen_webmcp_install_tools.py",
+            "portfolio_app_catalog_api.py",
+            "publisher_intent_catalog.py",
+            "portfolio_offer_catalog.py",
+            "publisher_intent_visuals.py",
+            "app_video_lessons.py",
+            "gen_social_previews.py --oembed-only",
+            "gen_github_discovery_readmes.py",
             "gen_publisher_disclosures.py",
             "gen_guide_design.py",
             "gen_app_store_facts.py",
@@ -23765,10 +23775,16 @@ class GeneratorTests(unittest.TestCase):
             "SITEMAP_LASTMOD_INTERMEDIATE_STATE",
             localized_commit_block,
         )
-        pull = english_commit_block.index("git pull --rebase")
+        source_helper = english_commit_block.index(
+            "source .github/scripts/remote-first-publish.sh"
+        )
+        callback = english_commit_block.index(
+            "reconcile_english_phase()",
+            source_helper,
+        )
         sync = english_commit_block.index(
             "python3 _engine/geo/sync_standard_site.py",
-            pull,
+            callback,
         )
         semantics = english_commit_block.index(
             "python3 _engine/geo/reconcile_answer_semantics.py",
@@ -23806,12 +23822,19 @@ class GeneratorTests(unittest.TestCase):
             "python3 -m unittest discover",
             reconcile,
         )
-        restage = english_commit_block.index("git add -A", final_tests)
-        push = english_commit_block.index("git push", restage)
+        scorecard = english_commit_block.index(
+            "python3 outreach_scorecard.py --require-complete",
+            final_tests,
+        )
+        publish = english_commit_block.index(
+            "remote_first_publish reconcile_english_phase origin main 5",
+            scorecard,
+        )
         self.assertEqual(
             sorted(
                 (
-                    pull,
+                    source_helper,
+                    callback,
                     sync,
                     semantics,
                     dedupe,
@@ -23822,12 +23845,13 @@ class GeneratorTests(unittest.TestCase):
                     depth_gate,
                     reconcile,
                     final_tests,
-                    restage,
-                    push,
+                    scorecard,
+                    publish,
                 )
             ),
             [
-                pull,
+                source_helper,
+                callback,
                 sync,
                 semantics,
                 dedupe,
@@ -23838,15 +23862,21 @@ class GeneratorTests(unittest.TestCase):
                 depth_gate,
                 reconcile,
                 final_tests,
-                restage,
-                push,
+                scorecard,
+                publish,
             ],
         )
 
-        pull = localized_commit_block.index("git pull --rebase")
+        source_helper = localized_commit_block.index(
+            "source .github/scripts/remote-first-publish.sh"
+        )
+        callback = localized_commit_block.index(
+            "reconcile_localized_phase()",
+            source_helper,
+        )
         exact_tree = localized_commit_block.index(
             "verified_tree.py matches-head",
-            pull,
+            callback,
         )
         sync = localized_commit_block.index(
             "python3 _engine/geo/sync_standard_site.py",
@@ -23876,11 +23906,18 @@ class GeneratorTests(unittest.TestCase):
             "python3 _engine/geo/parallel_unittest.py --jobs 3",
             reconcile,
         )
-        restage = localized_commit_block.index("git add -A", final_tests)
-        push = localized_commit_block.index("git push", restage)
+        scorecard = localized_commit_block.index(
+            "python3 outreach_scorecard.py --require-complete",
+            final_tests,
+        )
+        publish = localized_commit_block.index(
+            "remote_first_publish reconcile_localized_phase origin main 5",
+            scorecard,
+        )
         self.assertEqual(
             [
-                pull,
+                source_helper,
+                callback,
                 exact_tree,
                 sync,
                 semantics,
@@ -23889,12 +23926,13 @@ class GeneratorTests(unittest.TestCase):
                 depth_gate,
                 reconcile,
                 final_tests,
-                restage,
-                push,
+                scorecard,
+                publish,
             ],
             sorted(
                 (
-                    pull,
+                    source_helper,
+                    callback,
                     exact_tree,
                     sync,
                     semantics,
@@ -23903,8 +23941,8 @@ class GeneratorTests(unittest.TestCase):
                     depth_gate,
                     reconcile,
                     final_tests,
-                    restage,
-                    push,
+                    scorecard,
+                    publish,
                 )
             ),
         )
@@ -23935,15 +23973,29 @@ class GeneratorTests(unittest.TestCase):
             2,
             verification_block.count("--suite geo-full-suite"),
         )
-        # Four: one per push block, plus one per push retry loop -- a retry
-        # rebases, reconciles, and has to commit that reconciliation before it
-        # can push again.
         self.assertEqual(
-            4,
-            workflow.count(
-                'git commit -m "Reconcile truthful sitemap lastmod after rebase"'
-            ),
+            2,
+            workflow.count("source .github/scripts/remote-first-publish.sh"),
         )
+        self.assertEqual(2, workflow.count("remote_first_publish reconcile_"))
+        self.assertNotIn("git pull --rebase", workflow)
+        helper = (
+            guide_root / ".github" / "scripts" / "remote-first-publish.sh"
+        ).read_text(encoding="utf-8")
+        self.assertIn("git fetch --no-tags", helper)
+        self.assertIn("git merge --no-edit -X theirs", helper)
+        self.assertIn("git merge-base --is-ancestor", helper)
+        self.assertIn("attempt <= max_attempts", helper)
+        self.assertNotIn("rebase", helper)
+        self.assertNotIn("reset --hard", helper)
+        self.assertNotIn("--force", helper)
+        sov = (
+            guide_root / ".github" / "workflows" / "sov-weekly.yml"
+        ).read_text(encoding="utf-8")
+        self.assertIn("group: ios-app-guide-main-writer", workflow)
+        self.assertIn("group: ios-app-guide-main-writer", sov)
+        self.assertIn("cancel-in-progress: false", workflow)
+        self.assertIn("cancel-in-progress: false", sov)
         self.assertNotIn("--refresh-slug", workflow)
         self.assertIn("aeo_answers.py --cached-live --limit 0", workflow)
         refresh_script = (

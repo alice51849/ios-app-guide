@@ -22383,12 +22383,14 @@ class GeneratorTests(unittest.TestCase):
 
     def test_recent_public_apps_have_curated_alternative_inputs(self):
         app_ids = {
+            "battai": "6802423998",
             "wordmatelite": "6797601720",
             "caldaily": "6794178671",
             "onepageppt": "6798814385",
             "notesstudio100": "6798813048",
             "wifiaidlite": "6793414462",
             "moneytag": "6801956402",
+            "savetag": "6802505528",
         }
         for key, app_id in app_ids.items():
             with self.subTest(key=key):

@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - פרודוקטיביות
 - התחלה ללא תשלום · פתיחה לכל החיים
+- App Store · בחינם
 
-[הורידו את SaveTag: סימניות עם AI מה-App Store](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_he&mt=8)
+[הורידו את SaveTag: סימניות עם AI מה-App Store](https://apps.apple.com/il/app/id6802505528?pt=118326163&ct=iag_data_he&mt=8)
 
 [קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/savetag.html)
 

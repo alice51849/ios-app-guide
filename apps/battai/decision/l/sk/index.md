@@ -15,8 +15,9 @@ BattAI • BattAI používa päť hodnôt z verejných API iOS: stav batérie, s
 
 - Viac
 - Zadarmo na začiatok · doživotné odomknutie
+- App Store · Zadarmo
 
-[Stiahnuť BattAI: Skóre kondície batérie v App Store](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnuť BattAI: Skóre kondície batérie v App Store](https://apps.apple.com/sk/app/id6802423998?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/battai.html)
 

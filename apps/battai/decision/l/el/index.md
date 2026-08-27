@@ -15,8 +15,9 @@ BattAI • Το BattAI χρησιμοποιεί πέντε τιμές από τ�
 
 - Περισσότερα
 - Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής
+- App Store · Δωρεάν
 
-[Αποκτήστε το BattAI: Υγεία μπαταρίας από το App Store](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_el&mt=8)
+[Αποκτήστε το BattAI: Υγεία μπαταρίας από το App Store](https://apps.apple.com/gr/app/id6802423998?pt=118326163&ct=iag_data_el&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/battai.html)
 

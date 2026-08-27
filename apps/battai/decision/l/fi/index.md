@@ -15,8 +15,9 @@ BattAI • BattAI käyttää viittä julkisten iOS-API:en arvoa: akun varaustaso
 
 - Lisää
 - Ilmainen aloitus · elinikäinen avaus
+- App Store · Ilmainen
 
-[Lataa BattAI: Akun kuntotulos App Storesta](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_fi&mt=8)
+[Lataa BattAI: Akun kuntotulos App Storesta](https://apps.apple.com/fi/app/id6802423998?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/battai.html)
 

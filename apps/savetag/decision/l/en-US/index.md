@@ -15,8 +15,9 @@ Save it now. Actually read it later. You send yourself links all day. A recipe f
 
 - Productivity
 - Free to start · one-time unlock
+- App Store · Free
 
-[Get SaveTag: AI Social Bookmarks on the App Store](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_en_us&mt=8)
+[Get SaveTag: AI Social Bookmarks on the App Store](https://apps.apple.com/us/app/id6802505528?pt=118326163&ct=iag_data_en_us&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-US/savetag.html)
 

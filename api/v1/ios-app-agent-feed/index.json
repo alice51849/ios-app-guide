@@ -18,8 +18,8 @@
   "enable_checkout": false,
   "checkout_note": "Purchase happens on the Apple App Store via app_store_url; this publisher operates no checkout endpoint.",
   "price_source": "Apple App Store public lookup snapshot",
-  "row_count": 2193,
-  "app_count": 44,
+  "row_count": 2293,
+  "app_count": 46,
   "locale_count": 50,
   "official_locale_count": 50,
   "locales": [
@@ -78,6 +78,7 @@
     "aibriefpack",
     "aim990",
     "aim990plus",
+    "battai",
     "caldaily",
     "cvdesk",
     "cyca",
@@ -105,6 +106,7 @@
     "onepageppt",
     "photocream",
     "picclear",
+    "savetag",
     "scanto",
     "sereno",
     "shotinbox",
@@ -148,5 +150,5 @@
     "one_time_purchase",
     "subscription"
   ],
-  "content_digest": "sha256:6b48b3a34b9e33ae1856a5a653e2a979d2ef3330fd0cc15d2ace28f2f28cca97"
+  "content_digest": "sha256:eb0919c89a877772d6b34351722322af1e91570ac1432c4ae60f59e6afaeb36a"
 }

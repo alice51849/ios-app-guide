@@ -15,8 +15,9 @@ BattAI • BattAI જાહેર iOS API માંથી 5 મૂલ્ય લ�
 
 - વધુ
 - મફત શરૂઆત · કાયમી અનલૉક
+- App Store · મફત
 
-[App Store પરથી BattAI: બેટરી હેલ્થ સ્કોર મેળવો](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_gu_in&mt=8)
+[App Store પરથી BattAI: બેટરી હેલ્થ સ્કોર મેળવો](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_gu_in&mt=8)
 
 [પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/battai.html)
 

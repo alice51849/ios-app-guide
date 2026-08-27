@@ -15,8 +15,9 @@ BattAI • BattAI uses five values from public iOS APIs: battery level, charge s
 
 - More
 - Free to start · one-time unlock
+- App Store · Free
 
-[Get BattAI: Battery health score on the App Store](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_en_au&mt=8)
+[Get BattAI: Battery health score on the App Store](https://apps.apple.com/au/app/id6802423998?pt=118326163&ct=iag_data_en_au&mt=8)
 
 [Read the full guide](https://alice51849.github.io/ios-app-guide/en-AU/battai.html)
 

@@ -15,8 +15,9 @@ Salvează acum. Și de data asta chiar citește. Toată ziua îți trimiți link
 
 - Productivitate
 - Început gratuit · deblocare pe viață
+- App Store · Gratuit
 
-[Descarcă SaveTag: marcaje cu IA din App Store](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă SaveTag: marcaje cu IA din App Store](https://apps.apple.com/ro/app/id6802505528?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/savetag.html)
 

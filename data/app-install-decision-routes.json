@@ -5,8 +5,8 @@
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.json",
   "dateModified": "2026-08-27",
-  "content_digest": "4e6a52c0d87908bdf14c945134f1a2f7f39772e00baa08b4d3cc64e05ef2a37f",
-  "generation_digest": "54c7803f86d4f72f41e38c09a21a6d3a6dd098e0461798c68abefe5f8bda8bc4",
+  "content_digest": "90121e4124828d25fb1b345b206d4d68ce7631c344c3f91be98f83a17e8082df",
+  "generation_digest": "dd9c49685be26c62267e987c13ee766d52da4d5733c5f578bdf3e90933792a43",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -685,7 +685,8 @@
       "device_labels": [],
       "badge_labels": [
         "المزيد",
-        "بدء مجاني · فتح دائم"
+        "بدء مجاني · فتح دائم",
+        "App Store · مجاني"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ar-SA/index.html",
@@ -693,9 +694,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ar-SA.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_ar_sa&mt=8",
+      "app_store_url": "https://apps.apple.com/sa/app/id6802423998?pt=118326163&ct=iag_data_ar_sa&mt=8",
       "app_store_cta_label": "احصل على BattAI: نتيجة صحة البطارية من App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SAR",
+        "formatted_price": "مجاني"
+      },
       "guide_cta_label": "اقرأ الدليل الكامل",
       "publisher_disclosure": "هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -2018,7 +2023,8 @@
       "device_labels": [],
       "badge_labels": [
         "الإنتاجية",
-        "بدء مجاني · فتح دائم"
+        "بدء مجاني · فتح دائم",
+        "App Store · مجاني"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ar-SA/index.html",
@@ -2026,9 +2032,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ar-SA.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_ar_sa&mt=8",
+      "app_store_url": "https://apps.apple.com/sa/app/id6802505528?pt=118326163&ct=iag_data_ar_sa&mt=8",
       "app_store_cta_label": "احصل على SaveTag: حفظ الروابط الذكي من App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SAR",
+        "formatted_price": "مجاني"
+      },
       "guide_cta_label": "اقرأ الدليل الكامل",
       "publisher_disclosure": "هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -3007,7 +3017,8 @@
       "device_labels": [],
       "badge_labels": [
         "আরও",
-        "বিনামূল্যে শুরু · আজীবন আনলক"
+        "বিনামূল্যে শুরু · আজীবন আনলক",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/bn-BD/index.html",
@@ -3015,9 +3026,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে BattAI: ব্যাটারির স্বাস্থ্য ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -4340,7 +4355,8 @@
       "device_labels": [],
       "badge_labels": [
         "উৎপাদনশীলতা",
-        "বিনামূল্যে শুরু · আজীবন আনলক"
+        "বিনামূল্যে শুরু · আজীবন আনলক",
+        "App Store · বিনামূল্যে"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/bn-BD/index.html",
@@ -4348,9 +4364,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_bn_bd&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_bn_bd&mt=8",
       "app_store_cta_label": "App Store থেকে SaveTag: AI বুকমার্ক ডাউনলোড করুন",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "বিনামূল্যে"
+      },
       "guide_cta_label": "সম্পূর্ণ গাইড পড়ুন",
       "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -5329,7 +5349,8 @@
       "device_labels": [],
       "badge_labels": [
         "Més",
-        "Inici gratuït · desbloqueig de per vida"
+        "Inici gratuït · desbloqueig de per vida",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ca/index.html",
@@ -5337,9 +5358,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ca.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_ca&mt=8",
+      "app_store_url": "https://apps.apple.com/es/app/id6802423998?pt=118326163&ct=iag_data_ca&mt=8",
       "app_store_cta_label": "Descarrega BattAI: Salut de la bateria a l’App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Llegeix la guia completa",
       "publisher_disclosure": "Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -6662,7 +6687,8 @@
       "device_labels": [],
       "badge_labels": [
         "Productivitat",
-        "Inici gratuït · desbloqueig de per vida"
+        "Inici gratuït · desbloqueig de per vida",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ca/index.html",
@@ -6670,9 +6696,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ca.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_ca&mt=8",
+      "app_store_url": "https://apps.apple.com/es/app/id6802505528?pt=118326163&ct=iag_data_ca&mt=8",
       "app_store_cta_label": "Descarrega SaveTag: marcadors amb IA a l’App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Llegeix la guia completa",
       "publisher_disclosure": "Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -7651,7 +7681,8 @@
       "device_labels": [],
       "badge_labels": [
         "Více",
-        "Zdarma na začátek · doživotní odemknutí"
+        "Zdarma na začátek · doživotní odemknutí",
+        "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/cs/index.html",
@@ -7659,9 +7690,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/cs.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_cs&mt=8",
+      "app_store_url": "https://apps.apple.com/cz/app/id6802423998?pt=118326163&ct=iag_data_cs&mt=8",
       "app_store_cta_label": "Stáhněte si BattAI: Skóre kondice baterie v App Storu",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CZK",
+        "formatted_price": "Zdarma"
+      },
       "guide_cta_label": "Přečtěte si celý průvodce",
       "publisher_disclosure": "Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -8984,7 +9019,8 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivita",
-        "Zdarma na začátek · doživotní odemknutí"
+        "Zdarma na začátek · doživotní odemknutí",
+        "App Store · Zdarma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/cs/index.html",
@@ -8992,9 +9028,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/cs.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_cs&mt=8",
+      "app_store_url": "https://apps.apple.com/cz/app/id6802505528?pt=118326163&ct=iag_data_cs&mt=8",
       "app_store_cta_label": "Stáhněte si SaveTag: záložky s AI v App Storu",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CZK",
+        "formatted_price": "Zdarma"
+      },
       "guide_cta_label": "Přečtěte si celý průvodce",
       "publisher_disclosure": "Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -9973,7 +10013,8 @@
       "device_labels": [],
       "badge_labels": [
         "Mere",
-        "Gratis at komme i gang · permanent oplåsning"
+        "Gratis at komme i gang · permanent oplåsning",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/da/index.html",
@@ -9981,9 +10022,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6802423998?pt=118326163&ct=iag_data_da&mt=8",
       "app_store_cta_label": "Hent BattAI: Batteritilstandsscore i App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "DKK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Læs hele vejledningen",
       "publisher_disclosure": "Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -11306,7 +11351,8 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitet",
-        "Gratis at komme i gang · permanent oplåsning"
+        "Gratis at komme i gang · permanent oplåsning",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/da/index.html",
@@ -11314,9 +11360,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/da.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_da&mt=8",
+      "app_store_url": "https://apps.apple.com/dk/app/id6802505528?pt=118326163&ct=iag_data_da&mt=8",
       "app_store_cta_label": "Hent SaveTag: AI-bogmærker i App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "DKK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Læs hele vejledningen",
       "publisher_disclosure": "Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -12298,7 +12348,8 @@
       "device_labels": [],
       "badge_labels": [
         "Mehr",
-        "Kostenloser Einstieg · dauerhafte Freischaltung"
+        "Kostenloser Einstieg · dauerhafte Freischaltung",
+        "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/de-DE/index.html",
@@ -12306,9 +12357,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/de-DE.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_de_de&mt=8",
+      "app_store_url": "https://apps.apple.com/de/app/id6802423998?pt=118326163&ct=iag_data_de_de&mt=8",
       "app_store_cta_label": "BattAI: Batteriezustandswert im App Store laden",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Kostenlos"
+      },
       "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
       "publisher_disclosure": "Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -13581,7 +13636,8 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivität",
-        "Kostenloser Einstieg · dauerhafte Freischaltung"
+        "Kostenloser Einstieg · dauerhafte Freischaltung",
+        "App Store · Kostenlos"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/de-DE/index.html",
@@ -13589,9 +13645,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/de-DE.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_de_de&mt=8",
+      "app_store_url": "https://apps.apple.com/de/app/id6802505528?pt=118326163&ct=iag_data_de_de&mt=8",
       "app_store_cta_label": "SaveTag: KI Lesezeichen im App Store laden",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Kostenlos"
+      },
       "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
       "publisher_disclosure": "Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -14623,7 +14683,8 @@
       "device_labels": [],
       "badge_labels": [
         "Περισσότερα",
-        "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής"
+        "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/el/index.html",
@@ -14631,9 +14692,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/el.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_el&mt=8",
+      "app_store_url": "https://apps.apple.com/gr/app/id6802423998?pt=118326163&ct=iag_data_el&mt=8",
       "app_store_cta_label": "Αποκτήστε το BattAI: Υγεία μπαταρίας από το App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -15956,7 +16021,8 @@
       "device_labels": [],
       "badge_labels": [
         "Παραγωγικότητα",
-        "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής"
+        "Δωρεάν για αρχή · ξεκλείδωμα εφ' όρου ζωής",
+        "App Store · Δωρεάν"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/el/index.html",
@@ -15964,9 +16030,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/el.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_el&mt=8",
+      "app_store_url": "https://apps.apple.com/gr/app/id6802505528?pt=118326163&ct=iag_data_el&mt=8",
       "app_store_cta_label": "Αποκτήστε το SaveTag: σελιδοδείκτες AI από το App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Δωρεάν"
+      },
       "guide_cta_label": "Διαβάστε τον πλήρη οδηγό",
       "publisher_disclosure": "Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -16945,7 +17015,8 @@
       "device_labels": [],
       "badge_labels": [
         "More",
-        "Free to start · one-time unlock"
+        "Free to start · one-time unlock",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/en-AU/index.html",
@@ -16953,9 +17024,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6802423998?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get BattAI: Battery health score on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "AUD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -18281,7 +18356,8 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · one-time unlock"
+        "Free to start · one-time unlock",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/en-AU/index.html",
@@ -18289,9 +18365,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-AU.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_en_au&mt=8",
+      "app_store_url": "https://apps.apple.com/au/app/id6802505528?pt=118326163&ct=iag_data_en_au&mt=8",
       "app_store_cta_label": "Get SaveTag: AI Social Bookmarks on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "AUD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -19270,7 +19350,8 @@
       "device_labels": [],
       "badge_labels": [
         "More",
-        "Free to start · one-time unlock"
+        "Free to start · one-time unlock",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/en-CA/index.html",
@@ -19278,9 +19359,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-CA.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_en_ca&mt=8",
+      "app_store_url": "https://apps.apple.com/ca/app/id6802423998?pt=118326163&ct=iag_data_en_ca&mt=8",
       "app_store_cta_label": "Get BattAI: Battery health score on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -20603,7 +20688,8 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · one-time unlock"
+        "Free to start · one-time unlock",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/en-CA/index.html",
@@ -20611,9 +20697,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-CA.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_en_ca&mt=8",
+      "app_store_url": "https://apps.apple.com/ca/app/id6802505528?pt=118326163&ct=iag_data_en_ca&mt=8",
       "app_store_cta_label": "Get SaveTag: AI Social Bookmarks on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -21592,7 +21682,8 @@
       "device_labels": [],
       "badge_labels": [
         "More",
-        "Free to start · one-time unlock"
+        "Free to start · one-time unlock",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/en-GB/index.html",
@@ -21600,9 +21691,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-GB.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_en_gb&mt=8",
+      "app_store_url": "https://apps.apple.com/gb/app/id6802423998?pt=118326163&ct=iag_data_en_gb&mt=8",
       "app_store_cta_label": "Get BattAI: Battery health score on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -22928,7 +23023,8 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · one-time unlock"
+        "Free to start · one-time unlock",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/en-GB/index.html",
@@ -22936,9 +23032,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-GB.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_en_gb&mt=8",
+      "app_store_url": "https://apps.apple.com/gb/app/id6802505528?pt=118326163&ct=iag_data_en_gb&mt=8",
       "app_store_cta_label": "Get SaveTag: AI Social Bookmarks on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -23920,7 +24020,8 @@
       "device_labels": [],
       "badge_labels": [
         "More",
-        "Free to start · one-time unlock"
+        "Free to start · one-time unlock",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/en-US/index.html",
@@ -23928,9 +24029,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-US.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_en_us&mt=8",
+      "app_store_url": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=iag_data_en_us&mt=8",
       "app_store_cta_label": "Get BattAI: Battery health score on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -25259,7 +25364,8 @@
       "device_labels": [],
       "badge_labels": [
         "Productivity",
-        "Free to start · one-time unlock"
+        "Free to start · one-time unlock",
+        "App Store · Free"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/en-US/index.html",
@@ -25267,9 +25373,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/en-US.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_en_us&mt=8",
+      "app_store_url": "https://apps.apple.com/us/app/id6802505528?pt=118326163&ct=iag_data_en_us&mt=8",
       "app_store_cta_label": "Get SaveTag: AI Social Bookmarks on the App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Free"
+      },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "This is first-party material published by Lumi Studio, the developer of every listed app.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -26254,7 +26364,8 @@
       "device_labels": [],
       "badge_labels": [
         "Más",
-        "Gratis para empezar · desbloqueo permanente"
+        "Gratis para empezar · desbloqueo permanente",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/es-ES/index.html",
@@ -26262,9 +26373,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/es-ES.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_es_es&mt=8",
+      "app_store_url": "https://apps.apple.com/es/app/id6802423998?pt=118326163&ct=iag_data_es_es&mt=8",
       "app_store_cta_label": "Consigue BattAI: Salud de la batería en el App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -27587,7 +27702,8 @@
       "device_labels": [],
       "badge_labels": [
         "Productividad",
-        "Gratis para empezar · desbloqueo permanente"
+        "Gratis para empezar · desbloqueo permanente",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/es-ES/index.html",
@@ -27595,9 +27711,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/es-ES.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_es_es&mt=8",
+      "app_store_url": "https://apps.apple.com/es/app/id6802505528?pt=118326163&ct=iag_data_es_es&mt=8",
       "app_store_cta_label": "Consigue SaveTag: marcadores con IA en el App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -28576,7 +28696,8 @@
       "device_labels": [],
       "badge_labels": [
         "Más",
-        "Gratis para empezar · desbloqueo permanente"
+        "Gratis para empezar · desbloqueo permanente",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/es-MX/index.html",
@@ -28584,9 +28705,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/es-MX.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "app_store_url": "https://apps.apple.com/mx/app/id6802423998?pt=118326163&ct=iag_data_es_mx&mt=8",
       "app_store_cta_label": "Consigue BattAI: Estado de la batería en el App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MXN",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -29909,7 +30034,8 @@
       "device_labels": [],
       "badge_labels": [
         "Productividad",
-        "Gratis para empezar · desbloqueo permanente"
+        "Gratis para empezar · desbloqueo permanente",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/es-MX/index.html",
@@ -29917,9 +30043,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/es-MX.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "app_store_url": "https://apps.apple.com/mx/app/id6802505528?pt=118326163&ct=iag_data_es_mx&mt=8",
       "app_store_cta_label": "Consigue SaveTag: guarda links con IA en el App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MXN",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -30898,7 +31028,8 @@
       "device_labels": [],
       "badge_labels": [
         "Lisää",
-        "Ilmainen aloitus · elinikäinen avaus"
+        "Ilmainen aloitus · elinikäinen avaus",
+        "App Store · Ilmainen"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/fi/index.html",
@@ -30906,9 +31037,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fi.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_fi&mt=8",
+      "app_store_url": "https://apps.apple.com/fi/app/id6802423998?pt=118326163&ct=iag_data_fi&mt=8",
       "app_store_cta_label": "Lataa BattAI: Akun kuntotulos App Storesta",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen"
+      },
       "guide_cta_label": "Lue koko opas",
       "publisher_disclosure": "Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -32231,7 +32366,8 @@
       "device_labels": [],
       "badge_labels": [
         "Tuottavuus",
-        "Ilmainen aloitus · elinikäinen avaus"
+        "Ilmainen aloitus · elinikäinen avaus",
+        "App Store · Ilmainen"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/fi/index.html",
@@ -32239,9 +32375,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fi.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_fi&mt=8",
+      "app_store_url": "https://apps.apple.com/fi/app/id6802505528?pt=118326163&ct=iag_data_fi&mt=8",
       "app_store_cta_label": "Lataa SaveTag: tekoälykirjanmerkit App Storesta",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen"
+      },
       "guide_cta_label": "Lue koko opas",
       "publisher_disclosure": "Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -33220,7 +33360,8 @@
       "device_labels": [],
       "badge_labels": [
         "Plus",
-        "Gratuit au départ · déverrouillage définitif"
+        "Gratuit au départ · déverrouillage définitif",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/fr-CA/index.html",
@@ -33228,9 +33369,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-CA.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_fr_ca&mt=8",
+      "app_store_url": "https://apps.apple.com/ca/app/id6802423998?pt=118326163&ct=iag_data_fr_ca&mt=8",
       "app_store_cta_label": "Obtenir BattAI: Santé de la batterie sur l'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque app listée.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -34553,7 +34698,8 @@
       "device_labels": [],
       "badge_labels": [
         "Productivité",
-        "Gratuit au départ · déverrouillage définitif"
+        "Gratuit au départ · déverrouillage définitif",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/fr-CA/index.html",
@@ -34561,9 +34707,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-CA.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_fr_ca&mt=8",
+      "app_store_url": "https://apps.apple.com/ca/app/id6802505528?pt=118326163&ct=iag_data_fr_ca&mt=8",
       "app_store_cta_label": "Obtenir SaveTag : signets par IA sur l'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CAD",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque app listée.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -35542,7 +35692,8 @@
       "device_labels": [],
       "badge_labels": [
         "Plus",
-        "Gratuit au départ · déverrouillage définitif"
+        "Gratuit au départ · déverrouillage définitif",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/fr-FR/index.html",
@@ -35550,9 +35701,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-FR.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_fr_fr&mt=8",
+      "app_store_url": "https://apps.apple.com/fr/app/id6802423998?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "app_store_cta_label": "Obtenir BattAI: Santé de la batterie sur l'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque application répertoriée.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -36875,7 +37030,8 @@
       "device_labels": [],
       "badge_labels": [
         "Productivité",
-        "Gratuit au départ · déverrouillage définitif"
+        "Gratuit au départ · déverrouillage définitif",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/fr-FR/index.html",
@@ -36883,9 +37039,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-FR.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_fr_fr&mt=8",
+      "app_store_url": "https://apps.apple.com/fr/app/id6802505528?pt=118326163&ct=iag_data_fr_fr&mt=8",
       "app_store_cta_label": "Obtenir SaveTag : favoris par IA sur l'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Lire le guide complet",
       "publisher_disclosure": "Ce contenu est publié directement par Lumi Studio, le développeur de chaque application répertoriée.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -37864,7 +38024,8 @@
       "device_labels": [],
       "badge_labels": [
         "વધુ",
-        "મફત શરૂઆત · કાયમી અનલૉક"
+        "મફત શરૂઆત · કાયમી અનલૉક",
+        "App Store · મફત"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/gu-IN/index.html",
@@ -37872,9 +38033,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/gu-IN.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_gu_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_gu_in&mt=8",
       "app_store_cta_label": "App Store પરથી BattAI: બેટરી હેલ્થ સ્કોર મેળવો",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "મફત"
+      },
       "guide_cta_label": "પૂર્ણ માર્ગદર્શિકા વાંચો",
       "publisher_disclosure": "આ સામગ્રી Lumi Studio દ્વારા સીધી પ્રકાશિત કરવામાં આવી છે, જે સૂચિબદ્ધ તમામ એપ્સનો વિકાસકર્તા છે.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -39197,7 +39362,8 @@
       "device_labels": [],
       "badge_labels": [
         "ઉત્પાદકતા",
-        "મફત શરૂઆત · કાયમી અનલૉક"
+        "મફત શરૂઆત · કાયમી અનલૉક",
+        "App Store · મફત"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/gu-IN/index.html",
@@ -39205,9 +39371,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/gu-IN.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_gu_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_gu_in&mt=8",
       "app_store_cta_label": "App Store પરથી SaveTag: AI બુકમાર્ક મેળવો",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "મફત"
+      },
       "guide_cta_label": "પૂર્ણ માર્ગદર્શિકા વાંચો",
       "publisher_disclosure": "આ સામગ્રી Lumi Studio દ્વારા સીધી પ્રકાશિત કરવામાં આવી છે, જે સૂચિબદ્ધ તમામ એપ્સનો વિકાસકર્તા છે.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -40186,7 +40356,8 @@
       "device_labels": [],
       "badge_labels": [
         "עוד",
-        "התחלה ללא תשלום · פתיחה לכל החיים"
+        "התחלה ללא תשלום · פתיחה לכל החיים",
+        "App Store · בחינם"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/he/index.html",
@@ -40194,9 +40365,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/he.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_he&mt=8",
+      "app_store_url": "https://apps.apple.com/il/app/id6802423998?pt=118326163&ct=iag_data_he&mt=8",
       "app_store_cta_label": "הורידו את BattAI: ציון בריאות הסוללה מה-App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "ILS",
+        "formatted_price": "בחינם"
+      },
       "guide_cta_label": "קרא את המדריך המלא",
       "publisher_disclosure": "זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -41519,7 +41694,8 @@
       "device_labels": [],
       "badge_labels": [
         "פרודוקטיביות",
-        "התחלה ללא תשלום · פתיחה לכל החיים"
+        "התחלה ללא תשלום · פתיחה לכל החיים",
+        "App Store · בחינם"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/he/index.html",
@@ -41527,9 +41703,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/he.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_he&mt=8",
+      "app_store_url": "https://apps.apple.com/il/app/id6802505528?pt=118326163&ct=iag_data_he&mt=8",
       "app_store_cta_label": "הורידו את SaveTag: סימניות עם AI מה-App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "ILS",
+        "formatted_price": "בחינם"
+      },
       "guide_cta_label": "קרא את המדריך המלא",
       "publisher_disclosure": "זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -42508,7 +42688,8 @@
       "device_labels": [],
       "badge_labels": [
         "और अधिक",
-        "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक"
+        "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक",
+        "App Store · मुफ़्त"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/hi/index.html",
@@ -42516,9 +42697,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hi.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_hi&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_hi&mt=8",
       "app_store_cta_label": "App Store पर BattAI: बैटरी स्वास्थ्य स्कोर पाएँ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मुफ़्त"
+      },
       "guide_cta_label": "पूरा मार्गदर्शक पढ़ें",
       "publisher_disclosure": "यह सामग्री सीधे Lumi Studio ने प्रकाशित की है, जो सूचीबद्ध सभी ऐप का डेवलपर है।",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -43841,7 +44026,8 @@
       "device_labels": [],
       "badge_labels": [
         "उत्पादकता",
-        "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक"
+        "मुफ़्त शुरुआत · हमेशा के लिए अनलॉक",
+        "App Store · मुफ़्त"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/hi/index.html",
@@ -43849,9 +44035,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hi.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_hi&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_hi&mt=8",
       "app_store_cta_label": "App Store पर SaveTag: AI बुकमार्क पाएँ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मुफ़्त"
+      },
       "guide_cta_label": "पूरा मार्गदर्शक पढ़ें",
       "publisher_disclosure": "यह सामग्री सीधे Lumi Studio ने प्रकाशित की है, जो सूचीबद्ध सभी ऐप का डेवलपर है।",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -44830,7 +45020,8 @@
       "device_labels": [],
       "badge_labels": [
         "Više",
-        "Besplatno za početak · doživotno otključavanje"
+        "Besplatno za početak · doživotno otključavanje",
+        "App Store · Besplatno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/hr/index.html",
@@ -44838,9 +45029,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6802423998?pt=118326163&ct=iag_data_hr&mt=8",
       "app_store_cta_label": "Preuzmite BattAI: Ocjena stanja baterije u App Storeu",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno"
+      },
       "guide_cta_label": "Pročitajte cijeli vodič",
       "publisher_disclosure": "Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -46163,7 +46358,8 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivnost",
-        "Besplatno za početak · doživotno otključavanje"
+        "Besplatno za početak · doživotno otključavanje",
+        "App Store · Besplatno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/hr/index.html",
@@ -46171,9 +46367,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hr.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_hr&mt=8",
+      "app_store_url": "https://apps.apple.com/hr/app/id6802505528?pt=118326163&ct=iag_data_hr&mt=8",
       "app_store_cta_label": "Preuzmite SaveTag: AI oznake u App Storeu",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno"
+      },
       "guide_cta_label": "Pročitajte cijeli vodič",
       "publisher_disclosure": "Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -47152,7 +47352,8 @@
       "device_labels": [],
       "badge_labels": [
         "Továbbiak",
-        "Ingyenes kezdés · életre szóló feloldás"
+        "Ingyenes kezdés · életre szóló feloldás",
+        "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/hu/index.html",
@@ -47160,9 +47361,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6802423998?pt=118326163&ct=iag_data_hu&mt=8",
       "app_store_cta_label": "Töltse le a(z) BattAI: Akkuállapot appot az App Store-ból",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "HUF",
+        "formatted_price": "Ingyenes"
+      },
       "guide_cta_label": "Olvasd el a teljes útmutatót",
       "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -48485,7 +48690,8 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitás",
-        "Ingyenes kezdés · életre szóló feloldás"
+        "Ingyenes kezdés · életre szóló feloldás",
+        "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/hu/index.html",
@@ -48493,9 +48699,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_hu&mt=8",
+      "app_store_url": "https://apps.apple.com/hu/app/id6802505528?pt=118326163&ct=iag_data_hu&mt=8",
       "app_store_cta_label": "Töltse le a(z) SaveTag: AI könyvjelzők appot az App Store-ból",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "HUF",
+        "formatted_price": "Ingyenes"
+      },
       "guide_cta_label": "Olvasd el a teljes útmutatót",
       "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -49474,7 +49684,8 @@
       "device_labels": [],
       "badge_labels": [
         "Lainnya",
-        "Gratis untuk mulai · buka kunci permanen"
+        "Gratis untuk mulai · buka kunci permanen",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/id/index.html",
@@ -49482,9 +49693,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/id.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_id&mt=8",
+      "app_store_url": "https://apps.apple.com/id/app/id6802423998?pt=118326163&ct=iag_data_id&mt=8",
       "app_store_cta_label": "Dapatkan BattAI: Skor kesehatan baterai di App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "IDR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -50807,7 +51022,8 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitas",
-        "Gratis untuk mulai · buka kunci permanen"
+        "Gratis untuk mulai · buka kunci permanen",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/id/index.html",
@@ -50815,9 +51031,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/id.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_id&mt=8",
+      "app_store_url": "https://apps.apple.com/id/app/id6802505528?pt=118326163&ct=iag_data_id&mt=8",
       "app_store_cta_label": "Dapatkan SaveTag: markah buku AI di App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "IDR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Baca panduan lengkap",
       "publisher_disclosure": "Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -51796,7 +52016,8 @@
       "device_labels": [],
       "badge_labels": [
         "Altro",
-        "Gratis per iniziare · sblocco permanente"
+        "Gratis per iniziare · sblocco permanente",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/it/index.html",
@@ -51804,9 +52025,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6802423998?pt=118326163&ct=iag_data_it&mt=8",
       "app_store_cta_label": "Scarica BattAI: Salute della batteria sull'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Leggi la guida completa",
       "publisher_disclosure": "Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -53135,7 +53360,8 @@
       "device_labels": [],
       "badge_labels": [
         "Produttività",
-        "Gratis per iniziare · sblocco permanente"
+        "Gratis per iniziare · sblocco permanente",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/it/index.html",
@@ -53143,9 +53369,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_it&mt=8",
+      "app_store_url": "https://apps.apple.com/it/app/id6802505528?pt=118326163&ct=iag_data_it&mt=8",
       "app_store_cta_label": "Scarica SaveTag: segnalibri con IA sull'App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Leggi la guida completa",
       "publisher_disclosure": "Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -54124,7 +54354,8 @@
       "device_labels": [],
       "badge_labels": [
         "その他",
-        "無料で開始・買い切りで永久解除"
+        "無料で開始・買い切りで永久解除",
+        "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ja/index.html",
@@ -54132,9 +54363,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ja.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_ja&mt=8",
+      "app_store_url": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=iag_data_ja&mt=8",
       "app_store_cta_label": "App Store で BattAI: バッテリー状態スコア を入手",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料"
+      },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -55466,7 +55701,8 @@
       "device_labels": [],
       "badge_labels": [
         "生産性",
-        "無料で開始・買い切りで永久解除"
+        "無料で開始・買い切りで永久解除",
+        "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ja/index.html",
@@ -55474,9 +55710,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ja.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_ja&mt=8",
+      "app_store_url": "https://apps.apple.com/jp/app/id6802505528?pt=118326163&ct=iag_data_ja&mt=8",
       "app_store_cta_label": "App Store で SaveTag: AIであとで読む を入手",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料"
+      },
       "guide_cta_label": "完全ガイドを読む",
       "publisher_disclosure": "これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -56455,7 +56695,8 @@
       "device_labels": [],
       "badge_labels": [
         "ಇನ್ನಷ್ಟು",
-        "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್"
+        "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್",
+        "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/kn-IN/index.html",
@@ -56463,9 +56704,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/kn-IN.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_kn_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_kn_in&mt=8",
       "app_store_cta_label": "App Store ನಲ್ಲಿ BattAI: ಬ್ಯಾಟರಿ ಆರೋಗ್ಯ ಅಂಕ ಪಡೆಯಿರಿ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ಉಚಿತ"
+      },
       "guide_cta_label": "ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ",
       "publisher_disclosure": "ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -57788,7 +58033,8 @@
       "device_labels": [],
       "badge_labels": [
         "ಉತ್ಪಾದಕತೆ",
-        "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್"
+        "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್",
+        "App Store · ಉಚಿತ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/kn-IN/index.html",
@@ -57796,9 +58042,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/kn-IN.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_kn_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_kn_in&mt=8",
       "app_store_cta_label": "App Store ನಲ್ಲಿ SaveTag: AI ಬುಕ್‌ಮಾರ್ಕ್ ಪಡೆಯಿರಿ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ಉಚಿತ"
+      },
       "guide_cta_label": "ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ",
       "publisher_disclosure": "ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -58777,7 +59027,8 @@
       "device_labels": [],
       "badge_labels": [
         "더 보기",
-        "무료로 시작 · 한 번 구매 잠금 해제"
+        "무료로 시작 · 한 번 구매 잠금 해제",
+        "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ko/index.html",
@@ -58785,9 +59036,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=iag_data_ko&mt=8",
       "app_store_cta_label": "App Store에서 BattAI: 배터리 상태 점수 받기",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료"
+      },
       "guide_cta_label": "전체 안내서 읽기",
       "publisher_disclosure": "이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -60110,7 +60365,8 @@
       "device_labels": [],
       "badge_labels": [
         "생산성",
-        "무료로 시작 · 한 번 구매 잠금 해제"
+        "무료로 시작 · 한 번 구매 잠금 해제",
+        "App Store · 무료"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ko/index.html",
@@ -60118,9 +60374,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_ko&mt=8",
+      "app_store_url": "https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=iag_data_ko&mt=8",
       "app_store_cta_label": "App Store에서 SaveTag: AI 링크 보관함 받기",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료"
+      },
       "guide_cta_label": "전체 안내서 읽기",
       "publisher_disclosure": "이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -61099,7 +61359,8 @@
       "device_labels": [],
       "badge_labels": [
         "കൂടുതൽ",
-        "സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്"
+        "സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്",
+        "App Store · സൗജന്യം"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ml-IN/index.html",
@@ -61107,9 +61368,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ml-IN.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_ml_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_ml_in&mt=8",
       "app_store_cta_label": "App Store-ൽ നിന്ന് BattAI: ബാറ്ററി ആരോഗ്യ സ്കോർ നേടൂ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം"
+      },
       "guide_cta_label": "പൂർണ്ണ ഗൈഡ് വായിക്കുക",
       "publisher_disclosure": "ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -62432,7 +62697,8 @@
       "device_labels": [],
       "badge_labels": [
         "ഉത്പാദനക്ഷമത",
-        "സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്"
+        "സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്",
+        "App Store · സൗജന്യം"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ml-IN/index.html",
@@ -62440,9 +62706,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ml-IN.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_ml_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_ml_in&mt=8",
       "app_store_cta_label": "App Store-ൽ നിന്ന് SaveTag: AI ബുക്ക്മാർക്ക് നേടൂ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം"
+      },
       "guide_cta_label": "പൂർണ്ണ ഗൈഡ് വായിക്കുക",
       "publisher_disclosure": "ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -63421,7 +63691,8 @@
       "device_labels": [],
       "badge_labels": [
         "अधिक",
-        "सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक"
+        "सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक",
+        "App Store · मोफत"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/mr-IN/index.html",
@@ -63429,9 +63700,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/mr-IN.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_mr_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_mr_in&mt=8",
       "app_store_cta_label": "App Store वरून BattAI: बॅटरी आरोग्य गुण मिळवा",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मोफत"
+      },
       "guide_cta_label": "संपूर्ण मार्गदर्शक वाचा",
       "publisher_disclosure": "हे Lumi Studio कडून प्रकाशित केलेले प्रथम पक्ष साहित्य आहे, जे प्रत्येक सूचीबद्ध अॅपचे विकसक आहे.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -64754,7 +65029,8 @@
       "device_labels": [],
       "badge_labels": [
         "उत्पादकता",
-        "सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक"
+        "सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक",
+        "App Store · मोफत"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/mr-IN/index.html",
@@ -64762,9 +65038,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/mr-IN.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_mr_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_mr_in&mt=8",
       "app_store_cta_label": "App Store वरून SaveTag: AI बुकमार्क मिळवा",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मोफत"
+      },
       "guide_cta_label": "संपूर्ण मार्गदर्शक वाचा",
       "publisher_disclosure": "हे Lumi Studio कडून प्रकाशित केलेले प्रथम पक्ष साहित्य आहे, जे प्रत्येक सूचीबद्ध अॅपचे विकसक आहे.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -65743,7 +66023,8 @@
       "device_labels": [],
       "badge_labels": [
         "Lagi",
-        "Percuma untuk bermula · buka kunci kekal"
+        "Percuma untuk bermula · buka kunci kekal",
+        "App Store · Percuma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ms/index.html",
@@ -65751,9 +66032,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ms.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_ms&mt=8",
+      "app_store_url": "https://apps.apple.com/my/app/id6802423998?pt=118326163&ct=iag_data_ms&mt=8",
       "app_store_cta_label": "Dapatkan BattAI: Skor kesihatan bateri di App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MYR",
+        "formatted_price": "Percuma"
+      },
       "guide_cta_label": "Baca panduan penuh",
       "publisher_disclosure": "Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -67076,7 +67361,8 @@
       "device_labels": [],
       "badge_labels": [
         "Produktiviti",
-        "Percuma untuk bermula · buka kunci kekal"
+        "Percuma untuk bermula · buka kunci kekal",
+        "App Store · Percuma"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ms/index.html",
@@ -67084,9 +67370,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ms.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_ms&mt=8",
+      "app_store_url": "https://apps.apple.com/my/app/id6802505528?pt=118326163&ct=iag_data_ms&mt=8",
       "app_store_cta_label": "Dapatkan SaveTag: penanda buku AI di App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MYR",
+        "formatted_price": "Percuma"
+      },
       "guide_cta_label": "Baca panduan penuh",
       "publisher_disclosure": "Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -68065,7 +68355,8 @@
       "device_labels": [],
       "badge_labels": [
         "Meer",
-        "Gratis te starten · levenslange ontgrendeling"
+        "Gratis te starten · levenslange ontgrendeling",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/nl-NL/index.html",
@@ -68073,9 +68364,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/nl-NL.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_nl_nl&mt=8",
+      "app_store_url": "https://apps.apple.com/nl/app/id6802423998?pt=118326163&ct=iag_data_nl_nl&mt=8",
       "app_store_cta_label": "Download BattAI: Batterijconditiescore in de App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lees de volledige gids",
       "publisher_disclosure": "Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -69398,7 +69693,8 @@
       "device_labels": [],
       "badge_labels": [
         "Productiviteit",
-        "Gratis te starten · levenslange ontgrendeling"
+        "Gratis te starten · levenslange ontgrendeling",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/nl-NL/index.html",
@@ -69406,9 +69702,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/nl-NL.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_nl_nl&mt=8",
+      "app_store_url": "https://apps.apple.com/nl/app/id6802505528?pt=118326163&ct=iag_data_nl_nl&mt=8",
       "app_store_cta_label": "Download SaveTag: AI-bladwijzers in de App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Lees de volledige gids",
       "publisher_disclosure": "Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -70387,7 +70687,8 @@
       "device_labels": [],
       "badge_labels": [
         "Mer",
-        "Gratis å starte · livstidsopplåsing"
+        "Gratis å starte · livstidsopplåsing",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/no/index.html",
@@ -70395,9 +70696,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/no.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_no&mt=8",
+      "app_store_url": "https://apps.apple.com/no/app/id6802423998?pt=118326163&ct=iag_data_no&mt=8",
       "app_store_cta_label": "Last ned BattAI: Batteritilstand fra App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "NOK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -71720,7 +72025,8 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitet",
-        "Gratis å starte · livstidsopplåsing"
+        "Gratis å starte · livstidsopplåsing",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/no/index.html",
@@ -71728,9 +72034,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/no.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_no&mt=8",
+      "app_store_url": "https://apps.apple.com/no/app/id6802505528?pt=118326163&ct=iag_data_no&mt=8",
       "app_store_cta_label": "Last ned SaveTag: AI-bokmerker fra App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "NOK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Les hele veiledningen",
       "publisher_disclosure": "Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -72709,7 +73019,8 @@
       "device_labels": [],
       "badge_labels": [
         "ଅଧିକ",
-        "ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍"
+        "ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍",
+        "App Store · ମାଗଣା"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/or-IN/index.html",
@@ -72717,9 +73028,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/or-IN.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_or_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_or_in&mt=8",
       "app_store_cta_label": "App Store ରୁ BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ପାଆନ୍ତୁ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ମାଗଣା"
+      },
       "guide_cta_label": "ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ",
       "publisher_disclosure": "ଏହା Lumi Studio ଦ୍ୱାରା ପ୍ରକାଶିତ ପ୍ରଥମ-ପକ୍ଷ ସାମଗ୍ରୀ, ଯାହାରେ ସମସ୍ତ ତାଲିକାଭୁକ୍ତ ଆପ୍ସର ବିକାଶକ ଅଛନ୍ତି।",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -74042,7 +74357,8 @@
       "device_labels": [],
       "badge_labels": [
         "ଦକ୍ଷତା",
-        "ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍"
+        "ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍",
+        "App Store · ମାଗଣା"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/or-IN/index.html",
@@ -74050,9 +74366,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/or-IN.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_or_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_or_in&mt=8",
       "app_store_cta_label": "App Store ରୁ SaveTag: AI ବୁକମାର୍କ ପାଆନ୍ତୁ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ମାଗଣା"
+      },
       "guide_cta_label": "ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ",
       "publisher_disclosure": "ଏହା Lumi Studio ଦ୍ୱାରା ପ୍ରକାଶିତ ପ୍ରଥମ-ପକ୍ଷ ସାମଗ୍ରୀ, ଯାହାରେ ସମସ୍ତ ତାଲିକାଭୁକ୍ତ ଆପ୍ସର ବିକାଶକ ଅଛନ୍ତି।",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -75031,7 +75351,8 @@
       "device_labels": [],
       "badge_labels": [
         "ਹੋਰ",
-        "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ"
+        "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ",
+        "App Store · ਮੁਫ਼ਤ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/pa-IN/index.html",
@@ -75039,9 +75360,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pa-IN.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_pa_in&mt=8",
       "app_store_cta_label": "App Store ਤੋਂ BattAI: ਬੈਟਰੀ ਸਿਹਤ ਸਕੋਰ ਪ੍ਰਾਪਤ ਕਰੋ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ਮੁਫ਼ਤ"
+      },
       "guide_cta_label": "ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ",
       "publisher_disclosure": "ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -76364,7 +76689,8 @@
       "device_labels": [],
       "badge_labels": [
         "ਉਤਪਾਦਕਤਾ",
-        "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ"
+        "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ",
+        "App Store · ਮੁਫ਼ਤ"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/pa-IN/index.html",
@@ -76372,9 +76698,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pa-IN.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_pa_in&mt=8",
       "app_store_cta_label": "App Store ਤੋਂ SaveTag: AI ਬੁੱਕਮਾਰਕ ਪ੍ਰਾਪਤ ਕਰੋ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ਮੁਫ਼ਤ"
+      },
       "guide_cta_label": "ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ",
       "publisher_disclosure": "ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -77353,7 +77683,8 @@
       "device_labels": [],
       "badge_labels": [
         "Więcej",
-        "Darmowe na start · dożywotni dostęp"
+        "Darmowe na start · dożywotni dostęp",
+        "App Store · Bezpłatnie"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/pl/index.html",
@@ -77361,9 +77692,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pl.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_pl&mt=8",
+      "app_store_url": "https://apps.apple.com/pl/app/id6802423998?pt=118326163&ct=iag_data_pl&mt=8",
       "app_store_cta_label": "Pobierz BattAI: Wynik kondycji baterii z App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PLN",
+        "formatted_price": "Bezpłatnie"
+      },
       "guide_cta_label": "Przeczytaj pełny przewodnik",
       "publisher_disclosure": "Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -78686,7 +79021,8 @@
       "device_labels": [],
       "badge_labels": [
         "Produktywność",
-        "Darmowe na start · dożywotni dostęp"
+        "Darmowe na start · dożywotni dostęp",
+        "App Store · Bezpłatnie"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/pl/index.html",
@@ -78694,9 +79030,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pl.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_pl&mt=8",
+      "app_store_url": "https://apps.apple.com/pl/app/id6802505528?pt=118326163&ct=iag_data_pl&mt=8",
       "app_store_cta_label": "Pobierz SaveTag: zakładki z AI z App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PLN",
+        "formatted_price": "Bezpłatnie"
+      },
       "guide_cta_label": "Przeczytaj pełny przewodnik",
       "publisher_disclosure": "Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -79675,7 +80015,8 @@
       "device_labels": [],
       "badge_labels": [
         "Mais",
-        "Grátis para começar · desbloqueio permanente"
+        "Grátis para começar · desbloqueio permanente",
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/pt-BR/index.html",
@@ -79683,9 +80024,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-BR.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_pt_br&mt=8",
+      "app_store_url": "https://apps.apple.com/br/app/id6802423998?pt=118326163&ct=iag_data_pt_br&mt=8",
       "app_store_cta_label": "Baixe BattAI: Saúde da bateria na App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis"
+      },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, desenvolvedora de todos os apps apresentados.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -81011,7 +81356,8 @@
       "device_labels": [],
       "badge_labels": [
         "Produtividade",
-        "Grátis para começar · desbloqueio permanente"
+        "Grátis para começar · desbloqueio permanente",
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/pt-BR/index.html",
@@ -81019,9 +81365,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-BR.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_pt_br&mt=8",
+      "app_store_url": "https://apps.apple.com/br/app/id6802505528?pt=118326163&ct=iag_data_pt_br&mt=8",
       "app_store_cta_label": "Baixe SaveTag: favoritos com IA na App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis"
+      },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, desenvolvedora de todos os apps apresentados.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -82000,7 +82350,8 @@
       "device_labels": [],
       "badge_labels": [
         "Mais",
-        "Grátis para começar · desbloqueio permanente"
+        "Grátis para começar · desbloqueio permanente",
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/pt-PT/index.html",
@@ -82008,9 +82359,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-PT.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_pt_pt&mt=8",
+      "app_store_url": "https://apps.apple.com/pt/app/id6802423998?pt=118326163&ct=iag_data_pt_pt&mt=8",
       "app_store_cta_label": "Baixe BattAI: Saúde da bateria na App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Grátis"
+      },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, que desenvolve todas as apps apresentadas.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -83333,7 +83688,8 @@
       "device_labels": [],
       "badge_labels": [
         "Produtividade",
-        "Grátis para começar · desbloqueio permanente"
+        "Grátis para começar · desbloqueio permanente",
+        "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/pt-PT/index.html",
@@ -83341,9 +83697,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/pt-PT.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_pt_pt&mt=8",
+      "app_store_url": "https://apps.apple.com/pt/app/id6802505528?pt=118326163&ct=iag_data_pt_pt&mt=8",
       "app_store_cta_label": "Baixe SaveTag: marcadores com IA na App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Grátis"
+      },
       "guide_cta_label": "Leia o guia completo",
       "publisher_disclosure": "Este conteúdo é publicado diretamente pela Lumi Studio, que desenvolve todas as apps apresentadas.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -84322,7 +84682,8 @@
       "device_labels": [],
       "badge_labels": [
         "Mai mult",
-        "Început gratuit · deblocare pe viață"
+        "Început gratuit · deblocare pe viață",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ro/index.html",
@@ -84330,9 +84691,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6802423998?pt=118326163&ct=iag_data_ro&mt=8",
       "app_store_cta_label": "Descarcă BattAI: Sănătatea bateriei din App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RON",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Citește ghidul complet",
       "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -85655,7 +86020,8 @@
       "device_labels": [],
       "badge_labels": [
         "Productivitate",
-        "Început gratuit · deblocare pe viață"
+        "Început gratuit · deblocare pe viață",
+        "App Store · Gratuit"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ro/index.html",
@@ -85663,9 +86029,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_ro&mt=8",
+      "app_store_url": "https://apps.apple.com/ro/app/id6802505528?pt=118326163&ct=iag_data_ro&mt=8",
       "app_store_cta_label": "Descarcă SaveTag: marcaje cu IA din App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RON",
+        "formatted_price": "Gratuit"
+      },
       "guide_cta_label": "Citește ghidul complet",
       "publisher_disclosure": "Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -86644,7 +87014,8 @@
       "device_labels": [],
       "badge_labels": [
         "Ещё",
-        "Бесплатно начать · разблокировка за одну покупку"
+        "Бесплатно начать · разблокировка за одну покупку",
+        "App Store · Бесплатно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ru/index.html",
@@ -86652,9 +87023,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ru.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_ru&mt=8",
+      "app_store_url": "https://apps.apple.com/ru/app/id6802423998?pt=118326163&ct=iag_data_ru&mt=8",
       "app_store_cta_label": "Установить BattAI: Состояние батареи в App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RUB",
+        "formatted_price": "Бесплатно"
+      },
       "guide_cta_label": "Прочитать полное руководство",
       "publisher_disclosure": "Это материал, созданный Lumi Studio, разработчиком всех перечисленных приложений.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -87977,7 +88352,8 @@
       "device_labels": [],
       "badge_labels": [
         "Работа и организация",
-        "Бесплатно начать · разблокировка за одну покупку"
+        "Бесплатно начать · разблокировка за одну покупку",
+        "App Store · Бесплатно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ru/index.html",
@@ -87985,9 +88361,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ru.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_ru&mt=8",
+      "app_store_url": "https://apps.apple.com/ru/app/id6802505528?pt=118326163&ct=iag_data_ru&mt=8",
       "app_store_cta_label": "Установить SaveTag: закладки с ИИ в App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RUB",
+        "formatted_price": "Бесплатно"
+      },
       "guide_cta_label": "Прочитать полное руководство",
       "publisher_disclosure": "Это материал, созданный Lumi Studio, разработчиком всех перечисленных приложений.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -88966,7 +89346,8 @@
       "device_labels": [],
       "badge_labels": [
         "Viac",
-        "Zadarmo na začiatok · doživotné odomknutie"
+        "Zadarmo na začiatok · doživotné odomknutie",
+        "App Store · Zadarmo"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/sk/index.html",
@@ -88974,9 +89355,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6802423998?pt=118326163&ct=iag_data_sk&mt=8",
       "app_store_cta_label": "Stiahnuť BattAI: Skóre kondície batérie v App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Zadarmo"
+      },
       "guide_cta_label": "Prečítať celý sprievodca",
       "publisher_disclosure": "Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -90299,7 +90684,8 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivita",
-        "Zadarmo na začiatok · doživotné odomknutie"
+        "Zadarmo na začiatok · doživotné odomknutie",
+        "App Store · Zadarmo"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/sk/index.html",
@@ -90307,9 +90693,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sk.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_sk&mt=8",
+      "app_store_url": "https://apps.apple.com/sk/app/id6802505528?pt=118326163&ct=iag_data_sk&mt=8",
       "app_store_cta_label": "Stiahnuť SaveTag: záložky s AI v App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Zadarmo"
+      },
       "guide_cta_label": "Prečítať celý sprievodca",
       "publisher_disclosure": "Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -91288,7 +91678,8 @@
       "device_labels": [],
       "badge_labels": [
         "Več",
-        "Brezplačen začetek · doživljenjska odklenitev"
+        "Brezplačen začetek · doživljenjska odklenitev",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/sl-SI/index.html",
@@ -91296,9 +91687,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sl-SI.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_sl_si&mt=8",
+      "app_store_url": "https://apps.apple.com/si/app/id6802423998?pt=118326163&ct=iag_data_sl_si&mt=8",
       "app_store_cta_label": "Prenesite BattAI: Ocena stanja baterije iz trgovine App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -92621,7 +93016,8 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivnost",
-        "Brezplačen začetek · doživljenjska odklenitev"
+        "Brezplačen začetek · doživljenjska odklenitev",
+        "App Store · Brezplačno"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/sl-SI/index.html",
@@ -92629,9 +93025,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sl-SI.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_sl_si&mt=8",
+      "app_store_url": "https://apps.apple.com/si/app/id6802505528?pt=118326163&ct=iag_data_sl_si&mt=8",
       "app_store_cta_label": "Prenesite SaveTag: zaznamki z UI iz trgovine App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Brezplačno"
+      },
       "guide_cta_label": "Preberite celoten vodnik",
       "publisher_disclosure": "To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -93610,7 +94010,8 @@
       "device_labels": [],
       "badge_labels": [
         "Mer",
-        "Gratis att börja · livstidsupplåsning"
+        "Gratis att börja · livstidsupplåsning",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/sv/index.html",
@@ -93618,9 +94019,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6802423998?pt=118326163&ct=iag_data_sv&mt=8",
       "app_store_cta_label": "Hämta BattAI: Batteriets hälsopoäng i App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SEK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Läs hela guiden",
       "publisher_disclosure": "Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -94946,7 +95351,8 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitet",
-        "Gratis att börja · livstidsupplåsning"
+        "Gratis att börja · livstidsupplåsning",
+        "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/sv/index.html",
@@ -94954,9 +95360,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sv.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_sv&mt=8",
+      "app_store_url": "https://apps.apple.com/se/app/id6802505528?pt=118326163&ct=iag_data_sv&mt=8",
       "app_store_cta_label": "Hämta SaveTag: AI-bokmärken i App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "SEK",
+        "formatted_price": "Gratis"
+      },
       "guide_cta_label": "Läs hela guiden",
       "publisher_disclosure": "Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -95938,7 +96348,8 @@
       "device_labels": [],
       "badge_labels": [
         "மேலும்",
-        "இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்"
+        "இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்",
+        "App Store · இலவசம்"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ta-IN/index.html",
@@ -95946,9 +96357,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ta-IN.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_ta_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_ta_in&mt=8",
       "app_store_cta_label": "App Store-இல் BattAI: பேட்டரி நலம்-ஐப் பெறுங்கள்",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "இலவசம்"
+      },
       "guide_cta_label": "முழு வழிகாட்டியை படிக்கவும்",
       "publisher_disclosure": "இது Lumi Studio வெளியிட்ட முதல்-பார்ட்டி தரவு, இது பட்டியலிடப்பட்ட ஒவ்வொரு செயலியின் உருவாக்குநர்.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -97271,7 +97686,8 @@
       "device_labels": [],
       "badge_labels": [
         "தயாரிப்பு திறன்",
-        "இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்"
+        "இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்",
+        "App Store · இலவசம்"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ta-IN/index.html",
@@ -97279,9 +97695,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ta-IN.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_ta_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_ta_in&mt=8",
       "app_store_cta_label": "App Store-இல் SaveTag: AI புக்மார்க்-ஐப் பெறுங்கள்",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "இலவசம்"
+      },
       "guide_cta_label": "முழு வழிகாட்டியை படிக்கவும்",
       "publisher_disclosure": "இது Lumi Studio வெளியிட்ட முதல்-பார்ட்டி தரவு, இது பட்டியலிடப்பட்ட ஒவ்வொரு செயலியின் உருவாக்குநர்.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -98260,7 +98680,8 @@
       "device_labels": [],
       "badge_labels": [
         "ఇంకా",
-        "ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్"
+        "ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్",
+        "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/te-IN/index.html",
@@ -98268,9 +98689,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/te-IN.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_te_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_te_in&mt=8",
       "app_store_cta_label": "App Store నుంచి BattAI: బ్యాటరీ ఆరోగ్య స్కోర్ పొందండి",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ఉచితం"
+      },
       "guide_cta_label": "పూర్తి మార్గదర్శకాన్ని చదవండి",
       "publisher_disclosure": "ఇది Lumi Studio ద్వారా ప్రచురించబడిన స్వంత సంస్థ పదార్థం, ప్రతి జాబితా చేయబడిన యాప్ యొక్క అభివృద్ధికర్త.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -99593,7 +100018,8 @@
       "device_labels": [],
       "badge_labels": [
         "ఉత్పాదకత",
-        "ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్"
+        "ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్",
+        "App Store · ఉచితం"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/te-IN/index.html",
@@ -99601,9 +100027,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/te-IN.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_te_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_te_in&mt=8",
       "app_store_cta_label": "App Store నుంచి SaveTag: AI బుక్‌మార్క్ పొందండి",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ఉచితం"
+      },
       "guide_cta_label": "పూర్తి మార్గదర్శకాన్ని చదవండి",
       "publisher_disclosure": "ఇది Lumi Studio ద్వారా ప్రచురించబడిన స్వంత సంస్థ పదార్థం, ప్రతి జాబితా చేయబడిన యాప్ యొక్క అభివృద్ధికర్త.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -100582,7 +101012,8 @@
       "device_labels": [],
       "badge_labels": [
         "เพิ่มเติม",
-        "เริ่มใช้ฟรี · ปลดล็อกถาวร"
+        "เริ่มใช้ฟรี · ปลดล็อกถาวร",
+        "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/th/index.html",
@@ -100590,9 +101021,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/th.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_th&mt=8",
+      "app_store_url": "https://apps.apple.com/th/app/id6802423998?pt=118326163&ct=iag_data_th&mt=8",
       "app_store_cta_label": "ดาวน์โหลด BattAI: คะแนนสุขภาพแบตเตอรี่ บน App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี"
+      },
       "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
       "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -101918,7 +102353,8 @@
       "device_labels": [],
       "badge_labels": [
         "เพิ่มประสิทธิภาพ",
-        "เริ่มใช้ฟรี · ปลดล็อกถาวร"
+        "เริ่มใช้ฟรี · ปลดล็อกถาวร",
+        "App Store · ฟรี"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/th/index.html",
@@ -101926,9 +102362,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/th.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_th&mt=8",
+      "app_store_url": "https://apps.apple.com/th/app/id6802505528?pt=118326163&ct=iag_data_th&mt=8",
       "app_store_cta_label": "ดาวน์โหลด SaveTag: บุ๊กมาร์ก AI บน App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี"
+      },
       "guide_cta_label": "อ่านคู่มือฉบับเต็ม",
       "publisher_disclosure": "เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -102907,7 +103347,8 @@
       "device_labels": [],
       "badge_labels": [
         "Daha fazla",
-        "Başlangıçta ücretsiz · ömür boyu açma"
+        "Başlangıçta ücretsiz · ömür boyu açma",
+        "App Store · Ücretsiz"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/tr/index.html",
@@ -102915,9 +103356,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/tr.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_tr&mt=8",
+      "app_store_url": "https://apps.apple.com/tr/app/id6802423998?pt=118326163&ct=iag_data_tr&mt=8",
       "app_store_cta_label": "BattAI: Pil sağlığı puanı uygulamasını App Store'dan al",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TRY",
+        "formatted_price": "Ücretsiz"
+      },
       "guide_cta_label": "Kılavuzun tamamını oku",
       "publisher_disclosure": "Bu, listelenen her uygulamanın geliştiricisi Lumi Studio tarafından yayımlanan birinci taraf materyaldir.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -104240,7 +104685,8 @@
       "device_labels": [],
       "badge_labels": [
         "Verimlilik",
-        "Başlangıçta ücretsiz · ömür boyu açma"
+        "Başlangıçta ücretsiz · ömür boyu açma",
+        "App Store · Ücretsiz"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/tr/index.html",
@@ -104248,9 +104694,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/tr.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_tr&mt=8",
+      "app_store_url": "https://apps.apple.com/tr/app/id6802505528?pt=118326163&ct=iag_data_tr&mt=8",
       "app_store_cta_label": "SaveTag: yapay zekâlı yer imi uygulamasını App Store'dan al",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TRY",
+        "formatted_price": "Ücretsiz"
+      },
       "guide_cta_label": "Kılavuzun tamamını oku",
       "publisher_disclosure": "Bu, listelenen her uygulamanın geliştiricisi Lumi Studio tarafından yayımlanan birinci taraf materyaldir.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -105229,7 +105679,8 @@
       "device_labels": [],
       "badge_labels": [
         "Ще",
-        "Безкоштовно для початку · довічне розблокування"
+        "Безкоштовно для початку · довічне розблокування",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/uk/index.html",
@@ -105237,9 +105688,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/uk.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_uk&mt=8",
+      "app_store_url": "https://apps.apple.com/ua/app/id6802423998?pt=118326163&ct=iag_data_uk&mt=8",
       "app_store_cta_label": "Завантажте BattAI: Стан батареї з App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -106562,7 +107017,8 @@
       "device_labels": [],
       "badge_labels": [
         "Продуктивність",
-        "Безкоштовно для початку · довічне розблокування"
+        "Безкоштовно для початку · довічне розблокування",
+        "App Store · Безкоштовно"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/uk/index.html",
@@ -106570,9 +107026,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/uk.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_uk&mt=8",
+      "app_store_url": "https://apps.apple.com/ua/app/id6802505528?pt=118326163&ct=iag_data_uk&mt=8",
       "app_store_cta_label": "Завантажте SaveTag: закладки з ШІ з App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -107551,7 +108011,8 @@
       "device_labels": [],
       "badge_labels": [
         "مزید",
-        "مفت آغاز · مستقل ان لاک"
+        "مفت آغاز · مستقل ان لاک",
+        "App Store · مفت"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ur-PK/index.html",
@@ -107559,9 +108020,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ur-PK.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_ur_pk&mt=8",
+      "app_store_url": "https://apps.apple.com/pk/app/id6802423998?pt=118326163&ct=iag_data_ur_pk&mt=8",
       "app_store_cta_label": "App Store سے BattAI: بیٹری کی صحت کا اسکور حاصل کریں",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PKR",
+        "formatted_price": "مفت"
+      },
       "guide_cta_label": "مکمل رہنمائی پڑھیں",
       "publisher_disclosure": "یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -108884,7 +109349,8 @@
       "device_labels": [],
       "badge_labels": [
         "پیداواریت",
-        "مفت آغاز · مستقل ان لاک"
+        "مفت آغاز · مستقل ان لاک",
+        "App Store · مفت"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ur-PK/index.html",
@@ -108892,9 +109358,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ur-PK.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_ur_pk&mt=8",
+      "app_store_url": "https://apps.apple.com/pk/app/id6802505528?pt=118326163&ct=iag_data_ur_pk&mt=8",
       "app_store_cta_label": "App Store سے SaveTag: AI بک مارکس حاصل کریں",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "PKR",
+        "formatted_price": "مفت"
+      },
       "guide_cta_label": "مکمل رہنمائی پڑھیں",
       "publisher_disclosure": "یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -109873,7 +110343,8 @@
       "device_labels": [],
       "badge_labels": [
         "Khác",
-        "Bắt đầu miễn phí · mở khóa vĩnh viễn"
+        "Bắt đầu miễn phí · mở khóa vĩnh viễn",
+        "App Store · Miễn phí"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/vi/index.html",
@@ -109881,9 +110352,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/vi.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_vi&mt=8",
+      "app_store_url": "https://apps.apple.com/vn/app/id6802423998?pt=118326163&ct=iag_data_vi&mt=8",
       "app_store_cta_label": "Tải BattAI: Điểm tình trạng pin trên App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "VND",
+        "formatted_price": "Miễn phí"
+      },
       "guide_cta_label": "Đọc toàn bộ hướng dẫn",
       "publisher_disclosure": "Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -111206,7 +111681,8 @@
       "device_labels": [],
       "badge_labels": [
         "Năng suất",
-        "Bắt đầu miễn phí · mở khóa vĩnh viễn"
+        "Bắt đầu miễn phí · mở khóa vĩnh viễn",
+        "App Store · Miễn phí"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/vi/index.html",
@@ -111214,9 +111690,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/vi.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_vi&mt=8",
+      "app_store_url": "https://apps.apple.com/vn/app/id6802505528?pt=118326163&ct=iag_data_vi&mt=8",
       "app_store_cta_label": "Tải SaveTag: dấu trang bằng AI trên App Store",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "VND",
+        "formatted_price": "Miễn phí"
+      },
       "guide_cta_label": "Đọc toàn bộ hướng dẫn",
       "publisher_disclosure": "Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -112195,7 +112675,8 @@
       "device_labels": [],
       "badge_labels": [
         "更多",
-        "免费开始使用 · 永久解锁"
+        "免费开始使用 · 永久解锁",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/zh-Hans/index.html",
@@ -112203,9 +112684,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hans.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "app_store_url": "https://apps.apple.com/cn/app/id6802423998?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "app_store_cta_label": "在 App Store 获取 BattAI: 电池健康评分",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -113493,7 +113978,8 @@
       "device_labels": [],
       "badge_labels": [
         "效率",
-        "免费开始使用 · 永久解锁"
+        "免费开始使用 · 永久解锁",
+        "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/zh-Hans/index.html",
@@ -113501,9 +113987,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hans.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "app_store_url": "https://apps.apple.com/cn/app/id6802505528?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "app_store_cta_label": "在 App Store 获取 SaveTag:AI 链接收藏",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费"
+      },
       "guide_cta_label": "阅读完整指南",
       "publisher_disclosure": "这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。",
       "source_persona_query": "best app to save links from other apps on iphone",
@@ -114494,7 +114984,8 @@
       "device_labels": [],
       "badge_labels": [
         "更多",
-        "免費開始 · 一次購買解鎖"
+        "免費開始 · 一次購買解鎖",
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/zh-Hant/index.html",
@@ -114502,9 +114993,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=iag_data_zh_hant&mt=8",
       "app_store_cta_label": "在 App Store 取得 BattAI: 電池健康分數",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -115872,7 +116367,8 @@
       "device_labels": [],
       "badge_labels": [
         "效率工具",
-        "免費開始 · 一次購買解鎖"
+        "免費開始 · 一次購買解鎖",
+        "App Store · 免費"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/zh-Hant/index.html",
@@ -115880,9 +116376,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hant.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_zh_hant&mt=8",
+      "app_store_url": "https://apps.apple.com/tw/app/id6802505528?pt=118326163&ct=iag_data_zh_hant&mt=8",
       "app_store_cta_label": "在 App Store 取得 SaveTag:AI 連結收藏",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費"
+      },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。",
       "source_persona_query": "best app to save links from other apps on iphone",

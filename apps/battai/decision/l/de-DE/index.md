@@ -15,8 +15,9 @@ BattAI • BattAI nutzt fünf Werte aus öffentlichen iOS-APIs: Batteriestand, L
 
 - Mehr
 - Kostenloser Einstieg · dauerhafte Freischaltung
+- App Store · Kostenlos
 
-[BattAI: Batteriezustandswert im App Store laden](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_de_de&mt=8)
+[BattAI: Batteriezustandswert im App Store laden](https://apps.apple.com/de/app/id6802423998?pt=118326163&ct=iag_data_de_de&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/battai.html)
 

@@ -15,8 +15,9 @@ BattAI • BattAI utilitza cinc dades de les API públiques d’iOS: nivell de b
 
 - Més
 - Inici gratuït · desbloqueig de per vida
+- App Store · Gratis
 
-[Descarrega BattAI: Salut de la bateria a l’App Store](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_ca&mt=8)
+[Descarrega BattAI: Salut de la bateria a l’App Store](https://apps.apple.com/es/app/id6802423998?pt=118326163&ct=iag_data_ca&mt=8)
 
 [Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/battai.html)
 

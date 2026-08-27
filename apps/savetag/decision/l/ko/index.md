@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - 생산성
 - 무료로 시작 · 한 번 구매 잠금 해제
+- App Store · 무료
 
-[App Store에서 SaveTag: AI 링크 보관함 받기](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_ko&mt=8)
+[App Store에서 SaveTag: AI 링크 보관함 받기](https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=iag_data_ko&mt=8)
 
 [전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/savetag.html)
 

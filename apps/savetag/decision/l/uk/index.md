@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - Продуктивність
 - Безкоштовно для початку · довічне розблокування
+- App Store · Безкоштовно
 
-[Завантажте SaveTag: закладки з ШІ з App Store](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_uk&mt=8)
+[Завантажте SaveTag: закладки з ШІ з App Store](https://apps.apple.com/ua/app/id6802505528?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/savetag.html)
 

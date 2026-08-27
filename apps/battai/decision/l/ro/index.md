@@ -15,8 +15,9 @@ BattAI • BattAI folosește cinci valori din API-urile publice iOS: nivelul bat
 
 - Mai mult
 - Început gratuit · deblocare pe viață
+- App Store · Gratuit
 
-[Descarcă BattAI: Sănătatea bateriei din App Store](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_ro&mt=8)
+[Descarcă BattAI: Sănătatea bateriei din App Store](https://apps.apple.com/ro/app/id6802423998?pt=118326163&ct=iag_data_ro&mt=8)
 
 [Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/battai.html)
 

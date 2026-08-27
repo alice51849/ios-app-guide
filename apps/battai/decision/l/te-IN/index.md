@@ -15,8 +15,9 @@ BattAI • BattAI పబ్లిక్ iOS APIల నుంచి 5 విల�
 
 - ఇంకా
 - ఉచితంగా ప్రారంభించండి · జీవితకాల అన్లాక్
+- App Store · ఉచితం
 
-[App Store నుంచి BattAI: బ్యాటరీ ఆరోగ్య స్కోర్ పొందండి](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_te_in&mt=8)
+[App Store నుంచి BattAI: బ్యాటరీ ఆరోగ్య స్కోర్ పొందండి](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/battai.html)
 

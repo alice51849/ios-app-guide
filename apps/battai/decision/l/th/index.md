@@ -15,8 +15,9 @@ BattAI • BattAI ใช้ข้อมูล 5 อย่างจาก API ส
 
 - เพิ่มเติม
 - เริ่มใช้ฟรี · ปลดล็อกถาวร
+- App Store · ฟรี
 
-[ดาวน์โหลด BattAI: คะแนนสุขภาพแบตเตอรี่ บน App Store](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_th&mt=8)
+[ดาวน์โหลด BattAI: คะแนนสุขภาพแบตเตอรี่ บน App Store](https://apps.apple.com/th/app/id6802423998?pt=118326163&ct=iag_data_th&mt=8)
 
 [อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/battai.html)
 

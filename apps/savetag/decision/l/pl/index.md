@@ -15,8 +15,9 @@ Zapisz teraz. I tym razem naprawdę przeczytaj. Cały dzień wysyłasz linki sam
 
 - Produktywność
 - Darmowe na start · dożywotni dostęp
+- App Store · Bezpłatnie
 
-[Pobierz SaveTag: zakładki z AI z App Store](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_pl&mt=8)
+[Pobierz SaveTag: zakładki z AI z App Store](https://apps.apple.com/pl/app/id6802505528?pt=118326163&ct=iag_data_pl&mt=8)
 
 [Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/savetag.html)
 

@@ -15,8 +15,9 @@ Simpan sekarang. Dan kali ini betul-betul dibaca. Sepanjang hari anda menghantar
 
 - Produktiviti
 - Percuma untuk bermula · buka kunci kekal
+- App Store · Percuma
 
-[Dapatkan SaveTag: penanda buku AI di App Store](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_ms&mt=8)
+[Dapatkan SaveTag: penanda buku AI di App Store](https://apps.apple.com/my/app/id6802505528?pt=118326163&ct=iag_data_ms&mt=8)
 
 [Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/savetag.html)
 

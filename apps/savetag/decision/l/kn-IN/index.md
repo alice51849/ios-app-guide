@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - ಉತ್ಪಾದಕತೆ
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ · ಜೀವನಕಾಲ ಅನ್ಲಾಕ್
+- App Store · ಉಚಿತ
 
-[App Store ನಲ್ಲಿ SaveTag: AI ಬುಕ್‌ಮಾರ್ಕ್ ಪಡೆಯಿರಿ](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_kn_in&mt=8)
+[App Store ನಲ್ಲಿ SaveTag: AI ಬುಕ್‌ಮಾರ್ಕ್ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_kn_in&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/savetag.html)
 

@@ -15,8 +15,9 @@ Tallenna nyt. Lue oikeasti myöhemmin. Lähetät itsellesi linkkejä pitkin päi
 
 - Tuottavuus
 - Ilmainen aloitus · elinikäinen avaus
+- App Store · Ilmainen
 
-[Lataa SaveTag: tekoälykirjanmerkit App Storesta](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_fi&mt=8)
+[Lataa SaveTag: tekoälykirjanmerkit App Storesta](https://apps.apple.com/fi/app/id6802505528?pt=118326163&ct=iag_data_fi&mt=8)
 
 [Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/savetag.html)
 

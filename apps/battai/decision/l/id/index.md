@@ -15,8 +15,9 @@ BattAI • BattAI memakai 5 nilai dari API publik iOS: tingkat baterai, status p
 
 - Lainnya
 - Gratis untuk mulai · buka kunci permanen
+- App Store · Gratis
 
-[Dapatkan BattAI: Skor kesehatan baterai di App Store](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_id&mt=8)
+[Dapatkan BattAI: Skor kesehatan baterai di App Store](https://apps.apple.com/id/app/id6802423998?pt=118326163&ct=iag_data_id&mt=8)
 
 [Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/battai.html)
 

@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - ଦକ୍ଷତା
 - ମୁକ୍ତ ଆରମ୍ଭ · ଜୀବନକାଳ ଅନଲକ୍
+- App Store · ମାଗଣା
 
-[App Store ରୁ SaveTag: AI ବୁକମାର୍କ ପାଆନ୍ତୁ](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_or_in&mt=8)
+[App Store ରୁ SaveTag: AI ବୁକମାର୍କ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_or_in&mt=8)
 
 [ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/savetag.html)
 

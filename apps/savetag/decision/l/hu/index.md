@@ -15,8 +15,9 @@ Mentsd el most. És most tényleg olvasd is el. Egész nap linkeket küldözgets
 
 - Produktivitás
 - Ingyenes kezdés · életre szóló feloldás
+- App Store · Ingyenes
 
-[Töltse le a(z) SaveTag: AI könyvjelzők appot az App Store-ból](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_hu&mt=8)
+[Töltse le a(z) SaveTag: AI könyvjelzők appot az App Store-ból](https://apps.apple.com/hu/app/id6802505528?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/savetag.html)
 

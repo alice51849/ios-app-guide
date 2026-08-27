@@ -15,8 +15,9 @@ Nu bewaren. En deze keer ook echt lezen. De hele dag stuur je jezelf links. Het 
 
 - Productiviteit
 - Gratis te starten · levenslange ontgrendeling
+- App Store · Gratis
 
-[Download SaveTag: AI-bladwijzers in de App Store](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_nl_nl&mt=8)
+[Download SaveTag: AI-bladwijzers in de App Store](https://apps.apple.com/nl/app/id6802505528?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
 [Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/savetag.html)
 

@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ml-IN",
   "dateModified": "2026-08-27",
-  "content_digest": "4e6a52c0d87908bdf14c945134f1a2f7f39772e00baa08b4d3cc64e05ef2a37f",
-  "generation_digest": "54c7803f86d4f72f41e38c09a21a6d3a6dd098e0461798c68abefe5f8bda8bc4",
+  "content_digest": "90121e4124828d25fb1b345b206d4d68ce7631c344c3f91be98f83a17e8082df",
+  "generation_digest": "dd9c49685be26c62267e987c13ee766d52da4d5733c5f578bdf3e90933792a43",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -373,7 +373,8 @@
       "device_labels": [],
       "badge_labels": [
         "കൂടുതൽ",
-        "സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്"
+        "സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്",
+        "App Store · സൗജന്യം"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/battai.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ml-IN/index.html",
@@ -381,9 +382,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ml-IN.json",
       "app_store_id": "6802423998",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_ml_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_ml_in&mt=8",
       "app_store_cta_label": "App Store-ൽ നിന്ന് BattAI: ബാറ്ററി ആരോഗ്യ സ്കോർ നേടൂ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം"
+      },
       "guide_cta_label": "പൂർണ്ണ ഗൈഡ് വായിക്കുക",
       "publisher_disclosure": "ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.",
       "source_persona_query": "best iphone battery health app with honest estimates and report",
@@ -1706,7 +1711,8 @@
       "device_labels": [],
       "badge_labels": [
         "ഉത്പാദനക്ഷമത",
-        "സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്"
+        "സൗജന്യമായി ആരംഭിക്കുക · ജീവിതകാലം അൺലോക്ക്",
+        "App Store · സൗജന്യം"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/savetag.html",
       "decision_page_url": "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ml-IN/index.html",
@@ -1714,9 +1720,13 @@
       "locale_index_url": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ml-IN.json",
       "app_store_id": "6802505528",
       "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_ml_in&mt=8",
+      "app_store_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_ml_in&mt=8",
       "app_store_cta_label": "App Store-ൽ നിന്ന് SaveTag: AI ബുക്ക്മാർക്ക് നേടൂ",
-      "storefront_facts": null,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം"
+      },
       "guide_cta_label": "പൂർണ്ണ ഗൈഡ് വായിക്കുക",
       "publisher_disclosure": "ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.",
       "source_persona_query": "best app to save links from other apps on iphone",

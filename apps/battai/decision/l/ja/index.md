@@ -15,8 +15,9 @@ BattAI • BattAIが公開iOS APIから使うのは、電池残量、充電状�
 
 - その他
 - 無料で開始・買い切りで永久解除
+- App Store · 無料
 
-[App Store で BattAI: バッテリー状態スコア を入手](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_ja&mt=8)
+[App Store で BattAI: バッテリー状態スコア を入手](https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/battai.html)
 

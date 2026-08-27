@@ -15,8 +15,9 @@ Ulož teraz. A tentoraz to naozaj prečítaj. Celý deň si posielaš odkazy. Re
 
 - Produktivita
 - Zadarmo na začiatok · doživotné odomknutie
+- App Store · Zadarmo
 
-[Stiahnuť SaveTag: záložky s AI v App Store](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_sk&mt=8)
+[Stiahnuť SaveTag: záložky s AI v App Store](https://apps.apple.com/sk/app/id6802505528?pt=118326163&ct=iag_data_sk&mt=8)
 
 [Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/savetag.html)
 

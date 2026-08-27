@@ -15,8 +15,9 @@ Gardez-le maintenant. Lisez-le pour vrai plus tard. Toute la journée, vous vous
 
 - Productivité
 - Gratuit au départ · déverrouillage définitif
+- App Store · Gratuit
 
-[Obtenir SaveTag : signets par IA sur l'App Store](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_fr_ca&mt=8)
+[Obtenir SaveTag : signets par IA sur l'App Store](https://apps.apple.com/ca/app/id6802505528?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
 [Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/savetag.html)
 

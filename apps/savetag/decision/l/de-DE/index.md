@@ -15,8 +15,9 @@ Jetzt sichern. Und diesmal wirklich lesen. Den ganzen Tag schickst du dir selbst
 
 - Produktivität
 - Kostenloser Einstieg · dauerhafte Freischaltung
+- App Store · Kostenlos
 
-[SaveTag: KI Lesezeichen im App Store laden](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_de_de&mt=8)
+[SaveTag: KI Lesezeichen im App Store laden](https://apps.apple.com/de/app/id6802505528?pt=118326163&ct=iag_data_de_de&mt=8)
 
 [Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/savetag.html)
 

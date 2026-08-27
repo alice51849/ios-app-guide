@@ -15,8 +15,9 @@ BattAI • BattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu b
 
 - Više
 - Besplatno za početak · doživotno otključavanje
+- App Store · Besplatno
 
-[Preuzmite BattAI: Ocjena stanja baterije u App Storeu](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite BattAI: Ocjena stanja baterije u App Storeu](https://apps.apple.com/hr/app/id6802423998?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/battai.html)
 

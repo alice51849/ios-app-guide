@@ -15,8 +15,9 @@ BattAI • BattAI सार्वजनिक iOS API मधून 5 मूल�
 
 - अधिक
 - सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक
+- App Store · मोफत
 
-[App Store वरून BattAI: बॅटरी आरोग्य गुण मिळवा](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_mr_in&mt=8)
+[App Store वरून BattAI: बॅटरी आरोग्य गुण मिळवा](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_mr_in&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/battai.html)
 

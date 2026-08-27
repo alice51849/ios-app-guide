@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - 效率工具
 - 免費開始 · 一次購買解鎖
+- App Store · 免費
 
-[在 App Store 取得 SaveTag:AI 連結收藏](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_zh_hant&mt=8)
+[在 App Store 取得 SaveTag:AI 連結收藏](https://apps.apple.com/tw/app/id6802505528?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
 [閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/savetag.html)
 

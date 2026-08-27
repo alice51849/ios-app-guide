@@ -2,7 +2,7 @@
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-08-27",
-  "content_digest": "7848bf04fd447836dc9fe1da73ae527a28fec2a9f0cdb39fd4ea865dd3ddc29f",
+  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
   "locale": "nl-NL",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -191,9 +191,15 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_api_nl_nl&mt=8",
+      "app_store_url": "https://apps.apple.com/nl/app/id6802423998?pt=118326163&ct=iag_api_nl_nl&mt=8",
       "guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/battai.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6802423998"
+      }
     },
     {
       "key": "caldaily",
@@ -1610,9 +1616,15 @@
         "widget": false,
         "apple_watch": false
       },
-      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_api_nl_nl&mt=8",
+      "app_store_url": "https://apps.apple.com/nl/app/id6802505528?pt=118326163&ct=iag_api_nl_nl&mt=8",
       "guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/savetag.html",
-      "verified_live": true
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6802505528"
+      }
     },
     {
       "key": "scanto",

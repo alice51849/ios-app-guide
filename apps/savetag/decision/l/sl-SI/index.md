@@ -15,8 +15,9 @@ Shrani zdaj. In tokrat res preberi. Ves dan si pošiljaš povezave. Recept od pr
 
 - Produktivnost
 - Brezplačen začetek · doživljenjska odklenitev
+- App Store · Brezplačno
 
-[Prenesite SaveTag: zaznamki z UI iz trgovine App Store](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite SaveTag: zaznamki z UI iz trgovine App Store](https://apps.apple.com/si/app/id6802505528?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/savetag.html)
 

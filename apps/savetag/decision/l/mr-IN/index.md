@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - उत्पादकता
 - सुरुवात करण्यासाठी मोफत · आयुष्यभर अनलॉक
+- App Store · मोफत
 
-[App Store वरून SaveTag: AI बुकमार्क मिळवा](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_mr_in&mt=8)
+[App Store वरून SaveTag: AI बुकमार्क मिळवा](https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_mr_in&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/savetag.html)
 

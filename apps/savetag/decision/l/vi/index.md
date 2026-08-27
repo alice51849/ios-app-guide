@@ -15,8 +15,9 @@ Lưu ngay bây giờ. Và lần này đọc thật. Cả ngày bạn gửi liên
 
 - Năng suất
 - Bắt đầu miễn phí · mở khóa vĩnh viễn
+- App Store · Miễn phí
 
-[Tải SaveTag: dấu trang bằng AI trên App Store](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_vi&mt=8)
+[Tải SaveTag: dấu trang bằng AI trên App Store](https://apps.apple.com/vn/app/id6802505528?pt=118326163&ct=iag_data_vi&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/savetag.html)
 

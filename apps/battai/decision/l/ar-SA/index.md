@@ -15,8 +15,9 @@ BattAI • يستخدم ⁦BattAI⁩ خمس قيم من واجهات ⁦iOS API�
 
 - المزيد
 - بدء مجاني · فتح دائم
+- App Store · مجاني
 
-[احصل على BattAI: نتيجة صحة البطارية من App Store](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_ar_sa&mt=8)
+[احصل على BattAI: نتيجة صحة البطارية من App Store](https://apps.apple.com/sa/app/id6802423998?pt=118326163&ct=iag_data_ar_sa&mt=8)
 
 [اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/battai.html)
 

@@ -6,8 +6,8 @@
   "name": "Lumi Studio 开发者搜索意图目录",
   "description": "第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。",
   "inLanguage": "zh-Hans",
-  "dateModified": "2026-08-26",
-  "numberOfItems": 44,
+  "dateModified": "2026-08-27",
+  "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -277,6 +277,72 @@
     {
       "@type": "ListItem",
       "position": 5,
+      "url": "https://apps.apple.com/cn/app/id6802423998?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-battai",
+        "url": "https://apps.apple.com/cn/app/id6802423998?pt=118326163&ct=iag_data_zh_hans&mt=8",
+        "name": "BattAI: 电池健康评分",
+        "description": "BattAI • BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。 • BattAI 没有账户、遥测、广告或网络请求。数据留在这台设备上，只会把功能受限的最小快照直接发给已配对的 Apple Watch。取样频率受限，分析最快每 5 分钟一次；估算使用区间，缺失数据保持缺失。",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802423998",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802423998"
+          },
+          "name": "BattAI: 电池健康评分",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/cn/app/id6802423998?pt=118326163&ct=iag_data_zh_hans&mt=8",
+          "installUrl": "https://apps.apple.com/cn/app/id6802423998?pt=118326163&ct=iag_data_zh_hans&mt=8",
+          "downloadUrl": "https://apps.apple.com/cn/app/id6802423998?pt=118326163&ct=iag_data_zh_hans&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/cn/app/id6802423998?pt=118326163&ct=iag_data_zh_hans&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/zh-Hans/battai.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802423998",
+          "inLanguage": "zh-Hans",
+          "description": "BattAI • BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。 • BattAI 没有账户、遥测、广告或网络请求。数据留在这台设备上，只会把功能受限的最小快照直接发给已配对的 Apple Watch。取样频率受限，分析最快每 5 分钟一次；估算使用区间，缺失数据保持缺失。",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-battai"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CNY",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CN"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
       "url": "https://apps.apple.com/cn/app/id6794178671?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -342,7 +408,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 6,
+      "position": 7,
       "url": "https://apps.apple.com/cn/app/id6781337213?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -408,7 +474,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 7,
+      "position": 8,
       "url": "https://apps.apple.com/cn/app/id6782251621?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -474,7 +540,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 8,
+      "position": 9,
       "url": "https://apps.apple.com/cn/app/id6790418321?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -540,7 +606,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 9,
+      "position": 10,
       "url": "https://apps.apple.com/cn/app/id6794725568?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -606,7 +672,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 10,
+      "position": 11,
       "url": "https://apps.apple.com/cn/app/id6755782939?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -672,7 +738,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 11,
+      "position": 12,
       "url": "https://apps.apple.com/cn/app/id6793436548?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -738,7 +804,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 12,
+      "position": 13,
       "url": "https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -804,7 +870,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 13,
+      "position": 14,
       "url": "https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -870,7 +936,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 14,
+      "position": 15,
       "url": "https://apps.apple.com/cn/app/id6780107485?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -936,7 +1002,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 15,
+      "position": 16,
       "url": "https://apps.apple.com/app/id6773017109?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -994,7 +1060,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 16,
+      "position": 17,
       "url": "https://apps.apple.com/app/id6775773117?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1052,7 +1118,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 17,
+      "position": 18,
       "url": "https://apps.apple.com/app/id6778748533?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1110,7 +1176,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 18,
+      "position": 19,
       "url": "https://apps.apple.com/app/id6778491147?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1168,7 +1234,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 19,
+      "position": 20,
       "url": "https://apps.apple.com/app/id6778269699?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1226,7 +1292,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 21,
       "url": "https://apps.apple.com/app/id6776958488?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1284,7 +1350,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 22,
       "url": "https://apps.apple.com/cn/app/id6779750237?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1350,7 +1416,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
+      "position": 23,
       "url": "https://apps.apple.com/cn/app/id6779745474?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1416,7 +1482,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
+      "position": 24,
       "url": "https://apps.apple.com/app/id6787193643?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1474,7 +1540,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 25,
       "url": "https://apps.apple.com/cn/app/id6779552704?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1540,7 +1606,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
+      "position": 26,
       "url": "https://apps.apple.com/cn/app/id6792850916?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1606,7 +1672,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
+      "position": 27,
       "url": "https://apps.apple.com/cn/app/id6785004775?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1672,7 +1738,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 28,
       "url": "https://apps.apple.com/cn/app/id6790800323?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1738,7 +1804,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 29,
       "url": "https://apps.apple.com/cn/app/id6801956402?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1804,7 +1870,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 30,
       "url": "https://apps.apple.com/cn/app/id6798814385?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1870,7 +1936,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 31,
       "url": "https://apps.apple.com/cn/app/id6781808054?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -1936,7 +2002,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 32,
       "url": "https://apps.apple.com/cn/app/id6780223070?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2002,7 +2068,73 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 33,
+      "url": "https://apps.apple.com/cn/app/id6802505528?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-savetag",
+        "url": "https://apps.apple.com/cn/app/id6802505528?pt=118326163&ct=iag_data_zh_hans&mt=8",
+        "name": "SaveTag:AI 链接收藏",
+        "description": "先存下来,而且这次真的会看完。 你每天都在给自己发链接。朋友分享的菜谱、看中的外套、说好要看的视频、想再读一遍的帖子。它们散落在聊天记录、备忘录和截图里,然后就再也找不到了。",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802505528",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802505528"
+          },
+          "name": "SaveTag:AI 链接收藏",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/cn/app/id6802505528?pt=118326163&ct=iag_data_zh_hans&mt=8",
+          "installUrl": "https://apps.apple.com/cn/app/id6802505528?pt=118326163&ct=iag_data_zh_hans&mt=8",
+          "downloadUrl": "https://apps.apple.com/cn/app/id6802505528?pt=118326163&ct=iag_data_zh_hans&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/cn/app/id6802505528?pt=118326163&ct=iag_data_zh_hans&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/zh-Hans/savetag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802505528",
+          "inLanguage": "zh-Hans",
+          "description": "先存下来,而且这次真的会看完。 你每天都在给自己发链接。朋友分享的菜谱、看中的外套、说好要看的视频、想再读一遍的帖子。它们散落在聊天记录、备忘录和截图里,然后就再也找不到了。",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-savetag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CNY",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CN"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
       "url": "https://apps.apple.com/cn/app/id6779977651?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2068,7 +2200,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 35,
       "url": "https://apps.apple.com/cn/app/id6788236641?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2134,7 +2266,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 36,
       "url": "https://apps.apple.com/cn/app/id6802166527?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2200,7 +2332,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 37,
       "url": "https://apps.apple.com/cn/app/id6780575828?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2266,7 +2398,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 38,
       "url": "https://apps.apple.com/cn/app/id6792856304?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2332,7 +2464,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 39,
       "url": "https://apps.apple.com/cn/app/id6782139553?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2398,7 +2530,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 40,
       "url": "https://apps.apple.com/cn/app/id6791299610?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2464,7 +2596,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 41,
       "url": "https://apps.apple.com/cn/app/id6787754435?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2530,7 +2662,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 42,
       "url": "https://apps.apple.com/cn/app/id6782275018?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2596,7 +2728,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 43,
       "url": "https://apps.apple.com/cn/app/id6790467886?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2662,7 +2794,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 44,
       "url": "https://apps.apple.com/cn/app/id6793414462?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2728,7 +2860,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 45,
       "url": "https://apps.apple.com/cn/app/id6797601720?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",
@@ -2794,7 +2926,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 46,
       "url": "https://apps.apple.com/cn/app/id6789917808?pt=118326163&ct=iag_data_zh_hans&mt=8",
       "item": {
         "@type": "Offer",

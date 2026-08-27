@@ -15,8 +15,9 @@ BattAI • BattAI ਜਨਤਕ iOS API ਤੋਂ ਪੰਜ ਮੁੱਲ ਵਰ�
 
 - ਹੋਰ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ
+- App Store · ਮੁਫ਼ਤ
 
-[App Store ਤੋਂ BattAI: ਬੈਟਰੀ ਸਿਹਤ ਸਕੋਰ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_pa_in&mt=8)
+[App Store ਤੋਂ BattAI: ਬੈਟਰੀ ਸਿਹਤ ਸਕੋਰ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_pa_in&mt=8)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/battai.html)
 

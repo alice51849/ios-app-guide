@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - தயாரிப்பு திறன்
 - இலவசமாக தொடங்கவும் · ஆயுள் முழுவதும் திறக்கவும்
+- App Store · இலவசம்
 
-[App Store-இல் SaveTag: AI புக்மார்க்-ஐப் பெறுங்கள்](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_ta_in&mt=8)
+[App Store-இல் SaveTag: AI புக்மார்க்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_ta_in&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/savetag.html)
 

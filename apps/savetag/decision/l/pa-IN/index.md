@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - ਉਤਪਾਦਕਤਾ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਸਦਾ ਲਈ ਅਨਲੌਕ
+- App Store · ਮੁਫ਼ਤ
 
-[App Store ਤੋਂ SaveTag: AI ਬੁੱਕਮਾਰਕ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_pa_in&mt=8)
+[App Store ਤੋਂ SaveTag: AI ਬੁੱਕਮਾਰਕ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_pa_in&mt=8)
 
 [ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/savetag.html)
 

@@ -15,8 +15,9 @@ Spremi sada. I ovaj put stvarno pročitaj. Cijeli dan šalješ poveznice sam seb
 
 - Produktivnost
 - Besplatno za početak · doživotno otključavanje
+- App Store · Besplatno
 
-[Preuzmite SaveTag: AI oznake u App Storeu](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_hr&mt=8)
+[Preuzmite SaveTag: AI oznake u App Storeu](https://apps.apple.com/hr/app/id6802505528?pt=118326163&ct=iag_data_hr&mt=8)
 
 [Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/savetag.html)
 

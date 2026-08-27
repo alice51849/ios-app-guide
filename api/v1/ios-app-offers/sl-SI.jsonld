@@ -6,8 +6,8 @@
   "name": "Katalog iskalnih namenov založnika Lumi Studio",
   "description": "Katalog prve roke, ki opisuje, za koga je vsaka aplikacija namenjena, katero nalogo poskuša uporabnik opraviti in neposredno pot do App Store.",
   "inLanguage": "sl-SI",
-  "dateModified": "2026-08-26",
-  "numberOfItems": 44,
+  "dateModified": "2026-08-27",
+  "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -277,6 +277,72 @@
     {
       "@type": "ListItem",
       "position": 5,
+      "url": "https://apps.apple.com/si/app/id6802423998?pt=118326163&ct=iag_data_sl_si&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/sl-SI.jsonld#offer-battai",
+        "url": "https://apps.apple.com/si/app/id6802423998?pt=118326163&ct=iag_data_sl_si&mt=8",
+        "name": "BattAI: Ocena stanja baterije",
+        "description": "BattAI • BattAI uporablja pet vrednosti iz javnih API-jev iOS: raven baterije, stanje polnjenja, varčni način, toplotno stanje celotne naprave in čas. Drugi rezultati so izračunani iz teh meritev ali jih dodate vi. Vsak podatek prikazuje vir in omejitve. • BattAI nima računa, telemetrije, oglasov ali omrežnih zahtev. Podatki ostanejo v tej napravi, razen minimalnega funkcijsko omejenega posnetka, ki se pošlje neposredno seznanjeni uri Apple Watch. Vzorčenje je omejeno, analiza se izvede največ vsakih pet minut, ocene uporabljajo razpone, manjkajoči podatki pa ostanejo manjkajoči.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802423998",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802423998"
+          },
+          "name": "BattAI: Ocena stanja baterije",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/si/app/id6802423998?pt=118326163&ct=iag_data_sl_si&mt=8",
+          "installUrl": "https://apps.apple.com/si/app/id6802423998?pt=118326163&ct=iag_data_sl_si&mt=8",
+          "downloadUrl": "https://apps.apple.com/si/app/id6802423998?pt=118326163&ct=iag_data_sl_si&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/si/app/id6802423998?pt=118326163&ct=iag_data_sl_si&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/sl-SI/battai.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802423998",
+          "inLanguage": "sl-SI",
+          "description": "BattAI • BattAI uporablja pet vrednosti iz javnih API-jev iOS: raven baterije, stanje polnjenja, varčni način, toplotno stanje celotne naprave in čas. Drugi rezultati so izračunani iz teh meritev ali jih dodate vi. Vsak podatek prikazuje vir in omejitve. • BattAI nima računa, telemetrije, oglasov ali omrežnih zahtev. Podatki ostanejo v tej napravi, razen minimalnega funkcijsko omejenega posnetka, ki se pošlje neposredno seznanjeni uri Apple Watch. Vzorčenje je omejeno, analiza se izvede največ vsakih pet minut, ocene uporabljajo razpone, manjkajoči podatki pa ostanejo manjkajoči.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/sl-SI.jsonld#offer-battai"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "SI"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
       "url": "https://apps.apple.com/si/app/id6794178671?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -342,7 +408,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 6,
+      "position": 7,
       "url": "https://apps.apple.com/si/app/id6781337213?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -408,7 +474,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 7,
+      "position": 8,
       "url": "https://apps.apple.com/si/app/id6782251621?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -474,7 +540,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 8,
+      "position": 9,
       "url": "https://apps.apple.com/si/app/id6790418321?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -540,7 +606,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 9,
+      "position": 10,
       "url": "https://apps.apple.com/si/app/id6794725568?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -606,7 +672,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 10,
+      "position": 11,
       "url": "https://apps.apple.com/si/app/id6755782939?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -672,7 +738,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 11,
+      "position": 12,
       "url": "https://apps.apple.com/si/app/id6793436548?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -738,7 +804,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 12,
+      "position": 13,
       "url": "https://apps.apple.com/si/app/id6794039979?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -804,7 +870,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 13,
+      "position": 14,
       "url": "https://apps.apple.com/si/app/id6754218117?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -870,7 +936,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 14,
+      "position": 15,
       "url": "https://apps.apple.com/si/app/id6780107485?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -936,7 +1002,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 15,
+      "position": 16,
       "url": "https://apps.apple.com/si/app/id6773017109?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -1002,7 +1068,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 16,
+      "position": 17,
       "url": "https://apps.apple.com/si/app/id6775773117?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -1068,7 +1134,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 17,
+      "position": 18,
       "url": "https://apps.apple.com/si/app/id6778748533?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -1134,7 +1200,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 18,
+      "position": 19,
       "url": "https://apps.apple.com/si/app/id6778491147?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -1200,7 +1266,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 19,
+      "position": 20,
       "url": "https://apps.apple.com/si/app/id6778269699?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -1266,7 +1332,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 21,
       "url": "https://apps.apple.com/si/app/id6776958488?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -1332,7 +1398,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 22,
       "url": "https://apps.apple.com/si/app/id6779750237?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -1398,7 +1464,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
+      "position": 23,
       "url": "https://apps.apple.com/si/app/id6779745474?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -1464,7 +1530,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
+      "position": 24,
       "url": "https://apps.apple.com/si/app/id6787193643?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -1530,7 +1596,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 25,
       "url": "https://apps.apple.com/si/app/id6779552704?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -1596,7 +1662,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
+      "position": 26,
       "url": "https://apps.apple.com/si/app/id6792850916?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -1662,7 +1728,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
+      "position": 27,
       "url": "https://apps.apple.com/si/app/id6785004775?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -1728,7 +1794,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 28,
       "url": "https://apps.apple.com/si/app/id6790800323?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -1794,7 +1860,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 29,
       "url": "https://apps.apple.com/si/app/id6801956402?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -1860,7 +1926,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 30,
       "url": "https://apps.apple.com/si/app/id6798814385?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -1926,7 +1992,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 31,
       "url": "https://apps.apple.com/si/app/id6781808054?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -1992,7 +2058,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 32,
       "url": "https://apps.apple.com/si/app/id6780223070?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -2058,7 +2124,73 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 33,
+      "url": "https://apps.apple.com/si/app/id6802505528?pt=118326163&ct=iag_data_sl_si&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/sl-SI.jsonld#offer-savetag",
+        "url": "https://apps.apple.com/si/app/id6802505528?pt=118326163&ct=iag_data_sl_si&mt=8",
+        "name": "SaveTag: zaznamki z UI",
+        "description": "Shrani zdaj. In tokrat res preberi.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802505528",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802505528"
+          },
+          "name": "SaveTag: zaznamki z UI",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/si/app/id6802505528?pt=118326163&ct=iag_data_sl_si&mt=8",
+          "installUrl": "https://apps.apple.com/si/app/id6802505528?pt=118326163&ct=iag_data_sl_si&mt=8",
+          "downloadUrl": "https://apps.apple.com/si/app/id6802505528?pt=118326163&ct=iag_data_sl_si&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/si/app/id6802505528?pt=118326163&ct=iag_data_sl_si&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/sl-SI/savetag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802505528",
+          "inLanguage": "sl-SI",
+          "description": "Shrani zdaj. In tokrat res preberi.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/sl-SI.jsonld#offer-savetag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "SI"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
       "url": "https://apps.apple.com/si/app/id6779977651?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -2124,7 +2256,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 35,
       "url": "https://apps.apple.com/si/app/id6788236641?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -2190,7 +2322,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 36,
       "url": "https://apps.apple.com/si/app/id6802166527?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -2256,7 +2388,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 37,
       "url": "https://apps.apple.com/si/app/id6780575828?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -2322,7 +2454,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 38,
       "url": "https://apps.apple.com/si/app/id6792856304?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -2388,7 +2520,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 39,
       "url": "https://apps.apple.com/si/app/id6782139553?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -2454,7 +2586,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 40,
       "url": "https://apps.apple.com/si/app/id6791299610?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -2520,7 +2652,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 41,
       "url": "https://apps.apple.com/si/app/id6787754435?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -2586,7 +2718,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 42,
       "url": "https://apps.apple.com/si/app/id6782275018?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -2652,7 +2784,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 43,
       "url": "https://apps.apple.com/si/app/id6790467886?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -2718,7 +2850,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 44,
       "url": "https://apps.apple.com/si/app/id6793414462?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -2784,7 +2916,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 45,
       "url": "https://apps.apple.com/si/app/id6797601720?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",
@@ -2850,7 +2982,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 46,
       "url": "https://apps.apple.com/si/app/id6789917808?pt=118326163&ct=iag_data_sl_si&mt=8",
       "item": {
         "@type": "Offer",

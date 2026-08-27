@@ -15,8 +15,9 @@ BattAI • BattAI uporablja pet vrednosti iz javnih API-jev iOS: raven baterije,
 
 - Več
 - Brezplačen začetek · doživljenjska odklenitev
+- App Store · Brezplačno
 
-[Prenesite BattAI: Ocena stanja baterije iz trgovine App Store](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_sl_si&mt=8)
+[Prenesite BattAI: Ocena stanja baterije iz trgovine App Store](https://apps.apple.com/si/app/id6802423998?pt=118326163&ct=iag_data_sl_si&mt=8)
 
 [Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/battai.html)
 

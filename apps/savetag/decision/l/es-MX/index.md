@@ -15,8 +15,9 @@ Guárdalo ahora. Y esta vez sí, léelo después. Todo el día te mandas links a
 
 - Productividad
 - Gratis para empezar · desbloqueo permanente
+- App Store · Gratis
 
-[Consigue SaveTag: guarda links con IA en el App Store](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_es_mx&mt=8)
+[Consigue SaveTag: guarda links con IA en el App Store](https://apps.apple.com/mx/app/id6802505528?pt=118326163&ct=iag_data_es_mx&mt=8)
 
 [Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/savetag.html)
 

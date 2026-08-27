@@ -15,8 +15,9 @@ BattAI • A BattAI öt értéket használ a nyilvános iOS API-kból: töltött
 
 - Továbbiak
 - Ingyenes kezdés · életre szóló feloldás
+- App Store · Ingyenes
 
-[Töltse le a(z) BattAI: Akkuállapot appot az App Store-ból](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_hu&mt=8)
+[Töltse le a(z) BattAI: Akkuállapot appot az App Store-ból](https://apps.apple.com/hu/app/id6802423998?pt=118326163&ct=iag_data_hu&mt=8)
 
 [Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/battai.html)
 

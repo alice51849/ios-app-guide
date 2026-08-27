@@ -15,8 +15,9 @@ BattAI • BattAI bruger fem værdier fra offentlige iOS-API'er: batteriniveau, 
 
 - Mere
 - Gratis at komme i gang · permanent oplåsning
+- App Store · Gratis
 
-[Hent BattAI: Batteritilstandsscore i App Store](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_data_da&mt=8)
+[Hent BattAI: Batteritilstandsscore i App Store](https://apps.apple.com/dk/app/id6802423998?pt=118326163&ct=iag_data_da&mt=8)
 
 [Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/battai.html)
 

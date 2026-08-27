@@ -15,8 +15,9 @@ Spara nu. Läs på riktigt sen. Du skickar länkar till dig själv hela dagarna.
 
 - Produktivitet
 - Gratis att börja · livstidsupplåsning
+- App Store · Gratis
 
-[Hämta SaveTag: AI-bokmärken i App Store](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_sv&mt=8)
+[Hämta SaveTag: AI-bokmärken i App Store](https://apps.apple.com/se/app/id6802505528?pt=118326163&ct=iag_data_sv&mt=8)
 
 [Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/savetag.html)
 

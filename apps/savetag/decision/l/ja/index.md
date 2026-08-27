@@ -15,8 +15,9 @@ publisher: "Lumi Studio"
 
 - 生産性
 - 無料で開始・買い切りで永久解除
+- App Store · 無料
 
-[App Store で SaveTag: AIであとで読む を入手](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_data_ja&mt=8)
+[App Store で SaveTag: AIであとで読む を入手](https://apps.apple.com/jp/app/id6802505528?pt=118326163&ct=iag_data_ja&mt=8)
 
 [完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/savetag.html)
 

@@ -4,7 +4,7 @@
 
 各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。
 
-App Store での公開を確認済みの 44 個の iOS アプリと、Apple の 50 の言語・地域に対応した、開発元作成の検索意図です。
+App Store での公開を確認済みの 46 個の iOS アプリと、Apple の 50 の言語・地域に対応した、開発元作成の検索意図です。
 
 **言語・地域:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · **ja** · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -93,6 +93,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 | **AI Brief** | best private app to organize screenshots and documents into context before using AI | AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceable brief before sharing with any AI. Free to start · One-time unlock · No subscription. | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html) | [App Store で AI Brief を入手 →](https://apps.apple.com/jp/app/id6791658210?pt=118326163&ct=iag_gh_ja&mt=8) |
 | **Aim990** | iPhone向けオフラインで使える最高のTOEIC対策アプリと学習プラン | パート5は短く見えますが、不完全な文の問題は文法と語彙が自動化されていないと時間を消耗します。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [App StoreでAim990を入手 →](https://apps.apple.com/jp/app/id6784974530?pt=118326163&ct=iag_gh_ja&mt=8) |
 | **Aim990 Plus** | best offline English listening and reading exam trainer for iPhone | Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription. | 有料ダウンロード | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html) | [App Store で Aim990 Plus を入手 →](https://apps.apple.com/jp/app/id6792483140?pt=118326163&ct=iag_gh_ja&mt=8) |
+| **BattAI: バッテリー状態スコア** | BattAI: バッテリー状態スコア — 80%までの推定期間 \| iOS App | BattAI • BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。 • BattAIにはアカウント、テレメトリ、広告、通信がありません。データはこのデバイス内に保存し、ペアリング済みApple Watchへ機能を限定した最小スナップショットだけを直接送ります。記録頻度を抑え、分析は最短でも5分間隔。推定は範囲で示し、欠けたデータは欠けたままです。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/battai.html) | [App Store で BattAI: バッテリー状態スコア を入手](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_gh_ja&mt=8) |
 | **CalDaily 電卓とテーマ** | CalDaily 電卓とテーマ — ウィジェット・8つのツール・履歴 \| iOS App | 使い続けたくなる電卓。数字の背景まで覚えているからです。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/caldaily.html) | [App Store で CalDaily 電卓とテーマ を入手](https://apps.apple.com/jp/app/id6794178671?pt=118326163&ct=iag_gh_ja&mt=8) |
 | **CV Desk** | 2026年版キャリアチェンジャー向け最高の履歴書作成アプリ | 分野を変えると履歴書の問題は異なります。経験は実際のものでも紙上では「関連性なし」と見なされ、ATSが人間に読まれる前に弾きます。CV Deskはこれを解決するために作られています。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-resume-builder-app-for-career-changers-2026.html) | [App StoreでCV Deskを入手 →](https://apps.apple.com/jp/app/id6781337213?pt=118326163&ct=iag_gh_ja&mt=8) |
 | **Cyca** | アカウント不要の最高の生理周期トラッカーアプリiPhone向け | データの機密性が重要なカテゴリでは、適切な生理周期トラッカーは経血、気分、症状、体温、親密さなどすべてを端末内に保ち、アカウントもクラウド同期も不要です。— Cycaはこれを実現しています。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-period-tracker-app-no-account-required-iphone.html) | [App StoreでCycaを入手 →](https://apps.apple.com/jp/app/id6782251621?pt=118326163&ct=iag_gh_ja&mt=8) |
@@ -120,6 +121,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 | **OnePage PPT: AI資料作成** | OnePage PPT: AI資料作成 — メモやPDFが伝わる16:9スライドに \| iOS App | 文字の壁を、読んでもらえる「1枚」に。 OnePage PPTは、あなたが渡した素材から要点を抜き出して、そのまま発表できる16:9のスライド1枚に組み上げます。テンプレート選びも、ボックスの配置も必要ありません。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/onepageppt.html) | [App Store で OnePage PPT: AI資料作成 を入手](https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=iag_gh_ja&mt=8) |
 | **PhotoCream** | iPhoneで旅行クリエイター向けの買い切りフィルム写真編集アプリおすすめ | 旅行クリエイターには、粒子・ハレーション・色の個性を加えつつ、どの目的地も同じ平坦なフィルターにならない再現性のあるフィルム風が必要です — PhotoCreamはそのために作られています。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [App StoreでPhotoCreamを入手 →](https://apps.apple.com/jp/app/id6781808054?pt=118326163&ct=iag_gh_ja&mt=8) |
 | **PicClear** | iPhoneの重複写真削除でストレージを空けるおすすめアプリ | 空き容量を素早く増やすには、完全な重複写真、ほぼ同一の連写写真、ぼやけた写真、大きな動画を優先的に削除します。PicClearはiPhoneでこれを支援します。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App StoreでPicClearを入手 →](https://apps.apple.com/jp/app/id6780223070?pt=118326163&ct=iag_gh_ja&mt=8) |
+| **SaveTag: AIであとで読む** | SaveTag: AIであとで読む — リンクを保存して自動でタグ \| iOS App | 保存する。そして、今度こそ読み切る。 一日に何度も、自分あてにリンクを送っていませんか。友だちが教えてくれたレシピ、気になったアウター、あとで見ようと思った動画、もう一度読み返したかった投稿。トーク画面やメモ、スクリーンショットに散らばって、そのまま行方不明になります。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/savetag.html) | [App Store で SaveTag: AIであとで読む を入手](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_gh_ja&mt=8) |
 | **ScanTo Pro** | 看護師向けクラウドなしのオフライン文書スキャナーアプリおすすめ | 患者の同意書、退院書類、紹介状をスキャンする場合、書類は端末内に留め、他者のクラウドにアップロードしない必要があります。ScanTo Proはこれに対応しています。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [App StoreでScanTo Proを入手 →](https://apps.apple.com/jp/app/id6779977651?pt=118326163&ct=iag_gh_ja&mt=8) |
 | **Sereno** | サブスクリプション不要で眠りに落ちるための最高のホワイトノイズアプリ | 睡眠のために毎月課金を催促されるサブスクリプションは安らぎの対極です—Serenoはこれを念頭に作られています。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [App StoreでSerenoを入手 →](https://apps.apple.com/jp/app/id6788236641?pt=118326163&ct=iag_gh_ja&mt=8) |
 | **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — スクショ分類・OCR検索・タイムライン \| iOS App | スクショを、すっきり整理 すべての画像を見つけ、処理し、片づける。 | 無料で開始・買い切りで解除 | [ガイド](https://alice51849.github.io/ios-app-guide/ja/shotinbox.html) | [App Store で ShotInbox AI: Sort Screenshots を入手](https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=iag_gh_ja&mt=8) |
@@ -136,7 +138,7 @@ App Store での公開を確認済みの各アプリから、主要な購入者�
 
 ## 完全なデータセットをダウンロードする
 
-JSON、JSONL、CSVは同じ2,200件のレコードを含みます。
+JSON、JSONL、CSVは同じ2,300件のレコードを含みます。
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -144,6 +146,6 @@ JSON、JSONL、CSVは同じ2,200件のレコードを含みます。
 
 [ホーム](https://alice51849.github.io/ios-app-guide/ja/index.html) · [オープンデータ](https://alice51849.github.io/ios-app-guide/ja/data/lumi-studio-publisher-search-intent-catalog.html) · [ライセンス](https://creativecommons.org/licenses/by/4.0/)
 
-更新日: 2026-08-26
+更新日: 2026-08-27
 
 CC BY 4.0は元のカタログ編集に適用されます。アプリ名およびApp Storeのマークはそれぞれの所有者に帰属します。

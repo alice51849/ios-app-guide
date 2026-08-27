@@ -16,7 +16,7 @@
     ],
     "retirement_rule": "Retire after three consecutive verified misses"
   },
-  "record_count": 44,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -191,6 +191,50 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
+      "verified_live": true
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI",
+      "category": "utility",
+      "category_labels": {
+        "en": "More",
+        "zh-Hant": "更多"
+      },
+      "summaries": {
+        "en": "BattAI",
+        "zh-Hant": "BattAI"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Free to start",
+        "One-time unlock",
+        "No subscription"
+      ],
+      "keywords": [
+        "battery health app",
+        "battery health report",
+        "time to 80",
+        "replace iphone battery",
+        "battery replacement",
+        "sell iphone battery"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
       "verified_live": true
     },
     {
@@ -1411,6 +1455,50 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
+      "verified_live": true
+    },
+    {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag",
+      "category": "productivity",
+      "category_labels": {
+        "en": "Productivity",
+        "zh-Hant": "效率工具"
+      },
+      "summaries": {
+        "en": "Save it now. Actually read it later.",
+        "zh-Hant": "先存下來,而且真的會看完。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Free to start",
+        "One-time unlock",
+        "No subscription"
+      ],
+      "keywords": [
+        "save links",
+        "bookmark manager",
+        "read later",
+        "link organizer",
+        "saved links",
+        "save articles to read later"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
       "verified_live": true
     },
     {

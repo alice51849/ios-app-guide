@@ -2,7 +2,7 @@
 title: "OnePage PPT: diapositivo IA — As suas notas num só slide | iOS App"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/pt-PT/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

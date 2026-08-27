@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-26",
-  "content_digest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
+  "date_modified": "2026-08-27",
+  "content_digest": "7848bf04fd447836dc9fe1da73ae527a28fec2a9f0cdb39fd4ea865dd3ddc29f",
   "locale": "fr-CA",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 44,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -168,6 +168,37 @@
         "formatted_price": "$7.99",
         "storefront_url": "https://apps.apple.com/ca/app/id6792483140"
       }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: Santé de la batterie",
+      "summary": "BattAI • BattAI utilise cinq valeurs fournies par les API publiques d’iOS : niveau de batterie, état de recharge, mode économie d’énergie, état thermique de l’appareil et heure. Les autres résultats sont calculés à partir de ces relevés ou ajoutés par vous. Chaque détail indique sa source et ses limites. • BattAI n’a ni compte, ni télémétrie, ni publicité, ni requête réseau. Les données restent sur cet appareil, sauf un instantané minimal et limité envoyé directement à l’Apple Watch jumelée. L’échantillonnage est limité, l’analyse tourne au plus toutes les cinq minutes, les estimations utilisent des plages et les données manquantes restent manquantes.",
+      "category": "utility",
+      "search_terms": [
+        "test",
+        "Note de santé de la batterie",
+        "Capacité maximale",
+        "Cycles",
+        "Bonnes pratiques",
+        "Plage de recharge",
+        "PDF",
+        "le"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_api_fr_ca&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/battai.html",
+      "verified_live": true
     },
     {
       "key": "caldaily",
@@ -1539,6 +1570,39 @@
         "formatted_price": "Gratuit",
         "storefront_url": "https://apps.apple.com/ca/app/id6780223070"
       }
+    },
+    {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag : signets par IA",
+      "summary": "Gardez-le maintenant. Lisez-le pour vrai plus tard.",
+      "category": "productivity",
+      "search_terms": [
+        "à lire plus tard",
+        "favoris",
+        "collection",
+        "url",
+        "classeur",
+        "étiquette",
+        "hors ligne",
+        "recettes",
+        "magasinage",
+        "voyage"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_api_fr_ca&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/savetag.html",
+      "verified_live": true
     },
     {
       "key": "scanto",

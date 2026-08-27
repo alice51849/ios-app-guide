@@ -2,7 +2,7 @@
 title: "melhor app completo de rotina de manhã e noite para crianças"
 lang: "pt-PT"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/pt-PT/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"

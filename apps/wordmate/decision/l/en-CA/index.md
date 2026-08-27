@@ -2,7 +2,7 @@
 title: "best vocabulary app for busy commuters with apple watch"
 lang: "en-CA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/en-CA/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"

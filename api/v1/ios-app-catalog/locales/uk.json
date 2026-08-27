@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-26",
-  "content_digest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
+  "date_modified": "2026-08-27",
+  "content_digest": "7848bf04fd447836dc9fe1da73ae527a28fec2a9f0cdb39fd4ea865dd3ddc29f",
   "locale": "uk",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 44,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -169,6 +169,37 @@
         "formatted_price": "6,99 USD",
         "storefront_url": "https://apps.apple.com/ua/app/id6792483140"
       }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: Стан батареї",
+      "summary": "BattAI • BattAI використовує п’ять значень із публічних API iOS: рівень заряду, стан заряджання, режим низького енергоспоживання, тепловий стан усього пристрою й час. Інші результати обчислюються з цих показань або додаються вами. Кожен показник має джерело й обмеження. • BattAI не має облікового запису, телеметрії, реклами чи мережевих запитів. Дані залишаються на цьому пристрої, крім мінімального обмеженого знімка, який надсилається безпосередньо на спарений Apple Watch. Вибірка обмежена, аналіз виконується не частіше ніж раз на п’ять хвилин, оцінки подаються діапазонами, а відсутні дані лишаються відсутніми.",
+      "category": "utility",
+      "search_terms": [
+        "Оцінка стану акумулятора",
+        "Максимальна ємність",
+        "Цикли",
+        "Дбайливе заряджання",
+        "Діапазон заряду",
+        "Звіти",
+        "PDF",
+        "CSV"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_api_uk&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/uk/battai.html",
+      "verified_live": true
     },
     {
       "key": "caldaily",
@@ -1558,6 +1589,42 @@
         "formatted_price": "Безкоштовно",
         "storefront_url": "https://apps.apple.com/ua/app/id6780223070"
       }
+    },
+    {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: закладки з ШІ",
+      "summary": "Збережіть зараз. І цього разу справді прочитайте.",
+      "category": "productivity",
+      "search_terms": [
+        "прочитати пізніше",
+        "обране",
+        "добірка",
+        "url",
+        "тека",
+        "теги",
+        "офлайн",
+        "рецепти",
+        "подорожі",
+        "покупки",
+        "нотатки",
+        "архів",
+        "список"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_api_uk&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/uk/savetag.html",
+      "verified_live": true
     },
     {
       "key": "scanto",

@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-26",
-  "content_digest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
+  "date_modified": "2026-08-27",
+  "content_digest": "7848bf04fd447836dc9fe1da73ae527a28fec2a9f0cdb39fd4ea865dd3ddc29f",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 44,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -202,6 +202,46 @@
         "formatted_price": "¥38.00",
         "storefront_url": "https://apps.apple.com/cn/app/id6792483140"
       }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: 电池健康评分",
+      "summary": "BattAI • BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。 • BattAI 没有账户、遥测、广告或网络请求。数据留在这台设备上，只会把功能受限的最小快照直接发给已配对的 Apple Watch。取样频率受限，分析最快每 5 分钟一次；估算使用区间，缺失数据保持缺失。",
+      "category": "utility",
+      "search_terms": [
+        "最大容量",
+        "循环次数",
+        "充电养护",
+        "充电区间",
+        "充电速率",
+        "最大容量趋势",
+        "评分依据",
+        "导入电池信息",
+        "报告",
+        "PDF 电池报告",
+        "无限历史",
+        "80% 规划区间",
+        "异常耗电提醒",
+        "充电速率暴露",
+        "全部小组件",
+        "夜间待机耗电",
+        "PDF"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_api_zh_hans&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/battai.html",
+      "verified_live": true
     },
     {
       "key": "caldaily",
@@ -1867,6 +1907,59 @@
         "formatted_price": "免费",
         "storefront_url": "https://apps.apple.com/cn/app/id6780223070"
       }
+    },
+    {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag:AI 链接收藏",
+      "summary": "你每天都在给自己发链接。朋友分享的菜谱、看中的外套、说好要看的视频、想再读一遍的帖子。它们散落在聊天记录、备忘录和截图里,然后就再也找不到了。",
+      "category": "productivity",
+      "search_terms": [
+        "书签",
+        "收藏夹",
+        "待读",
+        "网址",
+        "离线",
+        "归档",
+        "剪贴板",
+        "心愿单",
+        "菜谱",
+        "旅行",
+        "追剧",
+        "私密",
+        "免注册",
+        "买断",
+        "灵感",
+        "穿搭",
+        "育儿",
+        "宠物",
+        "游戏",
+        "设计",
+        "学习",
+        "笔记",
+        "一键",
+        "无广告",
+        "导出",
+        "小组件",
+        "快捷指令",
+        "美食",
+        "购物",
+        "网页"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_api_zh_hans&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/savetag.html",
+      "verified_live": true
     },
     {
       "key": "scanto",

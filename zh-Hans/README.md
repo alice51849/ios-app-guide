@@ -4,7 +4,7 @@
 
 第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。
 
-由开发者撰写的搜索意图，涵盖 44 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
+由开发者撰写的搜索意图，涵盖 46 款已验证上架的 iOS App 和 Apple 官方 50 个地区语言。
 
 **地区语言:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · **zh-Hans** · [zh-Hant](../zh-Hant/)
 
@@ -93,6 +93,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **AI Brief** | AI Brief — 把资料整理成清晰上下文 \| iOS App | 更好的背景，更优的回答。 将截图、文件、笔记和文档转化为一份清晰的 AI 就绪摘要。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/aibriefpack.html) | [在 App Store 获取 AI Brief](https://apps.apple.com/cn/app/id6791658210?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **Aim990** | 适用于 iPhone 的最佳离线 TOEIC 备考应用及学习计划 | 第5部分看似简短，但不完整句子题目若语法和词汇不熟练会耗费大量时间。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [在 App Store 获取 Aim990 →](https://apps.apple.com/cn/app/id6784974530?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **Aim990 Plus** | Aim990 Plus — 15分钟攻克七大题型 \| iOS App | 把零散刷题变成一套经得住时间压力的训练流程。 | 付费下载 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/aim990plus.html) | [在 App Store 获取 Aim990 Plus](https://apps.apple.com/cn/app/id6792483140?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
+| **BattAI: 电池健康评分** | BattAI: 电池健康评分 — 预计到 80% 的时间 \| iOS App | BattAI • BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。 • BattAI 没有账户、遥测、广告或网络请求。数据留在这台设备上，只会把功能受限的最小快照直接发给已配对的 Apple Watch。取样频率受限，分析最快每 5 分钟一次；估算使用区间，缺失数据保持缺失。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/battai.html) | [在 App Store 获取 BattAI: 电池健康评分](https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **CalDaily 计算器与主题** | CalDaily 计算器与主题 — 桌面小组件、八种工具、计算记录 \| iOS App | 一台你会真正留着用的计算器，因为它记得每个数字背后的来龙去脉。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/caldaily.html) | [在 App Store 获取 CalDaily 计算器与主题](https://apps.apple.com/cn/app/id6794178671?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **CV Desk** | 2026 年最佳职业转型简历制作应用 | 转行时，简历问题不同：经验真实但纸面“无关”，ATS 过滤在人工阅读前就拒绝——CV Desk 专为此设计。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-resume-builder-app-for-career-changers-2026.html) | [在 App Store 获取 CV Desk →](https://apps.apple.com/cn/app/id6781337213?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **Cyca** | 无需账户的最佳经期追踪应用 iPhone | 在数据敏感度极高的类别中，合适的经期追踪应用将所有内容——流量、情绪、症状、体温、亲密行为——保存在设备上，无账户，无云同步——Cyca 专为此设计。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-period-tracker-app-no-account-required-iphone.html) | [在 App Store 获取 Cyca →](https://apps.apple.com/cn/app/id6782251621?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
@@ -120,6 +121,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **OnePage PPT: AI一页幻灯片** | OnePage PPT: AI一页幻灯片 — 笔记、截图、PDF秒变演示文稿 \| iOS App | 把一大段文字，变成别人真的会看完的一页。不用再从空白页开始，也不用把 20 页素材硬塞成一页。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/onepageppt.html) | [在 App Store 获取 OnePage PPT: AI一页幻灯片](https://apps.apple.com/cn/app/id6798814385?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **PhotoCream** | iPhone旅行创作者一次付费胶片风格照片编辑器推荐 | 旅行创作者需要可重复的胶片风格，能添加颗粒、光晕和色彩特征，而不会让每个目的地都变成同一种平淡滤镜——PhotoCream专为此打造。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [在App Store获取PhotoCream →](https://apps.apple.com/cn/app/id6781808054?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **PicClear** | iPhone 上最佳释放存储空间删除重复照片的应用 | 快速释放空间，优先处理最大收益：完全重复照片、近似连拍、模糊废片和大视频——PicClear 助你在 iPhone 上完成。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [在 App Store 获取 PicClear →](https://apps.apple.com/cn/app/id6780223070?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
+| **SaveTag:AI 链接收藏** | SaveTag:AI 链接收藏 — 稍后阅读,自动打标签 \| iOS App | 先存下来,而且这次真的会看完。 你每天都在给自己发链接。朋友分享的菜谱、看中的外套、说好要看的视频、想再读一遍的帖子。它们散落在聊天记录、备忘录和截图里,然后就再也找不到了。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/savetag.html) | [在 App Store 获取 SaveTag:AI 链接收藏](https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **ScanTo Pro** | 护士用最佳离线文档扫描应用，无云端 | 如果你扫描患者同意书、出院文件或转诊单，扫描器必须将文件保留在设备上——绝不上传到他人云端——ScanTo Pro 专为此设计。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [在 App Store 获取 ScanTo Pro →](https://apps.apple.com/cn/app/id6779977651?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **Sereno** | 最佳无订阅白噪音助眠应用 | 为了获得良好睡眠，每月催促你订阅恰恰与放松的目的背道而驰——Sereno正是为此设计。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [在App Store获取Sereno →](https://apps.apple.com/cn/app/id6788236641?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — 本地截图分类、OCR搜索与时间轴 \| iOS App | 截图，井然有序 让每张截图都能找到、处理、清理。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/shotinbox.html) | [在 App Store 获取 ShotInbox AI: Sort Screenshots](https://apps.apple.com/cn/app/id6802166527?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
@@ -136,7 +138,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## 下载完整数据集
 
-JSON、JSONL 和 CSV 格式包含相同的 2,200 条记录。
+JSON、JSONL 和 CSV 格式包含相同的 2,300 条记录。
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -144,6 +146,6 @@ JSON、JSONL 和 CSV 格式包含相同的 2,200 条记录。
 
 [首页](https://alice51849.github.io/ios-app-guide/zh-Hans/index.html) · [开放数据](https://alice51849.github.io/ios-app-guide/zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html) · [许可协议](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-08-26
+更新日期: 2026-08-27
 
 CC BY 4.0 适用于原始目录编纂；应用名称和 App Store 标识归其所有者所有。

@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-26",
-  "content_digest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
+  "date_modified": "2026-08-27",
+  "content_digest": "7848bf04fd447836dc9fe1da73ae527a28fec2a9f0cdb39fd4ea865dd3ddc29f",
   "locale": "cs",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 44,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -168,6 +168,36 @@
         "formatted_price": "149,00 Kč",
         "storefront_url": "https://apps.apple.com/cz/app/id6792483140"
       }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: Skóre kondice baterie",
+      "summary": "BattAI • BattAI používá pět hodnot z veřejných API iOS: stav baterie, stav nabíjení, úsporný režim, tepelný stav celého zařízení a čas. Ostatní výsledky se počítají z těchto měření nebo z údajů, které přidáte. U každého údaje je uveden zdroj a omezení. • BattAI nemá účet, telemetrii, reklamy ani síťové požadavky. Data zůstávají v tomto zařízení, kromě minimálního snímku s omezenými funkcemi odeslaného přímo do spárovaných Apple Watch. Měření je omezené, analýza běží nejvýš jednou za pět minut, odhady používají rozmezí a chybějící data zůstávají chybějící.",
+      "category": "utility",
+      "search_terms": [
+        "Maximální kapacita",
+        "Cykly",
+        "Šetrnost nabíjení",
+        "Rozsah nabití",
+        "Rychlost nabíjení",
+        "Odhad času do 80%",
+        "Zprávy"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_api_cs&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/cs/battai.html",
+      "verified_live": true
     },
     {
       "key": "caldaily",
@@ -1545,6 +1575,41 @@
         "formatted_price": "Zdarma",
         "storefront_url": "https://apps.apple.com/cz/app/id6780223070"
       }
+    },
+    {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: záložky s AI",
+      "summary": "Ulož teď. A tentokrát to opravdu přečti.",
+      "category": "productivity",
+      "search_terms": [
+        "číst později",
+        "oblíbené",
+        "sbírka",
+        "url",
+        "složka",
+        "štítky",
+        "offline",
+        "recepty",
+        "cestování",
+        "nákupy",
+        "soukromé",
+        "archiv"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_api_cs&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/cs/savetag.html",
+      "verified_live": true
     },
     {
       "key": "scanto",

@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-26",
-  "content_digest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
+  "date_modified": "2026-08-27",
+  "content_digest": "7848bf04fd447836dc9fe1da73ae527a28fec2a9f0cdb39fd4ea865dd3ddc29f",
   "locale": "el",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 44,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -167,6 +167,36 @@
         "formatted_price": "6,99 €",
         "storefront_url": "https://apps.apple.com/gr/app/id6792483140"
       }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: Υγεία μπαταρίας",
+      "summary": "BattAI • Το BattAI χρησιμοποιεί πέντε τιμές από τα δημόσια API του iOS: επίπεδο μπαταρίας, κατάσταση φόρτισης, Λειτουργία χαμηλής ισχύος, θερμική κατάσταση όλης της συσκευής και χρόνο. Τα άλλα αποτελέσματα υπολογίζονται από αυτές τις μετρήσεις ή προστίθενται από εσάς. Κάθε στοιχείο δείχνει την πηγή και τα όριά του. • Το BattAI δεν έχει λογαριασμό, τηλεμετρία, διαφημίσεις ή αιτήματα δικτύου. Τα δεδομένα μένουν σε αυτή τη συσκευή, εκτός από ένα ελάχιστο στιγμιότυπο περιορισμένων λειτουργιών που αποστέλλεται απευθείας στο ζευγοποιημένο Apple Watch. Η δειγματοληψία είναι περιορισμένη, η ανάλυση εκτελείται το πολύ κάθε πέντε λεπτά, οι εκτιμήσεις χρησιμοποιούν εύρη και τα δεδομένα που λείπουν παραμένουν κενά.",
+      "category": "utility",
+      "search_terms": [
+        "Βαθμολογία υγείας μπαταρίας",
+        "Μέγιστη χωρητικότητα",
+        "Κύκλοι",
+        "Φροντίδα φόρτισης",
+        "Εύρος φόρτισης",
+        "Αναφορές",
+        "το"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_api_el&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/el/battai.html",
+      "verified_live": true
     },
     {
       "key": "caldaily",
@@ -1523,6 +1553,40 @@
         "formatted_price": "Δωρεάν",
         "storefront_url": "https://apps.apple.com/gr/app/id6780223070"
       }
+    },
+    {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: σελιδοδείκτες AI",
+      "summary": "Αποθήκευσέ το τώρα. Και αυτή τη φορά διάβασέ το στ' αλήθεια.",
+      "category": "productivity",
+      "search_terms": [
+        "λίστα ανάγνωσης",
+        "αγαπημένα",
+        "συλλογή",
+        "url",
+        "φάκελος",
+        "ετικέτες",
+        "χωρίς σύνδεση",
+        "συνταγές",
+        "ταξίδια",
+        "ψώνια",
+        "ιδιωτικό"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_api_el&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/el/savetag.html",
+      "verified_live": true
     },
     {
       "key": "scanto",

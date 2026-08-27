@@ -2,7 +2,7 @@
 title: "प्रीस्कूल और शुरुआती कक्षाओं के लिए सबसे अच्छा पूर्ण गणित सीखने वाला ऐप"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/hi/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

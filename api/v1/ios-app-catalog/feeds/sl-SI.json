@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-26",
-    "contentDigest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
+    "dateModified": "2026-08-27",
+    "contentDigest": "7848bf04fd447836dc9fe1da73ae527a28fec2a9f0cdb39fd4ea865dd3ddc29f",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 44
+    "recordCount": 46
   },
   "items": [
     {
@@ -106,6 +106,23 @@
       ],
       "language": "sl-SI",
       "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802423998",
+      "url": "https://alice51849.github.io/ios-app-guide/sl-SI/battai.html",
+      "external_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_feed_sl_si&mt=8",
+      "title": "BattAI: Ocena stanja baterije",
+      "content_text": "BattAI • BattAI uporablja pet vrednosti iz javnih API-jev iOS: raven baterije, stanje polnjenja, varčni način, toplotno stanje celotne naprave in čas. Drugi rezultati so izračunani iz teh meritev ali jih dodate vi. Vsak podatek prikazuje vir in omejitve. • BattAI nima računa, telemetrije, oglasov ali omrežnih zahtev. Podatki ostanejo v tej napravi, razen minimalnega funkcijsko omejenega posnetka, ki se pošlje neposredno seznanjeni uri Apple Watch. Vzorčenje je omejeno, analiza se izvede največ vsakih pet minut, ocene uporabljajo razpone, manjkajoči podatki pa ostanejo manjkajoči.",
+      "tags": [
+        "Največja zmogljivost",
+        "Cikli",
+        "Skrb pri polnjenju",
+        "Razpon polnjenja",
+        "Hitrost polnjenja",
+        "Ocenjeni čas do 80%"
+      ],
+      "language": "sl-SI",
+      "date_modified": "2026-08-27T06:15:40Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -1017,6 +1034,28 @@
       ],
       "language": "sl-SI",
       "date_modified": "2026-08-24T08:39:44Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802505528",
+      "url": "https://alice51849.github.io/ios-app-guide/sl-SI/savetag.html",
+      "external_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_feed_sl_si&mt=8",
+      "title": "SaveTag: zaznamki z UI",
+      "content_text": "Shrani zdaj. In tokrat res preberi.",
+      "tags": [
+        "za branje",
+        "priljubljene",
+        "zbirka",
+        "url",
+        "mapa",
+        "oznake",
+        "brez povezave",
+        "recepti",
+        "potovanja",
+        "nakupovanje",
+        "zasebno"
+      ],
+      "language": "sl-SI",
+      "date_modified": "2026-08-27T06:15:40Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",

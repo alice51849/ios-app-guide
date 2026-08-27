@@ -2,7 +2,7 @@
 title: "OnePage PPT: AI一页幻灯片 — 笔记、截图、PDF秒变演示文稿 | iOS App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/zh-Hans/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

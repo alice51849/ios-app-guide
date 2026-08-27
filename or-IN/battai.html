@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="or-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- guide-design:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
+<!-- guide-design:end -->
+<title>BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି — ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର | iOS App</title>
+<meta name="description" content="BattAI">
+<meta name="keywords" content="ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର, ସର୍ବାଧିକ କ୍ଷମତା, ଚାର୍ଜ ଚକ୍ର, ଚାର୍ଜ ଯତ୍ନ, ଚାର୍ଜ ପରିସର, ଚାର୍ଜ ହାର, ରିପୋର୍ଟ, PDF, CSV">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/or-IN/battai.html">
+<!-- smart-app-banner:start -->
+<meta name="apple-itunes-app" content="app-id=6802423998">
+<!-- smart-app-banner:end -->
+<!-- social-preview:start -->
+<meta property="og:title" content="BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି — ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର | iOS App">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/or-IN/battai.html">
+<meta property="og:image" content="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg">
+<meta property="og:image:secure_url" content="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି — ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର | iOS App">
+<meta property="og:description" content="BattAI">
+<meta property="og:locale" content="or_IN">
+<meta property="og:site_name" content="iOS App Guide">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<script type="application/ld+json" data-iag="primary-image">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://alice51849.github.io/ios-app-guide/or-IN/battai.html#webpage",
+  "url": "https://alice51849.github.io/ios-app-guide/or-IN/battai.html",
+  "name": "BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି — ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର | iOS App",
+  "description": "BattAI",
+  "inLanguage": "or-IN",
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "@id": "https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg#primaryimage",
+    "contentUrl": "https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg",
+    "url": "https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg",
+    "width": 1200,
+    "height": 675,
+    "encodingFormat": "image/jpeg",
+    "caption": "BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି — ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର | iOS App",
+    "representativeOfPage": true
+  },
+  "mainEntity": {
+    "@id": "https://apps.apple.com/app/id6802423998"
+  }
+}
+</script>
+<style>
+.iag-app-preview{margin:clamp(1rem,3vw,1.5rem) 0 clamp(1.5rem,4vw,2.25rem)}
+.iag-app-preview__link{display:block;position:relative;width:100%;max-width:1200px;margin:0 auto;overflow:hidden;border-radius:clamp(14px,2.2vw,24px);background:#0b1020;box-shadow:0 18px 50px rgba(15,23,42,.22);line-height:0}
+.iag-app-preview__link::after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.28);border-radius:inherit;pointer-events:none}
+.iag-app-preview__link:focus-visible{outline:3px solid #2563eb;outline-offset:4px}
+.iag-app-preview__image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+@media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
+</style>
+<meta name="twitter:card" content="app">
+<meta name="twitter:title" content="BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି — ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର | iOS App">
+<meta name="twitter:description" content="BattAI">
+<meta name="twitter:image" content="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg">
+<meta name="twitter:image:alt" content="BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି — ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର | iOS App">
+<meta name="twitter:app:name:iphone" content="BattAI">
+<meta name="twitter:app:id:iphone" content="6802423998">
+<meta name="twitter:app:name:ipad" content="BattAI">
+<meta name="twitter:app:id:ipad" content="6802423998">
+<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/or-IN/battai.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2For-IN%2Fbattai.html&amp;format=json" title="BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି — ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର | iOS App">
+<!-- social-preview:end -->
+<link rel="alternate" hreflang="ar-SA" href="https://alice51849.github.io/ios-app-guide/ar-SA/battai.html">
+<link rel="alternate" hreflang="bn-BD" href="https://alice51849.github.io/ios-app-guide/bn-BD/battai.html">
+<link rel="alternate" hreflang="ca" href="https://alice51849.github.io/ios-app-guide/ca/battai.html">
+<link rel="alternate" hreflang="cs" href="https://alice51849.github.io/ios-app-guide/cs/battai.html">
+<link rel="alternate" hreflang="da" href="https://alice51849.github.io/ios-app-guide/da/battai.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/battai.html">
+<link rel="alternate" hreflang="el" href="https://alice51849.github.io/ios-app-guide/el/battai.html">
+<link rel="alternate" hreflang="en-AU" href="https://alice51849.github.io/ios-app-guide/en-AU/battai.html">
+<link rel="alternate" hreflang="en-CA" href="https://alice51849.github.io/ios-app-guide/en-CA/battai.html">
+<link rel="alternate" hreflang="en-GB" href="https://alice51849.github.io/ios-app-guide/en-GB/battai.html">
+<link rel="alternate" hreflang="en-US" href="https://alice51849.github.io/ios-app-guide/en-US/battai.html">
+<link rel="alternate" hreflang="es-ES" href="https://alice51849.github.io/ios-app-guide/es-ES/battai.html">
+<link rel="alternate" hreflang="es-MX" href="https://alice51849.github.io/ios-app-guide/es-MX/battai.html">
+<link rel="alternate" hreflang="fi" href="https://alice51849.github.io/ios-app-guide/fi/battai.html">
+<link rel="alternate" hreflang="fr-CA" href="https://alice51849.github.io/ios-app-guide/fr-CA/battai.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/ios-app-guide/fr-FR/battai.html">
+<link rel="alternate" hreflang="gu-IN" href="https://alice51849.github.io/ios-app-guide/gu-IN/battai.html">
+<link rel="alternate" hreflang="he" href="https://alice51849.github.io/ios-app-guide/he/battai.html">
+<link rel="alternate" hreflang="hi" href="https://alice51849.github.io/ios-app-guide/hi/battai.html">
+<link rel="alternate" hreflang="hr" href="https://alice51849.github.io/ios-app-guide/hr/battai.html">
+<link rel="alternate" hreflang="hu" href="https://alice51849.github.io/ios-app-guide/hu/battai.html">
+<link rel="alternate" hreflang="id" href="https://alice51849.github.io/ios-app-guide/id/battai.html">
+<link rel="alternate" hreflang="it" href="https://alice51849.github.io/ios-app-guide/it/battai.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/battai.html">
+<link rel="alternate" hreflang="kn-IN" href="https://alice51849.github.io/ios-app-guide/kn-IN/battai.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/battai.html">
+<link rel="alternate" hreflang="ml-IN" href="https://alice51849.github.io/ios-app-guide/ml-IN/battai.html">
+<link rel="alternate" hreflang="mr-IN" href="https://alice51849.github.io/ios-app-guide/mr-IN/battai.html">
+<link rel="alternate" hreflang="ms" href="https://alice51849.github.io/ios-app-guide/ms/battai.html">
+<link rel="alternate" hreflang="nl-NL" href="https://alice51849.github.io/ios-app-guide/nl-NL/battai.html">
+<link rel="alternate" hreflang="no" href="https://alice51849.github.io/ios-app-guide/no/battai.html">
+<link rel="alternate" hreflang="or-IN" href="https://alice51849.github.io/ios-app-guide/or-IN/battai.html">
+<link rel="alternate" hreflang="pa-IN" href="https://alice51849.github.io/ios-app-guide/pa-IN/battai.html">
+<link rel="alternate" hreflang="pl" href="https://alice51849.github.io/ios-app-guide/pl/battai.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/battai.html">
+<link rel="alternate" hreflang="pt-PT" href="https://alice51849.github.io/ios-app-guide/pt-PT/battai.html">
+<link rel="alternate" hreflang="ro" href="https://alice51849.github.io/ios-app-guide/ro/battai.html">
+<link rel="alternate" hreflang="ru" href="https://alice51849.github.io/ios-app-guide/ru/battai.html">
+<link rel="alternate" hreflang="sk" href="https://alice51849.github.io/ios-app-guide/sk/battai.html">
+<link rel="alternate" hreflang="sl-SI" href="https://alice51849.github.io/ios-app-guide/sl-SI/battai.html">
+<link rel="alternate" hreflang="sv" href="https://alice51849.github.io/ios-app-guide/sv/battai.html">
+<link rel="alternate" hreflang="ta-IN" href="https://alice51849.github.io/ios-app-guide/ta-IN/battai.html">
+<link rel="alternate" hreflang="te-IN" href="https://alice51849.github.io/ios-app-guide/te-IN/battai.html">
+<link rel="alternate" hreflang="th" href="https://alice51849.github.io/ios-app-guide/th/battai.html">
+<link rel="alternate" hreflang="tr" href="https://alice51849.github.io/ios-app-guide/tr/battai.html">
+<link rel="alternate" hreflang="uk" href="https://alice51849.github.io/ios-app-guide/uk/battai.html">
+<link rel="alternate" hreflang="ur-PK" href="https://alice51849.github.io/ios-app-guide/ur-PK/battai.html">
+<link rel="alternate" hreflang="vi" href="https://alice51849.github.io/ios-app-guide/vi/battai.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://alice51849.github.io/ios-app-guide/zh-Hans/battai.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/battai.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/en-US/battai.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି",
+  "operatingSystem": "iOS",
+  "applicationCategory": "UtilitiesApplication",
+  "description": "BattAI\n• BattAI ସାର୍ବଜନୀନ iOS API ରୁ 5ଟି ମୂଲ୍ୟ ବ୍ୟବହାର କରେ: ବ୍ୟାଟେରୀ ସ୍ତର, ଚାର୍ଜ ସ୍ଥିତି, Low Power Mode, ସମଗ୍ର ଉପକରଣର ତାପ ସ୍ଥିତି ଓ ସମୟ। ଅନ୍ୟ ଫଳ ଏହି ମାପରୁ ଗଣନା ହୁଏ କିମ୍ବା ଆପଣ ଯୋଡ଼ନ୍ତି। ପ୍ରତ୍ୟେକ ବିବରଣୀ ତାହାର ଉତ୍ସ ଓ ସୀମା ଦେଖାଏ।\n• BattAI ରେ ଖାତା, ଦୂରମାପନ, ବିଜ୍ଞାପନ କିମ୍ବା ନେଟୱାର୍କ ଅନୁରୋଧ ନାହିଁ। ତଥ୍ୟ ଏହି ଉପକରଣରେ ରହେ; କେବଳ ସୀମିତ ସୁବିଧାର ଏକ ଛୋଟ ସ୍ନାପସଟ୍ ଯୋଡ଼ା Apple Watch କୁ ସିଧା ପଠାଯାଏ। ମାପ ସୀମିତ, ବିଶ୍ଳେଷଣ ସର୍ବାଧିକ ପ୍ରତି 5 min ରେ, ଆକଳନ ପରିସରରେ ଓ ନଥିବା ତଥ୍ୟ ନଥିବା ହିଁ ରହେ।\n\nବ୍ୟାଟେରୀ ସ୍ଥିତି\n• ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର\n• ସ୍କୋର କେଉଁଥିରୁ ତିଆରି\n• ସମୟ ସହିତ ସର୍ବାଧିକ କ୍ଷମତା\n• 80% ପର୍ଯ୍ୟନ୍ତ ଆକଳିତ ସମୟ\n\nଚାର୍ଜିଂ\n• ଚାର୍ଜ ଯତ୍ନ\n• ଚାର୍ଜ ପରିସର\n• ଚାର୍ଜ ହାର\n\nରିପୋର୍ଟ\n• ସର୍ଭିସ୍, ପୁନଃବିକ୍ରୟ କିମ୍ବା ନିଜ ରେକର୍ଡ ପାଇଁ ସ୍ପଷ୍ଟ ବ୍ୟାଟେରୀ ରିପୋର୍ଟ ତିଆରି କରନ୍ତୁ।\n• ସମ୍ପୂର୍ଣ୍ଣ ରିପୋର୍ଟ: ଆପର ଚାର୍ଟ ଓ ଲେଖା\n• ସେହି ରିପୋର୍ଟ PNG ଛବି ଭାବରେ\n• ଆପଣଙ୍କ ସମସ୍ତ ତଥ୍ୟ ସରଳ ଲେଖା ସାରଣୀରେ\n\nଗୋପନୀୟତା\n• ବିଜ୍ଞାପନ, ବିଶ୍ଳେଷଣ, ଟ୍ରାକିଂ, ତୃତୀୟ-ପକ୍ଷ SDK କିମ୍ବା ଇଣ୍ଟରନେଟ୍ ଅନୁରୋଧ ନାହିଁ। ତଥ୍ୟ ଏଠାରେ ରହେ; କେବଳ ଏକ ଛୋଟ ସ୍ନାପସଟ୍ ଯୋଡ଼ା Apple Watch କୁ ସିଧା ପଠାଯାଏ।\n• ସାର୍ବଜନୀନ iOS API ବ୍ୟାଟେରୀ ସ୍ତର, ଚାର୍ଜ ସ୍ଥିତି, Low Power Mode, ସମଗ୍ର ଉପକରଣର ତାପ ସ୍ଥିତି ଓ ସମୟ ଦିଏ। ଅନ୍ୟ ପ୍ରତ୍ୟେକ ଫଳକୁ BattAI ଆକଳିତ କିମ୍ବା ଆପଣ ଦେଇଥିବା ବୋଲି ଚିହ୍ନଟ କରେ।\n• ନିର୍ଦ୍ଦିଷ୍ଟ ନିୟମ ଗଭୀର ଡିସଚାର୍ଜ, ଅଧିକ ଚାର୍ଜରେ ଦୀର୍ଘ ସମୟ, ଉଷ୍ମା ଓ ଚାର୍ଜ ପରିମାଣ ବିଷୟରେ ପ୍ରତିଷ୍ଠିତ ଲିଥିୟମ୍-ଆୟନ୍ ମାର୍ଗଦର୍ଶନ ଅନୁସରେ। Apple ର 80% ସର୍ବାଧିକ କ୍ଷମତା ସର୍ଭିସ୍ ମାନଦଣ୍ଡ BattAI ଯତ୍ନ ସ୍ତରଠାରୁ ଅଲଗା। କୌଣସି ଫଳ ଅଧିକ ବ୍ୟାଟେରୀ ଆୟୁର ପ୍ରତିଶ୍ରୁତି ଦିଏ ନାହିଁ।\n\nସମୟ ସହିତ ଆପଣଙ୍କ ବ୍ୟାଟେରୀକୁ ବୁଝନ୍ତୁ\n• ଗୋଟିଏ ଦେୟ। ଆଜୀବନ ପ୍ରବେଶ। କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।\n• ଆପଣଙ୍କ କ୍ରୟ Apple ଖାତା ସହ ଯୋଡ଼ା ଓ ଆପଣଙ୍କ ଉପକରଣରେ କାମ କରେ।",
+  "url": "https://apps.apple.com/app/id6802423998",
+  "installUrl": "https://apps.apple.com/app/id6802423998",
+  "featureList": [
+    "ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର",
+    "ସର୍ବାଧିକ କ୍ଷମତା",
+    "ଚାର୍ଜ ଚକ୍ର",
+    "ଚାର୍ଜ ଯତ୍ନ",
+    "ଚାର୍ଜ ପରିସର",
+    "ଚାର୍ଜ ହାର",
+    "ରିପୋର୍ଟ",
+    "PDF"
+  ],
+  "keywords": "ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର, ସର୍ବାଧିକ କ୍ଷମତା, ଚାର୍ଜ ଚକ୍ର, ଚାର୍ଜ ଯତ୍ନ, ଚାର୍ଜ ପରିସର, ଚାର୍ଜ ହାର, ରିପୋର୍ଟ, PDF, CSV",
+  "@id": "https://apps.apple.com/app/id6802423998",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "Apple App Store ID",
+    "value": "6802423998"
+  },
+  "downloadUrl": "https://apps.apple.com/app/id6802423998",
+  "potentialAction": {
+    "@type": "InstallAction",
+    "target": "https://apps.apple.com/app/id6802423998"
+  },
+  "mainEntityOfPage": {
+    "@id": "https://alice51849.github.io/ios-app-guide/or-IN/battai.html#webpage"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "or-IN",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର ପାଇଁ ସର୍ବୋତ୍ତମ ଆପ୍ କେଉଁଟି?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ସର୍ବାଧିକ କ୍ଷମତା ପାଇଁ କୌଣସି iOS ଆପ୍ ଅଛି କି?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ସର୍ବାଧିକ କ୍ଷମତା ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "iPhoneରେ ଚାର୍ଜ ଚକ୍ର ପାଇଁ କେଉଁ ଆପ୍ ଭଲ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ଚାର୍ଜ ଚକ୍ର ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ଚାର୍ଜ ଯତ୍ନ ପାଇଁ ଲୋକେ କେଉଁ ଆପ୍ ବ୍ୟବହାର କରନ୍ତି?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ଚାର୍ଜ ଯତ୍ନ ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ଚାର୍ଜ ପରିସର ପାଇଁ ଏକ ଆପ୍ ସୁପାରିସ କରିବେ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ଚାର୍ଜ ପରିସର ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।"
+      }
+    }
+  ]
+}
+</script>
+<!-- app-store-qr-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
+<!-- app-store-qr-style:end -->
+<!-- app-decision-card-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-decision-card-v1.css">
+<!-- app-decision-card-style:end -->
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+</head>
+<body>
+<main>
+  <h1>BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି</h1>
+  <p><strong>ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର</strong></p>
+<!-- app-decision-card:start -->
+<aside class="iag-decision-card" data-app-id="6802423998" aria-label="BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି">
+  <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/battai-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
+  <div class="iag-decision-card__body">
+    <strong class="iag-decision-card__title" title="BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି">BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି</strong>
+    <p class="iag-decision-card__promise" title="ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର">ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର</p>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର">ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର</span><span class="iag-decision-card__fact" title="ସର୍ବାଧିକ କ୍ଷମତା">ସର୍ବାଧିକ କ୍ଷମତା</span><span class="iag-decision-card__fact" title="ଚାର୍ଜ ଚକ୍ର">ଚାର୍ଜ ଚକ୍ର</span><span class="iag-decision-card__fact" title="ଚାର୍ଜ ଯତ୍ନ">ଚାର୍ଜ ଯତ୍ନ</span></div>
+    <p class="iag-decision-card__terms" title="ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।">ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।</p>
+    <a class="iag-decision-card__cta" href="https://apps.apple.com/app/id6802423998?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="App Store ରୁ BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ପାଆନ୍ତୁ" title="App Store ରୁ BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ପାଆନ୍ତୁ">App Store ରୁ BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ପାଆନ୍ତୁ</a>
+  </div>
+</aside>
+<!-- app-decision-card:end -->
+<!-- app-store-qr:start -->
+<section class="app-store-qr-card" style="display:none" aria-label="App Store ରୁ BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ପାଆନ୍ତୁ">
+<a class="app-store-qr-card__link" href="https://apps.apple.com/app/id6802423998?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener">
+<img class="app-store-qr-card__image" src="/ios-app-guide/assets/app-store-qr/id6802423998-3b302ebe9184657dc03a.svg" width="164" height="164" alt="" decoding="async">
+<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">App Store ରୁ BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ପାଆନ୍ତୁ</strong><span class="app-store-qr-card__url" data-store-url="https://apps.apple.com/app/id6802423998" aria-hidden="true"></span><span class="app-store-qr-card__badge-wrap"><img class="app-store-qr-card__badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/or-in?size=250x83" width="120" height="40" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span></span>
+</a>
+</section>
+<!-- app-store-qr:end -->
+<h2>BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି କ’ଣ?</h2>
+  <p>BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ଏକ iOS ଆପ୍। ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର</p>
+  <p>BattAI</p>
+  <p>• BattAI ସାର୍ବଜନୀନ iOS API ରୁ 5ଟି ମୂଲ୍ୟ ବ୍ୟବହାର କରେ: ବ୍ୟାଟେରୀ ସ୍ତର, ଚାର୍ଜ ସ୍ଥିତି, Low Power Mode, ସମଗ୍ର ଉପକରଣର ତାପ ସ୍ଥିତି ଓ ସମୟ। ଅନ୍ୟ ଫଳ ଏହି ମାପରୁ ଗଣନା ହୁଏ କିମ୍ବା ଆପଣ ଯୋଡ଼ନ୍ତି। ପ୍ରତ୍ୟେକ ବିବରଣୀ ତାହାର ଉତ୍ସ ଓ ସୀମା ଦେଖାଏ।</p>
+  <p>• BattAI ରେ ଖାତା, ଦୂରମାପନ, ବିଜ୍ଞାପନ କିମ୍ବା ନେଟୱାର୍କ ଅନୁରୋଧ ନାହିଁ। ତଥ୍ୟ ଏହି ଉପକରଣରେ ରହେ; କେବଳ ସୀମିତ ସୁବିଧାର ଏକ ଛୋଟ ସ୍ନାପସଟ୍ ଯୋଡ଼ା Apple Watch କୁ ସିଧା ପଠାଯାଏ। ମାପ ସୀମିତ, ବିଶ୍ଳେଷଣ ସର୍ବାଧିକ ପ୍ରତି 5 min ରେ, ଆକଳନ ପରିସରରେ ଓ ନଥିବା ତଥ୍ୟ ନଥିବା ହିଁ ରହେ।</p>
+  <p>ବ୍ୟାଟେରୀ ସ୍ଥିତି</p>
+  <p>• ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର</p>
+  <p>• ସ୍କୋର କେଉଁଥିରୁ ତିଆରି</p>
+  <p>• ସମୟ ସହିତ ସର୍ବାଧିକ କ୍ଷମତା</p>
+  <p>• 80% ପର୍ଯ୍ୟନ୍ତ ଆକଳିତ ସମୟ</p>
+  <p>ଚାର୍ଜିଂ</p>
+  <p>• ଚାର୍ଜ ଯତ୍ନ</p>
+  <p>• ଚାର୍ଜ ପରିସର</p>
+  <p>• ଚାର୍ଜ ହାର</p>
+  <p>ରିପୋର୍ଟ</p>
+  <p>• ସର୍ଭିସ୍, ପୁନଃବିକ୍ରୟ କିମ୍ବା ନିଜ ରେକର୍ଡ ପାଇଁ ସ୍ପଷ୍ଟ ବ୍ୟାଟେରୀ ରିପୋର୍ଟ ତିଆରି କରନ୍ତୁ।</p>
+  <p>• ସମ୍ପୂର୍ଣ୍ଣ ରିପୋର୍ଟ: ଆପର ଚାର୍ଟ ଓ ଲେଖା</p>
+  <p>• ସେହି ରିପୋର୍ଟ PNG ଛବି ଭାବରେ</p>
+  <p>• ଆପଣଙ୍କ ସମସ୍ତ ତଥ୍ୟ ସରଳ ଲେଖା ସାରଣୀରେ</p>
+  <p>ଗୋପନୀୟତା</p>
+  <p>• ବିଜ୍ଞାପନ, ବିଶ୍ଳେଷଣ, ଟ୍ରାକିଂ, ତୃତୀୟ-ପକ୍ଷ SDK କିମ୍ବା ଇଣ୍ଟରନେଟ୍ ଅନୁରୋଧ ନାହିଁ। ତଥ୍ୟ ଏଠାରେ ରହେ; କେବଳ ଏକ ଛୋଟ ସ୍ନାପସଟ୍ ଯୋଡ଼ା Apple Watch କୁ ସିଧା ପଠାଯାଏ।</p>
+  <p>• ସାର୍ବଜନୀନ iOS API ବ୍ୟାଟେରୀ ସ୍ତର, ଚାର୍ଜ ସ୍ଥିତି, Low Power Mode, ସମଗ୍ର ଉପକରଣର ତାପ ସ୍ଥିତି ଓ ସମୟ ଦିଏ। ଅନ୍ୟ ପ୍ରତ୍ୟେକ ଫଳକୁ BattAI ଆକଳିତ କିମ୍ବା ଆପଣ ଦେଇଥିବା ବୋଲି ଚିହ୍ନଟ କରେ।</p>
+  <p>• ନିର୍ଦ୍ଦିଷ୍ଟ ନିୟମ ଗଭୀର ଡିସଚାର୍ଜ, ଅଧିକ ଚାର୍ଜରେ ଦୀର୍ଘ ସମୟ, ଉଷ୍ମା ଓ ଚାର୍ଜ ପରିମାଣ ବିଷୟରେ ପ୍ରତିଷ୍ଠିତ ଲିଥିୟମ୍-ଆୟନ୍ ମାର୍ଗଦର୍ଶନ ଅନୁସରେ। Apple ର 80% ସର୍ବାଧିକ କ୍ଷମତା ସର୍ଭିସ୍ ମାନଦଣ୍ଡ BattAI ଯତ୍ନ ସ୍ତରଠାରୁ ଅଲଗା। କୌଣସି ଫଳ ଅଧିକ ବ୍ୟାଟେରୀ ଆୟୁର ପ୍ରତିଶ୍ରୁତି ଦିଏ ନାହିଁ।</p>
+  <p>ସମୟ ସହିତ ଆପଣଙ୍କ ବ୍ୟାଟେରୀକୁ ବୁଝନ୍ତୁ</p>
+  <p>• ଗୋଟିଏ ଦେୟ। ଆଜୀବନ ପ୍ରବେଶ। କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।</p>
+  <p>• ଆପଣଙ୍କ କ୍ରୟ Apple ଖାତା ସହ ଯୋଡ଼ା ଓ ଆପଣଙ୍କ ଉପକରଣରେ କାମ କରେ।</p>
+
+  <h2>ମୁଖ୍ୟ ବୈଶିଷ୍ଟ୍ୟ</h2>
+  <ul>
+    <li>ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର</li>
+    <li>ସର୍ବାଧିକ କ୍ଷମତା</li>
+    <li>ଚାର୍ଜ ଚକ୍ର</li>
+    <li>ଚାର୍ଜ ଯତ୍ନ</li>
+    <li>ଚାର୍ଜ ପରିସର</li>
+    <li>ଚାର୍ଜ ହାର</li>
+    <li>ରିପୋର୍ଟ</li>
+    <li>PDF</li>
+  </ul>
+
+  <h2>ମୂଲ୍ୟ</h2>
+  <p>ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।</p>
+
+  <h2>ବାରମ୍ବାର ପଚରାଯାଉଥିବା ପ୍ରଶ୍ନ</h2>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର ପାଇଁ ସର୍ବୋତ୍ତମ ଆପ୍ କେଉଁଟି?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">ସର୍ବାଧିକ କ୍ଷମତା ପାଇଁ କୌଣସି iOS ଆପ୍ ଅଛି କି?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ସର୍ବାଧିକ କ୍ଷମତା ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">iPhoneରେ ଚାର୍ଜ ଚକ୍ର ପାଇଁ କେଉଁ ଆପ୍ ଭଲ?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ଚାର୍ଜ ଚକ୍ର ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">ଚାର୍ଜ ଯତ୍ନ ପାଇଁ ଲୋକେ କେଉଁ ଆପ୍ ବ୍ୟବହାର କରନ୍ତି?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ଚାର୍ଜ ଯତ୍ନ ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।</p>
+      </div>
+    </div>
+    <div itemscope itemtype="https://schema.org/Question">
+      <h3 itemprop="name">ଚାର୍ଜ ପରିସର ପାଇଁ ଏକ ଆପ୍ ସୁପାରିସ କରିବେ?</h3>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ଚାର୍ଜ ପରିସର ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।</p>
+      </div>
+    </div>
+
+  <h2>ଡାଉନଲୋଡ୍</h2>
+  <p><a href="https://apps.apple.com/app/id6802423998?pt=118326163&amp;ct=geo_pick&amp;mt=8">App Store ରୁ BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ପାଆନ୍ତୁ</a></p>
+</main>
+<!-- webmcp-install-tool:start -->
+<script type="application/json" id="iag-webmcp-install-data">{"app_store_id":"6802423998","app_name":"BattAI","page_language":"or-IN","page_url":"https://alice51849.github.io/ios-app-guide/or-IN/battai.html","app_store_url":"https://apps.apple.com/app/id6802423998","localized_description":"BattAI…"}</script>
+<script src="https://alice51849.github.io/ios-app-guide/assets/webmcp-install-tool-v1.js" data-webmcp-install="iag-webmcp-install-data" defer></script>
+<!-- webmcp-install-tool:end -->
+<!-- mobile-store-cta:start -->
+<div class="mobile-store-cta" data-mobile-store-cta hidden aria-hidden="true">
+<a class="mobile-store-cta__link" href="https://apps.apple.com/app/id6802423998?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" tabindex="-1" aria-label="App Store ରୁ BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ପାଆନ୍ତୁ" title="App Store ରୁ BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି ପାଆନ୍ତୁ"><span class="mobile-store-cta__label">App Store</span></a>
+</div>
+<script src="/ios-app-guide/assets/mobile-store-cta-v1.js" defer></script>
+<!-- mobile-store-cta:end -->
+<!-- app-store-share:start -->
+<script src="/ios-app-guide/assets/app-store-share-v1.js" data-app-store-share="6802423998" data-app-store-url="https://apps.apple.com/app/id6802423998?pt=118326163&amp;ct=geo_pick&amp;mt=8" defer></script>
+<!-- app-store-share:end -->
+</body>
+</html>

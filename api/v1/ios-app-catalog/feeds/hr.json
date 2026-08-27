@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-26",
-    "contentDigest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
+    "dateModified": "2026-08-27",
+    "contentDigest": "7848bf04fd447836dc9fe1da73ae527a28fec2a9f0cdb39fd4ea865dd3ddc29f",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 44
+    "recordCount": 46
   },
   "items": [
     {
@@ -108,6 +108,23 @@
       ],
       "language": "hr",
       "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802423998",
+      "url": "https://alice51849.github.io/ios-app-guide/hr/battai.html",
+      "external_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_feed_hr&mt=8",
+      "title": "BattAI: Ocjena stanja baterije",
+      "content_text": "BattAI • BattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. Ostali rezultati izračunavaju se iz tih očitanja ili ih dodajete vi. Svaki podatak prikazuje izvor i ograničenja. • BattAI nema račun, telemetriju, oglase ni mrežne zahtjeve. Podaci ostaju na ovom uređaju, osim minimalnog ograničenog sažetka koji se izravno šalje uparenom Apple Watchu. Uzorkovanje je ograničeno, analiza se pokreće najviše svakih pet minuta, procjene koriste raspone, a podaci koji nedostaju ostaju prazni.",
+      "tags": [
+        "Maksimalni kapacitet",
+        "Ciklusi",
+        "Pažljivo punjenje",
+        "Raspon punjenja",
+        "Brzina punjenja",
+        "Što oblikuje ocjenu"
+      ],
+      "language": "hr",
+      "date_modified": "2026-08-27T06:15:40Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -990,6 +1007,29 @@
       ],
       "language": "hr",
       "date_modified": "2026-08-24T08:39:44Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802505528",
+      "url": "https://alice51849.github.io/ios-app-guide/hr/savetag.html",
+      "external_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_feed_hr&mt=8",
+      "title": "SaveTag: AI oznake",
+      "content_text": "Spremi sada. I ovaj put stvarno pročitaj.",
+      "tags": [
+        "za čitanje",
+        "favoriti",
+        "zbirka",
+        "url",
+        "mapa",
+        "kategorije",
+        "izvanmrežno",
+        "recepti",
+        "putovanja",
+        "kupnja",
+        "privatno",
+        "arhiva"
+      ],
+      "language": "hr",
+      "date_modified": "2026-08-27T06:15:40Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",

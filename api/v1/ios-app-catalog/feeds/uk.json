@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-26",
-    "contentDigest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
+    "dateModified": "2026-08-27",
+    "contentDigest": "7848bf04fd447836dc9fe1da73ae527a28fec2a9f0cdb39fd4ea865dd3ddc29f",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 44
+    "recordCount": 46
   },
   "items": [
     {
@@ -108,6 +108,25 @@
       ],
       "language": "uk",
       "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802423998",
+      "url": "https://alice51849.github.io/ios-app-guide/uk/battai.html",
+      "external_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_feed_uk&mt=8",
+      "title": "BattAI: Стан батареї",
+      "content_text": "BattAI • BattAI використовує п’ять значень із публічних API iOS: рівень заряду, стан заряджання, режим низького енергоспоживання, тепловий стан усього пристрою й час. Інші результати обчислюються з цих показань або додаються вами. Кожен показник має джерело й обмеження. • BattAI не має облікового запису, телеметрії, реклами чи мережевих запитів. Дані залишаються на цьому пристрої, крім мінімального обмеженого знімка, який надсилається безпосередньо на спарений Apple Watch. Вибірка обмежена, аналіз виконується не частіше ніж раз на п’ять хвилин, оцінки подаються діапазонами, а відсутні дані лишаються відсутніми.",
+      "tags": [
+        "Оцінка стану акумулятора",
+        "Максимальна ємність",
+        "Цикли",
+        "Дбайливе заряджання",
+        "Діапазон заряду",
+        "Звіти",
+        "PDF",
+        "CSV"
+      ],
+      "language": "uk",
+      "date_modified": "2026-08-27T06:15:40Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -1011,6 +1030,30 @@
       ],
       "language": "uk",
       "date_modified": "2026-08-24T08:39:44Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802505528",
+      "url": "https://alice51849.github.io/ios-app-guide/uk/savetag.html",
+      "external_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_feed_uk&mt=8",
+      "title": "SaveTag: закладки з ШІ",
+      "content_text": "Збережіть зараз. І цього разу справді прочитайте.",
+      "tags": [
+        "прочитати пізніше",
+        "обране",
+        "добірка",
+        "url",
+        "тека",
+        "теги",
+        "офлайн",
+        "рецепти",
+        "подорожі",
+        "покупки",
+        "нотатки",
+        "архів",
+        "список"
+      ],
+      "language": "uk",
+      "date_modified": "2026-08-27T06:15:40Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",

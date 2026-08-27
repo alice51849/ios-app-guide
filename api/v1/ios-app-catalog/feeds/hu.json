@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-26",
-    "contentDigest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
+    "dateModified": "2026-08-27",
+    "contentDigest": "7848bf04fd447836dc9fe1da73ae527a28fec2a9f0cdb39fd4ea865dd3ddc29f",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 44
+    "recordCount": 46
   },
   "items": [
     {
@@ -107,6 +107,24 @@
       ],
       "language": "hu",
       "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802423998",
+      "url": "https://alice51849.github.io/ios-app-guide/hu/battai.html",
+      "external_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_feed_hu&mt=8",
+      "title": "BattAI: Akkuállapot",
+      "content_text": "BattAI • A BattAI öt értéket használ a nyilvános iOS API-kból: töltöttségi szintet, töltési állapotot, Alacsony töltöttségű módot, az egész készülék hőállapotát és az időt. A többi eredmény ezekből készül vagy tőled származik. Minden adatnál látható a forrás és a korlátok. • A BattAI-ban nincs fiók, telemetria, hirdetés vagy hálózati kérés. Az adatok ezen az eszközön maradnak, kivéve a minimális, korlátozott pillanatképet, amely közvetlenül a párosított Apple Watchra kerül. A mintavétel korlátozott, az elemzés legfeljebb ötpercenként fut, a becslések tartományokat használnak, a hiányzó adat pedig hiányzó marad.",
+      "tags": [
+        "Akkumulátorállapot-pontszám",
+        "Maximális kapacitás",
+        "Ciklusok",
+        "Töltési gondosság",
+        "Töltési tartomány",
+        "PDF",
+        "CSV"
+      ],
+      "language": "hu",
+      "date_modified": "2026-08-27T06:15:40Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -996,6 +1014,28 @@
       ],
       "language": "hu",
       "date_modified": "2026-08-24T08:39:44Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802505528",
+      "url": "https://alice51849.github.io/ios-app-guide/hu/savetag.html",
+      "external_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_feed_hu&mt=8",
+      "title": "SaveTag: AI könyvjelzők",
+      "content_text": "Mentsd el most. És most tényleg olvasd is el.",
+      "tags": [
+        "olvasási lista",
+        "kedvencek",
+        "gyűjtemény",
+        "url",
+        "mappa",
+        "címkék",
+        "offline",
+        "receptek",
+        "utazás",
+        "vásárlás",
+        "jegyzetek"
+      ],
+      "language": "hu",
+      "date_modified": "2026-08-27T06:15:40Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",

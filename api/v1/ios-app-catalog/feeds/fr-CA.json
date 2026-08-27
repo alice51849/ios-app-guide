@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-26",
-    "contentDigest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
+    "dateModified": "2026-08-27",
+    "contentDigest": "7848bf04fd447836dc9fe1da73ae527a28fec2a9f0cdb39fd4ea865dd3ddc29f",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 44
+    "recordCount": 46
   },
   "items": [
     {
@@ -107,6 +107,25 @@
       ],
       "language": "fr-CA",
       "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802423998",
+      "url": "https://alice51849.github.io/ios-app-guide/fr-CA/battai.html",
+      "external_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_feed_fr_ca&mt=8",
+      "title": "BattAI: Santé de la batterie",
+      "content_text": "BattAI • BattAI utilise cinq valeurs fournies par les API publiques d’iOS : niveau de batterie, état de recharge, mode économie d’énergie, état thermique de l’appareil et heure. Les autres résultats sont calculés à partir de ces relevés ou ajoutés par vous. Chaque détail indique sa source et ses limites. • BattAI n’a ni compte, ni télémétrie, ni publicité, ni requête réseau. Les données restent sur cet appareil, sauf un instantané minimal et limité envoyé directement à l’Apple Watch jumelée. L’échantillonnage est limité, l’analyse tourne au plus toutes les cinq minutes, les estimations utilisent des plages et les données manquantes restent manquantes.",
+      "tags": [
+        "test",
+        "Note de santé de la batterie",
+        "Capacité maximale",
+        "Cycles",
+        "Bonnes pratiques",
+        "Plage de recharge",
+        "PDF",
+        "le"
+      ],
+      "language": "fr-CA",
+      "date_modified": "2026-08-27T06:15:40Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -992,6 +1011,27 @@
       ],
       "language": "fr-CA",
       "date_modified": "2026-08-24T08:39:44Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802505528",
+      "url": "https://alice51849.github.io/ios-app-guide/fr-CA/savetag.html",
+      "external_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_feed_fr_ca&mt=8",
+      "title": "SaveTag : signets par IA",
+      "content_text": "Gardez-le maintenant. Lisez-le pour vrai plus tard.",
+      "tags": [
+        "à lire plus tard",
+        "favoris",
+        "collection",
+        "url",
+        "classeur",
+        "étiquette",
+        "hors ligne",
+        "recettes",
+        "magasinage",
+        "voyage"
+      ],
+      "language": "fr-CA",
+      "date_modified": "2026-08-27T06:15:40Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",

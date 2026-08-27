@@ -2,7 +2,7 @@
 title: "AI Brief — Files to Clear Context | iOS App"
 lang: "en-US"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/en-US/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

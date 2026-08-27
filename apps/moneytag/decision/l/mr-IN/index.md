@@ -2,7 +2,7 @@
 title: "MoneyTag: उत्पन्न आणि खर्च — प्रकल्प · टॅग · अहवाल | iOS App"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/mr-IN/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

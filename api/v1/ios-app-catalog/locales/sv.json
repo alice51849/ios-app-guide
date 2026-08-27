@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-26",
-  "content_digest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
+  "date_modified": "2026-08-27",
+  "content_digest": "7848bf04fd447836dc9fe1da73ae527a28fec2a9f0cdb39fd4ea865dd3ddc29f",
   "locale": "sv",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 44,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -163,6 +163,36 @@
         "formatted_price": "79,00 kr",
         "storefront_url": "https://apps.apple.com/se/app/id6792483140"
       }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: Batteriets hälsopoäng",
+      "summary": "BattAI • BattAI använder fem värden från offentliga iOS-API:er: batterinivå, laddningsstatus, strömsparläge, hela enhetens termiska tillstånd och tid. Andra resultat beräknas från dessa mätningar eller läggs till av dig. Varje uppgift visar källa och gränser. • BattAI har inget konto, ingen telemetri, inga annonser och inga nätverksanrop. Data stannar på den här enheten, förutom en minimal funktionsbegränsad ögonblicksbild som skickas direkt till parkopplade Apple Watch. Mätningen är begränsad, analysen körs högst var femte minut, uppskattningar använder intervall och saknade data förblir saknade.",
+      "category": "utility",
+      "search_terms": [
+        "Maxkapacitet",
+        "Cykler",
+        "Laddningsvård",
+        "Laddningsintervall",
+        "Laddningshastighet",
+        "Uppskattad tid till 80%",
+        "PDF"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_api_sv&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/sv/battai.html",
+      "verified_live": true
     },
     {
       "key": "caldaily",
@@ -1557,6 +1587,42 @@
         "formatted_price": "Gratis",
         "storefront_url": "https://apps.apple.com/se/app/id6780223070"
       }
+    },
+    {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: AI-bokmärken",
+      "summary": "Spara nu. Läs på riktigt sen.",
+      "category": "productivity",
+      "search_terms": [
+        "läslista",
+        "favoriter",
+        "samla",
+        "url",
+        "mapp",
+        "etiketter",
+        "offline",
+        "recept",
+        "resor",
+        "shopping",
+        "privat",
+        "arkiv",
+        "anteckningar"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_api_sv&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/sv/savetag.html",
+      "verified_live": true
     },
     {
       "key": "scanto",

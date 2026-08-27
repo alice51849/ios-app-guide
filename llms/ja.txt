@@ -3,7 +3,7 @@
 > 各 iOS アプリの構造化情報 — 機能・価格・FAQ。
 
 locale: ja
-apps: 44
+apps: 46
 - アプリ一覧: https://alice51849.github.io/ios-app-guide/ja/tools/private-pay-once-iphone-app-finder.html
 - アプリ一覧 · PWA: https://alice51849.github.io/ios-app-guide/ja/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ja.jsonld
@@ -43,6 +43,10 @@ apps: 44
   - 8問のウォームアップ、15分20問のプレッシャー演習、間違いの解き直しを一つの習慣に。オリジナル630問、模試、弱点分析、書き取りまでオフラインで完結します。
   - 価格: 有料ダウンロードの買い切りで、サブスクリプションはありません。
   - App Store: https://apps.apple.com/jp/app/id6792483140
+- [BattAI: バッテリー状態スコア](https://alice51849.github.io/ios-app-guide/ja/battai.html) — 80%までの推定期間
+  - 電池の変化を長く見守る. より深い履歴、計画、レポートを使えます。 スコアを形づくる要因. PDF・CSVバッテリーレポートを作成. データはこのiPhoneとペアリング済みのApple Watch内に保存。追跡はしません。
+  - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
+  - App Store: https://apps.apple.com/app/id6802423998
 - [CalDaily 電卓とテーマ](https://alice51849.github.io/ios-app-guide/ja/caldaily.html) — ウィジェット・8つのツール・履歴
   - 計算した結果に名前と種類を付けて、あとから探せる電卓。8つの実用ツール、ホーム画面ウィジェット、100種類のテーマ。すべて端末内で完結します。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
@@ -147,6 +151,10 @@ apps: 44
   - 重複写真、スクショ、ピンボケ、大きな動画を端末上で検出。削除前に確認でき、広告なし・サブスクなし。安心して空き容量を取り戻せます。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6780223070
+- [SaveTag: AIであとで読む](https://alice51849.github.io/ios-app-guide/ja/savetag.html) — リンクを保存して自動でタグ
+  - 「あとで見る」で終わっていたリンクに、やっと居場所を。ワンタップで保存すると端末内で自動的に仕分けされ、毎日の再発見で読み切れます。アカウント不要、広告なし、買い切りでサブスクなし。
+  - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
+  - App Store: https://apps.apple.com/app/id6802505528
 - [ScanTo Pro: オフラインPDF](https://alice51849.github.io/ios-app-guide/ja/scanto.html) — 完全オフラインのPDF・OCR
   - スキャンして、ずっと探せる。くっきりPDF、検索できるOCRテキスト、Face IDロック。完全オフライン、買い切り、サブスクなし。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。

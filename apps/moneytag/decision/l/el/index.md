@@ -2,7 +2,7 @@
 title: "MoneyTag: Έσοδα και έξοδα — Έργα · Ετικέτες · Αναφορά | iOS App"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/el/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

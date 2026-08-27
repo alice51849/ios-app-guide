@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://alice51849.github.io/ios-app-guide/visuals/",
-  "dateModified": "2026-08-26",
+  "dateModified": "2026-08-27",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,12 +10,12 @@
     "url": "https://alice51849.github.io/ios-app-guide"
   },
   "source_dataset": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "content_digest": "653f8ecd5d534e0c719c7f66a7ebd584b871a9d40070830165d1da786af392a0",
-  "generation_digest": "977732e185a19fa26b6b0f7072b94050ef8652339b2e05ecbce30c0608ebf40f",
+  "content_digest": "24a8d5d86578c5cdcf7b74ceede025f9e65e748019104b68239d44c503168c39",
+  "generation_digest": "3b010af46264b0f5b5c86003a3e15857cf84e1e4ef2f11d77970c5eef4a68adb",
   "ordering": "official_locale_order_then_alphabetical_app_name",
-  "app_count": 44,
+  "app_count": 46,
   "locale_count": 50,
-  "image_count": 2200,
+  "image_count": 2300,
   "gallery_count": 51,
   "publisher_authored": true,
   "measured_search_volume": false,
@@ -69,6 +69,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6792483140?pt=118326163&ct=iag_visual_ar_sa&mt=8",
       "sha256": "8d6a24ef7a3657917db8b9beea56aae6d98935c596de05c9a2518ad7c4bd66ac"
+    },
+    {
+      "locale": "ar-SA",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ar-SA/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_ar_sa&mt=8",
+      "sha256": "7f10fd035f52a748f24a76f77d80ada7322fe42c60afc76e9ab226f7c1ada522"
     },
     {
       "locale": "ar-SA",
@@ -342,6 +352,16 @@
     },
     {
       "locale": "ar-SA",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ar-SA/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ar-SA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_ar_sa&mt=8",
+      "sha256": "cc95c1fa478c4efe7627b213add217baa396bbf9304a871ca3f2eb6cd0d9e0b1"
+    },
+    {
+      "locale": "ar-SA",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ar-SA/scanto.svg",
@@ -509,6 +529,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/aim990plus.html",
       "app_store_url": "https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_visual_bn_bd&mt=8",
       "sha256": "ffeec6960129e635dae0616965ffb7f45fc01dde003f9056b41a510457a4d627"
+    },
+    {
+      "locale": "bn-BD",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_bn_bd&mt=8",
+      "sha256": "ecf3c754b041c3c5853ec330367ae07df680fdb66c19c21b5f5cc03d4e9dc1f6"
     },
     {
       "locale": "bn-BD",
@@ -782,6 +812,16 @@
     },
     {
       "locale": "bn-BD",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/bn-BD/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_bn_bd&mt=8",
+      "sha256": "a771ab2407812f25e736a4bfd1925b5e7bf56983480cb511ec2fc406b0e54cfc"
+    },
+    {
+      "locale": "bn-BD",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/bn-BD/scanto.svg",
@@ -949,6 +989,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/aim990plus.html",
       "app_store_url": "https://apps.apple.com/es/app/id6792483140?pt=118326163&ct=iag_visual_ca&mt=8",
       "sha256": "952cccb04ca749c46dc9d93eb73c7e11081d42da5d85166db6ac78cbd3f10255"
+    },
+    {
+      "locale": "ca",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_ca&mt=8",
+      "sha256": "44c14df3243c7c68106ecc2ef7bc45c18e31e43b5035050f08ad8d8f4766cadb"
     },
     {
       "locale": "ca",
@@ -1222,6 +1272,16 @@
     },
     {
       "locale": "ca",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ca/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_ca&mt=8",
+      "sha256": "151bff48ff2bb75b4df0cab118647aff4114f45b33d7fcf4fc9bea8386adbacf"
+    },
+    {
+      "locale": "ca",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ca/scanto.svg",
@@ -1389,6 +1449,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/aim990plus.html",
       "app_store_url": "https://apps.apple.com/cz/app/id6792483140?pt=118326163&ct=iag_visual_cs&mt=8",
       "sha256": "ab2d89f2b019b97124e11ae0e1a9e357f2928a34aa65bfde5cbc600bd8da9b93"
+    },
+    {
+      "locale": "cs",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_cs&mt=8",
+      "sha256": "7fa13508e4ae6b032ce37bca414206e01199206626a8579f119931f82e608d5c"
     },
     {
       "locale": "cs",
@@ -1662,6 +1732,16 @@
     },
     {
       "locale": "cs",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/cs/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_cs&mt=8",
+      "sha256": "69b439e6197d4ded3c93424c084d61dee266ffdb1ab0dbff4eb974f37fe827fe"
+    },
+    {
+      "locale": "cs",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/cs/scanto.svg",
@@ -1829,6 +1909,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/aim990plus.html",
       "app_store_url": "https://apps.apple.com/dk/app/id6792483140?pt=118326163&ct=iag_visual_da&mt=8",
       "sha256": "f219784557bf93f7878e8fbabc1b57e89acefee5905aa19816ebe773e4bfa996"
+    },
+    {
+      "locale": "da",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_da&mt=8",
+      "sha256": "7986d48a2ee022a54139b63fe0e852246ca201a5b07dec6d71199ed5e6465a3a"
     },
     {
       "locale": "da",
@@ -2102,6 +2192,16 @@
     },
     {
       "locale": "da",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/da/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_da&mt=8",
+      "sha256": "33828ccd7040e47f19c4792b0ccabfb83fe179cca042228558f5e4de22b3bb56"
+    },
+    {
+      "locale": "da",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/da/scanto.svg",
@@ -2269,6 +2369,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
       "app_store_url": "https://apps.apple.com/de/app/id6792483140?pt=118326163&ct=iag_visual_de_de&mt=8",
       "sha256": "0530c259c6611ad3c6eea0726e0d34aa2477f6716f85ca4c6b460d6e8132b20a"
+    },
+    {
+      "locale": "de-DE",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_de_de&mt=8",
+      "sha256": "b70418a52d9e659bc798102c5664a597e725e83a8bc570a06e730b2597b981c7"
     },
     {
       "locale": "de-DE",
@@ -2542,6 +2652,16 @@
     },
     {
       "locale": "de-DE",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/de-DE/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_de_de&mt=8",
+      "sha256": "7ed68efa48a19bac9153082aa80d2ad1cdf239266d9d2fdec1b22efe77ae63d0"
+    },
+    {
+      "locale": "de-DE",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/de-DE/scanto.svg",
@@ -2709,6 +2829,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/aim990plus.html",
       "app_store_url": "https://apps.apple.com/gr/app/id6792483140?pt=118326163&ct=iag_visual_el&mt=8",
       "sha256": "e5f55a9e2f49a429be44caa1074c60db4aec1d65144e9401d20f200392b080f9"
+    },
+    {
+      "locale": "el",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_el&mt=8",
+      "sha256": "ea9b3589204c8bae2140e2b1f65fba6fc822778e605b3f1840843f403ef41f68"
     },
     {
       "locale": "el",
@@ -2982,6 +3112,16 @@
     },
     {
       "locale": "el",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/el/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_el&mt=8",
+      "sha256": "4bdc289f5e83834ca6f0c3a6f63e6be0acf6669828d73d87d624bcf49ff4c110"
+    },
+    {
+      "locale": "el",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/el/scanto.svg",
@@ -3149,6 +3289,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/aim990plus.html",
       "app_store_url": "https://apps.apple.com/au/app/id6792483140?pt=118326163&ct=iag_visual_en_au&mt=8",
       "sha256": "76c47c8b8408a63f5ddba7e11a26a2a425c79e354de4f73f5b4f0354c5425661"
+    },
+    {
+      "locale": "en-AU",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_en_au&mt=8",
+      "sha256": "795ba777405dcbe9d61bdeb3dc780def092f3c4a32a35effef8c34c661086f3b"
     },
     {
       "locale": "en-AU",
@@ -3422,6 +3572,16 @@
     },
     {
       "locale": "en-AU",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-AU/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_en_au&mt=8",
+      "sha256": "97320fa9559f15bdce15cf91f4a14fc6136589a5b8d7a1bada4e1a83affc38ca"
+    },
+    {
+      "locale": "en-AU",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/scanto.svg",
@@ -3589,6 +3749,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/aim990plus.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6792483140?pt=118326163&ct=iag_visual_en_ca&mt=8",
       "sha256": "7485e76dbaff353a236035ec3afe4e02dda42b8019471fea47698452891b74e0"
+    },
+    {
+      "locale": "en-CA",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_en_ca&mt=8",
+      "sha256": "ac7b585bc7043b1357c8bd6c12a59a1a43f4c9a463e30235a86b4b5991125e78"
     },
     {
       "locale": "en-CA",
@@ -3862,6 +4032,16 @@
     },
     {
       "locale": "en-CA",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_en_ca&mt=8",
+      "sha256": "26afdf784d2585e258096e9f31bbc1de2055fab9c5a37c2189c1d0c64e40d768"
+    },
+    {
+      "locale": "en-CA",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/scanto.svg",
@@ -4029,6 +4209,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/aim990plus.html",
       "app_store_url": "https://apps.apple.com/gb/app/id6792483140?pt=118326163&ct=iag_visual_en_gb&mt=8",
       "sha256": "19d71902c039ca201c692059861aafae9985c46e27e9e58195916c0628dc2e6d"
+    },
+    {
+      "locale": "en-GB",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_en_gb&mt=8",
+      "sha256": "7b748a363b15007adc91053d20afbd2639ac33e8d20680c5a07ac908edcaaf5c"
     },
     {
       "locale": "en-GB",
@@ -4302,6 +4492,16 @@
     },
     {
       "locale": "en-GB",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-GB/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_en_gb&mt=8",
+      "sha256": "d3de9b3d10a91e9fc5da22a33f49bfaa88981b80a0c16c8be20d9db6c513fb0a"
+    },
+    {
+      "locale": "en-GB",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/scanto.svg",
@@ -4469,6 +4669,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus.html",
       "app_store_url": "https://apps.apple.com/us/app/id6792483140?pt=118326163&ct=iag_visual_en_us&mt=8",
       "sha256": "b86fd65e799c3f441f3355db19703586fe2414c9acf54fc99e210706455a8b10"
+    },
+    {
+      "locale": "en-US",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_en_us&mt=8",
+      "sha256": "1c52b7126d8c3eae373ff7fba750c39701bba9b9f11d9431d9e29a93c80fe54d"
     },
     {
       "locale": "en-US",
@@ -4742,6 +4952,16 @@
     },
     {
       "locale": "en-US",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/en-US/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_en_us&mt=8",
+      "sha256": "75ad241922e7d18aaa51110de3216e17a570a7ba7e64cc05714b9d4f90317925"
+    },
+    {
+      "locale": "en-US",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/scanto.svg",
@@ -4909,6 +5129,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
       "app_store_url": "https://apps.apple.com/es/app/id6792483140?pt=118326163&ct=iag_visual_es_es&mt=8",
       "sha256": "ca8374edf8b7c7633ba8b796fdb080efdb8d2a843c3f1838e25cc62f8d3704b2"
+    },
+    {
+      "locale": "es-ES",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_es_es&mt=8",
+      "sha256": "7cface3d9d8bc0114035713ff922752734da278cb63dbad3367d97e6071d3ac9"
     },
     {
       "locale": "es-ES",
@@ -5182,6 +5412,16 @@
     },
     {
       "locale": "es-ES",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-ES/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_es_es&mt=8",
+      "sha256": "aaa10c5553c46a2bbccf36f293ff46a610659de7ecf0a664e757dfdb2a446e97"
+    },
+    {
+      "locale": "es-ES",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-ES/scanto.svg",
@@ -5349,6 +5589,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/aim990plus.html",
       "app_store_url": "https://apps.apple.com/mx/app/id6792483140?pt=118326163&ct=iag_visual_es_mx&mt=8",
       "sha256": "997b54bb3119074580c2ee1756432b0d3c28aea13827ecce9be3b955b175db62"
+    },
+    {
+      "locale": "es-MX",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_es_mx&mt=8",
+      "sha256": "39faa78e2b527fcdf8a07539b9c80d95d79864f178d989be1eaf4e6850d2b22c"
     },
     {
       "locale": "es-MX",
@@ -5622,6 +5872,16 @@
     },
     {
       "locale": "es-MX",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/es-MX/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_es_mx&mt=8",
+      "sha256": "c39c0353dcc0ed3ce7bc5b1a2d96b385af91465f2b107dfc92d18910df83073b"
+    },
+    {
+      "locale": "es-MX",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/es-MX/scanto.svg",
@@ -5789,6 +6049,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/aim990plus.html",
       "app_store_url": "https://apps.apple.com/fi/app/id6792483140?pt=118326163&ct=iag_visual_fi&mt=8",
       "sha256": "e73f88dfe82208afd3f14d043ef093b9ad01c3a549bc9f03bd5f007ec55c125b"
+    },
+    {
+      "locale": "fi",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_fi&mt=8",
+      "sha256": "f9015f3209e0976e7b3f1ac7bae528ff065c3681519b39fe1be186f2072315ec"
     },
     {
       "locale": "fi",
@@ -6062,6 +6332,16 @@
     },
     {
       "locale": "fi",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_fi&mt=8",
+      "sha256": "cc0c511d7e754d59717a3563197c5ef28247f0cd5ce1ebd55d738e7d183a398d"
+    },
+    {
+      "locale": "fi",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fi/scanto.svg",
@@ -6229,6 +6509,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/aim990plus.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6792483140?pt=118326163&ct=iag_visual_fr_ca&mt=8",
       "sha256": "e78d664fc0f1abd3ec7f46ff9af0d483dda4e2ac93097cda57abf60fcf319e3d"
+    },
+    {
+      "locale": "fr-CA",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_fr_ca&mt=8",
+      "sha256": "308ca4c19e9c590a7b8770e517902d944ee12410f300b8d3a5bc5c033d1edbf1"
     },
     {
       "locale": "fr-CA",
@@ -6502,6 +6792,16 @@
     },
     {
       "locale": "fr-CA",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-CA/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_fr_ca&mt=8",
+      "sha256": "e9483a102a9de377c9897e68c281ef9cd08f7bf87b5ef2cf2261ce1612e0d886"
+    },
+    {
+      "locale": "fr-CA",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-CA/scanto.svg",
@@ -6669,6 +6969,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
       "app_store_url": "https://apps.apple.com/fr/app/id6792483140?pt=118326163&ct=iag_visual_fr_fr&mt=8",
       "sha256": "6d7be917354ef891d715c4f492ff2e6744ce6c1619bdb2b7dda593cc81dda3e0"
+    },
+    {
+      "locale": "fr-FR",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_fr_fr&mt=8",
+      "sha256": "79ee8918187fb38c1fb626d60f4d49d4fb8bbb4b5a862d48e2236d6d8f75ae52"
     },
     {
       "locale": "fr-FR",
@@ -6942,6 +7252,16 @@
     },
     {
       "locale": "fr-FR",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-FR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_fr_fr&mt=8",
+      "sha256": "866c057a312de25f353dbd3e9ccc9b5031b2615d0df880683470a5a510e68a78"
+    },
+    {
+      "locale": "fr-FR",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/fr-FR/scanto.svg",
@@ -7109,6 +7429,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/aim990plus.html",
       "app_store_url": "https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_visual_gu_in&mt=8",
       "sha256": "3c8a11b5ad76dfe369c786a894b9e6818baa255204ada7c69c9292c166312065"
+    },
+    {
+      "locale": "gu-IN",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_gu_in&mt=8",
+      "sha256": "1d326c046931ae7bfdc845dcdbe6484264a6954848f93fab12fdef5417bde4f0"
     },
     {
       "locale": "gu-IN",
@@ -7382,6 +7712,16 @@
     },
     {
       "locale": "gu-IN",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/gu-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_gu_in&mt=8",
+      "sha256": "3978861d0aa87fca87184c36a38a21654ee4f317404701cd5440da7cc79e713f"
+    },
+    {
+      "locale": "gu-IN",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/gu-IN/scanto.svg",
@@ -7549,6 +7889,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/aim990plus.html",
       "app_store_url": "https://apps.apple.com/il/app/id6792483140?pt=118326163&ct=iag_visual_he&mt=8",
       "sha256": "66bb3f15b00a9b8805926a70e63c488888aa85b7d4bac298744e3e4d25668178"
+    },
+    {
+      "locale": "he",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_he&mt=8",
+      "sha256": "a7ed37f252eaf40e35f6c8f135368f13cbe1c3bbd86fc707a6f93f77a94b029a"
     },
     {
       "locale": "he",
@@ -7822,6 +8172,16 @@
     },
     {
       "locale": "he",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/he/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_he&mt=8",
+      "sha256": "12e24daca69bc50bec93715dfd9f0c9da84746a500c52829eb9cb5822d5553b8"
+    },
+    {
+      "locale": "he",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/he/scanto.svg",
@@ -7989,6 +8349,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/aim990plus.html",
       "app_store_url": "https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_visual_hi&mt=8",
       "sha256": "8aaa75b2f44dce926bd88e1f75c0fc4d96828002b0274f568124c69c4de86580"
+    },
+    {
+      "locale": "hi",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_hi&mt=8",
+      "sha256": "4b9ee461ee7fdb75bf12c2d02c48e1f24848975698adb32049a06d163185036d"
     },
     {
       "locale": "hi",
@@ -8262,6 +8632,16 @@
     },
     {
       "locale": "hi",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_hi&mt=8",
+      "sha256": "4d7c2c3ced0c88f03d2518bf896fcf1976c7b2f125acc49777b6816661b1ad2c"
+    },
+    {
+      "locale": "hi",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hi/scanto.svg",
@@ -8429,6 +8809,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/aim990plus.html",
       "app_store_url": "https://apps.apple.com/hr/app/id6792483140?pt=118326163&ct=iag_visual_hr&mt=8",
       "sha256": "6ed7d2bf85715ba06e44079cc52bdefda3fe144bc285e36d2da115e7abcacd67"
+    },
+    {
+      "locale": "hr",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_hr&mt=8",
+      "sha256": "4842986ec9cdb12b815a6ccec8af1b18a9b69d318128f961c2f07d5dbb6e21fe"
     },
     {
       "locale": "hr",
@@ -8702,6 +9092,16 @@
     },
     {
       "locale": "hr",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_hr&mt=8",
+      "sha256": "c9441d249d7bf0187c54eb033a98e88b449af05633aa03136673c800e02619fe"
+    },
+    {
+      "locale": "hr",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hr/scanto.svg",
@@ -8869,6 +9269,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/aim990plus.html",
       "app_store_url": "https://apps.apple.com/hu/app/id6792483140?pt=118326163&ct=iag_visual_hu&mt=8",
       "sha256": "1ba12eb60c5ec7e7365de03a6d0e6e3b5dfb6e45ffbb2b03f0d3f3b50db59f80"
+    },
+    {
+      "locale": "hu",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_hu&mt=8",
+      "sha256": "fe3ac83bae70849356a44c4957f48a320771605021c5afaf3a29b88ca45a223a"
     },
     {
       "locale": "hu",
@@ -9142,6 +9552,16 @@
     },
     {
       "locale": "hu",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/hu/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_hu&mt=8",
+      "sha256": "153eb05616bb93cd4c4371cf709769a89714e91e9a9534c8a463bba58949bf6b"
+    },
+    {
+      "locale": "hu",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/hu/scanto.svg",
@@ -9309,6 +9729,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
       "app_store_url": "https://apps.apple.com/id/app/id6792483140?pt=118326163&ct=iag_visual_id&mt=8",
       "sha256": "169d3b86ac338755391310b6d1df49d778f5489ec71ba6ec11e0b1cc643f123b"
+    },
+    {
+      "locale": "id",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_id&mt=8",
+      "sha256": "a8e957a03efd89755b7bda9164077f6ba820fec94e492b5b2edc00f0f036a388"
     },
     {
       "locale": "id",
@@ -9582,6 +10012,16 @@
     },
     {
       "locale": "id",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/id/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_id&mt=8",
+      "sha256": "ac5210a1d0f998c6e4e76e6f5ff19868f30cc8c3060dde7c47ab8d8afeddcaa2"
+    },
+    {
+      "locale": "id",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/id/scanto.svg",
@@ -9749,6 +10189,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/aim990plus.html",
       "app_store_url": "https://apps.apple.com/it/app/id6792483140?pt=118326163&ct=iag_visual_it&mt=8",
       "sha256": "e4cfca984e9b914351213ef968aa81c15d7f73b31f4ac7c33ada780deb2b0c6b"
+    },
+    {
+      "locale": "it",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_it&mt=8",
+      "sha256": "b6f09a8395c4461af39062f06fe5c992aa4347eb813c3d38bea6aaa303063425"
     },
     {
       "locale": "it",
@@ -10022,6 +10472,16 @@
     },
     {
       "locale": "it",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/it/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_it&mt=8",
+      "sha256": "1fba6dee840df2d2baf10a50ec6937637460072885c69ddbfc93577412a65dd0"
+    },
+    {
+      "locale": "it",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/it/scanto.svg",
@@ -10189,6 +10649,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
       "app_store_url": "https://apps.apple.com/jp/app/id6792483140?pt=118326163&ct=iag_visual_ja&mt=8",
       "sha256": "d40470957c6f29c6f4a7f6d2ff0eed11b3be9af82b2558bd99be1df7a89c1c5f"
+    },
+    {
+      "locale": "ja",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_ja&mt=8",
+      "sha256": "3dc8934d0a7e9bdfaab819f10c40844f3dd1831b41eb09edbf97005517320dfa"
     },
     {
       "locale": "ja",
@@ -10462,6 +10932,16 @@
     },
     {
       "locale": "ja",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ja/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_ja&mt=8",
+      "sha256": "8a34e9e94964040bda00877c8a9b5bc5abf72067011a1d681d131658b3188e6a"
+    },
+    {
+      "locale": "ja",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ja/scanto.svg",
@@ -10629,6 +11109,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/aim990plus.html",
       "app_store_url": "https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_visual_kn_in&mt=8",
       "sha256": "a626ef8f9bdb755a2bf0fbe8ad2a0feeb5f0e4e01f639253e0441bcd300e45da"
+    },
+    {
+      "locale": "kn-IN",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_kn_in&mt=8",
+      "sha256": "b1ad7e7ea4aa143ae02b69c4c2e0f937956c9ef669e2c7a6e6a65a0a4ed07682"
     },
     {
       "locale": "kn-IN",
@@ -10902,6 +11392,16 @@
     },
     {
       "locale": "kn-IN",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/kn-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_kn_in&mt=8",
+      "sha256": "50c378fcb7444991afa5db237c21923cc53625fe35ce7c2db7e2284efc131dd0"
+    },
+    {
+      "locale": "kn-IN",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/kn-IN/scanto.svg",
@@ -11069,6 +11569,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6792483140?pt=118326163&ct=iag_visual_ko&mt=8",
       "sha256": "18209d24351400c756fe153a0381aef09cb826b447cc63192bdaac7e86a5ba8c"
+    },
+    {
+      "locale": "ko",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_ko&mt=8",
+      "sha256": "2865cf444832bfc847157a652ef807c689c2d3958424390bbcfa4b6f85475d2a"
     },
     {
       "locale": "ko",
@@ -11342,6 +11852,16 @@
     },
     {
       "locale": "ko",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_ko&mt=8",
+      "sha256": "662fa5f49402994497bcc227ca2cf13b2c778a95ef6c11efa2b017e60113221d"
+    },
+    {
+      "locale": "ko",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ko/scanto.svg",
@@ -11509,6 +12029,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/aim990plus.html",
       "app_store_url": "https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_visual_ml_in&mt=8",
       "sha256": "56536299c52c331727d3e7d6b672f78664560757aa4775382a4a86d41e5c4460"
+    },
+    {
+      "locale": "ml-IN",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_ml_in&mt=8",
+      "sha256": "338d54d4847da9096d87249bb454e5498b40d459a282aaf49bae05904ab04dc3"
     },
     {
       "locale": "ml-IN",
@@ -11782,6 +12312,16 @@
     },
     {
       "locale": "ml-IN",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ml-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_ml_in&mt=8",
+      "sha256": "6bc23de9c583c8fe54784f2ef6f95a4a75fc2267bdad59033c5e2cdc15c22781"
+    },
+    {
+      "locale": "ml-IN",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ml-IN/scanto.svg",
@@ -11949,6 +12489,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/aim990plus.html",
       "app_store_url": "https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_visual_mr_in&mt=8",
       "sha256": "73fc44e340dc486057b0bf6a8d57e13f2c0c5a42badc836ad2592f45c2b6bfcc"
+    },
+    {
+      "locale": "mr-IN",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_mr_in&mt=8",
+      "sha256": "93b2620cb5fcafa64b6949998a78165c524ed57dedc99ad10ceaf5c4c7dd6690"
     },
     {
       "locale": "mr-IN",
@@ -12222,6 +12772,16 @@
     },
     {
       "locale": "mr-IN",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/mr-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_mr_in&mt=8",
+      "sha256": "4ea36d975f5b0c560c06a78ea8f12d11066b7c25c82d27e72e91d48999e896d9"
+    },
+    {
+      "locale": "mr-IN",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/mr-IN/scanto.svg",
@@ -12389,6 +12949,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
       "app_store_url": "https://apps.apple.com/my/app/id6792483140?pt=118326163&ct=iag_visual_ms&mt=8",
       "sha256": "fb7d75bf2ff7fec5bff90c9f5aa61bf2f080bfa92d4e0738a733795cb092655b"
+    },
+    {
+      "locale": "ms",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_ms&mt=8",
+      "sha256": "b563e4121c785b6dd5fc823736b341e143df62c219e440d6e9f811f039e99dd8"
     },
     {
       "locale": "ms",
@@ -12662,6 +13232,16 @@
     },
     {
       "locale": "ms",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ms/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_ms&mt=8",
+      "sha256": "ea66a8ffb2582a4758dadb9f9ada282641455c0463748f72afa643c66065f545"
+    },
+    {
+      "locale": "ms",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ms/scanto.svg",
@@ -12829,6 +13409,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/aim990plus.html",
       "app_store_url": "https://apps.apple.com/nl/app/id6792483140?pt=118326163&ct=iag_visual_nl_nl&mt=8",
       "sha256": "fec6e8b35c4e350033eaff0cbba07cbe8d8af3784c6def77d22b1270e1b2c1ed"
+    },
+    {
+      "locale": "nl-NL",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_nl_nl&mt=8",
+      "sha256": "5332f23e6876ceabf69a486a41c98f589d846dbbd95143f0d5df31d03cd3a3e1"
     },
     {
       "locale": "nl-NL",
@@ -13102,6 +13692,16 @@
     },
     {
       "locale": "nl-NL",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/nl-NL/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_nl_nl&mt=8",
+      "sha256": "884f9b598a4f0a359f5ee16aefa3d563cb2bf83afb75a24632264539ed7cf9df"
+    },
+    {
+      "locale": "nl-NL",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/nl-NL/scanto.svg",
@@ -13269,6 +13869,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/aim990plus.html",
       "app_store_url": "https://apps.apple.com/no/app/id6792483140?pt=118326163&ct=iag_visual_no&mt=8",
       "sha256": "234f2ce20f8fc29334f852f6886664fca884bdb1c92d0aee81570cb7e7a095d9"
+    },
+    {
+      "locale": "no",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_no&mt=8",
+      "sha256": "174dce17c7a94d92de86a39516a4fcf069806d663fcc7b31d8556ac085a58f10"
     },
     {
       "locale": "no",
@@ -13542,6 +14152,16 @@
     },
     {
       "locale": "no",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/no/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_no&mt=8",
+      "sha256": "e0698140b7efec094f7b0a46c3ec8085f96a04afcfe38b605e8f45ac8d49f441"
+    },
+    {
+      "locale": "no",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/no/scanto.svg",
@@ -13709,6 +14329,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/aim990plus.html",
       "app_store_url": "https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_visual_or_in&mt=8",
       "sha256": "bbb12c0f5b468352abb817cae14f8ecc5fc8456c93560b1c069b05619d61a485"
+    },
+    {
+      "locale": "or-IN",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_or_in&mt=8",
+      "sha256": "adefc62fa810830b04d9c4d81f739730cab14f73376953bfa879c52662fad231"
     },
     {
       "locale": "or-IN",
@@ -13982,6 +14612,16 @@
     },
     {
       "locale": "or-IN",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/or-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_or_in&mt=8",
+      "sha256": "d2b627d4566cd3371e7cad17d2082189e8fed9445dc1056c3851f5372c77c20d"
+    },
+    {
+      "locale": "or-IN",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/or-IN/scanto.svg",
@@ -14149,6 +14789,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/aim990plus.html",
       "app_store_url": "https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_visual_pa_in&mt=8",
       "sha256": "1705e9bf2ba5ccdc8546eaf5d9370bdfc89f2d6948cb0a67c600a123121eef3c"
+    },
+    {
+      "locale": "pa-IN",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_pa_in&mt=8",
+      "sha256": "54a8e16e6c1adf1e3e99ac5a5c3ad4925ff3aa377570f7c48b05e31398dc2d57"
     },
     {
       "locale": "pa-IN",
@@ -14422,6 +15072,16 @@
     },
     {
       "locale": "pa-IN",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pa-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_pa_in&mt=8",
+      "sha256": "ed08ee6da1f888d6828dd08e34fe8b80081f5860664ca2267b5efd2aed79d761"
+    },
+    {
+      "locale": "pa-IN",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pa-IN/scanto.svg",
@@ -14589,6 +15249,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/aim990plus.html",
       "app_store_url": "https://apps.apple.com/pl/app/id6792483140?pt=118326163&ct=iag_visual_pl&mt=8",
       "sha256": "56daa9346cd18ee556d31960f7fd9044591f689bd83e8a76ec8fd1bcceca052d"
+    },
+    {
+      "locale": "pl",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_pl&mt=8",
+      "sha256": "f71a361b2dfe92c399233da07670d4fcfce62e631cb09dd226e2c135443031ef"
     },
     {
       "locale": "pl",
@@ -14862,6 +15532,16 @@
     },
     {
       "locale": "pl",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pl/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_pl&mt=8",
+      "sha256": "d70065ed0dd1f3df4ce0583cc1299576c3036e06f06554dba1de702eb69fac98"
+    },
+    {
+      "locale": "pl",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pl/scanto.svg",
@@ -15029,6 +15709,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
       "app_store_url": "https://apps.apple.com/br/app/id6792483140?pt=118326163&ct=iag_visual_pt_br&mt=8",
       "sha256": "091eb381a799b718740444c922b0a4c53bbe2b89014e864a071ca410f9d7bfaa"
+    },
+    {
+      "locale": "pt-BR",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_pt_br&mt=8",
+      "sha256": "08213ed71bf9487535a9541fe59274150c761a863828a44c711fe68ff5a3d88d"
     },
     {
       "locale": "pt-BR",
@@ -15302,6 +15992,16 @@
     },
     {
       "locale": "pt-BR",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-BR/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_pt_br&mt=8",
+      "sha256": "77cb4058e585e56b0ce8bd3f68b8514b468253457e4f69773fa1faa57686eb54"
+    },
+    {
+      "locale": "pt-BR",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-BR/scanto.svg",
@@ -15469,6 +16169,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
       "app_store_url": "https://apps.apple.com/pt/app/id6792483140?pt=118326163&ct=iag_visual_pt_pt&mt=8",
       "sha256": "9eb47b4498ea87c8decb97c59d543bdab2d381b40a7c094eb6011afb3b3eb179"
+    },
+    {
+      "locale": "pt-PT",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_pt_pt&mt=8",
+      "sha256": "7381fc9f520518125a3e543a1723f6ee034fb555d9b24c9a6b294747382e1725"
     },
     {
       "locale": "pt-PT",
@@ -15742,6 +16452,16 @@
     },
     {
       "locale": "pt-PT",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-PT/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_pt_pt&mt=8",
+      "sha256": "e8b5a7923b095304797d1099d5ab7f5f4ea112dd298e7406ebcc0bf78f0ff84c"
+    },
+    {
+      "locale": "pt-PT",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/pt-PT/scanto.svg",
@@ -15909,6 +16629,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/aim990plus.html",
       "app_store_url": "https://apps.apple.com/ro/app/id6792483140?pt=118326163&ct=iag_visual_ro&mt=8",
       "sha256": "7f325721ea49f885f1d2b1474044b822b27442cc95d4509799efb62feb22aad9"
+    },
+    {
+      "locale": "ro",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_ro&mt=8",
+      "sha256": "8b5ae5d0f474c1a21338c7ed50eb124bd493a37460ce00486ee8f950b973447f"
     },
     {
       "locale": "ro",
@@ -16182,6 +16912,16 @@
     },
     {
       "locale": "ro",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ro/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_ro&mt=8",
+      "sha256": "2c28c0b188ce2298fb4cc80f83f99c46d98e1dc224b1c6011958f78ce87acb7d"
+    },
+    {
+      "locale": "ro",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ro/scanto.svg",
@@ -16349,6 +17089,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/aim990plus.html",
       "app_store_url": "https://apps.apple.com/ru/app/id6792483140?pt=118326163&ct=iag_visual_ru&mt=8",
       "sha256": "b0f159fcdb25a556a575fcfa82518550054a114eb0d4439c704d4fab00683012"
+    },
+    {
+      "locale": "ru",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_ru&mt=8",
+      "sha256": "9873d07b366f105ecf773c6e854e9f99e8753f33c6f5ea3c6b0a879ae6bc3dbb"
     },
     {
       "locale": "ru",
@@ -16622,6 +17372,16 @@
     },
     {
       "locale": "ru",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ru/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_ru&mt=8",
+      "sha256": "c3215aa374d63de417ff3d3abf8ef437b4cdf8f3e166014cc3e0151d8025e425"
+    },
+    {
+      "locale": "ru",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ru/scanto.svg",
@@ -16789,6 +17549,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/aim990plus.html",
       "app_store_url": "https://apps.apple.com/sk/app/id6792483140?pt=118326163&ct=iag_visual_sk&mt=8",
       "sha256": "62e5a678c386a6b08811501448fc619268e4a6ca4ca5f2559a5b541c95e29a4f"
+    },
+    {
+      "locale": "sk",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_sk&mt=8",
+      "sha256": "5b7934fbfcf4e173544cfcd2379e8a589a0c9137ea9d5ad7831b58716a943fd8"
     },
     {
       "locale": "sk",
@@ -17062,6 +17832,16 @@
     },
     {
       "locale": "sk",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_sk&mt=8",
+      "sha256": "81ff7b5b8320783b101c74a42a00a3a3a72bf14a1b47a082d5f6f5e09f1b03c6"
+    },
+    {
+      "locale": "sk",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sk/scanto.svg",
@@ -17229,6 +18009,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/aim990plus.html",
       "app_store_url": "https://apps.apple.com/si/app/id6792483140?pt=118326163&ct=iag_visual_sl_si&mt=8",
       "sha256": "a2355cc3b0327e4ed83b3a757d862ca5421970b37c77d3dc0eb14124aad2b8c8"
+    },
+    {
+      "locale": "sl-SI",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_sl_si&mt=8",
+      "sha256": "b1cac619873566045e2a349cde76cbfe1ee39095a6075f0edf0421e603efcb1c"
     },
     {
       "locale": "sl-SI",
@@ -17502,6 +18292,16 @@
     },
     {
       "locale": "sl-SI",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sl-SI/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_sl_si&mt=8",
+      "sha256": "dd5016acb059490ed063f8bd56e06ebfca65e0433d6ffa33d9fa1fb3dc3e68ed"
+    },
+    {
+      "locale": "sl-SI",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sl-SI/scanto.svg",
@@ -17669,6 +18469,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/aim990plus.html",
       "app_store_url": "https://apps.apple.com/se/app/id6792483140?pt=118326163&ct=iag_visual_sv&mt=8",
       "sha256": "fb8ae21ae1a451ade4c956ea2d8e7cec680485685590ee9acb3b006c0c076f6c"
+    },
+    {
+      "locale": "sv",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_sv&mt=8",
+      "sha256": "5c068e704fae2e4ea61f32b17a7c6a35f8531d0f36f970b3c781a02fdcf79b22"
     },
     {
       "locale": "sv",
@@ -17942,6 +18752,16 @@
     },
     {
       "locale": "sv",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/sv/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_sv&mt=8",
+      "sha256": "944ccf96cd926180c7c46a01a9cb187c35e3eedb7185391548fda0fde0335a30"
+    },
+    {
+      "locale": "sv",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/sv/scanto.svg",
@@ -18109,6 +18929,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/aim990plus.html",
       "app_store_url": "https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_visual_ta_in&mt=8",
       "sha256": "9f5f0095381011273b683505cf7636e61cd03d3bdfdfcc07a2291280cdedb5a1"
+    },
+    {
+      "locale": "ta-IN",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_ta_in&mt=8",
+      "sha256": "d7fac1f53d93f5452659693d05018cde1856766a552e8d3125936af244fda9e1"
     },
     {
       "locale": "ta-IN",
@@ -18382,6 +19212,16 @@
     },
     {
       "locale": "ta-IN",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ta-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_ta_in&mt=8",
+      "sha256": "aa98b121f8b0af4b198bcc3f8367efc0350f54c7e04d6d26a34792206fd2fa70"
+    },
+    {
+      "locale": "ta-IN",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ta-IN/scanto.svg",
@@ -18549,6 +19389,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/aim990plus.html",
       "app_store_url": "https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_visual_te_in&mt=8",
       "sha256": "a431f1eb627d676fe9051939b118093f953d007b9df20467c5d8f61bbd3cce8d"
+    },
+    {
+      "locale": "te-IN",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_te_in&mt=8",
+      "sha256": "47a479ad8c0e408f49c79444b17199bfc4a6bd778d454ae746588551b14c459a"
     },
     {
       "locale": "te-IN",
@@ -18822,6 +19672,16 @@
     },
     {
       "locale": "te-IN",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/te-IN/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_te_in&mt=8",
+      "sha256": "67f471ce01c966c97b6b47c31f33b4a28cdc0d4618558d0c2b943411c64ef05d"
+    },
+    {
+      "locale": "te-IN",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/te-IN/scanto.svg",
@@ -18989,6 +19849,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
       "app_store_url": "https://apps.apple.com/th/app/id6792483140?pt=118326163&ct=iag_visual_th&mt=8",
       "sha256": "4b00b2dbac9c471dfaade1866d57fc51517ace84064948ffe34eb902d285d06a"
+    },
+    {
+      "locale": "th",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_th&mt=8",
+      "sha256": "dddc521efe114404c54bbc5ddef50ceddcf14c6f0d01bade632c4e0d3daa87ce"
     },
     {
       "locale": "th",
@@ -19262,6 +20132,16 @@
     },
     {
       "locale": "th",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/th/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_th&mt=8",
+      "sha256": "b75c1c8ff78e83e5a18f4c63e5d5c3543132dfcc166fc70e6607c7cca2693713"
+    },
+    {
+      "locale": "th",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/th/scanto.svg",
@@ -19429,6 +20309,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
       "app_store_url": "https://apps.apple.com/tr/app/id6792483140?pt=118326163&ct=iag_visual_tr&mt=8",
       "sha256": "f5602b69cbc086e6fb935b30d9ff9a41f925daae2a729f4dc86a76a7765da309"
+    },
+    {
+      "locale": "tr",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_tr&mt=8",
+      "sha256": "7d4905c1da43f596017cb8699a3991cf872d8e333ebcaba5af27964ecd9fde1d"
     },
     {
       "locale": "tr",
@@ -19702,6 +20592,16 @@
     },
     {
       "locale": "tr",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/tr/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_tr&mt=8",
+      "sha256": "a5fcd46c7c491530f708b0706b828b4b0fe58cb5f15af9614f194fa26a3ee4e6"
+    },
+    {
+      "locale": "tr",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/tr/scanto.svg",
@@ -19869,6 +20769,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/aim990plus.html",
       "app_store_url": "https://apps.apple.com/ua/app/id6792483140?pt=118326163&ct=iag_visual_uk&mt=8",
       "sha256": "bacbfffede9ad6573dadc8cdab906221f5a984726c41fadd17d0dfa3d4c42898"
+    },
+    {
+      "locale": "uk",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_uk&mt=8",
+      "sha256": "394aab21294a665b107808dffdf25b5ece471dbac26dd36671884187077b7e41"
     },
     {
       "locale": "uk",
@@ -20142,6 +21052,16 @@
     },
     {
       "locale": "uk",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/uk/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_uk&mt=8",
+      "sha256": "f2c268fe440c555a6cb526c9f9bdca59ef65fd4f3422498940ad06338bad7f7c"
+    },
+    {
+      "locale": "uk",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/uk/scanto.svg",
@@ -20309,6 +21229,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/aim990plus.html",
       "app_store_url": "https://apps.apple.com/pk/app/id6792483140?pt=118326163&ct=iag_visual_ur_pk&mt=8",
       "sha256": "6ec330402cc7c35327a47bc55b569d2e00fac743a3be6de2e80381b5d1ed8e98"
+    },
+    {
+      "locale": "ur-PK",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_ur_pk&mt=8",
+      "sha256": "377fd016881cea7d0c92ce48e91faa2fedf0cedc2bcd72e7c4f51b8b9b385f59"
     },
     {
       "locale": "ur-PK",
@@ -20582,6 +21512,16 @@
     },
     {
       "locale": "ur-PK",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/ur-PK/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_ur_pk&mt=8",
+      "sha256": "9281a0790dd0c4c7f9410741a26cbd56cbfb5444b4179d951f58ad91d0594cc6"
+    },
+    {
+      "locale": "ur-PK",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/ur-PK/scanto.svg",
@@ -20749,6 +21689,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
       "app_store_url": "https://apps.apple.com/vn/app/id6792483140?pt=118326163&ct=iag_visual_vi&mt=8",
       "sha256": "cd6ed902f606029cb86822ef240f377a67144dacbb8861cb4787a0837f0787db"
+    },
+    {
+      "locale": "vi",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_vi&mt=8",
+      "sha256": "d196a5b7a646661d24e10af87f6688ee53f80e0d5e16cf89ba4c0bc0cbf974e9"
     },
     {
       "locale": "vi",
@@ -21022,6 +21972,16 @@
     },
     {
       "locale": "vi",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/vi/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_vi&mt=8",
+      "sha256": "d6ff3868a11b9877993cb3ace43ee9e97e1d2fb34a41ff196556dd09c13e6785"
+    },
+    {
+      "locale": "vi",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/vi/scanto.svg",
@@ -21189,6 +22149,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/aim990plus.html",
       "app_store_url": "https://apps.apple.com/cn/app/id6792483140?pt=118326163&ct=iag_visual_zh_hans&mt=8",
       "sha256": "3bd4c16f1a4c897f2ce345db3b3846174f0f2b03929afe76654fc6b71e2a42bf"
+    },
+    {
+      "locale": "zh-Hans",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_zh_hans&mt=8",
+      "sha256": "0780f34854b203f70f6d91f34b6ba6b1a31b08749fa57223fbf80c5150dc2aa5"
     },
     {
       "locale": "zh-Hans",
@@ -21462,6 +22432,16 @@
     },
     {
       "locale": "zh-Hans",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_zh_hans&mt=8",
+      "sha256": "a52b5efbb1c6e07c7514fcabb18e0dd1a25eee472a5f452fdb40a61fd5fbce46"
+    },
+    {
+      "locale": "zh-Hans",
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hans/scanto.svg",
@@ -21629,6 +22609,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6792483140?pt=118326163&ct=iag_visual_zh_hant&mt=8",
       "sha256": "acaaf065000d01ba0e20273e469afb28bb2a7c02d6a7fc6c51f853ad3299be28"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hant/battai.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/battai.html",
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_visual_zh_hant&mt=8",
+      "sha256": "5494c190ee461605533dc020201926cdbdd8892149ceff3cf1a046525207ac1b"
     },
     {
       "locale": "zh-Hant",
@@ -21899,6 +22889,16 @@
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6780223070?pt=118326163&ct=iag_visual_zh_hant&mt=8",
       "sha256": "f2d223ae49970e6e136bd9709e1eaf406a41e8e04fd3f66025526b5005d3500b"
+    },
+    {
+      "locale": "zh-Hant",
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "image_url": "https://alice51849.github.io/ios-app-guide/visuals/zh-Hant/savetag.svg",
+      "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/savetag.html",
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_visual_zh_hant&mt=8",
+      "sha256": "82d295e61ebbe0469cc81a35ae88cf101fce939438eb359f4513a25c840859be"
     },
     {
       "locale": "zh-Hant",

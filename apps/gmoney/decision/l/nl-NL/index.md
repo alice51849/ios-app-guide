@@ -2,7 +2,7 @@
 title: "beste reisbudgettracker-app zonder abonnement iPhone"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/nl-NL/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

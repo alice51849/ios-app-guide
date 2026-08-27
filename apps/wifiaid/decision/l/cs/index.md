@@ -2,7 +2,7 @@
 title: "WiFi Aid — Diagnostika sítě s důkazy | iOS App"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/cs/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

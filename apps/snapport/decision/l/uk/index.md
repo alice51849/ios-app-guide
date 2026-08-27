@@ -2,7 +2,7 @@
 title: "найкращий додаток для фото на паспорт для немовлят і малюків вдома"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/uk/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

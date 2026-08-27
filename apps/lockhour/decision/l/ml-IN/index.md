@@ -2,7 +2,7 @@
 title: "പഠന സമയത്ത് സോഷ്യൽ മീഡിയ ബ്ലോക്ക് ചെയ്യാൻ മികച്ച ആപ്പ് iPhone"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/ml-IN/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

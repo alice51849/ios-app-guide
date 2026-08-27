@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-26",
-  "content_digest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
+  "date_modified": "2026-08-27",
+  "content_digest": "7848bf04fd447836dc9fe1da73ae527a28fec2a9f0cdb39fd4ea865dd3ddc29f",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 44,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -166,6 +166,36 @@
         "formatted_price": "฿199.00",
         "storefront_url": "https://apps.apple.com/th/app/id6792483140"
       }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: คะแนนสุขภาพแบตเตอรี่",
+      "summary": "BattAI • BattAI ใช้ข้อมูล 5 อย่างจาก API สาธารณะของ iOS: ระดับแบตเตอรี่ สถานะการชาร์จ โหมดประหยัดพลังงาน สถานะความร้อนของทั้งเครื่อง และเวลา ผลอื่นคำนวณจากข้อมูลเหล่านี้หรือคุณเป็นผู้เพิ่ม ทุกหัวข้อแสดงแหล่งข้อมูลและข้อจำกัด • BattAI ไม่มีบัญชี เทเลเมทรี โฆษณา หรือคำขอผ่านเครือข่าย ข้อมูลอยู่ในเครื่องนี้ ยกเว้นสแนปช็อตขั้นต่ำที่จำกัดฟีเจอร์และส่งตรงไปยัง Apple Watch ที่จับคู่ จำกัดความถี่การเก็บข้อมูล วิเคราะห์อย่างเร็วสุดทุก 5 นาที ใช้ช่วงสำหรับค่าประมาณ และปล่อยข้อมูลที่ขาดให้ขาดอยู่",
+      "category": "utility",
+      "search_terms": [
+        "คะแนนสุขภาพแบตเตอรี่",
+        "ความจุสูงสุด",
+        "จำนวนรอบชาร์จ",
+        "การดูแลการชาร์จ",
+        "ช่วงการชาร์จ",
+        "อัตราการชาร์จ",
+        "รายงาน"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_api_th&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/th/battai.html",
+      "verified_live": true
     },
     {
       "key": "caldaily",
@@ -1577,6 +1607,41 @@
         "formatted_price": "ฟรี",
         "storefront_url": "https://apps.apple.com/th/app/id6780223070"
       }
+    },
+    {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: บุ๊กมาร์ก AI",
+      "summary": "เก็บไว้ตอนนี้ แล้วคราวนี้ได้อ่านจริง",
+      "category": "productivity",
+      "search_terms": [
+        "บทความ",
+        "รายการโปรด",
+        "คอลเลกชัน",
+        "url",
+        "โฟลเดอร์",
+        "แท็ก",
+        "ออฟไลน์",
+        "สูตรอาหาร",
+        "ท่องเที่ยว",
+        "ช้อปปิ้ง",
+        "โน้ต",
+        "ส่วนตัว"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_api_th&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/th/savetag.html",
+      "verified_live": true
     },
     {
       "key": "scanto",

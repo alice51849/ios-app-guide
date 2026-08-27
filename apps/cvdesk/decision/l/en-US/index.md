@@ -2,7 +2,7 @@
 title: "best resume builder app for career changers 2026"
 lang: "en-US"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/en-US/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

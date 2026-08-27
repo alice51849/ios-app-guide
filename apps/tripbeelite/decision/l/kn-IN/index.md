@@ -2,7 +2,7 @@
 title: "ಒಂದು ಬರುವ ಪ್ರಯಾಣಕ್ಕಾಗಿ ಅತ್ಯುತ್ತಮ ಸರಳ ಪ್ರಯಾಣ ಯೋಜಕ ಆಪ್ iPhone ಗೆ"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/kn-IN/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

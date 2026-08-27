@@ -2,7 +2,7 @@
 title: "공부할 때 소셜 미디어 차단용 최고의 앱 아이폰용"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/ko/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

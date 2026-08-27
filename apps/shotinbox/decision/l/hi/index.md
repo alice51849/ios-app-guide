@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — एक बार खरीदें, आजीवन उपयोग | iOS App"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/hi/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

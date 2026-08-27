@@ -3,7 +3,7 @@
 > 각 iOS 앱의 구조화된 정보 — 기능, 가격, FAQ.
 
 locale: ko
-apps: 44
+apps: 46
 - 앱 목록: https://alice51849.github.io/ios-app-guide/ko/tools/private-pay-once-iphone-app-finder.html
 - 앱 목록 · PWA: https://alice51849.github.io/ios-app-guide/ko/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld
@@ -43,6 +43,10 @@ apps: 44
   - 토익 990점을 목표로 하는 30일 학습 코치! 개인 맞춤형 학습으로 실력을 키워보세요.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6784974530
+- [BattAI: 배터리 상태 점수](https://alice51849.github.io/ios-app-guide/ko/battai.html) — 80%까지 예상 기간
+  - 시간에 따른 배터리 변화를 이해하세요. 더 깊은 기록, 계획, 리포트를 이용할 수 있어요. 점수를 만드는 요소. PDF·CSV 배터리 리포트 만들기. 데이터는 이 iPhone과 페어링된 Apple Watch에만 저장돼요. 추적하지 않아요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/app/id6802423998
 - [CalDaily 계산기 및 테마](https://alice51849.github.io/ios-app-guide/ko/caldaily.html) — 위젯, 도구, 기록 정리
   - 계산 결과에 이름과 종류를 붙여 나중에 다시 찾는 계산기. 8가지 도구, 홈 화면 위젯, 100가지 테마를 모두 기기 안에서.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
@@ -147,6 +151,10 @@ apps: 44
   - 중복 사진, 스크린샷, 흐릿한 사진, 큰 동영상을 기기에서 찾아 저장공간을 되찾으세요. 삭제 전 검토, 광고 없음, 구독 없음.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
   - App Store: https://apps.apple.com/kr/app/id6780223070
+- [SaveTag: AI 링크 보관함](https://alice51849.github.io/ios-app-guide/ko/savetag.html) — 나중에 읽기, 자동 태그 정리
+  - "나중에 봐야지" 하고 넘긴 링크, 이제 한곳에 모입니다. 한 번 탭해 저장하면 기기 안에서 알아서 분류되고, 매일 다시 발견으로 끝까지 읽게 됩니다. 계정도 광고도 구독도 없습니다.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/app/id6802505528
 - [ScanTo Pro: 오프라인 PDF](https://alice51849.github.io/ios-app-guide/ko/scanto.html) — 오프라인 PDF・OCR・구독 없음
   - 스캔하고, 계속 찾으세요. 선명한 PDF, 검색되는 OCR 텍스트, Face ID 잠금. 완전 오프라인, 한 번 구매, 구독 없음.
   - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.

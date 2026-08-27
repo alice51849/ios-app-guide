@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za učenje bopomofo za otroke za učenje zhuyin na iPhonu"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/sl-SI/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

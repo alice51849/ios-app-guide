@@ -3,7 +3,7 @@
   "title": "Localized AI-readable iOS app catalogs",
   "source": "https://alice51849.github.io/ios-app-guide",
   "ordering": "alphabetical_by_localized_app_name_not_a_ranking",
-  "app_count": 44,
+  "app_count": 46,
   "locale_count": 50,
   "mcp": {
     "name": "Lumi App Finder",
@@ -31,7 +31,7 @@
     "first_party": true,
     "independent_ranking": false,
     "offline_after_install": true,
-    "app_count": 44,
+    "app_count": 46,
     "locale_count": 50,
     "commands": {
       "github_copilot": "gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user",
@@ -61,350 +61,350 @@
       "url": "https://alice51849.github.io/ios-app-guide/llms/ar-SA.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/ar-SA/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/ar-SA.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "bn-BD",
       "url": "https://alice51849.github.io/ios-app-guide/llms/bn-BD.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/bn-BD/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/bn-BD.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "ca",
       "url": "https://alice51849.github.io/ios-app-guide/llms/ca.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/ca/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/ca.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "cs",
       "url": "https://alice51849.github.io/ios-app-guide/llms/cs.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/cs/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/cs.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "da",
       "url": "https://alice51849.github.io/ios-app-guide/llms/da.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/da/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/da.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "de-DE",
       "url": "https://alice51849.github.io/ios-app-guide/llms/de-DE.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/de-DE/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/de-DE.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "el",
       "url": "https://alice51849.github.io/ios-app-guide/llms/el.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/el/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/el.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "en-AU",
       "url": "https://alice51849.github.io/ios-app-guide/llms/en-AU.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/en-AU/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/en-AU.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "en-CA",
       "url": "https://alice51849.github.io/ios-app-guide/llms/en-CA.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/en-CA/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/en-CA.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "en-GB",
       "url": "https://alice51849.github.io/ios-app-guide/llms/en-GB.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/en-GB/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/en-GB.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "en-US",
       "url": "https://alice51849.github.io/ios-app-guide/llms/en-US.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/en-US/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/en-US.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "es-ES",
       "url": "https://alice51849.github.io/ios-app-guide/llms/es-ES.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/es-ES/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/es-ES.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "es-MX",
       "url": "https://alice51849.github.io/ios-app-guide/llms/es-MX.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/es-MX/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/es-MX.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "fi",
       "url": "https://alice51849.github.io/ios-app-guide/llms/fi.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/fi/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/fi.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "fr-CA",
       "url": "https://alice51849.github.io/ios-app-guide/llms/fr-CA.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/fr-CA/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/fr-CA.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "fr-FR",
       "url": "https://alice51849.github.io/ios-app-guide/llms/fr-FR.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/fr-FR.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "gu-IN",
       "url": "https://alice51849.github.io/ios-app-guide/llms/gu-IN.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/gu-IN/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/gu-IN.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "he",
       "url": "https://alice51849.github.io/ios-app-guide/llms/he.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/he/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/he.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "hi",
       "url": "https://alice51849.github.io/ios-app-guide/llms/hi.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/hi/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/hi.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "hr",
       "url": "https://alice51849.github.io/ios-app-guide/llms/hr.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/hr/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/hr.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "hu",
       "url": "https://alice51849.github.io/ios-app-guide/llms/hu.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/hu/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/hu.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "id",
       "url": "https://alice51849.github.io/ios-app-guide/llms/id.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/id/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/id.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "it",
       "url": "https://alice51849.github.io/ios-app-guide/llms/it.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/it/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/it.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "ja",
       "url": "https://alice51849.github.io/ios-app-guide/llms/ja.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/ja/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/ja.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "kn-IN",
       "url": "https://alice51849.github.io/ios-app-guide/llms/kn-IN.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/kn-IN/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/kn-IN.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "ko",
       "url": "https://alice51849.github.io/ios-app-guide/llms/ko.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/ko/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/ko.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "ml-IN",
       "url": "https://alice51849.github.io/ios-app-guide/llms/ml-IN.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/ml-IN/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/ml-IN.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "mr-IN",
       "url": "https://alice51849.github.io/ios-app-guide/llms/mr-IN.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/mr-IN/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/mr-IN.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "ms",
       "url": "https://alice51849.github.io/ios-app-guide/llms/ms.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/ms/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/ms.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "nl-NL",
       "url": "https://alice51849.github.io/ios-app-guide/llms/nl-NL.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/nl-NL/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/nl-NL.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "no",
       "url": "https://alice51849.github.io/ios-app-guide/llms/no.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/no/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/no.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "or-IN",
       "url": "https://alice51849.github.io/ios-app-guide/llms/or-IN.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/or-IN/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/or-IN.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "pa-IN",
       "url": "https://alice51849.github.io/ios-app-guide/llms/pa-IN.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/pa-IN/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/pa-IN.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "pl",
       "url": "https://alice51849.github.io/ios-app-guide/llms/pl.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/pl/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/pl.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "pt-BR",
       "url": "https://alice51849.github.io/ios-app-guide/llms/pt-BR.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/pt-BR/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/pt-BR.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "pt-PT",
       "url": "https://alice51849.github.io/ios-app-guide/llms/pt-PT.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/pt-PT/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/pt-PT.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "ro",
       "url": "https://alice51849.github.io/ios-app-guide/llms/ro.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/ro/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/ro.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "ru",
       "url": "https://alice51849.github.io/ios-app-guide/llms/ru.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/ru/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/ru.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "sk",
       "url": "https://alice51849.github.io/ios-app-guide/llms/sk.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/sk/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/sk.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "sl-SI",
       "url": "https://alice51849.github.io/ios-app-guide/llms/sl-SI.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/sl-SI/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/sl-SI.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "sv",
       "url": "https://alice51849.github.io/ios-app-guide/llms/sv.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/sv/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/sv.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "ta-IN",
       "url": "https://alice51849.github.io/ios-app-guide/llms/ta-IN.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/ta-IN/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/ta-IN.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "te-IN",
       "url": "https://alice51849.github.io/ios-app-guide/llms/te-IN.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/te-IN/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/te-IN.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "th",
       "url": "https://alice51849.github.io/ios-app-guide/llms/th.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/th/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/th.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "tr",
       "url": "https://alice51849.github.io/ios-app-guide/llms/tr.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/tr/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/tr.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "uk",
       "url": "https://alice51849.github.io/ios-app-guide/llms/uk.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/uk/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/uk.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "ur-PK",
       "url": "https://alice51849.github.io/ios-app-guide/llms/ur-PK.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/ur-PK/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/ur-PK.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "vi",
       "url": "https://alice51849.github.io/ios-app-guide/llms/vi.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/vi/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/vi.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "zh-Hans",
       "url": "https://alice51849.github.io/ios-app-guide/llms/zh-Hans.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/zh-Hans/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/zh-Hans.json",
-      "app_count": 44
+      "app_count": 46
     },
     {
       "locale": "zh-Hant",
       "url": "https://alice51849.github.io/ios-app-guide/llms/zh-Hant.txt",
       "pwa_manifest": "https://alice51849.github.io/ios-app-guide/zh-Hant/tools/private-pay-once-iphone-app-finder.webmanifest",
       "agent_skill_catalog": "https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/zh-Hant.json",
-      "app_count": 44
+      "app_count": 46
     }
   ]
 }

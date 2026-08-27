@@ -2,7 +2,7 @@
 title: "beste white noise-app om in slaap te vallen zonder abonnement"
 lang: "nl-NL"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/nl-NL/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

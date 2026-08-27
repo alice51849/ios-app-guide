@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-26",
-    "contentDigest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
+    "dateModified": "2026-08-27",
+    "contentDigest": "7848bf04fd447836dc9fe1da73ae527a28fec2a9f0cdb39fd4ea865dd3ddc29f",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 44
+    "recordCount": 46
   },
   "items": [
     {
@@ -107,6 +107,24 @@
       ],
       "language": "sk",
       "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802423998",
+      "url": "https://alice51849.github.io/ios-app-guide/sk/battai.html",
+      "external_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_feed_sk&mt=8",
+      "title": "BattAI: Skóre kondície batérie",
+      "content_text": "BattAI • BattAI používa päť hodnôt z verejných API iOS: stav batérie, stav nabíjania, úsporný režim, tepelný stav celého zariadenia a čas. Ostatné výsledky sa počítajú z týchto meraní alebo z údajov, ktoré pridáte. Pri každom údaji je uvedený zdroj a obmedzenia. • BattAI nemá účet, telemetriu, reklamy ani sieťové požiadavky. Údaje zostávajú v tomto zariadení, okrem minimálnej snímky s obmedzenými funkciami odoslanej priamo do spárovaných Apple Watch. Meranie je obmedzené, analýza beží najviac raz za päť minút, odhady používajú rozmedzia a chýbajúce údaje zostávajú chýbajúce.",
+      "tags": [
+        "Maximálna kapacita",
+        "Cykly",
+        "Šetrnosť nabíjania",
+        "Rozsah nabitia",
+        "Rýchlosť nabíjania",
+        "Odhad času do 80%",
+        "PDF"
+      ],
+      "language": "sk",
+      "date_modified": "2026-08-27T06:15:40Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -1018,6 +1036,29 @@
       ],
       "language": "sk",
       "date_modified": "2026-08-24T08:39:44Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802505528",
+      "url": "https://alice51849.github.io/ios-app-guide/sk/savetag.html",
+      "external_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_feed_sk&mt=8",
+      "title": "SaveTag: záložky s AI",
+      "content_text": "Ulož teraz. A tentoraz to naozaj prečítaj.",
+      "tags": [
+        "čítať neskôr",
+        "obľúbené",
+        "zbierka",
+        "url",
+        "priečinok",
+        "štítky",
+        "offline",
+        "recepty",
+        "cestovanie",
+        "nákupy",
+        "súkromné",
+        "archív"
+      ],
+      "language": "sk",
+      "date_modified": "2026-08-27T06:15:40Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",

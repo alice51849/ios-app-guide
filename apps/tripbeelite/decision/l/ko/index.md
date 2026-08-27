@@ -2,7 +2,7 @@
 title: "다가오는 여행 하나를 위한 최고의 간단한 여행 계획 앱 아이폰용"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/ko/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

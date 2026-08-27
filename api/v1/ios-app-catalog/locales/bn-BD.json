@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-26",
-  "content_digest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
+  "date_modified": "2026-08-27",
+  "content_digest": "7848bf04fd447836dc9fe1da73ae527a28fec2a9f0cdb39fd4ea865dd3ddc29f",
   "locale": "bn-BD",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 44,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -167,6 +167,36 @@
         "formatted_price": "₹ 599",
         "storefront_url": "https://apps.apple.com/in/app/id6792483140"
       }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: ব্যাটারির স্বাস্থ্য",
+      "summary": "BattAI • BattAI সর্বজনীন iOS API থেকে পাঁচটি মান ব্যবহার করে: ব্যাটারির স্তর, চার্জের অবস্থা, লো পাওয়ার মোড, পুরো ডিভাইসের তাপীয় অবস্থা ও সময়। অন্য ফল এই পরিমাপ থেকে হিসাব করা হয় বা আপনি যোগ করেন। প্রতিটি তথ্য তার উৎস ও সীমা দেখায়। • BattAI-এ অ্যাকাউন্ট, টেলিমেট্রি, বিজ্ঞাপন বা নেটওয়ার্ক অনুরোধ নেই। ডেটা এই ডিভাইসেই থাকে, শুধু সীমিত সুবিধার ছোট সারাংশ সরাসরি সংযুক্ত Apple Watch-এ যায়। পরিমাপ নেওয়া সীমিত, বিশ্লেষণ সর্বোচ্চ প্রতি পাঁচ মিনিটে চলে, অনুমান পরিসরে দেখানো হয় এবং অনুপস্থিত ডেটা অনুপস্থিতই থাকে।",
+      "category": "utility",
+      "search_terms": [
+        "ব্যাটারি স্বাস্থ্য স্কোর",
+        "সর্বোচ্চ ধারণক্ষমতা",
+        "চার্জ চক্র",
+        "চার্জিং যত্ন",
+        "চার্জের পরিসর",
+        "চার্জের হার",
+        "PDF"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_api_bn_bd&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/battai.html",
+      "verified_live": true
     },
     {
       "key": "caldaily",
@@ -1595,6 +1625,43 @@
         "formatted_price": "বিনামূল্যে",
         "storefront_url": "https://apps.apple.com/in/app/id6780223070"
       }
+    },
+    {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: AI বুকমার্ক",
+      "summary": "এখনই সেভ করুন। আর এবার সত্যিই পড়ে ফেলুন।",
+      "category": "productivity",
+      "search_terms": [
+        "আর্টিকেল",
+        "প্রিয়",
+        "সংগ্রহ",
+        "url",
+        "ফোল্ডার",
+        "ট্যাগ",
+        "অফলাইন",
+        "রেসিপি",
+        "ভ্রমণ",
+        "কেনাকাটা",
+        "নোট",
+        "ব্যক্তিগত",
+        "তালিকা",
+        "খাবার"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_api_bn_bd&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/savetag.html",
+      "verified_live": true
     },
     {
       "key": "scanto",

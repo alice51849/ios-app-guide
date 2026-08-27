@@ -2,7 +2,7 @@
 title: "iPhone’da seyahat içerikleri için tek seferlik ücretli en iyi film fotoğraf düzenleyici"
 lang: "tr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/tr/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6781808054"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

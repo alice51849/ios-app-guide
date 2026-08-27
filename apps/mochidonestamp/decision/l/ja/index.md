@@ -2,7 +2,7 @@
 title: "best last time tracker app for household maintenance without a subscription"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ja/index.html"
-modified: "2026-08-26"
+modified: "2026-08-27"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

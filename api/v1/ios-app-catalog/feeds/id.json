@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-26",
-    "contentDigest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
+    "dateModified": "2026-08-27",
+    "contentDigest": "7848bf04fd447836dc9fe1da73ae527a28fec2a9f0cdb39fd4ea865dd3ddc29f",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 44
+    "recordCount": 46
   },
   "items": [
     {
@@ -101,6 +101,24 @@
       ],
       "language": "id",
       "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802423998",
+      "url": "https://alice51849.github.io/ios-app-guide/id/battai.html",
+      "external_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_feed_id&mt=8",
+      "title": "BattAI: Skor kesehatan baterai",
+      "content_text": "BattAI • BattAI memakai 5 nilai dari API publik iOS: tingkat baterai, status pengisian, Mode Daya Rendah, status termal seluruh perangkat, dan waktu. Hasil lain dihitung dari pembacaan tersebut atau ditambahkan oleh Anda. Setiap detail menunjukkan sumber dan batasnya • BattAI tidak memiliki akun, telemetri, iklan, atau permintaan jaringan. Data tetap di perangkat ini, kecuali snapshot minimal dengan fitur terbatas yang dikirim langsung ke Apple Watch yang dipasangkan. Pengambilan sampel dibatasi, analisis berjalan paling cepat setiap 5 menit, perkiraan memakai rentang, dan data yang hilang tetap hilang",
+      "tags": [
+        "Kapasitas maksimum",
+        "Siklus",
+        "Perawatan pengisian",
+        "Rentang pengisian",
+        "Laju pengisian",
+        "Pembentuk skor",
+        "PDF"
+      ],
+      "language": "id",
+      "date_modified": "2026-08-27T06:15:40Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -1006,6 +1024,30 @@
       ],
       "language": "id",
       "date_modified": "2026-08-24T08:39:44Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802505528",
+      "url": "https://alice51849.github.io/ios-app-guide/id/savetag.html",
+      "external_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_feed_id&mt=8",
+      "title": "SaveTag: markah buku AI",
+      "content_text": "Simpan sekarang. Dan kali ini benar-benar dibaca.",
+      "tags": [
+        "artikel",
+        "favorit",
+        "koleksi",
+        "url",
+        "folder",
+        "label",
+        "offline",
+        "resep",
+        "jalan-jalan",
+        "belanja",
+        "catatan",
+        "pribadi",
+        "arsip"
+      ],
+      "language": "id",
+      "date_modified": "2026-08-27T06:15:40Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",

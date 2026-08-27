@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-26",
-  "content_digest": "fd1b7c32337c4c1e890fed6c8b634b0a02ff0ea66def013d2b3a018ea9c8ab37",
+  "date_modified": "2026-08-27",
+  "content_digest": "7848bf04fd447836dc9fe1da73ae527a28fec2a9f0cdb39fd4ea865dd3ddc29f",
   "locale": "pa-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 44,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -171,6 +171,37 @@
         "formatted_price": "₹ 599",
         "storefront_url": "https://apps.apple.com/in/app/id6792483140"
       }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: ਬੈਟਰੀ ਸਿਹਤ ਸਕੋਰ",
+      "summary": "BattAI • BattAI ਜਨਤਕ iOS API ਤੋਂ ਪੰਜ ਮੁੱਲ ਵਰਤਦਾ ਹੈ: ਬੈਟਰੀ ਪੱਧਰ, ਚਾਰਜ ਹਾਲਤ, ਲੋ ਪਾਵਰ ਮੋਡ, ਪੂਰੇ ਡਿਵਾਈਸ ਦੀ ਤਾਪੀ ਹਾਲਤ ਅਤੇ ਸਮਾਂ। ਹੋਰ ਨਤੀਜੇ ਇਨ੍ਹਾਂ ਮਾਪਾਂ ਤੋਂ ਕੱਢੇ ਜਾਂਦੇ ਹਨ ਜਾਂ ਤੁਸੀਂ ਜੋੜਦੇ ਹੋ। ਹਰ ਜਾਣਕਾਰੀ ਆਪਣਾ ਸਰੋਤ ਅਤੇ ਹੱਦ ਦਿਖਾਉਂਦੀ ਹੈ। • BattAI ਵਿੱਚ ਖਾਤਾ, ਟੈਲੀਮੀਟਰੀ, ਇਸ਼ਤਿਹਾਰ ਜਾਂ ਨੈੱਟਵਰਕ ਬੇਨਤੀਆਂ ਨਹੀਂ। ਡਾਟਾ ਇਸੇ ਡਿਵਾਈਸ ਉੱਤੇ ਰਹਿੰਦਾ ਹੈ, ਸਿਰਫ਼ ਸੀਮਿਤ ਸੁਵਿਧਾਵਾਂ ਵਾਲਾ ਛੋਟਾ ਸਾਰ ਸਿੱਧਾ ਜੁੜੀ Apple Watch ਨੂੰ ਜਾਂਦਾ ਹੈ। ਮਾਪ ਲੈਣਾ ਸੀਮਿਤ ਹੈ, ਵਿਸ਼ਲੇਸ਼ਣ ਵੱਧ ਤੋਂ ਵੱਧ ਹਰ ਪੰਜ ਮਿੰਟ ਵਿੱਚ ਚੱਲਦਾ ਹੈ, ਅੰਦਾਜ਼ੇ ਹੱਦਾਂ ਵਿੱਚ ਦਿਖਦੇ ਹਨ ਅਤੇ ਗੁੰਮ ਡਾਟਾ ਗੁੰਮ ਰਹਿੰਦਾ ਹੈ।",
+      "category": "utility",
+      "search_terms": [
+        "ਬੈਟਰੀ ਸਿਹਤ ਸਕੋਰ",
+        "ਵੱਧ ਤੋਂ ਵੱਧ ਸਮਰੱਥਾ",
+        "ਚਾਰਜ ਚੱਕਰ",
+        "ਚਾਰਜਿੰਗ ਸੰਭਾਲ",
+        "ਚਾਰਜ ਰੇਂਜ",
+        "ਚਾਰਜ ਦਰ",
+        "80% ਤੱਕ ਅੰਦਾਜ਼ਨ ਸਮਾਂ",
+        "ਦਰ"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802423998?pt=118326163&ct=iag_api_pa_in&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/battai.html",
+      "verified_live": true
     },
     {
       "key": "caldaily",
@@ -1592,6 +1623,45 @@
         "formatted_price": "ਮੁਫ਼ਤ",
         "storefront_url": "https://apps.apple.com/in/app/id6780223070"
       }
+    },
+    {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: AI ਬੁੱਕਮਾਰਕ",
+      "summary": "ਹੁਣੇ ਸੰਭਾਲੋ। ਅਤੇ ਇਸ ਵਾਰ ਸੱਚਮੁੱਚ ਪੜ੍ਹੋ।",
+      "category": "productivity",
+      "search_terms": [
+        "ਪੜ੍ਹਨ ਸੂਚੀ",
+        "ਪਸੰਦੀਦਾ",
+        "ਸੰਗ੍ਰਹਿ",
+        "url",
+        "ਫੋਲਡਰ",
+        "ਟੈਗ",
+        "ਆਫਲਾਈਨ",
+        "ਪਕਵਾਨ",
+        "ਸਫ਼ਰ",
+        "ਖਰੀਦਦਾਰੀ",
+        "ਨੋਟ",
+        "ਨਿੱਜੀ",
+        "ਖ਼ਬਰਾਂ",
+        "ਸੂਚੀ",
+        "ਲੇਖ",
+        "ਵੈੱਬ"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/app/id6802505528?pt=118326163&ct=iag_api_pa_in&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/savetag.html",
+      "verified_live": true
     },
     {
       "key": "scanto",

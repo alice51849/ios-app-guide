@@ -21744,6 +21744,9 @@ class GeneratorTests(unittest.TestCase):
             # Free download; "SaveTag Pro is a one-time purchase, unlocked for
             # life", no subscription (App Store listing, checked 2026-08-27).
             "savetag",
+            # Free core, one $5.99 Lifetime Pro purchase, no subscription
+            # (App Store listing and approved IAP, checked 2026-08-27).
+            "battai",
         }
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:

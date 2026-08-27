@@ -2287,6 +2287,104 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "battai": [
+        {
+            "query": "best iphone battery health app with honest estimates and report",
+            "guide_title": "iPhone battery health apps: what they can really know",
+            "triggers": [
+                "battery health app",
+                "battery health report",
+                "time to 80",
+                "replace iphone battery",
+                "battery replacement",
+                "sell iphone battery",
+                "battery capacity trend",
+            ],
+            "persona": "long-term iPhone owners deciding whether to service, keep or sell their device",
+            "lead": "A battery score is only useful when the app separates what iOS measured, what it estimated and what you entered yourself.",
+            "paras": [
+                "A third-party iPhone app can directly read battery level, charge state, Low Power Mode, whole-device thermal state and time. It cannot directly read cycle count, maximum capacity, battery temperature, voltage, current or per-app drain. A trustworthy health view keeps those limits visible, leaves missing data missing and shows estimates as ranges with their confidence and sample count.",
+                "BattAI builds a private trend from those public readings, labels the source of each result, and lets you calibrate with values you enter or a battery-related extract from an iOS Analytics file. Its health factors, charging patterns and exportable report can support a service or resale conversation without pretending to be an Apple diagnosis. The core workflow is free; one Lifetime Pro purchase adds deeper history, planning and reports, with no subscription, account, ads, telemetry or internet requests.",
+            ],
+            "look": [
+                "A clear distinction between measured, estimated and user-provided values.",
+                "Ranges, confidence and sample counts instead of false precision.",
+                "Calibration from values you provide or an iOS Analytics file.",
+                "Long-term health and charging trends with an exportable report.",
+                "No account, ads, tracking or recurring subscription.",
+            ],
+            "steps": [
+                "Check which battery values the app says iOS directly provides.",
+                "Open one estimate and inspect its source, range, confidence and sample count.",
+                "Add a capacity value manually or review the Analytics import before calibrating.",
+                "Let the trend collect enough observations instead of trusting a first-day prediction.",
+                "Review the report and its limitations before using it for service or resale.",
+            ],
+            "fits": "fits iPhone owners who want a transparent battery trend and a useful record for a keep, service or resale decision without false sensor claims.",
+            "faq": [
+                {
+                    "q": "Can an iPhone app directly read exact cycle count, battery temperature or charging watts?",
+                    "a": "No. BattAI directly uses only battery level, charge state, Low Power Mode, whole-device thermal state and time. Capacity or cycle values come from you or an imported Analytics file, and other results remain labelled estimates.",
+                },
+                {
+                    "q": "Is the health score an official Apple diagnosis?",
+                    "a": "No. It is an explainable trend built from available readings and any calibration you provide. Apple's 80% maximum-capacity service benchmark stays separate from BattAI's coaching bands.",
+                },
+                {
+                    "q": "Does the report require an account or upload my battery history?",
+                    "a": "No. BattAI has no account, ads, tracking, telemetry or internet requests. A minimal feature-limited snapshot can be sent directly to a paired Apple Watch.",
+                },
+            ],
+        },
+        {
+            "query": "best private iphone charging habit tracker no subscription",
+            "guide_title": "Charging habits on iPhone: follow the pattern, not one percentage",
+            "triggers": [
+                "charging habit tracker",
+                "battery charging tracker",
+                "charge care",
+                "charge range",
+                "charging rate trend",
+                "private battery tracker",
+                "battery tracker no subscription",
+            ],
+            "persona": "heavy iPhone users who want to understand their charging pattern without uploading a device history",
+            "lead": "The percentage in the status bar shows this moment; it does not show whether your charging pattern is changing over weeks.",
+            "paras": [
+                "A useful charging tracker should preserve the observations it actually saw, show gaps instead of inventing samples, and describe charge care, range and observed rate without guessing charger wattage. Background opportunities on iOS are limited, so a trustworthy app should never promise continuous monitoring while it is closed.",
+                "BattAI keeps its readings and analysis on the device, turns observed sessions into charging and health trends, and explains which factors shaped each result. The free core includes the current state, health factors, calibration and recent trends; Lifetime Pro is a single purchase for deeper history, planning and reports. There is no subscription, account, advertising, tracking or content telemetry.",
+            ],
+            "look": [
+                "Observed charging sessions with visible gaps rather than fabricated continuity.",
+                "Charge care, range and rate trends without made-up watts or battery temperature.",
+                "A source and confidence explanation behind each recommendation.",
+                "Private on-device history that works without an account.",
+                "A useful free core and one optional lifetime unlock.",
+            ],
+            "steps": [
+                "Open the current-state view and confirm the directly measured values.",
+                "Review a charging session and note where the app had or lacked observations.",
+                "Compare charge range and rate over several sessions rather than one charge.",
+                "Open the explanation behind a recommendation before acting on it.",
+                "Decide whether deeper history and reports justify the one-time unlock.",
+            ],
+            "fits": "fits people who charge often and want a private, honest record of the pattern over time rather than another app presenting guesses as live sensors.",
+            "faq": [
+                {
+                    "q": "Does it monitor continuously while the app is closed?",
+                    "a": "No. iOS does not allow a third-party app to promise continuous background battery sampling. BattAI uses observed public readings and bounded system opportunities, and it keeps gaps visible.",
+                },
+                {
+                    "q": "Can it identify my charger's exact watts?",
+                    "a": "No. It can show an observed charging-rate trend, but iOS does not expose exact voltage, current or charger wattage to the app.",
+                },
+                {
+                    "q": "Is the charging history private?",
+                    "a": "Yes. BattAI has no account, ads, tracking, telemetry or internet requests, and the history stays on the device.",
+                },
+            ],
+        },
+    ],
     "shotinbox": [
         {
             "query": "best app to sort screenshots on iphone offline",

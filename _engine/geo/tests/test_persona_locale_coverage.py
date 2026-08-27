@@ -16,6 +16,7 @@ CURRENT_LIVE_APPS = {
     "aibriefpack",
     "aim990",
     "aim990plus",
+    "battai",
     "caldaily",
     "cvdesk",
     "cyca",

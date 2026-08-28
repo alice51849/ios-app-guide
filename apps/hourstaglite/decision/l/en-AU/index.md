@@ -1,17 +1,17 @@
 ---
-title: "HoursTag Lite — See the real price of things | iOS App"
+title: "best app to convert prices into work hours before buying"
 lang: "en-AU"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/en-AU/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag Lite — See the real price of things | iOS App
+# best app to convert prices into work hours before buying
 
-HoursTag Lite - See the real price of things Every purchase costs hours of your life. HoursTag Lite turns prices into work time — so you spend with clarity. Meet your Worth Lens - Life cost: Your take-home value per work hour - Type: Need - Want - Impulse - Your value pattern - Complete value insights - What will a goal cost?: See the work behind a goal — and track your progress. - Backup & restore: Includes income, spending, goals and preferences. - Widget - Apple Watch Everything stays on your device. No account, no tracking. One payment · Lifetime access · No subscription Unlimited choices and edits Unlimited targets and progress Sharing, insights and backups
+HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.
 
 - Money & travel
 - Free to start · one-time unlock
@@ -22,8 +22,8 @@ HoursTag Lite - See the real price of things Every purchase costs hours of your 
 - Apple Watch
 - App Store · Free
 
-[Get HoursTag Lite on the App Store](https://apps.apple.com/au/app/id6794039979?pt=118326163&ct=iag_data_en_au&mt=8)
+[Get HoursTag Lite on the App Store →](https://apps.apple.com/au/app/id6794039979?pt=118326163&ct=iag_data_en_au&mt=8)
 
-[Read the full guide](https://alice51849.github.io/ios-app-guide/en-AU/hourstaglite.html)
+[Read the full guide](https://alice51849.github.io/ios-app-guide/en-AU/answers/best-app-to-convert-prices-into-work-hours-before-buying.html)
 
-> This is first-party material published by Lumi Studio, the developer of every listed app.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

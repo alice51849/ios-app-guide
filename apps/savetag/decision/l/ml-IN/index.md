@@ -2,7 +2,7 @@
 title: "SaveTag: AI ബുക്ക്മാർക്ക് — ലിങ്കുകൾ സേവ് ചെയ്യൂ | iOS App"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ml-IN/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "CalDaily 計算機與主題 — 桌面小工具、八種工具、計算紀錄 | iOS App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/zh-Hant/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

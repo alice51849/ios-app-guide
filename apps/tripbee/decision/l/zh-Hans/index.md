@@ -2,7 +2,7 @@
 title: "最佳iPhone旅行行程规划应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/zh-Hans/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"

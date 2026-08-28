@@ -2,7 +2,7 @@
 title: "millor aplicació de rutina per anar a dormir per a infants d'educació infantil sense anuncis"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/ca/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "SaveTag: AI-bokmerker — Lagre lenker, les dem senere | iOS App"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/no/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

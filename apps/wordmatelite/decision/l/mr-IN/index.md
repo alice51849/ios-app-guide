@@ -2,7 +2,7 @@
 title: "Wordmate Lite: इंग्रजी शिका — रोज 5 नवे शब्द, एक मिनिट | iOS App"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/mr-IN/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

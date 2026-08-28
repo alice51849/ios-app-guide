@@ -811,7 +811,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-GB.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/gb/app/id6794039979?pt=118326163&ct=iag_data_en_gb&mt=8",
         "name": "HoursTag Lite",
-        "description": "HoursTag Lite - See the real price of things",
+        "description": "HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -837,11 +837,11 @@
             "target": "https://apps.apple.com/gb/app/id6794039979?pt=118326163&ct=iag_data_en_gb&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-GB/hourstaglite.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-app-to-convert-prices-into-work-hours-before-buying.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794039979",
           "inLanguage": "en-GB",
-          "description": "HoursTag Lite - See the real price of things",
+          "description": "HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-GB.jsonld#offer-hourstaglite"
           },
@@ -2130,8 +2130,8 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-GB.jsonld#offer-savetag",
         "url": "https://apps.apple.com/gb/app/id6802505528?pt=118326163&ct=iag_data_en_gb&mt=8",
-        "name": "SaveTag: AI Social Bookmarks",
-        "description": "Save it now. Actually read it later.",
+        "name": "SaveTag",
+        "description": "Links arrive in chats, notes and screenshots, get saved somewhere, and are never seen again — the saving works, the coming back does not — SaveTag is built for this.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2146,7 +2146,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6802505528"
           },
-          "name": "SaveTag: AI Social Bookmarks",
+          "name": "SaveTag",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/gb/app/id6802505528?pt=118326163&ct=iag_data_en_gb&mt=8",
@@ -2157,11 +2157,11 @@
             "target": "https://apps.apple.com/gb/app/id6802505528?pt=118326163&ct=iag_data_en_gb&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-GB/savetag.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-app-to-save-links-from-other-apps-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "en-GB",
-          "description": "Save it now. Actually read it later.",
+          "description": "Links arrive in chats, notes and screenshots, get saved somewhere, and are never seen again — the saving works, the coming back does not — SaveTag is built for this.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-GB.jsonld#offer-savetag"
           },
@@ -2328,8 +2328,8 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-GB.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/gb/app/id6802166527?pt=118326163&ct=iag_data_en_gb&mt=8",
-        "name": "ShotInbox AI: Sort Screenshots",
-        "description": "Your Screenshots, Sorted",
+        "name": "ShotInbox AI",
+        "description": "Screenshots pile up because each one was a task — a receipt to file, a link to open, an address to navigate to — and the camera roll has no way to finish any of them — ShotInbox AI is built for this.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2344,7 +2344,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6802166527"
           },
-          "name": "ShotInbox AI: Sort Screenshots",
+          "name": "ShotInbox AI",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/gb/app/id6802166527?pt=118326163&ct=iag_data_en_gb&mt=8",
@@ -2355,11 +2355,11 @@
             "target": "https://apps.apple.com/gb/app/id6802166527?pt=118326163&ct=iag_data_en_gb&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-GB/shotinbox.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-app-to-sort-screenshots-on-iphone-offline.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "en-GB",
-          "description": "Your Screenshots, Sorted",
+          "description": "Screenshots pile up because each one was a task — a receipt to file, a link to open, an address to navigate to — and the camera roll has no way to finish any of them — ShotInbox AI is built for this.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-GB.jsonld#offer-shotinbox"
           },

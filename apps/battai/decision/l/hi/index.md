@@ -2,7 +2,7 @@
 title: "BattAI: बैटरी स्वास्थ्य स्कोर — 80% तक अनुमानित समय | iOS App"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/hi/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "mejor app de ruido blanco para dormir sin suscripción"
 lang: "es-ES"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/es-ES/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

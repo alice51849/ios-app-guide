@@ -2,7 +2,7 @@
 title: "aplikasi bopomofo terbaik untuk anak belajar zhuyin di iPhone"
 lang: "id"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/id/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

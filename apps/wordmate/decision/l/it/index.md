@@ -2,7 +2,7 @@
 title: "miglior app vocabolario per pendolari con Apple Watch"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/it/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"

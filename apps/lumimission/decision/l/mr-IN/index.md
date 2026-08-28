@@ -2,7 +2,7 @@
 title: "पूर्वप्राथमिक मुलांसाठी जाहिरातीशिवाय सर्वोत्तम झोपेची दिनचर्या अनुप्रयोग"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/mr-IN/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

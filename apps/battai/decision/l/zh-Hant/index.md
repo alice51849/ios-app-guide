@@ -2,7 +2,7 @@
 title: "BattAI: 電池健康分數 — 預估到 80% 的時間 | iOS App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/zh-Hant/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

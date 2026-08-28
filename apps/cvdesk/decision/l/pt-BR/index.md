@@ -2,7 +2,7 @@
 title: "melhor app construtor de currículo para quem muda de carreira 2026"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/pt-BR/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

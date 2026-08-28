@@ -2,7 +2,7 @@
 title: "BattAI: Ocena stanja baterije — Ocenjeni čas do 80% | iOS App"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/sl-SI/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

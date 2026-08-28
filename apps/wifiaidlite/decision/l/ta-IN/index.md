@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — இணையச் சிக்கலைக் கண்டறிக | iOS App"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/ta-IN/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

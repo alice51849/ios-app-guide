@@ -2,7 +2,7 @@
 title: "SaveTag: guarda links con IA — Guárdalo y léelo después | iOS App"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/es-MX/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

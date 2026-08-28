@@ -2,7 +2,7 @@
 title: "BattAI: ಬ್ಯಾಟರಿ ಆರೋಗ್ಯ ಅಂಕ — 80% ತಲುಪುವ ಅಂದಾಜು ಸಮಯ | iOS App"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/kn-IN/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

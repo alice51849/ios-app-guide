@@ -2,7 +2,7 @@
 title: "CalDaily: calculator și teme — Widget, instrumente, istoric | iOS App"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ro/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

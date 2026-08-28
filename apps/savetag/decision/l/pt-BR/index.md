@@ -2,7 +2,7 @@
 title: "SaveTag: favoritos com IA — Salve links e leia depois | iOS App"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/pt-BR/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

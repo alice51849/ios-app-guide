@@ -2,7 +2,7 @@
 title: "AI Brief — 把资料整理成清晰上下文 | iOS App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/zh-Hans/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za potniško fotografijo dojenčkov in malčkov doma"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/sl-SI/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

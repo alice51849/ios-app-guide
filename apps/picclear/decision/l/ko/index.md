@@ -2,7 +2,7 @@
 title: "아이폰 저장 공간 확보를 위한 중복 사진 삭제에 가장 좋은 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/ko/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

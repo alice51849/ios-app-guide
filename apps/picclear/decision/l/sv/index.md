@@ -2,7 +2,7 @@
 title: "bästa appen för att frigöra iPhone-lagring genom att ta bort dubblettfoton"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/sv/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6780223070"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

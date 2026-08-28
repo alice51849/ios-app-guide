@@ -2,7 +2,7 @@
 title: "適合旅客搭配 Apple Watch 使用的最佳實用語言短句應用程式"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/zh-Hant/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

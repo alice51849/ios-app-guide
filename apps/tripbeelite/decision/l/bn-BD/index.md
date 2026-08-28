@@ -2,7 +2,7 @@
 title: "একটি আসন্ন সফরের জন্য সেরা সহজ ট্রিপ প্ল্যানার অ্যাপ আইফোনের জন্য"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/bn-BD/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

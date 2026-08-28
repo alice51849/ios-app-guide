@@ -2,7 +2,7 @@
 title: "아이폰에서 아이들이 주음(주음부호) 배우기에 가장 좋은 보포모포 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/ko/index.html"
-modified: "2026-08-27"
+modified: "2026-08-28"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

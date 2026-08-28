@@ -15,6 +15,7 @@ from types import SimpleNamespace
 import unittest
 from unittest import mock
 import urllib.error
+from urllib.parse import urlsplit
 import uuid
 
 
@@ -22,6 +23,7 @@ SOCIAL = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(SOCIAL))
 
 import gen_standard_site as generator  # noqa: E402
+import standard_site_attribution as attribution  # noqa: E402
 import standard_site_publish as publisher  # noqa: E402
 
 
@@ -80,8 +82,14 @@ def fixture_manifest(
 ) -> dict[str, object]:
     app_documents = app_documents or {"alpha": 1, "beta": 1, "gamma": 1}
     documents: list[dict[str, object]] = []
-    for app_key, count in app_documents.items():
+    for app_number, (app_key, count) in enumerate(
+        app_documents.items(), start=1
+    ):
         name = app_key.title()
+        app_id = str(1_000_000 + app_number)
+        primary_url = attribution.attributed_app_store_url(
+            f"https://apps.apple.com/us/app/{app_key}/id{app_id}"
+        )
         for index in range(1, count + 1):
             canonical = (
                 "https://alice51849.github.io/ios-app-guide/"
@@ -110,6 +118,8 @@ def fixture_manifest(
                     ),
                     "Limits",
                     generator.AVAILABILITY_NOTE,
+                    "Open in the App Store",
+                    primary_url,
                 ]
             )
             document: dict[str, object] = {
@@ -121,6 +131,9 @@ def fixture_manifest(
                     f"First-party publisher guidance for evaluating {name}."
                 ),
                 "text_content": text,
+                "app_store_id": app_id,
+                "primary_app_store_url": primary_url,
+                "legacy_app_store_link": attribution.LEGACY_BARE_URL,
                 "tags": [
                     app_key,
                     name,
@@ -275,12 +288,43 @@ class StandardSiteGeneratorTests(ProjectScratchCase):
             "not-live",
             {document["app_key"] for document in manifest["documents"]},
         )
+        by_app = {
+            document["app_key"]: document
+            for document in manifest["documents"]
+        }
+        self.assertEqual(
+            attribution.LEGACY_ABSENT_URL,
+            by_app["alpha"]["legacy_app_store_link"],
+        )
+        self.assertEqual(
+            attribution.LEGACY_BARE_URL,
+            by_app["beta"]["legacy_app_store_link"],
+        )
+        self.assertEqual(
+            [],
+            attribution.direct_app_store_urls(
+                attribution.legacy_text_content(
+                    by_app["alpha"]["text_content"],
+                    app_id=by_app["alpha"]["app_store_id"],
+                    mode=by_app["alpha"]["legacy_app_store_link"],
+                )
+            ),
+        )
         for document in manifest["documents"]:
             lowered = document["text_content"].casefold()
             self.assertGreaterEqual(len(document["text_content"]), 800)
             self.assertIn("publisher disclosure:", lowered)
             self.assertIn("not an independent review", lowered)
             self.assertNotIn("utm_", document["canonical_url"])
+            primary = attribution.validate_primary_app_store_url(
+                document["text_content"],
+                app_id=document["app_store_id"],
+                expected_url=document["primary_app_store_url"],
+            )
+            self.assertEqual(
+                attribution.PRIMARY_QUERY,
+                urlsplit(primary).query,
+            )
 
     def test_check_only_main_writes_nothing(self) -> None:
         output = self.scratch / "manifest.json"
@@ -298,6 +342,83 @@ class StandardSiteGeneratorTests(ProjectScratchCase):
             )
         self.assertEqual(0, result)
         self.assertFalse(output.exists())
+
+
+class StandardSiteAttributionTests(unittest.TestCase):
+    def test_native_rtl_markdown_cta_and_percent_encoded_route_are_preserved(
+        self,
+    ) -> None:
+        base = (
+            "https://apps.apple.com/ae/app/"
+            "%D8%AA%D8%B7%D8%A8%D9%8A%D9%82/id1234567890"
+        )
+        text = f"\u200fنزّل الآن: [افتح التطبيق]({base}) \u200f"
+
+        updated, primary, legacy_mode = (
+            attribution.ensure_primary_app_store_url(
+                text,
+                app_id="1234567890",
+                fallback_route="https://apps.apple.com/app/id1234567890",
+            )
+        )
+
+        self.assertIn("\u200fنزّل الآن: [افتح التطبيق](", updated)
+        self.assertIn("%D8%AA%D8%B7%D8%A8%D9%8A%D9%82", primary)
+        self.assertEqual(
+            base + "?" + attribution.PRIMARY_QUERY,
+            primary,
+        )
+        self.assertEqual(attribution.LEGACY_BARE_URL, legacy_mode)
+        self.assertEqual(1, len(attribution.direct_app_store_urls(updated)))
+
+    def test_card_wrapper_alone_is_not_a_primary_direct_url(self) -> None:
+        wrapper = (
+            "https://cards.example/open?target="
+            "https%3A%2F%2Fapps.apple.com%2Fapp%2Fid1234567890"
+            "%3Fpt%3D118326163%26ct%3Dstandard_site%26mt%3D8"
+        )
+        with self.assertRaisesRegex(
+            attribution.AttributionError, "exactly one"
+        ):
+            attribution.validate_primary_app_store_url(
+                f"Open the enhanced card: {wrapper}",
+                app_id="1234567890",
+            )
+
+    def test_duplicate_direct_urls_fail_closed(self) -> None:
+        primary = attribution.attributed_app_store_url(
+            "https://apps.apple.com/app/id1234567890"
+        )
+        with self.assertRaisesRegex(
+            attribution.AttributionError, "exactly one"
+        ):
+            attribution.validate_primary_app_store_url(
+                f"{primary} {primary}",
+                app_id="1234567890",
+            )
+
+    def test_apple_redirect_may_drop_mt_but_not_source_campaign(self) -> None:
+        source = attribution.attributed_app_store_url(
+            "https://apps.apple.com/us/app/id1234567890"
+        )
+        self.assertTrue(
+            attribution.redirect_preserves_attribution(
+                source,
+                (
+                    "https://apps.apple.com/us/app/example/id1234567890"
+                    "?pt=118326163&ct=standard_site"
+                ),
+            )
+        )
+        self.assertFalse(
+            attribution.redirect_preserves_attribution(
+                source,
+                (
+                    "https://apps.apple.com/us/app/example/id1234567890"
+                    "?ct=standard_site"
+                ),
+            )
+        )
 
 
 class StandardSiteTIDTests(unittest.TestCase):
@@ -633,6 +754,13 @@ class StandardSitePublisherTests(ProjectScratchCase):
                 )
                 self.assertTrue(record["path"].startswith("/"))
                 publisher.parse_timestamp(record["publishedAt"])
+                direct = attribution.direct_app_store_urls(
+                    record["textContent"]
+                )
+                self.assertEqual(1, len(direct))
+                self.assertEqual(
+                    attribution.PRIMARY_QUERY, direct[0].query
+                )
         self.assertEqual(
             rkeys_before,
             {
@@ -650,6 +778,129 @@ class StandardSitePublisherTests(ProjectScratchCase):
             contract["publication"]["well_known"]["request_path"],
         )
         self.assertEqual(2, len(contract["documents"]))
+
+    def test_legacy_published_record_is_audited_without_republish(self) -> None:
+        state_path, contract_path, well_known_path = self.paths()
+        client = FakeRepoClient(self.DID)
+        manifest = fixture_manifest({"alpha": 1})
+        publisher.run(
+            manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=self.NOW,
+        )
+        state = json.loads(state_path.read_text(encoding="utf-8"))
+        document = manifest["documents"][0]
+        canonical = document["canonical_url"]
+        entry = state["documents"][canonical]
+        key = (publisher.DOCUMENT_COLLECTION, entry["rkey"])
+        legacy_text = attribution.legacy_text_content(
+            document["text_content"],
+            app_id=document["app_store_id"],
+            mode=document["legacy_app_store_link"],
+        )
+        client.records[key]["value"]["textContent"] = legacy_text
+        entry["record_hash"] = publisher.record_hash(
+            client.records[key]["value"]
+        )
+        entry["published_hash"] = (
+            attribution.legacy_document_content_hash(document)
+        )
+        state_path.write_text(
+            json.dumps(state, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        ledger_before = deepcopy(state["daily"])
+        rotation_before = deepcopy(state["rotation"])
+        puts_before = len(client.puts)
+
+        result = publisher.run(
+            manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=self.NOW,
+        )
+
+        final_state = json.loads(state_path.read_text(encoding="utf-8"))
+        self.assertEqual(puts_before, len(client.puts))
+        self.assertEqual([canonical], result["legacy_unattributed"])
+        self.assertEqual([], result["selected_urls"])
+        self.assertEqual(ledger_before, final_state["daily"])
+        self.assertEqual(rotation_before, final_state["rotation"])
+        self.assertEqual(
+            legacy_text, client.records[key]["value"]["textContent"]
+        )
+        self.assertEqual(
+            attribution.legacy_document_content_hash(document),
+            final_state["documents"][canonical]["published_hash"],
+        )
+
+    def test_prepared_future_record_keeps_reservation_and_full_query(self) -> None:
+        state_path, contract_path, well_known_path = self.paths()
+        manifest = fixture_manifest({"alpha": 1})
+        prepared, selected, _plan = publisher._prepare_plan(
+            publisher.empty_state(),
+            manifest,
+            generator=self.deterministic_tids(),
+            day="2026-07-27",
+            limit=1,
+            timestamp="2026-07-27T14:00:00.000Z",
+            publish=False,
+        )
+        state_path.write_text(
+            json.dumps(prepared, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        ledger_before = deepcopy(prepared["daily"])
+        rotation_before = deepcopy(prepared["rotation"])
+        client = FakeRepoClient(self.DID)
+
+        result = publisher.run(
+            manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=self.NOW,
+        )
+
+        document_puts = [
+            item
+            for item in client.puts
+            if item[0] == publisher.DOCUMENT_COLLECTION
+        ]
+        final_state = json.loads(state_path.read_text(encoding="utf-8"))
+        self.assertEqual(
+            [item["canonical_url"] for item in selected],
+            result["selected_urls"],
+        )
+        self.assertEqual(ledger_before, final_state["daily"])
+        self.assertEqual(rotation_before, final_state["rotation"])
+        self.assertEqual(1, len(document_puts))
+        direct = attribution.direct_app_store_urls(
+            document_puts[0][2]["textContent"]
+        )
+        self.assertEqual(1, len(direct))
+        self.assertEqual(attribution.PRIMARY_QUERY, direct[0].query)
 
     def test_failed_document_keeps_rkey_but_is_not_marked_published(
         self,

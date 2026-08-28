@@ -29,6 +29,13 @@ sys.path.insert(0, str(GEO))
 sys.path.insert(0, str(ENGINE_ROOT / "social"))
 
 from answer_deep import DEEP_ITEMS  # noqa: E402
+from standard_site_attribution import (  # noqa: E402
+    AttributionError,
+    document_content_hash,
+    ensure_primary_app_store_url,
+    legacy_text_content,
+    validate_primary_app_store_url,
+)
 from videogen.registry import APPS, APPSTORE  # noqa: E402
 
 
@@ -97,21 +104,6 @@ def _hash_json(value: object) -> str:
         value, ensure_ascii=False, sort_keys=True, separators=(",", ":")
     ).encode("utf-8")
     return hashlib.sha256(encoded).hexdigest()
-
-
-def document_content_hash(document: Mapping[str, object]) -> str:
-    managed = {
-        key: document[key]
-        for key in (
-            "canonical_url",
-            "path",
-            "title",
-            "description",
-            "text_content",
-            "tags",
-        )
-    }
-    return _hash_json(managed)
 
 
 def atomic_write_text(path: Path, content: str, mode: int = 0o600) -> None:
@@ -291,6 +283,7 @@ def _deep_document(
     *,
     key: str,
     app: Mapping[str, object],
+    app_store_id: str,
     app_store_url: str,
     item: Mapping[str, object],
     canonical_url: str,
@@ -364,6 +357,18 @@ def _deep_document(
 
     sections.extend(("Limits and availability", AVAILABILITY_NOTE))
     text = "\n\n".join(value for value in sections if value)
+    try:
+        text, primary_app_store_url, legacy_app_store_link = (
+            ensure_primary_app_store_url(
+                text,
+                app_id=app_store_id,
+                fallback_route=app_store_url,
+            )
+        )
+    except AttributionError as error:
+        raise ManifestError(
+            f"Invalid primary App Store URL for {key}: {error}"
+        ) from error
     description = _compact(
         item.get("meta_description") or lead
     )[:3000]
@@ -374,6 +379,9 @@ def _deep_document(
         "title": title,
         "description": description,
         "text_content": text,
+        "app_store_id": app_store_id,
+        "primary_app_store_url": primary_app_store_url,
+        "legacy_app_store_link": legacy_app_store_link,
         "tags": _tags(key, app),
         "source_query": _substitute(item.get("query"), name),
         "editorial_kind": _compact(item.get("kind") or "guide"),
@@ -386,6 +394,7 @@ def _fallback_document(
     *,
     key: str,
     app: Mapping[str, object],
+    app_store_id: str,
     app_store_url: str,
     canonical_url: str,
     site: str,
@@ -456,6 +465,18 @@ def _fallback_document(
             AVAILABILITY_NOTE,
         ]
     )
+    try:
+        text, primary_app_store_url, legacy_app_store_link = (
+            ensure_primary_app_store_url(
+                text,
+                app_id=app_store_id,
+                fallback_route=app_store_url,
+            )
+        )
+    except AttributionError as error:
+        raise ManifestError(
+            f"Invalid primary App Store URL for {key}: {error}"
+        ) from error
     document = {
         "app_key": key,
         "canonical_url": canonical_url,
@@ -466,6 +487,9 @@ def _fallback_document(
             f"{purpose.rstrip('.').lower()}, without an independent ranking."
         ),
         "text_content": text,
+        "app_store_id": app_store_id,
+        "primary_app_store_url": primary_app_store_url,
+        "legacy_app_store_link": legacy_app_store_link,
         "tags": _tags(key, app),
         "source_query": f"How should I evaluate {name} before downloading?",
         "editorial_kind": "publisher-guide",
@@ -531,7 +555,8 @@ def build_manifest(
         app = apps[key]
         if not _compact(app.get("name")):
             raise ManifestError(f"Live app has no name: {key}")
-        app_store_url = _store_url(appstore[key])
+        app_store_id = str(appstore[key]).strip()
+        app_store_url = _store_url(app_store_id)
         added = 0
         for item in _deep_candidates(deep_items, key):
             canonical = (
@@ -545,6 +570,7 @@ def build_manifest(
                 _deep_document(
                     key=key,
                     app=app,
+                    app_store_id=app_store_id,
                     app_store_url=app_store_url,
                     item=item,
                     canonical_url=canonical,
@@ -569,6 +595,7 @@ def build_manifest(
                 _fallback_document(
                     key=key,
                     app=app,
+                    app_store_id=app_store_id,
                     app_store_url=app_store_url,
                     canonical_url=canonical,
                     site=site,
@@ -666,6 +693,9 @@ def validate_manifest(manifest: Mapping[str, object]) -> None:
                 "title",
                 "description",
                 "text_content",
+                "app_store_id",
+                "primary_app_store_url",
+                "legacy_app_store_link",
                 "tags",
                 "content_hash",
             )
@@ -702,6 +732,27 @@ def validate_manifest(manifest: Mapping[str, object]) -> None:
             raise ManifestError(
                 f"Document is not substantive long-form text: {canonical}"
             )
+        app_store_id = str(value["app_store_id"])
+        if re.fullmatch(r"[0-9]+", app_store_id) is None:
+            raise ManifestError(
+                f"Invalid App Store identifier for {canonical}"
+            )
+        try:
+            validate_primary_app_store_url(
+                text,
+                app_id=app_store_id,
+                expected_url=str(value["primary_app_store_url"]),
+            )
+            legacy_text_content(
+                text,
+                app_id=app_store_id,
+                mode=str(value["legacy_app_store_link"]),
+            )
+        except AttributionError as error:
+            raise ManifestError(
+                f"Invalid primary App Store attribution for {canonical}: "
+                f"{error}"
+            ) from error
         lowered = text.casefold()
         if (
             "publisher disclosure:" not in lowered

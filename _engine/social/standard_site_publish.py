@@ -31,8 +31,12 @@ from gen_standard_site import (
     ManifestError,
     PRIVATE_DIR,
     atomic_write_text,
-    document_content_hash,
     validate_manifest,
+)
+from standard_site_attribution import (
+    attribution_status,
+    legacy_document_content_hash,
+    legacy_text_content,
 )
 
 
@@ -375,10 +379,11 @@ def _pending(
     document: Mapping[str, object], state: Mapping[str, object]
 ) -> bool:
     entry = state["documents"].get(document["canonical_url"], {})
-    return (
-        not entry.get("published")
-        or entry.get("published_hash") != document["content_hash"]
-    )
+    if not entry.get("published"):
+        return True
+    return attribution_status(
+        document, entry.get("published_hash")
+    ) == "stale"
 
 
 def reserve_daily_batch(
@@ -406,7 +411,15 @@ def reserve_daily_batch(
             raise StateError(
                 f"Reserved documents disappeared from manifest: {missing}"
             )
-        selected = [documents[url] for url in urls]
+        selected = [
+            documents[url]
+            for url in urls
+            if attribution_status(
+                documents[url],
+                state["documents"][url].get("published_hash"),
+            )
+            != "legacy_unattributed"
+        ]
     else:
         pending: dict[str, list[Mapping[str, object]]] = {}
         for document in manifest["documents"]:
@@ -489,6 +502,20 @@ def document_record(
         "tags": list(document["tags"]),
         "publishedAt": published_at,
     }
+
+
+def legacy_document_record(
+    document: Mapping[str, object],
+    publication_uri: str,
+    entry: Mapping[str, object],
+) -> dict[str, object]:
+    record = document_record(document, publication_uri, entry)
+    record["textContent"] = legacy_text_content(
+        str(document["text_content"]),
+        app_id=str(document["app_store_id"]),
+        mode=str(document["legacy_app_store_link"]),
+    )
+    return record
 
 
 def record_hash(record: Mapping[str, object]) -> str:
@@ -924,6 +951,17 @@ def reconcile_remote_state(
                 remote_record,
                 verified_at=verified_at,
             )
+        elif _document_semantics(remote_record) == _document_semantics(
+            legacy_document_record(document, active_site_uri, entry)
+        ):
+            _mark_document(
+                state,
+                document,
+                remote,
+                remote_record,
+                verified_at=verified_at,
+                published_hash=legacy_document_content_hash(document),
+            )
         else:
             _clear_document_confirmation(entry)
     validate_state(state)
@@ -1159,6 +1197,7 @@ def _mark_document(
     record: Mapping[str, object],
     *,
     verified_at: str,
+    published_hash: str | None = None,
 ) -> None:
     entry = state["documents"][document["canonical_url"]]
     entry.update(
@@ -1167,7 +1206,11 @@ def _mark_document(
             "cid": remote["cid"],
             "record_hash": record_hash(record),
             "published": True,
-            "published_hash": document["content_hash"],
+            "published_hash": (
+                published_hash
+                if published_hash is not None
+                else document["content_hash"]
+            ),
             "published_at": record["publishedAt"],
             "last_verified_at": verified_at,
         }
@@ -1211,6 +1254,22 @@ def _prepare_plan(
         "publication_changed": False,
         "documents_changed": 0,
         "documents_verified": 0,
+        "legacy_unattributed": sorted(
+            str(document["canonical_url"])
+            for document in manifest["documents"]
+            if (
+                state["documents"]
+                .get(document["canonical_url"], {})
+                .get("published")
+                and attribution_status(
+                    document,
+                    state["documents"][document["canonical_url"]].get(
+                        "published_hash"
+                    ),
+                )
+                == "legacy_unattributed"
+            )
+        ),
         "errors": [],
     }
     return working, selected, plan
@@ -1420,6 +1479,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         f"Standard.site {result['mode']}: "
         f"{len(result['selected_urls'])} document(s), "
         f"{result['documents_changed']} changed, "
+        f"{len(result['legacy_unattributed'])} legacy unattributed, "
         f"{len(result['errors'])} error(s)"
     )
     return 1 if result["errors"] else 0

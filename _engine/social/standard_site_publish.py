@@ -69,6 +69,8 @@ ATTRIBUTION_REPAIR_BACKLOG_FIELD = (
 )
 ORDINARY_REPUBLISH_REASON = pending_state.ORDINARY_REPUBLISH_REASON
 ORDINARY_REPUBLISH_FIELDS = pending_state.ORDINARY_REPUBLISH_FIELDS
+PENDING_POLICY_FIELD = pending_state.PENDING_POLICY_FIELD
+PENDING_WINDOW_FIELD = pending_state.PENDING_WINDOW_FIELD
 
 
 class ConfigurationError(RuntimeError):
@@ -247,6 +249,10 @@ def validate_state(state: Mapping[str, object]) -> None:
     for field in ("publication", "documents", "daily", "rotation"):
         if not isinstance(state.get(field), Mapping):
             raise StateError(f"State field must be an object: {field}")
+    try:
+        pending_state.validate_pending_policy(state)
+    except pending_state.PendingStateError as error:
+        raise StateError(str(error)) from error
     publication = state["publication"]
     if publication.get("rkey") and not TID_RE.fullmatch(
         str(publication["rkey"])
@@ -268,6 +274,12 @@ def validate_state(state: Mapping[str, object]) -> None:
             )
         except pending_state.PendingStateError as error:
             raise StateError(str(error)) from error
+    try:
+        pending_state.validate_pending_state(
+            state, require_finalized=False
+        )
+    except pending_state.PendingStateError as error:
+        raise StateError(str(error)) from error
     for day_value, entry in state["daily"].items():
         try:
             date.fromisoformat(str(day_value))
@@ -411,9 +423,10 @@ def _repair_deferred(entry: Mapping[str, object], day: str) -> bool:
 
 def _pending_priority(
     entry: Mapping[str, object], canonical_url: str
-) -> tuple[str, str]:
+) -> tuple[str, str, str]:
     detected_at = pending_state.pending_detected_at(entry)
     return (
+        str(pending_state.pending_cohort_day(entry) or ""),
         str(detected_at or entry.get("published_at") or ""),
         canonical_url,
     )
@@ -424,30 +437,17 @@ def _finalize_pending_backlogs(
     manifest: Mapping[str, object],
     *,
     limit: int,
+    updated_at: str,
 ) -> None:
-    pending_entries = []
-    for document in manifest["documents"]:
-        entry = state["documents"][document["canonical_url"]]
-        if (
-            entry.get("published") is not True
-            and pending_state.pending_kind(entry) is not None
-        ):
-            pending_entries.append(entry)
-    backlog_days = pending_state.backlog_drain_days(
-        pending_entries, limit
-    )
-    for entry in pending_entries:
-        kind = pending_state.pending_kind(entry)
-        if (
-            kind == "attribution_repair"
-            and entry.get(ATTRIBUTION_REPAIR_BACKLOG_FIELD) is None
-        ):
-            entry[ATTRIBUTION_REPAIR_BACKLOG_FIELD] = backlog_days
-        elif (
-            kind == "ordinary_republish"
-            and entry.get("republish_backlog_days") is None
-        ):
-            entry["republish_backlog_days"] = backlog_days
+    try:
+        pending_state.finalize_pending_windows(
+            state,
+            manifest,
+            daily_limit=limit,
+            updated_at=updated_at,
+        )
+    except pending_state.PendingStateError as error:
+        raise StateError(str(error)) from error
 
 
 def reserve_daily_batch(
@@ -459,7 +459,7 @@ def reserve_daily_batch(
     now: str,
 ) -> list[Mapping[str, object]]:
     """Reserve at most one document per app and reuse it on same-day retries."""
-    if not 1 <= limit <= 4:
+    if type(limit) is not int or not 1 <= limit <= 4:
         raise ConfigurationError("Daily document limit must be between 1 and 4")
     try:
         current_day = date.fromisoformat(day)
@@ -486,11 +486,39 @@ def reserve_daily_batch(
             and not _repair_deferred(state["documents"][url], day)
         ]
     else:
-        pending: dict[str, list[Mapping[str, object]]] = {}
+        eligible: list[Mapping[str, object]] = []
         for document in manifest["documents"]:
             entry = state["documents"][document["canonical_url"]]
             if _pending(document, state) and not _repair_deferred(entry, day):
-                pending.setdefault(str(document["app_key"]), []).append(document)
+                eligible.append(document)
+        tracked_cohorts = [
+            str(pending_state.pending_cohort_day(
+                state["documents"][document["canonical_url"]]
+            ))
+            for document in eligible
+            if pending_state.pending_kind(
+                state["documents"][document["canonical_url"]]
+            )
+            is not None
+        ]
+        if tracked_cohorts:
+            # Newer cohorts cannot consume capacity promised to an older one.
+            oldest_cohort = min(tracked_cohorts)
+            eligible = [
+                document
+                for document in eligible
+                if pending_state.pending_kind(
+                    state["documents"][document["canonical_url"]]
+                )
+                is not None
+                and pending_state.pending_cohort_day(
+                    state["documents"][document["canonical_url"]]
+                )
+                == oldest_cohort
+            ]
+        pending: dict[str, list[Mapping[str, object]]] = {}
+        for document in eligible:
+            pending.setdefault(str(document["app_key"]), []).append(document)
         app_keys = sorted(pending)
         last_app = str(state["rotation"].get("last_app") or "")
         if last_app in app_keys:
@@ -530,7 +558,9 @@ def reserve_daily_batch(
     for old_day in list(daily):
         if date.fromisoformat(old_day) < cutoff:
             del daily[old_day]
-    _finalize_pending_backlogs(state, manifest, limit=limit)
+    _finalize_pending_backlogs(
+        state, manifest, limit=limit, updated_at=now
+    )
     validate_state(state)
     return selected
 
@@ -888,6 +918,7 @@ def _clear_document_confirmation(entry: MutableMapping[str, object]) -> None:
         *ATTRIBUTION_REPAIR_FIELDS,
         ATTRIBUTION_REPAIR_BACKLOG_FIELD,
         *ORDINARY_REPUBLISH_FIELDS,
+        PENDING_WINDOW_FIELD,
     ):
         entry.pop(key, None)
 
@@ -898,10 +929,16 @@ def _mark_ordinary_republish_pending(
     detected_at: str,
     republish_after_day: str,
 ) -> None:
+    existing_kind = pending_state.pending_kind(entry)
     existing = {
         field: entry.get(field)
         for field in ORDINARY_REPUBLISH_FIELDS
     }
+    existing_window = (
+        entry.get(PENDING_WINDOW_FIELD)
+        if existing_kind == "ordinary_republish"
+        else None
+    )
     _clear_document_confirmation(entry)
     entry["republish_reason"] = ORDINARY_REPUBLISH_REASON
     entry["republish_detected_at"] = (
@@ -914,6 +951,8 @@ def _mark_ordinary_republish_pending(
         entry["republish_backlog_days"] = existing[
             "republish_backlog_days"
         ]
+    if existing_window is not None:
+        entry[PENDING_WINDOW_FIELD] = existing_window
 
 
 def _mark_attribution_repair_pending(
@@ -923,10 +962,16 @@ def _mark_attribution_repair_pending(
     detected_at: str,
     repair_after_day: str,
 ) -> None:
+    existing_kind = pending_state.pending_kind(entry)
     existing_detected_at = entry.get("repair_detected_at")
     existing_after_day = entry.get("repair_after_day")
     existing_backlog_days = entry.get(
         ATTRIBUTION_REPAIR_BACKLOG_FIELD
+    )
+    existing_window = (
+        entry.get(PENDING_WINDOW_FIELD)
+        if existing_kind == "attribution_repair"
+        else None
     )
     _clear_document_confirmation(entry)
     entry["published_hash"] = document["content_hash"]
@@ -935,6 +980,8 @@ def _mark_attribution_repair_pending(
     entry["repair_after_day"] = existing_after_day or repair_after_day
     if existing_backlog_days is not None:
         entry[ATTRIBUTION_REPAIR_BACKLOG_FIELD] = existing_backlog_days
+    if existing_window is not None:
+        entry[PENDING_WINDOW_FIELD] = existing_window
 
 
 def _remote_document_canonical(
@@ -1121,7 +1168,10 @@ def reconcile_remote_state(
                 republish_after_day=repair_after_day,
             )
     _finalize_pending_backlogs(
-        state, manifest, limit=daily_limit
+        state,
+        manifest,
+        limit=daily_limit,
+        updated_at=verified_at,
     )
     validate_state(state)
 
@@ -1380,6 +1430,7 @@ def _mark_document(
         *ATTRIBUTION_REPAIR_FIELDS,
         ATTRIBUTION_REPAIR_BACKLOG_FIELD,
         *ORDINARY_REPUBLISH_FIELDS,
+        PENDING_WINDOW_FIELD,
     ):
         entry.pop(field, None)
 
@@ -1456,7 +1507,7 @@ def run(
     today: str | None = None,
 ) -> dict[str, object]:
     validate_manifest(manifest)
-    if not 1 <= limit <= 4:
+    if type(limit) is not int or not 1 <= limit <= 4:
         raise ConfigurationError("Daily document limit must be between 1 and 4")
     current = now or datetime.now(timezone.utc)
     timestamp = utc_timestamp(current)

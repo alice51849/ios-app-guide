@@ -611,6 +611,7 @@ class StandardSiteSelectionTests(unittest.TestCase):
             entry["published_hash"] = document["content_hash"]
             for field in publisher.ORDINARY_REPUBLISH_FIELDS:
                 entry.pop(field, None)
+            entry.pop(publisher.PENDING_WINDOW_FIELD, None)
         second = publisher.reserve_daily_batch(
             state,
             manifest,
@@ -675,6 +676,289 @@ class StandardSiteSelectionTests(unittest.TestCase):
             generator.validate_manifest(manifest)
 
 
+class StandardSitePendingWindowTests(unittest.TestCase):
+    @staticmethod
+    def _allocated(
+        app_documents: dict[str, int],
+    ) -> tuple[dict[str, object], dict[str, object]]:
+        manifest = fixture_manifest(app_documents)
+        state = publisher.empty_state()
+        publisher.allocate_rkeys(
+            state,
+            manifest,
+            publisher.TIDGenerator(
+                clock_us=lambda: 1_800_000_000_000_000,
+                random_clock_id=lambda: 1,
+            ),
+        )
+        return state, manifest
+
+    @staticmethod
+    def _mark_apps(
+        state: dict[str, object],
+        manifest: dict[str, object],
+        apps: set[str],
+        timestamp: str,
+    ) -> None:
+        day = timestamp[:10]
+        for document in manifest["documents"]:
+            if document["app_key"] not in apps:
+                continue
+            entry = state["documents"][document["canonical_url"]]
+            entry["published_at"] = timestamp
+            publisher._mark_ordinary_republish_pending(
+                entry,
+                detected_at=timestamp,
+                republish_after_day=day,
+            )
+
+    def test_round_robin_bound_uses_app_cycles_for_all_limits(self) -> None:
+        entries = [
+            {"app_key": "alpha"},
+            {"app_key": "alpha"},
+            {"app_key": "beta"},
+            {"app_key": "gamma"},
+            {"app_key": "delta"},
+        ]
+
+        self.assertEqual(
+            {1: 8, 2: 4, 4: 2},
+            {
+                limit: publisher.pending_state.backlog_drain_days(
+                    entries, limit
+                )
+                for limit in (1, 2, 4)
+            },
+        )
+
+    def test_cohort_additions_widen_without_cross_midnight_starvation(
+        self,
+    ) -> None:
+        state, manifest = self._allocated(
+            {
+                "alpha": 2,
+                "beta": 1,
+                "gamma": 1,
+                "delta": 1,
+                "epsilon": 1,
+            }
+        )
+        self._mark_apps(
+            state,
+            manifest,
+            {"alpha"},
+            "2026-07-28T10:00:00.000Z",
+        )
+        publisher._finalize_pending_backlogs(
+            state,
+            manifest,
+            limit=2,
+            updated_at="2026-07-28T10:00:00.000Z",
+        )
+        alpha_urls = [
+            document["canonical_url"]
+            for document in manifest["documents"]
+            if document["app_key"] == "alpha"
+        ]
+        self.assertEqual(
+            {2},
+            {
+                state["documents"][url]["republish_backlog_days"]
+                for url in alpha_urls
+            },
+        )
+
+        observed = []
+        for hour, app in enumerate(("beta", "gamma", "delta"), start=11):
+            timestamp = f"2026-07-28T{hour:02d}:00:00.000Z"
+            self._mark_apps(state, manifest, {app}, timestamp)
+            publisher._finalize_pending_backlogs(
+                state,
+                manifest,
+                limit=2,
+                updated_at=timestamp,
+            )
+            observed.append(
+                state["documents"][alpha_urls[0]][
+                    "republish_backlog_days"
+                ]
+            )
+        self.assertEqual([2, 4, 4], observed)
+        alpha_window = state["documents"][alpha_urls[0]][
+            publisher.PENDING_WINDOW_FIELD
+        ]
+        self.assertEqual(1, alpha_window["version"])
+        self.assertEqual(2, alpha_window["effective_daily_limit"])
+        self.assertEqual(5, alpha_window["pending_documents"])
+        self.assertEqual(4, alpha_window["pending_apps"])
+        self.assertEqual(2, alpha_window["max_per_app"])
+        self.assertEqual(4, alpha_window["computed_days"])
+        self.assertEqual(
+            {
+                "version": 1,
+                "effective_daily_limit": 2,
+                "revision_at": "2026-07-28T13:00:00.000Z",
+            },
+            state[publisher.PENDING_POLICY_FIELD],
+        )
+
+        self._mark_apps(
+            state,
+            manifest,
+            {"epsilon"},
+            "2026-07-29T00:01:00.000Z",
+        )
+        publisher._finalize_pending_backlogs(
+            state,
+            manifest,
+            limit=2,
+            updated_at="2026-07-29T00:01:00.000Z",
+        )
+        epsilon_url = next(
+            document["canonical_url"]
+            for document in manifest["documents"]
+            if document["app_key"] == "epsilon"
+        )
+        self.assertEqual(
+            4,
+            state["documents"][alpha_urls[0]][
+                "republish_backlog_days"
+            ],
+        )
+        self.assertEqual(
+            5,
+            state["documents"][epsilon_url][
+                "republish_backlog_days"
+            ],
+        )
+        selected = publisher.reserve_daily_batch(
+            state,
+            manifest,
+            day="2026-07-29",
+            limit=2,
+            now="2026-07-29T00:02:00.000Z",
+        )
+        self.assertTrue(selected)
+        self.assertNotIn(
+            "epsilon", {document["app_key"] for document in selected}
+        )
+
+        reduced = deepcopy(manifest)
+        reduced["documents"] = [
+            document
+            for document in reduced["documents"]
+            if document["app_key"] in {"alpha", "epsilon"}
+        ]
+        publisher._finalize_pending_backlogs(
+            state,
+            reduced,
+            limit=2,
+            updated_at="2026-07-29T00:03:00.000Z",
+        )
+        audit = publisher.pending_state.audit_pending_documents(
+            state,
+            reduced,
+            now=datetime(2026, 7, 29, 1, tzinfo=timezone.utc),
+        )
+        self.assertEqual(3, audit["counts"]["ordinary_republish"])
+        self.assertEqual(
+            4,
+            state["documents"][alpha_urls[0]][
+                "republish_backlog_days"
+            ],
+        )
+
+    def test_limit_changes_only_widen_and_clock_rollback_fails(self) -> None:
+        state, manifest = self._allocated(
+            {"alpha": 2, "beta": 1, "gamma": 1, "delta": 1}
+        )
+        self._mark_apps(
+            state,
+            manifest,
+            {"alpha", "beta", "gamma", "delta"},
+            "2026-07-28T10:00:00.000Z",
+        )
+        publisher._finalize_pending_backlogs(
+            state,
+            manifest,
+            limit=4,
+            updated_at="2026-07-28T10:00:00.000Z",
+        )
+        entries = state["documents"].values()
+        self.assertEqual(
+            {2},
+            {entry["republish_backlog_days"] for entry in entries},
+        )
+        with self.assertRaisesRegex(
+            publisher.StateError, "newer revision"
+        ):
+            publisher._finalize_pending_backlogs(
+                state,
+                manifest,
+                limit=1,
+                updated_at="2026-07-28T10:00:00.000Z",
+            )
+
+        publisher._finalize_pending_backlogs(
+            state,
+            manifest,
+            limit=1,
+            updated_at="2026-07-28T11:00:00.000Z",
+        )
+        self.assertEqual(
+            {8},
+            {
+                entry["republish_backlog_days"]
+                for entry in state["documents"].values()
+            },
+        )
+        self.assertEqual(
+            1,
+            state[publisher.PENDING_POLICY_FIELD][
+                "effective_daily_limit"
+            ],
+        )
+
+        publisher._finalize_pending_backlogs(
+            state,
+            manifest,
+            limit=4,
+            updated_at="2026-07-28T12:00:00.000Z",
+        )
+        self.assertEqual(
+            {8},
+            {
+                entry["republish_backlog_days"]
+                for entry in state["documents"].values()
+            },
+        )
+        self.assertEqual(
+            4,
+            state[publisher.PENDING_POLICY_FIELD][
+                "effective_daily_limit"
+            ],
+        )
+        with self.assertRaisesRegex(
+            publisher.StateError, "clock moved backwards"
+        ):
+            publisher._finalize_pending_backlogs(
+                state,
+                manifest,
+                limit=4,
+                updated_at="2026-07-28T11:59:59.000Z",
+            )
+        for invalid in (True, 0, 5):
+            with self.subTest(limit=invalid), self.assertRaises(
+                publisher.StateError
+            ):
+                publisher._finalize_pending_backlogs(
+                    state,
+                    manifest,
+                    limit=invalid,
+                    updated_at="2026-07-28T12:01:00.000Z",
+                )
+
+
 class StandardSitePublisherTests(ProjectScratchCase):
     DID = "did:plc:testpublisher"
     NOW = datetime(2026, 7, 27, 14, tzinfo=timezone.utc)
@@ -724,7 +1008,7 @@ class StandardSitePublisherTests(ProjectScratchCase):
             client_factory=lambda _handle, _password: client,
             expected_did=self.DID,
             tid_generator=self.deterministic_tids(),
-            now=self.NOW,
+            now=self.NOW + timedelta(minutes=1),
         )
         state_after = json.loads(state_path.read_text(encoding="utf-8"))
         self.assertEqual(2, first["documents_changed"])
@@ -1036,7 +1320,6 @@ class StandardSitePublisherTests(ProjectScratchCase):
             pending,
             manifest,
             now=day_28 + timedelta(days=1, hours=1),
-            daily_limit=2,
         )
 
         self.assertEqual([], deferred["selected_urls"])
@@ -1079,7 +1362,6 @@ class StandardSitePublisherTests(ProjectScratchCase):
             half_drained,
             manifest,
             now=day_28 + timedelta(days=2),
-            daily_limit=2,
         )
         second_drain = publisher.run(
             manifest,
@@ -1175,7 +1457,6 @@ class StandardSitePublisherTests(ProjectScratchCase):
             half_drained,
             updated,
             now=day_28 + timedelta(days=2),
-            daily_limit=2,
         )
         second_drain = publisher.run(
             updated,
@@ -1725,6 +2006,16 @@ class StandardSitePublisherTests(ProjectScratchCase):
         self.assertFalse(state_path.exists())
         self.assertFalse(contract_path.exists())
         self.assertFalse(well_known_path.exists())
+        with self.assertRaises(publisher.ConfigurationError):
+            publisher.run(
+                fixture_manifest(),
+                state_path=state_path,
+                contract_path=contract_path,
+                well_known_path=well_known_path,
+                limit=True,
+                publish=False,
+                now=self.NOW,
+            )
 
     def test_atomic_failure_preserves_previous_healthy_state(self) -> None:
         state_path, _, _ = self.paths()

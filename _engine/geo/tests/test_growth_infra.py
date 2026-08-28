@@ -23840,7 +23840,7 @@ class GeneratorTests(unittest.TestCase):
             depth_gate,
         )
         final_tests = english_commit_block.index(
-            "python3 -m unittest discover",
+            "python3 _engine/geo/parallel_unittest.py --jobs 3",
             reconcile,
         )
         scorecard = english_commit_block.index(

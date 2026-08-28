@@ -247,9 +247,38 @@ printf 'attempts=%s\\n' "$REMOTE_FIRST_ATTEMPTS_USED"
         )
         self.assertNotEqual(0, missing_worker.returncode)
 
+    def test_callback_failure_stops_immediately_without_push(self) -> None:
+        origin_before = self.origin_head()
+        self.commit_file(self.worker, "worker.txt", "worker\n", "worker content")
+        script = f"""
+source {shlex.quote(str(HELPER))}
+reconcile_phase() {{
+  false
+  printf 'gate-was-bypassed\\n' > callback-continued.txt
+}}
+if remote_first_publish reconcile_phase origin main 5; then
+  exit 90
+fi
+test ! -e callback-continued.txt
+printf 'attempts=%s\\n' "$REMOTE_FIRST_ATTEMPTS_USED"
+"""
+        result = self.run_bash(script)
+        self.assertIn("attempts=1", result.stdout)
+        self.assertEqual(origin_before, self.origin_head())
+        missing_worker = self.git(
+            self.root,
+            f"--git-dir={self.origin}",
+            "cat-file",
+            "-e",
+            "main:worker.txt",
+            check=False,
+        )
+        self.assertNotEqual(0, missing_worker.returncode)
+
     def test_helper_is_bounded_and_non_destructive(self) -> None:
         source = HELPER.read_text(encoding="utf-8")
         self.assertIn("attempt <= max_attempts", source)
+        self.assertIn("bash -euo pipefail -c", source)
         self.assertIn("git fetch --no-tags", source)
         self.assertIn("git merge --no-edit -X theirs", source)
         self.assertIn("git merge-base --is-ancestor", source)

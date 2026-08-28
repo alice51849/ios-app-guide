@@ -19,6 +19,16 @@ remote_first_abort_merge() {
   fi
 }
 
+remote_first_run_reconcile() {
+  local callback="$1"
+  local definition
+
+  definition="$(declare -f "$callback")" || return 1
+  bash -euo pipefail -c \
+    "${definition}"$'\n''"$1"' \
+    remote-first-reconcile "$callback"
+}
+
 integrate_origin_main() {
   local remote="${1:-origin}"
   local branch="${2:-main}"
@@ -90,7 +100,10 @@ remote_first_publish() {
     echo "remote-first publish attempt ${attempt}/${max_attempts}"
 
     if integrate_origin_main "$remote" "$branch"; then
-      if ! (set -euo pipefail; "$reconcile_callback"); then
+      # A function called from `if ! ...` inherits Bash's errexit immunity.
+      # Run it in a fresh strict shell so any intermediate gate failure stops
+      # before staging or publishing.
+      if ! remote_first_run_reconcile "$reconcile_callback"; then
         echo "::error::${reconcile_callback} failed; refusing to push"
         return 1
       fi

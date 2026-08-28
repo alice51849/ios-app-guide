@@ -19,6 +19,7 @@ permissions:
 concurrency:
   group: ios-app-guide-main-writer
   cancel-in-progress: false
+  queue: max
 
 jobs:
   generate:

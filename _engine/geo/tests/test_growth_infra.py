@@ -23996,6 +23996,14 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("group: ios-app-guide-main-writer", sov)
         self.assertIn("cancel-in-progress: false", workflow)
         self.assertIn("cancel-in-progress: false", sov)
+        self.assertIn("queue: max", workflow)
+        self.assertIn("queue: max", sov)
+        self.assertIn("ref: main", sov)
+        self.assertIn("fetch-depth: 0", sov)
+        self.assertIn(
+            "remote_first_publish reconcile_sov_phase origin main 5",
+            sov,
+        )
         self.assertNotIn("--refresh-slug", workflow)
         self.assertIn("aeo_answers.py --cached-live --limit 0", workflow)
         refresh_script = (

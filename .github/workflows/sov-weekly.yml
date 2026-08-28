@@ -11,12 +11,16 @@ permissions:
 concurrency:
   group: ios-app-guide-main-writer
   cancel-in-progress: false
+  queue: max
 
 jobs:
   measure:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -35,5 +39,12 @@ jobs:
             echo "No coverage changes."
           else
             git commit -m "Weekly zero-cost outreach coverage [skip deploy]"
-            git push
+            source .github/scripts/remote-first-publish.sh
+            reconcile_sov_phase() {
+              python3 _engine/geo/outreach_scorecard.py
+            }
+            export REMOTE_FIRST_RECONCILE_MESSAGE="Reconcile weekly outreach coverage after origin merge"
+            if ! remote_first_publish reconcile_sov_phase origin main 5; then
+              exit 1
+            fi
           fi

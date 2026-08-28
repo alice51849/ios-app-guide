@@ -1,5 +1,5 @@
 ---
-title: "Snapport Lite — Create ID photos at home | iOS App"
+title: "best free passport photo app for iphone that works offline"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/en-GB/index.html"
 modified: "2026-08-28"
@@ -9,17 +9,17 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# Snapport Lite — Create ID photos at home | iOS App
+# best free passport photo app for iphone that works offline
 
-Snapport Lite - Make passport, visa, and document photos with guided sizing, background tools, and print-ready export. Free version supports 1 export - One purchase · yours forever · no subscription - No ads, no tracking Templates - Passport, visa & ID photos — print-ready. - Snapport Lite works fully offline. Checking only downloads a public list of common sizes — no personal data is sent. Crop & Align - Align your face inside the guide. Requirements may vary, so review official rules before submitting. Background - Background removal may need review. Adjust - Keep your appearance natural for official documents. Export - Export a single photo or a print sheet. Privacy - Your photos stay on your iPhone. - No account - No cloud upload - Face detection runs on device to help align your photo. No biometric identity is stored. - You control export and sharing Photo requirements vary by country, agency, and application type. Please review the official requirements before submitting.
+A trustworthy free passport-photo app should let you complete a real photo — guided sizing, background, and a print-ready export — before asking for money, and it should do the work on your phone rather than a server — Snapport Lite is built for this.
 
 - Photo & utility
 - Free to start · one-time unlock
 - Offline
 - App Store · Free
 
-[Get Snapport Lite on the App Store](https://apps.apple.com/gb/app/id6792856304?pt=118326163&ct=iag_data_en_gb&mt=8)
+[Get Snapport Lite on the App Store →](https://apps.apple.com/gb/app/id6792856304?pt=118326163&ct=iag_data_en_gb&mt=8)
 
-[Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/snapportlite.html)
+[Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/answers/best-free-passport-photo-app-for-iphone-that-works-offline.html)
 
-> This is first-party material published by Lumi Studio, the developer of every listed app.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

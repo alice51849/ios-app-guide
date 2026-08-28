@@ -9,23 +9,23 @@ apps: 46
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/hu.json
 - Alkalmazáskatalógus · SVG: https://alice51849.github.io/ios-app-guide/hu/visuals/
-- Alkalmazáskatalógus · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- Alkalmazáskatalógus · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- Alkalmazáskatalógus · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
-- Alkalmazáskatalógus · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
-- Alkalmazáskatalógus · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
+- Alkalmazáskatalógus · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Alkalmazáskatalógus · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Alkalmazáskatalógus · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- Alkalmazáskatalógus · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- Alkalmazáskatalógus · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
 - Alkalmazáskatalógus · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- Alkalmazáskatalógus · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
-- Alkalmazáskatalógus · Agent Skill · hu: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/hu.json
-- Alkalmazáskatalógus · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
-- Alkalmazáskatalógus · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
-- Alkalmazáskatalógus · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
-- Alkalmazáskatalógus · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
-- Alkalmazáskatalógus · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
-- Alkalmazáskatalógus · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- Alkalmazáskatalógus · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- Alkalmazáskatalógus · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- Alkalmazáskatalógus · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- Alkalmazáskatalógus · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- Alkalmazáskatalógus · Agent Skill · hu: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/hu.json
+- Alkalmazáskatalógus · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- Alkalmazáskatalógus · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- Alkalmazáskatalógus · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- Alkalmazáskatalógus · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- Alkalmazáskatalógus · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- Alkalmazáskatalógus · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Alkalmazáskatalógus · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Alkalmazáskatalógus · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Alkalmazáskatalógus · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/hu/notesstudio100.html) — Kézírás, PDF-jelölés, tanulás
   - Privát, offline író- és tanulóműhely: 29 toll és ecset, 100 füzetstílus, dokumentumjelölés, oldalhoz kapcsolt hangfelvétel és ismétlőkártyák.

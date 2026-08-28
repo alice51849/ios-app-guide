@@ -37,6 +37,12 @@ from app_store_storefronts import (
     validated_app_store_url,
 )
 import gen_image_sitemap
+from google_images_canary_contract import (
+    DIGEST_SCHEMA,
+    canonical_value,
+    content_attestation,
+    design_digest,
+)
 from google_images_canary_spec import SPEC
 from publisher_intent_catalog import write_text_if_changed_atomic
 
@@ -90,6 +96,24 @@ def _digest_json(value: object) -> str:
             sort_keys=True,
             separators=(",", ":"),
         ).encode("utf-8")
+    )
+
+
+def _object_without_duplicate_keys(
+    pairs: list[tuple[str, Any]],
+) -> dict[str, Any]:
+    value: dict[str, Any] = {}
+    for key, item in pairs:
+        if key in value:
+            raise ValueError(f"Duplicate JSON key: {key}")
+        value[key] = item
+    return value
+
+
+def _json_loads_strict(payload: str) -> Any:
+    return json.loads(
+        payload,
+        object_pairs_hook=_object_without_duplicate_keys,
     )
 
 
@@ -237,7 +261,7 @@ def validate_spec(spec: dict[str, Any] = SPEC) -> dict[str, int]:
 def _catalog_records(pages: Path) -> list[dict[str, Any]]:
     path = pages / "apps.json"
     try:
-        value = json.loads(path.read_text(encoding="utf-8"))
+        value = _json_loads_strict(path.read_text(encoding="utf-8"))
     except (OSError, ValueError, json.JSONDecodeError) as error:
         raise ValueError(f"Cannot read verified live app catalog: {path}") from error
     if not isinstance(value, list):
@@ -676,6 +700,9 @@ def render_hub(
     treatment_records: list[dict[str, Any]],
     spec: dict[str, Any] = SPEC,
     site: str = SITE,
+    *,
+    assignment_digest: str,
+    content: dict[str, object],
 ) -> str:
     cards = "\n".join(
         (
@@ -697,7 +724,12 @@ def render_hub(
 <meta name="description" content="Real App Store screenshots paired with practical, verifiable iPhone task workflows across seven product categories.">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
 <meta name="iag-experiment-id" content="{html.escape(str(spec["experiment_id"]), quote=True)}">
-<meta name="iag-assignment-digest" content="{_digest_json(_expected_ledger_rows(spec, site))}">
+<meta name="iag-design-digest" content="{assignment_digest}">
+<meta name="iag-assignment-digest" content="{assignment_digest}">
+<meta name="iag-page-count" content="{content["page_count"]}">
+<meta name="iag-page-manifest-digest" content="{content["page_manifest_digest"]}">
+<meta name="iag-asset-count" content="{content["asset_count"]}">
+<meta name="iag-asset-manifest-digest" content="{content["asset_manifest_digest"]}">
 <link rel="canonical" href="{site}/{ROOT_RELATIVE.as_posix()}/">
 <style>{STYLE}
 ul{{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}}
@@ -731,6 +763,7 @@ def _render_url_sitemap(urls: Iterable[str]) -> str:
 def _ledger(
     built_records: list[dict[str, Any]],
     spec: dict[str, Any],
+    page_hashes: dict[str, str],
 ) -> dict[str, Any]:
     assignment_rows = [
         {
@@ -750,13 +783,20 @@ def _ledger(
             "source_type": record["asset"]["source_type"],
             "width": int(record["asset"]["width"]),
             "height": int(record["asset"]["height"]),
+            "page_sha256": page_hashes[str(record["creative_id"])],
         }
         for record in built_records
     ]
+    assignment_rows.sort(key=lambda row: str(row["creative_id"]))
+    content = content_attestation(assignment_rows)
+    immutable_digest = design_digest(spec, assignment_rows)
     return {
         "schema": EXPERIMENT_SCHEMA,
+        "digest_schema": DIGEST_SCHEMA,
         "experiment_id": spec["experiment_id"],
         "created_at": spec["created_at"],
+        "experiment_spec": canonical_value(spec),
+        "spec_digest": _digest_json(spec),
         "activation": {
             "status": "pending_deployment",
             "verified_live_at": None,
@@ -804,7 +844,9 @@ def _ledger(
         "holdout_urls": sum(
             record["arm"] == "holdout" for record in built_records
         ),
-        "assignment_digest": _digest_json(assignment_rows),
+        "design_digest": immutable_digest,
+        "assignment_digest": immutable_digest,
+        "content_attestation": content,
         "records": assignment_rows,
     }
 
@@ -812,6 +854,7 @@ def _ledger(
 def _expected_ledger_rows(
     spec: dict[str, Any],
     site: str,
+    page_hashes: dict[str, str] | None = None,
 ) -> list[dict[str, Any]]:
     apps = _apps(spec)
     rows = []
@@ -841,6 +884,11 @@ def _expected_ledger_rows(
                     "source_type": asset["source_type"],
                     "width": int(asset["width"]),
                     "height": int(asset["height"]),
+                    **(
+                        {"page_sha256": page_hashes[creative_id]}
+                        if page_hashes is not None
+                        else {}
+                    ),
                 }
             )
     return sorted(rows, key=lambda row: str(row["creative_id"]))
@@ -1035,11 +1083,19 @@ def audit_generated(
 
     ledger_path = ledger_path or (REPORTS / LEDGER_NAME)
     try:
-        ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
+        ledger = _json_loads_strict(
+            ledger_path.read_text(encoding="utf-8")
+        )
     except (OSError, ValueError, json.JSONDecodeError) as error:
         raise ValueError(f"Invalid canary ledger: {ledger_path}") from error
     if ledger.get("schema") != EXPERIMENT_SCHEMA:
         raise ValueError("Published canary ledger schema mismatch")
+    if ledger.get("digest_schema") != DIGEST_SCHEMA:
+        raise ValueError("Published canary digest schema mismatch")
+    if ledger.get("experiment_spec") != canonical_value(spec):
+        raise ValueError("Published canary experiment spec mismatch")
+    if ledger.get("spec_digest") != _digest_json(spec):
+        raise ValueError("Published canary spec digest mismatch")
     ledger_records = ledger.get("records")
     if not isinstance(ledger_records, list) or len(ledger_records) != 100:
         raise ValueError("Published canary ledger must contain 100 records")
@@ -1047,10 +1103,27 @@ def audit_generated(
         raise ValueError("Published canary ledger is not 50/50")
 
     expected_ledger_rows = _expected_ledger_rows(spec, site)
-    if ledger_records != expected_ledger_rows:
-        raise ValueError("Published canary ledger differs from the frozen design")
-    if ledger.get("assignment_digest") != _digest_json(expected_ledger_rows):
+    for actual, expected_row in zip(ledger_records, expected_ledger_rows):
+        if not isinstance(actual, dict):
+            raise ValueError("Published canary ledger record is not an object")
+        actual_without_page_hash = {
+            key: value for key, value in actual.items() if key != "page_sha256"
+        }
+        if actual_without_page_hash != expected_row:
+            raise ValueError(
+                "Published canary ledger differs from the frozen design"
+            )
+        if SHA256_RE.fullmatch(str(actual.get("page_sha256", ""))) is None:
+            raise ValueError("Published canary ledger page digest is invalid")
+    immutable_digest = design_digest(spec, ledger_records)
+    if (
+        ledger.get("design_digest") != immutable_digest
+        or ledger.get("assignment_digest") != immutable_digest
+    ):
         raise ValueError("Published canary assignment digest mismatch")
+    expected_content = content_attestation(ledger_records)
+    if ledger.get("content_attestation") != expected_content:
+        raise ValueError("Published canary content attestation mismatch")
     ledger_by_id = {
         str(record["creative_id"]): record for record in ledger_records
     }
@@ -1062,7 +1135,10 @@ def audit_generated(
     for creative_id, record in sorted(ledger_by_id.items()):
         _check_cancelled()
         page = pages / ROOT_RELATIVE / f"{creative_id}.html"
-        source = page.read_text(encoding="utf-8")
+        page_payload = page.read_bytes()
+        if _digest_bytes(page_payload) != record["page_sha256"]:
+            raise ValueError(f"{page} content digest mismatch")
+        source = page_payload.decode("utf-8")
         parser = _CanaryParser()
         parser.feed(source)
         if len(parser.images) != 1:
@@ -1162,6 +1238,29 @@ def audit_generated(
     hub = (pages / ROOT_RELATIVE / "index.html").read_text(encoding="utf-8")
     hub_parser = _CanaryParser()
     hub_parser.feed(hub)
+    hub_values: dict[str, list[str]] = {}
+    for meta in hub_parser.metas:
+        name = meta.get("name", "")
+        if name.startswith("iag-"):
+            hub_values.setdefault(name, []).append(meta.get("content", ""))
+    expected_hub_values = {
+        "iag-experiment-id": [str(spec["experiment_id"])],
+        "iag-design-digest": [immutable_digest],
+        "iag-assignment-digest": [immutable_digest],
+        "iag-page-count": [str(expected_content["page_count"])],
+        "iag-page-manifest-digest": [
+            str(expected_content["page_manifest_digest"])
+        ],
+        "iag-asset-count": [str(expected_content["asset_count"])],
+        "iag-asset-manifest-digest": [
+            str(expected_content["asset_manifest_digest"])
+        ],
+    }
+    if any(
+        hub_values.get(name) != value
+        for name, value in expected_hub_values.items()
+    ):
+        raise ValueError("Canary hub design attestation mismatch")
     hub_links = {
         anchor["href"]
         for anchor in hub_parser.anchors
@@ -1229,6 +1328,13 @@ def build(
         path = pages / str(record["page_relative"])
         expected_paths.add(path)
         outputs[path] = render_page(record, site)
+    page_hashes = {
+        str(record["creative_id"]): _digest_bytes(
+            outputs[pages / str(record["page_relative"])].encode("utf-8")
+        )
+        for record in built_records
+    }
+    ledger = _ledger(built_records, spec, page_hashes)
     treatment = [
         record for record in built_records if record["arm"] == "treatment"
     ]
@@ -1237,6 +1343,8 @@ def build(
         treatment,
         spec,
         site,
+        assignment_digest=str(ledger["assignment_digest"]),
+        content=ledger["content_attestation"],
     )
     outputs[pages / IMAGE_SITEMAP_RELATIVE] = gen_image_sitemap.render(
         [(record["page_url"], record["image_url"]) for record in built_records]
@@ -1244,7 +1352,6 @@ def build(
     outputs[pages / TREATMENT_SITEMAP_RELATIVE] = _render_url_sitemap(
         record["page_url"] for record in treatment
     )
-    ledger = _ledger(built_records, spec)
     outputs[reports / LEDGER_NAME] = (
         json.dumps(ledger, ensure_ascii=False, indent=2) + "\n"
     )

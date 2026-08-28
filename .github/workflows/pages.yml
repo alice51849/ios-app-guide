@@ -48,10 +48,25 @@ jobs:
           cp _engine/geo/notify_rsscloud.py "$RUNNER_TEMP/notify_rsscloud.py"
           cp _engine/geo/rsscloud_config.py "$RUNNER_TEMP/rsscloud_config.py"
           rm -rf _engine
+      - name: Test Pages artifact fail-closed parser
+        run: >-
+          python3 -m unittest discover
+          -s .github/scripts
+          -p "test_pages_artifact_gate.py"
+      - name: Fail closed on unsafe Pages source paths
+        run: >-
+          python3 .github/scripts/pages_artifact_gate.py tree
+          --site-root .
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
+      - name: Verify exact Pages artifact before deployment
+        run: >-
+          python3 .github/scripts/pages_artifact_gate.py artifact
+          --site-root .
+          --artifact "$RUNNER_TEMP/artifact.tar"
+          --max-upload-bytes 900000000
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

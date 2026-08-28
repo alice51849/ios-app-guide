@@ -18,6 +18,7 @@ sys.path.insert(0, str(GEO))
 import audit_link_depth  # noqa: E402
 import gen_link_hubs  # noqa: E402
 import google_images_canary as canary  # noqa: E402
+from google_images_canary_contract import design_digest  # noqa: E402
 from google_images_canary_spec import SPEC  # noqa: E402
 
 
@@ -91,6 +92,8 @@ class GoogleImagesCanaryTests(unittest.TestCase):
         )
         self.assertEqual(50, ledger["treatment_urls"])
         self.assertEqual(50, ledger["holdout_urls"])
+        self.assertEqual(100, ledger["content_attestation"]["page_count"])
+        self.assertEqual(38, ledger["content_attestation"]["asset_count"])
         self.assertIsNone(
             ledger["interpretation"]["unknown_or_pending_metrics"]
         )
@@ -108,6 +111,55 @@ class GoogleImagesCanaryTests(unittest.TestCase):
         )
         self.assertEqual(38, coverage["authentic_assets"])
         self.assertEqual(100, coverage["pages"])
+
+    def test_design_digest_binds_the_frozen_spec_and_deployed_content(self) -> None:
+        self.build()
+        ledger = json.loads(self.ledger.read_text(encoding="utf-8"))
+        original = ledger["design_digest"]
+        mutations = (
+            ("arm", None),
+            ("page_url", "https://example.test/drift.html"),
+            ("asset_id", "drift"),
+            ("source_sha256", "0" * 64),
+            ("page_sha256", "0" * 64),
+        )
+        for key, value in mutations:
+            records = copy.deepcopy(ledger["records"])
+            if key == "arm":
+                value = (
+                    "holdout"
+                    if records[0]["arm"] == "treatment"
+                    else "treatment"
+                )
+            records[0][key] = value
+            with self.subTest(key=key):
+                try:
+                    changed_digest = design_digest(
+                        ledger["experiment_spec"],
+                        records,
+                    )
+                except ValueError:
+                    continue
+                self.assertNotEqual(original, changed_digest)
+        spec = copy.deepcopy(ledger["experiment_spec"])
+        spec["assignment_salt"] = "drift"
+        self.assertNotEqual(original, design_digest(spec, ledger["records"]))
+
+        hub = (
+            self.pages / canary.ROOT_RELATIVE / "index.html"
+        ).read_text(encoding="utf-8")
+        for key in (
+            "page_count",
+            "page_manifest_digest",
+            "asset_count",
+            "asset_manifest_digest",
+        ):
+            name = "iag-" + key.replace("_", "-")
+            self.assertIn(
+                f'<meta name="{name}" '
+                f'content="{ledger["content_attestation"][key]}">',
+                hub,
+            )
 
     def test_pages_have_real_images_schema_and_aggregated_campaigns(self) -> None:
         self.build()
@@ -237,6 +289,10 @@ class GoogleImagesCanaryTests(unittest.TestCase):
                 SITE,
                 ledger_path=self.ledger,
             )
+
+    def test_duplicate_json_keys_fail_closed(self) -> None:
+        with self.assertRaisesRegex(ValueError, "Duplicate JSON key"):
+            canary._json_loads_strict('{"schema":"one","schema":"two"}')
 
     def test_spec_rejects_duplicate_task_value_and_incomplete_asset(self) -> None:
         invalid = copy.deepcopy(SPEC)

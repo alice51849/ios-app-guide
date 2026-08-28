@@ -38,6 +38,7 @@ from standard_site_attribution import (
     legacy_document_content_hash,
     legacy_text_content,
 )
+import standard_site_pending as pending_state
 
 
 STATE_VERSION = 1
@@ -61,12 +62,13 @@ READ_RETRY_ATTEMPTS = 4
 READ_RETRY_BASE_SECONDS = 1.0
 READ_RETRY_MAX_SECONDS = 8.0
 READ_RETRY_TOTAL_WAIT_SECONDS = 20.0
-ATTRIBUTION_REPAIR_REASON = "remote_attribution_removed"
-ATTRIBUTION_REPAIR_FIELDS = (
-    "repair_reason",
-    "repair_detected_at",
-    "repair_after_day",
+ATTRIBUTION_REPAIR_REASON = pending_state.ATTRIBUTION_REPAIR_REASON
+ATTRIBUTION_REPAIR_FIELDS = pending_state.ATTRIBUTION_REPAIR_FIELDS
+ATTRIBUTION_REPAIR_BACKLOG_FIELD = (
+    pending_state.ATTRIBUTION_REPAIR_BACKLOG_FIELD
 )
+ORDINARY_REPUBLISH_REASON = pending_state.ORDINARY_REPUBLISH_REASON
+ORDINARY_REPUBLISH_FIELDS = pending_state.ORDINARY_REPUBLISH_FIELDS
 
 
 class ConfigurationError(RuntimeError):
@@ -260,26 +262,12 @@ def validate_state(state: Mapping[str, object]) -> None:
             raise StateError(f"Document state contains an invalid TID: {canonical}")
         if entry.get("published_at"):
             parse_timestamp(entry["published_at"])
-        repair_values = [entry.get(field) for field in ATTRIBUTION_REPAIR_FIELDS]
-        if any(value is not None for value in repair_values):
-            if (
-                any(value is None for value in repair_values)
-                or entry.get("published") is True
-                or entry.get("repair_reason") != ATTRIBUTION_REPAIR_REASON
-                or not re.fullmatch(
-                    r"[0-9a-f]{64}", str(entry.get("published_hash") or "")
-                )
-            ):
-                raise StateError(
-                    f"Invalid pending attribution repair: {canonical}"
-                )
-            parse_timestamp(entry["repair_detected_at"])
-            try:
-                date.fromisoformat(str(entry["repair_after_day"]))
-            except ValueError as error:
-                raise StateError(
-                    f"Invalid attribution repair day: {canonical}"
-                ) from error
+        try:
+            pending_state.validate_pending_entry(
+                entry, label=canonical
+            )
+        except pending_state.PendingStateError as error:
+            raise StateError(str(error)) from error
     for day_value, entry in state["daily"].items():
         try:
             date.fromisoformat(str(day_value))
@@ -415,9 +403,51 @@ def _pending(
 def _repair_deferred(entry: Mapping[str, object], day: str) -> bool:
     repair_after_day = entry.get("repair_after_day")
     return (
-        repair_after_day is not None
+        entry.get("repair_reason") == ATTRIBUTION_REPAIR_REASON
+        and repair_after_day is not None
         and day <= str(repair_after_day)
     )
+
+
+def _pending_priority(
+    entry: Mapping[str, object], canonical_url: str
+) -> tuple[str, str]:
+    detected_at = pending_state.pending_detected_at(entry)
+    return (
+        str(detected_at or entry.get("published_at") or ""),
+        canonical_url,
+    )
+
+
+def _finalize_pending_backlogs(
+    state: MutableMapping[str, object],
+    manifest: Mapping[str, object],
+    *,
+    limit: int,
+) -> None:
+    pending_entries = []
+    for document in manifest["documents"]:
+        entry = state["documents"][document["canonical_url"]]
+        if (
+            entry.get("published") is not True
+            and pending_state.pending_kind(entry) is not None
+        ):
+            pending_entries.append(entry)
+    backlog_days = pending_state.backlog_drain_days(
+        pending_entries, limit
+    )
+    for entry in pending_entries:
+        kind = pending_state.pending_kind(entry)
+        if (
+            kind == "attribution_repair"
+            and entry.get(ATTRIBUTION_REPAIR_BACKLOG_FIELD) is None
+        ):
+            entry[ATTRIBUTION_REPAIR_BACKLOG_FIELD] = backlog_days
+        elif (
+            kind == "ordinary_republish"
+            and entry.get("republish_backlog_days") is None
+        ):
+            entry["republish_backlog_days"] = backlog_days
 
 
 def reserve_daily_batch(
@@ -470,7 +500,10 @@ def reserve_daily_batch(
         for app_key in app_keys:
             candidates = sorted(
                 pending[app_key],
-                key=lambda value: str(value["canonical_url"]),
+                key=lambda value: _pending_priority(
+                    state["documents"][value["canonical_url"]],
+                    str(value["canonical_url"]),
+                ),
             )
             selected.append(candidates[0])
             if len(selected) >= limit:
@@ -483,11 +516,21 @@ def reserve_daily_batch(
     for document in selected:
         entry = state["documents"][document["canonical_url"]]
         entry.setdefault("published_at", now)
+        if (
+            entry.get("published") is not True
+            and pending_state.pending_kind(entry) is None
+        ):
+            _mark_ordinary_republish_pending(
+                entry,
+                detected_at=now,
+                republish_after_day=day,
+            )
 
     cutoff = current_day - timedelta(days=90)
     for old_day in list(daily):
         if date.fromisoformat(old_day) < cutoff:
             del daily[old_day]
+    _finalize_pending_backlogs(state, manifest, limit=limit)
     validate_state(state)
     return selected
 
@@ -843,8 +886,34 @@ def _clear_document_confirmation(entry: MutableMapping[str, object]) -> None:
         "last_verified_at",
         "updated_at",
         *ATTRIBUTION_REPAIR_FIELDS,
+        ATTRIBUTION_REPAIR_BACKLOG_FIELD,
+        *ORDINARY_REPUBLISH_FIELDS,
     ):
         entry.pop(key, None)
+
+
+def _mark_ordinary_republish_pending(
+    entry: MutableMapping[str, object],
+    *,
+    detected_at: str,
+    republish_after_day: str,
+) -> None:
+    existing = {
+        field: entry.get(field)
+        for field in ORDINARY_REPUBLISH_FIELDS
+    }
+    _clear_document_confirmation(entry)
+    entry["republish_reason"] = ORDINARY_REPUBLISH_REASON
+    entry["republish_detected_at"] = (
+        existing["republish_detected_at"] or detected_at
+    )
+    entry["republish_after_day"] = (
+        existing["republish_after_day"] or republish_after_day
+    )
+    if existing["republish_backlog_days"] is not None:
+        entry["republish_backlog_days"] = existing[
+            "republish_backlog_days"
+        ]
 
 
 def _mark_attribution_repair_pending(
@@ -856,11 +925,16 @@ def _mark_attribution_repair_pending(
 ) -> None:
     existing_detected_at = entry.get("repair_detected_at")
     existing_after_day = entry.get("repair_after_day")
+    existing_backlog_days = entry.get(
+        ATTRIBUTION_REPAIR_BACKLOG_FIELD
+    )
     _clear_document_confirmation(entry)
     entry["published_hash"] = document["content_hash"]
     entry["repair_reason"] = ATTRIBUTION_REPAIR_REASON
     entry["repair_detected_at"] = existing_detected_at or detected_at
     entry["repair_after_day"] = existing_after_day or repair_after_day
+    if existing_backlog_days is not None:
+        entry[ATTRIBUTION_REPAIR_BACKLOG_FIELD] = existing_backlog_days
 
 
 def _remote_document_canonical(
@@ -895,6 +969,7 @@ def reconcile_remote_state(
     did: str,
     verified_at: str,
     repair_after_day: str,
+    daily_limit: int = DEFAULT_DAILY_LIMIT,
 ) -> None:
     """Recover stable identities and invalidate stale local confirmations."""
     validate_state(state)
@@ -983,7 +1058,15 @@ def reconcile_remote_state(
                         f"Durable document rkey is occupied by another record: "
                         f"{canonical}"
                     )
-            _clear_document_confirmation(entry)
+            kind = pending_state.pending_kind(entry)
+            if kind is None and entry.get("published_at"):
+                _mark_ordinary_republish_pending(
+                    entry,
+                    detected_at=verified_at,
+                    republish_after_day=repair_after_day,
+                )
+            elif kind is None:
+                _clear_document_confirmation(entry)
             continue
 
         remote_rkey, remote = active
@@ -1032,7 +1115,14 @@ def reconcile_remote_state(
                     f"durable migration evidence: {canonical}"
                 )
         else:
-            _clear_document_confirmation(entry)
+            _mark_ordinary_republish_pending(
+                entry,
+                detected_at=verified_at,
+                republish_after_day=repair_after_day,
+            )
+    _finalize_pending_backlogs(
+        state, manifest, limit=daily_limit
+    )
     validate_state(state)
 
 
@@ -1286,7 +1376,11 @@ def _mark_document(
     )
     if record.get("updatedAt"):
         entry["updated_at"] = record["updatedAt"]
-    for field in ATTRIBUTION_REPAIR_FIELDS:
+    for field in (
+        *ATTRIBUTION_REPAIR_FIELDS,
+        ATTRIBUTION_REPAIR_BACKLOG_FIELD,
+        *ORDINARY_REPUBLISH_FIELDS,
+    ):
         entry.pop(field, None)
 
 
@@ -1405,6 +1499,7 @@ def run(
             did=did,
             verified_at=timestamp,
             repair_after_day=day,
+            daily_limit=limit,
         )
         working, selected, plan = _prepare_plan(
             recovered,
@@ -1477,6 +1572,7 @@ def run(
             did=did,
             verified_at=timestamp,
             repair_after_day=day,
+            daily_limit=limit,
         )
         atomic_write_json(state_path, working)
         contract, body = build_guide_contract(

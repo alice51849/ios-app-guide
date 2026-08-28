@@ -609,6 +609,8 @@ class StandardSiteSelectionTests(unittest.TestCase):
             entry = state["documents"][document["canonical_url"]]
             entry["published"] = True
             entry["published_hash"] = document["content_hash"]
+            for field in publisher.ORDINARY_REPUBLISH_FIELDS:
+                entry.pop(field, None)
         second = publisher.reserve_daily_batch(
             state,
             manifest,
@@ -973,6 +975,249 @@ class StandardSitePublisherTests(ProjectScratchCase):
             attribution.direct_app_store_urls(
                 client.records[key]["value"]["textContent"]
             )[0].query,
+        )
+
+    def test_four_stripped_documents_drain_two_per_day(self) -> None:
+        state_path, contract_path, well_known_path = self.paths()
+        client = FakeRepoClient(self.DID)
+        manifest = fixture_manifest(
+            {"alpha": 1, "beta": 1, "gamma": 1, "delta": 1}
+        )
+        day_28 = datetime(2026, 7, 28, 14, tzinfo=timezone.utc)
+        for offset in (0, 1):
+            publisher.run(
+                manifest,
+                state_path=state_path,
+                contract_path=contract_path,
+                well_known_path=well_known_path,
+                limit=2,
+                publish=True,
+                environment=self.ENV,
+                client_factory=lambda _handle, _password: client,
+                expected_did=self.DID,
+                tid_generator=self.deterministic_tids(),
+                now=day_28 + timedelta(days=offset),
+            )
+
+        state = json.loads(state_path.read_text(encoding="utf-8"))
+        for document in manifest["documents"]:
+            entry = state["documents"][document["canonical_url"]]
+            key = (publisher.DOCUMENT_COLLECTION, entry["rkey"])
+            client.records[key]["value"]["textContent"] = (
+                attribution.legacy_text_content(
+                    document["text_content"],
+                    app_id=document["app_store_id"],
+                    mode=document["legacy_app_store_link"],
+                )
+            )
+        document_puts_before = len(
+            [
+                item
+                for item in client.puts
+                if item[0] == publisher.DOCUMENT_COLLECTION
+            ]
+        )
+
+        deferred = publisher.run(
+            manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=2,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=day_28 + timedelta(days=1, hours=1),
+        )
+        pending = json.loads(state_path.read_text(encoding="utf-8"))
+        pending_audit = publisher.pending_state.audit_pending_documents(
+            pending,
+            manifest,
+            now=day_28 + timedelta(days=1, hours=1),
+            daily_limit=2,
+        )
+
+        self.assertEqual([], deferred["selected_urls"])
+        self.assertEqual(
+            4, pending_audit["counts"]["attribution_repair_deferred"]
+        )
+        self.assertEqual(
+            {2},
+            {
+                entry[publisher.ATTRIBUTION_REPAIR_BACKLOG_FIELD]
+                for entry in pending["documents"].values()
+            },
+        )
+        self.assertEqual(
+            document_puts_before,
+            len(
+                [
+                    item
+                    for item in client.puts
+                    if item[0] == publisher.DOCUMENT_COLLECTION
+                ]
+            ),
+        )
+
+        first_drain = publisher.run(
+            manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=2,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=day_28 + timedelta(days=2),
+        )
+        half_drained = json.loads(state_path.read_text(encoding="utf-8"))
+        half_audit = publisher.pending_state.audit_pending_documents(
+            half_drained,
+            manifest,
+            now=day_28 + timedelta(days=2),
+            daily_limit=2,
+        )
+        second_drain = publisher.run(
+            manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=2,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=day_28 + timedelta(days=3),
+        )
+        final_state = json.loads(state_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(2, len(first_drain["selected_urls"]))
+        self.assertEqual(2, half_audit["counts"]["attribution_repair_pending"])
+        self.assertEqual(2, len(second_drain["selected_urls"]))
+        self.assertTrue(
+            all(
+                entry["published"] is True
+                for entry in final_state["documents"].values()
+            )
+        )
+        self.assertTrue(
+            all(
+                publisher.pending_state.pending_kind(entry) is None
+                for entry in final_state["documents"].values()
+            )
+        )
+        self.assertEqual(
+            document_puts_before + 4,
+            len(
+                [
+                    item
+                    for item in client.puts
+                    if item[0] == publisher.DOCUMENT_COLLECTION
+                ]
+            ),
+        )
+
+    def test_four_ordinary_republishes_drain_two_per_day(self) -> None:
+        state_path, contract_path, well_known_path = self.paths()
+        client = FakeRepoClient(self.DID)
+        manifest = fixture_manifest(
+            {"alpha": 1, "beta": 1, "gamma": 1, "delta": 1}
+        )
+        day_28 = datetime(2026, 7, 28, 14, tzinfo=timezone.utc)
+        for offset in (0, 1):
+            publisher.run(
+                manifest,
+                state_path=state_path,
+                contract_path=contract_path,
+                well_known_path=well_known_path,
+                limit=2,
+                publish=True,
+                environment=self.ENV,
+                client_factory=lambda _handle, _password: client,
+                expected_did=self.DID,
+                tid_generator=self.deterministic_tids(),
+                now=day_28 + timedelta(days=offset),
+            )
+        updated = deepcopy(manifest)
+        for document in updated["documents"]:
+            document["description"] += " Updated."
+            document["content_hash"] = generator.document_content_hash(
+                document
+            )
+        document_puts_before = len(
+            [
+                item
+                for item in client.puts
+                if item[0] == publisher.DOCUMENT_COLLECTION
+            ]
+        )
+
+        first_drain = publisher.run(
+            updated,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=2,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=day_28 + timedelta(days=2),
+        )
+        half_drained = json.loads(state_path.read_text(encoding="utf-8"))
+        half_audit = publisher.pending_state.audit_pending_documents(
+            half_drained,
+            updated,
+            now=day_28 + timedelta(days=2),
+            daily_limit=2,
+        )
+        second_drain = publisher.run(
+            updated,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=2,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=day_28 + timedelta(days=3),
+        )
+        final_state = json.loads(state_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(2, len(first_drain["selected_urls"]))
+        self.assertEqual(2, half_audit["counts"]["ordinary_republish"])
+        self.assertEqual(
+            {2},
+            {
+                entry["republish_backlog_days"]
+                for entry in half_drained["documents"].values()
+                if entry.get("published") is not True
+            },
+        )
+        self.assertEqual(2, len(second_drain["selected_urls"]))
+        self.assertTrue(
+            all(
+                entry["published"] is True
+                for entry in final_state["documents"].values()
+            )
+        )
+        self.assertEqual(
+            document_puts_before + 4,
+            len(
+                [
+                    item
+                    for item in client.puts
+                    if item[0] == publisher.DOCUMENT_COLLECTION
+                ]
+            ),
         )
 
     def test_remote_legacy_without_matching_state_hash_fails_closed(self) -> None:

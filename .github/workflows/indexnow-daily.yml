@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: "47 4 * * *"    # 每天 2 次通知 Bing/Yandex/Naver 重抓(離峰,全天保持新鮮)
     - cron: "47 16 * * *"
+    - cron: "17 5 1 * *"    # 每月公平重送完整長尾 locale inventory
   workflow_run:
     workflows: ["Deploy static site to Pages"]  # 只通知已部署且通過 CDN 驗證的 tree
     types: [completed]
@@ -21,6 +22,7 @@ permissions:
 concurrency:
   group: indexnow
   cancel-in-progress: false
+  queue: max
 
 jobs:
   ping:
@@ -69,7 +71,8 @@ jobs:
             | grep -E '/[a-f0-9]{32}\.txt$' | head -1)"
           test -n "$keyfile"
           mode=(--git-since "25 hours ago")
-          if [[ "${{ inputs.full_refresh || false }}" == "true" ]]; then
+          if [[ "${{ github.event.schedule }}" == "17 5 1 * *" \
+            || "${{ inputs.full_refresh || false }}" == "true" ]]; then
             mode=()
           fi
           python3 _engine/geo/indexnow_submit.py \

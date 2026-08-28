@@ -451,6 +451,12 @@ class IndexNowTests(unittest.TestCase):
         self.assertIn("actions/cache/restore@v4", workflow)
         self.assertIn("actions/cache/save@v4", workflow)
         self.assertIn('--state-file "$state_file"', workflow)
+        self.assertIn("queue: max", workflow)
+        self.assertIn('- cron: "17 5 1 * *"', workflow)
+        self.assertIn(
+            '"${{ github.event.schedule }}" == "17 5 1 * *"',
+            workflow,
+        )
         self.assertIn("Write immutable deployment manifest", pages_workflow)
         self.assertIn("Verify exact deployment is live", pages_workflow)
         self.assertIn("steps.verify_live.outcome == 'success'", pages_workflow)

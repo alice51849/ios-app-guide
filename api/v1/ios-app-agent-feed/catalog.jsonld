@@ -243,8 +243,8 @@
       "position": 4,
       "item": {
         "@type": "MobileApplication",
-        "name": "BattAI: Battery health score",
-        "description": "BattAI: Battery health score — BattAI • BattAI uses five values from public iOS APIs: battery level, charge state, Low Power Mode, whole-device thermal state, and time. Other results are calculated from those readings or added by you. Each detail shows its source and limits. • BattAI has no account, telemetry, ads, or network requests. Data stays on this device, except for a minimal feature-limited snapshot sent directly to your paired Apple Watch. Sampling is limited, analysis runs at most every five minutes, estimates use ranges, and missing data stays missing.",
+        "name": "BattAI",
+        "description": "A battery score is only useful when the app separates what iOS measured, what it estimated and what you entered yourself — BattAI is built for this.",
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "iOS",
         "url": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=iag_data_en_us&mt=8",
@@ -618,8 +618,8 @@
       "position": 9,
       "item": {
         "@type": "MobileApplication",
-        "name": "DailyMate Lite: Speak Today",
-        "description": "DailyMate Lite: Speak Today — Be ready when it is your turn to speak. DailyMate Lite turns everyday situations into short cue-and-reply practice in 50 languages. Start free with the",
+        "name": "DailyMate Lite",
+        "description": "DailyMate Lite — Be ready when it is your turn to speak. Free to start · One-time unlock · No subscription.",
         "applicationCategory": "EducationApplication",
         "operatingSystem": "iOS",
         "url": "https://apps.apple.com/us/app/id6794725568?pt=118326163&ct=iag_data_en_us&mt=8",
@@ -769,7 +769,7 @@
       "item": {
         "@type": "MobileApplication",
         "name": "G+Money Lite",
-        "description": "G+Money Lite — Smart travel currency & expense tracker",
+        "description": "For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before deciding whether unlimited trips are worth a one-time unlock — G+Money Lite is built for this.",
         "applicationCategory": "FinanceApplication",
         "operatingSystem": "iOS",
         "url": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=iag_data_en_us&mt=8",
@@ -1887,8 +1887,8 @@
       "position": 26,
       "item": {
         "@type": "MobileApplication",
-        "name": "Mochi DoneStamp: Last Time",
-        "description": "Mochi DoneStamp: Last Time — When did you last change the sheets, water a plant, call family, back up photos, or replace a filter?",
+        "name": "Mochi DoneStamp",
+        "description": "For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment — Mochi DoneStamp is built for this.",
         "applicationCategory": "LifestyleApplication",
         "operatingSystem": "iOS",
         "url": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=iag_data_en_us&mt=8",
@@ -1963,7 +1963,7 @@
       "item": {
         "@type": "MobileApplication",
         "name": "MoneyTag: Income & Expense",
-        "description": "MoneyTag: Income & Expense — Income & Expense Every project keeps its own books: income minus expenses is its net result. Here are the questions people ask most. If yours is not answered, write to us — a real person reads every message.",
+        "description": "A monthly budget cannot tell a freelancer whether one client project actually made money — each project needs its own income, expenses and net result — MoneyTag: Income & Expense is built for this.",
         "applicationCategory": "FinanceApplication",
         "operatingSystem": "iOS",
         "url": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=iag_data_en_us&mt=8",
@@ -3386,8 +3386,8 @@
       "position": 46,
       "item": {
         "@type": "MobileApplication",
-        "name": "Wordmate Lite: Vocabulary",
-        "description": "Wordmate Lite: Vocabulary — Five words. One minute. A trail you can actually see.",
+        "name": "Wordmate Lite",
+        "description": "Wordmate Lite — Five words. Free to start · One-time unlock · No subscription.",
         "applicationCategory": "EducationApplication",
         "operatingSystem": "iOS",
         "url": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=iag_data_en_us&mt=8",

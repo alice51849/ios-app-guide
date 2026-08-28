@@ -1,5 +1,5 @@
 ---
-title: "Mochi DoneStamp: Last Time — Remember when you did it | iOS App"
+title: "best last time tracker app for household maintenance without a subscription"
 lang: "en-US"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/en-US/index.html"
 modified: "2026-08-28"
@@ -9,17 +9,17 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# Mochi DoneStamp: Last Time — Remember when you did it | iOS App
+# best last time tracker app for household maintenance without a subscription
 
-When did you last change the sheets, water a plant, call family, back up photos, or replace a filter? Mochi DoneStamp is a life-event memory, not another to-do list. Finish something, tap once, and the exact time becomes part of a calm history. Add an approximate or exact rhythm when useful; the next due time always restarts from when you actually finished. • One-tap logging with Undo • Backdate, edit, or delete any occurrence • Flexible and exact rhythms from minutes to years • Local reminders with Done and Snooze actions • Interactive Home and Lock Screen widgets • Siri and Shortcuts • Optional notes and compressed photos • Interval insights, complete backup, and JSON export • Light and Dark Mode, iPad, VoiceOver, RTL, and Dynamic Type Start free with one active event and unlimited history. Unlock Lifetime Pro once for unlimited events and the complete feature set. No account. No ads. No analytics. No tracking. Your core data stays on your device. No subscription—ever.
+For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment — Mochi DoneStamp is built for this.
 
 - Lifestyle
 - Free to start · one-time unlock
 - App Store · Free
 - ★ 5.0/5 · 1
 
-[Get Mochi DoneStamp: Last Time on the App Store](https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=iag_data_en_us&mt=8)
+[Get Mochi DoneStamp on the App Store →](https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=iag_data_en_us&mt=8)
 
-[Read the full guide](https://alice51849.github.io/ios-app-guide/en-US/mochidonestamp.html)
+[Read the full guide](https://alice51849.github.io/ios-app-guide/en-US/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html)
 
-> This is first-party material published by Lumi Studio, the developer of every listed app.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

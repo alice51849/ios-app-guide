@@ -1,5 +1,5 @@
 ---
-title: "G+Money Lite — Travel Expenses & Currency | iOS App"
+title: "best free travel expense tracker with currency conversion for iphone"
 lang: "en-AU"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/en-AU/index.html"
 modified: "2026-08-28"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# G+Money Lite — Travel Expenses & Currency | iOS App
+# best free travel expense tracker with currency conversion for iphone
 
-G+Money Lite — Smart travel currency & expense tracker Travel money, made simple Log each purchase in the local currency and see it instantly in your home currency — online or off. Convert • Live or manual rates: We can fetch the latest rates automatically, or you can set them yourself. It always works offline. • Fetch the latest rates when you open the app (about every 6 hours). Always works offline with your saved rates. • Mid-market reference rate. Cards and cash may differ. Spending • Daily limit: Optional. See how each day tracks against it. • By category · Trips · Filters · Records • Backup & restore: Includes expenses, rates, categories and settings. • Widget · Apple Watch Everything stays on your device. No account, no tracking. Rates use a public exchange-rate service. Free: rates, budget, summary · 1 trip · 3 expenses One payment · Lifetime access · No subscription Unlock unlimited expenses and trips forever.
+For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before deciding whether unlimited trips are worth a one-time unlock — G+Money Lite is built for this.
 
 - Money & travel
 - Free to start · one-time unlock
@@ -23,8 +23,8 @@ G+Money Lite — Smart travel currency & expense tracker Travel money, made simp
 - Apple Watch
 - App Store · Free
 
-[Get G+Money Lite on the App Store](https://apps.apple.com/au/app/id6793436548?pt=118326163&ct=iag_data_en_au&mt=8)
+[Get G+Money Lite on the App Store →](https://apps.apple.com/au/app/id6793436548?pt=118326163&ct=iag_data_en_au&mt=8)
 
-[Read the full guide](https://alice51849.github.io/ios-app-guide/en-AU/gmoneylite.html)
+[Read the full guide](https://alice51849.github.io/ios-app-guide/en-AU/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html)
 
-> This is first-party material published by Lumi Studio, the developer of every listed app.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

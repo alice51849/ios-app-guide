@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+import argparse
+from datetime import date, datetime, timezone
 import hashlib
 import json
 import os
@@ -34,6 +36,7 @@ SITEMAP_NAME = "sitemap_app_offers.xml"
 SCHEMA_URL = "https://schema.org/OfferCatalog"
 INITIAL_DATE = "2026-07-20"
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+DIGEST_PLACEHOLDER = f"sha256:{'0' * 64}"
 
 
 def catalog_relative(locale: str) -> Path:
@@ -50,15 +53,84 @@ def index_url() -> str:
     return f"{SITE}/{INDEX_RELATIVE.as_posix()}"
 
 
-def _snapshot_date(pages: Path) -> str:
-    payload = json.loads(
-        (pages / ".appstore_storefront_state.json").read_text(encoding="utf-8")
-    )
-    checked_at = payload.get("checked_at")
-    value = checked_at[:10] if isinstance(checked_at, str) else ""
-    if DATE_RE.fullmatch(value) is None:
-        raise ValueError("App Store snapshot must have a valid checked_at date")
+def _valid_date(value: object) -> bool:
+    if not isinstance(value, str) or DATE_RE.fullmatch(value) is None:
+        return False
+    try:
+        date.fromisoformat(value)
+    except ValueError:
+        return False
+    return True
+
+
+def _build_date(today: str | None) -> str:
+    value = today or datetime.now(timezone.utc).date().isoformat()
+    if not _valid_date(value):
+        raise ValueError(f"Invalid build date: {value}")
     return max(INITIAL_DATE, value)
+
+
+def _output_digest(
+    index: dict[str, Any],
+    catalogs: dict[str, dict[str, Any]],
+) -> str:
+    normalized_index = dict(index)
+    normalized_index["date_modified"] = INITIAL_DATE
+    normalized_index["content_digest"] = DIGEST_PLACEHOLDER
+    rendered = [
+        (
+            INDEX_RELATIVE.as_posix(),
+            json.dumps(
+                normalized_index,
+                ensure_ascii=False,
+                indent=2,
+            )
+            + "\n",
+        ),
+        (SITEMAP_NAME, sitemap_text(INITIAL_DATE)),
+    ]
+    for locale, payload in catalogs.items():
+        normalized = dict(payload)
+        normalized["dateModified"] = INITIAL_DATE
+        rendered.append(
+            (
+                catalog_relative(locale).as_posix(),
+                json.dumps(normalized, ensure_ascii=False, indent=2) + "\n",
+            )
+        )
+    digest = hashlib.sha256()
+    for relative, content in sorted(rendered):
+        digest.update(relative.encode("utf-8"))
+        digest.update(b"\0")
+        digest.update(content.encode("utf-8"))
+        digest.update(b"\0")
+    return digest.hexdigest()
+
+
+def _stable_modified(
+    pages: Path,
+    content_digest: str,
+    today: str,
+) -> str:
+    try:
+        previous = json.loads(
+            (pages / INDEX_RELATIVE).read_text(encoding="utf-8")
+        )
+    except (OSError, ValueError, TypeError, json.JSONDecodeError):
+        return today
+    value = previous.get("date_modified")
+    if _valid_date(value) and value > today:
+        raise ValueError(
+            "Published offer catalog date is newer than the build date: "
+            f"{value} > {today}"
+        )
+    if (
+        previous.get("content_digest") == f"sha256:{content_digest}"
+        and _valid_date(value)
+        and INITIAL_DATE <= value <= today
+    ):
+        return value
+    return today
 
 
 def offer_item(
@@ -192,11 +264,12 @@ def catalog_payload(
 
 def build_payloads(
     pages: Path = PAGES,
+    today: str | None = None,
 ) -> tuple[dict[str, Any], dict[str, dict[str, Any]]]:
+    build_date = _build_date(today)
     records, apps = publisher_intent_catalog.build_records(pages)
     details = load_storefront_details(pages)
     i18n = publisher_intent_catalog.load_ui_i18n()
-    modified = _snapshot_date(pages)
     by_locale = {locale: [] for locale in OFFICIAL_LOCALES}
     for record in records:
         by_locale[str(record["locale"])].append(record)
@@ -212,7 +285,7 @@ def build_payloads(
             apps,
             details,
             localized_ui,
-            modified,
+            INITIAL_DATE,
         )
         catalogs[locale] = catalog
         total_verified_prices += verified_prices
@@ -225,14 +298,6 @@ def build_payloads(
             }
         )
 
-    digest = hashlib.sha256(
-        json.dumps(
-            catalogs,
-            ensure_ascii=False,
-            sort_keys=True,
-            separators=(",", ":"),
-        ).encode("utf-8")
-    ).hexdigest()
     index = {
         "schema_version": 1,
         "conforms_to": SCHEMA_URL,
@@ -246,8 +311,8 @@ def build_payloads(
             "name": "Lumi Studio",
             "url": f"{SITE}/about.html",
         },
-        "date_modified": modified,
-        "content_digest": f"sha256:{digest}",
+        "date_modified": INITIAL_DATE,
+        "content_digest": DIGEST_PLACEHOLDER,
         "locale_count": len(catalogs),
         "app_count": len(apps),
         "offer_count": sum(
@@ -256,6 +321,12 @@ def build_payloads(
         "price_verified_offer_count": total_verified_prices,
         "locales": locale_entries,
     }
+    digest = _output_digest(index, catalogs)
+    modified = _stable_modified(pages, digest, build_date)
+    index["date_modified"] = modified
+    index["content_digest"] = f"sha256:{digest}"
+    for payload in catalogs.values():
+        payload["dateModified"] = modified
     return index, catalogs
 
 
@@ -276,8 +347,11 @@ def sitemap_text(modified: str) -> str:
     )
 
 
-def build(pages: Path = PAGES) -> dict[str, int]:
-    index, catalogs = build_payloads(pages)
+def build(
+    pages: Path = PAGES,
+    today: str | None = None,
+) -> dict[str, int]:
+    index, catalogs = build_payloads(pages, today)
     changed = int(
         publisher_intent_catalog.write_text_if_changed(
             pages / INDEX_RELATIVE,
@@ -307,7 +381,11 @@ def build(pages: Path = PAGES) -> dict[str, int]:
 
 
 def main() -> None:
-    stats = build()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--pages", type=Path, default=PAGES)
+    parser.add_argument("--today", help="Stable UTC build date.")
+    args = parser.parse_args()
+    stats = build(args.pages.resolve(), args.today)
     print(
         "APP_OFFER_CATALOG "
         + " ".join(f"{key}={value}" for key, value in stats.items())

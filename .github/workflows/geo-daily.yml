@@ -76,8 +76,10 @@ jobs:
           fi
           test -s apps.json
           cp apps.json "$inventory"
+          build_date="$(date -u +%F)"
           echo "SITEMAP_LASTMOD_INTERMEDIATE_STATE=$state" >> "$GITHUB_ENV"
           echo "GEO_PUBLIC_INVENTORY_BASELINE=$inventory" >> "$GITHUB_ENV"
+          echo "GEO_BUILD_DATE=$build_date" >> "$GITHUB_ENV"
       - name: Refresh verified App Store availability once
         run: |
           cd _engine/geo
@@ -112,14 +114,14 @@ jobs:
           python3 portfolio_app_finder.py
           # The buyer-intent catalog requires exact Finder/persona coverage,
           # so every Finder-dependent surface must follow the rebuild above.
-          python3 publisher_intent_catalog.py
+          python3 publisher_intent_catalog.py --today "$GEO_BUILD_DATE"
           # Decision-route oEmbed records fail closed unless every localized
           # buyer-intent visual already exists.
-          python3 publisher_intent_visuals.py
+          python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
           python3 app_install_decision_routes.py
           python3 gen_github_discovery_readmes.py
-          python3 portfolio_offer_catalog.py
-          python3 app_video_lessons.py
+          python3 portfolio_offer_catalog.py --today "$GEO_BUILD_DATE"
+          python3 app_video_lessons.py --today "$GEO_BUILD_DATE"
           python3 gen_social_previews.py --oembed-only
           python3 normalize_app_store_links.py
           python3 gen_app_decision_cards.py
@@ -159,6 +161,7 @@ jobs:
           python3 audit_link_depth.py --max-indexable-orphans 0
           cd "$GITHUB_WORKSPACE"
           python3 _engine/geo/gen_sitemap_lastmod.py \
+            --today "$GEO_BUILD_DATE" \
             --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
       - name: Verify zero-cost growth infrastructure
         run: |
@@ -265,10 +268,10 @@ jobs:
           python3 gen_mobile_app_identity.py
           python3 gen_webmcp_install_tools.py
           python3 portfolio_app_catalog_api.py
-          python3 publisher_intent_catalog.py
-          python3 portfolio_offer_catalog.py
-          python3 publisher_intent_visuals.py
-          python3 app_video_lessons.py
+          python3 publisher_intent_catalog.py --today "$GEO_BUILD_DATE"
+          python3 portfolio_offer_catalog.py --today "$GEO_BUILD_DATE"
+          python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
+          python3 app_video_lessons.py --today "$GEO_BUILD_DATE"
           python3 gen_social_previews.py --oembed-only
           python3 gen_github_discovery_readmes.py
           python3 gen_publisher_disclosures.py
@@ -300,6 +303,7 @@ jobs:
             --retries 3 \
             --retry-delay 2
            python3 _engine/geo/gen_sitemap_lastmod.py \
+            --today "$GEO_BUILD_DATE" \
             --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
       - name: Commit English content first (fast, before slow localization)
         run: |
@@ -329,6 +333,7 @@ jobs:
               python3 audit_link_depth.py --max-indexable-orphans 0
               cd "$GITHUB_WORKSPACE"
               python3 _engine/geo/gen_sitemap_lastmod.py \
+                --today "$GEO_BUILD_DATE" \
                 --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
               python3 -m unittest discover \
                 -s _engine/geo/tests \
@@ -398,10 +403,10 @@ jobs:
           # Localization changes the answer text consumed by these catalogs.
           # Rebuild every dependent surface before sealing the tested tree.
           python3 portfolio_app_catalog_api.py
-          python3 publisher_intent_catalog.py
-          python3 portfolio_offer_catalog.py
-          python3 publisher_intent_visuals.py
-          python3 app_video_lessons.py
+          python3 publisher_intent_catalog.py --today "$GEO_BUILD_DATE"
+          python3 portfolio_offer_catalog.py --today "$GEO_BUILD_DATE"
+          python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
+          python3 app_video_lessons.py --today "$GEO_BUILD_DATE"
           python3 gen_social_previews.py --oembed-only
           python3 gen_github_discovery_readmes.py
           python3 gen_publisher_disclosures.py
@@ -440,7 +445,9 @@ jobs:
           python3 close_sitemap_graph.py
           python3 audit_link_depth.py --max-indexable-orphans 0
           cd "$GITHUB_WORKSPACE"
-          python3 _engine/geo/gen_sitemap_lastmod.py
+          python3 _engine/geo/gen_sitemap_lastmod.py \
+            --fallback-state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE" \
+            --today "$GEO_BUILD_DATE"
       - name: Verify localized output before commit
         run: |
           attestation="$RUNNER_TEMP/localized-verified-tree.json"
@@ -483,7 +490,8 @@ jobs:
                 python3 close_sitemap_graph.py
                 python3 audit_link_depth.py --max-indexable-orphans 0
                 cd "$GITHUB_WORKSPACE"
-                python3 _engine/geo/gen_sitemap_lastmod.py
+                python3 _engine/geo/gen_sitemap_lastmod.py \
+                  --today "$GEO_BUILD_DATE"
                 python3 _engine/geo/parallel_unittest.py --jobs 3
               fi
               cd _engine/geo

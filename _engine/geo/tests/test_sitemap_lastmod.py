@@ -510,10 +510,27 @@ class TruthfulSitemapLastmodTests(unittest.TestCase):
                 persistent.read_text(encoding="utf-8"),
             )
 
+            # A later final pass can reuse the committed English-stage digest
+            # without consulting its next-day Git commit timestamp.
+            gen_sitemap_lastmod.generate(
+                pages,
+                state_path=persistent,
+                fallback_state_path=intermediate,
+                today="2026-07-14",
+                history_dates={},
+                dirty_paths=set(),
+            )
+            self.assertIn(
+                "<lastmod>2026-07-14</lastmod>",
+                sitemap.read_text(encoding="utf-8"),
+            )
+            persistent.write_text(stable_state, encoding="utf-8")
+
             page.write_text("<h1>Stable</h1>", encoding="utf-8")
             restored = gen_sitemap_lastmod.generate(
                 pages,
                 state_path=persistent,
+                fallback_state_path=intermediate,
                 today="2026-07-14",
                 history_dates={},
                 dirty_paths=set(),

@@ -461,11 +461,31 @@ def _record_for(
     }
 
 
+def _select_previous(
+    url: str,
+    relative: str,
+    digest: str,
+    primary: dict[str, Any] | None,
+    fallback: dict[str, Any] | None,
+) -> dict[str, Any] | None:
+    for record in (primary, fallback):
+        if record is not None and record.get("path") != relative:
+            raise ValueError(
+                f"Sitemap state path changed unexpectedly for {url}: "
+                f"{record.get('path')} -> {relative}"
+            )
+    for record in (primary, fallback):
+        if record is not None and record.get("sha256") == digest:
+            return record
+    return primary or fallback
+
+
 def generate(
     pages: Path = PAGES,
     *,
     site: str = SITE,
     state_path: Path | None = None,
+    fallback_state_path: Path | None = None,
     today: str | None = None,
     history_dates: dict[str, str] | None = None,
     dirty_paths: set[str] | None = None,
@@ -482,6 +502,11 @@ def generate(
         else pages / STATE_RELATIVE_PATH
     )
     state = _load_state(state_path, today)
+    fallback_state = (
+        _load_state(fallback_state_path.resolve(), today)
+        if fallback_state_path is not None
+        else {"version": 1, "urls": {}, "sitemaps": {}}
+    )
 
     documents: list[tuple[Path, str, list[re.Match[str]], list[str]]] = []
     targets: dict[str, Path] = {}
@@ -561,6 +586,30 @@ def generate(
         path: _sha256(target)
         for path, target in all_targets_by_path.items()
     }
+    url_previous = {
+        url: _select_previous(
+            url,
+            _relative_path(target, pages),
+            target_digests[_relative_path(target, pages)],
+            state["urls"].get(url),
+            fallback_state["urls"].get(url),
+        )
+        for url, target in targets.items()
+    }
+    sitemap_previous = (
+        {
+            url: _select_previous(
+                url,
+                _relative_path(target, pages),
+                target_digests[_relative_path(target, pages)],
+                state["sitemaps"].get(url),
+                fallback_state["sitemaps"].get(url),
+            )
+            for url, target in index_document[3].items()
+        }
+        if index_document is not None
+        else {}
+    )
     if index_document is not None:
         wanted_paths.update(index_targets_by_path)
     if dirty_paths is None:
@@ -572,8 +621,8 @@ def generate(
             for path in (_relative_path(target, pages),)
             if path not in dirty_paths
             and (
-                url not in state["urls"]
-                or state["urls"][url]["sha256"] != target_digests[path]
+                url_previous[url] is None
+                or url_previous[url]["sha256"] != target_digests[path]
             )
         }
         if index_document is not None:
@@ -582,8 +631,8 @@ def generate(
                 for url, target in index_document[3].items()
                 if _relative_path(target, pages) not in dirty_paths
                 and (
-                    url not in state["sitemaps"]
-                    or state["sitemaps"][url]["sha256"]
+                    sitemap_previous[url] is None
+                    or sitemap_previous[url]["sha256"]
                     != target_digests[_relative_path(target, pages)]
                 )
             )
@@ -597,7 +646,7 @@ def generate(
             url,
             target,
             pages,
-            state["urls"].get(url),
+            url_previous[url],
             history_dates,
             dirty_paths,
             today,
@@ -645,7 +694,18 @@ def generate(
             index_entries += 1
             target = index_targets[location]
             relative = _relative_path(target, pages)
-            previous = state["sitemaps"].get(location)
+            current_digest = (
+                _sha256(target)
+                if relative in changed_sitemaps
+                else target_digests[relative]
+            )
+            previous = _select_previous(
+                location,
+                relative,
+                current_digest,
+                state["sitemaps"].get(location),
+                fallback_state["sitemaps"].get(location),
+            )
             record = _record_for(
                 location,
                 target,
@@ -654,11 +714,7 @@ def generate(
                 history_dates,
                 dirty_paths | changed_sitemaps,
                 today,
-                (
-                    _sha256(target)
-                    if relative in changed_sitemaps
-                    else target_digests[relative]
-                ),
+                current_digest,
             )
             sitemap_records[location] = record
             body = block.group("body")
@@ -708,12 +764,14 @@ def main() -> None:
     parser.add_argument("--pages", type=Path, default=PAGES)
     parser.add_argument("--site", default=SITE)
     parser.add_argument("--state", type=Path)
+    parser.add_argument("--fallback-state", type=Path)
     parser.add_argument("--today")
     args = parser.parse_args()
     stats = generate(
         args.pages,
         site=args.site,
         state_path=args.state,
+        fallback_state_path=args.fallback_state,
         today=args.today,
     )
     print(

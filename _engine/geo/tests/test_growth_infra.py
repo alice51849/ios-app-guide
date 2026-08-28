@@ -23157,6 +23157,10 @@ class GeneratorTests(unittest.TestCase):
                 '--state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"'
             ),
         )
+        self.assertEqual(
+            17,
+            workflow.count('--today "$GEO_BUILD_DATE"'),
+        )
         snapshot_block = workflow.split(
             "- name: Snapshot truthful sitemap baseline", 1
         )[1].split("- name: Materialize newly live app surfaces", 1)[0]
@@ -23165,6 +23169,11 @@ class GeneratorTests(unittest.TestCase):
             snapshot_block,
         )
         self.assertIn("$GITHUB_ENV", snapshot_block)
+        self.assertIn('build_date="$(date -u +%F)"', snapshot_block)
+        self.assertIn(
+            'echo "GEO_BUILD_DATE=$build_date" >> "$GITHUB_ENV"',
+            snapshot_block,
+        )
         self.assertIn(
             "cp _engine/geo/sitemap_lastmod_state.json",
             snapshot_block,
@@ -23720,9 +23729,11 @@ class GeneratorTests(unittest.TestCase):
         )
         final_positions = [final_cleanup_block.index(item) for item in final_chain]
         self.assertEqual(sorted(final_positions), final_positions)
-        self.assertNotIn(
-            "SITEMAP_LASTMOD_INTERMEDIATE_STATE",
-            final_cleanup_block,
+        self.assertEqual(
+            1,
+            final_cleanup_block.count(
+                "SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+            ),
         )
         stable_surface_chain = (
             "ensure_live_guides.py",
@@ -23770,6 +23781,16 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn(
             "SITEMAP_LASTMOD_INTERMEDIATE_STATE",
             english_commit_block,
+        )
+        final_state_restore = final_cleanup_block.index(
+            '--fallback-state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"'
+        )
+        self.assertLess(
+            final_state_restore,
+            final_cleanup_block.index(
+                '--today "$GEO_BUILD_DATE"',
+                final_state_restore,
+            ),
         )
         self.assertNotIn(
             "SITEMAP_LASTMOD_INTERMEDIATE_STATE",

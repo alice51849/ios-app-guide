@@ -348,8 +348,8 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-CA.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/ca/app/id6794178671?pt=118326163&ct=iag_data_en_ca&mt=8",
-        "name": "CalDaily: Calculator & Themes",
-        "description": "A calculator you will actually keep using, because it remembers the thinking behind each number.",
+        "name": "CalDaily",
+        "description": "CalDaily — A calculator you will actually keep using, because it remembers the thinking behind each number. Free to start · One-time unlock · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -364,7 +364,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6794178671"
           },
-          "name": "CalDaily: Calculator & Themes",
+          "name": "CalDaily",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/ca/app/id6794178671?pt=118326163&ct=iag_data_en_ca&mt=8",
@@ -375,11 +375,11 @@
             "target": "https://apps.apple.com/ca/app/id6794178671?pt=118326163&ct=iag_data_en_ca&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-CA/caldaily.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/en-CA/answers/best-calculator-app-iphone-that-saves-history-you-can-name-and-search.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "en-CA",
-          "description": "A calculator you will actually keep using, because it remembers the thinking behind each number.",
+          "description": "CalDaily — A calculator you will actually keep using, because it remembers the thinking behind each number. Free to start · One-time unlock · No subscription.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-CA.jsonld#offer-caldaily"
           },
@@ -805,6 +805,72 @@
     {
       "@type": "ListItem",
       "position": 13,
+      "url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_data_en_ca&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-CA.jsonld#offer-hourstag",
+        "url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_data_en_ca&mt=8",
+        "name": "HoursTag",
+        "description": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something — HoursTag is built for this.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6754218117",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6754218117"
+          },
+          "name": "HoursTag",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_data_en_ca&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_data_en_ca&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_data_en_ca&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_data_en_ca&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/en-CA/answers/best-app-to-track-where-my-money-goes-and-save-more.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6754218117",
+          "inLanguage": "en-CA",
+          "description": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something — HoursTag is built for this.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-CA.jsonld#offer-hourstag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "6.99",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
       "url": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=iag_data_en_ca&mt=8",
       "item": {
         "@type": "Offer",
@@ -860,72 +926,6 @@
           "isAccessibleForFree": true
         },
         "price": "0",
-        "priceCurrency": "CAD",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "CA"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 14,
-      "url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_data_en_ca&mt=8",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-CA.jsonld#offer-hourstag",
-        "url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_data_en_ca&mt=8",
-        "name": "HoursTag: Hours to Buy",
-        "description": "What does it really cost? Not just in dollars, but in hours of your life.",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6754218117",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6754218117"
-          },
-          "name": "HoursTag: Hours to Buy",
-          "operatingSystem": "iOS",
-          "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_data_en_ca&mt=8",
-          "installUrl": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_data_en_ca&mt=8",
-          "downloadUrl": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_data_en_ca&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=iag_data_en_ca&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-CA/hourstag.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6754218117",
-          "inLanguage": "en-CA",
-          "description": "What does it really cost? Not just in dollars, but in hours of your life.",
-          "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-CA.jsonld#offer-hourstag"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "paid_upfront"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": false
-        },
-        "price": "6.99",
         "priceCurrency": "CAD",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

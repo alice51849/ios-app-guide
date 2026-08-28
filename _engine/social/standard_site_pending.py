@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 from collections import Counter
+from copy import deepcopy
 from datetime import date, datetime, timedelta, timezone
 import re
 from typing import Mapping, MutableMapping, Sequence
@@ -27,6 +28,17 @@ PENDING_POLICY_FIELD = "pending_policy"
 PENDING_POLICY_VERSION = 1
 PENDING_POLICY_FIELDS = frozenset(
     {"version", "effective_daily_limit", "revision_at"}
+)
+PENDING_MIGRATION_FIELD = "pending_migration"
+PENDING_MIGRATION_VERSION = 1
+PENDING_MIGRATION_FIELDS = frozenset(
+    {
+        "version",
+        "completed_at",
+        "document_count",
+        "effective_daily_limit",
+        "max_computed_days",
+    }
 )
 PENDING_WINDOW_FIELD = "pending_window"
 PENDING_WINDOW_VERSION = 1
@@ -181,6 +193,36 @@ def validate_pending_policy(
     _daily_limit(policy.get("effective_daily_limit"))
     _timestamp(policy.get("revision_at"), "pending-policy revision")
     return policy
+
+
+def validate_pending_migration(
+    state: Mapping[str, object],
+) -> Mapping[str, object] | None:
+    migration = state.get(PENDING_MIGRATION_FIELD)
+    if migration is None:
+        return None
+    if (
+        not isinstance(migration, Mapping)
+        or set(migration) != PENDING_MIGRATION_FIELDS
+        or type(migration.get("version")) is not int
+        or migration.get("version") != PENDING_MIGRATION_VERSION
+    ):
+        raise PendingStateError("Invalid Standard.site pending migration")
+    _timestamp(migration.get("completed_at"), "pending migration")
+    _daily_limit(migration.get("effective_daily_limit"))
+    _bounded_int(
+        migration.get("document_count"),
+        minimum=0,
+        maximum=MAX_TRACKED_DOCUMENTS,
+        label="migration document count",
+    )
+    _bounded_int(
+        migration.get("max_computed_days"),
+        minimum=0,
+        maximum=MAX_WINDOW_DAYS,
+        label="migration maximum days",
+    )
+    return migration
 
 
 def effective_daily_limit(
@@ -437,13 +479,26 @@ def validate_pending_state(
     state: Mapping[str, object],
     *,
     require_finalized: bool,
+    allow_unfinalized: bool = False,
 ) -> None:
     policy = validate_pending_policy(state)
+    migration = validate_pending_migration(state)
     policy_revision = (
         _timestamp(policy["revision_at"], "pending-policy revision")
         if policy is not None
         else None
     )
+    if migration is not None:
+        if policy_revision is None:
+            raise PendingStateError(
+                "Pending migration has no persisted policy"
+            )
+        if _timestamp(
+            migration["completed_at"], "pending migration"
+        ) > policy_revision:
+            raise PendingStateError(
+                "Pending migration is newer than its policy"
+            )
     documents = state.get("documents")
     if not isinstance(documents, Mapping):
         return
@@ -451,7 +506,11 @@ def validate_pending_state(
         if not isinstance(entry, Mapping):
             continue
         label = str(canonical)
-        validate_pending_entry(entry, label=label)
+        validate_pending_entry(
+            entry,
+            label=label,
+            allow_unfinalized=allow_unfinalized,
+        )
         kind = pending_kind(entry)
         if kind is None:
             continue
@@ -481,6 +540,7 @@ def finalize_pending_windows(
     *,
     daily_limit: int,
     updated_at: object,
+    allow_legacy_backfill: bool = False,
 ) -> bool:
     """Widen UTC-day cohorts, never shrink them, and persist their basis.
 
@@ -538,6 +598,7 @@ def finalize_pending_windows(
             policy is not None
             and entry.get(PENDING_WINDOW_FIELD) is None
             and detected < revision
+            and not allow_legacy_backfill
         ):
             raise PendingStateError(
                 f"Backdated pending cohort cannot join the queue: {canonical}"
@@ -608,6 +669,120 @@ def finalize_pending_windows(
     return changed
 
 
+def migrate_legacy_pending_windows(
+    state: MutableMapping[str, object],
+    manifest: Mapping[str, object],
+    *,
+    daily_limit: int,
+    migrated_at: object,
+) -> bool:
+    """Atomically finalize every pre-contract pending entry exactly once."""
+    limit = _daily_limit(daily_limit)
+    current, current_text = _timestamp_text(
+        migrated_at, "pending migration"
+    )
+    original = deepcopy(state)
+    working = deepcopy(state)
+    validate_pending_state(
+        working,
+        require_finalized=False,
+        allow_unfinalized=True,
+    )
+    migration = validate_pending_migration(working)
+    manifest_urls = {
+        str(document["canonical_url"])
+        for document in manifest["documents"]
+    }
+    legacy_entries: list[tuple[str, MutableMapping[str, object]]] = []
+    for canonical in sorted(manifest_urls):
+        entry = working["documents"].get(canonical)
+        if (
+            not isinstance(entry, MutableMapping)
+            or entry.get("published") is True
+            or not entry.get("published_at")
+            or pending_kind(entry) is not None
+        ):
+            continue
+        legacy_entries.append((canonical, entry))
+
+    if migration is not None:
+        if legacy_entries:
+            raise PendingStateError(
+                "Legacy pending entries appeared after migration completed"
+            )
+        changed = finalize_pending_windows(
+            working,
+            manifest,
+            daily_limit=limit,
+            updated_at=current_text,
+        )
+        validate_pending_state(working, require_finalized=True)
+        if changed:
+            state.clear()
+            state.update(working)
+        return changed
+
+    migrated_urls: list[str] = []
+    for canonical, entry in legacy_entries:
+        if (
+            entry.get("published_hash") is not None
+            or any(field in entry for field in CONFIRMATION_FIELDS)
+            or PENDING_WINDOW_FIELD in entry
+        ):
+            raise PendingStateError(
+                "Legacy pending document retains attributed confirmation: "
+                f"{canonical}"
+            )
+        anchor, anchor_text = _timestamp_text(
+            entry["published_at"], "legacy pending anchor"
+        )
+        if anchor > current:
+            raise PendingStateError(
+                f"Legacy pending anchor is in the future: {canonical}"
+            )
+        entry["republish_reason"] = ORDINARY_REPUBLISH_REASON
+        entry["republish_detected_at"] = anchor_text
+        entry["republish_after_day"] = anchor.date().isoformat()
+        migrated_urls.append(canonical)
+
+    finalize_pending_windows(
+        working,
+        manifest,
+        daily_limit=limit,
+        updated_at=current_text,
+        allow_legacy_backfill=True,
+    )
+    max_computed_days = max(
+        (
+            int(
+                working["documents"][canonical][
+                    "republish_backlog_days"
+                ]
+            )
+            for canonical in migrated_urls
+        ),
+        default=0,
+    )
+    working[PENDING_POLICY_FIELD] = {
+        "version": PENDING_POLICY_VERSION,
+        "effective_daily_limit": limit,
+        "revision_at": current_text,
+    }
+    working[PENDING_MIGRATION_FIELD] = {
+        "version": PENDING_MIGRATION_VERSION,
+        "completed_at": current_text,
+        "document_count": len(migrated_urls),
+        "effective_daily_limit": limit,
+        "max_computed_days": max_computed_days,
+    }
+    validate_pending_state(working, require_finalized=True)
+    if working == original:
+        return False
+    state.clear()
+    state.update(working)
+    return True
+
+
 def audit_pending_documents(
     state: Mapping[str, object],
     manifest: Mapping[str, object],
@@ -618,7 +793,9 @@ def audit_pending_documents(
         raise PendingStateError("Pending audit time needs a timezone")
     current = now.astimezone(timezone.utc)
     today = current.date()
+    validate_pending_state(state, require_finalized=True)
     policy = validate_pending_policy(state)
+    migration = validate_pending_migration(state)
     if policy is not None and _timestamp(
         policy["revision_at"], "pending-policy revision"
     ) > current:
@@ -638,7 +815,19 @@ def audit_pending_documents(
         if entry.get("published") is True:
             continue
         kind = pending_kind(entry)
-        if kind is not None or entry.get("published_at"):
+        if kind is None and entry.get("published_at"):
+            if entry.get("published_hash") is not None or any(
+                field in entry for field in CONFIRMATION_FIELDS
+            ):
+                raise PendingStateError(
+                    "Untracked pending document retains attributed "
+                    f"confirmation: {canonical}"
+                )
+            raise PendingStateError(
+                "Legacy pending document requires one-time persisted "
+                f"migration: {canonical}"
+            )
+        if kind is not None:
             candidates.append((canonical, entry, expected))
 
     daily_limit = effective_daily_limit(
@@ -665,10 +854,6 @@ def audit_pending_documents(
             raise PendingStateError(
                 f"Pending window is newer than its policy: {canonical}"
             )
-    fallback_basis = backlog_basis(
-        [entry for _, entry, _ in candidates],
-        int(daily_limit or 1),
-    )
     details: list[dict[str, object]] = []
     counts = {
         "attribution_repair_deferred": 0,
@@ -705,33 +890,19 @@ def audit_pending_documents(
                 else "attribution_repair_pending"
             )
         else:
-            if kind == "ordinary_republish":
-                detected = _timestamp(
-                    entry["republish_detected_at"],
-                    "ordinary republish detection",
+            detected = _timestamp(
+                entry["republish_detected_at"],
+                "ordinary republish detection",
+            )
+            after_day = _day(
+                entry["republish_after_day"], "ordinary republish"
+            )
+            backlog_days = int(entry["republish_backlog_days"])
+            window = entry.get(PENDING_WINDOW_FIELD)
+            if window is None:
+                raise PendingStateError(
+                    f"Ordinary republish has no finalized window: {canonical}"
                 )
-                after_day = _day(
-                    entry["republish_after_day"], "ordinary republish"
-                )
-                backlog_days = int(entry["republish_backlog_days"])
-                window = entry.get(PENDING_WINDOW_FIELD)
-                if window is None:
-                    raise PendingStateError(
-                        f"Ordinary republish has no finalized window: {canonical}"
-                    )
-            else:
-                if entry.get("published_hash") is not None or any(
-                    field in entry for field in CONFIRMATION_FIELDS
-                ):
-                    raise PendingStateError(
-                        "Untracked pending document retains attributed "
-                        f"confirmation: {canonical}"
-                    )
-                detected = _timestamp(
-                    entry["published_at"], "ordinary republish"
-                )
-                after_day = detected.date()
-                backlog_days = fallback_basis["cohort_days"]
             deadline = after_day + timedelta(days=backlog_days - 1)
             phase = "ordinary_republish"
         if detected > current or after_day > today:
@@ -783,9 +954,22 @@ def audit_pending_documents(
             "total": len(details),
         },
         "warnings": warnings,
-        "backlog_upper_days": fallback_basis["cohort_days"],
+        "backlog_upper_days": max(
+            (
+                int(
+                    entry[
+                        _backlog_field(str(pending_kind(entry)))
+                    ]
+                )
+                for _, entry, _ in candidates
+            ),
+            default=0,
+        ),
         "daily_limit": daily_limit,
         "policy_version": (
             policy["version"] if policy is not None else None
+        ),
+        "migration_version": (
+            migration["version"] if migration is not None else None
         ),
     }

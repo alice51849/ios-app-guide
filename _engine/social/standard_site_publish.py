@@ -70,6 +70,7 @@ ATTRIBUTION_REPAIR_BACKLOG_FIELD = (
 ORDINARY_REPUBLISH_REASON = pending_state.ORDINARY_REPUBLISH_REASON
 ORDINARY_REPUBLISH_FIELDS = pending_state.ORDINARY_REPUBLISH_FIELDS
 PENDING_POLICY_FIELD = pending_state.PENDING_POLICY_FIELD
+PENDING_MIGRATION_FIELD = pending_state.PENDING_MIGRATION_FIELD
 PENDING_WINDOW_FIELD = pending_state.PENDING_WINDOW_FIELD
 
 
@@ -445,6 +446,24 @@ def _finalize_pending_backlogs(
             manifest,
             daily_limit=limit,
             updated_at=updated_at,
+        )
+    except pending_state.PendingStateError as error:
+        raise StateError(str(error)) from error
+
+
+def _migrate_legacy_pending_state(
+    state: MutableMapping[str, object],
+    manifest: Mapping[str, object],
+    *,
+    limit: int,
+    migrated_at: str,
+) -> None:
+    try:
+        pending_state.migrate_legacy_pending_windows(
+            state,
+            manifest,
+            daily_limit=limit,
+            migrated_at=migrated_at,
         )
     except pending_state.PendingStateError as error:
         raise StateError(str(error)) from error
@@ -1020,6 +1039,12 @@ def reconcile_remote_state(
 ) -> None:
     """Recover stable identities and invalidate stale local confirmations."""
     validate_state(state)
+    _migrate_legacy_pending_state(
+        state,
+        manifest,
+        limit=daily_limit,
+        migrated_at=verified_at,
+    )
     publication_url = str(manifest["publication"]["url"])
     manifest_documents = _document_map(manifest)
     publication_records = _remote_record_map(
@@ -1450,6 +1475,12 @@ def _prepare_plan(
     dict[str, object],
 ]:
     working = deepcopy(state)
+    _migrate_legacy_pending_state(
+        working,
+        manifest,
+        limit=limit,
+        migrated_at=timestamp,
+    )
     allocate_rkeys(working, manifest, generator)
     selected = reserve_daily_batch(
         working,

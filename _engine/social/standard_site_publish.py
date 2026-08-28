@@ -61,6 +61,12 @@ READ_RETRY_ATTEMPTS = 4
 READ_RETRY_BASE_SECONDS = 1.0
 READ_RETRY_MAX_SECONDS = 8.0
 READ_RETRY_TOTAL_WAIT_SECONDS = 20.0
+ATTRIBUTION_REPAIR_REASON = "remote_attribution_removed"
+ATTRIBUTION_REPAIR_FIELDS = (
+    "repair_reason",
+    "repair_detected_at",
+    "repair_after_day",
+)
 
 
 class ConfigurationError(RuntimeError):
@@ -254,6 +260,26 @@ def validate_state(state: Mapping[str, object]) -> None:
             raise StateError(f"Document state contains an invalid TID: {canonical}")
         if entry.get("published_at"):
             parse_timestamp(entry["published_at"])
+        repair_values = [entry.get(field) for field in ATTRIBUTION_REPAIR_FIELDS]
+        if any(value is not None for value in repair_values):
+            if (
+                any(value is None for value in repair_values)
+                or entry.get("published") is True
+                or entry.get("repair_reason") != ATTRIBUTION_REPAIR_REASON
+                or not re.fullmatch(
+                    r"[0-9a-f]{64}", str(entry.get("published_hash") or "")
+                )
+            ):
+                raise StateError(
+                    f"Invalid pending attribution repair: {canonical}"
+                )
+            parse_timestamp(entry["repair_detected_at"])
+            try:
+                date.fromisoformat(str(entry["repair_after_day"]))
+            except ValueError as error:
+                raise StateError(
+                    f"Invalid attribution repair day: {canonical}"
+                ) from error
     for day_value, entry in state["daily"].items():
         try:
             date.fromisoformat(str(day_value))
@@ -386,6 +412,14 @@ def _pending(
     ) == "stale"
 
 
+def _repair_deferred(entry: Mapping[str, object], day: str) -> bool:
+    repair_after_day = entry.get("repair_after_day")
+    return (
+        repair_after_day is not None
+        and day <= str(repair_after_day)
+    )
+
+
 def reserve_daily_batch(
     state: MutableMapping[str, object],
     manifest: Mapping[str, object],
@@ -419,11 +453,13 @@ def reserve_daily_batch(
                 state["documents"][url].get("published_hash"),
             )
             != "legacy_unattributed"
+            and not _repair_deferred(state["documents"][url], day)
         ]
     else:
         pending: dict[str, list[Mapping[str, object]]] = {}
         for document in manifest["documents"]:
-            if _pending(document, state):
+            entry = state["documents"][document["canonical_url"]]
+            if _pending(document, state) and not _repair_deferred(entry, day):
                 pending.setdefault(str(document["app_key"]), []).append(document)
         app_keys = sorted(pending)
         last_app = str(state["rotation"].get("last_app") or "")
@@ -806,8 +842,25 @@ def _clear_document_confirmation(entry: MutableMapping[str, object]) -> None:
         "published_hash",
         "last_verified_at",
         "updated_at",
+        *ATTRIBUTION_REPAIR_FIELDS,
     ):
         entry.pop(key, None)
+
+
+def _mark_attribution_repair_pending(
+    entry: MutableMapping[str, object],
+    document: Mapping[str, object],
+    *,
+    detected_at: str,
+    repair_after_day: str,
+) -> None:
+    existing_detected_at = entry.get("repair_detected_at")
+    existing_after_day = entry.get("repair_after_day")
+    _clear_document_confirmation(entry)
+    entry["published_hash"] = document["content_hash"]
+    entry["repair_reason"] = ATTRIBUTION_REPAIR_REASON
+    entry["repair_detected_at"] = existing_detected_at or detected_at
+    entry["repair_after_day"] = existing_after_day or repair_after_day
 
 
 def _remote_document_canonical(
@@ -841,6 +894,7 @@ def reconcile_remote_state(
     client: object,
     did: str,
     verified_at: str,
+    repair_after_day: str,
 ) -> None:
     """Recover stable identities and invalidate stale local confirmations."""
     validate_state(state)
@@ -918,6 +972,7 @@ def reconcile_remote_state(
         entry = documents.setdefault(canonical, {})
         if not isinstance(entry, MutableMapping):
             raise StateError(f"Invalid document state for {canonical}")
+        prior_published_hash = str(entry.get("published_hash") or "")
         configured_document_rkey = str(entry.get("rkey") or "")
         active = active_documents.get(canonical)
         if active is None:
@@ -954,14 +1009,28 @@ def reconcile_remote_state(
         elif _document_semantics(remote_record) == _document_semantics(
             legacy_document_record(document, active_site_uri, entry)
         ):
-            _mark_document(
-                state,
-                document,
-                remote,
-                remote_record,
-                verified_at=verified_at,
-                published_hash=legacy_document_content_hash(document),
-            )
+            legacy_hash = legacy_document_content_hash(document)
+            if prior_published_hash == legacy_hash:
+                _mark_document(
+                    state,
+                    document,
+                    remote,
+                    remote_record,
+                    verified_at=verified_at,
+                    published_hash=legacy_hash,
+                )
+            elif prior_published_hash == str(document["content_hash"]):
+                _mark_attribution_repair_pending(
+                    entry,
+                    document,
+                    detected_at=verified_at,
+                    repair_after_day=repair_after_day,
+                )
+            else:
+                raise StateError(
+                    "Remote legacy Standard.site content lacks explicit "
+                    f"durable migration evidence: {canonical}"
+                )
         else:
             _clear_document_confirmation(entry)
     validate_state(state)
@@ -1217,6 +1286,8 @@ def _mark_document(
     )
     if record.get("updatedAt"):
         entry["updated_at"] = record["updatedAt"]
+    for field in ATTRIBUTION_REPAIR_FIELDS:
+        entry.pop(field, None)
 
 
 def _prepare_plan(
@@ -1333,6 +1404,7 @@ def run(
             client=client,
             did=did,
             verified_at=timestamp,
+            repair_after_day=day,
         )
         working, selected, plan = _prepare_plan(
             recovered,
@@ -1404,6 +1476,7 @@ def run(
             client=client,
             did=did,
             verified_at=timestamp,
+            repair_after_day=day,
         )
         atomic_write_json(state_path, working)
         contract, body = build_guide_contract(

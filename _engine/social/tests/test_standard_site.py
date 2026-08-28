@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from copy import deepcopy
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.message import Message
 import io
 import json
@@ -779,7 +779,7 @@ class StandardSitePublisherTests(ProjectScratchCase):
         )
         self.assertEqual(2, len(contract["documents"]))
 
-    def test_legacy_published_record_is_audited_without_republish(self) -> None:
+    def test_legacy_published_record_is_stable_for_thirty_days(self) -> None:
         state_path, contract_path, well_known_path = self.paths()
         client = FakeRepoClient(self.DID)
         manifest = fixture_manifest({"alpha": 1})
@@ -821,19 +821,22 @@ class StandardSitePublisherTests(ProjectScratchCase):
         rotation_before = deepcopy(state["rotation"])
         puts_before = len(client.puts)
 
-        result = publisher.run(
-            manifest,
-            state_path=state_path,
-            contract_path=contract_path,
-            well_known_path=well_known_path,
-            limit=1,
-            publish=True,
-            environment=self.ENV,
-            client_factory=lambda _handle, _password: client,
-            expected_did=self.DID,
-            tid_generator=self.deterministic_tids(),
-            now=self.NOW,
-        )
+        result: dict[str, object] = {}
+        for offset in range(1, 31):
+            result = publisher.run(
+                manifest,
+                state_path=state_path,
+                contract_path=contract_path,
+                well_known_path=well_known_path,
+                limit=1,
+                publish=True,
+                environment=self.ENV,
+                client_factory=lambda _handle, _password: client,
+                expected_did=self.DID,
+                tid_generator=self.deterministic_tids(),
+                now=self.NOW + timedelta(days=offset),
+            )
+            self.assertEqual([], result["selected_urls"])
 
         final_state = json.loads(state_path.read_text(encoding="utf-8"))
         self.assertEqual(puts_before, len(client.puts))
@@ -848,6 +851,193 @@ class StandardSitePublisherTests(ProjectScratchCase):
             attribution.legacy_document_content_hash(document),
             final_state["documents"][canonical]["published_hash"],
         )
+
+    def test_remote_attribution_strip_waits_for_next_daily_slot(self) -> None:
+        state_path, contract_path, well_known_path = self.paths()
+        client = FakeRepoClient(self.DID)
+        manifest = fixture_manifest({"alpha": 1})
+        day_28 = datetime(2026, 7, 28, 14, tzinfo=timezone.utc)
+        publisher.run(
+            manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=day_28,
+        )
+        state = json.loads(state_path.read_text(encoding="utf-8"))
+        document = manifest["documents"][0]
+        canonical = document["canonical_url"]
+        entry = state["documents"][canonical]
+        key = (publisher.DOCUMENT_COLLECTION, entry["rkey"])
+        client.records[key]["value"]["textContent"] = (
+            attribution.legacy_text_content(
+                document["text_content"],
+                app_id=document["app_store_id"],
+                mode=document["legacy_app_store_link"],
+            )
+        )
+        document_puts_before = len(
+            [
+                item
+                for item in client.puts
+                if item[0] == publisher.DOCUMENT_COLLECTION
+            ]
+        )
+
+        same_day = publisher.run(
+            manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=day_28 + timedelta(hours=1),
+        )
+
+        pending = json.loads(state_path.read_text(encoding="utf-8"))
+        pending_entry = pending["documents"][canonical]
+        self.assertEqual([], same_day["selected_urls"])
+        self.assertFalse(pending_entry["published"])
+        self.assertEqual(document["content_hash"], pending_entry["published_hash"])
+        self.assertEqual(
+            publisher.ATTRIBUTION_REPAIR_REASON,
+            pending_entry["repair_reason"],
+        )
+        self.assertEqual("2026-07-28", pending_entry["repair_after_day"])
+        self.assertNotIn("at_uri", pending_entry)
+        self.assertEqual(
+            document_puts_before,
+            len(
+                [
+                    item
+                    for item in client.puts
+                    if item[0] == publisher.DOCUMENT_COLLECTION
+                ]
+            ),
+        )
+
+        next_day = publisher.run(
+            manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=day_28 + timedelta(days=1),
+        )
+        stable = publisher.run(
+            manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=day_28 + timedelta(days=2),
+        )
+
+        repaired = json.loads(state_path.read_text(encoding="utf-8"))
+        repaired_entry = repaired["documents"][canonical]
+        document_puts = [
+            item
+            for item in client.puts
+            if item[0] == publisher.DOCUMENT_COLLECTION
+        ]
+        self.assertEqual([canonical], next_day["selected_urls"])
+        self.assertEqual(1, next_day["documents_changed"])
+        self.assertEqual([], stable["selected_urls"])
+        self.assertEqual(document_puts_before + 1, len(document_puts))
+        self.assertEqual(entry["rkey"], document_puts[-1][1])
+        self.assertTrue(repaired_entry["published"])
+        self.assertEqual(document["content_hash"], repaired_entry["published_hash"])
+        self.assertNotIn("repair_reason", repaired_entry)
+        self.assertEqual(
+            attribution.PRIMARY_QUERY,
+            attribution.direct_app_store_urls(
+                client.records[key]["value"]["textContent"]
+            )[0].query,
+        )
+
+    def test_remote_legacy_without_matching_state_hash_fails_closed(self) -> None:
+        state_path, contract_path, well_known_path = self.paths()
+        client = FakeRepoClient(self.DID)
+        manifest = fixture_manifest({"alpha": 1})
+        publisher.run(
+            manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=self.NOW,
+        )
+        state = json.loads(state_path.read_text(encoding="utf-8"))
+        document = manifest["documents"][0]
+        canonical = document["canonical_url"]
+        entry = state["documents"][canonical]
+        key = (publisher.DOCUMENT_COLLECTION, entry["rkey"])
+        client.records[key]["value"]["textContent"] = (
+            attribution.legacy_text_content(
+                document["text_content"],
+                app_id=document["app_store_id"],
+                mode=document["legacy_app_store_link"],
+            )
+        )
+        puts_before = len(client.puts)
+        for label, published_hash in (
+            ("missing", None),
+            ("mismatch", "f" * 64),
+        ):
+            candidate = deepcopy(state)
+            candidate_entry = candidate["documents"][canonical]
+            if published_hash is None:
+                candidate_entry.pop("published_hash", None)
+            else:
+                candidate_entry["published_hash"] = published_hash
+            state_path.write_text(
+                json.dumps(candidate, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            with self.subTest(label=label), self.assertRaisesRegex(
+                publisher.StateError,
+                "lacks explicit durable migration evidence",
+            ):
+                publisher.run(
+                    manifest,
+                    state_path=state_path,
+                    contract_path=contract_path,
+                    well_known_path=well_known_path,
+                    limit=1,
+                    publish=True,
+                    environment=self.ENV,
+                    client_factory=lambda _handle, _password: client,
+                    expected_did=self.DID,
+                    tid_generator=self.deterministic_tids(),
+                    now=self.NOW + timedelta(days=1),
+                )
+
+        self.assertEqual(puts_before, len(client.puts))
 
     def test_prepared_future_record_keeps_reservation_and_full_query(self) -> None:
         state_path, contract_path, well_known_path = self.paths()

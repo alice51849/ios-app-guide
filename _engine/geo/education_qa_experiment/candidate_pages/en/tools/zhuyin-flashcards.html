@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Printable Bopomofo Flashcard Generator | 37 Zhuyin Symbols</title>
+<meta name="description" content="Select any of the 37 official Bopomofo symbols and make free printable Zhuyin flashcards in a fixed official order. No account, child data, saved results, scoring, Pinyin guesses, or live shuffle.">
+<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/tools/zhuyin-flashcards.html">
+<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/zhuyin-flashcards.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/ios-app-guide/pt-BR/tools/zhuyin-flashcards.html">
+<link rel="alternate" hreflang="es-MX" href="https://alice51849.github.io/ios-app-guide/es-MX/tools/zhuyin-flashcards.html">
+<link rel="alternate" hreflang="vi" href="https://alice51849.github.io/ios-app-guide/vi/tools/zhuyin-flashcards.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/zhuyin-flashcards.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Printable Bopomofo flashcards">
+<meta property="og:description" content="Select any of the 37 official Bopomofo symbols and make free printable Zhuyin flashcards in a fixed official order. No account, child data, saved results, scoring, Pinyin guesses, or live shuffle.">
+<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/tools/zhuyin-flashcards.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#20283c;--muted:#667087;--line:#dce2ef;--paper:#fff;--bg:#f4f7fc;--indigo:#3949a3;--violet:#8067d8;--peach:#f3a36b;--soft:#eef1ff;--shadow:0 22px 60px rgba(48,57,110,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 58%,#e9eef9 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",sans-serif;line-height:1.62}
+a{color:var(--indigo)}.wrap{width:min(1140px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--indigo);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif",serif}.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.control-title{display:block;font-size:13px;font-weight:850;color:var(--indigo);margin:20px 0 7px;white-space:nowrap;overflow-x:auto}.presets,.picker,.actions{display:flex;gap:8px;flex-wrap:wrap}.preset,.symbol-button{border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;font:inherit}.preset{border-radius:999px;padding:9px 14px;font-weight:800;white-space:nowrap}.preset.active,.symbol-button.selected{color:#fff;border-color:transparent;background:linear-gradient(135deg,var(--indigo),var(--violet))}.picker{margin-top:9px}.symbol-button{width:48px;height:48px;border-radius:14px;font-size:25px;font-weight:900;line-height:1}.controls{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--indigo);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,button{font:inherit}select{width:100%;min-height:46px;border:1px solid #c9d1e3;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.actions{margin-top:18px}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--indigo),var(--violet));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(57,73,163,.2)}.button.ghost{background:#fff;color:var(--indigo);border:1px solid var(--line);box-shadow:none}.note{background:#fff7dc;border:1px solid #ead7a0;border-radius:16px;padding:13px 15px;white-space:nowrap;overflow-x:auto}
+.flash-pages{display:grid;grid-template-columns:1fr;gap:20px;margin-top:20px}.flash-page{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 14px 34px rgba(48,57,110,.09);break-inside:avoid;page-break-inside:avoid}.page-head{display:flex;justify-content:space-between;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:12px;font-size:13px;font-weight:850;color:var(--muted);white-space:nowrap}.flash-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.flashcard{min-height:210px;border:2px dashed #c9d1e3;border-radius:18px;background:linear-gradient(180deg,#fff,#fafbff);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden}.flash-symbol{font-size:clamp(72px,13vw,112px);font-weight:900;line-height:1;white-space:nowrap}.flash-category{position:absolute;right:12px;top:10px;color:var(--muted);font-size:12px;font-weight:850;white-space:nowrap}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card.wide{grid-column:1/-1}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ol,.card ul{padding-left:22px}.card li{margin:8px 0}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fff,#edf0ff)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}.footer{background:var(--indigo);color:#f5f6ff;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:850px){.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}@media(max-width:680px){.controls{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1140px)}.flashcard{min-height:170px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.planner>h2,.planner form,.planner>.intro,.note,.button,.app-card,.footer,.grid,.faq{display:none!important}body{background:#fff}.wrap{width:100%}.planner{box-shadow:none;border:0;padding:0;margin:0}.flash-pages{display:block;margin:0}.flash-page{border:0;border-radius:0;box-shadow:none;padding:0;margin:0;page-break-after:always}.flash-page:last-child{page-break-after:auto}.page-head{font-size:9pt;margin-bottom:4mm}.flash-grid{gap:4mm}.flash-page.density-4 .flashcard{height:125mm}.flash-page.density-6 .flashcard{height:80mm}.flash-page.density-8 .flashcard{height:58mm}.flashcard{border:1pt dashed #777;border-radius:3mm;background:#fff}.flash-symbol{font-size:58pt}.flash-category{font-size:9pt;color:#444}@page{size:A4;margin:10mm}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Printable Bopomofo flashcards","description":"Select any of the 37 official Bopomofo symbols and make free printable Zhuyin flashcards in a fixed official order. No account, child data, saved results, scoring, Pinyin guesses, or live shuffle.","url":"https://alice51849.github.io/ios-app-guide/tools/zhuyin-flashcards.html","inLanguage":"en","datePublished":"2026-07-15","dateModified":"2026-07-15","applicationCategory":"EducationalApplication","operatingSystem":"Any","isAccessibleForFree":true,"featureList":["All 37 official basic symbols","Same selection, same ordered cards","No child data, score, or diagnosis"],"citation":["https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html","https://stroke-order.learningweb.moe.edu.tw/phonetic.jsp?la=1","https://www.unicode.org/charts/PDF/U3100.pdf"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"A low-pressure adult-led way to use them","step":[{"@type":"HowToStep","position":1,"text":"Print and cut only the symbols needed for the current activity."},{"@type":"HowToStep","position":2,"text":"An adult can name a symbol using an official pronunciation source while the learner points, matches, or sorts."},{"@type":"HowToStep","position":3,"text":"Keep the cards as an activity, not a score, rank, assessment, or diagnosis; stop when the learner wants to stop."}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"Are all 37 basic Bopomofo symbols available?","acceptedAnswer":{"@type":"Answer","text":"Yes. The presets use the 21 initials, 3 medials, and 13 finals in the official Ministry of Education order."}},{"@type":"Question","name":"Does this page collect or save information about a child?","acceptedAnswer":{"@type":"Answer","text":"No. It accepts only a fixed symbol list and print settings in the current page; nothing is uploaded or stored."}},{"@type":"Question","name":"Why are there no Pinyin or example-word answers on the cards?","acceptedAnswer":{"@type":"Answer","text":"A single Latin spelling or example word can mislead across contexts. These cards stay within the verified official symbol set and link to official sources for pronunciation and strokes."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Free tools","item":"https://alice51849.github.io/ios-app-guide/tools/index.html"},{"@type":"ListItem","position":2,"name":"Printable Bopomofo flashcards","item":"https://alice51849.github.io/ios-app-guide/tools/zhuyin-flashcards.html"}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<!-- education-qa-canary:head:start -->
+<style>.education-qa-canary{margin:0 auto 30px;padding:clamp(20px,4vw,36px);
+background:#fff;border:1px solid var(--line);border-radius:26px;
+box-shadow:var(--shadow)}
+.education-qa-canary h2,.education-qa-canary h3{margin:.1em 0 .35em}
+.education-qa-canary-intro,.education-qa-boundary,
+.education-qa-source-intro,.education-qa-first-party{color:var(--muted)}
+.education-qa-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+gap:14px;margin:22px 0}
+.education-qa-card{display:flex;flex-direction:column;justify-content:space-between;
+min-height:178px;padding:18px;border:1px solid var(--line);border-radius:18px;
+background:linear-gradient(180deg,#fff,#f7f8ff)}
+.education-qa-question{font-weight:760;margin:0 0 18px}
+.education-qa-answer{margin:0;padding-top:12px;border-top:1px solid var(--line)}
+.education-qa-answer-text{font-size:34px;font-weight:760;margin-left:8px}
+.education-qa-record-link{align-self:flex-end;margin-top:10px;font-size:12px}
+.education-qa-sources{padding-left:22px}
+@media(max-width:680px){.education-qa-list{grid-template-columns:1fr}}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@id":"https://alice51849.github.io/ios-app-guide/tools/zhuyin-flashcards.html#fixed-study-flashcards","@type":"Quiz","about":{"@type":"Thing","name":"Bopomofo symbol recognition"},"hasPart":[{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄅ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “initial” group is encoded at U+3105?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄆ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “initial” group is encoded at U+3106?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄇ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “initial” group is encoded at U+3107?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄈ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “initial” group is encoded at U+3108?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄉ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “initial” group is encoded at U+3109?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄊ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “initial” group is encoded at U+310A?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄧ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “medial” group is encoded at U+3127?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄨ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “medial” group is encoded at U+3128?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄩ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “medial” group is encoded at U+3129?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄚ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “final” group is encoded at U+311A?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄛ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “final” group is encoded at U+311B?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄜ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “final” group is encoded at U+311C?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄝ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “final” group is encoded at U+311D?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄞ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “final” group is encoded at U+311E?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄟ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “final” group is encoded at U+311F?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄠ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “final” group is encoded at U+3120?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄡ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “final” group is encoded at U+3121?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"ㄢ"},"eduQuestionType":"Flashcard","text":"Which Bopomofo symbol in the “final” group is encoded at U+3122?"}],"inLanguage":"en"}</script>
+<!-- education-qa-canary:head:end -->
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://alice51849.github.io/ios-app-guide/index.html">iOS App Guide</a><nav class="links"><a href="https://alice51849.github.io/ios-app-guide/tools/index.html">Free tools</a><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-flashcards.html">繁體中文</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">Free printable · official symbol order · no account</div><h1>Printable Bopomofo flashcards</h1><p class="lead">Choose all 37 symbols, one official category, or an exact custom set. The same selection always creates the same clean cutting pages.</p><div class="badges"><span class="badge">All 37 official basic symbols</span><span class="badge">Same selection, same ordered cards</span><span class="badge">No child data, score, or diagnosis</span></div></section>
+<section class="planner wrap"><h2>Choose the exact symbol set</h2><p class="intro">This page accepts only official Bopomofo symbols and print settings. It never asks for a child&#x27;s name, age, school, voice, handwriting, answers, score, or progress.</p>
+<form id="bopomofo-flashcard-planner"><span class="control-title">Quick symbol sets</span><div class="presets"><button class="preset active" type="button" data-preset="all" aria-pressed="true">All 37</button><button class="preset" type="button" data-preset="initials" aria-pressed="false">Initials 21</button><button class="preset" type="button" data-preset="medials" aria-pressed="false">Medials 3</button><button class="preset" type="button" data-preset="finals" aria-pressed="false">Finals 13</button></div><span class="control-title">Tap symbols to include or remove</span><div class="picker" id="symbol-picker"></div>
+<div class="controls"><div class="field"><label for="cards-per-page">Cards per printed page</label><select id="cards-per-page"><option value="4">4</option><option value="6" selected>6</option><option value="8">8</option></select></div><div class="field"><label for="show-category">Category label on each card</label><select id="show-category"><option value="show" selected>Show</option><option value="hide">Hide</option></select></div></div>
+<div class="actions"><button class="button" type="submit">Build flashcards</button><button class="button ghost" type="button" id="print-cards">Print these flashcards</button></div></form>
+<p id="result-summary" class="note" role="status" aria-live="polite"></p><div id="flash-pages" class="flash-pages"></div>
+</section>
+<!-- education-qa-canary:body:start -->
+<section class="education-qa-canary wrap" id="fixed-study-flashcards" data-static-visible-qa="true">
+<h2>18 fixed Bopomofo recognition flashcards</h2>
+<p class="education-qa-canary-intro">Every question and answer is visible immediately. The cards use fixed symbol, category, and Unicode facts from one canonical 37-symbol dataset; no answer is generated from a guess.</p>
+<div class="education-qa-list" role="list"><article class="education-qa-card" role="listitem" data-flashcard-id="u3105" data-source-order="1" data-source-unicode="U+3105"><p class="education-qa-question">Which Bopomofo symbol in the “initial” group is encoded at U+3105?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄅ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3105" rel="noopener">Source row 1</a></article><article class="education-qa-card" role="listitem" data-flashcard-id="u3106" data-source-order="2" data-source-unicode="U+3106"><p class="education-qa-question">Which Bopomofo symbol in the “initial” group is encoded at U+3106?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄆ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3106" rel="noopener">Source row 2</a></article><article class="education-qa-card" role="listitem" data-flashcard-id="u3107" data-source-order="3" data-source-unicode="U+3107"><p class="education-qa-question">Which Bopomofo symbol in the “initial” group is encoded at U+3107?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄇ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3107" rel="noopener">Source row 3</a></article><article class="education-qa-card" role="listitem" data-flashcard-id="u3108" data-source-order="4" data-source-unicode="U+3108"><p class="education-qa-question">Which Bopomofo symbol in the “initial” group is encoded at U+3108?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄈ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3108" rel="noopener">Source row 4</a></article><article class="education-qa-card" role="listitem" data-flashcard-id="u3109" data-source-order="5" data-source-unicode="U+3109"><p class="education-qa-question">Which Bopomofo symbol in the “initial” group is encoded at U+3109?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄉ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3109" rel="noopener">Source row 5</a></article><article class="education-qa-card" role="listitem" data-flashcard-id="u310a" data-source-order="6" data-source-unicode="U+310A"><p class="education-qa-question">Which Bopomofo symbol in the “initial” group is encoded at U+310A?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄊ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u310A" rel="noopener">Source row 6</a></article><article class="education-qa-card" role="listitem" data-flashcard-id="u3127" data-source-order="22" data-source-unicode="U+3127"><p class="education-qa-question">Which Bopomofo symbol in the “medial” group is encoded at U+3127?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄧ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3127" rel="noopener">Source row 22</a></article><article class="education-qa-card" role="listitem" data-flashcard-id="u3128" data-source-order="23" data-source-unicode="U+3128"><p class="education-qa-question">Which Bopomofo symbol in the “medial” group is encoded at U+3128?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄨ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3128" rel="noopener">Source row 23</a></article><article class="education-qa-card" role="listitem" data-flashcard-id="u3129" data-source-order="24" data-source-unicode="U+3129"><p class="education-qa-question">Which Bopomofo symbol in the “medial” group is encoded at U+3129?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄩ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3129" rel="noopener">Source row 24</a></article><article class="education-qa-card" role="listitem" data-flashcard-id="u311a" data-source-order="25" data-source-unicode="U+311A"><p class="education-qa-question">Which Bopomofo symbol in the “final” group is encoded at U+311A?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄚ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u311A" rel="noopener">Source row 25</a></article><article class="education-qa-card" role="listitem" data-flashcard-id="u311b" data-source-order="26" data-source-unicode="U+311B"><p class="education-qa-question">Which Bopomofo symbol in the “final” group is encoded at U+311B?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄛ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u311B" rel="noopener">Source row 26</a></article><article class="education-qa-card" role="listitem" data-flashcard-id="u311c" data-source-order="27" data-source-unicode="U+311C"><p class="education-qa-question">Which Bopomofo symbol in the “final” group is encoded at U+311C?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄜ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u311C" rel="noopener">Source row 27</a></article><article class="education-qa-card" role="listitem" data-flashcard-id="u311d" data-source-order="28" data-source-unicode="U+311D"><p class="education-qa-question">Which Bopomofo symbol in the “final” group is encoded at U+311D?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄝ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u311D" rel="noopener">Source row 28</a></article><article class="education-qa-card" role="listitem" data-flashcard-id="u311e" data-source-order="29" data-source-unicode="U+311E"><p class="education-qa-question">Which Bopomofo symbol in the “final” group is encoded at U+311E?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄞ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u311E" rel="noopener">Source row 29</a></article><article class="education-qa-card" role="listitem" data-flashcard-id="u311f" data-source-order="30" data-source-unicode="U+311F"><p class="education-qa-question">Which Bopomofo symbol in the “final” group is encoded at U+311F?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄟ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u311F" rel="noopener">Source row 30</a></article><article class="education-qa-card" role="listitem" data-flashcard-id="u3120" data-source-order="31" data-source-unicode="U+3120"><p class="education-qa-question">Which Bopomofo symbol in the “final” group is encoded at U+3120?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄠ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3120" rel="noopener">Source row 31</a></article><article class="education-qa-card" role="listitem" data-flashcard-id="u3121" data-source-order="32" data-source-unicode="U+3121"><p class="education-qa-question">Which Bopomofo symbol in the “final” group is encoded at U+3121?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄡ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3121" rel="noopener">Source row 32</a></article><article class="education-qa-card" role="listitem" data-flashcard-id="u3122" data-source-order="33" data-source-unicode="U+3122"><p class="education-qa-question">Which Bopomofo symbol in the “final” group is encoded at U+3122?</p><p class="education-qa-answer"><span class="education-qa-answer-label">Answer:</span><span class="education-qa-answer-text">ㄢ</span></p><a class="education-qa-record-link" href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3122" rel="noopener">Source row 33</a></article></div>
+<p class="education-qa-boundary">The Unicode code point identifies the character. Unicode&#x27;s English character name is an identifier, not a pronunciation lesson; use the linked Taiwan Ministry of Education reference for pronunciation.</p>
+<h3>Sources and traceability</h3>
+<p class="education-qa-source-intro">Each answer is joined directly to its canonical source row. The QTI and OER links expose the same source lineage in reusable formats.</p>
+<ul class="education-qa-sources"><li><a href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json" rel="noopener">Canonical 37-symbol dataset</a></li><li><a href="https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html" rel="noopener">Taiwan Ministry of Education Bopomofo reference</a></li><li><a href="https://www.unicode.org/charts/PDF/U3100.pdf" rel="noopener">Unicode Bopomofo chart</a></li><li><a href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html" rel="noopener">QTI 2.1 question-bank source</a></li><li><a href="https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html" rel="noopener">OER metadata and fixity source</a></li></ul>
+<p class="education-qa-first-party" data-first-party-disclosure="true">First-party disclosure: iOS App Guide and the optional Lumi Bopomofo app are both published by Lumi Apps. These flashcards and the printable generator work without the app.</p>
+</section>
+<!-- education-qa-canary:body:end -->
+<section class="wrap grid"><article class="card"><h2>What these flashcards do—and do not do</h2><p>They place selected official Bopomofo symbols on printable cutting cards. They do not supply Pinyin or example-word equivalents, play audio, listen, grade pronunciation, track answers, diagnose a need, or promise a learning result.</p></article><article class="card"><h2>How the fixed card set is created</h2><ol><li>Choose a preset or tap the exact symbols you want.</li><li>Selected symbols are returned once each in the official Ministry of Education order, never a live random shuffle.</li><li>Choose 4, 6, or 8 cards per A4 page and decide whether the official category label should appear.</li></ol></article><article class="card wide"><h2>A low-pressure adult-led way to use them</h2><ol><li>Print and cut only the symbols needed for the current activity.</li><li>An adult can name a symbol using an official pronunciation source while the learner points, matches, or sorts.</li><li>Keep the cards as an activity, not a score, rank, assessment, or diagnosis; stop when the learner wants to stop.</li></ol></article><article class="card wide"><h2>Official Bopomofo sources</h2><p>These facts and links come from Taiwan&#x27;s Ministry of Education and the Unicode Consortium, not from this site.</p><ul><li><a href="https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html" rel="noopener">Taiwan MOE official Bopomofo handbook</a></li><li><a href="https://stroke-order.learningweb.moe.edu.tw/phonetic.jsp?la=1" rel="noopener">Taiwan MOE official Bopomofo stroke-order portal</a></li><li><a href="https://www.unicode.org/charts/PDF/U3100.pdf" rel="noopener">Unicode official Bopomofo chart (PDF)</a></li></ul><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Chrome WebMCP imperative API preview (subject to change)</a></p></article></section>
+<section class="wrap card faq"><h2>Printable Bopomofo flashcard questions</h2><details><summary>Are all 37 basic Bopomofo symbols available?</summary><p>Yes. The presets use the 21 initials, 3 medials, and 13 finals in the official Ministry of Education order.</p></details><details><summary>Does this page collect or save information about a child?</summary><p>No. It accepts only a fixed symbol list and print settings in the current page; nothing is uploaded or stored.</p></details><details><summary>Why are there no Pinyin or example-word answers on the cards?</summary><p>A single Latin spelling or example word can mislead across contexts. These cards stay within the verified official symbol set and link to official sources for pronunciation and strokes.</p></details></section>
+<section class="app-card wrap"><h2>Want an optional guided Bopomofo app?</h2><p>Lumi Bopomofo is optional. Its current App Store listing describes playful Zhuyin symbol, sound, and combination activities plus tracing and tone games, free to download with a one-time in-app unlock, that works offline, has no ads, no subscription, and lists Data Not Collected. Verify the current listing before deciding, since features can change. These printable cards work fully without the app.</p><a class="button" href="https://apps.apple.com/app/id6773017109?pt=118326163&amp;ct=iag_bopomofo_flashcards_en&amp;mt=8" rel="nofollow noopener">View Lumi Bopomofo on the App Store</a></section>
+</main>
+<footer class="footer"><div class="wrap">Official symbol set · no child data · no score · no pronunciation claim</div></footer>
+<script type="application/json" id="bopomofo-flashcard-config">{"inputSchema":{"type":"object","properties":{"symbols":{"type":"array","description":"Tap symbols to include or remove","items":{"type":"string","enum":["ㄅ","ㄆ","ㄇ","ㄈ","ㄉ","ㄊ","ㄋ","ㄌ","ㄍ","ㄎ","ㄏ","ㄐ","ㄑ","ㄒ","ㄓ","ㄔ","ㄕ","ㄖ","ㄗ","ㄘ","ㄙ","ㄧ","ㄨ","ㄩ","ㄚ","ㄛ","ㄜ","ㄝ","ㄞ","ㄟ","ㄠ","ㄡ","ㄢ","ㄣ","ㄤ","ㄥ","ㄦ"]},"minItems":1,"maxItems":37,"uniqueItems":true},"cards_per_page":{"type":"integer","enum":[4,6,8],"description":"Cards per printed page"},"show_category":{"type":"boolean","description":"Category label on each card"}},"required":["symbols","cards_per_page","show_category"],"additionalProperties":false},"symbols":[{"symbol":"ㄅ","category":"initial"},{"symbol":"ㄆ","category":"initial"},{"symbol":"ㄇ","category":"initial"},{"symbol":"ㄈ","category":"initial"},{"symbol":"ㄉ","category":"initial"},{"symbol":"ㄊ","category":"initial"},{"symbol":"ㄋ","category":"initial"},{"symbol":"ㄌ","category":"initial"},{"symbol":"ㄍ","category":"initial"},{"symbol":"ㄎ","category":"initial"},{"symbol":"ㄏ","category":"initial"},{"symbol":"ㄐ","category":"initial"},{"symbol":"ㄑ","category":"initial"},{"symbol":"ㄒ","category":"initial"},{"symbol":"ㄓ","category":"initial"},{"symbol":"ㄔ","category":"initial"},{"symbol":"ㄕ","category":"initial"},{"symbol":"ㄖ","category":"initial"},{"symbol":"ㄗ","category":"initial"},{"symbol":"ㄘ","category":"initial"},{"symbol":"ㄙ","category":"initial"},{"symbol":"ㄧ","category":"medial"},{"symbol":"ㄨ","category":"medial"},{"symbol":"ㄩ","category":"medial"},{"symbol":"ㄚ","category":"final"},{"symbol":"ㄛ","category":"final"},{"symbol":"ㄜ","category":"final"},{"symbol":"ㄝ","category":"final"},{"symbol":"ㄞ","category":"final"},{"symbol":"ㄟ","category":"final"},{"symbol":"ㄠ","category":"final"},{"symbol":"ㄡ","category":"final"},{"symbol":"ㄢ","category":"final"},{"symbol":"ㄣ","category":"final"},{"symbol":"ㄤ","category":"final"},{"symbol":"ㄥ","category":"final"},{"symbol":"ㄦ","category":"final"}],"presets":{"all":["ㄅ","ㄆ","ㄇ","ㄈ","ㄉ","ㄊ","ㄋ","ㄌ","ㄍ","ㄎ","ㄏ","ㄐ","ㄑ","ㄒ","ㄓ","ㄔ","ㄕ","ㄖ","ㄗ","ㄘ","ㄙ","ㄧ","ㄨ","ㄩ","ㄚ","ㄛ","ㄜ","ㄝ","ㄞ","ㄟ","ㄠ","ㄡ","ㄢ","ㄣ","ㄤ","ㄥ","ㄦ"],"initials":["ㄅ","ㄆ","ㄇ","ㄈ","ㄉ","ㄊ","ㄋ","ㄌ","ㄍ","ㄎ","ㄏ","ㄐ","ㄑ","ㄒ","ㄓ","ㄔ","ㄕ","ㄖ","ㄗ","ㄘ","ㄙ"],"medials":["ㄧ","ㄨ","ㄩ"],"finals":["ㄚ","ㄛ","ㄜ","ㄝ","ㄞ","ㄟ","ㄠ","ㄡ","ㄢ","ㄣ","ㄤ","ㄥ","ㄦ"]},"labels":{"result":"{count} flashcards · {pages} print pages","page":"Print page","invalid":"Choose 1–37 official symbols and a supported print layout.","toggle":"Toggle"},"categoryLabels":{"initial":"Initial","medial":"Medial","final":"Final"},"toolDescription":"Return deterministic printable flashcard pages from 1–37 official Bopomofo symbols, page density, and category-label preference. Read-only: accepts no child profile, free text, answer, score, recording, assessment, diagnosis, or learning-outcome claim.","officialSources":[{"label":"Taiwan MOE official Bopomofo handbook","url":"https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"},{"label":"Taiwan MOE official Bopomofo stroke-order portal","url":"https://stroke-order.learningweb.moe.edu.tw/phonetic.jsp?la=1"},{"label":"Unicode official Bopomofo chart (PDF)","url":"https://www.unicode.org/charts/PDF/U3100.pdf"}],"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"View Lumi Bopomofo on the App Store","boundary":"Lumi Bopomofo is optional. Its current App Store listing describes playful Zhuyin symbol, sound, and combination activities plus tracing and tone games, free to download with a one-time in-app unlock, that works offline, has no ads, no subscription, and lists Data Not Collected. Verify the current listing before deciding, since features can change. These printable cards work fully without the app.","app_store_url":"https://apps.apple.com/app/id6773017109?pt=118326163&ct=iag_bopomofo_flashcards_en&mt=8"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(document.getElementById("bopomofo-flashcard-config").textContent);
+  const form = document.getElementById("bopomofo-flashcard-planner");
+  const picker = document.getElementById("symbol-picker");
+  const density = document.getElementById("cards-per-page");
+  const category = document.getElementById("show-category");
+  const summary = document.getElementById("result-summary");
+  const pageList = document.getElementById("flash-pages");
+  const printButton = document.getElementById("print-cards");
+  const presets = [...document.querySelectorAll("[data-preset]")];
+  let selected = new Set(config.symbols.map((item) => item.symbol));
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) throw new RangeError(`${name} is not supported.`);
+    }
+    for (const name of config.inputSchema.required) {
+      if (!Object.prototype.hasOwnProperty.call(input, name)) {
+        throw new TypeError(`${name} is required.`);
+      }
+    }
+    if (!Array.isArray(input.symbols) ||
+        input.symbols.length < 1 ||
+        input.symbols.length > config.symbols.length) {
+      throw new RangeError("symbols must contain 1–37 items.");
+    }
+    const official = new Set(config.symbols.map((item) => item.symbol));
+    const seen = new Set();
+    for (const symbol of input.symbols) {
+      if (typeof symbol !== "string" || !official.has(symbol) || seen.has(symbol)) {
+        throw new RangeError("symbols must be unique official Bopomofo symbols.");
+      }
+      seen.add(symbol);
+    }
+    if (typeof input.cards_per_page !== "number" ||
+        !Number.isInteger(input.cards_per_page) ||
+        !config.inputSchema.properties.cards_per_page.enum.includes(input.cards_per_page)) {
+      throw new RangeError("cards_per_page is not supported.");
+    }
+    if (typeof input.show_category !== "boolean") {
+      throw new TypeError("show_category must be a boolean.");
+    }
+    return buildFlashcards(input);
+  }
+
+  function buildFlashcards(input) {
+    const wanted = new Set(input.symbols);
+    const cards = config.symbols.filter((item) => wanted.has(item.symbol));
+    const pages = [];
+    for (let start = 0; start < cards.length; start += input.cards_per_page) {
+      pages.push({
+        page_number: pages.length + 1,
+        cards: cards.slice(start, start + input.cards_per_page)
+      });
+    }
+    return {
+      selected_inputs: {
+        symbols: cards.map((item) => item.symbol),
+        cards_per_page: input.cards_per_page,
+        show_category: input.show_category
+      },
+      pages
+    };
+  }
+
+  function selectedPreset() {
+    const values = [...selected];
+    const same = (target) =>
+      values.length === target.length && target.every((symbol) => selected.has(symbol));
+    if (same(config.presets.all)) return "all";
+    if (same(config.presets.initials)) return "initials";
+    if (same(config.presets.medials)) return "medials";
+    if (same(config.presets.finals)) return "finals";
+    return "";
+  }
+
+  function syncButtons() {
+    const preset = selectedPreset();
+    for (const button of presets) {
+      const active = button.dataset.preset === preset;
+      button.classList.toggle("active", active);
+      button.setAttribute("aria-pressed", String(active));
+    }
+    for (const button of picker.querySelectorAll("button")) {
+      const active = selected.has(button.dataset.symbol);
+      button.classList.toggle("selected", active);
+      button.setAttribute("aria-pressed", String(active));
+    }
+  }
+
+  function makePicker() {
+    const fragment = document.createDocumentFragment();
+    for (const item of config.symbols) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "symbol-button selected";
+      button.dataset.symbol = item.symbol;
+      button.textContent = item.symbol;
+      button.setAttribute("aria-label", `${config.labels.toggle} ${item.symbol}`);
+      button.setAttribute("aria-pressed", "true");
+      button.addEventListener("click", () => {
+        if (selected.has(item.symbol)) selected.delete(item.symbol);
+        else selected.add(item.symbol);
+        syncButtons();
+        render();
+      });
+      fragment.appendChild(button);
+    }
+    picker.replaceChildren(fragment);
+  }
+
+  function makeCard(card, showCategory) {
+    const element = document.createElement("article");
+    element.className = "flashcard";
+    const symbol = document.createElement("div");
+    symbol.className = "flash-symbol";
+    symbol.textContent = card.symbol;
+    element.appendChild(symbol);
+    if (showCategory) {
+      const label = document.createElement("div");
+      label.className = "flash-category";
+      label.textContent = config.categoryLabels[card.category];
+      element.appendChild(label);
+    }
+    return element;
+  }
+
+  function makePage(page, result) {
+    const section = document.createElement("section");
+    section.className = `flash-page density-${result.selected_inputs.cards_per_page}`;
+    const header = document.createElement("div");
+    header.className = "page-head";
+    const title = document.createElement("span");
+    title.textContent = `${config.labels.page} ${page.page_number}`;
+    const count = document.createElement("span");
+    count.textContent = `${page.cards.length} / ${result.selected_inputs.cards_per_page}`;
+    header.append(title, count);
+    const grid = document.createElement("div");
+    grid.className = "flash-grid";
+    for (const card of page.cards) {
+      grid.appendChild(makeCard(card, result.selected_inputs.show_category));
+    }
+    section.append(header, grid);
+    return section;
+  }
+
+  function currentInput() {
+    return {
+      symbols: [...selected],
+      cards_per_page: Number(density.value),
+      show_category: category.value === "show"
+    };
+  }
+
+  function render() {
+    let result;
+    try {
+      result = validateInput(currentInput());
+    } catch (error) {
+      if (error instanceof TypeError || error instanceof RangeError) {
+        summary.textContent = config.labels.invalid;
+        pageList.replaceChildren();
+        return;
+      }
+      throw error;
+    }
+    summary.textContent = config.labels.result
+      .replace("{count}", String(result.selected_inputs.symbols.length))
+      .replace("{pages}", String(result.pages.length));
+    const fragment = document.createDocumentFragment();
+    for (const page of result.pages) fragment.appendChild(makePage(page, result));
+    pageList.replaceChildren(fragment);
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "create_private_bopomofo_flashcards",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const cards = validateInput(input);
+        const result = {
+          result_type: "private_bopomofo_flashcards",
+          deterministic: true,
+          official_symbol_order: true,
+          is_not_assessment: true,
+          no_score_grade_rank_or_diagnosis: true,
+          no_child_data_received: true,
+          no_pronunciation_or_learning_outcome_claim: true,
+          flashcards: cards,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) result.optional_lumibopomofo = config.optionalApp;
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  for (const button of presets) {
+    button.addEventListener("click", () => {
+      selected = new Set(config.presets[button.dataset.preset]);
+      syncButtons();
+      render();
+    });
+  }
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  density.addEventListener("change", render);
+  category.addEventListener("change", render);
+  printButton.addEventListener("click", () => window.print());
+  makePicker();
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

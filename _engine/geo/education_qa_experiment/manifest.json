@@ -1,0 +1,301 @@
+{
+  "$schema": "education_qa_experiment/1",
+  "blocking_reasons": [
+    {
+      "code": "EXACT_50_LOCALE_CONTENT_MISSING",
+      "detail": "40 official locales do not have this mother-tongue flashcard leaf surface. The canary must not be published until exact-50 content is independently completed."
+    },
+    {
+      "code": "NO_DEPLOYMENT_OR_SEARCH_APPEARANCE_EVIDENCE",
+      "detail": "This task intentionally performs no deployment, URL Inspection, submission, IndexNow, Search Console write, or HTTP POST. D7 and D28 exposure gates therefore remain pending."
+    }
+  ],
+  "candidate_sitemap": {
+    "artifact": "candidate-sitemap.xml",
+    "published": false,
+    "sha256": "0bfa73fd6f8056bb3d815afe063986c517303528c99d45ec68274dd17386e6db",
+    "url_count": 4
+  },
+  "deterministic_validation_case_count": 181,
+  "experiment_date": "2026-08-29",
+  "experiment_id": "bopomofo-flashcards-20260829",
+  "gates": {
+    "candidate_sitemap_parse_and_membership": "PASS",
+    "canonical_and_hreflang": "PASS",
+    "exact_50_locale_deployment_gate": "BLOCK",
+    "existing_non_managed_content_preserved": "PASS",
+    "first_party_disclosure_before_app_cta": "PASS",
+    "google_supported_locale_exactness": "PASS",
+    "idempotent_generation": "PASS",
+    "no_english_fallback_or_raw_keys": "PASS",
+    "no_hidden_or_paywalled_qa": "PASS",
+    "no_unrelated_app_promotion": "PASS",
+    "quiz_required_properties": "PASS",
+    "robots_allows_googlebot": "PASS",
+    "true_flashcard_leaf": "PASS",
+    "visible_qa_matches_json_ld_exactly": "PASS"
+  },
+  "generation_status": "BLOCKED_NOT_DEPLOYABLE",
+  "layers": {
+    "C": {
+      "meaning": "Search impressions and clicks",
+      "required_metrics": [
+        "education_qa_impressions",
+        "education_qa_clicks"
+      ],
+      "status": "NOT_MEASURED_NO_DEPLOYMENT"
+    },
+    "D": {
+      "meaning": "Google discovery and indexation",
+      "required_metric": "indexed_candidate_url_count",
+      "status": "NOT_MEASURED_NO_DEPLOYMENT"
+    },
+    "DL": {
+      "causality_claimed": false,
+      "meaning": "existing legal App Store campaign lower bound",
+      "required_metric": "asc_campaign_download_or_sale_lower_bound",
+      "status": "NOT_MEASURED_NO_DEPLOYMENT"
+    },
+    "E": {
+      "meaning": "valid Education Q&A appearance",
+      "required_metric": "valid_education_qa_item_count",
+      "status": "NOT_MEASURED_NO_DEPLOYMENT"
+    },
+    "RC": {
+      "counts_as_exposure": false,
+      "evidence": [
+        "HTML and JSON parse",
+        "HTTP-ready canonical, hreflang, robots and sitemap",
+        "visible Q/A equals Quiz JSON-LD"
+      ],
+      "meaning": "render and crawl prerequisites",
+      "status": "PASS_LOCAL_ONLY"
+    }
+  },
+  "measurement_gates": {
+    "d28": {
+      "pass_requires": {
+        "asc_campaign_lower_bound_observed": true,
+        "education_qa_clicks_min": 1,
+        "education_qa_impressions_min": 1,
+        "indexed_candidate_url_count_min": 1,
+        "valid_education_qa_item_count_min": 1
+      },
+      "status": "PENDING_NO_DEPLOYMENT"
+    },
+    "d7": {
+      "pass_requires": {
+        "asc_campaign_lower_bound_observed": true,
+        "education_qa_clicks_observed": true,
+        "education_qa_impressions_min": 1,
+        "indexed_candidate_url_count_min": 1,
+        "valid_education_qa_item_count_min": 1
+      },
+      "status": "PENDING_NO_DEPLOYMENT"
+    },
+    "exposure_definition": "HTTP 200, crawlability, schema parsing, or a successful local test never counts as exposure. Exposure begins only with a Google Search impression recorded for the candidate.",
+    "forbidden_actions": [
+      "URL Inspection",
+      "request indexing",
+      "submit sitemap",
+      "IndexNow",
+      "Search Console write",
+      "HTTP POST",
+      "deploy",
+      "push"
+    ],
+    "read_only_only": true
+  },
+  "pages": [
+    {
+      "assignment": "same_url_pre_post_revision",
+      "campaign_token": "iag_bopomofo_flashcards_en",
+      "candidate_artifact": "candidate_pages/en/tools/zhuyin-flashcards.html",
+      "candidate_html_sha256": "94380c410b0ccc964d03cdb57343be867e001b0582d25061ff2395d1c9178119",
+      "candidate_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-flashcards.html",
+      "content_sha256": "dd84dddc0bfa521569f82239c03b18c10381db1ef8be7337cdca7ff5bfb58d4a",
+      "control_html_sha256": "8872d55fa13bb7b4673833da54de7f5a771a475cc46b2063b90585b846a38a2c",
+      "control_ref": "origin/main@6b4745d040e43a5bb0c5c8e4c35404f33101bddd",
+      "control_state": "existing_public_leaf",
+      "control_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-flashcards.html",
+      "flashcard_count": 18,
+      "locale": "en",
+      "schema_sha256": "a5c67f89c263f876401acda724184ea37c28906cb33e46117968c856bbeb17bb"
+    },
+    {
+      "assignment": "same_url_pre_post_revision",
+      "campaign_token": "iag_bopomofo_flashcards_pt_br",
+      "candidate_artifact": "candidate_pages/pt-BR/tools/zhuyin-flashcards.html",
+      "candidate_html_sha256": "900d60d3e458021afaaa517ea394ed9dd6bf928ae5fb02c824c3e358b6b2cd41",
+      "candidate_url": "https://alice51849.github.io/ios-app-guide/pt-BR/tools/zhuyin-flashcards.html",
+      "content_sha256": "006e8d3966f0695d5c866b98d65faf3677b024f2cf02e5305f234272d11a890b",
+      "control_html_sha256": "6210594c10d065d17580742b99ab399e94170c032a8e8ff1f915ab03f3f7b55a",
+      "control_ref": "origin/main@6b4745d040e43a5bb0c5c8e4c35404f33101bddd",
+      "control_state": "existing_public_leaf",
+      "control_url": "https://alice51849.github.io/ios-app-guide/pt-BR/tools/zhuyin-flashcards.html",
+      "flashcard_count": 18,
+      "locale": "pt-BR",
+      "schema_sha256": "cfde03f1274976ad8bf659b37f5ce29b38ad1b5057c98e16521c9bf762b098ae"
+    },
+    {
+      "assignment": "same_url_pre_post_revision",
+      "campaign_token": "iag_bopomofo_flashcards_es_mx",
+      "candidate_artifact": "candidate_pages/es-MX/tools/zhuyin-flashcards.html",
+      "candidate_html_sha256": "84fbbb93232ed1d78dd8545159f5e6ada47ab10c3c52ef92dde3e0725a389fc6",
+      "candidate_url": "https://alice51849.github.io/ios-app-guide/es-MX/tools/zhuyin-flashcards.html",
+      "content_sha256": "49e7859c3f66ed99a6d0daf68affb0445ad236cbdc7c82b22196a69d3b0e1e5d",
+      "control_html_sha256": "289e6294b2094623e844f94b787c5f4228af413ed7972e1fa8ffc3b1fc4bb511",
+      "control_ref": "origin/main@6b4745d040e43a5bb0c5c8e4c35404f33101bddd",
+      "control_state": "new_localized_leaf_not_present_in_control",
+      "control_url": "https://alice51849.github.io/ios-app-guide/es-MX/tools/zhuyin-flashcards.html",
+      "flashcard_count": 18,
+      "locale": "es-MX",
+      "schema_sha256": "bb7418cd5f85ca86fad8bc7eb7043b6e40fd8a5e5791ee0abec2d91bd1b415a0"
+    },
+    {
+      "assignment": "same_url_pre_post_revision",
+      "campaign_token": "iag_bopomofo_flashcards_vi",
+      "candidate_artifact": "candidate_pages/vi/tools/zhuyin-flashcards.html",
+      "candidate_html_sha256": "5fe560b8624845731978005da87faa4be7d68894978d6fed9e443c70446fd5e2",
+      "candidate_url": "https://alice51849.github.io/ios-app-guide/vi/tools/zhuyin-flashcards.html",
+      "content_sha256": "535be41928a90e4e4c9a1f7a484a097f8951025c940c43a0d48a1a21e1d43def",
+      "control_html_sha256": "7a2c105979418bc87f1a654f86fd2184095f507c22d1b85ad531ff7eb3b63f98",
+      "control_ref": "origin/main@6b4745d040e43a5bb0c5c8e4c35404f33101bddd",
+      "control_state": "new_localized_leaf_not_present_in_control",
+      "control_url": "https://alice51849.github.io/ios-app-guide/vi/tools/zhuyin-flashcards.html",
+      "flashcard_count": 18,
+      "locale": "vi",
+      "schema_sha256": "4f980434c89c9163bb892c63da72a7cb1f1e708fe4dba0a558aacbac20586a60"
+    }
+  ],
+  "policy_sources": [
+    "https://developers.google.com/search/docs/appearance/structured-data/education-qa",
+    "https://developers.google.com/search/docs/appearance/structured-data/qapage",
+    "https://developers.google.com/search/docs/essentials/spam-policies"
+  ],
+  "qualification": {
+    "candidate_has_immediately_visible_fixed_qa": true,
+    "candidate_is_not_worksheet_pdf_or_promotion_disguised_as_flashcards": true,
+    "control_has_immediately_visible_fixed_qa": false,
+    "control_has_real_37_symbol_flashcard_generator": true,
+    "control_is_detailed_flashcard_leaf": true,
+    "schema_added_only_after_visible_qa_is_rendered": true
+  },
+  "scope": {
+    "app_or_asc_changes": false,
+    "deploy_push_submit_or_post": false,
+    "surface": "free off-site educational discovery only"
+  },
+  "source": {
+    "canonical_record_count": 37,
+    "canonical_sha256": "d2ddae4664756cf49863537ad4156e6b18c2408ea5ad6a35fb29aa378a07c5d9",
+    "curriculum_alignment_claimed": false,
+    "provenance": [
+      {
+        "role": "single canonical 37-symbol source data",
+        "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json"
+      },
+      {
+        "role": "Taiwan Ministry of Education Bopomofo reference",
+        "url": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+      },
+      {
+        "role": "Unicode code point chart",
+        "url": "https://www.unicode.org/charts/PDF/U3100.pdf"
+      },
+      {
+        "role": "existing deterministic QTI/OER interoperability surface",
+        "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html"
+      },
+      {
+        "role": "existing OER provenance and fixity surface",
+        "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html"
+      }
+    ],
+    "selected_flashcard_count": 18,
+    "unicode_character_names_used_as_pronunciation": false
+  },
+  "supported_locale_roster": {
+    "google_eligible_official_locales": [
+      "en-AU",
+      "en-CA",
+      "en-GB",
+      "en-US",
+      "es-MX",
+      "pt-BR",
+      "pt-PT",
+      "vi"
+    ],
+    "google_rule": {
+      "English": "all regions",
+      "Portuguese": "all regions",
+      "Spanish": "Mexico only",
+      "Vietnamese": "all regions"
+    },
+    "intended_resource_locales": [
+      "en",
+      "es-ES",
+      "pt-BR",
+      "de-DE",
+      "fr-FR",
+      "ja",
+      "ko",
+      "zh-Hant",
+      "zh-Hans",
+      "es-MX",
+      "vi"
+    ],
+    "missing_exact_50_locales": [
+      "ar-SA",
+      "bn-BD",
+      "ca",
+      "cs",
+      "da",
+      "el",
+      "en-AU",
+      "en-CA",
+      "en-GB",
+      "en-US",
+      "fi",
+      "fr-CA",
+      "gu-IN",
+      "he",
+      "hi",
+      "hr",
+      "hu",
+      "id",
+      "it",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "ms",
+      "nl-NL",
+      "no",
+      "or-IN",
+      "pa-IN",
+      "pl",
+      "pt-PT",
+      "ro",
+      "ru",
+      "sk",
+      "sl-SI",
+      "sv",
+      "ta-IN",
+      "te-IN",
+      "th",
+      "tr",
+      "uk",
+      "ur-PK"
+    ],
+    "non_official_generic_routes": [
+      "en"
+    ],
+    "quiz_output_locales": [
+      "en",
+      "pt-BR",
+      "es-MX",
+      "vi"
+    ],
+    "quiz_output_outside_google_support": []
+  }
+}

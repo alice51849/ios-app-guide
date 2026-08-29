@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   actions: read
 
 concurrency:
@@ -21,20 +21,67 @@ jobs:
   telegram:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
+    env:
+      TELEGRAM_RECEIPT_STORE: data/telegram-public-receipts.json
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main
+          # remote-first-publish.sh merges the live origin tip before pushing,
+          # so the receipt commit needs real history, not a shallow clone.
+          fetch-depth: 0
       - uses: actions/setup-python@v6
         with:
           python-version: "3.x"
+      - name: Prepare run-scoped receipt batch path
+        # `runner.temp` is not available to job-level env, and the batch must
+        # live outside the repo tree so it can never be committed by accident.
+        run: |
+          echo "TELEGRAM_RECEIPT_PENDING=$RUNNER_TEMP/telegram-public-receipts-pending.json" \
+            >> "$GITHUB_ENV"
       - name: Verify social posting regressions
         run: python3 .github/scripts/test_social_posting.py -q -b
+      - name: Verify fail-closed public exposure receipts
+        run: python3 .github/scripts/test_telegram_public_receipts.py -q -b
       - name: Publish every public app to Telegram
+        # Only a natural `schedule` run can mint a countable receipt; the
+        # publisher decides that from GITHUB_EVENT_NAME, so this path stays
+        # inert for a workflow_dispatch even though the digest is published.
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 .github/scripts/portfolio_daily.py --platform telegram
+      - name: Commit public exposure receipts
+        # Runs even when verification failed so the durable "not counted"
+        # reason is published instead of dying with the red job.
+        if: always() && github.event_name == 'schedule'
+        run: |
+          if [ ! -f "$TELEGRAM_RECEIPT_PENDING" ]; then
+            echo "no receipt batch to publish"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Commit before merging: remote-first-publish.sh integrates the live
+          # origin tip with `git merge`, which refuses to run on a dirty tree.
+          git add -- "$TELEGRAM_RECEIPT_STORE"
+          if ! git diff --cached --quiet; then
+            git commit -m "Record public Telegram exposure receipts"
+          fi
+          source .github/scripts/remote-first-publish.sh
+          reconcile_public_receipts() {
+            # Re-merge after every remote integration: a concurrent writer on
+            # main must never drop a receipt through conflict resolution.
+            python3 .github/scripts/telegram_public_receipts.py \
+              --store "$TELEGRAM_RECEIPT_STORE" \
+              --merge-pending "$TELEGRAM_RECEIPT_PENDING"
+          }
+          export REMOTE_FIRST_RECONCILE_MESSAGE="Record public Telegram exposure receipts"
+          if ! remote_first_publish reconcile_public_receipts origin main 5; then
+            exit 1
+          fi
 
   threads:
     # 停用(2026-08-18)。這個 job 用 repo secret `THREADS_TOKEN` 一次把全部

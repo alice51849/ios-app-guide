@@ -3,6 +3,7 @@
 """Shared deterministic rotation, localization, and HTTP retry helpers."""
 
 import base64
+import collections
 import concurrent.futures
 import datetime as _dt
 import http.client
@@ -24,6 +25,10 @@ DEAD_LINK_STATUSES = frozenset((404, 410))
 TRANSIENT_STATUSES = frozenset((408, 429))
 APP_STORE_PATH_RE = re.compile(r"^/app/id(\d+)$")
 APP_STORE_CAMPAIGN_RE = re.compile(r"^[A-Za-z0-9_]{1,30}$")
+# The public Telegram channel handle. It is published verbatim on the site
+# (see _engine/geo/gen_llms.py) and is not a credential: TELEGRAM_CHAT_ID
+# stays a secret and must never reach a public receipt.
+TELEGRAM_PUBLIC_CHANNEL = "LumiApps2026"
 DEFAULT_APP_STORE_PROVIDER_TOKEN = "118326163"
 SOCIAL_IMAGE_PATH_RE = re.compile(
     r"^/ios-app-guide/social/img/([a-z0-9]+)-share\.jpg$"
@@ -617,6 +622,17 @@ def _error_body(error):
     return str(raw).strip()
 
 
+def coverage_diff(expected, observed):
+    """Return sorted (missing, unexpected, duplicated) coverage differences."""
+    expected = list(expected)
+    observed = list(observed)
+    counts = collections.Counter(observed)
+    missing = sorted(set(expected) - set(observed))
+    unexpected = sorted(set(observed) - set(expected))
+    duplicated = sorted(key for key, count in counts.items() if count != 1)
+    return missing, unexpected, duplicated
+
+
 def _sleep_for_retry(label, attempt, sleeper, retry_delays, reason):
     delay = (
         retry_delays[attempt]
@@ -688,6 +704,77 @@ def validate_url(
                 "URL validation", attempt, sleeper, retry_delays, type(error).__name__
             )
     raise RequestError("URL validation failed unexpectedly")
+
+
+class TextResponse(collections.namedtuple("TextResponse", "status url text")):
+    """A decoded public GET body kept together with its observed status."""
+
+    __slots__ = ()
+
+
+def request_text(
+    request,
+    *,
+    label,
+    timeout,
+    attempts=3,
+    opener=None,
+    sleeper=None,
+    retry_delays=(1, 2),
+    max_bytes=4 * 1024 * 1024,
+):
+    """GET a public document with bounded retries; never mask a hard failure.
+
+    A confirmed non-transient status (for example 404) raises immediately so
+    callers stay fail-closed instead of treating a missing page as evidence.
+    """
+    if attempts < 1:
+        raise ValueError("attempts must be positive")
+    opener = urllib.request.urlopen if opener is None else opener
+    sleeper = time.sleep if sleeper is None else sleeper
+
+    for attempt in range(attempts):
+        try:
+            with opener(request, timeout=timeout) as response:
+                raw = response.read(max_bytes + 1)
+                status = getattr(response, "status", None)
+                if status is None:
+                    status = getattr(response, "code", None)
+                final_url = getattr(response, "url", None)
+            if isinstance(raw, bytes) and len(raw) > max_bytes:
+                raise RequestError(f"{label} returned an oversized body")
+            if not isinstance(status, int):
+                raise RequestError(f"{label} returned no HTTP status")
+            text = (
+                raw.decode("utf-8", errors="replace")
+                if isinstance(raw, bytes)
+                else str(raw)
+            )
+            return TextResponse(status, final_url, text)
+        except urllib.error.HTTPError as error:
+            body = _error_body(error)
+            if not is_transient_status(error.code):
+                raise HTTPStatusError(label, error.code, body) from error
+            if attempt == attempts - 1:
+                raise HTTPStatusError(
+                    label, error.code, body, attempts
+                ) from error
+            _sleep_for_retry(
+                label, attempt, sleeper, retry_delays, f"HTTP {error.code}"
+            )
+        except (
+            urllib.error.URLError,
+            OSError,
+            http.client.HTTPException,
+        ) as error:
+            if attempt == attempts - 1:
+                raise RequestError(
+                    f"{label} failed after {attempts} attempts: {error}"
+                ) from error
+            _sleep_for_retry(
+                label, attempt, sleeper, retry_delays, type(error).__name__
+            )
+    raise RequestError(f"{label} failed unexpectedly")
 
 
 def request_json(

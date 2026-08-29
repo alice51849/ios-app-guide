@@ -20,6 +20,7 @@ from social_post_common import (
     RequestError,
     campaign_app_store_url,
     canonical_app_store_url,
+    coverage_diff,
     request_json,
     validate_url,
 )
@@ -33,6 +34,7 @@ if str(ENGINE_SOCIAL) not in sys.path:
 from videogen.registry import APPS, APPSTORE  # noqa: E402
 
 import telegram_post  # noqa: E402
+import telegram_public_receipts as receipts  # noqa: E402
 import threads_post  # noqa: E402
 
 DEVELOPER_URL = "https://apps.apple.com/developer/id1136144960"
@@ -99,6 +101,14 @@ class PublicApp:
 class DigestMessage:
     text: str
     app_ids: tuple[str, ...]
+
+
+@dataclasses.dataclass(frozen=True)
+class PublishedMessage:
+    """A public message id paired with the digest batch it published."""
+
+    message_id: int
+    message: DigestMessage
 
 
 def _title(item):
@@ -412,25 +422,28 @@ def _pack_apps(
     return batches
 
 
+def telegram_entry_text(app):
+    """The exact line a public Telegram message must contain for this app."""
+    category = CATEGORY_ZH.get(app.category, CATEGORY_ZH["other"])
+    return (
+        f"• {category}｜{app.name}\n"
+        f"  {app.appstore_url(PLATFORM_CAMPAIGNS['telegram'])}"
+    )
+
+
 def telegram_messages(apps):
     total = len(apps)
-    campaign = PLATFORM_CAMPAIGNS["telegram"]
     footer = f"\n\n完整開發者頁：{DEVELOPER_URL}"
+    disclosure = receipts.disclosure_block()
     reserved_header = (
-        f"✨ 每日全 App 精選｜{total} 款｜第 99/99 則\n\n"
+        f"✨ Lumi Studio 自家 App 每日總覽｜{total} 款｜第 99/99 則\n\n"
+        f"{disclosure}\n\n"
         "今天已公開的 App 一次看，依需求挑選：\n"
     )
 
-    def entry(app):
-        category = CATEGORY_ZH.get(app.category, CATEGORY_ZH["other"])
-        return (
-            f"• {category}｜{app.name}\n"
-            f"  {app.appstore_url(campaign)}"
-        )
-
     batches = _pack_apps(
         apps,
-        entry,
+        telegram_entry_text,
         "\n",
         TELEGRAM_LIMIT - len(reserved_header) - len(footer),
     )
@@ -441,12 +454,21 @@ def telegram_messages(apps):
     for index, batch in enumerate(batches, start=1):
         part = "" if len(batches) == 1 else f"｜第 {index}/{len(batches)} 則"
         header = (
-            f"✨ 每日全 App 精選｜{total} 款{part}\n\n"
+            f"✨ Lumi Studio 自家 App 每日總覽｜{total} 款{part}\n\n"
+            f"{disclosure}\n\n"
             "今天已公開的 App 一次看，依需求挑選：\n"
         )
-        text = header + "\n".join(entry(app) for app in batch) + footer
+        text = (
+            header
+            + "\n".join(telegram_entry_text(app) for app in batch)
+            + footer
+        )
         if len(text) > TELEGRAM_LIMIT:
             raise CoverageError(f"Telegram digest is too long: {len(text)}")
+        if not receipts.verify_disclosure(text):
+            raise CoverageError(
+                "Telegram digest is missing its first-party disclosure"
+            )
         messages.append(DigestMessage(text, tuple(app.app_id for app in batch)))
     return messages
 
@@ -498,10 +520,7 @@ def validate_coverage(platform, apps, messages):
     observed = [
         app_id for message in messages for app_id in message.app_ids
     ]
-    counts = collections.Counter(observed)
-    missing = sorted(set(expected) - set(observed))
-    unexpected = sorted(set(observed) - set(expected))
-    duplicates = sorted(app_id for app_id, count in counts.items() if count != 1)
+    missing, unexpected, duplicates = coverage_diff(expected, observed)
     if missing or unexpected or duplicates:
         raise CoverageError(
             f"{platform} coverage invalid: missing={missing}, "
@@ -566,15 +585,18 @@ def publish(platform, messages):
             raise CoverageError(
                 "Missing TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID"
             )
+        published = []
         for message in messages:
             result = telegram_post._send_message(token, chat, message.text)
-            if not result.get("ok") or not result.get("result", {}).get("message_id"):
+            message_id = result.get("result", {}).get("message_id")
+            if not result.get("ok") or not message_id:
                 raise RequestError("Telegram sendMessage returned no message_id")
             print(
                 "telegram portfolio posted, message_id:",
-                result["result"]["message_id"],
+                message_id,
             )
-        return
+            published.append(PublishedMessage(int(message_id), message))
+        return published
 
     token = os.environ.get("THREADS_TOKEN", "").strip()
     user_id = os.environ.get("THREADS_USER_ID", "").strip()
@@ -583,6 +605,40 @@ def publish(platform, messages):
     for message in messages:
         post_id = threads_post.publish_text(token, user_id, message.text)
         print("threads portfolio posted, id:", post_id)
+    return []
+
+
+def digest_entries(apps):
+    """Publisher-reviewed identities exactly as the digest renders them."""
+    campaign = PLATFORM_CAMPAIGNS["telegram"]
+    return {
+        app.app_id: receipts.DigestEntry(
+            app_key=app.key,
+            app_store_id=app.app_id,
+            app_name=app.name,
+            category=app.category,
+            canonical_app_store_url=app.appstore_url(),
+            campaign_app_store_url=app.appstore_url(campaign),
+            entry_text=telegram_entry_text(app),
+        )
+        for app in apps
+    }
+
+
+def record_public_receipts(apps, published, **kwargs):
+    """Prove the just-published digest from public evidence, or fail closed."""
+    entries = digest_entries(apps)
+    shards = {
+        item.message_id: [entries[app_id] for app_id in item.message.app_ids]
+        for item in published
+    }
+    if len(shards) != len(published):
+        raise CoverageError("Telegram returned a duplicate public message id")
+    return receipts.record_publication(
+        shards,
+        expected_entries=list(entries.values()),
+        **kwargs,
+    )
 
 
 def main(argv=None):
@@ -607,13 +663,37 @@ def main(argv=None):
             for index, message in enumerate(messages, start=1):
                 print(f"\n--- {args.platform} batch {index} ---\n{message.text}")
         else:
-            publish(args.platform, messages)
+            source_started_at = dt.datetime.now(dt.timezone.utc)
+            published = publish(args.platform, messages)
             report_coverage(args.platform, apps, messages)
+            if args.platform == "telegram":
+                try:
+                    store, minted = record_public_receipts(
+                        apps,
+                        published,
+                        source_started_at=source_started_at,
+                    )
+                except receipts.NonCountableSource as reason:
+                    # A real public post from a manual dispatch is still public;
+                    # it simply can never count towards organic exposure.
+                    print(
+                        "telegram public exposure not countable: "
+                        f"{reason}",
+                        file=sys.stderr,
+                    )
+                else:
+                    print(
+                        "TELEGRAM_PUBLIC_RECEIPTS minted="
+                        f"{len(minted)} stored="
+                        f"{store.get('countable_receipt_count', 0)} apps="
+                        f"{store.get('countable_app_count', 0)}"
+                    )
         return 0
     except (
         CoverageError,
         HTTPStatusError,
         RequestError,
+        receipts.ReceiptError,
         json.JSONDecodeError,
         OSError,
         KeyError,

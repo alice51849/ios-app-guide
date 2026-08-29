@@ -1,0 +1,22 @@
+{
+  "contract": "telegram-public-organic-exposure",
+  "countable_app_count": 0,
+  "countable_events": [
+    "schedule"
+  ],
+  "countable_receipt_count": 0,
+  "freshness_window_hours": 24,
+  "generator": "telegram_public_receipts.py",
+  "non_countable": [],
+  "note": "Each receipt proves one app was publicly exposed in one exact Telegram message published by a natural GitHub Actions schedule run, re-verified with a public GET. workflow_dispatch runs are never countable.",
+  "public_url": "https://alice51849.github.io/ios-app-guide/data/telegram-public-receipts.json",
+  "receipts": [],
+  "retention": {
+    "max_failures": 60,
+    "max_publication_days": 14,
+    "max_receipts": 1500
+  },
+  "schema_url": "https://alice51849.github.io/ios-app-guide/data/telegram-public-receipts.schema.json",
+  "schema_version": 1,
+  "updated_at": "2026-08-29T13:05:00Z"
+}

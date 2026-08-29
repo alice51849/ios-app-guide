@@ -1,0 +1,224 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alice51849.github.io/ios-app-guide/data/telegram-public-receipts.schema.json",
+  "title": "Telegram public organic exposure receipts",
+  "description": "Per-app receipts proving that one app was publicly exposed in one exact Telegram message published by a natural GitHub Actions schedule run and re-verified with a public GET. Manual workflow_dispatch runs, queued or skipped runs, and private send responses are never countable evidence. This store is deliberately separate from the 46x50 publisher search-intent catalog, which describes planned coverage rather than observed public exposure.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "contract",
+    "generator",
+    "public_url",
+    "countable_events",
+    "freshness_window_hours",
+    "retention",
+    "updated_at",
+    "receipts",
+    "non_countable"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "contract": { "type": "string", "const": "telegram-public-organic-exposure" },
+    "generator": { "type": "string", "const": "telegram_public_receipts.py" },
+    "public_url": { "type": "string", "format": "uri" },
+    "schema_url": { "type": "string", "format": "uri" },
+    "note": { "type": "string" },
+    "countable_events": {
+      "type": "array",
+      "description": "Allowlist of GitHub Actions events that can mint a countable receipt.",
+      "items": { "type": "string", "enum": ["schedule"] },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "freshness_window_hours": { "type": "integer", "const": 24 },
+    "retention": {
+      "type": "object",
+      "required": ["max_publication_days", "max_receipts", "max_failures"],
+      "additionalProperties": false,
+      "properties": {
+        "max_publication_days": { "type": "integer", "minimum": 1 },
+        "max_receipts": { "type": "integer", "minimum": 1 },
+        "max_failures": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "countable_receipt_count": { "type": "integer", "minimum": 0 },
+    "countable_app_count": { "type": "integer", "minimum": 0 },
+    "receipts": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/receipt" }
+    },
+    "non_countable": {
+      "type": "array",
+      "description": "Bounded history of publications that could not be proved, kept so a failure is never silently downgraded to a success.",
+      "items": { "$ref": "#/$defs/failure" }
+    }
+  },
+  "$defs": {
+    "receipt": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "contract",
+        "receipt_id",
+        "countable",
+        "app",
+        "publication",
+        "source",
+        "public_check"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": { "type": "integer", "const": 1 },
+        "contract": { "type": "string", "const": "telegram-public-organic-exposure" },
+        "receipt_id": {
+          "type": "string",
+          "description": "Deterministic sha256 of contract, channel, message id, App Store id, repository, run id and run attempt. Replays are idempotent.",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "countable": { "type": "boolean", "const": true },
+        "app": {
+          "type": "object",
+          "required": [
+            "app_key",
+            "app_store_id",
+            "app_name",
+            "canonical_app_store_url",
+            "campaign_app_store_url",
+            "locale",
+            "intent"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "app_key": { "type": "string", "minLength": 1 },
+            "app_store_id": { "type": "string", "pattern": "^[0-9]{4,20}$" },
+            "app_name": { "type": "string", "minLength": 1 },
+            "canonical_app_store_url": {
+              "type": "string",
+              "pattern": "^https://apps\\.apple\\.com/app/id[0-9]+$"
+            },
+            "campaign_app_store_url": {
+              "type": "string",
+              "pattern": "^https://apps\\.apple\\.com/app/id[0-9]+\\?.+$"
+            },
+            "locale": {
+              "type": ["string", "null"],
+              "description": "Only recorded when the public message body proves it."
+            },
+            "intent": {
+              "type": ["string", "null"],
+              "description": "Publisher category proven by the exact public entry line."
+            }
+          }
+        },
+        "publication": {
+          "type": "object",
+          "required": [
+            "network",
+            "channel",
+            "message_id",
+            "message_url",
+            "message_index",
+            "message_count",
+            "published_at",
+            "publication_day"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "network": { "type": "string", "const": "telegram" },
+            "channel": { "type": "string", "pattern": "^[A-Za-z][A-Za-z0-9_]{3,31}$" },
+            "message_id": { "type": "integer", "minimum": 1 },
+            "message_url": {
+              "type": "string",
+              "pattern": "^https://t\\.me/[A-Za-z][A-Za-z0-9_]{3,31}/[0-9]+$"
+            },
+            "message_index": { "type": "integer", "minimum": 1 },
+            "message_count": { "type": "integer", "minimum": 1 },
+            "published_at": { "type": "string", "format": "date-time" },
+            "publication_day": { "type": "string", "format": "date" }
+          }
+        },
+        "source": {
+          "type": "object",
+          "required": [
+            "provider",
+            "repository",
+            "workflow",
+            "event_name",
+            "countable_event",
+            "run_id",
+            "run_attempt",
+            "run_url",
+            "workflow_sha",
+            "workflow_content_digest"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "provider": { "type": "string", "const": "github_actions" },
+            "repository": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" },
+            "workflow": { "type": "string", "minLength": 1 },
+            "workflow_ref": { "type": ["string", "null"] },
+            "event_name": { "type": "string", "enum": ["schedule"] },
+            "countable_event": { "type": "boolean", "const": true },
+            "run_id": { "type": "string", "pattern": "^[0-9]{1,20}$" },
+            "run_attempt": { "type": "string", "pattern": "^[0-9]{1,6}$" },
+            "run_url": { "type": "string", "format": "uri" },
+            "run_attempt_url": { "type": "string", "format": "uri" },
+            "workflow_sha": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+            "workflow_content_digest": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" }
+          }
+        },
+        "public_check": {
+          "type": "object",
+          "required": [
+            "method",
+            "url",
+            "status",
+            "observed_at",
+            "freshness_seconds",
+            "body_sha256",
+            "app_entry_verified",
+            "campaign_url_verified",
+            "disclosure_verified"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "method": { "type": "string", "const": "GET" },
+            "url": { "type": "string", "format": "uri" },
+            "status": { "type": "integer", "const": 200 },
+            "observed_at": { "type": "string", "format": "date-time" },
+            "freshness_seconds": { "type": "integer", "minimum": 0, "maximum": 86400 },
+            "body_sha256": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" },
+            "app_entry_verified": { "type": "boolean", "const": true },
+            "campaign_url_verified": { "type": "boolean", "const": true },
+            "disclosure_verified": { "type": "boolean", "const": true }
+          }
+        }
+      }
+    },
+    "failure": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "contract",
+        "countable",
+        "reason",
+        "observed_at",
+        "channel",
+        "message_ids"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": { "type": "integer", "const": 1 },
+        "contract": { "type": "string", "const": "telegram-public-organic-exposure" },
+        "countable": { "type": "boolean", "const": false },
+        "reason": { "type": "string", "minLength": 1 },
+        "observed_at": { "type": "string", "format": "date-time" },
+        "channel": { "type": "string", "minLength": 1 },
+        "message_ids": { "type": "array", "items": { "type": "integer" } },
+        "source": { "type": ["object", "null"] }
+      }
+    }
+  }
+}

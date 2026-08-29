@@ -31,10 +31,32 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
+      - name: Checkout current Growth source
+        uses: actions/checkout@v4
+        with:
+          repository: alice51849/00_GrowthEngine
+          ref: main
+          path: _engine/current-growth-source
+          fetch-depth: 1
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Quarantine unavailable App Store pages
         run: python3 _engine/geo/live_app_guard.py --site-root .
+      - name: Prepare exact high-intent route release
+        env:
+          APP_STORE_PROVIDER_TOKEN: "118326163"
+          GEO_PAGES: ${{ github.workspace }}
+        run: |
+          python3 _engine/geo/high_intent_decision_routes.py \
+            --prepare-pages-deployment \
+            --output-dir "$GITHUB_WORKSPACE" \
+            --source-commit "$(git rev-parse HEAD)" \
+            --current-source-root \
+              "$GITHUB_WORKSPACE/_engine/current-growth-source/geo" \
+            --engine-source-revision "$(
+              git -C "$GITHUB_WORKSPACE/_engine/current-growth-source" \
+                rev-parse HEAD
+            )"
       - name: Verify allowlisted staging and artifact gates
         run: |
           python3 -m unittest -v \

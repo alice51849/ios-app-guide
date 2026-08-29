@@ -371,6 +371,22 @@ def deployment_bytes(source_commit: str) -> bytes:
     ).encode("ascii")
 
 
+def source_deployment_bytes(content: bytes, source_commit: str) -> bytes:
+    try:
+        document = json.loads(content)
+    except (UnicodeDecodeError, json.JSONDecodeError) as error:
+        raise InventoryError("source deployment manifest is invalid JSON") from error
+    if (
+        not isinstance(document, dict)
+        or document.get("version") != 3
+        or document.get("source_commit") != source_commit
+    ):
+        raise InventoryError(
+            "source deployment manifest is not bound to the Pages commit"
+        )
+    return content
+
+
 def git_commit(repository: Path, ref: str = "HEAD") -> str | None:
     top_level = subprocess.run(
         ["git", "-C", str(repository), "rev-parse", "--show-toplevel"],
@@ -597,6 +613,7 @@ def analyze(
         )
     site = policy["site"].rstrip("/")
     deploy_content = deployment_bytes(source_commit)
+    deployment_from_source = False
     source_paths: dict[str, Path] = {}
     file_entries: dict[str, dict] = {}
     html_records: dict[str, dict] = {}
@@ -612,6 +629,14 @@ def analyze(
         else iter_worktree_items(source, ignored_output=output)
     )
     for relative, content, symlink, path in items:
+        if relative == ".well-known/deployment.json":
+            replacement = source_deployment_bytes(content, source_commit)
+            legacy_bytes += len(replacement) - len(deploy_content)
+            deploy_content = replacement
+            deployment_from_source = True
+            if path is not None:
+                source_paths[relative] = path
+            continue
         if relative in RESERVED_OUTPUTS:
             continue
         if symlink:
@@ -807,6 +832,7 @@ def analyze(
         "excluded": [excluded[path] for path in sorted(excluded)],
         "generated": {
             "deployment": deployment_entry,
+            "deployment_from_source": deployment_from_source,
             "manifest_path": ".well-known/publish-inventory.json",
         },
         "included": [entry["path"] for entry in included_entries],
@@ -878,13 +904,22 @@ def materialize(
         target = output / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source_path, target)
-    deployment = deployment_bytes(manifest["source_commit"])
+    deployment_source = source_paths.get(".well-known/deployment.json")
+    deployment = (
+        deployment_source.read_bytes()
+        if deployment_source is not None
+        else deployment_bytes(manifest["source_commit"])
+    )
     deployment_path = output / ".well-known" / "deployment.json"
     deployment_path.parent.mkdir(parents=True, exist_ok=True)
     deployment_path.write_bytes(deployment)
     manifest_path = output / ".well-known" / "publish-inventory.json"
     manifest_path.write_bytes(manifest_bytes)
-    if deployment_path.read_bytes() != deployment:
+    if (
+        deployment_path.read_bytes() != deployment
+        or sha256_bytes(deployment)
+        != manifest["generated"]["deployment"]["sha256"]
+    ):
         raise InventoryError("deployment manifest bytes changed during staging")
     actual_files = sum(1 for path in output.rglob("*") if path.is_file())
     actual_bytes = sum(

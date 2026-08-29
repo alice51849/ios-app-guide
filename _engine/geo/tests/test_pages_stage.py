@@ -448,6 +448,98 @@ class PagesStageTests(unittest.TestCase):
             (self.output / "data/unpinned.json").read_bytes(),
         )
 
+    def test_high_intent_managed_outputs_remain_byte_exact(self) -> None:
+        route_relative = "en-US/decide/test/choose-a-workflow.html"
+        route_html = (
+            "<!doctype html><html lang=\"en-US\"><head>"
+            f"<link rel=\"canonical\" href=\"{pages_stage.SITE}/"
+            f"{route_relative}\">"
+            '<script type="application/ld+json">'
+            '{"@context":"https://schema.org","@type":"WebPage"}'
+            "</script></head><body><main><h1>Choose a workflow</h1>"
+            "<p>Static reviewed decision context.</p></main></body></html>\n"
+        ).encode()
+        managed = {
+            route_relative: ("route_html", route_html),
+            "data/high-intent-decision-routes/coverage.json": (
+                "coverage_report",
+                b'{"release_state":"exact"}\n',
+            ),
+            "data/high-intent-decision-routes/feed.json": (
+                "json_feed",
+                b'{"items":[]}\n',
+            ),
+            pages_stage.HIGH_INTENT_SITEMAP: (
+                "sitemap",
+                (
+                    '<?xml version="1.0"?><urlset '
+                    'xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+                    f"<url><loc>{pages_stage.SITE}/{route_relative}</loc></url>"
+                    "</urlset>"
+                ).encode(),
+            ),
+        }
+        for relative, (_kind, content) in managed.items():
+            target = self.source / relative
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(content)
+        index = self.source / "sitemap_index.xml"
+        index.write_text(
+            index.read_text().replace(
+                "</sitemapindex>",
+                (
+                    f"<sitemap><loc>{pages_stage.SITE}/"
+                    f"{pages_stage.HIGH_INTENT_SITEMAP}</loc></sitemap>"
+                    "</sitemapindex>"
+                ),
+            ),
+            encoding="utf-8",
+        )
+        expected_outputs = [
+            {
+                "kind": kind,
+                "relative_path": relative,
+                "generated_sha256": hashlib.sha256(content).hexdigest(),
+            }
+            for relative, (kind, content) in sorted(managed.items())
+        ]
+        manifest_path = self.source / pages_stage.HIGH_INTENT_MANIFEST
+        manifest_path.parent.mkdir(parents=True, exist_ok=True)
+        manifest_path.write_text(
+            json.dumps(
+                {
+                    "owner": "high_intent_decision_routes",
+                    "release_state": "exact",
+                    "route_count": 1,
+                    "manifest_digest": "a" * 64,
+                    "expected_outputs": expected_outputs,
+                }
+            ),
+            encoding="utf-8",
+        )
+        pages_stage.build_stage(
+            self.source,
+            self.output,
+            max_unpacked_bytes=10_000_000,
+        )
+        for relative, (_kind, content) in managed.items():
+            self.assertEqual(content, (self.output / relative).read_bytes())
+        self.assertTrue(
+            (self.output / pages_stage.HIGH_INTENT_MANIFEST).is_file()
+        )
+        self.assertFalse(
+            (self.output / f"{pages_stage.HIGH_INTENT_SITEMAP}.gz").exists()
+        )
+        staged_manifest = json.loads(
+            gzip.decompress(
+                (self.output / pages_stage.STAGE_MANIFEST).read_bytes()
+            )
+        )
+        self.assertEqual(
+            1,
+            staged_manifest["high_intent_routes"]["route_count"],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

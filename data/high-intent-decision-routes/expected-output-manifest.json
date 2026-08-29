@@ -1,29 +1,25 @@
 {
-  "abstained_pairs": 2105,
-  "app_count": 43,
-  "candidate_app_locale_pairs": 2150,
-  "creative_count": 43,
+  "abstained_pairs": 2252,
+  "app_count": 46,
+  "candidate_app_locale_pairs": 2300,
+  "creative_count": 46,
   "current_inventory": {
     "app_keys_sha256": "c3c8f1c9f1624310c6e5c11226ce67e57ca6c0de354e583460ac74064e284474",
     "copy_sha256": "ae6d8925026621c3416e9047128d5b21644de2a987d21ef1ab92877d593f6f13",
-    "missing_route_app_keys": [
-      "battai",
-      "savetag",
-      "shotinbox"
-    ],
-    "missing_route_app_keys_sha256": "999a81cdc0facf498db97e3a0c40d00b5e3d7cc41895b73772ac51680facfb54",
+    "missing_route_app_keys": [],
+    "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 46
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "deployment_state": "generated_not_deployed",
   "expected_outputs": [
     {
-      "generated_sha256": "df96aa82c544bbab64ebe6aa57ece9901669f6f53296534c9721e8aa60c5ec4c",
+      "generated_sha256": "ad32e305783e9cdb08c09c9ecc4c806f0d16d5ad463209a52bb1d830829393b2",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "e352ec164b043f67bc934049395c604aa3e1e71bcc7cc4cc820962acd0d030ab",
+      "generated_sha256": "5eafbd85c8e45c30819ed3b87d2e4698b9b57ab82086fee4570ec0b647633242",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -41,6 +37,11 @@
       "generated_sha256": "bfd7eed44897d3fef02315ab1f8adea7cd9c2936630b0ffd957c2c31687cfcf9",
       "kind": "route_html",
       "relative_path": "en-US/decide/aim990plus/exam-decisions-under-listening-pressure.html"
+    },
+    {
+      "generated_sha256": "14f36e90d4c5e4bf447c611424953828316c31f8a0b015166047594b4e10d5dc",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/battai/decide-when-battery-health-needs-action.html"
     },
     {
       "generated_sha256": "921610e294a0ad715a84832ba4c1400630d6f9078476cb3e0ebf1ecce4284f87",
@@ -178,6 +179,11 @@
       "relative_path": "en-US/decide/picclear/recover-storage-from-photo-clutter.html"
     },
     {
+      "generated_sha256": "994338950764d15c316549ced4c71cc3ac2ef65dd9e77128a12da299d22b7e03",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/savetag/build-a-link-inbox-you-will-review.html"
+    },
+    {
       "generated_sha256": "30cc1e542014650e23b89561d5ba3434a23f7da15d0b337eacb777fcee4ee181",
       "kind": "route_html",
       "relative_path": "en-US/decide/scanto/scan-and-read-documents-on-device.html"
@@ -186,6 +192,11 @@
       "generated_sha256": "8e138c34582fc9b3d1becb300b8d278ccdcd42b81d6221f1ef5d09edb0ca4060",
       "kind": "route_html",
       "relative_path": "en-US/decide/sereno/offline-sleep-sounds-without-subscription.html"
+    },
+    {
+      "generated_sha256": "6a75d69504970ed818385300bb798c44d7763bc1b5e6d177d19e96e6d1cdc776",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/shotinbox/compare-a-screenshot-inbox-with-photo-folders.html"
     },
     {
       "generated_sha256": "d4d9a87ff076b3847e9edf53319b868bf4190c6f7dfb6dc3df0bf1e071eb09d9",
@@ -243,7 +254,7 @@
       "relative_path": "en-US/decide/wordmatelite/five-words-without-building-decks.html"
     },
     {
-      "generated_sha256": "0ffb50359b4e7c9631dbe64e09611a4cca9a93d137a85885dadc94a15a13beac",
+      "generated_sha256": "ce36217d5f9220d7f67bf942a708c37f1a3eb03716a06e1354a350054a092c09",
       "kind": "sitemap",
       "relative_path": "sitemap-high-intent-decision-routes.xml"
     },
@@ -260,17 +271,17 @@
   ],
   "fallback_records": 0,
   "inventory": {
-    "app_keys_sha256": "c893d54cd79039f8b11e5f29c3bdff7f91352d292a717d504ffc69a33b475d46",
-    "copy_sha256": "d4fbb71230d91c65b5c4fabce78722a251dd744031375671381f1536423a10bd",
+    "app_keys_sha256": "c3c8f1c9f1624310c6e5c11226ce67e57ca6c0de354e583460ac74064e284474",
+    "copy_sha256": "ae6d8925026621c3416e9047128d5b21644de2a987d21ef1ab92877d593f6f13",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
-    "public_apps": 43,
+    "public_apps": 46,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "7f646a1af1bf61e181d1083346b6fc168525fb5cc6cd0438a46f5063d744a225",
+  "manifest_digest": "ddc095f45cf360c210999e5ccc0b801110f3a772aaea9a7cffa942a2dd10c6fd",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "86e837872f21c071c4eb9ec2896cd9bbefcf60322b7f215a22d5afce8b64c8ee",
-  "release_state": "degraded_missing_route_copy",
-  "route_count": 45,
+  "release_contract_digest": "f5279f1230dbc5dab571965c0df5642be31ba9e22869deafded5237939d32857",
+  "release_state": "exact",
+  "route_count": 48,
   "routes": [
     {
       "app_key": "aibriefpack",
@@ -322,6 +333,23 @@
       "route_id": "en-US:aim990plus:exam-decisions-under-listening-pressure",
       "route_slug": "exam-decisions-under-listening-pressure",
       "url": "https://alice51849.github.io/ios-app-guide/en-US/decide/aim990plus/exam-decisions-under-listening-pressure.html"
+    },
+    {
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "app_store_url": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "907cfdb12c7d1a45f007ee442d16f0c89a7ea69e90f4c8291c48856a9a7425c5",
+      "creative_id": "battai:decide-when-battery-health-needs-action:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "en-US",
+      "output_sha256": "14f36e90d4c5e4bf447c611424953828316c31f8a0b015166047594b4e10d5dc",
+      "record_digest": "9e9ce143518d51a82b30b850c3299714ebb6d958c4dbd94f9f477e48d8af2ea7",
+      "relative_path": "en-US/decide/battai/decide-when-battery-health-needs-action.html",
+      "route_id": "en-US:battai:decide-when-battery-health-needs-action",
+      "route_slug": "decide-when-battery-health-needs-action",
+      "url": "https://alice51849.github.io/ios-app-guide/en-US/decide/battai/decide-when-battery-health-needs-action.html"
     },
     {
       "app_key": "caldaily",
@@ -783,6 +811,23 @@
       "url": "https://alice51849.github.io/ios-app-guide/en-US/decide/picclear/recover-storage-from-photo-clutter.html"
     },
     {
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "app_store_url": "https://apps.apple.com/us/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+      "campaign_token": "geo_learn",
+      "content_type": "workflow",
+      "creative_digest": "6d8329daf83788ee71e1451103779e550e2c8e9d1c680e5c20415a52537f1015",
+      "creative_id": "savetag:build-a-link-inbox-you-will-review:workflow",
+      "intent_type": "workflow",
+      "locale": "en-US",
+      "output_sha256": "994338950764d15c316549ced4c71cc3ac2ef65dd9e77128a12da299d22b7e03",
+      "record_digest": "fd03def1d1b8b211fa29dc8592b0f7bb20408519c2675f90715851dfc9b367c8",
+      "relative_path": "en-US/decide/savetag/build-a-link-inbox-you-will-review.html",
+      "route_id": "en-US:savetag:build-a-link-inbox-you-will-review",
+      "route_slug": "build-a-link-inbox-you-will-review",
+      "url": "https://alice51849.github.io/ios-app-guide/en-US/decide/savetag/build-a-link-inbox-you-will-review.html"
+    },
+    {
       "app_key": "scanto",
       "app_store_id": "6779977651",
       "app_store_url": "https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
@@ -815,6 +860,23 @@
       "route_id": "en-US:sereno:offline-sleep-sounds-without-subscription",
       "route_slug": "offline-sleep-sounds-without-subscription",
       "url": "https://alice51849.github.io/ios-app-guide/en-US/decide/sereno/offline-sleep-sounds-without-subscription.html"
+    },
+    {
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "app_store_url": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+      "campaign_token": "geo_pick",
+      "content_type": "alternative",
+      "creative_digest": "02cf74f4233c5e4fcaa9d871b1ebb8f6b84b9ddd75b086de297ee51fb43f62e5",
+      "creative_id": "shotinbox:compare-a-screenshot-inbox-with-photo-folders:alternative",
+      "intent_type": "alternative",
+      "locale": "en-US",
+      "output_sha256": "6a75d69504970ed818385300bb798c44d7763bc1b5e6d177d19e96e6d1cdc776",
+      "record_digest": "50bf1aa29921dd87c76e7dcda9a0aa79a3dfbfa0ee3da239249633b1e236e144",
+      "relative_path": "en-US/decide/shotinbox/compare-a-screenshot-inbox-with-photo-folders.html",
+      "route_id": "en-US:shotinbox:compare-a-screenshot-inbox-with-photo-folders",
+      "route_slug": "compare-a-screenshot-inbox-with-photo-folders",
+      "url": "https://alice51849.github.io/ios-app-guide/en-US/decide/shotinbox/compare-a-screenshot-inbox-with-photo-folders.html"
     },
     {
       "app_key": "snapport",
@@ -1040,5 +1102,5 @@
   ],
   "schema_version": 2,
   "site": "https://alice51849.github.io/ios-app-guide",
-  "source_contract_digest": "720a27a338dbf034b4271609ab7891f96c529dab327453f72d047a0e99450242"
+  "source_contract_digest": "cde650a5cafac3ce359d2eee2ab23aad4d01991e68f8e43f834b9f9577d97601"
 }

@@ -67,6 +67,10 @@ BYTE_STABLE_PREFIXES = (
 SOURCE_INVENTORY = ".well-known/publish-inventory.json"
 SOURCE_INVENTORY_GZIP = ".well-known/source-publish-inventory.json.gz"
 STAGE_MANIFEST = ".well-known/pages-stage-manifest.json.gz"
+HIGH_INTENT_MANIFEST = (
+    "data/high-intent-decision-routes/expected-output-manifest.json"
+)
+HIGH_INTENT_SITEMAP = "sitemap-high-intent-decision-routes.xml"
 CSS_PREFIX = "a/c/"
 JSONLD_JS_PREFIX = "a/j/"
 HREFLANG_PREFIX = "sitemaps/stage-hreflang-"
@@ -384,6 +388,70 @@ def scan_source(
                 )
             )
     return root, files, hash_tokens, noindex_paths
+
+
+def high_intent_managed_outputs(
+    files: list[SourceFile],
+) -> tuple[set[str], dict[str, str], dict[str, object]]:
+    by_path = {item.path: item for item in files}
+    manifest_file = by_path.get(HIGH_INTENT_MANIFEST)
+    if manifest_file is None:
+        return set(), {}, {"present": False, "route_count": 0}
+    try:
+        document = json.loads(
+            manifest_file.source.read_text(encoding="utf-8"),
+            object_pairs_hook=_object_without_duplicate_keys,
+        )
+    except (OSError, UnicodeDecodeError, ValueError) as error:
+        raise StageError("High-intent expected manifest is invalid") from error
+    outputs = document.get("expected_outputs")
+    route_count = document.get("route_count")
+    if (
+        document.get("owner") != "high_intent_decision_routes"
+        or document.get("release_state") != "exact"
+        or type(route_count) is not int
+        or route_count < 1
+        or not isinstance(outputs, list)
+    ):
+        raise StageError("High-intent expected manifest is not an exact release")
+    digests: dict[str, str] = {HIGH_INTENT_MANIFEST: manifest_file.sha256}
+    route_outputs = 0
+    for position, entry in enumerate(outputs):
+        if not isinstance(entry, dict) or set(entry) != {
+            "kind",
+            "relative_path",
+            "generated_sha256",
+        }:
+            raise StageError(
+                f"High-intent expected output {position} fields differ"
+            )
+        relative = str(entry["relative_path"])
+        digest = str(entry["generated_sha256"])
+        if (
+            PurePosixPath(relative).is_absolute()
+            or ".." in PurePosixPath(relative).parts
+            or not re.fullmatch(r"[0-9a-f]{64}", digest)
+            or relative in digests
+        ):
+            raise StageError(
+                f"High-intent expected output {position} is unsafe"
+            )
+        source = by_path.get(relative)
+        if source is None or source.sha256 != digest:
+            raise StageError(
+                f"High-intent expected output digest drift: {relative}"
+            )
+        digests[relative] = digest
+        route_outputs += entry["kind"] == "route_html"
+    if route_outputs != route_count or HIGH_INTENT_SITEMAP not in digests:
+        raise StageError("High-intent expected output cardinality drift")
+    return set(digests), digests, {
+        "manifest_digest": document.get("manifest_digest"),
+        "managed_bytes": sum(by_path[path].size for path in digests),
+        "managed_files": len(digests),
+        "present": True,
+        "route_count": route_count,
+    }
 
 
 def document_url(relative: str) -> str:
@@ -1171,12 +1239,15 @@ def _json_ld_loader(content: bytes) -> bytes:
 
 def collect_json_ld_assets(
     files: list[SourceFile],
+    *,
+    byte_stable_paths: set[str] = frozenset(),
 ) -> tuple[dict[str, str], dict[str, bytes], dict[str, bytes]]:
     records: dict[str, dict[str, object]] = {}
     for item in files:
         if (
             PurePosixPath(item.path).suffix.lower() not in HTML_SUFFIXES
             or item.path.startswith(BYTE_STABLE_PREFIXES)
+            or item.path in byte_stable_paths
         ):
             continue
         try:
@@ -2034,6 +2105,11 @@ def build_stage(
             f"Pages unpacked byte limit cannot exceed {MAX_UNPACKED_BYTES}"
         )
     source, files, hash_tokens, noindex_paths = scan_source(source_root)
+    (
+        high_intent_stable_paths,
+        high_intent_digests,
+        high_intent_stats,
+    ) = high_intent_managed_outputs(files)
     published_paths = {
         item.path for item in files if item.path != SOURCE_INVENTORY
     }
@@ -2059,7 +2135,8 @@ def build_stage(
     output.mkdir(parents=True, exist_ok=True)
     css_assets: dict[str, bytes] = {}
     json_ld_links, json_ld_loaders, json_ld_assets = collect_json_ld_assets(
-        files
+        files,
+        byte_stable_paths=high_intent_stable_paths,
     )
     hreflang = HreflangWriter(output)
     rows: list[list[object]] = []
@@ -2088,6 +2165,7 @@ def build_stage(
             elif (
                 PurePosixPath(item.path).suffix.lower() in HTML_SUFFIXES
                 and not item.path.startswith(BYTE_STABLE_PREFIXES)
+                and item.path not in high_intent_stable_paths
             ):
                 original = item.source.read_bytes()
                 try:
@@ -2184,6 +2262,7 @@ def build_stage(
                 PurePosixPath(item.path).suffix.lower() in JSON_SUFFIXES
                 and item.sha256.encode("ascii") not in hash_tokens
                 and not item.path.startswith(BYTE_STABLE_PREFIXES)
+                and item.path not in high_intent_stable_paths
             ):
                 original = item.source.read_bytes()
                 content = minify_json(original, relative=item.path)
@@ -2207,6 +2286,7 @@ def build_stage(
                 ]
             )
         shards = hreflang.finish()
+        referenced_paths.update(high_intent_stable_paths)
         for relative, content in sorted(css_assets.items()):
             target = output / relative
             if target.exists():
@@ -2308,6 +2388,15 @@ def build_stage(
         source_inventory_row = next(
             row for row in rows if row[0] == SOURCE_INVENTORY_GZIP
         )
+        for relative, digest in high_intent_digests.items():
+            target = output / relative
+            if (
+                not target.is_file()
+                or sha256_bytes(target.read_bytes()) != digest
+            ):
+                raise StageError(
+                    f"Staged high-intent output drift: {relative}"
+                )
         manifest = {
             "digest_encoding": "sha256-base64url-no-padding",
             "equivalence": {
@@ -2339,6 +2428,7 @@ def build_stage(
                 ),
                 "shards": shards,
             },
+            "high_intent_routes": high_intent_stats,
             "limits": {
                 "max_unpacked_bytes": max_unpacked_bytes,
                 "minimum_headroom_bytes": MIN_HEADROOM_BYTES,

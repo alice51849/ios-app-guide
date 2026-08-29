@@ -272,6 +272,22 @@ class PublishInventoryTests(unittest.TestCase):
                 (output / relative).stat().st_ino,
             )
 
+    def test_source_bound_v3_deployment_manifest_is_preserved(self) -> None:
+        deployment = (
+            '{"version":3,"source_commit":"'
+            + SHA
+            + '","route_count":48}\n'
+        ).encode("utf-8")
+        path = self.source / ".well-known" / "deployment.json"
+        path.write_bytes(deployment)
+        output = self.base / "publish-v3"
+        manifest = self._run(output=output)
+        self.assertTrue(manifest["generated"]["deployment_from_source"])
+        self.assertEqual(
+            deployment,
+            (output / ".well-known/deployment.json").read_bytes(),
+        )
+
     def test_sparse_git_tree_dry_run_matches_worktree_inventory(self) -> None:
         subprocess.run(
             ["git", "init", "--quiet", str(self.source)],
@@ -406,6 +422,12 @@ class PublishInventoryTests(unittest.TestCase):
             "_engine.geo.tests.test_publish_inventory",
             pages,
         )
+        self.assertIn("repository: alice51849/00_GrowthEngine", pages)
+        prepare = pages.index("--prepare-pages-deployment")
+        inventory = pages.index("_engine/geo/publish_inventory.py")
+        upload = pages.index("actions/upload-pages-artifact@v3")
+        self.assertLess(prepare, inventory)
+        self.assertLess(inventory, upload)
 
 
 if __name__ == "__main__":

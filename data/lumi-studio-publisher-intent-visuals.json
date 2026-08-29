@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://alice51849.github.io/ios-app-guide/visuals/",
-  "dateModified": "2026-08-28",
+  "dateModified": "2026-08-29",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -10,8 +10,8 @@
     "url": "https://alice51849.github.io/ios-app-guide"
   },
   "source_dataset": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "content_digest": "fbb2cf1b41d5be67c7ae17c2243c71dd91b48638667a2ace35dc4717f6d035a1",
-  "generation_digest": "1882947dbe76ae135504758b7c90cf3103680d59002f804d0027b10142822f73",
+  "content_digest": "f23a5f1a85e6e1703a8c2ebb245cf830b49804c1bb59f5af023fefbb7869fa6b",
+  "generation_digest": "69afc07798a1f486bae7c9b8c5993ee9279023ad8f41fe05dfb7e9675276cd7b",
   "ordering": "official_locale_order_then_alphabetical_app_name",
   "app_count": 46,
   "locale_count": 50,
@@ -78,7 +78,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ar-SA/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/battai.html",
       "app_store_url": "https://apps.apple.com/sa/app/id6802423998?pt=118326163&ct=iag_visual_ar_sa&mt=8",
-      "sha256": "7f10fd035f52a748f24a76f77d80ada7322fe42c60afc76e9ab226f7c1ada522"
+      "sha256": "98000f4054d8a85b27221a6fc20bdf7a5b826ea2a6431f89c948ddf30579a433"
     },
     {
       "locale": "ar-SA",
@@ -538,7 +538,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/bn-BD/battai.html",
       "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_visual_bn_bd&mt=8",
-      "sha256": "ecf3c754b041c3c5853ec330367ae07df680fdb66c19c21b5f5cc03d4e9dc1f6"
+      "sha256": "bbbe5d3ab91e29c6acd99aa27fbdab0baedbd30cab0487a13e37b7ad48409b9e"
     },
     {
       "locale": "bn-BD",
@@ -998,7 +998,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ca/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ca/battai.html",
       "app_store_url": "https://apps.apple.com/es/app/id6802423998?pt=118326163&ct=iag_visual_ca&mt=8",
-      "sha256": "44c14df3243c7c68106ecc2ef7bc45c18e31e43b5035050f08ad8d8f4766cadb"
+      "sha256": "a83e06ba675cfd2be8409c5352d2681b6cfccbc075bba56f3d8315dbc55b74c3"
     },
     {
       "locale": "ca",
@@ -1458,7 +1458,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/cs/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/cs/battai.html",
       "app_store_url": "https://apps.apple.com/cz/app/id6802423998?pt=118326163&ct=iag_visual_cs&mt=8",
-      "sha256": "7fa13508e4ae6b032ce37bca414206e01199206626a8579f119931f82e608d5c"
+      "sha256": "dda0f873465410a66766f55a0beff07e185c66c0fecea41821287ba630e7a67a"
     },
     {
       "locale": "cs",
@@ -1918,7 +1918,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/da/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/da/battai.html",
       "app_store_url": "https://apps.apple.com/dk/app/id6802423998?pt=118326163&ct=iag_visual_da&mt=8",
-      "sha256": "7986d48a2ee022a54139b63fe0e852246ca201a5b07dec6d71199ed5e6465a3a"
+      "sha256": "3995ac560013c9206e1edf944c94af2981e11bb3e39b5404c860f8ee2461742d"
     },
     {
       "locale": "da",
@@ -2378,7 +2378,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/de-DE/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/de-DE/battai.html",
       "app_store_url": "https://apps.apple.com/de/app/id6802423998?pt=118326163&ct=iag_visual_de_de&mt=8",
-      "sha256": "b70418a52d9e659bc798102c5664a597e725e83a8bc570a06e730b2597b981c7"
+      "sha256": "c9cacf33fde2493245d90272155352359742ca8257e23fa5ffe8439127fad0aa"
     },
     {
       "locale": "de-DE",
@@ -2838,7 +2838,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/el/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/el/battai.html",
       "app_store_url": "https://apps.apple.com/gr/app/id6802423998?pt=118326163&ct=iag_visual_el&mt=8",
-      "sha256": "ea9b3589204c8bae2140e2b1f65fba6fc822778e605b3f1840843f403ef41f68"
+      "sha256": "8e7874f2cef42a6994b79caa182279185537bbcfe00c75468601d737e415800c"
     },
     {
       "locale": "el",
@@ -5138,7 +5138,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/es-ES/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-ES/battai.html",
       "app_store_url": "https://apps.apple.com/es/app/id6802423998?pt=118326163&ct=iag_visual_es_es&mt=8",
-      "sha256": "7cface3d9d8bc0114035713ff922752734da278cb63dbad3367d97e6071d3ac9"
+      "sha256": "3224167f008fe5cd098ba47d6a28bafdda331e5d3acf36515f583c85da868e95"
     },
     {
       "locale": "es-ES",
@@ -5598,7 +5598,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/es-MX/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/es-MX/battai.html",
       "app_store_url": "https://apps.apple.com/mx/app/id6802423998?pt=118326163&ct=iag_visual_es_mx&mt=8",
-      "sha256": "39faa78e2b527fcdf8a07539b9c80d95d79864f178d989be1eaf4e6850d2b22c"
+      "sha256": "5d51a93f6e0cdeff6a14ea80142882246d0d27d91710d5d09b475793e0cc7487"
     },
     {
       "locale": "es-MX",
@@ -6058,7 +6058,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/fi/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fi/battai.html",
       "app_store_url": "https://apps.apple.com/fi/app/id6802423998?pt=118326163&ct=iag_visual_fi&mt=8",
-      "sha256": "f9015f3209e0976e7b3f1ac7bae528ff065c3681519b39fe1be186f2072315ec"
+      "sha256": "db3aa336ae6b2d8c41455cee9bb7e94f70e97ca5fd6846baeea88c0031471a02"
     },
     {
       "locale": "fi",
@@ -6518,7 +6518,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-CA/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-CA/battai.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6802423998?pt=118326163&ct=iag_visual_fr_ca&mt=8",
-      "sha256": "308ca4c19e9c590a7b8770e517902d944ee12410f300b8d3a5bc5c033d1edbf1"
+      "sha256": "97e3363b02a4fc98c93c880d61d864396af2e231060459d9787747ac0323021f"
     },
     {
       "locale": "fr-CA",
@@ -6978,7 +6978,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-FR/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/fr-FR/battai.html",
       "app_store_url": "https://apps.apple.com/fr/app/id6802423998?pt=118326163&ct=iag_visual_fr_fr&mt=8",
-      "sha256": "79ee8918187fb38c1fb626d60f4d49d4fb8bbb4b5a862d48e2236d6d8f75ae52"
+      "sha256": "56a4ad30417479f6ae2f546dfeef5e7c5494d329a28e43664fe91c09515d5e16"
     },
     {
       "locale": "fr-FR",
@@ -7438,7 +7438,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/gu-IN/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/gu-IN/battai.html",
       "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_visual_gu_in&mt=8",
-      "sha256": "1d326c046931ae7bfdc845dcdbe6484264a6954848f93fab12fdef5417bde4f0"
+      "sha256": "2d64384b6d61f38b6b1f1c1d1c3430b5463cf689cb12fb21855d70640c7c65b3"
     },
     {
       "locale": "gu-IN",
@@ -7898,7 +7898,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/he/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/he/battai.html",
       "app_store_url": "https://apps.apple.com/il/app/id6802423998?pt=118326163&ct=iag_visual_he&mt=8",
-      "sha256": "a7ed37f252eaf40e35f6c8f135368f13cbe1c3bbd86fc707a6f93f77a94b029a"
+      "sha256": "41ddc9f252a69ed150b802b975f5e15f3bb119658eb6f0d8962c670441a714e9"
     },
     {
       "locale": "he",
@@ -8358,7 +8358,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/hi/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hi/battai.html",
       "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_visual_hi&mt=8",
-      "sha256": "4b9ee461ee7fdb75bf12c2d02c48e1f24848975698adb32049a06d163185036d"
+      "sha256": "999dec1c9e15561be1322fb5ce1a83ca7494b8399becaa1c8cb219ddd11ef1bf"
     },
     {
       "locale": "hi",
@@ -8818,7 +8818,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/hr/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hr/battai.html",
       "app_store_url": "https://apps.apple.com/hr/app/id6802423998?pt=118326163&ct=iag_visual_hr&mt=8",
-      "sha256": "4842986ec9cdb12b815a6ccec8af1b18a9b69d318128f961c2f07d5dbb6e21fe"
+      "sha256": "1da3f14228967b8ac4c350374b3d00c7c40ddfd985818fb194c4172b8cf525bf"
     },
     {
       "locale": "hr",
@@ -9278,7 +9278,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/hu/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/battai.html",
       "app_store_url": "https://apps.apple.com/hu/app/id6802423998?pt=118326163&ct=iag_visual_hu&mt=8",
-      "sha256": "fe3ac83bae70849356a44c4957f48a320771605021c5afaf3a29b88ca45a223a"
+      "sha256": "a13d575fd1baf3023b5168842682fa5d36b8c65c0f1fbaea0a64630d9504c398"
     },
     {
       "locale": "hu",
@@ -9738,7 +9738,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/id/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/id/battai.html",
       "app_store_url": "https://apps.apple.com/id/app/id6802423998?pt=118326163&ct=iag_visual_id&mt=8",
-      "sha256": "a8e957a03efd89755b7bda9164077f6ba820fec94e492b5b2edc00f0f036a388"
+      "sha256": "bb57b46eec0d46cb4d2bd89fb627868b6ed001ecee833bc10af592329446ce9b"
     },
     {
       "locale": "id",
@@ -10198,7 +10198,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/it/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/it/battai.html",
       "app_store_url": "https://apps.apple.com/it/app/id6802423998?pt=118326163&ct=iag_visual_it&mt=8",
-      "sha256": "b6f09a8395c4461af39062f06fe5c992aa4347eb813c3d38bea6aaa303063425"
+      "sha256": "3651d8d608a00848557a664a3b9642d930487b5f94aee9b7559b874eda8cec12"
     },
     {
       "locale": "it",
@@ -10658,7 +10658,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ja/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/battai.html",
       "app_store_url": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=iag_visual_ja&mt=8",
-      "sha256": "3dc8934d0a7e9bdfaab819f10c40844f3dd1831b41eb09edbf97005517320dfa"
+      "sha256": "5d4ddbbf3b03e07e1124af2d552b0605262c7c8b89538bca77abc0f7917a2079"
     },
     {
       "locale": "ja",
@@ -11118,7 +11118,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/kn-IN/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/kn-IN/battai.html",
       "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_visual_kn_in&mt=8",
-      "sha256": "b1ad7e7ea4aa143ae02b69c4c2e0f937956c9ef669e2c7a6e6a65a0a4ed07682"
+      "sha256": "42e6e249d5752654fd3683a459f632c3bf74d77c33e59c382543fee8b10935bf"
     },
     {
       "locale": "kn-IN",
@@ -11578,7 +11578,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ko/battai.html",
       "app_store_url": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=iag_visual_ko&mt=8",
-      "sha256": "2865cf444832bfc847157a652ef807c689c2d3958424390bbcfa4b6f85475d2a"
+      "sha256": "7bb56f20c0217f302a5b521b80fead43b5a8d53a1ed277cbd041b1edbe1ba218"
     },
     {
       "locale": "ko",
@@ -12038,7 +12038,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ml-IN/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/battai.html",
       "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_visual_ml_in&mt=8",
-      "sha256": "338d54d4847da9096d87249bb454e5498b40d459a282aaf49bae05904ab04dc3"
+      "sha256": "6fb297a7aeb409cef2da7d032d3240aa1e1777131116734087b6d1de51e4e59a"
     },
     {
       "locale": "ml-IN",
@@ -12498,7 +12498,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/mr-IN/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/battai.html",
       "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_visual_mr_in&mt=8",
-      "sha256": "93b2620cb5fcafa64b6949998a78165c524ed57dedc99ad10ceaf5c4c7dd6690"
+      "sha256": "356df9d329ced9be2e7989bd3749e0cfc2456889c3833791364db30c4c88ec35"
     },
     {
       "locale": "mr-IN",
@@ -12958,7 +12958,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ms/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ms/battai.html",
       "app_store_url": "https://apps.apple.com/my/app/id6802423998?pt=118326163&ct=iag_visual_ms&mt=8",
-      "sha256": "b563e4121c785b6dd5fc823736b341e143df62c219e440d6e9f811f039e99dd8"
+      "sha256": "5331afc9fa17a5e1527c7ba39f4b97d525fb7c3d4f84185556ca90841357d75e"
     },
     {
       "locale": "ms",
@@ -13418,7 +13418,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/nl-NL/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/nl-NL/battai.html",
       "app_store_url": "https://apps.apple.com/nl/app/id6802423998?pt=118326163&ct=iag_visual_nl_nl&mt=8",
-      "sha256": "5332f23e6876ceabf69a486a41c98f589d846dbbd95143f0d5df31d03cd3a3e1"
+      "sha256": "3aaa30e1cde7fbbaef7975addf8cf3b18bbd5c29ff4c3f03891862cb65c4d06e"
     },
     {
       "locale": "nl-NL",
@@ -13878,7 +13878,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/no/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/no/battai.html",
       "app_store_url": "https://apps.apple.com/no/app/id6802423998?pt=118326163&ct=iag_visual_no&mt=8",
-      "sha256": "174dce17c7a94d92de86a39516a4fcf069806d663fcc7b31d8556ac085a58f10"
+      "sha256": "b8665eb3b7a47b62dfbfdbdb5cad6cddb30d5d544fef6f531d81bb8771f44b04"
     },
     {
       "locale": "no",
@@ -14338,7 +14338,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/or-IN/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/or-IN/battai.html",
       "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_visual_or_in&mt=8",
-      "sha256": "adefc62fa810830b04d9c4d81f739730cab14f73376953bfa879c52662fad231"
+      "sha256": "a36bb5b8b9eddbbbbc778551d3558230bcb7efad7c3a65f98c4d2a0bd998ea6b"
     },
     {
       "locale": "or-IN",
@@ -14798,7 +14798,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/pa-IN/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pa-IN/battai.html",
       "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_visual_pa_in&mt=8",
-      "sha256": "54a8e16e6c1adf1e3e99ac5a5c3ad4925ff3aa377570f7c48b05e31398dc2d57"
+      "sha256": "150666469288a65105fe1e031e2b1c5e1bd65c74ebdfe54cc14e5fd7ace50b35"
     },
     {
       "locale": "pa-IN",
@@ -15258,7 +15258,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/pl/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pl/battai.html",
       "app_store_url": "https://apps.apple.com/pl/app/id6802423998?pt=118326163&ct=iag_visual_pl&mt=8",
-      "sha256": "f71a361b2dfe92c399233da07670d4fcfce62e631cb09dd226e2c135443031ef"
+      "sha256": "39b9a14e2d8c3e70d6084f5aa4f74932e3e1232908428180ae3b4a4dbf652253"
     },
     {
       "locale": "pl",
@@ -15718,7 +15718,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-BR/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/battai.html",
       "app_store_url": "https://apps.apple.com/br/app/id6802423998?pt=118326163&ct=iag_visual_pt_br&mt=8",
-      "sha256": "08213ed71bf9487535a9541fe59274150c761a863828a44c711fe68ff5a3d88d"
+      "sha256": "caf7b07b4ea311373ef7163effb69098511152f75c6a7d8b8703f9e484d274fb"
     },
     {
       "locale": "pt-BR",
@@ -16178,7 +16178,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-PT/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-PT/battai.html",
       "app_store_url": "https://apps.apple.com/pt/app/id6802423998?pt=118326163&ct=iag_visual_pt_pt&mt=8",
-      "sha256": "7381fc9f520518125a3e543a1723f6ee034fb555d9b24c9a6b294747382e1725"
+      "sha256": "1f6ced7904972d79dd7c505898e721e5a8e2ae27b60d37d9d1fea610f5fb6fe6"
     },
     {
       "locale": "pt-PT",
@@ -16638,7 +16638,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ro/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ro/battai.html",
       "app_store_url": "https://apps.apple.com/ro/app/id6802423998?pt=118326163&ct=iag_visual_ro&mt=8",
-      "sha256": "8b5ae5d0f474c1a21338c7ed50eb124bd493a37460ce00486ee8f950b973447f"
+      "sha256": "dbc34d7e8634c34ed8eced619f3109a65c1a7f730137a6d254e15fc962daef73"
     },
     {
       "locale": "ro",
@@ -17098,7 +17098,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ru/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ru/battai.html",
       "app_store_url": "https://apps.apple.com/ru/app/id6802423998?pt=118326163&ct=iag_visual_ru&mt=8",
-      "sha256": "9873d07b366f105ecf773c6e854e9f99e8753f33c6f5ea3c6b0a879ae6bc3dbb"
+      "sha256": "eaa58492073762a03ddedaf1fbd479858e8aa35d3e85ead9f43e665c39480423"
     },
     {
       "locale": "ru",
@@ -17558,7 +17558,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/sk/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sk/battai.html",
       "app_store_url": "https://apps.apple.com/sk/app/id6802423998?pt=118326163&ct=iag_visual_sk&mt=8",
-      "sha256": "5b7934fbfcf4e173544cfcd2379e8a589a0c9137ea9d5ad7831b58716a943fd8"
+      "sha256": "937a1ad3e18a7c91b745b8f97b6eb44a689410a665c0168a91b4d598abe740d9"
     },
     {
       "locale": "sk",
@@ -18018,7 +18018,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/sl-SI/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sl-SI/battai.html",
       "app_store_url": "https://apps.apple.com/si/app/id6802423998?pt=118326163&ct=iag_visual_sl_si&mt=8",
-      "sha256": "b1cac619873566045e2a349cde76cbfe1ee39095a6075f0edf0421e603efcb1c"
+      "sha256": "e25ea1cb75b970b1ec8ba3cd5d1fde59105b10904d4286949d3b861eb66ea708"
     },
     {
       "locale": "sl-SI",
@@ -18478,7 +18478,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/sv/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/battai.html",
       "app_store_url": "https://apps.apple.com/se/app/id6802423998?pt=118326163&ct=iag_visual_sv&mt=8",
-      "sha256": "5c068e704fae2e4ea61f32b17a7c6a35f8531d0f36f970b3c781a02fdcf79b22"
+      "sha256": "b15f8266296ecf6267c7930daae622e0ea5df80dcd55b620d3c29ac5673a25cc"
     },
     {
       "locale": "sv",
@@ -18938,7 +18938,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ta-IN/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ta-IN/battai.html",
       "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_visual_ta_in&mt=8",
-      "sha256": "d7fac1f53d93f5452659693d05018cde1856766a552e8d3125936af244fda9e1"
+      "sha256": "7d8af660dffb81eff271056f7c0ad52e51e9d9e785daf062170233f558100b12"
     },
     {
       "locale": "ta-IN",
@@ -19398,7 +19398,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/te-IN/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/te-IN/battai.html",
       "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_visual_te_in&mt=8",
-      "sha256": "47a479ad8c0e408f49c79444b17199bfc4a6bd778d454ae746588551b14c459a"
+      "sha256": "7ae3f85fb783a158243012b3069c24708c3f28d3a52ef1898aed9089e981c1b7"
     },
     {
       "locale": "te-IN",
@@ -19858,7 +19858,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/th/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/th/battai.html",
       "app_store_url": "https://apps.apple.com/th/app/id6802423998?pt=118326163&ct=iag_visual_th&mt=8",
-      "sha256": "dddc521efe114404c54bbc5ddef50ceddcf14c6f0d01bade632c4e0d3daa87ce"
+      "sha256": "251506a342efa81beb3ae47a267f769cfd94f309aa7cd15289d49ba5ae2863a3"
     },
     {
       "locale": "th",
@@ -20318,7 +20318,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/tr/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/tr/battai.html",
       "app_store_url": "https://apps.apple.com/tr/app/id6802423998?pt=118326163&ct=iag_visual_tr&mt=8",
-      "sha256": "7d4905c1da43f596017cb8699a3991cf872d8e333ebcaba5af27964ecd9fde1d"
+      "sha256": "e6f93905b33e7f888e2b13524ed8320a1b5e0005fd14a5d376a636c919cb771e"
     },
     {
       "locale": "tr",
@@ -20778,7 +20778,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/uk/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/uk/battai.html",
       "app_store_url": "https://apps.apple.com/ua/app/id6802423998?pt=118326163&ct=iag_visual_uk&mt=8",
-      "sha256": "394aab21294a665b107808dffdf25b5ece471dbac26dd36671884187077b7e41"
+      "sha256": "c5541bb3dd055af79299c4310d8fca6946e27e2b37455b8360e35bd85f81dc9a"
     },
     {
       "locale": "uk",
@@ -21238,7 +21238,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ur-PK/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ur-PK/battai.html",
       "app_store_url": "https://apps.apple.com/pk/app/id6802423998?pt=118326163&ct=iag_visual_ur_pk&mt=8",
-      "sha256": "377fd016881cea7d0c92ce48e91faa2fedf0cedc2bcd72e7c4f51b8b9b385f59"
+      "sha256": "6e9dba087c97ffa7ea95e0a083789d651460eca9768e2db130dad26670b5f06c"
     },
     {
       "locale": "ur-PK",
@@ -21698,7 +21698,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/vi/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/vi/battai.html",
       "app_store_url": "https://apps.apple.com/vn/app/id6802423998?pt=118326163&ct=iag_visual_vi&mt=8",
-      "sha256": "d196a5b7a646661d24e10af87f6688ee53f80e0d5e16cf89ba4c0bc0cbf974e9"
+      "sha256": "b0f07296fd473ec516109e4b9df4b6149998078911ca2c88735d2db4fc153c93"
     },
     {
       "locale": "vi",
@@ -22158,7 +22158,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/battai.html",
       "app_store_url": "https://apps.apple.com/cn/app/id6802423998?pt=118326163&ct=iag_visual_zh_hans&mt=8",
-      "sha256": "0780f34854b203f70f6d91f34b6ba6b1a31b08749fa57223fbf80c5150dc2aa5"
+      "sha256": "77bb4e85df8ee9f2a7c0faab2c339b55ab2fd89c55ef1d2ca6e200c764d1c090"
     },
     {
       "locale": "zh-Hans",
@@ -22618,7 +22618,7 @@
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/battai.html",
       "app_store_url": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=iag_visual_zh_hant&mt=8",
-      "sha256": "5494c190ee461605533dc020201926cdbdd8892149ceff3cf1a046525207ac1b"
+      "sha256": "20a257f5cbe1a11700da5b9e4187d41d15c780536d73a57f3789f097cba94490"
     },
     {
       "locale": "zh-Hant",

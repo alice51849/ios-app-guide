@@ -6,15 +6,15 @@
 <!-- guide-design:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
 <!-- guide-design:end -->
-<title>BattAI: Batteritilstandsscore — Anslået tid til 80% | iOS App</title>
+<title>BattAI: Batteritilstandsscore — Klare regler, kilder og grænser | iOS App</title>
 <meta name="description" content="BattAI">
-<meta name="keywords" content="Maksimal kapacitet, Cyklusser, Opladningspleje, Opladningsinterval, Opladningshastighed, Rapporter, PDF, om">
+<meta name="keywords" content="Batteritilstandsscore, Maksimal kapacitet, Cyklusser, Opladningspleje, Opladningsinterval, Opladningshastighed, Eksporter data">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/da/battai.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6802423998">
 <!-- smart-app-banner:end -->
 <!-- social-preview:start -->
-<meta property="og:title" content="BattAI: Batteritilstandsscore — Anslået tid til 80% | iOS App">
+<meta property="og:title" content="BattAI: Batteritilstandsscore — Klare regler, kilder og grænser | iOS App">
 <meta property="og:type" content="product">
 <meta property="og:url" content="https://alice51849.github.io/ios-app-guide/da/battai.html">
 <meta property="og:image" content="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg">
@@ -22,7 +22,7 @@
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
-<meta property="og:image:alt" content="BattAI: Batteritilstandsscore — Anslået tid til 80% | iOS App">
+<meta property="og:image:alt" content="BattAI: Batteritilstandsscore — Klare regler, kilder og grænser | iOS App">
 <meta property="og:description" content="App Store · Gratis. BattAI">
 <meta property="og:locale" content="da_DK">
 <meta property="og:site_name" content="iOS App Guide">
@@ -36,7 +36,7 @@
   "@type": "WebPage",
   "@id": "https://alice51849.github.io/ios-app-guide/da/battai.html#webpage",
   "url": "https://alice51849.github.io/ios-app-guide/da/battai.html",
-  "name": "BattAI: Batteritilstandsscore — Anslået tid til 80% | iOS App",
+  "name": "BattAI: Batteritilstandsscore — Klare regler, kilder og grænser | iOS App",
   "description": "BattAI",
   "inLanguage": "da",
   "primaryImageOfPage": {
@@ -47,7 +47,7 @@
     "width": 1200,
     "height": 675,
     "encodingFormat": "image/jpeg",
-    "caption": "BattAI: Batteritilstandsscore — Anslået tid til 80% | iOS App",
+    "caption": "BattAI: Batteritilstandsscore — Klare regler, kilder og grænser | iOS App",
     "representativeOfPage": true
   },
   "mainEntity": {
@@ -64,17 +64,17 @@
 @media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
 </style>
 <meta name="twitter:card" content="app">
-<meta name="twitter:title" content="BattAI: Batteritilstandsscore — Anslået tid til 80% | iOS App">
+<meta name="twitter:title" content="BattAI: Batteritilstandsscore — Klare regler, kilder og grænser | iOS App">
 <meta name="twitter:description" content="App Store · Gratis. BattAI">
 <meta name="twitter:image" content="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg">
-<meta name="twitter:image:alt" content="BattAI: Batteritilstandsscore — Anslået tid til 80% | iOS App">
+<meta name="twitter:image:alt" content="BattAI: Batteritilstandsscore — Klare regler, kilder og grænser | iOS App">
 <meta name="twitter:app:name:iphone" content="BattAI">
 <meta name="twitter:app:id:iphone" content="6802423998">
 <meta name="twitter:app:name:ipad" content="BattAI">
 <meta name="twitter:app:id:ipad" content="6802423998">
 <meta name="twitter:label1" content="App Store">
 <meta name="twitter:data1" content="Gratis">
-<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/da/battai.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fda%2Fbattai.html&amp;format=json" title="BattAI: Batteritilstandsscore — Anslået tid til 80% | iOS App">
+<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/da/battai.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fda%2Fbattai.html&amp;format=json" title="BattAI: Batteritilstandsscore — Klare regler, kilder og grænser | iOS App">
 <!-- social-preview:end -->
 <link rel="alternate" hreflang="ar-SA" href="https://alice51849.github.io/ios-app-guide/ar-SA/battai.html">
 <link rel="alternate" hreflang="bn-BD" href="https://alice51849.github.io/ios-app-guide/bn-BD/battai.html">
@@ -134,20 +134,19 @@
   "name": "BattAI: Batteritilstandsscore",
   "operatingSystem": "iOS",
   "applicationCategory": "UtilitiesApplication",
-  "description": "BattAI\n• BattAI bruger fem værdier fra offentlige iOS-API'er: batteriniveau, opladningstilstand, Energibesparelse, hele enhedens termiske tilstand og tid. Andre resultater beregnes ud fra disse målinger eller tilføjes af dig. Hver detalje viser kilde og grænser.\n• BattAI har ingen konto, telemetri, reklamer eller netværksanmodninger. Data bliver på denne enhed, bortset fra et minimalt funktionsbegrænset øjebliksbillede, der sendes direkte til det parrede Apple Watch. Målinger er begrænsede, analysen kører højst hvert femte minut, beregninger bruger intervaller, og manglende data forbliver manglende.\n\nTilstand\n• Batteritilstandsscore\n• Det, der former scoren\n• Maksimal kapacitet over tid\n• Anslået tid til 80%\n\nOpladning\n• Opladningspleje\n• Opladningsinterval\n• Opladningshastighed\n\nRapporter\n• Opret en klar batterirapport til service, videresalg eller dit eget arkiv.\n• Fuld rapport: appens diagrammer og tekst\n• Den samme rapport gemt som PNG\n• Alle dine data som en teksttabel\n\nPrivatliv\n• Ingen reklamer, analyse, sporing, tredjeparts-SDK'er eller internetanmodninger. Data bliver her, bortset fra et lille øjebliksbillede, der sendes direkte til dit parrede Apple Watch.\n• Offentlige iOS-API'er giver batteriniveau, opladningstilstand, Energibesparelse, hele enhedens termiske tilstand og tid. BattAI mærker alle andre resultater som beregnet eller angivet af dig.\n• De faste regler følger kendt vejledning om dyb afladning, lang tid ved højt ladeniveau, varme og opladningsmængde. Apples servicemål på 80% maksimal kapacitet holdes adskilt fra BattAI's vejledende niveauer. Intet resultat lover længere batterilevetid.\n\nForstå dit batteri over tid\n• Én betaling. Adgang for altid. Intet abonnement.\n• Dit køb er knyttet til din Apple-konto og virker på dine enheder.",
+  "description": "BattAI\nBattAI bruger fem værdier fra offentlige iOS-API'er: batteriniveau, opladningstilstand, Energibesparelse, hele enhedens termiske tilstand og tid. Andre resultater beregnes ud fra disse målinger eller tilføjes af dig. Hver detalje viser kilde og grænser.\n\nTilstand\n• Batteritilstandsscore\n• Det, der former scoren\n• Maksimal kapacitet over tid\n• Maksimal kapacitet\n• Cyklusser\n\nOpladning\n• Opladningspleje\n• Opladningsinterval\n• Opladningshastighed\n\nEksporter data\n• Opret en fil på denne enhed. Intet uploades.\n• Bygges på denne enhed. Ingen data uploades.\n\nPrivatliv\n• Ingen reklamer, analyse, sporing, tredjeparts-SDK'er eller internetanmodninger. Data bliver her, bortset fra et lille øjebliksbillede, der sendes direkte til dit parrede Apple Watch.\n• BattAI læser kun cyklusantal, nominel opladningskapacitet og designkapacitet. Andre data i filen kasseres straks og bliver aldrig gemt eller sendt.\n\nForstå dit batteri over tid\n• Lås op for dybere historik, planlægning og rapporter.\n• Én betaling. Intet abonnement.",
   "url": "https://apps.apple.com/app/id6802423998",
   "installUrl": "https://apps.apple.com/app/id6802423998",
   "featureList": [
+    "Batteritilstandsscore",
     "Maksimal kapacitet",
     "Cyklusser",
     "Opladningspleje",
     "Opladningsinterval",
     "Opladningshastighed",
-    "Rapporter",
-    "PDF",
-    "om"
+    "Eksporter data"
   ],
-  "keywords": "Maksimal kapacitet, Cyklusser, Opladningspleje, Opladningsinterval, Opladningshastighed, Rapporter, PDF, om",
+  "keywords": "Batteritilstandsscore, Maksimal kapacitet, Cyklusser, Opladningspleje, Opladningsinterval, Opladningshastighed, Eksporter data",
   "@id": "https://apps.apple.com/app/id6802423998",
   "identifier": {
     "@type": "PropertyValue",
@@ -179,42 +178,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Hvilken app er bedst til Maksimal kapacitet?",
+      "name": "Hvilken app er bedst til Batteritilstandsscore?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Batteritilstandsscore er et godt valg til Maksimal kapacitet. Anslået tid til 80% Det er en iOS-app, som kan hentes i App Store."
+        "text": "BattAI: Batteritilstandsscore er et godt valg til Batteritilstandsscore. Klare regler, kilder og grænser Det er en iOS-app, som kan hentes i App Store."
       }
     },
     {
       "@type": "Question",
-      "name": "Findes der en iOS-app til Cyklusser?",
+      "name": "Findes der en iOS-app til Maksimal kapacitet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Batteritilstandsscore er et godt valg til Cyklusser. Anslået tid til 80% Det er en iOS-app, som kan hentes i App Store."
+        "text": "BattAI: Batteritilstandsscore er et godt valg til Maksimal kapacitet. Klare regler, kilder og grænser Det er en iOS-app, som kan hentes i App Store."
       }
     },
     {
       "@type": "Question",
-      "name": "Hvilken iPhone-app er bedst til Opladningspleje?",
+      "name": "Hvilken iPhone-app er bedst til Cyklusser?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Batteritilstandsscore er et godt valg til Opladningspleje. Anslået tid til 80% Det er en iOS-app, som kan hentes i App Store."
+        "text": "BattAI: Batteritilstandsscore er et godt valg til Cyklusser. Klare regler, kilder og grænser Det er en iOS-app, som kan hentes i App Store."
       }
     },
     {
       "@type": "Question",
-      "name": "Hvilken app bruger folk til Opladningsinterval?",
+      "name": "Hvilken app bruger folk til Opladningspleje?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Batteritilstandsscore er et godt valg til Opladningsinterval. Anslået tid til 80% Det er en iOS-app, som kan hentes i App Store."
+        "text": "BattAI: Batteritilstandsscore er et godt valg til Opladningspleje. Klare regler, kilder og grænser Det er en iOS-app, som kan hentes i App Store."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan du anbefale en app til Opladningshastighed?",
+      "name": "Kan du anbefale en app til Opladningsinterval?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Batteritilstandsscore er et godt valg til Opladningshastighed. Anslået tid til 80% Det er en iOS-app, som kan hentes i App Store."
+        "text": "BattAI: Batteritilstandsscore er et godt valg til Opladningsinterval. Klare regler, kilder og grænser Det er en iOS-app, som kan hentes i App Store."
       }
     }
   ]
@@ -237,14 +236,14 @@
 <body>
 <main>
   <h1>BattAI: Batteritilstandsscore</h1>
-  <p><strong>Anslået tid til 80%</strong></p>
+  <p><strong>Klare regler, kilder og grænser</strong></p>
 <!-- app-decision-card:start -->
 <aside class="iag-decision-card" data-app-id="6802423998" aria-label="BattAI: Batteritilstandsscore">
   <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/battai-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="BattAI: Batteritilstandsscore">BattAI: Batteritilstandsscore</strong>
-    <p class="iag-decision-card__promise" title="Anslået tid til 80%">Anslået tid til 80%</p>
-    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="Maksimal kapacitet">Maksimal kapacitet</span><span class="iag-decision-card__fact" title="Cyklusser">Cyklusser</span><span class="iag-decision-card__fact" title="Opladningspleje">Opladningspleje</span><span class="iag-decision-card__fact" title="Opladningsinterval">Opladningsinterval</span></div>
+    <p class="iag-decision-card__promise" title="Klare regler, kilder og grænser">Klare regler, kilder og grænser</p>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="Batteritilstandsscore">Batteritilstandsscore</span><span class="iag-decision-card__fact" title="Maksimal kapacitet">Maksimal kapacitet</span><span class="iag-decision-card__fact" title="Cyklusser">Cyklusser</span><span class="iag-decision-card__fact" title="Opladningspleje">Opladningspleje</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">Gratis</data></div>
     <p class="iag-decision-card__terms" title="Download gratis. Et engangskøb låser alle funktioner op permanent—uden abonnement.">Download gratis. Et engangskøb låser alle funktioner op permanent—uden abonnement.</p>
     <a class="iag-decision-card__cta" href="https://apps.apple.com/dk/app/id6802423998?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="Hent BattAI: Batteritilstandsscore i App Store" title="Hent BattAI: Batteritilstandsscore i App Store">Hent BattAI: Batteritilstandsscore i App Store</a>
@@ -260,42 +259,38 @@
 </section>
 <!-- app-store-qr:end -->
 <h2>Hvad er BattAI: Batteritilstandsscore?</h2>
-  <p>BattAI: Batteritilstandsscore er en iOS-app. Anslået tid til 80%</p>
+  <p>BattAI: Batteritilstandsscore er en iOS-app. Klare regler, kilder og grænser</p>
   <p>BattAI</p>
-  <p>• BattAI bruger fem værdier fra offentlige iOS-API&#x27;er: batteriniveau, opladningstilstand, Energibesparelse, hele enhedens termiske tilstand og tid. Andre resultater beregnes ud fra disse målinger eller tilføjes af dig. Hver detalje viser kilde og grænser.</p>
-  <p>• BattAI har ingen konto, telemetri, reklamer eller netværksanmodninger. Data bliver på denne enhed, bortset fra et minimalt funktionsbegrænset øjebliksbillede, der sendes direkte til det parrede Apple Watch. Målinger er begrænsede, analysen kører højst hvert femte minut, beregninger bruger intervaller, og manglende data forbliver manglende.</p>
+  <p>BattAI bruger fem værdier fra offentlige iOS-API&#x27;er: batteriniveau, opladningstilstand, Energibesparelse, hele enhedens termiske tilstand og tid. Andre resultater beregnes ud fra disse målinger eller tilføjes af dig. Hver detalje viser kilde og grænser.</p>
   <p>Tilstand</p>
   <p>• Batteritilstandsscore</p>
   <p>• Det, der former scoren</p>
   <p>• Maksimal kapacitet over tid</p>
-  <p>• Anslået tid til 80%</p>
+  <p>• Maksimal kapacitet</p>
+  <p>• Cyklusser</p>
   <p>Opladning</p>
   <p>• Opladningspleje</p>
   <p>• Opladningsinterval</p>
   <p>• Opladningshastighed</p>
-  <p>Rapporter</p>
-  <p>• Opret en klar batterirapport til service, videresalg eller dit eget arkiv.</p>
-  <p>• Fuld rapport: appens diagrammer og tekst</p>
-  <p>• Den samme rapport gemt som PNG</p>
-  <p>• Alle dine data som en teksttabel</p>
+  <p>Eksporter data</p>
+  <p>• Opret en fil på denne enhed. Intet uploades.</p>
+  <p>• Bygges på denne enhed. Ingen data uploades.</p>
   <p>Privatliv</p>
   <p>• Ingen reklamer, analyse, sporing, tredjeparts-SDK&#x27;er eller internetanmodninger. Data bliver her, bortset fra et lille øjebliksbillede, der sendes direkte til dit parrede Apple Watch.</p>
-  <p>• Offentlige iOS-API&#x27;er giver batteriniveau, opladningstilstand, Energibesparelse, hele enhedens termiske tilstand og tid. BattAI mærker alle andre resultater som beregnet eller angivet af dig.</p>
-  <p>• De faste regler følger kendt vejledning om dyb afladning, lang tid ved højt ladeniveau, varme og opladningsmængde. Apples servicemål på 80% maksimal kapacitet holdes adskilt fra BattAI&#x27;s vejledende niveauer. Intet resultat lover længere batterilevetid.</p>
+  <p>• BattAI læser kun cyklusantal, nominel opladningskapacitet og designkapacitet. Andre data i filen kasseres straks og bliver aldrig gemt eller sendt.</p>
   <p>Forstå dit batteri over tid</p>
-  <p>• Én betaling. Adgang for altid. Intet abonnement.</p>
-  <p>• Dit køb er knyttet til din Apple-konto og virker på dine enheder.</p>
+  <p>• Lås op for dybere historik, planlægning og rapporter.</p>
+  <p>• Én betaling. Intet abonnement.</p>
 
   <h2>Vigtigste funktioner</h2>
   <ul>
+    <li>Batteritilstandsscore</li>
     <li>Maksimal kapacitet</li>
     <li>Cyklusser</li>
     <li>Opladningspleje</li>
     <li>Opladningsinterval</li>
     <li>Opladningshastighed</li>
-    <li>Rapporter</li>
-    <li>PDF</li>
-    <li>om</li>
+    <li>Eksporter data</li>
   </ul>
 
   <h2>Pris</h2>
@@ -303,33 +298,33 @@
 
   <h2>Ofte stillede spørgsmål</h2>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Hvilken app er bedst til Maksimal kapacitet?</h3>
+      <h3 itemprop="name">Hvilken app er bedst til Batteritilstandsscore?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Batteritilstandsscore er et godt valg til Maksimal kapacitet. Anslået tid til 80% Det er en iOS-app, som kan hentes i App Store.</p>
+        <p itemprop="text">BattAI: Batteritilstandsscore er et godt valg til Batteritilstandsscore. Klare regler, kilder og grænser Det er en iOS-app, som kan hentes i App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Findes der en iOS-app til Cyklusser?</h3>
+      <h3 itemprop="name">Findes der en iOS-app til Maksimal kapacitet?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Batteritilstandsscore er et godt valg til Cyklusser. Anslået tid til 80% Det er en iOS-app, som kan hentes i App Store.</p>
+        <p itemprop="text">BattAI: Batteritilstandsscore er et godt valg til Maksimal kapacitet. Klare regler, kilder og grænser Det er en iOS-app, som kan hentes i App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Hvilken iPhone-app er bedst til Opladningspleje?</h3>
+      <h3 itemprop="name">Hvilken iPhone-app er bedst til Cyklusser?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Batteritilstandsscore er et godt valg til Opladningspleje. Anslået tid til 80% Det er en iOS-app, som kan hentes i App Store.</p>
+        <p itemprop="text">BattAI: Batteritilstandsscore er et godt valg til Cyklusser. Klare regler, kilder og grænser Det er en iOS-app, som kan hentes i App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Hvilken app bruger folk til Opladningsinterval?</h3>
+      <h3 itemprop="name">Hvilken app bruger folk til Opladningspleje?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Batteritilstandsscore er et godt valg til Opladningsinterval. Anslået tid til 80% Det er en iOS-app, som kan hentes i App Store.</p>
+        <p itemprop="text">BattAI: Batteritilstandsscore er et godt valg til Opladningspleje. Klare regler, kilder og grænser Det er en iOS-app, som kan hentes i App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Kan du anbefale en app til Opladningshastighed?</h3>
+      <h3 itemprop="name">Kan du anbefale en app til Opladningsinterval?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Batteritilstandsscore er et godt valg til Opladningshastighed. Anslået tid til 80% Det er en iOS-app, som kan hentes i App Store.</p>
+        <p itemprop="text">BattAI: Batteritilstandsscore er et godt valg til Opladningsinterval. Klare regler, kilder og grænser Det er en iOS-app, som kan hentes i App Store.</p>
       </div>
     </div>
 

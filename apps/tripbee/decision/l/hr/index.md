@@ -2,7 +2,7 @@
 title: "najbolja aplikacija za planiranje putovanja za iPhone"
 lang: "hr"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/hr/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"

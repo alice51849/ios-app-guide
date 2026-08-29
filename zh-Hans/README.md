@@ -93,7 +93,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **AI Brief** | AI Brief — 把资料整理成清晰上下文 \| iOS App | 更好的背景，更优的回答。 将截图、文件、笔记和文档转化为一份清晰的 AI 就绪摘要。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/aibriefpack.html) | [在 App Store 获取 AI Brief](https://apps.apple.com/cn/app/id6791658210?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **Aim990** | 适用于 iPhone 的最佳离线 TOEIC 备考应用及学习计划 | 第5部分看似简短，但不完整句子题目若语法和词汇不熟练会耗费大量时间。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [在 App Store 获取 Aim990 →](https://apps.apple.com/cn/app/id6784974530?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **Aim990 Plus** | Aim990 Plus — 15分钟攻克七大题型 \| iOS App | 把零散刷题变成一套经得住时间压力的训练流程。 | 付费下载 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/aim990plus.html) | [在 App Store 获取 Aim990 Plus](https://apps.apple.com/cn/app/id6792483140?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
-| **BattAI: 电池健康评分** | BattAI: 电池健康评分 — 预计到 80% 的时间 \| iOS App | BattAI • BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。 • BattAI 没有账户、遥测、广告或网络请求。数据留在这台设备上，只会把功能受限的最小快照直接发给已配对的 Apple Watch。取样频率受限，分析最快每 5 分钟一次；估算使用区间，缺失数据保持缺失。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/battai.html) | [在 App Store 获取 BattAI: 电池健康评分](https://apps.apple.com/cn/app/id6802423998?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
+| **BattAI: 电池健康评分** | BattAI: 电池健康评分 — 规则、来源和限制都说清楚 \| iOS App | BattAI BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/battai.html) | [在 App Store 获取 BattAI: 电池健康评分](https://apps.apple.com/cn/app/id6802423998?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **CalDaily 计算器与主题** | CalDaily 计算器与主题 — 桌面小组件、八种工具、计算记录 \| iOS App | 一台你会真正留着用的计算器，因为它记得每个数字背后的来龙去脉。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/caldaily.html) | [在 App Store 获取 CalDaily 计算器与主题](https://apps.apple.com/cn/app/id6794178671?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **CV Desk** | 2026 年最佳职业转型简历制作应用 | 转行时，简历问题不同：经验真实但纸面“无关”，ATS 过滤在人工阅读前就拒绝——CV Desk 专为此设计。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-resume-builder-app-for-career-changers-2026.html) | [在 App Store 获取 CV Desk →](https://apps.apple.com/cn/app/id6781337213?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
 | **Cyca** | 无需账户的最佳经期追踪应用 iPhone | 在数据敏感度极高的类别中，合适的经期追踪应用将所有内容——流量、情绪、症状、体温、亲密行为——保存在设备上，无账户，无云同步——Cyca 专为此设计。 | 免费开始使用 · 一次购买解锁 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-period-tracker-app-no-account-required-iphone.html) | [在 App Store 获取 Cyca →](https://apps.apple.com/cn/app/id6782251621?pt=118326163&ct=iag_gh_zh_hans&mt=8) |
@@ -146,6 +146,6 @@ JSON、JSONL 和 CSV 格式包含相同的 2,300 条记录。
 
 [首页](https://alice51849.github.io/ios-app-guide/zh-Hans/index.html) · [开放数据](https://alice51849.github.io/ios-app-guide/zh-Hans/data/lumi-studio-publisher-search-intent-catalog.html) · [许可协议](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-08-28
+更新日期: 2026-08-29
 
 CC BY 4.0 适用于原始目录编纂；应用名称和 App Store 标识归其所有者所有。

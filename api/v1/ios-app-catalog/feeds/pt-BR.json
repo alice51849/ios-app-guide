@@ -12,8 +12,8 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-27",
-    "contentDigest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+    "dateModified": "2026-08-29",
+    "contentDigest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 46
@@ -112,18 +112,18 @@
       "url": "https://alice51849.github.io/ios-app-guide/pt-BR/battai.html",
       "external_url": "https://apps.apple.com/br/app/id6802423998?pt=118326163&ct=iag_feed_pt_br&mt=8",
       "title": "BattAI: Saúde da bateria",
-      "content_text": "BattAI • O BattAI usa cinco dados das APIs públicas do iOS: nível da bateria, estado da carga, Pouca Energia, estado térmico do aparelho inteiro e hora. Os outros resultados são calculados com essas leituras ou adicionados por você. Cada dado mostra fonte e limites. • O BattAI não tem conta, telemetria, anúncios nem acesso à internet. Os dados ficam no aparelho, exceto por um resumo mínimo e limitado aos recursos enviado diretamente ao Apple Watch emparelhado. A amostragem é limitada, a análise roda no máximo a cada cinco minutos, estimativas usam faixas e dados ausentes continuam ausentes.",
+      "content_text": "BattAI O BattAI usa cinco dados das APIs públicas do iOS: nível da bateria, estado da carga, Pouca Energia, estado térmico do aparelho inteiro e hora. Os outros resultados são calculados com essas leituras ou adicionados por você. Cada dado mostra fonte e limites.",
       "tags": [
         "Pontuação de saúde da bateria",
         "Capacidade máxima",
         "Ciclos",
         "Cuidado na carga",
         "Faixa de carga",
-        "Relatórios",
-        "de"
+        "Velocidade de carga",
+        "Exportar dados"
       ],
       "language": "pt-BR",
-      "date_modified": "2026-08-27T11:21:51Z"
+      "date_modified": "2026-08-29T04:55:13Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",

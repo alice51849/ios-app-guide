@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-27",
-  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "cs",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -173,16 +173,16 @@
       "key": "battai",
       "app_store_id": "6802423998",
       "name": "BattAI: Skóre kondice baterie",
-      "summary": "BattAI • BattAI používá pět hodnot z veřejných API iOS: stav baterie, stav nabíjení, úsporný režim, tepelný stav celého zařízení a čas. Ostatní výsledky se počítají z těchto měření nebo z údajů, které přidáte. U každého údaje je uveden zdroj a omezení. • BattAI nemá účet, telemetrii, reklamy ani síťové požadavky. Data zůstávají v tomto zařízení, kromě minimálního snímku s omezenými funkcemi odeslaného přímo do spárovaných Apple Watch. Měření je omezené, analýza běží nejvýš jednou za pět minut, odhady používají rozmezí a chybějící data zůstávají chybějící.",
+      "summary": "BattAI BattAI používá pět hodnot z veřejných API iOS: stav baterie, stav nabíjení, úsporný režim, tepelný stav celého zařízení a čas. Ostatní výsledky se počítají z těchto měření nebo z údajů, které přidáte. U každého údaje je uveden zdroj a omezení.",
       "category": "utility",
       "search_terms": [
+        "Skóre kondice baterie",
         "Maximální kapacita",
         "Cykly",
         "Šetrnost nabíjení",
         "Rozsah nabití",
         "Rychlost nabíjení",
-        "Odhad času do 80%",
-        "Zprávy"
+        "Exportovat data"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

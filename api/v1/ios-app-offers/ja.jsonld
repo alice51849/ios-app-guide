@@ -6,7 +6,7 @@
   "name": "Lumi Studio 開発元検索意図カタログ",
   "description": "各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。",
   "inLanguage": "ja",
-  "dateModified": "2026-08-28",
+  "dateModified": "2026-08-29",
   "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -283,7 +283,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-battai",
         "url": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=iag_data_ja&mt=8",
         "name": "BattAI: バッテリー状態スコア",
-        "description": "BattAI • BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。 • BattAIにはアカウント、テレメトリ、広告、通信がありません。データはこのデバイス内に保存し、ペアリング済みApple Watchへ機能を限定した最小スナップショットだけを直接送ります。記録頻度を抑え、分析は最短でも5分間隔。推定は範囲で示し、欠けたデータは欠けたままです。",
+        "description": "BattAI BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "ja",
-          "description": "BattAI • BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。 • BattAIにはアカウント、テレメトリ、広告、通信がありません。データはこのデバイス内に保存し、ペアリング済みApple Watchへ機能を限定した最小スナップショットだけを直接送ります。記録頻度を抑え、分析は最短でも5分間隔。推定は範囲で示し、欠けたデータは欠けたままです。",
+          "description": "BattAI BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-battai"
           },

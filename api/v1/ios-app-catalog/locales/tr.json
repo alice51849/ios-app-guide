@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-27",
-  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "tr",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -177,17 +177,16 @@
       "key": "battai",
       "app_store_id": "6802423998",
       "name": "BattAI: Pil sağlığı puanı",
-      "summary": "BattAI • BattAI herkese açık iOS API’lerinden beş değer kullanır: pil düzeyi, şarj durumu, Düşük Güç Modu, cihazın genel termal durumu ve zaman. Diğer sonuçlar bu ölçümlerden hesaplanır veya sizin tarafınızdan eklenir. Her ayrıntı kaynağını ve sınırlarını gösterir. • BattAI’da hesap, telemetri, reklam veya ağ isteği yoktur. Veriler bu cihazda kalır; yalnızca asgari ve özellikleri sınırlı bir anlık görüntü doğrudan eşlenmiş Apple Watch’a gönderilir. Örnekleme sınırlıdır, analiz en fazla beş dakikada bir çalışır, tahminler aralık kullanır ve eksik veriler eksik kalır.",
+      "summary": "BattAI BattAI herkese açık iOS API’lerinden beş değer kullanır: pil düzeyi, şarj durumu, Düşük Güç Modu, cihazın genel termal durumu ve zaman. Diğer sonuçlar bu ölçümlerden hesaplanır veya sizin tarafınızdan eklenir. Her ayrıntı kaynağını ve sınırlarını gösterir.",
       "category": "utility",
       "search_terms": [
+        "Pil sağlığı puanı",
         "Maksimum kapasite",
         "Döngüler",
         "Şarj özeni",
         "Şarj aralığı",
         "Şarj hızı",
-        "%80’e tahmini süre",
-        "Raporlar",
-        "Cihaz ısısı"
+        "Verileri dışa aktar"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

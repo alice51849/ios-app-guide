@@ -2,7 +2,7 @@
 title: "नर्सों के लिए सर्वश्रेष्ठ ऑफ़लाइन दस्तावेज़ स्कैनर ऐप बिना क्लाउड के"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/hi/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6779977651"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -12,8 +12,8 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-27",
-    "contentDigest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+    "dateModified": "2026-08-29",
+    "contentDigest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 46
@@ -142,24 +142,18 @@
       "url": "https://alice51849.github.io/ios-app-guide/ko/battai.html",
       "external_url": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=iag_feed_ko&mt=8",
       "title": "BattAI: 배터리 상태 점수",
-      "content_text": "BattAI • BattAI가 공개 iOS API에서 쓰는 값은 배터리 잔량, 충전 상태, 저전력 모드, 기기 전체 열 상태, 시간까지 다섯 가지예요. 다른 결과는 기록에서 계산하거나 직접 추가해요. 각 항목에 출처와 한계를 표시해요. • BattAI에는 계정, 텔레메트리, 광고, 네트워크 요청이 없어요. 데이터는 이 기기에 저장하고, 페어링된 Apple Watch로 기능이 제한된 최소 스냅샷만 직접 보내요. 기록 빈도를 제한하고 분석은 최소 5분 간격으로 실행해요. 추정은 범위로 표시하고, 비어 있는 데이터는 그대로 둬요.",
+      "content_text": "BattAI BattAI가 공개 iOS API에서 쓰는 값은 배터리 잔량, 충전 상태, 저전력 모드, 기기 전체 열 상태, 시간까지 다섯 가지예요. 다른 결과는 기록에서 계산하거나 직접 추가해요. 각 항목에 출처와 한계를 표시해요.",
       "tags": [
+        "배터리 상태 점수",
         "성능 최대치",
         "사이클 수",
         "충전 관리",
         "충전 구간",
         "충전 속도",
-        "성능 최대치 추세",
-        "점수를 만드는 요소",
-        "배터리 정보 가져오기",
-        "리포트",
-        "PDF 배터리 리포트",
-        "무제한 기록",
-        "80% 계획 범위",
-        "PDF"
+        "데이터 내보내기"
       ],
       "language": "ko",
-      "date_modified": "2026-08-27T11:21:51Z"
+      "date_modified": "2026-08-29T04:55:13Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",

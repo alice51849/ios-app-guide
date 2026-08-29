@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description" xml:lang="uk" direction="ltr">
-<title id="title">BattAI: Стан батареї — Оцінка стану акумулятора | iOS App</title>
-<desc id="description">BattAI • BattAI використовує п’ять значень із публічних API iOS: рівень заряду, стан заряджання, режим низького енергоспоживання, тепловий стан усього пристрою й час. Інші результати обчислюються з цих показань або додаються вами. Кожен показник має джерело й обмеження. • BattAI не має облікового запису, телеметрії, реклами чи мережевих запитів. Дані залишаються на цьому пристрої, крім мінімального обмеженого знімка, який надсилається безпосередньо на спарений Apple Watch. Вибірка обмежена, аналіз виконується не частіше ніж раз на п’ять хвилин, оцінки подаються діапазонами, а відсутні дані лишаються відсутніми. Безкоштовно для початку · розблокування за одну покупку</desc>
+<title id="title">BattAI: Стан батареї — Чіткі правила, джерела й обмеження | iOS App</title>
+<desc id="description">BattAI BattAI використовує п’ять значень із публічних API iOS: рівень заряду, стан заряджання, режим низького енергоспоживання, тепловий стан усього пристрою й час. Інші результати обчислюються з цих показань або додаються вами. Кожен показник має джерело й обмеження. Безкоштовно для початку · розблокування за одну покупку</desc>
 <defs>
 <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
 <stop offset="0" stop-color="#172554"/>
@@ -22,8 +22,8 @@
 <text x="1025" y="114" text-anchor="middle" font-size="21" font-weight="700" fill="#ffffff" direction="ltr">uk</text>
 <text class="app-name" x="400" y="188" font-size="48" text-anchor="start">BattAI: Стан батареї</text>
 <text x="400" y="238" text-anchor="start" font-size="23" font-weight="650" fill="#e2e8f0" direction="ltr">App Store ID 6802423998</text>
-<text class="query" x="100" y="392" font-size="27" text-anchor="start">BattAI: Стан батареї — Оцінка стану акумулятора | iOS App</text>
-<text class="context" x="100" y="457" font-size="16" text-anchor="start" transform="translate(100 0) scale(0.1574 1) translate(-100 0)">BattAI • BattAI використовує п’ять значень із публічних API iOS: рівень заряду, стан заряджання, режим низького енергоспоживання, тепловий стан усього пристрою й час. Інші результати обчислюються з цих показань або додаються вами. Кожен показник має джерело й обмеження. • BattAI не має облікового запису, телеметрії, реклами чи мережевих запитів. Дані залишаються на цьому пристрої, крім мінімального обмеженого знімка, який надсилається безпосередньо на спарений Apple Watch. Вибірка обмежена, аналіз виконується не частіше ніж раз на п’ять хвилин, оцінки подаються діапазонами, а відсутні дані лишаються відсутніми.</text>
+<text class="query" x="100" y="392" font-size="24" text-anchor="start" transform="translate(100 0) scale(0.9809 1) translate(-100 0)">BattAI: Стан батареї — Чіткі правила, джерела й обмеження | iOS App</text>
+<text class="context" x="100" y="457" font-size="16" text-anchor="start" transform="translate(100 0) scale(0.3630 1) translate(-100 0)">BattAI BattAI використовує п’ять значень із публічних API iOS: рівень заряду, стан заряджання, режим низького енергоспоживання, тепловий стан усього пристрою й час. Інші результати обчислюються з цих показань або додаються вами. Кожен показник має джерело й обмеження.</text>
 <line x1="100" y1="498" x2="1100" y2="498" stroke="#ffffff" stroke-opacity="0.22"/>
 <text class="purchase-model" x="100" y="548" font-size="19" text-anchor="start">Безкоштовно для початку · розблокування за одну покупку</text>
 <text x="1100" y="548" text-anchor="end" font-size="25" font-weight="800" fill="#ffffff">App Store</text>

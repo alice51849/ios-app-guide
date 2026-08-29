@@ -6,7 +6,7 @@
   "name": "Katalog iskalnih namenov založnika Lumi Studio",
   "description": "Katalog prve roke, ki opisuje, za koga je vsaka aplikacija namenjena, katero nalogo poskuša uporabnik opraviti in neposredno pot do App Store.",
   "inLanguage": "sl-SI",
-  "dateModified": "2026-08-28",
+  "dateModified": "2026-08-29",
   "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -283,7 +283,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/sl-SI.jsonld#offer-battai",
         "url": "https://apps.apple.com/si/app/id6802423998?pt=118326163&ct=iag_data_sl_si&mt=8",
         "name": "BattAI: Ocena stanja baterije",
-        "description": "BattAI • BattAI uporablja pet vrednosti iz javnih API-jev iOS: raven baterije, stanje polnjenja, varčni način, toplotno stanje celotne naprave in čas. Drugi rezultati so izračunani iz teh meritev ali jih dodate vi. Vsak podatek prikazuje vir in omejitve. • BattAI nima računa, telemetrije, oglasov ali omrežnih zahtev. Podatki ostanejo v tej napravi, razen minimalnega funkcijsko omejenega posnetka, ki se pošlje neposredno seznanjeni uri Apple Watch. Vzorčenje je omejeno, analiza se izvede največ vsakih pet minut, ocene uporabljajo razpone, manjkajoči podatki pa ostanejo manjkajoči.",
+        "description": "BattAI BattAI uporablja pet vrednosti iz javnih API-jev iOS: raven baterije, stanje polnjenja, varčni način, toplotno stanje celotne naprave in čas. Drugi rezultati so izračunani iz teh meritev ali jih dodate vi. Vsak podatek prikazuje vir in omejitve.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "sl-SI",
-          "description": "BattAI • BattAI uporablja pet vrednosti iz javnih API-jev iOS: raven baterije, stanje polnjenja, varčni način, toplotno stanje celotne naprave in čas. Drugi rezultati so izračunani iz teh meritev ali jih dodate vi. Vsak podatek prikazuje vir in omejitve. • BattAI nima računa, telemetrije, oglasov ali omrežnih zahtev. Podatki ostanejo v tej napravi, razen minimalnega funkcijsko omejenega posnetka, ki se pošlje neposredno seznanjeni uri Apple Watch. Vzorčenje je omejeno, analiza se izvede največ vsakih pet minut, ocene uporabljajo razpone, manjkajoči podatki pa ostanejo manjkajoči.",
+          "description": "BattAI BattAI uporablja pet vrednosti iz javnih API-jev iOS: raven baterije, stanje polnjenja, varčni način, toplotno stanje celotne naprave in čas. Drugi rezultati so izračunani iz teh meritev ali jih dodate vi. Vsak podatek prikazuje vir in omejitve.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/sl-SI.jsonld#offer-battai"
           },

@@ -2,7 +2,7 @@
 title: "வீட்டில் குழந்தைகள் மற்றும் சிறுவர்களுக்கான சிறந்த பாஸ்போர்ட் புகைப்பட செயலி"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/ta-IN/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

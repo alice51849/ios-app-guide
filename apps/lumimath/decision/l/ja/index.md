@@ -2,7 +2,7 @@
 title: "論理力を育てる子供向け数学ゲームアプリiPhone版おすすめ"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/ja/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

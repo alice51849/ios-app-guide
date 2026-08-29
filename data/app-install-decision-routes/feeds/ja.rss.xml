@@ -5,7 +5,7 @@
     <link>https://alice51849.github.io/ios-app-guide/ja/index.html</link>
     <description>アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 28 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 04:57:59 GMT</lastBuildDate>
     <generator>iOS App Guide install-decision feeds</generator>
     <atom:link rel="self" type="application/rss+xml" href="https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ja.rss.xml"/>
     <atom:link rel="alternate" type="application/atom+xml" href="https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/feeds/ja.atom.xml"/>
@@ -95,14 +95,14 @@
       <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/aim990plus-share.jpg" width="1200" height="675"/>
     </item>
     <item>
-      <title>BattAI: バッテリー状態スコア — 80%までの推定期間 | iOS App</title>
+      <title>BattAI: バッテリー状態スコア — ルール、情報源、限界を明確に | iOS App</title>
       <link>https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ja/index.html</link>
       <guid isPermaLink="true">https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ja/index.html</guid>
-      <pubDate>Thu, 27 Aug 2026 11:26:40 GMT</pubDate>
-      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/jp/app/id6802423998?pt=118326163&amp;amp;ct=iag_data_ja&amp;amp;mt=8"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg" alt="BattAI: バッテリー状態スコア — 80%までの推定期間 | iOS App" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;BattAI • BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。 • BattAIにはアカウント、テレメトリ、広告、通信がありません。データはこのデバイス内に保存し、ペアリング済みApple Watchへ機能を限定した最小スナップショットだけを直接送ります。記録頻度を抑え、分析は最短でも5分間隔。推定は範囲で示し、欠けたデータは欠けたままです。 状態 • バッテリー状態スコア • スコアを形づくる要因 • 最大容量の推移 • 80%までの推定期間 充電 • 充電ケア • 充電範囲 • 充電速度 レポート • サービス、売却、自分の記録に使える、わかりやすい電池レポートを作成します。 • 完全なレポート：アプリのグラフとテキスト • 同じレポートを PNG 画像として保存 • すべてのデータをテキストの表に プライバシー • 広告、利用解析、追跡、他社SDK、通信はありません。データはここに保存し、ペアリング済みApple Watchへ最小スナップショットだけを直接送ります。 • 公開iOS APIで得られるのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻です。BattAIはほかの結果を「推定」または「あなた」と明記します。 • 固定ルールは、深い放電、高残量での長時間保持、熱、充電量に関する一般的なリチウムイオン電池の指針に基づきます。Appleの最大容量80%サービス目安はBattAIのケア区分と分けて扱い、寿命が延びるとは約束しません。 電池の変化を長く見守る • 支払いは一度だけ。永久利用。サブスクリプションなし。 • 購入はApple Accountに紐づき、お使いのデバイスで利用できます。&lt;/p&gt;&lt;p&gt;App Store · 無料&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/jp/app/id6802423998?pt=118326163&amp;amp;ct=iag_data_ja&amp;amp;mt=8"&gt;App Store で BattAI: バッテリー状態スコア を入手&lt;/a&gt;&lt;/p&gt;</description>
+      <pubDate>Sat, 29 Aug 2026 04:57:59 GMT</pubDate>
+      <description>&lt;p&gt;&lt;a href="https://apps.apple.com/jp/app/id6802423998?pt=118326163&amp;amp;ct=iag_data_ja&amp;amp;mt=8"&gt;&lt;img src="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg" alt="BattAI: バッテリー状態スコア — ルール、情報源、限界を明確に | iOS App" width="1200" height="675"&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;BattAI BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。 状態 • バッテリー状態スコア • スコアを形づくる要因 • 最大容量の推移 • 最大容量 • 充放電回数 充電 • 充電ケア • 充電範囲 • 充電速度 データを書き出す • このデバイスでファイルを作成します。アップロードはしません。 • このデバイスで作成。データはアップロードしません。 プライバシー • 広告、利用解析、追跡、他社SDK、通信はありません。データはここに保存し、ペアリング済みApple Watchへ最小スナップショットだけを直接送ります。 • BattAIが読むのは充放電回数、公称充電容量、設計容量だけです。ほかの内容はすぐ破棄し、保存も送信もしません。 電池の変化を長く見守る • より深い履歴、計画、レポートを使えます。 • 支払いは一度だけ。サブスクリプションなし。&lt;/p&gt;&lt;p&gt;App Store · 無料&lt;/p&gt;&lt;p&gt;&lt;a href="https://apps.apple.com/jp/app/id6802423998?pt=118326163&amp;amp;ct=iag_data_ja&amp;amp;mt=8"&gt;App Store で BattAI: バッテリー状態スコア を入手&lt;/a&gt;&lt;/p&gt;</description>
       <atom:link rel="related" type="text/html" href="https://apps.apple.com/jp/app/id6802423998?pt=118326163&amp;ct=iag_data_ja&amp;mt=8" title="App Store で BattAI: バッテリー状態スコア を入手"/>
       <media:content url="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg" fileSize="47262" type="image/jpeg" medium="image" isDefault="true" expression="full" width="1200" height="675">
-        <media:title type="plain">BattAI: バッテリー状態スコア — 80%までの推定期間 | iOS App</media:title>
+        <media:title type="plain">BattAI: バッテリー状態スコア — ルール、情報源、限界を明確に | iOS App</media:title>
       </media:content>
       <media:thumbnail url="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg" width="1200" height="675"/>
     </item>

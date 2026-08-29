@@ -12,8 +12,8 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-27",
-    "contentDigest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+    "dateModified": "2026-08-29",
+    "contentDigest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 46
@@ -112,17 +112,18 @@
       "url": "https://alice51849.github.io/ios-app-guide/sl-SI/battai.html",
       "external_url": "https://apps.apple.com/si/app/id6802423998?pt=118326163&ct=iag_feed_sl_si&mt=8",
       "title": "BattAI: Ocena stanja baterije",
-      "content_text": "BattAI • BattAI uporablja pet vrednosti iz javnih API-jev iOS: raven baterije, stanje polnjenja, varčni način, toplotno stanje celotne naprave in čas. Drugi rezultati so izračunani iz teh meritev ali jih dodate vi. Vsak podatek prikazuje vir in omejitve. • BattAI nima računa, telemetrije, oglasov ali omrežnih zahtev. Podatki ostanejo v tej napravi, razen minimalnega funkcijsko omejenega posnetka, ki se pošlje neposredno seznanjeni uri Apple Watch. Vzorčenje je omejeno, analiza se izvede največ vsakih pet minut, ocene uporabljajo razpone, manjkajoči podatki pa ostanejo manjkajoči.",
+      "content_text": "BattAI BattAI uporablja pet vrednosti iz javnih API-jev iOS: raven baterije, stanje polnjenja, varčni način, toplotno stanje celotne naprave in čas. Drugi rezultati so izračunani iz teh meritev ali jih dodate vi. Vsak podatek prikazuje vir in omejitve.",
       "tags": [
+        "Ocena stanja baterije",
         "Največja zmogljivost",
         "Cikli",
         "Skrb pri polnjenju",
         "Razpon polnjenja",
         "Hitrost polnjenja",
-        "Ocenjeni čas do 80%"
+        "Izvoz podatkov"
       ],
       "language": "sl-SI",
-      "date_modified": "2026-08-27T11:21:51Z"
+      "date_modified": "2026-08-29T04:55:13Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",

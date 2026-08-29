@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description" xml:lang="ko" direction="ltr">
-<title id="title">BattAI: 배터리 상태 점수 — 80%까지 예상 기간 | iOS App</title>
-<desc id="description">BattAI • BattAI가 공개 iOS API에서 쓰는 값은 배터리 잔량, 충전 상태, 저전력 모드, 기기 전체 열 상태, 시간까지 다섯 가지예요. 다른 결과는 기록에서 계산하거나 직접 추가해요. 각 항목에 출처와 한계를 표시해요. • BattAI에는 계정, 텔레메트리, 광고, 네트워크 요청이 없어요. 데이터는 이 기기에 저장하고, 페어링된 Apple Watch로 기능이 제한된 최소 스냅샷만 직접 보내요. 기록 빈도를 제한하고 분석은 최소 5분 간격으로 실행해요. 추정은 범위로 표시하고, 비어 있는 데이터는 그대로 둬요. 무료로 시작 · 한 번 구매로 잠금 해제</desc>
+<title id="title">BattAI: 배터리 상태 점수 — 규칙, 출처, 한계를 분명하게 | iOS App</title>
+<desc id="description">BattAI BattAI가 공개 iOS API에서 쓰는 값은 배터리 잔량, 충전 상태, 저전력 모드, 기기 전체 열 상태, 시간까지 다섯 가지예요. 다른 결과는 기록에서 계산하거나 직접 추가해요. 각 항목에 출처와 한계를 표시해요. 무료로 시작 · 한 번 구매로 잠금 해제</desc>
 <defs>
 <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
 <stop offset="0" stop-color="#172554"/>
@@ -22,8 +22,8 @@
 <text x="1025" y="114" text-anchor="middle" font-size="21" font-weight="700" fill="#ffffff" direction="ltr">ko</text>
 <text class="app-name" x="400" y="188" font-size="48" text-anchor="start">BattAI: 배터리 상태 점수</text>
 <text x="400" y="238" text-anchor="start" font-size="23" font-weight="650" fill="#e2e8f0" direction="ltr">App Store ID 6802423998</text>
-<text class="query" x="100" y="392" font-size="35" text-anchor="start" transform="translate(100 0) scale(0.9771 1) translate(-100 0)">BattAI: 배터리 상태 점수 — 80%까지 예상 기간 | iOS App</text>
-<text class="context" x="100" y="457" font-size="16" text-anchor="start" transform="translate(100 0) scale(0.2623 1) translate(-100 0)">BattAI • BattAI가 공개 iOS API에서 쓰는 값은 배터리 잔량, 충전 상태, 저전력 모드, 기기 전체 열 상태, 시간까지 다섯 가지예요. 다른 결과는 기록에서 계산하거나 직접 추가해요. 각 항목에 출처와 한계를 표시해요. • BattAI에는 계정, 텔레메트리, 광고, 네트워크 요청이 없어요. 데이터는 이 기기에 저장하고, 페어링된 Apple Watch로 기능이 제한된 최소 스냅샷만 직접 보내요. 기록 빈도를 제한하고 분석은 최소 5분 간격으로 실행해요. 추정은 범위로 표시하고, 비어 있는 데이터는 그대로 둬요.</text>
+<text class="query" x="100" y="392" font-size="30" text-anchor="start" transform="translate(100 0) scale(0.9815 1) translate(-100 0)">BattAI: 배터리 상태 점수 — 규칙, 출처, 한계를 분명하게 | iOS App</text>
+<text class="context" x="100" y="457" font-size="16" text-anchor="start" transform="translate(100 0) scale(0.6068 1) translate(-100 0)">BattAI BattAI가 공개 iOS API에서 쓰는 값은 배터리 잔량, 충전 상태, 저전력 모드, 기기 전체 열 상태, 시간까지 다섯 가지예요. 다른 결과는 기록에서 계산하거나 직접 추가해요. 각 항목에 출처와 한계를 표시해요.</text>
 <line x1="100" y1="498" x2="1100" y2="498" stroke="#ffffff" stroke-opacity="0.22"/>
 <text class="purchase-model" x="100" y="548" font-size="25" text-anchor="start">무료로 시작 · 한 번 구매로 잠금 해제</text>
 <text x="1100" y="548" text-anchor="end" font-size="25" font-weight="800" fill="#ffffff">App Store</text>

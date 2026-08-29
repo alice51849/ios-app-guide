@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-27",
-  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "he",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -185,7 +185,7 @@
       "key": "battai",
       "app_store_id": "6802423998",
       "name": "BattAI: ציון בריאות הסוללה",
-      "summary": "BattAI • ⁦BattAI⁩ משתמש בחמישה ערכים מממשקי ⁦iOS API⁩ ציבוריים: רמת הסוללה, מצב הטעינה, מצב סוללה חלשה, המצב התרמי של המכשיר כולו והזמן. תוצאות אחרות מחושבות מהמדידות האלה או נוספות על ידך. ליד כל פרט מוצגים המקור והמגבלות. • ל־⁦BattAI⁩ אין חשבון, טלמטריה, פרסומות או בקשות רשת. הנתונים נשארים במכשיר, למעט תמונת מצב מזערית ומוגבלת שנשלחת ישירות ל־⁦Apple Watch⁩ המקושר. הדגימה מוגבלת, הניתוח רץ לכל היותר פעם בחמש דקות, אומדנים מוצגים כטווחים ונתונים חסרים נשארים חסרים.",
+      "summary": "BattAI ⁦BattAI⁩ משתמש בחמישה ערכים מממשקי ⁦iOS API⁩ ציבוריים: רמת הסוללה, מצב הטעינה, מצב סוללה חלשה, המצב התרמי של המכשיר כולו והזמן. תוצאות אחרות מחושבות מהמדידות האלה או נוספות על ידך. ליד כל פרט מוצגים המקור והמגבלות.",
       "category": "utility",
       "search_terms": [
         "ציון בריאות הסוללה",
@@ -194,8 +194,7 @@
         "טיפול בטעינה",
         "טווח טעינה",
         "קצב טעינה",
-        "זמן משוער עד ⁦80%⁩",
-        "עד"
+        "ייצוא נתונים"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

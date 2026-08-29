@@ -6,7 +6,7 @@
   "name": "Catalogo degli intenti di ricerca dell'editore Lumi Studio",
   "description": "Un catalogo pubblicato direttamente dallo sviluppatore che indica a chi è destinata ogni app, l'attività da completare e l'accesso diretto all'App Store.",
   "inLanguage": "it",
-  "dateModified": "2026-08-28",
+  "dateModified": "2026-08-29",
   "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -283,7 +283,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-battai",
         "url": "https://apps.apple.com/it/app/id6802423998?pt=118326163&ct=iag_data_it&mt=8",
         "name": "BattAI: Salute della batteria",
-        "description": "BattAI • BattAI usa cinque dati delle API pubbliche di iOS: livello batteria, stato di carica, Risparmio energetico, stato termico dell’intero dispositivo e ora. Gli altri risultati sono calcolati da queste letture o aggiunti da te. Ogni dettaglio mostra fonte e limiti. • BattAI non ha account, telemetria, pubblicità o richieste di rete. I dati restano sul dispositivo, tranne un’istantanea minima e limitata alle funzioni inviata direttamente all’Apple Watch abbinato. Il campionamento è limitato, l’analisi avviene al massimo ogni cinque minuti, le stime usano intervalli e i dati mancanti restano mancanti.",
+        "description": "BattAI BattAI usa cinque dati delle API pubbliche di iOS: livello batteria, stato di carica, Risparmio energetico, stato termico dell’intero dispositivo e ora. Gli altri risultati sono calcolati da queste letture o aggiunti da te. Ogni dettaglio mostra fonte e limiti.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "it",
-          "description": "BattAI • BattAI usa cinque dati delle API pubbliche di iOS: livello batteria, stato di carica, Risparmio energetico, stato termico dell’intero dispositivo e ora. Gli altri risultati sono calcolati da queste letture o aggiunti da te. Ogni dettaglio mostra fonte e limiti. • BattAI non ha account, telemetria, pubblicità o richieste di rete. I dati restano sul dispositivo, tranne un’istantanea minima e limitata alle funzioni inviata direttamente all’Apple Watch abbinato. Il campionamento è limitato, l’analisi avviene al massimo ogni cinque minuti, le stime usano intervalli e i dati mancanti restano mancanti.",
+          "description": "BattAI BattAI usa cinque dati delle API pubbliche di iOS: livello batteria, stato di carica, Risparmio energetico, stato termico dell’intero dispositivo e ora. Gli altri risultati sono calcolati da queste letture o aggiunti da te. Ogni dettaglio mostra fonte e limiti.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-battai"
           },

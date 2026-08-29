@@ -2,7 +2,7 @@
 title: "bästa resebudget-appen utan prenumeration för iPhone"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/sv/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

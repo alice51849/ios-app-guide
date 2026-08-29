@@ -2,7 +2,7 @@
 title: "ಮಕ್ಕಳಿಗೆ ಜಾಹೀರಾತು ಇಲ್ಲದ ಉತ್ತಮ ಶೈಕ್ಷಣಿಕ ಆಟ ಆಪ್ iPhone"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/kn-IN/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

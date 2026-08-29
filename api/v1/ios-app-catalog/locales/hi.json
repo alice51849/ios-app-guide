@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-27",
-  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "hi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -170,18 +170,16 @@
       "key": "battai",
       "app_store_id": "6802423998",
       "name": "BattAI: बैटरी स्वास्थ्य स्कोर",
-      "summary": "BattAI • BattAI सार्वजनिक iOS API से पाँच मान लेता है: बैटरी स्तर, चार्ज स्थिति, लो पावर मोड, पूरे डिवाइस की तापीय स्थिति और समय। दूसरे नतीजे इन मापों से निकाले जाते हैं या आप जोड़ते हैं। हर जानकारी अपना स्रोत और सीमा दिखाती है। • BattAI में खाता, टेलीमेट्री, विज्ञापन या नेटवर्क अनुरोध नहीं हैं। डेटा इसी डिवाइस पर रहता है, सिवाय सीमित सुविधाओं वाले छोटे सारांश के जो सीधे जुड़े Apple Watch को भेजा जाता है। माप लेना सीमित है, विश्लेषण अधिकतम हर पाँच मिनट में चलता है, अनुमान सीमाओं में दिखते हैं और गायब डेटा गायब रहता है।",
+      "summary": "BattAI BattAI सार्वजनिक iOS API से पाँच मान लेता है: बैटरी स्तर, चार्ज स्थिति, लो पावर मोड, पूरे डिवाइस की तापीय स्थिति और समय। दूसरे नतीजे इन मापों से निकाले जाते हैं या आप जोड़ते हैं। हर जानकारी अपना स्रोत और सीमा दिखाती है।",
       "category": "utility",
       "search_terms": [
-        "बैटरी",
-        "डिवाइस",
         "बैटरी स्वास्थ्य स्कोर",
         "अधिकतम क्षमता",
         "चार्ज चक्र",
         "चार्जिंग देखभाल",
         "चार्ज दायरा",
         "चार्ज दर",
-        "PDF"
+        "डेटा एक्सपोर्ट करें"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

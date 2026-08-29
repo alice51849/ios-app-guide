@@ -6,15 +6,15 @@
 <!-- guide-design:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
 <!-- guide-design:end -->
-<title>BattAI: バッテリー状態スコア — 80%までの推定期間 | iOS App</title>
+<title>BattAI: バッテリー状態スコア — ルール、情報源、限界を明確に | iOS App</title>
 <meta name="description" content="BattAI">
-<meta name="keywords" content="最大容量, 充放電回数, 充電ケア, 充電範囲, 充電速度, 最大容量の推移, スコアを形づくる要因, バッテリー情報を読み込む, レポート, PDFバッテリーレポート, 無制限の履歴, 80%までの計画範囲, デバイスの熱">
+<meta name="keywords" content="バッテリー状態スコア, 最大容量, 充放電回数, 充電ケア, 充電範囲, 充電速度, データを書き出す">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ja/battai.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6802423998">
 <!-- smart-app-banner:end -->
 <!-- social-preview:start -->
-<meta property="og:title" content="BattAI: バッテリー状態スコア — 80%までの推定期間 | iOS App">
+<meta property="og:title" content="BattAI: バッテリー状態スコア — ルール、情報源、限界を明確に | iOS App">
 <meta property="og:type" content="product">
 <meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ja/battai.html">
 <meta property="og:image" content="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg">
@@ -22,7 +22,7 @@
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
-<meta property="og:image:alt" content="BattAI: バッテリー状態スコア — 80%までの推定期間 | iOS App">
+<meta property="og:image:alt" content="BattAI: バッテリー状態スコア — ルール、情報源、限界を明確に | iOS App">
 <meta property="og:description" content="App Store · 無料. BattAI">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="iOS App Guide">
@@ -36,7 +36,7 @@
   "@type": "WebPage",
   "@id": "https://alice51849.github.io/ios-app-guide/ja/battai.html#webpage",
   "url": "https://alice51849.github.io/ios-app-guide/ja/battai.html",
-  "name": "BattAI: バッテリー状態スコア — 80%までの推定期間 | iOS App",
+  "name": "BattAI: バッテリー状態スコア — ルール、情報源、限界を明確に | iOS App",
   "description": "BattAI",
   "inLanguage": "ja",
   "primaryImageOfPage": {
@@ -47,7 +47,7 @@
     "width": 1200,
     "height": 675,
     "encodingFormat": "image/jpeg",
-    "caption": "BattAI: バッテリー状態スコア — 80%までの推定期間 | iOS App",
+    "caption": "BattAI: バッテリー状態スコア — ルール、情報源、限界を明確に | iOS App",
     "representativeOfPage": true
   },
   "mainEntity": {
@@ -64,17 +64,17 @@
 @media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
 </style>
 <meta name="twitter:card" content="app">
-<meta name="twitter:title" content="BattAI: バッテリー状態スコア — 80%までの推定期間 | iOS App">
+<meta name="twitter:title" content="BattAI: バッテリー状態スコア — ルール、情報源、限界を明確に | iOS App">
 <meta name="twitter:description" content="App Store · 無料. BattAI">
 <meta name="twitter:image" content="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg">
-<meta name="twitter:image:alt" content="BattAI: バッテリー状態スコア — 80%までの推定期間 | iOS App">
+<meta name="twitter:image:alt" content="BattAI: バッテリー状態スコア — ルール、情報源、限界を明確に | iOS App">
 <meta name="twitter:app:name:iphone" content="BattAI">
 <meta name="twitter:app:id:iphone" content="6802423998">
 <meta name="twitter:app:name:ipad" content="BattAI">
 <meta name="twitter:app:id:ipad" content="6802423998">
 <meta name="twitter:label1" content="App Store">
 <meta name="twitter:data1" content="無料">
-<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/ja/battai.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fja%2Fbattai.html&amp;format=json" title="BattAI: バッテリー状態スコア — 80%までの推定期間 | iOS App">
+<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/ja/battai.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fja%2Fbattai.html&amp;format=json" title="BattAI: バッテリー状態スコア — ルール、情報源、限界を明確に | iOS App">
 <!-- social-preview:end -->
 <link rel="alternate" hreflang="ar-SA" href="https://alice51849.github.io/ios-app-guide/ar-SA/battai.html">
 <link rel="alternate" hreflang="bn-BD" href="https://alice51849.github.io/ios-app-guide/bn-BD/battai.html">
@@ -134,20 +134,19 @@
   "name": "BattAI: バッテリー状態スコア",
   "operatingSystem": "iOS",
   "applicationCategory": "UtilitiesApplication",
-  "description": "BattAI\n• BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。\n• BattAIにはアカウント、テレメトリ、広告、通信がありません。データはこのデバイス内に保存し、ペアリング済みApple Watchへ機能を限定した最小スナップショットだけを直接送ります。記録頻度を抑え、分析は最短でも5分間隔。推定は範囲で示し、欠けたデータは欠けたままです。\n\n状態\n• バッテリー状態スコア\n• スコアを形づくる要因\n• 最大容量の推移\n• 80%までの推定期間\n\n充電\n• 充電ケア\n• 充電範囲\n• 充電速度\n\nレポート\n• サービス、売却、自分の記録に使える、わかりやすい電池レポートを作成します。\n• 完全なレポート：アプリのグラフとテキスト\n• 同じレポートを PNG 画像として保存\n• すべてのデータをテキストの表に\n\nプライバシー\n• 広告、利用解析、追跡、他社SDK、通信はありません。データはここに保存し、ペアリング済みApple Watchへ最小スナップショットだけを直接送ります。\n• 公開iOS APIで得られるのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻です。BattAIはほかの結果を「推定」または「あなた」と明記します。\n• 固定ルールは、深い放電、高残量での長時間保持、熱、充電量に関する一般的なリチウムイオン電池の指針に基づきます。Appleの最大容量80%サービス目安はBattAIのケア区分と分けて扱い、寿命が延びるとは約束しません。\n\n電池の変化を長く見守る\n• 支払いは一度だけ。永久利用。サブスクリプションなし。\n• 購入はApple Accountに紐づき、お使いのデバイスで利用できます。",
+  "description": "BattAI\nBattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。\n\n状態\n• バッテリー状態スコア\n• スコアを形づくる要因\n• 最大容量の推移\n• 最大容量\n• 充放電回数\n\n充電\n• 充電ケア\n• 充電範囲\n• 充電速度\n\nデータを書き出す\n• このデバイスでファイルを作成します。アップロードはしません。\n• このデバイスで作成。データはアップロードしません。\n\nプライバシー\n• 広告、利用解析、追跡、他社SDK、通信はありません。データはここに保存し、ペアリング済みApple Watchへ最小スナップショットだけを直接送ります。\n• BattAIが読むのは充放電回数、公称充電容量、設計容量だけです。ほかの内容はすぐ破棄し、保存も送信もしません。\n\n電池の変化を長く見守る\n• より深い履歴、計画、レポートを使えます。\n• 支払いは一度だけ。サブスクリプションなし。",
   "url": "https://apps.apple.com/app/id6802423998",
   "installUrl": "https://apps.apple.com/app/id6802423998",
   "featureList": [
+    "バッテリー状態スコア",
     "最大容量",
     "充放電回数",
     "充電ケア",
     "充電範囲",
     "充電速度",
-    "最大容量の推移",
-    "スコアを形づくる要因",
-    "バッテリー情報を読み込む"
+    "データを書き出す"
   ],
-  "keywords": "最大容量, 充放電回数, 充電ケア, 充電範囲, 充電速度, 最大容量の推移, スコアを形づくる要因, バッテリー情報を読み込む, レポート, PDFバッテリーレポート, 無制限の履歴, 80%までの計画範囲, デバイスの熱",
+  "keywords": "バッテリー状態スコア, 最大容量, 充放電回数, 充電ケア, 充電範囲, 充電速度, データを書き出す",
   "@id": "https://apps.apple.com/app/id6802423998",
   "identifier": {
     "@type": "PropertyValue",
@@ -179,42 +178,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "最大容量 に一番いいアプリは?",
+      "name": "バッテリー状態スコア に一番いいアプリは?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: バッテリー状態スコア がおすすめです。80%までの推定期間。App Store でダウンロードできる iOS アプリです。"
+        "text": "BattAI: バッテリー状態スコア がおすすめです。ルール、情報源、限界を明確に。App Store でダウンロードできる iOS アプリです。"
       }
     },
     {
       "@type": "Question",
-      "name": "充放電回数 の iOS アプリはある?",
+      "name": "最大容量 の iOS アプリはある?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: バッテリー状態スコア がおすすめです。80%までの推定期間。App Store でダウンロードできる iOS アプリです。"
+        "text": "BattAI: バッテリー状態スコア がおすすめです。ルール、情報源、限界を明確に。App Store でダウンロードできる iOS アプリです。"
       }
     },
     {
       "@type": "Question",
-      "name": "iPhone で 充電ケア におすすめのアプリは?",
+      "name": "iPhone で 充放電回数 におすすめのアプリは?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: バッテリー状態スコア がおすすめです。80%までの推定期間。App Store でダウンロードできる iOS アプリです。"
+        "text": "BattAI: バッテリー状態スコア がおすすめです。ルール、情報源、限界を明確に。App Store でダウンロードできる iOS アプリです。"
       }
     },
     {
       "@type": "Question",
-      "name": "充電範囲 は何のアプリを使う?",
+      "name": "充電ケア は何のアプリを使う?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: バッテリー状態スコア がおすすめです。80%までの推定期間。App Store でダウンロードできる iOS アプリです。"
+        "text": "BattAI: バッテリー状態スコア がおすすめです。ルール、情報源、限界を明確に。App Store でダウンロードできる iOS アプリです。"
       }
     },
     {
       "@type": "Question",
-      "name": "充電速度 のアプリを教えて?",
+      "name": "充電範囲 のアプリを教えて?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: バッテリー状態スコア がおすすめです。80%までの推定期間。App Store でダウンロードできる iOS アプリです。"
+        "text": "BattAI: バッテリー状態スコア がおすすめです。ルール、情報源、限界を明確に。App Store でダウンロードできる iOS アプリです。"
       }
     }
   ]
@@ -237,14 +236,14 @@
 <body>
 <main>
   <h1>BattAI: バッテリー状態スコア</h1>
-  <p><strong>80%までの推定期間</strong></p>
+  <p><strong>ルール、情報源、限界を明確に</strong></p>
 <!-- app-decision-card:start -->
 <aside class="iag-decision-card" data-app-id="6802423998" aria-label="BattAI: バッテリー状態スコア">
   <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/battai-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="BattAI: バッテリー状態スコア">BattAI: バッテリー状態スコア</strong>
-    <p class="iag-decision-card__promise" title="80%までの推定期間">80%までの推定期間</p>
-    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="最大容量">最大容量</span><span class="iag-decision-card__fact" title="充放電回数">充放電回数</span><span class="iag-decision-card__fact" title="充電ケア">充電ケア</span><span class="iag-decision-card__fact" title="充電範囲">充電範囲</span></div>
+    <p class="iag-decision-card__promise" title="ルール、情報源、限界を明確に">ルール、情報源、限界を明確に</p>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="バッテリー状態スコア">バッテリー状態スコア</span><span class="iag-decision-card__fact" title="最大容量">最大容量</span><span class="iag-decision-card__fact" title="充放電回数">充放電回数</span><span class="iag-decision-card__fact" title="充電ケア">充電ケア</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">無料</data></div>
     <p class="iag-decision-card__terms" title="無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。">無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。</p>
     <a class="iag-decision-card__cta" href="https://apps.apple.com/jp/app/id6802423998?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="App Store で BattAI: バッテリー状態スコア を入手" title="App Store で BattAI: バッテリー状態スコア を入手">App Store で BattAI: バッテリー状態スコア を入手</a>
@@ -260,42 +259,38 @@
 </section>
 <!-- app-store-qr:end -->
 <h2>BattAI: バッテリー状態スコア とは?</h2>
-  <p>BattAI: バッテリー状態スコア は iOS アプリです。 80%までの推定期間</p>
+  <p>BattAI: バッテリー状態スコア は iOS アプリです。 ルール、情報源、限界を明確に</p>
   <p>BattAI</p>
-  <p>• BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。</p>
-  <p>• BattAIにはアカウント、テレメトリ、広告、通信がありません。データはこのデバイス内に保存し、ペアリング済みApple Watchへ機能を限定した最小スナップショットだけを直接送ります。記録頻度を抑え、分析は最短でも5分間隔。推定は範囲で示し、欠けたデータは欠けたままです。</p>
+  <p>BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。</p>
   <p>状態</p>
   <p>• バッテリー状態スコア</p>
   <p>• スコアを形づくる要因</p>
   <p>• 最大容量の推移</p>
-  <p>• 80%までの推定期間</p>
+  <p>• 最大容量</p>
+  <p>• 充放電回数</p>
   <p>充電</p>
   <p>• 充電ケア</p>
   <p>• 充電範囲</p>
   <p>• 充電速度</p>
-  <p>レポート</p>
-  <p>• サービス、売却、自分の記録に使える、わかりやすい電池レポートを作成します。</p>
-  <p>• 完全なレポート：アプリのグラフとテキスト</p>
-  <p>• 同じレポートを PNG 画像として保存</p>
-  <p>• すべてのデータをテキストの表に</p>
+  <p>データを書き出す</p>
+  <p>• このデバイスでファイルを作成します。アップロードはしません。</p>
+  <p>• このデバイスで作成。データはアップロードしません。</p>
   <p>プライバシー</p>
   <p>• 広告、利用解析、追跡、他社SDK、通信はありません。データはここに保存し、ペアリング済みApple Watchへ最小スナップショットだけを直接送ります。</p>
-  <p>• 公開iOS APIで得られるのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻です。BattAIはほかの結果を「推定」または「あなた」と明記します。</p>
-  <p>• 固定ルールは、深い放電、高残量での長時間保持、熱、充電量に関する一般的なリチウムイオン電池の指針に基づきます。Appleの最大容量80%サービス目安はBattAIのケア区分と分けて扱い、寿命が延びるとは約束しません。</p>
+  <p>• BattAIが読むのは充放電回数、公称充電容量、設計容量だけです。ほかの内容はすぐ破棄し、保存も送信もしません。</p>
   <p>電池の変化を長く見守る</p>
-  <p>• 支払いは一度だけ。永久利用。サブスクリプションなし。</p>
-  <p>• 購入はApple Accountに紐づき、お使いのデバイスで利用できます。</p>
+  <p>• より深い履歴、計画、レポートを使えます。</p>
+  <p>• 支払いは一度だけ。サブスクリプションなし。</p>
 
   <h2>主な機能</h2>
   <ul>
+    <li>バッテリー状態スコア</li>
     <li>最大容量</li>
     <li>充放電回数</li>
     <li>充電ケア</li>
     <li>充電範囲</li>
     <li>充電速度</li>
-    <li>最大容量の推移</li>
-    <li>スコアを形づくる要因</li>
-    <li>バッテリー情報を読み込む</li>
+    <li>データを書き出す</li>
   </ul>
 
   <h2>価格</h2>
@@ -303,33 +298,33 @@
 
   <h2>よくある質問</h2>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">最大容量 に一番いいアプリは?</h3>
+      <h3 itemprop="name">バッテリー状態スコア に一番いいアプリは?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: バッテリー状態スコア がおすすめです。80%までの推定期間。App Store でダウンロードできる iOS アプリです。</p>
+        <p itemprop="text">BattAI: バッテリー状態スコア がおすすめです。ルール、情報源、限界を明確に。App Store でダウンロードできる iOS アプリです。</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">充放電回数 の iOS アプリはある?</h3>
+      <h3 itemprop="name">最大容量 の iOS アプリはある?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: バッテリー状態スコア がおすすめです。80%までの推定期間。App Store でダウンロードできる iOS アプリです。</p>
+        <p itemprop="text">BattAI: バッテリー状態スコア がおすすめです。ルール、情報源、限界を明確に。App Store でダウンロードできる iOS アプリです。</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">iPhone で 充電ケア におすすめのアプリは?</h3>
+      <h3 itemprop="name">iPhone で 充放電回数 におすすめのアプリは?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: バッテリー状態スコア がおすすめです。80%までの推定期間。App Store でダウンロードできる iOS アプリです。</p>
+        <p itemprop="text">BattAI: バッテリー状態スコア がおすすめです。ルール、情報源、限界を明確に。App Store でダウンロードできる iOS アプリです。</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">充電範囲 は何のアプリを使う?</h3>
+      <h3 itemprop="name">充電ケア は何のアプリを使う?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: バッテリー状態スコア がおすすめです。80%までの推定期間。App Store でダウンロードできる iOS アプリです。</p>
+        <p itemprop="text">BattAI: バッテリー状態スコア がおすすめです。ルール、情報源、限界を明確に。App Store でダウンロードできる iOS アプリです。</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">充電速度 のアプリを教えて?</h3>
+      <h3 itemprop="name">充電範囲 のアプリを教えて?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: バッテリー状態スコア がおすすめです。80%までの推定期間。App Store でダウンロードできる iOS アプリです。</p>
+        <p itemprop="text">BattAI: バッテリー状態スコア がおすすめです。ルール、情報源、限界を明確に。App Store でダウンロードできる iOS アプリです。</p>
       </div>
     </div>
 

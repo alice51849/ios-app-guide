@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-27",
-  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "gu-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -169,7 +169,7 @@
       "key": "battai",
       "app_store_id": "6802423998",
       "name": "BattAI: બેટરી હેલ્થ સ્કોર",
-      "summary": "BattAI • BattAI જાહેર iOS API માંથી 5 મૂલ્ય લે છે: બેટરી સ્તર, ચાર્જ સ્થિતિ, Low Power Mode, આખા ઉપકરણની ઉષ્ણ સ્થિતિ અને સમય. બીજા પરિણામો આ માપ પરથી ગણાય છે અથવા તમે ઉમેરો છો. દરેક વિગત તેનો સ્રોત અને મર્યાદા બતાવે છે. • BattAI માં ખાતું, ટેલિમેટ્રી, જાહેરાત કે નેટવર્ક વિનંતી નથી. માહિતી આ ઉપકરણમાં રહે છે; ફક્ત ઓછી સુવિધાવાળો નાનો સ્નૅપશૉટ જોડાયેલી Apple Watch ને સીધો મોકલાય છે. માપ મર્યાદિત છે, વિશ્લેષણ વધુમાં વધુ દર 5 min થાય છે, અંદાજ વ્યાપમાં આવે છે અને ખૂટેલી માહિતી ખૂટેલી જ રહે છે.",
+      "summary": "BattAI BattAI જાહેર iOS API માંથી 5 મૂલ્ય લે છે: બેટરી સ્તર, ચાર્જ સ્થિતિ, Low Power Mode, આખા ઉપકરણની ઉષ્ણ સ્થિતિ અને સમય. બીજા પરિણામો આ માપ પરથી ગણાય છે અથવા તમે ઉમેરો છો. દરેક વિગત તેનો સ્રોત અને મર્યાદા બતાવે છે.",
       "category": "utility",
       "search_terms": [
         "બેટરી હેલ્થ સ્કોર",
@@ -178,7 +178,7 @@
         "ચાર્જ કાળજી",
         "ચાર્જનો વ્યાપ",
         "ચાર્જ દર",
-        "80% સુધીનો અંદાજિત સમય"
+        "માહિતી નિકાસ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

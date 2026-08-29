@@ -2,7 +2,7 @@
 title: "nejlepší praktická aplikace s frázemi pro cestovatele s Apple Watch"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/cs/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

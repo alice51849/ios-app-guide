@@ -2,7 +2,7 @@
 title: "最佳無訂閱白噪音助眠App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/zh-Hant/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6788236641"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

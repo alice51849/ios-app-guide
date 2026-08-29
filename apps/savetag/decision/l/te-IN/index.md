@@ -2,7 +2,7 @@
 title: "SaveTag: AI బుక్‌మార్క్ — లింక్‌లు దాచు, తర్వాత చదువు | iOS App"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/te-IN/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -12,8 +12,8 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-27",
-    "contentDigest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+    "dateModified": "2026-08-29",
+    "contentDigest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 46
@@ -146,28 +146,18 @@
       "url": "https://alice51849.github.io/ios-app-guide/zh-Hant/battai.html",
       "external_url": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=iag_feed_zh_hant&mt=8",
       "title": "BattAI: 電池健康分數",
-      "content_text": "BattAI • BattAI 只使用公開 iOS API 提供的五項資料：電量、充電狀態、低耗電模式、整部裝置的熱狀態與時間。其他結果由這些讀值計算，或由你補充。每一項都會顯示來源與限制。 • BattAI 沒有帳號、遙測、廣告或網路請求。資料留在這台裝置上，只會把功能受限的最小快照直接傳給已配對的 Apple Watch。取樣頻率受限，分析最快每 5 分鐘一次；推估使用區間，缺少資料維持缺少。",
+      "content_text": "BattAI BattAI 只使用公開 iOS API 提供的五項資料：電量、充電狀態、低耗電模式、整部裝置的熱狀態與時間。其他結果由這些讀值計算，或由你補充。每一項都會顯示來源與限制。",
       "tags": [
-        "電池壽命",
+        "電池健康分數",
         "最大容量",
         "循環次數",
         "充電保養",
         "充電區間",
         "充電速率",
-        "最大容量趨勢",
-        "評分依據",
-        "匯入電池資訊",
-        "報告",
-        "PDF 電池報告",
-        "無限記錄",
-        "80% 規劃區間",
-        "異常耗電提醒",
-        "充電速率暴露",
-        "所有小工具",
-        "裝置熱狀態"
+        "匯出資料"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-27T11:21:51Z"
+      "date_modified": "2026-08-29T04:55:13Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",

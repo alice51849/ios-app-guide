@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-27",
-  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "id",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -167,16 +167,16 @@
       "key": "battai",
       "app_store_id": "6802423998",
       "name": "BattAI: Skor kesehatan baterai",
-      "summary": "BattAI • BattAI memakai 5 nilai dari API publik iOS: tingkat baterai, status pengisian, Mode Daya Rendah, status termal seluruh perangkat, dan waktu. Hasil lain dihitung dari pembacaan tersebut atau ditambahkan oleh Anda. Setiap detail menunjukkan sumber dan batasnya • BattAI tidak memiliki akun, telemetri, iklan, atau permintaan jaringan. Data tetap di perangkat ini, kecuali snapshot minimal dengan fitur terbatas yang dikirim langsung ke Apple Watch yang dipasangkan. Pengambilan sampel dibatasi, analisis berjalan paling cepat setiap 5 menit, perkiraan memakai rentang, dan data yang hilang tetap hilang",
+      "summary": "BattAI BattAI memakai 5 nilai dari API publik iOS: tingkat baterai, status pengisian, Mode Daya Rendah, status termal seluruh perangkat, dan waktu. Hasil lain dihitung dari pembacaan tersebut atau ditambahkan oleh Anda. Setiap detail menunjukkan sumber dan batasnya",
       "category": "utility",
       "search_terms": [
+        "Skor kesehatan baterai",
         "Kapasitas maksimum",
         "Siklus",
         "Perawatan pengisian",
         "Rentang pengisian",
         "Laju pengisian",
-        "Pembentuk skor",
-        "PDF"
+        "Ekspor data"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

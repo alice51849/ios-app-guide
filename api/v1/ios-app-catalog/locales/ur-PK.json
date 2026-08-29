@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-27",
-  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "ur-PK",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -181,7 +181,7 @@
       "key": "battai",
       "app_store_id": "6802423998",
       "name": "BattAI: بیٹری کی صحت کا اسکور",
-      "summary": "BattAI • ⁦BattAI⁩ عوامی ⁦iOS API⁩ سے پانچ قدریں لیتا ہے: بیٹری کی سطح، چارج کی حالت، کم پاور موڈ، پورے فون کی حرارتی حالت اور وقت۔ دوسرے نتائج ان پیمائشوں سے حساب ہوتے ہیں یا آپ شامل کرتے ہیں۔ ہر تفصیل اپنا ماخذ اور حد دکھاتی ہے۔ • ⁦BattAI⁩ میں اکاؤنٹ، ٹیلی میٹری، اشتہارات یا نیٹ ورک درخواستیں نہیں۔ ڈیٹا اسی فون پر رہتا ہے، سوائے محدود خصوصیات کے ایک مختصر خلاصے کے جو براہ راست منسلک ⁦Apple Watch⁩ کو بھیجا جاتا ہے۔ نمونے محدود ہیں، تجزیہ زیادہ سے زیادہ ہر پانچ منٹ بعد ہوتا ہے، تخمینے حدود میں ہیں اور غائب ڈیٹا غائب رہتا ہے۔",
+      "summary": "BattAI ⁦BattAI⁩ عوامی ⁦iOS API⁩ سے پانچ قدریں لیتا ہے: بیٹری کی سطح، چارج کی حالت، کم پاور موڈ، پورے فون کی حرارتی حالت اور وقت۔ دوسرے نتائج ان پیمائشوں سے حساب ہوتے ہیں یا آپ شامل کرتے ہیں۔ ہر تفصیل اپنا ماخذ اور حد دکھاتی ہے۔",
       "category": "utility",
       "search_terms": [
         "بیٹری کی صحت کا اسکور",
@@ -189,7 +189,8 @@
         "چارج سائیکل",
         "چارجنگ کی دیکھ بھال",
         "چارج کی رینج",
-        "چارج کی شرح"
+        "چارج کی شرح",
+        "ڈیٹا برآمد کریں"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

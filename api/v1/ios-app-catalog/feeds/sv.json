@@ -12,8 +12,8 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-27",
-    "contentDigest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+    "dateModified": "2026-08-29",
+    "contentDigest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 46
@@ -108,18 +108,18 @@
       "url": "https://alice51849.github.io/ios-app-guide/sv/battai.html",
       "external_url": "https://apps.apple.com/se/app/id6802423998?pt=118326163&ct=iag_feed_sv&mt=8",
       "title": "BattAI: Batteriets hälsopoäng",
-      "content_text": "BattAI • BattAI använder fem värden från offentliga iOS-API:er: batterinivå, laddningsstatus, strömsparläge, hela enhetens termiska tillstånd och tid. Andra resultat beräknas från dessa mätningar eller läggs till av dig. Varje uppgift visar källa och gränser. • BattAI har inget konto, ingen telemetri, inga annonser och inga nätverksanrop. Data stannar på den här enheten, förutom en minimal funktionsbegränsad ögonblicksbild som skickas direkt till parkopplade Apple Watch. Mätningen är begränsad, analysen körs högst var femte minut, uppskattningar använder intervall och saknade data förblir saknade.",
+      "content_text": "BattAI BattAI använder fem värden från offentliga iOS-API:er: batterinivå, laddningsstatus, strömsparläge, hela enhetens termiska tillstånd och tid. Andra resultat beräknas från dessa mätningar eller läggs till av dig. Varje uppgift visar källa och gränser.",
       "tags": [
+        "Batteriets hälsopoäng",
         "Maxkapacitet",
         "Cykler",
         "Laddningsvård",
         "Laddningsintervall",
         "Laddningshastighet",
-        "Uppskattad tid till 80%",
-        "PDF"
+        "Exportera data"
       ],
       "language": "sv",
-      "date_modified": "2026-08-27T11:21:51Z"
+      "date_modified": "2026-08-29T04:55:13Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",

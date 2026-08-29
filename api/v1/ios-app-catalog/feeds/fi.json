@@ -12,8 +12,8 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-27",
-    "contentDigest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+    "dateModified": "2026-08-29",
+    "contentDigest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 46
@@ -107,19 +107,18 @@
       "url": "https://alice51849.github.io/ios-app-guide/fi/battai.html",
       "external_url": "https://apps.apple.com/fi/app/id6802423998?pt=118326163&ct=iag_feed_fi&mt=8",
       "title": "BattAI: Akun kuntotulos",
-      "content_text": "BattAI • BattAI käyttää viittä julkisten iOS-API:en arvoa: akun varaustasoa, lataustilaa, virransäästötilaa, koko laitteen lämpötilaa kuvaavaa tilaa ja aikaa. Muut tulokset lasketaan näistä lukemista tai lisäämistäsi tiedoista. Jokainen tieto kertoo lähteen ja rajat. • BattAI:ssa ei ole tiliä, telemetriaa, mainoksia tai verkkopyyntöjä. Tiedot pysyvät tällä laitteella lukuun ottamatta pientä, ominaisuuksiltaan rajattua tilannekuvaa, joka lähetetään suoraan paritettuun Apple Watchiin. Mittaus on rajattua, analyysi suoritetaan enintään viiden minuutin välein, arviot näytetään väleinä ja puuttuvat tiedot pysyvät puuttuvina.",
+      "content_text": "BattAI BattAI käyttää viittä julkisten iOS-API:en arvoa: akun varaustasoa, lataustilaa, virransäästötilaa, koko laitteen lämpötilaa kuvaavaa tilaa ja aikaa. Muut tulokset lasketaan näistä lukemista tai lisäämistäsi tiedoista. Jokainen tieto kertoo lähteen ja rajat.",
       "tags": [
+        "Akun kuntotulos",
         "Enimmäiskapasiteetti",
         "Lataussyklit",
         "Lataushuolto",
         "Latausväli",
         "Latausnopeus",
-        "Arvioitu aika 80%:iin",
-        "PDF",
-        "CSV"
+        "Vie tiedot"
       ],
       "language": "fi",
-      "date_modified": "2026-08-27T11:21:51Z"
+      "date_modified": "2026-08-29T04:55:13Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",

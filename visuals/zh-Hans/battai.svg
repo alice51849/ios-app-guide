@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description" xml:lang="zh-Hans" direction="ltr">
-<title id="title">BattAI: 电池健康评分 — 预计到 80% 的时间 | iOS App</title>
-<desc id="description">BattAI • BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。 • BattAI 没有账户、遥测、广告或网络请求。数据留在这台设备上，只会把功能受限的最小快照直接发给已配对的 Apple Watch。取样频率受限，分析最快每 5 分钟一次；估算使用区间，缺失数据保持缺失。 免费开始使用 · 一次购买解锁</desc>
+<title id="title">BattAI: 电池健康评分 — 规则、来源和限制都说清楚 | iOS App</title>
+<desc id="description">BattAI BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。 免费开始使用 · 一次购买解锁</desc>
 <defs>
 <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
 <stop offset="0" stop-color="#172554"/>
@@ -22,8 +22,8 @@
 <text x="1025" y="114" text-anchor="middle" font-size="21" font-weight="700" fill="#ffffff" direction="ltr">zh-Hans</text>
 <text class="app-name" x="400" y="188" font-size="48" text-anchor="start">BattAI: 电池健康评分</text>
 <text x="400" y="238" text-anchor="start" font-size="23" font-weight="650" fill="#e2e8f0" direction="ltr">App Store ID 6802423998</text>
-<text class="query" x="100" y="392" font-size="37" text-anchor="start" transform="translate(100 0) scale(0.9849 1) translate(-100 0)">BattAI: 电池健康评分 — 预计到 80% 的时间 | iOS App</text>
-<text class="context" x="100" y="457" font-size="16" text-anchor="start" transform="translate(100 0) scale(0.3564 1) translate(-100 0)">BattAI • BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。 • BattAI 没有账户、遥测、广告或网络请求。数据留在这台设备上，只会把功能受限的最小快照直接发给已配对的 Apple Watch。取样频率受限，分析最快每 5 分钟一次；估算使用区间，缺失数据保持缺失。</text>
+<text class="query" x="100" y="392" font-size="33" text-anchor="start" transform="translate(100 0) scale(0.9903 1) translate(-100 0)">BattAI: 电池健康评分 — 规则、来源和限制都说清楚 | iOS App</text>
+<text class="context" x="100" y="457" font-size="16" text-anchor="start" transform="translate(100 0) scale(0.7887 1) translate(-100 0)">BattAI BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。</text>
 <line x1="100" y1="498" x2="1100" y2="498" stroke="#ffffff" stroke-opacity="0.22"/>
 <text class="purchase-model" x="100" y="548" font-size="25" text-anchor="start">免费开始使用 · 一次购买解锁</text>
 <text x="1100" y="548" text-anchor="end" font-size="25" font-weight="800" fill="#ffffff">App Store</text>

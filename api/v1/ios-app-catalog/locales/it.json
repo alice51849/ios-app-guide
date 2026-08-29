@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-27",
-  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "it",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -171,14 +171,16 @@
       "key": "battai",
       "app_store_id": "6802423998",
       "name": "BattAI: Salute della batteria",
-      "summary": "BattAI • BattAI usa cinque dati delle API pubbliche di iOS: livello batteria, stato di carica, Risparmio energetico, stato termico dell’intero dispositivo e ora. Gli altri risultati sono calcolati da queste letture o aggiunti da te. Ogni dettaglio mostra fonte e limiti. • BattAI non ha account, telemetria, pubblicità o richieste di rete. I dati restano sul dispositivo, tranne un’istantanea minima e limitata alle funzioni inviata direttamente all’Apple Watch abbinato. Il campionamento è limitato, l’analisi avviene al massimo ogni cinque minuti, le stime usano intervalli e i dati mancanti restano mancanti.",
+      "summary": "BattAI BattAI usa cinque dati delle API pubbliche di iOS: livello batteria, stato di carica, Risparmio energetico, stato termico dell’intero dispositivo e ora. Gli altri risultati sono calcolati da queste letture o aggiunti da te. Ogni dettaglio mostra fonte e limiti.",
       "category": "utility",
       "search_terms": [
         "Punteggio di salute della batteria",
         "Capacità massima",
         "Cicli",
         "Cura della ricarica",
-        "Intervallo di carica"
+        "Intervallo di carica",
+        "Velocità di ricarica",
+        "Esporta dati"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

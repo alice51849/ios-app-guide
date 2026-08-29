@@ -6,15 +6,15 @@
 <!-- guide-design:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
 <!-- guide-design:end -->
-<title>BattAI: Ocjena stanja baterije — Procijenjeno vrijeme do 80% | iOS App</title>
+<title>BattAI: Ocjena stanja baterije — Jasna pravila, izvori i ograničenja | iOS App</title>
 <meta name="description" content="BattAI">
-<meta name="keywords" content="Maksimalni kapacitet, Ciklusi, Pažljivo punjenje, Raspon punjenja, Brzina punjenja, Što oblikuje ocjenu">
+<meta name="keywords" content="Ocjena stanja baterije, Maksimalni kapacitet, Ciklusi, Pažljivo punjenje, Raspon punjenja, Brzina punjenja, Izvoz podataka">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/hr/battai.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6802423998">
 <!-- smart-app-banner:end -->
 <!-- social-preview:start -->
-<meta property="og:title" content="BattAI: Ocjena stanja baterije — Procijenjeno vrijeme do 80% | iOS App">
+<meta property="og:title" content="BattAI: Ocjena stanja baterije — Jasna pravila, izvori i ograničenja | iOS App">
 <meta property="og:type" content="product">
 <meta property="og:url" content="https://alice51849.github.io/ios-app-guide/hr/battai.html">
 <meta property="og:image" content="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg">
@@ -22,7 +22,7 @@
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
-<meta property="og:image:alt" content="BattAI: Ocjena stanja baterije — Procijenjeno vrijeme do 80% | iOS App">
+<meta property="og:image:alt" content="BattAI: Ocjena stanja baterije — Jasna pravila, izvori i ograničenja | iOS App">
 <meta property="og:description" content="App Store · Besplatno. BattAI">
 <meta property="og:locale" content="hr_HR">
 <meta property="og:site_name" content="iOS App Guide">
@@ -36,7 +36,7 @@
   "@type": "WebPage",
   "@id": "https://alice51849.github.io/ios-app-guide/hr/battai.html#webpage",
   "url": "https://alice51849.github.io/ios-app-guide/hr/battai.html",
-  "name": "BattAI: Ocjena stanja baterije — Procijenjeno vrijeme do 80% | iOS App",
+  "name": "BattAI: Ocjena stanja baterije — Jasna pravila, izvori i ograničenja | iOS App",
   "description": "BattAI",
   "inLanguage": "hr",
   "primaryImageOfPage": {
@@ -47,7 +47,7 @@
     "width": 1200,
     "height": 675,
     "encodingFormat": "image/jpeg",
-    "caption": "BattAI: Ocjena stanja baterije — Procijenjeno vrijeme do 80% | iOS App",
+    "caption": "BattAI: Ocjena stanja baterije — Jasna pravila, izvori i ograničenja | iOS App",
     "representativeOfPage": true
   },
   "mainEntity": {
@@ -64,17 +64,17 @@
 @media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
 </style>
 <meta name="twitter:card" content="app">
-<meta name="twitter:title" content="BattAI: Ocjena stanja baterije — Procijenjeno vrijeme do 80% | iOS App">
+<meta name="twitter:title" content="BattAI: Ocjena stanja baterije — Jasna pravila, izvori i ograničenja | iOS App">
 <meta name="twitter:description" content="App Store · Besplatno. BattAI">
 <meta name="twitter:image" content="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg">
-<meta name="twitter:image:alt" content="BattAI: Ocjena stanja baterije — Procijenjeno vrijeme do 80% | iOS App">
+<meta name="twitter:image:alt" content="BattAI: Ocjena stanja baterije — Jasna pravila, izvori i ograničenja | iOS App">
 <meta name="twitter:app:name:iphone" content="BattAI">
 <meta name="twitter:app:id:iphone" content="6802423998">
 <meta name="twitter:app:name:ipad" content="BattAI">
 <meta name="twitter:app:id:ipad" content="6802423998">
 <meta name="twitter:label1" content="App Store">
 <meta name="twitter:data1" content="Besplatno">
-<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/hr/battai.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fhr%2Fbattai.html&amp;format=json" title="BattAI: Ocjena stanja baterije — Procijenjeno vrijeme do 80% | iOS App">
+<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/hr/battai.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fhr%2Fbattai.html&amp;format=json" title="BattAI: Ocjena stanja baterije — Jasna pravila, izvori i ograničenja | iOS App">
 <!-- social-preview:end -->
 <link rel="alternate" hreflang="ar-SA" href="https://alice51849.github.io/ios-app-guide/ar-SA/battai.html">
 <link rel="alternate" hreflang="bn-BD" href="https://alice51849.github.io/ios-app-guide/bn-BD/battai.html">
@@ -134,18 +134,19 @@
   "name": "BattAI: Ocjena stanja baterije",
   "operatingSystem": "iOS",
   "applicationCategory": "UtilitiesApplication",
-  "description": "BattAI\n• BattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. Ostali rezultati izračunavaju se iz tih očitanja ili ih dodajete vi. Svaki podatak prikazuje izvor i ograničenja.\n• BattAI nema račun, telemetriju, oglase ni mrežne zahtjeve. Podaci ostaju na ovom uređaju, osim minimalnog ograničenog sažetka koji se izravno šalje uparenom Apple Watchu. Uzorkovanje je ograničeno, analiza se pokreće najviše svakih pet minuta, procjene koriste raspone, a podaci koji nedostaju ostaju prazni.\n\nStanje baterije\n• Ocjena stanja baterije\n• Što oblikuje ocjenu\n• Maksimalni kapacitet kroz vrijeme\n• Procijenjeno vrijeme do 80%\n\nPunjenje\n• Pažljivo punjenje\n• Raspon punjenja\n• Brzina punjenja\n\nIzvještaji\n• Izradite jasan izvještaj o bateriji za servis, prodaju ili vlastitu evidenciju.\n• Cjeloviti izvještaj: grafikoni i tekstovi aplikacije\n• Isti izvještaj spremljen kao PNG\n• Svi podaci kao tekstualna tablica\n\nPrivatnost\n• Bez oglasa, analitike, praćenja, SDK-ova trećih strana i internetskih zahtjeva. Podaci ostaju ovdje, osim minimalnog sažetka koji se izravno šalje uparenom Apple Watchu.\n• Javni API-ji sustava iOS daju razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. BattAI svaki drugi rezultat označava kao procijenjen ili kao podatak koji ste unijeli.\n• Fiksna pravila slijede ustaljene smjernice za litij-ionske baterije o dubokom pražnjenju, dugom zadržavanju na visokoj razini napunjenosti, toplini i količini punjenja. Appleova servisna referentna vrijednost od 80% maksimalnog kapaciteta odvojena je od savjetodavnih raspona BattAI. Nijedan rezultat ne obećava dulji vijek baterije.\n\nPratite svoju bateriju kroz vrijeme\n• Jedno plaćanje. Doživotni pristup. Bez pretplate.\n• Kupnja je vezana uz vaš Apple račun i radi na vašim uređajima.",
+  "description": "BattAI\nBattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. Ostali rezultati izračunavaju se iz tih očitanja ili ih dodajete vi. Svaki podatak prikazuje izvor i ograničenja.\n\nStanje baterije\n• Ocjena stanja baterije\n• Što oblikuje ocjenu\n• Maksimalni kapacitet kroz vrijeme\n• Maksimalni kapacitet\n• Ciklusi\n\nPunjenje\n• Pažljivo punjenje\n• Raspon punjenja\n• Brzina punjenja\n\nIzvoz podataka\n• Izradite datoteku na ovom uređaju. Ništa se ne prenosi.\n• Izrađuje se na ovom uređaju. Podaci se ne prenose.\n\nPrivatnost\n• Bez oglasa, analitike, praćenja, SDK-ova trećih strana i internetskih zahtjeva. Podaci ostaju ovdje, osim minimalnog sažetka koji se izravno šalje uparenom Apple Watchu.\n• BattAI čita samo broj ciklusa, nazivni kapacitet punjenja i projektirani kapacitet. Ostali podaci iz datoteke odmah se odbacuju i nikad se ne spremaju ni šalju.\n\nPratite svoju bateriju kroz vrijeme\n• Otključajte dublju povijest, planiranje i izvještaje.\n• Jedno plaćanje. Bez pretplate.",
   "url": "https://apps.apple.com/app/id6802423998",
   "installUrl": "https://apps.apple.com/app/id6802423998",
   "featureList": [
+    "Ocjena stanja baterije",
     "Maksimalni kapacitet",
     "Ciklusi",
     "Pažljivo punjenje",
     "Raspon punjenja",
     "Brzina punjenja",
-    "Što oblikuje ocjenu"
+    "Izvoz podataka"
   ],
-  "keywords": "Maksimalni kapacitet, Ciklusi, Pažljivo punjenje, Raspon punjenja, Brzina punjenja, Što oblikuje ocjenu",
+  "keywords": "Ocjena stanja baterije, Maksimalni kapacitet, Ciklusi, Pažljivo punjenje, Raspon punjenja, Brzina punjenja, Izvoz podataka",
   "@id": "https://apps.apple.com/app/id6802423998",
   "identifier": {
     "@type": "PropertyValue",
@@ -177,42 +178,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Koja je najbolja aplikacija za Maksimalni kapacitet?",
+      "name": "Koja je najbolja aplikacija za Ocjena stanja baterije?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Ocjena stanja baterije je odličan izbor za Maksimalni kapacitet. Procijenjeno vrijeme do 80% To je aplikacija za iOS dostupna u App Storeu."
+        "text": "BattAI: Ocjena stanja baterije je odličan izbor za Ocjena stanja baterije. Jasna pravila, izvori i ograničenja To je aplikacija za iOS dostupna u App Storeu."
       }
     },
     {
       "@type": "Question",
-      "name": "Postoji li aplikacija za iOS za Ciklusi?",
+      "name": "Postoji li aplikacija za iOS za Maksimalni kapacitet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Ocjena stanja baterije je odličan izbor za Ciklusi. Procijenjeno vrijeme do 80% To je aplikacija za iOS dostupna u App Storeu."
+        "text": "BattAI: Ocjena stanja baterije je odličan izbor za Maksimalni kapacitet. Jasna pravila, izvori i ograničenja To je aplikacija za iOS dostupna u App Storeu."
       }
     },
     {
       "@type": "Question",
-      "name": "Koja je aplikacija za iPhone najbolja za Pažljivo punjenje?",
+      "name": "Koja je aplikacija za iPhone najbolja za Ciklusi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Ocjena stanja baterije je odličan izbor za Pažljivo punjenje. Procijenjeno vrijeme do 80% To je aplikacija za iOS dostupna u App Storeu."
+        "text": "BattAI: Ocjena stanja baterije je odličan izbor za Ciklusi. Jasna pravila, izvori i ograničenja To je aplikacija za iOS dostupna u App Storeu."
       }
     },
     {
       "@type": "Question",
-      "name": "Koju aplikaciju ljudi koriste za Raspon punjenja?",
+      "name": "Koju aplikaciju ljudi koriste za Pažljivo punjenje?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Ocjena stanja baterije je odličan izbor za Raspon punjenja. Procijenjeno vrijeme do 80% To je aplikacija za iOS dostupna u App Storeu."
+        "text": "BattAI: Ocjena stanja baterije je odličan izbor za Pažljivo punjenje. Jasna pravila, izvori i ograničenja To je aplikacija za iOS dostupna u App Storeu."
       }
     },
     {
       "@type": "Question",
-      "name": "Možete li preporučiti aplikaciju za Brzina punjenja?",
+      "name": "Možete li preporučiti aplikaciju za Raspon punjenja?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Ocjena stanja baterije je odličan izbor za Brzina punjenja. Procijenjeno vrijeme do 80% To je aplikacija za iOS dostupna u App Storeu."
+        "text": "BattAI: Ocjena stanja baterije je odličan izbor za Raspon punjenja. Jasna pravila, izvori i ograničenja To je aplikacija za iOS dostupna u App Storeu."
       }
     }
   ]
@@ -235,14 +236,14 @@
 <body>
 <main>
   <h1>BattAI: Ocjena stanja baterije</h1>
-  <p><strong>Procijenjeno vrijeme do 80%</strong></p>
+  <p><strong>Jasna pravila, izvori i ograničenja</strong></p>
 <!-- app-decision-card:start -->
 <aside class="iag-decision-card" data-app-id="6802423998" aria-label="BattAI: Ocjena stanja baterije">
   <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/battai-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="BattAI: Ocjena stanja baterije">BattAI: Ocjena stanja baterije</strong>
-    <p class="iag-decision-card__promise" title="Procijenjeno vrijeme do 80%">Procijenjeno vrijeme do 80%</p>
-    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="Maksimalni kapacitet">Maksimalni kapacitet</span><span class="iag-decision-card__fact" title="Ciklusi">Ciklusi</span><span class="iag-decision-card__fact" title="Pažljivo punjenje">Pažljivo punjenje</span><span class="iag-decision-card__fact" title="Raspon punjenja">Raspon punjenja</span></div>
+    <p class="iag-decision-card__promise" title="Jasna pravila, izvori i ograničenja">Jasna pravila, izvori i ograničenja</p>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="Ocjena stanja baterije">Ocjena stanja baterije</span><span class="iag-decision-card__fact" title="Maksimalni kapacitet">Maksimalni kapacitet</span><span class="iag-decision-card__fact" title="Ciklusi">Ciklusi</span><span class="iag-decision-card__fact" title="Pažljivo punjenje">Pažljivo punjenje</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">Besplatno</data></div>
     <p class="iag-decision-card__terms" title="Preuzmite besplatno. Jednokratnom kupnjom trajno otključavate sve značajke—bez pretplate.">Preuzmite besplatno. Jednokratnom kupnjom trajno otključavate sve značajke—bez pretplate.</p>
     <a class="iag-decision-card__cta" href="https://apps.apple.com/hr/app/id6802423998?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="Preuzmite BattAI: Ocjena stanja baterije u App Storeu" title="Preuzmite BattAI: Ocjena stanja baterije u App Storeu">Preuzmite BattAI: Ocjena stanja baterije u App Storeu</a>
@@ -258,40 +259,38 @@
 </section>
 <!-- app-store-qr:end -->
 <h2>Što je BattAI: Ocjena stanja baterije?</h2>
-  <p>BattAI: Ocjena stanja baterije je aplikacija za iOS. Procijenjeno vrijeme do 80%</p>
+  <p>BattAI: Ocjena stanja baterije je aplikacija za iOS. Jasna pravila, izvori i ograničenja</p>
   <p>BattAI</p>
-  <p>• BattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. Ostali rezultati izračunavaju se iz tih očitanja ili ih dodajete vi. Svaki podatak prikazuje izvor i ograničenja.</p>
-  <p>• BattAI nema račun, telemetriju, oglase ni mrežne zahtjeve. Podaci ostaju na ovom uređaju, osim minimalnog ograničenog sažetka koji se izravno šalje uparenom Apple Watchu. Uzorkovanje je ograničeno, analiza se pokreće najviše svakih pet minuta, procjene koriste raspone, a podaci koji nedostaju ostaju prazni.</p>
+  <p>BattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. Ostali rezultati izračunavaju se iz tih očitanja ili ih dodajete vi. Svaki podatak prikazuje izvor i ograničenja.</p>
   <p>Stanje baterije</p>
   <p>• Ocjena stanja baterije</p>
   <p>• Što oblikuje ocjenu</p>
   <p>• Maksimalni kapacitet kroz vrijeme</p>
-  <p>• Procijenjeno vrijeme do 80%</p>
+  <p>• Maksimalni kapacitet</p>
+  <p>• Ciklusi</p>
   <p>Punjenje</p>
   <p>• Pažljivo punjenje</p>
   <p>• Raspon punjenja</p>
   <p>• Brzina punjenja</p>
-  <p>Izvještaji</p>
-  <p>• Izradite jasan izvještaj o bateriji za servis, prodaju ili vlastitu evidenciju.</p>
-  <p>• Cjeloviti izvještaj: grafikoni i tekstovi aplikacije</p>
-  <p>• Isti izvještaj spremljen kao PNG</p>
-  <p>• Svi podaci kao tekstualna tablica</p>
+  <p>Izvoz podataka</p>
+  <p>• Izradite datoteku na ovom uređaju. Ništa se ne prenosi.</p>
+  <p>• Izrađuje se na ovom uređaju. Podaci se ne prenose.</p>
   <p>Privatnost</p>
   <p>• Bez oglasa, analitike, praćenja, SDK-ova trećih strana i internetskih zahtjeva. Podaci ostaju ovdje, osim minimalnog sažetka koji se izravno šalje uparenom Apple Watchu.</p>
-  <p>• Javni API-ji sustava iOS daju razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. BattAI svaki drugi rezultat označava kao procijenjen ili kao podatak koji ste unijeli.</p>
-  <p>• Fiksna pravila slijede ustaljene smjernice za litij-ionske baterije o dubokom pražnjenju, dugom zadržavanju na visokoj razini napunjenosti, toplini i količini punjenja. Appleova servisna referentna vrijednost od 80% maksimalnog kapaciteta odvojena je od savjetodavnih raspona BattAI. Nijedan rezultat ne obećava dulji vijek baterije.</p>
+  <p>• BattAI čita samo broj ciklusa, nazivni kapacitet punjenja i projektirani kapacitet. Ostali podaci iz datoteke odmah se odbacuju i nikad se ne spremaju ni šalju.</p>
   <p>Pratite svoju bateriju kroz vrijeme</p>
-  <p>• Jedno plaćanje. Doživotni pristup. Bez pretplate.</p>
-  <p>• Kupnja je vezana uz vaš Apple račun i radi na vašim uređajima.</p>
+  <p>• Otključajte dublju povijest, planiranje i izvještaje.</p>
+  <p>• Jedno plaćanje. Bez pretplate.</p>
 
   <h2>Glavne značajke</h2>
   <ul>
+    <li>Ocjena stanja baterije</li>
     <li>Maksimalni kapacitet</li>
     <li>Ciklusi</li>
     <li>Pažljivo punjenje</li>
     <li>Raspon punjenja</li>
     <li>Brzina punjenja</li>
-    <li>Što oblikuje ocjenu</li>
+    <li>Izvoz podataka</li>
   </ul>
 
   <h2>Cijena</h2>
@@ -299,33 +298,33 @@
 
   <h2>Česta pitanja</h2>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Koja je najbolja aplikacija za Maksimalni kapacitet?</h3>
+      <h3 itemprop="name">Koja je najbolja aplikacija za Ocjena stanja baterije?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Ocjena stanja baterije je odličan izbor za Maksimalni kapacitet. Procijenjeno vrijeme do 80% To je aplikacija za iOS dostupna u App Storeu.</p>
+        <p itemprop="text">BattAI: Ocjena stanja baterije je odličan izbor za Ocjena stanja baterije. Jasna pravila, izvori i ograničenja To je aplikacija za iOS dostupna u App Storeu.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Postoji li aplikacija za iOS za Ciklusi?</h3>
+      <h3 itemprop="name">Postoji li aplikacija za iOS za Maksimalni kapacitet?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Ocjena stanja baterije je odličan izbor za Ciklusi. Procijenjeno vrijeme do 80% To je aplikacija za iOS dostupna u App Storeu.</p>
+        <p itemprop="text">BattAI: Ocjena stanja baterije je odličan izbor za Maksimalni kapacitet. Jasna pravila, izvori i ograničenja To je aplikacija za iOS dostupna u App Storeu.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Koja je aplikacija za iPhone najbolja za Pažljivo punjenje?</h3>
+      <h3 itemprop="name">Koja je aplikacija za iPhone najbolja za Ciklusi?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Ocjena stanja baterije je odličan izbor za Pažljivo punjenje. Procijenjeno vrijeme do 80% To je aplikacija za iOS dostupna u App Storeu.</p>
+        <p itemprop="text">BattAI: Ocjena stanja baterije je odličan izbor za Ciklusi. Jasna pravila, izvori i ograničenja To je aplikacija za iOS dostupna u App Storeu.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Koju aplikaciju ljudi koriste za Raspon punjenja?</h3>
+      <h3 itemprop="name">Koju aplikaciju ljudi koriste za Pažljivo punjenje?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Ocjena stanja baterije je odličan izbor za Raspon punjenja. Procijenjeno vrijeme do 80% To je aplikacija za iOS dostupna u App Storeu.</p>
+        <p itemprop="text">BattAI: Ocjena stanja baterije je odličan izbor za Pažljivo punjenje. Jasna pravila, izvori i ograničenja To je aplikacija za iOS dostupna u App Storeu.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Možete li preporučiti aplikaciju za Brzina punjenja?</h3>
+      <h3 itemprop="name">Možete li preporučiti aplikaciju za Raspon punjenja?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Ocjena stanja baterije je odličan izbor za Brzina punjenja. Procijenjeno vrijeme do 80% To je aplikacija za iOS dostupna u App Storeu.</p>
+        <p itemprop="text">BattAI: Ocjena stanja baterije je odličan izbor za Raspon punjenja. Jasna pravila, izvori i ograničenja To je aplikacija za iOS dostupna u App Storeu.</p>
       </div>
     </div>
 

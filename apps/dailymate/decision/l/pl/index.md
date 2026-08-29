@@ -2,7 +2,7 @@
 title: "najlepsza praktyczna aplikacja z frazami językowymi dla podróżnych z Apple Watch"
 lang: "pl"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/pl/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

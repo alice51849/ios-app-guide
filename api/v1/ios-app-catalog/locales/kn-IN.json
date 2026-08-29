@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-27",
-  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "kn-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -168,7 +168,7 @@
       "key": "battai",
       "app_store_id": "6802423998",
       "name": "BattAI: ಬ್ಯಾಟರಿ ಆರೋಗ್ಯ ಅಂಕ",
-      "summary": "BattAI • BattAI ಸಾರ್ವಜನಿಕ iOS APIಗಳಿಂದ 5 ಮೌಲ್ಯಗಳನ್ನು ಬಳಸುತ್ತದೆ: ಬ್ಯಾಟರಿ ಮಟ್ಟ, ಚಾರ್ಜ್ ಸ್ಥಿತಿ, Low Power Mode, ಇಡೀ ಸಾಧನದ ಉಷ್ಣ ಸ್ಥಿತಿ ಮತ್ತು ಸಮಯ. ಇತರ ಫಲಿತಾಂಶಗಳು ಈ ಅಳತೆಗಳಿಂದ ಲೆಕ್ಕವಾಗುತ್ತವೆ ಅಥವಾ ನೀವು ಸೇರಿಸುತ್ತೀರಿ. ಪ್ರತಿಯೊಂದು ವಿವರವು ಮೂಲ ಮತ್ತು ಮಿತಿಯನ್ನು ತೋರಿಸುತ್ತದೆ. • BattAIಗೆ ಖಾತೆ, ದೂರಮಾಪನ, ಜಾಹೀರಾತು ಅಥವಾ ನೆಟ್‌ವರ್ಕ್ ವಿನಂತಿಗಳಿಲ್ಲ. ಡೇಟಾ ಈ ಸಾಧನದಲ್ಲೇ ಇರುತ್ತದೆ; ಸೀಮಿತ ವೈಶಿಷ್ಟ್ಯದ ಸಣ್ಣ ಚಿತ್ರಣವನ್ನು ಮಾತ್ರ ಜೋಡಿಸಿದ Apple Watchಗೆ ನೇರವಾಗಿ ಕಳುಹಿಸಲಾಗುತ್ತದೆ. ಅಳತೆ ಸೀಮಿತ, ವಿಶ್ಲೇಷಣೆ ಗರಿಷ್ಠ ಪ್ರತಿ 5 minಗೆ, ಅಂದಾಜುಗಳು ವ್ಯಾಪ್ತಿಯಲ್ಲಿ, ತಪ್ಪಿದ ಡೇಟಾ ಹಾಗೆಯೇ ಉಳಿಯುತ್ತದೆ.",
+      "summary": "BattAI BattAI ಸಾರ್ವಜನಿಕ iOS APIಗಳಿಂದ 5 ಮೌಲ್ಯಗಳನ್ನು ಬಳಸುತ್ತದೆ: ಬ್ಯಾಟರಿ ಮಟ್ಟ, ಚಾರ್ಜ್ ಸ್ಥಿತಿ, Low Power Mode, ಇಡೀ ಸಾಧನದ ಉಷ್ಣ ಸ್ಥಿತಿ ಮತ್ತು ಸಮಯ. ಇತರ ಫಲಿತಾಂಶಗಳು ಈ ಅಳತೆಗಳಿಂದ ಲೆಕ್ಕವಾಗುತ್ತವೆ ಅಥವಾ ನೀವು ಸೇರಿಸುತ್ತೀರಿ. ಪ್ರತಿಯೊಂದು ವಿವರವು ಮೂಲ ಮತ್ತು ಮಿತಿಯನ್ನು ತೋರಿಸುತ್ತದೆ.",
       "category": "utility",
       "search_terms": [
         "ಬ್ಯಾಟರಿ ಆರೋಗ್ಯ ಅಂಕ",
@@ -177,8 +177,7 @@
         "ಚಾರ್ಜ್ ಕಾಳಜಿ",
         "ಚಾರ್ಜ್ ವ್ಯಾಪ್ತಿ",
         "ಚಾರ್ಜ್ ದರ",
-        "ವರದಿಗಳು",
-        "PDF"
+        "ಡೇಟಾ ರಫ್ತು"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-27",
-  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "hu",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -173,7 +173,7 @@
       "key": "battai",
       "app_store_id": "6802423998",
       "name": "BattAI: Akkuállapot",
-      "summary": "BattAI • A BattAI öt értéket használ a nyilvános iOS API-kból: töltöttségi szintet, töltési állapotot, Alacsony töltöttségű módot, az egész készülék hőállapotát és az időt. A többi eredmény ezekből készül vagy tőled származik. Minden adatnál látható a forrás és a korlátok. • A BattAI-ban nincs fiók, telemetria, hirdetés vagy hálózati kérés. Az adatok ezen az eszközön maradnak, kivéve a minimális, korlátozott pillanatképet, amely közvetlenül a párosított Apple Watchra kerül. A mintavétel korlátozott, az elemzés legfeljebb ötpercenként fut, a becslések tartományokat használnak, a hiányzó adat pedig hiányzó marad.",
+      "summary": "BattAI A BattAI öt értéket használ a nyilvános iOS API-kból: töltöttségi szintet, töltési állapotot, Alacsony töltöttségű módot, az egész készülék hőállapotát és az időt. A többi eredmény ezekből készül vagy tőled származik. Minden adatnál látható a forrás és a korlátok.",
       "category": "utility",
       "search_terms": [
         "Akkumulátorállapot-pontszám",
@@ -181,8 +181,8 @@
         "Ciklusok",
         "Töltési gondosság",
         "Töltési tartomány",
-        "PDF",
-        "CSV"
+        "Töltési sebesség",
+        "Adatok exportálása"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

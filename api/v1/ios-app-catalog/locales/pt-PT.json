@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-27",
-  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "pt-PT",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -173,17 +173,16 @@
       "key": "battai",
       "app_store_id": "6802423998",
       "name": "BattAI: Saúde da bateria",
-      "summary": "BattAI • O BattAI usa cinco dados das API públicas do iOS: nível da bateria, estado do carregamento, baixo consumo, estado térmico de todo o dispositivo e hora. Os outros resultados são calculados com estas leituras ou adicionados por si. Cada dado mostra a fonte e os limites. • O BattAI não tem conta, telemetria, anúncios nem pedidos de rede. Os dados ficam no dispositivo, exceto um resumo mínimo e limitado às funções enviado diretamente para o Apple Watch emparelhado. A amostragem é limitada, a análise corre no máximo a cada cinco minutos, as estimativas usam intervalos e os dados em falta continuam em falta.",
+      "summary": "BattAI O BattAI usa cinco dados das API públicas do iOS: nível da bateria, estado do carregamento, baixo consumo, estado térmico de todo o dispositivo e hora. Os outros resultados são calculados com estas leituras ou adicionados por si. Cada dado mostra a fonte e os limites.",
       "category": "utility",
       "search_terms": [
         "Pontuação de saúde da bateria",
         "Capacidade máxima",
         "Ciclos",
         "Cuidado no carregamento",
-        "Relatórios",
-        "PDF",
-        "CSV",
-        "de"
+        "Intervalo de carregamento",
+        "Velocidade de carregamento",
+        "Exportar dados"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

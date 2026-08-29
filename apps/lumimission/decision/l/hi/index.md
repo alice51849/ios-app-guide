@@ -2,7 +2,7 @@
 title: "पूर्व-प्राथमिक बच्चों के लिए बिना विज्ञापन के सर्वश्रेष्ठ सोने की दिनचर्या ऐप"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/hi/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

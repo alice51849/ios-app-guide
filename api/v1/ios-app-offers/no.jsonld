@@ -6,7 +6,7 @@
   "name": "Lumi Studio Utgiver Søkeintensjonskatalog",
   "description": "En førsteparts katalog over hvem hver app er laget for, oppgaven de prøver å fullføre, og den direkte App Store-stien.",
   "inLanguage": "no",
-  "dateModified": "2026-08-28",
+  "dateModified": "2026-08-29",
   "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -283,7 +283,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-battai",
         "url": "https://apps.apple.com/no/app/id6802423998?pt=118326163&ct=iag_data_no&mt=8",
         "name": "BattAI: Batteritilstand",
-        "description": "BattAI • BattAI bruker fem verdier fra offentlige iOS-API-er: batterinivå, ladestatus, strømsparing, termisk tilstand for hele enheten og tid. Andre resultater beregnes fra disse målingene eller legges til av deg. Hver detalj viser kilde og grenser. • BattAI har ingen konto, telemetri, annonser eller nettverksforespørsler. Data blir på denne enheten, bortsett fra et minimalt funksjonsbegrenset øyeblikksbilde som sendes direkte til den sammenkoblede Apple Watch-en. Målinger er begrenset, analysen kjører høyst hvert femte minutt, beregninger bruker intervaller, og manglende data forblir manglende.",
+        "description": "BattAI BattAI bruker fem verdier fra offentlige iOS-API-er: batterinivå, ladestatus, strømsparing, termisk tilstand for hele enheten og tid. Andre resultater beregnes fra disse målingene eller legges til av deg. Hver detalj viser kilde og grenser.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "no",
-          "description": "BattAI • BattAI bruker fem verdier fra offentlige iOS-API-er: batterinivå, ladestatus, strømsparing, termisk tilstand for hele enheten og tid. Andre resultater beregnes fra disse målingene eller legges til av deg. Hver detalj viser kilde og grenser. • BattAI har ingen konto, telemetri, annonser eller nettverksforespørsler. Data blir på denne enheten, bortsett fra et minimalt funksjonsbegrenset øyeblikksbilde som sendes direkte til den sammenkoblede Apple Watch-en. Målinger er begrenset, analysen kjører høyst hvert femte minutt, beregninger bruker intervaller, og manglende data forblir manglende.",
+          "description": "BattAI BattAI bruker fem verdier fra offentlige iOS-API-er: batterinivå, ladestatus, strømsparing, termisk tilstand for hele enheten og tid. Andre resultater beregnes fra disse målingene eller legges til av deg. Hver detalj viser kilde og grenser.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-battai"
           },

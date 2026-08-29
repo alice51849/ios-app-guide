@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-27",
-  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "sv",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -168,16 +168,16 @@
       "key": "battai",
       "app_store_id": "6802423998",
       "name": "BattAI: Batteriets hälsopoäng",
-      "summary": "BattAI • BattAI använder fem värden från offentliga iOS-API:er: batterinivå, laddningsstatus, strömsparläge, hela enhetens termiska tillstånd och tid. Andra resultat beräknas från dessa mätningar eller läggs till av dig. Varje uppgift visar källa och gränser. • BattAI har inget konto, ingen telemetri, inga annonser och inga nätverksanrop. Data stannar på den här enheten, förutom en minimal funktionsbegränsad ögonblicksbild som skickas direkt till parkopplade Apple Watch. Mätningen är begränsad, analysen körs högst var femte minut, uppskattningar använder intervall och saknade data förblir saknade.",
+      "summary": "BattAI BattAI använder fem värden från offentliga iOS-API:er: batterinivå, laddningsstatus, strömsparläge, hela enhetens termiska tillstånd och tid. Andra resultat beräknas från dessa mätningar eller läggs till av dig. Varje uppgift visar källa och gränser.",
       "category": "utility",
       "search_terms": [
+        "Batteriets hälsopoäng",
         "Maxkapacitet",
         "Cykler",
         "Laddningsvård",
         "Laddningsintervall",
         "Laddningshastighet",
-        "Uppskattad tid till 80%",
-        "PDF"
+        "Exportera data"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

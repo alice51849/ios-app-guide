@@ -2,7 +2,7 @@
 title: "legjobb alkalmazás a közösségi média blokkolására tanulás közben iPhone-on"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/hu/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

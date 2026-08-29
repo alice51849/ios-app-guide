@@ -1,17 +1,17 @@
 ---
-title: "BattAI: Skor kesihatan bateri — Anggaran masa hingga 80% | iOS App"
+title: "BattAI: Skor kesihatan bateri — Peraturan, sumber dan batas yang jelas | iOS App"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ms/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# BattAI: Skor kesihatan bateri — Anggaran masa hingga 80% | iOS App
+# BattAI: Skor kesihatan bateri — Peraturan, sumber dan batas yang jelas | iOS App
 
-BattAI • BattAI menggunakan lima nilai daripada API awam iOS: aras bateri, keadaan pengecasan, Mod Kuasa Rendah, keadaan terma seluruh peranti dan masa. Hasil lain dikira daripada bacaan itu atau ditambah oleh anda. Setiap butiran menunjukkan sumber dan batasnya. • BattAI tidak mempunyai akaun, telemetri, iklan atau permintaan rangkaian. Data kekal pada peranti ini, kecuali petikan minimum dengan fungsi terhad yang dihantar terus ke Apple Watch pasangan anda. Pensampelan dihadkan, analisis berjalan paling kerap setiap lima minit, anggaran menggunakan julat dan data yang hilang kekal kosong. Kesihatan • Skor kesihatan bateri • Faktor yang membentuk skor • Kapasiti maksimum mengikut masa • Anggaran masa hingga 80% Pengecasan • Penjagaan pengecasan • Julat pengecasan • Kadar pengecasan Laporan • Cipta laporan bateri yang jelas untuk servis, jualan semula atau rekod anda. • Laporan penuh: carta dan teks apl • Laporan sama disimpan sebagai PNG • Semua data anda dalam jadual teks Privasi • Tiada iklan, analitik, penjejakan, SDK pihak ketiga atau permintaan internet. Data kekal di sini, kecuali petikan minimum yang dihantar terus ke Apple Watch pasangan anda. • API awam iOS menyediakan aras bateri, keadaan pengecasan, Mod Kuasa Rendah, keadaan terma seluruh peranti dan masa. BattAI menandakan hasil lain sebagai anggaran atau nilai daripada anda. • Peraturan tetap mengikuti panduan litium-ion yang mantap tentang nyahcas dalam, tempoh lama pada cas tinggi, haba dan jumlah cas. Penanda aras servis kapasiti maksimum 80% Apple diasingkan daripada jalur bimbingan BattAI. Tiada hasil menjanjikan hayat bateri tambahan. Fahami bateri anda dari semasa ke semasa • Satu bayaran. Akses seumur hidup. Tiada langganan. • Pembelian terikat pada Apple Account anda dan berfungsi pada peranti anda.
+BattAI BattAI menggunakan lima nilai daripada API awam iOS: aras bateri, keadaan pengecasan, Mod Kuasa Rendah, keadaan terma seluruh peranti dan masa. Hasil lain dikira daripada bacaan itu atau ditambah oleh anda. Setiap butiran menunjukkan sumber dan batasnya. Kesihatan • Skor kesihatan bateri • Faktor yang membentuk skor • Kapasiti maksimum mengikut masa • Kapasiti maksimum • Kitaran Pengecasan • Penjagaan pengecasan • Julat pengecasan • Kadar pengecasan Eksport data • Cipta fail pada peranti ini. Tiada apa-apa dimuat naik. • Dibina pada peranti ini. Tiada data dimuat naik. Privasi • Tiada iklan, analitik, penjejakan, SDK pihak ketiga atau permintaan internet. Data kekal di sini, kecuali petikan minimum yang dihantar terus ke Apple Watch pasangan anda. • BattAI hanya membaca kiraan kitaran, kapasiti cas nominal dan kapasiti reka bentuk. Data fail lain dibuang serta-merta dan tidak pernah disimpan atau dihantar. Fahami bateri anda dari semasa ke semasa • Buka sejarah lebih mendalam, perancangan dan laporan. • Satu bayaran. Tiada langganan.
 
 - Lagi
 - Percuma untuk bermula · buka kunci kekal

@@ -2,7 +2,7 @@
 title: "HoursTag: நேரத்தை வாங்க — உண்மையில் எவ்வளவு செலவாகிறது? | iOS App"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ta-IN/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

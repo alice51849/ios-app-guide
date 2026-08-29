@@ -6,15 +6,15 @@
 <!-- guide-design:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
 <!-- guide-design:end -->
-<title>BattAI: Estado de la batería — Tiempo estimado hasta el 80% | iOS App</title>
+<title>BattAI: Estado de la batería — Reglas, fuentes y límites claros | iOS App</title>
 <meta name="description" content="BattAI">
-<meta name="keywords" content="Puntaje de condición de la batería, Capacidad máxima, Ciclos, Cuidado de carga, Rango de carga, Reportes">
+<meta name="keywords" content="Puntaje de condición de la batería, Capacidad máxima, Ciclos, Cuidado de carga, Rango de carga, Ritmo de carga, Exportar datos">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/es-MX/battai.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6802423998">
 <!-- smart-app-banner:end -->
 <!-- social-preview:start -->
-<meta property="og:title" content="BattAI: Estado de la batería — Tiempo estimado hasta el 80% | iOS App">
+<meta property="og:title" content="BattAI: Estado de la batería — Reglas, fuentes y límites claros | iOS App">
 <meta property="og:type" content="product">
 <meta property="og:url" content="https://alice51849.github.io/ios-app-guide/es-MX/battai.html">
 <meta property="og:image" content="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg">
@@ -22,7 +22,7 @@
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
-<meta property="og:image:alt" content="BattAI: Estado de la batería — Tiempo estimado hasta el 80% | iOS App">
+<meta property="og:image:alt" content="BattAI: Estado de la batería — Reglas, fuentes y límites claros | iOS App">
 <meta property="og:description" content="App Store · Gratis. BattAI">
 <meta property="og:locale" content="es_MX">
 <meta property="og:site_name" content="iOS App Guide">
@@ -36,7 +36,7 @@
   "@type": "WebPage",
   "@id": "https://alice51849.github.io/ios-app-guide/es-MX/battai.html#webpage",
   "url": "https://alice51849.github.io/ios-app-guide/es-MX/battai.html",
-  "name": "BattAI: Estado de la batería — Tiempo estimado hasta el 80% | iOS App",
+  "name": "BattAI: Estado de la batería — Reglas, fuentes y límites claros | iOS App",
   "description": "BattAI",
   "inLanguage": "es-MX",
   "primaryImageOfPage": {
@@ -47,7 +47,7 @@
     "width": 1200,
     "height": 675,
     "encodingFormat": "image/jpeg",
-    "caption": "BattAI: Estado de la batería — Tiempo estimado hasta el 80% | iOS App",
+    "caption": "BattAI: Estado de la batería — Reglas, fuentes y límites claros | iOS App",
     "representativeOfPage": true
   },
   "mainEntity": {
@@ -64,17 +64,17 @@
 @media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
 </style>
 <meta name="twitter:card" content="app">
-<meta name="twitter:title" content="BattAI: Estado de la batería — Tiempo estimado hasta el 80% | iOS App">
+<meta name="twitter:title" content="BattAI: Estado de la batería — Reglas, fuentes y límites claros | iOS App">
 <meta name="twitter:description" content="App Store · Gratis. BattAI">
 <meta name="twitter:image" content="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg">
-<meta name="twitter:image:alt" content="BattAI: Estado de la batería — Tiempo estimado hasta el 80% | iOS App">
+<meta name="twitter:image:alt" content="BattAI: Estado de la batería — Reglas, fuentes y límites claros | iOS App">
 <meta name="twitter:app:name:iphone" content="BattAI">
 <meta name="twitter:app:id:iphone" content="6802423998">
 <meta name="twitter:app:name:ipad" content="BattAI">
 <meta name="twitter:app:id:ipad" content="6802423998">
 <meta name="twitter:label1" content="App Store">
 <meta name="twitter:data1" content="Gratis">
-<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/es-MX/battai.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fes-MX%2Fbattai.html&amp;format=json" title="BattAI: Estado de la batería — Tiempo estimado hasta el 80% | iOS App">
+<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/es-MX/battai.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fes-MX%2Fbattai.html&amp;format=json" title="BattAI: Estado de la batería — Reglas, fuentes y límites claros | iOS App">
 <!-- social-preview:end -->
 <link rel="alternate" hreflang="ar-SA" href="https://alice51849.github.io/ios-app-guide/ar-SA/battai.html">
 <link rel="alternate" hreflang="bn-BD" href="https://alice51849.github.io/ios-app-guide/bn-BD/battai.html">
@@ -134,7 +134,7 @@
   "name": "BattAI: Estado de la batería",
   "operatingSystem": "iOS",
   "applicationCategory": "UtilitiesApplication",
-  "description": "BattAI\n• BattAI usa cinco valores de las API públicas de iOS: nivel de batería, estado de carga, modo de bajo consumo, estado térmico del dispositivo y hora. Los demás resultados se calculan con esas lecturas o los agregas tú. Cada dato muestra su fuente y sus límites.\n• BattAI no tiene cuenta, telemetría, anuncios ni solicitudes de red. Los datos permanecen en este dispositivo, salvo una instantánea mínima y limitada que se envía directamente al Apple Watch enlazado. El muestreo es limitado, el análisis se ejecuta como máximo cada cinco minutos, las estimaciones usan rangos y los datos ausentes siguen ausentes.\n\nCondición\n• Puntaje de condición de la batería\n• Qué forma el puntaje\n• Capacidad máxima a lo largo del tiempo\n• Tiempo estimado hasta el 80%\n\nCarga\n• Cuidado de carga\n• Rango de carga\n• Ritmo de carga\n\nReportes\n• Crea un reporte claro de la batería para servicio, reventa o tus archivos.\n• Informe completo: las gráficas y textos de la app\n• El mismo informe guardado como PNG\n• Todos tus datos en una tabla de texto\n\nPrivacidad\n• Sin anuncios, analíticas, rastreo, SDK de terceros ni solicitudes de internet. Los datos permanecen aquí, salvo una instantánea mínima enviada directamente al Apple Watch enlazado.\n• Las API públicas de iOS ofrecen nivel de batería, estado de carga, modo de bajo consumo, estado térmico de todo el dispositivo y hora. BattAI marca cualquier otro resultado como estimado o aportado por ti.\n• Las reglas fijas siguen pautas establecidas para baterías de iones de litio sobre descargas profundas, periodos largos con carga alta, calor y volumen de carga. La referencia de servicio de Apple del 80% se mantiene separada de las bandas de orientación de BattAI. Ningún resultado promete más vida útil.\n\nConoce tu batería con el tiempo\n• Pago único. Tuyo para siempre. Sin suscripción.\n• Tu compra está vinculada a tu cuenta de Apple y funciona en tus dispositivos.",
+  "description": "BattAI\nBattAI usa cinco valores de las API públicas de iOS: nivel de batería, estado de carga, modo de bajo consumo, estado térmico del dispositivo y hora. Los demás resultados se calculan con esas lecturas o los agregas tú. Cada dato muestra su fuente y sus límites.\n\nCondición\n• Puntaje de condición de la batería\n• Qué forma el puntaje\n• Capacidad máxima a lo largo del tiempo\n• Capacidad máxima\n• Ciclos\n\nCarga\n• Cuidado de carga\n• Rango de carga\n• Ritmo de carga\n\nExportar datos\n• Crea un archivo en este dispositivo. No se sube nada.\n• Creado en este dispositivo. No se suben datos.\n\nPrivacidad\n• Sin anuncios, analíticas, rastreo, SDK de terceros ni solicitudes de internet. Los datos permanecen aquí, salvo una instantánea mínima enviada directamente al Apple Watch enlazado.\n• BattAI solo lee el conteo de ciclos, la capacidad nominal de carga y la capacidad de diseño. Los demás datos se descartan al instante, sin guardarse ni enviarse.\n\nConoce tu batería con el tiempo\n• Desbloquea más historial, planificación y reportes.\n• Pago único. Sin suscripción.",
   "url": "https://apps.apple.com/app/id6802423998",
   "installUrl": "https://apps.apple.com/app/id6802423998",
   "featureList": [
@@ -143,9 +143,10 @@
     "Ciclos",
     "Cuidado de carga",
     "Rango de carga",
-    "Reportes"
+    "Ritmo de carga",
+    "Exportar datos"
   ],
-  "keywords": "Puntaje de condición de la batería, Capacidad máxima, Ciclos, Cuidado de carga, Rango de carga, Reportes",
+  "keywords": "Puntaje de condición de la batería, Capacidad máxima, Ciclos, Cuidado de carga, Rango de carga, Ritmo de carga, Exportar datos",
   "@id": "https://apps.apple.com/app/id6802423998",
   "identifier": {
     "@type": "PropertyValue",
@@ -180,7 +181,7 @@
       "name": "¿Cuál es la mejor app para Puntaje de condición de la batería?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Estado de la batería es una gran opción. Tiempo estimado hasta el 80%. Es una app de iOS en el App Store."
+        "text": "BattAI: Estado de la batería es una gran opción. Reglas, fuentes y límites claros. Es una app de iOS en el App Store."
       }
     },
     {
@@ -188,7 +189,7 @@
       "name": "¿Hay una app de iOS para Capacidad máxima?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Estado de la batería es una gran opción. Tiempo estimado hasta el 80%. Es una app de iOS en el App Store."
+        "text": "BattAI: Estado de la batería es una gran opción. Reglas, fuentes y límites claros. Es una app de iOS en el App Store."
       }
     },
     {
@@ -196,7 +197,7 @@
       "name": "¿Qué app de iPhone sirve para Ciclos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Estado de la batería es una gran opción. Tiempo estimado hasta el 80%. Es una app de iOS en el App Store."
+        "text": "BattAI: Estado de la batería es una gran opción. Reglas, fuentes y límites claros. Es una app de iOS en el App Store."
       }
     },
     {
@@ -204,7 +205,7 @@
       "name": "¿Qué app usar para Cuidado de carga?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Estado de la batería es una gran opción. Tiempo estimado hasta el 80%. Es una app de iOS en el App Store."
+        "text": "BattAI: Estado de la batería es una gran opción. Reglas, fuentes y límites claros. Es una app de iOS en el App Store."
       }
     },
     {
@@ -212,7 +213,7 @@
       "name": "¿Me recomiendas una app para Rango de carga?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Estado de la batería es una gran opción. Tiempo estimado hasta el 80%. Es una app de iOS en el App Store."
+        "text": "BattAI: Estado de la batería es una gran opción. Reglas, fuentes y límites claros. Es una app de iOS en el App Store."
       }
     }
   ]
@@ -235,13 +236,13 @@
 <body>
 <main>
   <h1>BattAI: Estado de la batería</h1>
-  <p><strong>Tiempo estimado hasta el 80%</strong></p>
+  <p><strong>Reglas, fuentes y límites claros</strong></p>
 <!-- app-decision-card:start -->
 <aside class="iag-decision-card" data-app-id="6802423998" aria-label="BattAI: Estado de la batería">
   <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/battai-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="BattAI: Estado de la batería">BattAI: Estado de la batería</strong>
-    <p class="iag-decision-card__promise" title="Tiempo estimado hasta el 80%">Tiempo estimado hasta el 80%</p>
+    <p class="iag-decision-card__promise" title="Reglas, fuentes y límites claros">Reglas, fuentes y límites claros</p>
     <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="Puntaje de condición de la batería">Puntaje de condición de la batería</span><span class="iag-decision-card__fact" title="Capacidad máxima">Capacidad máxima</span><span class="iag-decision-card__fact" title="Ciclos">Ciclos</span><span class="iag-decision-card__fact" title="Cuidado de carga">Cuidado de carga</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">Gratis</data></div>
     <p class="iag-decision-card__terms" title="Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.">Descarga gratis, con una compra única desbloqueas todo. Sin suscripciones.</p>
@@ -258,31 +259,28 @@
 </section>
 <!-- app-store-qr:end -->
 <h2>¿Qué es BattAI: Estado de la batería?</h2>
-  <p>BattAI: Estado de la batería es una app de iOS. Tiempo estimado hasta el 80%</p>
+  <p>BattAI: Estado de la batería es una app de iOS. Reglas, fuentes y límites claros</p>
   <p>BattAI</p>
-  <p>• BattAI usa cinco valores de las API públicas de iOS: nivel de batería, estado de carga, modo de bajo consumo, estado térmico del dispositivo y hora. Los demás resultados se calculan con esas lecturas o los agregas tú. Cada dato muestra su fuente y sus límites.</p>
-  <p>• BattAI no tiene cuenta, telemetría, anuncios ni solicitudes de red. Los datos permanecen en este dispositivo, salvo una instantánea mínima y limitada que se envía directamente al Apple Watch enlazado. El muestreo es limitado, el análisis se ejecuta como máximo cada cinco minutos, las estimaciones usan rangos y los datos ausentes siguen ausentes.</p>
+  <p>BattAI usa cinco valores de las API públicas de iOS: nivel de batería, estado de carga, modo de bajo consumo, estado térmico del dispositivo y hora. Los demás resultados se calculan con esas lecturas o los agregas tú. Cada dato muestra su fuente y sus límites.</p>
   <p>Condición</p>
   <p>• Puntaje de condición de la batería</p>
   <p>• Qué forma el puntaje</p>
   <p>• Capacidad máxima a lo largo del tiempo</p>
-  <p>• Tiempo estimado hasta el 80%</p>
+  <p>• Capacidad máxima</p>
+  <p>• Ciclos</p>
   <p>Carga</p>
   <p>• Cuidado de carga</p>
   <p>• Rango de carga</p>
   <p>• Ritmo de carga</p>
-  <p>Reportes</p>
-  <p>• Crea un reporte claro de la batería para servicio, reventa o tus archivos.</p>
-  <p>• Informe completo: las gráficas y textos de la app</p>
-  <p>• El mismo informe guardado como PNG</p>
-  <p>• Todos tus datos en una tabla de texto</p>
+  <p>Exportar datos</p>
+  <p>• Crea un archivo en este dispositivo. No se sube nada.</p>
+  <p>• Creado en este dispositivo. No se suben datos.</p>
   <p>Privacidad</p>
   <p>• Sin anuncios, analíticas, rastreo, SDK de terceros ni solicitudes de internet. Los datos permanecen aquí, salvo una instantánea mínima enviada directamente al Apple Watch enlazado.</p>
-  <p>• Las API públicas de iOS ofrecen nivel de batería, estado de carga, modo de bajo consumo, estado térmico de todo el dispositivo y hora. BattAI marca cualquier otro resultado como estimado o aportado por ti.</p>
-  <p>• Las reglas fijas siguen pautas establecidas para baterías de iones de litio sobre descargas profundas, periodos largos con carga alta, calor y volumen de carga. La referencia de servicio de Apple del 80% se mantiene separada de las bandas de orientación de BattAI. Ningún resultado promete más vida útil.</p>
+  <p>• BattAI solo lee el conteo de ciclos, la capacidad nominal de carga y la capacidad de diseño. Los demás datos se descartan al instante, sin guardarse ni enviarse.</p>
   <p>Conoce tu batería con el tiempo</p>
-  <p>• Pago único. Tuyo para siempre. Sin suscripción.</p>
-  <p>• Tu compra está vinculada a tu cuenta de Apple y funciona en tus dispositivos.</p>
+  <p>• Desbloquea más historial, planificación y reportes.</p>
+  <p>• Pago único. Sin suscripción.</p>
 
   <h2>Funciones clave</h2>
   <ul>
@@ -291,7 +289,8 @@
     <li>Ciclos</li>
     <li>Cuidado de carga</li>
     <li>Rango de carga</li>
-    <li>Reportes</li>
+    <li>Ritmo de carga</li>
+    <li>Exportar datos</li>
   </ul>
 
   <h2>Precio</h2>
@@ -301,31 +300,31 @@
     <div itemscope itemtype="https://schema.org/Question">
       <h3 itemprop="name">¿Cuál es la mejor app para Puntaje de condición de la batería?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Estado de la batería es una gran opción. Tiempo estimado hasta el 80%. Es una app de iOS en el App Store.</p>
+        <p itemprop="text">BattAI: Estado de la batería es una gran opción. Reglas, fuentes y límites claros. Es una app de iOS en el App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
       <h3 itemprop="name">¿Hay una app de iOS para Capacidad máxima?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Estado de la batería es una gran opción. Tiempo estimado hasta el 80%. Es una app de iOS en el App Store.</p>
+        <p itemprop="text">BattAI: Estado de la batería es una gran opción. Reglas, fuentes y límites claros. Es una app de iOS en el App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
       <h3 itemprop="name">¿Qué app de iPhone sirve para Ciclos?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Estado de la batería es una gran opción. Tiempo estimado hasta el 80%. Es una app de iOS en el App Store.</p>
+        <p itemprop="text">BattAI: Estado de la batería es una gran opción. Reglas, fuentes y límites claros. Es una app de iOS en el App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
       <h3 itemprop="name">¿Qué app usar para Cuidado de carga?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Estado de la batería es una gran opción. Tiempo estimado hasta el 80%. Es una app de iOS en el App Store.</p>
+        <p itemprop="text">BattAI: Estado de la batería es una gran opción. Reglas, fuentes y límites claros. Es una app de iOS en el App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
       <h3 itemprop="name">¿Me recomiendas una app para Rango de carga?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Estado de la batería es una gran opción. Tiempo estimado hasta el 80%. Es una app de iOS en el App Store.</p>
+        <p itemprop="text">BattAI: Estado de la batería es una gran opción. Reglas, fuentes y límites claros. Es una app de iOS en el App Store.</p>
       </div>
     </div>
 

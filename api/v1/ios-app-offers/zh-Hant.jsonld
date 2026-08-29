@@ -6,7 +6,7 @@
   "name": "Lumi Studio 開發者搜尋意圖目錄",
   "description": "第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。",
   "inLanguage": "zh-Hant",
-  "dateModified": "2026-08-28",
+  "dateModified": "2026-08-29",
   "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -283,7 +283,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-battai",
         "url": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=iag_data_zh_hant&mt=8",
         "name": "BattAI: 電池健康分數",
-        "description": "BattAI • BattAI 只使用公開 iOS API 提供的五項資料：電量、充電狀態、低耗電模式、整部裝置的熱狀態與時間。其他結果由這些讀值計算，或由你補充。每一項都會顯示來源與限制。 • BattAI 沒有帳號、遙測、廣告或網路請求。資料留在這台裝置上，只會把功能受限的最小快照直接傳給已配對的 Apple Watch。取樣頻率受限，分析最快每 5 分鐘一次；推估使用區間，缺少資料維持缺少。",
+        "description": "BattAI BattAI 只使用公開 iOS API 提供的五項資料：電量、充電狀態、低耗電模式、整部裝置的熱狀態與時間。其他結果由這些讀值計算，或由你補充。每一項都會顯示來源與限制。",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -313,7 +313,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "zh-Hant",
-          "description": "BattAI • BattAI 只使用公開 iOS API 提供的五項資料：電量、充電狀態、低耗電模式、整部裝置的熱狀態與時間。其他結果由這些讀值計算，或由你補充。每一項都會顯示來源與限制。 • BattAI 沒有帳號、遙測、廣告或網路請求。資料留在這台裝置上，只會把功能受限的最小快照直接傳給已配對的 Apple Watch。取樣頻率受限，分析最快每 5 分鐘一次；推估使用區間，缺少資料維持缺少。",
+          "description": "BattAI BattAI 只使用公開 iOS API 提供的五項資料：電量、充電狀態、低耗電模式、整部裝置的熱狀態與時間。其他結果由這些讀值計算，或由你補充。每一項都會顯示來源與限制。",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-battai"
           },

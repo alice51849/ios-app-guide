@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-27",
-  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "te-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -171,7 +171,7 @@
       "key": "battai",
       "app_store_id": "6802423998",
       "name": "BattAI: బ్యాటరీ ఆరోగ్య స్కోర్",
-      "summary": "BattAI • BattAI పబ్లిక్ iOS APIల నుంచి 5 విలువలను వాడుతుంది: బ్యాటరీ స్థాయి, ఛార్జ్ స్థితి, Low Power Mode, మొత్తం పరికరపు ఉష్ణ స్థితి, సమయం. ఇతర ఫలితాలు ఈ కొలతల నుంచి లెక్కించబడతాయి లేదా మీరు జోడిస్తారు. ప్రతి వివరంలో మూలం, పరిమితి కనిపిస్తాయి. • BattAIలో ఖాతా, టెలిమెట్రీ, ప్రకటనలు లేదా నెట్‌వర్క్ అభ్యర్థనలు లేవు. డేటా ఈ పరికరంలోనే ఉంటుంది; పరిమిత ఫీచర్ల చిన్న స్నాప్‌షాట్ మాత్రమే జత చేసిన Apple Watchకు నేరుగా పంపబడుతుంది. కొలత పరిమితం, విశ్లేషణ గరిష్ఠంగా ప్రతి 5 minకు, అంచనాలు పరిధులుగా, లేని డేటా లేనట్టుగానే ఉంటుంది.",
+      "summary": "BattAI BattAI పబ్లిక్ iOS APIల నుంచి 5 విలువలను వాడుతుంది: బ్యాటరీ స్థాయి, ఛార్జ్ స్థితి, Low Power Mode, మొత్తం పరికరపు ఉష్ణ స్థితి, సమయం. ఇతర ఫలితాలు ఈ కొలతల నుంచి లెక్కించబడతాయి లేదా మీరు జోడిస్తారు. ప్రతి వివరంలో మూలం, పరిమితి కనిపిస్తాయి.",
       "category": "utility",
       "search_terms": [
         "బ్యాటరీ ఆరోగ్య స్కోర్",
@@ -180,7 +180,7 @@
         "ఛార్జ్ సంరక్షణ",
         "ఛార్జ్ పరిధి",
         "ఛార్జ్ రేటు",
-        "PDF"
+        "డేటా ఎగుమతి"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

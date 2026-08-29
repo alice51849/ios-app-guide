@@ -6,15 +6,15 @@
 <!-- guide-design:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
 <!-- guide-design:end -->
-<title>BattAI: Salut de la bateria — Temps estimat fins al 80% | iOS App</title>
+<title>BattAI: Salut de la bateria — Regles, fonts i límits clars | iOS App</title>
 <meta name="description" content="BattAI">
-<meta name="keywords" content="Puntuació de salut de la bateria, Capacitat màxima, Cicles, Cura de càrrega, Interval de càrrega, PDF, CSV">
+<meta name="keywords" content="Puntuació de salut de la bateria, Capacitat màxima, Cicles, Cura de càrrega, Interval de càrrega, Velocitat de càrrega, Exportar dades">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ca/battai.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6802423998">
 <!-- smart-app-banner:end -->
 <!-- social-preview:start -->
-<meta property="og:title" content="BattAI: Salut de la bateria — Temps estimat fins al 80% | iOS App">
+<meta property="og:title" content="BattAI: Salut de la bateria — Regles, fonts i límits clars | iOS App">
 <meta property="og:type" content="product">
 <meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ca/battai.html">
 <meta property="og:image" content="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg">
@@ -22,7 +22,7 @@
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
-<meta property="og:image:alt" content="BattAI: Salut de la bateria — Temps estimat fins al 80% | iOS App">
+<meta property="og:image:alt" content="BattAI: Salut de la bateria — Regles, fonts i límits clars | iOS App">
 <meta property="og:description" content="App Store · Gratis. BattAI">
 <meta property="og:locale" content="ca_ES">
 <meta property="og:site_name" content="iOS App Guide">
@@ -36,7 +36,7 @@
   "@type": "WebPage",
   "@id": "https://alice51849.github.io/ios-app-guide/ca/battai.html#webpage",
   "url": "https://alice51849.github.io/ios-app-guide/ca/battai.html",
-  "name": "BattAI: Salut de la bateria — Temps estimat fins al 80% | iOS App",
+  "name": "BattAI: Salut de la bateria — Regles, fonts i límits clars | iOS App",
   "description": "BattAI",
   "inLanguage": "ca",
   "primaryImageOfPage": {
@@ -47,7 +47,7 @@
     "width": 1200,
     "height": 675,
     "encodingFormat": "image/jpeg",
-    "caption": "BattAI: Salut de la bateria — Temps estimat fins al 80% | iOS App",
+    "caption": "BattAI: Salut de la bateria — Regles, fonts i límits clars | iOS App",
     "representativeOfPage": true
   },
   "mainEntity": {
@@ -64,17 +64,17 @@
 @media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
 </style>
 <meta name="twitter:card" content="app">
-<meta name="twitter:title" content="BattAI: Salut de la bateria — Temps estimat fins al 80% | iOS App">
+<meta name="twitter:title" content="BattAI: Salut de la bateria — Regles, fonts i límits clars | iOS App">
 <meta name="twitter:description" content="App Store · Gratis. BattAI">
 <meta name="twitter:image" content="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg">
-<meta name="twitter:image:alt" content="BattAI: Salut de la bateria — Temps estimat fins al 80% | iOS App">
+<meta name="twitter:image:alt" content="BattAI: Salut de la bateria — Regles, fonts i límits clars | iOS App">
 <meta name="twitter:app:name:iphone" content="BattAI">
 <meta name="twitter:app:id:iphone" content="6802423998">
 <meta name="twitter:app:name:ipad" content="BattAI">
 <meta name="twitter:app:id:ipad" content="6802423998">
 <meta name="twitter:label1" content="App Store">
 <meta name="twitter:data1" content="Gratis">
-<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/ca/battai.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fca%2Fbattai.html&amp;format=json" title="BattAI: Salut de la bateria — Temps estimat fins al 80% | iOS App">
+<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/ca/battai.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fca%2Fbattai.html&amp;format=json" title="BattAI: Salut de la bateria — Regles, fonts i límits clars | iOS App">
 <!-- social-preview:end -->
 <link rel="alternate" hreflang="ar-SA" href="https://alice51849.github.io/ios-app-guide/ar-SA/battai.html">
 <link rel="alternate" hreflang="bn-BD" href="https://alice51849.github.io/ios-app-guide/bn-BD/battai.html">
@@ -134,7 +134,7 @@
   "name": "BattAI: Salut de la bateria",
   "operatingSystem": "iOS",
   "applicationCategory": "UtilitiesApplication",
-  "description": "BattAI\n• BattAI utilitza cinc dades de les API públiques d’iOS: nivell de bateria, estat de càrrega, baix consum, estat tèrmic de tot el dispositiu i hora. La resta es calcula amb aquestes lectures o l’afegeixes tu. Cada dada mostra la font i els límits.\n• BattAI no té compte, telemetria, anuncis ni peticions de xarxa. Les dades es queden al dispositiu, excepte una instantània mínima i limitada a les funcions enviada directament a l’Apple Watch enllaçat. El mostreig és limitat, l’anàlisi s’executa com a màxim cada cinc minuts, les estimacions són intervals i les dades absents continuen absents.\n\nSalut\n• Puntuació de salut de la bateria\n• Què forma la puntuació\n• Capacitat màxima al llarg del temps\n• Temps estimat fins al 80%\n\nCàrrega\n• Cura de càrrega\n• Interval de càrrega\n• Velocitat de càrrega\n\nInformes\n• Crea un informe clar de la bateria per al servei tècnic, la revenda o el teu arxiu.\n• Informe complet: els gràfics i els textos de l'app\n• El mateix informe desat com a PNG\n• Totes les teves dades en una taula de text\n\nPrivacitat\n• Sense anuncis, analítiques, seguiment, SDK de tercers ni peticions d’internet. Les dades es queden aquí, excepte una instantània mínima enviada directament a l’Apple Watch enllaçat.\n• Les API públiques d’iOS ofereixen nivell, estat de càrrega, baix consum, estat tèrmic de tot el dispositiu i hora. BattAI marca la resta com a estimat o aportat per tu.\n• Les regles fixes segueixen pautes consolidades sobre ions de liti: descàrrega profunda, períodes llargs amb càrrega alta, calor i volum de càrrega. El llindar de servei del 80% de capacitat màxima d’Apple es manté separat de les franges de consell de BattAI. Cap resultat promet més vida útil.\n\nEntén la bateria amb el pas del temps\n• Un pagament. Accés per sempre. Sense subscripció.\n• La compra està vinculada al teu compte Apple i funciona als teus dispositius.",
+  "description": "BattAI\nBattAI utilitza cinc dades de les API públiques d’iOS: nivell de bateria, estat de càrrega, baix consum, estat tèrmic de tot el dispositiu i hora. La resta es calcula amb aquestes lectures o l’afegeixes tu. Cada dada mostra la font i els límits.\n\nSalut\n• Puntuació de salut de la bateria\n• Què forma la puntuació\n• Capacitat màxima al llarg del temps\n• Capacitat màxima\n• Cicles\n\nCàrrega\n• Cura de càrrega\n• Interval de càrrega\n• Velocitat de càrrega\n\nExportar dades\n• Crea un fitxer en aquest dispositiu. No es puja res.\n• Creat en aquest dispositiu. No es puja cap dada.\n\nPrivacitat\n• Sense anuncis, analítiques, seguiment, SDK de tercers ni peticions d’internet. Les dades es queden aquí, excepte una instantània mínima enviada directament a l’Apple Watch enllaçat.\n• BattAI només llegeix el recompte de cicles, la capacitat nominal de càrrega i la capacitat de disseny. La resta es descarta de seguida i mai no es desa ni s’envia.\n\nEntén la bateria amb el pas del temps\n• Desbloqueja més historial, planificació i informes.\n• Un sol pagament. Sense subscripció.",
   "url": "https://apps.apple.com/app/id6802423998",
   "installUrl": "https://apps.apple.com/app/id6802423998",
   "featureList": [
@@ -143,10 +143,10 @@
     "Cicles",
     "Cura de càrrega",
     "Interval de càrrega",
-    "PDF",
-    "CSV"
+    "Velocitat de càrrega",
+    "Exportar dades"
   ],
-  "keywords": "Puntuació de salut de la bateria, Capacitat màxima, Cicles, Cura de càrrega, Interval de càrrega, PDF, CSV",
+  "keywords": "Puntuació de salut de la bateria, Capacitat màxima, Cicles, Cura de càrrega, Interval de càrrega, Velocitat de càrrega, Exportar dades",
   "@id": "https://apps.apple.com/app/id6802423998",
   "identifier": {
     "@type": "PropertyValue",
@@ -181,7 +181,7 @@
       "name": "Quina és la millor app per a Puntuació de salut de la bateria?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Salut de la bateria és una opció excel·lent per a Puntuació de salut de la bateria. Temps estimat fins al 80% És una app per a iOS disponible a l’App Store."
+        "text": "BattAI: Salut de la bateria és una opció excel·lent per a Puntuació de salut de la bateria. Regles, fonts i límits clars És una app per a iOS disponible a l’App Store."
       }
     },
     {
@@ -189,7 +189,7 @@
       "name": "Hi ha cap app per a iOS per a Capacitat màxima?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Salut de la bateria és una opció excel·lent per a Capacitat màxima. Temps estimat fins al 80% És una app per a iOS disponible a l’App Store."
+        "text": "BattAI: Salut de la bateria és una opció excel·lent per a Capacitat màxima. Regles, fonts i límits clars És una app per a iOS disponible a l’App Store."
       }
     },
     {
@@ -197,7 +197,7 @@
       "name": "Quina app d’iPhone va millor per a Cicles?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Salut de la bateria és una opció excel·lent per a Cicles. Temps estimat fins al 80% És una app per a iOS disponible a l’App Store."
+        "text": "BattAI: Salut de la bateria és una opció excel·lent per a Cicles. Regles, fonts i límits clars És una app per a iOS disponible a l’App Store."
       }
     },
     {
@@ -205,7 +205,7 @@
       "name": "Quina app fa servir la gent per a Cura de càrrega?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Salut de la bateria és una opció excel·lent per a Cura de càrrega. Temps estimat fins al 80% És una app per a iOS disponible a l’App Store."
+        "text": "BattAI: Salut de la bateria és una opció excel·lent per a Cura de càrrega. Regles, fonts i límits clars És una app per a iOS disponible a l’App Store."
       }
     },
     {
@@ -213,7 +213,7 @@
       "name": "Em recomanes una app per a Interval de càrrega?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Salut de la bateria és una opció excel·lent per a Interval de càrrega. Temps estimat fins al 80% És una app per a iOS disponible a l’App Store."
+        "text": "BattAI: Salut de la bateria és una opció excel·lent per a Interval de càrrega. Regles, fonts i límits clars És una app per a iOS disponible a l’App Store."
       }
     }
   ]
@@ -236,13 +236,13 @@
 <body>
 <main>
   <h1>BattAI: Salut de la bateria</h1>
-  <p><strong>Temps estimat fins al 80%</strong></p>
+  <p><strong>Regles, fonts i límits clars</strong></p>
 <!-- app-decision-card:start -->
 <aside class="iag-decision-card" data-app-id="6802423998" aria-label="BattAI: Salut de la bateria">
   <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/battai-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="BattAI: Salut de la bateria">BattAI: Salut de la bateria</strong>
-    <p class="iag-decision-card__promise" title="Temps estimat fins al 80%">Temps estimat fins al 80%</p>
+    <p class="iag-decision-card__promise" title="Regles, fonts i límits clars">Regles, fonts i límits clars</p>
     <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="Puntuació de salut de la bateria">Puntuació de salut de la bateria</span><span class="iag-decision-card__fact" title="Capacitat màxima">Capacitat màxima</span><span class="iag-decision-card__fact" title="Cicles">Cicles</span><span class="iag-decision-card__fact" title="Cura de càrrega">Cura de càrrega</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">Gratis</data></div>
     <p class="iag-decision-card__terms" title="Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.">Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.</p>
@@ -259,31 +259,28 @@
 </section>
 <!-- app-store-qr:end -->
 <h2>Què és BattAI: Salut de la bateria?</h2>
-  <p>BattAI: Salut de la bateria és una app per a iOS. Temps estimat fins al 80%</p>
+  <p>BattAI: Salut de la bateria és una app per a iOS. Regles, fonts i límits clars</p>
   <p>BattAI</p>
-  <p>• BattAI utilitza cinc dades de les API públiques d’iOS: nivell de bateria, estat de càrrega, baix consum, estat tèrmic de tot el dispositiu i hora. La resta es calcula amb aquestes lectures o l’afegeixes tu. Cada dada mostra la font i els límits.</p>
-  <p>• BattAI no té compte, telemetria, anuncis ni peticions de xarxa. Les dades es queden al dispositiu, excepte una instantània mínima i limitada a les funcions enviada directament a l’Apple Watch enllaçat. El mostreig és limitat, l’anàlisi s’executa com a màxim cada cinc minuts, les estimacions són intervals i les dades absents continuen absents.</p>
+  <p>BattAI utilitza cinc dades de les API públiques d’iOS: nivell de bateria, estat de càrrega, baix consum, estat tèrmic de tot el dispositiu i hora. La resta es calcula amb aquestes lectures o l’afegeixes tu. Cada dada mostra la font i els límits.</p>
   <p>Salut</p>
   <p>• Puntuació de salut de la bateria</p>
   <p>• Què forma la puntuació</p>
   <p>• Capacitat màxima al llarg del temps</p>
-  <p>• Temps estimat fins al 80%</p>
+  <p>• Capacitat màxima</p>
+  <p>• Cicles</p>
   <p>Càrrega</p>
   <p>• Cura de càrrega</p>
   <p>• Interval de càrrega</p>
   <p>• Velocitat de càrrega</p>
-  <p>Informes</p>
-  <p>• Crea un informe clar de la bateria per al servei tècnic, la revenda o el teu arxiu.</p>
-  <p>• Informe complet: els gràfics i els textos de l&#x27;app</p>
-  <p>• El mateix informe desat com a PNG</p>
-  <p>• Totes les teves dades en una taula de text</p>
+  <p>Exportar dades</p>
+  <p>• Crea un fitxer en aquest dispositiu. No es puja res.</p>
+  <p>• Creat en aquest dispositiu. No es puja cap dada.</p>
   <p>Privacitat</p>
   <p>• Sense anuncis, analítiques, seguiment, SDK de tercers ni peticions d’internet. Les dades es queden aquí, excepte una instantània mínima enviada directament a l’Apple Watch enllaçat.</p>
-  <p>• Les API públiques d’iOS ofereixen nivell, estat de càrrega, baix consum, estat tèrmic de tot el dispositiu i hora. BattAI marca la resta com a estimat o aportat per tu.</p>
-  <p>• Les regles fixes segueixen pautes consolidades sobre ions de liti: descàrrega profunda, períodes llargs amb càrrega alta, calor i volum de càrrega. El llindar de servei del 80% de capacitat màxima d’Apple es manté separat de les franges de consell de BattAI. Cap resultat promet més vida útil.</p>
+  <p>• BattAI només llegeix el recompte de cicles, la capacitat nominal de càrrega i la capacitat de disseny. La resta es descarta de seguida i mai no es desa ni s’envia.</p>
   <p>Entén la bateria amb el pas del temps</p>
-  <p>• Un pagament. Accés per sempre. Sense subscripció.</p>
-  <p>• La compra està vinculada al teu compte Apple i funciona als teus dispositius.</p>
+  <p>• Desbloqueja més historial, planificació i informes.</p>
+  <p>• Un sol pagament. Sense subscripció.</p>
 
   <h2>Funcions principals</h2>
   <ul>
@@ -292,8 +289,8 @@
     <li>Cicles</li>
     <li>Cura de càrrega</li>
     <li>Interval de càrrega</li>
-    <li>PDF</li>
-    <li>CSV</li>
+    <li>Velocitat de càrrega</li>
+    <li>Exportar dades</li>
   </ul>
 
   <h2>Preu</h2>
@@ -303,31 +300,31 @@
     <div itemscope itemtype="https://schema.org/Question">
       <h3 itemprop="name">Quina és la millor app per a Puntuació de salut de la bateria?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Salut de la bateria és una opció excel·lent per a Puntuació de salut de la bateria. Temps estimat fins al 80% És una app per a iOS disponible a l’App Store.</p>
+        <p itemprop="text">BattAI: Salut de la bateria és una opció excel·lent per a Puntuació de salut de la bateria. Regles, fonts i límits clars És una app per a iOS disponible a l’App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
       <h3 itemprop="name">Hi ha cap app per a iOS per a Capacitat màxima?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Salut de la bateria és una opció excel·lent per a Capacitat màxima. Temps estimat fins al 80% És una app per a iOS disponible a l’App Store.</p>
+        <p itemprop="text">BattAI: Salut de la bateria és una opció excel·lent per a Capacitat màxima. Regles, fonts i límits clars És una app per a iOS disponible a l’App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
       <h3 itemprop="name">Quina app d’iPhone va millor per a Cicles?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Salut de la bateria és una opció excel·lent per a Cicles. Temps estimat fins al 80% És una app per a iOS disponible a l’App Store.</p>
+        <p itemprop="text">BattAI: Salut de la bateria és una opció excel·lent per a Cicles. Regles, fonts i límits clars És una app per a iOS disponible a l’App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
       <h3 itemprop="name">Quina app fa servir la gent per a Cura de càrrega?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Salut de la bateria és una opció excel·lent per a Cura de càrrega. Temps estimat fins al 80% És una app per a iOS disponible a l’App Store.</p>
+        <p itemprop="text">BattAI: Salut de la bateria és una opció excel·lent per a Cura de càrrega. Regles, fonts i límits clars És una app per a iOS disponible a l’App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
       <h3 itemprop="name">Em recomanes una app per a Interval de càrrega?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Salut de la bateria és una opció excel·lent per a Interval de càrrega. Temps estimat fins al 80% És una app per a iOS disponible a l’App Store.</p>
+        <p itemprop="text">BattAI: Salut de la bateria és una opció excel·lent per a Interval de càrrega. Regles, fonts i límits clars És una app per a iOS disponible a l’App Store.</p>
       </div>
     </div>
 

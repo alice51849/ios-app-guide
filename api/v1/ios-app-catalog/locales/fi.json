@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-27",
-  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "fi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -167,17 +167,16 @@
       "key": "battai",
       "app_store_id": "6802423998",
       "name": "BattAI: Akun kuntotulos",
-      "summary": "BattAI • BattAI käyttää viittä julkisten iOS-API:en arvoa: akun varaustasoa, lataustilaa, virransäästötilaa, koko laitteen lämpötilaa kuvaavaa tilaa ja aikaa. Muut tulokset lasketaan näistä lukemista tai lisäämistäsi tiedoista. Jokainen tieto kertoo lähteen ja rajat. • BattAI:ssa ei ole tiliä, telemetriaa, mainoksia tai verkkopyyntöjä. Tiedot pysyvät tällä laitteella lukuun ottamatta pientä, ominaisuuksiltaan rajattua tilannekuvaa, joka lähetetään suoraan paritettuun Apple Watchiin. Mittaus on rajattua, analyysi suoritetaan enintään viiden minuutin välein, arviot näytetään väleinä ja puuttuvat tiedot pysyvät puuttuvina.",
+      "summary": "BattAI BattAI käyttää viittä julkisten iOS-API:en arvoa: akun varaustasoa, lataustilaa, virransäästötilaa, koko laitteen lämpötilaa kuvaavaa tilaa ja aikaa. Muut tulokset lasketaan näistä lukemista tai lisäämistäsi tiedoista. Jokainen tieto kertoo lähteen ja rajat.",
       "category": "utility",
       "search_terms": [
+        "Akun kuntotulos",
         "Enimmäiskapasiteetti",
         "Lataussyklit",
         "Lataushuolto",
         "Latausväli",
         "Latausnopeus",
-        "Arvioitu aika 80%:iin",
-        "PDF",
-        "CSV"
+        "Vie tiedot"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

@@ -2,7 +2,7 @@
 title: "melhor app de controle de orçamento de viagem sem assinatura para iPhone"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/pt-BR/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

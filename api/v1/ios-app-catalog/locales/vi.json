@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-27",
-  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "vi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -182,7 +182,7 @@
       "key": "battai",
       "app_store_id": "6802423998",
       "name": "BattAI: Điểm tình trạng pin",
-      "summary": "BattAI • BattAI dùng 5 giá trị từ API công khai của iOS: mức pin, trạng thái sạc, Chế độ nguồn điện thấp, trạng thái nhiệt của toàn thiết bị và thời gian. Các kết quả khác được tính từ dữ liệu này hoặc do bạn thêm. Mỗi mục đều nêu nguồn và giới hạn • BattAI không có tài khoản, dữ liệu đo từ xa, quảng cáo hay yêu cầu mạng. Dữ liệu ở trên thiết bị này, trừ ảnh chụp tối thiểu với tính năng giới hạn được gửi thẳng tới Apple Watch đã ghép đôi. Tần suất lấy mẫu có giới hạn, phân tích chạy nhiều nhất mỗi 5 phút, ước tính dùng khoảng và dữ liệu thiếu vẫn để thiếu",
+      "summary": "BattAI BattAI dùng 5 giá trị từ API công khai của iOS: mức pin, trạng thái sạc, Chế độ nguồn điện thấp, trạng thái nhiệt của toàn thiết bị và thời gian. Các kết quả khác được tính từ dữ liệu này hoặc do bạn thêm. Mỗi mục đều nêu nguồn và giới hạn",
       "category": "utility",
       "search_terms": [
         "Điểm tình trạng pin",
@@ -191,8 +191,7 @@
         "Chăm sóc khi sạc",
         "Khoảng sạc",
         "Tốc độ sạc",
-        "Báo cáo",
-        "PDF"
+        "Xuất dữ liệu"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

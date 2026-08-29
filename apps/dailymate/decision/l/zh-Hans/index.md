@@ -2,7 +2,7 @@
 title: "适用于配备 Apple Watch 旅行者的最佳实用语言短语应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/zh-Hans/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

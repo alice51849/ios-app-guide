@@ -2,7 +2,7 @@
 title: "iPhone માટે શ્રેષ્ઠ પ્રવાસ બજેટ ટ્રેકર એપ કોઈ સબ્સ્ક્રિપ્શન વગર"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/gu-IN/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

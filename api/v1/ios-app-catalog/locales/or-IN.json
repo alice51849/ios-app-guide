@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-27",
-  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "or-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -173,7 +173,7 @@
       "key": "battai",
       "app_store_id": "6802423998",
       "name": "BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି",
-      "summary": "BattAI • BattAI ସାର୍ବଜନୀନ iOS API ରୁ 5ଟି ମୂଲ୍ୟ ବ୍ୟବହାର କରେ: ବ୍ୟାଟେରୀ ସ୍ତର, ଚାର୍ଜ ସ୍ଥିତି, Low Power Mode, ସମଗ୍ର ଉପକରଣର ତାପ ସ୍ଥିତି ଓ ସମୟ। ଅନ୍ୟ ଫଳ ଏହି ମାପରୁ ଗଣନା ହୁଏ କିମ୍ବା ଆପଣ ଯୋଡ଼ନ୍ତି। ପ୍ରତ୍ୟେକ ବିବରଣୀ ତାହାର ଉତ୍ସ ଓ ସୀମା ଦେଖାଏ। • BattAI ରେ ଖାତା, ଦୂରମାପନ, ବିଜ୍ଞାପନ କିମ୍ବା ନେଟୱାର୍କ ଅନୁରୋଧ ନାହିଁ। ତଥ୍ୟ ଏହି ଉପକରଣରେ ରହେ; କେବଳ ସୀମିତ ସୁବିଧାର ଏକ ଛୋଟ ସ୍ନାପସଟ୍ ଯୋଡ଼ା Apple Watch କୁ ସିଧା ପଠାଯାଏ। ମାପ ସୀମିତ, ବିଶ୍ଳେଷଣ ସର୍ବାଧିକ ପ୍ରତି 5 min ରେ, ଆକଳନ ପରିସରରେ ଓ ନଥିବା ତଥ୍ୟ ନଥିବା ହିଁ ରହେ।",
+      "summary": "BattAI BattAI ସାର୍ବଜନୀନ iOS API ରୁ 5ଟି ମୂଲ୍ୟ ବ୍ୟବହାର କରେ: ବ୍ୟାଟେରୀ ସ୍ତର, ଚାର୍ଜ ସ୍ଥିତି, Low Power Mode, ସମଗ୍ର ଉପକରଣର ତାପ ସ୍ଥିତି ଓ ସମୟ। ଅନ୍ୟ ଫଳ ଏହି ମାପରୁ ଗଣନା ହୁଏ କିମ୍ବା ଆପଣ ଯୋଡ଼ନ୍ତି। ପ୍ରତ୍ୟେକ ବିବରଣୀ ତାହାର ଉତ୍ସ ଓ ସୀମା ଦେଖାଏ।",
       "category": "utility",
       "search_terms": [
         "ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର",
@@ -182,9 +182,7 @@
         "ଚାର୍ଜ ଯତ୍ନ",
         "ଚାର୍ଜ ପରିସର",
         "ଚାର୍ଜ ହାର",
-        "ରିପୋର୍ଟ",
-        "PDF",
-        "CSV"
+        "ତଥ୍ୟ ରପ୍ତାନି"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

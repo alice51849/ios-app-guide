@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-27",
-  "content_digest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "pl",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -172,17 +172,16 @@
       "key": "battai",
       "app_store_id": "6802423998",
       "name": "BattAI: Wynik kondycji baterii",
-      "summary": "BattAI • BattAI korzysta z pięciu wartości dostępnych w publicznych API iOS: poziomu baterii, stanu ładowania, trybu niskiego zużycia energii, stanu cieplnego całego urządzenia i czasu. Pozostałe wyniki są obliczane z tych odczytów lub dodawane przez Ciebie. Każdy szczegół pokazuje źródło i ograniczenia. • BattAI nie ma konta, telemetrii, reklam ani żądań sieciowych. Dane pozostają na tym urządzeniu, poza minimalną migawką z ograniczonym zestawem funkcji wysyłaną bezpośrednio do sparowanego Apple Watch. Odczyty są ograniczone, analiza działa najwyżej co pięć minut, szacunki używają zakresów, a brakujące dane pozostają brakujące.",
+      "summary": "BattAI BattAI korzysta z pięciu wartości dostępnych w publicznych API iOS: poziomu baterii, stanu ładowania, trybu niskiego zużycia energii, stanu cieplnego całego urządzenia i czasu. Pozostałe wyniki są obliczane z tych odczytów lub dodawane przez Ciebie. Każdy szczegół pokazuje źródło i ograniczenia.",
       "category": "utility",
       "search_terms": [
+        "Wynik kondycji baterii",
         "Maksymalna pojemność",
         "Cykle",
         "Dbałość o ładowanie",
         "Zakres ładowania",
         "Szybkość ładowania",
-        "Raporty",
-        "PDF",
-        "CSV"
+        "Eksportuj dane"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

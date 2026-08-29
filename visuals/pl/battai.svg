@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description" xml:lang="pl" direction="ltr">
-<title id="title">BattAI: Wynik kondycji baterii — Szacowany czas do 80% | iOS App</title>
-<desc id="description">BattAI • BattAI korzysta z pięciu wartości dostępnych w publicznych API iOS: poziomu baterii, stanu ładowania, trybu niskiego zużycia energii, stanu cieplnego całego urządzenia i czasu. Pozostałe wyniki są obliczane z tych odczytów lub dodawane przez Ciebie. Każdy szczegół pokazuje źródło i ograniczenia. • BattAI nie ma konta, telemetrii, reklam ani żądań sieciowych. Dane pozostają na tym urządzeniu, poza minimalną migawką z ograniczonym zestawem funkcji wysyłaną bezpośrednio do sparowanego Apple Watch. Odczyty są ograniczone, analiza działa najwyżej co pięć minut, szacunki używają zakresów, a brakujące dane pozostają brakujące. Darmowe na start · odblokowanie jednorazowym zakupem</desc>
+<title id="title">BattAI: Wynik kondycji baterii — Jasne zasady, źródła i granice | iOS App</title>
+<desc id="description">BattAI BattAI korzysta z pięciu wartości dostępnych w publicznych API iOS: poziomu baterii, stanu ładowania, trybu niskiego zużycia energii, stanu cieplnego całego urządzenia i czasu. Pozostałe wyniki są obliczane z tych odczytów lub dodawane przez Ciebie. Każdy szczegół pokazuje źródło i ograniczenia. Darmowe na start · odblokowanie jednorazowym zakupem</desc>
 <defs>
 <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
 <stop offset="0" stop-color="#172554"/>
@@ -22,8 +22,8 @@
 <text x="1025" y="114" text-anchor="middle" font-size="21" font-weight="700" fill="#ffffff" direction="ltr">pl</text>
 <text class="app-name" x="400" y="188" font-size="35" text-anchor="start">BattAI: Wynik kondycji baterii</text>
 <text x="400" y="238" text-anchor="start" font-size="23" font-weight="650" fill="#e2e8f0" direction="ltr">App Store ID 6802423998</text>
-<text class="query" x="100" y="392" font-size="25" text-anchor="start" transform="translate(100 0) scale(0.9891 1) translate(-100 0)">BattAI: Wynik kondycji baterii — Szacowany czas do 80% | iOS App</text>
-<text class="context" x="100" y="457" font-size="16" text-anchor="start" transform="translate(100 0) scale(0.1531 1) translate(-100 0)">BattAI • BattAI korzysta z pięciu wartości dostępnych w publicznych API iOS: poziomu baterii, stanu ładowania, trybu niskiego zużycia energii, stanu cieplnego całego urządzenia i czasu. Pozostałe wyniki są obliczane z tych odczytów lub dodawane przez Ciebie. Każdy szczegół pokazuje źródło i ograniczenia. • BattAI nie ma konta, telemetrii, reklam ani żądań sieciowych. Dane pozostają na tym urządzeniu, poza minimalną migawką z ograniczonym zestawem funkcji wysyłaną bezpośrednio do sparowanego Apple Watch. Odczyty są ograniczone, analiza działa najwyżej co pięć minut, szacunki używają zakresów, a brakujące dane pozostają brakujące.</text>
+<text class="query" x="100" y="392" font-size="24" text-anchor="start" transform="translate(100 0) scale(0.9003 1) translate(-100 0)">BattAI: Wynik kondycji baterii — Jasne zasady, źródła i granice | iOS App</text>
+<text class="context" x="100" y="457" font-size="16" text-anchor="start" transform="translate(100 0) scale(0.3212 1) translate(-100 0)">BattAI BattAI korzysta z pięciu wartości dostępnych w publicznych API iOS: poziomu baterii, stanu ładowania, trybu niskiego zużycia energii, stanu cieplnego całego urządzenia i czasu. Pozostałe wyniki są obliczane z tych odczytów lub dodawane przez Ciebie. Każdy szczegół pokazuje źródło i ograniczenia.</text>
 <line x1="100" y1="498" x2="1100" y2="498" stroke="#ffffff" stroke-opacity="0.22"/>
 <text class="purchase-model" x="100" y="548" font-size="20" text-anchor="start">Darmowe na start · odblokowanie jednorazowym zakupem</text>
 <text x="1100" y="548" text-anchor="end" font-size="25" font-weight="800" fill="#ffffff">App Store</text>

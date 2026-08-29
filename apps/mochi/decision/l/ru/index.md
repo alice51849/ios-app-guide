@@ -2,7 +2,7 @@
 title: "лучшее простое приложение для списка дел на iPhone без подписки"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/ru/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

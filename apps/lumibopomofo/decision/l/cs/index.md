@@ -2,7 +2,7 @@
 title: "nejlepší aplikace pro děti na učení bopomofo (zhuyin) na iPhonu"
 lang: "cs"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/cs/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

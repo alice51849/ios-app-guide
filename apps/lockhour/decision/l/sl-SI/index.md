@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za blokado družbenih omrežij med učenjem na iPhone"
 lang: "sl-SI"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/sl-SI/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

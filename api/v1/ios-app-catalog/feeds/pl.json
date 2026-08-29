@@ -12,8 +12,8 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-27",
-    "contentDigest": "d3d9ab26990e6d9c4a8fc1558ffcf6b76dec04fc85232b5b7b0f275cd47756e4",
+    "dateModified": "2026-08-29",
+    "contentDigest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 46
@@ -112,19 +112,18 @@
       "url": "https://alice51849.github.io/ios-app-guide/pl/battai.html",
       "external_url": "https://apps.apple.com/pl/app/id6802423998?pt=118326163&ct=iag_feed_pl&mt=8",
       "title": "BattAI: Wynik kondycji baterii",
-      "content_text": "BattAI • BattAI korzysta z pięciu wartości dostępnych w publicznych API iOS: poziomu baterii, stanu ładowania, trybu niskiego zużycia energii, stanu cieplnego całego urządzenia i czasu. Pozostałe wyniki są obliczane z tych odczytów lub dodawane przez Ciebie. Każdy szczegół pokazuje źródło i ograniczenia. • BattAI nie ma konta, telemetrii, reklam ani żądań sieciowych. Dane pozostają na tym urządzeniu, poza minimalną migawką z ograniczonym zestawem funkcji wysyłaną bezpośrednio do sparowanego Apple Watch. Odczyty są ograniczone, analiza działa najwyżej co pięć minut, szacunki używają zakresów, a brakujące dane pozostają brakujące.",
+      "content_text": "BattAI BattAI korzysta z pięciu wartości dostępnych w publicznych API iOS: poziomu baterii, stanu ładowania, trybu niskiego zużycia energii, stanu cieplnego całego urządzenia i czasu. Pozostałe wyniki są obliczane z tych odczytów lub dodawane przez Ciebie. Każdy szczegół pokazuje źródło i ograniczenia.",
       "tags": [
+        "Wynik kondycji baterii",
         "Maksymalna pojemność",
         "Cykle",
         "Dbałość o ładowanie",
         "Zakres ładowania",
         "Szybkość ładowania",
-        "Raporty",
-        "PDF",
-        "CSV"
+        "Eksportuj dane"
       ],
       "language": "pl",
-      "date_modified": "2026-08-27T11:21:51Z"
+      "date_modified": "2026-08-29T04:55:13Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",

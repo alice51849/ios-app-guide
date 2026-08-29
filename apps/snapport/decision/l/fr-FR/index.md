@@ -2,7 +2,7 @@
 title: "meilleure application photo d’identité pour bébés et tout-petits à la maison"
 lang: "fr-FR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/fr-FR/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

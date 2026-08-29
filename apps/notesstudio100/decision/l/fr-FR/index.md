@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — Cahier manuscrit et PDF | iOS App"
 lang: "fr-FR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/fr-FR/index.html"
-modified: "2026-08-28"
+modified: "2026-08-29"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

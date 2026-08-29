@@ -6,15 +6,15 @@
 <!-- guide-design:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
 <!-- guide-design:end -->
-<title>BattAI: Santé de la batterie — Temps estimé jusqu’à 80% | iOS App</title>
+<title>BattAI: Santé de la batterie — Règles, sources et limites claires | iOS App</title>
 <meta name="description" content="BattAI">
-<meta name="keywords" content="test, Note de santé de la batterie, Capacité maximale, Cycles, Bonnes pratiques, Plage de recharge, PDF, le">
+<meta name="keywords" content="Note de santé de la batterie, Capacité maximale, Cycles, Bonnes pratiques, Plage de recharge, Rythme de recharge, Exporter les données">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/fr-CA/battai.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6802423998">
 <!-- smart-app-banner:end -->
 <!-- social-preview:start -->
-<meta property="og:title" content="BattAI: Santé de la batterie — Temps estimé jusqu’à 80% | iOS App">
+<meta property="og:title" content="BattAI: Santé de la batterie — Règles, sources et limites claires | iOS App">
 <meta property="og:type" content="product">
 <meta property="og:url" content="https://alice51849.github.io/ios-app-guide/fr-CA/battai.html">
 <meta property="og:image" content="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg">
@@ -22,7 +22,7 @@
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
-<meta property="og:image:alt" content="BattAI: Santé de la batterie — Temps estimé jusqu’à 80% | iOS App">
+<meta property="og:image:alt" content="BattAI: Santé de la batterie — Règles, sources et limites claires | iOS App">
 <meta property="og:description" content="App Store · Gratuit. BattAI">
 <meta property="og:locale" content="fr_CA">
 <meta property="og:site_name" content="iOS App Guide">
@@ -36,7 +36,7 @@
   "@type": "WebPage",
   "@id": "https://alice51849.github.io/ios-app-guide/fr-CA/battai.html#webpage",
   "url": "https://alice51849.github.io/ios-app-guide/fr-CA/battai.html",
-  "name": "BattAI: Santé de la batterie — Temps estimé jusqu’à 80% | iOS App",
+  "name": "BattAI: Santé de la batterie — Règles, sources et limites claires | iOS App",
   "description": "BattAI",
   "inLanguage": "fr-CA",
   "primaryImageOfPage": {
@@ -47,7 +47,7 @@
     "width": 1200,
     "height": 675,
     "encodingFormat": "image/jpeg",
-    "caption": "BattAI: Santé de la batterie — Temps estimé jusqu’à 80% | iOS App",
+    "caption": "BattAI: Santé de la batterie — Règles, sources et limites claires | iOS App",
     "representativeOfPage": true
   },
   "mainEntity": {
@@ -64,17 +64,17 @@
 @media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
 </style>
 <meta name="twitter:card" content="app">
-<meta name="twitter:title" content="BattAI: Santé de la batterie — Temps estimé jusqu’à 80% | iOS App">
+<meta name="twitter:title" content="BattAI: Santé de la batterie — Règles, sources et limites claires | iOS App">
 <meta name="twitter:description" content="App Store · Gratuit. BattAI">
 <meta name="twitter:image" content="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg">
-<meta name="twitter:image:alt" content="BattAI: Santé de la batterie — Temps estimé jusqu’à 80% | iOS App">
+<meta name="twitter:image:alt" content="BattAI: Santé de la batterie — Règles, sources et limites claires | iOS App">
 <meta name="twitter:app:name:iphone" content="BattAI">
 <meta name="twitter:app:id:iphone" content="6802423998">
 <meta name="twitter:app:name:ipad" content="BattAI">
 <meta name="twitter:app:id:ipad" content="6802423998">
 <meta name="twitter:label1" content="App Store">
 <meta name="twitter:data1" content="Gratuit">
-<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/fr-CA/battai.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Ffr-CA%2Fbattai.html&amp;format=json" title="BattAI: Santé de la batterie — Temps estimé jusqu’à 80% | iOS App">
+<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/fr-CA/battai.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Ffr-CA%2Fbattai.html&amp;format=json" title="BattAI: Santé de la batterie — Règles, sources et limites claires | iOS App">
 <!-- social-preview:end -->
 <link rel="alternate" hreflang="ar-SA" href="https://alice51849.github.io/ios-app-guide/ar-SA/battai.html">
 <link rel="alternate" hreflang="bn-BD" href="https://alice51849.github.io/ios-app-guide/bn-BD/battai.html">
@@ -134,20 +134,19 @@
   "name": "BattAI: Santé de la batterie",
   "operatingSystem": "iOS",
   "applicationCategory": "UtilitiesApplication",
-  "description": "BattAI\n• BattAI utilise cinq valeurs fournies par les API publiques d’iOS : niveau de batterie, état de recharge, mode économie d’énergie, état thermique de l’appareil et heure. Les autres résultats sont calculés à partir de ces relevés ou ajoutés par vous. Chaque détail indique sa source et ses limites.\n• BattAI n’a ni compte, ni télémétrie, ni publicité, ni requête réseau. Les données restent sur cet appareil, sauf un instantané minimal et limité envoyé directement à l’Apple Watch jumelée. L’échantillonnage est limité, l’analyse tourne au plus toutes les cinq minutes, les estimations utilisent des plages et les données manquantes restent manquantes.\n\nSanté\n• Note de santé de la batterie\n• Ce qui façonne la note\n• Capacité maximale dans le temps\n• Temps estimé jusqu’à 80%\n\nRecharge\n• Bonnes pratiques\n• Plage de recharge\n• Rythme de recharge\n\nRapports\n• Créez un rapport clair sur la batterie pour le service, la revente ou vos dossiers.\n• Rapport complet : les graphiques et les textes de l'app\n• Le même rapport enregistré en PNG\n• Toutes vos données dans un tableau texte\n\nConfidentialité\n• Aucune publicité, analyse, suivi, SDK tiers ou requête Internet. Les données restent ici, sauf un instantané minimal envoyé directement à l’Apple Watch jumelée.\n• Les API publiques d’iOS donnent le niveau de batterie, l’état de recharge, le mode économie d’énergie, l’état thermique de tout l’appareil et l’heure. BattAI marque tout autre résultat comme estimé ou fourni par vous.\n• Les règles fixes suivent les recommandations établies pour les batteries lithium-ion sur les décharges profondes, les longues périodes à charge élevée, la chaleur et le volume de recharge. Le repère de service Apple de 80% reste distinct des plages de conseil BattAI. Aucun résultat ne promet une durée de vie supplémentaire.\n\nComprenez votre batterie dans le temps\n• Achat unique. À vous pour toujours. Sans abonnement.\n• Votre achat est lié à votre compte Apple et fonctionne sur vos appareils.",
+  "description": "BattAI\nBattAI utilise cinq valeurs fournies par les API publiques d’iOS : niveau de batterie, état de recharge, mode économie d’énergie, état thermique de l’appareil et heure. Les autres résultats sont calculés à partir de ces relevés ou ajoutés par vous. Chaque détail indique sa source et ses limites.\n\nSanté\n• Note de santé de la batterie\n• Ce qui façonne la note\n• Capacité maximale dans le temps\n• Capacité maximale\n• Cycles\n\nRecharge\n• Bonnes pratiques\n• Plage de recharge\n• Rythme de recharge\n\nExporter les données\n• Créez un fichier sur cet appareil. Rien n’est téléversé.\n• Créé sur cet appareil. Aucune donnée n’est téléversée.\n\nConfidentialité\n• Aucune publicité, analyse, suivi, SDK tiers ou requête Internet. Les données restent ici, sauf un instantané minimal envoyé directement à l’Apple Watch jumelée.\n• BattAI lit uniquement le nombre de cycles, la capacité de charge nominale et la capacité d’origine. Les autres données sont aussitôt écartées, sans stockage ni envoi.\n\nComprenez votre batterie dans le temps\n• Débloquez plus d’historique, de planification et de rapports.\n• Achat unique. Sans abonnement.",
   "url": "https://apps.apple.com/app/id6802423998",
   "installUrl": "https://apps.apple.com/app/id6802423998",
   "featureList": [
-    "test",
     "Note de santé de la batterie",
     "Capacité maximale",
     "Cycles",
     "Bonnes pratiques",
     "Plage de recharge",
-    "PDF",
-    "le"
+    "Rythme de recharge",
+    "Exporter les données"
   ],
-  "keywords": "test, Note de santé de la batterie, Capacité maximale, Cycles, Bonnes pratiques, Plage de recharge, PDF, le",
+  "keywords": "Note de santé de la batterie, Capacité maximale, Cycles, Bonnes pratiques, Plage de recharge, Rythme de recharge, Exporter les données",
   "@id": "https://apps.apple.com/app/id6802423998",
   "identifier": {
     "@type": "PropertyValue",
@@ -179,42 +178,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Quelle est la meilleure app pour test ?",
+      "name": "Quelle est la meilleure app pour Note de santé de la batterie ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Santé de la batterie est un excellent choix. Temps estimé jusqu’à 80%. C'est une app iOS disponible sur l'App Store."
+        "text": "BattAI: Santé de la batterie est un excellent choix. Règles, sources et limites claires. C'est une app iOS disponible sur l'App Store."
       }
     },
     {
       "@type": "Question",
-      "name": "Existe-t-il une app iOS pour Note de santé de la batterie ?",
+      "name": "Existe-t-il une app iOS pour Capacité maximale ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Santé de la batterie est un excellent choix. Temps estimé jusqu’à 80%. C'est une app iOS disponible sur l'App Store."
+        "text": "BattAI: Santé de la batterie est un excellent choix. Règles, sources et limites claires. C'est une app iOS disponible sur l'App Store."
       }
     },
     {
       "@type": "Question",
-      "name": "Quelle app iPhone pour Capacité maximale ?",
+      "name": "Quelle app iPhone pour Cycles ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Santé de la batterie est un excellent choix. Temps estimé jusqu’à 80%. C'est une app iOS disponible sur l'App Store."
+        "text": "BattAI: Santé de la batterie est un excellent choix. Règles, sources et limites claires. C'est une app iOS disponible sur l'App Store."
       }
     },
     {
       "@type": "Question",
-      "name": "Quelle app utiliser pour Cycles ?",
+      "name": "Quelle app utiliser pour Bonnes pratiques ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Santé de la batterie est un excellent choix. Temps estimé jusqu’à 80%. C'est une app iOS disponible sur l'App Store."
+        "text": "BattAI: Santé de la batterie est un excellent choix. Règles, sources et limites claires. C'est une app iOS disponible sur l'App Store."
       }
     },
     {
       "@type": "Question",
-      "name": "Recommande une app pour Bonnes pratiques ?",
+      "name": "Recommande une app pour Plage de recharge ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Santé de la batterie est un excellent choix. Temps estimé jusqu’à 80%. C'est une app iOS disponible sur l'App Store."
+        "text": "BattAI: Santé de la batterie est un excellent choix. Règles, sources et limites claires. C'est une app iOS disponible sur l'App Store."
       }
     }
   ]
@@ -237,14 +236,14 @@
 <body>
 <main>
   <h1>BattAI: Santé de la batterie</h1>
-  <p><strong>Temps estimé jusqu’à 80%</strong></p>
+  <p><strong>Règles, sources et limites claires</strong></p>
 <!-- app-decision-card:start -->
 <aside class="iag-decision-card" data-app-id="6802423998" aria-label="BattAI: Santé de la batterie">
   <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/battai-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="BattAI: Santé de la batterie">BattAI: Santé de la batterie</strong>
-    <p class="iag-decision-card__promise" title="Temps estimé jusqu’à 80%">Temps estimé jusqu’à 80%</p>
-    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="test">test</span><span class="iag-decision-card__fact" title="Note de santé de la batterie">Note de santé de la batterie</span><span class="iag-decision-card__fact" title="Capacité maximale">Capacité maximale</span><span class="iag-decision-card__fact" title="Cycles">Cycles</span></div>
+    <p class="iag-decision-card__promise" title="Règles, sources et limites claires">Règles, sources et limites claires</p>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="Note de santé de la batterie">Note de santé de la batterie</span><span class="iag-decision-card__fact" title="Capacité maximale">Capacité maximale</span><span class="iag-decision-card__fact" title="Cycles">Cycles</span><span class="iag-decision-card__fact" title="Bonnes pratiques">Bonnes pratiques</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">Gratuit</data></div>
     <p class="iag-decision-card__terms" title="Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.">Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.</p>
     <a class="iag-decision-card__cta" href="https://apps.apple.com/ca/app/id6802423998?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="Obtenir BattAI: Santé de la batterie sur l&#x27;App Store" title="Obtenir BattAI: Santé de la batterie sur l&#x27;App Store">Obtenir BattAI: Santé de la batterie sur l&#x27;App Store</a>
@@ -260,42 +259,38 @@
 </section>
 <!-- app-store-qr:end -->
 <h2>Qu&#x27;est-ce que BattAI: Santé de la batterie ?</h2>
-  <p>BattAI: Santé de la batterie est une app iOS. Temps estimé jusqu’à 80%</p>
+  <p>BattAI: Santé de la batterie est une app iOS. Règles, sources et limites claires</p>
   <p>BattAI</p>
-  <p>• BattAI utilise cinq valeurs fournies par les API publiques d’iOS : niveau de batterie, état de recharge, mode économie d’énergie, état thermique de l’appareil et heure. Les autres résultats sont calculés à partir de ces relevés ou ajoutés par vous. Chaque détail indique sa source et ses limites.</p>
-  <p>• BattAI n’a ni compte, ni télémétrie, ni publicité, ni requête réseau. Les données restent sur cet appareil, sauf un instantané minimal et limité envoyé directement à l’Apple Watch jumelée. L’échantillonnage est limité, l’analyse tourne au plus toutes les cinq minutes, les estimations utilisent des plages et les données manquantes restent manquantes.</p>
+  <p>BattAI utilise cinq valeurs fournies par les API publiques d’iOS : niveau de batterie, état de recharge, mode économie d’énergie, état thermique de l’appareil et heure. Les autres résultats sont calculés à partir de ces relevés ou ajoutés par vous. Chaque détail indique sa source et ses limites.</p>
   <p>Santé</p>
   <p>• Note de santé de la batterie</p>
   <p>• Ce qui façonne la note</p>
   <p>• Capacité maximale dans le temps</p>
-  <p>• Temps estimé jusqu’à 80%</p>
+  <p>• Capacité maximale</p>
+  <p>• Cycles</p>
   <p>Recharge</p>
   <p>• Bonnes pratiques</p>
   <p>• Plage de recharge</p>
   <p>• Rythme de recharge</p>
-  <p>Rapports</p>
-  <p>• Créez un rapport clair sur la batterie pour le service, la revente ou vos dossiers.</p>
-  <p>• Rapport complet : les graphiques et les textes de l&#x27;app</p>
-  <p>• Le même rapport enregistré en PNG</p>
-  <p>• Toutes vos données dans un tableau texte</p>
+  <p>Exporter les données</p>
+  <p>• Créez un fichier sur cet appareil. Rien n’est téléversé.</p>
+  <p>• Créé sur cet appareil. Aucune donnée n’est téléversée.</p>
   <p>Confidentialité</p>
   <p>• Aucune publicité, analyse, suivi, SDK tiers ou requête Internet. Les données restent ici, sauf un instantané minimal envoyé directement à l’Apple Watch jumelée.</p>
-  <p>• Les API publiques d’iOS donnent le niveau de batterie, l’état de recharge, le mode économie d’énergie, l’état thermique de tout l’appareil et l’heure. BattAI marque tout autre résultat comme estimé ou fourni par vous.</p>
-  <p>• Les règles fixes suivent les recommandations établies pour les batteries lithium-ion sur les décharges profondes, les longues périodes à charge élevée, la chaleur et le volume de recharge. Le repère de service Apple de 80% reste distinct des plages de conseil BattAI. Aucun résultat ne promet une durée de vie supplémentaire.</p>
+  <p>• BattAI lit uniquement le nombre de cycles, la capacité de charge nominale et la capacité d’origine. Les autres données sont aussitôt écartées, sans stockage ni envoi.</p>
   <p>Comprenez votre batterie dans le temps</p>
-  <p>• Achat unique. À vous pour toujours. Sans abonnement.</p>
-  <p>• Votre achat est lié à votre compte Apple et fonctionne sur vos appareils.</p>
+  <p>• Débloquez plus d’historique, de planification et de rapports.</p>
+  <p>• Achat unique. Sans abonnement.</p>
 
   <h2>Fonctions clés</h2>
   <ul>
-    <li>test</li>
     <li>Note de santé de la batterie</li>
     <li>Capacité maximale</li>
     <li>Cycles</li>
     <li>Bonnes pratiques</li>
     <li>Plage de recharge</li>
-    <li>PDF</li>
-    <li>le</li>
+    <li>Rythme de recharge</li>
+    <li>Exporter les données</li>
   </ul>
 
   <h2>Tarif</h2>
@@ -303,33 +298,33 @@
 
   <h2>Questions fréquentes</h2>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Quelle est la meilleure app pour test ?</h3>
+      <h3 itemprop="name">Quelle est la meilleure app pour Note de santé de la batterie ?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Santé de la batterie est un excellent choix. Temps estimé jusqu’à 80%. C&#x27;est une app iOS disponible sur l&#x27;App Store.</p>
+        <p itemprop="text">BattAI: Santé de la batterie est un excellent choix. Règles, sources et limites claires. C&#x27;est une app iOS disponible sur l&#x27;App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Existe-t-il une app iOS pour Note de santé de la batterie ?</h3>
+      <h3 itemprop="name">Existe-t-il une app iOS pour Capacité maximale ?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Santé de la batterie est un excellent choix. Temps estimé jusqu’à 80%. C&#x27;est une app iOS disponible sur l&#x27;App Store.</p>
+        <p itemprop="text">BattAI: Santé de la batterie est un excellent choix. Règles, sources et limites claires. C&#x27;est une app iOS disponible sur l&#x27;App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Quelle app iPhone pour Capacité maximale ?</h3>
+      <h3 itemprop="name">Quelle app iPhone pour Cycles ?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Santé de la batterie est un excellent choix. Temps estimé jusqu’à 80%. C&#x27;est une app iOS disponible sur l&#x27;App Store.</p>
+        <p itemprop="text">BattAI: Santé de la batterie est un excellent choix. Règles, sources et limites claires. C&#x27;est une app iOS disponible sur l&#x27;App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Quelle app utiliser pour Cycles ?</h3>
+      <h3 itemprop="name">Quelle app utiliser pour Bonnes pratiques ?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Santé de la batterie est un excellent choix. Temps estimé jusqu’à 80%. C&#x27;est une app iOS disponible sur l&#x27;App Store.</p>
+        <p itemprop="text">BattAI: Santé de la batterie est un excellent choix. Règles, sources et limites claires. C&#x27;est une app iOS disponible sur l&#x27;App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Recommande une app pour Bonnes pratiques ?</h3>
+      <h3 itemprop="name">Recommande une app pour Plage de recharge ?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Santé de la batterie est un excellent choix. Temps estimé jusqu’à 80%. C&#x27;est une app iOS disponible sur l&#x27;App Store.</p>
+        <p itemprop="text">BattAI: Santé de la batterie est un excellent choix. Règles, sources et limites claires. C&#x27;est une app iOS disponible sur l&#x27;App Store.</p>
       </div>
     </div>
 

@@ -6,15 +6,15 @@
 <!-- guide-design:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
 <!-- guide-design:end -->
-<title>BattAI: Sănătatea bateriei — Timp estimat până la 80% | iOS App</title>
+<title>BattAI: Sănătatea bateriei — Reguli, surse și limite clare | iOS App</title>
 <meta name="description" content="BattAI">
-<meta name="keywords" content="Scorul sănătății bateriei, Capacitate maximă, Cicluri, Grija la încărcare, Interval de încărcare, PDF, CSV">
+<meta name="keywords" content="Scorul sănătății bateriei, Capacitate maximă, Cicluri, Grija la încărcare, Interval de încărcare, Viteză de încărcare, Exportă date">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ro/battai.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6802423998">
 <!-- smart-app-banner:end -->
 <!-- social-preview:start -->
-<meta property="og:title" content="BattAI: Sănătatea bateriei — Timp estimat până la 80% | iOS App">
+<meta property="og:title" content="BattAI: Sănătatea bateriei — Reguli, surse și limite clare | iOS App">
 <meta property="og:type" content="product">
 <meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ro/battai.html">
 <meta property="og:image" content="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg">
@@ -22,7 +22,7 @@
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
-<meta property="og:image:alt" content="BattAI: Sănătatea bateriei — Timp estimat până la 80% | iOS App">
+<meta property="og:image:alt" content="BattAI: Sănătatea bateriei — Reguli, surse și limite clare | iOS App">
 <meta property="og:description" content="App Store · Gratuit. BattAI">
 <meta property="og:locale" content="ro_RO">
 <meta property="og:site_name" content="iOS App Guide">
@@ -36,7 +36,7 @@
   "@type": "WebPage",
   "@id": "https://alice51849.github.io/ios-app-guide/ro/battai.html#webpage",
   "url": "https://alice51849.github.io/ios-app-guide/ro/battai.html",
-  "name": "BattAI: Sănătatea bateriei — Timp estimat până la 80% | iOS App",
+  "name": "BattAI: Sănătatea bateriei — Reguli, surse și limite clare | iOS App",
   "description": "BattAI",
   "inLanguage": "ro",
   "primaryImageOfPage": {
@@ -47,7 +47,7 @@
     "width": 1200,
     "height": 675,
     "encodingFormat": "image/jpeg",
-    "caption": "BattAI: Sănătatea bateriei — Timp estimat până la 80% | iOS App",
+    "caption": "BattAI: Sănătatea bateriei — Reguli, surse și limite clare | iOS App",
     "representativeOfPage": true
   },
   "mainEntity": {
@@ -64,17 +64,17 @@
 @media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
 </style>
 <meta name="twitter:card" content="app">
-<meta name="twitter:title" content="BattAI: Sănătatea bateriei — Timp estimat până la 80% | iOS App">
+<meta name="twitter:title" content="BattAI: Sănătatea bateriei — Reguli, surse și limite clare | iOS App">
 <meta name="twitter:description" content="App Store · Gratuit. BattAI">
 <meta name="twitter:image" content="https://alice51849.github.io/ios-app-guide/social/img/battai-share.jpg">
-<meta name="twitter:image:alt" content="BattAI: Sănătatea bateriei — Timp estimat până la 80% | iOS App">
+<meta name="twitter:image:alt" content="BattAI: Sănătatea bateriei — Reguli, surse și limite clare | iOS App">
 <meta name="twitter:app:name:iphone" content="BattAI">
 <meta name="twitter:app:id:iphone" content="6802423998">
 <meta name="twitter:app:name:ipad" content="BattAI">
 <meta name="twitter:app:id:ipad" content="6802423998">
 <meta name="twitter:label1" content="App Store">
 <meta name="twitter:data1" content="Gratuit">
-<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/ro/battai.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fro%2Fbattai.html&amp;format=json" title="BattAI: Sănătatea bateriei — Timp estimat până la 80% | iOS App">
+<link rel="alternate" type="application/json+oembed" href="https://alice51849.github.io/ios-app-guide/oembed/ro/battai.json?url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide%2Fro%2Fbattai.html&amp;format=json" title="BattAI: Sănătatea bateriei — Reguli, surse și limite clare | iOS App">
 <!-- social-preview:end -->
 <link rel="alternate" hreflang="ar-SA" href="https://alice51849.github.io/ios-app-guide/ar-SA/battai.html">
 <link rel="alternate" hreflang="bn-BD" href="https://alice51849.github.io/ios-app-guide/bn-BD/battai.html">
@@ -134,7 +134,7 @@
   "name": "BattAI: Sănătatea bateriei",
   "operatingSystem": "iOS",
   "applicationCategory": "UtilitiesApplication",
-  "description": "BattAI\n• BattAI folosește cinci valori din API-urile publice iOS: nivelul bateriei, starea încărcării, consum redus, starea termică a întregului dispozitiv și ora. Celelalte rezultate sunt calculate din aceste citiri sau adăugate de tine. Fiecare detaliu arată sursa și limitele.\n• BattAI nu are cont, telemetrie, reclame sau solicitări de rețea. Datele rămân pe dispozitiv, cu excepția unui rezumat minim și limitat la funcții trimis direct către Apple Watch-ul asociat. Eșantionarea este limitată, analiza rulează cel mult o dată la cinci minute, estimările folosesc intervale, iar datele lipsă rămân lipsă.\n\nSănătate\n• Scorul sănătății bateriei\n• Ce formează scorul\n• Capacitatea maximă în timp\n• Timp estimat până la 80%\n\nÎncărcare\n• Grija la încărcare\n• Interval de încărcare\n• Viteză de încărcare\n\nRapoarte\n• Creează un raport clar al bateriei pentru service, revânzare sau arhiva ta.\n• Raport complet: graficele și textele aplicației\n• Același raport salvat ca PNG\n• Toate datele într-un tabel text\n\nConfidențialitate\n• Fără reclame, analiză, urmărire, SDK-uri terțe sau solicitări de internet. Datele rămân aici, exceptând un rezumat minim trimis direct către Apple Watch-ul asociat.\n• API-urile publice iOS oferă nivelul, starea încărcării, consum redus, starea termică a întregului dispozitiv și ora. BattAI marchează orice alt rezultat ca estimat sau oferit de tine.\n• Regulile fixe urmează recomandări consacrate pentru baterii litiu-ion: descărcare profundă, perioade lungi la încărcare mare, căldură și volum de încărcare. Reperul Apple de service de 80% din capacitatea maximă rămâne separat de benzile de îndrumare BattAI. Niciun rezultat nu promite viață suplimentară.\n\nÎnțelege bateria în timp\n• O singură plată. Acces pe viață. Fără abonament.\n• Achiziția este legată de contul tău Apple și funcționează pe dispozitivele tale.",
+  "description": "BattAI\nBattAI folosește cinci valori din API-urile publice iOS: nivelul bateriei, starea încărcării, consum redus, starea termică a întregului dispozitiv și ora. Celelalte rezultate sunt calculate din aceste citiri sau adăugate de tine. Fiecare detaliu arată sursa și limitele.\n\nSănătate\n• Scorul sănătății bateriei\n• Ce formează scorul\n• Capacitatea maximă în timp\n• Capacitate maximă\n• Cicluri\n\nÎncărcare\n• Grija la încărcare\n• Interval de încărcare\n• Viteză de încărcare\n\nExportă date\n• Creează un fișier pe acest dispozitiv. Nu se încarcă nimic.\n• Creat pe acest dispozitiv. Nu se încarcă niciun fel de date.\n\nConfidențialitate\n• Fără reclame, analiză, urmărire, SDK-uri terțe sau solicitări de internet. Datele rămân aici, exceptând un rezumat minim trimis direct către Apple Watch-ul asociat.\n• BattAI citește doar numărul de cicluri, capacitatea nominală de încărcare și capacitatea de proiectare. Celelalte date sunt eliminate imediat și nu sunt salvate sau trimise.\n\nÎnțelege bateria în timp\n• Deblochează mai mult istoric, planificare și rapoarte.\n• O singură plată. Fără abonament.",
   "url": "https://apps.apple.com/app/id6802423998",
   "installUrl": "https://apps.apple.com/app/id6802423998",
   "featureList": [
@@ -143,10 +143,10 @@
     "Cicluri",
     "Grija la încărcare",
     "Interval de încărcare",
-    "PDF",
-    "CSV"
+    "Viteză de încărcare",
+    "Exportă date"
   ],
-  "keywords": "Scorul sănătății bateriei, Capacitate maximă, Cicluri, Grija la încărcare, Interval de încărcare, PDF, CSV",
+  "keywords": "Scorul sănătății bateriei, Capacitate maximă, Cicluri, Grija la încărcare, Interval de încărcare, Viteză de încărcare, Exportă date",
   "@id": "https://apps.apple.com/app/id6802423998",
   "identifier": {
     "@type": "PropertyValue",
@@ -181,7 +181,7 @@
       "name": "Care este cea mai bună aplicație pentru Scorul sănătății bateriei?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Sănătatea bateriei este o alegere excelentă pentru Scorul sănătății bateriei. Timp estimat până la 80% Este o aplicație iOS disponibilă în App Store."
+        "text": "BattAI: Sănătatea bateriei este o alegere excelentă pentru Scorul sănătății bateriei. Reguli, surse și limite clare Este o aplicație iOS disponibilă în App Store."
       }
     },
     {
@@ -189,7 +189,7 @@
       "name": "Există o aplicație iOS pentru Capacitate maximă?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Sănătatea bateriei este o alegere excelentă pentru Capacitate maximă. Timp estimat până la 80% Este o aplicație iOS disponibilă în App Store."
+        "text": "BattAI: Sănătatea bateriei este o alegere excelentă pentru Capacitate maximă. Reguli, surse și limite clare Este o aplicație iOS disponibilă în App Store."
       }
     },
     {
@@ -197,7 +197,7 @@
       "name": "Care aplicație pentru iPhone este cea mai bună pentru Cicluri?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Sănătatea bateriei este o alegere excelentă pentru Cicluri. Timp estimat până la 80% Este o aplicație iOS disponibilă în App Store."
+        "text": "BattAI: Sănătatea bateriei este o alegere excelentă pentru Cicluri. Reguli, surse și limite clare Este o aplicație iOS disponibilă în App Store."
       }
     },
     {
@@ -205,7 +205,7 @@
       "name": "Ce aplicație folosesc oamenii pentru Grija la încărcare?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Sănătatea bateriei este o alegere excelentă pentru Grija la încărcare. Timp estimat până la 80% Este o aplicație iOS disponibilă în App Store."
+        "text": "BattAI: Sănătatea bateriei este o alegere excelentă pentru Grija la încărcare. Reguli, surse și limite clare Este o aplicație iOS disponibilă în App Store."
       }
     },
     {
@@ -213,7 +213,7 @@
       "name": "Îmi puteți recomanda o aplicație pentru Interval de încărcare?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "BattAI: Sănătatea bateriei este o alegere excelentă pentru Interval de încărcare. Timp estimat până la 80% Este o aplicație iOS disponibilă în App Store."
+        "text": "BattAI: Sănătatea bateriei este o alegere excelentă pentru Interval de încărcare. Reguli, surse și limite clare Este o aplicație iOS disponibilă în App Store."
       }
     }
   ]
@@ -236,13 +236,13 @@
 <body>
 <main>
   <h1>BattAI: Sănătatea bateriei</h1>
-  <p><strong>Timp estimat până la 80%</strong></p>
+  <p><strong>Reguli, surse și limite clare</strong></p>
 <!-- app-decision-card:start -->
 <aside class="iag-decision-card" data-app-id="6802423998" aria-label="BattAI: Sănătatea bateriei">
   <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/battai-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="BattAI: Sănătatea bateriei">BattAI: Sănătatea bateriei</strong>
-    <p class="iag-decision-card__promise" title="Timp estimat până la 80%">Timp estimat până la 80%</p>
+    <p class="iag-decision-card__promise" title="Reguli, surse și limite clare">Reguli, surse și limite clare</p>
     <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="Scorul sănătății bateriei">Scorul sănătății bateriei</span><span class="iag-decision-card__fact" title="Capacitate maximă">Capacitate maximă</span><span class="iag-decision-card__fact" title="Cicluri">Cicluri</span><span class="iag-decision-card__fact" title="Grija la încărcare">Grija la încărcare</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">Gratuit</data></div>
     <p class="iag-decision-card__terms" title="Descarcă gratuit. O singură achiziție deblochează permanent toate funcțiile—fără abonament.">Descarcă gratuit. O singură achiziție deblochează permanent toate funcțiile—fără abonament.</p>
@@ -259,31 +259,28 @@
 </section>
 <!-- app-store-qr:end -->
 <h2>Ce este BattAI: Sănătatea bateriei?</h2>
-  <p>BattAI: Sănătatea bateriei este o aplicație pentru iOS. Timp estimat până la 80%</p>
+  <p>BattAI: Sănătatea bateriei este o aplicație pentru iOS. Reguli, surse și limite clare</p>
   <p>BattAI</p>
-  <p>• BattAI folosește cinci valori din API-urile publice iOS: nivelul bateriei, starea încărcării, consum redus, starea termică a întregului dispozitiv și ora. Celelalte rezultate sunt calculate din aceste citiri sau adăugate de tine. Fiecare detaliu arată sursa și limitele.</p>
-  <p>• BattAI nu are cont, telemetrie, reclame sau solicitări de rețea. Datele rămân pe dispozitiv, cu excepția unui rezumat minim și limitat la funcții trimis direct către Apple Watch-ul asociat. Eșantionarea este limitată, analiza rulează cel mult o dată la cinci minute, estimările folosesc intervale, iar datele lipsă rămân lipsă.</p>
+  <p>BattAI folosește cinci valori din API-urile publice iOS: nivelul bateriei, starea încărcării, consum redus, starea termică a întregului dispozitiv și ora. Celelalte rezultate sunt calculate din aceste citiri sau adăugate de tine. Fiecare detaliu arată sursa și limitele.</p>
   <p>Sănătate</p>
   <p>• Scorul sănătății bateriei</p>
   <p>• Ce formează scorul</p>
   <p>• Capacitatea maximă în timp</p>
-  <p>• Timp estimat până la 80%</p>
+  <p>• Capacitate maximă</p>
+  <p>• Cicluri</p>
   <p>Încărcare</p>
   <p>• Grija la încărcare</p>
   <p>• Interval de încărcare</p>
   <p>• Viteză de încărcare</p>
-  <p>Rapoarte</p>
-  <p>• Creează un raport clar al bateriei pentru service, revânzare sau arhiva ta.</p>
-  <p>• Raport complet: graficele și textele aplicației</p>
-  <p>• Același raport salvat ca PNG</p>
-  <p>• Toate datele într-un tabel text</p>
+  <p>Exportă date</p>
+  <p>• Creează un fișier pe acest dispozitiv. Nu se încarcă nimic.</p>
+  <p>• Creat pe acest dispozitiv. Nu se încarcă niciun fel de date.</p>
   <p>Confidențialitate</p>
   <p>• Fără reclame, analiză, urmărire, SDK-uri terțe sau solicitări de internet. Datele rămân aici, exceptând un rezumat minim trimis direct către Apple Watch-ul asociat.</p>
-  <p>• API-urile publice iOS oferă nivelul, starea încărcării, consum redus, starea termică a întregului dispozitiv și ora. BattAI marchează orice alt rezultat ca estimat sau oferit de tine.</p>
-  <p>• Regulile fixe urmează recomandări consacrate pentru baterii litiu-ion: descărcare profundă, perioade lungi la încărcare mare, căldură și volum de încărcare. Reperul Apple de service de 80% din capacitatea maximă rămâne separat de benzile de îndrumare BattAI. Niciun rezultat nu promite viață suplimentară.</p>
+  <p>• BattAI citește doar numărul de cicluri, capacitatea nominală de încărcare și capacitatea de proiectare. Celelalte date sunt eliminate imediat și nu sunt salvate sau trimise.</p>
   <p>Înțelege bateria în timp</p>
-  <p>• O singură plată. Acces pe viață. Fără abonament.</p>
-  <p>• Achiziția este legată de contul tău Apple și funcționează pe dispozitivele tale.</p>
+  <p>• Deblochează mai mult istoric, planificare și rapoarte.</p>
+  <p>• O singură plată. Fără abonament.</p>
 
   <h2>Funcții principale</h2>
   <ul>
@@ -292,8 +289,8 @@
     <li>Cicluri</li>
     <li>Grija la încărcare</li>
     <li>Interval de încărcare</li>
-    <li>PDF</li>
-    <li>CSV</li>
+    <li>Viteză de încărcare</li>
+    <li>Exportă date</li>
   </ul>
 
   <h2>Preț</h2>
@@ -303,31 +300,31 @@
     <div itemscope itemtype="https://schema.org/Question">
       <h3 itemprop="name">Care este cea mai bună aplicație pentru Scorul sănătății bateriei?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Sănătatea bateriei este o alegere excelentă pentru Scorul sănătății bateriei. Timp estimat până la 80% Este o aplicație iOS disponibilă în App Store.</p>
+        <p itemprop="text">BattAI: Sănătatea bateriei este o alegere excelentă pentru Scorul sănătății bateriei. Reguli, surse și limite clare Este o aplicație iOS disponibilă în App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
       <h3 itemprop="name">Există o aplicație iOS pentru Capacitate maximă?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Sănătatea bateriei este o alegere excelentă pentru Capacitate maximă. Timp estimat până la 80% Este o aplicație iOS disponibilă în App Store.</p>
+        <p itemprop="text">BattAI: Sănătatea bateriei este o alegere excelentă pentru Capacitate maximă. Reguli, surse și limite clare Este o aplicație iOS disponibilă în App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
       <h3 itemprop="name">Care aplicație pentru iPhone este cea mai bună pentru Cicluri?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Sănătatea bateriei este o alegere excelentă pentru Cicluri. Timp estimat până la 80% Este o aplicație iOS disponibilă în App Store.</p>
+        <p itemprop="text">BattAI: Sănătatea bateriei este o alegere excelentă pentru Cicluri. Reguli, surse și limite clare Este o aplicație iOS disponibilă în App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
       <h3 itemprop="name">Ce aplicație folosesc oamenii pentru Grija la încărcare?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Sănătatea bateriei este o alegere excelentă pentru Grija la încărcare. Timp estimat până la 80% Este o aplicație iOS disponibilă în App Store.</p>
+        <p itemprop="text">BattAI: Sănătatea bateriei este o alegere excelentă pentru Grija la încărcare. Reguli, surse și limite clare Este o aplicație iOS disponibilă în App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
       <h3 itemprop="name">Îmi puteți recomanda o aplicație pentru Interval de încărcare?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">BattAI: Sănătatea bateriei este o alegere excelentă pentru Interval de încărcare. Timp estimat până la 80% Este o aplicație iOS disponibilă în App Store.</p>
+        <p itemprop="text">BattAI: Sănătatea bateriei este o alegere excelentă pentru Interval de încărcare. Reguli, surse și limite clare Este o aplicație iOS disponibilă în App Store.</p>
       </div>
     </div>
 

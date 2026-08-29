@@ -9,6 +9,7 @@ from datetime import datetime, timezone
 import json
 from pathlib import Path
 import re
+import sys
 import time
 from typing import Any, Callable
 import urllib.error
@@ -17,6 +18,14 @@ import urllib.request
 
 
 DEFAULT_SITE = "https://alice51849.github.io/ios-app-guide"
+REPO_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_APPS_MANIFEST = REPO_ROOT / "apps.json"
+GEO_ENGINE = REPO_ROOT / "_engine" / "geo"
+if str(GEO_ENGINE) not in sys.path:
+    sys.path.insert(0, str(GEO_ENGINE))
+
+from official_locales import OFFICIAL_LOCALE_SET  # noqa: E402
+
 EXPECTED_APPS = 46
 EXPECTED_LOCALES = 50
 MAX_RESPONSE_BYTES = 8 * 1024 * 1024
@@ -171,6 +180,38 @@ def _app_store_identity(url: object, *, field: str) -> tuple[str, str]:
     return match.group(1), country
 
 
+def load_reviewed_app_ids(path: Path = DEFAULT_APPS_MANIFEST) -> frozenset[str]:
+    try:
+        document = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as error:
+        raise CoverageError(f"cannot load reviewed App manifest: {error}") from error
+    rows = _array(document, "reviewed App manifest")
+    app_ids: set[str] = set()
+    for raw in rows:
+        row = _object(raw, "reviewed App manifest row")
+        url = _text(row.get("appStoreUrl"), "reviewed App Store URL")
+        parsed = urllib.parse.urlsplit(url)
+        match = APP_STORE_PATH_RE.fullmatch(parsed.path)
+        if (
+            parsed.scheme != "https"
+            or parsed.hostname != "apps.apple.com"
+            or parsed.port is not None
+            or parsed.username is not None
+            or parsed.password is not None
+            or parsed.query
+            or parsed.fragment
+            or match is None
+        ):
+            raise CoverageError("reviewed App manifest has an invalid App Store URL")
+        app_id = match.group(1)
+        if app_id in app_ids:
+            raise CoverageError(f"reviewed App manifest repeats App ID {app_id}")
+        app_ids.add(app_id)
+    if not app_ids:
+        raise CoverageError("reviewed App manifest is empty")
+    return frozenset(app_ids)
+
+
 def _has_expected_script(locale: str, text: str) -> bool:
     ranges = SCRIPT_RANGES.get(locale)
     if ranges is None:
@@ -188,11 +229,15 @@ def _validate_index(
     site: str,
     expected_apps: int,
     expected_locales: int,
-) -> tuple[str, list[dict[str, str]]]:
-    if document.get("record_count") != expected_apps:
-        raise CoverageError("catalog index App denominator changed")
+    official_locales: frozenset[str],
+) -> tuple[int, str, list[dict[str, str]]]:
+    observed_apps = document.get("record_count")
+    if not isinstance(observed_apps, int) or observed_apps < expected_apps:
+        raise CoverageError("catalog index App denominator fell below SLA floor")
     if document.get("locale_count") != expected_locales:
         raise CoverageError("catalog index locale denominator changed")
+    if len(official_locales) != expected_locales:
+        raise CoverageError("official locale authority contradicts SLA denominator")
     digest = _text(document.get("content_digest"), "index content_digest")
     if HEX_64_RE.fullmatch(digest) is None:
         raise CoverageError("index content_digest is not SHA-256")
@@ -226,7 +271,14 @@ def _validate_index(
         )
     if "en-US" not in seen:
         raise CoverageError("catalog index lacks en-US baseline")
-    return digest, result
+    if seen != official_locales:
+        missing = sorted(official_locales - seen)
+        unexpected = sorted(seen - official_locales)
+        raise CoverageError(
+            "catalog index does not match official Apple locales: "
+            f"missing={missing}, unexpected={unexpected}"
+        )
+    return observed_apps, digest, result
 
 
 def _validate_catalog(
@@ -322,6 +374,8 @@ def _validate_feed(
         if item.get("url") != record["guide_url"]:
             raise CoverageError(f"{locale}/{key} feed guide URL mismatch")
         content = _text(item.get("content_text"), f"{locale}/{key} feed copy")
+        if content != record["summary"]:
+            raise CoverageError(f"{locale}/{key} feed and catalog copy differ")
         if not _has_expected_script(locale, content):
             raise CoverageError(f"{locale}/{key} feed copy lacks native script")
         result[key] = content
@@ -335,6 +389,8 @@ def audit_public_market_coverage(
     site: str = DEFAULT_SITE,
     expected_apps: int = EXPECTED_APPS,
     expected_locales: int = EXPECTED_LOCALES,
+    reviewed_app_ids: frozenset[str] | None = None,
+    official_locales: frozenset[str] = OFFICIAL_LOCALE_SET,
     fetcher: Callable[[str], dict[str, Any]] | None = None,
     workers: int = 10,
 ) -> dict[str, Any]:
@@ -342,6 +398,9 @@ def audit_public_market_coverage(
     _site_identity(site)
     fetch = fetcher or (lambda url: fetch_json(url, site=site))
     deployment = fetch(f"{site}/.well-known/deployment.json")
+    reviewed_ids = reviewed_app_ids or load_reviewed_app_ids()
+    if len(reviewed_ids) < expected_apps:
+        raise CoverageError("reviewed App manifest fell below SLA floor")
     source_commit = _text(
         deployment.get("source_commit"),
         "deployment source_commit",
@@ -349,12 +408,17 @@ def audit_public_market_coverage(
     if deployment.get("version") != 1 or HEX_40_RE.fullmatch(source_commit) is None:
         raise CoverageError("deployment manifest is invalid")
     index = fetch(f"{site}/api/v1/ios-app-catalog/index.json")
-    digest, locale_rows = _validate_index(
+    observed_apps, digest, locale_rows = _validate_index(
         index,
         site=site,
         expected_apps=expected_apps,
         expected_locales=expected_locales,
+        official_locales=official_locales,
     )
+    if observed_apps != len(reviewed_ids):
+        raise CoverageError(
+            "deployed App denominator differs from reviewed App manifest"
+        )
 
     def load_pair(row: dict[str, str]) -> tuple[str, dict[str, Any], dict[str, Any]]:
         return (
@@ -382,14 +446,14 @@ def audit_public_market_coverage(
             locale=locale,
             digest=digest,
             site=site,
-            expected_apps=expected_apps,
+            expected_apps=observed_apps,
         )
         feed = _validate_feed(
             feed_document,
             locale=locale,
             digest=digest,
             catalog=catalog,
-            expected_apps=expected_apps,
+            expected_apps=observed_apps,
         )
         keys = set(catalog)
         ids = {key: value["app_id"] for key, value in catalog.items()}
@@ -404,6 +468,10 @@ def audit_public_market_coverage(
 
     if english_copy is None:
         raise CoverageError("en-US native-copy baseline is missing")
+    if baseline_ids is None or set(baseline_ids.values()) != reviewed_ids:
+        raise CoverageError(
+            "deployed App identities differ from reviewed App manifest"
+        )
     for locale, (_catalog_document, feed_document) in loaded.items():
         if locale in ENGLISH_LOCALES:
             continue
@@ -412,20 +480,20 @@ def audit_public_market_coverage(
             locale=locale,
             digest=digest,
             site=site,
-            expected_apps=expected_apps,
+            expected_apps=observed_apps,
         )
         localized = _validate_feed(
             feed_document,
             locale=locale,
             digest=digest,
             catalog=catalog,
-            expected_apps=expected_apps,
+            expected_apps=observed_apps,
         )
         for key, content in localized.items():
             if content.casefold() == english_copy[key].casefold():
                 raise CoverageError(f"{locale}/{key} reuses the en-US feed copy")
 
-    expected_cells = expected_apps * expected_locales
+    expected_cells = observed_apps * expected_locales
     if native_cells != expected_cells:
         raise CoverageError(
             f"public market coverage is {native_cells}, expected {expected_cells}"
@@ -439,7 +507,8 @@ def audit_public_market_coverage(
         "site": site,
         "deployment_source_commit": source_commit,
         "content_digest": digest,
-        "apps": expected_apps,
+        "apps": observed_apps,
+        "minimum_apps": expected_apps,
         "locales": expected_locales,
         "native_public_cells": native_cells,
         "verified_public_endpoints": 2 + expected_locales * 2,
@@ -474,6 +543,7 @@ def main() -> int:
     parser.add_argument("--site", default=DEFAULT_SITE)
     parser.add_argument("--expected-apps", type=int, default=EXPECTED_APPS)
     parser.add_argument("--expected-locales", type=int, default=EXPECTED_LOCALES)
+    parser.add_argument("--apps-manifest", type=Path, default=DEFAULT_APPS_MANIFEST)
     parser.add_argument("--workers", type=int, default=10)
     parser.add_argument("--report", type=Path)
     parser.add_argument("--summary", type=Path)
@@ -482,6 +552,7 @@ def main() -> int:
         site=args.site,
         expected_apps=args.expected_apps,
         expected_locales=args.expected_locales,
+        reviewed_app_ids=load_reviewed_app_ids(args.apps_manifest),
         workers=args.workers,
     )
     if args.report is not None:

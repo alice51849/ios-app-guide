@@ -23161,6 +23161,12 @@ class GeneratorTests(unittest.TestCase):
             17,
             workflow.count('--today "$GEO_BUILD_DATE"'),
         )
+        self.assertEqual(
+            5,
+            workflow.count(
+                '--workflow-started-at "$GEO_WORKFLOW_STARTED_AT"'
+            ),
+        )
         snapshot_block = workflow.split(
             "- name: Snapshot truthful sitemap baseline", 1
         )[1].split("- name: Materialize newly live app surfaces", 1)[0]
@@ -23169,9 +23175,21 @@ class GeneratorTests(unittest.TestCase):
             snapshot_block,
         )
         self.assertIn("$GITHUB_ENV", snapshot_block)
-        self.assertIn('build_date="$(date -u +%F)"', snapshot_block)
+        self.assertIn(
+            'workflow_started_at="$(date -u +%Y-%m-%dT%H:%M:%SZ)"',
+            snapshot_block,
+        )
+        self.assertIn(
+            'build_date="${workflow_started_at%%T*}"',
+            snapshot_block,
+        )
         self.assertIn(
             'echo "GEO_BUILD_DATE=$build_date" >> "$GITHUB_ENV"',
+            snapshot_block,
+        )
+        self.assertIn(
+            'echo "GEO_WORKFLOW_STARTED_AT=$workflow_started_at" '
+            '>> "$GITHUB_ENV"',
             snapshot_block,
         )
         self.assertIn(
@@ -23197,6 +23215,10 @@ class GeneratorTests(unittest.TestCase):
         cursor = 0
         for command in closure_commands:
             cursor = preflight_closure.index(command, cursor) + len(command)
+        self.assertIn(
+            '--workflow-started-at "$GEO_WORKFLOW_STARTED_AT"',
+            preflight_closure,
+        )
         materialize_block = workflow.split(
             "- name: Materialize newly live app surfaces", 1
         )[1].split(
@@ -23563,6 +23585,10 @@ class GeneratorTests(unittest.TestCase):
         refresh_block = workflow.split(
             "- name: Refresh AI indexes + hubs", 1
         )[1].split("- name: Commit English content first", 1)[0]
+        self.assertIn(
+            '--workflow-started-at "$GEO_WORKFLOW_STARTED_AT"',
+            refresh_block,
+        )
         workflow_chain = (
             "gen_data_hub.py",
             "family_travel_static_api.py",
@@ -23701,6 +23727,10 @@ class GeneratorTests(unittest.TestCase):
         final_cleanup_block = workflow.split(
             "- name: Final link and availability cleanup", 1
         )[1].split("- name: Commit localized pages if any", 1)[0]
+        self.assertIn(
+            '--workflow-started-at "$GEO_WORKFLOW_STARTED_AT"',
+            final_cleanup_block,
+        )
         final_chain = (
             "gen_linkset.py",
             "gen_social_previews.py",
@@ -23778,6 +23808,11 @@ class GeneratorTests(unittest.TestCase):
         localized_commit_block = workflow.split(
             "- name: Commit localized pages if any", 1
         )[1].split("- name: Unlink site dir", 1)[0]
+        for block in (english_commit_block, localized_commit_block):
+            self.assertIn(
+                '--workflow-started-at "$GEO_WORKFLOW_STARTED_AT"',
+                block,
+            )
         self.assertIn(
             "SITEMAP_LASTMOD_INTERMEDIATE_STATE",
             english_commit_block,

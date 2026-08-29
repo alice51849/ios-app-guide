@@ -4,7 +4,7 @@
 from __future__ import annotations
 
 import argparse
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from functools import lru_cache
 import hashlib
 import html
@@ -25,6 +25,7 @@ STATE_RELATIVE_PATH = Path("_engine/geo/sitemap_lastmod_state.json")
 SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 DATE_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
 SHA256_RE = re.compile(r"[0-9a-f]{64}")
+MAX_CLOCK_SKEW = timedelta(minutes=5)
 DATE_MODIFIED_RE = re.compile(
     r'"dateModified"\s*:\s*"(?P<value>\d{4}-\d{2}-\d{2})"'
 )
@@ -59,6 +60,50 @@ def _valid_date(value: Any, *, today: str | None = None) -> bool:
     except ValueError:
         return False
     return today is None or parsed <= date.fromisoformat(today)
+
+
+def _utc_instant(value: datetime | str, *, label: str) -> datetime:
+    if isinstance(value, str):
+        if value != value.strip():
+            raise ValueError(f"Invalid {label}: {value!r}")
+        normalized = value[:-1] + "+00:00" if value.endswith("Z") else value
+        try:
+            parsed = datetime.fromisoformat(normalized)
+        except ValueError as error:
+            raise ValueError(f"Invalid {label}: {value!r}") from error
+    elif isinstance(value, datetime):
+        parsed = value
+    else:
+        raise ValueError(f"Invalid {label}: {value!r}")
+    if parsed.tzinfo is None or parsed.utcoffset() is None:
+        raise ValueError(f"{label} must include a UTC offset: {value!r}")
+    return parsed.astimezone(timezone.utc)
+
+
+def _validation_reference(
+    workflow_started_at: datetime | str | None,
+    *,
+    validation_time: datetime | str | None = None,
+) -> datetime:
+    """Use max(trusted workflow start, current validation instant), in UTC."""
+    current = (
+        _utc_instant(validation_time, label="validation time")
+        if validation_time is not None
+        else datetime.now(timezone.utc)
+    )
+    if workflow_started_at is None:
+        return current
+    started = _utc_instant(
+        workflow_started_at,
+        label="workflow start time",
+    )
+    if started - current > MAX_CLOCK_SKEW:
+        raise ValueError(
+            "Workflow start time exceeds clock-skew contract: "
+            f"{started.isoformat()} > {current.isoformat()} + "
+            f"{int(MAX_CLOCK_SKEW.total_seconds())}s"
+        )
+    return max(started, current)
 
 
 def _sha256(path: Path) -> str:
@@ -272,9 +317,17 @@ def git_dirty_paths(pages: Path) -> set[str]:
 def git_history_dates(
     pages: Path,
     wanted: set[str],
+    *,
+    reference_time: datetime | str | None = None,
 ) -> dict[str, str]:
     if not wanted:
         return {}
+    reference = (
+        _utc_instant(reference_time, label="Git validation time")
+        if reference_time is not None
+        else datetime.now(timezone.utc)
+    )
+    latest_allowed = reference + MAX_CLOCK_SKEW
     pathspecs = sorted(wanted)
     if len(pathspecs) > 512 or sum(map(len, pathspecs)) > 100000:
         pathspecs = ["."]
@@ -296,13 +349,26 @@ def git_history_dates(
     for line in output.splitlines():
         if line.startswith("@@"):
             candidate = line[2:].strip()
+            if not re.fullmatch(r"\d+", candidate):
+                raise ValueError(
+                    f"Malformed Git commit timestamp: {candidate!r}"
+                )
             try:
-                commit_date = datetime.fromtimestamp(
+                commit_time = datetime.fromtimestamp(
                     int(candidate),
                     timezone.utc,
-                ).date().isoformat()
-            except (OSError, OverflowError, ValueError):
-                commit_date = None
+                )
+            except (OSError, OverflowError, ValueError) as error:
+                raise ValueError(
+                    f"Malformed Git commit timestamp: {candidate!r}"
+                ) from error
+            if commit_time > latest_allowed:
+                raise ValueError(
+                    "Git commit timestamp exceeds clock-skew contract: "
+                    f"{commit_time.isoformat()} > {reference.isoformat()} + "
+                    f"{int(MAX_CLOCK_SKEW.total_seconds())}s"
+                )
+            commit_date = commit_time.date().isoformat()
             continue
         path = line.strip()
         if commit_date and path in wanted and path not in dates:
@@ -312,7 +378,7 @@ def git_history_dates(
     return dates
 
 
-def _load_state(path: Path, today: str) -> dict[str, Any]:
+def _load_state(path: Path, max_date: str) -> dict[str, Any]:
     if not path.is_file():
         return {"version": 1, "urls": {}, "sitemaps": {}}
     try:
@@ -333,7 +399,7 @@ def _load_state(path: Path, today: str) -> dict[str, Any]:
                 or not isinstance(record, dict)
                 or not isinstance(record.get("path"), str)
                 or not SHA256_RE.fullmatch(str(record.get("sha256", "")))
-                or not _valid_date(record.get("lastmod"), today=today)
+                or not _valid_date(record.get("lastmod"), today=max_date)
             ):
                 raise ValueError(
                     f"Invalid sitemap lastmod state record: {section}/{url}"
@@ -347,7 +413,7 @@ def _publisher_visual_lastmod(
     locations: list[str],
     targets: dict[str, Path],
     url_records: dict[str, dict[str, str]],
-    today: str,
+    max_date: str,
 ) -> str | None:
     if _relative_path(sitemap, pages) != PUBLISHER_VISUAL_SITEMAP.as_posix():
         return None
@@ -367,7 +433,7 @@ def _publisher_visual_lastmod(
     image_count = manifest.get("image_count")
     gallery_count = manifest.get("gallery_count")
     if (
-        not _valid_date(modified, today=today)
+        not _valid_date(modified, today=max_date)
         or not SHA256_RE.fullmatch(
             str(manifest.get("content_digest", ""))
         )
@@ -431,7 +497,8 @@ def _record_for(
     previous: dict[str, Any] | None,
     history_dates: dict[str, str],
     dirty_paths: set[str],
-    today: str,
+    content_date: str,
+    max_date: str,
     digest: str | None = None,
 ) -> dict[str, str]:
     relative = _relative_path(target, pages)
@@ -444,7 +511,7 @@ def _record_for(
     if previous is not None and previous.get("sha256") == digest:
         lastmod = str(previous["lastmod"])
     elif relative in dirty_paths:
-        lastmod = today
+        lastmod = content_date
     else:
         lastmod = history_dates.get(relative)
         if lastmod is None:
@@ -452,7 +519,7 @@ def _record_for(
                 "No Git history date for clean sitemap target: "
                 f"{url} ({relative})"
             )
-    if not _valid_date(lastmod, today=today):
+    if not _valid_date(lastmod, today=max_date):
         raise ValueError(f"Invalid derived lastmod for {url}: {lastmod}")
     return {
         "path": relative,
@@ -487,23 +554,34 @@ def generate(
     state_path: Path | None = None,
     fallback_state_path: Path | None = None,
     today: str | None = None,
+    workflow_started_at: datetime | str | None = None,
+    validation_time: datetime | str | None = None,
     history_dates: dict[str, str] | None = None,
     dirty_paths: set[str] | None = None,
 ) -> dict[str, int]:
     pages = pages.resolve()
     _resolved_directory.cache_clear()
     site = site.rstrip("/")
-    today = today or datetime.now(timezone.utc).date().isoformat()
-    if not _valid_date(today, today=today):
-        raise ValueError(f"Invalid --today date: {today}")
+    reference_time = _validation_reference(
+        workflow_started_at,
+        validation_time=validation_time,
+    )
+    reference_date = reference_time.date().isoformat()
+    # The build date stays deterministic; the reference date independently
+    # validates state and Git facts at the instant this pass actually runs.
+    today = today or reference_date
+    if not _valid_date(today, today=reference_date):
+        raise ValueError(
+            f"Invalid --today date for {reference_date}: {today}"
+        )
     state_path = (
         state_path.resolve()
         if state_path is not None
         else pages / STATE_RELATIVE_PATH
     )
-    state = _load_state(state_path, today)
+    state = _load_state(state_path, reference_date)
     fallback_state = (
-        _load_state(fallback_state_path.resolve(), today)
+        _load_state(fallback_state_path.resolve(), reference_date)
         if fallback_state_path is not None
         else {"version": 1, "urls": {}, "sitemaps": {}}
     )
@@ -636,9 +714,16 @@ def generate(
                     != target_digests[_relative_path(target, pages)]
                 )
             )
-        history_dates = git_history_dates(pages, missing_history)
+        history_dates = git_history_dates(
+            pages,
+            missing_history,
+            reference_time=reference_time,
+        )
     for path, value in history_dates.items():
-        if path in wanted_paths and not _valid_date(value, today=today):
+        if path in wanted_paths and not _valid_date(
+            value,
+            today=reference_date,
+        ):
             raise ValueError(f"Invalid Git history date for {path}: {value}")
 
     url_records = {
@@ -650,6 +735,7 @@ def generate(
             history_dates,
             dirty_paths,
             today,
+            reference_date,
             target_digests[_relative_path(target, pages)],
         )
         for url, target in sorted(targets.items())
@@ -664,7 +750,7 @@ def generate(
             locations,
             targets,
             url_records,
-            today,
+            reference_date,
         )
         replacements: dict[int, str] = {}
         for index, (block, location) in enumerate(zip(blocks, locations)):
@@ -714,6 +800,7 @@ def generate(
                 history_dates,
                 dirty_paths | changed_sitemaps,
                 today,
+                reference_date,
                 current_digest,
             )
             sitemap_records[location] = record
@@ -765,7 +852,17 @@ def main() -> None:
     parser.add_argument("--site", default=SITE)
     parser.add_argument("--state", type=Path)
     parser.add_argument("--fallback-state", type=Path)
-    parser.add_argument("--today")
+    parser.add_argument(
+        "--today",
+        help="Logical build date; must not exceed the validation UTC date.",
+    )
+    parser.add_argument(
+        "--workflow-started-at",
+        help=(
+            "Trusted offset-aware workflow start. The validation reference is "
+            "max(this instant, the current UTC instant)."
+        ),
+    )
     args = parser.parse_args()
     stats = generate(
         args.pages,
@@ -773,6 +870,7 @@ def main() -> None:
         state_path=args.state,
         fallback_state_path=args.fallback_state,
         today=args.today,
+        workflow_started_at=args.workflow_started_at,
     )
     print(
         "Truthful sitemap lastmod: "

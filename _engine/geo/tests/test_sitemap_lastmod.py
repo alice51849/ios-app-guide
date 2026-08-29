@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 import json
 from pathlib import Path
 import sys
@@ -61,8 +61,14 @@ class TruthfulSitemapLastmodTests(unittest.TestCase):
             return_value=f"@@{timestamp}\nanswers/example.html\n",
         ) as run_git:
             dates = gen_sitemap_lastmod.git_history_dates(
-                Path("/tmp/site"),
+                GEO,
                 {"answers/example.html"},
+                reference_time=datetime(
+                    2026,
+                    7,
+                    14,
+                    tzinfo=timezone.utc,
+                ),
             )
 
         self.assertEqual(
@@ -74,6 +80,257 @@ class TruthfulSitemapLastmodTests(unittest.TestCase):
             "answers/example.html",
             run_git.call_args.args[1],
         )
+
+    def test_cross_midnight_reference_uses_current_utc_instant(self) -> None:
+        reference = gen_sitemap_lastmod._validation_reference(
+            "2026-08-28T23:59:00Z",
+            validation_time=datetime(
+                2026,
+                8,
+                29,
+                0,
+                1,
+                tzinfo=timezone.utc,
+            ),
+        )
+
+        self.assertEqual(
+            datetime(2026, 8, 29, 0, 1, tzinfo=timezone.utc),
+            reference,
+        )
+
+    def test_validation_reference_normalizes_non_utc_host_time(self) -> None:
+        reference = gen_sitemap_lastmod._validation_reference(
+            "2026-08-28T23:59:00Z",
+            validation_time=datetime(
+                2026,
+                8,
+                28,
+                17,
+                1,
+                tzinfo=timezone(timedelta(hours=-7)),
+            ),
+        )
+
+        self.assertEqual(
+            datetime(2026, 8, 29, 0, 1, tzinfo=timezone.utc),
+            reference,
+        )
+
+    def test_workflow_clock_skew_beyond_contract_fails_closed(self) -> None:
+        with self.assertRaisesRegex(
+            ValueError,
+            "Workflow start time exceeds clock-skew contract",
+        ):
+            gen_sitemap_lastmod._validation_reference(
+                "2026-08-29T00:05:01Z",
+                validation_time=datetime(
+                    2026,
+                    8,
+                    29,
+                    tzinfo=timezone.utc,
+                ),
+            )
+
+    def test_git_history_clock_skew_beyond_contract_fails_closed(self) -> None:
+        reference = datetime(2026, 8, 29, 12, tzinfo=timezone.utc)
+        future = reference + gen_sitemap_lastmod.MAX_CLOCK_SKEW + timedelta(
+            seconds=1
+        )
+        with mock.patch.object(
+            gen_sitemap_lastmod,
+            "_run_git",
+            return_value=(
+                f"@@{int(future.timestamp())}\n"
+                "answers/example.html\n"
+            ),
+        ):
+            with self.assertRaisesRegex(
+                ValueError,
+                "Git commit timestamp exceeds clock-skew contract",
+            ):
+                gen_sitemap_lastmod.git_history_dates(
+                    GEO,
+                    {"answers/example.html"},
+                    reference_time=reference,
+                )
+
+    def test_git_history_clock_skew_at_contract_limit_is_accepted(self) -> None:
+        reference = datetime(2026, 8, 29, 12, tzinfo=timezone.utc)
+        limit = reference + gen_sitemap_lastmod.MAX_CLOCK_SKEW
+        with mock.patch.object(
+            gen_sitemap_lastmod,
+            "_run_git",
+            return_value=(
+                f"@@{int(limit.timestamp())}\n"
+                "answers/example.html\n"
+            ),
+        ):
+            dates = gen_sitemap_lastmod.git_history_dates(
+                GEO,
+                {"answers/example.html"},
+                reference_time=reference,
+            )
+
+        self.assertEqual(
+            {"answers/example.html": "2026-08-29"},
+            dates,
+        )
+
+    def test_malformed_git_history_timestamp_fails_closed(self) -> None:
+        with mock.patch.object(
+            gen_sitemap_lastmod,
+            "_run_git",
+            return_value="@@not-a-timestamp\nanswers/example.html\n",
+        ):
+            with self.assertRaisesRegex(
+                ValueError,
+                "Malformed Git commit timestamp",
+            ):
+                gen_sitemap_lastmod.git_history_dates(
+                    GEO,
+                    {"answers/example.html"},
+                    reference_time=datetime(
+                        2026,
+                        8,
+                        29,
+                        tzinfo=timezone.utc,
+                    ),
+                )
+
+    def test_current_day_commit_survives_stale_build_date_and_rerun(
+        self,
+    ) -> None:
+        with tempfile.TemporaryDirectory(dir=GEO / "tests") as directory:
+            pages = Path(directory)
+            guide = pages / "guides" / "app.html"
+            guide.parent.mkdir()
+            guide.write_text(
+                "<h1>Committed after midnight</h1>",
+                encoding="utf-8",
+            )
+            sitemap = pages / "sitemap.xml"
+            sitemap.write_text(
+                urlset(f"<loc>{SITE}/guides/app.html</loc>"),
+                encoding="utf-8",
+            )
+            state = pages / "state.json"
+            clock = {
+                "today": "2026-08-28",
+                "workflow_started_at": "2026-08-28T23:59:00Z",
+            }
+
+            commit_time = datetime(
+                2026,
+                8,
+                29,
+                0,
+                0,
+                30,
+                tzinfo=timezone.utc,
+            )
+            with mock.patch.object(
+                gen_sitemap_lastmod,
+                "_run_git",
+                return_value=(
+                    f"@@{int(commit_time.timestamp())}\n"
+                    "guides/app.html\n"
+                ),
+            ):
+                first = gen_sitemap_lastmod.generate(
+                    pages,
+                    state_path=state,
+                    validation_time=datetime(
+                        2026,
+                        8,
+                        29,
+                        0,
+                        1,
+                        tzinfo=timezone.utc,
+                    ),
+                    dirty_paths=set(),
+                    **clock,
+                )
+            self.assertGreater(first["changed_files"], 0)
+            self.assertIn(
+                "<lastmod>2026-08-29</lastmod>",
+                sitemap.read_text(encoding="utf-8"),
+            )
+            mtimes = {
+                path: path.stat().st_mtime_ns for path in (sitemap, state)
+            }
+
+            rerun = gen_sitemap_lastmod.generate(
+                pages,
+                state_path=state,
+                validation_time=datetime(
+                    2026,
+                    8,
+                    29,
+                    0,
+                    2,
+                    tzinfo=timezone.utc,
+                ),
+                history_dates={},
+                dirty_paths=set(),
+                **clock,
+            )
+            self.assertEqual(0, rerun["changed_files"])
+            self.assertEqual(
+                mtimes,
+                {path: path.stat().st_mtime_ns for path in mtimes},
+            )
+
+    def test_true_future_day_fails_closed_after_midnight(self) -> None:
+        with tempfile.TemporaryDirectory(dir=GEO / "tests") as directory:
+            pages = Path(directory)
+            guide = pages / "guides" / "app.html"
+            guide.parent.mkdir()
+            guide.write_text("<h1>Guide</h1>", encoding="utf-8")
+            pages.joinpath("sitemap.xml").write_text(
+                urlset(f"<loc>{SITE}/guides/app.html</loc>"),
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(
+                ValueError,
+                "Invalid Git history date",
+            ):
+                gen_sitemap_lastmod.generate(
+                    pages,
+                    state_path=pages / "state.json",
+                    today="2026-08-28",
+                    workflow_started_at="2026-08-28T23:59:00Z",
+                    validation_time=datetime(
+                        2026,
+                        8,
+                        29,
+                        0,
+                        1,
+                        tzinfo=timezone.utc,
+                    ),
+                    history_dates={"guides/app.html": "2026-08-30"},
+                    dirty_paths=set(),
+                )
+
+    def test_future_build_date_fails_closed(self) -> None:
+        with tempfile.TemporaryDirectory(dir=GEO / "tests") as directory:
+            with self.assertRaisesRegex(ValueError, "Invalid --today date"):
+                gen_sitemap_lastmod.generate(
+                    Path(directory),
+                    state_path=Path(directory) / "state.json",
+                    today="2026-08-30",
+                    workflow_started_at="2026-08-28T23:59:00Z",
+                    validation_time=datetime(
+                        2026,
+                        8,
+                        29,
+                        0,
+                        1,
+                        tzinfo=timezone.utc,
+                    ),
+                    history_dates={},
+                    dirty_paths=set(),
+                )
 
     def test_history_bootstrap_hash_changes_and_duplicates(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

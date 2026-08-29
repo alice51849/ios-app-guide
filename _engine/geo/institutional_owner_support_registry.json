@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "source_kind": "first_party_owner_page_http_receipts",
-  "checked_at": "2026-08-29T19:55:38Z",
-  "expires_at": "2026-09-01T19:55:38Z",
+  "checked_at": "2026-08-29T20:23:29Z",
+  "expires_at": "2026-09-01T20:23:29Z",
   "allowed_owner_hosts": [
     "alice51849.github.io",
     "open.cait518.cc"
@@ -18,6 +18,7 @@
       "support_url": "https://alice51849.github.io/100notes-support/support.html",
       "privacy_url": "https://alice51849.github.io/100notes-support/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/100notes-support/support.html",
         "fetched_url": "https://alice51849.github.io/100notes-support/support.html",
         "http_status": 200,
@@ -34,6 +35,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/100notes-support/privacy.html",
         "fetched_url": "https://alice51849.github.io/100notes-support/privacy.html",
         "http_status": 200,
@@ -57,6 +59,7 @@
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/support.html?lang=en-US",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/privacy.html?lang=en-US",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/support.html?lang=en-US",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/support.html?lang=en-US",
         "http_status": 200,
@@ -71,6 +74,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/privacy.html?lang=en-US",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/privacy.html?lang=en-US",
         "http_status": 200,
@@ -92,6 +96,7 @@
       "support_url": "https://alice51849.github.io/aim990-support/",
       "privacy_url": "https://alice51849.github.io/aim990-support/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/aim990-support/",
         "fetched_url": "https://alice51849.github.io/aim990-support/",
         "http_status": 200,
@@ -106,6 +111,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/aim990-support/privacy.html",
         "fetched_url": "https://alice51849.github.io/aim990-support/privacy.html",
         "http_status": 200,
@@ -127,6 +133,7 @@
       "support_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-support.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-support.html",
         "http_status": 200,
@@ -143,6 +150,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-privacy.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-privacy.html",
         "http_status": 200,
@@ -166,6 +174,7 @@
       "support_url": "https://alice51849.github.io/battai-support/locales/en/",
       "privacy_url": "https://alice51849.github.io/battai-support/locales/en/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/battai-support/locales/en/",
         "fetched_url": "https://alice51849.github.io/battai-support/locales/en/",
         "http_status": 200,
@@ -180,6 +189,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/battai-support/locales/en/privacy.html",
         "fetched_url": "https://alice51849.github.io/battai-support/locales/en/privacy.html",
         "http_status": 200,
@@ -201,6 +211,7 @@
       "support_url": "https://alice51849.github.io/caldaily-support/support.html",
       "privacy_url": "https://alice51849.github.io/caldaily-support/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/caldaily-support/support.html",
         "fetched_url": "https://alice51849.github.io/caldaily-support/support.html",
         "http_status": 200,
@@ -215,6 +226,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/caldaily-support/privacy.html",
         "fetched_url": "https://alice51849.github.io/caldaily-support/privacy.html",
         "http_status": 200,
@@ -236,6 +248,7 @@
       "support_url": "https://alice51849.github.io/cvdesk-support/support.html",
       "privacy_url": "https://alice51849.github.io/cvdesk-support/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/cvdesk-support/support.html",
         "fetched_url": "https://alice51849.github.io/cvdesk-support/support.html",
         "http_status": 200,
@@ -250,6 +263,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/cvdesk-support/privacy.html",
         "fetched_url": "https://alice51849.github.io/cvdesk-support/privacy.html",
         "http_status": 200,
@@ -271,6 +285,7 @@
       "support_url": "https://alice51849.github.io/cyca-support/",
       "privacy_url": "https://alice51849.github.io/cyca-support/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/cyca-support/",
         "fetched_url": "https://alice51849.github.io/cyca-support/",
         "http_status": 200,
@@ -285,6 +300,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/cyca-support/privacy.html",
         "fetched_url": "https://alice51849.github.io/cyca-support/privacy.html",
         "http_status": 200,
@@ -306,6 +322,7 @@
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/support.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/support.html",
         "http_status": 200,
@@ -320,6 +337,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/privacy.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/privacy.html",
         "http_status": 200,
@@ -341,6 +359,7 @@
       "support_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/support.html",
         "fetched_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/support.html",
         "http_status": 200,
@@ -355,6 +374,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/privacy.html",
         "fetched_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/privacy.html",
         "http_status": 200,
@@ -376,6 +396,7 @@
       "support_url": "https://alice51849.github.io/gmoney-support/",
       "privacy_url": "https://alice51849.github.io/gmoney-support/#privacy",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/gmoney-support/",
         "fetched_url": "https://alice51849.github.io/gmoney-support/",
         "http_status": 200,
@@ -390,6 +411,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/gmoney-support/#privacy",
         "fetched_url": "https://alice51849.github.io/gmoney-support/",
         "http_status": 200,
@@ -411,6 +433,7 @@
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/support.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/support.html",
         "http_status": 200,
@@ -425,6 +448,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/privacy.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/privacy.html",
         "http_status": 200,
@@ -446,6 +470,7 @@
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/support.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/support.html",
         "http_status": 200,
@@ -460,6 +485,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/privacy.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/privacy.html",
         "http_status": 200,
@@ -481,6 +507,7 @@
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/support.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/support.html",
         "http_status": 200,
@@ -495,6 +522,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/privacy.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/privacy.html",
         "http_status": 200,
@@ -516,6 +544,7 @@
       "support_url": "https://alice51849.github.io/lockhour-support/support.html",
       "privacy_url": "https://alice51849.github.io/lockhour-support/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/lockhour-support/support.html",
         "fetched_url": "https://alice51849.github.io/lockhour-support/support.html",
         "http_status": 200,
@@ -530,6 +559,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/lockhour-support/privacy.html",
         "fetched_url": "https://alice51849.github.io/lockhour-support/privacy.html",
         "http_status": 200,
@@ -551,6 +581,7 @@
       "support_url": "https://alice51849.github.io/lumi-support/",
       "privacy_url": "https://alice51849.github.io/lumi-support/",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/lumi-support/",
         "fetched_url": "https://alice51849.github.io/lumi-support/",
         "http_status": 200,
@@ -567,6 +598,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/lumi-support/",
         "fetched_url": "https://alice51849.github.io/lumi-support/",
         "http_status": 200,
@@ -590,6 +622,7 @@
       "support_url": "https://alice51849.github.io/lumi-support/",
       "privacy_url": "https://alice51849.github.io/lumi-support/",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/lumi-support/",
         "fetched_url": "https://alice51849.github.io/lumi-support/",
         "http_status": 200,
@@ -606,6 +639,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/lumi-support/",
         "fetched_url": "https://alice51849.github.io/lumi-support/",
         "http_status": 200,
@@ -629,6 +663,7 @@
       "support_url": "https://alice51849.github.io/lumi-letters-support",
       "privacy_url": "https://alice51849.github.io/lumi-letters-support",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/lumi-letters-support",
         "fetched_url": "https://alice51849.github.io/lumi-letters-support/",
         "http_status": 200,
@@ -645,6 +680,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/lumi-letters-support",
         "fetched_url": "https://alice51849.github.io/lumi-letters-support/",
         "http_status": 200,
@@ -668,6 +704,7 @@
       "support_url": "https://alice51849.github.io/lumi-letters-support/",
       "privacy_url": "https://alice51849.github.io/lumi-letters-support",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/lumi-letters-support/",
         "fetched_url": "https://alice51849.github.io/lumi-letters-support/",
         "http_status": 200,
@@ -684,6 +721,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/lumi-letters-support",
         "fetched_url": "https://alice51849.github.io/lumi-letters-support/",
         "http_status": 200,
@@ -707,6 +745,7 @@
       "support_url": "https://alice51849.github.io/lumi-math-support/",
       "privacy_url": "https://alice51849.github.io/lumi-math-support/",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/lumi-math-support/",
         "fetched_url": "https://alice51849.github.io/lumi-math-support/",
         "http_status": 200,
@@ -723,6 +762,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/lumi-math-support/",
         "fetched_url": "https://alice51849.github.io/lumi-math-support/",
         "http_status": 200,
@@ -746,6 +786,7 @@
       "support_url": "https://alice51849.github.io/lumi-math-support/",
       "privacy_url": "https://alice51849.github.io/lumi-math-support/",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/lumi-math-support/",
         "fetched_url": "https://alice51849.github.io/lumi-math-support/",
         "http_status": 200,
@@ -762,6 +803,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/lumi-math-support/",
         "fetched_url": "https://alice51849.github.io/lumi-math-support/",
         "http_status": 200,
@@ -785,6 +827,7 @@
       "support_url": "https://alice51849.github.io/lumi-mission-support/",
       "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/lumi-mission-support/",
         "fetched_url": "https://alice51849.github.io/lumi-mission-support/",
         "http_status": 200,
@@ -801,6 +844,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/lumi-mission-support/",
         "fetched_url": "https://alice51849.github.io/lumi-mission-support/",
         "http_status": 200,
@@ -824,6 +868,7 @@
       "support_url": "https://alice51849.github.io/lumi-mission-support/",
       "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/lumi-mission-support/",
         "fetched_url": "https://alice51849.github.io/lumi-mission-support/",
         "http_status": 200,
@@ -840,6 +885,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/lumi-mission-support/",
         "fetched_url": "https://alice51849.github.io/lumi-mission-support/",
         "http_status": 200,
@@ -863,6 +909,7 @@
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/support.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/support.html",
         "http_status": 200,
@@ -879,6 +926,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/privacy.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/privacy.html",
         "http_status": 200,
@@ -902,6 +950,7 @@
       "support_url": "https://alice51849.github.io/lumi-weather-support",
       "privacy_url": "https://alice51849.github.io/lumi-weather-support",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/lumi-weather-support",
         "fetched_url": "https://alice51849.github.io/lumi-weather-support/",
         "http_status": 200,
@@ -918,6 +967,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/lumi-weather-support",
         "fetched_url": "https://alice51849.github.io/lumi-weather-support/",
         "http_status": 200,
@@ -941,6 +991,7 @@
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/ur-PK/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/en-US/support.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/en-US/support.html",
         "http_status": 200,
@@ -957,6 +1008,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/ur-PK/privacy.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/ur-PK/privacy.html",
         "http_status": 200,
@@ -980,6 +1032,7 @@
       "support_url": "https://alice51849.github.io/mochitodo-support/",
       "privacy_url": "https://alice51849.github.io/mochitodo-support/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/mochitodo-support/",
         "fetched_url": "https://alice51849.github.io/mochitodo-support/",
         "http_status": 200,
@@ -994,6 +1047,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/mochitodo-support/privacy.html",
         "fetched_url": "https://alice51849.github.io/mochitodo-support/privacy.html",
         "http_status": 200,
@@ -1015,12 +1069,13 @@
       "support_url": "https://open.cait518.cc/mochi-donestamp/en-US/support/",
       "privacy_url": "https://open.cait518.cc/mochi-donestamp/en-US/privacy/",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://open.cait518.cc/mochi-donestamp/en-US/support/",
         "fetched_url": "https://open.cait518.cc/mochi-donestamp/en-US/support/",
         "http_status": 200,
         "owner_host": "open.cait518.cc",
         "content_length": 13254,
-        "content_sha256": "40187462906560fba2df3f087ab666cbda16a1747bfe9fbed089753bd4e64305",
+        "content_sha256": "3d5dfc0e281aef6439d14578d0667c06d713910608a39df68ca0dbb8529103f5",
         "canonical_brand_tokens": [
           "mochi",
           "donestamp"
@@ -1031,12 +1086,13 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://open.cait518.cc/mochi-donestamp/en-US/privacy/",
         "fetched_url": "https://open.cait518.cc/mochi-donestamp/en-US/privacy/",
         "http_status": 200,
         "owner_host": "open.cait518.cc",
         "content_length": 14963,
-        "content_sha256": "2638781031805d32307a7480235d94ace11a5a1af888ba134319f43d47db78b1",
+        "content_sha256": "fae01ef079bf23b5bcc9ac4c8496570a3f9ea3cacbccb878d987ed3fab1c8207",
         "canonical_brand_tokens": [
           "mochi",
           "donestamp"
@@ -1054,6 +1110,7 @@
       "support_url": "https://alice51849.github.io/moneytag-support/?lang=en-US",
       "privacy_url": "https://alice51849.github.io/moneytag-support/privacy.html?lang=en-US",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/moneytag-support/?lang=en-US",
         "fetched_url": "https://alice51849.github.io/moneytag-support/?lang=en-US",
         "http_status": 200,
@@ -1068,6 +1125,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/moneytag-support/privacy.html?lang=en-US",
         "fetched_url": "https://alice51849.github.io/moneytag-support/privacy.html?lang=en-US",
         "http_status": 200,
@@ -1089,6 +1147,7 @@
       "support_url": "https://alice51849.github.io/app/onepage-ppt/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/app/onepage-ppt/en-US/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/app/onepage-ppt/en-US/support.html",
         "fetched_url": "https://alice51849.github.io/app/onepage-ppt/en-US/support.html",
         "http_status": 200,
@@ -1105,6 +1164,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/app/onepage-ppt/en-US/privacy.html",
         "fetched_url": "https://alice51849.github.io/app/onepage-ppt/en-US/privacy.html",
         "http_status": 200,
@@ -1128,6 +1188,7 @@
       "support_url": "https://alice51849.github.io/photocream-support/support.html",
       "privacy_url": "https://alice51849.github.io/photocream-support/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/photocream-support/support.html",
         "fetched_url": "https://alice51849.github.io/photocream-support/support.html",
         "http_status": 200,
@@ -1142,6 +1203,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/photocream-support/privacy.html",
         "fetched_url": "https://alice51849.github.io/photocream-support/privacy.html",
         "http_status": 200,
@@ -1163,6 +1225,7 @@
       "support_url": "https://alice51849.github.io/picclear-support/support.html",
       "privacy_url": "https://alice51849.github.io/picclear-support/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/picclear-support/support.html",
         "fetched_url": "https://alice51849.github.io/picclear-support/support.html",
         "http_status": 200,
@@ -1177,6 +1240,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/picclear-support/privacy.html",
         "fetched_url": "https://alice51849.github.io/picclear-support/privacy.html",
         "http_status": 200,
@@ -1198,6 +1262,7 @@
       "support_url": "https://alice51849.github.io/savetag-support/",
       "privacy_url": "https://alice51849.github.io/savetag-support/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/savetag-support/",
         "fetched_url": "https://alice51849.github.io/savetag-support/",
         "http_status": 200,
@@ -1212,6 +1277,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/savetag-support/privacy.html",
         "fetched_url": "https://alice51849.github.io/savetag-support/privacy.html",
         "http_status": 200,
@@ -1233,6 +1299,7 @@
       "support_url": "https://alice51849.github.io/scanto-support/",
       "privacy_url": "https://alice51849.github.io/scanto-support/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/scanto-support/",
         "fetched_url": "https://alice51849.github.io/scanto-support/",
         "http_status": 200,
@@ -1247,6 +1314,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/scanto-support/privacy.html",
         "fetched_url": "https://alice51849.github.io/scanto-support/privacy.html",
         "http_status": 200,
@@ -1268,6 +1336,7 @@
       "support_url": "https://alice51849.github.io/sereno-support/support.html?locale=en-US",
       "privacy_url": "https://alice51849.github.io/sereno-support/privacy.html?locale=en-US",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/sereno-support/support.html?locale=en-US",
         "fetched_url": "https://alice51849.github.io/sereno-support/support.html?locale=en-US",
         "http_status": 200,
@@ -1282,6 +1351,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/sereno-support/privacy.html?locale=en-US",
         "fetched_url": "https://alice51849.github.io/sereno-support/privacy.html?locale=en-US",
         "http_status": 200,
@@ -1303,6 +1373,7 @@
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/support.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/support.html",
         "http_status": 200,
@@ -1317,6 +1388,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/privacy.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/privacy.html",
         "http_status": 200,
@@ -1338,6 +1410,7 @@
       "support_url": "https://alice51849.github.io/snapport-support/",
       "privacy_url": "https://alice51849.github.io/snapport-support/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/snapport-support/",
         "fetched_url": "https://alice51849.github.io/snapport-support/",
         "http_status": 200,
@@ -1352,6 +1425,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/snapport-support/privacy.html",
         "fetched_url": "https://alice51849.github.io/snapport-support/privacy.html",
         "http_status": 200,
@@ -1373,6 +1447,7 @@
       "support_url": "https://alice51849.github.io/snapport-lite-support/",
       "privacy_url": "https://alice51849.github.io/snapport-lite-support/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/snapport-lite-support/",
         "fetched_url": "https://alice51849.github.io/snapport-lite-support/",
         "http_status": 200,
@@ -1387,6 +1462,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/snapport-lite-support/privacy.html",
         "fetched_url": "https://alice51849.github.io/snapport-lite-support/privacy.html",
         "http_status": 200,
@@ -1408,6 +1484,7 @@
       "support_url": "https://alice51849.github.io/sono-note-support/",
       "privacy_url": "https://alice51849.github.io/sono-note-support/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/sono-note-support/",
         "fetched_url": "https://alice51849.github.io/sono-note-support/",
         "http_status": 200,
@@ -1424,6 +1501,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/sono-note-support/privacy.html",
         "fetched_url": "https://alice51849.github.io/sono-note-support/privacy.html",
         "http_status": 200,
@@ -1447,6 +1525,7 @@
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/support.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/support.html",
         "http_status": 200,
@@ -1461,6 +1540,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/privacy.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/privacy.html",
         "http_status": 200,
@@ -1482,6 +1562,7 @@
       "support_url": "https://alice51849.github.io/tripbee-support/",
       "privacy_url": "https://alice51849.github.io/tripbee-support/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/tripbee-support/",
         "fetched_url": "https://alice51849.github.io/tripbee-support/",
         "http_status": 200,
@@ -1496,6 +1577,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/tripbee-support/privacy.html",
         "fetched_url": "https://alice51849.github.io/tripbee-support/privacy.html",
         "http_status": 200,
@@ -1517,6 +1599,7 @@
       "support_url": "https://alice51849.github.io/unblurry-support/support.html",
       "privacy_url": "https://alice51849.github.io/unblurry-support/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/unblurry-support/support.html",
         "fetched_url": "https://alice51849.github.io/unblurry-support/support.html",
         "http_status": 200,
@@ -1531,6 +1614,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/unblurry-support/privacy.html",
         "fetched_url": "https://alice51849.github.io/unblurry-support/privacy.html",
         "http_status": 200,
@@ -1552,6 +1636,7 @@
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/support.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/support.html",
         "http_status": 200,
@@ -1568,6 +1653,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/privacy.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/privacy.html",
         "http_status": 200,
@@ -1591,6 +1677,7 @@
       "support_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/support.html",
         "fetched_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/support.html",
         "http_status": 200,
@@ -1607,6 +1694,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/privacy.html",
         "fetched_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/privacy.html",
         "http_status": 200,
@@ -1630,6 +1718,7 @@
       "support_url": "https://alice51849.github.io/app/wordmate-lite/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/app/wordmate-lite/en-US/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/app/wordmate-lite/en-US/support.html",
         "fetched_url": "https://alice51849.github.io/app/wordmate-lite/en-US/support.html",
         "http_status": 200,
@@ -1644,6 +1733,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/app/wordmate-lite/en-US/privacy.html",
         "fetched_url": "https://alice51849.github.io/app/wordmate-lite/en-US/privacy.html",
         "http_status": 200,
@@ -1665,6 +1755,7 @@
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/privacy.html",
       "support_receipt": {
+        "role": "support",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/support.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/support.html",
         "http_status": 200,
@@ -1679,6 +1770,7 @@
         ]
       },
       "privacy_receipt": {
+        "role": "privacy",
         "requested_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/privacy.html",
         "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/privacy.html",
         "http_status": 200,

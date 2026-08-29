@@ -25,6 +25,7 @@ from official_locales import (
     require_official_locale_coverage,
 )
 import publisher_intent_catalog
+import institutional_ledger
 
 
 HERE = Path(__file__).resolve().parent
@@ -94,6 +95,23 @@ ID_RE = re.compile(r"\d{9,12}")
 BUNDLE_ID_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9.-]+")
 CAMPAIGN_TOKEN_RE = re.compile(r"[A-Za-z0-9_]{1,30}")
 SHA256_RE = re.compile(r"[0-9a-f]{64}")
+GIT_OID_RE = re.compile(r"[0-9a-f]{40,64}")
+PORTFOLIO_ROW_RE = re.compile(
+    r"^\|\s*(?P<number>\d{2})\s*\|\s*"
+    r"(?P<name>[^|]+?)\s*\|\s*`(?P<directory>[^`]+)`\s*\|\s*"
+    r"(?P<bundle>[A-Za-z0-9.-]+)\s*\|\s*"
+    r"(?P<app_id>\d{9,12}|—)\s*\|"
+)
+OWNER_BRAND_STOPWORDS = {
+    "app",
+    "pro",
+    "lite",
+    "ai",
+    "studio",
+    "planet",
+    "the",
+    "to",
+}
 APPLE_LOOKUP_SELLER_NAME = "Guan Feng Lai"
 REQUIRED_PROHIBITED_CLAIM_FRAGMENTS = {
     "apple certified",
@@ -212,6 +230,17 @@ def _read_json(path: Path) -> dict[str, Any]:
     return payload
 
 
+def _resolve_standards_root(value: Path | None) -> Path:
+    if value is not None:
+        return value
+    configured = os.environ.get("INSTITUTIONAL_STANDARDS_ROOT", "").strip()
+    if not configured:
+        raise BlockedNotDeployable(
+            "INSTITUTIONAL_STANDARDS_ROOT or --standards-root is required"
+        )
+    return Path(configured)
+
+
 def _load_manifest(pages: Path) -> dict[str, Any]:
     manifest = _read_json(MANIFEST_PATH)
     if manifest.get("schema_version") != 1:
@@ -220,6 +249,17 @@ def _load_manifest(pages: Path) -> dict[str, Any]:
         raise BlockedNotDeployable("Candidate must remain explicitly not deployed")
     if manifest.get("apple_lookup_seller_name") != APPLE_LOOKUP_SELLER_NAME:
         raise BlockedNotDeployable("Apple Lookup seller identity pin differs")
+    ledger = manifest.get("canonical_ledger")
+    if (
+        not isinstance(ledger, dict)
+        or ledger.get("source_label") != institutional_ledger.SOURCE_LABEL
+        or ledger.get("relative_path")
+        != institutional_ledger.RELATIVE_PATH.as_posix()
+        or GIT_OID_RE.fullmatch(str(ledger.get("pinned_commit", ""))) is None
+        or GIT_OID_RE.fullmatch(str(ledger.get("source_blob_oid", ""))) is None
+        or SHA256_RE.fullmatch(str(ledger.get("source_sha256", ""))) is None
+    ):
+        raise BlockedNotDeployable("Canonical external ledger pin is invalid")
     source_files = manifest.get("source_files")
     if not isinstance(source_files, dict) or not source_files:
         raise BlockedNotDeployable("Manifest has no pinned source files")
@@ -685,6 +725,16 @@ def _normalize_brand(value: Any) -> str:
     return " ".join(re.findall(r"[a-z0-9+]+", normalized))
 
 
+def _owner_brand_tokens(value: Any) -> list[str]:
+    brand = str(value).split(":", 1)[0]
+    normalized = unicodedata.normalize("NFKC", brand).casefold()
+    return [
+        token
+        for token in re.findall(r"[a-z0-9+]+", normalized)
+        if len(token) >= 3 and token not in OWNER_BRAND_STOPWORDS
+    ]
+
+
 def _brand_matches(track_name: str, candidates: Iterable[str]) -> bool:
     track = _normalize_brand(track_name)
     return any(
@@ -695,9 +745,19 @@ def _brand_matches(track_name: str, candidates: Iterable[str]) -> bool:
 
 
 def _portfolio_receipt_records(
+    manifest: dict[str, Any],
     receipt: dict[str, Any],
     expected_count: int,
+    standards_root: Path,
 ) -> dict[str, dict[str, Any]]:
+    ledger_pin = manifest["canonical_ledger"]
+    try:
+        anchor = institutional_ledger.validate_checkout(
+            standards_root,
+            pinned_commit=str(ledger_pin["pinned_commit"]),
+        )
+    except institutional_ledger.LedgerValidationError as error:
+        raise BlockedNotDeployable(str(error)) from error
     normalized = deepcopy(receipt)
     digest = str(normalized.pop("content_digest", ""))
     records = receipt.get("records")
@@ -711,8 +771,17 @@ def _portfolio_receipt_records(
     if (
         receipt.get("schema_version") != 1
         or receipt.get("source_kind") != "canonical_app_portfolio_receipt"
-        or receipt.get("source_path") != "00_Standards/app-portfolio.md"
-        or SHA256_RE.fullmatch(str(receipt.get("source_sha256", ""))) is None
+        or receipt.get("source_label") != institutional_ledger.SOURCE_LABEL
+        or receipt.get("source_relative_path")
+        != institutional_ledger.RELATIVE_PATH.as_posix()
+        or receipt.get("pinned_commit") != anchor["head_commit"]
+        or receipt.get("source_blob_oid") != anchor["blob_oid"]
+        or receipt.get("source_sha256") != anchor["source_sha256"]
+        or ledger_pin.get("source_label") != anchor["source_label"]
+        or ledger_pin.get("relative_path") != anchor["relative_path"]
+        or ledger_pin.get("pinned_commit") != anchor["head_commit"]
+        or ledger_pin.get("source_blob_oid") != anchor["blob_oid"]
+        or ledger_pin.get("source_sha256") != anchor["source_sha256"]
         or expires_on != captured_on + timedelta(days=7)
         or digest != f"sha256:{_canonical_digest(normalized)}"
         or receipt.get("record_count") != expected_count
@@ -728,6 +797,24 @@ def _portfolio_receipt_records(
         key = str(record.get("app_key", ""))
         bundle = str(record.get("bundle_id", ""))
         portfolio_id = record.get("portfolio_app_store_id")
+        try:
+            line_number = int(record.get("source_line_number", 0))
+        except (TypeError, ValueError) as error:
+            raise BlockedNotDeployable(
+                f"Invalid canonical portfolio line number: {key}"
+            ) from error
+        if line_number < 1 or line_number > len(anchor["lines"]):
+            raise BlockedNotDeployable(
+                f"Canonical portfolio line is out of range: {key}"
+            )
+        source_line = anchor["lines"][line_number - 1]
+        line_sha = _sha256_text(source_line)
+        match = PORTFOLIO_ROW_RE.match(source_line)
+        parsed_id = (
+            None
+            if match is not None and match.group("app_id") == "—"
+            else (match.group("app_id") if match is not None else None)
+        )
         if (
             not key
             or key in by_key
@@ -741,7 +828,12 @@ def _portfolio_receipt_records(
                 str(record.get("source_line_sha256", ""))
             )
             is None
-            or int(record.get("source_line_number", 0)) <= 0
+            or record.get("source_line_sha256") != line_sha
+            or match is None
+            or match.group("name").strip() != record.get("portfolio_name")
+            or match.group("directory").strip() != record.get("directory")
+            or match.group("bundle").strip() != bundle
+            or parsed_id != portfolio_id
             or not str(record.get("portfolio_name", "")).strip()
             or not str(record.get("canonical_name", "")).strip()
         ):
@@ -810,8 +902,41 @@ def _owner_registry_records(
         if not isinstance(record, dict):
             raise BlockedNotDeployable("Invalid owner support record")
         app_id = str(record.get("app_store_id", ""))
+        canonical_brand = str(record.get("canonical_brand", ""))
+        expected_brand_tokens = _owner_brand_tokens(canonical_brand)
         if ID_RE.fullmatch(app_id) is None or app_id in by_id:
             raise BlockedNotDeployable("Duplicate owner support identity")
+        support_url = str(record.get("support_url", ""))
+        privacy_url = str(record.get("privacy_url", ""))
+        support_parts = urlsplit(support_url)
+        privacy_parts = urlsplit(privacy_url)
+        support_endpoint = (
+            support_parts.scheme,
+            support_parts.netloc,
+            support_parts.path.rstrip("/"),
+            support_parts.query,
+            support_parts.fragment,
+        )
+        privacy_endpoint = (
+            privacy_parts.scheme,
+            privacy_parts.netloc,
+            privacy_parts.path.rstrip("/"),
+            privacy_parts.query,
+            privacy_parts.fragment,
+        )
+        support_role = (
+            f"{support_parts.path}?{support_parts.query}#{support_parts.fragment}"
+        ).casefold()
+        privacy_role = (
+            f"{privacy_parts.path}?{privacy_parts.query}#{privacy_parts.fragment}"
+        ).casefold()
+        if (
+            support_endpoint != privacy_endpoint
+            and ("privacy" in support_role or "privacy" not in privacy_role)
+        ):
+            raise BlockedNotDeployable(
+                f"Support/privacy URL roles differ: {app_id}"
+            )
         for kind in ("support", "privacy"):
             url = str(record.get(f"{kind}_url", ""))
             receipt = record.get(f"{kind}_receipt")
@@ -824,6 +949,7 @@ def _owner_registry_records(
             if (
                 parts.scheme != "https"
                 or parts.netloc not in allowed_hosts
+                or receipt.get("role") != kind
                 or receipt.get("requested_url") != url
                 or receipt.get("http_status") != 200
                 or receipt.get("owner_host") not in allowed_hosts
@@ -834,10 +960,12 @@ def _owner_registry_records(
                 )
                 is None
                 or int(receipt.get("content_length", 0)) <= 0
-                or not receipt.get("canonical_brand_tokens")
-                or not receipt.get("matched_brand_tokens")
-                or set(receipt["matched_brand_tokens"])
-                != set(receipt["canonical_brand_tokens"])
+                or not canonical_brand
+                or not expected_brand_tokens
+                or receipt.get("canonical_brand_tokens")
+                != expected_brand_tokens
+                or receipt.get("matched_brand_tokens")
+                != expected_brand_tokens
             ):
                 raise BlockedNotDeployable(
                     f"Invalid {kind} owner receipt: {app_id}"
@@ -854,6 +982,7 @@ def _validate_identity_evidence(
     apple_receipt: dict[str, Any],
     owner_registry: dict[str, Any],
     portfolio_receipt: dict[str, Any],
+    standards_root: Path,
 ) -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]]]:
     expected_count = int(manifest["expected_app_count"])
     apps = finder.get("apps")
@@ -910,8 +1039,10 @@ def _validate_identity_evidence(
         raise BlockedNotDeployable("Independent evidence roster differs")
 
     portfolio_by_key = _portfolio_receipt_records(
+        manifest,
         portfolio_receipt,
         expected_count,
+        standards_root,
     )
     if set(portfolio_by_key) != set(apps_by_key):
         raise BlockedNotDeployable(
@@ -1029,6 +1160,7 @@ def _validate_identity_evidence(
 def _load_sources(
     pages: Path,
     manifest: dict[str, Any],
+    standards_root: Path,
 ) -> tuple[
     list[dict[str, Any]],
     dict[str, dict[str, Any]],
@@ -1059,6 +1191,7 @@ def _load_sources(
         apple_receipt,
         owner_registry,
         portfolio_receipt,
+        standards_root,
     )
     apps_by_key = {str(app["key"]): app for app in apps}
 
@@ -1234,6 +1367,7 @@ def _source_digest(manifest: dict[str, Any]) -> str:
         },
         "official_source_policy": manifest["official_source_policy"],
         "official_references": manifest["official_references"],
+        "canonical_ledger": manifest["canonical_ledger"],
         "apple_lookup_seller_name": manifest["apple_lookup_seller_name"],
         "canonical_brand_aliases": manifest["canonical_brand_aliases"],
         "canary": manifest["canary"],
@@ -1492,6 +1626,15 @@ def _data_payload(
             "owner_support_registry_expires_at": owner_registry["expires_at"],
             "portfolio_receipt_sha256": portfolio_receipt["sha256"],
             "portfolio_receipt_expires_on": portfolio_receipt["expires_on"],
+            "canonical_ledger_relative_path": manifest["canonical_ledger"][
+                "relative_path"
+            ],
+            "canonical_ledger_pinned_commit": manifest["canonical_ledger"][
+                "pinned_commit"
+            ],
+            "canonical_ledger_blob_oid": manifest["canonical_ledger"][
+                "source_blob_oid"
+            ],
             "official_source_max_age_days": manifest[
                 "official_source_policy"
             ]["max_age_days"],
@@ -2508,6 +2651,7 @@ def _write_if_changed(path: Path, content: str) -> bool:
 
 def _build_outputs(
     pages: Path,
+    standards_root: Path,
 ) -> tuple[
     dict[Path, str],
     dict[Path, str],
@@ -2515,7 +2659,11 @@ def _build_outputs(
 ]:
     manifest = _load_manifest(pages)
     i18n = _load_i18n()
-    apps, lookup, intents, source_context = _load_sources(pages, manifest)
+    apps, lookup, intents, source_context = _load_sources(
+        pages,
+        manifest,
+        standards_root,
+    )
     related_fit = _validate_related_fit(manifest, apps, intents)
     canary_keys = _validate_canary(manifest, apps, related_fit)
     publisher_ui = _publisher_ui()
@@ -2628,9 +2776,17 @@ def _build_outputs(
     return outputs, shared, summary
 
 
-def build(pages: Path = PAGES, check: bool = False) -> dict[str, Any]:
+def build(
+    pages: Path = PAGES,
+    check: bool = False,
+    standards_root: Path | None = None,
+) -> dict[str, Any]:
+    resolved_standards_root = _resolve_standards_root(standards_root)
     _verify_existing_state(pages)
-    outputs, shared, summary = _build_outputs(pages)
+    outputs, shared, summary = _build_outputs(
+        pages,
+        resolved_standards_root,
+    )
     state_content = outputs[STATE_PATH]
     if check:
         mismatches = []
@@ -2663,10 +2819,15 @@ def build(pages: Path = PAGES, check: bool = False) -> dict[str, Any]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--pages", type=Path, default=PAGES)
+    parser.add_argument("--standards-root", type=Path)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     try:
-        summary = build(args.pages.resolve(), check=args.check)
+        summary = build(
+            args.pages.resolve(),
+            check=args.check,
+            standards_root=args.standards_root,
+        )
     except (BlockedNotDeployable, ValueError, KeyError, TypeError) as error:
         print(f"BLOCKED_NOT_DEPLOYABLE {error}", file=sys.stderr)
         return 2

@@ -260,6 +260,7 @@ def _owner_page_receipt(
             f"First-party {label} page lacks canonical brand identity: {app_id}"
         )
     return {
+        "role": label,
         "requested_url": url,
         "fetched_url": final_url,
         "http_status": status,

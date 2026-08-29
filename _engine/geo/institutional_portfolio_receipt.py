@@ -12,6 +12,8 @@ import re
 import unicodedata
 from typing import Any
 
+import institutional_ledger
+
 
 HERE = Path(__file__).resolve().parent
 PAGES = HERE.parents[1]
@@ -69,12 +71,15 @@ def _portfolio_rows(source: str) -> list[dict[str, str]]:
 
 def build(
     pages: Path,
-    source_path: Path,
-    source_label: str,
+    standards_root: Path,
     captured_on: str,
 ) -> dict[str, Any]:
     captured = date.fromisoformat(captured_on)
-    source_bytes = source_path.read_bytes()
+    anchor = institutional_ledger.validate_checkout(
+        standards_root,
+        pinned_commit=None,
+    )
+    source_bytes = anchor["source_bytes"]
     rows = _portfolio_rows(source_bytes.decode("utf-8"))
     catalog = json.loads((pages / CATALOG).read_text(encoding="utf-8"))
     apps = catalog.get("apps")
@@ -119,7 +124,10 @@ def build(
     payload = {
         "schema_version": 1,
         "source_kind": "canonical_app_portfolio_receipt",
-        "source_path": source_label,
+        "source_label": anchor["source_label"],
+        "source_relative_path": anchor["relative_path"],
+        "pinned_commit": anchor["head_commit"],
+        "source_blob_oid": anchor["blob_oid"],
         "source_sha256": _sha256(source_bytes),
         "captured_on": captured_on,
         "expires_on": (captured + timedelta(days=7)).isoformat(),
@@ -142,17 +150,12 @@ def build(
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--pages", type=Path, default=PAGES)
-    parser.add_argument("--source", type=Path, required=True)
-    parser.add_argument(
-        "--source-label",
-        default="00_Standards/app-portfolio.md",
-    )
+    parser.add_argument("--standards-root", type=Path, required=True)
     parser.add_argument("--captured-on", required=True)
     args = parser.parse_args()
     payload = build(
         args.pages.resolve(),
-        args.source.resolve(),
-        args.source_label,
+        args.standards_root,
         args.captured_on,
     )
     print(

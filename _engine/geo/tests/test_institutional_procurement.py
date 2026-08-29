@@ -11,6 +11,7 @@ import json
 import os
 from pathlib import Path
 import re
+import shutil
 import subprocess
 import sys
 from typing import Any
@@ -70,6 +71,15 @@ class InstitutionalProcurementTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.pages = Path(os.environ.get("GEO_PAGES", GEO.parents[1]))
+        standards_root = os.environ.get(
+            "INSTITUTIONAL_STANDARDS_ROOT",
+            "",
+        ).strip()
+        if not standards_root:
+            raise RuntimeError(
+                "Tests require an out-of-tree INSTITUTIONAL_STANDARDS_ROOT"
+            )
+        cls.standards_root = Path(standards_root)
         cls.manifest = json.loads(
             procurement.MANIFEST_PATH.read_text(encoding="utf-8")
         )
@@ -107,8 +117,61 @@ class InstitutionalProcurementTests(unittest.TestCase):
             source_paths["intent_overrides"].read_text(encoding="utf-8")
         )
 
+    def _git(self, root: Path, *args: str) -> str:
+        return subprocess.run(
+            ["git", "-C", str(root), *args],
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.strip()
+
+    def _ledger_scratch(self, name: str, tracked: bool = True) -> Path:
+        root = (
+            self.pages
+            / "_engine"
+            / "geo"
+            / "tests"
+            / f".ledger-{name}"
+        )
+        shutil.rmtree(root, ignore_errors=True)
+        root.mkdir(parents=True)
+        self.addCleanup(shutil.rmtree, root, True)
+        subprocess.run(
+            ["git", "-C", str(root), "init", "--quiet"],
+            check=True,
+        )
+        self._git(root, "config", "user.name", "Ledger Test")
+        self._git(root, "config", "user.email", "ledger@example.invalid")
+        if tracked:
+            shutil.copyfile(
+                self.standards_root / "app-portfolio.md",
+                root / "app-portfolio.md",
+            )
+            self._git(root, "add", "app-portfolio.md")
+        else:
+            (root / "README.md").write_text("ledger test\n", encoding="utf-8")
+            self._git(root, "add", "README.md")
+        self._git(root, "commit", "--quiet", "-m", "Create ledger fixture")
+        if not tracked:
+            shutil.copyfile(
+                self.standards_root / "app-portfolio.md",
+                root / "app-portfolio.md",
+            )
+        return root
+
+    def _redigest(self, payload: dict[str, Any]) -> None:
+        normalized = deepcopy(payload)
+        normalized.pop("content_digest", None)
+        payload["content_digest"] = (
+            f"sha256:{procurement._canonical_digest(normalized)}"
+        )
+
     def test_generated_tree_is_current(self) -> None:
-        summary = procurement.build(self.pages, check=True)
+        summary = procurement.build(
+            self.pages,
+            check=True,
+            standards_root=self.standards_root,
+        )
         self.assertEqual(46, summary["apps"])
         self.assertEqual(50, summary["locales"])
         self.assertEqual(204, summary["html_pages"])
@@ -145,6 +208,7 @@ class InstitutionalProcurementTests(unittest.TestCase):
             self.apple_receipt,
             self.owner_registry,
             self.portfolio_receipt,
+            self.standards_root,
         )
         self.assertEqual(46, len(apps))
         self.assertEqual(46, len(lookup))
@@ -156,6 +220,215 @@ class InstitutionalProcurementTests(unittest.TestCase):
             self.lookup["checked_at"],
             self.owner_registry["checked_at"],
         )
+
+    def test_external_ledger_parameter_is_required(self) -> None:
+        with mock.patch.dict(os.environ, {}, clear=False):
+            os.environ.pop("INSTITUTIONAL_STANDARDS_ROOT", None)
+            with self.assertRaisesRegex(
+                procurement.BlockedNotDeployable,
+                "STANDARDS_ROOT",
+            ):
+                procurement._resolve_standards_root(None)
+        self.assertEqual(
+            self.standards_root,
+            procurement._resolve_standards_root(self.standards_root),
+        )
+
+    def test_external_ledger_checkout_mutations_fail_closed(self) -> None:
+        clean = self._ledger_scratch("clean")
+        head = self._git(clean, "rev-parse", "HEAD")
+        institutional_ledger = procurement.institutional_ledger
+        institutional_ledger.validate_checkout(clean, head)
+        with self.assertRaises(institutional_ledger.LedgerValidationError):
+            institutional_ledger.validate_checkout(clean, "0" * 40)
+
+        dirty = self._ledger_scratch("dirty")
+        dirty_head = self._git(dirty, "rev-parse", "HEAD")
+        with (dirty / "app-portfolio.md").open("a", encoding="utf-8") as handle:
+            handle.write("\n")
+        with self.assertRaises(institutional_ledger.LedgerValidationError):
+            institutional_ledger.validate_checkout(dirty, dirty_head)
+
+        untracked = self._ledger_scratch("untracked", tracked=False)
+        untracked_head = self._git(untracked, "rev-parse", "HEAD")
+        with self.assertRaises(institutional_ledger.LedgerValidationError):
+            institutional_ledger.validate_checkout(untracked, untracked_head)
+
+        missing = self._ledger_scratch("missing")
+        missing_head = self._git(missing, "rev-parse", "HEAD")
+        (missing / "app-portfolio.md").unlink()
+        with self.assertRaises(institutional_ledger.LedgerValidationError):
+            institutional_ledger.validate_checkout(missing, missing_head)
+
+        symlinked = self._ledger_scratch("symlink-file")
+        symlink_head = self._git(symlinked, "rev-parse", "HEAD")
+        ledger_file = symlinked / "app-portfolio.md"
+        real_file = symlinked / "portfolio-real.md"
+        ledger_file.rename(real_file)
+        ledger_file.symlink_to(real_file.name)
+        with self.assertRaises(institutional_ledger.LedgerValidationError):
+            institutional_ledger.validate_checkout(symlinked, symlink_head)
+
+        root_link = (
+            self.pages
+            / "_engine"
+            / "geo"
+            / "tests"
+            / ".ledger-root-link"
+        )
+        root_link.unlink(missing_ok=True)
+        root_link.symlink_to(clean, target_is_directory=True)
+        self.addCleanup(root_link.unlink, missing_ok=True)
+        with self.assertRaises(institutional_ledger.LedgerValidationError):
+            institutional_ledger.validate_checkout(root_link, head)
+
+    def test_portfolio_receipt_anchor_mutations_fail_closed(self) -> None:
+        def assert_blocked(
+            mutate: Any,
+        ) -> None:
+            manifest = deepcopy(self.manifest)
+            receipt = deepcopy(self.portfolio_receipt)
+            mutate(manifest, receipt)
+            self._redigest(receipt)
+            with self.assertRaises(procurement.BlockedNotDeployable):
+                procurement._portfolio_receipt_records(
+                    manifest,
+                    receipt,
+                    46,
+                    self.standards_root,
+                )
+
+        def swap_lines(_manifest: Any, receipt: dict[str, Any]) -> None:
+            first, second = receipt["records"][:2]
+            first["source_line_number"], second["source_line_number"] = (
+                second["source_line_number"],
+                first["source_line_number"],
+            )
+            first["source_line_sha256"], second["source_line_sha256"] = (
+                second["source_line_sha256"],
+                first["source_line_sha256"],
+            )
+
+        mutations = {
+            "source-sha-all-zero": lambda _manifest, receipt: receipt.__setitem__(
+                "source_sha256",
+                "0" * 64,
+            ),
+            "fake-source-label": lambda _manifest, receipt: receipt.__setitem__(
+                "source_label",
+                "fake/app-portfolio.md",
+            ),
+            "path-escape": lambda manifest, _receipt: manifest[
+                "canonical_ledger"
+            ].__setitem__("relative_path", "../app-portfolio.md"),
+            "wrong-commit": lambda manifest, receipt: (
+                manifest["canonical_ledger"].__setitem__(
+                    "pinned_commit",
+                    "0" * 40,
+                ),
+                receipt.__setitem__("pinned_commit", "0" * 40),
+            ),
+            "wrong-line-number": lambda _manifest, receipt: receipt[
+                "records"
+            ][0].__setitem__(
+                "source_line_number",
+                receipt["records"][1]["source_line_number"],
+            ),
+            "line-swap": swap_lines,
+        }
+        for name, mutate in mutations.items():
+            with self.subTest(name=name):
+                assert_blocked(mutate)
+
+    def test_coordinated_bundle_mutation_fails_external_ledger(self) -> None:
+        manifest = deepcopy(self.manifest)
+        lookup = deepcopy(self.lookup)
+        apple = deepcopy(self.apple_receipt)
+        portfolio = deepcopy(self.portfolio_receipt)
+        foreign_bundle = "com.microsoft.Office"
+        target = lookup["records"][0]
+        app_id = target["app_store_id"]
+        target["bundle_id"] = foreign_bundle
+        for record in apple["response"]["results"]:
+            if str(record["trackId"]) == app_id:
+                record["bundleId"] = foreign_bundle
+                break
+        apple["response_canonical_sha256"] = procurement._canonical_digest(
+            apple["response"]
+        )
+        portfolio_record = next(
+            record
+            for record in portfolio["records"]
+            if record["verified_app_store_id"] == app_id
+        )
+        portfolio_record["bundle_id"] = foreign_bundle
+        portfolio_record["source_line_sha256"] = "f" * 64
+        portfolio["source_sha256"] = "f" * 64
+        self._redigest(portfolio)
+        manifest["canonical_ledger"]["source_sha256"] = "f" * 64
+        for source in manifest["source_files"].values():
+            source["sha256"] = "f" * 64
+        with self.assertRaises(procurement.BlockedNotDeployable):
+            procurement._validate_identity_evidence(
+                manifest,
+                self.finder,
+                lookup,
+                self.storefront,
+                apple,
+                self.owner_registry,
+                portfolio,
+                self.standards_root,
+            )
+
+    def test_owner_token_and_coordinated_url_swaps_fail_closed(self) -> None:
+        owner = deepcopy(self.owner_registry)
+        owner["records"][0]["support_receipt"][
+            "canonical_brand_tokens"
+        ] = ["notes"]
+        owner["records"][0]["support_receipt"][
+            "matched_brand_tokens"
+        ] = ["notes"]
+        with self.assertRaises(procurement.BlockedNotDeployable):
+            procurement._validate_identity_evidence(
+                self.manifest,
+                self.finder,
+                self.lookup,
+                self.storefront,
+                self.apple_receipt,
+                owner,
+                self.portfolio_receipt,
+                self.standards_root,
+            )
+
+        lookup = deepcopy(self.lookup)
+        owner = deepcopy(self.owner_registry)
+        lookup_record = lookup["records"][0]
+        lookup_record["support_url"], lookup_record["privacy_url"] = (
+            lookup_record["privacy_url"],
+            lookup_record["support_url"],
+        )
+        owner_record = owner["records"][0]
+        owner_record["support_url"], owner_record["privacy_url"] = (
+            owner_record["privacy_url"],
+            owner_record["support_url"],
+        )
+        owner_record["support_receipt"], owner_record["privacy_receipt"] = (
+            owner_record["privacy_receipt"],
+            owner_record["support_receipt"],
+        )
+        owner_record["support_receipt"]["role"] = "support"
+        owner_record["privacy_receipt"]["role"] = "privacy"
+        with self.assertRaises(procurement.BlockedNotDeployable):
+            procurement._validate_identity_evidence(
+                self.manifest,
+                self.finder,
+                lookup,
+                self.storefront,
+                self.apple_receipt,
+                owner,
+                self.portfolio_receipt,
+                self.standards_root,
+            )
 
     def test_official_source_expiry_fails_closed(self) -> None:
         with mock.patch.object(
@@ -260,6 +533,7 @@ class InstitutionalProcurementTests(unittest.TestCase):
                 self.apple_receipt,
                 self.owner_registry,
                 self.portfolio_receipt,
+                self.standards_root,
             )
 
     def test_identity_and_owner_mutations_fail_closed(self) -> None:
@@ -332,6 +606,9 @@ class InstitutionalProcurementTests(unittest.TestCase):
                 "schema_version": 1,
                 "release_status": "CANDIDATE_NOT_DEPLOYED",
                 "apple_lookup_seller_name": procurement.APPLE_LOOKUP_SELLER_NAME,
+                "canonical_ledger": deepcopy(
+                    self.manifest["canonical_ledger"]
+                ),
                 "source_files": {
                     key: {
                         "path": "source.json",
@@ -893,8 +1170,14 @@ class InstitutionalProcurementTests(unittest.TestCase):
         )
 
     def test_full_generator_is_idempotent_on_two_runs(self) -> None:
-        first = procurement.build(self.pages)
-        second = procurement.build(self.pages)
+        first = procurement.build(
+            self.pages,
+            standards_root=self.standards_root,
+        )
+        second = procurement.build(
+            self.pages,
+            standards_root=self.standards_root,
+        )
         self.assertEqual(0, first["changed_files"])
         self.assertEqual(0, second["changed_files"])
         self.assertEqual(first["roster_digest"], second["roster_digest"])
@@ -918,6 +1201,8 @@ class InstitutionalProcurementTests(unittest.TestCase):
                 for app_key in self.manifest["canary"]["app_keys"]
             )
         combined = "\n".join(path.read_text(encoding="utf-8") for path in files)
+        self.assertNotIn(str(self.standards_root), combined)
+        self.assertNotIn("/Users/alice51849/00_Standards", combined)
         self.assertNotIn(procurement.OLD_EMAIL.casefold(), combined.casefold())
         self.assertIn(procurement.ALLOWED_EMAIL, combined)
         for email in procurement.EMAIL_RE.findall(combined):

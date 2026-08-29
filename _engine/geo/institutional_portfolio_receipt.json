@@ -1,8 +1,11 @@
 {
   "schema_version": 1,
   "source_kind": "canonical_app_portfolio_receipt",
-  "source_path": "00_Standards/app-portfolio.md",
-  "source_sha256": "a2c5caee50e1a03025bb7726a4aeb32cb7736c95a88bde6b389d9e446371fb99",
+  "source_label": "00_Standards/app-portfolio.md",
+  "source_relative_path": "app-portfolio.md",
+  "pinned_commit": "faa6e36b0c5e5c9b5f71b957a124ddefefad6963",
+  "source_blob_oid": "e1429e4dc51ea4e5ea628a36fa8e2554252d21d8",
+  "source_sha256": "86d8d5ceb2e09afebb24762eb80d6185216ec0268a0618e5fa2757f8ae8d8327",
   "captured_on": "2026-08-30",
   "expires_on": "2026-09-06",
   "record_count": 46,
@@ -514,5 +517,5 @@
       "source_line_sha256": "b13d5a4145864199605ed912afff38d131e25974838701b761d5557fd315119a"
     }
   ],
-  "content_digest": "sha256:25da8c5782669cacfd68bf22187f0ab62e09ae494faf4ea306491aade6c61f13"
+  "content_digest": "sha256:f74248b59c9a224805e1cc2338849a988f2b27834b48ebd5d2eacb945de9f96e"
 }

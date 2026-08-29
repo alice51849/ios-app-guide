@@ -35,7 +35,7 @@
     },
     "public_lookup": {
       "path": "_engine/geo/institutional_public_lookup.json",
-      "sha256": "110b849f6b650a6a4b78d8dc4603a80058809a2685e0abb357c93b0ae766af3f"
+      "sha256": "ba26d078ad8f337cd9b408992baf2cd63eeb5832ea138aed7416bd4a37abc6dd"
     },
     "procurement_i18n": {
       "path": "_engine/geo/institutional_procurement_i18n.json",
@@ -47,7 +47,7 @@
     },
     "apple_lookup_receipt": {
       "path": "_engine/geo/institutional_apple_lookup_receipt.json",
-      "sha256": "86a64f0d07a335ed3eb3cce73a32603218d7ac1956fa2adb99ca4b229b23fc9c",
+      "sha256": "c7f88da8f95077cc8b45ce83cddeec52418c262aa9abf71ac847027e056e8b01",
       "checked_on": "2026-08-29",
       "expires_on": "2026-09-01",
       "authority": "Apple iTunes Lookup API raw public GET receipt",
@@ -55,7 +55,7 @@
     },
     "owner_support_registry": {
       "path": "_engine/geo/institutional_owner_support_registry.json",
-      "sha256": "f25dd6d7b4356a44f0ef121d0af6d4c2cb3bf789c4eb09530146759ad94b8d03",
+      "sha256": "b04b08ed39f6610b4c6c684d455b06949c19b33bea18e9f2021d796695117dac",
       "checked_on": "2026-08-29",
       "expires_on": "2026-09-01",
       "authority": "First-party owner support/privacy HTTP receipts",
@@ -63,11 +63,11 @@
     },
     "portfolio_receipt": {
       "path": "_engine/geo/institutional_portfolio_receipt.json",
-      "sha256": "2abf89e10ced56cb57bd59c172dd8f891266c7a8ad6020abcf2297b7aaaa5654",
+      "sha256": "37a5be43e2b3150d2a375769aad31e461a6940a1bac1d7ffc345804cf698b8bb",
       "checked_on": "2026-08-30",
       "expires_on": "2026-09-06",
       "max_age_days": 7,
-      "authority": "Generated receipt from canonical 00_Standards/app-portfolio.md"
+      "authority": "Receipt anchored to an out-of-tree clean 00_Standards Git checkout"
     }
   },
   "official_references": [
@@ -230,5 +230,12 @@
       "Trip Planet"
     ]
   },
-  "apple_lookup_seller_name": "Guan Feng Lai"
+  "apple_lookup_seller_name": "Guan Feng Lai",
+  "canonical_ledger": {
+    "source_label": "00_Standards/app-portfolio.md",
+    "relative_path": "app-portfolio.md",
+    "pinned_commit": "faa6e36b0c5e5c9b5f71b957a124ddefefad6963",
+    "source_blob_oid": "e1429e4dc51ea4e5ea628a36fa8e2554252d21d8",
+    "source_sha256": "86d8d5ceb2e09afebb24762eb80d6185216ec0268a0618e5fa2757f8ae8d8327"
+  }
 }

@@ -7,7 +7,7 @@
   "route_kind": "localized",
   "url": "https://alice51849.github.io/ios-app-guide/zh-Hant/institutional/apple-managed-apps.json",
   "generated_on": "2026-08-30",
-  "source_digest": "sha256:eec819d1478d49b6b0e0d97c6e1d253a248e3cf76cfe936124e2f4b2c9224e2e",
+  "source_digest": "sha256:b0ceac3f0ed9971ce1fcced685845f53704fd3f3bc66eff6aa1fc3f6a378d1e6",
   "roster_digest": "sha256:fea82924a4facecbf07394ed7e86d966970b2ba8db1fa21110d5debbde6a8f18",
   "publisher": {
     "name": "Lumi Studio",
@@ -55,14 +55,17 @@
     }
   ],
   "source_state": {
-    "public_lookup_checked_at": "2026-08-29T19:55:38Z",
+    "public_lookup_checked_at": "2026-08-29T20:23:29Z",
     "storefront_snapshot_checked_at": "2026-08-29T06:31:01Z",
-    "apple_lookup_receipt_fetched_at": "2026-08-29T19:55:38Z",
-    "apple_lookup_receipt_expires_at": "2026-09-01T19:55:38Z",
-    "owner_support_registry_checked_at": "2026-08-29T19:55:38Z",
-    "owner_support_registry_expires_at": "2026-09-01T19:55:38Z",
-    "portfolio_receipt_sha256": "2abf89e10ced56cb57bd59c172dd8f891266c7a8ad6020abcf2297b7aaaa5654",
+    "apple_lookup_receipt_fetched_at": "2026-08-29T20:23:29Z",
+    "apple_lookup_receipt_expires_at": "2026-09-01T20:23:29Z",
+    "owner_support_registry_checked_at": "2026-08-29T20:23:29Z",
+    "owner_support_registry_expires_at": "2026-09-01T20:23:29Z",
+    "portfolio_receipt_sha256": "37a5be43e2b3150d2a375769aad31e461a6940a1bac1d7ffc345804cf698b8bb",
     "portfolio_receipt_expires_on": "2026-09-06",
+    "canonical_ledger_relative_path": "app-portfolio.md",
+    "canonical_ledger_pinned_commit": "faa6e36b0c5e5c9b5f71b957a124ddefefad6963",
+    "canonical_ledger_blob_oid": "e1429e4dc51ea4e5ea628a36fa8e2554252d21d8",
     "official_source_max_age_days": 14,
     "lookup_method": "public_get_plus_pinned_cross_source_receipts",
     "institutional_portal_login": false,
@@ -149,7 +152,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/100notes-support/support.html",
       "privacy_url": "https://alice51849.github.io/100notes-support/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6798813048&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6798813048",
@@ -205,7 +208,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/support.html?lang=en-US",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/privacy.html?lang=en-US",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6791658210&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6791658210",
@@ -263,7 +266,7 @@
       "limitation": "一次付費下載 App 可在「App 與書籍」中作為候選項目搜尋。公開 lookup 不代表它會出現在貴組織目錄；取得授權前，請由內容管理員核對精確的數字 App ID。",
       "support_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6792483140&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6792483140",
@@ -321,7 +324,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/aim990-support/",
       "privacy_url": "https://alice51849.github.io/aim990-support/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6784974530&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6784974530",
@@ -377,7 +380,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/battai-support/locales/en/",
       "privacy_url": "https://alice51849.github.io/battai-support/locales/en/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6802423998&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6802423998",
@@ -433,7 +436,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/caldaily-support/support.html",
       "privacy_url": "https://alice51849.github.io/caldaily-support/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6794178671&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6794178671",
@@ -489,7 +492,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/cvdesk-support/support.html",
       "privacy_url": "https://alice51849.github.io/cvdesk-support/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6781337213&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6781337213",
@@ -545,7 +548,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/cyca-support/",
       "privacy_url": "https://alice51849.github.io/cyca-support/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6782251621&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6782251621",
@@ -601,7 +604,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6794725568&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6794725568",
@@ -657,7 +660,7 @@
       "limitation": "一次付費下載 App 可在「App 與書籍」中作為候選項目搜尋。公開 lookup 不代表它會出現在貴組織目錄；取得授權前，請由內容管理員核對精確的數字 App ID。",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6790418321&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6790418321",
@@ -713,7 +716,7 @@
       "limitation": "一次付費下載 App 可在「App 與書籍」中作為候選項目搜尋。公開 lookup 不代表它會出現在貴組織目錄；取得授權前，請由內容管理員核對精確的數字 App ID。",
       "support_url": "https://alice51849.github.io/gmoney-support/",
       "privacy_url": "https://alice51849.github.io/gmoney-support/#privacy",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6755782939&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6755782939",
@@ -769,7 +772,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6793436548&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6793436548",
@@ -825,7 +828,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6794039979&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6794039979",
@@ -881,7 +884,7 @@
       "limitation": "一次付費下載 App 可在「App 與書籍」中作為候選項目搜尋。公開 lookup 不代表它會出現在貴組織目錄；取得授權前，請由內容管理員核對精確的數字 App ID。",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6754218117&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6754218117",
@@ -939,7 +942,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/lockhour-support/support.html",
       "privacy_url": "https://alice51849.github.io/lockhour-support/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6780107485&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6780107485",
@@ -997,7 +1000,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/lumi-support/",
       "privacy_url": "https://alice51849.github.io/lumi-support/",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6773017109&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6773017109",
@@ -1055,7 +1058,7 @@
       "limitation": "一次付費下載 App 可在「App 與書籍」中作為候選項目搜尋。公開 lookup 不代表它會出現在貴組織目錄；取得授權前，請由內容管理員核對精確的數字 App ID。",
       "support_url": "https://alice51849.github.io/lumi-support/",
       "privacy_url": "https://alice51849.github.io/lumi-support/",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6775773117&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6775773117",
@@ -1113,7 +1116,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/lumi-letters-support",
       "privacy_url": "https://alice51849.github.io/lumi-letters-support",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6778748533&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6778748533",
@@ -1171,7 +1174,7 @@
       "limitation": "一次付費下載 App 可在「App 與書籍」中作為候選項目搜尋。公開 lookup 不代表它會出現在貴組織目錄；取得授權前，請由內容管理員核對精確的數字 App ID。",
       "support_url": "https://alice51849.github.io/lumi-letters-support/",
       "privacy_url": "https://alice51849.github.io/lumi-letters-support",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6778491147&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6778491147",
@@ -1229,7 +1232,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/lumi-math-support/",
       "privacy_url": "https://alice51849.github.io/lumi-math-support/",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6778269699&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6778269699",
@@ -1287,7 +1290,7 @@
       "limitation": "一次付費下載 App 可在「App 與書籍」中作為候選項目搜尋。公開 lookup 不代表它會出現在貴組織目錄；取得授權前，請由內容管理員核對精確的數字 App ID。",
       "support_url": "https://alice51849.github.io/lumi-math-support/",
       "privacy_url": "https://alice51849.github.io/lumi-math-support/",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6776958488&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6776958488",
@@ -1343,7 +1346,7 @@
       "limitation": "一次付費下載 App 可在「App 與書籍」中作為候選項目搜尋。公開 lookup 不代表它會出現在貴組織目錄；取得授權前，請由內容管理員核對精確的數字 App ID。",
       "support_url": "https://alice51849.github.io/lumi-mission-support/",
       "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6779745474&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6779745474",
@@ -1399,7 +1402,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/lumi-mission-support/",
       "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6779750237&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6779750237",
@@ -1455,7 +1458,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/lumi-weather-support",
       "privacy_url": "https://alice51849.github.io/lumi-weather-support",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6779552704&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6779552704",
@@ -1513,7 +1516,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/ur-PK/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6792850916&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6792850916",
@@ -1569,7 +1572,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://open.cait518.cc/mochi-donestamp/en-US/support/",
       "privacy_url": "https://open.cait518.cc/mochi-donestamp/en-US/privacy/",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6790800323&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6790800323",
@@ -1625,7 +1628,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/mochitodo-support/",
       "privacy_url": "https://alice51849.github.io/mochitodo-support/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6785004775&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6785004775",
@@ -1683,7 +1686,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/moneytag-support/?lang=en-US",
       "privacy_url": "https://alice51849.github.io/moneytag-support/privacy.html?lang=en-US",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6801956402&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6801956402",
@@ -1741,7 +1744,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/app/onepage-ppt/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/app/onepage-ppt/en-US/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6798814385&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6798814385",
@@ -1797,7 +1800,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/photocream-support/support.html",
       "privacy_url": "https://alice51849.github.io/photocream-support/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6781808054&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6781808054",
@@ -1853,7 +1856,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/picclear-support/support.html",
       "privacy_url": "https://alice51849.github.io/picclear-support/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6780223070&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6780223070",
@@ -1909,7 +1912,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/savetag-support/",
       "privacy_url": "https://alice51849.github.io/savetag-support/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6802505528&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6802505528",
@@ -1967,7 +1970,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/scanto-support/",
       "privacy_url": "https://alice51849.github.io/scanto-support/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6779977651&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6779977651",
@@ -2023,7 +2026,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/sereno-support/support.html?locale=en-US",
       "privacy_url": "https://alice51849.github.io/sereno-support/privacy.html?locale=en-US",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6788236641&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6788236641",
@@ -2079,7 +2082,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6802166527&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6802166527",
@@ -2135,7 +2138,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/snapport-lite-support/",
       "privacy_url": "https://alice51849.github.io/snapport-lite-support/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6792856304&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6792856304",
@@ -2191,7 +2194,7 @@
       "limitation": "一次付費下載 App 可在「App 與書籍」中作為候選項目搜尋。公開 lookup 不代表它會出現在貴組織目錄；取得授權前，請由內容管理員核對精確的數字 App ID。",
       "support_url": "https://alice51849.github.io/snapport-support/",
       "privacy_url": "https://alice51849.github.io/snapport-support/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6780575828&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6780575828",
@@ -2249,7 +2252,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/sono-note-support/",
       "privacy_url": "https://alice51849.github.io/sono-note-support/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6782139553&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6782139553",
@@ -2305,7 +2308,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6787193643&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6787193643",
@@ -2361,7 +2364,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6791299610&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6791299610",
@@ -2417,7 +2420,7 @@
       "limitation": "一次付費下載 App 可在「App 與書籍」中作為候選項目搜尋。公開 lookup 不代表它會出現在貴組織目錄；取得授權前，請由內容管理員核對精確的數字 App ID。",
       "support_url": "https://alice51849.github.io/tripbee-support/",
       "privacy_url": "https://alice51849.github.io/tripbee-support/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6787754435&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6787754435",
@@ -2473,7 +2476,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/unblurry-support/support.html",
       "privacy_url": "https://alice51849.github.io/unblurry-support/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6782275018&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6782275018",
@@ -2531,7 +2534,7 @@
       "limitation": "一次付費下載 App 可在「App 與書籍」中作為候選項目搜尋。公開 lookup 不代表它會出現在貴組織目錄；取得授權前，請由內容管理員核對精確的數字 App ID。",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6790467886&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6790467886",
@@ -2589,7 +2592,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6793414462&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6793414462",
@@ -2645,7 +2648,7 @@
       "limitation": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
       "support_url": "https://alice51849.github.io/app/wordmate-lite/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/app/wordmate-lite/en-US/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6797601720&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6797601720",
@@ -2701,7 +2704,7 @@
       "limitation": "一次付費下載 App 可在「App 與書籍」中作為候選項目搜尋。公開 lookup 不代表它會出現在貴組織目錄；取得授權前，請由內容管理員核對精確的數字 App ID。",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/privacy.html",
-      "last_checked": "2026-08-29T19:55:38Z",
+      "last_checked": "2026-08-29T20:23:29Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6789917808&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6789917808",
@@ -2729,5 +2732,5 @@
     "generated_rc_is_not_exposure": true,
     "ordinary_downloads_are_institutional": false
   },
-  "content_digest": "sha256:cec2508d554e049fa00866b18269c1f12901aa36c5fa625c6f023eee830d1d16"
+  "content_digest": "sha256:39d979aca763c6ecced17efb272d260e42572932d2872476df7638056a5c7002"
 }

@@ -20,7 +20,7 @@ from family_travel_dataset import write_text_if_changed
 from gen_feed import feed_discovery_links
 import gen_mobile_app_identity
 import gen_social_previews
-from official_locales import OFFICIAL_LOCALES
+from official_locales import OFFICIAL_LOCALES, open_graph_locale
 import portfolio_app_finder
 import publisher_intent_catalog
 
@@ -852,6 +852,15 @@ def _alternate_links(app_key: str, locale: str) -> str:
     return "\n".join(links)
 
 
+def _open_graph_alternate_meta(locale: str) -> str:
+    return "\n".join(
+        f'<meta property="og:locale:alternate" '
+        f'content="{open_graph_locale(other)}">'
+        for other in OFFICIAL_LOCALES
+        if other != locale
+    )
+
+
 def _json_script(payload: object) -> str:
     return json.dumps(
         payload,
@@ -912,6 +921,7 @@ def _structured_data(record: dict[str, Any]) -> dict[str, Any]:
         str(record["category"]),
         str(record["decision_page_url"]),
     )
+    app["@type"] = ["SoftwareApplication", "MobileApplication", "Product"]
     app["url"] = str(record["app_store_url"])
     app["installUrl"] = str(record["app_store_url"])
     app["downloadUrl"] = str(record["app_store_url"])
@@ -950,13 +960,18 @@ def _structured_data(record: dict[str, Any]) -> dict[str, Any]:
         ],
     ]
     image_url = _share_image_url(record)
+    image_id = f"{image_url}#primaryimage"
+    page_id = f"{record['decision_page_url']}#webpage"
+    faq_id = f"{record['decision_page_url']}#faq"
+    breadcrumb_id = f"{record['decision_page_url']}#breadcrumb"
+    app["image"] = {"@id": image_id}
     return {
         "@context": "https://schema.org",
         "@graph": [
             app,
             {
                 "@type": "WebPage",
-                "@id": f"{record['decision_page_url']}#webpage",
+                "@id": page_id,
                 "url": str(record["decision_page_url"]),
                 "name": str(record["publisher_query"]),
                 "description": str(record["decision_context"]),
@@ -964,9 +979,11 @@ def _structured_data(record: dict[str, Any]) -> dict[str, Any]:
                 "about": {"@id": str(record["canonical_app_store_url"])},
                 "isPartOf": {"@id": data_url()},
                 "mainEntity": {"@id": str(record["canonical_app_store_url"])},
+                "subjectOf": {"@id": faq_id},
+                "breadcrumb": {"@id": breadcrumb_id},
                 "primaryImageOfPage": {
                     "@type": "ImageObject",
-                    "@id": f"{image_url}#primaryimage",
+                    "@id": image_id,
                     "contentUrl": image_url,
                     "url": image_url,
                     "width": gen_social_previews.CARD_SIZE[0],
@@ -975,6 +992,47 @@ def _structured_data(record: dict[str, Any]) -> dict[str, Any]:
                     "caption": str(record["publisher_query"]),
                     "representativeOfPage": True,
                 },
+            },
+            {
+                "@type": "FAQPage",
+                "@id": faq_id,
+                "url": str(record["decision_page_url"]),
+                "inLanguage": str(record["locale"]),
+                "isPartOf": {"@id": page_id},
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": str(record["publisher_query"]),
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": str(record["decision_context"]),
+                        },
+                    }
+                ],
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": breadcrumb_id,
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "iOS App Guide",
+                        "item": f"{SITE}/",
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": str(record["app_name"]),
+                        "item": str(record["canonical_guide_url"]),
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": str(record["publisher_query"]),
+                        "item": str(record["decision_page_url"]),
+                    },
+                ],
             },
             {
                 "@type": "Dataset",
@@ -1030,6 +1088,12 @@ def render_page(
         include_primary_image_schema=False,
         include_hero_style=False,
         oembed_href=str(record["oembed_url"]),
+    )
+    social_metadata = social_metadata.replace(
+        gen_social_previews.BLOCK_END,
+        f"{_open_graph_alternate_meta(locale)}\n"
+        f"{gen_social_previews.BLOCK_END}",
+        1,
     )
     return f"""<!doctype html>
 <html lang="{html.escape(locale)}" dir="{dir_attr}"><head><meta charset="utf-8">

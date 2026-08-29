@@ -13,6 +13,7 @@ from pathlib import Path
 import re
 import subprocess
 import sys
+from typing import Any
 import unittest
 from unittest import mock
 from urllib.parse import parse_qs, urlsplit
@@ -87,6 +88,18 @@ class InstitutionalProcurementTests(unittest.TestCase):
         cls.lookup = json.loads(
             source_paths["public_lookup"].read_text(encoding="utf-8")
         )
+        cls.storefront = json.loads(
+            source_paths["storefront_state"].read_text(encoding="utf-8")
+        )
+        cls.apple_receipt = json.loads(
+            source_paths["apple_lookup_receipt"].read_text(encoding="utf-8")
+        )
+        cls.owner_registry = json.loads(
+            source_paths["owner_support_registry"].read_text(encoding="utf-8")
+        )
+        cls.portfolio_receipt = json.loads(
+            source_paths["portfolio_receipt"].read_text(encoding="utf-8")
+        )
         cls.intent_source = json.loads(
             source_paths["publisher_intent"].read_text(encoding="utf-8")
         )
@@ -116,7 +129,33 @@ class InstitutionalProcurementTests(unittest.TestCase):
             path = self.pages / record["path"]
             actual = hashlib.sha256(path.read_bytes()).hexdigest()
             self.assertEqual(record["sha256"], actual, path)
+        self.assertTrue(
+            procurement.REQUIRED_INDEPENDENT_SOURCE_KEYS
+            <= set(self.manifest["source_files"])
+        )
         procurement._validate_official_source_expiry(self.manifest)
+        procurement._validate_prohibited_claims(self.manifest)
+
+    def test_independent_receipts_cross_validate_exact_46(self) -> None:
+        apps, lookup = procurement._validate_identity_evidence(
+            self.manifest,
+            self.finder,
+            self.lookup,
+            self.storefront,
+            self.apple_receipt,
+            self.owner_registry,
+            self.portfolio_receipt,
+        )
+        self.assertEqual(46, len(apps))
+        self.assertEqual(46, len(lookup))
+        self.assertEqual(
+            self.lookup["checked_at"],
+            self.apple_receipt["fetched_at"],
+        )
+        self.assertEqual(
+            self.lookup["checked_at"],
+            self.owner_registry["checked_at"],
+        )
 
     def test_official_source_expiry_fails_closed(self) -> None:
         with mock.patch.object(
@@ -129,6 +168,45 @@ class InstitutionalProcurementTests(unittest.TestCase):
                 "Official source expired",
             ):
                 procurement._validate_official_source_expiry(self.manifest)
+
+    def test_official_reference_mutations_fail_closed(self) -> None:
+        mutations = {
+            "empty": lambda manifest: manifest.__setitem__(
+                "official_references",
+                [],
+            ),
+            "missing-required-id": lambda manifest: manifest[
+                "official_references"
+            ].pop(),
+            "wrong-publisher": lambda manifest: manifest[
+                "official_references"
+            ][0].__setitem__("publisher", "Microsoft"),
+            "wrong-host": lambda manifest: manifest[
+                "official_references"
+            ][0].__setitem__("url", "https://example.com/apple"),
+            "empty-supports": lambda manifest: manifest[
+                "official_references"
+            ][0].__setitem__("supports", []),
+            "wrong-expiry": lambda manifest: manifest[
+                "official_references"
+            ][0].__setitem__("expires_on", "2026-09-12"),
+        }
+        for name, mutate in mutations.items():
+            with self.subTest(name=name):
+                manifest = deepcopy(self.manifest)
+                mutate(manifest)
+                with self.assertRaises(procurement.BlockedNotDeployable):
+                    procurement._validate_official_source_expiry(manifest)
+
+    def test_prohibited_claim_pin_mutations_fail_closed(self) -> None:
+        for prohibited in (
+            [],
+            self.manifest["prohibited_claim_fragments"][:-1],
+        ):
+            manifest = deepcopy(self.manifest)
+            manifest["prohibited_claim_fragments"] = prohibited
+            with self.assertRaises(procurement.BlockedNotDeployable):
+                procurement._validate_prohibited_claims(manifest)
 
     def test_public_lookup_expiry_fails_closed(self) -> None:
         with mock.patch.object(
@@ -143,13 +221,101 @@ class InstitutionalProcurementTests(unittest.TestCase):
                 procurement._validate_evidence_freshness(
                     self.manifest,
                     self.lookup,
-                    json.loads(
-                        (
-                            self.pages
-                            / self.manifest["source_files"]["storefront_state"]["path"]
-                        ).read_text(encoding="utf-8")
-                    ),
+                    self.storefront,
+                    self.apple_receipt,
+                    self.owner_registry,
                 )
+
+    def test_independent_receipt_expiry_and_digest_fail_closed(self) -> None:
+        owner = deepcopy(self.owner_registry)
+        owner["expires_at"] = "2099-01-01T00:00:00Z"
+        with self.assertRaisesRegex(
+            procurement.BlockedNotDeployable,
+            "Internal evidence expiry differs",
+        ):
+            procurement._validate_evidence_freshness(
+                self.manifest,
+                self.lookup,
+                self.storefront,
+                self.apple_receipt,
+                owner,
+            )
+        receipt = deepcopy(self.apple_receipt)
+        receipt["response"]["results"][0]["bundleId"] = "com.microsoft.Office"
+        with self.assertRaisesRegex(
+            procurement.BlockedNotDeployable,
+            "canonical digest differs",
+        ):
+            procurement._receipt_records(receipt, 46)
+
+    def _assert_lookup_mutation_blocked(self, mutate: Any) -> None:
+        lookup = deepcopy(self.lookup)
+        mutate(lookup["records"])
+        with self.assertRaises(procurement.BlockedNotDeployable):
+            procurement._validate_identity_evidence(
+                self.manifest,
+                self.finder,
+                lookup,
+                self.storefront,
+                self.apple_receipt,
+                self.owner_registry,
+                self.portfolio_receipt,
+            )
+
+    def test_identity_and_owner_mutations_fail_closed(self) -> None:
+        def swap_between(records: list[dict[str, Any]], field: str) -> None:
+            records[0][field], records[1][field] = (
+                records[1][field],
+                records[0][field],
+            )
+
+        def swap_support_privacy(records: list[dict[str, Any]]) -> None:
+            records[0]["support_url"], records[0]["privacy_url"] = (
+                records[0]["privacy_url"],
+                records[0]["support_url"],
+            )
+
+        mutations = {
+            "swap-bundle-ids": lambda records: swap_between(
+                records,
+                "bundle_id",
+            ),
+            "foreign-bundle-id": lambda records: records[0].__setitem__(
+                "bundle_id",
+                "com.microsoft.Office",
+            ),
+            "swap-support-owners": lambda records: swap_between(
+                records,
+                "support_url",
+            ),
+            "swap-support-and-privacy": swap_support_privacy,
+            "foreign-public-name": lambda records: records[0].__setitem__(
+                "public_name",
+                "Microsoft Word",
+            ),
+            "wrong-app-id": lambda records: records[0].__setitem__(
+                "app_store_id",
+                "1234567890",
+            ),
+        }
+        for name, mutate in mutations.items():
+            with self.subTest(name=name):
+                self._assert_lookup_mutation_blocked(mutate)
+
+    def test_ipad_consistency_mutations_fail_closed(self) -> None:
+        mutations = {
+            "false-with-ipad-platform": lambda records: records[0].__setitem__(
+                "ipad_supported",
+                False,
+            ),
+            "true-without-ipad-platform": lambda records: records[0].__setitem__(
+                "platforms",
+                ["iPhone"],
+            ),
+        }
+        for name, mutate in mutations.items():
+            with self.subTest(name=name):
+                self._assert_lookup_mutation_blocked(mutate)
 
     def test_source_sha_drift_fails_closed(self) -> None:
         scratch = self.pages / "_engine" / "geo" / "tests" / ".institutional-scratch"
@@ -165,11 +331,16 @@ class InstitutionalProcurementTests(unittest.TestCase):
             manifest = {
                 "schema_version": 1,
                 "release_status": "CANDIDATE_NOT_DEPLOYED",
+                "apple_lookup_seller_name": procurement.APPLE_LOOKUP_SELLER_NAME,
                 "source_files": {
-                    "source": {
+                    key: {
                         "path": "source.json",
                         "sha256": "0" * 64,
+                        "checked_on": "2026-08-30",
+                        "expires_on": "2026-09-02",
+                        "max_age_days": 3,
                     }
+                    for key in procurement.REQUIRED_INDEPENDENT_SOURCE_KEYS
                 },
             }
             path = scratch / "manifest.json"
@@ -286,12 +457,42 @@ class InstitutionalProcurementTests(unittest.TestCase):
             self.assertFalse(app["institutional_approval_verified"])
             self.assertFalse(app["discount_verified"])
 
-    def test_platform_and_ipad_truth_come_from_public_lookup(self) -> None:
+    def test_platform_and_ipad_truth_cross_check_supported_devices(self) -> None:
         self.assertEqual(46, self.root_data["counts"]["ipad_supported"])
+        receipt = {
+            str(item["trackId"]): item
+            for item in self.apple_receipt["response"]["results"]
+        }
         for app in self.root_data["apps"]:
-            self.assertEqual(["iPhone", "iPad"], app["platforms"])
-            self.assertTrue(app["ipad_supported"])
-            self.assertEqual("public_get", app["lookup_provenance"]["method"])
+            supported = receipt[app["app_store_id"]]["supportedDevices"]
+            expected_ipad = any(
+                str(device).startswith("iPad") for device in supported
+            )
+            expected_platforms = (
+                ["iPhone", "iPad"] if expected_ipad else ["iPhone"]
+            )
+            self.assertEqual(expected_platforms, app["platforms"])
+            self.assertEqual(
+                "iPad" in app["platforms"],
+                app["ipad_supported"],
+            )
+            self.assertEqual(expected_ipad, app["ipad_supported"])
+            self.assertEqual(
+                "cross_validated_public_get",
+                app["lookup_provenance"]["method"],
+            )
+            self.assertEqual(
+                {
+                    "apple_lookup_receipt",
+                    "owner_support_registry",
+                    "portfolio_receipt",
+                },
+                set(app["lookup_provenance"]["independent_pins"]),
+            )
+            self.assertEqual(
+                "exact_apple_us_trackName_and_canonical_brand_prefix",
+                app["lookup_provenance"]["public_name_rule"],
+            )
             self.assertEqual(self.lookup["checked_at"], app["last_checked"])
 
     def test_support_privacy_and_store_urls_are_exact_https(self) -> None:

@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-08-29T18:45:17Z",
+  "checked_at": "2026-08-29T19:55:38Z",
   "sources": {
     "identity_platform_download": "Apple iTunes Lookup API, US storefront, public GET",
-    "support_privacy": "Public US App Store product pages, public GET",
+    "support_privacy": "Public US App Store product pages plus first-party owner-page HTTP receipts",
     "scope_note": "Public lookup verifies listing identity and observed storefront facts only; it does not verify Apple School Manager, Apple Business Manager, Intune, institutional approval, certification, discounts, or managed-app availability."
   },
   "record_count": 46,

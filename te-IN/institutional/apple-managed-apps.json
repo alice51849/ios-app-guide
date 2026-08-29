@@ -7,7 +7,7 @@
   "route_kind": "localized",
   "url": "https://alice51849.github.io/ios-app-guide/te-IN/institutional/apple-managed-apps.json",
   "generated_on": "2026-08-30",
-  "source_digest": "sha256:68996012c878d8050a1d8d3fac47c9731f0ab563fa8601c05e62b6c7fc7d0df0",
+  "source_digest": "sha256:eec819d1478d49b6b0e0d97c6e1d253a248e3cf76cfe936124e2f4b2c9224e2e",
   "roster_digest": "sha256:fea82924a4facecbf07394ed7e86d966970b2ba8db1fa21110d5debbde6a8f18",
   "publisher": {
     "name": "Lumi Studio",
@@ -55,10 +55,16 @@
     }
   ],
   "source_state": {
-    "public_lookup_checked_at": "2026-08-29T18:45:17Z",
+    "public_lookup_checked_at": "2026-08-29T19:55:38Z",
     "storefront_snapshot_checked_at": "2026-08-29T06:31:01Z",
+    "apple_lookup_receipt_fetched_at": "2026-08-29T19:55:38Z",
+    "apple_lookup_receipt_expires_at": "2026-09-01T19:55:38Z",
+    "owner_support_registry_checked_at": "2026-08-29T19:55:38Z",
+    "owner_support_registry_expires_at": "2026-09-01T19:55:38Z",
+    "portfolio_receipt_sha256": "2abf89e10ced56cb57bd59c172dd8f891266c7a8ad6020abcf2297b7aaaa5654",
+    "portfolio_receipt_expires_on": "2026-09-06",
     "official_source_max_age_days": 14,
-    "lookup_method": "public_get_only",
+    "lookup_method": "public_get_plus_pinned_cross_source_receipts",
     "institutional_portal_login": false,
     "deployment_or_submission": false
   },
@@ -141,11 +147,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/100notes-support/support.html",
       "privacy_url": "https://alice51849.github.io/100notes-support/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6798813048&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6798813048",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -190,11 +203,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/support.html?lang=en-US",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/privacy.html?lang=en-US",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6791658210&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6791658210",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -241,11 +261,18 @@
       "limitation": "ముందస్తు చెల్లింపు Appను Apps and Booksలో అభ్యర్థిగా వెతకవచ్చు. పబ్లిక్ lookup మీ సంస్థ catalogలో కనిపించడాన్ని నిరూపించదు; licence తీసుకునే ముందు ఖచ్చితమైన సంఖ్యా App IDని నిర్ధారించండి.",
       "support_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6792483140&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6792483140",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -292,11 +319,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/aim990-support/",
       "privacy_url": "https://alice51849.github.io/aim990-support/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6784974530&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6784974530",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -341,11 +375,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/battai-support/locales/en/",
       "privacy_url": "https://alice51849.github.io/battai-support/locales/en/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6802423998&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6802423998",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -390,11 +431,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/caldaily-support/support.html",
       "privacy_url": "https://alice51849.github.io/caldaily-support/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6794178671&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6794178671",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -439,11 +487,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/cvdesk-support/support.html",
       "privacy_url": "https://alice51849.github.io/cvdesk-support/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6781337213&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6781337213",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -488,11 +543,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/cyca-support/",
       "privacy_url": "https://alice51849.github.io/cyca-support/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6782251621&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6782251621",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -537,11 +599,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6794725568&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6794725568",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -586,11 +655,18 @@
       "limitation": "ముందస్తు చెల్లింపు Appను Apps and Booksలో అభ్యర్థిగా వెతకవచ్చు. పబ్లిక్ lookup మీ సంస్థ catalogలో కనిపించడాన్ని నిరూపించదు; licence తీసుకునే ముందు ఖచ్చితమైన సంఖ్యా App IDని నిర్ధారించండి.",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6790418321&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6790418321",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -635,11 +711,18 @@
       "limitation": "ముందస్తు చెల్లింపు Appను Apps and Booksలో అభ్యర్థిగా వెతకవచ్చు. పబ్లిక్ lookup మీ సంస్థ catalogలో కనిపించడాన్ని నిరూపించదు; licence తీసుకునే ముందు ఖచ్చితమైన సంఖ్యా App IDని నిర్ధారించండి.",
       "support_url": "https://alice51849.github.io/gmoney-support/",
       "privacy_url": "https://alice51849.github.io/gmoney-support/#privacy",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6755782939&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6755782939",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -684,11 +767,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6793436548&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6793436548",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -733,11 +823,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6794039979&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6794039979",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -782,11 +879,18 @@
       "limitation": "ముందస్తు చెల్లింపు Appను Apps and Booksలో అభ్యర్థిగా వెతకవచ్చు. పబ్లిక్ lookup మీ సంస్థ catalogలో కనిపించడాన్ని నిరూపించదు; licence తీసుకునే ముందు ఖచ్చితమైన సంఖ్యా App IDని నిర్ధారించండి.",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6754218117&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6754218117",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -833,11 +937,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/lockhour-support/support.html",
       "privacy_url": "https://alice51849.github.io/lockhour-support/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6780107485&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6780107485",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -884,11 +995,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/lumi-support/",
       "privacy_url": "https://alice51849.github.io/lumi-support/",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6773017109&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6773017109",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -935,11 +1053,18 @@
       "limitation": "ముందస్తు చెల్లింపు Appను Apps and Booksలో అభ్యర్థిగా వెతకవచ్చు. పబ్లిక్ lookup మీ సంస్థ catalogలో కనిపించడాన్ని నిరూపించదు; licence తీసుకునే ముందు ఖచ్చితమైన సంఖ్యా App IDని నిర్ధారించండి.",
       "support_url": "https://alice51849.github.io/lumi-support/",
       "privacy_url": "https://alice51849.github.io/lumi-support/",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6775773117&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6775773117",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -986,11 +1111,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/lumi-letters-support",
       "privacy_url": "https://alice51849.github.io/lumi-letters-support",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6778748533&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6778748533",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1037,11 +1169,18 @@
       "limitation": "ముందస్తు చెల్లింపు Appను Apps and Booksలో అభ్యర్థిగా వెతకవచ్చు. పబ్లిక్ lookup మీ సంస్థ catalogలో కనిపించడాన్ని నిరూపించదు; licence తీసుకునే ముందు ఖచ్చితమైన సంఖ్యా App IDని నిర్ధారించండి.",
       "support_url": "https://alice51849.github.io/lumi-letters-support/",
       "privacy_url": "https://alice51849.github.io/lumi-letters-support",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6778491147&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6778491147",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1088,11 +1227,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/lumi-math-support/",
       "privacy_url": "https://alice51849.github.io/lumi-math-support/",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6778269699&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6778269699",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1139,11 +1285,18 @@
       "limitation": "ముందస్తు చెల్లింపు Appను Apps and Booksలో అభ్యర్థిగా వెతకవచ్చు. పబ్లిక్ lookup మీ సంస్థ catalogలో కనిపించడాన్ని నిరూపించదు; licence తీసుకునే ముందు ఖచ్చితమైన సంఖ్యా App IDని నిర్ధారించండి.",
       "support_url": "https://alice51849.github.io/lumi-math-support/",
       "privacy_url": "https://alice51849.github.io/lumi-math-support/",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6776958488&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6776958488",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1188,11 +1341,18 @@
       "limitation": "ముందస్తు చెల్లింపు Appను Apps and Booksలో అభ్యర్థిగా వెతకవచ్చు. పబ్లిక్ lookup మీ సంస్థ catalogలో కనిపించడాన్ని నిరూపించదు; licence తీసుకునే ముందు ఖచ్చితమైన సంఖ్యా App IDని నిర్ధారించండి.",
       "support_url": "https://alice51849.github.io/lumi-mission-support/",
       "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6779745474&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6779745474",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1237,11 +1397,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/lumi-mission-support/",
       "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6779750237&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6779750237",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1286,11 +1453,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/lumi-weather-support",
       "privacy_url": "https://alice51849.github.io/lumi-weather-support",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6779552704&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6779552704",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1337,11 +1511,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/ur-PK/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6792850916&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6792850916",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1386,11 +1567,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://open.cait518.cc/mochi-donestamp/en-US/support/",
       "privacy_url": "https://open.cait518.cc/mochi-donestamp/en-US/privacy/",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6790800323&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6790800323",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1435,11 +1623,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/mochitodo-support/",
       "privacy_url": "https://alice51849.github.io/mochitodo-support/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6785004775&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6785004775",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1486,11 +1681,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/moneytag-support/?lang=en-US",
       "privacy_url": "https://alice51849.github.io/moneytag-support/privacy.html?lang=en-US",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6801956402&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6801956402",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1537,11 +1739,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/app/onepage-ppt/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/app/onepage-ppt/en-US/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6798814385&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6798814385",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1586,11 +1795,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/photocream-support/support.html",
       "privacy_url": "https://alice51849.github.io/photocream-support/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6781808054&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6781808054",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1635,11 +1851,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/picclear-support/support.html",
       "privacy_url": "https://alice51849.github.io/picclear-support/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6780223070&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6780223070",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1684,11 +1907,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/savetag-support/",
       "privacy_url": "https://alice51849.github.io/savetag-support/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6802505528&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6802505528",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1735,11 +1965,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/scanto-support/",
       "privacy_url": "https://alice51849.github.io/scanto-support/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6779977651&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6779977651",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1784,11 +2021,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/sereno-support/support.html?locale=en-US",
       "privacy_url": "https://alice51849.github.io/sereno-support/privacy.html?locale=en-US",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6788236641&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6788236641",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1833,11 +2077,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6802166527&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6802166527",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1882,11 +2133,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/snapport-lite-support/",
       "privacy_url": "https://alice51849.github.io/snapport-lite-support/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6792856304&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6792856304",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1931,11 +2189,18 @@
       "limitation": "ముందస్తు చెల్లింపు Appను Apps and Booksలో అభ్యర్థిగా వెతకవచ్చు. పబ్లిక్ lookup మీ సంస్థ catalogలో కనిపించడాన్ని నిరూపించదు; licence తీసుకునే ముందు ఖచ్చితమైన సంఖ్యా App IDని నిర్ధారించండి.",
       "support_url": "https://alice51849.github.io/snapport-support/",
       "privacy_url": "https://alice51849.github.io/snapport-support/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6780575828&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6780575828",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -1982,11 +2247,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/sono-note-support/",
       "privacy_url": "https://alice51849.github.io/sono-note-support/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6782139553&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6782139553",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -2031,11 +2303,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6787193643&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6787193643",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -2080,11 +2359,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6791299610&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6791299610",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -2129,11 +2415,18 @@
       "limitation": "ముందస్తు చెల్లింపు Appను Apps and Booksలో అభ్యర్థిగా వెతకవచ్చు. పబ్లిక్ lookup మీ సంస్థ catalogలో కనిపించడాన్ని నిరూపించదు; licence తీసుకునే ముందు ఖచ్చితమైన సంఖ్యా App IDని నిర్ధారించండి.",
       "support_url": "https://alice51849.github.io/tripbee-support/",
       "privacy_url": "https://alice51849.github.io/tripbee-support/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6787754435&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6787754435",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -2178,11 +2471,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/unblurry-support/support.html",
       "privacy_url": "https://alice51849.github.io/unblurry-support/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6782275018&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6782275018",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -2229,11 +2529,18 @@
       "limitation": "ముందస్తు చెల్లింపు Appను Apps and Booksలో అభ్యర్థిగా వెతకవచ్చు. పబ్లిక్ lookup మీ సంస్థ catalogలో కనిపించడాన్ని నిరూపించదు; licence తీసుకునే ముందు ఖచ్చితమైన సంఖ్యా App IDని నిర్ధారించండి.",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6790467886&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6790467886",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -2280,11 +2587,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6793414462&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6793414462",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -2329,11 +2643,18 @@
       "limitation": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
       "support_url": "https://alice51849.github.io/app/wordmate-lite/en-US/support.html",
       "privacy_url": "https://alice51849.github.io/app/wordmate-lite/en-US/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6797601720&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6797601720",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -2378,11 +2699,18 @@
       "limitation": "ముందస్తు చెల్లింపు Appను Apps and Booksలో అభ్యర్థిగా వెతకవచ్చు. పబ్లిక్ lookup మీ సంస్థ catalogలో కనిపించడాన్ని నిరూపించదు; licence తీసుకునే ముందు ఖచ్చితమైన సంఖ్యా App IDని నిర్ధారించండి.",
       "support_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/support.html",
       "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/privacy.html",
-      "last_checked": "2026-08-29T18:45:17Z",
+      "last_checked": "2026-08-29T19:55:38Z",
       "lookup_provenance": {
         "identity_platform_download": "https://itunes.apple.com/lookup?id=6789917808&country=us&entity=software",
         "support_privacy": "https://apps.apple.com/us/app/id6789917808",
-        "method": "public_get"
+        "method": "cross_validated_public_get",
+        "public_name_rule": "exact_apple_us_trackName_and_canonical_brand_prefix",
+        "owner_url_rule": "exact_first_party_registry_url_and_brand_receipt",
+        "independent_pins": [
+          "apple_lookup_receipt",
+          "owner_support_registry",
+          "portfolio_receipt"
+        ]
       },
       "verified_live": true,
       "institutional_exposure_verified": false,
@@ -2399,5 +2727,5 @@
     "generated_rc_is_not_exposure": true,
     "ordinary_downloads_are_institutional": false
   },
-  "content_digest": "sha256:8a2dcae1b7febbfd7b36a6d798544f325575f17e35bb4bfb9696abcc250ae398"
+  "content_digest": "sha256:8031c9adc7d775bfcb79c389a7d65a386b4c5a4209f0229cc6c8dd83b647225c"
 }

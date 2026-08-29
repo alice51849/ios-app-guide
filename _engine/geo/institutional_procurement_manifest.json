@@ -7,7 +7,9 @@
   "official_source_policy": {
     "max_age_days": 14,
     "public_lookup_max_age_days": 3,
-    "storefront_max_age_days": 7
+    "storefront_max_age_days": 7,
+    "apple_lookup_receipt_max_age_days": 3,
+    "owner_support_registry_max_age_days": 3
   },
   "canary": {
     "status": "BLOCKED_PENDING_ADMIN_VERIFICATION",
@@ -33,7 +35,7 @@
     },
     "public_lookup": {
       "path": "_engine/geo/institutional_public_lookup.json",
-      "sha256": "4f68709e9d87c959b05cb1efb8609bbcdd84b7238cf9be48f7ba38535ce0ab04"
+      "sha256": "110b849f6b650a6a4b78d8dc4603a80058809a2685e0abb357c93b0ae766af3f"
     },
     "procurement_i18n": {
       "path": "_engine/geo/institutional_procurement_i18n.json",
@@ -42,6 +44,30 @@
     "intent_overrides": {
       "path": "_engine/geo/institutional_intent_overrides.json",
       "sha256": "f7ec81ccc6ec65d3e6b9ef5362ff519e80de1e082b7e8e3b93aaf2cce2f30e95"
+    },
+    "apple_lookup_receipt": {
+      "path": "_engine/geo/institutional_apple_lookup_receipt.json",
+      "sha256": "86a64f0d07a335ed3eb3cce73a32603218d7ac1956fa2adb99ca4b229b23fc9c",
+      "checked_on": "2026-08-29",
+      "expires_on": "2026-09-01",
+      "authority": "Apple iTunes Lookup API raw public GET receipt",
+      "max_age_days": 3
+    },
+    "owner_support_registry": {
+      "path": "_engine/geo/institutional_owner_support_registry.json",
+      "sha256": "f25dd6d7b4356a44f0ef121d0af6d4c2cb3bf789c4eb09530146759ad94b8d03",
+      "checked_on": "2026-08-29",
+      "expires_on": "2026-09-01",
+      "authority": "First-party owner support/privacy HTTP receipts",
+      "max_age_days": 3
+    },
+    "portfolio_receipt": {
+      "path": "_engine/geo/institutional_portfolio_receipt.json",
+      "sha256": "2abf89e10ced56cb57bd59c172dd8f891266c7a8ad6020abcf2297b7aaaa5654",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-06",
+      "max_age_days": 7,
+      "authority": "Generated receipt from canonical 00_Standards/app-portfolio.md"
     }
   },
   "official_references": [
@@ -198,5 +224,11 @@
     "institution approved",
     "volume discount",
     "institutional discount"
-  ]
+  ],
+  "canonical_brand_aliases": {
+    "tripplanet": [
+      "Trip Planet"
+    ]
+  },
+  "apple_lookup_seller_name": "Guan Feng Lai"
 }

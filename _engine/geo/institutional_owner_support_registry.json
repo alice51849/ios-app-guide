@@ -1,0 +1,1697 @@
+{
+  "schema_version": 1,
+  "source_kind": "first_party_owner_page_http_receipts",
+  "checked_at": "2026-08-29T19:55:38Z",
+  "expires_at": "2026-09-01T19:55:38Z",
+  "allowed_owner_hosts": [
+    "alice51849.github.io",
+    "open.cait518.cc"
+  ],
+  "discovery_source": "Public US App Store product pages",
+  "identity_source": "Verified live catalog canonical brand",
+  "record_count": 46,
+  "records": [
+    {
+      "app_key": "notesstudio100",
+      "app_store_id": "6798813048",
+      "canonical_brand": "100 Notes Studio",
+      "support_url": "https://alice51849.github.io/100notes-support/support.html",
+      "privacy_url": "https://alice51849.github.io/100notes-support/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/100notes-support/support.html",
+        "fetched_url": "https://alice51849.github.io/100notes-support/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 20168,
+        "content_sha256": "09802f4dcf0a8b7c931f3255e35cbb3607fc78b763171c161032766d0136aa62",
+        "canonical_brand_tokens": [
+          "100",
+          "notes"
+        ],
+        "matched_brand_tokens": [
+          "100",
+          "notes"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/100notes-support/privacy.html",
+        "fetched_url": "https://alice51849.github.io/100notes-support/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 17705,
+        "content_sha256": "8136d98012a7da8684b434da17e60f4b9a61ae3cbe673ac8d2f4b8888d6266da",
+        "canonical_brand_tokens": [
+          "100",
+          "notes"
+        ],
+        "matched_brand_tokens": [
+          "100",
+          "notes"
+        ]
+      }
+    },
+    {
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "canonical_brand": "AI Brief",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/support.html?lang=en-US",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/privacy.html?lang=en-US",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/support.html?lang=en-US",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/support.html?lang=en-US",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 1698,
+        "content_sha256": "c29daeaec98399ca98999b21f9ea8f3c34f7e0ff6cb7f64b21ac9bb99452b4d8",
+        "canonical_brand_tokens": [
+          "brief"
+        ],
+        "matched_brand_tokens": [
+          "brief"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/privacy.html?lang=en-US",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/privacy.html?lang=en-US",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 4229,
+        "content_sha256": "82a4925b9a16802eb350b71365c5cee8ed761b257a4a81388bd0359d9e899259",
+        "canonical_brand_tokens": [
+          "brief"
+        ],
+        "matched_brand_tokens": [
+          "brief"
+        ]
+      }
+    },
+    {
+      "app_key": "aim990",
+      "app_store_id": "6784974530",
+      "canonical_brand": "Aim990",
+      "support_url": "https://alice51849.github.io/aim990-support/",
+      "privacy_url": "https://alice51849.github.io/aim990-support/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/aim990-support/",
+        "fetched_url": "https://alice51849.github.io/aim990-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 6162,
+        "content_sha256": "d9fe3bf47680eeee9c2a20a3ca5f7acf7ec1840ed19f6167f74972843de98883",
+        "canonical_brand_tokens": [
+          "aim990"
+        ],
+        "matched_brand_tokens": [
+          "aim990"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/aim990-support/privacy.html",
+        "fetched_url": "https://alice51849.github.io/aim990-support/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 6783,
+        "content_sha256": "e1d48b24b013980784ec32238b6f6cf9bdf7791744d75232cf9e47c5282dec43",
+        "canonical_brand_tokens": [
+          "aim990"
+        ],
+        "matched_brand_tokens": [
+          "aim990"
+        ]
+      }
+    },
+    {
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "canonical_brand": "Aim990 Plus",
+      "support_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-support.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 11847,
+        "content_sha256": "79a8da166583d3435d6c9a508aca0c58de24ee462b02b5ca382a39eb35683c66",
+        "canonical_brand_tokens": [
+          "aim990",
+          "plus"
+        ],
+        "matched_brand_tokens": [
+          "aim990",
+          "plus"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-privacy.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 10308,
+        "content_sha256": "4bfdc775cff2cb7c8411d8a58b9945ef66c4e3276c31a138521040f05624644a",
+        "canonical_brand_tokens": [
+          "aim990",
+          "plus"
+        ],
+        "matched_brand_tokens": [
+          "aim990",
+          "plus"
+        ]
+      }
+    },
+    {
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "canonical_brand": "BattAI",
+      "support_url": "https://alice51849.github.io/battai-support/locales/en/",
+      "privacy_url": "https://alice51849.github.io/battai-support/locales/en/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/battai-support/locales/en/",
+        "fetched_url": "https://alice51849.github.io/battai-support/locales/en/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 13824,
+        "content_sha256": "89e8ef8d813fbf230cf8ed04efd2fd59c8a7dfc910775de8a24d31577f459c98",
+        "canonical_brand_tokens": [
+          "battai"
+        ],
+        "matched_brand_tokens": [
+          "battai"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/battai-support/locales/en/privacy.html",
+        "fetched_url": "https://alice51849.github.io/battai-support/locales/en/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 14613,
+        "content_sha256": "637c86b3f9a0e4357f2dbaa8d312d3090ba1e5d6e2fce9164518361a6aa37698",
+        "canonical_brand_tokens": [
+          "battai"
+        ],
+        "matched_brand_tokens": [
+          "battai"
+        ]
+      }
+    },
+    {
+      "app_key": "caldaily",
+      "app_store_id": "6794178671",
+      "canonical_brand": "CalDaily",
+      "support_url": "https://alice51849.github.io/caldaily-support/support.html",
+      "privacy_url": "https://alice51849.github.io/caldaily-support/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/caldaily-support/support.html",
+        "fetched_url": "https://alice51849.github.io/caldaily-support/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 18584,
+        "content_sha256": "4616a32fe0ff11f13425137362b70ebd718affc2b08418830cf8b28cf366fb58",
+        "canonical_brand_tokens": [
+          "caldaily"
+        ],
+        "matched_brand_tokens": [
+          "caldaily"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/caldaily-support/privacy.html",
+        "fetched_url": "https://alice51849.github.io/caldaily-support/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 15784,
+        "content_sha256": "1740ae78784b36a57962dfe4f640b8a9cc58036dc07ac8c656e00f017a447fe3",
+        "canonical_brand_tokens": [
+          "caldaily"
+        ],
+        "matched_brand_tokens": [
+          "caldaily"
+        ]
+      }
+    },
+    {
+      "app_key": "cvdesk",
+      "app_store_id": "6781337213",
+      "canonical_brand": "CV Desk",
+      "support_url": "https://alice51849.github.io/cvdesk-support/support.html",
+      "privacy_url": "https://alice51849.github.io/cvdesk-support/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/cvdesk-support/support.html",
+        "fetched_url": "https://alice51849.github.io/cvdesk-support/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 28997,
+        "content_sha256": "ee028c3b419f5b2fb73b17f8e1deda1ce9f8319e7dbe1b78e9e0d08db508c91c",
+        "canonical_brand_tokens": [
+          "desk"
+        ],
+        "matched_brand_tokens": [
+          "desk"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/cvdesk-support/privacy.html",
+        "fetched_url": "https://alice51849.github.io/cvdesk-support/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 30147,
+        "content_sha256": "240589e3177cb81250defca4e29cb04cb6ec46e53da2930b4c7f9fcbd03dc65a",
+        "canonical_brand_tokens": [
+          "desk"
+        ],
+        "matched_brand_tokens": [
+          "desk"
+        ]
+      }
+    },
+    {
+      "app_key": "cyca",
+      "app_store_id": "6782251621",
+      "canonical_brand": "Cyca",
+      "support_url": "https://alice51849.github.io/cyca-support/",
+      "privacy_url": "https://alice51849.github.io/cyca-support/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/cyca-support/",
+        "fetched_url": "https://alice51849.github.io/cyca-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 16476,
+        "content_sha256": "9c8ccd231e4b282cba9ce9adbd011c8e17362762fca8813b61b52628cf031ba1",
+        "canonical_brand_tokens": [
+          "cyca"
+        ],
+        "matched_brand_tokens": [
+          "cyca"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/cyca-support/privacy.html",
+        "fetched_url": "https://alice51849.github.io/cyca-support/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 14101,
+        "content_sha256": "bab9ff7b00644f4d007e8898971fa9ff717598084ed93325ea1304be6425681a",
+        "canonical_brand_tokens": [
+          "cyca"
+        ],
+        "matched_brand_tokens": [
+          "cyca"
+        ]
+      }
+    },
+    {
+      "app_key": "dailymate",
+      "app_store_id": "6790418321",
+      "canonical_brand": "DailyMate",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/support.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 3876,
+        "content_sha256": "31dd51ac3403bc44b5a5284a5f93372c8b74f82e4cd0aacc252dbc133461026b",
+        "canonical_brand_tokens": [
+          "dailymate"
+        ],
+        "matched_brand_tokens": [
+          "dailymate"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/privacy.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 3923,
+        "content_sha256": "a426a021faba2540aaad3588173a2375aae86e912fb99456692d59ed0d2a682c",
+        "canonical_brand_tokens": [
+          "dailymate"
+        ],
+        "matched_brand_tokens": [
+          "dailymate"
+        ]
+      }
+    },
+    {
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "canonical_brand": "DailyMate Lite",
+      "support_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/support.html",
+        "fetched_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 22667,
+        "content_sha256": "810b0e204e2e2a484a51e7c023c257ab5887e22b60144c94928d8f52f420e828",
+        "canonical_brand_tokens": [
+          "dailymate"
+        ],
+        "matched_brand_tokens": [
+          "dailymate"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/privacy.html",
+        "fetched_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 22088,
+        "content_sha256": "10a83ee64d1f0b685ba2fe9100a82cf0c8be198fbfcdb4fe6fa70a09681586ec",
+        "canonical_brand_tokens": [
+          "dailymate"
+        ],
+        "matched_brand_tokens": [
+          "dailymate"
+        ]
+      }
+    },
+    {
+      "app_key": "gmoney",
+      "app_store_id": "6755782939",
+      "canonical_brand": "G+Money",
+      "support_url": "https://alice51849.github.io/gmoney-support/",
+      "privacy_url": "https://alice51849.github.io/gmoney-support/#privacy",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/gmoney-support/",
+        "fetched_url": "https://alice51849.github.io/gmoney-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 35985,
+        "content_sha256": "8da8512f8d533954ee77d2e0e7da785e94a1ac256f5c3a15f8c45a14028ec4a3",
+        "canonical_brand_tokens": [
+          "g+money"
+        ],
+        "matched_brand_tokens": [
+          "g+money"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/gmoney-support/#privacy",
+        "fetched_url": "https://alice51849.github.io/gmoney-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 35985,
+        "content_sha256": "8da8512f8d533954ee77d2e0e7da785e94a1ac256f5c3a15f8c45a14028ec4a3",
+        "canonical_brand_tokens": [
+          "g+money"
+        ],
+        "matched_brand_tokens": [
+          "g+money"
+        ]
+      }
+    },
+    {
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "canonical_brand": "G+Money Lite",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/support.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 8370,
+        "content_sha256": "1139ae649ce2835985f3941eab282e5563327def5a44c4c2e42233affae27c92",
+        "canonical_brand_tokens": [
+          "g+money"
+        ],
+        "matched_brand_tokens": [
+          "g+money"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/privacy.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 8839,
+        "content_sha256": "344c8bc5ddb071f1836d198c698a5ac9bbbe2b1731e7a033b5a5dfbf8b5bec0f",
+        "canonical_brand_tokens": [
+          "g+money"
+        ],
+        "matched_brand_tokens": [
+          "g+money"
+        ]
+      }
+    },
+    {
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "canonical_brand": "HoursTag Lite",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/support.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 8371,
+        "content_sha256": "77b8215a67fa120baef40ae83b48f87b312b5520d2cde68648cd33fe1a98bedd",
+        "canonical_brand_tokens": [
+          "hourstag"
+        ],
+        "matched_brand_tokens": [
+          "hourstag"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/privacy.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 8587,
+        "content_sha256": "1f78b200a7fa1be6be9890c24152644d432f9ec2f7762c940b5ff66973d54028",
+        "canonical_brand_tokens": [
+          "hourstag"
+        ],
+        "matched_brand_tokens": [
+          "hourstag"
+        ]
+      }
+    },
+    {
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "canonical_brand": "HoursTag: Hours to Buy",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/support.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 10322,
+        "content_sha256": "d7e25b1b0752a0f0c78e7adbf7e757fc171e980486adffc1740b2e181dde0212",
+        "canonical_brand_tokens": [
+          "hourstag"
+        ],
+        "matched_brand_tokens": [
+          "hourstag"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/privacy.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 9630,
+        "content_sha256": "ee62356cbe44ae14a77c3785ff1b23fedeccb4a25b9bee68b3cb0e3429ded14b",
+        "canonical_brand_tokens": [
+          "hourstag"
+        ],
+        "matched_brand_tokens": [
+          "hourstag"
+        ]
+      }
+    },
+    {
+      "app_key": "lockhour",
+      "app_store_id": "6780107485",
+      "canonical_brand": "LockHour Pro",
+      "support_url": "https://alice51849.github.io/lockhour-support/support.html",
+      "privacy_url": "https://alice51849.github.io/lockhour-support/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/lockhour-support/support.html",
+        "fetched_url": "https://alice51849.github.io/lockhour-support/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 15084,
+        "content_sha256": "5694a7e6bc6b4b04bebbea5ba6d0dfa0b9d22d58d9508f437c2efdcdccf04f5c",
+        "canonical_brand_tokens": [
+          "lockhour"
+        ],
+        "matched_brand_tokens": [
+          "lockhour"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/lockhour-support/privacy.html",
+        "fetched_url": "https://alice51849.github.io/lockhour-support/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 15007,
+        "content_sha256": "5228c46d1511dae56bf9090b001db2f638fd9bb59fb0248cc3a8a2f0a7d326dd",
+        "canonical_brand_tokens": [
+          "lockhour"
+        ],
+        "matched_brand_tokens": [
+          "lockhour"
+        ]
+      }
+    },
+    {
+      "app_key": "lumibopomofo",
+      "app_store_id": "6773017109",
+      "canonical_brand": "Lumi Bopomofo",
+      "support_url": "https://alice51849.github.io/lumi-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-support/",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-support/",
+        "fetched_url": "https://alice51849.github.io/lumi-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 36388,
+        "content_sha256": "52401722811a156ca4be3b14ca574d1bac2a52d9b917277af621de36bd4405f2",
+        "canonical_brand_tokens": [
+          "lumi",
+          "bopomofo"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "bopomofo"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-support/",
+        "fetched_url": "https://alice51849.github.io/lumi-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 36388,
+        "content_sha256": "52401722811a156ca4be3b14ca574d1bac2a52d9b917277af621de36bd4405f2",
+        "canonical_brand_tokens": [
+          "lumi",
+          "bopomofo"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "bopomofo"
+        ]
+      }
+    },
+    {
+      "app_key": "lumibopomofopro",
+      "app_store_id": "6775773117",
+      "canonical_brand": "Lumi Bopomofo Pro",
+      "support_url": "https://alice51849.github.io/lumi-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-support/",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-support/",
+        "fetched_url": "https://alice51849.github.io/lumi-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 36388,
+        "content_sha256": "52401722811a156ca4be3b14ca574d1bac2a52d9b917277af621de36bd4405f2",
+        "canonical_brand_tokens": [
+          "lumi",
+          "bopomofo"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "bopomofo"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-support/",
+        "fetched_url": "https://alice51849.github.io/lumi-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 36388,
+        "content_sha256": "52401722811a156ca4be3b14ca574d1bac2a52d9b917277af621de36bd4405f2",
+        "canonical_brand_tokens": [
+          "lumi",
+          "bopomofo"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "bopomofo"
+        ]
+      }
+    },
+    {
+      "app_key": "lumiletters",
+      "app_store_id": "6778748533",
+      "canonical_brand": "Lumi Letters",
+      "support_url": "https://alice51849.github.io/lumi-letters-support",
+      "privacy_url": "https://alice51849.github.io/lumi-letters-support",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-letters-support",
+        "fetched_url": "https://alice51849.github.io/lumi-letters-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 38690,
+        "content_sha256": "bc5f0c94cfbb1d788adefaad1da91440b1dc3a18b4281d70aa60f13970da9de8",
+        "canonical_brand_tokens": [
+          "lumi",
+          "letters"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "letters"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-letters-support",
+        "fetched_url": "https://alice51849.github.io/lumi-letters-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 38690,
+        "content_sha256": "bc5f0c94cfbb1d788adefaad1da91440b1dc3a18b4281d70aa60f13970da9de8",
+        "canonical_brand_tokens": [
+          "lumi",
+          "letters"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "letters"
+        ]
+      }
+    },
+    {
+      "app_key": "lumiletterspro",
+      "app_store_id": "6778491147",
+      "canonical_brand": "Lumi Letters Pro",
+      "support_url": "https://alice51849.github.io/lumi-letters-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-letters-support",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-letters-support/",
+        "fetched_url": "https://alice51849.github.io/lumi-letters-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 38690,
+        "content_sha256": "bc5f0c94cfbb1d788adefaad1da91440b1dc3a18b4281d70aa60f13970da9de8",
+        "canonical_brand_tokens": [
+          "lumi",
+          "letters"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "letters"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-letters-support",
+        "fetched_url": "https://alice51849.github.io/lumi-letters-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 38690,
+        "content_sha256": "bc5f0c94cfbb1d788adefaad1da91440b1dc3a18b4281d70aa60f13970da9de8",
+        "canonical_brand_tokens": [
+          "lumi",
+          "letters"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "letters"
+        ]
+      }
+    },
+    {
+      "app_key": "lumimath",
+      "app_store_id": "6778269699",
+      "canonical_brand": "Lumi Math Planet",
+      "support_url": "https://alice51849.github.io/lumi-math-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-math-support/",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-math-support/",
+        "fetched_url": "https://alice51849.github.io/lumi-math-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 40191,
+        "content_sha256": "d78161cf2576524469cc30f03f4fb9a04870211896afbc433f1330eaa1afb18b",
+        "canonical_brand_tokens": [
+          "lumi",
+          "math"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "math"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-math-support/",
+        "fetched_url": "https://alice51849.github.io/lumi-math-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 40191,
+        "content_sha256": "d78161cf2576524469cc30f03f4fb9a04870211896afbc433f1330eaa1afb18b",
+        "canonical_brand_tokens": [
+          "lumi",
+          "math"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "math"
+        ]
+      }
+    },
+    {
+      "app_key": "lumimathpro",
+      "app_store_id": "6776958488",
+      "canonical_brand": "Lumi Math Pro",
+      "support_url": "https://alice51849.github.io/lumi-math-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-math-support/",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-math-support/",
+        "fetched_url": "https://alice51849.github.io/lumi-math-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 40191,
+        "content_sha256": "d78161cf2576524469cc30f03f4fb9a04870211896afbc433f1330eaa1afb18b",
+        "canonical_brand_tokens": [
+          "lumi",
+          "math"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "math"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-math-support/",
+        "fetched_url": "https://alice51849.github.io/lumi-math-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 40191,
+        "content_sha256": "d78161cf2576524469cc30f03f4fb9a04870211896afbc433f1330eaa1afb18b",
+        "canonical_brand_tokens": [
+          "lumi",
+          "math"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "math"
+        ]
+      }
+    },
+    {
+      "app_key": "lumimission",
+      "app_store_id": "6779750237",
+      "canonical_brand": "Lumi Mission Planet",
+      "support_url": "https://alice51849.github.io/lumi-mission-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-mission-support/",
+        "fetched_url": "https://alice51849.github.io/lumi-mission-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 46192,
+        "content_sha256": "048fa0b40c944709cf63388751050a282124a0f1d448f069aeefe1055807c86d",
+        "canonical_brand_tokens": [
+          "lumi",
+          "mission"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "mission"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-mission-support/",
+        "fetched_url": "https://alice51849.github.io/lumi-mission-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 46192,
+        "content_sha256": "048fa0b40c944709cf63388751050a282124a0f1d448f069aeefe1055807c86d",
+        "canonical_brand_tokens": [
+          "lumi",
+          "mission"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "mission"
+        ]
+      }
+    },
+    {
+      "app_key": "lumimissionpro",
+      "app_store_id": "6779745474",
+      "canonical_brand": "Lumi Mission Planet Pro",
+      "support_url": "https://alice51849.github.io/lumi-mission-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-mission-support/",
+        "fetched_url": "https://alice51849.github.io/lumi-mission-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 46192,
+        "content_sha256": "048fa0b40c944709cf63388751050a282124a0f1d448f069aeefe1055807c86d",
+        "canonical_brand_tokens": [
+          "lumi",
+          "mission"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "mission"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-mission-support/",
+        "fetched_url": "https://alice51849.github.io/lumi-mission-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 46192,
+        "content_sha256": "048fa0b40c944709cf63388751050a282124a0f1d448f069aeefe1055807c86d",
+        "canonical_brand_tokens": [
+          "lumi",
+          "mission"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "mission"
+        ]
+      }
+    },
+    {
+      "app_key": "tripplanet",
+      "app_store_id": "6787193643",
+      "canonical_brand": "Lumi Trip Planet",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/support.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 8209,
+        "content_sha256": "af35c16a09819c97573e8b855a15134d91fe4919a86642ad604a99af8feec651",
+        "canonical_brand_tokens": [
+          "lumi",
+          "trip"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "trip"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/privacy.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 10447,
+        "content_sha256": "992c548ff9164c996b4a1c6a785a87afcdcf42bbff787738c119e45816094560",
+        "canonical_brand_tokens": [
+          "lumi",
+          "trip"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "trip"
+        ]
+      }
+    },
+    {
+      "app_key": "lumiweather",
+      "app_store_id": "6779552704",
+      "canonical_brand": "Lumi Weather",
+      "support_url": "https://alice51849.github.io/lumi-weather-support",
+      "privacy_url": "https://alice51849.github.io/lumi-weather-support",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-weather-support",
+        "fetched_url": "https://alice51849.github.io/lumi-weather-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 23923,
+        "content_sha256": "0f88a42f266edb80a12ff1e9a085cee4a9671fc3c102a33068c0d3f2c399214d",
+        "canonical_brand_tokens": [
+          "lumi",
+          "weather"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "weather"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/lumi-weather-support",
+        "fetched_url": "https://alice51849.github.io/lumi-weather-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 23923,
+        "content_sha256": "0f88a42f266edb80a12ff1e9a085cee4a9671fc3c102a33068c0d3f2c399214d",
+        "canonical_brand_tokens": [
+          "lumi",
+          "weather"
+        ],
+        "matched_brand_tokens": [
+          "lumi",
+          "weather"
+        ]
+      }
+    },
+    {
+      "app_key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "canonical_brand": "Mask My File",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/ur-PK/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/en-US/support.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/en-US/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 10190,
+        "content_sha256": "3b46553a93428160e64526b0d7c5d8c461529181b0d918ac36c3fb61035f5451",
+        "canonical_brand_tokens": [
+          "mask",
+          "file"
+        ],
+        "matched_brand_tokens": [
+          "mask",
+          "file"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/ur-PK/privacy.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/ur-PK/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 11656,
+        "content_sha256": "0871488a7cb97a39ef759c64eaaf5de7f56c8fe38339b66f65d97117d5203a05",
+        "canonical_brand_tokens": [
+          "mask",
+          "file"
+        ],
+        "matched_brand_tokens": [
+          "mask",
+          "file"
+        ]
+      }
+    },
+    {
+      "app_key": "mochi",
+      "app_store_id": "6785004775",
+      "canonical_brand": "Mochi",
+      "support_url": "https://alice51849.github.io/mochitodo-support/",
+      "privacy_url": "https://alice51849.github.io/mochitodo-support/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/mochitodo-support/",
+        "fetched_url": "https://alice51849.github.io/mochitodo-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 15695,
+        "content_sha256": "54ec28822d4488063d5c72ac9f17e26f9e44aab46c42e4f5b3ba7b961117ac3a",
+        "canonical_brand_tokens": [
+          "mochi"
+        ],
+        "matched_brand_tokens": [
+          "mochi"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/mochitodo-support/privacy.html",
+        "fetched_url": "https://alice51849.github.io/mochitodo-support/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 13742,
+        "content_sha256": "757fa1c07dc76c7023d86b8f82dbd1c19594144dbe25e5699656f8cf7af08386",
+        "canonical_brand_tokens": [
+          "mochi"
+        ],
+        "matched_brand_tokens": [
+          "mochi"
+        ]
+      }
+    },
+    {
+      "app_key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "canonical_brand": "Mochi DoneStamp",
+      "support_url": "https://open.cait518.cc/mochi-donestamp/en-US/support/",
+      "privacy_url": "https://open.cait518.cc/mochi-donestamp/en-US/privacy/",
+      "support_receipt": {
+        "requested_url": "https://open.cait518.cc/mochi-donestamp/en-US/support/",
+        "fetched_url": "https://open.cait518.cc/mochi-donestamp/en-US/support/",
+        "http_status": 200,
+        "owner_host": "open.cait518.cc",
+        "content_length": 13254,
+        "content_sha256": "40187462906560fba2df3f087ab666cbda16a1747bfe9fbed089753bd4e64305",
+        "canonical_brand_tokens": [
+          "mochi",
+          "donestamp"
+        ],
+        "matched_brand_tokens": [
+          "mochi",
+          "donestamp"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://open.cait518.cc/mochi-donestamp/en-US/privacy/",
+        "fetched_url": "https://open.cait518.cc/mochi-donestamp/en-US/privacy/",
+        "http_status": 200,
+        "owner_host": "open.cait518.cc",
+        "content_length": 14963,
+        "content_sha256": "2638781031805d32307a7480235d94ace11a5a1af888ba134319f43d47db78b1",
+        "canonical_brand_tokens": [
+          "mochi",
+          "donestamp"
+        ],
+        "matched_brand_tokens": [
+          "mochi",
+          "donestamp"
+        ]
+      }
+    },
+    {
+      "app_key": "moneytag",
+      "app_store_id": "6801956402",
+      "canonical_brand": "MoneyTag: Income & Expense",
+      "support_url": "https://alice51849.github.io/moneytag-support/?lang=en-US",
+      "privacy_url": "https://alice51849.github.io/moneytag-support/privacy.html?lang=en-US",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/moneytag-support/?lang=en-US",
+        "fetched_url": "https://alice51849.github.io/moneytag-support/?lang=en-US",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 406279,
+        "content_sha256": "755345ec525d09e33472756c792f3eaac12b60e8d5b23f645a9f8412ff7e49ff",
+        "canonical_brand_tokens": [
+          "moneytag"
+        ],
+        "matched_brand_tokens": [
+          "moneytag"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/moneytag-support/privacy.html?lang=en-US",
+        "fetched_url": "https://alice51849.github.io/moneytag-support/privacy.html?lang=en-US",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 403181,
+        "content_sha256": "0baae56b733ad778ea3e50f651cc46d65f4f02dfdd4d1a9cfd77228bbad798c2",
+        "canonical_brand_tokens": [
+          "moneytag"
+        ],
+        "matched_brand_tokens": [
+          "moneytag"
+        ]
+      }
+    },
+    {
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "canonical_brand": "OnePage PPT",
+      "support_url": "https://alice51849.github.io/app/onepage-ppt/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/onepage-ppt/en-US/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/app/onepage-ppt/en-US/support.html",
+        "fetched_url": "https://alice51849.github.io/app/onepage-ppt/en-US/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 20754,
+        "content_sha256": "5a5d03e834d8cc50200f62714875d2013aeb457bdac4d27efec9a0536243a3b4",
+        "canonical_brand_tokens": [
+          "onepage",
+          "ppt"
+        ],
+        "matched_brand_tokens": [
+          "onepage",
+          "ppt"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/app/onepage-ppt/en-US/privacy.html",
+        "fetched_url": "https://alice51849.github.io/app/onepage-ppt/en-US/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 21338,
+        "content_sha256": "a0e186aa5c52bf18f861324f3a343f696dd9cbd2d4db26e56caf29eb272c25f7",
+        "canonical_brand_tokens": [
+          "onepage",
+          "ppt"
+        ],
+        "matched_brand_tokens": [
+          "onepage",
+          "ppt"
+        ]
+      }
+    },
+    {
+      "app_key": "photocream",
+      "app_store_id": "6781808054",
+      "canonical_brand": "PhotoCream",
+      "support_url": "https://alice51849.github.io/photocream-support/support.html",
+      "privacy_url": "https://alice51849.github.io/photocream-support/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/photocream-support/support.html",
+        "fetched_url": "https://alice51849.github.io/photocream-support/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 15076,
+        "content_sha256": "39fedb3665b64373dd202f7408958e950d07e17fb2cc8cb794993a5ea8b46f41",
+        "canonical_brand_tokens": [
+          "photocream"
+        ],
+        "matched_brand_tokens": [
+          "photocream"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/photocream-support/privacy.html",
+        "fetched_url": "https://alice51849.github.io/photocream-support/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 15063,
+        "content_sha256": "b29b8cf89f356906a647d8dc64457c47e7607d9b9f06286201c897e2182f13d4",
+        "canonical_brand_tokens": [
+          "photocream"
+        ],
+        "matched_brand_tokens": [
+          "photocream"
+        ]
+      }
+    },
+    {
+      "app_key": "picclear",
+      "app_store_id": "6780223070",
+      "canonical_brand": "PicClear",
+      "support_url": "https://alice51849.github.io/picclear-support/support.html",
+      "privacy_url": "https://alice51849.github.io/picclear-support/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/picclear-support/support.html",
+        "fetched_url": "https://alice51849.github.io/picclear-support/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 31658,
+        "content_sha256": "e8e8a08ed4507b5d6873a8cf3e2591f6bb2e4c7fd9d742b3c7fe97c2aae05e42",
+        "canonical_brand_tokens": [
+          "picclear"
+        ],
+        "matched_brand_tokens": [
+          "picclear"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/picclear-support/privacy.html",
+        "fetched_url": "https://alice51849.github.io/picclear-support/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 30253,
+        "content_sha256": "bae980a24c4f66eef2ece555ff60a05a12facdcb734cbb6df507f2b4b1a0b10d",
+        "canonical_brand_tokens": [
+          "picclear"
+        ],
+        "matched_brand_tokens": [
+          "picclear"
+        ]
+      }
+    },
+    {
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "canonical_brand": "SaveTag",
+      "support_url": "https://alice51849.github.io/savetag-support/",
+      "privacy_url": "https://alice51849.github.io/savetag-support/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/savetag-support/",
+        "fetched_url": "https://alice51849.github.io/savetag-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 310374,
+        "content_sha256": "afbabcfbe13214b61ac9b260551e25893600587073cc3e0aff02f0e99d786cff",
+        "canonical_brand_tokens": [
+          "savetag"
+        ],
+        "matched_brand_tokens": [
+          "savetag"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/savetag-support/privacy.html",
+        "fetched_url": "https://alice51849.github.io/savetag-support/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 312387,
+        "content_sha256": "21a4f959d8641864539708290871dea4ca02dbe8b395e0e807507ce075546aea",
+        "canonical_brand_tokens": [
+          "savetag"
+        ],
+        "matched_brand_tokens": [
+          "savetag"
+        ]
+      }
+    },
+    {
+      "app_key": "scanto",
+      "app_store_id": "6779977651",
+      "canonical_brand": "ScanTo Pro",
+      "support_url": "https://alice51849.github.io/scanto-support/",
+      "privacy_url": "https://alice51849.github.io/scanto-support/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/scanto-support/",
+        "fetched_url": "https://alice51849.github.io/scanto-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 32554,
+        "content_sha256": "4d73a1cfa8f70ec66bc8c6ff35e407bb0802903fcc22ddf544954595e5abc909",
+        "canonical_brand_tokens": [
+          "scanto"
+        ],
+        "matched_brand_tokens": [
+          "scanto"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/scanto-support/privacy.html",
+        "fetched_url": "https://alice51849.github.io/scanto-support/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 20083,
+        "content_sha256": "703025298aff7c93e48a959c0734269ae019a803bf679f521dfd74f2ddd64aee",
+        "canonical_brand_tokens": [
+          "scanto"
+        ],
+        "matched_brand_tokens": [
+          "scanto"
+        ]
+      }
+    },
+    {
+      "app_key": "sereno",
+      "app_store_id": "6788236641",
+      "canonical_brand": "Sereno",
+      "support_url": "https://alice51849.github.io/sereno-support/support.html?locale=en-US",
+      "privacy_url": "https://alice51849.github.io/sereno-support/privacy.html?locale=en-US",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/sereno-support/support.html?locale=en-US",
+        "fetched_url": "https://alice51849.github.io/sereno-support/support.html?locale=en-US",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 14545,
+        "content_sha256": "1cf3f7fd07e9b664550cfa3b3ffe0c165d3076dd1630200d3bbbd846ebd723bf",
+        "canonical_brand_tokens": [
+          "sereno"
+        ],
+        "matched_brand_tokens": [
+          "sereno"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/sereno-support/privacy.html?locale=en-US",
+        "fetched_url": "https://alice51849.github.io/sereno-support/privacy.html?locale=en-US",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 13519,
+        "content_sha256": "87e1d58eec5aefdec448fb79b0a0b172fb3273fcb6747fba02f652bd3bc26710",
+        "canonical_brand_tokens": [
+          "sereno"
+        ],
+        "matched_brand_tokens": [
+          "sereno"
+        ]
+      }
+    },
+    {
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "canonical_brand": "ShotInbox AI",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/support.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 14600,
+        "content_sha256": "9124e2bf0dba8c5186ab8fbce7aee70bb2a63cc3477d3b1745faa514ffff36b2",
+        "canonical_brand_tokens": [
+          "shotinbox"
+        ],
+        "matched_brand_tokens": [
+          "shotinbox"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/privacy.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 15106,
+        "content_sha256": "9d0d669b799450e5665bc5e4da17ed2659b60b69dad618a5920ba5e442bc38ba",
+        "canonical_brand_tokens": [
+          "shotinbox"
+        ],
+        "matched_brand_tokens": [
+          "shotinbox"
+        ]
+      }
+    },
+    {
+      "app_key": "snapport",
+      "app_store_id": "6780575828",
+      "canonical_brand": "Snapport",
+      "support_url": "https://alice51849.github.io/snapport-support/",
+      "privacy_url": "https://alice51849.github.io/snapport-support/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/snapport-support/",
+        "fetched_url": "https://alice51849.github.io/snapport-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 41205,
+        "content_sha256": "b73dd69fee27d4ed5e178cec7884770e35869902011a682c0948e06a79921247",
+        "canonical_brand_tokens": [
+          "snapport"
+        ],
+        "matched_brand_tokens": [
+          "snapport"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/snapport-support/privacy.html",
+        "fetched_url": "https://alice51849.github.io/snapport-support/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 34728,
+        "content_sha256": "89da46e410435b494bd4c7dff4a2667dd8de3168343c8ae5c290aee749ed1641",
+        "canonical_brand_tokens": [
+          "snapport"
+        ],
+        "matched_brand_tokens": [
+          "snapport"
+        ]
+      }
+    },
+    {
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "canonical_brand": "Snapport Lite",
+      "support_url": "https://alice51849.github.io/snapport-lite-support/",
+      "privacy_url": "https://alice51849.github.io/snapport-lite-support/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/snapport-lite-support/",
+        "fetched_url": "https://alice51849.github.io/snapport-lite-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 17615,
+        "content_sha256": "3b5317e2909f25564519b68c4356a9165d443ddfbfc2cc1de090f2a937298fec",
+        "canonical_brand_tokens": [
+          "snapport"
+        ],
+        "matched_brand_tokens": [
+          "snapport"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/snapport-lite-support/privacy.html",
+        "fetched_url": "https://alice51849.github.io/snapport-lite-support/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 15040,
+        "content_sha256": "9759980117d82b9aed5c09aaec93572356966f9215ac8cacf620295ba50975c3",
+        "canonical_brand_tokens": [
+          "snapport"
+        ],
+        "matched_brand_tokens": [
+          "snapport"
+        ]
+      }
+    },
+    {
+      "app_key": "sononote",
+      "app_store_id": "6782139553",
+      "canonical_brand": "Sono Note",
+      "support_url": "https://alice51849.github.io/sono-note-support/",
+      "privacy_url": "https://alice51849.github.io/sono-note-support/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/sono-note-support/",
+        "fetched_url": "https://alice51849.github.io/sono-note-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 16624,
+        "content_sha256": "c59207c651e9bc948c8f5c81e9483ac83f3fd855d15041f03e93e4b51d148ffe",
+        "canonical_brand_tokens": [
+          "sono",
+          "note"
+        ],
+        "matched_brand_tokens": [
+          "sono",
+          "note"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/sono-note-support/privacy.html",
+        "fetched_url": "https://alice51849.github.io/sono-note-support/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 14502,
+        "content_sha256": "e5597628de01e251837ad81d0562ce0f289cc98ea0412e97dbba698cc776fee1",
+        "canonical_brand_tokens": [
+          "sono",
+          "note"
+        ],
+        "matched_brand_tokens": [
+          "sono",
+          "note"
+        ]
+      }
+    },
+    {
+      "app_key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "canonical_brand": "TripBee Lite",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/support.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 3933,
+        "content_sha256": "67692d663b67896986cb03e9296544d71514b98adea605fdc0f0decf99dc26de",
+        "canonical_brand_tokens": [
+          "tripbee"
+        ],
+        "matched_brand_tokens": [
+          "tripbee"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/privacy.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 4156,
+        "content_sha256": "d898be9b21f8c8bc903a728976d55f128cd3bf700110d166fdf309e1cdee1084",
+        "canonical_brand_tokens": [
+          "tripbee"
+        ],
+        "matched_brand_tokens": [
+          "tripbee"
+        ]
+      }
+    },
+    {
+      "app_key": "tripbee",
+      "app_store_id": "6787754435",
+      "canonical_brand": "TripBee Pro: Trip Planner",
+      "support_url": "https://alice51849.github.io/tripbee-support/",
+      "privacy_url": "https://alice51849.github.io/tripbee-support/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/tripbee-support/",
+        "fetched_url": "https://alice51849.github.io/tripbee-support/",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 18382,
+        "content_sha256": "ae73fe38a3966a93909e07995433c05b1f2369f32e111af708d931616e57fb8f",
+        "canonical_brand_tokens": [
+          "tripbee"
+        ],
+        "matched_brand_tokens": [
+          "tripbee"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/tripbee-support/privacy.html",
+        "fetched_url": "https://alice51849.github.io/tripbee-support/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 16496,
+        "content_sha256": "00518b97ef0b9a0572aa4896ffa387177c016c56dd21827fa481974762486760",
+        "canonical_brand_tokens": [
+          "tripbee"
+        ],
+        "matched_brand_tokens": [
+          "tripbee"
+        ]
+      }
+    },
+    {
+      "app_key": "unblurry",
+      "app_store_id": "6782275018",
+      "canonical_brand": "Unblurry",
+      "support_url": "https://alice51849.github.io/unblurry-support/support.html",
+      "privacy_url": "https://alice51849.github.io/unblurry-support/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/unblurry-support/support.html",
+        "fetched_url": "https://alice51849.github.io/unblurry-support/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 15218,
+        "content_sha256": "8e892d1c871364d5040b0e38274eedcda6702412d69308aef9d4ce1d658a9c6d",
+        "canonical_brand_tokens": [
+          "unblurry"
+        ],
+        "matched_brand_tokens": [
+          "unblurry"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/unblurry-support/privacy.html",
+        "fetched_url": "https://alice51849.github.io/unblurry-support/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 14744,
+        "content_sha256": "de0e4c6ad56abd972acf532bf2e5f4531ba6d754525abb029f983e002d33a7d4",
+        "canonical_brand_tokens": [
+          "unblurry"
+        ],
+        "matched_brand_tokens": [
+          "unblurry"
+        ]
+      }
+    },
+    {
+      "app_key": "wifiaid",
+      "app_store_id": "6790467886",
+      "canonical_brand": "WiFi Aid",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/support.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 10109,
+        "content_sha256": "ac27c8c35454cc4ff3f8da3d31278a026b13be77cfb3c9cbc90ba800fa10b816",
+        "canonical_brand_tokens": [
+          "wifi",
+          "aid"
+        ],
+        "matched_brand_tokens": [
+          "wifi",
+          "aid"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/privacy.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 9608,
+        "content_sha256": "aee0498b6ad3bab450bce26a7b64ec85f9dc2f07cc4aaf64d5fb09337c6c7ad2",
+        "canonical_brand_tokens": [
+          "wifi",
+          "aid"
+        ],
+        "matched_brand_tokens": [
+          "wifi",
+          "aid"
+        ]
+      }
+    },
+    {
+      "app_key": "wifiaidlite",
+      "app_store_id": "6793414462",
+      "canonical_brand": "WiFi Aid Lite",
+      "support_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/support.html",
+        "fetched_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 13298,
+        "content_sha256": "5a531613186788a408d74dd876fce2d0fe05dd566b43710d5cae6635242a5e18",
+        "canonical_brand_tokens": [
+          "wifi",
+          "aid"
+        ],
+        "matched_brand_tokens": [
+          "wifi",
+          "aid"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/privacy.html",
+        "fetched_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 13352,
+        "content_sha256": "0712b358322aa1a04eecd37b8703635ad7ba2cc293ef9ee1547084cc860a6450",
+        "canonical_brand_tokens": [
+          "wifi",
+          "aid"
+        ],
+        "matched_brand_tokens": [
+          "wifi",
+          "aid"
+        ]
+      }
+    },
+    {
+      "app_key": "wordmatelite",
+      "app_store_id": "6797601720",
+      "canonical_brand": "Wordmate Lite",
+      "support_url": "https://alice51849.github.io/app/wordmate-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/wordmate-lite/en-US/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/app/wordmate-lite/en-US/support.html",
+        "fetched_url": "https://alice51849.github.io/app/wordmate-lite/en-US/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 22666,
+        "content_sha256": "efad370755731304c40e504b068a068bed1b38fc4058dce87846bdf787e08587",
+        "canonical_brand_tokens": [
+          "wordmate"
+        ],
+        "matched_brand_tokens": [
+          "wordmate"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/app/wordmate-lite/en-US/privacy.html",
+        "fetched_url": "https://alice51849.github.io/app/wordmate-lite/en-US/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 22045,
+        "content_sha256": "a209328d430e9c903354c4f8eb33e335b36fa628ae6fb32c20b6a82b2a403567",
+        "canonical_brand_tokens": [
+          "wordmate"
+        ],
+        "matched_brand_tokens": [
+          "wordmate"
+        ]
+      }
+    },
+    {
+      "app_key": "wordmate",
+      "app_store_id": "6789917808",
+      "canonical_brand": "Wordmate: Learn 44 Languages",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/privacy.html",
+      "support_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/support.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/support.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 3751,
+        "content_sha256": "37cbb969bbb35102845294e9a89cd2be521948723abfb99e2463279e3bcc6a1c",
+        "canonical_brand_tokens": [
+          "wordmate"
+        ],
+        "matched_brand_tokens": [
+          "wordmate"
+        ]
+      },
+      "privacy_receipt": {
+        "requested_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/privacy.html",
+        "fetched_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/privacy.html",
+        "http_status": 200,
+        "owner_host": "alice51849.github.io",
+        "content_length": 3916,
+        "content_sha256": "0a1aedd932dc386e26bf37b9cc45f1bc6c2566ec2954f11d11b767458e99ed09",
+        "canonical_brand_tokens": [
+          "wordmate"
+        ],
+        "matched_brand_tokens": [
+          "wordmate"
+        ]
+      }
+    }
+  ]
+}

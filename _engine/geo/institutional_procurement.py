@@ -14,6 +14,7 @@ from pathlib import Path
 import re
 import sys
 from typing import Any, Iterable
+import unicodedata
 from urllib.parse import parse_qs, urlsplit
 import xml.etree.ElementTree as ET
 
@@ -92,6 +93,81 @@ ALLOWED_EMAIL = "hourstag.app@gmail.com"
 ID_RE = re.compile(r"\d{9,12}")
 BUNDLE_ID_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9.-]+")
 CAMPAIGN_TOKEN_RE = re.compile(r"[A-Za-z0-9_]{1,30}")
+SHA256_RE = re.compile(r"[0-9a-f]{64}")
+APPLE_LOOKUP_SELLER_NAME = "Guan Feng Lai"
+REQUIRED_PROHIBITED_CLAIM_FRAGMENTS = {
+    "apple certified",
+    "apple-approved",
+    "education certified",
+    "mdm certified",
+    "available in apple school manager",
+    "available in apple business manager",
+    "school approved",
+    "institution approved",
+    "volume discount",
+    "institutional discount",
+}
+REQUIRED_INDEPENDENT_SOURCE_KEYS = {
+    "apple_lookup_receipt",
+    "owner_support_registry",
+    "portfolio_receipt",
+}
+REQUIRED_OFFICIAL_REFERENCE_PINS = {
+    "apple-content-distribution": {
+        "publisher": "Apple",
+        "url": (
+            "https://support.apple.com/guide/deployment/"
+            "intro-to-content-distribution-depe1553f932/web"
+        ),
+        "supports": (
+            "Apple School Manager or Apple Business Manager can acquire "
+            "eligible paid and free App Store apps through Apps and Books.",
+            "Apps can be assigned to devices or users through device management.",
+            "In-app purchases and subscriptions are not compatible with volume "
+            "purchasing, managed apps, or Managed Apple Accounts.",
+        ),
+    },
+    "apple-managed-apps": {
+        "publisher": "Apple",
+        "url": (
+            "https://support.apple.com/guide/deployment/"
+            "distribute-managed-apps-dep575bfed86/web"
+        ),
+        "supports": (
+            "A device management service must assign a device-based or "
+            "user-based licence before installing an Apps and Books app.",
+            "Managed apps can be required or optional, and supervised devices "
+            "can install them silently.",
+        ),
+    },
+    "microsoft-intune-direct-store": {
+        "publisher": "Microsoft",
+        "url": (
+            "https://learn.microsoft.com/en-us/intune/app-management/"
+            "deployment/add-store-ios"
+        ),
+        "supports": (
+            "The direct iOS Store app method can assign only apps that are "
+            "free of charge in the App Store.",
+            "Paid apps should use Apple's volume-purchase path.",
+        ),
+    },
+    "microsoft-intune-volume-purchase": {
+        "publisher": "Microsoft",
+        "url": (
+            "https://learn.microsoft.com/en-us/intune/app-management/"
+            "deployment/manage-vpp-apple"
+        ),
+        "supports": (
+            "Intune synchronises Apps and Books location tokens from Apple "
+            "Business Manager or Apple School Manager.",
+            "Apple Business Manager can acquire both free and paid App Store "
+            "apps for managed distribution.",
+            "Device-licensed apps are installed and updated through the MDM "
+            "channel.",
+        ),
+    },
+}
 ENGLISH_FALLBACK_WORD_RE = re.compile(
     r"(?i)\b(?:best|useful|should|before|without|with|for|and|the|is|"
     r"built|free|start|one-time|unlock|subscription|track|where|money|"
@@ -142,9 +218,14 @@ def _load_manifest(pages: Path) -> dict[str, Any]:
         raise BlockedNotDeployable("Unsupported procurement manifest version")
     if manifest.get("release_status") != "CANDIDATE_NOT_DEPLOYED":
         raise BlockedNotDeployable("Candidate must remain explicitly not deployed")
+    if manifest.get("apple_lookup_seller_name") != APPLE_LOOKUP_SELLER_NAME:
+        raise BlockedNotDeployable("Apple Lookup seller identity pin differs")
     source_files = manifest.get("source_files")
     if not isinstance(source_files, dict) or not source_files:
         raise BlockedNotDeployable("Manifest has no pinned source files")
+    if not REQUIRED_INDEPENDENT_SOURCE_KEYS <= set(source_files):
+        raise BlockedNotDeployable("Manifest lacks independent evidence pins")
+    today = _today()
     for key, record in source_files.items():
         if not isinstance(record, dict):
             raise BlockedNotDeployable(f"Invalid source pin: {key}")
@@ -159,8 +240,42 @@ def _load_manifest(pages: Path) -> dict[str, Any]:
             raise BlockedNotDeployable(
                 f"Source SHA drift for {relative}: expected={expected} actual={actual}"
             )
+        if key in REQUIRED_INDEPENDENT_SOURCE_KEYS:
+            try:
+                checked_on = date.fromisoformat(str(record["checked_on"]))
+                expires_on = date.fromisoformat(str(record["expires_on"]))
+            except (KeyError, ValueError) as error:
+                raise BlockedNotDeployable(
+                    f"Invalid independent source dates: {key}"
+                ) from error
+            max_age_days = int(record.get("max_age_days", 0))
+            if (
+                max_age_days < 1
+                or max_age_days > 30
+                or expires_on != checked_on + timedelta(days=max_age_days)
+            ):
+                raise BlockedNotDeployable(
+                    f"Independent source expiry differs: {key}"
+                )
+            if today < checked_on or today > expires_on:
+                raise BlockedNotDeployable(
+                    f"Independent source expired or future-dated: {key}"
+                )
+    _validate_prohibited_claims(manifest)
     _validate_official_source_expiry(manifest)
     return manifest
+
+
+def _validate_prohibited_claims(manifest: dict[str, Any]) -> None:
+    prohibited = manifest.get("prohibited_claim_fragments")
+    if (
+        not isinstance(prohibited, list)
+        or len(prohibited) != len(set(prohibited))
+        or set(prohibited) != REQUIRED_PROHIBITED_CLAIM_FRAGMENTS
+    ):
+        raise BlockedNotDeployable(
+            "Prohibited institutional claim set differs from required pins"
+        )
 
 
 def _validate_official_source_expiry(manifest: dict[str, Any]) -> None:
@@ -171,10 +286,15 @@ def _validate_official_source_expiry(manifest: dict[str, Any]) -> None:
     max_age_days = int(policy.get("max_age_days", 0))
     if max_age_days < 1 or max_age_days > 30:
         raise BlockedNotDeployable("Official-source max age must be 1-30 days")
-    allowed_hosts = {
-        "Apple": {"support.apple.com"},
-        "Microsoft": {"learn.microsoft.com"},
+    if not references:
+        raise BlockedNotDeployable("Official references cannot be empty")
+    reference_ids = {
+        str(reference.get("id", ""))
+        for reference in references
+        if isinstance(reference, dict)
     }
+    if reference_ids != set(REQUIRED_OFFICIAL_REFERENCE_PINS):
+        raise BlockedNotDeployable("Official reference ID set differs")
     seen: set[str] = set()
     today = _today()
     for reference in references:
@@ -182,9 +302,18 @@ def _validate_official_source_expiry(manifest: dict[str, Any]) -> None:
             raise BlockedNotDeployable("Invalid official reference")
         source_id = str(reference.get("id", ""))
         publisher = str(reference.get("publisher", ""))
-        if not source_id or source_id in seen or publisher not in allowed_hosts:
+        if not source_id or source_id in seen:
             raise BlockedNotDeployable("Invalid official reference identity")
         seen.add(source_id)
+        expected = REQUIRED_OFFICIAL_REFERENCE_PINS[source_id]
+        if (
+            publisher != expected["publisher"]
+            or str(reference.get("url", "")) != expected["url"]
+            or tuple(reference.get("supports", [])) != expected["supports"]
+        ):
+            raise BlockedNotDeployable(
+                f"Official reference pin differs: {source_id}"
+            )
         try:
             checked_on = date.fromisoformat(str(reference["checked_on"]))
             expires_on = date.fromisoformat(str(reference["expires_on"]))
@@ -201,7 +330,8 @@ def _validate_official_source_expiry(manifest: dict[str, Any]) -> None:
                 f"Official source expired or future-dated: {source_id}"
             )
         parts = urlsplit(str(reference.get("url", "")))
-        if parts.scheme != "https" or parts.netloc not in allowed_hosts[publisher]:
+        expected_host = urlsplit(str(expected["url"])).netloc
+        if parts.scheme != "https" or parts.netloc != expected_host:
             raise BlockedNotDeployable(
                 f"Official source must stay on first-party host: {source_id}"
             )
@@ -214,6 +344,13 @@ def _validate_official_source_expiry(manifest: dict[str, Any]) -> None:
             raise BlockedNotDeployable(
                 f"Official source has no pinned policy facts: {source_id}"
             )
+    if {
+        str(reference["publisher"])
+        for reference in references
+    } != {"Apple", "Microsoft"}:
+        raise BlockedNotDeployable(
+            "Official references must include Apple and Microsoft"
+        )
 
 
 def _native_script_ratio(locale: str, values: Iterable[str]) -> float:
@@ -442,6 +579,8 @@ def _validate_evidence_freshness(
     manifest: dict[str, Any],
     lookup: dict[str, Any],
     storefront: dict[str, Any],
+    apple_receipt: dict[str, Any],
+    owner_registry: dict[str, Any],
 ) -> None:
     policy = manifest["official_source_policy"]
     today = _today()
@@ -456,6 +595,16 @@ def _validate_evidence_freshness(
             storefront.get("checked_at"),
             int(policy.get("storefront_max_age_days", 0)),
         ),
+        (
+            "Apple Lookup receipt",
+            apple_receipt.get("fetched_at"),
+            int(policy.get("apple_lookup_receipt_max_age_days", 0)),
+        ),
+        (
+            "owner support registry",
+            owner_registry.get("checked_at"),
+            int(policy.get("owner_support_registry_max_age_days", 0)),
+        ),
     )
     for label, checked_at, max_age_days in evidence:
         if max_age_days < 1 or max_age_days > 30:
@@ -466,6 +615,40 @@ def _validate_evidence_freshness(
             raise BlockedNotDeployable(
                 f"Expired or future-dated evidence: {label} age={age}"
             )
+    for label, payload, start_key in (
+        ("Apple Lookup receipt", apple_receipt, "fetched_at"),
+        ("owner support registry", owner_registry, "checked_at"),
+    ):
+        try:
+            start = datetime.fromisoformat(
+                str(payload[start_key]).replace("Z", "+00:00")
+            )
+            expires = datetime.fromisoformat(
+                str(payload["expires_at"]).replace("Z", "+00:00")
+            )
+        except (KeyError, ValueError) as error:
+            raise BlockedNotDeployable(
+                f"Invalid internal evidence expiry: {label}"
+            ) from error
+        max_age = int(
+            policy[
+                "apple_lookup_receipt_max_age_days"
+                if label == "Apple Lookup receipt"
+                else "owner_support_registry_max_age_days"
+            ]
+        )
+        if expires != start + timedelta(days=max_age):
+            raise BlockedNotDeployable(
+                f"Internal evidence expiry differs: {label}"
+            )
+    if not (
+        lookup.get("checked_at")
+        == apple_receipt.get("fetched_at")
+        == owner_registry.get("checked_at")
+    ):
+        raise BlockedNotDeployable(
+            "Public lookup and independent receipts were not captured together"
+        )
 
 
 def _campaign_attribution(record: dict[str, Any], app_id: str) -> dict[str, str]:
@@ -497,25 +680,184 @@ def _campaign_attribution(record: dict[str, Any], app_id: str) -> dict[str, str]
     }
 
 
-def _load_sources(
-    pages: Path,
+def _normalize_brand(value: Any) -> str:
+    normalized = unicodedata.normalize("NFKC", str(value)).casefold()
+    return " ".join(re.findall(r"[a-z0-9+]+", normalized))
+
+
+def _brand_matches(track_name: str, candidates: Iterable[str]) -> bool:
+    track = _normalize_brand(track_name)
+    return any(
+        track == brand or track.startswith(f"{brand} ")
+        for brand in (_normalize_brand(value) for value in candidates)
+        if brand
+    )
+
+
+def _portfolio_receipt_records(
+    receipt: dict[str, Any],
+    expected_count: int,
+) -> dict[str, dict[str, Any]]:
+    normalized = deepcopy(receipt)
+    digest = str(normalized.pop("content_digest", ""))
+    records = receipt.get("records")
+    try:
+        captured_on = date.fromisoformat(str(receipt["captured_on"]))
+        expires_on = date.fromisoformat(str(receipt["expires_on"]))
+    except (KeyError, ValueError) as error:
+        raise BlockedNotDeployable(
+            "Invalid canonical portfolio receipt dates"
+        ) from error
+    if (
+        receipt.get("schema_version") != 1
+        or receipt.get("source_kind") != "canonical_app_portfolio_receipt"
+        or receipt.get("source_path") != "00_Standards/app-portfolio.md"
+        or SHA256_RE.fullmatch(str(receipt.get("source_sha256", ""))) is None
+        or expires_on != captured_on + timedelta(days=7)
+        or digest != f"sha256:{_canonical_digest(normalized)}"
+        or receipt.get("record_count") != expected_count
+        or not isinstance(records, list)
+        or len(records) != expected_count
+    ):
+        raise BlockedNotDeployable("Invalid canonical portfolio receipt")
+    by_key: dict[str, dict[str, Any]] = {}
+    bundles: set[str] = set()
+    for record in records:
+        if not isinstance(record, dict):
+            raise BlockedNotDeployable("Invalid canonical portfolio record")
+        key = str(record.get("app_key", ""))
+        bundle = str(record.get("bundle_id", ""))
+        portfolio_id = record.get("portfolio_app_store_id")
+        if (
+            not key
+            or key in by_key
+            or BUNDLE_ID_RE.fullmatch(bundle) is None
+            or bundle in bundles
+            or (
+                portfolio_id is not None
+                and ID_RE.fullmatch(str(portfolio_id)) is None
+            )
+            or SHA256_RE.fullmatch(
+                str(record.get("source_line_sha256", ""))
+            )
+            is None
+            or int(record.get("source_line_number", 0)) <= 0
+            or not str(record.get("portfolio_name", "")).strip()
+            or not str(record.get("canonical_name", "")).strip()
+        ):
+            raise BlockedNotDeployable(
+                f"Invalid canonical portfolio identity: {key}"
+            )
+        by_key[key] = record
+        bundles.add(bundle)
+    return by_key
+
+
+def _receipt_records(
+    receipt: dict[str, Any],
+    expected_count: int,
+) -> dict[str, dict[str, Any]]:
+    if (
+        receipt.get("schema_version") != 1
+        or receipt.get("publisher") != "Apple"
+        or receipt.get("source_kind") != "itunes_lookup_raw_response"
+    ):
+        raise BlockedNotDeployable("Invalid Apple Lookup receipt metadata")
+    request = urlsplit(str(receipt.get("request_url", "")))
+    if request.scheme != "https" or request.netloc != "itunes.apple.com":
+        raise BlockedNotDeployable("Apple Lookup receipt host differs")
+    response = receipt.get("response")
+    if not isinstance(response, dict):
+        raise BlockedNotDeployable("Apple Lookup receipt response is missing")
+    canonical = str(receipt.get("response_canonical_sha256", ""))
+    if canonical != _canonical_digest(response):
+        raise BlockedNotDeployable("Apple Lookup receipt canonical digest differs")
+    results = response.get("results")
+    if (
+        not isinstance(results, list)
+        or response.get("resultCount") != expected_count
+        or len(results) != expected_count
+    ):
+        raise BlockedNotDeployable("Apple Lookup receipt must contain exact roster")
+    records = {
+        str(item.get("trackId")): item
+        for item in results
+        if isinstance(item, dict)
+    }
+    if len(records) != expected_count:
+        raise BlockedNotDeployable("Apple Lookup receipt has duplicate identities")
+    return records
+
+
+def _owner_registry_records(
+    registry: dict[str, Any],
+    expected_count: int,
+) -> dict[str, dict[str, Any]]:
+    allowed_hosts = {"alice51849.github.io", "open.cait518.cc"}
+    records = registry.get("records")
+    if (
+        registry.get("schema_version") != 1
+        or registry.get("source_kind")
+        != "first_party_owner_page_http_receipts"
+        or set(registry.get("allowed_owner_hosts", [])) != allowed_hosts
+        or registry.get("record_count") != expected_count
+        or not isinstance(records, list)
+        or len(records) != expected_count
+    ):
+        raise BlockedNotDeployable("Invalid owner support registry metadata")
+    by_id: dict[str, dict[str, Any]] = {}
+    for record in records:
+        if not isinstance(record, dict):
+            raise BlockedNotDeployable("Invalid owner support record")
+        app_id = str(record.get("app_store_id", ""))
+        if ID_RE.fullmatch(app_id) is None or app_id in by_id:
+            raise BlockedNotDeployable("Duplicate owner support identity")
+        for kind in ("support", "privacy"):
+            url = str(record.get(f"{kind}_url", ""))
+            receipt = record.get(f"{kind}_receipt")
+            if not isinstance(receipt, dict):
+                raise BlockedNotDeployable(
+                    f"Missing {kind} owner receipt: {app_id}"
+                )
+            parts = urlsplit(url)
+            fetched = urlsplit(str(receipt.get("fetched_url", "")))
+            if (
+                parts.scheme != "https"
+                or parts.netloc not in allowed_hosts
+                or receipt.get("requested_url") != url
+                or receipt.get("http_status") != 200
+                or receipt.get("owner_host") not in allowed_hosts
+                or fetched.scheme != "https"
+                or fetched.netloc not in allowed_hosts
+                or SHA256_RE.fullmatch(
+                    str(receipt.get("content_sha256", ""))
+                )
+                is None
+                or int(receipt.get("content_length", 0)) <= 0
+                or not receipt.get("canonical_brand_tokens")
+                or not receipt.get("matched_brand_tokens")
+                or set(receipt["matched_brand_tokens"])
+                != set(receipt["canonical_brand_tokens"])
+            ):
+                raise BlockedNotDeployable(
+                    f"Invalid {kind} owner receipt: {app_id}"
+                )
+        by_id[app_id] = record
+    return by_id
+
+
+def _validate_identity_evidence(
     manifest: dict[str, Any],
-) -> tuple[
-    list[dict[str, Any]],
-    dict[str, dict[str, Any]],
-    dict[tuple[str, str], dict[str, Any]],
-    dict[str, Any],
-]:
-    paths = _source_paths(pages, manifest)
-    finder = _read_json(paths["verified_catalog"])
-    lookup = _read_json(paths["public_lookup"])
-    intents = _read_json(paths["publisher_intent"])
-    intent_overrides = _read_json(paths["intent_overrides"])
-    storefront = _read_json(paths["storefront_state"])
+    finder: dict[str, Any],
+    lookup: dict[str, Any],
+    storefront: dict[str, Any],
+    apple_receipt: dict[str, Any],
+    owner_registry: dict[str, Any],
+    portfolio_receipt: dict[str, Any],
+) -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]]]:
+    expected_count = int(manifest["expected_app_count"])
     apps = finder.get("apps")
     lookup_records = lookup.get("records")
-    expected_count = int(manifest["expected_app_count"])
-    _validate_evidence_freshness(manifest, lookup, storefront)
     if (
         not isinstance(apps, list)
         or len(apps) != expected_count
@@ -548,38 +890,109 @@ def _load_sources(
             raise BlockedNotDeployable(f"Invalid verified app identity: {key}")
         apps_by_key[key] = app
         app_ids.add(app_id)
+
     storefront_ids = {
         str(app_id) for app_id in storefront.get("app_ids", [])
     }
-    if storefront_ids != app_ids:
-        raise BlockedNotDeployable(
-            "Storefront snapshot roster differs from verified roster"
-        )
-
+    receipt_by_id = _receipt_records(apple_receipt, expected_count)
+    owner_by_id = _owner_registry_records(owner_registry, expected_count)
     lookup_by_id = {
         str(record.get("app_store_id")): record
         for record in lookup_records
         if isinstance(record, dict)
     }
-    if set(lookup_by_id) != app_ids:
-        raise BlockedNotDeployable("Public lookup roster differs from verified roster")
+    if (
+        storefront_ids != app_ids
+        or set(receipt_by_id) != app_ids
+        or set(owner_by_id) != app_ids
+        or set(lookup_by_id) != app_ids
+    ):
+        raise BlockedNotDeployable("Independent evidence roster differs")
+
+    portfolio_by_key = _portfolio_receipt_records(
+        portfolio_receipt,
+        expected_count,
+    )
+    if set(portfolio_by_key) != set(apps_by_key):
+        raise BlockedNotDeployable(
+            "Canonical portfolio receipt roster differs"
+        )
+    aliases = manifest.get("canonical_brand_aliases", {})
+    if not isinstance(aliases, dict) or set(aliases) - set(apps_by_key):
+        raise BlockedNotDeployable("Invalid canonical brand aliases")
     for key, app in apps_by_key.items():
         app_id = str(app["app_store_id"])
         evidence = lookup_by_id[app_id]
+        raw = receipt_by_id[app_id]
+        owner = owner_by_id[app_id]
+        portfolio = portfolio_by_key[key]
+        raw_bundle = str(raw.get("bundleId", ""))
+        raw_name = str(raw.get("trackName", "")).strip()
+        track_url = urlsplit(str(raw.get("trackViewUrl", "")))
+        supported_devices = [
+            str(value) for value in raw.get("supportedDevices", [])
+        ]
+        iphone_supported = any(
+            value.startswith("iPhone") for value in supported_devices
+        )
+        ipad_supported = any(
+            value.startswith("iPad") for value in supported_devices
+        )
+        expected_platforms = (
+            ["iPhone", "iPad"] if ipad_supported else ["iPhone"]
+        )
+        brand_candidates = [
+            str(app["name"]),
+            str(portfolio["portfolio_name"]),
+            *[str(value) for value in aliases.get(key, [])],
+        ]
+        if (
+            str(raw.get("trackId")) != app_id
+            or BUNDLE_ID_RE.fullmatch(raw_bundle) is None
+            or raw_bundle != portfolio["bundle_id"]
+            or portfolio.get("verified_app_store_id") != app_id
+            or (
+                portfolio.get("portfolio_app_store_id") is not None
+                and str(portfolio["portfolio_app_store_id"]) != app_id
+            )
+            or portfolio.get("canonical_name") != app.get("name")
+            or not raw_name
+            or not _brand_matches(raw_name, brand_candidates)
+            or raw.get("sellerName") != manifest.get("apple_lookup_seller_name")
+            or raw.get("artistName") != manifest.get("apple_lookup_seller_name")
+            or track_url.scheme != "https"
+            or track_url.netloc != "apps.apple.com"
+            or f"id{app_id}" not in track_url.path
+            or not iphone_supported
+            or not supported_devices
+        ):
+            raise BlockedNotDeployable(
+                f"Apple receipt and portfolio identity differ: {key}"
+            )
         expected_url = f"https://apps.apple.com/app/id{app_id}"
-        bundle_id = str(evidence.get("bundle_id", ""))
+        expected_lookup = (
+            f"https://itunes.apple.com/lookup?id={app_id}"
+            "&country=us&entity=software"
+        )
+        expected_page = f"https://apps.apple.com/us/app/id{app_id}"
         if (
             evidence.get("canonical_app_store_url") != expected_url
-            or not str(evidence.get("public_name", "")).strip()
-            or BUNDLE_ID_RE.fullmatch(bundle_id) is None
-            or "." not in bundle_id
-            or evidence.get("platforms") not in (
-                ["iPhone"],
-                ["iPhone", "iPad"],
-            )
-            or not isinstance(evidence.get("ipad_supported"), bool)
+            or evidence.get("lookup_url") != expected_lookup
+            or evidence.get("app_store_page_url") != expected_page
+            or evidence.get("bundle_id") != raw_bundle
+            or evidence.get("public_name") != raw_name
+            or evidence.get("platforms") != expected_platforms
+            or evidence.get("ipad_supported")
+            != ("iPad" in evidence.get("platforms", []))
+            or evidence.get("ipad_supported") is not ipad_supported
+            or owner.get("app_key") != key
+            or owner.get("canonical_brand") != str(app["name"])
+            or evidence.get("support_url") != owner.get("support_url")
+            or evidence.get("privacy_url") != owner.get("privacy_url")
         ):
-            raise BlockedNotDeployable(f"Invalid public lookup identity: {key}")
+            raise BlockedNotDeployable(
+                f"Public lookup cross-source identity differs: {key}"
+            )
         expected_download = (
             "paid_download"
             if app.get("purchase_model") == "paid_upfront"
@@ -589,11 +1002,65 @@ def _load_sources(
             raise BlockedNotDeployable(
                 f"Purchase classification differs from public lookup: {key}"
             )
-        for field in ("support_url", "privacy_url", "lookup_url"):
-            value = str(evidence.get(field, ""))
-            parts = urlsplit(value)
+        for field in (
+            "support_url",
+            "privacy_url",
+            "lookup_url",
+            "app_store_page_url",
+        ):
+            parts = urlsplit(str(evidence.get(field, "")))
             if parts.scheme != "https" or not parts.netloc:
                 raise BlockedNotDeployable(f"Invalid {field} for {key}")
+
+    return (
+        sorted(
+            apps_by_key.values(),
+            key=lambda app: (
+                str(
+                    lookup_by_id[str(app["app_store_id"])]["public_name"]
+                ).casefold(),
+                str(app["app_store_id"]),
+            ),
+        ),
+        lookup_by_id,
+    )
+
+
+def _load_sources(
+    pages: Path,
+    manifest: dict[str, Any],
+) -> tuple[
+    list[dict[str, Any]],
+    dict[str, dict[str, Any]],
+    dict[tuple[str, str], dict[str, Any]],
+    dict[str, Any],
+]:
+    paths = _source_paths(pages, manifest)
+    finder = _read_json(paths["verified_catalog"])
+    lookup = _read_json(paths["public_lookup"])
+    intents = _read_json(paths["publisher_intent"])
+    intent_overrides = _read_json(paths["intent_overrides"])
+    storefront = _read_json(paths["storefront_state"])
+    apple_receipt = _read_json(paths["apple_lookup_receipt"])
+    owner_registry = _read_json(paths["owner_support_registry"])
+    portfolio_receipt = _read_json(paths["portfolio_receipt"])
+    _validate_evidence_freshness(
+        manifest,
+        lookup,
+        storefront,
+        apple_receipt,
+        owner_registry,
+    )
+    apps, lookup_by_id = _validate_identity_evidence(
+        manifest,
+        finder,
+        lookup,
+        storefront,
+        apple_receipt,
+        owner_registry,
+        portfolio_receipt,
+    )
+    apps_by_key = {str(app["key"]): app for app in apps}
 
     by_pair = _intent_records(intents, set(apps_by_key))
     by_pair = _apply_intent_overrides(
@@ -618,19 +1085,18 @@ def _load_sources(
             )
         _campaign_attribution(record, str(app["app_store_id"]))
     return (
-        sorted(
-            apps_by_key.values(),
-            key=lambda app: (
-                str(lookup_by_id[str(app["app_store_id"])]["public_name"]).casefold(),
-                str(app["app_store_id"]),
-            ),
-        ),
+        apps,
         lookup_by_id,
         by_pair,
         {
             "lookup": lookup,
             "storefront": storefront,
             "finder": finder,
+            "apple_receipt": apple_receipt,
+            "owner_registry": owner_registry,
+            "portfolio_receipt": manifest["source_files"][
+                "portfolio_receipt"
+            ],
         },
     )
 
@@ -763,14 +1229,13 @@ def sitemap_url() -> str:
 def _source_digest(manifest: dict[str, Any]) -> str:
     normalized = {
         "source_files": {
-            key: {
-                "path": record["path"],
-                "sha256": record["sha256"],
-            }
+            key: dict(record)
             for key, record in sorted(manifest["source_files"].items())
         },
         "official_source_policy": manifest["official_source_policy"],
         "official_references": manifest["official_references"],
+        "apple_lookup_seller_name": manifest["apple_lookup_seller_name"],
+        "canonical_brand_aliases": manifest["canonical_brand_aliases"],
         "canary": manifest["canary"],
         "measurement": manifest["measurement"],
     }
@@ -907,7 +1372,18 @@ def _localized_apps(
                 "lookup_provenance": {
                     "identity_platform_download": str(evidence["lookup_url"]),
                     "support_privacy": str(evidence["app_store_page_url"]),
-                    "method": "public_get",
+                    "method": "cross_validated_public_get",
+                    "public_name_rule": (
+                        "exact_apple_us_trackName_and_canonical_brand_prefix"
+                    ),
+                    "owner_url_rule": (
+                        "exact_first_party_registry_url_and_brand_receipt"
+                    ),
+                    "independent_pins": [
+                        "apple_lookup_receipt",
+                        "owner_support_registry",
+                        "portfolio_receipt",
+                    ],
                 },
                 "verified_live": True,
                 "institutional_exposure_verified": False,
@@ -935,6 +1411,9 @@ def _data_payload(
 ) -> dict[str, Any]:
     lookup_payload = source_context["lookup"]
     storefront = source_context["storefront"]
+    apple_receipt = source_context["apple_receipt"]
+    owner_registry = source_context["owner_registry"]
+    portfolio_receipt = source_context["portfolio_receipt"]
     localized_apps = _localized_apps(
         locale,
         apps,
@@ -1007,10 +1486,16 @@ def _data_payload(
         "source_state": {
             "public_lookup_checked_at": lookup_payload["checked_at"],
             "storefront_snapshot_checked_at": storefront["checked_at"],
+            "apple_lookup_receipt_fetched_at": apple_receipt["fetched_at"],
+            "apple_lookup_receipt_expires_at": apple_receipt["expires_at"],
+            "owner_support_registry_checked_at": owner_registry["checked_at"],
+            "owner_support_registry_expires_at": owner_registry["expires_at"],
+            "portfolio_receipt_sha256": portfolio_receipt["sha256"],
+            "portfolio_receipt_expires_on": portfolio_receipt["expires_on"],
             "official_source_max_age_days": manifest[
                 "official_source_policy"
             ]["max_age_days"],
-            "lookup_method": "public_get_only",
+            "lookup_method": "public_get_plus_pinned_cross_source_receipts",
             "institutional_portal_login": False,
             "deployment_or_submission": False,
         },

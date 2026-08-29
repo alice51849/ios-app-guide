@@ -47,13 +47,13 @@ import gen_standard_site as generator  # noqa: E402
 
 MIRROR_SHA256 = {
     "_engine/social/gen_standard_site.py": (
-        "2e0e0ad340cb716001bcc467c5ad396b363e2882c1eb3025606bc97998b843cf"
+        "56fa242fb822cc3683183c24e49c99d24fd9390eaa7d1833971e4ccfc08e3546"
     ),
     "_engine/social/standard_site_publish.py": (
-        "6328db1b26d87c9ceda5dd13cd7db2a9f3c07ac65962dfce0ba3bebc14b3b246"
+        "de28ff305b368c0ce5bf8c07326639dbfbe015120a7e696101b7aea33bc25176"
     ),
     "_engine/social/tests/test_standard_site.py": (
-        "245a747da439929ebd0c862ed0180232a41e7737d889f09810569baae6ad8a59"
+        "84fa7bb25afb14b08516ebdc66ff3482be9557783ac9b46fb9ef96a041c64da3"
     ),
 }
 

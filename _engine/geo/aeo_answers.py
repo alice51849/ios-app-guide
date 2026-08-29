@@ -160,6 +160,44 @@ def safe_list(value: Any, limit: int, default: list[str]) -> list[str]:
     return out or default[:limit]
 
 
+def safe_comparison_rows(
+    value: Any, default: list[dict[str, str]]
+) -> list[dict[str, str]]:
+    if not isinstance(value, list):
+        return default
+    rows: list[dict[str, str]] = []
+    for item in value:
+        if not isinstance(item, dict):
+            continue
+        row = {
+            field: safe_text(item.get(field))
+            for field in ("need", "check", "why")
+        }
+        if all(row.values()):
+            rows.append(row)
+        if len(rows) >= 5:
+            break
+    return rows or default
+
+
+def safe_sources(
+    value: Any, default: list[dict[str, str]]
+) -> list[dict[str, str]]:
+    if not isinstance(value, list):
+        return default
+    sources: list[dict[str, str]] = []
+    for item in value:
+        if not isinstance(item, dict):
+            continue
+        title = safe_text(item.get("title"))
+        url = safe_text(item.get("url"))
+        if title and url.startswith("https://"):
+            sources.append({"title": title, "url": url})
+        if len(sources) >= 5:
+            break
+    return sources or default
+
+
 def app_truth_notes(key: str, app: dict[str, Any]) -> list[str]:
     notes = [
         "Do not mention ratings, download counts, awards, or unsupported claims.",
@@ -573,6 +611,11 @@ def default_content(question: str, key: str) -> dict[str, Any]:
         ],
         "sources": [],
         "page_title": "",
+        "display_question": "",
+        "language": "en",
+        "qa_heading": "FAQ",
+        "emit_faq_schema": True,
+        "publisher_notice": "",
         "primary_resource_url": "",
         "primary_resource_label": "",
         "date_modified": "",
@@ -606,10 +649,27 @@ def normalized_content(raw: dict[str, Any], question: str, key: str) -> dict[str
         "short_answer_paragraphs": safe_list(raw.get("short_answer_paragraphs"), 2, base["short_answer_paragraphs"]),
         "what_to_look_for": safe_list(raw.get("what_to_look_for"), 5, base["what_to_look_for"]),
         "decision_steps": safe_list(raw.get("decision_steps"), 5, base["decision_steps"]),
-        "comparison_rows": base["comparison_rows"],
-        "sources": base["sources"],
+        "comparison_rows": safe_comparison_rows(
+            raw.get("comparison_rows"), base["comparison_rows"]
+        ),
+        "sources": safe_sources(raw.get("sources"), base["sources"]),
         "page_title": safe_text(
             raw.get("page_title"), base.get("page_title", "")
+        ),
+        "display_question": safe_text(
+            raw.get("display_question"), base.get("display_question", "")
+        ),
+        "language": safe_text(raw.get("language"), base.get("language", "en")),
+        "qa_heading": safe_text(
+            raw.get("qa_heading"), base.get("qa_heading", "FAQ")
+        ),
+        "emit_faq_schema": (
+            raw.get("emit_faq_schema")
+            if isinstance(raw.get("emit_faq_schema"), bool)
+            else base.get("emit_faq_schema", True)
+        ),
+        "publisher_notice": safe_text(
+            raw.get("publisher_notice"), base.get("publisher_notice", "")
         ),
         "primary_resource_url": safe_text(
             raw.get("primary_resource_url"),
@@ -626,6 +686,8 @@ def normalized_content(raw: dict[str, Any], question: str, key: str) -> dict[str
         "where_app_fits": safe_text(raw.get("where_app_fits"), base["where_app_fits"]),
         "faq": raw.get("faq") if isinstance(raw.get("faq"), list) else base["faq"],
     }
+    if not re.fullmatch(r"en(?:-[A-Z]{2})?", content["language"]):
+        content["language"] = "en"
     faqs = []
     for item in content["faq"]:
         if isinstance(item, dict):
@@ -773,11 +835,11 @@ def microformat_answer_html(document: str) -> str:
         return document
     html_tag = re.search(r"<html\b[^>]*>", document, re.IGNORECASE)
     if not html_tag or not re.search(
-        r"\slang=[\"']en[\"']",
+        r"\slang=[\"']en(?:-[A-Za-z]{2})?[\"']",
         html_tag.group(0),
         re.IGNORECASE,
     ):
-        raise ValueError("English answer page is missing html[lang=en]")
+        raise ValueError("English answer page is missing html[lang=en or en-*]")
 
     canonical = re.search(
         r"<link\b[^>]*\srel=[\"']canonical[\"'][^>]*>",
@@ -962,10 +1024,16 @@ def render_page(
     )
     app = APPS[key]
     name = app["name"]
-    url = appstore_url(key, ANSWER_CAMPAIGN)
     slug = slugify(question)
+    campaign = gen_store_attribution.campaign_token(
+        f"answers/{slug}.html"
+    )
+    url = appstore_url(key, campaign)
+    identity_url = appstore_url(key)
     canonical = f"{SITE}/answers/{slug}.html"
     title = content.get("page_title") or f"{question}: honest iPhone app buying guide"
+    display_question = content.get("display_question") or question
+    language = content.get("language") or "en"
     meta = concise_meta(content["meta_description"], limit=220, hard_limit=220)
     style = extract_style(effective_pages_root)
     primary_resource_url = content.get("primary_resource_url", "")
@@ -977,21 +1045,45 @@ def render_page(
         "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "iOS App Guide", "item": f"{SITE}/index.html"},
             {"@type": "ListItem", "position": 2, "name": "Answers", "item": f"{SITE}/answers/index.html"},
-            {"@type": "ListItem", "position": 3, "name": question, "item": canonical},
+            {"@type": "ListItem", "position": 3, "name": display_question, "item": canonical},
         ],
     }
-    faq_schema = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {"@type": "Question", "name": item["q"], "acceptedAnswer": {"@type": "Answer", "text": item["a"]}}
-            for item in faq
-        ],
-    }
+    if content.get("emit_faq_schema", True):
+        answer_schema = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {"@type": "Question", "name": item["q"], "acceptedAnswer": {"@type": "Answer", "text": item["a"]}}
+                for item in faq
+            ],
+        }
+    else:
+        answer_schema = {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": display_question,
+            "description": meta,
+            "url": canonical,
+            "mainEntityOfPage": canonical,
+            "inLanguage": language,
+            "author": {
+                "@type": "Organization",
+                "name": "Lumi Studio",
+                "url": f"{SITE}/about.html",
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Lumi Studio",
+                "url": f"{SITE}/about.html",
+            },
+            "about": {"@id": identity_url},
+        }
+        if content.get("date_modified"):
+            answer_schema["dateModified"] = content["date_modified"]
     howto = {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": f"How to choose: {question}",
+        "name": f"How to choose: {display_question}",
         "step": [
             {"@type": "HowToStep", "position": i + 1, "name": step.split(":")[0][:80], "text": step}
             for i, step in enumerate(content["decision_steps"])
@@ -1003,8 +1095,8 @@ def render_page(
         "name": name,
         "operatingSystem": "iOS",
         "applicationCategory": application_category(key),
-        "url": url,
-        "installUrl": url,
+        "url": identity_url,
+        "installUrl": identity_url,
         "description": content["where_app_fits"],
         "featureList": feature_list(key),
     }
@@ -1048,10 +1140,16 @@ def render_page(
         )
         sources_html = f'<h2>Sources and resources</h2><ul class="checklist">{links}</ul>'
     paras = "".join(f"<p>{e(x)}</p>" for x in content["short_answer_paragraphs"])
-    faq_html = "".join(
-        f'<div itemscope itemtype="https://schema.org/Question"><h3 itemprop="name">{e(item["q"])}</h3><div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><p itemprop="text">{e(item["a"])}</p></div></div>'
-        for item in faq
-    )
+    if content.get("emit_faq_schema", True):
+        faq_html = "".join(
+            f'<div itemscope itemtype="https://schema.org/Question"><h3 itemprop="name">{e(item["q"])}</h3><div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><p itemprop="text">{e(item["a"])}</p></div></div>'
+            for item in faq
+        )
+    else:
+        faq_html = "".join(
+            f'<section><h3>{e(item["q"])}</h3><p>{e(item["a"])}</p></section>'
+            for item in faq
+        )
     guide_link = f"{SITE}/guides/{key}.html"
     alt_slug = alternative_hub_slug(key)
     alt_link = f"{SITE}/alternatives/{alt_slug}.html"
@@ -1089,12 +1187,14 @@ def render_page(
         f'<a href="{guide_link}">{e(name)} app guide</a>'
         f"{alt_app_link}"
     )
+    publisher_notice = content.get("publisher_notice") or (
+        "This is a publisher-authored buying guide from the app developer. "
+        "App Store features and prices can change, so confirm details on the "
+        f"listing before purchase.{special_notice}"
+    )
     app_fit = (
         f'<h2>Where {e(name)} fits</h2><p>{e(content["where_app_fits"])}</p>'
-        f'<p>{pills}</p><p class="notice">This is a publisher-authored buying '
-        "guide from the app developer. App Store features and prices can change, "
-        "so confirm details on "
-        f'the listing before purchase.{e(special_notice)}</p>'
+        f'<p>{pills}</p><p class="notice">{e(publisher_notice)}</p>'
     )
     if primary_resource_url:
         article_app_fit = ""
@@ -1120,10 +1220,16 @@ def render_page(
         f'<meta property="og:url" content="{canonical}">'
         '<meta name="twitter:card" content="summary">'
     )
+    eyebrow = (
+        "High-intent answer"
+        if content.get("emit_faq_schema", True)
+        else "First-party decision guide"
+    )
+    qa_heading = content.get("qa_heading") or "FAQ"
     rendered = f'''<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="{e(language)}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(meta)}"><link rel="canonical" href="{canonical}">
-<link rel="alternate" hreflang="en" href="{canonical}">
+<link rel="alternate" hreflang="{e(language)}" href="{canonical}">
 <link rel="alternate" hreflang="x-default" href="{canonical}">
 {social_metadata}{resource_first_meta}<style>
 {style}
@@ -1131,7 +1237,7 @@ def render_page(
 {j(breadcrumb)}
 </script>
 <script type="application/ld+json">
-{j(faq_schema)}
+{j(answer_schema)}
 </script>
 <script type="application/ld+json">
 {j(howto)}
@@ -1144,9 +1250,9 @@ def render_page(
 </script>
 </head>
 <body><header class="top"><div class="wrap nav"><a href="{SITE}/index.html">iOS App Guide</a><nav><a href="{SITE}/answers/index.html">Answers</a> · <a href="{SITE}/tools/">Free tools</a> · <a href="{SITE}/alternatives/">Alternatives</a> · <a href="{SITE}/about.html">About</a></nav></div></header>
-<main><section class="hero wrap"><div class="breadcrumb"><a href="{SITE}/index.html">Home</a> / <a href="{SITE}/answers/index.html">Answers</a></div><div class="eyebrow">High-intent answer</div><h1>{e(question)}</h1><p class="lead">{e(content["lead"])}</p><p>{hero_actions}</p></section>
+<main><section class="hero wrap"><div class="breadcrumb"><a href="{SITE}/index.html">Home</a> / <a href="{SITE}/answers/index.html">Answers</a></div><div class="eyebrow">{e(eyebrow)}</div><h1>{e(display_question)}</h1><p class="lead">{e(content["lead"])}</p><p>{hero_actions}</p></section>
 <section class="wrap grid"><article class="card two answer"><h2>Short answer</h2>{paras}<h2>What to look for before choosing</h2><ul class="checklist">{look}</ul><h2>A practical decision process</h2><ol class="checklist">{steps}</ol><h2>Quick comparison</h2><table><thead><tr><th>Need</th><th>What to check</th><th>Why it matters</th></tr></thead><tbody>{comparison_rows}</tbody></table>{sources_html}{article_app_fit}</article><aside class="card side">{sidebar_html}</aside></section>
-<section class="wrap card"><h2>FAQ</h2>{faq_html}</section>{deferred_app_fit}</main><footer class="footer"><div class="wrap">Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.</div></footer></body></html>'''
+<section class="wrap card"><h2>{e(qa_heading)}</h2>{faq_html}</section>{deferred_app_fit}</main><footer class="footer"><div class="wrap">Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.</div></footer></body></html>'''
     return microformat_answer_html(rendered)
 
 

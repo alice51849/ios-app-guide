@@ -28,6 +28,7 @@ def run(
     keys: list[str] | None = None,
     questions: list[str] | None = None,
     existing_only: bool = False,
+    refresh_navigation: bool = True,
 ) -> dict:
     upgraded: list[str] = []
     created: list[str] = []
@@ -76,7 +77,7 @@ def run(
         raise SystemExit(
             "Unknown question(s): " + ", ".join(sorted(missing_questions))
         )
-    if not dry_run:
+    if not dry_run and refresh_navigation:
         A.regenerate_index()
         A.write_sitemap()
     summary = {
@@ -107,10 +108,16 @@ if __name__ == "__main__":
         action="store_true",
         help="Refresh pages that already exist; never create new slugs.",
     )
+    ap.add_argument(
+        "--no-navigation",
+        action="store_true",
+        help="Refresh only selected answer files; leave index and sitemap unchanged.",
+    )
     args = ap.parse_args()
     run(
         dry_run=args.dry_run,
         keys=args.apps or None,
         questions=args.query or None,
         existing_only=args.existing_only,
+        refresh_navigation=not args.no_navigation,
     )

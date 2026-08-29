@@ -1534,6 +1534,159 @@ def _alternative_facts(q: str, key: str, name: str, app: dict[str, Any]) -> dict
 
 
 # ---------------------------------------------------------------------------
+# Unblurry US owned-content canary.
+#
+# This exact query is intentionally narrower than the generic blur FAQ. Its
+# copy is limited to the verified first-party catalog and behavior present in
+# the shipping app: on-device processing, real preview controls, explicit free
+# export limits, and a non-consumable unlock. It never promises restoration.
+# ---------------------------------------------------------------------------
+_UNBLURRY_US_DECISION_QUERY = "how to choose a unblur photo app"
+
+
+def _unblurry_us_decision_facts(
+    q: str, key: str, name: str
+) -> dict[str, Any] | None:
+    if key != "unblurry" or q.strip() != _UNBLURRY_US_DECISION_QUERY:
+        return None
+    return {
+        "page_title": (
+            "How to choose an unblur photo app for iPhone | "
+            "First-party decision guide"
+        ),
+        "display_question": "How to choose an unblur photo app for iPhone",
+        "language": "en-US",
+        "qa_heading": "Decision checks",
+        "emit_faq_schema": False,
+        "date_modified": "2026-08-30",
+        "publisher_notice": (
+            "This is a first-party product-fit guide from Lumi Studio, the "
+            "developer of Unblurry, not an independent ranking. Results vary "
+            "by source photo. Confirm current features and pricing on the "
+            "App Store before purchase."
+        ),
+        "meta_description": (
+            "Choose an iPhone unblur app by testing a real photo, checking "
+            "on-device processing and export limits, and rejecting repair "
+            "guarantees. First-party Unblurry guide."
+        ),
+        "lead": (
+            "Choose by testing a real photo, not by trusting an “HD” promise: "
+            "mild softness can improve, but severe blur and missing detail "
+            "cannot be guaranteed. This is a first-party Unblurry decision "
+            "guide."
+        ),
+        "short_answer_paragraphs": [
+            (
+                "Start with the source image. Mild soft focus, light camera "
+                "shake, noise, low light, or a slightly soft document can be "
+                "reasonable enhancement candidates. Heavy directional smear, "
+                "an unrecognizable subject, or text that was never captured "
+                "has no reliable software fix. Treat any generated detail as "
+                "an enhancement, not recovered evidence."
+            ),
+            (
+                f"{name} provides on-device AI Clarity plus Auto Clear, "
+                "Sharpen, Denoise, Low Light, Document, Upscale, Portrait, and "
+                "Restore modes, with a strength control and press-and-hold "
+                "before/after comparison. The free tier includes previewing, "
+                "one AI Clarity trial, and two regular saves per day; free "
+                "exports are capped at 1280 px and watermarked. A one-time "
+                "unlock enables full-resolution, watermark-free export, 4× "
+                "upscaling, Portrait and Restore, and unlimited saves."
+            ),
+        ],
+        "what_to_look_for": [
+            "A real before/after preview on your own photo before you pay or save.",
+            "Separate controls for softness, noise, low light, documents, and upscaling instead of one vague “enhance” switch.",
+            "On-device enhancement when family photos, documents, or screenshots are sensitive.",
+            "Export limits disclosed at the save decision, including resolution caps and watermarks.",
+            "Plain limits: no promise to recreate missing detail or make severe blur reliable.",
+        ],
+        "decision_steps": [
+            "Classify the problem: mild softness, noise, low light, document text, low resolution, or severe smear.",
+            "Run the closest matching mode on a representative photo, not a polished demo image.",
+            "Compare the original and result at 100%, then reduce strength if edges halo or faces look artificial.",
+            "Check the exact free export and one-time unlock terms before saving.",
+            "Reject the result if it invents important text or detail; never use enhancement as forensic proof.",
+        ],
+        "comparison_rows": [
+            {
+                "need": "Mild softness or light camera shake",
+                "check": "Try Auto Clear, Sharpen, or AI Clarity and inspect the before/after view.",
+                "why": "A visible improvement is possible, but the result depends on the source photo.",
+            },
+            {
+                "need": "Noise, low light, or soft document text",
+                "check": "Use the targeted Denoise, Low Light, or Document mode.",
+                "why": "A specific control is easier to judge than a generic enhancement promise.",
+            },
+            {
+                "need": "Severe smear or missing text",
+                "check": "Assume the detail may be unrecoverable and reject confident reconstruction claims.",
+                "why": "Software cannot verify detail that the camera never captured.",
+            },
+            {
+                "need": "Full-quality export",
+                "check": "Compare the disclosed 1280 px watermarked free export with the one-time unlock.",
+                "why": "The export decision should be clear before the app changes or saves the file.",
+            },
+        ],
+        "sources": [
+            {
+                "title": "Unblurry Pro on the US App Store",
+                "url": "https://apps.apple.com/us/app/id6782275018",
+            },
+            {
+                "title": "Official Unblurry support",
+                "url": "https://alice51849.github.io/unblurry-support/support.html",
+            },
+            {
+                "title": "Lumi Studio verified app catalog",
+                "url": (
+                    "https://alice51849.github.io/ios-app-guide/en-US/data/"
+                    "lumi-studio-publisher-search-intent-catalog.html"
+                ),
+            },
+        ],
+        "where_app_fits": (
+            f"{name} may fit if you want a focused iPhone tool with on-device "
+            "processing, a real before/after preview, and a one-time unlock "
+            "instead of recurring billing. It does not guarantee restoration "
+            "and cannot recreate detail that was not captured."
+        ),
+        "faq": [
+            {
+                "q": "Which photos are the safest candidates to try?",
+                "a": (
+                    "Start with mildly soft, lightly shaky, noisy, dim, or "
+                    "low-resolution photos whose subject is still recognizable. "
+                    "Severe directional blur and missing text are poor candidates."
+                ),
+            },
+            {
+                "q": "Does Unblurry upload the photo for enhancement?",
+                "a": (
+                    "The enhancement engines run on the iPhone. Downloading the "
+                    "app and completing or restoring an App Store purchase still "
+                    "require Apple’s services."
+                ),
+            },
+            {
+                "q": "What changes between free use and the one-time unlock?",
+                "a": (
+                    "Free use includes previewing, one AI Clarity trial, and two "
+                    "regular saves per day; free exports are capped at 1280 px "
+                    "and watermarked. The one-time unlock enables full-resolution "
+                    "exports without a watermark, 4× upscaling, Portrait and "
+                    "Restore, and unlimited saves."
+                ),
+            },
+        ],
+    }
+
+
+# ---------------------------------------------------------------------------
 # Buyer-intent cost / "is it worth it" pages (verified 2024 costs). Honest
 # framing: a pay-once app vs a recurring service/subscription cost.
 # ---------------------------------------------------------------------------
@@ -1710,6 +1863,10 @@ def topic_facts(question: str, key: str, app: dict[str, Any]) -> dict[str, Any] 
         rfaq = _resume_faq_facts(q, name)
         if rfaq:
             return rfaq
+
+    unblurry_decision = _unblurry_us_decision_facts(q, key, name)
+    if unblurry_decision:
+        return unblurry_decision
 
     cost = _cost_worth_facts(q, key, name)
     if cost:

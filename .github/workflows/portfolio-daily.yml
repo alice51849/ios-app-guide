@@ -18,6 +18,28 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  public-market-sla:
+    # This job verifies the last deployed public matrix even when a GEO run
+    # fails after preserving the prior known-good deployment.
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+      - name: Verify public market coverage regressions
+        run: python3 .github/scripts/test_public_market_coverage.py -q -b
+      - name: Verify all 46 Apps across all 50 Apple locales are public
+        run: >-
+          python3 .github/scripts/public_market_coverage.py
+          --expected-apps 46
+          --expected-locales 50
+          --workers 10
+          --report "$RUNNER_TEMP/public-market-coverage.json"
+          --summary "$GITHUB_STEP_SUMMARY"
+
   telegram:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest

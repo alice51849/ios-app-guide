@@ -204,7 +204,7 @@ def pick_postable(pool, now=None):
     return candidates(pool, now)[0]
 
 
-def _send_message(token, chat, text):
+def _send_message(token, chat, text, *, attempts=3):
     data = urllib.parse.urlencode({
         "chat_id": chat,
         "text": text,
@@ -219,7 +219,7 @@ def _send_message(token, chat, text):
         req,
         label="Telegram sendMessage",
         timeout=25,
-        attempts=3,
+        attempts=attempts,
     )
 
 

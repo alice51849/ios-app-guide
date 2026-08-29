@@ -834,7 +834,7 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
             self.assertGreater(len(messages), 1)
             portfolio_daily.validate_coverage(platform, apps, messages)
 
-    def test_same_day_platform_success_prevents_duplicate_digest(self):
+    def test_same_day_threads_success_prevents_duplicate_digest(self):
         now = dt.datetime(
             2026, 7, 13, 13, 0, tzinfo=dt.timezone.utc
         )
@@ -847,10 +847,12 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
                     "workflow_runs": [
                         {
                             "id": 100,
+                            "event": "schedule",
                             "created_at": "2026-07-13T04:30:00Z",
                         },
                         {
                             "id": 200,
+                            "event": "schedule",
                             "created_at": "2026-07-13T12:00:00Z",
                         },
                     ]
@@ -860,12 +862,12 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
                     "jobs": [
                         {
                             "name": "telegram",
-                            "conclusion": "success",
+                            "conclusion": "failure",
                             "completed_at": "2026-07-13T07:46:14Z",
                         },
                         {
                             "name": "threads",
-                            "conclusion": "failure",
+                            "conclusion": "success",
                             "completed_at": "2026-07-13T07:46:48Z",
                         },
                     ]
@@ -873,17 +875,6 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
             raise AssertionError(f"unexpected URL: {url}")
 
         self.assertTrue(
-            portfolio_daily.already_published_today(
-                "telegram",
-                now=now,
-                repository="alice51849/ios-app-guide",
-                current_run_id="200",
-                token="test-token",
-                fetcher=fetcher,
-            )
-        )
-        calls.clear()
-        self.assertFalse(
             portfolio_daily.already_published_today(
                 "threads",
                 now=now,
@@ -900,6 +891,19 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
             any("jobs?filter=all&per_page=100" in url for url, _ in calls)
         )
 
+    def test_telegram_never_uses_successful_job_history_as_idempotence(self):
+        fetcher = mock.Mock()
+        with self.assertRaisesRegex(
+            portfolio_daily.CoverageError, "durable publication state"
+        ):
+            portfolio_daily.already_published_today(
+                "telegram",
+                repository="alice51849/ios-app-guide",
+                current_run_id="200",
+                fetcher=fetcher,
+            )
+        fetcher.assert_not_called()
+
     def test_previous_day_success_does_not_skip_today(self):
         def fetcher(url, _token):
             if "/workflows/" in url:
@@ -907,6 +911,7 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
                     "workflow_runs": [
                         {
                             "id": 100,
+                            "event": "schedule",
                             "created_at": "2026-07-12T04:30:00Z",
                         }
                     ]
@@ -940,6 +945,7 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
                     "workflow_runs": [
                         {
                             "id": 100,
+                            "event": "schedule",
                             "created_at": "2026-07-13T04:30:00Z",
                         }
                     ]
@@ -967,6 +973,36 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
                 fetcher=fetcher,
             )
 
+    def test_workflow_run_success_never_blocks_the_schedule(self):
+        calls = []
+
+        def fetcher(url, _token):
+            calls.append(url)
+            if "/workflows/" in url:
+                return {
+                    "workflow_runs": [
+                        {
+                            "id": 100,
+                            "event": "workflow_run",
+                            "created_at": "2026-07-13T03:30:00Z",
+                        }
+                    ]
+                }
+            raise AssertionError("workflow_run jobs must not be inspected")
+
+        self.assertFalse(
+            portfolio_daily.already_published_today(
+                "threads",
+                now=dt.datetime(
+                    2026, 7, 13, 4, 30, tzinfo=dt.timezone.utc
+                ),
+                repository="alice51849/ios-app-guide",
+                current_run_id="200",
+                fetcher=fetcher,
+            )
+        )
+        self.assertEqual(1, len(calls))
+
     def test_daily_workflow_runs_both_platforms(self):
         workflow = os.path.join(
             portfolio_daily.REPO_ROOT,
@@ -978,12 +1014,14 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
             text = workflow_file.read()
         self.assertIn('cron: "30 4 * * *"', text)
         self.assertIn('workflows: ["Daily GEO content"]', text)
-        self.assertIn(
+        self.assertIn("if: github.event_name == 'schedule'", text)
+        self.assertNotIn(
             "github.event.workflow_run.conclusion == 'success'", text
         )
         self.assertIn("actions: read", text)
-        self.assertEqual(2, text.count("GITHUB_TOKEN:"))
+        self.assertEqual(1, text.count("GITHUB_TOKEN:"))
         self.assertIn("--platform telegram", text)
+        self.assertIn("--telegram-phase publish", text)
         self.assertIn("--platform threads", text)
 
     def test_geo_workflow_generates_new_app_surfaces_before_linkset(self):

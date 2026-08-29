@@ -52,6 +52,17 @@ def schedule_env(**overrides):
     return {key: value for key, value in env.items() if value is not None}
 
 
+def publisher_env(state_path, **overrides):
+    env = schedule_env(
+        TELEGRAM_PUBLICATION_STATE=str(state_path),
+        TELEGRAM_PUBLICATION_RESERVATION_PERSISTED="true",
+        TELEGRAM_BOT_TOKEN="test-bot-token",
+        TELEGRAM_CHAT_ID="@LumiApps2026",
+    )
+    env.update(overrides)
+    return {key: value for key, value in env.items() if value is not None}
+
+
 def sample_apps(count=46):
     categories = ("kids", "photo-utility", "productivity", "finance", "travel")
     return [
@@ -218,6 +229,36 @@ class CountableSourceTests(unittest.TestCase):
             self.assertFalse(store_path.exists())
             self.assertFalse(pending_path.exists())
 
+    def test_manual_run_cannot_replay_a_saved_schedule_source(self):
+        apps, published, telegram = publication()
+        source = receipts.source_context(
+            schedule_env(), content_digest="sha256:" + "0" * 64
+        )
+        entries = portfolio_daily.digest_entries(apps)
+        shards = {
+            item.message_id: [
+                entries[app_id] for app_id in item.message.app_ids
+            ]
+            for item in published
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            store_path = Path(directory) / "receipts.json"
+            with self.assertRaises(receipts.NonCountableSource):
+                receipts.record_publication(
+                    shards,
+                    expected_entries=list(entries.values()),
+                    env=schedule_env(
+                        GITHUB_EVENT_NAME="workflow_dispatch"
+                    ),
+                    source=source,
+                    store_path=store_path,
+                    observed_at=OBSERVED_AT,
+                    source_started_at=PUBLISHED_AT,
+                    fetcher=telegram.fetcher,
+                )
+            self.assertFalse(store_path.exists())
+            self.assertEqual([], telegram.calls)
+
     def test_incomplete_source_identity_is_rejected(self):
         for override in (
             {"GITHUB_REPOSITORY": "not-a-repo"},
@@ -234,6 +275,42 @@ class CountableSourceTests(unittest.TestCase):
                         schedule_env(**override),
                         content_digest="sha256:" + "0" * 64,
                     )
+
+    def test_mutated_saved_schedule_source_is_rejected(self):
+        source = receipts.source_context(
+            schedule_env(), content_digest="sha256:" + "0" * 64
+        )
+        mutations = (
+            ("event_name", "workflow_run"),
+            ("countable_event", False),
+            ("workflow", "other.yml"),
+            (
+                "workflow_ref",
+                "alice51849/ios-app-guide/.github/workflows/"
+                "other.yml@refs/heads/main",
+            ),
+            (
+                "run_url",
+                f"https://evil.example/alice51849/ios-app-guide/"
+                f"actions/runs/{RUN_ID}",
+            ),
+            (
+                "run_url",
+                f"https://github.com/extra/alice51849/ios-app-guide/"
+                f"actions/runs/{RUN_ID}",
+            ),
+            (
+                "run_attempt_url",
+                f"https://github.com/alice51849/ios-app-guide/actions/"
+                f"runs/{RUN_ID}/attempts/1?countable=true",
+            ),
+        )
+        for field, value in mutations:
+            with self.subTest(field=field, value=value):
+                mutated = dict(source)
+                mutated[field] = value
+                with self.assertRaises(receipts.NonCountableSource):
+                    receipts.validate_source_context(mutated)
 
     def test_workflow_content_digest_tracks_publisher_code(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -326,6 +403,30 @@ class PublicEvidenceTests(unittest.TestCase):
         self.assertEqual(
             {app.key for app in apps},
             {item["app"]["app_key"] for item in minted},
+        )
+
+    def test_receipt_records_the_observed_final_public_url(self):
+        apps, published, telegram = publication(apps=sample_apps(3))
+        final_url = f"https://t.me/{CHANNEL}/201?mode=tme&embed=1"
+
+        def fetcher(channel, message_id):
+            message = telegram.fetcher(channel, message_id)
+            return receipts.PublicMessage(
+                channel=message.channel,
+                message_id=message.message_id,
+                evidence_url=final_url,
+                status=message.status,
+                text=message.text,
+                published_at=message.published_at,
+                body_sha256=message.body_sha256,
+            )
+
+        _, minted = self.record(
+            apps, published, telegram, fetcher=fetcher
+        )
+        self.assertEqual(
+            {final_url},
+            {item["public_check"]["url"] for item in minted},
         )
 
     def test_two_shards_lose_and_repeat_no_app(self):
@@ -717,7 +818,98 @@ class PublicFetchTransportTests(unittest.TestCase):
         )
         self.assertEqual("GET", seen["method"])
         self.assertEqual(200, message.status)
+        self.assertEqual(f"https://t.me/{CHANNEL}/201", message.evidence_url)
         self.assertTrue(receipts.verify_disclosure(message.text))
+
+    def test_safe_query_normalization_preserves_the_real_final_url(self):
+        text = "\n".join(receipts.DISCLOSURE_LINES)
+        payload = message_html(CHANNEL, 201, text).encode("utf-8")
+        final_url = f"https://t.me/{CHANNEL}/201?mode=tme&embed=1"
+
+        class Response:
+            status = 200
+            url = final_url
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args):
+                return False
+
+            def read(self, _size=None):
+                return payload
+
+        message = receipts.fetch_public_message(
+            CHANNEL,
+            201,
+            opener=lambda _request, timeout=None: Response(),
+            sleeper=lambda _: None,
+        )
+        self.assertEqual(final_url, message.evidence_url)
+
+    def test_redirect_handler_rejects_an_unsafe_intermediate_hop(self):
+        handler = receipts._TelegramEvidenceRedirectHandler(CHANNEL, 201)
+        request = urllib.request.Request(
+            receipts.public_evidence_url(CHANNEL, 201)
+        )
+        with self.assertRaises(receipts.PublicEvidenceError):
+            handler.redirect_request(
+                request,
+                None,
+                302,
+                "Found",
+                {},
+                f"https://evil.example/{CHANNEL}/201",
+            )
+
+    def test_unsafe_or_missing_final_urls_fail_closed(self):
+        text = "\n".join(receipts.DISCLOSURE_LINES)
+        payload = message_html(CHANNEL, 201, text).encode("utf-8")
+        unsafe = (
+            None,
+            f"http://t.me/{CHANNEL}/201",
+            f"https://evil.example/{CHANNEL}/201",
+            f"https://www.t.me/{CHANNEL}/201",
+            f"https://t.me.evil.example/{CHANNEL}/201",
+            f"https://t.me@evil.example/{CHANNEL}/201",
+            f"https://evil@t.me/{CHANNEL}/201",
+            f"https://t.me:443/{CHANNEL}/201",
+            f"https://T.ME/{CHANNEL}/201",
+            "https://t.me/SomeoneElse/201",
+            f"https://t.me/{CHANNEL}/202",
+            f"https://t.me/{CHANNEL}/201/",
+            f"https://t.me/{CHANNEL}/201?",
+            f"https://t.me/{CHANNEL}/201?embed=1",
+            f"https://t.me/{CHANNEL}/201?mode=tme",
+            f"https://t.me/{CHANNEL}/201?embed=1&mode=tme&next=evil",
+            f"https://t.me/{CHANNEL}/201?embed=1&embed=1&mode=tme",
+            f"https://t.me/{CHANNEL}/201?mode=tme&embed=%31",
+            f"https://t.me/{CHANNEL}/201#message",
+            "https://[t.me/",
+        )
+
+        for final_url in unsafe:
+            with self.subTest(final_url=final_url):
+                class Response:
+                    status = 200
+                    url = final_url
+
+                    def __enter__(self):
+                        return self
+
+                    def __exit__(self, *_args):
+                        return False
+
+                    def read(self, _size=None):
+                        return payload
+
+                with self.assertRaises(receipts.PublicEvidenceError):
+                    receipts.fetch_public_message(
+                        CHANNEL,
+                        201,
+                        opener=lambda _request, timeout=None: Response(),
+                        sleeper=lambda _: None,
+                    )
 
     def test_no_telegram_post_is_ever_issued_by_verification(self):
         apps, published, telegram = publication()
@@ -824,6 +1016,386 @@ class RecordedRealMessageShapeTests(unittest.TestCase):
             encoding="utf-8"
         )
         self.assertNotIn("telegram-public-receipts", index)
+
+
+class DurablePublicationStateTests(unittest.TestCase):
+    """POST state is private, durable and independent of public receipts."""
+
+    def setUp(self):
+        self.directory = tempfile.TemporaryDirectory()
+        self.addCleanup(self.directory.cleanup)
+        root = Path(self.directory.name)
+        self.state_path = root / "publication-state.json"
+        self.store_path = root / "receipts.json"
+        self.pending_path = root / "pending.json"
+        self.apps = sample_apps()
+        self.messages = portfolio_daily.telegram_messages(self.apps)
+        self.env = publisher_env(self.state_path)
+
+    def prepare(self, *, env=None):
+        return portfolio_daily.prepare_telegram_publication(
+            self.messages,
+            path=self.state_path,
+            env=self.env if env is None else env,
+            now=PUBLISHED_AT,
+        )
+
+    def test_schedule_can_reserve_and_checkpoint_every_successful_post(self):
+        state, created = self.prepare()
+        self.assertTrue(created)
+        self.assertEqual("reserved", state["status"])
+        observed = []
+
+        def sender(_token, _chat, _text):
+            checkpoint = portfolio_daily.load_publication_state(
+                self.state_path
+            )
+            observed.append(
+                (checkpoint["status"], len(checkpoint["messages"]))
+            )
+            return {
+                "ok": True,
+                "result": {"message_id": 201 + len(observed) - 1},
+            }
+
+        published = portfolio_daily.publish_telegram_once(
+            self.messages,
+            path=self.state_path,
+            env=self.env,
+            sender=sender,
+            now=PUBLISHED_AT,
+        )
+        self.assertEqual(
+            [("reserved", 0), ("partial", 1)], observed
+        )
+        self.assertEqual([201, 202], [item.message_id for item in published])
+        checkpoint = portfolio_daily.load_publication_state(self.state_path)
+        self.assertEqual("complete", checkpoint["status"])
+        self.assertEqual(2, len(checkpoint["messages"]))
+
+    def test_partial_post_is_never_resumed_or_repeated(self):
+        self.prepare()
+        calls = []
+
+        def sender(_token, _chat, _text):
+            calls.append(len(calls) + 1)
+            if len(calls) == 2:
+                raise common.RequestError("ambiguous timeout")
+            return {"ok": True, "result": {"message_id": 201}}
+
+        with self.assertRaisesRegex(common.RequestError, "ambiguous timeout"):
+            portfolio_daily.publish_telegram_once(
+                self.messages,
+                path=self.state_path,
+                env=self.env,
+                sender=sender,
+                now=PUBLISHED_AT,
+            )
+        checkpoint = portfolio_daily.load_publication_state(self.state_path)
+        self.assertEqual("partial", checkpoint["status"])
+        self.assertEqual([201], [
+            item["message_id"] for item in checkpoint["messages"]
+        ])
+
+        retry_env = publisher_env(
+            self.state_path, GITHUB_RUN_ATTEMPT="2"
+        )
+        retry_sender = mock.Mock()
+        with self.assertRaisesRegex(
+            portfolio_daily.CoverageError, "incomplete durable"
+        ):
+            portfolio_daily.prepare_telegram_publication(
+                self.messages,
+                path=self.state_path,
+                env=retry_env,
+                now=PUBLISHED_AT,
+            )
+        with self.assertRaisesRegex(
+            portfolio_daily.CoverageError, "partial Telegram digest"
+        ):
+            portfolio_daily.publish_telegram_once(
+                self.messages,
+                path=self.state_path,
+                env=retry_env,
+                sender=retry_sender,
+                now=PUBLISHED_AT,
+            )
+        retry_sender.assert_not_called()
+
+    def test_portfolio_post_disables_ambiguous_transport_retries(self):
+        self.prepare()
+        with mock.patch.object(
+            portfolio_daily.telegram_post,
+            "_send_message",
+            side_effect=(
+                {"ok": True, "result": {"message_id": 201}},
+                {"ok": True, "result": {"message_id": 202}},
+            ),
+        ) as sender:
+            portfolio_daily.publish_telegram_once(
+                self.messages,
+                path=self.state_path,
+                env=self.env,
+                now=PUBLISHED_AT,
+            )
+        self.assertEqual(2, sender.call_count)
+        self.assertTrue(
+            all(call.kwargs == {"attempts": 1} for call in sender.call_args_list)
+        )
+
+    def test_restored_reservation_from_an_earlier_attempt_blocks_post(self):
+        self.prepare()
+        retry_env = publisher_env(
+            self.state_path, GITHUB_RUN_ATTEMPT="2"
+        )
+        sender = mock.Mock()
+        with self.assertRaisesRegex(
+            portfolio_daily.CoverageError, "earlier run"
+        ):
+            portfolio_daily.publish_telegram_once(
+                self.messages,
+                path=self.state_path,
+                env=retry_env,
+                sender=sender,
+                now=PUBLISHED_AT,
+            )
+        sender.assert_not_called()
+
+    def test_post_requires_proof_the_reservation_was_persisted(self):
+        self.prepare()
+        unsafe_env = dict(self.env)
+        unsafe_env.pop("TELEGRAM_PUBLICATION_RESERVATION_PERSISTED")
+        sender = mock.Mock()
+        with self.assertRaisesRegex(
+            portfolio_daily.CoverageError, "durably persisted"
+        ):
+            portfolio_daily.publish_telegram_once(
+                self.messages,
+                path=self.state_path,
+                env=unsafe_env,
+                sender=sender,
+                now=PUBLISHED_AT,
+            )
+        sender.assert_not_called()
+
+    def test_acknowledged_post_crash_before_checkpoint_blocks_duplicate(self):
+        self.prepare()
+        sender = mock.Mock(
+            return_value={"ok": True, "result": {"message_id": 201}}
+        )
+        with mock.patch.object(
+            portfolio_daily,
+            "write_publication_state",
+            side_effect=OSError("simulated crash before checkpoint"),
+        ):
+            with self.assertRaisesRegex(OSError, "simulated crash"):
+                portfolio_daily.publish_telegram_once(
+                    self.messages,
+                    path=self.state_path,
+                    env=self.env,
+                    sender=sender,
+                    now=PUBLISHED_AT,
+                )
+        sender.assert_called_once()
+        checkpoint = portfolio_daily.load_publication_state(self.state_path)
+        self.assertEqual("reserved", checkpoint["status"])
+        self.assertEqual([], checkpoint["messages"])
+
+        retry_env = publisher_env(
+            self.state_path, GITHUB_RUN_ATTEMPT="2"
+        )
+        with self.assertRaisesRegex(
+            portfolio_daily.CoverageError, "incomplete durable"
+        ):
+            portfolio_daily.prepare_telegram_publication(
+                self.messages,
+                path=self.state_path,
+                env=retry_env,
+                now=PUBLISHED_AT,
+            )
+        duplicate_sender = mock.Mock()
+        with self.assertRaisesRegex(
+            portfolio_daily.CoverageError, "earlier run"
+        ):
+            portfolio_daily.publish_telegram_once(
+                self.messages,
+                path=self.state_path,
+                env=retry_env,
+                sender=duplicate_sender,
+                now=PUBLISHED_AT,
+            )
+        duplicate_sender.assert_not_called()
+
+    def test_cache_match_without_state_fails_closed_before_reserving(self):
+        env = publisher_env(
+            self.state_path,
+            TELEGRAM_PUBLICATION_CACHE_MATCHED=(
+                "telegram-publication-result-v1-2026-08-29-result"
+            ),
+        )
+        with self.assertRaisesRegex(
+            portfolio_daily.CoverageError, "cache matched"
+        ):
+            portfolio_daily.prepare_telegram_publication(
+                self.messages,
+                path=self.state_path,
+                env=env,
+                now=PUBLISHED_AT,
+            )
+        self.assertFalse(self.state_path.exists())
+
+    def test_verification_failure_then_rerun_posts_zero_duplicates(self):
+        self.prepare()
+        sender = mock.Mock(
+            side_effect=(
+                {"ok": True, "result": {"message_id": 201}},
+                {"ok": True, "result": {"message_id": 202}},
+            )
+        )
+        portfolio_daily.publish_telegram_once(
+            self.messages,
+            path=self.state_path,
+            env=self.env,
+            sender=sender,
+            now=PUBLISHED_AT,
+        )
+
+        def failed_fetch(_channel, _message_id):
+            raise receipts.PublicEvidenceError("public GET unavailable")
+
+        with self.assertRaisesRegex(
+            receipts.PublicEvidenceError, "public GET unavailable"
+        ):
+            portfolio_daily.verify_telegram_publication(
+                self.apps,
+                self.messages,
+                path=self.state_path,
+                env=self.env,
+                now=PUBLISHED_AT,
+                store_path=self.store_path,
+                pending_path=self.pending_path,
+                observed_at=OBSERVED_AT,
+                fetcher=failed_fetch,
+            )
+        self.assertEqual(2, sender.call_count)
+        self.assertEqual(
+            1,
+            len(receipts.load_pending(self.pending_path)["non_countable"]),
+        )
+
+        retry_env = publisher_env(
+            self.state_path, GITHUB_RUN_ATTEMPT="2"
+        )
+        state, created = portfolio_daily.prepare_telegram_publication(
+            self.messages,
+            path=self.state_path,
+            env=retry_env,
+            now=PUBLISHED_AT,
+        )
+        self.assertFalse(created)
+        self.assertEqual("complete", state["status"])
+        duplicate_sender = mock.Mock()
+        reused = portfolio_daily.publish_telegram_once(
+            self.messages,
+            path=self.state_path,
+            env=retry_env,
+            sender=duplicate_sender,
+            now=PUBLISHED_AT,
+        )
+        duplicate_sender.assert_not_called()
+        self.assertEqual([201, 202], [
+            item.message_id for item in reused
+        ])
+
+        _, _, telegram = publication(apps=self.apps)
+        store, minted = portfolio_daily.verify_telegram_publication(
+            self.apps,
+            self.messages,
+            path=self.state_path,
+            env=retry_env,
+            now=PUBLISHED_AT,
+            store_path=self.store_path,
+            pending_path=self.pending_path,
+            observed_at=OBSERVED_AT,
+            fetcher=telegram.fetcher,
+        )
+        self.assertEqual(46, len(minted))
+        self.assertEqual("1", minted[0]["source"]["run_attempt"])
+        self.assertEqual(46, store["countable_receipt_count"])
+
+    def test_manual_chained_and_push_events_cannot_post_or_write_state(self):
+        for event in ("workflow_dispatch", "workflow_run", "push"):
+            with self.subTest(event=event):
+                marker_path = Path(self.directory.name) / f"{event}.json"
+                env = publisher_env(marker_path, GITHUB_EVENT_NAME=event)
+                sender = mock.Mock()
+                with mock.patch.dict(os.environ, env, clear=True), mock.patch.object(
+                    portfolio_daily.telegram_post,
+                    "_send_message",
+                    sender,
+                ):
+                    exit_code = portfolio_daily.main(
+                        [
+                            "--platform",
+                            "telegram",
+                            "--telegram-phase",
+                            "prepare",
+                        ]
+                    )
+                self.assertEqual(1, exit_code)
+                self.assertFalse(marker_path.exists())
+                sender.assert_not_called()
+
+                reserved_path = (
+                    Path(self.directory.name) / f"{event}-reserved.json"
+                )
+                schedule = publisher_env(reserved_path)
+                portfolio_daily.prepare_telegram_publication(
+                    self.messages,
+                    path=reserved_path,
+                    env=schedule,
+                    now=PUBLISHED_AT,
+                )
+                before = reserved_path.read_bytes()
+                manual = publisher_env(
+                    reserved_path, GITHUB_EVENT_NAME=event
+                )
+                with mock.patch.dict(
+                    os.environ, manual, clear=True
+                ), mock.patch.object(
+                    portfolio_daily.telegram_post,
+                    "_send_message",
+                    sender,
+                ):
+                    exit_code = portfolio_daily.main(
+                        [
+                            "--platform",
+                            "telegram",
+                            "--telegram-phase",
+                            "publish",
+                        ]
+                    )
+                self.assertEqual(1, exit_code)
+                self.assertEqual(before, reserved_path.read_bytes())
+                sender.assert_not_called()
+
+                with mock.patch.dict(
+                    os.environ, manual, clear=True
+                ), mock.patch.object(
+                    portfolio_daily,
+                    "record_public_receipts",
+                ) as recorder:
+                    exit_code = portfolio_daily.main(
+                        [
+                            "--platform",
+                            "telegram",
+                            "--telegram-phase",
+                            "verify",
+                        ]
+                    )
+                self.assertEqual(1, exit_code)
+                self.assertEqual(before, reserved_path.read_bytes())
+                recorder.assert_not_called()
 
 
 class PendingBatchAndCommitPathTests(unittest.TestCase):
@@ -952,9 +1524,104 @@ class WorkflowContractTests(unittest.TestCase):
     def setUpClass(cls):
         cls.text = cls.WORKFLOW.read_text(encoding="utf-8")
 
+    @classmethod
+    def step(cls, name):
+        marker = f"      - name: {name}\n"
+        tail = cls.text.split(marker, 1)[1]
+        return tail.split("\n      - ", 1)[0]
+
     def test_workflow_keeps_a_natural_schedule_trigger(self):
         self.assertIn("schedule:", self.text)
         self.assertIn("cron:", self.text)
+
+    def test_entire_telegram_job_is_schedule_only(self):
+        telegram_job = self.text.split("  telegram:\n", 1)[1].split(
+            "\n  threads:", 1
+        )[0]
+        job_header = telegram_job.split("    steps:\n", 1)[0]
+        self.assertIn(
+            "    if: github.event_name == 'schedule'", job_header
+        )
+        self.assertNotIn(
+            "github.event_name != 'workflow_run'", telegram_job
+        )
+
+    def test_publish_step_itself_is_schedule_only(self):
+        publish = self.step("Publish every public app to Telegram")
+        self.assertIn("github.event_name == 'schedule'", publish)
+        self.assertIn(
+            "steps.prepare_publication.outputs.created == 'true'", publish
+        )
+        self.assertIn(
+            "steps.save_publication_reservation.outcome == 'success'",
+            publish,
+        )
+        self.assertIn("--telegram-phase publish", publish)
+        self.assertIn(
+            'TELEGRAM_PUBLICATION_RESERVATION_PERSISTED: "true"', publish
+        )
+
+    def test_restored_post_state_skips_post_and_only_retries_get(self):
+        publish = self.step("Publish every public app to Telegram")
+        verify = self.step("Verify published Telegram messages")
+        self.assertIn(
+            "steps.prepare_publication.outputs.created == 'true'", publish
+        )
+        self.assertIn(
+            "steps.prepare_publication.outputs.created != 'true'", verify
+        )
+        self.assertIn(
+            "steps.publish_publication.outcome == 'skipped'", verify
+        )
+        self.assertIn("--telegram-phase verify", verify)
+
+    def test_private_once_marker_steps_are_schedule_only(self):
+        for name in (
+            "Prepare run-scoped Telegram paths",
+            "Restore durable Telegram publication state",
+            "Prepare durable Telegram publication reservation",
+            "Save durable Telegram publication reservation",
+            "Save durable Telegram publication result",
+        ):
+            with self.subTest(step=name):
+                self.assertIn(
+                    "github.event_name == 'schedule'", self.step(name)
+                )
+
+    def test_reservation_is_durable_before_post_and_result_before_get(self):
+        restore = self.text.index(
+            "- name: Restore durable Telegram publication state"
+        )
+        prepare = self.text.index(
+            "- name: Prepare durable Telegram publication reservation"
+        )
+        reserve = self.text.index(
+            "- name: Save durable Telegram publication reservation"
+        )
+        publish = self.text.index(
+            "- name: Publish every public app to Telegram"
+        )
+        result = self.text.index(
+            "- name: Save durable Telegram publication result"
+        )
+        verify = self.text.index(
+            "- name: Verify published Telegram messages"
+        )
+        self.assertEqual(
+            [restore, prepare, reserve, publish, result, verify],
+            sorted((restore, prepare, reserve, publish, result, verify)),
+        )
+        self.assertIn("actions/cache/restore@v4", self.text)
+        self.assertGreaterEqual(
+            self.text.count("actions/cache/save@v4"), 2
+        )
+        restore_step = self.step(
+            "Restore durable Telegram publication state"
+        )
+        self.assertLess(
+            restore_step.index("telegram-publication-result-v1-"),
+            restore_step.index("telegram-publication-reservation-v1-"),
+        )
 
     def test_receipt_commit_is_restricted_to_schedule_events(self):
         self.assertIn(

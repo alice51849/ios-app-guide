@@ -19,11 +19,14 @@ concurrency:
 
 jobs:
   telegram:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    # Manual, chained and future push triggers may run workflow diagnostics,
+    # but this publisher job can never POST or write a daily marker for them.
+    if: github.event_name == 'schedule'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     env:
       TELEGRAM_RECEIPT_STORE: data/telegram-public-receipts.json
+      TELEGRAM_PUBLICATION_STATE: .telegram-publication-state/state.json
     steps:
       - uses: actions/checkout@v5
         with:
@@ -34,25 +37,100 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.x"
-      - name: Prepare run-scoped receipt batch path
+      - name: Prepare run-scoped Telegram paths
+        id: telegram_clock
+        if: github.event_name == 'schedule'
         # `runner.temp` is not available to job-level env, and the batch must
         # live outside the repo tree so it can never be committed by accident.
         run: |
           echo "TELEGRAM_RECEIPT_PENDING=$RUNNER_TEMP/telegram-public-receipts-pending.json" \
             >> "$GITHUB_ENV"
+          echo "utc_day=$(date -u +%F)" >> "$GITHUB_OUTPUT"
       - name: Verify social posting regressions
         run: python3 .github/scripts/test_social_posting.py -q -b
       - name: Verify fail-closed public exposure receipts
         run: python3 .github/scripts/test_telegram_public_receipts.py -q -b
+      - name: Restore durable Telegram publication state
+        id: restore_publication_state
+        if: github.event_name == 'schedule'
+        uses: actions/cache/restore@v4
+        with:
+          path: .telegram-publication-state
+          key: >-
+            telegram-publication-result-v1-${{
+            steps.telegram_clock.outputs.utc_day }}-restore-${{
+            github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            telegram-publication-result-v1-${{ steps.telegram_clock.outputs.utc_day }}-
+            telegram-publication-reservation-v1-${{ steps.telegram_clock.outputs.utc_day }}-
+      - name: Prepare durable Telegram publication reservation
+        id: prepare_publication
+        if: github.event_name == 'schedule'
+        env:
+          TELEGRAM_PUBLICATION_CACHE_MATCHED: >-
+            ${{ steps.restore_publication_state.outputs.cache-matched-key }}
+        run: |
+          if [ -f "$TELEGRAM_PUBLICATION_STATE" ]; then
+            echo "created=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "created=true" >> "$GITHUB_OUTPUT"
+          fi
+          python3 .github/scripts/portfolio_daily.py \
+            --platform telegram --telegram-phase prepare
+      - name: Save durable Telegram publication reservation
+        id: save_publication_reservation
+        if: >-
+          github.event_name == 'schedule' &&
+          steps.prepare_publication.outputs.created == 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: .telegram-publication-state
+          key: >-
+            telegram-publication-reservation-v1-${{
+            steps.telegram_clock.outputs.utc_day }}-${{
+            github.run_id }}-${{ github.run_attempt }}-reservation
       - name: Publish every public app to Telegram
-        # Only a natural `schedule` run can mint a countable receipt; the
-        # publisher decides that from GITHUB_EVENT_NAME, so this path stays
-        # inert for a workflow_dispatch even though the digest is published.
+        id: publish_publication
+        # A restored complete POST result skips this step entirely; that run
+        # receives no bot credential and can only retry the public GET.
+        if: >-
+          github.event_name == 'schedule' &&
+          steps.prepare_publication.outputs.created == 'true' &&
+          steps.save_publication_reservation.outcome == 'success'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          GITHUB_TOKEN: ${{ github.token }}
-        run: python3 .github/scripts/portfolio_daily.py --platform telegram
+          TELEGRAM_PUBLICATION_RESERVATION_PERSISTED: "true"
+        run: >-
+          python3 .github/scripts/portfolio_daily.py
+          --platform telegram --telegram-phase publish
+      - name: Save durable Telegram publication result
+        id: save_publication_result
+        # Save partial state after a failed send too. If this save fails, the
+        # pre-POST reservation still makes every later run fail closed.
+        if: >-
+          always() && github.event_name == 'schedule' &&
+          steps.prepare_publication.outputs.created == 'true' &&
+          steps.save_publication_reservation.outcome == 'success'
+        uses: actions/cache/save@v4
+        with:
+          path: .telegram-publication-state
+          key: >-
+            telegram-publication-result-v1-${{
+            steps.telegram_clock.outputs.utc_day }}-${{
+            github.run_id }}-${{ github.run_attempt }}-result
+      - name: Verify published Telegram messages
+        if: >-
+          always() && github.event_name == 'schedule' &&
+          steps.prepare_publication.outcome == 'success' &&
+          ((steps.prepare_publication.outputs.created == 'true' &&
+          steps.publish_publication.outcome == 'success' &&
+          steps.save_publication_result.outcome == 'success') ||
+          (steps.prepare_publication.outputs.created != 'true' &&
+          steps.publish_publication.outcome == 'skipped'))
+        run: >-
+          python3 .github/scripts/portfolio_daily.py
+          --platform telegram --telegram-phase verify
       - name: Commit public exposure receipts
         # Runs even when verification failed so the durable "not counted"
         # reason is published instead of dying with the red job.

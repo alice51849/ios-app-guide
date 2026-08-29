@@ -27,6 +27,7 @@ import json
 import os
 import re
 import sys
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -259,7 +260,7 @@ def source_context(env=None, *, content_digest=None):
         )
     if content_digest is None:
         content_digest = workflow_content_digest()
-    return {
+    return validate_source_context({
         "provider": "github_actions",
         "repository": repository,
         "workflow": PUBLISHER_WORKFLOW,
@@ -275,7 +276,78 @@ def source_context(env=None, *, content_digest=None):
         ),
         "workflow_sha": workflow_sha,
         "workflow_content_digest": content_digest,
+    })
+
+
+def validate_source_context(source):
+    """Validate source metadata restored from private workflow state."""
+    if not isinstance(source, dict):
+        raise NonCountableSource("receipt source is not an object")
+    required = {
+        "provider",
+        "repository",
+        "workflow",
+        "workflow_ref",
+        "event_name",
+        "countable_event",
+        "run_id",
+        "run_attempt",
+        "run_url",
+        "run_attempt_url",
+        "workflow_sha",
+        "workflow_content_digest",
     }
+    if set(source) != required:
+        raise NonCountableSource("receipt source fields are incomplete")
+    if (
+        source.get("provider") != "github_actions"
+        or source.get("workflow") != PUBLISHER_WORKFLOW
+        or source.get("event_name") not in COUNTABLE_EVENTS
+        or source.get("countable_event") is not True
+    ):
+        raise NonCountableSource("receipt source is not a countable schedule")
+    repository = str(source.get("repository") or "")
+    run_id = str(source.get("run_id") or "")
+    run_attempt = str(source.get("run_attempt") or "")
+    workflow_sha = str(source.get("workflow_sha") or "")
+    content_digest = str(source.get("workflow_content_digest") or "")
+    if re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", repository) is None:
+        raise NonCountableSource("receipt source repository is invalid")
+    if re.fullmatch(r"[0-9]{1,20}", run_id) is None:
+        raise NonCountableSource("receipt source run id is invalid")
+    if re.fullmatch(r"[0-9]{1,6}", run_attempt) is None:
+        raise NonCountableSource("receipt source run attempt is invalid")
+    if re.fullmatch(r"[0-9a-f]{40}", workflow_sha) is None:
+        raise NonCountableSource("receipt source workflow SHA is invalid")
+    if re.fullmatch(r"sha256:[0-9a-f]{64}", content_digest) is None:
+        raise NonCountableSource(
+            "receipt source workflow content digest is invalid"
+        )
+    workflow_ref = source.get("workflow_ref")
+    workflow_prefix = (
+        f"{repository}/.github/workflows/{PUBLISHER_WORKFLOW}@"
+    )
+    if (
+        not isinstance(workflow_ref, str)
+        or not workflow_ref.startswith(workflow_prefix)
+        or len(workflow_ref) == len(workflow_prefix)
+    ):
+        raise NonCountableSource("receipt source workflow ref is invalid")
+    run_url = str(source.get("run_url") or "")
+    attempt_url = str(source.get("run_attempt_url") or "")
+    expected_run_url = (
+        f"https://github.com/{repository}/actions/runs/{run_id}"
+    )
+    expected_attempt_url = (
+        f"{expected_run_url}/attempts/{run_attempt}"
+    )
+    if run_url != expected_run_url:
+        raise NonCountableSource("receipt source run URL is invalid")
+    if attempt_url != expected_attempt_url:
+        raise NonCountableSource(
+            "receipt source run attempt URL is invalid"
+        )
+    return copy.deepcopy(source)
 
 
 def public_message_url(channel, message_id):
@@ -286,6 +358,55 @@ def public_message_url(channel, message_id):
 def public_evidence_url(channel, message_id):
     channel, message_id = _validate_target(channel, message_id)
     return PUBLIC_EVIDENCE_URL.format(channel=channel, message_id=message_id)
+
+
+def _validate_final_evidence_url(value, channel, message_id):
+    """Accept only the requested public Telegram message after redirects."""
+    if not isinstance(value, str) or not value or value != value.strip():
+        raise PublicEvidenceError("Telegram public GET returned no final URL")
+    canonical = f"https://t.me/{channel}/{message_id}"
+    allowed = {
+        canonical,
+        f"{canonical}?embed=1&mode=tme",
+        f"{canonical}?mode=tme&embed=1",
+    }
+    try:
+        parsed = urllib.parse.urlsplit(value)
+    except ValueError as error:
+        raise PublicEvidenceError(
+            f"Telegram public GET returned a malformed final URL: {value!r}"
+        ) from error
+    if (
+        value not in allowed
+        or parsed.scheme != "https"
+        or parsed.netloc != "t.me"
+        or parsed.path != f"/{channel}/{message_id}"
+        or parsed.fragment
+    ):
+        raise PublicEvidenceError(
+            f"Telegram public GET redirected to an unsafe final URL: {value!r}"
+        )
+    return value
+
+
+class _TelegramEvidenceRedirectHandler(urllib.request.HTTPRedirectHandler):
+    """Follow only bounded redirects that remain on the exact public message."""
+
+    max_repeats = 1
+    max_redirections = 3
+
+    def __init__(self, channel, message_id):
+        super().__init__()
+        self.channel = channel
+        self.message_id = message_id
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        _validate_final_evidence_url(
+            newurl, self.channel, self.message_id
+        )
+        return super().redirect_request(
+            req, fp, code, msg, headers, newurl
+        )
 
 
 def _validate_target(channel, message_id):
@@ -376,6 +497,10 @@ def fetch_public_message(
         },
         method="GET",
     )
+    if opener is None:
+        opener = urllib.request.build_opener(
+            _TelegramEvidenceRedirectHandler(channel, message_id)
+        ).open
     try:
         response = request_text(
             request,
@@ -388,12 +513,15 @@ def fetch_public_message(
         )
     except (HTTPStatusError, RequestError) as error:
         raise PublicEvidenceError(f"{url}: {error}") from error
+    final_url = _validate_final_evidence_url(
+        response.url, channel, message_id
+    )
     return parse_public_message(
         response.text,
         channel,
         message_id,
         status=response.status,
-        evidence_url=url,
+        evidence_url=final_url,
     )
 
 
@@ -441,8 +569,7 @@ def verify_publication(
     ``shards`` maps a public message id to the ordered entries claimed for it.
     """
     expected_entries = _validate_entries(expected_entries)
-    if not isinstance(source, dict) or not source.get("countable_event"):
-        raise NonCountableSource("receipt source is not a countable event")
+    source = validate_source_context(source)
     observed_at = utc_now() if observed_at is None else _as_utc(
         observed_at, "observed_at"
     )
@@ -860,6 +987,7 @@ def record_publication(
     expected_entries,
     channel=TELEGRAM_PUBLIC_CHANNEL,
     env=None,
+    source=None,
     store_path=STORE_PATH,
     pending_path=None,
     observed_at=None,
@@ -879,7 +1007,14 @@ def record_publication(
     )
     if pending_path is None:
         pending_path = str(env.get("TELEGRAM_RECEIPT_PENDING", "")).strip() or None
-    source = source_context(env)
+    if source is None:
+        source = source_context(env)
+    else:
+        if str(env.get("GITHUB_EVENT_NAME", "")).strip() not in COUNTABLE_EVENTS:
+            raise NonCountableSource(
+                "only a schedule run may re-verify durable publication state"
+            )
+        source = validate_source_context(source)
     store = load_store(store_path)
     try:
         receipts = verify_publication(

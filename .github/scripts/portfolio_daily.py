@@ -7,6 +7,7 @@ import collections
 import concurrent.futures
 import dataclasses
 import datetime as dt
+import hashlib
 import json
 import os
 import re
@@ -44,6 +45,9 @@ TELEGRAM_LIMIT = 3900
 THREADS_LIMIT = threads_post.MAX_POST_CHARS
 THREADS_LINK_LIMIT = 5
 PORTFOLIO_WORKFLOW = "portfolio-daily.yml"
+TELEGRAM_PUBLICATION_STATE_CONTRACT = "telegram-portfolio-publication-state"
+TELEGRAM_PUBLICATION_STATE_VERSION = 1
+TELEGRAM_PUBLICATION_PHASES = ("prepare", "publish", "verify")
 PLATFORM_CAMPAIGNS = {
     "telegram": "soc_tg_guide",
     "threads": "soc_th_guide",
@@ -109,6 +113,374 @@ class PublishedMessage:
 
     message_id: int
     message: DigestMessage
+
+
+def _as_utc(value, label):
+    if isinstance(value, dt.datetime):
+        parsed = value
+    elif isinstance(value, str) and value.strip():
+        try:
+            parsed = dt.datetime.fromisoformat(
+                value.strip().replace("Z", "+00:00")
+            )
+        except ValueError as error:
+            raise CoverageError(f"{label} is not an ISO-8601 instant") from error
+    else:
+        raise CoverageError(f"{label} is missing")
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=dt.timezone.utc)
+    return parsed.astimezone(dt.timezone.utc)
+
+
+def _iso(value):
+    return _as_utc(value, "timestamp").isoformat().replace("+00:00", "Z")
+
+
+def _sha256(value):
+    if isinstance(value, str):
+        value = value.encode("utf-8")
+    return f"sha256:{hashlib.sha256(value).hexdigest()}"
+
+
+def _require_scheduled_telegram_event(env=None):
+    env = os.environ if env is None else env
+    event = str(env.get("GITHUB_EVENT_NAME", "")).strip()
+    if event != "schedule":
+        raise CoverageError(
+            f"Telegram publication is schedule-only; refusing event {event!r}"
+        )
+
+
+def _publication_state_path(path=None, env=None):
+    env = os.environ if env is None else env
+    value = path or str(env.get("TELEGRAM_PUBLICATION_STATE", "")).strip()
+    if not value:
+        raise CoverageError("TELEGRAM_PUBLICATION_STATE is required")
+    return Path(value)
+
+
+def _publication_day(now=None):
+    now = dt.datetime.now(dt.timezone.utc) if now is None else _as_utc(
+        now, "now"
+    )
+    return now.date().isoformat()
+
+
+def _publication_digest(messages):
+    payload = [
+        {"text": message.text, "app_ids": list(message.app_ids)}
+        for message in messages
+    ]
+    return _sha256(
+        json.dumps(
+            payload,
+            ensure_ascii=False,
+            separators=(",", ":"),
+            sort_keys=True,
+        )
+    )
+
+
+def _publication_app_ids(messages):
+    return [
+        app_id
+        for message in messages
+        for app_id in message.app_ids
+    ]
+
+
+def write_publication_state(state, path, *, env=None):
+    """Atomically checkpoint the private at-most-once publication state."""
+    path = Path(path)
+    encoded = json.dumps(
+        state, ensure_ascii=False, indent=2, sort_keys=True
+    ) + "\n"
+    receipts.assert_no_credentials(encoded, env=env)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(f"{path.name}.tmp")
+    with open(temporary, "w", encoding="utf-8") as handle:
+        handle.write(encoded)
+        handle.flush()
+        os.fsync(handle.fileno())
+    os.replace(temporary, path)
+    return path
+
+
+def load_publication_state(path):
+    path = Path(path)
+    if not path.is_file():
+        raise CoverageError(f"Telegram publication state is missing: {path}")
+    try:
+        state = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as error:
+        raise CoverageError(
+            f"Telegram publication state is unreadable: {path}"
+        ) from error
+    if not isinstance(state, dict):
+        raise CoverageError("Telegram publication state is not an object")
+    return state
+
+
+def _apps_from_publication_state(apps, state):
+    expected = state.get("expected_app_ids")
+    if (
+        not isinstance(expected, list)
+        or not expected
+        or len(expected) != len(set(expected))
+        or any(not isinstance(app_id, str) for app_id in expected)
+    ):
+        raise CoverageError("Telegram publication state has invalid app ids")
+    by_id = {app.app_id: app for app in apps}
+    missing = [app_id for app_id in expected if app_id not in by_id]
+    if missing:
+        raise CoverageError(
+            f"Telegram publication state references missing apps: {missing}"
+        )
+    return [by_id[app_id] for app_id in expected]
+
+
+def validate_publication_state(state, messages, *, now=None):
+    """Bind restored private state to this exact digest and UTC day."""
+    messages = list(messages)
+    required = {
+        "schema_version",
+        "contract",
+        "publication_day",
+        "status",
+        "digest_sha256",
+        "expected_message_count",
+        "expected_app_count",
+        "expected_app_ids",
+        "source",
+        "source_started_at",
+        "created_at",
+        "updated_at",
+        "messages",
+    }
+    if set(state) != required:
+        raise CoverageError("Telegram publication state fields are incomplete")
+    if (
+        state.get("schema_version") != TELEGRAM_PUBLICATION_STATE_VERSION
+        or state.get("contract") != TELEGRAM_PUBLICATION_STATE_CONTRACT
+    ):
+        raise CoverageError("Telegram publication state contract is invalid")
+    day = _publication_day(now)
+    if state.get("publication_day") != day:
+        raise CoverageError(
+            "Telegram publication state is not for the current UTC day"
+        )
+    if not messages:
+        raise CoverageError("Telegram publication plan has no messages")
+    expected_app_ids = _publication_app_ids(messages)
+    if (
+        state.get("digest_sha256") != _publication_digest(messages)
+        or state.get("expected_message_count") != len(messages)
+        or state.get("expected_app_count") != len(expected_app_ids)
+        or state.get("expected_app_ids") != expected_app_ids
+    ):
+        raise CoverageError(
+            "Telegram publication state does not match the current digest"
+        )
+    source = receipts.validate_source_context(state.get("source"))
+    started_at = _as_utc(state.get("source_started_at"), "source_started_at")
+    if started_at.date().isoformat() != day:
+        raise CoverageError(
+            "Telegram publication source is not from the current UTC day"
+        )
+    _as_utc(state.get("created_at"), "created_at")
+    _as_utc(state.get("updated_at"), "updated_at")
+    posted = state.get("messages")
+    if not isinstance(posted, list) or len(posted) > len(messages):
+        raise CoverageError("Telegram publication message state is invalid")
+    seen_ids = set()
+    for index, (record, message) in enumerate(
+        zip(posted, messages), start=1
+    ):
+        if not isinstance(record, dict) or set(record) != {
+            "message_index",
+            "message_id",
+            "app_ids",
+            "text_sha256",
+        }:
+            raise CoverageError("Telegram publication message is invalid")
+        message_id = record.get("message_id")
+        if (
+            record.get("message_index") != index
+            or not isinstance(message_id, int)
+            or isinstance(message_id, bool)
+            or message_id <= 0
+            or message_id in seen_ids
+            or record.get("app_ids") != list(message.app_ids)
+            or record.get("text_sha256") != _sha256(message.text)
+        ):
+            raise CoverageError(
+                f"Telegram publication message {index} does not match"
+            )
+        seen_ids.add(message_id)
+    expected_status = (
+        "reserved"
+        if not posted
+        else "complete"
+        if len(posted) == len(messages)
+        else "partial"
+    )
+    if state.get("status") != expected_status:
+        raise CoverageError("Telegram publication status is inconsistent")
+    state["source"] = source
+    return state
+
+
+def prepare_telegram_publication(messages, *, path=None, env=None, now=None):
+    """Create a durable reservation before the first Telegram POST."""
+    env = os.environ if env is None else env
+    _require_scheduled_telegram_event(env)
+    path = _publication_state_path(path, env)
+    messages = list(messages)
+    if path.exists():
+        state = validate_publication_state(
+            load_publication_state(path), messages, now=now
+        )
+        if state["status"] != "complete":
+            raise CoverageError(
+                "An incomplete durable Telegram publication marker exists; "
+                "refusing to POST or guess a safe continuation"
+            )
+        return state, False
+    if str(env.get("TELEGRAM_PUBLICATION_CACHE_MATCHED", "")).strip():
+        raise CoverageError(
+            "Telegram publication cache matched but its state file is missing"
+        )
+    now = dt.datetime.now(dt.timezone.utc) if now is None else _as_utc(
+        now, "now"
+    )
+    source = receipts.source_context(env)
+    app_ids = _publication_app_ids(messages)
+    if not messages or not app_ids or len(app_ids) != len(set(app_ids)):
+        raise CoverageError("Telegram publication plan is incomplete")
+    state = {
+        "schema_version": TELEGRAM_PUBLICATION_STATE_VERSION,
+        "contract": TELEGRAM_PUBLICATION_STATE_CONTRACT,
+        "publication_day": now.date().isoformat(),
+        "status": "reserved",
+        "digest_sha256": _publication_digest(messages),
+        "expected_message_count": len(messages),
+        "expected_app_count": len(app_ids),
+        "expected_app_ids": app_ids,
+        "source": source,
+        "source_started_at": _iso(now),
+        "created_at": _iso(now),
+        "updated_at": _iso(now),
+        "messages": [],
+    }
+    validate_publication_state(state, messages, now=now)
+    write_publication_state(state, path, env=env)
+    return state, True
+
+
+def published_messages_from_state(state, messages, *, now=None):
+    state = validate_publication_state(state, messages, now=now)
+    if state["status"] != "complete":
+        raise CoverageError(
+            "Telegram publication is incomplete; public verification blocked"
+        )
+    return [
+        PublishedMessage(record["message_id"], message)
+        for record, message in zip(state["messages"], messages)
+    ]
+
+
+def publish_telegram_once(
+    messages,
+    *,
+    path=None,
+    env=None,
+    sender=None,
+    now=None,
+):
+    """POST a reserved digest once, checkpointing every accepted message."""
+    env = os.environ if env is None else env
+    _require_scheduled_telegram_event(env)
+    path = _publication_state_path(path, env)
+    messages = list(messages)
+    state = validate_publication_state(
+        load_publication_state(path), messages, now=now
+    )
+    if state["status"] == "complete":
+        print("Telegram digest already POSTed; reusing durable message ids")
+        return published_messages_from_state(state, messages, now=now)
+    if state["status"] != "reserved":
+        raise CoverageError(
+            "A partial Telegram digest already exists; refusing duplicate POST"
+        )
+    current_source = receipts.source_context(env)
+    if state["source"] != current_source:
+        raise CoverageError(
+            "Telegram reservation belongs to an earlier run; refusing POST"
+        )
+    if (
+        str(
+            env.get("TELEGRAM_PUBLICATION_RESERVATION_PERSISTED", "")
+        ).casefold()
+        != "true"
+    ):
+        raise CoverageError(
+            "Telegram reservation was not durably persisted before POST"
+        )
+    token = str(env.get("TELEGRAM_BOT_TOKEN", "")).strip()
+    chat = str(env.get("TELEGRAM_CHAT_ID", "")).strip()
+    if not token or not chat:
+        raise CoverageError("Missing TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID")
+    if sender is None:
+        def send_message(token, chat, text):
+            # An ambiguous POST timeout cannot be retried safely: the bot API
+            # has no idempotency key, so the durable reservation must block.
+            return telegram_post._send_message(
+                token, chat, text, attempts=1
+            )
+    else:
+        send_message = sender
+    for index, message in enumerate(messages, start=1):
+        result = send_message(token, chat, message.text)
+        message_id = (
+            result.get("result", {}).get("message_id")
+            if isinstance(result, dict)
+            else None
+        )
+        if (
+            not isinstance(result, dict)
+            or result.get("ok") is not True
+            or not isinstance(message_id, int)
+            or isinstance(message_id, bool)
+            or message_id <= 0
+            or message_id in {
+                item["message_id"] for item in state["messages"]
+            }
+        ):
+            raise RequestError(
+                "Telegram sendMessage returned no unique message_id"
+            )
+        state["messages"].append(
+            {
+                "message_index": index,
+                "message_id": message_id,
+                "app_ids": list(message.app_ids),
+                "text_sha256": _sha256(message.text),
+            }
+        )
+        state["status"] = (
+            "complete"
+            if len(state["messages"]) == len(messages)
+            else "partial"
+        )
+        checkpoint_at = (
+            dt.datetime.now(dt.timezone.utc)
+            if now is None
+            else _as_utc(now, "now")
+        )
+        state["updated_at"] = _iso(checkpoint_at)
+        write_publication_state(state, path, env=env)
+        print("telegram portfolio posted, message_id:", message_id)
+    return published_messages_from_state(state, messages, now=now)
 
 
 def _title(item):
@@ -276,6 +648,11 @@ def already_published_today(
     token=None,
     fetcher=_github_json,
 ):
+    if str(platform).casefold() == "telegram":
+        raise CoverageError(
+            "Telegram idempotence requires durable publication state, "
+            "not successful-job history"
+        )
     now = now or dt.datetime.now(dt.timezone.utc)
     if now.tzinfo is None:
         now = now.replace(tzinfo=dt.timezone.utc)
@@ -312,8 +689,10 @@ def already_published_today(
     if not isinstance(runs, list):
         raise CoverageError("GitHub Actions history has no workflow_runs")
     for run in runs:
-        if not isinstance(run, dict) or str(run.get("id")) == str(
-            current_run_id
+        if (
+            not isinstance(run, dict)
+            or run.get("event") != "schedule"
+            or str(run.get("id")) == str(current_run_id)
         ):
             continue
         created = _github_time(run.get("created_at"))
@@ -579,24 +958,9 @@ def report_coverage(platform, apps, messages):
 
 def publish(platform, messages):
     if platform == "telegram":
-        token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
-        chat = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
-        if not token or not chat:
-            raise CoverageError(
-                "Missing TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID"
-            )
-        published = []
-        for message in messages:
-            result = telegram_post._send_message(token, chat, message.text)
-            message_id = result.get("result", {}).get("message_id")
-            if not result.get("ok") or not message_id:
-                raise RequestError("Telegram sendMessage returned no message_id")
-            print(
-                "telegram portfolio posted, message_id:",
-                message_id,
-            )
-            published.append(PublishedMessage(int(message_id), message))
-        return published
+        raise CoverageError(
+            "Telegram publishing requires the durable phased publisher"
+        )
 
     token = os.environ.get("THREADS_TOKEN", "").strip()
     user_id = os.environ.get("THREADS_USER_ID", "").strip()
@@ -641,14 +1005,98 @@ def record_public_receipts(apps, published, **kwargs):
     )
 
 
+def verify_telegram_publication(
+    apps,
+    messages,
+    *,
+    path=None,
+    env=None,
+    now=None,
+    **kwargs,
+):
+    """Verify a complete durable POST state without ever posting again."""
+    env = os.environ if env is None else env
+    _require_scheduled_telegram_event(env)
+    path = _publication_state_path(path, env)
+    state = validate_publication_state(
+        load_publication_state(path), messages, now=now
+    )
+    published = published_messages_from_state(state, messages, now=now)
+    return record_public_receipts(
+        apps,
+        published,
+        env=env,
+        source=state["source"],
+        source_started_at=state["source_started_at"],
+        **kwargs,
+    )
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--platform", required=True, choices=("telegram", "threads")
     )
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--telegram-phase", choices=TELEGRAM_PUBLICATION_PHASES
+    )
     args = parser.parse_args(argv)
     try:
+        if args.telegram_phase and args.platform != "telegram":
+            raise CoverageError(
+                "--telegram-phase is only valid for Telegram"
+            )
+        if args.telegram_phase and args.dry_run:
+            raise CoverageError(
+                "--telegram-phase cannot be combined with --dry-run"
+            )
+        if args.platform == "telegram" and not args.dry_run:
+            _require_scheduled_telegram_event()
+            if not args.telegram_phase:
+                raise CoverageError(
+                    "Telegram requires --telegram-phase "
+                    "prepare, publish, or verify"
+                )
+            state_path = _publication_state_path()
+            all_apps = load_public_apps()
+            if args.telegram_phase == "prepare" and not state_path.exists():
+                apps = filter_reachable_apps(all_apps)
+            else:
+                state = load_publication_state(state_path)
+                apps = _apps_from_publication_state(all_apps, state)
+            messages = telegram_messages(apps)
+            validate_coverage("telegram", apps, messages)
+            if args.telegram_phase == "prepare":
+                state, created = prepare_telegram_publication(
+                    messages, path=state_path
+                )
+                print(
+                    "TELEGRAM_PUBLICATION_STATE "
+                    f"status={state['status']} created={str(created).lower()}"
+                )
+            elif args.telegram_phase == "publish":
+                published = publish_telegram_once(
+                    messages, path=state_path
+                )
+                print(
+                    "TELEGRAM_PUBLICATION_POST "
+                    f"messages={len(published)} status=complete"
+                )
+            else:
+                store, minted = verify_telegram_publication(
+                    apps, messages, path=state_path
+                )
+                report_coverage("telegram", apps, messages)
+                print(
+                    "TELEGRAM_PUBLIC_RECEIPTS minted="
+                    f"{len(minted)} stored="
+                    f"{store.get('countable_receipt_count', 0)} apps="
+                    f"{store.get('countable_app_count', 0)}"
+                )
+            return 0
+        # Telegram intentionally never reaches this job-history heuristic:
+        # its private reservation/result state survives failed verification.
         if not args.dry_run and already_published_today(args.platform):
             return 0
         apps = filter_reachable_apps(load_public_apps())
@@ -663,31 +1111,8 @@ def main(argv=None):
             for index, message in enumerate(messages, start=1):
                 print(f"\n--- {args.platform} batch {index} ---\n{message.text}")
         else:
-            source_started_at = dt.datetime.now(dt.timezone.utc)
-            published = publish(args.platform, messages)
+            publish(args.platform, messages)
             report_coverage(args.platform, apps, messages)
-            if args.platform == "telegram":
-                try:
-                    store, minted = record_public_receipts(
-                        apps,
-                        published,
-                        source_started_at=source_started_at,
-                    )
-                except receipts.NonCountableSource as reason:
-                    # A real public post from a manual dispatch is still public;
-                    # it simply can never count towards organic exposure.
-                    print(
-                        "telegram public exposure not countable: "
-                        f"{reason}",
-                        file=sys.stderr,
-                    )
-                else:
-                    print(
-                        "TELEGRAM_PUBLIC_RECEIPTS minted="
-                        f"{len(minted)} stored="
-                        f"{store.get('countable_receipt_count', 0)} apps="
-                        f"{store.get('countable_app_count', 0)}"
-                    )
         return 0
     except (
         CoverageError,

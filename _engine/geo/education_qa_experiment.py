@@ -19,7 +19,7 @@ OUTPUT = HERE / "education_qa_experiment"
 MANIFEST_PATH = OUTPUT / "manifest.json"
 SITEMAP_PATH = OUTPUT / "candidate-sitemap.xml"
 BLOCKER_PATH = OUTPUT / "BLOCKED_NOT_DEPLOYABLE"
-EXPERIMENT_DATE = "2026-08-29"
+EXPERIMENT_DATE = "2026-08-30"
 
 
 def _sha256(content: str | bytes) -> str:
@@ -79,7 +79,7 @@ def _robots_allows_googlebot() -> bool:
 
 
 def _control_page(locale: str) -> str:
-    return base.render_page(
+    return education_qa.render_control_page(
         locale,
         app_public=True,
         alternate_locales=education_qa.CANARY_LOCALES,
@@ -90,21 +90,24 @@ def build_manifest(
     candidate_pages: dict[str, str],
     sitemap: str,
 ) -> dict[str, object]:
-    intended_resource_locales = tuple(
-        dict.fromkeys((*base.ALT_LOCALES, *education_qa.CANARY_LOCALES))
-    )
-    exact_official_present = set(intended_resource_locales).intersection(
-        OFFICIAL_LOCALES
+    candidate_output_locales = education_qa.CANARY_LOCALES
+    candidate_official_locales = tuple(
+        locale
+        for locale in candidate_output_locales
+        if locale in OFFICIAL_LOCALES
     )
     missing_official = tuple(
         locale
         for locale in OFFICIAL_LOCALES
-        if locale not in exact_official_present
+        if locale not in candidate_official_locales
+    )
+    missing_google_eligible_official = tuple(
+        locale
+        for locale in education_qa.GOOGLE_ELIGIBLE_OFFICIAL_LOCALES
+        if locale not in candidate_official_locales
     )
     unexpected_for_exact_50 = tuple(
-        locale
-        for locale in intended_resource_locales
-        if locale not in OFFICIAL_LOCALES
+        locale for locale in candidate_output_locales if locale not in OFFICIAL_LOCALES
     )
     pages = []
     for locale in education_qa.CANARY_LOCALES:
@@ -130,10 +133,10 @@ def build_manifest(
                 "content_sha256": education_qa.content_digest(locale),
                 "schema_sha256": education_qa.schema_digest(locale),
                 "flashcard_count": len(education_qa.FLASHCARD_ORDERS),
-                "campaign_token": (
-                    "iag_bopomofo_flashcards_"
-                    + locale.lower().replace("-", "_")
-                ),
+                "campaign_token": education_qa.campaign_token(locale),
+                "campaign_url": education_qa.app_store_campaign_urls(
+                    candidate
+                )[0],
             }
         )
     blocker_reasons = [
@@ -143,6 +146,31 @@ def build_manifest(
                 f"{len(missing_official)} official locales do not have this "
                 "mother-tongue flashcard leaf surface. The canary must not be "
                 "published until exact-50 content is independently completed."
+            ),
+        },
+        {
+            "code": "NON_OFFICIAL_GENERIC_LOCALE_ROUTE",
+            "detail": (
+                "The English candidate uses the existing generic /tools/ route, "
+                "not one of the four official en-* portfolio locales. It cannot "
+                "count toward exact-50 coverage."
+            ),
+        },
+        {
+            "code": "GOOGLE_ELIGIBLE_OFFICIAL_ROUTES_MISSING",
+            "detail": (
+                f"{len(missing_google_eligible_official)} Google-eligible "
+                "official locale routes are missing localized candidate pages. "
+                "The generic English route cannot replace en-AU, en-CA, en-GB, "
+                "or en-US."
+            ),
+        },
+        {
+            "code": "OFFICIAL_RICH_RESULTS_TEST_NOT_RUN",
+            "detail": (
+                "Google provides no public Rich Results Test API for local HTML. "
+                "The local checker enforces Google's documented Quiz properties, "
+                "but official eligibility evidence requires a public candidate URL."
             ),
         },
         {
@@ -157,7 +185,10 @@ def build_manifest(
     local_gates = {
         "true_flashcard_leaf": "PASS",
         "visible_qa_matches_json_ld_exactly": "PASS",
-        "quiz_required_properties": "PASS",
+        "google_documented_quiz_format": "PASS",
+        "unique_correct_answer_per_question": "PASS",
+        "substantive_explanation_per_answer": "PASS",
+        "age_and_use_scope_disclosed": "PASS",
         "no_hidden_or_paywalled_qa": "PASS",
         "canonical_and_hreflang": "PASS",
         "robots_allows_googlebot": (
@@ -167,7 +198,11 @@ def build_manifest(
         "first_party_disclosure_before_app_cta": "PASS",
         "no_english_fallback_or_raw_keys": "PASS",
         "google_supported_locale_exactness": "PASS",
+        "no_quiz_on_google_unsupported_locale": "PASS",
         "exact_50_locale_deployment_gate": "BLOCK",
+        "official_rich_results_test_gate": "BLOCK",
+        "app_store_campaign_url_format": "PASS",
+        "no_template_thin_page": "PASS",
         "idempotent_generation": "PASS",
         "existing_non_managed_content_preserved": "PASS",
         "no_unrelated_app_promotion": "PASS",
@@ -195,6 +230,8 @@ def build_manifest(
             "candidate_is_not_worksheet_pdf_or_promotion_disguised_as_flashcards": (
                 True
             ),
+            "candidate_answers_include_fact_specific_explanations": True,
+            "candidate_scope_is_older_learner_and_technical_reference": True,
             "schema_added_only_after_visible_qa_is_rendered": True,
         },
         "source": {
@@ -215,11 +252,27 @@ def build_manifest(
             "google_eligible_official_locales": list(
                 education_qa.GOOGLE_ELIGIBLE_OFFICIAL_LOCALES
             ),
+            "google_ineligible_official_locales": [
+                locale
+                for locale in OFFICIAL_LOCALES
+                if locale not in education_qa.GOOGLE_ELIGIBLE_OFFICIAL_LOCALES
+            ],
             "quiz_output_locales": list(education_qa.CANARY_LOCALES),
-            "quiz_output_outside_google_support": [],
-            "intended_resource_locales": list(intended_resource_locales),
+            "quiz_output_outside_google_support": [
+                locale
+                for locale in education_qa.CANARY_LOCALES
+                if not education_qa.google_education_qa_supported(locale)
+            ],
+            "candidate_official_locales": list(candidate_official_locales),
+            "missing_google_eligible_official_locales": list(
+                missing_google_eligible_official
+            ),
             "missing_exact_50_locales": list(missing_official),
             "non_official_generic_routes": list(unexpected_for_exact_50),
+        },
+        "safe_page_counts": {
+            "locally_validated_content_and_schema": len(candidate_pages),
+            "deployable_after_all_blocking_gates": 0,
         },
         "pages": pages,
         "candidate_sitemap": {
@@ -230,36 +283,39 @@ def build_manifest(
         },
         "gates": local_gates,
         "layers": {
-            "RC": {
-                "meaning": "render and crawl prerequisites",
+            "inventory": {
+                "meaning": "local candidate artifacts",
                 "status": "PASS_LOCAL_ONLY",
                 "counts_as_exposure": False,
+                "candidate_page_count": len(candidate_pages),
                 "evidence": [
                     "HTML and JSON parse",
-                    "HTTP-ready canonical, hreflang, robots and sitemap",
+                    "canonical, hreflang, robots and candidate sitemap",
                     "visible Q/A equals Quiz JSON-LD",
                 ],
             },
-            "D": {
-                "meaning": "Google discovery and indexation",
-                "status": "NOT_MEASURED_NO_DEPLOYMENT",
-                "required_metric": "indexed_candidate_url_count",
+            "deployed": {
+                "meaning": "candidate revision published at its canonical URLs",
+                "status": "NOT_DEPLOYED",
+                "candidate_page_count": 0,
             },
-            "E": {
-                "meaning": "valid Education Q&A appearance",
+            "get": {
+                "meaning": "successful HTTP GET of the deployed candidate revision",
+                "status": "NOT_TESTABLE_NO_DEPLOYMENT",
+                "successful_candidate_get_count": 0,
+            },
+            "rich_result": {
+                "meaning": "valid Google Education Q&A item or appearance",
                 "status": "NOT_MEASURED_NO_DEPLOYMENT",
                 "required_metric": "valid_education_qa_item_count",
             },
-            "C": {
-                "meaning": "Search impressions and clicks",
+            "click": {
+                "meaning": "Google Search clicks attributed to candidate pages",
                 "status": "NOT_MEASURED_NO_DEPLOYMENT",
-                "required_metrics": [
-                    "education_qa_impressions",
-                    "education_qa_clicks",
-                ],
+                "required_metric": "education_qa_clicks",
             },
-            "DL": {
-                "meaning": "existing legal App Store campaign lower bound",
+            "download": {
+                "meaning": "App Store campaign download or sale lower bound",
                 "status": "NOT_MEASURED_NO_DEPLOYMENT",
                 "required_metric": "asc_campaign_download_or_sale_lower_bound",
                 "causality_claimed": False,
@@ -328,13 +384,57 @@ def validate_manifest(manifest: dict[str, object]) -> None:
         raise RuntimeError(f"local gates failed: {','.join(failures)}")
     if gates["exact_50_locale_deployment_gate"] != "BLOCK":
         raise RuntimeError("deployment must remain blocked")
+    if gates["official_rich_results_test_gate"] != "BLOCK":
+        raise RuntimeError("official Rich Results Test must remain blocked")
     if manifest["deterministic_validation_case_count"] < 100:
         raise RuntimeError("fewer than 100 deterministic validation cases")
+    expected_missing = [
+        locale
+        for locale in OFFICIAL_LOCALES
+        if locale not in education_qa.CANARY_LOCALES
+    ]
+    roster = manifest["supported_locale_roster"]
+    if roster["missing_exact_50_locales"] != expected_missing:
+        raise RuntimeError("exact-50 missing-locale evidence is incorrect")
+    expected_missing_eligible = [
+        locale
+        for locale in education_qa.GOOGLE_ELIGIBLE_OFFICIAL_LOCALES
+        if locale not in education_qa.CANARY_LOCALES
+    ]
+    if (
+        roster["missing_google_eligible_official_locales"]
+        != expected_missing_eligible
+    ):
+        raise RuntimeError("Google-eligible missing-locale evidence is incorrect")
+    if roster["non_official_generic_routes"] != ["en"]:
+        raise RuntimeError("generic English route must not count as official")
+    if manifest["safe_page_counts"] != {
+        "locally_validated_content_and_schema": len(
+            education_qa.CANARY_LOCALES
+        ),
+        "deployable_after_all_blocking_gates": 0,
+    }:
+        raise RuntimeError("safe page counts are incorrect")
+    if set(manifest["layers"]) != {
+        "inventory",
+        "deployed",
+        "get",
+        "rich_result",
+        "click",
+        "download",
+    }:
+        raise RuntimeError("evidence layers are not strictly separated")
     for page in manifest["pages"]:
         if page["locale"] not in education_qa.CANARY_LOCALES:
             raise RuntimeError("unexpected candidate locale")
         if not education_qa.google_education_qa_supported(page["locale"]):
             raise RuntimeError("candidate includes unsupported Quiz locale")
+        campaign_errors = education_qa.validate_app_store_campaign_url(
+            page["campaign_url"],
+            page["locale"],
+        )
+        if campaign_errors:
+            raise RuntimeError("; ".join(campaign_errors))
 
 
 def build() -> dict[str, object]:
@@ -372,7 +472,10 @@ def build() -> dict[str, object]:
     blocker = (
         "BLOCKED_NOT_DEPLOYABLE\n"
         "Reason: exact mother-tongue content is not present for all 50 official "
-        "locales, and no D7/D28 index or appearance evidence exists.\n"
+        "locales; five Google-eligible official routes are missing; the generic "
+        "English route is not an official locale; and no public Rich Results "
+        "Test, deployment, GET, click, or download evidence exists for this "
+        "candidate revision.\n"
         "This directory is a local candidate artifact only. Do not publish, "
         "deploy, push, submit, request indexing, call IndexNow, write to Search "
         "Console, or send HTTP POST requests.\n"

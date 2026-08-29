@@ -6,7 +6,10 @@ from __future__ import annotations
 import hashlib
 import html
 import json
+import os
 import re
+import unicodedata
+from urllib.parse import parse_qs, urlsplit
 
 import bopomofo_flashcards as base
 from official_locales import OFFICIAL_LOCALES
@@ -21,26 +24,8 @@ EXPERIMENT_SCHEMA = "education_qa_experiment/1"
 EXPERIMENT_ID = "bopomofo-flashcards-20260829"
 CONTROL_COMMIT = "6b4745d040e43a5bb0c5c8e4c35404f33101bddd"
 CANARY_LOCALES = ("en", "pt-BR", "es-MX", "vi")
-FLASHCARD_ORDERS = (
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27,
-    28,
-    29,
-    30,
-    31,
-    32,
-    33,
-)
+PUBLIC_APP_STORE_PROVIDER_TOKEN = "118326163"
+FLASHCARD_ORDERS = tuple(range(1, 38))
 HEAD_START = "<!-- education-qa-canary:head:start -->"
 HEAD_END = "<!-- education-qa-canary:head:end -->"
 BODY_START = "<!-- education-qa-canary:body:start -->"
@@ -94,15 +79,20 @@ SOURCE_PROVENANCE = (
 
 EDUCATION_COPY = {
     "en": {
-        "heading": "18 fixed Bopomofo recognition flashcards",
+        "heading": "37 fixed Unicode-to-Bopomofo reference flashcards",
         "intro": (
             "Every question and answer is visible immediately. The cards use "
-            "fixed symbol, category, and Unicode facts from one canonical "
-            "37-symbol dataset; no answer is generated from a guess."
+            "the complete fixed mapping between Unicode code points and the "
+            "37 basic Bopomofo characters; no answer is generated from a guess."
         ),
         "question": (
-            "Which Bopomofo symbol in the “{category}” group is encoded at "
+            "Which Bopomofo character corresponds to Unicode code point "
             "{unicode}?"
+        ),
+        "answer_template": (
+            "{symbol}. {unicode} is the Unicode code point for {symbol} in the "
+            "Bopomofo block. A code point identifies the character; it does "
+            "not state its pronunciation."
         ),
         "categories": {
             "initial": "initial",
@@ -111,6 +101,11 @@ EDUCATION_COPY = {
         },
         "answer": "Answer",
         "record_source": "Source row {order}",
+        "audience": (
+            "Age and use scope: technical reference practice for older learners, "
+            "educators, and data users who already work with Unicode notation. "
+            "This is not an early-childhood pronunciation lesson or an assessment."
+        ),
         "boundary": (
             "The Unicode code point identifies the character. Unicode's English "
             "character name is an identifier, not a pronunciation lesson; use "
@@ -133,18 +128,23 @@ EDUCATION_COPY = {
             "Bopomofo app are both published by Lumi Apps. These flashcards and "
             "the printable generator work without the app."
         ),
-        "about": "Bopomofo symbol recognition",
+        "about": "Unicode mapping for Bopomofo characters",
     },
     "pt-BR": {
-        "heading": "18 cartões fixos para reconhecer símbolos Bopomofo",
+        "heading": "37 cartões fixos de referência Unicode–Bopomofo",
         "intro": (
             "Cada pergunta e resposta fica visível imediatamente. Os cartões "
-            "usam fatos fixos de símbolo, categoria e Unicode vindos de um único "
-            "conjunto canônico com 37 símbolos; nenhuma resposta é adivinhada."
+            "usam o mapeamento completo e fixo entre pontos de código Unicode e "
+            "os 37 caracteres Bopomofo básicos; nenhuma resposta é adivinhada."
         ),
         "question": (
-            "Qual símbolo Bopomofo do grupo “{category}” está codificado em "
+            "Qual caractere Bopomofo corresponde ao ponto de código Unicode "
             "{unicode}?"
+        ),
+        "answer_template": (
+            "{symbol}. {unicode} é o ponto de código Unicode de {symbol} no "
+            "bloco Bopomofo. Um ponto de código identifica o caractere; ele "
+            "não informa sua pronúncia."
         ),
         "categories": {
             "initial": "inicial",
@@ -153,6 +153,12 @@ EDUCATION_COPY = {
         },
         "answer": "Resposta",
         "record_source": "Linha da fonte {order}",
+        "audience": (
+            "Faixa etária e uso: prática de referência técnica para estudantes "
+            "mais velhos, educadores e profissionais de dados que já usam a "
+            "notação Unicode. Não é uma aula de pronúncia para crianças pequenas "
+            "nem uma avaliação."
+        ),
         "boundary": (
             "O ponto de código Unicode identifica o caractere. O nome do "
             "caractere em inglês no Unicode é um identificador, não uma aula de "
@@ -175,18 +181,23 @@ EDUCATION_COPY = {
             "Lumi Bopomofo são publicados pela Lumi Apps. Estes cartões e o "
             "gerador para impressão funcionam sem o app."
         ),
-        "about": "Reconhecimento de símbolos Bopomofo",
+        "about": "Mapeamento Unicode de caracteres Bopomofo",
     },
     "es-MX": {
-        "heading": "18 tarjetas fijas para reconocer símbolos Bopomofo",
+        "heading": "37 tarjetas fijas de referencia Unicode–Bopomofo",
         "intro": (
             "Cada pregunta y respuesta se muestra de inmediato. Las tarjetas "
-            "usan datos fijos de símbolo, categoría y Unicode procedentes de un "
-            "solo conjunto canónico de 37 símbolos; ninguna respuesta se adivina."
+            "usan el mapeo completo y fijo entre puntos de código Unicode y los "
+            "37 caracteres Bopomofo básicos; ninguna respuesta se adivina."
         ),
         "question": (
-            "¿Qué símbolo Bopomofo del grupo «{category}» está codificado en "
+            "¿Qué carácter Bopomofo corresponde al punto de código Unicode "
             "{unicode}?"
+        ),
+        "answer_template": (
+            "{symbol}. {unicode} es el punto de código Unicode de {symbol} en "
+            "el bloque Bopomofo. Un punto de código identifica el carácter; "
+            "no indica su pronunciación."
         ),
         "categories": {
             "initial": "inicial",
@@ -195,6 +206,12 @@ EDUCATION_COPY = {
         },
         "answer": "Respuesta",
         "record_source": "Fila de origen {order}",
+        "audience": (
+            "Edad y uso: práctica de referencia técnica para estudiantes "
+            "mayores, docentes y personas que trabajan con datos y ya usan la "
+            "notación Unicode. No es una lección de pronunciación para niñas o "
+            "niños pequeños ni una evaluación."
+        ),
         "boundary": (
             "El punto de código Unicode identifica el carácter. El nombre del "
             "carácter en inglés de Unicode es un identificador, no una lección "
@@ -219,18 +236,22 @@ EDUCATION_COPY = {
             "Lumi Bopomofo son publicados por Lumi Apps. Estas tarjetas y el "
             "generador para imprimir funcionan sin la app."
         ),
-        "about": "Reconocimiento de símbolos Bopomofo",
+        "about": "Mapeo Unicode de caracteres Bopomofo",
     },
     "vi": {
-        "heading": "18 thẻ cố định để nhận biết ký hiệu Bopomofo",
+        "heading": "37 thẻ tham chiếu Unicode–Bopomofo cố định",
         "intro": (
             "Mỗi câu hỏi và câu trả lời đều hiện ngay trên trang. Các thẻ dùng "
-            "dữ kiện cố định về ký hiệu, nhóm và Unicode từ một bộ dữ liệu chuẩn "
-            "duy nhất gồm 37 ký hiệu; không câu trả lời nào được suy đoán."
+            "bảng ánh xạ đầy đủ và cố định giữa các điểm mã Unicode với 37 ký tự "
+            "Bopomofo cơ bản; không câu trả lời nào được suy đoán."
         ),
         "question": (
-            "Ký hiệu Bopomofo thuộc nhóm “{category}” được mã hóa tại "
-            "{unicode} là gì?"
+            "Ký tự Bopomofo nào tương ứng với điểm mã Unicode {unicode}?"
+        ),
+        "answer_template": (
+            "{symbol}. {unicode} là điểm mã Unicode của {symbol} trong khối "
+            "Bopomofo. Điểm mã dùng để định danh ký tự; nó không cho biết cách "
+            "phát âm."
         ),
         "categories": {
             "initial": "phụ âm đầu",
@@ -239,6 +260,11 @@ EDUCATION_COPY = {
         },
         "answer": "Đáp án",
         "record_source": "Dòng nguồn {order}",
+        "audience": (
+            "Độ tuổi và phạm vi sử dụng: bài tham chiếu kỹ thuật dành cho người "
+            "học lớn tuổi hơn, giáo viên và người dùng dữ liệu đã quen với ký "
+            "hiệu Unicode. Đây không phải bài phát âm cho trẻ nhỏ hay bài đánh giá."
+        ),
         "boundary": (
             "Điểm mã Unicode xác định ký tự. Tên ký tự tiếng Anh của Unicode là "
             "một mã định danh, không phải bài hướng dẫn phát âm; hãy dùng tài "
@@ -262,7 +288,7 @@ EDUCATION_COPY = {
             "chọn đều do Lumi Apps phát hành. Các thẻ này và trình tạo bản in "
             "hoạt động mà không cần ứng dụng."
         ),
-        "about": "Nhận biết ký hiệu Bopomofo",
+        "about": "Ánh xạ Unicode cho ký tự Bopomofo",
     },
 }
 
@@ -272,7 +298,8 @@ background:#fff;border:1px solid var(--line);border-radius:26px;
 box-shadow:var(--shadow)}
 .education-qa-canary h2,.education-qa-canary h3{margin:.1em 0 .35em}
 .education-qa-canary-intro,.education-qa-boundary,
-.education-qa-source-intro,.education-qa-first-party{color:var(--muted)}
+.education-qa-audience,.education-qa-source-intro,
+.education-qa-first-party{color:var(--muted)}
 .education-qa-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
 gap:14px;margin:22px 0}
 .education-qa-card{display:flex;flex-direction:column;justify-content:space-between;
@@ -280,7 +307,7 @@ min-height:178px;padding:18px;border:1px solid var(--line);border-radius:18px;
 background:linear-gradient(180deg,#fff,#f7f8ff)}
 .education-qa-question{font-weight:760;margin:0 0 18px}
 .education-qa-answer{margin:0;padding-top:12px;border-top:1px solid var(--line)}
-.education-qa-answer-text{font-size:34px;font-weight:760;margin-left:8px}
+.education-qa-answer-text{font-size:16px;line-height:1.55;margin-left:8px}
 .education-qa-record-link{align-self:flex-end;margin-top:10px;font-size:12px}
 .education-qa-sources{padding-left:22px}
 @media(max-width:680px){.education-qa-list{grid-template-columns:1fr}}
@@ -315,6 +342,70 @@ SOURCE_DIGEST = hashlib.sha256(
 ).hexdigest()
 
 
+def campaign_token(locale: str) -> str:
+    token = f"iag_bopomofo_flashcards_{locale.lower().replace('-', '_')}"
+    if not re.fullmatch(r"[A-Za-z0-9_]{1,30}", token):
+        raise ValueError(f"illegal App Store campaign token: {token}")
+    return token
+
+
+def render_control_page(
+    locale: str,
+    app_public: bool = True,
+    alternate_locales: tuple[str, ...] = CANARY_LOCALES,
+) -> str:
+    previous = os.environ.get("APP_STORE_PROVIDER_TOKEN")
+    os.environ["APP_STORE_PROVIDER_TOKEN"] = PUBLIC_APP_STORE_PROVIDER_TOKEN
+    try:
+        return base.render_page(
+            locale,
+            app_public=app_public,
+            alternate_locales=alternate_locales,
+        )
+    finally:
+        if previous is None:
+            os.environ.pop("APP_STORE_PROVIDER_TOKEN", None)
+        else:
+            os.environ["APP_STORE_PROVIDER_TOKEN"] = previous
+
+
+def app_store_campaign_urls(page: str) -> tuple[str, ...]:
+    return tuple(
+        sorted(
+            {
+                html.unescape(url)
+                for url in re.findall(
+                    r'https://apps\.apple\.com/[^"\s<]+',
+                    page,
+                    re.IGNORECASE,
+                )
+            }
+        )
+    )
+
+
+def validate_app_store_campaign_url(url: str, locale: str) -> list[str]:
+    errors = []
+    parsed = urlsplit(url)
+    if parsed.scheme != "https" or parsed.netloc != "apps.apple.com":
+        errors.append("App Store campaign URL must use https://apps.apple.com")
+    if not re.fullmatch(rf"/app/id{re.escape(base.APP_ID)}", parsed.path):
+        errors.append("App Store campaign URL has the wrong app path")
+    query = parse_qs(parsed.query, keep_blank_values=True)
+    if set(query) != {"pt", "ct", "mt"}:
+        errors.append("App Store campaign URL must contain only pt, ct, and mt")
+    if len(query.get("pt", [])) != 1 or not re.fullmatch(
+        r"[0-9]{1,20}",
+        query.get("pt", [""])[0],
+    ):
+        errors.append("App Store provider token is missing or invalid")
+    if query.get("ct") != [campaign_token(locale)]:
+        errors.append("App Store campaign token is missing or incorrect")
+    if query.get("mt") != ["8"]:
+        errors.append("App Store media type must be mt=8")
+    return errors
+
+
 def flashcards(locale: str) -> list[dict[str, object]]:
     try:
         copy = EDUCATION_COPY[locale]
@@ -323,16 +414,29 @@ def flashcards(locale: str) -> list[dict[str, object]]:
     cards = []
     for order in FLASHCARD_ORDERS:
         row = ROWS_BY_ORDER[order]
+        expected_unicode = f"U+{ord(row['symbol']):04X}"
+        if row["unicode"] != expected_unicode:
+            raise RuntimeError(f"{row['symbol_id']}: Unicode mapping mismatch")
+        if not unicodedata.name(row["symbol"]).startswith("BOPOMOFO LETTER "):
+            raise RuntimeError(f"{row['symbol_id']}: not a Bopomofo letter")
+        category = copy["categories"][row["category"]]
         question = copy["question"].format(
-            category=copy["categories"][row["category"]],
             unicode=row["unicode"],
+            category=category,
+        )
+        answer = copy["answer_template"].format(
+            symbol=row["symbol"],
+            unicode=row["unicode"],
+            order=row["order"],
+            category=category,
         )
         cards.append(
             {
                 "id": row["symbol_id"].lower(),
                 "order": row["order"],
                 "question": question,
-                "answer": row["symbol"],
+                "answer": answer,
+                "answer_symbol": row["symbol"],
                 "unicode": row["unicode"],
                 "category": row["category"],
                 "concept_uri": row["concept_uri"],
@@ -342,13 +446,17 @@ def flashcards(locale: str) -> list[dict[str, object]]:
 
 
 def quiz_schema(locale: str) -> dict[str, object] | None:
-    if not google_education_qa_supported(locale):
+    if (
+        not google_education_qa_supported(locale)
+        or locale not in EDUCATION_COPY
+    ):
         return None
     copy = EDUCATION_COPY[locale]
     return {
         "@context": "https://schema.org",
         "@type": "Quiz",
         "@id": f"{base.canonical(locale)}#fixed-study-flashcards",
+        "url": base.canonical(locale),
         "inLanguage": locale,
         "about": {
             "@type": "Thing",
@@ -367,6 +475,55 @@ def quiz_schema(locale: str) -> dict[str, object] | None:
             for card in flashcards(locale)
         ],
     }
+
+
+def validate_quiz_schema(
+    locale: str,
+    schema: dict[str, object] | None,
+) -> list[str]:
+    if schema is None:
+        return ["Quiz schema is missing"]
+    errors = []
+    canonical = base.canonical(locale)
+    if schema.get("@context") not in {
+        "https://schema.org",
+        "https://schema.org/",
+    }:
+        errors.append("Quiz @context is not schema.org")
+    if schema.get("@type") != "Quiz":
+        errors.append("top-level structured data type must be Quiz")
+    if schema.get("@id") != f"{canonical}#fixed-study-flashcards":
+        errors.append("Quiz @id does not match the canonical URL")
+    if schema.get("url") != canonical:
+        errors.append("Quiz url does not match the canonical URL")
+    if schema.get("inLanguage") != locale:
+        errors.append("Quiz inLanguage does not match the page locale")
+    parts = schema.get("hasPart")
+    if not isinstance(parts, list) or not parts:
+        errors.append("Quiz hasPart must contain at least one Question")
+        return errors
+    for index, question in enumerate(parts):
+        prefix = f"Question {index + 1}"
+        if not isinstance(question, dict):
+            errors.append(f"{prefix} must be an object")
+            continue
+        if question.get("@type") != "Question":
+            errors.append(f"{prefix} @type must be Question")
+        if question.get("eduQuestionType") != "Flashcard":
+            errors.append(f"{prefix} eduQuestionType must be Flashcard")
+        if not isinstance(question.get("text"), str) or not question["text"].strip():
+            errors.append(f"{prefix} text must be non-empty")
+        answer = question.get("acceptedAnswer")
+        if not isinstance(answer, dict):
+            errors.append(f"{prefix} must have exactly one acceptedAnswer object")
+            continue
+        if answer.get("@type") != "Answer":
+            errors.append(f"{prefix} acceptedAnswer @type must be Answer")
+        if not isinstance(answer.get("text"), str) or not answer["text"].strip():
+            errors.append(f"{prefix} acceptedAnswer text must be non-empty")
+        if "suggestedAnswer" in question:
+            errors.append(f"{prefix} must not use suggestedAnswer")
+    return errors
 
 
 def content_digest(locale: str) -> str:
@@ -427,6 +584,7 @@ def render_visible_section(locale: str) -> str:
         'id="fixed-study-flashcards" data-static-visible-qa="true">\n'
         f'<h2>{html.escape(copy["heading"])}</h2>\n'
         f'<p class="education-qa-canary-intro">{html.escape(copy["intro"])}</p>\n'
+        f'<p class="education-qa-audience">{html.escape(copy["audience"])}</p>\n'
         f'<div class="education-qa-list" role="list">{cards}</div>\n'
         f'<p class="education-qa-boundary">{html.escape(copy["boundary"])}</p>\n'
         f'<h3>{html.escape(copy["sources_heading"])}</h3>\n'
@@ -446,7 +604,7 @@ def render_candidate_page(locale: str, app_public: bool = True) -> str:
         raise ValueError(f"locale is not in the canary roster: {locale}")
     if not google_education_qa_supported(locale):
         raise ValueError(f"locale is not eligible for Education Q&A: {locale}")
-    control = base.render_page(
+    control = render_control_page(
         locale,
         app_public=app_public,
         alternate_locales=CANARY_LOCALES,
@@ -501,18 +659,40 @@ def validate_candidate_page(
     body = body_match.group(1) if body_match else ""
     if not body:
         errors.append("missing visible Education Q&A block")
-    for card in cards:
-        question = f'<p class="education-qa-question">{html.escape(card["question"])}</p>'
-        answer = (
-            '<span class="education-qa-answer-text">'
-            f'{html.escape(card["answer"])}</span>'
+    visible_questions = [
+        html.unescape(value)
+        for value in re.findall(
+            r'<p class="education-qa-question">(.*?)</p>',
+            body,
+            re.DOTALL,
         )
-        if question not in body:
-            errors.append(f"missing visible question {card['id']}")
-        if answer not in body:
-            errors.append(f"missing visible answer {card['id']}")
+    ]
+    visible_answers = [
+        html.unescape(value)
+        for value in re.findall(
+            r'<span class="education-qa-answer-text">(.*?)</span>',
+            body,
+            re.DOTALL,
+        )
+    ]
+    expected_pairs = [(card["question"], card["answer"]) for card in cards]
+    if len(visible_questions) != len(visible_answers):
+        errors.append("visible question and answer counts differ")
+    elif list(zip(visible_questions, visible_answers, strict=True)) != expected_pairs:
+        errors.append("visible question/answer content differs from canonical facts")
     if body.count('class="education-qa-card"') != len(cards):
         errors.append("visible flashcard count differs from source")
+    if len({card["question"] for card in cards}) != len(cards):
+        errors.append("flashcard questions are not unique")
+    if len({card["answer_symbol"] for card in cards}) != len(cards):
+        errors.append("flashcard answers are not unique")
+    for card in cards:
+        if (
+            card["answer_symbol"] not in card["answer"]
+            or card["unicode"] not in card["answer"]
+            or len(card["answer"]) <= len(card["answer_symbol"]) + 20
+        ):
+            errors.append(f"answer lacks a substantive explanation: {card['id']}")
     lowered_body = body.lower()
     for forbidden in (
         "<script",
@@ -536,8 +716,10 @@ def validate_candidate_page(
     quizzes = [item for item in scripts if item.get("@type") == "Quiz"]
     if len(quizzes) != 1:
         errors.append("candidate must contain exactly one Quiz object")
-    elif quizzes[0] != schema:
-        errors.append("Quiz object differs from the canonical schema")
+    else:
+        if quizzes[0] != schema:
+            errors.append("Quiz object differs from the canonical schema")
+        errors.extend(validate_quiz_schema(locale, quizzes[0]))
     if '"@type":"QAPage"' in page:
         errors.append("flashcard leaf page must not use QAPage")
     if '"educationalAlignment"' in page:
@@ -556,14 +738,14 @@ def validate_candidate_page(
             errors.append(f"missing hreflang {alternate}")
     if 'data-first-party-disclosure="true"' not in body:
         errors.append("first-party disclosure is missing")
-    app_links = re.findall(
-        r'https://apps\.apple\.com/[^"\s<]+',
-        page,
-        re.IGNORECASE,
-    )
-    if any(f"id{base.APP_ID}" not in link for link in app_links):
-        errors.append("unrelated App Store promotion found")
-    if app_links and page.index(app_links[0]) < page.index(BODY_END):
+    if html.escape(EDUCATION_COPY[locale]["audience"]) not in body:
+        errors.append("age and use scope is missing")
+    app_links = app_store_campaign_urls(page)
+    if len(app_links) != 1:
+        errors.append("candidate must contain one distinct App Store campaign URL")
+    else:
+        errors.extend(validate_app_store_campaign_url(app_links[0], locale))
+    if app_links and page.index(app_links[0].split("?", 1)[0]) < page.index(BODY_END):
         errors.append("App CTA appears before the complete educational content")
     if control is not None and strip_managed_blocks(page) != control:
         errors.append("non-managed control content changed")
@@ -571,6 +753,19 @@ def validate_candidate_page(
         errors.append("raw localization key or placeholder is visible")
     if locale != "en":
         english = EDUCATION_COPY["en"]
-        if english["heading"] in body or english["intro"] in body:
-            errors.append("English fallback found in localized Education Q&A")
+        for key in (
+            "heading",
+            "intro",
+            "question",
+            "answer_template",
+            "audience",
+            "boundary",
+            "sources_heading",
+            "sources_intro",
+            "first_party",
+        ):
+            if english[key] in body:
+                errors.append(
+                    f"English fallback found in localized Education Q&A: {key}"
+                )
     return errors

@@ -3,7 +3,19 @@
   "blocking_reasons": [
     {
       "code": "EXACT_50_LOCALE_CONTENT_MISSING",
-      "detail": "40 official locales do not have this mother-tongue flashcard leaf surface. The canary must not be published until exact-50 content is independently completed."
+      "detail": "47 official locales do not have this mother-tongue flashcard leaf surface. The canary must not be published until exact-50 content is independently completed."
+    },
+    {
+      "code": "NON_OFFICIAL_GENERIC_LOCALE_ROUTE",
+      "detail": "The English candidate uses the existing generic /tools/ route, not one of the four official en-* portfolio locales. It cannot count toward exact-50 coverage."
+    },
+    {
+      "code": "GOOGLE_ELIGIBLE_OFFICIAL_ROUTES_MISSING",
+      "detail": "5 Google-eligible official locale routes are missing localized candidate pages. The generic English route cannot replace en-AU, en-CA, en-GB, or en-US."
+    },
+    {
+      "code": "OFFICIAL_RICH_RESULTS_TEST_NOT_RUN",
+      "detail": "Google provides no public Rich Results Test API for local HTML. The local checker enforces Google's documented Quiz properties, but official eligibility evidence requires a public candidate URL."
     },
     {
       "code": "NO_DEPLOYMENT_OR_SEARCH_APPEARANCE_EVIDENCE",
@@ -13,63 +25,73 @@
   "candidate_sitemap": {
     "artifact": "candidate-sitemap.xml",
     "published": false,
-    "sha256": "0bfa73fd6f8056bb3d815afe063986c517303528c99d45ec68274dd17386e6db",
+    "sha256": "c90f245882e926f4466eda8a25487122ab9713398b83a5bdf2c895b50a17f37d",
     "url_count": 4
   },
-  "deterministic_validation_case_count": 181,
-  "experiment_date": "2026-08-29",
+  "deterministic_validation_case_count": 333,
+  "experiment_date": "2026-08-30",
   "experiment_id": "bopomofo-flashcards-20260829",
   "gates": {
+    "age_and_use_scope_disclosed": "PASS",
+    "app_store_campaign_url_format": "PASS",
     "candidate_sitemap_parse_and_membership": "PASS",
     "canonical_and_hreflang": "PASS",
     "exact_50_locale_deployment_gate": "BLOCK",
     "existing_non_managed_content_preserved": "PASS",
     "first_party_disclosure_before_app_cta": "PASS",
+    "google_documented_quiz_format": "PASS",
     "google_supported_locale_exactness": "PASS",
     "idempotent_generation": "PASS",
     "no_english_fallback_or_raw_keys": "PASS",
     "no_hidden_or_paywalled_qa": "PASS",
+    "no_quiz_on_google_unsupported_locale": "PASS",
+    "no_template_thin_page": "PASS",
     "no_unrelated_app_promotion": "PASS",
-    "quiz_required_properties": "PASS",
+    "official_rich_results_test_gate": "BLOCK",
     "robots_allows_googlebot": "PASS",
+    "substantive_explanation_per_answer": "PASS",
     "true_flashcard_leaf": "PASS",
+    "unique_correct_answer_per_question": "PASS",
     "visible_qa_matches_json_ld_exactly": "PASS"
   },
   "generation_status": "BLOCKED_NOT_DEPLOYABLE",
   "layers": {
-    "C": {
-      "meaning": "Search impressions and clicks",
-      "required_metrics": [
-        "education_qa_impressions",
-        "education_qa_clicks"
-      ],
+    "click": {
+      "meaning": "Google Search clicks attributed to candidate pages",
+      "required_metric": "education_qa_clicks",
       "status": "NOT_MEASURED_NO_DEPLOYMENT"
     },
-    "D": {
-      "meaning": "Google discovery and indexation",
-      "required_metric": "indexed_candidate_url_count",
-      "status": "NOT_MEASURED_NO_DEPLOYMENT"
+    "deployed": {
+      "candidate_page_count": 0,
+      "meaning": "candidate revision published at its canonical URLs",
+      "status": "NOT_DEPLOYED"
     },
-    "DL": {
+    "download": {
       "causality_claimed": false,
-      "meaning": "existing legal App Store campaign lower bound",
+      "meaning": "App Store campaign download or sale lower bound",
       "required_metric": "asc_campaign_download_or_sale_lower_bound",
       "status": "NOT_MEASURED_NO_DEPLOYMENT"
     },
-    "E": {
-      "meaning": "valid Education Q&A appearance",
-      "required_metric": "valid_education_qa_item_count",
-      "status": "NOT_MEASURED_NO_DEPLOYMENT"
+    "get": {
+      "meaning": "successful HTTP GET of the deployed candidate revision",
+      "status": "NOT_TESTABLE_NO_DEPLOYMENT",
+      "successful_candidate_get_count": 0
     },
-    "RC": {
+    "inventory": {
+      "candidate_page_count": 4,
       "counts_as_exposure": false,
       "evidence": [
         "HTML and JSON parse",
-        "HTTP-ready canonical, hreflang, robots and sitemap",
+        "canonical, hreflang, robots and candidate sitemap",
         "visible Q/A equals Quiz JSON-LD"
       ],
-      "meaning": "render and crawl prerequisites",
+      "meaning": "local candidate artifacts",
       "status": "PASS_LOCAL_ONLY"
+    },
+    "rich_result": {
+      "meaning": "valid Google Education Q&A item or appearance",
+      "required_metric": "valid_education_qa_item_count",
+      "status": "NOT_MEASURED_NO_DEPLOYMENT"
     }
   },
   "measurement_gates": {
@@ -110,62 +132,66 @@
     {
       "assignment": "same_url_pre_post_revision",
       "campaign_token": "iag_bopomofo_flashcards_en",
+      "campaign_url": "https://apps.apple.com/app/id6773017109?pt=118326163&ct=iag_bopomofo_flashcards_en&mt=8",
       "candidate_artifact": "candidate_pages/en/tools/zhuyin-flashcards.html",
-      "candidate_html_sha256": "94380c410b0ccc964d03cdb57343be867e001b0582d25061ff2395d1c9178119",
+      "candidate_html_sha256": "84fdc07874363f24ded16d70ea70487127cc046a3cde88b5267009e652320cb2",
       "candidate_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-flashcards.html",
-      "content_sha256": "dd84dddc0bfa521569f82239c03b18c10381db1ef8be7337cdca7ff5bfb58d4a",
+      "content_sha256": "7c72d5a3fb833ad597fb250eb7849702de6b43df6fd4fa2fa2308bd44201284c",
       "control_html_sha256": "8872d55fa13bb7b4673833da54de7f5a771a475cc46b2063b90585b846a38a2c",
       "control_ref": "origin/main@6b4745d040e43a5bb0c5c8e4c35404f33101bddd",
       "control_state": "existing_public_leaf",
       "control_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-flashcards.html",
-      "flashcard_count": 18,
+      "flashcard_count": 37,
       "locale": "en",
-      "schema_sha256": "a5c67f89c263f876401acda724184ea37c28906cb33e46117968c856bbeb17bb"
+      "schema_sha256": "cef6bd1d929b4363fe295a3ca625a3f48617caad074728b514ac09e8f1573c6e"
     },
     {
       "assignment": "same_url_pre_post_revision",
       "campaign_token": "iag_bopomofo_flashcards_pt_br",
+      "campaign_url": "https://apps.apple.com/app/id6773017109?pt=118326163&ct=iag_bopomofo_flashcards_pt_br&mt=8",
       "candidate_artifact": "candidate_pages/pt-BR/tools/zhuyin-flashcards.html",
-      "candidate_html_sha256": "900d60d3e458021afaaa517ea394ed9dd6bf928ae5fb02c824c3e358b6b2cd41",
+      "candidate_html_sha256": "1edbf53de3e7d886a2b66d0ff04362a6ff90afc86efdc17840447d13ba1e1034",
       "candidate_url": "https://alice51849.github.io/ios-app-guide/pt-BR/tools/zhuyin-flashcards.html",
-      "content_sha256": "006e8d3966f0695d5c866b98d65faf3677b024f2cf02e5305f234272d11a890b",
+      "content_sha256": "17a6656aacae8658f884f863aff6cc3b9376784ea1bfd272a647983bf9a94db4",
       "control_html_sha256": "6210594c10d065d17580742b99ab399e94170c032a8e8ff1f915ab03f3f7b55a",
       "control_ref": "origin/main@6b4745d040e43a5bb0c5c8e4c35404f33101bddd",
       "control_state": "existing_public_leaf",
       "control_url": "https://alice51849.github.io/ios-app-guide/pt-BR/tools/zhuyin-flashcards.html",
-      "flashcard_count": 18,
+      "flashcard_count": 37,
       "locale": "pt-BR",
-      "schema_sha256": "cfde03f1274976ad8bf659b37f5ce29b38ad1b5057c98e16521c9bf762b098ae"
+      "schema_sha256": "beaeee3e2ba431a9a1ca44350dbc99e961a4b167d2ec9f3904d507d1c420ec4a"
     },
     {
       "assignment": "same_url_pre_post_revision",
       "campaign_token": "iag_bopomofo_flashcards_es_mx",
+      "campaign_url": "https://apps.apple.com/app/id6773017109?pt=118326163&ct=iag_bopomofo_flashcards_es_mx&mt=8",
       "candidate_artifact": "candidate_pages/es-MX/tools/zhuyin-flashcards.html",
-      "candidate_html_sha256": "84fbbb93232ed1d78dd8545159f5e6ada47ab10c3c52ef92dde3e0725a389fc6",
+      "candidate_html_sha256": "b6f6e53ec7fb4da13441b9a4331a7d9fef57d37546c44cd0a4e3fe1f9d53349c",
       "candidate_url": "https://alice51849.github.io/ios-app-guide/es-MX/tools/zhuyin-flashcards.html",
-      "content_sha256": "49e7859c3f66ed99a6d0daf68affb0445ad236cbdc7c82b22196a69d3b0e1e5d",
+      "content_sha256": "6b8daa062e91e101c2d7a677964014f40f0da6dc5979f7b9092cfd98ddcaf624",
       "control_html_sha256": "289e6294b2094623e844f94b787c5f4228af413ed7972e1fa8ffc3b1fc4bb511",
       "control_ref": "origin/main@6b4745d040e43a5bb0c5c8e4c35404f33101bddd",
       "control_state": "new_localized_leaf_not_present_in_control",
       "control_url": "https://alice51849.github.io/ios-app-guide/es-MX/tools/zhuyin-flashcards.html",
-      "flashcard_count": 18,
+      "flashcard_count": 37,
       "locale": "es-MX",
-      "schema_sha256": "bb7418cd5f85ca86fad8bc7eb7043b6e40fd8a5e5791ee0abec2d91bd1b415a0"
+      "schema_sha256": "5b7dc3014b018eab4c72eddfc1f88320ff2fc0337b0e67e86205e97f1070a212"
     },
     {
       "assignment": "same_url_pre_post_revision",
       "campaign_token": "iag_bopomofo_flashcards_vi",
+      "campaign_url": "https://apps.apple.com/app/id6773017109?pt=118326163&ct=iag_bopomofo_flashcards_vi&mt=8",
       "candidate_artifact": "candidate_pages/vi/tools/zhuyin-flashcards.html",
-      "candidate_html_sha256": "5fe560b8624845731978005da87faa4be7d68894978d6fed9e443c70446fd5e2",
+      "candidate_html_sha256": "4492fe4f8d749a0f2f1bd3aa4fe0767acab015ed0dbfa5c9a6e9d3c5ef09a289",
       "candidate_url": "https://alice51849.github.io/ios-app-guide/vi/tools/zhuyin-flashcards.html",
-      "content_sha256": "535be41928a90e4e4c9a1f7a484a097f8951025c940c43a0d48a1a21e1d43def",
+      "content_sha256": "a67e073c984ccc226754be163fa69827fc3989ba5b81997ed6055234b0e6f22f",
       "control_html_sha256": "7a2c105979418bc87f1a654f86fd2184095f507c22d1b85ad531ff7eb3b63f98",
       "control_ref": "origin/main@6b4745d040e43a5bb0c5c8e4c35404f33101bddd",
       "control_state": "new_localized_leaf_not_present_in_control",
       "control_url": "https://alice51849.github.io/ios-app-guide/vi/tools/zhuyin-flashcards.html",
-      "flashcard_count": 18,
+      "flashcard_count": 37,
       "locale": "vi",
-      "schema_sha256": "4f980434c89c9163bb892c63da72a7cb1f1e708fe4dba0a558aacbac20586a60"
+      "schema_sha256": "329234b97e9017474f03059cdc9962692fd3aaeb28eb4fe9be59b2446e31b6bb"
     }
   ],
   "policy_sources": [
@@ -174,12 +200,18 @@
     "https://developers.google.com/search/docs/essentials/spam-policies"
   ],
   "qualification": {
+    "candidate_answers_include_fact_specific_explanations": true,
     "candidate_has_immediately_visible_fixed_qa": true,
     "candidate_is_not_worksheet_pdf_or_promotion_disguised_as_flashcards": true,
+    "candidate_scope_is_older_learner_and_technical_reference": true,
     "control_has_immediately_visible_fixed_qa": false,
     "control_has_real_37_symbol_flashcard_generator": true,
     "control_is_detailed_flashcard_leaf": true,
     "schema_added_only_after_visible_qa_is_rendered": true
+  },
+  "safe_page_counts": {
+    "deployable_after_all_blocking_gates": 0,
+    "locally_validated_content_and_schema": 4
   },
   "scope": {
     "app_or_asc_changes": false,
@@ -212,10 +244,15 @@
         "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html"
       }
     ],
-    "selected_flashcard_count": 18,
+    "selected_flashcard_count": 37,
     "unicode_character_names_used_as_pronunciation": false
   },
   "supported_locale_roster": {
+    "candidate_official_locales": [
+      "pt-BR",
+      "es-MX",
+      "vi"
+    ],
     "google_eligible_official_locales": [
       "en-AU",
       "en-CA",
@@ -226,38 +263,18 @@
       "pt-PT",
       "vi"
     ],
-    "google_rule": {
-      "English": "all regions",
-      "Portuguese": "all regions",
-      "Spanish": "Mexico only",
-      "Vietnamese": "all regions"
-    },
-    "intended_resource_locales": [
-      "en",
-      "es-ES",
-      "pt-BR",
-      "de-DE",
-      "fr-FR",
-      "ja",
-      "ko",
-      "zh-Hant",
-      "zh-Hans",
-      "es-MX",
-      "vi"
-    ],
-    "missing_exact_50_locales": [
+    "google_ineligible_official_locales": [
       "ar-SA",
       "bn-BD",
       "ca",
       "cs",
       "da",
+      "de-DE",
       "el",
-      "en-AU",
-      "en-CA",
-      "en-GB",
-      "en-US",
+      "es-ES",
       "fi",
       "fr-CA",
+      "fr-FR",
       "gu-IN",
       "he",
       "hi",
@@ -265,7 +282,63 @@
       "hu",
       "id",
       "it",
+      "ja",
       "kn-IN",
+      "ko",
+      "ml-IN",
+      "mr-IN",
+      "ms",
+      "nl-NL",
+      "no",
+      "or-IN",
+      "pa-IN",
+      "pl",
+      "ro",
+      "ru",
+      "sk",
+      "sl-SI",
+      "sv",
+      "ta-IN",
+      "te-IN",
+      "th",
+      "tr",
+      "uk",
+      "ur-PK",
+      "zh-Hans",
+      "zh-Hant"
+    ],
+    "google_rule": {
+      "English": "all regions",
+      "Portuguese": "all regions",
+      "Spanish": "Mexico only",
+      "Vietnamese": "all regions"
+    },
+    "missing_exact_50_locales": [
+      "ar-SA",
+      "bn-BD",
+      "ca",
+      "cs",
+      "da",
+      "de-DE",
+      "el",
+      "en-AU",
+      "en-CA",
+      "en-GB",
+      "en-US",
+      "es-ES",
+      "fi",
+      "fr-CA",
+      "fr-FR",
+      "gu-IN",
+      "he",
+      "hi",
+      "hr",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "kn-IN",
+      "ko",
       "ml-IN",
       "mr-IN",
       "ms",
@@ -285,7 +358,16 @@
       "th",
       "tr",
       "uk",
-      "ur-PK"
+      "ur-PK",
+      "zh-Hans",
+      "zh-Hant"
+    ],
+    "missing_google_eligible_official_locales": [
+      "en-AU",
+      "en-CA",
+      "en-GB",
+      "en-US",
+      "pt-PT"
     ],
     "non_official_generic_routes": [
       "en"

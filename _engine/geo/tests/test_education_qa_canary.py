@@ -74,7 +74,7 @@ class EducationQACanaryTests(unittest.TestCase):
     def test_control_is_a_real_leaf_flashcard_page_before_schema(self):
         for locale in education_qa.CANARY_LOCALES:
             with self.subTest(locale=locale):
-                control = base.render_page(
+                control = education_qa.render_control_page(
                     locale,
                     app_public=True,
                     alternate_locales=education_qa.CANARY_LOCALES,
@@ -134,7 +134,7 @@ class EducationQACanaryTests(unittest.TestCase):
                     )
                 )
 
-    def test_72_visible_pairs_match_quiz_byte_for_byte_semantically(self):
+    def test_148_visible_pairs_match_quiz_byte_for_byte_semantically(self):
         for locale, page in self.pages.items():
             cards = education_qa.flashcards(locale)
             visible = _visible_pairs(page)
@@ -165,10 +165,10 @@ class EducationQACanaryTests(unittest.TestCase):
 
     def test_selected_cards_are_unique_and_cover_all_three_groups(self):
         cards = education_qa.flashcards("en")
-        self.assertEqual(18, len(cards))
-        self.assertEqual(18, len({card["answer"] for card in cards}))
+        self.assertEqual(37, len(cards))
+        self.assertEqual(37, len({card["answer_symbol"] for card in cards}))
         self.assertEqual(
-            {"initial": 6, "medial": 3, "final": 9},
+            {"initial": 21, "medial": 3, "final": 13},
             {
                 category: sum(
                     card["category"] == category for card in cards
@@ -177,7 +177,62 @@ class EducationQACanaryTests(unittest.TestCase):
             },
         )
 
-    def test_72_html_escaping_round_trips_without_schema_drift(self):
+    def test_each_answer_is_unique_and_has_a_fact_specific_explanation(self):
+        for locale in education_qa.CANARY_LOCALES:
+            cards = education_qa.flashcards(locale)
+            with self.subTest(locale=locale):
+                self.assertEqual(37, len({card["question"] for card in cards}))
+                self.assertEqual(
+                    37,
+                    len({card["answer_symbol"] for card in cards}),
+                )
+            for card in cards:
+                with self.subTest(locale=locale, card=card["id"]):
+                    self.assertIn(card["answer_symbol"], card["answer"])
+                    self.assertIn(card["unicode"], card["answer"])
+                    self.assertGreater(
+                        len(card["answer"]),
+                        len(card["answer_symbol"]) + 20,
+                    )
+
+    def test_age_and_use_scope_is_visible_in_each_locale(self):
+        for locale, page in self.pages.items():
+            with self.subTest(locale=locale):
+                self.assertIn(
+                    html.escape(
+                        education_qa.EDUCATION_COPY[locale]["audience"]
+                    ),
+                    page,
+                )
+                self.assertIn(f'<html lang="{locale}">', page)
+
+    def test_localized_copy_has_no_english_fallback_or_raw_placeholder(self):
+        self.assertEqual(
+            set(education_qa.CANARY_LOCALES),
+            set(education_qa.EDUCATION_COPY),
+        )
+        english = education_qa.EDUCATION_COPY["en"]
+        for locale, page in self.pages.items():
+            self.assertNotIn("{unicode}", page)
+            self.assertNotIn("{category}", page)
+            if locale == "en":
+                continue
+            for key in (
+                "heading",
+                "intro",
+                "question",
+                "answer_template",
+                "audience",
+                "boundary",
+            ):
+                with self.subTest(locale=locale, key=key):
+                    self.assertNotEqual(
+                        english[key],
+                        education_qa.EDUCATION_COPY[locale][key],
+                    )
+                    self.assertNotIn(english[key], page)
+
+    def test_148_html_escaping_round_trips_without_schema_drift(self):
         for locale, page in self.pages.items():
             cards = education_qa.flashcards(locale)
             body = page.split(education_qa.BODY_START, 1)[1].split(
@@ -226,6 +281,11 @@ class EducationQACanaryTests(unittest.TestCase):
             with self.subTest(locale=locale):
                 schema = _quiz(page)
                 self.assertEqual("Quiz", schema["@type"])
+                self.assertEqual(base.canonical(locale), schema["url"])
+                self.assertEqual(
+                    [],
+                    education_qa.validate_quiz_schema(locale, schema),
+                )
                 self.assertNotIn("educationalAlignment", schema)
                 self.assertEqual(
                     len(education_qa.FLASHCARD_ORDERS),
@@ -273,6 +333,7 @@ class EducationQACanaryTests(unittest.TestCase):
                 self.assertTrue(
                     education_qa.google_education_qa_supported(locale)
                 )
+        self.assertIsNone(education_qa.quiz_schema("pt-PT"))
         for locale in (
             "es-ES",
             "es-AR",
@@ -358,10 +419,23 @@ class EducationQACanaryTests(unittest.TestCase):
                 )
                 self.assertLess(disclosure, page.index(app_links[0]))
 
+    def test_app_store_campaign_urls_are_legal_and_locale_specific(self):
+        for locale, page in self.pages.items():
+            with self.subTest(locale=locale):
+                urls = education_qa.app_store_campaign_urls(page)
+                self.assertEqual(1, len(urls))
+                self.assertEqual(
+                    [],
+                    education_qa.validate_app_store_campaign_url(
+                        urls[0],
+                        locale,
+                    ),
+                )
+
     def test_non_managed_control_content_is_preserved_exactly(self):
         for locale, page in self.pages.items():
             with self.subTest(locale=locale):
-                control = base.render_page(
+                control = education_qa.render_control_page(
                     locale,
                     app_public=True,
                     alternate_locales=education_qa.CANARY_LOCALES,
@@ -371,7 +445,7 @@ class EducationQACanaryTests(unittest.TestCase):
                     education_qa.strip_managed_blocks(page),
                 )
 
-    def test_manifest_is_fail_closed_and_has_rc_d_e_c_dl_gates(self):
+    def test_manifest_is_fail_closed_and_separates_evidence_layers(self):
         manifest = self.manifest
         self.assertEqual(
             education_qa.EXPERIMENT_SCHEMA,
@@ -386,10 +460,19 @@ class EducationQACanaryTests(unittest.TestCase):
             100,
         )
         self.assertEqual(
-            {"RC", "D", "E", "C", "DL"},
+            {
+                "inventory",
+                "deployed",
+                "get",
+                "rich_result",
+                "click",
+                "download",
+            },
             set(manifest["layers"]),
         )
-        self.assertFalse(manifest["layers"]["RC"]["counts_as_exposure"])
+        self.assertFalse(
+            manifest["layers"]["inventory"]["counts_as_exposure"]
+        )
         self.assertIn(
             "never counts as exposure",
             manifest["measurement_gates"]["exposure_definition"],
@@ -399,12 +482,33 @@ class EducationQACanaryTests(unittest.TestCase):
             manifest["gates"]["exact_50_locale_deployment_gate"],
         )
         self.assertEqual(
-            40,
+            47,
             len(
                 manifest["supported_locale_roster"][
                     "missing_exact_50_locales"
                 ]
             ),
+        )
+        self.assertEqual(
+            ["en"],
+            manifest["supported_locale_roster"][
+                "non_official_generic_routes"
+            ],
+        )
+        self.assertEqual(
+            5,
+            len(
+                manifest["supported_locale_roster"][
+                    "missing_google_eligible_official_locales"
+                ]
+            ),
+        )
+        self.assertEqual(
+            {
+                "locally_validated_content_and_schema": 4,
+                "deployable_after_all_blocking_gates": 0,
+            },
+            manifest["safe_page_counts"],
         )
         forbidden = set(
             manifest["measurement_gates"]["forbidden_actions"]
@@ -435,6 +539,54 @@ class EducationQACanaryTests(unittest.TestCase):
         }
         self.assertEqual(first_manifest, second_manifest)
         self.assertEqual(first, second)
+
+    def test_generation_ignores_ambient_provider_token(self):
+        with mock.patch.dict(
+            "os.environ",
+            {"APP_STORE_PROVIDER_TOKEN": "999999"},
+        ):
+            changed_environment = experiment.build()
+        self.assertEqual(self.manifest, changed_environment)
+
+    def test_content_mutations_are_rejected(self):
+        locale = "en"
+        page = self.pages[locale]
+        control = education_qa.render_control_page(locale)
+        first = education_qa.flashcards(locale)[0]
+
+        head, body = page.split(education_qa.BODY_START, 1)
+        mutated_visible = (
+            head
+            + education_qa.BODY_START
+            + body.replace(
+                html.escape(first["answer"]),
+                "Incorrect answer without evidence.",
+                1,
+            )
+        )
+        self.assertTrue(
+            education_qa.validate_candidate_page(
+                locale,
+                mutated_visible,
+                control,
+            )
+        )
+
+        mutated_campaign = page.replace(
+            education_qa.campaign_token(locale),
+            "wrong_campaign",
+        )
+        self.assertTrue(
+            education_qa.validate_candidate_page(
+                locale,
+                mutated_campaign,
+                control,
+            )
+        )
+
+        schema = json.loads(json.dumps(_quiz(page), ensure_ascii=False))
+        del schema["hasPart"][0]["acceptedAnswer"]
+        self.assertTrue(education_qa.validate_quiz_schema(locale, schema))
 
     def test_generator_contains_no_network_or_publish_primitive(self):
         source = Path(experiment.__file__).read_text(encoding="utf-8")

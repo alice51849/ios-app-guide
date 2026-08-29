@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import os
 import re
 import sys
@@ -15,6 +16,7 @@ sys.path.insert(0, GEO)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 
 import aeo_answers  # noqa: E402
+import answer_hreflang  # noqa: E402
 import gen_store_attribution  # noqa: E402
 
 
@@ -36,7 +38,7 @@ def json_ld(document: str) -> list[dict]:
 class UnblurryQueryCampaignTests(unittest.TestCase):
     def test_us_query_tokens_are_legal_unique_and_reversible(self):
         tokens = list(gen_store_attribution.US_QUERY_CAMPAIGNS.values())
-        self.assertEqual(3, len(tokens))
+        self.assertEqual(1, len(tokens))
         self.assertEqual(len(tokens), len(set(tokens)))
         for token in tokens:
             self.assertLessEqual(len(token), gen_store_attribution.MAX_TOKEN)
@@ -50,9 +52,40 @@ class UnblurryQueryCampaignTests(unittest.TestCase):
         self.assertEqual(
             TOKEN, gen_store_attribution.campaign_token(RELATIVE)
         )
+        unchanged = (
+            "answers/can-you-actually-unblur-a-photo.html",
+            "answers/is-a-pay-once-photo-enhancer-worth-it-vs-remini.html",
+            f"fr-FR/{RELATIVE}",
+        )
+        for route in unchanged:
+            with self.subTest(route=route):
+                self.assertEqual(
+                    "geo_ask",
+                    gen_store_attribution.campaign_token(route),
+                )
+
+    def test_unregistered_pages_remain_byte_identical_to_remote_base(self):
+        expected = {
+            "can-you-actually-unblur-a-photo.html": (
+                "bfd383881a58e609b491dd76274b9379ed79aded2e6796415085cb3bd00e0c03"
+            ),
+            "is-a-pay-once-photo-enhancer-worth-it-vs-remini.html": (
+                "abf00c83a12a5b4cc1d28cfded734793997b637150f6cb7c1f922b95a9f81fb6"
+            ),
+        }
+        for name, digest in expected.items():
+            with self.subTest(page=name):
+                data = (
+                    aeo_answers.PAGES_ROOT / "answers" / name
+                ).read_bytes()
+                self.assertEqual(digest, hashlib.sha256(data).hexdigest())
+        qr = (
+            aeo_answers.PAGES_ROOT
+            / "assets/app-store-qr/id6782275018-25eda57cdbabc587dca5.svg"
+        ).read_bytes()
         self.assertEqual(
-            "geo_ask",
-            gen_store_attribution.campaign_token(f"fr-FR/{RELATIVE}"),
+            "0b7bf33f7494d743da72a1f8f246b31f91061705be51ef764c044bd8b6e10123",
+            hashlib.sha256(qr).hexdigest(),
         )
 
 
@@ -75,26 +108,37 @@ class UnblurryDecisionPageTests(unittest.TestCase):
         self.assertIn("two regular saves per day", self.document)
         self.assertIn("one AI Clarity trial", self.document)
 
-    def test_retired_faq_schema_is_not_emitted(self):
+    def test_deprecated_answer_schemas_are_not_emitted(self):
         types = {
             node.get("@type")
             for node in json_ld(self.document)
             if isinstance(node, dict)
         }
         self.assertIn("Article", types)
-        self.assertIn("HowTo", types)
         self.assertNotIn("FAQPage", types)
+        self.assertNotIn("HowTo", types)
         self.assertNotIn("https://schema.org/Question", self.document)
         self.assertIn("<h2>Decision checks</h2>", self.document)
 
     def test_en_us_identity_and_campaign_url_are_separate(self):
         self.assertIn('<html lang="en-US">', self.document)
-        self.assertIn('hreflang="en-US"', self.document)
+        self.assertNotIn('hreflang="en-US"', self.document)
         self.assertIn(
             '<link rel="canonical" '
             'href="https://alice51849.github.io/ios-app-guide/'
             f'{RELATIVE}">',
             self.document,
+        )
+        pairs = answer_hreflang.extract_pairs(self.document)
+        self.assertEqual("en", pairs[0][0])
+        self.assertEqual("x-default", pairs[-1][0])
+        self.assertEqual(
+            ["en"]
+            + answer_hreflang.existing_locales(
+                aeo_answers.PAGES_ROOT, SLUG
+            )
+            + ["x-default"],
+            [locale for locale, _ in pairs],
         )
         tracked = {
             url
@@ -136,6 +180,24 @@ class UnblurryDecisionPageTests(unittest.TestCase):
             QUESTION, "unblurry", self.content
         )
         self.assertEqual(self.document, rerendered)
+
+    def test_schema_flags_do_not_change_other_pages(self):
+        question = "can you actually unblur a photo"
+        content = aeo_answers.normalized_content(
+            aeo_answers.default_content(question, "unblurry"),
+            question,
+            "unblurry",
+        )
+        document = aeo_answers.render_page(
+            question, "unblurry", content
+        )
+        types = {
+            node.get("@type")
+            for node in json_ld(document)
+            if isinstance(node, dict)
+        }
+        self.assertIn("FAQPage", types)
+        self.assertIn("HowTo", types)
 
 
 if __name__ == "__main__":

@@ -19,6 +19,7 @@ from urllib.parse import urlsplit, urlunsplit
 from pathlib import Path
 from typing import Any
 
+import answer_hreflang
 from official_locales import OFFICIAL_LOCALES
 
 
@@ -947,9 +948,7 @@ def read_key() -> str:
 
 
 def page_url(slug: str, lang: str | None = None) -> str:
-    if lang:
-        return f"{BASE_URL}/{lang}/answers/{slug}.html"
-    return f"{BASE_URL}/answers/{slug}.html"
+    return answer_hreflang.page_url(slug, lang, BASE_URL)
 
 
 def localize_url(url: str, lang: str) -> str:
@@ -1869,27 +1868,9 @@ def replace_spans(source: str, replacements: list[tuple[int, int, str]]) -> str:
 
 
 def alternates_html(slug: str, current_lang: str | None = None) -> str:
-    lines = []
-    english = ANSWERS / f"{slug}.html"
-    if english.exists():
-        lines.append(
-            f'<link rel="alternate" hreflang="en" href="{page_url(slug)}">'
-        )
-    for code in ALL_LANGS:
-        target = ROOT / code / "answers" / f"{slug}.html"
-        if code == current_lang or target.exists():
-            lines.append(
-                f'<link rel="alternate" hreflang="{code}" '
-                f'href="{page_url(slug, code)}">'
-            )
-    default = page_url(slug) if english.exists() else page_url(
-        slug, current_lang
+    return answer_hreflang.build_block(
+        ROOT, slug, current_lang, BASE_URL
     )
-    if default:
-        lines.append(
-            f'<link rel="alternate" hreflang="x-default" href="{default}">'
-        )
-    return "\n".join(lines)
 
 
 def reconcile_alternates(
@@ -1899,17 +1880,13 @@ def reconcile_alternates(
 ) -> bool:
     if not path.exists():
         return False
-    source = path.read_text(encoding="utf-8")
-    updated = re.sub(
-        r'(<link rel="alternate" hreflang="[^"]+" href="[^"]+">\s*)+',
-        alternates_html(slug, current_lang) + "\n",
-        source,
-        count=1,
+    return answer_hreflang.reconcile_path(
+        path,
+        ROOT,
+        slug,
+        current_lang,
+        BASE_URL,
     )
-    if updated == source:
-        return False
-    path.write_text(updated, encoding="utf-8")
-    return True
 
 
 def reconcile_english_alternates(slug: str) -> bool:

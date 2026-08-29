@@ -1,56 +1,100 @@
 #!/usr/bin/env python3
-"""Fix EN answer-page hreflang reciprocity: EN pages hardcode only en+x-default,
-so EN->locale hreflang is missing while locale pages point back to en (non-reciprocal).
-For each EN answer page, rewrite its hreflang block to declare en + every EXISTING
-locale version + x-default. Idempotent; only rewrites when the set changes.
-Reuses aeo_answers_i18n.page_url/ALL_LANGS for exact URL format."""
-import os, re, sys, glob
+"""Reconcile English answer pages with the shared hreflang authority."""
+from __future__ import annotations
+
+import argparse
+from pathlib import Path
+
 import aeo_answers_i18n as I
+import answer_hreflang
 
-ROOT = I.ROOT  # pages dir
-ANS = os.path.join(ROOT, "answers")
-ALT_RE = re.compile(r'(?:<link rel="alternate" hreflang="[^"]+" href="[^"]+">\s*)+')
 
-def existing_locales(slug: str):
-    return [lc for lc in I.ALL_LANGS if os.path.exists(os.path.join(ROOT, lc, "answers", f"{slug}.html"))]
+ROOT = I.ROOT
+ANSWERS = ROOT / "answers"
 
-def build_block(slug: str, locales) -> str:
-    lines = [f'<link rel="alternate" hreflang="en" href="{I.page_url(slug)}">']
-    for lc in locales:
-        lines.append(f'<link rel="alternate" hreflang="{lc}" href="{I.page_url(slug, lc)}">')
-    lines.append(f'<link rel="alternate" hreflang="x-default" href="{I.page_url(slug)}">')
-    return "\n".join(lines)
 
-def main():
-    dry = "--dry-run" in sys.argv
-    changed = skipped = noloc = 0
-    for f in sorted(glob.glob(os.path.join(ANS, "*.html"))):
-        slug = os.path.basename(f)[:-5]
-        if slug == "index":
+def existing_locales(
+    slug: str, root: Path = ROOT
+) -> list[str]:
+    return answer_hreflang.existing_locales(root, slug)
+
+
+def build_block(
+    slug: str,
+    locales: list[str] | None = None,
+    root: Path = ROOT,
+) -> str:
+    expected = answer_hreflang.build_block(root, slug)
+    if locales is not None:
+        actual = answer_hreflang.existing_locales(root, slug)
+        if locales != actual:
+            raise answer_hreflang.HreflangContractError(
+                f"Caller locale inventory is stale: {locales!r} != {actual!r}"
+            )
+    return expected
+
+
+def run(
+    root: Path = ROOT,
+    *,
+    dry_run: bool = False,
+    slugs: set[str] | None = None,
+) -> dict[str, int]:
+    answers = root / "answers"
+    changed = already_ok = no_locale = 0
+    for path in sorted(answers.glob("*.html")):
+        slug = path.stem
+        if slug == "index" or (slugs is not None and slug not in slugs):
             continue
-        locales = existing_locales(slug)
+        locales = answer_hreflang.existing_locales(root, slug)
         if not locales:
-            noloc += 1
+            no_locale += 1
             continue
-        h = open(f, encoding="utf-8").read()
-        m = ALT_RE.search(h)
-        if not m:
+        source = path.read_text(encoding="utf-8")
+        expected = answer_hreflang.build_block(root, slug) + "\n"
+        current = answer_hreflang.ALTERNATE_BLOCK_RE.search(source)
+        if current is None:
+            raise answer_hreflang.HreflangContractError(
+                f"Missing hreflang block: {path}"
+            )
+        if current.group(0) == expected:
+            already_ok += 1
             continue
-        new_block = build_block(slug, locales) + "\n"
-        # count current alternates
-        cur = m.group(0)
-        cur_codes = re.findall(r'hreflang="([^"]+)"', cur)
-        want_codes = ["en"] + locales + ["x-default"]
-        if cur_codes == want_codes:
-            skipped += 1
-            continue
-        if not dry:
-            h2 = h[:m.start()] + new_block + h[m.end():]
-            open(f, "w", encoding="utf-8").write(h2)
+        if not dry_run:
+            path.write_text(
+                answer_hreflang.reconcile_document(
+                    source, root, slug
+                ),
+                encoding="utf-8",
+            )
         changed += 1
-        if dry and changed <= 3:
-            print(f"[{slug}] {len(cur_codes)} -> {len(want_codes)} hreflang")
-    print(f"{'DRY ' if dry else ''}changed={changed} already_ok={skipped} no_locale={noloc}")
+    result = {
+        "changed": changed,
+        "already_ok": already_ok,
+        "no_locale": no_locale,
+    }
+    print(
+        f"{'DRY ' if dry_run else ''}"
+        f"changed={changed} already_ok={already_ok} no_locale={no_locale}"
+    )
+    return result
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--slug",
+        action="append",
+        default=[],
+        help="Limit reconciliation to one answer slug; repeatable.",
+    )
+    args = parser.parse_args()
+    run(
+        dry_run=args.dry_run,
+        slugs=set(args.slug) if args.slug else None,
+    )
+
 
 if __name__ == "__main__":
     main()

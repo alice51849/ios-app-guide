@@ -17,6 +17,7 @@ token `iag_decision`,於是 QR 圖鎖在 `ct=iag_decision`、按鈕卻被改成
 """
 import os
 import pathlib
+import re
 import sys
 import tempfile
 import unittest
@@ -247,6 +248,65 @@ class QrEligiblePageFamilyTests(unittest.TestCase):
                 guide.read_text(encoding="utf-8"),
             )
             self.assertEqual(1, result["pages_with_store_anchors"])
+
+
+class RegisteredRouteQrContractTests(unittest.TestCase):
+    STORE = "https://apps.apple.com/us/app/id6791658210"
+
+    def test_every_registered_route_stamps_before_qr_hashing(self):
+        for relative, token in (
+            gen_store_attribution.US_QUERY_CAMPAIGNS.items()
+        ):
+            with self.subTest(route=relative):
+                anchor, changes = gen_store_attribution.rewrite(
+                    f'<a href="{self.STORE}">App</a>',
+                    token,
+                    "118326163",
+                )
+                self.assertEqual(1, changes)
+                href = re.search(r'href="([^"]+)"', anchor).group(1)
+                encoded = href.replace("&amp;", "&")
+                page = _page(href, _digest(encoded))
+                self.assertIsNone(
+                    gen_store_attribution.qr_card_desync(page)
+                )
+
+    def test_registering_token_without_reminting_qr_fails_closed(self):
+        relative = next(
+            iter(gen_store_attribution.US_QUERY_CAMPAIGNS)
+        )
+        old_url = (
+            f"{self.STORE}?pt=118326163&ct=geo_ask&mt=8"
+        )
+        stale_page = _page(
+            old_url.replace("&", "&amp;"),
+            _digest(old_url),
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            root = pathlib.Path(tmp)
+            path = root / relative
+            path.parent.mkdir(parents=True)
+            path.write_text(stale_page, encoding="utf-8")
+            previous = os.environ.get(
+                gen_store_attribution.PROVIDER_TOKEN_ENV
+            )
+            os.environ[
+                gen_store_attribution.PROVIDER_TOKEN_ENV
+            ] = "118326163"
+            try:
+                with self.assertRaises(
+                    gen_store_attribution.QrCardDesyncError
+                ):
+                    gen_store_attribution.generate(root, check=True)
+            finally:
+                if previous is None:
+                    os.environ.pop(
+                        gen_store_attribution.PROVIDER_TOKEN_ENV, None
+                    )
+                else:
+                    os.environ[
+                        gen_store_attribution.PROVIDER_TOKEN_ENV
+                    ] = previous
 
 
 class QrCardDesyncGuardTests(unittest.TestCase):

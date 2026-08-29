@@ -1558,6 +1558,7 @@ def _unblurry_us_decision_facts(
         "language": "en-US",
         "qa_heading": "Decision checks",
         "emit_faq_schema": False,
+        "emit_howto_schema": False,
         "date_modified": "2026-08-30",
         "publisher_notice": (
             "This is a first-party product-fit guide from Lumi Studio, the "

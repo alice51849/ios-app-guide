@@ -132,14 +132,12 @@ HIGH_INTENT_META_RE = re.compile(
     flags=re.IGNORECASE,
 )
 
-# A deliberately tiny, pre-registered US canary. These existing routes answer
-# materially different high-intent questions, so sharing one token would make
-# the experiment impossible to falsify. The map is exact-path only: localized
-# copies stay in the privacy-preserving ASK bucket until native review.
+# A deliberately tiny, pre-registered US canary. Register a route only after
+# its HTML and QR asset have been regenerated together; pre-registering an
+# untouched page would make the final attribution pass outdate its QR code.
+# Localized copies stay in the privacy-preserving ASK bucket.
 US_QUERY_CAMPAIGNS = {
     "answers/how-to-choose-a-unblur-photo-app.html": "geo_unb_us_choose_260830",
-    "answers/can-you-actually-unblur-a-photo.html": "geo_unb_us_reality_260830",
-    "answers/is-a-pay-once-photo-enhancer-worth-it-vs-remini.html": "geo_unb_us_payonce_260830",
 }
 
 # Directory name -> bucket.  PICK is also the residual: hub and locale-home

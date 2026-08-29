@@ -34,6 +34,7 @@ OPENAI_ENDPOINT = "https://api.openai.com/v1/chat/completions"
 sys.path.insert(0, str(ROOT / ".." / "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 import gen_store_attribution  # noqa: E402
+import answer_hreflang  # noqa: E402
 
 # Campaign token for this page family.  gen_store_attribution.py is the
 # single authority on ?ct= for the whole tree and it runs last, *after*
@@ -615,6 +616,7 @@ def default_content(question: str, key: str) -> dict[str, Any]:
         "language": "en",
         "qa_heading": "FAQ",
         "emit_faq_schema": True,
+        "emit_howto_schema": True,
         "publisher_notice": "",
         "primary_resource_url": "",
         "primary_resource_label": "",
@@ -667,6 +669,11 @@ def normalized_content(raw: dict[str, Any], question: str, key: str) -> dict[str
             raw.get("emit_faq_schema")
             if isinstance(raw.get("emit_faq_schema"), bool)
             else base.get("emit_faq_schema", True)
+        ),
+        "emit_howto_schema": (
+            raw.get("emit_howto_schema")
+            if isinstance(raw.get("emit_howto_schema"), bool)
+            else base.get("emit_howto_schema", True)
         ),
         "publisher_notice": safe_text(
             raw.get("publisher_notice"), base.get("publisher_notice", "")
@@ -1089,6 +1096,13 @@ def render_page(
             for i, step in enumerate(content["decision_steps"])
         ],
     }
+    howto_schema_html = ""
+    if content.get("emit_howto_schema", True):
+        howto_schema_html = (
+            '<script type="application/ld+json">\n'
+            f"{j(howto)}\n"
+            "</script>"
+        )
     software = {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
@@ -1226,11 +1240,13 @@ def render_page(
         else "First-party decision guide"
     )
     qa_heading = content.get("qa_heading") or "FAQ"
+    hreflang_block = answer_hreflang.build_block(
+        effective_pages_root, slug
+    )
     rendered = f'''<!DOCTYPE html>
 <html lang="{e(language)}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(meta)}"><link rel="canonical" href="{canonical}">
-<link rel="alternate" hreflang="{e(language)}" href="{canonical}">
-<link rel="alternate" hreflang="x-default" href="{canonical}">
+{hreflang_block}
 {social_metadata}{resource_first_meta}<style>
 {style}
 </style><script type="application/ld+json">
@@ -1239,9 +1255,7 @@ def render_page(
 <script type="application/ld+json">
 {j(answer_schema)}
 </script>
-<script type="application/ld+json">
-{j(howto)}
-</script>
+{howto_schema_html}
 {resource_schema_html}
 <script type="application/ld+json">
 {j(software)}

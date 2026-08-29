@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+from datetime import datetime, timezone
 import json
 import os
 from pathlib import Path
@@ -19,6 +20,7 @@ if str(GEO) not in sys.path:
     sys.path.insert(0, str(GEO))
 
 import app_store_storefronts
+import gen_sitemap_lastmod
 from official_locales import OFFICIAL_LOCALES
 import portfolio_app_finder
 import portfolio_offer_catalog
@@ -295,13 +297,23 @@ class PortfolioOfferCatalogTests(unittest.TestCase):
             for node in sitemap.findall(f"{namespace}url")
         }
         self.assertEqual(expected_urls, observed_urls)
-        self.assertEqual(
-            {self.index["date_modified"]},
-            {
-                node.find(f"{namespace}lastmod").text
-                for node in sitemap.findall(f"{namespace}url")
-            },
-        )
+        max_date = (
+            datetime.now(timezone.utc)
+            + gen_sitemap_lastmod.MAX_CLOCK_SKEW
+        ).date().isoformat()
+        for node in sitemap.findall(f"{namespace}url"):
+            lastmod = node.findtext(f"{namespace}lastmod")
+            with self.subTest(location=node.findtext(f"{namespace}loc")):
+                self.assertTrue(
+                    gen_sitemap_lastmod._valid_date(
+                        lastmod,
+                        today=max_date,
+                    )
+                )
+                self.assertGreaterEqual(
+                    str(lastmod),
+                    self.index["date_modified"],
+                )
         sitemap_index = ET.parse(self.pages / "sitemap_index.xml").getroot()
         self.assertIn(
             f"{portfolio_offer_catalog.SITE}/"

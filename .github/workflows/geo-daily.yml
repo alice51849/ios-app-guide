@@ -2,16 +2,11 @@ name: Daily GEO content
 
 on:
   schedule:
-    # 每天 4 次(每 6 小時,離峰分鐘)→ 全天候不間斷產內容
+    # GitHub cron is UTC. Four natural roots stay six hours apart.
     - cron: "23 1 * * *"
     - cron: "23 7 * * *"
     - cron: "23 13 * * *"
     - cron: "23 19 * * *"
-  workflow_dispatch:
-    inputs:
-      answers:
-        description: "New answer pages to generate"
-        default: "8"
 
 permissions:
   contents: write
@@ -23,11 +18,13 @@ concurrency:
 
 jobs:
   generate:
+    if: ${{ github.event_name == 'schedule' && github.run_attempt == 1 }}
     runs-on: ubuntu-latest
-    # A hung generator used to spin for 10+ hours and block every later
-    # scheduled run; fail loudly instead so the next schedule can retry.
-    timeout-minutes: 180
+    # Always terminate before the next six-hour natural root. Step-level
+    # bounds leave enough time for failure evidence to upload.
+    timeout-minutes: 170
     env:
+      TZ: UTC
       GEO_SITE: https://alice51849.github.io/ios-app-guide
       # Apple campaign-link provider token. Not a secret: it is published
       # verbatim inside every ?pt= App Store link on this site. Without it
@@ -38,8 +35,18 @@ jobs:
     steps:
       - uses: actions/checkout@v5
         with:
-          ref: main
+          ref: ${{ github.sha }}
           fetch-depth: 0
+      - name: Validate natural schedule root
+        id: root_gate
+        run: |
+          source .github/scripts/geo-runtime.sh
+          geo_require_natural_root
+          geo_refresh_utc_date
+          echo "GEO_BUILD_DATE=$GEO_BUILD_DATE" >> "$GITHUB_ENV"
+          echo "GEO_WORKFLOW_STARTED_AT=$GEO_CLOCK_AT" >> "$GITHUB_ENV"
+          echo "GEO_SCHEDULE_CRON=${{ github.event.schedule }}" \
+            >> "$GITHUB_ENV"
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
@@ -62,10 +69,14 @@ jobs:
           rm -rf _engine/geo/pages
           ln -s "$GITHUB_WORKSPACE" _engine/geo/pages
       - name: Verify pre-materialization contracts
+        id: pre_contracts
+        timeout-minutes: 5
         run: |
           python3 -m unittest \
             _engine.geo.tests.test_publisher_intent_catalog.PublisherIntentLocalizationTests.test_purchase_labels_exist_in_i18n_strings
       - name: Snapshot truthful sitemap baseline
+        id: baseline
+        timeout-minutes: 5
         run: |
           state="$RUNNER_TEMP/sitemap-lastmod-intermediate.json"
           inventory="$RUNNER_TEMP/outreach-public-inventory-baseline.json"
@@ -83,12 +94,21 @@ jobs:
           echo "GEO_BUILD_DATE=$build_date" >> "$GITHUB_ENV"
           echo "GEO_WORKFLOW_STARTED_AT=$workflow_started_at" >> "$GITHUB_ENV"
       - name: Refresh verified App Store availability once
+        id: availability
+        timeout-minutes: 15
         run: |
+          source "$GITHUB_WORKSPACE/.github/scripts/bounded-retry.sh"
           cd _engine/geo
-          python3 -c 'import sys; sys.path.insert(0, "../social"); from appstore_live import live_app_keys; from videogen.registry import APPSTORE; print("verified public apps:", len(live_app_keys(APPSTORE, "pages", refresh=True)))'
-          python3 refresh_storefront_availability.py
+          run_bounded_retry 180 2 5 "live app registry refresh" \
+            python3 -c 'import sys; sys.path.insert(0, "../social"); from appstore_live import live_app_keys; from videogen.registry import APPSTORE; print("verified public apps:", len(live_app_keys(APPSTORE, "pages", refresh=True)))'
+          run_bounded_retry 240 2 5 "storefront availability refresh" \
+            python3 refresh_storefront_availability.py
       - name: Materialize newly live app surfaces
+        id: materialize
+        timeout-minutes: 35
         run: |
+          source "$GITHUB_WORKSPACE/.github/scripts/geo-runtime.sh"
+          geo_refresh_utc_date
           cd _engine/geo
           python3 build_pages_i18n.py --cached-live --missing-apps
           python3 aeo_guide.py --missing
@@ -142,6 +162,8 @@ jobs:
           python3 gen_feed.py
           python3 live_app_guard.py --site-root pages
       - name: Reconcile verified Standard.site discovery links
+        id: standard_site_preflight
+        timeout-minutes: 5
         run: |
           python3 _engine/geo/sync_standard_site.py \
             --site-root "$GITHUB_WORKSPACE" \
@@ -151,7 +173,11 @@ jobs:
             --retries 3 \
             --retry-delay 2
       - name: Close preflight sitemap graph
+        id: close_preflight
+        timeout-minutes: 25
         run: |
+          source "$GITHUB_WORKSPACE/.github/scripts/geo-runtime.sh"
+          geo_refresh_utc_date
           cd _engine/geo
           # Materialization can add locale and per-App sitemaps. Close their
           # recursive union before the full-tree hygiene test inspects it.
@@ -168,6 +194,8 @@ jobs:
             --workflow-started-at "$GEO_WORKFLOW_STARTED_AT" \
             --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
       - name: Verify zero-cost growth infrastructure
+        id: preflight_tests
+        timeout-minutes: 30
         run: |
           python3 _engine/geo/parallel_unittest.py --jobs 3
           STANDARD_SITE_ENGINE_ROOT="$GITHUB_WORKSPACE/_engine" \
@@ -175,6 +203,8 @@ jobs:
               -s _engine/social/tests \
               -p "test_standard_site.py"
       - name: Rebuild availability-dependent surfaces
+        id: rebuild
+        timeout-minutes: 20
         run: |
           cd _engine/geo
           python3 build_pages_i18n.py --cached-live
@@ -201,6 +231,8 @@ jobs:
           python3 portfolio_cost_calculator.py
           python3 outreach_scorecard.py
       - name: Generate new answer pages (+ rebuild answers sitemap)
+        id: generate_answers
+        timeout-minutes: 20
         run: |
           cd _engine/geo
           # The strict outreach gate runs in this same workflow, so a bounded
@@ -209,7 +241,11 @@ jobs:
           python3 aeo_answers.py --cached-live
           python3 refresh_primary_resource_answers.py
       - name: Refresh AI indexes + hubs
+        id: refresh_indexes
+        timeout-minutes: 35
         run: |
+          source "$GITHUB_WORKSPACE/.github/scripts/geo-runtime.sh"
+          geo_refresh_utc_date
           cd _engine/geo
           python3 gen_roundups.py
           python3 aeo_pages.py --cached-live
@@ -313,47 +349,42 @@ jobs:
             --workflow-started-at "$GEO_WORKFLOW_STARTED_AT" \
             --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
       - name: Commit English content first (fast, before slow localization)
+        id: english_gate
+        timeout-minutes: 30
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if git diff --cached --quiet; then
-            echo "No content changes."
-          else
-            git commit -m "Daily GEO content: new answer pages + refreshed sitemaps"
-            source .github/scripts/remote-first-publish.sh
-            reconcile_english_phase() {
-              python3 _engine/geo/sync_standard_site.py \
-                --site-root "$GITHUB_WORKSPACE" \
-                --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
-                --allow-initial-404 \
-                --timeout 10 \
-                --retries 3 \
-                --retry-delay 2
-              python3 _engine/geo/reconcile_answer_semantics.py
-              cd _engine/geo
-              python3 dedupe_locale_meta.py --apply
-              python3 gen_locale_indexation.py
-              python3 gen_link_hubs.py
-              python3 gen_locale_indexation.py
-              python3 gen_link_hubs.py --check
-              python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
-              python3 audit_link_depth.py --max-indexable-orphans 0
-              cd "$GITHUB_WORKSPACE"
-              python3 _engine/geo/gen_sitemap_lastmod.py \
-                --today "$GEO_BUILD_DATE" \
-                --workflow-started-at "$GEO_WORKFLOW_STARTED_AT" \
-                --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
-              python3 _engine/geo/parallel_unittest.py --jobs 3
-              cd _engine/geo
-              python3 outreach_scorecard.py --require-complete
-            }
-            export REMOTE_FIRST_RECONCILE_MESSAGE="Reconcile generated tree after origin merge"
-            if ! remote_first_publish reconcile_english_phase origin main 5; then
-              exit 1
-            fi
-          fi
+          source .github/scripts/remote-first-publish.sh
+          reconcile_english_phase() {
+            source "$GITHUB_WORKSPACE/.github/scripts/geo-runtime.sh"
+            geo_refresh_utc_date
+            python3 _engine/geo/sync_standard_site.py \
+              --site-root "$GITHUB_WORKSPACE" \
+              --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
+              --allow-initial-404 \
+              --timeout 10 \
+              --retries 3 \
+              --retry-delay 2
+            python3 _engine/geo/reconcile_answer_semantics.py
+            cd _engine/geo
+            python3 dedupe_locale_meta.py --apply
+            python3 gen_locale_indexation.py
+            python3 gen_link_hubs.py
+            python3 gen_locale_indexation.py
+            python3 gen_link_hubs.py --check
+            python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
+            python3 audit_link_depth.py --max-indexable-orphans 0
+            cd "$GITHUB_WORKSPACE"
+            python3 _engine/geo/gen_sitemap_lastmod.py \
+              --today "$GEO_BUILD_DATE" \
+              --workflow-started-at "$GEO_WORKFLOW_STARTED_AT" \
+              --state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+            python3 _engine/geo/parallel_unittest.py --jobs 3
+            cd _engine/geo
+            python3 outreach_scorecard.py --require-complete
+          }
+          REMOTE_FIRST_VALIDATE_ONLY=1 remote_first_publish reconcile_english_phase origin main 5
       - name: Localize from curated dictionaries (zero-cost, no API)
+        id: localize
+        timeout-minutes: 50
         run: |
           source "$GITHUB_WORKSPACE/.github/scripts/bounded-resumable.sh"
           cd _engine/geo
@@ -382,21 +413,31 @@ jobs:
             --json reports/l10n_coverage.json \
             --markdown reports/l10n_coverage.md
       - name: Fix EN hreflang reciprocity (declare newly-added locale versions)
+        id: hreflang
+        timeout-minutes: 10
         run: |
           cd _engine/geo
           python3 fix_en_hreflang.py
       - name: Add related-answers internal links (EN + major locales)
+        id: related_answers
+        timeout-minutes: 10
         run: |
           cd _engine/geo
           for loc in "" "--locale zh-Hant" "--locale zh-Hans" "--locale ja" "--locale ko" "--locale es-ES" "--locale es-MX" "--locale de-DE" "--locale fr-FR" "--locale pt-BR" "--locale ms" "--locale ar-SA" "--locale pl"; do
             python3 add_related_answers.py $loc
           done
       - name: Add Free-tools links to answer pages (root EN + all 50 official locales)
+        id: related_tools
+        timeout-minutes: 10
         run: |
           cd _engine/geo
           python3 add_related_tools.py --all-official-locales
       - name: Final link and availability cleanup
+        id: final_cleanup
+        timeout-minutes: 35
         run: |
+          source "$GITHUB_WORKSPACE/.github/scripts/geo-runtime.sh"
+          geo_refresh_utc_date
           cd _engine/geo
           python3 ensure_live_guides.py
           python3 gen_webstories.py
@@ -457,9 +498,13 @@ jobs:
             --today "$GEO_BUILD_DATE" \
             --workflow-started-at "$GEO_WORKFLOW_STARTED_AT"
       - name: Verify localized output before commit
+        id: seal
+        timeout-minutes: 30
         run: |
-          attestation="$RUNNER_TEMP/localized-verified-tree.json"
-          rm -f "$attestation"
+          evidence_dir="$RUNNER_TEMP/geo-run-evidence"
+          attestation="$evidence_dir/verified-tree.json"
+          rm -rf "$evidence_dir"
+          mkdir -p "$evidence_dir"
           python3 _engine/geo/verified_tree.py prepare \
             --root "$GITHUB_WORKSPACE" \
             --output "$attestation" \
@@ -470,47 +515,113 @@ jobs:
             --output "$attestation" \
             --suite geo-full-suite
           echo "LOCALIZED_VERIFIED_TREE=$attestation" >> "$GITHUB_ENV"
+          GEO_JOB_STATUS=candidate \
+            python3 .github/scripts/geo_schedule_reliability.py evidence \
+              --output "$evidence_dir/candidate.json" \
+              --repo-root "$GITHUB_WORKSPACE"
+      - name: Upload sealed candidate evidence
+        id: candidate_evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-sealed-candidate-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/geo-run-evidence/
+          if-no-files-found: error
+          retention-days: 14
       - name: Commit localized pages if any
+        id: publish
+        timeout-minutes: 35
+        env:
+          REMOTE_FIRST_MAX_ATTEMPTS: "3"
+          REMOTE_FIRST_RETRY_DELAY_SECONDS: "5"
+          REMOTE_FIRST_TIMEOUT_SECONDS: "120"
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then
-            echo "No localized changes."
+            echo "No candidate tree changes; validating the pinned root."
           else
-            git commit -m "Daily GEO content: localized answer pages"
-            source .github/scripts/remote-first-publish.sh
-            reconcile_localized_phase() {
-              if python3 _engine/geo/verified_tree.py matches-head \
-                --root "$GITHUB_WORKSPACE" \
-                --output "$LOCALIZED_VERIFIED_TREE" \
-                --suite geo-full-suite; then
-                echo "Remote integration preserved the fully-tested content tree."
-              else
-                python3 _engine/geo/sync_standard_site.py \
-                  --site-root "$GITHUB_WORKSPACE" \
-                  --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
-                  --allow-initial-404 \
-                  --timeout 10 \
-                  --retries 3 \
-                  --retry-delay 2
-                python3 _engine/geo/reconcile_answer_semantics.py
-                cd _engine/geo
-                python3 dedupe_locale_meta.py --apply
-                python3 close_sitemap_graph.py
-                python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
-                python3 audit_link_depth.py --max-indexable-orphans 0
-                cd "$GITHUB_WORKSPACE"
-                python3 _engine/geo/gen_sitemap_lastmod.py \
-                  --today "$GEO_BUILD_DATE" \
-                  --workflow-started-at "$GEO_WORKFLOW_STARTED_AT"
-                python3 _engine/geo/parallel_unittest.py --jobs 3
-              fi
-              cd _engine/geo
-              python3 outreach_scorecard.py --require-complete
-            }
-            export REMOTE_FIRST_RECONCILE_MESSAGE="Reconcile localized tree after origin merge"
-            if ! remote_first_publish reconcile_localized_phase origin main 5; then
-              exit 1
-            fi
+            git commit -m "Daily GEO content: generated and localized pages"
           fi
+          source .github/scripts/remote-first-publish.sh
+          reconcile_localized_phase() {
+            source "$GITHUB_WORKSPACE/.github/scripts/geo-runtime.sh"
+            geo_refresh_utc_date
+            python3 .github/scripts/geo_schedule_reliability.py \
+              check-remote-drift \
+              --repo-root "$GITHUB_WORKSPACE" \
+              --root-sha "$GITHUB_SHA" \
+              --remote-sha "$REMOTE_SHA" \
+              --output "$RUNNER_TEMP/geo-run-evidence/remote-drift.json"
+            if python3 _engine/geo/verified_tree.py matches-head \
+              --root "$GITHUB_WORKSPACE" \
+              --output "$LOCALIZED_VERIFIED_TREE" \
+              --suite geo-full-suite; then
+              echo "Remote integration preserved the fully-tested content tree."
+            else
+              python3 _engine/geo/sync_standard_site.py \
+                --site-root "$GITHUB_WORKSPACE" \
+                --contract-url "$STANDARD_SITE_GUIDE_CONTRACT_URL" \
+                --allow-initial-404 \
+                --timeout 10 \
+                --retries 3 \
+                --retry-delay 2
+              python3 _engine/geo/reconcile_answer_semantics.py
+              cd _engine/geo
+              python3 dedupe_locale_meta.py --apply
+              python3 close_sitemap_graph.py
+              python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
+              python3 audit_link_depth.py --max-indexable-orphans 0
+              cd "$GITHUB_WORKSPACE"
+              python3 _engine/geo/gen_sitemap_lastmod.py \
+                --today "$GEO_BUILD_DATE" \
+                --workflow-started-at "$GEO_WORKFLOW_STARTED_AT"
+              python3 _engine/geo/parallel_unittest.py --jobs 3
+            fi
+            cd _engine/geo
+            python3 outreach_scorecard.py --require-complete
+          }
+          export REMOTE_FIRST_RECONCILE_MESSAGE="Reconcile localized tree after origin merge"
+          publish_rc=0
+          remote_first_publish reconcile_localized_phase origin main 5 \
+            || publish_rc=$?
+          echo "GEO_PUBLISH_ATTEMPTS=${REMOTE_FIRST_ATTEMPTS_USED:-0}" \
+            >> "$GITHUB_ENV"
+          if [ "$publish_rc" -eq 0 ]; then
+            published_sha="$(git rev-parse HEAD)"
+            echo "$published_sha" \
+              > "$RUNNER_TEMP/geo-run-evidence/published-sha.txt"
+            echo "GEO_PUBLISHED_SHA=$published_sha" >> "$GITHUB_ENV"
+          fi
+          exit "$publish_rc"
+      - name: Record machine-readable run evidence
+        id: run_evidence
+        if: always()
+        env:
+          GEO_JOB_STATUS: ${{ job.status }}
+          GEO_STEP_ROOT_GATE: ${{ steps.root_gate.outcome }}
+          GEO_STEP_PRE_CONTRACTS: ${{ steps.pre_contracts.outcome }}
+          GEO_STEP_AVAILABILITY: ${{ steps.availability.outcome }}
+          GEO_STEP_MATERIALIZE: ${{ steps.materialize.outcome }}
+          GEO_STEP_PREFLIGHT_TESTS: ${{ steps.preflight_tests.outcome }}
+          GEO_STEP_ENGLISH_GATE: ${{ steps.english_gate.outcome }}
+          GEO_STEP_LOCALIZE: ${{ steps.localize.outcome }}
+          GEO_STEP_FINAL_CLEANUP: ${{ steps.final_cleanup.outcome }}
+          GEO_STEP_SEAL: ${{ steps.seal.outcome }}
+          GEO_STEP_CANDIDATE_EVIDENCE: ${{ steps.candidate_evidence.outcome }}
+          GEO_STEP_PUBLISH: ${{ steps.publish.outcome }}
+        run: |
+          python3 .github/scripts/geo_schedule_reliability.py evidence \
+            --output "$RUNNER_TEMP/geo-run-evidence/run.json" \
+            --repo-root "$GITHUB_WORKSPACE"
+      - name: Upload run evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-run-evidence-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/geo-run-evidence/
+          if-no-files-found: error
+          retention-days: 30
       - name: Unlink site dir
+        if: always()
         run: rm -f _engine/geo/pages

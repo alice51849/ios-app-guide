@@ -11,6 +11,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
@@ -21,16 +22,46 @@ concurrency:
 
 jobs:
   deploy:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    if: >-
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'schedule' &&
+      github.event.workflow_run.run_attempt == 1)
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Download exact GEO publish evidence
+        if: github.event_name == 'workflow_run'
+        uses: actions/download-artifact@v4
+        with:
+          name: geo-run-evidence-${{ github.event.workflow_run.id }}-${{ github.event.workflow_run.run_attempt }}
+          path: ${{ runner.temp }}/geo-upstream
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          run-id: ${{ github.event.workflow_run.id }}
+      - name: Resolve exact source commit
+        id: source
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_run" ]; then
+            source_sha="$(
+              tr -d '[:space:]' \
+                < "$RUNNER_TEMP/geo-upstream/published-sha.txt"
+            )"
+          else
+            source_sha="$GITHUB_SHA"
+          fi
+          [[ "$source_sha" =~ ^[0-9a-f]{40}$ ]]
+          echo "PAGES_SOURCE_SHA=$source_sha" >> "$GITHUB_ENV"
+          echo "sha=$source_sha" >> "$GITHUB_OUTPUT"
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ steps.source.outputs.sha }}
+          fetch-depth: 0
+      - name: Verify pinned source commit
+        run: test "$(git rev-parse HEAD)" = "$PAGES_SOURCE_SHA"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Quarantine unavailable App Store pages

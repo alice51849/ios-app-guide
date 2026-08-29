@@ -1,0 +1,300 @@
+{
+  "schema_version": 1,
+  "source": "GitHub REST Actions API and job logs (read-only)",
+  "window": {
+    "since": "2026-08-22T19:09:52Z",
+    "until": "2026-08-29T19:09:52Z",
+    "expected_natural_roots": 28
+  },
+  "expected_counts": {
+    "success": 4,
+    "code/config": 12,
+    "timeout": 0,
+    "quota": 0,
+    "remote drift": 4,
+    "concurrency": 8,
+    "Pages": 0,
+    "IndexNow": 0,
+    "external service": 0
+  },
+  "runs": [
+    {
+      "run_id": 32594345183,
+      "created_at": "2026-08-22T19:39:15Z",
+      "conclusion": "success",
+      "failing_step": null,
+      "signals": [],
+      "expected_category": "success"
+    },
+    {
+      "run_id": 32613409001,
+      "created_at": "2026-08-23T02:39:35Z",
+      "conclusion": "failure",
+      "failing_step": "Materialize newly live app surfaces",
+      "signals": [
+        "RuntimeError: Legacy publisher claims remain: tools/zhuyin-readiness-check.html"
+      ],
+      "expected_category": "code/config"
+    },
+    {
+      "run_id": 32626742690,
+      "created_at": "2026-08-23T07:52:39Z",
+      "conclusion": "success",
+      "failing_step": null,
+      "signals": [],
+      "expected_category": "success"
+    },
+    {
+      "run_id": 32643533346,
+      "created_at": "2026-08-23T13:49:37Z",
+      "conclusion": "failure",
+      "failing_step": "Verify localized output before commit",
+      "signals": [
+        "test_generated_outputs_are_content_stable: HoursTag title records differ"
+      ],
+      "expected_category": "code/config"
+    },
+    {
+      "run_id": 32661893406,
+      "created_at": "2026-08-23T19:38:45Z",
+      "conclusion": "failure",
+      "failing_step": "Verify localized output before commit",
+      "signals": [
+        "translation names an unrelated portfolio app: CV Desk",
+        "publisher and offer catalog outputs are not content-stable"
+      ],
+      "expected_category": "code/config"
+    },
+    {
+      "run_id": 32683776707,
+      "created_at": "2026-08-24T02:39:19Z",
+      "conclusion": "cancelled",
+      "failing_step": "Refresh AI indexes + hubs",
+      "signals": [
+        "The operation was canceled while workflow_dispatch recovery traffic was active"
+      ],
+      "expected_category": "concurrency"
+    },
+    {
+      "run_id": 32704810420,
+      "created_at": "2026-08-24T08:08:45Z",
+      "conclusion": "cancelled",
+      "failing_step": "Verify zero-cost growth infrastructure",
+      "signals": [
+        "The operation was canceled; dispatch run 32717063719 followed the cancellation"
+      ],
+      "expected_category": "concurrency"
+    },
+    {
+      "run_id": 32736760944,
+      "created_at": "2026-08-24T14:07:33Z",
+      "conclusion": "cancelled",
+      "failing_step": "Final link and availability cleanup",
+      "signals": [
+        "The operation was canceled; dispatch run 32749197984 overlapped the writer stream"
+      ],
+      "expected_category": "concurrency"
+    },
+    {
+      "run_id": 32770176976,
+      "created_at": "2026-08-24T19:47:24Z",
+      "conclusion": "failure",
+      "failing_step": "Commit English content first (fast, before slow localization)",
+      "signals": [
+        "origin/main advanced from afb46974653 to 290b5d7da46 during the run",
+        "post-rebase tests failed on HoursTag generated output"
+      ],
+      "expected_category": "remote drift"
+    },
+    {
+      "run_id": 32801836056,
+      "created_at": "2026-08-25T02:33:10Z",
+      "conclusion": "cancelled",
+      "failing_step": "Materialize newly live app surfaces",
+      "signals": [
+        "The operation was canceled; dispatch run 32809691550 followed the cancellation"
+      ],
+      "expected_category": "concurrency"
+    },
+    {
+      "run_id": 32824685649,
+      "created_at": "2026-08-25T08:03:49Z",
+      "conclusion": "failure",
+      "failing_step": "Verify localized output before commit",
+      "signals": [
+        "translation names an unrelated portfolio app: HoursTag Lite",
+        "publisher and offer catalog outputs are not content-stable"
+      ],
+      "expected_category": "code/config"
+    },
+    {
+      "run_id": 32857725938,
+      "created_at": "2026-08-25T14:09:20Z",
+      "conclusion": "failure",
+      "failing_step": "Commit English content first (fast, before slow localization)",
+      "signals": [
+        "git push rejected: fetch first; remote contains work not present locally"
+      ],
+      "expected_category": "remote drift"
+    },
+    {
+      "run_id": 32891619816,
+      "created_at": "2026-08-25T19:47:58Z",
+      "conclusion": "failure",
+      "failing_step": "Materialize newly live app surfaces",
+      "signals": [
+        "Live apps are missing from the 50-locale buyer-intent catalog: shotinbox"
+      ],
+      "expected_category": "code/config"
+    },
+    {
+      "run_id": 32923663654,
+      "created_at": "2026-08-26T02:41:24Z",
+      "conclusion": "cancelled",
+      "failing_step": "Commit English content first (fast, before slow localization)",
+      "signals": [
+        "The operation was canceled; dispatch run 32931702275 followed the cancellation"
+      ],
+      "expected_category": "concurrency"
+    },
+    {
+      "run_id": 32945902255,
+      "created_at": "2026-08-26T08:04:33Z",
+      "conclusion": "cancelled",
+      "failing_step": "Final link and availability cleanup",
+      "signals": [
+        "The operation was canceled; dispatch run 32957366896 followed the cancellation"
+      ],
+      "expected_category": "concurrency"
+    },
+    {
+      "run_id": 32978422361,
+      "created_at": "2026-08-26T14:08:23Z",
+      "conclusion": "failure",
+      "failing_step": "Commit English content first (fast, before slow localization)",
+      "signals": [
+        "merge conflict (modify/delete): videos/browse.html during remote integration"
+      ],
+      "expected_category": "remote drift"
+    },
+    {
+      "run_id": 33019097248,
+      "created_at": "2026-08-26T22:17:14Z",
+      "conclusion": "failure",
+      "failing_step": "Materialize newly live app surfaces",
+      "signals": [
+        "ValueError: savetag must have exactly 50 official locales"
+      ],
+      "expected_category": "code/config"
+    },
+    {
+      "run_id": 33066526956,
+      "created_at": "2026-08-27T11:14:50Z",
+      "conclusion": "failure",
+      "failing_step": "Verify localized output before commit",
+      "signals": [
+        "translation names an unrelated portfolio app: CV Desk",
+        "translation memory introduced HoursTag Lite into other app records"
+      ],
+      "expected_category": "code/config"
+    },
+    {
+      "run_id": 33102933472,
+      "created_at": "2026-08-27T18:20:00Z",
+      "conclusion": "cancelled",
+      "failing_step": "Refresh AI indexes + hubs",
+      "signals": [
+        "The operation was canceled; dispatch run 33116406186 followed the cancellation"
+      ],
+      "expected_category": "concurrency"
+    },
+    {
+      "run_id": 33124612340,
+      "created_at": "2026-08-27T22:59:21Z",
+      "conclusion": "failure",
+      "failing_step": "Verify localized output before commit",
+      "signals": [
+        "translation names an unrelated portfolio app: CV Desk",
+        "translation memory introduced HoursTag Lite into other app records"
+      ],
+      "expected_category": "code/config"
+    },
+    {
+      "run_id": 33139367379,
+      "created_at": "2026-08-28T03:36:03Z",
+      "conclusion": "cancelled",
+      "failing_step": null,
+      "signals": [
+        "No job was created; a newer workflow_dispatch run replaced the pending root"
+      ],
+      "expected_category": "concurrency"
+    },
+    {
+      "run_id": 33173348578,
+      "created_at": "2026-08-28T12:58:45Z",
+      "conclusion": "success",
+      "failing_step": null,
+      "signals": [],
+      "expected_category": "success"
+    },
+    {
+      "run_id": 33204071283,
+      "created_at": "2026-08-28T19:29:14Z",
+      "conclusion": "success",
+      "failing_step": null,
+      "signals": [],
+      "expected_category": "success"
+    },
+    {
+      "run_id": 33219192729,
+      "created_at": "2026-08-28T23:05:14Z",
+      "conclusion": "failure",
+      "failing_step": "Commit English content first (fast, before slow localization)",
+      "signals": [
+        "Invalid Git history date after origin merge: de-DE/sitemap.xml 2026-08-29",
+        "run retained a 2026-08-28 build date across the UTC boundary"
+      ],
+      "expected_category": "remote drift"
+    },
+    {
+      "run_id": 33228505017,
+      "created_at": "2026-08-29T02:15:40Z",
+      "conclusion": "failure",
+      "failing_step": "Localize from curated dictionaries (zero-cost, no API)",
+      "signals": [
+        "translation names an unrelated portfolio app in ar-SA: CV Desk"
+      ],
+      "expected_category": "code/config"
+    },
+    {
+      "run_id": 33241960755,
+      "created_at": "2026-08-29T07:55:51Z",
+      "conclusion": "failure",
+      "failing_step": "Localize from curated dictionaries (zero-cost, no API)",
+      "signals": [
+        "translation names an unrelated portfolio app in ar-SA: CV Desk"
+      ],
+      "expected_category": "code/config"
+    },
+    {
+      "run_id": 33254460896,
+      "created_at": "2026-08-29T13:13:19Z",
+      "conclusion": "failure",
+      "failing_step": "Localize from curated dictionaries (zero-cost, no API)",
+      "signals": [
+        "translation names an unrelated portfolio app in ar-SA: CV Desk"
+      ],
+      "expected_category": "code/config"
+    },
+    {
+      "run_id": 33265065822,
+      "created_at": "2026-08-29T17:13:47Z",
+      "conclusion": "failure",
+      "failing_step": "Localize from curated dictionaries (zero-cost, no API)",
+      "signals": [
+        "translation names an unrelated portfolio app in ar-SA: CV Desk"
+      ],
+      "expected_category": "code/config"
+    }
+  ]
+}

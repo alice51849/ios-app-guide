@@ -84,7 +84,7 @@ remote_first_publish() {
   local reconcile_callback="$1"
   local remote="${2:-origin}"
   local branch="${3:-main}"
-  local max_attempts="${4:-5}"
+  local max_attempts="${REMOTE_FIRST_MAX_ATTEMPTS:-${4:-5}}"
   local timeout_seconds="${REMOTE_FIRST_TIMEOUT_SECONDS:-180}"
   local retry_delay="${REMOTE_FIRST_RETRY_DELAY_SECONDS:-10}"
   local attempt
@@ -92,6 +92,13 @@ remote_first_publish() {
   if ! declare -F "$reconcile_callback" >/dev/null 2>&1; then
     echo "::error::missing reconciliation callback: ${reconcile_callback}"
     return 1
+  fi
+
+  if [ "${REMOTE_FIRST_VALIDATE_ONLY:-0}" = "1" ]; then
+    REMOTE_FIRST_ATTEMPTS_USED=0
+    export REMOTE_FIRST_ATTEMPTS_USED
+    remote_first_run_reconcile "$reconcile_callback"
+    return
   fi
 
   for ((attempt = 1; attempt <= max_attempts; attempt++)); do

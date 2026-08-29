@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import base64
 from dataclasses import dataclass
+import errno
 import gzip
 import hashlib
 import html
@@ -14,6 +15,7 @@ import io
 import json
 import os
 from pathlib import Path, PurePosixPath
+import posixpath
 import re
 import shutil
 import stat
@@ -27,7 +29,9 @@ from official_locales import OFFICIAL_LOCALES
 
 SITE = "https://alice51849.github.io/ios-app-guide"
 SITE_PATH = "/ios-app-guide/"
-MAX_UNPACKED_BYTES = 900_000_000
+PLATFORM_UNPACKED_BYTES = 900_000_000
+MIN_HEADROOM_BYTES = 30_000_000
+MAX_UNPACKED_BYTES = PLATFORM_UNPACKED_BYTES - MIN_HEADROOM_BYTES
 HTML_SUFFIXES = frozenset({".html", ".htm"})
 JSON_SUFFIXES = frozenset({".json", ".jsonld", ".webmanifest"})
 TEXT_HASH_SUFFIXES = frozenset(
@@ -63,10 +67,11 @@ BYTE_STABLE_PREFIXES = (
 SOURCE_INVENTORY = ".well-known/publish-inventory.json"
 SOURCE_INVENTORY_GZIP = ".well-known/source-publish-inventory.json.gz"
 STAGE_MANIFEST = ".well-known/pages-stage-manifest.json.gz"
-CSS_PREFIX = "assets/stage-css/"
-JSONLD_JS_PREFIX = "assets/stage-jsonld/"
+CSS_PREFIX = "a/c/"
+JSONLD_JS_PREFIX = "a/j/"
 HREFLANG_PREFIX = "sitemaps/stage-hreflang-"
 HREFLANG_SHARD_LIMIT = 40_000_000
+PRIMARY_SITEMAP_LEAF = "sitemap-primary.xml.gz"
 STABLE_SITEMAPS = frozenset(
     {
         "sitemap.xml",
@@ -224,6 +229,12 @@ def digest_base64url(value: str | None) -> str | None:
     return base64.urlsafe_b64encode(bytes.fromhex(value)).decode("ascii").rstrip("=")
 
 
+def asset_id(digest: str) -> str:
+    encoded = digest_base64url(digest)
+    assert encoded is not None
+    return encoded
+
+
 def deterministic_gzip(content: bytes) -> bytes:
     output = io.BytesIO()
     with gzip.GzipFile(
@@ -278,6 +289,25 @@ def _relative(root: Path, path: Path) -> str:
     return relative
 
 
+def has_sparse_hole(path: Path, metadata: os.stat_result) -> bool:
+    if metadata.st_size == 0:
+        return False
+    flags = os.O_RDONLY
+    if hasattr(os, "O_NOFOLLOW"):
+        flags |= os.O_NOFOLLOW
+    descriptor = os.open(path, flags)
+    try:
+        if hasattr(os, "SEEK_HOLE"):
+            try:
+                return os.lseek(descriptor, 0, os.SEEK_HOLE) < metadata.st_size
+            except OSError as error:
+                if error.errno not in {errno.EINVAL, errno.ENOTSUP}:
+                    raise
+        return metadata.st_blocks * 512 < metadata.st_size
+    finally:
+        os.close(descriptor)
+
+
 def scan_source(
     source_root: Path,
 ) -> tuple[Path, list[SourceFile], set[bytes], set[str]]:
@@ -309,6 +339,10 @@ def scan_source(
             if metadata.st_nlink != 1:
                 raise StageError(
                     f"Pages staging source contains hard-linked file: {relative}"
+                )
+            if has_sparse_hole(path, metadata):
+                raise StageError(
+                    f"Pages staging source contains sparse file: {relative}"
                 )
             inode = (metadata.st_dev, metadata.st_ino)
             if inode in inodes:
@@ -873,8 +907,66 @@ def _minify_tag(raw: str) -> str:
     return value
 
 
-def _shorten_internal_urls(raw: str, tag_name: str) -> str:
-    if SITE + "/" not in raw or tag_name not in URL_SHORTEN_TAGS:
+def _shortest_internal_reference(value: str, page_relative: str) -> str:
+    if not value.startswith((SITE + "/", SITE_PATH)):
+        return value
+    target = internal_path(value, document_url(page_relative))
+    if target is None:
+        return value
+    parsed = urllib.parse.urlsplit(
+        _resolved_url(value, document_url(page_relative))
+    )
+    site_path = urllib.parse.urlsplit(SITE).path.rstrip("/")
+    suffix = ""
+    if parsed.query:
+        suffix += f"?{parsed.query}"
+    if parsed.fragment:
+        suffix += f"#{parsed.fragment}"
+    if parsed.path in {site_path, f"{site_path}/"}:
+        return f"{SITE_PATH}{suffix}"
+    prefix = f"{site_path}/"
+    if parsed.path.startswith(prefix) and parsed.path.endswith("/"):
+        directory_target = urllib.parse.unquote(parsed.path[len(prefix) :])
+        encoded_target = urllib.parse.quote(
+            directory_target,
+            safe="/:@-._~",
+        )
+        root_relative = f"{SITE_PATH}{encoded_target}"
+        page_directory = posixpath.dirname(page_relative) or "."
+        page_relative_url = (
+            posixpath.relpath(encoded_target.rstrip("/"), page_directory)
+            + "/"
+        )
+        choices = (
+            f"{root_relative}{suffix}",
+            f"{page_relative_url}{suffix}",
+        )
+        return min(choices, key=lambda candidate: (len(candidate), candidate))
+    encoded_target = (
+        parsed.path[len(prefix) :]
+        if parsed.path.startswith(prefix)
+        else urllib.parse.quote(target, safe="/:@-._~")
+    )
+    root_relative = f"{SITE_PATH}{encoded_target}"
+    page_directory = posixpath.dirname(page_relative) or "."
+    page_relative_url = posixpath.relpath(encoded_target, page_directory)
+    choices = (
+        f"{root_relative}{suffix}",
+        f"{page_relative_url}{suffix}",
+    )
+    return min(choices, key=lambda candidate: (len(candidate), candidate))
+
+
+def _shorten_internal_urls(
+    raw: str,
+    tag_name: str,
+    page_relative: str,
+    savings: dict[str, int] | None = None,
+) -> str:
+    if (
+        SITE + "/" not in raw
+        and SITE_PATH not in raw
+    ) or tag_name not in URL_SHORTEN_TAGS:
         return raw
     attrs = _raw_attributes(raw)
     relations = {
@@ -884,7 +976,53 @@ def _shorten_internal_urls(raw: str, tag_name: str) -> str:
         return raw
     if tag_name == "meta":
         return raw
-    return raw.replace(SITE + "/", SITE_PATH)
+    shortened = raw.replace(SITE + "/", SITE_PATH)
+    attrs = _raw_attributes(shortened)
+    for name, value in attrs.items():
+        if name == "srcset":
+            candidates = []
+            changed = False
+            for item in value.split(","):
+                fields = item.strip().split()
+                if not fields:
+                    continue
+                replacement = _shortest_internal_reference(
+                    fields[0],
+                    page_relative,
+                )
+                changed = changed or replacement != fields[0]
+                fields[0] = replacement
+                candidates.append(" ".join(fields))
+            if changed:
+                if savings is not None:
+                    savings["page_relative_url_bytes"] += (
+                        len(value.encode("utf-8"))
+                        - len(", ".join(candidates).encode("utf-8"))
+                    )
+                shortened = _replace_attribute_value(
+                    shortened,
+                    name,
+                    ", ".join(candidates),
+                )
+            continue
+        if not (
+            name in URL_ATTRIBUTES
+            or name.endswith(("-href", "-src"))
+        ):
+            continue
+        replacement = _shortest_internal_reference(value, page_relative)
+        if replacement != value:
+            if savings is not None:
+                savings["page_relative_url_bytes"] += (
+                    len(value.encode("utf-8"))
+                    - len(replacement.encode("utf-8"))
+                )
+            shortened = _replace_attribute_value(
+                shortened,
+                name,
+                replacement,
+            )
+    return shortened
 
 
 def _replace_attribute_value(
@@ -1078,7 +1216,7 @@ def collect_json_ld_assets(
     for digest, record in sorted(records.items()):
         content = record["content"]
         assert isinstance(content, bytes)
-        relative = f"{JSONLD_JS_PREFIX}{digest}.js"
+        relative = f"{JSONLD_JS_PREFIX}{asset_id(digest)}.js"
         link = f"<script src={SITE_PATH}{relative}></script>"
         loader = _json_ld_loader(content)
         if int(record["source_bytes"]) <= (
@@ -1166,6 +1304,7 @@ def minify_html(
     css_assets: dict[str, bytes],
     json_ld_links: dict[str, str] | None = None,
     neutralized_paths: set[str] | None = None,
+    savings: dict[str, int] | None = None,
 ) -> bytes:
     try:
         source = content.decode("utf-8")
@@ -1259,13 +1398,20 @@ def minify_html(
                 if movable:
                     css = body.encode("utf-8")
                     digest = sha256_bytes(css)
-                    asset = f"{CSS_PREFIX}{digest}.css"
+                    asset = f"{CSS_PREFIX}{asset_id(digest)}.css"
                     previous = css_assets.setdefault(asset, css)
                     if previous != css:
                         raise StageError("Stylesheet content-address collision")
+                    if savings is not None:
+                        legacy = f"{SITE_PATH}assets/stage-css/{digest}.css"
+                        current = f"{SITE_PATH}{asset}"
+                        savings["content_asset_url_bytes"] += (
+                            len(legacy.encode("utf-8"))
+                            - len(current.encode("utf-8"))
+                        )
                     output.append(
                         "<link rel=stylesheet "
-                        f"href={SITE_PATH}{asset}>"
+                        f"href={_shortest_internal_reference(SITE_PATH + asset, relative)}>"
                     )
                 else:
                     output.append(_minify_tag(raw))
@@ -1273,18 +1419,40 @@ def minify_html(
                     output.append(_minify_tag(source[close_start:close_end]))
             elif attrs.get("type", "").lower() == "application/ld+json":
                 canonical = _json_script(body)
-                replacement = (json_ld_links or {}).get(
-                    sha256_bytes(canonical.encode("utf-8"))
-                )
+                digest = sha256_bytes(canonical.encode("utf-8"))
+                replacement = (json_ld_links or {}).get(digest)
                 if replacement is not None:
-                    output.append(replacement)
+                    if savings is not None:
+                        legacy = (
+                            f"<script src={SITE_PATH}"
+                            f"assets/stage-jsonld/{digest}.js></script>"
+                        )
+                        savings["content_asset_url_bytes"] += (
+                            len(legacy.encode("utf-8"))
+                            - len(replacement.encode("utf-8"))
+                        )
+                    output.append(
+                        _shorten_internal_urls(
+                            replacement,
+                            "script",
+                            relative,
+                            savings,
+                        )
+                    )
                 else:
                     output.append(_minify_tag(raw))
                     output.append(canonical)
                     output.append(_minify_tag(source[close_start:close_end]))
             else:
                 output.append(
-                    _minify_tag(_shorten_internal_urls(raw, tag_name))
+                    _minify_tag(
+                        _shorten_internal_urls(
+                            raw,
+                            tag_name,
+                            relative,
+                            savings,
+                        )
+                    )
                 )
                 output.append(body)
                 output.append(_minify_tag(source[close_start:close_end]))
@@ -1293,7 +1461,12 @@ def minify_html(
         if tag_name == "link" and is_html_hreflang(attrs):
             position = end
             continue
-        shortened = _shorten_internal_urls(raw, tag_name)
+        shortened = _shorten_internal_urls(
+            raw,
+            tag_name,
+            relative,
+            savings,
+        )
         output.append(_minify_tag(shortened))
         if (
             tag_name in PRESERVE_TEXT_TAGS
@@ -1500,6 +1673,60 @@ def _collect_sitemap_graph(
     return seen, public_urls
 
 
+def split_primary_sitemap(output: Path) -> dict[str, int | str]:
+    before_paths, before_urls = _collect_sitemap_graph(output)
+    if "sitemap.xml" not in before_paths:
+        raise StageError("Primary sitemap is not reachable from sitemap_index.xml")
+    sitemap_path = output / "sitemap.xml"
+    index_path = output / "sitemap_index.xml"
+    source = sitemap_path.read_bytes()
+    try:
+        root = ET.fromstring(source)
+    except ET.ParseError as error:
+        raise StageError("Primary sitemap XML is invalid") from error
+    if root.tag.rsplit("}", 1)[-1] != "urlset":
+        raise StageError("Primary sitemap must be a URL set before compaction")
+    leaf = deterministic_gzip(source)
+    leaf_path = output / PRIMARY_SITEMAP_LEAF
+    if leaf_path.exists():
+        raise StageError(f"Primary sitemap leaf already exists: {leaf_path}")
+    leaf_url = f"{SITE}/{PRIMARY_SITEMAP_LEAF}"
+    stub = (
+        '<?xml version="1.0" encoding="UTF-8"?>'
+        '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+        f"<sitemap><loc>{leaf_url}</loc></sitemap>"
+        "</sitemapindex>\n"
+    ).encode("utf-8")
+    index = index_path.read_bytes()
+    source_url = f"{SITE}/sitemap.xml".encode("utf-8")
+    if index.count(source_url) != 1:
+        raise StageError(
+            "sitemap_index.xml must reference primary sitemap exactly once"
+        )
+    rewritten_index = index.replace(
+        source_url,
+        leaf_url.encode("utf-8"),
+        1,
+    )
+    if len(leaf) + len(stub) >= len(source):
+        raise StageError("Primary sitemap split would not reduce bytes")
+    leaf_path.write_bytes(leaf)
+    sitemap_path.write_bytes(stub)
+    index_path.write_bytes(rewritten_index)
+    after_paths, after_urls = _collect_sitemap_graph(output)
+    expected_paths = (before_paths - {"sitemap.xml"}) | {
+        PRIMARY_SITEMAP_LEAF
+    }
+    if after_paths != expected_paths or after_urls != before_urls:
+        raise StageError("Primary sitemap split changed the public URL graph")
+    return {
+        "leaf_bytes": len(leaf),
+        "leaf_path": PRIMARY_SITEMAP_LEAF,
+        "saved_bytes": len(source) - len(leaf) - len(stub),
+        "stub_bytes": len(stub),
+    }
+
+
 def compress_child_sitemaps(
     output: Path,
     *,
@@ -1650,6 +1877,10 @@ def validate_stage(
             raise StageError(
                 f"Staged Pages tree contains hard-linked file: {relative}"
             )
+        if has_sparse_hole(path, metadata):
+            raise StageError(
+                f"Staged Pages tree contains sparse file: {relative}"
+            )
         inode = (metadata.st_dev, metadata.st_ino)
         if inode in inodes:
             raise StageError(
@@ -1798,6 +2029,10 @@ def build_stage(
 ) -> dict[str, object]:
     if max_unpacked_bytes <= 0:
         raise StageError("Pages unpacked byte limit must be positive")
+    if max_unpacked_bytes > MAX_UNPACKED_BYTES:
+        raise StageError(
+            f"Pages unpacked byte limit cannot exceed {MAX_UNPACKED_BYTES}"
+        )
     source, files, hash_tokens, noindex_paths = scan_source(source_root)
     published_paths = {
         item.path for item in files if item.path != SOURCE_INVENTORY
@@ -1838,6 +2073,10 @@ def build_stage(
     removed_markdown_alternates = 0
     rewritten_markdown_links = 0
     referenced_paths: set[str] = set()
+    compaction_savings = {
+        "content_asset_url_bytes": 0,
+        "page_relative_url_bytes": 0,
+    }
     try:
         for item in files:
             target_relative = item.path
@@ -1884,6 +2123,7 @@ def build_stage(
                     css_assets=css_assets,
                     json_ld_links=json_ld_links,
                     neutralized_paths=authorized_missing_paths,
+                    savings=compaction_savings,
                 )
                 after = parse_semantics(
                     content,
@@ -2007,13 +2247,28 @@ def build_stage(
                     "gzip-hreflang-sitemap",
                 ]
             )
-        sitemap_mapping, rewritten_sitemaps, sitemap_stats = (
+        primary_sitemap_stats = split_primary_sitemap(output)
+        sitemap_mapping, rewritten_sitemaps, child_sitemap_stats = (
             compress_child_sitemaps(
                 output,
                 referenced_paths=referenced_paths,
             )
         )
         row_by_path = {str(row[0]): row for row in rows}
+        primary_leaf = output / PRIMARY_SITEMAP_LEAF
+        primary_content = primary_leaf.read_bytes()
+        row_by_path[PRIMARY_SITEMAP_LEAF] = [
+            PRIMARY_SITEMAP_LEAF,
+            None,
+            sha256_bytes(primary_content),
+            len(primary_content),
+            "gzip-primary-sitemap",
+        ]
+        primary_route = row_by_path["sitemap.xml"]
+        primary_route_content = (output / "sitemap.xml").read_bytes()
+        primary_route[2] = sha256_bytes(primary_route_content)
+        primary_route[3] = len(primary_route_content)
+        primary_route[4] = "primary-sitemap-index-stub"
         for old, new in sitemap_mapping.items():
             row = row_by_path.pop(old)
             content = (output / new).read_bytes()
@@ -2086,8 +2341,11 @@ def build_stage(
             },
             "limits": {
                 "max_unpacked_bytes": max_unpacked_bytes,
+                "minimum_headroom_bytes": MIN_HEADROOM_BYTES,
+                "platform_unpacked_bytes": PLATFORM_UNPACKED_BYTES,
             },
             "minification": {
+                **compaction_savings,
                 "content_addressed_css_assets": len(css_assets),
                 "content_addressed_jsonld_assets": len(json_ld_loaders),
                 "json_files": minified_json,
@@ -2097,7 +2355,10 @@ def build_stage(
                 "markdown_links_rewritten_to_html": rewritten_markdown_links,
                 "transformed_html_files": transformed_html,
             },
-            "sitemaps": sitemap_stats,
+            "sitemaps": {
+                "child": child_sitemap_stats,
+                "primary": primary_sitemap_stats,
+            },
             "schema": "lumi.pages-stage/v1",
             "source": {
                 "files": len(files),
@@ -2124,14 +2385,23 @@ def build_stage(
             shards=shards,
         )
         final_bytes = int(final["unpacked_bytes"])
+        headroom_bytes = PLATFORM_UNPACKED_BYTES - final_bytes
         if final_bytes > max_unpacked_bytes:
             raise StageError(
                 "Final Pages staging unpacked regular-file bytes exceed "
                 f"{max_unpacked_bytes}: {final_bytes}"
             )
+        if headroom_bytes < MIN_HEADROOM_BYTES:
+            raise StageError(
+                "Final Pages staging headroom is below "
+                f"{MIN_HEADROOM_BYTES}: {headroom_bytes}"
+            )
         result = {
             **final,
+            "headroom_bytes": headroom_bytes,
             "max_unpacked_bytes": max_unpacked_bytes,
+            "minimum_headroom_bytes": MIN_HEADROOM_BYTES,
+            "platform_unpacked_bytes": PLATFORM_UNPACKED_BYTES,
             "source_unpacked_bytes": source_bytes,
             "stage_manifest_bytes": len(manifest_bytes),
             "stage_manifest_sha256": sha256_bytes(manifest_bytes),

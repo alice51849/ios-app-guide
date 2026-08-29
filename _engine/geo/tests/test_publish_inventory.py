@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import copy
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -207,6 +208,35 @@ class PublishInventoryTests(unittest.TestCase):
         self.assertEqual(0, manifest["safety"]["excluded_protected_files"])
         self.assertFalse(manifest["safety"]["source_content_deleted"])
         self.assertTrue((self.source / "micro/dead.html").is_file())
+
+    def test_symlink_hardlink_and_sparse_sources_fail_closed(self) -> None:
+        target = self.source / "index.html"
+        link = self.source / "unsafe.html"
+        link.symlink_to(target.name)
+        with self.assertRaisesRegex(
+            publish_inventory.InventoryError,
+            "symlinks",
+        ):
+            self._run()
+        link.unlink()
+
+        os.link(target, link)
+        with self.assertRaisesRegex(
+            publish_inventory.InventoryError,
+            "hard-linked",
+        ):
+            self._run()
+        link.unlink()
+
+        sparse = self.source / "sparse.bin"
+        with sparse.open("wb") as handle:
+            handle.seek(99_999_999)
+            handle.write(b"x")
+        with self.assertRaisesRegex(
+            publish_inventory.InventoryError,
+            "sparse",
+        ):
+            self._run()
 
     def test_manifest_and_materialized_tree_are_deterministic(self) -> None:
         first = self.base / "first.json"

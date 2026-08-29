@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 from dataclasses import dataclass
+import errno
 import json
 import os
 from pathlib import Path, PurePosixPath
@@ -16,7 +17,9 @@ import zipfile
 
 
 DEFAULT_EXCLUDES = frozenset({".git", ".github"})
-MAX_UNPACKED_BYTES = 900_000_000
+PLATFORM_UNPACKED_BYTES = 900_000_000
+MIN_HEADROOM_BYTES = 30_000_000
+MAX_UNPACKED_BYTES = PLATFORM_UNPACKED_BYTES - MIN_HEADROOM_BYTES
 MAX_DEFLATE_UPLOAD_BYTES = 900_000_000
 MAX_TAR_BYTES = 10_000_000_000
 CHUNK_BYTES = 1024 * 1024
@@ -61,6 +64,25 @@ def _excludes(values: list[str]) -> frozenset[str]:
     return frozenset(result)
 
 
+def _has_sparse_hole(path: Path, metadata: os.stat_result) -> bool:
+    if metadata.st_size == 0:
+        return False
+    flags = os.O_RDONLY
+    if hasattr(os, "O_NOFOLLOW"):
+        flags |= os.O_NOFOLLOW
+    descriptor = os.open(path, flags)
+    try:
+        if hasattr(os, "SEEK_HOLE"):
+            try:
+                return os.lseek(descriptor, 0, os.SEEK_HOLE) < metadata.st_size
+            except OSError as error:
+                if error.errno not in {errno.EINVAL, errno.ENOTSUP}:
+                    raise
+        return metadata.st_blocks * 512 < metadata.st_size
+    finally:
+        os.close(descriptor)
+
+
 def scan_tree(
     source_root: Path,
     *,
@@ -103,6 +125,10 @@ def scan_tree(
                 if metadata.st_nlink != 1:
                     raise ValueError(
                         f"Pages source contains hard-linked file: {path}"
+                    )
+                if _has_sparse_hole(Path(child.path), metadata):
+                    raise ValueError(
+                        f"Pages source contains sparse file: {path}"
                     )
                 inode_key = (metadata.st_dev, metadata.st_ino)
                 previous = inodes.get(inode_key)
@@ -300,6 +326,10 @@ def verify_artifact(
 ) -> dict[str, int]:
     if max_unpacked_bytes <= 0:
         raise ValueError("Pages unpacked byte limit must be positive")
+    if max_unpacked_bytes > MAX_UNPACKED_BYTES:
+        raise ValueError(
+            f"Pages unpacked byte limit cannot exceed {MAX_UNPACKED_BYTES}"
+        )
     if max_deflate_upload_bytes <= 0:
         raise ValueError("Pages deflate upload byte limit must be positive")
     root, entries = scan_tree(
@@ -413,6 +443,12 @@ def verify_artifact(
             "Pages deflate upload artifact exceeds "
             f"{max_deflate_upload_bytes} bytes: {deflate_upload_bytes}"
         )
+    headroom_bytes = PLATFORM_UNPACKED_BYTES - unpacked_bytes
+    if headroom_bytes < MIN_HEADROOM_BYTES:
+        raise ValueError(
+            f"Pages staging headroom is below {MIN_HEADROOM_BYTES}: "
+            f"{headroom_bytes}"
+        )
     return {
         "files": sum(entry.kind == "file" for entry in entries.values()),
         "directories": sum(
@@ -421,8 +457,11 @@ def verify_artifact(
         "unpacked_bytes": unpacked_bytes,
         "tar_bytes": target_metadata.st_size,
         "deflate_upload_bytes": deflate_upload_bytes,
+        "headroom_bytes": headroom_bytes,
         "max_deflate_upload_bytes": max_deflate_upload_bytes,
         "max_unpacked_bytes": max_unpacked_bytes,
+        "minimum_headroom_bytes": MIN_HEADROOM_BYTES,
+        "platform_unpacked_bytes": PLATFORM_UNPACKED_BYTES,
     }
 
 
@@ -452,6 +491,11 @@ def main() -> int:
     args = parser.parse_args()
     excluded = _excludes(args.exclude_component)
     if args.mode == "tree":
+        if args.max_unpacked_bytes > MAX_UNPACKED_BYTES:
+            raise ValueError(
+                "Pages unpacked byte limit cannot exceed "
+                f"{MAX_UNPACKED_BYTES}"
+            )
         _root_path, entries = scan_tree(
             args.site_root,
             excluded_components=excluded,
@@ -471,6 +515,16 @@ def main() -> int:
                 f"{args.max_unpacked_bytes} bytes: {result['unpacked_bytes']}"
             )
         result["max_unpacked_bytes"] = args.max_unpacked_bytes
+        result["headroom_bytes"] = (
+            PLATFORM_UNPACKED_BYTES - result["unpacked_bytes"]
+        )
+        if result["headroom_bytes"] < MIN_HEADROOM_BYTES:
+            raise ValueError(
+                "Pages staging headroom is below "
+                f"{MIN_HEADROOM_BYTES}: {result['headroom_bytes']}"
+            )
+        result["minimum_headroom_bytes"] = MIN_HEADROOM_BYTES
+        result["platform_unpacked_bytes"] = PLATFORM_UNPACKED_BYTES
     else:
         if args.artifact is None:
             parser.error("--artifact is required for artifact modes")

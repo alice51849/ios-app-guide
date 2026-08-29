@@ -30,6 +30,11 @@ class PagesArtifactGateTests(unittest.TestCase):
     def tearDown(self) -> None:
         self.workspace.cleanup()
 
+    def test_hard_capacity_contract_preserves_thirty_mb_headroom(self) -> None:
+        self.assertEqual(900_000_000, gate.PLATFORM_UNPACKED_BYTES)
+        self.assertEqual(30_000_000, gate.MIN_HEADROOM_BYTES)
+        self.assertEqual(870_000_000, gate.MAX_UNPACKED_BYTES)
+
     def test_real_artifact_matches_source_and_enforces_unpacked_bytes(self) -> None:
         built = gate.build_review_tar(self.site, self.artifact)
         verified = gate.verify_artifact(self.site, self.artifact)
@@ -39,6 +44,14 @@ class PagesArtifactGateTests(unittest.TestCase):
         self.assertLessEqual(
             verified["unpacked_bytes"],
             verified["max_unpacked_bytes"],
+        )
+        self.assertLessEqual(
+            verified["unpacked_bytes"],
+            870_000_000,
+        )
+        self.assertGreaterEqual(
+            verified["headroom_bytes"],
+            30_000_000,
         )
         with self.assertRaisesRegex(
             ValueError,
@@ -57,6 +70,15 @@ class PagesArtifactGateTests(unittest.TestCase):
                 self.site,
                 self.artifact,
                 max_deflate_upload_bytes=1,
+            )
+        with self.assertRaisesRegex(
+            ValueError,
+            "cannot exceed 870000000",
+        ):
+            gate.verify_artifact(
+                self.site,
+                self.artifact,
+                max_unpacked_bytes=870_000_001,
             )
 
     def test_compressible_upload_cannot_hide_oversized_unpacked_tree(
@@ -99,6 +121,16 @@ class PagesArtifactGateTests(unittest.TestCase):
                 gate.scan_tree(self.site)
         finally:
             fifo.unlink()
+
+        sparse = self.site / "sparse.bin"
+        with sparse.open("wb") as handle:
+            handle.seek(99_999_999)
+            handle.write(b"x")
+        try:
+            with self.assertRaisesRegex(ValueError, "sparse"):
+                gate.scan_tree(self.site)
+        finally:
+            sparse.unlink()
 
     def _write_member(
         self,
@@ -180,7 +212,7 @@ class PagesArtifactGateTests(unittest.TestCase):
         self.assertLess(tree_gate, upload)
         self.assertLess(upload, artifact_gate)
         self.assertLess(artifact_gate, deploy)
-        self.assertIn("--max-unpacked-bytes 900000000", workflow)
+        self.assertIn("--max-unpacked-bytes 870000000", workflow)
         self.assertIn("--max-deflate-upload-bytes 900000000", workflow)
         self.assertIn("${{ runner.temp }}/pages-publish", workflow)
         self.assertIn('$RUNNER_TEMP/artifact.tar', workflow)

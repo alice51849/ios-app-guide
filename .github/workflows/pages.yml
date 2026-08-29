@@ -57,12 +57,12 @@ jobs:
           python3 _engine/geo/pages_stage.py
           --source "${{ runner.temp }}/pages-allowlisted"
           --output "${{ runner.temp }}/pages-publish"
-          --max-unpacked-bytes 900000000
+          --max-unpacked-bytes 870000000
       - name: Fail closed on pruned published source bytes and paths
         run: >-
           python3 .github/scripts/pages_artifact_gate.py tree
           --site-root "${{ runner.temp }}/pages-publish"
-          --max-unpacked-bytes 900000000
+          --max-unpacked-bytes 870000000
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -72,7 +72,7 @@ jobs:
           python3 .github/scripts/pages_artifact_gate.py artifact
           --site-root "${{ runner.temp }}/pages-publish"
           --artifact "$RUNNER_TEMP/artifact.tar"
-          --max-unpacked-bytes 900000000
+          --max-unpacked-bytes 870000000
           --max-deflate-upload-bytes 900000000
       - name: Deploy to GitHub Pages
         id: deployment

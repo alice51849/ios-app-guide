@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 from collections import defaultdict, deque
+import errno
 import fnmatch
 import hashlib
 import html
@@ -18,6 +19,7 @@ import os
 from pathlib import Path, PurePosixPath
 import re
 import shutil
+import stat
 import subprocess
 import sys
 import tarfile
@@ -256,21 +258,56 @@ def iter_source_files(
     return sorted(files, key=lambda item: normalized_relative(root, item))
 
 
+def _has_sparse_hole(path: Path, metadata: os.stat_result) -> bool:
+    if metadata.st_size == 0:
+        return False
+    flags = os.O_RDONLY
+    if hasattr(os, "O_NOFOLLOW"):
+        flags |= os.O_NOFOLLOW
+    descriptor = os.open(path, flags)
+    try:
+        if hasattr(os, "SEEK_HOLE"):
+            try:
+                return os.lseek(descriptor, 0, os.SEEK_HOLE) < metadata.st_size
+            except OSError as error:
+                if error.errno not in {errno.EINVAL, errno.ENOTSUP}:
+                    raise
+        return metadata.st_blocks * 512 < metadata.st_size
+    finally:
+        os.close(descriptor)
+
+
 def iter_worktree_items(
     root: Path,
     *,
     ignored_output: Path | None = None,
 ) -> Iterator[tuple[str, bytes, bool, Path | None]]:
+    inodes: dict[tuple[int, int], str] = {}
     for path in iter_source_files(root, ignored_output=ignored_output):
         relative = normalized_relative(root, path)
-        is_symlink = path.is_symlink()
+        metadata = path.lstat()
+        if stat.S_ISLNK(metadata.st_mode):
+            raise InventoryError(f"symlinks are not publishable: {relative}")
+        if not stat.S_ISREG(metadata.st_mode):
+            raise InventoryError(f"special files are not publishable: {relative}")
+        if metadata.st_nlink != 1:
+            raise InventoryError(f"hard-linked files are not publishable: {relative}")
+        inode = (metadata.st_dev, metadata.st_ino)
+        previous = inodes.get(inode)
+        if previous is not None:
+            raise InventoryError(
+                f"source aliases one inode: {previous}, {relative}"
+            )
+        inodes[inode] = relative
+        if _has_sparse_hole(path, metadata):
+            raise InventoryError(f"sparse files are not publishable: {relative}")
         try:
             content = path.read_bytes()
         except OSError as error:
             raise InventoryError(
                 f"cannot read source file: {relative}"
             ) from error
-        yield relative, content, is_symlink, path
+        yield relative, content, False, path
 
 
 def iter_git_tree_items(

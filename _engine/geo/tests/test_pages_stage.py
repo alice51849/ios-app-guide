@@ -6,6 +6,7 @@ import json
 import os
 from pathlib import Path
 import re
+import shutil
 import tempfile
 import unittest
 
@@ -116,8 +117,9 @@ class PagesStageTests(unittest.TestCase):
             (
                 '<?xml version="1.0"?>'
                 '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-                f"<url><loc>{pages_stage.SITE}/index.html</loc></url>"
-                "</urlset>"
+                + (" " * 5_000)
+                + f"<url><loc>{pages_stage.SITE}/index.html</loc></url>"
+                + "</urlset>"
             ),
             encoding="utf-8",
         )
@@ -188,6 +190,11 @@ class PagesStageTests(unittest.TestCase):
     def tearDown(self) -> None:
         self.temporary.cleanup()
 
+    def test_hard_capacity_contract_preserves_thirty_mb_headroom(self) -> None:
+        self.assertEqual(900_000_000, pages_stage.PLATFORM_UNPACKED_BYTES)
+        self.assertEqual(30_000_000, pages_stage.MIN_HEADROOM_BYTES)
+        self.assertEqual(870_000_000, pages_stage.MAX_UNPACKED_BYTES)
+
     def test_stage_is_deterministic_and_semantically_equivalent(self) -> None:
         first = pages_stage.build_stage(
             self.source,
@@ -197,6 +204,10 @@ class PagesStageTests(unittest.TestCase):
         self.assertLessEqual(
             first["unpacked_bytes"],
             first["max_unpacked_bytes"],
+        )
+        self.assertGreaterEqual(
+            first["headroom_bytes"],
+            pages_stage.MIN_HEADROOM_BYTES,
         )
         self.assertGreater(first["public_url_count"], 0)
         self.assertEqual(64, len(first["public_url_sha256"]))
@@ -213,10 +224,12 @@ class PagesStageTests(unittest.TestCase):
             1,
             staged.count("<script type=application/ld+json>"),
         )
-        self.assertIn("assets/stage-jsonld/", staged)
-        self.assertTrue(list((self.output / "assets/stage-css").glob("*.css")))
+        self.assertIn(pages_stage.JSONLD_JS_PREFIX, staged)
+        self.assertTrue(
+            list((self.output / pages_stage.CSS_PREFIX).glob("*.css"))
+        )
         json_ld_assets = list(
-            (self.output / "assets/stage-jsonld").glob("*.js")
+            (self.output / pages_stage.JSONLD_JS_PREFIX).glob("*.js")
         )
         self.assertTrue(json_ld_assets)
         loader = json_ld_assets[0].read_text(encoding="utf-8")
@@ -250,6 +263,13 @@ class PagesStageTests(unittest.TestCase):
         self.assertTrue((self.output / "sitemap-extra.xml.gz").is_file())
         self.assertTrue((self.output / "sitemap-linked.xml").is_file())
         self.assertFalse((self.output / "sitemap-linked.xml.gz").exists())
+        self.assertTrue(
+            (self.output / pages_stage.PRIMARY_SITEMAP_LEAF).is_file()
+        )
+        self.assertIn(
+            pages_stage.PRIMARY_SITEMAP_LEAF,
+            (self.output / "sitemap.xml").read_text(encoding="utf-8"),
+        )
         manifest = json.loads(
             gzip.decompress(
                 (self.output / pages_stage.STAGE_MANIFEST).read_bytes()
@@ -269,11 +289,23 @@ class PagesStageTests(unittest.TestCase):
             ],
             0,
         )
-        self.assertGreater(manifest["sitemaps"]["saved_bytes"], 0)
+        self.assertGreater(
+            manifest["sitemaps"]["child"]["saved_bytes"],
+            0,
+        )
+        self.assertGreater(
+            manifest["sitemaps"]["primary"]["saved_bytes"],
+            0,
+        )
 
+        second_source = self.base / "source-two"
+        shutil.copytree(self.source, second_source)
+        for path in second_source.rglob("*"):
+            if path.is_file():
+                os.utime(path, ns=(1_700_000_000_000_000_000,) * 2)
         second_output = self.base / "output-two"
         second = pages_stage.build_stage(
-            self.source,
+            second_source,
             second_output,
             max_unpacked_bytes=10_000_000,
         )
@@ -291,6 +323,15 @@ class PagesStageTests(unittest.TestCase):
         self.assertEqual(first_files, second_files)
 
     def test_final_unpacked_limit_fails_and_removes_partial_output(self) -> None:
+        with self.assertRaisesRegex(
+            pages_stage.StageError,
+            "cannot exceed 870000000",
+        ):
+            pages_stage.build_stage(
+                self.source,
+                self.output,
+                max_unpacked_bytes=870_000_001,
+            )
         with self.assertRaisesRegex(
             pages_stage.StageError,
             "unpacked regular-file bytes exceed 1",
@@ -320,6 +361,14 @@ class PagesStageTests(unittest.TestCase):
         with self.assertRaisesRegex(pages_stage.StageError, "hard-linked"):
             pages_stage.build_stage(self.source, self.output)
         link.unlink()
+
+        sparse = self.source / "sparse.bin"
+        with sparse.open("wb") as handle:
+            handle.seek(99_999_999)
+            handle.write(b"x")
+        with self.assertRaisesRegex(pages_stage.StageError, "sparse"):
+            pages_stage.build_stage(self.source, self.output)
+        sparse.unlink()
 
         target.write_text(
             html_page(

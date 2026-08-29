@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+from datetime import datetime, timezone
 import hashlib
 import html
 import json
@@ -25,6 +26,7 @@ from app_store_storefronts import (
     validated_app_store_url,
 )
 from official_locales import OFFICIAL_LOCALES
+import gen_sitemap_lastmod
 import publisher_intent_catalog as catalog
 import publisher_intent_visuals as visuals
 
@@ -336,13 +338,23 @@ class PublisherIntentVisualOutputTests(unittest.TestCase):
         image_ns = f"{{{visuals.IMAGE_NS}}}"
         urls = sitemap.findall(f"{sitemap_ns}url")
         self.assertEqual(51, len(urls))
-        self.assertTrue(
-            all(
-                url.findtext(f"{sitemap_ns}lastmod")
-                == self.manifest["dateModified"]
-                for url in urls
-            )
-        )
+        max_date = (
+            datetime.now(timezone.utc)
+            + gen_sitemap_lastmod.MAX_CLOCK_SKEW
+        ).date().isoformat()
+        for url in urls:
+            lastmod = url.findtext(f"{sitemap_ns}lastmod")
+            with self.subTest(location=url.findtext(f"{sitemap_ns}loc")):
+                self.assertTrue(
+                    gen_sitemap_lastmod._valid_date(
+                        lastmod,
+                        today=max_date,
+                    )
+                )
+                self.assertGreaterEqual(
+                    str(lastmod),
+                    self.manifest["dateModified"],
+                )
         image_locations = [
             image.findtext(f"{image_ns}loc")
             for url in urls

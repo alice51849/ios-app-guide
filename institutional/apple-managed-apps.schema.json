@@ -1,0 +1,401 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://alice51849.github.io/ios-app-guide/institutional/apple-managed-apps.schema.json",
+  "x-schema-version": 1,
+  "title": "Lumi Studio institutional managed-app candidate roster",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schema_version",
+    "release_status",
+    "deployment_status",
+    "locale",
+    "route_kind",
+    "url",
+    "generated_on",
+    "source_digest",
+    "roster_digest",
+    "content_digest",
+    "publisher",
+    "disclosures",
+    "official_references",
+    "source_state",
+    "workflow",
+    "canary",
+    "counts",
+    "apps",
+    "measurement"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "https://alice51849.github.io/ios-app-guide/institutional/apple-managed-apps.schema.json"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "release_status": {
+      "const": "CANDIDATE_NOT_DEPLOYED"
+    },
+    "deployment_status": {
+      "const": "not_deployed"
+    },
+    "locale": {
+      "enum": [
+        "ar-SA",
+        "bn-BD",
+        "ca",
+        "cs",
+        "da",
+        "de-DE",
+        "el",
+        "en-AU",
+        "en-CA",
+        "en-GB",
+        "en-US",
+        "es-ES",
+        "es-MX",
+        "fi",
+        "fr-CA",
+        "fr-FR",
+        "gu-IN",
+        "he",
+        "hi",
+        "hr",
+        "hu",
+        "id",
+        "it",
+        "ja",
+        "kn-IN",
+        "ko",
+        "ml-IN",
+        "mr-IN",
+        "ms",
+        "nl-NL",
+        "no",
+        "or-IN",
+        "pa-IN",
+        "pl",
+        "pt-BR",
+        "pt-PT",
+        "ro",
+        "ru",
+        "sk",
+        "sl-SI",
+        "sv",
+        "ta-IN",
+        "te-IN",
+        "th",
+        "tr",
+        "uk",
+        "ur-PK",
+        "vi",
+        "zh-Hans",
+        "zh-Hant"
+      ]
+    },
+    "route_kind": {
+      "enum": [
+        "x-default",
+        "localized"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "generated_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "source_digest": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "roster_digest": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "content_digest": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "publisher": {
+      "type": "object"
+    },
+    "disclosures": {
+      "type": "object"
+    },
+    "official_references": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object"
+      }
+    },
+    "source_state": {
+      "type": "object"
+    },
+    "workflow": {
+      "type": "object"
+    },
+    "canary": {
+      "type": "object",
+      "required": [
+        "status",
+        "reason",
+        "count",
+        "app_keys"
+      ],
+      "properties": {
+        "status": {
+          "const": "BLOCKED_PENDING_ADMIN_VERIFICATION"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 3
+        },
+        "app_keys": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 3,
+          "uniqueItems": true
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "required": [
+        "apps",
+        "paid_upfront",
+        "free_to_start_with_iap",
+        "fully_free",
+        "ipad_supported",
+        "school_related",
+        "business_related",
+        "canary"
+      ],
+      "properties": {
+        "apps": {
+          "const": 46
+        },
+        "paid_upfront": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "free_to_start_with_iap": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "fully_free": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "ipad_supported": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "school_related": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "business_related": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "canary": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 3
+        }
+      },
+      "additionalProperties": false
+    },
+    "apps": {
+      "type": "array",
+      "minItems": 46,
+      "maxItems": 46,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "app_key",
+          "app_store_id",
+          "bundle_id",
+          "public_name",
+          "canonical_app_store_url",
+          "campaign_app_store_url",
+          "campaign_attribution",
+          "platforms",
+          "ipad_supported",
+          "purchase_model",
+          "purchase_model_wording",
+          "download_model",
+          "unlock_model",
+          "deployment_class",
+          "publisher_query",
+          "decision_context",
+          "related_fit",
+          "canary",
+          "canary_status",
+          "institutional_policy",
+          "limitation",
+          "support_url",
+          "privacy_url",
+          "last_checked",
+          "lookup_provenance",
+          "verified_live",
+          "institutional_exposure_verified",
+          "institutional_approval_verified",
+          "discount_verified"
+        ],
+        "properties": {
+          "app_key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "app_store_id": {
+            "type": "string",
+            "pattern": "^\\d{9,12}$"
+          },
+          "bundle_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9.-]+$"
+          },
+          "public_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "canonical_app_store_url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "campaign_app_store_url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "campaign_attribution": {
+            "type": "object"
+          },
+          "platforms": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "iPhone",
+                "iPad"
+              ]
+            }
+          },
+          "ipad_supported": {
+            "type": "boolean"
+          },
+          "purchase_model": {
+            "enum": [
+              "paid_upfront",
+              "free_with_lifetime_unlock"
+            ]
+          },
+          "purchase_model_wording": {
+            "type": "string",
+            "minLength": 1
+          },
+          "download_model": {
+            "enum": [
+              "paid_download",
+              "free_download"
+            ]
+          },
+          "unlock_model": {
+            "enum": [
+              "included_in_paid_download",
+              "optional_one_time_iap_individual_purchase"
+            ]
+          },
+          "deployment_class": {
+            "enum": [
+              "asm_apps_and_books_paid_candidate",
+              "intune_direct_store_free_tier_evaluation"
+            ]
+          },
+          "publisher_query": {
+            "type": "string",
+            "minLength": 1
+          },
+          "decision_context": {
+            "type": "string",
+            "minLength": 1
+          },
+          "related_fit": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "school",
+                "business"
+              ]
+            }
+          },
+          "canary": {
+            "type": "boolean"
+          },
+          "canary_status": {
+            "type": "string",
+            "minLength": 1
+          },
+          "institutional_policy": {
+            "type": "object"
+          },
+          "limitation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "support_url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "privacy_url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "last_checked": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "lookup_provenance": {
+            "type": "object"
+          },
+          "verified_live": {
+            "const": true
+          },
+          "institutional_exposure_verified": {
+            "type": "boolean",
+            "const": false
+          },
+          "institutional_approval_verified": {
+            "type": "boolean",
+            "const": false
+          },
+          "discount_verified": {
+            "type": "boolean",
+            "const": false
+          }
+        }
+      }
+    },
+    "measurement": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,2405 @@
+{
+  "$schema": "https://alice51849.github.io/ios-app-guide/institutional/apple-managed-apps.schema.json",
+  "schema_version": 1,
+  "release_status": "CANDIDATE_NOT_DEPLOYED",
+  "deployment_status": "not_deployed",
+  "locale": "ja",
+  "route_kind": "localized",
+  "url": "https://alice51849.github.io/ios-app-guide/ja/institutional/apple-managed-apps.json",
+  "generated_on": "2026-08-30",
+  "source_digest": "sha256:68996012c878d8050a1d8d3fac47c9731f0ab563fa8601c05e62b6c7fc7d0df0",
+  "roster_digest": "sha256:fea82924a4facecbf07394ed7e86d966970b2ba8db1fa21110d5debbde6a8f18",
+  "publisher": {
+    "name": "Lumi Studio",
+    "relationship": "first_party_developer",
+    "is_independent_ranking": false,
+    "support_email": "hourstag.app@gmail.com"
+  },
+  "disclosures": {
+    "first_party_non_ranking_non_endorsement": "これはLumi Studioによる一次資料です。AppleやMicrosoftの認定・推奨、学校やMDMの承認、組織カタログでの表示、割引の存在を示すものではありません。実際のストアと組織の規程を確認してください。",
+    "live_policy_note": "Apple School Manager、Apple Business Manager、Microsoft Intuneの管理者が、App Storeで公開中と確認した46件を評価するための、開発元による順位付けのない確認資料です。",
+    "public_lookup_scope": "これはLumi Studioによる一次資料です。AppleやMicrosoftの認定・推奨、学校やMDMの承認、組織カタログでの表示、割引の存在を示すものではありません。実際のストアと組織の規程を確認してください。"
+  },
+  "official_references": [
+    {
+      "id": "apple-content-distribution",
+      "publisher": "Apple",
+      "source_title": "Intro to content distribution for Apple devices",
+      "url": "https://support.apple.com/guide/deployment/intro-to-content-distribution-depe1553f932/web",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    },
+    {
+      "id": "apple-managed-apps",
+      "publisher": "Apple",
+      "source_title": "Distribute managed apps to Apple devices",
+      "url": "https://support.apple.com/guide/deployment/distribute-managed-apps-dep575bfed86/web",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    },
+    {
+      "id": "microsoft-intune-direct-store",
+      "publisher": "Microsoft",
+      "source_title": "Add iOS Store Apps to Microsoft Intune",
+      "url": "https://learn.microsoft.com/en-us/intune/app-management/deployment/add-store-ios",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    },
+    {
+      "id": "microsoft-intune-volume-purchase",
+      "publisher": "Microsoft",
+      "source_title": "Manage Apple Volume-Purchased Apps",
+      "url": "https://learn.microsoft.com/en-us/intune/app-management/deployment/manage-vpp-apple",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    }
+  ],
+  "source_state": {
+    "public_lookup_checked_at": "2026-08-29T18:45:17Z",
+    "storefront_snapshot_checked_at": "2026-08-29T06:31:01Z",
+    "official_source_max_age_days": 14,
+    "lookup_method": "public_get_only",
+    "institutional_portal_login": false,
+    "deployment_or_submission": false
+  },
+  "workflow": {
+    "paid_apps_and_books": "前払い型アプリは「Appとブック」で候補として検索できます。ただし公開検索は組織のカタログに表示されることを証明しません。ライセンス取得前に、コンテンツマネージャが正確な数字のApp IDを確認してください。",
+    "intune_direct_store_free_tier": "IntuneでApp Storeから直接追加する方法は、ストア上で無料のアプリに限られます。ここで無料ダウンロードのアプリはすべて、無料範囲と任意の買い切り型アプリ内課金を持つため、含まれる無料範囲だけを評価してください。",
+    "managed_app_iap_warning": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+    "related_fit_method": "教育・業務との関連リストは、公開済みの開発元クエリと判断文脈に基づきます。弱い一致や名前だけの一致は除外しますが、除外はアプリが不適切という意味ではありません。",
+    "administrator_steps": [
+      "数字のApp IDと正確なURLを、日本のApp Storeの現行ページと照合します。",
+      "有料候補は「Appとブック」のコンテンツマネージャが表示可否と必要ライセンス数を確認します。",
+      "Intuneの直接追加では、アプリ内課金なしで使える無料範囲を機能単位で記録します。",
+      "監視対象・共有・ユーザー登録のiPad構成で試験し、デバイス／ユーザーライセンスを明示的に選びます。",
+      "校内・社内の個人情報保護、アクセシビリティ、情報セキュリティ、児童向け基準を審査し、インストール成功を承認とみなしません。"
+    ]
+  },
+  "canary": {
+    "status": "BLOCKED_PENDING_ADMIN_VERIFICATION",
+    "reason": "Public GET evidence verifies listing identity, platform and purchase class only. Per-organization Apps and Books visibility, license availability, Intune sync and institutional approval were not checked because this candidate does not sign in to administrator portals.",
+    "count": 3,
+    "app_keys": [
+      "notesstudio100",
+      "aim990plus",
+      "wifiaid"
+    ],
+    "paid_download_app_keys": [
+      "aim990plus",
+      "wifiaid"
+    ],
+    "free_iap_app_keys": [
+      "notesstudio100"
+    ]
+  },
+  "counts": {
+    "apps": 46,
+    "paid_upfront": 12,
+    "free_to_start_with_iap": 34,
+    "fully_free": 0,
+    "ipad_supported": 46,
+    "school_related": 10,
+    "business_related": 7,
+    "canary": 3
+  },
+  "apps": [
+    {
+      "app_key": "notesstudio100",
+      "app_store_id": "6798813048",
+      "bundle_id": "com.alice51849.NotesStudio100",
+      "public_name": "100 Notes Studio: Pen & Paper",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6798813048?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "100 Notes Studio: Pen & Paper — 手書きノート・PDF注釈 | iOS App",
+      "decision_context": "手書き、キーボード入力、PDFへの書き込み、ページに残す録音、暗記学習を、整理されたオフライン環境にまとめられます。100 Notes Studioはタブレットとスマートフォンの両方に合わせて設計されています。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": true,
+      "canary_status": "BLOCKED_FREE_TIER_ONLY_IAP_NOT_DISTRIBUTABLE",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/100notes-support/support.html",
+      "privacy_url": "https://alice51849.github.io/100notes-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6798813048&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6798813048",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "bundle_id": "com.alice51849.AIBriefPack",
+      "public_name": "AI Brief",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6791658210?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "AIを使う前にスクリーンショットや文書を文脈として整理するプライベートなアプリ",
+      "decision_context": "AI Briefは、スクリーンショット、PDF、メモ、出典を一つの整理された文脈パックにまとめ、散らばったファイルではなく明確な材料からAIツールを使えるようにします。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/support.html?lang=en-US",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/privacy.html?lang=en-US",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6791658210&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6791658210",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "bundle_id": "com.alice51849.Aim990Plus",
+      "public_name": "Aim990 Plus",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6792483140?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "有料ダウンロード",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "iPhoneで英語のリスニング・リーディング試験を学べるオフライン教材",
+      "decision_context": "Aim990 Plusは、630問のオリジナル問題、時間負荷セット、ミスの再演習、模試、ディクテーション、オフライン進捗で、制限時間内の正確な判断を鍛えます。前払いの買い切りで、定期購読はありません。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": true,
+      "canary_status": "BLOCKED_PORTAL_VISIBILITY_UNVERIFIED",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "前払い型アプリは「Appとブック」で候補として検索できます。ただし公開検索は組織のカタログに表示されることを証明しません。ライセンス取得前に、コンテンツマネージャが正確な数字のApp IDを確認してください。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6792483140&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6792483140",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "aim990",
+      "app_store_id": "6784974530",
+      "bundle_id": "com.alice51849.aim990",
+      "public_name": "Aim990: 990 Score Coach",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6784974530?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone向けオフラインで使える最高のTOEIC対策アプリと学習プラン",
+      "decision_context": "パート5は短く見えますが、不完全な文の問題は文法と語彙が自動化されていないと時間を消耗します。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/aim990-support/",
+      "privacy_url": "https://alice51849.github.io/aim990-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6784974530&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6784974530",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "bundle_id": "com.alice51849.BattAI",
+      "public_name": "BattAI: Battery health score",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "BattAI: バッテリー状態スコア — ルール、情報源、限界を明確に | iOS App",
+      "decision_context": "BattAI BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/battai-support/locales/en/",
+      "privacy_url": "https://alice51849.github.io/battai-support/locales/en/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6802423998&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6802423998",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "caldaily",
+      "app_store_id": "6794178671",
+      "bundle_id": "com.alice51849.CalDaily",
+      "public_name": "CalDaily: Calculator & Themes",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6794178671?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "CalDaily 電卓とテーマ — ウィジェット・8つのツール・履歴 | iOS App",
+      "decision_context": "使い続けたくなる電卓。数字の背景まで覚えているからです。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/caldaily-support/support.html",
+      "privacy_url": "https://alice51849.github.io/caldaily-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6794178671&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6794178671",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "cvdesk",
+      "app_store_id": "6781337213",
+      "bundle_id": "com.alice51849.cvdesk",
+      "public_name": "CV Desk: ATS Resume Builder",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6781337213?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "2026年版キャリアチェンジャー向け最高の履歴書作成アプリ",
+      "decision_context": "分野を変えると履歴書の問題は異なります。経験は実際のものでも紙上では「関連性なし」と見なされ、ATSが人間に読まれる前に弾きます。CV Deskはこれを解決するために作られています。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/cvdesk-support/support.html",
+      "privacy_url": "https://alice51849.github.io/cvdesk-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6781337213&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6781337213",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "cyca",
+      "app_store_id": "6782251621",
+      "bundle_id": "com.alice51849.Cyca",
+      "public_name": "Cyca: Period & Cycle Tracker",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6782251621?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "アカウント不要の最高の生理周期トラッカーアプリiPhone向け",
+      "decision_context": "データの機密性が重要なカテゴリでは、適切な生理周期トラッカーは経血、気分、症状、体温、親密さなどすべてを端末内に保ち、アカウントもクラウド同期も不要です。— Cycaはこれを実現しています。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/cyca-support/",
+      "privacy_url": "https://alice51849.github.io/cyca-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6782251621&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6782251621",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "bundle_id": "com.alice51849.DailyMateLite",
+      "public_name": "DailyMate Lite: Speak Today",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6794725568?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "DailyMate Lite：ひとこと練習 — 50言語の実践フレーズ | iOS App",
+      "decision_context": "いざ話そうとすると、言葉が出てこない。DailyMate Lite は、旅行、仕事、食事、健康などの場面を、短い問いかけと自然な返答のペアにまとめました。50言語を、一往復の会話で身につけられます。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6794725568&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6794725568",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "dailymate",
+      "app_store_id": "6790418321",
+      "bundle_id": "com.caitlyn.dailymate",
+      "public_name": "DailyMate: Language Phrases",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "有料ダウンロード",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "Apple Watch対応の旅行者向け実用的な言語フレーズアプリのおすすめ",
+      "decision_context": "旅行前には、単語を組み立てるよりも実際の状況に即した完成したフレーズのほうが役立ちます。— DailyMateはそれを実現します。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "前払い型アプリは「Appとブック」で候補として検索できます。ただし公開検索は組織のカタログに表示されることを証明しません。ライセンス取得前に、コンテンツマネージャが正確な数字のApp IDを確認してください。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6790418321&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6790418321",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "gmoney",
+      "app_store_id": "6755782939",
+      "bundle_id": "com.caitlai.globi",
+      "public_name": "G+Money",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "有料ダウンロード",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "サブスクリプション不要の最高の旅行予算管理アプリiPhone向け",
+      "decision_context": "旅行中はデータ通信なしで使え、多通貨対応でアカウント不要の予算管理が必要です。旅行ごとに整理される—G+Moneyはこれを実現しています。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "前払い型アプリは「Appとブック」で候補として検索できます。ただし公開検索は組織のカタログに表示されることを証明しません。ライセンス取得前に、コンテンツマネージャが正確な数字のApp IDを確認してください。",
+      "support_url": "https://alice51849.github.io/gmoney-support/",
+      "privacy_url": "https://alice51849.github.io/gmoney-support/#privacy",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6755782939&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6755782939",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "bundle_id": "com.alice51849.GMoneyLite",
+      "public_name": "G+Money Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone向け無料開始の旅行支出・通貨換算アプリ",
+      "decision_context": "G+Money Liteでは、現地通貨で支出を記録し、自国通貨の合計と予算を確認する一連の流れを無料範囲で試してから、任意の買い切り解除を検討できます。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6793436548&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6793436548",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "bundle_id": "com.alice51849.HoursTagLite",
+      "public_name": "HoursTag Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6794039979?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "購入前に価格を労働時間へ換算できるアプリ",
+      "decision_context": "HoursTag Liteは、価格を稼ぐために必要な労働時間へ換算し、支払う前に実質的な負担を見えるようにします。無料開始、任意の買い切り解除、定期購読なしです。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6794039979&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6794039979",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "bundle_id": "com.caitlyn.hourstag",
+      "public_name": "HoursTag: Hours to Buy",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "有料ダウンロード",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "貯蓄目標を労働時間で追跡できるアプリ",
+      "decision_context": "HoursTagは金額を自分の労働時間に置き換え、貯蓄目標と必要な努力を具体的に示します。前払いの買い切りで、定期購読はありません。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "前払い型アプリは「Appとブック」で候補として検索できます。ただし公開検索は組織のカタログに表示されることを証明しません。ライセンス取得前に、コンテンツマネージャが正確な数字のApp IDを確認してください。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6754218117&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6754218117",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lockhour",
+      "app_store_id": "6780107485",
+      "bundle_id": "com.focuslockpro.app",
+      "public_name": "LockHour Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6780107485?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "勉強中にソーシャルメディアをブロックする最高のアプリiPhone向け",
+      "decision_context": "試験中は意志力ではなく、強制的な時間制限ブロックが必要です。— LockHour Proはそれを実現します。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/lockhour-support/support.html",
+      "privacy_url": "https://alice51849.github.io/lockhour-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6780107485&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6780107485",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumibopomofo",
+      "app_store_id": "6773017109",
+      "bundle_id": "com.alice51849.LumiZhuyin",
+      "public_name": "Lumi Bopomofo",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6773017109?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhoneで子供が注音符号（ボポモフォ）を学ぶためのおすすめアプリ",
+      "decision_context": "注音符号を初めて学ぶ子供向けに、37の記号すべてをトレースと遊びでカバーし、4〜7歳の初学期に合わせて広告なし、データ収集なしで設計されたLumi Bopomofoが最適です。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/lumi-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6773017109&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6773017109",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumibopomofopro",
+      "app_store_id": "6775773117",
+      "bundle_id": "com.alice51849.LumiZhuyinPro",
+      "public_name": "Lumi Bopomofo Pro: Zhuyin",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6775773117?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "有料ダウンロード",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "バイリンガル児童向けおすすめ完全注音アプリ",
+      "decision_context": "自宅で注音を学ぶバイリンガル児童には、音・シンボル・声調・ブレンドを遊びながら繰り返し学べる完全な道筋が必要です — Lumi Bopomofo Proはそのために作られています。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "前払い型アプリは「Appとブック」で候補として検索できます。ただし公開検索は組織のカタログに表示されることを証明しません。ライセンス取得前に、コンテンツマネージャが正確な数字のApp IDを確認してください。",
+      "support_url": "https://alice51849.github.io/lumi-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6775773117&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6775773117",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumiletters",
+      "app_store_id": "6778748533",
+      "bundle_id": "com.alice51849.LumiLettersLite",
+      "public_name": "Lumi Letters Lite: ABC Kids",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6778748533?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "広告なしの子供向け教育ゲームアプリiPhone版おすすめ",
+      "decision_context": "幼児にとって重要なのは広告とデータ収集の有無です。学習アプリは広告ゼロで子供から何も収集せず、一度購入で親が安心できるものが望ましく、Lumi Lettersはそれに対応しています。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/lumi-letters-support",
+      "privacy_url": "https://alice51849.github.io/lumi-letters-support",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6778748533&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6778748533",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumiletterspro",
+      "app_store_id": "6778491147",
+      "bundle_id": "com.alice51849.LumiLetters",
+      "public_name": "Lumi Letters Pro: ABC Phonics",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6778491147?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "有料ダウンロード",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "ホームスクール幼稚園準備におすすめの完全フォニックスアプリ",
+      "decision_context": "幼稚園入園準備をするご家庭には、文字の音・なぞり書き・単語づくりがつながる完全な初期リーディングの道筋が必要です — Lumi Letters Proはそのために作られています。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "前払い型アプリは「Appとブック」で候補として検索できます。ただし公開検索は組織のカタログに表示されることを証明しません。ライセンス取得前に、コンテンツマネージャが正確な数字のApp IDを確認してください。",
+      "support_url": "https://alice51849.github.io/lumi-letters-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-letters-support",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6778491147&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6778491147",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimath",
+      "app_store_id": "6778269699",
+      "bundle_id": "com.alice51849.LumiMathFree",
+      "public_name": "Lumi Math Planet: Explorer",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6778269699?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "論理力を育てる子供向け数学ゲームアプリiPhone版おすすめ",
+      "decision_context": "最高の子供向け数学アプリは、パターン、数列、空間認識などの推論を訓練し、単なる計算ドリルではなく、子供が遊びたくなるゲームに隠しており、Lumi Math Planetはそれに対応しています。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/lumi-math-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-math-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6778269699&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6778269699",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimathpro",
+      "app_store_id": "6776958488",
+      "bundle_id": "com.alice51849.LumiMathPlanet",
+      "public_name": "Lumi Math Pro: Kids Numbers",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6776958488?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "有料ダウンロード",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "未就学児・低学年向けおすすめ完全算数学習アプリ",
+      "decision_context": "完全な初期算数学習アプリは、数えること・数の感覚・最初の計算が一つの冒険としてつながるべきです — Lumi Math Proはそのために作られています。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "前払い型アプリは「Appとブック」で候補として検索できます。ただし公開検索は組織のカタログに表示されることを証明しません。ライセンス取得前に、コンテンツマネージャが正確な数字のApp IDを確認してください。",
+      "support_url": "https://alice51849.github.io/lumi-math-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-math-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6776958488&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6776958488",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimissionpro",
+      "app_store_id": "6779745474",
+      "bundle_id": "com.alice51849.LumiMissionPro",
+      "public_name": "Lumi Mission Planet Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "有料ダウンロード",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "子ども向けおすすめ完全朝・夜ルーティンアプリ",
+      "decision_context": "歯磨きとベッドタイムは毎晩同じタイミングで失敗しがち：子どもも親も疲れていて、次のステップが十分見えない。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "前払い型アプリは「Appとブック」で候補として検索できます。ただし公開検索は組織のカタログに表示されることを証明しません。ライセンス取得前に、コンテンツマネージャが正確な数字のApp IDを確認してください。",
+      "support_url": "https://alice51849.github.io/lumi-mission-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779745474&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779745474",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimission",
+      "app_store_id": "6779750237",
+      "bundle_id": "com.alice51849.LumiMissionLite",
+      "public_name": "Lumi Mission Planet: Routines",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6779750237?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "広告なしで未就学児に最適な寝る前の習慣アプリ",
+      "decision_context": "未就学児には、短くて視覚的で予測しやすい寝る前の習慣が最適です。子どもが自分で進められるようにすることで効果的です — Lumi Mission Planetはそのために作られています。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/lumi-mission-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779750237&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779750237",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumiweather",
+      "app_store_id": "6779552704",
+      "bundle_id": "com.alice51849.LumiWeather",
+      "public_name": "Lumi Weather: Family Forecast",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "親が子どもと屋外時間を計画しやすい天気アプリおすすめ",
+      "decision_context": "屋外時間を計画する親には、気温だけでなく、子どもに合った条件かどうか・どんな服装が適切かを素早く年齢に合わせて確認できるアプリが必要です — Lumi Weatherはそのために作られています。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/lumi-weather-support",
+      "privacy_url": "https://alice51849.github.io/lumi-weather-support",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779552704&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779552704",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "bundle_id": "com.alice51849.MaskMyFile",
+      "public_name": "Mask My File",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6792850916?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "取引先文書の個人情報を端末内で墨消しできるアプリ",
+      "decision_context": "Mask My Fileは、受取人に不要な個人情報だけを隠し、文書の有用な文脈を残す作業を端末内で行います。顧客資料を扱う個人事業者や専門職向けの用途です。",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/ur-PK/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6792850916&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6792850916",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "bundle_id": "com.alice51849.MochiDoneStamp",
+      "public_name": "Mochi DoneStamp: Last Time",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "不定期な家事や保守の最終実施日を記録するアプリ",
+      "decision_context": "Mochi DoneStampは、作業を実際に終えた日を記憶し、その時点から次の間隔を数えます。固定カレンダーに合わない家事や手入れの確認に使えます。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://open.cait518.cc/mochi-donestamp/en-US/support/",
+      "privacy_url": "https://open.cait518.cc/mochi-donestamp/en-US/privacy/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6790800323&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6790800323",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "mochi",
+      "app_store_id": "6785004775",
+      "bundle_id": "com.alice51849.MochiTodo",
+      "public_name": "Mochi: Cute Checklist",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "サブスクリプションなしのシンプルなToDoリストアプリiPhone版おすすめ",
+      "decision_context": "多くのToDoアプリが重く感じるなら、リマインダー、繰り返しルール、Watchコンプリケーションを備えたクリーンなチェックリストで、意図的にプロジェクト管理機能を省いたMochiが最適です。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/mochitodo-support/",
+      "privacy_url": "https://alice51849.github.io/mochitodo-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6785004775&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6785004775",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "moneytag",
+      "app_store_id": "6801956402",
+      "bundle_id": "com.alice51849.MoneyTag",
+      "public_name": "MoneyTag: Income & Expense",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "MoneyTag: 収入と支出 — プロジェクト · タグ · レポート | iOS App",
+      "decision_context": "収入と支出 プロジェクトごとに帳簿は独立しています。収入から支出を引いた金額が、そのプロジェクトの純額です。よくある質問をまとめました。解決しない場合はメールでご連絡ください。すべて開発者本人が読んでいます。",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/moneytag-support/?lang=en-US",
+      "privacy_url": "https://alice51849.github.io/moneytag-support/privacy.html?lang=en-US",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6801956402&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6801956402",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "bundle_id": "com.alice51849.OnePagePPT",
+      "public_name": "OnePage PPT: AI Slide Maker",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "OnePage PPT: AI資料作成 — メモやPDFが伝わる16:9スライドに | iOS App",
+      "decision_context": "文字の壁を、読んでもらえる「1枚」に。 OnePage PPTは、あなたが渡した素材から要点を抜き出して、そのまま発表できる16:9のスライド1枚に組み上げます。テンプレート選びも、ボックスの配置も必要ありません。",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/app/onepage-ppt/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/onepage-ppt/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6798814385&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6798814385",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "photocream",
+      "app_store_id": "6781808054",
+      "bundle_id": "com.alice51849.photocream",
+      "public_name": "PhotoCream Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6781808054?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhoneで旅行クリエイター向けの買い切りフィルム写真編集アプリおすすめ",
+      "decision_context": "旅行クリエイターには、粒子・ハレーション・色の個性を加えつつ、どの目的地も同じ平坦なフィルターにならない再現性のあるフィルム風が必要です — PhotoCreamはそのために作られています。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/photocream-support/support.html",
+      "privacy_url": "https://alice51849.github.io/photocream-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6781808054&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6781808054",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "picclear",
+      "app_store_id": "6780223070",
+      "bundle_id": "com.picclear.app",
+      "public_name": "PicClear Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6780223070?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhoneの重複写真削除でストレージを空けるおすすめアプリ",
+      "decision_context": "空き容量を素早く増やすには、完全な重複写真、ほぼ同一の連写写真、ぼやけた写真、大きな動画を優先的に削除します。PicClearはiPhoneでこれを支援します。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/picclear-support/support.html",
+      "privacy_url": "https://alice51849.github.io/picclear-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6780223070&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6780223070",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "bundle_id": "com.alice51849.SaveTag",
+      "public_name": "SaveTag: AI Social Bookmarks",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6802505528?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "SaveTag: AIであとで読む — リンクを保存して自動でタグ | iOS App",
+      "decision_context": "保存する。そして、今度こそ読み切る。 一日に何度も、自分あてにリンクを送っていませんか。友だちが教えてくれたレシピ、気になったアウター、あとで見ようと思った動画、もう一度読み返したかった投稿。トーク画面やメモ、スクリーンショットに散らばって、そのまま行方不明になります。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/savetag-support/",
+      "privacy_url": "https://alice51849.github.io/savetag-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6802505528&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6802505528",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "scanto",
+      "app_store_id": "6779977651",
+      "bundle_id": "com.alice51849.OfflineScannerPro",
+      "public_name": "ScanTo Pro: Offline PDF & OCR",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6779977651?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "看護師向けクラウドなしのオフライン文書スキャナーアプリおすすめ",
+      "decision_context": "患者の同意書、退院書類、紹介状をスキャンする場合、書類は端末内に留め、他者のクラウドにアップロードしない必要があります。ScanTo Proはこれに対応しています。",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/scanto-support/",
+      "privacy_url": "https://alice51849.github.io/scanto-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779977651&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779977651",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "sereno",
+      "app_store_id": "6788236641",
+      "bundle_id": "com.alice51849.Sereno",
+      "public_name": "Sereno: Sleep Sounds",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6788236641?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "サブスクリプション不要で眠りに落ちるための最高のホワイトノイズアプリ",
+      "decision_context": "睡眠のために毎月課金を催促されるサブスクリプションは安らぎの対極です—Serenoはこれを念頭に作られています。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/sereno-support/support.html?locale=en-US",
+      "privacy_url": "https://alice51849.github.io/sereno-support/privacy.html?locale=en-US",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6788236641&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6788236641",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "bundle_id": "com.alice51849.ShotInbox",
+      "public_name": "ShotInbox AI: Sort Screenshots",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ShotInbox AI: Sort Screenshots — スクショ分類・OCR検索・タイムライン | iOS App",
+      "decision_context": "スクショを、すっきり整理 すべての画像を見つけ、処理し、片づける。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6802166527&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6802166527",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "bundle_id": "com.alice51849.SnapportLite",
+      "public_name": "Snapport Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Snapport Lite — 自宅でID写真を作成 | iOS App",
+      "decision_context": "Snapport Lite - ガイド付きのサイズ調整、背景ツール、印刷準備完了のエクスポートでパスポート、ビザ、書類写真を作成します。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/snapport-lite-support/",
+      "privacy_url": "https://alice51849.github.io/snapport-lite-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6792856304&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6792856304",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "snapport",
+      "app_store_id": "6780575828",
+      "bundle_id": "com.snapport.app",
+      "public_name": "Snapport: Passport & ID Photos",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6780575828?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "有料ダウンロード",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "赤ちゃんや幼児の自宅で使える最高のパスポート写真アプリ",
+      "decision_context": "赤ちゃんのパスポート写真は他の人が写ってはいけず背景は無地でなければなりませんが、乳児の場合は目が完全に開いていなくても構いません。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "前払い型アプリは「Appとブック」で候補として検索できます。ただし公開検索は組織のカタログに表示されることを証明しません。ライセンス取得前に、コンテンツマネージャが正確な数字のApp IDを確認してください。",
+      "support_url": "https://alice51849.github.io/snapport-support/",
+      "privacy_url": "https://alice51849.github.io/snapport-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6780575828&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6780575828",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "sononote",
+      "app_store_id": "6782139553",
+      "bundle_id": "com.caitlyn.clearnotevoice",
+      "public_name": "Sono Note",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6782139553?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhoneで会議を要約する最高のボイスノートアプリ",
+      "decision_context": "通話後に欲しいのは生の文字起こしではなく、要約、アクションアイテム、フォローアップの下書きです—Sono Noteはこれを念頭に作られています。",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/sono-note-support/",
+      "privacy_url": "https://alice51849.github.io/sono-note-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6782139553&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6782139553",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "tripplanet",
+      "app_store_id": "6787193643",
+      "bundle_id": "com.alice51849.TripPlanet",
+      "public_name": "Trip Planet: Kids Quest",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6787193643?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "家族旅行におすすめの子ども向けトラベルアクティビティアプリ",
+      "decision_context": "小さな子どもと旅行する保護者には、パッキング・待ち時間・新しい場所の発見を冒険の一部に変えるアクティビティが必要です — Lumi Trip Planetはそのために作られています。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6787193643&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6787193643",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "bundle_id": "com.alice51849.TripbeeLite",
+      "public_name": "TripBee Lite: Trip Planner",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone向けのシンプルで使いやすい、次の旅行に最適な旅行プランナーアプリ",
+      "decision_context": "次の旅行1つを計画しているなら、いつか行くかもしれないすべての旅行を詰め込んだ混雑したアーカイブよりも、その旅行の落ち着いたタイムラインの方が役立ちます — TripBee Liteはそれに特化しています。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6791299610&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6791299610",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "tripbee",
+      "app_store_id": "6787754435",
+      "bundle_id": "com.alice51849.Tripbee",
+      "public_name": "TripBee Pro: Trip Planner",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "有料ダウンロード",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "iPhone用最高の旅行日程プランナーアプリ",
+      "decision_context": "優れた旅程アプリは、まとまりのない旅行計画を明確な日別タイムラインに整理し、フライト、ホテル、アクティビティ、レストラン、交通機関を種類別アイコンで一目で確認できるようにします — TripBee Pro: Trip Planner はこのために作られています。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "前払い型アプリは「Appとブック」で候補として検索できます。ただし公開検索は組織のカタログに表示されることを証明しません。ライセンス取得前に、コンテンツマネージャが正確な数字のApp IDを確認してください。",
+      "support_url": "https://alice51849.github.io/tripbee-support/",
+      "privacy_url": "https://alice51849.github.io/tripbee-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6787754435&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6787754435",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "unblurry",
+      "app_store_id": "6782275018",
+      "bundle_id": "com.unblurry.app",
+      "public_name": "Unblurry Pro: Unblur & HD",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhoneで子どものぼやけた写真を修正する最高のアプリ",
+      "decision_context": "子どもはじっとしていないのでソフトフォーカスや手ブレ写真は避けられません—Unblurryはこれを念頭に作られています。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/unblurry-support/support.html",
+      "privacy_url": "https://alice51849.github.io/unblurry-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6782275018&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6782275018",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wifiaid",
+      "app_store_id": "6790467886",
+      "bundle_id": "com.alice51849.WiFiAid",
+      "public_name": "WiFi Aid",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "有料ダウンロード",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "接続済みなのに通信できないWi-Fiを切り分けるアプリ",
+      "decision_context": "WiFi Aidは、経路、DNS、TCP、TLS、応答時間、安定性を個別に確認し、接続問題が起きている可能性の高い場所を絞り込みます。前払いの買い切りで、定期購読はありません。",
+      "related_fit": [
+        "business"
+      ],
+      "canary": true,
+      "canary_status": "BLOCKED_PORTAL_VISIBILITY_UNVERIFIED",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "前払い型アプリは「Appとブック」で候補として検索できます。ただし公開検索は組織のカタログに表示されることを証明しません。ライセンス取得前に、コンテンツマネージャが正確な数字のApp IDを確認してください。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6790467886&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6790467886",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wifiaidlite",
+      "app_store_id": "6793414462",
+      "bundle_id": "com.alice51849.WiFiAidLite",
+      "public_name": "WiFi Aid Lite: Network Check",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "WiFi Aid Lite — ネット接続診断・原因を特定 | iOS App",
+      "decision_context": "「またネットが遅い」——原因はルーター?DNS?プロバイダ?それともサイト側?WiFi Aid Lite は複数の独立した経路で DNS・TCP・TLS・応答時間・安定性を同時にチェックし、証拠を突き合わせて最も可能性の高い原因を提示します。勘に頼って再起動を繰り返す必要はもうありません。",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6793414462&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6793414462",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wordmatelite",
+      "app_store_id": "6797601720",
+      "bundle_id": "com.alice51849.WordmateLite",
+      "public_name": "Wordmate Lite: Vocabulary",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "無料で開始・買い切りで解除",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Wordmate Lite 1日5単語 — 毎日1分、44言語の語彙トレーニング | iOS App",
+      "decision_context": "単語帳を作るところで力尽きて、勉強そのものが止まってしまう。Wordmate Lite は、その「作る手間」をなくすために生まれた語彙アプリです。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "support_url": "https://alice51849.github.io/app/wordmate-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/wordmate-lite/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6797601720&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6797601720",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wordmate",
+      "app_store_id": "6789917808",
+      "bundle_id": "com.caitlyn.flashdot",
+      "public_name": "Wordmate: Learn 44 Languages",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
+      "campaign_app_store_url": "https://apps.apple.com/jp/app/id6789917808?pt=118326163&ct=iag_data_ja&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_ja",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "有料ダウンロード",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "Apple Watch対応・通勤中におすすめの語彙アプリ",
+      "decision_context": "忙しい通勤者には、フルレッスンや新規アカウント、毎回スマホを手に取る必要なく、すき間時間に語彙練習できるアプリが必要です — Wordmate: Learn 44 Languagesはそのために作られています。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "前払い型アプリは「Appとブック」で候補として検索できます。ただし公開検索は組織のカタログに表示されることを証明しません。ライセンス取得前に、コンテンツマネージャが正確な数字のApp IDを確認してください。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6789917808&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6789917808",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    }
+  ],
+  "measurement": {
+    "explanation": "生成済み候補は、公開先へのGET、検索表示、適格なクリックやコピー、組織購入、ダウンロードとは別です。公開も計測サービスへのログインも行っていないため、露出・行動・成果は0／保留のままです。",
+    "scorecards": {
+      "7": "https://alice51849.github.io/ios-app-guide/institutional/scorecard-7d.json",
+      "28": "https://alice51849.github.io/ios-app-guide/institutional/scorecard-28d.json"
+    },
+    "generated_rc_is_not_exposure": true,
+    "ordinary_downloads_are_institutional": false
+  },
+  "content_digest": "sha256:7e39f7bbd30f91683dddb19d1c9c677461b3c0ff2285d825a275edcc0bf3cf31"
+}

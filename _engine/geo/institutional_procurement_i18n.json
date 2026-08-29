@@ -1,0 +1,1518 @@
+{
+  "schema_version": 1,
+  "source_locale": "en-US",
+  "localizations": {
+    "ar-SA": {
+      "title": "التحقق المسبق من شراء تطبيقات iOS للمؤسسات",
+      "intro": "مرجع أولي غير تصنيفي لمسؤولي Apple School Manager وApple Business Manager وMicrosoft Intune لتقييم 46 تطبيقًا متاحًا وموثّق الهوية في App Store.",
+      "paid": "يمكن البحث عن التطبيق المدفوع مقدمًا كمرشح في «التطبيقات والكتب». لا يثبت البحث العام ظهوره في كتالوج مؤسستك؛ تحقّق من رقم التطبيق العددي قبل الحصول على التراخيص.",
+      "direct": "طريقة إضافة تطبيق iOS مباشرة من المتجر في Intune مخصصة للتطبيقات المجانية. التطبيقات المجانية للتنزيل هنا تبدأ مجانًا وتحتوي على فتح اختياري داخل التطبيق، لذا قيّم المستوى المجاني فقط.",
+      "iap": "وفقًا لوثائق Apple، لا تتوافق المشتريات داخل التطبيق مع الشراء بالكميات أو التطبيقات المُدارة أو حسابات Apple المُدارة. لا تعتبر إسناد التطبيق إلى الجهاز فتحًا كاملًا. وعند الحاجة إلى الفتح الكامل، يجب على كل مستخدم شراؤه بشكل منفصل باستخدام حساب Apple شخصي يمكنه إجراء عمليات الشراء داخل التطبيق.",
+      "fit": "تستند قوائم الصلة بالتعليم والأعمال إلى استعلام الناشر وسياق القرار المنشورين. تُحذف المطابقة الضعيفة أو المبنية على الاسم فقط، ولا يعني الحذف أن التطبيق غير مناسب.",
+      "disclosure": "هذه قائمة أولية من Lumi Studio وليست اعتمادًا أو توصية من Apple أو Microsoft، ولا موافقة مدرسة أو إدارة أجهزة، ولا إثباتًا على الظهور المؤسسي أو وجود خصم. المرجع النهائي هو المتجر المباشر وسياسة مؤسستك.",
+      "measurement": "إنشاء نسخة مرشحة لا يساوي طلب GET منشورًا أو ظهورًا في البحث أو نقرة أو نسخًا مؤهلًا أو شراءً أو تنزيلًا مؤسسيًا. لم يحدث نشر أو تسجيل دخول للقياس؛ تبقى مؤشرات التعرض والإجراء والنتيجة 0/قيد الانتظار.",
+      "steps": [
+        "طابق رقم App ID العددي والرابط الدقيق مع صفحة App Store المباشرة.",
+        "اختر مسار «التطبيقات والكتب» للتطبيق المدفوع، أو تقييم Intune المباشر للمستوى المجاني فقط.",
+        "نفّذ تجربة محدودة وفق سياسة المؤسسة، ولا تفترض أن إسناد الجهاز يفتح مشتريات داخل التطبيق."
+      ],
+      "labels": {
+        "roster": "قائمة المسؤول: 46 تطبيقًا موثّقًا",
+        "platform": "المنصة",
+        "purpose": "الغرض وسياق القرار",
+        "limits": "القيود",
+        "support": "الدعم",
+        "privacy": "الخصوصية",
+        "source": "المصدر",
+        "last_checked": "آخر تحقق",
+        "copy": "نسخ",
+        "copied": "تم النسخ",
+        "school": "صلة تعليمية",
+        "business": "صلة بالأعمال",
+        "not_shortlisted": "غير مدرج في قائمة الصلة"
+      }
+    },
+    "bn-BD": {
+      "title": "প্রাতিষ্ঠানিক iOS অ্যাপ ক্রয়ের প্রাক্‌যাচাই",
+      "intro": "Apple School Manager, Apple Business Manager ও Microsoft Intune প্রশাসকদের জন্য App Store-এ পরিচয় ও লাইভ অবস্থা যাচাই করা ৪৬টি অ্যাপের প্রথম-পক্ষীয়, র‍্যাঙ্কিংবিহীন মূল্যায়নসূত্র।",
+      "paid": "আগাম মূল্য-পরিশোধিত অ্যাপকে Apps and Books-এ প্রার্থী হিসেবে খোঁজা যায়। পাবলিক লুকআপ আপনার প্রতিষ্ঠানের ক্যাটালগে উপস্থিতি প্রমাণ করে না; লাইসেন্স নেওয়ার আগে নির্ভুল সংখ্যাসূচক App ID মিলিয়ে নিন।",
+      "direct": "Intune-এর সরাসরি iOS Store app পদ্ধতি শুধু বিনামূল্যের অ্যাপের জন্য। এখানে বিনামূল্যে ডাউনলোডযোগ্য প্রতিটি অ্যাপ ফ্রি-টু-স্টার্ট এবং ঐচ্ছিক এককালীন ইন-অ্যাপ আনলকযুক্ত, তাই কেবল অন্তর্ভুক্ত ফ্রি স্তর মূল্যায়ন করুন।",
+      "iap": "Apple-এর নথি অনুযায়ী ইন-অ্যাপ ক্রয় ভলিউম ক্রয়, ম্যানেজড অ্যাপ বা Managed Apple Account-এর সঙ্গে সামঞ্জস্যপূর্ণ নয়। ডিভাইস অ্যাসাইনমেন্টকে পূর্ণ আনলক বলা যাবে না। সম্পূর্ণ আনলক প্রয়োজন হলে, প্রতিটি ব্যবহারকারীকে এমন ব্যক্তিগত Apple Account দিয়ে আলাদাভাবে কিনতে হবে যা অ্যাপের মধ্যের কেনাকাটা করতে পারে।",
+      "fit": "শিক্ষা ও ব্যবসার সম্পর্কিত তালিকা প্রকাশিত publisher query ও decision context থেকে তৈরি। দুর্বল বা শুধু নামভিত্তিক মিল বাদ যায়; বাদ পড়া মানে অ্যাপটি অনুপযুক্ত নয়।",
+      "disclosure": "এটি Lumi Studio-এর প্রথম-পক্ষীয় তালিকা; Apple বা Microsoft-এর সনদ বা অনুমোদন, স্কুল বা MDM অনুমোদন, প্রাতিষ্ঠানিক দৃশ্যমানতা কিংবা ছাড়ের প্রমাণ নয়। লাইভ স্টোর ও আপনার প্রতিষ্ঠানের নীতিই চূড়ান্ত।",
+      "measurement": "তৈরি করা release candidate কোনো deployed GET, search impression, যোগ্য click/copy, প্রাতিষ্ঠানিক ক্রয় বা download নয়। কোনো deployment বা measurement login করা হয়নি; exposure, action ও outcome ০/PENDING থাকে।",
+      "steps": [
+        "সংখ্যাসূচক App ID ও নির্ভুল URL লাইভ App Store পাতার সঙ্গে মিলিয়ে নিন।",
+        "মূল্য-পরিশোধিত অ্যাপে Apps and Books, আর ফ্রি স্তরের পরীক্ষায় Intune direct-store পথ বেছে নিন।",
+        "প্রতিষ্ঠানের নীতি মেনে সীমিত পাইলট করুন এবং device assignment-কে IAP আনলক ধরে নেবেন না।"
+      ],
+      "labels": {
+        "roster": "৪৬টি যাচাইকৃত অ্যাপের প্রশাসক তালিকা",
+        "platform": "প্ল্যাটফর্ম",
+        "purpose": "উদ্দেশ্য ও সিদ্ধান্তের প্রেক্ষাপট",
+        "limits": "সীমাবদ্ধতা",
+        "support": "সহায়তা",
+        "privacy": "গোপনীয়তা",
+        "source": "উৎস",
+        "last_checked": "সর্বশেষ যাচাই",
+        "copy": "কপি",
+        "copied": "কপি হয়েছে",
+        "school": "শিক্ষা-সম্পর্কিত",
+        "business": "ব্যবসা-সম্পর্কিত",
+        "not_shortlisted": "সম্পর্কিত সংক্ষিপ্ত তালিকায় নেই"
+      }
+    },
+    "ca": {
+      "title": "Comprovació prèvia per a la compra institucional d’apps iOS",
+      "intro": "Referència de primera part i sense rànquing perquè els administradors d’Apple School Manager, Apple Business Manager i Microsoft Intune avaluïn 46 fitxes actives i verificades de l’App Store.",
+      "paid": "Una app de pagament inicial es pot cercar com a candidata a Apps i llibres. La consulta pública no demostra que aparegui al catàleg de l’organització; confirmeu l’App ID numèric exacte abans d’adquirir llicències.",
+      "direct": "El mètode directe d’app iOS de l’Store a Intune és només per a apps gratuïtes. Totes les descàrregues gratuïtes d’aquesta llista comencen de franc i ofereixen un desbloqueig opcional dins l’app; avalueu només el nivell gratuït inclòs.",
+      "iap": "Segons Apple, les compres dins l’app no són compatibles amb la compra per volum, les apps gestionades ni els comptes d’Apple gestionats. L’assignació al dispositiu no s’ha de presentar com un desbloqueig complet. Si cal el desbloqueig complet, cada usuari l’ha de comprar per separat amb un compte d’Apple personal habilitat per a compres dins de l’app.",
+      "fit": "Les llistes de relació educativa i empresarial provenen de la consulta de l’editor i del context de decisió publicats. S’ometen les coincidències febles o només basades en el nom; l’omissió no implica que l’app sigui inadequada.",
+      "disclosure": "Aquest és un registre de primera part de Lumi Studio, no una certificació ni recomanació d’Apple o Microsoft, ni una aprovació escolar o MDM, ni una prova de visibilitat institucional o de descompte. Comproveu la botiga en directe i la política de l’organització.",
+      "measurement": "Un candidat generat no és un GET desplegat, una impressió de cerca, un clic o una còpia qualificats, ni una compra o descàrrega institucional. No hi ha hagut desplegament ni inici de sessió de mesura; exposició, acció i resultat continuen a 0/PENDENT.",
+      "steps": [
+        "Contrasteu l’App ID numèric i l’URL exacte amb la fitxa activa de l’App Store.",
+        "Useu Apps i llibres per a les candidates de pagament i Intune directe només per provar el nivell gratuït.",
+        "Feu un pilot limitat segons la política interna i no pressuposeu que l’assignació al dispositiu desbloqueja les compres dins l’app."
+      ],
+      "labels": {
+        "roster": "Registre administratiu de 46 apps verificades",
+        "platform": "Plataforma",
+        "purpose": "Finalitat i context de decisió",
+        "limits": "Limitacions",
+        "support": "Assistència",
+        "privacy": "Privadesa",
+        "source": "Font",
+        "last_checked": "Darrera comprovació",
+        "copy": "Copia",
+        "copied": "Copiat",
+        "school": "Relació educativa",
+        "business": "Relació empresarial",
+        "not_shortlisted": "Fora de les llistes relacionades"
+      }
+    },
+    "cs": {
+      "title": "Předběžné ověření institucionálního nákupu aplikací pro iOS",
+      "intro": "Prvotní, nehodnotící podklad pro správce Apple School Manageru, Apple Business Manageru a Microsoft Intune k posouzení 46 ověřených a aktuálně dostupných záznamů v App Storu.",
+      "paid": "Aplikaci placenou předem lze v Apps and Books vyhledat jako kandidáta. Veřejné vyhledání nedokládá zobrazení v katalogu vaší organizace; před pořízením licencí potvrďte přesné číselné App ID.",
+      "direct": "Přímé přidání iOS Store app v Intune je určeno jen pro bezplatné aplikace. Všechny zde uvedené bezplatně stažitelné aplikace jsou zdarma na vyzkoušení s volitelným jednorázovým nákupem v aplikaci, proto hodnoťte pouze zahrnutou bezplatnou úroveň.",
+      "iap": "Podle dokumentace Apple nejsou nákupy v aplikaci kompatibilní s hromadným nákupem, spravovanými aplikacemi ani spravovanými účty Apple. Přiřazení zařízení nelze vydávat za úplné odemknutí. Je-li potřeba úplné odemknutí, musí si je každý uživatel koupit samostatně pomocí osobního účtu Apple, který umožňuje nákupy v aplikaci.",
+      "fit": "Seznamy související se školstvím a podnikáním vycházejí ze zveřejněného dotazu vydavatele a kontextu rozhodování. Slabé shody nebo shody jen podle názvu jsou vynechány; vynechání neznamená nevhodnost aplikace.",
+      "disclosure": "Jde o prvotní seznam Lumi Studio, nikoli o certifikaci či doporučení Apple nebo Microsoftu, schválení školou či MDM ani důkaz institucionální viditelnosti či slevy. Rozhodující je živý obchod a pravidla vaší organizace.",
+      "measurement": "Vygenerovaný kandidát není nasazený GET, zobrazení ve vyhledávání, kvalifikované kliknutí či kopírování ani institucionální nákup či stažení. K nasazení ani přihlášení k měření nedošlo; expozice, akce a výsledek zůstávají 0/ČEKÁ.",
+      "steps": [
+        "Porovnejte číselné App ID a přesnou URL s aktuálním záznamem App Storu.",
+        "Pro placené kandidáty použijte Apps and Books, pro bezplatnou úroveň pouze přímé hodnocení v Intune.",
+        "Proveďte omezený pilot podle interních pravidel a nepovažujte přiřazení zařízení za odemknutí IAP."
+      ],
+      "labels": {
+        "roster": "Správcovský seznam 46 ověřených aplikací",
+        "platform": "Platforma",
+        "purpose": "Účel a kontext rozhodnutí",
+        "limits": "Omezení",
+        "support": "Podpora",
+        "privacy": "Soukromí",
+        "source": "Zdroj",
+        "last_checked": "Naposledy ověřeno",
+        "copy": "Kopírovat",
+        "copied": "Zkopírováno",
+        "school": "Souvisí se vzděláváním",
+        "business": "Souvisí s podnikáním",
+        "not_shortlisted": "Není v souvisejícím užším výběru"
+      }
+    },
+    "da": {
+      "title": "Forhåndstjek af institutionelt indkøb af iOS-apps",
+      "intro": "En førstepartsreference uden rangering til administratorer af Apple School Manager, Apple Business Manager og Microsoft Intune, som vurderer 46 verificerede, aktive App Store-fortegnelser.",
+      "paid": "En app med forudbetaling kan søges som kandidat i Apps og bøger. Et offentligt opslag beviser ikke, at den vises i organisationens katalog; bekræft det præcise numeriske App ID, før licenser anskaffes.",
+      "direct": "Intunes direkte metode til iOS Store-apps gælder kun gratis apps. Alle gratis downloads her er gratis at starte med og har en valgfri engangsoplåsning i appen, så vurder kun det inkluderede gratis niveau.",
+      "iap": "Apple oplyser, at køb i appen ikke er kompatible med mængdekøb, administrerede apps eller administrerede Apple-konti. Enhedstildeling må ikke fremstilles som en fuld oplåsning. Hvis fuld oplåsning er nødvendig, skal hver bruger købe den separat med en personlig Apple-konto, der kan foretage køb i appen.",
+      "fit": "Listerne med uddannelses- og erhvervsrelevans bygger på den offentliggjorte udgiverforespørgsel og beslutningskontekst. Svage eller rent navnebaserede match udelades; det betyder ikke, at appen er uegnet.",
+      "disclosure": "Dette er Lumi Studios førstepartsliste, ikke en Apple- eller Microsoft-certificering eller anbefaling, skole- eller MDM-godkendelse eller bevis på institutionel synlighed eller rabat. Den aktuelle butik og organisationens politik er afgørende.",
+      "measurement": "En genereret kandidat er ikke et implementeret GET, en søgevisning, et kvalificeret klik eller en kopiering eller et institutionelt køb eller download. Der er hverken implementeret eller logget ind til måling; eksponering, handling og resultat forbliver 0/AFVENTER.",
+      "steps": [
+        "Match det numeriske App ID og den nøjagtige URL med den aktuelle App Store-side.",
+        "Brug Apps og bøger til betalte kandidater og direkte Intune kun til evaluering af gratisniveauet.",
+        "Kør en begrænset pilot efter interne regler, og antag ikke, at enhedstildeling låser IAP op."
+      ],
+      "labels": {
+        "roster": "Administratorliste med 46 verificerede apps",
+        "platform": "Platform",
+        "purpose": "Formål og beslutningskontekst",
+        "limits": "Begrænsninger",
+        "support": "Support",
+        "privacy": "Anonymitet",
+        "source": "Kilde",
+        "last_checked": "Senest kontrolleret",
+        "copy": "Kopiér",
+        "copied": "Kopieret",
+        "school": "Uddannelsesrelevant",
+        "business": "Erhvervsrelevant",
+        "not_shortlisted": "Ikke på den relevante kortliste"
+      }
+    },
+    "de-DE": {
+      "title": "Vorprüfung für die institutionelle Beschaffung von iOS-Apps",
+      "intro": "Eine nicht wertende Erstanbieter-Referenz für Administratoren von Apple School Manager, Apple Business Manager und Microsoft Intune zur Prüfung von 46 verifizierten, aktuell verfügbaren App-Store-Einträgen.",
+      "paid": "Eine im Voraus bezahlte App kann in „Apps und Bücher“ als Kandidat gesucht werden. Die öffentliche Abfrage belegt keine Sichtbarkeit im Katalog Ihrer Organisation; bestätigen Sie vor dem Lizenzerwerb die exakte numerische App-ID.",
+      "direct": "Die direkte Methode „iOS Store-App“ in Intune gilt nur für kostenlose Apps. Alle hier kostenlos ladbaren Apps starten gratis und bieten eine optionale einmalige In-App-Freischaltung; prüfen Sie daher nur den enthaltenen Gratisumfang.",
+      "iap": "Laut Apple sind In-App-Käufe nicht mit Volumenkauf, verwalteten Apps oder verwalteten Apple Accounts kompatibel. Eine Gerätezuweisung darf nicht als vollständige Freischaltung dargestellt werden. Falls die vollständige Freischaltung benötigt wird, muss jede Person sie separat mit einem persönlichen Apple Account erwerben, der In-App-Käufe erlaubt.",
+      "fit": "Die Kurzlisten für Bildung und Unternehmen beruhen auf der veröffentlichten Publisher-Suchanfrage und dem Entscheidungskontext. Schwache oder nur namensbasierte Treffer werden ausgelassen; das bedeutet nicht, dass die App ungeeignet ist.",
+      "disclosure": "Dies ist eine Erstanbieter-Liste von Lumi Studio, keine Zertifizierung oder Empfehlung durch Apple oder Microsoft, keine Schul- oder MDM-Freigabe und kein Nachweis institutioneller Sichtbarkeit oder eines Rabatts. Maßgeblich sind der Live-Store und Ihre Organisationsrichtlinie.",
+      "measurement": "Ein erzeugter Release Candidate ist weder ein bereitgestellter GET noch eine Suchimpression, ein qualifizierter Klick oder Kopiervorgang oder ein institutioneller Kauf oder Download. Es gab keine Bereitstellung und keine Messanmeldung; Reichweite, Aktion und Ergebnis bleiben 0/AUSSTEHEND.",
+      "steps": [
+        "Gleichen Sie die numerische App-ID und die exakte URL mit dem aktuellen App-Store-Eintrag ab.",
+        "Nutzen Sie „Apps und Bücher“ für bezahlte Kandidaten und Intune direkt nur zur Prüfung des Gratisumfangs.",
+        "Führen Sie einen begrenzten Pilot gemäß interner Richtlinie durch und setzen Sie Gerätezuweisung nicht mit IAP-Freischaltung gleich."
+      ],
+      "labels": {
+        "roster": "Admin-Liste mit 46 verifizierten Apps",
+        "platform": "Plattform",
+        "purpose": "Zweck und Entscheidungskontext",
+        "limits": "Einschränkungen",
+        "support": "Support",
+        "privacy": "Datenschutz",
+        "source": "Quelle",
+        "last_checked": "Zuletzt geprüft",
+        "copy": "Kopieren",
+        "copied": "Kopiert",
+        "school": "Bildungsbezug",
+        "business": "Unternehmensbezug",
+        "not_shortlisted": "Nicht in der Bezugs-Kurzliste"
+      }
+    },
+    "el": {
+      "title": "Προέλεγχος θεσμικής προμήθειας εφαρμογών iOS",
+      "intro": "Πρωτογενής, μη κατατακτική αναφορά για διαχειριστές Apple School Manager, Apple Business Manager και Microsoft Intune που αξιολογούν 46 επαληθευμένες και ενεργές καταχωρίσεις του App Store.",
+      "paid": "Μια εφαρμογή με προκαταβολική χρέωση μπορεί να αναζητηθεί ως υποψήφια στις «Εφαρμογές και βιβλία». Η δημόσια αναζήτηση δεν αποδεικνύει εμφάνιση στον κατάλογο του οργανισμού σας· επιβεβαιώστε το ακριβές αριθμητικό App ID πριν αποκτήσετε άδειες.",
+      "direct": "Η άμεση μέθοδος εφαρμογής iOS Store στο Intune αφορά μόνο δωρεάν εφαρμογές. Όλες οι δωρεάν λήψεις εδώ ξεκινούν δωρεάν και διαθέτουν προαιρετικό εφάπαξ ξεκλείδωμα εντός εφαρμογής, επομένως αξιολογήστε μόνο το δωρεάν επίπεδο.",
+      "iap": "Η Apple αναφέρει ότι οι αγορές εντός εφαρμογής δεν είναι συμβατές με μαζικές αγορές, διαχειριζόμενες εφαρμογές ή διαχειριζόμενους λογαριασμούς Apple. Η ανάθεση συσκευής δεν αποτελεί πλήρες ξεκλείδωμα. Αν απαιτείται πλήρες ξεκλείδωμα, κάθε χρήστης πρέπει να το αγοράσει ξεχωριστά με προσωπικό Λογαριασμό Apple που επιτρέπει αγορές εντός εφαρμογής.",
+      "fit": "Οι λίστες συνάφειας για εκπαίδευση και επιχειρήσεις βασίζονται στο δημοσιευμένο ερώτημα του εκδότη και στο πλαίσιο απόφασης. Οι αδύναμες ή μόνο ονομαστικές αντιστοιχίες παραλείπονται· η παράλειψη δεν σημαίνει ακαταλληλότητα.",
+      "disclosure": "Πρόκειται για πρωτογενή κατάλογο της Lumi Studio, όχι για πιστοποίηση ή σύσταση της Apple ή της Microsoft, έγκριση σχολείου ή MDM ούτε απόδειξη θεσμικής προβολής ή έκπτωσης. Ισχύουν το ζωντανό κατάστημα και η πολιτική του οργανισμού σας.",
+      "measurement": "Ένα παραγόμενο υποψήφιο δεν είναι αναπτυγμένο GET, εμφάνιση αναζήτησης, κατάλληλο κλικ ή αντιγραφή ούτε θεσμική αγορά ή λήψη. Δεν έγινε ανάπτυξη ή σύνδεση μέτρησης· έκθεση, ενέργεια και αποτέλεσμα παραμένουν 0/ΣΕ ΑΝΑΜΟΝΗ.",
+      "steps": [
+        "Αντιστοιχίστε το αριθμητικό App ID και το ακριβές URL με τη ζωντανή σελίδα του App Store.",
+        "Χρησιμοποιήστε «Εφαρμογές και βιβλία» για επί πληρωμή υποψηφίους και άμεσο Intune μόνο για το δωρεάν επίπεδο.",
+        "Εκτελέστε περιορισμένο πιλοτικό έλεγχο βάσει πολιτικής και μην θεωρείτε την ανάθεση συσκευής ξεκλείδωμα IAP."
+      ],
+      "labels": {
+        "roster": "Κατάλογος διαχειριστή 46 επαληθευμένων εφαρμογών",
+        "platform": "Πλατφόρμα",
+        "purpose": "Σκοπός και πλαίσιο απόφασης",
+        "limits": "Περιορισμοί",
+        "support": "Υποστήριξη",
+        "privacy": "Απόρρητο",
+        "source": "Πηγή",
+        "last_checked": "Τελευταίος έλεγχος",
+        "copy": "Αντιγραφή",
+        "copied": "Αντιγράφηκε",
+        "school": "Συνάφεια με εκπαίδευση",
+        "business": "Συνάφεια με επιχειρήσεις",
+        "not_shortlisted": "Εκτός σχετικής σύντομης λίστας"
+      }
+    },
+    "en-AU": {
+      "title": "iOS institutional procurement preflight",
+      "intro": "A first-party, non-ranking reference for Apple School Manager, Apple Business Manager and Microsoft Intune admins evaluating 46 verified-live App Store listings in Australian education or enterprise settings.",
+      "paid": "An up-front paid app can be searched as a candidate in Apps and Books. A public lookup does not prove it appears for your organisation; have the Content Manager confirm the exact numeric App ID before acquiring licences.",
+      "direct": "Intune’s direct iOS Store app method is only for apps that are free in the App Store. Every free download here is free to start with an optional one-time in-app unlock, so assess only the included free tier.",
+      "iap": "Apple documents that in-app purchases are incompatible with volume purchasing, managed apps and Managed Apple Accounts. Device assignment must never be presented as a complete unlock. A full unlock, when needed, must be purchased separately by each user with a personal Apple Account that can make in-app purchases.",
+      "fit": "Education and business shortlists use the published publisher query and decision context. Weak or name-only matches are left out; omission does not mean an app is unsuitable.",
+      "disclosure": "This is Lumi Studio’s first-party roster, not Apple or Microsoft certification or endorsement, school-system or MDM approval, proof of catalogue visibility, or evidence of a discount. Check the live store and your organisation’s policy.",
+      "measurement": "A generated release candidate is not a deployed GET, search impression, qualified click or copy, institutional purchase, or download. No deployment or measurement sign-in occurred; exposure, action and outcome remain 0/PENDING.",
+      "steps": [
+        "Match the numeric App ID and exact URL against the live Australian App Store listing.",
+        "Ask the Apps and Books Content Manager to confirm availability and licence quantity before any paid acquisition.",
+        "For Intune direct-store evaluation, document exactly what the included free tier can do without an in-app purchase.",
+        "Pilot on the intended supervised or shared iPad profile and choose device or user licensing deliberately.",
+        "Record privacy, child-safety and internal policy findings; do not infer approval from a successful install."
+      ],
+      "labels": {
+        "roster": "46-app verified administrator roster",
+        "platform": "Platform",
+        "purpose": "Purpose and decision context",
+        "limits": "Limits",
+        "support": "Support",
+        "privacy": "Privacy",
+        "source": "Source",
+        "last_checked": "Last checked",
+        "copy": "Copy",
+        "copied": "Copied",
+        "school": "Education-related",
+        "business": "Business-related",
+        "not_shortlisted": "Not on a related-fit shortlist"
+      }
+    },
+    "en-CA": {
+      "title": "iOS institutional procurement preflight",
+      "intro": "A first-party, non-ranking reference for Apple School Manager, Apple Business Manager and Microsoft Intune administrators evaluating 46 verified-live App Store listings for Canadian school boards and organizations.",
+      "paid": "An up-front paid app can be searched as a candidate in Apps and Books. Public lookup does not prove visibility for your organization; have the Content Manager verify the exact numeric App ID before acquiring licences.",
+      "direct": "Intune’s direct iOS Store app method is only for apps that are free in the App Store. Every free download here is free to start with an optional one-time in-app unlock, so evaluate only the included free tier.",
+      "iap": "Apple documents that in-app purchases are incompatible with volume purchasing, managed apps and Managed Apple Accounts. Device assignment must not be described as a complete unlock. A full unlock, when needed, must be purchased separately by each user with a personal Apple Account that can make in-app purchases.",
+      "fit": "Education and business shortlists use the published publisher query and decision context. Weak or name-only matches are omitted; omission does not mean an app is unsuitable.",
+      "disclosure": "This is Lumi Studio’s first-party roster, not Apple or Microsoft certification or endorsement, school-board or MDM approval, proof of catalogue visibility, or evidence of a discount. Verify the live store and your organization’s policy.",
+      "measurement": "A generated release candidate is not a deployed GET, search impression, qualified click or copy, institutional purchase, or download. No deployment or measurement sign-in occurred; exposure, action and outcome remain 0/PENDING.",
+      "steps": [
+        "Match the numeric App ID and exact URL against the live Canadian App Store listing.",
+        "Have the Apps and Books Content Manager confirm availability and licence quantity before any paid acquisition.",
+        "For Intune direct-store evaluation, record which functions work in the included free tier without an in-app purchase.",
+        "Pilot on the intended supervised, shared or user-enrolled iPad configuration and choose the licence type explicitly.",
+        "Complete school-board or organizational privacy, accessibility and provincial policy review; installation is not approval."
+      ],
+      "labels": {
+        "roster": "46-app verified administrator roster",
+        "platform": "Platform",
+        "purpose": "Purpose and decision context",
+        "limits": "Limits",
+        "support": "Support",
+        "privacy": "Privacy",
+        "source": "Source",
+        "last_checked": "Last checked",
+        "copy": "Copy",
+        "copied": "Copied",
+        "school": "Education-related",
+        "business": "Business-related",
+        "not_shortlisted": "Not on a related-fit shortlist"
+      }
+    },
+    "en-GB": {
+      "title": "iOS institutional procurement preflight",
+      "intro": "A first-party, non-ranking reference for Apple School Manager, Apple Business Manager and Microsoft Intune administrators evaluating 46 verified-live App Store listings for UK schools and organisations.",
+      "paid": "An up-front paid app can be searched as a candidate in Apps and Books. Public lookup does not prove visibility for your organisation; ask the Content Manager to verify the exact numeric App ID before acquiring licences.",
+      "direct": "Intune’s direct iOS Store app method is only for apps that are free in the App Store. Every free download here is free to start with an optional one-time in-app unlock, so assess only the included free tier.",
+      "iap": "Apple documents that in-app purchases are incompatible with volume purchasing, managed apps and Managed Apple Accounts. Device assignment must not be described as a complete unlock. A full unlock, when needed, must be purchased separately by each user with a personal Apple Account that can make in-app purchases.",
+      "fit": "Education and business shortlists use the published publisher query and decision context. Weak or name-only matches are omitted; omission does not mean an app is unsuitable.",
+      "disclosure": "This is Lumi Studio’s first-party roster, not Apple or Microsoft certification or endorsement, school or MDM approval, proof of catalogue visibility, or evidence of a discount. Verify the live store and your organisation’s policy.",
+      "measurement": "A generated release candidate is not a deployed GET, search impression, qualified click or copy, institutional purchase, or download. No deployment or measurement sign-in occurred; exposure, action and outcome remain 0/PENDING.",
+      "steps": [
+        "Match the numeric App ID and exact URL against the live UK App Store listing.",
+        "Ask the Apps and Books Content Manager to confirm availability and licence quantity before any paid acquisition.",
+        "For Intune direct-store evaluation, document what the included free tier provides without an in-app purchase.",
+        "Pilot with the intended supervised, shared or user-enrolment profile and choose device or user licensing deliberately.",
+        "Complete safeguarding, data-protection, accessibility and local policy review; a successful install is not approval."
+      ],
+      "labels": {
+        "roster": "46-app verified administrator roster",
+        "platform": "Platform",
+        "purpose": "Purpose and decision context",
+        "limits": "Limits",
+        "support": "Support",
+        "privacy": "Privacy",
+        "source": "Source",
+        "last_checked": "Last checked",
+        "copy": "Copy",
+        "copied": "Copied",
+        "school": "Education-related",
+        "business": "Business-related",
+        "not_shortlisted": "Not on a related-fit shortlist"
+      }
+    },
+    "en-US": {
+      "title": "iOS institutional procurement preflight",
+      "intro": "A first-party, non-ranking reference for Apple School Manager, Apple Business Manager, and Microsoft Intune administrators evaluating 46 verified-live App Store listings for U.S. districts and organizations.",
+      "paid": "An up-front paid app can be searched as a candidate in Apps and Books. Public lookup does not prove visibility for your organization; have the Content Manager verify the exact numeric App ID before acquiring licenses.",
+      "direct": "Intune’s direct iOS Store app method is only for apps that are free in the App Store. Every free download here is free to start with an optional one-time in-app unlock, so evaluate only the included free tier.",
+      "iap": "Apple documents that in-app purchases are incompatible with volume purchasing, managed apps, and Managed Apple Accounts. Device assignment must not be described as a complete unlock. A full unlock, when needed, must be purchased separately by each user with a personal Apple Account that can make in-app purchases.",
+      "fit": "Education and business shortlists use the published publisher query and decision context. Weak or name-only matches are omitted; omission does not mean an app is unsuitable.",
+      "disclosure": "This is Lumi Studio’s first-party roster, not Apple or Microsoft certification or endorsement, district or MDM approval, proof of catalog visibility, or evidence of a discount. Verify the live store and your organization’s policy.",
+      "measurement": "A generated release candidate is not a deployed GET, search impression, qualified click or copy, institutional purchase, or download. No deployment or measurement sign-in occurred; exposure, action, and outcome remain 0/PENDING.",
+      "steps": [
+        "Match the numeric App ID and exact URL against the live U.S. App Store listing.",
+        "Have the Apps and Books Content Manager confirm availability and license quantity before any paid acquisition.",
+        "For Intune direct-store evaluation, document which functions work in the included free tier without an in-app purchase.",
+        "Pilot on the intended supervised, shared, or user-enrolled iPad profile and choose device or user licensing explicitly.",
+        "Complete district or organizational privacy, accessibility, security, and child-safety review; installation is not approval."
+      ],
+      "labels": {
+        "roster": "46-app verified administrator roster",
+        "platform": "Platform",
+        "purpose": "Purpose and decision context",
+        "limits": "Limits",
+        "support": "Support",
+        "privacy": "Privacy",
+        "source": "Source",
+        "last_checked": "Last checked",
+        "copy": "Copy",
+        "copied": "Copied",
+        "school": "Education-related",
+        "business": "Business-related",
+        "not_shortlisted": "Not on a related-fit shortlist"
+      }
+    },
+    "es-ES": {
+      "title": "Comprobación previa para la compra institucional de apps iOS",
+      "intro": "Referencia de primera parte y sin clasificación para que administradores de Apple School Manager, Apple Business Manager y Microsoft Intune evalúen 46 fichas activas y verificadas de App Store.",
+      "paid": "Una app de pago por adelantado puede buscarse como candidata en Apps y libros. La consulta pública no demuestra que aparezca en el catálogo de la organización; confirme el App ID numérico exacto antes de adquirir licencias.",
+      "direct": "El método directo de app iOS de Store en Intune solo sirve para apps gratuitas. Todas las descargas gratuitas de esta lista empiezan gratis y ofrecen un desbloqueo único opcional dentro de la app; evalúe solo el nivel gratuito incluido.",
+      "iap": "Apple indica que las compras dentro de la app no son compatibles con la compra por volumen, las apps gestionadas ni las cuentas de Apple gestionadas. La asignación al dispositivo no debe presentarse como un desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "fit": "Las listas relacionadas con educación y empresa se basan en la consulta del editor y el contexto de decisión publicados. Se omiten coincidencias débiles o solo de nombre; la omisión no significa que la app sea inadecuada.",
+      "disclosure": "Este es un registro de primera parte de Lumi Studio, no una certificación ni recomendación de Apple o Microsoft, aprobación escolar o MDM, prueba de visibilidad institucional ni evidencia de descuento. Compruebe la tienda en vivo y la política de su organización.",
+      "measurement": "Un candidato generado no es un GET desplegado, una impresión de búsqueda, un clic o copia cualificados ni una compra o descarga institucional. No hubo despliegue ni inicio de sesión de medición; exposición, acción y resultado siguen en 0/PENDIENTE.",
+      "steps": [
+        "Contraste el App ID numérico y la URL exacta con la ficha activa de App Store.",
+        "Use Apps y libros para candidatos de pago e Intune directo solo para evaluar el nivel gratuito.",
+        "Haga una prueba limitada conforme a la política interna y no suponga que asignar el dispositivo desbloquea las compras dentro de la app."
+      ],
+      "labels": {
+        "roster": "Registro administrativo de 46 apps verificadas",
+        "platform": "Plataforma",
+        "purpose": "Finalidad y contexto de decisión",
+        "limits": "Limitaciones",
+        "support": "Soporte",
+        "privacy": "Privacidad",
+        "source": "Fuente",
+        "last_checked": "Última comprobación",
+        "copy": "Copiar",
+        "copied": "Copiado",
+        "school": "Relación educativa",
+        "business": "Relación empresarial",
+        "not_shortlisted": "Fuera de las listas relacionadas"
+      }
+    },
+    "es-MX": {
+      "title": "Revisión previa para la compra institucional de apps iOS",
+      "intro": "Referencia de primera parte, sin ranking, para que administradores de Apple School Manager, Apple Business Manager y Microsoft Intune evalúen 46 fichas vigentes y verificadas de App Store.",
+      "paid": "Una app con pago inicial puede buscarse como candidata en Apps y libros. La consulta pública no demuestra que aparezca en el catálogo de la organización; confirme el App ID numérico exacto antes de adquirir licencias.",
+      "direct": "El método directo de app iOS de Store en Intune solo admite apps gratuitas. Todas las descargas gratuitas de esta lista empiezan sin costo y ofrecen un desbloqueo único opcional dentro de la app; evalúe únicamente el nivel gratuito incluido.",
+      "iap": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "fit": "Las listas relacionadas con educación y empresa se basan en la consulta del editor y el contexto de decisión publicados. Se excluyen coincidencias débiles o solo por nombre; la exclusión no significa que la app sea inadecuada.",
+      "disclosure": "Este registro es material de primera parte de Lumi Studio, no certificación ni recomendación de Apple o Microsoft, aprobación escolar o MDM, prueba de visibilidad institucional ni evidencia de descuento. Verifique la tienda vigente y la política de su organización.",
+      "measurement": "Un candidato generado no equivale a un GET desplegado, impresión de búsqueda, clic o copia calificados ni compra o descarga institucional. No hubo despliegue ni inicio de sesión de medición; exposición, acción y resultado permanecen en 0/PENDIENTE.",
+      "steps": [
+        "Compare el App ID numérico y la URL exacta con la ficha vigente de App Store.",
+        "Use Apps y libros para candidatos de pago e Intune directo solo para probar el nivel gratuito.",
+        "Realice un piloto limitado conforme a la política interna y no suponga que asignar el dispositivo desbloquea las compras dentro de la app."
+      ],
+      "labels": {
+        "roster": "Lista administrativa de 46 apps verificadas",
+        "platform": "Plataforma",
+        "purpose": "Propósito y contexto de decisión",
+        "limits": "Limitaciones",
+        "support": "Soporte",
+        "privacy": "Privacidad",
+        "source": "Fuente",
+        "last_checked": "Última verificación",
+        "copy": "Copiar",
+        "copied": "Copiado",
+        "school": "Relación educativa",
+        "business": "Relación empresarial",
+        "not_shortlisted": "Fuera de las listas relacionadas"
+      }
+    },
+    "fi": {
+      "title": "iOS-appien organisaatiohankinnan ennakkotarkistus",
+      "intro": "Ensikäden, ei-järjestävä viite Apple School Managerin, Apple Business Managerin ja Microsoft Intunen ylläpitäjille 46 varmennetun ja julkaistun App Store -kohteen arviointiin.",
+      "paid": "Etukäteen maksettavaa appia voi etsiä ehdokkaana Apit ja kirjat -palvelusta. Julkinen haku ei osoita näkyvyyttä organisaatiosi luettelossa; vahvista tarkka numeerinen App ID ennen lisenssien hankintaa.",
+      "direct": "Intunen suora iOS Store -appimenetelmä on tarkoitettu vain maksuttomille apeille. Kaikki täällä maksutta ladattavat apit alkavat ilmaiseksi ja sisältävät valinnaisen kertaluonteisen appinsisäisen avauksen, joten arvioi vain mukana oleva maksuton taso.",
+      "iap": "Applen mukaan appinsisäiset ostot eivät ole yhteensopivia volyymioston, hallittujen appien tai hallittujen Apple-tilien kanssa. Laitteelle määritystä ei saa esittää täydellisenä avauksena. Jos täysi lukituksen avaus tarvitaan, jokaisen käyttäjän on ostettava se erikseen henkilökohtaisella Apple-tilillä, jolla voi tehdä ostoja apissa.",
+      "fit": "Koulutus- ja yritysaiheiset listat perustuvat julkaistuun julkaisijan hakuun ja päätöskontekstiin. Heikot tai vain nimeen perustuvat osumat jätetään pois; poisjäänti ei tarkoita, että appi olisi sopimaton.",
+      "disclosure": "Tämä on Lumi Studion ensikäden luettelo, ei Applen tai Microsoftin sertifiointi tai suositus, koulun tai MDM:n hyväksyntä eikä todiste organisaationäkyvyydestä tai alennuksesta. Tarkista ajantasainen kauppa ja organisaatiosi käytäntö.",
+      "measurement": "Luotu julkaisuehdokas ei ole käyttöönotettu GET, hakunäyttö, kelvollinen napsautus tai kopiointi eikä organisaation osto tai lataus. Käyttöönottoa tai mittauskirjautumista ei tehty; näkyvyys, toiminta ja tulos pysyvät arvoissa 0/ODOTTAA.",
+      "steps": [
+        "Vertaa numeerista App ID:tä ja tarkkaa URL-osoitetta ajantasaiseen App Store -sivuun.",
+        "Käytä maksullisille ehdokkaille Apit ja kirjat -polkua ja Intune-suoraa vain maksuttoman tason arviointiin.",
+        "Tee rajattu pilotti sisäisen käytännön mukaan äläkä oleta laitemäärityksen avaavan IAP-ostoja."
+      ],
+      "labels": {
+        "roster": "46 varmennetun appin ylläpitäjäluettelo",
+        "platform": "Alusta",
+        "purpose": "Tarkoitus ja päätöskonteksti",
+        "limits": "Rajoitukset",
+        "support": "Tuki",
+        "privacy": "Tietosuoja",
+        "source": "Lähde",
+        "last_checked": "Viimeksi tarkistettu",
+        "copy": "Kopioi",
+        "copied": "Kopioitu",
+        "school": "Koulutukseen liittyvä",
+        "business": "Yritystoimintaan liittyvä",
+        "not_shortlisted": "Ei liittyvällä lyhytlistalla"
+      }
+    },
+    "fr-CA": {
+      "title": "Vérification préalable à l’achat institutionnel d’apps iOS",
+      "intro": "Référence de première partie, sans classement, destinée aux administrateurs d’Apple School Manager, d’Apple Business Manager et de Microsoft Intune qui évaluent 46 fiches App Store actives et vérifiées au Canada.",
+      "paid": "Une app payée d’avance peut être recherchée comme candidate dans Apps et livres. La consultation publique ne prouve pas sa présence dans le catalogue de votre organisation; faites confirmer l’App ID numérique exact avant d’acquérir des licences.",
+      "direct": "La méthode directe d’app iOS du Store dans Intune s’applique uniquement aux apps gratuites. Chaque téléchargement gratuit ici commence gratuitement et propose un déverrouillage unique facultatif dans l’app; évaluez seulement le niveau gratuit inclus.",
+      "iap": "Apple indique que les achats intégrés ne sont pas compatibles avec l’achat en volume, les apps gérées ou les comptes Apple gérés. L’attribution à un appareil ne doit pas être présentée comme un déverrouillage complet. Si le déverrouillage complet est nécessaire, chaque utilisateur doit l’acheter séparément avec un compte Apple personnel autorisé à effectuer des achats intégrés.",
+      "fit": "Les listes liées à l’éducation et aux entreprises reposent sur la requête de l’éditeur et le contexte de décision publiés. Les correspondances faibles ou fondées uniquement sur le nom sont omises; l’omission ne signifie pas que l’app est inadéquate.",
+      "disclosure": "Il s’agit de la liste de première partie de Lumi Studio, et non d’une certification ou recommandation d’Apple ou de Microsoft, d’une approbation scolaire ou MDM, d’une preuve de visibilité institutionnelle ou d’un rabais. Vérifiez la boutique active et la politique de votre organisation.",
+      "measurement": "Un candidat généré n’est pas un GET déployé, une impression de recherche, un clic ou une copie qualifiés, ni un achat ou téléchargement institutionnel. Aucun déploiement ni accès aux mesures n’a eu lieu; exposition, action et résultat restent à 0/EN ATTENTE.",
+      "steps": [
+        "Comparez l’App ID numérique et l’URL exacte avec la fiche active de l’App Store.",
+        "Utilisez Apps et livres pour les candidates payantes et Intune direct uniquement pour évaluer le niveau gratuit.",
+        "Menez un projet pilote limité selon la politique interne et ne supposez pas que l’attribution à l’appareil déverrouille les achats intégrés."
+      ],
+      "labels": {
+        "roster": "Liste administrative de 46 apps vérifiées",
+        "platform": "Plateforme",
+        "purpose": "Objectif et contexte de décision",
+        "limits": "Limites",
+        "support": "Soutien",
+        "privacy": "Confidentialité",
+        "source": "Source",
+        "last_checked": "Dernière vérification",
+        "copy": "Copier",
+        "copied": "Copié",
+        "school": "Liée à l’éducation",
+        "business": "Liée aux entreprises",
+        "not_shortlisted": "Absente des listes connexes"
+      }
+    },
+    "fr-FR": {
+      "title": "Vérification préalable à l’achat institutionnel d’apps iOS",
+      "intro": "Référence de première partie, sans classement, pour les administrateurs d’Apple School Manager, d’Apple Business Manager et de Microsoft Intune évaluant 46 fiches App Store actives et vérifiées.",
+      "paid": "Une app payée d’avance peut être recherchée comme candidate dans Apps et livres. La consultation publique ne prouve pas sa présence dans le catalogue de l’organisation; faites confirmer l’App ID numérique exact avant d’acquérir des licences.",
+      "direct": "La méthode directe d’app iOS du Store dans Intune ne concerne que les apps gratuites. Chaque téléchargement gratuit ici démarre gratuitement et propose un déverrouillage unique facultatif dans l’app; évaluez seulement le niveau gratuit inclus.",
+      "iap": "Apple précise que les achats intégrés ne sont pas compatibles avec l’achat en volume, les apps gérées ou les comptes Apple gérés. L’attribution à un appareil ne doit pas être présentée comme un déverrouillage complet. Si le déverrouillage complet est nécessaire, chaque utilisateur doit l’acheter séparément avec un compte Apple personnel autorisé à effectuer des achats intégrés.",
+      "fit": "Les listes liées à l’éducation et à l’entreprise reposent sur la requête de l’éditeur et le contexte de décision publiés. Les correspondances faibles ou fondées uniquement sur le nom sont omises; l’omission ne signifie pas que l’app est inadaptée.",
+      "disclosure": "Il s’agit de la liste de première partie de Lumi Studio, et non d’une certification ou recommandation d’Apple ou de Microsoft, d’une approbation scolaire ou MDM, d’une preuve de visibilité institutionnelle ou d’une remise. Vérifiez la boutique active et la politique de votre organisation.",
+      "measurement": "Un candidat généré n’est pas un GET déployé, une impression de recherche, un clic ou une copie qualifiés, ni un achat ou téléchargement institutionnel. Aucun déploiement ni accès aux mesures n’a eu lieu; exposition, action et résultat restent à 0/EN ATTENTE.",
+      "steps": [
+        "Comparez l’App ID numérique et l’URL exacte avec la fiche active de l’App Store.",
+        "Utilisez Apps et livres pour les candidates payantes et Intune direct uniquement pour évaluer le niveau gratuit.",
+        "Menez un pilote limité selon la politique interne et ne supposez pas que l’attribution à l’appareil déverrouille les achats intégrés."
+      ],
+      "labels": {
+        "roster": "Liste administrative de 46 apps vérifiées",
+        "platform": "Plateforme",
+        "purpose": "Objectif et contexte de décision",
+        "limits": "Limites",
+        "support": "Assistance",
+        "privacy": "Confidentialité",
+        "source": "Source",
+        "last_checked": "Dernière vérification",
+        "copy": "Copier",
+        "copied": "Copié",
+        "school": "Liée à l’éducation",
+        "business": "Liée à l’entreprise",
+        "not_shortlisted": "Absente des listes connexes"
+      }
+    },
+    "gu-IN": {
+      "title": "સંસ્થાકીય iOS App ખરીદીની પૂર્વચકાસણી",
+      "intro": "Apple School Manager, Apple Business Manager અને Microsoft Intune સંચાલકો માટે App Store પર લાઇવ અને ઓળખ ચકાસેલી 46 Appનું પ્રથમ-પક્ષ, ક્રમ વિનાનું મૂલ્યાંકન સંદર્ભ.",
+      "paid": "અગાઉથી ચૂકવાતી Appને Apps and Booksમાં ઉમેદવાર તરીકે શોધી શકાય છે. જાહેર lookup તમારી સંસ્થાના catalogમાં તેની હાજરી સાબિત કરતું નથી; licence લેતાં પહેલાં ચોક્કસ આંકડાકીય App ID ચકાસો.",
+      "direct": "Intuneની direct iOS Store app પદ્ધતિ ફક્ત મફત App માટે છે. અહીંની દરેક મફત download App મફતમાં શરૂ થાય છે અને વૈકલ્પિક એક વખતનું in-app unlock આપે છે, તેથી ફક્ત સમાવિષ્ટ મફત સ્તરનું મૂલ્યાંકન કરો.",
+      "iap": "Appleના દસ્તાવેજ મુજબ in-app purchase volume purchase, managed app અથવા Managed Apple Account સાથે સુસંગત નથી. Device assignmentને સંપૂર્ણ unlock તરીકે રજૂ ન કરો. સંપૂર્ણ અનલૉક જરૂરી હોય તો દરેક વપરાશકર્તાએ in-app purchase કરી શકે તેવા વ્યક્તિગત Apple Account વડે તેને અલગથી ખરીદવું પડશે.",
+      "fit": "શિક્ષણ અને વ્યવસાય સંબંધિત યાદીઓ પ્રકાશિત publisher query અને decision context પર આધારિત છે. નબળી અથવા માત્ર નામ આધારિત મેળવણી કાઢી નાખવામાં આવે છે; તેનો અર્થ App અયોગ્ય છે એવો નથી.",
+      "disclosure": "આ Lumi Studioની પ્રથમ-પક્ષ યાદી છે; Apple અથવા Microsoftનું certification કે endorsement, શાળા અથવા MDM મંજૂરી, સંસ્થાકીય દેખાવ અથવા discountનો પુરાવો નથી. જીવંત store અને તમારી સંસ્થાની policy અંતિમ છે.",
+      "measurement": "બનાવેલો release candidate deployed GET, search impression, યોગ્ય click/copy અથવા સંસ્થાકીય purchase/download નથી. કોઈ deployment કે measurement login થયું નથી; exposure, action અને outcome 0/PENDING રહે છે.",
+      "steps": [
+        "આંકડાકીય App ID અને ચોક્કસ URLને જીવંત App Store પેજ સાથે મેળવો.",
+        "ચૂકવાતી ઉમેદવાર માટે Apps and Books અને મફત સ્તરની કસોટી માટે જ Intune direct-store વાપરો.",
+        "સંસ્થાની policy મુજબ મર્યાદિત pilot કરો અને device assignmentને IAP unlock ન માનો."
+      ],
+      "labels": {
+        "roster": "46 ચકાસેલી Appની સંચાલક યાદી",
+        "platform": "પ્લેટફોર્મ",
+        "purpose": "હેતુ અને નિર્ણય સંદર્ભ",
+        "limits": "મર્યાદાઓ",
+        "support": "સહાય",
+        "privacy": "ગોપનીયતા",
+        "source": "સ્રોત",
+        "last_checked": "છેલ્લી ચકાસણી",
+        "copy": "કૉપી",
+        "copied": "કૉપી થયું",
+        "school": "શિક્ષણ સંબંધિત",
+        "business": "વ્યવસાય સંબંધિત",
+        "not_shortlisted": "સંબંધિત ટૂંકી યાદીમાં નથી"
+      }
+    },
+    "he": {
+      "title": "בדיקה מקדימה לרכש מוסדי של יישומי iOS",
+      "intro": "מקור מידע ישיר ולא מדורג למנהלי Apple School Manager, ‏Apple Business Manager ו-Microsoft Intune הבוחנים 46 רישומי App Store פעילים ומאומתים.",
+      "paid": "אפשר לחפש יישום בתשלום מראש כמועמד ב״יישומים וספרים״. חיפוש ציבורי אינו מוכיח שהוא מופיע בקטלוג הארגון; יש לאמת את ה-App ID המספרי המדויק לפני רכישת רישיונות.",
+      "direct": "השיטה הישירה להוספת יישום iOS מהחנות ב-Intune מיועדת רק ליישומים חינמיים. כל הורדה חינמית כאן מתחילה בחינם ומציעה פתיחה חד-פעמית אופציונלית בתוך היישום, ולכן יש לבחון רק את הרובד החינמי הכלול.",
+      "iap": "לפי Apple, רכישות בתוך היישום אינן תואמות לרכישה בכמות, ליישומים מנוהלים או לחשבונות Apple מנוהלים. אין להציג הקצאה למכשיר כפתיחה מלאה. אם נדרשת פתיחה מלאה, כל משתמש חייב לרכוש אותה בנפרד באמצעות חשבון Apple אישי שמאפשר רכישות בתוך האפליקציה.",
+      "fit": "הרשימות הקשורות לחינוך ולעסקים מבוססות על שאילתת המפרסם והקשר ההחלטה שפורסמו. התאמות חלשות או המבוססות רק על השם מושמטות; ההשמטה אינה אומרת שהיישום אינו מתאים.",
+      "disclosure": "זוהי רשימת מקור ראשון של Lumi Studio, לא הסמכה או המלצה של Apple או Microsoft, לא אישור של בית ספר או MDM ולא הוכחה לנראות מוסדית או להנחה. יש לבדוק את החנות החיה ואת מדיניות הארגון.",
+      "measurement": "מועמד שנוצר אינו GET שנפרס, חשיפה בחיפוש, לחיצה או העתקה מוסמכות, רכישה מוסדית או הורדה. לא בוצעו פריסה או כניסה למערכת מדידה; חשיפה, פעולה ותוצאה נשארות 0/בהמתנה.",
+      "steps": [
+        "התאימו את ה-App ID המספרי ואת הכתובת המדויקת לדף החי ב-App Store.",
+        "השתמשו ב״יישומים וספרים״ למועמד בתשלום וב-Intune ישיר רק לבדיקת הרובד החינמי.",
+        "בצעו ניסוי מוגבל לפי מדיניות הארגון ואל תניחו שהקצאה למכשיר פותחת IAP."
+      ],
+      "labels": {
+        "roster": "רשימת מנהל של 46 יישומים מאומתים",
+        "platform": "פלטפורמה",
+        "purpose": "מטרה והקשר החלטה",
+        "limits": "מגבלות",
+        "support": "תמיכה",
+        "privacy": "פרטיות",
+        "source": "מקור",
+        "last_checked": "בדיקה אחרונה",
+        "copy": "העתקה",
+        "copied": "הועתק",
+        "school": "קשור לחינוך",
+        "business": "קשור לעסקים",
+        "not_shortlisted": "לא ברשימה הקצרה הקשורה"
+      }
+    },
+    "hi": {
+      "title": "संस्थागत iOS App खरीद की पूर्व-जाँच",
+      "intro": "Apple School Manager, Apple Business Manager और Microsoft Intune प्रशासकों के लिए App Store पर पहचान और सक्रियता सत्यापित 46 Apps का प्रथम-पक्ष, बिना रैंकिंग वाला मूल्यांकन संदर्भ।",
+      "paid": "पहले भुगतान वाली App को Apps and Books में उम्मीदवार के रूप में खोजा जा सकता है। सार्वजनिक lookup आपके संगठन के catalog में उसकी मौजूदगी साबित नहीं करता; licences लेने से पहले सटीक संख्यात्मक App ID की पुष्टि करें।",
+      "direct": "Intune की direct iOS Store app विधि केवल मुफ्त Apps के लिए है। यहाँ हर मुफ्त download शुरू में मुफ्त है और वैकल्पिक एकमुश्त in-app unlock देता है, इसलिए केवल शामिल मुफ्त स्तर का मूल्यांकन करें।",
+      "iap": "Apple के दस्तावेज़ के अनुसार in-app purchases, volume purchasing, managed apps या Managed Apple Accounts के साथ संगत नहीं हैं। Device assignment को पूर्ण unlock नहीं कहा जा सकता। पूरा अनलॉक आवश्यक होने पर हर उपयोगकर्ता को इन-ऐप खरीदारी कर सकने वाले निजी Apple Account से इसे अलग-अलग खरीदना होगा।",
+      "fit": "शिक्षा और व्यवसाय संबंधी सूचियाँ प्रकाशित publisher query और decision context पर आधारित हैं। कमजोर या केवल नाम पर आधारित मिलान हटाए जाते हैं; हटना App के अनुपयुक्त होने का संकेत नहीं है।",
+      "disclosure": "यह Lumi Studio की प्रथम-पक्ष सूची है; Apple या Microsoft प्रमाणन या समर्थन, स्कूल या MDM स्वीकृति, संस्थागत दृश्यता या छूट का प्रमाण नहीं। लाइव store और आपके संगठन की नीति अंतिम आधार हैं।",
+      "measurement": "बना हुआ release candidate, deployed GET, search impression, योग्य click/copy या संस्थागत purchase/download नहीं है। कोई deployment या measurement login नहीं हुआ; exposure, action और outcome 0/PENDING रहते हैं।",
+      "steps": [
+        "संख्यात्मक App ID और सटीक URL को लाइव App Store पेज से मिलाएँ।",
+        "भुगतान वाले उम्मीदवार के लिए Apps and Books और मुफ्त स्तर की जाँच के लिए ही Intune direct-store चुनें।",
+        "संगठन की नीति के अनुसार सीमित pilot करें और device assignment को IAP unlock न मानें।"
+      ],
+      "labels": {
+        "roster": "46 सत्यापित Apps की प्रशासक सूची",
+        "platform": "प्लेटफ़ॉर्म",
+        "purpose": "उद्देश्य और निर्णय संदर्भ",
+        "limits": "सीमाएँ",
+        "support": "सहायता",
+        "privacy": "गोपनीयता",
+        "source": "स्रोत",
+        "last_checked": "अंतिम जाँच",
+        "copy": "कॉपी करें",
+        "copied": "कॉपी हो गया",
+        "school": "शिक्षा-संबंधी",
+        "business": "व्यवसाय-संबंधी",
+        "not_shortlisted": "संबंधित संक्षिप्त सूची में नहीं"
+      }
+    },
+    "hr": {
+      "title": "Predprovjera institucionalne nabave iOS aplikacija",
+      "intro": "Izvorni, nerangirani pregled za administratore Apple School Managera, Apple Business Managera i Microsoft Intunea koji procjenjuju 46 provjerenih i dostupnih zapisa u App Storeu.",
+      "paid": "Aplikacija koja se plaća unaprijed može se tražiti kao kandidat u Apps and Books. Javni upit ne dokazuje da je vidljiva u katalogu organizacije; prije nabave licenci potvrdite točan brojčani App ID.",
+      "direct": "Izravna metoda iOS Store app u Intuneu vrijedi samo za besplatne aplikacije. Svako besplatno preuzimanje ovdje počinje besplatno i nudi neobavezno jednokratno otključavanje u aplikaciji, stoga procjenjujte samo uključenu besplatnu razinu.",
+      "iap": "Apple navodi da kupnje unutar aplikacije nisu kompatibilne s količinskom kupnjom, upravljanim aplikacijama ni upravljanim Apple računima. Dodjela uređaju ne smije se predstavljati kao potpuno otključavanje. Ako je potrebno potpuno otključavanje, svaki ga korisnik mora kupiti zasebno osobnim Apple računom koji omogućuje kupnje unutar aplikacije.",
+      "fit": "Popisi povezani s obrazovanjem i poslovanjem temelje se na objavljenom upitu izdavača i kontekstu odluke. Slaba ili samo nazivom povezana podudaranja izostavljaju se; izostanak ne znači da je aplikacija neprikladna.",
+      "disclosure": "Ovo je izvorni popis Lumi Studija, a ne Appleova ili Microsoftova potvrda ili preporuka, odobrenje škole ili MDM-a niti dokaz institucionalne vidljivosti ili popusta. Provjerite trgovinu uživo i pravila svoje organizacije.",
+      "measurement": "Generirani kandidat nije implementirani GET, prikaz u pretraživanju, kvalificirani klik ili kopiranje ni institucionalna kupnja ili preuzimanje. Nije bilo implementacije ni prijave u mjerenje; izloženost, radnja i ishod ostaju 0/NA ČEKANJU.",
+      "steps": [
+        "Usporedite brojčani App ID i točan URL s aktualnom stranicom App Storea.",
+        "Za plaćene kandidate koristite Apps and Books, a izravni Intune samo za procjenu besplatne razine.",
+        "Provedite ograničen pilot prema internim pravilima i ne smatrajte dodjelu uređaju IAP otključavanjem."
+      ],
+      "labels": {
+        "roster": "Administratorski popis 46 provjerenih aplikacija",
+        "platform": "Platforma",
+        "purpose": "Svrha i kontekst odluke",
+        "limits": "Ograničenja",
+        "support": "Podrška",
+        "privacy": "Privatnost",
+        "source": "Izvor",
+        "last_checked": "Posljednja provjera",
+        "copy": "Kopiraj",
+        "copied": "Kopirano",
+        "school": "Povezano s obrazovanjem",
+        "business": "Povezano s poslovanjem",
+        "not_shortlisted": "Nije na povezanom užem popisu"
+      }
+    },
+    "hu": {
+      "title": "Intézményi iOS-appbeszerzés előzetes ellenőrzése",
+      "intro": "Első kézből származó, rangsort nem alkotó referencia az Apple School Manager, az Apple Business Manager és a Microsoft Intune rendszergazdáinak 46 ellenőrzött és élő App Store-adatlap értékeléséhez.",
+      "paid": "Az előre fizetős app jelöltként kereshető az Appok és könyvek között. A nyilvános lekérdezés nem bizonyítja, hogy megjelenik a szervezet katalógusában; licencek beszerzése előtt erősítse meg a pontos numerikus App ID-t.",
+      "direct": "Az Intune közvetlen iOS Store-app módszere csak ingyenes appokra használható. Minden itt ingyenesen letölthető app díjmentesen indul, és opcionális egyszeri alkalmazáson belüli feloldást kínál, ezért csak a beépített ingyenes szintet értékelje.",
+      "iap": "Az Apple dokumentációja szerint az alkalmazáson belüli vásárlás nem kompatibilis a mennyiségi vásárlással, a felügyelt appokkal vagy a felügyelt Apple-fiókokkal. Az eszközhöz rendelés nem tekinthető teljes feloldásnak. Ha teljes feloldásra van szükség, azt minden felhasználónak külön kell megvásárolnia alkalmazáson belüli vásárlásra képes személyes Apple-fiókkal.",
+      "fit": "Az oktatási és üzleti kapcsolódású listák a közzétett kiadói keresésből és döntési kontextusból erednek. A gyenge vagy csak névalapú egyezések kimaradnak; a kihagyás nem jelenti, hogy az app alkalmatlan.",
+      "disclosure": "Ez a Lumi Studio elsődleges listája, nem Apple- vagy Microsoft-tanúsítás vagy ajánlás, iskolai vagy MDM-jóváhagyás, illetve intézményi láthatóság vagy kedvezmény bizonyítéka. Az élő áruház és a szervezeti szabályzat az irányadó.",
+      "measurement": "A létrehozott kiadásjelölt nem telepített GET, keresési megjelenés, minősített kattintás vagy másolás, sem intézményi vásárlás vagy letöltés. Nem történt telepítés vagy mérési bejelentkezés; az elérés, művelet és eredmény 0/FÜGGŐBEN marad.",
+      "steps": [
+        "Egyeztesse a numerikus App ID-t és a pontos URL-t az élő App Store-adatlappal.",
+        "Fizetős jelöltnél az Appok és könyvek, ingyenes szint vizsgálatánál csak a közvetlen Intune útvonalat használja.",
+        "Végezzen korlátozott pilotot a belső szabályzat szerint, és ne tekintse az eszközhöz rendelést IAP-feloldásnak."
+      ],
+      "labels": {
+        "roster": "46 ellenőrzött app rendszergazdai listája",
+        "platform": "Platform",
+        "purpose": "Cél és döntési kontextus",
+        "limits": "Korlátok",
+        "support": "Támogatás",
+        "privacy": "Adatvédelem",
+        "source": "Forrás",
+        "last_checked": "Utolsó ellenőrzés",
+        "copy": "Másolás",
+        "copied": "Másolva",
+        "school": "Oktatási kapcsolódás",
+        "business": "Üzleti kapcsolódás",
+        "not_shortlisted": "Nincs a kapcsolódó szűkített listán"
+      }
+    },
+    "id": {
+      "title": "Prapemeriksaan pengadaan institusional app iOS",
+      "intro": "Rujukan pihak pertama tanpa pemeringkatan bagi admin Apple School Manager, Apple Business Manager, dan Microsoft Intune untuk menilai 46 listing App Store yang terverifikasi dan masih aktif.",
+      "paid": "App berbayar di muka dapat dicari sebagai kandidat di Apps and Books. Pencarian publik tidak membuktikan bahwa app tampil di katalog organisasi; pastikan App ID numerik yang tepat sebelum memperoleh lisensi.",
+      "direct": "Metode langsung iOS Store app di Intune hanya untuk app gratis. Semua unduhan gratis di sini dapat dimulai tanpa biaya dan menawarkan pembukaan satu kali opsional di dalam app, jadi nilai hanya tingkat gratis yang disertakan.",
+      "iap": "Apple menyatakan bahwa pembelian dalam app tidak kompatibel dengan pembelian volume, app terkelola, atau Akun Apple Terkelola. Penetapan ke perangkat tidak boleh digambarkan sebagai pembukaan penuh. Jika pembukaan penuh diperlukan, setiap pengguna harus membelinya secara terpisah dengan Akun Apple pribadi yang dapat melakukan pembelian dalam app.",
+      "fit": "Daftar keterkaitan pendidikan dan bisnis memakai kueri penerbit serta konteks keputusan yang dipublikasikan. Kecocokan lemah atau hanya berdasarkan nama tidak dicantumkan; tidak tercantum bukan berarti app tidak sesuai.",
+      "disclosure": "Ini adalah daftar pihak pertama Lumi Studio, bukan sertifikasi atau dukungan Apple atau Microsoft, persetujuan sekolah atau MDM, bukti visibilitas institusional, maupun bukti diskon. Periksa store aktif dan kebijakan organisasi Anda.",
+      "measurement": "Release candidate yang dihasilkan bukan GET yang telah diterapkan, tayangan penelusuran, klik atau salinan berkualifikasi, pembelian institusional, maupun unduhan. Tidak ada deployment atau login pengukuran; exposure, action, dan outcome tetap 0/PENDING.",
+      "steps": [
+        "Cocokkan App ID numerik dan URL persis dengan halaman App Store yang aktif.",
+        "Gunakan Apps and Books untuk kandidat berbayar dan Intune langsung hanya untuk evaluasi tingkat gratis.",
+        "Jalankan pilot terbatas sesuai kebijakan internal dan jangan anggap penetapan perangkat membuka IAP."
+      ],
+      "labels": {
+        "roster": "Daftar admin 46 app terverifikasi",
+        "platform": "Platform",
+        "purpose": "Tujuan dan konteks keputusan",
+        "limits": "Batasan",
+        "support": "Dukungan",
+        "privacy": "Privasi",
+        "source": "Sumber",
+        "last_checked": "Terakhir diperiksa",
+        "copy": "Salin",
+        "copied": "Disalin",
+        "school": "Terkait pendidikan",
+        "business": "Terkait bisnis",
+        "not_shortlisted": "Tidak masuk daftar keterkaitan"
+      }
+    },
+    "it": {
+      "title": "Verifica preliminare per l’acquisto istituzionale di app iOS",
+      "intro": "Riferimento proprietario e non classificatorio per gli amministratori di Apple School Manager, Apple Business Manager e Microsoft Intune che valutano 46 schede App Store verificate e attive.",
+      "paid": "Un’app a pagamento anticipato può essere cercata come candidata in App e libri. La consultazione pubblica non dimostra che compaia nel catalogo dell’organizzazione; conferma l’App ID numerico esatto prima di acquisire le licenze.",
+      "direct": "Il metodo diretto “app iOS dello Store” in Intune è riservato alle app gratuite. Ogni download gratuito qui inizia gratis e offre uno sblocco una tantum opzionale nell’app, quindi valuta solo il livello gratuito incluso.",
+      "iap": "Apple indica che gli acquisti in-app non sono compatibili con acquisti in volume, app gestite o account Apple gestiti. L’assegnazione al dispositivo non deve essere presentata come sblocco completo. Se serve lo sblocco completo, ogni utente deve acquistarlo separatamente con un Apple Account personale abilitato agli acquisti in-app.",
+      "fit": "Gli elenchi correlati a istruzione e attività aziendali derivano dalla query dell’editore e dal contesto decisionale pubblicati. Le corrispondenze deboli o solo nominali sono escluse; l’esclusione non implica che l’app sia inadatta.",
+      "disclosure": "Questo è un elenco proprietario di Lumi Studio, non una certificazione o raccomandazione Apple o Microsoft, un’approvazione scolastica o MDM, né una prova di visibilità istituzionale o di sconto. Verifica lo store attivo e la policy dell’organizzazione.",
+      "measurement": "Un candidato generato non è un GET distribuito, un’impressione di ricerca, un clic o una copia qualificati, né un acquisto o download istituzionale. Non sono avvenuti distribuzione o accesso alle misurazioni; esposizione, azione ed esito restano 0/IN ATTESA.",
+      "steps": [
+        "Confronta l’App ID numerico e l’URL esatto con la scheda App Store attiva.",
+        "Usa App e libri per i candidati a pagamento e Intune diretto solo per valutare il livello gratuito.",
+        "Esegui un progetto pilota limitato secondo la policy interna e non considerare l’assegnazione al dispositivo uno sblocco IAP."
+      ],
+      "labels": {
+        "roster": "Elenco amministrativo di 46 app verificate",
+        "platform": "Piattaforma",
+        "purpose": "Finalità e contesto decisionale",
+        "limits": "Limiti",
+        "support": "Supporto",
+        "privacy": "Privacy",
+        "source": "Fonte",
+        "last_checked": "Ultima verifica",
+        "copy": "Copia",
+        "copied": "Copiato",
+        "school": "Correlata all’istruzione",
+        "business": "Correlata alle attività aziendali",
+        "not_shortlisted": "Fuori dagli elenchi correlati"
+      }
+    },
+    "ja": {
+      "title": "組織向けiOSアプリ調達の事前確認",
+      "intro": "Apple School Manager、Apple Business Manager、Microsoft Intuneの管理者が、App Storeで公開中と確認した46件を評価するための、開発元による順位付けのない確認資料です。",
+      "paid": "前払い型アプリは「Appとブック」で候補として検索できます。ただし公開検索は組織のカタログに表示されることを証明しません。ライセンス取得前に、コンテンツマネージャが正確な数字のApp IDを確認してください。",
+      "direct": "IntuneでApp Storeから直接追加する方法は、ストア上で無料のアプリに限られます。ここで無料ダウンロードのアプリはすべて、無料範囲と任意の買い切り型アプリ内課金を持つため、含まれる無料範囲だけを評価してください。",
+      "iap": "Appleの資料では、アプリ内課金は一括購入、管理対象アプリ、管理対象Apple Accountと互換性がありません。デバイス割り当てを完全版の解除として扱わないでください。 完全版のロック解除が必要な場合は、App内課金を利用できる個人のApple Accountで、各利用者が個別に購入する必要があります。",
+      "fit": "教育・業務との関連リストは、公開済みの開発元クエリと判断文脈に基づきます。弱い一致や名前だけの一致は除外しますが、除外はアプリが不適切という意味ではありません。",
+      "disclosure": "これはLumi Studioによる一次資料です。AppleやMicrosoftの認定・推奨、学校やMDMの承認、組織カタログでの表示、割引の存在を示すものではありません。実際のストアと組織の規程を確認してください。",
+      "measurement": "生成済み候補は、公開先へのGET、検索表示、適格なクリックやコピー、組織購入、ダウンロードとは別です。公開も計測サービスへのログインも行っていないため、露出・行動・成果は0／保留のままです。",
+      "steps": [
+        "数字のApp IDと正確なURLを、日本のApp Storeの現行ページと照合します。",
+        "有料候補は「Appとブック」のコンテンツマネージャが表示可否と必要ライセンス数を確認します。",
+        "Intuneの直接追加では、アプリ内課金なしで使える無料範囲を機能単位で記録します。",
+        "監視対象・共有・ユーザー登録のiPad構成で試験し、デバイス／ユーザーライセンスを明示的に選びます。",
+        "校内・社内の個人情報保護、アクセシビリティ、情報セキュリティ、児童向け基準を審査し、インストール成功を承認とみなしません。"
+      ],
+      "labels": {
+        "roster": "公開確認済み46アプリの管理者用一覧",
+        "platform": "対応端末",
+        "purpose": "用途と判断文脈",
+        "limits": "制約",
+        "support": "サポート",
+        "privacy": "プライバシー",
+        "source": "出典",
+        "last_checked": "最終確認",
+        "copy": "コピー",
+        "copied": "コピー済み",
+        "school": "教育関連",
+        "business": "業務関連",
+        "not_shortlisted": "関連候補リスト外"
+      }
+    },
+    "kn-IN": {
+      "title": "ಸಾಂಸ್ಥಿಕ iOS App ಖರೀದಿಯ ಪೂರ್ವ ಪರಿಶೀಲನೆ",
+      "intro": "Apple School Manager, Apple Business Manager ಮತ್ತು Microsoft Intune ನಿರ್ವಾಹಕರು App Storeನಲ್ಲಿ ಗುರುತು ಮತ್ತು ಲಭ್ಯತೆ ದೃಢಪಟ್ಟ 46 Appಗಳನ್ನು ಮೌಲ್ಯಮಾಪನ ಮಾಡಲು ಮೊದಲ-ಪಕ್ಷದ, ಶ್ರೇಯಾಂಕವಿಲ್ಲದ ಉಲ್ಲೇಖ.",
+      "paid": "ಮುಂಗಡ ಪಾವತಿಯ App ಅನ್ನು Apps and Booksನಲ್ಲಿ ಅಭ್ಯರ್ಥಿಯಾಗಿ ಹುಡುಕಬಹುದು. ಸಾರ್ವಜನಿಕ lookup ನಿಮ್ಮ ಸಂಸ್ಥೆಯ catalogನಲ್ಲಿ ಕಾಣುವುದನ್ನು ಸಾಬೀತುಪಡಿಸುವುದಿಲ್ಲ; licence ಪಡೆಯುವ ಮೊದಲು ನಿಖರ ಸಂಖ್ಯಾತ್ಮಕ App ID ದೃಢಪಡಿಸಿ.",
+      "direct": "Intuneನ direct iOS Store app ವಿಧಾನ ಉಚಿತ Appಗಳಿಗೆ ಮಾತ್ರ. ಇಲ್ಲಿನ ಪ್ರತಿ ಉಚಿತ download App ಉಚಿತವಾಗಿ ಆರಂಭವಾಗಿ ಐಚ್ಛಿಕ ಒಮ್ಮೆ ಮಾತ್ರದ in-app unlock ನೀಡುತ್ತದೆ; ಒಳಗೊಂಡ ಉಚಿತ ಹಂತವನ್ನಷ್ಟೇ ಮೌಲ್ಯಮಾಪನ ಮಾಡಿ.",
+      "iap": "Apple ದಾಖಲೆ ಪ್ರಕಾರ in-app purchase, volume purchase, managed app ಅಥವಾ Managed Apple Accountಗೆ ಹೊಂದಿಕೆಯಾಗುವುದಿಲ್ಲ. Device assignment ಅನ್ನು ಪೂರ್ಣ unlock ಎಂದು ತೋರಿಸಬಾರದು. ಪೂರ್ಣ ಅನ್‌ಲಾಕ್ ಅಗತ್ಯವಿದ್ದರೆ, ಪ್ರತಿಯೊಬ್ಬ ಬಳಕೆದಾರರು in-app ಖರೀದಿ ಮಾಡಬಲ್ಲ ವೈಯಕ್ತಿಕ Apple Account ಮೂಲಕ ಅದನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ಖರೀದಿಸಬೇಕು.",
+      "fit": "ಶಿಕ್ಷಣ ಮತ್ತು ವ್ಯವಹಾರ ಸಂಬಂಧಿತ ಪಟ್ಟಿಗಳು ಪ್ರಕಟಿತ publisher query ಮತ್ತು decision context ಆಧರಿಸಿವೆ. ದುರ್ಬಲ ಅಥವಾ ಹೆಸರಿನ ಆಧಾರದಲ್ಲಿನ ಹೊಂದಾಣಿಕೆಗಳನ್ನು ಬಿಡಲಾಗುತ್ತದೆ; ಬಿಡುವುದು App ಅನರ್ಹ ಎಂದಲ್ಲ.",
+      "disclosure": "ಇದು Lumi Studioದ ಮೊದಲ-ಪಕ್ಷದ ಪಟ್ಟಿ; Apple ಅಥವಾ Microsoft ಪ್ರಮಾಣೀಕರಣ ಅಥವಾ ಬೆಂಬಲ, ಶಾಲೆ ಅಥವಾ MDM ಅನುಮೋದನೆ, ಸಾಂಸ್ಥಿಕ ಗೋಚರತೆ ಅಥವಾ ರಿಯಾಯಿತಿಯ ಸಾಕ್ಷ್ಯವಲ್ಲ. ನೇರ store ಮತ್ತು ಸಂಸ್ಥೆಯ ನೀತಿ ಅಂತಿಮ.",
+      "measurement": "ರಚಿಸಿದ release candidate, deployed GET, search impression, ಅರ್ಹ click/copy ಅಥವಾ ಸಾಂಸ್ಥಿಕ purchase/download ಅಲ್ಲ. deployment ಅಥವಾ measurement login ನಡೆದಿಲ್ಲ; exposure, action ಮತ್ತು outcome 0/PENDING ಆಗಿಯೇ ಇರುತ್ತವೆ.",
+      "steps": [
+        "ಸಂಖ್ಯಾತ್ಮಕ App ID ಮತ್ತು ನಿಖರ URL ಅನ್ನು ನೇರ App Store ಪುಟದೊಂದಿಗೆ ಹೊಂದಿಸಿ.",
+        "ಪಾವತಿ ಅಭ್ಯರ್ಥಿಗೆ Apps and Books ಮತ್ತು ಉಚಿತ ಹಂತದ ಪರೀಕ್ಷೆಗೆ ಮಾತ್ರ Intune direct-store ಬಳಸಿ.",
+        "ಸಂಸ್ಥೆಯ ನೀತಿಯಂತೆ ಸೀಮಿತ pilot ನಡೆಸಿ, device assignment ಅನ್ನು IAP unlock ಎಂದು ಭಾವಿಸಬೇಡಿ."
+      ],
+      "labels": {
+        "roster": "46 ದೃಢಪಟ್ಟ Appಗಳ ನಿರ್ವಾಹಕ ಪಟ್ಟಿ",
+        "platform": "ವೇದಿಕೆ",
+        "purpose": "ಉದ್ದೇಶ ಮತ್ತು ನಿರ್ಧಾರ ಸಂದರ್ಭ",
+        "limits": "ಮಿತಿಗಳು",
+        "support": "ಬೆಂಬಲ",
+        "privacy": "ಗೌಪ್ಯತೆ",
+        "source": "ಮೂಲ",
+        "last_checked": "ಕೊನೆಯ ಪರಿಶೀಲನೆ",
+        "copy": "ನಕಲಿಸಿ",
+        "copied": "ನಕಲಿಸಲಾಗಿದೆ",
+        "school": "ಶಿಕ್ಷಣ ಸಂಬಂಧಿತ",
+        "business": "ವ್ಯವಹಾರ ಸಂಬಂಧಿತ",
+        "not_shortlisted": "ಸಂಬಂಧಿತ ಕಿರುಪಟ್ಟಿಯಲ್ಲಿ ಇಲ್ಲ"
+      }
+    },
+    "ko": {
+      "title": "기관용 iOS 앱 구매 사전 점검",
+      "intro": "Apple School Manager, Apple Business Manager 및 Microsoft Intune 관리자가 App Store에서 현재 제공 중임이 확인된 46개 앱을 검토할 수 있는 개발사 제공 비순위 자료입니다.",
+      "paid": "선결제 앱은 ‘앱 및 도서’에서 후보로 검색할 수 있습니다. 공개 조회만으로 조직 카탈로그 노출이 입증되지는 않으므로 라이선스 취득 전에 정확한 숫자 App ID를 확인해야 합니다.",
+      "direct": "Intune의 직접 iOS Store 앱 방식은 무료 앱에만 사용할 수 있습니다. 여기의 무료 다운로드 앱은 모두 무료 범위와 선택적 일회성 앱 내 잠금 해제를 제공하므로 포함된 무료 범위만 평가하십시오.",
+      "iap": "Apple 문서에 따르면 앱 내 구입은 대량 구입, 관리형 앱 또는 관리형 Apple 계정과 호환되지 않습니다. 기기 할당을 전체 잠금 해제로 설명해서는 안 됩니다. 전체 잠금 해제가 필요하면 각 사용자가 앱 내 구입이 가능한 개인 Apple 계정으로 별도 구입해야 합니다.",
+      "fit": "교육 및 업무 관련 목록은 공개된 개발사 검색어와 의사결정 맥락을 기준으로 합니다. 약한 일치나 이름만의 일치는 제외하며, 제외가 앱의 부적합을 뜻하지는 않습니다.",
+      "disclosure": "이 목록은 Lumi Studio의 개발사 자료이며 Apple 또는 Microsoft 인증·추천, 학교 또는 MDM 승인, 기관 카탈로그 노출이나 할인 존재의 증거가 아닙니다. 실제 스토어와 조직 정책을 확인하십시오.",
+      "measurement": "생성된 후보는 배포된 GET, 검색 노출, 유효 클릭·복사, 기관 구매 또는 다운로드와 다릅니다. 배포나 측정 로그인을 하지 않았으므로 노출·행동·결과는 0/대기 상태입니다.",
+      "steps": [
+        "숫자 App ID와 정확한 URL을 현재 App Store 페이지와 대조합니다.",
+        "유료 후보는 ‘앱 및 도서’를, 무료 범위 평가는 Intune 직접 방식을 사용합니다.",
+        "조직 정책에 따라 제한된 시험을 진행하고 기기 할당을 IAP 잠금 해제로 간주하지 않습니다."
+      ],
+      "labels": {
+        "roster": "공개 확인된 46개 앱 관리자 목록",
+        "platform": "지원 기기",
+        "purpose": "용도와 의사결정 맥락",
+        "limits": "제약",
+        "support": "지원",
+        "privacy": "개인정보 보호",
+        "source": "출처",
+        "last_checked": "최종 확인",
+        "copy": "복사",
+        "copied": "복사됨",
+        "school": "교육 관련",
+        "business": "업무 관련",
+        "not_shortlisted": "관련 후보 목록에 없음"
+      }
+    },
+    "ml-IN": {
+      "title": "സ്ഥാപനതല iOS App വാങ്ങലിന്റെ മുൻപരിശോധന",
+      "intro": "Apple School Manager, Apple Business Manager, Microsoft Intune അഡ്മിന്മാർക്ക് App Store-ൽ തിരിച്ചറിയലും സജീവാവസ്ഥയും സ്ഥിരീകരിച്ച 46 Appകൾ വിലയിരുത്താനുള്ള ആദ്യകക്ഷി, റാങ്കിങ് ഇല്ലാത്ത അവലംബം.",
+      "paid": "മുൻകൂർ പണമടയ്ക്കുന്ന Appനെ Apps and Booksൽ സ്ഥാനാർഥിയായി തിരയാം. പൊതുവായ lookup നിങ്ങളുടെ സ്ഥാപന catalogൽ ദൃശ്യമാണെന്ന് തെളിയിക്കുന്നില്ല; licence എടുക്കുന്നതിന് മുമ്പ് കൃത്യമായ സംഖ്യാ App ID ഉറപ്പാക്കുക.",
+      "direct": "Intuneന്റെ direct iOS Store app രീതി സൗജന്യ Appകൾക്ക് മാത്രം. ഇവിടെ സൗജന്യമായി download ചെയ്യുന്ന ഓരോ Appവും സൗജന്യമായി ആരംഭിക്കുകയും ഐച്ഛിക ഒറ്റത്തവണ in-app unlock നൽകുകയും ചെയ്യുന്നു; ഉൾപ്പെട്ട സൗജന്യ നില മാത്രം വിലയിരുത്തുക.",
+      "iap": "Apple രേഖകൾ പ്രകാരം in-app purchase, volume purchase, managed app, Managed Apple Account എന്നിവയുമായി പൊരുത്തപ്പെടുന്നില്ല. Device assignmentനെ പൂർണ്ണ unlock ആയി അവതരിപ്പിക്കരുത്. പൂർണ്ണ അൺലോക്ക് ആവശ്യമെങ്കിൽ, in-app purchase നടത്താനാകുന്ന വ്യക്തിഗത Apple Account ഉപയോഗിച്ച് ഓരോ ഉപയോക്താവും അത് പ്രത്യേകം വാങ്ങണം.",
+      "fit": "വിദ്യാഭ്യാസവും ബിസിനസും സംബന്ധിച്ച പട്ടികകൾ പ്രസിദ്ധീകരിച്ച publisher query, decision context എന്നിവയെ അടിസ്ഥാനമാക്കുന്നു. ദുർബലമോ പേര് മാത്രം അടിസ്ഥാനമാക്കിയതോ ആയ പൊരുത്തങ്ങൾ ഒഴിവാക്കും; ഒഴിവാക്കൽ App അനുയോജ്യമല്ലെന്നർത്ഥമല്ല.",
+      "disclosure": "ഇത് Lumi Studioയുടെ ആദ്യകക്ഷി പട്ടികയാണ്; Apple അല്ലെങ്കിൽ Microsoft സർട്ടിഫിക്കേഷൻ/പിന്തുണ, സ്കൂൾ/MDM അംഗീകാരം, സ്ഥാപന ദൃശ്യത അല്ലെങ്കിൽ discount തെളിവല്ല. തത്സമയ storeയും നിങ്ങളുടെ സ്ഥാപന നയവും പരിശോധിക്കുക.",
+      "measurement": "സൃഷ്ടിച്ച release candidate, deployed GET, search impression, യോഗ്യമായ click/copy, സ്ഥാപന purchase/download എന്നിവയല്ല. deployment അല്ലെങ്കിൽ measurement login നടത്തിയിട്ടില്ല; exposure, action, outcome 0/PENDING ആയി തുടരും.",
+      "steps": [
+        "സംഖ്യാ App IDയും കൃത്യമായ URLയും തത്സമയ App Store പേജുമായി പൊരുത്തപ്പെടുത്തുക.",
+        "പണമടയ്ക്കുന്ന സ്ഥാനാർഥിക്ക് Apps and Booksയും സൗജന്യ നില പരിശോധിക്കാൻ മാത്രം Intune direct-storeയും ഉപയോഗിക്കുക.",
+        "സ്ഥാപന നയം അനുസരിച്ച് പരിമിത pilot നടത്തി device assignmentനെ IAP unlock ആയി കരുതരുത്."
+      ],
+      "labels": {
+        "roster": "സ്ഥിരീകരിച്ച 46 Appകളുടെ അഡ്മിൻ പട്ടിക",
+        "platform": "പ്ലാറ്റ്ഫോം",
+        "purpose": "ഉദ്ദേശ്യവും തീരുമാന സന്ദർഭവും",
+        "limits": "പരിമിതികൾ",
+        "support": "സഹായം",
+        "privacy": "സ്വകാര്യത",
+        "source": "ഉറവിടം",
+        "last_checked": "അവസാന പരിശോധന",
+        "copy": "പകർത്തുക",
+        "copied": "പകർത്തി",
+        "school": "വിദ്യാഭ്യാസ ബന്ധം",
+        "business": "ബിസിനസ് ബന്ധം",
+        "not_shortlisted": "ബന്ധപ്പെട്ട ചുരുക്കപ്പട്ടികയിൽ ഇല്ല"
+      }
+    },
+    "mr-IN": {
+      "title": "संस्थात्मक iOS App खरेदीची पूर्वतपासणी",
+      "intro": "Apple School Manager, Apple Business Manager आणि Microsoft Intune प्रशासकांसाठी App Store वर ओळख व उपलब्धता सत्यापित केलेल्या 46 Appsचे प्रथम-पक्ष, क्रमवारी नसलेले मूल्यमापन संदर्भ.",
+      "paid": "आधी पैसे द्यावी लागणारी App ही Apps and Booksमध्ये उमेदवार म्हणून शोधता येते. सार्वजनिक lookup तुमच्या संस्थेच्या catalogमध्ये ती दिसते हे सिद्ध करत नाही; licences घेण्यापूर्वी अचूक सांख्यिक App ID तपासा.",
+      "direct": "Intuneची direct iOS Store app पद्धत फक्त मोफत Appsसाठी आहे. येथील प्रत्येक मोफत download App मोफत सुरू होते आणि पर्यायी एकदाच in-app unlock देते; म्हणून समाविष्ट मोफत स्तराचेच मूल्यमापन करा.",
+      "iap": "Appleच्या दस्तऐवजानुसार in-app purchase हे volume purchase, managed app किंवा Managed Apple Accountशी सुसंगत नाही. Device assignmentला पूर्ण unlock म्हणून मांडू नका. पूर्ण अनलॉक आवश्यक असल्यास प्रत्येक वापरकर्त्याने in-app purchase करू शकणाऱ्या वैयक्तिक Apple Account ने ते स्वतंत्रपणे खरेदी करणे आवश्यक आहे.",
+      "fit": "शिक्षण आणि व्यवसायाशी संबंधित याद्या प्रकाशित publisher query व decision contextवर आधारित आहेत. कमकुवत किंवा केवळ नावावर आधारित जुळणी वगळली जाते; वगळणे म्हणजे App अयोग्य नाही.",
+      "disclosure": "ही Lumi Studioची प्रथम-पक्ष यादी आहे; Apple किंवा Microsoft प्रमाणन/समर्थन, शाळा किंवा MDM मंजुरी, संस्थात्मक दृश्यता किंवा discountचा पुरावा नाही. थेट store आणि तुमच्या संस्थेचे धोरण अंतिम आहे.",
+      "measurement": "तयार release candidate म्हणजे deployed GET, search impression, पात्र click/copy किंवा संस्थात्मक purchase/download नाही. deployment किंवा measurement login झालेले नाही; exposure, action आणि outcome 0/PENDING राहतात.",
+      "steps": [
+        "सांख्यिक App ID आणि अचूक URL थेट App Store पानाशी जुळवा.",
+        "पैसे देण्याच्या उमेदवारासाठी Apps and Books आणि मोफत स्तर तपासण्यासाठीच Intune direct-store वापरा.",
+        "संस्थेच्या धोरणानुसार मर्यादित pilot करा आणि device assignmentला IAP unlock समजू नका."
+      ],
+      "labels": {
+        "roster": "46 सत्यापित Appsची प्रशासक यादी",
+        "platform": "प्लॅटफॉर्म",
+        "purpose": "उद्देश आणि निर्णय संदर्भ",
+        "limits": "मर्यादा",
+        "support": "सहाय्य",
+        "privacy": "गोपनीयता",
+        "source": "स्रोत",
+        "last_checked": "शेवटची तपासणी",
+        "copy": "कॉपी",
+        "copied": "कॉपी झाले",
+        "school": "शिक्षण-संबंधित",
+        "business": "व्यवसाय-संबंधित",
+        "not_shortlisted": "संबंधित लघुयादीत नाही"
+      }
+    },
+    "ms": {
+      "title": "Prasemakan perolehan institusi app iOS",
+      "intro": "Rujukan pihak pertama tanpa kedudukan untuk pentadbir Apple School Manager, Apple Business Manager dan Microsoft Intune menilai 46 penyenaraian App Store yang disahkan dan masih tersedia.",
+      "paid": "App berbayar awal boleh dicari sebagai calon dalam Apps and Books. Carian awam tidak membuktikan kemunculan dalam katalog organisasi; sahkan App ID berangka yang tepat sebelum memperoleh lesen.",
+      "direct": "Kaedah terus iOS Store app dalam Intune hanya untuk app percuma. Semua muat turun percuma di sini bermula secara percuma dan menawarkan buka kunci sekali bayar dalam app, jadi nilai hanya tahap percuma yang disertakan.",
+      "iap": "Apple menyatakan pembelian dalam app tidak serasi dengan pembelian pukal, app terurus atau Akaun Apple Terurus. Penetapan peranti tidak boleh digambarkan sebagai buka kunci penuh. Jika buka kunci penuh diperlukan, setiap pengguna mesti membelinya secara berasingan dengan Akaun Apple peribadi yang boleh membuat pembelian dalam app.",
+      "fit": "Senarai berkaitan pendidikan dan perniagaan menggunakan pertanyaan penerbit dan konteks keputusan yang diterbitkan. Padanan lemah atau berdasarkan nama sahaja diketepikan; ketiadaan tidak bermakna app tidak sesuai.",
+      "disclosure": "Ini ialah senarai pihak pertama Lumi Studio, bukan pensijilan atau sokongan Apple atau Microsoft, kelulusan sekolah atau MDM, bukti keterlihatan institusi atau diskaun. Semak store langsung dan dasar organisasi anda.",
+      "measurement": "Release candidate yang dijana bukan GET yang dikerah, paparan carian, klik atau salinan layak, pembelian institusi atau muat turun. Tiada deployment atau log masuk pengukuran; exposure, action dan outcome kekal 0/PENDING.",
+      "steps": [
+        "Padankan App ID berangka dan URL tepat dengan halaman App Store langsung.",
+        "Gunakan Apps and Books untuk calon berbayar dan Intune terus hanya bagi penilaian tahap percuma.",
+        "Jalankan rintis terhad mengikut dasar dalaman dan jangan anggap penetapan peranti membuka IAP."
+      ],
+      "labels": {
+        "roster": "Senarai pentadbir 46 app disahkan",
+        "platform": "Platform",
+        "purpose": "Tujuan dan konteks keputusan",
+        "limits": "Had",
+        "support": "Sokongan",
+        "privacy": "Privasi",
+        "source": "Sumber",
+        "last_checked": "Terakhir disemak",
+        "copy": "Salin",
+        "copied": "Disalin",
+        "school": "Berkaitan pendidikan",
+        "business": "Berkaitan perniagaan",
+        "not_shortlisted": "Tiada dalam senarai berkaitan"
+      }
+    },
+    "nl-NL": {
+      "title": "Voorcontrole voor institutionele inkoop van iOS-apps",
+      "intro": "Een bron van de ontwikkelaar zonder rangschikking voor beheerders van Apple School Manager, Apple Business Manager en Microsoft Intune die 46 geverifieerde, actuele App Store-vermeldingen beoordelen.",
+      "paid": "Een vooraf betaalde app kan als kandidaat worden gezocht in Apps en boeken. Een openbare lookup bewijst niet dat de app in de catalogus van uw organisatie staat; bevestig vóór licentieverwerving de exacte numerieke App ID.",
+      "direct": "De directe methode voor iOS Store-apps in Intune geldt alleen voor gratis apps. Elke gratis download hier start kosteloos en biedt een optionele eenmalige ontgrendeling in de app; beoordeel daarom alleen het inbegrepen gratis niveau.",
+      "iap": "Apple vermeldt dat aankopen in de app niet compatibel zijn met volumeaankoop, beheerde apps of beheerde Apple accounts. Apparaattoewijzing mag niet als volledige ontgrendeling worden voorgesteld. Als volledige ontgrendeling nodig is, moet iedere gebruiker die afzonderlijk kopen met een persoonlijke Apple Account waarmee in-app aankopen mogelijk zijn.",
+      "fit": "De lijsten voor onderwijs en bedrijfsgebruik zijn gebaseerd op de gepubliceerde uitgeversquery en besliscontext. Zwakke of uitsluitend op de naam gebaseerde matches worden weggelaten; weglating betekent niet dat de app ongeschikt is.",
+      "disclosure": "Dit is een bronlijst van Lumi Studio, geen Apple- of Microsoft-certificering of aanbeveling, school- of MDM-goedkeuring, bewijs van institutionele zichtbaarheid of korting. Controleer de live store en het beleid van uw organisatie.",
+      "measurement": "Een gegenereerde release candidate is geen uitgerolde GET, zoekvertoning, gekwalificeerde klik of kopie, institutionele aankoop of download. Er is niet uitgerold of ingelogd voor meting; bereik, actie en resultaat blijven 0/IN AFWACHTING.",
+      "steps": [
+        "Vergelijk de numerieke App ID en exacte URL met de actuele App Store-pagina.",
+        "Gebruik Apps en boeken voor betaalde kandidaten en Intune direct alleen voor beoordeling van het gratis niveau.",
+        "Voer een beperkte pilot uit volgens intern beleid en beschouw apparaattoewijzing niet als IAP-ontgrendeling."
+      ],
+      "labels": {
+        "roster": "Beheerderslijst met 46 geverifieerde apps",
+        "platform": "Platform",
+        "purpose": "Doel en besliscontext",
+        "limits": "Beperkingen",
+        "support": "Ondersteuning",
+        "privacy": "Privacy",
+        "source": "Bron",
+        "last_checked": "Laatst gecontroleerd",
+        "copy": "Kopiëren",
+        "copied": "Gekopieerd",
+        "school": "Onderwijsgerelateerd",
+        "business": "Bedrijfsgerelateerd",
+        "not_shortlisted": "Niet op een gerelateerde shortlist"
+      }
+    },
+    "no": {
+      "title": "Forhåndskontroll av institusjonelt kjøp av iOS-apper",
+      "intro": "En førstepartskilde uten rangering for administratorer av Apple School Manager, Apple Business Manager og Microsoft Intune som vurderer 46 verifiserte og aktive App Store-oppføringer.",
+      "paid": "En forhåndsbetalt app kan søkes som kandidat i Apper og bøker. Et offentlig oppslag beviser ikke synlighet i organisasjonens katalog; bekreft nøyaktig numerisk App ID før lisenser anskaffes.",
+      "direct": "Intunes direkte metode for iOS Store-app gjelder bare gratis apper. Alle gratis nedlastinger her starter gratis og har en valgfri engangsopplåsing i appen, så vurder bare det inkluderte gratisnivået.",
+      "iap": "Apple opplyser at kjøp i appen ikke er kompatible med volumkjøp, administrerte apper eller administrerte Apple-kontoer. Enhetstildeling må ikke fremstilles som full opplåsing. Hvis full opplåsing er nødvendig, må hver bruker kjøpe den separat med en personlig Apple-konto som kan foreta kjøp i appen.",
+      "fit": "Listene for utdannings- og virksomhetsrelevans bygger på publisert utgiversøk og beslutningskontekst. Svake eller rent navnebaserte treff utelates; utelatelse betyr ikke at appen er uegnet.",
+      "disclosure": "Dette er Lumi Studios førstepartsliste, ikke Apple- eller Microsoft-sertifisering eller anbefaling, skole- eller MDM-godkjenning, bevis på institusjonell synlighet eller rabatt. Sjekk aktiv butikk og organisasjonens regler.",
+      "measurement": "En generert utgivelseskandidat er ikke et implementert GET, søkevisning, kvalifisert klikk eller kopiering eller et institusjonelt kjøp eller nedlasting. Ingen implementering eller målingsinnlogging skjedde; eksponering, handling og resultat forblir 0/VENTER.",
+      "steps": [
+        "Sammenlign numerisk App ID og nøyaktig URL med den aktive App Store-siden.",
+        "Bruk Apper og bøker for betalte kandidater og Intune direkte bare for evaluering av gratisnivået.",
+        "Kjør en begrenset pilot etter interne regler, og ikke anta at enhetstildeling låser opp IAP."
+      ],
+      "labels": {
+        "roster": "Administratorliste med 46 verifiserte apper",
+        "platform": "Plattform",
+        "purpose": "Formål og beslutningskontekst",
+        "limits": "Begrensninger",
+        "support": "Kundestøtte",
+        "privacy": "Personvern",
+        "source": "Kilde",
+        "last_checked": "Sist kontrollert",
+        "copy": "Kopier",
+        "copied": "Kopiert",
+        "school": "Utdanningsrelatert",
+        "business": "Virksomhetsrelatert",
+        "not_shortlisted": "Ikke på relevant kortliste"
+      }
+    },
+    "or-IN": {
+      "title": "ସଂସ୍ଥାଗତ iOS App କ୍ରୟର ପୂର୍ବ ଯାଞ୍ଚ",
+      "intro": "Apple School Manager, Apple Business Manager ଓ Microsoft Intune ପ୍ରଶାସକଙ୍କ ପାଇଁ App Storeରେ ପରିଚୟ ଓ ସକ୍ରିୟତା ଯାଞ୍ଚ ହୋଇଥିବା 46ଟି Appର ପ୍ରଥମ-ପକ୍ଷ, ର୍ୟାଙ୍କିଂ-ବିହୀନ ମୂଲ୍ୟାୟନ ସନ୍ଦର୍ଭ।",
+      "paid": "ଆଗୁଆ ଦେୟ Appକୁ Apps and Booksରେ ପ୍ରାର୍ଥୀ ଭାବେ ଖୋଜିହେବ। ସାର୍ବଜନୀନ lookup ଆପଣଙ୍କ ସଂସ୍ଥା catalogରେ ଦେଖାଯିବା ପ୍ରମାଣ କରେନାହିଁ; licence ନେବା ପୂର୍ବରୁ ସଠିକ୍ ସଂଖ୍ୟାତ୍ମକ App ID ଯାଞ୍ଚ କରନ୍ତୁ।",
+      "direct": "Intuneର direct iOS Store app ପଦ୍ଧତି କେବଳ ମାଗଣା App ପାଇଁ। ଏଠାରେ ପ୍ରତ୍ୟେକ ମାଗଣା download App ମାଗଣାରେ ଆରମ୍ଭ ହୋଇ ଇଚ୍ଛାଧୀନ ଏକକାଳୀନ in-app unlock ଦିଏ; କେବଳ ଅନ୍ତର୍ଭୁକ୍ତ ମାଗଣା ସ୍ତର ମୂଲ୍ୟାୟନ କରନ୍ତୁ।",
+      "iap": "Apple ଦଲିଲ ଅନୁସାରେ in-app purchase, volume purchase, managed app କିମ୍ବା Managed Apple Account ସହ ସୁସଂଗତ ନୁହେଁ। Device assignmentକୁ ପୂର୍ଣ୍ଣ unlock ବୋଲି ଦର୍ଶାନ୍ତୁ ନାହିଁ। ସମ୍ପୂର୍ଣ୍ଣ ଅନଲକ୍ ଆବଶ୍ୟକ ହେଲେ, ପ୍ରତ୍ୟେକ ବ୍ୟବହାରକାରୀଙ୍କୁ in-app purchase କରିପାରୁଥିବା ବ୍ୟକ୍ତିଗତ Apple Account ଦ୍ୱାରା ଏହା ଅଲଗାଭାବେ କିଣିବାକୁ ପଡ଼ିବ।",
+      "fit": "ଶିକ୍ଷା ଓ ବ୍ୟବସାୟ ସମ୍ପର୍କିତ ତାଲିକା ପ୍ରକାଶିତ publisher query ଓ decision context ଉପରେ ଆଧାରିତ। ଦୁର୍ବଳ କିମ୍ବା କେବଳ ନାମ-ଆଧାରିତ ମେଳ ବାଦ ପଡ଼େ; ବାଦ ପଡ଼ିବାର ଅର୍ଥ App ଅନୁପଯୁକ୍ତ ନୁହେଁ।",
+      "disclosure": "ଏହା Lumi Studioର ପ୍ରଥମ-ପକ୍ଷ ତାଲିକା; Apple କିମ୍ବା Microsoft ପ୍ରମାଣନ/ସମର୍ଥନ, ସ୍କୁଲ କିମ୍ବା MDM ଅନୁମୋଦନ, ସଂସ୍ଥାଗତ ଦୃଶ୍ୟତା କିମ୍ବା discountର ପ୍ରମାଣ ନୁହେଁ। ସକ୍ରିୟ store ଓ ସଂସ୍ଥା ନୀତି ଯାଞ୍ଚ କରନ୍ତୁ।",
+      "measurement": "ତିଆରି release candidate, deployed GET, search impression, ଯୋଗ୍ୟ click/copy କିମ୍ବା ସଂସ୍ଥାଗତ purchase/download ନୁହେଁ। deployment କିମ୍ବା measurement login ହୋଇନାହିଁ; exposure, action ଓ outcome 0/PENDING ରହେ।",
+      "steps": [
+        "ସଂଖ୍ୟାତ୍ମକ App ID ଓ ସଠିକ୍ URLକୁ ସକ୍ରିୟ App Store ପୃଷ୍ଠା ସହ ମେଳ କରନ୍ତୁ।",
+        "ଦେୟ ପ୍ରାର୍ଥୀ ପାଇଁ Apps and Books ଏବଂ ମାଗଣା ସ୍ତର ଯାଞ୍ଚ ପାଇଁ ମାତ୍ର Intune direct-store ବ୍ୟବହାର କରନ୍ତୁ।",
+        "ସଂସ୍ଥା ନୀତି ଅନୁସାରେ ସୀମିତ pilot କରନ୍ତୁ ଏବଂ device assignmentକୁ IAP unlock ଭାବନ୍ତୁ ନାହିଁ।"
+      ],
+      "labels": {
+        "roster": "46ଟି ଯାଞ୍ଚିତ Appର ପ୍ରଶାସକ ତାଲିକା",
+        "platform": "ପ୍ଲାଟଫର୍ମ",
+        "purpose": "ଉଦ୍ଦେଶ୍ୟ ଓ ନିଷ୍ପତ୍ତି ପ୍ରସଙ୍ଗ",
+        "limits": "ସୀମା",
+        "support": "ସହାୟତା",
+        "privacy": "ଗୋପନୀୟତା",
+        "source": "ଉତ୍ସ",
+        "last_checked": "ଶେଷ ଯାଞ୍ଚ",
+        "copy": "କପି",
+        "copied": "କପି ହେଲା",
+        "school": "ଶିକ୍ଷା ସମ୍ପର୍କିତ",
+        "business": "ବ୍ୟବସାୟ ସମ୍ପର୍କିତ",
+        "not_shortlisted": "ସମ୍ପର୍କିତ ସଂକ୍ଷିପ୍ତ ତାଲିକାରେ ନାହିଁ"
+      }
+    },
+    "pa-IN": {
+      "title": "ਸੰਸਥਾਗਤ iOS App ਖਰੀਦ ਦੀ ਪੂਰਵ-ਜਾਂਚ",
+      "intro": "Apple School Manager, Apple Business Manager ਅਤੇ Microsoft Intune ਪ੍ਰਸ਼ਾਸਕਾਂ ਲਈ App Store ਉੱਤੇ ਪਛਾਣ ਅਤੇ ਲਾਈਵ ਹਾਲਤ ਜਾਂਚੀਆਂ 46 Apps ਦਾ ਪਹਿਲੀ-ਪੱਖੀ, ਬਿਨਾਂ ਦਰਜਾਬੰਦੀ ਮੁਲਾਂਕਣ ਹਵਾਲਾ।",
+      "paid": "ਪਹਿਲਾਂ ਭੁਗਤਾਨ ਵਾਲੀ App ਨੂੰ Apps and Books ਵਿੱਚ ਉਮੀਦਵਾਰ ਵਜੋਂ ਲੱਭਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਜਨਤਕ lookup ਤੁਹਾਡੀ ਸੰਸਥਾ ਦੇ catalog ਵਿੱਚ ਦਿਖਾਈ ਦੇਣਾ ਸਾਬਤ ਨਹੀਂ ਕਰਦਾ; licences ਲੈਣ ਤੋਂ ਪਹਿਲਾਂ ਸਹੀ ਅੰਕਾਂ ਵਾਲਾ App ID ਜਾਂਚੋ।",
+      "direct": "Intune ਦੀ direct iOS Store app ਵਿਧੀ ਸਿਰਫ਼ ਮੁਫ਼ਤ Apps ਲਈ ਹੈ। ਇੱਥੇ ਹਰ ਮੁਫ਼ਤ download App ਮੁਫ਼ਤ ਸ਼ੁਰੂ ਹੁੰਦੀ ਹੈ ਅਤੇ ਚੋਣਵਾਂ ਇਕ-ਵਾਰ in-app unlock ਦਿੰਦੀ ਹੈ; ਸਿਰਫ਼ ਸ਼ਾਮਲ ਮੁਫ਼ਤ ਪੱਧਰ ਦਾ ਮੁਲਾਂਕਣ ਕਰੋ।",
+      "iap": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "fit": "ਸਿੱਖਿਆ ਅਤੇ ਕਾਰੋਬਾਰ ਨਾਲ ਸੰਬੰਧਤ ਸੂਚੀਆਂ ਪ੍ਰਕਾਸ਼ਿਤ publisher query ਅਤੇ decision context ਉੱਤੇ ਆਧਾਰਿਤ ਹਨ। ਕਮਜ਼ੋਰ ਜਾਂ ਸਿਰਫ਼ ਨਾਮ-ਆਧਾਰਿਤ ਮੇਲ ਹਟਾਏ ਜਾਂਦੇ ਹਨ; ਹਟਾਉਣਾ App ਦੇ ਅਣਉਚਿਤ ਹੋਣ ਦਾ ਅਰਥ ਨਹੀਂ।",
+      "disclosure": "ਇਹ Lumi Studio ਦੀ ਪਹਿਲੀ-ਪੱਖੀ ਸੂਚੀ ਹੈ; Apple ਜਾਂ Microsoft certification/endorsement, ਸਕੂਲ ਜਾਂ MDM ਮਨਜ਼ੂਰੀ, ਸੰਸਥਾਗਤ ਦਿੱਖ ਜਾਂ discount ਦਾ ਸਬੂਤ ਨਹੀਂ। ਲਾਈਵ store ਅਤੇ ਸੰਸਥਾ ਦੀ policy ਅੰਤਿਮ ਹਨ।",
+      "measurement": "ਤਿਆਰ release candidate, deployed GET, search impression, ਯੋਗ click/copy ਜਾਂ ਸੰਸਥਾਗਤ purchase/download ਨਹੀਂ। deployment ਜਾਂ measurement login ਨਹੀਂ ਹੋਇਆ; exposure, action ਅਤੇ outcome 0/PENDING ਰਹਿੰਦੇ ਹਨ।",
+      "steps": [
+        "ਅੰਕਾਂ ਵਾਲੇ App ID ਅਤੇ ਸਹੀ URL ਨੂੰ ਲਾਈਵ App Store ਪੰਨੇ ਨਾਲ ਮਿਲਾਓ।",
+        "ਭੁਗਤਾਨ ਵਾਲੇ ਉਮੀਦਵਾਰ ਲਈ Apps and Books ਅਤੇ ਮੁਫ਼ਤ ਪੱਧਰ ਦੀ ਜਾਂਚ ਲਈ ਹੀ Intune direct-store ਵਰਤੋ।",
+        "ਸੰਸਥਾ ਦੀ policy ਅਨੁਸਾਰ ਸੀਮਿਤ pilot ਕਰੋ ਅਤੇ device assignment ਨੂੰ IAP unlock ਨਾ ਮੰਨੋ।"
+      ],
+      "labels": {
+        "roster": "46 ਜਾਂਚੀਆਂ Apps ਦੀ ਪ੍ਰਸ਼ਾਸਕ ਸੂਚੀ",
+        "platform": "ਪਲੇਟਫਾਰਮ",
+        "purpose": "ਮਕਸਦ ਅਤੇ ਫ਼ੈਸਲਾ ਸੰਦਰਭ",
+        "limits": "ਸੀਮਾਵਾਂ",
+        "support": "ਸਹਾਇਤਾ",
+        "privacy": "ਪਰਦੇਦਾਰੀ",
+        "source": "ਸਰੋਤ",
+        "last_checked": "ਆਖ਼ਰੀ ਜਾਂਚ",
+        "copy": "ਕਾਪੀ",
+        "copied": "ਕਾਪੀ ਹੋਇਆ",
+        "school": "ਸਿੱਖਿਆ-ਸੰਬੰਧਤ",
+        "business": "ਕਾਰੋਬਾਰ-ਸੰਬੰਧਤ",
+        "not_shortlisted": "ਸੰਬੰਧਤ ਛੋਟੀ ਸੂਚੀ ਵਿੱਚ ਨਹੀਂ"
+      }
+    },
+    "pl": {
+      "title": "Wstępna kontrola instytucjonalnego zakupu aplikacji iOS",
+      "intro": "Pierwszostronne, nierankingowe źródło dla administratorów Apple School Manager, Apple Business Manager i Microsoft Intune oceniających 46 zweryfikowanych i aktualnie dostępnych pozycji w App Store.",
+      "paid": "Aplikację płatną z góry można wyszukać jako kandydata w sekcji Aplikacje i książki. Publiczne wyszukanie nie dowodzi obecności w katalogu organizacji; przed nabyciem licencji potwierdź dokładny numeryczny App ID.",
+      "direct": "Bezpośrednia metoda aplikacji iOS ze sklepu w Intune dotyczy wyłącznie aplikacji bezpłatnych. Każde bezpłatne pobranie tutaj zaczyna się za darmo i oferuje opcjonalne jednorazowe odblokowanie w aplikacji, dlatego oceniaj tylko dołączony zakres bezpłatny.",
+      "iap": "Apple podaje, że zakupy w aplikacji nie są zgodne z zakupami zbiorczymi, aplikacjami zarządzanymi ani zarządzanymi kontami Apple. Przypisania do urządzenia nie wolno przedstawiać jako pełnego odblokowania. Jeśli potrzebne jest pełne odblokowanie, każdy użytkownik musi kupić je oddzielnie przy użyciu osobistego konta Apple umożliwiającego zakupy w aplikacji.",
+      "fit": "Listy związane z edukacją i biznesem opierają się na opublikowanym zapytaniu wydawcy i kontekście decyzji. Słabe dopasowania lub dopasowania tylko po nazwie są pomijane; pominięcie nie oznacza, że aplikacja jest nieodpowiednia.",
+      "disclosure": "To pierwszostronna lista Lumi Studio, a nie certyfikacja lub rekomendacja Apple czy Microsoft, zgoda szkoły lub MDM ani dowód widoczności instytucjonalnej lub rabatu. Sprawdź bieżący sklep i zasady organizacji.",
+      "measurement": "Wygenerowany kandydat nie jest wdrożonym GET, wyświetleniem w wyszukiwarce, kwalifikowanym kliknięciem lub kopiowaniem ani instytucjonalnym zakupem lub pobraniem. Nie było wdrożenia ani logowania do pomiarów; ekspozycja, działanie i wynik pozostają 0/OCZEKUJE.",
+      "steps": [
+        "Porównaj numeryczny App ID i dokładny URL z aktualną stroną App Store.",
+        "Dla płatnych kandydatów użyj Aplikacji i książek, a bezpośredniego Intune tylko do oceny bezpłatnego zakresu.",
+        "Przeprowadź ograniczony pilotaż zgodnie z polityką wewnętrzną i nie uznawaj przypisania urządzenia za odblokowanie IAP."
+      ],
+      "labels": {
+        "roster": "Lista administratora: 46 zweryfikowanych aplikacji",
+        "platform": "Platforma",
+        "purpose": "Cel i kontekst decyzji",
+        "limits": "Ograniczenia",
+        "support": "Pomoc",
+        "privacy": "Prywatność",
+        "source": "Źródło",
+        "last_checked": "Ostatnia kontrola",
+        "copy": "Kopiuj",
+        "copied": "Skopiowano",
+        "school": "Związana z edukacją",
+        "business": "Związana z biznesem",
+        "not_shortlisted": "Poza powiązaną krótką listą"
+      }
+    },
+    "pt-BR": {
+      "title": "Pré-verificação para compra institucional de apps iOS",
+      "intro": "Referência primária, sem ranking, para administradores do Apple School Manager, Apple Business Manager e Microsoft Intune avaliarem 46 páginas ativas e verificadas na App Store.",
+      "paid": "Um app pago antecipadamente pode ser pesquisado como candidato em Apps e Livros. A consulta pública não comprova que ele aparece no catálogo da organização; confirme o App ID numérico exato antes de adquirir licenças.",
+      "direct": "O método direto de app iOS da Store no Intune serve apenas para apps gratuitos. Todo download gratuito desta lista começa grátis e oferece um desbloqueio único opcional dentro do app; avalie somente o nível gratuito incluído.",
+      "iap": "A Apple informa que compras dentro do app não são compatíveis com compra em volume, apps gerenciados ou Contas Apple Gerenciadas. A atribuição ao dispositivo não pode ser apresentada como desbloqueio completo. Se o desbloqueio completo for necessário, cada usuário deverá comprá-lo separadamente com uma Conta Apple pessoal habilitada para compras dentro do app.",
+      "fit": "As listas relacionadas a educação e negócios usam a consulta do publicador e o contexto de decisão publicados. Correspondências fracas ou baseadas apenas no nome são omitidas; a omissão não significa que o app seja inadequado.",
+      "disclosure": "Esta é uma lista primária da Lumi Studio, não certificação ou recomendação da Apple ou Microsoft, aprovação escolar ou MDM, prova de visibilidade institucional nem evidência de desconto. Confira a loja ao vivo e a política da sua organização.",
+      "measurement": "Um candidato gerado não é um GET implantado, uma impressão de busca, um clique ou cópia qualificados nem uma compra ou download institucional. Não houve implantação nem login de medição; exposição, ação e resultado permanecem 0/PENDENTE.",
+      "steps": [
+        "Compare o App ID numérico e a URL exata com a página ativa da App Store.",
+        "Use Apps e Livros para candidatos pagos e Intune direto somente para avaliar o nível gratuito.",
+        "Faça um piloto limitado conforme a política interna e não presuma que a atribuição ao dispositivo desbloqueia IAP."
+      ],
+      "labels": {
+        "roster": "Lista administrativa de 46 apps verificados",
+        "platform": "Plataforma",
+        "purpose": "Finalidade e contexto de decisão",
+        "limits": "Limitações",
+        "support": "Suporte",
+        "privacy": "Privacidade",
+        "source": "Fonte",
+        "last_checked": "Última verificação",
+        "copy": "Copiar",
+        "copied": "Copiado",
+        "school": "Relacionado à educação",
+        "business": "Relacionado a negócios",
+        "not_shortlisted": "Fora das listas relacionadas"
+      }
+    },
+    "pt-PT": {
+      "title": "Pré-verificação para aquisição institucional de apps iOS",
+      "intro": "Referência de primeira parte, sem classificação, para administradores do Apple School Manager, Apple Business Manager e Microsoft Intune avaliarem 46 páginas ativas e verificadas na App Store.",
+      "paid": "Uma app paga antecipadamente pode ser pesquisada como candidata em Apps e Livros. A consulta pública não comprova que aparece no catálogo da organização; confirme o App ID numérico exato antes de adquirir licenças.",
+      "direct": "O método direto de app iOS da Store no Intune destina-se apenas a apps gratuitas. Todos os downloads gratuitos desta lista começam sem custo e oferecem um desbloqueio único opcional dentro da app; avalie apenas o nível gratuito incluído.",
+      "iap": "A Apple indica que as compras integradas não são compatíveis com compra em volume, apps geridas ou Contas Apple Geridas. A atribuição ao dispositivo não deve ser apresentada como desbloqueio completo. Se for necessário o desbloqueio completo, cada utilizador terá de o comprar separadamente com uma Conta Apple pessoal que permita compras integradas.",
+      "fit": "As listas relacionadas com educação e empresas usam a consulta do editor e o contexto de decisão publicados. Correspondências fracas ou apenas pelo nome são omitidas; a omissão não significa que a app seja inadequada.",
+      "disclosure": "Esta é uma lista de primeira parte da Lumi Studio, não uma certificação ou recomendação da Apple ou Microsoft, aprovação escolar ou MDM, prova de visibilidade institucional nem evidência de desconto. Consulte a loja ativa e a política da organização.",
+      "measurement": "Um candidato gerado não é um GET implementado, uma impressão de pesquisa, um clique ou cópia qualificados nem uma compra ou descarga institucional. Não houve implementação nem início de sessão de medição; exposição, ação e resultado permanecem 0/PENDENTE.",
+      "steps": [
+        "Compare o App ID numérico e o URL exato com a página ativa da App Store.",
+        "Use Apps e Livros para candidatas pagas e Intune direto apenas para avaliar o nível gratuito.",
+        "Faça um piloto limitado segundo a política interna e não presuma que a atribuição ao dispositivo desbloqueia IAP."
+      ],
+      "labels": {
+        "roster": "Lista administrativa de 46 apps verificadas",
+        "platform": "Plataforma",
+        "purpose": "Finalidade e contexto de decisão",
+        "limits": "Limitações",
+        "support": "Suporte",
+        "privacy": "Privacidade",
+        "source": "Fonte",
+        "last_checked": "Última verificação",
+        "copy": "Copiar",
+        "copied": "Copiado",
+        "school": "Relacionada com educação",
+        "business": "Relacionada com empresas",
+        "not_shortlisted": "Fora das listas relacionadas"
+      }
+    },
+    "ro": {
+      "title": "Verificare prealabilă pentru achiziția instituțională de aplicații iOS",
+      "intro": "Referință directă, fără clasament, pentru administratorii Apple School Manager, Apple Business Manager și Microsoft Intune care evaluează 46 de listări App Store verificate și active.",
+      "paid": "O aplicație plătită în avans poate fi căutată drept candidat în Aplicații și cărți. Căutarea publică nu dovedește apariția în catalogul organizației; confirmați App ID-ul numeric exact înainte de a achiziționa licențe.",
+      "direct": "Metoda directă de aplicație iOS Store din Intune este doar pentru aplicații gratuite. Toate descărcările gratuite de aici pornesc gratuit și oferă o deblocare unică opțională în aplicație; evaluați numai nivelul gratuit inclus.",
+      "iap": "Apple precizează că achizițiile în aplicație nu sunt compatibile cu achiziția în volum, aplicațiile gestionate sau conturile Apple gestionate. Atribuirea pe dispozitiv nu trebuie prezentată drept deblocare completă. Dacă este necesară deblocarea completă, fiecare utilizator trebuie să o cumpere separat cu un cont Apple personal care permite achiziții în aplicație.",
+      "fit": "Listele legate de educație și afaceri se bazează pe interogarea editorului și contextul decizional publicate. Potrivirile slabe sau bazate doar pe nume sunt omise; omiterea nu înseamnă că aplicația este nepotrivită.",
+      "disclosure": "Aceasta este lista directă Lumi Studio, nu o certificare sau recomandare Apple ori Microsoft, o aprobare școlară sau MDM și nici dovadă de vizibilitate instituțională sau reducere. Verificați magazinul live și politica organizației.",
+      "measurement": "Un candidat generat nu este un GET implementat, o afișare în căutare, un clic sau o copiere calificată și nici o achiziție sau descărcare instituțională. Nu a avut loc implementare sau autentificare de măsurare; expunerea, acțiunea și rezultatul rămân 0/ÎN AȘTEPTARE.",
+      "steps": [
+        "Comparați App ID-ul numeric și URL-ul exact cu pagina activă din App Store.",
+        "Folosiți Aplicații și cărți pentru candidații plătiți și Intune direct doar pentru evaluarea nivelului gratuit.",
+        "Rulați un pilot limitat conform politicii interne și nu considerați atribuirea dispozitivului o deblocare IAP."
+      ],
+      "labels": {
+        "roster": "Lista administratorului: 46 de aplicații verificate",
+        "platform": "Platformă",
+        "purpose": "Scop și context decizional",
+        "limits": "Limitări",
+        "support": "Asistență",
+        "privacy": "Confidențialitate",
+        "source": "Sursă",
+        "last_checked": "Ultima verificare",
+        "copy": "Copiază",
+        "copied": "Copiat",
+        "school": "Legată de educație",
+        "business": "Legată de afaceri",
+        "not_shortlisted": "Nu este pe lista scurtă relevantă"
+      }
+    },
+    "ru": {
+      "title": "Предварительная проверка закупки iOS-приложений для организации",
+      "intro": "Материал от разработчика без ранжирования для администраторов Apple School Manager, Apple Business Manager и Microsoft Intune, оценивающих 46 проверенных и доступных карточек App Store.",
+      "paid": "Приложение с предварительной оплатой можно искать как кандидата в разделе «Приложения и книги». Публичный поиск не доказывает наличие в каталоге организации; до приобретения лицензий подтвердите точный числовой App ID.",
+      "direct": "Прямой способ добавления iOS Store app в Intune предназначен только для бесплатных приложений. Все бесплатные загрузки здесь имеют бесплатный начальный уровень и необязательную однократную покупку для разблокировки; оценивайте только включённый бесплатный уровень.",
+      "iap": "Согласно документации Apple, встроенные покупки несовместимы с массовой закупкой, управляемыми приложениями и управляемыми учётными записями Apple. Назначение устройству нельзя представлять как полную разблокировку. Если требуется полная разблокировка, каждый пользователь должен приобрести её отдельно с помощью личной учётной записи Apple, поддерживающей встроенные покупки.",
+      "fit": "Списки, связанные с образованием и бизнесом, основаны на опубликованных запросе издателя и контексте решения. Слабые совпадения и совпадения только по названию исключаются; исключение не означает непригодность приложения.",
+      "disclosure": "Это список от Lumi Studio, а не сертификация или рекомендация Apple либо Microsoft, не одобрение школой или MDM и не доказательство видимости для организации или скидки. Проверяйте текущий магазин и правила организации.",
+      "measurement": "Созданный кандидат не является развёрнутым GET, показом в поиске, квалифицированным кликом или копированием, институциональной покупкой или загрузкой. Развёртывания и входа в системы измерения не было; охват, действие и результат остаются 0/ОЖИДАЕТСЯ.",
+      "steps": [
+        "Сверьте числовой App ID и точный URL с актуальной страницей App Store.",
+        "Для платных кандидатов используйте «Приложения и книги», а прямой Intune — только для оценки бесплатного уровня.",
+        "Проведите ограниченный пилот по внутренним правилам и не считайте назначение устройству разблокировкой IAP."
+      ],
+      "labels": {
+        "roster": "Список администратора: 46 проверенных приложений",
+        "platform": "Платформа",
+        "purpose": "Назначение и контекст решения",
+        "limits": "Ограничения",
+        "support": "Поддержка",
+        "privacy": "Конфиденциальность",
+        "source": "Источник",
+        "last_checked": "Последняя проверка",
+        "copy": "Копировать",
+        "copied": "Скопировано",
+        "school": "Связано с образованием",
+        "business": "Связано с бизнесом",
+        "not_shortlisted": "Не входит в связанный краткий список"
+      }
+    },
+    "sk": {
+      "title": "Predbežná kontrola inštitucionálneho nákupu aplikácií pre iOS",
+      "intro": "Prvotný, nehodnotiaci podklad pre správcov Apple School Managera, Apple Business Managera a Microsoft Intune na posúdenie 46 overených a aktuálne dostupných záznamov v App Store.",
+      "paid": "Aplikáciu platenú vopred možno vyhľadať ako kandidáta v Aplikáciách a knihách. Verejné vyhľadanie nedokazuje zobrazenie v katalógu organizácie; pred získaním licencií potvrďte presné číselné App ID.",
+      "direct": "Priama metóda iOS Store app v Intune je iba pre bezplatné aplikácie. Všetky tu bezplatne stiahnuteľné aplikácie začínajú zadarmo a ponúkajú voliteľné jednorazové odomknutie v aplikácii, preto posudzujte len zahrnutú bezplatnú úroveň.",
+      "iap": "Apple uvádza, že nákupy v aplikácii nie sú kompatibilné s hromadným nákupom, spravovanými aplikáciami ani spravovanými účtami Apple. Priradenie zariadeniu sa nesmie vydávať za úplné odomknutie. Ak je potrebné úplné odomknutie, každý používateľ si ho musí kúpiť samostatne pomocou osobného Apple účtu, ktorý umožňuje nákupy v aplikácii.",
+      "fit": "Zoznamy súvisiace so vzdelávaním a podnikaním vychádzajú zo zverejneného dopytu vydavateľa a kontextu rozhodnutia. Slabé alebo iba názvové zhody sa vynechávajú; vynechanie neznamená nevhodnosť aplikácie.",
+      "disclosure": "Ide o prvotný zoznam Lumi Studio, nie o certifikáciu či odporúčanie Apple alebo Microsoftu, schválenie školou či MDM ani dôkaz inštitucionálnej viditeľnosti alebo zľavy. Overte živý obchod a pravidlá organizácie.",
+      "measurement": "Vygenerovaný kandidát nie je nasadený GET, zobrazenie vo vyhľadávaní, kvalifikované kliknutie či kopírovanie ani inštitucionálny nákup alebo stiahnutie. K nasadeniu ani prihláseniu do merania nedošlo; expozícia, akcia a výsledok zostávajú 0/ČAKÁ.",
+      "steps": [
+        "Porovnajte číselné App ID a presnú URL s aktuálnou stránkou App Store.",
+        "Pre platených kandidátov použite Aplikácie a knihy, priamy Intune iba na posúdenie bezplatnej úrovne.",
+        "Vykonajte obmedzený pilot podľa interných pravidiel a nepovažujte priradenie zariadeniu za odomknutie IAP."
+      ],
+      "labels": {
+        "roster": "Správcovský zoznam 46 overených aplikácií",
+        "platform": "Platforma",
+        "purpose": "Účel a kontext rozhodnutia",
+        "limits": "Obmedzenia",
+        "support": "Podpora",
+        "privacy": "Súkromie",
+        "source": "Zdroj",
+        "last_checked": "Naposledy overené",
+        "copy": "Kopírovať",
+        "copied": "Skopírované",
+        "school": "Súvisí so vzdelávaním",
+        "business": "Súvisí s podnikaním",
+        "not_shortlisted": "Nie je v súvisiacom užšom výbere"
+      }
+    },
+    "sl-SI": {
+      "title": "Predhodno preverjanje institucionalnega nakupa aplikacij iOS",
+      "intro": "Prvotni vir brez razvrščanja za skrbnike Apple School Managerja, Apple Business Managerja in Microsoft Intuna, ki ocenjujejo 46 preverjenih in trenutno dosegljivih vnosov v App Storu.",
+      "paid": "Vnaprej plačljivo aplikacijo je mogoče poiskati kot kandidatko v razdelku Aplikacije in knjige. Javno iskanje ne dokazuje prikaza v katalogu organizacije; pred pridobitvijo licenc potrdite točen številski App ID.",
+      "direct": "Neposredni način iOS Store app v Intunu je samo za brezplačne aplikacije. Vsak brezplačni prenos tukaj se začne brezplačno in ponuja izbirni enkratni nakup za odklep v aplikaciji, zato ocenjujte le vključeno brezplačno raven.",
+      "iap": "Apple navaja, da nakupi v aplikaciji niso združljivi s količinskim nakupom, upravljanimi aplikacijami ali upravljanimi računi Apple. Dodelitve napravi ne smete predstavljati kot popoln odklep. Če je potrebno popolno odklepanje, ga mora vsak uporabnik kupiti posebej z osebnim računom Apple, ki omogoča nakupe v aplikaciji.",
+      "fit": "Seznami, povezani z izobraževanjem in poslovanjem, temeljijo na objavljeni poizvedbi založnika in kontekstu odločitve. Šibka ali zgolj imenska ujemanja so izpuščena; izpust ne pomeni, da aplikacija ni primerna.",
+      "disclosure": "To je prvotni seznam Lumi Studia, ne certifikat ali priporočilo družbe Apple ali Microsoft, odobritev šole ali MDM ter ne dokaz institucionalne vidnosti ali popusta. Preverite dejansko trgovino in pravila organizacije.",
+      "measurement": "Ustvarjeni kandidat ni nameščen GET, prikaz v iskanju, kvalificiran klik ali kopiranje ter ne institucionalni nakup ali prenos. Namestitve ali prijave v merjenje ni bilo; izpostavljenost, dejanje in izid ostajajo 0/NA ČAKANJU.",
+      "steps": [
+        "Primerjajte številski App ID in točen URL z aktualno stranjo App Store.",
+        "Za plačljive kandidatke uporabite Aplikacije in knjige, neposredni Intune pa le za oceno brezplačne ravni.",
+        "Izvedite omejen pilot po notranjih pravilih in dodelitve napravi ne enačite z odklepom IAP."
+      ],
+      "labels": {
+        "roster": "Skrbniški seznam 46 preverjenih aplikacij",
+        "platform": "Platforma",
+        "purpose": "Namen in kontekst odločitve",
+        "limits": "Omejitve",
+        "support": "Podpora",
+        "privacy": "Zasebnost",
+        "source": "Vir",
+        "last_checked": "Nazadnje preverjeno",
+        "copy": "Kopiraj",
+        "copied": "Kopirano",
+        "school": "Povezano z izobraževanjem",
+        "business": "Povezano s poslovanjem",
+        "not_shortlisted": "Ni na povezanem ožjem seznamu"
+      }
+    },
+    "sv": {
+      "title": "Förhandskontroll av institutionellt inköp av iOS-appar",
+      "intro": "En förstahandskälla utan rangordning för administratörer av Apple School Manager, Apple Business Manager och Microsoft Intune som bedömer 46 verifierade och aktuella App Store-poster.",
+      "paid": "En app som betalas i förskott kan sökas som kandidat i Appar och böcker. En offentlig sökning bevisar inte synlighet i organisationens katalog; bekräfta exakt numeriskt App ID innan licenser anskaffas.",
+      "direct": "Intunes direkta metod för iOS Store-app gäller endast kostnadsfria appar. Alla kostnadsfria hämtningar här börjar gratis och erbjuder en valfri engångsupplåsning i appen, så bedöm endast den inkluderade kostnadsfria nivån.",
+      "iap": "Apple anger att köp i appen inte är kompatibla med volymköp, hanterade appar eller hanterade Apple-konton. Enhetstilldelning får inte beskrivas som fullständig upplåsning. Om full upplåsning behövs måste varje användare köpa den separat med ett personligt Apple-konto som kan göra köp inuti appen.",
+      "fit": "Listorna för utbildnings- och verksamhetsrelevans bygger på publicerad utgivarfråga och beslutskontext. Svaga eller enbart namnbaserade träffar utelämnas; det betyder inte att appen är olämplig.",
+      "disclosure": "Detta är Lumi Studios förstahandslista, inte Apple- eller Microsoft-certifiering eller rekommendation, skol- eller MDM-godkännande, bevis på institutionell synlighet eller rabatt. Kontrollera den aktuella butiken och organisationens policy.",
+      "measurement": "En genererad utgivningskandidat är inte ett driftsatt GET, en sökvisning, ett kvalificerat klick eller en kopiering eller ett institutionellt köp eller hämtning. Ingen driftsättning eller mätningsinloggning skedde; exponering, åtgärd och utfall förblir 0/VÄNTAR.",
+      "steps": [
+        "Jämför numeriskt App ID och exakt URL med den aktuella App Store-sidan.",
+        "Använd Appar och böcker för betalda kandidater och direkt Intune endast för bedömning av gratisnivån.",
+        "Genomför en begränsad pilot enligt intern policy och anta inte att enhetstilldelning låser upp IAP."
+      ],
+      "labels": {
+        "roster": "Administratörslista med 46 verifierade appar",
+        "platform": "Plattform",
+        "purpose": "Syfte och beslutskontext",
+        "limits": "Begränsningar",
+        "support": "Support",
+        "privacy": "Integritet",
+        "source": "Källa",
+        "last_checked": "Senast kontrollerad",
+        "copy": "Kopiera",
+        "copied": "Kopierat",
+        "school": "Utbildningsrelaterad",
+        "business": "Verksamhetsrelaterad",
+        "not_shortlisted": "Inte på relaterad kortlista"
+      }
+    },
+    "ta-IN": {
+      "title": "நிறுவன iOS App கொள்முதல் முன்சரிபார்ப்பு",
+      "intro": "Apple School Manager, Apple Business Manager மற்றும் Microsoft Intune நிர்வாகிகள் App Store-ல் அடையாளமும் செயல்நிலையும் சரிபார்க்கப்பட்ட 46 Appகளை மதிப்பிடுவதற்கான முதல் தரப்பு, தரவரிசையற்ற குறிப்பு.",
+      "paid": "முன்பணம் செலுத்தும் Appஐ Apps and Booksல் வேட்பாளராகத் தேடலாம். பொது lookup உங்கள் நிறுவன catalogல் தோன்றுவதை நிரூபிக்காது; licence பெறுவதற்கு முன் சரியான எண் App IDஐ உறுதிப்படுத்தவும்.",
+      "direct": "Intuneன் direct iOS Store app முறை இலவச Appகளுக்கு மட்டும். இங்குள்ள ஒவ்வொரு இலவச download Appமும் இலவசமாகத் தொடங்கி விருப்பமான ஒருமுறை in-app unlock வழங்குகிறது; சேர்க்கப்பட்ட இலவச நிலையை மட்டும் மதிப்பிடவும்.",
+      "iap": "Apple ஆவணப்படி in-app purchase, volume purchase, managed app அல்லது Managed Apple Account உடன் பொருந்தாது. Device assignmentஐ முழு unlock எனக் கூறக்கூடாது. முழு திறப்பும் தேவைப்பட்டால், in-app purchase செய்யக்கூடிய தனிப்பட்ட Apple Account மூலம் ஒவ்வொரு பயனரும் அதைத் தனித்தனியாக வாங்க வேண்டும்.",
+      "fit": "கல்வி மற்றும் வணிகத் தொடர்புப் பட்டியல்கள் வெளியிடப்பட்ட publisher query மற்றும் decision context அடிப்படையில் உருவாகின்றன. பலவீனமான அல்லது பெயர் மட்டும் சார்ந்த பொருத்தங்கள் நீக்கப்படும்; நீக்கம் App பொருத்தமற்றது என்பதல்ல.",
+      "disclosure": "இது Lumi Studioவின் முதல் தரப்பு பட்டியல்; Apple அல்லது Microsoft certification/endorsement, பள்ளி அல்லது MDM ஒப்புதல், நிறுவனத் தோற்றம் அல்லது discount ஆதாரம் அல்ல. நேரடி store மற்றும் உங்கள் நிறுவனக் கொள்கையைச் சரிபார்க்கவும்.",
+      "measurement": "உருவாக்கப்பட்ட release candidate, deployed GET, search impression, தகுதியான click/copy அல்லது நிறுவன purchase/download அல்ல. deployment அல்லது measurement login செய்யப்படவில்லை; exposure, action, outcome 0/PENDING ஆகவே இருக்கும்.",
+      "steps": [
+        "எண் App ID மற்றும் சரியான URLஐ நேரடி App Store பக்கத்துடன் பொருத்தவும்.",
+        "பணம் செலுத்தும் வேட்பாளருக்கு Apps and Books மற்றும் இலவச நிலை மதிப்பீட்டுக்கு மட்டும் Intune direct-store பயன்படுத்தவும்.",
+        "நிறுவனக் கொள்கைப்படி குறுகிய pilot நடத்தி device assignmentஐ IAP unlock எனக் கருத வேண்டாம்."
+      ],
+      "labels": {
+        "roster": "சரிபார்க்கப்பட்ட 46 Appகளின் நிர்வாகி பட்டியல்",
+        "platform": "தளம்",
+        "purpose": "நோக்கம் மற்றும் முடிவு சூழல்",
+        "limits": "வரம்புகள்",
+        "support": "ஆதரவு",
+        "privacy": "தனியுரிமை",
+        "source": "மூலம்",
+        "last_checked": "கடைசி சரிபார்ப்பு",
+        "copy": "நகலெடு",
+        "copied": "நகலெடுக்கப்பட்டது",
+        "school": "கல்வி தொடர்பு",
+        "business": "வணிக தொடர்பு",
+        "not_shortlisted": "தொடர்புடைய குறும்பட்டியலில் இல்லை"
+      }
+    },
+    "te-IN": {
+      "title": "సంస్థాగత iOS App కొనుగోలు ముందస్తు తనిఖీ",
+      "intro": "Apple School Manager, Apple Business Manager మరియు Microsoft Intune నిర్వాహకులు App Storeలో గుర్తింపు, లైవ్ స్థితి ధృవీకరించిన 46 Appలను అంచనా వేయడానికి మొదటి-పక్ష, ర్యాంకింగ్ లేని సూచన.",
+      "paid": "ముందస్తు చెల్లింపు Appను Apps and Booksలో అభ్యర్థిగా వెతకవచ్చు. పబ్లిక్ lookup మీ సంస్థ catalogలో కనిపించడాన్ని నిరూపించదు; licence తీసుకునే ముందు ఖచ్చితమైన సంఖ్యా App IDని నిర్ధారించండి.",
+      "direct": "Intune direct iOS Store app పద్ధతి ఉచిత Appలకు మాత్రమే. ఇక్కడ ప్రతి ఉచిత download App ఉచితంగా ప్రారంభమై ఐచ్ఛిక ఒక్కసారి in-app unlock అందిస్తుంది; చేర్చిన ఉచిత స్థాయిని మాత్రమే అంచనా వేయండి.",
+      "iap": "Apple పత్రాల ప్రకారం in-app purchase, volume purchase, managed app లేదా Managed Apple Accountతో అనుకూలం కాదు. Device assignmentను పూర్తి unlockగా చూపకూడదు. పూర్తి అన్‌లాక్ అవసరమైతే, in-app purchase చేయగల వ్యక్తిగత Apple Accountతో ప్రతి వినియోగదారు దాన్ని విడిగా కొనుగోలు చేయాలి.",
+      "fit": "విద్య, వ్యాపార సంబంధిత జాబితాలు ప్రచురించిన publisher query మరియు decision contextపై ఆధారపడతాయి. బలహీనమైన లేదా పేరు మాత్రమే ఆధారమైన సరిపోలికలను తొలగిస్తారు; తొలగించడం App అనుకూలం కాదని కాదు.",
+      "disclosure": "ఇది Lumi Studio మొదటి-పక్ష జాబితా; Apple లేదా Microsoft certification/endorsement, పాఠశాల లేదా MDM ఆమోదం, సంస్థాగత దర్శనీయత లేదా discount ఆధారం కాదు. లైవ్ store మరియు మీ సంస్థ విధానాన్ని తనిఖీ చేయండి.",
+      "measurement": "సృష్టించిన release candidate, deployed GET, search impression, అర్హమైన click/copy లేదా సంస్థాగత purchase/download కాదు. deployment లేదా measurement login జరగలేదు; exposure, action, outcome 0/PENDINGగానే ఉంటాయి.",
+      "steps": [
+        "సంఖ్యా App ID మరియు ఖచ్చితమైన URLను లైవ్ App Store పేజీతో సరిపోల్చండి.",
+        "చెల్లింపు అభ్యర్థికి Apps and Books, ఉచిత స్థాయి అంచనాకు మాత్రమే Intune direct-store వాడండి.",
+        "సంస్థ విధానం ప్రకారం పరిమిత pilot నిర్వహించి device assignmentను IAP unlockగా భావించవద్దు."
+      ],
+      "labels": {
+        "roster": "ధృవీకరించిన 46 Appల నిర్వాహక జాబితా",
+        "platform": "వేదిక",
+        "purpose": "ఉద్దేశ్యం మరియు నిర్ణయ సందర్భం",
+        "limits": "పరిమితులు",
+        "support": "మద్దతు",
+        "privacy": "గోప్యత",
+        "source": "మూలం",
+        "last_checked": "చివరి తనిఖీ",
+        "copy": "కాపీ",
+        "copied": "కాపీ అయింది",
+        "school": "విద్య సంబంధిత",
+        "business": "వ్యాపార సంబంధిత",
+        "not_shortlisted": "సంబంధిత చిన్న జాబితాలో లేదు"
+      }
+    },
+    "th": {
+      "title": "การตรวจสอบก่อนจัดซื้อแอป iOS สำหรับองค์กร",
+      "intro": "ข้อมูลจากผู้พัฒนาโดยไม่จัดอันดับ สำหรับผู้ดูแล Apple School Manager, Apple Business Manager และ Microsoft Intune เพื่อประเมินรายการ App Store ที่ยืนยันตัวตนและยังเปิดให้ดาวน์โหลด 46 แอป",
+      "paid": "แอปที่ชำระเงินล่วงหน้าสามารถค้นหาเป็นตัวเลือกในแอปและหนังสือได้ การค้นหาแบบสาธารณะไม่ได้ยืนยันว่าแอปปรากฏในแค็ตตาล็อกขององค์กร โปรดยืนยัน App ID แบบตัวเลขที่ถูกต้องก่อนรับสิทธิ์ใช้งาน",
+      "direct": "วิธีเพิ่มแอป iOS จาก Store โดยตรงใน Intune ใช้ได้เฉพาะแอปฟรี แอปที่ดาวน์โหลดฟรีทั้งหมดในหน้านี้เริ่มใช้ฟรีและมีการปลดล็อกแบบซื้อครั้งเดียวภายในแอป จึงควรประเมินเฉพาะส่วนฟรีที่รวมไว้",
+      "iap": "เอกสารของ Apple ระบุว่าการซื้อภายในแอปไม่รองรับการซื้อจำนวนมาก แอปที่มีการจัดการ หรือบัญชี Apple ที่มีการจัดการ การกำหนดให้กับอุปกรณ์ไม่ใช่การปลดล็อกเต็มรูปแบบ หากต้องการปลดล็อกแบบเต็ม ผู้ใช้แต่ละรายต้องซื้อแยกกันด้วยบัญชี Apple ส่วนบุคคลที่สามารถซื้อภายในแอปได้",
+      "fit": "รายการที่เกี่ยวข้องกับการศึกษาและธุรกิจอ้างอิงคำค้นของผู้พัฒนาและบริบทการตัดสินใจที่เผยแพร่แล้ว รายการที่เกี่ยวข้องน้อยหรืออิงเพียงชื่อจะไม่ถูกใส่ไว้ ซึ่งไม่ได้หมายความว่าแอปไม่เหมาะสม",
+      "disclosure": "นี่คือรายการข้อมูลจาก Lumi Studio ไม่ใช่การรับรองหรือแนะนำจาก Apple หรือ Microsoft ไม่ใช่การอนุมัติของโรงเรียนหรือ MDM และไม่ใช่หลักฐานการมองเห็นในระบบองค์กรหรือส่วนลด โปรดตรวจสอบ Store ปัจจุบันและนโยบายขององค์กร",
+      "measurement": "รุ่นทดสอบที่สร้างแล้วไม่เท่ากับ GET ที่เผยแพร่ การแสดงผลค้นหา การคลิกหรือคัดลอกที่ผ่านเกณฑ์ การซื้อหรือดาวน์โหลดขององค์กร ไม่มีการเผยแพร่หรือเข้าสู่ระบบวัดผล ดังนั้นการเข้าถึง การกระทำ และผลลัพธ์ยังเป็น 0/รอดำเนินการ",
+      "steps": [
+        "ตรวจสอบ App ID แบบตัวเลขและ URL ที่ถูกต้องกับหน้า App Store ปัจจุบัน",
+        "ใช้แอปและหนังสือสำหรับตัวเลือกแบบชำระเงิน และใช้ Intune โดยตรงเฉพาะประเมินส่วนฟรี",
+        "ทดลองใช้ในวงจำกัดตามนโยบายองค์กร และอย่าถือว่าการกำหนดอุปกรณ์ปลดล็อก IAP"
+      ],
+      "labels": {
+        "roster": "รายการผู้ดูแลสำหรับ 46 แอปที่ยืนยันแล้ว",
+        "platform": "อุปกรณ์ที่รองรับ",
+        "purpose": "วัตถุประสงค์และบริบทการตัดสินใจ",
+        "limits": "ข้อจำกัด",
+        "support": "การช่วยเหลือ",
+        "privacy": "ความเป็นส่วนตัว",
+        "source": "แหล่งข้อมูล",
+        "last_checked": "ตรวจสอบล่าสุด",
+        "copy": "คัดลอก",
+        "copied": "คัดลอกแล้ว",
+        "school": "เกี่ยวข้องกับการศึกษา",
+        "business": "เกี่ยวข้องกับธุรกิจ",
+        "not_shortlisted": "ไม่อยู่ในรายการที่เกี่ยวข้อง"
+      }
+    },
+    "tr": {
+      "title": "Kurumsal iOS uygulaması satın alma ön kontrolü",
+      "intro": "Apple School Manager, Apple Business Manager ve Microsoft Intune yöneticilerinin doğrulanmış ve yayında olan 46 App Store kaydını değerlendirmesi için birinci taraf, sıralama içermeyen kaynak.",
+      "paid": "Peşin ücretli bir uygulama, Uygulamalar ve Kitaplar’da aday olarak aranabilir. Herkese açık sorgu kuruluş kataloğunda göründüğünü kanıtlamaz; lisans almadan önce kesin sayısal App ID’yi doğrulayın.",
+      "direct": "Intune’daki doğrudan iOS Store uygulaması yöntemi yalnızca ücretsiz uygulamalar içindir. Buradaki her ücretsiz indirme, ücretsiz başlar ve isteğe bağlı tek seferlik uygulama içi kilit açma sunar; yalnızca dahil edilen ücretsiz düzeyi değerlendirin.",
+      "iap": "Apple, uygulama içi satın almaların toplu satın alma, yönetilen uygulamalar veya Yönetilen Apple Hesapları ile uyumlu olmadığını belirtir. Cihaza atama tam kilit açma olarak sunulmamalıdır. Tam kilit açma gerekiyorsa her kullanıcı bunu uygulama içi satın alma yapabilen kişisel bir Apple Hesabı ile ayrı ayrı satın almalıdır.",
+      "fit": "Eğitim ve işletme bağlantılı listeler yayımlanmış yayıncı sorgusu ve karar bağlamına dayanır. Zayıf veya yalnızca ada dayanan eşleşmeler çıkarılır; çıkarılma uygulamanın uygun olmadığı anlamına gelmez.",
+      "disclosure": "Bu, Lumi Studio’nun birinci taraf listesidir; Apple veya Microsoft sertifikası ya da desteği, okul veya MDM onayı, kurumsal görünürlük veya indirim kanıtı değildir. Canlı mağazayı ve kuruluş politikanızı doğrulayın.",
+      "measurement": "Oluşturulan sürüm adayı; dağıtılmış GET, arama gösterimi, nitelikli tıklama veya kopyalama ya da kurumsal satın alma veya indirme değildir. Dağıtım veya ölçüm oturumu açılmadı; görünürlük, eylem ve sonuç 0/BEKLİYOR olarak kalır.",
+      "steps": [
+        "Sayısal App ID ile kesin URL’yi güncel App Store sayfasıyla eşleştirin.",
+        "Ücretli adaylarda Uygulamalar ve Kitaplar’ı, ücretsiz düzey değerlendirmesinde yalnızca doğrudan Intune’u kullanın.",
+        "Kurum politikasına göre sınırlı pilot yapın ve cihaz atamasını IAP kilit açması saymayın."
+      ],
+      "labels": {
+        "roster": "46 doğrulanmış uygulamanın yönetici listesi",
+        "platform": "Platform",
+        "purpose": "Amaç ve karar bağlamı",
+        "limits": "Sınırlamalar",
+        "support": "Destek",
+        "privacy": "Gizlilik",
+        "source": "Kaynak",
+        "last_checked": "Son kontrol",
+        "copy": "Kopyala",
+        "copied": "Kopyalandı",
+        "school": "Eğitimle ilgili",
+        "business": "İşletmeyle ilgili",
+        "not_shortlisted": "İlgili kısa listede değil"
+      }
+    },
+    "uk": {
+      "title": "Попередня перевірка інституційної закупівлі застосунків iOS",
+      "intro": "Першоджерельна довідка без рейтингу для адміністраторів Apple School Manager, Apple Business Manager і Microsoft Intune, які оцінюють 46 перевірених і доступних записів App Store.",
+      "paid": "Застосунок із попередньою оплатою можна шукати як кандидата в «Програмах і книгах». Публічний пошук не доводить наявності в каталозі організації; до придбання ліцензій підтвердьте точний числовий App ID.",
+      "direct": "Прямий спосіб додавання iOS Store app в Intune призначений лише для безкоштовних застосунків. Усі безкоштовні завантаження тут мають безкоштовний початковий рівень і необов’язкове одноразове розблокування в застосунку, тому оцінюйте лише включений безкоштовний рівень.",
+      "iap": "Apple зазначає, що покупки в застосунку несумісні з масовим придбанням, керованими застосунками чи керованими обліковими записами Apple. Призначення пристрою не можна подавати як повне розблокування. Якщо потрібне повне розблокування, кожен користувач має придбати його окремо за допомогою особистого облікового запису Apple, що підтримує покупки в програмі.",
+      "fit": "Списки, пов’язані з освітою та бізнесом, ґрунтуються на опублікованому запиті видавця й контексті рішення. Слабкі збіги та збіги лише за назвою вилучаються; вилучення не означає непридатність застосунку.",
+      "disclosure": "Це першоджерельний список Lumi Studio, а не сертифікація чи рекомендація Apple або Microsoft, не схвалення школою чи MDM і не доказ інституційної видимості або знижки. Перевіряйте актуальний магазин і політику організації.",
+      "measurement": "Створений кандидат не є розгорнутим GET, показом у пошуку, кваліфікованим кліком чи копіюванням, інституційною покупкою або завантаженням. Розгортання й входу до вимірювань не було; охоплення, дія та результат лишаються 0/ОЧІКУЄ.",
+      "steps": [
+        "Звірте числовий App ID і точну URL-адресу з актуальною сторінкою App Store.",
+        "Для платних кандидатів використовуйте «Програми і книги», а прямий Intune — лише для оцінки безкоштовного рівня.",
+        "Проведіть обмежений пілот за внутрішніми правилами й не вважайте призначення пристрою розблокуванням IAP."
+      ],
+      "labels": {
+        "roster": "Список адміністратора: 46 перевірених застосунків",
+        "platform": "Платформа",
+        "purpose": "Призначення і контекст рішення",
+        "limits": "Обмеження",
+        "support": "Підтримка",
+        "privacy": "Конфіденційність",
+        "source": "Джерело",
+        "last_checked": "Остання перевірка",
+        "copy": "Копіювати",
+        "copied": "Скопійовано",
+        "school": "Пов’язано з освітою",
+        "business": "Пов’язано з бізнесом",
+        "not_shortlisted": "Поза пов’язаним коротким списком"
+      }
+    },
+    "ur-PK": {
+      "title": "ادارہ جاتی iOS App خریداری کی پیشگی جانچ",
+      "intro": "Apple School Manager، Apple Business Manager اور Microsoft Intune منتظمین کے لیے App Store پر شناخت اور فعال حالت کی تصدیق شدہ 46 Apps کا فریقِ اول، بغیر درجہ بندی جائزہ۔",
+      "paid": "پیشگی ادائیگی والی App کو Apps and Books میں امیدوار کے طور پر تلاش کیا جا سکتا ہے۔ عوامی lookup آپ کے ادارے کے catalog میں موجودگی ثابت نہیں کرتا؛ licences لینے سے پہلے درست عددی App ID کی تصدیق کریں۔",
+      "direct": "Intune کا direct iOS Store app طریقہ صرف مفت Apps کے لیے ہے۔ یہاں ہر مفت download App مفت شروع ہوتی ہے اور اختیاری ایک بار in-app unlock دیتی ہے، اس لیے صرف شامل مفت درجے کا جائزہ لیں۔",
+      "iap": "Apple دستاویز کے مطابق in-app purchase، volume purchase، managed app یا Managed Apple Account کے ساتھ مطابقت نہیں رکھتی۔ Device assignment کو مکمل unlock قرار نہ دیں۔ اگر مکمل اَن لاک درکار ہو تو ہر صارف کو اسے ایسے ذاتی Apple Account سے الگ خریدنا ہوگا جو اِن ایپ خریداری کر سکتا ہو۔",
+      "fit": "تعلیم اور کاروبار سے متعلق فہرستیں شائع شدہ publisher query اور decision context پر مبنی ہیں۔ کمزور یا صرف نام کی بنیاد پر مماثلت شامل نہیں کی جاتی؛ اخراج کا مطلب App کا ناموزوں ہونا نہیں۔",
+      "disclosure": "یہ Lumi Studio کی فریقِ اول فہرست ہے؛ Apple یا Microsoft certification/endorsement، اسکول یا MDM منظوری، ادارہ جاتی نمائش یا discount کا ثبوت نہیں۔ لائیو store اور اپنے ادارے کی policy کو حتمی سمجھیں۔",
+      "measurement": "تیار release candidate، deployed GET، search impression، اہل click/copy یا ادارہ جاتی purchase/download نہیں۔ deployment یا measurement login نہیں ہوا؛ exposure، action اور outcome 0/PENDING رہتے ہیں۔",
+      "steps": [
+        "عددی App ID اور درست URL کو لائیو App Store صفحے سے ملائیں۔",
+        "ادائیگی والے امیدوار کے لیے Apps and Books اور مفت درجے کی جانچ کے لیے ہی Intune direct-store استعمال کریں۔",
+        "ادارے کی policy کے مطابق محدود pilot کریں اور device assignment کو IAP unlock نہ سمجھیں۔"
+      ],
+      "labels": {
+        "roster": "46 تصدیق شدہ Apps کی منتظم فہرست",
+        "platform": "پلیٹ فارم",
+        "purpose": "مقصد اور فیصلہ جاتی سیاق",
+        "limits": "حدود",
+        "support": "مدد",
+        "privacy": "رازداری",
+        "source": "ماخذ",
+        "last_checked": "آخری جانچ",
+        "copy": "کاپی",
+        "copied": "کاپی ہو گیا",
+        "school": "تعلیم سے متعلق",
+        "business": "کاروبار سے متعلق",
+        "not_shortlisted": "متعلقہ مختصر فہرست میں نہیں"
+      }
+    },
+    "vi": {
+      "title": "Kiểm tra trước khi mua ứng dụng iOS cho tổ chức",
+      "intro": "Nguồn tham khảo trực tiếp, không xếp hạng dành cho quản trị viên Apple School Manager, Apple Business Manager và Microsoft Intune đánh giá 46 trang App Store đã xác minh và đang hoạt động.",
+      "paid": "Ứng dụng trả phí trước có thể được tìm như một ứng viên trong Ứng dụng và Sách. Tra cứu công khai không chứng minh ứng dụng xuất hiện trong danh mục của tổ chức; hãy xác nhận đúng App ID dạng số trước khi mua giấy phép.",
+      "direct": "Phương thức thêm trực tiếp ứng dụng iOS Store trong Intune chỉ dành cho ứng dụng miễn phí. Mọi lượt tải miễn phí ở đây đều bắt đầu miễn phí và có tùy chọn mở khóa một lần trong ứng dụng, vì vậy chỉ đánh giá phần miễn phí đi kèm.",
+      "iap": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "fit": "Danh sách liên quan đến giáo dục và doanh nghiệp dựa trên truy vấn của nhà phát hành và bối cảnh quyết định đã công bố. Kết quả khớp yếu hoặc chỉ theo tên sẽ bị loại; bị loại không có nghĩa ứng dụng không phù hợp.",
+      "disclosure": "Đây là danh sách trực tiếp của Lumi Studio, không phải chứng nhận hoặc đề xuất của Apple hay Microsoft, phê duyệt của trường học hay MDM, bằng chứng về khả năng hiển thị cho tổ chức hoặc giảm giá. Hãy kiểm tra cửa hàng trực tiếp và chính sách tổ chức.",
+      "measurement": "Ứng viên được tạo không phải GET đã triển khai, lượt hiển thị tìm kiếm, lượt nhấp hoặc sao chép đủ điều kiện, giao dịch mua hay tải xuống của tổ chức. Không có triển khai hay đăng nhập đo lường; mức hiển thị, hành động và kết quả vẫn là 0/ĐANG CHỜ.",
+      "steps": [
+        "Đối chiếu App ID dạng số và URL chính xác với trang App Store đang hoạt động.",
+        "Dùng Ứng dụng và Sách cho ứng viên trả phí; chỉ dùng Intune trực tiếp để đánh giá phần miễn phí.",
+        "Thử nghiệm giới hạn theo chính sách nội bộ và không coi việc gán thiết bị là mở khóa IAP."
+      ],
+      "labels": {
+        "roster": "Danh sách quản trị 46 ứng dụng đã xác minh",
+        "platform": "Nền tảng",
+        "purpose": "Mục đích và bối cảnh quyết định",
+        "limits": "Giới hạn",
+        "support": "Hỗ trợ",
+        "privacy": "Quyền riêng tư",
+        "source": "Nguồn",
+        "last_checked": "Kiểm tra gần nhất",
+        "copy": "Sao chép",
+        "copied": "Đã sao chép",
+        "school": "Liên quan giáo dục",
+        "business": "Liên quan doanh nghiệp",
+        "not_shortlisted": "Không nằm trong danh sách liên quan"
+      }
+    },
+    "zh-Hans": {
+      "title": "机构采购 iOS App 前置核验",
+      "intro": "供 Apple School Manager、Apple Business Manager 和 Microsoft Intune 管理员评估 46 个已核验在架 App Store 条目的开发者第一方、非排名资料。",
+      "paid": "预付费 App 可在“App 与图书”中作为候选项搜索。公开查询不能证明它会出现在贵机构目录中；获取许可前，请让内容管理员核对准确的数字 App ID。",
+      "direct": "Intune 直接添加 iOS Store App 的方式只适用于商店中的免费 App。这里所有免费下载项均为免费开始并提供可选的一次性 App 内解锁，因此只能评估已包含的免费功能。",
+      "iap": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "fit": "教育与企业相关清单依据已发布的开发者查询和决策语境生成。弱关联或仅凭名称的匹配会被排除；未列入不代表 App 不适用。",
+      "disclosure": "这是 Lumi Studio 的开发者第一方名册，不代表 Apple 或 Microsoft 认证或背书、学校或 MDM 批准，也不证明机构目录可见或存在折扣。请以实时商店和贵机构政策为准。",
+      "measurement": "已生成的候选版本不等于已部署 GET、搜索展示、有效点击或复制、机构采购或下载。本次未部署，也未登录计量平台；曝光、操作和结果保持 0／待定。",
+      "steps": [
+        "用实时 App Store 页面核对数字 App ID 和准确 URL。",
+        "付费候选走“App 与图书”，Intune 直接方式仅用于免费功能评估。",
+        "按机构政策进行小范围试用，不把设备分配视为 App 内购买解锁。"
+      ],
+      "labels": {
+        "roster": "46 个已核验 App 管理员名册",
+        "platform": "支持设备",
+        "purpose": "用途与决策语境",
+        "limits": "限制",
+        "support": "支持",
+        "privacy": "隐私",
+        "source": "来源",
+        "last_checked": "最近核验",
+        "copy": "复制",
+        "copied": "已复制",
+        "school": "教育相关",
+        "business": "企业相关",
+        "not_shortlisted": "未列入相关清单"
+      }
+    },
+    "zh-Hant": {
+      "title": "機構採購 iOS App 前置核驗",
+      "intro": "提供 Apple School Manager、Apple Business Manager 與 Microsoft Intune 管理員評估 46 個已核驗在架 App Store 項目的開發者第一方、非排名資料，適用於台灣學校與組織的採購前查核。",
+      "paid": "一次付費下載 App 可在「App 與書籍」中作為候選項目搜尋。公開 lookup 不代表它會出現在貴組織目錄；取得授權前，請由內容管理員核對精確的數字 App ID。",
+      "direct": "Intune 直接加入 iOS Store App 的方式只適用於商店中的免費 App。此處所有免費下載項目都是免費開始並提供選用的一次性 App 內解鎖，因此只能評估已包含的免費功能。",
+      "iap": "Apple 官方文件指出，App 內購買不相容於大量購買、受管理 App 或受管理 Apple 帳號。不可把裝置指派描述成完整解鎖。 如需完整解鎖，每位使用者都必須使用可進行 App 內購買的個人 Apple 帳號分別購買。",
+      "fit": "教育與企業相關清單依既有開發者查詢與決策情境產生。弱關聯或只憑名稱的項目會排除；未列入不代表 App 不適用。",
+      "disclosure": "這是 Lumi Studio 的開發者第一方名冊，不代表 Apple 或 Microsoft 認證或背書、學校或 MDM 核准，也不證明機構目錄可見或存在折扣。請以即時商店與貴組織政策為準。",
+      "measurement": "已產生候選版本不等於已部署 GET、搜尋曝光、有效點擊或複製、機構採購或下載。本次未部署，也未登入量測平台；曝光、行動與結果維持 0／待確認。",
+      "steps": [
+        "以台灣 App Store 即時頁面核對數字 App ID 與完整 URL。",
+        "付費候選先由「App 與書籍」內容管理員確認可見性及所需授權數量。",
+        "Intune 直接商店評估須逐項記錄未進行 App 內購買時可用的免費功能。",
+        "在預定的受監管、共用或使用者註冊 iPad 設定上試行，並明確選擇裝置或使用者授權。",
+        "完成校內或組織的隱私、無障礙、資安與兒少規範審查；安裝成功不等於核准。"
+      ],
+      "labels": {
+        "roster": "46 個已核驗 App 管理員名冊",
+        "platform": "支援裝置",
+        "purpose": "用途與決策情境",
+        "limits": "限制",
+        "support": "支援",
+        "privacy": "隱私",
+        "source": "來源",
+        "last_checked": "最近核驗",
+        "copy": "複製",
+        "copied": "已複製",
+        "school": "教育相關",
+        "business": "企業相關",
+        "not_shortlisted": "未列入相關清單"
+      }
+    }
+  }
+}

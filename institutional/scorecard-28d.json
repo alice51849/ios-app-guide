@@ -1,0 +1,74 @@
+{
+  "$schema": "https://alice51849.github.io/ios-app-guide/institutional/institutional-scorecard.schema.json",
+  "schema_version": 1,
+  "release_status": "CANDIDATE_NOT_DEPLOYED",
+  "window_days": 28,
+  "window_start": "2026-08-03",
+  "window_end": "2026-08-30",
+  "privacy_rule": {
+    "threshold": 5,
+    "values_1_to_4": "report_as_range_1_to_4_or_PENDING",
+    "no_evidence": "0/PENDING",
+    "search_console_and_asc": "read_only_observed_lower_bounds_only; never infer exposure or institutional attribution"
+  },
+  "stage_contract": [
+    {
+      "stage": "inventory",
+      "distinct_from_next_stage": true
+    },
+    {
+      "stage": "deployed",
+      "distinct_from_next_stage": true
+    },
+    {
+      "stage": "http_get",
+      "distinct_from_next_stage": true
+    },
+    {
+      "stage": "qualified_click",
+      "distinct_from_next_stage": true
+    },
+    {
+      "stage": "institutional_download",
+      "distinct_from_next_stage": false
+    }
+  ],
+  "metrics": [
+    {
+      "stage": "inventory",
+      "value": 46,
+      "status": "VERIFIED",
+      "source": "verified_live_catalog_plus_apple_public_get",
+      "is_institutional_outcome": false
+    },
+    {
+      "stage": "deployed",
+      "value": 0,
+      "status": "PENDING",
+      "source": "candidate_not_deployed",
+      "is_institutional_outcome": false
+    },
+    {
+      "stage": "http_get",
+      "value": 0,
+      "status": "PENDING",
+      "source": "deployment_http_logs_not_available",
+      "is_institutional_outcome": false
+    },
+    {
+      "stage": "qualified_click",
+      "value": 0,
+      "status": "PENDING",
+      "source": "no_client_tracking; first_party_aggregate_logs_not_available",
+      "is_institutional_outcome": false
+    },
+    {
+      "stage": "institutional_download",
+      "value": 0,
+      "status": "PENDING",
+      "source": "organization_specific_evidence_not_available; ordinary_asc_downloads_excluded",
+      "is_institutional_outcome": true
+    }
+  ],
+  "content_digest": "sha256:5ee7e2295cda04c0bfbe4b0dae4ab216c2c83e84fe968d9ea169431dbaf10d40"
+}

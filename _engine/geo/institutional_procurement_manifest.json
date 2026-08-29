@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "candidate_date": "2026-08-30",
+  "release_status": "CANDIDATE_NOT_DEPLOYED",
+  "expected_app_count": 46,
+  "expected_locale_count": 50,
+  "official_source_policy": {
+    "max_age_days": 14,
+    "public_lookup_max_age_days": 3,
+    "storefront_max_age_days": 7
+  },
+  "canary": {
+    "status": "BLOCKED_PENDING_ADMIN_VERIFICATION",
+    "reason": "Public GET evidence verifies listing identity, platform and purchase class only. Per-organization Apps and Books visibility, license availability, Intune sync and institutional approval were not checked because this candidate does not sign in to administrator portals.",
+    "app_keys": [
+      "notesstudio100",
+      "aim990plus",
+      "wifiaid"
+    ]
+  },
+  "source_files": {
+    "verified_catalog": {
+      "path": "data/verified-ios-app-finder-catalog.json",
+      "sha256": "ab76689ec05634d22760f68b5ae01853cd5339de68b8451ddfdd8edb86e1cc23"
+    },
+    "publisher_intent": {
+      "path": "data/lumi-studio-publisher-search-intent-catalog.json",
+      "sha256": "73e695215f5c1f227535719048669c08733c71a1a22883e73aea0831f34fb764"
+    },
+    "storefront_state": {
+      "path": ".appstore_storefront_state.json",
+      "sha256": "be886570be08f2114d63001d6057fd25f183ccce03191165182ebf1cf2212bc8"
+    },
+    "public_lookup": {
+      "path": "_engine/geo/institutional_public_lookup.json",
+      "sha256": "4f68709e9d87c959b05cb1efb8609bbcdd84b7238cf9be48f7ba38535ce0ab04"
+    },
+    "procurement_i18n": {
+      "path": "_engine/geo/institutional_procurement_i18n.json",
+      "sha256": "8427180c0fb7a3d42778ed1699a4223892ad79350d5a8b7a10ebda1492964043"
+    },
+    "intent_overrides": {
+      "path": "_engine/geo/institutional_intent_overrides.json",
+      "sha256": "f7ec81ccc6ec65d3e6b9ef5362ff519e80de1e082b7e8e3b93aaf2cce2f30e95"
+    }
+  },
+  "official_references": [
+    {
+      "id": "apple-content-distribution",
+      "publisher": "Apple",
+      "title": "Intro to content distribution for Apple devices",
+      "url": "https://support.apple.com/guide/deployment/intro-to-content-distribution-depe1553f932/web",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13",
+      "supports": [
+        "Apple School Manager or Apple Business Manager can acquire eligible paid and free App Store apps through Apps and Books.",
+        "Apps can be assigned to devices or users through device management.",
+        "In-app purchases and subscriptions are not compatible with volume purchasing, managed apps, or Managed Apple Accounts."
+      ]
+    },
+    {
+      "id": "apple-managed-apps",
+      "publisher": "Apple",
+      "title": "Distribute managed apps to Apple devices",
+      "url": "https://support.apple.com/guide/deployment/distribute-managed-apps-dep575bfed86/web",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13",
+      "supports": [
+        "A device management service must assign a device-based or user-based licence before installing an Apps and Books app.",
+        "Managed apps can be required or optional, and supervised devices can install them silently."
+      ]
+    },
+    {
+      "id": "microsoft-intune-direct-store",
+      "publisher": "Microsoft",
+      "title": "Add iOS Store Apps to Microsoft Intune",
+      "url": "https://learn.microsoft.com/en-us/intune/app-management/deployment/add-store-ios",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13",
+      "supports": [
+        "The direct iOS Store app method can assign only apps that are free of charge in the App Store.",
+        "Paid apps should use Apple's volume-purchase path."
+      ]
+    },
+    {
+      "id": "microsoft-intune-volume-purchase",
+      "publisher": "Microsoft",
+      "title": "Manage Apple Volume-Purchased Apps",
+      "url": "https://learn.microsoft.com/en-us/intune/app-management/deployment/manage-vpp-apple",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13",
+      "supports": [
+        "Intune synchronises Apps and Books location tokens from Apple Business Manager or Apple School Manager.",
+        "Apple Business Manager can acquire both free and paid App Store apps for managed distribution.",
+        "Device-licensed apps are installed and updated through the MDM channel."
+      ]
+    }
+  ],
+  "related_fit": {
+    "school": {
+      "notesstudio100": [
+        "handwriting notes app for ipad",
+        "study"
+      ],
+      "aim990": [
+        "toeic prep",
+        "study plan"
+      ],
+      "aim990plus": [
+        "exam trainer",
+        "questions"
+      ],
+      "lockhour": [
+        "studying",
+        "exams"
+      ],
+      "lumibopomofo": [
+        "kids to learn zhuyin",
+        "child first learning"
+      ],
+      "lumibopomofopro": [
+        "bilingual children",
+        "learning zhuyin"
+      ],
+      "lumiletters": [
+        "educational game app for kids",
+        "learning app"
+      ],
+      "lumiletterspro": [
+        "homeschool kindergarten prep",
+        "early-reading"
+      ],
+      "lumimath": [
+        "math game app for kids",
+        "trains reasoning"
+      ],
+      "lumimathpro": [
+        "preschool and early grades",
+        "early-math"
+      ]
+    },
+    "business": {
+      "maskmyfile": [
+        "freelancers sharing client documents",
+        "client document"
+      ],
+      "moneytag": [
+        "freelance projects",
+        "client project"
+      ],
+      "onepageppt": [
+        "meeting notes",
+        "presentation slide"
+      ],
+      "scanto": [
+        "nurses",
+        "patient consent forms"
+      ],
+      "sononote": [
+        "meetings",
+        "action items"
+      ],
+      "wifiaid": [
+        "network diagnosis",
+        "connection problem"
+      ],
+      "wifiaidlite": [
+        "network diagnosis",
+        "real problem"
+      ]
+    }
+  },
+  "measurement": {
+    "privacy_threshold": 5,
+    "scorecard_windows_days": [
+      7,
+      28
+    ],
+    "stages": [
+      "inventory",
+      "deployed",
+      "http_get",
+      "qualified_click",
+      "institutional_download"
+    ],
+    "no_evidence_value": 0,
+    "no_evidence_status": "PENDING",
+    "ordinary_downloads_are_institutional": false
+  },
+  "prohibited_claim_fragments": [
+    "apple certified",
+    "apple-approved",
+    "education certified",
+    "mdm certified",
+    "available in apple school manager",
+    "available in apple business manager",
+    "school approved",
+    "institution approved",
+    "volume discount",
+    "institutional discount"
+  ]
+}

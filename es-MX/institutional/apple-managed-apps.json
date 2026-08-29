@@ -1,0 +1,2403 @@
+{
+  "$schema": "https://alice51849.github.io/ios-app-guide/institutional/apple-managed-apps.schema.json",
+  "schema_version": 1,
+  "release_status": "CANDIDATE_NOT_DEPLOYED",
+  "deployment_status": "not_deployed",
+  "locale": "es-MX",
+  "route_kind": "localized",
+  "url": "https://alice51849.github.io/ios-app-guide/es-MX/institutional/apple-managed-apps.json",
+  "generated_on": "2026-08-30",
+  "source_digest": "sha256:68996012c878d8050a1d8d3fac47c9731f0ab563fa8601c05e62b6c7fc7d0df0",
+  "roster_digest": "sha256:fea82924a4facecbf07394ed7e86d966970b2ba8db1fa21110d5debbde6a8f18",
+  "publisher": {
+    "name": "Lumi Studio",
+    "relationship": "first_party_developer",
+    "is_independent_ranking": false,
+    "support_email": "hourstag.app@gmail.com"
+  },
+  "disclosures": {
+    "first_party_non_ranking_non_endorsement": "Este registro es material de primera parte de Lumi Studio, no certificación ni recomendación de Apple o Microsoft, aprobación escolar o MDM, prueba de visibilidad institucional ni evidencia de descuento. Verifique la tienda vigente y la política de su organización.",
+    "live_policy_note": "Referencia de primera parte, sin ranking, para que administradores de Apple School Manager, Apple Business Manager y Microsoft Intune evalúen 46 fichas vigentes y verificadas de App Store.",
+    "public_lookup_scope": "Este registro es material de primera parte de Lumi Studio, no certificación ni recomendación de Apple o Microsoft, aprobación escolar o MDM, prueba de visibilidad institucional ni evidencia de descuento. Verifique la tienda vigente y la política de su organización."
+  },
+  "official_references": [
+    {
+      "id": "apple-content-distribution",
+      "publisher": "Apple",
+      "source_title": "Intro to content distribution for Apple devices",
+      "url": "https://support.apple.com/guide/deployment/intro-to-content-distribution-depe1553f932/web",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    },
+    {
+      "id": "apple-managed-apps",
+      "publisher": "Apple",
+      "source_title": "Distribute managed apps to Apple devices",
+      "url": "https://support.apple.com/guide/deployment/distribute-managed-apps-dep575bfed86/web",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    },
+    {
+      "id": "microsoft-intune-direct-store",
+      "publisher": "Microsoft",
+      "source_title": "Add iOS Store Apps to Microsoft Intune",
+      "url": "https://learn.microsoft.com/en-us/intune/app-management/deployment/add-store-ios",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    },
+    {
+      "id": "microsoft-intune-volume-purchase",
+      "publisher": "Microsoft",
+      "source_title": "Manage Apple Volume-Purchased Apps",
+      "url": "https://learn.microsoft.com/en-us/intune/app-management/deployment/manage-vpp-apple",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    }
+  ],
+  "source_state": {
+    "public_lookup_checked_at": "2026-08-29T18:45:17Z",
+    "storefront_snapshot_checked_at": "2026-08-29T06:31:01Z",
+    "official_source_max_age_days": 14,
+    "lookup_method": "public_get_only",
+    "institutional_portal_login": false,
+    "deployment_or_submission": false
+  },
+  "workflow": {
+    "paid_apps_and_books": "Una app con pago inicial puede buscarse como candidata en Apps y libros. La consulta pública no demuestra que aparezca en el catálogo de la organización; confirme el App ID numérico exacto antes de adquirir licencias.",
+    "intune_direct_store_free_tier": "El método directo de app iOS de Store en Intune solo admite apps gratuitas. Todas las descargas gratuitas de esta lista empiezan sin costo y ofrecen un desbloqueo único opcional dentro de la app; evalúe únicamente el nivel gratuito incluido.",
+    "managed_app_iap_warning": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+    "related_fit_method": "Las listas relacionadas con educación y empresa se basan en la consulta del editor y el contexto de decisión publicados. Se excluyen coincidencias débiles o solo por nombre; la exclusión no significa que la app sea inadecuada.",
+    "administrator_steps": [
+      "Compare el App ID numérico y la URL exacta con la ficha vigente de App Store.",
+      "Use Apps y libros para candidatos de pago e Intune directo solo para probar el nivel gratuito.",
+      "Realice un piloto limitado conforme a la política interna y no suponga que asignar el dispositivo desbloquea las compras dentro de la app."
+    ]
+  },
+  "canary": {
+    "status": "BLOCKED_PENDING_ADMIN_VERIFICATION",
+    "reason": "Public GET evidence verifies listing identity, platform and purchase class only. Per-organization Apps and Books visibility, license availability, Intune sync and institutional approval were not checked because this candidate does not sign in to administrator portals.",
+    "count": 3,
+    "app_keys": [
+      "notesstudio100",
+      "aim990plus",
+      "wifiaid"
+    ],
+    "paid_download_app_keys": [
+      "aim990plus",
+      "wifiaid"
+    ],
+    "free_iap_app_keys": [
+      "notesstudio100"
+    ]
+  },
+  "counts": {
+    "apps": 46,
+    "paid_upfront": 12,
+    "free_to_start_with_iap": 34,
+    "fully_free": 0,
+    "ipad_supported": 46,
+    "school_related": 10,
+    "business_related": 7,
+    "canary": 3
+  },
+  "apps": [
+    {
+      "app_key": "notesstudio100",
+      "app_store_id": "6798813048",
+      "bundle_id": "com.alice51849.NotesStudio100",
+      "public_name": "100 Notes Studio: Pen & Paper",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6798813048?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "100 Notes Studio: Pen & Paper — Notas a mano y anotación PDF | iOS App",
+      "decision_context": "100 Notes Studio reúne escritura a mano, texto con formato, anotación de PDF, audio por página y herramientas de estudio en un espacio privado que funciona",
+      "related_fit": [
+        "school"
+      ],
+      "canary": true,
+      "canary_status": "BLOCKED_FREE_TIER_ONLY_IAP_NOT_DISTRIBUTABLE",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/100notes-support/support.html",
+      "privacy_url": "https://alice51849.github.io/100notes-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6798813048&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6798813048",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "bundle_id": "com.alice51849.AIBriefPack",
+      "public_name": "AI Brief",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6791658210?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "AI Brief — Archivos a contexto claro | iOS App",
+      "decision_context": "Mejor contexto. Mejores respuestas.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/support.html?lang=en-US",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/privacy.html?lang=en-US",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6791658210&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6791658210",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "bundle_id": "com.alice51849.Aim990Plus",
+      "public_name": "Aim990 Plus",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6792483140?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Descarga de pago",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "Aim990 Plus — Entrena inglés bajo presión | iOS App",
+      "decision_context": "Fortalece tu comprensión del inglés con sesiones creadas para mantener la concentración incluso cuando el tiempo cuenta. Aim990 Plus está dirigido a",
+      "related_fit": [
+        "school"
+      ],
+      "canary": true,
+      "canary_status": "BLOCKED_PORTAL_VISIBILITY_UNVERIFIED",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Una app con pago inicial puede buscarse como candidata en Apps y libros. La consulta pública no demuestra que aparezca en el catálogo de la organización; confirme el App ID numérico exacto antes de adquirir licencias.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6792483140&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6792483140",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "aim990",
+      "app_store_id": "6784974530",
+      "bundle_id": "com.alice51849.aim990",
+      "public_name": "Aim990: 990 Score Coach",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6784974530?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor app para preparar TOEIC con plan de estudio offline para iPhone",
+      "decision_context": "La Parte 5 parece corta, pero esas preguntas de oraciones incompletas pueden consumir tiempo si la gramática y el vocabulario no son automáticos.",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/aim990-support/",
+      "privacy_url": "https://alice51849.github.io/aim990-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6784974530&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6784974530",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "bundle_id": "com.alice51849.BattAI",
+      "public_name": "BattAI: Battery health score",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6802423998?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "BattAI: Estado de la batería — Reglas, fuentes y límites claros | iOS App",
+      "decision_context": "BattAI BattAI usa cinco valores de las API públicas de iOS: nivel de batería, estado de carga, modo de bajo consumo, estado térmico del dispositivo y hora. Los demás resultados se calculan con esas lecturas o los agregas tú. Cada dato muestra su fuente y sus límites.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/battai-support/locales/en/",
+      "privacy_url": "https://alice51849.github.io/battai-support/locales/en/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6802423998&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6802423998",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "caldaily",
+      "app_store_id": "6794178671",
+      "bundle_id": "com.alice51849.CalDaily",
+      "public_name": "CalDaily: Calculator & Themes",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6794178671?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "CalDaily: calculadora y temas — Widget, utilidades e historial | iOS App",
+      "decision_context": "Una calculadora que vas a conservar, porque recuerda de qué se trataba cada número.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/caldaily-support/support.html",
+      "privacy_url": "https://alice51849.github.io/caldaily-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6794178671&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6794178671",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "cvdesk",
+      "app_store_id": "6781337213",
+      "bundle_id": "com.alice51849.cvdesk",
+      "public_name": "CV Desk: ATS Resume Builder",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6781337213?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor app para crear currículum para cambio de carrera 2026",
+      "decision_context": "Cuando cambias de campo, el problema del currículum es distinto: tu experiencia es real pero 'no relacionada' en papel, y los filtros ATS te rechazan antes de que un humano lo lea — CV Desk está diseñado para esto.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/cvdesk-support/support.html",
+      "privacy_url": "https://alice51849.github.io/cvdesk-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6781337213&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6781337213",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "cyca",
+      "app_store_id": "6782251621",
+      "bundle_id": "com.alice51849.Cyca",
+      "public_name": "Cyca: Period & Cycle Tracker",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6782251621?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor app para seguimiento de periodo sin cuenta requerida para iPhone",
+      "decision_context": "En una categoría donde la sensibilidad de datos es lo principal, el rastreador correcto mantiene todo — flujo, estado de ánimo, síntomas, temperatura, intimidad — en tu dispositivo, sin cuenta ni sincronización en la nube — Cyca está diseñado para esto.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/cyca-support/",
+      "privacy_url": "https://alice51849.github.io/cyca-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6782251621&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6782251621",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "bundle_id": "com.alice51849.DailyMateLite",
+      "public_name": "DailyMate Lite: Speak Today",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6794725568?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "DailyMate Lite: Habla hoy — 50 idiomas, charlas cotidianas | iOS App",
+      "decision_context": "Habla con confianza cuando lo necesites. DailyMate Lite convierte situaciones de todos los días en intercambios breves que puedes escuchar y practicar en",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6794725568&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6794725568",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "dailymate",
+      "app_store_id": "6790418321",
+      "bundle_id": "com.caitlyn.dailymate",
+      "public_name": "DailyMate: Language Phrases",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6790418321?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Descarga de pago",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "mejor app de frases útiles para viajar con Apple Watch",
+      "decision_context": "Antes de un viaje, las frases completas para situaciones reales son más útiles que vocabulario aislado que aún tienes que armar bajo presión — DailyMate está diseñado para esto.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Una app con pago inicial puede buscarse como candidata en Apps y libros. La consulta pública no demuestra que aparezca en el catálogo de la organización; confirme el App ID numérico exacto antes de adquirir licencias.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6790418321&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6790418321",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "gmoney",
+      "app_store_id": "6755782939",
+      "bundle_id": "com.caitlai.globi",
+      "public_name": "G+Money",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6755782939?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Descarga de pago",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "mejor app para seguimiento de presupuesto de viaje sin suscripción para iPhone",
+      "decision_context": "En un viaje necesitas un rastreador de presupuesto que funcione offline en un país sin datos, maneje múltiples monedas y no pida cuenta — organizado por viaje para que cada vacación sea separada — G+Money está diseñado para esto.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Una app con pago inicial puede buscarse como candidata en Apps y libros. La consulta pública no demuestra que aparezca en el catálogo de la organización; confirme el App ID numérico exacto antes de adquirir licencias.",
+      "support_url": "https://alice51849.github.io/gmoney-support/",
+      "privacy_url": "https://alice51849.github.io/gmoney-support/#privacy",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6755782939&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6755782939",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "bundle_id": "com.alice51849.GMoneyLite",
+      "public_name": "G+Money Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6793436548?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "G+Money Lite — Gastos, presupuesto y divisas | iOS App",
+      "decision_context": "G+Money Lite — Conversor de divisas y gastos de viaje",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6793436548&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6793436548",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "bundle_id": "com.alice51849.HoursTagLite",
+      "public_name": "HoursTag Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6794039979?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "HoursTag Lite — El precio real de las cosas | iOS App",
+      "decision_context": "HoursTag Lite - El precio real de las cosas",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6794039979&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6794039979",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "bundle_id": "com.caitlyn.hourstag",
+      "public_name": "HoursTag: Hours to Buy",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6754218117?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Descarga de pago",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "HoursTag: Horas para comprar — Ahorro, gastos y presupuesto | iOS App",
+      "decision_context": "¿Cuánto cuesta de verdad? No solo en pesos, sino en horas de tu vida.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Una app con pago inicial puede buscarse como candidata en Apps y libros. La consulta pública no demuestra que aparezca en el catálogo de la organización; confirme el App ID numérico exacto antes de adquirir licencias.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6754218117&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6754218117",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lockhour",
+      "app_store_id": "6780107485",
+      "bundle_id": "com.focuslockpro.app",
+      "public_name": "LockHour Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6780107485?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor app para bloquear redes sociales mientras estudias en iPhone",
+      "decision_context": "Durante los exámenes, la fuerza de voluntad no es la herramienta — un bloqueo estricto con tiempo es la solución — LockHour Pro está diseñado para esto.",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/lockhour-support/support.html",
+      "privacy_url": "https://alice51849.github.io/lockhour-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6780107485&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6780107485",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumibopomofo",
+      "app_store_id": "6773017109",
+      "bundle_id": "com.alice51849.LumiZhuyin",
+      "public_name": "Lumi Bopomofo",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6773017109?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor app de bopomofo para niños para aprender zhuyin en iPhone",
+      "decision_context": "Para un niño que aprende Zhuyin por primera vez, la app debe cubrir los 37 símbolos con trazado y juegos — diseñada para la ventana de aprendizaje de 4 a 7 años, sin anuncios y sin recolección de datos — Lumi Bopomofo está hecha para esto.",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/lumi-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6773017109&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6773017109",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumibopomofopro",
+      "app_store_id": "6775773117",
+      "bundle_id": "com.alice51849.LumiZhuyinPro",
+      "public_name": "Lumi Bopomofo Pro: Zhuyin",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6775773117?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Descarga de pago",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "mejor app completa de zhuyin para niños bilingües",
+      "decision_context": "Los niños bilingües que aprenden Zhuyin en casa necesitan un camino completo por sonidos, símbolos, tonos y mezcla, con suficiente repetición lúdica para familiarizarse con el sistema — Lumi Bopomofo Pro está hecho para esto.",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Una app con pago inicial puede buscarse como candidata en Apps y libros. La consulta pública no demuestra que aparezca en el catálogo de la organización; confirme el App ID numérico exacto antes de adquirir licencias.",
+      "support_url": "https://alice51849.github.io/lumi-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6775773117&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6775773117",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumiletters",
+      "app_store_id": "6778748533",
+      "bundle_id": "com.alice51849.LumiLettersLite",
+      "public_name": "Lumi Letters Lite: ABC Kids",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6778748533?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor juego educativo para niños sin anuncios en iPhone",
+      "decision_context": "Para un niño pequeño, lo decisivo son los anuncios y la recolección de datos — una app educativa debe enseñar dentro de un juego sin anuncios, sin recolección de datos y con desbloqueo único confiable — Lumi Letters está hecha para esto.",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/lumi-letters-support",
+      "privacy_url": "https://alice51849.github.io/lumi-letters-support",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6778748533&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6778748533",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumiletterspro",
+      "app_store_id": "6778491147",
+      "bundle_id": "com.alice51849.LumiLetters",
+      "public_name": "Lumi Letters Pro: ABC Phonics",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6778491147?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Descarga de pago",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "mejor app completa de fonética para preparación de kínder en casa",
+      "decision_context": "Las familias que preparan para kínder necesitan un camino completo de lectura temprana que conecte sonidos de letras, trazado y formación de palabras en vez de juegos de alfabeto aislados — Lumi Letters Pro está hecho para esto.",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Una app con pago inicial puede buscarse como candidata en Apps y libros. La consulta pública no demuestra que aparezca en el catálogo de la organización; confirme el App ID numérico exacto antes de adquirir licencias.",
+      "support_url": "https://alice51849.github.io/lumi-letters-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-letters-support",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6778491147&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6778491147",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimath",
+      "app_store_id": "6778269699",
+      "bundle_id": "com.alice51849.LumiMathFree",
+      "public_name": "Lumi Math Planet: Explorer",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6778269699?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor juego de matemáticas para niños para desarrollar habilidades lógicas en iPhone",
+      "decision_context": "La mejor app de matemáticas para niños entrena razonamiento — patrones, secuencias, pensamiento espacial — no solo práctica de aritmética, y lo oculta dentro de un juego que el niño quiere jugar — Lumi Math Planet está hecha para esto.",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/lumi-math-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-math-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6778269699&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6778269699",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimathpro",
+      "app_store_id": "6776958488",
+      "bundle_id": "com.alice51849.LumiMathPlanet",
+      "public_name": "Lumi Math Pro: Kids Numbers",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6776958488?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Descarga de pago",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "mejor app completa de matemáticas para preescolar y primeros grados",
+      "decision_context": "Una app completa de matemáticas tempranas debe hacer que el conteo, el sentido numérico y las primeras operaciones se sientan como una aventura conectada en vez de ejercicios aislados — Lumi Math Pro está hecho para esto.",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Una app con pago inicial puede buscarse como candidata en Apps y libros. La consulta pública no demuestra que aparezca en el catálogo de la organización; confirme el App ID numérico exacto antes de adquirir licencias.",
+      "support_url": "https://alice51849.github.io/lumi-math-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-math-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6776958488&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6776958488",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimissionpro",
+      "app_store_id": "6779745474",
+      "bundle_id": "com.alice51849.LumiMissionPro",
+      "public_name": "Lumi Mission Planet Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6779745474?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Descarga de pago",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "mejor app completa de rutina de mañana y noche para niños",
+      "decision_context": "El cepillado de dientes y la hora de dormir suelen fallar en el mismo momento cada noche: el niño está cansado, el padre está cansado y el siguiente paso no es lo suficientemente visible.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Una app con pago inicial puede buscarse como candidata en Apps y libros. La consulta pública no demuestra que aparezca en el catálogo de la organización; confirme el App ID numérico exacto antes de adquirir licencias.",
+      "support_url": "https://alice51849.github.io/lumi-mission-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779745474&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779745474",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimission",
+      "app_store_id": "6779750237",
+      "bundle_id": "com.alice51849.LumiMissionLite",
+      "public_name": "Lumi Mission Planet: Routines",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6779750237?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor aplicación de rutina para dormir para preescolares sin anuncios",
+      "decision_context": "Para un preescolar, una rutina para dormir funciona mejor cuando es corta, visual y lo suficientemente predecible para que el niño la siga sin otra ronda de recordatorios — Lumi Mission Planet está hecha para esto.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/lumi-mission-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779750237&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779750237",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumiweather",
+      "app_store_id": "6779552704",
+      "bundle_id": "com.alice51849.LumiWeather",
+      "public_name": "Lumi Weather: Family Forecast",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6779552704?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor app de clima para ayudar a padres a planear tiempo al aire libre con niños",
+      "decision_context": "Los padres que planean tiempo al aire libre necesitan más que la temperatura: necesitan una vista rápida y adaptada a la edad sobre si las condiciones son adecuadas para el niño y qué ropa usar — Lumi Weather está hecho para esto.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/lumi-weather-support",
+      "privacy_url": "https://alice51849.github.io/lumi-weather-support",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779552704&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779552704",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "bundle_id": "com.alice51849.MaskMyFile",
+      "public_name": "Mask My File",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6792850916?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Mask My File — Tacha datos antes de enviar | iOS App",
+      "decision_context": "Comparte de forma segura sin sacrificar el contexto que sí importa. Mask My File detecta los datos privados antes de que envíes un archivo, oculta de",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/ur-PK/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6792850916&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6792850916",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "bundle_id": "com.alice51849.MochiDoneStamp",
+      "public_name": "Mochi DoneStamp: Last Time",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6790800323?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Mochi DoneStamp: Última vez — Recuerda cuándo lo hiciste | iOS App",
+      "decision_context": "¿Cuándo fue la última vez que cambiaste las sábanas, regaste una planta, llamaste a tu familia, respaldaste tus fotos o cambiaste un filtro?",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://open.cait518.cc/mochi-donestamp/en-US/support/",
+      "privacy_url": "https://open.cait518.cc/mochi-donestamp/en-US/privacy/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6790800323&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6790800323",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "mochi",
+      "app_store_id": "6785004775",
+      "bundle_id": "com.alice51849.MochiTodo",
+      "public_name": "Mochi: Cute Checklist",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6785004775?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor app simple de lista de tareas para iPhone sin suscripción",
+      "decision_context": "Si la mayoría de las apps de tareas parecen saturadas, la correcta es una lista limpia con recordatorios, reglas de repetición y complicación para Watch — y deliberadamente sin maquinaria de gestión de proyectos — Mochi está hecha para esto.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/mochitodo-support/",
+      "privacy_url": "https://alice51849.github.io/mochitodo-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6785004775&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6785004775",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "moneytag",
+      "app_store_id": "6801956402",
+      "bundle_id": "com.alice51849.MoneyTag",
+      "public_name": "MoneyTag: Income & Expense",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6801956402?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "MoneyTag: Ingresos y gastos — Proyectos · Etiquetas | iOS App",
+      "decision_context": "Ingresos y gastos Cada proyecto lleva sus propias cuentas: los ingresos menos los gastos dan su resultado neto. Estas son las preguntas más comunes. Si no encuentras la tuya, escríbenos: cada mensaje lo lee una persona real.",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/moneytag-support/?lang=en-US",
+      "privacy_url": "https://alice51849.github.io/moneytag-support/privacy.html?lang=en-US",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6801956402&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6801956402",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "bundle_id": "com.alice51849.OnePagePPT",
+      "public_name": "OnePage PPT: AI Slide Maker",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6798814385?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "OnePage PPT: crea diapositivas — Tus notas en una sola lámina | iOS App",
+      "decision_context": "Convierte un muro de texto en UNA lámina que sí se lee.",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/app/onepage-ppt/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/onepage-ppt/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6798814385&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6798814385",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "photocream",
+      "app_store_id": "6781808054",
+      "bundle_id": "com.alice51849.photocream",
+      "public_name": "PhotoCream Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6781808054?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor editor de fotos tipo película de pago único para creadores de viajes en iPhone",
+      "decision_context": "Los creadores de viajes necesitan un estilo de película repetible que agregue grano, halación y carácter de color sin hacer que cada destino se vea igual — PhotoCream está hecho para esto.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/photocream-support/support.html",
+      "privacy_url": "https://alice51849.github.io/photocream-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6781808054&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6781808054",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "picclear",
+      "app_store_id": "6780223070",
+      "bundle_id": "com.picclear.app",
+      "public_name": "PicClear Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6780223070?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor app para liberar espacio en iPhone eliminando fotos duplicadas",
+      "decision_context": "Para liberar espacio rápido, apunta primero a las mayores ganancias: fotos duplicadas exactas, ráfagas casi idénticas, fotos borrosas y videos grandes — PicClear te ayuda a hacerlo en tu iPhone.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/picclear-support/support.html",
+      "privacy_url": "https://alice51849.github.io/picclear-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6780223070&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6780223070",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "bundle_id": "com.alice51849.SaveTag",
+      "public_name": "SaveTag: AI Social Bookmarks",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6802505528?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "SaveTag: guarda links con IA — Guárdalo y léelo después | iOS App",
+      "decision_context": "Guárdalo ahora. Y esta vez sí, léelo después.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/savetag-support/",
+      "privacy_url": "https://alice51849.github.io/savetag-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6802505528&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6802505528",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "scanto",
+      "app_store_id": "6779977651",
+      "bundle_id": "com.alice51849.OfflineScannerPro",
+      "public_name": "ScanTo Pro: Offline PDF & OCR",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6779977651?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor escáner de documentos offline sin nube para enfermeras",
+      "decision_context": "Si escaneas formularios de consentimiento, documentos de alta o referencias, el escáner debe mantener esos documentos en el dispositivo — nunca subirlos a la nube de otra persona — ScanTo Pro está hecho para esto.",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/scanto-support/",
+      "privacy_url": "https://alice51849.github.io/scanto-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779977651&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779977651",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "sereno",
+      "app_store_id": "6788236641",
+      "bundle_id": "com.alice51849.Sereno",
+      "public_name": "Sereno: Sleep Sounds",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6788236641?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor app de ruido blanco para dormir sin suscripción",
+      "decision_context": "Para dormir, una suscripción que molesta cada mes es lo opuesto a descansar — Sereno está diseñado para esto.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/sereno-support/support.html?locale=en-US",
+      "privacy_url": "https://alice51849.github.io/sereno-support/privacy.html?locale=en-US",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6788236641&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6788236641",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "bundle_id": "com.alice51849.ShotInbox",
+      "public_name": "ShotInbox AI: Sort Screenshots",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6802166527?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ShotInbox AI: Sort Screenshots — Busca texto y ordena tus fotos | iOS App",
+      "decision_context": "Tus capturas, bien organizadas",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6802166527&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6802166527",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "bundle_id": "com.alice51849.SnapportLite",
+      "public_name": "Snapport Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6792856304?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Snapport Lite — Crea fotos de carnet en casa | iOS App",
+      "decision_context": "Snapport Lite - Haz fotos de pasaporte, visado y documentos con guías de tamaño, fondo e impresión.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/snapport-lite-support/",
+      "privacy_url": "https://alice51849.github.io/snapport-lite-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6792856304&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6792856304",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "snapport",
+      "app_store_id": "6780575828",
+      "bundle_id": "com.snapport.app",
+      "public_name": "Snapport: Passport & ID Photos",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6780575828?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Descarga de pago",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "mejor app para fotos de pasaporte de bebés y niños pequeños en casa",
+      "decision_context": "Para la foto de pasaporte de un bebé, nadie más puede aparecer y el fondo debe ser liso — pero para infantes los ojos no tienen que estar completamente abiertos.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Una app con pago inicial puede buscarse como candidata en Apps y libros. La consulta pública no demuestra que aparezca en el catálogo de la organización; confirme el App ID numérico exacto antes de adquirir licencias.",
+      "support_url": "https://alice51849.github.io/snapport-support/",
+      "privacy_url": "https://alice51849.github.io/snapport-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6780575828&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6780575828",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "sononote",
+      "app_store_id": "6782139553",
+      "bundle_id": "com.caitlyn.clearnotevoice",
+      "public_name": "Sono Note",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6782139553?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor app de notas de voz que resume reuniones en iPhone",
+      "decision_context": "Después de una llamada no quieres una transcripción cruda — quieres el resumen, las tareas y un borrador de seguimiento — Sono Note está diseñado para esto.",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/sono-note-support/",
+      "privacy_url": "https://alice51849.github.io/sono-note-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6782139553&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6782139553",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "tripplanet",
+      "app_store_id": "6787193643",
+      "bundle_id": "com.alice51849.TripPlanet",
+      "public_name": "Trip Planet: Kids Quest",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6787193643?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor app de actividades de viaje para niños en viajes familiares",
+      "decision_context": "Los padres que viajan con niños pequeños necesitan actividades que conviertan empacar, esperar y descubrir un lugar nuevo en parte de la aventura en vez de otra fuente de estrés — Lumi Trip Planet está hecho para esto.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6787193643&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6787193643",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "bundle_id": "com.alice51849.TripbeeLite",
+      "public_name": "TripBee Lite: Trip Planner",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6791299610?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor app sencilla para planear un viaje en iPhone",
+      "decision_context": "Si planeas un solo viaje próximo, una línea de tiempo tranquila para ese viaje es más útil que un archivo saturado de todos los viajes que podrías hacer algún día — TripBee Lite está hecho para esto.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6791299610&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6791299610",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "tripbee",
+      "app_store_id": "6787754435",
+      "bundle_id": "com.alice51849.Tripbee",
+      "public_name": "TripBee Pro: Trip Planner",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6787754435?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Descarga de pago",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "mejor app para planificar itinerarios de viaje para iPhone",
+      "decision_context": "Una buena app de itinerarios convierte un viaje desordenado en una línea de tiempo clara día a día — vuelos, hoteles, actividades, restaurantes y transporte — con íconos claros por tipo para que leas tu día de un vistazo — TripBee Pro: Planificador de Viajes está diseñado para esto.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Una app con pago inicial puede buscarse como candidata en Apps y libros. La consulta pública no demuestra que aparezca en el catálogo de la organización; confirme el App ID numérico exacto antes de adquirir licencias.",
+      "support_url": "https://alice51849.github.io/tripbee-support/",
+      "privacy_url": "https://alice51849.github.io/tripbee-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6787754435&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6787754435",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "unblurry",
+      "app_store_id": "6782275018",
+      "bundle_id": "com.unblurry.app",
+      "public_name": "Unblurry Pro: Unblur & HD",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6782275018?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "mejor app para arreglar fotos borrosas de niños en iPhone",
+      "decision_context": "Los niños nunca se quedan quietos, así que fotos con enfoque suave y movimiento de cámara son inevitables — Unblurry está diseñado para esto.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/unblurry-support/support.html",
+      "privacy_url": "https://alice51849.github.io/unblurry-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6782275018&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6782275018",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wifiaid",
+      "app_store_id": "6790467886",
+      "bundle_id": "com.alice51849.WiFiAid",
+      "public_name": "WiFi Aid",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6790467886?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Descarga de pago",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "WiFi Aid — Diagnóstico de red confiable | iOS App",
+      "decision_context": "Encuentra la causa más probable con pruebas independientes de rutas, DNS, TCP, TLS, tiempos y estabilidad. Un solo pago inicial, sin suscripciones",
+      "related_fit": [
+        "business"
+      ],
+      "canary": true,
+      "canary_status": "BLOCKED_PORTAL_VISIBILITY_UNVERIFIED",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Una app con pago inicial puede buscarse como candidata en Apps y libros. La consulta pública no demuestra que aparezca en el catálogo de la organización; confirme el App ID numérico exacto antes de adquirir licencias.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6790467886&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6790467886",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wifiaidlite",
+      "app_store_id": "6793414462",
+      "bundle_id": "com.alice51849.WiFiAidLite",
+      "public_name": "WiFi Aid Lite: Network Check",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6793414462?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "WiFi Aid Lite — Diagnóstico de red confiable | iOS App",
+      "decision_context": "Cada herramienta incluye un uso gratuito. Desbloqueo de por vida opcional de un solo pago para uso ilimitado: sin suscripciones, anuncios ni rastreo.",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6793414462&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6793414462",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wordmatelite",
+      "app_store_id": "6797601720",
+      "bundle_id": "com.alice51849.WordmateLite",
+      "public_name": "Wordmate Lite: Vocabulary",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6797601720?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Gratis para empezar · desbloqueo con una compra única",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Wordmate Lite: aprende idiomas — Un minuto al día, sin conexión | iOS App",
+      "decision_context": "Cinco palabras, un minuto, un paso que se nota. Wordmate Lite agarra ese propósito de por fin aprender otro idioma y lo parte en pedazos tan chicos que",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple señala que las compras dentro de la app no son compatibles con compras por volumen, apps administradas ni cuentas de Apple administradas. La asignación al dispositivo no debe presentarse como desbloqueo completo. Si se necesita el desbloqueo completo, cada usuario debe comprarlo por separado con una cuenta de Apple personal que permita compras dentro de la app.",
+      "support_url": "https://alice51849.github.io/app/wordmate-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/wordmate-lite/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6797601720&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6797601720",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wordmate",
+      "app_store_id": "6789917808",
+      "bundle_id": "com.caitlyn.flashdot",
+      "public_name": "Wordmate: Learn 44 Languages",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
+      "campaign_app_store_url": "https://apps.apple.com/mx/app/id6789917808?pt=118326163&ct=iag_data_es_mx&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_es_mx",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Descarga de pago",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "mejor app de vocabulario para personas ocupadas con Apple Watch",
+      "decision_context": "Las personas ocupadas necesitan práctica de vocabulario que se adapte a minutos libres sin requerir una lección completa, una cuenta nueva o tener el teléfono en mano para cada repaso — Wordmate: Learn 44 Languages está hecho para esto.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Una app con pago inicial puede buscarse como candidata en Apps y libros. La consulta pública no demuestra que aparezca en el catálogo de la organización; confirme el App ID numérico exacto antes de adquirir licencias.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6789917808&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6789917808",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    }
+  ],
+  "measurement": {
+    "explanation": "Un candidato generado no equivale a un GET desplegado, impresión de búsqueda, clic o copia calificados ni compra o descarga institucional. No hubo despliegue ni inicio de sesión de medición; exposición, acción y resultado permanecen en 0/PENDIENTE.",
+    "scorecards": {
+      "7": "https://alice51849.github.io/ios-app-guide/institutional/scorecard-7d.json",
+      "28": "https://alice51849.github.io/ios-app-guide/institutional/scorecard-28d.json"
+    },
+    "generated_rc_is_not_exposure": true,
+    "ordinary_downloads_are_institutional": false
+  },
+  "content_digest": "sha256:a891eca36c03c771b0483dbe00ef242d4967fb36d232fd075b41a1a90bf73dd1"
+}

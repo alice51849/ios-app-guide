@@ -1,0 +1,2403 @@
+{
+  "$schema": "https://alice51849.github.io/ios-app-guide/institutional/apple-managed-apps.schema.json",
+  "schema_version": 1,
+  "release_status": "CANDIDATE_NOT_DEPLOYED",
+  "deployment_status": "not_deployed",
+  "locale": "pa-IN",
+  "route_kind": "localized",
+  "url": "https://alice51849.github.io/ios-app-guide/pa-IN/institutional/apple-managed-apps.json",
+  "generated_on": "2026-08-30",
+  "source_digest": "sha256:68996012c878d8050a1d8d3fac47c9731f0ab563fa8601c05e62b6c7fc7d0df0",
+  "roster_digest": "sha256:fea82924a4facecbf07394ed7e86d966970b2ba8db1fa21110d5debbde6a8f18",
+  "publisher": {
+    "name": "Lumi Studio",
+    "relationship": "first_party_developer",
+    "is_independent_ranking": false,
+    "support_email": "hourstag.app@gmail.com"
+  },
+  "disclosures": {
+    "first_party_non_ranking_non_endorsement": "ਇਹ Lumi Studio ਦੀ ਪਹਿਲੀ-ਪੱਖੀ ਸੂਚੀ ਹੈ; Apple ਜਾਂ Microsoft certification/endorsement, ਸਕੂਲ ਜਾਂ MDM ਮਨਜ਼ੂਰੀ, ਸੰਸਥਾਗਤ ਦਿੱਖ ਜਾਂ discount ਦਾ ਸਬੂਤ ਨਹੀਂ। ਲਾਈਵ store ਅਤੇ ਸੰਸਥਾ ਦੀ policy ਅੰਤਿਮ ਹਨ।",
+    "live_policy_note": "Apple School Manager, Apple Business Manager ਅਤੇ Microsoft Intune ਪ੍ਰਸ਼ਾਸਕਾਂ ਲਈ App Store ਉੱਤੇ ਪਛਾਣ ਅਤੇ ਲਾਈਵ ਹਾਲਤ ਜਾਂਚੀਆਂ 46 Apps ਦਾ ਪਹਿਲੀ-ਪੱਖੀ, ਬਿਨਾਂ ਦਰਜਾਬੰਦੀ ਮੁਲਾਂਕਣ ਹਵਾਲਾ।",
+    "public_lookup_scope": "ਇਹ Lumi Studio ਦੀ ਪਹਿਲੀ-ਪੱਖੀ ਸੂਚੀ ਹੈ; Apple ਜਾਂ Microsoft certification/endorsement, ਸਕੂਲ ਜਾਂ MDM ਮਨਜ਼ੂਰੀ, ਸੰਸਥਾਗਤ ਦਿੱਖ ਜਾਂ discount ਦਾ ਸਬੂਤ ਨਹੀਂ। ਲਾਈਵ store ਅਤੇ ਸੰਸਥਾ ਦੀ policy ਅੰਤਿਮ ਹਨ।"
+  },
+  "official_references": [
+    {
+      "id": "apple-content-distribution",
+      "publisher": "Apple",
+      "source_title": "Intro to content distribution for Apple devices",
+      "url": "https://support.apple.com/guide/deployment/intro-to-content-distribution-depe1553f932/web",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    },
+    {
+      "id": "apple-managed-apps",
+      "publisher": "Apple",
+      "source_title": "Distribute managed apps to Apple devices",
+      "url": "https://support.apple.com/guide/deployment/distribute-managed-apps-dep575bfed86/web",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    },
+    {
+      "id": "microsoft-intune-direct-store",
+      "publisher": "Microsoft",
+      "source_title": "Add iOS Store Apps to Microsoft Intune",
+      "url": "https://learn.microsoft.com/en-us/intune/app-management/deployment/add-store-ios",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    },
+    {
+      "id": "microsoft-intune-volume-purchase",
+      "publisher": "Microsoft",
+      "source_title": "Manage Apple Volume-Purchased Apps",
+      "url": "https://learn.microsoft.com/en-us/intune/app-management/deployment/manage-vpp-apple",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    }
+  ],
+  "source_state": {
+    "public_lookup_checked_at": "2026-08-29T18:45:17Z",
+    "storefront_snapshot_checked_at": "2026-08-29T06:31:01Z",
+    "official_source_max_age_days": 14,
+    "lookup_method": "public_get_only",
+    "institutional_portal_login": false,
+    "deployment_or_submission": false
+  },
+  "workflow": {
+    "paid_apps_and_books": "ਪਹਿਲਾਂ ਭੁਗਤਾਨ ਵਾਲੀ App ਨੂੰ Apps and Books ਵਿੱਚ ਉਮੀਦਵਾਰ ਵਜੋਂ ਲੱਭਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਜਨਤਕ lookup ਤੁਹਾਡੀ ਸੰਸਥਾ ਦੇ catalog ਵਿੱਚ ਦਿਖਾਈ ਦੇਣਾ ਸਾਬਤ ਨਹੀਂ ਕਰਦਾ; licences ਲੈਣ ਤੋਂ ਪਹਿਲਾਂ ਸਹੀ ਅੰਕਾਂ ਵਾਲਾ App ID ਜਾਂਚੋ।",
+    "intune_direct_store_free_tier": "Intune ਦੀ direct iOS Store app ਵਿਧੀ ਸਿਰਫ਼ ਮੁਫ਼ਤ Apps ਲਈ ਹੈ। ਇੱਥੇ ਹਰ ਮੁਫ਼ਤ download App ਮੁਫ਼ਤ ਸ਼ੁਰੂ ਹੁੰਦੀ ਹੈ ਅਤੇ ਚੋਣਵਾਂ ਇਕ-ਵਾਰ in-app unlock ਦਿੰਦੀ ਹੈ; ਸਿਰਫ਼ ਸ਼ਾਮਲ ਮੁਫ਼ਤ ਪੱਧਰ ਦਾ ਮੁਲਾਂਕਣ ਕਰੋ।",
+    "managed_app_iap_warning": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+    "related_fit_method": "ਸਿੱਖਿਆ ਅਤੇ ਕਾਰੋਬਾਰ ਨਾਲ ਸੰਬੰਧਤ ਸੂਚੀਆਂ ਪ੍ਰਕਾਸ਼ਿਤ publisher query ਅਤੇ decision context ਉੱਤੇ ਆਧਾਰਿਤ ਹਨ। ਕਮਜ਼ੋਰ ਜਾਂ ਸਿਰਫ਼ ਨਾਮ-ਆਧਾਰਿਤ ਮੇਲ ਹਟਾਏ ਜਾਂਦੇ ਹਨ; ਹਟਾਉਣਾ App ਦੇ ਅਣਉਚਿਤ ਹੋਣ ਦਾ ਅਰਥ ਨਹੀਂ।",
+    "administrator_steps": [
+      "ਅੰਕਾਂ ਵਾਲੇ App ID ਅਤੇ ਸਹੀ URL ਨੂੰ ਲਾਈਵ App Store ਪੰਨੇ ਨਾਲ ਮਿਲਾਓ।",
+      "ਭੁਗਤਾਨ ਵਾਲੇ ਉਮੀਦਵਾਰ ਲਈ Apps and Books ਅਤੇ ਮੁਫ਼ਤ ਪੱਧਰ ਦੀ ਜਾਂਚ ਲਈ ਹੀ Intune direct-store ਵਰਤੋ।",
+      "ਸੰਸਥਾ ਦੀ policy ਅਨੁਸਾਰ ਸੀਮਿਤ pilot ਕਰੋ ਅਤੇ device assignment ਨੂੰ IAP unlock ਨਾ ਮੰਨੋ।"
+    ]
+  },
+  "canary": {
+    "status": "BLOCKED_PENDING_ADMIN_VERIFICATION",
+    "reason": "Public GET evidence verifies listing identity, platform and purchase class only. Per-organization Apps and Books visibility, license availability, Intune sync and institutional approval were not checked because this candidate does not sign in to administrator portals.",
+    "count": 3,
+    "app_keys": [
+      "notesstudio100",
+      "aim990plus",
+      "wifiaid"
+    ],
+    "paid_download_app_keys": [
+      "aim990plus",
+      "wifiaid"
+    ],
+    "free_iap_app_keys": [
+      "notesstudio100"
+    ]
+  },
+  "counts": {
+    "apps": 46,
+    "paid_upfront": 12,
+    "free_to_start_with_iap": 34,
+    "fully_free": 0,
+    "ipad_supported": 46,
+    "school_related": 10,
+    "business_related": 7,
+    "canary": 3
+  },
+  "apps": [
+    {
+      "app_key": "notesstudio100",
+      "app_store_id": "6798813048",
+      "bundle_id": "com.alice51849.NotesStudio100",
+      "public_name": "100 Notes Studio: Pen & Paper",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "100 Notes Studio: Pen & Paper — ਹੱਥ-ਲਿਖਤ ਨੋਟਸ, PDF ਟਿੱਪਣੀ | iOS App",
+      "decision_context": "ਹੱਥ ਨਾਲ ਲਿਖੇ ਸਫ਼ੇ, ਟਾਈਪ ਕੀਤਾ ਪਾਠ, PDF ਉੱਤੇ ਟਿੱਪਣੀਆਂ ਅਤੇ ਪੜ੍ਹਾਈ ਦੇ ਸੰਦ ਇੱਕ ਸੁਚੱਜੇ ਕੰਮ-ਖੇਤਰ ਵਿੱਚ ਰੱਖੋ। ਮੁੱਖ ਲਿਖਣ ਅਤੇ ਖੋਜ ਵਾਲੇ ਕੰਮ ਬਿਨਾਂ ਇੰਟਰਨੈੱਟ ਚੱਲਦੇ ਹਨ",
+      "related_fit": [
+        "school"
+      ],
+      "canary": true,
+      "canary_status": "BLOCKED_FREE_TIER_ONLY_IAP_NOT_DISTRIBUTABLE",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/100notes-support/support.html",
+      "privacy_url": "https://alice51849.github.io/100notes-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6798813048&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6798813048",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "bundle_id": "com.alice51849.AIBriefPack",
+      "public_name": "AI Brief",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "AI Brief — ਫਾਈਲਾਂ ਤੋਂ ਸਪਸ਼ਟ ਸੰਦਰਭ | iOS App",
+      "decision_context": "ਬਿਹਤਰ ਸੰਦਰਭ। ਬਿਹਤਰ ਜਵਾਬ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/support.html?lang=en-US",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/privacy.html?lang=en-US",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6791658210&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6791658210",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "bundle_id": "com.alice51849.Aim990Plus",
+      "public_name": "Aim990 Plus",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "Aim990 Plus — ਦਬਾਅ ਵਿੱਚ ਤੇਜ਼ ਸਹੀ ਜਵਾਬ | iOS App",
+      "decision_context": "Aim990 Plus ਬਾਲਗ ਸਿੱਖਿਆਰਥੀਆਂ ਲਈ ਅੰਗਰੇਜ਼ੀ ਸੁਣਨ ਅਤੇ ਪੜ੍ਹਨ ਦੀ ਡੂੰਘੀ ਕਸਰਤ ਹੈ। ਇਸ ਦਾ ਮੁੱਖ ਕ੍ਰਮ ਸਮੇਂ ਦੇ ਦਬਾਅ ਹੇਠ ਵੀ ਧਿਆਨ ਬਣਾਈ ਰੱਖਣ ਦੀ ਆਦਤ ਪਾਉਂਦਾ ਹੈ: ਪਹਿਲਾਂ 8",
+      "related_fit": [
+        "school"
+      ],
+      "canary": true,
+      "canary_status": "BLOCKED_PORTAL_VISIBILITY_UNVERIFIED",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "ਪਹਿਲਾਂ ਭੁਗਤਾਨ ਵਾਲੀ App ਨੂੰ Apps and Books ਵਿੱਚ ਉਮੀਦਵਾਰ ਵਜੋਂ ਲੱਭਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਜਨਤਕ lookup ਤੁਹਾਡੀ ਸੰਸਥਾ ਦੇ catalog ਵਿੱਚ ਦਿਖਾਈ ਦੇਣਾ ਸਾਬਤ ਨਹੀਂ ਕਰਦਾ; licences ਲੈਣ ਤੋਂ ਪਹਿਲਾਂ ਸਹੀ ਅੰਕਾਂ ਵਾਲਾ App ID ਜਾਂਚੋ।",
+      "support_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6792483140&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6792483140",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "aim990",
+      "app_store_id": "6784974530",
+      "bundle_id": "com.alice51849.aim990",
+      "public_name": "Aim990: 990 Score Coach",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ TOEIC ਤਿਆਰੀ ਐਪ ਆਫਲਾਈਨ ਅਧਿਐਨ ਯੋਜਨਾ",
+      "decision_context": "ਭਾਗ 5 ਛੋਟਾ ਲੱਗਦਾ ਹੈ, ਪਰ ਉਹ ਅਧੂਰੇ ਵਾਕ ਪ੍ਰਸ਼ਨ ਸਮਾਂ ਖਰਚ ਕਰ ਸਕਦੇ ਹਨ ਜੇ ਵਿਆਕਰਨ ਅਤੇ ਸ਼ਬਦਾਵਲੀ ਸਵੈਚਲਿਤ ਨਾ ਹੋਵੇ।",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/aim990-support/",
+      "privacy_url": "https://alice51849.github.io/aim990-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6784974530&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6784974530",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "bundle_id": "com.alice51849.BattAI",
+      "public_name": "BattAI: Battery health score",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "BattAI: ਬੈਟਰੀ ਸਿਹਤ ਸਕੋਰ — ਸਾਫ਼ ਨਿਯਮ, ਸਰੋਤ ਅਤੇ ਹੱਦਾਂ | iOS App",
+      "decision_context": "BattAI BattAI ਜਨਤਕ iOS API ਤੋਂ ਪੰਜ ਮੁੱਲ ਵਰਤਦਾ ਹੈ: ਬੈਟਰੀ ਪੱਧਰ, ਚਾਰਜ ਹਾਲਤ, ਲੋ ਪਾਵਰ ਮੋਡ, ਪੂਰੇ ਡਿਵਾਈਸ ਦੀ ਤਾਪੀ ਹਾਲਤ ਅਤੇ ਸਮਾਂ। ਹੋਰ ਨਤੀਜੇ ਇਨ੍ਹਾਂ ਮਾਪਾਂ ਤੋਂ ਕੱਢੇ ਜਾਂਦੇ ਹਨ ਜਾਂ ਤੁਸੀਂ ਜੋੜਦੇ ਹੋ। ਹਰ ਜਾਣਕਾਰੀ ਆਪਣਾ ਸਰੋਤ ਅਤੇ ਹੱਦ ਦਿਖਾਉਂਦੀ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/battai-support/locales/en/",
+      "privacy_url": "https://alice51849.github.io/battai-support/locales/en/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6802423998&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6802423998",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "caldaily",
+      "app_store_id": "6794178671",
+      "bundle_id": "com.alice51849.CalDaily",
+      "public_name": "CalDaily: Calculator & Themes",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "CalDaily: ਕੈਲਕੁਲੇਟਰ — ਵਿਜੇਟ, ਸੰਦ ਅਤੇ ਇਤਿਹਾਸ | iOS App",
+      "decision_context": "ਅਜਿਹਾ ਕੈਲਕੁਲੇਟਰ ਜੋ ਤੁਸੀਂ ਸੱਚਮੁੱਚ ਵਰਤਦੇ ਰਹੋਗੇ, ਕਿਉਂਕਿ ਇਹ ਹਰ ਅੰਕ ਪਿੱਛੇ ਦੀ ਸੋਚ ਵੀ ਯਾਦ ਰੱਖਦਾ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/caldaily-support/support.html",
+      "privacy_url": "https://alice51849.github.io/caldaily-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6794178671&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6794178671",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "cvdesk",
+      "app_store_id": "6781337213",
+      "bundle_id": "com.alice51849.cvdesk",
+      "public_name": "CV Desk: ATS Resume Builder",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "2026 ਲਈ ਕਰੀਅਰ ਬਦਲਣ ਵਾਲਿਆਂ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਰੇਜ਼ੂਮੇ ਬਿਲਡਰ ਐਪ",
+      "decision_context": "ਜਦੋਂ ਤੁਸੀਂ ਖੇਤਰ ਬਦਲ ਰਹੇ ਹੋ, ਤਾਂ ਰੇਜ਼ੂਮੇ ਸਮੱਸਿਆ ਵੱਖਰੀ ਹੁੰਦੀ ਹੈ: ਤੁਹਾਡਾ ਅਨੁਭਵ ਅਸਲੀ ਹੈ ਪਰ ਕਾਗਜ਼ 'ਤੇ 'ਅਣਸੰਬੰਧਿਤ' ਹੈ, ਅਤੇ ATS ਫਿਲਟਰ ਤੁਹਾਨੂੰ ਮਨੁੱਖੀ ਪੜ੍ਹਨ ਤੋਂ ਪਹਿਲਾਂ ਰੱਦ ਕਰ ਦਿੰਦੇ ਹਨ — CV ਡੈਸਕ ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/cvdesk-support/support.html",
+      "privacy_url": "https://alice51849.github.io/cvdesk-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6781337213&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6781337213",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "cyca",
+      "app_store_id": "6782251621",
+      "bundle_id": "com.alice51849.Cyca",
+      "public_name": "Cyca: Period & Cycle Tracker",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6782251621?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਪੀਰੀਅਡ ਟ੍ਰੈਕਰ ਐਪ ਬਿਨਾਂ ਖਾਤੇ ਦੀ ਲੋੜ",
+      "decision_context": "ਜਿੱਥੇ ਡੇਟਾ ਸੰਵੇਦਨਸ਼ੀਲਤਾ ਮੁੱਖ ਗੱਲ ਹੈ, ਠੀਕ ਪੀਰੀਅਡ ਟ੍ਰੈਕਰ ਸਭ ਕੁਝ — ਫਲੋ, ਮੂਡ, ਲੱਛਣ, ਤਾਪਮਾਨ, ਨਜ਼ਦੀਕੀ — ਤੁਹਾਡੇ ਡਿਵਾਈਸ 'ਤੇ, ਕੋਈ ਖਾਤਾ ਜਾਂ ਕਲਾਉਡ ਸਿੰਕ ਨਹੀਂ — Cyca ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/cyca-support/",
+      "privacy_url": "https://alice51849.github.io/cyca-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6782251621&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6782251621",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "bundle_id": "com.alice51849.DailyMateLite",
+      "public_name": "DailyMate Lite: Speak Today",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "DailyMate Lite: ਅੱਜ ਬੋਲੋ — ਰੋਜ਼ਾਨਾ ਗੱਲਬਾਤ ਅਭਿਆਸ | iOS App",
+      "decision_context": "ਸਹੀ ਵੇਲੇ ਸਹੀ ਗੱਲ ਕਹੋ। DailyMate Lite ਰੋਜ਼ਾਨਾ ਹਾਲਾਤਾਂ ਨੂੰ 50 ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਛੋਟੇ ਸੰਕੇਤ-ਜਵਾਬ ਅਭਿਆਸ ਵਿੱਚ ਬਦਲਦਾ ਹੈ। ਕੋਈ ਵੀ ਭਾਸ਼ਾ ਚੁਣੋ ਅਤੇ ਯਾਤਰਾ ਵਿਸ਼ੇ ਦਾ",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6794725568&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6794725568",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "dailymate",
+      "app_store_id": "6790418321",
+      "bundle_id": "com.caitlyn.dailymate",
+      "public_name": "DailyMate: Language Phrases",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "ਸੈਲਾਨੀਆਂ ਲਈ ਐਪਲ ਵਾਚ ਨਾਲ ਸਭ ਤੋਂ ਵਧੀਆ ਪ੍ਰਯੋਗਿਕ ਭਾਸ਼ਾ ਵਾਕਾਂਸ਼ ਐਪ",
+      "decision_context": "ਯਾਤਰਾ ਤੋਂ ਪਹਿਲਾਂ, ਅਸਲੀ ਸਥਿਤੀਆਂ ਲਈ ਪੂਰੇ ਵਾਕਾਂਸ਼ ਅਲੱਗ-ਅਲੱਗ ਸ਼ਬਦਾਂ ਨਾਲੋਂ ਜ਼ਿਆਦਾ ਲਾਭਦਾਇਕ ਹੁੰਦੇ ਹਨ — ਡੇਲੀਮੇਟ ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "ਪਹਿਲਾਂ ਭੁਗਤਾਨ ਵਾਲੀ App ਨੂੰ Apps and Books ਵਿੱਚ ਉਮੀਦਵਾਰ ਵਜੋਂ ਲੱਭਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਜਨਤਕ lookup ਤੁਹਾਡੀ ਸੰਸਥਾ ਦੇ catalog ਵਿੱਚ ਦਿਖਾਈ ਦੇਣਾ ਸਾਬਤ ਨਹੀਂ ਕਰਦਾ; licences ਲੈਣ ਤੋਂ ਪਹਿਲਾਂ ਸਹੀ ਅੰਕਾਂ ਵਾਲਾ App ID ਜਾਂਚੋ।",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6790418321&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6790418321",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "gmoney",
+      "app_store_id": "6755782939",
+      "bundle_id": "com.caitlai.globi",
+      "public_name": "G+Money",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "iPhone ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਯਾਤਰਾ ਬਜਟ ਟ੍ਰੈਕਰ ਐਪ ਬਿਨਾਂ ਸਬਸਕ੍ਰਿਪਸ਼ਨ",
+      "decision_context": "ਇੱਕ ਯਾਤਰਾ 'ਤੇ ਤੁਹਾਨੂੰ ਇੱਕ ਬਜਟ ਟ੍ਰੈਕਰ ਚਾਹੀਦਾ ਹੈ ਜੋ ਕਿਸੇ ਦੇਸ਼ ਵਿੱਚ ਬਿਨਾਂ ਡੇਟਾ ਦੇ ਆਫਲਾਈਨ ਕੰਮ ਕਰੇ, ਕਈ ਮੁਦਰਾਵਾਂ ਨੂੰ ਸੰਭਾਲੇ, ਅਤੇ ਖਾਤਾ ਨਾ ਮੰਗੇ — ਹਰ ਛੁੱਟੀ ਵੱਖਰੀ — G+Money ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "ਪਹਿਲਾਂ ਭੁਗਤਾਨ ਵਾਲੀ App ਨੂੰ Apps and Books ਵਿੱਚ ਉਮੀਦਵਾਰ ਵਜੋਂ ਲੱਭਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਜਨਤਕ lookup ਤੁਹਾਡੀ ਸੰਸਥਾ ਦੇ catalog ਵਿੱਚ ਦਿਖਾਈ ਦੇਣਾ ਸਾਬਤ ਨਹੀਂ ਕਰਦਾ; licences ਲੈਣ ਤੋਂ ਪਹਿਲਾਂ ਸਹੀ ਅੰਕਾਂ ਵਾਲਾ App ID ਜਾਂਚੋ।",
+      "support_url": "https://alice51849.github.io/gmoney-support/",
+      "privacy_url": "https://alice51849.github.io/gmoney-support/#privacy",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6755782939&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6755782939",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "bundle_id": "com.alice51849.GMoneyLite",
+      "public_name": "G+Money Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "G+Money Lite — ਯਾਤਰਾ ਖਰਚ ਤੇ ਮੁਦਰਾ | iOS App",
+      "decision_context": "G+Money Lite — ਸਮਾਰਟ ਯਾਤਰਾ ਮੁਦਰਾ ਅਤੇ ਖਰਚ ਟ੍ਰੈਕਰ",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6793436548&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6793436548",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "bundle_id": "com.alice51849.HoursTagLite",
+      "public_name": "HoursTag Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "HoursTag Lite — ਚੀਜ਼ਾਂ ਦੀ ਅਸਲ ਕੀਮਤ ਵੇਖੋ | iOS App",
+      "decision_context": "HoursTag Lite - ਚੀਜ਼ਾਂ ਦੀ ਅਸਲ ਕੀਮਤ ਵੇਖੋ",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6794039979&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6794039979",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "bundle_id": "com.caitlyn.hourstag",
+      "public_name": "HoursTag: Hours to Buy",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "HoursTag: ਘੰਟਿਆਂ ਦੀ ਕੀਮਤ — ਅਸਲ ਕੀਮਤ ਕੀ ਹੈ? | iOS App",
+      "decision_context": "ਅਸਲ ਕੀਮਤ ਕੀ ਹੈ? ਡਾਲਰਾਂ ਵਿੱਚ ਨਹੀਂ — ਤੁਹਾਡੇ ਜੀਵਨ ਦੇ ਘੰਟਿਆਂ ਵਿੱਚ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "ਪਹਿਲਾਂ ਭੁਗਤਾਨ ਵਾਲੀ App ਨੂੰ Apps and Books ਵਿੱਚ ਉਮੀਦਵਾਰ ਵਜੋਂ ਲੱਭਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਜਨਤਕ lookup ਤੁਹਾਡੀ ਸੰਸਥਾ ਦੇ catalog ਵਿੱਚ ਦਿਖਾਈ ਦੇਣਾ ਸਾਬਤ ਨਹੀਂ ਕਰਦਾ; licences ਲੈਣ ਤੋਂ ਪਹਿਲਾਂ ਸਹੀ ਅੰਕਾਂ ਵਾਲਾ App ID ਜਾਂਚੋ।",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6754218117&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6754218117",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lockhour",
+      "app_store_id": "6780107485",
+      "bundle_id": "com.focuslockpro.app",
+      "public_name": "LockHour Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6780107485?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone 'ਤੇ ਪੜ੍ਹਾਈ ਦੌਰਾਨ ਸੋਸ਼ਲ ਮੀਡੀਆ ਬਲੌਕ ਕਰਨ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਐਪ",
+      "decision_context": "ਪਰੀਖਿਆ ਦੌਰਾਨ, ਇੱਛਾ-ਸ਼ਕਤੀ ਸੰਦ ਨਹੀਂ — ਇੱਕ ਕਠੋਰ ਸਮੇਂ-ਬੱਧ ਬਲੌਕ ਹੈ — ਲੌਕਆਵਰ ਪ੍ਰੋ ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/lockhour-support/support.html",
+      "privacy_url": "https://alice51849.github.io/lockhour-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6780107485&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6780107485",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumibopomofo",
+      "app_store_id": "6773017109",
+      "bundle_id": "com.alice51849.LumiZhuyin",
+      "public_name": "Lumi Bopomofo",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6773017109?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone 'ਤੇ ਬੱਚਿਆਂ ਲਈ ਬੋਪੋਮੋਫੋ ਸਿੱਖਣ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਐਪ",
+      "decision_context": "ਜੋ ਬੱਚਾ ਪਹਿਲੀ ਵਾਰੀ Zhuyin ਸਿੱਖ ਰਿਹਾ ਹੈ, ਐਪ ਨੂੰ ਸਾਰੇ 37 ਚਿੰਨ੍ਹ ਟ੍ਰੇਸਿੰਗ ਅਤੇ ਖੇਡ ਰਾਹੀਂ ਕਵਰ ਕਰਨੇ ਚਾਹੀਦੇ ਹਨ — 4–7 ਸਾਲ ਦੀ ਉਮਰ ਲਈ, ਵਿਗਿਆਪਨ-ਮੁਕਤ ਅਤੇ ਕੋਈ ਡਾਟਾ ਇਕੱਠਾ ਨਹੀਂ — Lumi Bopomofo ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/lumi-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6773017109&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6773017109",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumibopomofopro",
+      "app_store_id": "6775773117",
+      "bundle_id": "com.alice51849.LumiZhuyinPro",
+      "public_name": "Lumi Bopomofo Pro: Zhuyin",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "ਦੋਭਾਸ਼ੀ ਬੱਚਿਆਂ ਲਈ ਪੂਰੀ Zhuyin ਐਪ",
+      "decision_context": "ਦੋਭਾਸ਼ੀ ਬੱਚਿਆਂ ਨੂੰ ਘਰ 'ਤੇ Zhuyin ਸਿੱਖਣ ਲਈ ਧੁਨੀਆਂ, ਚਿੰਨ੍ਹ, ਟੋਨ ਅਤੇ ਮਿਲਾਉਣ ਰਾਹੀਂ ਪੂਰੀ ਯਾਤਰਾ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ, ਕਾਫੀ ਖੇਡ-ਜਿਹੀ ਦੁਹਰਾਵ ਨਾਲ — Lumi Bopomofo Pro ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "ਪਹਿਲਾਂ ਭੁਗਤਾਨ ਵਾਲੀ App ਨੂੰ Apps and Books ਵਿੱਚ ਉਮੀਦਵਾਰ ਵਜੋਂ ਲੱਭਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਜਨਤਕ lookup ਤੁਹਾਡੀ ਸੰਸਥਾ ਦੇ catalog ਵਿੱਚ ਦਿਖਾਈ ਦੇਣਾ ਸਾਬਤ ਨਹੀਂ ਕਰਦਾ; licences ਲੈਣ ਤੋਂ ਪਹਿਲਾਂ ਸਹੀ ਅੰਕਾਂ ਵਾਲਾ App ID ਜਾਂਚੋ।",
+      "support_url": "https://alice51849.github.io/lumi-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6775773117&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6775773117",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumiletters",
+      "app_store_id": "6778748533",
+      "bundle_id": "com.alice51849.LumiLettersLite",
+      "public_name": "Lumi Letters Lite: ABC Kids",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6778748533?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone ਲਈ ਬੱਚਿਆਂ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਵਿਦਿਆਤਮਕ ਖੇਡ ਐਪ, ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ",
+      "decision_context": "ਛੋਟੇ ਬੱਚੇ ਲਈ, ਮੁੱਖ ਗੱਲ ਵਿਗਿਆਪਨ ਅਤੇ ਡਾਟਾ ਇਕੱਠਾ ਕਰਨ ਤੋਂ ਬਚਣਾ ਹੈ — ਸਿੱਖਣ ਵਾਲਾ ਐਪ ਖੇਡ ਲੂਪ ਵਿੱਚ ਬਿਨਾਂ ਕਿਸੇ ਵਿਗਿਆਪਨ ਦੇ, ਬੱਚੇ ਤੋਂ ਕੁਝ ਵੀ ਇਕੱਠਾ ਨਾ ਕਰਦੇ ਹੋਏ ਅਤੇ ਮਾਪਿਆਂ ਲਈ ਇੱਕ ਵਾਰੀ ਖੋਲ੍ਹਣ ਵਾਲਾ — Lumi Letters ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/lumi-letters-support",
+      "privacy_url": "https://alice51849.github.io/lumi-letters-support",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6778748533&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6778748533",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumiletterspro",
+      "app_store_id": "6778491147",
+      "bundle_id": "com.alice51849.LumiLetters",
+      "public_name": "Lumi Letters Pro: ABC Phonics",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "ਹੋਮਸਕੂਲ ਕਿੰਡਰਗਾਰਟਨ ਤਿਆਰੀ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਪੂਰੀ ਫੋਨਿਕਸ ਐਪ",
+      "decision_context": "ਕਿੰਡਰਗਾਰਟਨ ਲਈ ਤਿਆਰੀ ਕਰ ਰਹੀਆਂ ਪਰਿਵਾਰਾਂ ਨੂੰ ਇੱਕ ਪੂਰੀ ਸ਼ੁਰੂਆਤੀ-ਪੜ੍ਹਾਈ ਰਾਹ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ ਜੋ ਅੱਖਰ ਧੁਨੀਆਂ, ਟਰੇਸਿੰਗ ਅਤੇ ਸ਼ਬਦ-ਬਣਾਉਣ ਨੂੰ ਜੋੜਦੀ ਹੈ, ਨਾ ਕਿ ਵੱਖ-ਵੱਖ ਅਲਫਾਬੈਟ ਖੇਡਾਂ — Lumi Letters Pro ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "ਪਹਿਲਾਂ ਭੁਗਤਾਨ ਵਾਲੀ App ਨੂੰ Apps and Books ਵਿੱਚ ਉਮੀਦਵਾਰ ਵਜੋਂ ਲੱਭਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਜਨਤਕ lookup ਤੁਹਾਡੀ ਸੰਸਥਾ ਦੇ catalog ਵਿੱਚ ਦਿਖਾਈ ਦੇਣਾ ਸਾਬਤ ਨਹੀਂ ਕਰਦਾ; licences ਲੈਣ ਤੋਂ ਪਹਿਲਾਂ ਸਹੀ ਅੰਕਾਂ ਵਾਲਾ App ID ਜਾਂਚੋ।",
+      "support_url": "https://alice51849.github.io/lumi-letters-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-letters-support",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6778491147&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6778491147",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimath",
+      "app_store_id": "6778269699",
+      "bundle_id": "com.alice51849.LumiMathFree",
+      "public_name": "Lumi Math Planet: Explorer",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6778269699?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone ਲਈ ਬੱਚਿਆਂ ਦੀ ਤਰਕਸ਼ੀਲਤਾ ਵਿਕਸਿਤ ਕਰਨ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਗਣਿਤ ਖੇਡ ਐਪ",
+      "decision_context": "ਸਭ ਤੋਂ ਵਧੀਆ ਬੱਚਿਆਂ ਦਾ ਗਣਿਤ ਐਪ ਤਰਕਸ਼ੀਲਤਾ ਸਿਖਾਉਂਦਾ ਹੈ — ਪੈਟਰਨ, ਕ੍ਰਮ, ਸਥਾਨਕ ਸੋਚ — ਸਿਰਫ਼ ਅੰਕਗਣਿਤ ਨਹੀਂ, ਅਤੇ ਇਹ ਖੇਡ ਵਿੱਚ ਲੁਕਾਇਆ ਗਿਆ ਹੈ ਜੋ ਬੱਚਾ ਖੇਡਣਾ ਚਾਹੁੰਦਾ ਹੈ — Lumi Math Planet ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/lumi-math-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-math-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6778269699&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6778269699",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimathpro",
+      "app_store_id": "6776958488",
+      "bundle_id": "com.alice51849.LumiMathPlanet",
+      "public_name": "Lumi Math Pro: Kids Numbers",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "ਪ੍ਰੀ-ਸਕੂਲ ਅਤੇ ਸ਼ੁਰੂਆਤੀ ਜਮਾਤਾਂ ਲਈ ਪੂਰੀ ਗਣਿਤ ਸਿੱਖਣ ਐਪ",
+      "decision_context": "ਇੱਕ ਪੂਰੀ ਸ਼ੁਰੂਆਤੀ-ਗਣਿਤ ਐਪ ਗਿਣਤੀ, ਨੰਬਰ ਸੰਵੇਦਨਾ ਅਤੇ ਪਹਿਲੀ ਗਣਿਤ ਨੂੰ ਇੱਕ-ਜਿਹੇ ਐਡਵੈਂਚਰ ਵਜੋਂ ਮਹਿਸੂਸ ਕਰਵਾਉਣੀ ਚਾਹੀਦੀ ਹੈ, ਨਾ ਕਿ ਵੱਖ-ਵੱਖ ਡ੍ਰਿਲ — Lumi Math Pro ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "ਪਹਿਲਾਂ ਭੁਗਤਾਨ ਵਾਲੀ App ਨੂੰ Apps and Books ਵਿੱਚ ਉਮੀਦਵਾਰ ਵਜੋਂ ਲੱਭਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਜਨਤਕ lookup ਤੁਹਾਡੀ ਸੰਸਥਾ ਦੇ catalog ਵਿੱਚ ਦਿਖਾਈ ਦੇਣਾ ਸਾਬਤ ਨਹੀਂ ਕਰਦਾ; licences ਲੈਣ ਤੋਂ ਪਹਿਲਾਂ ਸਹੀ ਅੰਕਾਂ ਵਾਲਾ App ID ਜਾਂਚੋ।",
+      "support_url": "https://alice51849.github.io/lumi-math-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-math-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6776958488&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6776958488",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimissionpro",
+      "app_store_id": "6779745474",
+      "bundle_id": "com.alice51849.LumiMissionPro",
+      "public_name": "Lumi Mission Planet Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "ਬੱਚਿਆਂ ਲਈ ਪੂਰੀ ਸਵੇਰ ਅਤੇ ਸੌਣ ਦੀ ਰੁਟੀਨ ਐਪ",
+      "decision_context": "ਦੰਦ ਸਾਫ਼ ਕਰਨਾ ਅਤੇ ਸੌਣ ਦੀ ਰੁਟੀਨ ਹਰ ਰਾਤ ਇੱਕੋ ਸਮੇਂ ਫੇਲ ਹੋ ਜਾਂਦੀ ਹੈ: ਬੱਚਾ ਥੱਕਿਆ, ਮਾਪੇ ਥੱਕੇ ਹੋਏ, ਅਤੇ ਅਗਲਾ ਕਦਮ ਕਾਫੀ ਦਿਸਦਾ ਨਹੀਂ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "ਪਹਿਲਾਂ ਭੁਗਤਾਨ ਵਾਲੀ App ਨੂੰ Apps and Books ਵਿੱਚ ਉਮੀਦਵਾਰ ਵਜੋਂ ਲੱਭਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਜਨਤਕ lookup ਤੁਹਾਡੀ ਸੰਸਥਾ ਦੇ catalog ਵਿੱਚ ਦਿਖਾਈ ਦੇਣਾ ਸਾਬਤ ਨਹੀਂ ਕਰਦਾ; licences ਲੈਣ ਤੋਂ ਪਹਿਲਾਂ ਸਹੀ ਅੰਕਾਂ ਵਾਲਾ App ID ਜਾਂਚੋ।",
+      "support_url": "https://alice51849.github.io/lumi-mission-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779745474&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779745474",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimission",
+      "app_store_id": "6779750237",
+      "bundle_id": "com.alice51849.LumiMissionLite",
+      "public_name": "Lumi Mission Planet: Routines",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ਪ੍ਰੀ-ਸਕੂਲ ਬੱਚਿਆਂ ਲਈ ਵਧੀਆ ਸੌਣ ਦੀ ਰੁਟੀਨ ਐਪ ਜਿਸ ਵਿੱਚ ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ",
+      "decision_context": "ਪ੍ਰੀ-ਸਕੂਲ ਬੱਚੇ ਲਈ, ਸੌਣ ਦੀ ਰੁਟੀਨ ਵਧੀਆ ਤਦ ਹੁੰਦੀ ਹੈ ਜਦੋਂ ਉਹ ਛੋਟੀ, ਵਿਜ਼ੂਅਲ ਅਤੇ ਇੰਨੀ ਪਛਾਣਯੋਗ ਹੋਵੇ ਕਿ ਬੱਚਾ ਬਿਨਾਂ ਹੋਰ ਯਾਦ ਦਿਵਾਉਣ ਦੇ ਪਿੱਛੇ — Lumi Mission Planet ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/lumi-mission-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779750237&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779750237",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumiweather",
+      "app_store_id": "6779552704",
+      "bundle_id": "com.alice51849.LumiWeather",
+      "public_name": "Lumi Weather: Family Forecast",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ਮਾਪਿਆਂ ਲਈ ਬੱਚਿਆਂ ਨਾਲ ਬਾਹਰ ਸਮਾਂ ਯੋਜਨਾ ਬਣਾਉਣ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਮੌਸਮ ਐਪ",
+      "decision_context": "ਬਾਹਰ ਸਮਾਂ ਯੋਜਨਾ ਬਣਾਉਣ ਵਾਲੇ ਮਾਪਿਆਂ ਨੂੰ ਸਿਰਫ਼ ਤਾਪਮਾਨ ਦੀ ਲੋੜ ਨਹੀਂ: ਉਹਨਾਂ ਨੂੰ ਇੱਕ ਤੇਜ਼, ਉਮਰ-ਅਨੁਕੂਲ ਦ੍ਰਿਸ਼ ਚਾਹੀਦਾ ਕਿ ਹਾਲਾਤ ਬੱਚੇ ਲਈ ਠੀਕ ਹਨ ਅਤੇ ਕਿਹੜੇ ਕਪੜੇ ਸਹੀ ਹਨ — Lumi Weather ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/lumi-weather-support",
+      "privacy_url": "https://alice51849.github.io/lumi-weather-support",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779552704&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779552704",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "bundle_id": "com.alice51849.MaskMyFile",
+      "public_name": "Mask My File",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Mask My File — ਭੇਜਣ ਤੋਂ ਪਹਿਲਾਂ ਵੇਰਵੇ ਲੁਕਾਓ | iOS App",
+      "decision_context": "ਲੋੜੀਂਦਾ ਪ੍ਰਸੰਗ ਗੁਆਏ ਬਿਨਾਂ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਸਾਂਝਾ ਕਰੋ। Mask My File ਤੁਹਾਡੇ ਫਾਈਲ ਭੇਜਣ ਤੋਂ ਪਹਿਲਾਂ ਨਿੱਜੀ ਵੇਰਵੇ ਲੱਭਦਾ ਹੈ, ਤੁਹਾਡੇ ਚੁਣੇ ਹਿੱਸੇ ਨੂੰ ਪੱਕੇ ਤੌਰ 'ਤੇ",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/ur-PK/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6792850916&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6792850916",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "bundle_id": "com.alice51849.MochiDoneStamp",
+      "public_name": "Mochi DoneStamp: Last Time",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Mochi DoneStamp: ਪਿਛਲੀ ਵਾਰ — ਯਾਦ ਰੱਖੋ ਤੁਸੀਂ ਕਦੋਂ ਕੀਤਾ | iOS App",
+      "decision_context": "ਤੁਸੀਂ ਪਿਛਲੀ ਵਾਰ ਚਾਦਰ ਕਦੋਂ ਬਦਲੀ, ਪੌਦੇ ਨੂੰ ਪਾਣੀ ਕਦੋਂ ਦਿੱਤਾ, ਪਰਿਵਾਰ ਨੂੰ ਫੋਨ, ਫੋਟੋ ਬੈਕਅੱਪ ਜਾਂ ਫਿਲਟਰ ਕਦੋਂ ਬਦਲਿਆ?",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://open.cait518.cc/mochi-donestamp/en-US/support/",
+      "privacy_url": "https://open.cait518.cc/mochi-donestamp/en-US/privacy/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6790800323&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6790800323",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "mochi",
+      "app_store_id": "6785004775",
+      "bundle_id": "com.alice51849.MochiTodo",
+      "public_name": "Mochi: Cute Checklist",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone ਲਈ ਸਭ ਤੋਂ ਸਧਾਰਣ ਟੂ-ਡੂ ਲਿਸਟ ਐਪ, ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ",
+      "decision_context": "ਜੇ ਜ਼ਿਆਦਾਤਰ ਟੂ-ਡੂ ਐਪ ਭਾਰੀ ਲੱਗਦੇ ਹਨ, ਤਾਂ ਸਹੀ ਐਪ ਇੱਕ ਸਾਫ਼ ਚੈੱਕਲਿਸਟ ਹੈ ਯਾਦ ਦਿਵਾਉਣ ਵਾਲੇ, ਦੁਹਰਾਅ ਨਿਯਮ ਅਤੇ Watch ਕੰਪਲੀਕੇਸ਼ਨ ਨਾਲ — ਅਤੇ ਜਾਣ-ਬੂਝ ਕੇ ਕੋਈ ਪ੍ਰੋਜੈਕਟ-ਮੈਨੇਜਮੈਂਟ ਮਸ਼ੀਨਰੀ ਨਹੀਂ — Mochi ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/mochitodo-support/",
+      "privacy_url": "https://alice51849.github.io/mochitodo-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6785004775&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6785004775",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "moneytag",
+      "app_store_id": "6801956402",
+      "bundle_id": "com.alice51849.MoneyTag",
+      "public_name": "MoneyTag: Income & Expense",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "MoneyTag: ਆਮਦਨ ਤੇ ਖਰਚ — ਪ੍ਰੋਜੈਕਟ · ਟੈਗ · ਰਿਪੋਰਟ | iOS App",
+      "decision_context": "ਆਮਦਨ ਤੇ ਖਰਚ ਹਰ ਪ੍ਰੋਜੈਕਟ ਦਾ ਆਪਣਾ ਹਿਸਾਬ ਵੱਖਰਾ ਰਹਿੰਦਾ ਹੈ: ਆਮਦਨ ਵਿੱਚੋਂ ਖਰਚ ਘਟਾਓ ਤਾਂ ਜੋ ਬਚਦਾ ਹੈ, ਉਹੀ ਉਸ ਦੀ ਸ਼ੁੱਧ ਰਕਮ ਹੈ। ਸਭ ਤੋਂ ਵੱਧ ਪੁੱਛੇ ਜਾਂਦੇ ਸਵਾਲ ਇੱਥੇ ਹਨ। ਤੁਹਾਡਾ ਸਵਾਲ ਨਾ ਮਿਲੇ ਤਾਂ ਲਿਖੋ — ਹਰ ਸੁਨੇਹਾ ਇੱਕ ਅਸਲੀ ਬੰਦਾ ਪੜ੍ਹਦਾ ਹੈ।",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/moneytag-support/?lang=en-US",
+      "privacy_url": "https://alice51849.github.io/moneytag-support/privacy.html?lang=en-US",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6801956402&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6801956402",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "bundle_id": "com.alice51849.OnePagePPT",
+      "public_name": "OnePage PPT: AI Slide Maker",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "OnePage PPT: ਸਲਾਈਡ ਮੇਕਰ — ਨੋਟਾਂ ਤੋਂ ਸ਼ਾਨਦਾਰ ਪੇਸ਼ਕਾਰੀ | iOS App",
+      "decision_context": "ਲਿਖਤ ਦੇ ਢੇਰ ਨੂੰ ਇੱਕ ਅਜਿਹੀ ਸਲਾਈਡ ਵਿੱਚ ਬਦਲੋ, ਜਿਸਨੂੰ ਲੋਕ ਸੱਚਮੁੱਚ ਪੜ੍ਹਨ।",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/app/onepage-ppt/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/onepage-ppt/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6798814385&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6798814385",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "photocream",
+      "app_store_id": "6781808054",
+      "bundle_id": "com.alice51849.photocream",
+      "public_name": "PhotoCream Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone 'ਤੇ ਯਾਤਰਾ ਕਰਣ ਵਾਲੇ ਨਿਰਮਾਤਾਵਾਂ ਲਈ ਇੱਕ ਵਾਰੀ ਭੁਗਤਾਨ ਕਰਕੇ ਸਭ ਤੋਂ ਵਧੀਆ ਫਿਲਮ ਫੋਟੋ ਸੰਪਾਦਕ",
+      "decision_context": "ਯਾਤਰਾ ਨਿਰਮਾਤਾਵਾਂ ਨੂੰ ਇੱਕ ਦੁਹਰਾਉਣਯੋਗ ਫਿਲਮ ਲੁਕ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ ਜੋ ਗ੍ਰੇਨ, ਹਲੇਸ਼ਨ ਅਤੇ ਰੰਗ ਦਾ ਚਰਿੱਤਰ ਜੋੜਦਾ ਹੈ, ਹਰ ਟਿਕਾਣੇ ਨੂੰ ਇੱਕੋ ਜਿਹਾ ਫਿਲਟਰ ਨਹੀਂ ਬਣਾਉਂਦਾ — PhotoCream ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/photocream-support/support.html",
+      "privacy_url": "https://alice51849.github.io/photocream-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6781808054&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6781808054",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "picclear",
+      "app_store_id": "6780223070",
+      "bundle_id": "com.picclear.app",
+      "public_name": "PicClear Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone ਸਟੋਰੇਜ ਖਾਲੀ ਕਰਨ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਐਪ ਜੋ ਨਕਲ ਫੋਟੋਆਂ ਨੂੰ ਮਿਟਾਉਂਦਾ ਹੈ",
+      "decision_context": "ਤੇਜ਼ੀ ਨਾਲ ਜਗ੍ਹਾ ਖਾਲੀ ਕਰਨ ਲਈ ਸਭ ਤੋਂ ਵੱਡੀਆਂ ਜਿੱਤਾਂ ਨੂੰ ਨਿਸ਼ਾਨਾ ਬਣਾਓ: ਸਹੀ-ਨਕਲ ਫੋਟੋਆਂ, ਲਗਭਗ ਇਕੋ ਜਿਹੀਆਂ ਬਰਸਟ ਸ਼ਾਟਸ, ਧੁੰਦਲੇ ਰੱਦ, ਅਤੇ ਵੱਡੇ ਵੀਡੀਓ — PicClear ਤੁਹਾਡੇ iPhone 'ਤੇ ਇਹ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/picclear-support/support.html",
+      "privacy_url": "https://alice51849.github.io/picclear-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6780223070&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6780223070",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "bundle_id": "com.alice51849.SaveTag",
+      "public_name": "SaveTag: AI Social Bookmarks",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "SaveTag: AI ਬੁੱਕਮਾਰਕ — ਲਿੰਕ ਸੰਭਾਲੋ, ਬਾਅਦ ਵਿੱਚ ਪੜ੍ਹੋ | iOS App",
+      "decision_context": "ਹੁਣੇ ਸੰਭਾਲੋ। ਅਤੇ ਇਸ ਵਾਰ ਸੱਚਮੁੱਚ ਪੜ੍ਹੋ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/savetag-support/",
+      "privacy_url": "https://alice51849.github.io/savetag-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6802505528&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6802505528",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "scanto",
+      "app_store_id": "6779977651",
+      "bundle_id": "com.alice51849.OfflineScannerPro",
+      "public_name": "ScanTo Pro: Offline PDF & OCR",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6779977651?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ਨਰਸਾਂ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਆਫਲਾਈਨ ਦਸਤਾਵੇਜ਼ ਸਕੈਨਰ ਐਪ, ਕੋਈ ਕਲਾਉਡ ਨਹੀਂ",
+      "decision_context": "ਜੇ ਤੁਸੀਂ ਮਰੀਜ਼ ਦੀ ਸਹਿਮਤੀ ਫਾਰਮ, ਛੁੱਟੀ ਦੇ ਕਾਗਜ਼ ਜਾਂ ਰੈਫਰਲ ਸਕੈਨ ਕਰਦੇ ਹੋ, ਤਾਂ ਸਕੈਨਰ ਨੂੰ ਇਹ ਕਾਗਜ਼ਾਤ ਡਿਵਾਈਸ 'ਤੇ ਹੀ ਰੱਖਣੇ ਚਾਹੀਦੇ ਹਨ — ਕਦੇ ਵੀ ਕਿਸੇ ਹੋਰ ਦੇ ਕਲਾਉਡ 'ਤੇ ਅਪਲੋਡ ਨਹੀਂ — ScanTo Pro ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/scanto-support/",
+      "privacy_url": "https://alice51849.github.io/scanto-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779977651&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779977651",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "sereno",
+      "app_store_id": "6788236641",
+      "bundle_id": "com.alice51849.Sereno",
+      "public_name": "Sereno: Sleep Sounds",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ਸੌਂਣ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਵਾਈਟ ਨੌਇਜ਼ ਐਪ ਬਿਨਾਂ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਦੇ",
+      "decision_context": "ਨੀਂਦ ਲਈ, ਹਰ ਮਹੀਨੇ ਤੰਗ ਕਰਨ ਵਾਲਾ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਆਰਾਮ ਦੇ ਵਿਰੁੱਧ ਹੈ — Sereno ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/sereno-support/support.html?locale=en-US",
+      "privacy_url": "https://alice51849.github.io/sereno-support/privacy.html?locale=en-US",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6788236641&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6788236641",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "bundle_id": "com.alice51849.ShotInbox",
+      "public_name": "ShotInbox AI: Sort Screenshots",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ShotInbox AI: Sort Screenshots — ਇੱਕ ਵਾਰ ਖਰੀਦੋ, ਜੀਵਨ ਭਰ ਵਰਤੋਂ | iOS App",
+      "decision_context": "ਤੁਹਾਡੇ ਸਕ੍ਰੀਨਸ਼ਾਟ, ਸਜੇ ਹੋਏ",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6802166527&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6802166527",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "bundle_id": "com.alice51849.SnapportLite",
+      "public_name": "Snapport Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Snapport Lite — ਘਰ ਵਿੱਚ ID ਫੋਟੋਆਂ ਬਣਾਓ | iOS App",
+      "decision_context": "Snapport Lite - ਪਾਸਪੋਰਟ, ਵੀਜ਼ਾ ਅਤੇ ਦਸਤਾਵੇਜ਼ ਫੋਟੋਆਂ ਬਣਾਓ, ਜਿਸ ਵਿੱਚ ਮਾਰਗਦਰਸ਼ਿਤ ਆਕਾਰ, ਪਿਛੋਕੜ ਦੇ ਸਾਧਨ ਅਤੇ ਪ੍ਰਿੰਟ ਲਈ ਤਿਆਰ ਨਿਕਾਸ ਸ਼ਾਮਲ ਹਨ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/snapport-lite-support/",
+      "privacy_url": "https://alice51849.github.io/snapport-lite-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6792856304&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6792856304",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "snapport",
+      "app_store_id": "6780575828",
+      "bundle_id": "com.snapport.app",
+      "public_name": "Snapport: Passport & ID Photos",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "ਘਰ 'ਤੇ ਬੱਚਿਆਂ ਅਤੇ ਨੰਨੇ ਬੱਚਿਆਂ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਪਾਸਪੋਰਟ ਫੋਟੋ ਐਪ",
+      "decision_context": "ਬੱਚੇ ਦੀ ਪਾਸਪੋਰਟ ਫੋਟੋ ਲਈ, ਹੋਰ ਕੋਈ ਵੀ ਫੋਟੋ ਵਿੱਚ ਨਹੀਂ ਹੋਣਾ ਚਾਹੀਦਾ ਅਤੇ ਪਿਛੋਕੜ ਸਾਫ਼ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ — ਪਰ ਨੰਨੇ ਬੱਚਿਆਂ ਲਈ ਅੱਖਾਂ ਪੂਰੀ ਤਰ੍ਹਾਂ ਖੁੱਲੀਆਂ ਹੋਣ ਦੀ ਲੋੜ ਨਹੀਂ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "ਪਹਿਲਾਂ ਭੁਗਤਾਨ ਵਾਲੀ App ਨੂੰ Apps and Books ਵਿੱਚ ਉਮੀਦਵਾਰ ਵਜੋਂ ਲੱਭਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਜਨਤਕ lookup ਤੁਹਾਡੀ ਸੰਸਥਾ ਦੇ catalog ਵਿੱਚ ਦਿਖਾਈ ਦੇਣਾ ਸਾਬਤ ਨਹੀਂ ਕਰਦਾ; licences ਲੈਣ ਤੋਂ ਪਹਿਲਾਂ ਸਹੀ ਅੰਕਾਂ ਵਾਲਾ App ID ਜਾਂਚੋ।",
+      "support_url": "https://alice51849.github.io/snapport-support/",
+      "privacy_url": "https://alice51849.github.io/snapport-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6780575828&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6780575828",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "sononote",
+      "app_store_id": "6782139553",
+      "bundle_id": "com.caitlyn.clearnotevoice",
+      "public_name": "Sono Note",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਵੌਇਸ ਨੋਟਸ ਐਪ ਜੋ ਮੀਟਿੰਗਾਂ ਦਾ ਸਾਰ ਸੰਖੇਪ ਕਰਦਾ ਹੈ",
+      "decision_context": "ਕਾਲ ਤੋਂ ਬਾਅਦ ਤੁਸੀਂ ਸਿਰਫ ਕੱਚਾ ਟ੍ਰਾਂਸਕ੍ਰਿਪਟ ਨਹੀਂ ਚਾਹੁੰਦੇ — ਤੁਸੀਂ ਸਾਰ, ਕਾਰਵਾਈ ਆਈਟਮ ਅਤੇ ਫਾਲੋ-ਅਪ ਦਾ ਡਰਾਫਟ ਚਾਹੁੰਦੇ ਹੋ — Sono Note ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/sono-note-support/",
+      "privacy_url": "https://alice51849.github.io/sono-note-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6782139553&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6782139553",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "tripplanet",
+      "app_store_id": "6787193643",
+      "bundle_id": "com.alice51849.TripPlanet",
+      "public_name": "Trip Planet: Kids Quest",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ਪਰਿਵਾਰਕ ਯਾਤਰਾ 'ਤੇ ਬੱਚਿਆਂ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਗਤੀਵਿਧੀ ਐਪ",
+      "decision_context": "ਨੌਜਵਾਨ ਬੱਚਿਆਂ ਨਾਲ ਯਾਤਰਾ ਕਰ ਰਹੇ ਮਾਪਿਆਂ ਨੂੰ ਐਕਟਿਵਿਟੀਆਂ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ ਜੋ ਪੈਕਿੰਗ, ਉਡੀਕ ਅਤੇ ਨਵੇਂ ਟਿਕਾਣੇ ਦੀ ਖੋਜ ਨੂੰ ਸਫਰ ਦਾ ਹਿੱਸਾ ਬਣਾਉਂਦੇ ਹਨ, ਨਾ ਕਿ ਹੋਰ ਤਣਾਅ — Lumi Trip Planet ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6787193643&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6787193643",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "bundle_id": "com.alice51849.TripbeeLite",
+      "public_name": "TripBee Lite: Trip Planner",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ਇੱਕ ਆਉਣ ਵਾਲੀ ਯਾਤਰਾ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਸਧਾਰਣ ਯਾਤਰਾ ਯੋਜਕ ਐਪ iPhone ਲਈ",
+      "decision_context": "ਜੇ ਤੁਸੀਂ ਇੱਕ ਆਉਣ ਵਾਲੀ ਯਾਤਰਾ ਦੀ ਯੋਜਨਾ ਬਣਾ ਰਹੇ ਹੋ, ਤਾਂ ਉਸ ਯਾਤਰਾ ਲਈ ਇੱਕ ਸ਼ਾਂਤ ਟਾਈਮਲਾਈਨ ਹਰ ਇੱਕ ਸੰਭਵ ਯਾਤਰਾ ਦੇ ਭਰੇ ਹੋਏ ਆਰਕਾਈਵ ਨਾਲੋਂ ਵਧੀਆ ਹੈ — TripBee Lite ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6791299610&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6791299610",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "tripbee",
+      "app_store_id": "6787754435",
+      "bundle_id": "com.alice51849.Tripbee",
+      "public_name": "TripBee Pro: Trip Planner",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "iPhone ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਯਾਤਰਾ ਯੋਜਨਾ ਬਣਾਉਣ ਵਾਲਾ ਐਪ",
+      "decision_context": "ਇੱਕ ਵਧੀਆ ਯਾਤਰਾ ਐਪ ਗੰਦੇ ਯਾਤਰਾ ਨੂੰ ਸਾਫ਼ ਦਿਨ-ਬਾਈ-ਦਿਨ ਟਾਈਮਲਾਈਨ ਵਿੱਚ ਬਦਲਦਾ ਹੈ — ਉਡਾਣਾਂ, ਹੋਟਲ, ਗਤੀਵਿਧੀਆਂ, ਰੈਸਟੋਰੈਂਟ ਅਤੇ ਆਵਾਜਾਈ — ਸਾਫ਼ ਟਾਈਪ ਆਈਕਾਨਾਂ ਨਾਲ ਤਾਂ ਜੋ ਤੁਸੀਂ ਆਪਣਾ ਦਿਨ ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ ਪੜ੍ਹ ਸਕੋ — TripBee Pro: Trip Planner ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "ਪਹਿਲਾਂ ਭੁਗਤਾਨ ਵਾਲੀ App ਨੂੰ Apps and Books ਵਿੱਚ ਉਮੀਦਵਾਰ ਵਜੋਂ ਲੱਭਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਜਨਤਕ lookup ਤੁਹਾਡੀ ਸੰਸਥਾ ਦੇ catalog ਵਿੱਚ ਦਿਖਾਈ ਦੇਣਾ ਸਾਬਤ ਨਹੀਂ ਕਰਦਾ; licences ਲੈਣ ਤੋਂ ਪਹਿਲਾਂ ਸਹੀ ਅੰਕਾਂ ਵਾਲਾ App ID ਜਾਂਚੋ।",
+      "support_url": "https://alice51849.github.io/tripbee-support/",
+      "privacy_url": "https://alice51849.github.io/tripbee-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6787754435&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6787754435",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "unblurry",
+      "app_store_id": "6782275018",
+      "bundle_id": "com.unblurry.app",
+      "public_name": "Unblurry Pro: Unblur & HD",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6782275018?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone 'ਤੇ ਬੱਚਿਆਂ ਦੀਆਂ ਧੁੰਦਲੀ ਫੋਟੋਆਂ ਠੀਕ ਕਰਨ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਐਪ",
+      "decision_context": "ਬੱਚੇ ਕਦੇ ਵੀ ਸਥਿਰ ਨਹੀਂ ਰਹਿੰਦੇ, ਇਸ ਲਈ ਨਰਮ-ਫੋਕਸ ਅਤੇ ਕੈਮਰਾ ਹਿਲਚਲ ਵਾਲੀਆਂ ਫੋਟੋਆਂ ਅਟੱਲ ਹਨ — Unblurry ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/unblurry-support/support.html",
+      "privacy_url": "https://alice51849.github.io/unblurry-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6782275018&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6782275018",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wifiaid",
+      "app_store_id": "6790467886",
+      "bundle_id": "com.alice51849.WiFiAid",
+      "public_name": "WiFi Aid",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "WiFi Aid — ਨੈੱਟਵਰਕ ਜਾਂਚ ਅਤੇ ਸਬੂਤ | iOS App",
+      "decision_context": "ਸੁਤੰਤਰ ਮਾਰਗ, DNS, TCP, TLS, ਸਮੇਂ ਅਤੇ ਸਥਿਰਤਾ ਜਾਂਚਾਂ ਨਾਲ ਕਨੈਕਸ਼ਨ ਸਮੱਸਿਆ ਦਾ ਸੰਭਾਵਿਤ ਕਾਰਨ ਲੱਭੋ। ਇੱਕ ਵਾਰ ਖਰੀਦੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ, ਇਸ਼ਤਿਹਾਰ ਜਾਂ ਟਰੈਕਿੰਗ ਨਹੀਂ।",
+      "related_fit": [
+        "business"
+      ],
+      "canary": true,
+      "canary_status": "BLOCKED_PORTAL_VISIBILITY_UNVERIFIED",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "ਪਹਿਲਾਂ ਭੁਗਤਾਨ ਵਾਲੀ App ਨੂੰ Apps and Books ਵਿੱਚ ਉਮੀਦਵਾਰ ਵਜੋਂ ਲੱਭਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਜਨਤਕ lookup ਤੁਹਾਡੀ ਸੰਸਥਾ ਦੇ catalog ਵਿੱਚ ਦਿਖਾਈ ਦੇਣਾ ਸਾਬਤ ਨਹੀਂ ਕਰਦਾ; licences ਲੈਣ ਤੋਂ ਪਹਿਲਾਂ ਸਹੀ ਅੰਕਾਂ ਵਾਲਾ App ID ਜਾਂਚੋ।",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6790467886&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6790467886",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wifiaidlite",
+      "app_store_id": "6793414462",
+      "bundle_id": "com.alice51849.WiFiAidLite",
+      "public_name": "WiFi Aid Lite: Network Check",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "WiFi Aid Lite — ਨੈੱਟ ਸਮੱਸਿਆ ਲੱਭੋ ਤੇ ਠੀਕ ਕਰੋ | iOS App",
+      "decision_context": "ਅਸਲ ਸਮੱਸਿਆ ਲੱਭੋ. ਹਰ ਟੂਲ ਵਿੱਚ ਇੱਕ ਵਾਰ ਮੁਫ਼ਤ ਪੂਰੀ ਵਰਤੋਂ ਸ਼ਾਮਲ ਹੈ। ਬੇਅੰਤ ਵਰਤੋਂ ਲਈ ਵਿਕਲਪਿਕ ਇੱਕ-ਵਾਰ ਜੀਵਨ ਭਰ ਦਾ ਅਨਲੌਕ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ, ਇਸ਼ਤਿਹਾਰ ਜਾਂ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6793414462&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6793414462",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wordmatelite",
+      "app_store_id": "6797601720",
+      "bundle_id": "com.alice51849.WordmateLite",
+      "public_name": "Wordmate Lite: Vocabulary",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ · ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਅਨਲੌਕ",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Wordmate Lite: ਅੰਗਰੇਜ਼ੀ ਸਿੱਖੋ — ਰੋਜ਼ 5 ਨਵੇਂ ਸ਼ਬਦ, ਇੱਕ ਮਿੰਟ | iOS App",
+      "decision_context": "ਨਵੇਂ ਸ਼ਬਦ ਸਿੱਖਣ ਦਾ ਇਰਾਦਾ ਅਕਸਰ ਹਫ਼ਤੇ ਦੇ ਅੰਦਰ ਹੀ ਟੁੱਟ ਜਾਂਦਾ ਹੈ, ਕਿਉਂਕਿ ਬਹੁਤੇ ਐਪ ਪਹਿਲੇ ਦਿਨ ਹੀ ਸੌ ਕਾਰਡ ਸਾਹਮਣੇ ਰੱਖ ਦਿੰਦੇ ਹਨ। Wordmate Lite ਇਸ ਤੋਂ ਉਲਟ ਕਰਦਾ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple ਦਸਤਾਵੇਜ਼ ਅਨੁਸਾਰ in-app purchase, volume purchase, managed app ਜਾਂ Managed Apple Account ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ। Device assignment ਨੂੰ ਪੂਰਾ unlock ਨਾ ਦੱਸੋ। ਜੇ ਪੂਰਾ ਅਨਲੌਕ ਲੋੜੀਂਦਾ ਹੋਵੇ, ਤਾਂ ਹਰ ਵਰਤੋਂਕਾਰ ਨੂੰ in-app purchase ਕਰ ਸਕਣ ਵਾਲੇ ਨਿੱਜੀ Apple Account ਨਾਲ ਇਸ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖਰੀਦਣਾ ਪਵੇਗਾ।",
+      "support_url": "https://alice51849.github.io/app/wordmate-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/wordmate-lite/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6797601720&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6797601720",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wordmate",
+      "app_store_id": "6789917808",
+      "bundle_id": "com.caitlyn.flashdot",
+      "public_name": "Wordmate: Learn 44 Languages",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
+      "campaign_app_store_url": "https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=iag_data_pa_in&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_pa_in",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "Apple Watch ਵਾਲੇ ਵਿਆਸਤ ਯਾਤਰੀਆਂ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਸ਼ਬਦਾਵਲੀ ਐਪ",
+      "decision_context": "ਵਿਆਸਤ ਯਾਤਰੀਆਂ ਨੂੰ ਐਸਾ ਸ਼ਬਦਾਵਲੀ ਅਭਿਆਸ ਚਾਹੀਦਾ ਜੋ ਖਾਲੀ ਸਮੇਂ ਵਿੱਚ ਫਿੱਟ ਕਰੇ, ਪੂਰੀ ਪਾਠ, ਨਵਾਂ ਖਾਤਾ ਜਾਂ ਹਰ ਸਮੀਖਿਆ ਲਈ ਫੋਨ ਦੀ ਲੋੜ ਨਾ ਹੋਵੇ — Wordmate: Learn 44 Languages ਇਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "ਪਹਿਲਾਂ ਭੁਗਤਾਨ ਵਾਲੀ App ਨੂੰ Apps and Books ਵਿੱਚ ਉਮੀਦਵਾਰ ਵਜੋਂ ਲੱਭਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਜਨਤਕ lookup ਤੁਹਾਡੀ ਸੰਸਥਾ ਦੇ catalog ਵਿੱਚ ਦਿਖਾਈ ਦੇਣਾ ਸਾਬਤ ਨਹੀਂ ਕਰਦਾ; licences ਲੈਣ ਤੋਂ ਪਹਿਲਾਂ ਸਹੀ ਅੰਕਾਂ ਵਾਲਾ App ID ਜਾਂਚੋ।",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6789917808&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6789917808",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    }
+  ],
+  "measurement": {
+    "explanation": "ਤਿਆਰ release candidate, deployed GET, search impression, ਯੋਗ click/copy ਜਾਂ ਸੰਸਥਾਗਤ purchase/download ਨਹੀਂ। deployment ਜਾਂ measurement login ਨਹੀਂ ਹੋਇਆ; exposure, action ਅਤੇ outcome 0/PENDING ਰਹਿੰਦੇ ਹਨ।",
+    "scorecards": {
+      "7": "https://alice51849.github.io/ios-app-guide/institutional/scorecard-7d.json",
+      "28": "https://alice51849.github.io/ios-app-guide/institutional/scorecard-28d.json"
+    },
+    "generated_rc_is_not_exposure": true,
+    "ordinary_downloads_are_institutional": false
+  },
+  "content_digest": "sha256:c7d70f339d6ec3578a0e4387a400265e4523642e2280f57ec1071339d2762949"
+}

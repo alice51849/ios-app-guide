@@ -1,0 +1,516 @@
+{
+  "schema_version": 1,
+  "reason": "Replace confirmed English or hybrid-English fallback in the existing 50-locale publisher intent source without changing that source.",
+  "localizations": {
+    "ar-SA": {
+      "aibriefpack": {
+        "publisher_query": "تطبيق خاص لتنظيم لقطات الشاشة والمستندات في سياق واضح قبل استخدام الذكاء الاصطناعي",
+        "decision_context": "يجمع AI Brief لقطات الشاشة وملفات PDF والملاحظات والمصادر في حزمة سياق منظمة، حتى تبدأ أداة الذكاء الاصطناعي بمواد أوضح بدل إرسال ملفات متناثرة."
+      },
+      "aim990plus": {
+        "publisher_query": "أفضل مدرب دون اتصال لاختبارات الاستماع والقراءة باللغة الإنجليزية على iPhone",
+        "decision_context": "يساعد Aim990 Plus على اتخاذ قرارات دقيقة تحت ضغط الوقت من خلال 630 سؤالًا أصليًا، ومجموعات تدريب مركزة، ومراجعة الأخطاء، واختبارات تجريبية، وإملاء، وتقدم يعمل دون اتصال. التطبيق مدفوع مقدمًا دون اشتراك."
+      },
+      "gmoneylite": {
+        "publisher_query": "أفضل متعقب مجاني لمصاريف السفر مع تحويل العملات على iPhone",
+        "decision_context": "يتيح G+Money Lite تجربة دورة سفر كاملة: تسجيل مصروفات بالعملة المحلية، ورؤية الإجمالي بعملتك الأساسية، واختبار الميزانية قبل اختيار فتح غير محدود لمرة واحدة."
+      },
+      "hourstaglite": {
+        "publisher_query": "أفضل تطبيق يحوّل السعر إلى ساعات عمل قبل الشراء",
+        "decision_context": "يحوّل HoursTag Lite تكلفة المشتريات إلى عدد ساعات العمل اللازمة لكسبها، حتى ترى أثر القرار قبل الدفع. يبدأ مجانًا مع فتح اختياري لمرة واحدة ودون اشتراك."
+      },
+      "hourstag": {
+        "publisher_query": "أفضل تطبيق لقياس الادخار بساعات العمل",
+        "decision_context": "يجعل HoursTag هدف الادخار ملموسًا بتحويل المال إلى ساعات من حياتك العملية، فتتابع ما ادخرته وما يتطلبه الهدف التالي. التطبيق مدفوع مقدمًا ودون اشتراك."
+      },
+      "maskmyfile": {
+        "publisher_query": "أفضل تطبيق على الجهاز لإخفاء البيانات الحساسة من مستندات العملاء",
+        "decision_context": "يساعد Mask My File المستقلين والمهنيين على حجب التفاصيل الخاصة التي لا يحتاجها المستلم مع إبقاء سياق المستند المفيد، وتتم المعالجة على الجهاز."
+      },
+      "mochidonestamp": {
+        "publisher_query": "أفضل متعقب لآخر إنجاز لمهام المنزل والصيانة غير المنتظمة",
+        "decision_context": "يتذكر Mochi DoneStamp تاريخ إنجاز الأعمال التي لا تناسب جدولًا ثابتًا، ثم يحسب الفترة التالية من وقت الإنجاز الفعلي. يبدأ مجانًا مع فتح اختياري لمرة واحدة."
+      },
+      "wifiaid": {
+        "publisher_query": "تطبيق لتشخيص اتصال Wi-Fi المتصل دون إنترنت للعاملين عن بُعد",
+        "decision_context": "يفحص WiFi Aid المسار وDNS وTCP وTLS والتوقيت والاستقرار بصورة منفصلة للمساعدة في تحديد موضع مشكلة الاتصال. التطبيق مدفوع مقدمًا ودون اشتراك."
+      }
+    },
+    "de-DE": {
+      "aibriefpack": {
+        "publisher_query": "Private App, um Screenshots und Dokumente vor der KI-Nutzung als Kontext zu ordnen",
+        "decision_context": "AI Brief bündelt Screenshots, PDFs, Notizen und Quellen zu einem geordneten Kontextpaket, damit ein KI-Werkzeug mit klareren Unterlagen statt verstreuten Dateien beginnt."
+      },
+      "aim990plus": {
+        "publisher_query": "Bester Offline-Trainer für englische Hör- und Leseprüfungen auf dem iPhone",
+        "decision_context": "Aim990 Plus trainiert ruhige, genaue Entscheidungen unter Zeitdruck mit 630 eigenen Aufgaben, fokussierten Drucksets, Fehlerwiederholung, Probeprüfungen, Diktat und Offline-Fortschritt. Einmaliger Kauf im Voraus, kein Abo."
+      },
+      "gmoneylite": {
+        "publisher_query": "Bester kostenlos startender Reiseausgaben-Tracker mit Währungsumrechnung fürs iPhone",
+        "decision_context": "Mit G+Money Lite lässt sich ein vollständiger Reiseablauf testen: Ausgaben in lokaler Währung erfassen, Summen in der Heimatwährung sehen und ein Budget prüfen, bevor eine optionale dauerhafte Freischaltung gewählt wird."
+      },
+      "hourstaglite": {
+        "publisher_query": "Beste App, um Preise vor dem Kauf in Arbeitsstunden umzurechnen",
+        "decision_context": "HoursTag Lite rechnet einen Preis in die Arbeitszeit um, die zum Verdienen nötig ist, damit die tatsächliche Belastung vor dem Kauf sichtbar wird. Kostenloser Einstieg, optionale einmalige Freischaltung, kein Abo."
+      },
+      "hourstag": {
+        "publisher_query": "Beste App, um Sparziele in Arbeitsstunden zu verfolgen",
+        "decision_context": "HoursTag macht Sparen greifbar, indem Geldbeträge in Arbeitsstunden umgerechnet werden. So zeigt ein Ziel nicht nur einen Betrag, sondern auch die dafür eingesetzte Lebenszeit. Einmaliger Kauf im Voraus, kein Abo."
+      },
+      "maskmyfile": {
+        "publisher_query": "Beste lokale App zum Schwärzen privater Angaben in Kundendokumenten",
+        "decision_context": "Mask My File hilft Selbstständigen, nur die privaten Angaben auszublenden, die Empfänger nicht benötigen, während der nützliche Dokumentkontext erhalten bleibt. Die Bearbeitung erfolgt auf dem Gerät."
+      },
+      "mochidonestamp": {
+        "publisher_query": "Bester Zuletzt-erledigt-Tracker für unregelmäßige Haus- und Wartungsaufgaben",
+        "decision_context": "Mochi DoneStamp merkt sich, wann eine Aufgabe tatsächlich erledigt wurde, und berechnet von dort das nächste Intervall. Das eignet sich für Pflege und Haushalt ohne festen Kalenderrhythmus."
+      },
+      "wifiaid": {
+        "publisher_query": "App zur Diagnose von verbundenem WLAN ohne Internet für mobiles Arbeiten",
+        "decision_context": "WiFi Aid prüft Pfad, DNS, TCP, TLS, Zeitverhalten und Stabilität getrennt, um den wahrscheinlichsten Ort eines Verbindungsfehlers einzugrenzen. Einmaliger Kauf im Voraus, kein Abo."
+      }
+    },
+    "es-ES": {
+      "aibriefpack": {
+        "publisher_query": "App privada para ordenar capturas y documentos como contexto antes de usar IA",
+        "decision_context": "AI Brief reúne capturas, PDF, notas y fuentes en un paquete de contexto ordenado, para que la herramienta de IA empiece con material claro en vez de archivos dispersos."
+      },
+      "aim990plus": {
+        "publisher_query": "Mejor entrenador sin conexión para exámenes de comprensión oral y escrita en inglés en iPhone",
+        "decision_context": "Aim990 Plus entrena decisiones precisas bajo presión con 630 preguntas originales, series intensivas, repaso de errores, simulacros, dictados y progreso sin conexión. Pago único por adelantado, sin suscripción."
+      },
+      "gmoneylite": {
+        "publisher_query": "Mejor gestor gratuito de gastos de viaje con conversión de divisas para iPhone",
+        "decision_context": "G+Money Lite permite probar un viaje completo: anotar gastos en moneda local, ver el total en la moneda habitual y ensayar un presupuesto antes de elegir el desbloqueo permanente opcional."
+      },
+      "hourstaglite": {
+        "publisher_query": "Mejor app para convertir precios en horas de trabajo antes de comprar",
+        "decision_context": "HoursTag Lite convierte el precio en el tiempo de trabajo necesario para ganarlo, de modo que puedas valorar el coste real antes de pagar. Empieza gratis, con desbloqueo único opcional y sin suscripción."
+      },
+      "hourstag": {
+        "publisher_query": "Mejor app para seguir objetivos de ahorro en horas de trabajo",
+        "decision_context": "HoursTag vuelve tangible el ahorro al expresar el dinero en horas de tu vida laboral. Así, cada objetivo muestra tanto el importe como el esfuerzo necesario. Pago único por adelantado, sin suscripción."
+      },
+      "maskmyfile": {
+        "publisher_query": "Mejor app local para ocultar datos privados en documentos de clientes",
+        "decision_context": "Mask My File ayuda a profesionales independientes a tapar solo los datos privados que el destinatario no necesita, conservando el contexto útil del documento y procesándolo en el dispositivo."
+      },
+      "mochidonestamp": {
+        "publisher_query": "Mejor registro de la última vez para tareas domésticas y mantenimiento irregulares",
+        "decision_context": "Mochi DoneStamp recuerda cuándo terminaste realmente una tarea y calcula desde ahí el siguiente intervalo, ideal para cuidados y mantenimiento que no encajan en un calendario rígido."
+      },
+      "wifiaid": {
+        "publisher_query": "App para diagnosticar Wi-Fi conectado sin Internet en el trabajo remoto",
+        "decision_context": "WiFi Aid comprueba por separado ruta, DNS, TCP, TLS, tiempos y estabilidad para acotar el punto más probable del fallo de conexión. Pago único por adelantado, sin suscripción."
+      }
+    },
+    "fr-FR": {
+      "aibriefpack": {
+        "publisher_query": "App privée pour organiser captures et documents en contexte avant d’utiliser une IA",
+        "decision_context": "AI Brief regroupe captures, PDF, notes et sources dans un dossier de contexte ordonné, afin que l’outil d’IA commence avec des éléments clairs plutôt qu’avec des fichiers dispersés."
+      },
+      "aim990plus": {
+        "publisher_query": "Meilleur entraînement hors ligne aux épreuves d’écoute et de lecture en anglais sur iPhone",
+        "decision_context": "Aim990 Plus entraîne des décisions précises sous contrainte de temps grâce à 630 questions originales, des séries ciblées, la reprise des erreurs, des examens blancs, de la dictée et un suivi hors ligne. Achat initial unique, sans abonnement."
+      },
+      "gmoneylite": {
+        "publisher_query": "Meilleur suivi gratuit des dépenses de voyage avec conversion de devises sur iPhone",
+        "decision_context": "G+Money Lite permet de tester un parcours de voyage complet : saisir les dépenses en devise locale, voir le total dans sa devise habituelle et essayer un budget avant de choisir le déverrouillage permanent facultatif."
+      },
+      "hourstaglite": {
+        "publisher_query": "Meilleure app pour convertir un prix en heures de travail avant l’achat",
+        "decision_context": "HoursTag Lite convertit un prix en temps de travail nécessaire pour le gagner, afin de rendre le coût réel visible avant de payer. Démarrage gratuit, déverrouillage unique facultatif, sans abonnement."
+      },
+      "hourstag": {
+        "publisher_query": "Meilleure app pour suivre ses objectifs d’épargne en heures de travail",
+        "decision_context": "HoursTag rend l’épargne concrète en exprimant les montants en heures de vie professionnelle. Chaque objectif montre ainsi la somme et l’effort correspondant. Achat initial unique, sans abonnement."
+      },
+      "maskmyfile": {
+        "publisher_query": "Meilleure app locale pour masquer les données privées des documents clients",
+        "decision_context": "Mask My File aide les indépendants à cacher uniquement les informations privées dont le destinataire n’a pas besoin, tout en conservant le contexte utile du document grâce à un traitement sur l’appareil."
+      },
+      "mochidonestamp": {
+        "publisher_query": "Meilleur suivi de dernière réalisation pour l’entretien irrégulier du foyer",
+        "decision_context": "Mochi DoneStamp mémorise le moment où une tâche a réellement été terminée, puis calcule l’intervalle suivant à partir de cette date, pour les travaux qui ne suivent pas un calendrier fixe."
+      },
+      "wifiaid": {
+        "publisher_query": "App de diagnostic du Wi-Fi connecté sans Internet pour le télétravail",
+        "decision_context": "WiFi Aid contrôle séparément le chemin, le DNS, TCP, TLS, les délais et la stabilité afin de localiser la cause probable d’une panne de connexion. Achat initial unique, sans abonnement."
+      }
+    },
+    "id": {
+      "aibriefpack": {
+        "publisher_query": "App privat untuk menata tangkapan layar dan dokumen sebagai konteks sebelum memakai AI",
+        "decision_context": "AI Brief menggabungkan tangkapan layar, PDF, catatan, dan sumber menjadi paket konteks yang rapi, sehingga alat AI menerima bahan yang lebih jelas daripada berkas yang terpencar."
+      },
+      "aim990plus": {
+        "publisher_query": "Pelatih offline terbaik untuk ujian menyimak dan membaca bahasa Inggris di iPhone",
+        "decision_context": "Aim990 Plus melatih keputusan akurat dalam tekanan waktu melalui 630 soal orisinal, set latihan terarah, pengulangan kesalahan, simulasi, dikte, dan progres offline. Bayar sekali di muka, tanpa langganan."
+      },
+      "gmoneylite": {
+        "publisher_query": "Pencatat pengeluaran perjalanan gratis terbaik dengan konversi mata uang untuk iPhone",
+        "decision_context": "G+Money Lite memungkinkan Anda mencoba alur perjalanan lengkap: mencatat pengeluaran dalam mata uang lokal, melihat total dalam mata uang utama, dan menguji anggaran sebelum memilih buka kunci permanen opsional."
+      },
+      "hourstaglite": {
+        "publisher_query": "App terbaik untuk mengubah harga menjadi jam kerja sebelum membeli",
+        "decision_context": "HoursTag Lite mengubah harga menjadi waktu kerja yang diperlukan untuk mendapatkannya, sehingga beban sebenarnya terlihat sebelum membayar. Mulai gratis, buka kunci satu kali opsional, tanpa langganan."
+      },
+      "hourstag": {
+        "publisher_query": "App terbaik untuk melacak target tabungan dalam jam kerja",
+        "decision_context": "HoursTag membuat tabungan lebih nyata dengan menyatakan uang sebagai jam kerja dalam hidup Anda. Setiap target memperlihatkan jumlah dan usaha yang dibutuhkan. Bayar sekali di muka, tanpa langganan."
+      },
+      "maskmyfile": {
+        "publisher_query": "App lokal terbaik untuk menyamarkan data pribadi dalam dokumen klien",
+        "decision_context": "Mask My File membantu pekerja lepas menutup hanya informasi pribadi yang tidak diperlukan penerima sambil mempertahankan konteks dokumen yang berguna, dengan pemrosesan di perangkat."
+      },
+      "mochidonestamp": {
+        "publisher_query": "Pencatat terakhir dilakukan terbaik untuk tugas rumah dan perawatan yang tidak teratur",
+        "decision_context": "Mochi DoneStamp mengingat kapan tugas benar-benar selesai, lalu menghitung jeda berikutnya dari waktu tersebut, cocok untuk pekerjaan rumah dan perawatan tanpa jadwal tetap."
+      },
+      "wifiaid": {
+        "publisher_query": "App diagnosis Wi-Fi tersambung tanpa Internet untuk kerja jarak jauh",
+        "decision_context": "WiFi Aid memeriksa jalur, DNS, TCP, TLS, waktu, dan kestabilan secara terpisah untuk mempersempit sumber gangguan koneksi. Bayar sekali di muka, tanpa langganan."
+      }
+    },
+    "ja": {
+      "aibriefpack": {
+        "publisher_query": "AIを使う前にスクリーンショットや文書を文脈として整理するプライベートなアプリ",
+        "decision_context": "AI Briefは、スクリーンショット、PDF、メモ、出典を一つの整理された文脈パックにまとめ、散らばったファイルではなく明確な材料からAIツールを使えるようにします。"
+      },
+      "aim990plus": {
+        "publisher_query": "iPhoneで英語のリスニング・リーディング試験を学べるオフライン教材",
+        "decision_context": "Aim990 Plusは、630問のオリジナル問題、時間負荷セット、ミスの再演習、模試、ディクテーション、オフライン進捗で、制限時間内の正確な判断を鍛えます。前払いの買い切りで、定期購読はありません。"
+      },
+      "gmoneylite": {
+        "publisher_query": "iPhone向け無料開始の旅行支出・通貨換算アプリ",
+        "decision_context": "G+Money Liteでは、現地通貨で支出を記録し、自国通貨の合計と予算を確認する一連の流れを無料範囲で試してから、任意の買い切り解除を検討できます。"
+      },
+      "hourstaglite": {
+        "publisher_query": "購入前に価格を労働時間へ換算できるアプリ",
+        "decision_context": "HoursTag Liteは、価格を稼ぐために必要な労働時間へ換算し、支払う前に実質的な負担を見えるようにします。無料開始、任意の買い切り解除、定期購読なしです。"
+      },
+      "hourstag": {
+        "publisher_query": "貯蓄目標を労働時間で追跡できるアプリ",
+        "decision_context": "HoursTagは金額を自分の労働時間に置き換え、貯蓄目標と必要な努力を具体的に示します。前払いの買い切りで、定期購読はありません。"
+      },
+      "maskmyfile": {
+        "publisher_query": "取引先文書の個人情報を端末内で墨消しできるアプリ",
+        "decision_context": "Mask My Fileは、受取人に不要な個人情報だけを隠し、文書の有用な文脈を残す作業を端末内で行います。顧客資料を扱う個人事業者や専門職向けの用途です。"
+      },
+      "mochidonestamp": {
+        "publisher_query": "不定期な家事や保守の最終実施日を記録するアプリ",
+        "decision_context": "Mochi DoneStampは、作業を実際に終えた日を記憶し、その時点から次の間隔を数えます。固定カレンダーに合わない家事や手入れの確認に使えます。"
+      },
+      "wifiaid": {
+        "publisher_query": "接続済みなのに通信できないWi-Fiを切り分けるアプリ",
+        "decision_context": "WiFi Aidは、経路、DNS、TCP、TLS、応答時間、安定性を個別に確認し、接続問題が起きている可能性の高い場所を絞り込みます。前払いの買い切りで、定期購読はありません。"
+      }
+    },
+    "ko": {
+      "aibriefpack": {
+        "publisher_query": "AI 사용 전에 스크린샷과 문서를 맥락으로 정리하는 개인용 앱",
+        "decision_context": "AI Brief는 스크린샷, PDF, 메모와 출처를 하나의 정돈된 맥락 묶음으로 만들어, 흩어진 파일 대신 명확한 자료로 AI 도구를 시작하게 합니다."
+      },
+      "aim990plus": {
+        "publisher_query": "iPhone용 오프라인 영어 듣기·읽기 시험 훈련 앱",
+        "decision_context": "Aim990 Plus는 630개의 자체 문제, 시간 압박 세트, 오답 반복, 모의시험, 받아쓰기와 오프라인 진도로 제한 시간 안의 정확한 판단을 훈련합니다. 선결제 방식이며 구독은 없습니다."
+      },
+      "gmoneylite": {
+        "publisher_query": "iPhone용 무료 시작 여행 지출·환율 변환 앱",
+        "decision_context": "G+Money Lite는 현지 통화 지출 기록, 기준 통화 합계와 예산 확인까지의 여행 흐름을 무료 범위에서 시험한 뒤 선택적 일회성 잠금 해제를 검토할 수 있게 합니다."
+      },
+      "hourstaglite": {
+        "publisher_query": "구매 전 가격을 노동 시간으로 바꾸는 앱",
+        "decision_context": "HoursTag Lite는 가격을 벌기 위해 필요한 노동 시간으로 환산해 결제 전 실제 부담을 보여 줍니다. 무료 시작, 선택적 일회성 잠금 해제, 구독 없음 방식입니다."
+      },
+      "hourstag": {
+        "publisher_query": "저축 목표를 노동 시간으로 추적하는 앱",
+        "decision_context": "HoursTag는 금액을 자신의 노동 시간으로 바꿔 저축 목표와 필요한 노력을 구체적으로 보여 줍니다. 선결제 방식이며 구독은 없습니다."
+      },
+      "maskmyfile": {
+        "publisher_query": "고객 문서의 개인정보를 기기에서 가리는 앱",
+        "decision_context": "Mask My File는 수신자에게 필요 없는 개인정보만 가리고 유용한 문서 맥락은 유지하는 작업을 기기에서 처리합니다. 고객 자료를 다루는 프리랜서와 전문가의 용도입니다."
+      },
+      "mochidonestamp": {
+        "publisher_query": "비정기 집안일과 유지보수의 마지막 완료일을 기록하는 앱",
+        "decision_context": "Mochi DoneStamp는 작업을 실제로 끝낸 시점을 기억하고 그때부터 다음 간격을 계산합니다. 고정 일정에 맞지 않는 집안일과 관리에 적합합니다."
+      },
+      "wifiaid": {
+        "publisher_query": "연결됨으로 표시되지만 인터넷이 안 되는 Wi-Fi 진단 앱",
+        "decision_context": "WiFi Aid는 경로, DNS, TCP, TLS, 응답 시간과 안정성을 따로 확인해 연결 문제가 있을 가능성이 높은 지점을 좁힙니다. 선결제 방식이며 구독은 없습니다."
+      }
+    },
+    "ms": {
+      "aibriefpack": {
+        "publisher_query": "App peribadi untuk menyusun tangkapan skrin dan dokumen sebagai konteks sebelum menggunakan AI",
+        "decision_context": "AI Brief menghimpunkan tangkapan skrin, PDF, nota dan sumber ke dalam pakej konteks tersusun supaya alat AI bermula dengan bahan yang jelas, bukan fail yang bertaburan."
+      },
+      "aim990plus": {
+        "publisher_query": "Jurulatih luar talian untuk peperiksaan mendengar dan membaca Bahasa Inggeris di iPhone",
+        "decision_context": "Aim990 Plus melatih keputusan tepat di bawah tekanan masa melalui 630 soalan asli, set tekanan berfokus, ulang kaji kesilapan, ujian percubaan, imlak dan kemajuan luar talian. Bayaran sekali di awal, tanpa langganan."
+      },
+      "gmoneylite": {
+        "publisher_query": "Penjejak perbelanjaan perjalanan percuma dengan penukaran mata wang untuk iPhone",
+        "decision_context": "G+Money Lite membolehkan aliran perjalanan lengkap diuji: catat belanja dalam mata wang tempatan, lihat jumlah dalam mata wang utama dan cuba bajet sebelum memilih buka kunci kekal secara sekali bayar."
+      },
+      "hourstaglite": {
+        "publisher_query": "App untuk menukar harga kepada jam kerja sebelum membeli",
+        "decision_context": "HoursTag Lite menukar harga kepada tempoh kerja yang diperlukan untuk memperolehnya, supaya beban sebenar dapat dilihat sebelum membayar. Bermula percuma, buka kunci sekali bayar pilihan, tanpa langganan."
+      },
+      "hourstag": {
+        "publisher_query": "App untuk menjejak sasaran simpanan dalam jam kerja",
+        "decision_context": "HoursTag menjadikan simpanan lebih nyata dengan menyatakan wang sebagai jam kerja dalam hidup anda. Setiap sasaran menunjukkan jumlah dan usaha yang diperlukan. Bayaran sekali di awal, tanpa langganan."
+      },
+      "maskmyfile": {
+        "publisher_query": "App pada peranti untuk menyunting keluar maklumat peribadi dalam dokumen pelanggan",
+        "decision_context": "Mask My File membantu pekerja bebas menyembunyikan hanya butiran peribadi yang tidak diperlukan penerima sambil mengekalkan konteks dokumen yang berguna, dengan pemprosesan pada peranti."
+      },
+      "mochidonestamp": {
+        "publisher_query": "Penjejak kali terakhir untuk tugas rumah dan penyelenggaraan tidak berkala",
+        "decision_context": "Mochi DoneStamp mengingati masa tugas benar-benar selesai dan mengira sela seterusnya dari waktu itu, sesuai untuk kerja rumah dan penyelenggaraan tanpa jadual tetap."
+      },
+      "wifiaid": {
+        "publisher_query": "App diagnosis Wi-Fi yang tersambung tetapi tiada Internet untuk kerja jarak jauh",
+        "decision_context": "WiFi Aid memeriksa laluan, DNS, TCP, TLS, masa dan kestabilan secara berasingan untuk mengecilkan punca masalah sambungan. Bayaran sekali di awal, tanpa langganan."
+      }
+    },
+    "pt-BR": {
+      "aibriefpack": {
+        "publisher_query": "App privado para organizar capturas e documentos como contexto antes de usar IA",
+        "decision_context": "AI Brief reúne capturas, PDFs, notas e fontes em um pacote de contexto organizado, para que a ferramenta de IA comece com material claro em vez de arquivos dispersos."
+      },
+      "aim990plus": {
+        "publisher_query": "Melhor treino offline para provas de compreensão oral e leitura em inglês no iPhone",
+        "decision_context": "Aim990 Plus treina decisões precisas sob pressão com 630 questões originais, séries focadas, repetição de erros, simulados, ditado e progresso offline. Pagamento único antecipado, sem assinatura."
+      },
+      "gmoneylite": {
+        "publisher_query": "Melhor controle gratuito de despesas de viagem com conversão de moedas no iPhone",
+        "decision_context": "G+Money Lite permite testar um fluxo completo de viagem: registrar gastos na moeda local, ver o total na moeda principal e experimentar um orçamento antes de escolher o desbloqueio permanente opcional."
+      },
+      "hourstaglite": {
+        "publisher_query": "Melhor app para converter preços em horas de trabalho antes de comprar",
+        "decision_context": "HoursTag Lite converte o preço no tempo de trabalho necessário para ganhá-lo, mostrando o peso real antes do pagamento. Começa grátis, com desbloqueio único opcional e sem assinatura."
+      },
+      "hourstag": {
+        "publisher_query": "Melhor app para acompanhar metas de economia em horas de trabalho",
+        "decision_context": "HoursTag torna a economia concreta ao expressar o dinheiro em horas da sua vida de trabalho. Cada meta mostra o valor e o esforço correspondente. Pagamento único antecipado, sem assinatura."
+      },
+      "maskmyfile": {
+        "publisher_query": "Melhor app local para ocultar dados privados em documentos de clientes",
+        "decision_context": "Mask My File ajuda profissionais autônomos a esconder somente os dados privados que o destinatário não precisa, preservando o contexto útil do documento com processamento no dispositivo."
+      },
+      "mochidonestamp": {
+        "publisher_query": "Melhor registro da última execução para tarefas domésticas e manutenção irregulares",
+        "decision_context": "Mochi DoneStamp lembra quando uma tarefa foi realmente concluída e calcula o próximo intervalo a partir desse momento, ideal para cuidados e manutenção sem calendário fixo."
+      },
+      "wifiaid": {
+        "publisher_query": "App para diagnosticar Wi-Fi conectado sem Internet no trabalho remoto",
+        "decision_context": "WiFi Aid verifica separadamente rota, DNS, TCP, TLS, tempos e estabilidade para delimitar o ponto mais provável da falha de conexão. Pagamento único antecipado, sem assinatura."
+      }
+    },
+    "pt-PT": {
+      "aibriefpack": {
+        "publisher_query": "App privada para organizar capturas e documentos como contexto antes de usar IA",
+        "decision_context": "AI Brief reúne capturas, PDF, notas e fontes num pacote de contexto organizado, para que a ferramenta de IA comece com material claro em vez de ficheiros dispersos."
+      },
+      "aim990plus": {
+        "publisher_query": "Melhor treino offline para provas de compreensão oral e leitura em inglês no iPhone",
+        "decision_context": "Aim990 Plus treina decisões rigorosas sob pressão com 630 perguntas originais, séries focadas, repetição de erros, exames simulados, ditado e progresso offline. Pagamento único inicial, sem subscrição."
+      },
+      "gmoneylite": {
+        "publisher_query": "Melhor registo gratuito de despesas de viagem com conversão de moedas no iPhone",
+        "decision_context": "G+Money Lite permite testar um percurso completo de viagem: registar despesas na moeda local, ver o total na moeda habitual e experimentar um orçamento antes de escolher o desbloqueio permanente opcional."
+      },
+      "hourstaglite": {
+        "publisher_query": "Melhor app para converter preços em horas de trabalho antes de comprar",
+        "decision_context": "HoursTag Lite converte o preço no tempo de trabalho necessário para o ganhar, tornando o custo real visível antes do pagamento. Começa gratuitamente, com desbloqueio único opcional e sem subscrição."
+      },
+      "hourstag": {
+        "publisher_query": "Melhor app para acompanhar objetivos de poupança em horas de trabalho",
+        "decision_context": "HoursTag torna a poupança concreta ao exprimir o dinheiro em horas da vida profissional. Cada objetivo mostra o valor e o esforço correspondente. Pagamento único inicial, sem subscrição."
+      },
+      "maskmyfile": {
+        "publisher_query": "Melhor app local para ocultar dados privados em documentos de clientes",
+        "decision_context": "Mask My File ajuda profissionais independentes a esconder apenas os dados privados de que o destinatário não precisa, preservando o contexto útil do documento com processamento no dispositivo."
+      },
+      "mochidonestamp": {
+        "publisher_query": "Melhor registo da última execução para tarefas domésticas e manutenção irregulares",
+        "decision_context": "Mochi DoneStamp recorda quando uma tarefa foi realmente concluída e calcula o intervalo seguinte a partir desse momento, ideal para cuidados e manutenção sem calendário fixo."
+      },
+      "lumibopomofopro": {
+        "publisher_query": "Melhor app completa de Zhuyin para crianças bilingues"
+      },
+      "wifiaid": {
+        "publisher_query": "App para diagnosticar Wi-Fi ligado sem Internet no trabalho remoto",
+        "decision_context": "WiFi Aid verifica separadamente rota, DNS, TCP, TLS, tempos e estabilidade para delimitar o ponto mais provável da falha de ligação. Pagamento único inicial, sem subscrição."
+      }
+    },
+    "th": {
+      "aibriefpack": {
+        "publisher_query": "แอปส่วนตัวสำหรับจัดภาพหน้าจอและเอกสารเป็นบริบทก่อนใช้ AI",
+        "decision_context": "AI Brief รวมภาพหน้าจอ PDF บันทึก และแหล่งที่มาเป็นชุดบริบทที่เป็นระเบียบ เพื่อให้เครื่องมือ AI เริ่มจากข้อมูลที่ชัดเจนแทนไฟล์ที่กระจัดกระจาย"
+      },
+      "aim990plus": {
+        "publisher_query": "แอปฝึกสอบการฟังและการอ่านภาษาอังกฤษแบบออฟไลน์บน iPhone",
+        "decision_context": "Aim990 Plus ฝึกการตัดสินใจให้แม่นยำภายใต้เวลา ด้วยโจทย์ต้นฉบับ 630 ข้อ ชุดฝึกกดดัน การทบทวนข้อผิดพลาด ข้อสอบจำลอง การเขียนตามคำบอก และความก้าวหน้าแบบออฟไลน์ ชำระครั้งเดียวล่วงหน้า ไม่มีการสมัครสมาชิก"
+      },
+      "gmoneylite": {
+        "publisher_query": "แอปบันทึกค่าใช้จ่ายเดินทางฟรีพร้อมแปลงสกุลเงินบน iPhone",
+        "decision_context": "G+Money Lite ให้ทดลองขั้นตอนท่องเที่ยวครบถ้วน ทั้งบันทึกค่าใช้จ่ายเป็นเงินท้องถิ่น ดูยอดรวมเป็นสกุลเงินหลัก และลองงบประมาณก่อนเลือกปลดล็อกถาวรแบบซื้อครั้งเดียว"
+      },
+      "hourstaglite": {
+        "publisher_query": "แอปแปลงราคาเป็นชั่วโมงทำงานก่อนตัดสินใจซื้อ",
+        "decision_context": "HoursTag Lite แปลงราคาเป็นเวลาทำงานที่ต้องใช้เพื่อหาเงินจำนวนนั้น ทำให้เห็นภาระจริงก่อนจ่าย เริ่มใช้ฟรี มีตัวเลือกปลดล็อกครั้งเดียว และไม่มีการสมัครสมาชิก"
+      },
+      "hourstag": {
+        "publisher_query": "แอปติดตามเป้าหมายการออมเป็นชั่วโมงทำงาน",
+        "decision_context": "HoursTag ทำให้การออมจับต้องได้ด้วยการแสดงจำนวนเงินเป็นชั่วโมงชีวิตการทำงาน แต่ละเป้าหมายจึงเห็นทั้งมูลค่าและแรงที่ต้องใช้ ชำระครั้งเดียวล่วงหน้า ไม่มีการสมัครสมาชิก"
+      },
+      "maskmyfile": {
+        "publisher_query": "แอปปกปิดข้อมูลส่วนตัวในเอกสารลูกค้าบนอุปกรณ์",
+        "decision_context": "Mask My File ช่วยผู้ทำงานอิสระซ่อนเฉพาะข้อมูลส่วนตัวที่ผู้รับไม่จำเป็นต้องเห็น โดยคงบริบทที่เป็นประโยชน์ของเอกสารไว้และประมวลผลบนอุปกรณ์"
+      },
+      "mochidonestamp": {
+        "publisher_query": "แอปบันทึกวันที่ทำล่าสุดสำหรับงานบ้านและการดูแลที่ไม่เป็นรอบ",
+        "decision_context": "Mochi DoneStamp จำเวลาที่งานเสร็จจริงแล้วนับช่วงถัดไปจากจุดนั้น เหมาะกับงานบ้านและการดูแลที่ไม่เข้ากับปฏิทินตายตัว"
+      },
+      "lumibopomofo": {
+        "publisher_query": "แอปจู้ยินสำหรับเด็กที่เริ่มเรียนสัญลักษณ์ทั้ง 37 ตัว"
+      },
+      "lumibopomofopro": {
+        "publisher_query": "แอปจู้ยินฉบับครบถ้วนสำหรับเด็กสองภาษา"
+      },
+      "wifiaid": {
+        "publisher_query": "แอปวิเคราะห์ Wi-Fi ที่เชื่อมต่อแล้วแต่ไม่มีอินเทอร์เน็ตสำหรับการทำงานทางไกล",
+        "decision_context": "WiFi Aid ตรวจเส้นทาง DNS TCP TLS เวลา และความเสถียรแยกกัน เพื่อช่วยจำกัดจุดที่น่าจะเกิดปัญหาการเชื่อมต่อ ชำระครั้งเดียวล่วงหน้า ไม่มีการสมัครสมาชิก"
+      }
+    },
+    "tr": {
+      "aibriefpack": {
+        "publisher_query": "Yapay zekâ kullanmadan önce ekran görüntülerini ve belgeleri bağlam olarak düzenleyen özel uygulama",
+        "decision_context": "AI Brief ekran görüntülerini, PDF’leri, notları ve kaynakları düzenli bir bağlam paketinde toplar; böylece yapay zekâ aracı dağınık dosyalar yerine açık malzemeyle başlar."
+      },
+      "aim990plus": {
+        "publisher_query": "iPhone için çevrimdışı İngilizce dinleme ve okuma sınavı eğitmeni",
+        "decision_context": "Aim990 Plus; 630 özgün soru, odaklı baskı setleri, hata tekrarı, deneme sınavları, dikte ve çevrimdışı ilerlemeyle süre baskısı altında doğru karar vermeyi çalıştırır. Peşin tek ödeme, abonelik yok."
+      },
+      "gmoneylite": {
+        "publisher_query": "iPhone için para birimi dönüşümlü ücretsiz seyahat gideri takipçisi",
+        "decision_context": "G+Money Lite yerel para biriminde gider kaydı, ana para biriminde toplam ve bütçe denemesi dâhil tam bir seyahat akışını, isteğe bağlı kalıcı kilit açmadan önce sınamanızı sağlar."
+      },
+      "hourstaglite": {
+        "publisher_query": "Satın almadan önce fiyatı çalışma saatine çeviren uygulama",
+        "decision_context": "HoursTag Lite fiyatı kazanmak için gereken çalışma süresine çevirerek gerçek yükü ödeme öncesinde gösterir. Ücretsiz başlar, isteğe bağlı tek seferlik kilit açma sunar ve abonelik içermez."
+      },
+      "hourstag": {
+        "publisher_query": "Birikim hedeflerini çalışma saatleriyle izleyen uygulama",
+        "decision_context": "HoursTag parayı çalışma hayatınızdaki saatlerle ifade ederek birikimi somutlaştırır. Her hedef hem tutarı hem gereken emeği gösterir. Peşin tek ödeme, abonelik yok."
+      },
+      "maskmyfile": {
+        "publisher_query": "Müşteri belgelerindeki özel bilgileri cihazda karartan uygulama",
+        "decision_context": "Mask My File, serbest çalışanların alıcının ihtiyaç duymadığı özel ayrıntıları gizleyip belgenin yararlı bağlamını korumasına yardımcı olur; işlem cihazda yapılır."
+      },
+      "mochidonestamp": {
+        "publisher_query": "Düzensiz ev ve bakım işleri için son yapılma zamanı takipçisi",
+        "decision_context": "Mochi DoneStamp bir işin gerçekten ne zaman tamamlandığını hatırlar ve sonraki aralığı o andan itibaren hesaplar; sabit takvime uymayan işler için uygundur."
+      },
+      "wifiaid": {
+        "publisher_query": "Uzaktan çalışmada bağlı görünüp İnternet sunmayan Wi-Fi’yi tanılayan uygulama",
+        "decision_context": "WiFi Aid bağlantı sorununun olası yerini daraltmak için yol, DNS, TCP, TLS, zamanlama ve kararlılığı ayrı ayrı denetler. Peşin tek ödeme, abonelik yok."
+      }
+    },
+    "vi": {
+      "aibriefpack": {
+        "publisher_query": "Ứng dụng riêng tư sắp xếp ảnh chụp màn hình và tài liệu thành ngữ cảnh trước khi dùng AI",
+        "decision_context": "AI Brief gom ảnh chụp màn hình, PDF, ghi chú và nguồn thành một gói ngữ cảnh có tổ chức, để công cụ AI bắt đầu bằng tài liệu rõ ràng thay vì các tệp rời rạc."
+      },
+      "aim990plus": {
+        "publisher_query": "Ứng dụng luyện thi nghe và đọc tiếng Anh ngoại tuyến trên iPhone",
+        "decision_context": "Aim990 Plus rèn quyết định chính xác dưới áp lực thời gian với 630 câu hỏi nguyên bản, bộ luyện tập trung, ôn lại lỗi sai, đề thi thử, chính tả và tiến độ ngoại tuyến. Trả phí một lần trước, không thuê bao."
+      },
+      "gmoneylite": {
+        "publisher_query": "Ứng dụng theo dõi chi tiêu du lịch miễn phí có đổi tiền tệ trên iPhone",
+        "decision_context": "G+Money Lite cho phép thử trọn quy trình chuyến đi: ghi chi tiêu bằng tiền địa phương, xem tổng theo tiền chính và thử ngân sách trước khi chọn mở khóa vĩnh viễn một lần."
+      },
+      "hourstaglite": {
+        "publisher_query": "Ứng dụng đổi giá thành giờ làm việc trước khi mua",
+        "decision_context": "HoursTag Lite đổi giá thành thời gian làm việc cần để kiếm được số tiền đó, giúp thấy gánh nặng thực trước khi trả. Bắt đầu miễn phí, mở khóa một lần tùy chọn, không thuê bao."
+      },
+      "hourstag": {
+        "publisher_query": "Ứng dụng theo dõi mục tiêu tiết kiệm bằng giờ làm việc",
+        "decision_context": "HoursTag biến khoản tiết kiệm thành số giờ trong đời làm việc, để mỗi mục tiêu thể hiện cả số tiền lẫn công sức cần thiết. Trả phí một lần trước, không thuê bao."
+      },
+      "maskmyfile": {
+        "publisher_query": "Ứng dụng che dữ liệu riêng tư trong tài liệu khách hàng ngay trên thiết bị",
+        "decision_context": "Mask My File giúp người làm tự do ẩn đúng những thông tin riêng tư mà người nhận không cần, đồng thời giữ lại ngữ cảnh hữu ích của tài liệu và xử lý trên thiết bị."
+      },
+      "mochidonestamp": {
+        "publisher_query": "Ứng dụng ghi lần hoàn thành gần nhất cho việc nhà và bảo trì không định kỳ",
+        "decision_context": "Mochi DoneStamp nhớ thời điểm công việc thực sự hoàn tất rồi tính khoảng tiếp theo từ đó, phù hợp với việc nhà và bảo trì không theo lịch cố định."
+      },
+      "wifiaid": {
+        "publisher_query": "Ứng dụng chẩn đoán Wi-Fi báo đã kết nối nhưng không có Internet khi làm việc từ xa",
+        "decision_context": "WiFi Aid kiểm tra riêng đường truyền, DNS, TCP, TLS, độ trễ và độ ổn định để thu hẹp vị trí có khả năng gây lỗi kết nối. Trả phí một lần trước, không thuê bao."
+      }
+    },
+    "zh-Hant": {
+      "aibriefpack": {
+        "publisher_query": "使用 AI 前把截圖與文件整理成清楚脈絡的私密 App",
+        "decision_context": "AI Brief 把截圖、PDF、筆記與來源整理成一份有結構的脈絡包，讓 AI 工具從清楚資料開始，而不是接收零散檔案。"
+      },
+      "aim990plus": {
+        "publisher_query": "iPhone 離線英語聽力與閱讀考試訓練 App",
+        "decision_context": "Aim990 Plus 透過 630 題原創題目、限時壓力組、錯題重練、模擬測驗、聽寫與離線進度，訓練在時間壓力下穩定作答。一次付費下載，沒有訂閱。"
+      },
+      "gmoneylite": {
+        "publisher_query": "iPhone 免費開始的旅遊支出與匯率換算 App",
+        "decision_context": "G+Money Lite 讓你先完整試用旅程記帳流程：以當地幣別記支出、查看常用幣別總額並測試預算，再決定是否選用一次性永久解鎖。"
+      },
+      "hourstaglite": {
+        "publisher_query": "購買前把價格換算成工作時數的 App",
+        "decision_context": "HoursTag Lite 把價格換算成賺到這筆錢所需的工作時間，付款前即可看見真實負擔。免費開始、可選一次性解鎖，沒有訂閱。"
+      },
+      "hourstag": {
+        "publisher_query": "用工作時數追蹤儲蓄目標的 App",
+        "decision_context": "HoursTag 把金額換算成生命中的工作時數，讓每個儲蓄目標同時呈現金額與所需努力。一次付費下載，沒有訂閱。"
+      },
+      "maskmyfile": {
+        "publisher_query": "在裝置上遮蔽客戶文件私密資料的 App",
+        "decision_context": "Mask My File 協助自由工作者只遮住收件人不需要的私密資訊，同時保留文件的有用脈絡，處理流程在裝置上完成。"
+      },
+      "mochidonestamp": {
+        "publisher_query": "記錄不定期家事與保養上次完成時間的 App",
+        "decision_context": "Mochi DoneStamp 記住工作真正完成的時間，並從那一刻起算下一個間隔，適合無法套用固定行事曆的家事與保養。"
+      },
+      "wifiaid": {
+        "publisher_query": "遠端工作時診斷 Wi-Fi 已連線但無法上網的 App",
+        "decision_context": "WiFi Aid 分別檢查路徑、DNS、TCP、TLS、延遲與穩定性，協助縮小連線問題最可能發生的位置。一次付費下載，沒有訂閱。"
+      }
+    },
+    "en-AU": {
+      "wifiaid": {
+        "decision_context": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and stability checks. Pay once upfront—no subscription, ads or tracking."
+      }
+    },
+    "en-CA": {
+      "wifiaid": {
+        "decision_context": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and stability checks. Pay once upfront—no subscription, ads or tracking."
+      }
+    },
+    "en-GB": {
+      "wifiaid": {
+        "decision_context": "Find the most likely connection fault with independent path, DNS, TCP, TLS, timing and stability checks. One upfront payment—no subscription, adverts or tracking."
+      }
+    },
+    "en-US": {
+      "wifiaid": {
+        "decision_context": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and stability checks. Pay once upfront—no subscription, ads, or tracking."
+      }
+    },
+    "it": {
+      "wifiaid": {
+        "decision_context": "Trova la causa probabile con verifiche indipendenti di percorso, DNS, TCP, TLS, tempi e stabilità. Un acquisto iniziale, senza abbonamenti, pubblicità o tracciamento."
+      }
+    }
+  }
+}

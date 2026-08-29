@@ -1,0 +1,2403 @@
+{
+  "$schema": "https://alice51849.github.io/ios-app-guide/institutional/apple-managed-apps.schema.json",
+  "schema_version": 1,
+  "release_status": "CANDIDATE_NOT_DEPLOYED",
+  "deployment_status": "not_deployed",
+  "locale": "zh-Hans",
+  "route_kind": "localized",
+  "url": "https://alice51849.github.io/ios-app-guide/zh-Hans/institutional/apple-managed-apps.json",
+  "generated_on": "2026-08-30",
+  "source_digest": "sha256:68996012c878d8050a1d8d3fac47c9731f0ab563fa8601c05e62b6c7fc7d0df0",
+  "roster_digest": "sha256:fea82924a4facecbf07394ed7e86d966970b2ba8db1fa21110d5debbde6a8f18",
+  "publisher": {
+    "name": "Lumi Studio",
+    "relationship": "first_party_developer",
+    "is_independent_ranking": false,
+    "support_email": "hourstag.app@gmail.com"
+  },
+  "disclosures": {
+    "first_party_non_ranking_non_endorsement": "这是 Lumi Studio 的开发者第一方名册，不代表 Apple 或 Microsoft 认证或背书、学校或 MDM 批准，也不证明机构目录可见或存在折扣。请以实时商店和贵机构政策为准。",
+    "live_policy_note": "供 Apple School Manager、Apple Business Manager 和 Microsoft Intune 管理员评估 46 个已核验在架 App Store 条目的开发者第一方、非排名资料。",
+    "public_lookup_scope": "这是 Lumi Studio 的开发者第一方名册，不代表 Apple 或 Microsoft 认证或背书、学校或 MDM 批准，也不证明机构目录可见或存在折扣。请以实时商店和贵机构政策为准。"
+  },
+  "official_references": [
+    {
+      "id": "apple-content-distribution",
+      "publisher": "Apple",
+      "source_title": "Intro to content distribution for Apple devices",
+      "url": "https://support.apple.com/guide/deployment/intro-to-content-distribution-depe1553f932/web",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    },
+    {
+      "id": "apple-managed-apps",
+      "publisher": "Apple",
+      "source_title": "Distribute managed apps to Apple devices",
+      "url": "https://support.apple.com/guide/deployment/distribute-managed-apps-dep575bfed86/web",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    },
+    {
+      "id": "microsoft-intune-direct-store",
+      "publisher": "Microsoft",
+      "source_title": "Add iOS Store Apps to Microsoft Intune",
+      "url": "https://learn.microsoft.com/en-us/intune/app-management/deployment/add-store-ios",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    },
+    {
+      "id": "microsoft-intune-volume-purchase",
+      "publisher": "Microsoft",
+      "source_title": "Manage Apple Volume-Purchased Apps",
+      "url": "https://learn.microsoft.com/en-us/intune/app-management/deployment/manage-vpp-apple",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    }
+  ],
+  "source_state": {
+    "public_lookup_checked_at": "2026-08-29T18:45:17Z",
+    "storefront_snapshot_checked_at": "2026-08-29T06:31:01Z",
+    "official_source_max_age_days": 14,
+    "lookup_method": "public_get_only",
+    "institutional_portal_login": false,
+    "deployment_or_submission": false
+  },
+  "workflow": {
+    "paid_apps_and_books": "预付费 App 可在“App 与图书”中作为候选项搜索。公开查询不能证明它会出现在贵机构目录中；获取许可前，请让内容管理员核对准确的数字 App ID。",
+    "intune_direct_store_free_tier": "Intune 直接添加 iOS Store App 的方式只适用于商店中的免费 App。这里所有免费下载项均为免费开始并提供可选的一次性 App 内解锁，因此只能评估已包含的免费功能。",
+    "managed_app_iap_warning": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+    "related_fit_method": "教育与企业相关清单依据已发布的开发者查询和决策语境生成。弱关联或仅凭名称的匹配会被排除；未列入不代表 App 不适用。",
+    "administrator_steps": [
+      "用实时 App Store 页面核对数字 App ID 和准确 URL。",
+      "付费候选走“App 与图书”，Intune 直接方式仅用于免费功能评估。",
+      "按机构政策进行小范围试用，不把设备分配视为 App 内购买解锁。"
+    ]
+  },
+  "canary": {
+    "status": "BLOCKED_PENDING_ADMIN_VERIFICATION",
+    "reason": "Public GET evidence verifies listing identity, platform and purchase class only. Per-organization Apps and Books visibility, license availability, Intune sync and institutional approval were not checked because this candidate does not sign in to administrator portals.",
+    "count": 3,
+    "app_keys": [
+      "notesstudio100",
+      "aim990plus",
+      "wifiaid"
+    ],
+    "paid_download_app_keys": [
+      "aim990plus",
+      "wifiaid"
+    ],
+    "free_iap_app_keys": [
+      "notesstudio100"
+    ]
+  },
+  "counts": {
+    "apps": 46,
+    "paid_upfront": 12,
+    "free_to_start_with_iap": 34,
+    "fully_free": 0,
+    "ipad_supported": 46,
+    "school_related": 10,
+    "business_related": 7,
+    "canary": 3
+  },
+  "apps": [
+    {
+      "app_key": "notesstudio100",
+      "app_store_id": "6798813048",
+      "bundle_id": "com.alice51849.NotesStudio100",
+      "public_name": "100 Notes Studio: Pen & Paper",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6798813048?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "100 Notes Studio: Pen & Paper — 手写笔记本、PDF批注、录音与复习 | iOS App",
+      "decision_context": "把手写、键入、PDF 阅读批注、页面录音和学习复习集中到一个安静的工作空间。100 Notes Studio 以平板体验为主，也为手机提供完整流程；核心编辑无需联网即可使用。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": true,
+      "canary_status": "BLOCKED_FREE_TIER_ONLY_IAP_NOT_DISTRIBUTABLE",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/100notes-support/support.html",
+      "privacy_url": "https://alice51849.github.io/100notes-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6798813048&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6798813048",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "bundle_id": "com.alice51849.AIBriefPack",
+      "public_name": "AI Brief",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6791658210?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "AI Brief — 把资料整理成清晰上下文 | iOS App",
+      "decision_context": "更好的背景，更优的回答。 将截图、文件、笔记和文档转化为一份清晰的 AI 就绪摘要。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/support.html?lang=en-US",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/privacy.html?lang=en-US",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6791658210&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6791658210",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "bundle_id": "com.alice51849.Aim990Plus",
+      "public_name": "Aim990 Plus",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6792483140?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "付费下载",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "Aim990 Plus — 15分钟攻克七大题型 | iOS App",
+      "decision_context": "把零散刷题变成一套经得住时间压力的训练流程。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": true,
+      "canary_status": "BLOCKED_PORTAL_VISIBILITY_UNVERIFIED",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "预付费 App 可在“App 与图书”中作为候选项搜索。公开查询不能证明它会出现在贵机构目录中；获取许可前，请让内容管理员核对准确的数字 App ID。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6792483140&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6792483140",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "aim990",
+      "app_store_id": "6784974530",
+      "bundle_id": "com.alice51849.aim990",
+      "public_name": "Aim990: 990 Score Coach",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6784974530?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "适用于 iPhone 的最佳离线 TOEIC 备考应用及学习计划",
+      "decision_context": "第5部分看似简短，但不完整句子题目若语法和词汇不熟练会耗费大量时间。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/aim990-support/",
+      "privacy_url": "https://alice51849.github.io/aim990-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6784974530&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6784974530",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "bundle_id": "com.alice51849.BattAI",
+      "public_name": "BattAI: Battery health score",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6802423998?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "BattAI: 电池健康评分 — 规则、来源和限制都说清楚 | iOS App",
+      "decision_context": "BattAI BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/battai-support/locales/en/",
+      "privacy_url": "https://alice51849.github.io/battai-support/locales/en/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6802423998&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6802423998",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "caldaily",
+      "app_store_id": "6794178671",
+      "bundle_id": "com.alice51849.CalDaily",
+      "public_name": "CalDaily: Calculator & Themes",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6794178671?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "CalDaily 计算器与主题 — 桌面小组件、八种工具、计算记录 | iOS App",
+      "decision_context": "一台你会真正留着用的计算器，因为它记得每个数字背后的来龙去脉。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/caldaily-support/support.html",
+      "privacy_url": "https://alice51849.github.io/caldaily-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6794178671&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6794178671",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "cvdesk",
+      "app_store_id": "6781337213",
+      "bundle_id": "com.alice51849.cvdesk",
+      "public_name": "CV Desk: ATS Resume Builder",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6781337213?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "2026 年最佳职业转型简历制作应用",
+      "decision_context": "转行时，简历问题不同：经验真实但纸面“无关”，ATS 过滤在人工阅读前就拒绝——CV Desk 专为此设计。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/cvdesk-support/support.html",
+      "privacy_url": "https://alice51849.github.io/cvdesk-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6781337213&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6781337213",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "cyca",
+      "app_store_id": "6782251621",
+      "bundle_id": "com.alice51849.Cyca",
+      "public_name": "Cyca: Period & Cycle Tracker",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6782251621?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "无需账户的最佳经期追踪应用 iPhone",
+      "decision_context": "在数据敏感度极高的类别中，合适的经期追踪应用将所有内容——流量、情绪、症状、体温、亲密行为——保存在设备上，无账户，无云同步——Cyca 专为此设计。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/cyca-support/",
+      "privacy_url": "https://alice51849.github.io/cyca-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6782251621&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6782251621",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "bundle_id": "com.alice51849.DailyMateLite",
+      "public_name": "DailyMate Lite: Speak Today",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6794725568?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "DailyMate Lite：开口练习 — 50 种语言场景短句 | iOS App",
+      "decision_context": "想开口时，不必先在脑中拼凑单词。DailyMate Lite 将旅行、工作、餐饮、健康等生活场景整理成简短提示与自然回复，让你用完整的一问一答练习 50 种语言。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6794725568&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6794725568",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "dailymate",
+      "app_store_id": "6790418321",
+      "bundle_id": "com.caitlyn.dailymate",
+      "public_name": "DailyMate: Language Phrases",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6790418321?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "付费下载",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "适用于配备 Apple Watch 旅行者的最佳实用语言短语应用",
+      "decision_context": "旅行前，针对真实场景的完整短语比需要在压力下拼凑的零散词汇更实用——DailyMate 正是为此而设计。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "预付费 App 可在“App 与图书”中作为候选项搜索。公开查询不能证明它会出现在贵机构目录中；获取许可前，请让内容管理员核对准确的数字 App ID。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6790418321&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6790418321",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "gmoney",
+      "app_store_id": "6755782939",
+      "bundle_id": "com.caitlai.globi",
+      "public_name": "G+Money",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6755782939?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "付费下载",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "无需订阅的最佳旅行预算追踪应用 iPhone",
+      "decision_context": "旅行时你需要一个在无移动数据的国家也能离线可用、支持多币种且不要求账户的预算追踪器——按旅行分类，确保每次假期独立——G+Money 专为此设计。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "预付费 App 可在“App 与图书”中作为候选项搜索。公开查询不能证明它会出现在贵机构目录中；获取许可前，请让内容管理员核对准确的数字 App ID。",
+      "support_url": "https://alice51849.github.io/gmoney-support/",
+      "privacy_url": "https://alice51849.github.io/gmoney-support/#privacy",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6755782939&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6755782939",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "bundle_id": "com.alice51849.GMoneyLite",
+      "public_name": "G+Money Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6793436548?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "G+Money Lite — 旅行记账・预算・汇率 | iOS App",
+      "decision_context": "G+Money Lite — 聪明的旅行汇率记账",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6793436548&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6793436548",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "bundle_id": "com.alice51849.HoursTagLite",
+      "public_name": "HoursTag Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "HoursTag Lite — 看见每样东西的真实代价 | iOS App",
+      "decision_context": "HoursTag Lite - 看见每样东西的真实代价",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6794039979&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6794039979",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "bundle_id": "com.caitlyn.hourstag",
+      "public_name": "HoursTag: Hours to Buy",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "付费下载",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "HoursTag：价格换工时 — 预算、记账、省钱与储蓄 | iOS App",
+      "decision_context": "这真正要花你多少？不是多少钱——是你生命中的几个小时。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "预付费 App 可在“App 与图书”中作为候选项搜索。公开查询不能证明它会出现在贵机构目录中；获取许可前，请让内容管理员核对准确的数字 App ID。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6754218117&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6754218117",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lockhour",
+      "app_store_id": "6780107485",
+      "bundle_id": "com.focuslockpro.app",
+      "public_name": "LockHour Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6780107485?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "学习时阻断社交媒体的最佳应用 iPhone",
+      "decision_context": "考试期间，意志力不是工具——硬性定时屏蔽才是——LockHour Pro专为此设计。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/lockhour-support/support.html",
+      "privacy_url": "https://alice51849.github.io/lockhour-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6780107485&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6780107485",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumibopomofo",
+      "app_store_id": "6773017109",
+      "bundle_id": "com.alice51849.LumiZhuyin",
+      "public_name": "Lumi Bopomofo",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
+      "campaign_app_store_url": "https://apps.apple.com/app/id6773017109?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "让孩子在 iPhone 上学注音的最佳注音 App",
+      "decision_context": "对第一次学注音的孩子,App 应通过描摹与游戏涵盖全部 37 个符号 —— 专为 4 到 7 岁初学阶段设计、无广告、不搜集数据 —— Lumi Bopomofo 正是为此打造。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/lumi-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6773017109&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6773017109",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumibopomofopro",
+      "app_store_id": "6775773117",
+      "bundle_id": "com.alice51849.LumiZhuyinPro",
+      "public_name": "Lumi Bopomofo Pro: Zhuyin",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
+      "campaign_app_store_url": "https://apps.apple.com/app/id6775773117?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "付费下载",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "适合双语儿童的最佳完整注音App",
+      "decision_context": "双语儿童在家学习注音需要一条完整路径，涵盖发音、符号、声调和拼读，并有足够趣味重复让系统变得熟悉 —— Lumi Bopomofo Pro正是为此设计。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "预付费 App 可在“App 与图书”中作为候选项搜索。公开查询不能证明它会出现在贵机构目录中；获取许可前，请让内容管理员核对准确的数字 App ID。",
+      "support_url": "https://alice51849.github.io/lumi-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6775773117&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6775773117",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumiletters",
+      "app_store_id": "6778748533",
+      "bundle_id": "com.alice51849.LumiLettersLite",
+      "public_name": "Lumi Letters Lite: ABC Kids",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
+      "campaign_app_store_url": "https://apps.apple.com/app/id6778748533?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone 上最佳无广告儿童教育游戏应用",
+      "decision_context": "对幼儿来说，关键是无广告和不收集数据——学习应用应在无广告、无数据收集且家长可信赖的一次解锁中教学——Lumi Letters 正是为此打造。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/lumi-letters-support",
+      "privacy_url": "https://alice51849.github.io/lumi-letters-support",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6778748533&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6778748533",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumiletterspro",
+      "app_store_id": "6778491147",
+      "bundle_id": "com.alice51849.LumiLetters",
+      "public_name": "Lumi Letters Pro: ABC Phonics",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
+      "campaign_app_store_url": "https://apps.apple.com/app/id6778491147?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "付费下载",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "适合家庭学前启蒙的完整拼读应用推荐",
+      "decision_context": "准备入园的家庭需要一条完整的早期阅读路径，将字母发音、书写和单词构建有机结合，而不是一组无关联的字母游戏 —— Lumi Letters Pro正是为此设计。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "预付费 App 可在“App 与图书”中作为候选项搜索。公开查询不能证明它会出现在贵机构目录中；获取许可前，请让内容管理员核对准确的数字 App ID。",
+      "support_url": "https://alice51849.github.io/lumi-letters-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-letters-support",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6778491147&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6778491147",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimath",
+      "app_store_id": "6778269699",
+      "bundle_id": "com.alice51849.LumiMathFree",
+      "public_name": "Lumi Math Planet: Explorer",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
+      "campaign_app_store_url": "https://apps.apple.com/app/id6778269699?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone 上最佳儿童数学游戏应用，培养逻辑思维能力",
+      "decision_context": "最佳儿童数学应用训练推理——模式、序列、空间思维——而非单纯算术训练，并将其隐藏在孩子愿意玩的游戏中——Lumi Math Planet 正是为此打造。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/lumi-math-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-math-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6778269699&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6778269699",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimathpro",
+      "app_store_id": "6776958488",
+      "bundle_id": "com.alice51849.LumiMathPlanet",
+      "public_name": "Lumi Math Pro: Kids Numbers",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
+      "campaign_app_store_url": "https://apps.apple.com/app/id6776958488?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "付费下载",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "适合学前及低年级的最佳完整数学学习App",
+      "decision_context": "完整的早期数学App应让计数、数字感和基础运算成为一个连贯的冒险，而不是孤立的练习 —— Lumi Math Pro正是为此设计。",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "预付费 App 可在“App 与图书”中作为候选项搜索。公开查询不能证明它会出现在贵机构目录中；获取许可前，请让内容管理员核对准确的数字 App ID。",
+      "support_url": "https://alice51849.github.io/lumi-math-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-math-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6776958488&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6776958488",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimissionpro",
+      "app_store_id": "6779745474",
+      "bundle_id": "com.alice51849.LumiMissionPro",
+      "public_name": "Lumi Mission Planet Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6779745474?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "付费下载",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "适合儿童的最佳完整早晚作息App",
+      "decision_context": "刷牙和睡前流程常在每晚同一时刻失败：孩子累了，家长也累了，下一步不够明显。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "预付费 App 可在“App 与图书”中作为候选项搜索。公开查询不能证明它会出现在贵机构目录中；获取许可前，请让内容管理员核对准确的数字 App ID。",
+      "support_url": "https://alice51849.github.io/lumi-mission-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779745474&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779745474",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimission",
+      "app_store_id": "6779750237",
+      "bundle_id": "com.alice51849.LumiMissionLite",
+      "public_name": "Lumi Mission Planet: Routines",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6779750237?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "适合学龄前儿童且无广告的最佳睡前习惯应用",
+      "decision_context": "对于学龄前儿童，睡前流程以简短、直观和可预测为佳，孩子无需反复提醒即可完成——Lumi Mission Planet正是为此而设计。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/lumi-mission-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779750237&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779750237",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumiweather",
+      "app_store_id": "6779552704",
+      "bundle_id": "com.alice51849.LumiWeather",
+      "public_name": "Lumi Weather: Family Forecast",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6779552704?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "帮助家长规划亲子户外时间的最佳天气应用",
+      "decision_context": "家长规划户外时间需要的不仅是温度：还需快速、年龄适配的判断天气是否适合孩子及穿衣建议——Lumi Weather专为此打造。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/lumi-weather-support",
+      "privacy_url": "https://alice51849.github.io/lumi-weather-support",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779552704&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779552704",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "bundle_id": "com.alice51849.MaskMyFile",
+      "public_name": "Mask My File",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6792850916?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Mask My File — 分享前遮挡隐私敏感信息 | iOS App",
+      "decision_context": "安心分享，同时保留有用的上下文。Mask My File 会在你发送文件前找出隐私信息，永久遮挡后，再重新打开并核对新导出的文件，确认无误才显示 Private Ready。",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/ur-PK/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6792850916&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6792850916",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "bundle_id": "com.alice51849.MochiDoneStamp",
+      "public_name": "Mochi DoneStamp: Last Time",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6790800323?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Mochi DoneStamp：上次何时 — 生活事件、周期与完成记录 | iOS App",
+      "decision_context": "上次换床单、给植物浇水、打电话给家人、备份照片或更换滤芯，是什么时候？",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://open.cait518.cc/mochi-donestamp/en-US/support/",
+      "privacy_url": "https://open.cait518.cc/mochi-donestamp/en-US/privacy/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6790800323&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6790800323",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "mochi",
+      "app_store_id": "6785004775",
+      "bundle_id": "com.alice51849.MochiTodo",
+      "public_name": "Mochi: Cute Checklist",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6785004775?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone 上最佳简单待办事项应用，无订阅",
+      "decision_context": "如果大多数待办应用感觉臃肿，合适的就是带提醒、重复规则和 Watch 复杂功能的干净清单——且刻意无项目管理功能——Mochi 正是为此打造。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/mochitodo-support/",
+      "privacy_url": "https://alice51849.github.io/mochitodo-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6785004775&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6785004775",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "moneytag",
+      "app_store_id": "6801956402",
+      "bundle_id": "com.alice51849.MoneyTag",
+      "public_name": "MoneyTag: Income & Expense",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6801956402?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "MoneyTag: 收入与支出 — 项目 · 标签 · 报表 | iOS App",
+      "decision_context": "收入与支出 每个项目都有自己的账本：收入减支出，就是这个项目的净额。以下是大家最常问的问题；没有找到答案，欢迎写信给我们，每封信都有人亲自看。",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/moneytag-support/?lang=en-US",
+      "privacy_url": "https://alice51849.github.io/moneytag-support/privacy.html?lang=en-US",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6801956402&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6801956402",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "bundle_id": "com.alice51849.OnePagePPT",
+      "public_name": "OnePage PPT: AI Slide Maker",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6798814385?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "OnePage PPT: AI一页幻灯片 — 笔记、截图、PDF秒变演示文稿 | iOS App",
+      "decision_context": "把一大段文字，变成别人真的会看完的一页。不用再从空白页开始，也不用把 20 页素材硬塞成一页。",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/app/onepage-ppt/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/onepage-ppt/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6798814385&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6798814385",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "photocream",
+      "app_store_id": "6781808054",
+      "bundle_id": "com.alice51849.photocream",
+      "public_name": "PhotoCream Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6781808054?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone旅行创作者一次付费胶片风格照片编辑器推荐",
+      "decision_context": "旅行创作者需要可重复的胶片风格，能添加颗粒、光晕和色彩特征，而不会让每个目的地都变成同一种平淡滤镜——PhotoCream专为此打造。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/photocream-support/support.html",
+      "privacy_url": "https://alice51849.github.io/photocream-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6781808054&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6781808054",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "picclear",
+      "app_store_id": "6780223070",
+      "bundle_id": "com.picclear.app",
+      "public_name": "PicClear Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6780223070?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "iPhone 上最佳释放存储空间删除重复照片的应用",
+      "decision_context": "快速释放空间，优先处理最大收益：完全重复照片、近似连拍、模糊废片和大视频——PicClear 助你在 iPhone 上完成。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/picclear-support/support.html",
+      "privacy_url": "https://alice51849.github.io/picclear-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6780223070&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6780223070",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "bundle_id": "com.alice51849.SaveTag",
+      "public_name": "SaveTag: AI Social Bookmarks",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6802505528?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "SaveTag:AI 链接收藏 — 稍后阅读,自动打标签 | iOS App",
+      "decision_context": "先存下来,而且这次真的会看完。 你每天都在给自己发链接。朋友分享的菜谱、看中的外套、说好要看的视频、想再读一遍的帖子。它们散落在聊天记录、备忘录和截图里,然后就再也找不到了。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/savetag-support/",
+      "privacy_url": "https://alice51849.github.io/savetag-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6802505528&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6802505528",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "scanto",
+      "app_store_id": "6779977651",
+      "bundle_id": "com.alice51849.OfflineScannerPro",
+      "public_name": "ScanTo Pro: Offline PDF & OCR",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6779977651?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "护士用最佳离线文档扫描应用，无云端",
+      "decision_context": "如果你扫描患者同意书、出院文件或转诊单，扫描器必须将文件保留在设备上——绝不上传到他人云端——ScanTo Pro 专为此设计。",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/scanto-support/",
+      "privacy_url": "https://alice51849.github.io/scanto-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779977651&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779977651",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "sereno",
+      "app_store_id": "6788236641",
+      "bundle_id": "com.alice51849.Sereno",
+      "public_name": "Sereno: Sleep Sounds",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6788236641?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "最佳无订阅白噪音助眠应用",
+      "decision_context": "为了获得良好睡眠，每月催促你订阅恰恰与放松的目的背道而驰——Sereno正是为此设计。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/sereno-support/support.html?locale=en-US",
+      "privacy_url": "https://alice51849.github.io/sereno-support/privacy.html?locale=en-US",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6788236641&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6788236641",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "bundle_id": "com.alice51849.ShotInbox",
+      "public_name": "ShotInbox AI: Sort Screenshots",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6802166527?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ShotInbox AI: Sort Screenshots — 本地截图分类、OCR搜索与时间轴 | iOS App",
+      "decision_context": "截图，井然有序 让每张截图都能找到、处理、清理。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6802166527&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6802166527",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "bundle_id": "com.alice51849.SnapportLite",
+      "public_name": "Snapport Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6792856304?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Snapport Lite — 在家制作证件照 | iOS App",
+      "decision_context": "Snapport Lite - 通过尺寸引导、背景工具和可打印输出，制作护照、签证和证件照。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/snapport-lite-support/",
+      "privacy_url": "https://alice51849.github.io/snapport-lite-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6792856304&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6792856304",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "snapport",
+      "app_store_id": "6780575828",
+      "bundle_id": "com.snapport.app",
+      "public_name": "Snapport: Passport & ID Photos",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6780575828?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "付费下载",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "最佳婴幼儿居家护照照片应用",
+      "decision_context": "婴儿护照照片中不能有其他人，背景必须纯净——但婴儿眼睛不必完全睁开。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "预付费 App 可在“App 与图书”中作为候选项搜索。公开查询不能证明它会出现在贵机构目录中；获取许可前，请让内容管理员核对准确的数字 App ID。",
+      "support_url": "https://alice51849.github.io/snapport-support/",
+      "privacy_url": "https://alice51849.github.io/snapport-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6780575828&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6780575828",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "sononote",
+      "app_store_id": "6782139553",
+      "bundle_id": "com.caitlyn.clearnotevoice",
+      "public_name": "Sono Note",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6782139553?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "最佳iPhone会议语音笔记总结应用",
+      "decision_context": "通话后你不需要原始文字记录——你需要摘要、行动事项和草拟的后续邮件——Sono Note正是为此设计。",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/sono-note-support/",
+      "privacy_url": "https://alice51849.github.io/sono-note-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6782139553&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6782139553",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "tripplanet",
+      "app_store_id": "6787193643",
+      "bundle_id": "com.alice51849.TripPlanet",
+      "public_name": "Trip Planet: Kids Quest",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
+      "campaign_app_store_url": "https://apps.apple.com/app/id6787193643?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "适合家庭出行儿童的最佳旅行活动App",
+      "decision_context": "带幼儿旅行的家长需要能将收拾、等待和探索新地点变成冒险的一部分，而不是新的压力来源 —— Lumi Trip Planet正是为此设计。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6787193643&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6787193643",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "bundle_id": "com.alice51849.TripbeeLite",
+      "public_name": "TripBee Lite: Trip Planner",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6791299610?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "适用于即将出行的iPhone最佳简易行程规划应用",
+      "decision_context": "如果您只规划一个即将到来的行程，专注清晰的时间线比杂乱的所有未来可能行程档案更实用——TripBee Lite正是为此设计。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6791299610&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6791299610",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "tripbee",
+      "app_store_id": "6787754435",
+      "bundle_id": "com.alice51849.Tripbee",
+      "public_name": "TripBee Pro: Trip Planner",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6787754435?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "付费下载",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "最佳iPhone旅行行程规划应用",
+      "decision_context": "一款好行程应用能将混乱的旅行变成清晰的逐日时间线——航班、酒店、活动、餐厅和交通，配有清晰图标，方便一目了然——TripBee Pro：旅行规划师正是为此设计。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "预付费 App 可在“App 与图书”中作为候选项搜索。公开查询不能证明它会出现在贵机构目录中；获取许可前，请让内容管理员核对准确的数字 App ID。",
+      "support_url": "https://alice51849.github.io/tripbee-support/",
+      "privacy_url": "https://alice51849.github.io/tripbee-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6787754435&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6787754435",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "unblurry",
+      "app_store_id": "6782275018",
+      "bundle_id": "com.unblurry.app",
+      "public_name": "Unblurry Pro: Unblur & HD",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6782275018?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "最佳iPhone儿童模糊照片修复应用",
+      "decision_context": "孩子总是不安分，轻微虚焦和抖动照片不可避免——Unblurry正是为此设计。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/unblurry-support/support.html",
+      "privacy_url": "https://alice51849.github.io/unblurry-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6782275018&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6782275018",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wifiaid",
+      "app_store_id": "6790467886",
+      "bundle_id": "com.alice51849.WiFiAid",
+      "public_name": "WiFi Aid",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6790467886?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "付费下载",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "WiFi Aid — 网络诊断与连接证据 | iOS App",
+      "decision_context": "通过多路径、DNS、TCP、TLS、响应时间与稳定性检查，找出最可能的连接问题。App Store 一次付费买断，无订阅、无广告、无跟踪。",
+      "related_fit": [
+        "business"
+      ],
+      "canary": true,
+      "canary_status": "BLOCKED_PORTAL_VISIBILITY_UNVERIFIED",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "预付费 App 可在“App 与图书”中作为候选项搜索。公开查询不能证明它会出现在贵机构目录中；获取许可前，请让内容管理员核对准确的数字 App ID。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6790467886&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6790467886",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wifiaidlite",
+      "app_store_id": "6793414462",
+      "bundle_id": "com.alice51849.WiFiAidLite",
+      "public_name": "WiFi Aid Lite: Network Check",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6793414462?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "WiFi Aid Lite — 网络诊断与连接证据 | iOS App",
+      "decision_context": "“网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测 DNS、TCP、TLS、响应时间与稳定性,交叉比对各项证据,告诉你最可能的故障原因,不必再瞎猜、重启碰运气。",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6793414462&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6793414462",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wordmatelite",
+      "app_store_id": "6797601720",
+      "bundle_id": "com.alice51849.WordmateLite",
+      "public_name": "Wordmate Lite: Vocabulary",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6797601720?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "免费开始使用 · 一次购买解锁",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Wordmate Lite 每天五个单词 — 44 种语言，一分钟记词习惯 | iOS App",
+      "decision_context": "很多人的外语进度，都卡在「卡片还没做完」这一步。Wordmate Lite 想去掉的就是这一步。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple 文档说明，App 内购买与批量购买、受管理 App 及受管理 Apple 账户不兼容。不得把设备分配描述成完整解锁。 如需完整解锁，每位用户都必须使用可进行 App 内购买的个人 Apple 账户分别购买。",
+      "support_url": "https://alice51849.github.io/app/wordmate-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/wordmate-lite/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6797601720&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6797601720",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wordmate",
+      "app_store_id": "6789917808",
+      "bundle_id": "com.caitlyn.flashdot",
+      "public_name": "Wordmate: Learn 44 Languages",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
+      "campaign_app_store_url": "https://apps.apple.com/cn/app/id6789917808?pt=118326163&ct=iag_data_zh_hans&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_zh_hans",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "付费下载",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "适合通勤族和Apple Watch用户的最佳词汇App",
+      "decision_context": "通勤族需要能在碎片时间练习词汇，无需完整课程、账号或每次都拿手机 —— Wordmate：学习44种语言正是为此设计。",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "预付费 App 可在“App 与图书”中作为候选项搜索。公开查询不能证明它会出现在贵机构目录中；获取许可前，请让内容管理员核对准确的数字 App ID。",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6789917808&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6789917808",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    }
+  ],
+  "measurement": {
+    "explanation": "已生成的候选版本不等于已部署 GET、搜索展示、有效点击或复制、机构采购或下载。本次未部署，也未登录计量平台；曝光、操作和结果保持 0／待定。",
+    "scorecards": {
+      "7": "https://alice51849.github.io/ios-app-guide/institutional/scorecard-7d.json",
+      "28": "https://alice51849.github.io/ios-app-guide/institutional/scorecard-28d.json"
+    },
+    "generated_rc_is_not_exposure": true,
+    "ordinary_downloads_are_institutional": false
+  },
+  "content_digest": "sha256:cc957b51d64e1bdc1a27f7012e2988fda647ddf5ea626f8e1c11c19206975e43"
+}

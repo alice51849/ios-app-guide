@@ -1,0 +1,748 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-29T18:45:17Z",
+  "sources": {
+    "identity_platform_download": "Apple iTunes Lookup API, US storefront, public GET",
+    "support_privacy": "Public US App Store product pages, public GET",
+    "scope_note": "Public lookup verifies listing identity and observed storefront facts only; it does not verify Apple School Manager, Apple Business Manager, Intune, institutional approval, certification, discounts, or managed-app availability."
+  },
+  "record_count": 46,
+  "records": [
+    {
+      "app_store_id": "6798813048",
+      "bundle_id": "com.alice51849.NotesStudio100",
+      "public_name": "100 Notes Studio: Pen & Paper",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6798813048&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6798813048",
+      "support_url": "https://alice51849.github.io/100notes-support/support.html",
+      "privacy_url": "https://alice51849.github.io/100notes-support/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6791658210",
+      "bundle_id": "com.alice51849.AIBriefPack",
+      "public_name": "AI Brief",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6791658210&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6791658210",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/support.html?lang=en-US",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/privacy.html?lang=en-US",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6784974530",
+      "bundle_id": "com.alice51849.aim990",
+      "public_name": "Aim990: 990 Score Coach",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6784974530&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6784974530",
+      "support_url": "https://alice51849.github.io/aim990-support/",
+      "privacy_url": "https://alice51849.github.io/aim990-support/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6792483140",
+      "bundle_id": "com.alice51849.Aim990Plus",
+      "public_name": "Aim990 Plus",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6792483140&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6792483140",
+      "support_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "paid_download"
+    },
+    {
+      "app_store_id": "6802423998",
+      "bundle_id": "com.alice51849.BattAI",
+      "public_name": "BattAI: Battery health score",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6802423998&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6802423998",
+      "support_url": "https://alice51849.github.io/battai-support/locales/en/",
+      "privacy_url": "https://alice51849.github.io/battai-support/locales/en/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6794178671",
+      "bundle_id": "com.alice51849.CalDaily",
+      "public_name": "CalDaily: Calculator & Themes",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6794178671&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6794178671",
+      "support_url": "https://alice51849.github.io/caldaily-support/support.html",
+      "privacy_url": "https://alice51849.github.io/caldaily-support/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6781337213",
+      "bundle_id": "com.alice51849.cvdesk",
+      "public_name": "CV Desk: ATS Resume Builder",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6781337213&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6781337213",
+      "support_url": "https://alice51849.github.io/cvdesk-support/support.html",
+      "privacy_url": "https://alice51849.github.io/cvdesk-support/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6782251621",
+      "bundle_id": "com.alice51849.Cyca",
+      "public_name": "Cyca: Period & Cycle Tracker",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6782251621&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6782251621",
+      "support_url": "https://alice51849.github.io/cyca-support/",
+      "privacy_url": "https://alice51849.github.io/cyca-support/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6790418321",
+      "bundle_id": "com.caitlyn.dailymate",
+      "public_name": "DailyMate: Language Phrases",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6790418321&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6790418321",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "paid_download"
+    },
+    {
+      "app_store_id": "6794725568",
+      "bundle_id": "com.alice51849.DailyMateLite",
+      "public_name": "DailyMate Lite: Speak Today",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6794725568&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6794725568",
+      "support_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6755782939",
+      "bundle_id": "com.caitlai.globi",
+      "public_name": "G+Money",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6755782939&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6755782939",
+      "support_url": "https://alice51849.github.io/gmoney-support/",
+      "privacy_url": "https://alice51849.github.io/gmoney-support/#privacy",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "paid_download"
+    },
+    {
+      "app_store_id": "6793436548",
+      "bundle_id": "com.alice51849.GMoneyLite",
+      "public_name": "G+Money Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6793436548&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6793436548",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6794039979",
+      "bundle_id": "com.alice51849.HoursTagLite",
+      "public_name": "HoursTag Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6794039979&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6794039979",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6754218117",
+      "bundle_id": "com.caitlyn.hourstag",
+      "public_name": "HoursTag: Hours to Buy",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6754218117&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6754218117",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "paid_download"
+    },
+    {
+      "app_store_id": "6780107485",
+      "bundle_id": "com.focuslockpro.app",
+      "public_name": "LockHour Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6780107485&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6780107485",
+      "support_url": "https://alice51849.github.io/lockhour-support/support.html",
+      "privacy_url": "https://alice51849.github.io/lockhour-support/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6773017109",
+      "bundle_id": "com.alice51849.LumiZhuyin",
+      "public_name": "Lumi Bopomofo",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6773017109&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6773017109",
+      "support_url": "https://alice51849.github.io/lumi-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-support/",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6775773117",
+      "bundle_id": "com.alice51849.LumiZhuyinPro",
+      "public_name": "Lumi Bopomofo Pro: Zhuyin",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6775773117&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6775773117",
+      "support_url": "https://alice51849.github.io/lumi-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-support/",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "paid_download"
+    },
+    {
+      "app_store_id": "6778748533",
+      "bundle_id": "com.alice51849.LumiLettersLite",
+      "public_name": "Lumi Letters Lite: ABC Kids",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6778748533&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6778748533",
+      "support_url": "https://alice51849.github.io/lumi-letters-support",
+      "privacy_url": "https://alice51849.github.io/lumi-letters-support",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6778491147",
+      "bundle_id": "com.alice51849.LumiLetters",
+      "public_name": "Lumi Letters Pro: ABC Phonics",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6778491147&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6778491147",
+      "support_url": "https://alice51849.github.io/lumi-letters-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-letters-support",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "paid_download"
+    },
+    {
+      "app_store_id": "6778269699",
+      "bundle_id": "com.alice51849.LumiMathFree",
+      "public_name": "Lumi Math Planet: Explorer",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6778269699&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6778269699",
+      "support_url": "https://alice51849.github.io/lumi-math-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-math-support/",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6776958488",
+      "bundle_id": "com.alice51849.LumiMathPlanet",
+      "public_name": "Lumi Math Pro: Kids Numbers",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6776958488&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6776958488",
+      "support_url": "https://alice51849.github.io/lumi-math-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-math-support/",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "paid_download"
+    },
+    {
+      "app_store_id": "6779750237",
+      "bundle_id": "com.alice51849.LumiMissionLite",
+      "public_name": "Lumi Mission Planet: Routines",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6779750237&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6779750237",
+      "support_url": "https://alice51849.github.io/lumi-mission-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6779745474",
+      "bundle_id": "com.alice51849.LumiMissionPro",
+      "public_name": "Lumi Mission Planet Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6779745474&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6779745474",
+      "support_url": "https://alice51849.github.io/lumi-mission-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "paid_download"
+    },
+    {
+      "app_store_id": "6787193643",
+      "bundle_id": "com.alice51849.TripPlanet",
+      "public_name": "Trip Planet: Kids Quest",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6787193643&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6787193643",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6779552704",
+      "bundle_id": "com.alice51849.LumiWeather",
+      "public_name": "Lumi Weather: Family Forecast",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6779552704&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6779552704",
+      "support_url": "https://alice51849.github.io/lumi-weather-support",
+      "privacy_url": "https://alice51849.github.io/lumi-weather-support",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6792850916",
+      "bundle_id": "com.alice51849.MaskMyFile",
+      "public_name": "Mask My File",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6792850916&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6792850916",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/ur-PK/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6785004775",
+      "bundle_id": "com.alice51849.MochiTodo",
+      "public_name": "Mochi: Cute Checklist",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6785004775&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6785004775",
+      "support_url": "https://alice51849.github.io/mochitodo-support/",
+      "privacy_url": "https://alice51849.github.io/mochitodo-support/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6790800323",
+      "bundle_id": "com.alice51849.MochiDoneStamp",
+      "public_name": "Mochi DoneStamp: Last Time",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6790800323&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6790800323",
+      "support_url": "https://open.cait518.cc/mochi-donestamp/en-US/support/",
+      "privacy_url": "https://open.cait518.cc/mochi-donestamp/en-US/privacy/",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6801956402",
+      "bundle_id": "com.alice51849.MoneyTag",
+      "public_name": "MoneyTag: Income & Expense",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6801956402&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6801956402",
+      "support_url": "https://alice51849.github.io/moneytag-support/?lang=en-US",
+      "privacy_url": "https://alice51849.github.io/moneytag-support/privacy.html?lang=en-US",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6798814385",
+      "bundle_id": "com.alice51849.OnePagePPT",
+      "public_name": "OnePage PPT: AI Slide Maker",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6798814385&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6798814385",
+      "support_url": "https://alice51849.github.io/app/onepage-ppt/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/onepage-ppt/en-US/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6781808054",
+      "bundle_id": "com.alice51849.photocream",
+      "public_name": "PhotoCream Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6781808054&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6781808054",
+      "support_url": "https://alice51849.github.io/photocream-support/support.html",
+      "privacy_url": "https://alice51849.github.io/photocream-support/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6780223070",
+      "bundle_id": "com.picclear.app",
+      "public_name": "PicClear Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6780223070&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6780223070",
+      "support_url": "https://alice51849.github.io/picclear-support/support.html",
+      "privacy_url": "https://alice51849.github.io/picclear-support/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6802505528",
+      "bundle_id": "com.alice51849.SaveTag",
+      "public_name": "SaveTag: AI Social Bookmarks",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6802505528&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6802505528",
+      "support_url": "https://alice51849.github.io/savetag-support/",
+      "privacy_url": "https://alice51849.github.io/savetag-support/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6779977651",
+      "bundle_id": "com.alice51849.OfflineScannerPro",
+      "public_name": "ScanTo Pro: Offline PDF & OCR",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6779977651&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6779977651",
+      "support_url": "https://alice51849.github.io/scanto-support/",
+      "privacy_url": "https://alice51849.github.io/scanto-support/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6788236641",
+      "bundle_id": "com.alice51849.Sereno",
+      "public_name": "Sereno: Sleep Sounds",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6788236641&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6788236641",
+      "support_url": "https://alice51849.github.io/sereno-support/support.html?locale=en-US",
+      "privacy_url": "https://alice51849.github.io/sereno-support/privacy.html?locale=en-US",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6802166527",
+      "bundle_id": "com.alice51849.ShotInbox",
+      "public_name": "ShotInbox AI: Sort Screenshots",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6802166527&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6802166527",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6780575828",
+      "bundle_id": "com.snapport.app",
+      "public_name": "Snapport: Passport & ID Photos",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6780575828&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6780575828",
+      "support_url": "https://alice51849.github.io/snapport-support/",
+      "privacy_url": "https://alice51849.github.io/snapport-support/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "paid_download"
+    },
+    {
+      "app_store_id": "6792856304",
+      "bundle_id": "com.alice51849.SnapportLite",
+      "public_name": "Snapport Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6792856304&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6792856304",
+      "support_url": "https://alice51849.github.io/snapport-lite-support/",
+      "privacy_url": "https://alice51849.github.io/snapport-lite-support/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6782139553",
+      "bundle_id": "com.caitlyn.clearnotevoice",
+      "public_name": "Sono Note",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6782139553&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6782139553",
+      "support_url": "https://alice51849.github.io/sono-note-support/",
+      "privacy_url": "https://alice51849.github.io/sono-note-support/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6791299610",
+      "bundle_id": "com.alice51849.TripbeeLite",
+      "public_name": "TripBee Lite: Trip Planner",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6791299610&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6791299610",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6787754435",
+      "bundle_id": "com.alice51849.Tripbee",
+      "public_name": "TripBee Pro: Trip Planner",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6787754435&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6787754435",
+      "support_url": "https://alice51849.github.io/tripbee-support/",
+      "privacy_url": "https://alice51849.github.io/tripbee-support/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "paid_download"
+    },
+    {
+      "app_store_id": "6782275018",
+      "bundle_id": "com.unblurry.app",
+      "public_name": "Unblurry Pro: Unblur & HD",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6782275018&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6782275018",
+      "support_url": "https://alice51849.github.io/unblurry-support/support.html",
+      "privacy_url": "https://alice51849.github.io/unblurry-support/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6790467886",
+      "bundle_id": "com.alice51849.WiFiAid",
+      "public_name": "WiFi Aid",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6790467886&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6790467886",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "paid_download"
+    },
+    {
+      "app_store_id": "6793414462",
+      "bundle_id": "com.alice51849.WiFiAidLite",
+      "public_name": "WiFi Aid Lite: Network Check",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6793414462&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6793414462",
+      "support_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6797601720",
+      "bundle_id": "com.alice51849.WordmateLite",
+      "public_name": "Wordmate Lite: Vocabulary",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6797601720&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6797601720",
+      "support_url": "https://alice51849.github.io/app/wordmate-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/wordmate-lite/en-US/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "free_download"
+    },
+    {
+      "app_store_id": "6789917808",
+      "bundle_id": "com.caitlyn.flashdot",
+      "public_name": "Wordmate: Learn 44 Languages",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
+      "lookup_url": "https://itunes.apple.com/lookup?id=6789917808&country=us&entity=software",
+      "app_store_page_url": "https://apps.apple.com/us/app/id6789917808",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/privacy.html",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "download_class": "paid_download"
+    }
+  ]
+}

@@ -1,0 +1,2403 @@
+{
+  "$schema": "https://alice51849.github.io/ios-app-guide/institutional/apple-managed-apps.schema.json",
+  "schema_version": 1,
+  "release_status": "CANDIDATE_NOT_DEPLOYED",
+  "deployment_status": "not_deployed",
+  "locale": "vi",
+  "route_kind": "localized",
+  "url": "https://alice51849.github.io/ios-app-guide/vi/institutional/apple-managed-apps.json",
+  "generated_on": "2026-08-30",
+  "source_digest": "sha256:68996012c878d8050a1d8d3fac47c9731f0ab563fa8601c05e62b6c7fc7d0df0",
+  "roster_digest": "sha256:fea82924a4facecbf07394ed7e86d966970b2ba8db1fa21110d5debbde6a8f18",
+  "publisher": {
+    "name": "Lumi Studio",
+    "relationship": "first_party_developer",
+    "is_independent_ranking": false,
+    "support_email": "hourstag.app@gmail.com"
+  },
+  "disclosures": {
+    "first_party_non_ranking_non_endorsement": "Đây là danh sách trực tiếp của Lumi Studio, không phải chứng nhận hoặc đề xuất của Apple hay Microsoft, phê duyệt của trường học hay MDM, bằng chứng về khả năng hiển thị cho tổ chức hoặc giảm giá. Hãy kiểm tra cửa hàng trực tiếp và chính sách tổ chức.",
+    "live_policy_note": "Nguồn tham khảo trực tiếp, không xếp hạng dành cho quản trị viên Apple School Manager, Apple Business Manager và Microsoft Intune đánh giá 46 trang App Store đã xác minh và đang hoạt động.",
+    "public_lookup_scope": "Đây là danh sách trực tiếp của Lumi Studio, không phải chứng nhận hoặc đề xuất của Apple hay Microsoft, phê duyệt của trường học hay MDM, bằng chứng về khả năng hiển thị cho tổ chức hoặc giảm giá. Hãy kiểm tra cửa hàng trực tiếp và chính sách tổ chức."
+  },
+  "official_references": [
+    {
+      "id": "apple-content-distribution",
+      "publisher": "Apple",
+      "source_title": "Intro to content distribution for Apple devices",
+      "url": "https://support.apple.com/guide/deployment/intro-to-content-distribution-depe1553f932/web",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    },
+    {
+      "id": "apple-managed-apps",
+      "publisher": "Apple",
+      "source_title": "Distribute managed apps to Apple devices",
+      "url": "https://support.apple.com/guide/deployment/distribute-managed-apps-dep575bfed86/web",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    },
+    {
+      "id": "microsoft-intune-direct-store",
+      "publisher": "Microsoft",
+      "source_title": "Add iOS Store Apps to Microsoft Intune",
+      "url": "https://learn.microsoft.com/en-us/intune/app-management/deployment/add-store-ios",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    },
+    {
+      "id": "microsoft-intune-volume-purchase",
+      "publisher": "Microsoft",
+      "source_title": "Manage Apple Volume-Purchased Apps",
+      "url": "https://learn.microsoft.com/en-us/intune/app-management/deployment/manage-vpp-apple",
+      "checked_on": "2026-08-30",
+      "expires_on": "2026-09-13"
+    }
+  ],
+  "source_state": {
+    "public_lookup_checked_at": "2026-08-29T18:45:17Z",
+    "storefront_snapshot_checked_at": "2026-08-29T06:31:01Z",
+    "official_source_max_age_days": 14,
+    "lookup_method": "public_get_only",
+    "institutional_portal_login": false,
+    "deployment_or_submission": false
+  },
+  "workflow": {
+    "paid_apps_and_books": "Ứng dụng trả phí trước có thể được tìm như một ứng viên trong Ứng dụng và Sách. Tra cứu công khai không chứng minh ứng dụng xuất hiện trong danh mục của tổ chức; hãy xác nhận đúng App ID dạng số trước khi mua giấy phép.",
+    "intune_direct_store_free_tier": "Phương thức thêm trực tiếp ứng dụng iOS Store trong Intune chỉ dành cho ứng dụng miễn phí. Mọi lượt tải miễn phí ở đây đều bắt đầu miễn phí và có tùy chọn mở khóa một lần trong ứng dụng, vì vậy chỉ đánh giá phần miễn phí đi kèm.",
+    "managed_app_iap_warning": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+    "related_fit_method": "Danh sách liên quan đến giáo dục và doanh nghiệp dựa trên truy vấn của nhà phát hành và bối cảnh quyết định đã công bố. Kết quả khớp yếu hoặc chỉ theo tên sẽ bị loại; bị loại không có nghĩa ứng dụng không phù hợp.",
+    "administrator_steps": [
+      "Đối chiếu App ID dạng số và URL chính xác với trang App Store đang hoạt động.",
+      "Dùng Ứng dụng và Sách cho ứng viên trả phí; chỉ dùng Intune trực tiếp để đánh giá phần miễn phí.",
+      "Thử nghiệm giới hạn theo chính sách nội bộ và không coi việc gán thiết bị là mở khóa IAP."
+    ]
+  },
+  "canary": {
+    "status": "BLOCKED_PENDING_ADMIN_VERIFICATION",
+    "reason": "Public GET evidence verifies listing identity, platform and purchase class only. Per-organization Apps and Books visibility, license availability, Intune sync and institutional approval were not checked because this candidate does not sign in to administrator portals.",
+    "count": 3,
+    "app_keys": [
+      "notesstudio100",
+      "aim990plus",
+      "wifiaid"
+    ],
+    "paid_download_app_keys": [
+      "aim990plus",
+      "wifiaid"
+    ],
+    "free_iap_app_keys": [
+      "notesstudio100"
+    ]
+  },
+  "counts": {
+    "apps": 46,
+    "paid_upfront": 12,
+    "free_to_start_with_iap": 34,
+    "fully_free": 0,
+    "ipad_supported": 46,
+    "school_related": 10,
+    "business_related": 7,
+    "canary": 3
+  },
+  "apps": [
+    {
+      "app_key": "notesstudio100",
+      "app_store_id": "6798813048",
+      "bundle_id": "com.alice51849.NotesStudio100",
+      "public_name": "100 Notes Studio: Pen & Paper",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6798813048?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "100 Notes Studio: Pen & Paper — Sổ tay viết tay, chú thích PDF | iOS App",
+      "decision_context": "100 Notes Studio kết hợp viết tay, gõ chữ, đánh dấu PDF, âm thanh gắn với trang và công cụ ôn tập trong một quy trình ngoại tuyến. Sắp xếp nội dung theo sổ",
+      "related_fit": [
+        "school"
+      ],
+      "canary": true,
+      "canary_status": "BLOCKED_FREE_TIER_ONLY_IAP_NOT_DISTRIBUTABLE",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/100notes-support/support.html",
+      "privacy_url": "https://alice51849.github.io/100notes-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6798813048&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6798813048",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "bundle_id": "com.alice51849.AIBriefPack",
+      "public_name": "AI Brief",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6791658210?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Ứng dụng riêng tư sắp xếp ảnh chụp màn hình và tài liệu thành ngữ cảnh trước khi dùng AI",
+      "decision_context": "AI Brief gom ảnh chụp màn hình, PDF, ghi chú và nguồn thành một gói ngữ cảnh có tổ chức, để công cụ AI bắt đầu bằng tài liệu rõ ràng thay vì các tệp rời rạc.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/support.html?lang=en-US",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/privacy.html?lang=en-US",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6791658210&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6791658210",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "aim990plus",
+      "app_store_id": "6792483140",
+      "bundle_id": "com.alice51849.Aim990Plus",
+      "public_name": "Aim990 Plus",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6792483140?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Tải xuống trả phí",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "Ứng dụng luyện thi nghe và đọc tiếng Anh ngoại tuyến trên iPhone",
+      "decision_context": "Aim990 Plus rèn quyết định chính xác dưới áp lực thời gian với 630 câu hỏi nguyên bản, bộ luyện tập trung, ôn lại lỗi sai, đề thi thử, chính tả và tiến độ ngoại tuyến. Trả phí một lần trước, không thuê bao.",
+      "related_fit": [
+        "school"
+      ],
+      "canary": true,
+      "canary_status": "BLOCKED_PORTAL_VISIBILITY_UNVERIFIED",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Ứng dụng trả phí trước có thể được tìm như một ứng viên trong Ứng dụng và Sách. Tra cứu công khai không chứng minh ứng dụng xuất hiện trong danh mục của tổ chức; hãy xác nhận đúng App ID dạng số trước khi mua giấy phép.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus-privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6792483140&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6792483140",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "aim990",
+      "app_store_id": "6784974530",
+      "bundle_id": "com.alice51849.aim990",
+      "public_name": "Aim990: 990 Score Coach",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6784974530",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6784974530?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ứng dụng luyện thi TOEIC tốt nhất không cần mạng với kế hoạch học cho iPhone",
+      "decision_context": "Phần 5 có vẻ ngắn, nhưng các câu hỏi câu chưa hoàn chỉnh có thể tốn thời gian nếu ngữ pháp và từ vựng không thành thạo.",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/aim990-support/",
+      "privacy_url": "https://alice51849.github.io/aim990-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6784974530&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6784974530",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "battai",
+      "app_store_id": "6802423998",
+      "bundle_id": "com.alice51849.BattAI",
+      "public_name": "BattAI: Battery health score",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6802423998?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "BattAI: Điểm tình trạng pin — Quy tắc, nguồn và giới hạn rõ ràng | iOS App",
+      "decision_context": "BattAI BattAI dùng 5 giá trị từ API công khai của iOS: mức pin, trạng thái sạc, Chế độ nguồn điện thấp, trạng thái nhiệt của toàn thiết bị và thời gian. Các kết quả khác được tính từ dữ liệu này hoặc do bạn thêm. Mỗi mục đều nêu nguồn và giới hạn",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/battai-support/locales/en/",
+      "privacy_url": "https://alice51849.github.io/battai-support/locales/en/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6802423998&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6802423998",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "caldaily",
+      "app_store_id": "6794178671",
+      "bundle_id": "com.alice51849.CalDaily",
+      "public_name": "CalDaily: Calculator & Themes",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794178671",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6794178671?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "CalDaily: máy tính và chủ đề — Widget, công cụ, lịch sử | iOS App",
+      "decision_context": "Một máy tính bạn sẽ thật sự dùng lâu dài, vì nó nhớ cả suy nghĩ đằng sau từng con số.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/caldaily-support/support.html",
+      "privacy_url": "https://alice51849.github.io/caldaily-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6794178671&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6794178671",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "cvdesk",
+      "app_store_id": "6781337213",
+      "bundle_id": "com.alice51849.cvdesk",
+      "public_name": "CV Desk: ATS Resume Builder",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6781337213",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6781337213?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ứng dụng tạo hồ sơ xin việc tốt nhất cho người đổi nghề 2026",
+      "decision_context": "Khi bạn chuyển ngành, vấn đề hồ sơ khác: kinh nghiệm thật nhưng trên giấy tờ là 'không liên quan', và bộ lọc ATS loại bạn trước khi người đọc thấy — CV Desk được xây dựng cho điều này.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/cvdesk-support/support.html",
+      "privacy_url": "https://alice51849.github.io/cvdesk-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6781337213&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6781337213",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "cyca",
+      "app_store_id": "6782251621",
+      "bundle_id": "com.alice51849.Cyca",
+      "public_name": "Cyca: Period & Cycle Tracker",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782251621",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6782251621?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ứng dụng theo dõi chu kỳ kinh nguyệt tốt nhất không cần tài khoản cho iPhone",
+      "decision_context": "Trong lĩnh vực nhạy cảm về dữ liệu, ứng dụng theo dõi chu kỳ đúng đắn giữ mọi thứ — lưu lượng, tâm trạng, triệu chứng, nhiệt độ, quan hệ — trên thiết bị của bạn, không cần tài khoản và không đồng bộ đám mây — Cyca được xây dựng cho điều này.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/cyca-support/",
+      "privacy_url": "https://alice51849.github.io/cyca-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6782251621&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6782251621",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "bundle_id": "com.alice51849.DailyMateLite",
+      "public_name": "DailyMate Lite: Speak Today",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794725568",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6794725568?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "DailyMate Lite: Luyện nói — 50 ngôn ngữ, hội thoại thực tế | iOS App",
+      "decision_context": "Đến lúc cần nói mà vẫn chưa tìm được câu phù hợp? DailyMate Lite biến những tình huống như du lịch, công việc, ăn uống và sức khỏe thành các cặp gợi ý –",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/daily-mate-lite/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6794725568&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6794725568",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "dailymate",
+      "app_store_id": "6790418321",
+      "bundle_id": "com.caitlyn.dailymate",
+      "public_name": "DailyMate: Language Phrases",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790418321",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6790418321?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Tải xuống trả phí",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "ứng dụng cụm từ ngôn ngữ thực tế tốt nhất cho khách du lịch có Apple Watch",
+      "decision_context": "Trước chuyến đi, các cụm từ hoàn chỉnh cho tình huống thực tế hữu ích hơn từ vựng rời rạc mà bạn vẫn phải ghép lại khi áp lực — DailyMate được thiết kế cho điều này.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Ứng dụng trả phí trước có thể được tìm như một ứng viên trong Ứng dụng và Sách. Tra cứu công khai không chứng minh ứng dụng xuất hiện trong danh mục của tổ chức; hãy xác nhận đúng App ID dạng số trước khi mua giấy phép.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/dailymate/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6790418321&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6790418321",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "gmoney",
+      "app_store_id": "6755782939",
+      "bundle_id": "com.caitlai.globi",
+      "public_name": "G+Money",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6755782939",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6755782939?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Tải xuống trả phí",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "ứng dụng theo dõi ngân sách du lịch tốt nhất không đăng ký thuê bao cho iPhone",
+      "decision_context": "Khi đi du lịch, bạn cần ứng dụng theo dõi ngân sách hoạt động ngoại tuyến ở nước không có dữ liệu, xử lý đa tiền tệ, không yêu cầu tài khoản — tổ chức theo chuyến để mỗi kỳ nghỉ riêng biệt — G+Money được xây dựng cho điều này.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Ứng dụng trả phí trước có thể được tìm như một ứng viên trong Ứng dụng và Sách. Tra cứu công khai không chứng minh ứng dụng xuất hiện trong danh mục của tổ chức; hãy xác nhận đúng App ID dạng số trước khi mua giấy phép.",
+      "support_url": "https://alice51849.github.io/gmoney-support/",
+      "privacy_url": "https://alice51849.github.io/gmoney-support/#privacy",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6755782939&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6755782939",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "bundle_id": "com.alice51849.GMoneyLite",
+      "public_name": "G+Money Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793436548",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6793436548?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Ứng dụng theo dõi chi tiêu du lịch miễn phí có đổi tiền tệ trên iPhone",
+      "decision_context": "G+Money Lite cho phép thử trọn quy trình chuyến đi: ghi chi tiêu bằng tiền địa phương, xem tổng theo tiền chính và thử ngân sách trước khi chọn mở khóa vĩnh viễn một lần.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6793436548&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6793436548",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "bundle_id": "com.alice51849.HoursTagLite",
+      "public_name": "HoursTag Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6794039979?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Ứng dụng đổi giá thành giờ làm việc trước khi mua",
+      "decision_context": "HoursTag Lite đổi giá thành thời gian làm việc cần để kiếm được số tiền đó, giúp thấy gánh nặng thực trước khi trả. Bắt đầu miễn phí, mở khóa một lần tùy chọn, không thuê bao.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6794039979&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6794039979",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "hourstag",
+      "app_store_id": "6754218117",
+      "bundle_id": "com.caitlyn.hourstag",
+      "public_name": "HoursTag: Hours to Buy",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6754218117?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Tải xuống trả phí",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "Ứng dụng theo dõi mục tiêu tiết kiệm bằng giờ làm việc",
+      "decision_context": "HoursTag biến khoản tiết kiệm thành số giờ trong đời làm việc, để mỗi mục tiêu thể hiện cả số tiền lẫn công sức cần thiết. Trả phí một lần trước, không thuê bao.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Ứng dụng trả phí trước có thể được tìm như một ứng viên trong Ứng dụng và Sách. Tra cứu công khai không chứng minh ứng dụng xuất hiện trong danh mục của tổ chức; hãy xác nhận đúng App ID dạng số trước khi mua giấy phép.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/hourstag/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6754218117&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6754218117",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lockhour",
+      "app_store_id": "6780107485",
+      "bundle_id": "com.focuslockpro.app",
+      "public_name": "LockHour Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780107485",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6780107485?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ứng dụng chặn mạng xã hội tốt nhất khi học cho iPhone",
+      "decision_context": "Trong kỳ thi, ý chí không phải là công cụ — mà là chặn nghiêm ngặt theo thời gian — LockHour Pro được thiết kế cho điều này.",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/lockhour-support/support.html",
+      "privacy_url": "https://alice51849.github.io/lockhour-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6780107485&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6780107485",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumibopomofo",
+      "app_store_id": "6773017109",
+      "bundle_id": "com.alice51849.LumiZhuyin",
+      "public_name": "Lumi Bopomofo",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6773017109",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6773017109?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ứng dụng bopomofo tốt nhất cho trẻ học zhuyin trên iPhone",
+      "decision_context": "Đối với trẻ mới học Zhuyin, ứng dụng nên bao phủ tất cả 37 ký hiệu qua tô nét chữ và chơi — thiết kế cho độ tuổi học đầu 4–7, không quảng cáo, không thu thập dữ liệu — Lumi Bopomofo được xây dựng cho điều này.",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/lumi-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6773017109&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6773017109",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumibopomofopro",
+      "app_store_id": "6775773117",
+      "bundle_id": "com.alice51849.LumiZhuyinPro",
+      "public_name": "Lumi Bopomofo Pro: Zhuyin",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6775773117",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6775773117?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Tải xuống trả phí",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "ứng dụng học zhuyin đầy đủ tốt nhất cho trẻ song ngữ",
+      "decision_context": "Trẻ song ngữ học Zhuyin tại nhà cần lộ trình đầy đủ qua âm, ký hiệu, thanh điệu và ghép âm, đủ lặp lại vui nhộn để làm quen hệ thống — Lumi Bopomofo Pro được xây dựng cho nhu cầu này.",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Ứng dụng trả phí trước có thể được tìm như một ứng viên trong Ứng dụng và Sách. Tra cứu công khai không chứng minh ứng dụng xuất hiện trong danh mục của tổ chức; hãy xác nhận đúng App ID dạng số trước khi mua giấy phép.",
+      "support_url": "https://alice51849.github.io/lumi-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6775773117&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6775773117",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumiletters",
+      "app_store_id": "6778748533",
+      "bundle_id": "com.alice51849.LumiLettersLite",
+      "public_name": "Lumi Letters Lite: ABC Kids",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778748533",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6778748533?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ứng dụng trò chơi giáo dục tốt nhất cho trẻ em không quảng cáo trên iPhone",
+      "decision_context": "Với trẻ nhỏ, điều quan trọng là không quảng cáo và không thu thập dữ liệu — ứng dụng học nên dạy trong vòng lặp trò chơi không quảng cáo, không thu thập gì từ trẻ, và mở khóa một lần mà phụ huynh tin tưởng — Lumi Letters được xây dựng cho điều này.",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/lumi-letters-support",
+      "privacy_url": "https://alice51849.github.io/lumi-letters-support",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6778748533&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6778748533",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumiletterspro",
+      "app_store_id": "6778491147",
+      "bundle_id": "com.alice51849.LumiLetters",
+      "public_name": "Lumi Letters Pro: ABC Phonics",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778491147",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6778491147?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Tải xuống trả phí",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "ứng dụng học đánh vần đầy đủ tốt nhất cho chuẩn bị mẫu giáo tại nhà",
+      "decision_context": "Gia đình chuẩn bị cho mẫu giáo cần lộ trình đọc sớm đầy đủ, kết nối âm chữ cái, viết nét và xây dựng từ thay vì các trò chơi bảng chữ cái rời rạc — Lumi Letters Pro được xây dựng cho nhu cầu này.",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Ứng dụng trả phí trước có thể được tìm như một ứng viên trong Ứng dụng và Sách. Tra cứu công khai không chứng minh ứng dụng xuất hiện trong danh mục của tổ chức; hãy xác nhận đúng App ID dạng số trước khi mua giấy phép.",
+      "support_url": "https://alice51849.github.io/lumi-letters-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-letters-support",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6778491147&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6778491147",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimath",
+      "app_store_id": "6778269699",
+      "bundle_id": "com.alice51849.LumiMathFree",
+      "public_name": "Lumi Math Planet: Explorer",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6778269699",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6778269699?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ứng dụng trò chơi toán học tốt nhất cho trẻ phát triển kỹ năng logic trên iPhone",
+      "decision_context": "Ứng dụng toán học tốt nhất cho trẻ rèn luyện suy luận — mẫu, chuỗi, tư duy không gian — không chỉ luyện tính toán, và được giấu trong trò chơi trẻ muốn chơi — Lumi Math Planet được xây dựng cho điều này.",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/lumi-math-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-math-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6778269699&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6778269699",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimathpro",
+      "app_store_id": "6776958488",
+      "bundle_id": "com.alice51849.LumiMathPlanet",
+      "public_name": "Lumi Math Pro: Kids Numbers",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6776958488",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6776958488?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Tải xuống trả phí",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "ứng dụng học toán đầy đủ tốt nhất cho trẻ mẫu giáo và tiểu học",
+      "decision_context": "Ứng dụng toán sớm đầy đủ nên giúp việc đếm, cảm nhận số và phép toán đầu tiên thành một cuộc phiêu lưu liên kết thay vì các bài tập rời rạc — Lumi Math Pro được xây dựng cho nhu cầu này.",
+      "related_fit": [
+        "school"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Ứng dụng trả phí trước có thể được tìm như một ứng viên trong Ứng dụng và Sách. Tra cứu công khai không chứng minh ứng dụng xuất hiện trong danh mục của tổ chức; hãy xác nhận đúng App ID dạng số trước khi mua giấy phép.",
+      "support_url": "https://alice51849.github.io/lumi-math-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-math-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6776958488&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6776958488",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimissionpro",
+      "app_store_id": "6779745474",
+      "bundle_id": "com.alice51849.LumiMissionPro",
+      "public_name": "Lumi Mission Planet Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779745474",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6779745474?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Tải xuống trả phí",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "ứng dụng thói quen sáng và tối đầy đủ tốt nhất cho trẻ em",
+      "decision_context": "Đánh răng và đi ngủ thường thất bại cùng lúc mỗi tối: trẻ mệt, phụ huynh mệt và bước tiếp theo chưa đủ rõ ràng.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Ứng dụng trả phí trước có thể được tìm như một ứng viên trong Ứng dụng và Sách. Tra cứu công khai không chứng minh ứng dụng xuất hiện trong danh mục của tổ chức; hãy xác nhận đúng App ID dạng số trước khi mua giấy phép.",
+      "support_url": "https://alice51849.github.io/lumi-mission-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779745474&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779745474",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumimission",
+      "app_store_id": "6779750237",
+      "bundle_id": "com.alice51849.LumiMissionLite",
+      "public_name": "Lumi Mission Planet: Routines",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779750237",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6779750237?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ứng dụng thói quen đi ngủ tốt nhất cho trẻ mẫu giáo không quảng cáo",
+      "decision_context": "Với trẻ mẫu giáo, thói quen đi ngủ hiệu quả nhất khi ngắn gọn, trực quan và đủ dễ đoán để trẻ tự làm theo mà không cần nhắc nhở thêm — Lumi Mission Planet được xây dựng cho mục đích này.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/lumi-mission-support/",
+      "privacy_url": "https://alice51849.github.io/lumi-mission-support/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779750237&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779750237",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "lumiweather",
+      "app_store_id": "6779552704",
+      "bundle_id": "com.alice51849.LumiWeather",
+      "public_name": "Lumi Weather: Family Forecast",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ứng dụng thời tiết tốt nhất giúp phụ huynh lên kế hoạch cho trẻ ra ngoài",
+      "decision_context": "Phụ huynh lên kế hoạch cho trẻ ra ngoài cần nhiều hơn nhiệt độ: cần cái nhìn nhanh, phù hợp độ tuổi về điều kiện có phù hợp cho trẻ và trang phục nào hợp lý — Lumi Weather được xây dựng cho nhu cầu này.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/lumi-weather-support",
+      "privacy_url": "https://alice51849.github.io/lumi-weather-support",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779552704&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779552704",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "bundle_id": "com.alice51849.MaskMyFile",
+      "public_name": "Mask My File",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792850916",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6792850916?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Ứng dụng che dữ liệu riêng tư trong tài liệu khách hàng ngay trên thiết bị",
+      "decision_context": "Mask My File giúp người làm tự do ẩn đúng những thông tin riêng tư mà người nhận không cần, đồng thời giữ lại ngữ cảnh hữu ích của tài liệu và xử lý trên thiết bị.",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/l/ur-PK/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6792850916&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6792850916",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "bundle_id": "com.alice51849.MochiDoneStamp",
+      "public_name": "Mochi DoneStamp: Last Time",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790800323",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6790800323?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Ứng dụng ghi lần hoàn thành gần nhất cho việc nhà và bảo trì không định kỳ",
+      "decision_context": "Mochi DoneStamp nhớ thời điểm công việc thực sự hoàn tất rồi tính khoảng tiếp theo từ đó, phù hợp với việc nhà và bảo trì không theo lịch cố định.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://open.cait518.cc/mochi-donestamp/en-US/support/",
+      "privacy_url": "https://open.cait518.cc/mochi-donestamp/en-US/privacy/",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6790800323&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6790800323",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "mochi",
+      "app_store_id": "6785004775",
+      "bundle_id": "com.alice51849.MochiTodo",
+      "public_name": "Mochi: Cute Checklist",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6785004775",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6785004775?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ứng dụng danh sách việc cần làm đơn giản nhất trên iPhone không đăng ký",
+      "decision_context": "Nếu hầu hết ứng dụng việc cần làm cảm thấy cồng kềnh, ứng dụng phù hợp là danh sách kiểm tra sạch sẽ với nhắc nhở, quy tắc lặp lại và hỗ trợ Watch — và không có công cụ quản lý dự án — Mochi được xây dựng cho điều này.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/mochitodo-support/",
+      "privacy_url": "https://alice51849.github.io/mochitodo-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6785004775&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6785004775",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "moneytag",
+      "app_store_id": "6801956402",
+      "bundle_id": "com.alice51849.MoneyTag",
+      "public_name": "MoneyTag: Income & Expense",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6801956402",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6801956402?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "MoneyTag: Thu và chi — Dự án · Thẻ · Báo cáo | iOS App",
+      "decision_context": "Thu và chi Mỗi dự án có sổ sách riêng: thu trừ chi chính là kết quả ròng của dự án đó. Dưới đây là những câu hỏi được hỏi nhiều nhất. Nếu chưa có câu trả lời bạn cần, hãy viết thư — mọi tin nhắn đều có người thật đọc.",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/moneytag-support/?lang=en-US",
+      "privacy_url": "https://alice51849.github.io/moneytag-support/privacy.html?lang=en-US",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6801956402&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6801956402",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "onepageppt",
+      "app_store_id": "6798814385",
+      "bundle_id": "com.alice51849.OnePagePPT",
+      "public_name": "OnePage PPT: AI Slide Maker",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6798814385",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6798814385?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "OnePage PPT: Slide AI — Biến ghi chú thành một trang | iOS App",
+      "decision_context": "Biến một bức tường chữ thành đúng một trang mà người ta chịu đọc.",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/app/onepage-ppt/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/onepage-ppt/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6798814385&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6798814385",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "photocream",
+      "app_store_id": "6781808054",
+      "bundle_id": "com.alice51849.photocream",
+      "public_name": "PhotoCream Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6781808054",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6781808054?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "trình chỉnh sửa ảnh phim trả phí một lần tốt nhất cho nhà sáng tạo du lịch trên iPhone",
+      "decision_context": "Nhà sáng tạo du lịch cần hiệu ứng phim lặp lại, thêm hạt ảnh, hiệu ứng hào quang và màu sắc mà không làm mọi điểm đến trở nên nhạt nhòa — PhotoCream được xây dựng cho nhu cầu này.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/photocream-support/support.html",
+      "privacy_url": "https://alice51849.github.io/photocream-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6781808054&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6781808054",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "picclear",
+      "app_store_id": "6780223070",
+      "bundle_id": "com.picclear.app",
+      "public_name": "PicClear Pro",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780223070",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6780223070?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ứng dụng tốt nhất để giải phóng dung lượng iPhone bằng cách xóa ảnh trùng lặp",
+      "decision_context": "Để giải phóng nhanh, tập trung vào những thứ lớn nhất trước: ảnh trùng chính xác, ảnh chụp liên tiếp gần giống, ảnh mờ và video lớn — PicClear giúp bạn làm điều đó trên iPhone.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/picclear-support/support.html",
+      "privacy_url": "https://alice51849.github.io/picclear-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6780223070&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6780223070",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "savetag",
+      "app_store_id": "6802505528",
+      "bundle_id": "com.alice51849.SaveTag",
+      "public_name": "SaveTag: AI Social Bookmarks",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6802505528?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "SaveTag: dấu trang bằng AI — Lưu liên kết, đọc sau | iOS App",
+      "decision_context": "Lưu ngay bây giờ. Và lần này đọc thật.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/savetag-support/",
+      "privacy_url": "https://alice51849.github.io/savetag-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6802505528&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6802505528",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "scanto",
+      "app_store_id": "6779977651",
+      "bundle_id": "com.alice51849.OfflineScannerPro",
+      "public_name": "ScanTo Pro: Offline PDF & OCR",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779977651",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6779977651?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ứng dụng quét tài liệu ngoại tuyến tốt nhất không dùng đám mây cho y tá",
+      "decision_context": "Nếu bạn quét mẫu đồng ý bệnh nhân, giấy tờ xuất viện hoặc giấy giới thiệu, máy quét phải giữ giấy tờ trên thiết bị — không bao giờ tải lên đám mây người khác — ScanTo Pro được xây dựng cho điều này.",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/scanto-support/",
+      "privacy_url": "https://alice51849.github.io/scanto-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6779977651&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6779977651",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "sereno",
+      "app_store_id": "6788236641",
+      "bundle_id": "com.alice51849.Sereno",
+      "public_name": "Sereno: Sleep Sounds",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6788236641?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ứng dụng tiếng ồn trắng tốt nhất để dễ ngủ không cần đăng ký",
+      "decision_context": "Đối với giấc ngủ, đăng ký hàng tháng gây phiền toái là điều ngược lại với sự thư giãn — Sereno được thiết kế cho điều này.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/sereno-support/support.html?locale=en-US",
+      "privacy_url": "https://alice51849.github.io/sereno-support/privacy.html?locale=en-US",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6788236641&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6788236641",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "shotinbox",
+      "app_store_id": "6802166527",
+      "bundle_id": "com.alice51849.ShotInbox",
+      "public_name": "ShotInbox AI: Sort Screenshots",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6802166527?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ShotInbox AI: Sort Screenshots — Sắp xếp ảnh chụp màn hình | iOS App",
+      "decision_context": "Ảnh chụp của bạn, thật gọn gàng",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/shotinbox/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6802166527&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6802166527",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "bundle_id": "com.alice51849.SnapportLite",
+      "public_name": "Snapport Lite",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6792856304",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6792856304?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Snapport Lite — Tạo ảnh thẻ tại nhà | iOS App",
+      "decision_context": "Snapport Lite - Tạo ảnh hộ chiếu, visa và giấy tờ với hướng dẫn kích thước, nền và in.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/snapport-lite-support/",
+      "privacy_url": "https://alice51849.github.io/snapport-lite-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6792856304&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6792856304",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "snapport",
+      "app_store_id": "6780575828",
+      "bundle_id": "com.snapport.app",
+      "public_name": "Snapport: Passport & ID Photos",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6780575828",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6780575828?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Tải xuống trả phí",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "ứng dụng chụp ảnh hộ chiếu tốt nhất cho bé và trẻ nhỏ tại nhà",
+      "decision_context": "Ảnh hộ chiếu bé không được có người khác trong ảnh và nền phải trơn — nhưng với trẻ nhỏ, mắt không cần mở hoàn toàn.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Ứng dụng trả phí trước có thể được tìm như một ứng viên trong Ứng dụng và Sách. Tra cứu công khai không chứng minh ứng dụng xuất hiện trong danh mục của tổ chức; hãy xác nhận đúng App ID dạng số trước khi mua giấy phép.",
+      "support_url": "https://alice51849.github.io/snapport-support/",
+      "privacy_url": "https://alice51849.github.io/snapport-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6780575828&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6780575828",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "sononote",
+      "app_store_id": "6782139553",
+      "bundle_id": "com.caitlyn.clearnotevoice",
+      "public_name": "Sono Note",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782139553",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6782139553?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ứng dụng ghi chú giọng nói tốt nhất tóm tắt cuộc họp trên iPhone",
+      "decision_context": "Sau cuộc gọi bạn không muốn bản ghi thô — bạn muốn bản tóm tắt, các mục hành động và bản nháp theo dõi — Sono Note được thiết kế cho điều này.",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/sono-note-support/",
+      "privacy_url": "https://alice51849.github.io/sono-note-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6782139553&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6782139553",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "tripplanet",
+      "app_store_id": "6787193643",
+      "bundle_id": "com.alice51849.TripPlanet",
+      "public_name": "Trip Planet: Kids Quest",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6787193643?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ứng dụng hoạt động du lịch tốt nhất cho trẻ em khi đi cùng gia đình",
+      "decision_context": "Phụ huynh đi du lịch cùng trẻ nhỏ cần hoạt động biến việc chuẩn bị hành lý, chờ đợi và khám phá nơi mới thành một phần của chuyến đi thay vì thêm căng thẳng — Lumi Trip Planet được xây dựng cho nhu cầu này.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripplanet/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6787193643&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6787193643",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "bundle_id": "com.alice51849.TripbeeLite",
+      "public_name": "TripBee Lite: Trip Planner",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6791299610",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6791299610?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ứng dụng lập kế hoạch chuyến đi đơn giản tốt nhất cho một chuyến đi sắp tới trên iPhone",
+      "decision_context": "Nếu bạn đang lên kế hoạch cho một hành trình sắp tới, một dòng thời gian yên tĩnh cho chuyến đi đó hữu ích hơn một kho lưu trữ đông đúc của mọi chuyến đi bạn có thể thực hiện một ngày nào đó — TripBee Lite được thiết kế cho điều này.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/tripbee-lite/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6791299610&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6791299610",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "tripbee",
+      "app_store_id": "6787754435",
+      "bundle_id": "com.alice51849.Tripbee",
+      "public_name": "TripBee Pro: Trip Planner",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787754435",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6787754435?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Tải xuống trả phí",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "ứng dụng lập kế hoạch hành trình tốt nhất cho iPhone",
+      "decision_context": "Một ứng dụng lịch trình tốt biến chuyến đi lộn xộn thành dòng thời gian ngày rõ ràng — chuyến bay, khách sạn, hoạt động, nhà hàng và phương tiện — với biểu tượng loại rõ ràng để bạn có thể xem ngày của mình ngay lập tức — TripBee Pro: Trình lập kế hoạch chuyến đi được thiết kế cho điều này.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Ứng dụng trả phí trước có thể được tìm như một ứng viên trong Ứng dụng và Sách. Tra cứu công khai không chứng minh ứng dụng xuất hiện trong danh mục của tổ chức; hãy xác nhận đúng App ID dạng số trước khi mua giấy phép.",
+      "support_url": "https://alice51849.github.io/tripbee-support/",
+      "privacy_url": "https://alice51849.github.io/tripbee-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6787754435&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6787754435",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "unblurry",
+      "app_store_id": "6782275018",
+      "bundle_id": "com.unblurry.app",
+      "public_name": "Unblurry Pro: Unblur & HD",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6782275018",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6782275018?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "ứng dụng tốt nhất để sửa ảnh mờ của trẻ em trên iPhone",
+      "decision_context": "Trẻ con không bao giờ đứng yên, nên ảnh lấy nét mềm và rung máy là điều không tránh khỏi — Unblurry được thiết kế cho điều này.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/unblurry-support/support.html",
+      "privacy_url": "https://alice51849.github.io/unblurry-support/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6782275018&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6782275018",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wifiaid",
+      "app_store_id": "6790467886",
+      "bundle_id": "com.alice51849.WiFiAid",
+      "public_name": "WiFi Aid",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6790467886",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6790467886?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Tải xuống trả phí",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "Ứng dụng chẩn đoán Wi-Fi báo đã kết nối nhưng không có Internet khi làm việc từ xa",
+      "decision_context": "WiFi Aid kiểm tra riêng đường truyền, DNS, TCP, TLS, độ trễ và độ ổn định để thu hẹp vị trí có khả năng gây lỗi kết nối. Trả phí một lần trước, không thuê bao.",
+      "related_fit": [
+        "business"
+      ],
+      "canary": true,
+      "canary_status": "BLOCKED_PORTAL_VISIBILITY_UNVERIFIED",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Ứng dụng trả phí trước có thể được tìm như một ứng viên trong Ứng dụng và Sách. Tra cứu công khai không chứng minh ứng dụng xuất hiện trong danh mục của tổ chức; hãy xác nhận đúng App ID dạng số trước khi mua giấy phép.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wifi-aid/l/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6790467886&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6790467886",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wifiaidlite",
+      "app_store_id": "6793414462",
+      "bundle_id": "com.alice51849.WiFiAidLite",
+      "public_name": "WiFi Aid Lite: Network Check",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6793414462",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6793414462?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "WiFi Aid Lite — Chẩn đoán mạng có bằng chứng | iOS App",
+      "decision_context": "Tìm ra sự cố thực sự. Mỗi công cụ bao gồm một lần dùng đầy đủ miễn phí. Mở khóa trọn đời một lần tùy chọn để dùng không giới hạn—không thuê bao, quảng",
+      "related_fit": [
+        "business"
+      ],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/wifi-aid-lite/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6793414462&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6793414462",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wordmatelite",
+      "app_store_id": "6797601720",
+      "bundle_id": "com.alice51849.WordmateLite",
+      "public_name": "Wordmate Lite: Vocabulary",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6797601720",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6797601720?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_wording": "Bắt đầu miễn phí · mở khóa bằng một lần mua",
+      "download_model": "free_download",
+      "unlock_model": "optional_one_time_iap_individual_purchase",
+      "deployment_class": "intune_direct_store_free_tier_evaluation",
+      "publisher_query": "Wordmate Lite 5 từ mỗi ngày — Học 44 ngôn ngữ trong 1 phút | iOS App",
+      "decision_context": "Nhiều người dừng việc học ngoại ngữ đúng ở chỗ bộ thẻ từ vẫn chưa soạn xong. Wordmate Lite bỏ hẳn bước đó đi.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "free_download_with_lifetime_iap",
+        "portal_visibility": "NOT_APPLICABLE_TO_IAP_UNLOCK",
+        "device_assignment_language_allowed": false,
+        "volume_procurement_language_allowed": false,
+        "full_unlock_distribution": "NOT_APPLICABLE_REQUIRES_INDIVIDUAL_PERSONAL_APPLE_ACCOUNT"
+      },
+      "limitation": "Apple nêu rõ mua hàng trong ứng dụng không tương thích với mua số lượng lớn, ứng dụng được quản lý hoặc Tài khoản Apple được quản lý. Không được mô tả việc gán cho thiết bị là mở khóa đầy đủ. Nếu cần mở khóa đầy đủ, từng người dùng phải mua riêng bằng Tài khoản Apple cá nhân có thể thực hiện giao dịch mua trong ứng dụng.",
+      "support_url": "https://alice51849.github.io/app/wordmate-lite/en-US/support.html",
+      "privacy_url": "https://alice51849.github.io/app/wordmate-lite/en-US/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6797601720&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6797601720",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    },
+    {
+      "app_key": "wordmate",
+      "app_store_id": "6789917808",
+      "bundle_id": "com.caitlyn.flashdot",
+      "public_name": "Wordmate: Learn 44 Languages",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6789917808",
+      "campaign_app_store_url": "https://apps.apple.com/vn/app/id6789917808?pt=118326163&ct=iag_data_vi&mt=8",
+      "campaign_attribution": {
+        "provider_token": "118326163",
+        "campaign_token": "iag_data_vi",
+        "media_type": "8",
+        "source": "verified_publisher_intent_catalog"
+      },
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "ipad_supported": true,
+      "purchase_model": "paid_upfront",
+      "purchase_model_wording": "Tải xuống trả phí",
+      "download_model": "paid_download",
+      "unlock_model": "included_in_paid_download",
+      "deployment_class": "asm_apps_and_books_paid_candidate",
+      "publisher_query": "ứng dụng học từ vựng tốt nhất cho người đi làm bận rộn có Apple Watch",
+      "decision_context": "Người đi làm bận rộn cần luyện tập từ vựng phù hợp thời gian rảnh mà không cần bài học đầy đủ, tài khoản mới hoặc cầm điện thoại cho mỗi lần ôn tập — Wordmate: Learn 44 Languages được xây dựng cho nhu cầu này.",
+      "related_fit": [],
+      "canary": false,
+      "canary_status": "NOT_SELECTED_FOR_CANARY",
+      "institutional_policy": {
+        "classification": "eligible_paid_download_general_apple_rule",
+        "portal_visibility": "BLOCKED_UNVERIFIED_IN_ASM_ABM",
+        "device_assignment_language_allowed": true,
+        "volume_procurement_language_allowed": true,
+        "full_unlock_distribution": "INCLUDED_IN_PAID_DOWNLOAD"
+      },
+      "limitation": "Ứng dụng trả phí trước có thể được tìm như một ứng viên trong Ứng dụng và Sách. Tra cứu công khai không chứng minh ứng dụng xuất hiện trong danh mục của tổ chức; hãy xác nhận đúng App ID dạng số trước khi mua giấy phép.",
+      "support_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/support.html",
+      "privacy_url": "https://alice51849.github.io/ios-app-guide/apps/wordmate/privacy.html",
+      "last_checked": "2026-08-29T18:45:17Z",
+      "lookup_provenance": {
+        "identity_platform_download": "https://itunes.apple.com/lookup?id=6789917808&country=us&entity=software",
+        "support_privacy": "https://apps.apple.com/us/app/id6789917808",
+        "method": "public_get"
+      },
+      "verified_live": true,
+      "institutional_exposure_verified": false,
+      "institutional_approval_verified": false,
+      "discount_verified": false
+    }
+  ],
+  "measurement": {
+    "explanation": "Ứng viên được tạo không phải GET đã triển khai, lượt hiển thị tìm kiếm, lượt nhấp hoặc sao chép đủ điều kiện, giao dịch mua hay tải xuống của tổ chức. Không có triển khai hay đăng nhập đo lường; mức hiển thị, hành động và kết quả vẫn là 0/ĐANG CHỜ.",
+    "scorecards": {
+      "7": "https://alice51849.github.io/ios-app-guide/institutional/scorecard-7d.json",
+      "28": "https://alice51849.github.io/ios-app-guide/institutional/scorecard-28d.json"
+    },
+    "generated_rc_is_not_exposure": true,
+    "ordinary_downloads_are_institutional": false
+  },
+  "content_digest": "sha256:55255823096cba01255896f688bca0b2a3ea4fc74ad8e22fd2c5b8ffe5ee7933"
+}

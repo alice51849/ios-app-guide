@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://alice51849.github.io/ios-app-guide/institutional/institutional-scorecard.schema.json",
+  "x-schema-version": 1,
+  "title": "Institutional procurement read-only scorecard",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schema_version",
+    "release_status",
+    "window_days",
+    "window_start",
+    "window_end",
+    "content_digest",
+    "privacy_rule",
+    "stage_contract",
+    "metrics"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "https://alice51849.github.io/ios-app-guide/institutional/institutional-scorecard.schema.json"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "release_status": {
+      "const": "CANDIDATE_NOT_DEPLOYED"
+    },
+    "window_days": {
+      "enum": [
+        7,
+        28
+      ]
+    },
+    "window_start": {
+      "type": "string",
+      "format": "date"
+    },
+    "window_end": {
+      "type": "string",
+      "format": "date"
+    },
+    "content_digest": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "privacy_rule": {
+      "type": "object"
+    },
+    "stage_contract": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object"
+      }
+    },
+    "metrics": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": [
+          "stage",
+          "value",
+          "status",
+          "source",
+          "is_institutional_outcome"
+        ],
+        "properties": {
+          "stage": {
+            "type": "string"
+          },
+          "value": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "status": {
+            "enum": [
+              "VERIFIED",
+              "PENDING"
+            ]
+          },
+          "source": {
+            "type": "string"
+          },
+          "is_institutional_outcome": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

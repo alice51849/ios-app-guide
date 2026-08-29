@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "active": false,
+  "growth_engine_base": "baf785083a8681b2c7747052d1559c0f06b8df19",
+  "growth_engine_candidate": "3a57716f06d99457ffe5307944495a2293f2d763",
+  "guide_base": "c59b203952fb7368d3e5237f566deb02ffc50142",
+  "activation_path": ".github/workflows/cloud-health-daily.yml",
+  "candidate_path": ".github/workflow-candidates/cloud-health-daily.yml",
+  "schedule_utc": "41 3 * * *",
+  "runtime": "self-hosted macOS",
+  "persistent_output": "$HOME/.growth-private/cloud-health-daily",
+  "network_methods": [
+    "GET"
+  ],
+  "model_used": false,
+  "dispatch_or_rerun": false,
+  "http_post_by_generator": false
+}

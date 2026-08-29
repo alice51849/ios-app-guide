@@ -1,0 +1,36 @@
+name: Daily read-only cloud health
+
+# Candidate only: GitHub ignores .github/workflow-candidates/.
+# Move to .github/workflows/ only after explicit production approval.
+on:
+  schedule:
+    - cron: "41 3 * * *"
+
+permissions:
+  actions: read
+  contents: read
+
+concurrency:
+  group: cloud-health-daily-read-only
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: [self-hosted, macOS]
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+      - name: Generate fresh fail-closed evidence
+        env:
+          PYTHONPATH: _engine
+        run: |
+          umask 077
+          python3 _engine/cloud_health/run.py \
+            --config _engine/cloud_health/config.json \
+            --output-dir "$HOME/.growth-private/cloud-health-daily"
+      - name: Verify the atomic bundle
+        run: |
+          cd "$HOME/.growth-private/cloud-health-daily"
+          shasum -a 256 -c cloud-health.sha256
+          test "$(jq -r '.constraints_observed.network_methods | join(\",\")' cloud-health.json)" = GET
+          test "$(jq -r '.constraints_observed.model_used' cloud-health.json)" = false

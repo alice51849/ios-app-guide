@@ -69,18 +69,25 @@ def write_text_if_changed(path: Path, content: str) -> bool:
     return True
 
 
-def write_gallery_if_changed(path: Path, content: str) -> bool:
+def _final_gallery_content(path: Path, content: str) -> str:
     try:
         previous = path.read_text(encoding="utf-8")
     except FileNotFoundError:
         previous = ""
     if previous:
-        content = sync_standard_site.preserve_managed_links(
+        return sync_standard_site.preserve_managed_links(
             previous,
             content,
             label=str(path),
         )
-    return write_text_if_changed(path, content)
+    return content
+
+
+def write_gallery_if_changed(path: Path, content: str) -> bool:
+    return write_text_if_changed(
+        path,
+        _final_gallery_content(path, content),
+    )
 
 
 def visual_campaign_token(locale: str) -> str:
@@ -707,6 +714,18 @@ def _manifest_record(
     }
 
 
+def _gallery_manifest_record(
+    locale: str,
+    source: str,
+    site: str = SITE,
+) -> dict[str, str]:
+    return {
+        "locale": locale,
+        "gallery_url": gallery_url(locale, site),
+        "sha256": hashlib.sha256(source.encode("utf-8")).hexdigest(),
+    }
+
+
 def _content_digest(records: list[dict[str, Any]]) -> str:
     fields = (
         "locale",
@@ -841,6 +860,8 @@ def build(
     content_digest = _content_digest(records)
     generation_digest = _generation_digest(content_digest)
     manifest_path = pages / "data" / MANIFEST_NAME
+    source_dataset_path = pages / "data" / f"{catalog.SLUG}.json"
+    source_digest = hashlib.sha256(source_dataset_path.read_bytes()).hexdigest()
     modified = _stable_modified(manifest_path, generation_digest, today)
     manifest_records: list[dict[str, Any]] = []
     changed = 0
@@ -871,31 +892,42 @@ def build(
             stale.unlink()
             changed += 1
 
+    manifest_galleries: list[dict[str, str]] = []
     root_records = records_by_locale["en-US"]
+    root_gallery_path = pages / gallery_relative_path("en")
+    root_gallery_source = _final_gallery_content(
+        root_gallery_path,
+        render_gallery(
+            "en",
+            root_records,
+            ui_i18n["en-US"],
+            modified,
+            site,
+        ),
+    )
     changed += int(
-        write_gallery_if_changed(
-            pages / gallery_relative_path("en"),
+        write_text_if_changed(root_gallery_path, root_gallery_source)
+    )
+    manifest_galleries.append(
+        _gallery_manifest_record("en", root_gallery_source, site)
+    )
+    for locale in OFFICIAL_LOCALES:
+        gallery_path = pages / gallery_relative_path(locale)
+        gallery_source = _final_gallery_content(
+            gallery_path,
             render_gallery(
-                "en",
-                root_records,
-                ui_i18n["en-US"],
+                locale,
+                records_by_locale[locale],
+                ui_i18n[locale],
                 modified,
                 site,
             ),
         )
-    )
-    for locale in OFFICIAL_LOCALES:
         changed += int(
-            write_gallery_if_changed(
-                pages / gallery_relative_path(locale),
-                render_gallery(
-                    locale,
-                    records_by_locale[locale],
-                    ui_i18n[locale],
-                    modified,
-                    site,
-                ),
-            )
+            write_text_if_changed(gallery_path, gallery_source)
+        )
+        manifest_galleries.append(
+            _gallery_manifest_record(locale, gallery_source, site)
         )
 
     manifest = {
@@ -913,6 +945,7 @@ def build(
             "url": site,
         },
         "source_dataset": f"{site}/data/{catalog.SLUG}.json",
+        "source_sha256": source_digest,
         "content_digest": content_digest,
         "generation_digest": generation_digest,
         "ordering": "official_locale_order_then_alphabetical_app_name",
@@ -920,6 +953,7 @@ def build(
         "locale_count": len(OFFICIAL_LOCALES),
         "image_count": len(manifest_records),
         "gallery_count": len(OFFICIAL_LOCALES) + 1,
+        "galleries": manifest_galleries,
         "publisher_authored": True,
         "measured_search_volume": False,
         "is_ranking": False,

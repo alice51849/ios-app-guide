@@ -71,6 +71,7 @@ def sync_standard_site(env):
 def reconcile_lastmod_after_rebase(env):
     sync_standard_site(env)
     require([PY, os.path.join(HERE, "reconcile_answer_semantics.py")], env=env)
+    require([PY, os.path.join(HERE, "publisher_intent_visuals.py")], env=env)
     require([PY, os.path.join(HERE, "gen_sitemap_lastmod.py")], env=env)
     require(["git", "add", "-A"], cwd=PAGES)
     returncode, output = run(
@@ -326,6 +327,7 @@ def main():
     require([PY, os.path.join(HERE, "gen_feed.py")], env=env)
     sync_standard_site(env)
     require([PY, os.path.join(HERE, "reconcile_answer_semantics.py")], env=env)
+    require([PY, os.path.join(HERE, "publisher_intent_visuals.py")], env=env)
     require([PY, os.path.join(HERE, "gen_sitemap_lastmod.py")], env=env)
     # 發布前的硬閘門:可索引頁一頁都不可以從首頁點不到。這是量測不是產生 ——
     # 它擋的是「某支下游產生器把連結圖洗掉,結果我們把孤兒站推上線」。

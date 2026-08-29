@@ -160,6 +160,7 @@ jobs:
           python3 gen_link_hubs.py
           python3 gen_locale_indexation.py
           python3 gen_link_hubs.py --check
+          python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
           python3 audit_link_depth.py --max-indexable-orphans 0
           cd "$GITHUB_WORKSPACE"
           python3 _engine/geo/gen_sitemap_lastmod.py \
@@ -305,6 +306,8 @@ jobs:
             --timeout 10 \
             --retries 3 \
             --retry-delay 2
+           python3 _engine/geo/publisher_intent_visuals.py \
+             --today "$GEO_BUILD_DATE"
            python3 _engine/geo/gen_sitemap_lastmod.py \
             --today "$GEO_BUILD_DATE" \
             --workflow-started-at "$GEO_WORKFLOW_STARTED_AT" \
@@ -334,6 +337,7 @@ jobs:
               python3 gen_link_hubs.py
               python3 gen_locale_indexation.py
               python3 gen_link_hubs.py --check
+              python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
               python3 audit_link_depth.py --max-indexable-orphans 0
               cd "$GITHUB_WORKSPACE"
               python3 _engine/geo/gen_sitemap_lastmod.py \
@@ -445,6 +449,7 @@ jobs:
           # indexable path + canonical URL set; convergence still runs.
           python3 dedupe_locale_meta.py --apply
           python3 close_sitemap_graph.py
+          python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
           python3 audit_link_depth.py --max-indexable-orphans 0
           cd "$GITHUB_WORKSPACE"
           python3 _engine/geo/gen_sitemap_lastmod.py \
@@ -491,6 +496,7 @@ jobs:
                 cd _engine/geo
                 python3 dedupe_locale_meta.py --apply
                 python3 close_sitemap_graph.py
+                python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
                 python3 audit_link_depth.py --max-indexable-orphans 0
                 cd "$GITHUB_WORKSPACE"
                 python3 _engine/geo/gen_sitemap_lastmod.py \

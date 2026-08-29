@@ -33,6 +33,11 @@ PUBLISHER_VISUAL_SITEMAP = Path("sitemap_intent_visuals.xml")
 PUBLISHER_VISUAL_MANIFEST = Path(
     "data/lumi-studio-publisher-intent-visuals.json"
 )
+PUBLISHER_VISUAL_SOURCE_DATASET = Path(
+    "data/lumi-studio-publisher-search-intent-catalog.json"
+)
+PUBLISHER_VISUAL_LOCALE_COUNT = 50
+PUBLISHER_VISUAL_GALLERY_COUNT = PUBLISHER_VISUAL_LOCALE_COUNT + 1
 URL_BLOCK_RE = re.compile(
     r"(?P<open><url(?:\s[^>]*)?>)(?P<body>.*?)(?P<close></url>)",
     flags=re.DOTALL,
@@ -318,16 +323,16 @@ def git_history_dates(
     pages: Path,
     wanted: set[str],
     *,
-    reference_time: datetime | str | None = None,
+    validation_time: datetime | str | None = None,
 ) -> dict[str, str]:
     if not wanted:
         return {}
-    reference = (
-        _utc_instant(reference_time, label="Git validation time")
-        if reference_time is not None
+    validation = (
+        _utc_instant(validation_time, label="Git validation time")
+        if validation_time is not None
         else datetime.now(timezone.utc)
     )
-    latest_allowed = reference + MAX_CLOCK_SKEW
+    latest_allowed = validation + MAX_CLOCK_SKEW
     pathspecs = sorted(wanted)
     if len(pathspecs) > 512 or sum(map(len, pathspecs)) > 100000:
         pathspecs = ["."]
@@ -365,7 +370,7 @@ def git_history_dates(
             if commit_time > latest_allowed:
                 raise ValueError(
                     "Git commit timestamp exceeds clock-skew contract: "
-                    f"{commit_time.isoformat()} > {reference.isoformat()} + "
+                    f"{commit_time.isoformat()} > {validation.isoformat()} + "
                     f"{int(MAX_CLOCK_SKEW.total_seconds())}s"
                 )
             commit_date = commit_time.date().isoformat()
@@ -407,16 +412,17 @@ def _load_state(path: Path, max_date: str) -> dict[str, Any]:
     return state
 
 
-def _publisher_visual_lastmod(
+def _validate_publisher_visual_sitemap(
     sitemap: Path,
     pages: Path,
     locations: list[str],
     targets: dict[str, Path],
     url_records: dict[str, dict[str, str]],
+    site: str,
     max_date: str,
-) -> str | None:
+) -> None:
     if _relative_path(sitemap, pages) != PUBLISHER_VISUAL_SITEMAP.as_posix():
-        return None
+        return
     manifest_path = pages / PUBLISHER_VISUAL_MANIFEST
     try:
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
@@ -432,8 +438,15 @@ def _publisher_visual_lastmod(
     locale_count = manifest.get("locale_count")
     image_count = manifest.get("image_count")
     gallery_count = manifest.get("gallery_count")
+    galleries = manifest.get("galleries")
+    source_path = pages / PUBLISHER_VISUAL_SOURCE_DATASET
     if (
         not _valid_date(modified, today=max_date)
+        or manifest.get("url") != f"{site}/visuals/"
+        or manifest.get("source_dataset")
+        != f"{site}/{PUBLISHER_VISUAL_SOURCE_DATASET.as_posix()}"
+        or not source_path.is_file()
+        or not SHA256_RE.fullmatch(str(manifest.get("source_sha256", "")))
         or not SHA256_RE.fullmatch(
             str(manifest.get("content_digest", ""))
         )
@@ -444,16 +457,114 @@ def _publisher_visual_lastmod(
         or not isinstance(app_count, int)
         or app_count <= 0
         or not isinstance(locale_count, int)
-        or locale_count <= 0
+        or locale_count != PUBLISHER_VISUAL_LOCALE_COUNT
         or not isinstance(image_count, int)
         or image_count != len(records)
         or image_count != app_count * locale_count
         or not isinstance(gallery_count, int)
+        or gallery_count != PUBLISHER_VISUAL_GALLERY_COUNT
         or gallery_count != locale_count + 1
         or gallery_count != len(locations)
+        or not isinstance(galleries, list)
+        or gallery_count != len(galleries)
         or len(set(locations)) != len(locations)
     ):
         raise ValueError("Invalid publisher visual manifest contract")
+    if _sha256(source_path) != manifest["source_sha256"]:
+        raise ValueError(
+            "Publisher visual source digest does not match manifest"
+        )
+
+    galleries_by_locale: dict[str, dict[str, str]] = {}
+    galleries_by_url: dict[str, dict[str, str]] = {}
+    for gallery in galleries:
+        if not isinstance(gallery, dict):
+            raise ValueError("Invalid publisher visual gallery contract")
+        locale = gallery.get("locale")
+        gallery_url = gallery.get("gallery_url")
+        digest = gallery.get("sha256")
+        if (
+            not isinstance(locale, str)
+            or not locale
+            or not isinstance(gallery_url, str)
+            or not gallery_url
+            or not SHA256_RE.fullmatch(str(digest or ""))
+            or locale in galleries_by_locale
+            or gallery_url in galleries_by_url
+        ):
+            raise ValueError("Invalid publisher visual gallery contract")
+        normalized = {
+            "locale": locale,
+            "gallery_url": gallery_url,
+            "sha256": str(digest),
+        }
+        galleries_by_locale[locale] = normalized
+        galleries_by_url[gallery_url] = normalized
+
+    root_gallery = galleries_by_locale.get("en")
+    localized_locales = set(galleries_by_locale) - {"en"}
+    if (
+        root_gallery is None
+        or root_gallery["gallery_url"] != f"{site}/visuals/"
+        or len(localized_locales) != locale_count
+        or set(galleries_by_url) != set(locations)
+    ):
+        raise ValueError("Invalid publisher visual gallery identity")
+
+    record_counts = {locale: 0 for locale in localized_locales}
+    record_pairs: set[tuple[str, str]] = set()
+    image_urls: set[str] = set()
+    for item in records:
+        if not isinstance(item, dict):
+            raise ValueError("Invalid publisher visual manifest record")
+        locale = item.get("locale")
+        app_key = item.get("app_key")
+        gallery_url = item.get("gallery_url")
+        image_url = item.get("image_url")
+        image_target: Path | None = None
+        if isinstance(image_url, str) and image_url:
+            try:
+                image_target = _owned_target(image_url, pages, site)
+            except ValueError as error:
+                raise ValueError(
+                    "Invalid publisher visual manifest record"
+                ) from error
+        required_strings = (
+            locale,
+            app_key,
+            item.get("app_store_id"),
+            gallery_url,
+            image_url,
+            item.get("canonical_guide_url"),
+            item.get("app_store_url"),
+        )
+        if (
+            any(
+                not isinstance(value, str) or not value
+                for value in required_strings
+            )
+            or locale not in localized_locales
+            or gallery_url
+            != galleries_by_locale[str(locale)]["gallery_url"]
+            or not SHA256_RE.fullmatch(str(item.get("sha256", "")))
+            or image_target is None
+            or _relative_path(image_target, pages)
+            != f"visuals/{locale}/{app_key}.svg"
+            or _sha256(image_target) != item["sha256"]
+            or (str(locale), str(app_key)) in record_pairs
+            or str(image_url) in image_urls
+        ):
+            raise ValueError("Invalid publisher visual manifest record")
+        record_counts[str(locale)] += 1
+        record_pairs.add((str(locale), str(app_key)))
+        image_urls.add(str(image_url))
+    if (
+        set(record_counts) != localized_locales
+        or any(count != app_count for count in record_counts.values())
+        or len(record_pairs) != image_count
+        or len(image_urls) != image_count
+    ):
+        raise ValueError("Invalid publisher visual manifest record coverage")
 
     for location in locations:
         target = targets.get(location)
@@ -462,15 +573,15 @@ def _publisher_visual_lastmod(
             raise ValueError(
                 f"Publisher visual sitemap has an unmanaged URL: {location}"
             )
+        gallery = galleries_by_url[location]
+        locale = gallery["locale"]
         relative = _relative_path(target, pages)
-        parts = Path(relative).parts
-        if not (
-            relative == "visuals/index.html"
-            or (
-                len(parts) == 3
-                and parts[1:] == ("visuals", "index.html")
-            )
-        ):
+        expected_relative = (
+            "visuals/index.html"
+            if locale == "en"
+            else f"{locale}/visuals/index.html"
+        )
+        if relative != expected_relative:
             raise ValueError(
                 f"Publisher visual sitemap has an invalid gallery: {relative}"
             )
@@ -482,12 +593,11 @@ def _publisher_visual_lastmod(
                 "Publisher visual gallery date does not match manifest: "
                 f"{relative}"
             )
-        if record["lastmod"] > modified:
+        if _sha256(target) != gallery["sha256"]:
             raise ValueError(
-                "Publisher visual manifest is older than gallery content: "
-                f"{relative} ({modified} < {record['lastmod']})"
+                "Publisher visual gallery digest does not match manifest: "
+                f"{relative}"
             )
-    return modified
 
 
 def _record_for(
@@ -562,13 +672,21 @@ def generate(
     pages = pages.resolve()
     _resolved_directory.cache_clear()
     site = site.rstrip("/")
+    validation_instant = (
+        _utc_instant(validation_time, label="validation time")
+        if validation_time is not None
+        else datetime.now(timezone.utc)
+    )
     reference_time = _validation_reference(
         workflow_started_at,
-        validation_time=validation_time,
+        validation_time=validation_instant,
     )
     reference_date = reference_time.date().isoformat()
-    # The build date stays deterministic; the reference date independently
-    # validates state and Git facts at the instant this pass actually runs.
+    max_date = (
+        validation_instant + MAX_CLOCK_SKEW
+    ).date().isoformat()
+    # The build date stays deterministic. Git timestamps are bounded once by
+    # validation_instant + MAX_CLOCK_SKEW, even when the workflow floor wins.
     today = today or reference_date
     if not _valid_date(today, today=reference_date):
         raise ValueError(
@@ -579,9 +697,9 @@ def generate(
         if state_path is not None
         else pages / STATE_RELATIVE_PATH
     )
-    state = _load_state(state_path, reference_date)
+    state = _load_state(state_path, max_date)
     fallback_state = (
-        _load_state(fallback_state_path.resolve(), reference_date)
+        _load_state(fallback_state_path.resolve(), max_date)
         if fallback_state_path is not None
         else {"version": 1, "urls": {}, "sitemaps": {}}
     )
@@ -717,12 +835,12 @@ def generate(
         history_dates = git_history_dates(
             pages,
             missing_history,
-            reference_time=reference_time,
+            validation_time=validation_instant,
         )
     for path, value in history_dates.items():
         if path in wanted_paths and not _valid_date(
             value,
-            today=reference_date,
+            today=max_date,
         ):
             raise ValueError(f"Invalid Git history date for {path}: {value}")
 
@@ -735,7 +853,7 @@ def generate(
             history_dates,
             dirty_paths,
             today,
-            reference_date,
+            max_date,
             target_digests[_relative_path(target, pages)],
         )
         for url, target in sorted(targets.items())
@@ -744,13 +862,14 @@ def generate(
     changed_sitemaps: set[str] = set()
     changed_dates = 0
     for sitemap, source, blocks, locations in documents:
-        managed_lastmod = _publisher_visual_lastmod(
+        _validate_publisher_visual_sitemap(
             sitemap,
             pages,
             locations,
             targets,
             url_records,
-            reference_date,
+            site,
+            max_date,
         )
         replacements: dict[int, str] = {}
         for index, (block, location) in enumerate(zip(blocks, locations)):
@@ -761,7 +880,7 @@ def generate(
             updated = _with_lastmod(
                 sitemap,
                 body,
-                managed_lastmod or record["lastmod"],
+                record["lastmod"],
             )
             if updated != body:
                 changed_dates += 1
@@ -800,7 +919,7 @@ def generate(
                 history_dates,
                 dirty_paths | changed_sitemaps,
                 today,
-                reference_date,
+                max_date,
                 current_digest,
             )
             sitemap_records[location] = record

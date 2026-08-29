@@ -23158,7 +23158,7 @@ class GeneratorTests(unittest.TestCase):
             ),
         )
         self.assertEqual(
-            17,
+            22,
             workflow.count('--today "$GEO_BUILD_DATE"'),
         )
         self.assertEqual(
@@ -23209,6 +23209,7 @@ class GeneratorTests(unittest.TestCase):
             "gen_link_hubs.py",
             "gen_locale_indexation.py",
             "gen_link_hubs.py --check",
+            "publisher_intent_visuals.py",
             "audit_link_depth.py --max-indexable-orphans 0",
             "gen_sitemap_lastmod.py",
         ]
@@ -23463,7 +23464,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(3, workflow.count("portfolio_app_catalog_api.py"))
         self.assertEqual(3, workflow.count("publisher_intent_catalog.py"))
         self.assertEqual(3, workflow.count("portfolio_offer_catalog.py"))
-        self.assertEqual(3, workflow.count("publisher_intent_visuals.py"))
+        self.assertEqual(8, workflow.count("publisher_intent_visuals.py"))
         self.assertEqual(3, workflow.count("app_video_lessons.py"))
         self.assertEqual(3, workflow.count("gen_github_discovery_readmes.py"))
         self.assertLess(
@@ -23674,6 +23675,10 @@ class GeneratorTests(unittest.TestCase):
             refresh_block.rindex("reconcile_answer_semantics.py"),
             refresh_block.index("gen_sitemap_lastmod.py"),
         )
+        self.assertLess(
+            refresh_block.rindex("publisher_intent_visuals.py"),
+            refresh_block.rindex("gen_sitemap_lastmod.py"),
+        )
         self.assertEqual(
             3,
             workflow.count("gen_social_previews.py --oembed-only"),
@@ -23759,6 +23764,18 @@ class GeneratorTests(unittest.TestCase):
         )
         final_positions = [final_cleanup_block.index(item) for item in final_chain]
         self.assertEqual(sorted(final_positions), final_positions)
+        self.assertLess(
+            final_cleanup_block.rindex("publisher_intent_visuals.py"),
+            final_cleanup_block.rindex(
+                "audit_link_depth.py --max-indexable-orphans 0"
+            ),
+        )
+        self.assertLess(
+            final_cleanup_block.rindex(
+                "audit_link_depth.py --max-indexable-orphans 0"
+            ),
+            final_cleanup_block.rindex("gen_sitemap_lastmod.py"),
+        )
         self.assertEqual(
             1,
             final_cleanup_block.count(
@@ -23866,9 +23883,13 @@ class GeneratorTests(unittest.TestCase):
             "python3 gen_link_hubs.py --check",
             second_indexation,
         )
+        visual_manifest = english_commit_block.index(
+            "python3 publisher_intent_visuals.py",
+            hubs_check,
+        )
         depth_gate = english_commit_block.index(
             "python3 audit_link_depth.py --max-indexable-orphans 0",
-            hubs_check,
+            visual_manifest,
         )
         reconcile = english_commit_block.index(
             "python3 _engine/geo/gen_sitemap_lastmod.py",
@@ -23898,6 +23919,7 @@ class GeneratorTests(unittest.TestCase):
                     hubs,
                     second_indexation,
                     hubs_check,
+                    visual_manifest,
                     depth_gate,
                     reconcile,
                     final_tests,
@@ -23915,6 +23937,7 @@ class GeneratorTests(unittest.TestCase):
                 hubs,
                 second_indexation,
                 hubs_check,
+                visual_manifest,
                 depth_gate,
                 reconcile,
                 final_tests,
@@ -23950,9 +23973,13 @@ class GeneratorTests(unittest.TestCase):
             "python3 close_sitemap_graph.py",
             dedupe,
         )
+        visual_manifest = localized_commit_block.index(
+            "python3 publisher_intent_visuals.py",
+            closure,
+        )
         depth_gate = localized_commit_block.index(
             "python3 audit_link_depth.py --max-indexable-orphans 0",
-            closure,
+            visual_manifest,
         )
         reconcile = localized_commit_block.index(
             "python3 _engine/geo/gen_sitemap_lastmod.py",
@@ -23979,6 +24006,7 @@ class GeneratorTests(unittest.TestCase):
                 semantics,
                 dedupe,
                 closure,
+                visual_manifest,
                 depth_gate,
                 reconcile,
                 final_tests,
@@ -23994,6 +24022,7 @@ class GeneratorTests(unittest.TestCase):
                     semantics,
                     dedupe,
                     closure,
+                    visual_manifest,
                     depth_gate,
                     reconcile,
                     final_tests,
@@ -24071,6 +24100,7 @@ class GeneratorTests(unittest.TestCase):
             workflow.count("cleanup_localized_assets.py --cached-live"),
         )
         publish = (Path(GEO) / "publish.py").read_text(encoding="utf-8")
+        publish_main = publish.split("def main():", 1)[1]
         self.assertNotIn("reset --hard", publish)
         self.assertIn("passport_photo_print_sheet.py", publish)
         self.assertIn("document_scan_planner.py", publish)
@@ -24096,6 +24126,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("portfolio_app_catalog_api.py", publish)
         self.assertIn("publisher_intent_catalog.py", publish)
         self.assertIn("publisher_intent_visuals.py", publish)
+        self.assertEqual(3, publish.count("publisher_intent_visuals.py"))
         self.assertIn("app_video_lessons.py", publish)
         self.assertIn("gen_github_discovery_readmes.py", publish)
         self.assertIn("app_install_decision_routes.py", publish)
@@ -24124,28 +24155,28 @@ class GeneratorTests(unittest.TestCase):
             publish.index("gen_webmcp_install_tools.py"),
         )
         self.assertLess(
-            publish.index("gen_webmcp_install_tools.py"),
-            publish.index("portfolio_app_catalog_api.py"),
+            publish_main.index("gen_webmcp_install_tools.py"),
+            publish_main.index("portfolio_app_catalog_api.py"),
         )
         self.assertLess(
-            publish.index("portfolio_app_catalog_api.py"),
-            publish.index("publisher_intent_catalog.py"),
+            publish_main.index("portfolio_app_catalog_api.py"),
+            publish_main.index("publisher_intent_catalog.py"),
         )
         self.assertLess(
-            publish.index("publisher_intent_catalog.py"),
-            publish.index("publisher_intent_visuals.py"),
+            publish_main.index("publisher_intent_catalog.py"),
+            publish_main.index("publisher_intent_visuals.py"),
         )
         self.assertLess(
-            publish.index("publisher_intent_visuals.py"),
-            publish.index("app_video_lessons.py"),
+            publish_main.index("publisher_intent_visuals.py"),
+            publish_main.index("app_video_lessons.py"),
         )
         self.assertLess(
-            publish.index("app_video_lessons.py"),
-            publish.index('"--oembed-only"'),
+            publish_main.index("app_video_lessons.py"),
+            publish_main.index('"--oembed-only"'),
         )
         self.assertLess(
-            publish.index('"--oembed-only"'),
-            publish.index("gen_github_discovery_readmes.py"),
+            publish_main.index('"--oembed-only"'),
+            publish_main.index("gen_github_discovery_readmes.py"),
         )
         self.assertEqual(2, publish.count("gen_social_previews.py"))
         self.assertEqual(1, publish.count('"--oembed-only"'))
@@ -24225,7 +24256,6 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("gen_sitemap_lastmod.py", publish)
         self.assertEqual(2, publish.count("gen_sitemap_lastmod.py"))
         self.assertEqual(1, publish.count("zhuyin_resourcesync.py"))
-        publish_main = publish.split("def main():", 1)[1]
         publish_chain = (
             "build_pages_i18n.py",
             "passport_photo_print_sheet.py",
@@ -24308,12 +24338,17 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertLess(
             publish_main.rindex("reconcile_answer_semantics.py"),
+            publish_main.rindex("publisher_intent_visuals.py"),
+        )
+        self.assertLess(
+            publish_main.rindex("publisher_intent_visuals.py"),
             publish_main.index("gen_sitemap_lastmod.py"),
         )
         reconcile = publish.split(
             "def reconcile_lastmod_after_rebase", 1
         )[1].split("def main():", 1)[0]
         reconcile_chain = (
+            "publisher_intent_visuals.py",
             "gen_sitemap_lastmod.py",
             '"git", "add", "-A"',
             '"git", "diff", "--cached", "--quiet"',

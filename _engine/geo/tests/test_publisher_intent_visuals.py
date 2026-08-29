@@ -51,6 +51,12 @@ class PublisherIntentVisualUnitTests(unittest.TestCase):
             rendered = path.read_text(encoding="utf-8")
             self.assertIn(publication, rendered)
             self.assertIn("<body>New</body>", rendered)
+            identity = visuals._gallery_manifest_record("en", rendered)
+            self.assertEqual(visuals.gallery_url("en"), identity["gallery_url"])
+            self.assertEqual(
+                hashlib.sha256(rendered.encode("utf-8")).hexdigest(),
+                identity["sha256"],
+            )
 
     def test_campaign_tokens_are_unique_and_app_store_safe(self) -> None:
         tokens = [

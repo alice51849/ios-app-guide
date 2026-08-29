@@ -612,6 +612,7 @@ class StandardSiteSelectionTests(unittest.TestCase):
             for field in publisher.ORDINARY_REPUBLISH_FIELDS:
                 entry.pop(field, None)
             entry.pop(publisher.PENDING_WINDOW_FIELD, None)
+            entry.pop(publisher.PENDING_LIFECYCLE_FIELD, None)
         second = publisher.reserve_daily_batch(
             state,
             manifest,
@@ -725,6 +726,7 @@ class StandardSitePendingWindowTests(unittest.TestCase):
             publisher.ATTRIBUTION_REPAIR_BACKLOG_FIELD,
             *publisher.ORDINARY_REPUBLISH_FIELDS,
             publisher.PENDING_WINDOW_FIELD,
+            publisher.PENDING_LIFECYCLE_FIELD,
         ):
             entry.pop(field, None)
 
@@ -1055,6 +1057,32 @@ class StandardSitePendingWindowTests(unittest.TestCase):
             entry["published"] = False
             entry["published_at"] = recent_anchor
         original = deepcopy(state)
+        real_activate = publisher.pending_state.activate_pending_entry
+        activation_calls = 0
+
+        def fail_during_classification(*args, **kwargs):
+            nonlocal activation_calls
+            activation_calls += 1
+            if activation_calls == 2:
+                raise RuntimeError("simulated classification crash")
+            return real_activate(*args, **kwargs)
+
+        with mock.patch.object(
+            publisher.pending_state,
+            "activate_pending_entry",
+            side_effect=fail_during_classification,
+        ):
+            with self.assertRaisesRegex(
+                RuntimeError, "simulated classification crash"
+            ):
+                publisher.pending_state.migrate_legacy_pending_windows(
+                    state,
+                    manifest,
+                    daily_limit=2,
+                    migrated_at=recent_anchor,
+                )
+        self.assertEqual(original, state)
+        self.assertNotIn(publisher.PENDING_MIGRATION_FIELD, state)
         with mock.patch.object(
             publisher.pending_state,
             "finalize_pending_windows",
@@ -1070,6 +1098,7 @@ class StandardSitePendingWindowTests(unittest.TestCase):
                     migrated_at=recent_anchor,
                 )
         self.assertEqual(original, state)
+        self.assertNotIn(publisher.PENDING_MIGRATION_FIELD, state)
 
         publisher.pending_state.migrate_legacy_pending_windows(
             state,
@@ -1087,6 +1116,22 @@ class StandardSitePendingWindowTests(unittest.TestCase):
             )
         )
         self.assertEqual(migrated, state)
+        unclassified = deepcopy(state)
+        broken = next(iter(unclassified["documents"].values()))
+        for field in (
+            *publisher.ORDINARY_REPUBLISH_FIELDS,
+            publisher.PENDING_WINDOW_FIELD,
+            publisher.PENDING_LIFECYCLE_FIELD,
+        ):
+            broken.pop(field, None)
+        with self.assertRaisesRegex(
+            publisher.pending_state.PendingStateError,
+            "unclassified row",
+        ):
+            publisher.pending_state.validate_pending_state(
+                unclassified,
+                require_finalized=True,
+            )
         for entry in state["documents"].values():
             self.assertEqual(
                 recent_anchor, entry["republish_detected_at"]
@@ -1134,6 +1179,23 @@ class StandardSitePendingWindowTests(unittest.TestCase):
             daily_limit=2,
             migrated_at="2026-07-28T10:00:00.000Z",
         )
+        old_entry = next(iter(old_state["documents"].values()))
+        self.assertEqual(
+            old_anchor, old_entry["republish_detected_at"]
+        )
+        self.assertEqual(
+            "2026-07-28T10:00:00.000Z",
+            old_entry[publisher.PENDING_LIFECYCLE_FIELD][
+                "window_started_at"
+            ],
+        )
+        for offset in (0, 1):
+            publisher.pending_state.audit_pending_documents(
+                old_state,
+                old_manifest,
+                now=datetime(2026, 7, 28, 10, tzinfo=timezone.utc)
+                + timedelta(days=offset),
+            )
         with self.assertRaisesRegex(
             publisher.pending_state.PendingStateError,
             "exceeded its bounded backlog window",
@@ -1141,8 +1203,290 @@ class StandardSitePendingWindowTests(unittest.TestCase):
             publisher.pending_state.audit_pending_documents(
                 old_state,
                 old_manifest,
-                now=datetime(2026, 7, 28, 10, tzinfo=timezone.utc),
+                now=datetime(2026, 7, 31, 10, tzinfo=timezone.utc),
             )
+
+    def test_dormant_legacy_rows_reactivate_after_long_manifest_gaps(
+        self,
+    ) -> None:
+        state, full_manifest = self._allocated(
+            {"alpha": 1, "hourstag": 2}
+        )
+        active_manifest = deepcopy(full_manifest)
+        active_manifest["documents"] = [
+            document
+            for document in active_manifest["documents"]
+            if document["app_key"] == "alpha"
+        ]
+        provenance = "2026-08-04T08:10:51.673Z"
+        for entry in state["documents"].values():
+            entry["published"] = False
+            entry["published_at"] = provenance
+        migration_at = "2026-08-29T00:00:00.000Z"
+        publisher.pending_state.migrate_legacy_pending_windows(
+            state,
+            active_manifest,
+            daily_limit=2,
+            migrated_at=migration_at,
+        )
+        self.assertEqual(
+            3,
+            state[publisher.PENDING_MIGRATION_FIELD][
+                "document_count"
+            ],
+        )
+        dormant_urls = [
+            document["canonical_url"]
+            for document in full_manifest["documents"]
+            if document["app_key"] == "hourstag"
+        ]
+        for canonical in dormant_urls:
+            entry = state["documents"][canonical]
+            self.assertEqual(
+                publisher.pending_state.PENDING_DORMANT,
+                entry[publisher.PENDING_LIFECYCLE_FIELD]["state"],
+            )
+            self.assertNotIn(publisher.PENDING_WINDOW_FIELD, entry)
+            self.assertEqual(provenance, entry["republish_detected_at"])
+        alpha_document = next(
+            document
+            for document in full_manifest["documents"]
+            if document["app_key"] == "alpha"
+        )
+        self._complete(state, dict(alpha_document))
+
+        for delay in (1, 30, 100):
+            candidate = deepcopy(state)
+            activated = datetime(
+                2026, 8, 29, tzinfo=timezone.utc
+            ) + timedelta(days=delay)
+            timestamp = publisher.utc_timestamp(activated)
+            publisher.pending_state.migrate_legacy_pending_windows(
+                candidate,
+                full_manifest,
+                daily_limit=2,
+                migrated_at=timestamp,
+            )
+            for canonical in dormant_urls:
+                entry = candidate["documents"][canonical]
+                lifecycle = entry[publisher.PENDING_LIFECYCLE_FIELD]
+                self.assertEqual(
+                    publisher.pending_state.PENDING_ACTIVE,
+                    lifecycle["state"],
+                )
+                self.assertEqual(timestamp, lifecycle["window_started_at"])
+                self.assertEqual(1, lifecycle["activation_count"])
+                self.assertEqual(provenance, lifecycle["provenance_at"])
+                self.assertIn(publisher.PENDING_WINDOW_FIELD, entry)
+            publisher.pending_state.audit_pending_documents(
+                candidate,
+                full_manifest,
+                now=activated,
+            )
+
+        cycled = deepcopy(state)
+        first_activation = datetime(2026, 8, 30, tzinfo=timezone.utc)
+        publisher.pending_state.migrate_legacy_pending_windows(
+            cycled,
+            full_manifest,
+            daily_limit=2,
+            migrated_at=publisher.utc_timestamp(first_activation),
+        )
+        publisher.pending_state.migrate_legacy_pending_windows(
+            cycled,
+            active_manifest,
+            daily_limit=2,
+            migrated_at=publisher.utc_timestamp(
+                first_activation + timedelta(days=1)
+            ),
+        )
+        for canonical in dormant_urls:
+            paused = cycled["documents"][canonical]
+            self.assertEqual(
+                publisher.pending_state.PENDING_DORMANT,
+                paused[publisher.PENDING_LIFECYCLE_FIELD]["state"],
+            )
+            self.assertNotIn(publisher.PENDING_WINDOW_FIELD, paused)
+        second_activation = first_activation + timedelta(days=30)
+        publisher.pending_state.migrate_legacy_pending_windows(
+            cycled,
+            full_manifest,
+            daily_limit=2,
+            migrated_at=publisher.utc_timestamp(second_activation),
+        )
+        for canonical in dormant_urls:
+            lifecycle = cycled["documents"][canonical][
+                publisher.PENDING_LIFECYCLE_FIELD
+            ]
+            self.assertEqual(2, lifecycle["activation_count"])
+            self.assertEqual(provenance, lifecycle["provenance_at"])
+            self.assertEqual(
+                publisher.utc_timestamp(second_activation),
+                lifecycle["window_started_at"],
+            )
+
+        continuously_eligible = deepcopy(state)
+        activated = datetime(2026, 8, 30, tzinfo=timezone.utc)
+        publisher.pending_state.migrate_legacy_pending_windows(
+            continuously_eligible,
+            full_manifest,
+            daily_limit=2,
+            migrated_at=publisher.utc_timestamp(activated),
+        )
+        initial_starts = {
+            canonical: continuously_eligible["documents"][canonical][
+                publisher.PENDING_LIFECYCLE_FIELD
+            ]["window_started_at"]
+            for canonical in dormant_urls
+        }
+        for offset in (1, 2):
+            publisher.pending_state.migrate_legacy_pending_windows(
+                continuously_eligible,
+                full_manifest,
+                daily_limit=2,
+                migrated_at=publisher.utc_timestamp(
+                    activated + timedelta(days=offset)
+                ),
+            )
+        self.assertEqual(
+            initial_starts,
+            {
+                canonical: continuously_eligible["documents"][canonical][
+                    publisher.PENDING_LIFECYCLE_FIELD
+                ]["window_started_at"]
+                for canonical in dormant_urls
+            },
+        )
+        with self.assertRaisesRegex(
+            publisher.pending_state.PendingStateError,
+            "exceeded its bounded backlog window",
+        ):
+            publisher.pending_state.audit_pending_documents(
+                continuously_eligible,
+                full_manifest,
+                now=activated + timedelta(days=3),
+            )
+
+    def test_priority_fill_uses_spare_slots_across_large_cohorts(
+        self,
+    ) -> None:
+        cases = (
+            (3, 77, 1, 2),
+            (3, 77, 1, 4),
+            (20, 80, 2, 4),
+            (40, 80, 2, 4),
+        )
+        for old_count, new_count, old_apps, limit in cases:
+            with self.subTest(
+                old=old_count,
+                new=new_count,
+                limit=limit,
+            ):
+                app_documents: dict[str, int] = {}
+                base, remainder = divmod(old_count, old_apps)
+                for index in range(old_apps):
+                    app_documents[f"old-{index}"] = (
+                        base + int(index < remainder)
+                    )
+                for index in range(new_count):
+                    app_documents[f"new-{index:03d}"] = 1
+                state, full_manifest = self._allocated(app_documents)
+                old_manifest = deepcopy(full_manifest)
+                old_manifest["documents"] = [
+                    document
+                    for document in old_manifest["documents"]
+                    if str(document["app_key"]).startswith("old-")
+                ]
+                provenance = "2026-08-01T00:00:00.000Z"
+                for entry in state["documents"].values():
+                    entry["published"] = False
+                    entry["published_at"] = provenance
+                start = datetime(2026, 8, 29, tzinfo=timezone.utc)
+                publisher.pending_state.migrate_legacy_pending_windows(
+                    state,
+                    old_manifest,
+                    daily_limit=limit,
+                    migrated_at=publisher.utc_timestamp(start),
+                )
+                publisher.pending_state.migrate_legacy_pending_windows(
+                    state,
+                    full_manifest,
+                    daily_limit=limit,
+                    migrated_at=publisher.utc_timestamp(
+                        start + timedelta(days=1)
+                    ),
+                )
+                documents = {
+                    document["canonical_url"]: document
+                    for document in full_manifest["documents"]
+                }
+                now = start + timedelta(days=1)
+                days = 0
+                while True:
+                    pending_urls = [
+                        canonical
+                        for canonical, entry in state["documents"].items()
+                        if entry.get("published") is not True
+                    ]
+                    if not pending_urls:
+                        break
+                    pending_apps = {
+                        state["documents"][canonical]["app_key"]
+                        for canonical in pending_urls
+                    }
+                    old_pending_apps = {
+                        app
+                        for app in pending_apps
+                        if str(app).startswith("old-")
+                    }
+                    new_pending = any(
+                        str(app).startswith("new-")
+                        for app in pending_apps
+                    )
+                    publisher.pending_state.audit_pending_documents(
+                        state,
+                        full_manifest,
+                        now=now,
+                    )
+                    selected = publisher.reserve_daily_batch(
+                        state,
+                        full_manifest,
+                        day=now.date().isoformat(),
+                        limit=limit,
+                        now=publisher.utc_timestamp(now),
+                    )
+                    self.assertEqual(
+                        min(limit, len(pending_apps)),
+                        len(selected),
+                    )
+                    selected_apps = {
+                        document["app_key"] for document in selected
+                    }
+                    self.assertEqual(
+                        min(limit, len(old_pending_apps)),
+                        len(selected_apps & old_pending_apps),
+                    )
+                    if (
+                        new_pending
+                        and len(old_pending_apps) < limit
+                    ):
+                        self.assertTrue(
+                            any(
+                                str(app).startswith("new-")
+                                for app in selected_apps
+                            )
+                        )
+                    for document in selected:
+                        self._complete(
+                            state,
+                            dict(documents[document["canonical_url"]]),
+                        )
+                    days += 1
+                    now += timedelta(days=1)
+                expected_days = (
+                    old_count + new_count + limit - 1
+                ) // limit
+                self.assertEqual(expected_days, days)
 
 
 class StandardSitePublisherTests(ProjectScratchCase):
@@ -1669,6 +2013,8 @@ class StandardSitePublisherTests(ProjectScratchCase):
                 publisher.pending_state.pending_kind(entry)
                 == "ordinary_republish"
                 and publisher.PENDING_WINDOW_FIELD in entry
+                and entry[publisher.PENDING_LIFECYCLE_FIELD]["state"]
+                == publisher.pending_state.PENDING_ACTIVE
                 for entry in half_drained["documents"].values()
                 if entry.get("published") is not True
             )
@@ -1898,6 +2244,87 @@ class StandardSitePublisherTests(ProjectScratchCase):
                 )
 
         self.assertEqual(puts_before, len(client.puts))
+
+    def test_migrated_legacy_remote_is_republished_without_downgrade(
+        self,
+    ) -> None:
+        state_path, contract_path, well_known_path = self.paths()
+        client = FakeRepoClient(self.DID)
+        manifest = fixture_manifest({"alpha": 1})
+        publisher.run(
+            manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=self.NOW,
+        )
+        state = json.loads(state_path.read_text(encoding="utf-8"))
+        document = manifest["documents"][0]
+        canonical = document["canonical_url"]
+        entry = state["documents"][canonical]
+        key = (publisher.DOCUMENT_COLLECTION, entry["rkey"])
+        client.records[key]["value"]["textContent"] = (
+            attribution.legacy_text_content(
+                document["text_content"],
+                app_id=document["app_store_id"],
+                mode=document["legacy_app_store_link"],
+            )
+        )
+        for field in (
+            "at_uri",
+            "cid",
+            "record_hash",
+            "published_hash",
+            "last_verified_at",
+            "updated_at",
+            *publisher.ATTRIBUTION_REPAIR_FIELDS,
+            publisher.ATTRIBUTION_REPAIR_BACKLOG_FIELD,
+            *publisher.ORDINARY_REPUBLISH_FIELDS,
+            publisher.PENDING_WINDOW_FIELD,
+            publisher.PENDING_LIFECYCLE_FIELD,
+        ):
+            entry.pop(field, None)
+        entry["published"] = False
+        state.pop(publisher.PENDING_MIGRATION_FIELD, None)
+        state_path.write_text(
+            json.dumps(state, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+
+        result = publisher.run(
+            manifest,
+            state_path=state_path,
+            contract_path=contract_path,
+            well_known_path=well_known_path,
+            limit=1,
+            publish=True,
+            environment=self.ENV,
+            client_factory=lambda _handle, _password: client,
+            expected_did=self.DID,
+            tid_generator=self.deterministic_tids(),
+            now=self.NOW + timedelta(days=1),
+        )
+        repaired = json.loads(state_path.read_text(encoding="utf-8"))
+
+        self.assertEqual([canonical], result["selected_urls"])
+        self.assertEqual(1, result["documents_changed"])
+        self.assertTrue(repaired["documents"][canonical]["published"])
+        self.assertEqual(
+            document["content_hash"],
+            repaired["documents"][canonical]["published_hash"],
+        )
+        self.assertEqual(
+            attribution.PRIMARY_QUERY,
+            attribution.direct_app_store_urls(
+                client.records[key]["value"]["textContent"]
+            )[0].query,
+        )
 
     def test_prepared_future_record_keeps_reservation_and_full_query(self) -> None:
         state_path, contract_path, well_known_path = self.paths()

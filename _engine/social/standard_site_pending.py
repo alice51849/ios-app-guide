@@ -56,6 +56,20 @@ PENDING_WINDOW_FIELDS = frozenset(
         "updated_at",
     }
 )
+PENDING_LIFECYCLE_FIELD = "pending_lifecycle"
+PENDING_LIFECYCLE_VERSION = 1
+PENDING_LIFECYCLE_FIELDS = frozenset(
+    {
+        "version",
+        "state",
+        "provenance_at",
+        "window_started_at",
+        "transition_at",
+        "activation_count",
+    }
+)
+PENDING_ACTIVE = "active"
+PENDING_DORMANT = "dormant"
 CONFIRMATION_FIELDS = (
     "at_uri",
     "cid",
@@ -150,17 +164,83 @@ def pending_detected_at(entry: Mapping[str, object]) -> object | None:
     return None
 
 
+def pending_lifecycle(
+    entry: Mapping[str, object],
+) -> Mapping[str, object] | None:
+    lifecycle = entry.get(PENDING_LIFECYCLE_FIELD)
+    if lifecycle is None:
+        return None
+    if (
+        not isinstance(lifecycle, Mapping)
+        or set(lifecycle) != PENDING_LIFECYCLE_FIELDS
+        or type(lifecycle.get("version")) is not int
+        or lifecycle.get("version") != PENDING_LIFECYCLE_VERSION
+        or lifecycle.get("state")
+        not in {PENDING_ACTIVE, PENDING_DORMANT}
+    ):
+        raise PendingStateError("Invalid pending lifecycle")
+    provenance = _timestamp(
+        lifecycle.get("provenance_at"), "pending provenance"
+    )
+    transition = _timestamp(
+        lifecycle.get("transition_at"), "pending transition"
+    )
+    if transition < provenance:
+        raise PendingStateError(
+            "Pending transition predates its provenance"
+        )
+    activation_count = _bounded_int(
+        lifecycle.get("activation_count"),
+        minimum=0,
+        maximum=MAX_TRACKED_DOCUMENTS,
+        label="activation count",
+    )
+    started_value = lifecycle.get("window_started_at")
+    if lifecycle["state"] == PENDING_ACTIVE:
+        if activation_count < 1 or started_value is None:
+            raise PendingStateError(
+                "Active pending lifecycle has no activation"
+            )
+        started = _timestamp(started_value, "pending-window start")
+        if started < provenance or transition < started:
+            raise PendingStateError(
+                "Pending-window start is inconsistent"
+            )
+    elif started_value is not None:
+        raise PendingStateError(
+            "Dormant pending lifecycle retains an active start"
+        )
+    return lifecycle
+
+
+def pending_is_active(entry: Mapping[str, object]) -> bool:
+    lifecycle = pending_lifecycle(entry)
+    return (
+        lifecycle is None
+        or lifecycle.get("state") == PENDING_ACTIVE
+    )
+
+
+def pending_window_started_at(
+    entry: Mapping[str, object],
+) -> object | None:
+    lifecycle = pending_lifecycle(entry)
+    if lifecycle is not None:
+        return lifecycle.get("window_started_at")
+    return pending_detected_at(entry)
+
+
 def pending_cohort_day(entry: Mapping[str, object]) -> str | None:
     kind = pending_kind(entry)
-    if kind is None:
+    if kind is None or not pending_is_active(entry):
         return None
     window = entry.get(PENDING_WINDOW_FIELD)
     if isinstance(window, Mapping):
         return str(window.get("cohort_day") or "")
-    detected = _timestamp(
-        pending_detected_at(entry), "pending detection"
+    started = _timestamp(
+        pending_window_started_at(entry), "pending-window start"
     )
-    return detected.date().isoformat()
+    return started.date().isoformat()
 
 
 def pending_event_at(entry: Mapping[str, object]) -> object | None:
@@ -168,6 +248,14 @@ def pending_event_at(entry: Mapping[str, object]) -> object | None:
     if detected_value is None:
         return None
     detected = _timestamp(detected_value, "pending detection")
+    lifecycle = pending_lifecycle(entry)
+    if lifecycle is not None:
+        detected = max(
+            detected,
+            _timestamp(
+                lifecycle["transition_at"], "pending transition"
+            ),
+        )
     window = entry.get(PENDING_WINDOW_FIELD)
     if isinstance(window, Mapping) and window.get("updated_at"):
         return max(
@@ -293,7 +381,7 @@ def _validate_window(
     entry: Mapping[str, object],
     *,
     kind: str,
-    detected: datetime,
+    started: datetime,
     label: str,
 ) -> Mapping[str, object] | None:
     window = entry.get(PENDING_WINDOW_FIELD)
@@ -307,7 +395,7 @@ def _validate_window(
     ):
         raise PendingStateError(f"Invalid pending-window basis: {label}")
     cohort_day = _day(window.get("cohort_day"), "pending cohort")
-    if cohort_day != detected.date():
+    if cohort_day != started.date():
         raise PendingStateError(f"Pending cohort day disagrees: {label}")
     limit = _daily_limit(window.get("effective_daily_limit"))
     documents = _bounded_int(
@@ -363,9 +451,9 @@ def _validate_window(
     updated = _timestamp(
         window.get("updated_at"), "pending-window update"
     )
-    if updated < detected:
+    if updated < started:
         raise PendingStateError(
-            f"Pending-window predates detection: {label}"
+            f"Pending-window predates activation: {label}"
         )
     return window
 
@@ -390,11 +478,14 @@ def validate_pending_entry(
         )
     kind = pending_kind(entry)
     if kind is None:
-        if PENDING_WINDOW_FIELD in entry:
-            raise PendingStateError(
-                f"Document retains an orphan pending window: {label}"
-            )
-        return
+            if (
+                PENDING_WINDOW_FIELD in entry
+                or PENDING_LIFECYCLE_FIELD in entry
+            ):
+                raise PendingStateError(
+                    f"Document retains orphan pending metadata: {label}"
+                )
+            return
     if entry.get("published") is True:
         raise PendingStateError(
             f"Published document retains pending state: {label}"
@@ -403,6 +494,11 @@ def validate_pending_entry(
         raise PendingStateError(
             f"Pending document retains remote confirmation: {label}"
         )
+    lifecycle = pending_lifecycle(entry)
+    is_dormant = (
+        lifecycle is not None
+        and lifecycle.get("state") == PENDING_DORMANT
+    )
     if kind == "attribution_repair":
         if (
             not set(ATTRIBUTION_REPAIR_FIELDS) <= repair_fields
@@ -420,10 +516,6 @@ def validate_pending_entry(
         after_day = _day(
             entry["repair_after_day"], "attribution repair"
         )
-        if detected.date() != after_day:
-            raise PendingStateError(
-                f"Attribution repair dates disagree: {label}"
-            )
         backlog_days = entry.get(ATTRIBUTION_REPAIR_BACKLOG_FIELD)
         if backlog_days is not None:
             _bounded_int(
@@ -436,7 +528,7 @@ def validate_pending_entry(
         required_republish = set(ORDINARY_REPUBLISH_FIELDS[:-1])
         allowed_republish = (
             required_republish
-            if allow_unfinalized
+            if (allow_unfinalized or is_dormant)
             and "republish_backlog_days" not in republish_fields
             else set(ORDINARY_REPUBLISH_FIELDS)
         )
@@ -456,10 +548,6 @@ def validate_pending_entry(
         after_day = _day(
             entry["republish_after_day"], "ordinary republish"
         )
-        if detected.date() != after_day:
-            raise PendingStateError(
-                f"Ordinary republish dates disagree: {label}"
-            )
         if "republish_backlog_days" in entry:
             _bounded_int(
                 entry["republish_backlog_days"],
@@ -467,12 +555,144 @@ def validate_pending_entry(
                 maximum=MAX_WINDOW_DAYS,
                 label="ordinary-republish days",
             )
+    if lifecycle is None:
+        if detected.date() != after_day:
+            raise PendingStateError(
+                f"Pending dates disagree: {label}"
+            )
+        started = detected
+    else:
+        provenance = _timestamp(
+            lifecycle["provenance_at"], "pending provenance"
+        )
+        if detected != provenance:
+            raise PendingStateError(
+                f"Pending provenance disagrees: {label}"
+            )
+        if is_dormant:
+            if (
+                PENDING_WINDOW_FIELD in entry
+                or entry.get(_backlog_field(kind)) is not None
+            ):
+                raise PendingStateError(
+                    f"Dormant pending document retains an active window: {label}"
+                )
+            return
+        started = _timestamp(
+            lifecycle["window_started_at"], "pending-window start"
+        )
+        if after_day != started.date():
+            raise PendingStateError(
+                f"Pending activation day disagrees: {label}"
+            )
     _validate_window(
         entry,
         kind=kind,
-        detected=detected,
+        started=started,
         label=label,
     )
+
+
+def activate_pending_entry(
+    entry: MutableMapping[str, object],
+    *,
+    activated_at: object,
+    provenance_at: object | None = None,
+) -> bool:
+    kind = pending_kind(entry)
+    if kind is None:
+        raise PendingStateError("Cannot activate an unclassified pending entry")
+    current, current_text = _timestamp_text(
+        activated_at, "pending activation"
+    )
+    lifecycle = pending_lifecycle(entry)
+    if (
+        lifecycle is not None
+        and lifecycle.get("state") == PENDING_ACTIVE
+    ):
+        return False
+    provenance_value = (
+        provenance_at
+        if provenance_at is not None
+        else (
+            lifecycle.get("provenance_at")
+            if lifecycle is not None
+            else pending_detected_at(entry)
+        )
+    )
+    provenance, provenance_text = _timestamp_text(
+        provenance_value, "pending provenance"
+    )
+    if current < provenance:
+        raise PendingStateError(
+            "Pending activation predates its provenance"
+        )
+    activation_count = (
+        int(lifecycle.get("activation_count") or 0)
+        if lifecycle is not None
+        else 0
+    )
+    entry[PENDING_LIFECYCLE_FIELD] = {
+        "version": PENDING_LIFECYCLE_VERSION,
+        "state": PENDING_ACTIVE,
+        "provenance_at": provenance_text,
+        "window_started_at": current_text,
+        "transition_at": current_text,
+        "activation_count": activation_count + 1,
+    }
+    if kind == "attribution_repair":
+        entry["repair_after_day"] = current.date().isoformat()
+        entry.pop(ATTRIBUTION_REPAIR_BACKLOG_FIELD, None)
+    else:
+        entry["republish_after_day"] = current.date().isoformat()
+        entry.pop("republish_backlog_days", None)
+    entry.pop(PENDING_WINDOW_FIELD, None)
+    return True
+
+
+def pause_pending_entry(
+    entry: MutableMapping[str, object],
+    *,
+    paused_at: object,
+) -> bool:
+    kind = pending_kind(entry)
+    if kind is None:
+        raise PendingStateError("Cannot pause an unclassified pending entry")
+    lifecycle = pending_lifecycle(entry)
+    if (
+        lifecycle is not None
+        and lifecycle.get("state") == PENDING_DORMANT
+    ):
+        return False
+    current, current_text = _timestamp_text(
+        paused_at, "pending pause"
+    )
+    provenance_value = (
+        lifecycle.get("provenance_at")
+        if lifecycle is not None
+        else pending_detected_at(entry)
+    )
+    provenance, provenance_text = _timestamp_text(
+        provenance_value, "pending provenance"
+    )
+    if current < provenance:
+        raise PendingStateError("Pending pause predates its provenance")
+    activation_count = (
+        int(lifecycle.get("activation_count") or 1)
+        if lifecycle is not None
+        else 1
+    )
+    entry[PENDING_LIFECYCLE_FIELD] = {
+        "version": PENDING_LIFECYCLE_VERSION,
+        "state": PENDING_DORMANT,
+        "provenance_at": provenance_text,
+        "window_started_at": None,
+        "transition_at": current_text,
+        "activation_count": activation_count,
+    }
+    entry.pop(_backlog_field(kind), None)
+    entry.pop(PENDING_WINDOW_FIELD, None)
+    return True
 
 
 def validate_pending_state(
@@ -513,6 +733,32 @@ def validate_pending_state(
         )
         kind = pending_kind(entry)
         if kind is None:
+            if (
+                migration is not None
+                and entry.get("published") is not True
+                and entry.get("published_at")
+            ):
+                raise PendingStateError(
+                    f"Completed migration left an unclassified row: {label}"
+                )
+            continue
+        lifecycle = pending_lifecycle(entry)
+        if migration is not None and lifecycle is None:
+            raise PendingStateError(
+                f"Pending document has no lifecycle classification: {label}"
+            )
+        if (
+            lifecycle is not None
+            and policy_revision is not None
+            and _timestamp(
+                lifecycle["transition_at"], "pending transition"
+            )
+            > policy_revision
+        ):
+            raise PendingStateError(
+                f"Pending lifecycle is newer than its policy: {label}"
+            )
+        if lifecycle is not None and not pending_is_active(entry):
             continue
         window = entry.get(PENDING_WINDOW_FIELD)
         if require_finalized and (
@@ -585,25 +831,29 @@ def finalize_pending_windows(
             allow_unfinalized=True,
         )
         kind = pending_kind(entry)
-        if entry.get("published") is True or kind is None:
+        if (
+            entry.get("published") is True
+            or kind is None
+            or not pending_is_active(entry)
+        ):
             continue
-        detected = _timestamp(
-            pending_detected_at(entry), "pending detection"
+        started = _timestamp(
+            pending_window_started_at(entry), "pending-window start"
         )
-        if detected > current:
+        if started > current:
             raise PendingStateError(
-                f"Pending detection is in the future: {canonical}"
+                f"Pending activation is in the future: {canonical}"
             )
         if (
             policy is not None
             and entry.get(PENDING_WINDOW_FIELD) is None
-            and detected < revision
+            and started < revision
             and not allow_legacy_backfill
         ):
             raise PendingStateError(
                 f"Backdated pending cohort cannot join the queue: {canonical}"
             )
-        cohorts.setdefault(detected.date().isoformat(), []).append(
+        cohorts.setdefault(started.date().isoformat(), []).append(
             (canonical, entry)
         )
 
@@ -689,34 +939,58 @@ def migrate_legacy_pending_windows(
         allow_unfinalized=True,
     )
     migration = validate_pending_migration(working)
-    manifest_urls = {
+    current_urls = {
         str(document["canonical_url"])
         for document in manifest["documents"]
     }
     legacy_entries: list[tuple[str, MutableMapping[str, object]]] = []
-    for canonical in sorted(manifest_urls):
+    tracked_entries: list[tuple[str, MutableMapping[str, object]]] = []
+    for canonical in sorted(working["documents"]):
         entry = working["documents"].get(canonical)
         if (
             not isinstance(entry, MutableMapping)
             or entry.get("published") is True
-            or not entry.get("published_at")
-            or pending_kind(entry) is not None
         ):
             continue
-        legacy_entries.append((canonical, entry))
+        kind = pending_kind(entry)
+        if kind is not None:
+            tracked_entries.append((canonical, entry))
+        elif entry.get("published_at"):
+            legacy_entries.append((canonical, entry))
 
     if migration is not None:
         if legacy_entries:
             raise PendingStateError(
                 "Legacy pending entries appeared after migration completed"
             )
-        changed = finalize_pending_windows(
+        transitioned = False
+        for canonical, entry in tracked_entries:
+            if canonical in current_urls:
+                transitioned = (
+                    activate_pending_entry(
+                        entry, activated_at=current_text
+                    )
+                    or transitioned
+                )
+            else:
+                transitioned = (
+                    pause_pending_entry(entry, paused_at=current_text)
+                    or transitioned
+                )
+        finalized = finalize_pending_windows(
             working,
             manifest,
             daily_limit=limit,
             updated_at=current_text,
         )
+        if transitioned and not finalized:
+            working[PENDING_POLICY_FIELD] = {
+                "version": PENDING_POLICY_VERSION,
+                "effective_daily_limit": limit,
+                "revision_at": current_text,
+            }
         validate_pending_state(working, require_finalized=True)
+        changed = working != original
         if changed:
             state.clear()
             state.update(working)
@@ -743,7 +1017,32 @@ def migrate_legacy_pending_windows(
         entry["republish_reason"] = ORDINARY_REPUBLISH_REASON
         entry["republish_detected_at"] = anchor_text
         entry["republish_after_day"] = anchor.date().isoformat()
+        if canonical in current_urls:
+            activate_pending_entry(
+                entry,
+                activated_at=current_text,
+                provenance_at=anchor_text,
+            )
+        else:
+            entry[PENDING_LIFECYCLE_FIELD] = {
+                "version": PENDING_LIFECYCLE_VERSION,
+                "state": PENDING_DORMANT,
+                "provenance_at": anchor_text,
+                "window_started_at": None,
+                "transition_at": current_text,
+                "activation_count": 0,
+            }
         migrated_urls.append(canonical)
+
+    for canonical, entry in tracked_entries:
+        lifecycle = pending_lifecycle(entry)
+        if canonical in current_urls:
+            if lifecycle is None or not pending_is_active(entry):
+                activate_pending_entry(
+                    entry, activated_at=current_text
+                )
+        elif lifecycle is None or pending_is_active(entry):
+            pause_pending_entry(entry, paused_at=current_text)
 
     finalize_pending_windows(
         working,
@@ -754,12 +1053,13 @@ def migrate_legacy_pending_windows(
     )
     max_computed_days = max(
         (
-            int(
-                working["documents"][canonical][
-                    "republish_backlog_days"
-                ]
+            int(entry.get(_backlog_field(str(pending_kind(entry)))) or 0)
+            for entry in working["documents"].values()
+            if (
+                isinstance(entry, Mapping)
+                and pending_kind(entry) is not None
+                and pending_is_active(entry)
             )
-            for canonical in migrated_urls
         ),
         default=0,
     )
@@ -828,6 +1128,11 @@ def audit_pending_documents(
                 f"migration: {canonical}"
             )
         if kind is not None:
+            if not pending_is_active(entry):
+                raise PendingStateError(
+                    "Dormant pending document requires publisher activation: "
+                    f"{canonical}"
+                )
             candidates.append((canonical, entry, expected))
 
     daily_limit = effective_daily_limit(
@@ -903,7 +1208,7 @@ def audit_pending_documents(
                 raise PendingStateError(
                     f"Ordinary republish has no finalized window: {canonical}"
                 )
-            deadline = after_day + timedelta(days=backlog_days - 1)
+            deadline = after_day + timedelta(days=backlog_days)
             phase = "ordinary_republish"
         if detected > current or after_day > today:
             raise PendingStateError(

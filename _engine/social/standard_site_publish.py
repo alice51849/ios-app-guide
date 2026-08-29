@@ -72,6 +72,7 @@ ORDINARY_REPUBLISH_FIELDS = pending_state.ORDINARY_REPUBLISH_FIELDS
 PENDING_POLICY_FIELD = pending_state.PENDING_POLICY_FIELD
 PENDING_MIGRATION_FIELD = pending_state.PENDING_MIGRATION_FIELD
 PENDING_WINDOW_FIELD = pending_state.PENDING_WINDOW_FIELD
+PENDING_LIFECYCLE_FIELD = pending_state.PENDING_LIFECYCLE_FIELD
 
 
 class ConfigurationError(RuntimeError):
@@ -510,49 +511,40 @@ def reserve_daily_batch(
             entry = state["documents"][document["canonical_url"]]
             if _pending(document, state) and not _repair_deferred(entry, day):
                 eligible.append(document)
-        tracked_cohorts = [
-            str(pending_state.pending_cohort_day(
-                state["documents"][document["canonical_url"]]
-            ))
-            for document in eligible
-            if pending_state.pending_kind(
-                state["documents"][document["canonical_url"]]
-            )
-            is not None
-        ]
-        if tracked_cohorts:
-            # Newer cohorts cannot consume capacity promised to an older one.
-            oldest_cohort = min(tracked_cohorts)
-            eligible = [
-                document
-                for document in eligible
-                if pending_state.pending_kind(
-                    state["documents"][document["canonical_url"]]
-                )
-                is not None
-                and pending_state.pending_cohort_day(
-                    state["documents"][document["canonical_url"]]
-                )
-                == oldest_cohort
-            ]
-        pending: dict[str, list[Mapping[str, object]]] = {}
+        cohorts: dict[str, list[Mapping[str, object]]] = {}
         for document in eligible:
-            pending.setdefault(str(document["app_key"]), []).append(document)
-        app_keys = sorted(pending)
-        last_app = str(state["rotation"].get("last_app") or "")
-        if last_app in app_keys:
-            split = app_keys.index(last_app) + 1
-            app_keys = app_keys[split:] + app_keys[:split]
-        selected = []
-        for app_key in app_keys:
-            candidates = sorted(
-                pending[app_key],
-                key=lambda value: _pending_priority(
-                    state["documents"][value["canonical_url"]],
-                    str(value["canonical_url"]),
-                ),
+            entry = state["documents"][document["canonical_url"]]
+            cohort = (
+                pending_state.pending_cohort_day(entry)
+                if pending_state.pending_kind(entry) is not None
+                else None
             )
-            selected.append(candidates[0])
+            cohorts.setdefault(str(cohort or "~new"), []).append(document)
+        last_app = str(state["rotation"].get("last_app") or "")
+        selected = []
+        selected_apps: set[str] = set()
+        for cohort in sorted(cohorts):
+            pending: dict[str, list[Mapping[str, object]]] = {}
+            for document in cohorts[cohort]:
+                app_key = str(document["app_key"])
+                if app_key not in selected_apps:
+                    pending.setdefault(app_key, []).append(document)
+            app_keys = sorted(pending)
+            if last_app in app_keys:
+                split = app_keys.index(last_app) + 1
+                app_keys = app_keys[split:] + app_keys[:split]
+            for app_key in app_keys:
+                candidates = sorted(
+                    pending[app_key],
+                    key=lambda value: _pending_priority(
+                        state["documents"][value["canonical_url"]],
+                        str(value["canonical_url"]),
+                    ),
+                )
+                selected.append(candidates[0])
+                selected_apps.add(app_key)
+                if len(selected) >= limit:
+                    break
             if len(selected) >= limit:
                 break
         urls = [str(document["canonical_url"]) for document in selected]
@@ -938,6 +930,7 @@ def _clear_document_confirmation(entry: MutableMapping[str, object]) -> None:
         ATTRIBUTION_REPAIR_BACKLOG_FIELD,
         *ORDINARY_REPUBLISH_FIELDS,
         PENDING_WINDOW_FIELD,
+        PENDING_LIFECYCLE_FIELD,
     ):
         entry.pop(key, None)
 
@@ -958,6 +951,12 @@ def _mark_ordinary_republish_pending(
         if existing_kind == "ordinary_republish"
         else None
     )
+    existing_lifecycle = (
+        entry.get(PENDING_LIFECYCLE_FIELD)
+        if existing_kind == "ordinary_republish"
+        and pending_state.pending_is_active(entry)
+        else None
+    )
     _clear_document_confirmation(entry)
     entry["republish_reason"] = ORDINARY_REPUBLISH_REASON
     entry["republish_detected_at"] = (
@@ -972,6 +971,14 @@ def _mark_ordinary_republish_pending(
         ]
     if existing_window is not None:
         entry[PENDING_WINDOW_FIELD] = existing_window
+    if existing_lifecycle is not None:
+        entry[PENDING_LIFECYCLE_FIELD] = existing_lifecycle
+    else:
+        pending_state.activate_pending_entry(
+            entry,
+            activated_at=detected_at,
+            provenance_at=entry["republish_detected_at"],
+        )
 
 
 def _mark_attribution_repair_pending(
@@ -992,6 +999,12 @@ def _mark_attribution_repair_pending(
         if existing_kind == "attribution_repair"
         else None
     )
+    existing_lifecycle = (
+        entry.get(PENDING_LIFECYCLE_FIELD)
+        if existing_kind == "attribution_repair"
+        and pending_state.pending_is_active(entry)
+        else None
+    )
     _clear_document_confirmation(entry)
     entry["published_hash"] = document["content_hash"]
     entry["repair_reason"] = ATTRIBUTION_REPAIR_REASON
@@ -1001,6 +1014,14 @@ def _mark_attribution_repair_pending(
         entry[ATTRIBUTION_REPAIR_BACKLOG_FIELD] = existing_backlog_days
     if existing_window is not None:
         entry[PENDING_WINDOW_FIELD] = existing_window
+    if existing_lifecycle is not None:
+        entry[PENDING_LIFECYCLE_FIELD] = existing_lifecycle
+    else:
+        pending_state.activate_pending_entry(
+            entry,
+            activated_at=detected_at,
+            provenance_at=entry["repair_detected_at"],
+        )
 
 
 def _remote_document_canonical(
@@ -1180,6 +1201,16 @@ def reconcile_remote_state(
                     document,
                     detected_at=verified_at,
                     repair_after_day=repair_after_day,
+                )
+            elif (
+                pending_state.pending_kind(entry)
+                == "ordinary_republish"
+                and pending_state.pending_is_active(entry)
+            ):
+                _mark_ordinary_republish_pending(
+                    entry,
+                    detected_at=verified_at,
+                    republish_after_day=repair_after_day,
                 )
             else:
                 raise StateError(
@@ -1456,6 +1487,7 @@ def _mark_document(
         ATTRIBUTION_REPAIR_BACKLOG_FIELD,
         *ORDINARY_REPUBLISH_FIELDS,
         PENDING_WINDOW_FIELD,
+        PENDING_LIFECYCLE_FIELD,
     ):
         entry.pop(field, None)
 

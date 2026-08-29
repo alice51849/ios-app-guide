@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail-closed source and tar gate for the exact GitHub Pages artifact."""
+"""Fail-closed unpacked-tree and tar gate for the exact Pages artifact."""
 
 from __future__ import annotations
 
@@ -16,7 +16,8 @@ import zipfile
 
 
 DEFAULT_EXCLUDES = frozenset({".git", ".github"})
-MAX_UPLOAD_BYTES = 900_000_000
+MAX_UNPACKED_BYTES = 900_000_000
+MAX_DEFLATE_UPLOAD_BYTES = 900_000_000
 MAX_TAR_BYTES = 10_000_000_000
 CHUNK_BYTES = 1024 * 1024
 
@@ -225,7 +226,7 @@ def build_review_tar(
         "directories": sum(
             entry.kind == "directory" for entry in entries.values()
         ),
-        "source_bytes": sum(entry.size for entry in entries.values()),
+        "unpacked_bytes": sum(entry.size for entry in entries.values()),
         "tar_bytes": target.stat().st_size,
     }
 
@@ -294,14 +295,23 @@ def verify_artifact(
     artifact: Path,
     *,
     excluded_components: frozenset[str] = DEFAULT_EXCLUDES,
-    max_upload_bytes: int = MAX_UPLOAD_BYTES,
+    max_unpacked_bytes: int = MAX_UNPACKED_BYTES,
+    max_deflate_upload_bytes: int = MAX_DEFLATE_UPLOAD_BYTES,
 ) -> dict[str, int]:
-    if max_upload_bytes <= 0:
-        raise ValueError("Pages upload byte limit must be positive")
+    if max_unpacked_bytes <= 0:
+        raise ValueError("Pages unpacked byte limit must be positive")
+    if max_deflate_upload_bytes <= 0:
+        raise ValueError("Pages deflate upload byte limit must be positive")
     root, entries = scan_tree(
         source_root,
         excluded_components=excluded_components,
     )
+    unpacked_bytes = sum(entry.size for entry in entries.values())
+    if unpacked_bytes > max_unpacked_bytes:
+        raise ValueError(
+            "Pages staging unpacked bytes exceed "
+            f"{max_unpacked_bytes} bytes: {unpacked_bytes}"
+        )
     target = _artifact_path(root, artifact)
     try:
         target_metadata = target.lstat()
@@ -397,21 +407,22 @@ def verify_artifact(
     ):
         raise ValueError("Pages artifact has a corrupt or non-zero trailer")
 
-    upload_bytes = _measure_upload_zip(target)
-    if upload_bytes > max_upload_bytes:
+    deflate_upload_bytes = _measure_upload_zip(target)
+    if deflate_upload_bytes > max_deflate_upload_bytes:
         raise ValueError(
-            f"Pages upload artifact exceeds {max_upload_bytes} bytes: "
-            f"{upload_bytes}"
+            "Pages deflate upload artifact exceeds "
+            f"{max_deflate_upload_bytes} bytes: {deflate_upload_bytes}"
         )
     return {
         "files": sum(entry.kind == "file" for entry in entries.values()),
         "directories": sum(
             entry.kind == "directory" for entry in entries.values()
         ),
-        "source_bytes": sum(entry.size for entry in entries.values()),
+        "unpacked_bytes": unpacked_bytes,
         "tar_bytes": target_metadata.st_size,
-        "upload_bytes": upload_bytes,
-        "max_upload_bytes": max_upload_bytes,
+        "deflate_upload_bytes": deflate_upload_bytes,
+        "max_deflate_upload_bytes": max_deflate_upload_bytes,
+        "max_unpacked_bytes": max_unpacked_bytes,
     }
 
 
@@ -429,9 +440,14 @@ def main() -> int:
         default=[],
     )
     parser.add_argument(
-        "--max-upload-bytes",
+        "--max-unpacked-bytes",
         type=int,
-        default=MAX_UPLOAD_BYTES,
+        default=MAX_UNPACKED_BYTES,
+    )
+    parser.add_argument(
+        "--max-deflate-upload-bytes",
+        type=int,
+        default=MAX_DEFLATE_UPLOAD_BYTES,
     )
     args = parser.parse_args()
     excluded = _excludes(args.exclude_component)
@@ -447,8 +463,14 @@ def main() -> int:
             "directories": sum(
                 entry.kind == "directory" for entry in entries.values()
             ),
-            "source_bytes": sum(entry.size for entry in entries.values()),
+            "unpacked_bytes": sum(entry.size for entry in entries.values()),
         }
+        if result["unpacked_bytes"] > args.max_unpacked_bytes:
+            raise ValueError(
+                "Pages staging unpacked bytes exceed "
+                f"{args.max_unpacked_bytes} bytes: {result['unpacked_bytes']}"
+            )
+        result["max_unpacked_bytes"] = args.max_unpacked_bytes
     else:
         if args.artifact is None:
             parser.error("--artifact is required for artifact modes")
@@ -462,7 +484,8 @@ def main() -> int:
             args.site_root,
             args.artifact,
             excluded_components=excluded,
-            max_upload_bytes=args.max_upload_bytes,
+            max_unpacked_bytes=args.max_unpacked_bytes,
+            max_deflate_upload_bytes=args.max_deflate_upload_bytes,
         )
     print("PAGES_ARTIFACT " + json.dumps(result, sort_keys=True))
     return 0

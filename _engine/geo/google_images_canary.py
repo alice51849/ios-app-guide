@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
-"""Build the measured Google Images real-task-page canary.
+"""Build the measured Google Images unique-asset real-task canary.
 
 The canary intentionally uses only checksum-pinned, existing App Store
 screenshots.  It never synthesizes UI, results, reviews, or before/after
-evidence.  Fifty matched pairs are deterministically split into:
+evidence.  Every one of the 38 authentic images owns exactly one page and is
+assigned within its App stratum into:
 
 * treatment: linked from a human-readable hub and a regular sitemap;
 * holdout: discoverable only through the image sitemap.
 
-Both arms otherwise receive the same technical image treatment.  The public
-ledger is immutable experiment design; observations live in the private
-measurement state maintained by ``reports/google_images_canary_measure.py``.
+Both arms receive the same technical image treatment, but different authentic
+screens are heterogeneous randomized units rather than falsely matched copies.
+The public ledger is immutable experiment design; observations live in the
+private measurement state maintained by
+``reports/google_images_canary_measure.py``.
 """
 
 from __future__ import annotations
@@ -42,6 +45,7 @@ from google_images_canary_contract import (
     canonical_value,
     content_attestation,
     design_digest,
+    stratified_assignment,
 )
 from google_images_canary_spec import SPEC
 from publisher_intent_catalog import write_text_if_changed_atomic
@@ -64,8 +68,9 @@ HOLDOUT_MARKER = (
     '<meta name="iag-experiment-arm" content="sitemap-only-holdout">'
 )
 TREATMENT_MARKER = '<meta name="iag-experiment-arm" content="treatment">'
-MANAGED_MARKER = "<!--iag-google-images-canary:v1-->"
-EXPERIMENT_SCHEMA = "lumi.google-images-canary-experiment/v1"
+MANAGED_MARKER = "<!--iag-google-images-canary:v2-->"
+LEGACY_MANAGED_MARKER = "<!--iag-google-images-canary:v1-->"
+EXPERIMENT_SCHEMA = "lumi.google-images-canary-experiment/v2"
 MIN_IMAGE_WIDTH = 1200
 CAMPAIGN_RE = re.compile(r"[A-Za-z0-9_/]{1,30}")
 PAGE_ID_RE = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*")
@@ -124,14 +129,6 @@ def _single_line(value: object, label: str) -> str:
     return result
 
 
-def _assignment(pair_id: str, variant: int, spec: dict[str, Any]) -> str:
-    material = (
-        f"{spec['experiment_id']}\0{spec['assignment_salt']}\0{pair_id}"
-    ).encode("utf-8")
-    treatment_variant = hashlib.sha256(material).digest()[0] & 1
-    return "treatment" if variant == treatment_variant else "holdout"
-
-
 def _apps(spec: dict[str, Any]) -> dict[str, dict[str, Any]]:
     return {str(app["key"]): app for app in spec["apps"]}
 
@@ -143,6 +140,14 @@ def validate_spec(spec: dict[str, Any] = SPEC) -> dict[str, int]:
         raise ValueError("Canary observation window must be 6–8 weeks")
     if not _single_line(spec.get("assignment_salt"), "assignment_salt"):
         raise ValueError("Missing assignment salt")
+    if (
+        not _single_line(
+            spec.get("supersedes_experiment_id"),
+            "supersedes_experiment_id",
+        )
+        or spec["supersedes_experiment_id"] == spec.get("experiment_id")
+    ):
+        raise ValueError("Canary must supersede a different archived design")
 
     apps = _apps(spec)
     if len(apps) != 7 or len(apps) != len(spec["apps"]):
@@ -154,6 +159,11 @@ def validate_spec(spec: dict[str, Any] = SPEC) -> dict[str, int]:
     app_store_ids: set[str] = set()
     app_store_urls: set[str] = set()
     asset_ids: set[str] = set()
+    public_paths: set[str] = set()
+    source_paths: set[str] = set()
+    source_digests: set[str] = set()
+    pixel_digests: set[str] = set()
+    assets_by_app: dict[str, set[str]] = {}
     for key, app in apps.items():
         if PAGE_ID_RE.fullmatch(key) is None:
             raise ValueError(f"Invalid canary app key: {key}")
@@ -174,11 +184,34 @@ def validate_spec(spec: dict[str, Any] = SPEC) -> dict[str, int]:
             raise ValueError(f"Invalid canary campaign token: {campaign}")
         if len(app.get("assets", [])) < 2:
             raise ValueError(f"{key} must provide at least two authentic images")
+        assets_by_app[key] = set()
         for asset in app["assets"]:
             asset_id = str(asset["id"])
             if asset_id in asset_ids:
                 raise ValueError(f"Duplicate canary asset ID: {asset_id}")
             asset_ids.add(asset_id)
+            assets_by_app[key].add(asset_id)
+            public_path = str(asset.get("public_path", ""))
+            source_path = str(asset.get("source_path", ""))
+            source_digest = str(asset.get("sha256", ""))
+            pixel_digest = str(asset.get("pixel_sha256", ""))
+            if (
+                not public_path
+                or public_path in public_paths
+                or not source_path
+                or source_path in source_paths
+                or SHA256_RE.fullmatch(source_digest) is None
+                or source_digest in source_digests
+                or SHA256_RE.fullmatch(pixel_digest) is None
+                or pixel_digest in pixel_digests
+            ):
+                raise ValueError(
+                    f"Duplicate or invalid canary asset ownership: {asset_id}"
+                )
+            public_paths.add(public_path)
+            source_paths.add(source_path)
+            source_digests.add(source_digest)
+            pixel_digests.add(pixel_digest)
             if SHA256_RE.fullmatch(str(asset["sha256"])) is None:
                 raise ValueError(f"Invalid canary asset digest: {asset_id}")
             width, height = int(asset["width"]), int(asset["height"])
@@ -191,67 +224,85 @@ def validate_spec(spec: dict[str, Any] = SPEC) -> dict[str, int]:
             if asset.get("source_type") != "app_store_screenshot":
                 raise ValueError(f"Unverified canary asset type: {asset_id}")
 
-    pairs = spec.get("pairs")
-    if not isinstance(pairs, list) or len(pairs) != 50:
-        raise ValueError("Canary must define exactly 50 matched pairs")
-    pair_ids: set[str] = set()
+    if len(asset_ids) != 38:
+        raise ValueError("Canary must pin exactly 38 unique authentic assets")
+    units = spec.get("units")
+    if not isinstance(units, list) or len(units) != 38:
+        raise ValueError("Canary must define exactly 38 unique asset-page units")
+    assignments = stratified_assignment(spec)
     page_ids: set[str] = set()
+    used_assets: set[str] = set()
     signatures: set[str] = set()
-    app_pair_counts = {key: 0 for key in apps}
+    app_unit_counts = {key: 0 for key in apps}
+    app_arm_counts = {
+        key: {"treatment": 0, "holdout": 0}
+        for key in apps
+    }
     treatment = holdout = 0
-    for pair in pairs:
-        pair_id = str(pair["id"])
-        app_key = str(pair["app"])
-        if PAGE_ID_RE.fullmatch(pair_id) is None or pair_id in pair_ids:
-            raise ValueError(f"Invalid or duplicate canary pair: {pair_id}")
-        pair_ids.add(pair_id)
+    for task in units:
+        if not isinstance(task, dict):
+            raise ValueError("Canary unit is not an object")
+        page_id = str(task["id"])
+        app_key = str(task["app"])
+        asset_id = str(task.get("asset", ""))
+        if PAGE_ID_RE.fullmatch(page_id) is None or page_id in page_ids:
+            raise ValueError(f"Invalid or duplicate canary page ID: {page_id}")
+        page_ids.add(page_id)
         if app_key not in apps:
             raise ValueError(f"Unknown canary app: {app_key}")
-        app_pair_counts[app_key] += 1
-        variants = pair.get("variants")
-        if not isinstance(variants, list) or len(variants) != 2:
-            raise ValueError(f"{pair_id} must have exactly two variants")
-        app_asset_ids = {str(asset["id"]) for asset in apps[app_key]["assets"]}
-        for variant_index, task in enumerate(variants):
-            page_id = str(task["id"])
-            if PAGE_ID_RE.fullmatch(page_id) is None or page_id in page_ids:
-                raise ValueError(f"Invalid or duplicate canary page ID: {page_id}")
-            page_ids.add(page_id)
-            for field in ("title", "problem", "result", "image_context"):
-                _single_line(task.get(field), f"{page_id}.{field}")
-            if str(task.get("asset")) not in app_asset_ids:
-                raise ValueError(
-                    f"{page_id} references an image not owned by {app_key}"
-                )
-            steps = task.get("steps")
-            if not isinstance(steps, list) or len(steps) != 3:
-                raise ValueError(f"{page_id} must contain exactly three steps")
-            if any(not _single_line(step, f"{page_id}.steps") for step in steps):
-                raise ValueError(f"{page_id} has an empty step")
-            signature = _digest_json(
-                {
-                    "problem": task["problem"],
-                    "steps": steps,
-                    "result": task["result"],
-                }
+        app_unit_counts[app_key] += 1
+        if asset_id not in assets_by_app[app_key] or asset_id in used_assets:
+            raise ValueError(
+                f"{page_id} does not own one unique asset from {app_key}"
             )
-            if signature in signatures:
-                raise ValueError(f"Duplicate task value in canary: {page_id}")
-            signatures.add(signature)
-            arm = _assignment(pair_id, variant_index, spec)
-            treatment += int(arm == "treatment")
-            holdout += int(arm == "holdout")
+        used_assets.add(asset_id)
+        for field in ("title", "problem", "result", "image_context"):
+            _single_line(task.get(field), f"{page_id}.{field}")
+        steps = task.get("steps")
+        if not isinstance(steps, list) or len(steps) != 3:
+            raise ValueError(f"{page_id} must contain exactly three steps")
+        if any(not _single_line(step, f"{page_id}.steps") for step in steps):
+            raise ValueError(f"{page_id} has an empty step")
+        signature = _digest_json(
+            {
+                "problem": task["problem"],
+                "steps": steps,
+                "result": task["result"],
+            }
+        )
+        if signature in signatures:
+            raise ValueError(f"Duplicate task value in canary: {page_id}")
+        signatures.add(signature)
+        assignment = assignments[page_id]
+        arm = str(assignment["arm"])
+        app_arm_counts[app_key][arm] += 1
+        treatment += int(arm == "treatment")
+        holdout += int(arm == "holdout")
 
-    if set(app_pair_counts.values()) != {7, 8}:
-        raise ValueError(f"Canary pair distribution is not stratified: {app_pair_counts}")
-    if treatment != 50 or holdout != 50:
+    if used_assets != asset_ids:
+        raise ValueError("Canary does not use every authentic asset exactly once")
+    if app_unit_counts != {
+        key: len(app["assets"])
+        for key, app in apps.items()
+    }:
         raise ValueError(
-            f"Canary assignment must be 50/50, got {treatment}/{holdout}"
+            f"Canary unit distribution does not match assets: {app_unit_counts}"
+        )
+    if any(
+        abs(counts["treatment"] - counts["holdout"]) > 1
+        for counts in app_arm_counts.values()
+    ):
+        raise ValueError(
+            f"Canary app strata are not balanced: {app_arm_counts}"
+        )
+    if treatment != 19 or holdout != 19:
+        raise ValueError(
+            f"Canary assignment must be 19/19, got {treatment}/{holdout}"
         )
     return {
         "apps": len(apps),
         "categories": len(categories),
-        "pairs": len(pairs),
+        "units": len(units),
         "pages": len(page_ids),
         "treatment": treatment,
         "holdout": holdout,
@@ -315,6 +366,19 @@ def _asset_path(pages: Path, asset: dict[str, Any]) -> Path:
     return target
 
 
+def _pixel_digest(path: Path) -> str:
+    try:
+        with Image.open(path) as image:
+            rgba = image.convert("RGBA")
+            material = (
+                f"{rgba.width}x{rgba.height}:RGBA\0".encode("ascii")
+                + rgba.tobytes()
+            )
+    except (OSError, SyntaxError) as error:
+        raise ValueError(f"Invalid canary image pixels: {path}") from error
+    return _digest_bytes(material)
+
+
 def verify_asset(
     pages: Path,
     asset: dict[str, Any],
@@ -344,6 +408,10 @@ def verify_asset(
         )
     if size[0] < MIN_IMAGE_WIDTH:
         raise ValueError(f"Canary image is below {MIN_IMAGE_WIDTH}px: {target}")
+    if _pixel_digest(target) != asset["pixel_sha256"]:
+        raise ValueError(
+            f"Canary image pixel digest mismatch for {asset['id']}"
+        )
     return target
 
 
@@ -424,6 +492,10 @@ def materialize_assets(
                 raise ValueError(
                     f"Source screenshot dimensions changed for {asset['id']}"
                 )
+            if _pixel_digest(source) != asset["pixel_sha256"]:
+                raise ValueError(
+                    f"Pinned screenshot pixels changed for {asset['id']}"
+                )
             changed += int(_copy_atomic(source, _asset_path(pages, asset)))
     return changed
 
@@ -439,9 +511,10 @@ def records(
             "APP_STORE_PROVIDER_TOKEN is required: canary CTA cannot be partial"
         )
     apps = _apps(spec)
+    assignments = stratified_assignment(spec)
     output: list[dict[str, Any]] = []
-    for pair in spec["pairs"]:
-        app = apps[str(pair["app"])]
+    for task in spec["units"]:
+        app = apps[str(task["app"])]
         app_assets = {
             str(asset["id"]): asset for asset in app["assets"]
         }
@@ -454,29 +527,33 @@ def records(
             store_url,
             expected_app_id=str(app["app_store_id"]),
         )
-        for variant_index, task in enumerate(pair["variants"]):
-            arm = _assignment(str(pair["id"]), variant_index, spec)
-            asset = app_assets[str(task["asset"])]
-            creative_id = str(task["id"])
-            page_relative = ROOT_RELATIVE / f"{creative_id}.html"
-            page_url = f"{site}/{page_relative.as_posix()}"
-            image_url = f"{site}/{asset['public_path']}"
-            output.append(
-                {
-                    "pair_id": pair["id"],
-                    "variant": variant_index,
-                    "creative_id": creative_id,
-                    "arm": arm,
-                    "page_relative": page_relative.as_posix(),
-                    "page_url": page_url,
-                    "image_url": image_url,
-                    "asset": asset,
-                    "app": app,
-                    "task": task,
-                    "store_url": store_url,
-                    "experiment_id": spec["experiment_id"],
-                }
-            )
+        asset = app_assets[str(task["asset"])]
+        creative_id = str(task["id"])
+        assignment = assignments[creative_id]
+        page_relative = ROOT_RELATIVE / f"{creative_id}.html"
+        page_url = f"{site}/{page_relative.as_posix()}"
+        image_url = f"{site}/{asset['public_path']}"
+        output.append(
+            {
+                "unit_id": creative_id,
+                "creative_id": creative_id,
+                "arm": assignment["arm"],
+                "stratum": assignment["stratum"],
+                "assignment_rank": assignment["assignment_rank"],
+                "stratum_size": assignment["stratum_size"],
+                "stratum_treatment_slots": assignment[
+                    "stratum_treatment_slots"
+                ],
+                "page_relative": page_relative.as_posix(),
+                "page_url": page_url,
+                "image_url": image_url,
+                "asset": asset,
+                "app": app,
+                "task": task,
+                "store_url": store_url,
+                "experiment_id": spec["experiment_id"],
+            }
+        )
     return sorted(output, key=lambda item: str(item["creative_id"]))
 
 
@@ -721,7 +798,7 @@ def render_hub(
 {MANAGED_MARKER}
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Real iPhone task images · Google Images canary</title>
-<meta name="description" content="Real App Store screenshots paired with practical, verifiable iPhone task workflows across seven product categories.">
+<meta name="description" content="Unique real App Store screenshots randomized with practical, verifiable iPhone task workflows across seven product categories.">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
 <meta name="iag-experiment-id" content="{html.escape(str(spec["experiment_id"]), quote=True)}">
 <meta name="iag-design-digest" content="{assignment_digest}">
@@ -730,6 +807,7 @@ def render_hub(
 <meta name="iag-page-manifest-digest" content="{content["page_manifest_digest"]}">
 <meta name="iag-asset-count" content="{content["asset_count"]}">
 <meta name="iag-asset-manifest-digest" content="{content["asset_manifest_digest"]}">
+<meta name="iag-ownership-manifest-digest" content="{content["ownership_manifest_digest"]}">
 <link rel="canonical" href="{site}/{ROOT_RELATIVE.as_posix()}/">
 <style>{STYLE}
 ul{{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}}
@@ -740,10 +818,12 @@ li a{{font-weight:800}}li span{{color:var(--muted);font-size:14px}}</style>
 <p class="eyebrow">Google Images canary</p>
 <h1>Real screens for real iPhone tasks</h1>
 <p class="answer">Every linked page uses a verified, existing App Store screenshot.
-No generated UI, fake comparison, or invented review is used.</p></section>
+Each image belongs to one page and one arm; no generated UI, fake comparison,
+or invented review is used.</p></section>
 <ul>{cards}</ul></main>
-<footer><div class="wrap">Seven categories · 50 linked treatment pages ·
-50 sitemap-only holdouts measured separately.</div></footer></body></html>
+<footer><div class="wrap">Seven App strata · {len(treatment_records)} linked
+treatment pages · {len(spec["units"]) - len(treatment_records)} sitemap-only
+holdouts measured separately.</div></footer></body></html>
 """
 
 
@@ -767,9 +847,15 @@ def _ledger(
 ) -> dict[str, Any]:
     assignment_rows = [
         {
-            "pair_id": record["pair_id"],
+            "unit_id": record["unit_id"],
             "creative_id": record["creative_id"],
             "arm": record["arm"],
+            "stratum": record["stratum"],
+            "assignment_rank": record["assignment_rank"],
+            "stratum_size": record["stratum_size"],
+            "stratum_treatment_slots": record[
+                "stratum_treatment_slots"
+            ],
             "page_url": record["page_url"],
             "image_url": record["image_url"],
             "app_key": record["app"]["key"],
@@ -780,6 +866,7 @@ def _ledger(
             "source_path": record["asset"]["source_path"],
             "source_locale": record["asset"]["locale"],
             "source_sha256": record["asset"]["sha256"],
+            "pixel_sha256": record["asset"]["pixel_sha256"],
             "source_type": record["asset"]["source_type"],
             "width": int(record["asset"]["width"]),
             "height": int(record["asset"]["height"]),
@@ -794,6 +881,7 @@ def _ledger(
         "schema": EXPERIMENT_SCHEMA,
         "digest_schema": DIGEST_SCHEMA,
         "experiment_id": spec["experiment_id"],
+        "supersedes_experiment_id": spec["supersedes_experiment_id"],
         "created_at": spec["created_at"],
         "experiment_spec": canonical_value(spec),
         "spec_digest": _digest_json(spec),
@@ -804,19 +892,34 @@ def _ledger(
         "hypothesis": (
             "Internal discovery plus a regular sitemap improves crawl, index, "
             "Google Images impressions, and clicks versus image-sitemap-only "
-            "discovery for equally complete real-task pages."
+            "discovery across preregistered unique image-page units."
         ),
         "design": {
-            "unit": "matched_page_url",
-            "pair_count": len(spec["pairs"]),
-            "assignment": "sha256 pair-level deterministic swap",
+            "unit": "unique_image_page",
+            "unit_count": len(spec["units"]),
+            "asset_ownership": "one image URL belongs to one page and one arm",
+            "strata": "app_key",
+            "assignment": (
+                "preregistered SHA-256 ranked complete randomization "
+                "within App strata"
+            ),
             "assignment_salt": spec["assignment_salt"],
             "treatment": "linked hub + regular sitemap + image sitemap",
             "holdout": "image sitemap only; no internal inbound link",
+            "analysis": (
+                "stratified randomization inference with App-stratum "
+                "differences weighted by stratum size"
+            ),
+            "pairing_claim": (
+                "none; heterogeneous authentic screenshots are randomized "
+                "units, not same-image or pure-page matched pairs"
+            ),
             "technical_parity": (
                 "Both arms have a standard img, natural alt/caption, "
                 "max-image-preview:large, ImageObject, SoftwareApplication, "
-                "and the same App×Google Images Apple campaign policy."
+                "and the same App×Google Images Apple campaign policy. "
+                "Creative heterogeneity is handled by stratification and "
+                "randomization inference."
             ),
         },
         "observation_window_days": spec["observation_window_days"],
@@ -857,40 +960,48 @@ def _expected_ledger_rows(
     page_hashes: dict[str, str] | None = None,
 ) -> list[dict[str, Any]]:
     apps = _apps(spec)
+    assignments = stratified_assignment(spec)
     rows = []
-    for pair in spec["pairs"]:
-        app = apps[str(pair["app"])]
+    for task in spec["units"]:
+        app = apps[str(task["app"])]
         assets = {str(asset["id"]): asset for asset in app["assets"]}
-        for variant_index, task in enumerate(pair["variants"]):
-            asset = assets[str(task["asset"])]
-            creative_id = str(task["id"])
-            rows.append(
-                {
-                    "pair_id": pair["id"],
-                    "creative_id": creative_id,
-                    "arm": _assignment(str(pair["id"]), variant_index, spec),
-                    "page_url": (
-                        f"{site}/{ROOT_RELATIVE.as_posix()}/{creative_id}.html"
-                    ),
-                    "image_url": f"{site}/{asset['public_path']}",
-                    "app_key": app["key"],
-                    "app_store_id": app["app_store_id"],
-                    "category": app["category"],
-                    "campaign_token": app["campaign_token"],
-                    "asset_id": asset["id"],
-                    "source_path": asset["source_path"],
-                    "source_locale": asset["locale"],
-                    "source_sha256": asset["sha256"],
-                    "source_type": asset["source_type"],
-                    "width": int(asset["width"]),
-                    "height": int(asset["height"]),
-                    **(
-                        {"page_sha256": page_hashes[creative_id]}
-                        if page_hashes is not None
-                        else {}
-                    ),
-                }
-            )
+        asset = assets[str(task["asset"])]
+        creative_id = str(task["id"])
+        assignment = assignments[creative_id]
+        rows.append(
+            {
+                "unit_id": creative_id,
+                "creative_id": creative_id,
+                "arm": assignment["arm"],
+                "stratum": assignment["stratum"],
+                "assignment_rank": assignment["assignment_rank"],
+                "stratum_size": assignment["stratum_size"],
+                "stratum_treatment_slots": assignment[
+                    "stratum_treatment_slots"
+                ],
+                "page_url": (
+                    f"{site}/{ROOT_RELATIVE.as_posix()}/{creative_id}.html"
+                ),
+                "image_url": f"{site}/{asset['public_path']}",
+                "app_key": app["key"],
+                "app_store_id": app["app_store_id"],
+                "category": app["category"],
+                "campaign_token": app["campaign_token"],
+                "asset_id": asset["id"],
+                "source_path": asset["source_path"],
+                "source_locale": asset["locale"],
+                "source_sha256": asset["sha256"],
+                "pixel_sha256": asset["pixel_sha256"],
+                "source_type": asset["source_type"],
+                "width": int(asset["width"]),
+                "height": int(asset["height"]),
+                **(
+                    {"page_sha256": page_hashes[creative_id]}
+                    if page_hashes is not None
+                    else {}
+                ),
+            }
+        )
     return sorted(rows, key=lambda row: str(row["creative_id"]))
 
 
@@ -910,7 +1021,7 @@ def _coverage(
                 "app_key": app["key"],
                 "app_name": app["name"],
                 "category": app["category"],
-                "pairs": len(app_records) // 2,
+                "units": len(app_records),
                 "treatment_urls": sum(
                     item["arm"] == "treatment" for item in app_records
                 ),
@@ -931,7 +1042,7 @@ def _coverage(
         "abstained": 0,
         "abstentions": [],
         "categories": len({app["category"] for app in spec["apps"]}),
-        "pairs": len(spec["pairs"]),
+        "units": len(spec["units"]),
         "pages": len(built_records),
         "treatment_urls": sum(
             item["arm"] == "treatment" for item in built_records
@@ -963,17 +1074,18 @@ def render_coverage_markdown(coverage: dict[str, Any]) -> str:
         f"- Qualified / abstained apps: **{coverage['qualified']} / "
         f"{coverage['abstained']}**",
         f"- Categories: **{coverage['categories']}**",
-        f"- Matched pairs / pages: **{coverage['pairs']} / {coverage['pages']}**",
+        f"- Randomized unique assets / pages: **{coverage['units']} / "
+        f"{coverage['pages']}**",
         f"- Treatment / sitemap-only holdout: **{coverage['treatment_urls']} / "
         f"{coverage['holdout_urls']}**",
         f"- Checksum-pinned authentic images: **{coverage['authentic_assets']}**",
         "",
-        "| Category | App | Pairs | Treatment | Holdout | Images | Min width | ct |",
+        "| Category | App | Units | Treatment | Holdout | Images | Min width | ct |",
         "|---|---|---:|---:|---:|---:|---:|---|",
     ]
     for row in coverage["apps"]:
         lines.append(
-            f"| {row['category']} | {row['app_name']} | {row['pairs']} | "
+            f"| {row['category']} | {row['app_name']} | {row['units']} | "
             f"{row['treatment_urls']} | {row['holdout_urls']} | "
             f"{row['authentic_assets']} | {row['minimum_asset_width']}px | "
             f"`{row['campaign_token']}` |"
@@ -985,6 +1097,11 @@ def render_coverage_markdown(coverage: dict[str, Any]) -> str:
             "exact copies of pre-existing, checksum-pinned en-US App Store "
             "screenshots; no generated UI, fake before/after, rating, or review "
             "is present.",
+            "",
+            "Each image URL is owned by exactly one page and one arm. The design "
+            "uses preregistered complete randomization within App strata and "
+            "stratified randomization inference; it makes no same-image matched-"
+            "pair or pure page-treatment claim.",
             "",
             "Unknown and pending observations remain `null`. A URL that is still "
             "not indexed after 42 days is a technical failure, not a market zero.",
@@ -1097,10 +1214,18 @@ def audit_generated(
     if ledger.get("spec_digest") != _digest_json(spec):
         raise ValueError("Published canary spec digest mismatch")
     ledger_records = ledger.get("records")
-    if not isinstance(ledger_records, list) or len(ledger_records) != 100:
-        raise ValueError("Published canary ledger must contain 100 records")
-    if ledger.get("treatment_urls") != 50 or ledger.get("holdout_urls") != 50:
-        raise ValueError("Published canary ledger is not 50/50")
+    if (
+        not isinstance(ledger_records, list)
+        or len(ledger_records) != expected["pages"]
+    ):
+        raise ValueError(
+            "Published canary ledger must contain every unique asset-page unit"
+        )
+    if (
+        ledger.get("treatment_urls") != expected["treatment"]
+        or ledger.get("holdout_urls") != expected["holdout"]
+    ):
+        raise ValueError("Published canary ledger is not 19/19")
 
     expected_ledger_rows = _expected_ledger_rows(spec, site)
     for actual, expected_row in zip(ledger_records, expected_ledger_rows):
@@ -1127,11 +1252,12 @@ def audit_generated(
     ledger_by_id = {
         str(record["creative_id"]): record for record in ledger_records
     }
-    if len(ledger_by_id) != 100:
+    if len(ledger_by_id) != expected["pages"]:
         raise ValueError("Published canary ledger has duplicate creative IDs")
     campaign_by_app: dict[str, set[str]] = {}
     page_urls: set[str] = set()
     image_pairs: list[tuple[str, str]] = []
+    image_owners: dict[str, tuple[str, str]] = {}
     for creative_id, record in sorted(ledger_by_id.items()):
         _check_cancelled()
         page = pages / ROOT_RELATIVE / f"{creative_id}.html"
@@ -1146,6 +1272,8 @@ def audit_generated(
         image = parser.images[0]
         if not image.get("src") or not image.get("alt"):
             raise ValueError(f"{page} has an incomplete standard img")
+        if image["src"] != record["image_url"]:
+            raise ValueError(f"{page} does not own its ledger image URL")
         if int(image.get("width", "0")) < MIN_IMAGE_WIDTH:
             raise ValueError(f"{page} image is below {MIN_IMAGE_WIDTH}px")
         robots = [
@@ -1205,10 +1333,16 @@ def audit_generated(
             query["ct"][0]
         )
         page_urls.add(str(record["page_url"]))
+        owner = (str(record["page_url"]), str(record["arm"]))
+        if str(record["image_url"]) in image_owners:
+            raise ValueError("Canary image URL is shared across pages or arms")
+        image_owners[str(record["image_url"])] = owner
         image_pairs.append((str(record["page_url"]), str(record["image_url"])))
 
     if any(len(tokens) != 1 for tokens in campaign_by_app.values()):
         raise ValueError("Canary ct is fragmented below App×channel")
+    if len(image_owners) != len(ledger_records):
+        raise ValueError("Canary image ownership is not one-to-one")
     treatment_urls = {
         str(record["page_url"])
         for record in ledger_records
@@ -1255,6 +1389,9 @@ def audit_generated(
         "iag-asset-manifest-digest": [
             str(expected_content["asset_manifest_digest"])
         ],
+        "iag-ownership-manifest-digest": [
+            str(expected_content["ownership_manifest_digest"])
+        ],
     }
     if any(
         hub_values.get(name) != value
@@ -1294,7 +1431,7 @@ def _remove_stale_pages(
             source = path.read_text(encoding="utf-8")
         except OSError:
             continue
-        if MANAGED_MARKER in source:
+        if MANAGED_MARKER in source or LEGACY_MANAGED_MARKER in source:
             stale.append(path)
     if stale and check:
         raise ValueError(

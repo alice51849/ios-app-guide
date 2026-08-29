@@ -80,20 +80,32 @@ class GoogleImagesCanaryTests(unittest.TestCase):
     def test_build_is_complete_balanced_and_idempotent(self) -> None:
         first = self.build()
         self.assertEqual(7, first["apps"])
-        self.assertEqual(100, first["pages"])
-        self.assertEqual(50, first["treatment"])
-        self.assertEqual(50, first["holdout"])
-        self.assertGreater(first["changed_files"], 100)
+        self.assertEqual(38, first["pages"])
+        self.assertEqual(19, first["treatment"])
+        self.assertEqual(19, first["holdout"])
+        self.assertGreater(first["changed_files"], 38)
 
         second = self.build()
         self.assertEqual(0, second["changed_files"])
         ledger = json.loads(
             self.ledger.read_text(encoding="utf-8")
         )
-        self.assertEqual(50, ledger["treatment_urls"])
-        self.assertEqual(50, ledger["holdout_urls"])
-        self.assertEqual(100, ledger["content_attestation"]["page_count"])
+        self.assertEqual(19, ledger["treatment_urls"])
+        self.assertEqual(19, ledger["holdout_urls"])
+        self.assertEqual(38, ledger["content_attestation"]["page_count"])
         self.assertEqual(38, ledger["content_attestation"]["asset_count"])
+        self.assertEqual(
+            len(ledger["records"]),
+            len({row["image_url"] for row in ledger["records"]}),
+        )
+        self.assertEqual(
+            len(ledger["records"]),
+            len({row["pixel_sha256"] for row in ledger["records"]}),
+        )
+        self.assertTrue(
+            all("pair_id" not in row for row in ledger["records"])
+        )
+        self.assertEqual("none", ledger["experiment_spec"]["randomization"]["pairing_claim"])
         self.assertIsNone(
             ledger["interpretation"]["unknown_or_pending_metrics"]
         )
@@ -110,7 +122,7 @@ class GoogleImagesCanaryTests(unittest.TestCase):
             coverage["authentic_assets"],
         )
         self.assertEqual(38, coverage["authentic_assets"])
-        self.assertEqual(100, coverage["pages"])
+        self.assertEqual(38, coverage["pages"])
 
     def test_design_digest_binds_the_frozen_spec_and_deployed_content(self) -> None:
         self.build()
@@ -153,6 +165,7 @@ class GoogleImagesCanaryTests(unittest.TestCase):
             "page_manifest_digest",
             "asset_count",
             "asset_manifest_digest",
+            "ownership_manifest_digest",
         ):
             name = "iag-" + key.replace("_", "-")
             self.assertIn(
@@ -221,9 +234,9 @@ class GoogleImagesCanaryTests(unittest.TestCase):
             audit_link_depth.REPORTS = old_audit_reports
             audit_link_depth.SITE = old_audit_site
             audit_link_depth.ROOT_URL = old_root_url
-        self.assertEqual(50, summary["sitemap_only_experiment_holdouts"])
+        self.assertEqual(19, summary["sitemap_only_experiment_holdouts"])
         self.assertEqual(
-            50, summary["sitemap_only_experiment_holdouts_unreachable"]
+            19, summary["sitemap_only_experiment_holdouts_unreachable"]
         )
         self.assertEqual([], summary["experiment_contract_errors"])
         self.assertEqual(0, summary["indexable_orphans"])
@@ -238,13 +251,13 @@ class GoogleImagesCanaryTests(unittest.TestCase):
         treatment_urls = canary._xml_page_urls(
             self.pages / canary.TREATMENT_SITEMAP_RELATIVE
         )
-        self.assertEqual(100, len(image_urls))
-        self.assertEqual(50, len(treatment_urls))
+        self.assertEqual(38, len(image_urls))
+        self.assertEqual(19, len(treatment_urls))
         tree = ET.parse(self.pages / canary.IMAGE_SITEMAP_RELATIVE)
         image_nodes = tree.findall(
             f".//{{{canary.gen_image_sitemap.IMAGE_NS}}}loc"
         )
-        self.assertEqual(100, len(image_nodes))
+        self.assertEqual(38, len(image_nodes))
         ledger = json.loads(
             self.ledger.read_text(encoding="utf-8")
         )
@@ -296,15 +309,9 @@ class GoogleImagesCanaryTests(unittest.TestCase):
 
     def test_spec_rejects_duplicate_task_value_and_incomplete_asset(self) -> None:
         invalid = copy.deepcopy(SPEC)
-        invalid["pairs"][0]["variants"][1]["problem"] = (
-            invalid["pairs"][0]["variants"][0]["problem"]
-        )
-        invalid["pairs"][0]["variants"][1]["steps"] = list(
-            invalid["pairs"][0]["variants"][0]["steps"]
-        )
-        invalid["pairs"][0]["variants"][1]["result"] = (
-            invalid["pairs"][0]["variants"][0]["result"]
-        )
+        invalid["units"][1]["problem"] = invalid["units"][0]["problem"]
+        invalid["units"][1]["steps"] = list(invalid["units"][0]["steps"])
+        invalid["units"][1]["result"] = invalid["units"][0]["result"]
         with self.assertRaisesRegex(ValueError, "Duplicate task value"):
             canary.validate_spec(invalid)
 
@@ -312,6 +319,32 @@ class GoogleImagesCanaryTests(unittest.TestCase):
         invalid["apps"][0]["assets"][0]["width"] = 1199
         with self.assertRaisesRegex(ValueError, "below 1200px"):
             canary.validate_spec(invalid)
+
+    def test_shared_cross_arm_or_pixel_duplicate_assets_fail_closed(self) -> None:
+        invalid = copy.deepcopy(SPEC)
+        invalid["units"][1]["asset"] = invalid["units"][0]["asset"]
+        with self.assertRaisesRegex(ValueError, "one-to-one|unique asset"):
+            canary.validate_spec(invalid)
+
+        invalid = copy.deepcopy(SPEC)
+        invalid["apps"][0]["assets"][1]["pixel_sha256"] = (
+            invalid["apps"][0]["assets"][0]["pixel_sha256"]
+        )
+        with self.assertRaisesRegex(ValueError, "asset ownership"):
+            canary.validate_spec(invalid)
+
+        self.build()
+        ledger = json.loads(self.ledger.read_text(encoding="utf-8"))
+        records = copy.deepcopy(ledger["records"])
+        holdout = next(row for row in records if row["arm"] == "holdout")
+        treatment = next(row for row in records if row["arm"] == "treatment")
+        holdout["image_url"] = treatment["image_url"]
+        holdout["asset_id"] = treatment["asset_id"]
+        holdout["source_path"] = treatment["source_path"]
+        holdout["source_sha256"] = treatment["source_sha256"]
+        holdout["pixel_sha256"] = treatment["pixel_sha256"]
+        with self.assertRaisesRegex(ValueError, "shared|duplicated"):
+            design_digest(ledger["experiment_spec"], records)
 
     def test_build_honors_cancellation_before_writing(self) -> None:
         previous = canary._CANCELLED

@@ -30,21 +30,53 @@ class PagesArtifactGateTests(unittest.TestCase):
     def tearDown(self) -> None:
         self.workspace.cleanup()
 
-    def test_real_artifact_matches_source_and_enforces_upload_bytes(self) -> None:
+    def test_real_artifact_matches_source_and_enforces_unpacked_bytes(self) -> None:
         built = gate.build_review_tar(self.site, self.artifact)
         verified = gate.verify_artifact(self.site, self.artifact)
         self.assertEqual(2, built["files"])
         self.assertEqual(built["tar_bytes"], verified["tar_bytes"])
-        self.assertGreater(verified["upload_bytes"], 0)
+        self.assertGreater(verified["deflate_upload_bytes"], 0)
         self.assertLessEqual(
-            verified["upload_bytes"],
-            verified["max_upload_bytes"],
+            verified["unpacked_bytes"],
+            verified["max_unpacked_bytes"],
         )
-        with self.assertRaisesRegex(ValueError, "exceeds 1 bytes"):
+        with self.assertRaisesRegex(
+            ValueError,
+            "staging unpacked bytes exceed 1 bytes",
+        ):
             gate.verify_artifact(
                 self.site,
                 self.artifact,
-                max_upload_bytes=1,
+                max_unpacked_bytes=1,
+            )
+        with self.assertRaisesRegex(
+            ValueError,
+            "deflate upload artifact exceeds 1 bytes",
+        ):
+            gate.verify_artifact(
+                self.site,
+                self.artifact,
+                max_deflate_upload_bytes=1,
+            )
+
+    def test_compressible_upload_cannot_hide_oversized_unpacked_tree(
+        self,
+    ) -> None:
+        payload = self.site / "compressible.txt"
+        payload.write_bytes(b"0" * 100_000)
+        gate.build_review_tar(self.site, self.artifact)
+        self.assertLess(
+            gate._measure_upload_zip(self.artifact),
+            payload.stat().st_size,
+        )
+        with self.assertRaisesRegex(
+            ValueError,
+            "staging unpacked bytes exceed 1000 bytes",
+        ):
+            gate.verify_artifact(
+                self.site,
+                self.artifact,
+                max_unpacked_bytes=1_000,
             )
 
     def test_source_symlink_hardlink_and_special_file_fail_closed(self) -> None:
@@ -148,7 +180,9 @@ class PagesArtifactGateTests(unittest.TestCase):
         self.assertLess(tree_gate, upload)
         self.assertLess(upload, artifact_gate)
         self.assertLess(artifact_gate, deploy)
-        self.assertIn("--max-upload-bytes 900000000", workflow)
+        self.assertIn("--max-unpacked-bytes 900000000", workflow)
+        self.assertIn("--max-deflate-upload-bytes 900000000", workflow)
+        self.assertIn("${{ runner.temp }}/pages-publish", workflow)
         self.assertIn('$RUNNER_TEMP/artifact.tar', workflow)
 
 

@@ -3,6 +3,48 @@
 from __future__ import annotations
 
 
+PIXEL_SHA256 = {
+    "unblurry-01": "5eb3977fcc1a3b34db7a168a1fbb6d0fb28fc0047c9c2f2cd8a68c9accbb2da4",
+    "unblurry-02": "a487a6359d233a61db6543d1b8e2705b138160d020db92f5eb1a18b6db9ab891",
+    "unblurry-03": "c21158a4f4a56ff40a9d61ff53b4a997a5a172277e1beea1d8e8b1e0358d50e5",
+    "scanto-01": "a6d486000a246d2db86e57d206077debe61a5587fcb626a219cb7477cd8b6597",
+    "scanto-02": "56fc98aba28ab5d82207b4c0405716c6c5938c30e2881f87b47c612bb59763f4",
+    "scanto-04": "687acbd0a2d55ab135913f1e61f095a3eb9c1a603100817b571c426d5a608066",
+    "scanto-05": "5955c483eda21fe0bdeb7dac9a3197f118bd4d936ce0e5b8cfe9f1ac7173b1ab",
+    "scanto-06": "4e5e7063dc0001f3717326bc59ebb68907c3ca210300bb9b40da4eb8f0dac54c",
+    "scanto-07": "5c0b5cd1060021f35326e4c60f43608d7dd330596bda5ea2f2cfc0f750cdd07f",
+    "scanto-08": "ccafe4b032519705290c0d84eea3e06358c44ad64757840532c51591b078d7a0",
+    "scanto-09": "0bb546afc1a28adff2c597892dde515c6a10603e2ecbc472e856970363ce088e",
+    "scanto-10": "5690b4e86b44d2a6703cc299d8447d189825e0587f333cd6ba19ec56f47a35a8",
+    "cyca-01": "a0cd3708ae829548bd1aba59bf8c02c93ea0d7f671002f3be3ee5999eb0ada72",
+    "cyca-02": "8da59823dc568e70dc9a005f57454a37d92607232fe5c2db0394b892b9363e6f",
+    "cyca-03": "a40f0d25cbf98dbee03ac3ed202842f9d21a976552f1faa4678f6467ace1887f",
+    "cyca-04": "e4ccb18102bd01b2628e89158441f9ad6f8ba3775f2f5546d8a5580a17d9cb66",
+    "cyca-05": "d85629ce11fc5370a9eaa80b6e6b6883b32e8f7415eb87e9a1e633351912e084",
+    "cyca-06": "dfa96eb8c566b386bfa8f26c6e783ac8e8d46fe1cbfc0a6e971ebbafec176860",
+    "gmoney-01": "d6aefb6a812326a0853ddc97bfcc3c2a30e41624f5eb781f9c9092a23b48c94a",
+    "gmoney-02": "0db96071faa67808bf50752c5a9b9112e64918dc3665616a17bf141c1e465c95",
+    "gmoney-03": "7bbcfba66ee1bc4979652444765db748004693e1e4aa3f8bcd353698dc53c990",
+    "lumiletters-01": "76606c06c8ee96ba57323f4f8d45679a8622cbc3824a9101aba4232b8690c5e8",
+    "lumiletters-02": "0e4b6a79720596615c4c59ab52454dadeedd6ac4b4ed2169904a048167a39c9b",
+    "lumiletters-03": "b3ceb5c49be553098cc5228fb0119a97f755a56d35c9388a8a6eab06e4a8a580",
+    "lumiletters-04": "ce079d897fb5874309ac54f60df2360c0494cb68781e8f35b83730596165d67f",
+    "lumiletters-05": "4821fa6fc2887b108574c47a8c2c4ca981513f6bbfa51d3ac497383b4a8478d7",
+    "lumiletters-06": "db4c6742981e28ba94d12d071ee346086c6d0c128531bf56485100f7dc8945b2",
+    "lumiletters-07": "905febe494b629070f0c649fb6e4742348131dfc083eaca9b41496b490009fb2",
+    "lumiletters-08": "875870a37cb7b2003839b31cc3681671758886a2eed07d13ff289f956dfc31eb",
+    "lumiletters-09": "4ad7cee37aabd9ef6801626757f49484b7bce59b11d2fadb58da9798c6a81a16",
+    "lumiletters-10": "027684874cb543a44e691a81faffd9228cb09d15b0eb41152a31ed15e3048cb9",
+    "aim990-01": "8fb573d83bd07734b0c26aa6df172bad94675c09ef18f57a622bc5eb00447534",
+    "aim990-02": "8c2a8e9ca726d3c6fbbd79eba04188dbe22aa1f677d0dc5947c64e1e66614c91",
+    "aim990-03": "24e018cdb287e58872e2dab5a3a4824f925d016288e9cfc9946027a258b5fca0",
+    "aim990-04": "482e5bc0cf62f08dfb3618937db42bee4ed19d67171af1f6cb5b51e4ac208c34",
+    "sereno-01": "943fa1def4362563f4c2ff2f853d2a935b58103ae86ed63b4ac303dee91aff5d",
+    "sereno-02": "4c48e2c188cc988327a6657845510b52f7a1dee2e5b71ca8e33adf72195696cb",
+    "sereno-03": "c563bcf616df6b6fb6eb1e4c83e3f2eae1c101293de8b90169a042cbfe843dbe",
+}
+
+
 def _asset(
     app: str,
     number: str,
@@ -15,6 +57,7 @@ def _asset(
         "source_path": f"00_GrowthEngine/social/assets/{app}/{number}.png",
         "public_path": f"media/google-images-canary/{asset_id}.png",
         "sha256": sha256,
+        "pixel_sha256": PIXEL_SHA256[asset_id],
         "width": 1320,
         "height": 2868,
         "locale": "en-US",
@@ -241,7 +284,8 @@ APPS = [
 ]
 
 
-PAIRS = [
+# Editorial candidates only. They are never interpreted as assignment pairs.
+TASK_CANDIDATE_GROUPS = [
     {
         "id": "unblurry-p01",
         "app": "unblurry",
@@ -645,12 +689,49 @@ PAIRS = [
 ]
 
 
+def _unique_asset_units() -> list[dict[str, object]]:
+    candidates: dict[tuple[str, str], dict[str, object]] = {}
+    for group in TASK_CANDIDATE_GROUPS:
+        app = str(group["app"])
+        for task in group["variants"]:
+            candidates.setdefault((app, str(task["asset"])), task)
+    units = []
+    for app in APPS:
+        app_key = str(app["key"])
+        for asset in app["assets"]:
+            asset_id = str(asset["id"])
+            task = candidates[(app_key, asset_id)]
+            units.append({"app": app_key, **task})
+    return units
+
+
+UNITS = _unique_asset_units()
+
+
 SPEC = {
-    "schema": "lumi.google-images-canary-experiment/v1",
-    "experiment_id": "google-images-real-task-canary-2026-08-23",
-    "created_at": "2026-08-23",
-    "assignment_salt": "lumi-gimg-canary-v1-frozen",
+    "schema": "lumi.google-images-canary-experiment/v2",
+    "experiment_id": "google-images-unique-asset-canary-2026-08-29",
+    "supersedes_experiment_id": "google-images-real-task-canary-2026-08-23",
+    "created_at": "2026-08-29",
+    "assignment_salt": "lumi-gimg-canary-v2-stratified-frozen",
     "observation_window_days": {"minimum": 42, "maximum": 56},
+    "randomization": {
+        "method": "sha256-ranked-stratified-complete-randomization/v1",
+        "stratum_field": "app",
+        "target_treatment": 19,
+        "target_holdout": 19,
+        "analysis": "stratified_randomization_inference",
+        "estimand": (
+            "App-stratum-size-weighted treatment-minus-holdout difference "
+            "across unique image-page units"
+        ),
+        "inference": (
+            "recompute the frozen within-stratum assignment and use its "
+            "randomization distribution; never treat unlike screenshots as "
+            "same-image pairs"
+        ),
+        "pairing_claim": "none",
+    },
     "apps": APPS,
-    "pairs": PAIRS,
+    "units": UNITS,
 }

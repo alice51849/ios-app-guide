@@ -189,6 +189,16 @@ def experiment_holdouts(result):
     records = ledger.get("records")
     if not isinstance(records, list):
         raise ValueError("Google Images canary ledger records are missing")
+    experiment_spec = ledger.get("experiment_spec")
+    randomization = (
+        experiment_spec.get("randomization")
+        if isinstance(experiment_spec, dict)
+        else None
+    )
+    if not isinstance(randomization, dict):
+        raise ValueError("Google Images canary randomization is missing")
+    treatment_target = int(randomization.get("target_treatment", -1))
+    holdout_target = int(randomization.get("target_holdout", -1))
     holdouts = {
         str(record.get("page_url"))
         for record in records
@@ -199,10 +209,25 @@ def experiment_holdouts(result):
         for record in records
         if isinstance(record, dict) and record.get("arm") == "treatment"
     }
-    if len(holdouts) != 50 or len(treatments) != 50:
+    images = [str(record.get("image_url", "")) for record in records]
+    assets = [str(record.get("asset_id", "")) for record in records]
+    if (
+        len(holdouts) != holdout_target
+        or len(treatments) != treatment_target
+        or treatment_target + holdout_target != len(records)
+    ):
         raise ValueError(
-            "Google Images canary ledger must contain 50 treatment and "
-            "50 holdout URLs"
+            "Google Images canary ledger arm counts do not match its "
+            "randomization contract"
+        )
+    if (
+        not all(images)
+        or len(set(images)) != len(records)
+        or not all(assets)
+        or len(set(assets)) != len(records)
+    ):
+        raise ValueError(
+            "Google Images canary ledger shares an asset across pages or arms"
         )
     known = set(result["url_to_path"])
     errors = []

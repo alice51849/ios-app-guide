@@ -1,0 +1,20 @@
+{
+  "schema": "lumi.google-images-canary-archive/v1",
+  "experiment_id": "google-images-real-task-canary-2026-08-23",
+  "archived_at": "2026-08-29",
+  "source_commit": "504834cbd620a19eeb5dc49ae81d6272d65316c5",
+  "ledger_git_blob": "987a714dea7189575ad38881984064c28329e9a5",
+  "ledger_sha256": "5d6da6e71c925ae4faf5612980c472dd122b3e1856585cf7ee1e8b4f88ff7579",
+  "measurement_git_blob": "7b24ab7d8be29fd090f3cccf20c75eb74b923cf1",
+  "measurement_sha256": "c4246a0336011b5754e21de8876fc24433496f8d3a28b1972225bb41a8420d09",
+  "design_digest": "fc74afef1f6f54845683557990c6e6402e1db52e98350eadb6df5e1f0259ee36",
+  "status": "invalidated_before_activation",
+  "reason": [
+    "100 pages reused 38 image assets",
+    "19 image URLs crossed treatment and holdout arms",
+    "8 claimed pairs reused the same image",
+    "73 pages shared an asset with another page"
+  ],
+  "measurement_window_must_not_mix": true,
+  "replacement_experiment_id": "google-images-unique-asset-canary-2026-08-29"
+}

@@ -135,6 +135,8 @@ def main():
     require([PY, os.path.join(HERE, "demand_tools.py")], env=env)
     require([PY, os.path.join(HERE, "outreach_scorecard.py")], env=env)
     require([PY, os.path.join(HERE, "gen_data_hub.py")], env=env)
+    # 這支之前沒被任何排程呼叫過,線上那份 feed 是手動跑出來的。
+    require([PY, os.path.join(HERE, "agent_product_feed.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_static_api.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_observation_passport.py")], env=env)
     require([PY, os.path.join(HERE, "family_travel_opds_catalog.py")], env=env)
@@ -279,6 +281,20 @@ def main():
     require([PY, os.path.join(HERE, "gen_free_first_links.py")], env=env)
     require([PY, os.path.join(HERE, "gen_app_store_facts.py")], env=env)
     require([PY, os.path.join(HERE, "app_install_decision_routes.py")], env=env)
+    # Source-of-truth lives in GrowthEngine. A newly verified App is allowed to
+    # leave only its unreviewed route cell degraded here, so unrelated daily
+    # generators can still finish and push. The separate Pages pre-upload gate
+    # remains strict and will not deploy this materialization.
+    require(
+        [
+            PY,
+            os.path.join(HERE, "high_intent_decision_routes.py"),
+            "--output-dir",
+            PAGES,
+            "--materialize-current-inventory",
+        ],
+        env=env,
+    )
     require([PY, os.path.join(HERE, "normalize_app_store_links.py")], env=env)
     # ResourceSync writes a Bopomofo page with a clean App Store URL, so it
     # must run before every conversion surface and the attribution pass.
@@ -298,10 +314,6 @@ def main():
     # 問答,下一輪再被改掉。只加站內連結,不動商店連結,所以不影響下游
     # 「一頁一個 App ID」的身份判定。
     require([PY, os.path.join(HERE, "gen_app_page_related.py")], env=env)
-    # Google Images 真實任務圖 canary。先產頁面與凍結 ledger,再讓 link hub
-    # 只接 treatment；holdout 只留在 image sitemap。產生器會要求完整
-    # pt/ct/mt=8，且 ct 固定聚合到 App×Google Images。
-    require([PY, os.path.join(HERE, "google_images_canary.py")], env=env)
     # 連結圖補完:把只存在於 sitemap 的孤兒頁接回首頁 3 次點擊內。必須跑在
     # 所有頁面產生器之後(才掃得到全部頁),而且要在 build_pages_i18n 重寫
     # 語系首頁之後,否則注入的導覽會被蓋掉。
@@ -322,6 +334,9 @@ def main():
     # 導覽,4,413 個可索引頁零入連)。dedupe 也會改頁面的 noindex 狀態,連結圖
     # 要用**最終**的 noindex 狀態重算才正確。跑第二趟讓最後落地的狀態一定是對的。
     require([PY, os.path.join(HERE, "gen_link_hubs.py")], env=env)
+    # 以同一份最終靜態樹封閉 sitemap + link graph，讓新生成的 high-intent
+    # routes 進 sitemap index 且不成為孤兒頁。
+    require([PY, os.path.join(HERE, "close_sitemap_graph.py")], env=env)
     require([PY, os.path.join(HERE, "gen_store_attribution.py")], env=env)
     require([PY, os.path.join(HERE, "validate_webstories.py")], env=env)
     require([PY, os.path.join(HERE, "gen_llms.py"), "--cached-live"], env=env)
@@ -339,6 +354,18 @@ def main():
             os.path.join(HERE, "audit_link_depth.py"),
             "--max-indexable-orphans",
             "0",
+        ],
+        env=env,
+    )
+    # 日常只驗 materialization：已審 route 必須完整閉合；新增 App 的未審
+    # copy gap 可明確 degraded。Pages upload 仍另跑 strict pre-upload gate。
+    require(
+        [
+            PY,
+            os.path.join(HERE, "high_intent_decision_routes.py"),
+            "--output-dir",
+            PAGES,
+            "--check-materialization-closure",
         ],
         env=env,
     )

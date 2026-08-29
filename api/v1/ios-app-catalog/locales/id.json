@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-22",
-  "content_digest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "id",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 43,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -161,6 +161,42 @@
         "currency": "IDR",
         "formatted_price": "Rp 99ribu",
         "storefront_url": "https://apps.apple.com/id/app/id6792483140"
+      }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: Skor kesehatan baterai",
+      "summary": "BattAI BattAI memakai 5 nilai dari API publik iOS: tingkat baterai, status pengisian, Mode Daya Rendah, status termal seluruh perangkat, dan waktu. Hasil lain dihitung dari pembacaan tersebut atau ditambahkan oleh Anda. Setiap detail menunjukkan sumber dan batasnya",
+      "category": "utility",
+      "search_terms": [
+        "Skor kesehatan baterai",
+        "Kapasitas maksimum",
+        "Siklus",
+        "Perawatan pengisian",
+        "Rentang pengisian",
+        "Laju pengisian",
+        "Ekspor data"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/id/app/id6802423998?pt=118326163&ct=iag_api_id&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/id/battai.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "IDR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/id/app/id6802423998"
       }
     },
     {
@@ -488,6 +524,45 @@
       }
     },
     {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite",
+      "summary": "HoursTag Lite - Lihat harga sebenarnya dari barang",
+      "category": "finance",
+      "search_terms": [
+        "hemat",
+        "anggaran",
+        "pengeluaran",
+        "tabungan",
+        "keuangan",
+        "menabung",
+        "belanja impulsif",
+        "uang",
+        "kurangi belanja",
+        "dompet"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/id/app/id6794039979?pt=118326163&ct=iag_api_id&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/id/hourstaglite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "IDR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/id/app/id6794039979"
+      }
+    },
+    {
       "key": "hourstag",
       "app_store_id": "6754218117",
       "name": "HoursTag: Jam untuk Membeli",
@@ -544,45 +619,6 @@
         "currency": "IDR",
         "formatted_price": "Rp 89ribu",
         "storefront_url": "https://apps.apple.com/id/app/id6754218117"
-      }
-    },
-    {
-      "key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
-      "summary": "HoursTag Lite - Lihat harga sebenarnya dari barang",
-      "category": "finance",
-      "search_terms": [
-        "hemat",
-        "anggaran",
-        "pengeluaran",
-        "tabungan",
-        "keuangan",
-        "menabung",
-        "belanja impulsif",
-        "uang",
-        "kurangi belanja",
-        "dompet"
-      ],
-      "purchase_model": "free_with_lifetime_unlock",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": false,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
-      },
-      "app_store_url": "https://apps.apple.com/id/app/id6794039979?pt=118326163&ct=iag_api_id&mt=8",
-      "guide_url": "https://alice51849.github.io/ios-app-guide/id/hourstaglite.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "0",
-        "currency": "IDR",
-        "formatted_price": "Gratis",
-        "storefront_url": "https://apps.apple.com/id/app/id6794039979"
       }
     },
     {
@@ -1555,6 +1591,48 @@
       }
     },
     {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: markah buku AI",
+      "summary": "Simpan sekarang. Dan kali ini benar-benar dibaca.",
+      "category": "productivity",
+      "search_terms": [
+        "artikel",
+        "favorit",
+        "koleksi",
+        "url",
+        "folder",
+        "label",
+        "offline",
+        "resep",
+        "jalan-jalan",
+        "belanja",
+        "catatan",
+        "pribadi",
+        "arsip"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/id/app/id6802505528?pt=118326163&ct=iag_api_id&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/id/savetag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "IDR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/id/app/id6802505528"
+      }
+    },
+    {
       "key": "scanto",
       "app_store_id": "6779977651",
       "name": "ScanTo Pro: PDF & OCR",
@@ -1634,6 +1712,47 @@
         "currency": "IDR",
         "formatted_price": "Gratis",
         "storefront_url": "https://apps.apple.com/id/app/id6788236641"
+      }
+    },
+    {
+      "key": "shotinbox",
+      "app_store_id": "6802166527",
+      "name": "ShotInbox AI: Sort Screenshots",
+      "summary": "Tangkapan layar Anda, rapi Temukan, tangani, dan rapikan setiap tangkapan layar.",
+      "category": "photo-utility",
+      "search_terms": [
+        "foto",
+        "galeri",
+        "pengelola",
+        "pembersih",
+        "duplikat",
+        "serupa",
+        "hapus",
+        "OCR",
+        "pindai teks",
+        "urut waktu",
+        "offline",
+        "privasi"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/id/app/id6802166527?pt=118326163&ct=iag_api_id&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/id/shotinbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "IDR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/id/app/id6802166527"
       }
     },
     {

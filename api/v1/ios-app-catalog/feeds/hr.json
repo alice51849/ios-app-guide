@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-22",
-    "contentDigest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
+    "dateModified": "2026-08-29",
+    "contentDigest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 43
+    "recordCount": 46
   },
   "items": [
     {
@@ -110,6 +110,24 @@
       "date_modified": "2026-08-19T02:01:38Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6802423998",
+      "url": "https://alice51849.github.io/ios-app-guide/hr/battai.html",
+      "external_url": "https://apps.apple.com/hr/app/id6802423998?pt=118326163&ct=iag_feed_hr&mt=8",
+      "title": "BattAI: Ocjena stanja baterije",
+      "content_text": "BattAI BattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. Ostali rezultati izračunavaju se iz tih očitanja ili ih dodajete vi. Svaki podatak prikazuje izvor i ograničenja.",
+      "tags": [
+        "Ocjena stanja baterije",
+        "Maksimalni kapacitet",
+        "Ciklusi",
+        "Pažljivo punjenje",
+        "Raspon punjenja",
+        "Brzina punjenja",
+        "Izvoz podataka"
+      ],
+      "language": "hr",
+      "date_modified": "2026-08-29T04:55:13Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6794178671",
       "url": "https://alice51849.github.io/ios-app-guide/hr/caldaily.html",
       "external_url": "https://apps.apple.com/hr/app/id6794178671?pt=118326163&ct=iag_feed_hr&mt=8",
@@ -165,7 +183,7 @@
         "pdf"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6782251621",
@@ -202,7 +220,7 @@
         "žene"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790418321",
@@ -282,7 +300,7 @@
         "csv"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793436548",
@@ -299,6 +317,26 @@
         "novac",
         "štednja",
         "putni troškovi"
+      ],
+      "language": "hr",
+      "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6794039979",
+      "url": "https://alice51849.github.io/ios-app-guide/hr/hourstaglite.html",
+      "external_url": "https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=iag_feed_hr&mt=8",
+      "title": "HoursTag Lite",
+      "content_text": "HoursTag Lite - Pogledaj pravu cijenu stvari",
+      "tags": [
+        "štednja",
+        "budžet",
+        "troškovi",
+        "ušteda",
+        "financije",
+        "uštedjeti novac",
+        "impulzivna kupnja",
+        "novac",
+        "trošiti manje"
       ],
       "language": "hr",
       "date_modified": "2026-08-19T02:01:38Z"
@@ -339,27 +377,7 @@
         "vrijeme"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
-    },
-    {
-      "id": "https://apps.apple.com/app/id6794039979",
-      "url": "https://alice51849.github.io/ios-app-guide/hr/hourstaglite.html",
-      "external_url": "https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=iag_feed_hr&mt=8",
-      "title": "HoursTag Lite",
-      "content_text": "HoursTag Lite - Pogledaj pravu cijenu stvari",
-      "tags": [
-        "štednja",
-        "budžet",
-        "troškovi",
-        "ušteda",
-        "financije",
-        "uštedjeti novac",
-        "impulzivna kupnja",
-        "novac",
-        "trošiti manje"
-      ],
-      "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780107485",
@@ -395,7 +413,7 @@
         "ucenje"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6773017109",
@@ -434,7 +452,7 @@
         "ucenje"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6775773117",
@@ -468,7 +486,7 @@
         "offline"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778748533",
@@ -507,7 +525,7 @@
         "ucenje"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778491147",
@@ -542,7 +560,7 @@
         "alphabet"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778269699",
@@ -610,7 +628,7 @@
         "educational games"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6776958488",
@@ -651,7 +669,7 @@
         "练习"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779750237",
@@ -694,7 +712,7 @@
         "贴纸"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -734,7 +752,7 @@
         "贴纸"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6787193643",
@@ -800,7 +818,7 @@
         "亲子"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792850916",
@@ -946,7 +964,7 @@
         "cozy"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -989,7 +1007,30 @@
         "memorija"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802505528",
+      "url": "https://alice51849.github.io/ios-app-guide/hr/savetag.html",
+      "external_url": "https://apps.apple.com/hr/app/id6802505528?pt=118326163&ct=iag_feed_hr&mt=8",
+      "title": "SaveTag: AI oznake",
+      "content_text": "Spremi sada. I ovaj put stvarno pročitaj.",
+      "tags": [
+        "za čitanje",
+        "favoriti",
+        "zbirka",
+        "url",
+        "mapa",
+        "kategorije",
+        "izvanmrežno",
+        "recepti",
+        "putovanja",
+        "kupnja",
+        "privatno",
+        "arhiva"
+      ],
+      "language": "hr",
+      "date_modified": "2026-08-27T11:21:51Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",
@@ -1012,7 +1053,7 @@
         "doc scanner"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6788236641",
@@ -1035,6 +1076,28 @@
       ],
       "language": "hr",
       "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802166527",
+      "url": "https://alice51849.github.io/ios-app-guide/hr/shotinbox.html",
+      "external_url": "https://apps.apple.com/hr/app/id6802166527?pt=118326163&ct=iag_feed_hr&mt=8",
+      "title": "ShotInbox AI: Sort Screenshots",
+      "content_text": "Vaše snimke, uredno složene Pronađite, riješite i očistite svaku snimku.",
+      "tags": [
+        "čišćenje",
+        "fotografija",
+        "duplikati",
+        "slične",
+        "slike",
+        "pretraga",
+        "teksta",
+        "galerija",
+        "brisanje",
+        "OCR",
+        "photo cleaner"
+      ],
+      "language": "hr",
+      "date_modified": "2026-08-26T04:57:37Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780575828",
@@ -1076,7 +1139,7 @@
         "id"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792856304",
@@ -1128,7 +1191,7 @@
         "email"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6791299610",
@@ -1224,7 +1287,7 @@
         "popravak"
       ],
       "language": "hr",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",

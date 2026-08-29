@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+from contextlib import redirect_stderr, redirect_stdout
+import io
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -167,7 +170,7 @@ class SharedClosureTests(unittest.TestCase):
 
 
 class PublishedMatrixTests(unittest.TestCase):
-    def test_all_43_live_apps_have_all_50_localized_guide_pages(self):
+    def test_every_live_app_has_all_50_localized_guide_pages(self):
         pages = Path(gen_locale_indexation.PAGES)
         if not pages.is_dir() or not (pages / "en-US").is_dir():
             self.skipTest("materialized Pages tree is unavailable")
@@ -178,7 +181,12 @@ class PublishedMatrixTests(unittest.TestCase):
                 refresh=False,
             )
         )
-        self.assertEqual(43, len(keys))
+        # A floor, not an exact count. The real assertion is the one below --
+        # every live app carries all 50 locales -- and this only guards against
+        # the live set collapsing to a handful and making that pass vacuously.
+        # Pinning the exact number meant every launch failed the daily run:
+        # ShotInbox AI shipping on 2026-08-24 took it from 43 to 44.
+        self.assertGreaterEqual(len(keys), len(APPSTORE) - 3)
         self.assertEqual(50, len(OFFICIAL_LOCALES))
         missing = [
             f"{locale}/{key}.html"
@@ -303,6 +311,100 @@ class ParallelSuiteTests(unittest.TestCase):
                 2,
                 ("suite.missing",),
             )
+
+    def test_discovery_rejects_duplicate_test_ids(self):
+        duplicate = unittest.FunctionTestCase(lambda: None)
+        suite = unittest.TestSuite((duplicate, duplicate))
+        with (
+            mock.patch.object(
+                unittest.defaultTestLoader,
+                "discover",
+                return_value=suite,
+            ),
+            self.assertRaisesRegex(
+                RuntimeError,
+                "no tests or duplicates",
+            ),
+        ):
+            parallel_unittest.discover_tests(GEO / "tests")
+
+    def test_parallel_matches_serial_ids_and_failure_propagation(self):
+        with tempfile.TemporaryDirectory(dir=GEO / "tests") as directory:
+            fixture = Path(directory)
+            for module in (
+                "test_parallel_fixture_alpha",
+                "test_parallel_fixture_beta",
+            ):
+                self.addCleanup(sys.modules.pop, module, None)
+            (fixture / "test_parallel_fixture_alpha.py").write_text(
+                "import unittest\n\n"
+                "class AlphaTests(unittest.TestCase):\n"
+                "    def test_alpha(self):\n"
+                "        pass\n\n"
+                "    def test_failure(self):\n"
+                "        self.fail('fixture failure')\n",
+                encoding="utf-8",
+            )
+            (fixture / "test_parallel_fixture_beta.py").write_text(
+                "import unittest\n\n"
+                "class BetaTests(unittest.TestCase):\n"
+                "    def test_beta(self):\n"
+                "        pass\n",
+                encoding="utf-8",
+            )
+            serial_suite = unittest.defaultTestLoader.discover(
+                str(fixture),
+                pattern="test_*.py",
+                top_level_dir=str(fixture),
+            )
+            serial_ids = sorted(parallel_unittest._test_ids(serial_suite))
+            parallel_ids = parallel_unittest.discover_tests(fixture)
+            self.assertEqual(serial_ids, parallel_ids)
+            self.assertEqual(3, len(parallel_ids))
+
+            environment = dict(os.environ)
+            environment["PYTHONPATH"] = str(fixture)
+            serial = subprocess.run(
+                [
+                    sys.executable,
+                    "-m",
+                    "unittest",
+                    "discover",
+                    "-s",
+                    str(fixture),
+                    "-p",
+                    "test_*.py",
+                    "-q",
+                    "-b",
+                ],
+                cwd=GEO.parents[1],
+                env=environment,
+                check=False,
+                capture_output=True,
+                text=True,
+            )
+            heavy = (parallel_ids[0], parallel_ids[-1])
+            fixture_lanes = parallel_unittest.partition_tests(
+                parallel_ids,
+                3,
+                heavy,
+            )
+            with (
+                mock.patch.object(
+                    parallel_unittest,
+                    "partition_tests",
+                    return_value=fixture_lanes,
+                ),
+                redirect_stdout(io.StringIO()),
+                redirect_stderr(io.StringIO()),
+            ):
+                parallel_rc = parallel_unittest.run_all(
+                    parallel_ids,
+                    3,
+                    start_dir=fixture,
+                )
+            self.assertEqual(1, serial.returncode)
+            self.assertEqual(serial.returncode, parallel_rc)
 
 
 if __name__ == "__main__":

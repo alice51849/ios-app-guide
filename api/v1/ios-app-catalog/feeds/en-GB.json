@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-22",
-    "contentDigest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
+    "dateModified": "2026-08-29",
+    "contentDigest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 43
+    "recordCount": 46
   },
   "items": [
     {
@@ -112,6 +112,24 @@
       "date_modified": "2026-08-19T02:01:38Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6802423998",
+      "url": "https://alice51849.github.io/ios-app-guide/en-GB/battai.html",
+      "external_url": "https://apps.apple.com/gb/app/id6802423998?pt=118326163&ct=iag_feed_en_gb&mt=8",
+      "title": "BattAI: Battery health score",
+      "content_text": "BattAI BattAI uses five values from public iOS APIs: battery level, charge state, Low Power Mode, whole-device thermal state, and time. Other results are calculated from those readings or added by you. Each detail shows its source and limits.",
+      "tags": [
+        "Battery health score",
+        "Maximum capacity",
+        "Cycles",
+        "Charge care",
+        "Charge range",
+        "Charge rate",
+        "Export data"
+      ],
+      "language": "en-GB",
+      "date_modified": "2026-08-29T04:55:13Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6794178671",
       "url": "https://alice51849.github.io/ios-app-guide/en-GB/caldaily.html",
       "external_url": "https://apps.apple.com/gb/app/id6794178671?pt=118326163&ct=iag_feed_en_gb&mt=8",
@@ -176,7 +194,7 @@
         "application"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6782251621",
@@ -218,7 +236,7 @@
         "calendar"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790418321",
@@ -302,7 +320,7 @@
         "fx"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793436548",
@@ -318,6 +336,25 @@
         "exchange rate",
         "spending tracker",
         "bookkeeping"
+      ],
+      "language": "en-GB",
+      "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6794039979",
+      "url": "https://alice51849.github.io/ios-app-guide/en-GB/hourstaglite.html",
+      "external_url": "https://apps.apple.com/gb/app/id6794039979?pt=118326163&ct=iag_feed_en_gb&mt=8",
+      "title": "HoursTag Lite",
+      "content_text": "HoursTag Lite - See the real price of things",
+      "tags": [
+        "budget",
+        "spending tracker",
+        "savings",
+        "expense tracker",
+        "money manager",
+        "budget planner",
+        "frugal",
+        "impulse spending"
       ],
       "language": "en-GB",
       "date_modified": "2026-08-19T02:01:38Z"
@@ -360,26 +397,7 @@
         "impulse"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
-    },
-    {
-      "id": "https://apps.apple.com/app/id6794039979",
-      "url": "https://alice51849.github.io/ios-app-guide/en-GB/hourstaglite.html",
-      "external_url": "https://apps.apple.com/gb/app/id6794039979?pt=118326163&ct=iag_feed_en_gb&mt=8",
-      "title": "HoursTag Lite",
-      "content_text": "HoursTag Lite - See the real price of things",
-      "tags": [
-        "budget",
-        "spending tracker",
-        "savings",
-        "expense tracker",
-        "money manager",
-        "budget planner",
-        "frugal",
-        "impulse spending"
-      ],
-      "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780107485",
@@ -414,7 +432,7 @@
         "work timer"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6773017109",
@@ -451,7 +469,7 @@
         "early learning"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6775773117",
@@ -488,7 +506,7 @@
         "early learning"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778748533",
@@ -524,7 +542,7 @@
         "sounds"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778491147",
@@ -560,7 +578,7 @@
         "sounds"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778269699",
@@ -633,7 +651,7 @@
         "sats"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6776958488",
@@ -676,7 +694,7 @@
         "montessori"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779750237",
@@ -719,7 +737,7 @@
         "kids"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -762,7 +780,7 @@
         "kids"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6787193643",
@@ -832,7 +850,7 @@
         "外出"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792850916",
@@ -984,7 +1002,7 @@
         "filter"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -1030,7 +1048,30 @@
         "offline"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802505528",
+      "url": "https://alice51849.github.io/ios-app-guide/en-GB/savetag.html",
+      "external_url": "https://apps.apple.com/gb/app/id6802505528?pt=118326163&ct=iag_feed_en_gb&mt=8",
+      "title": "SaveTag: AI Social Bookmarks",
+      "content_text": "Save it now. Actually read it later.",
+      "tags": [
+        "url",
+        "organiser",
+        "collection",
+        "offline",
+        "inbox",
+        "archive",
+        "clipboard",
+        "folder",
+        "curate",
+        "wishlist",
+        "recipes",
+        "to watch"
+      ],
+      "language": "en-GB",
+      "date_modified": "2026-08-27T11:21:51Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",
@@ -1054,7 +1095,7 @@
         "fax"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6788236641",
@@ -1078,6 +1119,30 @@
       ],
       "language": "en-GB",
       "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802166527",
+      "url": "https://alice51849.github.io/ios-app-guide/en-GB/shotinbox.html",
+      "external_url": "https://apps.apple.com/gb/app/id6802166527?pt=118326163&ct=iag_feed_en_gb&mt=8",
+      "title": "ShotInbox AI: Sort Screenshots",
+      "content_text": "Your Screenshots, Sorted Find, act on, and clear every screenshot.",
+      "tags": [
+        "organiser",
+        "cleaner",
+        "photos",
+        "duplicates",
+        "similar",
+        "text",
+        "storage",
+        "album",
+        "receipts",
+        "links",
+        "notes",
+        "offline",
+        "private"
+      ],
+      "language": "en-GB",
+      "date_modified": "2026-08-26T04:57:37Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780575828",
@@ -1122,7 +1187,7 @@
         "badge"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792856304",
@@ -1177,7 +1242,7 @@
         "notes"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6791299610",
@@ -1263,7 +1328,7 @@
         "pixel"
       ],
       "language": "en-GB",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",

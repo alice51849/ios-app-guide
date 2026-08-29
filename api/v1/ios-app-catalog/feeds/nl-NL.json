@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-22",
-    "contentDigest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
+    "dateModified": "2026-08-29",
+    "contentDigest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 43
+    "recordCount": 46
   },
   "items": [
     {
@@ -105,6 +105,24 @@
       "date_modified": "2026-08-19T02:01:38Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6802423998",
+      "url": "https://alice51849.github.io/ios-app-guide/nl-NL/battai.html",
+      "external_url": "https://apps.apple.com/nl/app/id6802423998?pt=118326163&ct=iag_feed_nl_nl&mt=8",
+      "title": "BattAI: Batterijconditiescore",
+      "content_text": "BattAI BattAI gebruikt vijf waarden uit openbare iOS-API’s: batterijniveau, laadstatus, Energiebesparing, warmtestatus van het hele toestel en tijd. Andere resultaten worden uit die metingen berekend of door jou toegevoegd. Elk detail toont bron en grenzen.",
+      "tags": [
+        "Batterijconditiescore",
+        "Maximale capaciteit",
+        "Cycli",
+        "Zorgvuldig laden",
+        "Laadbereik",
+        "Laadsnelheid",
+        "Gegevens exporteren"
+      ],
+      "language": "nl-NL",
+      "date_modified": "2026-08-29T04:55:13Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6794178671",
       "url": "https://alice51849.github.io/ios-app-guide/nl-NL/caldaily.html",
       "external_url": "https://apps.apple.com/nl/app/id6794178671?pt=118326163&ct=iag_feed_nl_nl&mt=8",
@@ -161,7 +179,7 @@
         "loopbaan"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6782251621",
@@ -200,7 +218,7 @@
         "vrouwen"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790418321",
@@ -283,7 +301,7 @@
         "euro"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793436548",
@@ -301,6 +319,27 @@
         "sparen",
         "reiskosten",
         "reis"
+      ],
+      "language": "nl-NL",
+      "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6794039979",
+      "url": "https://alice51849.github.io/ios-app-guide/nl-NL/hourstaglite.html",
+      "external_url": "https://apps.apple.com/nl/app/id6794039979?pt=118326163&ct=iag_feed_nl_nl&mt=8",
+      "title": "HoursTag Lite",
+      "content_text": "HoursTag Lite - De echte prijs van dingen",
+      "tags": [
+        "besparen",
+        "budget",
+        "uitgaven",
+        "sparen",
+        "financiën",
+        "geld besparen",
+        "impulsaankopen",
+        "geld",
+        "minder uitgeven",
+        "werkuren"
       ],
       "language": "nl-NL",
       "date_modified": "2026-08-19T02:01:38Z"
@@ -342,28 +381,7 @@
         "loon"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
-    },
-    {
-      "id": "https://apps.apple.com/app/id6794039979",
-      "url": "https://alice51849.github.io/ios-app-guide/nl-NL/hourstaglite.html",
-      "external_url": "https://apps.apple.com/nl/app/id6794039979?pt=118326163&ct=iag_feed_nl_nl&mt=8",
-      "title": "HoursTag Lite",
-      "content_text": "HoursTag Lite - De echte prijs van dingen",
-      "tags": [
-        "besparen",
-        "budget",
-        "uitgaven",
-        "sparen",
-        "financiën",
-        "geld besparen",
-        "impulsaankopen",
-        "geld",
-        "minder uitgeven",
-        "werkuren"
-      ],
-      "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780107485",
@@ -398,7 +416,7 @@
         "werktimer"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6773017109",
@@ -433,7 +451,7 @@
         "taal"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6775773117",
@@ -470,7 +488,7 @@
         "chinese"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778748533",
@@ -508,7 +526,7 @@
         "offline"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778491147",
@@ -546,7 +564,7 @@
         "offline"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778269699",
@@ -619,7 +637,7 @@
         "geldrekenen"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6776958488",
@@ -659,7 +677,7 @@
         "montessori"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779750237",
@@ -704,7 +722,7 @@
         "睡前"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -746,7 +764,7 @@
         "睡前"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6787193643",
@@ -813,7 +831,7 @@
         "亲子"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792850916",
@@ -955,7 +973,7 @@
         "lichtlek"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -999,7 +1017,31 @@
         "offline"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802505528",
+      "url": "https://alice51849.github.io/ios-app-guide/nl-NL/savetag.html",
+      "external_url": "https://apps.apple.com/nl/app/id6802505528?pt=118326163&ct=iag_feed_nl_nl&mt=8",
+      "title": "SaveTag: AI-bladwijzers",
+      "content_text": "Nu bewaren. En deze keer ook echt lezen.",
+      "tags": [
+        "leeslijst",
+        "favorieten",
+        "verzamelen",
+        "url",
+        "map",
+        "labels",
+        "offline",
+        "recepten",
+        "reizen",
+        "winkelen",
+        "privé",
+        "archief",
+        "lijst"
+      ],
+      "language": "nl-NL",
+      "date_modified": "2026-08-27T11:21:51Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",
@@ -1024,7 +1066,7 @@
         "fax"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6788236641",
@@ -1046,6 +1088,27 @@
       ],
       "language": "nl-NL",
       "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802166527",
+      "url": "https://alice51849.github.io/ios-app-guide/nl-NL/shotinbox.html",
+      "external_url": "https://apps.apple.com/nl/app/id6802166527?pt=118326163&ct=iag_feed_nl_nl&mt=8",
+      "title": "ShotInbox AI: Sort Screenshots",
+      "content_text": "Je screenshots, netjes geordend Vind, verwerk en ruim elk screenshot op.",
+      "tags": [
+        "foto's",
+        "dubbele",
+        "opruimen",
+        "OCR",
+        "tekstherkenning",
+        "zoeken",
+        "tijdlijn",
+        "soortgelijke",
+        "privé",
+        "eenmalige aankoop"
+      ],
+      "language": "nl-NL",
+      "date_modified": "2026-08-26T04:57:37Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780575828",
@@ -1085,7 +1148,7 @@
         "pdf"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792856304",
@@ -1140,7 +1203,7 @@
         "actielijst"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6791299610",
@@ -1229,7 +1292,7 @@
         "4k"
       ],
       "language": "nl-NL",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",

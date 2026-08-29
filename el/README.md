@@ -4,7 +4,7 @@
 
 Ένας πρωτογενής κατάλογος που δείχνει για ποιον προορίζεται κάθε εφαρμογή, το έργο που προσπαθεί να ολοκληρώσει και την άμεση διαδρομή στο App Store.
 
-Προθέσεις αναζήτησης που έχουν συνταχθεί από τον εκδότη για 43 επαληθευμένες ενεργές εφαρμογές iOS και 50 Apple τοπικές γλώσσες.
+Προθέσεις αναζήτησης που έχουν συνταχθεί από τον εκδότη για 46 επαληθευμένες ενεργές εφαρμογές iOS και 50 Apple τοπικές γλώσσες.
 
 **Τοπική γλώσσα:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · **el** · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -14,11 +14,11 @@
 >
 > Οι ερωτήσεις είναι επιμελημένες περιγραφές των προοριζόμενων περιπτώσεων χρήσης, όχι μετρημένα δεδομένα όγκου αναζήτησης, κατατάξεις, ανεξάρτητες κριτικές ή συστάσεις χρηστών.
 
-## Κατάλογος Προθέσεων Αναζήτησης Εκδότη Lumi Studio · MCP v1.2.0 · Agent Skill
+## Κατάλογος Προθέσεων Αναζήτησης Εκδότη Lumi Studio · MCP v1.3.0 · Agent Skill
 
 Ένας πρωτογενής κατάλογος που δείχνει για ποιον προορίζεται κάθε εφαρμογή, το έργο που προσπαθεί να ολοκληρώσει και την άμεση διαδρομή στο App Store.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -93,6 +93,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **AI Brief** | AI Brief — Αρχεία σε σαφές πλαίσιο \| iOS App | Καλύτερο πλαίσιο. Καλύτερες απαντήσεις. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/aibriefpack.html) | [Αποκτήστε το AI Brief από το App Store](https://apps.apple.com/gr/app/id6791658210?pt=118326163&ct=iag_gh_el&mt=8) |
 | **Aim990** | η καλύτερη εφαρμογή προετοιμασίας TOEIC με πρόγραμμα μελέτης εκτός σύνδεσης για iPhone | Το Μέρος 5 φαίνεται σύντομο, αλλά οι ερωτήσεις με ελλιπείς προτάσεις μπορούν να καταναλώσουν χρόνο αν η γραμματική και το λεξιλόγιο δεν είναι αυτόματα. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Κατεβάστε το Aim990 από το App Store →](https://apps.apple.com/gr/app/id6784974530?pt=118326163&ct=iag_gh_el&mt=8) |
 | **Aim990 Plus** | Aim990 Plus — Εξάσκηση με χρονόμετρο \| iOS App | Το Aim990 Plus είναι ένα εργαλείο εξάσκησης για ενήλικες που θέλουν να κατανοούν με σιγουριά τον προφορικό και γραπτό αγγλικό λόγο όταν ο χρόνος είναι | Λήψη με χρέωση | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/aim990plus.html) | [Αποκτήστε το Aim990 Plus από το App Store](https://apps.apple.com/gr/app/id6792483140?pt=118326163&ct=iag_gh_el&mt=8) |
+| **BattAI: Υγεία μπαταρίας** | BattAI: Υγεία μπαταρίας — Σαφείς κανόνες, πηγές και όρια \| iOS App | BattAI Το BattAI χρησιμοποιεί πέντε τιμές από τα δημόσια API του iOS: επίπεδο μπαταρίας, κατάσταση φόρτισης, Λειτουργία χαμηλής ισχύος, θερμική κατάσταση όλης της συσκευής και χρόνο. Τα άλλα αποτελέσματα υπολογίζονται από αυτές τις μετρήσεις ή προστίθενται από εσάς. Κάθε στοιχείο δείχνει την πηγή και τα όριά του. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/battai.html) | [Αποκτήστε το BattAI: Υγεία μπαταρίας από το App Store](https://apps.apple.com/gr/app/id6802423998?pt=118326163&ct=iag_gh_el&mt=8) |
 | **CalDaily αριθμομηχανή** | CalDaily αριθμομηχανή — Widget, εργαλεία, 100 θέματα \| iOS App | Μια αριθμομηχανή που θα συνεχίσετε πραγματικά να χρησιμοποιείτε, επειδή θυμάται τι κρύβεται πίσω από κάθε αριθμό. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/caldaily.html) | [Αποκτήστε το CalDaily αριθμομηχανή από το App Store](https://apps.apple.com/gr/app/id6794178671?pt=118326163&ct=iag_gh_el&mt=8) |
 | **CV Desk** | η καλύτερη εφαρμογή δημιουργίας βιογραφικού για αλλαγή καριέρας 2026 | Όταν αλλάζετε πεδίο, το πρόβλημα με το βιογραφικό είναι διαφορετικό: η εμπειρία σας είναι πραγματική αλλά «άσχετη» στο χαρτί, και τα φίλτρα ATS σας απορρίπτουν πριν το διαβάσει άνθρωπος — το CV Desk είναι φτιαγμένο γι’ αυτό. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-resume-builder-app-for-career-changers-2026.html) | [Κατεβάστε το CV Desk από το App Store →](https://apps.apple.com/gr/app/id6781337213?pt=118326163&ct=iag_gh_el&mt=8) |
 | **Cyca** | καλύτερη εφαρμογή παρακολούθησης περιόδου χωρίς λογαριασμό για iPhone | Σε μια κατηγορία όπου η ευαισθησία των δεδομένων είναι το παν, η σωστή εφαρμογή παρακολούθησης περιόδου κρατά όλα — ροή, διάθεση, συμπτώματα, θερμοκρασία, οικειότητα — στη συσκευή σας, χωρίς λογαριασμό και χωρίς συγχρονισμό στο cloud — το Cyca είναι φτιαγμένο γι’ αυτό. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-period-tracker-app-no-account-required-iphone.html) | [Κατεβάστε το Cyca από το App Store →](https://apps.apple.com/gr/app/id6782251621?pt=118326163&ct=iag_gh_el&mt=8) |
@@ -120,8 +121,10 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **OnePage PPT: Παρουσίαση AI** | OnePage PPT: Παρουσίαση AI — Σημειώσεις σε μία διαφάνεια \| iOS App | Μετατρέψτε έναν τοίχο κειμένου σε ΜΙΑ σελίδα που όντως διαβάζεται. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/onepageppt.html) | [Αποκτήστε το OnePage PPT: Παρουσίαση AI από το App Store](https://apps.apple.com/gr/app/id6798814385?pt=118326163&ct=iag_gh_el&mt=8) |
 | **PhotoCream** | καλύτερος επεξεργαστής φωτογραφιών με φιλμ για ταξιδιωτικούς δημιουργούς στο iphone με εφάπαξ πληρωμή | Οι ταξιδιωτικοί δημιουργοί χρειάζονται επαναλαμβανόμενο φιλμ εφέ που προσθέτει κόκκο, αλογονοποίηση και χρωματικό χαρακτήρα χωρίς να κάνει κάθε προορισμό ίδιο φίλτρο — το PhotoCream είναι φτιαγμένο γι’ αυτό. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Αποκτήστε το PhotoCream στο App Store →](https://apps.apple.com/gr/app/id6781808054?pt=118326163&ct=iag_gh_el&mt=8) |
 | **PicClear** | η καλύτερη εφαρμογή για απελευθέρωση χώρου iPhone διαγράφοντας διπλές φωτογραφίες | Για να ελευθερώσετε χώρο γρήγορα, στοχεύστε πρώτα τα μεγαλύτερα κέρδη: ακριβή διπλότυπα, σχεδόν ίδια στιγμιότυπα burst, θολές απορρίψεις και μεγάλα βίντεο — το PicClear σας βοηθά να το κάνετε στο iPhone σας. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Κατεβάστε το PicClear από το App Store →](https://apps.apple.com/gr/app/id6780223070?pt=118326163&ct=iag_gh_el&mt=8) |
+| **SaveTag: σελιδοδείκτες AI** | SaveTag: σελιδοδείκτες AI — Αποθήκευσε και διάβασε μετά \| iOS App | Αποθήκευσέ το τώρα. Και αυτή τη φορά διάβασέ το στ' αλήθεια. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/savetag.html) | [Αποκτήστε το SaveTag: σελιδοδείκτες AI από το App Store](https://apps.apple.com/gr/app/id6802505528?pt=118326163&ct=iag_gh_el&mt=8) |
 | **ScanTo Pro** | η καλύτερη εφαρμογή σαρωτή εγγράφων εκτός σύνδεσης χωρίς cloud για νοσηλευτές | Αν σαρώσετε φόρμες συγκατάθεσης ασθενών, έγγραφα εξιτηρίου ή παραπομπές, ο σαρωτής πρέπει να κρατά αυτά τα έγγραφα στη συσκευή — ποτέ ανεβασμένα σε cloud άλλου — το ScanTo Pro είναι φτιαγμένο γι' αυτό. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Κατεβάστε το ScanTo Pro από το App Store →](https://apps.apple.com/gr/app/id6779977651?pt=118326163&ct=iag_gh_el&mt=8) |
 | **Sereno** | καλύτερη εφαρμογή λευκού θορύβου για να κοιμηθείτε χωρίς συνδρομή | Για τον ύπνο, μια συνδρομή που ενοχλεί κάθε μήνα είναι το αντίθετο της ηρεμίας — το Sereno είναι φτιαγμένο γι’ αυτό. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Κατεβάστε το Sereno από το App Store →](https://apps.apple.com/gr/app/id6788236641?pt=118326163&ct=iag_gh_el&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Βρες και οργάνωσε στιγμιότυπα \| iOS App | Τα στιγμιότυπά σας, τακτοποιημένα | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/shotinbox.html) | [Αποκτήστε το ShotInbox AI: Sort Screenshots από το App Store](https://apps.apple.com/gr/app/id6802166527?pt=118326163&ct=iag_gh_el&mt=8) |
 | **Snapport** | καλύτερη εφαρμογή φωτογραφίας διαβατηρίου για μωρά και νήπια στο σπίτι | Για φωτογραφία διαβατηρίου μωρού, κανείς άλλος δεν πρέπει να φαίνεται και το φόντο πρέπει να είναι απλό — αλλά για βρέφη τα μάτια δεν χρειάζεται να είναι πλήρως ανοιχτά. | Λήψη με χρέωση | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Κατεβάστε το Snapport από το App Store →](https://apps.apple.com/gr/app/id6780575828?pt=118326163&ct=iag_gh_el&mt=8) |
 | **Snapport Lite** | Snapport Lite — Φωτογραφίες διαβατηρίου \| iOS App | Snapport Lite - Φτιάξτε φωτογραφίες διαβατηρίου, βίζας και εγγράφων με καθοδηγούμενες διαστάσεις, εργαλεία φόντου και εξαγωγή έτοιμη προς εκτύπωση. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/snapportlite.html) | [Αποκτήστε το Snapport Lite από το App Store](https://apps.apple.com/gr/app/id6792856304?pt=118326163&ct=iag_gh_el&mt=8) |
 | **Sono Note** | καλύτερη εφαρμογή φωνητικών σημειώσεων που συνοψίζει συναντήσεις σε iPhone | Μετά από μια κλήση δεν θέλετε μια ακατέργαστη μεταγραφή — θέλετε τη σύνοψη, τις ενέργειες και ένα προσχέδιο παρακολούθησης — το Sono Note είναι φτιαγμένο γι’ αυτό. | Δωρεάν για αρχή · ξεκλείδωμα με μία αγορά | [Οδηγός](https://alice51849.github.io/ios-app-guide/el/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Κατεβάστε το Sono Note από το App Store →](https://apps.apple.com/gr/app/id6782139553?pt=118326163&ct=iag_gh_el&mt=8) |
@@ -135,7 +138,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## Κατεβάστε το πλήρες σύνολο δεδομένων
 
-Τα αρχεία JSON, JSONL και CSV περιέχουν τις ίδιες 2.150 εγγραφές.
+Τα αρχεία JSON, JSONL και CSV περιέχουν τις ίδιες 2.300 εγγραφές.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +146,6 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 [Αρχική](https://alice51849.github.io/ios-app-guide/el/index.html) · [Ανοιχτά δεδομένα](https://alice51849.github.io/ios-app-guide/el/data/lumi-studio-publisher-search-intent-catalog.html) · [Άδεια](https://creativecommons.org/licenses/by/4.0/)
 
-Ενημερώθηκε: 2026-08-21
+Ενημερώθηκε: 2026-08-29
 
 Η άδεια CC BY 4.0 ισχύει για τη σύνθεση του αρχικού καταλόγου· τα ονόματα εφαρμογών και τα σήματα του App Store ανήκουν στους ιδιοκτήτες τους.

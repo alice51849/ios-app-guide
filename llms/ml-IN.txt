@@ -3,29 +3,29 @@
 > ഓരോ iOS ആപ്പിന്റെയും ഫീച്ചറുകൾ, വില, പതിവ് ചോദ്യങ്ങൾ എന്നിവയുടെ ക്രമീകരിച്ച വിവരങ്ങൾ.
 
 locale: ml-IN
-apps: 43
+apps: 46
 - ആപ്പ് ഡയറക്ടറി: https://alice51849.github.io/ios-app-guide/ml-IN/tools/private-pay-once-iphone-app-finder.html
 - ആപ്പ് ഡയറക്ടറി · PWA: https://alice51849.github.io/ios-app-guide/ml-IN/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ml-IN.json
 - ആപ്പ് ഡയറക്ടറി · SVG: https://alice51849.github.io/ios-app-guide/ml-IN/visuals/
-- ആപ്പ് ഡയറക്ടറി · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- ആപ്പ് ഡയറക്ടറി · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- ആപ്പ് ഡയറക്ടറി · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
-- ആപ്പ് ഡയറക്ടറി · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
-- ആപ്പ് ഡയറക്ടറി · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
+- ആപ്പ് ഡയറക്ടറി · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- ആപ്പ് ഡയറക്ടറി · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- ആപ്പ് ഡയറക്ടറി · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- ആപ്പ് ഡയറക്ടറി · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- ആപ്പ് ഡയറക്ടറി · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
 - ആപ്പ് ഡയറക്ടറി · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- ആപ്പ് ഡയറക്ടറി · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
-- ആപ്പ് ഡയറക്ടറി · Agent Skill · ml-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/ml-IN.json
-- ആപ്പ് ഡയറക്ടറി · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
-- ആപ്പ് ഡയറക്ടറി · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
-- ആപ്പ് ഡയറക്ടറി · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
-- ആപ്പ് ഡയറക്ടറി · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
-- ആപ്പ് ഡയറക്ടറി · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
-- ആപ്പ് ഡയറക്ടറി · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- ആപ്പ് ഡയറക്ടറി · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- ആപ്പ് ഡയറക്ടറി · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- ആപ്പ് ഡയറക്ടറി · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- ആപ്പ് ഡയറക്ടറി · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- ആപ്പ് ഡയറക്ടറി · Agent Skill · ml-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/ml-IN.json
+- ആപ്പ് ഡയറക്ടറി · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- ആപ്പ് ഡയറക്ടറി · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- ആപ്പ് ഡയറക്ടറി · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- ആപ്പ് ഡയറക്ടറി · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- ആപ്പ് ഡയറക്ടറി · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- ആപ്പ് ഡയറക്ടറി · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- ആപ്പ് ഡയറക്ടറി · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- ആപ്പ് ഡയറക്ടറി · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- ആപ്പ് ഡയറക്ടറി · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/ml-IN/notesstudio100.html) — കുറിപ്പെഴുത്തും PDF പഠനവും
   - കൈകൊണ്ട് എഴുതൂ, ടൈപ്പ് ചെയ്യൂ, PDF പഠിക്കൂ. 29 പേനകളും ബ്രഷുകളും, 100 വ്യത്യസ്ത ശൈലികൾ, പേജിൽ ചേർക്കുന്ന ഓഡിയോ, ഉപകരണത്തിലെ തിരച്ചിൽ, ഇടവിട്ട ആവർത്തനം എന്നിവ ലഭ്യമാണ്.
@@ -43,6 +43,10 @@ apps: 43
   - സമയസമ്മർദത്തിൽ കേൾവിയും വായനയും മെച്ചപ്പെടുത്തൂ. ലഘു തുടക്കം മുതൽ തെറ്റുകളുടെ പുനരഭ്യാസം വരെ വ്യക്തമായ ക്രമത്തിൽ ഓരോ ദിവസവും മുന്നേറൂ.
   - വില: ഒറ്റ മുൻകൂർ വിലയ്ക്കുള്ള പെയ്ഡ് ഡൗൺലോഡ്, സബ്സ്ക്രിപ്ഷൻ ഇല്ല.
   - App Store: https://apps.apple.com/in/app/id6792483140
+- [BattAI: ബാറ്ററി ആരോഗ്യ സ്കോർ](https://alice51849.github.io/ios-app-guide/ml-IN/battai.html) — വ്യക്തമായ നിയമങ്ങൾ, ഉറവിടങ്ങൾ, പരിധികൾ
+  - കാലക്രമത്തിൽ നിങ്ങളുടെ ബാറ്ററിയെ മനസ്സിലാക്കൂ വ്യക്തമായ നിയമങ്ങൾ, ഉറവിടങ്ങൾ, പരിധികൾ കൂടുതൽ ചരിത്രവും ആസൂത്രണവും റിപ്പോർട്ടുകളും തുറക്കൂ. ഒരു പണമടവ്. സബ്സ്ക്രിപ്ഷൻ ഇല്ല.
+  - വില: സൗജന്യമായി ഡൗൺലോഡ് ചെയ്യൂ. ഒറ്റത്തവണ വാങ്ങിയാൽ എല്ലാ ഫീച്ചറുകളും എന്നേക്കുമായി അൺലോക്ക് ചെയ്യാം—സബ്സ്ക്രിപ്ഷൻ ഇല്ല.
+  - App Store: https://apps.apple.com/in/app/id6802423998
 - [CalDaily കാൽക്കുലേറ്റർ](https://alice51849.github.io/ios-app-guide/ml-IN/caldaily.html) — വിജറ്റ്, ടൂളുകൾ, 100 തീം
   - സൂക്ഷിക്കുന്ന ഓരോ ഫലത്തിനും പേരും തരവും നൽകി പിന്നീട് എളുപ്പത്തിൽ കണ്ടെത്താം. എട്ട് നൂതന ടൂളുകൾ, ഹോം സ്ക്രീൻ വിജറ്റ്, നൂറ് തീമുകൾ, എല്ലാം നിങ്ങളുടെ ഉപകരണത്തിൽ.
   - വില: സൗജന്യമായി ഡൗൺലോഡ് ചെയ്യൂ. ഒറ്റത്തവണ വാങ്ങിയാൽ എല്ലാ ഫീച്ചറുകളും എന്നേക്കുമായി അൺലോക്ക് ചെയ്യാം—സബ്സ്ക്രിപ്ഷൻ ഇല്ല.
@@ -151,6 +155,10 @@ apps: 43
   - Duplicate photos, screenshots, മങ്ങിയ ഫോട്ടോ, വലിയ videos കണ്ടെത്തൂ. Delete ചെയ്യുന്നതിന് മുമ്പ് device ൽ review ചെയ്യാം. No ads, no subscription.
   - വില: സൗജന്യമായി ഡൗൺലോഡ് ചെയ്യൂ. ഒറ്റത്തവണ വാങ്ങിയാൽ എല്ലാ ഫീച്ചറുകളും എന്നേക്കുമായി അൺലോക്ക് ചെയ്യാം—സബ്സ്ക്രിപ്ഷൻ ഇല്ല.
   - App Store: https://apps.apple.com/in/app/id6780223070
+- [SaveTag: AI ബുക്ക്മാർക്ക്](https://alice51849.github.io/ios-app-guide/ml-IN/savetag.html) — ലിങ്കുകൾ സേവ് ചെയ്യൂ
+  - പിന്നെ നോക്കാമെന്ന് മാറ്റിവെച്ചതെല്ലാം ഇനി ഒരിടത്ത്. ഒരു ടാപ്പിൽ സേവ്, ഫോണിനുള്ളിൽ തന്നെ സ്വയം തരംതിരിക്കൽ, എന്നും ഓർമിപ്പിക്കൽ. അക്കൗണ്ട് വേണ്ട, സബ്സ്ക്രിപ്ഷനുമില്ല.
+  - വില: സൗജന്യമായി ഡൗൺലോഡ് ചെയ്യൂ. ഒറ്റത്തവണ വാങ്ങിയാൽ എല്ലാ ഫീച്ചറുകളും എന്നേക്കുമായി അൺലോക്ക് ചെയ്യാം—സബ്സ്ക്രിപ്ഷൻ ഇല്ല.
+  - App Store: https://apps.apple.com/in/app/id6802505528
 - [ScanTo Pro: PDF സ്കാൻ](https://alice51849.github.io/ios-app-guide/ml-IN/scanto.html) — ഓഫ്‌ലൈൻ OCR, സ്വകാര്യ PDF
   - എന്തും സ്കാൻ ചെയ്യൂ, എപ്പോഴും കണ്ടെത്തൂ. വ്യക്തമായ PDF, തിരയാവുന്ന OCR ടെക്സ്റ്റ്, Face ID ലോക്ക്—പൂർണമായും ഓഫ്‌ലൈൻ. ഒരിക്കൽ പണം, സബ്‌സ്‌ക്രിപ്ഷൻ ഇല്ല.
   - വില: സൗജന്യമായി ഡൗൺലോഡ് ചെയ്യൂ. ഒറ്റത്തവണ വാങ്ങിയാൽ എല്ലാ ഫീച്ചറുകളും എന്നേക്കുമായി അൺലോക്ക് ചെയ്യാം—സബ്സ്ക്രിപ്ഷൻ ഇല്ല.
@@ -159,6 +167,10 @@ apps: 43
   - ഒരിക്കൽ വാങ്ങൂ, എന്നും ഉറങ്ങൂ. ഡസൻ കണക്കിന് ശബ്ദങ്ങൾ ചേർത്ത് 1000+ സൗണ്ട്‌സ്കേപ്പുകൾ.
   - വില: സൗജന്യമായി ഡൗൺലോഡ് ചെയ്യൂ. ഒറ്റത്തവണ വാങ്ങിയാൽ എല്ലാ ഫീച്ചറുകളും എന്നേക്കുമായി അൺലോക്ക് ചെയ്യാം—സബ്സ്ക്രിപ്ഷൻ ഇല്ല.
   - App Store: https://apps.apple.com/in/app/id6788236641
+- [ShotInbox AI: Sort Screenshots](https://alice51849.github.io/ios-app-guide/ml-IN/shotinbox.html) — ഒറ്റ വാങ്ങൽ, ആജീവനാന്ത ഉപയോഗം
+  - ഏറ്റവും പുതിയ 50 സ്ക്രീൻഷോട്ടുകൾക്ക് പൂർണ്ണ പ്രധാന അനുഭവം സൗജന്യമാണ്. ഒറ്റ വാങ്ങൽ • ആജീവനാന്ത പ്രവേശനം • സബ്‌സ്ക്രിപ്ഷനില്ല.
+  - വില: സൗജന്യമായി ഡൗൺലോഡ് ചെയ്യൂ. ഒറ്റത്തവണ വാങ്ങിയാൽ എല്ലാ ഫീച്ചറുകളും എന്നേക്കുമായി അൺലോക്ക് ചെയ്യാം—സബ്സ്ക്രിപ്ഷൻ ഇല്ല.
+  - App Store: https://apps.apple.com/in/app/id6802166527
 - [Snapport Lite](https://alice51849.github.io/ios-app-guide/ml-IN/snapportlite.html) — Snapport Lite - നിർദ്ദേശിച്ച വലുപ്പം, പശ്ചാത്തല ഉപകരണങ്ങൾ, പ്രിന്റ്-റെഡി എക്സ്പോർട്ട് ഉപയോഗിച്ച് പാസ്പോർട്ട്, വിസ, ഡോക്യുമെന്റ് ഫോട്ടോകൾ ഉണ്ടാക്കുക.
   - നിർദ്ദേശിച്ച വലുപ്പം, പശ്ചാത്തല ഉപകരണങ്ങൾ, പ്രിന്റ്-റെഡി എക്സ്പോർട്ട് ഉപയോഗിച്ച് പാസ്പോർട്ട്, വിസ, ഡോക്യുമെന്റ് ഫോട്ടോകൾ ഉണ്ടാക്കുക. | പരസ്യങ്ങൾ ഇല്ല, ട്രാക്കിംഗ് ഇല്ല
   - വില: സൗജന്യമായി ഡൗൺലോഡ് ചെയ്യൂ. ഒറ്റത്തവണ വാങ്ങിയാൽ എല്ലാ ഫീച്ചറുകളും എന്നേക്കുമായി അൺലോക്ക് ചെയ്യാം—സബ്സ്ക്രിപ്ഷൻ ഇല്ല.

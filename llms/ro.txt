@@ -3,29 +3,29 @@
 > Informații structurate despre funcțiile, prețul și întrebările frecvente ale fiecărei aplicații iOS.
 
 locale: ro
-apps: 43
+apps: 46
 - Catalog de aplicații: https://alice51849.github.io/ios-app-guide/ro/tools/private-pay-once-iphone-app-finder.html
 - Catalog de aplicații · PWA: https://alice51849.github.io/ios-app-guide/ro/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ro.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ro.json
 - Catalog de aplicații · SVG: https://alice51849.github.io/ios-app-guide/ro/visuals/
-- Catalog de aplicații · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- Catalog de aplicații · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- Catalog de aplicații · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
-- Catalog de aplicații · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
-- Catalog de aplicații · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
+- Catalog de aplicații · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Catalog de aplicații · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Catalog de aplicații · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- Catalog de aplicații · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- Catalog de aplicații · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
 - Catalog de aplicații · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- Catalog de aplicații · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
-- Catalog de aplicații · Agent Skill · ro: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/ro.json
-- Catalog de aplicații · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
-- Catalog de aplicații · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
-- Catalog de aplicații · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
-- Catalog de aplicații · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
-- Catalog de aplicații · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
-- Catalog de aplicații · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- Catalog de aplicații · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- Catalog de aplicații · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- Catalog de aplicații · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- Catalog de aplicații · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- Catalog de aplicații · Agent Skill · ro: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/ro.json
+- Catalog de aplicații · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- Catalog de aplicații · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- Catalog de aplicații · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- Catalog de aplicații · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- Catalog de aplicații · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- Catalog de aplicații · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Catalog de aplicații · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Catalog de aplicații · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Catalog de aplicații · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/ro/notesstudio100.html) — Notițe de mână și PDF
   - Un spațiu privat pentru scris de mână, adnotări PDF, înregistrări atașate paginii și fișe de studiu. Organizează ideile și caută în conținut direct pe dispozitiv.
@@ -43,6 +43,10 @@ apps: 43
   - Antrenează ascultarea și citirea în ritm alert: încălzire, set cronometrat și reluarea țintită a greșelilor. Totul funcționează offline.
   - Preț: Descărcare plătită la un singur preț inițial, fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6792483140
+- [BattAI: Sănătatea bateriei](https://alice51849.github.io/ios-app-guide/ro/battai.html) — Reguli, surse și limite clare
+  - Înțelege bateria în timp Reguli, surse și limite clare Deblochează mai mult istoric, planificare și rapoarte. O singură plată. Fără abonament.
+  - Preț: Descarcă gratuit. O singură achiziție deblochează permanent toate funcțiile—fără abonament.
+  - App Store: https://apps.apple.com/ro/app/id6802423998
 - [CalDaily: calculator și teme](https://alice51849.github.io/ios-app-guide/ro/caldaily.html) — Widget, instrumente, istoric
   - Fiecare rezultat poate primi un nume și un tip, ca să îl regăsești oricând. Opt instrumente avansate, un widget pe ecranul principal și o sută de teme, pe dispozitiv.
   - Preț: Descarcă gratuit. O singură achiziție deblochează permanent toate funcțiile—fără abonament.
@@ -151,6 +155,10 @@ apps: 43
   - Găsește duplicate, capturi de ecran, poze neclare și videouri mari care ocupă spațiu. Verifici pe dispozitiv înainte de ștergere. Fără reclame sau abonament.
   - Preț: Descarcă gratuit. O singură achiziție deblochează permanent toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6780223070
+- [SaveTag: marcaje cu IA](https://alice51849.github.io/ios-app-guide/ro/savetag.html) — Salvează linkuri, citește-le
+  - Tot ce voiai să revezi, în sfârșit într-un singur loc. O atingere pentru a salva, sortare făcută chiar pe dispozitiv. Fără cont și fără abonament.
+  - Preț: Descarcă gratuit. O singură achiziție deblochează permanent toate funcțiile—fără abonament.
+  - App Store: https://apps.apple.com/ro/app/id6802505528
 - [ScanTo Pro: PDF și OCR](https://alice51849.github.io/ios-app-guide/ro/scanto.html) — Scanner privat offline
   - Scanează orice, găsește pentru totdeauna. PDF-uri clare, text OCR căutabil și blocare Face ID – complet offline. Plătești o dată, fără abonament.
   - Preț: Descarcă gratuit. O singură achiziție deblochează permanent toate funcțiile—fără abonament.
@@ -159,6 +167,10 @@ apps: 43
   - Cumpără o dată, dormi pentru totdeauna. Combină zeci de sunete vii în peste 1000 de peisaje sonore unice — în timp real, niciodată în buclă, niciodată un abonament, 100%
   - Preț: Descarcă gratuit. O singură achiziție deblochează permanent toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6788236641
+- [ShotInbox AI: Sort Screenshots](https://alice51849.github.io/ios-app-guide/ro/shotinbox.html) — Organizează capturile de ecran
+  - Găsește, rezolvă și curăță fiecare captură. Cele mai recente 50 de capturi includ gratuit întregul flux de bază. O singură plată • Acces pe viață • Fără abonament.
+  - Preț: Descarcă gratuit. O singură achiziție deblochează permanent toate funcțiile—fără abonament.
+  - App Store: https://apps.apple.com/ro/app/id6802166527
 - [Snapport Lite](https://alice51849.github.io/ios-app-guide/ro/snapportlite.html) — Creează fotografii ID acasă
   - Realizează fotografii pentru pașaport, viză și documente cu dimensiuni ghidate, instrumente pentru fundal și export gata de imprimare. | Fără reclame, fără urmărire
   - Preț: Descarcă gratuit. O singură achiziție deblochează permanent toate funcțiile—fără abonament.

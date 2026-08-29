@@ -3,29 +3,29 @@
 > מידע מסודר על התכונות, המחיר והשאלות הנפוצות של כל אפליקציית iOS.
 
 locale: he
-apps: 43
+apps: 46
 - מדריך אפליקציות: https://alice51849.github.io/ios-app-guide/he/tools/private-pay-once-iphone-app-finder.html
 - מדריך אפליקציות · PWA: https://alice51849.github.io/ios-app-guide/he/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/he.json
 - מדריך אפליקציות · SVG: https://alice51849.github.io/ios-app-guide/he/visuals/
-- מדריך אפליקציות · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- מדריך אפליקציות · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- מדריך אפליקציות · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
-- מדריך אפליקציות · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
-- מדריך אפליקציות · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
+- מדריך אפליקציות · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- מדריך אפליקציות · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- מדריך אפליקציות · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- מדריך אפליקציות · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- מדריך אפליקציות · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
 - מדריך אפליקציות · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- מדריך אפליקציות · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
-- מדריך אפליקציות · Agent Skill · he: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/he.json
-- מדריך אפליקציות · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
-- מדריך אפליקציות · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
-- מדריך אפליקציות · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
-- מדריך אפליקציות · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
-- מדריך אפליקציות · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
-- מדריך אפליקציות · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- מדריך אפליקציות · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- מדריך אפליקציות · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- מדריך אפליקציות · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- מדריך אפליקציות · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- מדריך אפליקציות · Agent Skill · he: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/he.json
+- מדריך אפליקציות · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- מדריך אפליקציות · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- מדריך אפליקציות · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- מדריך אפליקציות · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- מדריך אפליקציות · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- מדריך אפליקציות · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- מדריך אפליקציות · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- מדריך אפליקציות · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- מדריך אפליקציות · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/he/notesstudio100.html) — מחברת בכתב יד וסימון PDF
   - סטודיו מחברות פרטי ואופליין לטאבלט ולעט דיגיטלי: כתיבה ביד, סימון PDF, הקלטה שמצורפת לעמוד וכרטיסיות ללמידה. רכישה חד-פעמית מוסיפה כלים מתקדמים.
@@ -43,6 +43,10 @@ apps: 43
   - הופכים כל מפגש ללמידה ממוקדת: חימום קצר, מקבץ קצוב בזמן וחזרה חכמה על טעויות, לצד ניתוח ברור של נקודות החולשה.
   - מחיר: הורדה בתשלום במחיר חד-פעמי קבוע וללא מינוי.
   - App Store: https://apps.apple.com/il/app/id6792483140
+- [BattAI: ציון בריאות הסוללה](https://alice51849.github.io/ios-app-guide/he/battai.html) — כללים, מקורות ומגבלות ברורים
+  - להבין את הסוללה לאורך זמן כללים, מקורות ומגבלות ברורים לפתוח היסטוריה עמוקה יותר, תכנון ודוחות. תשלום אחד. ללא מינוי.
+  - מחיר: הורדה בחינם. רכישה חד-פעמית פותחת את כל התכונות—ללא מינוי.
+  - App Store: https://apps.apple.com/il/app/id6802423998
 - [CalDaily מחשבון ועיצובים](https://alice51849.github.io/ios-app-guide/he/caldaily.html) — וידג'ט, כלים והיסטוריה
   - כל תוצאה שתשמרו אפשר לתת לה שם וסוג ולמצוא אותה שוב. שמונה כלים מתקדמים, וידג'ט למסך הבית ומאה ערכות נושא, והכול פועל במכשיר עצמו.
   - מחיר: הורדה בחינם. רכישה חד-פעמית פותחת את כל התכונות—ללא מינוי.
@@ -151,6 +155,10 @@ apps: 43
   - מצאו כפילויות, צילומי מסך, תמונות מטושטשות וסרטונים גדולים. בדיקה על המכשיר לפני מחיקה. ללא פרסומות, ללא מנוי, רכישה חד פעמית.
   - מחיר: הורדה בחינם. רכישה חד-פעמית פותחת את כל התכונות—ללא מינוי.
   - App Store: https://apps.apple.com/il/app/id6780223070
+- [SaveTag: סימניות עם AI](https://alice51849.github.io/ios-app-guide/he/savetag.html) — שמור קישורים, קרא אחר כך
+  - כל מה שהתכוונת לחזור אליו, סוף סוף במקום אחד. נגיעה אחת שומרת, המיון קורה במכשיר עצמו וטקס יומי מחזיר את מה שלא קראת. בלי חשבון ובלי מנוי.
+  - מחיר: הורדה בחינם. רכישה חד-פעמית פותחת את כל התכונות—ללא מינוי.
+  - App Store: https://apps.apple.com/il/app/id6802505528
 - [ScanTo Pro: PDF ו-OCR](https://alice51849.github.io/ios-app-guide/he/scanto.html) — סורק פרטי בלי אינטרנט
   - סרוק כל דבר, מצא אותו לתמיד. קובצי PDF חדים, טקסט OCR שניתן לחיפוש ונעילת Face ID – לגמרי לא מקוון. תשלום חד-פעמי, בלי מנוי.
   - מחיר: הורדה בחינם. רכישה חד-פעמית פותחת את כל התכונות—ללא מינוי.
@@ -159,6 +167,10 @@ apps: 43
   - קנה פעם אחת, לישון לנצח. ערבב עשרות צלילים חיים ליותר מ-1000 נופים קוליים ייחודיים — בזמן אמת, ללא לולאה, ללא מנוי, 100% לא מקוון.
   - מחיר: הורדה בחינם. רכישה חד-פעמית פותחת את כל התכונות—ללא מינוי.
   - App Store: https://apps.apple.com/il/app/id6788236641
+- [ShotInbox AI: Sort Screenshots](https://alice51849.github.io/ios-app-guide/he/shotinbox.html) — רכישה אחת, ללא מינוי
+  - אפשר למצוא, לטפל ולנקות כל צילום מסך. 50 צילומי המסך האחרונים כוללים את כל חוויית הליבה בחינם. רכישה אחת • גישה לכל החיים • ללא מינוי.
+  - מחיר: הורדה בחינם. רכישה חד-פעמית פותחת את כל התכונות—ללא מינוי.
+  - App Store: https://apps.apple.com/il/app/id6802166527
 - [Snapport Lite](https://alice51849.github.io/ios-app-guide/he/snapportlite.html) — צור תמונות זיהוי בבית
   - צור תמונות דרכון, ויזה ומסמכים עם הנחיות לגודל, כלים לרקע וייצוא מוכן להדפסה. | גרסה חינמית · תומכת בייצוא אחד | רכישה חד־פעמית · שלך לתמיד · ללא מנוי
   - מחיר: הורדה בחינם. רכישה חד-פעמית פותחת את כל התכונות—ללא מינוי.

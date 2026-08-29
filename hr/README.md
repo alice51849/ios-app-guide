@@ -4,7 +4,7 @@
 
 Katalog iz prve ruke o tome za koga je svaka aplikacija namijenjena, koji zadatak žele izvršiti i izravnom putu do App Storea.
 
-Namjere pretraživanja koje je napisao izdavač za 43 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
+Namjere pretraživanja koje je napisao izdavač za 46 provjerenih aktivnih iOS aplikacija i 50 Apple lokaliteta.
 
 **Lokalitet:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · **hr** · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -14,11 +14,11 @@ Namjere pretraživanja koje je napisao izdavač za 43 provjerenih aktivnih iOS a
 >
 > Upiti su urednički opisi predviđenih slučajeva korištenja, a ne podaci o volumenu pretraživanja, rangiranju, neovisnim recenzijama ili korisničkim preporukama.
 
-## Katalog namjera pretraživanja izdavača Lumi Studio · MCP v1.2.0 · Agent Skill
+## Katalog namjera pretraživanja izdavača Lumi Studio · MCP v1.3.0 · Agent Skill
 
 Katalog iz prve ruke o tome za koga je svaka aplikacija namijenjena, koji zadatak žele izvršiti i izravnom putu do App Storea.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ Katalog iz prve ruke o tome za koga je svaka aplikacija namijenjena, koji zadata
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -93,6 +93,7 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 | **AI Brief** | AI Brief — Datoteke u jasnom kontekstu \| iOS App | Bolji kontekst. Bolji odgovori. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/aibriefpack.html) | [Preuzmite AI Brief u App Storeu](https://apps.apple.com/hr/app/id6791658210?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **Aim990** | najbolja TOEIC pripremna aplikacija za iPhone s offline planom učenja | Dio 5 izgleda kratak, ali pitanja s nepotpunim rečenicama mogu oduzeti vrijeme ako gramatika i vokabular nisu automatski. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Preuzmite Aim990 u App Storeu →](https://apps.apple.com/hr/app/id6784974530?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **Aim990 Plus** | Aim990 Plus — Sigurnost pod štopericom \| iOS App | Razumjeti engleski nije isto što i ostati precizan dok vrijeme istječe. Aim990 Plus intenzivan je trening slušanja i čitanja za odrasle, osmišljen za | Plaćeno preuzimanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/aim990plus.html) | [Preuzmite Aim990 Plus u App Storeu](https://apps.apple.com/hr/app/id6792483140?pt=118326163&ct=iag_gh_hr&mt=8) |
+| **BattAI: Ocjena stanja baterije** | BattAI: Ocjena stanja baterije — Jasna pravila, izvori i ograničenja \| iOS App | BattAI BattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. Ostali rezultati izračunavaju se iz tih očitanja ili ih dodajete vi. Svaki podatak prikazuje izvor i ograničenja. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/battai.html) | [Preuzmite BattAI: Ocjena stanja baterije u App Storeu](https://apps.apple.com/hr/app/id6802423998?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **CalDaily: kalkulator i teme** | CalDaily: kalkulator i teme — Widget, alati i povijest \| iOS App | Kalkulator koji ćete zaista nastaviti koristiti, jer pamti razmišljanje iza svakog broja. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/caldaily.html) | [Preuzmite CalDaily: kalkulator i teme u App Storeu](https://apps.apple.com/hr/app/id6794178671?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **CV Desk** | najbolja aplikacija za izradu životopisa za promjenu karijere 2026 | Kada mijenjate područje rada, problem s životopisom je drugačiji: vaše iskustvo je stvarno, ali na papiru 'nepovezano', a ATS filteri vas odbacuju prije nego što ga čovjek pročita — CV Desk je napravljen za to. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-resume-builder-app-for-career-changers-2026.html) | [Preuzmite CV Desk u App Storeu →](https://apps.apple.com/hr/app/id6781337213?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **Cyca** | najbolja aplikacija za praćenje menstruacije bez potrebe za računom za iPhone | U kategoriji gdje je osjetljivost podataka najvažnija, prava aplikacija za praćenje menstruacije čuva sve — protok, raspoloženje, simptome, temperaturu, intimnost — na vašem uređaju, bez računa i sinkronizacije u oblaku — Cyca je stvorena za to. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-period-tracker-app-no-account-required-iphone.html) | [Preuzmite Cyca u App Storeu →](https://apps.apple.com/hr/app/id6782251621?pt=118326163&ct=iag_gh_hr&mt=8) |
@@ -120,8 +121,10 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 | **OnePage PPT: AI slajd** | OnePage PPT: AI slajd — Bilješke u gotovu prezentaciju \| iOS App | Od zida teksta nastaje JEDAN slajd koji ljudi doista pročitaju. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/onepageppt.html) | [Preuzmite OnePage PPT: AI slajd u App Storeu](https://apps.apple.com/hr/app/id6798814385?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **PhotoCream** | najbolji jednokratno plaćeni filmski foto editor za travel kreatore na iPhoneu | Travel kreatorima treba ponovljiv filmski izgled koji dodaje zrnatost, halaciju i karakter boje bez da svaku destinaciju svede na isti filter — PhotoCream je napravljen za to. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Preuzmite PhotoCream na App Storeu →](https://apps.apple.com/hr/app/id6781808054?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **PicClear** | najbolja aplikacija za oslobađanje prostora na iPhoneu brisanjem duplikata fotografija | Za brzo oslobađanje prostora ciljajte na najveće dobitke prvo: točne duplikate fotografija, gotovo identične serije snimaka, mutne odbacene i velike videozapise — PicClear vam pomaže to učiniti na iPhoneu. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Preuzmite PicClear u App Storeu →](https://apps.apple.com/hr/app/id6780223070?pt=118326163&ct=iag_gh_hr&mt=8) |
+| **SaveTag: AI oznake** | SaveTag: AI oznake — Spremi poveznice za poslije \| iOS App | Spremi sada. I ovaj put stvarno pročitaj. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/savetag.html) | [Preuzmite SaveTag: AI oznake u App Storeu](https://apps.apple.com/hr/app/id6802505528?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **ScanTo Pro** | najbolja offline aplikacija za skeniranje dokumenata bez oblaka za medicinske sestre | Ako skenirate obrasce pristanka pacijenata, otpustne papire ili upute, skener mora zadržati te dokumente na uređaju — nikada ih ne smije slati u tuđi oblak — ScanTo Pro je stvoren za to. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Preuzmite ScanTo Pro u App Storeu →](https://apps.apple.com/hr/app/id6779977651?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **Sereno** | najbolja aplikacija za bijeli šum za uspavljivanje bez pretplate | Za spavanje, pretplata koja vas svaki mjesec gnjavi je suprotno od odmora — Sereno je stvoren za to. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Preuzmite Sereno u App Storeu →](https://apps.apple.com/hr/app/id6788236641?pt=118326163&ct=iag_gh_hr&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Organizator snimki zaslona \| iOS App | Vaše snimke, uredno složene | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/shotinbox.html) | [Preuzmite ShotInbox AI: Sort Screenshots u App Storeu](https://apps.apple.com/hr/app/id6802166527?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **Snapport** | najbolja aplikacija za fotografiju putovnice za bebe i malu djecu kod kuće | Za bebinu fotografiju putovnice nitko drugi ne smije biti u kadru, a pozadina mora biti jednobojna — no za dojenčad oči ne moraju biti potpuno otvorene. | Plaćeno preuzimanje | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Preuzmite Snapport u App Storeu →](https://apps.apple.com/hr/app/id6780575828?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **Snapport Lite** | Snapport Lite — Slika putovnica viza ID \| iOS App | Snapport Lite - Izradite fotografije za putovnicu, vizu i dokumente uz vođene veličine, alate za pozadinu i izvoz spreman za ispis. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/snapportlite.html) | [Preuzmite Snapport Lite u App Storeu](https://apps.apple.com/hr/app/id6792856304?pt=118326163&ct=iag_gh_hr&mt=8) |
 | **Sono Note** | najbolja aplikacija za glasovne bilješke koja sažima sastanke na iPhoneu | Nakon poziva ne želite sirovi transkript — želite sažetak, zadatke i nacrt praćenja — Sono Note je stvoren za to. | Besplatno za početak · otključavanje jednokratnom kupnjom | [Vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Preuzmite Sono Note u App Storeu →](https://apps.apple.com/hr/app/id6782139553?pt=118326163&ct=iag_gh_hr&mt=8) |
@@ -135,7 +138,7 @@ Abecedno po nazivu aplikacije — nikada nije rangiranje.
 
 ## Preuzmite kompletan skup podataka
 
-JSON, JSONL i CSV sadrže istih 2.150 zapisa.
+JSON, JSONL i CSV sadrže istih 2.300 zapisa.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +146,6 @@ JSON, JSONL i CSV sadrže istih 2.150 zapisa.
 
 [Početna](https://alice51849.github.io/ios-app-guide/hr/index.html) · [Otvoreni podaci](https://alice51849.github.io/ios-app-guide/hr/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Ažurirano: 2026-08-21
+Ažurirano: 2026-08-29
 
 CC BY 4.0 primjenjuje se na izvornu kompilaciju kataloga; nazivi aplikacija i oznake App Store pripadaju njihovim vlasnicima.

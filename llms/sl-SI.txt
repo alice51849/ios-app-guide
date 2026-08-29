@@ -3,29 +3,29 @@
 > Pregledne informacije o funkcijah, cenah in pogostih vprašanjih za vsako aplikacijo iOS.
 
 locale: sl-SI
-apps: 43
+apps: 46
 - Imenik aplikacij: https://alice51849.github.io/ios-app-guide/sl-SI/tools/private-pay-once-iphone-app-finder.html
 - Imenik aplikacij · PWA: https://alice51849.github.io/ios-app-guide/sl-SI/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/sl-SI.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/sl-SI.json
 - Imenik aplikacij · SVG: https://alice51849.github.io/ios-app-guide/sl-SI/visuals/
-- Imenik aplikacij · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- Imenik aplikacij · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- Imenik aplikacij · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
-- Imenik aplikacij · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
-- Imenik aplikacij · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
+- Imenik aplikacij · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Imenik aplikacij · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Imenik aplikacij · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- Imenik aplikacij · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- Imenik aplikacij · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
 - Imenik aplikacij · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- Imenik aplikacij · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
-- Imenik aplikacij · Agent Skill · sl-SI: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/sl-SI.json
-- Imenik aplikacij · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
-- Imenik aplikacij · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
-- Imenik aplikacij · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
-- Imenik aplikacij · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
-- Imenik aplikacij · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
-- Imenik aplikacij · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- Imenik aplikacij · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- Imenik aplikacij · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- Imenik aplikacij · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- Imenik aplikacij · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- Imenik aplikacij · Agent Skill · sl-SI: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/sl-SI.json
+- Imenik aplikacij · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- Imenik aplikacij · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- Imenik aplikacij · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- Imenik aplikacij · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- Imenik aplikacij · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- Imenik aplikacij · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Imenik aplikacij · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Imenik aplikacij · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Imenik aplikacij · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/sl-SI/notesstudio100.html) — Ročni zapiski in PDF
   - Zaseben prostor za pisanje na roko, označevanje PDF-jev, posnetke ob strani in učne kartice. Uredite gradivo ter poiščite vsebino neposredno v napravi.
@@ -43,6 +43,10 @@ apps: 43
   - Vadite poslušanje in branje v hitrem ritmu: ogrevanje, časovno omejen sklop in usmerjena ponovitev napak. Celotna vadba deluje brez povezave.
   - Cena: Plačljiv prenos po eni vnaprej določeni ceni, brez naročnine.
   - App Store: https://apps.apple.com/si/app/id6792483140
+- [BattAI: Ocena stanja baterije](https://alice51849.github.io/ios-app-guide/sl-SI/battai.html) — Jasna pravila, viri in omejitve
+  - Spremljajte svojo baterijo skozi čas Jasna pravila, viri in omejitve Odklenite globljo zgodovino, načrtovanje in poročila. Eno plačilo. Brez naročnine.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom trajno odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6802423998
 - [CalDaily: kalkulator in teme](https://alice51849.github.io/ios-app-guide/sl-SI/caldaily.html) — Pripomoček, orodja, zgodovina
   - Vsak rezultat lahko dobi ime in vrsto, da ga pozneje spet najdete. Osem naprednih orodij, pripomoček na začetnem zaslonu in sto tem, vse na vaši napravi.
   - Cena: Prenesite brezplačno. Z enkratnim nakupom trajno odklenete vse funkcije—brez naročnine.
@@ -151,6 +155,10 @@ apps: 43
   - Poiščite dvojnike, posnetke zaslona, zamegljene fotografije in velike videe. Pred brisanjem vse preverite v napravi. Brez oglasov in naročnine.
   - Cena: Prenesite brezplačno. Z enkratnim nakupom trajno odklenete vse funkcije—brez naročnine.
   - App Store: https://apps.apple.com/si/app/id6780223070
+- [SaveTag: zaznamki z UI](https://alice51849.github.io/ios-app-guide/sl-SI/savetag.html) — Shrani povezave, beri pozneje
+  - Vse, k čemur si se nameraval vrniti, končno na enem mestu. En dotik shrani, razvrščanje poteka kar v napravi. Brez računa in brez naročnine.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom trajno odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6802505528
 - [ScanTo Pro: PDF skener](https://alice51849.github.io/ios-app-guide/sl-SI/scanto.html) — OCR brez spleta, zasebni PDF
   - Skeniraj karkoli, najdi za vedno. Ostri PDF-ji, iskljivo besedilo OCR in zaklep Face ID – povsem brez povezave. Plačaj enkrat, brez naročnine.
   - Cena: Prenesite brezplačno. Z enkratnim nakupom trajno odklenete vse funkcije—brez naročnine.
@@ -159,6 +167,10 @@ apps: 43
   - Kupi enkrat, spi za vedno. Zmešaj desetine živih zvokov v 1000+ edinstvenih zvočnih pokrajin.
   - Cena: Prenesite brezplačno. Z enkratnim nakupom trajno odklenete vse funkcije—brez naročnine.
   - App Store: https://apps.apple.com/si/app/id6788236641
+- [ShotInbox AI: Sort Screenshots](https://alice51849.github.io/ios-app-guide/sl-SI/shotinbox.html) — Urejanje posnetkov zaslona
+  - Poiščite, uredite in počistite vsak posnetek. Apple Vision in Natural Language delujeta v napravi. Brez nalaganja. Eno plačilo • Doživljenjski dostop • Brez naročnine.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom trajno odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6802166527
 - [Snapport Lite](https://alice51849.github.io/ios-app-guide/sl-SI/snapportlite.html) — Ustvari ID fotografije doma
   - Ustvari potniške, vizumske in dokumentne fotografije s pomočjo usmerjenega merjenja, orodij za ozadje in izvoza, pripravljenega za tisk. | Brez oglasov, brez sledenja
   - Cena: Prenesite brezplačno. Z enkratnim nakupom trajno odklenete vse funkcije—brez naročnine.

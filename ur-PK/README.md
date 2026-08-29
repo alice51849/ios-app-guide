@@ -4,7 +4,7 @@
 
 ایسا کیٹلاگ جسے ڈویلپر براہ راست شائع کرتا ہے اور جو بتاتا ہے کہ ہر ایپ کس کے لیے بنائی گئی ہے، صارف کون سا کام مکمل کرنا چاہتا ہے اور App Store تک براہ راست کیسے پہنچنا ہے۔
 
-43 تصدیق شدہ اور App Store پر دستیاب iOS ایپس اور Apple کے 50 زبان و خطہ لوکیلز کے لیے پبلشر کی تحریر کردہ سرچ انٹینٹس۔
+46 تصدیق شدہ اور App Store پر دستیاب iOS ایپس اور Apple کے 50 زبان و خطہ لوکیلز کے لیے پبلشر کی تحریر کردہ سرچ انٹینٹس۔
 
 **زبان و خطہ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · **ur-PK** · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -14,11 +14,11 @@
 >
 > یہ سرچ کوئریز مطلوبہ استعمال کے حالات کی اداریاتی وضاحتیں ہیں؛ یہ ناپا گیا سرچ والیوم ڈیٹا، درجہ بندیاں، آزاد جائزے یا صارفین کی توثیق نہیں ہیں۔
 
-## Lumi Studio پبلشر سرچ انٹینٹ کیٹلاگ · MCP v1.2.0 · Agent Skill
+## Lumi Studio پبلشر سرچ انٹینٹ کیٹلاگ · MCP v1.3.0 · Agent Skill
 
 ایسا کیٹلاگ جسے ڈویلپر براہ راست شائع کرتا ہے اور جو بتاتا ہے کہ ہر ایپ کس کے لیے بنائی گئی ہے، صارف کون سا کام مکمل کرنا چاہتا ہے اور App Store تک براہ راست کیسے پہنچنا ہے۔
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -93,6 +93,7 @@ App Store پر دستیابی کی تصدیق شدہ ہر ایپ کے لیے ا�
 | **AI Brief** | AI Brief — فائلوں سے واضح سیاق \| iOS App | بہتر سیاق و سباق۔ بہتر جوابات۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/aibriefpack.html) | [App Store سے AI Brief حاصل کریں](https://apps.apple.com/pk/app/id6791658210?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **Aim990** | iPhone کے لیے بہترین TOEIC پریپ ایپ آف لائن اسٹڈی پلان | پارٹ 5 چھوٹا لگتا ہے، لیکن وہ نامکمل جملے والے سوالات وقت ضائع کر سکتے ہیں اگر گرامر اور الفاظ خودکار نہ ہوں۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Aim990 ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6784974530?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **Aim990 Plus** | Aim990 Plus — سننے اور پڑھنے کی مشق \| iOS App | یہ ایپ ان بالغ افراد کے لیے بنائی گئی ہے جو وقت کے دباؤ میں انگریزی سننے اور پڑھنے کی درستگی اور رفتار بہتر کرنا چاہتے ہیں۔ بے ترتیب سوالات دہرانے کے بجائے | ادا شدہ ڈاؤن لوڈ | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/aim990plus.html) | [App Store سے Aim990 Plus حاصل کریں](https://apps.apple.com/pk/app/id6792483140?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
+| **BattAI: بیٹری کی صحت کا اسکور** | BattAI: بیٹری کی صحت کا اسکور — واضح اصول، ماخذ اور حدود \| iOS App | BattAI ⁦BattAI⁩ عوامی ⁦iOS API⁩ سے پانچ قدریں لیتا ہے: بیٹری کی سطح، چارج کی حالت، کم پاور موڈ، پورے فون کی حرارتی حالت اور وقت۔ دوسرے نتائج ان پیمائشوں سے حساب ہوتے ہیں یا آپ شامل کرتے ہیں۔ ہر تفصیل اپنا ماخذ اور حد دکھاتی ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/battai.html) | [App Store سے BattAI: بیٹری کی صحت کا اسکور حاصل کریں](https://apps.apple.com/pk/app/id6802423998?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **CalDaily: کیلکولیٹر** | CalDaily: کیلکولیٹر — ویجٹ، اوزار اور ریکارڈ \| iOS App | ایک ایسا کیلکولیٹر جسے آپ واقعی استعمال کرتے رہیں گے، کیونکہ یہ ہر عدد کے پیچھے کی سوچ بھی یاد رکھتا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/caldaily.html) | [App Store سے CalDaily: کیلکولیٹر حاصل کریں](https://apps.apple.com/pk/app/id6794178671?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **CV ڈیسک** | 2026 کے لیے کیریئر چینجرز کے لیے بہترین ریزیومے بلڈر ایپ | جب آپ شعبہ بدل رہے ہوں، تو ریزیومے کا مسئلہ مختلف ہوتا ہے: آپ کا تجربہ حقیقی ہے لیکن کاغذ پر 'غیر متعلقہ' ہے، اور ATS فلٹر آپ کو انسان کے پڑھنے سے پہلے مسترد کر دیتے ہیں — CV ڈیسک اسی کے لیے بنایا گیا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-resume-builder-app-for-career-changers-2026.html) | [CV ڈیسک ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6781337213?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **Cyca** | iPhone کے لیے بہترین پیریڈ ٹریکر ایپ بغیر اکاؤنٹ کے | ایسی کیٹیگری جہاں ڈیٹا کی حساسیت پوری کہانی ہے، صحیح پیریڈ ٹریکر سب کچھ — بہاؤ، مزاج، علامات، درجہ حرارت، قربت — آپ کے ڈیوائس پر رکھتا ہے، بغیر اکاؤنٹ اور بغیر کلاؤڈ سنک کے — Cyca اسی کے لیے بنایا گیا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-period-tracker-app-no-account-required-iphone.html) | [Cyca ایپ اسٹور سے حاصل کریں →](https://apps.apple.com/pk/app/id6782251621?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
@@ -120,8 +121,10 @@ App Store پر دستیابی کی تصدیق شدہ ہر ایپ کے لیے ا�
 | **OnePage PPT: سلائیڈ میکر** | OnePage PPT: سلائیڈ میکر — نوٹس سے مکمل پریزنٹیشن \| iOS App | متن کے ڈھیر کو ایک ایسی سلائیڈ میں بدلیں جسے لوگ واقعی پڑھیں۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/onepageppt.html) | [App Store سے OnePage PPT: سلائیڈ میکر حاصل کریں](https://apps.apple.com/pk/app/id6798814385?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **PhotoCream** | سفر کرنے والے کریئیٹرز کے لیے iPhone پر بہترین ایک بار ادائیگی والی فلم فوٹو ایڈیٹر | سفر کرنے والے کریئیٹرز کو ایک ایسا فلم لک چاہیے جو گرین، ہیلیشن اور کلر کیریکٹر شامل کرے بغیر ہر منزل کو ایک جیسے فلیٹ فلٹر میں نہ بدل دے — PhotoCream اسی مقصد کے لیے بنایا گیا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [PhotoCream App Store پر حاصل کریں →](https://apps.apple.com/pk/app/id6781808054?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **PicClear** | iPhone کی اسٹوریج خالی کرنے کے لیے بہترین ایپ جو نقل شدہ تصاویر حذف کرے | جلدی جگہ خالی کرنے کے لیے سب سے بڑے فائدے پہلے ہدف بنائیں: بالکل نقل شدہ تصاویر، قریب قریب ایک جیسی برسٹ شاٹس، دھندلی تصاویر، اور بڑے ویڈیوز — PicClear آپ کے iPhone پر مدد کرتا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App Store سے PicClear حاصل کریں →](https://apps.apple.com/pk/app/id6780223070?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
+| **SaveTag: AI بک مارکس** | SaveTag: AI بک مارکس — لنکس محفوظ کریں، بعد میں پڑھیں \| iOS App | ابھی محفوظ کریں۔ اور اس بار واقعی پڑھیں۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/savetag.html) | [App Store سے SaveTag: AI بک مارکس حاصل کریں](https://apps.apple.com/pk/app/id6802505528?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **ScanTo Pro** | نرسوں کے لیے بہترین آف لائن دستاویز اسکینر ایپ بغیر کلاؤڈ کے | اگر آپ مریض کی رضامندی کے فارم، ڈسچارج کاغذات یا ریفرلز اسکین کرتے ہیں، تو اسکینر کو یہ کاغذات ڈیوائس پر رکھنا چاہیے — کبھی کسی اور کے کلاؤڈ پر اپ لوڈ نہیں — ScanTo Pro اس کے لیے بنایا گیا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [App Store سے ScanTo Pro حاصل کریں →](https://apps.apple.com/pk/app/id6779977651?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **Sereno** | بغیر سبسکرپشن کے سونے کے لیے بہترین وائٹ نوائس ایپ | نیند کے لیے، ہر ماہ پریشان کرنے والا سبسکرپشن آرام کے بالکل برعکس ہے — Sereno اسی کے لیے بنایا گیا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [App Store سے Sereno حاصل کریں →](https://apps.apple.com/pk/app/id6788236641?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — ایک بار خریدیں، تاحیات استعمال \| iOS App | آپ کے اسکرین شاٹس، ترتیب سے | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/shotinbox.html) | [App Store سے ShotInbox AI: Sort Screenshots حاصل کریں](https://apps.apple.com/pk/app/id6802166527?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **Snapport** | بچوں اور ننھے بچوں کے لیے گھر پر بہترین پاسپورٹ فوٹو ایپ | بچے کے پاسپورٹ فوٹو میں کوئی دوسرا شخص تصویر میں نہیں ہونا چاہیے اور پس منظر سادہ ہونا چاہیے — لیکن شیر خوار بچوں کے لیے آنکھیں مکمل طور پر کھلی ہونا ضروری نہیں۔ | ادا شدہ ڈاؤن لوڈ | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App Store سے Snapport حاصل کریں →](https://apps.apple.com/pk/app/id6780575828?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **Snapport Lite** | Snapport Lite — گھر پر شناختی تصاویر بنائیں \| iOS App | Snapport Lite - پاسپورٹ، ویزا، اور دستاویزات کی تصاویر بنائیں، رہنمائی کے سائزنگ، پس منظر کے ٹولز، اور پرنٹ کے لیے تیار برآمد کے ساتھ۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/snapportlite.html) | [App Store سے Snapport Lite حاصل کریں](https://apps.apple.com/pk/app/id6792856304?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
 | **Sono Note** | iPhone پر میٹنگز کا خلاصہ کرنے والی بہترین وائس نوٹس ایپ | کال کے بعد آپ کو خام تحریر نہیں چاہیے — آپ کو خلاصہ، ایکشن آئٹمز اور فالو اپ کا مسودہ چاہیے — Sono Note اسی کے لیے بنایا گیا ہے۔ | مفت آغاز · ایک بار کی خریداری سے ان لاک | [گائیڈ](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store سے Sono Note حاصل کریں →](https://apps.apple.com/pk/app/id6782139553?pt=118326163&ct=iag_gh_ur_pk&mt=8) |
@@ -135,7 +138,7 @@ App Store پر دستیابی کی تصدیق شدہ ہر ایپ کے لیے ا�
 
 ## مکمل ڈیٹا سیٹ ڈاؤن لوڈ کریں
 
-JSON، JSONL اور CSV میں وہی 2,150 ریکارڈز شامل ہیں۔
+JSON، JSONL اور CSV میں وہی 2,300 ریکارڈز شامل ہیں۔
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +146,6 @@ JSON، JSONL اور CSV میں وہی 2,150 ریکارڈز شامل ہیں۔
 
 [ہوم](https://alice51849.github.io/ios-app-guide/ur-PK/index.html) · [کھلا ڈیٹا](https://alice51849.github.io/ios-app-guide/ur-PK/data/lumi-studio-publisher-search-intent-catalog.html) · [لائسنس](https://creativecommons.org/licenses/by/4.0/)
 
-اپ ڈیٹ کیا گیا: 2026-08-21
+اپ ڈیٹ کیا گیا: 2026-08-29
 
 CC BY 4.0 اصل کیٹلاگ کی تدوین پر لاگو ہوتا ہے؛ ایپس کے نام اور App Store کے نشانات ان کے مالکان کی ملکیت ہیں۔

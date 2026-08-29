@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-22",
-  "content_digest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "en-US",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 43,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -168,6 +168,42 @@
         "currency": "USD",
         "formatted_price": "$5.99",
         "storefront_url": "https://apps.apple.com/us/app/id6792483140"
+      }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: Battery health score",
+      "summary": "BattAI BattAI uses five values from public iOS APIs: battery level, charge state, Low Power Mode, whole-device thermal state, and time. Other results are calculated from those readings or added by you. Each detail shows its source and limits.",
+      "category": "utility",
+      "search_terms": [
+        "Battery health score",
+        "Maximum capacity",
+        "Cycles",
+        "Charge care",
+        "Charge range",
+        "Charge rate",
+        "Export data"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=iag_api_en_us&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/en-US/battai.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/us/app/id6802423998"
       }
     },
     {
@@ -513,6 +549,43 @@
       }
     },
     {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite",
+      "summary": "HoursTag Lite - See the real price of things",
+      "category": "finance",
+      "search_terms": [
+        "budget",
+        "spending tracker",
+        "savings",
+        "expense tracker",
+        "money manager",
+        "budget planner",
+        "frugal",
+        "impulse spending"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_api_en_us&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/en-US/hourstaglite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/us/app/id6794039979"
+      }
+    },
+    {
       "key": "hourstag",
       "app_store_id": "6754218117",
       "name": "HoursTag: Hours to Buy",
@@ -568,43 +641,6 @@
         "currency": "USD",
         "formatted_price": "$4.99",
         "storefront_url": "https://apps.apple.com/us/app/id6754218117"
-      }
-    },
-    {
-      "key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
-      "summary": "HoursTag Lite - See the real price of things",
-      "category": "finance",
-      "search_terms": [
-        "budget",
-        "spending tracker",
-        "savings",
-        "expense tracker",
-        "money manager",
-        "budget planner",
-        "frugal",
-        "impulse spending"
-      ],
-      "purchase_model": "free_with_lifetime_unlock",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": false,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
-      },
-      "app_store_url": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_api_en_us&mt=8",
-      "guide_url": "https://alice51849.github.io/ios-app-guide/en-US/hourstaglite.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "0",
-        "currency": "USD",
-        "formatted_price": "Free",
-        "storefront_url": "https://apps.apple.com/us/app/id6794039979"
       }
     },
     {
@@ -1332,8 +1368,8 @@
         "price": "0",
         "currency": "USD",
         "formatted_price": "Free",
-        "rating_value": 4.5,
-        "rating_count": 4,
+        "rating_value": 4.3,
+        "rating_count": 6,
         "storefront_url": "https://apps.apple.com/us/app/id6785004775"
       }
     },
@@ -1582,6 +1618,47 @@
       }
     },
     {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: AI Social Bookmarks",
+      "summary": "Save it now. Actually read it later.",
+      "category": "productivity",
+      "search_terms": [
+        "url",
+        "organizer",
+        "collection",
+        "offline",
+        "inbox",
+        "archive",
+        "clipboard",
+        "folder",
+        "curate",
+        "wishlist",
+        "recipes",
+        "to watch"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/us/app/id6802505528?pt=118326163&ct=iag_api_en_us&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/en-US/savetag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/us/app/id6802505528"
+      }
+    },
+    {
       "key": "scanto",
       "app_store_id": "6779977651",
       "name": "ScanTo Pro: Offline PDF & OCR",
@@ -1663,6 +1740,48 @@
         "currency": "USD",
         "formatted_price": "Free",
         "storefront_url": "https://apps.apple.com/us/app/id6788236641"
+      }
+    },
+    {
+      "key": "shotinbox",
+      "app_store_id": "6802166527",
+      "name": "ShotInbox AI: Sort Screenshots",
+      "summary": "Your Screenshots, Sorted Find, act on, and clear every screenshot.",
+      "category": "photo-utility",
+      "search_terms": [
+        "organizer",
+        "manager",
+        "duplicate",
+        "similar",
+        "text",
+        "receipts",
+        "links",
+        "storage",
+        "album",
+        "camera",
+        "roll",
+        "offline",
+        "private"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=iag_api_en_us&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/en-US/shotinbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/us/app/id6802166527"
       }
     },
     {

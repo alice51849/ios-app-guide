@@ -3,29 +3,29 @@
 > প্রতিটি iOS অ্যাপের ফিচার, মূল্য ও সাধারণ প্রশ্নের সাজানো তথ্য।
 
 locale: bn-BD
-apps: 43
+apps: 46
 - অ্যাপ ডিরেক্টরি: https://alice51849.github.io/ios-app-guide/bn-BD/tools/private-pay-once-iphone-app-finder.html
 - অ্যাপ ডিরেক্টরি · PWA: https://alice51849.github.io/ios-app-guide/bn-BD/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/bn-BD.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/bn-BD.json
 - অ্যাপ ডিরেক্টরি · SVG: https://alice51849.github.io/ios-app-guide/bn-BD/visuals/
-- অ্যাপ ডিরেক্টরি · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- অ্যাপ ডিরেক্টরি · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- অ্যাপ ডিরেক্টরি · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
-- অ্যাপ ডিরেক্টরি · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
-- অ্যাপ ডিরেক্টরি · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
+- অ্যাপ ডিরেক্টরি · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- অ্যাপ ডিরেক্টরি · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- অ্যাপ ডিরেক্টরি · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- অ্যাপ ডিরেক্টরি · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- অ্যাপ ডিরেক্টরি · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
 - অ্যাপ ডিরেক্টরি · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- অ্যাপ ডিরেক্টরি · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
-- অ্যাপ ডিরেক্টরি · Agent Skill · bn-BD: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/bn-BD.json
-- অ্যাপ ডিরেক্টরি · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
-- অ্যাপ ডিরেক্টরি · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
-- অ্যাপ ডিরেক্টরি · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
-- অ্যাপ ডিরেক্টরি · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
-- অ্যাপ ডিরেক্টরি · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
-- অ্যাপ ডিরেক্টরি · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- অ্যাপ ডিরেক্টরি · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- অ্যাপ ডিরেক্টরি · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- অ্যাপ ডিরেক্টরি · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- অ্যাপ ডিরেক্টরি · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- অ্যাপ ডিরেক্টরি · Agent Skill · bn-BD: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/bn-BD.json
+- অ্যাপ ডিরেক্টরি · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- অ্যাপ ডিরেক্টরি · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- অ্যাপ ডিরেক্টরি · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- অ্যাপ ডিরেক্টরি · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- অ্যাপ ডিরেক্টরি · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- অ্যাপ ডিরেক্টরি · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- অ্যাপ ডিরেক্টরি · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- অ্যাপ ডিরেক্টরি · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- অ্যাপ ডিরেক্টরি · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/bn-BD/notesstudio100.html) — হাতে লেখা নোট ও PDF পড়া
   - ট্যাবলেটে ডিজিটাল কলমে লিখুন, PDF-এ টীকা দিন, রেকর্ডিংটি সেই পাতায় রাখুন আর ফ্ল্যাশকার্ডে পড়ুন। ব্যক্তিগত অফলাইন কাজ; একবারের কেনায় আরও খাতা ও নকশা যোগ হয়।
@@ -43,6 +43,10 @@ apps: 43
   - ৮ প্রশ্নের প্রস্তুতি দিয়ে শুরু করুন, ১৫ মিনিটে ২০ প্রশ্নের চাপ সামলান, তারপর ভুলগুলো আবার করুন—শোনা ও পড়ার মনোযোগী অফলাইন প্রশিক্ষণ।
   - মূল্য: একটি নির্দিষ্ট অগ্রিম মূল্যে পেইড ডাউনলোড, কোনো সাবস্ক্রিপশন নেই।
   - App Store: https://apps.apple.com/in/app/id6792483140
+- [BattAI: ব্যাটারির স্বাস্থ্য](https://alice51849.github.io/ios-app-guide/bn-BD/battai.html) — স্পষ্ট নিয়ম, উৎস ও সীমা
+  - সময়ের সঙ্গে আপনার ব্যাটারি বুঝুন স্পষ্ট নিয়ম, উৎস ও সীমা আরও গভীর ইতিহাস, পরিকল্পনা ও রিপোর্ট খুলুন। একবার পরিশোধ। কোনো সদস্যতা নেই।
+  - মূল্য: বিনামূল্যে ডাউনলোড করুন। একবার কিনলেই সব ফিচার স্থায়ীভাবে আনলক হবে—কোনো সাবস্ক্রিপশন নেই।
+  - App Store: https://apps.apple.com/in/app/id6802423998
 - [CalDaily ক্যালকুলেটর ও থিম](https://alice51849.github.io/ios-app-guide/bn-BD/caldaily.html) — উইজেট, টুল ও গোছানো হিসাব
   - আপনার রাখা প্রতিটি ফলাফলে নাম ও ধরন দেওয়া যায় এবং পরে সহজেই খুঁজে পাওয়া যায়। আটটি উন্নত টুল, হোম স্ক্রিন উইজেট আর একশোটি থিম, সবই আপনার ডিভাইসে।
   - মূল্য: বিনামূল্যে ডাউনলোড করুন। একবার কিনলেই সব ফিচার স্থায়ীভাবে আনলক হবে—কোনো সাবস্ক্রিপশন নেই।
@@ -151,6 +155,10 @@ apps: 43
   - Duplicate, screenshots, ঝাপসা ছবি ও বড় videos খুঁজুন। Delete করার আগে device এ review করুন। No ads, no subscription, one time unlock.
   - মূল্য: বিনামূল্যে ডাউনলোড করুন। একবার কিনলেই সব ফিচার স্থায়ীভাবে আনলক হবে—কোনো সাবস্ক্রিপশন নেই।
   - App Store: https://apps.apple.com/in/app/id6780223070
+- [SaveTag: AI বুকমার্ক](https://alice51849.github.io/ios-app-guide/bn-BD/savetag.html) — লিংক সেভ করুন, পরে পড়ুন
+  - যা কিছু পরে দেখবেন ভেবে রেখেছিলেন, সব এখন এক জায়গায়। এক ছোঁয়ায় সেভ, ফোনের ভেতরেই নিজে থেকে গুছিয়ে যায়। অ্যাকাউন্ট লাগে না, সাবস্ক্রিপশনও নেই।
+  - মূল্য: বিনামূল্যে ডাউনলোড করুন। একবার কিনলেই সব ফিচার স্থায়ীভাবে আনলক হবে—কোনো সাবস্ক্রিপশন নেই।
+  - App Store: https://apps.apple.com/in/app/id6802505528
 - [ScanTo Pro: PDF স্ক্যান](https://alice51849.github.io/ios-app-guide/bn-BD/scanto.html) — অফলাইন OCR, গোপন PDF
   - যা খুশি স্ক্যান করুন, চিরকাল খুঁজে পান। ঝকঝকে PDF, খোঁজা যায় এমন OCR টেক্সট আর Face ID লক—পুরো অফলাইন। একবার পেমেন্ট, সাবস্ক্রিপশন নেই।
   - মূল্য: বিনামূল্যে ডাউনলোড করুন। একবার কিনলেই সব ফিচার স্থায়ীভাবে আনলক হবে—কোনো সাবস্ক্রিপশন নেই।
@@ -159,6 +167,10 @@ apps: 43
   - একবার কিনুন, চিরকাল ঘুমান। কয়েক ডজন জীবন্ত শব্দ মিশিয়ে ১০০০+ অনন্য সাউন্ডস্কেপ তৈরি করুন।
   - মূল্য: বিনামূল্যে ডাউনলোড করুন। একবার কিনলেই সব ফিচার স্থায়ীভাবে আনলক হবে—কোনো সাবস্ক্রিপশন নেই।
   - App Store: https://apps.apple.com/in/app/id6788236641
+- [ShotInbox AI: Sort Screenshots](https://alice51849.github.io/ios-app-guide/bn-BD/shotinbox.html) — একবার কিনুন, আজীবন ব্যবহার
+  - প্রতিটি স্ক্রিনশট খুঁজুন, কাজে লাগান ও পরিষ্কার করুন। সাম্প্রতিক ৫০টি স্ক্রিনশটে সম্পূর্ণ মূল অভিজ্ঞতা বিনামূল্যে। একবার কেনা • আজীবন ব্যবহার • কোনো সাবস্ক্রিপশন নয়।
+  - মূল্য: বিনামূল্যে ডাউনলোড করুন। একবার কিনলেই সব ফিচার স্থায়ীভাবে আনলক হবে—কোনো সাবস্ক্রিপশন নেই।
+  - App Store: https://apps.apple.com/in/app/id6802166527
 - [Snapport Lite](https://alice51849.github.io/ios-app-guide/bn-BD/snapportlite.html) — বাড়িতে আইডি ছবি তৈরি করুন
   - নির্দেশিত আকার, পটভূমি টুল এবং প্রিন্টের জন্য প্রস্তুত রপ্তানির সাথে পাসপোর্ট, ভিসা এবং নথির ছবি তৈরি করুন। | বিনামূল্যের সংস্করণ · ১টি এক্সপোর্ট সমর্থিত
   - মূল্য: বিনামূল্যে ডাউনলোড করুন। একবার কিনলেই সব ফিচার স্থায়ীভাবে আনলক হবে—কোনো সাবস্ক্রিপশন নেই।

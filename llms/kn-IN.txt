@@ -3,29 +3,29 @@
 > ಪ್ರತಿ iOS ಆ್ಯಪ್‌ನ ವೈಶಿಷ್ಟ್ಯಗಳು, ಬೆಲೆ ಮತ್ತು ಪದೇ ಪದೇ ಕೇಳಲಾಗುವ ಪ್ರಶ್ನೆಗಳ ಸಂರಚಿತ ಮಾಹಿತಿ.
 
 locale: kn-IN
-apps: 43
+apps: 46
 - ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ: https://alice51849.github.io/ios-app-guide/kn-IN/tools/private-pay-once-iphone-app-finder.html
 - ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · PWA: https://alice51849.github.io/ios-app-guide/kn-IN/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/kn-IN.json
 - ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · SVG: https://alice51849.github.io/ios-app-guide/kn-IN/visuals/
-- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
-- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
-- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
+- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
 - ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
-- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Agent Skill · kn-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/kn-IN.json
-- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
-- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
-- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
-- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
-- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
-- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Agent Skill · kn-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/kn-IN.json
+- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- ಆ್ಯಪ್ ಡೈರೆಕ್ಟರಿ · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/kn-IN/notesstudio100.html) — ಬರೆಯಿರಿ, PDF ಮೇಲೆ ಟಿಪ್ಪಣಿ ಮಾಡಿ
   - ಕೈಬರಹ, ಟೈಪಿಂಗ್ ಮತ್ತು PDF ಅಧ್ಯಯನಕ್ಕೆ ಖಾಸಗಿ, ಆಫ್‌ಲೈನ್-ಆಧಾರಿತ ಬರವಣಿಗೆ ಸ್ಟುಡಿಯೋ. 29 ಪೆನ್ ಹಾಗೂ ಬ್ರಷ್, 100 ವಿಭಿನ್ನ ಶೈಲಿ, ಪುಟಕ್ಕೆ ಜೋಡಿಸಿದ ಆಡಿಯೋ ಮತ್ತು ಪುನರವಲೋಕನ ಸಾಧನಗಳನ್ನು ಬಳಸಿ.
@@ -43,6 +43,10 @@ apps: 43
   - ಕೇಳುವಿಕೆ ಮತ್ತು ಓದುವಿಕೆಯನ್ನು ನೈಜ ಸಮಯದ ಒತ್ತಡದಲ್ಲಿ ಬೆಳೆಸಿರಿ. ಬೆಚ್ಚಗಾಗುವ ಸುತ್ತಿನಿಂದ ತಪ್ಪುಗಳ ಮರುಅಭ್ಯಾಸದವರೆಗೆ ಪ್ರತಿದಿನ ಸ್ಪಷ್ಟವಾದ ಕ್ರಮದಲ್ಲಿ ಮುಂದುವರಿಯಿರಿ.
   - ಬೆಲೆ: ಒಂದೇ ಮುಂಗಡ ಬೆಲೆಯ ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್, ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ.
   - App Store: https://apps.apple.com/in/app/id6792483140
+- [BattAI: ಬ್ಯಾಟರಿ ಆರೋಗ್ಯ ಅಂಕ](https://alice51849.github.io/ios-app-guide/kn-IN/battai.html) — ಸ್ಪಷ್ಟ ನಿಯಮಗಳು, ಮೂಲಗಳು ಮತ್ತು ಮಿತಿಗಳು
+  - ಕಾಲದೊಂದಿಗೆ ನಿಮ್ಮ ಬ್ಯಾಟರಿಯನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಿ ಸ್ಪಷ್ಟ ನಿಯಮಗಳು, ಮೂಲಗಳು ಮತ್ತು ಮಿತಿಗಳು ಆಳವಾದ ಇತಿಹಾಸ, ಯೋಜನೆ ಮತ್ತು ವರದಿಗಳನ್ನು ತೆರೆಯಿರಿ. ಒಂದು ಪಾವತಿ. ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ.
+  - ಬೆಲೆ: ಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಒಂದೇ ಬಾರಿಯ ಖರೀದಿಯಿಂದ ಎಲ್ಲ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿ—ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ.
+  - App Store: https://apps.apple.com/in/app/id6802423998
 - [CalDaily ಕ್ಯಾಲ್ಕುಲೇಟರ್](https://alice51849.github.io/ios-app-guide/kn-IN/caldaily.html) — ವಿಜೆಟ್, ಪರಿಕರ, 100 ಥೀಮ್
   - ನೀವು ಉಳಿಸಿದ ಪ್ರತಿ ಫಲಿತಾಂಶಕ್ಕೂ ಹೆಸರು ಮತ್ತು ಬಗೆ ನೀಡಿ ನಂತರ ಸುಲಭವಾಗಿ ಹುಡುಕಿ. ಎಂಟು ಪರಿಕರಗಳು, ಮುಖಪುಟ ವಿಜೆಟ್ ಮತ್ತು ನೂರು ಥೀಮ್, ಎಲ್ಲವೂ ನಿಮ್ಮ ಸಾಧನದಲ್ಲೇ.
   - ಬೆಲೆ: ಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಒಂದೇ ಬಾರಿಯ ಖರೀದಿಯಿಂದ ಎಲ್ಲ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿ—ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ.
@@ -151,6 +155,10 @@ apps: 43
   - Duplicate photos, screenshots, ಮಸುಕಾದ ಫೋಟೋ ಮತ್ತು ದೊಡ್ಡ videos ಹುಡುಕಿ. Delete ಮಾಡುವ ಮೊದಲು device ನಲ್ಲಿ review ಮಾಡಿ. No ads, no subscription.
   - ಬೆಲೆ: ಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಒಂದೇ ಬಾರಿಯ ಖರೀದಿಯಿಂದ ಎಲ್ಲ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿ—ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ.
   - App Store: https://apps.apple.com/in/app/id6780223070
+- [SaveTag: AI ಬುಕ್‌ಮಾರ್ಕ್](https://alice51849.github.io/ios-app-guide/kn-IN/savetag.html) — ಲಿಂಕ್ ಉಳಿಸಿ, ನಂತರ ಓದಿ
+  - ಆಮೇಲೆ ನೋಡೋಣ ಎಂದು ಪಕ್ಕಕ್ಕಿಟ್ಟದ್ದೆಲ್ಲ ಈಗ ಒಂದೇ ಕಡೆ. ಒಂದೇ ಸ್ಪರ್ಶಕ್ಕೆ ಉಳಿಸಿ, ಫೋನ್ ಒಳಗೇ ತಾನಾಗಿ ವಿಂಗಡಣೆ. ಖಾತೆ ಬೇಡ, ಚಂದಾದಾರಿಕೆಯೂ ಇಲ್ಲ.
+  - ಬೆಲೆ: ಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಒಂದೇ ಬಾರಿಯ ಖರೀದಿಯಿಂದ ಎಲ್ಲ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿ—ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ.
+  - App Store: https://apps.apple.com/in/app/id6802505528
 - [ScanTo Pro: PDF ಸ್ಕ್ಯಾನ್](https://alice51849.github.io/ios-app-guide/kn-IN/scanto.html) — ಆಫ್‌ಲೈನ್ OCR, ಖಾಸಗಿ PDF
   - ಯಾವುದನ್ನೂ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ, ಯಾವಾಗಲೂ ಹುಡುಕಿ. ಸ್ಪಷ್ಟ PDF, ಹುಡುಕಬಹುದಾದ OCR ಪಠ್ಯ ಮತ್ತು Face ID ಲಾಕ್—ಸಂಪೂರ್ಣ ಆಫ್‌ಲೈನ್. ಒಮ್ಮೆ ಪಾವತಿಸಿ, ಚಂದಾ ಇಲ್ಲ.
   - ಬೆಲೆ: ಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಒಂದೇ ಬಾರಿಯ ಖರೀದಿಯಿಂದ ಎಲ್ಲ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿ—ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ.
@@ -159,6 +167,10 @@ apps: 43
   - ಒಮ್ಮೆ ಖರೀದಿಸಿ, ಸದಾ ನಿದ್ರಿಸಿ. ಡಜನ್‌ಗಟ್ಟಲೆ ಶಬ್ದ ಬೆರೆಸಿ 1000+ ಸೌಂಡ್‌ಸ್ಕೇಪ್ ರಚಿಸಿ.
   - ಬೆಲೆ: ಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಒಂದೇ ಬಾರಿಯ ಖರೀದಿಯಿಂದ ಎಲ್ಲ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿ—ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ.
   - App Store: https://apps.apple.com/in/app/id6788236641
+- [ShotInbox AI: Sort Screenshots](https://alice51849.github.io/ios-app-guide/kn-IN/shotinbox.html) — ಒಂದೇ ಖರೀದಿ, ಜೀವಮಾನ ಬಳಕೆ
+  - ಪ್ರತಿ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹುಡುಕಿ, ಬಳಸಿ ಮತ್ತು ಸ್ವಚ್ಛಗೊಳಿಸಿ. ಇತ್ತೀಚಿನ 50 ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳಿಗೆ ಸಂಪೂರ್ಣ ಮುಖ್ಯ ಅನುಭವ ಉಚಿತ. ಒಂದೇ ಖರೀದಿ • ಜೀವಮಾನದ ಪ್ರವೇಶ • ಚಂದಾ ಇಲ್ಲ.
+  - ಬೆಲೆ: ಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಒಂದೇ ಬಾರಿಯ ಖರೀದಿಯಿಂದ ಎಲ್ಲ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿ—ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ.
+  - App Store: https://apps.apple.com/in/app/id6802166527
 - [Snapport Lite](https://alice51849.github.io/ios-app-guide/kn-IN/snapportlite.html) — ಮನೆದಲ್ಲಿ ಐಡಿ ಫೋಟೋಗಳನ್ನು ರಚಿಸಿ
   - ಮಾರ್ಗದರ್ಶನದ ಗಾತ್ರ, ಹಿನ್ನೆಲೆ ಸಾಧನಗಳು ಮತ್ತು ಮುದ್ರಣಕ್ಕೆ ತಯಾರಾದ ರಫ್ತಿನೊಂದಿಗೆ ಪಾಸ್ಪೋರ್ಟ್, ವೀಸಾ ಮತ್ತು ದಾಖಲೆ ಫೋಟೋಗಳನ್ನು ಮಾಡಿ. | ಉಚಿತ ಆವೃತ್ತಿ · 1 ರಫ್ತಿಗೆ ಬೆಂಬಲ
   - ಬೆಲೆ: ಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಒಂದೇ ಬಾರಿಯ ಖರೀದಿಯಿಂದ ಎಲ್ಲ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿ—ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ.

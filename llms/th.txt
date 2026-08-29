@@ -3,29 +3,29 @@
 > ข้อมูลแบบโครงสร้างของแต่ละแอป iOS — ฟีเจอร์ ราคา และ FAQ
 
 locale: th
-apps: 43
+apps: 46
 - ไดเรกทอรีแอป: https://alice51849.github.io/ios-app-guide/th/tools/private-pay-once-iphone-app-finder.html
 - ไดเรกทอรีแอป · PWA: https://alice51849.github.io/ios-app-guide/th/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/th.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/th.json
 - ไดเรกทอรีแอป · SVG: https://alice51849.github.io/ios-app-guide/th/visuals/
-- ไดเรกทอรีแอป · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- ไดเรกทอรีแอป · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- ไดเรกทอรีแอป · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
-- ไดเรกทอรีแอป · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
-- ไดเรกทอรีแอป · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
+- ไดเรกทอรีแอป · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- ไดเรกทอรีแอป · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- ไดเรกทอรีแอป · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- ไดเรกทอรีแอป · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- ไดเรกทอรีแอป · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
 - ไดเรกทอรีแอป · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- ไดเรกทอรีแอป · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
-- ไดเรกทอรีแอป · Agent Skill · th: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/th.json
-- ไดเรกทอรีแอป · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
-- ไดเรกทอรีแอป · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
-- ไดเรกทอรีแอป · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
-- ไดเรกทอรีแอป · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
-- ไดเรกทอรีแอป · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
-- ไดเรกทอรีแอป · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- ไดเรกทอรีแอป · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- ไดเรกทอรีแอป · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- ไดเรกทอรีแอป · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- ไดเรกทอรีแอป · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- ไดเรกทอรีแอป · Agent Skill · th: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/th.json
+- ไดเรกทอรีแอป · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- ไดเรกทอรีแอป · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- ไดเรกทอรีแอป · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- ไดเรกทอรีแอป · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- ไดเรกทอรีแอป · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- ไดเรกทอรีแอป · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- ไดเรกทอรีแอป · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- ไดเรกทอรีแอป · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- ไดเรกทอรีแอป · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/th/notesstudio100.html) — สมุดโน้ต ลายมือ และ PDF
   - พื้นที่เขียนแบบออฟไลน์สำหรับลายมือ การทำเครื่องหมาย PDF และการทบทวน บันทึกเสียงจะอยู่กับหน้าที่เริ่มอัดเท่านั้น ซื้อครั้งเดียวเพื่อเพิ่มสมุด สไตล์ และการสำรองแบบเข้ารหัส
@@ -43,6 +43,10 @@ apps: 43
   - เตรียมสอบ TOEIC อย่างมีประสิทธิภาพใน 30 วัน! เริ่มต้นการเรียนรู้วันนี้เพื่อพัฒนาคะแนนของคุณ!
   - ราคา: ดาวน์โหลดฟรี ซื้อครั้งเดียวปลดล็อกทุกฟีเจอร์ ไม่มีกับดักสมัครสมาชิก
   - App Store: https://apps.apple.com/th/app/id6784974530
+- [BattAI: คะแนนสุขภาพแบตเตอรี่](https://alice51849.github.io/ios-app-guide/th/battai.html) — กฎ แหล่งข้อมูล และข้อจำกัดที่ชัดเจน
+  - เข้าใจแบตเตอรี่ของคุณเมื่อเวลาผ่านไป กฎ แหล่งข้อมูล และข้อจำกัดที่ชัดเจน ปลดล็อกประวัติเชิงลึก การวางแผน และรายงาน จ่ายครั้งเดียว ไม่มีการสมัครสมาชิก
+  - ราคา: ดาวน์โหลดฟรี ซื้อครั้งเดียวปลดล็อกทุกฟีเจอร์ ไม่มีกับดักสมัครสมาชิก
+  - App Store: https://apps.apple.com/th/app/id6802423998
 - [CalDaily: เครื่องคิดเลข](https://alice51849.github.io/ios-app-guide/th/caldaily.html) — วิดเจ็ต, เครื่องมือ, ประวัติ
   - ทุกผลลัพธ์ที่เก็บไว้ตั้งชื่อและระบุประเภทได้ จึงค้นเจอในภายหลัง มีเครื่องมือขั้นสูงแปดอย่าง วิดเจ็ตบนหน้าจอโฮม และธีมหนึ่งร้อยแบบ ทั้งหมดทำงานในเครื่องของคุณ
   - ราคา: ดาวน์โหลดฟรี ซื้อครั้งเดียวปลดล็อกทุกฟีเจอร์ ไม่มีกับดักสมัครสมาชิก
@@ -151,6 +155,10 @@ apps: 43
   - ค้นหารูปซ้ำ ภาพหน้าจอ รูปเบลอ และวิดีโอใหญ่ที่กินพื้นที่ ตรวจทานบนเครื่องก่อนลบ เป็นส่วนตัว ไม่มีโฆษณา ไม่ต้องสมัครสมาชิก
   - ราคา: ดาวน์โหลดฟรี ซื้อครั้งเดียวปลดล็อกทุกฟีเจอร์ ไม่มีกับดักสมัครสมาชิก
   - App Store: https://apps.apple.com/th/app/id6780223070
+- [SaveTag: บุ๊กมาร์ก AI](https://alice51849.github.io/ios-app-guide/th/savetag.html) — เก็บลิงก์ไว้อ่านทีหลัง
+  - ทุกอย่างที่ตั้งใจจะกลับมาดู อยู่รวมกันที่เดียวแล้ว แตะครั้งเดียวก็เก็บได้ จัดหมวดในเครื่องให้เอง และมีพิธีกรรมประจำวันคอยพากลับมาอ่าน ไม่ต้องสมัคร ไม่มีรายเดือน
+  - ราคา: ดาวน์โหลดฟรี ซื้อครั้งเดียวปลดล็อกทุกฟีเจอร์ ไม่มีกับดักสมัครสมาชิก
+  - App Store: https://apps.apple.com/th/app/id6802505528
 - [ScanTo Pro: PDF และ OCR](https://alice51849.github.io/ios-app-guide/th/scanto.html) — สแกนส่วนตัวแบบออฟไลน์
   - สแกนทุกอย่าง แล้วค้นเจอตลอดไป PDF คมชัด ข้อความ OCR ค้นหาได้ และล็อกด้วย Face ID ออฟไลน์เต็มรูปแบบ จ่ายครั้งเดียว ไม่มีค่าสมาชิก
   - ราคา: ดาวน์โหลดฟรี ซื้อครั้งเดียวปลดล็อกทุกฟีเจอร์ ไม่มีกับดักสมัครสมาชิก
@@ -159,6 +167,10 @@ apps: 43
   - ซื้อครั้งเดียว นอนหลับตลอดไป ผสมผสานเสียงที่มีชีวิตหลายสิบเสียงเป็นกว่า 1000 ภูมิทัศน์เสียงที่ไม่ซ้ำกัน — เรียลไทม์ ไม่มีการวนซ้ำ ไม่มีการสมัครสมาชิก 100% ออฟไลน์
   - ราคา: ดาวน์โหลดฟรี ซื้อครั้งเดียวปลดล็อกทุกฟีเจอร์ ไม่มีกับดักสมัครสมาชิก
   - App Store: https://apps.apple.com/th/app/id6788236641
+- [ShotInbox AI: Sort Screenshots](https://alice51849.github.io/ios-app-guide/th/shotinbox.html) — แยกหมวดภาพหน้าจอ เรียงตามเวลา
+  - ค้นหา จัดการ และเก็บกวาดทุกภาพหน้าจอ. ภาพหน้าจอ 50 ภาพล่าสุดใช้ขั้นตอนหลักทั้งหมดได้ฟรี. จ่ายครั้งเดียว • ใช้ตลอดชีพ • ไม่มีสมาชิก.
+  - ราคา: ดาวน์โหลดฟรี ซื้อครั้งเดียวปลดล็อกทุกฟีเจอร์ ไม่มีกับดักสมัครสมาชิก
+  - App Store: https://apps.apple.com/th/app/id6802166527
 - [Snapport Lite](https://alice51849.github.io/ios-app-guide/th/snapportlite.html) — ถ่ายรูปติดบัตรที่บ้าน
   - สร้างรูปพาสปอร์ต วีซ่า และบัตรประจำตัวพร้อมคำแนะนำขนาด พื้นหลัง และการพิมพ์ | เวอร์ชันฟรี · รองรับการส่งออก 1 ครั้ง | ซื้อครั้งเดียว · ใช้ได้ตลอดไป · ไม่มีสมาชิก
   - ราคา: ดาวน์โหลดฟรี ซื้อครั้งเดียวปลดล็อกทุกฟีเจอร์ ไม่มีกับดักสมัครสมาชิก

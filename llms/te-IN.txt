@@ -3,29 +3,29 @@
 > ప్రతి iOS యాప్ ఫీచర్లు, ధరలు మరియు తరచుగా అడిగే ప్రశ్నలపై క్రమబద్ధమైన సమాచారం.
 
 locale: te-IN
-apps: 43
+apps: 46
 - యాప్ డైరెక్టరీ: https://alice51849.github.io/ios-app-guide/te-IN/tools/private-pay-once-iphone-app-finder.html
 - యాప్ డైరెక్టరీ · PWA: https://alice51849.github.io/ios-app-guide/te-IN/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/te-IN.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/te-IN.json
 - యాప్ డైరెక్టరీ · SVG: https://alice51849.github.io/ios-app-guide/te-IN/visuals/
-- యాప్ డైరెక్టరీ · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- యాప్ డైరెక్టరీ · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- యాప్ డైరెక్టరీ · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
-- యాప్ డైరెక్టరీ · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
-- యాప్ డైరెక్టరీ · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
+- యాప్ డైరెక్టరీ · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- యాప్ డైరెక్టరీ · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- యాప్ డైరెక్టరీ · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- యాప్ డైరెక్టరీ · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- యాప్ డైరెక్టరీ · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
 - యాప్ డైరెక్టరీ · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- యాప్ డైరెక్టరీ · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
-- యాప్ డైరెక్టరీ · Agent Skill · te-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/te-IN.json
-- యాప్ డైరెక్టరీ · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
-- యాప్ డైరెక్టరీ · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
-- యాప్ డైరెక్టరీ · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
-- యాప్ డైరెక్టరీ · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
-- యాప్ డైరెక్టరీ · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
-- యాప్ డైరెక్టరీ · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- యాప్ డైరెక్టరీ · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- యాప్ డైరెక్టరీ · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- యాప్ డైరెక్టరీ · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- యాప్ డైరెక్టరీ · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- యాప్ డైరెక్టరీ · Agent Skill · te-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/te-IN.json
+- యాప్ డైరెక్టరీ · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- యాప్ డైరెక్టరీ · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- యాప్ డైరెక్టరీ · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- యాప్ డైరెక్టరీ · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- యాప్ డైరెక్టరీ · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- యాప్ డైరెక్టరీ · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- యాప్ డైరెక్టరీ · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- యాప్ డైరెక్టరీ · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- యాప్ డైరెక్టరీ · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/te-IN/notesstudio100.html) — రాత గమనికలు, PDF వ్యాఖ్యలు
   - చేతితో రాయండి, PDFపై వ్యాఖ్యలు జోడించండి, పుస్తకాలను క్రమబద్ధం చేయండి. రికార్డ్ చేసిన ఆడియో అదే పేజీకి జతగా ఉంటుంది; పని ఆఫ్‌లైన్‌లో సాగుతుంది.
@@ -43,6 +43,10 @@ apps: 43
   - రోజువారీ Listening, Reading ప్రాక్టీస్, బలహీనమైన అంశాలపై దృష్టి మరియు ప్రోగ్రెస్ ట్రాకింగ్‌తో TOEICకు సిద్ధమవండి.
   - ధర: ఉచితంగా డౌన్‌లోడ్ చేసుకోండి. ఒకసారి కొనుగోలుతో అన్ని ఫీచర్లను అన్‌లాక్ చేసుకోండి—సబ్‌స్క్రిప్షన్ లేదు.
   - App Store: https://apps.apple.com/in/app/id6784974530
+- [BattAI: బ్యాటరీ ఆరోగ్య స్కోర్](https://alice51849.github.io/ios-app-guide/te-IN/battai.html) — స్పష్టమైన నియమాలు, మూలాలు, పరిమితులు
+  - కాలంతో మీ బ్యాటరీని అర్థం చేసుకోండి స్పష్టమైన నియమాలు, మూలాలు, పరిమితులు లోతైన చరిత్ర, ప్రణాళిక, నివేదికలను తెరవండి. ఒక్క చెల్లింపు. సభ్యత్వం లేదు.
+  - ధర: ఉచితంగా డౌన్‌లోడ్ చేసుకోండి. ఒకసారి కొనుగోలుతో అన్ని ఫీచర్లను అన్‌లాక్ చేసుకోండి—సబ్‌స్క్రిప్షన్ లేదు.
+  - App Store: https://apps.apple.com/in/app/id6802423998
 - [CalDaily: క్యాలిక్యులేటర్](https://alice51849.github.io/ios-app-guide/te-IN/caldaily.html) — విడ్జెట్, సాధనాలు, చరిత్ర
   - మీరు ఉంచుకున్న ప్రతి ఫలితానికి పేరు, రకం ఇవ్వొచ్చు, తర్వాత సులభంగా వెతకొచ్చు. ఎనిమిది అధునాతన సాధనాలు, హోమ్ స్క్రీన్ విడ్జెట్, వంద థీమ్‌లు, అన్నీ మీ ఫోన్‌లోనే.
   - ధర: ఉచితంగా డౌన్‌లోడ్ చేసుకోండి. ఒకసారి కొనుగోలుతో అన్ని ఫీచర్లను అన్‌లాక్ చేసుకోండి—సబ్‌స్క్రిప్షన్ లేదు.
@@ -151,6 +155,10 @@ apps: 43
   - Duplicate photos, screenshots, మసక ఫోటో మరియు పెద్ద videos కనుగొనండి. Delete ముందు device లో review చేయండి. No ads, no subscription.
   - ధర: ఉచితంగా డౌన్‌లోడ్ చేసుకోండి. ఒకసారి కొనుగోలుతో అన్ని ఫీచర్లను అన్‌లాక్ చేసుకోండి—సబ్‌స్క్రిప్షన్ లేదు.
   - App Store: https://apps.apple.com/in/app/id6780223070
+- [SaveTag: AI బుక్‌మార్క్](https://alice51849.github.io/ios-app-guide/te-IN/savetag.html) — లింక్‌లు దాచు, తర్వాత చదువు
+  - తర్వాత చూద్దాం అని పక్కన పెట్టినవన్నీ ఇప్పుడు ఒకే చోట. ఒక్క తట్టుతో దాచుకోండి, ఫోన్ లోపలే వాటంతట అవే వర్గీకరణ. ఖాతా అక్కర్లేదు, సబ్‌స్క్రిప్షన్ లేదు.
+  - ధర: ఉచితంగా డౌన్‌లోడ్ చేసుకోండి. ఒకసారి కొనుగోలుతో అన్ని ఫీచర్లను అన్‌లాక్ చేసుకోండి—సబ్‌స్క్రిప్షన్ లేదు.
+  - App Store: https://apps.apple.com/in/app/id6802505528
 - [ScanTo Pro: PDF స్కాన్](https://alice51849.github.io/ios-app-guide/te-IN/scanto.html) — ఆఫ్‌లైన్ OCR, ప్రైవేట్ PDF
   - ఏదైనా స్కాన్ చేయండి, ఎప్పటికీ కనుగొనండి. స్పష్టమైన PDF, వెతకగల OCR టెక్స్ట్, Face ID లాక్—పూర్తిగా ఆఫ్‌లైన్. ఒకసారి చెల్లింపు, సబ్‌స్క్రిప్షన్ లేదు.
   - ధర: ఉచితంగా డౌన్‌లోడ్ చేసుకోండి. ఒకసారి కొనుగోలుతో అన్ని ఫీచర్లను అన్‌లాక్ చేసుకోండి—సబ్‌స్క్రిప్షన్ లేదు.
@@ -159,6 +167,10 @@ apps: 43
   - ఒకసారి కొనండి, ఎప్పటికీ నిద్రపోండి. డజన్ల కొద్దీ శబ్దాలను కలిపి 1000+ సౌండ్‌స్కేప్‌లు.
   - ధర: ఉచితంగా డౌన్‌లోడ్ చేసుకోండి. ఒకసారి కొనుగోలుతో అన్ని ఫీచర్లను అన్‌లాక్ చేసుకోండి—సబ్‌స్క్రిప్షన్ లేదు.
   - App Store: https://apps.apple.com/in/app/id6788236641
+- [ShotInbox AI: Sort Screenshots](https://alice51849.github.io/ios-app-guide/te-IN/shotinbox.html) — ఒక్క కొనుగోలు, జీవితకాల వాడకం
+  - ప్రతి స్క్రీన్‌షాట్‌ను కనుగొని, ఉపయోగించి, శుభ్రం చేయి. తాజా 50 స్క్రీన్‌షాట్‌లకు పూర్తి ప్రధాన అనుభవం ఉచితం. ఒక్క కొనుగోలు • జీవితకాల ప్రవేశం • చందా లేదు.
+  - ధర: ఉచితంగా డౌన్‌లోడ్ చేసుకోండి. ఒకసారి కొనుగోలుతో అన్ని ఫీచర్లను అన్‌లాక్ చేసుకోండి—సబ్‌స్క్రిప్షన్ లేదు.
+  - App Store: https://apps.apple.com/in/app/id6802166527
 - [Snapport Lite](https://alice51849.github.io/ios-app-guide/te-IN/snapportlite.html) — ఇంటిలో ID ఫోటోలు సృష్టించండి
   - మార్గదర్శక పరిమాణం, నేపథ్య సాధనాలు మరియు ముద్రణకు సిద్ధమైన ఎగుమతితో పాస్‌పోర్ట్, వీసా మరియు డాక్యుమెంట్ ఫోటోలు తయారు చేయండి. | ఉచిత వెర్షన్ · 1 ఎగుమతికి మద్దతు
   - ధర: ఉచితంగా డౌన్‌లోడ్ చేసుకోండి. ఒకసారి కొనుగోలుతో అన్ని ఫీచర్లను అన్‌లాక్ చేసుకోండి—సబ్‌స్క్రిప్షన్ లేదు.

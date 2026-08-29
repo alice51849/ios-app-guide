@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-22",
-  "content_digest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 43,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -199,6 +199,42 @@
         "currency": "JPY",
         "formatted_price": "¥1,000",
         "storefront_url": "https://apps.apple.com/jp/app/id6792483140"
+      }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: バッテリー状態スコア",
+      "summary": "BattAI BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。",
+      "category": "utility",
+      "search_terms": [
+        "バッテリー状態スコア",
+        "最大容量",
+        "充放電回数",
+        "充電ケア",
+        "充電範囲",
+        "充電速度",
+        "データを書き出す"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=iag_api_ja&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ja/battai.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6802423998"
       }
     },
     {
@@ -608,6 +644,58 @@
       }
     },
     {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite",
+      "summary": "HoursTag Lite - モノの本当の値段が見える",
+      "category": "finance",
+      "search_terms": [
+        "節約",
+        "家計簿",
+        "予算",
+        "貯金",
+        "節約術",
+        "支出管理",
+        "お金管理",
+        "浪費防止",
+        "貯金アプリ",
+        "節約アプリ",
+        "時給",
+        "労働時間",
+        "衝動買い",
+        "家計",
+        "貯蓄",
+        "お小遣い",
+        "倹約",
+        "出費",
+        "資産管理",
+        "節約生活",
+        "買い物",
+        "お金",
+        "人生時間コスト"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/jp/app/id6794039979?pt=118326163&ct=iag_api_ja&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ja/hourstaglite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6794039979"
+      }
+    },
+    {
       "key": "hourstag",
       "app_store_id": "6754218117",
       "name": "HoursTag: 価格を時間に",
@@ -667,58 +755,6 @@
         "currency": "JPY",
         "formatted_price": "¥800",
         "storefront_url": "https://apps.apple.com/jp/app/id6754218117"
-      }
-    },
-    {
-      "key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
-      "summary": "HoursTag Lite - モノの本当の値段が見える",
-      "category": "finance",
-      "search_terms": [
-        "節約",
-        "家計簿",
-        "予算",
-        "貯金",
-        "節約術",
-        "支出管理",
-        "お金管理",
-        "浪費防止",
-        "貯金アプリ",
-        "節約アプリ",
-        "時給",
-        "労働時間",
-        "衝動買い",
-        "家計",
-        "貯蓄",
-        "お小遣い",
-        "倹約",
-        "出費",
-        "資産管理",
-        "節約生活",
-        "買い物",
-        "お金",
-        "人生時間コスト"
-      ],
-      "purchase_model": "free_with_lifetime_unlock",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": false,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
-      },
-      "app_store_url": "https://apps.apple.com/jp/app/id6794039979?pt=118326163&ct=iag_api_ja&mt=8",
-      "guide_url": "https://alice51849.github.io/ios-app-guide/ja/hourstaglite.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "0",
-        "currency": "JPY",
-        "formatted_price": "無料",
-        "storefront_url": "https://apps.apple.com/jp/app/id6794039979"
       }
     },
     {
@@ -834,6 +870,8 @@
         "price": "0",
         "currency": "JPY",
         "formatted_price": "無料",
+        "rating_value": 5.0,
+        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/jp/app/id6773017109"
       }
     },
@@ -1815,6 +1853,53 @@
       }
     },
     {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: AIであとで読む",
+      "summary": "一日に何度も、自分あてにリンクを送っていませんか。友だちが教えてくれたレシピ、気になったアウター、あとで見ようと思った動画、もう一度読み返したかった投稿。トーク画面やメモ、スクリーンショットに散らばって、そのまま行方不明になります。",
+      "category": "productivity",
+      "search_terms": [
+        "ブックマーク",
+        "お気に入り",
+        "url",
+        "リーディングリスト",
+        "クリップ",
+        "情報整理",
+        "積読",
+        "レシピ",
+        "買い物",
+        "旅行",
+        "オフライン",
+        "メモ",
+        "スクラップ",
+        "まとめ",
+        "ウィッシュリスト",
+        "買い切り",
+        "広告なし",
+        "ウィジェット"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/jp/app/id6802505528?pt=118326163&ct=iag_api_ja&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ja/savetag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6802505528"
+      }
+    },
+    {
       "key": "scanto",
       "app_store_id": "6779977651",
       "name": "ScanTo Pro: オフラインPDF",
@@ -1912,6 +1997,55 @@
         "currency": "JPY",
         "formatted_price": "無料",
         "storefront_url": "https://apps.apple.com/jp/app/id6788236641"
+      }
+    },
+    {
+      "key": "shotinbox",
+      "app_store_id": "6802166527",
+      "name": "ShotInbox AI: Sort Screenshots",
+      "summary": "スクショを、すっきり整理 すべての画像を見つけ、処理し、片づける。",
+      "category": "photo-utility",
+      "search_terms": [
+        "スクリーンショット",
+        "写真",
+        "整理",
+        "アルバム",
+        "重複",
+        "類似",
+        "削除",
+        "画像",
+        "管理",
+        "クリーナー",
+        "カメラロール",
+        "文字認識",
+        "一括選択",
+        "容量節約",
+        "端末内",
+        "プライバシー",
+        "買い切り",
+        "自動仕分け",
+        "ギャラリー",
+        "レシート"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=iag_api_ja&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ja/shotinbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "JPY",
+        "formatted_price": "無料",
+        "storefront_url": "https://apps.apple.com/jp/app/id6802166527"
       }
     },
     {

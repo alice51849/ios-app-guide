@@ -7,7 +7,9 @@ import json
 import os
 from pathlib import Path
 import sys
+import tempfile
 import unittest
+from unittest import mock
 import xml.etree.ElementTree as ET
 
 
@@ -21,6 +23,123 @@ from official_locales import OFFICIAL_LOCALES
 import portfolio_app_finder
 import portfolio_offer_catalog
 import publisher_intent_catalog
+
+
+class PortfolioOfferDateTests(unittest.TestCase):
+    def test_output_digest_tracks_every_rendered_input_but_not_date(self):
+        index = {
+            "description": "Verified offers",
+            "date_modified": "2026-08-27",
+            "content_digest": "sha256:old",
+        }
+        catalogs = {
+            "en-US": {
+                "dateModified": "2026-08-27",
+                "itemListElement": [
+                    {"item": {"applicationCategory": "BusinessApplication"}}
+                ],
+            }
+        }
+        with mock.patch.object(
+            portfolio_offer_catalog,
+            "OFFICIAL_LOCALES",
+            ("en-US",),
+        ):
+            original = portfolio_offer_catalog._output_digest(index, catalogs)
+            newer_dates = {
+                "en-US": {
+                    **catalogs["en-US"],
+                    "dateModified": "2026-08-28",
+                }
+            }
+            self.assertEqual(
+                original,
+                portfolio_offer_catalog._output_digest(
+                    {**index, "date_modified": "2026-08-28"},
+                    newer_dates,
+                ),
+            )
+            changed_catalog = {
+                "en-US": {
+                    **catalogs["en-US"],
+                    "itemListElement": [
+                        {
+                            "item": {
+                                "applicationCategory": "HealthApplication"
+                            }
+                        }
+                    ],
+                }
+            }
+            self.assertNotEqual(
+                original,
+                portfolio_offer_catalog._output_digest(
+                    index,
+                    changed_catalog,
+                ),
+            )
+            self.assertNotEqual(
+                original,
+                portfolio_offer_catalog._output_digest(
+                    {**index, "description": "Updated verified offers"},
+                    catalogs,
+                ),
+            )
+
+    def test_stable_modified_preserves_only_unchanged_valid_content(self):
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            index_path = pages / portfolio_offer_catalog.INDEX_RELATIVE
+            index_path.parent.mkdir(parents=True)
+            index_path.write_text(
+                json.dumps(
+                    {
+                        "date_modified": "2026-08-27",
+                        "content_digest": "sha256:unchanged",
+                    }
+                ),
+                encoding="utf-8",
+            )
+            self.assertEqual(
+                "2026-08-27",
+                portfolio_offer_catalog._stable_modified(
+                    pages,
+                    "unchanged",
+                    "2026-08-28",
+                ),
+            )
+            self.assertEqual(
+                "2026-08-28",
+                portfolio_offer_catalog._stable_modified(
+                    pages,
+                    "changed",
+                    "2026-08-28",
+                ),
+            )
+            index_path.write_text(
+                json.dumps(
+                    {
+                        "date_modified": "2026-08-29",
+                        "content_digest": "sha256:unchanged",
+                    }
+                ),
+                encoding="utf-8",
+            )
+            for digest in ("unchanged", "changed"):
+                with self.subTest(digest=digest):
+                    with self.assertRaisesRegex(
+                        ValueError,
+                        "newer than the build date",
+                    ):
+                        portfolio_offer_catalog._stable_modified(
+                            pages,
+                            digest,
+                            "2026-08-28",
+                        )
+
+    def test_build_date_rejects_non_calendar_date(self):
+        with self.assertRaisesRegex(ValueError, "Invalid build date"):
+            portfolio_offer_catalog._build_date("2026-07-32")
 
 
 class PortfolioOfferCatalogTests(unittest.TestCase):

@@ -3,29 +3,29 @@
 > Структурована інформація про функції, ціну та поширені запитання для кожного застосунку iOS.
 
 locale: uk
-apps: 43
+apps: 46
 - Каталог застосунків: https://alice51849.github.io/ios-app-guide/uk/tools/private-pay-once-iphone-app-finder.html
 - Каталог застосунків · PWA: https://alice51849.github.io/ios-app-guide/uk/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/uk.json
 - Каталог застосунків · SVG: https://alice51849.github.io/ios-app-guide/uk/visuals/
-- Каталог застосунків · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- Каталог застосунків · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- Каталог застосунків · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
-- Каталог застосунків · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
-- Каталог застосунків · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
+- Каталог застосунків · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Каталог застосунків · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Каталог застосунків · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- Каталог застосунків · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- Каталог застосунків · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
 - Каталог застосунків · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- Каталог застосунків · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
-- Каталог застосунків · Agent Skill · uk: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/uk.json
-- Каталог застосунків · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
-- Каталог застосунків · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
-- Каталог застосунків · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
-- Каталог застосунків · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
-- Каталог застосунків · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
-- Каталог застосунків · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- Каталог застосунків · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- Каталог застосунків · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- Каталог застосунків · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- Каталог застосунків · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- Каталог застосунків · Agent Skill · uk: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/uk.json
+- Каталог застосунків · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- Каталог застосунків · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- Каталог застосунків · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- Каталог застосунків · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- Каталог застосунків · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- Каталог застосунків · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Каталог застосунків · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Каталог застосунків · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Каталог застосунків · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/uk/notesstudio100.html) — Блокнот, рукописні нотатки
   - Офлайн-простір для письма й розмітки PDF. Аудіозапис лишається на сторінці, де його почато. Разова покупка додає зошити, стилі та зашифровані копії.
@@ -43,6 +43,10 @@ apps: 43
   - Від короткої розминки до роботи на час і повторення помилок: розвивайте стійку увагу під час аудіювання та читання англійською.
   - Ціна: Платне завантаження за єдиною фіксованою ціною, без передплати.
   - App Store: https://apps.apple.com/ua/app/id6792483140
+- [BattAI: Стан батареї](https://alice51849.github.io/ios-app-guide/uk/battai.html) — Чіткі правила, джерела й обмеження
+  - Розумійте стан акумулятора з часом Чіткі правила, джерела й обмеження Відкрийте глибшу історію, планування та звіти. Один платіж. Без підписки.
+  - Ціна: Завантажуйте безкоштовно. Одна покупка відкриває всі функції—без передплати.
+  - App Store: https://apps.apple.com/ua/app/id6802423998
 - [CalDaily: калькулятор і теми](https://alice51849.github.io/ios-app-guide/uk/caldaily.html) — Віджет, інструменти, історія
   - Кожен результат можна назвати й позначити типом, щоб знайти пізніше. Вісім інструментів, віджет на початковому екрані та сто тем, усе на вашому пристрої.
   - Ціна: Завантажуйте безкоштовно. Одна покупка відкриває всі функції—без передплати.
@@ -151,6 +155,10 @@ apps: 43
   - Знайдіть дублікати, скріншоти, розмиті фото й великі відео, що займають памʼять. Перегляд на пристрої перед видаленням. Без реклами й підписки.
   - Ціна: Завантажуйте безкоштовно. Одна покупка відкриває всі функції—без передплати.
   - App Store: https://apps.apple.com/ua/app/id6780223070
+- [SaveTag: закладки з ШІ](https://alice51849.github.io/ios-app-guide/uk/savetag.html) — Зберігай посилання, читай
+  - Усе, до чого ви збиралися повернутися, нарешті в одному місці. Один дотик зберігає, розбір за темами відбувається просто на пристрої. Без акаунта й без підписки.
+  - Ціна: Завантажуйте безкоштовно. Одна покупка відкриває всі функції—без передплати.
+  - App Store: https://apps.apple.com/ua/app/id6802505528
 - [ScanTo Pro: PDF і OCR](https://alice51849.github.io/ios-app-guide/uk/scanto.html) — Приватний офлайн-сканер
   - Скануй що завгодно, знаходь завжди. Чіткі PDF, пошук по OCR-тексту та блокування Face ID – повністю офлайн. Одна оплата, без підписки.
   - Ціна: Завантажуйте безкоштовно. Одна покупка відкриває всі функції—без передплати.
@@ -159,6 +167,10 @@ apps: 43
   - Купуйте один раз, спіть назавжди. Змішуйте десятки живих звуків у понад 1000 унікальних звукових пейзажів — реальний час, без повторів, без підписки, 100% офлайн.
   - Ціна: Завантажуйте безкоштовно. Одна покупка відкриває всі функції—без передплати.
   - App Store: https://apps.apple.com/ua/app/id6788236641
+- [ShotInbox AI: Sort Screenshots](https://alice51849.github.io/ios-app-guide/uk/shotinbox.html) — Органайзер знімків екрана
+  - Знаходьте, опрацьовуйте й очищайте кожен знімок. Останні 50 скриншотів мають повний базовий процес безкоштовно. Одна оплата • Доступ назавжди • Без підписки.
+  - Ціна: Завантажуйте безкоштовно. Одна покупка відкриває всі функції—без передплати.
+  - App Store: https://apps.apple.com/ua/app/id6802166527
 - [Snapport Lite](https://alice51849.github.io/ios-app-guide/uk/snapportlite.html) — Створіть ID-фотографії вдома
   - Створюйте фотографії для паспорта, візи та документів з керівництвом по розмірам, інструментами для фону та експортом, готовим до друку. | Без реклами, без відстеження
   - Ціна: Завантажуйте безкоштовно. Одна покупка відкриває всі функції—без передплати.

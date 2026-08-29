@@ -2,7 +2,7 @@
 title: "最佳學習時封鎖社群媒體應用程式 iPhone"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/videos/zh-Hant/lockhour.html"
-modified: "2026-08-20"
+modified: "2026-08-23"
 video_url: "https://files.catbox.moe/hzqwfa.mp4"
 duration: "PT16S"
 app_store_id: "6780107485"
@@ -20,4 +20,4 @@ publisher: "Lumi Studio"
 
 [開啟 App 指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-block-social-media-while-studying-iphone.html)
 
-> 由 Lumi Studio（應用程式開發者）撰寫的指南。應用程式名稱為其所有者的商標，僅用於識別。針對文件、健康、學校及生產力相關決策，請在相關情況下確認官方要求。
+> 由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。

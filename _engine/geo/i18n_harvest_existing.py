@@ -89,6 +89,14 @@ def _looks_like_untranslated_english(source: str, target: str, lang: str) -> boo
     return not re.search(r"[^\x00-\x7F]", target)
 
 
+def _is_safe_harvest_candidate(source: str, target: str, lang: str) -> bool:
+    if _looks_like_untranslated_english(source, target, lang):
+        return False
+    if _i18n.cross_app_names_introduced(source, target):
+        return False
+    return validate(source, lang, target) is None
+
+
 def locale_dirs() -> list[str]:
     return sorted(
         p.name
@@ -153,9 +161,7 @@ def harvest(
         target, n = counter.most_common(1)[0]
         if n / sum(counter.values()) < MIN_VOTES_RATIO:
             continue
-        if _looks_like_untranslated_english(source, target, lang):
-            continue
-        if validate(source, lang, target) is None:
+        if _is_safe_harvest_candidate(source, target, lang):
             harvested[source] = target
     return harvested
 

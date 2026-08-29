@@ -3,29 +3,29 @@
 > Informasi terstruktur tiap aplikasi iOS — fitur, harga, dan FAQ.
 
 locale: id
-apps: 43
+apps: 46
 - Direktori aplikasi: https://alice51849.github.io/ios-app-guide/id/tools/private-pay-once-iphone-app-finder.html
 - Direktori aplikasi · PWA: https://alice51849.github.io/ios-app-guide/id/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/id.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/id.json
 - Direktori aplikasi · SVG: https://alice51849.github.io/ios-app-guide/id/visuals/
-- Direktori aplikasi · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- Direktori aplikasi · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- Direktori aplikasi · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
-- Direktori aplikasi · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
-- Direktori aplikasi · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
+- Direktori aplikasi · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Direktori aplikasi · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Direktori aplikasi · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- Direktori aplikasi · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- Direktori aplikasi · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
 - Direktori aplikasi · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- Direktori aplikasi · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
-- Direktori aplikasi · Agent Skill · id: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/id.json
-- Direktori aplikasi · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
-- Direktori aplikasi · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
-- Direktori aplikasi · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
-- Direktori aplikasi · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
-- Direktori aplikasi · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
-- Direktori aplikasi · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- Direktori aplikasi · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- Direktori aplikasi · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- Direktori aplikasi · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- Direktori aplikasi · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- Direktori aplikasi · Agent Skill · id: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/id.json
+- Direktori aplikasi · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- Direktori aplikasi · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- Direktori aplikasi · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- Direktori aplikasi · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- Direktori aplikasi · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- Direktori aplikasi · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Direktori aplikasi · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Direktori aplikasi · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Direktori aplikasi · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/id/notesstudio100.html) — Catatan tulis tangan & PDF
   - Ruang menulis privat dan offline dengan 29 pena serta kuas, 100 gaya buku, anotasi PDF, rekaman melekat pada halaman, dan kartu belajar dengan pengulangan berkala.
@@ -43,6 +43,10 @@ apps: 43
   - Siap menghadapi TOEIC? Dengan Aim990, tingkatkan kemampuan mendengarkan dan membaca Anda tanpa batasan!
   - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
   - App Store: https://apps.apple.com/id/app/id6784974530
+- [BattAI: Skor kesehatan baterai](https://alice51849.github.io/ios-app-guide/id/battai.html) — Aturan, sumber, dan batas yang jelas
+  - Pahami baterai Anda dari waktu ke waktu Aturan, sumber, dan batas yang jelas Buka riwayat lebih dalam, perencanaan, dan laporan Sekali bayar. Tanpa langganan.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6802423998
 - [CalDaily: kalkulator & tema](https://alice51849.github.io/ios-app-guide/id/caldaily.html) — Widget, alat, riwayat rapi
   - Setiap hasil yang Anda simpan bisa diberi nama dan jenis, lalu ditemukan lagi. Delapan alat lanjutan, widget Layar Utama, dan seratus tema, semua di perangkat Anda.
   - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
@@ -151,6 +155,10 @@ apps: 43
   - Temukan foto duplikat, screenshot, foto buram, dan video besar yang memakan memori. Tinjau di perangkat sebelum hapus. Tanpa iklan, tanpa langganan.
   - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
   - App Store: https://apps.apple.com/id/app/id6780223070
+- [SaveTag: markah buku AI](https://alice51849.github.io/ios-app-guide/id/savetag.html) — Simpan tautan, baca nanti
+  - Semua yang niat kamu buka lagi akhirnya jadi satu tempat. Sekali ketuk tersimpan, penataan terjadi di perangkat, dan tiap hari diingatkan. Tanpa akun, tanpa langganan.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6802505528
 - [ScanTo Pro: PDF & OCR](https://alice51849.github.io/ios-app-guide/id/scanto.html) — Pemindai offline privat
   - Pindai apa saja, temukan selamanya. PDF tajam, teks OCR yang bisa dicari, dan kunci Face ID — sepenuhnya offline. Bayar sekali, tanpa langganan.
   - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
@@ -159,6 +167,10 @@ apps: 43
   - Beli sekali, tidur selamanya. Campurkan puluhan suara hidup menjadi lebih dari 1000 lanskap suara unik — waktu nyata, tidak pernah berulang, tidak pernah berlangganan, 10
   - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
   - App Store: https://apps.apple.com/id/app/id6788236641
+- [ShotInbox AI: Sort Screenshots](https://alice51849.github.io/ios-app-guide/id/shotinbox.html) — Tangkapan layar mudah dicari
+  - 50 tangkapan layar terbaru mendapat alur inti lengkap secara gratis. Sekali bayar • Akses seumur hidup • Tanpa langganan.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6802166527
 - [Snapport Lite](https://alice51849.github.io/ios-app-guide/id/snapportlite.html) — Buat pasfoto di rumah
   - Buat foto paspor, visa, dan kartu identitas dengan panduan ukuran, latar, dan cetak. | Versi gratis · Mendukung 1 ekspor | Tanpa iklan atau pelacakan
   - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.

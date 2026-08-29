@@ -6,8 +6,8 @@
   "name": "Lumi Studio Publisher Search Intent Catalog",
   "description": "A first-party catalog of who each app is designed for, the task they are trying to complete, and the direct App Store path.",
   "inLanguage": "en-US",
-  "dateModified": "2026-08-22",
-  "numberOfItems": 43,
+  "dateModified": "2026-08-29",
+  "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
     {
@@ -18,8 +18,8 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=iag_data_en_us&mt=8",
-        "name": "100 Notes Studio: Pen & Paper",
-        "description": "100 Notes Studio is a private, offline workspace for handwriting, typed notes, PDF markup, page-attached audio recordings and study.",
+        "name": "100 Notes Studio",
+        "description": "100 Notes Studio — 100 Notes Studio is a private, offline workspace for handwriting, typed notes, PDF markup, page-attached audio recordings and study. Free to start · One-time unlock · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -34,7 +34,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6798813048"
           },
-          "name": "100 Notes Studio: Pen & Paper",
+          "name": "100 Notes Studio",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=iag_data_en_us&mt=8",
@@ -45,11 +45,11 @@
             "target": "https://apps.apple.com/us/app/id6798813048?pt=118326163&ct=iag_data_en_us&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-US/notesstudio100.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-offline-handwriting-notes-app-for-ipad-with-pdf-markup-no-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "en-US",
-          "description": "100 Notes Studio is a private, offline workspace for handwriting, typed notes, PDF markup, page-attached audio recordings and study.",
+          "description": "100 Notes Studio — 100 Notes Studio is a private, offline workspace for handwriting, typed notes, PDF markup, page-attached audio recordings and study. Free to start · One-time unlock · No subscription.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-notesstudio100"
           },
@@ -217,7 +217,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-aim990plus",
         "url": "https://apps.apple.com/us/app/id6792483140?pt=118326163&ct=iag_data_en_us&mt=8",
         "name": "Aim990 Plus",
-        "description": "Train for clear decisions under exam pressure",
+        "description": "Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -243,11 +243,11 @@
             "target": "https://apps.apple.com/us/app/id6792483140?pt=118326163&ct=iag_data_en_us&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-US/aim990plus.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6792483140",
           "inLanguage": "en-US",
-          "description": "Train for clear decisions under exam pressure",
+          "description": "Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-aim990plus"
           },
@@ -277,13 +277,79 @@
     {
       "@type": "ListItem",
       "position": 5,
+      "url": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=iag_data_en_us&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-battai",
+        "url": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=iag_data_en_us&mt=8",
+        "name": "BattAI",
+        "description": "A battery score is only useful when the app separates what iOS measured, what it estimated and what you entered yourself — BattAI is built for this.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802423998",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802423998"
+          },
+          "name": "BattAI",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=iag_data_en_us&mt=8",
+          "installUrl": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=iag_data_en_us&mt=8",
+          "downloadUrl": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=iag_data_en_us&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=iag_data_en_us&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-iphone-battery-health-app-with-honest-estimates-and-report.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802423998",
+          "inLanguage": "en-US",
+          "description": "A battery score is only useful when the app separates what iOS measured, what it estimated and what you entered yourself — BattAI is built for this.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-battai"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "US"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
       "url": "https://apps.apple.com/us/app/id6794178671?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/us/app/id6794178671?pt=118326163&ct=iag_data_en_us&mt=8",
-        "name": "CalDaily: Calculator & Themes",
-        "description": "A calculator you will actually keep using, because it remembers the thinking",
+        "name": "CalDaily",
+        "description": "CalDaily — A calculator you will actually keep using, because it remembers the thinking behind each number. Free to start · One-time unlock · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -298,7 +364,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6794178671"
           },
-          "name": "CalDaily: Calculator & Themes",
+          "name": "CalDaily",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/us/app/id6794178671?pt=118326163&ct=iag_data_en_us&mt=8",
@@ -309,11 +375,11 @@
             "target": "https://apps.apple.com/us/app/id6794178671?pt=118326163&ct=iag_data_en_us&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-US/caldaily.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-calculator-app-iphone-that-saves-history-you-can-name-and-search.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "en-US",
-          "description": "A calculator you will actually keep using, because it remembers the thinking",
+          "description": "CalDaily — A calculator you will actually keep using, because it remembers the thinking behind each number. Free to start · One-time unlock · No subscription.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-caldaily"
           },
@@ -342,7 +408,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 6,
+      "position": 7,
       "url": "https://apps.apple.com/us/app/id6781337213?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -408,7 +474,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 7,
+      "position": 8,
       "url": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -474,7 +540,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 8,
+      "position": 9,
       "url": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -540,14 +606,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 9,
+      "position": 10,
       "url": "https://apps.apple.com/us/app/id6794725568?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/us/app/id6794725568?pt=118326163&ct=iag_data_en_us&mt=8",
-        "name": "DailyMate Lite: Speak Today",
-        "description": "Be ready when it is your turn to speak. DailyMate Lite turns everyday situations into short cue-and-reply practice in 50 languages. Start free with the",
+        "name": "DailyMate Lite",
+        "description": "DailyMate Lite — Be ready when it is your turn to speak. Free to start · One-time unlock · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -562,7 +628,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6794725568"
           },
-          "name": "DailyMate Lite: Speak Today",
+          "name": "DailyMate Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/us/app/id6794725568?pt=118326163&ct=iag_data_en_us&mt=8",
@@ -573,11 +639,11 @@
             "target": "https://apps.apple.com/us/app/id6794725568?pt=118326163&ct=iag_data_en_us&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-US/dailymatelite.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-free-travel-phrasebook-app-with-real-dialogues-for-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "en-US",
-          "description": "Be ready when it is your turn to speak. DailyMate Lite turns everyday situations into short cue-and-reply practice in 50 languages. Start free with the",
+          "description": "DailyMate Lite — Be ready when it is your turn to speak. Free to start · One-time unlock · No subscription.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-dailymatelite"
           },
@@ -606,7 +672,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 10,
+      "position": 11,
       "url": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -672,14 +738,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 11,
+      "position": 12,
       "url": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=iag_data_en_us&mt=8",
         "name": "G+Money Lite",
-        "description": "G+Money Lite — Smart travel currency & expense tracker",
+        "description": "For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before deciding whether unlimited trips are worth a one-time unlock — G+Money Lite is built for this.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -705,79 +771,13 @@
             "target": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=iag_data_en_us&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-US/gmoneylite.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "en-US",
-          "description": "G+Money Lite — Smart travel currency & expense tracker",
+          "description": "For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before deciding whether unlimited trips are worth a one-time unlock — G+Money Lite is built for this.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-gmoneylite"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "free_with_lifetime_unlock"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": true
-        },
-        "price": "0",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "US"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 12,
-      "url": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_data_en_us&mt=8",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-hourstaglite",
-        "url": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_data_en_us&mt=8",
-        "name": "HoursTag Lite",
-        "description": "HoursTag Lite - See the real price of things",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6794039979",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6794039979"
-          },
-          "name": "HoursTag Lite",
-          "operatingSystem": "iOS",
-          "applicationCategory": "FinanceApplication",
-          "url": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_data_en_us&mt=8",
-          "installUrl": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_data_en_us&mt=8",
-          "downloadUrl": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_data_en_us&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_data_en_us&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-US/hourstaglite.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6794039979",
-          "inLanguage": "en-US",
-          "description": "HoursTag Lite - See the real price of things",
-          "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-hourstaglite"
           },
           "additionalProperty": [
             {
@@ -810,8 +810,8 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-hourstag",
         "url": "https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=iag_data_en_us&mt=8",
-        "name": "HoursTag: Hours to Buy",
-        "description": "What does it really cost? Not in dollars — in hours of your life.",
+        "name": "HoursTag",
+        "description": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something — HoursTag is built for this.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -826,7 +826,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6754218117"
           },
-          "name": "HoursTag: Hours to Buy",
+          "name": "HoursTag",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
           "url": "https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=iag_data_en_us&mt=8",
@@ -837,11 +837,11 @@
             "target": "https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=iag_data_en_us&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-US/hourstag.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-app-to-track-where-my-money-goes-and-save-more.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6754218117",
           "inLanguage": "en-US",
-          "description": "What does it really cost? Not in dollars — in hours of your life.",
+          "description": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something — HoursTag is built for this.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-hourstag"
           },
@@ -871,6 +871,72 @@
     {
       "@type": "ListItem",
       "position": 14,
+      "url": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_data_en_us&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-hourstaglite",
+        "url": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_data_en_us&mt=8",
+        "name": "HoursTag Lite",
+        "description": "HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6794039979",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6794039979"
+          },
+          "name": "HoursTag Lite",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_data_en_us&mt=8",
+          "installUrl": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_data_en_us&mt=8",
+          "downloadUrl": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_data_en_us&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/us/app/id6794039979?pt=118326163&ct=iag_data_en_us&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-app-to-convert-prices-into-work-hours-before-buying.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6794039979",
+          "inLanguage": "en-US",
+          "description": "HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-hourstaglite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "US"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
       "url": "https://apps.apple.com/us/app/id6780107485?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -936,7 +1002,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 15,
+      "position": 16,
       "url": "https://apps.apple.com/us/app/id6773017109?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -1002,7 +1068,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 16,
+      "position": 17,
       "url": "https://apps.apple.com/us/app/id6775773117?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -1068,7 +1134,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 17,
+      "position": 18,
       "url": "https://apps.apple.com/us/app/id6778748533?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -1134,7 +1200,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 18,
+      "position": 19,
       "url": "https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -1200,7 +1266,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 19,
+      "position": 20,
       "url": "https://apps.apple.com/us/app/id6778269699?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -1266,7 +1332,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 21,
       "url": "https://apps.apple.com/us/app/id6776958488?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -1332,7 +1398,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 22,
       "url": "https://apps.apple.com/us/app/id6779750237?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -1398,7 +1464,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
+      "position": 23,
       "url": "https://apps.apple.com/us/app/id6779745474?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -1464,7 +1530,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
+      "position": 24,
       "url": "https://apps.apple.com/us/app/id6787193643?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -1530,7 +1596,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 25,
       "url": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -1596,14 +1662,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
+      "position": 26,
       "url": "https://apps.apple.com/us/app/id6792850916?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/us/app/id6792850916?pt=118326163&ct=iag_data_en_us&mt=8",
         "name": "Mask My File",
-        "description": "Share safely without losing the context people actually need. Mask My File finds private details before you send a file, permanently hides only what you",
+        "description": "Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context — Mask My File is built for this.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1629,11 +1695,11 @@
             "target": "https://apps.apple.com/us/app/id6792850916?pt=118326163&ct=iag_data_en_us&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-US/maskmyfile.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "en-US",
-          "description": "Share safely without losing the context people actually need. Mask My File finds private details before you send a file, permanently hides only what you",
+          "description": "Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context — Mask My File is built for this.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-maskmyfile"
           },
@@ -1662,7 +1728,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
+      "position": 27,
       "url": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -1728,14 +1794,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 28,
       "url": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=iag_data_en_us&mt=8",
-        "name": "Mochi DoneStamp: Last Time",
-        "description": "When did you last change the sheets, water a plant, call family, back up photos, or replace a filter?",
+        "name": "Mochi DoneStamp",
+        "description": "For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment — Mochi DoneStamp is built for this.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1750,7 +1816,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6790800323"
           },
-          "name": "Mochi DoneStamp: Last Time",
+          "name": "Mochi DoneStamp",
           "operatingSystem": "iOS",
           "applicationCategory": "LifestyleApplication",
           "url": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=iag_data_en_us&mt=8",
@@ -1761,11 +1827,11 @@
             "target": "https://apps.apple.com/us/app/id6790800323?pt=118326163&ct=iag_data_en_us&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-US/mochidonestamp.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "en-US",
-          "description": "When did you last change the sheets, water a plant, call family, back up photos, or replace a filter?",
+          "description": "For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment — Mochi DoneStamp is built for this.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-mochidonestamp"
           },
@@ -1794,14 +1860,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 29,
       "url": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-moneytag",
         "url": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=iag_data_en_us&mt=8",
         "name": "MoneyTag: Income & Expense",
-        "description": "Income & Expense Every project keeps its own books: income minus expenses is its net result. Here are the questions people ask most. If yours is not answered, write to us — a real person reads every message.",
+        "description": "A monthly budget cannot tell a freelancer whether one client project actually made money — each project needs its own income, expenses and net result — MoneyTag: Income & Expense is built for this.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1827,11 +1893,11 @@
             "target": "https://apps.apple.com/us/app/id6801956402?pt=118326163&ct=iag_data_en_us&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-US/moneytag.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-income-and-expense-tracker-for-freelance-projects-no-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6801956402",
           "inLanguage": "en-US",
-          "description": "Income & Expense Every project keeps its own books: income minus expenses is its net result. Here are the questions people ask most. If yours is not answered, write to us — a real person reads every message.",
+          "description": "A monthly budget cannot tell a freelancer whether one client project actually made money — each project needs its own income, expenses and net result — MoneyTag: Income & Expense is built for this.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-moneytag"
           },
@@ -1860,7 +1926,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 30,
       "url": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -1926,7 +1992,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 31,
       "url": "https://apps.apple.com/us/app/id6781808054?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -1992,7 +2058,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 32,
       "url": "https://apps.apple.com/us/app/id6780223070?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -2058,7 +2124,73 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 33,
+      "url": "https://apps.apple.com/us/app/id6802505528?pt=118326163&ct=iag_data_en_us&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-savetag",
+        "url": "https://apps.apple.com/us/app/id6802505528?pt=118326163&ct=iag_data_en_us&mt=8",
+        "name": "SaveTag",
+        "description": "Links arrive in chats, notes and screenshots, get saved somewhere, and are never seen again — the saving works, the coming back does not — SaveTag is built for this.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802505528",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802505528"
+          },
+          "name": "SaveTag",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/us/app/id6802505528?pt=118326163&ct=iag_data_en_us&mt=8",
+          "installUrl": "https://apps.apple.com/us/app/id6802505528?pt=118326163&ct=iag_data_en_us&mt=8",
+          "downloadUrl": "https://apps.apple.com/us/app/id6802505528?pt=118326163&ct=iag_data_en_us&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/us/app/id6802505528?pt=118326163&ct=iag_data_en_us&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-app-to-save-links-from-other-apps-on-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802505528",
+          "inLanguage": "en-US",
+          "description": "Links arrive in chats, notes and screenshots, get saved somewhere, and are never seen again — the saving works, the coming back does not — SaveTag is built for this.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-savetag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "US"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
       "url": "https://apps.apple.com/us/app/id6779977651?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -2124,7 +2256,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 35,
       "url": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -2190,7 +2322,73 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 36,
+      "url": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=iag_data_en_us&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-shotinbox",
+        "url": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=iag_data_en_us&mt=8",
+        "name": "ShotInbox AI",
+        "description": "Screenshots pile up because each one was a task — a receipt to file, a link to open, an address to navigate to — and the camera roll has no way to finish any of them — ShotInbox AI is built for this.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802166527",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802166527"
+          },
+          "name": "ShotInbox AI",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=iag_data_en_us&mt=8",
+          "installUrl": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=iag_data_en_us&mt=8",
+          "downloadUrl": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=iag_data_en_us&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=iag_data_en_us&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-app-to-sort-screenshots-on-iphone-offline.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802166527",
+          "inLanguage": "en-US",
+          "description": "Screenshots pile up because each one was a task — a receipt to file, a link to open, an address to navigate to — and the camera roll has no way to finish any of them — ShotInbox AI is built for this.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-shotinbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "US"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 37,
       "url": "https://apps.apple.com/us/app/id6780575828?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -2256,14 +2454,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 38,
       "url": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=iag_data_en_us&mt=8",
         "name": "Snapport Lite",
-        "description": "Snapport Lite - Make passport, visa, and document photos with guided sizing, background tools, and print-ready export.",
+        "description": "A trustworthy free passport-photo app should let you complete a real photo — guided sizing, background, and a print-ready export — before asking for money, and it should do the work on your phone rather than a server — Snapport Lite is built for this.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2289,11 +2487,11 @@
             "target": "https://apps.apple.com/us/app/id6792856304?pt=118326163&ct=iag_data_en_us&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-US/snapportlite.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-free-passport-photo-app-for-iphone-that-works-offline.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "en-US",
-          "description": "Snapport Lite - Make passport, visa, and document photos with guided sizing, background tools, and print-ready export.",
+          "description": "A trustworthy free passport-photo app should let you complete a real photo — guided sizing, background, and a print-ready export — before asking for money, and it should do the work on your phone rather than a server — Snapport Lite is built for this.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-snapportlite"
           },
@@ -2322,7 +2520,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 39,
       "url": "https://apps.apple.com/us/app/id6782139553?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -2388,7 +2586,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 40,
       "url": "https://apps.apple.com/us/app/id6791299610?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -2454,7 +2652,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 41,
       "url": "https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -2520,7 +2718,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 42,
       "url": "https://apps.apple.com/us/app/id6782275018?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -2586,7 +2784,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 43,
       "url": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -2652,7 +2850,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 44,
       "url": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -2718,14 +2916,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 45,
       "url": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=iag_data_en_us&mt=8",
-        "name": "Wordmate Lite: Vocabulary",
-        "description": "Five words. One minute. A trail you can actually see.",
+        "name": "Wordmate Lite",
+        "description": "Wordmate Lite — Five words. Free to start · One-time unlock · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2740,7 +2938,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6797601720"
           },
-          "name": "Wordmate Lite: Vocabulary",
+          "name": "Wordmate Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=iag_data_en_us&mt=8",
@@ -2751,11 +2949,11 @@
             "target": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=iag_data_en_us&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-US/wordmatelite.html#webpage"
+            "@id": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-free-vocabulary-app-for-adults-one-minute-a-day-no-flashcard-decks.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "en-US",
-          "description": "Five words. One minute. A trail you can actually see.",
+          "description": "Wordmate Lite — Five words. Free to start · One-time unlock · No subscription.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-wordmatelite"
           },
@@ -2784,7 +2982,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 46,
       "url": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",

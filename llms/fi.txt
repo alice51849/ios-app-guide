@@ -3,29 +3,29 @@
 > Jäsennellyt tiedot jokaisen iOS-sovelluksen ominaisuuksista, hinnasta ja usein kysytyistä kysymyksistä.
 
 locale: fi
-apps: 43
+apps: 46
 - Sovellushakemisto: https://alice51849.github.io/ios-app-guide/fi/tools/private-pay-once-iphone-app-finder.html
 - Sovellushakemisto · PWA: https://alice51849.github.io/ios-app-guide/fi/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fi.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fi.json
 - Sovellushakemisto · SVG: https://alice51849.github.io/ios-app-guide/fi/visuals/
-- Sovellushakemisto · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- Sovellushakemisto · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- Sovellushakemisto · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
-- Sovellushakemisto · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
-- Sovellushakemisto · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
+- Sovellushakemisto · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Sovellushakemisto · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Sovellushakemisto · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- Sovellushakemisto · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- Sovellushakemisto · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
 - Sovellushakemisto · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- Sovellushakemisto · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
-- Sovellushakemisto · Agent Skill · fi: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/fi.json
-- Sovellushakemisto · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
-- Sovellushakemisto · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
-- Sovellushakemisto · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
-- Sovellushakemisto · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
-- Sovellushakemisto · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
-- Sovellushakemisto · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- Sovellushakemisto · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- Sovellushakemisto · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- Sovellushakemisto · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- Sovellushakemisto · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- Sovellushakemisto · Agent Skill · fi: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/fi.json
+- Sovellushakemisto · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- Sovellushakemisto · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- Sovellushakemisto · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- Sovellushakemisto · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- Sovellushakemisto · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- Sovellushakemisto · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Sovellushakemisto · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Sovellushakemisto · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Sovellushakemisto · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/fi/notesstudio100.html) — Muistikirja, käsiala ja PDF
   - Yksityinen, ilman verkkoyhteyttä toimiva työtila käsinkirjoitukselle, tekstille ja PDF-merkinnöille. Liitä äänite sivuun ja kertaa sanakorteilla.
@@ -43,6 +43,10 @@ apps: 43
   - Harjoittele englantia aidon koetilanteen tuntuisessa paineessa: lämmittely, ajastettu tehtäväsarja ja omiin virheisiin perustuva kertaus.
   - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6792483140
+- [BattAI: Akun kuntotulos](https://alice51849.github.io/ios-app-guide/fi/battai.html) — Selkeät säännöt, lähteet ja rajat
+  - Ymmärrä akkusi kehitys Selkeät säännöt, lähteet ja rajat Avaa syvempi historia, suunnittelu ja raportit. Yksi maksu. Ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6802423998
 - [CalDaily: laskin ja teemat](https://alice51849.github.io/ios-app-guide/fi/caldaily.html) — Widget, työkalut ja historia
   - Jokaiselle tallennetulle tulokselle voi antaa nimen ja tyypin, ja löydät sen myöhemmin. Kahdeksan työkalua, kotinäytön widget ja sata teemaa, kaikki laitteessasi.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
@@ -151,6 +155,10 @@ apps: 43
   - Löydä kaksoiskuvat, kuvakaappaukset, sumeat kuvat ja suuret videot. Tarkista kaikki laitteessa ennen poistoa. Ei mainoksia, ei tilausta.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6780223070
+- [SaveTag: tekoälykirjanmerkit](https://alice51849.github.io/ios-app-guide/fi/savetag.html) — Tallenna linkit, lue myöhemmin
+  - Kaikki, mihin aioit palata, vihdoin yhdessä paikassa. Yksi napautus tallentaa, lajittelu tapahtuu laitteessa ja päivittäinen hetki muistuttaa. Ei tiliä, ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6802505528
 - [ScanTo Pro: PDF ja OCR](https://alice51849.github.io/ios-app-guide/fi/scanto.html) — Yksityinen offline-skanneri
   - Skannaa mitä vain, löydä ainiaaksi. Terävät PDF:t, haettava OCR-teksti ja Face ID -lukitus – täysin offline. Kertamaksu, ei tilausta.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
@@ -159,6 +167,10 @@ apps: 43
   - Osta kerran, nuku ikuisesti. Yhdistä kymmeniä eläviä ääniä yli 1000 ainutlaatuiseen äänimaisemaan — reaaliajassa, ei koskaan silmukkaa, ei koskaan tilausta, 100% offline.
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
   - App Store: https://apps.apple.com/fi/app/id6788236641
+- [ShotInbox AI: Sort Screenshots](https://alice51849.github.io/ios-app-guide/fi/shotinbox.html) — Löydä ja järjestä näyttökuvat
+  - Löydä, hoida ja siivoa jokainen näyttökuva. Uusimmat 50 näyttökuvaa sisältävät koko ydinkulun maksutta. Kertaosto • Elinikäinen käyttö • Ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6802166527
 - [Snapport Lite](https://alice51849.github.io/ios-app-guide/fi/snapportlite.html) — Luo ID-valokuvia kotona
   - Ota passin, viisumin ja asiakirjojen valokuvia ohjatulla koon säädöllä, taustatyökaluilla ja tulostukseen valmiilla viennillä. | Ilmaisversio · Tukee 1 vientiä
   - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.

@@ -419,7 +419,7 @@ class StandardSiteWorkflowTests(unittest.TestCase):
                 self.assertIn("--retries 3", arguments)
                 self.assertIn("--retry-delay 2", arguments)
 
-    def test_sync_runs_after_each_generation_and_after_each_rebase(self):
+    def test_sync_runs_after_generation_and_each_remote_integration(self):
         first_generation = self.source.index("python3 gen_feed.py")
         first_sync = self.source.index(
             "python3 _engine/geo/sync_standard_site.py", first_generation
@@ -446,18 +446,32 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             self.source[final_cleanup:localized_commit],
         )
 
-        for marker in (
-            'git pull --rebase --autostash -X theirs',
-        ):
-            starts = [match.start() for match in re.finditer(re.escape(marker), self.source)]
-            self.assertEqual(2, len(starts))
-            for start in starts:
-                end = self.source.find("git push", start)
+        phases = ("reconcile_english_phase", "reconcile_localized_phase")
+        for phase in phases:
+            start = self.source.index(f"{phase}()")
+            end = self.source.index(
+                f"remote_first_publish {phase} origin main 5",
+                start,
+            )
+            with self.subTest(phase=phase):
                 self.assertGreater(end, start)
                 self.assertIn(
                     "python3 _engine/geo/sync_standard_site.py",
                     self.source[start:end],
                 )
+
+        helper = (
+            ROOT / ".github/scripts/remote-first-publish.sh"
+        ).read_text(encoding="utf-8")
+        self.assertIn("git fetch --no-tags", helper)
+        self.assertIn("git merge --no-edit -X theirs", helper)
+        self.assertIn("git merge-base --is-ancestor", helper)
+        self.assertIn(
+            'git push "$remote" "HEAD:refs/heads/${branch}"',
+            helper,
+        )
+        for forbidden in ("rebase", "reset --hard", "--force"):
+            self.assertNotIn(forbidden, helper)
 
 
 if __name__ == "__main__":

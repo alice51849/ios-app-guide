@@ -295,6 +295,19 @@ class PublisherIntentLocalizationTests(unittest.TestCase):
                 localized_disclosure,
             )
 
+    def test_answer_disclosure_accepts_the_migration_marker(self) -> None:
+        source = (
+            '<footer class="footer">'
+            '<data class="p-author h-card vcard" value="Lumi Studio"></data>'
+            '<div class="wrap" data-publisher-disclosure="true">'
+            "Publisher-authored guide from Lumi Studio."
+            "</div></footer>"
+        )
+        self.assertEqual(
+            "Publisher-authored guide from Lumi Studio.",
+            catalog._publisher_disclosure(source, True, "unused fallback"),
+        )
+
     def test_short_meta_uses_the_localized_app_description(self) -> None:
         app_id = "6791658210"
         source = (

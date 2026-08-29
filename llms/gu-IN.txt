@@ -3,29 +3,29 @@
 > દરેક iOS ઍપની સુવિધાઓ, કિંમત અને વારંવાર પૂછાતા પ્રશ્નોની સુવ્યવસ્થિત માહિતી.
 
 locale: gu-IN
-apps: 43
+apps: 46
 - ઍપ ડિરેક્ટરી: https://alice51849.github.io/ios-app-guide/gu-IN/tools/private-pay-once-iphone-app-finder.html
 - ઍપ ડિરેક્ટરી · PWA: https://alice51849.github.io/ios-app-guide/gu-IN/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/gu-IN.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/gu-IN.json
 - ઍપ ડિરેક્ટરી · SVG: https://alice51849.github.io/ios-app-guide/gu-IN/visuals/
-- ઍપ ડિરેક્ટરી · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- ઍપ ડિરેક્ટરી · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- ઍપ ડિરેક્ટરી · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
-- ઍપ ડિરેક્ટરી · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
-- ઍપ ડિરેક્ટરી · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
+- ઍપ ડિરેક્ટરી · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- ઍપ ડિરેક્ટરી · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- ઍપ ડિરેક્ટરી · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- ઍપ ડિરેક્ટરી · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- ઍપ ડિરેક્ટરી · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
 - ઍપ ડિરેક્ટરી · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- ઍપ ડિરેક્ટરી · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
-- ઍપ ડિરેક્ટરી · Agent Skill · gu-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/gu-IN.json
-- ઍપ ડિરેક્ટરી · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
-- ઍપ ડિરેક્ટરી · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
-- ઍપ ડિરેક્ટરી · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
-- ઍપ ડિરેક્ટરી · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
-- ઍપ ડિરેક્ટરી · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
-- ઍપ ડિરેક્ટરી · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- ઍપ ડિરેક્ટરી · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- ઍપ ડિરેક્ટરી · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- ઍપ ડિરેક્ટરી · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- ઍપ ડિરેક્ટરી · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- ઍપ ડિરેક્ટરી · Agent Skill · gu-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/gu-IN.json
+- ઍપ ડિરેક્ટરી · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- ઍપ ડિરેક્ટરી · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- ઍપ ડિરેક્ટરી · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- ઍપ ડિરેક્ટરી · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- ઍપ ડિરેક્ટરી · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- ઍપ ડિરેક્ટરી · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- ઍપ ડિરેક્ટરી · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- ઍપ ડિરેક્ટરી · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- ઍપ ડિરેક્ટરી · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/gu-IN/notesstudio100.html) — હાથે લખેલી નોંધ અને PDF
   - ટૅબ્લેટ અને સ્ટાઇલસ માટે ખાનગી, ઑફલાઇન નોંધ સ્ટુડિયો. હાથે લખો, PDF પર નિશાન કરો, ઑડિયો પાના સાથે જોડો અને ફ્લેશકાર્ડથી ભણો. એક વારની ખરીદીથી વધારાની સુવિધાઓ મળે.
@@ -43,6 +43,10 @@ apps: 43
   - રોજિંદા Listening અને Reading પ્લાન, નબળા વિષયોની પ્રેક્ટિસ અને પ્રોગ્રેસ ટ્રેકિંગ સાથે TOEIC ની વ્યવસ્થિત તૈયારી કરો.
   - કિંમત: મફતમાં ડાઉનલોડ કરો. એક વખતની ખરીદીથી તમામ સુવિધાઓ અનલૉક કરો—કોઈ સબ્સ્ક્રિપ્શન નહીં.
   - App Store: https://apps.apple.com/in/app/id6784974530
+- [BattAI: બેટરી હેલ્થ સ્કોર](https://alice51849.github.io/ios-app-guide/gu-IN/battai.html) — સ્પષ્ટ નિયમો, સ્રોતો અને મર્યાદાઓ
+  - સમય સાથે તમારી બેટરીને સમજો સ્પષ્ટ નિયમો, સ્રોતો અને મર્યાદાઓ વધુ ઇતિહાસ, આયોજન અને રિપોર્ટ ખોલો. એક ચુકવણી. કોઈ સબ્સ્ક્રિપ્શન નહીં.
+  - કિંમત: મફતમાં ડાઉનલોડ કરો. એક વખતની ખરીદીથી તમામ સુવિધાઓ અનલૉક કરો—કોઈ સબ્સ્ક્રિપ્શન નહીં.
+  - App Store: https://apps.apple.com/in/app/id6802423998
 - [CalDaily કેલ્ક્યુલેટર અને થીમ](https://alice51849.github.io/ios-app-guide/gu-IN/caldaily.html) — વિજેટ, ટૂલ્સ અને ઇતિહાસ
   - તમે સાચવેલા દરેક પરિણામને નામ અને પ્રકાર આપી શકાય છે અને પછી સહેલાઈથી શોધી શકાય છે. આઠ અદ્યતન ટૂલ્સ, હોમ સ્ક્રીન વિજેટ અને સો થીમ, બધું તમારા ડિવાઇસ પર જ.
   - કિંમત: મફતમાં ડાઉનલોડ કરો. એક વખતની ખરીદીથી તમામ સુવિધાઓ અનલૉક કરો—કોઈ સબ્સ્ક્રિપ્શન નહીં.
@@ -151,6 +155,10 @@ apps: 43
   - Duplicate photos, screenshots, ધૂંધળા ફોટા અને મોટા videos શોધો. Delete કરતા પહેલા device પર review કરો. No ads, no subscription, one time unlock.
   - કિંમત: મફતમાં ડાઉનલોડ કરો. એક વખતની ખરીદીથી તમામ સુવિધાઓ અનલૉક કરો—કોઈ સબ્સ્ક્રિપ્શન નહીં.
   - App Store: https://apps.apple.com/in/app/id6780223070
+- [SaveTag: AI બુકમાર્ક](https://alice51849.github.io/ios-app-guide/gu-IN/savetag.html) — લિંક સાચવો, પછી વાંચો
+  - પછી જોઈશું કહીને બાજુ પર મૂકેલું બધું હવે એક જ જગ્યાએ. એક સ્પર્શે સાચવો, ફોનની અંદર જ આપોઆપ વર્ગીકરણ અને રોજ યાદ. ખાતું નહીં, લવાજમ પણ નહીં.
+  - કિંમત: મફતમાં ડાઉનલોડ કરો. એક વખતની ખરીદીથી તમામ સુવિધાઓ અનલૉક કરો—કોઈ સબ્સ્ક્રિપ્શન નહીં.
+  - App Store: https://apps.apple.com/in/app/id6802505528
 - [ScanTo Pro: PDF સ્કેન](https://alice51849.github.io/ios-app-guide/gu-IN/scanto.html) — ઑફલાઇન OCR, ખાનગી PDF
   - કંઈપણ સ્કૅન કરો, હંમેશા શોધો. સ્પષ્ટ PDF, શોધી શકાય એવો OCR ટેક્સ્ટ અને Face ID લૉક—સંપૂર્ણ ઑફલાઇન. એક વાર ચૂકવો, કોઈ સબ્સ્ક્રિપ્શન નહીં.
   - કિંમત: મફતમાં ડાઉનલોડ કરો. એક વખતની ખરીદીથી તમામ સુવિધાઓ અનલૉક કરો—કોઈ સબ્સ્ક્રિપ્શન નહીં.
@@ -159,6 +167,10 @@ apps: 43
   - એકવાર ખરીદો, હંમેશા ઊંઘો. ડઝનબંધ જીવંત અવાજ ભેળવીને 1000+ અનોખા સાઉન્ડસ્કેપ બનાવો.
   - કિંમત: મફતમાં ડાઉનલોડ કરો. એક વખતની ખરીદીથી તમામ સુવિધાઓ અનલૉક કરો—કોઈ સબ્સ્ક્રિપ્શન નહીં.
   - App Store: https://apps.apple.com/in/app/id6788236641
+- [ShotInbox AI: Sort Screenshots](https://alice51849.github.io/ios-app-guide/gu-IN/shotinbox.html) — એકવાર ખરીદો, આજીવન ઉપયોગ
+  - દરેક સ્ક્રીનશૉટ શોધો, કામ કરો અને સાફ કરો. તાજેતરના 50 સ્ક્રીનશૉટમાં સંપૂર્ણ મુખ્ય અનુભવ મફત છે. એક ખરીદી • આજીવન ઍક્સેસ • કોઈ સબસ્ક્રિપ્શન નહીં।
+  - કિંમત: મફતમાં ડાઉનલોડ કરો. એક વખતની ખરીદીથી તમામ સુવિધાઓ અનલૉક કરો—કોઈ સબ્સ્ક્રિપ્શન નહીં.
+  - App Store: https://apps.apple.com/in/app/id6802166527
 - [Snapport Lite](https://alice51849.github.io/ios-app-guide/gu-IN/snapportlite.html) — ઘરે ID ફોટા બનાવો
   - માર્ગદર્શિત કદ, પૃષ્ઠભૂમિ સાધનો અને પ્રિન્ટ માટે તૈયાર નિકાસ સાથે પાસપોર્ટ, વિઝા અને દસ્તાવેજોના ફોટા બનાવો. | મફત આવૃત્તિ · 1 નિકાસને સપોર્ટ કરે છે
   - કિંમત: મફતમાં ડાઉનલોડ કરો. એક વખતની ખરીદીથી તમામ સુવિધાઓ અનલૉક કરો—કોઈ સબ્સ્ક્રિપ્શન નહીં.

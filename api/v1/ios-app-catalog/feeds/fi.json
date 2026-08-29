@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-22",
-    "contentDigest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
+    "dateModified": "2026-08-29",
+    "contentDigest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 43
+    "recordCount": 46
   },
   "items": [
     {
@@ -103,6 +103,24 @@
       "date_modified": "2026-08-19T02:01:38Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6802423998",
+      "url": "https://alice51849.github.io/ios-app-guide/fi/battai.html",
+      "external_url": "https://apps.apple.com/fi/app/id6802423998?pt=118326163&ct=iag_feed_fi&mt=8",
+      "title": "BattAI: Akun kuntotulos",
+      "content_text": "BattAI BattAI käyttää viittä julkisten iOS-API:en arvoa: akun varaustasoa, lataustilaa, virransäästötilaa, koko laitteen lämpötilaa kuvaavaa tilaa ja aikaa. Muut tulokset lasketaan näistä lukemista tai lisäämistäsi tiedoista. Jokainen tieto kertoo lähteen ja rajat.",
+      "tags": [
+        "Akun kuntotulos",
+        "Enimmäiskapasiteetti",
+        "Lataussyklit",
+        "Lataushuolto",
+        "Latausväli",
+        "Latausnopeus",
+        "Vie tiedot"
+      ],
+      "language": "fi",
+      "date_modified": "2026-08-29T04:55:13Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6794178671",
       "url": "https://alice51849.github.io/ios-app-guide/fi/caldaily.html",
       "external_url": "https://apps.apple.com/fi/app/id6794178671?pt=118326163&ct=iag_feed_fi&mt=8",
@@ -157,7 +175,7 @@
         "avoimettyöpaikat"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6782251621",
@@ -194,7 +212,7 @@
         "naiset"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790418321",
@@ -275,7 +293,7 @@
         "fx"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793436548",
@@ -293,6 +311,27 @@
         "säästäminen",
         "matkakulut",
         "kulut"
+      ],
+      "language": "fi",
+      "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6794039979",
+      "url": "https://alice51849.github.io/ios-app-guide/fi/hourstaglite.html",
+      "external_url": "https://apps.apple.com/fi/app/id6794039979?pt=118326163&ct=iag_feed_fi&mt=8",
+      "title": "HoursTag Lite",
+      "content_text": "HoursTag Lite - Asioiden todellinen hinta",
+      "tags": [
+        "säästäminen",
+        "budjetti",
+        "menot",
+        "säästöt",
+        "talous",
+        "säästä rahaa",
+        "heräteostokset",
+        "raha",
+        "kuluta vähemmän",
+        "työtunnit"
       ],
       "language": "fi",
       "date_modified": "2026-08-19T02:01:38Z"
@@ -334,28 +373,7 @@
         "kulutus"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
-    },
-    {
-      "id": "https://apps.apple.com/app/id6794039979",
-      "url": "https://alice51849.github.io/ios-app-guide/fi/hourstaglite.html",
-      "external_url": "https://apps.apple.com/fi/app/id6794039979?pt=118326163&ct=iag_feed_fi&mt=8",
-      "title": "HoursTag Lite",
-      "content_text": "HoursTag Lite - Asioiden todellinen hinta",
-      "tags": [
-        "säästäminen",
-        "budjetti",
-        "menot",
-        "säästöt",
-        "talous",
-        "säästä rahaa",
-        "heräteostokset",
-        "raha",
-        "kuluta vähemmän",
-        "työtunnit"
-      ],
-      "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780107485",
@@ -390,7 +408,7 @@
         "työajastin"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6773017109",
@@ -424,7 +442,7 @@
         "kieli"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6775773117",
@@ -459,7 +477,7 @@
         "tones"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778748533",
@@ -498,7 +516,7 @@
         "offline"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778491147",
@@ -537,7 +555,7 @@
         "offline"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778269699",
@@ -605,7 +623,7 @@
         "turvallinen"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6776958488",
@@ -646,7 +664,7 @@
         "启蒙"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779750237",
@@ -691,7 +709,7 @@
         "晨间"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -733,7 +751,7 @@
         "晨间"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6787193643",
@@ -802,7 +820,7 @@
         "亲子"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792850916",
@@ -948,7 +966,7 @@
         "valovuoto"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -991,7 +1009,29 @@
         "muisti"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802505528",
+      "url": "https://alice51849.github.io/ios-app-guide/fi/savetag.html",
+      "external_url": "https://apps.apple.com/fi/app/id6802505528?pt=118326163&ct=iag_feed_fi&mt=8",
+      "title": "SaveTag: tekoälykirjanmerkit",
+      "content_text": "Tallenna nyt. Lue oikeasti myöhemmin.",
+      "tags": [
+        "lukulista",
+        "suosikit",
+        "kokoelma",
+        "url",
+        "kansio",
+        "tunnisteet",
+        "offline",
+        "reseptit",
+        "matkailu",
+        "ostokset",
+        "yksityinen"
+      ],
+      "language": "fi",
+      "date_modified": "2026-08-27T11:21:51Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",
@@ -1015,7 +1055,7 @@
         "encrypt"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6788236641",
@@ -1036,6 +1076,26 @@
       ],
       "language": "fi",
       "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802166527",
+      "url": "https://alice51849.github.io/ios-app-guide/fi/shotinbox.html",
+      "external_url": "https://apps.apple.com/fi/app/id6802166527?pt=118326163&ct=iag_feed_fi&mt=8",
+      "title": "ShotInbox AI: Sort Screenshots",
+      "content_text": "Näyttökuvat järjestykseen Löydä, hoida ja siivoa jokainen näyttökuva.",
+      "tags": [
+        "kuvakaappaus",
+        "kaksoiskappaleet",
+        "siivous",
+        "OCR",
+        "tekstihaku",
+        "kategoriat",
+        "aikajana",
+        "samanlaiset",
+        "kertamaksu"
+      ],
+      "language": "fi",
+      "date_modified": "2026-08-26T04:57:37Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780575828",
@@ -1076,7 +1136,7 @@
         "kasvot"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792856304",
@@ -1128,7 +1188,7 @@
         "äänitallennin"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6791299610",
@@ -1218,7 +1278,7 @@
         "korjaa"
       ],
       "language": "fi",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",

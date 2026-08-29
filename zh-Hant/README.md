@@ -4,7 +4,7 @@
 
 第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。
 
-由開發者撰寫的搜尋意圖，涵蓋 43 款已驗證上架的 iOS App 與 Apple 官方 50 個地區語系。
+由開發者撰寫的搜尋意圖，涵蓋 46 款已驗證上架的 iOS App 與 Apple 官方 50 個地區語系。
 
 **地區語系:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · **zh-Hant**
 
@@ -14,11 +14,11 @@
 >
 > 這些查詢是針對預期使用情境撰寫的編輯描述，並非實測搜尋量資料、排名、獨立評測或使用者推薦。
 
-## Lumi Studio 開發者搜尋意圖目錄 · MCP v1.2.0 · Agent Skill
+## Lumi Studio 開發者搜尋意圖目錄 · MCP v1.3.0 · Agent Skill
 
 第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -93,6 +93,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **AI Brief** | best private app to organize screenshots and documents into context before using AI | AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceable brief before sharing with any AI. Free to start · One-time unlock · No subscription. | 免費開始使用 · 一次購買解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html) | [前往 App Store 取得 AI Brief →](https://apps.apple.com/tw/app/id6791658210?pt=118326163&ct=iag_gh_zh_hant&mt=8) |
 | **Aim990** | iPhone 最佳 TOEIC 離線準備應用程式學習計畫 | 第 5 部分看似簡短，但不完整句子題目若文法與詞彙不熟練，會耗費大量時間。 | 免費開始使用 · 一次購買解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [在 App Store 取得 Aim990 →](https://apps.apple.com/tw/app/id6784974530?pt=118326163&ct=iag_gh_zh_hant&mt=8) |
 | **Aim990 Plus** | best offline English listening and reading exam trainer for iPhone | Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription. | 付費下載 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html) | [前往 App Store 取得 Aim990 Plus →](https://apps.apple.com/tw/app/id6792483140?pt=118326163&ct=iag_gh_zh_hant&mt=8) |
+| **BattAI: 電池健康分數** | BattAI: 電池健康分數 — 規則、來源與限制都說清楚 \| iOS App | BattAI BattAI 只使用公開 iOS API 提供的五項資料：電量、充電狀態、低耗電模式、整部裝置的熱狀態與時間。其他結果由這些讀值計算，或由你補充。每一項都會顯示來源與限制。 | 免費開始使用 · 一次購買解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/battai.html) | [在 App Store 取得 BattAI: 電池健康分數](https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=iag_gh_zh_hant&mt=8) |
 | **CalDaily 計算機與主題** | CalDaily 計算機與主題 — 桌面小工具、八種工具、計算紀錄 \| iOS App | 一台你會真的留著用的計算機，因為它記得每個數字背後的來龍去脈。 | 免費開始使用 · 一次購買解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/caldaily.html) | [在 App Store 取得 CalDaily 計算機與主題](https://apps.apple.com/tw/app/id6794178671?pt=118326163&ct=iag_gh_zh_hant&mt=8) |
 | **CV Desk** | 2026 年最佳職涯轉換者履歷建立應用程式 | 轉換領域時，履歷問題不同：經驗真實但紙本看似「不相關」，ATS 過濾器會在人工審閱前拒絕你 — CV Desk 專為此設計。 | 免費開始使用 · 一次購買解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-resume-builder-app-for-career-changers-2026.html) | [在 App Store 取得 CV Desk →](https://apps.apple.com/tw/app/id6781337213?pt=118326163&ct=iag_gh_zh_hant&mt=8) |
 | **Cyca** | 最佳無需帳號的生理期追蹤應用程式 iPhone | 在資料敏感度極高的類別中，合適的生理期追蹤器會將所有資料 — 流量、心情、症狀、體溫、親密行為 — 保留在裝置上，無需帳號且無雲端同步 — Cyca 專為此設計。 | 免費開始使用 · 一次購買解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-period-tracker-app-no-account-required-iphone.html) | [在 App Store 取得 Cyca →](https://apps.apple.com/tw/app/id6782251621?pt=118326163&ct=iag_gh_zh_hant&mt=8) |
@@ -120,8 +121,10 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **OnePage PPT: AI 一頁簡報** | OnePage PPT: AI 一頁簡報 — 筆記、螢幕截圖、PDF秒變投影片 \| iOS App | 把落落長的文字，變成別人真的會看完的一頁。不用再從空白頁開始，也不用把 20 頁資料硬塞成一頁。 | 免費開始使用 · 一次購買解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/onepageppt.html) | [在 App Store 取得 OnePage PPT: AI 一頁簡報](https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=iag_gh_zh_hant&mt=8) |
 | **PhotoCream** | iPhone 旅遊創作者最佳一次付費底片風格照片編輯 App | 旅遊創作者需要能重複使用的底片風格，能加顆粒、光暈與色彩特色，不會讓每個目的地都變成同一種平淡濾鏡 — PhotoCream 就是為此設計。 | 免費開始使用 · 一次購買解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [在 App Store 取得 PhotoCream →](https://apps.apple.com/tw/app/id6781808054?pt=118326163&ct=iag_gh_zh_hant&mt=8) |
 | **PicClear** | iPhone 上最佳清理重複照片釋放儲存空間應用程式 | 要快速釋放空間，先從最大效益著手：完全重複照片、幾乎相同的連拍、模糊照片和大型影片 — PicClear 幫你在 iPhone 上完成。 | 免費開始使用 · 一次購買解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [在 App Store 取得 PicClear →](https://apps.apple.com/tw/app/id6780223070?pt=118326163&ct=iag_gh_zh_hant&mt=8) |
+| **SaveTag:AI 連結收藏** | SaveTag:AI 連結收藏 — 稍後閱讀,自動分類整理 \| iOS App | 先存下來,而且真的會看完。 你每天都在傳連結給自己。朋友分享的食譜、看上的外套、說好要看的影片、想再讀一次的貼文。它們散落在聊天室、備忘錄和截圖裡,然後就再也找不到了。 | 免費開始使用 · 一次購買解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/savetag.html) | [在 App Store 取得 SaveTag:AI 連結收藏](https://apps.apple.com/tw/app/id6802505528?pt=118326163&ct=iag_gh_zh_hant&mt=8) |
 | **ScanTo Pro** | 護理人員專用最佳離線文件掃描應用程式，無雲端 | 如果你掃描病患同意書、出院文件或轉診單，掃描器必須將文件保留在裝置內，絕不上傳他人雲端 — ScanTo Pro 專為此打造。 | 免費開始使用 · 一次購買解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [在 App Store 取得 ScanTo Pro →](https://apps.apple.com/tw/app/id6779977651?pt=118326163&ct=iag_gh_zh_hant&mt=8) |
 | **Sereno** | 最佳無訂閱白噪音助眠App | 睡眠時，每月煩人的訂閱正好相反——Sereno 專為此打造。 | 免費開始使用 · 一次購買解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [在 App Store 取得 Sereno →](https://apps.apple.com/tw/app/id6788236641?pt=118326163&ct=iag_gh_zh_hant&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — 本機截圖分類、OCR搜尋與時間軸 \| iOS App | 截圖，井然有序 每張截圖都能找到、處理、清掉。 | 免費開始使用 · 一次購買解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/shotinbox.html) | [在 App Store 取得 ShotInbox AI: Sort Screenshots](https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=iag_gh_zh_hant&mt=8) |
 | **Snapport** | 最佳在家拍攝嬰幼兒護照照片App | 嬰兒護照照片中不得有其他人，背景必須純色——但嬰幼兒眼睛不必完全睜開。 | 付費下載 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [在 App Store 取得 Snapport →](https://apps.apple.com/tw/app/id6780575828?pt=118326163&ct=iag_gh_zh_hant&mt=8) |
 | **Snapport Lite** | Snapport Lite — 在家製作證件照 \| iOS App | Snapport Lite - 透過尺寸引導、背景工具與可列印輸出，製作護照、簽證與證件照。 | 免費開始使用 · 一次購買解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/snapportlite.html) | [在 App Store 取得 Snapport Lite](https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=iag_gh_zh_hant&mt=8) |
 | **Sono Note** | 最佳 iPhone 會議語音筆記摘要App | 通話後你不想要原始文字稿——你想要摘要、行動項目與草擬後續——Sono Note 專為此打造。 | 免費開始使用 · 一次購買解鎖 | [指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [在 App Store 取得 Sono Note →](https://apps.apple.com/tw/app/id6782139553?pt=118326163&ct=iag_gh_zh_hant&mt=8) |
@@ -135,7 +138,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## 下載完整資料集
 
-JSON、JSONL 與 CSV 格式皆包含相同的 2,150 筆紀錄。
+JSON、JSONL 與 CSV 格式皆包含相同的 2,300 筆紀錄。
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +146,6 @@ JSON、JSONL 與 CSV 格式皆包含相同的 2,150 筆紀錄。
 
 [首頁](https://alice51849.github.io/ios-app-guide/zh-Hant/index.html) · [開放資料](https://alice51849.github.io/ios-app-guide/zh-Hant/data/lumi-studio-publisher-search-intent-catalog.html) · [授權條款](https://creativecommons.org/licenses/by/4.0/)
 
-更新日期: 2026-08-21
+更新日期: 2026-08-29
 
 CC BY 4.0 適用於原始目錄彙編；App 名稱與 App Store 商標分屬其權利人。

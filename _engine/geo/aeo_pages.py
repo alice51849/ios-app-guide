@@ -43,6 +43,75 @@ SOV = os.path.join(REPORTS, "aeo_sov.json")
 SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
 LOCALE_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$")
 CURATED_FALLBACK = {
+    # BattAI can read only the public device-level signals exposed by iOS.
+    # These are direct App Store competitors for general iPhone battery
+    # monitoring, selected from the US iTunes Search API on 2026-08-27.
+    # Their presence here does not imply that any competitor can inspect
+    # private cell chemistry, cycle count, or component temperature.
+    "battai": {
+        "key": "battai",
+        "gap_queries": [
+            "best iphone battery trend app with transparent estimates",
+            "battery history app that separates ios readings from estimates",
+            "on device iphone battery report with no account or tracking",
+            "pay once battery monitor app without a subscription",
+        ],
+        "top_competitors": [
+            ["Battery Life - check runtimes", 0],
+            ["Battery Testing", 0],
+            ["Battery HD+", 0],
+            ["System Status: hw monitor", 0],
+        ],
+    },
+    # SaveTag went public 2026-08-26; no SOV run exists (aeo_sov.py calls
+    # OpenAI, which this portfolio does not use). Competitors come from the
+    # free iTunes Search API for "bookmark manager", "save links", "read
+    # later" and "link organizer", chosen for doing the same job.
+    #
+    # Collect by WeTransfer is the highest-rated result on those terms by a
+    # wide margin and is deliberately not here: it is a cloud moodboard for
+    # collaboration, not personal link filing. Instapaper and Readwise Reader
+    # are article readers -- the work is in the reading, not the sorting.
+    "savetag": {
+        "key": "savetag",
+        "gap_queries": [
+            "best app to save links from other apps on iphone",
+            "bookmark manager that files links automatically on device",
+            "read later app with no account and no cloud",
+            "save links app with a one time purchase instead of a subscription",
+        ],
+        "top_competitors": [
+            ["Albo", 0],
+            ["Raindrop.io", 0],
+            ["GoodLinks", 0],
+            ["Plinky", 0],
+        ],
+    },
+    # No SOV run exists for ShotInbox: aeo_sov.py calls OpenAI, which this
+    # portfolio does not use. Competitors come instead from the free iTunes
+    # Search API on 2026-08-26 -- the apps the App Store itself returns for
+    # "screenshot organizer", "screenshot manager" and "sort screenshots".
+    #
+    # Chosen for what they do, not for rating count. The highest-rated results
+    # on those terms are screen recorders and screenshot *stitching* tools
+    # (Picsew, Tailor, Stitch It), which is a different job; comparing against
+    # them would be popular and wrong. Tote was dropped for the same reason --
+    # it is a general "save anything" app, and "Tote alternative" carries no
+    # screenshot intent at all.
+    "shotinbox": {
+        "key": "shotinbox",
+        "gap_queries": [
+            "best app to sort screenshots on iphone offline",
+            "screenshot organizer that reads text on device",
+            "app that turns screenshots into reminders and calendar events",
+            "screenshot cleaner that never deletes without asking",
+        ],
+        "top_competitors": [
+            ["Screenshot PRO", 0],
+            ["Captr", 0],
+            ["FlyScreen", 0],
+        ],
+    },
     "dailymate": {
         "key": "dailymate",
         "gap_queries": [

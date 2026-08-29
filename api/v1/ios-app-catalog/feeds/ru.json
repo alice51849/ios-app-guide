@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-22",
-    "contentDigest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
+    "dateModified": "2026-08-29",
+    "contentDigest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 43
+    "recordCount": 46
   },
   "items": [
     {
@@ -109,6 +109,24 @@
       "date_modified": "2026-08-19T02:01:38Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6802423998",
+      "url": "https://alice51849.github.io/ios-app-guide/ru/battai.html",
+      "external_url": "https://apps.apple.com/ru/app/id6802423998?pt=118326163&ct=iag_feed_ru&mt=8",
+      "title": "BattAI: Состояние батареи",
+      "content_text": "BattAI BattAI использует пять значений из публичных API iOS: уровень заряда, состояние зарядки, режим энергосбережения, тепловое состояние всего устройства и время. Остальные результаты рассчитываются по этим показаниям или добавляются вами. У каждого показателя указаны источник и ограничения.",
+      "tags": [
+        "Оценка состояния аккумулятора",
+        "Максимальная ёмкость",
+        "Циклы",
+        "Бережная зарядка",
+        "Диапазон заряда",
+        "Скорость зарядки",
+        "Экспорт данных"
+      ],
+      "language": "ru",
+      "date_modified": "2026-08-29T04:55:13Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6794178671",
       "url": "https://alice51849.github.io/ios-app-guide/ru/caldaily.html",
       "external_url": "https://apps.apple.com/ru/app/id6794178671?pt=118326163&ct=iag_feed_ru&mt=8",
@@ -166,7 +184,7 @@
         "бланк"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6782251621",
@@ -204,7 +222,7 @@
         "женщины"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790418321",
@@ -283,7 +301,7 @@
         "счета"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793436548",
@@ -300,6 +318,26 @@
         "деньги",
         "экономия",
         "контроль расходов"
+      ],
+      "language": "ru",
+      "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6794039979",
+      "url": "https://alice51849.github.io/ios-app-guide/ru/hourstaglite.html",
+      "external_url": "https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=iag_feed_ru&mt=8",
+      "title": "HoursTag Lite",
+      "content_text": "HoursTag Lite - Увидьте настоящую цену вещей",
+      "tags": [
+        "экономия",
+        "бюджет",
+        "расходы",
+        "накопления",
+        "финансы",
+        "экономить деньги",
+        "импульсивные покупки",
+        "деньги",
+        "рабочие часы"
       ],
       "language": "ru",
       "date_modified": "2026-08-19T02:01:38Z"
@@ -344,27 +382,7 @@
         "wage"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
-    },
-    {
-      "id": "https://apps.apple.com/app/id6794039979",
-      "url": "https://alice51849.github.io/ios-app-guide/ru/hourstaglite.html",
-      "external_url": "https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=iag_feed_ru&mt=8",
-      "title": "HoursTag Lite",
-      "content_text": "HoursTag Lite - Увидьте настоящую цену вещей",
-      "tags": [
-        "экономия",
-        "бюджет",
-        "расходы",
-        "накопления",
-        "финансы",
-        "экономить деньги",
-        "импульсивные покупки",
-        "деньги",
-        "рабочие часы"
-      ],
-      "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780107485",
@@ -397,7 +415,7 @@
         "блокировка"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6773017109",
@@ -433,7 +451,7 @@
         "язык"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6775773117",
@@ -470,7 +488,7 @@
         "mandarin"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778748533",
@@ -507,7 +525,7 @@
         "офлайн"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778491147",
@@ -544,7 +562,7 @@
         "офлайн"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778269699",
@@ -614,7 +632,7 @@
         "контрольная"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6776958488",
@@ -657,7 +675,7 @@
         "幼儿园"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779750237",
@@ -703,7 +721,7 @@
         "自理"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -747,7 +765,7 @@
         "自理"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6787193643",
@@ -815,7 +833,7 @@
         "空气"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792850916",
@@ -965,7 +983,7 @@
         "световая утечка"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -1008,7 +1026,30 @@
         "офлайн"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802505528",
+      "url": "https://alice51849.github.io/ios-app-guide/ru/savetag.html",
+      "external_url": "https://apps.apple.com/ru/app/id6802505528?pt=118326163&ct=iag_feed_ru&mt=8",
+      "title": "SaveTag: закладки с ИИ",
+      "content_text": "Сохраните сейчас. И в этот раз действительно прочитайте.",
+      "tags": [
+        "прочитать позже",
+        "избранное",
+        "подборка",
+        "url",
+        "папка",
+        "теги",
+        "офлайн",
+        "рецепты",
+        "путешествия",
+        "покупки",
+        "заметки",
+        "архив"
+      ],
+      "language": "ru",
+      "date_modified": "2026-08-27T11:21:51Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",
@@ -1032,7 +1073,7 @@
         "doc scanner"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6788236641",
@@ -1054,6 +1095,29 @@
       ],
       "language": "ru",
       "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802166527",
+      "url": "https://alice51849.github.io/ios-app-guide/ru/shotinbox.html",
+      "external_url": "https://apps.apple.com/ru/app/id6802166527?pt=118326163&ct=iag_feed_ru&mt=8",
+      "title": "ShotInbox AI: Sort Screenshots",
+      "content_text": "Все снимки по местам Находите, обрабатывайте и очищайте каждый снимок.",
+      "tags": [
+        "очистка",
+        "фото",
+        "дубликаты",
+        "похожие",
+        "поиск",
+        "текста",
+        "галерея",
+        "альбом",
+        "удаление",
+        "сортировка",
+        "OCR",
+        "photo cleaner"
+      ],
+      "language": "ru",
+      "date_modified": "2026-08-26T04:57:37Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780575828",
@@ -1090,7 +1154,7 @@
         "студенческий"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792856304",
@@ -1144,7 +1208,7 @@
         "аудиозапись"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6791299610",
@@ -1231,7 +1295,7 @@
         "4k"
       ],
       "language": "ru",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",

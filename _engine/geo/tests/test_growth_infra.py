@@ -107,6 +107,7 @@ import gen_linkset
 import gen_llms
 import gen_mobile_app_identity
 import gen_mobile_store_ctas
+import gen_publisher_disclosures
 import normalize_app_store_links
 import gen_roundups
 import gen_sitemap_lastmod
@@ -216,6 +217,43 @@ process.stdout.write(JSON.stringify(context.RESULT));
 
 
 class AppStoreAvailabilityTests(unittest.TestCase):
+    def test_lookup_prefers_ipv4_when_dns_returns_both_families(self):
+        addresses = [
+            (appstore_live.socket.AF_INET6, 1, 6, "", ("::1", 443, 0, 0)),
+            (appstore_live.socket.AF_INET, 1, 6, "", ("127.0.0.1", 443)),
+        ]
+        observed_families = []
+
+        def fake_urlopen(request, timeout):
+            del request, timeout
+            observed_families.extend(
+                record[0]
+                for record in appstore_live.socket.getaddrinfo(
+                    "itunes.apple.com", 443
+                )
+            )
+            return io.BytesIO(b'{"results":[{"trackId":1}]}')
+
+        with (
+            mock.patch.object(
+                appstore_live.socket,
+                "getaddrinfo",
+                return_value=addresses,
+            ) as resolver,
+            mock.patch.object(
+                appstore_live.urllib.request,
+                "urlopen",
+                side_effect=fake_urlopen,
+            ),
+        ):
+            records = appstore_live._lookup_country_records(
+                {"1"}, "us", attempts=1
+            )
+
+        self.assertEqual({"1"}, set(records))
+        self.assertEqual([appstore_live.socket.AF_INET], observed_families)
+        resolver.assert_called_once()
+
     def test_new_unlisted_apps_are_omitted_and_live_apps_are_cached(self):
         with tempfile.TemporaryDirectory() as pages:
             with mock.patch.object(
@@ -4274,7 +4312,7 @@ class GeneratorTests(unittest.TestCase):
         expected_guides = {
             f"{gen_feed.SITE}/guides/{path.name}"
             for path in (pages / "guides").glob("*.html")
-            if path.name != "index.html"
+            if path.name not in gen_feed.EXCLUDED_FEED_NAMES
         }
         self.assertTrue(expected_guides <= set(atom_ids))
         expected_resource_answers = set()
@@ -20981,6 +21019,32 @@ class GeneratorTests(unittest.TestCase):
             english_path = (
                 tools / f"{zhuyin_readiness_tool.SLUG}.html"
             )
+            english = english_path.read_text(encoding="utf-8")
+            traditional_chinese = (
+                pages
+                / "zh-Hant"
+                / "tools"
+                / f"{zhuyin_readiness_tool.SLUG}.html"
+            ).read_text(encoding="utf-8")
+            self.assertIn(
+                "Publisher-authored, no-score educational resource "
+                "from Lumi Studio.",
+                english,
+            )
+            self.assertNotIn(
+                "Independent no-score educational resource",
+                english,
+            )
+            self.assertIn(
+                "由 Lumi Studio 製作的不評分教育資源",
+                traditional_chinese,
+            )
+            self.assertNotIn("不評分的獨立教育資源", traditional_chinese)
+            disclosure_stats = gen_publisher_disclosures.migrate(
+                pages,
+                translations_dir=Path(GEO) / "i18n_trans",
+            )
+            self.assertEqual(0, disclosure_stats["legacy_claims"])
             stable_mtime = 1_700_000_000_000_000_000
             os.utime(english_path, ns=(stable_mtime, stable_mtime))
             first_bytes = english_path.read_bytes()
@@ -21674,6 +21738,15 @@ class GeneratorTests(unittest.TestCase):
             "notesstudio100",
             "wifiaidlite",
             "moneytag",
+            # Free download, one $5.99 Lifetime Pro purchase, no subscription
+            # (App Store listing, checked 2026-08-26).
+            "shotinbox",
+            # Free download; "SaveTag Pro is a one-time purchase, unlocked for
+            # life", no subscription (App Store listing, checked 2026-08-27).
+            "savetag",
+            # Free core, one $5.99 Lifetime Pro purchase, no subscription
+            # (App Store listing and approved IAP, checked 2026-08-27).
+            "battai",
         }
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:
@@ -22310,12 +22383,14 @@ class GeneratorTests(unittest.TestCase):
 
     def test_recent_public_apps_have_curated_alternative_inputs(self):
         app_ids = {
+            "battai": "6802423998",
             "wordmatelite": "6797601720",
             "caldaily": "6794178671",
             "onepageppt": "6798814385",
             "notesstudio100": "6798813048",
             "wifiaidlite": "6793414462",
             "moneytag": "6801956402",
+            "savetag": "6802505528",
         }
         for key, app_id in app_ids.items():
             with self.subTest(key=key):
@@ -23072,12 +23147,19 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("aeo_pages.py --cached-live", workflow)
         self.assertIn("gen_llms.py --cached-live", workflow)
         self.assertIn("fetch-depth: 0", workflow)
+        # Each phase defines one reconciliation callback. The bounded helper
+        # can invoke it after every remote integration without duplicating the
+        # command text or weakening the phase gate.
         self.assertEqual(5, workflow.count("gen_sitemap_lastmod.py"))
         self.assertEqual(
             3,
             workflow.count(
                 '--state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"'
             ),
+        )
+        self.assertEqual(
+            17,
+            workflow.count('--today "$GEO_BUILD_DATE"'),
         )
         snapshot_block = workflow.split(
             "- name: Snapshot truthful sitemap baseline", 1
@@ -23087,6 +23169,11 @@ class GeneratorTests(unittest.TestCase):
             snapshot_block,
         )
         self.assertIn("$GITHUB_ENV", snapshot_block)
+        self.assertIn('build_date="$(date -u +%F)"', snapshot_block)
+        self.assertIn(
+            'echo "GEO_BUILD_DATE=$build_date" >> "$GITHUB_ENV"',
+            snapshot_block,
+        )
         self.assertIn(
             "cp _engine/geo/sitemap_lastmod_state.json",
             snapshot_block,
@@ -23300,21 +23387,31 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn("cp apps.json", workflow)
         first_scorecard = workflow.index("outreach_scorecard.py")
         answer_generation = workflow.index("aeo_answers.py --cached-live")
+        self.assertNotIn(
+            'aeo_answers.py --cached-live --limit "$N"',
+            workflow,
+        )
         final_scorecard = workflow.index(
             "outreach_scorecard.py", first_scorecard + 1
         )
         english_commit = workflow.index("Commit English content first")
-        english_rebase = workflow.index(
-            "git pull --rebase --autostash -X theirs",
+        english_reconcile = workflow.index(
+            "reconcile_english_phase()",
             english_commit,
         )
-        english_push = workflow.index("git push", english_rebase)
+        english_publish = workflow.index(
+            "remote_first_publish reconcile_english_phase origin main 5",
+            english_reconcile,
+        )
         localized_commit = workflow.index("Commit localized pages if any")
-        localized_rebase = workflow.index(
-            "git pull --rebase --autostash -X theirs",
+        localized_reconcile = workflow.index(
+            "reconcile_localized_phase()",
             localized_commit,
         )
-        localized_push = workflow.index("git push", localized_rebase)
+        localized_publish = workflow.index(
+            "remote_first_publish reconcile_localized_phase origin main 5",
+            localized_reconcile,
+        )
         self.assertLess(
             workflow.rindex("portfolio_app_finder.py"),
             workflow.index("portfolio_cost_calculator.py"),
@@ -23331,22 +23428,22 @@ class GeneratorTests(unittest.TestCase):
         self.assertLess(final_scorecard, english_commit)
         self.assertIn(
             "outreach_scorecard.py --require-complete",
-            workflow[english_rebase:english_push],
+            workflow[english_reconcile:english_publish],
         )
         self.assertIn(
             "outreach_scorecard.py --require-complete",
-            workflow[localized_rebase:localized_push],
+            workflow[localized_reconcile:localized_publish],
         )
         self.assertEqual(
             1,
             workflow.count("refresh_storefront_availability.py"),
         )
-        self.assertEqual(2, workflow.count("portfolio_app_catalog_api.py"))
-        self.assertEqual(2, workflow.count("publisher_intent_catalog.py"))
-        self.assertEqual(2, workflow.count("portfolio_offer_catalog.py"))
-        self.assertEqual(2, workflow.count("publisher_intent_visuals.py"))
-        self.assertEqual(2, workflow.count("app_video_lessons.py"))
-        self.assertEqual(2, workflow.count("gen_github_discovery_readmes.py"))
+        self.assertEqual(3, workflow.count("portfolio_app_catalog_api.py"))
+        self.assertEqual(3, workflow.count("publisher_intent_catalog.py"))
+        self.assertEqual(3, workflow.count("portfolio_offer_catalog.py"))
+        self.assertEqual(3, workflow.count("publisher_intent_visuals.py"))
+        self.assertEqual(3, workflow.count("app_video_lessons.py"))
+        self.assertEqual(3, workflow.count("gen_github_discovery_readmes.py"))
         self.assertLess(
             workflow.index("refresh=True"),
             workflow.index("passport_photo_print_sheet.py"),
@@ -23539,9 +23636,9 @@ class GeneratorTests(unittest.TestCase):
         )
         workflow_positions = [refresh_block.index(item) for item in workflow_chain]
         self.assertEqual(sorted(workflow_positions), workflow_positions)
-        # Six: the five below plus the pre-gate repair inside the
-        # materialization step, which is what makes the fail-closed
-        # semantic-integrity gate self-healing instead of deadlocked.
+        # Six: the five phase callbacks plus the pre-gate repair inside the
+        # materialization step. Retry attempts invoke the same callback rather
+        # than duplicating a weaker reconciliation block.
         self.assertEqual(6, workflow.count("reconcile_answer_semantics.py"))
         self.assertLess(
             refresh_block.rindex("gen_feed.py"),
@@ -23552,7 +23649,7 @@ class GeneratorTests(unittest.TestCase):
             refresh_block.index("gen_sitemap_lastmod.py"),
         )
         self.assertEqual(
-            2,
+            3,
             workflow.count("gen_social_previews.py --oembed-only"),
         )
         self.assertLess(
@@ -23610,6 +23707,13 @@ class GeneratorTests(unittest.TestCase):
             "gen_image_sitemap.py",
             "gen_mobile_app_identity.py",
             "gen_webmcp_install_tools.py",
+            "portfolio_app_catalog_api.py",
+            "publisher_intent_catalog.py",
+            "portfolio_offer_catalog.py",
+            "publisher_intent_visuals.py",
+            "app_video_lessons.py",
+            "gen_social_previews.py --oembed-only",
+            "gen_github_discovery_readmes.py",
             "gen_publisher_disclosures.py",
             "gen_guide_design.py",
             "gen_app_store_facts.py",
@@ -23625,9 +23729,11 @@ class GeneratorTests(unittest.TestCase):
         )
         final_positions = [final_cleanup_block.index(item) for item in final_chain]
         self.assertEqual(sorted(final_positions), final_positions)
-        self.assertNotIn(
-            "SITEMAP_LASTMOD_INTERMEDIATE_STATE",
-            final_cleanup_block,
+        self.assertEqual(
+            1,
+            final_cleanup_block.count(
+                "SITEMAP_LASTMOD_INTERMEDIATE_STATE"
+            ),
         )
         stable_surface_chain = (
             "ensure_live_guides.py",
@@ -23676,14 +23782,30 @@ class GeneratorTests(unittest.TestCase):
             "SITEMAP_LASTMOD_INTERMEDIATE_STATE",
             english_commit_block,
         )
+        final_state_restore = final_cleanup_block.index(
+            '--fallback-state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"'
+        )
+        self.assertLess(
+            final_state_restore,
+            final_cleanup_block.index(
+                '--today "$GEO_BUILD_DATE"',
+                final_state_restore,
+            ),
+        )
         self.assertNotIn(
             "SITEMAP_LASTMOD_INTERMEDIATE_STATE",
             localized_commit_block,
         )
-        pull = english_commit_block.index("git pull --rebase")
+        source_helper = english_commit_block.index(
+            "source .github/scripts/remote-first-publish.sh"
+        )
+        callback = english_commit_block.index(
+            "reconcile_english_phase()",
+            source_helper,
+        )
         sync = english_commit_block.index(
             "python3 _engine/geo/sync_standard_site.py",
-            pull,
+            callback,
         )
         semantics = english_commit_block.index(
             "python3 _engine/geo/reconcile_answer_semantics.py",
@@ -23718,15 +23840,22 @@ class GeneratorTests(unittest.TestCase):
             depth_gate,
         )
         final_tests = english_commit_block.index(
-            "python3 -m unittest discover",
+            "python3 _engine/geo/parallel_unittest.py --jobs 3",
             reconcile,
         )
-        restage = english_commit_block.index("git add -A", final_tests)
-        push = english_commit_block.index("git push", restage)
+        scorecard = english_commit_block.index(
+            "python3 outreach_scorecard.py --require-complete",
+            final_tests,
+        )
+        publish = english_commit_block.index(
+            "remote_first_publish reconcile_english_phase origin main 5",
+            scorecard,
+        )
         self.assertEqual(
             sorted(
                 (
-                    pull,
+                    source_helper,
+                    callback,
                     sync,
                     semantics,
                     dedupe,
@@ -23737,12 +23866,13 @@ class GeneratorTests(unittest.TestCase):
                     depth_gate,
                     reconcile,
                     final_tests,
-                    restage,
-                    push,
+                    scorecard,
+                    publish,
                 )
             ),
             [
-                pull,
+                source_helper,
+                callback,
                 sync,
                 semantics,
                 dedupe,
@@ -23753,15 +23883,21 @@ class GeneratorTests(unittest.TestCase):
                 depth_gate,
                 reconcile,
                 final_tests,
-                restage,
-                push,
+                scorecard,
+                publish,
             ],
         )
 
-        pull = localized_commit_block.index("git pull --rebase")
+        source_helper = localized_commit_block.index(
+            "source .github/scripts/remote-first-publish.sh"
+        )
+        callback = localized_commit_block.index(
+            "reconcile_localized_phase()",
+            source_helper,
+        )
         exact_tree = localized_commit_block.index(
             "verified_tree.py matches-head",
-            pull,
+            callback,
         )
         sync = localized_commit_block.index(
             "python3 _engine/geo/sync_standard_site.py",
@@ -23791,11 +23927,18 @@ class GeneratorTests(unittest.TestCase):
             "python3 _engine/geo/parallel_unittest.py --jobs 3",
             reconcile,
         )
-        restage = localized_commit_block.index("git add -A", final_tests)
-        push = localized_commit_block.index("git push", restage)
+        scorecard = localized_commit_block.index(
+            "python3 outreach_scorecard.py --require-complete",
+            final_tests,
+        )
+        publish = localized_commit_block.index(
+            "remote_first_publish reconcile_localized_phase origin main 5",
+            scorecard,
+        )
         self.assertEqual(
             [
-                pull,
+                source_helper,
+                callback,
                 exact_tree,
                 sync,
                 semantics,
@@ -23804,12 +23947,13 @@ class GeneratorTests(unittest.TestCase):
                 depth_gate,
                 reconcile,
                 final_tests,
-                restage,
-                push,
+                scorecard,
+                publish,
             ],
             sorted(
                 (
-                    pull,
+                    source_helper,
+                    callback,
                     exact_tree,
                     sync,
                     semantics,
@@ -23818,8 +23962,8 @@ class GeneratorTests(unittest.TestCase):
                     depth_gate,
                     reconcile,
                     final_tests,
-                    restage,
-                    push,
+                    scorecard,
+                    publish,
                 )
             ),
         )
@@ -23852,9 +23996,34 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertEqual(
             2,
-            workflow.count(
-                'git commit -m "Reconcile truthful sitemap lastmod after rebase"'
-            ),
+            workflow.count("source .github/scripts/remote-first-publish.sh"),
+        )
+        self.assertEqual(2, workflow.count("remote_first_publish reconcile_"))
+        self.assertNotIn("git pull --rebase", workflow)
+        helper = (
+            guide_root / ".github" / "scripts" / "remote-first-publish.sh"
+        ).read_text(encoding="utf-8")
+        self.assertIn("git fetch --no-tags", helper)
+        self.assertIn("git merge --no-edit -X theirs", helper)
+        self.assertIn("git merge-base --is-ancestor", helper)
+        self.assertIn("attempt <= max_attempts", helper)
+        self.assertNotIn("rebase", helper)
+        self.assertNotIn("reset --hard", helper)
+        self.assertNotIn("--force", helper)
+        sov = (
+            guide_root / ".github" / "workflows" / "sov-weekly.yml"
+        ).read_text(encoding="utf-8")
+        self.assertIn("group: ios-app-guide-main-writer", workflow)
+        self.assertIn("group: ios-app-guide-main-writer", sov)
+        self.assertIn("cancel-in-progress: false", workflow)
+        self.assertIn("cancel-in-progress: false", sov)
+        self.assertIn("queue: max", workflow)
+        self.assertIn("queue: max", sov)
+        self.assertIn("ref: main", sov)
+        self.assertIn("fetch-depth: 0", sov)
+        self.assertIn(
+            "remote_first_publish reconcile_sov_phase origin main 5",
+            sov,
         )
         self.assertNotIn("--refresh-slug", workflow)
         self.assertIn("aeo_answers.py --cached-live --limit 0", workflow)

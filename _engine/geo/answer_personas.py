@@ -2287,6 +2287,217 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
         },
     ],
+    "battai": [
+        {
+            "query": "best iphone battery health app with honest estimates and report",
+            "guide_title": "iPhone battery health apps: what they can really know",
+            "triggers": [
+                "battery health app",
+                "battery health report",
+                "time to 80",
+                "replace iphone battery",
+                "battery replacement",
+                "sell iphone battery",
+                "battery capacity trend",
+            ],
+            "persona": "long-term iPhone owners deciding whether to service, keep or sell their device",
+            "lead": "A battery score is only useful when the app separates what iOS measured, what it estimated and what you entered yourself.",
+            "paras": [
+                "A third-party iPhone app can directly read battery level, charge state, Low Power Mode, whole-device thermal state and time. It cannot directly read cycle count, maximum capacity, battery temperature, voltage, current or per-app drain. A trustworthy health view keeps those limits visible, leaves missing data missing and shows estimates as ranges with their confidence and sample count.",
+                "BattAI builds a private trend from those public readings, labels the source of each result, and lets you calibrate with values you enter or a battery-related extract from an iOS Analytics file. Its health factors, charging patterns and exportable report can support a service or resale conversation without pretending to be an Apple diagnosis. The core workflow is free; one Lifetime Pro purchase adds deeper history, planning and reports, with no subscription, account, ads, telemetry or internet requests.",
+            ],
+            "look": [
+                "A clear distinction between measured, estimated and user-provided values.",
+                "Ranges, confidence and sample counts instead of false precision.",
+                "Calibration from values you provide or an iOS Analytics file.",
+                "Long-term health and charging trends with an exportable report.",
+                "No account, ads, tracking or recurring subscription.",
+            ],
+            "steps": [
+                "Check which battery values the app says iOS directly provides.",
+                "Open one estimate and inspect its source, range, confidence and sample count.",
+                "Add a capacity value manually or review the Analytics import before calibrating.",
+                "Let the trend collect enough observations instead of trusting a first-day prediction.",
+                "Review the report and its limitations before using it for service or resale.",
+            ],
+            "fits": "fits iPhone owners who want a transparent battery trend and a useful record for a keep, service or resale decision without false sensor claims.",
+            "faq": [
+                {
+                    "q": "Can an iPhone app directly read exact cycle count, battery temperature or charging watts?",
+                    "a": "No. BattAI directly uses only battery level, charge state, Low Power Mode, whole-device thermal state and time. Capacity or cycle values come from you or an imported Analytics file, and other results remain labelled estimates.",
+                },
+                {
+                    "q": "Is the health score an official Apple diagnosis?",
+                    "a": "No. It is an explainable trend built from available readings and any calibration you provide. Apple's 80% maximum-capacity service benchmark stays separate from BattAI's coaching bands.",
+                },
+                {
+                    "q": "Does the report require an account or upload my battery history?",
+                    "a": "No. BattAI has no account, ads, tracking, telemetry or internet requests. A minimal feature-limited snapshot can be sent directly to a paired Apple Watch.",
+                },
+            ],
+        },
+        {
+            "query": "best private iphone charging habit tracker no subscription",
+            "guide_title": "Charging habits on iPhone: follow the pattern, not one percentage",
+            "triggers": [
+                "charging habit tracker",
+                "battery charging tracker",
+                "charge care",
+                "charge range",
+                "charging rate trend",
+                "private battery tracker",
+                "battery tracker no subscription",
+            ],
+            "persona": "heavy iPhone users who want to understand their charging pattern without uploading a device history",
+            "lead": "The percentage in the status bar shows this moment; it does not show whether your charging pattern is changing over weeks.",
+            "paras": [
+                "A useful charging tracker should preserve the observations it actually saw, show gaps instead of inventing samples, and describe charge care, range and observed rate without guessing charger wattage. Background opportunities on iOS are limited, so a trustworthy app should never promise continuous monitoring while it is closed.",
+                "BattAI keeps its readings and analysis on the device, turns observed sessions into charging and health trends, and explains which factors shaped each result. The free core includes the current state, health factors, calibration and recent trends; Lifetime Pro is a single purchase for deeper history, planning and reports. There is no subscription, account, advertising, tracking or content telemetry.",
+            ],
+            "look": [
+                "Observed charging sessions with visible gaps rather than fabricated continuity.",
+                "Charge care, range and rate trends without made-up watts or battery temperature.",
+                "A source and confidence explanation behind each recommendation.",
+                "Private on-device history that works without an account.",
+                "A useful free core and one optional lifetime unlock.",
+            ],
+            "steps": [
+                "Open the current-state view and confirm the directly measured values.",
+                "Review a charging session and note where the app had or lacked observations.",
+                "Compare charge range and rate over several sessions rather than one charge.",
+                "Open the explanation behind a recommendation before acting on it.",
+                "Decide whether deeper history and reports justify the one-time unlock.",
+            ],
+            "fits": "fits people who charge often and want a private, honest record of the pattern over time rather than another app presenting guesses as live sensors.",
+            "faq": [
+                {
+                    "q": "Does it monitor continuously while the app is closed?",
+                    "a": "No. iOS does not allow a third-party app to promise continuous background battery sampling. BattAI uses observed public readings and bounded system opportunities, and it keeps gaps visible.",
+                },
+                {
+                    "q": "Can it identify my charger's exact watts?",
+                    "a": "No. It can show an observed charging-rate trend, but iOS does not expose exact voltage, current or charger wattage to the app.",
+                },
+                {
+                    "q": "Is the charging history private?",
+                    "a": "Yes. BattAI has no account, ads, tracking, telemetry or internet requests, and the history stays on the device.",
+                },
+            ],
+        },
+    ],
+    "shotinbox": [
+        {
+            "query": "best app to sort screenshots on iphone offline",
+            "guide_title": "Screenshot backlog: sorting them is not the point, acting on them is",
+            "triggers": [
+                "sort screenshots",
+                "organize screenshots",
+                "screenshot organizer",
+                "clean up screenshots",
+                "too many screenshots",
+                "find text in screenshots",
+                "screenshots taking up storage",
+            ],
+            "persona": "people whose camera roll has become a to-do list of screenshots they never went back to",
+            "lead": "Screenshots pile up because each one was a task — a receipt to file, a link to open, an address to navigate to — and the camera roll has no way to finish any of them.",
+            "paras": [
+                "ShotInbox AI reads screenshots on the device with Apple Vision OCR and NaturalLanguage, then sorts them into categories such as Shopping, Receipts, Travel, Tickets, Maps & Places, Chats & Social, Work, Study, Recipes & Food, Inspiration, QR & Codes, Errors & Tech and Sensitive. Detected events and reminders are listed in time order, so a screenshot of a booking or a deadline surfaces before it matters rather than after.",
+                "Each screenshot carries the action it was taken for: Open in Maps, Open Link, Copy Text, Open Code, Call Number, Track Package, Add Reminder, Add to Calendar. Nothing is uploaded and nothing is deleted automatically — Photos asks for a final confirmation, and ShotInbox cannot undo that step. The latest 50 screenshots include the complete core workflow for free; unlimited history, custom rules, batches, similar groups, the sensitive lock, widgets and backup or export come with the one-time Lifetime Pro purchase.",
+            ],
+            "look": [
+                "Text search across what the screenshots actually say, not just their dates.",
+                "Categories that match why the screenshot was taken.",
+                "A one-tap action per screenshot: open the link, the map, the code, the reminder.",
+                "On-device processing, with nothing uploaded.",
+                "Deletion that always asks first, so a backlog cleanup cannot go wrong silently.",
+            ],
+            "steps": [
+                "Open the last week of screenshots and see which categories they land in.",
+                "Search for a word you know is inside one of them, not its filename.",
+                "Take the offered action on one screenshot — the link, map or reminder it was saved for.",
+                "Check the detected events list for anything with a date still ahead of you.",
+                "Only then clear the ones that are finished, confirming the delete in Photos.",
+            ],
+            "fits": "fits people who keep screenshots as reminders and want to finish them — search the text, take the action, then clear the backlog on device without anything being uploaded or deleted behind their back.",
+            "faq": [
+                {
+                    "q": "Are my screenshots uploaded anywhere?",
+                    "a": "No — OCR and text analysis run on the device with Apple Vision and NaturalLanguage.",
+                },
+                {
+                    "q": "Can it delete screenshots without asking?",
+                    "a": "No — it never auto-deletes, and Photos asks for a final confirmation that ShotInbox cannot undo.",
+                },
+                {
+                    "q": "What works before paying?",
+                    "a": "The latest 50 screenshots include the complete core workflow; Lifetime Pro is a one-time purchase that removes the history limit and adds rules, batches, the sensitive lock, widgets and export.",
+                },
+            ],
+        },
+    ],
+    "savetag": [
+        {
+            "query": "best app to save links from other apps on iphone",
+            "guide_title": "The saved-links pile: saving was never the hard part",
+            "triggers": [
+                "save links",
+                "bookmark manager",
+                "read later",
+                "link organizer",
+                "saved links",
+                "save articles to read later",
+            ],
+            "persona": "people who send themselves links all day and never open them again",
+            "lead": "Links arrive in chats, notes and screenshots, get saved somewhere, and are never seen again — the saving works, the coming back does not.",
+            "paras": [
+                "SaveTag takes a link from any app with a share sheet, or straight off the clipboard, and pulls in the title, site and preview. Every save is filed the moment it lands, into specific topics rather than one pile: shopping, food, recipes, travel, places, learning, work, tech, finance, health, style, home, news, pets, parenting, gaming, design, sports, photography, music and inspiration. Your own custom tags sit alongside those. Search runs across titles, notes, tags and sources, so a vague memory of what you saved is enough to find it.",
+                "The tagging runs on Apple's on-device text intelligence, reading your saves locally to file them. It is not a chatbot and it does not write anything for you. There is no account, no cloud and no tracking, and saves never leave the device. Rediscover surfaces a small handful of unread saves each day so the list shrinks instead of growing. The free version gives every feature on your latest 5 saves; SaveTag Pro is a one-time purchase with no subscription, lifting the save limit and adding custom tags, Markdown export and backup, and Family Sharing.",
+            ],
+            "look": [
+                "Saving from inside whatever app you are already in, not a separate trip.",
+                "Filing that happens on its own, into topics specific enough to be useful.",
+                "Search that works from a vague memory rather than the exact title.",
+                "Something that brings saves back to you, since the pile never shrinks on its own.",
+                "Export you can take elsewhere, so nothing is locked in.",
+            ],
+            "steps": [
+                "Share three links you already meant to read into it and see where they file themselves.",
+                "Search for one of them using a word you remember, not its title.",
+                "Add one custom tag for a system you already keep in your head.",
+                "Leave it a day and see what Rediscover puts back in front of you.",
+                "Check the Markdown export before deciding whether the save limit is worth lifting.",
+            ],
+            "fits": "fits people whose saved tab has become a place links go to be forgotten — it files each one as it arrives, finds it again from a half-remembered word, and hands the pile back a few at a time, entirely on the device.",
+            "faq": [
+                {
+                    "q": "What does the free version actually cover?",
+                    "a": "Every feature, on your latest 5 saves. SaveTag Pro is a one-time purchase, not a subscription, and removes that limit while adding custom tags, Markdown export and backup, and Family Sharing.",
+                },
+                {
+                    "q": "Do my saved links go to a server?",
+                    "a": "No — there is no account and no cloud, and the tagging runs on Apple's on-device text intelligence.",
+                },
+                {
+                    "q": "Is this an AI that writes summaries for me?",
+                    "a": "No. It reads your saves locally to file them by topic; it is not a chatbot and it does not write content.",
+                },
+            ],
+        },
+    ],
+}
+
+
+# Personas written ahead of publication.
+#
+# The catch-up chain will not admit a newly public app to the registry until a
+# reviewed buyer persona exists for it, but the finder catalog only lists apps
+# Apple has finished publishing everywhere, and publisher_intent_catalog
+# requires those two sets to match exactly. An app in between -- public enough
+# to be discovered, not yet published to every storefront -- needs its persona
+# to exist without counting as catalog coverage yet. Park it here, then move it
+# into PERSONAS in the same change that admits the app to the registry.
+# ShotInbox AI went through here on 2026-08-26.
+PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
 }
 
 

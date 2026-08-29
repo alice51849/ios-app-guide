@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-22",
-  "content_digest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "uk",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 43,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -168,6 +168,42 @@
         "currency": "USD",
         "formatted_price": "6,99 USD",
         "storefront_url": "https://apps.apple.com/ua/app/id6792483140"
+      }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: Стан батареї",
+      "summary": "BattAI BattAI використовує п’ять значень із публічних API iOS: рівень заряду, стан заряджання, режим низького енергоспоживання, тепловий стан усього пристрою й час. Інші результати обчислюються з цих показань або додаються вами. Кожен показник має джерело й обмеження.",
+      "category": "utility",
+      "search_terms": [
+        "Оцінка стану акумулятора",
+        "Максимальна ємність",
+        "Цикли",
+        "Дбайливе заряджання",
+        "Діапазон заряду",
+        "Швидкість заряджання",
+        "Експорт даних"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/ua/app/id6802423998?pt=118326163&ct=iag_api_uk&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/uk/battai.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно",
+        "storefront_url": "https://apps.apple.com/ua/app/id6802423998"
       }
     },
     {
@@ -497,6 +533,44 @@
       }
     },
     {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite",
+      "summary": "HoursTag Lite - Побачте справжню ціну речей",
+      "category": "finance",
+      "search_terms": [
+        "заощадження",
+        "бюджет",
+        "витрати",
+        "накопичення",
+        "фінанси",
+        "економити гроші",
+        "імпульсивні покупки",
+        "гроші",
+        "ощадливість"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/ua/app/id6794039979?pt=118326163&ct=iag_api_uk&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/uk/hourstaglite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно",
+        "storefront_url": "https://apps.apple.com/ua/app/id6794039979"
+      }
+    },
+    {
       "key": "hourstag",
       "app_store_id": "6754218117",
       "name": "HoursTag: Години до покупки",
@@ -554,44 +628,6 @@
         "currency": "USD",
         "formatted_price": "5,99 USD",
         "storefront_url": "https://apps.apple.com/ua/app/id6754218117"
-      }
-    },
-    {
-      "key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
-      "summary": "HoursTag Lite - Побачте справжню ціну речей",
-      "category": "finance",
-      "search_terms": [
-        "заощадження",
-        "бюджет",
-        "витрати",
-        "накопичення",
-        "фінанси",
-        "економити гроші",
-        "імпульсивні покупки",
-        "гроші",
-        "ощадливість"
-      ],
-      "purchase_model": "free_with_lifetime_unlock",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": false,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
-      },
-      "app_store_url": "https://apps.apple.com/ua/app/id6794039979?pt=118326163&ct=iag_api_uk&mt=8",
-      "guide_url": "https://alice51849.github.io/ios-app-guide/uk/hourstaglite.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "0",
-        "currency": "USD",
-        "formatted_price": "Безкоштовно",
-        "storefront_url": "https://apps.apple.com/ua/app/id6794039979"
       }
     },
     {
@@ -1560,6 +1596,48 @@
       }
     },
     {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: закладки з ШІ",
+      "summary": "Збережіть зараз. І цього разу справді прочитайте.",
+      "category": "productivity",
+      "search_terms": [
+        "прочитати пізніше",
+        "обране",
+        "добірка",
+        "url",
+        "тека",
+        "теги",
+        "офлайн",
+        "рецепти",
+        "подорожі",
+        "покупки",
+        "нотатки",
+        "архів",
+        "список"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/ua/app/id6802505528?pt=118326163&ct=iag_api_uk&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/uk/savetag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно",
+        "storefront_url": "https://apps.apple.com/ua/app/id6802505528"
+      }
+    },
+    {
       "key": "scanto",
       "app_store_id": "6779977651",
       "name": "ScanTo Pro: PDF і OCR",
@@ -1638,6 +1716,47 @@
         "currency": "USD",
         "formatted_price": "Безкоштовно",
         "storefront_url": "https://apps.apple.com/ua/app/id6788236641"
+      }
+    },
+    {
+      "key": "shotinbox",
+      "app_store_id": "6802166527",
+      "name": "ShotInbox AI: Sort Screenshots",
+      "summary": "Усі знімки впорядковано Знаходьте, опрацьовуйте й очищайте кожен знімок.",
+      "category": "photo-utility",
+      "search_terms": [
+        "очищення",
+        "фото",
+        "дублікати",
+        "схожі",
+        "пошук",
+        "тексту",
+        "галерея",
+        "альбоми",
+        "видалення",
+        "сортування",
+        "OCR",
+        "photo cleaner"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/ua/app/id6802166527?pt=118326163&ct=iag_api_uk&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/uk/shotinbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно",
+        "storefront_url": "https://apps.apple.com/ua/app/id6802166527"
       }
     },
     {

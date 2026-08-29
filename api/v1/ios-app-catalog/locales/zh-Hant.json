@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-22",
-  "content_digest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 43,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -204,6 +204,42 @@
         "currency": "TWD",
         "formatted_price": "$190.00",
         "storefront_url": "https://apps.apple.com/tw/app/id6792483140"
+      }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: 電池健康分數",
+      "summary": "BattAI BattAI 只使用公開 iOS API 提供的五項資料：電量、充電狀態、低耗電模式、整部裝置的熱狀態與時間。其他結果由這些讀值計算，或由你補充。每一項都會顯示來源與限制。",
+      "category": "utility",
+      "search_terms": [
+        "電池健康分數",
+        "最大容量",
+        "循環次數",
+        "充電保養",
+        "充電區間",
+        "充電速率",
+        "匯出資料"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=iag_api_zh_hant&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/battai.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6802423998"
       }
     },
     {
@@ -631,6 +667,59 @@
       }
     },
     {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite",
+      "summary": "HoursTag Lite - 看見每樣東西的真實代價",
+      "category": "finance",
+      "search_terms": [
+        "記帳",
+        "預算",
+        "省錢",
+        "理財",
+        "儲蓄",
+        "存錢",
+        "記帳app",
+        "消費",
+        "花費",
+        "個人理財",
+        "衝動購物",
+        "省錢app",
+        "開銷",
+        "預算管理",
+        "工作時數",
+        "時薪",
+        "消費習慣",
+        "理性消費",
+        "省錢方法",
+        "存錢app",
+        "財務",
+        "節省",
+        "人生時間成本",
+        "價值稜鏡"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/tw/app/id6794039979?pt=118326163&ct=iag_api_zh_hant&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/hourstaglite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6794039979"
+      }
+    },
+    {
       "key": "hourstag",
       "app_store_id": "6754218117",
       "name": "HoursTag：價格換工時",
@@ -695,59 +784,6 @@
         "rating_value": 5.0,
         "rating_count": 1,
         "storefront_url": "https://apps.apple.com/tw/app/id6754218117"
-      }
-    },
-    {
-      "key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
-      "summary": "HoursTag Lite - 看見每樣東西的真實代價",
-      "category": "finance",
-      "search_terms": [
-        "記帳",
-        "預算",
-        "省錢",
-        "理財",
-        "儲蓄",
-        "存錢",
-        "記帳app",
-        "消費",
-        "花費",
-        "個人理財",
-        "衝動購物",
-        "省錢app",
-        "開銷",
-        "預算管理",
-        "工作時數",
-        "時薪",
-        "消費習慣",
-        "理性消費",
-        "省錢方法",
-        "存錢app",
-        "財務",
-        "節省",
-        "人生時間成本",
-        "價值稜鏡"
-      ],
-      "purchase_model": "free_with_lifetime_unlock",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": false,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
-      },
-      "app_store_url": "https://apps.apple.com/tw/app/id6794039979?pt=118326163&ct=iag_api_zh_hant&mt=8",
-      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/hourstaglite.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "0",
-        "currency": "TWD",
-        "formatted_price": "免費",
-        "storefront_url": "https://apps.apple.com/tw/app/id6794039979"
       }
     },
     {
@@ -871,8 +907,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 4.6,
-        "rating_count": 5,
+        "rating_value": 4.7,
+        "rating_count": 6,
         "storefront_url": "https://apps.apple.com/tw/app/id6773017109"
       }
     },
@@ -1027,6 +1063,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/tw/app/id6778748533"
       }
     },
@@ -1200,7 +1238,7 @@
         "currency": "TWD",
         "formatted_price": "免費",
         "rating_value": 5.0,
-        "rating_count": 1,
+        "rating_count": 2,
         "storefront_url": "https://apps.apple.com/tw/app/id6778269699"
       }
     },
@@ -1962,6 +2000,65 @@
       }
     },
     {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag:AI 連結收藏",
+      "summary": "你每天都在傳連結給自己。朋友分享的食譜、看上的外套、說好要看的影片、想再讀一次的貼文。它們散落在聊天室、備忘錄和截圖裡,然後就再也找不到了。",
+      "category": "productivity",
+      "search_terms": [
+        "書籤",
+        "待讀清單",
+        "存檔",
+        "網址",
+        "離線",
+        "標籤",
+        "剪貼簿",
+        "願望清單",
+        "食譜",
+        "旅遊",
+        "追劇",
+        "私密",
+        "免註冊",
+        "買斷",
+        "靈感",
+        "穿搭",
+        "育兒",
+        "寵物",
+        "遊戲",
+        "設計",
+        "學習",
+        "筆記",
+        "一鍵",
+        "無廣告",
+        "匯出",
+        "小工具",
+        "捷徑",
+        "美食",
+        "購物",
+        "網頁"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/tw/app/id6802505528?pt=118326163&ct=iag_api_zh_hant&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/savetag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6802505528"
+      }
+    },
+    {
       "key": "scanto",
       "app_store_id": "6779977651",
       "name": "ScanTo Pro: 離線PDF掃描",
@@ -2070,6 +2167,65 @@
         "rating_value": 5.0,
         "rating_count": 1,
         "storefront_url": "https://apps.apple.com/tw/app/id6788236641"
+      }
+    },
+    {
+      "key": "shotinbox",
+      "app_store_id": "6802166527",
+      "name": "ShotInbox AI: Sort Screenshots",
+      "summary": "截圖，井然有序 每張截圖都能找到、處理、清掉。",
+      "category": "photo-utility",
+      "search_terms": [
+        "相簿",
+        "整理",
+        "照片",
+        "清理",
+        "重複",
+        "相似",
+        "圖片",
+        "管理",
+        "歸檔",
+        "刪除",
+        "批次",
+        "篩選",
+        "文字辨識",
+        "擷取",
+        "尋找",
+        "瘦身",
+        "隱私保護",
+        "離線處理",
+        "永久買斷",
+        "QR碼",
+        "收據",
+        "票券",
+        "購物",
+        "對話",
+        "食譜",
+        "靈感",
+        "地圖",
+        "提醒",
+        "收藏",
+        "釋放空間"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=iag_api_zh_hant&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/shotinbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6802166527"
       }
     },
     {

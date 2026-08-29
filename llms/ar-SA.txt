@@ -3,29 +3,29 @@
 > معلومات منظمة عن كل تطبيق iOS — الميزات والسعر والأسئلة الشائعة.
 
 locale: ar-SA
-apps: 43
+apps: 46
 - دليل التطبيقات: https://alice51849.github.io/ios-app-guide/ar-SA/tools/private-pay-once-iphone-app-finder.html
 - دليل التطبيقات · PWA: https://alice51849.github.io/ios-app-guide/ar-SA/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/ar-SA.json
 - دليل التطبيقات · SVG: https://alice51849.github.io/ios-app-guide/ar-SA/visuals/
-- دليل التطبيقات · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- دليل التطبيقات · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- دليل التطبيقات · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
-- دليل التطبيقات · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
-- دليل التطبيقات · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
+- دليل التطبيقات · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- دليل التطبيقات · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- دليل التطبيقات · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- دليل التطبيقات · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- دليل التطبيقات · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
 - دليل التطبيقات · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- دليل التطبيقات · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
-- دليل التطبيقات · Agent Skill · ar-SA: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/ar-SA.json
-- دليل التطبيقات · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
-- دليل التطبيقات · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
-- دليل التطبيقات · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
-- دليل التطبيقات · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
-- دليل التطبيقات · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
-- دليل التطبيقات · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- دليل التطبيقات · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- دليل التطبيقات · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- دليل التطبيقات · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- دليل التطبيقات · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- دليل التطبيقات · Agent Skill · ar-SA: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/ar-SA.json
+- دليل التطبيقات · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- دليل التطبيقات · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- دليل التطبيقات · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- دليل التطبيقات · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- دليل التطبيقات · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- دليل التطبيقات · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- دليل التطبيقات · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- دليل التطبيقات · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- دليل التطبيقات · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/ar-SA/notesstudio100.html) — دفتر ملاحظات بخط اليد وPDF
   - استوديو خاص يعمل دون اتصال للكتابة بالقلم الرقمي على الجهاز اللوحي. علّق على PDF، واحفظ التسجيل في صفحته، وراجع بالبطاقات. شراء واحد يضيف دفاتر وأنماطًا متقدمة.
@@ -43,6 +43,10 @@ apps: 43
   - حوّل المذاكرة إلى جلسة مركزة: إحماء سريع، مجموعة تحت ضغط الوقت، ثم إعادة ذكية للأخطاء مع تحليل واضح لنقاط الضعف.
   - السعر: تنزيل مدفوع بسعر واحد مقدمًا ومن دون اشتراك.
   - App Store: https://apps.apple.com/sa/app/id6792483140
+- [BattAI: نتيجة صحة البطارية](https://alice51849.github.io/ios-app-guide/ar-SA/battai.html) — قواعد ومصادر وحدود واضحة
+  - افهم بطاريتك عبر الوقت قواعد ومصادر وحدود واضحة افتح سجلًا أعمق وتخطيطًا وتقارير. دفعة واحدة. بلا اشتراك.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6802423998
 - [CalDaily حاسبة وسمات](https://alice51849.github.io/ios-app-guide/ar-SA/caldaily.html) — ويدجت وأدوات وسجل مرتب
   - كل نتيجة تحتفظ بها يمكن تسميتها وتصنيفها والعثور عليها لاحقًا. ثماني أدوات متقدمة، وويدجت للشاشة الرئيسية، ومئة سمة، وكل ذلك يعمل على جهازك وحده.
   - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
@@ -151,6 +155,10 @@ apps: 43
   - اكتشف الصور المكررة ولقطات الشاشة والصور الضبابية والفيديوهات الكبيرة. راجع كل شيء على جهازك قبل الحذف. بدون إعلانات أو اشتراك.
   - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
   - App Store: https://apps.apple.com/sa/app/id6780223070
+- [SaveTag: حفظ الروابط الذكي](https://alice51849.github.io/ios-app-guide/ar-SA/savetag.html) — احفظ الآن واقرأ لاحقًا
+  - كل ما نويت العودة إليه صار في مكان واحد. لمسة واحدة للحفظ، وترتيب تلقائي داخل جهازك، وطقس يومي يعيد لك ما لم تقرأه. بلا حساب وبلا اشتراك.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6802505528
 - [ScanTo Pro: PDF وOCR](https://alice51849.github.io/ios-app-guide/ar-SA/scanto.html) — ماسح خاص بلا إنترنت
   - امسح أي شيء، وابحث عنه دائمًا. ملفات PDF واضحة ونص OCR قابل للبحث وقفل Face ID — دون إنترنت تمامًا. دفعة واحدة، بلا اشتراك.
   - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
@@ -159,6 +167,10 @@ apps: 43
   - اشترِ مرة واحدة، نم إلى الأبد. امزج عشرات الأصوات الحية في أكثر من 1000 مشهد صوتي فريد — في الوقت الحقيقي، بدون تكرار، بدون اشتراك، 100% دون اتصال.
   - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
   - App Store: https://apps.apple.com/sa/app/id6788236641
+- [ShotInbox AI: Sort Screenshots](https://alice51849.github.io/ios-app-guide/ar-SA/shotinbox.html) — شراء واحد، بلا اشتراك
+  - اعثر على كل لقطة شاشة وتعامل معها ونظّفها. أحدث 50 لقطة شاشة تشمل كامل التجربة الأساسية مجانًا. عملية شراء واحدة • وصول مدى الحياة • بلا اشتراك.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6802166527
 - [Snapport Lite](https://alice51849.github.io/ios-app-guide/ar-SA/snapportlite.html) — أنشئ صور الوثائق في المنزل
   - أنشئ صور جواز السفر والتأشيرة والهوية مع إرشادات المقاس والخلفية والطباعة. | النسخة المجانية · تدعم تصديرًا واحدًا | شراء لمرة واحدة · لك للأبد · بلا اشتراك
   - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.

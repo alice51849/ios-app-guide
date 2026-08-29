@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-22",
-    "contentDigest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
+    "dateModified": "2026-08-29",
+    "contentDigest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 43
+    "recordCount": 46
   },
   "items": [
     {
@@ -142,6 +142,24 @@
       "date_modified": "2026-08-19T02:01:38Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6802423998",
+      "url": "https://alice51849.github.io/ios-app-guide/zh-Hant/battai.html",
+      "external_url": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=iag_feed_zh_hant&mt=8",
+      "title": "BattAI: 電池健康分數",
+      "content_text": "BattAI BattAI 只使用公開 iOS API 提供的五項資料：電量、充電狀態、低耗電模式、整部裝置的熱狀態與時間。其他結果由這些讀值計算，或由你補充。每一項都會顯示來源與限制。",
+      "tags": [
+        "電池健康分數",
+        "最大容量",
+        "循環次數",
+        "充電保養",
+        "充電區間",
+        "充電速率",
+        "匯出資料"
+      ],
+      "language": "zh-Hant",
+      "date_modified": "2026-08-29T04:55:13Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6794178671",
       "url": "https://alice51849.github.io/ios-app-guide/zh-Hant/caldaily.html",
       "external_url": "https://apps.apple.com/tw/app/id6794178671?pt=118326163&ct=iag_feed_zh_hant&mt=8",
@@ -224,7 +242,7 @@
         "自傳範本"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6782251621",
@@ -273,7 +291,7 @@
         "白帶"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790418321",
@@ -397,7 +415,7 @@
         "理財app"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793436548",
@@ -429,6 +447,41 @@
         "出國花費",
         "離線記帳",
         "自訂匯率"
+      ],
+      "language": "zh-Hant",
+      "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6794039979",
+      "url": "https://alice51849.github.io/ios-app-guide/zh-Hant/hourstaglite.html",
+      "external_url": "https://apps.apple.com/tw/app/id6794039979?pt=118326163&ct=iag_feed_zh_hant&mt=8",
+      "title": "HoursTag Lite",
+      "content_text": "HoursTag Lite - 看見每樣東西的真實代價",
+      "tags": [
+        "記帳",
+        "預算",
+        "省錢",
+        "理財",
+        "儲蓄",
+        "存錢",
+        "記帳app",
+        "消費",
+        "花費",
+        "個人理財",
+        "衝動購物",
+        "省錢app",
+        "開銷",
+        "預算管理",
+        "工作時數",
+        "時薪",
+        "消費習慣",
+        "理性消費",
+        "省錢方法",
+        "存錢app",
+        "財務",
+        "節省",
+        "人生時間成本",
+        "價值稜鏡"
       ],
       "language": "zh-Hant",
       "date_modified": "2026-08-19T02:01:38Z"
@@ -478,42 +531,7 @@
         "財商"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
-    },
-    {
-      "id": "https://apps.apple.com/app/id6794039979",
-      "url": "https://alice51849.github.io/ios-app-guide/zh-Hant/hourstaglite.html",
-      "external_url": "https://apps.apple.com/tw/app/id6794039979?pt=118326163&ct=iag_feed_zh_hant&mt=8",
-      "title": "HoursTag Lite",
-      "content_text": "HoursTag Lite - 看見每樣東西的真實代價",
-      "tags": [
-        "記帳",
-        "預算",
-        "省錢",
-        "理財",
-        "儲蓄",
-        "存錢",
-        "記帳app",
-        "消費",
-        "花費",
-        "個人理財",
-        "衝動購物",
-        "省錢app",
-        "開銷",
-        "預算管理",
-        "工作時數",
-        "時薪",
-        "消費習慣",
-        "理性消費",
-        "省錢方法",
-        "存錢app",
-        "財務",
-        "節省",
-        "人生時間成本",
-        "價值稜鏡"
-      ],
-      "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780107485",
@@ -550,7 +568,7 @@
         "分心"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6773017109",
@@ -599,7 +617,7 @@
         "幼兒學習"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6775773117",
@@ -655,7 +673,7 @@
         "語言啟蒙"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778748533",
@@ -715,7 +733,7 @@
         "拼字"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778491147",
@@ -764,7 +782,7 @@
         "英文"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778269699",
@@ -851,7 +869,7 @@
         "成就感"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6776958488",
@@ -903,7 +921,7 @@
         "數字"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779750237",
@@ -964,7 +982,7 @@
         "星星"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -1026,7 +1044,7 @@
         "星星"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6787193643",
@@ -1099,7 +1117,7 @@
         "出遊"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792850916",
@@ -1331,7 +1349,7 @@
         "film"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -1378,7 +1396,48 @@
         "重複檔案"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802505528",
+      "url": "https://alice51849.github.io/ios-app-guide/zh-Hant/savetag.html",
+      "external_url": "https://apps.apple.com/tw/app/id6802505528?pt=118326163&ct=iag_feed_zh_hant&mt=8",
+      "title": "SaveTag:AI 連結收藏",
+      "content_text": "你每天都在傳連結給自己。朋友分享的食譜、看上的外套、說好要看的影片、想再讀一次的貼文。它們散落在聊天室、備忘錄和截圖裡,然後就再也找不到了。",
+      "tags": [
+        "書籤",
+        "待讀清單",
+        "存檔",
+        "網址",
+        "離線",
+        "標籤",
+        "剪貼簿",
+        "願望清單",
+        "食譜",
+        "旅遊",
+        "追劇",
+        "私密",
+        "免註冊",
+        "買斷",
+        "靈感",
+        "穿搭",
+        "育兒",
+        "寵物",
+        "遊戲",
+        "設計",
+        "學習",
+        "筆記",
+        "一鍵",
+        "無廣告",
+        "匯出",
+        "小工具",
+        "捷徑",
+        "美食",
+        "購物",
+        "網頁"
+      ],
+      "language": "zh-Hant",
+      "date_modified": "2026-08-27T11:21:51Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",
@@ -1414,7 +1473,7 @@
         "pdf轉換"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6788236641",
@@ -1450,6 +1509,47 @@
       ],
       "language": "zh-Hant",
       "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802166527",
+      "url": "https://alice51849.github.io/ios-app-guide/zh-Hant/shotinbox.html",
+      "external_url": "https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=iag_feed_zh_hant&mt=8",
+      "title": "ShotInbox AI: Sort Screenshots",
+      "content_text": "截圖，井然有序 每張截圖都能找到、處理、清掉。",
+      "tags": [
+        "相簿",
+        "整理",
+        "照片",
+        "清理",
+        "重複",
+        "相似",
+        "圖片",
+        "管理",
+        "歸檔",
+        "刪除",
+        "批次",
+        "篩選",
+        "文字辨識",
+        "擷取",
+        "尋找",
+        "瘦身",
+        "隱私保護",
+        "離線處理",
+        "永久買斷",
+        "QR碼",
+        "收據",
+        "票券",
+        "購物",
+        "對話",
+        "食譜",
+        "靈感",
+        "地圖",
+        "提醒",
+        "收藏",
+        "釋放空間"
+      ],
+      "language": "zh-Hant",
+      "date_modified": "2026-08-26T04:57:37Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780575828",
@@ -1500,7 +1600,7 @@
         "簽證照"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792856304",
@@ -1574,7 +1674,7 @@
         "隨手記"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6791299610",
@@ -1683,7 +1783,7 @@
         "老照片翻新"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",

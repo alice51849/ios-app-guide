@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-22",
-  "content_digest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "mr-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 43,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -165,6 +165,42 @@
         "currency": "INR",
         "formatted_price": "₹ 599",
         "storefront_url": "https://apps.apple.com/in/app/id6792483140"
+      }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: बॅटरी आरोग्य गुण",
+      "summary": "BattAI BattAI सार्वजनिक iOS API मधून 5 मूल्ये वापरते: बॅटरी पातळी, चार्ज स्थिती, Low Power Mode, संपूर्ण उपकरणाची उष्ण स्थिती आणि वेळ. इतर निकाल या मोजमापांतून मोजले जातात किंवा तुम्ही जोडता. प्रत्येक तपशील स्रोत आणि मर्यादा दाखवतो.",
+      "category": "utility",
+      "search_terms": [
+        "बॅटरी आरोग्य गुण",
+        "कमाल क्षमता",
+        "चार्ज चक्रे",
+        "चार्ज काळजी",
+        "चार्ज श्रेणी",
+        "चार्ज दर",
+        "माहिती निर्यात"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_api_mr_in&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/battai.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मोफत",
+        "storefront_url": "https://apps.apple.com/in/app/id6802423998"
       }
     },
     {
@@ -515,6 +551,46 @@
       }
     },
     {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite",
+      "summary": "HoursTag Lite - सामानांची खरी किंमत पहा",
+      "category": "finance",
+      "search_terms": [
+        "budget",
+        "savings",
+        "बचत",
+        "खर्च",
+        "save money",
+        "impulse buying",
+        "पैसे वाचवा",
+        "बजेट",
+        "expense tracker",
+        "money manager",
+        "पैसे"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_api_mr_in&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/hourstaglite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मोफत",
+        "storefront_url": "https://apps.apple.com/in/app/id6794039979"
+      }
+    },
+    {
       "key": "hourstag",
       "app_store_id": "6754218117",
       "name": "HoursTag: खरेदी वेळेची किंमत",
@@ -573,46 +649,6 @@
         "currency": "INR",
         "formatted_price": "₹ 499",
         "storefront_url": "https://apps.apple.com/in/app/id6754218117"
-      }
-    },
-    {
-      "key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
-      "summary": "HoursTag Lite - सामानांची खरी किंमत पहा",
-      "category": "finance",
-      "search_terms": [
-        "budget",
-        "savings",
-        "बचत",
-        "खर्च",
-        "save money",
-        "impulse buying",
-        "पैसे वाचवा",
-        "बजेट",
-        "expense tracker",
-        "money manager",
-        "पैसे"
-      ],
-      "purchase_model": "free_with_lifetime_unlock",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": false,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
-      },
-      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_api_mr_in&mt=8",
-      "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/hourstaglite.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "0",
-        "currency": "INR",
-        "formatted_price": "मोफत",
-        "storefront_url": "https://apps.apple.com/in/app/id6794039979"
       }
     },
     {
@@ -1600,6 +1636,50 @@
       }
     },
     {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: AI बुकमार्क",
+      "summary": "आत्ता सेव्ह करा. आणि यावेळी खरंच वाचा.",
+      "category": "productivity",
+      "search_terms": [
+        "वाचनसूची",
+        "आवडते",
+        "संग्रह",
+        "url",
+        "फोल्डर",
+        "टॅग",
+        "ऑफलाइन",
+        "पाककृती",
+        "प्रवास",
+        "खरेदी",
+        "टिपा",
+        "खाजगी",
+        "बातम्या",
+        "वेबसाइट",
+        "लेख"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_api_mr_in&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/savetag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मोफत",
+        "storefront_url": "https://apps.apple.com/in/app/id6802505528"
+      }
+    },
+    {
       "key": "scanto",
       "app_store_id": "6779977651",
       "name": "ScanTo Pro: PDF स्कॅन",
@@ -1675,6 +1755,45 @@
         "currency": "INR",
         "formatted_price": "मोफत",
         "storefront_url": "https://apps.apple.com/in/app/id6788236641"
+      }
+    },
+    {
+      "key": "shotinbox",
+      "app_store_id": "6802166527",
+      "name": "ShotInbox AI: Sort Screenshots",
+      "summary": "तुमचे स्क्रीनशॉट, व्यवस्थित प्रत्येक स्क्रीनशॉट शोधा, वापरा आणि साफ करा.",
+      "category": "photo-utility",
+      "search_terms": [
+        "स्क्रीनशॉट मॅनेजर",
+        "फोटो क्लीनर",
+        "डुप्लिकेट",
+        "सारखे",
+        "मजकूर शोध",
+        "तारखेनुसार",
+        "खासगी लॉक",
+        "गॅलरी",
+        "अल्बम",
+        "ऑफलाइन"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_api_mr_in&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/mr-IN/shotinbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मोफत",
+        "storefront_url": "https://apps.apple.com/in/app/id6802166527"
       }
     },
     {

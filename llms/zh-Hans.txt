@@ -3,29 +3,29 @@
 > 每个 iOS App 的结构化信息 — 功能、价格与常见问题。
 
 locale: zh-Hans
-apps: 43
+apps: 46
 - App 目录: https://alice51849.github.io/ios-app-guide/zh-Hans/tools/private-pay-once-iphone-app-finder.html
 - App 目录 · PWA: https://alice51849.github.io/ios-app-guide/zh-Hans/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/zh-Hans.json
 - App 目录 · SVG: https://alice51849.github.io/ios-app-guide/zh-Hans/visuals/
-- App 目录 · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- App 目录 · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- App 目录 · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
-- App 目录 · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
-- App 目录 · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
+- App 目录 · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- App 目录 · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- App 目录 · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- App 目录 · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- App 目录 · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
 - App 目录 · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- App 目录 · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
-- App 目录 · Agent Skill · zh-Hans: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/zh-Hans.json
-- App 目录 · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
-- App 目录 · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
-- App 目录 · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
-- App 目录 · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
-- App 目录 · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
-- App 目录 · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- App 目录 · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- App 目录 · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- App 目录 · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- App 目录 · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- App 目录 · Agent Skill · zh-Hans: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/zh-Hans.json
+- App 目录 · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- App 目录 · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- App 目录 · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- App 目录 · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- App 目录 · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- App 目录 · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- App 目录 · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- App 目录 · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- App 目录 · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/zh-Hans/notesstudio100.html) — 手写笔记本、PDF批注、录音与复习
   - 私密、离线优先的手写工作室，适配平板、手机与兼容触控笔。29种笔刷、PDF批注、录音保存在录制页面、设备端文字识别与间隔复习；100款风格可预览，一次购买可加入更多笔记本和进阶工具。
@@ -43,6 +43,10 @@ apps: 43
   - 从8题热身进入15分钟限时训练，再回放每一道错题。630道原创题、分级模考、听写与弱项分析均可离线使用，下载后全部功能直接开放。
   - 价格: 付费下载，一次付清，无需订阅。
   - App Store: https://apps.apple.com/cn/app/id6792483140
+- [BattAI: 电池健康评分](https://alice51849.github.io/ios-app-guide/zh-Hans/battai.html) — 规则、来源和限制都说清楚
+  - 看懂电池随时间的变化 规则、来源和限制都说清楚 解锁更深的历史、规划与报告。 只付一次，绝无订阅。
+  - 价格: 免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。
+  - App Store: https://apps.apple.com/cn/app/id6802423998
 - [CalDaily 计算器与主题](https://alice51849.github.io/ios-app-guide/zh-Hans/caldaily.html) — 桌面小组件、八种工具、计算记录
   - 每一笔结果都能命名、分类，之后再找回来。八种进阶工具、桌面小组件与一百款主题，全部在设备上完成。
   - 价格: 免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。
@@ -151,6 +155,10 @@ apps: 43
   - 找出占空间的重复照片、截图、模糊照和大视频。全程在设备上扫描，删除前先查看；无广告、无订阅，一次买断。
   - 价格: 免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。
   - App Store: https://apps.apple.com/cn/app/id6780223070
+- [SaveTag:AI 链接收藏](https://alice51849.github.io/ios-app-guide/zh-Hans/savetag.html) — 稍后阅读,自动打标签
+  - 那些说好要回头看的链接,终于有地方放了。一键保存,设备端自动打标签,每天用“重新发现”翻出没读完的内容。无需注册、不上云端、没有广告,买断制,没有订阅。
+  - 价格: 免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。
+  - App Store: https://apps.apple.com/cn/app/id6802505528
 - [ScanTo Pro: 离线PDF扫描](https://alice51849.github.io/ios-app-guide/zh-Hans/scanto.html) — 私密离线OCR・一次买断
   - 扫一次,永远找得到。清晰 PDF、可搜索的 OCR 文字、Face ID 上锁,完全离线、一次买断、无订阅。
   - 价格: 免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。
@@ -159,6 +167,10 @@ apps: 43
   - 一次购买，永远安睡。将数十种活生生的声音混合成 1000 多种独特音景——实时，无循环，无订阅，100% 离线。
   - 价格: 免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。
   - App Store: https://apps.apple.com/cn/app/id6788236641
+- [ShotInbox AI: Sort Screenshots](https://alice51849.github.io/ios-app-guide/zh-Hans/shotinbox.html) — 本地截图分类、OCR搜索与时间轴
+  - 让每张截图都能找到、处理、清理。最近 50 张截图可免费使用完整核心流程。Apple Vision 与 Natural Language 仅在本机运行，绝不上传。一次买断 • 永久使用 • 绝无订阅。
+  - 价格: 免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。
+  - App Store: https://apps.apple.com/cn/app/id6802166527
 - [Snapport Lite](https://alice51849.github.io/ios-app-guide/zh-Hans/snapportlite.html) — 在家制作证件照
   - 通过尺寸引导、背景工具和可打印输出，制作护照、签证和证件照。 | 免费版可导出 1 次 | 一次购买 · 永久使用 · 无需订阅 | 无广告、无跟踪
   - 价格: 免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。

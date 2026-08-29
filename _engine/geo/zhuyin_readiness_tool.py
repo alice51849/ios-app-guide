@@ -347,7 +347,7 @@ COPY = {
         ),
         "home": "Home",
         "tools": "Free tools",
-        "footer": "Independent no-score educational resource. Not an official assessment or professional diagnosis.",
+        "footer": "Publisher-authored, no-score educational resource from Lumi Studio. Not an official assessment or professional diagnosis.",
     },
     "zh-Hant": {
         "lang": "zh-Hant",
@@ -463,7 +463,7 @@ COPY = {
         ),
         "home": "首頁",
         "tools": "免費工具",
-        "footer": "不評分的獨立教育資源；不是官方評量，也不是專業診斷。",
+        "footer": "由 Lumi Studio 製作的不評分教育資源；不是官方評量，也不是專業診斷。",
     },
 }
 

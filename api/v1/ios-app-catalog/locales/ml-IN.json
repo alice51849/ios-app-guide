@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-22",
-  "content_digest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "ml-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 43,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -165,6 +165,42 @@
         "currency": "INR",
         "formatted_price": "₹ 599",
         "storefront_url": "https://apps.apple.com/in/app/id6792483140"
+      }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: ബാറ്ററി ആരോഗ്യ സ്കോർ",
+      "summary": "BattAI BattAI പൊതു iOS API-കളിൽ നിന്ന് 5 മൂല്യങ്ങൾ ഉപയോഗിക്കുന്നു: ബാറ്ററി നില, ചാർജ് നില, Low Power Mode, മുഴുവൻ ഉപകരണത്തിന്റെ താപാവസ്ഥ, സമയം. മറ്റു ഫലങ്ങൾ ഈ അളവുകളിൽ നിന്ന് കണക്കാക്കുകയോ നിങ്ങൾ ചേർക്കുകയോ ചെയ്യുന്നു. ഓരോ വിവരവും ഉറവിടവും പരിധിയും കാണിക്കുന്നു.",
+      "category": "utility",
+      "search_terms": [
+        "ബാറ്ററി ആരോഗ്യ സ്കോർ",
+        "പരമാവധി ശേഷി",
+        "ചാർജ് ചക്രങ്ങൾ",
+        "ചാർജ് പരിചരണം",
+        "ചാർജ് ശ്രേണി",
+        "ചാർജ് നിരക്ക്",
+        "വിവര കയറ്റുമതി"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_api_ml_in&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/battai.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം",
+        "storefront_url": "https://apps.apple.com/in/app/id6802423998"
       }
     },
     {
@@ -496,6 +532,45 @@
       }
     },
     {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite",
+      "summary": "HoursTag Lite - വസ്തുക്കളുടെ യഥാർത്ഥ വില കാണുക",
+      "category": "finance",
+      "search_terms": [
+        "budget",
+        "savings",
+        "സമ്പാദ്യം",
+        "ചെലവ്",
+        "save money",
+        "impulse buying",
+        "പണം ലാഭിക്കൂ",
+        "ബജറ്റ്",
+        "expense tracker",
+        "finance"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_api_ml_in&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/hourstaglite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം",
+        "storefront_url": "https://apps.apple.com/in/app/id6794039979"
+      }
+    },
+    {
       "key": "hourstag",
       "app_store_id": "6754218117",
       "name": "HoursTag: സമയം വാങ്ങുക",
@@ -555,45 +630,6 @@
         "currency": "INR",
         "formatted_price": "₹ 499",
         "storefront_url": "https://apps.apple.com/in/app/id6754218117"
-      }
-    },
-    {
-      "key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
-      "summary": "HoursTag Lite - വസ്തുക്കളുടെ യഥാർത്ഥ വില കാണുക",
-      "category": "finance",
-      "search_terms": [
-        "budget",
-        "savings",
-        "സമ്പാദ്യം",
-        "ചെലവ്",
-        "save money",
-        "impulse buying",
-        "പണം ലാഭിക്കൂ",
-        "ബജറ്റ്",
-        "expense tracker",
-        "finance"
-      ],
-      "purchase_model": "free_with_lifetime_unlock",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": false,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
-      },
-      "app_store_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_api_ml_in&mt=8",
-      "guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/hourstaglite.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "0",
-        "currency": "INR",
-        "formatted_price": "സൗജന്യം",
-        "storefront_url": "https://apps.apple.com/in/app/id6794039979"
       }
     },
     {
@@ -1555,6 +1591,47 @@
       }
     },
     {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: AI ബുക്ക്മാർക്ക്",
+      "summary": "ഇപ്പോൾ സേവ് ചെയ്യൂ. ഇത്തവണ ശരിക്കും വായിക്കൂ.",
+      "category": "productivity",
+      "search_terms": [
+        "പിന്നീട് വായിക്കാൻ",
+        "പ്രിയപ്പെട്ടവ",
+        "ശേഖരം",
+        "url",
+        "ഫോൾഡർ",
+        "ടാഗ്",
+        "ഓഫ്‌ലൈൻ",
+        "പാചകം",
+        "യാത്ര",
+        "ഷോപ്പിംഗ്",
+        "കുറിപ്പ്",
+        "വാർത്ത"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_api_ml_in&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/savetag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം",
+        "storefront_url": "https://apps.apple.com/in/app/id6802505528"
+      }
+    },
+    {
       "key": "scanto",
       "app_store_id": "6779977651",
       "name": "ScanTo Pro: PDF സ്കാൻ",
@@ -1630,6 +1707,44 @@
         "currency": "INR",
         "formatted_price": "സൗജന്യം",
         "storefront_url": "https://apps.apple.com/in/app/id6788236641"
+      }
+    },
+    {
+      "key": "shotinbox",
+      "app_store_id": "6802166527",
+      "name": "ShotInbox AI: Sort Screenshots",
+      "summary": "നിങ്ങളുടെ സ്ക്രീൻഷോട്ടുകൾ, ക്രമത്തിൽ ഓരോ സ്ക്രീൻഷോട്ടും കണ്ടെത്തി, ഉപയോഗിച്ച്, വൃത്തിയാക്കുക.",
+      "category": "photo-utility",
+      "search_terms": [
+        "സ്ക്രീൻഷോട്ട്",
+        "ക്രമീകരണം",
+        "ഫോട്ടോ ക്ലീനർ",
+        "ഡ്യൂപ്ലിക്കേറ്റ്",
+        "സമാന",
+        "ടെക്സ്റ്റ് തിരയൽ",
+        "തീയതി",
+        "സ്വകാര്യ",
+        "ഗാലറി"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_api_ml_in&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ml-IN/shotinbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "സൗജന്യം",
+        "storefront_url": "https://apps.apple.com/in/app/id6802166527"
       }
     },
     {

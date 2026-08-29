@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-22",
-    "contentDigest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
+    "dateModified": "2026-08-29",
+    "contentDigest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 43
+    "recordCount": 46
   },
   "items": [
     {
@@ -141,6 +141,24 @@
       "date_modified": "2026-08-19T02:01:38Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6802423998",
+      "url": "https://alice51849.github.io/ios-app-guide/ja/battai.html",
+      "external_url": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=iag_feed_ja&mt=8",
+      "title": "BattAI: バッテリー状態スコア",
+      "content_text": "BattAI BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。",
+      "tags": [
+        "バッテリー状態スコア",
+        "最大容量",
+        "充放電回数",
+        "充電ケア",
+        "充電範囲",
+        "充電速度",
+        "データを書き出す"
+      ],
+      "language": "ja",
+      "date_modified": "2026-08-29T04:55:13Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6794178671",
       "url": "https://alice51849.github.io/ios-app-guide/ja/caldaily.html",
       "external_url": "https://apps.apple.com/jp/app/id6794178671?pt=118326163&ct=iag_feed_ja&mt=8",
@@ -222,7 +240,7 @@
         "新卒採用"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6782251621",
@@ -269,7 +287,7 @@
         "リズム手帳"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790418321",
@@ -386,7 +404,7 @@
         "貯蓄"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793436548",
@@ -416,6 +434,40 @@
         "旅費管理",
         "両替計算",
         "オフライン"
+      ],
+      "language": "ja",
+      "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6794039979",
+      "url": "https://alice51849.github.io/ios-app-guide/ja/hourstaglite.html",
+      "external_url": "https://apps.apple.com/jp/app/id6794039979?pt=118326163&ct=iag_feed_ja&mt=8",
+      "title": "HoursTag Lite",
+      "content_text": "HoursTag Lite - モノの本当の値段が見える",
+      "tags": [
+        "節約",
+        "家計簿",
+        "予算",
+        "貯金",
+        "節約術",
+        "支出管理",
+        "お金管理",
+        "浪費防止",
+        "貯金アプリ",
+        "節約アプリ",
+        "時給",
+        "労働時間",
+        "衝動買い",
+        "家計",
+        "貯蓄",
+        "お小遣い",
+        "倹約",
+        "出費",
+        "資産管理",
+        "節約生活",
+        "買い物",
+        "お金",
+        "人生時間コスト"
       ],
       "language": "ja",
       "date_modified": "2026-08-19T02:01:38Z"
@@ -462,41 +514,7 @@
         "収支"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
-    },
-    {
-      "id": "https://apps.apple.com/app/id6794039979",
-      "url": "https://alice51849.github.io/ios-app-guide/ja/hourstaglite.html",
-      "external_url": "https://apps.apple.com/jp/app/id6794039979?pt=118326163&ct=iag_feed_ja&mt=8",
-      "title": "HoursTag Lite",
-      "content_text": "HoursTag Lite - モノの本当の値段が見える",
-      "tags": [
-        "節約",
-        "家計簿",
-        "予算",
-        "貯金",
-        "節約術",
-        "支出管理",
-        "お金管理",
-        "浪費防止",
-        "貯金アプリ",
-        "節約アプリ",
-        "時給",
-        "労働時間",
-        "衝動買い",
-        "家計",
-        "貯蓄",
-        "お小遣い",
-        "倹約",
-        "出費",
-        "資産管理",
-        "節約生活",
-        "買い物",
-        "お金",
-        "人生時間コスト"
-      ],
-      "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780107485",
@@ -531,7 +549,7 @@
         "睡眠"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6773017109",
@@ -576,7 +594,7 @@
         "注音符号"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6775773117",
@@ -620,7 +638,7 @@
         "phonics"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778748533",
@@ -671,7 +689,7 @@
         "おけいこ"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778491147",
@@ -714,7 +732,7 @@
         "広告なし"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778269699",
@@ -797,7 +815,7 @@
         "習慣"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6776958488",
@@ -847,7 +865,7 @@
         "親子"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779750237",
@@ -894,7 +912,7 @@
         "知育"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -942,7 +960,7 @@
         "身支度"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6787193643",
@@ -1014,7 +1032,7 @@
         "お出かけ日和"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792850916",
@@ -1216,7 +1234,7 @@
         "film"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -1261,7 +1279,36 @@
         "連写"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802505528",
+      "url": "https://alice51849.github.io/ios-app-guide/ja/savetag.html",
+      "external_url": "https://apps.apple.com/jp/app/id6802505528?pt=118326163&ct=iag_feed_ja&mt=8",
+      "title": "SaveTag: AIであとで読む",
+      "content_text": "一日に何度も、自分あてにリンクを送っていませんか。友だちが教えてくれたレシピ、気になったアウター、あとで見ようと思った動画、もう一度読み返したかった投稿。トーク画面やメモ、スクリーンショットに散らばって、そのまま行方不明になります。",
+      "tags": [
+        "ブックマーク",
+        "お気に入り",
+        "url",
+        "リーディングリスト",
+        "クリップ",
+        "情報整理",
+        "積読",
+        "レシピ",
+        "買い物",
+        "旅行",
+        "オフライン",
+        "メモ",
+        "スクラップ",
+        "まとめ",
+        "ウィッシュリスト",
+        "買い切り",
+        "広告なし",
+        "ウィジェット"
+      ],
+      "language": "ja",
+      "date_modified": "2026-08-27T11:21:51Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",
@@ -1291,7 +1338,7 @@
         "search"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6788236641",
@@ -1326,6 +1373,37 @@
       ],
       "language": "ja",
       "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802166527",
+      "url": "https://alice51849.github.io/ios-app-guide/ja/shotinbox.html",
+      "external_url": "https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=iag_feed_ja&mt=8",
+      "title": "ShotInbox AI: Sort Screenshots",
+      "content_text": "スクショを、すっきり整理 すべての画像を見つけ、処理し、片づける。",
+      "tags": [
+        "スクリーンショット",
+        "写真",
+        "整理",
+        "アルバム",
+        "重複",
+        "類似",
+        "削除",
+        "画像",
+        "管理",
+        "クリーナー",
+        "カメラロール",
+        "文字認識",
+        "一括選択",
+        "容量節約",
+        "端末内",
+        "プライバシー",
+        "買い切り",
+        "自動仕分け",
+        "ギャラリー",
+        "レシート"
+      ],
+      "language": "ja",
+      "date_modified": "2026-08-26T04:57:37Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780575828",
@@ -1367,7 +1445,7 @@
         "運転免許"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792856304",
@@ -1435,7 +1513,7 @@
         "タスク管理"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6791299610",
@@ -1533,7 +1611,7 @@
         "古い写真"
       ],
       "language": "ja",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",

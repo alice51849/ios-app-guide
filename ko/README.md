@@ -4,7 +4,7 @@
 
 각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
 
-App Store 제공 여부를 확인한 43개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
+App Store 제공 여부를 확인한 46개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
 
 **언어·지역:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · **ko** · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -14,11 +14,11 @@ App Store 제공 여부를 확인한 43개 iOS 앱과 Apple의 50개 언어·지
 >
 > 검색어는 예상 사용 사례를 편집 기준에 따라 설명한 것이며, 실제 측정된 검색량 데이터, 순위, 독립 리뷰 또는 사용자 추천이 아닙니다.
 
-## Lumi Studio 개발사 검색 의도 카탈로그 · MCP v1.2.0 · Agent Skill
+## Lumi Studio 개발사 검색 의도 카탈로그 · MCP v1.3.0 · Agent Skill
 
 각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ App Store 제공 여부를 확인한 43개 iOS 앱과 Apple의 50개 언어·지
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -93,6 +93,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | **AI Brief** | best private app to organize screenshots and documents into context before using AI | AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceable brief before sharing with any AI. Free to start · One-time unlock · No subscription. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html) | [App Store에서 AI Brief 받기 →](https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=iag_gh_ko&mt=8) |
 | **Aim990** | 아이폰용 오프라인 토익 준비 앱 최고의 학습 계획 | 파트 5는 짧아 보이지만, 문장이 완성되지 않은 문제들이 문법과 어휘가 자동화되지 않으면 시간을 많이 소모할 수 있습니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [앱 스토어에서 Aim990 받기 →](https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=iag_gh_ko&mt=8) |
 | **Aim990 Plus** | best offline English listening and reading exam trainer for iPhone | Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html) | [App Store에서 Aim990 Plus 받기 →](https://apps.apple.com/kr/app/id6792483140?pt=118326163&ct=iag_gh_ko&mt=8) |
+| **BattAI: 배터리 상태 점수** | BattAI: 배터리 상태 점수 — 규칙, 출처, 한계를 분명하게 \| iOS App | BattAI BattAI가 공개 iOS API에서 쓰는 값은 배터리 잔량, 충전 상태, 저전력 모드, 기기 전체 열 상태, 시간까지 다섯 가지예요. 다른 결과는 기록에서 계산하거나 직접 추가해요. 각 항목에 출처와 한계를 표시해요. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/battai.html) | [App Store에서 BattAI: 배터리 상태 점수 받기](https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=iag_gh_ko&mt=8) |
 | **CalDaily 계산기 및 테마** | CalDaily 계산기 및 테마 — 위젯, 도구, 기록 정리 \| iOS App | 계속 쓰게 되는 계산기입니다. 숫자에 담긴 맥락까지 기억하기 때문입니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/caldaily.html) | [App Store에서 CalDaily 계산기 및 테마 받기](https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=iag_gh_ko&mt=8) |
 | **CV Desk** | 2026년 경력 전환자를 위한 최고의 이력서 작성 앱 | 분야를 바꿀 때 이력서 문제는 다릅니다: 경험은 실제지만 서류상 '관련 없음'으로 ATS 필터가 인간 검토 전에 걸러냅니다 — CV Desk는 이를 위해 만들어졌습니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-resume-builder-app-for-career-changers-2026.html) | [앱 스토어에서 CV Desk 받기 →](https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=iag_gh_ko&mt=8) |
 | **Cyca** | 계정 없이 사용할 수 있는 최고의 생리 주기 추적 앱 아이폰용 | 데이터 민감도가 중요한 카테고리에서 올바른 생리 주기 추적기는 흐름, 기분, 증상, 온도, 친밀감 등 모든 정보를 계정 없이 기기에만 보관하며 클라우드 동기화가 없습니다 — Cyca는 이를 위해 만들어졌습니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-period-tracker-app-no-account-required-iphone.html) | [앱 스토어에서 Cyca 받기 →](https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=iag_gh_ko&mt=8) |
@@ -120,8 +121,10 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | **OnePage PPT: AI 발표자료** | OnePage PPT: AI 발표자료 — 메모·PDF를 한 장 슬라이드로 \| iOS App | 빽빽한 텍스트를 실제로 읽히는 한 장으로. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/onepageppt.html) | [App Store에서 OnePage PPT: AI 발표자료 받기](https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=iag_gh_ko&mt=8) |
 | **PhotoCream** | 아이폰 여행 크리에이터를 위한 일회성 결제 필름 사진 편집 앱 추천 | 여행 크리에이터는 각 목적지를 동일한 평면 필터로 만들지 않고, 그레인, 할레이션, 색상 특성을 더하는 반복 가능한 필름 느낌이 필요합니다 — PhotoCream은 이를 위해 만들어졌습니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [App Store에서 PhotoCream 받기 →](https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=iag_gh_ko&mt=8) |
 | **PicClear** | 아이폰 저장 공간 확보를 위한 중복 사진 삭제에 가장 좋은 앱 | 빠르게 공간을 확보하려면 가장 큰 효과부터 노리세요: 정확한 중복 사진, 거의 동일한 연속 촬영, 흐릿한 사진, 큰 동영상 — PicClear가 아이폰에서 도와줍니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [App Store에서 PicClear 받기 →](https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=iag_gh_ko&mt=8) |
+| **SaveTag: AI 링크 보관함** | SaveTag: AI 링크 보관함 — 나중에 읽기, 자동 태그 정리 \| iOS App | 일단 저장하고, 이번엔 진짜 다 읽습니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/savetag.html) | [App Store에서 SaveTag: AI 링크 보관함 받기](https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=iag_gh_ko&mt=8) |
 | **ScanTo Pro** | 간호사를 위한 클라우드 없는 오프라인 문서 스캐너 앱 중 최고 | 환자 동의서, 퇴원 서류, 의뢰서를 스캔할 때 서류가 기기에만 남아야 하며 절대 다른 사람 클라우드에 업로드되지 않아야 합니다 — ScanTo Pro가 이에 맞게 설계되었습니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [App Store에서 ScanTo Pro 받기 →](https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=iag_gh_ko&mt=8) |
 | **Sereno** | 구독 없이 잠들기 좋은 최고의 백색소음 앱 | 수면에 구독이 매달 귀찮게 하는 것은 휴식에 반대입니다 — Sereno는 이를 위해 만들어졌습니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [App Store에서 Sereno 받기 →](https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=iag_gh_ko&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — 스크린샷 분류·OCR 검색·타임라인 \| iOS App | 스크린샷을 깔끔하게 모든 스크린샷을 찾고, 처리하고, 정리하세요. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/shotinbox.html) | [App Store에서 ShotInbox AI: Sort Screenshots 받기](https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=iag_gh_ko&mt=8) |
 | **Snapport** | 집에서 아기와 유아용 여권 사진 앱 추천 | 아기 여권 사진은 다른 사람이 나오면 안 되고 배경은 단색이어야 하지만, 영아는 눈을 완전히 뜨지 않아도 됩니다. | 유료 다운로드 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [App Store에서 Snapport 받기 →](https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=iag_gh_ko&mt=8) |
 | **Snapport Lite** | Snapport Lite — 집에서 ID 사진 만들기 \| iOS App | Snapport Lite - 가이드 크기 조정, 배경 도구 및 인쇄 준비 완료 내보내기로 여권, 비자 및 문서 사진을 만드세요. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/snapportlite.html) | [App Store에서 Snapport Lite 받기](https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=iag_gh_ko&mt=8) |
 | **Sono Note** | 아이폰에서 회의 내용을 요약하는 최고의 음성 메모 앱 | 통화 후에는 원시 전사본이 아니라 요약, 실행 항목, 후속 초안이 필요합니다 — Sono Note는 이를 위해 만들어졌습니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://alice51849.github.io/ios-app-guide/ko/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [App Store에서 Sono Note 받기 →](https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=iag_gh_ko&mt=8) |
@@ -135,7 +138,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 
 ## 전체 데이터셋 다운로드
 
-JSON, JSONL, CSV 모두 동일한 2,150개 기록을 포함합니다.
+JSON, JSONL, CSV 모두 동일한 2,300개 기록을 포함합니다.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +146,6 @@ JSON, JSONL, CSV 모두 동일한 2,150개 기록을 포함합니다.
 
 [홈](https://alice51849.github.io/ios-app-guide/ko/index.html) · [오픈 데이터](https://alice51849.github.io/ios-app-guide/ko/data/lumi-studio-publisher-search-intent-catalog.html) · [라이선스](https://creativecommons.org/licenses/by/4.0/)
 
-업데이트 날짜: 2026-08-21
+업데이트 날짜: 2026-08-29
 
 CC BY 4.0은 원본 카탈로그 편집에 적용되며, 앱 이름과 App Store 마크는 각 소유자의 권리입니다.

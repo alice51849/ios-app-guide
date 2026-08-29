@@ -3,29 +3,29 @@
 > Infos structurées sur chaque app iOS — fonctions, prix et FAQ.
 
 locale: fr-FR
-apps: 43
+apps: 46
 - Répertoire d'apps: https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-pay-once-iphone-app-finder.html
 - Répertoire d'apps · PWA: https://alice51849.github.io/ios-app-guide/fr-FR/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld
 - Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/fr-FR.json
 - Répertoire d'apps · SVG: https://alice51849.github.io/ios-app-guide/fr-FR/visuals/
-- Répertoire d'apps · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
-- Répertoire d'apps · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
-- Répertoire d'apps · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb
-- Répertoire d'apps · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0
-- Répertoire d'apps · MCP v1.2.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS
+- Répertoire d'apps · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Répertoire d'apps · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Répertoire d'apps · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- Répertoire d'apps · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- Répertoire d'apps · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
 - Répertoire d'apps · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
-- Répertoire d'apps · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder
-- Répertoire d'apps · Agent Skill · fr-FR: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.2.0/skills/lumi-app-finder/references/fr-FR.json
-- Répertoire d'apps · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
-- Répertoire d'apps · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
-- Répertoire d'apps · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
-- Répertoire d'apps · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
-- Répertoire d'apps · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
-- Répertoire d'apps · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
-- Répertoire d'apps · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- Répertoire d'apps · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
-- Répertoire d'apps · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+- Répertoire d'apps · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- Répertoire d'apps · Agent Skill · fr-FR: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/fr-FR.json
+- Répertoire d'apps · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- Répertoire d'apps · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- Répertoire d'apps · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- Répertoire d'apps · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- Répertoire d'apps · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- Répertoire d'apps · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Répertoire d'apps · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Répertoire d'apps · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Répertoire d'apps · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/fr-FR/notesstudio100.html) — Cahier manuscrit et PDF
   - Notes privées hors ligne pour tablette et stylet. Écrivez à la main, annotez vos PDF, joignez un audio à la page et révisez. Un achat unique ajoute les options avancées.
@@ -43,6 +43,10 @@ apps: 43
   - Enchaînez échauffement, série chronométrée et reprise des erreurs dans un entraînement complet, privé et disponible hors ligne.
   - Tarif: Téléchargement payant à prix unique, sans abonnement.
   - App Store: https://apps.apple.com/fr/app/id6792483140
+- [BattAI: Santé de la batterie](https://alice51849.github.io/ios-app-guide/fr-FR/battai.html) — Règles, sources et limites claires
+  - Comprenez votre batterie dans le temps Règles, sources et limites claires Débloquez plus d’historique, de planification et de rapports. Achat unique. Sans abonnement.
+  - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
+  - App Store: https://apps.apple.com/fr/app/id6802423998
 - [CalDaily : calculatrice](https://alice51849.github.io/ios-app-guide/fr-FR/caldaily.html) — Widget, outils, 100 thèmes
   - Chaque résultat peut être nommé, classé et retrouvé plus tard. Huit outils, un widget sur l'écran d'accueil et cent thèmes, entièrement sur votre appareil.
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
@@ -151,6 +155,10 @@ apps: 43
   - Repérez doublons, captures, photos floues et grosses vidéos qui saturent le stockage. Vérifiez sur l’appareil avant de supprimer. Sans pub, sans abonnement.
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/fr/app/id6780223070
+- [SaveTag : favoris par IA](https://alice51849.github.io/ios-app-guide/fr-FR/savetag.html) — Sauvegardez et lisez vos liens
+  - Tous les liens que vous comptiez relire, enfin réunis. Un geste pour sauvegarder, un classement fait sur l'appareil et un rituel quotidien. Sans compte, sans abonnement.
+  - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
+  - App Store: https://apps.apple.com/fr/app/id6802505528
 - [ScanTo Pro : Scanner PDF OCR](https://alice51849.github.io/ios-app-guide/fr-FR/scanto.html) — Scan PDF privé, hors ligne
   - Scannez tout, retrouvez-le toujours. PDF nets, texte OCR cherchable et verrou Face ID – 100 % hors ligne. Paiement unique, sans abo.
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
@@ -159,6 +167,10 @@ apps: 43
   - Achetez une fois, dormez pour toujours. Mélangez des dizaines de sons vivants en plus de 1000 paysages sonores uniques — en temps réel, jamais en boucle, jamais d'abonnem
   - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
   - App Store: https://apps.apple.com/fr/app/id6788236641
+- [ShotInbox AI: Sort Screenshots](https://alice51849.github.io/ios-app-guide/fr-FR/shotinbox.html) — Captures: recherche OCR privée
+  - Retrouvez, traitez et rangez chaque capture. Apple Vision et Natural Language fonctionnent sur l’appareil. Aucun envoi. Un seul achat • Accès à vie • Sans abonnement.
+  - Tarif: Téléchargement gratuit, achat unique pour tout débloquer. Sans abonnement.
+  - App Store: https://apps.apple.com/fr/app/id6802166527
 - [Snapport : Photo d'identité](https://alice51849.github.io/ios-app-guide/fr-FR/snapport.html) — Photo passeport identité
   - Créez vos photos passeport, visa et identité à la maison: formats guidés, fond propre, planches à imprimer. Privé sur appareil, sans pub, achat unique.
   - Tarif: Téléchargement payant à prix unique, sans abonnement.

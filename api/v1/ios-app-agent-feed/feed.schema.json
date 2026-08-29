@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-agent-feed/feed.schema.json",
+  "title": "Lumi Studio agent product feed row",
+  "description": "One JSON object per line of feed.jsonl.",
+  "type": "object",
+  "required": [
+    "id",
+    "item_group_id",
+    "title",
+    "description",
+    "link",
+    "price",
+    "price_value",
+    "price_currency",
+    "availability",
+    "content_language",
+    "enable_search",
+    "enable_checkout",
+    "app_store_url"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "item_group_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 150
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 5000
+    },
+    "link": {
+      "type": "string",
+      "format": "uri"
+    },
+    "image_link": {
+      "type": "string",
+      "format": "uri"
+    },
+    "price": {
+      "type": "string"
+    },
+    "price_value": {
+      "type": "string",
+      "pattern": "^\\d+(\\.\\d+)?$"
+    },
+    "price_currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "availability": {
+      "const": "in_stock"
+    },
+    "condition": {
+      "const": "new"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "product_category": {
+      "type": "string"
+    },
+    "product_type": {
+      "const": "mobile application"
+    },
+    "content_language": {
+      "enum": [
+        "ar-SA",
+        "bn-BD",
+        "ca",
+        "cs",
+        "da",
+        "de-DE",
+        "el",
+        "en-AU",
+        "en-CA",
+        "en-GB",
+        "en-US",
+        "es-ES",
+        "es-MX",
+        "fi",
+        "fr-CA",
+        "fr-FR",
+        "gu-IN",
+        "he",
+        "hi",
+        "hr",
+        "hu",
+        "id",
+        "it",
+        "ja",
+        "kn-IN",
+        "ko",
+        "ml-IN",
+        "mr-IN",
+        "ms",
+        "nl-NL",
+        "no",
+        "or-IN",
+        "pa-IN",
+        "pl",
+        "pt-BR",
+        "pt-PT",
+        "ro",
+        "ru",
+        "sk",
+        "sl-SI",
+        "sv",
+        "ta-IN",
+        "te-IN",
+        "th",
+        "tr",
+        "uk",
+        "ur-PK",
+        "vi",
+        "zh-Hans",
+        "zh-Hant"
+      ]
+    },
+    "shipping_country": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "enable_search": {
+      "const": true
+    },
+    "enable_checkout": {
+      "const": false
+    },
+    "app_store_id": {
+      "type": "string",
+      "pattern": "^\\d+$"
+    },
+    "app_store_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "operating_system": {
+      "const": "iOS"
+    },
+    "one_time_purchase": {
+      "type": "boolean"
+    },
+    "subscription": {
+      "const": false
+    }
+  },
+  "additionalProperties": true
+}

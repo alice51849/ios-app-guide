@@ -4,7 +4,7 @@
 
 Her uygulamanın kimler için tasarlandığını, tamamlamaya çalıştıkları görevi ve doğrudan App Store yolunu gösteren bir birinci taraf katalog.
 
-43 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
+46 doğrulanmış canlı iOS uygulaması ve 50 Apple yerelinde yayıncı tarafından yazılmış arama niyetleri.
 
 **Yerel:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · **tr** · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -14,11 +14,11 @@ Her uygulamanın kimler için tasarlandığını, tamamlamaya çalıştıkları 
 >
 > Sorgular, amaçlanan kullanım durumlarının editoryal açıklamalarıdır; ölçülmüş arama hacmi verileri, sıralamalar, bağımsız incelemeler veya kullanıcı onayları değildir.
 
-## Lumi Studio Yayıncı Arama Niyeti Kataloğu · MCP v1.2.0 · Agent Skill
+## Lumi Studio Yayıncı Arama Niyeti Kataloğu · MCP v1.3.0 · Agent Skill
 
 Her uygulamanın kimler için tasarlandığını, tamamlamaya çalıştıkları görevi ve doğrudan App Store yolunu gösteren bir birinci taraf katalog.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ Her uygulamanın kimler için tasarlandığını, tamamlamaya çalıştıkları 
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -93,6 +93,7 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 | **AI Brief** | best private app to organize screenshots and documents into context before using AI | AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceable brief before sharing with any AI. Free to start · One-time unlock · No subscription. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html) | [AI Brief uygulamasını App Store'dan edinin →](https://apps.apple.com/tr/app/id6791658210?pt=118326163&ct=iag_gh_tr&mt=8) |
 | **Aim990** | iPhone için en iyi çevrimdışı TOEIC hazırlık uygulaması çalışma planı | Bölüm 5 kısa görünebilir, ancak tamamlanmamış cümle soruları, dilbilgisi ve kelime bilgisi otomatik değilse zaman kaybettirebilir. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Aim990’ı App Store’dan edinin →](https://apps.apple.com/tr/app/id6784974530?pt=118326163&ct=iag_gh_tr&mt=8) |
 | **Aim990 Plus** | best offline English listening and reading exam trainer for iPhone | Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription. | Ücretli indirme | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html) | [Aim990 Plus uygulamasını App Store'dan edinin →](https://apps.apple.com/tr/app/id6792483140?pt=118326163&ct=iag_gh_tr&mt=8) |
+| **BattAI: Pil sağlığı puanı** | BattAI: Pil sağlığı puanı — Açık kurallar, kaynaklar ve sınırlar \| iOS App | BattAI BattAI herkese açık iOS API’lerinden beş değer kullanır: pil düzeyi, şarj durumu, Düşük Güç Modu, cihazın genel termal durumu ve zaman. Diğer sonuçlar bu ölçümlerden hesaplanır veya sizin tarafınızdan eklenir. Her ayrıntı kaynağını ve sınırlarını gösterir. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/battai.html) | [BattAI: Pil sağlığı puanı uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6802423998?pt=118326163&ct=iag_gh_tr&mt=8) |
 | **CalDaily: hesap makinesi** | CalDaily: hesap makinesi — Widget, araçlar ve geçmiş \| iOS App | Gerçekten kullanmaya devam edeceğiniz bir hesap makinesi, çünkü her sayının arkasındaki düşünceyi de hatırlıyor. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/caldaily.html) | [CalDaily: hesap makinesi uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6794178671?pt=118326163&ct=iag_gh_tr&mt=8) |
 | **CV Desk** | 2026 için kariyer değiştiricilere en iyi özgeçmiş hazırlama uygulaması | Alan değiştirirken, sorun farklıdır: deneyiminiz gerçek ama kağıt üzerinde 'ilgisiz'dir ve ATS filtreleri insan okumadan önce sizi reddeder — CV Desk bunun için tasarlandı. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-resume-builder-app-for-career-changers-2026.html) | [CV Desk’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6781337213?pt=118326163&ct=iag_gh_tr&mt=8) |
 | **Cyca** | hesap gerektirmeyen en iyi adet takibi uygulaması iphone | Veri hassasiyetinin tüm hikaye olduğu bir kategoride, doğru adet takip uygulaması her şeyi — akış, ruh hali, belirtiler, sıcaklık, yakınlık — cihazınızda, hesap veya bulut senkronizasyonu olmadan tutar — Cyca bunun için tasarlandı. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-period-tracker-app-no-account-required-iphone.html) | [Cyca'yı App Store'dan edinin →](https://apps.apple.com/tr/app/id6782251621?pt=118326163&ct=iag_gh_tr&mt=8) |
@@ -120,8 +121,10 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 | **OnePage PPT: Yapay Zeka Slayt** | OnePage PPT: Yapay Zeka Slayt — Notlardan tek sayfalık sunum \| iOS App | Upuzun bir metni, insanların gerçekten okuduğu TEK bir sayfaya dönüştürün. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/onepageppt.html) | [OnePage PPT: Yapay Zeka Slayt uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6798814385?pt=118326163&ct=iag_gh_tr&mt=8) |
 | **PhotoCream** | iPhone’da seyahat içerikleri için tek seferlik ücretli en iyi film fotoğraf düzenleyici | Seyahat içerik üreticileri, her destinasyonu aynı düz filtreye indirgemeden gren, halasyon ve renk karakteri ekleyen tekrarlanabilir bir film görünümüne ihtiyaç duyar — PhotoCream bunun için tasarlandı. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [PhotoCream’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6781808054?pt=118326163&ct=iag_gh_tr&mt=8) |
 | **PicClear** | iPhone depolama alanını boşaltmak için en iyi uygulama, yinelenen fotoğrafları siler | Hızlı alan açmak için en büyük kazançları hedefleyin: tam kopya fotoğraflar, neredeyse aynı patlama çekimleri, bulanık reddedilenler ve büyük videolar — PicClear iPhone'da bunu yapmanıza yardımcı olur. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [PicClear'ı App Store'dan edinin →](https://apps.apple.com/tr/app/id6780223070?pt=118326163&ct=iag_gh_tr&mt=8) |
+| **SaveTag: yapay zekâlı yer imi** | SaveTag: yapay zekâlı yer imi — Bağlantıları kaydet, sonra oku \| iOS App | Şimdi kaydet. Bu sefer gerçekten oku. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/savetag.html) | [SaveTag: yapay zekâlı yer imi uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6802505528?pt=118326163&ct=iag_gh_tr&mt=8) |
 | **ScanTo Pro** | Hemşireler için bulut olmadan en iyi çevrimdışı belge tarayıcı uygulaması | Hasta onay formları, taburcu evrakları veya sevkleri tarıyorsanız, tarayıcı bu evrakları cihazda tutmalı — asla başkasının bulutuna yüklenmemeli — ScanTo Pro bu amaçla yapılmıştır. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [ScanTo Pro'yu App Store'dan edinin →](https://apps.apple.com/tr/app/id6779977651?pt=118326163&ct=iag_gh_tr&mt=8) |
 | **Sereno** | abonelik olmadan uykuya dalmak için en iyi beyaz gürültü uygulaması | Uyku için, her ay sizi rahatsız eden bir abonelik dinlendirici değildir — Sereno bu amaçla tasarlanmıştır. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Sereno’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6788236641?pt=118326163&ct=iag_gh_tr&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Ekran görüntülerini düzenle \| iOS App | Ekran görüntüleriniz düzenli | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/shotinbox.html) | [ShotInbox AI: Sort Screenshots uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6802166527?pt=118326163&ct=iag_gh_tr&mt=8) |
 | **Snapport** | bebekler ve küçük çocuklar için evde en iyi pasaport fotoğrafı uygulaması | Bebek pasaport fotoğrafında başka kimse olmamalı ve arka plan sade olmalıdır — ancak bebeklerde gözlerin tamamen açık olması gerekmez. | Ücretli indirme | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Snapport’u App Store’dan edinin →](https://apps.apple.com/tr/app/id6780575828?pt=118326163&ct=iag_gh_tr&mt=8) |
 | **Snapport Lite** | Snapport Lite — Vesikalık fotoğrafı evde çekin \| iOS App | Snapport Lite - Boyut, arka plan ve baskı kılavuzlarıyla pasaport, vize ve kimlik fotoğrafları oluşturun. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/snapportlite.html) | [Snapport Lite uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6792856304?pt=118326163&ct=iag_gh_tr&mt=8) |
 | **Sono Note** | iPhone’da toplantıları özetleyen en iyi sesli not uygulaması | Bir çağrı sonrası ham yazıya değil, özet, eylem maddeleri ve taslak takip e-postasına ihtiyacınız vardır — Sono Note bu amaçla tasarlanmıştır. | Başlangıçta ücretsiz · tek seferlik satın alımla açma | [Rehber](https://alice51849.github.io/ios-app-guide/tr/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Sono Note’u App Store’dan edinin →](https://apps.apple.com/tr/app/id6782139553?pt=118326163&ct=iag_gh_tr&mt=8) |
@@ -135,7 +138,7 @@ Uygulama adına göre alfabetik — asla bir sıralama değildir.
 
 ## Tam veri setini indir
 
-JSON, JSONL ve CSV aynı 2.150 kaydı içerir.
+JSON, JSONL ve CSV aynı 2.300 kaydı içerir.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +146,6 @@ JSON, JSONL ve CSV aynı 2.150 kaydı içerir.
 
 [Ana Sayfa](https://alice51849.github.io/ios-app-guide/tr/index.html) · [Açık veri](https://alice51849.github.io/ios-app-guide/tr/data/lumi-studio-publisher-search-intent-catalog.html) · [Lisans](https://creativecommons.org/licenses/by/4.0/)
 
-Güncellendi: 2026-08-21
+Güncellendi: 2026-08-29
 
 CC BY 4.0, orijinal katalog derlemesine uygulanır; uygulama adları ve App Store işaretleri sahiplerine aittir.

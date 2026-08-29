@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alice51849.github.io/ios-app-guide/data/ios-app-decision-matrix.schema.json",
+  "title": "Lumi Studio verified iOS app decision matrix",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "columns",
+    "groups",
+    "rows"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "is_ranking": {
+      "const": false
+    },
+    "measured_search_volume": {
+      "const": false
+    },
+    "app_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "columns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "type",
+          "description",
+          "source"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "category",
+          "label",
+          "app_keys"
+        ],
+        "properties": {
+          "category": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "app_count": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "app_keys": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "app_key",
+          "app_name",
+          "app_store_id",
+          "category",
+          "category_label",
+          "buyer_intent",
+          "decision_context",
+          "purchase_model",
+          "purchase_model_label",
+          "one_time_option",
+          "free_to_download",
+          "subscription",
+          "us_price",
+          "us_price_currency",
+          "verified_storefront_count",
+          "sibling_app_keys",
+          "choose_when",
+          "consider_instead_when",
+          "guide_url",
+          "app_store_url"
+        ],
+        "properties": {
+          "app_key": {
+            "type": "string"
+          },
+          "app_store_id": {
+            "type": "string",
+            "pattern": "^\\d+$"
+          },
+          "purchase_model": {
+            "enum": [
+              "free_with_lifetime_unlock",
+              "paid_upfront"
+            ]
+          },
+          "one_time_option": {
+            "type": "boolean"
+          },
+          "subscription": {
+            "const": false
+          },
+          "free_to_download": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "us_price": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "us_price_currency": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "verified_storefront_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "sibling_app_keys": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

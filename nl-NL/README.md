@@ -4,7 +4,7 @@
 
 Een catalogus van de eerste partij met informatie over voor wie elke app is ontworpen, welke taak ze proberen te voltooien en het directe App Store-pad.
 
-Door uitgevers opgestelde zoekintenties voor 43 geverifieerde actieve iOS-apps en 50 Apple-regio's.
+Door uitgevers opgestelde zoekintenties voor 46 geverifieerde actieve iOS-apps en 50 Apple-regio's.
 
 **Regio:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · **nl-NL** · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -14,11 +14,11 @@ Door uitgevers opgestelde zoekintenties voor 43 geverifieerde actieve iOS-apps e
 >
 > De zoekopdrachten zijn redactionele beschrijvingen van beoogde gebruikssituaties, geen gemeten zoekvolumegegevens, ranglijsten, onafhankelijke beoordelingen of gebruikersaanbevelingen.
 
-## Lumi Studio Uitgever Zoekintentiecatalogus · MCP v1.2.0 · Agent Skill
+## Lumi Studio Uitgever Zoekintentiecatalogus · MCP v1.3.0 · Agent Skill
 
 Een catalogus van de eerste partij met informatie over voor wie elke app is ontworpen, welke taak ze proberen te voltooien en het directe App Store-pad.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ Een catalogus van de eerste partij met informatie over voor wie elke app is ontw
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -93,6 +93,7 @@ Alfabetisch op app-naam — nooit een ranglijst.
 | **AI Brief** | AI Brief — Bestanden naar heldere context \| iOS App | Betere context. Betere antwoorden. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/aibriefpack.html) | [Download AI Brief in de App Store](https://apps.apple.com/nl/app/id6791658210?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
 | **Aim990** | beste TOEIC voorbereidingsapp offline studieplan voor iPhone | Deel 5 lijkt kort, maar die vragen met onvolledige zinnen kunnen tijd kosten als grammatica en woordenschat niet automatisch gaan. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Download Aim990 in de App Store →](https://apps.apple.com/nl/app/id6784974530?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
 | **Aim990 Plus** | Aim990 Plus — Engels examen onder druk \| iOS App | Aim990 Plus is een complete trainingsomgeving voor volwassenen die Engelse luister- en leestaken ook onder tijdsdruk beheerst willen uitvoeren. De | Betaalde aanschaf | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/aim990plus.html) | [Download Aim990 Plus in de App Store](https://apps.apple.com/nl/app/id6792483140?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
+| **BattAI: Batterijconditiescore** | BattAI: Batterijconditiescore — Heldere regels, bronnen en grenzen \| iOS App | BattAI BattAI gebruikt vijf waarden uit openbare iOS-API’s: batterijniveau, laadstatus, Energiebesparing, warmtestatus van het hele toestel en tijd. Andere resultaten worden uit die metingen berekend of door jou toegevoegd. Elk detail toont bron en grenzen. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/battai.html) | [Download BattAI: Batterijconditiescore in de App Store](https://apps.apple.com/nl/app/id6802423998?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
 | **CalDaily: rekenmachine+thema's** | CalDaily: rekenmachine+thema's — Widget, tools, geschiedenis \| iOS App | Een rekenmachine die je houdt, omdat hij onthoudt waar elk getal over ging. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/caldaily.html) | [Download CalDaily: rekenmachine+thema's in de App Store](https://apps.apple.com/nl/app/id6794178671?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
 | **CV Desk** | beste cv-bouwer app voor carrièreswitchers 2026 | Bij het wisselen van vakgebied is het cv-probleem anders: je ervaring is echt maar op papier 'niet-gerelateerd', en ATS-filters wijzen je af voordat een mens het leest — CV Desk is hiervoor gemaakt. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-resume-builder-app-for-career-changers-2026.html) | [Download CV Desk in de App Store →](https://apps.apple.com/nl/app/id6781337213?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
 | **Cyca** | beste menstruatie-app zonder account vereist iPhone | In een categorie waar gegevensgevoeligheid centraal staat, houdt de juiste menstruatie-app alles bij — vloei, stemming, symptomen, temperatuur, intimiteit — op je apparaat, zonder account en zonder cloud-synchronisatie — Cyca is hiervoor gemaakt. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-period-tracker-app-no-account-required-iphone.html) | [Download Cyca in de App Store →](https://apps.apple.com/nl/app/id6782251621?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
@@ -120,8 +121,10 @@ Alfabetisch op app-naam — nooit een ranglijst.
 | **OnePage PPT: AI-dia maker** | OnePage PPT: AI-dia maker — Van notities naar één dia \| iOS App | Maak van een muur tekst ÉÉN dia die mensen echt lezen. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/onepageppt.html) | [Download OnePage PPT: AI-dia maker in de App Store](https://apps.apple.com/nl/app/id6798814385?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
 | **PhotoCream** | beste eenmalige filmfoto-editor voor reiscreators op iPhone | Reiscreators hebben een herhaalbare filmlook nodig die korrel, halatie en kleurkarakter toevoegt zonder elke bestemming te reduceren tot dezelfde vlakke filter — PhotoCream is hiervoor gemaakt. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [PhotoCream downloaden in de App Store →](https://apps.apple.com/nl/app/id6781808054?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
 | **PicClear** | beste app om iPhone-opslag vrij te maken door dubbele foto’s te verwijderen | Om snel ruimte vrij te maken, richt je je eerst op de grootste winst: exacte dubbele foto’s, bijna identieke burstfoto’s, wazige afkeuringen en grote video’s — PicClear helpt je dit op je iPhone te doen. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Download PicClear in de App Store →](https://apps.apple.com/nl/app/id6780223070?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
+| **SaveTag: AI-bladwijzers** | SaveTag: AI-bladwijzers — Links bewaren, later lezen \| iOS App | Nu bewaren. En deze keer ook echt lezen. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/savetag.html) | [Download SaveTag: AI-bladwijzers in de App Store](https://apps.apple.com/nl/app/id6802505528?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
 | **ScanTo Pro** | beste offline document scanner app zonder cloud voor verpleegkundigen | Als je toestemmingsformulieren, ontslagpapieren of verwijzingen scant, moet de scanner die documenten op het apparaat houden — nooit geüpload naar de cloud van iemand anders — ScanTo Pro is hiervoor gemaakt. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Download ScanTo Pro in de App Store →](https://apps.apple.com/nl/app/id6779977651?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
 | **Sereno** | beste white noise-app om in slaap te vallen zonder abonnement | Voor slaap is een abonnement dat elke maand zeurt het tegenovergestelde van rustgevend — Sereno is hiervoor gemaakt. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Download Sereno in de App Store →](https://apps.apple.com/nl/app/id6788236641?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Orden je schermafbeeldingen \| iOS App | Je screenshots, netjes geordend | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/shotinbox.html) | [Download ShotInbox AI: Sort Screenshots in de App Store](https://apps.apple.com/nl/app/id6802166527?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
 | **Snapport** | beste pasfoto-app voor baby's en peuters thuis | Voor een pasfoto van een baby mag er niemand anders op de foto staan en moet de achtergrond effen zijn — maar bij baby's hoeven de ogen niet volledig open te zijn. | Betaalde aanschaf | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Download Snapport in de App Store →](https://apps.apple.com/nl/app/id6780575828?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
 | **Snapport Lite** | Snapport Lite — Maak ID-foto's thuis \| iOS App | Snapport Lite - Maak paspoort-, visum- en documentfoto's met geleide afmetingen, achtergrondtools en export klaar voor afdrukken. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/snapportlite.html) | [Download Snapport Lite in de App Store](https://apps.apple.com/nl/app/id6792856304?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
 | **Sono Note** | beste app voor spraaknotities die vergaderingen samenvat op iPhone | Na een gesprek wil je geen ruwe transcriptie — je wilt de samenvatting, de actiepunten en een concept opvolgmail — Sono Note is hiervoor gemaakt. | Gratis te starten · ontgrendeling met eenmalige aankoop | [Gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Download Sono Note in de App Store →](https://apps.apple.com/nl/app/id6782139553?pt=118326163&ct=iag_gh_nl_nl&mt=8) |
@@ -135,7 +138,7 @@ Alfabetisch op app-naam — nooit een ranglijst.
 
 ## Haal de volledige dataset binnen
 
-JSON, JSONL en CSV bevatten dezelfde 2.150 gegevensitems.
+JSON, JSONL en CSV bevatten dezelfde 2.300 gegevensitems.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +146,6 @@ JSON, JSONL en CSV bevatten dezelfde 2.150 gegevensitems.
 
 [Startpagina](https://alice51849.github.io/ios-app-guide/nl-NL/index.html) · [Open data](https://alice51849.github.io/ios-app-guide/nl-NL/data/lumi-studio-publisher-search-intent-catalog.html) · [Licentie](https://creativecommons.org/licenses/by/4.0/)
 
-Bijgewerkt: 2026-08-21
+Bijgewerkt: 2026-08-29
 
 CC BY 4.0 is van toepassing op de originele catalogussamenstelling; app-namen en App Store-merken behoren toe aan hun eigenaren.

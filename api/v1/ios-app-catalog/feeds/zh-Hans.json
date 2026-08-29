@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-22",
-    "contentDigest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
+    "dateModified": "2026-08-29",
+    "contentDigest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 43
+    "recordCount": 46
   },
   "items": [
     {
@@ -143,6 +143,24 @@
       "date_modified": "2026-08-19T02:01:38Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6802423998",
+      "url": "https://alice51849.github.io/ios-app-guide/zh-Hans/battai.html",
+      "external_url": "https://apps.apple.com/cn/app/id6802423998?pt=118326163&ct=iag_feed_zh_hans&mt=8",
+      "title": "BattAI: 电池健康评分",
+      "content_text": "BattAI BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。",
+      "tags": [
+        "电池健康评分",
+        "最大容量",
+        "循环次数",
+        "充电养护",
+        "充电区间",
+        "充电速率",
+        "导出数据"
+      ],
+      "language": "zh-Hans",
+      "date_modified": "2026-08-29T04:55:13Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6794178671",
       "url": "https://alice51849.github.io/ios-app-guide/zh-Hans/caldaily.html",
       "external_url": "https://apps.apple.com/cn/app/id6794178671?pt=118326163&ct=iag_feed_zh_hans&mt=8",
@@ -229,7 +247,7 @@
         "兼职"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6782251621",
@@ -271,7 +289,7 @@
         "隐私"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790418321",
@@ -395,7 +413,7 @@
         "记账工具"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793436548",
@@ -427,6 +445,41 @@
         "出国花费",
         "离线记账",
         "自定义汇率"
+      ],
+      "language": "zh-Hans",
+      "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6794039979",
+      "url": "https://alice51849.github.io/ios-app-guide/zh-Hans/hourstaglite.html",
+      "external_url": "https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=iag_feed_zh_hans&mt=8",
+      "title": "HoursTag Lite",
+      "content_text": "HoursTag Lite - 看见每样东西的真实代价",
+      "tags": [
+        "记账",
+        "预算",
+        "省钱",
+        "理财",
+        "储蓄",
+        "存钱",
+        "记账app",
+        "消费",
+        "花费",
+        "个人理财",
+        "冲动购物",
+        "省钱app",
+        "开销",
+        "预算管理",
+        "工作时数",
+        "时薪",
+        "消费习惯",
+        "理性消费",
+        "省钱方法",
+        "存钱app",
+        "财务",
+        "节省",
+        "人生时间成本",
+        "价值透镜"
       ],
       "language": "zh-Hans",
       "date_modified": "2026-08-19T02:01:38Z"
@@ -476,42 +529,7 @@
         "财商"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
-    },
-    {
-      "id": "https://apps.apple.com/app/id6794039979",
-      "url": "https://alice51849.github.io/ios-app-guide/zh-Hans/hourstaglite.html",
-      "external_url": "https://apps.apple.com/cn/app/id6794039979?pt=118326163&ct=iag_feed_zh_hans&mt=8",
-      "title": "HoursTag Lite",
-      "content_text": "HoursTag Lite - 看见每样东西的真实代价",
-      "tags": [
-        "记账",
-        "预算",
-        "省钱",
-        "理财",
-        "储蓄",
-        "存钱",
-        "记账app",
-        "消费",
-        "花费",
-        "个人理财",
-        "冲动购物",
-        "省钱app",
-        "开销",
-        "预算管理",
-        "工作时数",
-        "时薪",
-        "消费习惯",
-        "理性消费",
-        "省钱方法",
-        "存钱app",
-        "财务",
-        "节省",
-        "人生时间成本",
-        "价值透镜"
-      ],
-      "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780107485",
@@ -544,7 +562,7 @@
         "集中注意力"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6773017109",
@@ -586,7 +604,7 @@
         "识字前"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6775773117",
@@ -636,7 +654,7 @@
         "preschool"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778748533",
@@ -691,7 +709,7 @@
         "5岁"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778491147",
@@ -746,7 +764,7 @@
         "5岁"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778269699",
@@ -827,7 +845,7 @@
         "课程"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6776958488",
@@ -888,7 +906,7 @@
         "图形"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779750237",
@@ -947,7 +965,7 @@
         "놀이"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -1005,7 +1023,7 @@
         "놀이"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6787193643",
@@ -1085,7 +1103,7 @@
         "服装"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792850916",
@@ -1316,7 +1334,7 @@
         "film"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -1361,7 +1379,48 @@
         "清理大师"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802505528",
+      "url": "https://alice51849.github.io/ios-app-guide/zh-Hans/savetag.html",
+      "external_url": "https://apps.apple.com/cn/app/id6802505528?pt=118326163&ct=iag_feed_zh_hans&mt=8",
+      "title": "SaveTag:AI 链接收藏",
+      "content_text": "你每天都在给自己发链接。朋友分享的菜谱、看中的外套、说好要看的视频、想再读一遍的帖子。它们散落在聊天记录、备忘录和截图里,然后就再也找不到了。",
+      "tags": [
+        "书签",
+        "收藏夹",
+        "待读",
+        "网址",
+        "离线",
+        "归档",
+        "剪贴板",
+        "心愿单",
+        "菜谱",
+        "旅行",
+        "追剧",
+        "私密",
+        "免注册",
+        "买断",
+        "灵感",
+        "穿搭",
+        "育儿",
+        "宠物",
+        "游戏",
+        "设计",
+        "学习",
+        "笔记",
+        "一键",
+        "无广告",
+        "导出",
+        "小组件",
+        "快捷指令",
+        "美食",
+        "购物",
+        "网页"
+      ],
+      "language": "zh-Hans",
+      "date_modified": "2026-08-27T11:21:51Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",
@@ -1398,7 +1457,7 @@
         "白描"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6788236641",
@@ -1434,6 +1493,47 @@
       ],
       "language": "zh-Hans",
       "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802166527",
+      "url": "https://alice51849.github.io/ios-app-guide/zh-Hans/shotinbox.html",
+      "external_url": "https://apps.apple.com/cn/app/id6802166527?pt=118326163&ct=iag_feed_zh_hans&mt=8",
+      "title": "ShotInbox AI: Sort Screenshots",
+      "content_text": "截图，井然有序 让每张截图都能找到、处理、清理。",
+      "tags": [
+        "相册",
+        "整理",
+        "照片",
+        "清理",
+        "重复",
+        "相似",
+        "图片",
+        "去重",
+        "管理",
+        "归档",
+        "删除",
+        "批量",
+        "筛选",
+        "文字识别",
+        "提取",
+        "查找",
+        "瘦身",
+        "隐私保护",
+        "离线处理",
+        "永久买断",
+        "二维码",
+        "收据",
+        "票券",
+        "购物",
+        "聊天",
+        "食谱",
+        "灵感",
+        "地图",
+        "收藏",
+        "空间释放"
+      ],
+      "language": "zh-Hans",
+      "date_modified": "2026-08-26T04:57:37Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780575828",
@@ -1482,7 +1582,7 @@
         "美签"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792856304",
@@ -1559,7 +1659,7 @@
         "便签"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6791299610",
@@ -1670,7 +1770,7 @@
         "超分辨率"
       ],
       "language": "zh-Hans",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",

@@ -74,13 +74,13 @@
       "const": "official_locale_order_then_alphabetical_app_name"
     },
     "app_count": {
-      "const": 43
+      "const": 46
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 2150
+      "const": 2300
     },
     "locales": {
       "type": "array",
@@ -144,8 +144,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 2150,
-      "maxItems": 2150,
+      "minItems": 2300,
+      "maxItems": 2300,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -234,6 +234,7 @@
               "aibriefpack",
               "aim990",
               "aim990plus",
+              "battai",
               "caldaily",
               "cvdesk",
               "cyca",
@@ -261,8 +262,10 @@
               "onepageppt",
               "photocream",
               "picclear",
+              "savetag",
               "scanto",
               "sereno",
+              "shotinbox",
               "snapport",
               "snapportlite",
               "sononote",

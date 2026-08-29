@@ -147,7 +147,7 @@ APPS = {
                   "travel money", "trip budget", "travel hack"],
     ),
     "hourstag": dict(
-        name="HoursTag", search="HoursTag", category="finance",
+        name="HoursTag: Hours to Buy", search="HoursTag", category="finance",
         icon="~/13_HoursTag/ios/HoursTag/Images.xcassets/AppIcon.appiconset/App-Icon-1024x1024@1x.png",
         shots_dir="~/00_GrowthEngine/social/assets/hourstag", locale="",
         shots=["01", "02", "03"],

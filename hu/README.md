@@ -4,7 +4,7 @@
 
 Egy első kézből származó katalógus arról, hogy az egyes alkalmazások kinek készültek, milyen feladatot próbálnak megoldani, és a közvetlen App Store útvonal.
 
-Kiadók által megadott keresési szándékok 43 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
+Kiadók által megadott keresési szándékok 46 ellenőrzött, élő iOS alkalmazás és 50 Apple-lokáció között.
 
 **Lokáció:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · **hu** · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -14,11 +14,11 @@ Kiadók által megadott keresési szándékok 43 ellenőrzött, élő iOS alkalm
 >
 > A lekérdezések szerkesztői leírások a tervezett használati esetekről, nem mérhető keresési mennyiségi adatok, rangsorok, független értékelések vagy felhasználói ajánlások.
 
-## Lumi Studio Kiadói Keresési Szándék Katalógus · MCP v1.2.0 · Agent Skill
+## Lumi Studio Kiadói Keresési Szándék Katalógus · MCP v1.3.0 · Agent Skill
 
 Egy első kézből származó katalógus arról, hogy az egyes alkalmazások kinek készültek, milyen feladatot próbálnak megoldani, és a közvetlen App Store útvonal.
 
-[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.2.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjIuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.2.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
+[VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D) · [Cursor](https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D) · [Claude Desktop (MCPB)](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb) · [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0) · [MCP client config](https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json) · [SHA256SUMS](https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS) · [Agent Skill](https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder) · [GitHub](https://github.com/alice51849/lumi-mcp)
 
 <details>
 <summary>Agent Skill · GitHub Copilot · Claude Code · Cursor · Codex · Gemini CLI · Vercel skills.sh</summary>
@@ -26,55 +26,55 @@ Egy első kézből származó katalógus arról, hogy az egyes alkalmazások kin
 **Agent Skill · GitHub Copilot**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
 ```
 
 **Agent Skill · Claude Code**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent claude-code
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
 ```
 
 **Agent Skill · Cursor**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent cursor
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
 ```
 
 **Agent Skill · Codex**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent codex
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
 ```
 
 **Agent Skill · Gemini CLI**
 
 ```sh
-gh skill install alice51849/lumi-mcp lumi-app-finder@v1.2.0 --scope user --agent gemini-cli
+gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
 ```
 
 **Agent Skill · Vercel skills.sh**
 
 ```sh
-npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.2.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
 ```
 
 **Claude Code**
 
 ```sh
-claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Codex**
 
 ```sh
-codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 **Gemini CLI**
 
 ```sh
-gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.2.0/lumi-app-finder-npx.tgz
+gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 ```
 
 </details>
@@ -93,6 +93,7 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 | **AI Brief** | AI Brief — Fájlokból tiszta kontextus \| iOS App | Jobb kontextus. Jobb válaszok. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/aibriefpack.html) | [Töltse le a(z) AI Brief appot az App Store-ból](https://apps.apple.com/hu/app/id6791658210?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **Aim990** | legjobb TOEIC felkészítő alkalmazás offline tanulási terv iPhone-ra | Az 5. rész rövidnek tűnik, de az hiányos mondatos kérdések időt rabolhatnak, ha a nyelvtan és a szókincs nem automatikus. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html) | [Szerezd be az Aim990-et az App Store-ból →](https://apps.apple.com/hu/app/id6784974530?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **Aim990 Plus** | Aim990 Plus — Magabiztosság időnyomásban \| iOS App | Az angoltudás mellett arra is szükség van, hogy az idő szorításában is pontosan dönts. Az Aim990 Plus felnőtteknek készült, intenzív hallásértési és | Fizetős letöltés | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/aim990plus.html) | [Töltse le a(z) Aim990 Plus appot az App Store-ból](https://apps.apple.com/hu/app/id6792483140?pt=118326163&ct=iag_gh_hu&mt=8) |
+| **BattAI: Akkuállapot** | BattAI: Akkuállapot — Egyértelmű szabályok, források és korlátok \| iOS App | BattAI A BattAI öt értéket használ a nyilvános iOS API-kból: töltöttségi szintet, töltési állapotot, Alacsony töltöttségű módot, az egész készülék hőállapotát és az időt. A többi eredmény ezekből készül vagy tőled származik. Minden adatnál látható a forrás és a korlátok. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/battai.html) | [Töltse le a(z) BattAI: Akkuállapot appot az App Store-ból](https://apps.apple.com/hu/app/id6802423998?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **CalDaily: számológép, témák** | CalDaily: számológép, témák — Widget, eszközök, előzmények \| iOS App | Egy számológép, amit tényleg tovább használsz, mert megjegyzi, mi állt az egyes számok mögött. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/caldaily.html) | [Töltse le a(z) CalDaily: számológép, témák appot az App Store-ból](https://apps.apple.com/hu/app/id6794178671?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **CV Desk** | legjobb önéletrajz készítő alkalmazás karrierváltóknak 2026 | Amikor területet váltasz, az önéletrajz problémája más: a tapasztalat valós, de papíron 'nem kapcsolódó', és az ATS szűrők elutasítanak, mielőtt egy ember elolvasná — a CV Desk erre készült. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-resume-builder-app-for-career-changers-2026.html) | [Szerezd be a CV Desk-et az App Store-ból →](https://apps.apple.com/hu/app/id6781337213?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **Cyca** | legjobb menstruációs naptár alkalmazás fiók nélkül iPhone-ra | Egy olyan kategóriában, ahol az adatérzékenység a lényeg, a megfelelő menstruációs naptár mindent — vérzés, hangulat, tünetek, hőmérséklet, intimitás — az eszközödön tart, fiók és felhőszinkron nélkül — a Cyca erre készült. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-period-tracker-app-no-account-required-iphone.html) | [Szerezd be a Cycát az App Store-ból →](https://apps.apple.com/hu/app/id6782251621?pt=118326163&ct=iag_gh_hu&mt=8) |
@@ -120,8 +121,10 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 | **OnePage PPT: MI-dia** | OnePage PPT: MI-dia — Jegyzetből kész prezentáció \| iOS App | Egy falnyi szövegből EGY dia, amit tényleg elolvasnak. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/onepageppt.html) | [Töltse le a(z) OnePage PPT: MI-dia appot az App Store-ból](https://apps.apple.com/hu/app/id6798814385?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **PhotoCream** | legjobb egyszeri fizetős filmes fotószerkesztő utazó alkotóknak iPhone-ra | Az utazó alkotóknak ismételhető filmes hatásra van szükségük, ami szemcsézettséget, halációt és színkaraktert ad hozzá anélkül, hogy minden úti célt ugyanazzá a lapos szűrővé redukálna — PhotoCream erre készült. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html) | [Szerezd be a PhotoCream-et az App Store-ban →](https://apps.apple.com/hu/app/id6781808054?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **PicClear** | legjobb alkalmazás iPhone tárhely felszabadítására duplikált fotók törlésével | A gyors helyfelszabadításhoz célozza meg először a legnagyobb nyereséget: pontosan duplikált képek, majdnem azonos sorozatkép, homályos képek és nagy videók — a PicClear segít ezt iPhone-on megtenni. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html) | [Szerezze be a PicClear-t az App Store-ból →](https://apps.apple.com/hu/app/id6780223070?pt=118326163&ct=iag_gh_hu&mt=8) |
+| **SaveTag: AI könyvjelzők** | SaveTag: AI könyvjelzők — Mentsd a linket, olvasd később \| iOS App | Mentsd el most. És most tényleg olvasd is el. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/savetag.html) | [Töltse le a(z) SaveTag: AI könyvjelzők appot az App Store-ból](https://apps.apple.com/hu/app/id6802505528?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **ScanTo Pro** | legjobb offline dokumentumszkenner alkalmazás felhő nélkül ápolóknak | Ha beteg beleegyező nyomtatványokat, elbocsátási papírokat vagy beutalókat szkennel, a szkennernek az eszközön kell tartania azokat — soha nem feltöltve más felhőbe — a ScanTo Pro erre készült. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html) | [Szerezze be a ScanTo Pro-t az App Store-ból →](https://apps.apple.com/hu/app/id6779977651?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **Sereno** | legjobb fehér zaj alkalmazás elalváshoz előfizetés nélkül | Alváshoz egy havi zaklató előfizetés pont az ellenkezője a nyugalomnak — a Sereno erre készült. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-white-noise-app-for-falling-asleep-no-subscription.html) | [Szerezd be a Sereno-t az App Store-ból →](https://apps.apple.com/hu/app/id6788236641?pt=118326163&ct=iag_gh_hu&mt=8) |
+| **ShotInbox AI: Sort Screenshots** | ShotInbox AI: Sort Screenshots — Képernyőképek rendszerezése \| iOS App | Képernyőképek rendben | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/shotinbox.html) | [Töltse le a(z) ShotInbox AI: Sort Screenshots appot az App Store-ból](https://apps.apple.com/hu/app/id6802166527?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **Snapport** | legjobb útlevélfotó alkalmazás babáknak és kisgyermekeknek otthon | Baba útlevélfotónál senki más nem lehet a képen, és az háttérnek egyszínűnek kell lennie — de csecsemőknél a szemek nem kell, hogy teljesen nyitva legyenek. | Fizetős letöltés | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html) | [Szerezd be a Snapportot az App Store-ból →](https://apps.apple.com/hu/app/id6780575828?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **Snapport Lite** | Snapport Lite — Útlevél vízum igazolvány \| iOS App | Snapport Lite - Készíts útlevél, vízum és dokumentum fényképeket irányított méretezéssel, háttér eszközökkel és nyomtatásra kész exportálással. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/snapportlite.html) | [Töltse le a(z) Snapport Lite appot az App Store-ból](https://apps.apple.com/hu/app/id6792856304?pt=118326163&ct=iag_gh_hu&mt=8) |
 | **Sono Note** | legjobb hangjegyzet alkalmazás, amely összefoglalja a megbeszéléseket iPhone-on | Egy hívás után nem egy nyers átiratot akarsz — az összefoglalót, a teendőket és egy követő tervezetet — a Sono Note erre készült. | Ingyenes kezdés · feloldás egyszeri vásárlással | [Útmutató](https://alice51849.github.io/ios-app-guide/hu/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html) | [Szerezd be a Sono Note-ot az App Store-ból →](https://apps.apple.com/hu/app/id6782139553?pt=118326163&ct=iag_gh_hu&mt=8) |
@@ -135,7 +138,7 @@ Alkalmazásnév szerinti ábécé sorrend — soha nem rangsor.
 
 ## A teljes adatállomány letöltése
 
-A JSON, JSONL és CSV ugyanazt az 2 150 rekordot tartalmazza.
+A JSON, JSONL és CSV ugyanazt az 2 300 rekordot tartalmazza.
 
 [JSON](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -143,6 +146,6 @@ A JSON, JSONL és CSV ugyanazt az 2 150 rekordot tartalmazza.
 
 [Kezdőlap](https://alice51849.github.io/ios-app-guide/hu/index.html) · [Nyílt adatok](https://alice51849.github.io/ios-app-guide/hu/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenc](https://creativecommons.org/licenses/by/4.0/)
 
-Frissítve: 2026-08-21
+Frissítve: 2026-08-29
 
 A CC BY 4.0 az eredeti katalógus összeállítására vonatkozik; az alkalmazásnevek és az App Store védjegyek a tulajdonosaiké.

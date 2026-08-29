@@ -1,12 +1,12 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-22",
-  "content_digest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
+  "date_modified": "2026-08-29",
+  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 43,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -196,6 +196,42 @@
         "currency": "KRW",
         "formatted_price": "￦9,900",
         "storefront_url": "https://apps.apple.com/kr/app/id6792483140"
+      }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: 배터리 상태 점수",
+      "summary": "BattAI BattAI가 공개 iOS API에서 쓰는 값은 배터리 잔량, 충전 상태, 저전력 모드, 기기 전체 열 상태, 시간까지 다섯 가지예요. 다른 결과는 기록에서 계산하거나 직접 추가해요. 각 항목에 출처와 한계를 표시해요.",
+      "category": "utility",
+      "search_terms": [
+        "배터리 상태 점수",
+        "성능 최대치",
+        "사이클 수",
+        "충전 관리",
+        "충전 구간",
+        "충전 속도",
+        "데이터 내보내기"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=iag_api_ko&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ko/battai.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료",
+        "storefront_url": "https://apps.apple.com/kr/app/id6802423998"
       }
     },
     {
@@ -606,6 +642,59 @@
       }
     },
     {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite",
+      "summary": "HoursTag Lite - 모든 것의 진짜 가격을 보세요",
+      "category": "finance",
+      "search_terms": [
+        "절약",
+        "가계부",
+        "예산",
+        "저축",
+        "소비",
+        "돈관리",
+        "절약앱",
+        "지출관리",
+        "충동구매",
+        "저축앱",
+        "시급",
+        "근로시간",
+        "소비습관",
+        "재테크",
+        "가계",
+        "돈모으기",
+        "합리적소비",
+        "생활비",
+        "지출",
+        "절약습관",
+        "자산관리",
+        "돈",
+        "삶의 시간 비용",
+        "필요"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=iag_api_ko&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ko/hourstaglite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료",
+        "storefront_url": "https://apps.apple.com/kr/app/id6794039979"
+      }
+    },
+    {
       "key": "hourstag",
       "app_store_id": "6754218117",
       "name": "HoursTag: 가격을 시간으로",
@@ -666,59 +755,6 @@
         "currency": "KRW",
         "formatted_price": "￦7,700",
         "storefront_url": "https://apps.apple.com/kr/app/id6754218117"
-      }
-    },
-    {
-      "key": "hourstaglite",
-      "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
-      "summary": "HoursTag Lite - 모든 것의 진짜 가격을 보세요",
-      "category": "finance",
-      "search_terms": [
-        "절약",
-        "가계부",
-        "예산",
-        "저축",
-        "소비",
-        "돈관리",
-        "절약앱",
-        "지출관리",
-        "충동구매",
-        "저축앱",
-        "시급",
-        "근로시간",
-        "소비습관",
-        "재테크",
-        "가계",
-        "돈모으기",
-        "합리적소비",
-        "생활비",
-        "지출",
-        "절약습관",
-        "자산관리",
-        "돈",
-        "삶의 시간 비용",
-        "필요"
-      ],
-      "purchase_model": "free_with_lifetime_unlock",
-      "one_time_option": true,
-      "capabilities": {
-        "offline": false,
-        "no_account": true,
-        "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": true,
-        "apple_watch": true
-      },
-      "app_store_url": "https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=iag_api_ko&mt=8",
-      "guide_url": "https://alice51849.github.io/ios-app-guide/ko/hourstaglite.html",
-      "verified_live": true,
-      "storefront_facts": {
-        "price": "0",
-        "currency": "KRW",
-        "formatted_price": "무료",
-        "storefront_url": "https://apps.apple.com/kr/app/id6794039979"
       }
     },
     {
@@ -1860,6 +1896,59 @@
       }
     },
     {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: AI 링크 보관함",
+      "summary": "일단 저장하고, 이번엔 진짜 다 읽습니다.",
+      "category": "productivity",
+      "search_terms": [
+        "북마크",
+        "즐겨찾기",
+        "스크랩",
+        "모아보기",
+        "url",
+        "읽을거리",
+        "오프라인",
+        "위시리스트",
+        "레시피",
+        "여행",
+        "메모",
+        "비공개",
+        "평생소장",
+        "광고없음",
+        "쇼핑",
+        "육아",
+        "반려동물",
+        "인테리어",
+        "영감",
+        "위젯",
+        "단축어",
+        "맛집",
+        "영화",
+        "독서"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=iag_api_ko&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ko/savetag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료",
+        "storefront_url": "https://apps.apple.com/kr/app/id6802505528"
+      }
+    },
+    {
       "key": "scanto",
       "app_store_id": "6779977651",
       "name": "ScanTo Pro: 오프라인 PDF",
@@ -1957,6 +2046,60 @@
         "currency": "KRW",
         "formatted_price": "무료",
         "storefront_url": "https://apps.apple.com/kr/app/id6788236641"
+      }
+    },
+    {
+      "key": "shotinbox",
+      "app_store_id": "6802166527",
+      "name": "ShotInbox AI: Sort Screenshots",
+      "summary": "스크린샷을 깔끔하게 모든 스크린샷을 찾고, 처리하고, 정리하세요.",
+      "category": "photo-utility",
+      "search_terms": [
+        "캡처",
+        "사진",
+        "정리",
+        "앨범",
+        "관리",
+        "중복",
+        "유사",
+        "이미지",
+        "삭제",
+        "갤러리",
+        "청소기",
+        "문자인식",
+        "텍스트추출",
+        "일괄선택",
+        "용량확보",
+        "기기내처리",
+        "개인정보보호",
+        "평생소장",
+        "영수증",
+        "티켓",
+        "지도",
+        "채팅",
+        "레시피",
+        "QR",
+        "보관"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=iag_api_ko&mt=8",
+      "guide_url": "https://alice51849.github.io/ios-app-guide/ko/shotinbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료",
+        "storefront_url": "https://apps.apple.com/kr/app/id6802166527"
       }
     },
     {

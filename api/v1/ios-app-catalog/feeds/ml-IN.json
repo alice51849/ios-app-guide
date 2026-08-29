@@ -12,11 +12,11 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-08-22",
-    "contentDigest": "093d3f0ec4ce10bc5d7991122ac51ecd06ce031c5f7a59de98761ba4296e5f69",
+    "dateModified": "2026-08-29",
+    "contentDigest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
-    "recordCount": 43
+    "recordCount": 46
   },
   "items": [
     {
@@ -107,6 +107,24 @@
       "date_modified": "2026-08-19T02:01:38Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6802423998",
+      "url": "https://alice51849.github.io/ios-app-guide/ml-IN/battai.html",
+      "external_url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_feed_ml_in&mt=8",
+      "title": "BattAI: ബാറ്ററി ആരോഗ്യ സ്കോർ",
+      "content_text": "BattAI BattAI പൊതു iOS API-കളിൽ നിന്ന് 5 മൂല്യങ്ങൾ ഉപയോഗിക്കുന്നു: ബാറ്ററി നില, ചാർജ് നില, Low Power Mode, മുഴുവൻ ഉപകരണത്തിന്റെ താപാവസ്ഥ, സമയം. മറ്റു ഫലങ്ങൾ ഈ അളവുകളിൽ നിന്ന് കണക്കാക്കുകയോ നിങ്ങൾ ചേർക്കുകയോ ചെയ്യുന്നു. ഓരോ വിവരവും ഉറവിടവും പരിധിയും കാണിക്കുന്നു.",
+      "tags": [
+        "ബാറ്ററി ആരോഗ്യ സ്കോർ",
+        "പരമാവധി ശേഷി",
+        "ചാർജ് ചക്രങ്ങൾ",
+        "ചാർജ് പരിചരണം",
+        "ചാർജ് ശ്രേണി",
+        "ചാർജ് നിരക്ക്",
+        "വിവര കയറ്റുമതി"
+      ],
+      "language": "ml-IN",
+      "date_modified": "2026-08-29T04:55:13Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6794178671",
       "url": "https://alice51849.github.io/ios-app-guide/ml-IN/caldaily.html",
       "external_url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_feed_ml_in&mt=8",
@@ -165,7 +183,7 @@
         "എടിറ്റബിൾ"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6782251621",
@@ -205,7 +223,7 @@
         "ആരോഗ്യം"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790418321",
@@ -286,7 +304,7 @@
         "പണം നിയന്ത്രണം"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793436548",
@@ -304,6 +322,27 @@
         "കറൻസി കൺവെർട്ടർ",
         "ബജറ്റ് പ്ലാനർ",
         "വിനിമയ നിരക്ക്"
+      ],
+      "language": "ml-IN",
+      "date_modified": "2026-08-19T02:01:38Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6794039979",
+      "url": "https://alice51849.github.io/ios-app-guide/ml-IN/hourstaglite.html",
+      "external_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_feed_ml_in&mt=8",
+      "title": "HoursTag Lite",
+      "content_text": "HoursTag Lite - വസ്തുക്കളുടെ യഥാർത്ഥ വില കാണുക",
+      "tags": [
+        "budget",
+        "savings",
+        "സമ്പാദ്യം",
+        "ചെലവ്",
+        "save money",
+        "impulse buying",
+        "പണം ലാഭിക്കൂ",
+        "ബജറ്റ്",
+        "expense tracker",
+        "finance"
       ],
       "language": "ml-IN",
       "date_modified": "2026-08-19T02:01:38Z"
@@ -350,28 +389,7 @@
         "മലയാളം"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
-    },
-    {
-      "id": "https://apps.apple.com/app/id6794039979",
-      "url": "https://alice51849.github.io/ios-app-guide/ml-IN/hourstaglite.html",
-      "external_url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_feed_ml_in&mt=8",
-      "title": "HoursTag Lite",
-      "content_text": "HoursTag Lite - വസ്തുക്കളുടെ യഥാർത്ഥ വില കാണുക",
-      "tags": [
-        "budget",
-        "savings",
-        "സമ്പാദ്യം",
-        "ചെലവ്",
-        "save money",
-        "impulse buying",
-        "പണം ലാഭിക്കൂ",
-        "ബജറ്റ്",
-        "expense tracker",
-        "finance"
-      ],
-      "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780107485",
@@ -408,7 +426,7 @@
         "സമയസംരക്ഷണം"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6773017109",
@@ -447,7 +465,7 @@
         "വിജയം"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6775773117",
@@ -487,7 +505,7 @@
         "അക്ഷരമാല"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778748533",
@@ -524,7 +542,7 @@
         "ലക്ഷ്യം"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778491147",
@@ -561,7 +579,7 @@
         "വായനാപ്രവർത്തനം"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778269699",
@@ -633,7 +651,7 @@
         "confidence"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6776958488",
@@ -675,7 +693,7 @@
         "മത്സരം"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779750237",
@@ -718,7 +736,7 @@
         "കുടുംബം"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -756,7 +774,7 @@
         "ക്ലീനിംഗ്"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6787193643",
@@ -815,7 +833,7 @@
         "സൂര്യൻ"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792850916",
@@ -964,7 +982,7 @@
         "ബ്ലൂം"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6780223070",
@@ -1005,7 +1023,30 @@
         "സ്കാൻ"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
+    },
+    {
+      "id": "https://apps.apple.com/app/id6802505528",
+      "url": "https://alice51849.github.io/ios-app-guide/ml-IN/savetag.html",
+      "external_url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_feed_ml_in&mt=8",
+      "title": "SaveTag: AI ബുക്ക്മാർക്ക്",
+      "content_text": "ഇപ്പോൾ സേവ് ചെയ്യൂ. ഇത്തവണ ശരിക്കും വായിക്കൂ.",
+      "tags": [
+        "പിന്നീട് വായിക്കാൻ",
+        "പ്രിയപ്പെട്ടവ",
+        "ശേഖരം",
+        "url",
+        "ഫോൾഡർ",
+        "ടാഗ്",
+        "ഓഫ്‌ലൈൻ",
+        "പാചകം",
+        "യാത്ര",
+        "ഷോപ്പിംഗ്",
+        "കുറിപ്പ്",
+        "വാർത്ത"
+      ],
+      "language": "ml-IN",
+      "date_modified": "2026-08-27T11:21:51Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779977651",
@@ -1050,6 +1091,26 @@
       "date_modified": "2026-08-19T02:01:38Z"
     },
     {
+      "id": "https://apps.apple.com/app/id6802166527",
+      "url": "https://alice51849.github.io/ios-app-guide/ml-IN/shotinbox.html",
+      "external_url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_feed_ml_in&mt=8",
+      "title": "ShotInbox AI: Sort Screenshots",
+      "content_text": "നിങ്ങളുടെ സ്ക്രീൻഷോട്ടുകൾ, ക്രമത്തിൽ ഓരോ സ്ക്രീൻഷോട്ടും കണ്ടെത്തി, ഉപയോഗിച്ച്, വൃത്തിയാക്കുക.",
+      "tags": [
+        "സ്ക്രീൻഷോട്ട്",
+        "ക്രമീകരണം",
+        "ഫോട്ടോ ക്ലീനർ",
+        "ഡ്യൂപ്ലിക്കേറ്റ്",
+        "സമാന",
+        "ടെക്സ്റ്റ് തിരയൽ",
+        "തീയതി",
+        "സ്വകാര്യ",
+        "ഗാലറി"
+      ],
+      "language": "ml-IN",
+      "date_modified": "2026-08-26T04:57:37Z"
+    },
+    {
       "id": "https://apps.apple.com/app/id6780575828",
       "url": "https://alice51849.github.io/ios-app-guide/ml-IN/snapport.html",
       "external_url": "https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=iag_feed_ml_in&mt=8",
@@ -1090,7 +1151,7 @@
         "മാറ്റം"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792856304",
@@ -1151,7 +1212,7 @@
         "വിവരങ്ങൾ"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6791299610",
@@ -1233,7 +1294,7 @@
         "വിവരങ്ങള്"
       ],
       "language": "ml-IN",
-      "date_modified": "2026-08-19T02:01:38Z"
+      "date_modified": "2026-08-24T08:39:44Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790467886",

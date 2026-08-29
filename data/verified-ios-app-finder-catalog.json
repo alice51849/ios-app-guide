@@ -16,7 +16,7 @@
     ],
     "retirement_rule": "Retire after three consecutive verified misses"
   },
-  "record_count": 43,
+  "record_count": 46,
   "apps": [
     {
       "key": "notesstudio100",
@@ -191,6 +191,50 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6792483140",
+      "verified_live": true
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI",
+      "category": "utility",
+      "category_labels": {
+        "en": "More",
+        "zh-Hant": "更多"
+      },
+      "summaries": {
+        "en": "BattAI",
+        "zh-Hant": "BattAI"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Free to start",
+        "One-time unlock",
+        "No subscription"
+      ],
+      "keywords": [
+        "battery health app",
+        "battery health report",
+        "time to 80",
+        "replace iphone battery",
+        "battery replacement",
+        "sell iphone battery"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802423998",
       "verified_live": true
     },
     {
@@ -510,50 +554,6 @@
       "verified_live": true
     },
     {
-      "key": "hourstag",
-      "app_store_id": "6754218117",
-      "name": "HoursTag",
-      "category": "finance",
-      "category_labels": {
-        "en": "Money & travel",
-        "zh-Hant": "理財與旅行"
-      },
-      "summaries": {
-        "en": "What does it really cost? Not in dollars — in hours of your life.",
-        "zh-Hant": "這真正要花你多少？不是多少錢——是你生命中的幾個小時。"
-      },
-      "purchase_model": "paid_upfront",
-      "purchase_labels": {
-        "en": "Paid download",
-        "zh-Hant": "付費下載"
-      },
-      "one_time_option": true,
-      "features": [
-        "Pay once",
-        "Private",
-        "No tracking"
-      ],
-      "keywords": [
-        "money mindset",
-        "budgeting",
-        "spending tracker",
-        "financial freedom",
-        "money tips",
-        "personal finance"
-      ],
-      "capabilities": {
-        "offline": false,
-        "no_account": false,
-        "no_ads": false,
-        "no_tracking": true,
-        "private_or_on_device": true,
-        "widget": false,
-        "apple_watch": false
-      },
-      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
-      "verified_live": true
-    },
-    {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
       "name": "HoursTag Lite",
@@ -600,6 +600,50 @@
         "apple_watch": true
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6794039979",
+      "verified_live": true
+    },
+    {
+      "key": "hourstag",
+      "app_store_id": "6754218117",
+      "name": "HoursTag: Hours to Buy",
+      "category": "finance",
+      "category_labels": {
+        "en": "Money & travel",
+        "zh-Hant": "理財與旅行"
+      },
+      "summaries": {
+        "en": "What does it really cost? Not in dollars — in hours of your life.",
+        "zh-Hant": "這真正要花你多少？不是多少錢——是你生命中的幾個小時。"
+      },
+      "purchase_model": "paid_upfront",
+      "purchase_labels": {
+        "en": "Paid download",
+        "zh-Hant": "付費下載"
+      },
+      "one_time_option": true,
+      "features": [
+        "Pay once",
+        "Private",
+        "No tracking"
+      ],
+      "keywords": [
+        "money mindset",
+        "budgeting",
+        "spending tracker",
+        "financial freedom",
+        "money tips",
+        "personal finance"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6754218117",
       "verified_live": true
     },
     {
@@ -1414,6 +1458,50 @@
       "verified_live": true
     },
     {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag",
+      "category": "productivity",
+      "category_labels": {
+        "en": "Productivity",
+        "zh-Hant": "效率工具"
+      },
+      "summaries": {
+        "en": "Save it now. Actually read it later.",
+        "zh-Hant": "先存下來,而且真的會看完。"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Free to start",
+        "One-time unlock",
+        "No subscription"
+      ],
+      "keywords": [
+        "save links",
+        "bookmark manager",
+        "read later",
+        "link organizer",
+        "saved links",
+        "save articles to read later"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802505528",
+      "verified_live": true
+    },
+    {
       "key": "scanto",
       "app_store_id": "6779977651",
       "name": "ScanTo Pro",
@@ -1504,6 +1592,50 @@
         "apple_watch": false
       },
       "canonical_app_store_url": "https://apps.apple.com/app/id6788236641",
+      "verified_live": true
+    },
+    {
+      "key": "shotinbox",
+      "app_store_id": "6802166527",
+      "name": "ShotInbox AI",
+      "category": "photo-utility",
+      "category_labels": {
+        "en": "Photo & utility",
+        "zh-Hant": "照片與實用工具"
+      },
+      "summaries": {
+        "en": "Your Screenshots, Sorted",
+        "zh-Hant": "截圖，井然有序"
+      },
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_labels": {
+        "en": "Free to start · one-time unlock",
+        "zh-Hant": "免費開始 · 一次購買解鎖"
+      },
+      "one_time_option": true,
+      "features": [
+        "Free to start",
+        "One-time unlock",
+        "No subscription"
+      ],
+      "keywords": [
+        "sort screenshots",
+        "organize screenshots",
+        "screenshot organizer",
+        "clean up screenshots",
+        "too many screenshots",
+        "find text in screenshots"
+      ],
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "canonical_app_store_url": "https://apps.apple.com/app/id6802166527",
       "verified_live": true
     },
     {

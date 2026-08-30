@@ -2,7 +2,7 @@
 title: "best app to block social media while studying iphone"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/en-GB/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

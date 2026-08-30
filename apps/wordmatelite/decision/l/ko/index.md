@@ -2,7 +2,7 @@
 title: "Wordmate Lite 하루 5단어 — 44개 언어, 1분이면 끝나는 어휘 | iOS App"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ko/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

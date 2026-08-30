@@ -2,7 +2,7 @@
 title: "лучшее приложение для исправления размытых фото детей на iPhone"
 lang: "ru"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/unblurry/decision/l/ru/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6782275018"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

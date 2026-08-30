@@ -2,7 +2,7 @@
 title: "WiFi Aid — Diagnoză de rețea cu dovezi | iOS App"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/ro/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

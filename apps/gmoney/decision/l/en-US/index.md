@@ -2,7 +2,7 @@
 title: "best travel budget tracker app no subscription iphone"
 lang: "en-US"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/en-US/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -1,25 +1,25 @@
 ---
-title: "AI Brief — Files to Clear Context | iOS App"
+title: "best private app to organize screenshots and documents into context before using AI"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/en-GB/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# AI Brief — Files to Clear Context | iOS App
+# best private app to organize screenshots and documents into context before using AI
 
-Better context. Better answers. Transform screenshots, files, notes and documents into a single clear AI brief. BRING THE COMPLETE CONTEXT • Add screenshots, PDFs, files, copied text, notes, or links. You choose what stays in the final brief. • OCR, PDF reading, duplicate checks, fact extraction and privacy detection use Apple frameworks locally. • Choose one or more sources above. Processing begins only when you continue. VERIFY FACTS BEFORE AI SEES THEM • Every fact retains its source and confidence. Correct anything requiring context. • Find facts, conflicts, and open questions • Check every fact, source, and confidence before AI sees it. PROTECT PRIVACY • Detected details are never removed automatically. Keep, replace, or remove each item before export. • Adjust each detection: keep, replace, or remove. AI Brief never promises anonymity. • Replacements and removals apply at export. CLEAN CONTEXT FOR ANY AI ASSISTANT • Structured headings and source-ready formatting • Build context once. Reuse it anytime. • Copy AI Brief • Version History • Purpose-built templates YOUR CONTEXT STAYS PRIVATE • AI Brief does not include third-party ads, tracking, analytics, or content telemetry. • Review the brief before sending it to any AI service.
+A private AI-context workflow should let you assemble the complete source set, inspect what was extracted and decide what leaves the device instead of silently uploading files or removing detected details. AI Brief — Better context, better answers. Turn screenshots, files, notes and documents into one clear brief.
 
 - Productivity
 - Free to start · one-time unlock
 - Private / on-device
 - App Store · Free
 
-[Get AI Brief on the App Store](https://apps.apple.com/gb/app/id6791658210?pt=118326163&ct=iag_data_en_gb&mt=8)
+[Get AI Brief on the App Store →](https://apps.apple.com/gb/app/id6791658210?pt=118326163&ct=iag_data_en_gb&mt=8)
 
-[Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/aibriefpack.html)
+[Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html)
 
-> This is first-party material published by Lumi Studio, the developer of every listed app.
+> Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

@@ -2,7 +2,7 @@
 title: "millor app d'activitats de viatge per a infants en viatges familiars"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/ca/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

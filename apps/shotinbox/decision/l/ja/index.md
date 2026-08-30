@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — スクショ分類・OCR検索・タイムライン | iOS App"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/ja/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

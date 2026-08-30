@@ -2,7 +2,7 @@
 title: "SaveTag: marcadores con IA — Guarda enlaces y léelos luego | iOS App"
 lang: "es-ES"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/es-ES/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

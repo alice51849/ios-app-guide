@@ -2,7 +2,7 @@
 title: "iPhone ಗೆ ಉತ್ತಮ ಪ್ರವಾಸ ಯೋಜನಾ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/kn-IN/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"

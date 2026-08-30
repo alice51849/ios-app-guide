@@ -2,7 +2,7 @@
 title: "适合家庭学前启蒙的完整拼读应用推荐"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/zh-Hans/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

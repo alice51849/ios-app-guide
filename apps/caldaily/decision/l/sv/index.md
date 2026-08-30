@@ -2,7 +2,7 @@
 title: "CalDaily: kalkylator och teman — Widget, verktyg, historik | iOS App"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/sv/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

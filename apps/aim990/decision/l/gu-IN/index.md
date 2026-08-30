@@ -2,7 +2,7 @@
 title: "iPhone માટે શ્રેષ્ઠ TOEIC તૈયારી એપ ઓફલાઇન અભ્યાસ યોજના"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/gu-IN/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

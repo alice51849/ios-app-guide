@@ -2,7 +2,7 @@
 title: "SaveTag: AI 링크 보관함 — 나중에 읽기, 자동 태그 정리 | iOS App"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ko/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

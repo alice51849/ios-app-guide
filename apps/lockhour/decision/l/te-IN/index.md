@@ -2,7 +2,7 @@
 title: "అధ్యయనం సమయంలో సోషల్ మీడియాను బ్లాక్ చేయడానికి ఉత్తమ యాప్ iPhone కోసం"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/te-IN/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "millor app completa de rutina de matí i nit per a infants"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/ca/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"

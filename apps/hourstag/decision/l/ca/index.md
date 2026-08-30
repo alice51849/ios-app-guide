@@ -2,7 +2,7 @@
 title: "HoursTag: Hores per comprar — Estalvi, despeses, pressupost | iOS App"
 lang: "ca"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ca/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

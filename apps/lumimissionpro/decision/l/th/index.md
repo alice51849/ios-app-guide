@@ -2,7 +2,7 @@
 title: "แอปกิจวัตรเช้าและก่อนนอนครบวงจรสำหรับเด็กที่ดีที่สุด"
 lang: "th"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/th/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"

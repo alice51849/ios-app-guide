@@ -2,7 +2,7 @@
 title: "குழந்தைகளுக்கான சிறந்த கணித விளையாட்டு பயன்பாடு iPhone-க்கு, தர்க்க திறன்களை வளர்க்க"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/ta-IN/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

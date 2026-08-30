@@ -2,7 +2,7 @@
 title: "best simple trip planner app for one upcoming trip iphone"
 lang: "en-AU"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/en-AU/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6791299610"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

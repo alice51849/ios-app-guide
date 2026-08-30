@@ -2,7 +2,7 @@
 title: "শিশুদের সাথে বাইরে সময় পরিকল্পনার জন্য অভিভাবকদের সহায়ক সেরা আবহাওয়া অ্যাপ"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/bn-BD/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

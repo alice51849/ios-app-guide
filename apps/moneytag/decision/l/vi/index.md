@@ -2,7 +2,7 @@
 title: "MoneyTag: Thu và chi — Dự án · Thẻ · Báo cáo | iOS App"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/vi/index.html"
-modified: "2026-08-29"
+modified: "2026-08-30"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

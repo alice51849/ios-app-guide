@@ -26,6 +26,7 @@ from app_store_storefronts import (
     validated_app_store_url,
 )
 from official_locales import OFFICIAL_LOCALES
+import gen_feed
 import gen_sitemap_lastmod
 import publisher_intent_catalog as catalog
 import publisher_intent_visuals as visuals
@@ -53,6 +54,7 @@ class PublisherIntentVisualUnitTests(unittest.TestCase):
             rendered = path.read_text(encoding="utf-8")
             self.assertIn(publication, rendered)
             self.assertIn("<body>New</body>", rendered)
+            self.assertFalse(gen_feed.ensure_feed_discovery(path))
             identity = visuals._gallery_manifest_record("en", rendered)
             self.assertEqual(visuals.gallery_url("en"), identity["gallery_url"])
             self.assertEqual(

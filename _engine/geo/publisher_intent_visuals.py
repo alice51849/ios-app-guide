@@ -22,7 +22,7 @@ from app_store_storefronts import (
     normalize_app_store_campaign_url,
     validated_app_store_url,
 )
-from gen_feed import feed_discovery_links
+from gen_feed import feed_discovery_links, render_feed_discovery
 from official_locales import OFFICIAL_LOCALES
 import publisher_intent_catalog as catalog
 import sync_standard_site
@@ -75,12 +75,12 @@ def _final_gallery_content(path: Path, content: str) -> str:
     except FileNotFoundError:
         previous = ""
     if previous:
-        return sync_standard_site.preserve_managed_links(
+        content = sync_standard_site.preserve_managed_links(
             previous,
             content,
             label=str(path),
         )
-    return content
+    return render_feed_discovery(content)
 
 
 def write_gallery_if_changed(path: Path, content: str) -> bool:

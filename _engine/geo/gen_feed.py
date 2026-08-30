@@ -258,23 +258,27 @@ def _write_if_changed(path, content):
     return True
 
 
-def ensure_feed_discovery(path):
-    try:
-        with open(path, encoding="utf-8") as handle:
-            source = handle.read()
-    except OSError:
-        return False
+def render_feed_discovery(source):
     if "</head>" not in source:
-        return False
+        return source
     cleaned = FEED_LINK_RE.sub("", source)
     head_index = cleaned.index("</head>")
-    updated = (
+    return (
         cleaned[:head_index].rstrip()
         + "\n"
         + feed_discovery_links()
         + "\n"
         + cleaned[head_index:]
     )
+
+
+def ensure_feed_discovery(path):
+    try:
+        with open(path, encoding="utf-8") as handle:
+            source = handle.read()
+    except OSError:
+        return False
+    updated = render_feed_discovery(source)
     return _write_if_changed(path, updated)
 
 

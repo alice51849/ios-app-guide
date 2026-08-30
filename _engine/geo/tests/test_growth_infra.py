@@ -24032,7 +24032,9 @@ class GeneratorTests(unittest.TestCase):
             ),
         )
         self.assertEqual(4, workflow.count("gen_locale_indexation.py"))
-        self.assertEqual(2, workflow.count("close_sitemap_graph.py"))
+        # The main generate pass plus the three regeneration/retry blocks
+        # each close the sitemap graph after materializing inventory.
+        self.assertEqual(4, workflow.count("close_sitemap_graph.py"))
         self.assertEqual(
             4,
             workflow.count(

@@ -1482,6 +1482,37 @@ def require_no_cross_app_translation(
         )
 
 
+def drop_cross_app_cache_poison(mapping: dict[str, str], origin: str) -> int:
+    """Remove cached pairs whose translation names an app the source never named.
+
+    One misaligned translation batch is enough to poison a shared dictionary
+    forever (2026-08-30: ar-SA cached a CV Desk sentence under an unrelated
+    English source), and every later run then dies in
+    require_no_cross_app_translation before writing anything. Dropping the
+    pair is always safe: the slot simply counts as untranslated again and a
+    later pass re-translates it, while the page-level gate stays strict.
+    """
+    names = portfolio_app_names()
+    if not names or not mapping:
+        return 0
+    quick = re.compile("|".join(re.escape(name) for name in names))
+    poisoned = [
+        source
+        for source, target in mapping.items()
+        if quick.search(target) and cross_app_names_introduced(source, target)
+    ]
+    for source in poisoned:
+        del mapping[source]
+    if poisoned:
+        print(
+            f"[i18n] {origin}: dropped {len(poisoned)} poisoned cached "
+            "translation(s) naming an unrelated portfolio app",
+            file=sys.stderr,
+            flush=True,
+        )
+    return len(poisoned)
+
+
 def require_complete_mapping(
     strings: list[str], mapping: dict[str, str], slug: str, lang: str
 ) -> None:
@@ -1659,6 +1690,7 @@ class GithubModelsTranslator:
             for source, target in data.items()
         ):
             raise ValueError(f"Invalid GitHub Models cache: {path}")
+        drop_cross_app_cache_poison(data, path.name)
         return data
 
     def _save_locale_cache(
@@ -2773,6 +2805,7 @@ def run_refresh(
         global_maps[lang] = (
             json.loads(gp.read_text(encoding="utf-8")) if gp.exists() else {}
         )
+        drop_cross_app_cache_poison(global_maps[lang], gp.name)
 
     if slugs:
         candidates = [Path(x).stem for x in slugs]
@@ -2960,6 +2993,7 @@ def main() -> int:
                 if gp.exists()
                 else {}
             )
+            drop_cross_app_cache_poison(global_maps[lang], gp.name)
             missing_acc[lang] = {}
 
     if args.slugs:

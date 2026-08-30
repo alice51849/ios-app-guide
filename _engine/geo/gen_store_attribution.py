@@ -120,6 +120,17 @@ ASK = "ask"      # question / problem intent — the AEO surface
 PICK = "pick"    # browse & choose: hubs, roundups, comparisons, reviews
 LEARN = "learn"  # how-to, workflow, tools, media — instructional intent
 BUCKETS = (ASK, PICK, LEARN)
+HIGH_INTENT_BUCKETS = {
+    "problem_aware": ASK,
+    "alternative": PICK,
+    "workflow": LEARN,
+    "privacy_pay_once": PICK,
+}
+HIGH_INTENT_META_RE = re.compile(
+    r'<meta\s+name="growth-attribution-intent"\s+content="'
+    r'(?P<intent>[a-z_]+)">',
+    flags=re.IGNORECASE,
+)
 
 # Directory name -> bucket.  PICK is also the residual: hub and locale-home
 # pages, theme roundups (pay-once / gifting / no-account / switching …) and any
@@ -175,14 +186,32 @@ def _bucket_of(part: str) -> str | None:
     return SECTION_BUCKETS.get(part)
 
 
-def campaign_token(rel: str) -> str:
-    """Bucket a page path into one of four campaign tokens.
+def campaign_token_for_intent(intent: str) -> str:
+    """Map a reviewed high-intent route onto the shared three-token contract."""
+    try:
+        bucket = HIGH_INTENT_BUCKETS[intent]
+    except KeyError as error:
+        raise ValueError(f"Unsupported attribution intent: {intent}") from error
+    token = TOKEN_PREFIX + bucket
+    if len(token) > MAX_TOKEN:
+        raise ValueError(f"Campaign token exceeds {MAX_TOKEN} characters: {token}")
+    return token
+
+
+def campaign_token(rel: str, page_text: str | None = None) -> str:
+    """Bucket a page path into one of three campaign tokens.
 
     ``rel`` is the page path relative to pages/, e.g. ``ja/answers/foo.html``
     or ``answers/foo.html`` (the English tree has no locale prefix).  The
     locale segment is ignored on purpose — market comes back for free as the
-    Territory column of the download report.
+    Territory column of the download report. High-intent decision pages carry
+    an explicit reviewed intent marker so the final site-wide stamping pass
+    deterministically preserves the generator's intent mapping.
     """
+    if page_text is not None:
+        marker = HIGH_INTENT_META_RE.search(page_text)
+        if marker:
+            return campaign_token_for_intent(marker.group("intent"))
     parts = [part for part in rel.split("/") if part]
     directories = parts[:-1]
     bucket = PICK
@@ -354,7 +383,7 @@ def generate(pages: Path, check: bool) -> dict[str, object]:
             continue
         files_with_links += 1
         links_total += len(anchors)
-        token = campaign_token(rel)
+        token = campaign_token(rel, text)
         updated, changes = rewrite(text, token, provider)
         if changes and qr_card_desync(updated) and not qr_card_desync(text):
             href, stale, expected = qr_card_desync(updated)

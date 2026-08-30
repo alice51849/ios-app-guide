@@ -433,6 +433,12 @@ APPSTORE = {
     "tripplanet": "6787193643",
 }
 
+LONGFORM_CAMPAIGN_TOKEN = "yt_longform"
+
+
+class AttributionError(ValueError):
+    """A required Apple campaign link cannot be built exactly."""
+
 
 def normalize_campaign_token(campaign):
     """Make any caller's label a legal Apple ``ct`` token, deterministically.
@@ -468,6 +474,31 @@ def appstore_url(key, campaign=None):
     if not re.fullmatch(r"[A-Za-z0-9_]{1,30}", token):
         raise ValueError(f"Invalid App Store campaign token: {campaign!r}")
     return f"{url}?pt={provider}&ct={token}&mt=8"
+
+
+def longform_appstore_url(key, provider_token=None):
+    """Return the one allowed attributed URL for YouTube long-form.
+
+    Unlike the legacy generic helper, this never falls back to an unattributed
+    URL.  Locale and creative identifiers deliberately are not accepted here:
+    they belong in the durable publication receipt, not Apple's ``ct`` field.
+    """
+    app_id = str(APPSTORE.get(key) or "")
+    if not re.fullmatch(r"[0-9]+", app_id):
+        raise AttributionError(
+            f"Missing numeric App Store id for long-form app {key!r}")
+    provider = (
+        os.environ.get("APP_STORE_PROVIDER_TOKEN", "")
+        if provider_token is None
+        else str(provider_token)
+    ).strip()
+    if not re.fullmatch(r"[0-9]{1,20}", provider):
+        raise AttributionError(
+            "YouTube long-form requires a numeric Apple provider token")
+    return (
+        f"https://apps.apple.com/app/id{app_id}"
+        f"?pt={provider}&ct={LONGFORM_CAMPAIGN_TOKEN}&mt=8"
+    )
 
 
 # --- 自動偵測的新 App(由 new_app_catchup.py 維護,免手動改碼即自動納入全部宣傳)---

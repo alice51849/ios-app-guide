@@ -1,0 +1,40 @@
+{
+  "contract_digest": "8d81a0b8abf02c55642a634401cc2b305cf6a70d37a7c59a5da24c32db7cf8a9",
+  "copy_mode": "byte_for_byte",
+  "files": [
+    {
+      "engine_relative_path": "high_intent_decision_routes.py",
+      "sha256": "d3fba65f051b90c36aa0cf0fcad3cfff497b3041c275dcb98a6f447e776889d9",
+      "source_path": "geo/high_intent_decision_routes.py",
+      "target_path": "_engine/geo/high_intent_decision_routes.py"
+    },
+    {
+      "engine_relative_path": "data/high_intent_decision_routes_v2.json",
+      "sha256": "bfc305122b413179e213391762922ec21d20c42a2e2a00050642a31f6df12c08",
+      "source_path": "geo/data/high_intent_decision_routes_v2.json",
+      "target_path": "_engine/geo/data/high_intent_decision_routes_v2.json"
+    },
+    {
+      "engine_relative_path": "gen_store_attribution.py",
+      "sha256": "4cd713332de23f1d7de8ab3490068a834516750f855ae1276b234963c066e5b7",
+      "source_path": "geo/gen_store_attribution.py",
+      "target_path": "_engine/geo/gen_store_attribution.py"
+    },
+    {
+      "engine_relative_path": "official_locales.py",
+      "sha256": "576457e2c5b19b9b6e78f644397b27e177f3b195ce7ecc3ac83ef3a39b8d498a",
+      "source_path": "geo/official_locales.py",
+      "target_path": "_engine/geo/official_locales.py"
+    },
+    {
+      "engine_relative_path": "publish.py",
+      "sha256": "a05b2f70697cfb692c5eb58c45cb033cec33972e64d77ddc0043fc292c43b9e8",
+      "source_path": "geo/publish.py",
+      "target_path": "_engine/geo/publish.py"
+    }
+  ],
+  "owner": "high_intent_decision_routes",
+  "schema_version": 1,
+  "source_repository": "alice51849/00_GrowthEngine",
+  "target_repository": "alice51849/ios-app-guide"
+}

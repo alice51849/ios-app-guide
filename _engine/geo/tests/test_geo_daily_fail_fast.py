@@ -24,6 +24,10 @@ def workflow_step(source: str, name: str, next_name: str) -> str:
 class GeoDailyFailFastContractTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
+        # The engine-repo mirror of this file has no .github tree; the
+        # contract only exists where the workflow does.
+        if not WORKFLOW.exists():
+            raise unittest.SkipTest("geo-daily.yml not in this checkout")
         cls.source = WORKFLOW.read_text(encoding="utf-8")
 
     def test_localization_only_tolerates_normalized_bounded_timeouts(self):
@@ -132,11 +136,21 @@ class GeoDailyFailFastContractTests(unittest.TestCase):
 
 
 class BoundedResumableExitTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls) -> None:
+        if not BOUNDED_HELPER.exists():
+            raise unittest.SkipTest("bounded-resumable.sh not in this checkout")
+
     def run_sequence(
         self,
         command: list[str],
         *,
-        seconds: float = 2,
+        # Generous by default: the child processes here exit on their own the
+        # instant they start, so the bound only matters as a safety net. A
+        # tight 2s bound turned real signal exits into normalized timeouts on
+        # loaded CI runners (python3 startup alone blew the budget), which
+        # made rc-139 look like rc-0 (2026-08-30 flake).
+        seconds: float = 30,
     ) -> subprocess.CompletedProcess[str]:
         shell = "\n".join(
             (

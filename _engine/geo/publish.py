@@ -282,6 +282,20 @@ def main():
     require([PY, os.path.join(HERE, "gen_free_first_links.py")], env=env)
     require([PY, os.path.join(HERE, "gen_app_store_facts.py")], env=env)
     require([PY, os.path.join(HERE, "app_install_decision_routes.py")], env=env)
+    # Source-of-truth lives in GrowthEngine. A newly verified App is allowed to
+    # leave only its unreviewed route cell degraded here, so unrelated daily
+    # generators can still finish and push. The separate Pages pre-upload gate
+    # remains strict and will not deploy this materialization.
+    require(
+        [
+            PY,
+            os.path.join(HERE, "high_intent_decision_routes.py"),
+            "--output-dir",
+            PAGES,
+            "--materialize-current-inventory",
+        ],
+        env=env,
+    )
     require([PY, os.path.join(HERE, "normalize_app_store_links.py")], env=env)
     # ResourceSync writes a Bopomofo page with a clean App Store URL, so it
     # must run before every conversion surface and the attribution pass.
@@ -321,6 +335,9 @@ def main():
     # 導覽,4,413 個可索引頁零入連)。dedupe 也會改頁面的 noindex 狀態,連結圖
     # 要用**最終**的 noindex 狀態重算才正確。跑第二趟讓最後落地的狀態一定是對的。
     require([PY, os.path.join(HERE, "gen_link_hubs.py")], env=env)
+    # 以同一份最終靜態樹封閉 sitemap + link graph，讓新生成的 high-intent
+    # routes 進 sitemap index 且不成為孤兒頁。
+    require([PY, os.path.join(HERE, "close_sitemap_graph.py")], env=env)
     require([PY, os.path.join(HERE, "gen_store_attribution.py")], env=env)
     require([PY, os.path.join(HERE, "validate_webstories.py")], env=env)
     require([PY, os.path.join(HERE, "gen_llms.py"), "--cached-live"], env=env)
@@ -339,6 +356,18 @@ def main():
             os.path.join(HERE, "audit_link_depth.py"),
             "--max-indexable-orphans",
             "0",
+        ],
+        env=env,
+    )
+    # 日常只驗 materialization：已審 route 必須完整閉合；新增 App 的未審
+    # copy gap 可明確 degraded。Pages upload 仍另跑 strict pre-upload gate。
+    require(
+        [
+            PY,
+            os.path.join(HERE, "high_intent_decision_routes.py"),
+            "--output-dir",
+            PAGES,
+            "--check-materialization-closure",
         ],
         env=env,
     )

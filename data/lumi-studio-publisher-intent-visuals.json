@@ -2,7 +2,7 @@
   "name": "Lumi Studio Publisher Intent Visuals",
   "description": "Localized first-party visual buyer-intent cards for every verified live iOS app.",
   "url": "https://alice51849.github.io/ios-app-guide/visuals/",
-  "dateModified": "2026-08-29",
+  "dateModified": "2026-08-30",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "creator": {
     "@type": "Organization",
@@ -12,7 +12,7 @@
   "source_dataset": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
   "source_sha256": "73e695215f5c1f227535719048669c08733c71a1a22883e73aea0831f34fb764",
   "content_digest": "f23a5f1a85e6e1703a8c2ebb245cf830b49804c1bb59f5af023fefbb7869fa6b",
-  "generation_digest": "48f46e4eb58180f2a08c4adfa3c03b7d119806a54c7b779fb8c2016090aa0f1e",
+  "generation_digest": "e3537cf8ed29ca25ddfd0b7efa32959a006c2155565529c49eb9afbfad5617b3",
   "ordering": "official_locale_order_then_alphabetical_app_name",
   "app_count": 46,
   "locale_count": 50,
@@ -22,257 +22,257 @@
     {
       "locale": "en",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/visuals/",
-      "sha256": "43a5443e3de1038b5fbc68e204df985a7a04ba18818281ac5b370d492149a54d"
+      "sha256": "c435825927ba825fae80bd3660591b7c40f8a54975bf06837d164381b0a3d1f6"
     },
     {
       "locale": "ar-SA",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ar-SA/visuals/",
-      "sha256": "215ccaf4d4dd7c52f590d4fa3b6a13d16171c4007ae57923e3e24b64c83bb36d"
+      "sha256": "cbcf09771bc21207e96a8016988cb9e85afa04c457e91933babea3a7cd26d1c4"
     },
     {
       "locale": "bn-BD",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/bn-BD/visuals/",
-      "sha256": "a47b9dccfcddd365f0de71d2a1c1b7d4339991ff9fd977439ace96fffd1e8540"
+      "sha256": "3b8cf858175f646d941a4ef622b3f1e835900fc5c56e1f2472917e5a1836547c"
     },
     {
       "locale": "ca",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ca/visuals/",
-      "sha256": "1e6ef30f89a4db0ac4bde63a1549d00dc7c23f112a22e3a52601dd7f6984e1a0"
+      "sha256": "37898bf59174f1b511c470e78bd4ea5061713fd9a210173db0d33e71c0fa5c46"
     },
     {
       "locale": "cs",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/cs/visuals/",
-      "sha256": "2b1bf462bf3947064772570a6b85c921ffb02838b0abcd1db40236f66eff6e1a"
+      "sha256": "64dbe93f929bdeba880f66bc0f4f0948443525df83d879bbe144dbfd2b987ca2"
     },
     {
       "locale": "da",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/da/visuals/",
-      "sha256": "acfa0268fd5b1ce21acbdbc41a80aef75d4d109cb3650dcc3e7a60eb9db3a4b1"
+      "sha256": "247a298170597d5d8d141120d5865007600822c60c0e46dab447cee23b26bf34"
     },
     {
       "locale": "de-DE",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/de-DE/visuals/",
-      "sha256": "15f7fa782fc328117ba3bd093c1ad426b6c64af12a32238dccd2a91293c4f227"
+      "sha256": "b086e755a85cd3677109d9d6c28eded5f47b38a456a148776b859cfb208b16d9"
     },
     {
       "locale": "el",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/el/visuals/",
-      "sha256": "a1fecdd3f33341b3e5eff0390b381664cbbfda194e68858c99271bcfea0f6ec1"
+      "sha256": "7e09405849d36161b2770c54ab2d695bf376f22e2c97023750229969d7985d1e"
     },
     {
       "locale": "en-AU",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/en-AU/visuals/",
-      "sha256": "05eab8f4b261c29893aaf4cebf7f29be90554e34fc1aec75e73d7f5ccb2c04b0"
+      "sha256": "1e6cfeeb288ff041a399460f24f5a1cdd439f13c12a9b99529ff8b37f1437bbc"
     },
     {
       "locale": "en-CA",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/en-CA/visuals/",
-      "sha256": "65adbc02af27b51679bedf952d00c1f3f5a1d68e07a9fbf2d9180dda60196b71"
+      "sha256": "9061a53bf4b66cff11b46997fd7a2e4d4be119bfb73359e75457bb62211bd8e7"
     },
     {
       "locale": "en-GB",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/en-GB/visuals/",
-      "sha256": "0564fcb242ba253296029d01022abc2be8567d5a629a657f5e00c0b958da0fc3"
+      "sha256": "01ec1917645b33e266378a2631c4ae4f17a285a52e9d512b19cf71faa71703a7"
     },
     {
       "locale": "en-US",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/en-US/visuals/",
-      "sha256": "0317cd851460842ef8130f3d19312eeba864941819182d0f2e2b185a3ee338a3"
+      "sha256": "a3080f53a2d6be2104ef33ac9672e23e198abe29bb1857c20832b8f0b0a9fe37"
     },
     {
       "locale": "es-ES",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/es-ES/visuals/",
-      "sha256": "ca50ddb8039609f655026100395d1c034d810f250b9eec499e57205152e0c1ad"
+      "sha256": "165f62d30c940b0f82813d3c92983fb0ede94680480c975d395e72c275226230"
     },
     {
       "locale": "es-MX",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/es-MX/visuals/",
-      "sha256": "e55f3bd6573c334caec3ac3eb813a83e8282a39eb11cf69fbeafbb9bce05042d"
+      "sha256": "0edeadda52314f5fc82fc4b9e636745b8dc73874b2eb875404fe8e93790cfb15"
     },
     {
       "locale": "fi",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/fi/visuals/",
-      "sha256": "210199f17712b1c7fb836f76276761effbc8ede7f982f4aa430a6ad7d42f862d"
+      "sha256": "f016d240b5c274efe55a1b613290f561eb19db56b050a7b238a6b66e4a33e6bc"
     },
     {
       "locale": "fr-CA",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-CA/visuals/",
-      "sha256": "7caaa117f43ee8adefda9330ab8de142d84346b26bafc1d975ccd85f8b641bb3"
+      "sha256": "8d90981f2bfd13198dd29bba90fffaf3894cff921655b7a44bdf2e5ebf3a01c0"
     },
     {
       "locale": "fr-FR",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/fr-FR/visuals/",
-      "sha256": "8a166113bd0c64be0beb5d9c402018de6151dc4deac74b9b8ba89ff76f22ce4b"
+      "sha256": "d48429c2ed429963b150ce2610875841daaf18f2afe1c770f1e3b3dea2661c4f"
     },
     {
       "locale": "gu-IN",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/gu-IN/visuals/",
-      "sha256": "e92984c20fa70ea6d36c5d3e20fc83f68feef45c68cc1b2f563ae6554de163fe"
+      "sha256": "4e349738e6494b6d6cfc22a6725f6abe6f68cc50d6cd45b06ea47677427a76fb"
     },
     {
       "locale": "he",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/he/visuals/",
-      "sha256": "01381be9b6eae9beef286625b9791aef6ba3360769b3c88d9711d2d6d8b80543"
+      "sha256": "f8d1d05add8e3559a7c330fe4ec1157d288f331e3672e7e8b0d284cef9b6f860"
     },
     {
       "locale": "hi",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/hi/visuals/",
-      "sha256": "0fbb508fa67aa49e4ea5b1d7bfc8da927256fcafe956fa0c8cd330ee898802e0"
+      "sha256": "7b181c99aa9b14980315db637087a11edb98f818d9aa7b24a3988a71e4227835"
     },
     {
       "locale": "hr",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/hr/visuals/",
-      "sha256": "45f8dd7c0e5cb25d35770350fed64639205f72d2c4d1ce2617eca192f7bf53a3"
+      "sha256": "86a208551d18d89711479c4823e58ff13325de61820f807cb91f97c1a99a7425"
     },
     {
       "locale": "hu",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/hu/visuals/",
-      "sha256": "81c9d66e8607df1a7a81072a54ecab1b7f4f56eaea717fad3ac2f825cb9ac78f"
+      "sha256": "be0147c707fdaf621ae25f03708f857320fbd68350562e8f7139d9dc7b6d26ab"
     },
     {
       "locale": "id",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/id/visuals/",
-      "sha256": "84aba6b8a3bbc4a1cc98f9b5827e85b8422285b041198375d1bbacbbcb0238b9"
+      "sha256": "729b97acc59d5922e3dabb8de8acc126602db14ad88b176baa9c13c4e765efb4"
     },
     {
       "locale": "it",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/it/visuals/",
-      "sha256": "dd6554ea5c43c5d0a0315a2c99b8f310d484f082b7e41c5d73bfd6c1ec847708"
+      "sha256": "9a19205c24b507f948d06463b6476c0ca23468d8648850a338c27baa74fc076e"
     },
     {
       "locale": "ja",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ja/visuals/",
-      "sha256": "e2cac0f1d31504bd3a6171acd3f13591c06139e42fc890219d88622e0470bca9"
+      "sha256": "770c4be1fd361062c2692df2ab9672aa1f1103bb1e5aa732c752f1c9c4f06f8b"
     },
     {
       "locale": "kn-IN",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/kn-IN/visuals/",
-      "sha256": "3c24b05a3d1eed0e0f9b03b0186d8d2ee9d2dc8876b0a9434fd0c48aab19e7c1"
+      "sha256": "e74780432cd554c246d05787d94a5a1d386327ff40c85428a7fb6d096ce4a89e"
     },
     {
       "locale": "ko",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ko/visuals/",
-      "sha256": "3f4175f0cdf67122406d9d2b144eadd48900325b20a88d28235e60e3bfa74e71"
+      "sha256": "8c9170dae085b7eeb34f33d1b7751a7b11ffadb27255fd0c0a6c3eda8c7b45f0"
     },
     {
       "locale": "ml-IN",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ml-IN/visuals/",
-      "sha256": "17646beef9fc817ced97aca56774aafd5d40b3db38e1b50371571645b22b622f"
+      "sha256": "d7620d5ac66e1b6ea9191b66264580ae12075992cec6fe0c491b76823f4eb377"
     },
     {
       "locale": "mr-IN",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/mr-IN/visuals/",
-      "sha256": "34fbab738b9577829afdea4dfecba5a10cf65e37c665ef514cc25d781d005ee7"
+      "sha256": "7597481a9d66b83132c74a018c2e74681f1fedfe249362d76efee3acc07f9c6e"
     },
     {
       "locale": "ms",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ms/visuals/",
-      "sha256": "65adc62eaff50845e65eaaf807ca1543b8d04f3556e76d2497d07e5a91c966b8"
+      "sha256": "6269739d79d2b9eb5e153e31d3746a2df4c6d1cafc7cc58b055547be1859ed4c"
     },
     {
       "locale": "nl-NL",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/nl-NL/visuals/",
-      "sha256": "66d71e71f72045d405f95d5e574c5e01cbdd6c1ff925702439aa517e521f350a"
+      "sha256": "a7639d8148178713a33edd7458f444781d5a9150dee8dd418089dcba42585fe7"
     },
     {
       "locale": "no",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/no/visuals/",
-      "sha256": "8c0a8a3951bb62c07bf1b0c1a452df28aa278c0e034ccc164fe2e37db2525350"
+      "sha256": "05d2c63932409d088ca54409cc11c3060dc0b025fbde0dd1bd0dbeaf65004bcc"
     },
     {
       "locale": "or-IN",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/or-IN/visuals/",
-      "sha256": "b79e8b609ca34f553c8debdc1af45353855f32e27ce29640d076d967c14abf14"
+      "sha256": "2c89866a785ab4acde0743567f9bbfaf9a231f5de3bf49e81e93a839c5aedc30"
     },
     {
       "locale": "pa-IN",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/pa-IN/visuals/",
-      "sha256": "5d49d5477b8e1d4eb2b6061b9f5430907f47437cc93e2b38fc385777d9e4e1fb"
+      "sha256": "74678aa37a15e88fdce18554f837013bda4299577a8d440588962a75007c1556"
     },
     {
       "locale": "pl",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/pl/visuals/",
-      "sha256": "46994da746539cbd9e57a64584b7945a4beff11c080ca4ac68d6d5f40c388797"
+      "sha256": "f0f696cdfc4509c83302264bc0877881880caa67eb80a0710231a7755d54ac14"
     },
     {
       "locale": "pt-BR",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-BR/visuals/",
-      "sha256": "8afdb663cfc0739d9d5c3ebd1ded22a82ace1737aeab3fd3bacf7c025310727e"
+      "sha256": "9ef90eeaafb052bbfdfde361733d501353e5f4805b387a723ed702352c6ccc37"
     },
     {
       "locale": "pt-PT",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/pt-PT/visuals/",
-      "sha256": "854deadeeef122267c02e1f6e879023fe62111b342edf0738dfcb19bd26b5967"
+      "sha256": "3f108d662d168d2fba74f0213ac15d2bbff4c23b03ae78e2aa4447ecb4020ddb"
     },
     {
       "locale": "ro",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ro/visuals/",
-      "sha256": "3faaabb86aa2a365e928005edfea2f45cf5eed90bd9988b69ce2d66d36069542"
+      "sha256": "8bbb49e5a02feefa1b3e5b453ddc929ea52c8f991f27f7051a47c3d406e5608b"
     },
     {
       "locale": "ru",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ru/visuals/",
-      "sha256": "fdf40b9d1d51f0e0769c728a2e4cc753ec233ef222c23ad5f6d105f94b9f35fa"
+      "sha256": "6fbe3904147a38cc8afdf0bc6e7c1ea4539d3b6bfe931ff590a43c36ef823d0a"
     },
     {
       "locale": "sk",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/sk/visuals/",
-      "sha256": "814db0c55e542d59685c90fda6d294d41065d660989658f9dc8c63c2d8a63f35"
+      "sha256": "62c743037a62e570b84dad9c61cd9f9307b47de686207c2aa306db316315299d"
     },
     {
       "locale": "sl-SI",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/sl-SI/visuals/",
-      "sha256": "dac3165c1e66f6c8c864303eeb5b422338d29ea72ce9741e8c5145704e732eac"
+      "sha256": "ed845a2280765c7fa143dd5f2832a19328e74dbd46e8eefa349db5a9a07d44c4"
     },
     {
       "locale": "sv",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/sv/visuals/",
-      "sha256": "b233d06b773dfecfab4a8f82f4932ad4670b28d9cb4e76b9572da290814b3958"
+      "sha256": "54d86a752530c0c148f23c4d07996b0b40b9091e2bb0b30909debf1bf59998da"
     },
     {
       "locale": "ta-IN",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ta-IN/visuals/",
-      "sha256": "4ba9571fe92b1536bb19059657c4ff5229d01714f78cf16faa2ef723f2b4c477"
+      "sha256": "ac3b83f126402ddd03871d9627f0f2d0469b047cff20d0e6114ac3fabfc33cd0"
     },
     {
       "locale": "te-IN",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/te-IN/visuals/",
-      "sha256": "39c6d7b9b0fb6fddba534fd49ed97b589a2d823ed5e1995423119fd141556389"
+      "sha256": "925a894e95d63add7ad7e5476e535fab00d449a43dce27850287131c3e8982f3"
     },
     {
       "locale": "th",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/th/visuals/",
-      "sha256": "0bca5579e8ec1bda076974b091eeca3a091fe0f43766bb5264e15d7bc463f020"
+      "sha256": "4451b6c718d27ac3ab7ab8bcef67840f33d21cc2015b952b0d5c526ebee0a9cf"
     },
     {
       "locale": "tr",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/tr/visuals/",
-      "sha256": "018958fdc3e0cf822ec86e22e6f4863a1c41af9ccb1f17de0e69c1307a65394b"
+      "sha256": "c68c5cb40c24eb71d74e8fdb415bba45d42d50897843bff105fbfb1585565428"
     },
     {
       "locale": "uk",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/uk/visuals/",
-      "sha256": "6796e8e3a6c4137656683e92a7767a757981b964891b0f4f6bbebf80b0dae14a"
+      "sha256": "9198c4fb9c019ec4f83b723633b10454c84604446f20c2c11d2584974a1a4065"
     },
     {
       "locale": "ur-PK",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/ur-PK/visuals/",
-      "sha256": "cb05e6598cd13a36e8da383646b9c70e62a325db5d34824fd7d333e8554871ac"
+      "sha256": "a3957d74a005f81143b66f991f486624321084c736f57cec1503580e6dcfbb2b"
     },
     {
       "locale": "vi",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/vi/visuals/",
-      "sha256": "480103204f5c5c6df324a5c7454faeb81403b75cf57300e3ab868c52fdbe7457"
+      "sha256": "6968a4625394456f81d1d6de67f130f9316c5d69eb15ba162b9fca527feb2985"
     },
     {
       "locale": "zh-Hans",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/visuals/",
-      "sha256": "325b5026bf5079d2cd4eb71ee500d17425c424b784f189d9d8f9e993245dd0ff"
+      "sha256": "86bd2ec31eb7858088c31d72d4f5c3793ef038a1e0b958a529ebe5f19742a082"
     },
     {
       "locale": "zh-Hant",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/zh-Hant/visuals/",
-      "sha256": "b31fe8e078ac8d63cb25cf04c3cd25cdcb7de4eeb60cd8e97aca325520e9603c"
+      "sha256": "32729f4c85147076a18383c932945cd1e316ac6da16fb419118bba9f2a89f0ae"
     }
   ],
   "publisher_authored": true,

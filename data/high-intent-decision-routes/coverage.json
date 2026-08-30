@@ -1,0 +1,691 @@
+{
+  "apps": {
+    "aibriefpack": {
+      "intent_type": "workflow",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "organize-source-context-before-ai"
+    },
+    "aim990": {
+      "intent_type": "problem_aware",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "toeic-part-five-time-pressure"
+    },
+    "aim990plus": {
+      "intent_type": "problem_aware",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "exam-decisions-under-listening-pressure"
+    },
+    "battai": {
+      "intent_type": "problem_aware",
+      "native_locales": [
+        "en-US",
+        "zh-Hant"
+      ],
+      "record_count": 2,
+      "route_slug": "decide-when-an-iphone-battery-needs-service"
+    },
+    "caldaily": {
+      "intent_type": "workflow",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "save-name-search-calculation-history"
+    },
+    "cvdesk": {
+      "intent_type": "privacy_pay_once",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "ats-resume-on-iphone-without-upload"
+    },
+    "cyca": {
+      "intent_type": "privacy_pay_once",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "private-cycle-patterns-without-account"
+    },
+    "dailymate": {
+      "intent_type": "workflow",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "complete-travel-sentences-on-watch"
+    },
+    "dailymatelite": {
+      "intent_type": "alternative",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "free-situational-phrasebook-before-trip"
+    },
+    "gmoney": {
+      "intent_type": "workflow",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "convert-and-log-travel-spending-offline"
+    },
+    "gmoneylite": {
+      "intent_type": "workflow",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "test-multi-currency-trip-budget-free"
+    },
+    "hourstag": {
+      "intent_type": "problem_aware",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "translate-price-into-life-hours"
+    },
+    "hourstaglite": {
+      "intent_type": "problem_aware",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "pause-impulse-buy-with-work-hours"
+    },
+    "lockhour": {
+      "intent_type": "problem_aware",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "stop-social-apps-during-study-blocks"
+    },
+    "lumibopomofo": {
+      "intent_type": "alternative",
+      "native_locales": [
+        "en-US",
+        "zh-Hant"
+      ],
+      "record_count": 2,
+      "route_slug": "gentle-zhuyin-practice-for-bilingual-child"
+    },
+    "lumibopomofopro": {
+      "intent_type": "alternative",
+      "native_locales": [
+        "en-US",
+        "zh-Hant"
+      ],
+      "record_count": 2,
+      "route_slug": "complete-zhuyin-path-for-heritage-family"
+    },
+    "lumiletters": {
+      "intent_type": "alternative",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "try-phonics-before-one-time-unlock"
+    },
+    "lumiletterspro": {
+      "intent_type": "alternative",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "complete-phonics-for-home-kindergarten"
+    },
+    "lumimath": {
+      "intent_type": "problem_aware",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "replace-math-resistance-with-short-play"
+    },
+    "lumimathpro": {
+      "intent_type": "alternative",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "complete-math-thinking-space-adventure"
+    },
+    "lumimission": {
+      "intent_type": "problem_aware",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "end-daily-routine-battles-with-play"
+    },
+    "lumimissionpro": {
+      "intent_type": "workflow",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "complete-morning-and-bedtime-routine"
+    },
+    "lumiweather": {
+      "intent_type": "problem_aware",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "decide-what-child-wears-outside"
+    },
+    "maskmyfile": {
+      "intent_type": "privacy_pay_once",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "redact-client-files-before-sharing"
+    },
+    "mochi": {
+      "intent_type": "alternative",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "cozy-checklist-without-project-overhead"
+    },
+    "mochidonestamp": {
+      "intent_type": "problem_aware",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "remember-when-household-task-was-done"
+    },
+    "moneytag": {
+      "intent_type": "workflow",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "measure-profit-by-freelance-project"
+    },
+    "notesstudio100": {
+      "intent_type": "workflow",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "handwrite-mark-up-and-review-offline"
+    },
+    "onepageppt": {
+      "intent_type": "workflow",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "turn-meeting-notes-into-one-slide"
+    },
+    "photocream": {
+      "intent_type": "alternative",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "film-look-editor-without-watermark"
+    },
+    "picclear": {
+      "intent_type": "problem_aware",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "recover-storage-from-photo-clutter"
+    },
+    "savetag": {
+      "intent_type": "privacy_pay_once",
+      "native_locales": [
+        "en-US",
+        "zh-Hant"
+      ],
+      "record_count": 2,
+      "route_slug": "turn-saved-links-into-a-readable-queue"
+    },
+    "scanto": {
+      "intent_type": "privacy_pay_once",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "scan-and-read-documents-on-device"
+    },
+    "sereno": {
+      "intent_type": "alternative",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "offline-sleep-sounds-without-subscription"
+    },
+    "shotinbox": {
+      "intent_type": "workflow",
+      "native_locales": [
+        "en-US",
+        "zh-Hant"
+      ],
+      "record_count": 2,
+      "route_slug": "sort-search-and-finish-screenshot-backlog"
+    },
+    "snapport": {
+      "intent_type": "workflow",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "make-passport-photo-at-home"
+    },
+    "snapportlite": {
+      "intent_type": "alternative",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "test-passport-photo-layout-free"
+    },
+    "sononote": {
+      "intent_type": "workflow",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "speak-then-shape-usable-notes"
+    },
+    "tripbee": {
+      "intent_type": "workflow",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "private-offline-family-trip-plan"
+    },
+    "tripbeelite": {
+      "intent_type": "alternative",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "plan-one-upcoming-trip-without-clutter"
+    },
+    "tripplanet": {
+      "intent_type": "workflow",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "turn-family-travel-waiting-into-observation"
+    },
+    "unblurry": {
+      "intent_type": "problem_aware",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "improve-soft-family-photo-realistically"
+    },
+    "wifiaid": {
+      "intent_type": "problem_aware",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "separate-wifi-dns-and-website-failure"
+    },
+    "wifiaidlite": {
+      "intent_type": "problem_aware",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "free-check-wifi-versus-website"
+    },
+    "wordmate": {
+      "intent_type": "privacy_pay_once",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "vocabulary-on-widget-and-watch"
+    },
+    "wordmatelite": {
+      "intent_type": "alternative",
+      "native_locales": [
+        "en-US"
+      ],
+      "record_count": 1,
+      "route_slug": "five-words-without-building-decks"
+    }
+  },
+  "coverage": {
+    "abstained_pairs": 2249,
+    "abstention_reasons": {
+      "missing_curated_native_copy": 2249
+    },
+    "app_coverage_percent": 100.0,
+    "candidate_app_locale_pairs": 2300,
+    "current_public_apps": 46,
+    "fallback_records": 0,
+    "intent_type_counts": {
+      "alternative": 12,
+      "privacy_pay_once": 6,
+      "problem_aware": 14,
+      "workflow": 14
+    },
+    "mapped_apps": 46,
+    "missing_route_app_keys": [],
+    "missing_route_apps": 0,
+    "native_locale_pair_coverage_percent": 2.22,
+    "native_locale_records": 51,
+    "native_locales_with_records": 2,
+    "official_locales_considered": 50,
+    "primary_routes": 46
+  },
+  "current_inventory": {
+    "app_keys_sha256": "c3c8f1c9f1624310c6e5c11226ce67e57ca6c0de354e583460ac74064e284474",
+    "copy_sha256": "ae6d8925026621c3416e9047128d5b21644de2a987d21ef1ab92877d593f6f13",
+    "missing_route_app_keys": [],
+    "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "public_apps": 46
+  },
+  "dataset": "Lumi Studio High-Intent Decision Routes",
+  "inventory": {
+    "app_keys_sha256": "c3c8f1c9f1624310c6e5c11226ce67e57ca6c0de354e583460ac74064e284474",
+    "copy_sha256": "ae6d8925026621c3416e9047128d5b21644de2a987d21ef1ab92877d593f6f13",
+    "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
+    "public_apps": 46,
+    "relative_path": "data/verified-ios-app-finder-catalog.json"
+  },
+  "locales": {
+    "ar-SA": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "bn-BD": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "ca": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "cs": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "da": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "de-DE": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "el": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "en-AU": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "en-CA": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "en-GB": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "en-US": {
+      "abstained": 0,
+      "emitted": 46
+    },
+    "es-ES": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "es-MX": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "fi": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "fr-CA": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "fr-FR": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "gu-IN": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "he": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "hi": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "hr": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "hu": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "id": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "it": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "ja": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "kn-IN": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "ko": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "ml-IN": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "mr-IN": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "ms": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "nl-NL": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "no": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "or-IN": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "pa-IN": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "pl": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "pt-BR": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "pt-PT": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "ro": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "ru": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "sk": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "sl-SI": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "sv": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "ta-IN": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "te-IN": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "th": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "tr": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "uk": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "ur-PK": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "vi": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "zh-Hans": {
+      "abstained": 46,
+      "emitted": 0
+    },
+    "zh-Hant": {
+      "abstained": 41,
+      "emitted": 5
+    }
+  },
+  "publication": {
+    "abstained_pairs": 2249,
+    "deployment_eligible": true,
+    "expected_route_pages": 51,
+    "fallback_records": 0,
+    "feed_items": 51,
+    "managed_owner": "high_intent_decision_routes",
+    "sitemap_urls": 51,
+    "state": "exact"
+  },
+  "quality": {
+    "all_gates_passed": true,
+    "gates": {
+      "complete_app_store_cta": {
+        "detail": "51/51 URLs use ordered pt/ct/mt=8",
+        "passed": true
+      },
+      "cultural_route": {
+        "detail": "51/51 emitted records",
+        "passed": true
+      },
+      "current_inventory_coverage": {
+        "detail": "46/46 current public apps mapped; missing route copy=[]",
+        "passed": true
+      },
+      "exact_release_cardinality": {
+        "detail": "51 routes; 46 apps; 2300 pairs; 2249 abstentions",
+        "passed": true
+      },
+      "intent_diversity": {
+        "detail": "{\"alternative\": 12, \"privacy_pay_once\": 6, \"problem_aware\": 14, \"workflow\": 14}",
+        "passed": true
+      },
+      "inventory_bound_claims": {
+        "detail": "212 evidence references resolved from inventory",
+        "passed": true
+      },
+      "native_copy_or_abstain": {
+        "detail": "51 emitted; 2249 explicit abstentions; 0 fallbacks",
+        "passed": true
+      },
+      "non_template": {
+        "detail": "51/51 unique signatures; max Jaccard=0.250",
+        "passed": true
+      },
+      "non_thin": {
+        "detail": "minimum=205 units; threshold=180",
+        "passed": true
+      },
+      "primary_intent_coverage": {
+        "detail": "46/46 apps have one primary route",
+        "passed": true
+      },
+      "truthful_publisher_disclosure": {
+        "detail": "51/51 records disclose developer authorship",
+        "passed": true
+      },
+      "versioned_app_coverage": {
+        "detail": "46/46 contracted apps mapped",
+        "passed": true
+      }
+    },
+    "materialization_safe": true,
+    "maximum_editorial_jaccard": 0.25,
+    "maximum_similarity_pair": [
+      "en-US:lumibopomofo:gentle-zhuyin-practice-for-bilingual-child",
+      "en-US:lumibopomofopro:complete-zhuyin-path-for-heritage-family"
+    ],
+    "minimum_content_units": 205
+  },
+  "release_contract_digest": "136c3abe602b72dd05bb82128743688b8b1b880fca570a2fa78ee26afc030e59",
+  "release_state": "exact",
+  "schema_version": 1
+}

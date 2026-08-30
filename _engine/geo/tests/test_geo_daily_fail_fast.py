@@ -152,6 +152,18 @@ class GeoDailyFailFastContractTests(unittest.TestCase):
         self.assertIn('.version == 3', source)
         self.assertIn('.fallback_records == 0', source)
 
+    def test_skipped_workflow_run_cannot_cancel_a_valid_pages_deploy(self):
+        source = PAGES_WORKFLOW.read_text(encoding="utf-8")
+        concurrency = source.split("concurrency:", 1)[1].split("jobs:", 1)[0]
+        self.assertIn("github.event_name == 'workflow_run'", concurrency)
+        self.assertIn(
+            "github.event.workflow_run.conclusion != 'success'",
+            concurrency,
+        )
+        self.assertIn("github.run_id", concurrency)
+        self.assertIn("|| 'deploy'", concurrency)
+        self.assertIn("cancel-in-progress: true", concurrency)
+
     def test_localization_only_tolerates_normalized_bounded_timeouts(self):
         localized = workflow_step(
             self.source,

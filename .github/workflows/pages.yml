@@ -16,7 +16,9 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  # A failed/cancelled Daily GEO run creates a skipped workflow_run job. Give
+  # that no-op event a unique group so it cannot cancel a valid push deploy.
+  group: pages-${{ github.event_name == 'workflow_run' && github.event.workflow_run.conclusion != 'success' && github.run_id || 'deploy' }}
   cancel-in-progress: true
 
 jobs:

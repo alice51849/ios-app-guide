@@ -121,6 +121,10 @@ jobs:
           # buyer-intent visual already exists.
           python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
           python3 app_install_decision_routes.py
+          python3 high_intent_decision_routes.py \
+            --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \
+            --output-dir "$GITHUB_WORKSPACE" \
+            --materialize-current-inventory
           python3 gen_github_discovery_readmes.py
           python3 portfolio_offer_catalog.py --today "$GEO_BUILD_DATE"
           python3 app_video_lessons.py --today "$GEO_BUILD_DATE"
@@ -160,8 +164,15 @@ jobs:
           python3 gen_link_hubs.py
           python3 gen_locale_indexation.py
           python3 gen_link_hubs.py --check
+          python3 close_sitemap_graph.py
           python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
+          python3 gen_store_attribution.py
+          python3 gen_feed.py
           python3 audit_link_depth.py --max-indexable-orphans 0
+          python3 high_intent_decision_routes.py \
+            --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \
+            --output-dir "$GITHUB_WORKSPACE" \
+            --check-materialization-closure
           cd "$GITHUB_WORKSPACE"
           python3 _engine/geo/gen_sitemap_lastmod.py \
             --today "$GEO_BUILD_DATE" \
@@ -337,8 +348,19 @@ jobs:
               python3 gen_link_hubs.py
               python3 gen_locale_indexation.py
               python3 gen_link_hubs.py --check
+              python3 high_intent_decision_routes.py \
+                --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \
+                --output-dir "$GITHUB_WORKSPACE" \
+                --materialize-current-inventory
+              python3 close_sitemap_graph.py
               python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
+              python3 gen_store_attribution.py
+              python3 gen_feed.py
               python3 audit_link_depth.py --max-indexable-orphans 0
+              python3 high_intent_decision_routes.py \
+                --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \
+                --output-dir "$GITHUB_WORKSPACE" \
+                --check-materialization-closure
               cd "$GITHUB_WORKSPACE"
               python3 _engine/geo/gen_sitemap_lastmod.py \
                 --today "$GEO_BUILD_DATE" \
@@ -448,9 +470,19 @@ jobs:
           # skipped only when the generated hub changes preserve the exact
           # indexable path + canonical URL set; convergence still runs.
           python3 dedupe_locale_meta.py --apply
+          python3 high_intent_decision_routes.py \
+            --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \
+            --output-dir "$GITHUB_WORKSPACE" \
+            --materialize-current-inventory
           python3 close_sitemap_graph.py
           python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
+          python3 gen_store_attribution.py
+          python3 gen_feed.py
           python3 audit_link_depth.py --max-indexable-orphans 0
+          python3 high_intent_decision_routes.py \
+            --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \
+            --output-dir "$GITHUB_WORKSPACE" \
+            --check-materialization-closure
           cd "$GITHUB_WORKSPACE"
           python3 _engine/geo/gen_sitemap_lastmod.py \
             --fallback-state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE" \
@@ -495,9 +527,19 @@ jobs:
                 python3 _engine/geo/reconcile_answer_semantics.py
                 cd _engine/geo
                 python3 dedupe_locale_meta.py --apply
+                python3 high_intent_decision_routes.py \
+                  --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \
+                  --output-dir "$GITHUB_WORKSPACE" \
+                  --materialize-current-inventory
                 python3 close_sitemap_graph.py
                 python3 publisher_intent_visuals.py --today "$GEO_BUILD_DATE"
+                python3 gen_store_attribution.py
+                python3 gen_feed.py
                 python3 audit_link_depth.py --max-indexable-orphans 0
+                python3 high_intent_decision_routes.py \
+                  --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \
+                  --output-dir "$GITHUB_WORKSPACE" \
+                  --check-materialization-closure
                 cd "$GITHUB_WORKSPACE"
                 python3 _engine/geo/gen_sitemap_lastmod.py \
                   --today "$GEO_BUILD_DATE" \

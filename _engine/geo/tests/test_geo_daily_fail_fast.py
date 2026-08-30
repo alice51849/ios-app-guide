@@ -11,6 +11,7 @@ import unittest
 GEO = Path(__file__).resolve().parents[1]
 ROOT = GEO.parents[1]
 WORKFLOW = ROOT / ".github" / "workflows" / "geo-daily.yml"
+PAGES_WORKFLOW = ROOT / ".github" / "workflows" / "pages.yml"
 BOUNDED_HELPER = ROOT / ".github" / "scripts" / "bounded-resumable.sh"
 
 
@@ -29,6 +30,127 @@ class GeoDailyFailFastContractTests(unittest.TestCase):
         if not WORKFLOW.exists():
             raise unittest.SkipTest("geo-daily.yml not in this checkout")
         cls.source = WORKFLOW.read_text(encoding="utf-8")
+
+    @staticmethod
+    def python_commands(source: str) -> list[str]:
+        lines = source.splitlines()
+        commands: list[str] = []
+        position = 0
+        while position < len(lines):
+            stripped = lines[position].strip()
+            if not stripped.startswith("python3 "):
+                position += 1
+                continue
+            parts = [stripped.removesuffix("\\").strip()]
+            while lines[position].rstrip().endswith("\\"):
+                position += 1
+                if position >= len(lines):
+                    raise AssertionError("unterminated multiline Python command")
+                parts.append(lines[position].strip().removesuffix("\\").strip())
+            commands.append(" ".join(parts))
+            position += 1
+        return commands
+
+    def assert_high_intent_closure(self, source: str) -> None:
+        commands = self.python_commands(source)
+        generators = [
+            index for index, command in enumerate(commands)
+            if "--materialize-current-inventory" in command
+        ]
+        closures = [
+            index for index, command in enumerate(commands)
+            if "--check-materialization-closure" in command
+        ]
+        self.assertEqual(1, len(generators))
+        self.assertEqual(1, len(closures))
+        generator = generators[0]
+        closure = closures[0]
+        self.assertLess(generator, closure)
+
+        def next_command(name: str, after: int) -> int:
+            return next(
+                index
+                for index in range(after + 1, closure)
+                if name in commands[index]
+            )
+
+        graph = next_command("close_sitemap_graph.py", generator)
+        attribution = next_command("gen_store_attribution.py", graph)
+        feed = next_command("gen_feed.py", attribution)
+        audit = next_command("audit_link_depth.py", feed)
+        self.assertLess(audit, closure)
+
+    def test_high_intent_routes_close_all_four_mutation_paths(self):
+        segments = (
+            workflow_step(
+                self.source,
+                "Materialize newly live app surfaces",
+                "Verify zero-cost growth infrastructure",
+            ),
+            workflow_step(
+                self.source,
+                "Commit English content first (fast, before slow localization)",
+                "Localize from curated dictionaries (zero-cost, no API)",
+            ),
+            workflow_step(
+                self.source,
+                "Final link and availability cleanup",
+                "Verify localized output before commit",
+            ),
+            workflow_step(
+                self.source,
+                "Commit localized pages if any",
+                "Unlink site dir",
+            ),
+        )
+        self.assertEqual(4, self.source.count("--materialize-current-inventory"))
+        self.assertEqual(4, self.source.count("--check-materialization-closure"))
+        for segment in segments:
+            self.assert_high_intent_closure(segment)
+
+    def test_every_pages_upload_has_external_source_hard_gate(self):
+        self.assertTrue(PAGES_WORKFLOW.is_file())
+        source = PAGES_WORKFLOW.read_text(encoding="utf-8")
+        cursor = 0
+        uploads = 0
+        marker = "actions/upload-pages-artifact@"
+        while (upload := source.find(marker, cursor)) >= 0:
+            uploads += 1
+            prepare = source.rfind(
+                "- name: Prepare externally bound high-intent deployment",
+                0,
+                upload,
+            )
+            self.assertGreater(prepare, -1)
+            gate = source.rfind("--prepare-pages-deployment", 0, upload)
+            self.assertGreater(gate, prepare)
+            guarded = source[prepare:upload]
+            self.assertIn(
+                "GROWTH_ENGINE_DEPLOY_KEY: "
+                "${{ secrets.GROWTH_ENGINE_DEPLOY_KEY }}",
+                guarded,
+            )
+            self.assertIn("git@github.com:alice51849/00_GrowthEngine.git", guarded)
+            self.assertIn("umask 077", guarded)
+            self.assertIn("unset GROWTH_ENGINE_DEPLOY_KEY", guarded)
+            self.assertIn("https://api.github.com/meta", guarded)
+            self.assertIn("StrictHostKeyChecking=yes", guarded)
+            self.assertNotIn("StrictHostKeyChecking=accept-new", guarded)
+            self.assertIn('rm -f "$key_file" "$known_hosts"', guarded)
+            self.assertIn("--current-source-root", guarded)
+            self.assertIn("--engine-source-revision", guarded)
+            self.assertIn('rm -rf "$source_dir"', guarded)
+            self.assertIn("trap cleanup_growth_source EXIT", guarded)
+            self.assertNotIn("uses: actions/checkout@", guarded)
+            self.assertNotIn("continue-on-error: true", source[gate:upload])
+            cursor = upload + len(marker)
+        self.assertGreater(uploads, 0)
+
+    def test_pages_readback_rejects_partial_or_degraded_manifests(self):
+        source = PAGES_WORKFLOW.read_text(encoding="utf-8")
+        self.assertIn('if any(.[]; . == null)', source)
+        self.assertIn('.version == 3', source)
+        self.assertIn('.fallback_records == 0', source)
 
     def test_localization_only_tolerates_normalized_bounded_timeouts(self):
         localized = workflow_step(

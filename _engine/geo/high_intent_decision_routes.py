@@ -178,6 +178,11 @@ UI = {
             "neutral": "Check the current purchase model",
         },
         "one_time_option": "The first-party inventory records a one-time option.",
+        "feature_labels": {
+            "Free to start": "Free to start",
+            "One-time unlock": "One-time unlock",
+            "No subscription": "No subscription",
+        },
         "capabilities": {
             "offline": "The first-party inventory marks offline use.",
             "no_account": "The first-party inventory marks no account required.",
@@ -215,6 +220,11 @@ UI = {
             "neutral": "請確認目前購買方式",
         },
         "one_time_option": "第一方 inventory 記錄此 App 提供一次性付費選項。",
+        "feature_labels": {
+            "Free to start": "可免費開始使用",
+            "One-time unlock": "提供一次性付費解鎖",
+            "No subscription": "不採訂閱制",
+        },
         "capabilities": {
             "offline": "第一方 inventory 標示可離線使用。",
             "no_account": "第一方 inventory 標示不需帳號。",
@@ -665,15 +675,32 @@ def _evidence(
     elif reference.startswith("feature."):
         index = int(reference.rsplit(".", 1)[1])
         try:
-            value = _single_line(
+            source_value = _single_line(
                 app["features"][index],
                 f"{key}.{reference}",
                 2,
             )
         except IndexError as error:
             raise ValueError(f"{key}/{locale}: missing {reference}") from error
+        if locale == "en-US":
+            value = source_value
+        else:
+            labels = UI[locale].get("feature_labels")
+            if not isinstance(labels, dict) or source_value not in labels:
+                raise ValueError(
+                    f"{key}/{locale}: missing localized feature evidence: "
+                    f"{source_value}"
+                )
+            value = _single_line(
+                labels[source_value],
+                f"{key}/{locale}.{reference}.localized",
+                2,
+            )
+            if value.casefold() == source_value.casefold():
+                raise ValueError(
+                    f"{key}/{locale}: feature evidence fell back to source locale"
+                )
         pointer = f"/apps/{key}/features/{index}"
-        source_value = value
     elif reference == "fact.purchase_model":
         model = str(app["purchase_model"])
         labels = UI[locale]["purchase_model"]

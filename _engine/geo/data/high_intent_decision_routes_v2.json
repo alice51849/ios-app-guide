@@ -3,9 +3,9 @@
   "dataset_name": "Lumi Studio High-Intent Decision Routes",
   "inventory_contract": {
     "relative_path": "data/verified-ios-app-finder-catalog.json",
-    "expected_app_count": 43,
-    "app_keys_sha256": "c893d54cd79039f8b11e5f29c3bdff7f91352d292a717d504ffc69a33b475d46",
-    "copy_sha256": "d4fbb71230d91c65b5c4fabce78722a251dd744031375671381f1536423a10bd",
+    "expected_app_count": 46,
+    "app_keys_sha256": "c3c8f1c9f1624310c6e5c11226ce67e57ca6c0de354e583460ac74064e284474",
+    "copy_sha256": "ae6d8925026621c3416e9047128d5b21644de2a987d21ef1ab92877d593f6f13",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd"
   },
   "publisher": {
@@ -126,6 +126,53 @@
             "Use official exam sources for rules, dates, and score interpretation."
           ],
           "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+        }
+      }
+    },
+    {
+      "app_key": "battai",
+      "route_slug": "decide-when-an-iphone-battery-needs-service",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [0, 1, 4],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US iPhone owners often notice shorter runtime before a trip, trade-in, or workday and need to separate ordinary aging from a battery that may justify service.",
+          "query": "How can I judge whether my iPhone battery needs replacement without trusting impossible sensor claims?",
+          "buyer_problem": "Battery percentage alone does not explain long-term condition, while an impressive temperature, voltage, or cycle-count screen may rely on data ordinary iPhone apps cannot directly read. The decision is whether a transparent review can organize observable behavior and user-provided evidence without creating false precision.",
+          "decision_rule": "Use a battery-health report as decision support, then compare it with iOS Battery Health, recent runtime, charging behavior, and Apple's current service guidance. Prefer an authorized diagnostic when shutdowns, swelling, damage, or safety concerns appear.",
+          "workflow_checks": [
+            "Does every value distinguish direct observation, estimation, and information supplied by the owner?",
+            "Can a trend be reviewed over time instead of treating one battery percentage as a diagnosis?",
+            "Does the replacement decision stay tied to current Apple guidance and the phone's real behavior?"
+          ],
+          "alternative_lens": "Apple's built-in Battery Health screen is the simplest authority for maximum-capacity and service messages. A repair provider is the better route when hardware inspection, a formal diagnostic, or immediate replacement is needed.",
+          "verify_before_install": [
+            "Confirm the current free scope and one-time unlock details on the App Store listing.",
+            "Do not rely on any third-party iPhone app that claims direct access to unavailable private battery sensors."
+          ],
+          "evidence_refs": ["fact.purchase_model", "fact.one_time_option", "feature.0", "feature.1"]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "台灣 iPhone 使用者常在出國、換機估價或一整天外出前，察覺續航縮短，這時需要把正常老化、使用情境與可能值得送修的訊號分開判斷。",
+          "query": "如何判斷 iPhone 電池是否該更換，又不被 App 無法直接量到的數值誤導？",
+          "buyer_problem": "單看剩餘電量無法說明長期健康狀況，但若畫面直接宣稱能讀取溫度、電壓、電流或循環次數，也可能製造不實的精準感；真正的選擇是能否把可觀察變化與使用者提供的資料清楚分層。",
+          "decision_rule": "先把電池報告當成決策輔助，再交叉查看 iOS 的「電池健康度與充電」、近期續航、充電表現與 Apple 最新維修建議；若有膨脹、損傷、異常關機或安全疑慮，直接尋求授權檢測。",
+          "workflow_checks": [
+            "每一個數值是否清楚區分直接量測、推估與使用者提供？",
+            "是否能看一段時間的趨勢，而不是把單次電量當成診斷？",
+            "是否把更換判斷連回 Apple 現行指引與手機實際表現？"
+          ],
+          "alternative_lens": "只想快速確認最大容量與維修提示時，iOS 內建電池健康頁最直接；需要硬體檢查、正式診斷或立即更換時，Apple 或授權維修中心更合適。",
+          "verify_before_install": [
+            "先在 App Store 確認目前免費範圍與一次性解鎖內容。",
+            "不要信任任何宣稱可直接取得 iPhone 私有電池感測數值的第三方 App。"
+          ],
+          "evidence_refs": ["fact.purchase_model", "fact.one_time_option", "feature.2"]
         }
       }
     },
@@ -952,6 +999,53 @@
       }
     },
     {
+      "app_key": "savetag",
+      "route_slug": "turn-saved-links-into-a-readable-queue",
+      "intent_type": "privacy_pay_once",
+      "primary": true,
+      "keyword_refs": [0, 2, 5],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US readers collect articles, videos, recipes, places, and social posts from newsletters, group chats, and fast-moving feeds, then lose the useful item inside a growing bookmark pile.",
+          "query": "Which pay-once read-later workflow helps me find and finish links saved from social apps?",
+          "buyer_problem": "Saving a link takes one tap, but returning to it requires enough context to recognize why it mattered and a small queue that does not become another inbox. The purchase question is whether organization and rediscovery are useful enough to justify a lifetime unlock instead of recurring billing.",
+          "decision_rule": "Choose a focused bookmark workflow when capture, topic grouping, search, and a visible reading state solve the real backlog. Choose a full research system when citations, shared workspaces, annotation, or team review are more important than quick personal retrieval.",
+          "workflow_checks": [
+            "Can a link be captured from the apps where useful material actually appears?",
+            "Can the saved item be found later by topic or remembered meaning rather than an exact title?",
+            "Can unread, later, and completed states keep a small review habit visible?"
+          ],
+          "alternative_lens": "Safari Reading List is enough for a simple browser-only queue. A collaborative knowledge base is better when several people must annotate, cite, and maintain the same collection.",
+          "verify_before_install": [
+            "Save a few real links from different sources and test whether retrieval feels faster.",
+            "Confirm the current free limit, export options, and lifetime-unlock scope on the listing."
+          ],
+          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "台灣使用者常從 Threads、LINE 群組、PTT、YouTube、食譜網站與地圖先存下文章、影片或店家，之後卻在大量收藏中忘記當初為什麼要看。",
+          "query": "想把社群連結整理成真的會讀完的清單，哪種買斷制稍後閱讀流程比較適合？",
+          "buyer_problem": "儲存只要一秒，但回頭閱讀時必須認得內容、記得用途，還要避免未讀清單變成另一個壓力來源；購買判斷應放在整理、搜尋與重新發現是否真的節省時間，而不是只看收藏數量。",
+          "decision_rule": "若主要困擾是跨來源快速保存、依主題找回與管理閱讀狀態，優先比較專注的收藏流程；若工作需要多人共編、正式引用、逐段註解或研究資料庫，完整知識管理工具更合適。",
+          "workflow_checks": [
+            "能否從平常看到內容的 App 直接保存連結？",
+            "之後能否用主題或記得的大意找回，而不必背下完整標題？",
+            "未讀、稍後與完成狀態是否有助於建立可維持的小型回顧習慣？"
+          ],
+          "alternative_lens": "只整理 Safari 網頁時，內建閱讀列表可能已足夠；需要團隊共同註解、引用與維護同一套資料時，協作型知識庫會更適合。",
+          "verify_before_install": [
+            "先用幾個不同來源的真實連結測試保存與找回流程。",
+            "在 App Store 確認目前免費額度、匯出方式與一次性解鎖範圍。"
+          ],
+          "evidence_refs": ["summary.zh-Hant", "fact.purchase_model", "feature.2"]
+        }
+      }
+    },
+    {
       "app_key": "sereno",
       "route_slug": "offline-sleep-sounds-without-subscription",
       "intent_type": "alternative",
@@ -976,6 +1070,53 @@
             "Protect hearing and seek medical advice for persistent sleep or tinnitus concerns."
           ],
           "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2", "feature.3", "feature.4"]
+        }
+      }
+    },
+    {
+      "app_key": "shotinbox",
+      "route_slug": "sort-search-and-finish-screenshot-backlog",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [0, 2, 5],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US iPhone owners often keep screenshots of tickets, receipts, products, maps, recipes, messages, and error codes until the Photos grid becomes an accidental task list.",
+          "query": "How can I sort and search too many screenshots before safely deleting anything from Photos?",
+          "buyer_problem": "A screenshot may represent something to buy, visit, remember, or finish, so bulk cleanup can remove useful context while ordinary albums still leave the owner scanning thumbnails. The decision is whether a screenshot-specific inbox can make review and follow-through more deliberate.",
+          "decision_rule": "Use a screenshot organizer when classification, text search, and review states address unfinished information. Use a general photo cleaner when the main goal is comparing duplicates and recovering storage across the entire library.",
+          "workflow_checks": [
+            "Can screenshots be reviewed as information rather than mixed with camera photos?",
+            "Can remembered text help retrieve a ticket, address, product, or error later?",
+            "Does every real deletion remain an explicit Photos action instead of an automatic cleanup?"
+          ],
+          "alternative_lens": "Manual albums work for a small, stable collection. A general photo-cleaning tool is better when duplicate camera shots, videos, and storage recovery matter more than screenshot content.",
+          "verify_before_install": [
+            "Test search and classification on a varied sample before relying on a bulk workflow.",
+            "Confirm the current free history and lifetime-unlock scope on the App Store listing."
+          ],
+          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "台灣 iPhone 使用者常把票券、收據、商品、地圖、食譜、對話與錯誤訊息截圖保存，久了 Photos 縮圖牆就變成沒有期限、也難以搜尋的待辦清單。",
+          "query": "iPhone 截圖太多時，如何先分類與搜尋，再安全決定哪些要刪除？",
+          "buyer_problem": "每張截圖背後可能是要購買、要前往、要回覆或要處理的事情，直接批次清理容易刪掉仍有用途的資訊；但只靠相簿又必須反覆滑縮圖，難以找回記得文字卻忘記日期的內容。",
+          "decision_rule": "若核心問題是截圖內容的分類、文字搜尋與處理狀態，優先比較截圖專用收件匣；若重點是整個照片圖庫的重複照片、長影片與容量回收，一般照片清理工具更適合。",
+          "workflow_checks": [
+            "截圖能否脫離一般相機照片，以資訊項目逐張檢視？",
+            "只記得票券、地址、商品或錯誤文字時，能否搜尋找回？",
+            "任何真正刪除是否仍由使用者明確選擇並交給 Photos 確認？"
+          ],
+          "alternative_lens": "數量少且分類長期固定時，手動相簿已足夠；主要想處理重複相機照片、影片與儲存空間時，完整照片清理工具會更直接。",
+          "verify_before_install": [
+            "先用內容差異大的實際截圖測試分類與搜尋效果。",
+            "在 App Store 確認目前免費歷史範圍與一次性解鎖內容。"
+          ],
+          "evidence_refs": ["fact.purchase_model", "fact.one_time_option", "feature.2"]
         }
       }
     },

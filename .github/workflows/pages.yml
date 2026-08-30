@@ -35,11 +35,47 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Quarantine unavailable App Store pages
         run: python3 _engine/geo/live_app_guard.py --site-root .
-      - name: Write immutable deployment manifest
+      - name: Prepare externally bound high-intent deployment
+        env:
+          APP_STORE_PROVIDER_TOKEN: "118326163"
+          GITHUB_TOKEN: ${{ github.token }}
+          GROWTH_ENGINE_DEPLOY_KEY: ${{ secrets.GROWTH_ENGINE_DEPLOY_KEY }}
         run: |
-          mkdir -p .well-known
-          printf '{"version":1,"source_commit":"%s"}\n' \
-            "$(git rev-parse HEAD)" > .well-known/deployment.json
+          set -euo pipefail
+          source_dir="$GITHUB_WORKSPACE/.high-intent-growth-source"
+          key_file="$RUNNER_TEMP/growth-deploy-key-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          known_hosts="$RUNNER_TEMP/growth-known-hosts-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          cleanup_growth_source() {
+            rm -f "$key_file" "$known_hosts"
+            rm -rf "$source_dir"
+          }
+          trap cleanup_growth_source EXIT
+          [[ ! -e "$source_dir" && ! -L "$source_dir" ]]
+          umask 077
+          printf '%s\n' "$GROWTH_ENGINE_DEPLOY_KEY" > "$key_file"
+          unset GROWTH_ENGINE_DEPLOY_KEY
+          curl --fail --silent --show-error \
+            --retry 3 --retry-all-errors \
+            --header "Accept: application/vnd.github+json" \
+            --header "Authorization: Bearer $GITHUB_TOKEN" \
+            --header "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/meta \
+            | jq -er '.ssh_keys[] | "github.com " + .' > "$known_hosts"
+          unset GITHUB_TOKEN
+          GIT_SSH_COMMAND="ssh -i $key_file -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$known_hosts" \
+            git clone --depth 1 --branch main --single-branch --no-tags \
+              git@github.com:alice51849/00_GrowthEngine.git "$source_dir"
+          engine_revision="$(git -C "$source_dir" rev-parse HEAD)"
+          rm -f "$key_file" "$known_hosts"
+          python3 _engine/geo/high_intent_decision_routes.py \
+            --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \
+            --output-dir "$GITHUB_WORKSPACE" \
+            --prepare-pages-deployment \
+            --source-commit "$(git rev-parse HEAD)" \
+            --current-source-root "$source_dir/geo" \
+            --engine-source-revision "$engine_revision"
+          rm -rf "$source_dir"
+          trap - EXIT
       - name: Preserve syndication notifiers and prune engine/tooling
         run: |
           cp _engine/geo/notify_websub.py "$RUNNER_TEMP/notify_websub.py"
@@ -72,22 +108,44 @@ jobs:
         env:
           DEPLOYMENT_MANIFEST_URL: >-
             https://alice51849.github.io/ios-app-guide/.well-known/deployment.json
+          ROUTE_MANIFEST_URL: >-
+            https://alice51849.github.io/ios-app-guide/data/high-intent-decision-routes/expected-output-manifest.json
         run: |
-          expected="$(jq -er '.source_commit' .well-known/deployment.json)"
+          fields='{version,source_commit,engine_source_revision,source_contract_digest,route_manifest_digest,route_count,app_count,candidate_app_locale_pairs,abstained_pairs,fallback_records}'
+          expected="$(
+            jq -ceS \
+              "$fields |
+              if any(.[]; . == null)
+              then error(\"missing deployment field\")
+              else .
+              end |
+              select(.version == 3 and .app_count > 0 and .route_count > 0 and
+                .fallback_records == 0)" \
+              .well-known/deployment.json
+          )"
+          expected_source="$(jq -er '.source_commit' .well-known/deployment.json)"
+          expected_route_digest="$(jq -er '.route_manifest_digest' .well-known/deployment.json)"
           for attempt in {1..30}; do
-            live="$(
+            live_deployment="$(
               curl -fsS --retry 2 --retry-all-errors \
                 --connect-timeout 10 --max-time 20 \
                 "${DEPLOYMENT_MANIFEST_URL}?run=${GITHUB_RUN_ID}-${attempt}" \
-              | jq -er '.source_commit' 2>/dev/null || true
+              | jq -cS "$fields" 2>/dev/null || true
             )"
-            if [[ "$live" == "$expected" ]]; then
-              echo "Exact deployment is live: $live"
+            live_route_digest="$(
+              curl -fsS --retry 2 --retry-all-errors \
+                --connect-timeout 10 --max-time 20 \
+                "${ROUTE_MANIFEST_URL}?run=${GITHUB_RUN_ID}-${attempt}" \
+              | jq -er '.manifest_digest' 2>/dev/null || true
+            )"
+            if [[ "$live_deployment" == "$expected" ]] &&
+              [[ "$live_route_digest" == "$expected_route_digest" ]]; then
+              echo "Exact deployment is live: $expected_source"
               exit 0
             fi
             sleep 10
           done
-          echo "Expected deployment never reached the public CDN: $expected" >&2
+          echo "Expected deployment never reached the public CDN: $expected_source" >&2
           exit 1
       - name: Notify WebSub subscribers
         id: notify_websub

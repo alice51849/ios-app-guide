@@ -157,6 +157,12 @@ jobs:
       - name: Close preflight sitemap graph
         run: |
           cd _engine/geo
+          # Standard.site sync post-processes route heads. Re-materialize so
+          # those verified links are preserved and sealed into byte digests.
+          python3 high_intent_decision_routes.py \
+            --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \
+            --output-dir "$GITHUB_WORKSPACE" \
+            --materialize-current-inventory
           # Materialization can add locale and per-App sitemaps. Close their
           # recursive union before the full-tree hygiene test inspects it.
           python3 dedupe_locale_meta.py --apply

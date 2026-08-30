@@ -61,9 +61,9 @@ class GeoDailyFailFastContractTests(unittest.TestCase):
             index for index, command in enumerate(commands)
             if "--check-materialization-closure" in command
         ]
-        self.assertEqual(1, len(generators))
+        self.assertGreaterEqual(len(generators), 1)
         self.assertEqual(1, len(closures))
-        generator = generators[0]
+        generator = generators[-1]
         closure = closures[0]
         self.assertLess(generator, closure)
 
@@ -103,7 +103,7 @@ class GeoDailyFailFastContractTests(unittest.TestCase):
                 "Unlink site dir",
             ),
         )
-        self.assertEqual(4, self.source.count("--materialize-current-inventory"))
+        self.assertEqual(5, self.source.count("--materialize-current-inventory"))
         self.assertEqual(4, self.source.count("--check-materialization-closure"))
         for segment in segments:
             self.assert_high_intent_closure(segment)

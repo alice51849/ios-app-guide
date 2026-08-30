@@ -24,6 +24,7 @@ from urllib.parse import parse_qsl, urlsplit
 import app_store_storefronts
 import gen_store_attribution
 from official_locales import OFFICIAL_LOCALES
+import sync_standard_site
 
 
 HERE = Path(__file__).resolve().parent
@@ -43,6 +44,7 @@ SYNC_ENGINE_FILES = (
     Path("gen_store_attribution.py"),
     Path("official_locales.py"),
     Path("publish.py"),
+    Path("sync_standard_site.py"),
 )
 INVENTORY_FILENAME = "verified-ios-app-finder-catalog.json"
 MANAGED_OWNER = "high_intent_decision_routes"
@@ -1960,8 +1962,19 @@ def _rendered_outputs(
     rendered: dict[Path, tuple[str, str]] = {}
     for record in records:
         relative = route_relative(record)
-        _managed_route_target(output_dir, relative)
-        rendered[relative] = ("route_html", render_html(record))
+        target = _managed_route_target(output_dir, relative)
+        text = render_html(record)
+        try:
+            previous = target.read_text(encoding="utf-8")
+        except FileNotFoundError:
+            previous = ""
+        if previous:
+            text = sync_standard_site.preserve_managed_links(
+                previous,
+                text,
+                label=relative.as_posix(),
+            )
+        rendered[relative] = ("route_html", text)
     publication_report = {
         **report,
         "publication": {

@@ -19,6 +19,30 @@ import public_market_coverage as coverage
 SITE = coverage.DEFAULT_SITE
 DIGEST = "a" * 64
 COMMIT = "b" * 40
+ENGINE_REVISION = "c" * 40
+CONTRACT_DIGEST = "d" * 64
+ROUTE_DIGEST = "e" * 64
+DEPLOYMENT_ID = (
+    f"github-pages:{COMMIT}:{ENGINE_REVISION}:{ROUTE_DIGEST[:16]}"
+)
+
+
+def deployment_manifest(app_count: int = 2) -> dict:
+    candidate = app_count * 2
+    return {
+        "version": 3,
+        "generated_at": "2026-08-30T15:54:12Z",
+        "deployment_id": DEPLOYMENT_ID,
+        "source_commit": COMMIT,
+        "engine_source_revision": ENGINE_REVISION,
+        "source_contract_digest": CONTRACT_DIGEST,
+        "route_manifest_digest": ROUTE_DIGEST,
+        "route_count": candidate - 1,
+        "app_count": app_count,
+        "candidate_app_locale_pairs": candidate,
+        "abstained_pairs": 1,
+        "fallback_records": 0,
+    }
 
 
 def app(locale: str, key: str, app_id: str, summary: str) -> dict:
@@ -52,10 +76,7 @@ def fixture() -> dict[str, dict]:
         for locale in locales
     }
     documents: dict[str, dict] = {
-        f"{SITE}/.well-known/deployment.json": {
-            "version": 1,
-            "source_commit": COMMIT,
-        },
+        f"{SITE}/.well-known/deployment.json": deployment_manifest(),
         f"{SITE}/api/v1/ios-app-catalog/index.json": {
             "record_count": 2,
             "locale_count": 2,
@@ -170,6 +191,10 @@ class PublicMarketCoverageTests(unittest.TestCase):
         self.assertEqual(4, report["native_public_cells"])
         self.assertEqual(6, report["verified_public_endpoints"])
         self.assertEqual(COMMIT, report["deployment_source_commit"])
+        self.assertEqual(DEPLOYMENT_ID, report["deployment_id"])
+        self.assertEqual(ENGINE_REVISION, report["engine_source_revision"])
+        self.assertEqual(CONTRACT_DIGEST, report["source_contract_digest"])
+        self.assertEqual(ROUTE_DIGEST, report["route_manifest_digest"])
 
     def test_missing_feed_cell_fails_closed(self):
         documents = fixture()
@@ -270,6 +295,9 @@ class PublicMarketCoverageTests(unittest.TestCase):
         documents[
             f"{SITE}/api/v1/ios-app-catalog/index.json"
         ]["record_count"] = 3
+        documents[f"{SITE}/.well-known/deployment.json"] = (
+            deployment_manifest(app_count=3)
+        )
         report = coverage.audit_public_market_coverage(
             expected_apps=2,
             expected_locales=2,
@@ -329,6 +357,80 @@ class PublicMarketCoverageTests(unittest.TestCase):
                 workers=2,
                 fetcher=lambda url: copy.deepcopy(documents[url]),
             )
+
+
+    def test_legacy_v1_deployment_manifest_fails_closed(self):
+        documents = fixture()
+        documents[f"{SITE}/.well-known/deployment.json"] = {
+            "version": 1,
+            "source_commit": COMMIT,
+        }
+        with self.assertRaisesRegex(coverage.CoverageError, "schema v3"):
+            self.audit(documents)
+
+    def test_unbound_deployment_id_fails_closed(self):
+        documents = fixture()
+        manifest = documents[f"{SITE}/.well-known/deployment.json"]
+        manifest["deployment_id"] = (
+            f"github-pages:{COMMIT}:{ENGINE_REVISION}:{'f' * 16}"
+        )
+        with self.assertRaisesRegex(
+            coverage.CoverageError,
+            "deployment_id does not bind",
+        ):
+            self.audit(documents)
+
+    def test_broken_route_abstention_arithmetic_fails_closed(self):
+        documents = fixture()
+        manifest = documents[f"{SITE}/.well-known/deployment.json"]
+        manifest["abstained_pairs"] = manifest["abstained_pairs"] + 1
+        with self.assertRaisesRegex(
+            coverage.CoverageError,
+            "arithmetic does not close",
+        ):
+            self.audit(documents)
+
+    def test_candidate_pairs_must_match_locale_denominator(self):
+        documents = fixture()
+        manifest = documents[f"{SITE}/.well-known/deployment.json"]
+        manifest["candidate_app_locale_pairs"] = 6
+        manifest["route_count"] = 5
+        with self.assertRaisesRegex(
+            coverage.CoverageError,
+            "App/locale denominator",
+        ):
+            self.audit(documents)
+
+    def test_nonzero_fallback_records_fail_closed(self):
+        documents = fixture()
+        documents[f"{SITE}/.well-known/deployment.json"][
+            "fallback_records"
+        ] = 1
+        with self.assertRaisesRegex(
+            coverage.CoverageError,
+            "fallback_records must be exactly 0",
+        ):
+            self.audit(documents)
+
+    def test_deployment_app_count_must_match_catalog(self):
+        documents = fixture()
+        manifest = deployment_manifest(app_count=3)
+        documents[f"{SITE}/.well-known/deployment.json"] = manifest
+        with self.assertRaisesRegex(
+            coverage.CoverageError,
+            "differs from the catalog",
+        ):
+            self.audit(documents)
+
+    def test_short_lineage_commit_fails_closed(self):
+        documents = fixture()
+        manifest = documents[f"{SITE}/.well-known/deployment.json"]
+        manifest["engine_source_revision"] = "c" * 39
+        with self.assertRaisesRegex(
+            coverage.CoverageError,
+            "lineage commits are invalid",
+        ):
+            self.audit(documents)
 
 
 if __name__ == "__main__":

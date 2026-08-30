@@ -457,8 +457,17 @@ class IndexNowTests(unittest.TestCase):
             '"${{ github.event.schedule }}" == "17 5 1 * *"',
             workflow,
         )
-        self.assertIn("Write immutable deployment manifest", pages_workflow)
+        self.assertIn(
+            "Prepare externally bound high-intent deployment",
+            pages_workflow,
+        )
+        self.assertIn("--prepare-pages-deployment", pages_workflow)
+        self.assertIn("--current-source-root", pages_workflow)
+        self.assertIn("--engine-source-revision", pages_workflow)
+        self.assertIn(".version == 3", pages_workflow)
+        self.assertIn("route_manifest_digest", pages_workflow)
         self.assertIn("Verify exact deployment is live", pages_workflow)
+        self.assertIn("Exact deployment is live", pages_workflow)
         self.assertIn("steps.verify_live.outcome == 'success'", pages_workflow)
 
     def test_local_burst_refuses_unpublished_or_dirty_tree(self) -> None:

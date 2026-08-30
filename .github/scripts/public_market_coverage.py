@@ -29,7 +29,7 @@ from official_locales import OFFICIAL_LOCALE_SET  # noqa: E402
 EXPECTED_APPS = 46
 EXPECTED_LOCALES = 50
 MAX_RESPONSE_BYTES = 8 * 1024 * 1024
-HEX_40_RE = re.compile(r"^[0-9a-f]{40}$")
+GIT_OBJECT_ID_RE = re.compile(r"^[0-9a-f]{40}(?:[0-9a-f]{24})?$")
 HEX_64_RE = re.compile(r"^[0-9a-f]{64}$")
 APP_KEY_RE = re.compile(r"^[a-z0-9][a-z0-9-]{0,63}$")
 APP_ID_RE = re.compile(r"^[0-9]{7,12}$")
@@ -223,6 +223,87 @@ def _has_expected_script(locale: str, text: str) -> bool:
     )
 
 
+def _validate_deployment(
+    document: dict[str, Any],
+    *,
+    expected_apps: int,
+    expected_locales: int,
+) -> dict[str, Any]:
+    """Strictly validate the schema-v3 externally bound deployment manifest."""
+    if document.get("version") != 3:
+        raise CoverageError("deployment manifest is not schema v3")
+    source_commit = _text(
+        document.get("source_commit"),
+        "deployment source_commit",
+    )
+    engine_revision = _text(
+        document.get("engine_source_revision"),
+        "deployment engine_source_revision",
+    )
+    if (
+        GIT_OBJECT_ID_RE.fullmatch(source_commit) is None
+        or GIT_OBJECT_ID_RE.fullmatch(engine_revision) is None
+    ):
+        raise CoverageError("deployment lineage commits are invalid")
+    contract_digest = _text(
+        document.get("source_contract_digest"),
+        "deployment source_contract_digest",
+    )
+    route_digest = _text(
+        document.get("route_manifest_digest"),
+        "deployment route_manifest_digest",
+    )
+    if (
+        HEX_64_RE.fullmatch(contract_digest) is None
+        or HEX_64_RE.fullmatch(route_digest) is None
+    ):
+        raise CoverageError("deployment lineage digests are not SHA-256")
+    deployment_id = _text(
+        document.get("deployment_id"),
+        "deployment deployment_id",
+    )
+    if deployment_id != (
+        f"github-pages:{source_commit}:{engine_revision}:{route_digest[:16]}"
+    ):
+        raise CoverageError("deployment_id does not bind the declared lineage")
+    app_count = document.get("app_count")
+    route_count = document.get("route_count")
+    candidate_pairs = document.get("candidate_app_locale_pairs")
+    abstained_pairs = document.get("abstained_pairs")
+    for field, value in (
+        ("app_count", app_count),
+        ("route_count", route_count),
+        ("candidate_app_locale_pairs", candidate_pairs),
+        ("abstained_pairs", abstained_pairs),
+    ):
+        if type(value) is not int or value < 0:
+            raise CoverageError(f"deployment {field} must be a whole number")
+    if app_count < expected_apps:
+        raise CoverageError("deployment App denominator fell below SLA floor")
+    if candidate_pairs != app_count * expected_locales:
+        raise CoverageError(
+            "deployment candidate pairs contradict the App/locale denominator"
+        )
+    if route_count + abstained_pairs != candidate_pairs:
+        raise CoverageError(
+            "deployment route and abstention arithmetic does not close"
+        )
+    if route_count < 1:
+        raise CoverageError("deployment published no high-intent routes")
+    if document.get("fallback_records") != 0 or type(
+        document.get("fallback_records")
+    ) is not int:
+        raise CoverageError("deployment fallback_records must be exactly 0")
+    return {
+        "source_commit": source_commit,
+        "engine_source_revision": engine_revision,
+        "source_contract_digest": contract_digest,
+        "route_manifest_digest": route_digest,
+        "deployment_id": deployment_id,
+        "app_count": app_count,
+    }
+
+
 def _validate_index(
     document: dict[str, Any],
     *,
@@ -401,12 +482,12 @@ def audit_public_market_coverage(
     reviewed_ids = reviewed_app_ids or load_reviewed_app_ids()
     if len(reviewed_ids) < expected_apps:
         raise CoverageError("reviewed App manifest fell below SLA floor")
-    source_commit = _text(
-        deployment.get("source_commit"),
-        "deployment source_commit",
+    lineage = _validate_deployment(
+        deployment,
+        expected_apps=expected_apps,
+        expected_locales=expected_locales,
     )
-    if deployment.get("version") != 1 or HEX_40_RE.fullmatch(source_commit) is None:
-        raise CoverageError("deployment manifest is invalid")
+    source_commit = lineage["source_commit"]
     index = fetch(f"{site}/api/v1/ios-app-catalog/index.json")
     observed_apps, digest, locale_rows = _validate_index(
         index,
@@ -418,6 +499,10 @@ def audit_public_market_coverage(
     if observed_apps != len(reviewed_ids):
         raise CoverageError(
             "deployed App denominator differs from reviewed App manifest"
+        )
+    if lineage["app_count"] != observed_apps:
+        raise CoverageError(
+            "deployment manifest App denominator differs from the catalog"
         )
 
     def load_pair(row: dict[str, str]) -> tuple[str, dict[str, Any], dict[str, Any]]:
@@ -506,6 +591,10 @@ def audit_public_market_coverage(
         .replace("+00:00", "Z"),
         "site": site,
         "deployment_source_commit": source_commit,
+        "deployment_id": lineage["deployment_id"],
+        "engine_source_revision": lineage["engine_source_revision"],
+        "source_contract_digest": lineage["source_contract_digest"],
+        "route_manifest_digest": lineage["route_manifest_digest"],
         "content_digest": digest,
         "apps": observed_apps,
         "minimum_apps": expected_apps,

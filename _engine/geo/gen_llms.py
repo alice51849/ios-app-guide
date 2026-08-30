@@ -40,7 +40,12 @@ from app_store_storefronts import (  # noqa: E402
     verified_app_store_url,
 )
 from appstore_live import live_app_keys  # noqa: E402
-from aeo_pages import disp, pricing_profile  # noqa: E402
+from aeo_pages import (  # noqa: E402
+    CURATED_FALLBACK as _AEO_CURATED_FALLBACK,
+    disp,
+    pricing_profile,
+)
+from answer_personas import PERSONAS as _PERSONAS  # noqa: E402
 from official_locales import (  # noqa: E402
     OFFICIAL_LOCALES,
     OFFICIAL_LOCALE_SET,
@@ -141,12 +146,41 @@ EXTERNAL_REPOS = [
 ]
 
 
+# Platform built-ins and generic placeholders are not honest "alternative to"
+# targets, so they never become a comparison line.
+_GENERIC_COMP_RE = re.compile(r"^(?:apple|microsoft|google|manual)\s")
+
+# WiFi Aid documents connection behaviour and never claims to measure
+# bandwidth, so a speed-test app is not an honest comparison target.
+_DISHONEST_COMPS = frozenset({"speedtest by ookla"})
+
+
+def _fallback_competitors(key):
+    """Repo-reviewed comparisons for apps the SOV report has not measured.
+
+    Names come from aeo_pages.CURATED_FALLBACK — the same reviewed competitor
+    set the alternatives pages are built from — so llms.txt never invents a
+    rival that existing content has not already vetted.
+    """
+    entry = _AEO_CURATED_FALLBACK.get(key) or {}
+    return [
+        disp(c)
+        for c, _ in entry.get("top_competitors", [])
+        if not _GENERIC_COMP_RE.match(c) and c not in _DISHONEST_COMPS
+    ][:2]
+
+
 def load_competitors():
     out = {}
     if os.path.exists(SOV):
         data = json.load(open(SOV, encoding="utf-8"))
         for r in data.get("results", []):
             out[r["key"]] = [disp(c) for c, _ in r.get("top_competitors", [])[:2]]
+    for key in APPS:
+        if not out.get(key):
+            fallback = _fallback_competitors(key)
+            if fallback:
+                out[key] = fallback
     return out
 
 
@@ -582,7 +616,32 @@ def app_line(key, comps, live_keys):
         alt = f" {adjective} to {comps[0]}" + (f" and {comps[1]}" if len(comps) > 1 else "") + "."
     else:
         alt = ""
-    return f"- [{a['name']}]({url}): {sub} {position}{alt}".replace("  ", " ").strip()
+    line = f"- [{a['name']}]({url}): {sub} {position}{alt}".replace("  ", " ").strip()
+    persona = _persona_pain_line(key)
+    if persona:
+        line += f"\n{persona}"
+    return line
+
+
+def _persona_pain_line(key):
+    """One indented persona-and-pain line under the app entry.
+
+    Sourced from the reviewed buyer persona (answer_personas), never written
+    ad hoc, so the line can only say what a reviewed persona already says.
+    Test-prep leads keep their full text so the ETS/no-score caveat is never
+    truncated away.
+    """
+    entries = _PERSONAS.get(key) or []
+    if not entries:
+        return ""
+    entry = entries[0]
+    persona = str(entry.get("persona", "")).strip().rstrip(".")
+    lead = " ".join(str(entry.get("lead", "")).split())
+    if not persona or not lead:
+        return ""
+    if key not in SCORE_CAVEAT_APPS:
+        lead = lead.split(". ")[0].rstrip(".") + "."
+    return f"  - Who it's for: {persona} — {lead}"
 
 
 def agent_skill_install_lines(prefix=""):

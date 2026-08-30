@@ -460,6 +460,99 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 {"q": "Subscription?", "a": "No — pay-once."},
             ],
         },
+        {
+            "query": "app to stop doomscrolling at night and protect my sleep schedule",
+            "guide_title": "Late-night doomscrolling: pre-committed friction beats 1 a.m. willpower",
+            "triggers": [
+                "doomscrolling at night",
+                "stop doomscrolling",
+                "protect my sleep schedule",
+                "scrolling in bed at night",
+                "phone before bed blocker",
+                "sleep wind down mode",
+            ],
+            "persona": "shift workers and anyone whose bedtime dies to the feed",
+            "lead": "At the end of a draining shift, willpower is at its weakest — the fix is not more discipline at 1 a.m. but friction you set up earlier, while you still meant it.",
+            "paras": [
+                "LockHour Pro's Sleep Wind Down mode locks the late-night scrolling apps for the window you choose, and Morning Reset keeps the feed shut until the day has actually started. Hard Mode adds a cooldown and a confirmation before an early unlock — calm friction, not an unbreakable cage — and when the window ends everything unlocks on its own, with a Widget, Lock Screen or Dynamic Island countdown showing how long is left.",
+                "It is a one-time purchase with no subscription, no account, no ads and no tracking — usage data stays on the device. If Apple's built-in Screen Time limits already work for you, keep using them free; where LockHour earns its price is the wind-down ritual, the Hard Mode friction and focus statistics that make reclaimed evenings visible. It is not a medical or sleep-treatment tool: it adds friction, it does not promise behavior change.",
+            ],
+            "look": [
+                "A wind-down window that locks the scrolling apps at the hour you chose earlier.",
+                "A morning mode so the day does not start inside a feed.",
+                "Optional Hard Mode: cooldown plus confirmation before early unlock.",
+                "Automatic unlock when the window ends, with a visible countdown.",
+                "Pay-once, no account, no ads, no tracking.",
+            ],
+            "steps": [
+                "Pick the apps that eat your nights and set the wind-down window while you are still fresh.",
+                "Add Morning Reset if waking up into the feed is part of the problem.",
+                "Enable Hard Mode if a plain block is too easy to dismiss.",
+                "Let everything unlock automatically at the end of the window.",
+                "Check the focus statistics after a week to see what the evenings gave back.",
+            ],
+            "fits": "fits shift workers and late scrollers who need pre-committed friction at night rather than another test of 1 a.m. willpower.",
+            "faq": [
+                {
+                    "q": "Isn't Apple's built-in Screen Time enough?",
+                    "a": "If it works for you, use it — it is free. Its limits can be dismissed with a single tap, which is exactly what fails late at night; LockHour adds a deliberate cooldown, a wind-down ritual and visible statistics.",
+                },
+                {
+                    "q": "Will it cure my scrolling habit?",
+                    "a": "No app can promise behavior change, and this is not a medical or sleep-treatment tool. It makes opening the feed slower and more conscious, and makes the reclaimed time visible — that is all it claims.",
+                },
+                {
+                    "q": "What happens when the block ends?",
+                    "a": "Everything unlocks automatically — no manual re-enabling — and a widget or Lock Screen countdown shows how long is left.",
+                },
+            ],
+        },
+        {
+            "query": "focus app for adults who impulsively open apps without thinking",
+            "guide_title": "Impulse-opened apps: putting a pause between thumb and icon",
+            "triggers": [
+                "impulsively open apps",
+                "open apps without thinking",
+                "opening apps on autopilot",
+                "catch myself in an app",
+                "app blocker for impulse",
+            ],
+            "persona": "adults who catch themselves inside an app with no memory of opening it",
+            "lead": "If the problem is opening apps on autopilot rather than using them too long, the useful tool is not a usage report — it is a pause inserted between the thumb and the icon.",
+            "paras": [
+                "LockHour Pro's Quick Focus starts a short block in one tap, Study Mode runs Pomodoro-style cycles with breaks, and Hard Mode puts a cooldown and a confirmation in front of an early unlock — turning an impulse into a conscious choice. Streaks and reclaimed-hours statistics make the change visible instead of vague.",
+                "There is no account and no tracking, and it is a one-time purchase with no subscription. One honest limit: any iOS blocker can be removed by the person who set it up. LockHour's design makes unlocking slower and more deliberate, which is what helps with impulsive opens — no app can stop someone who has firmly decided to scroll. It is a focus utility, not an ADHD treatment or medical product; if attention issues affect your daily life, talk to a clinician.",
+            ],
+            "look": [
+                "One-tap short blocks for the moment you notice the autopilot.",
+                "A cooldown plus confirmation before early unlock, so an impulse must become a decision.",
+                "Pomodoro-style focus cycles with breaks.",
+                "Streaks and reclaimed-hours statistics you can actually see.",
+                "No account, no tracking, pay-once.",
+            ],
+            "steps": [
+                "Pick the two or three apps you open without thinking.",
+                "Use Quick Focus the moment you catch the autopilot.",
+                "Enable Hard Mode so an early unlock needs a cooldown and a confirmation.",
+                "Run Study Mode cycles for longer work blocks.",
+                "Watch the streak — the point is making the impulse visible.",
+            ],
+            "fits": "fits adults whose problem is unconscious opening rather than screen-time totals, and who want the unlock made slower and more deliberate.",
+            "faq": [
+                {
+                    "q": "Couldn't I just disable the blocker?",
+                    "a": "Yes — every iOS blocker can be removed by its owner. The design goal is to make that slower and more conscious, which is what interrupts an impulse; nothing can stop a firm decision to scroll.",
+                },
+                {
+                    "q": "Is this an ADHD app?",
+                    "a": "No. LockHour is a focus utility, not an ADHD treatment or a medical product. If attention issues affect your daily life, talk to a clinician.",
+                },
+                {
+                    "q": "Is it a subscription?",
+                    "a": "No — it is a single one-time purchase, with no account and no tracking.",
+                },
+            ],
+        },
     ],
     "gmoney": [
         {
@@ -1943,6 +2036,98 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
             ],
         },
+        {
+            "query": "calculator app that remembers my tax rate and keeps named history for invoices",
+            "guide_title": "Freelance quoting maths: a calculator that remembers your rates",
+            "triggers": [
+                "remembers my tax rate",
+                "named history for invoices",
+                "saved tax rate calculator",
+                "calculator for freelance quotes",
+                "keeps my tax rate",
+            ],
+            "persona": "freelancers and side-hustlers who redo the same amount, tax and discount maths every week",
+            "lead": "The built-in calculator makes you re-type the tax rate every time, and last week's quote evaporates the moment you close it — what a freelancer needs is memory, not more buttons.",
+            "paras": [
+                "CalDaily's Discount & Tax tool stores your defaults, so your local VAT or sales-tax rate is set once and reused; seven more advanced tools cover tip and split, unit conversion, date differences and business days, loan payments and trip fuel cost. Every result can be named, typed and searched later; history is grouped by day, filterable by tool, and exports to CSV for a spreadsheet.",
+                "One theme is free and each advanced tool gives three free results, so you can test the workflow before the single one-time purchase that unlocks all themes and unlimited tool use — no subscription, no account, no cloud, no ads, no analytics; everything stays on the device. It is a calculator with memory, not tax software: verify rates with your tax authority, as nothing here is tax or accounting advice.",
+            ],
+            "look": [
+                "Defaults that persist — set your local VAT or sales-tax rate once.",
+                "Results you can name, type and search when the invoice question comes back.",
+                "History grouped by day with CSV export for reconciliation.",
+                "A one-time unlock rather than a subscription.",
+                "On-device only: no account, cloud, ads or analytics.",
+            ],
+            "steps": [
+                "Set your usual tax rate and discount as tool defaults.",
+                "Run the quote and name the result after the client or job.",
+                "Search the history when the invoice or reconciliation question arrives.",
+                "Export CSV if the numbers need to reach a spreadsheet.",
+                "Use the free results per tool to judge it before the one-time unlock.",
+            ],
+            "fits": "fits freelancers who quote with the same tax and discount maths weekly and want each result named and findable — memory, not tax advice.",
+            "faq": [
+                {
+                    "q": "The built-in calculator is free — why pay?",
+                    "a": "If it covers you, keep it. What CalDaily sells is memory: saved defaults and a named, searchable history — not smarter arithmetic.",
+                },
+                {
+                    "q": "Does it know my country's tax rates?",
+                    "a": "No — you set your local VAT or sales-tax rate yourself as a default. Verify rates with your tax authority; this is not tax or accounting advice.",
+                },
+                {
+                    "q": "Is my history uploaded anywhere?",
+                    "a": "No — history stays on the device; there is no account, cloud sync, ads or analytics.",
+                },
+            ],
+        },
+        {
+            "query": "app to split a dinner bill with tip and still find the math a week later",
+            "guide_title": "Splitting the dinner bill: keeping the maths, not the debts",
+            "triggers": [
+                "split a dinner bill with tip",
+                "find the math a week later",
+                "tip and split history",
+                "always handed the bill",
+                "remember how we split the bill",
+            ],
+            "persona": "the friend who always gets handed the bill",
+            "lead": "Splitting a bill at the table is easy; the hard part comes a week later when someone asks what they paid — and the built-in calculator remembers nothing.",
+            "paras": [
+                "CalDaily's Tip & Split tool remembers your usual party size and tip percentage, works from a Home Screen widget without opening the app, and lets you name the result — 'Friday dinner' — so it is searchable later, with history grouped by day, filterable and exportable to CSV.",
+                "Be clear about what it is not: CalDaily is not an expense-splitting or IOU tracker — it keeps the calculation and its result, it does not track running balances between people. If you need that, use a dedicated shared-expenses tool; CalDaily fits the person who settles at the table and just wants the maths to survive. Free to try with three free results per tool; a single one-time purchase unlocks unlimited use, with no account and no subscription.",
+            ],
+            "look": [
+                "Tip and split defaults that remember last time's party size.",
+                "A Home Screen widget that does the maths without opening the app.",
+                "Named, searchable results grouped by day.",
+                "CSV export if the group wants the record.",
+                "One-time unlock, no account — and no pretence of debt tracking.",
+            ],
+            "steps": [
+                "Set your usual tip percentage and party size once.",
+                "Split from the widget at the table.",
+                "Name the result after the dinner before you pocket the phone.",
+                "Search it when the question comes back a week later.",
+                "Settle up in person — this app keeps maths, not balances.",
+            ],
+            "fits": "fits the designated bill-splitter who settles on the spot and wants the calculation findable later — not someone tracking balances between friends over time.",
+            "faq": [
+                {
+                    "q": "Is this like a shared-expenses or IOU app?",
+                    "a": "No — it keeps the calculation and its named result, not running balances. If you need to track shared expenses between friends over time, use a dedicated tool for that.",
+                },
+                {
+                    "q": "Do I have to open the app every time?",
+                    "a": "No — the Home Screen widget calculates directly and follows the active theme.",
+                },
+                {
+                    "q": "What does the purchase unlock?",
+                    "a": "Each tool gives three free results and one theme is free; a single one-time purchase unlocks the rest — no subscription, no account.",
+                },
+            ],
+        },
     ],
     "wordmatelite": [
         {
@@ -2088,6 +2273,98 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
             ],
         },
+        {
+            "query": "app to turn a csv or spreadsheet into one chart slide on iphone",
+            "guide_title": "CSV to one chart slide: the fastest honest path",
+            "triggers": [
+                "csv or spreadsheet into one chart slide",
+                "spreadsheet into one chart slide",
+                "csv into a chart slide",
+                "one chart slide on iphone",
+                "chart slide from a csv",
+            ],
+            "persona": "analysts, founders and ops people told to bring one page by morning",
+            "lead": "When the numbers are in a CSV and the meeting is tomorrow morning, the most expensive hour is the one spent dragging chart boxes around a blank deck editor.",
+            "paras": [
+                "OnePage PPT imports the CSV — or a PDF, a screenshot, pasted text — pulls the key points on the device, and picks the chart the data actually supports: column, bar, line, donut or funnel for numbers, a flow for steps, a timeline for dates, a comparison for two options. Its standing rule is the honest part: it only draws a chart the data can honestly support — it never invents figures.",
+                "The output is an editable .pptx for PowerPoint, Keynote or Google Slides, plus PDF and high-resolution PNG, with six one-tap redesigns if the first layout is not right. Everything runs on the device with no account and works offline; it is free to try, and Lifetime Pro is a single one-time purchase. One human step remains: the text takeaways are extracted automatically, so read them against the source before presenting — every element is tap-to-edit.",
+            ],
+            "look": [
+                "Direct CSV and spreadsheet import — no retyping the numbers.",
+                "Chart type chosen from the data, never a fabricated figure.",
+                "An editable .pptx out, not a flat image.",
+                "Six one-tap redesigns, with elements you can lock.",
+                "On-device and offline, free to try, one-time Lifetime Pro.",
+            ],
+            "steps": [
+                "Import the CSV or paste the table.",
+                "Check the chart type it chose matches what the data says.",
+                "Read every extracted takeaway against the source numbers.",
+                "Cycle the redesigns until it reads from the back of the room.",
+                "Export .pptx for the deck owner or PNG for the chat thread.",
+            ],
+            "fits": "fits anyone who owes a one-page number story by morning and wants the chart drawn from the data, not from imagination.",
+            "faq": [
+                {
+                    "q": "Will the AI make up numbers?",
+                    "a": "No — it only draws a chart the supplied data can honestly support and never invents figures. The text summaries still deserve a human read-through, and every element is editable.",
+                },
+                {
+                    "q": "Can the deck owner edit my slide?",
+                    "a": "Yes — it exports an editable .pptx that opens in PowerPoint, Keynote and Google Slides.",
+                },
+                {
+                    "q": "Does my data leave the phone?",
+                    "a": "No — import, extraction and layout all run on the device; it works with no network at all.",
+                },
+            ],
+        },
+        {
+            "query": "turn a photo of a whiteboard into a clean summary slide",
+            "guide_title": "From whiteboard photo to client-ready recap",
+            "triggers": [
+                "photo of a whiteboard",
+                "whiteboard into a clean summary slide",
+                "whiteboard photo to slide",
+                "workshop recap slide",
+                "whiteboard picture into a slide",
+            ],
+            "persona": "consultants and project managers who leave a workshop with one whiteboard photo and owe a recap",
+            "lead": "Everyone photographs the whiteboard; almost no one turns the photo into anything — and by next week it is just pixels whose meaning nobody remembers.",
+            "paras": [
+                "OnePage PPT imports the photo or screenshot directly, extracts the key points on the device, and lays them out as one 16:9 recap slide. Six one-tap redesigns — Cleaner, More Visual, More Professional, More Bold, More Compact, More Editorial — genuinely rebuild the layout; you can lock the elements that are right and redesign around them, and version history steps back to any earlier draft.",
+                "An honest limit: extraction quality tracks the handwriting, and a messy whiteboard will produce points you must check against the photo before anything reaches a client — no accuracy rate is promised. The photo itself never leaves the device; projects stay local and everything works offline. A general chat AI can also read a photo — the differences here are that the output is an editable .pptx layout and the photo is not uploaded anywhere. Free to try; Lifetime Pro is one purchase.",
+            ],
+            "look": [
+                "Direct photo and screenshot import, processed on the device.",
+                "A 16:9 recap layout, not a text dump.",
+                "Redesign styles that rebuild the page, with lockable elements.",
+                "Version history to recover an earlier draft.",
+                "Photo never uploaded; offline; free to try with a one-time Pro.",
+            ],
+            "steps": [
+                "Photograph the whiteboard before it is erased — straight-on if you can.",
+                "Import and extract, then check every point against the photo.",
+                "Lock the correct elements and redesign the rest.",
+                "Step back through version history if a redesign loses something.",
+                "Export .pptx or PDF and send the recap while the workshop is fresh.",
+            ],
+            "fits": "fits consultants who owe a clean recap page from a whiteboard photo and want the photo processed locally, not uploaded.",
+            "faq": [
+                {
+                    "q": "How accurate is the handwriting extraction?",
+                    "a": "No recognition rate is promised — a tidy board extracts well, a messy one will not. Check every extracted point against the photo; each one is tap-to-edit.",
+                },
+                {
+                    "q": "Why not just ask a chat AI to read the photo?",
+                    "a": "That works too. The differences: the output here is an editable .pptx layout rather than prose, and the photo stays on your device instead of being uploaded.",
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": "No — it is free to try, and Lifetime Pro is a single one-time purchase.",
+                },
+            ],
+        },
     ],
     "wifiaidlite": [
         {
@@ -2134,6 +2411,98 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 {
                     "q": "Is any of this sent anywhere?",
                     "a": "No — there is no account, no ads, no analytics and no tracking, and check history is stored only on the device.",
+                },
+            ],
+        },
+        {
+            "query": "free app to document bad wifi and internet problems as evidence for my isp",
+            "guide_title": "Documenting a bad connection: records your ISP cannot wave away",
+            "triggers": [
+                "document bad wifi",
+                "evidence for my isp",
+                "proof of internet problems",
+                "wifi complaint evidence",
+                "log connection problems for my provider",
+            ],
+            "persona": "tenants and home workers whose provider always says it looks fine from here",
+            "lead": "Without records, a complaint call is your word against the support script — what changes the conversation is a dated history of checks run while the problem was happening.",
+            "paras": [
+                "WiFi Aid Lite's evidence chain covers DNS, TCP, TLS, time to first byte, HTTP, direct IP, IPv4 and IPv6; Deep Check adds stability samples so an intermittent fault shows up as variation, and Check History keeps every timestamped result privately on the device. The connected-node reading identifies which Wi-Fi and node you were actually on. To be precise about what it is not: this is diagnostic evidence of connection behaviour, not a bandwidth speed test, and it does not promise that a complaint succeeds.",
+                "Each tool includes one complete free use, then a single lifetime unlock — no subscription, no ads, no account, no tracking. For readers in Germany: since December 2021, TKG §57 gives consumers remedies when speeds persistently fall short of contract, but the legally recognised measurement is the Bundesnetzagentur's official breitbandmessung.de procedure — WiFi Aid's records are for day-to-day incident documentation and clearer ISP conversations, not the statutory measurement.",
+            ],
+            "look": [
+                "Timestamped check history stored privately on the device.",
+                "An evidence chain — DNS, TCP, TLS, first byte, HTTP — rather than a pass/fail verdict.",
+                "Stability sampling so intermittent faults become visible.",
+                "Identification of the Wi-Fi node you were on at the time.",
+                "A real free use of every tool before a one-time lifetime unlock.",
+            ],
+            "steps": [
+                "Run a check while the problem is happening, not after it clears.",
+                "Use Deep Check when the fault is intermittent.",
+                "Let the history accumulate for a week or two before calling.",
+                "Quote specific dated results in the ISP conversation.",
+                "In Germany, also run breitbandmessung.de if you intend a formal TKG claim.",
+            ],
+            "fits": "fits tenants and home workers who need an independent, dated record of connection problems before the next support call — with no promise about the complaint's outcome.",
+            "faq": [
+                {
+                    "q": "Will this evidence force my ISP to act?",
+                    "a": "No promise of that — it gives you specific, dated observations instead of vague complaints, which makes the conversation concrete. Outcomes depend on your provider and contract.",
+                },
+                {
+                    "q": "Is this a speed test?",
+                    "a": "No — it documents connection behaviour (DNS, TCP, TLS, timing, stability), not bandwidth. In Germany, a formal TKG speed claim requires the official breitbandmessung.de measurement.",
+                },
+                {
+                    "q": "My ISP has its own app — why a third-party record?",
+                    "a": "The ISP's tool validates its own network. An independent record is timestamped, stays only on your phone, and is not maintained by the party you are complaining about.",
+                },
+            ],
+        },
+        {
+            "query": "video calls keep dropping how to tell if its my wifi router or the internet",
+            "guide_title": "Calls that drop mid-meeting: finding which layer to blame",
+            "triggers": [
+                "video calls keep dropping",
+                "calls keep dropping",
+                "freezes during meetings",
+                "meeting keeps freezing",
+                "drops during video calls",
+            ],
+            "persona": "remote workers whose meetings freeze while everything else seems fine",
+            "lead": "Intermittent drops are the worst kind of fault: rebooting the router fixes it until the next meeting, and without a layered check you never learn which layer actually failed.",
+            "paras": [
+                "WiFi Aid Lite's one-tap check tests the Wi-Fi link, DNS and the wider internet as separate layers, and its variation reading — connection looks unstable — is aimed exactly at the intermittent case; Deep Check adds stability samples over time, and Check a Website separates one struggling service from a broken connection. Results are timestamped and stay on the device, with no account.",
+                "Rebooting often helps, but it destroys the evidence: run the check first, then reboot, and the next time it happens you will know whether it was the Wi-Fi link, name resolution or the connection beyond your router. Each tool has one complete free use, then a one-time lifetime unlock with no subscription. This is diagnostic evidence, not a promised fix — results describe your connection at the time of the check.",
+            ],
+            "look": [
+                "Separate Wi-Fi, DNS and internet layers, not one verdict.",
+                "An instability reading built for intermittent faults.",
+                "Stability sampling over time, not a single snapshot.",
+                "A per-site check to rule out one service's bad day.",
+                "Free complete use of each tool; one-time unlock, no account.",
+            ],
+            "steps": [
+                "When the call freezes, run the one-tap check before touching the router.",
+                "Note which layer failed — Wi-Fi link, DNS, or beyond.",
+                "Run Deep Check afterwards to catch instability between meetings.",
+                "Check the meeting service itself to rule out its outage.",
+                "Only then reboot — and keep the dated result for the pattern.",
+            ],
+            "fits": "fits remote workers who want to stop guessing between Wi-Fi, router and provider when meetings freeze — evidence first, reboot second.",
+            "faq": [
+                {
+                    "q": "Rebooting the router usually works — why bother checking?",
+                    "a": "Rebooting leaves you with no information. One check first tells you which layer failed, so a repeating fault becomes a documented pattern instead of a mystery.",
+                },
+                {
+                    "q": "Can it fix the drops?",
+                    "a": "No — it is diagnostic evidence, not a promised fix. Results describe your connection at the time of the check; the remedy depends on which layer the evidence points to.",
+                },
+                {
+                    "q": "What does it cost?",
+                    "a": "Every tool includes one complete free use; after that a single lifetime unlock — no subscription, no ads, no account, no tracking.",
                 },
             ],
         },
@@ -2230,6 +2599,97 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 {
                     "q": "Do I need a subscription for the study tools?",
                     "a": "No — the flashcards, cloze cards and spaced repetition are in the free version, with one active notebook; the optional one-time upgrade removes that limit.",
+                },
+            ],
+        },
+        {
+            "query": "ipad notes app with built in spaced repetition flashcards for exam revision",
+            "guide_title": "Notes and spaced repetition in one place: revision without the export step",
+            "triggers": [
+                "spaced repetition flashcards for exam revision",
+                "built in spaced repetition",
+                "flashcards without leaving my notes",
+                "notes app with fsrs",
+                "stop copying notes into flashcards",
+            ],
+            "persona": "exam-season students who do not want to shuttle material between a notes app and a flashcard app",
+            "lead": "The step that kills most revision systems is the transfer: notes live in one app, flashcards in another, and moving material between them is the moment people quit.",
+            "paras": [
+                "100 Notes Studio builds the study tools into the notebook: linked flashcards and cloze cards made from your own pages, reviewed with FSRS — the open-source spaced-repetition scheduler that Anki also uses. Handwriting and PDF text recognition run on the device, so search covers titles, body text, handwriting and attachments, and audio recordings can be pinned to the page they explain.",
+                "The free version already includes the core editor, twenty-nine brushes, PDF markup, page audio, handwriting search and the study tools — one active notebook, unlimited pages, two styles — so you can test the whole loop before the single one-time upgrade that adds unlimited notebooks, all hundred styles, vector-ink PDF export, page history and encrypted backup. No account, no ads, no third-party tracking, no external AI, and it works offline. If flashcards are all you want, Anki goes deeper — the case for 100 Notes is notes, PDFs, audio and cards living in one place.",
+            ],
+            "look": [
+                "Flashcards and cloze cards created from the notes themselves.",
+                "FSRS spaced repetition — the same open scheduler Anki uses.",
+                "On-device recognition so handwriting is searchable at revision time.",
+                "Audio pinned to the page it explains.",
+                "A free tier that includes the study tools; one-time upgrade, no subscription.",
+            ],
+            "steps": [
+                "Take one lecture's notes and turn the key points into linked or cloze cards.",
+                "Run an FSRS review session the next day.",
+                "Search a term you only wrote by hand to confirm recognition.",
+                "Work offline once to confirm nothing needs a connection.",
+                "Upgrade once only if the one-notebook free tier proves the loop.",
+            ],
+            "fits": "fits exam-season students who want notes, PDFs, audio and spaced-repetition cards in one offline app instead of shuttling between two.",
+            "faq": [
+                {
+                    "q": "Anki is free and has FSRS — why this?",
+                    "a": "If flashcards are all you need, Anki is deeper. 100 Notes' case is that the notes, PDF markup, recordings and cards live in one app — and its free tier includes the study tools, so you can test that claim before paying.",
+                },
+                {
+                    "q": "Does the recognition happen in a cloud?",
+                    "a": "No — handwriting and PDF text recognition run on the device, with no account, no external AI and no third-party tracking.",
+                },
+                {
+                    "q": "What limits does the free version have?",
+                    "a": "One active notebook with unlimited pages and two of the hundred styles; the editor, brushes, PDF markup, audio, search and study tools are all included. A single one-time upgrade removes the limits.",
+                },
+            ],
+        },
+        {
+            "query": "goodnotes alternative one time purchase handwriting app ipad",
+            "guide_title": "Leaving notes subscriptions: an honest GoodNotes comparison",
+            "triggers": [
+                "goodnotes alternative",
+                "one time purchase handwriting app",
+                "handwriting app without a subscription",
+                "notes subscription fatigue",
+            ],
+            "persona": "long-time digital note-takers tired of yearly fees on a decade-long habit",
+            "lead": "Handwritten notes are a ten-year habit, so the pricing model is a fair top criterion — but an honest comparison starts by admitting that GoodNotes itself also sells a one-time edition.",
+            "paras": [
+                "As of this writing, GoodNotes lists Essential and Pro subscription tiers (about $11.99 and $35.99 per year) and — on Apple platforms — a one-time Special Edition (about $35.99) with a different feature set; pricing is subject to change, so check the App Store for today's figures. The real choice is not subscription versus not — it is which feature set you want to own outright.",
+                "100 Notes Studio is free at its core with one optional one-time upgrade: twenty-nine pens and brushes with pressure and tilt — fountain, calligraphy, fude brush, watercolor and charcoal among them — palm rejection, a hundred notebook styles, PDF markup and on-device handwriting search, with no account, no third-party tracking and no external AI. The honest difference: it has no cloud cross-platform sync or collaboration, which GoodNotes' subscription tiers are built around. It suits the single-device, own-your-backups note-taker — and the free tier lets you verify the current feature set yourself rather than trusting a roadmap.",
+            ],
+            "look": [
+                "Whether a vendor's one-time option — GoodNotes' Special Edition included — covers the features you need.",
+                "A real free tier to verify current features instead of trusting promises.",
+                "Pressure and tilt on the pens you actually write with.",
+                "On-device handwriting search, no account, no third-party tracking.",
+                "Where sync lives: 100 Notes has no cloud cross-platform sync — you own the backups.",
+            ],
+            "steps": [
+                "List what you use daily: pens, PDF markup, search, sync, collaboration.",
+                "Check GoodNotes' current one-time Special Edition against that list — it exists, with a different feature set.",
+                "Test 100 Notes' free tier with your own pen and one real PDF.",
+                "Decide whether cloud sync or collaboration is a must-have — 100 Notes does not have them.",
+                "Pay once only for the app whose current features, not promises, cover your list.",
+            ],
+            "fits": "fits single-device note-takers who want handwriting, PDFs and search owned outright, manage their own backups, and do not need cloud collaboration.",
+            "faq": [
+                {
+                    "q": "Doesn't GoodNotes only do subscriptions now?",
+                    "a": "No — alongside its subscription tiers it also sells a one-time Special Edition on Apple platforms, with a different feature set. Compare current pricing on the App Store; it changes.",
+                },
+                {
+                    "q": "Will 100 Notes keep getting updates after I pay once?",
+                    "a": "No roadmap promises here — judge it by the current feature set, which the free tier lets you verify before paying anything.",
+                },
+                {
+                    "q": "Can I sync between iPad and other platforms?",
+                    "a": "No — there is no cloud cross-platform sync or collaboration. Backups are yours to make, including encrypted backup with the one-time upgrade.",
                 },
             ],
         },

@@ -425,6 +425,7 @@ BRAND = {
     "hellochinese learn chinese": "HelloChinese", "chineseskill": "ChineseSkill",
     "chineseskill learn chinese": "ChineseSkill", "fun chinese by studycat": "Fun Chinese by Studycat",
     "anki": "Anki", "drops": "Drops", "memrise": "Memrise", "quizlet": "Quizlet",
+    "goodnotes": "GoodNotes", "pcalc": "PCalc", "ynab": "YNAB", "moneywiz": "MoneyWiz",
     "duolingo": "Duolingo", "pimsleur": "Pimsleur",
     "wanderlog": "Wanderlog", "tripit": "TripIt", "tripsy": "Tripsy", "lambus": "Lambus",
     # 2026-08 新增:Lite / 工具型 App 的常見對照組

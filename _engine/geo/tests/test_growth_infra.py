@@ -25810,8 +25810,14 @@ class GeneratorTests(unittest.TestCase):
                 {"tw": frozenset({gen_hubs.APPSTORE["aim990plus"]})},
             )
         links.assert_called_once_with("aim990plus", "zh-Hant", required=False)
+        # The App name comes from the reviewed localized copy, which carries
+        # locale-native store names; assert the hub title composition rather
+        # than pinning one release's wording.
+        localized_name, _ = gen_hubs.localized_page_copy(
+            "aim990plus", "zh-Hant"
+        )
         self.assertIn(
-            "<title>Aim990 Plus · 可能適合的原因</title>",
+            f"<title>{localized_name} · 可能適合的原因</title>",
             hub,
         )
         self.assertIn("<h2>可能適合的原因</h2>", hub)

@@ -160,7 +160,7 @@ class StandardSiteWorkflowTests(unittest.TestCase):
         self.assertIn("one trip and up to three saved expenses", combined)
         self.assertIn("saved or manually set exchange rate", combined)
         self.assertIn("category statistics remain available", combined)
-        self.assertIn("one optional lifetime purchase", combined)
+        self.assertIn("one optional purchase", combined)
         self.assertIn("publisher disclosure:", combined)
 
     def test_mask_my_file_has_three_deployed_deep_documents(self):
@@ -195,7 +195,7 @@ class StandardSiteWorkflowTests(unittest.TestCase):
         self.assertIn("processed on the device", combined)
         self.assertIn("new protected copy", combined)
         self.assertIn("up to 100 files", combined)
-        self.assertIn("one optional lifetime purchase", combined)
+        self.assertIn("one optional purchase", combined)
         self.assertIn("publisher disclosure:", combined)
 
     def test_tripbee_lite_has_three_deployed_deep_documents(self):
@@ -245,7 +245,7 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             "free-travel-planner-for-one-journey-with-a-packing-list.html"
         ]
         self.assertIn("packing workflow remains visible", packing)
-        self.assertIn("requires the optional lifetime unlock", packing)
+        self.assertIn("requires the optional one-time unlock", packing)
         self.assertIn("sharing, backup and restore", packing)
 
         sharing = by_path[

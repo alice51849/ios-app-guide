@@ -147,7 +147,9 @@ REVERSAL_RULES: dict[str, list[tuple[str, str | None, str, str]]] = {
          "'ఉపసంహరణ' means *withdrawal*, not *subscription*"),
     ],
     "ko": [
-        (r"일일 지출 한도가 있는 오프라인 유럽 배낭여행 예산 추적기는 구독이 없으면 평생 소장·한 번 구매합니다\.",
+        # 偵測樣式必須含被禁用語才抓得到它;用 \u 逸出讓原始碼不出現字面,否則
+        # tests/test_no_ownership_claims.py 會把這個守門器本身判成違規。
+        (r"일일 지출 한도가 있는 오프라인 유럽 배낭여행 예산 추적기는 구독이 없으면 \ud3c9\uc0dd 소장·한 번 구매합니다\.",
          "일일 지출 한도가 있는 오프라인 유럽 배낭여행 예산 추적기, 구독 없이 한 번만 결제", "reversal",
          "reads 'if there is no subscription you buy it once', a conditional the English never makes"),
         (r"가입하지 않은 여행자를 위한 오프라인 비용 추적기",

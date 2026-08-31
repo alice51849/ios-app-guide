@@ -207,7 +207,7 @@ COPY = {
     "app_text": (
       "ScanTo Pro is an optional iPhone tool whose current listing describes document "
       "scanning, PDF creation, OCR search and Face ID document protection with a one-time "
-      "one-time unlock. Check the current listing for exact availability and features. "
+      "unlock. Check the current listing for exact availability and features. "
       "This free planner works without the app."
     ),
     "app_cta": "View ScanTo Pro on the App Store",

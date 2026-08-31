@@ -279,7 +279,33 @@ def main():
     # 免費版優先導流:品類需求頁的商店 CTA 換成免費/Lite 版(app_pairs.py 11 對)。
     # 必須跑在 normalize/decision-cards/banner/QR/attribution 鏈之前,讓下游
     # 依「換門後」的連結重建 QR 與歸因。
+    # 換門前先拍一張身份快照(頁面 store id + social 分享圖),換門後用同一支
+    # 稽核對照。2026-08-31:換門模組把本來就正確的免費門頁翻成付費 id、分享圖
+    # 沒跟著換,gen_social_previews / gen_image_sitemap 都已經跑過了沒人會修,
+    # 雲端 geo-daily 於是連續失敗、內容生產停擺兩天。這個 gate 讓同樣的事在
+    # 發布前就擋下來,而不是隔天在雲端炸。
+    identity_before = os.path.join(HERE, "reports", "free_first_identity_before.json")
+    require(
+        [
+            PY,
+            os.path.join(HERE, "audit_free_first_identity.py"),
+            "--snapshot",
+            identity_before,
+        ],
+        env=env,
+    )
     require([PY, os.path.join(HERE, "gen_free_first_links.py")], env=env)
+    require(
+        [
+            PY,
+            os.path.join(HERE, "audit_free_first_identity.py"),
+            "--baseline",
+            identity_before,
+            "--report",
+            os.path.join(HERE, "reports", "free_first_identity.json"),
+        ],
+        env=env,
+    )
     require([PY, os.path.join(HERE, "gen_app_store_facts.py")], env=env)
     require([PY, os.path.join(HERE, "app_install_decision_routes.py")], env=env)
     # Source-of-truth lives in GrowthEngine. A newly verified App is allowed to

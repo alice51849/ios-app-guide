@@ -27,15 +27,33 @@
   • 站內指向付費版自己頁面的連結(guides/apps/alternatives)保留付費名稱 ——
     那是導向付費產品的導覽,名稱與目的地一致才誠實;它們不算「頁面文案」。
 
+鐵則(2026-08-31 生產事故後再收緊):
+  • **身份證據只有四種**:ghost 升級連結、half-swapped 指紋、`owned`(付費版
+    自己的目錄/專屬頁)、orphan_paid_copy(付費 id 全不在、文案通篇講付費版
+    且免費版名稱沒出現在文案裡)。詳見 revert_evidence。
+  • **付費模式殘留字樣不是身份證據**。免費門頁的比較段落、FAQ、「不需訂閱」
+    句子本來就會出現 `paid download`;拿它當證據還原,會把本來完全正確的免費
+    門頁翻成付費版 —— 2026-08-31 實測 317 頁,而且分享圖沒跟著換,雲端
+    gen_image_sitemap 以 `Answer image does not match App Store ID …` 連續
+    失敗,每天 4 次的內容生產停擺兩天。收不乾淨時只准「留在免費門並處理那
+    一句」或「本輪換門作廢」,不准翻身份。
+  • **身份與分享圖必須同進退**:publish.py 的順序是 gen_social_previews →
+    gen_image_sitemap → 本產生器,沒有下游會替我們修 `<key>-share.jpg`。
+    每一次換 store id 都要一起 retarget_share_image。
+  • 發布前跑 geo/audit_free_first_identity.py(publish.py 已內建前後兩趟)
+    當 gate:圖片/ID 不符與「免費門被翻成付費」任一非 0 就不准發布。
+
 配對來源:app_pairs.py(registry 自動推導,新 pair 自動適用)。
 必須登錄在 geo/publish.py 的 normalize/decision-cards/QR 鏈之前 —— 直接改輸出
 會被下一次 publish 覆蓋(見 geo-site-reality 教訓)。
 """
 import collections
+import functools
 import json
 import os
 import re
 import sys
+import unicodedata
 from datetime import datetime, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -130,6 +148,32 @@ def build_swaps():
                 "paid_slug_re": paid_slug_re(paid),
             })
     return swaps
+
+
+SHARE_IMAGE = "social/img/{}-share.jpg"
+
+
+def retarget_share_image(text, old_key, new_key):
+    """整頁換身份時,social 分享圖必須跟著換成新身份的圖。
+
+    publish.py 的順序是 gen_social_previews → gen_image_sitemap → **本產生器**,
+    所以沒有下游會替我們修:換門(或還原)後留著舊 App 的 `<key>-share.jpg`,
+    下一次 publish 的 gen_image_sitemap 就會以
+    `Answer image does not match App Store ID …` 整條炸掉 —— 2026-08-31
+    的雲端 `geo-daily` 就是這樣連續失敗、內容生產停擺兩天。
+
+    只換「這一對」的檔名,別的 App 的圖一律不碰。
+    """
+    if old_key == new_key:
+        return text
+    return text.replace(SHARE_IMAGE.format(old_key), SHARE_IMAGE.format(new_key))
+
+
+def to_free_identity(text, swap):
+    """付費 id / 名稱 / 分享圖一起換成免費版(三者必須同進退)。"""
+    out = text.replace(swap["paid_id"], swap["free_id"])
+    out = swap_names(out, swap)
+    return retarget_share_image(out, swap["paid_key"], swap["free_key"])
 
 
 def anchor_re(app_id):
@@ -273,9 +317,9 @@ def rewrite_doc(text, swap, rel=""):
     if not n:
         return text, 0
 
-    # 整頁換身份:id 與可見名稱一起換(標題/H1/卡片/內文/JSON-LD 都涵蓋)。
-    out = out.replace(pid, fid)
-    out = swap_names(out, swap)
+    # 整頁換身份:id、可見名稱與 social 分享圖一起換(標題/H1/卡片/內文/
+    # JSON-LD/og:image 都涵蓋)。
+    out = to_free_identity(out, swap)
 
     # 誠實性硬檢查:付費名稱若還在,整頁回滾 —— 寧可不換也不要自相矛盾。
     if paid_identity_left(out, swap):
@@ -310,12 +354,12 @@ def _complete_half_swapped(text, swap):
     if anchor_re(pid).search(text) or not anchor_re(fid).search(text):
         return text, 0, 0
     held_text, held = hold_paid_nav_anchors(text, swap)
-    out = held_text.replace(pid, fid)
-    out = swap_names(out, swap)
+    out = to_free_identity(held_text, swap)
     if paid_identity_left(out, swap):
         # 收不乾淨(名稱有本產生器換不動的寫法)→ 整頁還原成付費門。
         out = held_text.replace(fid, pid)
         out = swap_names(out, swap, reverse=True)
+        out = retarget_share_image(out, swap["free_key"], swap["paid_key"])
         return release_holds(out, held), 0, 1
     return release_holds(out, held), 1, 0
 
@@ -334,11 +378,8 @@ def _finish_without_fingerprint(text, swap):
     """
     if swap["paid_id"] in text:
         return _complete_half_swapped(text, swap)
-    held_text, _held = hold_paid_nav_anchors(text, swap)
-    if not paid_identity_left(held_text, swap):
-        return text, 0, 0
-    if swap["free_name"] in ANCHOR_ANY_RE.sub(" ", held_text):
-        return text, 0, 0
+    # 「文案講付費版、免費版名稱沒出現在文案裡」這兩個條件由
+    # revert_evidence 的 orphan_paid_copy 統一把關,兩邊不再各寫一份。
     out, k = revert_doc(text, swap)
     return out, 0, k
 
@@ -358,45 +399,94 @@ def finish_doc(text, swap, rel=""):
     held_text, held = hold_paid_nav_anchors(text, swap)
     if swap["paid_id"] not in held_text and not paid_identity_left(held_text, swap):
         return text, 0, 0  # 已經是乾淨的免費版身份
-    out = held_text.replace(swap["paid_id"], swap["free_id"])
-    out = swap_names(out, swap)
+    out = to_free_identity(held_text, swap)
     if paid_identity_left(out, swap):
         out, k = revert_doc(text, swap)
         return out, 0, k
     return release_holds(out, held), 1, 0
 
 
-def revert_doc(text, swap):
-    """把「之前誤換」的付費語境頁還原成付費版身份。
+def revert_evidence(text, swap, owned=False):
+    """「這一頁本來就是付費版」的證據名稱;沒有證據回 `""`。
 
-    只在免費 id 在場、且有證據顯示這頁本來是付費版時動手:
-      • 帶著本產生器自己的升級連結(= 確定是我們換的),或
-      • 付費 id 已不在、文案卻還在講付費版(第一版只換 `<a>` 留下的半套頁面),或
-      • 門(錨點)是免費版、付費 id 只剩在錨點外的 JSON-LD、文案講付費版
-        (第一版只換 href 的另一種半套;付費 id 殘留就是「本來是付費頁」的證據)。
-    以上都不成立時不動,避免把本來就是免費版的頁面誤改。
+    2026-08-31 事故的教訓:**付費模式殘留字樣(`paid download`、`upfront
+    price`)不是身份證據**。免費門頁的比較段落、FAQ、「不需訂閱」句子裡本來
+    就會出現付費字樣;拿它當證據,就會把本來完全正確的免費門頁翻成付費版
+    (實測 317 頁,而且分享圖沒跟著換,雲端 gen_image_sitemap 整條炸掉)。
+
+    可靠的證據只有四種:
+      • `ghost`:這一對的升級連結是本產生器放的 = 這頁的免費門是我們換的。
+      • `half_swapped`:門(錨點)已是免費版、付費 id 只剩在錨點外的機器區塊、
+        文案還在講付費版 —— 第一版只換 href 留下的半套頁。
+      • `owned`:付費版自己的網站目錄 / 專屬頁,卻只掛著兄弟免費版的 id。
+      • `orphan_paid_copy`:付費 id 已完全不在、文案通篇講付費版,而且免費版
+        名稱在錨點以外**一次都沒出現** —— 第一版只換 `<a>` 留下的另一種半套頁。
+        最後半句是關鍵護欄:免費版名稱只要出現在文案裡,這頁就是真的免費門。
     """
     if swap["free_id"] not in text:
-        return text, 0
-    href = f'/guides/{swap["paid_key"]}.html"'
-    ghost = swapped_by_us(text, swap)
+        return ""
+    if swapped_by_us(text, swap):
+        return "ghost"
     held_text, _held = hold_paid_nav_anchors(text, swap)
-    half_swapped = (
+    if (
         swap["paid_id"] in text
         and not anchor_re(swap["paid_id"]).search(text)
         and bool(anchor_re(swap["free_id"]).search(text))
         and paid_identity_left(held_text, swap)
-    )
-    if not ghost and not half_swapped and (
-        swap["paid_id"] in text or not paid_identity_left(held_text, swap)
     ):
+        return "half_swapped"
+    if owned and swap["paid_id"] not in text:
+        return "owned"
+    if (
+        swap["paid_id"] not in text
+        and paid_identity_left(held_text, swap)
+        and swap["free_name"] not in ANCHOR_ANY_RE.sub(" ", held_text)
+    ):
+        return "orphan_paid_copy"
+    return ""
+
+
+def revert_doc(text, swap, owned=False):
+    """把「之前誤換」的付費語境頁還原成付費版身份。
+
+    只在 `revert_evidence` 驗到證據時動手;沒有證據就一個字都不改。
+    """
+    if not revert_evidence(text, swap, owned=owned):
         return text, 0
+    return _reverse_identity(text, swap), 1
+
+
+def _reverse_identity(text, swap):
+    """機械性地把免費版身份換回付費版(升級連結一併拿掉)。"""
+    href = f'/guides/{swap["paid_key"]}.html"'
     out = GHOST_ANCHOR_RE.sub(
         lambda m: "" if href in m.group(0) else m.group(0), text
     )
     out = out.replace(swap["free_id"], swap["paid_id"])
     out = swap_names(out, swap, reverse=True)
-    return out, 1
+    return retarget_share_image(out, swap["free_key"], swap["paid_key"])
+
+
+def normalized_key(segment):
+    """路徑片段 → registry app key 的寫法(`wifi-aid` → `wifiaid`)。
+
+    站上同一支 App 的目錄有兩種歷史寫法(`apps/wifiaid/` 與更早手工建的
+    `apps/wifi-aid/`)。只比對原字串會漏掉加了連字號的那種,付費版自己的
+    官網就會被當成品類需求頁換門。
+    """
+    return re.sub(r"[^a-z0-9]+", "", segment.lower())
+
+
+def owns_page(rel, swap):
+    """這頁是不是付費版**自己的**頁(自己的網站目錄,或專屬 guide/product 頁)。"""
+    parts = rel.split(os.sep)
+    if swap["paid_key"] in parts[:-1]:
+        return True
+    if any(normalized_key(part) == swap["paid_key"] for part in parts[:-1]):
+        return True
+    base = os.path.basename(rel)
+    stem = base[:-5] if base.endswith(".html") else base
+    return normalized_key(stem) == swap["paid_key"]
 
 
 def exempt(rel, name, swap):
@@ -409,9 +499,9 @@ def exempt(rel, name, swap):
     if swap["paid_slug_re"].search(stem):
         return True
     parts = rel.split(os.sep)
-    if swap["paid_key"] in parts:  # apps/<paid>/… 決策頁
-        return True
-    if base == swap["paid_key"] + ".html":  # 專屬 guide/product 頁
+    # apps/<paid>/… 決策頁、guides/<paid>.html 專屬頁(含 `wifi-aid` 這種
+    # 加連字號的舊寫法)。
+    if owns_page(rel, swap):
         return True
     if base in PORTFOLIO_PAGES and len(parts) == 1:
         return True
@@ -463,6 +553,518 @@ def strip_stale_identity(text, swaps):
     return MOBILE_APP_IDENTITY_BLOCK_RE.sub(sub, text)
 
 
+
+# ---------------------------------------------------------------------------
+# 價格敘述跟著「門」走(2026-08-31)
+#
+# 品類需求頁的 App 卡片(`<div class="item">`)裡,「why」那一句是各語系寫死在
+# gen_full_coverage_*.py / auto_batch_runner 的當地幣別定價,例如
+# 「Auto crop. Guarantee. ₹99.」。那句是照**付費版**寫的;換門之後卡片講的是
+# 免費版(purchase_model=free_with_lifetime_unlock),旁邊卻還掛著付費版的固定
+# 價格 —— 免費 App 標一個買斷價,是不準確的敘述,而且掛的還是另一支 App 的價。
+#
+# 規則:
+#   • paid_upfront 的門 → 一次性價格寫法原封不動(那句是對的)。
+#   • free_with_lifetime_unlock 的門 → 拿掉固定價格句,換成 repo **既有**的
+#     在地化「免費開始 / 一次解鎖」說法(cluster_l10n.PRICING 與
+#     build_pages_i18n.PROFILE_PRICING,兩者都是已出貨的 50-locale 用字)。
+#   • 該語系沒有既有用字 → 只拿掉價格句,不補英文、不機翻、不新造字串。
+#   • 不寫任何解鎖價:各頁的數字都是付費版的價,免費版的解鎖價本產生器無從得知,
+#     寧可不寫也不可寫錯(誠實鐵律:一次性解鎖只保證不必訂閱,不保證使用期限;
+#     見 tests/test_no_ownership_claims.py 的黑名單)。
+# ---------------------------------------------------------------------------
+FREE_DOOR_MODEL = "free_with_lifetime_unlock"
+ITEM_BLOCK_RE = re.compile(r'<div class="item">.*?</div>', re.S)
+CARD_P_RE = re.compile(r"<p>(.*?)</p>", re.S)
+# 句子切點;數字後面接數字的 `.`/`,` 是小數/千分位(₹3.99、Rp15.000),不是句點。
+# 除了拉丁句點,還要含印度系 danda、烏爾都/阿拉伯、藏、緬、高棉、亞美尼亞句號
+# —— 少一個,整段就併成一個長片段,定價句會被字母上限誤放行。
+SENTENCE_SPLIT_RE = re.compile(
+    "([.。!！?？;；:\u0964\u0965\u06d4\u061f\u1362\u17d4\u0f0d\u104a"
+    "\u104b\u0589]+(?!\\d))"
+)
+# 幣別縮寫(非 ISO 4217 的當地寫法),來自站上實際出現過的定價句。
+EXTRA_CURRENCY = {
+    "FCFA", "CFA", "KSH", "TSH", "USH", "SH", "RS", "RP", "RM", "KR", "ZŁ",
+    "KČ", "FT", "ЛВ", "СОМ", "SOM", "ТГ", "S/", "NU", "LE", "BS",
+    "GS", "AF", "DA", "DT", "FC", "MK", "MT", "TL", "ТЕНГЕ", "ДИН", "ДЕН",
+    "ЛЕЙ", "AR", "FBU", "FR", "NAIRA", "СОМОНӢ", "РУБ", "РУБ.",
+    "तومान", "रू", "रु", "৳", "ብር", "ናቕፋ",
+    "تومان", "تومن", "درهم", "جنيه", "ريال", "دينار", "دج", "افغانی",
+    "ل", "ج", "ر", "د", "ك",
+}
+# `so'm`(烏茲別克)在 token 切分下會斷成 so + m,單獨列一條規則。
+SOM_RE = re.compile("so['ʻ\u2019]m", re.I)
+# 「數字 + k」的緬甸幣寫法(1000k)。只在片段裡沒有其他拉丁字母時才算幣別,
+# 「Supports 4K video」這種解析度寫法不會中。
+DIGITS_K_RE = re.compile(r"(?<![^\W\d_])\d[\d.,\u00a0]*[kK](?![^\W\d_])")
+LATIN_RE = re.compile(r"[A-Za-z]")
+# 單字母幣別(N500、R75、Q25、M79、K 3,000…)只在緊貼數字時才算幣別,
+# 避免把「iPhone 15」「Plan B 2」這種寫法誤判成價格。
+SINGLE_LETTER_CURRENCY_RE = re.compile(
+    r"(?<![^\W\d_])[QRNMKPLBEGZDTS][\s.\u00a0]?\d", re.U
+)
+# 詞切分:字首必須是字母,其後吃到空白/數字/標點為止 —— 天城體等文字的
+# 母音符號(Mn)不算 \\w,用 `[^\\W\\d_]+` 會把「रू」切成「र」而漏判。
+CURRENCY_WORD_RE = re.compile(r"S/|[^\W\d_][^\s\d.,;:!?()\[\]/·]*", re.U)
+# 片段裡的「字母量」上限:定價句頂多是「£14 unweyth」「₹99 one-time」這種
+# 短限定語;字多就是正文(「Vocabulary in 44 languages…」),一律不動。
+PRICE_FRAGMENT_MAX_LETTERS = 24
+PRICE_FRAGMENT_MAX_CHARS = 48
+
+ISO_4217 = {
+    "AED", "AFN", "ALL", "AMD", "ANG", "AOA", "ARS", "AUD", "AWG", "AZN",
+    "BAM", "BBD", "BDT", "BGN", "BHD", "BIF", "BMD", "BND", "BOB", "BRL",
+    "BSD", "BTN", "BWP", "BYN", "BZD", "CAD", "CDF", "CHF", "CLP", "CNY",
+    "COP", "CRC", "CUP", "CVE", "CZK", "DJF", "DKK", "DOP", "DZD", "EGP",
+    "ERN", "ETB", "EUR", "FJD", "FKP", "GBP", "GEL", "GHS", "GIP", "GMD",
+    "GNF", "GTQ", "GYD", "HKD", "HNL", "HRK", "HTG", "HUF", "IDR", "ILS",
+    "INR", "IQD", "IRR", "ISK", "JMD", "JOD", "JPY", "KES", "KGS", "KHR",
+    "KMF", "KPW", "KRW", "KWD", "KYD", "KZT", "LAK", "LBP", "LKR", "LRD",
+    "LSL", "LYD", "MAD", "MDL", "MGA", "MKD", "MMK", "MNT", "MOP", "MRU",
+    "MUR", "MVR", "MWK", "MXN", "MYR", "MZN", "NAD", "NGN", "NIO", "NOK",
+    "NPR", "NZD", "OMR", "PAB", "PEN", "PGK", "PHP", "PKR", "PLN", "PYG",
+    "QAR", "RON", "RSD", "RUB", "RWF", "SAR", "SBD", "SCR", "SDG", "SEK",
+    "SGD", "SHP", "SLE", "SLL", "SOS", "SRD", "SSP", "STN", "SVC", "SYP",
+    "SZL", "THB", "TJS", "TMT", "TND", "TOP", "TRY", "TTD", "TWD", "TZS",
+    "UAH", "UGX", "USD", "UYU", "UZS", "VES", "VND", "VUV", "WST", "XAF",
+    "XCD", "XOF", "XPF", "YER", "ZAR", "ZMW", "ZWL",
+}
+
+
+@functools.lru_cache(maxsize=1)
+def free_door_ids():
+    """換門後的免費門 id:配對免費版,且 registry 驗到的是 free_with_lifetime_unlock。
+
+    只收**配對**的免費版(paid_to_free 的右邊)。這些卡片的文案原本是照付費版
+    寫的,價格自然是付費版的價 —— 換門之後那個數字就是別支 App 的價格,一定錯。
+
+    沒有配對的免費 App(zafe / scanto / maskmyfile 等)不在這裡:它們卡片上的
+    「$3 USD one-time」是自己被寫上去的,很可能就是自己的解鎖價,本產生器沒有
+    第一方解鎖價資料可以判它錯,寧可不動也不刪掉可能正確的資訊。
+    """
+    return frozenset(
+        APPSTORE[free]
+        for free in paid_to_free().values()
+        if free in APPSTORE
+        and APPS.get(free, {}).get("purchase_model") == FREE_DOOR_MODEL
+    )
+
+
+@functools.lru_cache(maxsize=1)
+def paid_door_ids():
+    """paid_upfront 的門:那句一次性價格是對的,原封不動。"""
+    return frozenset(
+        APPSTORE[key]
+        for key, app in APPS.items()
+        if app.get("purchase_model") == "paid_upfront" and key in APPSTORE
+    )
+
+
+@functools.lru_cache(maxsize=1)
+def free_door_lines():
+    """{locale/base lang: 既有在地化的免費門說法}。只沿用 repo 已出貨的字串。
+
+    優先序:cluster_l10n.PRICING(直接寫 free_with_lifetime_unlock、句子短、
+    最貼近卡片語氣)> build_pages_i18n.PROFILE_PRICING 的 free_to_start
+    (官方 50 locale 覆蓋、aeo_pages 已經用它對應這個 purchase_model)。
+    兩邊都沒有的語系一律留空 = 只刪價格句,不補字。
+    """
+    lines = {}
+    try:
+        from build_pages_i18n import PROFILE_PRICING
+    except Exception:  # 產生器可獨立執行時就少一層來源
+        PROFILE_PRICING = {}
+    for lang, copy in PROFILE_PRICING.items():
+        text = (copy or {}).get("free_to_start")
+        if text:
+            lines[lang] = text
+    try:
+        from cluster_l10n import PRICING
+    except Exception:
+        PRICING = {}
+    for locale, copy in PRICING.items():
+        text = (copy or {}).get(FREE_DOOR_MODEL)
+        if not text:
+            continue
+        lines[locale] = text
+        lines[base_lang(locale)] = text
+    return lines
+
+
+def free_door_line(locale):
+    lines = free_door_lines()
+    if locale and locale in lines:
+        return lines[locale]
+    return lines.get(base_lang(locale) if locale else "en", "")
+
+
+def _currency_in(fragment):
+    if any(unicodedata.category(ch) == "Sc" for ch in fragment):
+        return True
+    if SINGLE_LETTER_CURRENCY_RE.search(fragment):
+        return True
+    if SOM_RE.search(fragment):
+        return True
+    match = DIGITS_K_RE.search(fragment)
+    if match and not LATIN_RE.search(fragment.replace(match.group(0), "")):
+        return True
+    for token in CURRENCY_WORD_RE.findall(fragment):
+        if token == "S/" or token.upper() in ISO_4217 \
+                or token.upper() in EXTRA_CURRENCY or token in EXTRA_CURRENCY:
+            return True
+    return False
+
+
+def is_price_claim(fragment):
+    """這個句子片段是不是「一個固定價格」的主張。
+
+    要同時滿足:有數字、有幣別記號、而且短到只可能是定價句(字母量有上限,
+    所以「Vocabulary in 44 languages…」「you're not saving $500, …」不會中)。
+    """
+    text = fragment.strip()
+    if not text or len(text) > PRICE_FRAGMENT_MAX_CHARS:
+        return False
+    if not any(ch.isdigit() for ch in text):
+        return False
+    if "<" in text or ">" in text:  # 片段裡有標記就不碰
+        return False
+    letters = re.sub(r"[\d\s\W_]+", "", text, flags=re.U)
+    if len(letters) > PRICE_FRAGMENT_MAX_LETTERS:
+        return False
+    return _currency_in(text)
+
+
+def _is_currency_abbrev(fragment):
+    """整段就是一個幣別縮寫(`Gs`、`Bs`、`Nu`、`S/`);它後面的數字才是價格。"""
+    text = fragment.strip()
+    if not text or len(text) > 5 or any(ch.isdigit() for ch in text):
+        return False
+    return _currency_in(text + "1")
+
+
+def _merge_currency_abbrev(parts):
+    """`Gs. 7,000.` 會被句點切成「Gs」「7,000」,先併回同一個片段再判定。"""
+    merged = []
+    index = 0
+    while index < len(parts):
+        fragment = parts[index]
+        delimiter = parts[index + 1] if index + 1 < len(parts) else ""
+        if (_is_currency_abbrev(fragment) and delimiter.strip(" ") in {".", "。"}
+                and index + 2 < len(parts)):
+            parts = list(parts)
+            parts[index + 2] = fragment + delimiter + parts[index + 2]
+            index += 2
+            continue
+        merged.extend([fragment, delimiter])
+        index += 2
+    return merged
+
+
+def strip_price_claims(text):
+    """回 (剩下的文字, 拿掉幾個定價句)。"""
+    parts = _merge_currency_abbrev(SENTENCE_SPLIT_RE.split(text))
+    kept = []
+    removed = 0
+    for index in range(0, len(parts), 2):
+        fragment = parts[index]
+        delimiter = parts[index + 1] if index + 1 < len(parts) else ""
+        if is_price_claim(fragment):
+            removed += 1
+            continue
+        kept.append(fragment + delimiter)
+    return re.sub(r"\s+", " ", "".join(kept)).strip(), removed
+
+
+def _rewrite_card_pricing(block, line):
+    removed = [0]
+
+    def sub(match):
+        inner = match.group(1)
+        stripped, count = strip_price_claims(inner)
+        if not count:
+            return match.group(0)
+        if line:
+            stripped = (stripped + " " + line).strip()
+        elif not stripped:
+            # 沒有既有在地化用字、拿掉價格後整句會空掉 → 整段描述移除,
+            # 卡片仍有 App 名稱與 CTA;寧可少一句,也不要留下不準確的價格。
+            removed[0] += count
+            return ""
+        removed[0] += count
+        return "<p>" + stripped + "</p>"
+
+    return CARD_P_RE.sub(sub, block), removed[0]
+
+
+def enforce_free_door_pricing(text, rel=""):
+    """免費門的 App 卡片不可掛付費版的固定價格。回 (new_text, 修掉幾句)。"""
+    free_ids = free_door_ids()
+    if not any(("id" + app_id) in text for app_id in free_ids):
+        return text, 0
+    paid_ids = paid_door_ids()
+    line = free_door_line(locale_of(rel))
+    fixed = [0]
+
+    def sub(match):
+        block = match.group(0)
+        if not any(("id" + app_id) in block for app_id in free_ids):
+            return block
+        if any(("id" + app_id) in block for app_id in paid_ids):
+            return block  # 同一張卡同時掛兩支 App = 判不準,不動
+        new_block, count = _rewrite_card_pricing(block, line)
+        fixed[0] += count
+        return new_block
+
+    return ITEM_BLOCK_RE.sub(sub, text), fixed[0]
+
+
+# ---------------------------------------------------------------------------
+# 購買模式的事實跟著「門」走(2026-08-31)
+#
+# 換門只換「身份」(名稱、store id、JSON-LD),沒有依免費版 registry 重算
+# **購買模式**的事實。結果是換門後的頁面把免費 App 描述成付費下載:
+#
+#   • 卡片 pill / 決策卡 fact / JSON-LD featureList:`Paid download`、`付費下載`
+#   • 商店標語句:`… Paid download · Pay once · No subscription.`
+#   • 「最適合」欄:`Paid download; Pay once; No subscription`
+#   • 定價敘述句:`Paid download with one upfront price and no subscription.`
+#
+# 這些字串都是**付費版 registry 的 tag / cta_bullets / purchase_model 標籤**被
+# 寫進頁面的結果;換門後頁面講的是 free_with_lifetime_unlock 的免費版,「付費
+# 下載」就是假話(canon 原生 0 頁,100% 是換門造成的)。
+#
+# 規則(與 enforce_free_door_pricing 同一套紀律):
+#   • 只在**免費門**頁動手:頁面帶配對免費版的 id、而且整頁沒有任何
+#     paid_upfront App 的 id(roundup 這種同頁列多支 App 的頁面判不準,不動)。
+#   • 只沿用 repo **既有**的在地化字串:
+#       - portfolio_app_finder.UI / high_intent_decision_routes.UI /
+#         publisher_intent_catalog.PURCHASE_LABELS 的 purchase-model 標籤,
+#         同一個 locale 的 paid_upfront ↔ free_with_lifetime_unlock 直接對映;
+#       - build_pages_i18n.PAID_UPFRONT_PRICING ↔ PROFILE_PRICING.free_to_start;
+#       - build_pages.pricing_copy(付費 key) ↔ pricing_copy(免費 key);
+#       - 英文短標籤退回 registry 自己的 bullet 用字 `Free to start`。
+#     不機翻、不新造、不補英文。
+#   • 升級連結(ghost)與指向付費版自己頁面的導覽連結先收起來:那些字是對的。
+#   • 換完再掃一次:只要還留著「明講付費下載 / 一次付清價格」的字樣(例如
+#     gen_cost_compare 的 `Paid download · one upfront price · no subscription.`
+#     與它的散文句,本模組沒有對應的免費寫法),**整頁還原成付費門** ——
+#     本模組既有鐵則:寧可少一次導流,也不要留下錯誤描述。
+# ---------------------------------------------------------------------------
+# registry 自己的免費門 bullet 用字(11 支 Lite 的慣例)。英文短標籤用它,
+# 比 finder 的「Free to start · one-time unlock」更貼近 pill / featureList 語氣。
+REGISTRY_FREE_START_BULLET = "Free to start"
+# 換門後仍代表「付費下載 / 一次付清價格」的殘留字樣(不分大小寫)。
+PAID_MODEL_RESIDUE_RE = re.compile(
+    r"paid[-\s]download|paid[-\s]upfront|upfront price", re.I
+)
+
+
+def _add_pair(pairs, locale, paid, free):
+    if paid and free and paid != free:
+        pairs.setdefault(locale, {})[paid] = free
+
+
+@functools.lru_cache(maxsize=1)
+def purchase_model_pairs():
+    """{locale: {付費說法: 免費說法}}。全部取自 repo 既有的在地化字典。"""
+    pairs = {}
+    try:
+        import portfolio_app_finder
+        for locale, copy in portfolio_app_finder.UI.items():
+            _add_pair(pairs, locale, copy.get("paid_upfront"),
+                      copy.get(FREE_DOOR_MODEL))
+            labels = copy.get("purchase_labels") or {}
+            _add_pair(pairs, locale, labels.get("paid_upfront"),
+                      labels.get(FREE_DOOR_MODEL))
+    except Exception:  # 產生器可獨立執行時就少一層來源
+        pass
+    try:
+        import high_intent_decision_routes
+        for locale, copy in high_intent_decision_routes.UI.items():
+            models = copy.get("purchase_model") or {}
+            _add_pair(pairs, locale, models.get("paid_upfront"),
+                      models.get(FREE_DOOR_MODEL))
+    except Exception:
+        pass
+    try:
+        from publisher_intent_catalog import PURCHASE_LABELS
+        _add_pair(pairs, "en", PURCHASE_LABELS.get("paid_upfront"),
+                  PURCHASE_LABELS.get(FREE_DOOR_MODEL))
+    except Exception:
+        pass
+    try:
+        from build_pages_i18n import PAID_UPFRONT_PRICING, PROFILE_PRICING
+        for lang, sentence in PAID_UPFRONT_PRICING.items():
+            _add_pair(pairs, lang, sentence,
+                      (PROFILE_PRICING.get(lang) or {}).get("free_to_start"))
+    except Exception:
+        pass
+    try:
+        from build_pages import pricing_copy
+        for paid, free in sorted(paid_to_free().items()):
+            if APPS.get(free, {}).get("purchase_model") != FREE_DOOR_MODEL:
+                continue
+            _add_pair(pairs, "en", pricing_copy(paid), pricing_copy(free))
+    except Exception:
+        pass
+    # 英文短標籤:頁面上的 pill / featureList 本來就是 registry bullet,用
+    # 同一套 bullet 用字接回去(`Paid download` → `Free to start`)。
+    for locale, mapping in pairs.items():
+        if "Paid download" in mapping:
+            mapping["Paid download"] = REGISTRY_FREE_START_BULLET
+    return {locale: dict(mapping) for locale, mapping in pairs.items()}
+
+
+def purchase_model_rewrites(locale):
+    """該頁要套的 (付費說法, 免費說法),長的先套。
+
+    一定含 `en`:在地化頁面上常留著沒翻的英文標籤(實測 zh-Hant 的
+    「最適合」欄就是英文 `Paid download; Pay once; No subscription`)。
+    """
+    pairs = purchase_model_pairs()
+    merged = {}
+    for key in ("en", base_lang(locale) if locale else "", locale or ""):
+        merged.update(pairs.get(key, {}))
+    return sorted(merged.items(), key=lambda item: len(item[0]), reverse=True)
+
+
+@functools.lru_cache(maxsize=1)
+def free_door_pair_ids():
+    """[(付費 id, 免費 id)] —— 只收 free_with_lifetime_unlock 的配對免費版。"""
+    out = []
+    for paid, free in sorted(paid_to_free().items()):
+        pid, fid = APPSTORE.get(paid), APPSTORE.get(free)
+        if pid and fid and APPS.get(free, {}).get("purchase_model") == FREE_DOOR_MODEL:
+            out.append((pid, fid))
+    return tuple(out)
+
+
+def is_free_door_page(text):
+    """這頁的門是不是**只有**免費版。
+
+    同頁出現任何 paid_upfront App 的 id(roundup / 對比頁)就不算 —— 那些
+    「付費下載」字樣可能屬於別支真的要付費的 App,改了會製造新的假話。
+    """
+    if any(("id" + app_id) in text for app_id in paid_door_ids()):
+        return False
+    return any(("id" + fid) in text and ("id" + pid) not in text
+               for pid, fid in free_door_pair_ids())
+
+
+def hold_protected_anchors(text, swaps):
+    """升級連結(ghost)與所有付費版導覽連結一起收起來,不參與改寫。"""
+    held = []
+
+    def sub(match):
+        block = match.group(0)
+        if UPGRADE_CLASS in block or any(
+                is_paid_nav_anchor(block, swap["paid_key"]) for swap in swaps):
+            held.append(block)
+            return HOLD.format(len(held) - 1)
+        return block
+
+    return ANCHOR_ANY_RE.sub(sub, text), held
+
+
+PARAGRAPH_RE = re.compile(r"<(p|li)\b[^>]*>(.*?)</\1>", re.S | re.I)
+
+
+def _scrub_paid_model_sentences(text):
+    """把免費門頁上「明講付費下載 / 一次付清價格」的**整句**拿掉。
+
+    字典換不掉的殘留多半是頁面自己的散文(「It is one paid download with no
+    subscription.」)。正確做法是**留在免費門、只處理那一句**,不是把整頁翻回
+    付費版 —— 翻回去會毀掉本來就正確的免費門頁(2026-08-31 事故)。
+
+    紀律與 strip_price_claims 同一套:
+      • 只動 `<p>` / `<li>` 裡**不含任何標記**的純文字句(片段有 `<`/`>` 就跳過,
+        pill / featureList 那種標記內的字交給既有在地化字典處理)。
+      • 帶 `itemprop=` 的元素跳過:它是 FAQPage / HowTo 結構化資料的可見鏡像,
+        同一句還寫在 JSON-LD 裡。只砍可見的那半邊會讓兩邊對不上、結構化資料
+        變成沒有答案的 Question —— 這種頁一律整頁不動、只記帳。
+      • 只刪不補:免費版的解鎖價與條款本產生器無從得知,寧可少一句也不寫錯。
+      • 整段只剩空白就把那個元素移掉,不留空殼。
+
+    回 (新文字, 拿掉幾句)。
+    """
+    removed = [0]
+
+    def sub(match):
+        tag, inner = match.group(1), match.group(2)
+        if not PAID_MODEL_RESIDUE_RE.search(inner):
+            return match.group(0)
+        open_tag = match.group(0)[: match.group(0).index(">") + 1]
+        if "itemprop=" in open_tag:
+            return match.group(0)
+        parts = SENTENCE_SPLIT_RE.split(inner)
+        kept = []
+        dropped = 0
+        for index in range(0, len(parts), 2):
+            fragment = parts[index]
+            delimiter = parts[index + 1] if index + 1 < len(parts) else ""
+            if (PAID_MODEL_RESIDUE_RE.search(fragment)
+                    and "<" not in fragment and ">" not in fragment):
+                dropped += 1
+                continue
+            kept.append(fragment + delimiter)
+        if not dropped:
+            return match.group(0)
+        removed[0] += dropped
+        body = re.sub(r"\s+", " ", "".join(kept)).strip()
+        if not body:
+            return ""
+        return open_tag + body + "</" + tag + ">"
+
+    return PARAGRAPH_RE.sub(sub, text), removed[0]
+
+
+def enforce_free_door_purchase_model(text, rel="", swaps=(), original=None,
+                                     just_swapped=False):
+    """免費門的頁面不可把 App 描述成付費下載。
+
+    2026-08-31 事故後重寫。舊版拿「付費模式殘留」當身份證據,收不乾淨就呼叫
+    `revert_doc` 把整頁翻回付費版 —— 那把 317 頁本來就正確的免費門頁改成付費
+    id,而且分享圖沒跟著換,雲端 gen_image_sitemap 連續失敗。**殘留不是身份
+    證據**,所以這裡再也不做身份還原,只有三種處置:
+
+      1. 字典改寫:只沿用 repo 既有的在地化 purchase-model 用字。
+      2. 整句移除:字典換不掉、又是純文字句的付費主張,只砍那一句。
+         只在「這頁的免費門是本產生器換的」(升級連結指紋,或這一輪剛換/剛收尾)
+         時才做 —— canon 自己寫錯的頁不歸本模組改,只記帳。
+      3. 換門作廢:原文是**乾淨的付費門**(完全沒有免費 id)、而且殘留清不掉
+         → 原封退回原文,等於「這一頁不換門」。這不是把免費門翻成付費門,
+         而是收回本輪自己的改動,而且天生冪等(下一輪原文相同、判斷相同)。
+
+    其餘情況一律**留在免費門**:清不掉就整頁不動、只記帳待查。
+
+    回 (new_text, 改了幾處, 換門作廢幾次, 收不乾淨幾頁)。
+    """
+    if not is_free_door_page(text):
+        return text, 0, 0, 0
+    rewrites = purchase_model_rewrites(locale_of(rel))
+    held_text, held = hold_protected_anchors(text, swaps)
+    out = held_text
+    fixed = 0
+    for paid_text, free_text in rewrites:
+        count = out.count(paid_text)
+        if count:
+            fixed += count
+            out = out.replace(paid_text, free_text)
+    ours = just_swapped or any(swapped_by_us(text, swap) for swap in swaps)
+    scrubbed = 0
+    if ours and PAID_MODEL_RESIDUE_RE.search(out):
+        out, scrubbed = _scrub_paid_model_sentences(out)
+    if PAID_MODEL_RESIDUE_RE.search(out):  # 收起來的連結不參與判定
+        if original is not None and not any(
+                swap["free_id"] in original for swap in swaps):
+            return original, 0, 1, 0  # 原文是乾淨的付費門 → 本輪換門作廢
+        return text, 0, 0, 1  # 留在免費門、整頁不動,只記帳待查
+    if not fixed and not scrubbed:
+        return text, 0, 0, 0
+    return release_holds(out, held), fixed + scrubbed, 0, 0
+
+
 def process(rel, text, swaps):
     """回 (new_text, anchor_swaps_counter, reverted_counter)。"""
     swapped = collections.Counter()
@@ -471,7 +1073,9 @@ def process(rel, text, swaps):
     new_text = text
     for swap in swaps:
         if exempt(rel, os.path.basename(rel), swap):
-            new_text, k = revert_doc(new_text, swap)
+            new_text, k = revert_doc(
+                new_text, swap, owned=owns_page(rel, swap)
+            )
             if k:
                 reverted[swap["paid_key"]] += 1
             continue
@@ -505,6 +1109,14 @@ def main():
     per_pair = collections.Counter()
     reverts = collections.Counter()
     finishes = collections.Counter()
+    price_fixes = 0
+    price_pages = 0
+    model_fixes = 0
+    model_pages = 0
+    model_declined_pages = 0
+    model_unresolved = 0
+    # 收不乾淨的頁要留下清單:本模組不會偷改它們的身份,得由人 / 上游文案處理。
+    model_unresolved_pages = []
     for dirpath, dirnames, filenames in os.walk(PAGES):
         dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS]
         for filename in filenames:
@@ -519,6 +1131,26 @@ def main():
                 continue
             rel = os.path.relpath(path, PAGES)
             new_text, swapped, reverted, finished = process(rel, text, swaps)
+            # 換門/還原都定案後才跑:價格敘述要跟著**最後**那道門走。
+            new_text, priced = enforce_free_door_pricing(new_text, rel)
+            if priced:
+                price_fixes += priced
+                price_pages += 1
+            # 購買模式的事實也要跟著**最後**那道門走(價格句定案之後再跑,
+            # 這樣還原成付費門時還原的是同一份文字)。
+            new_text, model_fixed, model_back, model_stuck = \
+                enforce_free_door_purchase_model(
+                    new_text, rel, swaps, original=text,
+                    just_swapped=bool(swapped or finished),
+                )
+            if model_fixed:
+                model_fixes += model_fixed
+                model_pages += 1
+            if model_back:
+                model_declined_pages += 1
+            if model_stuck:
+                model_unresolved += 1
+                model_unresolved_pages.append(rel)
             per_pair.update(swapped)
             reverts.update(reverted)
             finishes.update(finished)
@@ -533,13 +1165,28 @@ def main():
             "anchor_swaps": dict(per_pair.most_common()),
             "reverted_to_paid": dict(reverts.most_common()),
             "copy_finished_to_free": dict(finishes.most_common()),
+            "paid_price_claims_removed": price_fixes,
+            "pages_with_price_claims_removed": price_pages,
+            "paid_model_claims_rewritten": model_fixes,
+            "pages_with_paid_model_claims_rewritten": model_pages,
+            "swaps_declined_for_paid_model_residue": model_declined_pages,
+            "pages_with_unresolved_paid_model_residue": model_unresolved,
+            "unresolved_paid_model_residue_pages": sorted(
+                model_unresolved_pages
+            ),
         },
         open(REPORT, "w", encoding="utf-8"), ensure_ascii=False, indent=1,
     )
     total = sum(per_pair.values())
     print(f"free-first: {changed_files} files, {total} anchors -> free, "
           f"{sum(finishes.values())} pages finished (copy renamed), "
-          f"{sum(reverts.values())} pages restored to the paid door")
+          f"{sum(reverts.values())} pages restored to the paid door, "
+          f"{price_fixes} paid price claims removed from free doors "
+          f"({price_pages} pages), "
+          f"{model_fixes} paid purchase-model claims rewritten "
+          f"({model_pages} pages), "
+          f"{model_declined_pages} swaps declined for paid-model residue, "
+          f"{model_unresolved} pages left with unresolved paid-model residue")
     for pair, k in per_pair.most_common():
         print(f"  {pair}: {k}")
 

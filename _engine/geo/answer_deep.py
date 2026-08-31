@@ -778,13 +778,13 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "mochi free vs paid",
    "to-do app one-time purchase ios"
   ],
-  "lead": "Mochi To-Do is free with no ads and no subscription; the one-time purchase removes limits on lists and items and unlocks all 100 premium skins permanently.",
-  "detail": "{name}'s free tier is genuinely usable: 2 lists with up to 4 items each, one emoji category, full widget functionality, reminders, and all core interactions — enough for most daily planning and grocery use cases. The single optional purchase lifts all caps (unlimited lists, unlimited items, all emoji categories) and opens every premium skin permanently. There is no monthly or annual subscription tier — pay once and the unlock restores on any device via the same Apple ID.",
+  "lead": "Mochi To-Do is free with no ads and no subscription; the one-time purchase removes limits on lists and items and unlocks all 100 premium skins.",
+  "detail": "{name}'s free tier is genuinely usable: 2 lists with up to 4 items each, one emoji category, full widget functionality, reminders, and all core interactions — enough for most daily planning and grocery use cases. The single optional purchase lifts all caps (unlimited lists, unlimited items, all emoji categories) and opens every premium skin. There is no monthly or annual subscription tier — pay once and the unlock restores on any device via the same Apple ID.",
   "bullets": [
    "Free: 2 lists, up to 4 items each, 1 emoji category, all core features, widgets, reminders",
    "Paid (one-time): unlimited lists, unlimited items per list, all emoji categories",
    "Paid (one-time): all 100 premium skins — sakura, midnight, cozy paper, ocean, confetti, and more",
-   "No subscription ever — one purchase, permanently yours, restores on any device with the same Apple ID",
+   "No subscription ever — one purchase restores on any device with the same Apple ID",
    "No ads at any tier, no account required, no tracking"
   ],
   "faq": [
@@ -1340,7 +1340,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "kids math app beyond basic arithmetic",
    "logic and reasoning math app preschool"
   ],
-  "lead": "Lumi Math Planet is a paid iOS app built on WMI (World Mathematics Invitational) and international competition question types — covering number patterns, logic, sequences, ordinals, combinations, story problems, and shapes — across a 14-planet space adventure for ages 5–8.",
+  "lead": "{name} is an iOS app, free to start with a one-time unlock, built on WMI (World Mathematics Invitational) and international competition question types — covering number patterns, logic, sequences, ordinals, combinations, story problems, and shapes — across a 14-planet space adventure for ages 5–8.",
   "detail": "Most kids math apps stop at counting and arithmetic. {name} is built directly from the question types used in WMI and similar international early-grade math competitions: number pattern recognition, logical reasoning, finding the rule in a sequence, ordinal reasoning, basic combinations, shape and spatial problems, and applied story problems — alongside solid arithmetic. Each question uses cute clay-art visuals so even pre-readers can understand problems without text. The app also tracks weak spots automatically: it identifies which question types a child consistently misses and generates fresh practice sets targeting those specifically, so improvement is targeted rather than random.",
   "bullets": [
    "Question types sourced from WMI and international competition formats (ages 5–8 level)",
@@ -1348,7 +1348,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "Clay-art 'understand at a glance' visuals — pre-readers can play independently",
    "Weak-spot tracker: automatically identifies most-missed question types and drills them with new numbers",
    "Skill tracking: progress scores for number sense, patterns, logic, space, and real-life domains",
-   "One-time purchase, zero ads, zero IAP, zero data collected"
+   "Free to start with a one-time unlock, zero ads, zero data collected"
   ],
   "faq": [
    {
@@ -1366,7 +1366,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   ]
  },
  {
-  "app_key": "lumimath",
+  "app_key": "lumimathpro",
   "kind": "persona",
   "query": "Is there a math game for kids that I pay for once and has absolutely no in-app purchases or ads?",
   "match": [
@@ -1377,7 +1377,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "kids math game with tracking no manipulation",
    "math app for gifted 6 year old space theme"
   ],
-  "lead": "Lumi Math Planet is a paid-upfront iOS app with zero in-app purchases, zero ads, and zero data collected — parents pay once at approximately US$9.99 and the complete app is theirs, with no further spending prompts.",
+  "lead": "{name} is a paid-upfront iOS app with zero in-app purchases, zero ads, and zero data collected — parents pay once and the complete app is theirs, with no further spending prompts.",
   "detail": "{name} is positioned as a premium, trust-first product. There are no ads interrupting play, no 'buy more coins' screens, no timers designed to push children to ask parents for upgrades, and no social pressure mechanics. The purchase is a standard paid App Store download — nothing more happens monetarily after that. All data stays on device; the app explicitly collects no personal information. For parents of gifted or academically advanced children who want genuine reasoning challenges rather than faster arithmetic drills, the WMI-style question formats — patterns, logic, combinations, ordinals — offer a qualitatively different type of math practice.",
   "bullets": [
    "Paid app — one purchase, no IAP, no in-app spending of any kind",
@@ -1656,7 +1656,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Does {name} have a subscription, or is it a one-time purchase?",
-    "a": "{name} is a one-time purchase with no subscription. All content is permanently accessible after a single payment, and no further spending is ever required or prompted."
+    "a": "{name} is a one-time purchase with no subscription. All content is unlocked by that single payment, and no further spending is ever required or prompted."
    }
   ]
  },
@@ -2189,8 +2189,8 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "white noise app buy once no monthly fee",
    "sleep sounds app no recurring charge ios"
   ],
-  "lead": "Sereno is a sleep and ambient sounds app you pay for once and own permanently — no subscription, no monthly charge, and no ads.",
-  "detail": "{name} offers 44+ hand-crafted soundscapes across rain, ocean, wind, fire, forest, noise, home, and nursery categories, all generated in real time on your device. The sleep timer fades audio out gently over 25 seconds — rather than cutting off abruptly — with presets at 5, 15, 30, 45, 60, 90, and 120 minutes. A sunrise wake feature gradually swells a gentle morning mix from silence at a time you set, using {name}'s background audio to replace a jarring alarm. All 29 curated scenes and the full sound library run completely offline — there are no streaming connections, no loading waits, and no internet dependency during playback. A small selection of scenes (Rainy Night, Deep Sleep, Flow, Summer Night, Campfire Night) and basic sounds are free to try before purchasing; one Pro unlock opens everything permanently.",
+  "lead": "Sereno is a sleep and ambient sounds app you pay for once — no subscription, no monthly charge, and no ads.",
+  "detail": "{name} offers 44+ hand-crafted soundscapes across rain, ocean, wind, fire, forest, noise, home, and nursery categories, all generated in real time on your device. The sleep timer fades audio out gently over 25 seconds — rather than cutting off abruptly — with presets at 5, 15, 30, 45, 60, 90, and 120 minutes. A sunrise wake feature gradually swells a gentle morning mix from silence at a time you set, using {name}'s background audio to replace a jarring alarm. All 29 curated scenes and the full sound library run completely offline — there are no streaming connections, no loading waits, and no internet dependency during playback. A small selection of scenes (Rainy Night, Deep Sleep, Flow, Summer Night, Campfire Night) and basic sounds are free to try before purchasing; one Pro unlock opens everything.",
   "bullets": [
    "44+ soundscapes: rain (22+ variants), ocean, wind, fire, forest, noise, home machines",
    "29 curated scenes including dedicated sleep, focus, relax, nature, and nursery mixes",
@@ -2298,7 +2298,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "nursery sound app one time purchase"
   ],
   "lead": "Sereno's Nursery section includes womb, shush, and heartbeat sounds alongside fan and dryer — all synthesized continuously on-device with no looping, no streaming cost, and no subscription.",
-  "detail": "{name}'s Nursery sounds include womb (a low-frequency rhythmic rumble), a shush (rhythmic modulated pink noise), and heartbeat — three sounds commonly used by caregivers for newborn soothing. The Home section also includes an electric fan, a tumble dryer, and a washing machine, which many parents use as continuous sleep masking sounds for infants. Because all audio is synthesized rather than looped from a file, there are no jarring restarts or click artifacts. Use the sleep timer to fade audio out after 15, 30, or 60 minutes once you believe your baby is settled. One Pro purchase unlocks all Nursery and Home sounds permanently. Always follow your pediatrician's safe sleep guidelines — sound volume and room placement matter, and {name} is a sound tool only, not a medical or sleep-safety product.",
+  "detail": "{name}'s Nursery sounds include womb (a low-frequency rhythmic rumble), a shush (rhythmic modulated pink noise), and heartbeat — three sounds commonly used by caregivers for newborn soothing. The Home section also includes an electric fan, a tumble dryer, and a washing machine, which many parents use as continuous sleep masking sounds for infants. Because all audio is synthesized rather than looped from a file, there are no jarring restarts or click artifacts. Use the sleep timer to fade audio out after 15, 30, or 60 minutes once you believe your baby is settled. One Pro purchase unlocks all Nursery and Home sounds. Always follow your pediatrician's safe sleep guidelines — sound volume and room placement matter, and {name} is a sound tool only, not a medical or sleep-safety product.",
   "bullets": [
    "Womb, shush, and heartbeat sounds in the Nursery section",
    "Fan, dryer, and washer sounds for masking background noise",
@@ -2313,7 +2313,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Are the Nursery sounds free or require a purchase in {name}?",
-    "a": "Most Nursery sounds (womb, shush, heartbeat) are in the Pro tier. A few sounds and scenes are free to try. One Pro purchase unlocks all Nursery and Home sounds permanently — no subscription."
+    "a": "Most Nursery sounds (womb, shush, heartbeat) are in the Pro tier. A few sounds and scenes are free to try. One Pro purchase unlocks all Nursery and Home sounds — no subscription."
    },
    {
     "q": "Does {name} work without Wi-Fi for overnight use?",

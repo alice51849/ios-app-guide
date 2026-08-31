@@ -82,7 +82,7 @@ def build(key):
         )
         disclosure = (
             f"We develop {name}, a free-download {topic} app with a one-time "
-            "one-time unlock and no recurring subscription."
+            "unlock and no recurring subscription."
         )
         access_label = (
             "Free download · one-time unlock · no subscription."

@@ -1357,6 +1357,52 @@ def _continues_word(character):
     )
 
 
+def _app_name_forms():
+    """完整名稱 + 品牌名(冒號/破折號前那段)。
+
+    註冊表寫的是 "Wordmate: Learn 44 Languages",頁面上實際印的是品牌名
+    "Wordmate";只比對完整名稱會漏掉真正會被切斷的那一種。
+    """
+    forms = set()
+    for app in APPS.values():
+        name = str(app.get("name") or "").strip()
+        if not name:
+            continue
+        forms.add(name)
+        brand = re.split(r"[:—–·,(]", name)[0].strip()
+        if brand:
+            forms.add(brand)
+    return sorted(forms, key=len, reverse=True)
+
+
+# 名字長的排前面,"Wordmate Lite" 才不會先被 "Wordmate" 吃掉。
+_APP_NAMES_LONGEST_FIRST = _app_name_forms()
+
+
+def _drop_split_app_name(clipped, text):
+    """截斷不可把一支 App 的名字切成**另一支** App 的名字。
+
+    「… Wordmate Lite ঠিক উল্টো পথে …」砍在 155 字剛好停在 "Wordmate":免費版
+    頁面的 meta description 就頂著付費版名稱,free-first 身份稽核判 mismatch
+    (2026-08-31 稽核:bn-BD 的 wordmatelite 頁與它的 hub 各一次;hub 是直接
+    抄 App 頁的描述,所以錯一次會擴散兩頁)。切到這種位置就整個名字不要。
+    """
+    for name in _APP_NAMES_LONGEST_FIRST:
+        if not clipped.endswith(name):
+            continue
+        start = len(clipped) - len(name)
+        longer = any(
+            other != name
+            and other.startswith(name)
+            and text.startswith(other, start)
+            for other in _APP_NAMES_LONGEST_FIRST
+        )
+        if longer:
+            return clipped[:start]
+        break
+    return clipped
+
+
 def _word_bounded_excerpt(value, limit):
     text = " ".join((value or "").split())
     if len(text) <= limit:
@@ -1366,7 +1412,8 @@ def _word_bounded_excerpt(value, limit):
         clipped = clipped.rsplit(" ", 1)[0]
     elif " " not in clipped:
         clipped = _grapheme_bounded_prefix(text, limit)
-    return clipped.rstrip(" ,.;:—-")
+    clipped = _drop_split_app_name(clipped, text)
+    return clipped.rstrip(" ,.;:—-·、,。")
 
 
 def _single_line(value):

@@ -295,6 +295,31 @@ def swapped_by_us(text, swap):
     return any(href in m.group(0) for m in GHOST_ANCHOR_RE.finditer(text))
 
 
+def _complete_half_swapped(text, swap):
+    """第一版只換 `<a>` href 留下的另一種半套頁:門(錨點)已開免費版,付費
+    id 只剩在錨點外的機器區塊(ItemList/HowTo JSON-LD 的 "url" 等),文案照舊
+    講付費版。
+
+    這種頁 rewrite_doc 碰不到(沒有付費**錨點**可觸發),舊收尾邏輯又因付費
+    id 在場而跳過,會永遠卡在「按鈕開免費版、內容講付費版」(2026-08-31 稽核:
+    snapport 3,291 頁、gmoney 141 頁、hourstag 98 頁)。比照 finish_doc 的
+    鐵則收尾 —— 收得乾淨就整頁換成免費版身份,收不乾淨就整頁還原成付費門,
+    不留半套。
+    """
+    pid, fid = swap["paid_id"], swap["free_id"]
+    if anchor_re(pid).search(text) or not anchor_re(fid).search(text):
+        return text, 0, 0
+    held_text, held = hold_paid_nav_anchors(text, swap)
+    out = held_text.replace(pid, fid)
+    out = swap_names(out, swap)
+    if paid_identity_left(out, swap):
+        # 收不乾淨(名稱有本產生器換不動的寫法)→ 整頁還原成付費門。
+        out = held_text.replace(fid, pid)
+        out = swap_names(out, swap, reverse=True)
+        return release_holds(out, held), 0, 1
+    return release_holds(out, held), 1, 0
+
+
 def _finish_without_fingerprint(text, swap):
     """沒有升級連結指紋、但門與文案對不上的頁面怎麼處理。
 
@@ -308,7 +333,7 @@ def _finish_without_fingerprint(text, swap):
         不動。
     """
     if swap["paid_id"] in text:
-        return text, 0, 0
+        return _complete_half_swapped(text, swap)
     held_text, _held = hold_paid_nav_anchors(text, swap)
     if not paid_identity_left(held_text, swap):
         return text, 0, 0
@@ -346,15 +371,23 @@ def revert_doc(text, swap):
 
     只在免費 id 在場、且有證據顯示這頁本來是付費版時動手:
       • 帶著本產生器自己的升級連結(= 確定是我們換的),或
-      • 付費 id 已不在、文案卻還在講付費版(第一版只換 `<a>` 留下的半套頁面)。
-    兩個條件都不成立時不動,避免把本來就是免費版的頁面誤改。
+      • 付費 id 已不在、文案卻還在講付費版(第一版只換 `<a>` 留下的半套頁面),或
+      • 門(錨點)是免費版、付費 id 只剩在錨點外的 JSON-LD、文案講付費版
+        (第一版只換 href 的另一種半套;付費 id 殘留就是「本來是付費頁」的證據)。
+    以上都不成立時不動,避免把本來就是免費版的頁面誤改。
     """
     if swap["free_id"] not in text:
         return text, 0
     href = f'/guides/{swap["paid_key"]}.html"'
     ghost = swapped_by_us(text, swap)
     held_text, _held = hold_paid_nav_anchors(text, swap)
-    if not ghost and (
+    half_swapped = (
+        swap["paid_id"] in text
+        and not anchor_re(swap["paid_id"]).search(text)
+        and bool(anchor_re(swap["free_id"]).search(text))
+        and paid_identity_left(held_text, swap)
+    )
+    if not ghost and not half_swapped and (
         swap["paid_id"] in text or not paid_identity_left(held_text, swap)
     ):
         return text, 0

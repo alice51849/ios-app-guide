@@ -63,6 +63,59 @@ ANY_LABEL_RE = re.compile(
 LABEL_SOURCE_SECTIONS = ("best-for", "reviews", "seasonal", "tutorials", "persona")
 FALLBACK_LABEL = "Download on the App Store →"
 
+# 品牌名(取冒號/破折號前那段),長的排前面,避免 "Aim990" 先吃掉 "Aim990 Plus"。
+APP_BRAND_NAMES = sorted(
+    {
+        name
+        for name in (
+            re.split(r"[:—–·,(]", app["name"])[0].strip()
+            for app in APPS.values()
+        )
+        if name
+    },
+    key=len,
+    reverse=True,
+)
+
+
+def names_an_app(label: str) -> bool:
+    """這個 CTA 標籤自己點名了某一支 App。
+
+    標籤會以 ``{name} · {label}`` 套到**每一支** App,所以只要它帶著一個 App
+    名字,其餘 App 的 CTA 就變成「文案講 A、連結指 B」——正是 free-first 稽核
+    要擋的身份不一致(2026-08-31:zh-CN 首頁 7 條下載連結全寫「在 App Store
+    下载 HoursTag →」,其中 6 條指向別的 App)。
+
+    大小寫敏感比對:西語 ``sereno``、日文外來語之類的普通字不會被誤判成品牌。
+    """
+    return any(brand in label for brand in APP_BRAND_NAMES)
+
+
+def without_app_name(label: str) -> str:
+    """把標籤裡的 App 名字拿掉,其餘用字原封不動。
+
+    de/es/fr/it/pt-BR/zh 的 best-for 產生器全部只產出「下載 <App 名>」的句型,
+    所以整個 locale 找不到一句不點名 App 的說法。與其退回英文 fallback(七個
+    主要市場的 CTA 一次變英文),不如把名字拿掉——留下的仍然是本站自己出過的
+    在地化用字,沒有引入任何機器翻譯:
+
+        "Descargar Zafe en el App Store →" → "Descargar en el App Store →"
+        "ScanTo Pro im App Store laden →"  → "Im App Store laden →"
+        "在 App Store 下载 HoursTag →"      → "在 App Store 下载 →"
+
+    拿掉之後只剩標點/箭頭之類的殘骸就回空字串,呼叫端當作採集失敗處理。
+    """
+    out = label
+    for brand in APP_BRAND_NAMES:
+        out = out.replace(brand, " ")
+    out = re.sub(r"\s+", " ", out)
+    out = re.sub(r"^[\s·,:;\-–—]+", "", out).strip()
+    if len(re.sub(r"[\W\d_]+", "", out, flags=re.UNICODE)) < 2:
+        return ""
+    if label[:1].isupper() and out[:1].islower():
+        out = out[0].upper() + out[1:]
+    return out
+
 STYLE_START = "<!-- store-reach-style:start -->"
 STYLE_END = "<!-- store-reach-style:end -->"
 STYLE_RE = re.compile(
@@ -126,12 +179,36 @@ def harvest_labels(pages: Path) -> dict[str, str]:
                 break
         if counter:
             per[child.name] = counter
-    return {loc: c.most_common(1)[0][0] for loc, c in per.items()}
+    # 挑出現次數最多、而且**沒有點名任何 App** 的說法;整個 locale 都挑不到就
+    # 不收錄(呼叫端退回 en / FALLBACK_LABEL),寧可少一句在地化也不要寫錯 App。
+    picked: dict[str, str] = {}
+    for loc, counter in per.items():
+        fallback = ""
+        for label, _count in counter.most_common():
+            if not names_an_app(label):
+                picked[loc] = label
+                break
+            fallback = fallback or without_app_name(label)
+        else:
+            if fallback:
+                picked[loc] = fallback
+    return picked
 
 
 def load_labels(pages: Path, refresh: bool) -> dict[str, str]:
     if not refresh and LABELS_CACHE.is_file():
-        return json.loads(LABELS_CACHE.read_text(encoding="utf-8"))
+        cached = json.loads(LABELS_CACHE.read_text(encoding="utf-8"))
+        # 舊快取可能存著點名某支 App 的說法;讀進來時就把名字拿掉,否則一句錯
+        # 標籤會一直被套到該 locale 的每一支 App 上。
+        repaired: dict[str, str] = {}
+        for loc, label in cached.items():
+            if not names_an_app(label):
+                repaired[loc] = label
+                continue
+            stripped = without_app_name(label)
+            if stripped:
+                repaired[loc] = stripped
+        return repaired
     labels = harvest_labels(pages)
     if not labels:
         raise RuntimeError("store-reach could not harvest any localized CTA label")

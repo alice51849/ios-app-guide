@@ -1530,12 +1530,18 @@ def require_translation_quality(
     mapping: dict[str, str],
     slug: str,
     lang: str,
+    allow_english: frozenset[str] | set[str] = frozenset(),
 ) -> None:
+    """`allow_english`:--allow-partial 明確放行「維持原文」的字串(字典還沒有
+    譯文,先照原文出頁、記進 _missing 待補)。品質檢查只管其餘字串,否則
+    --allow-partial 永遠會在這裡炸掉,旗標形同虛設。"""
     require_no_cross_app_translation(strings, mapping, slug, lang)
     if lang in ENGLISH_LOCALES:
         return
     untranslated = []
     for source in strings:
+        if source in allow_english:
+            continue
         target = mapping.get(source, "").strip()
         if source.strip() != target:
             continue
@@ -1557,6 +1563,7 @@ def require_translation_quality(
     letters = [
         character
         for source in strings
+        if source not in allow_english
         for character in mapping[source]
         if character.isalpha()
     ]
@@ -3067,6 +3074,7 @@ def main() -> int:
                 print(f"skip existing {lang}/{slug}.html", flush=True)
                 continue
             try:
+                partial_english: set[str] = set()
                 if args.trans:
                     if lang in ENGLISH_LOCALES:
                         mapping = {s: s for s in strings}
@@ -3081,6 +3089,14 @@ def main() -> int:
                         skipped += 1
                         print(f"incomplete {lang}/{slug}.html — 缺 {len(miss)} 字串,略過", flush=True)
                         continue
+                    if miss:
+                        # --allow-partial:未譯字串照原文出頁(與既有頁面的
+                        # 英文 fallback 一致),同時記進 _missing.<lang>.json,
+                        # 字典補譯後可用 --refresh 升級,頁面不會倒退。
+                        for s in miss:
+                            mapping[s] = s
+                            missing_acc[lang][s] = missing_acc[lang].get(s, 0) + 1
+                        partial_english = set(miss)
                 else:
                     mapping = (
                         english_mapping(strings, lang)
@@ -3107,7 +3123,10 @@ def main() -> int:
                     )
                 mapping = apply_locale_text_overrides(mapping, lang)
                 require_complete_mapping(strings, mapping, slug, lang)
-                require_translation_quality(strings, mapping, slug, lang)
+                require_translation_quality(
+                    strings, mapping, slug, lang,
+                    allow_english=partial_english,
+                )
                 localized = render_localized(
                     source,
                     lang,

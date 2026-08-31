@@ -464,6 +464,28 @@ def shorten(value, limit):
     return shortened.rstrip(" ,:;–—-(")
 
 
+def shorten_title(value, limit):
+    """裁 <title> 時絕不裁掉結尾的 App 名稱。
+
+    「… — HoursTag Lite」被裁 70 字會變成「… — HoursTag」——免費門頁面
+    頂著付費版名稱,free-first 身份稽核直接判 mismatch(hubs 頁還會把這個
+    壞標題再抄一次)。標題是「敘述 — App 名」的形狀時,只裁敘述那一半。
+    """
+    value = str(value or "").strip()
+    if len(value) <= limit:
+        return value
+    head, sep, name = value.rpartition(" — ")
+    if sep and head:
+        head = shorten(head, max(1, limit - len(sep) - len(name)))
+        # 裁完別留懸空的連接詞(「… app with one-time」→「… app」)。
+        head = re.sub(
+            r"(?:\s+(?:with|and|or|for|to|of|in|on|the|a|an|one-time))+$",
+            "", head, flags=re.I,
+        )
+        return f"{head}{sep}{name}"
+    return shorten(value, limit)
+
+
 def article_for(value):
     return "an" if str(value).lstrip()[:1].lower() in "aeiou" else "a"
 
@@ -699,7 +721,7 @@ def page_shell(title, desc, canonical, schemas, body):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{e(shorten(title, 70))}</title>
+<title>{e(shorten_title(title, 70))}</title>
 <meta name="description" content="{e(shorten(desc, 155))}">
 <link rel="canonical" href="{canonical}">
 {alternative_hreflang_block(canonical)}

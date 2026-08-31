@@ -732,8 +732,11 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "fits": "fits mindful shoppers who want a private pause before buying by comparing a price with the work time it costs.",
             "faq": [
                 {
-                    "q": "Is this the same workflow as the original HoursTag?",
-                    "a": "No — HoursTag Lite is a purchase-before Worth Lens for evaluating a choice, while the original HoursTag focuses on converting existing spending into work time.",
+                    # 誠實鐵則:免費門頁面不可裸寫付費版名稱(free-first 稽核
+                    # 會把「文案講付費版、商店連結是免費版」判為 identity
+                    # mismatch);付費版以「the paid companion app」指稱即可。
+                    "q": "Is this the same workflow as the paid companion app?",
+                    "a": "No — HoursTag Lite is a purchase-before Worth Lens for evaluating a single choice, while the paid companion app focuses on converting existing spending into work time. The two are separate apps from the same developer.",
                 },
                 {
                     "q": "What can I save for free?",
@@ -2428,7 +2431,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "Without records, a complaint call is your word against the support script — what changes the conversation is a dated history of checks run while the problem was happening.",
             "paras": [
                 "WiFi Aid Lite's evidence chain covers DNS, TCP, TLS, time to first byte, HTTP, direct IP, IPv4 and IPv6; Deep Check adds stability samples so an intermittent fault shows up as variation, and Check History keeps every timestamped result privately on the device. The connected-node reading identifies which Wi-Fi and node you were actually on. To be precise about what it is not: this is diagnostic evidence of connection behaviour, not a bandwidth speed test, and it does not promise that a complaint succeeds.",
-                "Each tool includes one complete free use, then a single lifetime unlock — no subscription, no ads, no account, no tracking. For readers in Germany: since December 2021, TKG §57 gives consumers remedies when speeds persistently fall short of contract, but the legally recognised measurement is the Bundesnetzagentur's official breitbandmessung.de procedure — WiFi Aid's records are for day-to-day incident documentation and clearer ISP conversations, not the statutory measurement.",
+                "Each tool includes one complete free use, then a single lifetime unlock — no subscription, no ads, no account, no tracking. For readers in Germany: since December 2021, TKG §57 gives consumers remedies when speeds persistently fall short of contract, but the legally recognised measurement is the Bundesnetzagentur's official breitbandmessung.de procedure — WiFi Aid Lite's records are for day-to-day incident documentation and clearer ISP conversations, not the statutory measurement.",
             ],
             "look": [
                 "Timestamped check history stored privately on the device.",

@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -67,7 +67,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief：檔案轉 AI 提示詞",
       "summary": "將截圖、檔案、筆記與文件整合成一份可供 AI 使用的清楚摘要。",
       "category": "productivity",
       "search_terms": [
@@ -160,7 +160,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus：英語模擬測驗·限時",
       "summary": "把零散刷題，整理成真正能承受時間壓力的備考節奏。",
       "category": "kids",
       "search_terms": [
@@ -549,7 +549,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money：日常記帳·預算·匯率",
       "summary": "G+Money 把兩個每天都會用到的工具合而為一——超快的貨幣換算 ＋ 精美的記帳——生活與旅行都適用。完全離線、完全私密。",
       "category": "finance",
       "search_terms": [
@@ -617,7 +617,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite：旅行記帳·匯率換算",
       "summary": "G+Money Lite — 聰明的旅行匯率記帳",
       "category": "finance",
       "search_terms": [
@@ -669,7 +669,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite：買前先算工時",
       "summary": "HoursTag Lite - 看見每樣東西的真實代價",
       "category": "finance",
       "search_terms": [
@@ -789,7 +789,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro：封鎖 App·專注計時",
       "summary": "封鎖偷走你時間的 App，把專注力拿回來。",
       "category": "productivity",
       "search_terms": [
@@ -1591,7 +1591,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File：分享前移除個資",
       "summary": "安全分享，同時保留有用的脈絡。Mask My File 會在你送出檔案前找出私密資訊，永久遮蔽後，再重新開啟並驗證輸出的新檔案，確認無誤才顯示 Private Ready。",
       "category": "photo-utility",
       "search_terms": [
@@ -1764,27 +1764,26 @@
       "summary": "每個專案都有自己的帳本：收入減支出，就是這個專案的淨額。以下是大家最常問的問題；沒有找到答案的話，寫信給我們，每一封信都有人親自看。",
       "category": "finance",
       "search_terms": [
-        "記帳app",
-        "理財",
-        "記帳軟體",
-        "開銷",
-        "花費",
-        "帳本",
-        "消費記錄",
-        "貨幣換算",
-        "個人理財",
-        "預算管理",
-        "記帳本",
-        "消費追蹤",
-        "匯率換算",
-        "匯率換算器",
-        "生活記帳",
-        "離線記帳",
-        "自訂匯率",
-        "每月趨勢",
-        "備份與還原",
-        "匯出 PDF",
-        "最近記錄"
+        "損益表",
+        "工單成本",
+        "任務成本",
+        "毛利率",
+        "客戶獲利",
+        "成本分攤",
+        "成本歸集",
+        "接案記帳",
+        "副業記帳",
+        "自由工作者記帳",
+        "合約收支",
+        "訂單利潤",
+        "橫向分析",
+        "經營淨利",
+        "小生意帳本",
+        "工程成本",
+        "活動收支",
+        "出租帳本",
+        "攤位帳本",
+        "現金流"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1869,7 +1868,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro：底片濾鏡·復古修圖",
       "summary": "PhotoCream Pro 是您在 iPhone 和 iPad 上的終極拍攝夥伴。無論您是懷舊攝影愛好者還是自拍達人，這款應用都能滿足您的需求。超過100種真實膠片濾鏡，讓每張照片都充滿藝術感。即時預覽功能讓您在拍攝前即可看到濾鏡效果，捕捉完美瞬間。",
       "category": "photo-utility",
       "search_terms": [
@@ -1937,7 +1936,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro：照片清理·釋放空間",
       "summary": "清出佔空間的照片，騰出好幾 GB 的儲存空間——重複照片、螢幕截圖、模糊照片，還有最吃空間的影片。",
       "category": "photo-utility",
       "search_terms": [
@@ -2300,7 +2299,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite：在家製作證件照",
       "summary": "Snapport Lite - 透過尺寸引導、背景工具與可列印輸出，製作護照、簽證與證件照。",
       "category": "photo-utility",
       "search_terms": [
@@ -2313,7 +2312,6 @@
         "白底",
         "排版",
         "自訂尺寸",
-        "免費",
         "證件大頭照",
         "護照照片",
         "簽證",
@@ -2579,7 +2577,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid：找出網路問題·診斷",
       "summary": "用多路徑、DNS、TCP、TLS、回應時間與穩定度檢查，找出最可能的連線問題。App Store 一次付費買斷，無訂閱、無廣告、無追蹤。",
       "category": "photo-utility",
       "search_terms": [

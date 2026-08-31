@@ -84,7 +84,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/es/app/id6791658210?pt=118326163&ct=iag_data_ca&mt=8",
-        "name": "AI Brief",
+        "name": "AI Brief: Fitxers a prompt IA",
         "description": "Millor context. Millors respostes.",
         "seller": {
           "@type": "Organization",
@@ -100,7 +100,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6791658210"
           },
-          "name": "AI Brief",
+          "name": "AI Brief: Fitxers a prompt IA",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/es/app/id6791658210?pt=118326163&ct=iag_data_ca&mt=8",
@@ -216,7 +216,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-aim990plus",
         "url": "https://apps.apple.com/es/app/id6792483140?pt=118326163&ct=iag_data_ca&mt=8",
-        "name": "Aim990 Plus",
+        "name": "Aim990 Plus: Simulacre anglès",
         "description": "Entrena la comprensió de l’anglès amb sessions que posen a prova l’atenció, el ritme i la constància. Aim990 Plus està pensada per a persones adultes que",
         "seller": {
           "@type": "Organization",
@@ -232,7 +232,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792483140"
           },
-          "name": "Aim990 Plus",
+          "name": "Aim990 Plus: Simulacre anglès",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/es/app/id6792483140?pt=118326163&ct=iag_data_ca&mt=8",
@@ -744,7 +744,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/es/app/id6793436548?pt=118326163&ct=iag_data_ca&mt=8",
-        "name": "G+Money Lite",
+        "name": "G+Money Lite: Diners de viatge",
         "description": "G+Money Lite — Conversor de moneda de viatge intel·ligent i rastrejador de despeses",
         "seller": {
           "@type": "Organization",
@@ -760,7 +760,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6793436548"
           },
-          "name": "G+Money Lite",
+          "name": "G+Money Lite: Diners de viatge",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
           "url": "https://apps.apple.com/es/app/id6793436548?pt=118326163&ct=iag_data_ca&mt=8",
@@ -810,7 +810,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=iag_data_ca&mt=8",
-        "name": "HoursTag Lite",
+        "name": "HoursTag Lite: Preu en hores",
         "description": "HoursTag Lite - Veure el preu real de les coses",
         "seller": {
           "@type": "Organization",
@@ -826,7 +826,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6794039979"
           },
-          "name": "HoursTag Lite",
+          "name": "HoursTag Lite: Preu en hores",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
           "url": "https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=iag_data_ca&mt=8",
@@ -1668,7 +1668,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/es/app/id6792850916?pt=118326163&ct=iag_data_ca&mt=8",
-        "name": "Mask My File",
+        "name": "Mask My File: Esborra dades",
         "description": "Comparteix amb tranquil·litat sense perdre el context útil. Mask My File detecta les dades privades abans que enviïs un fitxer, oculta de manera",
         "seller": {
           "@type": "Organization",
@@ -1684,7 +1684,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792850916"
           },
-          "name": "Mask My File",
+          "name": "Mask My File: Esborra dades",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/es/app/id6792850916?pt=118326163&ct=iag_data_ca&mt=8",
@@ -2460,7 +2460,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/es/app/id6792856304?pt=118326163&ct=iag_data_ca&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: Fotos de carnet",
         "description": "Snapport Lite - Fes fotos de passaport, visat i documents amb dimensions guiades, eines de fons i exportació llesta per imprimir.",
         "seller": {
           "@type": "Organization",
@@ -2476,7 +2476,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: Fotos de carnet",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/es/app/id6792856304?pt=118326163&ct=iag_data_ca&mt=8",
@@ -2785,72 +2785,6 @@
     {
       "@type": "ListItem",
       "position": 43,
-      "url": "https://apps.apple.com/es/app/id6790467886?pt=118326163&ct=iag_data_ca&mt=8",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-wifiaid",
-        "url": "https://apps.apple.com/es/app/id6790467886?pt=118326163&ct=iag_data_ca&mt=8",
-        "name": "WiFi Aid",
-        "description": "Troba la causa més probable amb proves independents de rutes, DNS, TCP, TLS, temps i estabilitat. Un únic pagament inicial, sense subscripcions, anuncis ni",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6790467886",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6790467886"
-          },
-          "name": "WiFi Aid",
-          "operatingSystem": "iOS",
-          "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/es/app/id6790467886?pt=118326163&ct=iag_data_ca&mt=8",
-          "installUrl": "https://apps.apple.com/es/app/id6790467886?pt=118326163&ct=iag_data_ca&mt=8",
-          "downloadUrl": "https://apps.apple.com/es/app/id6790467886?pt=118326163&ct=iag_data_ca&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/es/app/id6790467886?pt=118326163&ct=iag_data_ca&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ca/wifiaid.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6790467886",
-          "inLanguage": "ca",
-          "description": "Troba la causa més probable amb proves independents de rutes, DNS, TCP, TLS, temps i estabilitat. Un únic pagament inicial, sense subscripcions, anuncis ni",
-          "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-wifiaid"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "paid_upfront"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": false
-        },
-        "price": "6.99",
-        "priceCurrency": "EUR",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "ES"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 44,
       "url": "https://apps.apple.com/es/app/id6793414462?pt=118326163&ct=iag_data_ca&mt=8",
       "item": {
         "@type": "Offer",
@@ -2906,6 +2840,72 @@
           "isAccessibleForFree": true
         },
         "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "ES"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 44,
+      "url": "https://apps.apple.com/es/app/id6790467886?pt=118326163&ct=iag_data_ca&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-wifiaid",
+        "url": "https://apps.apple.com/es/app/id6790467886?pt=118326163&ct=iag_data_ca&mt=8",
+        "name": "WiFi Aid: Diagnòstic de xarxa",
+        "description": "Troba la causa més probable amb proves independents de rutes, DNS, TCP, TLS, temps i estabilitat. Un únic pagament inicial, sense subscripcions, anuncis ni",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790467886",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790467886"
+          },
+          "name": "WiFi Aid: Diagnòstic de xarxa",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/es/app/id6790467886?pt=118326163&ct=iag_data_ca&mt=8",
+          "installUrl": "https://apps.apple.com/es/app/id6790467886?pt=118326163&ct=iag_data_ca&mt=8",
+          "downloadUrl": "https://apps.apple.com/es/app/id6790467886?pt=118326163&ct=iag_data_ca&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/es/app/id6790467886?pt=118326163&ct=iag_data_ca&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/ca/wifiaid.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790467886",
+          "inLanguage": "ca",
+          "description": "Troba la causa més probable amb proves independents de rutes, DNS, TCP, TLS, temps i estabilitat. Un únic pagament inicial, sense subscripcions, anuncis ni",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-wifiaid"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "6.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

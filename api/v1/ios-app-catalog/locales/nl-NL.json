@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "nl-NL",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -52,7 +52,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: Bestand naar prompt",
       "summary": "Betere context. Betere antwoorden.",
       "category": "productivity",
       "search_terms": [
@@ -130,7 +130,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: Oefentoets Engels",
       "summary": "Aim990 Plus is een complete trainingsomgeving voor volwassenen die Engelse luister- en leestaken ook onder tijdsdruk beheerst willen uitvoeren. De heldere dagroute begint met 8 opwarmvragen, gaat verder met een Pressure Set van 20 vragen in 15 minuten en eindigt met Mistake Replay. Daar krijg je meteen de vragen terug die fout gingen, zodat een vergissing niet alleen in een resultatenlijst blijft staan maar direct nieuw oefenmateriaal wordt.",
       "category": "kids",
       "search_terms": [
@@ -437,7 +437,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: Uitgaven en budget",
       "summary": "G+Money verenigt twee dagelijkse hulpmiddelen in één — een bliksemsnelle valutaomrekenaar en een mooie uitgaven-tracker — voor het dagelijks leven én op reis. Volledig offline. Volledig privé.",
       "category": "finance",
       "search_terms": [
@@ -493,7 +493,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: Reisuitgaven",
       "summary": "G+Money Lite — Slimme reisvaluta- & uitgaventracker",
       "category": "finance",
       "search_terms": [
@@ -531,7 +531,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: Prijs in uren",
       "summary": "HoursTag Lite - De echte prijs van dingen",
       "category": "finance",
       "search_terms": [
@@ -627,7 +627,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: Apps blokkeren",
       "summary": "Bescherm de uren waarin je echt vooruitkomt. LockHour Pro helpt je rustige focussessies te starten, telefoonafleiding te verminderen en productieve gewoontes op te bouwen zonder rommel. Ideaal voor studie, diep werk, schrijven en plannen.",
       "category": "productivity",
       "search_terms": [
@@ -1275,7 +1275,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: Wis je gegevens",
       "summary": "Deel veilig zonder de nuttige context te verliezen. Mask My File vindt privégegevens voordat u een bestand verstuurt, maakt permanent onleesbaar wat u kiest en opent en verifieert daarna de nieuwe kopie voordat Private Ready verschijnt.",
       "category": "photo-utility",
       "search_terms": [
@@ -1397,13 +1397,13 @@
       "summary": "Inkomsten & uitgaven",
       "category": "finance",
       "search_terms": [
-        "huishoudboekje",
-        "financiën",
-        "valuta omrekenen",
-        "wisselkoers",
-        "Maandverloop",
-        "Back-up en herstel",
-        "PDF exporteren"
+        "winst verlies",
+        "opdrachtcalculatie",
+        "winstmarge",
+        "klantwinstgevendheid",
+        "kostenverdeling",
+        "dwarsanalyse",
+        "zzp'er"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1470,7 +1470,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: Filmfilters",
       "summary": "PhotoCream Pro is jouw ultieme oplossing voor vintage fotografie en professionele bewerking op iPhone en iPad. Dompel jezelf onder in de wereld van retrofotografie met meer dan 100 authentieke analoge filters die een unieke visuele ervaring bieden. Met de live preview functie kun je direct het effect van de filters zien voordat je de foto maakt. Onze geavanceerde foto-editor stelt je in staat om elke opname te perfectioneren met krachtige tools zoals frequentiescheiding voor huidverfraaiing, gezichts- en lichaamsvormen, en gedetailleerde aanpassingen van licht, kleur en curves. Voeg tekst, kaders en korrel toe voor nog meer personalisatie van je beelden. PhotoCream Pro is een eenmalige aankoop, zonder abonnementen of advertenties, en garandeert volledige privacy zonder dat gegevens online worden geüpload. Ervaar de magie van analoge fotografie en professionele bewerking met PhotoCream Pro.",
       "category": "photo-utility",
       "search_terms": [
@@ -1525,7 +1525,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: Foto's opruimen",
       "summary": "Win gigabytes aan opslag terug door foto’s op te ruimen die je niet meer nodig hebt: dubbele beelden, oude screenshots, wazige opnamen en grote video’s.",
       "category": "photo-utility",
       "search_terms": [
@@ -1808,7 +1808,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: Pasfoto's maken",
       "summary": "Snapport Lite - Maak paspoort-, visum- en documentfoto's met geleide afmetingen, achtergrondtools en export klaar voor afdrukken.",
       "category": "photo-utility",
       "search_terms": [
@@ -2042,7 +2042,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: Vind netwerkfouten",
       "summary": "Vind de waarschijnlijke oorzaak met tests van routes, DNS, TCP, TLS, timing en stabiliteit. Eenmalig vooraf betalen, zonder abonnement, reclame of tracking.",
       "category": "photo-utility",
       "search_terms": [

@@ -84,7 +84,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/hu/app/id6791658210?pt=118326163&ct=iag_data_hu&mt=8",
-        "name": "AI Brief",
+        "name": "AI Brief: Fájlokból AI-prompt",
         "description": "Jobb kontextus. Jobb válaszok.",
         "seller": {
           "@type": "Organization",
@@ -100,7 +100,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6791658210"
           },
-          "name": "AI Brief",
+          "name": "AI Brief: Fájlokból AI-prompt",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/hu/app/id6791658210?pt=118326163&ct=iag_data_hu&mt=8",
@@ -216,7 +216,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-aim990plus",
         "url": "https://apps.apple.com/hu/app/id6792483140?pt=118326163&ct=iag_data_hu&mt=8",
-        "name": "Aim990 Plus",
+        "name": "Aim990 Plus: Angol próbateszt",
         "description": "Az angoltudás mellett arra is szükség van, hogy az idő szorításában is pontosan dönts. Az Aim990 Plus felnőtteknek készült, intenzív hallásértési és",
         "seller": {
           "@type": "Organization",
@@ -232,7 +232,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792483140"
           },
-          "name": "Aim990 Plus",
+          "name": "Aim990 Plus: Angol próbateszt",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/hu/app/id6792483140?pt=118326163&ct=iag_data_hu&mt=8",
@@ -744,7 +744,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/hu/app/id6793436548?pt=118326163&ct=iag_data_hu&mt=8",
-        "name": "G+Money Lite",
+        "name": "G+Money Lite: Utazási kiadások",
         "description": "G+Money Lite — Okos utazási pénznem- és költségkövető",
         "seller": {
           "@type": "Organization",
@@ -760,7 +760,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6793436548"
           },
-          "name": "G+Money Lite",
+          "name": "G+Money Lite: Utazási kiadások",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
           "url": "https://apps.apple.com/hu/app/id6793436548?pt=118326163&ct=iag_data_hu&mt=8",
@@ -810,7 +810,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/hu/app/id6794039979?pt=118326163&ct=iag_data_hu&mt=8",
-        "name": "HoursTag Lite",
+        "name": "HoursTag Lite: Ár munkaórában",
         "description": "HoursTag Lite - Lásd a dolgok valódi árát",
         "seller": {
           "@type": "Organization",
@@ -826,7 +826,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6794039979"
           },
-          "name": "HoursTag Lite",
+          "name": "HoursTag Lite: Ár munkaórában",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
           "url": "https://apps.apple.com/hu/app/id6794039979?pt=118326163&ct=iag_data_hu&mt=8",
@@ -1668,7 +1668,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/hu/app/id6792850916?pt=118326163&ct=iag_data_hu&mt=8",
-        "name": "Mask My File",
+        "name": "Mask My File: Adatok törlése",
         "description": "Oszd meg biztonságosan úgy, hogy a fontos szövegkörnyezet megmarad. A Mask My File még a küldés előtt megtalálja a személyes adatokat, véglegesen kitakarja",
         "seller": {
           "@type": "Organization",
@@ -1684,7 +1684,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792850916"
           },
-          "name": "Mask My File",
+          "name": "Mask My File: Adatok törlése",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/hu/app/id6792850916?pt=118326163&ct=iag_data_hu&mt=8",
@@ -2460,7 +2460,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/hu/app/id6792856304?pt=118326163&ct=iag_data_hu&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: Igazolványkép",
         "description": "Snapport Lite - Készíts útlevél, vízum és dokumentum fényképeket irányított méretezéssel, háttér eszközökkel és nyomtatásra kész exportálással.",
         "seller": {
           "@type": "Organization",
@@ -2476,7 +2476,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: Igazolványkép",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/hu/app/id6792856304?pt=118326163&ct=iag_data_hu&mt=8",
@@ -2785,72 +2785,6 @@
     {
       "@type": "ListItem",
       "position": 43,
-      "url": "https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=iag_data_hu&mt=8",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-wifiaid",
-        "url": "https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=iag_data_hu&mt=8",
-        "name": "WiFi Aid",
-        "description": "Független útvonal-, DNS-, TCP-, TLS-, időzítés- és stabilitástesztekkel derítse ki a legvalószínűbb okot. Egyszeri előrefizetés, előfizetés, reklám és",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6790467886",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6790467886"
-          },
-          "name": "WiFi Aid",
-          "operatingSystem": "iOS",
-          "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=iag_data_hu&mt=8",
-          "installUrl": "https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=iag_data_hu&mt=8",
-          "downloadUrl": "https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=iag_data_hu&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=iag_data_hu&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/hu/wifiaid.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6790467886",
-          "inLanguage": "hu",
-          "description": "Független útvonal-, DNS-, TCP-, TLS-, időzítés- és stabilitástesztekkel derítse ki a legvalószínűbb okot. Egyszeri előrefizetés, előfizetés, reklám és",
-          "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-wifiaid"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "paid_upfront"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": false
-        },
-        "price": "2490",
-        "priceCurrency": "HUF",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "HU"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 44,
       "url": "https://apps.apple.com/hu/app/id6793414462?pt=118326163&ct=iag_data_hu&mt=8",
       "item": {
         "@type": "Offer",
@@ -2906,6 +2840,72 @@
           "isAccessibleForFree": true
         },
         "price": "0",
+        "priceCurrency": "HUF",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 44,
+      "url": "https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=iag_data_hu&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-wifiaid",
+        "url": "https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=iag_data_hu&mt=8",
+        "name": "WiFi Aid: Hálózati hibák",
+        "description": "Független útvonal-, DNS-, TCP-, TLS-, időzítés- és stabilitástesztekkel derítse ki a legvalószínűbb okot. Egyszeri előrefizetés, előfizetés, reklám és",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790467886",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790467886"
+          },
+          "name": "WiFi Aid: Hálózati hibák",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=iag_data_hu&mt=8",
+          "installUrl": "https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=iag_data_hu&mt=8",
+          "downloadUrl": "https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=iag_data_hu&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=iag_data_hu&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/hu/wifiaid.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790467886",
+          "inLanguage": "hu",
+          "description": "Független útvonal-, DNS-, TCP-, TLS-, időzítés- és stabilitástesztekkel derítse ki a legvalószínűbb okot. Egyszeri előrefizetés, előfizetés, reklám és",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-wifiaid"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "2490",
         "priceCurrency": "HUF",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

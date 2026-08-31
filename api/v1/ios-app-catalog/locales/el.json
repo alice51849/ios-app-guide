@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "el",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -51,7 +51,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: Αρχεία σε AI prompt",
       "summary": "Καλύτερο πλαίσιο. Καλύτερες απαντήσεις.",
       "category": "productivity",
       "search_terms": [
@@ -131,7 +131,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: Τεστ αγγλικών",
       "summary": "Το Aim990 Plus είναι ένα εργαλείο εξάσκησης για ενήλικες που θέλουν να κατανοούν με σιγουριά τον προφορικό και γραπτό αγγλικό λόγο όταν ο χρόνος είναι περιορισμένος. Δεν σας ζητά απλώς να απαντάτε σε ερωτήσεις· σας βοηθά να διατηρείτε τη συγκέντρωσή σας, να αποφασίζετε στον διαθέσιμο χρόνο και να μετατρέπετε κάθε λάθος σε στοχευμένη επανάληψη.",
       "category": "kids",
       "search_terms": [
@@ -436,7 +436,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: Προϋπολογισμός εξόδων",
       "summary": "Το G+Money κάνει την καθημερινή διαχείριση χρημάτων απλή και φιλική. Κατέγραψε έξοδα ανά κατηγορία, ταξίδι ή γεγονός, βάλε ημερήσιο προϋπολογισμό και δες καθαρά πού πηγαίνουν τα χρήματα.",
       "category": "finance",
       "search_terms": [
@@ -492,7 +492,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: Έξοδα ταξιδιού",
       "summary": "G+Money Lite — Έξυπνος μετατροπέας νομισμάτων & παρακολούθησης εξόδων",
       "category": "finance",
       "search_terms": [
@@ -526,7 +526,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: Τιμή σε ώρες",
       "summary": "HoursTag Lite - Δείτε την πραγματική τιμή των πραγμάτων",
       "category": "finance",
       "search_terms": [
@@ -618,7 +618,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: Φραγή εφαρμογών",
       "summary": "Προστάτευσε τις ώρες που αξίζουν περισσότερο. Το LockHour Pro σε βοηθά να ξεκινάς ήρεμες συνεδρίες εστίασης, να μειώνεις τους περισπασμούς του κινητού και να χτίζεις σταθερές παραγωγικές συνήθειες. Ιδανικό για μελέτη, γράψιμο, προγραμματισμό και βαθιά εργασία.",
       "category": "productivity",
       "search_terms": [
@@ -1251,7 +1251,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: Σβήστε δεδομένα",
       "summary": "Μοιραστείτε με ασφάλεια χωρίς να χάσετε το χρήσιμο πλαίσιο. Το Mask My File εντοπίζει ιδιωτικά στοιχεία προτού στείλετε ένα αρχείο, αποκρύπτει μόνιμα ό,τι επιλέξετε και έπειτα ανοίγει ξανά και επαληθεύει το νέο αντίγραφο προτού εμφανίσει το Private Ready.",
       "category": "photo-utility",
       "search_terms": [
@@ -1372,11 +1372,13 @@
       "summary": "Κάθε έργο κρατά δικά του βιβλία: έσοδα μείον έξοδα δίνουν το καθαρό του αποτέλεσμα. Εδώ είναι οι ερωτήσεις που ακούμε πιο συχνά. Αν λείπει η δική σας, γράψτε μας — κάθε μήνυμα το διαβάζει άνθρωπος.",
       "category": "finance",
       "search_terms": [
-        "παρακολούθηση εξόδων",
-        "μετατροπέας νομισμάτων",
-        "συναλλαγματική ισοτιμία",
-        "διαχείριση χρημάτων",
-        "Μηνιαία τάση"
+        "P&L",
+        "κέρδη ζημίες",
+        "κοστολόγηση εργασίας",
+        "περιθώριο κέρδους",
+        "κερδοφορία πελάτη",
+        "κατανομή κόστους",
+        "ανάλυση"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1444,7 +1446,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: Φίλτρα φιλμ",
       "summary": "Το PhotoCream Pro μετατρέπει το iPhone ή iPad σε ζεστή φιλμ κάμερα και κομψό editor φωτογραφιών. Δημιουργήστε ρετρό εικόνες με 100+ αναλογικά φίλτρα, απαλό κόκκο και light leaks, και βελτιώστε selfies φυσικά.",
       "category": "photo-utility",
       "search_terms": [
@@ -1501,7 +1503,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: Διαγραφή διπλών",
       "summary": "Κέρδισε ξανά gigabyte αφαιρώντας όσα δεν χρειάζεσαι πια: διπλές φωτογραφίες, παλιά στιγμιότυπα οθόνης, θολές λήψεις και μεγάλα βίντεο.",
       "category": "photo-utility",
       "search_terms": [
@@ -1781,7 +1783,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: Φωτό ταυτότητας",
       "summary": "Snapport Lite - Φτιάξτε φωτογραφίες διαβατηρίου, βίζας και εγγράφων με καθοδηγούμενες διαστάσεις, εργαλεία φόντου και εξαγωγή έτοιμη προς εκτύπωση.",
       "category": "photo-utility",
       "search_terms": [
@@ -2007,7 +2009,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: Εντοπισμός βλαβών",
       "summary": "Βρείτε την πιθανότερη αιτία με ανεξάρτητους ελέγχους διαδρομών, DNS, TCP, TLS, χρόνων και σταθερότητας. Μία αρχική πληρωμή, χωρίς συνδρομή, διαφημίσεις ή παρακολούθηση.",
       "category": "photo-utility",
       "search_terms": [

@@ -2,7 +2,7 @@
 title: "OnePage PPT: स्लाइड मेकर — टेक्स्ट से परफेक्ट प्रस्तुति | iOS App"
 lang: "hi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/hi/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

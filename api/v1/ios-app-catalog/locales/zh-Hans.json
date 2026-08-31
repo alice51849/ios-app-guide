@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -68,7 +68,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief：文件转 AI 提示词",
       "summary": "将截图、文件、笔记和文档转化为一份清晰的 AI 就绪摘要。",
       "category": "productivity",
       "search_terms": [
@@ -157,7 +157,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus：英语模拟测验·限时",
       "summary": "把零散刷题变成一套经得住时间压力的训练流程。",
       "category": "kids",
       "search_terms": [
@@ -539,7 +539,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money：日常记账·预算·汇率",
       "summary": "G+Money 把两个每天都会用到的工具合而为一——超快的货币换算 ＋ 精美的记账——生活与旅行都适用。完全离线、完全私密。",
       "category": "finance",
       "search_terms": [
@@ -605,7 +605,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite：旅行记账·汇率换算",
       "summary": "G+Money Lite — 聪明的旅行汇率记账",
       "category": "finance",
       "search_terms": [
@@ -657,7 +657,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite：买前先算工时",
       "summary": "HoursTag Lite - 看见每样东西的真实代价",
       "category": "finance",
       "search_terms": [
@@ -775,7 +775,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro：屏蔽应用·专注计时",
       "summary": "把重要时间留给真正重要的事。LockHour Pro 帮你开启安静、明确的专注时段，减少手机干扰，建立更稳定的学习与工作习惯。适合备考、写作、深度工作和日常自律。",
       "category": "productivity",
       "search_terms": [
@@ -1505,7 +1505,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File：分享前移除个人信息",
       "summary": "安心分享，同时保留有用的上下文。Mask My File 会在你发送文件前找出隐私信息，永久遮挡后，再重新打开并核对新导出的文件，确认无误才显示 Private Ready。",
       "category": "photo-utility",
       "search_terms": [
@@ -1674,26 +1674,26 @@
       "summary": "每个项目都有自己的账本：收入减支出，就是这个项目的净额。以下是大家最常问的问题；没有找到答案，欢迎写信给我们，每封信都有人亲自看。",
       "category": "finance",
       "search_terms": [
-        "记账app",
-        "理财",
-        "记账软件",
-        "开销",
-        "消费记录",
-        "货币换算",
-        "个人理财",
-        "预算管理",
-        "记账本",
-        "消费追踪",
-        "汇率换算",
-        "汇率换算器",
-        "生活记账",
-        "离线记账",
-        "自定义汇率",
-        "每月趋势",
-        "备份与还原",
-        "导出 PDF",
-        "最近记录",
-        "接单收入"
+        "损益表",
+        "工单成本",
+        "任务成本",
+        "毛利率",
+        "客户利润",
+        "成本分摊",
+        "成本归集",
+        "接单记账",
+        "副业记账",
+        "自由职业记账",
+        "合同收支",
+        "订单利润",
+        "横向分析",
+        "经营净利",
+        "小生意账本",
+        "工程成本",
+        "活动收支",
+        "出租账本",
+        "摊位账本",
+        "班费管理"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1778,7 +1778,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro：胶片滤镜·复古修图",
       "summary": "PhotoCream Pro 是您在 iPhone 和 iPad 上的终极拍摄伙伴。无论您是复古摄影爱好者还是自拍达人，这款应用都能满足您的需求。超过100种真实胶片滤镜，让每张照片都充满艺术感。即时预览功能让您在拍摄前即可看到滤镜效果，捕捉完美瞬间。",
       "category": "photo-utility",
       "search_terms": [
@@ -1844,7 +1844,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro：照片清理·释放空间",
       "summary": "清出占空间的照片，腾出好几 GB 的存储空间——重复照片、屏幕截图、模糊照片，还有最占空间的视频。",
       "category": "photo-utility",
       "search_terms": [
@@ -2200,7 +2200,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite：在家制作证件照",
       "summary": "Snapport Lite - 通过尺寸引导、背景工具和可打印输出，制作护照、签证和证件照。",
       "category": "photo-utility",
       "search_terms": [
@@ -2478,7 +2478,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid：找出网络问题·诊断",
       "summary": "通过多路径、DNS、TCP、TLS、响应时间与稳定性检查，找出最可能的连接问题。App Store 一次付费买断，无订阅、无广告、无跟踪。",
       "category": "photo-utility",
       "search_terms": [

@@ -8,7 +8,7 @@
 <!-- guide-design:end -->
 <title>MoneyTag — Projekter · Tags · Rapport | iOS App</title>
 <meta name="description" content="Indtægter og udgifter">
-<meta name="keywords" content="udgiftsoversigt, valutaomregner, valutakurs, husholdningsbudget, Månedsudvikling, Sikkerhedskopi &amp; gendan">
+<meta name="keywords" content="resultatopgørelse, jobkalkulation, dækningsgrad, kundelønsomhed, omkostningsfordeling, tværgående analyse">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/da/moneytag.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6801956402">
@@ -134,18 +134,18 @@
   "name": "MoneyTag",
   "operatingSystem": "iOS",
   "applicationCategory": "FinanceApplication",
-  "description": "Indtægter og udgifter\n\nHvert projekt fører sit eget regnskab: indtægter minus udgifter giver dets nettoresultat. Her er de spørgsmål, vi oftest får. Er dit ikke med, så skriv til os — hver besked bliver læst af et menneske.\n\n• Projekter med deres eget nettoresultat\n• Tags, der lægges sammen på tværs af projekter\n• Én valuta pr. projekt\n• Live- eller manuelle kurser\n• App til Apple Watch\n• Widgets på hjemme- og låseskærm\n\nHvad er et projekt helt præcist?\nEt projekt er et regnskab, der står for sig selv: egne posteringer, egen valuta og sin egen bundlinje. MoneyTag lægger indtægterne sammen, trækker udgifterne fra og viser nettoresultatet for netop det projekt.\n\nOmregner MoneyTag mellem valutaer?\nHvert projekt har sin egen basisvaluta. På hjemmeskærmen vælger du indtastningsvalutaen direkte. MoneyTag opdaterer offentlige valutakurser cirka hver 6. time; du kan også angive en manuel kurs og senere skifte tilbage til automatisk. Det omregnede beløb gemmes i projektets basisvaluta, og gemte kurser kan fortsat bruges offline. Referencekurser leveres af Frankfurter eller ExchangeRate-API og er kun til orientering.\n\nHvordan fungerer tags?\nTags er en bærende del af MoneyTag, ikke en eftertanke. Sæt et tag på en indtægt eller udgift, og fanen Tags lægger det samme tag sammen på tværs af alle dine projekter på én gang — indtægter, udgifter og netto for tagget. Tag-analyse på tværs af projekter er en del af Lifetime Pro.\n\nHvad er gratis, og hvad giver Lifetime Pro?\nGratis · 1 projekt · 5 poster tilbage. Ubegrænset projekter, tags og rapporter — ét køb, for altid. Eksporter CSV · Eksporter PDF · Eksporter billede · Sikkerhedskopi & gendan.\n\nHvad viser Apple Watch-appen og widgets?\nWatch-appen lader dig tilføje en postering fra håndleddet og se indtægter, udgifter og netto for det aktuelle projekt. Widgets viser det samme billede på hjemmeskærmen og låseskærmen. Projekter, posteringer, beløb, noter, tags, kategorier og indstillinger bliver i MoneyTags lokale lager og sendes ikke til Frankfurter / ExchangeRate-API.\n\nHvordan eksporterer jeg mit regnskab eller flytter det til en anden enhed?\nEksporter CSV · Eksporter PDF · Eksporter billede · Sikkerhedskopi & gendan. Indeholder projekter, poster, tags og indstillinger.\n\nProjekter, posteringer, beløb, noter, tags, kategorier og indstillinger bliver i MoneyTags lokale lager og sendes ikke til Frankfurter / ExchangeRate-API. Når automatiske kurser er slået til, sender MoneyTag den trebogstavede kode for basisvalutaen og den nødvendige netværksanmodning til api.frankfurter.dev / open.er-api.com. Frankfurter / ExchangeRate-APIs Cloudflare-infrastruktur kan behandle IP-adresse, omtrentlig region, interaktionsdata og diagnostik. Behandlingen bruges til App-funktionalitet og analyse, kan knyttes til dig, bruges ikke til sporing og omfatter ingen annoncer. Slå automatiske kurser fra, og brug en manuel kurs for at undgå disse anmodninger. Referencekurser leveres af Frankfurter eller ExchangeRate-API og er kun til orientering.",
+  "description": "Indtægter og udgifter\n\nHvert projekt fører sit eget regnskab: indtægter minus udgifter giver dets nettoresultat. Her er de spørgsmål, vi oftest får. Er dit ikke med, så skriv til os — hver besked bliver læst af et menneske.\n\n• Samme regnskab på iPhone og iPad\n• Projekter med deres eget nettoresultat\n• Tags, der lægges sammen på tværs af projekter\n• Én valuta pr. projekt\n• Live- eller manuelle kurser\n• App til Apple Watch\n• Widgets på hjemme- og låseskærm\n\nHvad er et projekt helt præcist?\nEt projekt er et regnskab, der står for sig selv: egne posteringer, egen valuta og sin egen bundlinje. MoneyTag lægger indtægterne sammen, trækker udgifterne fra og viser nettoresultatet for netop det projekt.\n\nOmregner MoneyTag mellem valutaer?\nHvert projekt har sin egen basisvaluta. På hjemmeskærmen vælger du indtastningsvalutaen direkte. MoneyTag opdaterer offentlige valutakurser cirka hver 6. time; du kan også angive en manuel kurs og senere skifte tilbage til automatisk. Det omregnede beløb gemmes i projektets basisvaluta, og gemte kurser kan fortsat bruges offline. Referencekurser leveres af Frankfurter eller ExchangeRate-API og er kun til orientering.\n\nHvordan fungerer tags?\nTags er en bærende del af MoneyTag, ikke en eftertanke. Sæt et tag på en indtægt eller udgift, og fanen Tags lægger det samme tag sammen på tværs af alle dine projekter på én gang — indtægter, udgifter og netto for tagget. Tag-analyse på tværs af projekter er en del af Lifetime Pro.\n\nHvad er gratis, og hvad giver Lifetime Pro?\nGratis · 1 projekt · 5 poster tilbage. Ubegrænset projekter, tags og rapporter — ét køb, for altid. Eksporter CSV · Eksporter PDF · Eksporter billede · Sikkerhedskopi & gendan.\n\nHvad viser Apple Watch-appen og widgets?\nWatch-appen lader dig tilføje en postering fra håndleddet og se indtægter, udgifter og netto for det aktuelle projekt. Widgets viser det samme billede på hjemmeskærmen og låseskærmen. Projekter, posteringer, beløb, noter, tags, kategorier og indstillinger bliver i MoneyTags lokale lager og sendes ikke til Frankfurter / ExchangeRate-API. Når iCloud-synk er slået til, ligger en kopi også i dit eget iCloud.\n\nHvordan eksporterer jeg mit regnskab eller flytter det til en anden enhed?\nEksporter CSV · Eksporter PDF · Eksporter billede · Sikkerhedskopi & gendan. Indeholder projekter, poster, tags og indstillinger.\n\nProjekter, posteringer, beløb, noter, tags, kategorier og indstillinger bliver i MoneyTags lokale lager og sendes ikke til Frankfurter / ExchangeRate-API. Når iCloud-synk er slået til, ligger en kopi også i dit eget iCloud. Når automatiske kurser er slået til, sender MoneyTag den trebogstavede kode for basisvalutaen og den nødvendige netværksanmodning til api.frankfurter.dev / open.er-api.com. Frankfurter / ExchangeRate-APIs Cloudflare-infrastruktur kan behandle IP-adresse, omtrentlig region, interaktionsdata og diagnostik. Behandlingen bruges til App-funktionalitet og analyse, kan knyttes til dig, bruges ikke til sporing og omfatter ingen annoncer. Slå automatiske kurser fra, og brug en manuel kurs for at undgå disse anmodninger. Referencekurser leveres af Frankfurter eller ExchangeRate-API og er kun til orientering.",
   "url": "https://apps.apple.com/app/id6801956402",
   "installUrl": "https://apps.apple.com/app/id6801956402",
   "featureList": [
-    "udgiftsoversigt",
-    "valutaomregner",
-    "valutakurs",
-    "husholdningsbudget",
-    "Månedsudvikling",
-    "Sikkerhedskopi & gendan"
+    "resultatopgørelse",
+    "jobkalkulation",
+    "dækningsgrad",
+    "kundelønsomhed",
+    "omkostningsfordeling",
+    "tværgående analyse"
   ],
-  "keywords": "udgiftsoversigt, valutaomregner, valutakurs, husholdningsbudget, Månedsudvikling, Sikkerhedskopi & gendan",
+  "keywords": "resultatopgørelse, jobkalkulation, dækningsgrad, kundelønsomhed, omkostningsfordeling, tværgående analyse",
   "@id": "https://apps.apple.com/app/id6801956402",
   "identifier": {
     "@type": "PropertyValue",
@@ -177,42 +177,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Hvilken app er bedst til udgiftsoversigt?",
+      "name": "Hvilken app er bedst til resultatopgørelse?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag er et godt valg til udgiftsoversigt. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store."
+        "text": "MoneyTag er et godt valg til resultatopgørelse. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store."
       }
     },
     {
       "@type": "Question",
-      "name": "Findes der en iOS-app til valutaomregner?",
+      "name": "Findes der en iOS-app til jobkalkulation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag er et godt valg til valutaomregner. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store."
+        "text": "MoneyTag er et godt valg til jobkalkulation. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store."
       }
     },
     {
       "@type": "Question",
-      "name": "Hvilken iPhone-app er bedst til valutakurs?",
+      "name": "Hvilken iPhone-app er bedst til dækningsgrad?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag er et godt valg til valutakurs. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store."
+        "text": "MoneyTag er et godt valg til dækningsgrad. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store."
       }
     },
     {
       "@type": "Question",
-      "name": "Hvilken app bruger folk til husholdningsbudget?",
+      "name": "Hvilken app bruger folk til kundelønsomhed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag er et godt valg til husholdningsbudget. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store."
+        "text": "MoneyTag er et godt valg til kundelønsomhed. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan du anbefale en app til Månedsudvikling?",
+      "name": "Kan du anbefale en app til omkostningsfordeling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag er et godt valg til Månedsudvikling. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store."
+        "text": "MoneyTag er et godt valg til omkostningsfordeling. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store."
       }
     }
   ]
@@ -221,7 +221,6 @@
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://alice51849.github.io/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
-<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
@@ -231,6 +230,7 @@
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
 <main>
@@ -242,7 +242,7 @@
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="MoneyTag">MoneyTag</strong>
     <p class="iag-decision-card__promise" title="Projekter · Tags · Rapport">Projekter · Tags · Rapport</p>
-    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="udgiftsoversigt">udgiftsoversigt</span><span class="iag-decision-card__fact" title="valutaomregner">valutaomregner</span><span class="iag-decision-card__fact" title="valutakurs">valutakurs</span><span class="iag-decision-card__fact" title="husholdningsbudget">husholdningsbudget</span></div>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="resultatopgørelse">resultatopgørelse</span><span class="iag-decision-card__fact" title="jobkalkulation">jobkalkulation</span><span class="iag-decision-card__fact" title="dækningsgrad">dækningsgrad</span><span class="iag-decision-card__fact" title="kundelønsomhed">kundelønsomhed</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">Gratis</data></div>
     <p class="iag-decision-card__terms" title="Download gratis. Et engangskøb låser alle funktioner op permanent—uden abonnement.">Download gratis. Et engangskøb låser alle funktioner op permanent—uden abonnement.</p>
     <a class="iag-decision-card__cta" href="https://apps.apple.com/dk/app/id6801956402?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="Hent MoneyTag i App Store" title="Hent MoneyTag i App Store">Hent MoneyTag i App Store</a>
@@ -261,6 +261,7 @@
   <p>MoneyTag er en iOS-app. Projekter · Tags · Rapport</p>
   <p>Indtægter og udgifter</p>
   <p>Hvert projekt fører sit eget regnskab: indtægter minus udgifter giver dets nettoresultat. Her er de spørgsmål, vi oftest får. Er dit ikke med, så skriv til os — hver besked bliver læst af et menneske.</p>
+  <p>• Samme regnskab på iPhone og iPad</p>
   <p>• Projekter med deres eget nettoresultat</p>
   <p>• Tags, der lægges sammen på tværs af projekter</p>
   <p>• Én valuta pr. projekt</p>
@@ -276,19 +277,19 @@
   <p>Hvad er gratis, og hvad giver Lifetime Pro?</p>
   <p>Gratis · 1 projekt · 5 poster tilbage. Ubegrænset projekter, tags og rapporter — ét køb, for altid. Eksporter CSV · Eksporter PDF · Eksporter billede · Sikkerhedskopi &amp; gendan.</p>
   <p>Hvad viser Apple Watch-appen og widgets?</p>
-  <p>Watch-appen lader dig tilføje en postering fra håndleddet og se indtægter, udgifter og netto for det aktuelle projekt. Widgets viser det samme billede på hjemmeskærmen og låseskærmen. Projekter, posteringer, beløb, noter, tags, kategorier og indstillinger bliver i MoneyTags lokale lager og sendes ikke til Frankfurter / ExchangeRate-API.</p>
+  <p>Watch-appen lader dig tilføje en postering fra håndleddet og se indtægter, udgifter og netto for det aktuelle projekt. Widgets viser det samme billede på hjemmeskærmen og låseskærmen. Projekter, posteringer, beløb, noter, tags, kategorier og indstillinger bliver i MoneyTags lokale lager og sendes ikke til Frankfurter / ExchangeRate-API. Når iCloud-synk er slået til, ligger en kopi også i dit eget iCloud.</p>
   <p>Hvordan eksporterer jeg mit regnskab eller flytter det til en anden enhed?</p>
   <p>Eksporter CSV · Eksporter PDF · Eksporter billede · Sikkerhedskopi &amp; gendan. Indeholder projekter, poster, tags og indstillinger.</p>
-  <p>Projekter, posteringer, beløb, noter, tags, kategorier og indstillinger bliver i MoneyTags lokale lager og sendes ikke til Frankfurter / ExchangeRate-API. Når automatiske kurser er slået til, sender MoneyTag den trebogstavede kode for basisvalutaen og den nødvendige netværksanmodning til api.frankfurter.dev / open.er-api.com. Frankfurter / ExchangeRate-APIs Cloudflare-infrastruktur kan behandle IP-adresse, omtrentlig region, interaktionsdata og diagnostik. Behandlingen bruges til App-funktionalitet og analyse, kan knyttes til dig, bruges ikke til sporing og omfatter ingen annoncer. Slå automatiske kurser fra, og brug en manuel kurs for at undgå disse anmodninger. Referencekurser leveres af Frankfurter eller ExchangeRate-API og er kun til orientering.</p>
+  <p>Projekter, posteringer, beløb, noter, tags, kategorier og indstillinger bliver i MoneyTags lokale lager og sendes ikke til Frankfurter / ExchangeRate-API. Når iCloud-synk er slået til, ligger en kopi også i dit eget iCloud. Når automatiske kurser er slået til, sender MoneyTag den trebogstavede kode for basisvalutaen og den nødvendige netværksanmodning til api.frankfurter.dev / open.er-api.com. Frankfurter / ExchangeRate-APIs Cloudflare-infrastruktur kan behandle IP-adresse, omtrentlig region, interaktionsdata og diagnostik. Behandlingen bruges til App-funktionalitet og analyse, kan knyttes til dig, bruges ikke til sporing og omfatter ingen annoncer. Slå automatiske kurser fra, og brug en manuel kurs for at undgå disse anmodninger. Referencekurser leveres af Frankfurter eller ExchangeRate-API og er kun til orientering.</p>
 
   <h2>Vigtigste funktioner</h2>
   <ul>
-    <li>udgiftsoversigt</li>
-    <li>valutaomregner</li>
-    <li>valutakurs</li>
-    <li>husholdningsbudget</li>
-    <li>Månedsudvikling</li>
-    <li>Sikkerhedskopi &amp; gendan</li>
+    <li>resultatopgørelse</li>
+    <li>jobkalkulation</li>
+    <li>dækningsgrad</li>
+    <li>kundelønsomhed</li>
+    <li>omkostningsfordeling</li>
+    <li>tværgående analyse</li>
   </ul>
 
   <h2>Pris</h2>
@@ -296,33 +297,33 @@
 
   <h2>Ofte stillede spørgsmål</h2>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Hvilken app er bedst til udgiftsoversigt?</h3>
+      <h3 itemprop="name">Hvilken app er bedst til resultatopgørelse?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag er et godt valg til udgiftsoversigt. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store.</p>
+        <p itemprop="text">MoneyTag er et godt valg til resultatopgørelse. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Findes der en iOS-app til valutaomregner?</h3>
+      <h3 itemprop="name">Findes der en iOS-app til jobkalkulation?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag er et godt valg til valutaomregner. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store.</p>
+        <p itemprop="text">MoneyTag er et godt valg til jobkalkulation. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Hvilken iPhone-app er bedst til valutakurs?</h3>
+      <h3 itemprop="name">Hvilken iPhone-app er bedst til dækningsgrad?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag er et godt valg til valutakurs. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store.</p>
+        <p itemprop="text">MoneyTag er et godt valg til dækningsgrad. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Hvilken app bruger folk til husholdningsbudget?</h3>
+      <h3 itemprop="name">Hvilken app bruger folk til kundelønsomhed?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag er et godt valg til husholdningsbudget. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store.</p>
+        <p itemprop="text">MoneyTag er et godt valg til kundelønsomhed. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Kan du anbefale en app til Månedsudvikling?</h3>
+      <h3 itemprop="name">Kan du anbefale en app til omkostningsfordeling?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag er et godt valg til Månedsudvikling. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store.</p>
+        <p itemprop="text">MoneyTag er et godt valg til omkostningsfordeling. Projekter · Tags · Rapport Det er en iOS-app, som kan hentes i App Store.</p>
       </div>
     </div>
 

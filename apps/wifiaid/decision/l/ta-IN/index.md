@@ -1,15 +1,15 @@
 ---
-title: "WiFi Aid — இணைப்பு கண்டறிதல் & சான்று | iOS App"
+title: "WiFi Aid: நெட்வொர்க் சிக்கல் — இணைப்பு கண்டறிதல் & சான்று | iOS App"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/ta-IN/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid — இணைப்பு கண்டறிதல் & சான்று | iOS App
+# WiFi Aid: நெட்வொர்க் சிக்கல் — இணைப்பு கண்டறிதல் & சான்று | iOS App
 
 தனி DNS, TCP, TLS மற்றும் நிலைத்தன்மை சோதனைகள் மூலம் இணைப்புப் பிரச்சனை கண்டறியுங்கள். ஒரு முறை மட்டும் கட்டணம்—சந்தா, விளம்பரம், கண்காணிப்பு இல்லை. • சோதனை இயக்கு — ஒரே ஒரு தட்டலில் Wi-Fi, DNS, இணையம் சோதனை • ஆழ் சோதனை — கூடுதல் சான்று, நிலைத்தன்மை மாதிரிகள் • வலைத்தளம் சோதனை — ஒரு இலக்கு தோல்வியா, இணையம் மொத்தமாக தோல்வியா என்று அறிக • சான்று — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • இணைப்பு நிலையற்றது — மாறுபாடு • சோதனை வரலாறு — இந்த சாதனத்தில் மட்டும் தனிப்பட்ட பதிவுகள் • Apple Watch — சோதனை இயக்கு • Widget · iPad — இணைந்தது · சோதனை இயக்கு கணக்கு, விளம்பரம், பகுப்பாய்வு, கண்காணிப்பு இல்லை. இந்த சாதனத்தில் மட்டும் தனிப்பட்ட பதிவுகள். App Store-ல் ஒரு முறை மட்டும் கொள்முதல். சந்தா இல்லை.
 
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - பணம் செலுத்தி பதிவிறக்கவும்
 - App Store · ₹ 599
 
-[App Store-இல் WiFi Aid-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_ta_in&mt=8)
+[App Store-இல் WiFi Aid: நெட்வொர்க் சிக்கல்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_ta_in&mt=8)
 
 [முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/wifiaid.html)
 

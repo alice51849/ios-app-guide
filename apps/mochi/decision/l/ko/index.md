@@ -2,7 +2,7 @@
 title: "아이폰에서 구독 없는 가장 간단한 할 일 목록 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/ko/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

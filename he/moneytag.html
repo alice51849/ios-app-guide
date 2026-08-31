@@ -8,7 +8,7 @@
 <!-- guide-design:end -->
 <title>MoneyTag: הכנסות והוצאות — פרויקטים · תגיות · דוח | iOS App</title>
 <meta name="description" content="הכנסות והוצאות">
-<meta name="keywords" content="ניהול הוצאות, שער חליפין, מחשבון מטבע, תקציב יומי, הוצאה, מגמה חודשית, גיבוי ושחזור, ייצוא PDF, עבודה עצמאית">
+<meta name="keywords" content="רווח והפסד, תמחיר עבודה, מרווח גולמי, רווחיות לקוח, הקצאת עלויות, הנהלת חשבונות לעצמאי, ניתוח רוחבי, תזרים">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/he/moneytag.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6801956402">
@@ -134,20 +134,20 @@
   "name": "MoneyTag: הכנסות והוצאות",
   "operatingSystem": "iOS",
   "applicationCategory": "FinanceApplication",
-  "description": "הכנסות והוצאות\n\nלכל פרויקט יש ספרים משלו: הכנסות פחות הוצאות הן התוצאה נטו שלו. אלה השאלות הנפוצות ביותר; אם לא מצאתם כאן תשובה, כתבו לנו — אדם אמיתי קורא כל הודעה.\n\n• לכל פרויקט תוצאה נטו משלו\n• תגיות שמסתכמות בין הפרויקטים\n• מטבע אחד לכל פרויקט\n• שערים חיים או ידניים\n• אפליקציה ל-Apple Watch\n• וידג'טים במסך הבית ובמסך הנעילה\n\nמה זה בעצם פרויקט?\nפרויקט הוא ספר חשבונות עצמאי: תנועות משלו, מטבע משלו ושורה תחתונה משלו. MoneyTag מסכם את ההכנסות, מחסיר את ההוצאות ומציג את התוצאה נטו של אותו פרויקט בלבד.\n\nהאם MoneyTag ממיר בין מטבעות?\nלכל פרויקט מטבע בסיס משלו. במסך הבית אפשר לבחור ישירות את מטבע הקלט. MoneyTag מעדכן שערי חליפין ציבוריים בערך כל 6 שעות; אפשר גם לקבוע שער ידני ואחר כך לחזור לעדכון אוטומטי. הסכום לאחר ההמרה נשמר במטבע הבסיס של הפרויקט, והשערים השמורים זמינים גם במצב לא מקוון. שערי הייחוס מסופקים על ידי Frankfurter או ExchangeRate-API ומיועדים למידע בלבד.\n\nאיך עובדות התגיות?\nתגיות הן חלק מרכזי ב-MoneyTag, לא תוספת מאוחרת. תייגו כל הכנסה או הוצאה, ומסך התגיות יסכם את אותה תגית בכל הפרויקטים שלכם בבת אחת — הכנסות, הוצאות והתוצאה נטו של התגית. ניתוח תגיות בין פרויקטים כלול ב-Lifetime Pro.\n\nמה חינם ומה מוסיף Lifetime Pro?\nחינם · 1 פרויקט · נותרו 5 רשומות. פרויקטים, תגיות ודוחות ללא הגבלה — רכישה אחת, לתמיד. ייצוא CSV · ייצוא PDF · ייצוא תמונה · גיבוי ושחזור.\n\nמה מציגים אפליקציית Apple Watch והווידג'טים?\nאפליקציית השעון מאפשרת להוסיף תנועה ישירות מהיד ולראות את ההכנסות, ההוצאות והתוצאה נטו של הפרויקט הנוכחי. הווידג'טים מציגים את אותו מצב במסך הבית ובמסך הנעילה. פרויקטים, עסקאות, סכומים, הערות, תגיות, קטגוריות והגדרות נשארים באחסון המקומי של MoneyTag ואינם נשלחים ל‑Frankfurter / ExchangeRate-API.\n\nאיך אני מייצא את הספרים או מעביר אותם למכשיר אחר?\nייצוא CSV · ייצוא PDF · ייצוא תמונה · גיבוי ושחזור. כולל פרויקטים, רשומות, תגיות והגדרות.\n\nפרויקטים, עסקאות, סכומים, הערות, תגיות, קטגוריות והגדרות נשארים באחסון המקומי של MoneyTag ואינם נשלחים ל‑Frankfurter / ExchangeRate-API. כאשר שערים אוטומטיים פעילים, MoneyTag שולח את קוד מטבע הבסיס בן שלוש האותיות ואת בקשת הרשת הנחוצה אל api.frankfurter.dev / open.er-api.com. תשתית Cloudflare של Frankfurter / ExchangeRate-API עשויה לעבד כתובת IP, אזור משוער, נתוני אינטראקציה ואבחון. העיבוד נועד לתפקוד ולניתוח של ה‑App, עשוי להיות מקושר אליך, אינו משמש למעקב ואינו כולל פרסום. כדי להימנע מהבקשות האלה, כבה שערים אוטומטיים והשתמש בשער ידני. שערי הייחוס מסופקים על ידי Frankfurter או ExchangeRate-API ומיועדים למידע בלבד.",
+  "description": "הכנסות והוצאות\n\nלכל פרויקט יש ספרים משלו: הכנסות פחות הוצאות הן התוצאה נטו שלו. אלה השאלות הנפוצות ביותר; אם לא מצאתם כאן תשובה, כתבו לנו — אדם אמיתי קורא כל הודעה.\n\n• אותו פנקס ב‑iPhone וב‑iPad\n• לכל פרויקט תוצאה נטו משלו\n• תגיות שמסתכמות בין הפרויקטים\n• מטבע אחד לכל פרויקט\n• שערים חיים או ידניים\n• אפליקציה ל-Apple Watch\n• וידג'טים במסך הבית ובמסך הנעילה\n\nמה זה בעצם פרויקט?\nפרויקט הוא ספר חשבונות עצמאי: תנועות משלו, מטבע משלו ושורה תחתונה משלו. MoneyTag מסכם את ההכנסות, מחסיר את ההוצאות ומציג את התוצאה נטו של אותו פרויקט בלבד.\n\nהאם MoneyTag ממיר בין מטבעות?\nלכל פרויקט מטבע בסיס משלו. במסך הבית אפשר לבחור ישירות את מטבע הקלט. MoneyTag מעדכן שערי חליפין ציבוריים בערך כל 6 שעות; אפשר גם לקבוע שער ידני ואחר כך לחזור לעדכון אוטומטי. הסכום לאחר ההמרה נשמר במטבע הבסיס של הפרויקט, והשערים השמורים זמינים גם במצב לא מקוון. שערי הייחוס מסופקים על ידי Frankfurter או ExchangeRate-API ומיועדים למידע בלבד.\n\nאיך עובדות התגיות?\nתגיות הן חלק מרכזי ב-MoneyTag, לא תוספת מאוחרת. תייגו כל הכנסה או הוצאה, ומסך התגיות יסכם את אותה תגית בכל הפרויקטים שלכם בבת אחת — הכנסות, הוצאות והתוצאה נטו של התגית. ניתוח תגיות בין פרויקטים כלול ב-Lifetime Pro.\n\nמה חינם ומה מוסיף Lifetime Pro?\nחינם · 1 פרויקט · נותרו 5 רשומות. פרויקטים, תגיות ודוחות ללא הגבלה — רכישה אחת, לתמיד. ייצוא CSV · ייצוא PDF · ייצוא תמונה · גיבוי ושחזור.\n\nמה מציגים אפליקציית Apple Watch והווידג'טים?\nאפליקציית השעון מאפשרת להוסיף תנועה ישירות מהיד ולראות את ההכנסות, ההוצאות והתוצאה נטו של הפרויקט הנוכחי. הווידג'טים מציגים את אותו מצב במסך הבית ובמסך הנעילה. פרויקטים, עסקאות, סכומים, הערות, תגיות, קטגוריות והגדרות נשארים באחסון המקומי של MoneyTag ואינם נשלחים ל‑Frankfurter / ExchangeRate-API. כאשר סנכרון iCloud פעיל, עותק אחד נשמר גם ב‑iCloud שלך.\n\nאיך אני מייצא את הספרים או מעביר אותם למכשיר אחר?\nייצוא CSV · ייצוא PDF · ייצוא תמונה · גיבוי ושחזור. כולל פרויקטים, רשומות, תגיות והגדרות.\n\nפרויקטים, עסקאות, סכומים, הערות, תגיות, קטגוריות והגדרות נשארים באחסון המקומי של MoneyTag ואינם נשלחים ל‑Frankfurter / ExchangeRate-API. כאשר סנכרון iCloud פעיל, עותק אחד נשמר גם ב‑iCloud שלך. כאשר שערים אוטומטיים פעילים, MoneyTag שולח את קוד מטבע הבסיס בן שלוש האותיות ואת בקשת הרשת הנחוצה אל api.frankfurter.dev / open.er-api.com. תשתית Cloudflare של Frankfurter / ExchangeRate-API עשויה לעבד כתובת IP, אזור משוער, נתוני אינטראקציה ואבחון. העיבוד נועד לתפקוד ולניתוח של ה‑App, עשוי להיות מקושר אליך, אינו משמש למעקב ואינו כולל פרסום. כדי להימנע מהבקשות האלה, כבה שערים אוטומטיים והשתמש בשער ידני. שערי הייחוס מסופקים על ידי Frankfurter או ExchangeRate-API ומיועדים למידע בלבד.",
   "url": "https://apps.apple.com/app/id6801956402",
   "installUrl": "https://apps.apple.com/app/id6801956402",
   "featureList": [
-    "ניהול הוצאות",
-    "שער חליפין",
-    "מחשבון מטבע",
-    "תקציב יומי",
-    "הוצאה",
-    "מגמה חודשית",
-    "גיבוי ושחזור",
-    "ייצוא PDF"
+    "רווח והפסד",
+    "תמחיר עבודה",
+    "מרווח גולמי",
+    "רווחיות לקוח",
+    "הקצאת עלויות",
+    "הנהלת חשבונות לעצמאי",
+    "ניתוח רוחבי",
+    "תזרים"
   ],
-  "keywords": "ניהול הוצאות, שער חליפין, מחשבון מטבע, תקציב יומי, הוצאה, מגמה חודשית, גיבוי ושחזור, ייצוא PDF, עבודה עצמאית",
+  "keywords": "רווח והפסד, תמחיר עבודה, מרווח גולמי, רווחיות לקוח, הקצאת עלויות, הנהלת חשבונות לעצמאי, ניתוח רוחבי, תזרים",
   "@id": "https://apps.apple.com/app/id6801956402",
   "identifier": {
     "@type": "PropertyValue",
@@ -179,42 +179,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "מהי האפליקציה הטובה ביותר עבור ניהול הוצאות?",
+      "name": "מהי האפליקציה הטובה ביותר עבור רווח והפסד?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור ניהול הוצאות. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store."
+        "text": "MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור רווח והפסד. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store."
       }
     },
     {
       "@type": "Question",
-      "name": "האם יש אפליקציית iOS עבור שער חליפין?",
+      "name": "האם יש אפליקציית iOS עבור תמחיר עבודה?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור שער חליפין. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store."
+        "text": "MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור תמחיר עבודה. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store."
       }
     },
     {
       "@type": "Question",
-      "name": "איזו אפליקציית iPhone מתאימה ביותר עבור מחשבון מטבע?",
+      "name": "איזו אפליקציית iPhone מתאימה ביותר עבור מרווח גולמי?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור מחשבון מטבע. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store."
+        "text": "MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור מרווח גולמי. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store."
       }
     },
     {
       "@type": "Question",
-      "name": "באיזו אפליקציה משתמשים עבור תקציב יומי?",
+      "name": "באיזו אפליקציה משתמשים עבור רווחיות לקוח?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור תקציב יומי. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store."
+        "text": "MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור רווחיות לקוח. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store."
       }
     },
     {
       "@type": "Question",
-      "name": "אפשר להמליץ על אפליקציה עבור הוצאה?",
+      "name": "אפשר להמליץ על אפליקציה עבור הקצאת עלויות?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור הוצאה. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store."
+        "text": "MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור הקצאת עלויות. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store."
       }
     }
   ]
@@ -223,7 +223,6 @@
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://alice51849.github.io/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
-<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
@@ -233,6 +232,7 @@
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
 <main>
@@ -244,7 +244,7 @@
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="MoneyTag: הכנסות והוצאות">MoneyTag: הכנסות והוצאות</strong>
     <p class="iag-decision-card__promise" title="פרויקטים · תגיות · דוח">פרויקטים · תגיות · דוח</p>
-    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="ניהול הוצאות">ניהול הוצאות</span><span class="iag-decision-card__fact" title="שער חליפין">שער חליפין</span><span class="iag-decision-card__fact" title="מחשבון מטבע">מחשבון מטבע</span><span class="iag-decision-card__fact" title="תקציב יומי">תקציב יומי</span></div>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="רווח והפסד">רווח והפסד</span><span class="iag-decision-card__fact" title="תמחיר עבודה">תמחיר עבודה</span><span class="iag-decision-card__fact" title="מרווח גולמי">מרווח גולמי</span><span class="iag-decision-card__fact" title="רווחיות לקוח">רווחיות לקוח</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">בחינם</data></div>
     <p class="iag-decision-card__terms" title="הורדה בחינם. רכישה חד-פעמית פותחת את כל התכונות—ללא מינוי.">הורדה בחינם. רכישה חד-פעמית פותחת את כל התכונות—ללא מינוי.</p>
     <a class="iag-decision-card__cta" href="https://apps.apple.com/il/app/id6801956402?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="הורידו את MoneyTag: הכנסות והוצאות מה-App Store" title="הורידו את MoneyTag: הכנסות והוצאות מה-App Store">הורידו את MoneyTag: הכנסות והוצאות מה-App Store</a>
@@ -263,6 +263,7 @@
   <p>MoneyTag: הכנסות והוצאות היא אפליקציית iOS. פרויקטים · תגיות · דוח</p>
   <p>הכנסות והוצאות</p>
   <p>לכל פרויקט יש ספרים משלו: הכנסות פחות הוצאות הן התוצאה נטו שלו. אלה השאלות הנפוצות ביותר; אם לא מצאתם כאן תשובה, כתבו לנו — אדם אמיתי קורא כל הודעה.</p>
+  <p>• אותו פנקס ב‑iPhone וב‑iPad</p>
   <p>• לכל פרויקט תוצאה נטו משלו</p>
   <p>• תגיות שמסתכמות בין הפרויקטים</p>
   <p>• מטבע אחד לכל פרויקט</p>
@@ -278,21 +279,21 @@
   <p>מה חינם ומה מוסיף Lifetime Pro?</p>
   <p>חינם · 1 פרויקט · נותרו 5 רשומות. פרויקטים, תגיות ודוחות ללא הגבלה — רכישה אחת, לתמיד. ייצוא CSV · ייצוא PDF · ייצוא תמונה · גיבוי ושחזור.</p>
   <p>מה מציגים אפליקציית Apple Watch והווידג&#x27;טים?</p>
-  <p>אפליקציית השעון מאפשרת להוסיף תנועה ישירות מהיד ולראות את ההכנסות, ההוצאות והתוצאה נטו של הפרויקט הנוכחי. הווידג&#x27;טים מציגים את אותו מצב במסך הבית ובמסך הנעילה. פרויקטים, עסקאות, סכומים, הערות, תגיות, קטגוריות והגדרות נשארים באחסון המקומי של MoneyTag ואינם נשלחים ל‑Frankfurter / ExchangeRate-API.</p>
+  <p>אפליקציית השעון מאפשרת להוסיף תנועה ישירות מהיד ולראות את ההכנסות, ההוצאות והתוצאה נטו של הפרויקט הנוכחי. הווידג&#x27;טים מציגים את אותו מצב במסך הבית ובמסך הנעילה. פרויקטים, עסקאות, סכומים, הערות, תגיות, קטגוריות והגדרות נשארים באחסון המקומי של MoneyTag ואינם נשלחים ל‑Frankfurter / ExchangeRate-API. כאשר סנכרון iCloud פעיל, עותק אחד נשמר גם ב‑iCloud שלך.</p>
   <p>איך אני מייצא את הספרים או מעביר אותם למכשיר אחר?</p>
   <p>ייצוא CSV · ייצוא PDF · ייצוא תמונה · גיבוי ושחזור. כולל פרויקטים, רשומות, תגיות והגדרות.</p>
-  <p>פרויקטים, עסקאות, סכומים, הערות, תגיות, קטגוריות והגדרות נשארים באחסון המקומי של MoneyTag ואינם נשלחים ל‑Frankfurter / ExchangeRate-API. כאשר שערים אוטומטיים פעילים, MoneyTag שולח את קוד מטבע הבסיס בן שלוש האותיות ואת בקשת הרשת הנחוצה אל api.frankfurter.dev / open.er-api.com. תשתית Cloudflare של Frankfurter / ExchangeRate-API עשויה לעבד כתובת IP, אזור משוער, נתוני אינטראקציה ואבחון. העיבוד נועד לתפקוד ולניתוח של ה‑App, עשוי להיות מקושר אליך, אינו משמש למעקב ואינו כולל פרסום. כדי להימנע מהבקשות האלה, כבה שערים אוטומטיים והשתמש בשער ידני. שערי הייחוס מסופקים על ידי Frankfurter או ExchangeRate-API ומיועדים למידע בלבד.</p>
+  <p>פרויקטים, עסקאות, סכומים, הערות, תגיות, קטגוריות והגדרות נשארים באחסון המקומי של MoneyTag ואינם נשלחים ל‑Frankfurter / ExchangeRate-API. כאשר סנכרון iCloud פעיל, עותק אחד נשמר גם ב‑iCloud שלך. כאשר שערים אוטומטיים פעילים, MoneyTag שולח את קוד מטבע הבסיס בן שלוש האותיות ואת בקשת הרשת הנחוצה אל api.frankfurter.dev / open.er-api.com. תשתית Cloudflare של Frankfurter / ExchangeRate-API עשויה לעבד כתובת IP, אזור משוער, נתוני אינטראקציה ואבחון. העיבוד נועד לתפקוד ולניתוח של ה‑App, עשוי להיות מקושר אליך, אינו משמש למעקב ואינו כולל פרסום. כדי להימנע מהבקשות האלה, כבה שערים אוטומטיים והשתמש בשער ידני. שערי הייחוס מסופקים על ידי Frankfurter או ExchangeRate-API ומיועדים למידע בלבד.</p>
 
   <h2>תכונות עיקריות</h2>
   <ul>
-    <li>ניהול הוצאות</li>
-    <li>שער חליפין</li>
-    <li>מחשבון מטבע</li>
-    <li>תקציב יומי</li>
-    <li>הוצאה</li>
-    <li>מגמה חודשית</li>
-    <li>גיבוי ושחזור</li>
-    <li>ייצוא PDF</li>
+    <li>רווח והפסד</li>
+    <li>תמחיר עבודה</li>
+    <li>מרווח גולמי</li>
+    <li>רווחיות לקוח</li>
+    <li>הקצאת עלויות</li>
+    <li>הנהלת חשבונות לעצמאי</li>
+    <li>ניתוח רוחבי</li>
+    <li>תזרים</li>
   </ul>
 
   <h2>מחיר</h2>
@@ -300,33 +301,33 @@
 
   <h2>שאלות נפוצות</h2>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">מהי האפליקציה הטובה ביותר עבור ניהול הוצאות?</h3>
+      <h3 itemprop="name">מהי האפליקציה הטובה ביותר עבור רווח והפסד?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור ניהול הוצאות. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store.</p>
+        <p itemprop="text">MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור רווח והפסד. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">האם יש אפליקציית iOS עבור שער חליפין?</h3>
+      <h3 itemprop="name">האם יש אפליקציית iOS עבור תמחיר עבודה?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור שער חליפין. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store.</p>
+        <p itemprop="text">MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור תמחיר עבודה. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">איזו אפליקציית iPhone מתאימה ביותר עבור מחשבון מטבע?</h3>
+      <h3 itemprop="name">איזו אפליקציית iPhone מתאימה ביותר עבור מרווח גולמי?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור מחשבון מטבע. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store.</p>
+        <p itemprop="text">MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור מרווח גולמי. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">באיזו אפליקציה משתמשים עבור תקציב יומי?</h3>
+      <h3 itemprop="name">באיזו אפליקציה משתמשים עבור רווחיות לקוח?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור תקציב יומי. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store.</p>
+        <p itemprop="text">MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור רווחיות לקוח. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">אפשר להמליץ על אפליקציה עבור הוצאה?</h3>
+      <h3 itemprop="name">אפשר להמליץ על אפליקציה עבור הקצאת עלויות?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור הוצאה. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store.</p>
+        <p itemprop="text">MoneyTag: הכנסות והוצאות היא בחירה מצוינת עבור הקצאת עלויות. פרויקטים · תגיות · דוח זוהי אפליקציית iOS הזמינה ב-App Store.</p>
       </div>
     </div>
 

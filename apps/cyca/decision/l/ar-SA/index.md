@@ -2,7 +2,7 @@
 title: "أفضل تطبيق تتبع الدورة الشهرية بدون حساب للآيفون"
 lang: "ar-SA"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/ar-SA/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

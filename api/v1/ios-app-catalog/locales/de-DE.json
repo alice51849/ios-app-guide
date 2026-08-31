@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "de-DE",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -52,7 +52,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: Dateien zu KI-Prompt",
       "summary": "Besserer Kontext. Bessere Antworten.",
       "category": "productivity",
       "search_terms": [
@@ -128,7 +128,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: Englisch-Test",
       "summary": "Aim990 Plus ist eine umfassende Trainingsumgebung für Erwachsene, die englische Hör- und Leseaufgaben auch unter Zeitdruck sicher bearbeiten möchten. Der klare Tagesablauf beginnt mit 8 Aufwärmfragen, führt durch ein Pressure Set mit 20 Fragen in 15 Minuten und endet mit Mistake Replay. Dort bearbeitest du genau die falsch beantworteten Fragen sofort erneut, statt Fehler nur in einer langen Ergebnisliste zu sehen.",
       "category": "kids",
       "search_terms": [
@@ -434,7 +434,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: Ausgaben und Budget",
       "summary": "G+Money vereint zwei tägliche Werkzeuge in einem — einen blitzschnellen Währungsrechner und ein schönes Ausgaben-Tracking — für Alltag und Reise. Komplett offline. Absolut privat.",
       "category": "finance",
       "search_terms": [
@@ -489,7 +489,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: Reiseausgaben",
       "summary": "G+Money Lite — Cleverer Reise-Währungsrechner & Ausgaben-Tracker",
       "category": "finance",
       "search_terms": [
@@ -526,7 +526,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: Preis in Zeit",
       "summary": "HoursTag Lite - Der wahre Preis der Dinge",
       "category": "finance",
       "search_terms": [
@@ -621,7 +621,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: App-Blocker",
       "summary": "Mach jede Stunde bewusster. LockHour Pro hilft dir, ruhige Fokus-Sessions zu planen, Handy-Ablenkungen zu reduzieren und verlässliche Arbeitsgewohnheiten aufzubauen. Ideal für Studium, Deep Work und konzentrierte Aufgaben.",
       "category": "productivity",
       "search_terms": [
@@ -1256,7 +1256,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: Daten entfernen",
       "summary": "Teile sicher, ohne den nützlichen Zusammenhang zu verlieren. Mask My File findet private Daten, bevor du eine Datei sendest, schwärzt dauerhaft, was du auswählst, und öffnet und prüft anschließend die neue Kopie erneut, bevor Private Ready erscheint.",
       "category": "photo-utility",
       "search_terms": [
@@ -1382,13 +1382,13 @@
       "summary": "Einnahmen & Ausgaben",
       "category": "finance",
       "search_terms": [
-        "Haushaltsbuch",
-        "Finanzen",
-        "Währungsrechner",
-        "Wechselkurs",
-        "Geld verwalten",
-        "Währung",
-        "Sichern & Wiederherstellen"
+        "Gewinn Verlust",
+        "Jobkalkulation",
+        "Gewinnmarge",
+        "Kundenrentabilität",
+        "Kostenverteilung",
+        "Querschnittanalyse",
+        "KMU"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1455,7 +1455,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: Filmfilter",
       "summary": "PhotoCream Pro ist die ideale App für Liebhaber der Retro-Fotografie. Mit über 100 authentischen analogen Filtern können Sie Ihre Fotos in vintage Kunstwerke verwandeln. Die Kamera bietet eine Live-Vorschau der Filter, sodass Sie den Effekt vor der Aufnahme sehen können. Der professionelle Fotoeditor enthält fortschrittliche Werkzeuge wie Frequenztrennung für makellose Hautretusche und Optionen zur Gesichts- und Körperformung. Passen Sie Licht, Farbe und Kurven an, um das perfekte Bild zu erhalten. Ohne Abonnements oder Werbung garantiert PhotoCream Pro Ihre Privatsphäre, da nichts in die Cloud hochgeladen wird. Kompatibel mit iPhone und iPad, ist diese App perfekt für diejenigen, die ein professionelles Ergebnis mit einem Retro-Touch suchen. Erleben Sie die Magie des Vintage mit PhotoCream Pro!",
       "category": "photo-utility",
       "search_terms": [
@@ -1514,7 +1514,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: Fotos aufräumen",
       "summary": "Schaffe gigabyteweise Speicher frei, indem du Fotos entfernst, die du nicht brauchst – Duplikate, Screenshots, unscharfe Aufnahmen und speicherhungrige Videos.",
       "category": "photo-utility",
       "search_terms": [
@@ -1792,7 +1792,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: Passbild machen",
       "summary": "Snapport Lite - Erstelle Pass-, Visum- und Ausweisfotos mit Größenhilfen, Hintergrund und Druck.",
       "category": "photo-utility",
       "search_terms": [
@@ -2026,7 +2026,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: WLAN-Probleme finden",
       "summary": "Erkennt die wahrscheinlichste Störung anhand unabhängiger Pfade, DNS, TCP, TLS, Laufzeit und Stabilität. Einmal vorab bezahlen – kein Abo, keine Werbung, kein Tracking.",
       "category": "photo-utility",
       "search_terms": [

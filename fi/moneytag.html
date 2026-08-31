@@ -8,7 +8,7 @@
 <!-- guide-design:end -->
 <title>MoneyTag: Tulot ja menot — Projektit · Tunnisteet | iOS App</title>
 <meta name="description" content="Tulot ja menot">
-<meta name="keywords" content="menojen seuranta, valuuttamuunnin, valuuttakurssi, kotitalous, säästäminen, kulut, Varmuuskopio &amp; palautus">
+<meta name="keywords" content="tuloslaskelma, työkustannukset, kateprosentti, asiakaskannattavuus, kulujen kohdistus, poikittaisanalyysi">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/fi/moneytag.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6801956402">
@@ -134,19 +134,18 @@
   "name": "MoneyTag: Tulot ja menot",
   "operatingSystem": "iOS",
   "applicationCategory": "FinanceApplication",
-  "description": "Tulot ja menot\n\nJokainen projekti pitää omaa kirjanpitoaan: tulot miinus menot on sen nettotulos. Tässä ovat useimmin kysytyt kysymykset. Jos omaasi ei löydy, laita viestiä — jokaisen viestin lukee oikea ihminen.\n\n• Jokaisella projektilla oma nettotulos\n• Tunnisteet laskevat yhteen projektien yli\n• Yksi valuutta per projekti\n• Live- tai manuaaliset kurssit\n• Apple Watch -sovellus\n• Widgetit Koti- ja lukitusnäytöllä\n\nMikä projekti oikeastaan on?\nProjekti on oma itsenäinen kirjanpitonsa: omat tapahtumat, oma valuutta ja oma tulos. MoneyTag laskee tulot yhteen, vähentää menot ja näyttää nettotuloksen vain siltä projektilta.\n\nMuuntaako MoneyTag valuuttoja?\nJokaisella projektilla on oma perusvaluuttansa. Aloitusnäytössä voit valita syöttövaluutan suoraan. MoneyTag päivittää julkiset valuuttakurssit noin 6 tunnin välein; voit myös asettaa kurssin käsin ja palauttaa myöhemmin automaattisen tilan. Muunnettu summa tallennetaan projektin perusvaluutassa, ja tallennetut kurssit ovat käytettävissä myös offline-tilassa. Viitekurssit tarjoaa Frankfurter tai ExchangeRate-API, ja ne ovat vain tiedoksi.\n\nMiten tunnisteet toimivat?\nTunnisteet ovat MoneyTagin ydintä, eivät jälkikäteen lisätty pikkuominaisuus. Merkitse mikä tahansa tulo tai meno tunnisteella, niin Tunnisteet-näkymä laskee saman tunnisteen yhteen kaikista projekteistasi kerralla: tulot, menot ja tunnisteen netto. Projektien välinen tunnisteanalyysi kuuluu Lifetime Prohon.\n\nMikä on ilmaista ja mitä Lifetime Pro tuo lisää?\nIlmainen · 1 projekti · 5 merkintää jäljellä. Rajattomasti projekteja, tunnisteita ja raportteja — kertaosto, ikuisesti. Vie CSV · Vie PDF · Vie kuvana · Varmuuskopio & palautus.\n\nMitä Apple Watch -sovellus ja widgetit näyttävät?\nWatch-sovelluksella kirjaat tapahtuman ranteesta ja näet nykyisen projektin tulot, menot ja neton. Widgetit näyttävät saman tilanteen Koti- ja lukitusnäytöllä. Projektit, tapahtumat, summat, muistiinpanot, tunnisteet, luokat ja asetukset pysyvät MoneyTagin laitetallennuksessa eikä niitä lähetetä Frankfurter / ExchangeRate-APIille.\n\nMiten vien kirjanpitoni tai siirrän sen toiselle laitteelle?\nVie CSV · Vie PDF · Vie kuvana · Varmuuskopio & palautus. Sisältää projektit, merkinnät, tunnisteet ja asetukset.\n\nProjektit, tapahtumat, summat, muistiinpanot, tunnisteet, luokat ja asetukset pysyvät MoneyTagin laitetallennuksessa eikä niitä lähetetä Frankfurter / ExchangeRate-APIille. Kun automaattiset kurssit ovat käytössä, MoneyTag lähettää kolmikirjaimisen perusvaluuttakoodin ja tarvittavan verkkopyynnön osoitteeseen api.frankfurter.dev / open.er-api.com. Frankfurter / ExchangeRate-APIin Cloudflare-infrastruktuuri voi käsitellä IP-osoitetta, likimääräistä aluetta, vuorovaikutustietoja ja diagnostiikkaa. Käsittely palvelee Appin toimintoja ja analytiikkaa, voidaan yhdistää sinuun, sitä ei käytetä seurantaan eikä siihen liity mainontaa. Poista automaattiset kurssit käytöstä ja käytä manuaalista kurssia välttääksesi nämä pyynnöt. Viitekurssit tarjoaa Frankfurter tai ExchangeRate-API, ja ne ovat vain tiedoksi.",
+  "description": "Tulot ja menot\n\nJokainen projekti pitää omaa kirjanpitoaan: tulot miinus menot on sen nettotulos. Tässä ovat useimmin kysytyt kysymykset. Jos omaasi ei löydy, laita viestiä — jokaisen viestin lukee oikea ihminen.\n\n• Sama kirjanpito iPhonessa ja iPadissa\n• Jokaisella projektilla oma nettotulos\n• Tunnisteet laskevat yhteen projektien yli\n• Yksi valuutta per projekti\n• Live- tai manuaaliset kurssit\n• Apple Watch -sovellus\n• Widgetit Koti- ja lukitusnäytöllä\n\nMikä projekti oikeastaan on?\nProjekti on oma itsenäinen kirjanpitonsa: omat tapahtumat, oma valuutta ja oma tulos. MoneyTag laskee tulot yhteen, vähentää menot ja näyttää nettotuloksen vain siltä projektilta.\n\nMuuntaako MoneyTag valuuttoja?\nJokaisella projektilla on oma perusvaluuttansa. Aloitusnäytössä voit valita syöttövaluutan suoraan. MoneyTag päivittää julkiset valuuttakurssit noin 6 tunnin välein; voit myös asettaa kurssin käsin ja palauttaa myöhemmin automaattisen tilan. Muunnettu summa tallennetaan projektin perusvaluutassa, ja tallennetut kurssit ovat käytettävissä myös offline-tilassa. Viitekurssit tarjoaa Frankfurter tai ExchangeRate-API, ja ne ovat vain tiedoksi.\n\nMiten tunnisteet toimivat?\nTunnisteet ovat MoneyTagin ydintä, eivät jälkikäteen lisätty pikkuominaisuus. Merkitse mikä tahansa tulo tai meno tunnisteella, niin Tunnisteet-näkymä laskee saman tunnisteen yhteen kaikista projekteistasi kerralla: tulot, menot ja tunnisteen netto. Projektien välinen tunnisteanalyysi kuuluu Lifetime Prohon.\n\nMikä on ilmaista ja mitä Lifetime Pro tuo lisää?\nIlmainen · 1 projekti · 5 merkintää jäljellä. Rajattomasti projekteja, tunnisteita ja raportteja — kertaosto, ikuisesti. Vie CSV · Vie PDF · Vie kuvana · Varmuuskopio & palautus.\n\nMitä Apple Watch -sovellus ja widgetit näyttävät?\nWatch-sovelluksella kirjaat tapahtuman ranteesta ja näet nykyisen projektin tulot, menot ja neton. Widgetit näyttävät saman tilanteen Koti- ja lukitusnäytöllä. Projektit, tapahtumat, summat, muistiinpanot, tunnisteet, luokat ja asetukset pysyvät MoneyTagin laitetallennuksessa eikä niitä lähetetä Frankfurter / ExchangeRate-APIille. Kun iCloud-synkronointi on päällä, yksi kopio on myös omassa iCloudissasi.\n\nMiten vien kirjanpitoni tai siirrän sen toiselle laitteelle?\nVie CSV · Vie PDF · Vie kuvana · Varmuuskopio & palautus. Sisältää projektit, merkinnät, tunnisteet ja asetukset.\n\nProjektit, tapahtumat, summat, muistiinpanot, tunnisteet, luokat ja asetukset pysyvät MoneyTagin laitetallennuksessa eikä niitä lähetetä Frankfurter / ExchangeRate-APIille. Kun iCloud-synkronointi on päällä, yksi kopio on myös omassa iCloudissasi. Kun automaattiset kurssit ovat käytössä, MoneyTag lähettää kolmikirjaimisen perusvaluuttakoodin ja tarvittavan verkkopyynnön osoitteeseen api.frankfurter.dev / open.er-api.com. Frankfurter / ExchangeRate-APIin Cloudflare-infrastruktuuri voi käsitellä IP-osoitetta, likimääräistä aluetta, vuorovaikutustietoja ja diagnostiikkaa. Käsittely palvelee Appin toimintoja ja analytiikkaa, voidaan yhdistää sinuun, sitä ei käytetä seurantaan eikä siihen liity mainontaa. Poista automaattiset kurssit käytöstä ja käytä manuaalista kurssia välttääksesi nämä pyynnöt. Viitekurssit tarjoaa Frankfurter tai ExchangeRate-API, ja ne ovat vain tiedoksi.",
   "url": "https://apps.apple.com/app/id6801956402",
   "installUrl": "https://apps.apple.com/app/id6801956402",
   "featureList": [
-    "menojen seuranta",
-    "valuuttamuunnin",
-    "valuuttakurssi",
-    "kotitalous",
-    "säästäminen",
-    "kulut",
-    "Varmuuskopio & palautus"
+    "tuloslaskelma",
+    "työkustannukset",
+    "kateprosentti",
+    "asiakaskannattavuus",
+    "kulujen kohdistus",
+    "poikittaisanalyysi"
   ],
-  "keywords": "menojen seuranta, valuuttamuunnin, valuuttakurssi, kotitalous, säästäminen, kulut, Varmuuskopio & palautus",
+  "keywords": "tuloslaskelma, työkustannukset, kateprosentti, asiakaskannattavuus, kulujen kohdistus, poikittaisanalyysi",
   "@id": "https://apps.apple.com/app/id6801956402",
   "identifier": {
     "@type": "PropertyValue",
@@ -178,42 +177,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Mikä on paras sovellus käyttötarkoitukseen menojen seuranta?",
+      "name": "Mikä on paras sovellus käyttötarkoitukseen tuloslaskelma?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen menojen seuranta. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus."
+        "text": "MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen tuloslaskelma. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus."
       }
     },
     {
       "@type": "Question",
-      "name": "Onko käyttötarkoitukseen valuuttamuunnin iOS-sovellusta?",
+      "name": "Onko käyttötarkoitukseen työkustannukset iOS-sovellusta?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen valuuttamuunnin. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus."
+        "text": "MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen työkustannukset. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus."
       }
     },
     {
       "@type": "Question",
-      "name": "Mikä iPhone-sovellus sopii parhaiten käyttötarkoitukseen valuuttakurssi?",
+      "name": "Mikä iPhone-sovellus sopii parhaiten käyttötarkoitukseen kateprosentti?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen valuuttakurssi. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus."
+        "text": "MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen kateprosentti. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus."
       }
     },
     {
       "@type": "Question",
-      "name": "Mitä sovellusta ihmiset käyttävät käyttötarkoitukseen kotitalous?",
+      "name": "Mitä sovellusta ihmiset käyttävät käyttötarkoitukseen asiakaskannattavuus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen kotitalous. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus."
+        "text": "MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen asiakaskannattavuus. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus."
       }
     },
     {
       "@type": "Question",
-      "name": "Voitteko suositella sovellusta käyttötarkoitukseen säästäminen?",
+      "name": "Voitteko suositella sovellusta käyttötarkoitukseen kulujen kohdistus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen säästäminen. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus."
+        "text": "MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen kulujen kohdistus. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus."
       }
     }
   ]
@@ -222,7 +221,6 @@
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://alice51849.github.io/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
-<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
@@ -232,6 +230,7 @@
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
 <main>
@@ -243,7 +242,7 @@
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="MoneyTag: Tulot ja menot">MoneyTag: Tulot ja menot</strong>
     <p class="iag-decision-card__promise" title="Projektit · Tunnisteet">Projektit · Tunnisteet</p>
-    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="menojen seuranta">menojen seuranta</span><span class="iag-decision-card__fact" title="valuuttamuunnin">valuuttamuunnin</span><span class="iag-decision-card__fact" title="valuuttakurssi">valuuttakurssi</span><span class="iag-decision-card__fact" title="kotitalous">kotitalous</span></div>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="tuloslaskelma">tuloslaskelma</span><span class="iag-decision-card__fact" title="työkustannukset">työkustannukset</span><span class="iag-decision-card__fact" title="kateprosentti">kateprosentti</span><span class="iag-decision-card__fact" title="asiakaskannattavuus">asiakaskannattavuus</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">Ilmainen</data></div>
     <p class="iag-decision-card__terms" title="Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.">Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.</p>
     <a class="iag-decision-card__cta" href="https://apps.apple.com/fi/app/id6801956402?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="Lataa MoneyTag: Tulot ja menot App Storesta" title="Lataa MoneyTag: Tulot ja menot App Storesta">Lataa MoneyTag: Tulot ja menot App Storesta</a>
@@ -262,6 +261,7 @@
   <p>MoneyTag: Tulot ja menot on iOS-sovellus. Projektit · Tunnisteet</p>
   <p>Tulot ja menot</p>
   <p>Jokainen projekti pitää omaa kirjanpitoaan: tulot miinus menot on sen nettotulos. Tässä ovat useimmin kysytyt kysymykset. Jos omaasi ei löydy, laita viestiä — jokaisen viestin lukee oikea ihminen.</p>
+  <p>• Sama kirjanpito iPhonessa ja iPadissa</p>
   <p>• Jokaisella projektilla oma nettotulos</p>
   <p>• Tunnisteet laskevat yhteen projektien yli</p>
   <p>• Yksi valuutta per projekti</p>
@@ -277,20 +277,19 @@
   <p>Mikä on ilmaista ja mitä Lifetime Pro tuo lisää?</p>
   <p>Ilmainen · 1 projekti · 5 merkintää jäljellä. Rajattomasti projekteja, tunnisteita ja raportteja — kertaosto, ikuisesti. Vie CSV · Vie PDF · Vie kuvana · Varmuuskopio &amp; palautus.</p>
   <p>Mitä Apple Watch -sovellus ja widgetit näyttävät?</p>
-  <p>Watch-sovelluksella kirjaat tapahtuman ranteesta ja näet nykyisen projektin tulot, menot ja neton. Widgetit näyttävät saman tilanteen Koti- ja lukitusnäytöllä. Projektit, tapahtumat, summat, muistiinpanot, tunnisteet, luokat ja asetukset pysyvät MoneyTagin laitetallennuksessa eikä niitä lähetetä Frankfurter / ExchangeRate-APIille.</p>
+  <p>Watch-sovelluksella kirjaat tapahtuman ranteesta ja näet nykyisen projektin tulot, menot ja neton. Widgetit näyttävät saman tilanteen Koti- ja lukitusnäytöllä. Projektit, tapahtumat, summat, muistiinpanot, tunnisteet, luokat ja asetukset pysyvät MoneyTagin laitetallennuksessa eikä niitä lähetetä Frankfurter / ExchangeRate-APIille. Kun iCloud-synkronointi on päällä, yksi kopio on myös omassa iCloudissasi.</p>
   <p>Miten vien kirjanpitoni tai siirrän sen toiselle laitteelle?</p>
   <p>Vie CSV · Vie PDF · Vie kuvana · Varmuuskopio &amp; palautus. Sisältää projektit, merkinnät, tunnisteet ja asetukset.</p>
-  <p>Projektit, tapahtumat, summat, muistiinpanot, tunnisteet, luokat ja asetukset pysyvät MoneyTagin laitetallennuksessa eikä niitä lähetetä Frankfurter / ExchangeRate-APIille. Kun automaattiset kurssit ovat käytössä, MoneyTag lähettää kolmikirjaimisen perusvaluuttakoodin ja tarvittavan verkkopyynnön osoitteeseen api.frankfurter.dev / open.er-api.com. Frankfurter / ExchangeRate-APIin Cloudflare-infrastruktuuri voi käsitellä IP-osoitetta, likimääräistä aluetta, vuorovaikutustietoja ja diagnostiikkaa. Käsittely palvelee Appin toimintoja ja analytiikkaa, voidaan yhdistää sinuun, sitä ei käytetä seurantaan eikä siihen liity mainontaa. Poista automaattiset kurssit käytöstä ja käytä manuaalista kurssia välttääksesi nämä pyynnöt. Viitekurssit tarjoaa Frankfurter tai ExchangeRate-API, ja ne ovat vain tiedoksi.</p>
+  <p>Projektit, tapahtumat, summat, muistiinpanot, tunnisteet, luokat ja asetukset pysyvät MoneyTagin laitetallennuksessa eikä niitä lähetetä Frankfurter / ExchangeRate-APIille. Kun iCloud-synkronointi on päällä, yksi kopio on myös omassa iCloudissasi. Kun automaattiset kurssit ovat käytössä, MoneyTag lähettää kolmikirjaimisen perusvaluuttakoodin ja tarvittavan verkkopyynnön osoitteeseen api.frankfurter.dev / open.er-api.com. Frankfurter / ExchangeRate-APIin Cloudflare-infrastruktuuri voi käsitellä IP-osoitetta, likimääräistä aluetta, vuorovaikutustietoja ja diagnostiikkaa. Käsittely palvelee Appin toimintoja ja analytiikkaa, voidaan yhdistää sinuun, sitä ei käytetä seurantaan eikä siihen liity mainontaa. Poista automaattiset kurssit käytöstä ja käytä manuaalista kurssia välttääksesi nämä pyynnöt. Viitekurssit tarjoaa Frankfurter tai ExchangeRate-API, ja ne ovat vain tiedoksi.</p>
 
   <h2>Tärkeimmät ominaisuudet</h2>
   <ul>
-    <li>menojen seuranta</li>
-    <li>valuuttamuunnin</li>
-    <li>valuuttakurssi</li>
-    <li>kotitalous</li>
-    <li>säästäminen</li>
-    <li>kulut</li>
-    <li>Varmuuskopio &amp; palautus</li>
+    <li>tuloslaskelma</li>
+    <li>työkustannukset</li>
+    <li>kateprosentti</li>
+    <li>asiakaskannattavuus</li>
+    <li>kulujen kohdistus</li>
+    <li>poikittaisanalyysi</li>
   </ul>
 
   <h2>Hinta</h2>
@@ -298,33 +297,33 @@
 
   <h2>Usein kysytyt kysymykset</h2>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Mikä on paras sovellus käyttötarkoitukseen menojen seuranta?</h3>
+      <h3 itemprop="name">Mikä on paras sovellus käyttötarkoitukseen tuloslaskelma?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen menojen seuranta. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus.</p>
+        <p itemprop="text">MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen tuloslaskelma. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Onko käyttötarkoitukseen valuuttamuunnin iOS-sovellusta?</h3>
+      <h3 itemprop="name">Onko käyttötarkoitukseen työkustannukset iOS-sovellusta?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen valuuttamuunnin. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus.</p>
+        <p itemprop="text">MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen työkustannukset. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Mikä iPhone-sovellus sopii parhaiten käyttötarkoitukseen valuuttakurssi?</h3>
+      <h3 itemprop="name">Mikä iPhone-sovellus sopii parhaiten käyttötarkoitukseen kateprosentti?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen valuuttakurssi. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus.</p>
+        <p itemprop="text">MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen kateprosentti. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Mitä sovellusta ihmiset käyttävät käyttötarkoitukseen kotitalous?</h3>
+      <h3 itemprop="name">Mitä sovellusta ihmiset käyttävät käyttötarkoitukseen asiakaskannattavuus?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen kotitalous. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus.</p>
+        <p itemprop="text">MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen asiakaskannattavuus. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Voitteko suositella sovellusta käyttötarkoitukseen säästäminen?</h3>
+      <h3 itemprop="name">Voitteko suositella sovellusta käyttötarkoitukseen kulujen kohdistus?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen säästäminen. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus.</p>
+        <p itemprop="text">MoneyTag: Tulot ja menot on erinomainen valinta käyttötarkoitukseen kulujen kohdistus. Projektit · Tunnisteet Se on App Storesta saatava iOS-sovellus.</p>
       </div>
     </div>
 

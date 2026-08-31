@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "fi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -51,7 +51,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: Tiedostot promptiksi",
       "summary": "Parempi konteksti. Paremmat vastaukset.",
       "category": "productivity",
       "search_terms": [
@@ -127,7 +127,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: Englannin testi",
       "summary": "Aim990 Plus on aikuisille suunniteltu englannin kuuntelu- ja lukuharjoittelun kokonaisuus, joka auttaa säilyttämään keskittymisen myös ajan käydessä vähiin. Päivän selkeä harjoituspolku alkaa 8 tehtävän lämmittelyllä, jatkuu 20 tehtävän ja 15 minuutin Pressure Set -osioon ja päättyy Mistake Replay -kertaukseen. Näin et vain ratkaise tehtäviä, vaan palaat heti niihin kohtiin, joissa ajatus katkesi tai vastaus meni väärin.",
       "category": "kids",
       "search_terms": [
@@ -428,7 +428,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: Menot ja budjetti",
       "summary": "G+Money yhdistää kaksi arjen työkalua yhdeksi — salamannopean valuuttamuuntimen ja kauniin menojen seurannan — arkeen ja matkalle. Täysin offline. Täysin yksityinen.",
       "category": "finance",
       "search_terms": [
@@ -485,7 +485,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: Matkakulut",
       "summary": "G+Money Lite — Älykäs matkavaluutta- & kululaskuri",
       "category": "finance",
       "search_terms": [
@@ -523,7 +523,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: Hinta tunteina",
       "summary": "HoursTag Lite - Asioiden todellinen hinta",
       "category": "finance",
       "search_terms": [
@@ -619,7 +619,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: Sovellusten esto",
       "summary": "Suojaa hetket, jolloin saat eniten aikaan. LockHour Pro auttaa aloittamaan rauhallisia keskittymissessioita, vähentämään puhelimen häiriöitä ja rakentamaan kestäviä työskentelytapoja. Sopii opiskeluun, kirjoittamiseen, suunnitteluun ja syvään työhön.",
       "category": "productivity",
       "search_terms": [
@@ -1264,7 +1264,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: Poista tietosi",
       "summary": "Jaa turvallisesti menettämättä hyödyllistä asiayhteyttä. Mask My File löytää yksityiset tiedot ennen kuin lähetät tiedoston, peittää pysyvästi valitsemasi kohdat ja avaa sitten uuden kopion sekä tarkistaa sen, ennen kuin Private Ready näkyy.",
       "category": "photo-utility",
       "search_terms": [
@@ -1385,13 +1385,12 @@
       "summary": "Jokainen projekti pitää omaa kirjanpitoaan: tulot miinus menot on sen nettotulos. Tässä ovat useimmin kysytyt kysymykset. Jos omaasi ei löydy, laita viestiä — jokaisen viestin lukee oikea ihminen.",
       "category": "finance",
       "search_terms": [
-        "menojen seuranta",
-        "valuuttamuunnin",
-        "valuuttakurssi",
-        "kotitalous",
-        "säästäminen",
-        "kulut",
-        "Varmuuskopio & palautus"
+        "tuloslaskelma",
+        "työkustannukset",
+        "kateprosentti",
+        "asiakaskannattavuus",
+        "kulujen kohdistus",
+        "poikittaisanalyysi"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1460,7 +1459,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: Filmifiltterit",
       "summary": "PhotoCream Pro on täydellinen kumppanisi upeiden kuvien tallentamiseen ja muokkaamiseen. Sovelluksemme tarjoaa premium-retrofilmikameran, jossa on yli 100 aitoa analogista suodatinta ja live-esikatselu, joka antaa kuvillesi nostalgisen tunteen. Lisäksi kehittynyt valokuvaeditorimme tarjoaa ominaisuuksia kuten taajuuserottelu täydelliselle iholle, kasvojen ja kehon muotoilu sekä valo- ja värisäädöt täydellisen kuvan luomiseksi. PhotoCream Prossa ei tarvitse huolehtia tilauksista tai mainoksista, ja kaikki tietosi pysyvät laitteellasi. Koe iPhonen tai iPadin täydet mahdollisuudet PhotoCream Pron avulla.",
       "category": "photo-utility",
       "search_terms": [
@@ -1518,7 +1517,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: Kuvien siivous",
       "summary": "Vapauta gigatavuja poistamalla kuvat, joita et enää tarvitse: duplikaatit, vanhat kuvakaappaukset, sumeat otokset ja suuret videot.",
       "category": "photo-utility",
       "search_terms": [
@@ -1796,7 +1795,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: Tee passikuvat",
       "summary": "Snapport Lite - Ota passin, viisumin ja asiakirjojen valokuvia ohjatulla koon säädöllä, taustatyökaluilla ja tulostukseen valmiilla viennillä.",
       "category": "photo-utility",
       "search_terms": [
@@ -2028,7 +2027,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: Löydä verkon viat",
       "summary": "Löydä todennäköisin syy riippumattomilla reitti-, DNS-, TCP-, TLS-, ajoitus- ja vakaustesteillä. Yksi ennakkomaksu, ei tilausta, mainoksia eikä seurantaa.",
       "category": "photo-utility",
       "search_terms": [

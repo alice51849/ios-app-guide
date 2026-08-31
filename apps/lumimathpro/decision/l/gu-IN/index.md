@@ -2,7 +2,7 @@
 title: "પ્રેસ્કૂલ અને અર્લી ગ્રેડ માટે શ્રેષ્ઠ સંપૂર્ણ ગણિત શીખવાની એપ"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/gu-IN/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

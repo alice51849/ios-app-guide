@@ -8,7 +8,7 @@
 <!-- guide-design:end -->
 <title>MoneyTag — Proyek · Tag · Laporan | iOS App</title>
 <meta name="description" content="Pemasukan &amp; Pengeluaran">
-<meta name="keywords" content="keuangan, konverter mata uang, pencatat pengeluaran, Tren bulanan, Cadangkan &amp; pulihkan, Bisa dikurangkan">
+<meta name="keywords" content="P&amp;L, biaya pekerjaan, margin keuntungan, profitabilitas klien, rincian ongkos, analisis silang, buku usaha">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/id/moneytag.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6801956402">
@@ -134,18 +134,19 @@
   "name": "MoneyTag",
   "operatingSystem": "iOS",
   "applicationCategory": "FinanceApplication",
-  "description": "Pemasukan & Pengeluaran\n\nSetiap proyek punya pembukuannya sendiri: pemasukan dikurangi pengeluaran adalah hasil bersihnya. Ini pertanyaan yang paling sering diajukan. Kalau jawabannya belum ada, kirim pesan — setiap pesan dibaca orang sungguhan.\n\n• Tiap proyek punya hasil bersih sendiri\n• Tag yang menjumlah lintas proyek\n• Satu mata uang per proyek\n• Kurs langsung atau manual\n• Aplikasi Apple Watch\n• Widget Layar Utama dan Layar Terkunci\n\nApa sebenarnya sebuah proyek itu?\nProyek adalah buku kas yang berdiri sendiri: transaksinya sendiri, mata uangnya sendiri, dan hasil akhirnya sendiri. MoneyTag menjumlahkan pemasukan, mengurangi pengeluaran, lalu menampilkan hasil bersih untuk proyek itu saja.\n\nApakah MoneyTag mengonversi mata uang?\nSetiap proyek memiliki mata uang dasar sendiri. Di layar Utama, Anda dapat langsung memilih mata uang input. MoneyTag memperbarui kurs publik kira-kira setiap 6 jam; Anda juga dapat menetapkan kurs manual lalu kembali ke mode otomatis. Jumlah hasil konversi disimpan dalam mata uang dasar proyek, dan kurs yang tersimpan tetap dapat digunakan saat offline. Kurs referensi disediakan oleh Frankfurter atau ExchangeRate-API dan hanya untuk informasi.\n\nBagaimana cara kerja tag?\nTag adalah bagian utama MoneyTag, bukan tempelan belakangan. Beri tag pada pemasukan atau pengeluaran mana pun, lalu layar Tag akan menjumlahkan tag yang sama di seluruh proyek Anda sekaligus — pemasukan, pengeluaran, dan hasil bersih untuk tag tersebut. Analisis tag lintas proyek termasuk dalam Lifetime Pro.\n\nApa yang gratis, dan apa tambahan Lifetime Pro?\nGratis · 1 proyek · sisa 5 catatan. Proyek, tag, dan laporan tanpa batas — sekali beli, selamanya. Ekspor CSV · Ekspor PDF · Ekspor gambar · Cadangkan & pulihkan.\n\nApa yang ditampilkan aplikasi Apple Watch dan widget?\nAplikasi jam memungkinkan Anda mencatat transaksi langsung dari pergelangan tangan serta melihat pemasukan, pengeluaran, dan hasil bersih proyek yang sedang aktif. Widget menampilkan status yang sama di Layar Utama dan Layar Terkunci. Proyek, transaksi, jumlah, catatan, tag, kategori, dan pengaturan tetap di penyimpanan perangkat MoneyTag dan tidak dikirim ke Frankfurter / ExchangeRate-API.\n\nBagaimana cara mengekspor pembukuan atau memindahkannya ke perangkat lain?\nEkspor CSV · Ekspor PDF · Ekspor gambar · Cadangkan & pulihkan. Berisi proyek, catatan, tag, dan pengaturan.\n\nProyek, transaksi, jumlah, catatan, tag, kategori, dan pengaturan tetap di penyimpanan perangkat MoneyTag dan tidak dikirim ke Frankfurter / ExchangeRate-API. Saat kurs otomatis aktif, MoneyTag mengirim kode tiga huruf mata uang dasar dan permintaan jaringan yang diperlukan ke api.frankfurter.dev / open.er-api.com. Infrastruktur Cloudflare Frankfurter / ExchangeRate-API dapat memproses alamat IP, perkiraan wilayah, data interaksi, dan diagnostik. Pemrosesan ini untuk fungsi dan analitik App, dapat ditautkan kepada Anda, tidak digunakan untuk pelacakan, dan tidak melibatkan iklan. Matikan kurs otomatis dan gunakan kurs manual untuk menghindari permintaan ini. Kurs referensi disediakan oleh Frankfurter atau ExchangeRate-API dan hanya untuk informasi.",
+  "description": "Pemasukan & Pengeluaran\n\nSetiap proyek punya pembukuannya sendiri: pemasukan dikurangi pengeluaran adalah hasil bersihnya. Ini pertanyaan yang paling sering diajukan. Kalau jawabannya belum ada, kirim pesan — setiap pesan dibaca orang sungguhan.\n\n• Buku yang sama di iPhone dan iPad\n• Tiap proyek punya hasil bersih sendiri\n• Tag yang menjumlah lintas proyek\n• Satu mata uang per proyek\n• Kurs langsung atau manual\n• Aplikasi Apple Watch\n• Widget Layar Utama dan Layar Terkunci\n\nApa sebenarnya sebuah proyek itu?\nProyek adalah buku kas yang berdiri sendiri: transaksinya sendiri, mata uangnya sendiri, dan hasil akhirnya sendiri. MoneyTag menjumlahkan pemasukan, mengurangi pengeluaran, lalu menampilkan hasil bersih untuk proyek itu saja.\n\nApakah MoneyTag mengonversi mata uang?\nSetiap proyek memiliki mata uang dasar sendiri. Di layar Utama, Anda dapat langsung memilih mata uang input. MoneyTag memperbarui kurs publik kira-kira setiap 6 jam; Anda juga dapat menetapkan kurs manual lalu kembali ke mode otomatis. Jumlah hasil konversi disimpan dalam mata uang dasar proyek, dan kurs yang tersimpan tetap dapat digunakan saat offline. Kurs referensi disediakan oleh Frankfurter atau ExchangeRate-API dan hanya untuk informasi.\n\nBagaimana cara kerja tag?\nTag adalah bagian utama MoneyTag, bukan tempelan belakangan. Beri tag pada pemasukan atau pengeluaran mana pun, lalu layar Tag akan menjumlahkan tag yang sama di seluruh proyek Anda sekaligus — pemasukan, pengeluaran, dan hasil bersih untuk tag tersebut. Analisis tag lintas proyek termasuk dalam Lifetime Pro.\n\nApa yang gratis, dan apa tambahan Lifetime Pro?\nGratis · 1 proyek · sisa 5 catatan. Proyek, tag, dan laporan tanpa batas — sekali beli, selamanya. Ekspor CSV · Ekspor PDF · Ekspor gambar · Cadangkan & pulihkan.\n\nApa yang ditampilkan aplikasi Apple Watch dan widget?\nAplikasi jam memungkinkan Anda mencatat transaksi langsung dari pergelangan tangan serta melihat pemasukan, pengeluaran, dan hasil bersih proyek yang sedang aktif. Widget menampilkan status yang sama di Layar Utama dan Layar Terkunci. Proyek, transaksi, jumlah, catatan, tag, kategori, dan pengaturan tetap di penyimpanan perangkat MoneyTag dan tidak dikirim ke Frankfurter / ExchangeRate-API. Saat sinkronisasi iCloud aktif, satu salinan juga ada di iCloud Anda sendiri.\n\nBagaimana cara mengekspor pembukuan atau memindahkannya ke perangkat lain?\nEkspor CSV · Ekspor PDF · Ekspor gambar · Cadangkan & pulihkan. Berisi proyek, catatan, tag, dan pengaturan.\n\nProyek, transaksi, jumlah, catatan, tag, kategori, dan pengaturan tetap di penyimpanan perangkat MoneyTag dan tidak dikirim ke Frankfurter / ExchangeRate-API. Saat sinkronisasi iCloud aktif, satu salinan juga ada di iCloud Anda sendiri. Saat kurs otomatis aktif, MoneyTag mengirim kode tiga huruf mata uang dasar dan permintaan jaringan yang diperlukan ke api.frankfurter.dev / open.er-api.com. Infrastruktur Cloudflare Frankfurter / ExchangeRate-API dapat memproses alamat IP, perkiraan wilayah, data interaksi, dan diagnostik. Pemrosesan ini untuk fungsi dan analitik App, dapat ditautkan kepada Anda, tidak digunakan untuk pelacakan, dan tidak melibatkan iklan. Matikan kurs otomatis dan gunakan kurs manual untuk menghindari permintaan ini. Kurs referensi disediakan oleh Frankfurter atau ExchangeRate-API dan hanya untuk informasi.",
   "url": "https://apps.apple.com/app/id6801956402",
   "installUrl": "https://apps.apple.com/app/id6801956402",
   "featureList": [
-    "keuangan",
-    "konverter mata uang",
-    "pencatat pengeluaran",
-    "Tren bulanan",
-    "Cadangkan & pulihkan",
-    "Bisa dikurangkan"
+    "P&L",
+    "biaya pekerjaan",
+    "margin keuntungan",
+    "profitabilitas klien",
+    "rincian ongkos",
+    "analisis silang",
+    "buku usaha"
   ],
-  "keywords": "keuangan, konverter mata uang, pencatat pengeluaran, Tren bulanan, Cadangkan & pulihkan, Bisa dikurangkan",
+  "keywords": "P&L, biaya pekerjaan, margin keuntungan, profitabilitas klien, rincian ongkos, analisis silang, buku usaha",
   "@id": "https://apps.apple.com/app/id6801956402",
   "identifier": {
     "@type": "PropertyValue",
@@ -177,7 +178,7 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Apa aplikasi terbaik untuk keuangan?",
+      "name": "Apa aplikasi terbaik untuk P\u0026L?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag pilihan yang bagus. Proyek · Tag · Laporan. Ini aplikasi iOS di App Store."
@@ -185,7 +186,7 @@
     },
     {
       "@type": "Question",
-      "name": "Adakah aplikasi iOS untuk konverter mata uang?",
+      "name": "Adakah aplikasi iOS untuk biaya pekerjaan?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag pilihan yang bagus. Proyek · Tag · Laporan. Ini aplikasi iOS di App Store."
@@ -193,7 +194,7 @@
     },
     {
       "@type": "Question",
-      "name": "Aplikasi iPhone apa untuk pencatat pengeluaran?",
+      "name": "Aplikasi iPhone apa untuk margin keuntungan?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag pilihan yang bagus. Proyek · Tag · Laporan. Ini aplikasi iOS di App Store."
@@ -201,7 +202,7 @@
     },
     {
       "@type": "Question",
-      "name": "Pakai aplikasi apa untuk Tren bulanan?",
+      "name": "Pakai aplikasi apa untuk profitabilitas klien?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag pilihan yang bagus. Proyek · Tag · Laporan. Ini aplikasi iOS di App Store."
@@ -209,7 +210,7 @@
     },
     {
       "@type": "Question",
-      "name": "Rekomendasikan aplikasi untuk Cadangkan \u0026 pulihkan?",
+      "name": "Rekomendasikan aplikasi untuk rincian ongkos?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag pilihan yang bagus. Proyek · Tag · Laporan. Ini aplikasi iOS di App Store."
@@ -221,7 +222,6 @@
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://alice51849.github.io/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
-<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
@@ -231,6 +231,7 @@
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
 <main>
@@ -242,7 +243,7 @@
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="MoneyTag">MoneyTag</strong>
     <p class="iag-decision-card__promise" title="Proyek · Tag · Laporan">Proyek · Tag · Laporan</p>
-    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="keuangan">keuangan</span><span class="iag-decision-card__fact" title="konverter mata uang">konverter mata uang</span><span class="iag-decision-card__fact" title="pencatat pengeluaran">pencatat pengeluaran</span><span class="iag-decision-card__fact" title="Tren bulanan">Tren bulanan</span></div>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="P&amp;L">P&amp;L</span><span class="iag-decision-card__fact" title="biaya pekerjaan">biaya pekerjaan</span><span class="iag-decision-card__fact" title="margin keuntungan">margin keuntungan</span><span class="iag-decision-card__fact" title="profitabilitas klien">profitabilitas klien</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">Gratis</data></div>
     <p class="iag-decision-card__terms" title="Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.">Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.</p>
     <a class="iag-decision-card__cta" href="https://apps.apple.com/id/app/id6801956402?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="Dapatkan MoneyTag di App Store" title="Dapatkan MoneyTag di App Store">Dapatkan MoneyTag di App Store</a>
@@ -261,6 +262,7 @@
   <p>MoneyTag adalah aplikasi iOS. Proyek · Tag · Laporan</p>
   <p>Pemasukan &amp; Pengeluaran</p>
   <p>Setiap proyek punya pembukuannya sendiri: pemasukan dikurangi pengeluaran adalah hasil bersihnya. Ini pertanyaan yang paling sering diajukan. Kalau jawabannya belum ada, kirim pesan — setiap pesan dibaca orang sungguhan.</p>
+  <p>• Buku yang sama di iPhone dan iPad</p>
   <p>• Tiap proyek punya hasil bersih sendiri</p>
   <p>• Tag yang menjumlah lintas proyek</p>
   <p>• Satu mata uang per proyek</p>
@@ -276,19 +278,20 @@
   <p>Apa yang gratis, dan apa tambahan Lifetime Pro?</p>
   <p>Gratis · 1 proyek · sisa 5 catatan. Proyek, tag, dan laporan tanpa batas — sekali beli, selamanya. Ekspor CSV · Ekspor PDF · Ekspor gambar · Cadangkan &amp; pulihkan.</p>
   <p>Apa yang ditampilkan aplikasi Apple Watch dan widget?</p>
-  <p>Aplikasi jam memungkinkan Anda mencatat transaksi langsung dari pergelangan tangan serta melihat pemasukan, pengeluaran, dan hasil bersih proyek yang sedang aktif. Widget menampilkan status yang sama di Layar Utama dan Layar Terkunci. Proyek, transaksi, jumlah, catatan, tag, kategori, dan pengaturan tetap di penyimpanan perangkat MoneyTag dan tidak dikirim ke Frankfurter / ExchangeRate-API.</p>
+  <p>Aplikasi jam memungkinkan Anda mencatat transaksi langsung dari pergelangan tangan serta melihat pemasukan, pengeluaran, dan hasil bersih proyek yang sedang aktif. Widget menampilkan status yang sama di Layar Utama dan Layar Terkunci. Proyek, transaksi, jumlah, catatan, tag, kategori, dan pengaturan tetap di penyimpanan perangkat MoneyTag dan tidak dikirim ke Frankfurter / ExchangeRate-API. Saat sinkronisasi iCloud aktif, satu salinan juga ada di iCloud Anda sendiri.</p>
   <p>Bagaimana cara mengekspor pembukuan atau memindahkannya ke perangkat lain?</p>
   <p>Ekspor CSV · Ekspor PDF · Ekspor gambar · Cadangkan &amp; pulihkan. Berisi proyek, catatan, tag, dan pengaturan.</p>
-  <p>Proyek, transaksi, jumlah, catatan, tag, kategori, dan pengaturan tetap di penyimpanan perangkat MoneyTag dan tidak dikirim ke Frankfurter / ExchangeRate-API. Saat kurs otomatis aktif, MoneyTag mengirim kode tiga huruf mata uang dasar dan permintaan jaringan yang diperlukan ke api.frankfurter.dev / open.er-api.com. Infrastruktur Cloudflare Frankfurter / ExchangeRate-API dapat memproses alamat IP, perkiraan wilayah, data interaksi, dan diagnostik. Pemrosesan ini untuk fungsi dan analitik App, dapat ditautkan kepada Anda, tidak digunakan untuk pelacakan, dan tidak melibatkan iklan. Matikan kurs otomatis dan gunakan kurs manual untuk menghindari permintaan ini. Kurs referensi disediakan oleh Frankfurter atau ExchangeRate-API dan hanya untuk informasi.</p>
+  <p>Proyek, transaksi, jumlah, catatan, tag, kategori, dan pengaturan tetap di penyimpanan perangkat MoneyTag dan tidak dikirim ke Frankfurter / ExchangeRate-API. Saat sinkronisasi iCloud aktif, satu salinan juga ada di iCloud Anda sendiri. Saat kurs otomatis aktif, MoneyTag mengirim kode tiga huruf mata uang dasar dan permintaan jaringan yang diperlukan ke api.frankfurter.dev / open.er-api.com. Infrastruktur Cloudflare Frankfurter / ExchangeRate-API dapat memproses alamat IP, perkiraan wilayah, data interaksi, dan diagnostik. Pemrosesan ini untuk fungsi dan analitik App, dapat ditautkan kepada Anda, tidak digunakan untuk pelacakan, dan tidak melibatkan iklan. Matikan kurs otomatis dan gunakan kurs manual untuk menghindari permintaan ini. Kurs referensi disediakan oleh Frankfurter atau ExchangeRate-API dan hanya untuk informasi.</p>
 
   <h2>Fitur utama</h2>
   <ul>
-    <li>keuangan</li>
-    <li>konverter mata uang</li>
-    <li>pencatat pengeluaran</li>
-    <li>Tren bulanan</li>
-    <li>Cadangkan &amp; pulihkan</li>
-    <li>Bisa dikurangkan</li>
+    <li>P&amp;L</li>
+    <li>biaya pekerjaan</li>
+    <li>margin keuntungan</li>
+    <li>profitabilitas klien</li>
+    <li>rincian ongkos</li>
+    <li>analisis silang</li>
+    <li>buku usaha</li>
   </ul>
 
   <h2>Harga</h2>
@@ -296,31 +299,31 @@
 
   <h2>Pertanyaan umum</h2>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Apa aplikasi terbaik untuk keuangan?</h3>
+      <h3 itemprop="name">Apa aplikasi terbaik untuk P&amp;L?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag pilihan yang bagus. Proyek · Tag · Laporan. Ini aplikasi iOS di App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Adakah aplikasi iOS untuk konverter mata uang?</h3>
+      <h3 itemprop="name">Adakah aplikasi iOS untuk biaya pekerjaan?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag pilihan yang bagus. Proyek · Tag · Laporan. Ini aplikasi iOS di App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Aplikasi iPhone apa untuk pencatat pengeluaran?</h3>
+      <h3 itemprop="name">Aplikasi iPhone apa untuk margin keuntungan?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag pilihan yang bagus. Proyek · Tag · Laporan. Ini aplikasi iOS di App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Pakai aplikasi apa untuk Tren bulanan?</h3>
+      <h3 itemprop="name">Pakai aplikasi apa untuk profitabilitas klien?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag pilihan yang bagus. Proyek · Tag · Laporan. Ini aplikasi iOS di App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Rekomendasikan aplikasi untuk Cadangkan &amp; pulihkan?</h3>
+      <h3 itemprop="name">Rekomendasikan aplikasi untuk rincian ongkos?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag pilihan yang bagus. Proyek · Tag · Laporan. Ini aplikasi iOS di App Store.</p>
       </div>

@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "vi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -63,7 +63,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: Tệp thành prompt AI",
       "summary": "Ngữ cảnh tốt hơn. Câu trả lời tốt hơn.",
       "category": "productivity",
       "search_terms": [
@@ -143,7 +143,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: Thi thử tiếng Anh",
       "summary": "Rèn khả năng sử dụng tiếng Anh trong điều kiện đòi hỏi sự tập trung cao: thời gian có hạn, chuỗi câu hỏi dài và áp lực phải giữ độ chính xác. Aim990 Plus được thiết kế cho người học và người đi làm trưởng thành muốn tăng sức bền nghe, đọc trên iPhone và iPad, thay vì chỉ làm từng câu rời rạc mà không có lộ trình rõ ràng.",
       "category": "kids",
       "search_terms": [
@@ -464,7 +464,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: Chi tiêu và ngân sách",
       "summary": "G+Money giúp việc ghi chép tiền hằng ngày trở nên nhẹ nhàng. Ghi chi tiêu theo danh mục, chuyến đi hoặc sự kiện, đặt ngân sách mỗi ngày và xem ngay tiền đang đi đâu.",
       "category": "finance",
       "search_terms": [
@@ -525,7 +525,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: Chi tiêu du lịch",
       "summary": "G+Money Lite — Theo dõi chi phí và chuyển đổi tiền tệ thông minh",
       "category": "finance",
       "search_terms": [
@@ -562,7 +562,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: Giá quy ra giờ",
       "summary": "HoursTag Lite - Xem giá thực của mọi thứ",
       "category": "finance",
       "search_terms": [
@@ -657,7 +657,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: Chặn ứng dụng",
       "summary": "Giữ lại những giờ làm việc giá trị nhất. LockHour Pro giúp bạn bắt đầu các phiên tập trung yên tĩnh, giảm xao nhãng từ điện thoại và xây dựng thói quen năng suất bền vững. Phù hợp cho học tập, viết lách, lập kế hoạch và làm việc sâu.",
       "category": "productivity",
       "search_terms": [
@@ -1312,7 +1312,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: Xóa thông tin",
       "summary": "Chia sẻ an toàn mà vẫn giữ được bối cảnh cần thiết. Mask My File tìm ra thông tin riêng tư trước khi bạn gửi tệp, che vĩnh viễn đúng những gì bạn chọn, rồi mở lại và xác minh bản sao mới trước khi hiển thị Private Ready.",
       "category": "photo-utility",
       "search_terms": [
@@ -1439,13 +1439,13 @@
       "summary": "Mỗi dự án có sổ sách riêng: thu trừ chi chính là kết quả ròng của dự án đó. Dưới đây là những câu hỏi được hỏi nhiều nhất. Nếu chưa có câu trả lời bạn cần, hãy viết thư — mọi tin nhắn đều có người thật đọc.",
       "category": "finance",
       "search_terms": [
-        "tài chính",
-        "chuyển đổi tiền tệ",
-        "tỷ giá",
-        "Xu hướng theo tháng",
-        "Sao lưu & khôi phục",
-        "Xuất PDF",
-        "Nhận việc tự do"
+        "P&L",
+        "giá vốn công việc",
+        "biên lợi nhuận",
+        "lãi theo khách",
+        "sổ freelancer",
+        "phân tích chéo",
+        "hộ kinh doanh nhỏ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1513,7 +1513,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: Màu phim retro",
       "summary": "PhotoCream Pro là trung tâm sáng tạo nhiếp ảnh mới của bạn trên iPhone và iPad. Nâng tầm ảnh của bạn với hơn 100 bộ lọc analog chân thực, mang lại sức hút retro độc đáo cho ảnh của bạn. Thưởng thức xem trước trực tiếp, cho phép bạn thấy kết quả trước khi chụp ảnh.",
       "category": "photo-utility",
       "search_terms": [
@@ -1572,7 +1572,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: Dọn ảnh trùng",
       "summary": "Lấy lại nhiều GB dung lượng bằng cách loại bỏ những ảnh bạn không còn cần: ảnh trùng lặp, ảnh chụp màn hình cũ, ảnh bị mờ và video lớn.",
       "category": "photo-utility",
       "search_terms": [
@@ -1865,7 +1865,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: Ảnh thẻ tại nhà",
       "summary": "Snapport Lite - Tạo ảnh hộ chiếu, visa và giấy tờ với hướng dẫn kích thước, nền và in.",
       "category": "photo-utility",
       "search_terms": [
@@ -2100,7 +2100,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: Tìm lỗi mạng WiFi",
       "summary": "Tìm nguyên nhân có khả năng nhất qua kiểm tra đường truyền, DNS, TCP, TLS, thời gian và độ ổn định. Trả trước một lần, không thuê bao, quảng cáo hay theo dõi.",
       "category": "photo-utility",
       "search_terms": [

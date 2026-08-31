@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "ca",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -53,7 +53,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: Fitxers a prompt IA",
       "summary": "Millor context. Millors respostes.",
       "category": "productivity",
       "search_terms": [
@@ -133,7 +133,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: Simulacre anglès",
       "summary": "Entrena la comprensió de l’anglès amb sessions que posen a prova l’atenció, el ritme i la constància. Aim990 Plus està pensada per a persones adultes que volen practicar seriosament amb l’iPhone o l’iPad, tant a casa com durant un trajecte o una pausa.",
       "category": "kids",
       "search_terms": [
@@ -440,7 +440,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: Despeses i pressupost",
       "summary": "G+Money fa que controlar les despeses quotidianes sigui senzill i sense càrrega. Registra què gastes, organitza-ho per categoria, viatge o esdeveniment, i veu de seguida cap on van els diners.",
       "category": "finance",
       "search_terms": [
@@ -496,7 +496,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: Diners de viatge",
       "summary": "G+Money Lite — Conversor de moneda de viatge intel·ligent i rastrejador de despeses",
       "category": "finance",
       "search_terms": [
@@ -533,7 +533,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: Preu en hores",
       "summary": "HoursTag Lite - Veure el preu real de les coses",
       "category": "finance",
       "search_terms": [
@@ -631,7 +631,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: Bloqueig d'apps",
       "summary": "Protegeix les hores en què avances de veritat. LockHour Pro t’ajuda a començar sessions de focus tranquil·les, reduir les distraccions del mòbil i construir hàbits productius sense complicacions. Ideal per estudiar, escriure, planificar i treballar a fons.",
       "category": "productivity",
       "search_terms": [
@@ -1273,7 +1273,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: Esborra dades",
       "summary": "Comparteix amb tranquil·litat sense perdre el context útil. Mask My File detecta les dades privades abans que enviïs un fitxer, oculta de manera permanent el que triïs i després torna a obrir i verifica la còpia nova abans de mostrar Private Ready.",
       "category": "photo-utility",
       "search_terms": [
@@ -1397,14 +1397,12 @@
       "summary": "Ingressos i despeses",
       "category": "finance",
       "search_terms": [
-        "finances",
-        "conversor de divises",
-        "diners",
-        "estalvi",
-        "Evolució mensual",
-        "Exporta PDF",
-        "Encàrrecs",
-        "Subministraments"
+        "compte resultats",
+        "cost per encàrrec",
+        "marge net",
+        "rendibilitat client",
+        "repartiment costos",
+        "anàlisi creuada"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1473,7 +1471,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: Filtres retro",
       "summary": "PhotoCream Pro converteix el teu iPhone o iPad en una càmera de pel·lícula càlida i un editor de fotos elegant. Captura tons retro amb més de 100 filtres analògics, gra realista i fuites de llum, o retoca selfies amb un acabat suau i natural.",
       "category": "photo-utility",
       "search_terms": [
@@ -1528,7 +1526,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: Neteja de fotos",
       "summary": "Recupera gigabytes d’espai eliminant el que ja no necessites de la fototeca: duplicats, captures antigues, fotos borroses i vídeos grans.",
       "category": "photo-utility",
       "search_terms": [
@@ -1814,7 +1812,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: Fotos de carnet",
       "summary": "Snapport Lite - Fes fotos de passaport, visat i documents amb dimensions guiades, eines de fons i exportació llesta per imprimir.",
       "category": "photo-utility",
       "search_terms": [
@@ -2053,7 +2051,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: Diagnòstic de xarxa",
       "summary": "Troba la causa més probable amb proves independents de rutes, DNS, TCP, TLS, temps i estabilitat. Un únic pagament inicial, sense subscripcions, anuncis ni seguiment.",
       "category": "photo-utility",
       "search_terms": [

@@ -1,15 +1,15 @@
 ---
-title: "HoursTag Lite — వస్తువుల నిజమైన ధరను చూడండి | iOS App"
+title: "HoursTag Lite: ధర గంటల్లో — వస్తువుల నిజమైన ధరను చూడండి | iOS App"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/te-IN/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag Lite — వస్తువుల నిజమైన ధరను చూడండి | iOS App
+# HoursTag Lite: ధర గంటల్లో — వస్తువుల నిజమైన ధరను చూడండి | iOS App
 
 HoursTag Lite - వస్తువుల నిజమైన ధరను చూడండి ప్రతి కొనుగోలు మీ జీవితానికి గంటలు ఖర్చు చేస్తుంది. HoursTag Lite ధరలను పని సమయంగా మార్చుతుంది — కాబట్టి మీరు స్పష్టతతో ఖర్చు చేస్తారు. మీ విలువ ప్రిజమ్ చూడండి - సమయపు ఖర్చు: ఒక్కో పని గంటకు నికర ఆదాయం - రకం: అవసరం - కోరిక - ఉత్సాహం - మీ విలువ ధోరణి - పూర్తి విలువ విశ్లేషణ - ఒక లక్ష్యం ఎంత ఖర్చు అవుతుంది?: ఒక లక్ష్యం వెనుక ఉన్న పని చూడండి — మరియు మీ పురోగతిని ట్రాక్ చేయండి. - బ్యాకప్ & పునరుద్ధరణ: ఆదాయం, ఖర్చులు, లక్ష్యాలు మరియు ప్రాధాన్యతలను కలిగి ఉంటుంది. - Widget - Apple Watch అన్నీ మీ పరికరంలోనే ఉంటాయి. ఖాతా లేదు, ట్రాకింగ్ లేదు. ఒకసారి చెల్లింపు · జీవితకాల వినియోగం · సభ్యత్వం లేదు అపరిమిత నిర్ణయాలు మరియు సవరణలు అపరిమిత లక్ష్యాలు మరియు పురోగతి పంచుకోవడం, విశ్లేషణ మరియు బ్యాకప్
 
@@ -22,7 +22,7 @@ HoursTag Lite - వస్తువుల నిజమైన ధరను చూ�
 - Apple Watch
 - App Store · ఉచితం
 
-[App Store నుంచి HoursTag Lite పొందండి](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_te_in&mt=8)
+[App Store నుంచి HoursTag Lite: ధర గంటల్లో పొందండి](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/hourstaglite.html)
 

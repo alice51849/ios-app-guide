@@ -2,7 +2,7 @@
 title: "BattAI: Batteritilstand — Klare regler, kilder og grenser | iOS App"
 lang: "no"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/no/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

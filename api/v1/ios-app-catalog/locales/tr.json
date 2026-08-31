@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "tr",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -53,7 +53,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: Dosyadan AI istemi",
       "summary": "Daha iyi bağlam, daha iyi yanıtlar.",
       "category": "productivity",
       "search_terms": [
@@ -133,7 +133,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: İngilizce deneme",
       "summary": "Aim990 Plus, sınırlı sürede İngilizce konuşmaları ve metinleri güvenle anlamak isteyen yetişkinler için hazırlanmış bir çalışma aracıdır. Yalnızca soru çözmek yerine dikkatinizi korumanıza, belirlenen tempoda karar vermenize ve her hatayı bir sonraki çalışmanın hedefli malzemesine dönüştürmenize yardımcı olur.",
       "category": "kids",
       "search_terms": [
@@ -449,7 +449,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: Harcama ve bütçe",
       "summary": "G+Money her gün kullandığın iki aracı tek uygulamada birleştirir — şimşek hızında bir döviz çevirici ve şık bir harcama takibi — günlük hayat için de seyahat için de. Tamamen çevrimdışı. Tamamen gizli.",
       "category": "finance",
       "search_terms": [
@@ -507,7 +507,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: Gezi harcaması",
       "summary": "G+Money Lite — Akıllı seyahat döviz & harcama takibi",
       "category": "finance",
       "search_terms": [
@@ -545,7 +545,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: Fiyat kaç saat",
       "summary": "HoursTag Lite - Şeylerin gerçek bedeli",
       "category": "finance",
       "search_terms": [
@@ -644,7 +644,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: Uygulama kilidi",
       "summary": "En değerli saatlerini koru. LockHour Pro, sakin odak oturumları başlatmana, telefon dikkat dağıtıcılarını azaltmana ve sürdürülebilir üretkenlik alışkanlıkları kurmana yardımcı olur. Ders çalışmak, yazmak, plan yapmak ve derin çalışma için idealdir.",
       "category": "productivity",
       "search_terms": [
@@ -1299,7 +1299,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: Verilerini sil",
       "summary": "Yararlı bağlamı yitirmeden güvenle paylaş. Mask My File, sen bir dosyayı göndermeden önce özel ayrıntıları bulur, yalnızca senin seçtiklerini kalıcı olarak gizler, ardından Private Ready'i göstermeden önce yeni kopyayı yeniden açıp doğrular.",
       "category": "photo-utility",
       "search_terms": [
@@ -1428,13 +1428,13 @@
       "summary": "Her proje kendi defterini tutar: gelirden gideri çıkarınca projenin net sonucu çıkar. En sık gelen sorular burada. Sizinki yoksa yazın — her mesajı gerçek bir insan okuyor.",
       "category": "finance",
       "search_terms": [
-        "harcama takibi",
-        "masraf",
-        "döviz çevirici",
-        "Aylık seyir",
-        "PDF dışa aktar",
-        "Serbest iş",
-        "Kurları otomatik güncelle"
+        "kâr zarar tablosu",
+        "iş maliyetleme",
+        "net marj",
+        "müşteri kârlılığı",
+        "maliyet dağıtımı",
+        "çapraz analiz",
+        "muhasebe"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1505,7 +1505,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: Film filtresi",
       "summary": "PhotoCream Pro, iPhone ve iPad'inizdeki fotoğrafçılık yaratıcılığınızın yeni merkezi. Fotoğraflarınıza benzersiz bir retro cazibe katacak 100'den fazla otantik analog filtre ile fotoğraflarınızı bir üst seviyeye taşıyın. Çekim yapmadan önce sonucu görmenizi sağlayan canlı önizlemenin keyfini çıkarın.",
       "category": "photo-utility",
       "search_terms": [
@@ -1563,7 +1563,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: Fotoğraf temizle",
       "summary": "Artık gerek duymadığın öğeleri kaldırarak gigabaytlarca alan kazan: yinelenenler, eski ekran görüntüleri, bulanık kareler ve büyük videolar.",
       "category": "photo-utility",
       "search_terms": [
@@ -1844,7 +1844,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: Evde vesikalık",
       "summary": "Snapport Lite - Boyut, arka plan ve baskı kılavuzlarıyla pasaport, vize ve kimlik fotoğrafları oluşturun.",
       "category": "photo-utility",
       "search_terms": [
@@ -2082,7 +2082,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: Ağ sorunlarını bul",
       "summary": "Bağımsız yol, DNS, TCP, TLS, süre ve kararlılık kontrolleriyle en olası nedeni bulun. Baştan tek ödeme; abonelik, reklam ve takip yok.",
       "category": "photo-utility",
       "search_terms": [

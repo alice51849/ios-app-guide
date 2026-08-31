@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -53,7 +53,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: ไฟล์เป็นพรอมต์ AI",
       "summary": "บริบทที่ดีขึ้น คำตอบที่ดีขึ้น",
       "category": "productivity",
       "search_terms": [
@@ -131,7 +131,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: ข้อสอบอังกฤษจำลอง",
       "summary": "ไม่ได้ฝึกแค่ให้ทำโจทย์ได้มากขึ้น แต่ฝึกให้ตัดสินใจได้แม่นยำเมื่อเวลาค่อย ๆ ลดลง",
       "category": "kids",
       "search_terms": [
@@ -439,7 +439,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: รายจ่ายและงบประมาณ",
       "summary": "G+Money ทำให้การจดรายจ่ายประจำวันง่ายและไม่ยุ่งยาก บันทึกรายจ่ายตามหมวดหมู่ ทริป หรืออีเวนต์ ตั้งงบต่อวัน แล้วดูได้ทันทีว่าเงินไปอยู่ตรงไหน",
       "category": "finance",
       "search_terms": [
@@ -495,7 +495,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: ค่าใช้จ่ายทริป",
       "summary": "G+Money Lite — เครื่องมือแปลงสกุลเงินและติดตามค่าใช้จ่ายที่ชาญฉลาด",
       "category": "finance",
       "search_terms": [
@@ -533,7 +533,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: ราคาเป็นชั่วโมง",
       "summary": "HoursTag Lite - ดูราคาที่แท้จริงของสิ่งต่างๆ",
       "category": "finance",
       "search_terms": [
@@ -630,7 +630,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: บล็อกแอปและโฟกัส",
       "summary": "ปกป้องเวลาที่คุณทำงานได้ดีที่สุด LockHour Pro ช่วยให้คุณเริ่มช่วงโฟกัสที่สงบ ลดสิ่งรบกวนจากโทรศัพท์ และสร้างนิสัยการทำงานที่ดีขึ้น เหมาะสำหรับการเรียน เขียนงาน วางแผน และงานที่ต้องใช้สมาธิสูง",
       "category": "productivity",
       "search_terms": [
@@ -1288,7 +1288,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: ลบข้อมูลส่วนตัว",
       "summary": "แชร์ได้อย่างปลอดภัยโดยไม่สูญเสียบริบทที่จำเป็น Mask My File ค้นหาข้อมูลส่วนตัวก่อนที่คุณจะส่งไฟล์ ปิดบังอย่างถาวร แล้วเปิดไฟล์ที่ส่งออกใหม่ขึ้นมาตรวจสอบก่อนแสดงสถานะ Private Ready",
       "category": "photo-utility",
       "search_terms": [
@@ -1420,13 +1420,14 @@
       "summary": "ทุกโปรเจกต์มีบัญชีของตัวเอง: รายรับลบรายจ่ายคือยอดสุทธิของโปรเจกต์นั้น นี่คือคำถามที่พบบ่อยที่สุด หากไม่มีคำตอบที่ต้องการ เขียนมาหาเราได้เลย ทุกข้อความมีคนอ่านจริง",
       "category": "finance",
       "search_terms": [
-        "งบประมาณ",
-        "จัดการค่าใช้จ่าย",
-        "แปลงสกุลเงิน",
-        "อัตราแลกเปลี่ยน",
-        "รายรับรายจ่าย",
-        "จัดการเงิน",
-        "สำรองข้อมูล & กู้คืน"
+        "P&L",
+        "งบกำไรขาดทุน",
+        "ต้นทุนงาน",
+        "อัตรากำไร",
+        "กำไรต่อลูกค้า",
+        "ปันส่วนต้นทุน",
+        "บัญชีฟรีแลนซ์",
+        "วิเคราะห์ข้ามรายการ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1495,7 +1496,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: ฟิลเตอร์ฟิล์ม",
       "summary": "PhotoCream Pro คือศูนย์กลางความคิดสร้างสรรค์ในการถ่ายภาพบน iPhone และ iPad ของคุณ ยกระดับภาพถ่ายของคุณด้วยฟิลเตอร์แอนะล็อกแท้กว่า 100 แบบที่เพิ่มเสน่ห์ย้อนยุคไม่ซ้ำใครให้กับภาพถ่ายของคุณ เพลิดเพลินกับการดูตัวอย่างสดที่ให้คุณเห็นผลลัพธ์ก่อนถ่ายภาพ",
       "category": "photo-utility",
       "search_terms": [
@@ -1556,7 +1557,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: ล้างรูปซ้ำ",
       "summary": "เรียกพื้นที่เก็บข้อมูลกลับมาเป็นกิกะไบต์ด้วยการลบรูปที่ไม่จำเป็นแล้ว เช่น รูปซ้ำ สกรีนช็อตเก่า รูปเบลอ และวิดีโอขนาดใหญ่",
       "category": "photo-utility",
       "search_terms": [
@@ -1836,7 +1837,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: ทำรูปติดบัตร",
       "summary": "Snapport Lite - สร้างรูปพาสปอร์ต วีซ่า และบัตรประจำตัวพร้อมคำแนะนำขนาด พื้นหลัง และการพิมพ์",
       "category": "photo-utility",
       "search_terms": [
@@ -2064,7 +2065,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: หาปัญหาเครือข่าย",
       "summary": "ค้นหาสาเหตุที่เป็นไปได้มากที่สุดด้วยการตรวจเส้นทาง DNS, TCP, TLS เวลา และความเสถียรแบบอิสระ จ่ายล่วงหน้าครั้งเดียว ไม่มีสมาชิก โฆษณา หรือการติดตาม",
       "category": "photo-utility",
       "search_terms": [

@@ -2,7 +2,7 @@
 title: "best offline handwriting notes app for ipad with pdf markup no subscription"
 lang: "en-US"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/en-US/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

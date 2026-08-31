@@ -2,7 +2,7 @@
 title: "광고 없는 유아용 최고의 잠자리 습관 앱"
 lang: "ko"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/ko/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

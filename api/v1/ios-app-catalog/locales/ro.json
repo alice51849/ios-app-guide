@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "ro",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -53,7 +53,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: Fișiere în prompt AI",
       "summary": "Context mai bun. Răspunsuri mai bune.",
       "category": "productivity",
       "search_terms": [
@@ -133,7 +133,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: Test de engleză",
       "summary": "Să înțelegi engleza este important; să rămâi precis când timpul se scurge este o abilitate separată. Aim990 Plus este un antrenament intensiv de ascultare și citire pentru adulți, creat pentru iPhone și iPad. Sesiunea principală are un ritm clar: începi cu 8 întrebări de încălzire, continui cu Pressure Set — 20 de întrebări în 15 minute — apoi intri în Mistake Replay, unde revii exact la răspunsurile care ți-au creat dificultăți.",
       "category": "kids",
       "search_terms": [
@@ -440,7 +440,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: Cheltuieli și buget",
       "summary": "G+Money face urmărirea banilor de zi cu zi simplă și prietenoasă. Notează cheltuieli pe categorie, călătorie sau eveniment, setează un buget zilnic și vezi imediat unde se duc banii.",
       "category": "finance",
       "search_terms": [
@@ -497,7 +497,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: Bani de vacanță",
       "summary": "G+Money Lite — Converter de valută și tracker de cheltuieli inteligent pentru călătorii",
       "category": "finance",
       "search_terms": [
@@ -535,7 +535,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: Preț în ore",
       "summary": "HoursTag Lite - Vezi adevărata valoare a lucrurilor",
       "category": "finance",
       "search_terms": [
@@ -633,7 +633,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: Blocare app-uri",
       "summary": "Protejează orele în care lucrezi cel mai bine. LockHour Pro te ajută să pornești sesiuni calme de focus, să reduci distragerile telefonului și să construiești obiceiuri productive fără aglomerație. Ideal pentru studiu, scris, planificare și muncă profundă.",
       "category": "productivity",
       "search_terms": [
@@ -1269,7 +1269,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: Șterge datele",
       "summary": "Distribuie în siguranță fără să pierzi contextul util. Mask My File găsește datele personale înainte să trimiți un fișier, acoperă definitiv ce alegi, apoi redeschide și verifică noul fișier înainte de a afișa eticheta Private Ready.",
       "category": "photo-utility",
       "search_terms": [
@@ -1395,12 +1395,13 @@
       "summary": "Venituri și cheltuieli",
       "category": "finance",
       "search_terms": [
-        "urmărire cheltuieli",
-        "convertor valutar",
-        "gestionare bani",
-        "economii",
-        "Cursuri de schimb",
-        "Backup & restaurare"
+        "profit pierdere",
+        "cost pe lucrare",
+        "marjă",
+        "rentabilitate client",
+        "alocare costuri",
+        "analiză transversală",
+        "PFA"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1468,7 +1469,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: Filtre de film",
       "summary": "PhotoCream Pro transformă iPhone-ul sau iPad-ul într-o cameră de film caldă și un editor foto rafinat. Creează look-uri retro cu peste 100 de filtre analogice, granulație fină și efecte de lumină, apoi retușează selfie-uri natural.",
       "category": "photo-utility",
       "search_terms": [
@@ -1526,7 +1527,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: Curățare poze",
       "summary": "Recuperează gigaocteți de spațiu eliminând pozele de care nu mai ai nevoie: duplicate, capturi de ecran vechi, imagini neclare și videoclipuri mari.",
       "category": "photo-utility",
       "search_terms": [
@@ -1809,7 +1810,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: Poze de buletin",
       "summary": "Snapport Lite - Realizează fotografii pentru pașaport, viză și documente cu dimensiuni ghidate, instrumente pentru fundal și export gata de imprimare.",
       "category": "photo-utility",
       "search_terms": [
@@ -2047,7 +2048,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: Diagnoză de rețea",
       "summary": "Găsește cauza cea mai probabilă prin teste independente de traseu, DNS, TCP, TLS, timpi și stabilitate. O singură plată inițială, fără abonament, reclame sau urmărire.",
       "category": "photo-utility",
       "search_terms": [

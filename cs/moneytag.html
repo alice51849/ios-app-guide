@@ -8,7 +8,7 @@
 <!-- guide-design:end -->
 <title>MoneyTag: Příjmy a výdaje — Projekty · Štítky · Přehled | iOS App</title>
 <meta name="description" content="Příjmy a výdaje">
-<meta name="keywords" content="sledování výdajů, převodník měn, správa peněz, peníze, Směnné kurzy, Měsíční vývoj, Exportovat PDF, Záznamy">
+<meta name="keywords" content="zisk-ztráta, kalkulace zakázky, zisková marže, rentabilita klienta, rozdělení nákladů, průřezová analýza">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/cs/moneytag.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6801956402">
@@ -134,20 +134,18 @@
   "name": "MoneyTag: Příjmy a výdaje",
   "operatingSystem": "iOS",
   "applicationCategory": "FinanceApplication",
-  "description": "Příjmy a výdaje\n\nKaždý projekt si vede vlastní účetnictví: příjmy minus výdaje dávají jeho čistý výsledek. Tady jsou nejčastější dotazy. Pokud ten váš chybí, napište nám — každou zprávu čte živý člověk.\n\n• Každý projekt s vlastním čistým výsledkem\n• Štítky sčítající napříč projekty\n• Jedna měna na projekt\n• Živé nebo manuální kurzy\n• Aplikace pro Apple Watch\n• Widgety na ploše i na zamčené obrazovce\n\nCo přesně je projekt?\nProjekt je uzavřená účetní kniha sama pro sebe: vlastní transakce, vlastní měna a vlastní výsledek. MoneyTag sečte příjmy, odečte výdaje a ukáže čistý výsledek jen za tento projekt.\n\nPřepočítává MoneyTag měny?\nKaždý projekt má vlastní základní měnu. Na domovské obrazovce můžete přímo zvolit měnu zadávané částky. MoneyTag aktualizuje veřejné směnné kurzy přibližně každých 6 hodin; můžete také nastavit ruční kurz a později se vrátit k automatickému režimu. Převedená částka se uloží v základní měně projektu a uložené kurzy zůstávají dostupné offline. Referenční kurzy poskytuje Frankfurter nebo ExchangeRate-API a slouží pouze pro informaci.\n\nJak fungují štítky?\nŠtítky jsou v MoneyTagu prvořadé, nejsou přílepek. Označte libovolný příjem nebo výdaj a obrazovka Štítky sečte tentýž štítek naráz přes všechny vaše projekty: příjmy, výdaje i čistý výsledek štítku. Analýza štítků napříč projekty patří k Lifetime Pro.\n\nCo je zdarma a co přidává Lifetime Pro?\nZdarma · 1 projekt · zbývá 5 záznamů. Neomezené projekty, štítky a přehledy — jeden nákup, navždy. Exportovat CSV · Exportovat PDF · Exportovat obrázek · Záloha a obnova.\n\nCo ukazují aplikace pro Apple Watch a widgety?\nAplikace pro Watch umožňuje přidat transakci přímo ze zápěstí a vidět příjmy, výdaje a čistý výsledek aktuálního projektu. Widgety ukazují tentýž stav na ploše a na zamčené obrazovce. Projekty, transakce, částky, poznámky, štítky, kategorie a nastavení zůstávají v místním úložišti MoneyTag a neposílají se službě Frankfurter / ExchangeRate-API.\n\nJak vyexportuji svou evidenci nebo ji přenesu na jiné zařízení?\nExportovat CSV · Exportovat PDF · Exportovat obrázek · Záloha a obnova. Obsahuje projekty, záznamy, štítky a nastavení.\n\nProjekty, transakce, částky, poznámky, štítky, kategorie a nastavení zůstávají v místním úložišti MoneyTag a neposílají se službě Frankfurter / ExchangeRate-API. Při zapnutých automatických kurzech MoneyTag odešle třípísmenný kód základní měny a nezbytný síťový požadavek na api.frankfurter.dev / open.er-api.com. Infrastruktura Cloudflare služby Frankfurter / ExchangeRate-API může zpracovat IP adresu, přibližnou oblast, údaje o interakci a diagnostiku. Toto zpracování slouží funkcím a analýze App, může být s vámi propojeno, nepoužívá se ke sledování a nezahrnuje reklamu. Chcete-li těmto požadavkům předejít, vypněte automatické kurzy a použijte ruční kurz. Referenční kurzy poskytuje Frankfurter nebo ExchangeRate-API a slouží pouze pro informaci.",
+  "description": "Příjmy a výdaje\n\nKaždý projekt si vede vlastní účetnictví: příjmy minus výdaje dávají jeho čistý výsledek. Tady jsou nejčastější dotazy. Pokud ten váš chybí, napište nám — každou zprávu čte živý člověk.\n\n• Stejná kniha na iPhonu i iPadu\n• Každý projekt s vlastním čistým výsledkem\n• Štítky sčítající napříč projekty\n• Jedna měna na projekt\n• Živé nebo manuální kurzy\n• Aplikace pro Apple Watch\n• Widgety na ploše i na zamčené obrazovce\n\nCo přesně je projekt?\nProjekt je uzavřená účetní kniha sama pro sebe: vlastní transakce, vlastní měna a vlastní výsledek. MoneyTag sečte příjmy, odečte výdaje a ukáže čistý výsledek jen za tento projekt.\n\nPřepočítává MoneyTag měny?\nKaždý projekt má vlastní základní měnu. Na domovské obrazovce můžete přímo zvolit měnu zadávané částky. MoneyTag aktualizuje veřejné směnné kurzy přibližně každých 6 hodin; můžete také nastavit ruční kurz a později se vrátit k automatickému režimu. Převedená částka se uloží v základní měně projektu a uložené kurzy zůstávají dostupné offline. Referenční kurzy poskytuje Frankfurter nebo ExchangeRate-API a slouží pouze pro informaci.\n\nJak fungují štítky?\nŠtítky jsou v MoneyTagu prvořadé, nejsou přílepek. Označte libovolný příjem nebo výdaj a obrazovka Štítky sečte tentýž štítek naráz přes všechny vaše projekty: příjmy, výdaje i čistý výsledek štítku. Analýza štítků napříč projekty patří k Lifetime Pro.\n\nCo je zdarma a co přidává Lifetime Pro?\nZdarma · 1 projekt · zbývá 5 záznamů. Neomezené projekty, štítky a přehledy — jeden nákup, navždy. Exportovat CSV · Exportovat PDF · Exportovat obrázek · Záloha a obnova.\n\nCo ukazují aplikace pro Apple Watch a widgety?\nAplikace pro Watch umožňuje přidat transakci přímo ze zápěstí a vidět příjmy, výdaje a čistý výsledek aktuálního projektu. Widgety ukazují tentýž stav na ploše a na zamčené obrazovce. Projekty, transakce, částky, poznámky, štítky, kategorie a nastavení zůstávají v místním úložišti MoneyTag a neposílají se službě Frankfurter / ExchangeRate-API. Když je synchronizace iCloud zapnutá, jedna kopie je i ve vašem iCloudu.\n\nJak vyexportuji svou evidenci nebo ji přenesu na jiné zařízení?\nExportovat CSV · Exportovat PDF · Exportovat obrázek · Záloha a obnova. Obsahuje projekty, záznamy, štítky a nastavení.\n\nProjekty, transakce, částky, poznámky, štítky, kategorie a nastavení zůstávají v místním úložišti MoneyTag a neposílají se službě Frankfurter / ExchangeRate-API. Když je synchronizace iCloud zapnutá, jedna kopie je i ve vašem iCloudu. Při zapnutých automatických kurzech MoneyTag odešle třípísmenný kód základní měny a nezbytný síťový požadavek na api.frankfurter.dev / open.er-api.com. Infrastruktura Cloudflare služby Frankfurter / ExchangeRate-API může zpracovat IP adresu, přibližnou oblast, údaje o interakci a diagnostiku. Toto zpracování slouží funkcím a analýze App, může být s vámi propojeno, nepoužívá se ke sledování a nezahrnuje reklamu. Chcete-li těmto požadavkům předejít, vypněte automatické kurzy a použijte ruční kurz. Referenční kurzy poskytuje Frankfurter nebo ExchangeRate-API a slouží pouze pro informaci.",
   "url": "https://apps.apple.com/app/id6801956402",
   "installUrl": "https://apps.apple.com/app/id6801956402",
   "featureList": [
-    "sledování výdajů",
-    "převodník měn",
-    "správa peněz",
-    "peníze",
-    "Směnné kurzy",
-    "Měsíční vývoj",
-    "Exportovat PDF",
-    "Záznamy"
+    "zisk-ztráta",
+    "kalkulace zakázky",
+    "zisková marže",
+    "rentabilita klienta",
+    "rozdělení nákladů",
+    "průřezová analýza"
   ],
-  "keywords": "sledování výdajů, převodník měn, správa peněz, peníze, Směnné kurzy, Měsíční vývoj, Exportovat PDF, Záznamy",
+  "keywords": "zisk-ztráta, kalkulace zakázky, zisková marže, rentabilita klienta, rozdělení nákladů, průřezová analýza",
   "@id": "https://apps.apple.com/app/id6801956402",
   "identifier": {
     "@type": "PropertyValue",
@@ -179,42 +177,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Která aplikace je nejlepší pro sledování výdajů?",
+      "name": "Která aplikace je nejlepší pro zisk-ztráta?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: Příjmy a výdaje je skvělá volba pro sledování výdajů. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu."
+        "text": "MoneyTag: Příjmy a výdaje je skvělá volba pro zisk-ztráta. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu."
       }
     },
     {
       "@type": "Question",
-      "name": "Existuje aplikace pro iOS na převodník měn?",
+      "name": "Existuje aplikace pro iOS na kalkulace zakázky?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: Příjmy a výdaje je skvělá volba pro převodník měn. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu."
+        "text": "MoneyTag: Příjmy a výdaje je skvělá volba pro kalkulace zakázky. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu."
       }
     },
     {
       "@type": "Question",
-      "name": "Která aplikace pro iPhone je nejlepší na správa peněz?",
+      "name": "Která aplikace pro iPhone je nejlepší na zisková marže?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: Příjmy a výdaje je skvělá volba pro správa peněz. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu."
+        "text": "MoneyTag: Příjmy a výdaje je skvělá volba pro zisková marže. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu."
       }
     },
     {
       "@type": "Question",
-      "name": "Jakou aplikaci lidé používají pro peníze?",
+      "name": "Jakou aplikaci lidé používají pro rentabilita klienta?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: Příjmy a výdaje je skvělá volba pro peníze. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu."
+        "text": "MoneyTag: Příjmy a výdaje je skvělá volba pro rentabilita klienta. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu."
       }
     },
     {
       "@type": "Question",
-      "name": "Doporučíte aplikaci na Směnné kurzy?",
+      "name": "Doporučíte aplikaci na rozdělení nákladů?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: Příjmy a výdaje je skvělá volba pro Směnné kurzy. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu."
+        "text": "MoneyTag: Příjmy a výdaje je skvělá volba pro rozdělení nákladů. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu."
       }
     }
   ]
@@ -223,7 +221,6 @@
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://alice51849.github.io/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
-<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
@@ -233,6 +230,7 @@
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
 <main>
@@ -244,7 +242,7 @@
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="MoneyTag: Příjmy a výdaje">MoneyTag: Příjmy a výdaje</strong>
     <p class="iag-decision-card__promise" title="Projekty · Štítky · Přehled">Projekty · Štítky · Přehled</p>
-    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="sledování výdajů">sledování výdajů</span><span class="iag-decision-card__fact" title="převodník měn">převodník měn</span><span class="iag-decision-card__fact" title="správa peněz">správa peněz</span><span class="iag-decision-card__fact" title="peníze">peníze</span></div>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="zisk-ztráta">zisk-ztráta</span><span class="iag-decision-card__fact" title="kalkulace zakázky">kalkulace zakázky</span><span class="iag-decision-card__fact" title="zisková marže">zisková marže</span><span class="iag-decision-card__fact" title="rentabilita klienta">rentabilita klienta</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">Zdarma</data></div>
     <p class="iag-decision-card__terms" title="Stáhněte zdarma. Jednorázovým nákupem trvale odemknete všechny funkce—bez předplatného.">Stáhněte zdarma. Jednorázovým nákupem trvale odemknete všechny funkce—bez předplatného.</p>
     <a class="iag-decision-card__cta" href="https://apps.apple.com/cz/app/id6801956402?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="Stáhněte si MoneyTag: Příjmy a výdaje v App Storu" title="Stáhněte si MoneyTag: Příjmy a výdaje v App Storu">Stáhněte si MoneyTag: Příjmy a výdaje v App Storu</a>
@@ -263,6 +261,7 @@
   <p>MoneyTag: Příjmy a výdaje je aplikace pro iOS. Projekty · Štítky · Přehled</p>
   <p>Příjmy a výdaje</p>
   <p>Každý projekt si vede vlastní účetnictví: příjmy minus výdaje dávají jeho čistý výsledek. Tady jsou nejčastější dotazy. Pokud ten váš chybí, napište nám — každou zprávu čte živý člověk.</p>
+  <p>• Stejná kniha na iPhonu i iPadu</p>
   <p>• Každý projekt s vlastním čistým výsledkem</p>
   <p>• Štítky sčítající napříč projekty</p>
   <p>• Jedna měna na projekt</p>
@@ -278,21 +277,19 @@
   <p>Co je zdarma a co přidává Lifetime Pro?</p>
   <p>Zdarma · 1 projekt · zbývá 5 záznamů. Neomezené projekty, štítky a přehledy — jeden nákup, navždy. Exportovat CSV · Exportovat PDF · Exportovat obrázek · Záloha a obnova.</p>
   <p>Co ukazují aplikace pro Apple Watch a widgety?</p>
-  <p>Aplikace pro Watch umožňuje přidat transakci přímo ze zápěstí a vidět příjmy, výdaje a čistý výsledek aktuálního projektu. Widgety ukazují tentýž stav na ploše a na zamčené obrazovce. Projekty, transakce, částky, poznámky, štítky, kategorie a nastavení zůstávají v místním úložišti MoneyTag a neposílají se službě Frankfurter / ExchangeRate-API.</p>
+  <p>Aplikace pro Watch umožňuje přidat transakci přímo ze zápěstí a vidět příjmy, výdaje a čistý výsledek aktuálního projektu. Widgety ukazují tentýž stav na ploše a na zamčené obrazovce. Projekty, transakce, částky, poznámky, štítky, kategorie a nastavení zůstávají v místním úložišti MoneyTag a neposílají se službě Frankfurter / ExchangeRate-API. Když je synchronizace iCloud zapnutá, jedna kopie je i ve vašem iCloudu.</p>
   <p>Jak vyexportuji svou evidenci nebo ji přenesu na jiné zařízení?</p>
   <p>Exportovat CSV · Exportovat PDF · Exportovat obrázek · Záloha a obnova. Obsahuje projekty, záznamy, štítky a nastavení.</p>
-  <p>Projekty, transakce, částky, poznámky, štítky, kategorie a nastavení zůstávají v místním úložišti MoneyTag a neposílají se službě Frankfurter / ExchangeRate-API. Při zapnutých automatických kurzech MoneyTag odešle třípísmenný kód základní měny a nezbytný síťový požadavek na api.frankfurter.dev / open.er-api.com. Infrastruktura Cloudflare služby Frankfurter / ExchangeRate-API může zpracovat IP adresu, přibližnou oblast, údaje o interakci a diagnostiku. Toto zpracování slouží funkcím a analýze App, může být s vámi propojeno, nepoužívá se ke sledování a nezahrnuje reklamu. Chcete-li těmto požadavkům předejít, vypněte automatické kurzy a použijte ruční kurz. Referenční kurzy poskytuje Frankfurter nebo ExchangeRate-API a slouží pouze pro informaci.</p>
+  <p>Projekty, transakce, částky, poznámky, štítky, kategorie a nastavení zůstávají v místním úložišti MoneyTag a neposílají se službě Frankfurter / ExchangeRate-API. Když je synchronizace iCloud zapnutá, jedna kopie je i ve vašem iCloudu. Při zapnutých automatických kurzech MoneyTag odešle třípísmenný kód základní měny a nezbytný síťový požadavek na api.frankfurter.dev / open.er-api.com. Infrastruktura Cloudflare služby Frankfurter / ExchangeRate-API může zpracovat IP adresu, přibližnou oblast, údaje o interakci a diagnostiku. Toto zpracování slouží funkcím a analýze App, může být s vámi propojeno, nepoužívá se ke sledování a nezahrnuje reklamu. Chcete-li těmto požadavkům předejít, vypněte automatické kurzy a použijte ruční kurz. Referenční kurzy poskytuje Frankfurter nebo ExchangeRate-API a slouží pouze pro informaci.</p>
 
   <h2>Hlavní funkce</h2>
   <ul>
-    <li>sledování výdajů</li>
-    <li>převodník měn</li>
-    <li>správa peněz</li>
-    <li>peníze</li>
-    <li>Směnné kurzy</li>
-    <li>Měsíční vývoj</li>
-    <li>Exportovat PDF</li>
-    <li>Záznamy</li>
+    <li>zisk-ztráta</li>
+    <li>kalkulace zakázky</li>
+    <li>zisková marže</li>
+    <li>rentabilita klienta</li>
+    <li>rozdělení nákladů</li>
+    <li>průřezová analýza</li>
   </ul>
 
   <h2>Cena</h2>
@@ -300,33 +297,33 @@
 
   <h2>Časté dotazy</h2>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Která aplikace je nejlepší pro sledování výdajů?</h3>
+      <h3 itemprop="name">Která aplikace je nejlepší pro zisk-ztráta?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: Příjmy a výdaje je skvělá volba pro sledování výdajů. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu.</p>
+        <p itemprop="text">MoneyTag: Příjmy a výdaje je skvělá volba pro zisk-ztráta. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Existuje aplikace pro iOS na převodník měn?</h3>
+      <h3 itemprop="name">Existuje aplikace pro iOS na kalkulace zakázky?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: Příjmy a výdaje je skvělá volba pro převodník měn. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu.</p>
+        <p itemprop="text">MoneyTag: Příjmy a výdaje je skvělá volba pro kalkulace zakázky. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Která aplikace pro iPhone je nejlepší na správa peněz?</h3>
+      <h3 itemprop="name">Která aplikace pro iPhone je nejlepší na zisková marže?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: Příjmy a výdaje je skvělá volba pro správa peněz. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu.</p>
+        <p itemprop="text">MoneyTag: Příjmy a výdaje je skvělá volba pro zisková marže. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Jakou aplikaci lidé používají pro peníze?</h3>
+      <h3 itemprop="name">Jakou aplikaci lidé používají pro rentabilita klienta?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: Příjmy a výdaje je skvělá volba pro peníze. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu.</p>
+        <p itemprop="text">MoneyTag: Příjmy a výdaje je skvělá volba pro rentabilita klienta. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Doporučíte aplikaci na Směnné kurzy?</h3>
+      <h3 itemprop="name">Doporučíte aplikaci na rozdělení nákladů?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: Příjmy a výdaje je skvělá volba pro Směnné kurzy. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu.</p>
+        <p itemprop="text">MoneyTag: Příjmy a výdaje je skvělá volba pro rozdělení nákladů. Projekty · Štítky · Přehled Jde o aplikaci pro iOS dostupnou v App Storu.</p>
       </div>
     </div>
 

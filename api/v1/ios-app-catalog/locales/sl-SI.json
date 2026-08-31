@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "sl-SI",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -53,7 +53,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: Datoteke v AI poziv",
       "summary": "Boljši kontekst. Boljši odgovori.",
       "category": "productivity",
       "search_terms": [
@@ -130,7 +130,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: Test angleščine",
       "summary": "Razumevanje angleščine je le del izziva. Drugi del je ohraniti natančnost, ko se čas izteka. Aim990 Plus je intenzivna vadba poslušanja in branja za odrasle na napravah iPhone in iPad. Glavna vadba ima jasen potek: 8 vprašanj za ogrevanje, nato Pressure Set z 20 nalogami in omejitvijo 15 minut, na koncu pa Mistake Replay, kjer se vrnete samo k odgovorom, ki so vam povzročili težave.",
       "category": "kids",
       "search_terms": [
@@ -442,7 +442,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: Stroški in proračun",
       "summary": "G+Money združuje dva nepogrešljiva orodja — izjemno hiter pretvornik valut in čudovit sledilec stroškov — zasnovan za vsakdan in potovanja. Popolnoma brez povezave. Popolnoma zasebno.",
       "category": "finance",
       "search_terms": [
@@ -500,7 +500,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: Potni stroški",
       "summary": "G+Money Lite — Pametna potovalna valuta in sledilnik stroškov",
       "category": "finance",
       "search_terms": [
@@ -536,7 +536,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: Koliko ur dela",
       "summary": "HoursTag Lite - Oglejte si pravo ceno stvari",
       "category": "finance",
       "search_terms": [
@@ -635,7 +635,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: Blokada in fokus",
       "summary": "Ustavite aplikacije, ki kradejo vaš čas, in si povrnite osredotočenost.",
       "category": "productivity",
       "search_terms": [
@@ -1284,7 +1284,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: Odstrani podatke",
       "summary": "Delite varno, brez izgube koristnega konteksta. Mask My File poišče osebne podatke, preden pošljete datoteko, trajno prekrije, kar izberete, nato pa novo datoteko znova odpre in preveri, preden pokaže oznako Private Ready.",
       "category": "photo-utility",
       "search_terms": [
@@ -1411,12 +1411,12 @@
       "summary": "Vsak projekt vodi svoje knjige: prihodki minus stroški dajo njegov neto izid. Tu so vprašanja, ki jih dobimo najpogosteje. Če vašega ni med njimi, nam pišite — vsako sporočilo prebere resnična oseba.",
       "category": "finance",
       "search_terms": [
-        "sledenje stroškom",
-        "pretvornik valut",
-        "menjalni tečaj",
-        "upravljanje denarja",
-        "Varnostna kopija & obnova",
-        "Neto"
+        "poslovni izid",
+        "obračun naročila",
+        "stopnja dobička",
+        "donosnost stranke",
+        "delitev stroškov",
+        "presečna analiza"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1485,7 +1485,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: Filmski filtri",
       "summary": "PhotoCream Pro spremeni vaš telefon v vrhunski filmski fotoaparat in profesionalni foto studio. Ujemite avtentične analogne videze v realnem času, nato pa natančno prilagodite vsak detajl — vse na napravi, brez naročnine, brez oglasov.",
       "category": "photo-utility",
       "search_terms": [
@@ -1545,7 +1545,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: Čiščenje slik",
       "summary": "Osvobodite gigabajte prostora z brisanjem nepotrebnih slik — duplikatov, posnetkov zaslona, zamegljenih slik in velikih videov.",
       "category": "photo-utility",
       "search_terms": [
@@ -1823,7 +1823,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: Slika za osebno",
       "summary": "Snapport Lite - Ustvari potniške, vizumske in dokumentne fotografije s pomočjo usmerjenega merjenja, orodij za ozadje in izvoza, pripravljenega za tisk.",
       "category": "photo-utility",
       "search_terms": [
@@ -2056,7 +2056,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: Diagnoza omrežja",
       "summary": "Odkrijte najverjetnejši vzrok težave z neodvisnimi preverjanji DNS, TCP, TLS, časovnih zamikov in stabilnosti. Enkratno plačilo — brez naročnine, oglasov ali sledenja.",
       "category": "photo-utility",
       "search_terms": [

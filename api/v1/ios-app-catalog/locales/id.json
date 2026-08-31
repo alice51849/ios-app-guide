@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "id",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -54,7 +54,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: File jadi prompt AI",
       "summary": "Konteks lebih baik. Jawaban lebih baik.",
       "category": "productivity",
       "search_terms": [
@@ -129,7 +129,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: Tes Inggris",
       "summary": "Latih kemampuan bahasa Inggris dalam kondisi yang terasa nyata: waktu terbatas, rangkaian soal panjang, dan tuntutan untuk tetap teliti. Aim990 Plus dirancang bagi pelajar dan pekerja dewasa yang ingin membangun daya tahan menyimak serta membaca di iPhone dan iPad, bukan sekadar mengerjakan soal satu per satu tanpa arah.",
       "category": "kids",
       "search_terms": [
@@ -433,7 +433,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: Catat & atur anggaran",
       "summary": "G+Money membuat pencatatan uang harian terasa ringan. Catat pengeluaran berdasarkan kategori, perjalanan, atau acara, atur anggaran harian, lalu lihat ke mana uangmu pergi.",
       "category": "finance",
       "search_terms": [
@@ -489,7 +489,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: Biaya perjalanan",
       "summary": "G+Money Lite — Pelacak mata uang perjalanan & pengeluaran yang cerdas",
       "category": "finance",
       "search_terms": [
@@ -526,7 +526,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: Harga dalam jam",
       "summary": "HoursTag Lite - Lihat harga sebenarnya dari barang",
       "category": "finance",
       "search_terms": [
@@ -624,7 +624,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: Blokir aplikasi",
       "summary": "Jaga jam terbaikmu untuk hal yang penting. LockHour Pro membantu memulai sesi fokus yang tenang, mengurangi distraksi ponsel, dan membangun kebiasaan produktif tanpa kerumitan. Cocok untuk belajar, menulis, merencanakan, dan kerja mendalam.",
       "category": "productivity",
       "search_terms": [
@@ -1272,7 +1272,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: Hapus data Anda",
       "summary": "Berbagi dengan aman tanpa kehilangan konteks yang berguna. Mask My File menemukan detail pribadi sebelum Anda mengirim berkas, menutupnya secara permanen sesuai pilihan Anda, lalu membuka ulang dan memeriksa berkas baru sebelum menampilkan Private Ready.",
       "category": "photo-utility",
       "search_terms": [
@@ -1401,12 +1401,13 @@
       "summary": "Pemasukan & Pengeluaran",
       "category": "finance",
       "search_terms": [
-        "keuangan",
-        "konverter mata uang",
-        "pencatat pengeluaran",
-        "Tren bulanan",
-        "Cadangkan & pulihkan",
-        "Bisa dikurangkan"
+        "P&L",
+        "biaya pekerjaan",
+        "margin keuntungan",
+        "profitabilitas klien",
+        "rincian ongkos",
+        "analisis silang",
+        "buku usaha"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1475,7 +1476,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: Filter film",
       "summary": "Rasakan pengalaman fotografi retro dengan PhotoCream Pro, aplikasi kamera film premium yang menawarkan lebih dari 100 filter analog autentik dan pratinjau langsung. Nikmati juga editor foto pro yang dilengkapi dengan fitur kecantikan pemisahan frekuensi untuk kulit, perbaikan wajah/tubuh, serta penyesuaian cahaya/warna/kurva. Beli sekali, tanpa langganan, tanpa iklan, dan sepenuhnya pribadi. Cocok untuk iPhone & iPad, dan tersedia dalam 22 bahasa. Abadikan momen dengan gaya klasik dan edit foto Anda dengan sentuhan profesional. Segera unduh dan ubah cara Anda mengambil serta mengedit foto!",
       "category": "photo-utility",
       "search_terms": [
@@ -1531,7 +1532,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: Bersihkan foto",
       "summary": "Dapatkan kembali bergiga-giga ruang dengan menyingkirkan foto yang tidak lagi diperlukan: duplikat, tangkapan layar lama, foto buram, dan video besar.",
       "category": "photo-utility",
       "search_terms": [
@@ -1820,7 +1821,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: Buat pasfoto",
       "summary": "Snapport Lite - Buat foto paspor, visa, dan kartu identitas dengan panduan ukuran, latar, dan cetak.",
       "category": "photo-utility",
       "search_terms": [
@@ -2054,7 +2055,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: Temukan masalah WiFi",
       "summary": "Temukan penyebab paling mungkin lewat pemeriksaan jalur, DNS, TCP, TLS, waktu, dan kestabilan. Sekali bayar di muka, tanpa langganan, iklan, atau pelacakan.",
       "category": "photo-utility",
       "search_terms": [

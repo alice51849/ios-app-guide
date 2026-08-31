@@ -8,7 +8,7 @@
 <!-- guide-design:end -->
 <title>MoneyTag: ଆୟ ଓ ବ୍ୟୟ — ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ | iOS App</title>
 <meta name="description" content="ଆୟ ଓ ବ୍ୟୟ">
-<meta name="keywords" content="ଖର୍ଚ୍ଚ ଟ୍ରାକର, ମୁଦ୍ରା ରୂପାନ୍ତର, ବ୍ୟକ୍ତିଗତ ଅର୍ଥ, ବିନିମୟ ହାର, ମାସିକ ଧାରା, ବ୍ୟାକଅପ୍ &amp; ପୁନରୁଦ୍ଧାର, ନିର୍ୟାତ PDF">
+<meta name="keywords" content="P&amp;L, job costing, profit margin, ଗ୍ରାହକର ଲାଭଦାୟକତା, cost allocation, ଫ୍ରିଲାନ୍ସ ହିସାବ, multi tag analysis">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/or-IN/moneytag.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6801956402">
@@ -134,19 +134,19 @@
   "name": "MoneyTag: ଆୟ ଓ ବ୍ୟୟ",
   "operatingSystem": "iOS",
   "applicationCategory": "FinanceApplication",
-  "description": "ଆୟ ଓ ବ୍ୟୟ\n\nପ୍ରତ୍ୟେକ ପ୍ରୋଜେକ୍ଟର ନିଜର ହିସାବ ଅଲଗା ରହେ: ଆୟରୁ ବ୍ୟୟ ବାଦ ଦେଲେ ଯାହା ରହେ, ତାହା ହିଁ ସେହି ପ୍ରୋଜେକ୍ଟର ନିଟ ପରିମାଣ। ସବୁଠାରୁ ଅଧିକ ପଚରାଯାଉଥିବା ପ୍ରଶ୍ନ ଏଠାରେ ଅଛି। ଉତ୍ତର ନ ମିଳିଲେ ଲେଖନ୍ତୁ — ପ୍ରତ୍ୟେକ ବାର୍ତ୍ତା ଜଣେ ପ୍ରକୃତ ବ୍ୟକ୍ତି ପଢ଼ନ୍ତି।\n\n• ପ୍ରତ୍ୟେକ ପ୍ରୋଜେକ୍ଟର ନିଜସ୍ୱ ନିଟ ପରିମାଣ\n• ସବୁ ପ୍ରୋଜେକ୍ଟରେ ଟ୍ୟାଗର ମୋଟ ହିସାବ\n• ଗୋଟିଏ ପ୍ରୋଜେକ୍ଟ ପାଇଁ ଗୋଟିଏ ମୁଦ୍ରା\n• ଜୀବନ୍ତ କିମ୍ବା ହାତେ ଦର\n• Apple Watch ଆପ୍\n• ହୋମ ଓ ଲକ ସ୍କ୍ରିନ ୱିଜେଟ\n\nପ୍ରୋଜେକ୍ଟ ପ୍ରକୃତରେ କ'ଣ?\nପ୍ରୋଜେକ୍ଟ ହେଉଛି ନିଜେ ସମ୍ପୂର୍ଣ୍ଣ ଏକ ହିସାବ ଖାତା: ନିଜର କାରବାର, ନିଜର ମୁଦ୍ରା ଏବଂ ନିଜର ଶେଷ ଫଳାଫଳ। MoneyTag ସେହି ପ୍ରୋଜେକ୍ଟର ଆୟ ଯୋଡ଼େ, ବ୍ୟୟ ବାଦ ଦିଏ ଏବଂ କେବଳ ତାହାରି ନିଟ ପରିମାଣ ଦେଖାଏ।\n\nMoneyTag ମୁଦ୍ରା ପରିବର୍ତ୍ତନ କରେ କି?\nପ୍ରତ୍ୟେକ ପ୍ରୋଜେକ୍ଟର ନିଜସ୍ୱ ମୂଳ ମୁଦ୍ରା ରହେ। ହୋମ୍ ସ୍କ୍ରିନ୍‌ରେ ଇନପୁଟ୍ ମୁଦ୍ରାକୁ ସିଧାସଳଖ ବାଛିପାରିବେ। MoneyTag ପ୍ରାୟ ପ୍ରତି 6 ଘଣ୍ଟାରେ ସାର୍ବଜନୀନ ବିନିମୟ ହାର ଅପଡେଟ୍ କରେ; ଆପଣ ମାନୁଆଲ୍ ହାର ସେଟ୍ କରି ପରେ ପୁଣି ସ୍ୱୟଂଚାଳିତ ମୋଡ୍‌କୁ ଫେରିପାରିବେ। ରୂପାନ୍ତରିତ ରାଶି ପ୍ରୋଜେକ୍ଟର ମୂଳ ମୁଦ୍ରାରେ ସଞ୍ଚୟ ହୁଏ, ଏବଂ ସଞ୍ଚିତ ହାର ଅଫଲାଇନ୍‌ରେ ମଧ୍ୟ ଉପଲବ୍ଧ ରହେ। ସନ୍ଦର୍ଭ ଦର Frankfurter କିମ୍ବା ExchangeRate-API ଦ୍ୱାରା ପ୍ରଦାନ କରାଯାଏ; କେବଳ ସୂଚନା ପାଇଁ।\n\nଟ୍ୟାଗ କିପରି କାମ କରେ?\nMoneyTag ରେ ଟ୍ୟାଗ ମୁଖ୍ୟ ସୁବିଧା, ପରେ ଯୋଡ଼ାଯାଇଥିବା ଜିନିଷ ନୁହେଁ। ଯେକୌଣସି ଆୟ କିମ୍ବା ବ୍ୟୟରେ ଟ୍ୟାଗ ଲଗାନ୍ତୁ, ଆଉ ଟ୍ୟାଗ ସ୍କ୍ରିନ ସେହି ଟ୍ୟାଗର ହିସାବ ଆପଣଙ୍କ ସବୁ ପ୍ରୋଜେକ୍ଟରେ ଏକାଠି ଦେଖାଇବ — ଆୟ, ବ୍ୟୟ ଏବଂ ସେହି ଟ୍ୟାଗର ନିଟ ପରିମାଣ। ପ୍ରୋଜେକ୍ଟ ମଧ୍ୟରେ ଟ୍ୟାଗ ବିଶ୍ଳେଷଣ Lifetime Pro ର ଅଂଶ।\n\nମାଗଣାରେ କ'ଣ ମିଳେ ଓ Lifetime Pro କ'ଣ ଯୋଡ଼େ?\nମାଗଣା · 1 ପ୍ରକଳ୍ପ · 5 ନଥି ବାକି. ଅସୀମିତ ପ୍ରକଳ୍ପ, ଟ୍ୟାଗ ଓ ରିପୋର୍ଟ — ଥରେ କିଣନ୍ତୁ, ସବୁଦିନ ପାଇଁ।. ନିର୍ୟାତ CSV · ନିର୍ୟାତ PDF · ଛବି ନିର୍ୟାତ କରନ୍ତୁ · ବ୍ୟାକଅପ୍ & ପୁନରୁଦ୍ଧାର.\n\nApple Watch ଆପ୍ ଓ ୱିଜେଟ କ'ଣ ଦେଖାଏ?\nୱାଚ ଆପ୍ ହାତବନ୍ଧରୁ ହିଁ ଏକ କାରବାର ଯୋଡ଼ିବାକୁ ଦିଏ ଏବଂ ବର୍ତ୍ତମାନର ପ୍ରୋଜେକ୍ଟର ଆୟ, ବ୍ୟୟ ଓ ନିଟ ପରିମାଣ ଦେଖାଏ। ୱିଜେଟଗୁଡ଼ିକ ସେହି ସ୍ଥିତି ହୋମ ସ୍କ୍ରିନ ଓ ଲକ ସ୍କ୍ରିନରେ ଦେଖାନ୍ତି। ପ୍ରୋଜେକ୍ଟ, କାରବାର, ରାଶି, ଟିପ୍ପଣୀ, ଟ୍ୟାଗ୍, ବର୍ଗ ଓ ସେଟିଂ MoneyTagର ଡିଭାଇସ୍ ସ୍ଟୋରେଜ୍‌ରେ ରହେ ଏବଂ Frankfurter / ExchangeRate-APIକୁ ପଠାଯାଏ ନାହିଁ।\n\nମୋର ହିସାବ କିପରି ଏକ୍ସପୋର୍ଟ କରିବି କିମ୍ବା ଅନ୍ୟ ଡିଭାଇସକୁ ନେବି?\nନିର୍ୟାତ CSV · ନିର୍ୟାତ PDF · ଛବି ନିର୍ୟାତ କରନ୍ତୁ · ବ୍ୟାକଅପ୍ & ପୁନରୁଦ୍ଧାର. ପ୍ରକଳ୍ପ, ଏଣ୍ଟ୍ରି, ଟ୍ୟାଗ ଓ ସେଟିଂସ ଅନ୍ତର୍ଭୁକ୍ତ।.\n\nପ୍ରୋଜେକ୍ଟ, କାରବାର, ରାଶି, ଟିପ୍ପଣୀ, ଟ୍ୟାଗ୍, ବର୍ଗ ଓ ସେଟିଂ MoneyTagର ଡିଭାଇସ୍ ସ୍ଟୋରେଜ୍‌ରେ ରହେ ଏବଂ Frankfurter / ExchangeRate-APIକୁ ପଠାଯାଏ ନାହିଁ। ସ୍ୱୟଂଚାଳିତ ଦର ଚାଲୁ ଥିଲେ MoneyTag ତିନି ଅକ୍ଷରର ମୂଳ ମୁଦ୍ରା କୋଡ୍ ଓ ଆବଶ୍ୟକ ନେଟୱର୍କ ଅନୁରୋଧ api.frankfurter.dev / open.er-api.comକୁ ପଠାଏ। Frankfurter / ExchangeRate-APIର Cloudflare ଭିତ୍ତିଭୂମି IP ଠିକଣା, ଆନୁମାନିକ ଅଞ୍ଚଳ, ପାରସ୍ପରିକ ତଥ୍ୟ ଓ ଡାୟାଗ୍ନୋଷ୍ଟିକ୍ ସୂଚନା ପ୍ରକ୍ରିୟା କରିପାରେ। ଏହି ପ୍ରକ୍ରିୟା App କାର୍ଯ୍ୟ ଓ ବିଶ୍ଳେଷଣ ପାଇଁ, ଆପଣଙ୍କ ସହ ଯୋଡ଼ାଯାଇପାରେ, ଟ୍ରାକିଂ ପାଇଁ ବ୍ୟବହୃତ ହୁଏ ନାହିଁ ଏବଂ ବିଜ୍ଞାପନ ନାହିଁ। ଏହି ଅନୁରୋଧ ଏଡ଼ାଇବାକୁ ସ୍ୱୟଂଚାଳିତ ଦର ବନ୍ଦ କରି ମାନୁଆଲ୍ ଦର ବ୍ୟବହାର କରନ୍ତୁ। ସନ୍ଦର୍ଭ ଦର Frankfurter କିମ୍ବା ExchangeRate-API ଦ୍ୱାରା ପ୍ରଦାନ କରାଯାଏ; କେବଳ ସୂଚନା ପାଇଁ।",
+  "description": "ଆୟ ଓ ବ୍ୟୟ\n\nପ୍ରତ୍ୟେକ ପ୍ରୋଜେକ୍ଟର ନିଜର ହିସାବ ଅଲଗା ରହେ: ଆୟରୁ ବ୍ୟୟ ବାଦ ଦେଲେ ଯାହା ରହେ, ତାହା ହିଁ ସେହି ପ୍ରୋଜେକ୍ଟର ନିଟ ପରିମାଣ। ସବୁଠାରୁ ଅଧିକ ପଚରାଯାଉଥିବା ପ୍ରଶ୍ନ ଏଠାରେ ଅଛି। ଉତ୍ତର ନ ମିଳିଲେ ଲେଖନ୍ତୁ — ପ୍ରତ୍ୟେକ ବାର୍ତ୍ତା ଜଣେ ପ୍ରକୃତ ବ୍ୟକ୍ତି ପଢ଼ନ୍ତି।\n\n• iPhone ଓ iPad ରେ ସମାନ ଖାତା\n• ପ୍ରତ୍ୟେକ ପ୍ରୋଜେକ୍ଟର ନିଜସ୍ୱ ନିଟ ପରିମାଣ\n• ସବୁ ପ୍ରୋଜେକ୍ଟରେ ଟ୍ୟାଗର ମୋଟ ହିସାବ\n• ଗୋଟିଏ ପ୍ରୋଜେକ୍ଟ ପାଇଁ ଗୋଟିଏ ମୁଦ୍ରା\n• ଜୀବନ୍ତ କିମ୍ବା ହାତେ ଦର\n• Apple Watch ଆପ୍\n• ହୋମ ଓ ଲକ ସ୍କ୍ରିନ ୱିଜେଟ\n\nପ୍ରୋଜେକ୍ଟ ପ୍ରକୃତରେ କ'ଣ?\nପ୍ରୋଜେକ୍ଟ ହେଉଛି ନିଜେ ସମ୍ପୂର୍ଣ୍ଣ ଏକ ହିସାବ ଖାତା: ନିଜର କାରବାର, ନିଜର ମୁଦ୍ରା ଏବଂ ନିଜର ଶେଷ ଫଳାଫଳ। MoneyTag ସେହି ପ୍ରୋଜେକ୍ଟର ଆୟ ଯୋଡ଼େ, ବ୍ୟୟ ବାଦ ଦିଏ ଏବଂ କେବଳ ତାହାରି ନିଟ ପରିମାଣ ଦେଖାଏ।\n\nMoneyTag ମୁଦ୍ରା ପରିବର୍ତ୍ତନ କରେ କି?\nପ୍ରତ୍ୟେକ ପ୍ରୋଜେକ୍ଟର ନିଜସ୍ୱ ମୂଳ ମୁଦ୍ରା ରହେ। ହୋମ୍ ସ୍କ୍ରିନ୍‌ରେ ଇନପୁଟ୍ ମୁଦ୍ରାକୁ ସିଧାସଳଖ ବାଛିପାରିବେ। MoneyTag ପ୍ରାୟ ପ୍ରତି 6 ଘଣ୍ଟାରେ ସାର୍ବଜନୀନ ବିନିମୟ ହାର ଅପଡେଟ୍ କରେ; ଆପଣ ମାନୁଆଲ୍ ହାର ସେଟ୍ କରି ପରେ ପୁଣି ସ୍ୱୟଂଚାଳିତ ମୋଡ୍‌କୁ ଫେରିପାରିବେ। ରୂପାନ୍ତରିତ ରାଶି ପ୍ରୋଜେକ୍ଟର ମୂଳ ମୁଦ୍ରାରେ ସଞ୍ଚୟ ହୁଏ, ଏବଂ ସଞ୍ଚିତ ହାର ଅଫଲାଇନ୍‌ରେ ମଧ୍ୟ ଉପଲବ୍ଧ ରହେ। ସନ୍ଦର୍ଭ ଦର Frankfurter କିମ୍ବା ExchangeRate-API ଦ୍ୱାରା ପ୍ରଦାନ କରାଯାଏ; କେବଳ ସୂଚନା ପାଇଁ।\n\nଟ୍ୟାଗ କିପରି କାମ କରେ?\nMoneyTag ରେ ଟ୍ୟାଗ ମୁଖ୍ୟ ସୁବିଧା, ପରେ ଯୋଡ଼ାଯାଇଥିବା ଜିନିଷ ନୁହେଁ। ଯେକୌଣସି ଆୟ କିମ୍ବା ବ୍ୟୟରେ ଟ୍ୟାଗ ଲଗାନ୍ତୁ, ଆଉ ଟ୍ୟାଗ ସ୍କ୍ରିନ ସେହି ଟ୍ୟାଗର ହିସାବ ଆପଣଙ୍କ ସବୁ ପ୍ରୋଜେକ୍ଟରେ ଏକାଠି ଦେଖାଇବ — ଆୟ, ବ୍ୟୟ ଏବଂ ସେହି ଟ୍ୟାଗର ନିଟ ପରିମାଣ। ପ୍ରୋଜେକ୍ଟ ମଧ୍ୟରେ ଟ୍ୟାଗ ବିଶ୍ଳେଷଣ Lifetime Pro ର ଅଂଶ।\n\nମାଗଣାରେ କ'ଣ ମିଳେ ଓ Lifetime Pro କ'ଣ ଯୋଡ଼େ?\nମାଗଣା · 1 ପ୍ରକଳ୍ପ · 5 ନଥି ବାକି. ଅସୀମିତ ପ୍ରକଳ୍ପ, ଟ୍ୟାଗ ଓ ରିପୋର୍ଟ — ଥରେ କିଣନ୍ତୁ, ସବୁଦିନ ପାଇଁ।. ନିର୍ୟାତ CSV · ନିର୍ୟାତ PDF · ଛବି ନିର୍ୟାତ କରନ୍ତୁ · ବ୍ୟାକଅପ୍ & ପୁନରୁଦ୍ଧାର.\n\nApple Watch ଆପ୍ ଓ ୱିଜେଟ କ'ଣ ଦେଖାଏ?\nୱାଚ ଆପ୍ ହାତବନ୍ଧରୁ ହିଁ ଏକ କାରବାର ଯୋଡ଼ିବାକୁ ଦିଏ ଏବଂ ବର୍ତ୍ତମାନର ପ୍ରୋଜେକ୍ଟର ଆୟ, ବ୍ୟୟ ଓ ନିଟ ପରିମାଣ ଦେଖାଏ। ୱିଜେଟଗୁଡ଼ିକ ସେହି ସ୍ଥିତି ହୋମ ସ୍କ୍ରିନ ଓ ଲକ ସ୍କ୍ରିନରେ ଦେଖାନ୍ତି। ପ୍ରୋଜେକ୍ଟ, କାରବାର, ରାଶି, ଟିପ୍ପଣୀ, ଟ୍ୟାଗ୍, ବର୍ଗ ଓ ସେଟିଂ MoneyTagର ଡିଭାଇସ୍ ସ୍ଟୋରେଜ୍‌ରେ ରହେ ଏବଂ Frankfurter / ExchangeRate-APIକୁ ପଠାଯାଏ ନାହିଁ। iCloud ସିଙ୍କ୍ ଚାଲୁ ଥିଲେ ଗୋଟିଏ ନକଲ ଆପଣଙ୍କ ନିଜ iCloud ରେ ମଧ୍ୟ ରହେ।\n\nମୋର ହିସାବ କିପରି ଏକ୍ସପୋର୍ଟ କରିବି କିମ୍ବା ଅନ୍ୟ ଡିଭାଇସକୁ ନେବି?\nନିର୍ୟାତ CSV · ନିର୍ୟାତ PDF · ଛବି ନିର୍ୟାତ କରନ୍ତୁ · ବ୍ୟାକଅପ୍ & ପୁନରୁଦ୍ଧାର. ପ୍ରକଳ୍ପ, ଏଣ୍ଟ୍ରି, ଟ୍ୟାଗ ଓ ସେଟିଂସ ଅନ୍ତର୍ଭୁକ୍ତ।.\n\nପ୍ରୋଜେକ୍ଟ, କାରବାର, ରାଶି, ଟିପ୍ପଣୀ, ଟ୍ୟାଗ୍, ବର୍ଗ ଓ ସେଟିଂ MoneyTagର ଡିଭାଇସ୍ ସ୍ଟୋରେଜ୍‌ରେ ରହେ ଏବଂ Frankfurter / ExchangeRate-APIକୁ ପଠାଯାଏ ନାହିଁ। iCloud ସିଙ୍କ୍ ଚାଲୁ ଥିଲେ ଗୋଟିଏ ନକଲ ଆପଣଙ୍କ ନିଜ iCloud ରେ ମଧ୍ୟ ରହେ। ସ୍ୱୟଂଚାଳିତ ଦର ଚାଲୁ ଥିଲେ MoneyTag ତିନି ଅକ୍ଷରର ମୂଳ ମୁଦ୍ରା କୋଡ୍ ଓ ଆବଶ୍ୟକ ନେଟୱର୍କ ଅନୁରୋଧ api.frankfurter.dev / open.er-api.comକୁ ପଠାଏ। Frankfurter / ExchangeRate-APIର Cloudflare ଭିତ୍ତିଭୂମି IP ଠିକଣା, ଆନୁମାନିକ ଅଞ୍ଚଳ, ପାରସ୍ପରିକ ତଥ୍ୟ ଓ ଡାୟାଗ୍ନୋଷ୍ଟିକ୍ ସୂଚନା ପ୍ରକ୍ରିୟା କରିପାରେ। ଏହି ପ୍ରକ୍ରିୟା App କାର୍ଯ୍ୟ ଓ ବିଶ୍ଳେଷଣ ପାଇଁ, ଆପଣଙ୍କ ସହ ଯୋଡ଼ାଯାଇପାରେ, ଟ୍ରାକିଂ ପାଇଁ ବ୍ୟବହୃତ ହୁଏ ନାହିଁ ଏବଂ ବିଜ୍ଞାପନ ନାହିଁ। ଏହି ଅନୁରୋଧ ଏଡ଼ାଇବାକୁ ସ୍ୱୟଂଚାଳିତ ଦର ବନ୍ଦ କରି ମାନୁଆଲ୍ ଦର ବ୍ୟବହାର କରନ୍ତୁ। ସନ୍ଦର୍ଭ ଦର Frankfurter କିମ୍ବା ExchangeRate-API ଦ୍ୱାରା ପ୍ରଦାନ କରାଯାଏ; କେବଳ ସୂଚନା ପାଇଁ।",
   "url": "https://apps.apple.com/app/id6801956402",
   "installUrl": "https://apps.apple.com/app/id6801956402",
   "featureList": [
-    "ଖର୍ଚ୍ଚ ଟ୍ରାକର",
-    "ମୁଦ୍ରା ରୂପାନ୍ତର",
-    "ବ୍ୟକ୍ତିଗତ ଅର୍ଥ",
-    "ବିନିମୟ ହାର",
-    "ମାସିକ ଧାରା",
-    "ବ୍ୟାକଅପ୍ & ପୁନରୁଦ୍ଧାର",
-    "ନିର୍ୟାତ PDF"
+    "P&L",
+    "job costing",
+    "profit margin",
+    "ଗ୍ରାହକର ଲାଭଦାୟକତା",
+    "cost allocation",
+    "ଫ୍ରିଲାନ୍ସ ହିସାବ",
+    "multi tag analysis"
   ],
-  "keywords": "ଖର୍ଚ୍ଚ ଟ୍ରାକର, ମୁଦ୍ରା ରୂପାନ୍ତର, ବ୍ୟକ୍ତିଗତ ଅର୍ଥ, ବିନିମୟ ହାର, ମାସିକ ଧାରା, ବ୍ୟାକଅପ୍ & ପୁନରୁଦ୍ଧାର, ନିର୍ୟାତ PDF",
+  "keywords": "P&L, job costing, profit margin, ଗ୍ରାହକର ଲାଭଦାୟକତା, cost allocation, ଫ୍ରିଲାନ୍ସ ହିସାବ, multi tag analysis",
   "@id": "https://apps.apple.com/app/id6801956402",
   "identifier": {
     "@type": "PropertyValue",
@@ -178,42 +178,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "ଖର୍ଚ୍ଚ ଟ୍ରାକର ପାଇଁ ସର୍ବୋତ୍ତମ ଆପ୍ କେଉଁଟି?",
+      "name": "P\u0026L ପାଇଁ ସର୍ବୋତ୍ତମ ଆପ୍ କେଉଁଟି?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: ଆୟ ଓ ବ୍ୟୟ ଖର୍ଚ୍ଚ ଟ୍ରାକର ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।"
+        "text": "MoneyTag: ଆୟ ଓ ବ୍ୟୟ P\u0026L ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।"
       }
     },
     {
       "@type": "Question",
-      "name": "ମୁଦ୍ରା ରୂପାନ୍ତର ପାଇଁ କୌଣସି iOS ଆପ୍ ଅଛି କି?",
+      "name": "job costing ପାଇଁ କୌଣସି iOS ଆପ୍ ଅଛି କି?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: ଆୟ ଓ ବ୍ୟୟ ମୁଦ୍ରା ରୂପାନ୍ତର ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।"
+        "text": "MoneyTag: ଆୟ ଓ ବ୍ୟୟ job costing ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।"
       }
     },
     {
       "@type": "Question",
-      "name": "iPhoneରେ ବ୍ୟକ୍ତିଗତ ଅର୍ଥ ପାଇଁ କେଉଁ ଆପ୍ ଭଲ?",
+      "name": "iPhoneରେ profit margin ପାଇଁ କେଉଁ ଆପ୍ ଭଲ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: ଆୟ ଓ ବ୍ୟୟ ବ୍ୟକ୍ତିଗତ ଅର୍ଥ ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।"
+        "text": "MoneyTag: ଆୟ ଓ ବ୍ୟୟ profit margin ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।"
       }
     },
     {
       "@type": "Question",
-      "name": "ବିନିମୟ ହାର ପାଇଁ ଲୋକେ କେଉଁ ଆପ୍ ବ୍ୟବହାର କରନ୍ତି?",
+      "name": "ଗ୍ରାହକର ଲାଭଦାୟକତା ପାଇଁ ଲୋକେ କେଉଁ ଆପ୍ ବ୍ୟବହାର କରନ୍ତି?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: ଆୟ ଓ ବ୍ୟୟ ବିନିମୟ ହାର ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।"
+        "text": "MoneyTag: ଆୟ ଓ ବ୍ୟୟ ଗ୍ରାହକର ଲାଭଦାୟକତା ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।"
       }
     },
     {
       "@type": "Question",
-      "name": "ମାସିକ ଧାରା ପାଇଁ ଏକ ଆପ୍ ସୁପାରିସ କରିବେ?",
+      "name": "cost allocation ପାଇଁ ଏକ ଆପ୍ ସୁପାରିସ କରିବେ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: ଆୟ ଓ ବ୍ୟୟ ମାସିକ ଧାରା ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।"
+        "text": "MoneyTag: ଆୟ ଓ ବ୍ୟୟ cost allocation ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।"
       }
     }
   ]
@@ -222,7 +222,6 @@
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://alice51849.github.io/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
-<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
@@ -232,6 +231,7 @@
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
 <main>
@@ -243,7 +243,7 @@
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="MoneyTag: ଆୟ ଓ ବ୍ୟୟ">MoneyTag: ଆୟ ଓ ବ୍ୟୟ</strong>
     <p class="iag-decision-card__promise" title="ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ">ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ</p>
-    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="ଖର୍ଚ୍ଚ ଟ୍ରାକର">ଖର୍ଚ୍ଚ ଟ୍ରାକର</span><span class="iag-decision-card__fact" title="ମୁଦ୍ରା ରୂପାନ୍ତର">ମୁଦ୍ରା ରୂପାନ୍ତର</span><span class="iag-decision-card__fact" title="ବ୍ୟକ୍ତିଗତ ଅର୍ଥ">ବ୍ୟକ୍ତିଗତ ଅର୍ଥ</span><span class="iag-decision-card__fact" title="ବିନିମୟ ହାର">ବିନିମୟ ହାର</span></div>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="P&amp;L">P&amp;L</span><span class="iag-decision-card__fact" title="job costing">job costing</span><span class="iag-decision-card__fact" title="profit margin">profit margin</span><span class="iag-decision-card__fact" title="ଗ୍ରାହକର ଲାଭଦାୟକତା">ଗ୍ରାହକର ଲାଭଦାୟକତା</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">ମାଗଣା</data></div>
     <p class="iag-decision-card__terms" title="ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।">ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।</p>
     <a class="iag-decision-card__cta" href="https://apps.apple.com/in/app/id6801956402?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="App Store ରୁ MoneyTag: ଆୟ ଓ ବ୍ୟୟ ପାଆନ୍ତୁ" title="App Store ରୁ MoneyTag: ଆୟ ଓ ବ୍ୟୟ ପାଆନ୍ତୁ">App Store ରୁ MoneyTag: ଆୟ ଓ ବ୍ୟୟ ପାଆନ୍ତୁ</a>
@@ -262,6 +262,7 @@
   <p>MoneyTag: ଆୟ ଓ ବ୍ୟୟ ଏକ iOS ଆପ୍। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ</p>
   <p>ଆୟ ଓ ବ୍ୟୟ</p>
   <p>ପ୍ରତ୍ୟେକ ପ୍ରୋଜେକ୍ଟର ନିଜର ହିସାବ ଅଲଗା ରହେ: ଆୟରୁ ବ୍ୟୟ ବାଦ ଦେଲେ ଯାହା ରହେ, ତାହା ହିଁ ସେହି ପ୍ରୋଜେକ୍ଟର ନିଟ ପରିମାଣ। ସବୁଠାରୁ ଅଧିକ ପଚରାଯାଉଥିବା ପ୍ରଶ୍ନ ଏଠାରେ ଅଛି। ଉତ୍ତର ନ ମିଳିଲେ ଲେଖନ୍ତୁ — ପ୍ରତ୍ୟେକ ବାର୍ତ୍ତା ଜଣେ ପ୍ରକୃତ ବ୍ୟକ୍ତି ପଢ଼ନ୍ତି।</p>
+  <p>• iPhone ଓ iPad ରେ ସମାନ ଖାତା</p>
   <p>• ପ୍ରତ୍ୟେକ ପ୍ରୋଜେକ୍ଟର ନିଜସ୍ୱ ନିଟ ପରିମାଣ</p>
   <p>• ସବୁ ପ୍ରୋଜେକ୍ଟରେ ଟ୍ୟାଗର ମୋଟ ହିସାବ</p>
   <p>• ଗୋଟିଏ ପ୍ରୋଜେକ୍ଟ ପାଇଁ ଗୋଟିଏ ମୁଦ୍ରା</p>
@@ -277,20 +278,20 @@
   <p>ମାଗଣାରେ କ&#x27;ଣ ମିଳେ ଓ Lifetime Pro କ&#x27;ଣ ଯୋଡ଼େ?</p>
   <p>ମାଗଣା · 1 ପ୍ରକଳ୍ପ · 5 ନଥି ବାକି. ଅସୀମିତ ପ୍ରକଳ୍ପ, ଟ୍ୟାଗ ଓ ରିପୋର୍ଟ — ଥରେ କିଣନ୍ତୁ, ସବୁଦିନ ପାଇଁ।. ନିର୍ୟାତ CSV · ନିର୍ୟାତ PDF · ଛବି ନିର୍ୟାତ କରନ୍ତୁ · ବ୍ୟାକଅପ୍ &amp; ପୁନରୁଦ୍ଧାର.</p>
   <p>Apple Watch ଆପ୍ ଓ ୱିଜେଟ କ&#x27;ଣ ଦେଖାଏ?</p>
-  <p>ୱାଚ ଆପ୍ ହାତବନ୍ଧରୁ ହିଁ ଏକ କାରବାର ଯୋଡ଼ିବାକୁ ଦିଏ ଏବଂ ବର୍ତ୍ତମାନର ପ୍ରୋଜେକ୍ଟର ଆୟ, ବ୍ୟୟ ଓ ନିଟ ପରିମାଣ ଦେଖାଏ। ୱିଜେଟଗୁଡ଼ିକ ସେହି ସ୍ଥିତି ହୋମ ସ୍କ୍ରିନ ଓ ଲକ ସ୍କ୍ରିନରେ ଦେଖାନ୍ତି। ପ୍ରୋଜେକ୍ଟ, କାରବାର, ରାଶି, ଟିପ୍ପଣୀ, ଟ୍ୟାଗ୍, ବର୍ଗ ଓ ସେଟିଂ MoneyTagର ଡିଭାଇସ୍ ସ୍ଟୋରେଜ୍‌ରେ ରହେ ଏବଂ Frankfurter / ExchangeRate-APIକୁ ପଠାଯାଏ ନାହିଁ।</p>
+  <p>ୱାଚ ଆପ୍ ହାତବନ୍ଧରୁ ହିଁ ଏକ କାରବାର ଯୋଡ଼ିବାକୁ ଦିଏ ଏବଂ ବର୍ତ୍ତମାନର ପ୍ରୋଜେକ୍ଟର ଆୟ, ବ୍ୟୟ ଓ ନିଟ ପରିମାଣ ଦେଖାଏ। ୱିଜେଟଗୁଡ଼ିକ ସେହି ସ୍ଥିତି ହୋମ ସ୍କ୍ରିନ ଓ ଲକ ସ୍କ୍ରିନରେ ଦେଖାନ୍ତି। ପ୍ରୋଜେକ୍ଟ, କାରବାର, ରାଶି, ଟିପ୍ପଣୀ, ଟ୍ୟାଗ୍, ବର୍ଗ ଓ ସେଟିଂ MoneyTagର ଡିଭାଇସ୍ ସ୍ଟୋରେଜ୍‌ରେ ରହେ ଏବଂ Frankfurter / ExchangeRate-APIକୁ ପଠାଯାଏ ନାହିଁ। iCloud ସିଙ୍କ୍ ଚାଲୁ ଥିଲେ ଗୋଟିଏ ନକଲ ଆପଣଙ୍କ ନିଜ iCloud ରେ ମଧ୍ୟ ରହେ।</p>
   <p>ମୋର ହିସାବ କିପରି ଏକ୍ସପୋର୍ଟ କରିବି କିମ୍ବା ଅନ୍ୟ ଡିଭାଇସକୁ ନେବି?</p>
   <p>ନିର୍ୟାତ CSV · ନିର୍ୟାତ PDF · ଛବି ନିର୍ୟାତ କରନ୍ତୁ · ବ୍ୟାକଅପ୍ &amp; ପୁନରୁଦ୍ଧାର. ପ୍ରକଳ୍ପ, ଏଣ୍ଟ୍ରି, ଟ୍ୟାଗ ଓ ସେଟିଂସ ଅନ୍ତର୍ଭୁକ୍ତ।.</p>
-  <p>ପ୍ରୋଜେକ୍ଟ, କାରବାର, ରାଶି, ଟିପ୍ପଣୀ, ଟ୍ୟାଗ୍, ବର୍ଗ ଓ ସେଟିଂ MoneyTagର ଡିଭାଇସ୍ ସ୍ଟୋରେଜ୍‌ରେ ରହେ ଏବଂ Frankfurter / ExchangeRate-APIକୁ ପଠାଯାଏ ନାହିଁ। ସ୍ୱୟଂଚାଳିତ ଦର ଚାଲୁ ଥିଲେ MoneyTag ତିନି ଅକ୍ଷରର ମୂଳ ମୁଦ୍ରା କୋଡ୍ ଓ ଆବଶ୍ୟକ ନେଟୱର୍କ ଅନୁରୋଧ api.frankfurter.dev / open.er-api.comକୁ ପଠାଏ। Frankfurter / ExchangeRate-APIର Cloudflare ଭିତ୍ତିଭୂମି IP ଠିକଣା, ଆନୁମାନିକ ଅଞ୍ଚଳ, ପାରସ୍ପରିକ ତଥ୍ୟ ଓ ଡାୟାଗ୍ନୋଷ୍ଟିକ୍ ସୂଚନା ପ୍ରକ୍ରିୟା କରିପାରେ। ଏହି ପ୍ରକ୍ରିୟା App କାର୍ଯ୍ୟ ଓ ବିଶ୍ଳେଷଣ ପାଇଁ, ଆପଣଙ୍କ ସହ ଯୋଡ଼ାଯାଇପାରେ, ଟ୍ରାକିଂ ପାଇଁ ବ୍ୟବହୃତ ହୁଏ ନାହିଁ ଏବଂ ବିଜ୍ଞାପନ ନାହିଁ। ଏହି ଅନୁରୋଧ ଏଡ଼ାଇବାକୁ ସ୍ୱୟଂଚାଳିତ ଦର ବନ୍ଦ କରି ମାନୁଆଲ୍ ଦର ବ୍ୟବହାର କରନ୍ତୁ। ସନ୍ଦର୍ଭ ଦର Frankfurter କିମ୍ବା ExchangeRate-API ଦ୍ୱାରା ପ୍ରଦାନ କରାଯାଏ; କେବଳ ସୂଚନା ପାଇଁ।</p>
+  <p>ପ୍ରୋଜେକ୍ଟ, କାରବାର, ରାଶି, ଟିପ୍ପଣୀ, ଟ୍ୟାଗ୍, ବର୍ଗ ଓ ସେଟିଂ MoneyTagର ଡିଭାଇସ୍ ସ୍ଟୋରେଜ୍‌ରେ ରହେ ଏବଂ Frankfurter / ExchangeRate-APIକୁ ପଠାଯାଏ ନାହିଁ। iCloud ସିଙ୍କ୍ ଚାଲୁ ଥିଲେ ଗୋଟିଏ ନକଲ ଆପଣଙ୍କ ନିଜ iCloud ରେ ମଧ୍ୟ ରହେ। ସ୍ୱୟଂଚାଳିତ ଦର ଚାଲୁ ଥିଲେ MoneyTag ତିନି ଅକ୍ଷରର ମୂଳ ମୁଦ୍ରା କୋଡ୍ ଓ ଆବଶ୍ୟକ ନେଟୱର୍କ ଅନୁରୋଧ api.frankfurter.dev / open.er-api.comକୁ ପଠାଏ। Frankfurter / ExchangeRate-APIର Cloudflare ଭିତ୍ତିଭୂମି IP ଠିକଣା, ଆନୁମାନିକ ଅଞ୍ଚଳ, ପାରସ୍ପରିକ ତଥ୍ୟ ଓ ଡାୟାଗ୍ନୋଷ୍ଟିକ୍ ସୂଚନା ପ୍ରକ୍ରିୟା କରିପାରେ। ଏହି ପ୍ରକ୍ରିୟା App କାର୍ଯ୍ୟ ଓ ବିଶ୍ଳେଷଣ ପାଇଁ, ଆପଣଙ୍କ ସହ ଯୋଡ଼ାଯାଇପାରେ, ଟ୍ରାକିଂ ପାଇଁ ବ୍ୟବହୃତ ହୁଏ ନାହିଁ ଏବଂ ବିଜ୍ଞାପନ ନାହିଁ। ଏହି ଅନୁରୋଧ ଏଡ଼ାଇବାକୁ ସ୍ୱୟଂଚାଳିତ ଦର ବନ୍ଦ କରି ମାନୁଆଲ୍ ଦର ବ୍ୟବହାର କରନ୍ତୁ। ସନ୍ଦର୍ଭ ଦର Frankfurter କିମ୍ବା ExchangeRate-API ଦ୍ୱାରା ପ୍ରଦାନ କରାଯାଏ; କେବଳ ସୂଚନା ପାଇଁ।</p>
 
   <h2>ମୁଖ୍ୟ ବୈଶିଷ୍ଟ୍ୟ</h2>
   <ul>
-    <li>ଖର୍ଚ୍ଚ ଟ୍ରାକର</li>
-    <li>ମୁଦ୍ରା ରୂପାନ୍ତର</li>
-    <li>ବ୍ୟକ୍ତିଗତ ଅର୍ଥ</li>
-    <li>ବିନିମୟ ହାର</li>
-    <li>ମାସିକ ଧାରା</li>
-    <li>ବ୍ୟାକଅପ୍ &amp; ପୁନରୁଦ୍ଧାର</li>
-    <li>ନିର୍ୟାତ PDF</li>
+    <li>P&amp;L</li>
+    <li>job costing</li>
+    <li>profit margin</li>
+    <li>ଗ୍ରାହକର ଲାଭଦାୟକତା</li>
+    <li>cost allocation</li>
+    <li>ଫ୍ରିଲାନ୍ସ ହିସାବ</li>
+    <li>multi tag analysis</li>
   </ul>
 
   <h2>ମୂଲ୍ୟ</h2>
@@ -298,33 +299,33 @@
 
   <h2>ବାରମ୍ବାର ପଚରାଯାଉଥିବା ପ୍ରଶ୍ନ</h2>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">ଖର୍ଚ୍ଚ ଟ୍ରାକର ପାଇଁ ସର୍ବୋତ୍ତମ ଆପ୍ କେଉଁଟି?</h3>
+      <h3 itemprop="name">P&amp;L ପାଇଁ ସର୍ବୋତ୍ତମ ଆପ୍ କେଉଁଟି?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: ଆୟ ଓ ବ୍ୟୟ ଖର୍ଚ୍ଚ ଟ୍ରାକର ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।</p>
+        <p itemprop="text">MoneyTag: ଆୟ ଓ ବ୍ୟୟ P&amp;L ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">ମୁଦ୍ରା ରୂପାନ୍ତର ପାଇଁ କୌଣସି iOS ଆପ୍ ଅଛି କି?</h3>
+      <h3 itemprop="name">job costing ପାଇଁ କୌଣସି iOS ଆପ୍ ଅଛି କି?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: ଆୟ ଓ ବ୍ୟୟ ମୁଦ୍ରା ରୂପାନ୍ତର ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।</p>
+        <p itemprop="text">MoneyTag: ଆୟ ଓ ବ୍ୟୟ job costing ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">iPhoneରେ ବ୍ୟକ୍ତିଗତ ଅର୍ଥ ପାଇଁ କେଉଁ ଆପ୍ ଭଲ?</h3>
+      <h3 itemprop="name">iPhoneରେ profit margin ପାଇଁ କେଉଁ ଆପ୍ ଭଲ?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: ଆୟ ଓ ବ୍ୟୟ ବ୍ୟକ୍ତିଗତ ଅର୍ଥ ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।</p>
+        <p itemprop="text">MoneyTag: ଆୟ ଓ ବ୍ୟୟ profit margin ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">ବିନିମୟ ହାର ପାଇଁ ଲୋକେ କେଉଁ ଆପ୍ ବ୍ୟବହାର କରନ୍ତି?</h3>
+      <h3 itemprop="name">ଗ୍ରାହକର ଲାଭଦାୟକତା ପାଇଁ ଲୋକେ କେଉଁ ଆପ୍ ବ୍ୟବହାର କରନ୍ତି?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: ଆୟ ଓ ବ୍ୟୟ ବିନିମୟ ହାର ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।</p>
+        <p itemprop="text">MoneyTag: ଆୟ ଓ ବ୍ୟୟ ଗ୍ରାହକର ଲାଭଦାୟକତା ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">ମାସିକ ଧାରା ପାଇଁ ଏକ ଆପ୍ ସୁପାରିସ କରିବେ?</h3>
+      <h3 itemprop="name">cost allocation ପାଇଁ ଏକ ଆପ୍ ସୁପାରିସ କରିବେ?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: ଆୟ ଓ ବ୍ୟୟ ମାସିକ ଧାରା ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।</p>
+        <p itemprop="text">MoneyTag: ଆୟ ଓ ବ୍ୟୟ cost allocation ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।</p>
       </div>
     </div>
 

@@ -84,7 +84,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/no/app/id6791658210?pt=118326163&ct=iag_data_no&mt=8",
-        "name": "AI Brief",
+        "name": "AI Brief: Filer til AI-prompt",
         "description": "Bedre kontekst. Bedre svar.",
         "seller": {
           "@type": "Organization",
@@ -100,7 +100,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6791658210"
           },
-          "name": "AI Brief",
+          "name": "AI Brief: Filer til AI-prompt",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/no/app/id6791658210?pt=118326163&ct=iag_data_no&mt=8",
@@ -216,7 +216,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-aim990plus",
         "url": "https://apps.apple.com/no/app/id6792483140?pt=118326163&ct=iag_data_no&mt=8",
-        "name": "Aim990 Plus",
+        "name": "Aim990 Plus: Engelsk prøvetest",
         "description": "Aim990 Plus er et komplett treningsverktøy for voksne som vil forstå lest og muntlig engelsk også når tiden er knapp. Dagens tydelige løype starter med 8",
         "seller": {
           "@type": "Organization",
@@ -232,7 +232,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792483140"
           },
-          "name": "Aim990 Plus",
+          "name": "Aim990 Plus: Engelsk prøvetest",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/no/app/id6792483140?pt=118326163&ct=iag_data_no&mt=8",
@@ -744,7 +744,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/no/app/id6793436548?pt=118326163&ct=iag_data_no&mt=8",
-        "name": "G+Money Lite",
+        "name": "G+Money Lite: Reiseutgifter",
         "description": "G+Money Lite — Smart reisevaluta- & utgiftssporer",
         "seller": {
           "@type": "Organization",
@@ -760,7 +760,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6793436548"
           },
-          "name": "G+Money Lite",
+          "name": "G+Money Lite: Reiseutgifter",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
           "url": "https://apps.apple.com/no/app/id6793436548?pt=118326163&ct=iag_data_no&mt=8",
@@ -810,7 +810,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/no/app/id6794039979?pt=118326163&ct=iag_data_no&mt=8",
-        "name": "HoursTag Lite",
+        "name": "HoursTag Lite: Pris i timer",
         "description": "HoursTag Lite - Den virkelige prisen på ting",
         "seller": {
           "@type": "Organization",
@@ -826,7 +826,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6794039979"
           },
-          "name": "HoursTag Lite",
+          "name": "HoursTag Lite: Pris i timer",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
           "url": "https://apps.apple.com/no/app/id6794039979?pt=118326163&ct=iag_data_no&mt=8",
@@ -1668,7 +1668,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/no/app/id6792850916?pt=118326163&ct=iag_data_no&mt=8",
-        "name": "Mask My File",
+        "name": "Mask My File: Fjern dine data",
         "description": "Del trygt uten å miste den nyttige sammenhengen. Mask My File finner personlige opplysninger før du sender en fil, sladder permanent det du velger, og",
         "seller": {
           "@type": "Organization",
@@ -1684,7 +1684,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792850916"
           },
-          "name": "Mask My File",
+          "name": "Mask My File: Fjern dine data",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/no/app/id6792850916?pt=118326163&ct=iag_data_no&mt=8",
@@ -2460,7 +2460,7 @@
         "@type": "Offer",
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/no/app/id6792856304?pt=118326163&ct=iag_data_no&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: Passfoto hjemme",
         "description": "Snapport Lite - Lag pass, visum og dokumentbilder med veiledet størrelse, bakgrunnsverktøy og klar til utskrift eksport.",
         "seller": {
           "@type": "Organization",
@@ -2476,7 +2476,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: Passfoto hjemme",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/no/app/id6792856304?pt=118326163&ct=iag_data_no&mt=8",
@@ -2785,72 +2785,6 @@
     {
       "@type": "ListItem",
       "position": 43,
-      "url": "https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=iag_data_no&mt=8",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-wifiaid",
-        "url": "https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=iag_data_no&mt=8",
-        "name": "WiFi Aid",
-        "description": "Finn den mest sannsynlige årsaken med uavhengige tester av ruter, DNS, TCP, TLS, svartid og stabilitet. Én forhåndsbetaling, uten abonnement, reklame eller",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6790467886",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6790467886"
-          },
-          "name": "WiFi Aid",
-          "operatingSystem": "iOS",
-          "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=iag_data_no&mt=8",
-          "installUrl": "https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=iag_data_no&mt=8",
-          "downloadUrl": "https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=iag_data_no&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=iag_data_no&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/no/wifiaid.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6790467886",
-          "inLanguage": "no",
-          "description": "Finn den mest sannsynlige årsaken med uavhengige tester av ruter, DNS, TCP, TLS, svartid og stabilitet. Én forhåndsbetaling, uten abonnement, reklame eller",
-          "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-wifiaid"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "paid_upfront"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": false
-        },
-        "price": "79",
-        "priceCurrency": "NOK",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "NO"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 44,
       "url": "https://apps.apple.com/no/app/id6793414462?pt=118326163&ct=iag_data_no&mt=8",
       "item": {
         "@type": "Offer",
@@ -2906,6 +2840,72 @@
           "isAccessibleForFree": true
         },
         "price": "0",
+        "priceCurrency": "NOK",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "NO"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 44,
+      "url": "https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=iag_data_no&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-wifiaid",
+        "url": "https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=iag_data_no&mt=8",
+        "name": "WiFi Aid: Finn nettverksfeil",
+        "description": "Finn den mest sannsynlige årsaken med uavhengige tester av ruter, DNS, TCP, TLS, svartid og stabilitet. Én forhåndsbetaling, uten abonnement, reklame eller",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790467886",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790467886"
+          },
+          "name": "WiFi Aid: Finn nettverksfeil",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=iag_data_no&mt=8",
+          "installUrl": "https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=iag_data_no&mt=8",
+          "downloadUrl": "https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=iag_data_no&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=iag_data_no&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/no/wifiaid.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790467886",
+          "inLanguage": "no",
+          "description": "Finn den mest sannsynlige årsaken med uavhengige tester av ruter, DNS, TCP, TLS, svartid og stabilitet. Én forhåndsbetaling, uten abonnement, reklame eller",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-wifiaid"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "79",
         "priceCurrency": "NOK",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

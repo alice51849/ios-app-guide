@@ -2,7 +2,7 @@
 title: "best offline English listening and reading exam trainer for iPhone"
 lang: "pt-BR"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/pt-BR/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"

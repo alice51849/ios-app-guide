@@ -1,15 +1,15 @@
 ---
-title: "HoursTag Lite — Γνωρίστε το πρίσμα αξίας σας | iOS App"
+title: "HoursTag Lite: Τιμή σε ώρες — Γνωρίστε το πρίσμα αξίας σας | iOS App"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/el/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag Lite — Γνωρίστε το πρίσμα αξίας σας | iOS App
+# HoursTag Lite: Τιμή σε ώρες — Γνωρίστε το πρίσμα αξίας σας | iOS App
 
 HoursTag Lite - Δείτε την πραγματική τιμή των πραγμάτων Κάθε αγορά κοστίζει ώρες από τη ζωή σας. Το HoursTag Lite μετατρέπει τις τιμές σε χρόνο εργασίας — ώστε να ξοδεύετε με σαφήνεια. Γνωρίστε το πρίσμα αξίας σας - Κόστος σε χρόνο: Η καθαρή αξία σας ανά ώρα εργασίας - Τύπος: Ανάγκη - Επιθυμία - Παρόρμηση - Το μοτίβο αξίας σας - Πλήρης ανάλυση αξίας - Τι θα κοστίσει ένας στόχος;: Δείτε τη δουλειά πίσω από έναν στόχο — και παρακολουθήστε την πρόοδό σας. - Αντίγραφο ασφαλείας & αποκατάσταση: Περιλαμβάνει εισόδημα, δαπάνες, στόχους και προτιμήσεις. - Widget - Apple Watch Όλα παραμένουν στη συσκευή σας. Κανένας λογαριασμός, καμία παρακολούθηση. Μία πληρωμή · Ισόβια πρόσβαση · Χωρίς συνδρομή Απεριόριστες επιλογές και αλλαγές Απεριόριστοι στόχοι και πρόοδος Κοινοποίηση, ανάλυση και αντίγραφα
 
@@ -22,7 +22,7 @@ HoursTag Lite - Δείτε την πραγματική τιμή των πραγ�
 - Apple Watch
 - App Store · Δωρεάν
 
-[Αποκτήστε το HoursTag Lite από το App Store](https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=iag_data_el&mt=8)
+[Αποκτήστε το HoursTag Lite: Τιμή σε ώρες από το App Store](https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=iag_data_el&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/hourstaglite.html)
 

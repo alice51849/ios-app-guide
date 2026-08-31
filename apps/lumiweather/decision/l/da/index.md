@@ -2,7 +2,7 @@
 title: "bedste vejr-app til forældre, der planlægger udendørs tid med børn"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/da/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

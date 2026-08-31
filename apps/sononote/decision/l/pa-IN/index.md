@@ -2,7 +2,7 @@
 title: "iPhone ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਵੌਇਸ ਨੋਟਸ ਐਪ ਜੋ ਮੀਟਿੰਗਾਂ ਦਾ ਸਾਰ ਸੰਖੇਪ ਕਰਦਾ ਹੈ"
 lang: "pa-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/pa-IN/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

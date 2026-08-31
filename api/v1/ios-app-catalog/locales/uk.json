@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "uk",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -53,7 +53,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: Файли в промпт ШІ",
       "summary": "Кращий контекст. Кращі відповіді.",
       "category": "productivity",
       "search_terms": [
@@ -132,7 +132,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: Тест англійської",
       "summary": "Aim990 Plus — тренажер для дорослих, яким важливо впевнено розуміти англійське мовлення й тексти в умовах обмеженого часу. Застосунок допомагає не просто виконувати завдання, а зберігати концентрацію, обирати відповідь у заданому темпі та відразу перетворювати помилки на матеріал для наступного тренування.",
       "category": "kids",
       "search_terms": [
@@ -441,7 +441,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: Витрати і бюджет",
       "summary": "G+Money робить щоденний облік грошей простим і дружнім. Записуйте витрати за категоріями, подорожами чи подіями, задавайте денний бюджет і одразу бачте, куди йдуть гроші.",
       "category": "finance",
       "search_terms": [
@@ -498,7 +498,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: Витрати в дорозі",
       "summary": "G+Money Lite — Розумний конвертер валют для подорожей та трекер витрат",
       "category": "finance",
       "search_terms": [
@@ -535,7 +535,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: Ціна в годинах",
       "summary": "HoursTag Lite - Побачте справжню ціну речей",
       "category": "finance",
       "search_terms": [
@@ -633,7 +633,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: Ліміт додатків",
       "summary": "Захистіть години, коли ви працюєте найкраще. LockHour Pro допомагає запускати спокійні сесії концентрації, менше відволікатися на телефон і будувати сталі продуктивні звички. Підходить для навчання, письма, планування та глибокої роботи.",
       "category": "productivity",
       "search_terms": [
@@ -1277,7 +1277,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: Видаліть дані",
       "summary": "Діліться безпечно, не втрачаючи потрібного контексту. Mask My File знаходить приватні дані, перш ніж ви надішлете файл, назавжди приховує лише те, що ви оберете, а потім повторно відкриває й перевіряє нову копію, перш ніж показати Private Ready.",
       "category": "photo-utility",
       "search_terms": [
@@ -1404,13 +1404,12 @@
       "summary": "Кожен проєкт веде власну книгу обліку: доходи мінус витрати — це його чистий підсумок. Тут зібрано найчастіші запитання. Якщо вашого немає, напишіть нам — кожен лист читає жива людина.",
       "category": "finance",
       "search_terms": [
-        "конвертер валют",
-        "управління грошима",
-        "гроші",
-        "заощадження",
-        "облік грошей",
-        "Обмінні курси",
-        "Динаміка за місяцями"
+        "прибуток збиток",
+        "позамовна калькуляція",
+        "маржа",
+        "окупність клієнта",
+        "розподіл собівартості",
+        "перехресний зріз"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1478,7 +1477,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: Ретро фільтри",
       "summary": "PhotoCream Pro перетворює iPhone або iPad на теплу плівкову камеру й елегантний фоторедактор. Знімайте ретро-кадри з 100+ аналоговими фільтрами, м’яким зерном і засвітами, а селфі редагуйте природно.",
       "category": "photo-utility",
       "search_terms": [
@@ -1537,7 +1536,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: Очищення фото",
       "summary": "Поверніть гігабайти сховища, прибравши те, що вже не потрібно: дублікати, старі скріншоти, розмиті знімки та великі відео.",
       "category": "photo-utility",
       "search_terms": [
@@ -1822,7 +1821,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: ID-фото вдома",
       "summary": "Snapport Lite - Створюйте фотографії для паспорта, візи та документів з керівництвом по розмірам, інструментами для фону та експортом, готовим до друку.",
       "category": "photo-utility",
       "search_terms": [
@@ -2054,7 +2053,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: Пошук проблем мережі",
       "summary": "Знайдіть найімовірнішу причину за допомогою незалежних перевірок маршрутів, DNS, TCP, TLS, часу відгуку та стабільності. Разова оплата, без підписки, реклами й стеження.",
       "category": "photo-utility",
       "search_terms": [

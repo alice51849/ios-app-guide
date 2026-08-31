@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "he",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -55,7 +55,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: מקבצים לפרומפט AI",
       "summary": "הקשר טוב יותר. תשובות טובות יותר.",
       "category": "productivity",
       "search_terms": [
@@ -139,7 +139,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: מבחן תרגול אנגלית",
       "summary": "תרגול ממוקד להבנת אנגלית מדוברת וכתובה, שנבנה למבוגרים שרוצים לשפר דיוק ומהירות גם כשהשעון מתקתק. במקום לפתור עוד ועוד שאלות בלי כיוון, האפליקציה מחברת בין מפגשים קצרים, סימולציות ארוכות ומשוב שמראה במה כדאי להתמקד בהמשך.",
       "category": "kids",
       "search_terms": [
@@ -457,7 +457,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: הוצאות ותקציב",
       "summary": "G+Money הופך מעקב אחר כסף יומיומי לפשוט ונעים. רשמו הוצאות לפי קטגוריה, נסיעה או אירוע, הגדירו תקציב יומי וראו מיד לאן הכסף הולך.",
       "category": "finance",
       "search_terms": [
@@ -514,7 +514,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: הוצאות טיול",
       "summary": "G+Money Lite — מעקב חכם אחרי מטבעות והוצאות בזמן נסיעות",
       "category": "finance",
       "search_terms": [
@@ -553,7 +553,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: מחיר בשעות",
       "summary": "HoursTag Lite - ראה את המחיר האמיתי של דברים",
       "category": "finance",
       "search_terms": [
@@ -654,7 +654,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: חסימת אפליקציות",
       "summary": "הגנו על השעות הטובות ביותר שלכם. LockHour Pro עוזרת לכם להתחייב לסשנים רגועים של מיקוד, להפחית הסחות דעת מהטלפון ולבנות הרגלי עבודה טובים יותר.",
       "category": "productivity",
       "search_terms": [
@@ -1326,7 +1326,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: מחיקת מידע אישי",
       "summary": "שתפו בבטחה בלי לאבד את ההקשר החשוב. Mask My File מאתר פרטים פרטיים לפני שליחת הקובץ, מסתיר אותם לצמיתות, ואז פותח מחדש את הקובץ שנוצר ומאמת אותו לפני הצגת הסטטוס Private Ready.",
       "category": "photo-utility",
       "search_terms": [
@@ -1463,15 +1463,14 @@
       "summary": "לכל פרויקט יש ספרים משלו: הכנסות פחות הוצאות הן התוצאה נטו שלו. אלה השאלות הנפוצות ביותר; אם לא מצאתם כאן תשובה, כתבו לנו — אדם אמיתי קורא כל הודעה.",
       "category": "finance",
       "search_terms": [
-        "ניהול הוצאות",
-        "שער חליפין",
-        "מחשבון מטבע",
-        "תקציב יומי",
-        "הוצאה",
-        "מגמה חודשית",
-        "גיבוי ושחזור",
-        "ייצוא PDF",
-        "עבודה עצמאית"
+        "רווח והפסד",
+        "תמחיר עבודה",
+        "מרווח גולמי",
+        "רווחיות לקוח",
+        "הקצאת עלויות",
+        "הנהלת חשבונות לעצמאי",
+        "ניתוח רוחבי",
+        "תזרים"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1542,7 +1541,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: פילטרי פילם",
       "summary": "PhotoCream Pro הופך את ה-iPhone או ה-iPad למצלמת פילם חמימה ולעורך תמונות אלגנטי. צלמו מראה רטרו עם יותר מ-100 פילטרים אנלוגיים, גרעיניות עדינה ודליפות אור, ואז עדנו סלפי במראה טבעי.",
       "category": "photo-utility",
       "search_terms": [
@@ -1603,7 +1602,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: ניקוי תמונות",
       "summary": "פנו ג׳יגות של אחסון על ידי הסרת תמונות שכבר אינכם צריכים: כפילויות, צילומי מסך ישנים, תמונות מטושטשות וסרטונים גדולים.",
       "category": "photo-utility",
       "search_terms": [
@@ -1897,7 +1896,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: צלם תמונת דרכון",
       "summary": "Snapport Lite - צור תמונות דרכון, ויזה ומסמכים עם הנחיות לגודל, כלים לרקע וייצוא מוכן להדפסה.",
       "category": "photo-utility",
       "search_terms": [
@@ -2141,7 +2140,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: איתור תקלות רשת",
       "summary": "מצאו את הסיבה הסבירה ביותר בעזרת בדיקות בלתי תלויות של נתיבים, DNS,‏ TCP,‏ TLS, תזמון ויציבות. תשלום מראש פעם אחת, ללא מינוי, פרסומות או מעקב.",
       "category": "photo-utility",
       "search_terms": [

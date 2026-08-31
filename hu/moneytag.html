@@ -8,7 +8,7 @@
 <!-- guide-design:end -->
 <title>MoneyTag — Projektek · Címkék · Jelentés | iOS App</title>
 <meta name="description" content="Bevételek és kiadások">
-<meta name="keywords" content="pénzügyek, kiadáskövető, árfolyam, megtakarítás, Átváltási árfolyamok, Biztonsági mentés és visszaállítás">
+<meta name="keywords" content="P&amp;L, eredménykimutatás, munkaköltség, profitmarzs, ügyféljövedelmezőség, költségfelosztás, keresztelemzés">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/hu/moneytag.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6801956402">
@@ -134,18 +134,19 @@
   "name": "MoneyTag",
   "operatingSystem": "iOS",
   "applicationCategory": "FinanceApplication",
-  "description": "Bevételek és kiadások\n\nMinden projekt külön könyvelést vezet: a bevétel mínusz a kiadás adja a nettó eredményét. Itt vannak a leggyakoribb kérdések. Ha a tiéd nincs köztük, írj nekünk — minden üzenetet ember olvas el.\n\n• Minden projektnek saját nettó eredménye\n• Címkék, amelyek projekteken átívelve összegeznek\n• Projektenként egyetlen pénznem\n• Élő vagy kézi árfolyamok\n• Apple Watch-alkalmazás\n• Widgetek a kezdő- és a zárolási képernyőn\n\nMi is pontosan egy projekt?\nA projekt önmagában zárt könyvelés: saját tételek, saját pénznem és saját eredmény. A MoneyTag összeadja a bevételeket, levonja a kiadásokat, és csak arra a projektre mutatja a nettó eredményt.\n\nÁtvált a MoneyTag pénznemek között?\nMinden projektnek saját alapértelmezett pénzneme van. A kezdőképernyőn közvetlenül kiválaszthatod a bevitel pénznemét. A MoneyTag körülbelül 6 óránként frissíti a nyilvános árfolyamokat; kézi árfolyamot is beállíthatsz, majd később visszakapcsolhatsz automatikusra. Az átváltott összeg a projekt alapértelmezett pénznemében kerül mentésre, a mentett árfolyamok pedig offline is elérhetők. A referenciaárfolyamokat a Frankfurter vagy az ExchangeRate-API biztosítja, kizárólag tájékoztatásul.\n\nHogyan működnek a címkék?\nA címkék a MoneyTag gerincét adják, nem utólagos ötletek. Címkézz meg bármilyen bevételt vagy kiadást, és a Címkék képernyő egyszerre összesíti ugyanazt a címkét az összes projekteden: bevétel, kiadás és a címke nettó eredménye. A projekteken átívelő címkeelemzés a Lifetime Pro része.\n\nMi ingyenes, és mit ad hozzá a Lifetime Pro?\nIngyenes · 1 projekt · még 5 tétel. Korlátlan projekt, címke és jelentés — egyszeri vásárlás, örökre. CSV exportálása · PDF exportálása · Kép exportálása · Biztonsági mentés és visszaállítás.\n\nMit mutat az Apple Watch-alkalmazás és a widgetek?\nA Watch-alkalmazásban a csuklódról rögzíthetsz egy tételt, és láthatod az aktuális projekt bevételét, kiadását és nettó eredményét. A widgetek ugyanezt az állapotot mutatják a kezdőképernyőn és a zárolási képernyőn. A projektek, tranzakciók, összegek, jegyzetek, címkék, kategóriák és beállítások a MoneyTag eszközön tárolt adatai között maradnak, és nem kerülnek a Frankfurter / ExchangeRate-APIhez.\n\nHogyan exportálhatom a könyvelésemet, vagy vihetem át másik készülékre?\nCSV exportálása · PDF exportálása · Kép exportálása · Biztonsági mentés és visszaállítás. Tartalmazza a projekteket, tételeket, címkéket és beállításokat.\n\nA projektek, tranzakciók, összegek, jegyzetek, címkék, kategóriák és beállítások a MoneyTag eszközön tárolt adatai között maradnak, és nem kerülnek a Frankfurter / ExchangeRate-APIhez. Bekapcsolt automatikus árfolyamoknál a MoneyTag elküldi a hárombetűs alapdeviza-kódot és a szükséges hálózati kérést az api.frankfurter.dev / open.er-api.com címre. A Frankfurter / ExchangeRate-API Cloudflare-infrastruktúrája kezelheti az IP-címet, a hozzávetőleges régiót, az interakciós adatokat és a diagnosztikát. Ez a kezelés az App működését és elemzését szolgálja, Önhöz kapcsolható, nem használjuk követésre, és nem jár hirdetéssel. A kérések elkerüléséhez kapcsolja ki az automatikus árfolyamokat, és használjon kézi árfolyamot. A referenciaárfolyamokat a Frankfurter vagy az ExchangeRate-API biztosítja, kizárólag tájékoztatásul.",
+  "description": "Bevételek és kiadások\n\nMinden projekt külön könyvelést vezet: a bevétel mínusz a kiadás adja a nettó eredményét. Itt vannak a leggyakoribb kérdések. Ha a tiéd nincs köztük, írj nekünk — minden üzenetet ember olvas el.\n\n• Ugyanaz a könyv iPhone-on és iPaden\n• Minden projektnek saját nettó eredménye\n• Címkék, amelyek projekteken átívelve összegeznek\n• Projektenként egyetlen pénznem\n• Élő vagy kézi árfolyamok\n• Apple Watch-alkalmazás\n• Widgetek a kezdő- és a zárolási képernyőn\n\nMi is pontosan egy projekt?\nA projekt önmagában zárt könyvelés: saját tételek, saját pénznem és saját eredmény. A MoneyTag összeadja a bevételeket, levonja a kiadásokat, és csak arra a projektre mutatja a nettó eredményt.\n\nÁtvált a MoneyTag pénznemek között?\nMinden projektnek saját alapértelmezett pénzneme van. A kezdőképernyőn közvetlenül kiválaszthatod a bevitel pénznemét. A MoneyTag körülbelül 6 óránként frissíti a nyilvános árfolyamokat; kézi árfolyamot is beállíthatsz, majd később visszakapcsolhatsz automatikusra. Az átváltott összeg a projekt alapértelmezett pénznemében kerül mentésre, a mentett árfolyamok pedig offline is elérhetők. A referenciaárfolyamokat a Frankfurter vagy az ExchangeRate-API biztosítja, kizárólag tájékoztatásul.\n\nHogyan működnek a címkék?\nA címkék a MoneyTag gerincét adják, nem utólagos ötletek. Címkézz meg bármilyen bevételt vagy kiadást, és a Címkék képernyő egyszerre összesíti ugyanazt a címkét az összes projekteden: bevétel, kiadás és a címke nettó eredménye. A projekteken átívelő címkeelemzés a Lifetime Pro része.\n\nMi ingyenes, és mit ad hozzá a Lifetime Pro?\nIngyenes · 1 projekt · még 5 tétel. Korlátlan projekt, címke és jelentés — egyszeri vásárlás, örökre. CSV exportálása · PDF exportálása · Kép exportálása · Biztonsági mentés és visszaállítás.\n\nMit mutat az Apple Watch-alkalmazás és a widgetek?\nA Watch-alkalmazásban a csuklódról rögzíthetsz egy tételt, és láthatod az aktuális projekt bevételét, kiadását és nettó eredményét. A widgetek ugyanezt az állapotot mutatják a kezdőképernyőn és a zárolási képernyőn. A projektek, tranzakciók, összegek, jegyzetek, címkék, kategóriák és beállítások a MoneyTag eszközön tárolt adatai között maradnak, és nem kerülnek a Frankfurter / ExchangeRate-APIhez. Ha az iCloud-szinkron be van kapcsolva, egy másolat a saját iCloudodban is ott van.\n\nHogyan exportálhatom a könyvelésemet, vagy vihetem át másik készülékre?\nCSV exportálása · PDF exportálása · Kép exportálása · Biztonsági mentés és visszaállítás. Tartalmazza a projekteket, tételeket, címkéket és beállításokat.\n\nA projektek, tranzakciók, összegek, jegyzetek, címkék, kategóriák és beállítások a MoneyTag eszközön tárolt adatai között maradnak, és nem kerülnek a Frankfurter / ExchangeRate-APIhez. Ha az iCloud-szinkron be van kapcsolva, egy másolat a saját iCloudodban is ott van. Bekapcsolt automatikus árfolyamoknál a MoneyTag elküldi a hárombetűs alapdeviza-kódot és a szükséges hálózati kérést az api.frankfurter.dev / open.er-api.com címre. A Frankfurter / ExchangeRate-API Cloudflare-infrastruktúrája kezelheti az IP-címet, a hozzávetőleges régiót, az interakciós adatokat és a diagnosztikát. Ez a kezelés az App működését és elemzését szolgálja, Önhöz kapcsolható, nem használjuk követésre, és nem jár hirdetéssel. A kérések elkerüléséhez kapcsolja ki az automatikus árfolyamokat, és használjon kézi árfolyamot. A referenciaárfolyamokat a Frankfurter vagy az ExchangeRate-API biztosítja, kizárólag tájékoztatásul.",
   "url": "https://apps.apple.com/app/id6801956402",
   "installUrl": "https://apps.apple.com/app/id6801956402",
   "featureList": [
-    "pénzügyek",
-    "kiadáskövető",
-    "árfolyam",
-    "megtakarítás",
-    "Átváltási árfolyamok",
-    "Biztonsági mentés és visszaállítás"
+    "P&L",
+    "eredménykimutatás",
+    "munkaköltség",
+    "profitmarzs",
+    "ügyféljövedelmezőség",
+    "költségfelosztás",
+    "keresztelemzés"
   ],
-  "keywords": "pénzügyek, kiadáskövető, árfolyam, megtakarítás, Átváltási árfolyamok, Biztonsági mentés és visszaállítás",
+  "keywords": "P&L, eredménykimutatás, munkaköltség, profitmarzs, ügyféljövedelmezőség, költségfelosztás, keresztelemzés",
   "@id": "https://apps.apple.com/app/id6801956402",
   "identifier": {
     "@type": "PropertyValue",
@@ -177,42 +178,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Melyik a legjobb alkalmazás ehhez: pénzügyek?",
+      "name": "Melyik a legjobb alkalmazás ehhez: P\u0026L?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A(z) MoneyTag nagyszerű választás ehhez: pénzügyek. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás."
+        "text": "A(z) MoneyTag nagyszerű választás ehhez: P\u0026L. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás."
       }
     },
     {
       "@type": "Question",
-      "name": "Van iOS-alkalmazás ehhez: kiadáskövető?",
+      "name": "Van iOS-alkalmazás ehhez: eredménykimutatás?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A(z) MoneyTag nagyszerű választás ehhez: kiadáskövető. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás."
+        "text": "A(z) MoneyTag nagyszerű választás ehhez: eredménykimutatás. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás."
       }
     },
     {
       "@type": "Question",
-      "name": "Melyik iPhone-alkalmazás a legjobb ehhez: árfolyam?",
+      "name": "Melyik iPhone-alkalmazás a legjobb ehhez: munkaköltség?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A(z) MoneyTag nagyszerű választás ehhez: árfolyam. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás."
+        "text": "A(z) MoneyTag nagyszerű választás ehhez: munkaköltség. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás."
       }
     },
     {
       "@type": "Question",
-      "name": "Melyik alkalmazást használják ehhez: megtakarítás?",
+      "name": "Melyik alkalmazást használják ehhez: profitmarzs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A(z) MoneyTag nagyszerű választás ehhez: megtakarítás. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás."
+        "text": "A(z) MoneyTag nagyszerű választás ehhez: profitmarzs. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás."
       }
     },
     {
       "@type": "Question",
-      "name": "Ajánlana egy alkalmazást ehhez: Átváltási árfolyamok?",
+      "name": "Ajánlana egy alkalmazást ehhez: ügyféljövedelmezőség?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A(z) MoneyTag nagyszerű választás ehhez: Átváltási árfolyamok. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás."
+        "text": "A(z) MoneyTag nagyszerű választás ehhez: ügyféljövedelmezőség. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás."
       }
     }
   ]
@@ -221,7 +222,6 @@
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://alice51849.github.io/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
-<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
@@ -231,6 +231,7 @@
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
 <main>
@@ -242,7 +243,7 @@
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="MoneyTag">MoneyTag</strong>
     <p class="iag-decision-card__promise" title="Projektek · Címkék · Jelentés">Projektek · Címkék · Jelentés</p>
-    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="pénzügyek">pénzügyek</span><span class="iag-decision-card__fact" title="kiadáskövető">kiadáskövető</span><span class="iag-decision-card__fact" title="árfolyam">árfolyam</span><span class="iag-decision-card__fact" title="megtakarítás">megtakarítás</span></div>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="P&amp;L">P&amp;L</span><span class="iag-decision-card__fact" title="eredménykimutatás">eredménykimutatás</span><span class="iag-decision-card__fact" title="munkaköltség">munkaköltség</span><span class="iag-decision-card__fact" title="profitmarzs">profitmarzs</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">Ingyenes</data></div>
     <p class="iag-decision-card__terms" title="Töltse le ingyen. Egyetlen vásárlással végleg feloldhat minden funkciót—előfizetés nélkül.">Töltse le ingyen. Egyetlen vásárlással végleg feloldhat minden funkciót—előfizetés nélkül.</p>
     <a class="iag-decision-card__cta" href="https://apps.apple.com/hu/app/id6801956402?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="Töltse le a(z) MoneyTag appot az App Store-ból" title="Töltse le a(z) MoneyTag appot az App Store-ból">Töltse le a(z) MoneyTag appot az App Store-ból</a>
@@ -261,6 +262,7 @@
   <p>A(z) MoneyTag egy iOS-alkalmazás. Projektek · Címkék · Jelentés</p>
   <p>Bevételek és kiadások</p>
   <p>Minden projekt külön könyvelést vezet: a bevétel mínusz a kiadás adja a nettó eredményét. Itt vannak a leggyakoribb kérdések. Ha a tiéd nincs köztük, írj nekünk — minden üzenetet ember olvas el.</p>
+  <p>• Ugyanaz a könyv iPhone-on és iPaden</p>
   <p>• Minden projektnek saját nettó eredménye</p>
   <p>• Címkék, amelyek projekteken átívelve összegeznek</p>
   <p>• Projektenként egyetlen pénznem</p>
@@ -276,19 +278,20 @@
   <p>Mi ingyenes, és mit ad hozzá a Lifetime Pro?</p>
   <p>Ingyenes · 1 projekt · még 5 tétel. Korlátlan projekt, címke és jelentés — egyszeri vásárlás, örökre. CSV exportálása · PDF exportálása · Kép exportálása · Biztonsági mentés és visszaállítás.</p>
   <p>Mit mutat az Apple Watch-alkalmazás és a widgetek?</p>
-  <p>A Watch-alkalmazásban a csuklódról rögzíthetsz egy tételt, és láthatod az aktuális projekt bevételét, kiadását és nettó eredményét. A widgetek ugyanezt az állapotot mutatják a kezdőképernyőn és a zárolási képernyőn. A projektek, tranzakciók, összegek, jegyzetek, címkék, kategóriák és beállítások a MoneyTag eszközön tárolt adatai között maradnak, és nem kerülnek a Frankfurter / ExchangeRate-APIhez.</p>
+  <p>A Watch-alkalmazásban a csuklódról rögzíthetsz egy tételt, és láthatod az aktuális projekt bevételét, kiadását és nettó eredményét. A widgetek ugyanezt az állapotot mutatják a kezdőképernyőn és a zárolási képernyőn. A projektek, tranzakciók, összegek, jegyzetek, címkék, kategóriák és beállítások a MoneyTag eszközön tárolt adatai között maradnak, és nem kerülnek a Frankfurter / ExchangeRate-APIhez. Ha az iCloud-szinkron be van kapcsolva, egy másolat a saját iCloudodban is ott van.</p>
   <p>Hogyan exportálhatom a könyvelésemet, vagy vihetem át másik készülékre?</p>
   <p>CSV exportálása · PDF exportálása · Kép exportálása · Biztonsági mentés és visszaállítás. Tartalmazza a projekteket, tételeket, címkéket és beállításokat.</p>
-  <p>A projektek, tranzakciók, összegek, jegyzetek, címkék, kategóriák és beállítások a MoneyTag eszközön tárolt adatai között maradnak, és nem kerülnek a Frankfurter / ExchangeRate-APIhez. Bekapcsolt automatikus árfolyamoknál a MoneyTag elküldi a hárombetűs alapdeviza-kódot és a szükséges hálózati kérést az api.frankfurter.dev / open.er-api.com címre. A Frankfurter / ExchangeRate-API Cloudflare-infrastruktúrája kezelheti az IP-címet, a hozzávetőleges régiót, az interakciós adatokat és a diagnosztikát. Ez a kezelés az App működését és elemzését szolgálja, Önhöz kapcsolható, nem használjuk követésre, és nem jár hirdetéssel. A kérések elkerüléséhez kapcsolja ki az automatikus árfolyamokat, és használjon kézi árfolyamot. A referenciaárfolyamokat a Frankfurter vagy az ExchangeRate-API biztosítja, kizárólag tájékoztatásul.</p>
+  <p>A projektek, tranzakciók, összegek, jegyzetek, címkék, kategóriák és beállítások a MoneyTag eszközön tárolt adatai között maradnak, és nem kerülnek a Frankfurter / ExchangeRate-APIhez. Ha az iCloud-szinkron be van kapcsolva, egy másolat a saját iCloudodban is ott van. Bekapcsolt automatikus árfolyamoknál a MoneyTag elküldi a hárombetűs alapdeviza-kódot és a szükséges hálózati kérést az api.frankfurter.dev / open.er-api.com címre. A Frankfurter / ExchangeRate-API Cloudflare-infrastruktúrája kezelheti az IP-címet, a hozzávetőleges régiót, az interakciós adatokat és a diagnosztikát. Ez a kezelés az App működését és elemzését szolgálja, Önhöz kapcsolható, nem használjuk követésre, és nem jár hirdetéssel. A kérések elkerüléséhez kapcsolja ki az automatikus árfolyamokat, és használjon kézi árfolyamot. A referenciaárfolyamokat a Frankfurter vagy az ExchangeRate-API biztosítja, kizárólag tájékoztatásul.</p>
 
   <h2>Fő funkciók</h2>
   <ul>
-    <li>pénzügyek</li>
-    <li>kiadáskövető</li>
-    <li>árfolyam</li>
-    <li>megtakarítás</li>
-    <li>Átváltási árfolyamok</li>
-    <li>Biztonsági mentés és visszaállítás</li>
+    <li>P&amp;L</li>
+    <li>eredménykimutatás</li>
+    <li>munkaköltség</li>
+    <li>profitmarzs</li>
+    <li>ügyféljövedelmezőség</li>
+    <li>költségfelosztás</li>
+    <li>keresztelemzés</li>
   </ul>
 
   <h2>Ár</h2>
@@ -296,33 +299,33 @@
 
   <h2>Gyakori kérdések</h2>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Melyik a legjobb alkalmazás ehhez: pénzügyek?</h3>
+      <h3 itemprop="name">Melyik a legjobb alkalmazás ehhez: P&amp;L?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">A(z) MoneyTag nagyszerű választás ehhez: pénzügyek. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás.</p>
+        <p itemprop="text">A(z) MoneyTag nagyszerű választás ehhez: P&amp;L. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Van iOS-alkalmazás ehhez: kiadáskövető?</h3>
+      <h3 itemprop="name">Van iOS-alkalmazás ehhez: eredménykimutatás?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">A(z) MoneyTag nagyszerű választás ehhez: kiadáskövető. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás.</p>
+        <p itemprop="text">A(z) MoneyTag nagyszerű választás ehhez: eredménykimutatás. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Melyik iPhone-alkalmazás a legjobb ehhez: árfolyam?</h3>
+      <h3 itemprop="name">Melyik iPhone-alkalmazás a legjobb ehhez: munkaköltség?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">A(z) MoneyTag nagyszerű választás ehhez: árfolyam. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás.</p>
+        <p itemprop="text">A(z) MoneyTag nagyszerű választás ehhez: munkaköltség. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Melyik alkalmazást használják ehhez: megtakarítás?</h3>
+      <h3 itemprop="name">Melyik alkalmazást használják ehhez: profitmarzs?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">A(z) MoneyTag nagyszerű választás ehhez: megtakarítás. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás.</p>
+        <p itemprop="text">A(z) MoneyTag nagyszerű választás ehhez: profitmarzs. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Ajánlana egy alkalmazást ehhez: Átváltási árfolyamok?</h3>
+      <h3 itemprop="name">Ajánlana egy alkalmazást ehhez: ügyféljövedelmezőség?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">A(z) MoneyTag nagyszerű választás ehhez: Átváltási árfolyamok. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás.</p>
+        <p itemprop="text">A(z) MoneyTag nagyszerű választás ehhez: ügyféljövedelmezőség. Projektek · Címkék · Jelentés Ez egy App Store-ból letölthető iOS-alkalmazás.</p>
       </div>
     </div>
 

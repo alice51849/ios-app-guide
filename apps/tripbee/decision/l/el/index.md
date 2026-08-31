@@ -2,7 +2,7 @@
 title: "καλύτερη εφαρμογή προγραμματισμού διαδρομής ταξιδιού για iPhone"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/el/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"

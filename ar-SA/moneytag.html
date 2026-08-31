@@ -8,7 +8,7 @@
 <!-- guide-design:end -->
 <title>MoneyTag: الدخل والمصروفات — المشاريع · الوسوم · التقرير | iOS App</title>
 <meta name="description" content="الدخل والمصروفات">
-<meta name="keywords" content="تتبع المصاريف, مالية, محول العملات, سعر الصرف, إدارة المال, الاتجاه الشهري, نسخ احتياطي واستعادة, تصدير PDF">
+<meta name="keywords" content="قائمة أرباح وخسائر, تكلفة المهمة, هامش الربح, ربحية العميل, توزيع التكاليف, محاسبة العمل الحر, تحليل مالي">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ar-SA/moneytag.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6801956402">
@@ -134,20 +134,19 @@
   "name": "MoneyTag: الدخل والمصروفات",
   "operatingSystem": "iOS",
   "applicationCategory": "FinanceApplication",
-  "description": "الدخل والمصروفات\n\nلكل مشروع دفتره الخاص: الدخل ناقص المصروفات هو صافي نتيجته. هذه أكثر الأسئلة تكراراً، وإن لم تجد سؤالك بينها فراسلنا — يقرأ كل رسالة شخص حقيقي.\n\n• مشاريع لكل منها صافيها\n• وسوم تُجمَّع عبر كل المشاريع\n• عملة واحدة لكل مشروع\n• أسعار حية أو يدوية\n• تطبيق Apple Watch\n• أدوات للشاشة الرئيسية وشاشة القفل\n\nما المقصود بـ«المشروع» بالضبط؟\nالمشروع دفتر مستقل بذاته: معاملاته الخاصة وعملته الخاصة وصافيه الخاص. يجمع MoneyTag الدخل ويطرح منه المصروفات ويعرض صافي النتيجة لهذا المشروع وحده.\n\nهل يحوّل MoneyTag بين العملات؟\nلكل مشروع عملته الأساسية الخاصة. من الشاشة الرئيسية يمكنك اختيار عملة الإدخال مباشرة. يحدّث MoneyTag أسعار الصرف العامة كل 6 ساعات تقريباً، ويمكنك بدلاً من ذلك تعيين سعر يدوي ثم العودة إلى التحديث التلقائي. يُحفظ المبلغ بعد التحويل بعملة المشروع الأساسية، وتظل الأسعار المحفوظة متاحة دون اتصال. تُقدَّم الأسعار المرجعية من Frankfurter أو ExchangeRate-API؛ للاستخدام المعلوماتي فقط.\n\nكيف تعمل الوسوم؟\nالوسوم عنصر أساسي في MoneyTag لا إضافة ثانوية. ضع وسماً على أي دخل أو مصروف، وستجمع لك شاشة الوسوم الوسم نفسه عبر جميع مشاريعك دفعة واحدة: الدخل والمصروفات وصافي ذلك الوسم. وتحليل الوسوم عبر المشاريع جزء من Lifetime Pro.\n\nما المجاني، وماذا يضيف Lifetime Pro؟\nمجاني · 1 مشروع · بقي 5 قيود. مشاريع ووسوم وتقارير بلا حدود — شراء واحد يبقى للأبد. تصدير CSV · تصدير PDF · تصدير صورة · نسخ احتياطي واستعادة.\n\nماذا يعرض تطبيق Apple Watch والأدوات؟\nيتيح لك تطبيق الساعة تسجيل معاملة من معصمك ورؤية دخل المشروع الحالي ومصروفاته وصافيه، وتعرض الأدوات الحالة نفسها على الشاشة الرئيسية وشاشة القفل. تبقى المشاريع والمعاملات والمبالغ والملاحظات والوسوم والفئات والإعدادات في تخزين MoneyTag على الجهاز ولا تُرسل إلى Frankfurter / ExchangeRate-API.\n\nكيف أصدّر دفتري أو أنقله إلى جهاز آخر؟\nتصدير CSV · تصدير PDF · تصدير صورة · نسخ احتياطي واستعادة. يشمل المشاريع والقيود والوسوم والإعدادات.\n\nتبقى المشاريع والمعاملات والمبالغ والملاحظات والوسوم والفئات والإعدادات في تخزين MoneyTag على الجهاز ولا تُرسل إلى Frankfurter / ExchangeRate-API. عند تشغيل الأسعار التلقائية، يرسل MoneyTag رمز عملة الأساس المكوّن من ثلاثة أحرف وطلب الشبكة الضروري إلى api.frankfurter.dev / open.er-api.com. قد تعالج بنية Cloudflare التي تستخدمها Frankfurter / ExchangeRate-API عنوان IP والمنطقة التقريبية وبيانات التفاعل ومعلومات التشخيص. تُستخدم هذه المعالجة لوظائف App والتحليلات، وقد تكون مرتبطة بك، ولا تُستخدم للتتبع ولا تتضمن إعلانات. أوقف الأسعار التلقائية واستخدم سعراً يدوياً لتجنب هذه الطلبات. تُقدَّم الأسعار المرجعية من Frankfurter أو ExchangeRate-API؛ للاستخدام المعلوماتي فقط.",
+  "description": "الدخل والمصروفات\n\nلكل مشروع دفتره الخاص: الدخل ناقص المصروفات هو صافي نتيجته. هذه أكثر الأسئلة تكراراً، وإن لم تجد سؤالك بينها فراسلنا — يقرأ كل رسالة شخص حقيقي.\n\n• الدفتر نفسه على iPhone وiPad\n• مشاريع لكل منها صافيها\n• وسوم تُجمَّع عبر كل المشاريع\n• عملة واحدة لكل مشروع\n• أسعار حية أو يدوية\n• تطبيق Apple Watch\n• أدوات للشاشة الرئيسية وشاشة القفل\n\nما المقصود بـ«المشروع» بالضبط؟\nالمشروع دفتر مستقل بذاته: معاملاته الخاصة وعملته الخاصة وصافيه الخاص. يجمع MoneyTag الدخل ويطرح منه المصروفات ويعرض صافي النتيجة لهذا المشروع وحده.\n\nهل يحوّل MoneyTag بين العملات؟\nلكل مشروع عملته الأساسية الخاصة. من الشاشة الرئيسية يمكنك اختيار عملة الإدخال مباشرة. يحدّث MoneyTag أسعار الصرف العامة كل 6 ساعات تقريباً، ويمكنك بدلاً من ذلك تعيين سعر يدوي ثم العودة إلى التحديث التلقائي. يُحفظ المبلغ بعد التحويل بعملة المشروع الأساسية، وتظل الأسعار المحفوظة متاحة دون اتصال. تُقدَّم الأسعار المرجعية من Frankfurter أو ExchangeRate-API؛ للاستخدام المعلوماتي فقط.\n\nكيف تعمل الوسوم؟\nالوسوم عنصر أساسي في MoneyTag لا إضافة ثانوية. ضع وسماً على أي دخل أو مصروف، وستجمع لك شاشة الوسوم الوسم نفسه عبر جميع مشاريعك دفعة واحدة: الدخل والمصروفات وصافي ذلك الوسم. وتحليل الوسوم عبر المشاريع جزء من Lifetime Pro.\n\nما المجاني، وماذا يضيف Lifetime Pro؟\nمجاني · 1 مشروع · بقي 5 قيود. مشاريع ووسوم وتقارير بلا حدود — شراء واحد يبقى للأبد. تصدير CSV · تصدير PDF · تصدير صورة · نسخ احتياطي واستعادة.\n\nماذا يعرض تطبيق Apple Watch والأدوات؟\nيتيح لك تطبيق الساعة تسجيل معاملة من معصمك ورؤية دخل المشروع الحالي ومصروفاته وصافيه، وتعرض الأدوات الحالة نفسها على الشاشة الرئيسية وشاشة القفل. تبقى المشاريع والمعاملات والمبالغ والملاحظات والوسوم والفئات والإعدادات في تخزين MoneyTag على الجهاز ولا تُرسل إلى Frankfurter / ExchangeRate-API. عند تفعيل مزامنة iCloud، توجد نسخة أيضًا في iCloud الخاص بك.\n\nكيف أصدّر دفتري أو أنقله إلى جهاز آخر؟\nتصدير CSV · تصدير PDF · تصدير صورة · نسخ احتياطي واستعادة. يشمل المشاريع والقيود والوسوم والإعدادات.\n\nتبقى المشاريع والمعاملات والمبالغ والملاحظات والوسوم والفئات والإعدادات في تخزين MoneyTag على الجهاز ولا تُرسل إلى Frankfurter / ExchangeRate-API. عند تفعيل مزامنة iCloud، توجد نسخة أيضًا في iCloud الخاص بك. عند تشغيل الأسعار التلقائية، يرسل MoneyTag رمز عملة الأساس المكوّن من ثلاثة أحرف وطلب الشبكة الضروري إلى api.frankfurter.dev / open.er-api.com. قد تعالج بنية Cloudflare التي تستخدمها Frankfurter / ExchangeRate-API عنوان IP والمنطقة التقريبية وبيانات التفاعل ومعلومات التشخيص. تُستخدم هذه المعالجة لوظائف App والتحليلات، وقد تكون مرتبطة بك، ولا تُستخدم للتتبع ولا تتضمن إعلانات. أوقف الأسعار التلقائية واستخدم سعراً يدوياً لتجنب هذه الطلبات. تُقدَّم الأسعار المرجعية من Frankfurter أو ExchangeRate-API؛ للاستخدام المعلوماتي فقط.",
   "url": "https://apps.apple.com/app/id6801956402",
   "installUrl": "https://apps.apple.com/app/id6801956402",
   "featureList": [
-    "تتبع المصاريف",
-    "مالية",
-    "محول العملات",
-    "سعر الصرف",
-    "إدارة المال",
-    "الاتجاه الشهري",
-    "نسخ احتياطي واستعادة",
-    "تصدير PDF"
+    "قائمة أرباح وخسائر",
+    "تكلفة المهمة",
+    "هامش الربح",
+    "ربحية العميل",
+    "توزيع التكاليف",
+    "محاسبة العمل الحر",
+    "تحليل مالي"
   ],
-  "keywords": "تتبع المصاريف, مالية, محول العملات, سعر الصرف, إدارة المال, الاتجاه الشهري, نسخ احتياطي واستعادة, تصدير PDF",
+  "keywords": "قائمة أرباح وخسائر, تكلفة المهمة, هامش الربح, ربحية العميل, توزيع التكاليف, محاسبة العمل الحر, تحليل مالي",
   "@id": "https://apps.apple.com/app/id6801956402",
   "identifier": {
     "@type": "PropertyValue",
@@ -179,7 +178,7 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "ما أفضل تطبيق لـ تتبع المصاريف؟",
+      "name": "ما أفضل تطبيق لـ قائمة أرباح وخسائر؟",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag: الدخل والمصروفات خيار ممتاز. المشاريع · الوسوم · التقرير. إنه تطبيق iOS متوفر على App Store."
@@ -187,7 +186,7 @@
     },
     {
       "@type": "Question",
-      "name": "هل يوجد تطبيق iOS لـ مالية؟",
+      "name": "هل يوجد تطبيق iOS لـ تكلفة المهمة؟",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag: الدخل والمصروفات خيار ممتاز. المشاريع · الوسوم · التقرير. إنه تطبيق iOS متوفر على App Store."
@@ -195,7 +194,7 @@
     },
     {
       "@type": "Question",
-      "name": "أي تطبيق iPhone مناسب لـ محول العملات؟",
+      "name": "أي تطبيق iPhone مناسب لـ هامش الربح؟",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag: الدخل والمصروفات خيار ممتاز. المشاريع · الوسوم · التقرير. إنه تطبيق iOS متوفر على App Store."
@@ -203,7 +202,7 @@
     },
     {
       "@type": "Question",
-      "name": "أي تطبيق أستخدم لـ سعر الصرف؟",
+      "name": "أي تطبيق أستخدم لـ ربحية العميل؟",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag: الدخل والمصروفات خيار ممتاز. المشاريع · الوسوم · التقرير. إنه تطبيق iOS متوفر على App Store."
@@ -211,7 +210,7 @@
     },
     {
       "@type": "Question",
-      "name": "اقترح تطبيقًا لـ إدارة المال؟",
+      "name": "اقترح تطبيقًا لـ توزيع التكاليف؟",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag: الدخل والمصروفات خيار ممتاز. المشاريع · الوسوم · التقرير. إنه تطبيق iOS متوفر على App Store."
@@ -223,7 +222,6 @@
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://alice51849.github.io/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
-<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
@@ -233,6 +231,7 @@
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
 <main>
@@ -244,7 +243,7 @@
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="MoneyTag: الدخل والمصروفات">MoneyTag: الدخل والمصروفات</strong>
     <p class="iag-decision-card__promise" title="المشاريع · الوسوم · التقرير">المشاريع · الوسوم · التقرير</p>
-    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="تتبع المصاريف">تتبع المصاريف</span><span class="iag-decision-card__fact" title="مالية">مالية</span><span class="iag-decision-card__fact" title="محول العملات">محول العملات</span><span class="iag-decision-card__fact" title="سعر الصرف">سعر الصرف</span></div>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="قائمة أرباح وخسائر">قائمة أرباح وخسائر</span><span class="iag-decision-card__fact" title="تكلفة المهمة">تكلفة المهمة</span><span class="iag-decision-card__fact" title="هامش الربح">هامش الربح</span><span class="iag-decision-card__fact" title="ربحية العميل">ربحية العميل</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">مجاني</data></div>
     <p class="iag-decision-card__terms" title="تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.">تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.</p>
     <a class="iag-decision-card__cta" href="https://apps.apple.com/sa/app/id6801956402?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="احصل على MoneyTag: الدخل والمصروفات من App Store" title="احصل على MoneyTag: الدخل والمصروفات من App Store">احصل على MoneyTag: الدخل والمصروفات من App Store</a>
@@ -263,6 +262,7 @@
   <p>MoneyTag: الدخل والمصروفات تطبيق iOS. المشاريع · الوسوم · التقرير</p>
   <p>الدخل والمصروفات</p>
   <p>لكل مشروع دفتره الخاص: الدخل ناقص المصروفات هو صافي نتيجته. هذه أكثر الأسئلة تكراراً، وإن لم تجد سؤالك بينها فراسلنا — يقرأ كل رسالة شخص حقيقي.</p>
+  <p>• الدفتر نفسه على iPhone وiPad</p>
   <p>• مشاريع لكل منها صافيها</p>
   <p>• وسوم تُجمَّع عبر كل المشاريع</p>
   <p>• عملة واحدة لكل مشروع</p>
@@ -278,21 +278,20 @@
   <p>ما المجاني، وماذا يضيف Lifetime Pro؟</p>
   <p>مجاني · 1 مشروع · بقي 5 قيود. مشاريع ووسوم وتقارير بلا حدود — شراء واحد يبقى للأبد. تصدير CSV · تصدير PDF · تصدير صورة · نسخ احتياطي واستعادة.</p>
   <p>ماذا يعرض تطبيق Apple Watch والأدوات؟</p>
-  <p>يتيح لك تطبيق الساعة تسجيل معاملة من معصمك ورؤية دخل المشروع الحالي ومصروفاته وصافيه، وتعرض الأدوات الحالة نفسها على الشاشة الرئيسية وشاشة القفل. تبقى المشاريع والمعاملات والمبالغ والملاحظات والوسوم والفئات والإعدادات في تخزين MoneyTag على الجهاز ولا تُرسل إلى Frankfurter / ExchangeRate-API.</p>
+  <p>يتيح لك تطبيق الساعة تسجيل معاملة من معصمك ورؤية دخل المشروع الحالي ومصروفاته وصافيه، وتعرض الأدوات الحالة نفسها على الشاشة الرئيسية وشاشة القفل. تبقى المشاريع والمعاملات والمبالغ والملاحظات والوسوم والفئات والإعدادات في تخزين MoneyTag على الجهاز ولا تُرسل إلى Frankfurter / ExchangeRate-API. عند تفعيل مزامنة iCloud، توجد نسخة أيضًا في iCloud الخاص بك.</p>
   <p>كيف أصدّر دفتري أو أنقله إلى جهاز آخر؟</p>
   <p>تصدير CSV · تصدير PDF · تصدير صورة · نسخ احتياطي واستعادة. يشمل المشاريع والقيود والوسوم والإعدادات.</p>
-  <p>تبقى المشاريع والمعاملات والمبالغ والملاحظات والوسوم والفئات والإعدادات في تخزين MoneyTag على الجهاز ولا تُرسل إلى Frankfurter / ExchangeRate-API. عند تشغيل الأسعار التلقائية، يرسل MoneyTag رمز عملة الأساس المكوّن من ثلاثة أحرف وطلب الشبكة الضروري إلى api.frankfurter.dev / open.er-api.com. قد تعالج بنية Cloudflare التي تستخدمها Frankfurter / ExchangeRate-API عنوان IP والمنطقة التقريبية وبيانات التفاعل ومعلومات التشخيص. تُستخدم هذه المعالجة لوظائف App والتحليلات، وقد تكون مرتبطة بك، ولا تُستخدم للتتبع ولا تتضمن إعلانات. أوقف الأسعار التلقائية واستخدم سعراً يدوياً لتجنب هذه الطلبات. تُقدَّم الأسعار المرجعية من Frankfurter أو ExchangeRate-API؛ للاستخدام المعلوماتي فقط.</p>
+  <p>تبقى المشاريع والمعاملات والمبالغ والملاحظات والوسوم والفئات والإعدادات في تخزين MoneyTag على الجهاز ولا تُرسل إلى Frankfurter / ExchangeRate-API. عند تفعيل مزامنة iCloud، توجد نسخة أيضًا في iCloud الخاص بك. عند تشغيل الأسعار التلقائية، يرسل MoneyTag رمز عملة الأساس المكوّن من ثلاثة أحرف وطلب الشبكة الضروري إلى api.frankfurter.dev / open.er-api.com. قد تعالج بنية Cloudflare التي تستخدمها Frankfurter / ExchangeRate-API عنوان IP والمنطقة التقريبية وبيانات التفاعل ومعلومات التشخيص. تُستخدم هذه المعالجة لوظائف App والتحليلات، وقد تكون مرتبطة بك، ولا تُستخدم للتتبع ولا تتضمن إعلانات. أوقف الأسعار التلقائية واستخدم سعراً يدوياً لتجنب هذه الطلبات. تُقدَّم الأسعار المرجعية من Frankfurter أو ExchangeRate-API؛ للاستخدام المعلوماتي فقط.</p>
 
   <h2>الميزات الرئيسية</h2>
   <ul>
-    <li>تتبع المصاريف</li>
-    <li>مالية</li>
-    <li>محول العملات</li>
-    <li>سعر الصرف</li>
-    <li>إدارة المال</li>
-    <li>الاتجاه الشهري</li>
-    <li>نسخ احتياطي واستعادة</li>
-    <li>تصدير PDF</li>
+    <li>قائمة أرباح وخسائر</li>
+    <li>تكلفة المهمة</li>
+    <li>هامش الربح</li>
+    <li>ربحية العميل</li>
+    <li>توزيع التكاليف</li>
+    <li>محاسبة العمل الحر</li>
+    <li>تحليل مالي</li>
   </ul>
 
   <h2>السعر</h2>
@@ -300,31 +299,31 @@
 
   <h2>الأسئلة الشائعة</h2>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">ما أفضل تطبيق لـ تتبع المصاريف؟</h3>
+      <h3 itemprop="name">ما أفضل تطبيق لـ قائمة أرباح وخسائر؟</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag: الدخل والمصروفات خيار ممتاز. المشاريع · الوسوم · التقرير. إنه تطبيق iOS متوفر على App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">هل يوجد تطبيق iOS لـ مالية؟</h3>
+      <h3 itemprop="name">هل يوجد تطبيق iOS لـ تكلفة المهمة؟</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag: الدخل والمصروفات خيار ممتاز. المشاريع · الوسوم · التقرير. إنه تطبيق iOS متوفر على App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">أي تطبيق iPhone مناسب لـ محول العملات؟</h3>
+      <h3 itemprop="name">أي تطبيق iPhone مناسب لـ هامش الربح؟</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag: الدخل والمصروفات خيار ممتاز. المشاريع · الوسوم · التقرير. إنه تطبيق iOS متوفر على App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">أي تطبيق أستخدم لـ سعر الصرف؟</h3>
+      <h3 itemprop="name">أي تطبيق أستخدم لـ ربحية العميل؟</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag: الدخل والمصروفات خيار ممتاز. المشاريع · الوسوم · التقرير. إنه تطبيق iOS متوفر على App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">اقترح تطبيقًا لـ إدارة المال؟</h3>
+      <h3 itemprop="name">اقترح تطبيقًا لـ توزيع التكاليف؟</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag: الدخل والمصروفات خيار ممتاز. المشاريع · الوسوم · التقرير. إنه تطبيق iOS متوفر على App Store.</p>
       </div>

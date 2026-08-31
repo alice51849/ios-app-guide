@@ -8,7 +8,7 @@
 <!-- guide-design:end -->
 <title>MoneyTag: આવક અને ખર્ચ — પ્રોજેક્ટ · ટૅગ · અહેવાલ | iOS App</title>
 <meta name="description" content="આવક અને ખર્ચ">
-<meta name="keywords" content="બજેટ, બચત, પૈસા, હિસાબ, ચલણ રૂપાંતર, અંગત નાણાં, વિનિમય દર, માસિક વલણ, નિકાસ PDF, ચોખ્ખું, ફ્રીલાન્સ, કપાતપાત્ર">
+<meta name="keywords" content="P&amp;L, job costing, profit margin, ગ્રાહકની નફાકારકતા, cost allocation, ફ્રીલાન્સ હિસાબ, multi tag analysis">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/gu-IN/moneytag.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6801956402">
@@ -134,20 +134,19 @@
   "name": "MoneyTag: આવક અને ખર્ચ",
   "operatingSystem": "iOS",
   "applicationCategory": "FinanceApplication",
-  "description": "આવક અને ખર્ચ\n\nદરેક પ્રોજેક્ટનો હિસાબ અલગ રહે છે: આવકમાંથી ખર્ચ બાદ કરતાં તેની ચોખ્ખી રકમ મળે છે. સૌથી વધુ પુછાતા પ્રશ્નો અહીં છે. તમારો પ્રશ્ન ન મળે તો લખો — દરેક સંદેશ ખરેખરી વ્યક્તિ વાંચે છે.\n\n• દરેક પ્રોજેક્ટની પોતાની ચોખ્ખી રકમ\n• બધા પ્રોજેક્ટમાં ટૅગનો કુલ સરવાળો\n• એક પ્રોજેક્ટ માટે એક જ ચલણ\n• જીવંત અથવા મેન્યુઅલ દર\n• Apple Watch ઍપ\n• હોમ અને લૉક સ્ક્રીન વિજેટ\n\nપ્રોજેક્ટ ખરેખર શું છે?\nપ્રોજેક્ટ એટલે પોતાનામાં પૂરો એક ચોપડો: પોતાના વ્યવહારો, પોતાનું ચલણ અને પોતાનું છેવટનું પરિણામ. MoneyTag તે પ્રોજેક્ટની આવક સરવાળે છે, ખર્ચ બાદ કરે છે અને માત્ર તેની જ ચોખ્ખી રકમ બતાવે છે.\n\nશું MoneyTag ચલણ બદલી આપે છે?\nદરેક પ્રોજેક્ટનું પોતાનું આધાર ચલણ હોય છે. હોમ સ્ક્રીન પર ઇનપુટ ચલણ સીધું પસંદ કરી શકો છો. MoneyTag જાહેર વિનિમય દર લગભગ દર 6 કલાકે અપડેટ કરે છે; તમે મેન્યુઅલ દર સેટ કરીને પછી ફરી ઓટોમેટિક પર જઈ શકો છો. રૂપાંતરિત રકમ પ્રોજેક્ટના આધાર ચલણમાં સાચવાય છે અને સાચવેલા દર ઑફલાઇન પણ ઉપલબ્ધ રહે છે. સંદર્ભ દર Frankfurter અથવા ExchangeRate-API દ્વારા આપવામાં આવે છે; માત્ર માહિતી માટે.\n\nટૅગ કેવી રીતે કામ કરે છે?\nMoneyTag માં ટૅગ મુખ્ય સુવિધા છે, પાછળથી ઉમેરેલી વસ્તુ નહીં. કોઈ પણ આવક કે ખર્ચ પર ટૅગ લગાવો, અને ટૅગ સ્ક્રીન એ જ ટૅગનો હિસાબ તમારા બધા પ્રોજેક્ટમાં એકસાથે બતાવે છે — આવક, ખર્ચ અને તે ટૅગની ચોખ્ખી રકમ. પ્રોજેક્ટ પાર ટૅગ વિશ્લેષણ Lifetime Pro નો ભાગ છે.\n\nમફતમાં શું મળે અને Lifetime Pro શું ઉમેરે છે?\nમફત · 1 પ્રોજેક્ટ · 5 નોંધો બાકી. અમર્યાદિત પ્રોજેક્ટ, ટૅગ અને અહેવાલ — એક વાર ખરીદો, કાયમ માટે. નિકાસ CSV · નિકાસ PDF · છબી નિકાસ કરો · બેકઅપ અને પુનઃસ્થાપન.\n\nApple Watch ઍપ અને વિજેટ શું બતાવે છે?\nઘડિયાળની ઍપથી કાંડા પરથી જ વ્યવહાર નોંધી શકાય છે અને ચાલુ પ્રોજેક્ટની આવક, ખર્ચ તથા ચોખ્ખી રકમ જોઈ શકાય છે. વિજેટ એ જ સ્થિતિ હોમ સ્ક્રીન અને લૉક સ્ક્રીન પર બતાવે છે. પ્રોજેક્ટ, વ્યવહાર, રકમ, નોંધ, ટૅગ, શ્રેણી અને સેટિંગ MoneyTagના ઉપકરણ સંગ્રહમાં રહે છે અને Frankfurter / ExchangeRate-APIને મોકલાતા નથી.\n\nમારો ચોપડો કેવી રીતે એક્સપોર્ટ કરું કે બીજા ડિવાઇસ પર લઈ જાઉં?\nનિકાસ CSV · નિકાસ PDF · છબી નિકાસ કરો · બેકઅપ અને પુનઃસ્થાપન. પ્રોજેક્ટ, નોંધો, ટૅગ અને સેટિંગ્સ સામેલ છે.\n\nપ્રોજેક્ટ, વ્યવહાર, રકમ, નોંધ, ટૅગ, શ્રેણી અને સેટિંગ MoneyTagના ઉપકરણ સંગ્રહમાં રહે છે અને Frankfurter / ExchangeRate-APIને મોકલાતા નથી. આપમેળે દર ચાલુ હોય ત્યારે MoneyTag ત્રણ અક્ષરનો આધાર ચલણ કોડ અને જરૂરી નેટવર્ક વિનંતી api.frankfurter.dev / open.er-api.com પર મોકલે છે. Frankfurter / ExchangeRate-APIનું Cloudflare માળખું IP સરનામું, અંદાજિત વિસ્તાર, ક્રિયાપ્રતિક્રિયા ડેટા અને નિદાન માહિતી પ્રક્રિયા કરી શકે છે. આ પ્રક્રિયા Appની કાર્યક્ષમતા અને વિશ્લેષણ માટે છે, તમારી સાથે જોડાઈ શકે છે, ટ્રેકિંગ માટે વપરાતી નથી અને તેમાં જાહેરાત નથી. આ વિનંતીઓ ટાળવા આપમેળે દર બંધ કરીને હાથથી દર વાપરો. સંદર્ભ દર Frankfurter અથવા ExchangeRate-API દ્વારા આપવામાં આવે છે; માત્ર માહિતી માટે.",
+  "description": "આવક અને ખર્ચ\n\nદરેક પ્રોજેક્ટનો હિસાબ અલગ રહે છે: આવકમાંથી ખર્ચ બાદ કરતાં તેની ચોખ્ખી રકમ મળે છે. સૌથી વધુ પુછાતા પ્રશ્નો અહીં છે. તમારો પ્રશ્ન ન મળે તો લખો — દરેક સંદેશ ખરેખરી વ્યક્તિ વાંચે છે.\n\n• iPhone અને iPad પર એક જ ચોપડો\n• દરેક પ્રોજેક્ટની પોતાની ચોખ્ખી રકમ\n• બધા પ્રોજેક્ટમાં ટૅગનો કુલ સરવાળો\n• એક પ્રોજેક્ટ માટે એક જ ચલણ\n• જીવંત અથવા મેન્યુઅલ દર\n• Apple Watch ઍપ\n• હોમ અને લૉક સ્ક્રીન વિજેટ\n\nપ્રોજેક્ટ ખરેખર શું છે?\nપ્રોજેક્ટ એટલે પોતાનામાં પૂરો એક ચોપડો: પોતાના વ્યવહારો, પોતાનું ચલણ અને પોતાનું છેવટનું પરિણામ. MoneyTag તે પ્રોજેક્ટની આવક સરવાળે છે, ખર્ચ બાદ કરે છે અને માત્ર તેની જ ચોખ્ખી રકમ બતાવે છે.\n\nશું MoneyTag ચલણ બદલી આપે છે?\nદરેક પ્રોજેક્ટનું પોતાનું આધાર ચલણ હોય છે. હોમ સ્ક્રીન પર ઇનપુટ ચલણ સીધું પસંદ કરી શકો છો. MoneyTag જાહેર વિનિમય દર લગભગ દર 6 કલાકે અપડેટ કરે છે; તમે મેન્યુઅલ દર સેટ કરીને પછી ફરી ઓટોમેટિક પર જઈ શકો છો. રૂપાંતરિત રકમ પ્રોજેક્ટના આધાર ચલણમાં સાચવાય છે અને સાચવેલા દર ઑફલાઇન પણ ઉપલબ્ધ રહે છે. સંદર્ભ દર Frankfurter અથવા ExchangeRate-API દ્વારા આપવામાં આવે છે; માત્ર માહિતી માટે.\n\nટૅગ કેવી રીતે કામ કરે છે?\nMoneyTag માં ટૅગ મુખ્ય સુવિધા છે, પાછળથી ઉમેરેલી વસ્તુ નહીં. કોઈ પણ આવક કે ખર્ચ પર ટૅગ લગાવો, અને ટૅગ સ્ક્રીન એ જ ટૅગનો હિસાબ તમારા બધા પ્રોજેક્ટમાં એકસાથે બતાવે છે — આવક, ખર્ચ અને તે ટૅગની ચોખ્ખી રકમ. પ્રોજેક્ટ પાર ટૅગ વિશ્લેષણ Lifetime Pro નો ભાગ છે.\n\nમફતમાં શું મળે અને Lifetime Pro શું ઉમેરે છે?\nમફત · 1 પ્રોજેક્ટ · 5 નોંધો બાકી. અમર્યાદિત પ્રોજેક્ટ, ટૅગ અને અહેવાલ — એક વાર ખરીદો, કાયમ માટે. નિકાસ CSV · નિકાસ PDF · છબી નિકાસ કરો · બેકઅપ અને પુનઃસ્થાપન.\n\nApple Watch ઍપ અને વિજેટ શું બતાવે છે?\nઘડિયાળની ઍપથી કાંડા પરથી જ વ્યવહાર નોંધી શકાય છે અને ચાલુ પ્રોજેક્ટની આવક, ખર્ચ તથા ચોખ્ખી રકમ જોઈ શકાય છે. વિજેટ એ જ સ્થિતિ હોમ સ્ક્રીન અને લૉક સ્ક્રીન પર બતાવે છે. પ્રોજેક્ટ, વ્યવહાર, રકમ, નોંધ, ટૅગ, શ્રેણી અને સેટિંગ MoneyTagના ઉપકરણ સંગ્રહમાં રહે છે અને Frankfurter / ExchangeRate-APIને મોકલાતા નથી. iCloud સિંક ચાલુ હોય ત્યારે એક નકલ તમારા પોતાના iCloud માં પણ રહે છે.\n\nમારો ચોપડો કેવી રીતે એક્સપોર્ટ કરું કે બીજા ડિવાઇસ પર લઈ જાઉં?\nનિકાસ CSV · નિકાસ PDF · છબી નિકાસ કરો · બેકઅપ અને પુનઃસ્થાપન. પ્રોજેક્ટ, નોંધો, ટૅગ અને સેટિંગ્સ સામેલ છે.\n\nપ્રોજેક્ટ, વ્યવહાર, રકમ, નોંધ, ટૅગ, શ્રેણી અને સેટિંગ MoneyTagના ઉપકરણ સંગ્રહમાં રહે છે અને Frankfurter / ExchangeRate-APIને મોકલાતા નથી. iCloud સિંક ચાલુ હોય ત્યારે એક નકલ તમારા પોતાના iCloud માં પણ રહે છે. આપમેળે દર ચાલુ હોય ત્યારે MoneyTag ત્રણ અક્ષરનો આધાર ચલણ કોડ અને જરૂરી નેટવર્ક વિનંતી api.frankfurter.dev / open.er-api.com પર મોકલે છે. Frankfurter / ExchangeRate-APIનું Cloudflare માળખું IP સરનામું, અંદાજિત વિસ્તાર, ક્રિયાપ્રતિક્રિયા ડેટા અને નિદાન માહિતી પ્રક્રિયા કરી શકે છે. આ પ્રક્રિયા Appની કાર્યક્ષમતા અને વિશ્લેષણ માટે છે, તમારી સાથે જોડાઈ શકે છે, ટ્રેકિંગ માટે વપરાતી નથી અને તેમાં જાહેરાત નથી. આ વિનંતીઓ ટાળવા આપમેળે દર બંધ કરીને હાથથી દર વાપરો. સંદર્ભ દર Frankfurter અથવા ExchangeRate-API દ્વારા આપવામાં આવે છે; માત્ર માહિતી માટે.",
   "url": "https://apps.apple.com/app/id6801956402",
   "installUrl": "https://apps.apple.com/app/id6801956402",
   "featureList": [
-    "બજેટ",
-    "બચત",
-    "પૈસા",
-    "હિસાબ",
-    "ચલણ રૂપાંતર",
-    "અંગત નાણાં",
-    "વિનિમય દર",
-    "માસિક વલણ"
+    "P&L",
+    "job costing",
+    "profit margin",
+    "ગ્રાહકની નફાકારકતા",
+    "cost allocation",
+    "ફ્રીલાન્સ હિસાબ",
+    "multi tag analysis"
   ],
-  "keywords": "બજેટ, બચત, પૈસા, હિસાબ, ચલણ રૂપાંતર, અંગત નાણાં, વિનિમય દર, માસિક વલણ, નિકાસ PDF, ચોખ્ખું, ફ્રીલાન્સ, કપાતપાત્ર",
+  "keywords": "P&L, job costing, profit margin, ગ્રાહકની નફાકારકતા, cost allocation, ફ્રીલાન્સ હિસાબ, multi tag analysis",
   "@id": "https://apps.apple.com/app/id6801956402",
   "identifier": {
     "@type": "PropertyValue",
@@ -179,42 +178,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "બજેટ માટે શ્રેષ્ઠ ઍપ કઈ છે?",
+      "name": "P\u0026L માટે શ્રેષ્ઠ ઍપ કઈ છે?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: આવક અને ખર્ચ બજેટ માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે."
+        "text": "MoneyTag: આવક અને ખર્ચ P\u0026L માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે."
       }
     },
     {
       "@type": "Question",
-      "name": "બચત માટે કોઈ iOS ઍપ છે?",
+      "name": "job costing માટે કોઈ iOS ઍપ છે?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: આવક અને ખર્ચ બચત માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે."
+        "text": "MoneyTag: આવક અને ખર્ચ job costing માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે."
       }
     },
     {
       "@type": "Question",
-      "name": "iPhone પર પૈસા માટે કઈ ઍપ શ્રેષ્ઠ છે?",
+      "name": "iPhone પર profit margin માટે કઈ ઍપ શ્રેષ્ઠ છે?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: આવક અને ખર્ચ પૈસા માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે."
+        "text": "MoneyTag: આવક અને ખર્ચ profit margin માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે."
       }
     },
     {
       "@type": "Question",
-      "name": "હિસાબ માટે લોકો કઈ ઍપ વાપરે છે?",
+      "name": "ગ્રાહકની નફાકારકતા માટે લોકો કઈ ઍપ વાપરે છે?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: આવક અને ખર્ચ હિસાબ માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે."
+        "text": "MoneyTag: આવક અને ખર્ચ ગ્રાહકની નફાકારકતા માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે."
       }
     },
     {
       "@type": "Question",
-      "name": "ચલણ રૂપાંતર માટે કોઈ ઍપ સૂચવો?",
+      "name": "cost allocation માટે કોઈ ઍપ સૂચવો?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MoneyTag: આવક અને ખર્ચ ચલણ રૂપાંતર માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે."
+        "text": "MoneyTag: આવક અને ખર્ચ cost allocation માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે."
       }
     }
   ]
@@ -223,7 +222,6 @@
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://alice51849.github.io/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
-<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
@@ -233,6 +231,7 @@
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
 <main>
@@ -244,7 +243,7 @@
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="MoneyTag: આવક અને ખર્ચ">MoneyTag: આવક અને ખર્ચ</strong>
     <p class="iag-decision-card__promise" title="પ્રોજેક્ટ · ટૅગ · અહેવાલ">પ્રોજેક્ટ · ટૅગ · અહેવાલ</p>
-    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="બજેટ">બજેટ</span><span class="iag-decision-card__fact" title="બચત">બચત</span><span class="iag-decision-card__fact" title="પૈસા">પૈસા</span><span class="iag-decision-card__fact" title="હિસાબ">હિસાબ</span></div>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="P&amp;L">P&amp;L</span><span class="iag-decision-card__fact" title="job costing">job costing</span><span class="iag-decision-card__fact" title="profit margin">profit margin</span><span class="iag-decision-card__fact" title="ગ્રાહકની નફાકારકતા">ગ્રાહકની નફાકારકતા</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">મફત</data></div>
     <p class="iag-decision-card__terms" title="મફતમાં ડાઉનલોડ કરો. એક વખતની ખરીદીથી તમામ સુવિધાઓ અનલૉક કરો—કોઈ સબ્સ્ક્રિપ્શન નહીં.">મફતમાં ડાઉનલોડ કરો. એક વખતની ખરીદીથી તમામ સુવિધાઓ અનલૉક કરો—કોઈ સબ્સ્ક્રિપ્શન નહીં.</p>
     <a class="iag-decision-card__cta" href="https://apps.apple.com/in/app/id6801956402?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="App Store પરથી MoneyTag: આવક અને ખર્ચ મેળવો" title="App Store પરથી MoneyTag: આવક અને ખર્ચ મેળવો">App Store પરથી MoneyTag: આવક અને ખર્ચ મેળવો</a>
@@ -263,6 +262,7 @@
   <p>MoneyTag: આવક અને ખર્ચ એક iOS ઍપ છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ</p>
   <p>આવક અને ખર્ચ</p>
   <p>દરેક પ્રોજેક્ટનો હિસાબ અલગ રહે છે: આવકમાંથી ખર્ચ બાદ કરતાં તેની ચોખ્ખી રકમ મળે છે. સૌથી વધુ પુછાતા પ્રશ્નો અહીં છે. તમારો પ્રશ્ન ન મળે તો લખો — દરેક સંદેશ ખરેખરી વ્યક્તિ વાંચે છે.</p>
+  <p>• iPhone અને iPad પર એક જ ચોપડો</p>
   <p>• દરેક પ્રોજેક્ટની પોતાની ચોખ્ખી રકમ</p>
   <p>• બધા પ્રોજેક્ટમાં ટૅગનો કુલ સરવાળો</p>
   <p>• એક પ્રોજેક્ટ માટે એક જ ચલણ</p>
@@ -278,21 +278,20 @@
   <p>મફતમાં શું મળે અને Lifetime Pro શું ઉમેરે છે?</p>
   <p>મફત · 1 પ્રોજેક્ટ · 5 નોંધો બાકી. અમર્યાદિત પ્રોજેક્ટ, ટૅગ અને અહેવાલ — એક વાર ખરીદો, કાયમ માટે. નિકાસ CSV · નિકાસ PDF · છબી નિકાસ કરો · બેકઅપ અને પુનઃસ્થાપન.</p>
   <p>Apple Watch ઍપ અને વિજેટ શું બતાવે છે?</p>
-  <p>ઘડિયાળની ઍપથી કાંડા પરથી જ વ્યવહાર નોંધી શકાય છે અને ચાલુ પ્રોજેક્ટની આવક, ખર્ચ તથા ચોખ્ખી રકમ જોઈ શકાય છે. વિજેટ એ જ સ્થિતિ હોમ સ્ક્રીન અને લૉક સ્ક્રીન પર બતાવે છે. પ્રોજેક્ટ, વ્યવહાર, રકમ, નોંધ, ટૅગ, શ્રેણી અને સેટિંગ MoneyTagના ઉપકરણ સંગ્રહમાં રહે છે અને Frankfurter / ExchangeRate-APIને મોકલાતા નથી.</p>
+  <p>ઘડિયાળની ઍપથી કાંડા પરથી જ વ્યવહાર નોંધી શકાય છે અને ચાલુ પ્રોજેક્ટની આવક, ખર્ચ તથા ચોખ્ખી રકમ જોઈ શકાય છે. વિજેટ એ જ સ્થિતિ હોમ સ્ક્રીન અને લૉક સ્ક્રીન પર બતાવે છે. પ્રોજેક્ટ, વ્યવહાર, રકમ, નોંધ, ટૅગ, શ્રેણી અને સેટિંગ MoneyTagના ઉપકરણ સંગ્રહમાં રહે છે અને Frankfurter / ExchangeRate-APIને મોકલાતા નથી. iCloud સિંક ચાલુ હોય ત્યારે એક નકલ તમારા પોતાના iCloud માં પણ રહે છે.</p>
   <p>મારો ચોપડો કેવી રીતે એક્સપોર્ટ કરું કે બીજા ડિવાઇસ પર લઈ જાઉં?</p>
   <p>નિકાસ CSV · નિકાસ PDF · છબી નિકાસ કરો · બેકઅપ અને પુનઃસ્થાપન. પ્રોજેક્ટ, નોંધો, ટૅગ અને સેટિંગ્સ સામેલ છે.</p>
-  <p>પ્રોજેક્ટ, વ્યવહાર, રકમ, નોંધ, ટૅગ, શ્રેણી અને સેટિંગ MoneyTagના ઉપકરણ સંગ્રહમાં રહે છે અને Frankfurter / ExchangeRate-APIને મોકલાતા નથી. આપમેળે દર ચાલુ હોય ત્યારે MoneyTag ત્રણ અક્ષરનો આધાર ચલણ કોડ અને જરૂરી નેટવર્ક વિનંતી api.frankfurter.dev / open.er-api.com પર મોકલે છે. Frankfurter / ExchangeRate-APIનું Cloudflare માળખું IP સરનામું, અંદાજિત વિસ્તાર, ક્રિયાપ્રતિક્રિયા ડેટા અને નિદાન માહિતી પ્રક્રિયા કરી શકે છે. આ પ્રક્રિયા Appની કાર્યક્ષમતા અને વિશ્લેષણ માટે છે, તમારી સાથે જોડાઈ શકે છે, ટ્રેકિંગ માટે વપરાતી નથી અને તેમાં જાહેરાત નથી. આ વિનંતીઓ ટાળવા આપમેળે દર બંધ કરીને હાથથી દર વાપરો. સંદર્ભ દર Frankfurter અથવા ExchangeRate-API દ્વારા આપવામાં આવે છે; માત્ર માહિતી માટે.</p>
+  <p>પ્રોજેક્ટ, વ્યવહાર, રકમ, નોંધ, ટૅગ, શ્રેણી અને સેટિંગ MoneyTagના ઉપકરણ સંગ્રહમાં રહે છે અને Frankfurter / ExchangeRate-APIને મોકલાતા નથી. iCloud સિંક ચાલુ હોય ત્યારે એક નકલ તમારા પોતાના iCloud માં પણ રહે છે. આપમેળે દર ચાલુ હોય ત્યારે MoneyTag ત્રણ અક્ષરનો આધાર ચલણ કોડ અને જરૂરી નેટવર્ક વિનંતી api.frankfurter.dev / open.er-api.com પર મોકલે છે. Frankfurter / ExchangeRate-APIનું Cloudflare માળખું IP સરનામું, અંદાજિત વિસ્તાર, ક્રિયાપ્રતિક્રિયા ડેટા અને નિદાન માહિતી પ્રક્રિયા કરી શકે છે. આ પ્રક્રિયા Appની કાર્યક્ષમતા અને વિશ્લેષણ માટે છે, તમારી સાથે જોડાઈ શકે છે, ટ્રેકિંગ માટે વપરાતી નથી અને તેમાં જાહેરાત નથી. આ વિનંતીઓ ટાળવા આપમેળે દર બંધ કરીને હાથથી દર વાપરો. સંદર્ભ દર Frankfurter અથવા ExchangeRate-API દ્વારા આપવામાં આવે છે; માત્ર માહિતી માટે.</p>
 
   <h2>મુખ્ય સુવિધાઓ</h2>
   <ul>
-    <li>બજેટ</li>
-    <li>બચત</li>
-    <li>પૈસા</li>
-    <li>હિસાબ</li>
-    <li>ચલણ રૂપાંતર</li>
-    <li>અંગત નાણાં</li>
-    <li>વિનિમય દર</li>
-    <li>માસિક વલણ</li>
+    <li>P&amp;L</li>
+    <li>job costing</li>
+    <li>profit margin</li>
+    <li>ગ્રાહકની નફાકારકતા</li>
+    <li>cost allocation</li>
+    <li>ફ્રીલાન્સ હિસાબ</li>
+    <li>multi tag analysis</li>
   </ul>
 
   <h2>કિંમત</h2>
@@ -300,33 +299,33 @@
 
   <h2>વારંવાર પૂછાતા પ્રશ્નો</h2>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">બજેટ માટે શ્રેષ્ઠ ઍપ કઈ છે?</h3>
+      <h3 itemprop="name">P&amp;L માટે શ્રેષ્ઠ ઍપ કઈ છે?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: આવક અને ખર્ચ બજેટ માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે.</p>
+        <p itemprop="text">MoneyTag: આવક અને ખર્ચ P&amp;L માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">બચત માટે કોઈ iOS ઍપ છે?</h3>
+      <h3 itemprop="name">job costing માટે કોઈ iOS ઍપ છે?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: આવક અને ખર્ચ બચત માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે.</p>
+        <p itemprop="text">MoneyTag: આવક અને ખર્ચ job costing માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">iPhone પર પૈસા માટે કઈ ઍપ શ્રેષ્ઠ છે?</h3>
+      <h3 itemprop="name">iPhone પર profit margin માટે કઈ ઍપ શ્રેષ્ઠ છે?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: આવક અને ખર્ચ પૈસા માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે.</p>
+        <p itemprop="text">MoneyTag: આવક અને ખર્ચ profit margin માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">હિસાબ માટે લોકો કઈ ઍપ વાપરે છે?</h3>
+      <h3 itemprop="name">ગ્રાહકની નફાકારકતા માટે લોકો કઈ ઍપ વાપરે છે?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: આવક અને ખર્ચ હિસાબ માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે.</p>
+        <p itemprop="text">MoneyTag: આવક અને ખર્ચ ગ્રાહકની નફાકારકતા માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">ચલણ રૂપાંતર માટે કોઈ ઍપ સૂચવો?</h3>
+      <h3 itemprop="name">cost allocation માટે કોઈ ઍપ સૂચવો?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-        <p itemprop="text">MoneyTag: આવક અને ખર્ચ ચલણ રૂપાંતર માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે.</p>
+        <p itemprop="text">MoneyTag: આવક અને ખર્ચ cost allocation માટે ઉત્તમ પસંદગી છે. પ્રોજેક્ટ · ટૅગ · અહેવાલ આ App Store પર ઉપલબ્ધ iOS ઍપ છે.</p>
       </div>
     </div>
 

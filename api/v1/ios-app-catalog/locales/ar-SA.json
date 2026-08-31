@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "ar-SA",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -56,7 +56,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: برومبت من ملفاتك",
       "summary": "سياق أفضل. إجابات أفضل.",
       "category": "productivity",
       "search_terms": [
@@ -137,7 +137,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: اختبار إنجليزي",
       "summary": "تدرّب على فهم الإنجليزية المسموعة والمقروءة في بيئة مصممة للبالغين الذين يريدون بناء الدقة والسرعة تحت ضغط الوقت. يجمع التطبيق بين جلسات قصيرة واضحة ومحاكاة أطول، لتعرف ما الذي يحتاج إلى مراجعة بدل تكرار الأسئلة عشوائيًا.",
       "category": "kids",
       "search_terms": [
@@ -467,7 +467,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: مصاريف وميزانية",
       "summary": "G+Money يجعل تسجيل المصروفات اليومية والميزانية أمراً بسيطاً وخفيفاً. سجّل ما تدفعه، رتّب المصروفات حسب الفئة أو الرحلة، وشاهد فوراً أين يذهب مالك.",
       "category": "finance",
       "search_terms": [
@@ -526,7 +526,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: مصاريف السفر",
       "summary": "G+Money Lite — متتبع ذكي للعملات والسفر",
       "category": "finance",
       "search_terms": [
@@ -565,7 +565,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: السعر بالساعات",
       "summary": "HoursTag Lite - شاهد السعر الحقيقي للأشياء",
       "category": "finance",
       "search_terms": [
@@ -666,7 +666,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: حظر التطبيقات",
       "summary": "احمِ ساعاتك الأكثر قيمة. يساعدك LockHour Pro على بدء جلسات تركيز هادئة، وتقليل مشتتات الهاتف، وبناء عادات إنتاجية ثابتة دون فوضى. مناسب للدراسة والكتابة والتخطيط والعمل العميق.",
       "category": "productivity",
       "search_terms": [
@@ -1356,7 +1356,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: إزالة معلوماتك",
       "summary": "شارك بأمان دون فقدان السياق المفيد. يعثر Mask My File على بياناتك الخاصة قبل إرسال الملف، ويحجبها نهائياً، ثم يعيد فتح الملف الناتج ويتحقق منه قبل أن يعرض حالة Private Ready.",
       "category": "photo-utility",
       "search_terms": [
@@ -1496,14 +1496,13 @@
       "summary": "لكل مشروع دفتره الخاص: الدخل ناقص المصروفات هو صافي نتيجته. هذه أكثر الأسئلة تكراراً، وإن لم تجد سؤالك بينها فراسلنا — يقرأ كل رسالة شخص حقيقي.",
       "category": "finance",
       "search_terms": [
-        "تتبع المصاريف",
-        "مالية",
-        "محول العملات",
-        "سعر الصرف",
-        "إدارة المال",
-        "الاتجاه الشهري",
-        "نسخ احتياطي واستعادة",
-        "تصدير PDF"
+        "قائمة أرباح وخسائر",
+        "تكلفة المهمة",
+        "هامش الربح",
+        "ربحية العميل",
+        "توزيع التكاليف",
+        "محاسبة العمل الحر",
+        "تحليل مالي"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1575,7 +1574,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: فلاتر ريترو",
       "summary": "اكتشف تجربة التصوير الفوتوغرافي الكلاسيكي مع PhotoCream Pro، تطبيق كاميرا الفيلم المتميز الذي يقدم أكثر من 100 فلتر أنالوج أصلي ومعاينة مباشرة. كما يحتوي على محرر صور احترافي مزود بميزات تجميل البشرة بتقنية فصل التردد، وإعادة تشكيل الوجه/الجسم، وتعديل الضوء/اللون/المنحنيات. شراء لمرة واحدة، بدون اشتراك، بدون إعلانات، وخصوصية كاملة. مناسب لأجهزة iPhone وiPad، ومتوفرة بـ 22 لغة. التقط لحظاتك بأسلوب كلاسيكي وعدل صورك بلمسة احترافية. قم بتنزيله الآن وغير طريقة التقاطك وتحريرك للصور!",
       "category": "photo-utility",
       "search_terms": [
@@ -1635,7 +1634,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: تنظيف الصور",
       "summary": "استعد مساحة كبيرة على iPhone بتنظيف الصور التي لم تعد تحتاجها: النسخ المتكررة، لقطات الشاشة القديمة، الصور الضبابية والفيديوهات الكبيرة التي تملأ التخزين بسرعة.",
       "category": "photo-utility",
       "search_terms": [
@@ -1927,7 +1926,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: إنشاء صور وثائق",
       "summary": "Snapport Lite - أنشئ صور جواز السفر والتأشيرة والهوية مع إرشادات المقاس والخلفية والطباعة.",
       "category": "photo-utility",
       "search_terms": [
@@ -2168,7 +2167,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: تشخيص مشاكل الشبكة",
       "summary": "اعثر على السبب الأرجح عبر فحوص مستقلة للمسارات وDNS وTCP وTLS والتوقيت والثبات. دفعة مقدمة واحدة، بلا اشتراك أو إعلانات أو تتبع.",
       "category": "photo-utility",
       "search_terms": [

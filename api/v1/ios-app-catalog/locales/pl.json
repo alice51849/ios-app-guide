@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "pl",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -52,7 +52,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: Pliki na prompt AI",
       "summary": "Lepszy kontekst. Lepsze odpowiedzi.",
       "category": "productivity",
       "search_terms": [
@@ -129,7 +129,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: Test angielskiego",
       "summary": "Zachowaj jasność myślenia, gdy liczy się każda sekunda. Aim990 Plus to intensywny trening słuchania i czytania po angielsku dla dorosłych, zaprojektowany z myślą o pracy pod presją czasu. Zamiast bezładnego rozwiązywania kolejnych testów otrzymujesz czytelny rytm sesji: 8 pytań rozgrzewkowych, Pressure Set z 20 pytaniami i limitem 15 minut, a następnie Mistake Replay, czyli skupioną powtórkę odpowiedzi, które sprawiły trudność.",
       "category": "kids",
       "search_terms": [
@@ -440,7 +440,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: Wydatki i budżet",
       "summary": "G+Money łączy dwa codzienne narzędzia w jednym — błyskawiczny przelicznik walut i piękny tracker wydatków — na co dzień i w podróży. Całkowicie offline. W pełni prywatnie.",
       "category": "finance",
       "search_terms": [
@@ -497,7 +497,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: Koszty podróży",
       "summary": "G+Money Lite — Sprytny przelicznik walut i wydatków podróżnych",
       "category": "finance",
       "search_terms": [
@@ -534,7 +534,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: Cena to godziny",
       "summary": "HoursTag Lite - Prawdziwa cena rzeczy",
       "category": "finance",
       "search_terms": [
@@ -629,7 +629,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: Blokuj aplikacje",
       "summary": "Chroń godziny, w których naprawdę robisz postępy. LockHour Pro pomaga uruchamiać spokojne sesje skupienia, ograniczać rozpraszanie przez telefon i budować lepsze nawyki pracy. Idealna do nauki, pisania, planowania i głębokiej pracy.",
       "category": "productivity",
       "search_terms": [
@@ -1268,7 +1268,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: Usuń swoje dane",
       "summary": "Udostępniaj bezpiecznie, nie tracąc potrzebnego kontekstu. Mask My File znajduje dane osobowe, zanim wyślesz plik, trwale zaczernia wybrane fragmenty, a następnie ponownie otwiera i sprawdza nowy plik, zanim pokaże etykietę Private Ready.",
       "category": "photo-utility",
       "search_terms": [
@@ -1393,13 +1393,12 @@
       "summary": "Każdy projekt prowadzi własną księgę: przychody minus wydatki dają jego wynik netto. Poniżej najczęstsze pytania. Jeśli nie ma wśród nich Twojego, napisz do nas — każdą wiadomość czyta żywy człowiek.",
       "category": "finance",
       "search_terms": [
-        "kontrola wydatków",
-        "przelicznik walut",
-        "oszczędzanie",
-        "Waluta",
-        "Kursy wymiany",
-        "Trend miesięczny",
-        "Eksportuj PDF"
+        "zysk strata",
+        "kalkulacja zlecenia",
+        "marża zysku",
+        "rentowność klienta",
+        "alokacja kosztów",
+        "analiza przekrojowa"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1467,7 +1466,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: Filtry filmowe",
       "summary": "PhotoCream Pro to Twoje nowe centrum kreatywności fotograficznej na urządzeniach iPhone i iPad. Przenieś swoje zdjęcia na wyższy poziom dzięki ponad 100 autentycznym filtrom analogowym, które dodadzą Twoim zdjęciom niepowtarzalny retro urok. Ciesz się podglądem na żywo, który pozwala zobaczyć efekt przed zrobieniem zdjęcia.",
       "category": "photo-utility",
       "search_terms": [
@@ -1525,7 +1524,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: Czyść zdjęcia",
       "summary": "Odzyskaj gigabajty pamięci, usuwając to, czego już nie potrzebujesz: duplikaty, stare zrzuty ekranu, rozmazane zdjęcia i duże filmy.",
       "category": "photo-utility",
       "search_terms": [
@@ -1809,7 +1808,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: Foto do dowodu",
       "summary": "Snapport Lite - Twórz zdjęcia paszportowe, wizowe i dokumentowe z pomocą narzędzi do rozmiaru, tła i gotowego do druku eksportu.",
       "category": "photo-utility",
       "search_terms": [
@@ -2043,7 +2042,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: Znajdź błędy sieci",
       "summary": "Znajdź najbardziej prawdopodobną przyczynę dzięki niezależnym testom tras, DNS, TCP, TLS, czasu i stabilności. Jedna opłata z góry, bez subskrypcji, reklam i śledzenia.",
       "category": "photo-utility",
       "search_terms": [

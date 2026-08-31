@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -64,7 +64,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief：파일을 AI 프롬프트로",
       "summary": "스크린샷, 파일, 메모, 문서를 하나의 명확한 AI 브리프로 정리하세요.",
       "category": "productivity",
       "search_terms": [
@@ -150,7 +150,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus：영어 모의고사·실전 연습",
       "summary": "많이 푸는 데서 멈추지 않고, 제한된 시간 안에 정확히 판단하는 힘까지 기르세요.",
       "category": "kids",
       "search_terms": [
@@ -530,7 +530,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money：가계부·예산·환율",
       "summary": "G+Money는 매일 쓰는 두 가지 도구를 하나로——빠른 환율 변환 ＋ 아름다운 가계부——일상에도 여행에도. 완전 오프라인, 완전 비공개.",
       "category": "finance",
       "search_terms": [
@@ -592,7 +592,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite：여행 가계부·환율",
       "summary": "G+Money Lite — 스마트 여행 환율 가계부",
       "category": "finance",
       "search_terms": [
@@ -644,7 +644,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite：노동시간으로 보는 가격",
       "summary": "HoursTag Lite - 모든 것의 진짜 가격을 보세요",
       "category": "finance",
       "search_terms": [
@@ -760,7 +760,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro：앱 차단·집중 타이머",
       "summary": "당신의 시간을 빼앗는 앱을 차단하고, 집중을 되찾으세요.",
       "category": "productivity",
       "search_terms": [
@@ -1498,7 +1498,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File：공유 전 개인정보 삭제",
       "summary": "유용한 맥락은 지키면서 안전하게 공유하세요. Mask My File은 파일을 보내기 전에 개인정보를 찾아 영구적으로 가린 뒤, 새로 내보낸 파일을 다시 열어 검증하고 나서야 Private Ready를 표시합니다.",
       "category": "photo-utility",
       "search_terms": [
@@ -1662,24 +1662,22 @@
       "summary": "프로젝트마다 장부가 따로 있습니다. 수입에서 지출을 빼면 그 프로젝트의 순액입니다. 가장 많이 받는 질문을 모았습니다. 원하는 답이 없다면 메일을 보내 주세요. 모든 메일을 사람이 직접 읽습니다.",
       "category": "finance",
       "search_terms": [
-        "지출관리",
-        "용돈기입장",
-        "환율계산기",
-        "통화변환",
-        "가계부앱",
-        "돈관리",
-        "재테크",
-        "생활비",
-        "소비관리",
-        "환율변환",
-        "오프라인",
-        "엔화환율",
-        "달러환율",
-        "월별 추이",
-        "백업 및 복원",
-        "PDF 내보내기",
-        "최근 기록",
-        "프리랜스 수입"
+        "손익계산서",
+        "작업별 원가",
+        "잡 코스팅",
+        "이익률",
+        "고객별 수익성",
+        "원가 배분",
+        "프리랜서 회계",
+        "외주 정산",
+        "계약별 손익",
+        "부업 장부",
+        "횡단 분석",
+        "공사 원가",
+        "행사 수지",
+        "임대 수익",
+        "소상공인 장부",
+        "원가율"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1761,7 +1759,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro：필름 필터·감성 보정",
       "summary": "PhotoCream Pro는 iPhone 및 iPad에서 최고의 촬영 파트너입니다. 레트로 사진 촬영 애호가나 셀카 마니아에게 완벽한 앱입니다. 100개 이상의 진짜 아날로그 필터로 모든 사진을 예술 작품으로 만듭니다. 라이브 프리뷰 기능으로 촬영 전에 필터 효과를 확인하고 완벽한 순간을 포착하세요.",
       "category": "photo-utility",
       "search_terms": [
@@ -1826,7 +1824,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro：사진 정리·중복 삭제",
       "summary": "필요 없는 사진을 정리하고 기가바이트 단위의 저장 공간을 되찾으세요 — 중복 사진, 스크린샷, 흐릿한 사진, 그리고 용량을 많이 차지하는 동영상까지.",
       "category": "photo-utility",
       "search_terms": [
@@ -2166,7 +2164,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite：집에서 증명사진",
       "summary": "Snapport Lite - 가이드 크기 조정, 배경 도구 및 인쇄 준비 완료 내보내기로 여권, 비자 및 문서 사진을 만드세요.",
       "category": "photo-utility",
       "search_terms": [
@@ -2178,7 +2176,6 @@
         "35x45",
         "2x2",
         "인쇄용 시트",
-        "무료",
         "증명사진 규격",
         "흰색 배경",
         "배경 변경",
@@ -2436,7 +2433,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid：네트워크 문제 진단",
       "summary": "다중 경로와 DNS, TCP, TLS, 응답 시간, 안정성을 함께 확인해 가장 가능성 높은 원인을 찾으세요. App Store 최초 1회 결제이며 구독, 광고, 추적이 없습니다.",
       "category": "photo-utility",
       "search_terms": [

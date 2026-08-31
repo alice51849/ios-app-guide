@@ -1,15 +1,15 @@
 ---
-title: "WiFi Aid — ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ & ಪುರಾವೆ | iOS App"
+title: "WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ & ಪುರಾವೆ | iOS App"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/kn-IN/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid — ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ & ಪುರಾವೆ | iOS App
+# WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ & ಪುರಾವೆ | iOS App
 
 ಸ್ವತಂತ್ರ DNS, TCP, TLS ಮತ್ತು ಸ್ಥಿರತೆ ಪರೀಕ್ಷೆಗಳ ಮೂಲಕ ಸಂಭವನೀಯ ಸಂಪರ್ಕ ಸಮಸ್ಯೆ ಕಂಡುಹಿಡಿಯಿರಿ. ಒಮ್ಮೆ ಮಾತ್ರ ಪಾವತಿಸಿ—ಚಂದಾದಾರಿಕೆ, ಜಾಹೀರಾತು ಅಥವಾ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ. • ಪರೀಕ್ಷೆ ಚಲಾಯಿಸಿ — ಒಂದೇ ಟ್ಯಾಪ್‌ನಲ್ಲಿ Wi-Fi, DNS ಮತ್ತು ಇಂಟರ್ನೆಟ್ ಪರೀಕ್ಷೆ • ಆಳ ಪರೀಕ್ಷೆ — ಹೆಚ್ಚಿನ ಪುರಾವೆ ಮತ್ತು ಸ್ಥಿರತೆ ಮಾದರಿಗಳು • ವೆಬ್‌ಸೈಟ್ ಪರೀಕ್ಷಿಸಿ — ಒಂದು ಗಮ್ಯ ವಿಫಲವಾಗಿದೆಯೇ ಅಥವಾ ವ್ಯಾಪಕ ಇಂಟರ್ನೆಟ್ ಸಮಸ್ಯೆಯೇ ಎಂದು ತಿಳಿಯಿರಿ • ಪುರಾವೆ — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • ಸಂಪರ್ಕ ಅಸ್ಥಿರ ಕಾಣುತ್ತಿದೆ — ವ್ಯತ್ಯಾಸ • ಪರೀಕ್ಷೆ ಇತಿಹಾಸ — ಖಾಸಗಿ ದಾಖಲೆಗಳು ಈ ಸಾಧನದಲ್ಲಿ ಮಾತ್ರ ಸಂಗ್ರಹಿತ • Apple Watch — ಪರೀಕ್ಷೆ ಚಲಾಯಿಸಿ • Widget · iPad — ಸಂಪರ್ಕಿತ · ಪರೀಕ್ಷೆ ಚಲಾಯಿಸಿ ಖಾತೆ, ಜಾಹೀರಾತು, ವಿಶ್ಲೇಷಣೆ ಅಥವಾ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ. ಖಾಸಗಿ ದಾಖಲೆಗಳು ಈ ಸಾಧನದಲ್ಲಿ ಮಾತ್ರ ಸಂಗ್ರಹಿತ. App Store ನಲ್ಲಿ ಒಮ್ಮೆ ಖರೀದಿ. ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ.
 
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್
 - App Store · ₹ 599
 
-[App Store ನಲ್ಲಿ WiFi Aid ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_kn_in&mt=8)
+[App Store ನಲ್ಲಿ WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_kn_in&mt=8)
 
 [ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/wifiaid.html)
 

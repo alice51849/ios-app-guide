@@ -2,7 +2,7 @@
 title: "SaveTag: AI بک مارکس — لنکس محفوظ کریں، بعد میں پڑھیں | iOS App"
 lang: "ur-PK"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ur-PK/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

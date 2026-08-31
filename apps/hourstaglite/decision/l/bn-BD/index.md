@@ -1,15 +1,15 @@
 ---
-title: "HoursTag Lite — বিষয়ের আসল দাম দেখুন | iOS App"
+title: "HoursTag Lite: দাম কর্মঘণ্টায় — বিষয়ের আসল দাম দেখুন | iOS App"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/bn-BD/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag Lite — বিষয়ের আসল দাম দেখুন | iOS App
+# HoursTag Lite: দাম কর্মঘণ্টায় — বিষয়ের আসল দাম দেখুন | iOS App
 
 HoursTag Lite - বিষয়ের আসল দাম দেখুন প্রতিটি ক্রয় আপনার জীবনের ঘণ্টা খরচ করে। HoursTag Lite দামগুলোকে কাজের সময়ে পরিণত করে — যাতে আপনি পরিষ্কারভাবে ব্যয় করতে পারেন। আপনার মূল্যের প্রিজম দেখুন - সময়ের খরচ: প্রতি কর্মঘণ্টায় আপনার নিট আয় - প্রকার: প্রয়োজন - চাই - প্রবণতা - আপনার মূল্যবোধের ধরন - সম্পূর্ণ মূল্য বিশ্লেষণ - একটি লক্ষ্য কত খরচ হবে?: একটি লক্ষ্য অর্জনের পেছনের কাজ দেখুন — এবং আপনার অগ্রগতি ট্র্যাক করুন। - ব্যাকআপ ও পুনরুদ্ধার: এতে আয়, ব্যয়, লক্ষ্য এবং পছন্দগুলি অন্তর্ভুক্ত রয়েছে। - Widget - Apple Watch সবকিছু আপনার ডিভাইসে থাকে। কোন অ্যাকাউন্ট নেই, কোন ট্র্যাকিং নেই। একবার পেমেন্ট · আজীবন ব্যবহার · সাবস্ক্রিপশন নেই সীমাহীন সিদ্ধান্ত ও সম্পাদনা সীমাহীন লক্ষ্য ও অগ্রগতি শেয়ার, বিশ্লেষণ ও ব্যাকআপ
 
@@ -22,7 +22,7 @@ HoursTag Lite - বিষয়ের আসল দাম দেখুন প্
 - Apple Watch
 - App Store · বিনামূল্যে
 
-[App Store থেকে HoursTag Lite ডাউনলোড করুন](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_bn_bd&mt=8)
+[App Store থেকে HoursTag Lite: দাম কর্মঘণ্টায় ডাউনলোড করুন](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
 [সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/hourstaglite.html)
 

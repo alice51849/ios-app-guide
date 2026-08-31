@@ -1,15 +1,15 @@
 ---
-title: "WiFi Aid — నెట్వర్క్ నిర్ధారణ & సాక్ష్యం | iOS App"
+title: "WiFi Aid: నెట్వర్క్ సమస్య — నెట్వర్క్ నిర్ధారణ & సాక్ష్యం | iOS App"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/te-IN/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid — నెట్వర్క్ నిర్ధారణ & సాక్ష్యం | iOS App
+# WiFi Aid: నెట్వర్క్ సమస్య — నెట్వర్క్ నిర్ధారణ & సాక్ష్యం | iOS App
 
 స్వతంత్ర DNS, TCP, TLS, టైమింగ్, స్థిరత్వ పరీక్షల ద్వారా సంభావ్య కనెక్షన్ సమస్యను గుర్తించండి. ఒకే ఒక్క కొనుగోలు—చందా, ప్రకటనలు, ట్రాకింగ్ లేదు. • పరీక్ష నడపండి — ఒక్క ట్యాప్‌లో Wi-Fi, DNS, ఇంటర్నెట్ పరీక్ష • డీప్ చెక్ — అధిక సాక్ష్యం, స్థిరత్వ నమూనాలు • వెబ్‌సైట్ తనిఖీ — ఒక గమ్యస్థానం వైఫల్యమైందా, విస్తృత ఇంటర్నెట్ సమస్యా అని తెలుసుకోండి • సాక్ష్యం — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • కనెక్షన్ అస్థిరంగా కనిపిస్తోంది — వైవిధ్యం • పరీక్ష చరిత్ర — ఈ పరికరంలో మాత్రమే నిల్వ చేయబడిన ప్రైవేట్ రికార్డులు • Apple Watch — పరీక్ష నడపండి • Widget · iPad — కనెక్ట్ అయింది · పరీక్ష నడపండి ఖాతా, ప్రకటనలు, అనలిటిక్స్, ట్రాకింగ్ లేదు. ఈ పరికరంలో మాత్రమే నిల్వ చేయబడిన ప్రైవేట్ రికార్డులు. App Store లో ఒకే ఒక్క కొనుగోలు. చందా లేదు.
 
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - చెల్లింపు డౌన్లోడ్
 - App Store · ₹ 599
 
-[App Store నుంచి WiFi Aid పొందండి](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_te_in&mt=8)
+[App Store నుంచి WiFi Aid: నెట్వర్క్ సమస్య పొందండి](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_te_in&mt=8)
 
 [పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/wifiaid.html)
 

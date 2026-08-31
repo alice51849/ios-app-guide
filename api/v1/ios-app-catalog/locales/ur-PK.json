@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "ur-PK",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -54,7 +54,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: فائل سے AI پرامپٹ",
       "summary": "بہتر سیاق و سباق۔ بہتر جوابات۔",
       "category": "productivity",
       "search_terms": [
@@ -135,7 +135,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: انگریزی مشق ٹیسٹ",
       "summary": "یہ ایپ ان بالغ افراد کے لیے بنائی گئی ہے جو وقت کے دباؤ میں انگریزی سننے اور پڑھنے کی درستگی اور رفتار بہتر کرنا چاہتے ہیں۔ بے ترتیب سوالات دہرانے کے بجائے مختصر نشستیں، طویل فرضی امتحانات اور واضح کارکردگی کا جائزہ آپ کو بتاتا ہے کہ اگلی توجہ کہاں دینی ہے۔",
       "category": "kids",
       "search_terms": [
@@ -465,7 +465,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: اخراجات اور بجٹ",
       "summary": "G+Money آپ کے لئے دو اہم ٹولز ایک ہی جگہ فراہم کرتا ہے — تیز رفتار کرنسی کنورٹر اور خوبصورت اخراجات ٹریکر — روزمرہ زندگی اور سفر کے لئے بنایا گیا۔ مکمل طور پر آف لائن۔ مکمل رازداری۔",
       "category": "finance",
       "search_terms": [
@@ -522,7 +522,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: سفری اخراجات",
       "summary": "G+Money Lite — سمارٹ سفر کرنسی اور خرچ ٹریکر",
       "category": "finance",
       "search_terms": [
@@ -562,7 +562,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: قیمت گھنٹوں میں",
       "summary": "HoursTag Lite - چیزوں کی اصل قیمت دیکھیں",
       "category": "finance",
       "search_terms": [
@@ -665,7 +665,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: ایپ بلاک",
       "summary": "ایپس کو بلاک کریں جو آپ کا وقت چراتی ہیں اور اپنی توجہ واپس پائیں۔",
       "category": "productivity",
       "search_terms": [
@@ -1314,7 +1314,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: معلومات ہٹائیں",
       "summary": "مفید سیاق کھوئے بغیر محفوظ طریقے سے شیئر کریں۔ Mask My File فائل بھیجنے سے پہلے نجی تفصیلات ڈھونڈتا ہے، انہیں ہمیشہ کے لیے چھپاتا ہے، پھر تیار فائل دوبارہ کھول کر جانچتا ہے اور تب Private Ready دکھاتا ہے۔",
       "category": "photo-utility",
       "search_terms": [
@@ -1449,15 +1449,13 @@
       "summary": "ہر پروجیکٹ کا اپنا کھاتہ ہوتا ہے: آمدنی میں سے اخراجات نکال کر اس کی خالص رقم بنتی ہے۔ سب سے زیادہ پوچھے جانے والے سوال یہ رہے۔ آپ کا سوال یہاں نہ ملے تو ہمیں لکھیے — ہر پیغام ایک حقیقی شخص پڑھتا ہے۔",
       "category": "finance",
       "search_terms": [
-        "کرنسی کنورٹر",
-        "ذاتی مالیات",
-        "شرح تبادلہ",
-        "ماہانہ رجحان",
-        "PDF برآمد کریں",
-        "اندراجات",
-        "فری لانس",
-        "تنخواہ",
-        "قابلِ کٹوتی"
+        "نفع نقصان حساب",
+        "کام کی مکمل لاگت",
+        "منافع مارجن",
+        "کلائنٹ کمائی",
+        "خرچ کی تقسیم",
+        "فری لانس کھاتہ",
+        "کثیر ٹیگ تجزیہ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1527,7 +1525,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: فلم فلٹرز",
       "summary": "PhotoCream Pro آپ کے فون کو ایک بہترین فلم کیمرا اور پروفیشنل فوٹو سٹوڈیو میں بدل دیتا ہے۔ حقیقی اینالاگ لُکس کو حقیقی وقت میں شوٹ کریں، پھر ہر تفصیل کو بہتر بنائیں — سب کچھ ڈیوائس پر، کوئی سبسکرپشن نہیں، کوئی اشتہار نہیں۔",
       "category": "photo-utility",
       "search_terms": [
@@ -1590,7 +1588,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: تصاویر کی صفائی",
       "summary": "اپنی ڈیوائس کی میموری کو گیگا بائٹس تک خالی کریں، غیر ضروری تصاویر جیسے ڈپلیکیٹ، اسکرین شاٹس، دھندلی تصاویر، اور بڑی ویڈیوز کو صاف کرکے۔",
       "category": "photo-utility",
       "search_terms": [
@@ -1869,7 +1867,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: شناختی تصاویر",
       "summary": "Snapport Lite - پاسپورٹ، ویزا، اور دستاویزات کی تصاویر بنائیں، رہنمائی کے سائزنگ، پس منظر کے ٹولز، اور پرنٹ کے لیے تیار برآمد کے ساتھ۔",
       "category": "photo-utility",
       "search_terms": [
@@ -2108,7 +2106,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: نیٹ ورک مسائل تلاش",
       "summary": "آزادانہ راستے، DNS، TCP، TLS، وقت اور استحکام کی جانچ سے کنکشن کا سب سے ممکنہ مسئلہ دریافت کریں۔ ایک بار ادائیگی — کوئی سبسکرپشن، اشتہار یا ٹریکنگ نہیں۔",
       "category": "photo-utility",
       "search_terms": [

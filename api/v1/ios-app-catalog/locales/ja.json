@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -68,7 +68,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief：資料から AI プロンプト",
       "summary": "スクリーンショット、ファイル、メモ、ドキュメントを、ひとつの明確な AI 要約にまとめます。",
       "category": "productivity",
       "search_terms": [
@@ -155,7 +155,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus：英語模試・時間制限",
       "summary": "ただ問題数をこなすのではなく、時間の重圧の中で正確に判断する力を鍛える。",
       "category": "kids",
       "search_terms": [
@@ -530,7 +530,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money：家計簿・予算・為替",
       "summary": "G+Money は、毎日使う2つの道具を1つに——高速な通貨換算 ＋ 美しい家計簿——日常にも旅行にも。完全オフライン、完全プライベート。",
       "category": "finance",
       "search_terms": [
@@ -596,7 +596,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite：旅の家計簿・為替",
       "summary": "G+Money Lite — かしこい旅行両替＆家計簿",
       "category": "finance",
       "search_terms": [
@@ -646,7 +646,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite：働く時間で見る値段",
       "summary": "HoursTag Lite - モノの本当の値段が見える",
       "category": "finance",
       "search_terms": [
@@ -760,7 +760,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro：アプリ制限・集中タイマー",
       "summary": "あなたの時間を奪うアプリをブロックして、集中を取り戻す。",
       "category": "productivity",
       "search_terms": [
@@ -1482,7 +1482,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File：共有前に個人情報を削除",
       "summary": "大切な文脈を保ったまま、安全に共有できます。Mask My File はファイルを送る前に個人情報を見つけて恒久的に黒塗りし、書き出した新しいファイルを開き直して検証してから Private Ready を表示します。",
       "category": "photo-utility",
       "search_terms": [
@@ -1635,23 +1635,24 @@
       "summary": "プロジェクトごとに帳簿は独立しています。収入から支出を引いた金額が、そのプロジェクトの純額です。よくある質問をまとめました。解決しない場合はメールでご連絡ください。すべて開発者本人が読んでいます。",
       "category": "finance",
       "search_terms": [
-        "家計簿アプリ",
-        "支出管理",
-        "お小遣い帳",
-        "通貨換算",
-        "為替レート",
-        "お金管理",
-        "支出記録",
-        "レート計算",
-        "家計管理",
-        "予算管理",
-        "両替計算",
-        "オフライン",
-        "月別の推移",
-        "バックアップと復元",
-        "PDF書き出し",
-        "最近の記録",
-        "受注収入"
+        "損益計算書",
+        "案件別原価",
+        "ジョブコスト",
+        "利益率",
+        "顧客別採算",
+        "原価配賦",
+        "フリーランス会計",
+        "受注収支",
+        "横断分析",
+        "副業収支",
+        "案件利益",
+        "粗利管理",
+        "原価管理",
+        "委託業務会計",
+        "請負採算",
+        "イベント収支",
+        "賃貸収支",
+        "黒字化"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1730,7 +1731,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro：フィルム風フィルター",
       "summary": "PhotoCream Proは、iPhoneとiPadでの究極の撮影パートナーです。レトロな写真撮影やセルフィーが好きな方に最適です。100以上の本格的なアナログフィルターで、写真をアート作品に変えます。ライブプレビュー機能で、撮影前にフィルター効果を確認し、完璧な瞬間を捉えます。",
       "category": "photo-utility",
       "search_terms": [
@@ -1792,7 +1793,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro：写真整理・重複削除",
       "summary": "不要な写真を片付けて、数GBの空き容量を取り戻しましょう——重複、スクリーンショット、ぼやけた写真、そして容量を圧迫する動画まで。",
       "category": "photo-utility",
       "search_terms": [
@@ -2111,7 +2112,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite：自宅で証明写真",
       "summary": "Snapport Lite - ガイド付きのサイズ調整、背景ツール、印刷準備完了のエクスポートでパスポート、ビザ、書類写真を作成します。",
       "category": "photo-utility",
       "search_terms": [
@@ -2123,7 +2124,6 @@
         "レイアウト印刷",
         "35x45",
         "2x2",
-        "無料",
         "証明写真 自宅",
         "証明写真 サイズ",
         "印刷用シート",
@@ -2367,7 +2367,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid：ネット不調の原因を特定",
       "summary": "複数経路、DNS、TCP、TLS、応答時間、安定性を照合し、接続不良の原因候補を明確に。App Storeで一度だけ購入。サブスク・広告・追跡なし。",
       "category": "photo-utility",
       "search_terms": [

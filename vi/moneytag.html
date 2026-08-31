@@ -8,7 +8,7 @@
 <!-- guide-design:end -->
 <title>MoneyTag: Thu và chi — Dự án · Thẻ · Báo cáo | iOS App</title>
 <meta name="description" content="Thu và chi">
-<meta name="keywords" content="tài chính, chuyển đổi tiền tệ, tỷ giá, Xu hướng theo tháng, Sao lưu &amp; khôi phục, Xuất PDF, Nhận việc tự do">
+<meta name="keywords" content="P&amp;L, giá vốn công việc, biên lợi nhuận, lãi theo khách, sổ freelancer, phân tích chéo, hộ kinh doanh nhỏ">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/vi/moneytag.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6801956402">
@@ -134,19 +134,19 @@
   "name": "MoneyTag: Thu và chi",
   "operatingSystem": "iOS",
   "applicationCategory": "FinanceApplication",
-  "description": "Thu và chi\n\nMỗi dự án có sổ sách riêng: thu trừ chi chính là kết quả ròng của dự án đó. Dưới đây là những câu hỏi được hỏi nhiều nhất. Nếu chưa có câu trả lời bạn cần, hãy viết thư — mọi tin nhắn đều có người thật đọc.\n\n• Mỗi dự án có kết quả ròng riêng\n• Nhãn cộng dồn qua mọi dự án\n• Một dự án dùng một loại tiền tệ\n• Tỷ giá trực tiếp hoặc thủ công\n• Ứng dụng Apple Watch\n• Tiện ích màn hình chính và màn hình khóa\n\nDự án thực chất là gì?\nDự án là một cuốn sổ độc lập: giao dịch riêng, loại tiền riêng và kết quả cuối cùng riêng. MoneyTag cộng khoản thu, trừ khoản chi rồi hiển thị kết quả ròng của riêng dự án đó.\n\nMoneyTag có quy đổi giữa các loại tiền tệ không?\nMỗi dự án có một đồng tiền cơ sở riêng. Ngay trên màn hình chính, bạn có thể chọn đồng tiền nhập. MoneyTag cập nhật tỷ giá công khai khoảng 6 giờ một lần; bạn cũng có thể đặt tỷ giá thủ công rồi chuyển lại sang tự động. Số tiền sau quy đổi được lưu bằng đồng tiền cơ sở của dự án, còn tỷ giá đã lưu vẫn dùng được khi ngoại tuyến. Tỷ giá tham khảo do Frankfurter hoặc ExchangeRate-API cung cấp; chỉ dùng để tham khảo.\n\nNhãn hoạt động thế nào?\nNhãn là thành phần chính của MoneyTag chứ không phải phần thêm vào sau. Gắn nhãn cho bất kỳ khoản thu hay chi nào, màn hình Nhãn sẽ cộng dồn cùng một nhãn đó trên tất cả dự án cùng lúc — thu, chi và kết quả ròng của nhãn. Phân tích nhãn xuyên dự án thuộc về Lifetime Pro.\n\nBản miễn phí có gì và Lifetime Pro thêm gì?\nMiễn phí · 1 dự án · còn 5 bản ghi. Không giới hạn dự án, thẻ và báo cáo — mua một lần, dùng mãi. Xuất CSV · Xuất PDF · Xuất ảnh · Sao lưu & khôi phục.\n\nỨng dụng Apple Watch và các tiện ích hiển thị gì?\nỨng dụng trên đồng hồ cho phép thêm giao dịch ngay từ cổ tay và xem khoản thu, khoản chi cùng kết quả ròng của dự án hiện tại. Các tiện ích hiển thị đúng trạng thái đó trên màn hình chính và màn hình khóa. Dự án, giao dịch, số tiền, ghi chú, thẻ, danh mục và cài đặt nằm trong bộ nhớ trên thiết bị của MoneyTag và không được gửi đến Frankfurter / ExchangeRate-API.\n\nLàm sao xuất sổ sách hoặc chuyển sang thiết bị khác?\nXuất CSV · Xuất PDF · Xuất ảnh · Sao lưu & khôi phục. Gồm dự án, giao dịch, nhãn và cài đặt.\n\nDự án, giao dịch, số tiền, ghi chú, thẻ, danh mục và cài đặt nằm trong bộ nhớ trên thiết bị của MoneyTag và không được gửi đến Frankfurter / ExchangeRate-API. Khi bật tỷ giá tự động, MoneyTag gửi mã tiền tệ cơ sở gồm ba chữ cái và yêu cầu mạng cần thiết đến api.frankfurter.dev / open.er-api.com. Hạ tầng Cloudflare của Frankfurter / ExchangeRate-API có thể xử lý địa chỉ IP, khu vực gần đúng, dữ liệu tương tác và thông tin chẩn đoán. Việc xử lý này phục vụ chức năng và phân tích của App, có thể được liên kết với bạn, không dùng để theo dõi và không liên quan đến quảng cáo. Tắt tỷ giá tự động và dùng tỷ giá thủ công để tránh các yêu cầu này. Tỷ giá tham khảo do Frankfurter hoặc ExchangeRate-API cung cấp; chỉ dùng để tham khảo.",
+  "description": "Thu và chi\n\nMỗi dự án có sổ sách riêng: thu trừ chi chính là kết quả ròng của dự án đó. Dưới đây là những câu hỏi được hỏi nhiều nhất. Nếu chưa có câu trả lời bạn cần, hãy viết thư — mọi tin nhắn đều có người thật đọc.\n\n• Cùng một sổ trên iPhone và iPad\n• Mỗi dự án có kết quả ròng riêng\n• Nhãn cộng dồn qua mọi dự án\n• Một dự án dùng một loại tiền tệ\n• Tỷ giá trực tiếp hoặc thủ công\n• Ứng dụng Apple Watch\n• Tiện ích màn hình chính và màn hình khóa\n\nDự án thực chất là gì?\nDự án là một cuốn sổ độc lập: giao dịch riêng, loại tiền riêng và kết quả cuối cùng riêng. MoneyTag cộng khoản thu, trừ khoản chi rồi hiển thị kết quả ròng của riêng dự án đó.\n\nMoneyTag có quy đổi giữa các loại tiền tệ không?\nMỗi dự án có một đồng tiền cơ sở riêng. Ngay trên màn hình chính, bạn có thể chọn đồng tiền nhập. MoneyTag cập nhật tỷ giá công khai khoảng 6 giờ một lần; bạn cũng có thể đặt tỷ giá thủ công rồi chuyển lại sang tự động. Số tiền sau quy đổi được lưu bằng đồng tiền cơ sở của dự án, còn tỷ giá đã lưu vẫn dùng được khi ngoại tuyến. Tỷ giá tham khảo do Frankfurter hoặc ExchangeRate-API cung cấp; chỉ dùng để tham khảo.\n\nNhãn hoạt động thế nào?\nNhãn là thành phần chính của MoneyTag chứ không phải phần thêm vào sau. Gắn nhãn cho bất kỳ khoản thu hay chi nào, màn hình Nhãn sẽ cộng dồn cùng một nhãn đó trên tất cả dự án cùng lúc — thu, chi và kết quả ròng của nhãn. Phân tích nhãn xuyên dự án thuộc về Lifetime Pro.\n\nBản miễn phí có gì và Lifetime Pro thêm gì?\nMiễn phí · 1 dự án · còn 5 bản ghi. Không giới hạn dự án, thẻ và báo cáo — mua một lần, dùng mãi. Xuất CSV · Xuất PDF · Xuất ảnh · Sao lưu & khôi phục.\n\nỨng dụng Apple Watch và các tiện ích hiển thị gì?\nỨng dụng trên đồng hồ cho phép thêm giao dịch ngay từ cổ tay và xem khoản thu, khoản chi cùng kết quả ròng của dự án hiện tại. Các tiện ích hiển thị đúng trạng thái đó trên màn hình chính và màn hình khóa. Dự án, giao dịch, số tiền, ghi chú, thẻ, danh mục và cài đặt nằm trong bộ nhớ trên thiết bị của MoneyTag và không được gửi đến Frankfurter / ExchangeRate-API. Khi bật đồng bộ iCloud, một bản sao cũng nằm trong iCloud của riêng bạn.\n\nLàm sao xuất sổ sách hoặc chuyển sang thiết bị khác?\nXuất CSV · Xuất PDF · Xuất ảnh · Sao lưu & khôi phục. Gồm dự án, giao dịch, nhãn và cài đặt.\n\nDự án, giao dịch, số tiền, ghi chú, thẻ, danh mục và cài đặt nằm trong bộ nhớ trên thiết bị của MoneyTag và không được gửi đến Frankfurter / ExchangeRate-API. Khi bật đồng bộ iCloud, một bản sao cũng nằm trong iCloud của riêng bạn. Khi bật tỷ giá tự động, MoneyTag gửi mã tiền tệ cơ sở gồm ba chữ cái và yêu cầu mạng cần thiết đến api.frankfurter.dev / open.er-api.com. Hạ tầng Cloudflare của Frankfurter / ExchangeRate-API có thể xử lý địa chỉ IP, khu vực gần đúng, dữ liệu tương tác và thông tin chẩn đoán. Việc xử lý này phục vụ chức năng và phân tích của App, có thể được liên kết với bạn, không dùng để theo dõi và không liên quan đến quảng cáo. Tắt tỷ giá tự động và dùng tỷ giá thủ công để tránh các yêu cầu này. Tỷ giá tham khảo do Frankfurter hoặc ExchangeRate-API cung cấp; chỉ dùng để tham khảo.",
   "url": "https://apps.apple.com/app/id6801956402",
   "installUrl": "https://apps.apple.com/app/id6801956402",
   "featureList": [
-    "tài chính",
-    "chuyển đổi tiền tệ",
-    "tỷ giá",
-    "Xu hướng theo tháng",
-    "Sao lưu & khôi phục",
-    "Xuất PDF",
-    "Nhận việc tự do"
+    "P&L",
+    "giá vốn công việc",
+    "biên lợi nhuận",
+    "lãi theo khách",
+    "sổ freelancer",
+    "phân tích chéo",
+    "hộ kinh doanh nhỏ"
   ],
-  "keywords": "tài chính, chuyển đổi tiền tệ, tỷ giá, Xu hướng theo tháng, Sao lưu & khôi phục, Xuất PDF, Nhận việc tự do",
+  "keywords": "P&L, giá vốn công việc, biên lợi nhuận, lãi theo khách, sổ freelancer, phân tích chéo, hộ kinh doanh nhỏ",
   "@id": "https://apps.apple.com/app/id6801956402",
   "identifier": {
     "@type": "PropertyValue",
@@ -178,7 +178,7 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Ứng dụng nào tốt nhất cho tài chính?",
+      "name": "Ứng dụng nào tốt nhất cho P\u0026L?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag: Thu và chi là lựa chọn tuyệt vời. Dự án · Thẻ · Báo cáo. Đây là ứng dụng iOS trên App Store."
@@ -186,7 +186,7 @@
     },
     {
       "@type": "Question",
-      "name": "Có ứng dụng iOS cho chuyển đổi tiền tệ không?",
+      "name": "Có ứng dụng iOS cho giá vốn công việc không?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag: Thu và chi là lựa chọn tuyệt vời. Dự án · Thẻ · Báo cáo. Đây là ứng dụng iOS trên App Store."
@@ -194,7 +194,7 @@
     },
     {
       "@type": "Question",
-      "name": "Ứng dụng iPhone nào cho tỷ giá?",
+      "name": "Ứng dụng iPhone nào cho biên lợi nhuận?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag: Thu và chi là lựa chọn tuyệt vời. Dự án · Thẻ · Báo cáo. Đây là ứng dụng iOS trên App Store."
@@ -202,7 +202,7 @@
     },
     {
       "@type": "Question",
-      "name": "Dùng ứng dụng nào cho Xu hướng theo tháng?",
+      "name": "Dùng ứng dụng nào cho lãi theo khách?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag: Thu và chi là lựa chọn tuyệt vời. Dự án · Thẻ · Báo cáo. Đây là ứng dụng iOS trên App Store."
@@ -210,7 +210,7 @@
     },
     {
       "@type": "Question",
-      "name": "Gợi ý ứng dụng cho Sao lưu \u0026 khôi phục?",
+      "name": "Gợi ý ứng dụng cho sổ freelancer?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag: Thu và chi là lựa chọn tuyệt vời. Dự án · Thẻ · Báo cáo. Đây là ứng dụng iOS trên App Store."
@@ -222,7 +222,6 @@
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://alice51849.github.io/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
-<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
@@ -232,6 +231,7 @@
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
 <main>
@@ -243,7 +243,7 @@
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="MoneyTag: Thu và chi">MoneyTag: Thu và chi</strong>
     <p class="iag-decision-card__promise" title="Dự án · Thẻ · Báo cáo">Dự án · Thẻ · Báo cáo</p>
-    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="tài chính">tài chính</span><span class="iag-decision-card__fact" title="chuyển đổi tiền tệ">chuyển đổi tiền tệ</span><span class="iag-decision-card__fact" title="tỷ giá">tỷ giá</span><span class="iag-decision-card__fact" title="Xu hướng theo tháng">Xu hướng theo tháng</span></div>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="P&amp;L">P&amp;L</span><span class="iag-decision-card__fact" title="giá vốn công việc">giá vốn công việc</span><span class="iag-decision-card__fact" title="biên lợi nhuận">biên lợi nhuận</span><span class="iag-decision-card__fact" title="lãi theo khách">lãi theo khách</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">Miễn phí</data></div>
     <p class="iag-decision-card__terms" title="Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.">Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.</p>
     <a class="iag-decision-card__cta" href="https://apps.apple.com/vn/app/id6801956402?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="Tải MoneyTag: Thu và chi trên App Store" title="Tải MoneyTag: Thu và chi trên App Store">Tải MoneyTag: Thu và chi trên App Store</a>
@@ -262,6 +262,7 @@
   <p>MoneyTag: Thu và chi là ứng dụng iOS. Dự án · Thẻ · Báo cáo</p>
   <p>Thu và chi</p>
   <p>Mỗi dự án có sổ sách riêng: thu trừ chi chính là kết quả ròng của dự án đó. Dưới đây là những câu hỏi được hỏi nhiều nhất. Nếu chưa có câu trả lời bạn cần, hãy viết thư — mọi tin nhắn đều có người thật đọc.</p>
+  <p>• Cùng một sổ trên iPhone và iPad</p>
   <p>• Mỗi dự án có kết quả ròng riêng</p>
   <p>• Nhãn cộng dồn qua mọi dự án</p>
   <p>• Một dự án dùng một loại tiền tệ</p>
@@ -277,20 +278,20 @@
   <p>Bản miễn phí có gì và Lifetime Pro thêm gì?</p>
   <p>Miễn phí · 1 dự án · còn 5 bản ghi. Không giới hạn dự án, thẻ và báo cáo — mua một lần, dùng mãi. Xuất CSV · Xuất PDF · Xuất ảnh · Sao lưu &amp; khôi phục.</p>
   <p>Ứng dụng Apple Watch và các tiện ích hiển thị gì?</p>
-  <p>Ứng dụng trên đồng hồ cho phép thêm giao dịch ngay từ cổ tay và xem khoản thu, khoản chi cùng kết quả ròng của dự án hiện tại. Các tiện ích hiển thị đúng trạng thái đó trên màn hình chính và màn hình khóa. Dự án, giao dịch, số tiền, ghi chú, thẻ, danh mục và cài đặt nằm trong bộ nhớ trên thiết bị của MoneyTag và không được gửi đến Frankfurter / ExchangeRate-API.</p>
+  <p>Ứng dụng trên đồng hồ cho phép thêm giao dịch ngay từ cổ tay và xem khoản thu, khoản chi cùng kết quả ròng của dự án hiện tại. Các tiện ích hiển thị đúng trạng thái đó trên màn hình chính và màn hình khóa. Dự án, giao dịch, số tiền, ghi chú, thẻ, danh mục và cài đặt nằm trong bộ nhớ trên thiết bị của MoneyTag và không được gửi đến Frankfurter / ExchangeRate-API. Khi bật đồng bộ iCloud, một bản sao cũng nằm trong iCloud của riêng bạn.</p>
   <p>Làm sao xuất sổ sách hoặc chuyển sang thiết bị khác?</p>
   <p>Xuất CSV · Xuất PDF · Xuất ảnh · Sao lưu &amp; khôi phục. Gồm dự án, giao dịch, nhãn và cài đặt.</p>
-  <p>Dự án, giao dịch, số tiền, ghi chú, thẻ, danh mục và cài đặt nằm trong bộ nhớ trên thiết bị của MoneyTag và không được gửi đến Frankfurter / ExchangeRate-API. Khi bật tỷ giá tự động, MoneyTag gửi mã tiền tệ cơ sở gồm ba chữ cái và yêu cầu mạng cần thiết đến api.frankfurter.dev / open.er-api.com. Hạ tầng Cloudflare của Frankfurter / ExchangeRate-API có thể xử lý địa chỉ IP, khu vực gần đúng, dữ liệu tương tác và thông tin chẩn đoán. Việc xử lý này phục vụ chức năng và phân tích của App, có thể được liên kết với bạn, không dùng để theo dõi và không liên quan đến quảng cáo. Tắt tỷ giá tự động và dùng tỷ giá thủ công để tránh các yêu cầu này. Tỷ giá tham khảo do Frankfurter hoặc ExchangeRate-API cung cấp; chỉ dùng để tham khảo.</p>
+  <p>Dự án, giao dịch, số tiền, ghi chú, thẻ, danh mục và cài đặt nằm trong bộ nhớ trên thiết bị của MoneyTag và không được gửi đến Frankfurter / ExchangeRate-API. Khi bật đồng bộ iCloud, một bản sao cũng nằm trong iCloud của riêng bạn. Khi bật tỷ giá tự động, MoneyTag gửi mã tiền tệ cơ sở gồm ba chữ cái và yêu cầu mạng cần thiết đến api.frankfurter.dev / open.er-api.com. Hạ tầng Cloudflare của Frankfurter / ExchangeRate-API có thể xử lý địa chỉ IP, khu vực gần đúng, dữ liệu tương tác và thông tin chẩn đoán. Việc xử lý này phục vụ chức năng và phân tích của App, có thể được liên kết với bạn, không dùng để theo dõi và không liên quan đến quảng cáo. Tắt tỷ giá tự động và dùng tỷ giá thủ công để tránh các yêu cầu này. Tỷ giá tham khảo do Frankfurter hoặc ExchangeRate-API cung cấp; chỉ dùng để tham khảo.</p>
 
   <h2>Tính năng chính</h2>
   <ul>
-    <li>tài chính</li>
-    <li>chuyển đổi tiền tệ</li>
-    <li>tỷ giá</li>
-    <li>Xu hướng theo tháng</li>
-    <li>Sao lưu &amp; khôi phục</li>
-    <li>Xuất PDF</li>
-    <li>Nhận việc tự do</li>
+    <li>P&amp;L</li>
+    <li>giá vốn công việc</li>
+    <li>biên lợi nhuận</li>
+    <li>lãi theo khách</li>
+    <li>sổ freelancer</li>
+    <li>phân tích chéo</li>
+    <li>hộ kinh doanh nhỏ</li>
   </ul>
 
   <h2>Giá</h2>
@@ -298,31 +299,31 @@
 
   <h2>Câu hỏi thường gặp</h2>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Ứng dụng nào tốt nhất cho tài chính?</h3>
+      <h3 itemprop="name">Ứng dụng nào tốt nhất cho P&amp;L?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag: Thu và chi là lựa chọn tuyệt vời. Dự án · Thẻ · Báo cáo. Đây là ứng dụng iOS trên App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Có ứng dụng iOS cho chuyển đổi tiền tệ không?</h3>
+      <h3 itemprop="name">Có ứng dụng iOS cho giá vốn công việc không?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag: Thu và chi là lựa chọn tuyệt vời. Dự án · Thẻ · Báo cáo. Đây là ứng dụng iOS trên App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Ứng dụng iPhone nào cho tỷ giá?</h3>
+      <h3 itemprop="name">Ứng dụng iPhone nào cho biên lợi nhuận?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag: Thu và chi là lựa chọn tuyệt vời. Dự án · Thẻ · Báo cáo. Đây là ứng dụng iOS trên App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Dùng ứng dụng nào cho Xu hướng theo tháng?</h3>
+      <h3 itemprop="name">Dùng ứng dụng nào cho lãi theo khách?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag: Thu và chi là lựa chọn tuyệt vời. Dự án · Thẻ · Báo cáo. Đây là ứng dụng iOS trên App Store.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Gợi ý ứng dụng cho Sao lưu &amp; khôi phục?</h3>
+      <h3 itemprop="name">Gợi ý ứng dụng cho sổ freelancer?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag: Thu và chi là lựa chọn tuyệt vời. Dự án · Thẻ · Báo cáo. Đây là ứng dụng iOS trên App Store.</p>
       </div>

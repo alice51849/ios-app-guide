@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "it",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -52,7 +52,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: Da file a prompt IA",
       "summary": "Un contesto migliore, risposte migliori.",
       "category": "productivity",
       "search_terms": [
@@ -131,7 +131,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: Test di inglese",
       "summary": "Allena la comprensione dell’inglese con sessioni che richiedono concentrazione, ritmo e continuità. Aim990 Plus è pensata per gli adulti che desiderano esercitarsi seriamente su iPhone o iPad, a casa, in viaggio o durante una pausa della giornata.",
       "category": "kids",
       "search_terms": [
@@ -443,7 +443,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: Spese e budget",
       "summary": "G+Money unisce due strumenti di ogni giorno in uno solo — un convertitore di valute velocissimo e un elegante tracker delle spese — per la vita quotidiana e per i viaggi. Completamente offline. Totalmente privato.",
       "category": "finance",
       "search_terms": [
@@ -502,7 +502,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: Spese di viaggio",
       "summary": "G+Money Lite — Convertitore di valute e spese di viaggio",
       "category": "finance",
       "search_terms": [
@@ -539,7 +539,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: Prezzo in ore",
       "summary": "HoursTag Lite - Il vero prezzo delle cose",
       "category": "finance",
       "search_terms": [
@@ -635,7 +635,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: Blocco app",
       "summary": "Proteggi le ore che contano davvero. LockHour Pro ti aiuta a creare sessioni di concentrazione calme, ridurre le distrazioni del telefono e costruire abitudini produttive senza complicazioni. Ideale per studio, lavoro profondo e routine quotidiane.",
       "category": "productivity",
       "search_terms": [
@@ -1260,7 +1260,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: Rimuovi i dati",
       "summary": "Condividi senza esporre più del necessario. Mask My File individua i dati personali prima che tu invii un file, oscura in modo permanente ciò che scegli, poi riapre e verifica il nuovo file prima di mostrare Private Ready.",
       "category": "photo-utility",
       "search_terms": [
@@ -1388,13 +1388,12 @@
       "summary": "Ogni progetto tiene la propria contabilità: entrate meno uscite danno il suo risultato netto. Qui trovi le domande più frequenti. Se la tua non c’è, scrivici: ogni messaggio lo legge una persona in carne e ossa.",
       "category": "finance",
       "search_terms": [
-        "gestione spese",
-        "finanze",
-        "convertitore valuta",
-        "tasso di cambio",
-        "contabilità",
-        "Andamento mensile",
-        "Esporta PDF"
+        "conto economico",
+        "costo commessa",
+        "margine profitto",
+        "redditività cliente",
+        "riparto costi",
+        "analisi incrociata"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1461,7 +1460,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: Filtri retrò",
       "summary": "PhotoCream Pro è la tua soluzione definitiva per la fotografia vintage e l'editing professionale su iPhone e iPad. Immergiti nel mondo della fotografia retrò con oltre 100 filtri analogici autentici che offrono un'esperienza visiva unica. Con la funzione di anteprima dal vivo, puoi vedere immediatamente l'effetto dei filtri prima di scattare. Il nostro editor fotografico avanzato ti permette di perfezionare ogni scatto con strumenti potenti come la separazione delle frequenze per la bellezza della pelle, il rimodellamento del viso e del corpo, e regolazioni dettagliate di luce, colore e curve. Aggiungi testo, cornici e grana per personalizzare ulteriormente le tue immagini. PhotoCream Pro è un acquisto una tantum, senza abbonamenti o pubblicità, garantendo la tua privacy totale con nessun dato caricato online. Sperimenta la magia della fotografia analogica e l'editing professionale con PhotoCream Pro.",
       "category": "photo-utility",
       "search_terms": [
@@ -1521,7 +1520,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: Pulizia foto",
       "summary": "Libera gigabyte di spazio eliminando le foto che non ti servono — duplicati, screenshot, scatti sfocati e video che divorano spazio.",
       "category": "photo-utility",
       "search_terms": [
@@ -1799,7 +1798,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: Fai fototessere",
       "summary": "Snapport Lite - Realizza foto per passaporto, visto e documenti con guide di dimensione, sfondo e stampa.",
       "category": "photo-utility",
       "search_terms": [
@@ -2031,7 +2030,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: Trova guasti di rete",
       "summary": "Trova la causa probabile con verifiche indipendenti di percorsi, DNS, TCP, TLS, tempi e stabilità. Un acquisto iniziale, senza abbonamenti, pubblicità o tracciamento.",
       "category": "photo-utility",
       "search_terms": [

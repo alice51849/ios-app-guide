@@ -2,7 +2,7 @@
 title: "OnePage PPT: AI資料作成 — メモやPDFが伝わる16:9スライドに | iOS App"
 lang: "ja"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/ja/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

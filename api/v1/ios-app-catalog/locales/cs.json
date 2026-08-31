@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "cs",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -54,7 +54,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: Ze souborů AI prompt",
       "summary": "Lepší kontext. Lepší odpovědi.",
       "category": "productivity",
       "search_terms": [
@@ -130,7 +130,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: Test z angličtiny",
       "summary": "Když běží čas, nestačí angličtině jen rozumět. Je potřeba udržet pozornost, rychle se rozhodovat a nenechat se rozhodit jednou chybnou odpovědí. Aim990 Plus je intenzivní poslechový a čtenářský trénink pro dospělé na iPhonu a iPadu. Každá hlavní lekce má jasný spád: 8 zahřívacích otázek, Pressure Set s 20 úlohami na 15 minut a nakonec Mistake Replay, kde se vrátíte přesně k tomu, co vám uniklo.",
       "category": "kids",
       "search_terms": [
@@ -435,7 +435,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: Výdaje a rozpočet",
       "summary": "G+Money zjednodušuje osobní finance bez zbytečné složitosti. Zapisujte výdaje, třiďte je podle kategorií, cest nebo událostí a hned uvidíte, kam peníze odcházejí.",
       "category": "finance",
       "search_terms": [
@@ -492,7 +492,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: Výdaje na cesty",
       "summary": "G+Money Lite — Chytrý převodník měn a sledovač výdajů",
       "category": "finance",
       "search_terms": [
@@ -530,7 +530,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: Cena v hodinách",
       "summary": "HoursTag Lite - Uvidíte skutečnou cenu věcí",
       "category": "finance",
       "search_terms": [
@@ -629,7 +629,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: Blokace aplikací",
       "summary": "Chraňte hodiny, kdy se vám pracuje nejlépe. LockHour Pro pomáhá spouštět klidné soustředěné bloky, omezit rušení telefonem a budovat produktivní návyky bez zbytečností. Hodí se pro studium, psaní, plánování i hlubokou práci.",
       "category": "productivity",
       "search_terms": [
@@ -1265,7 +1265,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: Odstraňte údaje",
       "summary": "Sdílejte bezpečně a přitom zachovejte užitečný kontext. Mask My File najde soukromé údaje dřív, než soubor odešlete, trvale začerní to, co vyberete, a poté novou kopii znovu otevře a ověří, než zobrazí Private Ready.",
       "category": "photo-utility",
       "search_terms": [
@@ -1391,14 +1391,12 @@
       "summary": "Každý projekt si vede vlastní účetnictví: příjmy minus výdaje dávají jeho čistý výsledek. Tady jsou nejčastější dotazy. Pokud ten váš chybí, napište nám — každou zprávu čte živý člověk.",
       "category": "finance",
       "search_terms": [
-        "sledování výdajů",
-        "převodník měn",
-        "správa peněz",
-        "peníze",
-        "Směnné kurzy",
-        "Měsíční vývoj",
-        "Exportovat PDF",
-        "Záznamy"
+        "zisk-ztráta",
+        "kalkulace zakázky",
+        "zisková marže",
+        "rentabilita klienta",
+        "rozdělení nákladů",
+        "průřezová analýza"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1467,7 +1465,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: Filmové filtry",
       "summary": "PhotoCream Pro promění iPhone a iPad v hřejivý filmový fotoaparát a elegantní editor. Foťte s více než 100 analogovými filtry, jemným zrnem a světelnými úniky, nebo upravte selfie přirozeně a čistě.",
       "category": "photo-utility",
       "search_terms": [
@@ -1524,7 +1522,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: Čištění fotek",
       "summary": "Získejte zpět gigabajty úložiště odstraněním fotek, které už nepotřebujete: duplikátů, starých snímků obrazovky, rozmazaných záběrů a velkých videí.",
       "category": "photo-utility",
       "search_terms": [
@@ -1810,7 +1808,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: Foto na doklady",
       "summary": "Snapport Lite - Vytvářejte pasové, vízové a dokumentové fotografie s vedením velikosti, nástroji pro pozadí a exportem připraveným k tisku.",
       "category": "photo-utility",
       "search_terms": [
@@ -2042,7 +2040,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: Najděte chyby sítě",
       "summary": "Najděte nejpravděpodobnější příčinu pomocí nezávislých testů tras, DNS, TCP, TLS, odezvy a stability. Jedna platba předem, bez předplatného, reklam a sledování.",
       "category": "photo-utility",
       "search_terms": [

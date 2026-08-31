@@ -2,7 +2,7 @@
 title: "முன்பள்ளி குழந்தைகளுக்கான விளம்பரமில்லாத சிறந்த உறங்கும் நேர ஒழுங்கு பயன்பாடு"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/ta-IN/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "pa-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -55,7 +55,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: ਫਾਈਲ ਤੋਂ AI ਪ੍ਰੌਂਪਟ",
       "summary": "ਬਿਹਤਰ ਸੰਦਰਭ। ਬਿਹਤਰ ਜਵਾਬ।",
       "category": "productivity",
       "search_terms": [
@@ -137,7 +137,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: ਅੰਗਰੇਜ਼ੀ ਟੈਸਟ",
       "summary": "Aim990 Plus ਬਾਲਗ ਸਿੱਖਿਆਰਥੀਆਂ ਲਈ ਅੰਗਰੇਜ਼ੀ ਸੁਣਨ ਅਤੇ ਪੜ੍ਹਨ ਦੀ ਡੂੰਘੀ ਕਸਰਤ ਹੈ। ਇਸ ਦਾ ਮੁੱਖ ਕ੍ਰਮ ਸਮੇਂ ਦੇ ਦਬਾਅ ਹੇਠ ਵੀ ਧਿਆਨ ਬਣਾਈ ਰੱਖਣ ਦੀ ਆਦਤ ਪਾਉਂਦਾ ਹੈ: ਪਹਿਲਾਂ 8 ਸਵਾਲਾਂ ਦਾ Warm-up, ਫਿਰ 15 ਮਿੰਟਾਂ ਵਿੱਚ 20 ਸਵਾਲਾਂ ਦਾ Pressure Set ਅਤੇ ਅਖੀਰ ਵਿੱਚ Mistake Replay। ਹਰ ਪੜਾਅ ਸਾਫ਼ ਤਰੀਕੇ ਨਾਲ ਸਜਾਇਆ ਗਿਆ ਹੈ, ਇਸ ਲਈ ਬੇਲੋੜੇ ਮੀਨੂ ਵਿੱਚ ਉਲਝੇ ਬਿਨਾਂ ਕਸਰਤ ਸ਼ੁਰੂ ਕਰਕੇ ਅਗਲੇ ਸੈਸ਼ਨ ਦਾ ਟੀਚਾ ਚੁਣਿਆ ਜਾ ਸਕਦਾ ਹੈ।",
       "category": "kids",
       "search_terms": [
@@ -462,7 +462,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: ਰੋਜ਼ਾਨਾ ਖਰਚ ਤੇ ਬਜਟ",
       "summary": "G+Money ਤੁਹਾਡੇ ਦਿਨ-ਚੜ੍ਹਦੀ ਸਹੂਲਤਾਂ ਲਈ ਦੋ ਸੰਦਾਂ ਨੂੰ ਇਕੱਠਾ ਕਰਦਾ ਹੈ—ਇੱਕ ਤੇਜ਼ ਮੁਦਰਾ ਤਬਦੀਲਕ ਅਤੇ ਖੂਬਸੂਰਤ ਖਰਚਾ ਟ੍ਰੈਕਰ। ਪੂਰੀ ਤਰ੍ਹਾਂ ਆਫਲਾਈਨ ਅਤੇ ਗੁਪਤ।",
       "category": "finance",
       "search_terms": [
@@ -521,7 +521,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: ਯਾਤਰਾ ਖਰਚ",
       "summary": "G+Money Lite — ਸਮਾਰਟ ਯਾਤਰਾ ਮੁਦਰਾ ਅਤੇ ਖਰਚ ਟ੍ਰੈਕਰ",
       "category": "finance",
       "search_terms": [
@@ -562,7 +562,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: ਕੀਮਤ ਘੰਟਿਆਂ ਵਿਚ",
       "summary": "HoursTag Lite - ਚੀਜ਼ਾਂ ਦੀ ਅਸਲ ਕੀਮਤ ਵੇਖੋ",
       "category": "finance",
       "search_terms": [
@@ -662,7 +662,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: ਐਪ ਬਲਾਕਰ",
       "summary": "ਜਿਹੜੀਆਂ ਐਪਸ ਤੁਹਾਡਾ ਸਮਾਂ ਚੁੱਕਦੀਆਂ ਹਨ, ਉਹਨਾਂ ਨੂੰ ਬਲਾਕ ਕਰੋ ਅਤੇ ਆਪਣਾ ਧਿਆਨ ਵਾਪਸ ਪ੍ਰਾਪਤ ਕਰੋ।",
       "category": "productivity",
       "search_terms": [
@@ -1311,7 +1311,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: ਜਾਣਕਾਰੀ ਹਟਾਓ",
       "summary": "ਲੋੜੀਂਦਾ ਪ੍ਰਸੰਗ ਗੁਆਏ ਬਿਨਾਂ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਸਾਂਝਾ ਕਰੋ। Mask My File ਤੁਹਾਡੇ ਫਾਈਲ ਭੇਜਣ ਤੋਂ ਪਹਿਲਾਂ ਨਿੱਜੀ ਵੇਰਵੇ ਲੱਭਦਾ ਹੈ, ਤੁਹਾਡੇ ਚੁਣੇ ਹਿੱਸੇ ਨੂੰ ਪੱਕੇ ਤੌਰ 'ਤੇ ਲੁਕਾਉਂਦਾ ਹੈ, ਫਿਰ ਨਵੀਂ ਫਾਈਲ ਮੁੜ ਖੋਲ੍ਹ ਕੇ ਪਰਖਦਾ ਹੈ ਅਤੇ ਤਦ ਹੀ Private Ready ਦਿਖਾਉਂਦਾ ਹੈ।",
       "category": "photo-utility",
       "search_terms": [
@@ -1438,15 +1438,14 @@
       "summary": "ਹਰ ਪ੍ਰੋਜੈਕਟ ਦਾ ਆਪਣਾ ਹਿਸਾਬ ਵੱਖਰਾ ਰਹਿੰਦਾ ਹੈ: ਆਮਦਨ ਵਿੱਚੋਂ ਖਰਚ ਘਟਾਓ ਤਾਂ ਜੋ ਬਚਦਾ ਹੈ, ਉਹੀ ਉਸ ਦੀ ਸ਼ੁੱਧ ਰਕਮ ਹੈ। ਸਭ ਤੋਂ ਵੱਧ ਪੁੱਛੇ ਜਾਂਦੇ ਸਵਾਲ ਇੱਥੇ ਹਨ। ਤੁਹਾਡਾ ਸਵਾਲ ਨਾ ਮਿਲੇ ਤਾਂ ਲਿਖੋ — ਹਰ ਸੁਨੇਹਾ ਇੱਕ ਅਸਲੀ ਬੰਦਾ ਪੜ੍ਹਦਾ ਹੈ।",
       "category": "finance",
       "search_terms": [
-        "ਹਿਸਾਬ",
-        "ਕਰੰਸੀ ਕਨਵਰਟਰ",
-        "ਨਿੱਜੀ ਵਿੱਤ",
-        "ਵਟਾਂਦਰਾ ਦਰ",
-        "ਆਫਲਾਈਨ",
-        "ਮੁਦਰਾ",
-        "ਮਹੀਨਾਵਾਰ ਰੁਝਾਨ",
-        "ਬੈਕਅਪ ਅਤੇ ਪੁਨਰਸਥਾਪਨਾ",
-        "ਨਿਰਯਾਤ PDF"
+        "P&L",
+        "job costing",
+        "profit margin",
+        "ਗਾਹਕ ਦਾ ਮੁਨਾਫ਼ਾ",
+        "ਲਾਗਤ ਵੰਡ",
+        "ਫ੍ਰੀਲਾਂਸ ਹਿਸਾਬ",
+        "multi tag analysis",
+        "ਵਪਾਰ ਖਾਤਾ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1515,7 +1514,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: ਫਿਲਮ ਫਿਲਟਰ",
       "summary": "PhotoCream Pro ਨਾਲ ਆਪਣੇ ਫੋਨ ਨੂੰ ਬਣਾਓ ਪ੍ਰੀਮੀਅਮ ਫਿਲਮ ਕੈਮਰਾ ਤੇ ਪ੍ਰੋ ਫੋਟੋ ਸਟੂਡੀਓ। ਅਸਲੀ ਫਿਲਮ ਲੁਕਸ ਦੇ ਨਾਲ ਤਸਵੀਰਾਂ ਖਿੱਚੋ, ਫਿਰ ਹਰ ਵਿਸਥਾਰ ਨੂੰ ਸੁਧਾਰੋ—ਸਭ ਕੁਝ ਤੁਹਾਡੇ ਜੰਤਰ 'ਤੇ, ਬਿਨਾਂ ਕਿਸੇ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਜਾਂ ਵਿਗਿਆਪਨ ਦੇ।",
       "category": "photo-utility",
       "search_terms": [
@@ -1576,7 +1575,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: ਫੋਟੋ ਕਲੀਨਰ",
       "summary": "ਤੁਸੀਂ ਲੋੜੀਂਦੇ ਫੋਟੋ ਹਟਾ ਕੇ ਗਿਗਾਬਾਈਟ ਸਟੋਰੇਜ ਬਚਾਓ—ਡੂਪਲੀਕੇਟ, ਸਕਰੀਨਸ਼ਾਟ, ਬਲਰੀ ਸ਼ਾਟ ਅਤੇ ਵੱਡੇ ਵੀਡੀਓ।",
       "category": "photo-utility",
       "search_terms": [
@@ -1857,7 +1856,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: ID ਫੋਟੋ ਬਣਾਓ",
       "summary": "Snapport Lite - ਪਾਸਪੋਰਟ, ਵੀਜ਼ਾ ਅਤੇ ਦਸਤਾਵੇਜ਼ ਫੋਟੋਆਂ ਬਣਾਓ, ਜਿਸ ਵਿੱਚ ਮਾਰਗਦਰਸ਼ਿਤ ਆਕਾਰ, ਪਿਛੋਕੜ ਦੇ ਸਾਧਨ ਅਤੇ ਪ੍ਰਿੰਟ ਲਈ ਤਿਆਰ ਨਿਕਾਸ ਸ਼ਾਮਲ ਹਨ।",
       "category": "photo-utility",
       "search_terms": [
@@ -2095,7 +2094,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: ਨੈੱਟਵਰਕ ਸਮੱਸਿਆ ਲੱਭੋ",
       "summary": "ਸੁਤੰਤਰ ਮਾਰਗ, DNS, TCP, TLS, ਸਮੇਂ ਅਤੇ ਸਥਿਰਤਾ ਜਾਂਚਾਂ ਨਾਲ ਕਨੈਕਸ਼ਨ ਸਮੱਸਿਆ ਦਾ ਸੰਭਾਵਿਤ ਕਾਰਨ ਲੱਭੋ। ਇੱਕ ਵਾਰ ਖਰੀਦੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ, ਇਸ਼ਤਿਹਾਰ ਜਾਂ ਟਰੈਕਿੰਗ ਨਹੀਂ।",
       "category": "photo-utility",
       "search_terms": [

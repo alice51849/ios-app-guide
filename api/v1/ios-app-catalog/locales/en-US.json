@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "en-US",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -53,7 +53,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: AI Prompt from Files",
       "summary": "Better context. Better answers.",
       "category": "productivity",
       "search_terms": [
@@ -132,7 +132,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: English Mock Test",
       "summary": "Train for clear decisions under exam pressure",
       "category": "kids",
       "search_terms": [
@@ -457,7 +457,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: Spending & Budget",
       "summary": "G+Money is two everyday tools in one — a lightning-fast currency converter and a beautiful expense tracker — built for daily life and travel alike. Fully offline. Completely private.",
       "category": "finance",
       "search_terms": [
@@ -515,7 +515,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: Trip Spending",
       "summary": "G+Money Lite — Smart travel currency & expense tracker",
       "category": "finance",
       "search_terms": [
@@ -551,7 +551,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: Price in Hours",
       "summary": "HoursTag Lite - See the real price of things",
       "category": "finance",
       "search_terms": [
@@ -646,7 +646,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: Block Apps",
       "summary": "Block the apps that steal your time — and get your focus back.",
       "category": "productivity",
       "search_terms": [
@@ -1291,7 +1291,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: Remove Your Info",
       "summary": "Share safely without losing the context people actually need. Mask My File finds private details before you send a file, permanently hides only what you choose, then reopens and verifies the new copy before showing Private Ready.",
       "category": "photo-utility",
       "search_terms": [
@@ -1422,15 +1422,13 @@
       "summary": "Every project keeps its own books: income minus expenses is its net result. Here are the questions people ask most. If yours is not answered, write to us — a real person reads every message.",
       "category": "finance",
       "search_terms": [
-        "budget",
-        "currency converter",
-        "exchange rate",
-        "spending tracker",
-        "bookkeeping",
-        "cashflow",
-        "invoice",
-        "receipt",
-        "profit"
+        "P&L tracking",
+        "job costing",
+        "profit margin",
+        "client profitability",
+        "cost breakdown",
+        "freelance books",
+        "analysis"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1499,7 +1497,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: Film Filters",
       "summary": "PhotoCream Pro turns your phone into a premium film camera and a pro photo studio. Shoot authentic analog looks in real time, then fine-tune every detail — all on-device, no subscription, no ads.",
       "category": "photo-utility",
       "search_terms": [
@@ -1556,7 +1554,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: Photo Cleaner",
       "summary": "Free up gigabytes of storage by cleaning out the photos you don’t need — duplicates, screenshots, blurry shots, and space-hungry videos.",
       "category": "photo-utility",
       "search_terms": [
@@ -1849,7 +1847,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: Make ID Photos",
       "summary": "Snapport Lite - Make passport, visa, and document photos with guided sizing, background tools, and print-ready export.",
       "category": "photo-utility",
       "search_terms": [
@@ -2083,7 +2081,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: Find WiFi Problems",
       "summary": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and stability checks. Pay once upfront—no subscription, ads or tracking.",
       "category": "photo-utility",
       "search_terms": [

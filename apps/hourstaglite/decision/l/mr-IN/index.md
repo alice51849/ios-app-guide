@@ -1,15 +1,15 @@
 ---
-title: "HoursTag Lite — सामानांची खरी किंमत पहा | iOS App"
+title: "HoursTag Lite: किंमत तासांत — सामानांची खरी किंमत पहा | iOS App"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/mr-IN/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag Lite — सामानांची खरी किंमत पहा | iOS App
+# HoursTag Lite: किंमत तासांत — सामानांची खरी किंमत पहा | iOS App
 
 HoursTag Lite - सामानांची खरी किंमत पहा प्रत्येक खरेदी तुमच्या जीवनाच्या तासांना खर्च करते. HoursTag Lite किंमतींना कामाच्या वेळेत रूपांतरित करते — त्यामुळे तुम्ही स्पष्टतेने खर्च करता. तुमचा मूल्य प्रिझम पहा - वेळेची किंमत: प्रति कामाच्या तासाचे निव्वळ उत्पन्न - प्रकार: आवश्यक - आवडतं - आवेग - तुमचा मूल्य नमुना - संपूर्ण मूल्य विश्लेषण - एक लक्ष्य किती खर्ची पडेल?: एक लक्ष्य मागे असलेले काम पहा — आणि तुमचा प्रगती ट्रॅक करा. - बॅकअप आणि पुनर्स्थापना: यामध्ये उत्पन्न, खर्च, लक्ष्ये आणि प्राधान्ये समाविष्ट आहेत. - Widget - Apple Watch सर्व काही तुमच्या उपकरणावर राहील. कोणतीही खाती नाहीत, कोणतीही ट्रॅकिंग नाही. एकदाच पैसे · आजीवन वापर · सदस्यता नाही अमर्याद निर्णय आणि संपादन अमर्याद ध्येये आणि प्रगती शेअरिंग, विश्लेषण आणि बॅकअप
 
@@ -22,7 +22,7 @@ HoursTag Lite - सामानांची खरी किंमत पहा 
 - Apple Watch
 - App Store · मोफत
 
-[App Store वरून HoursTag Lite मिळवा](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_mr_in&mt=8)
+[App Store वरून HoursTag Lite: किंमत तासांत मिळवा](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_mr_in&mt=8)
 
 [संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/hourstaglite.html)
 

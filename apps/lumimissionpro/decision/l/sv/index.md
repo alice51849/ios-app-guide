@@ -2,7 +2,7 @@
 title: "bästa kompletta morgon- och kvällsrutinsappen för barn"
 lang: "sv"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/sv/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6779745474"
 verified_live: true
 purchase_model: "paid_upfront"

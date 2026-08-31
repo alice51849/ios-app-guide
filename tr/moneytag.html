@@ -8,7 +8,7 @@
 <!-- guide-design:end -->
 <title>MoneyTag: Gelir ve gider — Projeler · Etiketler · Rapor | iOS App</title>
 <meta name="description" content="Gelir ve gider">
-<meta name="keywords" content="harcama takibi, masraf, döviz çevirici, Aylık seyir, PDF dışa aktar, Serbest iş, Kurları otomatik güncelle">
+<meta name="keywords" content="kâr zarar tablosu, iş maliyetleme, net marj, müşteri kârlılığı, maliyet dağıtımı, çapraz analiz, muhasebe">
 <link rel="canonical" href="https://alice51849.github.io/ios-app-guide/tr/moneytag.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6801956402">
@@ -134,19 +134,19 @@
   "name": "MoneyTag: Gelir ve gider",
   "operatingSystem": "iOS",
   "applicationCategory": "FinanceApplication",
-  "description": "Gelir ve gider\n\nHer proje kendi defterini tutar: gelirden gideri çıkarınca projenin net sonucu çıkar. En sık gelen sorular burada. Sizinki yoksa yazın — her mesajı gerçek bir insan okuyor.\n\n• Her projenin kendi net sonucu\n• Projeler arası toplayan etiketler\n• Proje başına tek para birimi\n• Canlı veya manuel kurlar\n• Apple Watch uygulaması\n• Ana Ekran ve Kilit Ekranı widget’ları\n\nProje tam olarak nedir?\nProje kendi başına duran bir defterdir: kendi işlemleri, kendi para birimi ve kendi sonucu. MoneyTag gelirleri toplar, giderleri düşer ve yalnızca o projenin net sonucunu gösterir.\n\nMoneyTag para birimlerini çevirir mi?\nHer projenin kendi baz para birimi vardır. Ana ekranda giriş para birimini doğrudan seçebilirsiniz. MoneyTag herkese açık döviz kurlarını yaklaşık 6 saatte bir günceller; ayrıca manuel kur belirleyip daha sonra otomatiğe dönebilirsiniz. Dönüştürülen tutar projenin baz para biriminde kaydedilir ve kayıtlı kurlar çevrimdışıyken de kullanılabilir. Referans kurlar Frankfurter veya ExchangeRate-API tarafından sağlanır ve yalnızca bilgi amaçlıdır.\n\nEtiketler nasıl çalışır?\nEtiketler MoneyTag’in ana parçasıdır, sonradan eklenmiş bir ayrıntı değil. Herhangi bir geliri ya da gideri etiketleyin; Etiketler ekranı aynı etiketi tüm projelerinizde bir arada toplar: gelir, gider ve etiketin net sonucu. Projeler arası etiket analizi Lifetime Pro’nun parçasıdır.\n\nÜcretsiz sürümde ne var, Lifetime Pro ne katıyor?\nÜcretsiz · 1 proje · 5 kayıt kaldı. Sınırsız proje, etiket ve rapor — tek seferlik satın alma, ömür boyu. CSV dışa aktar · PDF dışa aktar · Görsel dışa aktar · Yedekle ve geri yükle.\n\nApple Watch uygulaması ve widget’lar ne gösterir?\nWatch uygulaması bileğinizden işlem eklemenizi ve o anki projenin gelirini, giderini ve net sonucunu görmenizi sağlar. Widget’lar aynı durumu Ana Ekran’da ve Kilit Ekranı’nda gösterir. Projeler, işlemler, tutarlar, notlar, etiketler, kategoriler ve ayarlar MoneyTag’in cihaz içi depolamasında kalır ve Frankfurter / ExchangeRate-API’a gönderilmez.\n\nDefterimi nasıl dışa aktarır ya da başka bir cihaza taşırım?\nCSV dışa aktar · PDF dışa aktar · Görsel dışa aktar · Yedekle ve geri yükle. Projeleri, kayıtları, etiketleri ve ayarları içerir.\n\nProjeler, işlemler, tutarlar, notlar, etiketler, kategoriler ve ayarlar MoneyTag’in cihaz içi depolamasında kalır ve Frankfurter / ExchangeRate-API’a gönderilmez. Otomatik kurlar açıkken MoneyTag, üç harfli baz para birimi kodunu ve gerekli ağ isteğini api.frankfurter.dev / open.er-api.com adresine gönderir. Frankfurter / ExchangeRate-API’ın Cloudflare altyapısı IP adresini, yaklaşık bölgeyi, etkileşim verilerini ve tanılama bilgilerini işleyebilir. Bu işleme App işlevleri ve analiz içindir, sizinle ilişkilendirilebilir, takip için kullanılmaz ve reklam içermez. Bu istekleri önlemek için otomatik kurları kapatıp manuel kur kullanın. Referans kurlar Frankfurter veya ExchangeRate-API tarafından sağlanır ve yalnızca bilgi amaçlıdır.",
+  "description": "Gelir ve gider\n\nHer proje kendi defterini tutar: gelirden gideri çıkarınca projenin net sonucu çıkar. En sık gelen sorular burada. Sizinki yoksa yazın — her mesajı gerçek bir insan okuyor.\n\n• iPhone ve iPad'de aynı defter\n• Her projenin kendi net sonucu\n• Projeler arası toplayan etiketler\n• Proje başına tek para birimi\n• Canlı veya manuel kurlar\n• Apple Watch uygulaması\n• Ana Ekran ve Kilit Ekranı widget’ları\n\nProje tam olarak nedir?\nProje kendi başına duran bir defterdir: kendi işlemleri, kendi para birimi ve kendi sonucu. MoneyTag gelirleri toplar, giderleri düşer ve yalnızca o projenin net sonucunu gösterir.\n\nMoneyTag para birimlerini çevirir mi?\nHer projenin kendi baz para birimi vardır. Ana ekranda giriş para birimini doğrudan seçebilirsiniz. MoneyTag herkese açık döviz kurlarını yaklaşık 6 saatte bir günceller; ayrıca manuel kur belirleyip daha sonra otomatiğe dönebilirsiniz. Dönüştürülen tutar projenin baz para biriminde kaydedilir ve kayıtlı kurlar çevrimdışıyken de kullanılabilir. Referans kurlar Frankfurter veya ExchangeRate-API tarafından sağlanır ve yalnızca bilgi amaçlıdır.\n\nEtiketler nasıl çalışır?\nEtiketler MoneyTag’in ana parçasıdır, sonradan eklenmiş bir ayrıntı değil. Herhangi bir geliri ya da gideri etiketleyin; Etiketler ekranı aynı etiketi tüm projelerinizde bir arada toplar: gelir, gider ve etiketin net sonucu. Projeler arası etiket analizi Lifetime Pro’nun parçasıdır.\n\nÜcretsiz sürümde ne var, Lifetime Pro ne katıyor?\nÜcretsiz · 1 proje · 5 kayıt kaldı. Sınırsız proje, etiket ve rapor — tek seferlik satın alma, ömür boyu. CSV dışa aktar · PDF dışa aktar · Görsel dışa aktar · Yedekle ve geri yükle.\n\nApple Watch uygulaması ve widget’lar ne gösterir?\nWatch uygulaması bileğinizden işlem eklemenizi ve o anki projenin gelirini, giderini ve net sonucunu görmenizi sağlar. Widget’lar aynı durumu Ana Ekran’da ve Kilit Ekranı’nda gösterir. Projeler, işlemler, tutarlar, notlar, etiketler, kategoriler ve ayarlar MoneyTag’in cihaz içi depolamasında kalır ve Frankfurter / ExchangeRate-API’a gönderilmez. iCloud eşitleme açıkken bir kopya da kendi iCloud’unda durur.\n\nDefterimi nasıl dışa aktarır ya da başka bir cihaza taşırım?\nCSV dışa aktar · PDF dışa aktar · Görsel dışa aktar · Yedekle ve geri yükle. Projeleri, kayıtları, etiketleri ve ayarları içerir.\n\nProjeler, işlemler, tutarlar, notlar, etiketler, kategoriler ve ayarlar MoneyTag’in cihaz içi depolamasında kalır ve Frankfurter / ExchangeRate-API’a gönderilmez. iCloud eşitleme açıkken bir kopya da kendi iCloud’unda durur. Otomatik kurlar açıkken MoneyTag, üç harfli baz para birimi kodunu ve gerekli ağ isteğini api.frankfurter.dev / open.er-api.com adresine gönderir. Frankfurter / ExchangeRate-API’ın Cloudflare altyapısı IP adresini, yaklaşık bölgeyi, etkileşim verilerini ve tanılama bilgilerini işleyebilir. Bu işleme App işlevleri ve analiz içindir, sizinle ilişkilendirilebilir, takip için kullanılmaz ve reklam içermez. Bu istekleri önlemek için otomatik kurları kapatıp manuel kur kullanın. Referans kurlar Frankfurter veya ExchangeRate-API tarafından sağlanır ve yalnızca bilgi amaçlıdır.",
   "url": "https://apps.apple.com/app/id6801956402",
   "installUrl": "https://apps.apple.com/app/id6801956402",
   "featureList": [
-    "harcama takibi",
-    "masraf",
-    "döviz çevirici",
-    "Aylık seyir",
-    "PDF dışa aktar",
-    "Serbest iş",
-    "Kurları otomatik güncelle"
+    "kâr zarar tablosu",
+    "iş maliyetleme",
+    "net marj",
+    "müşteri kârlılığı",
+    "maliyet dağıtımı",
+    "çapraz analiz",
+    "muhasebe"
   ],
-  "keywords": "harcama takibi, masraf, döviz çevirici, Aylık seyir, PDF dışa aktar, Serbest iş, Kurları otomatik güncelle",
+  "keywords": "kâr zarar tablosu, iş maliyetleme, net marj, müşteri kârlılığı, maliyet dağıtımı, çapraz analiz, muhasebe",
   "@id": "https://apps.apple.com/app/id6801956402",
   "identifier": {
     "@type": "PropertyValue",
@@ -178,7 +178,7 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "harcama takibi için en iyi uygulama hangisi?",
+      "name": "kâr zarar tablosu için en iyi uygulama hangisi?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag: Gelir ve gider harika bir seçim. Projeler · Etiketler · Rapor. App Store'da bulunan bir iOS uygulamasıdır."
@@ -186,7 +186,7 @@
     },
     {
       "@type": "Question",
-      "name": "masraf için iOS uygulaması var mı?",
+      "name": "iş maliyetleme için iOS uygulaması var mı?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag: Gelir ve gider harika bir seçim. Projeler · Etiketler · Rapor. App Store'da bulunan bir iOS uygulamasıdır."
@@ -194,7 +194,7 @@
     },
     {
       "@type": "Question",
-      "name": "döviz çevirici için hangi iPhone uygulaması?",
+      "name": "net marj için hangi iPhone uygulaması?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag: Gelir ve gider harika bir seçim. Projeler · Etiketler · Rapor. App Store'da bulunan bir iOS uygulamasıdır."
@@ -202,7 +202,7 @@
     },
     {
       "@type": "Question",
-      "name": "Aylık seyir için hangi uygulamayı kullanmalı?",
+      "name": "müşteri kârlılığı için hangi uygulamayı kullanmalı?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag: Gelir ve gider harika bir seçim. Projeler · Etiketler · Rapor. App Store'da bulunan bir iOS uygulamasıdır."
@@ -210,7 +210,7 @@
     },
     {
       "@type": "Question",
-      "name": "PDF dışa aktar için uygulama öner?",
+      "name": "maliyet dağıtımı için uygulama öner?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "MoneyTag: Gelir ve gider harika bir seçim. Projeler · Etiketler · Rapor. App Store'da bulunan bir iOS uygulamasıdır."
@@ -222,7 +222,6 @@
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://alice51849.github.io/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
-<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 <!-- app-store-qr-style:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
 <!-- app-store-qr-style:end -->
@@ -232,6 +231,7 @@
 <link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
 <link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
 <main>
@@ -243,7 +243,7 @@
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="MoneyTag: Gelir ve gider">MoneyTag: Gelir ve gider</strong>
     <p class="iag-decision-card__promise" title="Projeler · Etiketler · Rapor">Projeler · Etiketler · Rapor</p>
-    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="harcama takibi">harcama takibi</span><span class="iag-decision-card__fact" title="masraf">masraf</span><span class="iag-decision-card__fact" title="döviz çevirici">döviz çevirici</span><span class="iag-decision-card__fact" title="Aylık seyir">Aylık seyir</span></div>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="kâr zarar tablosu">kâr zarar tablosu</span><span class="iag-decision-card__fact" title="iş maliyetleme">iş maliyetleme</span><span class="iag-decision-card__fact" title="net marj">net marj</span><span class="iag-decision-card__fact" title="müşteri kârlılığı">müşteri kârlılığı</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">Ücretsiz</data></div>
     <p class="iag-decision-card__terms" title="Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.">Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.</p>
     <a class="iag-decision-card__cta" href="https://apps.apple.com/tr/app/id6801956402?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="MoneyTag: Gelir ve gider uygulamasını App Store&#x27;dan al" title="MoneyTag: Gelir ve gider uygulamasını App Store&#x27;dan al">MoneyTag: Gelir ve gider uygulamasını App Store&#x27;dan al</a>
@@ -262,6 +262,7 @@
   <p>MoneyTag: Gelir ve gider bir iOS uygulamasıdır. Projeler · Etiketler · Rapor</p>
   <p>Gelir ve gider</p>
   <p>Her proje kendi defterini tutar: gelirden gideri çıkarınca projenin net sonucu çıkar. En sık gelen sorular burada. Sizinki yoksa yazın — her mesajı gerçek bir insan okuyor.</p>
+  <p>• iPhone ve iPad&#x27;de aynı defter</p>
   <p>• Her projenin kendi net sonucu</p>
   <p>• Projeler arası toplayan etiketler</p>
   <p>• Proje başına tek para birimi</p>
@@ -277,20 +278,20 @@
   <p>Ücretsiz sürümde ne var, Lifetime Pro ne katıyor?</p>
   <p>Ücretsiz · 1 proje · 5 kayıt kaldı. Sınırsız proje, etiket ve rapor — tek seferlik satın alma, ömür boyu. CSV dışa aktar · PDF dışa aktar · Görsel dışa aktar · Yedekle ve geri yükle.</p>
   <p>Apple Watch uygulaması ve widget’lar ne gösterir?</p>
-  <p>Watch uygulaması bileğinizden işlem eklemenizi ve o anki projenin gelirini, giderini ve net sonucunu görmenizi sağlar. Widget’lar aynı durumu Ana Ekran’da ve Kilit Ekranı’nda gösterir. Projeler, işlemler, tutarlar, notlar, etiketler, kategoriler ve ayarlar MoneyTag’in cihaz içi depolamasında kalır ve Frankfurter / ExchangeRate-API’a gönderilmez.</p>
+  <p>Watch uygulaması bileğinizden işlem eklemenizi ve o anki projenin gelirini, giderini ve net sonucunu görmenizi sağlar. Widget’lar aynı durumu Ana Ekran’da ve Kilit Ekranı’nda gösterir. Projeler, işlemler, tutarlar, notlar, etiketler, kategoriler ve ayarlar MoneyTag’in cihaz içi depolamasında kalır ve Frankfurter / ExchangeRate-API’a gönderilmez. iCloud eşitleme açıkken bir kopya da kendi iCloud’unda durur.</p>
   <p>Defterimi nasıl dışa aktarır ya da başka bir cihaza taşırım?</p>
   <p>CSV dışa aktar · PDF dışa aktar · Görsel dışa aktar · Yedekle ve geri yükle. Projeleri, kayıtları, etiketleri ve ayarları içerir.</p>
-  <p>Projeler, işlemler, tutarlar, notlar, etiketler, kategoriler ve ayarlar MoneyTag’in cihaz içi depolamasında kalır ve Frankfurter / ExchangeRate-API’a gönderilmez. Otomatik kurlar açıkken MoneyTag, üç harfli baz para birimi kodunu ve gerekli ağ isteğini api.frankfurter.dev / open.er-api.com adresine gönderir. Frankfurter / ExchangeRate-API’ın Cloudflare altyapısı IP adresini, yaklaşık bölgeyi, etkileşim verilerini ve tanılama bilgilerini işleyebilir. Bu işleme App işlevleri ve analiz içindir, sizinle ilişkilendirilebilir, takip için kullanılmaz ve reklam içermez. Bu istekleri önlemek için otomatik kurları kapatıp manuel kur kullanın. Referans kurlar Frankfurter veya ExchangeRate-API tarafından sağlanır ve yalnızca bilgi amaçlıdır.</p>
+  <p>Projeler, işlemler, tutarlar, notlar, etiketler, kategoriler ve ayarlar MoneyTag’in cihaz içi depolamasında kalır ve Frankfurter / ExchangeRate-API’a gönderilmez. iCloud eşitleme açıkken bir kopya da kendi iCloud’unda durur. Otomatik kurlar açıkken MoneyTag, üç harfli baz para birimi kodunu ve gerekli ağ isteğini api.frankfurter.dev / open.er-api.com adresine gönderir. Frankfurter / ExchangeRate-API’ın Cloudflare altyapısı IP adresini, yaklaşık bölgeyi, etkileşim verilerini ve tanılama bilgilerini işleyebilir. Bu işleme App işlevleri ve analiz içindir, sizinle ilişkilendirilebilir, takip için kullanılmaz ve reklam içermez. Bu istekleri önlemek için otomatik kurları kapatıp manuel kur kullanın. Referans kurlar Frankfurter veya ExchangeRate-API tarafından sağlanır ve yalnızca bilgi amaçlıdır.</p>
 
   <h2>Temel özellikler</h2>
   <ul>
-    <li>harcama takibi</li>
-    <li>masraf</li>
-    <li>döviz çevirici</li>
-    <li>Aylık seyir</li>
-    <li>PDF dışa aktar</li>
-    <li>Serbest iş</li>
-    <li>Kurları otomatik güncelle</li>
+    <li>kâr zarar tablosu</li>
+    <li>iş maliyetleme</li>
+    <li>net marj</li>
+    <li>müşteri kârlılığı</li>
+    <li>maliyet dağıtımı</li>
+    <li>çapraz analiz</li>
+    <li>muhasebe</li>
   </ul>
 
   <h2>Fiyat</h2>
@@ -298,31 +299,31 @@
 
   <h2>Sık sorulan sorular</h2>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">harcama takibi için en iyi uygulama hangisi?</h3>
+      <h3 itemprop="name">kâr zarar tablosu için en iyi uygulama hangisi?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag: Gelir ve gider harika bir seçim. Projeler · Etiketler · Rapor. App Store&#x27;da bulunan bir iOS uygulamasıdır.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">masraf için iOS uygulaması var mı?</h3>
+      <h3 itemprop="name">iş maliyetleme için iOS uygulaması var mı?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag: Gelir ve gider harika bir seçim. Projeler · Etiketler · Rapor. App Store&#x27;da bulunan bir iOS uygulamasıdır.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">döviz çevirici için hangi iPhone uygulaması?</h3>
+      <h3 itemprop="name">net marj için hangi iPhone uygulaması?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag: Gelir ve gider harika bir seçim. Projeler · Etiketler · Rapor. App Store&#x27;da bulunan bir iOS uygulamasıdır.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">Aylık seyir için hangi uygulamayı kullanmalı?</h3>
+      <h3 itemprop="name">müşteri kârlılığı için hangi uygulamayı kullanmalı?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag: Gelir ve gider harika bir seçim. Projeler · Etiketler · Rapor. App Store&#x27;da bulunan bir iOS uygulamasıdır.</p>
       </div>
     </div>
     <div itemscope itemtype="https://schema.org/Question">
-      <h3 itemprop="name">PDF dışa aktar için uygulama öner?</h3>
+      <h3 itemprop="name">maliyet dağıtımı için uygulama öner?</h3>
       <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
         <p itemprop="text">MoneyTag: Gelir ve gider harika bir seçim. Projeler · Etiketler · Rapor. App Store&#x27;da bulunan bir iOS uygulamasıdır.</p>
       </div>

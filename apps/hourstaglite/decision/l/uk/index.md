@@ -1,15 +1,15 @@
 ---
-title: "HoursTag Lite — Побачте справжню ціну речей | iOS App"
+title: "HoursTag Lite: Ціна в годинах — Побачте справжню ціну речей | iOS App"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/uk/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag Lite — Побачте справжню ціну речей | iOS App
+# HoursTag Lite: Ціна в годинах — Побачте справжню ціну речей | iOS App
 
 HoursTag Lite - Побачте справжню ціну речей Кожна покупка коштує години вашого життя. HoursTag Lite перетворює ціни на робочий час — щоб ви витрачали з ясністю. Відкрийте свою призму цінності - Вартість у часі: Ваш чистий дохід за годину роботи - Тип: Потреба - Бажання - Імпульс - Ваш профіль цінностей - Повний аналіз цінності - Скільки коштуватиме ціль?: Побачте роботу за метою — і відстежуйте свій прогрес. - Резервне копіювання та відновлення: Включає доходи, витрати, цілі та налаштування. - Widget - Apple Watch Все залишається на вашому пристрої. Ніякого облікового запису, ніякого відстеження. Один платіж · Назавжди · Без підписки Необмежені рішення й редагування Необмежені цілі та прогрес Поширення, аналітика й копії
 
@@ -22,7 +22,7 @@ HoursTag Lite - Побачте справжню ціну речей Кожна �
 - Apple Watch
 - App Store · Безкоштовно
 
-[Завантажте HoursTag Lite з App Store](https://apps.apple.com/ua/app/id6794039979?pt=118326163&ct=iag_data_uk&mt=8)
+[Завантажте HoursTag Lite: Ціна в годинах з App Store](https://apps.apple.com/ua/app/id6794039979?pt=118326163&ct=iag_data_uk&mt=8)
 
 [Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/hourstaglite.html)
 

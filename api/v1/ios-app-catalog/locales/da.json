@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-29",
-  "content_digest": "997a168540b6b6153e598e71873985592fe9da2d89b7db3a3adc00934fde1b51",
+  "date_modified": "2026-08-31",
+  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
   "locale": "da",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -51,7 +51,7 @@
     {
       "key": "aibriefpack",
       "app_store_id": "6791658210",
-      "name": "AI Brief",
+      "name": "AI Brief: Filer til AI-prompt",
       "summary": "Bedre kontekst. Bedre svar.",
       "category": "productivity",
       "search_terms": [
@@ -130,7 +130,7 @@
     {
       "key": "aim990plus",
       "app_store_id": "6792483140",
-      "name": "Aim990 Plus",
+      "name": "Aim990 Plus: Engelsk prøvetest",
       "summary": "Aim990 Plus er et samlet træningsværktøj til voksne, der vil læse og forstå talt engelsk sikkert, også når uret tikker. Dagens målrettede forløb begynder med 8 opvarmningsopgaver, fortsætter med et Pressure Set på 20 opgaver på 15 minutter og slutter med Mistake Replay. Her møder du straks de opgaver igen, som du svarede forkert på, så hver fejl bliver til konkret træning.",
       "category": "kids",
       "search_terms": [
@@ -443,7 +443,7 @@
     {
       "key": "gmoney",
       "app_store_id": "6755782939",
-      "name": "G+Money",
+      "name": "G+Money: Udgifter og budget",
       "summary": "G+Money samler to daglige værktøjer i ét — en lynhurtig valutaomregner og en smuk udgiftsstyring — til hverdagen og til rejsen. Helt offline. Helt privat.",
       "category": "finance",
       "search_terms": [
@@ -500,7 +500,7 @@
     {
       "key": "gmoneylite",
       "app_store_id": "6793436548",
-      "name": "G+Money Lite",
+      "name": "G+Money Lite: Rejseudgifter",
       "summary": "G+Money Lite — Smart rejsevaluta- & udgiftstracker",
       "category": "finance",
       "search_terms": [
@@ -537,7 +537,7 @@
     {
       "key": "hourstaglite",
       "app_store_id": "6794039979",
-      "name": "HoursTag Lite",
+      "name": "HoursTag Lite: Pris i timer",
       "summary": "HoursTag Lite - Den sande pris på ting",
       "category": "finance",
       "search_terms": [
@@ -634,7 +634,7 @@
     {
       "key": "lockhour",
       "app_store_id": "6780107485",
-      "name": "LockHour Pro",
+      "name": "LockHour Pro: App-blokering",
       "summary": "Gør dine bedste timer mere bevidste. LockHour Pro hjælper dig med at starte rolige fokussessioner, mindske telefonens distraktioner og opbygge produktive vaner uden unødigt fyld. Brug den til studie, skrivning, planlægning og dybt arbejde.",
       "category": "productivity",
       "search_terms": [
@@ -1277,7 +1277,7 @@
     {
       "key": "maskmyfile",
       "app_store_id": "6792850916",
-      "name": "Mask My File",
+      "name": "Mask My File: Fjern dine data",
       "summary": "Del trygt uden at miste den nyttige sammenhæng. Mask My File finder private oplysninger, før du sender en fil, tildækker permanent det, du vælger, og åbner og verificerer derefter den nye kopi, før Private Ready vises.",
       "category": "photo-utility",
       "search_terms": [
@@ -1402,12 +1402,12 @@
       "summary": "Indtægter og udgifter",
       "category": "finance",
       "search_terms": [
-        "udgiftsoversigt",
-        "valutaomregner",
-        "valutakurs",
-        "husholdningsbudget",
-        "Månedsudvikling",
-        "Sikkerhedskopi & gendan"
+        "resultatopgørelse",
+        "jobkalkulation",
+        "dækningsgrad",
+        "kundelønsomhed",
+        "omkostningsfordeling",
+        "tværgående analyse"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1476,7 +1476,7 @@
     {
       "key": "photocream",
       "app_store_id": "6781808054",
-      "name": "PhotoCream Pro",
+      "name": "PhotoCream Pro: Filmfiltre",
       "summary": "PhotoCream Pro er din perfekte ledsager til at fange og redigere fantastiske billeder. Vores app tilbyder et premium retrofilmkamera med over 100 autentiske analoge filtre og en live preview, der giver dine billeder en nostalgisk følelse. Derudover tilbyder vores avancerede fotoredigering funktioner som frekvensseparation for at opnå perfekt hud, ansigts- og kropsformning samt justering af lys og farver for at skabe det perfekte billede. Med PhotoCream Pro behøver du ikke bekymre dig om abonnementer eller annoncer, og alle dine data forbliver på din enhed. Oplev det fulde potentiale af din iPhone eller iPad med PhotoCream Pro.",
       "category": "photo-utility",
       "search_terms": [
@@ -1532,7 +1532,7 @@
     {
       "key": "picclear",
       "app_store_id": "6780223070",
-      "name": "PicClear Pro",
+      "name": "PicClear Pro: Fotooprydning",
       "summary": "Få gigabyte af plads tilbage ved at fjerne de billeder, du ikke længere har brug for: dubletter, gamle skærmbilleder, slørede fotos og store videoer.",
       "category": "photo-utility",
       "search_terms": [
@@ -1816,7 +1816,7 @@
     {
       "key": "snapportlite",
       "app_store_id": "6792856304",
-      "name": "Snapport Lite",
+      "name": "Snapport Lite: Pasfoto hjemme",
       "summary": "Snapport Lite - Tag pas-, visum- og dokumentfotos med vejledende størrelser, baggrundsværktøjer og klar til print eksport.",
       "category": "photo-utility",
       "search_terms": [
@@ -2058,7 +2058,7 @@
     {
       "key": "wifiaid",
       "app_store_id": "6790467886",
-      "name": "WiFi Aid",
+      "name": "WiFi Aid: Find netværksfejl",
       "summary": "Find den mest sandsynlige årsag med uafhængige test af ruter, DNS, TCP, TLS, svartid og stabilitet. Én forudbetaling, intet abonnement, reklamer eller sporing.",
       "category": "photo-utility",
       "search_terms": [

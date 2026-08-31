@@ -1,15 +1,15 @@
 ---
-title: "WiFi Aid — Διάγνωση δικτύου με στοιχεία | iOS App"
+title: "WiFi Aid: Εντοπισμός βλαβών — Διάγνωση δικτύου με στοιχεία | iOS App"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/el/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid — Διάγνωση δικτύου με στοιχεία | iOS App
+# WiFi Aid: Εντοπισμός βλαβών — Διάγνωση δικτύου με στοιχεία | iOS App
 
 Βρείτε την πιθανότερη αιτία με ανεξάρτητους ελέγχους διαδρομών, DNS, TCP, TLS, χρόνων και σταθερότητας. Μία αρχική πληρωμή, χωρίς συνδρομή, διαφημίσεις ή παρακολούθηση. • Έναρξη ελέγχου — Έλεγχοι Wi-Fi και DNS με ένα άγγιγμα • Βαθύς έλεγχος — Περισσότερες αποδείξεις και σταθερότητα δικτύου • Έλεγχος ιστότοπου — Δείτε αν πέφτει ένα site ή όλο το ίντερνετ • Αποδείξεις — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Η σύνδεση φαίνεται ασταθής — Διακύμανση • Ιστορικό — Ιδιωτικά αρχεία μόνο σε αυτή τη συσκευή • Apple Watch — Έναρξη ελέγχου • Widget · iPad — Συνδεδεμένο · Έναρξη ελέγχου Χωρίς λογαριασμό, διαφημίσεις ή παρακολούθηση. Ιδιωτικά αρχεία μόνο σε αυτή τη συσκευή. Μία αρχική αγορά στο App Store. Χωρίς συνδρομή.
 
@@ -17,7 +17,7 @@ publisher: "Lumi Studio"
 - Λήψη με χρέωση
 - App Store · 6,99 €
 
-[Αποκτήστε το WiFi Aid από το App Store](https://apps.apple.com/gr/app/id6790467886?pt=118326163&ct=iag_data_el&mt=8)
+[Αποκτήστε το WiFi Aid: Εντοπισμός βλαβών από το App Store](https://apps.apple.com/gr/app/id6790467886?pt=118326163&ct=iag_data_el&mt=8)
 
 [Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/wifiaid.html)
 

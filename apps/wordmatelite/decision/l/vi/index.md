@@ -2,7 +2,7 @@
 title: "Wordmate Lite 5 từ mỗi ngày — Học 44 ngôn ngữ trong 1 phút | iOS App"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/vi/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

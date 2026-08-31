@@ -2,7 +2,7 @@
 title: "DailyMate Lite：开口练习 — 50 种语言场景短句 | iOS App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/zh-Hans/index.html"
-modified: "2026-08-30"
+modified: "2026-08-31"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

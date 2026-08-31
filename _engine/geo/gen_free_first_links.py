@@ -43,6 +43,20 @@
   • 發布前跑 geo/audit_free_first_identity.py(publish.py 已內建前後兩趟)
     當 gate:圖片/ID 不符與「免費門被翻成付費」任一非 0 就不准發布。
 
+鐵則(2026-08-31 全語料稽核後,第三次收緊 —— 這次治的是**歸屬**):
+  • 換門只換身份,**不會重算購買模式的事實**。answer 頁的 FAQ / featureList /
+    pill /「最適合」欄是 answer_facts 依「擁有這條 query 的 app key」產生的,
+    而 deep_items / answer_personas 這類手寫內容庫是照付費版寫的。所以只要
+    「付費 key 產生的答案本身在斷言付費購買模式」,這一頁的文案就無法誠實改講
+    免費版 —— **整頁不換門**(paid_copy_page / paid_model_answer_slugs)。
+    事後刪句子(_scrub_paid_model_sentences)治不好:`itemprop=` 的 FAQ 鏡像、
+    JSON-LD 與 pill 刪不掉,實測留下 309 頁把免費 App 說成 paid download。
+  • 同一條判準的另外三種面:明確要求「零內購」的問句(免費版靠內購解鎖)、
+    `gifting/`(整頁前提是「App Store 只能送付費 App」)、gen_cost_compare 的
+    `*-subscription-cost-vs-pay-once-*`(算式綁在付費版的一次付清價)。
+  • 這三類同時當 revert 的 `owned` 證據 —— 判準來自 canon 側(slug、目錄、
+    產生器輸入),不是拿頁面上的付費字樣當身份證據。
+
 配對來源:app_pairs.py(registry 自動推導,新 pair 自動適用)。
 必須登錄在 geo/publish.py 的 normalize/decision-cards/QR 鏈之前 —— 直接改輸出
 會被下一次 publish 覆蓋(見 geo-site-reality 教訓)。
@@ -76,6 +90,19 @@ SKIP_DIRS = {"_engine", "assets", ".git"}
 SLUG_EXEMPT = re.compile(r"(?:^|-)(pro|plus|premium|upgrade|full)(?:-|\.|$)")
 # 陳述「本站作者的買斷制 App 有哪些」的頁:名稱是事實陳述的一部分,不能改寫。
 PORTFOLIO_PAGES = {"about.html"}
+# 送禮頁:整頁的前提是「App Store 只能送付費 App」。把清單換成免費版,讀者照著
+# 做會發現免費 App 根本沒有「贈送」選項 —— 換門在這裡不只是文案不符,是功能錯誤。
+GIFTING_SURFACE = "gifting"
+# answer 頁所在的目錄名(頂層 `answers/` 與各語系鏡像 `<locale>/answers/`)。
+ANSWERS_SURFACE = "answers"
+# gen_cost_compare 的「訂閱長期成本 vs 一次付清」頁:整篇的算式是照付費版的
+# **一次付清價**寫的(`Paid download · one upfront price · no subscription.`),
+# 本模組沒有對應的免費版寫法,換門就會把算式安到沒有標價的免費版頭上。
+COST_COMPARE_RE = re.compile(r"-subscription-cost-vs-pay-once(?:-|$)")
+# 明確要求「零內購」的問句:配對免費版一定有內購(free_with_lifetime_unlock),
+# 所以它**不是**這題的答案。這種 slug 沒有 pro/plus 字樣,既有 exempt 抓不到,
+# 而且答案文字未必寫出 `paid download`,所以獨立成一條意圖判準。
+PAID_ONLY_INTENT_RE = re.compile(r"in[-\s]?app purchase", re.I)
 
 
 def _persona_page_basenames():
@@ -489,6 +516,95 @@ def owns_page(rel, swap):
     return normalized_key(stem) == swap["paid_key"]
 
 
+@functools.lru_cache(maxsize=1)
+def paid_model_answer_slugs():
+    """{answer slug: 付費 key} —— 這一頁的答案內容是照付費版寫的,而且明講付費購買模式。
+
+    根因(2026-08-31 全語料實測 309 頁):`answers/<slug>.html` 的事實(FAQ、
+    featureList、pill、「最適合」欄)由 aeo_answers → answer_facts 依**擁有這條
+    query 的 app key** 產生;deep_items / answer_personas 這類手寫內容庫是照
+    付費版寫的,裡面就明講 `paid download` / `one upfront price`。換門只換身份
+    不換事實,於是免費 App 被說成付費下載。
+
+    另一條獨立判準是**問句意圖**:明確要求「零內購」的問題,配對免費版本來就不
+    符合(它靠內購解鎖),所以也不可換門。
+
+    這裡不是拿頁面上的字當身份證據(那正是 2026-08-31 事故的錯誤做法),而是
+    回到**產生器輸入**:同一條 query 交給付費 key 產生的答案本身就在斷言付費
+    購買模式 → 這一頁的文案無法誠實地改講免費版,所以整頁不換門。
+
+    想讓這些頁重新變成免費門,正解不是在這裡放寬,而是**把 query 改掛免費版**
+    (queries.py)並讓免費版自己的內容庫(answer_personas / deep_items)誠實
+    回答同一個問題 —— 那樣事實從產生時就是對的。2026-08-31 實測:這 34 個
+    slug 的免費兄弟目前都沒有對應的內容庫條目,硬改掛只會把頁面打回泛用樣板。
+    """
+    try:
+        import queries
+        import answer_facts
+        from publisher_intent_catalog import slugify
+    except Exception:  # 產生器可獨立執行時就少一層守門
+        return {}
+    out = {}
+    for paid in sorted(paid_to_free()):
+        app = APPS.get(paid)
+        if not app:
+            continue
+        for question in queries.ALL.get(paid, []):
+            if PAID_ONLY_INTENT_RE.search(question):
+                out.setdefault(slugify(question), paid)
+                continue
+            facts = answer_facts.topic_facts(question, paid, app)
+            if not facts:
+                continue
+            if PAID_MODEL_RESIDUE_RE.search(_facts_text(facts)):
+                out.setdefault(slugify(question), paid)
+    return out
+
+
+def _facts_text(facts):
+    """把 answer_facts 的覆蓋層攤平成純文字,供付費模式偵測。"""
+    parts = []
+    for value in facts.values():
+        if isinstance(value, str):
+            parts.append(value)
+        elif isinstance(value, list):
+            for item in value:
+                if isinstance(item, str):
+                    parts.append(item)
+                elif isinstance(item, dict):
+                    parts.append(str(item.get("q", "")))
+                    parts.append(str(item.get("a", "")))
+    return " ".join(parts)
+
+
+def paid_copy_page(rel, swap):
+    """這一頁的**文案本身**就是付費版的,不是只有 slug 或目錄名點到付費 App。
+
+    三類:
+      • 送禮頁:整頁前提是「App Store 只能送付費 App」。換成免費版之後,讀者
+        照著做會發現免費 App 根本沒有「贈送」選項 —— 不只是文案不符,是功能錯誤。
+      • gen_cost_compare 的「訂閱長期成本 vs 一次付清」頁:算式綁在付費版的
+        一次付清價,本模組沒有對應的免費版寫法。
+      • answer 頁的答案是付費版的內容庫產出、而且明講付費購買模式
+        (paid_model_answer_slugs)。
+
+    這同時也是 revert 的證據:這三類頁**本來就不該是免費門**,所以頁面上只掛著
+    配對免費版的 id 就代表它是被誤換的。這是 canon 側的事實(slug / 目錄 /
+    產生器輸入),不是拿頁面上的付費字樣當身份證據 —— 後者正是 2026-08-31 事故
+    的錯誤做法。實際還原仍要 revert_evidence 的 `owned` 條件(付費 id 完全不在)
+    才成立,而且 `_reverse_identity` 會一併 retarget 分享圖。
+    """
+    parts = rel.split(os.sep)
+    base = parts[-1]
+    stem = base[:-5] if base.endswith(".html") else base
+    if GIFTING_SURFACE in parts[:-1]:
+        return True
+    if COST_COMPARE_RE.search(stem):
+        return True
+    return (parts[-2:-1] == [ANSWERS_SURFACE]
+            and paid_model_answer_slugs().get(stem) == swap["paid_key"])
+
+
 def exempt(rel, name, swap):
     base = os.path.basename(rel)
     stem = base[:-5] if base.endswith(".html") else base
@@ -504,6 +620,8 @@ def exempt(rel, name, swap):
     if owns_page(rel, swap):
         return True
     if base in PORTFOLIO_PAGES and len(parts) == 1:
+        return True
+    if paid_copy_page(rel, swap):
         return True
     # publisher intent catalog 把每支 App 的 persona 首問頁登記成「該 App 自己的
     # 頁」,並在多個下游驗證器要求頁面身份與該 App 一致(CTA 標籤、在地化名稱、
@@ -1074,7 +1192,8 @@ def process(rel, text, swaps):
     for swap in swaps:
         if exempt(rel, os.path.basename(rel), swap):
             new_text, k = revert_doc(
-                new_text, swap, owned=owns_page(rel, swap)
+                new_text, swap,
+                owned=owns_page(rel, swap) or paid_copy_page(rel, swap),
             )
             if k:
                 reverted[swap["paid_key"]] += 1

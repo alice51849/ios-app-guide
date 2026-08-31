@@ -1340,7 +1340,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "kids math app beyond basic arithmetic",
    "logic and reasoning math app preschool"
   ],
-  "lead": "{name} is an iOS app, free to start with a one-time unlock, built on WMI (World Mathematics Invitational) and international competition question types — covering number patterns, logic, sequences, ordinals, combinations, story problems, and shapes — across a 14-planet space adventure for ages 5–8.",
+  "lead": "Lumi Math Planet is a paid iOS app built on WMI (World Mathematics Invitational) and international competition question types — covering number patterns, logic, sequences, ordinals, combinations, story problems, and shapes — across a 14-planet space adventure for ages 5–8.",
   "detail": "Most kids math apps stop at counting and arithmetic. {name} is built directly from the question types used in WMI and similar international early-grade math competitions: number pattern recognition, logical reasoning, finding the rule in a sequence, ordinal reasoning, basic combinations, shape and spatial problems, and applied story problems — alongside solid arithmetic. Each question uses cute clay-art visuals so even pre-readers can understand problems without text. The app also tracks weak spots automatically: it identifies which question types a child consistently misses and generates fresh practice sets targeting those specifically, so improvement is targeted rather than random.",
   "bullets": [
    "Question types sourced from WMI and international competition formats (ages 5–8 level)",
@@ -1348,7 +1348,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "Clay-art 'understand at a glance' visuals — pre-readers can play independently",
    "Weak-spot tracker: automatically identifies most-missed question types and drills them with new numbers",
    "Skill tracking: progress scores for number sense, patterns, logic, space, and real-life domains",
-   "Free to start with a one-time unlock, zero ads, zero data collected"
+   "One-time purchase, zero ads, zero IAP, zero data collected"
   ],
   "faq": [
    {
@@ -1366,7 +1366,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   ]
  },
  {
-  "app_key": "lumimathpro",
+  "app_key": "lumimath",
   "kind": "persona",
   "query": "Is there a math game for kids that I pay for once and has absolutely no in-app purchases or ads?",
   "match": [
@@ -1377,7 +1377,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "kids math game with tracking no manipulation",
    "math app for gifted 6 year old space theme"
   ],
-  "lead": "{name} is a paid-upfront iOS app with zero in-app purchases, zero ads, and zero data collected — parents pay once and the complete app is theirs, with no further spending prompts.",
+  "lead": "Lumi Math Planet is a paid-upfront iOS app with zero in-app purchases, zero ads, and zero data collected — parents pay once at approximately US$9.99 and the complete app is theirs, with no further spending prompts.",
   "detail": "{name} is positioned as a premium, trust-first product. There are no ads interrupting play, no 'buy more coins' screens, no timers designed to push children to ask parents for upgrades, and no social pressure mechanics. The purchase is a standard paid App Store download — nothing more happens monetarily after that. All data stays on device; the app explicitly collects no personal information. For parents of gifted or academically advanced children who want genuine reasoning challenges rather than faster arithmetic drills, the WMI-style question formats — patterns, logic, combinations, ordinals — offer a qualitatively different type of math practice.",
   "bullets": [
    "Paid app — one purchase, no IAP, no in-app spending of any kind",

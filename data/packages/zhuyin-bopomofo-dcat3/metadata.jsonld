@@ -27,7 +27,7 @@
   "identifier": "LUMI-ZHUYIN-DCAT3-2026",
   "version": "1.5.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-08-30T00:00:00Z",
+  "dateModified": "2026-08-31T00:00:00Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -97,7 +97,7 @@
       "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ro-crate",
       "name": "Bopomofo RO-Crate 1.3 research object",
       "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
-      "dateModified": "2026-08-30"
+      "dateModified": "2026-08-31"
     },
     {
       "@type": "Dataset",
@@ -162,8 +162,8 @@
       "name": "Complete ZIP bundle",
       "encodingFormat": "application/zip",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip",
-      "contentSize": "28823 bytes",
-      "sha256": "1b9cafc8dbd402383dcd59ec40d7e9af33edf9e665402f251eba4e83a0d6f1ef"
+      "contentSize": "28819 bytes",
+      "sha256": "148f6faf28376955b48143e028897f9850ce76dba724fe7e517a5656a1e5b05c"
     },
     {
       "@type": "DataDownload",
@@ -171,7 +171,7 @@
       "encodingFormat": "application/ld+json",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld",
       "contentSize": "218434 bytes",
-      "sha256": "85538e23aeb81b5f1131a00eac25a3a222389e24fd4be42ec62b912205f54526"
+      "sha256": "a35f046cd8b9c7a88ce90a0317bc1403d9aa9b30c74f0ffd9b1be8b55e0d1ee5"
     },
     {
       "@type": "DataDownload",
@@ -179,7 +179,7 @@
       "encodingFormat": "text/turtle",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl",
       "contentSize": "148253 bytes",
-      "sha256": "475f9118d66321198184d27bd5ae415e2b3fea03cec7166637f060fd878ddfce"
+      "sha256": "d97a5c36063111e321e669350ab1ba04e3c0dbf7adec21acc17459a8d7237934"
     }
   ]
 }

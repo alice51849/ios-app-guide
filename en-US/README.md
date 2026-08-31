@@ -146,6 +146,6 @@ JSON, JSONL and CSV contain the same 2,300 records.
 
 [Home](https://alice51849.github.io/ios-app-guide/en-US/index.html) · [Open data](https://alice51849.github.io/ios-app-guide/en-US/data/lumi-studio-publisher-search-intent-catalog.html) · [License](https://creativecommons.org/licenses/by/4.0/)
 
-Updated: 2026-08-30
+Updated: 2026-08-31
 
 CC BY 4.0 applies to the original catalog compilation; app names and App Store marks belong to their owners.

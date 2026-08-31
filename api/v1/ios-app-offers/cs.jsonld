@@ -6,7 +6,7 @@
   "name": "Katalog vyhledávacích záměrů vydavatele Lumi Studio",
   "description": "Katalog od první strany, který uvádí, pro koho je každá aplikace určena, jaký úkol má splnit a přímou cestu do App Store.",
   "inLanguage": "cs",
-  "dateModified": "2026-08-30",
+  "dateModified": "2026-08-31",
   "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-aim990plus",
         "url": "https://apps.apple.com/cz/app/id6792483140?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "Aim990 Plus: Test z angličtiny",
-        "description": "Když běží čas, nestačí angličtině jen rozumět. Je potřeba udržet pozornost, rychle se rozhodovat a nenechat se rozhodit jednou chybnou odpovědí. Aim990",
+        "description": "Když běží čas, nestačí angličtině jen rozumět. Je potřeba udržet pozornost, rychle se rozhodovat a nenechat se rozhodit jednou chybnou odpovědí",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792483140",
           "inLanguage": "cs",
-          "description": "Když běží čas, nestačí angličtině jen rozumět. Je potřeba udržet pozornost, rychle se rozhodovat a nenechat se rozhodit jednou chybnou odpovědí. Aim990",
+          "description": "Když běží čas, nestačí angličtině jen rozumět. Je potřeba udržet pozornost, rychle se rozhodovat a nenechat se rozhodit jednou chybnou odpovědí",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-aim990plus"
           },

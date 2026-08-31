@@ -10,9 +10,9 @@
     "url": "https://alice51849.github.io/ios-app-guide"
   },
   "source_dataset": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "source_sha256": "29c0105dd0065d5572dfe4a64ac62a909a8c410339c7182be54626aaf8566edd",
-  "content_digest": "f5a4125364b7b6dd24688ee83bd68ed6434285aed4a6d1c59f2a754f33f1f55c",
-  "generation_digest": "82746caf5461df35d65d33ecd70fae45d9065b94ebbe7a47955ceb9c9b39f424",
+  "source_sha256": "966984498115ac0e81a2034a5ade16c5716f5828ee106e6497c7cd5148b0376c",
+  "content_digest": "f0f00873febdb1c46bd8fa21e8c40f4bfc92be2ce500f1183f4f824f9d254d64",
+  "generation_digest": "3a8d35f3bf0eef8f7596972c70228db3816a6b7a08e02e26fe52465287488498",
   "ordering": "official_locale_order_then_alphabetical_app_name",
   "app_count": 46,
   "locale_count": 50,
@@ -22,7 +22,7 @@
     {
       "locale": "en",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/visuals/",
-      "sha256": "d2abeb880ebec18c3b679f7407f31c8657cb542e804a74ae58d84bd875d88dad"
+      "sha256": "3683cb9985f253bef28337d91118f33877df3364dd8e14cccd9094d9c993dd00"
     },
     {
       "locale": "ar-SA",
@@ -62,22 +62,22 @@
     {
       "locale": "en-AU",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/en-AU/visuals/",
-      "sha256": "b61846e017b54e95f1cb5823682365f4ba46fee5b9153148d3517deb7a468979"
+      "sha256": "8080934fe9ece5eec880ac2b98ba264e5102d66b73a4136b6d0fbb9efcd023f0"
     },
     {
       "locale": "en-CA",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/en-CA/visuals/",
-      "sha256": "d27dfbbad1dc755c798e2b91421dd66e9240db40f9e2702c853cae6d5cd6d461"
+      "sha256": "a8d63a9166b97400a92d419e6986b0c3025f8a38adca845fd7c021d2f14a5e37"
     },
     {
       "locale": "en-GB",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/en-GB/visuals/",
-      "sha256": "0cff6c5406a04eeb25e323a59474a7c68b80771f9211a8588e9009bd1ec6f254"
+      "sha256": "38bbf877df3a7be1d76252b83e7ebe2ec013c61aac9ea86be08dd9f26da2a86f"
     },
     {
       "locale": "en-US",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/en-US/visuals/",
-      "sha256": "374c8938f29c3192b4cf4008df6fb0aa36ce597da290add4eaabddd57f065d40"
+      "sha256": "776cd8d1432ea6073a24167ed08ca9270effd1832a5001f7d38345ee92c35d02"
     },
     {
       "locale": "es-ES",
@@ -3934,9 +3934,9 @@
       "app_store_id": "6790467886",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-AU/wifiaid.svg",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/en-AU/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/wifiaid.html",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-AU/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html",
       "app_store_url": "https://apps.apple.com/au/app/id6790467886?pt=118326163&ct=iag_visual_en_au&mt=8",
-      "sha256": "ad4573303b518bf7dc9593a22010e67fc77f2065a173b403a5eb00a21cf65a62"
+      "sha256": "257302f57c866cb72f1c782f3039600da09a408b2e6c7c473928f83c3260ed1c"
     },
     {
       "locale": "en-AU",
@@ -4394,9 +4394,9 @@
       "app_store_id": "6790467886",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-CA/wifiaid.svg",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/en-CA/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/wifiaid.html",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-CA/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html",
       "app_store_url": "https://apps.apple.com/ca/app/id6790467886?pt=118326163&ct=iag_visual_en_ca&mt=8",
-      "sha256": "fe061a853b2fa4e4e2e507ca26eb259e986b8e7b2a6a2569c903360612bc4e6f"
+      "sha256": "84c70d72d1f6a35ce855154cf8c4207ed51485e9889bd6ec8db58e4570e39c94"
     },
     {
       "locale": "en-CA",
@@ -4854,9 +4854,9 @@
       "app_store_id": "6790467886",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-GB/wifiaid.svg",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/en-GB/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/wifiaid.html",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-GB/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html",
       "app_store_url": "https://apps.apple.com/gb/app/id6790467886?pt=118326163&ct=iag_visual_en_gb&mt=8",
-      "sha256": "f9e05cf646e7787e8b492707f28e85cae105ef29bea8ae84be4108fc18eb715d"
+      "sha256": "e7fcf988db5add3e30698bf4b5dfb651ac28829e34bb3ceac525b0df66c7093f"
     },
     {
       "locale": "en-GB",
@@ -5314,9 +5314,9 @@
       "app_store_id": "6790467886",
       "image_url": "https://alice51849.github.io/ios-app-guide/visuals/en-US/wifiaid.svg",
       "gallery_url": "https://alice51849.github.io/ios-app-guide/en-US/visuals/",
-      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/wifiaid.html",
+      "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html",
       "app_store_url": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_visual_en_us&mt=8",
-      "sha256": "9a3a51442b8402fc574a3168b3a07397e80fc1431d80728c3948e584d40c7986"
+      "sha256": "41b7ea7921101fc5a50ab3ad40fb50d9841d1db4c63f71126a62c3140f2fe1fe"
     },
     {
       "locale": "en-US",

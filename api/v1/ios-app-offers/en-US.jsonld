@@ -2785,6 +2785,72 @@
     {
       "@type": "ListItem",
       "position": 43,
+      "url": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-wifiaid",
+        "url": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8",
+        "name": "WiFi Aid",
+        "description": "When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing — WiFi Aid is built for this.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790467886",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790467886"
+          },
+          "name": "WiFi Aid",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8",
+          "installUrl": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8",
+          "downloadUrl": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://alice51849.github.io/ios-app-guide/en-US/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790467886",
+          "inLanguage": "en-US",
+          "description": "When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing — WiFi Aid is built for this.",
+          "offers": {
+            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-wifiaid"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "5.99",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "US"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 44,
       "url": "https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=iag_data_en_us&mt=8",
       "item": {
         "@type": "Offer",
@@ -2840,72 +2906,6 @@
           "isAccessibleForFree": true
         },
         "price": "0",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "US"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 44,
-      "url": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-wifiaid",
-        "url": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8",
-        "name": "WiFi Aid: Find WiFi Problems",
-        "description": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and stability checks. Pay once upfront—no subscription, ads or",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6790467886",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6790467886"
-          },
-          "name": "WiFi Aid: Find WiFi Problems",
-          "operatingSystem": "iOS",
-          "applicationCategory": "PhotographyApplication",
-          "url": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8",
-          "installUrl": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8",
-          "downloadUrl": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=iag_data_en_us&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/en-US/wifiaid.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6790467886",
-          "inLanguage": "en-US",
-          "description": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and stability checks. Pay once upfront—no subscription, ads or",
-          "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/en-US.jsonld#offer-wifiaid"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "paid_upfront"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": false
-        },
-        "price": "5.99",
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

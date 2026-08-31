@@ -362,13 +362,18 @@ class StandardSiteWorkflowTests(unittest.TestCase):
                 f'https://alice51849.github.io/ios-app-guide{path}">',
                 html,
             )
-            self.assertIn('content="app-id=6793414462"', html)
+            # These three documents belong to app_key "wifiaid" and their copy
+            # describes the paid edition (a US$5.99 paid download with no
+            # IAP), so the door opens the paid edition. Pinning the Lite id
+            # here froze a state the free-first swap had created, where the
+            # page linked Lite while the copy described the paid App.
+            self.assertIn('content="app-id=6790467886"', html)
             # Direct Apple links only; they carry this site's own campaign
             # attribution once a provider token is configured, so match the
             # target app and let the validator reject anything malformed.
             store_urls = re.findall(
                 r'href="(https://apps\.apple\.com/'
-                r'(?:[a-z]{2}/)?app/id6793414462(?:\?[^"]*)?)"',
+                r'(?:[a-z]{2}/)?app/id6790467886(?:\?[^"]*)?)"',
                 html,
             )
             self.assertTrue(store_urls)
@@ -379,8 +384,8 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             self.assertRegex(
                 html,
                 r'<a class="cta" href="https://apps\.apple\.com/app/'
-                r'id6793414462(?:\?[^"]*)?" rel="nofollow noopener">'
-                r"Get WiFi Aid Lite on the App Store →</a>",
+                r'id6790467886(?:\?[^"]*)?" rel="nofollow noopener">'
+                r"Get WiFi Aid on the App Store →</a>",
             )
             self.assertIn(
                 "This is a publisher-authored buying guide from the app "

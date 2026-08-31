@@ -664,6 +664,104 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
             ],
         },
+        {
+            "query": "how to track cash spending on a japan trip and see the total in my home currency",
+            "guide_title": "Cash-heavy trips: keeping the home-currency total honest while you pay in yen",
+            "triggers": [
+                "cash spending on a japan trip",
+                "track cash on a japan trip",
+                "spending in yen",
+                "yen total in my home currency",
+                "japan trip cash budget",
+                "how much have i spent in yen",
+            ],
+            "persona": "travellers to Japan who pay cash all day and only learn the damage afterwards",
+            "lead": "Cash is the one part of a trip no bank statement ever reconciles for you, and Japan is still a cash country in exactly the places worth eating in — the cashless share of consumer spending reached 58% in 2025 (METI, verified), so around four payments in ten leave nothing behind but a paper receipt.",
+            "paras": [
+                "G+Money Lite is built around the moment of paying rather than a weekly review: type the amount in yen, pick a category, and the home-currency figure appears immediately from a live rate, a rate saved earlier, or one you set by hand. Rates are fetched when you open it (roughly every six hours) and saved rates keep conversion working underground, on a mountain road or with roaming switched off. A daily limit shows what is left of today, and a trip keeps a week in Kyoto separate from everyday spending at home.",
+                "The converted figure is a mid-market reference rate, not a quote — a card issuer or an exchange counter applies its own rate and fees — and this is expense tracking, not financial advice. Free covers rates, a budget, category statistics and a summary for one trip with up to three expenses: enough to test the workflow on the first evening, not to log a fortnight. A single one-time purchase, never a subscription, removes the trip and entry limits. No account, no tracking, and the records stay on the device.",
+            ],
+            "look": [
+                "Local-currency entry that shows the home-currency figure as you type.",
+                "Saved or manual rates, so conversion still works with no signal.",
+                "A daily limit you can check before ordering, not after.",
+                "Trips kept separate from everyday spending at home.",
+                "No bank connection and no account — nothing to link, nothing collected.",
+            ],
+            "steps": [
+                "Set your home currency and create the trip before you fly.",
+                "Fetch the yen rate while you still have Wi-Fi; it stays saved for offline use.",
+                "Log each cash payment at the counter, while the receipt is still in your hand.",
+                "Check the daily limit at lunchtime, when there is still a decision to make.",
+                "Decide on the one-time unlock only once the free trip has proved the workflow.",
+            ],
+            "fits": "fits cash-heavy travellers who want each yen payment converted and categorised at the moment they pay, privately and offline.",
+            "faq": [
+                {
+                    "q": "Doesn't my banking app already show this?",
+                    "a": "Only for what you paid by card. Cash purchases never appear there, and Japan still settles a large share of everyday payments in cash — those are precisely the ones missing from your monthly total.",
+                },
+                {
+                    "q": "Is the converted amount what I will actually be charged?",
+                    "a": "No. It is a mid-market reference rate from a public exchange-rate service; card issuers and exchange counters apply their own rates and fees. Use it to steer a budget, not to predict a statement.",
+                },
+                {
+                    "q": "How far does the free version go?",
+                    "a": "Rates, budget, category statistics and a summary for one trip with up to three expenses. Beyond that, one one-time purchase — not a subscription — removes the limits.",
+                },
+                {
+                    "q": "Will it work with no mobile data abroad?",
+                    "a": "Yes, using rates saved while you had a connection. A connection is only needed to fetch updated public exchange rates.",
+                },
+            ],
+        },
+        {
+            "query": "app to log a cash expense the moment i pay without connecting a bank account",
+            "guide_title": "The expenses you forget are the cash ones: logging at the counter, not at the weekend",
+            "triggers": [
+                "log a cash expense the moment",
+                "log spending at the counter",
+                "without connecting a bank account",
+                "expense tracker on apple watch",
+                "expense widget on my home screen",
+                "always forget to log",
+            ],
+            "persona": "people in cash-first countries who never remember an expense by the evening",
+            "lead": "The expenses that vanish are almost always the cash ones — in Germany cash still settled 45% of all payments in 2025 (Bundesbank, verified), and not one of them will ever appear in a banking app.",
+            "paras": [
+                "G+Money Lite is meant to be open for about eight seconds at the counter rather than reviewed on Sunday night: amount, category, done, with the home-currency figure right there if you are abroad. A Home Screen widget and Apple Watch keep that entry within reach, which matters because an expense you promise to enter later is an expense you never enter. Categories, trips, filters and records make the log searchable afterwards, and backup and restore covers expenses, rates, categories and settings.",
+                "Nothing is imported for you. There is no bank connection and no account, so every entry is typed by hand — that is the trade-off for something that collects nothing and keeps its records on the device. It is a tracker, not financial advice, and it makes no promise that you will spend less. The free version covers rates, budget, category statistics and a summary for one trip with up to three expenses; one one-time purchase, with no subscription, removes the entry and trip limits.",
+            ],
+            "look": [
+                "An entry that takes seconds, from the Home Screen widget or the wrist.",
+                "Categories set up in advance, so paying is one tap and one number.",
+                "A daily limit that answers whether you can still afford this while you are still in the shop.",
+                "Backup and restore covering expenses, rates, categories and settings.",
+                "No bank link, no account, no tracking — the log stays on the device.",
+            ],
+            "steps": [
+                "Add the categories you actually use before you need them.",
+                "Put the widget on the Home Screen, or the app on the watch face you look at.",
+                "Log the payment while you are still standing at the counter.",
+                "Review the day's categories once in the evening instead of reconstructing a week.",
+                "Take the one-time unlock only if the free trip's three entries proved you will keep it up.",
+            ],
+            "fits": "fits people who pay cash and want an expense recorded in seconds at the counter, without linking a bank account or creating one.",
+            "faq": [
+                {
+                    "q": "Why can't it import my transactions automatically?",
+                    "a": "Because there is no bank connection and no account. Every entry is typed by hand and stays on the device — the deliberate trade-off for an app that collects nothing about you.",
+                },
+                {
+                    "q": "Is there really an Apple Watch app and a widget?",
+                    "a": "Both are part of the current App Store listing for G+Money Lite — confirm there before you rely on either, since features change between versions.",
+                },
+                {
+                    "q": "Does it tell me how to budget?",
+                    "a": "No. It records what you spent and compares it with a daily limit you set yourself. It gives no financial advice and promises no saving.",
+                },
+            ],
+        },
     ],
     "hourstag": [
         {
@@ -1253,6 +1351,101 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 {"q": "Subscription?", "a": "No — pay-once."},
             ],
         },
+        {
+            "query": "math app for a child who panics about getting the answer wrong",
+            "guide_title": "When being wrong is the problem: maths practice without a buzzer",
+            "triggers": [
+                "panics about getting the answer wrong",
+                "afraid of getting math wrong",
+                "math anxiety",
+                "cries at math homework",
+                "scared of maths",
+                "hates being wrong",
+            ],
+            "persona": "parents of a child who has already decided they are bad at maths",
+            "lead": "For a child who has decided they are bad at maths, the obstacle is not the arithmetic — it is the buzzer, the red cross, and the feeling that a wrong answer ends something.",
+            "paras": [
+                "Lumi Math Planet is built without a failure state: no buzzer, no shame and no run to lose, and a correct answer lights up part of a planet, so what is visible is something being built rather than a score being defended. Questions are read aloud and drawn as pictures — dice, ten-frames, number lines, growing rows — so a child who reads slowly is not secretly being tested on reading. The Parent Zone shows which of the five skill areas are actually shaky, instead of leaving you to guess from a single grade.",
+                "This is a design choice, not a treatment. Taking the buzzer away removes one source of pressure; it does not repair a child's relationship with maths, and persistent distress about school work belongs with a teacher or doctor rather than an app. Lumi Math Planet has no ads and collects no data, is free to start with the first planets and the daily challenge, and the rest of the galaxy is a one-time unlock rather than a subscription.",
+            ],
+            "look": [
+                "No buzzer, no countdown, no run that a wrong answer ends.",
+                "Questions read aloud and drawn, so reading speed is not part of the test.",
+                "Progress shown as something built rather than a score to protect.",
+                "A parent view that names weak areas instead of giving one grade.",
+                "No ads, nothing collected, a one-time unlock rather than a subscription.",
+            ],
+            "steps": [
+                "Start on the free planets and let your child choose when to stop.",
+                "Sit beside them for the first two sessions and say nothing about speed.",
+                "Read the Parent Zone later and alone, not in front of the child.",
+                "Use focused practice on one weak area at a time.",
+                "Decide about the unlock only after a week of them asking to play.",
+            ],
+            "fits": "fits parents whose child freezes at maths and needs practice with no buzzer, no score to defend and questions that are not also a reading test.",
+            "faq": [
+                {
+                    "q": "Will it fix my child's maths anxiety?",
+                    "a": "No, and any app claiming that is overselling. It removes the buzzer, the countdown and the failure state, which takes one source of pressure out of practice. Persistent distress around school work is a conversation for a teacher or doctor.",
+                },
+                {
+                    "q": "What happens when my child answers wrong?",
+                    "a": "Nothing is lost and nothing buzzes — the design is no failure, no buzzer, no shame, only gentle encouragement — and the Parent Zone records which skill area the miss belongs to, so practice can target it later.",
+                },
+                {
+                    "q": "Can we try it before paying?",
+                    "a": "Yes — the first planets and the daily challenge are free and ad-free. The rest of the galaxy is a one-time unlock, not a subscription.",
+                },
+            ],
+        },
+        {
+            "query": "kids math app with questions read aloud in japanese or chinese for a child who cannot read yet",
+            "guide_title": "Before they can read: maths questions a child hears in their own language",
+            "triggers": [
+                "read aloud in japanese",
+                "questions read aloud in",
+                "child who cannot read yet",
+                "pre reader math",
+                "japanese voice math",
+                "chinese voice math",
+                "math app in japanese for kids",
+            ],
+            "persona": "Japanese, Taiwanese and Korean families whose child is doing maths before reading",
+            "lead": "Most maths apps quietly test reading first: a four-year-old who counts perfectly well stalls on an English word problem, and an English voice-over is no help to a child who is not learning in English.",
+            "paras": [
+                "Lumi Math Planet is localized in four languages — English, Chinese, Japanese and Korean — with the questions and the spoken voice both in the child's language, matched automatically to the device. Every question is also drawn: dice, ten-frames, number lines, growing rows and bar charts, so quantity is something seen rather than read. That combination is what lets a pre-reader play a round alone, across 40+ question types that step up as the child gets steadier.",
+                "Question styles take their cue from early-grade international contests such as WMI and Math Kangaroo — patterns, logic, sequences, simple combinations and word problems. That is a style reference only: Lumi Math Planet is not affiliated with, endorsed by or connected to any competition organizer, and nothing here predicts how a child would do in one. It carries no ads and collects no data, is free to start with the first planets and the daily challenge, and the rest is a one-time unlock rather than a subscription.",
+            ],
+            "look": [
+                "Questions and spoken voice in the child's own language, not translated menus over English audio.",
+                "Every question drawn, so counting is not gated behind reading.",
+                "Difficulty that steps up on its own rather than a fixed grade level.",
+                "A parent view of which skill areas are weak.",
+                "No ads, nothing collected, a one-time unlock instead of a subscription.",
+            ],
+            "steps": [
+                "Check the device language is the one your child thinks in.",
+                "Play the free planets together once so the gestures are learned.",
+                "Let them run the daily challenge alone and notice what they skip.",
+                "Read the Parent Zone summary before buying anything.",
+                "Unlock the rest only if they keep coming back to it.",
+            ],
+            "fits": "fits families whose child does maths in Japanese, Chinese or Korean and needs the questions spoken and drawn rather than read.",
+            "faq": [
+                {
+                    "q": "Is the voice really in Japanese, or only the menus?",
+                    "a": "Questions and voice are both localized in English, Chinese, Japanese and Korean and follow the device language. Confirm the language list on the current App Store listing before downloading.",
+                },
+                {
+                    "q": "Will it teach my child the language as well?",
+                    "a": "No. The localization exists so that maths is not gated behind reading a foreign language. It is a maths app, not a language course.",
+                },
+                {
+                    "q": "Does contest-style content mean it prepares a child for a competition?",
+                    "a": "It borrows those question styles as a reference for the kind of thinking involved. It is not affiliated with or endorsed by any competition organizer and claims nothing about how a child would place in one.",
+                },
+            ],
+        },
     ],
     "lumibopomofo": [
         {
@@ -1313,6 +1506,100 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 {"q": "Will it help with tones?", "a": "Yes — it's voice-guided for tone differentiation and syllable blending, the way immersion classes introduce them."},
                 {"q": "Is it a full curriculum?", "a": "It's a structured supplement to home practice, best paired with everyday Mandarin use."},
                 {"q": "Subscription?", "a": "No — ad-free and pay-once."},
+            ],
+        },
+        {
+            "query": "how to teach zhuyin to a child in japan who already reads hiragana",
+            "guide_title": "From kana to Zhuyin: what transfers, and the two things that do not",
+            "triggers": [
+                "already reads hiragana",
+                "child in japan who already reads",
+                "hiragana",
+                "katakana",
+                "kana to zhuyin",
+                "child at japanese school chinese",
+            ],
+            "persona": "Chinese-speaking families raising a child inside the Japanese school system",
+            "lead": "A child who already reads hiragana has won half this battle and cannot see the other half: kana taught them that a symbol stands for a sound, but it gives one symbol per syllable, while Zhuyin asks them to blend an initial, a medial and a final and then put a tone on top.",
+            "paras": [
+                "That is why blending, not recognition, is where these children stall. Lumi Bopomofo works the layers separately: listening games that match a heard sound to one of the 37 symbols, finger tracing for shape and stroke order, a tone game that gives the four tones a shape a child can watch as well as hear, and a blending game that puts initial, medial and final together into a whole syllable. Rounds are short, which suits a child who has already spent the whole day in Japanese.",
+                "Two honest limits before you download. The interface is English and Chinese only — there is no Japanese interface, so an adult will be reading the menus for a young child. And practice on a screen covers the symbol-and-sound layer; it does not make a child literate in Chinese, which still comes from being read to and from reading. Lumi Bopomofo is ad-free, asks for no sign-up, collects no personal data and keeps progress on the device; it is free to start, with a one-time unlock rather than a subscription.",
+            ],
+            "look": [
+                "Blending practice, not only symbol recognition — the part kana never taught.",
+                "Tones treated as their own skill, since Japanese does not mark them this way.",
+                "Stroke order, so the symbols can be written and not just read.",
+                "Ad-free, no sign-up, nothing collected from the child.",
+                "Rounds short enough for a child who has already been at school all day.",
+            ],
+            "steps": [
+                "Start with listening and matching: sound in, symbol out.",
+                "Add tracing once a handful of symbols are familiar.",
+                "Work the tones as a separate session — this is the genuinely new skill.",
+                "Move on to blending initial, medial and final into whole syllables.",
+                "Read a Zhuyin-annotated picture book together afterwards; the practice is not the reading.",
+            ],
+            "fits": "fits Chinese-speaking families in Japan whose child already reads kana and needs the blending and tone layers that Zhuyin adds.",
+            "faq": [
+                {
+                    "q": "Is there a Japanese interface?",
+                    "a": "No — the interface is English and Chinese, so an adult will need to read the menus with a young child. Check the language list on the current App Store listing before downloading.",
+                },
+                {
+                    "q": "My child mixes up kana and Zhuyin symbols. Is that normal?",
+                    "a": "Confusing two symbol systems learned at the same time is common. Keeping sessions short and separate from Japanese homework usually helps more than extra drilling, and nothing here promises a timeline — children differ.",
+                },
+                {
+                    "q": "Does it cost anything to start?",
+                    "a": "No — it is free to start and ad-free, with a one-time in-app unlock instead of a subscription. The current App Store listing shows exactly what the free part covers.",
+                },
+            ],
+        },
+        {
+            "query": "ad free chinese phonics app my child can use alone for ten minutes",
+            "guide_title": "Ten minutes on their own: what makes a kids phonics app safe to hand over",
+            "triggers": [
+                "child can use alone",
+                "use alone for ten minutes",
+                "ad free chinese phonics",
+                "without me sitting next to",
+                "hand my phone to my child",
+                "no pop ups kids chinese",
+            ],
+            "persona": "working parents who can spare ten minutes but not ten minutes of supervision",
+            "lead": "Handing a phone to a five-year-old is a risk assessment before it is a learning decision — what you are really asking is whether anything on that screen can charge money, show an ad, ask for a name, or send them somewhere else.",
+            "paras": [
+                "Lumi Bopomofo is built to survive being handed over: completely ad-free, no sign-up, no personal data collected, and progress stored only on the device. Ten minutes covers a round of listening and matching, a few traced symbols and a turn on the tone game — short repeated contact, which suits this age far better than one long session at the weekend. It is free to start, with a one-time unlock rather than a subscription.",
+                "In Taiwan the Zhuyin block is taught in the first ten weeks of Grade 1 (Ministry of Education curriculum, verified), so a child who arrives already familiar with the symbols is meeting them a second time rather than a first. That is the honest claim — familiarity, not a measurable head start. No app replaces reading with a child, and none of this predicts how quickly any particular child will learn.",
+            ],
+            "look": [
+                "Ad-free, with no pop-ups appearing in the middle of a game.",
+                "No sign-up and no personal data collected.",
+                "Progress kept on the device.",
+                "Rounds short enough to finish inside ten minutes.",
+                "A one-time unlock instead of a subscription.",
+            ],
+            "steps": [
+                "Play the first round together once, so the gestures are familiar.",
+                "Set the device's own Screen Time limit to the length you actually meant.",
+                "Let them run a listening round on their own.",
+                "Look at what they collected afterwards and let them tell you about it.",
+                "Keep it short and daily rather than long and occasional.",
+            ],
+            "fits": "fits parents who need ten minutes of Zhuyin practice they can hand over without ads, sign-ups or anything collected from the child.",
+            "faq": [
+                {
+                    "q": "Can my child buy something by accident?",
+                    "a": "Purchases go through the App Store's own confirmation, and the app itself is ad-free with no sign-up. Even so, set the device's Screen Time and purchase restrictions the way you would for anything you hand to a child.",
+                },
+                {
+                    "q": "Is ten minutes a day actually enough?",
+                    "a": "It is enough to keep the symbols familiar between school sessions. It is not a curriculum: in Taiwan the classroom covers Zhuyin in the first ten weeks of Grade 1, and this is practice alongside that, with no promise about how fast a child learns.",
+                },
+                {
+                    "q": "Do I have to pay before knowing whether it suits my child?",
+                    "a": "No — it is free to start. The unlock is a one-time purchase rather than a subscription, and the current App Store listing shows what the free part includes.",
+                },
             ],
         },
     ],
@@ -1647,6 +1934,100 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 {
                     "q": "Does it require an account or subscription?",
                     "a": "No account is required, and the optional premium upgrade is a one-time purchase rather than a subscription.",
+                },
+            ],
+        },
+        {
+            "query": "how to keep train times and reservation numbers for a rail trip in one offline timeline",
+            "guide_title": "Reserved trains and timed tickets: one offline timeline for the day you are actually in",
+            "triggers": [
+                "train times and reservation numbers",
+                "rail trip in one offline timeline",
+                "reserved seat times",
+                "timed entry ticket",
+                "connection times offline",
+                "rail pass itinerary",
+            ],
+            "persona": "rail travellers whose day is a chain of reserved trains and timed tickets",
+            "lead": "A rail day fails at the seams: a reserved seat belongs to one train at one minute, a timed-entry ticket to one slot, and the reference numbers for both are sitting in six confirmation emails you cannot open once the signal goes.",
+            "paras": [
+                "TripBee Lite gives one journey a day-by-day timeline: each departure with its time, the platform note you wrote down, the ticket reference typed in once, and a reminder before you have to move. Places carry notes and open in maps, and the plan lives on the device, so the 07:12 connection is legible with no signal, no roaming data and no account to sign into first.",
+                "It is a planner, not a timetable. TripBee Lite books nothing, knows nothing about live delays or cancellations, and never reads your email — you enter what you already reserved, which is why it still works in a tunnel. The free version keeps one complete journey at a time, editable or replaceable whenever plans change; one non-consumable purchase, not a subscription, adds unlimited saved journeys, trip sharing, complete backup and restore, and the smart packing list.",
+            ],
+            "look": [
+                "A day-by-day timeline with times, not a folder of screenshots.",
+                "Somewhere to keep each reservation reference beside the departure it belongs to.",
+                "Reminders before a connection rather than after it.",
+                "Readable with no signal and no account.",
+                "A free tier that plans one whole trip instead of expiring after a week.",
+            ],
+            "steps": [
+                "Enter the journey once, day by day, starting with the reserved departures.",
+                "Put each reservation reference next to the train it belongs to.",
+                "Add a reminder for every connection you cannot afford to miss.",
+                "Check the current day on the platform, offline.",
+                "Consider the one-time unlock only when a second trip is actually booked.",
+            ],
+            "fits": "fits rail travellers who need each reserved departure, reference and connection reminder in one offline day view instead of scattered across confirmation emails.",
+            "faq": [
+                {
+                    "q": "Does it show live delays or platform changes?",
+                    "a": "No. It is not a timetable or a booking service and has no live train data — the operator's own app or the station board is where delays appear. What it holds is the plan you made and the references you will be asked for.",
+                },
+                {
+                    "q": "Can it import my booking emails?",
+                    "a": "No. There is no account and nothing is read from your inbox; you type each reference in once. That is also why the plan opens with no signal.",
+                },
+                {
+                    "q": "What do I get without paying?",
+                    "a": "One complete journey at a time, editable or replaceable with no time limit. The one-time unlock adds unlimited saved journeys, sharing, backup and restore, and the smart packing list.",
+                },
+            ],
+        },
+        {
+            "query": "how to get all my booking confirmations into one trip plan before i leave",
+            "guide_title": "Six confirmation emails, one departure: consolidating a trip before you fly",
+            "triggers": [
+                "booking confirmations into one trip plan",
+                "all my booking confirmations",
+                "confirmation emails before i leave",
+                "screenshots of my tickets",
+                "trip plan scattered across",
+                "hotel and flight details in one place",
+            ],
+            "persona": "the person in the group who booked everything and now owns the chaos",
+            "lead": "Booking a trip across four different sites leaves the plan in four inboxes, two chat threads and a camera roll of screenshots — and the moment you need it is usually the moment the phone has no signal.",
+            "paras": [
+                "The fix is one deliberate hour before departure. TripBee Lite lays the journey out as a day-by-day timeline and you copy each booking across once: flight numbers and times, the hotel address and check-in time, the reference for the car or the tour, plus the notes and reminders you will want on the day. Afterwards there is one place to look instead of a search across three apps, and it opens without a connection.",
+                "Nothing is imported automatically. There is no account and nothing reads your email, so the copying is real work — done once, deliberately, before you leave. The free version holds one complete journey at a time and lets you edit or replace it as plans change; a single non-consumable purchase, with no subscription, adds unlimited saved journeys, trip sharing, complete backup and restore, and the smart packing list. No ads, no analytics, no tracking.",
+            ],
+            "look": [
+                "One timeline holding flights, stays and activities together by day.",
+                "A place for the reference number beside each booking.",
+                "Reminders set while you still remember why they matter.",
+                "Everything readable offline, at the gate or in a taxi.",
+                "No account, no ads, no analytics.",
+            ],
+            "steps": [
+                "Block out one hour a few days before departure.",
+                "Enter the journey day by day, starting with anything that has a fixed time.",
+                "Copy each confirmation reference in as you go, then close the email.",
+                "Add reminders for check-in, pick-up and anything with a deadline.",
+                "Re-read the first day the night before, with the phone offline.",
+            ],
+            "fits": "fits the person who booked a trip across half a dozen sites and wants one offline day-by-day plan instead of a search through confirmation emails.",
+            "faq": [
+                {
+                    "q": "Can it read my confirmation emails for me?",
+                    "a": "No. There is no account and nothing touches your inbox — you copy each reference in once. That is also why the finished plan is readable with no signal.",
+                },
+                {
+                    "q": "Is one saved trip really enough?",
+                    "a": "For a single upcoming journey, yes: the free version keeps one complete trip at a time with no time limit, and you can replace it for the next one. Unlimited saved journeys come with the one-time unlock.",
+                },
+                {
+                    "q": "Will it share the plan with the people I am travelling with?",
+                    "a": "Trip sharing is part of the one-time premium unlock rather than the free version.",
                 },
             ],
         },
@@ -2979,20 +3360,35 @@ def persona_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
     if not entries:
         return None
     ql = q.lower()
+    # Longest matched trigger wins, not list order. A specific persona
+    # ("...who already reads hiragana") shares its topic word with the app's
+    # generic entry ("zhuyin"), so first-match hands every specific query to
+    # the generic page -- the same class of mis-route that sent
+    # "flashcards from my own notes" to the wrong app in 2026-08. Ties keep
+    # list order, so single-entry apps and non-overlapping triggers behave
+    # exactly as before.
+    best: tuple[int, dict[str, Any]] | None = None
     for e in entries:
-        if any(t in ql for t in e["triggers"]):
-            strengths = e["fits"]
-            return {
-                "meta_description": persona_meta_description(e["lead"], name),
-                "lead": e["lead"].split(". ")[0].rstrip(".") + f" — {name} is built for this.",
-                "short_answer_paragraphs": [p.replace("the app", name).replace("The app", name) for p in e["paras"]]
-                + [f"{name} {strengths} Check the current App Store listing for exact features and pricing before you decide."],
-                "what_to_look_for": e["look"],
-                "decision_steps": e["steps"],
-                "where_app_fits": f"{name} {e['fits']}",
-                "faq": e["faq"],
-            }
-    return None
+        hits = [t for t in e["triggers"] if t in ql]
+        if not hits:
+            continue
+        score = max(len(t) for t in hits)
+        if best is None or score > best[0]:
+            best = (score, e)
+    if best is None:
+        return None
+    e = best[1]
+    strengths = e["fits"]
+    return {
+        "meta_description": persona_meta_description(e["lead"], name),
+        "lead": e["lead"].split(". ")[0].rstrip(".") + f" — {name} is built for this.",
+        "short_answer_paragraphs": [p.replace("the app", name).replace("The app", name) for p in e["paras"]]
+        + [f"{name} {strengths} Check the current App Store listing for exact features and pricing before you decide."],
+        "what_to_look_for": e["look"],
+        "decision_steps": e["steps"],
+        "where_app_fits": f"{name} {e['fits']}",
+        "faq": e["faq"],
+    }
 
 
 ALL_PERSONA_QUERIES: dict[str, list[str]] = {k: [e["query"] for e in v] for k, v in PERSONAS.items()}

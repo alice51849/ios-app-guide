@@ -368,7 +368,7 @@ def finish_doc(text, swap, rel=""):
     return release_holds(out, held), 1, 0
 
 
-def revert_doc(text, swap):
+def revert_doc(text, swap, owned=False):
     """把「之前誤換」的付費語境頁還原成付費版身份。
 
     只在免費 id 在場、且有證據顯示這頁本來是付費版時動手:
@@ -376,6 +376,10 @@ def revert_doc(text, swap):
       • 付費 id 已不在、文案卻還在講付費版(第一版只換 `<a>` 留下的半套頁面),或
       • 門(錨點)是免費版、付費 id 只剩在錨點外的 JSON-LD、文案講付費版
         (第一版只換 href 的另一種半套;付費 id 殘留就是「本來是付費頁」的證據)。
+      • `owned`(付費版自己的網站目錄 / 專屬 guide 頁)且整頁只剩免費版 id ——
+        這種頁的身份由路徑定義,掛著兄弟免費版的 id 就是錯掛,不需要別的指紋。
+        文案早被整頁改名、連付費版名稱都不剩時,上面三條都驗不到(2026-08-18
+        `apps/wifi-aid/` 就是這樣被換掉又收不回來)。
     以上都不成立時不動,避免把本來就是免費版的頁面誤改。
     """
     if swap["free_id"] not in text:
@@ -389,7 +393,8 @@ def revert_doc(text, swap):
         and bool(anchor_re(swap["free_id"]).search(text))
         and paid_identity_left(held_text, swap)
     )
-    if not ghost and not half_swapped and (
+    misfiled = owned and swap["paid_id"] not in text
+    if not ghost and not half_swapped and not misfiled and (
         swap["paid_id"] in text or not paid_identity_left(held_text, swap)
     ):
         return text, 0
@@ -406,6 +411,28 @@ def _reverse_identity(text, swap):
     return swap_names(out, swap, reverse=True)
 
 
+def normalized_key(segment):
+    """路徑片段 → registry app key 的寫法(`wifi-aid` → `wifiaid`)。
+
+    站上同一支 App 的目錄有兩種歷史寫法(`apps/wifiaid/` 與更早手工建的
+    `apps/wifi-aid/`)。只比對原字串會漏掉加了連字號的那種,付費版自己的
+    官網就會被當成品類需求頁換門。
+    """
+    return re.sub(r"[^a-z0-9]+", "", segment.lower())
+
+
+def owns_page(rel, swap):
+    """這頁是不是付費版**自己的**頁(自己的網站目錄,或專屬 guide/product 頁)。"""
+    parts = rel.split(os.sep)
+    if swap["paid_key"] in parts[:-1]:
+        return True
+    if any(normalized_key(part) == swap["paid_key"] for part in parts[:-1]):
+        return True
+    base = os.path.basename(rel)
+    stem = base[:-5] if base.endswith(".html") else base
+    return normalized_key(stem) == swap["paid_key"]
+
+
 def exempt(rel, name, swap):
     base = os.path.basename(rel)
     stem = base[:-5] if base.endswith(".html") else base
@@ -416,9 +443,9 @@ def exempt(rel, name, swap):
     if swap["paid_slug_re"].search(stem):
         return True
     parts = rel.split(os.sep)
-    if swap["paid_key"] in parts:  # apps/<paid>/… 決策頁
-        return True
-    if base == swap["paid_key"] + ".html":  # 專屬 guide/product 頁
+    # apps/<paid>/… 決策頁、guides/<paid>.html 專屬頁(含 `wifi-aid` 這種
+    # 加連字號的舊寫法)。
+    if owns_page(rel, swap):
         return True
     if base in PORTFOLIO_PAGES and len(parts) == 1:
         return True
@@ -922,7 +949,7 @@ def enforce_free_door_purchase_model(text, rel="", swaps=(), original=None,
         back = text
         reverted = 0
         for swap in swaps:
-            back, k = revert_doc(back, swap)
+            back, k = revert_doc(back, swap, owned=owns_page(rel, swap))
             reverted += k
         if not reverted and just_swapped:
             # 這一輪才換/收尾、但沒有升級連結指紋的頁(gifting hub),
@@ -948,7 +975,9 @@ def process(rel, text, swaps):
     new_text = text
     for swap in swaps:
         if exempt(rel, os.path.basename(rel), swap):
-            new_text, k = revert_doc(new_text, swap)
+            new_text, k = revert_doc(
+                new_text, swap, owned=owns_page(rel, swap)
+            )
             if k:
                 reverted[swap["paid_key"]] += 1
             continue

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Kanak-kanak tidak pernah diam, jadi gambar fokus lembut dan gegaran kamera tidak dapat dielakkan — Unblurry dibina untuk ini.
 
 - Foto & utiliti
-- Percuma untuk bermula · buka kunci kekal
+- Percuma untuk bermula · buka kunci sekali sahaja
 - Peribadi / pada peranti
 - App Store · Percuma
 

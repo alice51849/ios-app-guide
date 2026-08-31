@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Se a maioria dos apps de tarefas parece inchada, o ideal é uma lista limpa com lembretes, regras de repetição e complicação para Watch — e propositalmente sem recursos de gerenciamento de projetos — o Mochi foi feito para isso.
 
 - Produtividade
-- Grátis para começar · desbloqueio permanente
+- Grátis para começar · desbloqueio único
 - Sem anúncios
 - App Store · Grátis
 - ★ 5.0/5 · 1

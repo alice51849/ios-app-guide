@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 La millor app de matemàtiques per a nens entrena el raonament — patrons, seqüències, pensament espacial — no només aritmètica, i ho amaga dins d’un joc que el nen vol jugar — Lumi Math Planet està feta per això.
 
 - Infants i aprenentatge
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - Sense anuncis
 - App Store · Gratis
 

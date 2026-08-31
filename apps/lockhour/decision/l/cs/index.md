@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Během zkoušek není vůle nástrojem — je to tvrdá časová blokace — LockHour Pro je na to navržen.
 
 - Produktivita
-- Zdarma na začátek · doživotní odemknutí
+- Zdarma na začátek
 - Bez reklam
 - Soukromé / v zařízení
 - App Store · Zdarma

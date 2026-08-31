@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Ak skenujete súhlas pacientov, prepúšťacie papiere alebo odporúčania, skener musí tieto dokumenty uchovávať na zariadení — nikdy ich neodosielať do cudzieho cloudu — ScanTo Pro je na to stvorený.
 
 - Produktivita
-- Zadarmo na začiatok · doživotné odomknutie
+- Zadarmo na začiatok
 - Súkromné / v zariadení
 - App Store · Zadarmo
 

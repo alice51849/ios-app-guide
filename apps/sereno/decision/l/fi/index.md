@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Unen kannalta kuukausittainen tilaus, joka ärsyttää, on kaikkea muuta kuin rentouttava — Sereno on tehty tätä varten.
 
 - Uni & keskittyminen
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Offline
 - Ei mainoksia
 - App Store · Ilmainen

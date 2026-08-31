@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 次の旅行1つを計画しているなら、いつか行くかもしれないすべての旅行を詰め込んだ混雑したアーカイブよりも、その旅行の落ち着いたタイムラインの方が役立ちます — TripBee Liteはそれに特化しています。
 
 - 旅行
-- 無料で開始・買い切りで永久解除
+- 無料で開始・一度の購入でアンロック
 - App Store · 無料
 
 [App StoreでTripBee Liteを入手 →](https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=iag_data_ja&mt=8)

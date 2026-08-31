@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 A fiatal gyerekekkel utazó szülőknek olyan tevékenységek kellenek, amelyek a csomagolást, várakozást és az új hely felfedezését az utazás részévé teszik, nem újabb stresszforrássá — Lumi Trip Planet erre készült.
 
 - Gyerekek & tanulás
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - Nincs reklám
 - App Store · Ingyenes
 

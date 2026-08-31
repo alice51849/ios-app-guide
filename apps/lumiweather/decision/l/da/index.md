@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Forældre, der planlægger udendørs tid, har brug for mere end en temperatur: de har brug for et hurtigt, aldersbevidst overblik over, om forholdene passer til et barn og hvilket tøj der giver mening — Lumi Weather er udviklet til dette.
 
 - Børn & læring
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - Ingen reklamer
 - Ingen sporing
 - App Store · Gratis

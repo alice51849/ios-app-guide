@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Ibu bapa yang merancang masa luar perlukan lebih daripada suhu: mereka perlukan pandangan pantas mengikut umur sama ada keadaan sesuai untuk anak dan pakaian yang masuk akal — Lumi Weather dibina untuk ini.
 
 - Kanak-kanak & pembelajaran
-- Percuma untuk bermula · buka kunci kekal
+- Percuma untuk bermula · buka kunci sekali sahaja
 - Tiada iklan
 - Tiada penjejakan
 - App Store · Percuma

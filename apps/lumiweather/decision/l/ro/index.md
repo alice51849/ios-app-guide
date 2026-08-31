@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Părinții care planifică timpul afară au nevoie de mai mult decât o temperatură: au nevoie de o privire rapidă, adaptată vârstei, dacă condițiile sunt potrivite pentru copil și ce îmbrăcăminte are sens — Lumi Weather este creată pentru asta.
 
 - Copii & învățare
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - Fără reclame
 - Fără urmărire
 - App Store · Gratuit

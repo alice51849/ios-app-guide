@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Dla małego dziecka kluczowe są brak reklam i brak zbierania danych — aplikacja edukacyjna powinna uczyć w pętli gry bez reklam, bez zbierania danych i z jednorazowym odblokowaniem, któremu rodzice mogą zaufać — Lumi Letters jest stworzona właśnie do tego.
 
 - Dzieci i nauka
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - Bez reklam
 - App Store · Bezpłatnie
 

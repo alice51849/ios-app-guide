@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Hvis du skanner pasientsamtykkeskjemaer, utskrivningspapirer eller henvisninger, må skanneren holde papirene på enheten — aldri lastet opp til andres sky — ScanTo Pro er laget for dette.
 
 - Produktivitet
-- Gratis å starte · livstidsopplåsing
+- Gratis å starte
 - Privat / på enheten
 - App Store · Gratis
 

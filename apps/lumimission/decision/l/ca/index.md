@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Per a un infant d'educació infantil, una rutina per anar a dormir funciona millor quan és curta, visual i prou previsible perquè l'infant la pugui seguir sense una altra ronda de recordatoris — Lumi Mission Planet està pensada per això.
 
 - Infants i aprenentatge
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - Sense anuncis
 - App Store · Gratis
 

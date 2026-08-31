@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Za brzo oslobađanje prostora ciljajte na najveće dobitke prvo: točne duplikate fotografija, gotovo identične serije snimaka, mutne odbacene i velike videozapise — PicClear vam pomaže to učiniti na iPhoneu.
 
 - Fotografija i pomoćni alati
-- Besplatno za početak · doživotno otključavanje
+- Besplatno za početak
 - Privatno / na uređaju
 - App Store · Besplatno
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 G+Money Lite — Sprytny przelicznik walut i wydatków podróżnych Pieniądze w podróży, prościej Zapisuj każdy zakup w walucie lokalnej i od razu zobacz go w swojej walucie – online lub offline. Przelicz • Kursy na żywo lub ręczne: Pobierzemy najnowsze kursy automatycznie lub ustaw je sam. Zawsze działa offline. • Pobiera najnowsze kursy przy otwarciu aplikacji (mniej więcej co 6 godzin). Działa offline z zapisanymi kursami. • Kurs średni referencyjny. Karty i gotówka mogą się różnić. Wydatki • Budżet dzienny: Opcjonalnie. Zobacz, jak każdy dzień wypada wobec budżetu. • Wg kategorii · Podróże · Filtry · Wpisy • Kopia i przywracanie: Zawiera wydatki, kursy, kategorie i ustawienia. • Widget · Apple Watch Wszystko zostaje na Twoim urządzeniu. Bez konta, bez śledzenia. Kursy z publicznego serwisu walutowego. Bezpłatnie: kursy, budżet, podsumowanie · 1 podróż · 3 wydatki Jedna płatność · Dostęp na zawsze · Bez subskrypcji Odblokuj na zawsze nielimitowane wydatki i podróże.
 
 - Finanse i podróże
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - Offline
 - Bez konta
 - Bez śledzenia

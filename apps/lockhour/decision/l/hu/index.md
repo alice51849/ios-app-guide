@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Vizsgák alatt az akaraterő nem elég — kemény, időzített blokkolás kell — a LockHour Pro erre készült.
 
 - Produktivitás
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - Nincs reklám
 - Privát / eszközön tárolt
 - App Store · Ingyenes

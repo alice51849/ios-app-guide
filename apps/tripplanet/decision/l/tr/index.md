@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Genç çocuklarla seyahat eden ebeveynler, paketleme, bekleme ve yeni bir yeri keşfetmeyi maceranın parçası yapan aktivitelere ihtiyaç duyar; aksi halde bu süreç bir stres kaynağına dönüşür — Lumi Trip Planet bunun için tasarlandı.
 
 - Çocuklar & öğrenme
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - Reklam yok
 - App Store · Ücretsiz
 

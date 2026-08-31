@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Zhuyin-t először tanuló gyermeknek az alkalmazásnak minden 37 szimbólumot le kell fednie vonalkövetéssel és játékkal — 4–7 éves korosztálynak tervezve, reklámmentesen, adatgyűjtés nélkül — a Lumi Bopomofo erre készült.
 
 - Gyerekek & tanulás
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - Nincs reklám
 - App Store · Ingyenes
 

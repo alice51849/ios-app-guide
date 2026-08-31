@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Matkasisällön tekijät tarvitsevat toistettavan filmityylin, joka lisää rakeen, halation ja värin luonteen ilman että jokainen kohde näyttää samalta filttereiltä — PhotoCream on tehty tätä varten.
 
 - Kuva & apuohjelma
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - App Store · Ilmainen
 
 [Hanki PhotoCream App Storesta →](https://apps.apple.com/fi/app/id6781808054?pt=118326163&ct=iag_data_fi&mt=8)

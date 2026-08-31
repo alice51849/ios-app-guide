@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Når du bytter felt, er CV-problemet annerledes: erfaringen din er ekte, men 'irrelevant' på papiret, og ATS-filtre avviser deg før et menneske leser den — CV Desk er laget for dette.
 
 - Produktivitet
-- Gratis å starte · livstidsopplåsing
+- Gratis å starte
 - App Store · Gratis
 
 [Få CV Desk i App Store →](https://apps.apple.com/no/app/id6781337213?pt=118326163&ct=iag_data_no&mt=8)

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Voor een kind dat Zhuyin voor het eerst leert, moet de app alle 37 symbolen behandelen via overtrekken en spel — ontworpen voor de eerste-leerperiode van 4–7 jaar, advertentievrij, zonder dataverzameling — Lumi Bopomofo is hiervoor gemaakt.
 
 - Kinderen & leren
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - Geen advertenties
 - App Store · Gratis
 

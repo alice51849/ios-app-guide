@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Với trẻ mẫu giáo, thói quen đi ngủ hiệu quả nhất khi ngắn gọn, trực quan và đủ dễ đoán để trẻ tự làm theo mà không cần nhắc nhở thêm — Lumi Mission Planet được xây dựng cho mục đích này.
 
 - Trẻ em & học tập
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - Không quảng cáo
 - App Store · Miễn phí
 

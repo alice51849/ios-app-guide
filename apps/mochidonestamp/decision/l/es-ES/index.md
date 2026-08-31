@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Para las tareas y el mantenimiento que no encajan en un calendario rígido, un buen registro recuerda cuándo lo terminaste de verdad y mide el siguiente intervalo desde ese momento. Mochi DoneStamp está hecha justo para eso.
 
 - Estilo de vida
-- Gratis para empezar · desbloqueo permanente
+- Gratis para empezar · desbloqueo único
 - App Store · Gratis
 
 [Consigue Mochi DoneStamp en el App Store →](https://apps.apple.com/es/app/id6790800323?pt=118326163&ct=iag_data_es_es&mt=8)

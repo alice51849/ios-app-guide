@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Copiii nu stau niciodată nemișcați, așa că fotografiile cu focalizare moale și tremur ușor sunt inevitabile — Unblurry este construit pentru asta.
 
 - Fotografie & utilitate
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - Privat / pe dispozitiv
 - App Store · Gratuit
 

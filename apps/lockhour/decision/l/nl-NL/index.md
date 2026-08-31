@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Tijdens examens is wilskracht niet het hulpmiddel — een harde getimede blokkade wel — LockHour Pro is hiervoor gemaakt.
 
 - Productiviteit
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - Geen advertenties
 - Privé / op apparaat
 - App Store · Gratis

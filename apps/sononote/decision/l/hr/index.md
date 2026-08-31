@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Nakon poziva ne želite sirovi transkript — želite sažetak, zadatke i nacrt praćenja — Sono Note je stvoren za to.
 
 - Produktivnost
-- Besplatno za početak · doživotno otključavanje
+- Besplatno za početak
 - Privatno / na uređaju
 - App Store · Besplatno
 

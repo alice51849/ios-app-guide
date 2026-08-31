@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 I en kategori där datas känslighet är hela historien, håller rätt menscykelapp allt – flöde, humör, symtom, temperatur, intimitet – på din enhet, utan konto och utan molnsynk – Cyca är byggd för detta.
 
 - Hälsa
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - Privat / på enheten
 - App Store · Gratis
 - ★ 2.0/5 · 1

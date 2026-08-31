@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 For søvn er et abonnement, der irriterer hver måned, det modsatte af afslappende — Sereno er skabt til dette.
 
 - Søvn & fokus
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - Offline
 - Ingen reklamer
 - App Store · Gratis

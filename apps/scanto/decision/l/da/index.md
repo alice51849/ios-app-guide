@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Hvis du scanner patient-samtykkeerklæringer, udskrivningspapirer eller henvisninger, skal scanneren holde papirarbejdet på enheden — aldrig uploadet til en andens cloud — ScanTo Pro er lavet til dette.
 
 - Produktivitet
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - Privat / på enheden
 - App Store · Gratis
 

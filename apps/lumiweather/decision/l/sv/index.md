@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Föräldrar som planerar utetid behöver mer än temperatur: de behöver en snabb, åldersanpassad översikt om förhållandena passar barnet och vilka kläder som är rimliga — Lumi Weather är byggd för detta.
 
 - Barn & lärande
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - Inga annonser
 - Ingen spårning
 - App Store · Gratis

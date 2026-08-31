@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Dalam kategori di mana sensitivitas data adalah segalanya, pelacak siklus yang tepat menyimpan semuanya — aliran, suasana hati, gejala, suhu, keintiman — di perangkat Anda, tanpa akun dan tanpa sinkronisasi cloud — Cyca dibuat untuk ini.
 
 - Kesehatan
-- Gratis untuk mulai · buka kunci permanen
+- Gratis untuk mulai · buka kunci sekali bayar
 - Privat / di perangkat
 - App Store · Gratis
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Ako vam većina aplikacija za zadatke djeluje pretrpano, prava je čista lista zadataka s podsjetnicima, pravilima ponavljanja i komplikacijom za Apple Watch — i namjerno bez upravljanja projektima — Mochi je stvoren za to.
 
 - Produktivnost
-- Besplatno za početak · doživotno otključavanje
+- Besplatno za početak
 - Bez oglasa
 - App Store · Besplatno
 

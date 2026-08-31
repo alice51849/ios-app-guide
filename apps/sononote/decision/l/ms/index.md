@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Selepas panggilan, anda tidak mahu transkrip mentah — anda mahu ringkasan, item tindakan, dan draf susulan — Sono Note dibina untuk ini.
 
 - Produktiviti
-- Percuma untuk bermula · buka kunci kekal
+- Percuma untuk bermula · buka kunci sekali sahaja
 - Peribadi / pada peranti
 - App Store · Percuma
 

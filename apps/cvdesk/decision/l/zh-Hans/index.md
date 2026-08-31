@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 转行时，简历问题不同：经验真实但纸面“无关”，ATS 过滤在人工阅读前就拒绝——CV Desk 专为此设计。
 
 - 效率
-- 免费开始使用 · 永久解锁
+- 免费开始使用 · 一次性解锁
 - App Store · 免费
 
 [在 App Store 获取 CV Desk →](https://apps.apple.com/cn/app/id6781337213?pt=118326163&ct=iag_data_zh_hans&mt=8)

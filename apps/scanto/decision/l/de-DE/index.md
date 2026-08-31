@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Wenn Sie Einwilligungsformulare, Entlassungsunterlagen oder Überweisungen scannen, muss der Scanner diese Dokumente auf dem Gerät behalten – niemals in einer fremden Cloud hochladen – ScanTo Pro ist dafür gemacht.
 
 - Produktivität
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - Privat / auf dem Gerät
 - App Store · Kostenlos
 

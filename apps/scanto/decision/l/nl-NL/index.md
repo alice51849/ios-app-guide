@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Als je toestemmingsformulieren, ontslagpapieren of verwijzingen scant, moet de scanner die documenten op het apparaat houden — nooit geüpload naar de cloud van iemand anders — ScanTo Pro is hiervoor gemaakt.
 
 - Productiviteit
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - Privé / op apparaat
 - App Store · Gratis
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Kada ste zadnji put promijenili posteljinu, zalili biljku, nazvali obitelj, sigurnosno kopirali fotografije ili zamijenili filtar? Mochi DoneStamp pamti životne događaje i nije još jedan popis obveza. Kada završite, jedan dodir sprema točno vrijeme u mirnu povijest. Po potrebi dodajte približan ili točan ritam. Sljedeći datum uvijek se računa iznova od stvarnog završetka. • Zapis jednim dodirom i Poništi • Dodavanje, uređivanje ili brisanje ranijih trenutaka • Fleksibilni i točni ritmovi od minuta do godina • Lokalne obavijesti s Gotovo i Odgodi • Interaktivni widgeti početnog i zaključanog zaslona • Siri, Prečaci, neobavezne bilješke i fotografije • Statistika razmaka, potpuna kopija i JSON izvoz • Tamni način, iPad, VoiceOver i Dynamic Type Besplatno dobivate jedan aktivni događaj i neograničenu povijest. Jedna kupnja Lifetime Pro otključava neograničene događaje i sve značajke. Bez računa, oglasa, analitike ili praćenja. Glavni podaci ostaju na uređaju. Bez pretplate.
 
 - Životni stil
-- Besplatno za početak · doživotno otključavanje
+- Besplatno za početak
 - App Store · Besplatno
 
 [Preuzmite Mochi DoneStamp: Zadnji put u App Storeu](https://apps.apple.com/hr/app/id6790800323?pt=118326163&ct=iag_data_hr&mt=8)

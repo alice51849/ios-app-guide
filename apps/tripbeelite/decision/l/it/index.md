@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Se stai pianificando un viaggio imminente, una timeline chiara per quel viaggio è più utile di un archivio affollato di tutti i viaggi che potresti fare un giorno — TripBee Lite è pensata per questo.
 
 - Viaggi
-- Gratis per iniziare · sblocco permanente
+- Gratis per iniziare · sblocco unico
 - App Store · Gratis
 
 [Scarica TripBee Lite dall'App Store →](https://apps.apple.com/it/app/id6791299610?pt=118326163&ct=iag_data_it&mt=8)

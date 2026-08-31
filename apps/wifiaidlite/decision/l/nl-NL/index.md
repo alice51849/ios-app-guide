@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Vind het echte probleem. Elke tool bevat één gratis volledig gebruik. Optionele eenmalige levenslange ontgrendeling voor onbeperkt gebruik—geen abonnement, advertenties of tracking. • Start Check — Wifi, DNS en internet checks in één tik • Deep Check — Meer bewijs en stabiliteit • Website Check — Eén site of het hele web • Bewijs — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Verbinding onstabiel — Variatie • Geschiedenis — Tests blijven privé op je apparaat • Verbonden knooppunt — Precieze locatie herkent wifi en huidig knooppunt Geen account, ads, of tracking. Tests blijven privé op je apparaat. Elke tool bevat één gratis volledig gebruik. Optionele eenmalige levenslange ontgrendeling voor onbeperkt gebruik—geen abonnement, advertenties of tracking.
 
 - Meer
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - Geen account
 - App Store · Gratis
 

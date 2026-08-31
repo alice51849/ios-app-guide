@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pentru a elibera spațiu rapid, țintește cele mai mari câștiguri mai întâi: fotografii duplicate exacte, serii aproape identice, fotografii neclare și videoclipuri mari — PicClear te ajută să faci asta pe iPhone.
 
 - Fotografie & utilitate
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - Privat / pe dispozitiv
 - App Store · Gratuit
 

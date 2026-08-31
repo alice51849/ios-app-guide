@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Kinder halten nie still, daher sind leicht unscharfe und verwackelte Fotos unvermeidlich – Unblurry ist genau dafür gemacht.
 
 - Foto & Dienstprogramm
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - Privat / auf dem Gerät
 - App Store · Kostenlos
 

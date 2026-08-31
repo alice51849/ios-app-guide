@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 BattAI BattAI usa cinco valores de las API públicas de iOS: nivel de batería, estado de carga, modo de bajo consumo, estado térmico del dispositivo y hora. Los demás resultados se calculan con esas lecturas o los añades tú. Cada dato muestra su fuente y sus límites. Salud • Puntuación de salud de la batería • Qué forma la puntuación • Capacidad máxima a lo largo del tiempo • Capacidad máxima • Ciclos Carga • Cuidado de carga • Rango de carga • Ritmo de carga Exportar datos • Crea un archivo en este dispositivo. No se sube nada. • Creado en este dispositivo. No se suben datos. Privacidad • Sin anuncios, analítica, seguimiento, SDK de terceros ni solicitudes de internet. Los datos permanecen aquí, salvo una instantánea mínima enviada directamente al Apple Watch enlazado. • BattAI solo lee el recuento de ciclos, la capacidad nominal de carga y la capacidad de diseño. Los demás datos se descartan al instante, sin guardarse ni enviarse. Entiende tu batería con el tiempo • Desbloquea más historial, planificación e informes. • Pago único. Sin suscripción.
 
 - Más
-- Gratis para empezar · desbloqueo permanente
+- Gratis para empezar · desbloqueo único
 - App Store · Gratis
 
 [Consigue BattAI: Salud de la batería en el App Store](https://apps.apple.com/es/app/id6802423998?pt=118326163&ct=iag_data_es_es&mt=8)

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Semasa peperiksaan, kekuatan kehendak bukan alatnya — sekatan masa keras adalah — LockHour Pro dibina untuk ini.
 
 - Produktiviti
-- Percuma untuk bermula · buka kunci kekal
+- Percuma untuk bermula · buka kunci sekali sahaja
 - Tiada iklan
 - Peribadi / pada peranti
 - App Store · Percuma

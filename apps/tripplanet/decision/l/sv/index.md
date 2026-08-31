@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Föräldrar som reser med små barn behöver aktiviteter som gör packning, väntan och upptäckten av en ny plats till en del av äventyret istället för ännu en stressfaktor — Lumi Trip Planet är byggd för detta.
 
 - Barn & lärande
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - Inga annonser
 - App Store · Gratis
 

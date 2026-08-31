@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Bedre kontekst. Bedre svar. Omdan skærmbilleder, filer, noter og dokumenter til ét klart, AI-klart resumé. SAML DEN FULDE KONTEKST • Tilføj skærmbilleder, PDF'er, filer, kopieret tekst, noter eller links. Du vælger, hvad der bliver i det endelige resumé. • OCR, PDF-læsning, duplikatkontrol, faktaudvinding og privatlivsdetektering bruger Apple-rammeværk lokalt. • Vælg en eller flere kilder ovenfor. Behandlingen begynder først, når du fortsætter. VERIFICER FAKTA, FØR AI SER DEM • Hvert faktum bevarer sin kilde og konfidens. Ret alt, der har brug for mere kontekst. • Find fakta, konflikter og åbne spørgsmål • Kontroller hver kendsgerning, kilde og sikkerhed, før AI ser det. BESKYT PRIVATLIVETS FRED • Registrerede detaljer fjernes aldrig automatisk. Behold, udskift eller fjern hvert element før eksport. • Behold, udskift eller fjern hver registrering. AI Brief lover aldrig anonymitet. • Udskiftninger og fjernelser anvendes ved eksport. REN KONTEKST FOR ENHVER AI-ASSISTENT • Strukturerede overskrifter og kildeklar formatering • Byg kontekst én gang. Genbrug den, når som helst. • Kopiér AI-resumé • Versionshistorik • Formålsbestemte skabeloner DIN KONTEKST FORBLIVER PRIVAT • AI Brief omfatter ikke tredjepartsannoncer, sporing, analyse eller indholdstelemetri. • Gennemgå resuméet, før du sender det til en AI-tjeneste.
 
 - Produktivitet
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - Privat / på enheden
 - App Store · Gratis
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Phụ huynh lên kế hoạch cho trẻ ra ngoài cần nhiều hơn nhiệt độ: cần cái nhìn nhanh, phù hợp độ tuổi về điều kiện có phù hợp cho trẻ và trang phục nào hợp lý — Lumi Weather được xây dựng cho nhu cầu này.
 
 - Trẻ em & học tập
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - Không quảng cáo
 - Không theo dõi
 - App Store · Miễn phí

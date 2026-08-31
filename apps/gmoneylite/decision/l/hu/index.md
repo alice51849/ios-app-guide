@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 G+Money Lite — Okos utazási pénznem- és költségkövető Utazási pénz, egyszerűen Rögzítsd minden vásárlást a helyi pénznemben, és azonnal lásd az otthoni pénznemben — online vagy offline. Átváltás • Élő vagy kézi árfolyamok: Automatikusan lekérhetjük a legfrissebb árfolyamokat, vagy te is beállíthatod őket. Mindig offline működik. • A legfrissebb árfolyamokat automatikusan lekérjük, amikor megnyitod az alkalmazást (kb. 6 óránként). Mindig offline működik a mentett árfolyamaiddal. • Középpiaci referenciaárfolyam. Kártyás és készpénzes tranzakciók eltérhetnek. Költés • Napi keret: Opcionális. Nézd meg, hogyan alakul a költségvetésed minden nap. • Kategória szerint · Utazások · Szűrők · Feljegyzések • Biztonsági mentés és visszaállítás: Tartalmazza a költségeket, árfolyamokat, kategóriákat és beállításokat. • Widget · Apple Watch Minden az eszközödön marad. Nincs fiók, nincs nyomkövetés. Az árfolyamok egy nyilvános árfolyam-szolgáltatást használnak. Ingyenes: árfolyamok, keret, összegzés · 1 út · 3 kiadás Egyszeri fizetés · Élethosszig · Nincs előfizetés Oldd fel örökre a korlátlan kiadásokat és utakat.
 
 - Pénzügy & utazás
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - Offline
 - Nincs fiók
 - Nincs követés

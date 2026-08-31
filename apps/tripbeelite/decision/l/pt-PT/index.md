@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Se está a planear uma viagem única, uma linha temporal calma para essa viagem é mais útil do que um arquivo cheio de todas as viagens que poderá fazer algum dia — o TripBee Lite foi criado para isso.
 
 - Viagens
-- Grátis para começar · desbloqueio permanente
+- Grátis para começar · desbloqueio único
 - App Store · Grátis
 
 [Obtenha o TripBee Lite na App Store →](https://apps.apple.com/pt/app/id6791299610?pt=118326163&ct=iag_data_pt_pt&mt=8)

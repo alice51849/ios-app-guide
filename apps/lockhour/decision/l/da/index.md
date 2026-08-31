@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Under eksamener er viljestyrke ikke værktøjet – en hård tidsbestemt blokering er – LockHour Pro er lavet til dette.
 
 - Produktivitet
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - Ingen reklamer
 - Privat / på enheden
 - App Store · Gratis

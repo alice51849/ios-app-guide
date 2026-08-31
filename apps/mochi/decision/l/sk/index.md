@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Ak sa vám väčšina aplikácií na úlohy zdá preplnená, správna je čistý zoznam s pripomienkami, opakovaniami a komplikáciou na Apple Watch — a zámerne bez riadenia projektov — Mochi je na to stvorená.
 
 - Produktivita
-- Zadarmo na začiatok · doživotné odomknutie
+- Zadarmo na začiatok
 - Bez reklám
 - App Store · Zadarmo
 

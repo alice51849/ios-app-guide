@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Za majhnega otroka so odločilni oglasi in zbiranje podatkov — učna aplikacija naj uči v okviru igre brez oglasov, brez zbiranja podatkov in z enkratnim odklepom, ki mu starši zaupajo — Lumi Letters je narejena za to.
 
 - Otroci in učenje
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - Brez oglasov
 - App Store · Brezplačno
 

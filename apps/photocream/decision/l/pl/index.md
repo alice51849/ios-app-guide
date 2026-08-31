@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Twórcy podróżniczy potrzebują powtarzalnego filmowego stylu, który dodaje ziarno, halację i charakter kolorów bez spłaszczania każdego miejsca tym samym filtrem — PhotoCream powstał właśnie do tego.
 
 - Zdjęcia i narzędzia
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - App Store · Bezpłatnie
 
 [Pobierz PhotoCream z App Store →](https://apps.apple.com/pl/app/id6781808054?pt=118326163&ct=iag_data_pl&mt=8)

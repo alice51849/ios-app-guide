@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Po hovore nechcete surový prepis — chcete zhrnutie, úlohy a návrh pokračovania — Sono Note je na to stavaná.
 
 - Produktivita
-- Zadarmo na začiatok · doživotné odomknutie
+- Zadarmo na začiatok
 - Súkromné / v zariadení
 - App Store · Zadarmo
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Temukan masalah aslinya. Setiap alat mencakup satu penggunaan penuh gratis. Buka kunci seumur hidup sekali bayar opsional untuk penggunaan tanpa batas—tanpa langganan, iklan, atau pelacakan. • Jalankan Cek — Cek Wi-Fi, DNS, dan internet dalam satu ketukan • Cek Mendalam — Bukti tambahan dan tes kestabilan • Cek Situs Web — Tes satu situs atau internet luas • Bukti — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Koneksi terlihat tak stabil — Jitter • Riwayat Cek — Catatan privat yang disimpan hanya di HP ini • Node Terhubung — Lokasi akurat mengenali Wi-Fi dan node saat ini Tanpa akun, iklan, analitik, atau pelacakan. Catatan privat yang disimpan hanya di HP ini. Setiap alat mencakup satu penggunaan penuh gratis. Buka kunci seumur hidup sekali bayar opsional untuk penggunaan tanpa batas—tanpa langganan, iklan, atau pelacakan.
 
 - Lainnya
-- Gratis untuk mulai · buka kunci permanen
+- Gratis untuk mulai · buka kunci sekali bayar
 - Tanpa akun
 - App Store · Gratis
 

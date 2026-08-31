@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 I bambini non stanno mai fermi, quindi foto sfocate o mosse sono inevitabili — Unblurry è pensata per questo.
 
 - Foto e utilità
-- Gratis per iniziare · sblocco permanente
+- Gratis per iniziare · sblocco unico
 - Privato / su dispositivo
 - App Store · Gratis
 

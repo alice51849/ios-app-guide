@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Après un appel, vous ne voulez pas une transcription brute — vous voulez le résumé, les actions à faire et un brouillon de suivi — Sono Note est conçu pour cela.
 
 - Productivité
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - Privé / sur l'appareil
 - App Store · Gratuit
 

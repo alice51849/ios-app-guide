@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Kada mijenjate područje rada, problem s životopisom je drugačiji: vaše iskustvo je stvarno, ali na papiru 'nepovezano', a ATS filteri vas odbacuju prije nego što ga čovjek pročita — CV Desk je napravljen za to.
 
 - Produktivnost
-- Besplatno za početak · doživotno otključavanje
+- Besplatno za početak
 - App Store · Besplatno
 
 [Preuzmite CV Desk u App Storeu →](https://apps.apple.com/hr/app/id6781337213?pt=118326163&ct=iag_data_hr&mt=8)

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Als de meeste takenlijst-apps te vol voelen, is de juiste een overzichtelijke checklist met herinneringen, herhalingsregels en een Watch-complicatie — en bewust zonder projectmanagementfuncties — Mochi is hiervoor gemaakt.
 
 - Productiviteit
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - Geen advertenties
 - App Store · Gratis
 

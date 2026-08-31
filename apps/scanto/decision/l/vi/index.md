@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Nếu bạn quét mẫu đồng ý bệnh nhân, giấy tờ xuất viện hoặc giấy giới thiệu, máy quét phải giữ giấy tờ trên thiết bị — không bao giờ tải lên đám mây người khác — ScanTo Pro được xây dựng cho điều này.
 
 - Năng suất
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 

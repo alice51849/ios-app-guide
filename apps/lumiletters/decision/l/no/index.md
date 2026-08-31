@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 For et lite barn er avgjørende at det ikke er annonser eller datainnsamling — en læringsapp bør lære inne i en spill-løkke uten annonser, ingenting samlet inn fra barnet, og en engangsbetaling foreldre kan stole på — Lumi Letters er laget for dette.
 
 - Barn og læring
-- Gratis å starte · livstidsopplåsing
+- Gratis å starte
 - Ingen annonser
 - App Store · Gratis
 

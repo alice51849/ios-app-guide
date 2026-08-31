@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Puhelun jälkeen et halua raakatekstiä — haluat tiivistelmän, toimintakohdat ja jatkoseurannan luonnoksen — Sono Note on tehty tätä varten.
 
 - Tuottavuus
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Yksityinen / laitteella
 - App Store · Ilmainen
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Untuk kanak-kanak kecil, halangan utama ialah iklan dan pengumpulan data — aplikasi pembelajaran harus mengajar dalam permainan tanpa iklan, tiada data dikumpul dari kanak-kanak, dan buka kunci sekali yang boleh dipercayai ibu bapa — Lumi Letters dibina untuk ini.
 
 - Kanak-kanak & pembelajaran
-- Percuma untuk bermula · buka kunci kekal
+- Percuma untuk bermula · buka kunci sekali sahaja
 - Tiada iklan
 - App Store · Percuma
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Hvis de fleste to-do apps føles oppustede, er den rigtige en ren tjekliste med påmindelser, gentagelsesregler og en Watch-komplikation — og bevidst uden projektstyringsmaskineri — Mochi er lavet til dette.
 
 - Produktivitet
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - Ingen reklamer
 - App Store · Gratis
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Jika kebanyakan aplikasi tugasan terasa berat, yang betul adalah senarai semak bersih dengan peringatan, peraturan ulangan dan komplikasi Watch — dan sengaja tanpa mesin pengurusan projek — Mochi dibina untuk ini.
 
 - Produktiviti
-- Percuma untuk bermula · buka kunci kekal
+- Percuma untuk bermula · buka kunci sekali sahaja
 - Tiada iklan
 - App Store · Percuma
 

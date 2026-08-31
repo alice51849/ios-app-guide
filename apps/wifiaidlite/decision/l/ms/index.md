@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Cari punca sebenar. Setiap alat termasuk satu penggunaan penuh percuma. Buka kunci seumur hidup sekali bayar pilihan untuk penggunaan tanpa had—tanpa langganan, iklan, atau penjejakan. • Jalankan Semakan — Semak Wi-Fi, DNS dan internet dengan satu ketikan • Semakan Mendalam — Bukti tambahan dan ujian kestabilan • Semak Laman Web — Uji satu laman atau internet luas • Bukti — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Sambungan tidak stabil — Jitter • Sejarah Semakan — Rekod peribadi hanya disimpan pada peranti ini • Nod Tersambung — Lokasi tepat mengenal pasti Wi-Fi dan nod semasa Tiada akaun, iklan, analitik, atau penjejakan. Rekod peribadi hanya disimpan pada peranti ini. Setiap alat termasuk satu penggunaan penuh percuma. Buka kunci seumur hidup sekali bayar pilihan untuk penggunaan tanpa had—tanpa langganan, iklan, atau penjejakan.
 
 - Lagi
-- Percuma untuk bermula · buka kunci kekal
+- Percuma untuk bermula · buka kunci sekali sahaja
 - Tiada akaun
 - App Store · Percuma
 

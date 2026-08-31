@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Del 5 ser kort ut, men de ofullständiga meningarna kan ta tid om grammatik och ordförråd inte sitter automatiskt.
 
 - Utbildning
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - App Store · Gratis
 
 [Hämta Aim990 på App Store →](https://apps.apple.com/se/app/id6784974530?pt=118326163&ct=iag_data_sv&mt=8)

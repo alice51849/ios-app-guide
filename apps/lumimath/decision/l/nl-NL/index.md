@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 De beste wiskunde-app voor kinderen traint redeneren — patronen, reeksen, ruimtelijk denken — niet alleen rekenoefeningen, en verbergt dat in een spel dat het kind wil spelen — Lumi Math Planet is hiervoor gemaakt.
 
 - Kinderen & leren
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - Geen advertenties
 - App Store · Gratis
 

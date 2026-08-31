@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 G+Money Lite — Convertisseur de devises & suivi de dépenses de voyage L’argent en voyage, simplifié Notez chaque achat en devise locale et voyez-le aussitôt dans votre devise – en ligne ou hors ligne. Convertir • Taux en direct ou manuels: Nous récupérons les derniers taux automatiquement, ou définissez-les vous-même. Fonctionne toujours hors ligne. • Récupère les derniers taux à l’ouverture de l’app (environ toutes les 6 heures). Fonctionne hors ligne avec vos taux enregistrés. • Taux de référence interbancaire. Cartes et espèces peuvent différer. Dépenses • Budget quotidien: Facultatif. Suivez chaque jour par rapport au budget. • Par catégorie · Voyages · Filtres · Entrées • Sauvegarde et restauration: Inclut dépenses, taux, catégories et réglages. • Widget · Apple Watch Tout reste sur votre appareil. Aucun compte, aucun suivi. Les taux proviennent d’un service public de change. Gratuit : taux, budget, bilan · 1 voyage · 3 dépenses Un seul achat · Accès à vie · Sans abonnement Débloquez à vie les dépenses et voyages illimités.
 
 - Argent et voyage
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - Hors ligne
 - Aucun compte
 - Aucun suivi

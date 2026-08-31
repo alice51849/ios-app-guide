@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Počas skúšok nie je vôľa nástrojom — tvrdý časový blok je — LockHour Pro je na to navrhnutý.
 
 - Produktivita
-- Zadarmo na začiatok · doživotné odomknutie
+- Zadarmo na začiatok
 - Bez reklám
 - Súkromné / v zariadení
 - App Store · Zadarmo

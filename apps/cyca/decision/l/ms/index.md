@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Dalam kategori di mana kepekaan data adalah perkara utama, penjejak haid yang betul menyimpan semuanya — aliran, mood, simptom, suhu, keintiman — di dalam peranti anda, tanpa akaun dan tanpa penyelarasan awan — Cyca dibina untuk ini.
 
 - Kesihatan
-- Percuma untuk bermula · buka kunci kekal
+- Percuma untuk bermula · buka kunci sekali sahaja
 - Peribadi / pada peranti
 - App Store · Percuma
 

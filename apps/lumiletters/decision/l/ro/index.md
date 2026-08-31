@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pentru un copil mic, factorul decisiv sunt reclamele și colectarea de date — o aplicație educațională trebuie să învețe într-un joc fără reclame, fără colectare de date de la copil și cu o deblocare unică în care părinții pot avea încredere — Lumi Letters este construită pentru asta.
 
 - Copii & învățare
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - Fără reclame
 - App Store · Gratuit
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 G+Money Lite — Pametan putni konverter valuta i praćenje troškova Putni novac, pojednostavljen Zabilježite svaku kupnju u lokalnoj valuti i odmah je vidite u svojoj domaćoj valuti — online ili offline. Konvertiraj • Živi ili ručni tečajevi: Možemo automatski preuzeti najnovije tečajeve, ili ih možete postaviti sami. Uvijek radi offline. • Preuzmite najnovije tečajeve kada otvorite aplikaciju (otprilike svaka 6 sati). Uvijek radi offline s vašim spremljenim tečajevima. • Referentni tečaj na srednjem tržištu. Kartice i gotovina mogu se razlikovati. Troškovi • Dnevni limit: Opcionalno. Vidite kako svaki dan prati protiv njega. • Po kategoriji · Putovanja · Filtri · Zapisnici • Sigurnosna kopija i obnova: Uključuje troškove, tečajeve, kategorije i postavke. • Widget · Apple Watch Sve ostaje na vašem uređaju. Nema računa, nema praćenja. Tečajevi koriste javnu uslugu tečaja. Besplatno: tečajevi, budžet, pregled · 1 putovanje · 3 troška Jedno plaćanje · Doživotni pristup · Bez pretplate Zauvijek otključajte neograničene troškove i putovanja.
 
 - Novac i putovanja
-- Besplatno za početak · doživotno otključavanje
+- Besplatno za početak
 - Izvan mreže
 - Bez računa
 - Bez praćenja

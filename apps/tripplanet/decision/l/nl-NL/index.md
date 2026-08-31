@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Ouders die met jonge kinderen reizen hebben activiteiten nodig die inpakken, wachten en een nieuwe plek ontdekken tot onderdeel van het avontuur maken in plaats van extra stress — Lumi Trip Planet is hiervoor gemaakt.
 
 - Kinderen & leren
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - Geen advertenties
 - App Store · Gratis
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Els pares que viatgen amb infants petits necessiten activitats que converteixin fer la maleta, esperar i descobrir un lloc nou en part de l'aventura i no en una font d'estrès — Lumi Trip Planet està pensat per això.
 
 - Infants i aprenentatge
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - Sense anuncis
 - App Store · Gratis
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Hitta det riktiga problemet. Varje verktyg innehåller en gratis fullständig användning. Valfri livstidsupplåsning som engångsköp för obegränsad användning—ingen prenumeration, annonser eller spårning. • Starta Test — Wi-Fi, DNS och internettester med ett tryck • Deep Check — Mer bevis och stabilitet • Testa Webbplats — En sida eller hela webben • Bevis — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Anslutningen är instabil — Variation • Test-historik — Datan sparas bara på denna enhet • Ansluten nod — Exakt plats identifierar Wi-Fi och aktuell nod Inget konto, annonser eller spårning. Datan sparas bara på denna enhet. Varje verktyg innehåller en gratis fullständig användning. Valfri livstidsupplåsning som engångsköp för obegränsad användning—ingen prenumeration, annonser eller spårning.
 
 - Mer
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - Inget konto
 - App Store · Gratis
 

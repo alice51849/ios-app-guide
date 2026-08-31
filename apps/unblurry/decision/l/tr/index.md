@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Çocuklar asla hareketsiz durmaz, bu yüzden yumuşak odak ve kamera titremesi çekimleri kaçınılmazdır — Unblurry bu amaçla tasarlanmıştır.
 
 - Fotoğraf & yardımcı
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - Gizli / cihazda
 - App Store · Ücretsiz
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 I en kategori hvor datas følsomhed er altafgørende, holder den rette menstruationsapp alt — flow, humør, symptomer, temperatur, intimitet — på din enhed, uden konto og uden cloud-synk — Cyca er skabt til dette.
 
 - Sundhed
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - Privat / på enheden
 - App Store · Gratis
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Milloin viimeksi vaihdoit lakanat, kastelit kasvin, soitit läheisille, varmuuskopioit kuvat tai vaihdoit suodattimen? Mochi DoneStamp on elämäntapahtumien muisti, ei uusi tehtävälista. Kun jokin on tehty, yksi napautus tallentaa tarkan ajan selkeään historiaan. Lisää tarvittaessa suuntaa antava tai tarkka rytmi. Seuraava ajankohta lasketaan aina uudelleen todellisesta valmistumishetkestä. • Kirjaus yhdellä napautuksella ja Kumoa • Aiemman ajan lisäys, muokkaus ja poisto • Joustavat ja tarkat rytmit minuuteista vuosiin • Paikalliset ilmoitukset: Valmis ja Torkuta • Vuorovaikutteiset Koti- ja lukitusnäytön widgetit • Siri, Pikakomennot, valinnaiset muistiinpanot ja kuvat • Välitilastot, täydellinen varmuuskopio ja JSON-vienti • Tumma tila, iPad, VoiceOver ja Dynamic Type Ilmaiseksi saat yhden aktiivisen tapahtuman ja rajattoman historian. Osta Lifetime Pro kerran ja avaa rajattomat tapahtumat sekä kaikki ominaisuudet. Ei tiliä, mainoksia, analytiikkaa tai seurantaa. Ydintiedot pysyvät laitteella. Ei koskaan tilausta.
 
 - Elämäntapa
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - App Store · Ilmainen
 
 [Lataa Mochi DoneStamp: Viimeksi App Storesta](https://apps.apple.com/fi/app/id6790800323?pt=118326163&ct=iag_data_fi&mt=8)

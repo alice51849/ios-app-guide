@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pro rychlé uvolnění místa se zaměřte nejdříve na největší úspory: přesné duplikáty, téměř identické série, rozmazané snímky a velká videa — PicClear vám pomůže na iPhonu.
 
 - Fotografie a nástroje
-- Zdarma na začátek · doživotní odemknutí
+- Zdarma na začátek
 - Soukromé / v zařízení
 - App Store · Zdarma
 

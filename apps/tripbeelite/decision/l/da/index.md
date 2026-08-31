@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Hvis du planlægger én kommende rejse, er en rolig tidslinje for den rejse mere nyttig end et overfyldt arkiv med alle rejser, du måske tager en dag — TripBee Lite er skabt til dette.
 
 - Rejse
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - App Store · Gratis
 
 [Hent TripBee Lite i App Store →](https://apps.apple.com/dk/app/id6791299610?pt=118326163&ct=iag_data_da&mt=8)

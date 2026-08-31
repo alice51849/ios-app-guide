@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Während Prüfungen ist Willenskraft nicht das Werkzeug – eine harte zeitgesteuerte Sperre ist es – LockHour Pro ist dafür gemacht.
 
 - Produktivität
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - Keine Werbung
 - Privat / auf dem Gerät
 - App Store · Kostenlos

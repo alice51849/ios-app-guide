@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Część 5 wygląda krótko, ale pytania z niepełnymi zdaniami mogą zabierać czas, jeśli gramatyka i słownictwo nie są automatyczne.
 
 - Edukacja
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - App Store · Bezpłatnie
 
 [Pobierz Aim990 z App Store →](https://apps.apple.com/pl/app/id6784974530?pt=118326163&ct=iag_data_pl&mt=8)

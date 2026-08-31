@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 HoursTag Lite - Asioiden todellinen hinta Jokainen ostos maksaa tunteja elämästäsi. HoursTag Lite muuntaa hinnat työajaksi – jotta käytät rahaa harkiten. Tutustu arvoprismaasi - Aikakustannus: Nettoarvosi työtuntia kohden - Tyyppi: Tarve - Halu - Heräte - Arvoprofiilisi - Täydellinen arvoanalyysi - Paljonko tavoite maksaa?: Näe tavoitteen takana oleva työ ja seuraa edistymistäsi. - Varmuuskopiointi: Sisältää tulot, kulut, tavoitteet ja asetukset. - Widget - Apple Watch Kaikki pysyy laitteellasi. Ei tiliä, ei seurantaa. Yksi maksu · Elinikäinen käyttö · Ei tilausta Rajattomat valinnat ja muokkaukset Rajattomat tavoitteet ja edistyminen Jakaminen, analyysit ja varmuuskopiot
 
 - Raha & matkailu
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Ei tiliä
 - Ei seurantaa
 - Yksityinen / laitteella

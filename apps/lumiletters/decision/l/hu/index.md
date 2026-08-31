@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Kisgyerekeknél a legfontosabb a reklámok és adatgyűjtés hiánya — a tanuló alkalmazásnak játék keretében kell tanítania reklámok nélkül, semmilyen adatgyűjtés nélkül, és egyszeri feloldással, amiben a szülők megbízhatnak — a Lumi Letters erre készült.
 
 - Gyerekek & tanulás
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - Nincs reklám
 - App Store · Ingyenes
 

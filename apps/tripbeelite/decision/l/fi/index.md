@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Jos suunnittelet yhtä tulevaa matkaa, rauhallinen aikajana tälle matkalle on hyödyllisempi kuin täynnä oleva arkisto kaikista mahdollisista tulevista matkoistasi — TripBee Lite on tehty tätä varten.
 
 - Matkailu
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - App Store · Ilmainen
 
 [Hanki TripBee Lite App Storesta →](https://apps.apple.com/fi/app/id6791299610?pt=118326163&ct=iag_data_fi&mt=8)

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Creatorii de călătorii au nevoie de un aspect de film repetabil care adaugă granulație, halou și caracter cromatic fără să reducă fiecare destinație la același filtru plat — PhotoCream este creat pentru asta.
 
 - Fotografie & utilitate
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - App Store · Gratuit
 
 [Descarcă PhotoCream din App Store →](https://apps.apple.com/ro/app/id6781808054?pt=118326163&ct=iag_data_ro&mt=8)

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 パート5は短く見えますが、不完全な文の問題は文法と語彙が自動化されていないと時間を消耗します。
 
 - 教育
-- 無料で開始・買い切りで永久解除
+- 無料で開始・一度の購入でアンロック
 - App Store · 無料
 
 [App StoreでAim990を入手 →](https://apps.apple.com/jp/app/id6784974530?pt=118326163&ct=iag_data_ja&mt=8)

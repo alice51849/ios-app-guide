@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Snapport Lite - Erstelle Pass-, Visum- und Ausweisfotos mit Größenhilfen, Hintergrund und Druck. Gratisversion · Unterstützt 1 Export - Einmalkauf · für immer deins · kein Abo - Keine Werbung, kein Tracking Vorlagen - Pass-, Visum- und Ausweisfotos – druckfertig. - Snapport Lite funktioniert offline. Die Prüfung lädt nur eine öffentliche Größenliste – es werden keine persönlichen Daten gesendet. Zuschneiden & Ausrichten - Richte dein Gesicht in der Hilfslinie aus. Die Vorgaben können variieren – offizielle Regeln prüfen. Hintergrund - Die Hintergrundentfernung sollte geprüft werden. Anpassen - Halte dein Aussehen für offizielle Dokumente natürlich. Exportieren - Exportiere ein Einzelfoto oder einen Druckbogen. Datenschutz - Deine Fotos bleiben auf deinem iPhone. - Kein Konto - Kein Cloud-Upload - Die Gesichtserkennung läuft auf dem Gerät, um dein Foto auszurichten. Es werden keine biometrischen Daten gespeichert. - Du steuerst Export und Teilen Die Anforderungen variieren je nach Land, Behörde und Antragsart. Prüfe vor dem Einreichen stets die offiziellen Vorgaben.
 
 - Foto & Dienstprogramm
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - Offline
 - App Store · Kostenlos
 

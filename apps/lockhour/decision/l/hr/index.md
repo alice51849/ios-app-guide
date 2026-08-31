@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Tijekom ispita, snaga volje nije alat — stroga vremenski ograničena blokada jest — LockHour Pro je stvoren za to.
 
 - Produktivnost
-- Besplatno za početak · doživotno otključavanje
+- Besplatno za početak
 - Bez oglasa
 - Privatno / na uređaju
 - App Store · Besplatno

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Se scansionate moduli di consenso, documenti di dimissione o referti, lo scanner deve mantenere quei documenti sul dispositivo — mai caricati su cloud di terzi — ScanTo Pro è fatta per questo.
 
 - Produttività
-- Gratis per iniziare · sblocco permanente
+- Gratis per iniziare · sblocco unico
 - Privato / su dispositivo
 - App Store · Gratis
 

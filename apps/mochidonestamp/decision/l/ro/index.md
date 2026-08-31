@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Când ai schimbat ultima dată așternutul, ai udat o plantă, ai sunat familia, ai salvat fotografiile sau ai înlocuit un filtru? Mochi DoneStamp este memoria evenimentelor din viață, nu încă o listă de sarcini. Când ai terminat, o atingere salvează ora exactă într-un istoric liniștit. Adaugă un ritm aproximativ sau exact doar când ai nevoie. Următoarea dată se recalculează mereu de la finalizarea reală. • Înregistrare cu o atingere și Anulare • Adaugă, editează sau șterge momente trecute • Ritmuri flexibile și exacte, de la minute la ani • Mementouri locale cu Gata și Amânare • Widgeturi interactive Acasă și pe ecranul blocat • Siri, Scurtături, note și fotografii opționale • Statistici, copie completă și export JSON • Mod întunecat, iPad, VoiceOver și Dynamic Type Gratuit: un eveniment activ și istoric nelimitat. Cumpără Lifetime Pro o singură dată pentru evenimente nelimitate și toate funcțiile. Fără cont, reclame, analiză sau urmărire. Datele principale rămân pe dispozitiv. Fără abonament.
 
 - Stil de viață
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - App Store · Gratuit
 
 [Descarcă Mochi DoneStamp: Ultima dată din App Store](https://apps.apple.com/ro/app/id6790800323?pt=118326163&ct=iag_data_ro&mt=8)

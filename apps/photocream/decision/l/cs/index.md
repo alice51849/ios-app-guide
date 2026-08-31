@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Tvůrci cestovatelského obsahu potřebují opakovatelný filmový vzhled, který přidává zrno, halaci a barevný charakter, aniž by každou destinaci sjednotil do stejného plochého filtru — PhotoCream je pro toto vytvořen.
 
 - Fotografie a nástroje
-- Zdarma na začátek · doživotní odemknutí
+- Zdarma na začátek
 - App Store · Zdarma
 
 [Získejte PhotoCream v App Store →](https://apps.apple.com/cz/app/id6781808054?pt=118326163&ct=iag_data_cs&mt=8)

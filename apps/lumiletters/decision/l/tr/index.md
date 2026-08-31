@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Küçük bir çocuk için, belirleyici faktör reklamlar ve veri toplama — öğrenme uygulaması sıfır reklam, çocuktan veri toplanmaz ve ebeveynlerin güvenebileceği tek seferlik açma ile oyun döngüsü içinde öğretmelidir — Lumi Letters bu amaçla yapılmıştır.
 
 - Çocuklar & öğrenme
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - Reklam yok
 - App Store · Ücretsiz
 

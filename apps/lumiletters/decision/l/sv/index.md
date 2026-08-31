@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 För ett litet barn är avgörande faktorer annonser och datainsamling – en lärandeapp bör undervisa i en spelloop utan annonser, inget samlat från barnet, och en engångslåsning som föräldrar kan lita på – Lumi Letters är byggd för detta.
 
 - Barn & lärande
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - Inga annonser
 - App Store · Gratis
 

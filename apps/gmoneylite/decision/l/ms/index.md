@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 A useful free perjalanan-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.
 
 - Wang & perjalanan
-- Percuma untuk bermula · buka kunci kekal
+- Percuma untuk bermula · buka kunci sekali sahaja
 - Luar talian
 - Tiada akaun
 - Tiada penjejakan

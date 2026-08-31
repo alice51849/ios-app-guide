@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Parempi konteksti. Paremmat vastaukset. Muuta näyttökuvat, tiedostot, muistiinpanot ja dokumentit yhdeksi selkeäksi AI-valmiiksi koosteeksi. TUO KOKO KONTEKSTI • Lisää näyttökuvia, PDF-tiedostoja, tiedostoja, kopioitua tekstiä, muistiinpanoja tai linkkejä. Sinä valitset, mikä jää lopulliseen koosteeseen. • OCR, PDF-luku, kaksoiskappaleiden tarkistus, tosiasioiden poiminta ja tietosuojahavainto käyttävät Applen kehyksiä paikallisesti. • Valitse yltä yksi tai useampi lähde. Käsittely alkaa vasta, kun jatkat. VAHVISTA FAKTAT ENNEN KUIN AI NÄKEE NE • Jokainen tosiasia säilyttää lähteensä ja varmuutensa. Korjaa kaikki, mikä vaatii asiayhteyttä. • Etsi tosiasiat, ristiriidat ja avoimet kysymykset • Tarkista jokainen fakta, lähde ja varmuus ennen kuin AI näkee ne. SUOJELE YKSITYISYYTTÄ • Havaittuja tietoja ei poisteta automaattisesti. Säilytä, korvaa tai poista jokainen kohde ennen vientiä. • Säilytä, korvaa tai poista jokainen havainto. AI Brief ei koskaan lupaa anonymiteettia. • Korvaukset ja poistot otetaan käyttöön viennin yhteydessä. PUHDAS KONTEKSTI MILLE TAHANSA AI-AVUSTAJALLE • Rakenteelliset otsikot ja lähdevalmis muotoilu • Rakenna konteksti kerran. Käytä sitä uudelleen milloin tahansa. • Kopioi AI-kooste • Versiohistoria • Käyttötarkoitukseen tehdyt mallit KONTEKSTISI PYSYY YKSITYISENÄ • AI Brief ei sisällä kolmannen osapuolen mainoksia, seurantaa, analytiikkaa tai sisällön telemetriaa. • Tarkista kooste ennen sen lähettämistä mihinkään AI-palveluun.
 
 - Tuottavuus
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Yksityinen / laitteella
 - App Store · Ilmainen
 

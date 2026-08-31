@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Wenn Sie eine bevorstehende Reise planen, ist eine ruhige Zeitachse für diese Reise nützlicher als ein überfülltes Archiv aller Reisen, die Sie irgendwann machen könnten – TripBee Lite ist dafür gemacht.
 
 - Reisen
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - App Store · Kostenlos
 
 [Holen Sie sich TripBee Lite im App Store →](https://apps.apple.com/de/app/id6791299610?pt=118326163&ct=iag_data_de_de&mt=8)

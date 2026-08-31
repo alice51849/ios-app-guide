@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Podczas egzaminów siła woli nie wystarczy — potrzebna jest twarda blokada na czas — LockHour Pro jest do tego stworzony.
 
 - Produktywność
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - Bez reklam
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie

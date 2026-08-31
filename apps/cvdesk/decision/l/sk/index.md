@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Keď meníte odbor, problém so životopisom je iný: vaše skúsenosti sú reálne, ale na papieri 'nesúvisiace' a ATS filtre vás odmietnu skôr, než človek prečíta — CV Desk je na to vytvorený.
 
 - Produktivita
-- Zadarmo na začiatok · doživotné odomknutie
+- Zadarmo na začiatok
 - App Store · Zadarmo
 
 [Získajte CV Desk v App Store →](https://apps.apple.com/sk/app/id6781337213?pt=118326163&ct=iag_data_sk&mt=8)

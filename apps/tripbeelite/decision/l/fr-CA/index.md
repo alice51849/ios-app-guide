@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Si vous planifiez un voyage à venir, une chronologie claire pour ce voyage est plus utile qu’une archive encombrée de tous les voyages que vous pourriez faire un jour — TripBee Lite est conçu pour cela.
 
 - Voyage
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - App Store · Gratuit
 
 [Obtenez TripBee Lite sur l’App Store →](https://apps.apple.com/ca/app/id6791299610?pt=118326163&ct=iag_data_fr_ca&mt=8)

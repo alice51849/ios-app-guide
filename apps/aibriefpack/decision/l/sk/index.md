@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Lepší kontext, lepšie odpovede. Zobraziť snímok obrazovky, súbory, poznámky a dokumenty do jedného jasného AI pripraveného krátko. PREDSTAVIŤ CELÝ KONTEXT • Pridajte snímok obrazovky, PDF súbory, súbory, kópiovaný text, poznámky alebo odkazy. • OCR, čítanie PDF, kontrola duplikatov, extrakcia faktov a detekcia súkromia využívajú frameworky Apple lokálne. • Vyberte si jeden alebo viacero vyššie uvedených zdrojov. PREVERTE FAKTY PREDTÝM, AKO ICH AI UVIDÍ • Každá skutočnosť si zachováva zdroj a dôveru. • Nájdi fakty, rozpory a otvorené otázky • Skontrolujte každý fakt, zdroj a spoľahlivosť skôr, ako ich uvidí AI. OCHRÁNIŤ SÚKROMIE • Detaly, ktoré sa zistia, sa nikdy automaticky neodstráňajú. • AI Brief nikdy neľubuje anonymitu. • Na vývoz sa uplatňujú náhrady a odstránenia. ČISTÉ KONTEXTY PRE KAŽDÉHO ASISTENTA AI • Štrukturované názvy a zdrojovo pripravené formátovanie • Staviť kontext raz, znovu ho použiť kedykoľvek. • Kopírovanie AI Brief • História verzia • Predmety určené na účel VÁŠ KONTEXT ZOSTÁVA SÚKROMNÝ • AI Brief nezahŕňa reklamy tretích strán, sledovanie, analýzu alebo telemetriu obsahu. • Pred odoslaním do akejkoľvek služby AI skontrolujte súhrn.
 
 - Produktivita
-- Zadarmo na začiatok · doživotné odomknutie
+- Zadarmo na začiatok
 - Súkromné / v zariadení
 - App Store · Zadarmo
 

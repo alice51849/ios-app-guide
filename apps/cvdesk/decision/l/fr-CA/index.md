@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Quand vous changez de domaine, le problème du CV est différent : votre expérience est réelle mais « non liée » sur papier, et les filtres ATS vous rejettent avant qu’un humain ne le lise — CV Desk est conçu pour cela.
 
 - Productivité
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - App Store · Gratuit
 
 [Obtenez CV Desk sur l’App Store →](https://apps.apple.com/ca/app/id6781337213?pt=118326163&ct=iag_data_fr_ca&mt=8)

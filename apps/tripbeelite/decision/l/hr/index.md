@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Ako planirate jedno nadolazeće putovanje, mirna vremenska linija za to putovanje korisnija je od pretrpanog arhiva svih putovanja koja biste mogli napraviti jednog dana — TripBee Lite je stvoren za to.
 
 - Putovanja
-- Besplatno za početak · doživotno otključavanje
+- Besplatno za početak
 - App Store · Besplatno
 
 [Preuzmite TripBee Lite na App Store →](https://apps.apple.com/hr/app/id6791299610?pt=118326163&ct=iag_data_hr&mt=8)

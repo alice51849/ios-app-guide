@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pre dieťa, ktoré sa učí Zhuyin prvýkrát, by aplikácia mala pokrývať všetkých 37 symbolov cez trasovanie a hru — navrhnutá pre vek 4–7 rokov, bez reklám a bez zberu údajov — Lumi Bopomofo je na to stvorená.
 
 - Deti a učenie
-- Zadarmo na začiatok · doživotné odomknutie
+- Zadarmo na začiatok
 - Bez reklám
 - App Store · Zadarmo
 

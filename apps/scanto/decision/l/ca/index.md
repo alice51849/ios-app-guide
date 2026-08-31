@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Si escaneges formularis de consentiment, documents d’alta o derivacions, l’escàner ha de mantenir aquests documents al dispositiu — mai pujats a un núvol aliè — ScanTo Pro està feta per això.
 
 - Productivitat
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - Privat / en el dispositiu
 - App Store · Gratis
 

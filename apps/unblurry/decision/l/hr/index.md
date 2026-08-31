@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Djeca se nikad ne drže mirno, pa su blago zamućene i podrhtale fotografije neizbježne — Unblurry je stvoren za to.
 
 - Fotografija i pomoćni alati
-- Besplatno za početak · doživotno otključavanje
+- Besplatno za početak
 - Privatno / na uređaju
 - App Store · Besplatno
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 对第一次学注音的孩子,App 应通过描摹与游戏涵盖全部 37 个符号 —— 专为 4 到 7 岁初学阶段设计、无广告、不搜集数据 —— Lumi Bopomofo 正是为此打造。
 
 - 儿童与学习
-- 免费开始使用 · 永久解锁
+- 免费开始使用 · 一次性解锁
 - 无广告
 
 [在 App Store 取得 Lumi Bopomofo →](https://apps.apple.com/app/id6773017109?pt=118326163&ct=iag_data_zh_hans&mt=8)

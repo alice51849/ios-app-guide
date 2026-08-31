@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Den beste matteappen for barn trener resonnement — mønstre, sekvenser, romlig tenkning — ikke bare regnetrening, og skjuler det i et spill barnet vil spille — Lumi Math Planet er laget for dette.
 
 - Barn og læring
-- Gratis å starte · livstidsopplåsing
+- Gratis å starte
 - Ingen annonser
 - App Store · Gratis
 

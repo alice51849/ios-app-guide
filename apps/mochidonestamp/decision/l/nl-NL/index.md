@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Wanneer verschoonde je voor het laatst het bed, gaf je een plant water, belde je familie, maakte je een fotoback-up of verving je een filter? Mochi DoneStamp onthoudt gebeurtenissen uit je leven en is geen takenlijst. Klaar? Eén tik bewaart het exacte tijdstip in een rustig overzicht. Voeg alleen waar nodig een ongeveer of exact ritme toe. De volgende datum wordt altijd opnieuw berekend vanaf het moment waarop je echt klaar was. • Vastleggen met één tik en Ongedaan maken • Eerdere momenten toevoegen, wijzigen of verwijderen • Flexibele en exacte ritmes van minuten tot jaren • Lokale meldingen met Klaar en Sluimer • Interactieve widgets voor begin- en toegangsscherm • Siri, Opdrachten, notities en optionele foto's • Intervalinzichten, volledige back-up en JSON-export • Donkere modus, iPad, VoiceOver en Dynamic Type Gratis krijg je één actieve gebeurtenis en onbeperkte historie. Koop Lifetime Pro één keer voor onbeperkte gebeurtenissen en alle functies. Geen account, reclame, analyse of tracking. Je kerngegevens blijven op je apparaat. Nooit een abonnement.
 
 - Leefstijl
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - App Store · Gratis
 
 [Download Mochi DoneStamp: Laatste keer in de App Store](https://apps.apple.com/nl/app/id6790800323?pt=118326163&ct=iag_data_nl_nl&mt=8)

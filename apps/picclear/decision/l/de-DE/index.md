@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Um schnell Speicherplatz freizugeben, konzentrieren Sie sich zuerst auf die größten Einsparungen: exakte Duplikate, fast identische Serienaufnahmen, unscharfe Fotos und große Videos – PicClear hilft Ihnen dabei auf Ihrem iPhone.
 
 - Foto & Dienstprogramm
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - Privat / auf dem Gerät
 - App Store · Kostenlos
 

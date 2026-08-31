@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Snapport Lite - Realizează fotografii pentru pașaport, viză și documente cu dimensiuni ghidate, instrumente pentru fundal și export gata de imprimare. Versiune gratuită · Acceptă 1 export - Achiziție unică · pentru totdeauna · fără abonament - Fără reclame, fără urmărire Șabloane - Fotografii pentru pașaport, viză și ID — gata de imprimare. - Snapport Lite funcționează complet offline. Verificarea descarcă doar o listă publică de dimensiuni comune — nu se trimite date personale. Decupare & Aliniere - Aliniază-ți fața în ghid. Cerințele pot varia, așa că revizuiește regulile oficiale înainte de a trimite. Fundal - Îndepărtarea fundalului poate necesita revizuire. Ajustare - Păstrează-ți aspectul natural pentru documentele oficiale. Exportă - Exportă o singură fotografie sau o foaie de imprimare. Confidențialitate - Fotografiile tale rămân pe iPhone-ul tău. - Fără cont - Fără încărcare în cloud - Detectarea feței se desfășoară pe dispozitiv pentru a ajuta la alinierea fotografiei tale. Nici o identitate biometrică nu este stocată. - Tu controlezi exportul și partajarea Cerințele pentru fotografii variază în funcție de țară, agenție și tipul de aplicație. Te rugăm să revizuiești cerințele oficiale înainte de a trimite.
 
 - Fotografie & utilitate
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - Offline
 - App Store · Gratuit
 

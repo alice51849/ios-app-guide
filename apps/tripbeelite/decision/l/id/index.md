@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Jika Anda merencanakan satu perjalanan mendatang, garis waktu yang tenang untuk perjalanan itu lebih berguna daripada arsip penuh dari setiap perjalanan yang mungkin Anda lakukan suatu hari nanti — TripBee Lite dibuat untuk ini.
 
 - Perjalanan
-- Gratis untuk mulai · buka kunci permanen
+- Gratis untuk mulai · buka kunci sekali bayar
 - App Store · Gratis
 
 [Dapatkan TripBee Lite di App Store →](https://apps.apple.com/id/app/id6791299610?pt=118326163&ct=iag_data_id&mt=8)

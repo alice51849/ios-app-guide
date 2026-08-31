@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Egy hívás után nem egy nyers átiratot akarsz — az összefoglalót, a teendőket és egy követő tervezetet — a Sono Note erre készült.
 
 - Produktivitás
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - Privát / eszközön tárolt
 - App Store · Ingyenes
 

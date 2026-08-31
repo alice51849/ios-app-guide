@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Cada ferramenta inclui um uso gratuito. Desbloqueio vitalício opcional de pagamento único para uso ilimitado: sem assinaturas, anúncios ou rastreamento. • Fazer um Teste — Testes de Wi-Fi e DNS num só toque • Teste Profundo — Mais provas e estabilidade da rede • Testar um Site — Um site ou a internet em geral • Provas — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • A ligação parece instável — Flutuação • Histórico — Registos privados apenas neste dispositivo • Nó ligado — A localização exata identifica o Wi-Fi e o nó atual Sem conta, anúncios ou rastreio. Registos privados apenas neste dispositivo. Cada ferramenta inclui um uso gratuito. Desbloqueio vitalício opcional de pagamento único para uso ilimitado: sem assinaturas, anúncios ou rastreamento.
 
 - Mais
-- Grátis para começar · desbloqueio permanente
+- Grátis para começar · desbloqueio único
 - Sem conta
 - App Store · Grátis
 

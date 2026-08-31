@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 BattAI BattAI folosește cinci valori din API-urile publice iOS: nivelul bateriei, starea încărcării, consum redus, starea termică a întregului dispozitiv și ora. Celelalte rezultate sunt calculate din aceste citiri sau adăugate de tine. Fiecare detaliu arată sursa și limitele. Sănătate • Scorul sănătății bateriei • Ce formează scorul • Capacitatea maximă în timp • Capacitate maximă • Cicluri Încărcare • Grija la încărcare • Interval de încărcare • Viteză de încărcare Exportă date • Creează un fișier pe acest dispozitiv. Nu se încarcă nimic. • Creat pe acest dispozitiv. Nu se încarcă niciun fel de date. Confidențialitate • Fără reclame, analiză, urmărire, SDK-uri terțe sau solicitări de internet. Datele rămân aici, exceptând un rezumat minim trimis direct către Apple Watch-ul asociat. • BattAI citește doar numărul de cicluri, capacitatea nominală de încărcare și capacitatea de proiectare. Celelalte date sunt eliminate imediat și nu sunt salvate sau trimise. Înțelege bateria în timp • Deblochează mai mult istoric, planificare și rapoarte. • O singură plată. Fără abonament.
 
 - Mai mult
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - App Store · Gratuit
 
 [Descarcă BattAI: Sănătatea bateriei din App Store](https://apps.apple.com/ro/app/id6802423998?pt=118326163&ct=iag_data_ro&mt=8)

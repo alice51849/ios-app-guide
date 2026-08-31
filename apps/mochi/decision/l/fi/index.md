@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkistuslista muistutuksilla, toistosäännöillä ja Watch-komplikaatiolla — ja tarkoituksella ilman projektinhallinnan koneistoa — Mochi on tehty tätä varten.
 
 - Tuottavuus
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Ei mainoksia
 - App Store · Ilmainen
 

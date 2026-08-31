@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Ekran görüntüleriniz düzenli Her ekran görüntüsünü bulun, işleyin ve temizleyin. En yeni 50 ekran görüntüsünde tüm temel akış ücretsizdir. Düzenleme • Alışveriş · Fişler · Seyahat · Biletler · Haritalar ve yerler · Sohbet ve sosyal · İş · Eğitim · Tarifler ve yemek · İlham · QR ve kodlar · Hatalar ve teknik · Hassas • Metin, kategori, bağlantı ara… • Algılanan etkinlikler ve anımsatıcılar zamana göre sıralı. • Harita’da aç · Bağlantıyı aç · Metni kopyala · Kodu aç · Numarayı ara · Paketi takip et · Anımsatıcı ekle · Takvim’e ekle • Otomatik silmez. Fotoğraflar son onayı isteyecek. ShotInbox bunu geri alamaz. Aygıtta gizlilik OCR · Apple Vision · NaturalLanguage Apple Vision ve Natural Language aygıtta çalışır. Yükleme yapılmaz. Özel, yerel ve tamamen sizin kontrolünüzde. ShotInbox Ömür Boyu Pro US$5.99 · Tek ödeme • Ömür boyu erişim • Abonelik yok. • Sınırsız ekran görüntüsü geçmişi • Özel kurallar, toplu işlemler ve benzer gruplar • Kilit, araç takımları, yedek ve dışa aktarma Destek: hourstag.app@gmail.com
 
 - Fotoğraf & yardımcı
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - App Store · Ücretsiz
 
 [ShotInbox AI: Sort Screenshots uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6802166527?pt=118326163&ct=iag_data_tr&mt=8)

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Phần 5 có vẻ ngắn, nhưng các câu hỏi câu chưa hoàn chỉnh có thể tốn thời gian nếu ngữ pháp và từ vựng không thành thạo.
 
 - Giáo dục
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - App Store · Miễn phí
 
 [Tải Aim990 trên App Store →](https://apps.apple.com/vn/app/id6784974530?pt=118326163&ct=iag_data_vi&mt=8)

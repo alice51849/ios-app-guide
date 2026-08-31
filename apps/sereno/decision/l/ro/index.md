@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pentru somn, un abonament care te deranjează în fiecare lună este opusul relaxării — Sereno este construit pentru asta.
 
 - Somn & concentrare
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - Offline
 - Fără reclame
 - App Store · Gratuit

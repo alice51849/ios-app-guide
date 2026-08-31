@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Kokeissa tahdonvoima ei riitä — tarvitaan tiukka ajoitettu esto — LockHour Pro on tehty tätä varten.
 
 - Tuottavuus
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Ei mainoksia
 - Yksityinen / laitteella
 - App Store · Ilmainen

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 BattAI BattAI uporablja pet vrednosti iz javnih API-jev iOS: raven baterije, stanje polnjenja, varčni način, toplotno stanje celotne naprave in čas. Drugi rezultati so izračunani iz teh meritev ali jih dodate vi. Vsak podatek prikazuje vir in omejitve. Stanje baterije • Ocena stanja baterije • Kaj oblikuje oceno • Največja zmogljivost skozi čas • Največja zmogljivost • Cikli Polnjenje • Skrb pri polnjenju • Razpon polnjenja • Hitrost polnjenja Izvoz podatkov • Ustvarite datoteko v tej napravi. Nič se ne naloži. • Ustvari se v tej napravi. Podatki se ne nalagajo. Zasebnost • Brez oglasov, analitike, sledenja, SDK-jev drugih ponudnikov ali internetnih zahtev. Podatki ostanejo tukaj, razen minimalnega posnetka, ki se pošlje neposredno seznanjeni uri Apple Watch. • BattAI prebere samo število ciklov, nazivno polnilno zmogljivost in načrtovano zmogljivost. Drugi podatki datoteke se takoj zavržejo ter se nikoli ne shranijo ali pošljejo. Spremljajte svojo baterijo skozi čas • Odklenite globljo zgodovino, načrtovanje in poročila. • Eno plačilo. Brez naročnine.
 
 - Več
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - App Store · Brezplačno
 
 [Prenesite BattAI: Ocena stanja baterije iz trgovine App Store](https://apps.apple.com/si/app/id6802423998?pt=118326163&ct=iag_data_sl_si&mt=8)

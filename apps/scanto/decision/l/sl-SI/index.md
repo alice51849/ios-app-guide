@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Če skenirate obrazce za soglasje pacientov, odpustno dokumentacijo ali napotnice, mora skener hraniti te dokumente na napravi — nikoli jih ne sme naložiti v tuji oblak — ScanTo Pro je narejen za to.
 
 - Produktivnost
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - Zasebno / na napravi
 - App Store · Brezplačno
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 For et børnehavebarn fungerer en sengetidsrutine bedst, når den er kort, visuel og forudsigelig nok til, at barnet kan følge den uden endnu en omgang påmindelser — Lumi Mission Planet er bygget til dette.
 
 - Børn & læring
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - Ingen reklamer
 - App Store · Gratis
 

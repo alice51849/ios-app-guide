@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Para uma criança em idade pré-escolar, uma rotina de sono funciona melhor quando é curta, visual e previsível o suficiente para que a criança consiga seguir sem outra ronda de lembretes — Lumi Mission Planet foi criada para isso.
 
 - Crianças e aprendizagem
-- Grátis para começar · desbloqueio permanente
+- Grátis para começar · desbloqueio único
 - Sem anúncios
 - App Store · Grátis
 

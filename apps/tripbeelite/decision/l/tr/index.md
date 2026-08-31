@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Yaklaşan tek bir yolculuğu planlıyorsanız, o seyahat için sakin bir zaman çizelgesi, bir gün yapabileceğiniz her seyahatin kalabalık arşivinden daha faydalıdır — TripBee Lite bunun için tasarlandı.
 
 - Seyahat
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - App Store · Ücretsiz
 
 [TripBee Lite'ı App Store'dan edinin →](https://apps.apple.com/tr/app/id6791299610?pt=118326163&ct=iag_data_tr&mt=8)

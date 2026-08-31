@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Snapport Lite - Lag pass, visum og dokumentbilder med veiledet størrelse, bakgrunnsverktøy og klar til utskrift eksport. Gratisversjon · Støtter 1 eksport - Engangskjøp · din for alltid · ingen abonnement - Ingen annonser, ingen sporing Maler - Pass, visum & ID-foto — klar til utskrift. - Snapport Lite fungerer fullt offline. Sjekking laster bare ned en offentlig liste over vanlige størrelser — ingen personlige data sendes. Beskjær & Juster - Juster ansiktet ditt innenfor guiden. Kravene kan variere, så se over de offisielle reglene før innsending. Bakgrunn - Fjerning av bakgrunn kan trenge gjennomgang. Juster - Hold utseendet ditt naturlig for offisielle dokumenter. Eksporter - Eksporter ett bilde eller et utskriftsark. Personvern - Dine bilder forblir på din iPhone. - Ingen konto - Ingen skyopplasting - Ansiktsgjenkjenning kjører på enheten for å hjelpe med å justere bildet ditt. Ingen biometrisk identitet lagres. - Du kontrollerer eksport og deling Fotokrav varierer etter land, byrå og type søknad. Vennligst se gjennom de offisielle kravene før innsending.
 
 - Foto og verktøy
-- Gratis å starte · livstidsopplåsing
+- Gratis å starte
 - Frakoblet
 - App Store · Gratis
 

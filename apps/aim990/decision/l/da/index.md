@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Del 5 virker kort, men de ufuldstændige sætninger kan tage tid, hvis grammatik og ordforråd ikke er automatiske.
 
 - Uddannelse
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - App Store · Gratis
 
 [Hent Aim990 i App Store →](https://apps.apple.com/dk/app/id6784974530?pt=118326163&ct=iag_data_da&mt=8)

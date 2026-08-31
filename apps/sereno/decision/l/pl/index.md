@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Na sen subskrypcja, która co miesiąc przypomina o opłacie, to przeciwieństwo relaksu — Sereno jest stworzone właśnie do tego.
 
 - Sen i koncentracja
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - Offline
 - Bez reklam
 - App Store · Bezpłatnie

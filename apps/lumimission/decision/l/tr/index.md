@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Bir okul öncesi çocuk için uyku rutini, kısa, görsel ve çocuğun başka bir hatırlatmaya gerek kalmadan takip edebileceği kadar öngörülebilir olduğunda en iyi şekilde işler — Lumi Mission Planet bunun için tasarlanmıştır.
 
 - Çocuklar & öğrenme
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - Reklam yok
 - App Store · Ücretsiz
 

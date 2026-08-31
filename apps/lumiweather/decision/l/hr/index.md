@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Roditeljima koji planiraju boravak vani treba više od temperature: treba im brz, dobno prilagođen pregled je li vrijeme pogodno za dijete i koja odjeća ima smisla — Lumi Weather je napravljen za to.
 
 - Djeca i učenje
-- Besplatno za početak · doživotno otključavanje
+- Besplatno za početak
 - Bez oglasa
 - Bez praćenja
 - App Store · Besplatno

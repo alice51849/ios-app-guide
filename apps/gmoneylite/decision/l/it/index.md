@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 G+Money Lite — Convertitore di valute e spese di viaggio I soldi in viaggio, semplici Registra ogni acquisto in valuta locale e vedilo subito nella tua valuta – online o offline. Converti • Tassi live o manuali: Recuperiamo i tassi più recenti automaticamente, o impostali tu. Funziona sempre offline. • Recupera i tassi più recenti all’apertura dell’app (circa ogni 6 ore). Funziona offline con i tassi salvati. • Tasso medio di riferimento. Carte e contanti possono variare. Spese • Budget giornaliero: Facoltativo. Vedi ogni giorno rispetto al budget. • Per categoria · Viaggi · Filtri · Voci • Backup e ripristino: Include spese, tassi, categorie e impostazioni. • Widget · Apple Watch Tutto resta sul tuo dispositivo. Nessun account, nessun tracciamento. I tassi usano un servizio pubblico di cambio. Gratis: cambi, budget e riepilogo · 1 viaggio · 3 spese Un solo pagamento · Accesso a vita · Nessun abbonamento Sblocca per sempre spese e viaggi illimitati.
 
 - Denaro e viaggi
-- Gratis per iniziare · sblocco permanente
+- Gratis per iniziare · sblocco unico
 - Offline
 - Nessun account
 - Nessun tracciamento

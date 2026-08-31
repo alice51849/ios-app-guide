@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Del 5 virker kort, men spørsmål med ufullstendige setninger kan ta tid hvis grammatikk og ordforråd ikke sitter automatisk.
 
 - Utdanning
-- Gratis å starte · livstidsopplåsing
+- Gratis å starte
 - App Store · Gratis
 
 [Få Aim990 i App Store →](https://apps.apple.com/no/app/id6784974530?pt=118326163&ct=iag_data_no&mt=8)

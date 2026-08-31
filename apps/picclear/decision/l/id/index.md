@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Untuk mengosongkan ruang dengan cepat, targetkan keuntungan terbesar terlebih dahulu: foto duplikat tepat, rentetan foto hampir identik, foto buram yang ditolak, dan video besar — PicClear membantu Anda melakukannya di iPhone.
 
 - Foto & utilitas
-- Gratis untuk mulai · buka kunci permanen
+- Gratis untuk mulai · buka kunci sekali bayar
 - Privat / di perangkat
 - App Store · Gratis
 

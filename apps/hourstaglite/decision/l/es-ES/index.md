@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.
 
 - Dinero y viajes
-- Gratis para empezar · desbloqueo permanente
+- Gratis para empezar · desbloqueo único
 - Sin cuenta
 - Sin seguimiento
 - Privado / en el dispositivo

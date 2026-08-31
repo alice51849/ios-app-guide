@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Els creadors de viatges necessiten un estil de pel·lícula repetible que afegeixi gra, halació i caràcter de color sense fer que cada destinació sembli igual — PhotoCream està pensat per això.
 
 - Fotografia i utilitat
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - App Store · Gratis
 
 [Descarrega PhotoCream a l'App Store →](https://apps.apple.com/es/app/id6781808054?pt=118326163&ct=iag_data_ca&mt=8)

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Dopo una chiamata non vuoi una trascrizione grezza — vuoi il riassunto, le azioni da fare e una bozza di follow-up — Sono Note è pensata per questo.
 
 - Produttività
-- Gratis per iniziare · sblocco permanente
+- Gratis per iniziare · sblocco unico
 - Privato / su dispositivo
 - App Store · Gratis
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Děti se nikdy nehýbou klidně, takže mírně rozostřené a roztřesené snímky jsou nevyhnutelné — Unblurry je na to stavěný.
 
 - Fotografie a nástroje
-- Zdarma na začátek · doživotní odemknutí
+- Zdarma na začátek
 - Soukromé / v zařízení
 - App Store · Zdarma
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pour libérer de l’espace rapidement, ciblez d’abord les plus gros gains : photos en double exactes, rafales quasi identiques, flous rejetés et vidéos volumineuses — PicClear vous aide à le faire sur votre iPhone.
 
 - Photo et utilitaire
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - Privé / sur l'appareil
 - App Store · Gratuit
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 G+Money Lite — Älykäs matkavaluutta- & kululaskuri Matkaraha, helposti Kirjaa jokainen osto paikallisessa valuutassa ja näe se heti omassa valuutassasi – verkossa tai offline. Muunna • Live- tai manuaaliset kurssit: Haemme uusimmat kurssit automaattisesti, tai aseta ne itse. Toimii aina offline. • Hakee uusimmat kurssit, kun avaat sovelluksen (noin 6 tunnin välein). Toimii offline-tilassa tallennetuilla kursseilla. • Keskikurssi viitteenä. Kortit ja käteinen voivat poiketa. Kulut • Päiväbudjetti: Valinnainen. Näe, miten kukin päivä on budjettiin nähden. • Luokittain · Matkat · Suodattimet · Merkinnät • Varmuuskopio & palautus: Sisältää kulut, kurssit, luokat ja asetukset. • Widget · Apple Watch Kaikki pysyy laitteellasi. Ei tiliä, ei seurantaa. Kurssit julkisesta valuuttapalvelusta. Ilmainen: kurssit, budjetti, yhteenveto · 1 matka · 3 kulua Yksi maksu · Elinikäinen käyttö · Ei tilausta Avaa rajattomat kulut ja matkat pysyvästi.
 
 - Raha & matkailu
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Offline
 - Ei tiliä
 - Ei seurantaa

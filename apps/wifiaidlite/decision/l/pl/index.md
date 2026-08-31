@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Znajdź prawdziwy problem. Każde narzędzie obejmuje jedno bezpłatne pełne użycie. Opcjonalne jednorazowe odblokowanie dożywotnie dla nieograniczonego użytku—bez subskrypcji, reklam i śledzenia. • Rozpocznij — Wi-Fi, DNS i internet za jednym kliknięciem • Deep Check — Więcej dowodów i stabilność • Sprawdź Stronę — Jedna strona lub cały internet • Dowody — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Połączenie jest niestabilne — Wahanie (Jitter) • Historia — Dane są przechowywane tylko na tym urządzeniu • Podłączony węzeł — Dokładna lokalizacja rozpoznaje Wi-Fi i bieżący węzeł Bez konta, reklam i śledzenia. Dane są przechowywane tylko na tym urządzeniu. Każde narzędzie obejmuje jedno bezpłatne pełne użycie. Opcjonalne jednorazowe odblokowanie dożywotnie dla nieograniczonego użytku—bez subskrypcji, reklam i śledzenia.
 
 - Więcej
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - Bez konta
 - App Store · Bezpłatnie
 

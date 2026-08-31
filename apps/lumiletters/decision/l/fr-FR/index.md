@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pour un jeune enfant, le critère décisif est l’absence de pub et de collecte de données — une appli éducative doit enseigner dans une boucle de jeu sans pub, sans collecte de données, avec un déblocage unique fiable pour les parents — Lumi Letters est conçue pour cela.
 
 - Enfants & apprentissage
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - Sans publicité
 - App Store · Gratuit
 

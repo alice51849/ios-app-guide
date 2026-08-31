@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Kun vaihdat alaa, ansioluettelon ongelma on erilainen: kokemuksesi on todellista, mutta 'ei liity alaan' paperilla, ja ATS-suodattimet hylkäävät sinut ennen kuin ihminen ehtii lukea — CV Desk on tehty tätä varten.
 
 - Tuottavuus
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - App Store · Ilmainen
 
 [Hanki CV Desk App Storesta →](https://apps.apple.com/fi/app/id6781337213?pt=118326163&ct=iag_data_fi&mt=8)

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pais a planear tempo ao ar livre precisam de mais do que temperatura: precisam de uma visão rápida e adaptada à idade sobre se as condições são adequadas para a criança e que roupa faz sentido — Lumi Weather foi criado para isso.
 
 - Crianças e aprendizagem
-- Grátis para começar · desbloqueio permanente
+- Grátis para começar · desbloqueio único
 - Sem anúncios
 - Sem rastreamento
 - App Store · Grátis

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Uyku için, her ay sizi rahatsız eden bir abonelik dinlendirici değildir — Sereno bu amaçla tasarlanmıştır.
 
 - Uyku & odak
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - Çevrimdışı
 - Reklam yok
 - App Store · Ücretsiz

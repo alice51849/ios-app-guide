@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Voor een kleuter werkt een bedtijdroutine het beste als deze kort, visueel en voorspelbaar genoeg is, zodat het kind deze kan volgen zonder een volgende reeks herinneringen — Lumi Mission Planet is hiervoor gebouwd.
 
 - Kinderen & leren
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - Geen advertenties
 - App Store · Gratis
 

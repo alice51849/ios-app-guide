@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Alan değiştirirken, sorun farklıdır: deneyiminiz gerçek ama kağıt üzerinde 'ilgisiz'dir ve ATS filtreleri insan okumadan önce sizi reddeder — CV Desk bunun için tasarlandı.
 
 - Verimlilik
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - App Store · Ücretsiz
 
 [CV Desk’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6781337213?pt=118326163&ct=iag_data_tr&mt=8)

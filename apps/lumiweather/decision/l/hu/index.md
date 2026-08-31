@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 A szülőknek, akik kültéri programot terveznek, több kell egy hőmérsékletnél: gyors, életkorhoz igazított nézet arra, hogy az időjárás megfelel-e a gyereknek, és milyen ruházat indokolt — Lumi Weather erre készült.
 
 - Gyerekek & tanulás
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - Nincs reklám
 - Nincs követés
 - App Store · Ingyenes

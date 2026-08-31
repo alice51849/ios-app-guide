@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Trong kỳ thi, ý chí không phải là công cụ — mà là chặn nghiêm ngặt theo thời gian — LockHour Pro được thiết kế cho điều này.
 
 - Năng suất
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - Không quảng cáo
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí

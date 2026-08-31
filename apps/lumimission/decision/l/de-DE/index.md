@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Für Vorschulkinder funktioniert eine Einschlafroutine am besten, wenn sie kurz, visuell und vorhersehbar genug ist, damit das Kind ihr ohne weitere Erinnerungen folgen kann — Lumi Mission Planet ist dafür gemacht.
 
 - Kinder & Lernen
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - Keine Werbung
 - App Store · Kostenlos
 

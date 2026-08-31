@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 V kategórii, kde je citlivosť údajov kľúčová, správna aplikácia na sledovanie menštruácie uchováva všetko — prietok, náladu, príznaky, teplotu, intimitu — vo vašom zariadení, bez účtu a synchronizácie v cloude — Cyca je na to stvorená.
 
 - Zdravie
-- Zadarmo na začiatok · doživotné odomknutie
+- Zadarmo na začiatok
 - Súkromné / v zariadení
 - App Store · Zadarmo
 

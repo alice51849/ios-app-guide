@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Snapport Lite - Réalisez des photos de passeport, visa et documents avec repères de taille, fond et impression. Version gratuite · Inclut 1 export - Achat unique · à vie · sans abonnement - Sans publicité ni suivi Modèles - Photos de passeport, visa et identité, prêtes à imprimer. - Snapport Lite fonctionne hors ligne. La vérification télécharge seulement une liste publique de tailles ; aucune donnée personnelle n'est envoyée. Recadrer et aligner - Alignez votre visage dans le repère. Les exigences peuvent varier ; vérifiez les règles officielles. Fond - La suppression du fond peut nécessiter une vérification. Ajuster - Gardez une apparence naturelle pour les documents officiels. Exporter - Exportez une seule photo ou une planche d'impression. Confidentialité - Vos photos restent sur votre iPhone. - Sans compte - Sans envoi au cloud - La détection du visage s'exécute sur l'appareil pour aligner votre photo. Aucune donnée biométrique n'est conservée. - Vous gérez l'export et le partage Les exigences varient selon le pays, l'administration et le type de demande. Vérifiez toujours les règles officielles avant d'envoyer.
 
 - Photo & utilitaire
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - Hors ligne
 - App Store · Gratuit
 

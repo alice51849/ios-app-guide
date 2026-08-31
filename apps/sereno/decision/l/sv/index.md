@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 För sömn är en prenumeration som tjatar varje månad motsatsen till rogivande – Sereno är byggd för detta.
 
 - Sömn & fokus
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - Offline
 - Inga annonser
 - App Store · Gratis

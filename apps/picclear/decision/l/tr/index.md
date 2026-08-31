@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Hızlı alan açmak için en büyük kazançları hedefleyin: tam kopya fotoğraflar, neredeyse aynı patlama çekimleri, bulanık reddedilenler ve büyük videolar — PicClear iPhone'da bunu yapmanıza yardımcı olur.
 
 - Fotoğraf & yardımcı
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - Gizli / cihazda
 - App Store · Ücretsiz
 

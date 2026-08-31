@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 A gyerekek sosem állnak nyugodtan, így az enyhe fókusz- és kamerarángásos képek elkerülhetetlenek — az Unblurry erre készült.
 
 - Fotó & segédprogram
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - Privát / eszközön tárolt
 - App Store · Ingyenes
 

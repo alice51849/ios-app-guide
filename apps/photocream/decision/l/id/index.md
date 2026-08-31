@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Kreator perjalanan membutuhkan tampilan film yang bisa diulang, menambah bintik film, halasi, dan karakter warna tanpa membuat semua destinasi jadi filter datar — PhotoCream dibuat untuk ini.
 
 - Foto & utilitas
-- Gratis untuk mulai · buka kunci permanen
+- Gratis untuk mulai · buka kunci sekali bayar
 - App Store · Gratis
 
 [Dapatkan PhotoCream di App Store →](https://apps.apple.com/id/app/id6781808054?pt=118326163&ct=iag_data_id&mt=8)

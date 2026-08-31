@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Jos skannaat potilaan suostumuslomakkeita, kotiutuspapereita tai lähetteitä, skannerin on säilytettävä ne laitteella — ei koskaan ladattava toisen pilveen — ScanTo Pro on tehty tätä varten.
 
 - Tuottavuus
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Yksityinen / laitteella
 - App Store · Ilmainen
 

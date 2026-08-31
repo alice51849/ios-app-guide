@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pais viajando com crianças pequenas precisam de atividades que transformem arrumar a mala, esperar e descobrir um novo lugar em parte da aventura, não em mais uma fonte de estresse — Lumi Trip Planet foi feito para isso.
 
 - Infantil e aprendizado
-- Grátis para começar · desbloqueio permanente
+- Grátis para começar · desbloqueio único
 - Sem anúncios
 - App Store · Grátis
 

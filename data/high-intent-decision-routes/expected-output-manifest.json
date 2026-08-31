@@ -19,7 +19,7 @@
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "cd44fff2fbe76c308beeeef09b383e0f9849564e555fafb1a8cc689b21241981",
+      "generated_sha256": "f028827817d4b198f68707926c0153f8c97995e9dde313e08db7df1d1f20272d",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -74,7 +74,7 @@
       "relative_path": "en-US/decide/gmoney/convert-and-log-travel-spending-offline.html"
     },
     {
-      "generated_sha256": "4942b7d4976fb38f087109f9221d119be5d6b881eab42877281352b8d53e13c0",
+      "generated_sha256": "2d4123824a0a119147c2f53ac5ee6c88c79f302f67c98d7e99330bb527399e07",
       "kind": "route_html",
       "relative_path": "en-US/decide/gmoneylite/test-multi-currency-trip-budget-free.html"
     },
@@ -179,7 +179,7 @@
       "relative_path": "en-US/decide/picclear/recover-storage-from-photo-clutter.html"
     },
     {
-      "generated_sha256": "70b63b2bc6e0da722d59679f05eb71a16b398fe071645deb0f2c51980935e7f0",
+      "generated_sha256": "90a3d677d74cf38ca2652fdce97af3e3cde3ae173692408e33502c9c663fb6b9",
       "kind": "route_html",
       "relative_path": "en-US/decide/savetag/turn-saved-links-into-a-readable-queue.html"
     },
@@ -292,7 +292,7 @@
     "public_apps": 46,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "ed089a899ad6ab70e649d5daafef470586a17bb444f7351808cc0563812a1f0f",
+  "manifest_digest": "7ac3a545976e2870546f68de48b68ec10f66306c5a3ec0f799b4e3b476b8d213",
   "owner": "high_intent_decision_routes",
   "release_contract_digest": "136c3abe602b72dd05bb82128743688b8b1b880fca570a2fa78ee26afc030e59",
   "release_state": "exact",
@@ -478,8 +478,8 @@
       "creative_id": "gmoneylite:test-multi-currency-trip-budget-free:workflow",
       "intent_type": "workflow",
       "locale": "en-US",
-      "output_sha256": "4942b7d4976fb38f087109f9221d119be5d6b881eab42877281352b8d53e13c0",
-      "record_digest": "eb5b3c1ef8d5752728d82239be547459aa334d172e94a023e7817be08b42019e",
+      "output_sha256": "2d4123824a0a119147c2f53ac5ee6c88c79f302f67c98d7e99330bb527399e07",
+      "record_digest": "f2c7736c7139502b8f30f0aa6d6269f50763f0f7b3aa9aafb4934d7c993c4d58",
       "relative_path": "en-US/decide/gmoneylite/test-multi-currency-trip-budget-free.html",
       "route_id": "en-US:gmoneylite:test-multi-currency-trip-budget-free",
       "route_slug": "test-multi-currency-trip-budget-free",
@@ -835,8 +835,8 @@
       "creative_id": "savetag:turn-saved-links-into-a-readable-queue:privacy_pay_once",
       "intent_type": "privacy_pay_once",
       "locale": "en-US",
-      "output_sha256": "70b63b2bc6e0da722d59679f05eb71a16b398fe071645deb0f2c51980935e7f0",
-      "record_digest": "0db1d4500a9a4b154cd575c87412fb2a76dab9cc1a355b87139370419643149c",
+      "output_sha256": "90a3d677d74cf38ca2652fdce97af3e3cde3ae173692408e33502c9c663fb6b9",
+      "record_digest": "4148a0cee049403f244220fa610e9d1b72936806a9e17992cf1b6bc341a37527",
       "relative_path": "en-US/decide/savetag/turn-saved-links-into-a-readable-queue.html",
       "route_id": "en-US:savetag:turn-saved-links-into-a-readable-queue",
       "route_slug": "turn-saved-links-into-a-readable-queue",
@@ -1168,5 +1168,5 @@
   ],
   "schema_version": 2,
   "site": "https://alice51849.github.io/ios-app-guide",
-  "source_contract_digest": "b72c86a0b40a268c0f92cb7cb28777a938f360639945e933d997272b4466bb56"
+  "source_contract_digest": "82130e1f39419a9f4b37adebde7bef946fd0d0ec9e5ced4b943faed8ca266281"
 }

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 As crianças nunca ficam quietas, por isso fotos com foco suave e tremor da câmara são inevitáveis — Unblurry foi criado para isso.
 
 - Fotografia e utilidade
-- Grátis para começar · desbloqueio permanente
+- Grátis para começar · desbloqueio único
 - Privado / no dispositivo
 - App Store · Grátis
 

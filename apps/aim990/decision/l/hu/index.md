@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Az 5. rész rövidnek tűnik, de az hiányos mondatos kérdések időt rabolhatnak, ha a nyelvtan és a szókincs nem automatikus.
 
 - Oktatás
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - App Store · Ingyenes
 
 [Szerezd be az Aim990-et az App Store-ból →](https://apps.apple.com/hu/app/id6784974530?pt=118326163&ct=iag_data_hu&mt=8)

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Rodzice planujący czas na dworze potrzebują czegoś więcej niż temperatury: potrzebują szybkiego, dostosowanego do wieku dziecka widoku, czy warunki są odpowiednie i jakie ubranie wybrać — Lumi Weather powstała właśnie do tego.
 
 - Dzieci i nauka
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - Bez reklam
 - Bez śledzenia
 - App Store · Bezpłatnie

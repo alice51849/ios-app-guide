@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Bir çağrı sonrası ham yazıya değil, özet, eylem maddeleri ve taslak takip e-postasına ihtiyacınız vardır — Sono Note bu amaçla tasarlanmıştır.
 
 - Verimlilik
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - Gizli / cihazda
 - App Store · Ücretsiz
 

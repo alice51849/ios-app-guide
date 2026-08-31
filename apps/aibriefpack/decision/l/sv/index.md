@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Bättre sammanhang. Bättre svar. Gör om skärmbilder, filer, anteckningar och dokument till ett tydligt AI-klart underlag. TA MED HELA SAMMANHANGET • Lägg till skärmbilder, PDF:er, filer, kopierad text, anteckningar eller länkar. Du väljer vad som stannar kvar i det slutliga underlaget. • OCR, PDF-läsning, dubblettkontroll, faktautvinning och sekretessdetektering använder Apple-ramverk lokalt. • Välj en eller flera källor ovan. Behandlingen börjar först när du fortsätter. VERIFIERA FAKTA INNAN AI SER DEM • Varje faktum behåller sin källa och säkerhet. Rätta allt som behöver sammanhang. • Hitta fakta, konflikter och öppna frågor • Kontrollera varje faktum, källa och tillförlitlighet innan AI:n ser det. SKYDDA SEKRETESSEN • Upptäckta uppgifter tas aldrig bort automatiskt. Behåll, ersätt eller ta bort varje objekt innan export. • Behåll, ersätt eller ta bort varje upptäckt. AI Brief lovar aldrig anonymitet. • Ersättningar och borttagningar tillämpas vid export. RENT SAMMANHANG FÖR VILKEN AI-ASSISTENT SOM HELST • Strukturerade rubriker och källklar formatering • Bygg sammanhang en gång. Återanvänd det när som helst. • Kopiera AI-underlag • Versionshistorik • Skräddarsydda mallar DITT SAMMANHANG FÖRBLIR PRIVAT • AI Brief innehåller inte tredjepartsannonser, spårning, analys eller innehållstelemetri. • Granska underlaget innan du skickar det till en AI-tjänst.
 
 - Produktivitet
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - Privat / på enheten
 - App Store · Gratis
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Durant els exàmens, la força de voluntat no és l’eina — un bloqueig ferm i temporitzat sí — LockHour Pro està dissenyat per això.
 
 - Productivitat
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - Sense anuncis
 - Privat / en el dispositiu
 - App Store · Gratis

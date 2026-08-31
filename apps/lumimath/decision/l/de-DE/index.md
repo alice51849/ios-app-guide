@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Die beste Mathe-App für Kinder trainiert logisches Denken – Muster, Reihenfolgen, räumliches Denken – nicht nur Rechenübungen, und verpackt das in ein Spiel, das das Kind gern spielt – Lumi Math Planet ist dafür gemacht.
 
 - Kinder & Lernen
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - Keine Werbung
 - App Store · Kostenlos
 

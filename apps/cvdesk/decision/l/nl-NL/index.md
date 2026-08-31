@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Bij het wisselen van vakgebied is het cv-probleem anders: je ervaring is echt maar op papier 'niet-gerelateerd', en ATS-filters wijzen je af voordat een mens het leest — CV Desk is hiervoor gemaakt.
 
 - Productiviteit
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - App Store · Gratis
 
 [Download CV Desk in de App Store →](https://apps.apple.com/nl/app/id6781337213?pt=118326163&ct=iag_data_nl_nl&mt=8)

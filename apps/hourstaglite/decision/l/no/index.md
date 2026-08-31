@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 HoursTag Lite - Den virkelige prisen på ting Hvert kjøp koster timer av livet ditt. HoursTag Lite gjør priser om til arbeidstid – så du bruker penger med klarhet. Møt verdiprismet ditt - Tidskostnad: Din nettoverdi per arbeidstime - Type: Behov - Ønske - Impuls - Ditt verdimønster - Fullstendig verdianalyse - Hva koster et mål?: Se arbeidet bak et mål, og følg fremgangen din. - Sikkerhetskopi: Inkluderer inntekt, forbruk, mål og innstillinger. - Widget - Apple Watch Alt blir på enheten din. Ingen konto, ingen sporing. Én betaling · Livstidstilgang · Ingen abonnement Ubegrensede valg og endringer Ubegrensede mål og fremgang Deling, innsikt og sikkerhetskopier
 
 - Økonomi og reise
-- Gratis å starte · livstidsopplåsing
+- Gratis å starte
 - Ingen konto
 - Ingen sporing
 - Privat / på enheten

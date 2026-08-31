@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Si planifiques un viatge proper, una línia de temps tranquil·la per a aquest viatge és més útil que un arxiu ple de tots els viatges que podries fer algun dia — TripBee Lite està pensat per això.
 
 - Viatges
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - App Store · Gratis
 
 [Descarrega TripBee Lite a l’App Store →](https://apps.apple.com/es/app/id6791299610?pt=118326163&ct=iag_data_ca&mt=8)

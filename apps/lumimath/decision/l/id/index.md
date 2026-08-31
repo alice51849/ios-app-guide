@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Aplikasi matematika anak terbaik melatih penalaran — pola, urutan, pemikiran spasial — bukan hanya latihan aritmatika, dan menyembunyikannya dalam game yang ingin dimainkan anak — Lumi Math Planet dibuat untuk ini.
 
 - Anak & pembelajaran
-- Gratis untuk mulai · buka kunci permanen
+- Gratis untuk mulai · buka kunci sekali bayar
 - Tanpa iklan
 - App Store · Gratis
 

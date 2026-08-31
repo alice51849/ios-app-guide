@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 När du byter bransch är CV-problemet annorlunda: din erfarenhet är verklig men 'orelaterad' på papper, och ATS-filter avvisar dig innan en människa läser det — CV Desk är byggd för detta.
 
 - Produktivitet
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - App Store · Gratis
 
 [Hämta CV Desk på App Store →](https://apps.apple.com/se/app/id6781337213?pt=118326163&ct=iag_data_sv&mt=8)

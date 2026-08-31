@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Per a un nen petit, el factor decisiu són els anuncis i la recollida de dades — una app educativa ha d’ensenyar dins d’un joc sense anuncis, sense recollida de dades i amb desbloqueig únic que els pares puguin confiar — Lumi Letters està feta per això.
 
 - Infants i aprenentatge
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - Sense anuncis
 - App Store · Gratis
 

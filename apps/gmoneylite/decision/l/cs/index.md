@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 G+Money Lite — Chytrý převodník měn a sledovač výdajů Cestovní peníze, jednoduše Zaznamenejte každý nákup v místní měně a ihned jej uvidíte ve své domácí měně — online nebo offline. Převést • Živé nebo manuální kurzy: Můžeme automaticky získat nejnovější kurzy, nebo si je můžete nastavit sami. Vždy funguje offline. • Získejte nejnovější kurzy při otevření aplikace (přibližně každých 6 hodin). Vždy funguje offline s vašimi uloženými kurzy. • Referenční středový kurz. Karty a hotovost se mohou lišit. Výdaje • Denní limit: Volitelné. Sledujte, jak se každý den držíte limitu. • Podle kategorie · Cesty · Filtry · Záznamy • Záloha a obnova: Zahrnuje výdaje, kurzy, kategorie a nastavení. • Widget · Apple Watch Všechno zůstává na vašem zařízení. Žádný účet, žádné sledování. Kurzy používají veřejnou službu směnných kurzů. Zdarma: kurzy, rozpočet, přehled · 1 cesta · 3 výdaje Jedna platba · Doživotní přístup · Bez předplatného Odemkněte navždy neomezené výdaje a cesty.
 
 - Finance a cestování
-- Zdarma na začátek · doživotní odemknutí
+- Zdarma na začátek
 - Offline
 - Bez účtu
 - Bez sledování

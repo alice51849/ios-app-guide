@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Đối với giấc ngủ, đăng ký hàng tháng gây phiền toái là điều ngược lại với sự thư giãn — Sereno được thiết kế cho điều này.
 
 - Giấc ngủ & tập trung
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - Ngoại tuyến
 - Không quảng cáo
 - App Store · Miễn phí

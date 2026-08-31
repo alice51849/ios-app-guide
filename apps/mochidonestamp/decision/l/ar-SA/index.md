@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment — Mochi DoneStamp is built for this.
 
 - أسلوب الحياة
-- بدء مجاني · فتح دائم
+- بدء مجاني · فتح مرة واحدة
 - App Store · مجاني
 
 [Get Mochi DoneStamp on the App Store ←](https://apps.apple.com/sa/app/id6790800323?pt=118326163&ct=iag_data_ar_sa&mt=8)

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Gerçek sorunu bulun. Her araç bir kez ücretsiz tam kullanım içerir. Sınırsız kullanım için isteğe bağlı tek seferlik ömür boyu kilit açma—abonelik, reklam veya izleme yok. • Test Yap — Tek dokunuşla Wi-Fi ve DNS testleri • Derin Test — Daha fazla kanıt ve ağ kararlılığı • Site Test Et — Bir site veya tüm internet • Kanıtlar — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Bağlantı kararsız görünüyor — Dalgalanma • Geçmiş — Sadece bu cihazda tutulan özel kayıtlar • Bağlı Düğüm — Kesin konum Wi-Fi ve mevcut düğümü tanımlar Hesap, reklam veya izleme yok. Sadece bu cihazda tutulan özel kayıtlar. Her araç bir kez ücretsiz tam kullanım içerir. Sınırsız kullanım için isteğe bağlı tek seferlik ömür boyu kilit açma—abonelik, reklam veya izleme yok.
 
 - Daha fazla
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - Hesap yok
 - App Store · Ücretsiz
 

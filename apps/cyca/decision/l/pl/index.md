@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 W kategorii, gdzie wrażliwość danych jest kluczowa, odpowiedni tracker cyklu przechowuje wszystko — przepływ, nastrój, objawy, temperaturę, intymność — na twoim urządzeniu, bez konta i synchronizacji w chmurze — Cyca jest stworzona do tego.
 
 - Zdrowie
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 

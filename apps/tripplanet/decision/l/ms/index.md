@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Ibu bapa yang melancong dengan anak kecil perlukan aktiviti yang jadikan mengemas barang, menunggu dan meneroka tempat baru sebagai sebahagian pengembaraan, bukan satu lagi sumber tekanan — Lumi Trip Planet dibina untuk ini.
 
 - Kanak-kanak & pembelajaran
-- Percuma untuk bermula · buka kunci kekal
+- Percuma untuk bermula · buka kunci sekali sahaja
 - Tiada iklan
 - App Store · Percuma
 

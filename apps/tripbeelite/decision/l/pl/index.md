@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Jeśli planujesz jedną nadchodzącą podróż, spokojna oś czasu dla tej wycieczki jest bardziej przydatna niż zatłoczony archiwum wszystkich podróży, które możesz kiedyś odbyć — TripBee Lite jest do tego stworzony.
 
 - Podróże
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - App Store · Bezpłatnie
 
 [Pobierz TripBee Lite w App Store →](https://apps.apple.com/pl/app/id6791299610?pt=118326163&ct=iag_data_pl&mt=8)

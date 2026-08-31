@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Dio 5 izgleda kratak, ali pitanja s nepotpunim rečenicama mogu oduzeti vrijeme ako gramatika i vokabular nisu automatski.
 
 - Obrazovanje
-- Besplatno za početak · doživotno otključavanje
+- Besplatno za početak
 - App Store · Besplatno
 
 [Preuzmite Aim990 u App Storeu →](https://apps.apple.com/hr/app/id6784974530?pt=118326163&ct=iag_data_hr&mt=8)

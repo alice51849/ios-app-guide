@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Si la plupart des applis de tâches vous semblent trop lourdes, la bonne est une liste propre avec rappels, règles de répétition et complication Watch — et volontairement sans gestion de projet — Mochi est conçue pour cela.
 
 - Productivité
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - Sans publicité
 - App Store · Gratuit
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 La Part 5 sembla curta, però les preguntes de frases incompletes poden consumir temps si la gramàtica i el vocabulari no són automàtics.
 
 - Educació
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - App Store · Gratis
 
 [Descarrega Aim990 a l'App Store →](https://apps.apple.com/es/app/id6784974530?pt=118326163&ct=iag_data_ca&mt=8)

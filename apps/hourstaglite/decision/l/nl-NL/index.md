@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 HoursTag Lite - De echte prijs van dingen Elke aankoop kost uren van je leven. HoursTag Lite zet prijzen om in werktijd, zodat je bewust uitgeeft. Ontdek jouw waardeprisma - Tijdskosten: Jouw nettowaarde per gewerkt uur - Type: Nodig - Wens - Impuls - Jouw waardepatroon - Volledige waarde-inzichten - Wat kost een doel?: Zie het werk achter een doel en volg je voortgang. - Back-up en herstel: Bevat inkomen, uitgaven, doelen en voorkeuren. - Widget - Apple Watch Alles blijft op je apparaat. Geen account, geen tracking. Eenmalige betaling · Levenslang · Geen abonnement Onbeperkte keuzes en wijzigingen Onbeperkte doelen en voortgang Delen, inzichten en back-ups
 
 - Geld & reizen
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - Geen account
 - Geen tracking
 - Privé / op apparaat

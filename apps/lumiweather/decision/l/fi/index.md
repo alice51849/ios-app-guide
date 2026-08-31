@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Vanhemmat tarvitsevat ulkoilun suunnitteluun enemmän kuin lämpötilan: he tarvitsevat nopean, ikätietoisen näkymän siitä, sopiiko sää lapselle ja mitkä vaatteet ovat järkeviä — Lumi Weather on tehty tätä varten.
 
 - Lapset & oppiminen
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Ei mainoksia
 - Ei seurantaa
 - App Store · Ilmainen

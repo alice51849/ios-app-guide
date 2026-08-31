@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Para un niño pequeño, lo decisivo son los anuncios y la recolección de datos — una app educativa debe enseñar dentro de un juego sin anuncios, sin recolección de datos y con desbloqueo único confiable — Lumi Letters está hecha para esto.
 
 - Niños y aprendizaje
-- Gratis para empezar · desbloqueo permanente
+- Gratis para empezar · desbloqueo único
 - Sin anuncios
 - App Store · Gratis
 

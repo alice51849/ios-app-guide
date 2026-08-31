@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Després d’una trucada no vols una transcripció en brut — vols el resum, els punts d’acció i un esborrany de seguiment — Sono Note està dissenyada per això.
 
 - Productivitat
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - Privat / en el dispositiu
 - App Store · Gratis
 

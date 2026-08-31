@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Để giải phóng nhanh, tập trung vào những thứ lớn nhất trước: ảnh trùng chính xác, ảnh chụp liên tiếp gần giống, ảnh mờ và video lớn — PicClear giúp bạn làm điều đó trên iPhone.
 
 - Ảnh & tiện ích
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 

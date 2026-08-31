@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pre predškoláka funguje večerná rutina najlepšie, keď je krátka, vizuálna a dostatočne predvídateľná, aby ju dieťa zvládlo bez ďalších pripomienok — Lumi Mission Planet je na to určená.
 
 - Deti a učenie
-- Zadarmo na začiatok · doživotné odomknutie
+- Zadarmo na začiatok
 - Bez reklám
 - App Store · Zadarmo
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Snapport Lite - Ota passin, viisumin ja asiakirjojen valokuvia ohjatulla koon säädöllä, taustatyökaluilla ja tulostukseen valmiilla viennillä. Ilmaisversio · Tukee 1 vientiä - Kertaostos · omasi ikuisesti · ei tilausta - Ei mainoksia, ei seurantaa Mallit - Passi-, viisumi- ja ID-valokuvat — tulostukseen valmiita. - Snapport Lite toimii täysin offline-tilassa. Tarkistaminen lataa vain julkisen luettelon yleisistä ko'oista — henkilökohtaisia tietoja ei lähetetä. Rajaa & Kohdista - Kohdista kasvosi ohjeen sisään. Vaatimukset voivat vaihdella, joten tarkista viralliset säännöt ennen lähettämistä. Tausta - Taustan poistaminen saattaa vaatia tarkistusta. Säädä - Pidä ulkonäkösi luonnollisena virallisissa asiakirjoissa. Vie - Vie yksi kuva tai tulostusarkki. Yksityisyys - Kuvasi pysyvät iPhonessasi. - Ei tiliä - Ei pilvitallennusta - Kasvojentunnistus toimii laitteella auttaakseen kohdistamaan kuvasi. Biometrisiä tietoja ei tallenneta. - Sinä hallitset vientiä ja jakamista Valokuvavaatimukset vaihtelevat maittain, virastoittain ja hakemustyypeittäin. Tarkista viralliset vaatimukset ennen lähettämistä.
 
 - Kuva & apuohjelma
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Offline
 - App Store · Ilmainen
 

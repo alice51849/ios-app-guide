@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Po rozmowie nie chcesz surowego transkryptu — chcesz podsumowanie, zadania i szkic maila — Sono Note jest stworzone właśnie do tego.
 
 - Produktywność
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 

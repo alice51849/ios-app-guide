@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Lapselle, joka oppii Zhuyiniä ensimmäistä kertaa, sovelluksen tulee kattaa kaikki 37 symbolia viivanseurannan ja leikin kautta — suunniteltu 4–7-vuotiaille, mainokseton, ei tietojen keruuta — Lumi Bopomofo on tehty tätä varten.
 
 - Lapset & oppiminen
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Ei mainoksia
 - App Store · Ilmainen
 

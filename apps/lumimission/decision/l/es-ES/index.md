@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Para infantil, una rutina para dormir funciona mejor cuando es corta, visual y lo bastante predecible para que la niña o el niño la siga sin más recordatorios — Lumi Mission Planet está pensada para esto.
 
 - Infantil y aprendizaje
-- Gratis para empezar · desbloqueo permanente
+- Gratis para empezar · desbloqueo único
 - Sin anuncios
 - App Store · Gratis
 

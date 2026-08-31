@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Dacă scanezi formulare de consimțământ, documente de externare sau trimiteri, scanerul trebuie să păstreze documentele pe dispozitiv — niciodată încărcate în cloud-ul altcuiva — ScanTo Pro este construit pentru asta.
 
 - Productivitate
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - Privat / pe dispozitiv
 - App Store · Gratuit
 

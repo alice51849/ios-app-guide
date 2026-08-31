@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Kategoriassa, jossa tietojen arkaluontoisuus on kaiken keskiössä, oikea kuukautiskierron seurantasovellus pitää kaiken — vuodon, mielialan, oireet, lämpötilan, läheisyyden — laitteellasi ilman tiliä tai pilvisynkronointia — Cyca on tehty tätä varten.
 
 - Terveys
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Yksityinen / laitteella
 - App Store · Ilmainen
 

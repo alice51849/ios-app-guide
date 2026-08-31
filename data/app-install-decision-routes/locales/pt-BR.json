@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "pt-BR",
   "dateModified": "2026-08-31",
-  "content_digest": "62b4c7adca57fcc7bace85883f82d839e3481d094135f769f32694f884f10b2c",
-  "generation_digest": "aab41b775fcd9834047296d9f70fe89d23a5c2f5df2d28f5897a360179b5a6aa",
+  "content_digest": "85b32c610fe6040bd313c8fca0a92af493c7144940280206022887cd5c90b248",
+  "generation_digest": "c05963eb487fc384a51a2d270335a83c48359ec1f8d26f89fab7df58a7e2f78d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -29,7 +29,7 @@
       "category": "photo-utility",
       "category_label": "Foto e utilidade",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -41,7 +41,7 @@
       "device_labels": [],
       "badge_labels": [
         "Foto e utilidade",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Privado / no dispositivo",
         "App Store · Grátis"
       ],
@@ -124,7 +124,7 @@
       "category": "lifestyle",
       "category_label": "Estilo de vida",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -132,7 +132,7 @@
       "device_labels": [],
       "badge_labels": [
         "Estilo de vida",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
@@ -169,7 +169,7 @@
       "category": "productivity",
       "category_label": "Produtividade",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -185,7 +185,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produtividade",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Offline",
         "Sem conta",
         "Privado / no dispositivo",
@@ -225,7 +225,7 @@
       "category": "productivity",
       "category_label": "Produtividade",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -237,7 +237,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produtividade",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Privado / no dispositivo",
         "App Store · Grátis"
       ],
@@ -275,7 +275,7 @@
       "category": "education",
       "category_label": "Educação",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -283,7 +283,7 @@
       "device_labels": [],
       "badge_labels": [
         "Educação",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -365,7 +365,7 @@
       "category": "utility",
       "category_label": "Mais",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -373,7 +373,7 @@
       "device_labels": [],
       "badge_labels": [
         "Mais",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/battai.html",
@@ -410,7 +410,7 @@
       "category": "utility",
       "category_label": "Mais",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -422,7 +422,7 @@
       ],
       "badge_labels": [
         "Mais",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Widget",
         "App Store · Grátis"
       ],
@@ -460,7 +460,7 @@
       "category": "productivity",
       "category_label": "Produtividade",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -468,7 +468,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produtividade",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -505,7 +505,7 @@
       "category": "health",
       "category_label": "Saúde",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -517,7 +517,7 @@
       "device_labels": [],
       "badge_labels": [
         "Saúde",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Privado / no dispositivo",
         "App Store · Grátis"
       ],
@@ -605,7 +605,7 @@
       "category": "kids",
       "category_label": "Infantil e aprendizado",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -613,7 +613,7 @@
       "device_labels": [],
       "badge_labels": [
         "Infantil e aprendizado",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/dailymatelite.html",
@@ -703,7 +703,7 @@
       "category": "finance",
       "category_label": "Dinheiro e viagem",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -727,7 +727,7 @@
       ],
       "badge_labels": [
         "Dinheiro e viagem",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Offline",
         "Sem conta",
         "Sem rastreamento",
@@ -823,7 +823,7 @@
       "category": "finance",
       "category_label": "Dinheiro e viagem",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
@@ -845,7 +845,7 @@
       ],
       "badge_labels": [
         "Dinheiro e viagem",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Sem conta",
         "Sem rastreamento",
         "Privado / no dispositivo",
@@ -887,7 +887,7 @@
       "category": "productivity",
       "category_label": "Produtividade",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -901,7 +901,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produtividade",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Sem anúncios",
         "Privado / no dispositivo",
         "App Store · Grátis"
@@ -940,7 +940,7 @@
       "category": "kids",
       "category_label": "Infantil e aprendizado",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -952,7 +952,7 @@
       "device_labels": [],
       "badge_labels": [
         "Infantil e aprendizado",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Sem anúncios",
         "App Store · Grátis"
       ],
@@ -1040,7 +1040,7 @@
       "category": "kids",
       "category_label": "Infantil e aprendizado",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1052,7 +1052,7 @@
       "device_labels": [],
       "badge_labels": [
         "Infantil e aprendizado",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Sem anúncios",
         "App Store · Grátis"
       ],
@@ -1140,7 +1140,7 @@
       "category": "kids",
       "category_label": "Infantil e aprendizado",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1152,7 +1152,7 @@
       "device_labels": [],
       "badge_labels": [
         "Infantil e aprendizado",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Sem anúncios",
         "App Store · Grátis"
       ],
@@ -1240,7 +1240,7 @@
       "category": "kids",
       "category_label": "Infantil e aprendizado",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1252,7 +1252,7 @@
       "device_labels": [],
       "badge_labels": [
         "Infantil e aprendizado",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Sem anúncios",
         "App Store · Grátis"
       ],
@@ -1340,7 +1340,7 @@
       "category": "kids",
       "category_label": "Infantil e aprendizado",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1352,7 +1352,7 @@
       "device_labels": [],
       "badge_labels": [
         "Infantil e aprendizado",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Sem anúncios",
         "App Store · Grátis"
       ],
@@ -1390,7 +1390,7 @@
       "category": "kids",
       "category_label": "Infantil e aprendizado",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -1404,7 +1404,7 @@
       "device_labels": [],
       "badge_labels": [
         "Infantil e aprendizado",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Sem anúncios",
         "Sem rastreamento",
         "App Store · Grátis"
@@ -1443,7 +1443,7 @@
       "category": "productivity",
       "category_label": "Produtividade",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1455,7 +1455,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produtividade",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Sem anúncios",
         "App Store · Grátis",
         "★ 5.0/5 · 1"
@@ -1496,7 +1496,7 @@
       "category": "finance",
       "category_label": "Dinheiro e viagem",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -1522,7 +1522,7 @@
       ],
       "badge_labels": [
         "Dinheiro e viagem",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Offline",
         "Sem conta",
         "Sem anúncios",
@@ -1566,7 +1566,7 @@
       "category": "productivity",
       "category_label": "Produtividade",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1574,7 +1574,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produtividade",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/onepageppt.html",
@@ -1611,7 +1611,7 @@
       "category": "photo-utility",
       "category_label": "Foto e utilidade",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1619,7 +1619,7 @@
       "device_labels": [],
       "badge_labels": [
         "Foto e utilidade",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -1656,7 +1656,7 @@
       "category": "photo-utility",
       "category_label": "Foto e utilidade",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1668,7 +1668,7 @@
       "device_labels": [],
       "badge_labels": [
         "Foto e utilidade",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Privado / no dispositivo",
         "App Store · Grátis"
       ],
@@ -1706,7 +1706,7 @@
       "category": "productivity",
       "category_label": "Produtividade",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1714,7 +1714,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produtividade",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/savetag.html",
@@ -1751,7 +1751,7 @@
       "category": "productivity",
       "category_label": "Produtividade",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1763,7 +1763,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produtividade",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Privado / no dispositivo",
         "App Store · Grátis"
       ],
@@ -1801,7 +1801,7 @@
       "category": "sleep-sound",
       "category_label": "Sono e foco",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -1815,7 +1815,7 @@
       "device_labels": [],
       "badge_labels": [
         "Sono e foco",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Offline",
         "Sem anúncios",
         "App Store · Grátis"
@@ -1854,7 +1854,7 @@
       "category": "photo-utility",
       "category_label": "Foto e utilidade",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1862,7 +1862,7 @@
       "device_labels": [],
       "badge_labels": [
         "Foto e utilidade",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/shotinbox.html",
@@ -1949,7 +1949,7 @@
       "category": "photo-utility",
       "category_label": "Foto e utilidade",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -1961,7 +1961,7 @@
       "device_labels": [],
       "badge_labels": [
         "Foto e utilidade",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Offline",
         "App Store · Grátis"
       ],
@@ -1999,7 +1999,7 @@
       "category": "productivity",
       "category_label": "Produtividade",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -2011,7 +2011,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produtividade",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Privado / no dispositivo",
         "App Store · Grátis"
       ],
@@ -2049,7 +2049,7 @@
       "category": "travel",
       "category_label": "Viagem",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -2057,7 +2057,7 @@
       "device_labels": [],
       "badge_labels": [
         "Viagem",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "App Store · Grátis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -2150,7 +2150,7 @@
       "category": "photo-utility",
       "category_label": "Foto e utilidade",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -2162,7 +2162,7 @@
       "device_labels": [],
       "badge_labels": [
         "Foto e utilidade",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Privado / no dispositivo",
         "App Store · Grátis"
       ],
@@ -2200,7 +2200,7 @@
       "category": "utility",
       "category_label": "Mais",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "no_account"
@@ -2212,7 +2212,7 @@
       "device_labels": [],
       "badge_labels": [
         "Mais",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Sem conta",
         "App Store · Grátis"
       ],
@@ -2250,7 +2250,7 @@
       "category": "kids",
       "category_label": "Infantil e aprendizado",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Grátis para começar · desbloqueio permanente",
+      "purchase_label": "Grátis para começar · desbloqueio único",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -2262,7 +2262,7 @@
       "device_labels": [],
       "badge_labels": [
         "Infantil e aprendizado",
-        "Grátis para começar · desbloqueio permanente",
+        "Grátis para começar · desbloqueio único",
         "Offline",
         "App Store · Grátis"
       ],

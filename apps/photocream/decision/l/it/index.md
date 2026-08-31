@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 I creator di viaggio cercano un look pellicola ripetibile che aggiunga grana, halation e carattere cromatico senza appiattire ogni destinazione — PhotoCream è pensato per questo.
 
 - Foto e utilità
-- Gratis per iniziare · sblocco permanente
+- Gratis per iniziare · sblocco unico
 - App Store · Gratis
 
 [Scarica PhotoCream su App Store →](https://apps.apple.com/it/app/id6781808054?pt=118326163&ct=iag_data_it&mt=8)

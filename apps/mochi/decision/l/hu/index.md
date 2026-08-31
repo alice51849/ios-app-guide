@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Ha a legtöbb teendőlista alkalmazás túlterheltnek tűnik, a megfelelő egy tiszta ellenőrzőlista emlékeztetőkkel, ismétlődési szabályokkal és Watch komplikációval — és szándékosan nincs projektmenedzsment funkció — a Mochi erre készült.
 
 - Produktivitás
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - Nincs reklám
 - App Store · Ingyenes
 

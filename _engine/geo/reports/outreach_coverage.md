@@ -17,16 +17,16 @@ Public apps: **46** · Average coverage: **100.0%**
 | DailyMate | 100.0% | 25/25 | 3 | 5 | hub / guide / story |
 | DailyMate Lite | 100.0% | 17/17 | 3 | 5 | hub / guide / story |
 | G+Money | 100.0% | 51/51 | 4 | 5 | hub / guide / story |
-| G+Money Lite | 100.0% | 19/19 | 3 | 5 | hub / guide / story |
+| G+Money Lite | 100.0% | 21/21 | 3 | 5 | hub / guide / story |
 | HoursTag Lite | 100.0% | 17/17 | 3 | 5 | hub / guide / story |
 | HoursTag: Hours to Buy | 100.0% | 34/34 | 3 | 5 | hub / guide / story |
 | LockHour Pro | 100.0% | 50/50 | 6 | 5 | hub / guide / story |
-| Lumi Bopomofo | 100.0% | 78/78 | 5 | 5 | hub / guide / story |
-| Lumi Bopomofo Pro | 100.0% | 86/86 | 3 | 5 | hub / guide / story |
+| Lumi Bopomofo | 100.0% | 80/80 | 5 | 5 | hub / guide / story |
+| Lumi Bopomofo Pro | 100.0% | 88/88 | 3 | 5 | hub / guide / story |
 | Lumi Letters | 100.0% | 44/44 | 3 | 5 | hub / guide / story |
 | Lumi Letters Pro | 100.0% | 52/52 | 3 | 5 | hub / guide / story |
-| Lumi Math Planet | 100.0% | 43/43 | 3 | 5 | hub / guide / story |
-| Lumi Math Pro | 100.0% | 49/49 | 3 | 5 | hub / guide / story |
+| Lumi Math Planet | 100.0% | 44/44 | 3 | 5 | hub / guide / story |
+| Lumi Math Pro | 100.0% | 51/51 | 3 | 5 | hub / guide / story |
 | Lumi Mission Planet | 100.0% | 41/41 | 3 | 5 | hub / guide / story |
 | Lumi Mission Planet Pro | 100.0% | 47/47 | 3 | 5 | hub / guide / story |
 | Lumi Trip Planet | 100.0% | 37/37 | 3 | 5 | hub / guide / story |
@@ -45,7 +45,7 @@ Public apps: **46** · Average coverage: **100.0%**
 | Snapport | 100.0% | 154/154 | 9 | 5 | hub / guide / story |
 | Snapport Lite | 100.0% | 17/17 | 3 | 5 | hub / guide / story |
 | Sono Note | 100.0% | 57/57 | 3 | 5 | hub / guide / story |
-| TripBee Lite | 100.0% | 25/25 | 3 | 5 | hub / guide / story |
+| TripBee Lite | 100.0% | 27/27 | 3 | 5 | hub / guide / story |
 | TripBee Pro: Trip Planner | 100.0% | 51/51 | 5 | 5 | hub / guide / story |
 | Unblurry | 100.0% | 52/52 | 9 | 5 | hub / guide / story |
 | WiFi Aid | 100.0% | 16/16 | 3 | 5 | hub / guide / story |

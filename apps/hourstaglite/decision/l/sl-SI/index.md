@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 HoursTag Lite - Oglejte si pravo ceno stvari Vsak nakup stane ure vašega življenja. HoursTag Lite pretvarja cene v delovni čas — tako porabite s jasnostjo. Spoznajte svojo prizmo vrednosti - Cena v času: Vaša neto vrednost na uro dela - Vrsta: Potrebujem - Želim - Impulz - Vaš vzorec vrednosti - Popolna analiza vrednosti - Koliko bo stal cilj?: Oglejte si delo za ciljem — in spremljajte svoj napredek. - Varnostno kopiranje in obnova: Vključuje dohodek, porabo, cilje in nastavitve. - Widget - Apple Watch Vse ostane na vaši napravi. Brez računa, brez sledenja. Eno plačilo · Doživljenjski dostop · Brez naročnine Neomejene odločitve in urejanje Neomejeni cilji in napredek Deljenje, analiza in varnostne kopije
 
 - Denar in potovanja
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - Brez računa
 - Brez sledenja
 - Zasebno / na napravi

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Om de flesta att-göra-appar känns överlastade är rätt app en ren checklista med påminnelser, upprepningsregler och en Watch-komplikation – och medvetet utan projektledningsmaskineri – Mochi är byggd för detta.
 
 - Produktivitet
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - Inga annonser
 - App Store · Gratis
 

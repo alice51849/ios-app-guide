@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Bedre kontekst. Bedre svar. Gjør skjermbilder, filer, notater og dokumenter om til én tydelig AI-klar oppsummering. TA MED HELE KONTEKSTEN • Legg til skjermbilder, PDF-er, filer, kopiert tekst, notater eller lenker. Du velger hva som beholdes i den endelige oppsummeringen. • OCR, PDF-lesing, duplikatkontroller, faktauttrekk og personverndeteksjon bruker Apple-rammeverk lokalt. • Velg en eller flere kilder ovenfor. Behandlingen begynner først når du fortsetter. VERIFISER FAKTA FØR AI SER DEM • Hvert faktum beholder sin kilde og konfidens. Korriger alt som trenger mer kontekst. • Finn fakta, konflikter og åpne spørsmål • Kontroller hvert faktum, hver kilde og grad av sikkerhet før AI-en ser det. BESKYTT PERSONVERN • Oppdagede detaljer fjernes aldri automatisk. Behold, erstatt eller fjern hvert element før eksport. • Behold, erstatt eller fjern hver oppdagelse. AI Brief lover aldri anonymitet. • Erstatninger og fjerninger utføres ved eksport. REN KONTEKST FOR ENHVER AI-ASSISTENT • Strukturerte overskrifter og kildeklar formatering • Bygg kontekst én gang. Bruk den når som helst. • Kopier AI-oppsummering • Versjonshistorie • Skreddersydde maler KONTEKSTEN DIN FORBLIR PRIVAT. • AI Brief inkluderer ikke tredjepartsannonser, sporing, analyse eller telemetri om innhold. • Se over oppsummeringen før du sender den til en AI-tjeneste.
 
 - Produktivitet
-- Gratis å starte · livstidsopplåsing
+- Gratis å starte
 - Privat / på enheten
 - App Store · Gratis
 

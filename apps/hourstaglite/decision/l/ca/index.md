@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 HoursTag Lite - Veure el preu real de les coses Cada compra costa hores de la teva vida. HoursTag Lite transforma els preus en temps de treball — així pots gastar amb claredat. Descobreix el teu prisma de valor - Cost en temps: El teu valor net per hora treballada - Tipus: Necessitat - Desig - Impuls - El teu patró de valor - Anàlisi completa de valor - Quin cost tindrà un objectiu?: Veure el treball darrere d'un objectiu — i seguir el teu progrés. - Còpia de seguretat i restauració: Inclou ingressos, despeses, objectius i preferències. - Widget - Apple Watch Tot es queda al teu dispositiu. Sense compte, sense seguiment. Un sol pagament · Accés de per vida · Sense subscripció Decisions i edicions il·limitades Objectius i progrés il·limitats Compartir, anàlisi i còpies
 
 - Diners i viatges
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - Sense compte
 - Sense seguiment
 - Privat / en el dispositiu

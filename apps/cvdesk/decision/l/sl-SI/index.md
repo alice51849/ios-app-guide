@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Ko menjate področje, je problem življenjepisa drugačen: vaše izkušnje so resnične, a na papirju 'nepovezane', ATS filtri pa vas zavrnejo, preden jih pregleda človek — CV Desk je narejen za to.
 
 - Produktivnost
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - App Store · Brezplačno
 
 [Prenesite CV Desk v App Store →](https://apps.apple.com/si/app/id6781337213?pt=118326163&ct=iag_data_sl_si&mt=8)

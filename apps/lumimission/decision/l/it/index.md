@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Per un bambino in età prescolare, una routine della buonanotte funziona meglio se è breve, visiva e prevedibile abbastanza da essere seguita senza ulteriori richiami — Lumi Mission Planet è pensata per questo.
 
 - Bambini e apprendimento
-- Gratis per iniziare · sblocco permanente
+- Gratis per iniziare · sblocco unico
 - Nessuna pubblicità
 - App Store · Gratis
 

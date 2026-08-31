@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Em uma categoria onde a sensibilidade dos dados é tudo, o rastreador certo mantém tudo — fluxo, humor, sintomas, temperatura, intimidade — no seu dispositivo, sem conta e sem sincronização na nuvem — Cyca foi feito para isso.
 
 - Saúde
-- Grátis para começar · desbloqueio permanente
+- Grátis para começar · desbloqueio único
 - Privado / no dispositivo
 - App Store · Grátis
 

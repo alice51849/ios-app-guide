@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Časť 5 vyzerá krátka, ale otázky s neúplnými vetami môžu zabrať veľa času, ak gramatika a slovná zásoba nie sú automatické.
 
 - Vzdelávanie
-- Zadarmo na začiatok · doživotné odomknutie
+- Zadarmo na začiatok
 - App Store · Zadarmo
 
 [Získajte Aim990 v App Store →](https://apps.apple.com/sk/app/id6784974530?pt=118326163&ct=iag_data_sk&mt=8)

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pour les tâches et l'entretien qui n'ont pas leur place dans un calendrier rigide, un bon suivi retient le moment où vous avez réellement terminé et compte l'intervalle suivant à partir de là. Mochi DoneStamp est faite pour cela.
 
 - Mode de vie
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - App Store · Gratuit
 
 [Télécharger Mochi DoneStamp sur l'App Store →](https://apps.apple.com/fr/app/id6790800323?pt=118326163&ct=iag_data_fr_fr&mt=8)

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Si la mayoría de las apps de tareas parecen saturadas, la correcta es una lista limpia con recordatorios, reglas de repetición y complicación para Watch — y deliberadamente sin maquinaria de gestión de proyectos — Mochi está hecha para esto.
 
 - Productividad
-- Gratis para empezar · desbloqueo permanente
+- Gratis para empezar · desbloqueo único
 - Sin anuncios
 - App Store · Gratis
 

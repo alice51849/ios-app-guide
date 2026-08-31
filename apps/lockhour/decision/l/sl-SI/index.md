@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Med izpiti volja ni orodje — trda časovno omejena blokada je — LockHour Pro je narejen za to.
 
 - Produktivnost
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - Brez oglasov
 - Zasebno / na napravi
 - App Store · Brezplačno

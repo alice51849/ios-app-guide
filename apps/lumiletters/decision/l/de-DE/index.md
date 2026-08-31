@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Für kleine Kinder sind Werbung und Datenerfassung entscheidend – eine Lern-App sollte in einer Spielschleife ohne Werbung, ohne Datensammlung vom Kind und mit einer vertrauenswürdigen einmaligen Freischaltung lehren – Lumi Letters ist dafür gemacht.
 
 - Kinder & Lernen
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - Keine Werbung
 - App Store · Kostenlos
 

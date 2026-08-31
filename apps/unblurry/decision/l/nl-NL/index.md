@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Kinderen blijven nooit stilzitten, dus zachte focus en cameratrilling zijn onvermijdelijk — Unblurry is hiervoor gemaakt.
 
 - Foto & hulpmiddel
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - Privé / op apparaat
 - App Store · Gratis
 

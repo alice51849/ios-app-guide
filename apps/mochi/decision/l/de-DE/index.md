@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Wenn sich die meisten To-Do-Apps aufgebläht anfühlen, ist die richtige eine saubere Checkliste mit Erinnerungen, Wiederholungsregeln und einer Watch-Komplikation – und bewusst ohne Projektmanagement-Funktionen – Mochi ist dafür gemacht.
 
 - Produktivität
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - Keine Werbung
 - App Store · Kostenlos
 - ★ 5.0/5 · 1

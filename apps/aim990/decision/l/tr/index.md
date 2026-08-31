@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Bölüm 5 kısa görünebilir, ancak tamamlanmamış cümle soruları, dilbilgisi ve kelime bilgisi otomatik değilse zaman kaybettirebilir.
 
 - Eğitim
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - App Store · Ücretsiz
 
 [Aim990’ı App Store’dan edinin →](https://apps.apple.com/tr/app/id6784974530?pt=118326163&ct=iag_data_tr&mt=8)

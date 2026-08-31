@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context — Mask My File is built for this.
 
 - 写真・ユーティリティ
-- 無料で開始・買い切りで永久解除
+- 無料で開始・一度の購入でアンロック
 - プライベート／端末内
 - App Store · 無料
 

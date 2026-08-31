@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Na rýchle uvoľnenie miesta sa zamerajte najprv na najväčšie úspory: presné duplikáty, takmer identické sériové zábery, rozmazané odmietnuté a veľké videá — PicClear vám pomôže na iPhone.
 
 - Fotografia a nástroje
-- Zadarmo na začiatok · doživotné odomknutie
+- Zadarmo na začiatok
 - Súkromné / v zariadení
 - App Store · Zadarmo
 

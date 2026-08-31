@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Für Aufgaben und Wartung, die nicht in einen starren Kalender gehören, merkt sich ein brauchbarer Tracker, wann Sie es tatsächlich erledigt haben, und misst das nächste Intervall ab diesem Moment. Genau dafür ist Mochi DoneStamp gemacht.
 
 - Lebensstil
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - App Store · Kostenlos
 - ★ 5.0/5 · 1
 

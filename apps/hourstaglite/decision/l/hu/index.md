@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 HoursTag Lite - Lásd a dolgok valódi árát Minden vásárlás órákat vesz el az életedből. Az HoursTag Lite átalakítja az árakat munkai idővé — így világosan költhetsz. Ismerd meg az értékprizmádat - Időköltség: Nettó értéked munkaóránként - Típus: Szükség - Akar - Impulzus - Az értékmintád - Teljes értékelemzés - Mennyibe fog kerülni egy cél?: Lásd a munkát egy cél mögött — és kövesd a fejlődésed. - Biztonsági mentés & visszaállítás: Tartalmazza a jövedelmet, kiadásokat, célokat és beállításokat. - Widget - Apple Watch Minden az eszközödön marad. Nincs fiók, nincs nyomkövetés. Egyszeri fizetés · Élethosszig · Nincs előfizetés Korlátlan döntések és szerkesztések Korlátlan célok és haladás Megosztás, elemzés és mentések
 
 - Pénzügy & utazás
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - Nincs fiók
 - Nincs követés
 - Privát / eszközön tárolt

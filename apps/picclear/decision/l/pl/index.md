@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Aby szybko zwolnić miejsce, najpierw usuń największe pliki: dokładne duplikaty zdjęć, niemal identyczne zdjęcia seryjne, rozmazane odrzucone i duże filmy — PicClear pomaga to zrobić na iPhonie.
 
 - Zdjęcia i narzędzia
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 BattAI BattAI gebruikt vijf waarden uit openbare iOS-API’s: batterijniveau, laadstatus, Energiebesparing, warmtestatus van het hele toestel en tijd. Andere resultaten worden uit die metingen berekend of door jou toegevoegd. Elk detail toont bron en grenzen. Conditie • Batterijconditiescore • Wat de score bepaalt • Maximale capaciteit door de tijd • Maximale capaciteit • Cycli Opladen • Zorgvuldig laden • Laadbereik • Laadsnelheid Gegevens exporteren • Maak een bestand op dit toestel. Niets wordt geüpload. • Op dit toestel gemaakt. Er wordt niets geüpload. Privacy • Geen advertenties, analyses, tracking, SDK’s van derden of internetverzoeken. Gegevens blijven hier, behalve een minimale momentopname rechtstreeks naar de gekoppelde Apple Watch. • BattAI leest alleen de cyclusteller, nominale laadcapaciteit en ontwerpcapaciteit. Andere bestandsgegevens worden direct gewist en nooit bewaard of verzonden. Begrijp je batterij door de tijd • Ontgrendel meer geschiedenis, planning en rapporten. • Eén betaling. Geen abonnement.
 
 - Meer
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - App Store · Gratis
 
 [Download BattAI: Batterijconditiescore in de App Store](https://apps.apple.com/nl/app/id6802423998?pt=118326163&ct=iag_data_nl_nl&mt=8)

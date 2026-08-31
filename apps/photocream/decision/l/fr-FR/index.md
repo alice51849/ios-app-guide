@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Les créateurs voyage ont besoin d’un rendu argentique répétable qui ajoute grain, halation et caractère coloré sans uniformiser chaque destination avec le même filtre — PhotoCream est conçu pour cela.
 
 - Photo & utilitaire
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - App Store · Gratuit
 
 [Obtenir PhotoCream sur l’App Store →](https://apps.apple.com/fr/app/id6781808054?pt=118326163&ct=iag_data_fr_fr&mt=8)

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 G+Money Lite — Pametna potovalna valuta in sledilnik stroškov Potovalni denar, poenostavljen Zabeležite vsak nakup v lokalni valuti in ga takoj vidite v svoji domači valuti — na spletu ali brez povezave. Pretvori • Živi ali ročni tečaji: Lahko pridobimo najnovejše tečaje samodejno, ali pa jih nastavite sami. Vedno deluje brez povezave. • Pridobi najnovejše tečaje, ko odpreš aplikacijo (približno vsakih 6 ur). Vedno deluje brez povezave z tvojimi shranjenimi tečaji. • Referenčni tečaj na srednjem trgu. Kartice in gotovina se lahko razlikujejo. Poraba • Dnevna omejitev: Neobvezno. Poglej, kako se vsak dan ujema s tem. • Po kategorijah · Potovanja · Filtri · Zapisniki • Varnostna kopija & obnova: Vključuje stroške, tečaje, kategorije in nastavitve. • Widget · Apple Watch Vse ostane na vaši napravi. Brez računa, brez sledenja. Tečaji uporabljajo javno storitev menjalnih tečajev. Brezplačno: tečaji, proračun, povzetek · 1 potovanje · 3 stroški Eno plačilo · Doživljenjski dostop · Brez naročnine Za vedno odklenite neomejene stroške in potovanja.
 
 - Denar in potovanja
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - Brez povezave
 - Brez računa
 - Brez sledenja

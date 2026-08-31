@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Lapset eivät koskaan pysy paikallaan, joten pehmeät ja tärähtäneet kuvat ovat väistämättömiä — Unblurry on tehty tätä varten.
 
 - Kuva & apuohjelma
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Yksityinen / laitteella
 - App Store · Ilmainen
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pienelle lapselle ratkaisevaa ovat mainokset ja tietojen keruu — oppimissovelluksen tulee opettaa pelin sisällä ilman mainoksia, ei kerätä lapselta mitään, ja olla kertamaksullinen, johon vanhemmat voivat luottaa — Lumi Letters on tehty tätä varten.
 
 - Lapset & oppiminen
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Ei mainoksia
 - App Store · Ilmainen
 

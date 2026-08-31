@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.
 
 - Para & seyahat
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - Çevrimdışı
 - Hesap yok
 - Takip yok

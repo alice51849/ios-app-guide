@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Poišči pravo težavo. Vsako orodje vključuje eno brezplačno popolno uporabo. Izbirno enkratno doživljenjsko odklepanje za neomejeno uporabo—brez naročnine, oglasov ali sledenja. • Začni Test — Wi-Fi, DNS in internet z enim dotikom • Deep Check — Več dokazov in stabilnost • Preveri Stran — Ena stran ali celoten splet • Dokazi — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Povezava je nestabilna — Nihanje (Jitter) • Zgodovina Testov — Podatki ostanejo samo na tej napravi • Povezano vozlišče — Lokacija se uporablja samo za prikaz Wi-Fi imena. Brez računov, oglasov ali sledenja. Podatki ostanejo samo na tej napravi. Vsako orodje vključuje eno brezplačno popolno uporabo. Izbirno enkratno doživljenjsko odklepanje za neomejeno uporabo—brez naročnine, oglasov ali sledenja.
 
 - Več
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - Brez računa
 - App Store · Brezplačno
 

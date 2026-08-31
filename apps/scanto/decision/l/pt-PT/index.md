@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Se digitaliza formulários de consentimento, alta hospitalar ou encaminhamentos, o scanner tem de manter esses documentos no dispositivo — nunca carregados para a cloud de terceiros — o ScanTo Pro foi criado para isso.
 
 - Produtividade
-- Grátis para começar · desbloqueio permanente
+- Grátis para começar · desbloqueio único
 - Privado / no dispositivo
 - App Store · Grátis
 

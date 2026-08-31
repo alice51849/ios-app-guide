@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 In een categorie waar gegevensgevoeligheid centraal staat, houdt de juiste menstruatie-app alles bij — vloei, stemming, symptomen, temperatuur, intimiteit — op je apparaat, zonder account en zonder cloud-synchronisatie — Cyca is hiervoor gemaakt.
 
 - Gezondheid
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - Privé / op apparaat
 - App Store · Gratis
 

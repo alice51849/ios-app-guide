@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Para dormir, uma assinatura que incomoda todo mês é o oposto de relaxante — Sereno foi feito para isso.
 
 - Sono e foco
-- Grátis para começar · desbloqueio permanente
+- Grátis para começar · desbloqueio único
 - Offline
 - Sem anúncios
 - App Store · Grátis

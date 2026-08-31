@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Dacă planifici o singură călătorie viitoare, o cronologie liniștită pentru acea călătorie este mai utilă decât o arhivă aglomerată cu toate călătoriile pe care le-ai putea face vreodată — TripBee Lite este creat pentru asta.
 
 - Călătorii
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - App Store · Gratuit
 
 [Obține TripBee Lite din App Store →](https://apps.apple.com/ro/app/id6791299610?pt=118326163&ct=iag_data_ro&mt=8)

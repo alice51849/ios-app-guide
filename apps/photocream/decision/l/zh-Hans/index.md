@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 旅行创作者需要可重复的胶片风格，能添加颗粒、光晕和色彩特征，而不会让每个目的地都变成同一种平淡滤镜——PhotoCream专为此打造。
 
 - 照片与工具
-- 免费开始使用 · 永久解锁
+- 免费开始使用 · 一次性解锁
 - App Store · 免费
 
 [在App Store获取PhotoCream →](https://apps.apple.com/cn/app/id6781808054?pt=118326163&ct=iag_data_zh_hans&mt=8)

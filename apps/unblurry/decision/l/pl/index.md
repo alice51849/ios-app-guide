@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Dzieci nigdy nie stoją nieruchomo, więc rozmycia i poruszenia są nieuniknione — Unblurry jest stworzone właśnie do tego.
 
 - Zdjęcia i narzędzia
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Vaši posnetki, urejeni Poiščite, uredite in počistite vsak posnetek. Najnovejših 50 posnetkov zaslona vključuje celoten osnovni potek brezplačno. Organizacija • Nakupi · Računi · Potovanja · Vozovnice · Zemljevidi in kraji · Klepeti in družabno · Delo · Študij · Recepti in hrana · Navdih · QR in kode · Napake in tehnika · Občutljivo • Išči besedilo, kategorije, povezave… • Zaznani dogodki in opomniki, razvrščeni po času. • Odpri v Zemljevidih · Odpri povezavo · Kopiraj besedilo · Odpri kodo · Pokliči številko · Sledi paketu · Dodaj opomnik · Dodaj v Koledar • Brez samodejnega brisanja. Fotografije bodo zahtevale končno potrditev. ShotInbox tega ne more razveljaviti. Zasebnost v napravi OCR · Apple Vision · NaturalLanguage Apple Vision in Natural Language delujeta v napravi. Brez nalaganja. Zasebno, lokalno in popolnoma pod vašim nadzorom. ShotInbox Doživljenjski Pro US$5.99 · Eno plačilo • Doživljenjski dostop • Brez naročnine. • Neomejena zgodovina posnetkov • Lastna pravila, svežnji in podobne skupine • Zaklep, gradniki, kopija in izvoz Podpora: hourstag.app@gmail.com
 
 - Fotografija in pripomočki
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - App Store · Brezplačno
 
 [Prenesite ShotInbox AI: Sort Screenshots iz trgovine App Store](https://apps.apple.com/si/app/id6802166527?pt=118326163&ct=iag_data_sl_si&mt=8)

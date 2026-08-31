@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Reiseskapere trenger et gjentakbart filmutseende som gir korn, halering og fargepreg uten å redusere hver destinasjon til det samme flate filteret — PhotoCream er laget for dette.
 
 - Foto og verktøy
-- Gratis å starte · livstidsopplåsing
+- Gratis å starte
 - App Store · Gratis
 
 [Få PhotoCream på App Store →](https://apps.apple.com/no/app/id6781808054?pt=118326163&ct=iag_data_no&mt=8)

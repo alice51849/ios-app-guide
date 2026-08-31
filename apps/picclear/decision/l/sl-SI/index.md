@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Za hitro sprostitev prostora najprej ciljate največje zmage: natančne podvojene fotografije, skoraj enake serijske posnetke, zamegljene zavrnjene in velike videoposnetke — PicClear vam pomaga to narediti na iPhonu.
 
 - Fotografija in pripomočki
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - Zasebno / na napravi
 - App Store · Brezplačno
 

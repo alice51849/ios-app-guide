@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Tus capturas, bien organizadas Encuentra, resuelve y limpia cada captura. Las 50 capturas más recientes incluyen gratis todo el flujo principal. Organización • Compras · Recibos · Viajes · Boletos · Mapas y lugares · Chats y redes · Trabajo · Estudio · Recetas y comida · Inspiración · QR y códigos · Errores y técnica · Confidencial • Buscar texto, categorías, enlaces… • Eventos y recordatorios detectados, ordenados por fecha. • Abrir en Mapas · Abrir enlace · Copiar texto · Abrir código · Llamar al número · Seguir paquete · Añadir recordatorio · Añadir al calendario • Nunca borra solo. Fotos pedirá una confirmación final. ShotInbox no podrá deshacerlo. Privacidad en el dispositivo OCR · Apple Vision · NaturalLanguage Apple Vision y Natural Language funcionan en el dispositivo. Nada se sube. Privado, local y totalmente bajo tu control. ShotInbox Pro de por vida US$5.99 · Un solo pago • Acceso de por vida • Sin suscripción. • Historial de capturas ilimitado • Reglas, lotes y grupos similares • Bloqueo, widgets, respaldo y exportación Soporte: hourstag.app@gmail.com
 
 - Foto y utilidad
-- Gratis para empezar · desbloqueo permanente
+- Gratis para empezar · desbloqueo único
 - App Store · Gratis
 
 [Consigue ShotInbox AI: Sort Screenshots en el App Store](https://apps.apple.com/mx/app/id6802166527?pt=118326163&ct=iag_data_es_mx&mt=8)

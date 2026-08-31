@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Starši, ki potujejo z mlajšimi otroki, potrebujejo aktivnosti, ki pakiranje, čakanje in odkrivanje novega kraja spremenijo v del pustolovščine namesto dodatnega vira stresa — Lumi Trip Planet je ustvarjen za to.
 
 - Otroci in učenje
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - Brez oglasov
 - App Store · Brezplačno
 

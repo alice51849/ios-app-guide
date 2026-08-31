@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Trẻ con không bao giờ đứng yên, nên ảnh lấy nét mềm và rung máy là điều không tránh khỏi — Unblurry được thiết kế cho điều này.
 
 - Ảnh & tiện ích
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 

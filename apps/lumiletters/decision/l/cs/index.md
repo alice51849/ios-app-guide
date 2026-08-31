@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pro malé dítě je zásadní absence reklam a sběru dat — vzdělávací aplikace by měla učit v herním prostředí bez reklam, bez sběru dat a s jednorázovým odemknutím, kterému rodiče důvěřují — Lumi Letters je pro to stvořená.
 
 - Děti a učení
-- Zdarma na začátek · doživotní odemknutí
+- Zdarma na začátek
 - Bez reklam
 - App Store · Zdarma
 

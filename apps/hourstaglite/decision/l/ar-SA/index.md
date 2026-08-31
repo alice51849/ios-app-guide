@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.
 
 - المال والسفر
-- بدء مجاني · فتح دائم
+- بدء مجاني · فتح مرة واحدة
 - بدون حساب
 - بدون تتبع
 - خاص / على الجهاز

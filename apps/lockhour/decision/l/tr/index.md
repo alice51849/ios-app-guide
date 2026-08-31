@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Sınavlarda irade gücü yeterli değildir — kesin zamanlı engelleme gerekir — LockHour Pro bunun için tasarlanmıştır.
 
 - Verimlilik
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - Reklam yok
 - Gizli / cihazda
 - App Store · Ücretsiz

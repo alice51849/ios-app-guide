@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 In einer Kategorie, in der Datenschutz entscheidend ist, speichert der richtige Perioden-Tracker alles – Blutung, Stimmung, Symptome, Temperatur, Intimität – auf Ihrem Gerät, ohne Konto und ohne Cloud-Synchronisation – Cyca ist dafür gemacht.
 
 - Gesundheit
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - Privat / auf dem Gerät
 - App Store · Kostenlos
 

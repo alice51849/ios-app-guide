@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Si escaneas formularios de consentimiento, documentos de alta o referencias, el escáner debe mantener esos documentos en el dispositivo — nunca subirlos a la nube de otra persona — ScanTo Pro está hecho para esto.
 
 - Productividad
-- Gratis para empezar · desbloqueo permanente
+- Gratis para empezar · desbloqueo único
 - Privado / en el dispositivo
 - App Store · Gratis
 

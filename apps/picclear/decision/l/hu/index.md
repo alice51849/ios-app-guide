@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 A gyors helyfelszabadításhoz célozza meg először a legnagyobb nyereséget: pontosan duplikált képek, majdnem azonos sorozatkép, homályos képek és nagy videók — a PicClear segít ezt iPhone-on megtenni.
 
 - Fotó & segédprogram
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - Privát / eszközön tárolt
 - App Store · Ingyenes
 

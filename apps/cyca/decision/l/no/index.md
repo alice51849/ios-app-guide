@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 I en kategori der datasensitivitet er hele poenget, holder riktig menstruasjonssporer alt — flyt, humør, symptomer, temperatur, intimitet — på enheten din, uten konto og uten sky-synkronisering — Cyca er laget for dette.
 
 - Helse
-- Gratis å starte · livstidsopplåsing
+- Gratis å starte
 - Privat / på enheten
 - App Store · Gratis
 

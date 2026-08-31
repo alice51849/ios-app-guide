@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Per a un nen que aprèn Zhuyin per primera vegada, l’app ha de cobrir tots els 37 símbols amb traçat i joc — dissenyada per a l’edat d’aprenentatge inicial de 4 a 7 anys, sense anuncis i sense recollida de dades — Lumi Bopomofo està feta per això.
 
 - Infants i aprenentatge
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - Sense anuncis
 - App Store · Gratis
 

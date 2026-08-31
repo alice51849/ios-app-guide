@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Egy óvodás számára az esti rutin akkor működik a legjobban, ha rövid, vizuális és kiszámítható, így a gyermek önállóan követheti, emlékeztetők nélkül — a Lumi Mission Planet erre készült.
 
 - Gyerekek & tanulás
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - Nincs reklám
 - App Store · Ingyenes
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Snapport Lite - Buat foto pasport, visa, dan dokumen dengan panduan saiz, alat latar belakang, dan eksport siap cetak. Versi percuma · Menyokong 1 eksport - Sekali beli · milik anda selamanya · tiada langganan - Tiada iklan, tiada penjejakan Templat - Foto pasport, visa & ID — siap cetak. - Snapport Lite berfungsi sepenuhnya tanpa talian. Memeriksa hanya memuat turun senarai umum saiz biasa — tiada data peribadi dihantar. Potong & Selaraskan - Selaraskan wajah anda dalam panduan. Keperluan mungkin berbeza, jadi semak peraturan rasmi sebelum menghantar. Latar Belakang - Penghapusan latar belakang mungkin perlu disemak. Laraskan - Kekalkan penampilan semula jadi untuk dokumen rasmi. Eksport - Eksport satu foto atau helaian cetakan. Privasi - Foto anda kekal di iPhone anda. - Tiada akaun - Tiada muat naik awan - Pengesanan wajah dijalankan di peranti untuk membantu menyelaraskan foto anda. Tiada identiti biometrik disimpan. - Anda mengawal eksport dan perkongsian Keperluan foto berbeza mengikut negara, agensi, dan jenis permohonan. Sila semak keperluan rasmi sebelum menghantar.
 
 - Foto & utiliti
-- Percuma untuk bermula · buka kunci kekal
+- Percuma untuk bermula · buka kunci sekali sahaja
 - Luar talian
 - App Store · Percuma
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Snapport Lite - Haz fotos de pasaporte, visado y documentos con guías de tamaño, fondo e impresión. Versión gratis · Admite 1 exportación - Compra única · para siempre · sin suscripción - Sin anuncios ni seguimiento Plantillas - Fotos de pasaporte, visado y carnet, listas para imprimir. - Snapport Lite funciona sin conexión. Comprobar solo descarga una lista pública de tamaños; no se envían datos personales. Recortar y alinear - Alinea tu cara dentro de la guía. Los requisitos pueden variar; revisa las normas oficiales. Fondo - La eliminación del fondo puede necesitar revisión. Ajustar - Mantén una apariencia natural para documentos oficiales. Exportar - Exporta una sola foto o una hoja de impresión. Privacidad - Tus fotos se quedan en tu iPhone. - Sin cuenta - Sin subida a la nube - La detección de caras se ejecuta en el dispositivo para alinear tu foto. No se guardan datos biométricos. - Tú controlas la exportación y el compartir Los requisitos de la foto varían según el país, el organismo y el tipo de solicitud. Revisa siempre las normas oficiales antes de enviar.
 
 - Foto y utilidad
-- Gratis para empezar · desbloqueo permanente
+- Gratis para empezar · desbloqueo único
 - Sin conexión
 - App Store · Gratis
 

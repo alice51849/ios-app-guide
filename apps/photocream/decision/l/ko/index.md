@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 여행 크리에이터는 각 목적지를 동일한 평면 필터로 만들지 않고, 그레인, 할레이션, 색상 특성을 더하는 반복 가능한 필름 느낌이 필요합니다 — PhotoCream은 이를 위해 만들어졌습니다.
 
 - 사진 & 유틸리티
-- 무료로 시작 · 한 번 구매 잠금 해제
+- 무료로 시작 · 한 번 결제로 잠금 해제
 - App Store · 무료
 
 [App Store에서 PhotoCream 받기 →](https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=iag_data_ko&mt=8)

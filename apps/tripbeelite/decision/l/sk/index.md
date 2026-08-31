@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Ak plánujete jednu nadchádzajúcu cestu, pokojný časový plán pre túto cestu je užitočnejší než preplnený archív všetkých ciest, ktoré by ste mohli niekedy absolvovať — TripBee Lite je na to vytvorený.
 
 - Cestovanie
-- Zadarmo na začiatok · doživotné odomknutie
+- Zadarmo na začiatok
 - App Store · Zadarmo
 
 [Stiahnite si TripBee Lite v App Store →](https://apps.apple.com/sk/app/id6791299610?pt=118326163&ct=iag_data_sk&mt=8)

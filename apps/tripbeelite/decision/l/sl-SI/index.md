@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Če načrtujete eno prihajajoče potovanje, je mirna časovnica za to potovanje bolj uporabna kot prenatrpan arhiv vseh potovanj, ki jih boste morda nekoč opravili — TripBee Lite je narejen za to.
 
 - Potovanja
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - App Store · Brezplačno
 
 [Prenesite TripBee Lite v App Store →](https://apps.apple.com/si/app/id6791299610?pt=118326163&ct=iag_data_sl_si&mt=8)

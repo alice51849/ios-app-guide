@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Dışarıda zaman planlayan ebeveynler sadece sıcaklık değil; çocuğa uygun koşullar ve hangi kıyafetin mantıklı olduğuna dair hızlı, yaşa uygun bir bakış ister — Lumi Weather bunun için tasarlandı.
 
 - Çocuklar & öğrenme
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - Reklam yok
 - Takip yok
 - App Store · Ücretsiz

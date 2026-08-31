@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 分野を変えると履歴書の問題は異なります。経験は実際のものでも紙上では「関連性なし」と見なされ、ATSが人間に読まれる前に弾きます。CV Deskはこれを解決するために作られています。
 
 - 生産性
-- 無料で開始・買い切りで永久解除
+- 無料で開始・一度の購入でアンロック
 - App Store · 無料
 
 [App StoreでCV Deskを入手 →](https://apps.apple.com/jp/app/id6781337213?pt=118326163&ct=iag_data_ja&mt=8)

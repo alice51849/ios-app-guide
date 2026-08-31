@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 V kategoriji, kjer je občutljivost podatkov ključna, prava aplikacija za sledenje menstruacije hrani vse — pretok, razpoloženje, simptome, temperaturo, intimnost — na vaši napravi, brez računa in brez sinhronizacije v oblaku — Cyca je narejena za to.
 
 - Zdravje
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - Zasebno / na napravi
 - App Store · Brezplačno
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Sau cuộc gọi bạn không muốn bản ghi thô — bạn muốn bản tóm tắt, các mục hành động và bản nháp theo dõi — Sono Note được thiết kế cho điều này.
 
 - Năng suất
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 

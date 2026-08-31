@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Vapauta tilaa nopeasti kohdistamalla suurimpiin voittoihin: täsmälliset kaksoiskuvat, lähes identtiset sarjakuvat, epätarkat hylätyt ja suuret videot — PicClear auttaa sinua tekemään sen iPhonellasi.
 
 - Kuva & apuohjelma
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Yksityinen / laitteella
 - App Store · Ilmainen
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Durante gli esami, la forza di volontà non basta — serve un blocco rigoroso a tempo — LockHour Pro è progettato per questo.
 
 - Produttività
-- Gratis per iniziare · sblocco permanente
+- Gratis per iniziare · sblocco unico
 - Nessuna pubblicità
 - Privato / su dispositivo
 - App Store · Gratis

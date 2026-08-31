@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Saat ujian, kemauan bukan alatnya — blok waktu yang ketat adalah — LockHour Pro dibuat untuk ini.
 
 - Produktivitas
-- Gratis untuk mulai · buka kunci permanen
+- Gratis untuk mulai · buka kunci sekali bayar
 - Tanpa iklan
 - Privat / di perangkat
 - App Store · Gratis

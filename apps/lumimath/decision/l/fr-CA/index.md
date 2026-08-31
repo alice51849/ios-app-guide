@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 La meilleure application mathématique pour enfants entraîne le raisonnement — motifs, séquences, pensée spatiale — pas seulement l’arithmétique, et elle cache cela dans un jeu que l’enfant veut jouer — Lumi Math Planet est conçue pour cela.
 
 - Enfants et apprentissage
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - Aucune publicité
 - App Store · Gratuit
 

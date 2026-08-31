@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 旅行クリエイターには、粒子・ハレーション・色の個性を加えつつ、どの目的地も同じ平坦なフィルターにならない再現性のあるフィルム風が必要です — PhotoCreamはそのために作られています。
 
 - 写真・ユーティリティ
-- 無料で開始・買い切りで永久解除
+- 無料で開始・一度の購入でアンロック
 - App Store · 無料
 
 [App StoreでPhotoCreamを入手 →](https://apps.apple.com/jp/app/id6781808054?pt=118326163&ct=iag_data_ja&mt=8)

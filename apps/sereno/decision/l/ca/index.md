@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Per dormir, una subscripció que molesta cada mes és tot el contrari de relaxant — Sereno està dissenyada per això.
 
 - Son i concentració
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - Fora de línia
 - Sense anuncis
 - App Store · Gratis

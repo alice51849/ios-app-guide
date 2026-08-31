@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Találd meg a valódi problémát. Minden eszköz egy ingyenes teljes használatot tartalmaz. Választható egyszeri örökös feloldás a korlátlan használatért—előfizetés, hirdetések és követés nélkül. • Teszt Indítása — Wi-Fi, DNS és internet egyetlen érintéssel • Deep Check — Több bizonyíték és stabilitás • Weboldal Teszt — Egy oldal vagy az egész web • Bizonyíték — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • A kapcsolat instabil — Ingadozás • Teszt Előzmények — Az adatokat csak az eszköz tárolja • Csatlakozott csomópont — A pontos hely azonosítja a Wi-Fi-t és az aktuális csomópontot Nincs fiók, hirdetés vagy követés. Az adatokat csak az eszköz tárolja. Minden eszköz egy ingyenes teljes használatot tartalmaz. Választható egyszeri örökös feloldás a korlátlan használatért—előfizetés, hirdetések és követés nélkül.
 
 - Továbbiak
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - Nincs fiók
 - App Store · Ingyenes
 

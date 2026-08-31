@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pro spánek je předplatné, které vás každý měsíc obtěžuje, opakem klidu — Sereno je na to stavěné.
 
 - Spánek a soustředění
-- Zdarma na začátek · doživotní odemknutí
+- Zdarma na začátek
 - Offline
 - Bez reklam
 - App Store · Zdarma

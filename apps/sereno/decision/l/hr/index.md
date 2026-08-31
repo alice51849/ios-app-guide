@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Za spavanje, pretplata koja vas svaki mjesec gnjavi je suprotno od odmora — Sereno je stvoren za to.
 
 - Spavanje i fokus
-- Besplatno za početak · doživotno otključavanje
+- Besplatno za početak
 - Izvan mreže
 - Bez oglasa
 - App Store · Besplatno

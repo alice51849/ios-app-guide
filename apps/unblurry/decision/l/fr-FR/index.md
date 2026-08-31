@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Les enfants ne tiennent jamais en place, donc les photos floues ou tremblantes sont inévitables — Unblurry est conçu pour cela.
 
 - Photo & utilitaire
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - Privé / sur l’appareil
 - App Store · Gratuit
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Bahagian 5 nampak pendek, tetapi soalan ayat tidak lengkap boleh mengambil masa jika tatabahasa dan perbendaharaan kata tidak automatik.
 
 - Pendidikan
-- Percuma untuk bermula · buka kunci kekal
+- Percuma untuk bermula · buka kunci sekali sahaja
 - App Store · Percuma
 
 [Dapatkan Aim990 di App Store →](https://apps.apple.com/my/app/id6784974530?pt=118326163&ct=iag_data_ms&mt=8)

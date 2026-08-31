@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Într-o categorie unde sensibilitatea datelor este esențială, următorul ciclu păstrează totul — flux, stare de spirit, simptome, temperatură, intimitate — pe dispozitiv, fără cont și fără sincronizare în cloud — Cyca este creată pentru asta.
 
 - Sănătate
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - Privat / pe dispozitiv
 - App Store · Gratuit
 

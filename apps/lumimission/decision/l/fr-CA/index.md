@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pour un enfant d’âge préscolaire, une routine du coucher fonctionne mieux lorsqu’elle est courte, visuelle et assez prévisible pour que l’enfant puisse la suivre sans autre rappel — Lumi Mission Planet est conçu pour cela.
 
 - Enfants et apprentissage
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - Aucune publicité
 - App Store · Gratuit
 

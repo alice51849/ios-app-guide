@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ja",
   "dateModified": "2026-08-31",
-  "content_digest": "62b4c7adca57fcc7bace85883f82d839e3481d094135f769f32694f884f10b2c",
-  "generation_digest": "aab41b775fcd9834047296d9f70fe89d23a5c2f5df2d28f5897a360179b5a6aa",
+  "content_digest": "85b32c610fe6040bd313c8fca0a92af493c7144940280206022887cd5c90b248",
+  "generation_digest": "c05963eb487fc384a51a2d270335a83c48359ec1f8d26f89fab7df58a7e2f78d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -29,7 +29,7 @@
       "category": "photo-utility",
       "category_label": "写真・ユーティリティ",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -41,7 +41,7 @@
       "device_labels": [],
       "badge_labels": [
         "写真・ユーティリティ",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "プライベート／端末内",
         "App Store · 無料"
       ],
@@ -124,7 +124,7 @@
       "category": "lifestyle",
       "category_label": "ライフスタイル",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -132,7 +132,7 @@
       "device_labels": [],
       "badge_labels": [
         "ライフスタイル",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
@@ -169,7 +169,7 @@
       "category": "productivity",
       "category_label": "生産性",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -185,7 +185,7 @@
       "device_labels": [],
       "badge_labels": [
         "生産性",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "オフライン",
         "アカウント不要",
         "プライベート／端末内",
@@ -225,7 +225,7 @@
       "category": "productivity",
       "category_label": "生産性",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -237,7 +237,7 @@
       "device_labels": [],
       "badge_labels": [
         "生産性",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "プライベート／端末内",
         "App Store · 無料"
       ],
@@ -275,7 +275,7 @@
       "category": "education",
       "category_label": "教育",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -283,7 +283,7 @@
       "device_labels": [],
       "badge_labels": [
         "教育",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -365,7 +365,7 @@
       "category": "utility",
       "category_label": "その他",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -373,7 +373,7 @@
       "device_labels": [],
       "badge_labels": [
         "その他",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/battai.html",
@@ -410,7 +410,7 @@
       "category": "utility",
       "category_label": "その他",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -422,7 +422,7 @@
       ],
       "badge_labels": [
         "その他",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "ウィジェット",
         "App Store · 無料"
       ],
@@ -460,7 +460,7 @@
       "category": "productivity",
       "category_label": "生産性",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -468,7 +468,7 @@
       "device_labels": [],
       "badge_labels": [
         "生産性",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -505,7 +505,7 @@
       "category": "health",
       "category_label": "健康",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -517,7 +517,7 @@
       "device_labels": [],
       "badge_labels": [
         "健康",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "プライベート／端末内",
         "App Store · 無料"
       ],
@@ -605,7 +605,7 @@
       "category": "kids",
       "category_label": "子ども・学習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -613,7 +613,7 @@
       "device_labels": [],
       "badge_labels": [
         "子ども・学習",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/dailymatelite.html",
@@ -703,7 +703,7 @@
       "category": "finance",
       "category_label": "お金・旅行",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -727,7 +727,7 @@
       ],
       "badge_labels": [
         "お金・旅行",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "オフライン",
         "アカウント不要",
         "追跡なし",
@@ -823,7 +823,7 @@
       "category": "finance",
       "category_label": "お金・旅行",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
@@ -845,7 +845,7 @@
       ],
       "badge_labels": [
         "お金・旅行",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "アカウント不要",
         "追跡なし",
         "プライベート／端末内",
@@ -887,7 +887,7 @@
       "category": "productivity",
       "category_label": "生産性",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -901,7 +901,7 @@
       "device_labels": [],
       "badge_labels": [
         "生産性",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "広告なし",
         "プライベート／端末内",
         "App Store · 無料"
@@ -940,7 +940,7 @@
       "category": "kids",
       "category_label": "子ども・学習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -952,7 +952,7 @@
       "device_labels": [],
       "badge_labels": [
         "子ども・学習",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "広告なし",
         "App Store · 無料",
         "★ 5.0/5 · 1"
@@ -1046,7 +1046,7 @@
       "category": "kids",
       "category_label": "子ども・学習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1058,7 +1058,7 @@
       "device_labels": [],
       "badge_labels": [
         "子ども・学習",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "広告なし",
         "App Store · 無料"
       ],
@@ -1146,7 +1146,7 @@
       "category": "kids",
       "category_label": "子ども・学習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1158,7 +1158,7 @@
       "device_labels": [],
       "badge_labels": [
         "子ども・学習",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "広告なし",
         "App Store · 無料"
       ],
@@ -1246,7 +1246,7 @@
       "category": "kids",
       "category_label": "子ども・学習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1258,7 +1258,7 @@
       "device_labels": [],
       "badge_labels": [
         "子ども・学習",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "広告なし",
         "App Store · 無料"
       ],
@@ -1346,7 +1346,7 @@
       "category": "kids",
       "category_label": "子ども・学習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1358,7 +1358,7 @@
       "device_labels": [],
       "badge_labels": [
         "子ども・学習",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "広告なし",
         "App Store · 無料"
       ],
@@ -1396,7 +1396,7 @@
       "category": "kids",
       "category_label": "子ども・学習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -1410,7 +1410,7 @@
       "device_labels": [],
       "badge_labels": [
         "子ども・学習",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "広告なし",
         "追跡なし",
         "App Store · 無料",
@@ -1452,7 +1452,7 @@
       "category": "productivity",
       "category_label": "生産性",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1464,7 +1464,7 @@
       "device_labels": [],
       "badge_labels": [
         "生産性",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "広告なし",
         "App Store · 無料"
       ],
@@ -1502,7 +1502,7 @@
       "category": "finance",
       "category_label": "お金・旅行",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -1528,7 +1528,7 @@
       ],
       "badge_labels": [
         "お金・旅行",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "オフライン",
         "アカウント不要",
         "広告なし",
@@ -1572,7 +1572,7 @@
       "category": "productivity",
       "category_label": "生産性",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1580,7 +1580,7 @@
       "device_labels": [],
       "badge_labels": [
         "生産性",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/onepageppt.html",
@@ -1617,7 +1617,7 @@
       "category": "photo-utility",
       "category_label": "写真・ユーティリティ",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1625,7 +1625,7 @@
       "device_labels": [],
       "badge_labels": [
         "写真・ユーティリティ",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -1662,7 +1662,7 @@
       "category": "photo-utility",
       "category_label": "写真・ユーティリティ",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1674,7 +1674,7 @@
       "device_labels": [],
       "badge_labels": [
         "写真・ユーティリティ",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "プライベート／端末内",
         "App Store · 無料"
       ],
@@ -1712,7 +1712,7 @@
       "category": "productivity",
       "category_label": "生産性",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1720,7 +1720,7 @@
       "device_labels": [],
       "badge_labels": [
         "生産性",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/savetag.html",
@@ -1757,7 +1757,7 @@
       "category": "productivity",
       "category_label": "生産性",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1769,7 +1769,7 @@
       "device_labels": [],
       "badge_labels": [
         "生産性",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "プライベート／端末内",
         "App Store · 無料"
       ],
@@ -1807,7 +1807,7 @@
       "category": "sleep-sound",
       "category_label": "睡眠・集中",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -1821,7 +1821,7 @@
       "device_labels": [],
       "badge_labels": [
         "睡眠・集中",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "オフライン",
         "広告なし",
         "App Store · 無料"
@@ -1860,7 +1860,7 @@
       "category": "photo-utility",
       "category_label": "写真・ユーティリティ",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1868,7 +1868,7 @@
       "device_labels": [],
       "badge_labels": [
         "写真・ユーティリティ",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/shotinbox.html",
@@ -1955,7 +1955,7 @@
       "category": "photo-utility",
       "category_label": "写真・ユーティリティ",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -1967,7 +1967,7 @@
       "device_labels": [],
       "badge_labels": [
         "写真・ユーティリティ",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "オフライン",
         "App Store · 無料"
       ],
@@ -2005,7 +2005,7 @@
       "category": "productivity",
       "category_label": "生産性",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -2017,7 +2017,7 @@
       "device_labels": [],
       "badge_labels": [
         "生産性",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "プライベート／端末内",
         "App Store · 無料"
       ],
@@ -2055,7 +2055,7 @@
       "category": "travel",
       "category_label": "旅行",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -2063,7 +2063,7 @@
       "device_labels": [],
       "badge_labels": [
         "旅行",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "App Store · 無料"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ja/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -2156,7 +2156,7 @@
       "category": "photo-utility",
       "category_label": "写真・ユーティリティ",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -2168,7 +2168,7 @@
       "device_labels": [],
       "badge_labels": [
         "写真・ユーティリティ",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "プライベート／端末内",
         "App Store · 無料"
       ],
@@ -2206,7 +2206,7 @@
       "category": "utility",
       "category_label": "その他",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "no_account"
@@ -2218,7 +2218,7 @@
       "device_labels": [],
       "badge_labels": [
         "その他",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "アカウント不要",
         "App Store · 無料"
       ],
@@ -2256,7 +2256,7 @@
       "category": "kids",
       "category_label": "子ども・学習",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "無料で開始・買い切りで永久解除",
+      "purchase_label": "無料で開始・一度の購入でアンロック",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -2268,7 +2268,7 @@
       "device_labels": [],
       "badge_labels": [
         "子ども・学習",
-        "無料で開始・買い切りで永久解除",
+        "無料で開始・一度の購入でアンロック",
         "オフライン",
         "App Store · 無料"
       ],

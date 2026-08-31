@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Paras lasten matikkasovellus harjoittaa päättelyä — kuvioita, sarjoja, avaruudellista ajattelua — ei pelkkää laskuharjoittelua, ja se piilottaa tämän pelin sisään, jota lapsi haluaa pelata — Lumi Math Planet on tehty tätä varten.
 
 - Lapset & oppiminen
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Ei mainoksia
 - App Store · Ilmainen
 

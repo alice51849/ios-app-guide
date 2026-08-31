@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Snapport Lite - Buat foto paspor, visa, dan kartu identitas dengan panduan ukuran, latar, dan cetak. Versi gratis · Mendukung 1 ekspor - Sekali beli · milik Anda selamanya · tanpa langganan - Tanpa iklan atau pelacakan Templat - Foto paspor, visa & identitas, siap cetak. - Snapport Lite bekerja luring. Pemeriksaan hanya mengunduh daftar ukuran publik; tidak ada data pribadi yang dikirim. Pangkas & sejajarkan - Sejajarkan wajah dengan panduan. Persyaratan bisa berbeda; periksa aturan resmi. Latar - Penghapusan latar mungkin perlu diperiksa. Sesuaikan - Pertahankan tampilan alami untuk dokumen resmi. Ekspor - Ekspor satu foto atau lembar cetak. Privasi - Foto Anda tetap di iPhone. - Tanpa akun - Tanpa unggah ke cloud - Deteksi wajah berjalan di perangkat untuk menyejajarkan foto. Tidak ada data biometrik yang disimpan. - Anda mengatur ekspor dan berbagi Persyaratan berbeda menurut negara, instansi, dan jenis pengajuan. Selalu periksa aturan resmi sebelum mengirim.
 
 - Foto & utilitas
-- Gratis untuk mulai · buka kunci permanen
+- Gratis untuk mulai · buka kunci sekali bayar
 - Offline
 - App Store · Gratis
 

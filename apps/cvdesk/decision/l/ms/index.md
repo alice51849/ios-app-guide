@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Apabila anda menukar bidang, masalah resume berbeza: pengalaman anda nyata tetapi 'tidak berkaitan' di atas kertas, dan penapis ATS menolak anda sebelum manusia membacanya — CV Desk dibina untuk ini.
 
 - Produktiviti
-- Percuma untuk bermula · buka kunci kekal
+- Percuma untuk bermula · buka kunci sekali sahaja
 - App Store · Percuma
 
 [Dapatkan CV Desk di App Store →](https://apps.apple.com/my/app/id6781337213?pt=118326163&ct=iag_data_ms&mt=8)

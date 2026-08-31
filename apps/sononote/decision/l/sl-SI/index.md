@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Po klicu ne želite surovega prepisa — želite povzetek, naloge in osnutek nadaljnjega sporočila — Sono Note je ustvarjena za to.
 
 - Produktivnost
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - Zasebno / na napravi
 - App Store · Brezplačno
 

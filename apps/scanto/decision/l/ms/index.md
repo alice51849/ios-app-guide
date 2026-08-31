@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Jika anda mengimbas borang persetujuan pesakit, dokumen keluar atau rujukan, pengimbas mesti menyimpan dokumen itu pada peranti — tidak pernah dimuat naik ke awan orang lain — ScanTo Pro dibina untuk ini.
 
 - Produktiviti
-- Percuma untuk bermula · buka kunci kekal
+- Percuma untuk bermula · buka kunci sekali sahaja
 - Peribadi / pada peranti
 - App Store · Percuma
 

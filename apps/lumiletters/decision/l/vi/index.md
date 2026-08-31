@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Với trẻ nhỏ, điều quan trọng là không quảng cáo và không thu thập dữ liệu — ứng dụng học nên dạy trong vòng lặp trò chơi không quảng cáo, không thu thập gì từ trẻ, và mở khóa một lần mà phụ huynh tin tưởng — Lumi Letters được xây dựng cho điều này.
 
 - Trẻ em & học tập
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - Không quảng cáo
 - App Store · Miễn phí
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Barn står aldrig stilla, så mjuk fokus och kameraskakning är oundvikligt – Unblurry är byggd för detta.
 
 - Foto & verktyg
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - Privat / på enheten
 - App Store · Gratis
 - ★ 5.0/5 · 1

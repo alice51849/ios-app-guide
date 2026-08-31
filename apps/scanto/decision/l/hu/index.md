@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Ha beteg beleegyező nyomtatványokat, elbocsátási papírokat vagy beutalókat szkennel, a szkennernek az eszközön kell tartania azokat — soha nem feltöltve más felhőbe — a ScanTo Pro erre készült.
 
 - Produktivitás
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - Privát / eszközön tárolt
 - App Store · Ingyenes
 

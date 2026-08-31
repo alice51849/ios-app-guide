@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Quan canvies de camp, el problema del currículum és diferent: la teva experiència és real però 'no relacionada' en paper, i els filtres ATS et rebutgen abans que un humà el llegeixi — CV Desk està creat per això.
 
 - Productivitat
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - App Store · Gratis
 
 [Descarrega CV Desk a l'App Store →](https://apps.apple.com/es/app/id6781337213?pt=118326163&ct=iag_data_ca&mt=8)

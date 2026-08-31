@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 如果您只規劃一趟即將出行的旅程，專注且清晰的行程時間軸比起堆積如山的歷史行程更實用 — TripBee Lite 正是為此而設。
 
 - 旅行
-- 免費開始 · 一次購買解鎖
+- 免費開始 · 一次性解鎖
 - App Store · 免費
 
 [於 App Store 取得 TripBee Lite →](https://apps.apple.com/tw/app/id6791299610?pt=118326163&ct=iag_data_zh_hant&mt=8)

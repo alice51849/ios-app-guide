@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Hvis de fleste oppgaveapper føles oppblåste, er den rette en ren sjekkliste med påminnelser, gjentakelsesregler og en Watch-komplikasjon — og bevisst uten prosjektstyringsmaskineri — Mochi er laget for dette.
 
 - Produktivitet
-- Gratis å starte · livstidsopplåsing
+- Gratis å starte
 - Ingen annonser
 - App Store · Gratis
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Für den Schlaf ist ein monatlich nervendes Abo das Gegenteil von Erholung – Sereno ist genau dafür gemacht.
 
 - Schlaf & Konzentration
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - Offline
 - Keine Werbung
 - App Store · Kostenlos

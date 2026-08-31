@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "hu",
   "dateModified": "2026-08-31",
-  "content_digest": "62b4c7adca57fcc7bace85883f82d839e3481d094135f769f32694f884f10b2c",
-  "generation_digest": "aab41b775fcd9834047296d9f70fe89d23a5c2f5df2d28f5897a360179b5a6aa",
+  "content_digest": "85b32c610fe6040bd313c8fca0a92af493c7144940280206022887cd5c90b248",
+  "generation_digest": "c05963eb487fc384a51a2d270335a83c48359ec1f8d26f89fab7df58a7e2f78d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -29,7 +29,7 @@
       "category": "photo-utility",
       "category_label": "Fotó & segédprogram",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -41,7 +41,7 @@
       "device_labels": [],
       "badge_labels": [
         "Fotó & segédprogram",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Privát / eszközön tárolt",
         "App Store · Ingyenes"
       ],
@@ -124,7 +124,7 @@
       "category": "lifestyle",
       "category_label": "Életmód",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -132,7 +132,7 @@
       "device_labels": [],
       "badge_labels": [
         "Életmód",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/mochidonestamp.html",
@@ -169,7 +169,7 @@
       "category": "productivity",
       "category_label": "Produktivitás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -185,7 +185,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Offline",
         "Nincs fiók",
         "Privát / eszközön tárolt",
@@ -225,7 +225,7 @@
       "category": "productivity",
       "category_label": "Produktivitás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -237,7 +237,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Privát / eszközön tárolt",
         "App Store · Ingyenes"
       ],
@@ -275,7 +275,7 @@
       "category": "education",
       "category_label": "Oktatás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -283,7 +283,7 @@
       "device_labels": [],
       "badge_labels": [
         "Oktatás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -365,7 +365,7 @@
       "category": "utility",
       "category_label": "Továbbiak",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -373,7 +373,7 @@
       "device_labels": [],
       "badge_labels": [
         "Továbbiak",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/battai.html",
@@ -410,7 +410,7 @@
       "category": "utility",
       "category_label": "Továbbiak",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -422,7 +422,7 @@
       ],
       "badge_labels": [
         "Továbbiak",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Widget",
         "App Store · Ingyenes"
       ],
@@ -460,7 +460,7 @@
       "category": "productivity",
       "category_label": "Produktivitás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -468,7 +468,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -505,7 +505,7 @@
       "category": "health",
       "category_label": "Egészség",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -517,7 +517,7 @@
       "device_labels": [],
       "badge_labels": [
         "Egészség",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Privát / eszközön tárolt",
         "App Store · Ingyenes"
       ],
@@ -605,7 +605,7 @@
       "category": "kids",
       "category_label": "Gyerekek & tanulás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -613,7 +613,7 @@
       "device_labels": [],
       "badge_labels": [
         "Gyerekek & tanulás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/dailymatelite.html",
@@ -703,7 +703,7 @@
       "category": "finance",
       "category_label": "Pénzügy & utazás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -727,7 +727,7 @@
       ],
       "badge_labels": [
         "Pénzügy & utazás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Offline",
         "Nincs fiók",
         "Nincs követés",
@@ -770,7 +770,7 @@
       "category": "finance",
       "category_label": "Pénzügy & utazás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
@@ -792,7 +792,7 @@
       ],
       "badge_labels": [
         "Pénzügy & utazás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Nincs fiók",
         "Nincs követés",
         "Privát / eszközön tárolt",
@@ -887,7 +887,7 @@
       "category": "productivity",
       "category_label": "Produktivitás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -901,7 +901,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Nincs reklám",
         "Privát / eszközön tárolt",
         "App Store · Ingyenes"
@@ -940,7 +940,7 @@
       "category": "kids",
       "category_label": "Gyerekek & tanulás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -952,7 +952,7 @@
       "device_labels": [],
       "badge_labels": [
         "Gyerekek & tanulás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Nincs reklám",
         "App Store · Ingyenes"
       ],
@@ -1040,7 +1040,7 @@
       "category": "kids",
       "category_label": "Gyerekek & tanulás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1052,7 +1052,7 @@
       "device_labels": [],
       "badge_labels": [
         "Gyerekek & tanulás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Nincs reklám",
         "App Store · Ingyenes"
       ],
@@ -1140,7 +1140,7 @@
       "category": "kids",
       "category_label": "Gyerekek & tanulás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1152,7 +1152,7 @@
       "device_labels": [],
       "badge_labels": [
         "Gyerekek & tanulás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Nincs reklám",
         "App Store · Ingyenes"
       ],
@@ -1240,7 +1240,7 @@
       "category": "kids",
       "category_label": "Gyerekek & tanulás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1252,7 +1252,7 @@
       "device_labels": [],
       "badge_labels": [
         "Gyerekek & tanulás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Nincs reklám",
         "App Store · Ingyenes"
       ],
@@ -1340,7 +1340,7 @@
       "category": "kids",
       "category_label": "Gyerekek & tanulás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1352,7 +1352,7 @@
       "device_labels": [],
       "badge_labels": [
         "Gyerekek & tanulás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Nincs reklám",
         "App Store · Ingyenes"
       ],
@@ -1390,7 +1390,7 @@
       "category": "kids",
       "category_label": "Gyerekek & tanulás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -1404,7 +1404,7 @@
       "device_labels": [],
       "badge_labels": [
         "Gyerekek & tanulás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Nincs reklám",
         "Nincs követés",
         "App Store · Ingyenes"
@@ -1443,7 +1443,7 @@
       "category": "productivity",
       "category_label": "Produktivitás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1455,7 +1455,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Nincs reklám",
         "App Store · Ingyenes"
       ],
@@ -1493,7 +1493,7 @@
       "category": "finance",
       "category_label": "Pénzügy & utazás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -1519,7 +1519,7 @@
       ],
       "badge_labels": [
         "Pénzügy & utazás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Offline",
         "Nincs fiók",
         "Nincs reklám",
@@ -1563,7 +1563,7 @@
       "category": "productivity",
       "category_label": "Produktivitás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1571,7 +1571,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/onepageppt.html",
@@ -1608,7 +1608,7 @@
       "category": "photo-utility",
       "category_label": "Fotó & segédprogram",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1616,7 +1616,7 @@
       "device_labels": [],
       "badge_labels": [
         "Fotó & segédprogram",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -1653,7 +1653,7 @@
       "category": "photo-utility",
       "category_label": "Fotó & segédprogram",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1665,7 +1665,7 @@
       "device_labels": [],
       "badge_labels": [
         "Fotó & segédprogram",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Privát / eszközön tárolt",
         "App Store · Ingyenes"
       ],
@@ -1703,7 +1703,7 @@
       "category": "productivity",
       "category_label": "Produktivitás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1711,7 +1711,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/savetag.html",
@@ -1748,7 +1748,7 @@
       "category": "productivity",
       "category_label": "Produktivitás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1760,7 +1760,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Privát / eszközön tárolt",
         "App Store · Ingyenes"
       ],
@@ -1798,7 +1798,7 @@
       "category": "sleep-sound",
       "category_label": "Alvás & fókusz",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -1812,7 +1812,7 @@
       "device_labels": [],
       "badge_labels": [
         "Alvás & fókusz",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Offline",
         "Nincs reklám",
         "App Store · Ingyenes"
@@ -1851,7 +1851,7 @@
       "category": "photo-utility",
       "category_label": "Fotó & segédprogram",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1859,7 +1859,7 @@
       "device_labels": [],
       "badge_labels": [
         "Fotó & segédprogram",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/shotinbox.html",
@@ -1946,7 +1946,7 @@
       "category": "photo-utility",
       "category_label": "Fotó & segédprogram",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -1958,7 +1958,7 @@
       "device_labels": [],
       "badge_labels": [
         "Fotó & segédprogram",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Offline",
         "App Store · Ingyenes"
       ],
@@ -1996,7 +1996,7 @@
       "category": "productivity",
       "category_label": "Produktivitás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -2008,7 +2008,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Privát / eszközön tárolt",
         "App Store · Ingyenes"
       ],
@@ -2046,7 +2046,7 @@
       "category": "travel",
       "category_label": "Utazás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -2054,7 +2054,7 @@
       "device_labels": [],
       "badge_labels": [
         "Utazás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "App Store · Ingyenes"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/hu/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -2147,7 +2147,7 @@
       "category": "photo-utility",
       "category_label": "Fotó & segédprogram",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -2159,7 +2159,7 @@
       "device_labels": [],
       "badge_labels": [
         "Fotó & segédprogram",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Privát / eszközön tárolt",
         "App Store · Ingyenes"
       ],
@@ -2197,7 +2197,7 @@
       "category": "utility",
       "category_label": "Továbbiak",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "no_account"
@@ -2209,7 +2209,7 @@
       "device_labels": [],
       "badge_labels": [
         "Továbbiak",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Nincs fiók",
         "App Store · Ingyenes"
       ],
@@ -2247,7 +2247,7 @@
       "category": "kids",
       "category_label": "Gyerekek & tanulás",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés · életre szóló feloldás",
+      "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -2259,7 +2259,7 @@
       "device_labels": [],
       "badge_labels": [
         "Gyerekek & tanulás",
-        "Ingyenes kezdés · életre szóló feloldás",
+        "Ingyenes kezdés",
         "Offline",
         "App Store · Ingyenes"
       ],

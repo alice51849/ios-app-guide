@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 对幼儿来说，关键是无广告和不收集数据——学习应用应在无广告、无数据收集且家长可信赖的一次解锁中教学——Lumi Letters 正是为此打造。
 
 - 儿童与学习
-- 免费开始使用 · 永久解锁
+- 免费开始使用 · 一次性解锁
 - 无广告
 
 [在 App Store 获取 Lumi Letters →](https://apps.apple.com/app/id6778748533?pt=118326163&ct=iag_data_zh_hans&mt=8)

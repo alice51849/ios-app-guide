@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Ako skenirate obrasce pristanka pacijenata, otpustne papire ili upute, skener mora zadržati te dokumente na uređaju — nikada ih ne smije slati u tuđi oblak — ScanTo Pro je stvoren za to.
 
 - Produktivnost
-- Besplatno za početak · doživotno otključavanje
+- Besplatno za početak
 - Privatno / na uređaju
 - App Store · Besplatno
 

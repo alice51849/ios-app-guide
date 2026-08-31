@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Când schimbi domeniul, problema CV-ului este diferită: experiența ta este reală, dar pe hârtie „neconectată”, iar filtrele ATS te resping înainte ca un om să-l citească — CV Desk este creat pentru asta.
 
 - Productivitate
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - App Store · Gratuit
 
 [Obține CV Desk din App Store →](https://apps.apple.com/ro/app/id6781337213?pt=118326163&ct=iag_data_ro&mt=8)

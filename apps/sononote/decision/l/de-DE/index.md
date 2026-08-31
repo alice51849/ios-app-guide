@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Nach einem Anruf wollen Sie kein rohes Transkript, sondern die Zusammenfassung, die Aufgabenpunkte und einen Entwurf für eine Folge-E-Mail – Sono Note ist genau dafür gemacht.
 
 - Produktivität
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - Privat / auf dem Gerät
 - App Store · Kostenlos
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pokud se vám většina aplikací na úkoly zdá přeplněná, ta pravá je čistý kontrolní seznam s připomenutími, pravidly opakování a komplikací pro Apple Watch — a záměrně bez správy projektů — Mochi je pro to stvořená.
 
 - Produktivita
-- Zdarma na začátek · doživotní odemknutí
+- Zdarma na začátek
 - Bez reklam
 - App Store · Zdarma
 

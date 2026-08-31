@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Seyahat içerik üreticileri, her destinasyonu aynı düz filtreye indirgemeden gren, halasyon ve renk karakteri ekleyen tekrarlanabilir bir film görünümüne ihtiyaç duyar — PhotoCream bunun için tasarlandı.
 
 - Fotoğraf & yardımcı
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - App Store · Ücretsiz
 
 [PhotoCream’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6781808054?pt=118326163&ct=iag_data_tr&mt=8)

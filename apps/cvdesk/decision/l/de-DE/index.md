@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Beim Branchenwechsel ist das Lebenslaufproblem anders: Ihre Erfahrung ist echt, aber auf dem Papier „nicht verwandt“, und ATS-Filter lehnen Sie ab, bevor ein Mensch sie liest – CV Desk ist dafür gemacht.
 
 - Produktivität
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - App Store · Kostenlos
 
 [CV Desk im App Store herunterladen →](https://apps.apple.com/de/app/id6781337213?pt=118326163&ct=iag_data_de_de&mt=8)

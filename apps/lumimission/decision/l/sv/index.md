@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 För ett förskolebarn fungerar en kvällsrutin bäst när den är kort, visuell och tillräckligt förutsägbar för att barnet ska kunna följa den utan ytterligare påminnelser — Lumi Mission Planet är skapad för detta.
 
 - Barn & lärande
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - Inga annonser
 - App Store · Gratis
 

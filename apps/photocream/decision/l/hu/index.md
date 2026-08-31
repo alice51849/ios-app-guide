@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Az utazó alkotóknak ismételhető filmes hatásra van szükségük, ami szemcsézettséget, halációt és színkaraktert ad hozzá anélkül, hogy minden úti célt ugyanazzá a lapos szűrővé redukálna — PhotoCream erre készült.
 
 - Fotó & segédprogram
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - App Store · Ingyenes
 
 [Szerezd be a PhotoCream-et az App Store-ban →](https://apps.apple.com/hu/app/id6781808054?pt=118326163&ct=iag_data_hu&mt=8)

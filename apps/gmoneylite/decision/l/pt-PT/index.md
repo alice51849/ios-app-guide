@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.
 
 - Dinheiro e viagens
-- Grátis para começar · desbloqueio permanente
+- Grátis para começar · desbloqueio único
 - Offline
 - Sem conta
 - Sem rastreamento

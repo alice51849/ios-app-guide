@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Voor slaap is een abonnement dat elke maand zeurt het tegenovergestelde van rustgevend — Sereno is hiervoor gemaakt.
 
 - Slaap & focus
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - Offline
 - Geen advertenties
 - App Store · Gratis

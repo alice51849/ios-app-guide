@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 För att frigöra utrymme snabbt, börja med de största vinsterna: exakta dubblettfoton, nästan identiska seriebilder, suddiga bortkastade och stora videor – PicClear hjälper dig göra det på din iPhone.
 
 - Foto & verktyg
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - Privat / på enheten
 - App Store · Gratis
 

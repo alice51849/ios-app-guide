@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Deti sa nikdy nehýbu pokojne, takže jemné rozostrenie a trasenie kamery sú nevyhnutné — Unblurry je na to stavaný.
 
 - Fotografia a nástroje
-- Zadarmo na začiatok · doživotné odomknutie
+- Zadarmo na začiatok
 - Súkromné / v zariadení
 - App Store · Zadarmo
 

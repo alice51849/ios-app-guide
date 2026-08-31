@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Les parents qui planifient des sorties ont besoin de plus qu’une température : ils veulent un aperçu rapide, adapté à l’âge, pour savoir si les conditions conviennent à un enfant et quels vêtements choisir — Lumi Weather est conçu pour ça.
 
 - Enfants et apprentissage
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - Aucune publicité
 - Aucun suivi
 - App Store · Gratuit

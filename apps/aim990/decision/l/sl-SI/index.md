@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Del 5 se zdi kratek, a vprašanja z nepopolnimi stavki lahko vzamejo veliko časa, če slovnica in besedišče nista samodejna.
 
 - Izobraževanje
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - App Store · Brezplačno
 
 [Prenesite Aim990 v App Store →](https://apps.apple.com/si/app/id6784974530?pt=118326163&ct=iag_data_sl_si&mt=8)

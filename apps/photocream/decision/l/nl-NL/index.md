@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Reiscreators hebben een herhaalbare filmlook nodig die korrel, halatie en kleurkarakter toevoegt zonder elke bestemming te reduceren tot dezelfde vlakke filter — PhotoCream is hiervoor gemaakt.
 
 - Foto & hulpmiddel
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - App Store · Gratis
 
 [PhotoCream downloaden in de App Store →](https://apps.apple.com/nl/app/id6781808054?pt=118326163&ct=iag_data_nl_nl&mt=8)

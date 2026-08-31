@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Si vous scannez des formulaires de consentement, des documents de sortie ou des références, le scanner doit garder ces documents sur l’appareil — jamais téléversés sur un cloud tiers — ScanTo Pro est conçu pour cela.
 
 - Productivité
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - Privé / sur l'appareil
 - App Store · Gratuit
 

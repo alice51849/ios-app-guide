@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Når du skifter felt, er CV-problemet anderledes: din erfaring er reel, men 'ikke-relateret' på papiret, og ATS-filtre afviser dig før en menneskelig læser — CV Desk er bygget til dette.
 
 - Produktivitet
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - App Store · Gratis
 
 [Hent CV Desk i App Store →](https://apps.apple.com/dk/app/id6781337213?pt=118326163&ct=iag_data_da&mt=8)

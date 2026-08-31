@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Para dormir, uma subscrição que incomoda todos os meses é o oposto de repousante — Sereno foi criado para isso.
 
 - Sono e concentração
-- Grátis para começar · desbloqueio permanente
+- Grátis para começar · desbloqueio único
 - Offline
 - Sem anúncios
 - App Store · Grátis

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Nếu hầu hết ứng dụng việc cần làm cảm thấy cồng kềnh, ứng dụng phù hợp là danh sách kiểm tra sạch sẽ với nhắc nhở, quy tắc lặp lại và hỗ trợ Watch — và không có công cụ quản lý dự án — Mochi được xây dựng cho điều này.
 
 - Năng suất
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - Không quảng cáo
 - App Store · Miễn phí
 

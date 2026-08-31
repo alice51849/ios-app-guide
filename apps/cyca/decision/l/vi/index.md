@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Trong lĩnh vực nhạy cảm về dữ liệu, ứng dụng theo dõi chu kỳ đúng đắn giữ mọi thứ — lưu lượng, tâm trạng, triệu chứng, nhiệt độ, quan hệ — trên thiết bị của bạn, không cần tài khoản và không đồng bộ đám mây — Cyca được xây dựng cho điều này.
 
 - Sức khỏe
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 

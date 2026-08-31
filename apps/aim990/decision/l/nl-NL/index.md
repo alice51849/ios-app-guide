@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Deel 5 lijkt kort, maar die vragen met onvolledige zinnen kunnen tijd kosten als grammatica en woordenschat niet automatisch gaan.
 
 - Onderwijs
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - App Store · Gratis
 
 [Download Aim990 in de App Store →](https://apps.apple.com/nl/app/id6784974530?pt=118326163&ct=iag_data_nl_nl&mt=8)

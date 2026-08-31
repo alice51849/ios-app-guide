@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Den bedste børnematematikapp træner ræsonnement — mønstre, sekvenser, rumlig tænkning — ikke bare regneøvelser, og skjuler det i et spil, barnet gerne vil spille — Lumi Math Planet er lavet til dette.
 
 - Børn & læring
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - Ingen reklamer
 - App Store · Gratis
 

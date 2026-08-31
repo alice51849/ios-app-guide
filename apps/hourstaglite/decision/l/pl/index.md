@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 HoursTag Lite - Prawdziwa cena rzeczy Każdy zakup kosztuje godziny Twojego życia. HoursTag Lite przelicza ceny na czas pracy, byś wydawał świadomie. Poznaj swój pryzmat wartości - Koszt czasu: Twoja wartość netto za godzinę pracy - Typ: Potrzeba - Zachcianka - Impuls - Twój wzorzec wartości - Pełna analiza wartości - Ile kosztuje cel?: Zobacz pracę stojącą za celem i śledź postępy. - Kopia zapasowa: Zawiera dochód, wydatki, cele i ustawienia. - Widget - Apple Watch Wszystko zostaje na Twoim urządzeniu. Bez konta, bez śledzenia. Jedna płatność · Dostęp na zawsze · Bez subskrypcji Nielimitowane decyzje i edycje Nielimitowane cele i postępy Udostępnianie, analizy i kopie
 
 - Finanse i podróże
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - Bez konta
 - Bez śledzenia
 - Prywatne / na urządzeniu

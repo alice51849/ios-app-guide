@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Screenshots, endlich sortiert Jeden Screenshot finden, erledigen und aufräumen. Die neuesten 50 Screenshots bieten den kompletten Kernablauf kostenlos. Ordnen • Einkäufe · Belege · Reisen · Tickets · Karten & Orte · Chats & Social · Arbeit · Lernen · Rezepte & Essen · Inspiration · QR & Codes · Fehler & Technik · Vertraulich • Text, Kategorien, Links suchen… • Erkannte Termine und Erinnerungen chronologisch sortiert. • In Karten öffnen · Link öffnen · Text kopieren · Code öffnen · Nummer anrufen · Paket verfolgen · Erinnerung hinzufügen · Zum Kalender hinzufügen • Nie automatisch löschen. Fotos fragt noch einmal nach. ShotInbox kann dies nicht rückgängig machen. Datenschutz auf dem Gerät OCR · Apple Vision · NaturalLanguage Apple Vision und Natural Language laufen auf dem Gerät. Kein Upload. Privat, lokal und vollständig unter Ihrer Kontrolle. ShotInbox Lifetime Pro US$5.99 · Ein Kauf • Dauerhafter Zugriff • Kein Abo. • Unbegrenzter Screenshot-Verlauf • Eigene Regeln, Stapel und ähnliche Gruppen • Schutz, Widgets, Backup und Export Support: hourstag.app@gmail.com
 
 - Foto & Dienstprogramm
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - App Store · Kostenlos
 
 [ShotInbox AI: Sort Screenshots im App Store laden](https://apps.apple.com/de/app/id6802166527?pt=118326163&ct=iag_data_de_de&mt=8)

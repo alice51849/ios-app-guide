@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Snapport Lite - Vytvářejte pasové, vízové a dokumentové fotografie s vedením velikosti, nástroji pro pozadí a exportem připraveným k tisku. Bezplatná verze · Podporuje 1 export - Jednorázový nákup · navždy · bez předplatného - Žádné reklamy, žádné sledování Šablony - Pasové, vízové a ID fotografie — připravené k tisku. - Snapport Lite funguje plně offline. Kontrola pouze stáhne veřejný seznam běžných velikostí — žádná osobní data nejsou odesílána. Oříznout a zarovnat - Zarovnejte obličej do vodítka. Požadavky se mohou lišit, proto si před odesláním zkontrolujte oficiální pravidla. Pozadí - Odstranění pozadí může vyžadovat kontrolu. Upravit - Udržujte svůj vzhled přirozený pro oficiální dokumenty. Exportovat - Exportujte jednotlivou fotografii nebo tiskovou stránku. Soukromí - Vaše fotografie zůstávají na vašem iPhonu. - Žádný účet - Žádné nahrávání do cloudu - Detekce obličeje probíhá na zařízení, aby pomohla s zarovnáním vaší fotografie. Žádná biometrická identita není uložena. - Ovládáte export a sdílení Požadavky na fotografie se liší podle země, agentury a typu žádosti. Před odesláním si prosím zkontrolujte oficiální požadavky.
 
 - Fotografie a nástroje
-- Zdarma na začátek · doživotní odemknutí
+- Zdarma na začátek
 - Offline
 - App Store · Zdarma
 

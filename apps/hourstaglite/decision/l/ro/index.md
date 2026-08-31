@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 HoursTag Lite - Vezi adevărata valoare a lucrurilor Fiecare achiziție costă ore din viața ta. HoursTag Lite transformă prețurile în timp de muncă — astfel încât să cheltuiești cu claritate. Descoperă prisma valorii - Cost în timp: Valoarea ta netă per oră lucrată - Tip: Necesitate - Dorintă - Impuls - Tiparul tău de valoare - Analiză completă a valorii - Ce va costa un obiectiv?: Vezi munca din spatele unui obiectiv — și urmărește-ți progresul. - Backup & restaurare: Include venituri, cheltuieli, obiective și preferințe. - Widget - Apple Watch Totul rămâne pe dispozitivul tău. Fără cont, fără urmărire. O singură plată · Acces pe viață · Fără abonament Alegeri și editări nelimitate Obiective și progres nelimitate Distribuire, analize și copii
 
 - Bani & călătorii
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - Fără cont
 - Fără urmărire
 - Privat / pe dispozitiv

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 BattAI BattAI menggunakan lima nilai daripada API awam iOS: aras bateri, keadaan pengecasan, Mod Kuasa Rendah, keadaan terma seluruh peranti dan masa. Hasil lain dikira daripada bacaan itu atau ditambah oleh anda. Setiap butiran menunjukkan sumber dan batasnya. Kesihatan • Skor kesihatan bateri • Faktor yang membentuk skor • Kapasiti maksimum mengikut masa • Kapasiti maksimum • Kitaran Pengecasan • Penjagaan pengecasan • Julat pengecasan • Kadar pengecasan Eksport data • Cipta fail pada peranti ini. Tiada apa-apa dimuat naik. • Dibina pada peranti ini. Tiada data dimuat naik. Privasi • Tiada iklan, analitik, penjejakan, SDK pihak ketiga atau permintaan internet. Data kekal di sini, kecuali petikan minimum yang dihantar terus ke Apple Watch pasangan anda. • BattAI hanya membaca kiraan kitaran, kapasiti cas nominal dan kapasiti reka bentuk. Data fail lain dibuang serta-merta dan tidak pernah disimpan atau dihantar. Fahami bateri anda dari semasa ke semasa • Buka sejarah lebih mendalam, perancangan dan laporan. • Satu bayaran. Tiada langganan.
 
 - Lagi
-- Percuma untuk bermula · buka kunci kekal
+- Percuma untuk bermula · buka kunci sekali sahaja
 - App Store · Percuma
 
 [Dapatkan BattAI: Skor kesihatan bateri di App Store](https://apps.apple.com/my/app/id6802423998?pt=118326163&ct=iag_data_ms&mt=8)

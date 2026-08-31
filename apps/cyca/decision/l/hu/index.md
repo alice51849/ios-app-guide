@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Egy olyan kategóriában, ahol az adatérzékenység a lényeg, a megfelelő menstruációs naptár mindent — vérzés, hangulat, tünetek, hőmérséklet, intimitás — az eszközödön tart, fiók és felhőszinkron nélkül — a Cyca erre készült.
 
 - Egészség
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - Privát / eszközön tárolt
 - App Store · Ingyenes
 

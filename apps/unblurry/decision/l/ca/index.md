@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Els nens no es queden quiets mai, així que les fotos desenfocades i tremolades són inevitables — Unblurry està dissenyada per això.
 
 - Fotografia i utilitat
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - Privat / en el dispositiu
 - App Store · Gratis
 

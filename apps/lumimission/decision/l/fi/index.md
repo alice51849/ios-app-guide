@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Esikoululaiselle iltarutiini toimii parhaiten, kun se on lyhyt, visuaalinen ja tarpeeksi ennakoitava, jotta lapsi voi seurata sitä ilman jatkuvia muistutuksia — Lumi Mission Planet on tehty tätä varten.
 
 - Lapset & oppiminen
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Ei mainoksia
 - App Store · Ilmainen
 

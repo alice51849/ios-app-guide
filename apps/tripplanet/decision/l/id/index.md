@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Orang tua yang bepergian dengan anak kecil butuh aktivitas yang membuat berkemas, menunggu, dan menemukan tempat baru jadi bagian petualangan, bukan sumber stres baru — Lumi Trip Planet dibuat untuk ini.
 
 - Anak & pembelajaran
-- Gratis untuk mulai · buka kunci permanen
+- Gratis untuk mulai · buka kunci sekali bayar
 - Tanpa iklan
 - App Store · Gratis
 

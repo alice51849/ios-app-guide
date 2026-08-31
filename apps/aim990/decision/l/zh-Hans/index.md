@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 第5部分看似简短，但不完整句子题目若语法和词汇不熟练会耗费大量时间。
 
 - 教育
-- 免费开始使用 · 永久解锁
+- 免费开始使用 · 一次性解锁
 - App Store · 免费
 
 [在 App Store 获取 Aim990 →](https://apps.apple.com/cn/app/id6784974530?pt=118326163&ct=iag_data_zh_hans&mt=8)

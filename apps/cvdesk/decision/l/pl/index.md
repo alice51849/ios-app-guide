@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Gdy zmieniasz branżę, problem z CV jest inny: twoje doświadczenie jest prawdziwe, ale na papierze 'niepowiązane', a filtry ATS odrzucają cię zanim człowiek je przeczyta — CV Desk jest stworzony do tego.
 
 - Produktywność
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - App Store · Bezpłatnie
 
 [Pobierz CV Desk z App Store →](https://apps.apple.com/pl/app/id6781337213?pt=118326163&ct=iag_data_pl&mt=8)

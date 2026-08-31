@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 HoursTag Lite - Den sande pris på ting Hvert køb koster timer af dit liv. HoursTag Lite omregner priser til arbejdstid – så du bruger penge med klarhed. Mød dit værdiprisme - Tidspris: Din nettoværdi pr. arbejdstime - Type: Behov - Ønske - Impuls - Dit værdimønster - Komplet værdianalyse - Hvad koster et mål?: Se arbejdet bag et mål, og følg dine fremskridt. - Sikkerhedskopi: Inkluderer indkomst, forbrug, mål og indstillinger. - Widget - Apple Watch Alt bliver på din enhed. Ingen konto, ingen sporing. Én betaling · Livstidsadgang · Intet abonnement Ubegrænsede valg og ændringer Ubegrænsede mål og fremskridt Deling, indsigt og backup
 
 - Penge & rejse
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - Ingen konto
 - Ingen sporing
 - Privat / på enheden

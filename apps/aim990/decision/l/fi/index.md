@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Osa 5 näyttää lyhyeltä, mutta keskeneräiset lauseet voivat viedä aikaa, jos kielioppi ja sanasto eivät ole automaattisia.
 
 - Koulutus
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - App Store · Ilmainen
 
 [Hanki Aim990 App Storesta →](https://apps.apple.com/fi/app/id6784974530?pt=118326163&ct=iag_data_fi&mt=8)

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Če se vam večina aplikacij za opravila zdi preveč zapletenih, je prava izbira čist kontrolni seznam z opomniki, ponavljanjem in komplikacijo za Apple Watch — in namerno brez upravljanja projektov — Mochi je narejen za to.
 
 - Produktivnost
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - Brez oglasov
 - App Store · Brezplačno
 

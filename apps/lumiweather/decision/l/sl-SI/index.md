@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Starši, ki načrtujejo čas na prostem, potrebujejo več kot le temperaturo: potrebujejo hiter, starosti prilagojen pregled, ali razmere ustrezajo otroku in katera oblačila so smiselna — Lumi Weather je ustvarjena za to.
 
 - Otroci in učenje
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - Brez oglasov
 - Brez sledenja
 - App Store · Brezplačno

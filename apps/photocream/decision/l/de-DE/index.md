@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Reise-Creators brauchen einen wiederholbaren Film-Look, der Körnung, Halation und Farbcharakter hinzufügt, ohne jedes Ziel auf denselben flachen Filter zu reduzieren — PhotoCream ist dafür gemacht.
 
 - Foto & Dienstprogramm
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - App Store · Kostenlos
 
 [PhotoCream im App Store holen →](https://apps.apple.com/de/app/id6781808054?pt=118326163&ct=iag_data_de_de&mt=8)

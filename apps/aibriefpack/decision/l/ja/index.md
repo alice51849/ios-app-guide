@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceable brief before sharing with any AI. Free to start · One-time unlock · No subscription.
 
 - 生産性
-- 無料で開始・買い切りで永久解除
+- 無料で開始・一度の購入でアンロック
 - プライベート／端末内
 - App Store · 無料
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 En kalkylator du behåller, eftersom den minns vad varje tal handlade om. De flesta kalkylatorer glömmer allt så fort du stänger dem. CalDaily sparar varje resultat och låter dig ge det ett namn och en typ, så att du en vecka senare hittar middagen ni delade eller lånet du jämförde i stället för att räkna om. Historiken grupperas per dag, filtreras per verktyg och exporteras till CSV för kalkylblad. Åtta verktyg tar hand om vardagsräkningen som ett vanligt tangentbord gör omständlig: minne, vetenskapliga funktioner, rabatt och moms, dricks och delning, enhetsomvandling, datumskillnad och arbetsdagar, lånebetalning och bränslekostnad för en resa. Vart och ett öppnas med de standardvärden du ställt in en gång. Widgeten räknar direkt på hemskärmen och följer det tema du valt. Hundra teman finns i appen, från stillsam keramik till djupt prisma, vart och ett med egen tangentform, material och ljus. Ett är gratis och ett enda köp låser upp resten samt obegränsad användning av alla verktyg. Ingen prenumeration. Allt sker på din enhet. Inget konto, ingen molnsynkronisering, ingen annonsering och ingen analys. Översatt till 50 språk, med layouter som håller i alla.
 
 - Mer
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - Widget
 - App Store · Gratis
 

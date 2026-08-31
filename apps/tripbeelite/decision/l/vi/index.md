@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Nếu bạn đang lên kế hoạch cho một hành trình sắp tới, một dòng thời gian yên tĩnh cho chuyến đi đó hữu ích hơn một kho lưu trữ đông đúc của mọi chuyến đi bạn có thể thực hiện một ngày nào đó — TripBee Lite được thiết kế cho điều này.
 
 - Du lịch
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - App Store · Miễn phí
 
 [Tải TripBee Lite trên App Store →](https://apps.apple.com/vn/app/id6791299610?pt=118326163&ct=iag_data_vi&mt=8)

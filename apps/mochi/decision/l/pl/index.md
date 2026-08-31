@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Jeśli większość aplikacji do zadań wydaje się przeładowana, właściwa to czysta lista z przypomnieniami, powtarzaniem i komplikacją na Apple Watch — i celowo bez mechanizmów zarządzania projektami — Mochi jest stworzona właśnie do tego.
 
 - Produktywność
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - Bez reklam
 - App Store · Bezpłatnie
 

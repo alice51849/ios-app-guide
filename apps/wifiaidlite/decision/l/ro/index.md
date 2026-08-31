@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Găsește problema reală. Fiecare instrument include o utilizare completă gratuită. Deblocare pe viață opțională, printr-o singură plată, pentru utilizare nelimitată—fără abonament, reclame sau urmărire. • Rulează un Test — Verificări Wi-Fi și DNS cu o atingere • Test Profund — Mai multe dovezi și mostre de stabilitate • Test Website — Un site sau întregul internet • Dovezi — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Conexiune instabilă — Variație • Istoric Teste — Înregistrări private doar pe acest dispozitiv • Nod conectat — Locația precisă identifică Wi-Fi-ul și nodul actual Fără cont, reclame sau urmărire. Înregistrări private doar pe acest dispozitiv. Fiecare instrument include o utilizare completă gratuită. Deblocare pe viață opțională, printr-o singură plată, pentru utilizare nelimitată—fără abonament, reclame sau urmărire.
 
 - Mai mult
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - Fără cont
 - App Store · Gratuit
 

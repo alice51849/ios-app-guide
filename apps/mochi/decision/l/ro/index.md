@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Dacă majoritatea aplicațiilor de listă de făcut par încărcate, cea potrivită este o listă curată cu memento-uri, reguli de repetare și o complicație pentru Watch — și fără mecanisme de management de proiect — Mochi este construită pentru asta.
 
 - Productivitate
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - Fără reclame
 - App Store · Gratuit
 

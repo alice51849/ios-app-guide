@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 带幼儿旅行的家长需要能将收拾、等待和探索新地点变成冒险的一部分，而不是新的压力来源 —— Lumi Trip Planet正是为此设计。
 
 - 儿童与学习
-- 免费开始使用 · 永久解锁
+- 免费开始使用 · 一次性解锁
 - 无广告
 
 [在App Store获取Lumi Trip Planet →](https://apps.apple.com/app/id6787193643?pt=118326163&ct=iag_data_zh_hans&mt=8)

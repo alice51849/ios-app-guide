@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 G+Money Lite — Smart resevaluta- & utgiftsspårare Reskassan, enkelt Registrera varje köp i lokal valuta och se det direkt i din egen valuta – online eller offline. Växla • Live- eller manuella kurser: Vi hämtar de senaste kurserna automatiskt, eller ange dem själv. Fungerar alltid offline. • Hämtar de senaste kurserna när du öppnar appen (ungefär var 6:e timme). Fungerar offline med dina sparade kurser. • Mittkurs som referens. Kort och kontanter kan skilja sig. Utgifter • Dagsbudget: Valfritt. Se hur varje dag ligger mot budgeten. • Per kategori · Resor · Filter · Poster • Säkerhetskopiera & återställ: Inkluderar utgifter, kurser, kategorier och inställningar. • Widget · Apple Watch Allt stannar på din enhet. Inget konto, ingen spårning. Kurser via en offentlig växelkurstjänst. Gratis: kurser, budget, översikt · 1 resa · 3 utgifter En betalning · Livstidsåtkomst · Ingen prenumeration Lås upp obegränsade utgifter och resor för alltid.
 
 - Ekonomi & resor
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - Offline
 - Inget konto
 - Ingen spårning

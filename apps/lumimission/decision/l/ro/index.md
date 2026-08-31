@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pentru un preșcolar, rutina de culcare funcționează cel mai bine când este scurtă, vizuală și suficient de previzibilă astfel încât copilul să o urmeze fără încă o rundă de reamintiri — Lumi Mission Planet este creată pentru acest scop.
 
 - Copii & învățare
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - Fără reclame
 - App Store · Gratuit
 

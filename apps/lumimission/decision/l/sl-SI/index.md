@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Za predšolskega otroka je večerna rutina najbolj učinkovita, če je kratka, vizualna in dovolj predvidljiva, da jo otrok lahko sledi brez dodatnih opomnikov — Lumi Mission Planet je ustvarjen za to.
 
 - Otroci in učenje
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - Brez oglasov
 - App Store · Brezplačno
 

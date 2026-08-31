@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Rejseindholdsskabere har brug for et gentageligt filmudtryk, der tilføjer korn, halering og farvekarakter uden at gøre alle destinationer ens — PhotoCream er udviklet til dette.
 
 - Foto & værktøj
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - App Store · Gratis
 
 [Hent PhotoCream i App Store →](https://apps.apple.com/dk/app/id6781808054?pt=118326163&ct=iag_data_da&mt=8)

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Ha egy közelgő utazást tervezel, egy nyugodt idővonal az adott útra hasznosabb, mint egy zsúfolt archívum minden lehetséges utazásodról – a TripBee Lite erre készült.
 
 - Utazás
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - App Store · Ingyenes
 
 [Szerezd be a TripBee Lite-ot az App Store-ból →](https://apps.apple.com/hu/app/id6791299610?pt=118326163&ct=iag_data_hu&mt=8)

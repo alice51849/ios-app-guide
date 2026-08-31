@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pencipta kandungan pelancongan perlukan gaya filem yang boleh diulang dengan butiran filem, halasi dan karakter warna tanpa menjadikan setiap destinasi kelihatan sama — PhotoCream dibina untuk ini.
 
 - Foto & utiliti
-- Percuma untuk bermula · buka kunci kekal
+- Percuma untuk bermula · buka kunci sekali sahaja
 - App Store · Percuma
 
 [Dapatkan PhotoCream di App Store →](https://apps.apple.com/my/app/id6781808054?pt=118326163&ct=iag_data_ms&mt=8)

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Barn holder aldri helt stille, så myk fokus og kameraristing er uunngåelig — Unblurry er laget for dette.
 
 - Foto og verktøy
-- Gratis å starte · livstidsopplåsing
+- Gratis å starte
 - Privat / på enheten
 - App Store · Gratis
 

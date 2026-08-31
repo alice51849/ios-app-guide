@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Om du planerar en kommande resa är en lugn tidslinje för just den resan mer användbar än ett överfullt arkiv med alla resor du kanske gör någon gång — TripBee Lite är byggd för detta.
 
 - Resor
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - App Store · Gratis
 
 [Hämta TripBee Lite i App Store →](https://apps.apple.com/se/app/id6791299610?pt=118326163&ct=iag_data_sv&mt=8)

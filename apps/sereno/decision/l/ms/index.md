@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Untuk tidur, langganan yang mengganggu setiap bulan adalah bertentangan dengan ketenangan — Sereno dibina untuk ini.
 
 - Tidur & fokus
-- Percuma untuk bermula · buka kunci kekal
+- Percuma untuk bermula · buka kunci sekali sahaja
 - Luar talian
 - Tiada iklan
 - App Store · Percuma

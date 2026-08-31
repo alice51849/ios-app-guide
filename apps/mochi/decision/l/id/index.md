@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Jika sebagian besar aplikasi daftar tugas terasa berat, yang tepat adalah daftar periksa bersih dengan pengingat, aturan pengulangan, dan komplikasi Watch — dan sengaja tanpa mesin manajemen proyek — Mochi dibuat untuk ini.
 
 - Produktivitas
-- Gratis untuk mulai · buka kunci permanen
+- Gratis untuk mulai · buka kunci sekali bayar
 - Tanpa iklan
 - App Store · Gratis
 

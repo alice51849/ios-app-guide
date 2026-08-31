@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.
 
 - 금융 & 여행
-- 무료로 시작 · 한 번 구매 잠금 해제
+- 무료로 시작 · 한 번 결제로 잠금 해제
 - 오프라인
 - 계정 없음
 - 추적 없음

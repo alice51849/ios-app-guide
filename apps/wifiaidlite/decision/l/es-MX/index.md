@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Cada herramienta incluye un uso gratuito. Desbloqueo de por vida opcional de un solo pago para uso ilimitado: sin suscripciones, anuncios ni rastreo. • Iniciar revisión — Revisa Wi-Fi, DNS e internet con un toque • Revisión profunda — Más pruebas y muestras de estabilidad • Revisar un sitio — Un sitio o todo internet • Pruebas — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Conexión inestable — Fluctuación • Historial de revisiones — Registros privados solo en este dispositivo • Nodo conectado — La ubicación precisa identifica el Wi-Fi y el nodo actual Sin cuenta, anuncios, análisis ni rastreo. Registros privados solo en este dispositivo. Cada herramienta incluye un uso gratuito. Desbloqueo de por vida opcional de un solo pago para uso ilimitado: sin suscripciones, anuncios ni rastreo.
 
 - Más
-- Gratis para empezar · desbloqueo permanente
+- Gratis para empezar · desbloqueo único
 - Sin cuenta
 - App Store · Gratis
 

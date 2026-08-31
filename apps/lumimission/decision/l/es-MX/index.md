@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Para un preescolar, una rutina para dormir funciona mejor cuando es corta, visual y lo suficientemente predecible para que el niño la siga sin otra ronda de recordatorios — Lumi Mission Planet está hecha para esto.
 
 - Niños y aprendizaje
-- Gratis para empezar · desbloqueo permanente
+- Gratis para empezar · desbloqueo único
 - Sin anuncios
 - App Store · Gratis
 

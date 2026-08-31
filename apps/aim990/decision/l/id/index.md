@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Bagian 5 terlihat singkat, tetapi pertanyaan kalimat tidak lengkap bisa menghabiskan waktu jika tata bahasa dan kosakata tidak otomatis.
 
 - Pendidikan
-- Gratis untuk mulai · buka kunci permanen
+- Gratis untuk mulai · buka kunci sekali bayar
 - App Store · Gratis
 
 [Dapatkan Aim990 di App Store →](https://apps.apple.com/id/app/id6784974530?pt=118326163&ct=iag_data_id&mt=8)

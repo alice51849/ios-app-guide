@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Når skiftet du sist sengetøy, vannet en plante, ringte familien, sikkerhetskopierte bilder eller byttet et filter? Mochi DoneStamp husker livets hendelser og er ikke enda en gjøremålsliste. Når noe er gjort, lagrer ett trykk det nøyaktige tidspunktet i en rolig historikk. Legg til en omtrentlig eller nøyaktig rytme ved behov. Neste dato regnes alltid på nytt fra da du faktisk ble ferdig. • Registrering med ett trykk og Angre • Legg til, rediger eller slett tidligere tidspunkt • Fleksible og nøyaktige rytmer fra minutter til år • Lokale varsler med Ferdig og Utsett • Interaktive widgeter på hjem- og låseskjerm • Siri, Snarveier, valgfrie notater og bilder • Intervallstatistikk, full backup og JSON-eksport • Mørk modus, iPad, VoiceOver og Dynamic Type Gratis får du én aktiv hendelse og ubegrenset historikk. Kjøp Lifetime Pro én gang for ubegrensede hendelser og alle funksjoner. Ingen konto, reklame, analyse eller sporing. Kjernedata blir på enheten. Aldri abonnement.
 
 - Livsstil
-- Gratis å starte · livstidsopplåsing
+- Gratis å starte
 - App Store · Gratis
 
 [Last ned Mochi DoneStamp: Sist fra App Store](https://apps.apple.com/no/app/id6790800323?pt=118326163&ct=iag_data_no&mt=8)

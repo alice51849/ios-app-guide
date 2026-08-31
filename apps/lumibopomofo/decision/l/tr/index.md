@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Zhuyin'i ilk kez öğrenen bir çocuk için, uygulama tüm 37 sembolü çizerek ve oynayarak kapsamalıdır — 4–7 yaş aralığı için tasarlanmış, reklamsız, veri toplanmayan — Lumi Bopomofo bu amaçla yapılmıştır.
 
 - Çocuklar & öğrenme
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - Reklam yok
 - App Store · Ücretsiz
 

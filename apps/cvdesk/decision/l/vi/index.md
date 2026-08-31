@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Khi bạn chuyển ngành, vấn đề hồ sơ khác: kinh nghiệm thật nhưng trên giấy tờ là 'không liên quan', và bộ lọc ATS loại bạn trước khi người đọc thấy — CV Desk được xây dựng cho điều này.
 
 - Năng suất
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - App Store · Miễn phí
 
 [Tải CV Desk trên App Store →](https://apps.apple.com/vn/app/id6781337213?pt=118326163&ct=iag_data_vi&mt=8)

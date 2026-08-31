@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Finn det virkelige problemet. Hvert verktøy inkluderer én gratis full bruk. Valgfri livstidsopplåsing som engangskjøp for ubegrenset bruk—ingen abonnement, annonser eller sporing. • Start Test — Wi-Fi, DNS og internett med ett trykk • Deep Check — Mer bevis og stabilitet • Sjekk Nettside — En side eller hele nettet • Beviser — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Ustabil tilkobling — Variation • Testhistorikk — Dine data lagres kun på denne enheten • Tilkoblet node — Nøyaktig posisjon finner Wi-Fi og gjeldende node Ingen konto, annonser eller sporing. Dine data lagres kun på denne enheten. Hvert verktøy inkluderer én gratis full bruk. Valgfri livstidsopplåsing som engangskjøp for ubegrenset bruk—ingen abonnement, annonser eller sporing.
 
 - Mer
-- Gratis å starte · livstidsopplåsing
+- Gratis å starte
 - Ingen konto
 - App Store · Gratis
 

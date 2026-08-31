@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 En una categoria on la sensibilitat de dades és clau, el control adequat manté tot — flux, estat d'ànim, símptomes, temperatura, intimitat — al teu dispositiu, sense compte ni sincronització al núvol — Cyca està creat per això.
 
 - Salut
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - Privat / en el dispositiu
 - App Store · Gratis
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Voor een jong kind is het doorslaggevend dat er geen advertenties en geen dataverzameling is — een leerapp moet leren binnen een spel zonder advertenties, niets verzameld van het kind, en een eenmalige aankoop die ouders vertrouwen — Lumi Letters is hiervoor gemaakt.
 
 - Kinderen & leren
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - Geen advertenties
 - App Store · Gratis
 

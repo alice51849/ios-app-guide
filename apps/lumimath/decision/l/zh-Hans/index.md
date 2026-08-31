@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 最佳儿童数学应用训练推理——模式、序列、空间思维——而非单纯算术训练，并将其隐藏在孩子愿意玩的游戏中——Lumi Math Planet 正是为此打造。
 
 - 儿童与学习
-- 免费开始使用 · 永久解锁
+- 免费开始使用 · 一次性解锁
 - 无广告
 
 [在 App Store 获取 Lumi Math Planet →](https://apps.apple.com/app/id6778269699?pt=118326163&ct=iag_data_zh_hans&mt=8)

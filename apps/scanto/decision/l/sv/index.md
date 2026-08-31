@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Om du skannar patienters samtyckesformulär, utskrivningspapper eller remisser måste skannern hålla dessa papper på enheten – aldrig uppladdade till någon annans moln – ScanTo Pro är byggd för detta.
 
 - Produktivitet
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - Privat / på enheten
 - App Store · Gratis
 

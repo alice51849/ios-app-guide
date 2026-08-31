@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista neta amb recordatoris, regles de repetició i una complicació per a Watch — i deliberadament sense maquinària de gestió de projectes — Mochi està feta per això.
 
 - Productivitat
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - Sense anuncis
 - App Store · Gratis
 

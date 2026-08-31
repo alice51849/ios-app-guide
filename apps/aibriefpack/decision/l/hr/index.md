@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Bolji kontekst. Bolji odgovori. Pretvorite snimke zaslona, datoteke, bilješke i dokumente u jedan jasan sažetak spreman za AI. OBJEDINITE CIJELI KONTEKST • Dodajte snimke zaslona, PDF-ove, datoteke, kopirani tekst, bilješke ili poveznice. Vi birate što ulazi u konačni sažetak. • OCR, čitanje PDF-ova, provjera duplikata, izdvajanje činjenica i otkrivanje privatnih podataka koriste Appleove okvire lokalno na uređaju. • Odaberite jedan ili više izvora iznad. Obrada počinje tek kada nastavite. PROVJERITE ČINJENICE PRIJE NEGO ŠTO IH AI VIDI • Svaka činjenica zadržava izvor i razinu pouzdanosti. Ispravite sve što zahtijeva dodatni kontekst. • Pronađite činjenice, proturječnosti i otvorena pitanja • Provjerite svaku činjenicu, izvor i razinu pouzdanosti prije nego što ih AI vidi. ZAŠTITITE PRIVATNOST • Otkriveni podaci nikada se ne uklanjaju automatski. Prije izvoza svaki podatak zadržite, zamijenite ili uklonite. • Za svako otkriće odaberite zadržavanje, zamjenu ili uklanjanje. AI Brief ne jamči anonimnost. • Zamjene i uklanjanja primjenjuju se pri izvozu. ČIST KONTEKST ZA BILO KOJEG AI ASISTENTA • Strukturirani naslovi i format spreman za izvore • Izradite kontekst jednom. Upotrijebite ga ponovno kad god želite. • Kopiraj AI sažetak • Povijest verzija • Namjenski predlošci VAŠ KONTEKST OSTAJE PRIVATAN • AI Brief ne sadrži oglase trećih strana, praćenje, analitiku ni telemetriju sadržaja. • Pregledajte sažetak prije slanja bilo kojoj AI usluzi.
 
 - Produktivnost
-- Besplatno za početak · doživotno otključavanje
+- Besplatno za početak
 - Privatno / na uređaju
 - App Store · Besplatno
 

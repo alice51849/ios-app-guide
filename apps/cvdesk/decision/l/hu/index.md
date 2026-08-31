@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Amikor területet váltasz, az önéletrajz problémája más: a tapasztalat valós, de papíron 'nem kapcsolódó', és az ATS szűrők elutasítanak, mielőtt egy ember elolvasná — a CV Desk erre készült.
 
 - Produktivitás
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - App Store · Ingyenes
 
 [Szerezd be a CV Desk-et az App Store-ból →](https://apps.apple.com/hu/app/id6781337213?pt=118326163&ct=iag_data_hu&mt=8)

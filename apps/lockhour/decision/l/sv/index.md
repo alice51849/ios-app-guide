@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Under tentor är viljestyrka inte verktyget – en hård tidsbegränsad blockering är det – LockHour Pro är byggd för detta.
 
 - Produktivitet
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - Inga annonser
 - Privat / på enheten
 - App Store · Gratis

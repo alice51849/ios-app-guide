@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Chaque outil inclut une utilisation complète gratuite. Déblocage à vie unique en option pour un accès illimité : pas d'abonnement, ni pub, ni suivi. • Lancer un test — Tests Wi-Fi et DNS en un geste • Test complet — Preuves et stabilité réseau • Tester un site — Un site ou l'internet global • Preuves — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connexion instable — Gigue • Historique — Données privées locales uniquement • Nœud connecté — La position précise identifie le Wi-Fi et le nœud actuel Sans compte, pub, ni suivi. Données privées locales uniquement. Chaque outil inclut une utilisation complète gratuite. Déblocage à vie unique en option pour un accès illimité : pas d'abonnement, ni pub, ni suivi.
 
 - Plus
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - Sans compte
 - App Store · Gratuit
 

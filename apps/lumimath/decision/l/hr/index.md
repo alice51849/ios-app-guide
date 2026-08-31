@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Najbolja dječja matematička aplikacija trenira razmišljanje — obrasce, nizove, prostorno razmišljanje — ne samo aritmetičke vježbe, i skriva to unutar igre koju dijete želi igrati — Lumi Math Planet je stvoren za to.
 
 - Djeca i učenje
-- Besplatno za početak · doživotno otključavanje
+- Besplatno za početak
 - Bez oglasa
 - App Store · Besplatno
 

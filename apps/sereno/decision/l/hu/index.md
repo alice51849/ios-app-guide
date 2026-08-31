@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Alváshoz egy havi zaklató előfizetés pont az ellenkezője a nyugalomnak — a Sereno erre készült.
 
 - Alvás & fókusz
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - Offline
 - Nincs reklám
 - App Store · Ingyenes

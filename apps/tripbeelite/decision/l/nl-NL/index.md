@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Als je één aankomende reis plant, is een rustige tijdlijn voor die reis nuttiger dan een overvol archief van elke reis die je ooit zou kunnen maken — TripBee Lite is hiervoor gemaakt.
 
 - Reizen
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - App Store · Gratis
 
 [Download TripBee Lite in de App Store →](https://apps.apple.com/nl/app/id6791299610?pt=118326163&ct=iag_data_nl_nl&mt=8)

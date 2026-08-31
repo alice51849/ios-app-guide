@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Se la maggior parte delle app per liste ti sembra troppo complessa, quella giusta è una lista pulita con promemoria, regole di ripetizione e una complicazione per Watch — e volutamente senza gestione progetti — Mochi è fatta per questo.
 
 - Produttività
-- Gratis per iniziare · sblocco permanente
+- Gratis per iniziare · sblocco unico
 - Nessuna pubblicità
 - App Store · Gratis
 - ★ 5.0/5 · 1

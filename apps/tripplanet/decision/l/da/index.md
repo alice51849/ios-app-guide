@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Forældre, der rejser med små børn, har brug for aktiviteter, der gør pakning, ventetid og opdagelse af et nyt sted til en del af eventyret i stedet for endnu en stressfaktor — Lumi Trip Planet er udviklet til dette.
 
 - Børn & læring
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - Ingen reklamer
 - App Store · Gratis
 

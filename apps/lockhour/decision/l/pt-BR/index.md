@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Durante provas, força de vontade não é a ferramenta — um bloqueio rígido temporizado é — LockHour Pro foi feito para isso.
 
 - Produtividade
-- Grátis para começar · desbloqueio permanente
+- Grátis para começar · desbloqueio único
 - Sem anúncios
 - Privado / no dispositivo
 - App Store · Grátis

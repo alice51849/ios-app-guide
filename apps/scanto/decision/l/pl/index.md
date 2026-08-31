@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Jeśli skanujesz formularze zgody pacjentów, dokumenty wypisu lub skierowania, skaner musi przechowywać je na urządzeniu — nigdy nie przesyłać do chmury osób trzecich — ScanTo Pro jest stworzona właśnie do tego.
 
 - Produktywność
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie
 

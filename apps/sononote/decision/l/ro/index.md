@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 După un apel nu vrei o transcriere brută — vrei rezumatul, punctele de acțiune și un draft de urmărire — Sono Note este construit pentru asta.
 
 - Productivitate
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - Privat / pe dispozitiv
 - App Store · Gratuit
 

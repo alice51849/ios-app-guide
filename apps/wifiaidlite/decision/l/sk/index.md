@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Nájdite skutočný problém. Každý nástroj zahŕňa jedno bezplatné plné použitie. Voliteľné jednorazové doživotné odomknutie pre neobmedzené používanie—bez predplatného, reklám a sledovania. • Spustiť — Wi-Fi, DNS a internet jedným ťuknutím • Deep Check — Viac dôkazov a stabilita • Test Webstránky — Jeden web alebo celý internet • Dôkazy — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Pripojenie je nestabilné — Kolísanie (Jitter) • História — Údaje sú uložené iba na tomto zariadení • Pripojený uzol — Presná poloha rozpozná Wi-Fi a aktuálny uzol Žiadne účty, reklamy alebo sledovanie. Údaje sú uložené iba na tomto zariadení. Každý nástroj zahŕňa jedno bezplatné plné použitie. Voliteľné jednorazové doživotné odomknutie pre neobmedzené používanie—bez predplatného, reklám a sledovania.
 
 - Viac
-- Zadarmo na začiatok · doživotné odomknutie
+- Zadarmo na začiatok
 - Bez účtu
 - App Store · Zadarmo
 

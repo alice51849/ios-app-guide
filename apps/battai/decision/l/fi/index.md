@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 BattAI BattAI käyttää viittä julkisten iOS-API:en arvoa: akun varaustasoa, lataustilaa, virransäästötilaa, koko laitteen lämpötilaa kuvaavaa tilaa ja aikaa. Muut tulokset lasketaan näistä lukemista tai lisäämistäsi tiedoista. Jokainen tieto kertoo lähteen ja rajat. Kunto • Akun kuntotulos • Mistä tulos muodostuu • Enimmäiskapasiteetti ajan myötä • Enimmäiskapasiteetti • Lataussyklit Lataus • Lataushuolto • Latausväli • Latausnopeus Vie tiedot • Luo tiedosto tällä laitteella. Mitään ei lähetetä. • Luodaan tällä laitteella. Tietoja ei lähetetä. Tietosuoja • Ei mainoksia, analytiikkaa, seurantaa, kolmannen osapuolen SDK:ita tai internet-pyyntöjä. Tiedot pysyvät täällä lukuun ottamatta pientä tilannekuvaa, joka lähetetään suoraan paritetulle Apple Watchille. • BattAI lukee vain syklimäärän, nimellisen latauskapasiteetin ja suunnitellun kapasiteetin. Muut tiedot hylätään heti eikä niitä koskaan tallenneta tai lähetetä. Ymmärrä akkusi kehitys • Avaa syvempi historia, suunnittelu ja raportit. • Yksi maksu. Ei tilausta.
 
 - Lisää
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - App Store · Ilmainen
 
 [Lataa BattAI: Akun kuntotulos App Storesta](https://apps.apple.com/fi/app/id6802423998?pt=118326163&ct=iag_data_fi&mt=8)

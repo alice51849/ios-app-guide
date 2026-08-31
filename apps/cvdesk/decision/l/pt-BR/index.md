@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Quando você muda de área, o problema do currículo é diferente: sua experiência é real, mas 'não relacionada' no papel, e os filtros ATS rejeitam você antes que um humano leia — o CV Desk foi criado para isso.
 
 - Produtividade
-- Grátis para começar · desbloqueio permanente
+- Grátis para começar · desbloqueio único
 - App Store · Grátis
 
 [Obtenha o CV Desk na App Store →](https://apps.apple.com/br/app/id6781337213?pt=118326163&ct=iag_data_pt_br&mt=8)

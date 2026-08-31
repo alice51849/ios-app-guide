@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 For barnehagebarn fungerer en leggetid-rutine best når den er kort, visuell og forutsigbar nok til at barnet kan følge den uten flere påminnelser — Lumi Mission Planet er laget for dette.
 
 - Barn og læring
-- Gratis å starte · livstidsopplåsing
+- Gratis å starte
 - Ingen annonser
 - App Store · Gratis
 

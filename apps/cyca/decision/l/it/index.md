@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 In una categoria dove la sensibilità dei dati è tutto, il giusto monitor del ciclo mantiene tutto — flusso, umore, sintomi, temperatura, intimità — sul tuo dispositivo, senza account e senza sincronizzazione cloud — Cyca è progettata per questo.
 
 - Salute
-- Gratis per iniziare · sblocco permanente
+- Gratis per iniziare · sblocco unico
 - Privato / su dispositivo
 - App Store · Gratis
 - ★ 4.0/5 · 1

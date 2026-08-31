@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Børn står aldrig stille, så bløde og rystede billeder er uundgåelige — Unblurry er skabt til dette.
 
 - Foto & værktøj
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - Privat / på enheden
 - App Store · Gratis
 

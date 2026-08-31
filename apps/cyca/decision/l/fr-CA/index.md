@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Dans une catégorie où la sensibilité des données est primordiale, le bon suivi des règles garde tout — flux, humeur, symptômes, température, intimité — sur votre appareil, sans compte ni synchronisation cloud — Cyca est conçu pour cela.
 
 - Santé
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - Privé / sur l'appareil
 - App Store · Gratuit
 

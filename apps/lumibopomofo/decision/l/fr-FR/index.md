@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pour un enfant qui apprend le Zhuyin, l’application doit couvrir les 37 symboles par traçage et jeu — conçue pour la tranche d’âge 4–7 ans, sans publicité, sans collecte de données — Lumi Bopomofo est faite pour cela.
 
 - Enfants & apprentissage
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - Sans publicité
 - App Store · Gratuit
 

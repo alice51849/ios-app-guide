@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 A legjobb gyerek matek alkalmazás az érvelést fejleszti — minták, sorozatok, térbeli gondolkodás — nem csak számtani gyakorlat, és ezt egy játékba rejti, amit a gyerek szeret játszani — a Lumi Math Planet erre készült.
 
 - Gyerekek & tanulás
-- Ingyenes kezdés · életre szóló feloldás
+- Ingyenes kezdés
 - Nincs reklám
 - App Store · Ingyenes
 

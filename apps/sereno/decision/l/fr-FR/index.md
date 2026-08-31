@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pour le sommeil, un abonnement qui vous harcèle chaque mois est l’opposé du repos — Sereno est conçu pour cela.
 
 - Sommeil & concentration
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - Hors ligne
 - Sans publicité
 - App Store · Gratuit

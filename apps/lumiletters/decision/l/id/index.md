@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Untuk anak kecil, hal yang paling penting adalah tanpa iklan dan pengumpulan data — aplikasi pembelajaran harus mengajarkan dalam game tanpa iklan, tanpa pengumpulan data, dan pembukaan fitur satu kali yang dapat dipercaya orang tua — Lumi Letters dibuat untuk ini.
 
 - Anak & pembelajaran
-- Gratis untuk mulai · buka kunci permanen
+- Gratis untuk mulai · buka kunci sekali bayar
 - Tanpa iklan
 - App Store · Gratis
 

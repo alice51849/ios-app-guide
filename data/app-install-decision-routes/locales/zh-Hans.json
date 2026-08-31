@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "zh-Hans",
   "dateModified": "2026-08-31",
-  "content_digest": "62b4c7adca57fcc7bace85883f82d839e3481d094135f769f32694f884f10b2c",
-  "generation_digest": "aab41b775fcd9834047296d9f70fe89d23a5c2f5df2d28f5897a360179b5a6aa",
+  "content_digest": "85b32c610fe6040bd313c8fca0a92af493c7144940280206022887cd5c90b248",
+  "generation_digest": "c05963eb487fc384a51a2d270335a83c48359ec1f8d26f89fab7df58a7e2f78d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -29,7 +29,7 @@
       "category": "photo-utility",
       "category_label": "照片与工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -41,7 +41,7 @@
       "device_labels": [],
       "badge_labels": [
         "照片与工具",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "私密 / 设备本地",
         "App Store · 免费"
       ],
@@ -124,7 +124,7 @@
       "category": "lifestyle",
       "category_label": "生活方式",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -132,7 +132,7 @@
       "device_labels": [],
       "badge_labels": [
         "生活方式",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/mochidonestamp.html",
@@ -169,7 +169,7 @@
       "category": "productivity",
       "category_label": "效率",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -185,7 +185,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "离线",
         "无需账户",
         "私密 / 设备本地",
@@ -225,7 +225,7 @@
       "category": "productivity",
       "category_label": "效率",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -237,7 +237,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "私密 / 设备本地",
         "App Store · 免费"
       ],
@@ -275,7 +275,7 @@
       "category": "education",
       "category_label": "教育",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -283,7 +283,7 @@
       "device_labels": [],
       "badge_labels": [
         "教育",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -365,7 +365,7 @@
       "category": "utility",
       "category_label": "更多",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -373,7 +373,7 @@
       "device_labels": [],
       "badge_labels": [
         "更多",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/battai.html",
@@ -410,7 +410,7 @@
       "category": "utility",
       "category_label": "更多",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -422,7 +422,7 @@
       ],
       "badge_labels": [
         "更多",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "小组件",
         "App Store · 免费"
       ],
@@ -460,7 +460,7 @@
       "category": "productivity",
       "category_label": "效率",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -468,7 +468,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -505,7 +505,7 @@
       "category": "health",
       "category_label": "健康",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -517,7 +517,7 @@
       "device_labels": [],
       "badge_labels": [
         "健康",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "私密 / 设备本地",
         "App Store · 免费"
       ],
@@ -605,7 +605,7 @@
       "category": "kids",
       "category_label": "儿童与学习",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -613,7 +613,7 @@
       "device_labels": [],
       "badge_labels": [
         "儿童与学习",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/dailymatelite.html",
@@ -703,7 +703,7 @@
       "category": "finance",
       "category_label": "理财与出行",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -727,7 +727,7 @@
       ],
       "badge_labels": [
         "理财与出行",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "离线",
         "无需账户",
         "无跟踪",
@@ -770,7 +770,7 @@
       "category": "finance",
       "category_label": "理财与出行",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
@@ -792,7 +792,7 @@
       ],
       "badge_labels": [
         "理财与出行",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "无需账户",
         "无跟踪",
         "私密 / 设备本地",
@@ -887,7 +887,7 @@
       "category": "productivity",
       "category_label": "效率",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -901,7 +901,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "无广告",
         "私密 / 设备本地",
         "App Store · 免费"
@@ -940,7 +940,7 @@
       "category": "kids",
       "category_label": "儿童与学习",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -952,7 +952,7 @@
       "device_labels": [],
       "badge_labels": [
         "儿童与学习",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "无广告"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
@@ -1030,7 +1030,7 @@
       "category": "kids",
       "category_label": "儿童与学习",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1042,7 +1042,7 @@
       "device_labels": [],
       "badge_labels": [
         "儿童与学习",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "无广告"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
@@ -1120,7 +1120,7 @@
       "category": "kids",
       "category_label": "儿童与学习",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1132,7 +1132,7 @@
       "device_labels": [],
       "badge_labels": [
         "儿童与学习",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "无广告"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
@@ -1210,7 +1210,7 @@
       "category": "kids",
       "category_label": "儿童与学习",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1222,7 +1222,7 @@
       "device_labels": [],
       "badge_labels": [
         "儿童与学习",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "无广告",
         "App Store · 免费"
       ],
@@ -1310,7 +1310,7 @@
       "category": "kids",
       "category_label": "儿童与学习",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1322,7 +1322,7 @@
       "device_labels": [],
       "badge_labels": [
         "儿童与学习",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "无广告"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-travel-activity-app-for-kids-on-family-trips.html",
@@ -1355,7 +1355,7 @@
       "category": "kids",
       "category_label": "儿童与学习",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -1369,7 +1369,7 @@
       "device_labels": [],
       "badge_labels": [
         "儿童与学习",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "无广告",
         "无跟踪",
         "App Store · 免费"
@@ -1408,7 +1408,7 @@
       "category": "productivity",
       "category_label": "效率",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1420,7 +1420,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "无广告",
         "App Store · 免费"
       ],
@@ -1458,7 +1458,7 @@
       "category": "finance",
       "category_label": "理财与出行",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -1484,7 +1484,7 @@
       ],
       "badge_labels": [
         "理财与出行",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "离线",
         "无需账户",
         "无广告",
@@ -1528,7 +1528,7 @@
       "category": "productivity",
       "category_label": "效率",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1536,7 +1536,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/onepageppt.html",
@@ -1573,7 +1573,7 @@
       "category": "photo-utility",
       "category_label": "照片与工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1581,7 +1581,7 @@
       "device_labels": [],
       "badge_labels": [
         "照片与工具",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -1618,7 +1618,7 @@
       "category": "photo-utility",
       "category_label": "照片与工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1630,7 +1630,7 @@
       "device_labels": [],
       "badge_labels": [
         "照片与工具",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "私密 / 设备本地",
         "App Store · 免费"
       ],
@@ -1668,7 +1668,7 @@
       "category": "productivity",
       "category_label": "效率",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1676,7 +1676,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/savetag.html",
@@ -1713,7 +1713,7 @@
       "category": "productivity",
       "category_label": "效率",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1725,7 +1725,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "私密 / 设备本地",
         "App Store · 免费"
       ],
@@ -1763,7 +1763,7 @@
       "category": "sleep-sound",
       "category_label": "睡眠与专注",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -1777,7 +1777,7 @@
       "device_labels": [],
       "badge_labels": [
         "睡眠与专注",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "离线",
         "无广告",
         "App Store · 免费"
@@ -1816,7 +1816,7 @@
       "category": "photo-utility",
       "category_label": "照片与工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1824,7 +1824,7 @@
       "device_labels": [],
       "badge_labels": [
         "照片与工具",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/shotinbox.html",
@@ -1911,7 +1911,7 @@
       "category": "photo-utility",
       "category_label": "照片与工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -1923,7 +1923,7 @@
       "device_labels": [],
       "badge_labels": [
         "照片与工具",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "离线",
         "App Store · 免费"
       ],
@@ -1961,7 +1961,7 @@
       "category": "productivity",
       "category_label": "效率",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1973,7 +1973,7 @@
       "device_labels": [],
       "badge_labels": [
         "效率",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "私密 / 设备本地",
         "App Store · 免费"
       ],
@@ -2011,7 +2011,7 @@
       "category": "travel",
       "category_label": "出行",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -2019,7 +2019,7 @@
       "device_labels": [],
       "badge_labels": [
         "出行",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "App Store · 免费"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -2112,7 +2112,7 @@
       "category": "photo-utility",
       "category_label": "照片与工具",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -2124,7 +2124,7 @@
       "device_labels": [],
       "badge_labels": [
         "照片与工具",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "私密 / 设备本地",
         "App Store · 免费"
       ],
@@ -2162,7 +2162,7 @@
       "category": "utility",
       "category_label": "更多",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "no_account"
@@ -2174,7 +2174,7 @@
       "device_labels": [],
       "badge_labels": [
         "更多",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "无需账户",
         "App Store · 免费"
       ],
@@ -2212,7 +2212,7 @@
       "category": "kids",
       "category_label": "儿童与学习",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "免费开始使用 · 永久解锁",
+      "purchase_label": "免费开始使用 · 一次性解锁",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -2224,7 +2224,7 @@
       "device_labels": [],
       "badge_labels": [
         "儿童与学习",
-        "免费开始使用 · 永久解锁",
+        "免费开始使用 · 一次性解锁",
         "离线",
         "App Store · 免费"
       ],

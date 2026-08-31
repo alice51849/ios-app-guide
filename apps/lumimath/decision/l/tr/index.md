@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 En iyi çocuk matematik uygulaması, mantık eğitimi verir — kalıplar, diziler, mekansal düşünme — sadece aritmetik alıştırması değil, ve bunu çocuğun oynamak istediği bir oyunun içinde gizler — Lumi Math Planet bu amaçla yapılmıştır.
 
 - Çocuklar & öğrenme
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - Reklam yok
 - App Store · Ücretsiz
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Para crianças pequenas, uma rotina noturna funciona melhor quando é curta, visual e previsível o suficiente para que a criança siga sem precisar de mais lembretes — Lumi Mission Planet foi criado para isso.
 
 - Infantil e aprendizado
-- Grátis para começar · desbloqueio permanente
+- Grátis para começar · desbloqueio único
 - Sem anúncios
 - App Store · Grátis
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 For at frigøre plads hurtigt, fokuser på de største gevinster først: nøjagtige dubletfotos, næsten identiske burst-billeder, slørede afviste og store videoer — PicClear hjælper dig med det på din iPhone.
 
 - Foto & værktøj
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - Privat / på enheden
 - App Store · Gratis
 

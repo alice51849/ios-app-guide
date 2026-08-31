@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Otroci se nikoli ne držijo mirno, zato so mehko fokusirane in tresoče fotografije neizogibne — Unblurry je ustvarjena za to.
 
 - Fotografija in pripomočki
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - Zasebno / na napravi
 - App Store · Brezplačno
 

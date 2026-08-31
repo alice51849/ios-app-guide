@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Rodiče plánující venkovní čas potřebují víc než jen teplotu: potřebují rychlý, věkově přizpůsobený pohled na to, zda podmínky vyhovují dítěti a jaké oblečení je vhodné — Lumi Weather je pro toto vytvořen.
 
 - Děti a učení
-- Zdarma na začátek · doživotní odemknutí
+- Zdarma na začátek
 - Bez reklam
 - Bez sledování
 - App Store · Zdarma

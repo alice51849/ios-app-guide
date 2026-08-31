@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Tìm ra sự cố thực sự. Mỗi công cụ bao gồm một lần dùng đầy đủ miễn phí. Mở khóa trọn đời một lần tùy chọn để dùng không giới hạn—không thuê bao, quảng cáo hay theo dõi. • Chạy kiểm tra — Kiểm tra Wi-Fi, DNS và mạng chỉ với một chạm • Kiểm tra chuyên sâu — Thêm bằng chứng và kiểm tra độ ổn định • Kiểm tra trang web — Kiểm tra một trang hoặc toàn bộ mạng • Bằng chứng — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Kết nối có vẻ không ổn định — Độ trễ biến động • Lịch sử kiểm tra — Hồ sơ riêng tư chỉ lưu trên thiết bị này • Nút đang kết nối — Vị trí chính xác nhận diện Wi-Fi và nút hiện tại Không tài khoản, quảng cáo, phân tích hay theo dõi. Hồ sơ riêng tư chỉ lưu trên thiết bị này. Mỗi công cụ bao gồm một lần dùng đầy đủ miễn phí. Mở khóa trọn đời một lần tùy chọn để dùng không giới hạn—không thuê bao, quảng cáo hay theo dõi.
 
 - Khác
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - Không tài khoản
 - App Store · Miễn phí
 

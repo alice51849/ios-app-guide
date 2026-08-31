@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Betere context. Betere antwoorden. Verander schermafbeeldingen, bestanden, notities en documenten in één overzichtelijke AI-klare briefing. BRENG DE VOLLEDIGE CONTEXT • Voeg schermafbeeldingen, PDF's, bestanden, gekopieerde tekst, notities of links toe. Jij bepaalt wat er in de uiteindelijke briefing blijft staan. • OCR, PDF-lezen, duplicaatcontrole, feitenextractie en privacydetectie gebruiken Apple-frameworks lokaal. • Kies een of meer bronnen hierboven. Verwerking begint pas wanneer je doorgaat. VERIFIEER DE FEITEN VOORDAT AI ZE ZIET • Elk feit behoudt zijn bron en vertrouwen. Corrigeer alles wat context nodig heeft. • Zoek feiten, conflicten en open vragen • Controleer elk feit, elke bron en de betrouwbaarheid voordat de AI het ziet. BESCHERM JE PRIVACY • Gedetecteerde details worden nooit automatisch verwijderd. Behoud, vervang of verwijder elk item voor het exporteren. • Behoud, vervang of verwijder elke detectie. AI Brief belooft nooit anonimiteit. • Bij uitvoer worden vervangingen en verwijderingen toegepast. SCHONE CONTEXT VOOR ELKE AI-ASSISTENT • Gestructureerde kopjes en opmaak klaar voor bronnen • Bouw eenmalig context op. Hergebruik die wanneer je wilt. • Kopieer AI-briefing • Versiegeschiedenis • Speciaal ontworpen sjablonen JE CONTEXT BLIJFT PRIVÉ • AI Brief bevat geen advertenties van derden, tracking, analytics of content telemetrie. • Controleer de briefing voordat je deze naar een AI-dienst stuurt.
 
 - Productiviteit
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - Privé / op apparaat
 - App Store · Gratis
 

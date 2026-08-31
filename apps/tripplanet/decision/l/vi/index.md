@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Phụ huynh đi du lịch cùng trẻ nhỏ cần hoạt động biến việc chuẩn bị hành lý, chờ đợi và khám phá nơi mới thành một phần của chuyến đi thay vì thêm căng thẳng — Lumi Trip Planet được xây dựng cho nhu cầu này.
 
 - Trẻ em & học tập
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - Không quảng cáo
 - App Store · Miễn phí
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Za spanje je naročnina, ki vas vsak mesec nadleguje, ravno nasprotje sprostitve — Sereno je ustvarjeno za to.
 
 - Spanec in osredotočenost
-- Brezplačen začetek · doživljenjska odklenitev
+- Brezplačen začetek
 - Brez povezave
 - Brez oglasov
 - App Store · Brezplačno

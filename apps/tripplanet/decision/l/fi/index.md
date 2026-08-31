@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Vanhemmat, jotka matkustavat pienten lasten kanssa, tarvitsevat aktiviteetteja, jotka tekevät pakkauksesta, odottamisesta ja uuden paikan tutkimisesta osan seikkailua, eivät lisästressiä — Lumi Trip Planet on tehty tätä varten.
 
 - Lapset & oppiminen
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Ei mainoksia
 - App Store · Ilmainen
 

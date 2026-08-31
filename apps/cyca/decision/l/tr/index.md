@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Veri hassasiyetinin tüm hikaye olduğu bir kategoride, doğru adet takip uygulaması her şeyi — akış, ruh hali, belirtiler, sıcaklık, yakınlık — cihazınızda, hesap veya bulut senkronizasyonu olmadan tutar — Cyca bunun için tasarlandı.
 
 - Sağlık
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - Gizli / cihazda
 - App Store · Ücretsiz
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Orang tua yang merencanakan waktu luar ruangan butuh lebih dari suhu: mereka butuh pandangan cepat, sesuai usia, apakah kondisi cocok untuk anak dan pakaian apa yang masuk akal — Lumi Weather dibuat untuk ini.
 
 - Anak & pembelajaran
-- Gratis untuk mulai · buka kunci permanen
+- Gratis untuk mulai · buka kunci sekali bayar
 - Tanpa iklan
 - Tanpa pelacakan
 - App Store · Gratis

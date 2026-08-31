@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Hasta onay formları, taburcu evrakları veya sevkleri tarıyorsanız, tarayıcı bu evrakları cihazda tutmalı — asla başkasının bulutuna yüklenmemeli — ScanTo Pro bu amaçla yapılmıştır.
 
 - Verimlilik
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - Gizli / cihazda
 - App Store · Ücretsiz
 

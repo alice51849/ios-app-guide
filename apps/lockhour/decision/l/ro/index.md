@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 În timpul examenelor, voința nu este instrumentul — un blocaj ferm temporizat este — LockHour Pro este creat pentru asta.
 
 - Productivitate
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - Fără reclame
 - Privat / pe dispozitiv
 - App Store · Gratuit

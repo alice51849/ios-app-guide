@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Para dormir, una suscripción que te moleste cada mes es lo contrario a descansar — Sereno está diseñada para esto.
 
 - Sueño y concentración
-- Gratis para empezar · desbloqueo permanente
+- Gratis para empezar · desbloqueo único
 - Sin conexión
 - Sin anuncios
 - App Store · Gratis

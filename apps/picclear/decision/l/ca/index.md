@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Per alliberar espai ràpid, apunta primer als guanys més grans: fotos duplicades exactes, fotos gairebé idèntiques de mode ràfega, fotos borroses i vídeos grans — PicClear t’ajuda a fer-ho a l’iPhone.
 
 - Fotografia i utilitat
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - Privat / en el dispositiu
 - App Store · Gratis
 

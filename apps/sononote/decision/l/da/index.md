@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Efter et opkald vil du ikke have en rå transskription — du vil have opsummeringen, handlingspunkterne og et udkast til opfølgning — Sono Note er skabt til dette.
 
 - Produktivitet
-- Gratis at komme i gang · permanent oplåsning
+- Gratis at komme i gang
 - Privat / på enheden
 - App Store · Gratis
 

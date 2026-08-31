@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Löydä oikea ongelma. Jokainen työkalu sisältää yhden ilmaisen täyden käytön. Valinnainen kertaluontoinen elinikäinen avaus rajattomaan käyttöön—ei tilausta, mainoksia tai seurantaa. • Aloita Testi — Wi-Fi, DNS ja netti yhdellä napautuksella • Deep Check — Lisää todisteita • Testaa Sivusto — Sivusto tai koko internet • Todisteet — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Yhteys on epävakaa — Vaihtelu • Testihistoria — Tiedot pidetään tällä laitteella • Yhdistetty solmu — Tarkka sijainti tunnistaa Wi-Fi-verkon ja nykyisen solmun Ei tiliä, mainoksia tai seurantaa. Tiedot pidetään tällä laitteella. Jokainen työkalu sisältää yhden ilmaisen täyden käytön. Valinnainen kertaluontoinen elinikäinen avaus rajattomaan käyttöön—ei tilausta, mainoksia tai seurantaa.
 
 - Lisää
-- Ilmainen aloitus · elinikäinen avaus
+- Ilmainen aloitus
 - Ei tiliä
 - App Store · Ilmainen
 

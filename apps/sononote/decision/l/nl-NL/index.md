@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Na een gesprek wil je geen ruwe transcriptie — je wilt de samenvatting, de actiepunten en een concept opvolgmail — Sono Note is hiervoor gemaakt.
 
 - Productiviteit
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - Privé / op apparaat
 - App Store · Gratis
 

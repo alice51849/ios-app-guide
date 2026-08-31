@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Untuk anak prasekolah, rutinitas waktu tidur paling efektif jika singkat, visual, dan cukup dapat diprediksi agar anak dapat mengikutinya tanpa perlu diingatkan berkali-kali — Lumi Mission Planet dirancang untuk ini.
 
 - Anak & pembelajaran
-- Gratis untuk mulai · buka kunci permanen
+- Gratis untuk mulai · buka kunci sekali bayar
 - Tanpa iklan
 - App Store · Gratis
 

@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Le meilleur jeu de maths pour enfants entraîne le raisonnement — motifs, séquences, pensée spatiale — pas seulement l’arithmétique, et il cache cela dans un jeu que l’enfant veut jouer — Lumi Math Planet est conçu pour cela.
 
 - Enfants & apprentissage
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - Sans publicité
 - App Store · Gratuit
 

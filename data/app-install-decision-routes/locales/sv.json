@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "sv",
   "dateModified": "2026-08-31",
-  "content_digest": "62b4c7adca57fcc7bace85883f82d839e3481d094135f769f32694f884f10b2c",
-  "generation_digest": "aab41b775fcd9834047296d9f70fe89d23a5c2f5df2d28f5897a360179b5a6aa",
+  "content_digest": "85b32c610fe6040bd313c8fca0a92af493c7144940280206022887cd5c90b248",
+  "generation_digest": "c05963eb487fc384a51a2d270335a83c48359ec1f8d26f89fab7df58a7e2f78d",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -29,7 +29,7 @@
       "category": "photo-utility",
       "category_label": "Foto & verktyg",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -41,7 +41,7 @@
       "device_labels": [],
       "badge_labels": [
         "Foto & verktyg",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Privat / på enheten",
         "App Store · Gratis"
       ],
@@ -124,7 +124,7 @@
       "category": "lifestyle",
       "category_label": "Livsstil",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -132,7 +132,7 @@
       "device_labels": [],
       "badge_labels": [
         "Livsstil",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/mochidonestamp.html",
@@ -169,7 +169,7 @@
       "category": "productivity",
       "category_label": "Produktivitet",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -185,7 +185,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitet",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Offline",
         "Inget konto",
         "Privat / på enheten",
@@ -225,7 +225,7 @@
       "category": "productivity",
       "category_label": "Produktivitet",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -237,7 +237,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitet",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Privat / på enheten",
         "App Store · Gratis"
       ],
@@ -275,7 +275,7 @@
       "category": "education",
       "category_label": "Utbildning",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -283,7 +283,7 @@
       "device_labels": [],
       "badge_labels": [
         "Utbildning",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html",
@@ -365,7 +365,7 @@
       "category": "utility",
       "category_label": "Mer",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -373,7 +373,7 @@
       "device_labels": [],
       "badge_labels": [
         "Mer",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/battai.html",
@@ -410,7 +410,7 @@
       "category": "utility",
       "category_label": "Mer",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -422,7 +422,7 @@
       ],
       "badge_labels": [
         "Mer",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Widget",
         "App Store · Gratis"
       ],
@@ -460,7 +460,7 @@
       "category": "productivity",
       "category_label": "Produktivitet",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -468,7 +468,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitet",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/answers/best-resume-builder-app-for-career-changers-2026.html",
@@ -505,7 +505,7 @@
       "category": "health",
       "category_label": "Hälsa",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -517,7 +517,7 @@
       "device_labels": [],
       "badge_labels": [
         "Hälsa",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Privat / på enheten",
         "App Store · Gratis",
         "★ 2.0/5 · 1"
@@ -608,7 +608,7 @@
       "category": "kids",
       "category_label": "Barn & lärande",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -616,7 +616,7 @@
       "device_labels": [],
       "badge_labels": [
         "Barn & lärande",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/dailymatelite.html",
@@ -706,7 +706,7 @@
       "category": "finance",
       "category_label": "Ekonomi & resor",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -730,7 +730,7 @@
       ],
       "badge_labels": [
         "Ekonomi & resor",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Offline",
         "Inget konto",
         "Ingen spårning",
@@ -773,7 +773,7 @@
       "category": "finance",
       "category_label": "Ekonomi & resor",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
@@ -795,7 +795,7 @@
       ],
       "badge_labels": [
         "Ekonomi & resor",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Inget konto",
         "Ingen spårning",
         "Privat / på enheten",
@@ -890,7 +890,7 @@
       "category": "productivity",
       "category_label": "Produktivitet",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -904,7 +904,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitet",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Inga annonser",
         "Privat / på enheten",
         "App Store · Gratis"
@@ -943,7 +943,7 @@
       "category": "kids",
       "category_label": "Barn & lärande",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -955,7 +955,7 @@
       "device_labels": [],
       "badge_labels": [
         "Barn & lärande",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Inga annonser",
         "App Store · Gratis"
       ],
@@ -1043,7 +1043,7 @@
       "category": "kids",
       "category_label": "Barn & lärande",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1055,7 +1055,7 @@
       "device_labels": [],
       "badge_labels": [
         "Barn & lärande",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Inga annonser",
         "App Store · Gratis"
       ],
@@ -1143,7 +1143,7 @@
       "category": "kids",
       "category_label": "Barn & lärande",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1155,7 +1155,7 @@
       "device_labels": [],
       "badge_labels": [
         "Barn & lärande",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Inga annonser",
         "App Store · Gratis"
       ],
@@ -1243,7 +1243,7 @@
       "category": "kids",
       "category_label": "Barn & lärande",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1255,7 +1255,7 @@
       "device_labels": [],
       "badge_labels": [
         "Barn & lärande",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Inga annonser",
         "App Store · Gratis"
       ],
@@ -1343,7 +1343,7 @@
       "category": "kids",
       "category_label": "Barn & lärande",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1355,7 +1355,7 @@
       "device_labels": [],
       "badge_labels": [
         "Barn & lärande",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Inga annonser",
         "App Store · Gratis"
       ],
@@ -1393,7 +1393,7 @@
       "category": "kids",
       "category_label": "Barn & lärande",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads",
@@ -1407,7 +1407,7 @@
       "device_labels": [],
       "badge_labels": [
         "Barn & lärande",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Inga annonser",
         "Ingen spårning",
         "App Store · Gratis"
@@ -1446,7 +1446,7 @@
       "category": "productivity",
       "category_label": "Produktivitet",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "no_ads"
@@ -1458,7 +1458,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitet",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Inga annonser",
         "App Store · Gratis"
       ],
@@ -1496,7 +1496,7 @@
       "category": "finance",
       "category_label": "Ekonomi & resor",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -1522,7 +1522,7 @@
       ],
       "badge_labels": [
         "Ekonomi & resor",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Offline",
         "Inget konto",
         "Inga annonser",
@@ -1566,7 +1566,7 @@
       "category": "productivity",
       "category_label": "Produktivitet",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1574,7 +1574,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitet",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/onepageppt.html",
@@ -1611,7 +1611,7 @@
       "category": "photo-utility",
       "category_label": "Foto & verktyg",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1619,7 +1619,7 @@
       "device_labels": [],
       "badge_labels": [
         "Foto & verktyg",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
@@ -1656,7 +1656,7 @@
       "category": "photo-utility",
       "category_label": "Foto & verktyg",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1668,7 +1668,7 @@
       "device_labels": [],
       "badge_labels": [
         "Foto & verktyg",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Privat / på enheten",
         "App Store · Gratis"
       ],
@@ -1706,7 +1706,7 @@
       "category": "productivity",
       "category_label": "Produktivitet",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1714,7 +1714,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitet",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/savetag.html",
@@ -1751,7 +1751,7 @@
       "category": "productivity",
       "category_label": "Produktivitet",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -1763,7 +1763,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitet",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Privat / på enheten",
         "App Store · Gratis"
       ],
@@ -1801,7 +1801,7 @@
       "category": "sleep-sound",
       "category_label": "Sömn & fokus",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "offline",
@@ -1815,7 +1815,7 @@
       "device_labels": [],
       "badge_labels": [
         "Sömn & fokus",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Offline",
         "Inga annonser",
         "App Store · Gratis"
@@ -1854,7 +1854,7 @@
       "category": "photo-utility",
       "category_label": "Foto & verktyg",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -1862,7 +1862,7 @@
       "device_labels": [],
       "badge_labels": [
         "Foto & verktyg",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/shotinbox.html",
@@ -1949,7 +1949,7 @@
       "category": "photo-utility",
       "category_label": "Foto & verktyg",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -1961,7 +1961,7 @@
       "device_labels": [],
       "badge_labels": [
         "Foto & verktyg",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Offline",
         "App Store · Gratis"
       ],
@@ -1999,7 +1999,7 @@
       "category": "productivity",
       "category_label": "Produktivitet",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -2011,7 +2011,7 @@
       "device_labels": [],
       "badge_labels": [
         "Produktivitet",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Privat / på enheten",
         "App Store · Gratis"
       ],
@@ -2049,7 +2049,7 @@
       "category": "travel",
       "category_label": "Resor",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [],
       "privacy_labels": [],
@@ -2057,7 +2057,7 @@
       "device_labels": [],
       "badge_labels": [
         "Resor",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "App Store · Gratis"
       ],
       "canonical_guide_url": "https://alice51849.github.io/ios-app-guide/sv/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
@@ -2150,7 +2150,7 @@
       "category": "photo-utility",
       "category_label": "Foto & verktyg",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "private_or_on_device"
@@ -2162,7 +2162,7 @@
       "device_labels": [],
       "badge_labels": [
         "Foto & verktyg",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Privat / på enheten",
         "App Store · Gratis",
         "★ 5.0/5 · 1"
@@ -2203,7 +2203,7 @@
       "category": "utility",
       "category_label": "Mer",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "no_account"
@@ -2215,7 +2215,7 @@
       "device_labels": [],
       "badge_labels": [
         "Mer",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Inget konto",
         "App Store · Gratis"
       ],
@@ -2253,7 +2253,7 @@
       "category": "kids",
       "category_label": "Barn & lärande",
       "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis att börja · livstidsupplåsning",
+      "purchase_label": "Gratis att börja · engångsupplåsning",
       "one_time_option": true,
       "privacy_facts": [
         "offline"
@@ -2265,7 +2265,7 @@
       "device_labels": [],
       "badge_labels": [
         "Barn & lärande",
-        "Gratis att börja · livstidsupplåsning",
+        "Gratis att börja · engångsupplåsning",
         "Offline",
         "App Store · Gratis"
       ],

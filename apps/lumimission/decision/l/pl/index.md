@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Dla przedszkolaka rutyna przed snem działa najlepiej, gdy jest krótka, wizualna i przewidywalna, tak by dziecko mogło ją wykonać bez kolejnych przypomnień — Lumi Mission Planet została stworzona do tego celu.
 
 - Dzieci i nauka
-- Darmowe na start · dożywotni dostęp
+- Darmowe na start · jednorazowe odblokowanie
 - Bez reklam
 - App Store · Bezpłatnie
 

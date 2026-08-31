@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Çoğu yapılacaklar uygulaması şişkin hissediyorsa, doğru olanı hatırlatıcılar, tekrar kuralları ve Watch komplikasyonu ile temiz bir kontrol listesidir — ve kasıtlı olarak proje yönetimi mekanizması yoktur — Mochi bu amaçla yapılmıştır.
 
 - Verimlilik
-- Başlangıçta ücretsiz · ömür boyu açma
+- Başlangıçta ücretsiz · tek seferlik açma
 - Reklam yok
 - App Store · Ücretsiz
 

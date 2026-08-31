@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Jika Anda memindai formulir persetujuan pasien, dokumen keluar rumah sakit, atau rujukan, pemindai harus menyimpan dokumen itu di perangkat — tidak pernah diunggah ke cloud orang lain — ScanTo Pro dibuat untuk ini.
 
 - Produktivitas
-- Gratis untuk mulai · buka kunci permanen
+- Gratis untuk mulai · buka kunci sekali bayar
 - Privat / di perangkat
 - App Store · Gratis
 

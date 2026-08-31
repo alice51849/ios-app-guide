@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Ouders die buitentijd plannen hebben meer nodig dan een temperatuur: ze willen snel zien of de omstandigheden geschikt zijn voor een kind en welke kleding handig is — Lumi Weather is hiervoor gemaakt.
 
 - Kinderen & leren
-- Gratis te starten · levenslange ontgrendeling
+- Gratis te starten · eenmalige ontgrendeling
 - Geen advertenties
 - Geen tracking
 - App Store · Gratis

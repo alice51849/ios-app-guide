@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Quando hai cambiato le lenzuola, annaffiato una pianta, chiamato la famiglia, salvato le foto o sostituito un filtro l’ultima volta? Mochi DoneStamp ricorda gli eventi della vita: non è un’altra lista di cose da fare. Quando finisci, basta un tocco per conservare l’ora esatta in una cronologia ordinata. Se serve, aggiungi un ritmo approssimativo o preciso. La prossima scadenza riparte sempre dall’ora in cui hai davvero completato l’attività. • Registrazione con un tocco e Annulla • Aggiunta, modifica o eliminazione dei momenti passati • Ritmi flessibili e precisi, dai minuti agli anni • Promemoria locali con azioni Fatto e Posticipa • Widget interattivi per Home e schermata di blocco • Siri e Comandi Rapidi • Note e foto compresse facoltative • Analisi degli intervalli, backup completo ed export JSON • Modalità scura, iPad, VoiceOver, RTL e Dynamic Type La versione gratuita include un evento attivo e cronologia illimitata. Un unico acquisto di Lifetime Pro sblocca eventi illimitati e tutte le funzioni. Nessun account, pubblicità, analisi o tracciamento. I dati principali restano sul dispositivo. Nessun abbonamento, mai.
 
 - Stile di vita
-- Gratis per iniziare · sblocco permanente
+- Gratis per iniziare · sblocco unico
 - App Store · Gratis
 
 [Scarica Mochi DoneStamp: Ultima volta sull'App Store](https://apps.apple.com/it/app/id6790800323?pt=118326163&ct=iag_data_it&mt=8)

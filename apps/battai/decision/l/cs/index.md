@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 BattAI BattAI používá pět hodnot z veřejných API iOS: stav baterie, stav nabíjení, úsporný režim, tepelný stav celého zařízení a čas. Ostatní výsledky se počítají z těchto měření nebo z údajů, které přidáte. U každého údaje je uveden zdroj a omezení. Kondice • Skóre kondice baterie • Co tvoří skóre • Maximální kapacita v čase • Maximální kapacita • Cykly Nabíjení • Šetrnost nabíjení • Rozsah nabití • Rychlost nabíjení Exportovat data • Vytvořte soubor v tomto zařízení. Nic se nenahrává. • Vytvořeno v tomto zařízení. Žádná data se nenahrávají. Soukromí • Žádné reklamy, analytika, sledování, SDK třetích stran ani internetové požadavky. Data zůstávají zde, kromě malého přehledu odeslaného přímo do spárovaných Apple Watch. • BattAI čte jen počet cyklů, nominální nabíjecí kapacitu a návrhovou kapacitu. Ostatní data ze souboru se ihned zahodí a nikdy se neuloží ani neodešlou. Poznejte svou baterii v čase • Odemkněte delší historii, plánování a zprávy. • Jedna platba. Žádné předplatné.
 
 - Více
-- Zdarma na začátek · doživotní odemknutí
+- Zdarma na začátek
 - App Store · Zdarma
 
 [Stáhněte si BattAI: Skóre kondice baterie v App Storu](https://apps.apple.com/cz/app/id6802423998?pt=118326163&ct=iag_data_cs&mt=8)

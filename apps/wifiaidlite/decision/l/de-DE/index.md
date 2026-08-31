@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Das echte Problem. Jedes Tool bietet eine kostenlose vollständige Nutzung. Optionaler Einmalkauf für dauerhaft unbegrenzte Nutzung—kein Abo, keine Werbung oder Tracking. • Check starten — WLAN, DNS und Internet mit einem Tipp • Deep Check — Mehr Fakten und Stabilität • Website prüfen — Eine Seite oder das ganze Web • Fakten — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Verbindung instabil — Schwankung • Test-Verlauf — Daten bleiben lokal auf deinem Gerät • Verbundener Knoten — Genauer Standort erkennt WLAN und aktuellen Knoten Kein Konto, keine Werbung, kein Tracking. Daten bleiben lokal auf deinem Gerät. Jedes Tool bietet eine kostenlose vollständige Nutzung. Optionaler Einmalkauf für dauerhaft unbegrenzte Nutzung—kein Abo, keine Werbung oder Tracking.
 
 - Mehr
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - Kein Konto
 - App Store · Kostenlos
 

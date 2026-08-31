@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Đối với trẻ mới học Zhuyin, ứng dụng nên bao phủ tất cả 37 ký hiệu qua tô nét chữ và chơi — thiết kế cho độ tuổi học đầu 4–7, không quảng cáo, không thu thập dữ liệu — Lumi Bopomofo được xây dựng cho điều này.
 
 - Trẻ em & học tập
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - Không quảng cáo
 - App Store · Miễn phí
 

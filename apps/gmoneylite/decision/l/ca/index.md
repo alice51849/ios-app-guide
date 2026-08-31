@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 G+Money Lite — Conversor de moneda de viatge intel·ligent i rastrejador de despeses Dinero de viatge, fet senzill Registra cada compra en la moneda local i veuràs-ho instantàniament en la teva moneda d'inici — en línia o fora de línia. Converteix • Tipus en viu o manuals: Podem obtenir els tipus més recents automàticament, o tu mateix els pots establir. Sempre funciona sense connexió. • Obté els tipus més recents quan obris l'aplicació (aproximadament cada 6 hores). Sempre funciona sense connexió amb els teus tipus desats. • Tipus de referència del mercat mitjà. Les targetes i efectiu poden diferir. Despeses • Límit diari: Opcional. Veure com cada dia es compara amb això. • Per categoria · Viatges · Filtres · Registres • Còpia de seguretat i restauració: Inclou despeses, tipus, categories i configuracions. • Widget · Apple Watch Tot es queda al teu dispositiu. Sense compte, sense seguiment. Els tipus utilitzen un servei públic de tipus de canvi. Gratis: canvi, pressupost i resum · 1 viatge · 3 despeses Un sol pagament · Accés de per vida · Sense subscripció Desbloqueja per sempre despeses i viatges il·limitats.
 
 - Diners i viatges
-- Inici gratuït · desbloqueig de per vida
+- Inici gratuït
 - Fora de línia
 - Sense compte
 - Sense seguiment

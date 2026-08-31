@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Pendant les examens, la volonté ne suffit pas — un blocage strict et chronométré est nécessaire — LockHour Pro est conçu pour cela.
 
 - Productivité
-- Gratuit au départ · déverrouillage définitif
+- Gratuit au départ · déblocage unique
 - Sans publicité
 - Privé / sur l’appareil
 - App Store · Gratuit

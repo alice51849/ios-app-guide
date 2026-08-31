@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Ứng dụng toán học tốt nhất cho trẻ rèn luyện suy luận — mẫu, chuỗi, tư duy không gian — không chỉ luyện tính toán, và được giấu trong trò chơi trẻ muốn chơi — Lumi Math Planet được xây dựng cho điều này.
 
 - Trẻ em & học tập
-- Bắt đầu miễn phí · mở khóa vĩnh viễn
+- Bắt đầu miễn phí · mở khóa một lần
 - Không quảng cáo
 - App Store · Miễn phí
 

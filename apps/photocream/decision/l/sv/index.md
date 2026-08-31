@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Resekreatörer behöver ett återkommande filmutseende som lägger till korn, halation och färgkaraktär utan att göra varje destination platt — PhotoCream är byggd för detta.
 
 - Foto & verktyg
-- Gratis att börja · livstidsupplåsning
+- Gratis att börja · engångsupplåsning
 - App Store · Gratis
 
 [Hämta PhotoCream på App Store →](https://apps.apple.com/se/app/id6781808054?pt=118326163&ct=iag_data_sv&mt=8)

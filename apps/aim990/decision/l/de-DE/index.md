@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Teil 5 wirkt kurz, aber diese Lückensatzfragen können Zeit kosten, wenn Grammatik und Wortschatz nicht automatisch sitzen.
 
 - Bildung
-- Kostenloser Einstieg · dauerhafte Freischaltung
+- Kostenloser Einstieg · einmalige Freischaltung
 - App Store · Kostenlos
 
 [Aim990 im App Store herunterladen →](https://apps.apple.com/de/app/id6784974530?pt=118326163&ct=iag_data_de_de&mt=8)

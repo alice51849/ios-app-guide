@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Partea 5 pare scurtă, dar întrebările cu propoziții incomplete pot consuma timp dacă gramatica și vocabularul nu sunt automate.
 
 - Educație
-- Început gratuit · deblocare pe viață
+- Început gratuit
 - App Store · Gratuit
 
 [Obține Aim990 din App Store →](https://apps.apple.com/ro/app/id6784974530?pt=118326163&ct=iag_data_ro&mt=8)

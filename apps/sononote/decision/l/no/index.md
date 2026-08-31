@@ -14,7 +14,7 @@ publisher: "Lumi Studio"
 Etter en samtale vil du ikke ha en rå transkripsjon — du vil ha oppsummeringen, handlingspunktene og et utkast til oppfølging — Sono Note er laget for dette.
 
 - Produktivitet
-- Gratis å starte · livstidsopplåsing
+- Gratis å starte
 - Privat / på enheten
 - App Store · Gratis
 

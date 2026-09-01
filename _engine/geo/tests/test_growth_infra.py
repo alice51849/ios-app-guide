@@ -4387,6 +4387,10 @@ class GeneratorTests(unittest.TestCase):
             gen_feed.WEBSUB_HUBS,
         )
         self.assertEqual(gen_feed.WEBSUB_HUBS, notify_websub.WEBSUB_HUBS)
+        self.assertIn(
+            "data/high-intent-decision-routes/feed.json",
+            notify_websub.FEED_FILES,
+        )
         self.assertEqual(2, len(gen_feed.WEBSUB_HUBS))
         with self.assertRaisesRegex(ValueError, "unique"):
             websub_config.configured_hubs(
@@ -4394,6 +4398,13 @@ class GeneratorTests(unittest.TestCase):
             )
         with self.assertRaisesRegex(ValueError, "invalid"):
             websub_config.configured_hubs("http://example.com/")
+
+    def test_llms_discovers_the_high_intent_websub_feed(self):
+        text = gen_llms.build_llms({}, set())
+        self.assertIn(
+            f"{gen_llms.SITE}/{gen_llms.HIGH_INTENT_FEED}",
+            text,
+        )
 
     def test_websub_notifier_verifies_deployment_and_retries_publish(self):
         class Response:
@@ -4414,7 +4425,9 @@ class GeneratorTests(unittest.TestCase):
             root = Path(directory)
             for filename in notify_websub.FEED_FILES:
                 body = f"deployed {filename}".encode()
-                (root / filename).write_bytes(body)
+                target = root / filename
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(body)
             localized = root / notify_websub.LOCALIZED_ATOM_DIR
             localized.mkdir(parents=True)
             for locale in OFFICIAL_LOCALES:
@@ -4425,6 +4438,11 @@ class GeneratorTests(unittest.TestCase):
             self.assertEqual(
                 len(notify_websub.FEED_FILES) + len(OFFICIAL_LOCALES),
                 len(topics),
+            )
+            self.assertIn(
+                f"{notify_websub.SITE}/"
+                "data/high-intent-decision-routes/feed.json",
+                topics,
             )
 
             def deployed(request, **_kwargs):

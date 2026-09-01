@@ -17,7 +17,12 @@ from websub_config import WEBSUB_HUBS
 SITE = os.environ.get(
     "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
 ).rstrip("/")
-FEED_FILES = ("feed.xml", "rss.xml", "feed.json")
+FEED_FILES = (
+    "feed.xml",
+    "rss.xml",
+    "feed.json",
+    "data/high-intent-decision-routes/feed.json",
+)
 TOPICS = tuple(f"{SITE}/{filename}" for filename in FEED_FILES)
 LOCALIZED_ATOM_DIR = Path("data") / "app-install-decision-routes" / "feeds"
 VERIFY_WORKERS = 12
@@ -34,13 +39,13 @@ def discover_topics(feed_dir):
     expected_set = set(expected_paths)
     missing = sorted(path.name for path in expected_set - actual_paths)
     unexpected = sorted(path.name for path in actual_paths - expected_set)
-    missing_root = [
+    missing_feeds = [
         filename for filename in FEED_FILES if not (root / filename).is_file()
     ]
-    if missing_root or missing or unexpected:
+    if missing_feeds or missing or unexpected:
         details = []
-        if missing_root:
-            details.append(f"missing root={','.join(missing_root)}")
+        if missing_feeds:
+            details.append(f"missing feeds={','.join(missing_feeds)}")
         if missing:
             details.append(f"missing localized={','.join(missing)}")
         if unexpected:

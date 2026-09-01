@@ -2,6 +2,16 @@
   "description": "First-party, source-bound app decision routes published by Lumi Studio.",
   "feed_url": "https://alice51849.github.io/ios-app-guide/data/high-intent-decision-routes/feed.json",
   "home_page_url": "https://alice51849.github.io/ios-app-guide",
+  "hubs": [
+    {
+      "type": "WebSub",
+      "url": "https://pubsubhubbub.appspot.com/"
+    },
+    {
+      "type": "WebSub",
+      "url": "https://pubsubhubbub.superfeedr.com/"
+    }
+  ],
   "items": [
     {
       "_lumi_route": {

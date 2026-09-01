@@ -97,6 +97,7 @@ PORTFOLIO_FINDER_TOOL = "private-pay-once-iphone-app-finder"
 PORTFOLIO_COST_TOOL = "subscription-cost-calculator"
 PUBLISHER_INTENT_VISUALS = "lumi-studio-publisher-intent-visuals"
 PUBLISHER_INTENT_VISUALS_SITEMAP = "sitemap_intent_visuals.xml"
+HIGH_INTENT_FEED = "data/high-intent-decision-routes/feed.json"
 # Truthful titles for tool slugs whose filename would otherwise read as a
 # capability the tool does not have (e.g. "ats resume keyword checker").
 RESOURCE_TITLES = {
@@ -1847,6 +1848,8 @@ def build_llms(comp_map, live_keys):
               f"- Atom: {SITE}/feed.xml",
               f"- RSS 2.0: {SITE}/rss.xml",
               f"- JSON Feed 1.1: {SITE}/feed.json",
+              "- Source-bound high-intent app decisions: "
+              f"{SITE}/{HIGH_INTENT_FEED}",
               "- Real-time updates: independent WebSub hubs advertised inside "
               "every feed:"]
     lines.extend(f"  - {hub}" for hub in WEBSUB_HUBS)

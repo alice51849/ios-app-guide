@@ -25,6 +25,7 @@ import app_store_storefronts
 import gen_store_attribution
 from official_locales import OFFICIAL_LOCALES
 import sync_standard_site
+from websub_config import WEBSUB_HUBS
 
 
 HERE = Path(__file__).resolve().parent
@@ -45,6 +46,7 @@ SYNC_ENGINE_FILES = (
     Path("official_locales.py"),
     Path("publish.py"),
     Path("sync_standard_site.py"),
+    Path("websub_config.py"),
 )
 INVENTORY_FILENAME = "verified-ios-app-finder-catalog.json"
 MANAGED_OWNER = "high_intent_decision_routes"
@@ -1579,6 +1581,10 @@ def render_feed(records: Iterable[dict[str, Any]]) -> str:
             "First-party, source-bound app decision routes published by "
             "Lumi Studio."
         ),
+        "hubs": [
+            {"type": "WebSub", "url": hub}
+            for hub in WEBSUB_HUBS
+        ],
         "items": [
             {
                 "id": record["route_id"],

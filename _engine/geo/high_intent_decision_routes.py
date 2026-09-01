@@ -51,6 +51,8 @@ SYNC_ENGINE_FILES = (
 INVENTORY_FILENAME = "verified-ios-app-finder-catalog.json"
 MANAGED_OWNER = "high_intent_decision_routes"
 MANIFEST_SCHEMA_VERSION = 2
+DEPLOYMENT_SCHEMA_VERSION = 4
+DEPLOYMENT_ID_PREFIX = "github-pages:high-intent:v1"
 MANIFEST_RELATIVE = (
     Path("data")
     / "high-intent-decision-routes"
@@ -280,6 +282,13 @@ def _sha256_json(value: object) -> str:
             separators=(",", ":"),
         ).encode("utf-8")
     ).hexdigest()
+
+
+def deployment_identity(route_manifest_digest: str) -> str:
+    """Identify deployed route bytes independently of unrelated Guide commits."""
+    if re.fullmatch(r"[0-9a-f]{64}", route_manifest_digest) is None:
+        raise ValueError("route_manifest_digest must be a SHA-256 digest")
+    return f"{DEPLOYMENT_ID_PREFIX}:{route_manifest_digest}"
 
 
 def _inventory_digests(
@@ -2483,16 +2492,14 @@ def prepare_pages_deployment(
         source_path=source_path,
     )
     deployment = {
-        "version": 3,
+        "version": DEPLOYMENT_SCHEMA_VERSION,
         "generated_at": (
             datetime.now(timezone.utc)
             .isoformat()
             .replace("+00:00", "Z")
         ),
-        "deployment_id": (
-            f"github-pages:{source_commit}:"
-            f"{engine_source_revision}:"
-            f"{expected_manifest['manifest_digest'][:16]}"
+        "deployment_id": deployment_identity(
+            expected_manifest["manifest_digest"]
         ),
         "source_commit": source_commit,
         "engine_source_revision": engine_source_revision,

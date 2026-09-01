@@ -113,7 +113,7 @@ jobs:
           ROUTE_MANIFEST_URL: >-
             https://alice51849.github.io/ios-app-guide/data/high-intent-decision-routes/expected-output-manifest.json
         run: |
-          fields='{version,source_commit,engine_source_revision,source_contract_digest,route_manifest_digest,route_count,app_count,candidate_app_locale_pairs,abstained_pairs,fallback_records}'
+          fields='{version,deployment_id,source_commit,engine_source_revision,source_contract_digest,route_manifest_digest,route_count,app_count,candidate_app_locale_pairs,abstained_pairs,fallback_records}'
           expected="$(
             jq -ceS \
               "$fields |
@@ -121,7 +121,7 @@ jobs:
               then error(\"missing deployment field\")
               else .
               end |
-              select(.version == 3 and .app_count > 0 and .route_count > 0 and
+              select(.version == 4 and .app_count > 0 and .route_count > 0 and
                 .fallback_records == 0)" \
               .well-known/deployment.json
           )"

@@ -149,7 +149,7 @@ class GeoDailyFailFastContractTests(unittest.TestCase):
     def test_pages_readback_rejects_partial_or_degraded_manifests(self):
         source = PAGES_WORKFLOW.read_text(encoding="utf-8")
         self.assertIn('if any(.[]; . == null)', source)
-        self.assertIn('.version == 3', source)
+        self.assertIn('.version == 4', source)
         self.assertIn('.fallback_records == 0', source)
 
     def test_skipped_workflow_run_cannot_cancel_a_valid_pages_deploy(self):

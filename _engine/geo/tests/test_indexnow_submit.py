@@ -464,7 +464,7 @@ class IndexNowTests(unittest.TestCase):
         self.assertIn("--prepare-pages-deployment", pages_workflow)
         self.assertIn("--current-source-root", pages_workflow)
         self.assertIn("--engine-source-revision", pages_workflow)
-        self.assertIn(".version == 3", pages_workflow)
+        self.assertIn(".version == 4", pages_workflow)
         self.assertIn("route_manifest_digest", pages_workflow)
         self.assertIn("Verify exact deployment is live", pages_workflow)
         self.assertIn("Exact deployment is live", pages_workflow)

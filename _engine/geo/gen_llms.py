@@ -1293,6 +1293,97 @@ def write_localized_llms(live_keys, pages=None):
     }
 
 
+# llms.txt 規範(https://llmstxt.org/)定義了一個慣例性的 `Optional` H2 區段:
+# 「links an agent can skip when a shorter context is needed」。
+# 我們的 llms.txt 有 ~20 個數位典藏/圖書館後設資料格式區段(OCFL、BagIt、METS/PREMIS、
+# OAI-ORE、IIIF、RO-Crate、CSVW、LDES、DCAT、ResourceSync…),全部服務單一注音 App 的
+# 資料集,對「買家意圖」查詢零相關,卻佔掉檔案前段的 context 預算。
+# 依規範把它們降級進 `## Optional`,買家相關內容才留在 agent 一定讀得到的前段。
+# 不刪任何連結、不改任何敘述 — 純結構重排。
+OPTIONAL_SECTION_MARKERS = (
+    "skos", "croissant", "csvw", "ldes", "bagit", "ocfl", "iiif", "ro-crate",
+    "mets 2.0", "premis", "oai-ore", "data package", "qti", "moodle", "epub",
+    "dcat", "dcmi", "lrmi", "resourcesync",
+)
+
+
+BARE_URL_ITEM = re.compile(r"^- (?P<label>[^:]+): (?P<url>https?://\S+)\s*$")
+
+
+def _as_markdown_item(line, section_title):
+    """把區段清單項目轉成 llmstxt.org 要求的 `- [name](url)` 形式。
+
+    典藏區段目前輸出的是 `- Label: https://…`(裸 URL),不符規範。攤平進 Optional
+    後 H2 標題的脈絡會消失,所以把區段標題併進連結名稱,避免 20 個項目都叫
+    「English guide」。已是 markdown 連結的項目原樣保留。
+    """
+    if line.startswith("- ["):
+        return line
+    match = BARE_URL_ITEM.match(line)
+    if not match:
+        return None
+    label = match.group("label").strip()
+    return f"- [{section_title} — {label}]({match.group('url')})"
+
+
+def _is_optional_section(title):
+    """區段標題是否屬於可跳過的典藏/後設資料格式。"""
+    low = title.lower()
+    return any(marker in low for marker in OPTIONAL_SECTION_MARKERS)
+
+
+def split_llms_sections(text):
+    """把 llms.txt 切成 (preamble, [(h2_title, [body_line, ...]), ...])。"""
+    preamble, sections, current = [], [], None
+    for line in text.split("\n"):
+        if line.startswith("## "):
+            if current is not None:
+                sections.append(current)
+            current = (line[3:].strip(), [])
+        elif current is None:
+            preamble.append(line)
+        else:
+            current[1].append(line)
+    if current is not None:
+        sections.append(current)
+    return preamble, sections
+
+
+def demote_optional_sections(text):
+    """依 llmstxt.org 規範,把典藏格式區段合併進單一 `## Optional` 區段。
+
+    規範要求每個 H2 區段是一份 markdown 連結清單,所以被降級的區段會把自己的
+    清單項目攤平進 Optional;項目文字原封不動保留(不刪連結、不改敘述)。
+    已經有 Optional 區段時直接回傳,避免重複套用。
+    """
+    preamble, sections = split_llms_sections(text)
+    if any(title.lower() == "optional" for title, _ in sections):
+        return text
+
+    core, optional_items = [], []
+    for title, body in sections:
+        if not _is_optional_section(title):
+            core.append((title, body))
+            continue
+        for line in body:
+            item = _as_markdown_item(line, title)
+            if item:
+                optional_items.append(item)
+
+    if not optional_items:
+        return text
+
+    out = list(preamble)
+    for title, body in core:
+        out.append(f"## {title}")
+        out.extend(body)
+    out += ["", "## Optional",
+            "Archival and library-metadata serialisations of the open datasets listed "
+            "above. Skip this section when a shorter context is needed.", ""]
+    out.extend(optional_items)
+    return "\n".join(out).rstrip("\n") + "\n"
+
+
 def build_llms(comp_map, live_keys):
     lines = [
         "# Lumi & friends — independent iOS apps",
@@ -1765,7 +1856,7 @@ def build_llms(comp_map, live_keys):
         f"  - {RSSCLOUD_WEBSUB_HUB}",
     ]
     lines.append("")
-    return "\n".join(lines)
+    return demote_optional_sections("\n".join(lines))
 
 
 def _resource_files(directory, live_keys, prefix):

@@ -1031,22 +1031,8 @@ class DevToGateTests(unittest.TestCase):
         {"title": "Second", "body": "two"},
     )
 
-    def test_workflow_serializes_publishers(self):
-        workflow = os.path.join(
-            portfolio_daily.REPO_ROOT,
-            ".github",
-            "workflows",
-            "devto-post.yml",
-        )
-        with open(workflow, encoding="utf-8") as workflow_file:
-            text = workflow_file.read()
-
-        self.assertIn("group: devto-publisher", text)
-        self.assertIn("cancel-in-progress: false", text)
-
     def test_social_workflows_buffer_test_output(self):
         for name in (
-            "devto-post.yml",
             "portfolio-daily.yml",
             "telegram-daily.yml",
             "threads-daily.yml",

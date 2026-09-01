@@ -657,6 +657,8 @@ class TruthfulSitemapLastmodTests(unittest.TestCase):
             git("config", "user.name", "Test")
             git("config", "user.email", "test@example.com")
             git("config", "commit.gpgsign", "false")
+            git("config", "gc.auto", "0")
+            git("config", "maintenance.auto", "false")
             git("add", ".")
             git(
                 "commit",

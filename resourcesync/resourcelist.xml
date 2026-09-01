@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:rs="http://www.openarchives.org/rs/terms/">
   <rs:ln rel="describedby" href="https://alice51849.github.io/ios-app-guide/resourcesync/bopomofo-collection.jsonld" type="application/ld+json"/>
   <rs:ln rel="up" href="https://alice51849.github.io/ios-app-guide/resourcesync/capabilitylist.xml" type="application/xml"/>
-  <rs:md capability="resourcelist" at="2026-09-01T07:10:52Z"/>
+  <rs:md capability="resourcelist" at="2026-09-01T16:36:27Z"/>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:b7c2d3862a26d3fd8d49b84b674686b49838f20ee575877eebccca14db1c176f" length="15206" type="text/html"/>
+    <rs:md hash="sha-256:8d77d57ad4273513ac74214653d4beac86d16f6f2243ba03730a50f336920c0f" length="15319" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json</loc>
@@ -179,7 +179,7 @@
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:5deb7fdafc17d448c7bf38d03bb5a90830736c03ca6f743a14dc53cd963f0245" length="15496" type="text/html"/>
+    <rs:md hash="sha-256:e82228ee1bfc29e2785ddb447867226b5acb81b6acd7dbb2d3330f81b364352d" length="15610" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv</loc>
@@ -200,7 +200,7 @@
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:0588fa5fe6c571dd5d1bb6db5bacbe9a219d7b1fe3daefdcb51bc2f6c29cc75b" length="12231" type="text/html"/>
+    <rs:md hash="sha-256:bb4f0dcda59ee2f23d3490adce046647249bcd5d8f3a5778d0e2d8576908a1f5" length="12351" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/metadata.jsonld</loc>
@@ -217,7 +217,7 @@
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:8696561c49dda098a6fd28790dfed72318b230108159532e6447889aa1d5091d" length="18785" type="text/html"/>
+    <rs:md hash="sha-256:975124589e53ae3697c1a240914c335c19511705e82b163bf5e3191939570e9f" length="18906" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/metadata.jsonld</loc>
@@ -282,7 +282,7 @@
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:c8224af4d22b56a5ef5e8a1732a7bc422b81a604bb3d64c12741b447e8fb3579" length="13322" type="text/html"/>
+    <rs:md hash="sha-256:288e78575bfcab3fba2a21554e2e62f2d7fe792c44715acd841bf4906a3c038c" length="13446" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/metadata.jsonld</loc>
@@ -387,7 +387,7 @@
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:16fd9765737542bf1ba7d47eb938640c3b7af2c1452796b8117aa4ba810b8f60" length="15414" type="text/html"/>
+    <rs:md hash="sha-256:0152d3847a62a154046ba74523ad3bf16abd580dd592bc5d0a46d99dcc947a4c" length="15531" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/metadata.jsonld</loc>
@@ -432,7 +432,7 @@
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:d2d0ac3829d92be6803a396016d72be85cec34a61ab5ef25d3b32db0536a4fd2" length="21939" type="text/html"/>
+    <rs:md hash="sha-256:e0f75cc701ec78d0e266136e35a3507c4fc2d5e20992ba1d60578f9d0299233b" length="22064" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/metadata.jsonld</loc>
@@ -449,7 +449,7 @@
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:e6f1663113c3408d5218e26b5a0f973dad5d592be1e529d133b4989fab0e6920" length="12648" type="text/html"/>
+    <rs:md hash="sha-256:fc41018033e6193f3892ec8c79dfdcfc576e51e5ecaff3b052b6aa72edcb0e0b" length="12769" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/metadata.jsonld</loc>
@@ -518,7 +518,7 @@
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:23ee5c883c22f4afec2fedd6d5b2409d0ed09a7e4de50ae8bf55b94b42f28f01" length="10550" type="text/html"/>
+    <rs:md hash="sha-256:ebeed00bb1b70df3ec2536b5bfd91a48fb3a061cfe2a6c899e74ebf31e1a6a5d" length="10671" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/ro-crate-metadata.json</loc>
@@ -526,32 +526,32 @@
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/ro-crate-preview.html</loc>
-    <rs:md hash="sha-256:9aeaaaab3d0efa83751e1a78e93ce07ca1cff6f025c90da20d8c36ed0279983c" length="4268" type="text/html"/>
+    <rs:md hash="sha-256:38bdcd6ef32c3f6f80fd90d1cb5c8b1f633132d6c02acb3c3d5e4f0b3e62e6b6" length="4392" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:fb2d8ebf3779b482959d5fdf57fde785eea823207637a4192676e0bf6341cd15" length="12424" type="text/html"/>
+    <rs:md hash="sha-256:5377087cd691295c68b5d091be438e9aa17362d162c8928490bbf3bbf3712cc0" length="12535" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:602cada18c7ddbe27bbd7e37c884f5dfcf3cface23fd539b235eedce95933fad" length="14434" type="text/html"/>
+    <rs:md hash="sha-256:21d850c334f45ae02f59a6e9f7746b77a949a99bdbf8cea25231ed6b0361c5af" length="14546" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:5843ed3cd9d09744446a41f1e8c3d53a6aba32e55c58c5d9a5a62c92a90fda9d" length="23107" type="text/html"/>
+    <rs:md hash="sha-256:08e98b48e5d2d1da589fd76e99f1b7d7cb3f877a046db641e9c1706e3a7afa84" length="23228" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:b1e0b3c39c220e176116fdf7e57cd78e1edbef9da766162e55da25325ef5634d" length="13416" type="text/html"/>
+    <rs:md hash="sha-256:7081398d555431e2e483a6bf3fae22b207f084c52ec861c09844c11ced4f4b70" length="13518" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:1111edb57d05e11a1064cc2822a812c7a5f877e1a88c01436c3dc093989b0fdf" length="15513" type="text/html"/>
+    <rs:md hash="sha-256:bd0a5fb66ec6f8159bce17fea37f69221dff51a6ebc222f855f30b238b9635f2" length="15626" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld</loc>
@@ -568,7 +568,7 @@
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:94a6be817a94143b8a14301e78ad5883b9a98d9bacb9be0f6723cfd5a5590f06" length="28944" type="text/html"/>
+    <rs:md hash="sha-256:039362df0daf00c2b79738ae7951d8a2f67dc4d55b8c6dd3407f5ed8b8134393" length="29060" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl</loc>
@@ -577,7 +577,7 @@
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:9141e750fe26d7f036caa41d52a809c8608f13d524538e489cc41069076138b0" length="15510" type="text/html"/>
+    <rs:md hash="sha-256:a16718f424098ddc0a2058d6392b4e7be2d9aacab2587328846f5dad85b61699" length="15614" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html</loc>
@@ -587,7 +587,7 @@
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:d494a487c2419cd808639a75e141610fbbc60c3e3bad081961520801264fcc86" length="24149" type="text/html"/>
+    <rs:md hash="sha-256:007e4c94061f9aef58aefd58926397a11593b9be866ef0b7c66899a059b4538f" length="24270" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld</loc>
@@ -611,7 +611,7 @@
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.html</loc>
-    <rs:md hash="sha-256:ac8ec03c38b8d502da6f49e1e4ecb231985404db947fc72b9ad8bbed0360d3b5" length="22013" type="text/html"/>
+    <rs:md hash="sha-256:4c1ef1ba9bcdec3f99d95967b3b516ce209e3ba0ed060ea2f2c09fc1617cf66a" length="22167" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json</loc>
@@ -875,11 +875,11 @@
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-bingo.html</loc>
-    <rs:md hash="sha-256:f7c261badc23dfb295a0434fbad19ccc2a5fd8f7a7ad8f57db8c87b6b0519bc8" length="25762" type="text/html"/>
+    <rs:md hash="sha-256:65df623b5f26b8ed689296285edee508cefacf069ebe6eed5bcdbd71728e15af" length="25874" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-blending-card-generator.html</loc>
-    <rs:md hash="sha-256:f383f40b52a74596079db5c2af5172b6300dc43fb29f76ed711a7f3821fe23e2" length="32658" type="text/html"/>
+    <rs:md hash="sha-256:5ad955378c4e092ce70a0a91576bb907709c9833f0ff52b3ba3072c3a5b72cc9" length="32769" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck-en.tsv</loc>
@@ -892,7 +892,7 @@
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:b99448c25c8e5474e949c2584a92da8c5427a50861f501f606c3a4afbe1bc0bb" length="17613" type="text/html"/>
+    <rs:md hash="sha-256:5082514c2060f614ee21cf46a4941bd0ed30880de840c0af857c9a12218eef31" length="17735" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.metadata.json</loc>
@@ -904,127 +904,127 @@
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-decodable-mini-reader.html</loc>
-    <rs:md hash="sha-256:1d0855203107f1cf91928ff6d108b3d6e3b78499bf93a485a708c89fb49dac51" length="30548" type="text/html"/>
+    <rs:md hash="sha-256:db084fd82bb4b8faa9d58e83f754f58ec1c5665eeee890d8d16d38fa4cb68055" length="30656" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-family-picture-book-club-kit.html</loc>
-    <rs:md hash="sha-256:cb644fc0394af45759884e2aad654e4240bceb039f2eb0bf01c788ff2e8c8ba6" length="22906" type="text/html"/>
+    <rs:md hash="sha-256:6a172c2c657ba9c976fcc9f91e28253705e5af7e490f4eb5c77fd4f7a69819fa" length="23024" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-flashcards.html</loc>
-    <rs:md hash="sha-256:575597e73e066631aa25a736fe98765b540a669e789c4011f7814ba610b0a768" length="30448" type="text/html"/>
+    <rs:md hash="sha-256:9f7f0adb81ffc002aa4e8d7c075e149db2c44e0c4a2869c3de877b9b78d5e02d" length="30555" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-grade1-14-day-summer-calendar.html</loc>
-    <rs:md hash="sha-256:52d6512b5d26e86f074019335a7c9bad7ef3221ae0238e52b306507c925e28ac" length="38384" type="text/html"/>
+    <rs:md hash="sha-256:6dcd8703d165b38c1f66cd35505f43304330b9e9ab676f57c86ad6d3c11f532b" length="38498" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-grandparent-video-call-kit.html</loc>
-    <rs:md hash="sha-256:b14fa5aca78ff27a0a24c66034b2098e90bb4e3d93e6ea5ea9709ec4519ae757" length="23664" type="text/html"/>
+    <rs:md hash="sha-256:7ba4b610f062aa22a5ac08f2b6f0bb4d88f81e6486ad190c56f84db7f2e54535" length="23779" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-library-storytime-kit.html</loc>
-    <rs:md hash="sha-256:c36ae3c75f8cdde005d7336ad981599812069f95974b0f63f083c3a46e94aefe" length="21593" type="text/html"/>
+    <rs:md hash="sha-256:b14c8b11ef68dee2b18919bb9b1474566af6f24ec2682323cc4afccf8387803b" length="21710" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-parent-teacher-handoff-kit.html</loc>
-    <rs:md hash="sha-256:cde1e0518831e945e4dd2334006a6b2db58ed43e9c1791b5ba36914acd6cb7d5" length="22266" type="text/html"/>
+    <rs:md hash="sha-256:c39f58611d23c01cb7d0b8e5339cade8525cdb5732ead02252572261a22a05b6" length="22385" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-practice-sheet.html</loc>
-    <rs:md hash="sha-256:bec7aee9b379f77d701445b9fd18fca35502e14d5096a94d4504c7ba2a1bd629" length="33507" type="text/html"/>
+    <rs:md hash="sha-256:81e690d0f0be2936b9fc4a9fca680223580c8f065198a28402dc04d13444bf1b" length="33610" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-readiness-check.html</loc>
-    <rs:md hash="sha-256:f640ba4e1cda5a72e632e305246f518cdcafbd436a23499e59b5930b81c92b53" length="42092" type="text/html"/>
+    <rs:md hash="sha-256:962eda2d583596738831340f230af7f74974432bde98b72de346020c701b3d52" length="42083" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-short-sentence-reading-cards.html</loc>
-    <rs:md hash="sha-256:1e09a7453775fabb92cdf096fe2243b5c5b80d54ea54d85291e1c9ba67913cad" length="31846" type="text/html"/>
+    <rs:md hash="sha-256:aed3e60aad5844129fab6070f055e3c5b2ee3fcf9c34a2385d804e1d587d09cd" length="31949" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/tools/zhuyin-story-sequencing-cards.html</loc>
-    <rs:md hash="sha-256:53e0041648ff9e4710035b491d9737fa216f7dca59ecf5dbb7b6faf8c767904b" length="33255" type="text/html"/>
+    <rs:md hash="sha-256:86a4ce0dbe75bf5ed11349fe4188f672f3752f999db5d347af27e729c08e85ba" length="33360" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/api/v1/bopomofo-symbols/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:b34dba8bdedc4926dd335dd1136c6f8a7d16b78795c71fada17972d4e83b3da2" length="15142" type="text/html"/>
+    <rs:md hash="sha-256:b1b737cda00001302843c78c4684f66cf77e650f5a02ec9846123412cdcff5a3" length="15250" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:1e7ba89d98c98ed34459b1ff85cc14b2fec7d3c0d32e684c315cd0e749deb735" length="15278" type="text/html"/>
+    <rs:md hash="sha-256:5e9870fcbbaebb8f6333d734bc8a75f06403b29b19c07bd620de81f5d6cb61bc" length="15387" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-bagit/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:bac38562da0cedf7ce1308f081e36dd3615cab49bc8bb15d219c180363f23a67" length="12084" type="text/html"/>
+    <rs:md hash="sha-256:ad8e51b4b1e48db25795d8215bcbd634da7afd91cac0037b089e1b538a2486bb" length="12199" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-csvw/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:7e5aa0d19403740830f47d042cd1f2eed5a455a0be18ae9edc7b7efc1877d3ac" length="18499" type="text/html"/>
+    <rs:md hash="sha-256:40a28e18d9ca8bf33e96eb5374a05336d7b203fb37ef5d4dd68154406a0857de" length="18615" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ldes/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:f74aa26cbe688bdaa648c70c03766bc02e18e29e5d4f32c1b817c83575d4c40f" length="13260" type="text/html"/>
+    <rs:md hash="sha-256:5e8373424281d8fd1a5d6356d7d816d081de5f8d9aed7acef2dc1ba8166e0010" length="13384" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-mets2-premis3/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:7ca4270954a51485dc82b86bab6a43b47e36251435ff7d77d0a505667d016d07" length="15332" type="text/html"/>
+    <rs:md hash="sha-256:2f7e4e73a356de96614b1880ba0808b227f80ae2dc24b516c1cb0e355eddb02b" length="15449" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-oai-ore/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:9b7aa9aeceda6cccc4a30511b977db1fd2889bead9b2990fcb4aeb985892680e" length="21863" type="text/html"/>
+    <rs:md hash="sha-256:471ca5627734c7de9558e5098421bc4adb1c9581860cd46eef226246409a7bb2" length="21988" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ocfl/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:2de75c79d93e56bb0dc0aaad286704f2866652bd4f2162e22fecb7c917dc051e" length="12490" type="text/html"/>
+    <rs:md hash="sha-256:756e973d7935f1fa04c3b3beb1d9689829a4dd3e075dbf18281f3d568cdadec1" length="12606" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ro-crate/</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:6bc6bb25541c799aec5257f1ab271d3d96de91f3a47ecae1a1f65f75a8b9c92b" length="10394" type="text/html"/>
+    <rs:md hash="sha-256:05045ab5f6a8d9c59483f7fe1657566276a0cfa4fc69667b5fb2d95e01320ec1" length="10515" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-dcat3-open-data-catalog.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:1d021472330396e07d42287c831840782092cbe0e9bcba70ee8c8c6e30d1f677" length="11695" type="text/html"/>
+    <rs:md hash="sha-256:d9c8797d12acbe21a6cf20af27d0a2021e2a42dc106a83a371ee78fcd22f4e65" length="11801" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-epub-reference.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:fa16df47043a7e78bbcb8d69cf17ef3f0f2f215482bb250037158d98c7353b41" length="13823" type="text/html"/>
+    <rs:md hash="sha-256:b59cfdb1c14f2e2e5874e11fd18745fb48b948d65937abbe3c4072a3ff1191e9" length="13930" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-iiif-presentation-3.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:1bf74e859293020d93978d7e3972ad3da6f053ab6fbdfafc12ecdfb40c52f47c" length="22772" type="text/html"/>
+    <rs:md hash="sha-256:39623894bdd056af32b3c598d088887894fd0e07c9bb77dee7c5c05af67c2fb0" length="22888" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-library-catalog-records.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:c7fce4c1826001715ca5a697f6825c6fe2b6c3e97b730e95ca40bcca6a4508ad" length="12857" type="text/html"/>
+    <rs:md hash="sha-256:9d6264fc472909cd96bd5ebe3a6521179bba9d51965292116680fc85d69343b8" length="12959" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-lms-question-bank.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:201194d104fdb7676145ce22ae27eb3e2d8a2183429aada2b05776509b3dcc95" length="14563" type="text/html"/>
+    <rs:md hash="sha-256:e962c0cb50a505eff53a36adce9b3a428d24d1ea90cef95be6c3256eff5fb40a" length="14671" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-ml-dataset.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:f9e1ee5bf1cf0a38af717310cd5385684195705ae10b345fb0661de88b6ecf0e" length="28081" type="text/html"/>
+    <rs:md hash="sha-256:7bbff346e75a4f9fc7919baa31ce13ad67a83c0d85a4a746e41ac8aac3988147" length="28192" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-oer-repository-metadata.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:e66be71757304e26d85b4aee516a7ed4aa879ec59214b04ddfe8079a08f32200" length="14814" type="text/html"/>
+    <rs:md hash="sha-256:1a0a974809271301faf534fd6631ebfe8e1356b3868dd31b1412204b9adae1f7" length="14916" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-resourcesync.html</loc>
@@ -1034,63 +1034,63 @@
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-vocabulary.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:c00e708272ab6284355255e818d91341284c22ad9cf14c17f2f745c57d270a70" length="23206" type="text/html"/>
+    <rs:md hash="sha-256:83cb6acb8d3e93f170f97224f2dc7b11c2da1cf1b5fcff145969ef3bfe1007ea" length="23322" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-bingo.html</loc>
-    <rs:md hash="sha-256:ef7aa047a7145b4d9037e89e87e7571c25ed262b30d146fe166d9e7332ee531d" length="25513" type="text/html"/>
+    <rs:md hash="sha-256:36851e3fa8720d34106fe6caa9514476f4f0e2dcf4bb2001410671ff780aa57d" length="25620" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-blending-card-generator.html</loc>
-    <rs:md hash="sha-256:03414f7031aa50e5f69c41d0455f877712e94b70d7daedbf0cf5fe4baa607470" length="32471" type="text/html"/>
+    <rs:md hash="sha-256:62a216a7dc84d427398b17b5db6e928920f7d1a34fa788f6e24927c3ab4f5963" length="32577" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-bopomofo-anki-deck.html</loc>
     <lastmod>2026-09-01</lastmod>
-    <rs:md hash="sha-256:1cae4feb9739457310caac5367418f14a9daaef0cb9d1b0d80cf0b123e26d33a" length="17649" type="text/html"/>
+    <rs:md hash="sha-256:7413a60492965c7f5ffdd80bcc2f458463ab987991dda12d974413c702c746e4" length="17766" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-decodable-mini-reader.html</loc>
-    <rs:md hash="sha-256:8cf837757af7e9758b7085e31d611d44fc6c43ca90edb647fadae09e8d8db0cd" length="29881" type="text/html"/>
+    <rs:md hash="sha-256:7278ed86206ddfbc5786b1dc6f70ca5dda0b27baec8c0f337b78514f517822d9" length="29984" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-family-picture-book-club-kit.html</loc>
-    <rs:md hash="sha-256:ad80de7174a4d2540755d311148310197b8097d4282d1488408799fdc9e4e465" length="21862" type="text/html"/>
+    <rs:md hash="sha-256:6c11ebd305a07efdcae267490d89c98ceddc2baec4cd85912746d8af0b5fa5f8" length="21975" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-flashcards.html</loc>
-    <rs:md hash="sha-256:2e7129bdac9d1b70389245474f2aed7ae1f58b7ece247816f33a0d249130212b" length="30214" type="text/html"/>
+    <rs:md hash="sha-256:4f2fb4fedd756b2ea3366e5f8f5814132dfe9f3789330e7925015034317ab2c1" length="30317" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-grade1-14-day-summer-calendar.html</loc>
-    <rs:md hash="sha-256:dd56a87798fbc74a1b515d1161592f8a23d9c6bc770fe91867da9fdbb89ad420" length="37441" type="text/html"/>
+    <rs:md hash="sha-256:993d51f2ca94e161e56a3462c892e29ba818afe124ce43cfc3d9176aef9ede23" length="37550" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-grandparent-video-call-kit.html</loc>
-    <rs:md hash="sha-256:37db6c04177e202a73c24461a2aaddba6c42db4b42a201a8dd565eff64c32385" length="22779" type="text/html"/>
+    <rs:md hash="sha-256:6313f9586dae8173f59cad24c809bc86f98e25370c265fe46f144948a08967f1" length="22889" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-library-storytime-kit.html</loc>
-    <rs:md hash="sha-256:73f6cc5547fbb64708e5f85ab9c8ae7e4f845f851f2de7f41f51c86112c5c3ff" length="20799" type="text/html"/>
+    <rs:md hash="sha-256:84e72d11f6a02edbab79499217540df59cd65b3526e76e479829810356d33a0b" length="20911" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-parent-teacher-handoff-kit.html</loc>
-    <rs:md hash="sha-256:5bf1bf20293e928aad3701d460a896e5e0a47415d71f4e55d1ae3c315e5e2a5a" length="21526" type="text/html"/>
+    <rs:md hash="sha-256:886d8ca29492bdb1bbe69b3fbcb163c80c6f3a5e031d337753141f298190a51e" length="21640" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-practice-sheet.html</loc>
-    <rs:md hash="sha-256:bbb7191d1bc3ad540afc7fb19e83681390139e23ae2e61daa0494a01d0b5cd6c" length="33321" type="text/html"/>
+    <rs:md hash="sha-256:ed6d6510eb9fb55b7c533379d14ba95bf2914eb0952d925cefb768b86cf5cd61" length="33424" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-readiness-check.html</loc>
-    <rs:md hash="sha-256:b8a4bfa492d915a7f0a137ae7632640f74772c8c2c948db91feb914f977a6af9" length="41094" type="text/html"/>
+    <rs:md hash="sha-256:82040ba7956e32114100d3308a8a567f4cb944b3ba10cb7a56685b5a749ce36d" length="41080" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-short-sentence-reading-cards.html</loc>
-    <rs:md hash="sha-256:daec211f1d95d88e38d9851b324917926a2691c7523f090ea376bf6032f83e37" length="30903" type="text/html"/>
+    <rs:md hash="sha-256:40c43879986195fb27be76e43060cffa102ee4d3159cddc52b79abc3617b0656" length="31006" type="text/html"/>
   </url>
   <url>
     <loc>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-story-sequencing-cards.html</loc>
-    <rs:md hash="sha-256:cd120dabf4d951c9b91111ef1aecf6ff8d3408cf90641b45a560558e2a230585" length="32598" type="text/html"/>
+    <rs:md hash="sha-256:ae70a1e351ae2b3c15cbbccd2a04a7e571e1a735984f688283b05ad78b01880e" length="32701" type="text/html"/>
   </url>
 </urlset>

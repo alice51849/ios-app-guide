@@ -851,154 +851,6 @@ Direct answers an assistant can quote. Every answer is limited to what this cata
 - Traditional Chinese UTF-8 TSV: https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck-zh-hant.tsv
 - LRMI / Schema.org metadata: https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.metadata.json
 
-## Bopomofo linked open vocabulary (SKOS, CC BY 4.0)
-- English landing page: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html
-- Traditional Chinese landing page: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-vocabulary.html
-- JSON-LD 1.1: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld
-- Turtle: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl
-- N-Triples: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt
-- SHACL shapes: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl
-- DCAT 3 / VoID metadata: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.metadata.jsonld
-
-## Bopomofo AI/ML dataset (MLCommons Croissant 1.1, CC BY 4.0)
-- English data card: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html
-- Traditional Chinese data card: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-ml-dataset.html
-- UTF-8 CSV: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv
-- JSON Lines: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl
-- Croissant 1.1 JSON-LD: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld
-
-## Bopomofo CSVW table metadata (W3C Recommendations)
-- English guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/
-- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-csvw/
-- Canonical UTF-8 CSV: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv
-- Discoverable CSVW metadata: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json
-- Deterministic offline bundle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/bopomofo-37-symbols-csvw-bundle.zip
-- SHA-256 checksums: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/checksums-sha256.txt
-- Dataset manifest: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/metadata.jsonld
-
-## Bopomofo LDES 1.0 + TREE event stream
-- English guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/
-- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ldes/
-- Canonical JSON-LD entry point: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld
-- Turtle discovery overview: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl
-- SHACL member shape: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-member.shacl.ttl
-- Deterministic bundle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-37-symbols-ldes-tree.zip
-- SHA-256 checksums: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/checksums-sha256.txt
-
-## Bopomofo digital-preservation package (RFC 8493 BagIt 1.0)
-- English guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/
-- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-bagit/
-- Deterministic BagIt ZIP: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/bopomofo-37-symbols-bagit-rfc8493.zip
-- Outer SHA-256 checksum: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/checksums-sha256.txt
-- Preservation package metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/metadata.jsonld
-
-## Bopomofo version-aware preservation object (OCFL 1.1)
-- English guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/
-- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ocfl/
-- Deterministic OCFL object ZIP: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/bopomofo-37-symbols-ocfl-1.1.zip
-- Outer SHA-256 checksum: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/checksums-sha256.txt
-- Preservation object metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/metadata.jsonld
-
-## Complete Bopomofo visual resource (IIIF Presentation API 3.0)
-- English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html
-- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-iiif-presentation-3.html
-- IIIF Collection: https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/collection.json
-- IIIF Manifest with 37 ordered Canvases: https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/manifest.json
-- Deterministic complete ZIP: https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/bopomofo-37-symbols-iiif-presentation-3.zip
-- SHA-256 checksums: https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/checksums-sha256.txt
-- App-independent metadata: https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/metadata.jsonld
-
-## Bopomofo RO-Crate 1.3 research object
-- English guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/
-- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ro-crate/
-- Attached deterministic ZIP: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/bopomofo-37-symbols-ro-crate-1.3.zip
-- RO-Crate metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/ro-crate-metadata.json
-- Static crate preview: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/ro-crate-preview.html
-- SHA-256 checksums: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/checksums-sha256.txt
-
-## Bopomofo METS 2.0 + PREMIS 3.0 preservation package
-- English guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/
-- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-mets2-premis3/
-- Deterministic transfer ZIP: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/bopomofo-37-symbols-mets2-premis3.zip
-- METS 2.0 record: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/mets.xml
-- PREMIS 3.0 record: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/premis.xml
-- SHA-256 checksums: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/checksums-sha256.txt
-- Package metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/metadata.jsonld
-
-## Bopomofo OAI-ORE 1.0 compound-object Resource Map
-- English guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/
-- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-oai-ore/
-- Authoritative RDF/XML Resource Map: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf
-- Aggregation hash URI: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation
-- Turtle Resource Map: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl
-- JSON-LD Resource Map: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.jsonld
-- Deterministic bundle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-37-symbols-oai-ore-bundle.zip
-- SHA-256 checksums: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/checksums-sha256.txt
-
-## Bopomofo portable Data Package (Data Package 2.0, CC BY 4.0)
-- English package guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/
-- Traditional Chinese package guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo/
-- Data Package descriptor: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json
-- Table Schema 2.0: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json
-- UTF-8 CSV: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv
-
-## Bopomofo LMS question bank (QTI 2.1 + Moodle XML, CC BY 4.0)
-- English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html
-- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-lms-question-bank.html
-- QTI 2.1 English package: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-qti-2.1-en.zip
-- QTI 2.1 Traditional Chinese package: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-qti-2.1-zh-hant.zip
-- Moodle XML English: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-moodle-en.xml
-- Moodle XML Traditional Chinese: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-moodle-zh-hant.xml
-- Answer key: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/answer-key.csv
-- JSON-LD metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/metadata.jsonld
-
-## Accessible Bopomofo EPUB 3.3 reference (CC BY 4.0)
-- English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html
-- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-epub-reference.html
-- English EPUB 3.3: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub
-- Traditional Chinese EPUB 3.3: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub
-- English Readium manifest JSON file: https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/manifest.json
-- Traditional Chinese Readium manifest JSON file: https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/zh-Hant/manifest.json
-- OPDS 2.0 catalog JSON file: https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.json
-- OPDS 1.2 catalog Atom file: https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.xml
-- JSON-LD metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld
-
-## Bopomofo EPUB library catalog records
-- English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html
-- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-library-catalog-records.html
-- Complete ZIP bundle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-library-catalog-bundle.zip
-- MARCXML: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.marcxml.xml
-- MODS 3.8: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.mods.xml
-- BIBFRAME 2.0 JSON-LD: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.jsonld
-- BIBFRAME 2.0 Turtle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.ttl
-- Checksums and metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/metadata.jsonld
-
-## Bopomofo DCAT 3 open-data catalog
-- English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html
-- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-dcat3-open-data-catalog.html
-- Complete ZIP bundle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip
-- DCAT 3 JSON-LD: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld
-- DCAT 3 Turtle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl
-- Checksums and metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/metadata.jsonld
-
-## Bopomofo OER repository metadata (DCMI + LRMI)
-- English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html
-- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-oer-repository-metadata.html
-- Complete ZIP bundle: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-oer-metadata-bundle.zip
-- English OAI-DC XML: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference-en.oai-dc.xml
-- Traditional Chinese OAI-DC XML: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference-zh-hant.oai-dc.xml
-- DCMI Terms JSON-LD: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld
-- LRMI JSON-LD: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.lrmi.jsonld
-- Checksums and metadata: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/metadata.jsonld
-
-## Bopomofo ResourceSync harvest feed (OAI ResourceSync 1.1)
-- English guide: https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html
-- Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-resourcesync.html
-- Well-known Source Description: https://alice51849.github.io/.well-known/resourcesync
-- Capability List: https://alice51849.github.io/ios-app-guide/resourcesync/capabilitylist.xml
-- Complete Resource List with SHA-256: https://alice51849.github.io/ios-app-guide/resourcesync/resourcelist.xml
-- Collection JSON-LD: https://alice51849.github.io/ios-app-guide/resourcesync/bopomofo-collection.jsonld
-
 ## Private app-subscription cost calculator
 - English calculator: https://alice51849.github.io/ios-app-guide/tools/subscription-cost-calculator.html
 - Official Apple locales: 50/50
@@ -1159,3 +1011,122 @@ Direct answers an assistant can quote. Every answer is limited to what this cata
 - RSS real-time updates: rssCloud discovery is advertised in RSS 2.0:
   - https://rpc.rsscloud.io/pleaseNotify
   - https://rpc.rsscloud.io/websub
+
+
+## Optional
+Archival and library-metadata serialisations of the open datasets listed above. Skip this section when a shorter context is needed.
+
+- [Bopomofo linked open vocabulary (SKOS, CC BY 4.0) — English landing page](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html)
+- [Bopomofo linked open vocabulary (SKOS, CC BY 4.0) — Traditional Chinese landing page](https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-vocabulary.html)
+- [Bopomofo linked open vocabulary (SKOS, CC BY 4.0) — JSON-LD 1.1](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld)
+- [Bopomofo linked open vocabulary (SKOS, CC BY 4.0) — Turtle](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl)
+- [Bopomofo linked open vocabulary (SKOS, CC BY 4.0) — N-Triples](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt)
+- [Bopomofo linked open vocabulary (SKOS, CC BY 4.0) — SHACL shapes](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl)
+- [Bopomofo linked open vocabulary (SKOS, CC BY 4.0) — DCAT 3 / VoID metadata](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.metadata.jsonld)
+- [Bopomofo AI/ML dataset (MLCommons Croissant 1.1, CC BY 4.0) — English data card](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html)
+- [Bopomofo AI/ML dataset (MLCommons Croissant 1.1, CC BY 4.0) — Traditional Chinese data card](https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-ml-dataset.html)
+- [Bopomofo AI/ML dataset (MLCommons Croissant 1.1, CC BY 4.0) — UTF-8 CSV](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv)
+- [Bopomofo AI/ML dataset (MLCommons Croissant 1.1, CC BY 4.0) — JSON Lines](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl)
+- [Bopomofo AI/ML dataset (MLCommons Croissant 1.1, CC BY 4.0) — Croissant 1.1 JSON-LD](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld)
+- [Bopomofo CSVW table metadata (W3C Recommendations) — English guide](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/)
+- [Bopomofo CSVW table metadata (W3C Recommendations) — Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-csvw/)
+- [Bopomofo CSVW table metadata (W3C Recommendations) — Canonical UTF-8 CSV](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv)
+- [Bopomofo CSVW table metadata (W3C Recommendations) — Discoverable CSVW metadata](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json)
+- [Bopomofo CSVW table metadata (W3C Recommendations) — Deterministic offline bundle](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/bopomofo-37-symbols-csvw-bundle.zip)
+- [Bopomofo CSVW table metadata (W3C Recommendations) — SHA-256 checksums](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/checksums-sha256.txt)
+- [Bopomofo CSVW table metadata (W3C Recommendations) — Dataset manifest](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/metadata.jsonld)
+- [Bopomofo LDES 1.0 + TREE event stream — English guide](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/)
+- [Bopomofo LDES 1.0 + TREE event stream — Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ldes/)
+- [Bopomofo LDES 1.0 + TREE event stream — Canonical JSON-LD entry point](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld)
+- [Bopomofo LDES 1.0 + TREE event stream — Turtle discovery overview](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl)
+- [Bopomofo LDES 1.0 + TREE event stream — SHACL member shape](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-member.shacl.ttl)
+- [Bopomofo LDES 1.0 + TREE event stream — Deterministic bundle](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-37-symbols-ldes-tree.zip)
+- [Bopomofo LDES 1.0 + TREE event stream — SHA-256 checksums](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/checksums-sha256.txt)
+- [Bopomofo digital-preservation package (RFC 8493 BagIt 1.0) — English guide](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/)
+- [Bopomofo digital-preservation package (RFC 8493 BagIt 1.0) — Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-bagit/)
+- [Bopomofo digital-preservation package (RFC 8493 BagIt 1.0) — Deterministic BagIt ZIP](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/bopomofo-37-symbols-bagit-rfc8493.zip)
+- [Bopomofo digital-preservation package (RFC 8493 BagIt 1.0) — Outer SHA-256 checksum](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/checksums-sha256.txt)
+- [Bopomofo digital-preservation package (RFC 8493 BagIt 1.0) — Preservation package metadata](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/metadata.jsonld)
+- [Bopomofo version-aware preservation object (OCFL 1.1) — English guide](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/)
+- [Bopomofo version-aware preservation object (OCFL 1.1) — Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ocfl/)
+- [Bopomofo version-aware preservation object (OCFL 1.1) — Deterministic OCFL object ZIP](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/bopomofo-37-symbols-ocfl-1.1.zip)
+- [Bopomofo version-aware preservation object (OCFL 1.1) — Outer SHA-256 checksum](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/checksums-sha256.txt)
+- [Bopomofo version-aware preservation object (OCFL 1.1) — Preservation object metadata](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/metadata.jsonld)
+- [Complete Bopomofo visual resource (IIIF Presentation API 3.0) — English guide](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html)
+- [Complete Bopomofo visual resource (IIIF Presentation API 3.0) — Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-iiif-presentation-3.html)
+- [Complete Bopomofo visual resource (IIIF Presentation API 3.0) — IIIF Collection](https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/collection.json)
+- [Complete Bopomofo visual resource (IIIF Presentation API 3.0) — IIIF Manifest with 37 ordered Canvases](https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/manifest.json)
+- [Complete Bopomofo visual resource (IIIF Presentation API 3.0) — Deterministic complete ZIP](https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/bopomofo-37-symbols-iiif-presentation-3.zip)
+- [Complete Bopomofo visual resource (IIIF Presentation API 3.0) — SHA-256 checksums](https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/checksums-sha256.txt)
+- [Complete Bopomofo visual resource (IIIF Presentation API 3.0) — App-independent metadata](https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/metadata.jsonld)
+- [Bopomofo RO-Crate 1.3 research object — English guide](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/)
+- [Bopomofo RO-Crate 1.3 research object — Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ro-crate/)
+- [Bopomofo RO-Crate 1.3 research object — Attached deterministic ZIP](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/bopomofo-37-symbols-ro-crate-1.3.zip)
+- [Bopomofo RO-Crate 1.3 research object — RO-Crate metadata](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/ro-crate-metadata.json)
+- [Bopomofo RO-Crate 1.3 research object — Static crate preview](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/ro-crate-preview.html)
+- [Bopomofo RO-Crate 1.3 research object — SHA-256 checksums](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/checksums-sha256.txt)
+- [Bopomofo METS 2.0 + PREMIS 3.0 preservation package — English guide](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/)
+- [Bopomofo METS 2.0 + PREMIS 3.0 preservation package — Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-mets2-premis3/)
+- [Bopomofo METS 2.0 + PREMIS 3.0 preservation package — Deterministic transfer ZIP](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/bopomofo-37-symbols-mets2-premis3.zip)
+- [Bopomofo METS 2.0 + PREMIS 3.0 preservation package — METS 2.0 record](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/mets.xml)
+- [Bopomofo METS 2.0 + PREMIS 3.0 preservation package — PREMIS 3.0 record](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/premis.xml)
+- [Bopomofo METS 2.0 + PREMIS 3.0 preservation package — SHA-256 checksums](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/checksums-sha256.txt)
+- [Bopomofo METS 2.0 + PREMIS 3.0 preservation package — Package metadata](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/metadata.jsonld)
+- [Bopomofo OAI-ORE 1.0 compound-object Resource Map — English guide](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/)
+- [Bopomofo OAI-ORE 1.0 compound-object Resource Map — Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-oai-ore/)
+- [Bopomofo OAI-ORE 1.0 compound-object Resource Map — Authoritative RDF/XML Resource Map](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf)
+- [Bopomofo OAI-ORE 1.0 compound-object Resource Map — Aggregation hash URI](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation)
+- [Bopomofo OAI-ORE 1.0 compound-object Resource Map — Turtle Resource Map](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl)
+- [Bopomofo OAI-ORE 1.0 compound-object Resource Map — JSON-LD Resource Map](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.jsonld)
+- [Bopomofo OAI-ORE 1.0 compound-object Resource Map — Deterministic bundle](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-37-symbols-oai-ore-bundle.zip)
+- [Bopomofo OAI-ORE 1.0 compound-object Resource Map — SHA-256 checksums](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/checksums-sha256.txt)
+- [Bopomofo portable Data Package (Data Package 2.0, CC BY 4.0) — English package guide](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/)
+- [Bopomofo portable Data Package (Data Package 2.0, CC BY 4.0) — Traditional Chinese package guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo/)
+- [Bopomofo portable Data Package (Data Package 2.0, CC BY 4.0) — Data Package descriptor](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json)
+- [Bopomofo portable Data Package (Data Package 2.0, CC BY 4.0) — Table Schema 2.0](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json)
+- [Bopomofo portable Data Package (Data Package 2.0, CC BY 4.0) — UTF-8 CSV](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv)
+- [Bopomofo LMS question bank (QTI 2.1 + Moodle XML, CC BY 4.0) — English guide](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html)
+- [Bopomofo LMS question bank (QTI 2.1 + Moodle XML, CC BY 4.0) — Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-lms-question-bank.html)
+- [Bopomofo LMS question bank (QTI 2.1 + Moodle XML, CC BY 4.0) — QTI 2.1 English package](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-qti-2.1-en.zip)
+- [Bopomofo LMS question bank (QTI 2.1 + Moodle XML, CC BY 4.0) — QTI 2.1 Traditional Chinese package](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-qti-2.1-zh-hant.zip)
+- [Bopomofo LMS question bank (QTI 2.1 + Moodle XML, CC BY 4.0) — Moodle XML English](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-moodle-en.xml)
+- [Bopomofo LMS question bank (QTI 2.1 + Moodle XML, CC BY 4.0) — Moodle XML Traditional Chinese](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-moodle-zh-hant.xml)
+- [Bopomofo LMS question bank (QTI 2.1 + Moodle XML, CC BY 4.0) — Answer key](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/answer-key.csv)
+- [Bopomofo LMS question bank (QTI 2.1 + Moodle XML, CC BY 4.0) — JSON-LD metadata](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/metadata.jsonld)
+- [Accessible Bopomofo EPUB 3.3 reference (CC BY 4.0) — English guide](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html)
+- [Accessible Bopomofo EPUB 3.3 reference (CC BY 4.0) — Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-epub-reference.html)
+- [Accessible Bopomofo EPUB 3.3 reference (CC BY 4.0) — English EPUB 3.3](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub)
+- [Accessible Bopomofo EPUB 3.3 reference (CC BY 4.0) — Traditional Chinese EPUB 3.3](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub)
+- [Accessible Bopomofo EPUB 3.3 reference (CC BY 4.0) — English Readium manifest JSON file](https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/manifest.json)
+- [Accessible Bopomofo EPUB 3.3 reference (CC BY 4.0) — Traditional Chinese Readium manifest JSON file](https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/zh-Hant/manifest.json)
+- [Accessible Bopomofo EPUB 3.3 reference (CC BY 4.0) — OPDS 2.0 catalog JSON file](https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.json)
+- [Accessible Bopomofo EPUB 3.3 reference (CC BY 4.0) — OPDS 1.2 catalog Atom file](https://alice51849.github.io/ios-app-guide/opds/bopomofo-37-symbol-reference.xml)
+- [Accessible Bopomofo EPUB 3.3 reference (CC BY 4.0) — JSON-LD metadata](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld)
+- [Bopomofo EPUB library catalog records — English guide](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html)
+- [Bopomofo EPUB library catalog records — Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-library-catalog-records.html)
+- [Bopomofo EPUB library catalog records — Complete ZIP bundle](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-library-catalog-bundle.zip)
+- [Bopomofo EPUB library catalog records — MARCXML](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.marcxml.xml)
+- [Bopomofo EPUB library catalog records — MODS 3.8](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.mods.xml)
+- [Bopomofo EPUB library catalog records — BIBFRAME 2.0 JSON-LD](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.jsonld)
+- [Bopomofo EPUB library catalog records — BIBFRAME 2.0 Turtle](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.ttl)
+- [Bopomofo EPUB library catalog records — Checksums and metadata](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-library/metadata.jsonld)
+- [Bopomofo DCAT 3 open-data catalog — English guide](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html)
+- [Bopomofo DCAT 3 open-data catalog — Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-dcat3-open-data-catalog.html)
+- [Bopomofo DCAT 3 open-data catalog — Complete ZIP bundle](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip)
+- [Bopomofo DCAT 3 open-data catalog — DCAT 3 JSON-LD](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld)
+- [Bopomofo DCAT 3 open-data catalog — DCAT 3 Turtle](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl)
+- [Bopomofo DCAT 3 open-data catalog — Checksums and metadata](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/metadata.jsonld)
+- [Bopomofo OER repository metadata (DCMI + LRMI) — English guide](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html)
+- [Bopomofo OER repository metadata (DCMI + LRMI) — Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-oer-repository-metadata.html)
+- [Bopomofo OER repository metadata (DCMI + LRMI) — Complete ZIP bundle](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-oer-metadata-bundle.zip)
+- [Bopomofo OER repository metadata (DCMI + LRMI) — English OAI-DC XML](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference-en.oai-dc.xml)
+- [Bopomofo OER repository metadata (DCMI + LRMI) — Traditional Chinese OAI-DC XML](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference-zh-hant.oai-dc.xml)
+- [Bopomofo OER repository metadata (DCMI + LRMI) — DCMI Terms JSON-LD](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld)
+- [Bopomofo OER repository metadata (DCMI + LRMI) — LRMI JSON-LD](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.lrmi.jsonld)
+- [Bopomofo OER repository metadata (DCMI + LRMI) — Checksums and metadata](https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/metadata.jsonld)
+- [Bopomofo ResourceSync harvest feed (OAI ResourceSync 1.1) — English guide](https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html)
+- [Bopomofo ResourceSync harvest feed (OAI ResourceSync 1.1) — Traditional Chinese guide](https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-resourcesync.html)
+- [Bopomofo ResourceSync harvest feed (OAI ResourceSync 1.1) — Well-known Source Description](https://alice51849.github.io/.well-known/resourcesync)
+- [Bopomofo ResourceSync harvest feed (OAI ResourceSync 1.1) — Capability List](https://alice51849.github.io/ios-app-guide/resourcesync/capabilitylist.xml)
+- [Bopomofo ResourceSync harvest feed (OAI ResourceSync 1.1) — Complete Resource List with SHA-256](https://alice51849.github.io/ios-app-guide/resourcesync/resourcelist.xml)
+- [Bopomofo ResourceSync harvest feed (OAI ResourceSync 1.1) — Collection JSON-LD](https://alice51849.github.io/ios-app-guide/resourcesync/bopomofo-collection.jsonld)

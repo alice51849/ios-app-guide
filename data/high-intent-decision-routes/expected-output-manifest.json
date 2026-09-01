@@ -5,7 +5,7 @@
   "creative_count": 46,
   "current_inventory": {
     "app_keys_sha256": "c3c8f1c9f1624310c6e5c11226ce67e57ca6c0de354e583460ac74064e284474",
-    "copy_sha256": "ae6d8925026621c3416e9047128d5b21644de2a987d21ef1ab92877d593f6f13",
+    "copy_sha256": "2c0e9803c3fdcb8e39051bf79c6eb19f1d782c197f2eabb8c7016773cc24984b",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 46
@@ -14,12 +14,12 @@
   "deployment_state": "generated_not_deployed",
   "expected_outputs": [
     {
-      "generated_sha256": "12d8f2015174c44e3691abe631361453f18fbcc4bac80cf02fbb47b80aa2b47a",
+      "generated_sha256": "d5f927c7e7d56ea57402a0fa5792b74b76dba78e658249eb6b5531330df611e2",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "f028827817d4b198f68707926c0153f8c97995e9dde313e08db7df1d1f20272d",
+      "generated_sha256": "de69b99437887671ad5ca6aefa4004f86d9f0af8c385f5e40ac0ea99aa4da6a7",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -29,7 +29,7 @@
       "relative_path": "en-US/decide/aibriefpack/organize-source-context-before-ai.html"
     },
     {
-      "generated_sha256": "89a1a7f55f19e22c1d98fc7e1d01fcd6d5482a6e3b1e424b3d7e111ba5960762",
+      "generated_sha256": "810d7fc7117dca2346853b402b6390ad9e47b537916078845c21393e9d67da8a",
       "kind": "route_html",
       "relative_path": "en-US/decide/aim990/toeic-part-five-time-pressure.html"
     },
@@ -104,7 +104,7 @@
       "relative_path": "en-US/decide/lumibopomofopro/complete-zhuyin-path-for-heritage-family.html"
     },
     {
-      "generated_sha256": "bcaf2544a0602179a390f2eac79640f779ed1564b2c75aa3803f5fb4b873af76",
+      "generated_sha256": "0ab0e2837cbbf37d64f27bf16bb5988dc6e2757839e2ce8ae4306dc8f675cb41",
       "kind": "route_html",
       "relative_path": "en-US/decide/lumiletters/try-phonics-before-one-time-unlock.html"
     },
@@ -114,7 +114,7 @@
       "relative_path": "en-US/decide/lumiletterspro/complete-phonics-for-home-kindergarten.html"
     },
     {
-      "generated_sha256": "4f78995b475e35bd437ef37120ce14f393d78ddc46d83519ae2b68c40ef906fd",
+      "generated_sha256": "24a2e13d06a94ee5be9d6b6ab418dce5ce433676b257d50725ee15d4161e7a1d",
       "kind": "route_html",
       "relative_path": "en-US/decide/lumimath/replace-math-resistance-with-short-play.html"
     },
@@ -124,7 +124,7 @@
       "relative_path": "en-US/decide/lumimathpro/complete-math-thinking-space-adventure.html"
     },
     {
-      "generated_sha256": "4ea76ba3d00289d33ee446379367f2b037a41adbb5e3a63cf31673ec348db1b1",
+      "generated_sha256": "7b1e4e65120476882655f3435a9df07d1eab836fe50758c10cff6cff119c157d",
       "kind": "route_html",
       "relative_path": "en-US/decide/lumimission/end-daily-routine-battles-with-play.html"
     },
@@ -287,14 +287,14 @@
   "fallback_records": 0,
   "inventory": {
     "app_keys_sha256": "c3c8f1c9f1624310c6e5c11226ce67e57ca6c0de354e583460ac74064e284474",
-    "copy_sha256": "ae6d8925026621c3416e9047128d5b21644de2a987d21ef1ab92877d593f6f13",
+    "copy_sha256": "2c0e9803c3fdcb8e39051bf79c6eb19f1d782c197f2eabb8c7016773cc24984b",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 46,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "7ac3a545976e2870546f68de48b68ec10f66306c5a3ec0f799b4e3b476b8d213",
+  "manifest_digest": "b575783de2235632e3c7e1602e5848f7ed2059027caadfd5100d9adada8381de",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "136c3abe602b72dd05bb82128743688b8b1b880fca570a2fa78ee26afc030e59",
+  "release_contract_digest": "d370024ac258764bf224db5c86844c92a955b370c328a8aa81d14166663906b0",
   "release_state": "exact",
   "route_count": 51,
   "routes": [
@@ -325,8 +325,8 @@
       "creative_id": "aim990:toeic-part-five-time-pressure:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "89a1a7f55f19e22c1d98fc7e1d01fcd6d5482a6e3b1e424b3d7e111ba5960762",
-      "record_digest": "371151f41358d1805926cfd434cb72b0c6d57ec0de5e7e6d765e19d7368abb78",
+      "output_sha256": "810d7fc7117dca2346853b402b6390ad9e47b537916078845c21393e9d67da8a",
+      "record_digest": "af0d1d4acf32cbf83fef9d9157b418ef411db8bbf3b4e59ffd1c70eb5bd145dd",
       "relative_path": "en-US/decide/aim990/toeic-part-five-time-pressure.html",
       "route_id": "en-US:aim990:toeic-part-five-time-pressure",
       "route_slug": "toeic-part-five-time-pressure",
@@ -580,8 +580,8 @@
       "creative_id": "lumiletters:try-phonics-before-one-time-unlock:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "bcaf2544a0602179a390f2eac79640f779ed1564b2c75aa3803f5fb4b873af76",
-      "record_digest": "3e51eb64ecea143508bb1bbde0c84842fd71a14165b4a488ceb56a011964b0e3",
+      "output_sha256": "0ab0e2837cbbf37d64f27bf16bb5988dc6e2757839e2ce8ae4306dc8f675cb41",
+      "record_digest": "63deecca15b188b3796396f5857dfec965d8b829aaa0e92073c32858c4ea11ff",
       "relative_path": "en-US/decide/lumiletters/try-phonics-before-one-time-unlock.html",
       "route_id": "en-US:lumiletters:try-phonics-before-one-time-unlock",
       "route_slug": "try-phonics-before-one-time-unlock",
@@ -614,8 +614,8 @@
       "creative_id": "lumimath:replace-math-resistance-with-short-play:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "4f78995b475e35bd437ef37120ce14f393d78ddc46d83519ae2b68c40ef906fd",
-      "record_digest": "94cfe6994107ce29dd3ad9581b90de3ac1351ad5a66e8900d720f6b3f61e1fd1",
+      "output_sha256": "24a2e13d06a94ee5be9d6b6ab418dce5ce433676b257d50725ee15d4161e7a1d",
+      "record_digest": "cf9db7a2fc788622b00ab360eb22fb4a6f8bfe7b748c6b2a7df4cbfe47f58796",
       "relative_path": "en-US/decide/lumimath/replace-math-resistance-with-short-play.html",
       "route_id": "en-US:lumimath:replace-math-resistance-with-short-play",
       "route_slug": "replace-math-resistance-with-short-play",
@@ -648,8 +648,8 @@
       "creative_id": "lumimission:end-daily-routine-battles-with-play:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "4ea76ba3d00289d33ee446379367f2b037a41adbb5e3a63cf31673ec348db1b1",
-      "record_digest": "e98a5c542e115515fb96cd2ce40c4ca75f76361304ce85502e4535c06d5e9faf",
+      "output_sha256": "7b1e4e65120476882655f3435a9df07d1eab836fe50758c10cff6cff119c157d",
+      "record_digest": "64ca50d4a0772944f27479a7f27ac3df5160965d528bffcc6ad459b663afcbd7",
       "relative_path": "en-US/decide/lumimission/end-daily-routine-battles-with-play.html",
       "route_id": "en-US:lumimission:end-daily-routine-battles-with-play",
       "route_slug": "end-daily-routine-battles-with-play",
@@ -1168,5 +1168,5 @@
   ],
   "schema_version": 2,
   "site": "https://alice51849.github.io/ios-app-guide",
-  "source_contract_digest": "82130e1f39419a9f4b37adebde7bef946fd0d0ec9e5ced4b943faed8ca266281"
+  "source_contract_digest": "cb9e28b3ff2df4eb0b236aa4895d6f5471b33a153dcc2d5f3c4fbee009e00e61"
 }

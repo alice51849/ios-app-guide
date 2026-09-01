@@ -5,7 +5,7 @@
     "relative_path": "data/verified-ios-app-finder-catalog.json",
     "expected_app_count": 46,
     "app_keys_sha256": "c3c8f1c9f1624310c6e5c11226ce67e57ca6c0de354e583460ac74064e284474",
-    "copy_sha256": "ae6d8925026621c3416e9047128d5b21644de2a987d21ef1ab92877d593f6f13",
+    "copy_sha256": "2c0e9803c3fdcb8e39051bf79c6eb19f1d782c197f2eabb8c7016773cc24984b",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd"
   },
   "publisher": {
@@ -97,7 +97,7 @@
             "Confirm the current content scope and purchase terms on the listing.",
             "Pair any study plan with current official TOEIC test information."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.2", "feature.3"]
+          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2", "feature.3", "feature.4"]
         }
       }
     },
@@ -574,7 +574,7 @@
             "Try the available free content with the child present.",
             "Confirm the current lifetime-unlock scope and parental controls."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2", "feature.3", "feature.4"]
         }
       }
     },
@@ -630,7 +630,7 @@
             "Observe one free session rather than judging only completion.",
             "Confirm current age guidance and unlock terms on the listing."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.3", "feature.4"]
         }
       }
     },
@@ -686,7 +686,7 @@
             "Test one routine for several days before adding more tasks.",
             "Confirm current free content, parent controls, and lifetime-unlock details."
           ],
-          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.2"]
+          "evidence_refs": ["summary.en", "feature.0", "feature.1", "feature.3", "feature.4"]
         }
       }
     },

@@ -911,6 +911,10 @@ Direct answers an assistant can quote. Every answer is limited to what this cata
 - JSON Schema: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.schema.json
 - Official Apple locales: 50/50
 
+## Source-bound high-intent app decision guides
+- [JSON Feed with WebSub discovery](https://alice51849.github.io/ios-app-guide/data/high-intent-decision-routes/feed.json) — 51 source-bound routes across 46 verified live apps; first-party guidance, not an independent ranking
+- [High-intent decision route sitemap](https://alice51849.github.io/ios-app-guide/sitemap-high-intent-decision-routes.xml) — exact crawl inventory
+
 ## Localized AI-readable app catalogs
 - Machine-readable locale index: https://alice51849.github.io/ios-app-guide/llms/index.json
 - [ar-SA](https://alice51849.github.io/ios-app-guide/llms/ar-SA.txt)

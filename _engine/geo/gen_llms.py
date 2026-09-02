@@ -33,6 +33,7 @@ import app_decision_matrix  # noqa: E402
 import app_install_decision_routes  # noqa: E402
 import app_video_lessons  # noqa: E402
 import build_pages_i18n  # noqa: E402
+import high_intent_decision_routes  # noqa: E402
 from app_store_storefronts import (  # noqa: E402
     campaign_app_store_url,
     load_storefront_availability,
@@ -924,6 +925,116 @@ def app_install_decision_route_lines(*, full):
             f"  - {locale}: {app_install_decision_routes.locale_index_url(locale)}"
             for locale in OFFICIAL_LOCALES
         )
+    return lines
+
+
+def high_intent_decision_route_lines(*, full):
+    """Expose only the exact source-bound routes published in the JSON Feed."""
+    path = os.path.join(PAGES, HIGH_INTENT_FEED)
+    if not os.path.exists(path):
+        return []
+    try:
+        with open(path, encoding="utf-8") as handle:
+            document = json.load(handle)
+    except (OSError, ValueError) as error:
+        raise ValueError(f"Unreadable high-intent route feed: {path}") from error
+
+    if not isinstance(document, dict):
+        raise ValueError("High-intent route feed must be a JSON object")
+    expected_feed_url = f"{SITE}/{HIGH_INTENT_FEED}"
+    if document.get("feed_url") != expected_feed_url:
+        raise ValueError("High-intent route feed URL drifted")
+    if document.get("home_page_url") != SITE:
+        raise ValueError("High-intent route feed home page drifted")
+    hubs = document.get("hubs")
+    if not isinstance(hubs, list):
+        raise ValueError("High-intent route feed lacks WebSub hubs")
+    hub_urls = {
+        hub.get("url")
+        for hub in hubs
+        if isinstance(hub, dict) and hub.get("type") == "WebSub"
+    }
+    if not set(WEBSUB_HUBS).issubset(hub_urls):
+        raise ValueError("High-intent route feed WebSub discovery drifted")
+    items = document.get("items")
+    if not isinstance(items, list) or not items:
+        raise ValueError("High-intent route feed has no items")
+
+    rows = []
+    seen_ids = set()
+    seen_urls = set()
+    app_keys = set()
+    for item in items:
+        if not isinstance(item, dict):
+            raise ValueError("High-intent route feed item must be an object")
+        route = item.get("_lumi_route")
+        if not isinstance(route, dict):
+            raise ValueError("High-intent route feed item lacks source binding")
+        app_key = str(route.get("app_key", ""))
+        locale = str(route.get("locale", ""))
+        intent_type = str(route.get("intent_type", ""))
+        route_id = str(item.get("id", ""))
+        title_value = item.get("title")
+        title = (
+            _single_line(title_value)
+            if isinstance(title_value, str)
+            else ""
+        )
+        url = str(item.get("url", ""))
+        expected_prefix = f"{SITE}/{locale}/decide/{app_key}/"
+        slug_match = re.fullmatch(
+            rf"{re.escape(expected_prefix)}"
+            r"([a-z0-9]+(?:-[a-z0-9]+)*)\.html",
+            url,
+        )
+        if (
+            app_key not in APPS
+            or not appstore_url(app_key)
+            or locale not in OFFICIAL_LOCALE_SET
+            or not re.fullmatch(r"[a-z][a-z0-9_]*", intent_type)
+            or not title
+            or slug_match is None
+            or route_id
+            != f"{locale}:{app_key}:{slug_match.group(1)}"
+            or not re.fullmatch(
+                r"[0-9a-f]{64}", str(route.get("record_digest", ""))
+            )
+            or item.get("fallback") is True
+            or route.get("fallback") is True
+        ):
+            raise ValueError(
+                f"Invalid high-intent route feed item: {route_id or url!r}"
+            )
+        if route_id in seen_ids or url in seen_urls:
+            raise ValueError("High-intent route feed contains duplicate routes")
+        seen_ids.add(route_id)
+        seen_urls.add(url)
+        app_keys.add(app_key)
+        rows.append((locale, app_key, intent_type, title, url))
+
+    lines = [
+        "",
+        "## Source-bound high-intent app decision guides",
+        (
+            f"- [JSON Feed with WebSub discovery]({expected_feed_url}) — "
+            f"{len(rows)} source-bound routes across "
+            f"{len(app_keys)} verified live apps; first-party guidance, "
+            "not an independent ranking"
+        ),
+        (
+            "- [High-intent decision route sitemap]"
+            f"({SITE}/{high_intent_decision_routes.SITEMAP_RELATIVE}) "
+            "— exact crawl inventory"
+        ),
+    ]
+    if full:
+        for locale, app_key, intent_type, title, url in sorted(rows):
+            safe_title = title.replace("[", r"\[").replace("]", r"\]")
+            readable_intent = intent_type.replace("_", " ")
+            lines.append(
+                f"- [{safe_title}]({url}) — {locale}; "
+                f"{readable_intent} route for {app_key}"
+            )
     return lines
 
 
@@ -1819,6 +1930,7 @@ def build_llms(comp_map, live_keys):
         ]
     lines += portfolio_cost_calculator_lines(full=False)
     lines += app_install_decision_route_lines(full=False)
+    lines += high_intent_decision_route_lines(full=False)
     lines += localized_llms_discovery_lines()
     # 外部 curated 清單與資料集(GitHub;已實測會被 AI 引用的來源,讓爬蟲從站也能發現整個 repo 生態)
     ghbase = "https://github.com/alice51849"
@@ -5664,6 +5776,7 @@ def build_llms_full(comp_map, live_keys):
     ]
     lines += portfolio_cost_calculator_lines(full=True)
     lines += app_install_decision_route_lines(full=True)
+    lines += high_intent_decision_route_lines(full=True)
     lines += localized_llms_discovery_lines()
     lines.append("")
     return "\n".join(lines)

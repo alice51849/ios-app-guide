@@ -1,33 +1,33 @@
 [
   {
     "locale": "en-CA",
-    "pages": 915,
+    "pages": 941,
     "measured": 40,
-    "coverage": 8.5,
+    "coverage": 7.6,
     "native_ratio": null,
-    "untranslated_pages": 30
+    "untranslated_pages": 32
   },
   {
     "locale": "en-AU",
-    "pages": 915,
+    "pages": 941,
     "measured": 40,
-    "coverage": 8.6,
+    "coverage": 7.8,
     "native_ratio": null,
-    "untranslated_pages": 30
+    "untranslated_pages": 32
   },
   {
     "locale": "en-US",
-    "pages": 915,
+    "pages": 941,
     "measured": 40,
-    "coverage": 8.6,
+    "coverage": 7.8,
     "native_ratio": null,
-    "untranslated_pages": 30
+    "untranslated_pages": 32
   },
   {
     "locale": "en-GB",
-    "pages": 915,
+    "pages": 941,
     "measured": 40,
-    "coverage": 9.3,
+    "coverage": 8.5,
     "native_ratio": null,
     "untranslated_pages": 26
   },
@@ -145,10 +145,10 @@
   },
   {
     "locale": "zh-Hans",
-    "pages": 195,
+    "pages": 196,
     "measured": 40,
-    "coverage": 87.9,
-    "native_ratio": 70.1,
+    "coverage": 88.7,
+    "native_ratio": 68.0,
     "untranslated_pages": 0
   },
   {
@@ -216,56 +216,24 @@
     "untranslated_pages": 1
   },
   {
-    "locale": "he",
-    "pages": 81,
-    "measured": 40,
-    "coverage": 98.0,
-    "native_ratio": 91.6,
-    "untranslated_pages": 0
-  },
-  {
-    "locale": "bn-BD",
-    "pages": 81,
-    "measured": 40,
-    "coverage": 98.1,
-    "native_ratio": null,
-    "untranslated_pages": 0
-  },
-  {
     "locale": "gu-IN",
-    "pages": 81,
+    "pages": 82,
     "measured": 40,
     "coverage": 98.1,
     "native_ratio": null,
     "untranslated_pages": 0
   },
   {
-    "locale": "mr-IN",
-    "pages": 81,
+    "locale": "he",
+    "pages": 82,
     "measured": 40,
     "coverage": 98.1,
-    "native_ratio": null,
-    "untranslated_pages": 0
-  },
-  {
-    "locale": "no",
-    "pages": 81,
-    "measured": 40,
-    "coverage": 98.1,
-    "native_ratio": null,
-    "untranslated_pages": 0
-  },
-  {
-    "locale": "or-IN",
-    "pages": 81,
-    "measured": 40,
-    "coverage": 98.1,
-    "native_ratio": null,
+    "native_ratio": 92.4,
     "untranslated_pages": 0
   },
   {
     "locale": "pa-IN",
-    "pages": 81,
+    "pages": 82,
     "measured": 40,
     "coverage": 98.1,
     "native_ratio": null,
@@ -273,15 +241,39 @@
   },
   {
     "locale": "ur-PK",
-    "pages": 80,
+    "pages": 81,
     "measured": 40,
     "coverage": 98.1,
     "native_ratio": null,
     "untranslated_pages": 0
   },
   {
-    "locale": "kn-IN",
-    "pages": 81,
+    "locale": "bn-BD",
+    "pages": 82,
+    "measured": 40,
+    "coverage": 98.2,
+    "native_ratio": null,
+    "untranslated_pages": 0
+  },
+  {
+    "locale": "mr-IN",
+    "pages": 82,
+    "measured": 40,
+    "coverage": 98.2,
+    "native_ratio": null,
+    "untranslated_pages": 0
+  },
+  {
+    "locale": "no",
+    "pages": 82,
+    "measured": 40,
+    "coverage": 98.2,
+    "native_ratio": null,
+    "untranslated_pages": 0
+  },
+  {
+    "locale": "or-IN",
+    "pages": 82,
     "measured": 40,
     "coverage": 98.2,
     "native_ratio": null,
@@ -289,7 +281,7 @@
   },
   {
     "locale": "te-IN",
-    "pages": 80,
+    "pages": 81,
     "measured": 40,
     "coverage": 98.2,
     "native_ratio": null,
@@ -297,15 +289,15 @@
   },
   {
     "locale": "ca",
-    "pages": 81,
+    "pages": 82,
     "measured": 40,
     "coverage": 98.3,
     "native_ratio": null,
     "untranslated_pages": 0
   },
   {
-    "locale": "da",
-    "pages": 81,
+    "locale": "kn-IN",
+    "pages": 82,
     "measured": 40,
     "coverage": 98.3,
     "native_ratio": null,
@@ -313,23 +305,15 @@
   },
   {
     "locale": "cs",
-    "pages": 81,
+    "pages": 82,
     "measured": 40,
     "coverage": 98.4,
     "native_ratio": null,
     "untranslated_pages": 0
   },
   {
-    "locale": "fi",
-    "pages": 81,
-    "measured": 40,
-    "coverage": 98.4,
-    "native_ratio": null,
-    "untranslated_pages": 0
-  },
-  {
-    "locale": "hr",
-    "pages": 81,
+    "locale": "da",
+    "pages": 82,
     "measured": 40,
     "coverage": 98.4,
     "native_ratio": null,
@@ -337,31 +321,23 @@
   },
   {
     "locale": "ml-IN",
-    "pages": 81,
+    "pages": 82,
     "measured": 40,
     "coverage": 98.4,
     "native_ratio": null,
     "untranslated_pages": 0
   },
   {
-    "locale": "sk",
-    "pages": 81,
+    "locale": "fi",
+    "pages": 82,
     "measured": 40,
-    "coverage": 98.4,
+    "coverage": 98.5,
     "native_ratio": null,
     "untranslated_pages": 0
   },
   {
-    "locale": "sl-SI",
-    "pages": 81,
-    "measured": 40,
-    "coverage": 98.4,
-    "native_ratio": null,
-    "untranslated_pages": 0
-  },
-  {
-    "locale": "es-MX",
-    "pages": 81,
+    "locale": "hr",
+    "pages": 82,
     "measured": 40,
     "coverage": 98.5,
     "native_ratio": null,
@@ -369,15 +345,23 @@
   },
   {
     "locale": "hu",
-    "pages": 81,
+    "pages": 82,
     "measured": 40,
     "coverage": 98.5,
     "native_ratio": null,
     "untranslated_pages": 0
   },
   {
-    "locale": "ro",
-    "pages": 81,
+    "locale": "sk",
+    "pages": 82,
+    "measured": 40,
+    "coverage": 98.5,
+    "native_ratio": null,
+    "untranslated_pages": 0
+  },
+  {
+    "locale": "sl-SI",
+    "pages": 82,
     "measured": 40,
     "coverage": 98.5,
     "native_ratio": null,
@@ -385,17 +369,33 @@
   },
   {
     "locale": "el",
-    "pages": 81,
+    "pages": 82,
     "measured": 40,
     "coverage": 98.6,
-    "native_ratio": 94.0,
+    "native_ratio": 94.6,
+    "untranslated_pages": 0
+  },
+  {
+    "locale": "es-MX",
+    "pages": 82,
+    "measured": 40,
+    "coverage": 98.6,
+    "native_ratio": null,
+    "untranslated_pages": 0
+  },
+  {
+    "locale": "ro",
+    "pages": 82,
+    "measured": 40,
+    "coverage": 98.6,
+    "native_ratio": null,
     "untranslated_pages": 0
   },
   {
     "locale": "ta-IN",
-    "pages": 81,
+    "pages": 82,
     "measured": 40,
-    "coverage": 98.9,
+    "coverage": 99.0,
     "native_ratio": null,
     "untranslated_pages": 0
   }

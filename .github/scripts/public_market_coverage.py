@@ -26,6 +26,12 @@ if str(GEO_ENGINE) not in sys.path:
 
 from official_locales import OFFICIAL_LOCALE_SET  # noqa: E402
 
+DEPLOYMENT_SCHEMA_VERSION = 4
+# The producer (_engine/geo/high_intent_decision_routes.py) binds the
+# deployment identity to the route manifest bytes alone, so unrelated
+# Guide commits no longer churn it. Keep both constants in lockstep with
+# DEPLOYMENT_SCHEMA_VERSION / DEPLOYMENT_ID_PREFIX over there.
+DEPLOYMENT_ID_PREFIX = "github-pages:high-intent:v1"
 EXPECTED_APPS = 46
 EXPECTED_LOCALES = 50
 MAX_RESPONSE_BYTES = 8 * 1024 * 1024
@@ -229,9 +235,12 @@ def _validate_deployment(
     expected_apps: int,
     expected_locales: int,
 ) -> dict[str, Any]:
-    """Strictly validate the schema-v3 externally bound deployment manifest."""
-    if document.get("version") != 3:
-        raise CoverageError("deployment manifest is not schema v3")
+    """Strictly validate the schema-v4 externally bound deployment manifest."""
+    if document.get("version") != DEPLOYMENT_SCHEMA_VERSION:
+        raise CoverageError(
+            "deployment manifest is not schema "
+            f"v{DEPLOYMENT_SCHEMA_VERSION}"
+        )
     source_commit = _text(
         document.get("source_commit"),
         "deployment source_commit",
@@ -262,9 +271,7 @@ def _validate_deployment(
         document.get("deployment_id"),
         "deployment deployment_id",
     )
-    if deployment_id != (
-        f"github-pages:{source_commit}:{engine_revision}:{route_digest[:16]}"
-    ):
+    if deployment_id != f"{DEPLOYMENT_ID_PREFIX}:{route_digest}":
         raise CoverageError("deployment_id does not bind the declared lineage")
     app_count = document.get("app_count")
     route_count = document.get("route_count")

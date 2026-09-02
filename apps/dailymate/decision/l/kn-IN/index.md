@@ -2,7 +2,7 @@
 title: "ಆಪಲ್ ವಾಚ್ ಹೊಂದಿರುವ ಪ್ರಯಾಣಿಕರಿಗಾಗಿ ಅತ್ಯುತ್ತಮ ಪ್ರಾಯೋಗಿಕ ಭಾಷಾ ವಾಕ್ಯಗಳು ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/kn-IN/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6790418321"
 verified_live: true
 purchase_model: "paid_upfront"

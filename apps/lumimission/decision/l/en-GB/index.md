@@ -2,7 +2,7 @@
 title: "best bedtime routine app for preschoolers with no ads"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/en-GB/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

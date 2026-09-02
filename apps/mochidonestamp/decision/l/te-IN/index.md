@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: చివరిసారి — ఎప్పుడు చేశారో గుర్తుంచుకోండి | iOS App"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/te-IN/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

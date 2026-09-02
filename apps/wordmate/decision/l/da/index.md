@@ -2,7 +2,7 @@
 title: "bedste ordforrådsapp til travle pendlere med Apple Watch"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/da/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"

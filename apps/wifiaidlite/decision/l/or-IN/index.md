@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — ନେଟ୍ ସମସ୍ୟା ଖୋଜି ଠିକ୍ କରନ୍ତୁ | iOS App"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/or-IN/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "MoneyTag: આવક અને ખર્ચ — પ્રોજેક્ટ · ટૅગ · અહેવાલ | iOS App"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/gu-IN/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

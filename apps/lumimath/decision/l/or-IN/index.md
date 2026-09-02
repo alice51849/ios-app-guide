@@ -2,7 +2,7 @@
 title: "ଆଇଫୋନ୍ ଉପରେ ଶିଶୁମାନଙ୍କର ତର୍କ ଦକ୍ଷତା ବିକାଶ ପାଇଁ ସର୍ବୋତ୍ତମ ଗଣିତ ଖେଳ ଆପ୍"
 lang: "or-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/or-IN/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6778269699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "Aim990 Plus: ഇംഗ്ലീഷ് പരീക്ഷ — ഇംഗ്ലീഷ് സമ്മർദ പരിശീലനം | iOS App"
 lang: "ml-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/ml-IN/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"

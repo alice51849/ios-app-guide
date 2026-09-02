@@ -2,7 +2,7 @@
 title: "SaveTag: AI બુકમાર્ક — લિંક સાચવો, પછી વાંચો | iOS App"
 lang: "gu-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/gu-IN/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6802505528"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

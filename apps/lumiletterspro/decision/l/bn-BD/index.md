@@ -2,7 +2,7 @@
 title: "হোমস্কুল কিন্ডারগার্টেন প্রস্তুতির জন্য সেরা সম্পূর্ণ ফনিক্স অ্যাপ"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/bn-BD/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "適合學齡前與低年級的最佳完整數學學習 App"
 lang: "zh-Hant"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/zh-Hant/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

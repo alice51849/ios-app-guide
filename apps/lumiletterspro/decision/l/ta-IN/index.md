@@ -2,7 +2,7 @@
 title: "வீட்டில் முன்கூட்டிய குழந்தை பள்ளி பயிற்சிக்கு முழுமையான சிறந்த ஃபோனிக்ஸ் பயன்பாடு"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/ta-IN/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6778491147"
 verified_live: true
 purchase_model: "paid_upfront"

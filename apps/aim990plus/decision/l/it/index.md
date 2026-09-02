@@ -2,7 +2,7 @@
 title: "Aim990 Plus: Test di inglese — Inglese sotto pressione | iOS App"
 lang: "it"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/it/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6792483140"
 verified_live: true
 purchase_model: "paid_upfront"

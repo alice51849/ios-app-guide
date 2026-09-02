@@ -2,7 +2,7 @@
 title: "Mask My File: Adatok törlése — Kitakarás megosztás előtt | iOS App"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/hu/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

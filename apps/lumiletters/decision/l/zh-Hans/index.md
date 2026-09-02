@@ -2,7 +2,7 @@
 title: "iPhone 上最佳无广告儿童教育游戏应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/zh-Hans/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

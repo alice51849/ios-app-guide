@@ -2,7 +2,7 @@
 title: "iPhone साठी मुलांसाठी सर्वोत्तम शैक्षणिक गेम अॅप जाहिरातशिवाय"
 lang: "mr-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/mr-IN/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6778748533"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "BattAI: Skor kesihatan bateri — Peraturan, sumber dan batas yang jelas | iOS App"
 lang: "ms"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ms/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

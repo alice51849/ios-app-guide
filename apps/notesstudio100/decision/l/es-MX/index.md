@@ -2,7 +2,7 @@
 title: "100 Notes Studio: Pen & Paper — Notas a mano y anotación PDF | iOS App"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/es-MX/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

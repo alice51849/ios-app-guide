@@ -2,7 +2,7 @@
 title: "найкращий повний додаток Zhuyin для білінгвальних дітей"
 lang: "uk"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/uk/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

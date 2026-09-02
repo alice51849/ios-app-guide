@@ -2,7 +2,7 @@
 title: "WiFi Aid: நெட்வொர்க் சிக்கல் — இணைப்பு கண்டறிதல் & சான்று | iOS App"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/ta-IN/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

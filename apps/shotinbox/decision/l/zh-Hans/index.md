@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — 本地截图分类、OCR搜索与时间轴 | iOS App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/zh-Hans/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

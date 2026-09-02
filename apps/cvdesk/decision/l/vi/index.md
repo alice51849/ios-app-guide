@@ -2,7 +2,7 @@
 title: "ứng dụng tạo hồ sơ xin việc tốt nhất cho người đổi nghề 2026"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/vi/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6781337213"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

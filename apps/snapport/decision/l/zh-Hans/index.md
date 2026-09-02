@@ -2,7 +2,7 @@
 title: "最佳婴幼儿居家护照照片应用"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/zh-Hans/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6780575828"
 verified_live: true
 purchase_model: "paid_upfront"

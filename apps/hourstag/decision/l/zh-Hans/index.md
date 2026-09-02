@@ -2,7 +2,7 @@
 title: "HoursTag：价格换工时 — 预算、记账、省钱与储蓄 | iOS App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/zh-Hans/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

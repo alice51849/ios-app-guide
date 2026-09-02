@@ -2,7 +2,7 @@
 title: "ShotInbox AI: Sort Screenshots — Βρες και οργάνωσε στιγμιότυπα | iOS App"
 lang: "el"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/el/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6802166527"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -27,7 +27,7 @@
   "identifier": "LUMI-ZHUYIN-DCAT3-2026",
   "version": "1.5.0",
   "datePublished": "2026-07-11",
-  "dateModified": "2026-09-01T00:00:00Z",
+  "dateModified": "2026-09-02T00:00:00Z",
   "inLanguage": [
     "en",
     "zh-Hant"
@@ -97,7 +97,7 @@
       "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ro-crate",
       "name": "Bopomofo RO-Crate 1.3 research object",
       "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
-      "dateModified": "2026-09-01"
+      "dateModified": "2026-09-02"
     },
     {
       "@type": "Dataset",
@@ -162,8 +162,8 @@
       "name": "Complete ZIP bundle",
       "encodingFormat": "application/zip",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip",
-      "contentSize": "28830 bytes",
-      "sha256": "adbdfb35d40617b6f30dda91e9e479bf314e208a9097d1ff051893c68160f2a0"
+      "contentSize": "28806 bytes",
+      "sha256": "a2a021cb0c636f10c763f6eec4e660cdd0e7a0499d3fe087fdbebdf243aa1c0f"
     },
     {
       "@type": "DataDownload",
@@ -171,7 +171,7 @@
       "encodingFormat": "application/ld+json",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld",
       "contentSize": "218434 bytes",
-      "sha256": "ef1ea2809ab84da79c8b3b77e57d535eec927968df08a79a25d7c549059a48d1"
+      "sha256": "1798afdad75bdb70496750561098df4600a8ee68c3dd99c934f275c53ca5c4e7"
     },
     {
       "@type": "DataDownload",
@@ -179,7 +179,7 @@
       "encodingFormat": "text/turtle",
       "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl",
       "contentSize": "148253 bytes",
-      "sha256": "2dfa092979af103fbe5ede4af246fda6e36174974d10e173a9685c3e88dc581c"
+      "sha256": "a4ec2a5c878dcb6e19b62a415796b1750d803ce44bf2e359bd43980e51aae7c1"
     }
   ]
 }

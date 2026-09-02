@@ -2,7 +2,7 @@
 title: "CalDaily 计算器与主题 — 桌面小组件、八种工具、计算记录 | iOS App"
 lang: "zh-Hans"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/zh-Hans/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

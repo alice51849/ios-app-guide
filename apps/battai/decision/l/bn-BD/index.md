@@ -2,7 +2,7 @@
 title: "BattAI: ব্যাটারির স্বাস্থ্য — স্পষ্ট নিয়ম, উৎস ও সীমা | iOS App"
 lang: "bn-BD"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/bn-BD/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "WiFi Aid Lite — Hálózatdiagnosztika tényekkel | iOS App"
 lang: "hu"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/hu/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "G+Money Lite: Bani de vacanță — Cheltuieli, buget & valută | iOS App"
 lang: "ro"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ro/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

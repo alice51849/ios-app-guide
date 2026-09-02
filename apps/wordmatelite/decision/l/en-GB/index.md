@@ -2,7 +2,7 @@
 title: "best free vocabulary app for adults one minute a day no flashcard decks"
 lang: "en-GB"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/en-GB/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6797601720"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

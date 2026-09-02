@@ -2,7 +2,7 @@
 title: "Snapport Lite: Pasfoto hjemme — Lav ID-fotos derhjemme | iOS App"
 lang: "da"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/da/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6792856304"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

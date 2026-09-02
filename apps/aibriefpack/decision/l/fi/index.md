@@ -2,7 +2,7 @@
 title: "AI Brief: Tiedostot promptiksi — Tiedostoista selkeä konteksti | iOS App"
 lang: "fi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/fi/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

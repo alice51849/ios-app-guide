@@ -2,7 +2,7 @@
 title: "முன்பள்ளி மற்றும் ஆரம்ப வகுப்புகளுக்கான சிறந்த முழுமையான கணிதக் கற்றல் செயலி"
 lang: "ta-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/ta-IN/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6776958488"
 verified_live: true
 purchase_model: "paid_upfront"

@@ -2,7 +2,7 @@
 title: "ứng dụng học zhuyin đầy đủ tốt nhất cho trẻ song ngữ"
 lang: "vi"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/vi/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6775773117"
 verified_live: true
 purchase_model: "paid_upfront"

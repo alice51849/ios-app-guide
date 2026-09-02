@@ -2,7 +2,7 @@
 title: "HoursTag Lite: ధర గంటల్లో — వస్తువుల నిజమైన ధరను చూడండి | iOS App"
 lang: "te-IN"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/te-IN/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

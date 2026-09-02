@@ -2,7 +2,7 @@
 title: "mejor app para seguimiento de presupuesto de viaje sin suscripción para iPhone"
 lang: "es-MX"
 canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/es-MX/index.html"
-modified: "2026-08-31"
+modified: "2026-09-02"
 app_store_id: "6755782939"
 verified_live: true
 purchase_model: "paid_upfront"

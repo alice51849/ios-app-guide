@@ -1,8 +1,8 @@
 {
   "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-08-31",
-  "content_digest": "6242bbdf1eccc4b61378168c6d02f4ed351df4c6a26f927f6fda5994ced528ae",
+  "date_modified": "2026-09-02",
+  "content_digest": "1d3d4c468976302f60d7dd65790d17dc45b1320abd855122d84f5c6edbeed579",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -112,8 +112,6 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/tw/app/id6791658210"
       }
     },
@@ -907,8 +905,8 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 4.7,
-        "rating_count": 6,
+        "rating_value": 4.6,
+        "rating_count": 7,
         "storefront_url": "https://apps.apple.com/tw/app/id6773017109"
       }
     },
@@ -1697,7 +1695,7 @@
         "currency": "TWD",
         "formatted_price": "免費",
         "rating_value": 5.0,
-        "rating_count": 2,
+        "rating_count": 3,
         "storefront_url": "https://apps.apple.com/tw/app/id6785004775"
       }
     },
@@ -1752,8 +1750,6 @@
         "price": "0",
         "currency": "TWD",
         "formatted_price": "免費",
-        "rating_value": 5.0,
-        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/tw/app/id6790800323"
       }
     },

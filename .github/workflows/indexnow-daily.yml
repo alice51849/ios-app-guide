@@ -67,6 +67,7 @@ jobs:
       - name: Submit changed public URLs to IndexNow
         run: |
           state_file=".indexnow-state/last-submitted-sha"
+          receipt_file=".indexnow-state/accepted-receipt.json"
           keyfile="$(find . -maxdepth 1 -type f -name '*.txt' \
             | grep -E '/[a-f0-9]{32}\.txt$' | head -1)"
           test -n "$keyfile"
@@ -81,7 +82,16 @@ jobs:
             --key-file "$keyfile" \
             --batch-size 10000 \
             --state-file "$state_file" \
+            --receipt-file "$receipt_file" \
             "${mode[@]}"
+      - name: Preserve accepted delivery receipt
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: indexnow-accepted-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .indexnow-state/accepted-receipt.json
+          if-no-files-found: error
+          retention-days: 90
       - name: Save durable IndexNow state
         if: success()
         uses: actions/cache/save@v4

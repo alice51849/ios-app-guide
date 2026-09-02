@@ -5,7 +5,9 @@ from __future__ import annotations
 
 import importlib.util
 import io
+import json
 import os
+from datetime import datetime, timezone
 from pathlib import Path
 import tempfile
 import unittest
@@ -368,6 +370,161 @@ class IndexNowTests(unittest.TestCase):
         sender.assert_not_called()
         self.assertIn("changed_public_urls=0", output.getvalue())
         self.assertIn("nothing to submit", output.getvalue())
+
+    def test_successful_delivery_writes_owner_only_acceptance_receipt(self) -> None:
+        site = "https://example.com/apps"
+        sha = "c" * 40
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            key_file = root / "indexnow-key.txt"
+            key_file.write_text("valid-key-123", encoding="utf-8")
+            catalog = (
+                root / "data" / "verified-ios-app-finder-catalog.json"
+            )
+            catalog.parent.mkdir()
+            catalog.write_text(
+                json.dumps(
+                    {
+                        "apps": [
+                            {
+                                "key": "sample",
+                                "app_store_id": "1234567890",
+                                "verified_live": True,
+                            }
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            urls = [
+                f"{site}/en-US/sample.html",
+                f"{site}/ja/sample.html",
+            ]
+            state_file = root / "private" / "last-submitted-sha"
+            receipt_file = root / "private" / "accepted-receipt.json"
+            fixed_time = datetime(2026, 9, 2, 12, tzinfo=timezone.utc)
+            with (
+                mock.patch.object(
+                    indexnow,
+                    "OFFICIAL_LOCALES",
+                    ("en-US", "ja"),
+                ),
+                mock.patch.object(
+                    indexnow,
+                    "read_changed_urls",
+                    return_value=urls,
+                ),
+            ):
+                accepted = indexnow.run(
+                    root,
+                    site,
+                    key_file,
+                    git_since="25 hours ago",
+                    state_file=state_file,
+                    receipt_file=receipt_file,
+                    runner=mock.Mock(
+                        return_value=SimpleNamespace(stdout=f"{sha}\n")
+                    ),
+                    sender=mock.Mock(return_value=202),
+                    clock=lambda: fixed_time,
+                )
+
+            self.assertEqual(2, accepted)
+            receipt = json.loads(receipt_file.read_text(encoding="utf-8"))
+            self.assertEqual(
+                "accepted_by_endpoints_not_indexed",
+                receipt["semantics"],
+            )
+            self.assertEqual(sha, receipt["pages_sha"])
+            self.assertEqual("accepted", receipt["disposition"])
+            self.assertEqual(2, receipt["url_count"])
+            self.assertEqual(2, len(receipt["endpoints"]))
+            self.assertTrue(
+                all(
+                    endpoint["batches"][0]["http_status"] == 202
+                    for endpoint in receipt["endpoints"]
+                )
+            )
+            self.assertEqual(
+                [
+                    {
+                        "key": "sample",
+                        "app_store_id": "1234567890",
+                        "required_url_count": 2,
+                        "accepted_url_count": 2,
+                        "complete": True,
+                        "required_url_set_sha256": indexnow.url_set_digest(urls),
+                        "accepted_url_set_sha256": indexnow.url_set_digest(urls),
+                    }
+                ],
+                receipt["app_acceptances"],
+            )
+            self.assertEqual(0o600, receipt_file.stat().st_mode & 0o777)
+            self.assertEqual(0o700, receipt_file.parent.stat().st_mode & 0o777)
+
+            next_sha = "e" * 40
+            next_time = datetime(2026, 9, 2, 13, tzinfo=timezone.utc)
+            with mock.patch.object(
+                indexnow,
+                "read_changed_urls",
+                return_value=[],
+            ):
+                accepted = indexnow.run(
+                    root,
+                    site,
+                    key_file,
+                    git_since="25 hours ago",
+                    state_file=state_file,
+                    receipt_file=receipt_file,
+                    runner=mock.Mock(
+                        return_value=SimpleNamespace(stdout=f"{next_sha}\n")
+                    ),
+                    sender=mock.Mock(),
+                    clock=lambda: next_time,
+                )
+            self.assertEqual(0, accepted)
+            carried = json.loads(receipt_file.read_text(encoding="utf-8"))
+            self.assertEqual(sha, carried["pages_sha"])
+            self.assertEqual(next_sha, carried["processed_through_sha"])
+            self.assertEqual(
+                receipt["app_acceptances"],
+                carried["app_acceptances"],
+            )
+
+    def test_failed_delivery_does_not_replace_existing_receipt(self) -> None:
+        site = "https://example.com/apps"
+        sha = "d" * 40
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            key_file = root / "indexnow-key.txt"
+            key_file.write_text("valid-key-123", encoding="utf-8")
+            receipt_file = root / "receipt.json"
+            receipt_file.write_text('{"previous":true}\n', encoding="utf-8")
+            with (
+                mock.patch.object(
+                    indexnow,
+                    "read_changed_urls",
+                    return_value=[f"{site}/en-US/sample.html"],
+                ),
+                self.assertRaises(indexnow.SubmissionError),
+            ):
+                indexnow.run(
+                    root,
+                    site,
+                    key_file,
+                    git_since="25 hours ago",
+                    receipt_file=receipt_file,
+                    runner=mock.Mock(
+                        return_value=SimpleNamespace(stdout=f"{sha}\n")
+                    ),
+                    sender=mock.Mock(
+                        side_effect=indexnow.SubmissionError("offline")
+                    ),
+                )
+            self.assertEqual(
+                {"previous": True},
+                json.loads(receipt_file.read_text(encoding="utf-8")),
+            )
 
     def test_durable_sha_replaces_the_time_window_baseline(self) -> None:
         site = "https://example.com/apps"

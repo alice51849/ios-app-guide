@@ -4,19 +4,26 @@
 from __future__ import annotations
 
 import argparse
+from datetime import datetime, timezone
+import hashlib
 import html
 import json
 import os
 from pathlib import Path
 import re
 import subprocess
+import sys
+import tempfile
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
 
-
 HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))
+from official_locales import OFFICIAL_LOCALES
+
+
 DEFAULT_SITE = os.environ.get(
     "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
 ).rstrip("/")
@@ -31,6 +38,7 @@ SHA_RE = re.compile(r"[0-9a-f]{40}")
 DEFAULT_BATCH_SIZE = 10_000
 REQUEST_TIMEOUT_SECONDS = 30
 PRIVATE_TOP_LEVEL_PATHS = {"_engine", ".git", ".github"}
+FINDER_CATALOG_PATH = Path("data/verified-ios-app-finder-catalog.json")
 
 
 class SubmissionError(RuntimeError):
@@ -161,6 +169,153 @@ def write_last_submitted_sha(path: Path, sha: str) -> None:
     pending = path.with_name(f".{path.name}.new")
     pending.write_text(f"{normalized}\n", encoding="utf-8")
     pending.replace(path)
+
+
+def write_private_json(path: Path, payload: dict) -> None:
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True, mode=0o700)
+    os.chmod(path.parent, 0o700)
+    descriptor, temporary = tempfile.mkstemp(
+        prefix=f".{path.name}.",
+        dir=path.parent,
+    )
+    temporary_path = Path(temporary)
+    try:
+        with os.fdopen(descriptor, "w", encoding="utf-8") as handle:
+            os.fchmod(handle.fileno(), 0o600)
+            json.dump(payload, handle, ensure_ascii=False, indent=2)
+            handle.write("\n")
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temporary_path, path)
+        os.chmod(path, 0o600)
+    finally:
+        temporary_path.unlink(missing_ok=True)
+
+
+def url_set_digest(urls: list[str]) -> str:
+    payload = json.dumps(
+        sorted(set(urls)),
+        ensure_ascii=False,
+        separators=(",", ":"),
+    ).encode("utf-8")
+    return hashlib.sha256(payload).hexdigest()
+
+
+def app_url_acceptances(
+    pages_dir: Path,
+    site: str,
+    submitted_urls: list[str],
+) -> list[dict]:
+    catalog_path = pages_dir / FINDER_CATALOG_PATH
+    try:
+        document = json.loads(catalog_path.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError, OSError) as error:
+        raise ValueError(
+            f"Unable to read verified App catalog: {catalog_path}"
+        ) from error
+    records = document.get("apps")
+    if not isinstance(records, list):
+        raise ValueError("Verified App catalog must contain an apps array")
+
+    submitted = set(submitted_urls)
+    identities: set[tuple[str, str]] = set()
+    acceptances = []
+    for record in records:
+        if not isinstance(record, dict) or record.get("verified_live") is False:
+            continue
+        key = str(record.get("key") or "").strip()
+        app_store_id = str(record.get("app_store_id") or "").strip()
+        identity = (key, app_store_id)
+        if (
+            not re.fullmatch(r"[a-z0-9][a-z0-9_-]*", key)
+            or not app_store_id.isdigit()
+            or identity in identities
+        ):
+            raise ValueError("Verified App catalog has an invalid identity")
+        identities.add(identity)
+        expected_urls = [
+            f"{site.rstrip('/')}/{locale}/{key}.html"
+            for locale in OFFICIAL_LOCALES
+        ]
+        accepted_urls = sorted(set(expected_urls) & submitted)
+        if not accepted_urls:
+            continue
+        acceptances.append(
+            {
+                "key": key,
+                "app_store_id": app_store_id,
+                "required_url_count": len(expected_urls),
+                "accepted_url_count": len(accepted_urls),
+                "complete": len(accepted_urls) == len(expected_urls),
+                "required_url_set_sha256": url_set_digest(expected_urls),
+                "accepted_url_set_sha256": url_set_digest(accepted_urls),
+            }
+        )
+    return acceptances
+
+
+def submission_receipt(
+    *,
+    pages_dir: Path,
+    site: str,
+    pages_sha: str,
+    baseline_sha: str | None,
+    urls: list[str],
+    endpoint_batches: dict[str, list[dict]],
+    accepted_at: str,
+) -> dict:
+    return {
+        "version": 1,
+        "kind": "indexnow_submission_receipt",
+        "semantics": "accepted_by_endpoints_not_indexed",
+        "site": site.rstrip("/"),
+        "pages_sha": pages_sha,
+        "processed_through_sha": pages_sha,
+        "baseline_sha": baseline_sha,
+        "accepted_at": accepted_at,
+        "disposition": "accepted" if urls else "no_changed_public_urls",
+        "url_count": len(urls),
+        "url_set_sha256": url_set_digest(urls),
+        "endpoints": [
+            {
+                "url": endpoint,
+                "accepted_batch_count": len(batches),
+                "batches": batches,
+            }
+            for endpoint, batches in endpoint_batches.items()
+        ],
+        "app_acceptances": app_url_acceptances(
+            pages_dir,
+            site,
+            urls,
+        ),
+    }
+
+
+def carry_receipt_through_noop(
+    path: Path,
+    *,
+    pages_sha: str,
+    processed_at: str,
+) -> dict | None:
+    if not path.is_file():
+        return None
+    try:
+        receipt = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as error:
+        raise ValueError(f"Invalid existing IndexNow receipt: {path}") from error
+    if (
+        not isinstance(receipt, dict)
+        or receipt.get("version") != 1
+        or receipt.get("kind") != "indexnow_submission_receipt"
+        or receipt.get("semantics") != "accepted_by_endpoints_not_indexed"
+        or not SHA_RE.fullmatch(str(receipt.get("pages_sha") or ""))
+    ):
+        raise ValueError(f"Invalid existing IndexNow receipt: {path}")
+    receipt["processed_through_sha"] = pages_sha
+    receipt["last_noop_at"] = processed_at
+    return receipt
 
 
 def git_changed_paths(
@@ -404,7 +559,7 @@ def submit_endpoint(
     *,
     opener=None,
     sleeper=time.sleep,
-) -> None:
+) -> int:
     opener = urllib.request.urlopen if opener is None else opener
     last_error: Exception | None = None
     for attempt in range(1, 4):
@@ -427,7 +582,7 @@ def submit_endpoint(
                         f"{endpoint} returned HTTP {response.status}: {body}"
                     )
                 print(f"  {endpoint} -> HTTP {response.status}")
-                return
+                return response.status
         except urllib.error.HTTPError as error:
             body = error.read(1000).decode("utf-8", "replace").strip()
             last_error = SubmissionError(
@@ -472,6 +627,7 @@ def submit_all(
     batch_size: int = DEFAULT_BATCH_SIZE,
     endpoints: tuple[str, ...] = ENDPOINTS,
     sender=submit_endpoint,
+    acceptance_recorder=None,
 ) -> int:
     if not 1 <= batch_size <= 10_000:
         raise ValueError("IndexNow batch size must be between 1 and 10000")
@@ -484,7 +640,14 @@ def submit_all(
         )
         payload = payload_for(chunk, key, site)
         for endpoint in endpoints:
-            sender(endpoint, payload)
+            status = sender(endpoint, payload)
+            if acceptance_recorder is not None:
+                acceptance_recorder(
+                    endpoint,
+                    offset // batch_size + 1,
+                    len(chunk),
+                    status if isinstance(status, int) else None,
+                )
         accepted += len(chunk)
     return accepted
 
@@ -497,14 +660,16 @@ def run(
     batch_size: int = DEFAULT_BATCH_SIZE,
     git_since: str | None = None,
     state_file: Path | None = None,
+    receipt_file: Path | None = None,
     limit: int | None = None,
     runner=subprocess.run,
     sender=submit_endpoint,
+    clock=lambda: datetime.now(timezone.utc),
 ) -> int:
     site = site.rstrip("/")
     current_sha = (
         git_head_sha(pages_dir, runner=runner)
-        if state_file is not None
+        if state_file is not None or receipt_file is not None
         else None
     )
     last_submitted_sha = (
@@ -543,6 +708,27 @@ def run(
     if not urls:
         if state_file is not None and current_sha is not None:
             write_last_submitted_sha(state_file, current_sha)
+        if receipt_file is not None and current_sha is not None:
+            processed_at = clock().astimezone(timezone.utc).isoformat()
+            receipt = carry_receipt_through_noop(
+                receipt_file,
+                pages_sha=current_sha,
+                processed_at=processed_at,
+            )
+            if receipt is None:
+                receipt = submission_receipt(
+                    pages_dir=pages_dir,
+                    site=site,
+                    pages_sha=current_sha,
+                    baseline_sha=last_submitted_sha,
+                    urls=[],
+                    endpoint_batches={endpoint: [] for endpoint in ENDPOINTS},
+                    accepted_at=processed_at,
+                )
+            write_private_json(
+                receipt_file,
+                receipt,
+            )
         print("No changed public URLs; nothing to submit")
         return 0
     key = read_key(key_file)
@@ -550,12 +736,31 @@ def run(
         f"host={urllib.parse.urlsplit(site).netloc} "
         f"key={key[:8]}... urls={len(urls)}"
     )
+    endpoint_batches: dict[str, list[dict]] = {
+        endpoint: [] for endpoint in ENDPOINTS
+    }
+
+    def record_acceptance(
+        endpoint: str,
+        batch: int,
+        url_count: int,
+        status: int | None,
+    ) -> None:
+        endpoint_batches.setdefault(endpoint, []).append(
+            {
+                "batch": batch,
+                "url_count": url_count,
+                "http_status": status,
+            }
+        )
+
     accepted = submit_all(
         urls,
         key,
         site,
         batch_size=batch_size,
         sender=sender,
+        acceptance_recorder=record_acceptance,
     )
     print(f"Accepted {accepted}/{len(urls)} URLs by every IndexNow endpoint")
     if accepted != len(urls):
@@ -568,6 +773,23 @@ def run(
         and complete_change_set
     ):
         write_last_submitted_sha(state_file, current_sha)
+    if receipt_file is not None:
+        if current_sha is None:
+            raise SubmissionError(
+                "IndexNow receipt requires a resolved Pages commit"
+            )
+        write_private_json(
+            receipt_file,
+            submission_receipt(
+                pages_dir=pages_dir,
+                site=site,
+                pages_sha=current_sha,
+                baseline_sha=last_submitted_sha,
+                urls=urls,
+                endpoint_batches=endpoint_batches,
+                accepted_at=clock().astimezone(timezone.utc).isoformat(),
+            ),
+        )
     return accepted
 
 
@@ -595,6 +817,14 @@ def main() -> None:
         type=Path,
         help="Durable last successfully processed git SHA.",
     )
+    parser.add_argument(
+        "--receipt-file",
+        type=Path,
+        help=(
+            "Owner-only JSON receipt for accepted endpoint batches. "
+            "Acceptance does not mean indexed."
+        ),
+    )
     parser.add_argument("--limit", type=int)
     args = parser.parse_args()
 
@@ -605,6 +835,7 @@ def main() -> None:
         batch_size=args.batch_size,
         git_since=args.git_since,
         state_file=args.state_file,
+        receipt_file=args.receipt_file,
         limit=args.limit,
     )
 

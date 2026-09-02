@@ -15,6 +15,8 @@ if str(HERE) not in sys.path:
 
 import public_market_coverage as coverage
 
+GEO_ENGINE = coverage.GEO_ENGINE
+
 
 SITE = coverage.DEFAULT_SITE
 DIGEST = "a" * 64
@@ -22,15 +24,13 @@ COMMIT = "b" * 40
 ENGINE_REVISION = "c" * 40
 CONTRACT_DIGEST = "d" * 64
 ROUTE_DIGEST = "e" * 64
-DEPLOYMENT_ID = (
-    f"github-pages:{COMMIT}:{ENGINE_REVISION}:{ROUTE_DIGEST[:16]}"
-)
+DEPLOYMENT_ID = f"{coverage.DEPLOYMENT_ID_PREFIX}:{ROUTE_DIGEST}"
 
 
 def deployment_manifest(app_count: int = 2) -> dict:
     candidate = app_count * 2
     return {
-        "version": 3,
+        "version": coverage.DEPLOYMENT_SCHEMA_VERSION,
         "generated_at": "2026-08-30T15:54:12Z",
         "deployment_id": DEPLOYMENT_ID,
         "source_commit": COMMIT,
@@ -365,14 +365,40 @@ class PublicMarketCoverageTests(unittest.TestCase):
             "version": 1,
             "source_commit": COMMIT,
         }
-        with self.assertRaisesRegex(coverage.CoverageError, "schema v3"):
+        with self.assertRaisesRegex(coverage.CoverageError, "schema v4"):
             self.audit(documents)
+
+    def test_superseded_v3_deployment_manifest_fails_closed(self):
+        documents = fixture()
+        manifest = documents[f"{SITE}/.well-known/deployment.json"]
+        manifest["version"] = 3
+        manifest["deployment_id"] = (
+            f"github-pages:{COMMIT}:{ENGINE_REVISION}:{ROUTE_DIGEST[:16]}"
+        )
+        with self.assertRaisesRegex(coverage.CoverageError, "schema v4"):
+            self.audit(documents)
+
+    def test_deployment_id_must_match_producer_contract(self):
+        """The gate speaks the same identity dialect as the producer."""
+        sys.path.insert(0, str(GEO_ENGINE))
+        try:
+            import high_intent_decision_routes as producer
+        finally:
+            sys.path.pop(0)
+        self.assertEqual(
+            producer.DEPLOYMENT_SCHEMA_VERSION,
+            coverage.DEPLOYMENT_SCHEMA_VERSION,
+        )
+        self.assertEqual(
+            producer.deployment_identity(ROUTE_DIGEST),
+            DEPLOYMENT_ID,
+        )
 
     def test_unbound_deployment_id_fails_closed(self):
         documents = fixture()
         manifest = documents[f"{SITE}/.well-known/deployment.json"]
         manifest["deployment_id"] = (
-            f"github-pages:{COMMIT}:{ENGINE_REVISION}:{'f' * 16}"
+            f"{coverage.DEPLOYMENT_ID_PREFIX}:{'f' * 64}"
         )
         with self.assertRaisesRegex(
             coverage.CoverageError,

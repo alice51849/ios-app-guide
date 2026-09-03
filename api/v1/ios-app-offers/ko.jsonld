@@ -6,7 +6,7 @@
   "name": "Lumi Studio 개발사 검색 의도 카탈로그",
   "description": "각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.",
   "inLanguage": "ko",
-  "dateModified": "2026-08-31",
+  "dateModified": "2026-09-03",
   "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -415,7 +415,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-cvdesk",
         "url": "https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "CV Desk",
-        "description": "분야를 바꿀 때 이력서 문제는 다릅니다: 경험은 실제지만 서류상 '관련 없음'으로 ATS 필터가 인간 검토 전에 걸러냅니다 — CV Desk는 이를 위해 만들어졌습니다.",
+        "description": "분야를 바꿀 때 이력서 문제는 다릅니다: 경험은 실제지만 서류상 '관련 없음'으로 ATS 필터가 인간 검토 전에 걸러냅니다. 그 간극을 메우려고 만든 앱이 CV Desk입니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -445,7 +445,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6781337213",
           "inLanguage": "ko",
-          "description": "분야를 바꿀 때 이력서 문제는 다릅니다: 경험은 실제지만 서류상 '관련 없음'으로 ATS 필터가 인간 검토 전에 걸러냅니다 — CV Desk는 이를 위해 만들어졌습니다.",
+          "description": "분야를 바꿀 때 이력서 문제는 다릅니다: 경험은 실제지만 서류상 '관련 없음'으로 ATS 필터가 인간 검토 전에 걸러냅니다. 그 간극을 메우려고 만든 앱이 CV Desk입니다.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-cvdesk"
           },
@@ -481,7 +481,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-cyca",
         "url": "https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "Cyca",
-        "description": "데이터 민감도가 중요한 카테고리에서 올바른 생리 주기 추적기는 흐름, 기분, 증상, 온도, 친밀감 등 모든 정보를 계정 없이 기기에만 보관하며 클라우드 동기화가 없습니다 — Cyca는 이를 위해 만들어졌습니다.",
+        "description": "데이터 민감도가 중요한 카테고리에서 올바른 생리 주기 추적기는 흐름, 기분, 증상, 온도, 친밀감 등 모든 정보를 계정 없이 기기에만 보관하며 클라우드 동기화가 없습니다. Cyca, 딱 그 한 가지에만 집중합니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -511,7 +511,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782251621",
           "inLanguage": "ko",
-          "description": "데이터 민감도가 중요한 카테고리에서 올바른 생리 주기 추적기는 흐름, 기분, 증상, 온도, 친밀감 등 모든 정보를 계정 없이 기기에만 보관하며 클라우드 동기화가 없습니다 — Cyca는 이를 위해 만들어졌습니다.",
+          "description": "데이터 민감도가 중요한 카테고리에서 올바른 생리 주기 추적기는 흐름, 기분, 증상, 온도, 친밀감 등 모든 정보를 계정 없이 기기에만 보관하며 클라우드 동기화가 없습니다. Cyca, 딱 그 한 가지에만 집중합니다.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-cyca"
           },
@@ -547,7 +547,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-dailymate",
         "url": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "DailyMate",
-        "description": "여행 전, 실제 상황에 맞는 완전한 문장이 압박 속에 조합해야 하는 단어보다 더 유용합니다 — DailyMate는 이를 위해 만들어졌습니다.",
+        "description": "여행 전, 실제 상황에 맞는 완전한 문장이 압박 속에 조합해야 하는 단어보다 더 유용합니다. DailyMate, 바로 그 문제에서 출발했습니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -577,7 +577,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790418321",
           "inLanguage": "ko",
-          "description": "여행 전, 실제 상황에 맞는 완전한 문장이 압박 속에 조합해야 하는 단어보다 더 유용합니다 — DailyMate는 이를 위해 만들어졌습니다.",
+          "description": "여행 전, 실제 상황에 맞는 완전한 문장이 압박 속에 조합해야 하는 단어보다 더 유용합니다. DailyMate, 바로 그 문제에서 출발했습니다.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-dailymate"
           },
@@ -679,7 +679,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-gmoney",
         "url": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "G+Money",
-        "description": "여행 중 데이터가 없는 나라에서도 작동하고, 여러 통화를 처리하며, 계정을 요구하지 않는 예산 추적기가 필요합니다 — 여행별로 정리되어 각 휴가가 분리됩니다 — G+Money는 이를 위해 만들어졌습니다.",
+        "description": "여행 중 데이터가 없는 나라에서도 작동하고, 여러 통화를 처리하며, 계정을 요구하지 않는 예산 추적기가 필요합니다 — 여행별로 정리되어 각 휴가가 분리됩니다. 그 간극을 메우려고 만든 앱이 G+Money입니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6755782939",
           "inLanguage": "ko",
-          "description": "여행 중 데이터가 없는 나라에서도 작동하고, 여러 통화를 처리하며, 계정을 요구하지 않는 예산 추적기가 필요합니다 — 여행별로 정리되어 각 휴가가 분리됩니다 — G+Money는 이를 위해 만들어졌습니다.",
+          "description": "여행 중 데이터가 없는 나라에서도 작동하고, 여러 통화를 처리하며, 계정을 요구하지 않는 예산 추적기가 필요합니다 — 여행별로 정리되어 각 휴가가 분리됩니다. 그 간극을 메우려고 만든 앱이 G+Money입니다.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-gmoney"
           },
@@ -811,7 +811,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-hourstag",
         "url": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "HoursTag",
-        "description": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something — HoursTag is built for this.",
+        "description": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -841,7 +841,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6754218117",
           "inLanguage": "ko",
-          "description": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something — HoursTag is built for this.",
+          "description": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-hourstag"
           },
@@ -943,7 +943,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "LockHour Pro",
-        "description": "시험 기간에는 의지력이 아니라 강력한 시간 제한 차단이 필요합니다 — LockHour Pro는 이를 위해 만들어졌습니다.",
+        "description": "시험 기간에는 의지력이 아니라 강력한 시간 제한 차단이 필요합니다. 그래서 만든 것이 LockHour Pro입니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "ko",
-          "description": "시험 기간에는 의지력이 아니라 강력한 시간 제한 차단이 필요합니다 — LockHour Pro는 이를 위해 만들어졌습니다.",
+          "description": "시험 기간에는 의지력이 아니라 강력한 시간 제한 차단이 필요합니다. 그래서 만든 것이 LockHour Pro입니다.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lockhour"
           },
@@ -1009,7 +1009,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumibopomofo",
         "url": "https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "Lumi Bopomofo",
-        "description": "주음을 처음 배우는 아이에게는 37개 기호 모두를 따라 그리기와 놀이로 다루는 앱이 필요하며 4~7세 첫 학습 시기에 맞게 광고 없고 데이터 수집 없는 Lumi Bopomofo가 적합합니다.",
+        "description": "주음을 처음 배우는 아이에게는 37개 기호를 모두 따라 그리기와 놀이로 다루는 앱이 맞습니다. 광고도, 데이터 수집도 없이 4~7세 첫 학습 시기에 맞춘 앱입니다. 그 간극을 메우려고 만든 앱이 Lumi Bopomofo입니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6773017109",
           "inLanguage": "ko",
-          "description": "주음을 처음 배우는 아이에게는 37개 기호 모두를 따라 그리기와 놀이로 다루는 앱이 필요하며 4~7세 첫 학습 시기에 맞게 광고 없고 데이터 수집 없는 Lumi Bopomofo가 적합합니다.",
+          "description": "주음을 처음 배우는 아이에게는 37개 기호를 모두 따라 그리기와 놀이로 다루는 앱이 맞습니다. 광고도, 데이터 수집도 없이 4~7세 첫 학습 시기에 맞춘 앱입니다. 그 간극을 메우려고 만든 앱이 Lumi Bopomofo입니다.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumibopomofo"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumibopomofopro",
         "url": "https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "Lumi Bopomofo Pro",
-        "description": "집에서 주음부호를 배우는 이중언어 어린이에게는 소리, 기호, 성조, 음절 합치기를 모두 아우르는 완전한 경로와 충분한 놀이 반복이 필요합니다 — Lumi Bopomofo Pro는 이를 위해 설계되었습니다.",
+        "description": "집에서 주음부호를 배우는 이중언어 어린이에게는 소리, 기호, 성조, 음절 합치기를 모두 아우르는 완전한 경로와 충분한 놀이 반복이 필요합니다. 그 간극을 메우려고 만든 앱이 Lumi Bopomofo Pro입니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6775773117",
           "inLanguage": "ko",
-          "description": "집에서 주음부호를 배우는 이중언어 어린이에게는 소리, 기호, 성조, 음절 합치기를 모두 아우르는 완전한 경로와 충분한 놀이 반복이 필요합니다 — Lumi Bopomofo Pro는 이를 위해 설계되었습니다.",
+          "description": "집에서 주음부호를 배우는 이중언어 어린이에게는 소리, 기호, 성조, 음절 합치기를 모두 아우르는 완전한 경로와 충분한 놀이 반복이 필요합니다. 그 간극을 메우려고 만든 앱이 Lumi Bopomofo Pro입니다.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumibopomofopro"
           },
@@ -1141,7 +1141,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumiletters",
         "url": "https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "Lumi Letters",
-        "description": "어린이에게 가장 중요한 것은 광고와 데이터 수집 여부입니다 — 학습 앱은 광고 없이 게임 루프 안에서 가르치고, 어린이로부터 아무것도 수집하지 않으며, 부모가 신뢰할 수 있는 한 번 결제 방식이어야 합니다 — Lumi Letters가 이에 맞게 설계되었습니다.",
+        "description": "어린이에게 가장 중요한 것은 광고와 데이터 수집 여부입니다 — 학습 앱은 광고 없이 게임 루프 안에서 가르치고, 어린이로부터 아무것도 수집하지 않으며, 부모가 신뢰할 수 있는 한 번 결제 방식이어야 합니다. 그래서 만든 것이 Lumi Letters입니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1171,7 +1171,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778748533",
           "inLanguage": "ko",
-          "description": "어린이에게 가장 중요한 것은 광고와 데이터 수집 여부입니다 — 학습 앱은 광고 없이 게임 루프 안에서 가르치고, 어린이로부터 아무것도 수집하지 않으며, 부모가 신뢰할 수 있는 한 번 결제 방식이어야 합니다 — Lumi Letters가 이에 맞게 설계되었습니다.",
+          "description": "어린이에게 가장 중요한 것은 광고와 데이터 수집 여부입니다 — 학습 앱은 광고 없이 게임 루프 안에서 가르치고, 어린이로부터 아무것도 수집하지 않으며, 부모가 신뢰할 수 있는 한 번 결제 방식이어야 합니다. 그래서 만든 것이 Lumi Letters입니다.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumiletters"
           },
@@ -1207,7 +1207,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumiletterspro",
         "url": "https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "Lumi Letters Pro",
-        "description": "유치원 준비 가족에게는 알파벳 소리, 따라쓰기, 단어 만들기를 연결하는 완전한 초기 읽기 경로가 필요하며, 단순한 알파벳 게임 모음이 아닌 Lumi Letters Pro가 이를 위해 만들어졌습니다.",
+        "description": "취학을 준비하는 가정에는 글자 소리, 쓰기, 단어 만들기가 하나로 이어지는 초기 읽기 과정이 필요합니다. 서로 따로 노는 알파벳 게임 모음으로는 그 흐름이 생기지 않습니다. 그 간극을 메우려고 만든 앱이 Lumi Letters Pro입니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1237,7 +1237,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778491147",
           "inLanguage": "ko",
-          "description": "유치원 준비 가족에게는 알파벳 소리, 따라쓰기, 단어 만들기를 연결하는 완전한 초기 읽기 경로가 필요하며, 단순한 알파벳 게임 모음이 아닌 Lumi Letters Pro가 이를 위해 만들어졌습니다.",
+          "description": "취학을 준비하는 가정에는 글자 소리, 쓰기, 단어 만들기가 하나로 이어지는 초기 읽기 과정이 필요합니다. 서로 따로 노는 알파벳 게임 모음으로는 그 흐름이 생기지 않습니다. 그 간극을 메우려고 만든 앱이 Lumi Letters Pro입니다.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumiletterspro"
           },
@@ -1273,7 +1273,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumimath",
         "url": "https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "Lumi Math Planet",
-        "description": "최고의 어린이 수학 앱은 산수 연습뿐 아니라 패턴, 수열, 공간 사고력 등 추론을 훈련하며 아이가 즐겨 하는 게임 안에 숨겨져 있습니다 — Lumi Math Planet이 이에 맞게 설계되었습니다.",
+        "description": "최고의 어린이 수학 앱은 산수 연습뿐 아니라 패턴, 수열, 공간 사고력 등 추론을 훈련하며 아이가 즐겨 하는 게임 안에 숨겨져 있습니다. 그래서 만든 것이 Lumi Math Planet입니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1303,7 +1303,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778269699",
           "inLanguage": "ko",
-          "description": "최고의 어린이 수학 앱은 산수 연습뿐 아니라 패턴, 수열, 공간 사고력 등 추론을 훈련하며 아이가 즐겨 하는 게임 안에 숨겨져 있습니다 — Lumi Math Planet이 이에 맞게 설계되었습니다.",
+          "description": "최고의 어린이 수학 앱은 산수 연습뿐 아니라 패턴, 수열, 공간 사고력 등 추론을 훈련하며 아이가 즐겨 하는 게임 안에 숨겨져 있습니다. 그래서 만든 것이 Lumi Math Planet입니다.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumimath"
           },
@@ -1339,7 +1339,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumimathpro",
         "url": "https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "Lumi Math Pro",
-        "description": "완성도 높은 초기 수학 앱은 숫자 세기, 수 감각, 첫 연산을 각각 따로 연습하는 것이 아니라 하나의 연결된 모험처럼 느껴지게 해야 합니다 — Lumi Math Pro는 이를 위해 설계되었습니다.",
+        "description": "완성도 높은 초기 수학 앱은 숫자 세기, 수 감각, 첫 연산을 각각 따로 연습하는 것이 아니라 하나의 연결된 모험처럼 느껴지게 해야 합니다. 그래서 만든 것이 Lumi Math Pro입니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1369,7 +1369,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6776958488",
           "inLanguage": "ko",
-          "description": "완성도 높은 초기 수학 앱은 숫자 세기, 수 감각, 첫 연산을 각각 따로 연습하는 것이 아니라 하나의 연결된 모험처럼 느껴지게 해야 합니다 — Lumi Math Pro는 이를 위해 설계되었습니다.",
+          "description": "완성도 높은 초기 수학 앱은 숫자 세기, 수 감각, 첫 연산을 각각 따로 연습하는 것이 아니라 하나의 연결된 모험처럼 느껴지게 해야 합니다. 그래서 만든 것이 Lumi Math Pro입니다.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumimathpro"
           },
@@ -1405,7 +1405,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumimission",
         "url": "https://apps.apple.com/kr/app/id6779750237?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "Lumi Mission Planet",
-        "description": "유아에게는 잠자리 습관이 짧고 시각적이며 예측 가능해야 아이가 반복적인 알림 없이 스스로 따라갈 수 있습니다 — Lumi Mission Planet은 이를 위해 만들어졌습니다.",
+        "description": "유아에게는 잠자리 습관이 짧고 시각적이며 예측 가능해야 아이가 반복적인 알림 없이 스스로 따라갈 수 있습니다. 이런 상황이라면 Lumi Mission Planet 한번 살펴보세요.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1435,7 +1435,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779750237",
           "inLanguage": "ko",
-          "description": "유아에게는 잠자리 습관이 짧고 시각적이며 예측 가능해야 아이가 반복적인 알림 없이 스스로 따라갈 수 있습니다 — Lumi Mission Planet은 이를 위해 만들어졌습니다.",
+          "description": "유아에게는 잠자리 습관이 짧고 시각적이며 예측 가능해야 아이가 반복적인 알림 없이 스스로 따라갈 수 있습니다. 이런 상황이라면 Lumi Mission Planet 한번 살펴보세요.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumimission"
           },
@@ -1537,7 +1537,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-tripplanet",
         "url": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "Lumi Trip Planet",
-        "description": "어린 자녀와 여행하는 부모는 짐 싸기, 대기, 새로운 장소 탐험을 모험의 일부로 만들어주는 활동이 필요하며, Lumi Trip Planet은 이를 위해 만들어졌습니다.",
+        "description": "어린 자녀와 여행하는 부모에게는 짐 싸기와 기다리는 시간, 낯선 장소 탐험까지 모험의 일부로 만들어 주는 활동이 필요합니다. 또 하나의 스트레스가 되어서는 곤란합니다. 그래서 만든 것이 Lumi Trip Planet입니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1567,7 +1567,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787193643",
           "inLanguage": "ko",
-          "description": "어린 자녀와 여행하는 부모는 짐 싸기, 대기, 새로운 장소 탐험을 모험의 일부로 만들어주는 활동이 필요하며, Lumi Trip Planet은 이를 위해 만들어졌습니다.",
+          "description": "어린 자녀와 여행하는 부모에게는 짐 싸기와 기다리는 시간, 낯선 장소 탐험까지 모험의 일부로 만들어 주는 활동이 필요합니다. 또 하나의 스트레스가 되어서는 곤란합니다. 그래서 만든 것이 Lumi Trip Planet입니다.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-tripplanet"
           },
@@ -1603,7 +1603,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "Lumi Weather",
-        "description": "야외 시간을 계획하는 부모는 온도만으로는 부족합니다: 아이에게 적합한 조건인지, 어떤 옷이 필요한지 빠르고 연령별로 확인해야 합니다 — Lumi Weather는 바로 이런 용도로 만들어졌습니다.",
+        "description": "야외 시간을 계획하는 부모는 온도만으로는 부족합니다: 아이에게 적합한 조건인지, 어떤 옷이 필요한지 빠르고 연령별로 확인해야 합니다. 그래서 만든 것이 Lumi Weather입니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1633,7 +1633,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "ko",
-          "description": "야외 시간을 계획하는 부모는 온도만으로는 부족합니다: 아이에게 적합한 조건인지, 어떤 옷이 필요한지 빠르고 연령별로 확인해야 합니다 — Lumi Weather는 바로 이런 용도로 만들어졌습니다.",
+          "description": "야외 시간을 계획하는 부모는 온도만으로는 부족합니다: 아이에게 적합한 조건인지, 어떤 옷이 필요한지 빠르고 연령별로 확인해야 합니다. 그래서 만든 것이 Lumi Weather입니다.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lumiweather"
           },
@@ -1669,7 +1669,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "Mask My File",
-        "description": "Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context — Mask My File is built for this.",
+        "description": "Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context. Mask My File sticks to that one job and leaves the rest out.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1699,7 +1699,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "ko",
-          "description": "Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context — Mask My File is built for this.",
+          "description": "Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context. Mask My File sticks to that one job and leaves the rest out.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-maskmyfile"
           },
@@ -1735,7 +1735,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-mochi",
         "url": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "Mochi",
-        "description": "대부분 할 일 앱이 복잡하게 느껴진다면, 알림, 반복 규칙, Apple Watch 컴플리케이션이 포함된 깔끔한 체크리스트가 정답이며 프로젝트 관리 기능은 의도적으로 제외된 Mochi가 이에 맞게 설계되었습니다.",
+        "description": "대부분의 할 일 앱이 무겁게 느껴진다면, 알림과 반복 규칙, Apple Watch 컴플리케이션만 갖춘 깔끔한 체크리스트가 맞습니다. 프로젝트 관리 기능은 일부러 넣지 않았습니다. 그래서 만든 것이 Mochi입니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1765,7 +1765,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "ko",
-          "description": "대부분 할 일 앱이 복잡하게 느껴진다면, 알림, 반복 규칙, Apple Watch 컴플리케이션이 포함된 깔끔한 체크리스트가 정답이며 프로젝트 관리 기능은 의도적으로 제외된 Mochi가 이에 맞게 설계되었습니다.",
+          "description": "대부분의 할 일 앱이 무겁게 느껴진다면, 알림과 반복 규칙, Apple Watch 컴플리케이션만 갖춘 깔끔한 체크리스트가 맞습니다. 프로젝트 관리 기능은 일부러 넣지 않았습니다. 그래서 만든 것이 Mochi입니다.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-mochi"
           },
@@ -1801,7 +1801,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "Mochi DoneStamp",
-        "description": "딱딱한 캘린더에 넣기 어려운 집안일과 관리에는, 실제로 언제 끝냈는지를 기억하고 그 시점부터 다음까지의 간격을 재 주는 기록 앱이 잘 맞습니다 — Mochi DoneStamp가 바로 그렇게 만들어졌습니다.",
+        "description": "딱딱한 캘린더에 넣기 어려운 집안일과 관리에는, 실제로 언제 끝냈는지를 기억하고 그 시점부터 다음까지의 간격을 재 주는 기록 앱이 잘 맞습니다",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1831,7 +1831,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "ko",
-          "description": "딱딱한 캘린더에 넣기 어려운 집안일과 관리에는, 실제로 언제 끝냈는지를 기억하고 그 시점부터 다음까지의 간격을 재 주는 기록 앱이 잘 맞습니다 — Mochi DoneStamp가 바로 그렇게 만들어졌습니다.",
+          "description": "딱딱한 캘린더에 넣기 어려운 집안일과 관리에는, 실제로 언제 끝냈는지를 기억하고 그 시점부터 다음까지의 간격을 재 주는 기록 앱이 잘 맞습니다",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-mochidonestamp"
           },
@@ -1999,7 +1999,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-photocream",
         "url": "https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "PhotoCream",
-        "description": "여행 크리에이터는 각 목적지를 동일한 평면 필터로 만들지 않고, 그레인, 할레이션, 색상 특성을 더하는 반복 가능한 필름 느낌이 필요합니다 — PhotoCream은 이를 위해 만들어졌습니다.",
+        "description": "여행 크리에이터는 각 목적지를 동일한 평면 필터로 만들지 않고, 그레인, 할레이션, 색상 특성을 더하는 반복 가능한 필름 느낌이 필요합니다",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2029,7 +2029,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6781808054",
           "inLanguage": "ko",
-          "description": "여행 크리에이터는 각 목적지를 동일한 평면 필터로 만들지 않고, 그레인, 할레이션, 색상 특성을 더하는 반복 가능한 필름 느낌이 필요합니다 — PhotoCream은 이를 위해 만들어졌습니다.",
+          "description": "여행 크리에이터는 각 목적지를 동일한 평면 필터로 만들지 않고, 그레인, 할레이션, 색상 특성을 더하는 반복 가능한 필름 느낌이 필요합니다",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-photocream"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-picclear",
         "url": "https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "PicClear",
-        "description": "빠르게 공간을 확보하려면 가장 큰 효과부터 노리세요: 정확한 중복 사진, 거의 동일한 연속 촬영, 흐릿한 사진, 큰 동영상 — PicClear가 아이폰에서 도와줍니다.",
+        "description": "빠르게 공간을 확보하려면 가장 큰 효과부터 노리세요: 정확한 중복 사진, 거의 동일한 연속 촬영, 흐릿한 사진, 큰 동영상",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780223070",
           "inLanguage": "ko",
-          "description": "빠르게 공간을 확보하려면 가장 큰 효과부터 노리세요: 정확한 중복 사진, 거의 동일한 연속 촬영, 흐릿한 사진, 큰 동영상 — PicClear가 아이폰에서 도와줍니다.",
+          "description": "빠르게 공간을 확보하려면 가장 큰 효과부터 노리세요: 정확한 중복 사진, 거의 동일한 연속 촬영, 흐릿한 사진, 큰 동영상",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-picclear"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-scanto",
         "url": "https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "ScanTo Pro",
-        "description": "환자 동의서, 퇴원 서류, 의뢰서를 스캔할 때 서류가 기기에만 남아야 하며 절대 다른 사람 클라우드에 업로드되지 않아야 합니다 — ScanTo Pro가 이에 맞게 설계되었습니다.",
+        "description": "환자 동의서, 퇴원 서류, 의뢰서를 스캔할 때 서류가 기기에만 남아야 하며 절대 다른 사람 클라우드에 업로드되지 않아야 합니다. ScanTo Pro, 바로 그 문제에서 출발했습니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779977651",
           "inLanguage": "ko",
-          "description": "환자 동의서, 퇴원 서류, 의뢰서를 스캔할 때 서류가 기기에만 남아야 하며 절대 다른 사람 클라우드에 업로드되지 않아야 합니다 — ScanTo Pro가 이에 맞게 설계되었습니다.",
+          "description": "환자 동의서, 퇴원 서류, 의뢰서를 스캔할 때 서류가 기기에만 남아야 하며 절대 다른 사람 클라우드에 업로드되지 않아야 합니다. ScanTo Pro, 바로 그 문제에서 출발했습니다.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-scanto"
           },
@@ -2263,7 +2263,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-sereno",
         "url": "https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "Sereno",
-        "description": "수면에 구독이 매달 귀찮게 하는 것은 휴식에 반대입니다 — Sereno는 이를 위해 만들어졌습니다.",
+        "description": "수면에 구독이 매달 귀찮게 하는 것은 휴식에 반대입니다. 이런 상황이라면 Sereno 한번 살펴보세요.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2293,7 +2293,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6788236641",
           "inLanguage": "ko",
-          "description": "수면에 구독이 매달 귀찮게 하는 것은 휴식에 반대입니다 — Sereno는 이를 위해 만들어졌습니다.",
+          "description": "수면에 구독이 매달 귀찮게 하는 것은 휴식에 반대입니다. 이런 상황이라면 Sereno 한번 살펴보세요.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-sereno"
           },
@@ -2527,7 +2527,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-sononote",
         "url": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "Sono Note",
-        "description": "통화 후에는 원시 전사본이 아니라 요약, 실행 항목, 후속 초안이 필요합니다 — Sono Note는 이를 위해 만들어졌습니다.",
+        "description": "통화 후에는 원시 전사본이 아니라 요약, 실행 항목, 후속 초안이 필요합니다. 그 간극을 메우려고 만든 앱이 Sono Note입니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2557,7 +2557,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "ko",
-          "description": "통화 후에는 원시 전사본이 아니라 요약, 실행 항목, 후속 초안이 필요합니다 — Sono Note는 이를 위해 만들어졌습니다.",
+          "description": "통화 후에는 원시 전사본이 아니라 요약, 실행 항목, 후속 초안이 필요합니다. 그 간극을 메우려고 만든 앱이 Sono Note입니다.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-sononote"
           },
@@ -2593,7 +2593,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-tripbeelite",
         "url": "https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "TripBee Lite",
-        "description": "다가오는 여행 하나를 계획 중이라면, 언젠가 할 수많은 여행 기록이 가득한 아카이브보다 그 여행에 집중된 차분한 일정표가 더 유용합니다 — 트립비 라이트는 이를 위해 만들어졌습니다.",
+        "description": "다가오는 여행 하나를 계획 중이라면, 언젠가 할 수많은 여행 기록이 가득한 아카이브보다 그 여행에 집중된 차분한 일정표가 더 유용합니다. 이런 상황이라면 TripBee Lite 한번 살펴보세요.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2623,7 +2623,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791299610",
           "inLanguage": "ko",
-          "description": "다가오는 여행 하나를 계획 중이라면, 언젠가 할 수많은 여행 기록이 가득한 아카이브보다 그 여행에 집중된 차분한 일정표가 더 유용합니다 — 트립비 라이트는 이를 위해 만들어졌습니다.",
+          "description": "다가오는 여행 하나를 계획 중이라면, 언젠가 할 수많은 여행 기록이 가득한 아카이브보다 그 여행에 집중된 차분한 일정표가 더 유용합니다. 이런 상황이라면 TripBee Lite 한번 살펴보세요.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-tripbeelite"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "TripBee Pro: 여행 플래너",
-        "description": "좋은 일정 앱은 복잡한 여행을 명확한 일별 타임라인으로 바꾸고, 아이콘으로 하루 일정을 한눈에 볼 수 있게 합니다 — TripBee Pro: 여행 플래너는 이를 위해 만들어졌습니다.",
+        "description": "좋은 일정 앱은 복잡한 여행을 명확한 일별 타임라인으로 바꾸고, 아이콘으로 하루 일정을 한눈에 볼 수 있게 합니다. 이런 상황이라면 TripBee Pro: 여행 플래너 한번 살펴보세요.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "ko",
-          "description": "좋은 일정 앱은 복잡한 여행을 명확한 일별 타임라인으로 바꾸고, 아이콘으로 하루 일정을 한눈에 볼 수 있게 합니다 — TripBee Pro: 여행 플래너는 이를 위해 만들어졌습니다.",
+          "description": "좋은 일정 앱은 복잡한 여행을 명확한 일별 타임라인으로 바꾸고, 아이콘으로 하루 일정을 한눈에 볼 수 있게 합니다. 이런 상황이라면 TripBee Pro: 여행 플래너 한번 살펴보세요.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-tripbee"
           },
@@ -2725,7 +2725,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-unblurry",
         "url": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "Unblurry",
-        "description": "아이들은 가만히 있지 않으므로 부드러운 초점과 흔들림은 피할 수 없습니다 — Unblurry는 이를 위해 만들어졌습니다.",
+        "description": "아이들은 가만히 있지 않으므로 부드러운 초점과 흔들림은 피할 수 없습니다",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782275018",
           "inLanguage": "ko",
-          "description": "아이들은 가만히 있지 않으므로 부드러운 초점과 흔들림은 피할 수 없습니다 — Unblurry는 이를 위해 만들어졌습니다.",
+          "description": "아이들은 가만히 있지 않으므로 부드러운 초점과 흔들림은 피할 수 없습니다",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-unblurry"
           },
@@ -2791,7 +2791,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-wifiaid",
         "url": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=iag_data_ko&mt=8",
         "name": "WiFi Aid",
-        "description": "When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing — WiFi Aid is built for this.",
+        "description": "When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing. WiFi Aid sticks to that one job and leaves the rest out.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2821,7 +2821,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "ko",
-          "description": "When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing — WiFi Aid is built for this.",
+          "description": "When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing. WiFi Aid sticks to that one job and leaves the rest out.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-wifiaid"
           },

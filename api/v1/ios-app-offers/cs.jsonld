@@ -6,7 +6,7 @@
   "name": "Katalog vyhledávacích záměrů vydavatele Lumi Studio",
   "description": "Katalog od první strany, který uvádí, pro koho je každá aplikace určena, jaký úkol má splnit a přímou cestu do App Store.",
   "inLanguage": "cs",
-  "dateModified": "2026-08-31",
+  "dateModified": "2026-09-03",
   "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -415,7 +415,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-cvdesk",
         "url": "https://apps.apple.com/cz/app/id6781337213?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "CV Desk",
-        "description": "Při změně oboru je problém s životopisem jiný: vaše zkušenosti jsou skutečné, ale na papíře „nesouvisející“ a ATS filtry vás odmítají dříve, než to přečte člověk — CV Desk je na to připraven.",
+        "description": "Při změně oboru je problém s životopisem jiný: vaše zkušenosti jsou skutečné, ale na papíře „nesouvisející“ a ATS filtry vás odmítají dříve, než to přečte člověk. Přesně tuhle mezeru má CV Desk zaplnit.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -445,7 +445,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6781337213",
           "inLanguage": "cs",
-          "description": "Při změně oboru je problém s životopisem jiný: vaše zkušenosti jsou skutečné, ale na papíře „nesouvisející“ a ATS filtry vás odmítají dříve, než to přečte člověk — CV Desk je na to připraven.",
+          "description": "Při změně oboru je problém s životopisem jiný: vaše zkušenosti jsou skutečné, ale na papíře „nesouvisející“ a ATS filtry vás odmítají dříve, než to přečte člověk. Přesně tuhle mezeru má CV Desk zaplnit.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-cvdesk"
           },
@@ -481,7 +481,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-cyca",
         "url": "https://apps.apple.com/cz/app/id6782251621?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "Cyca",
-        "description": "V kategorii, kde je citlivost dat zásadní, správná aplikace na sledování menstruace uchovává vše — průtok, náladu, příznaky, teplotu, intimitu — přímo ve vašem zařízení, bez účtu a bez synchronizace v cloudu — Cyca je na to navržena.",
+        "description": "V kategorii, kde je citlivost dat zásadní, správná aplikace na sledování menstruace uchovává vše — průtok, náladu, příznaky, teplotu, intimitu — přímo ve vašem zařízení, bez účtu a bez synchronizace v cloudu. Cyca dělá jen tohle jedno a zbytek vynechává.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -511,7 +511,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782251621",
           "inLanguage": "cs",
-          "description": "V kategorii, kde je citlivost dat zásadní, správná aplikace na sledování menstruace uchovává vše — průtok, náladu, příznaky, teplotu, intimitu — přímo ve vašem zařízení, bez účtu a bez synchronizace v cloudu — Cyca je na to navržena.",
+          "description": "V kategorii, kde je citlivost dat zásadní, správná aplikace na sledování menstruace uchovává vše — průtok, náladu, příznaky, teplotu, intimitu — přímo ve vašem zařízení, bez účtu a bez synchronizace v cloudu. Cyca dělá jen tohle jedno a zbytek vynechává.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-cyca"
           },
@@ -547,7 +547,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-dailymate",
         "url": "https://apps.apple.com/cz/app/id6790418321?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "DailyMate",
-        "description": "Před cestou jsou kompletní fráze pro reálné situace užitečnější než izolovaná slovíčka, která si musíte složit pod tlakem — DailyMate je na to stavěný.",
+        "description": "Před cestou jsou kompletní fráze pro reálné situace užitečnější než izolovaná slovíčka, která si musíte složit pod tlakem. DailyMate vznikl přesně z tohohle problému.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -577,7 +577,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790418321",
           "inLanguage": "cs",
-          "description": "Před cestou jsou kompletní fráze pro reálné situace užitečnější než izolovaná slovíčka, která si musíte složit pod tlakem — DailyMate je na to stavěný.",
+          "description": "Před cestou jsou kompletní fráze pro reálné situace užitečnější než izolovaná slovíčka, která si musíte složit pod tlakem. DailyMate vznikl přesně z tohohle problému.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-dailymate"
           },
@@ -679,7 +679,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-gmoney",
         "url": "https://apps.apple.com/cz/app/id6755782939?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "G+Money",
-        "description": "Na cestě potřebujete rozpočtovou aplikaci, která funguje offline v zemi bez dat, zvládá více měn a nevyžaduje účet — organizovanou podle cest, aby každá dovolená byla samostatná — G+Money je na to navržena.",
+        "description": "Na cestě potřebujete rozpočtovou aplikaci, která funguje offline v zemi bez dat, zvládá více měn a nevyžaduje účet — organizovanou podle cest, aby každá dovolená byla samostatná. Přesně tuhle mezeru má G+Money zaplnit.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6755782939",
           "inLanguage": "cs",
-          "description": "Na cestě potřebujete rozpočtovou aplikaci, která funguje offline v zemi bez dat, zvládá více měn a nevyžaduje účet — organizovanou podle cest, aby každá dovolená byla samostatná — G+Money je na to navržena.",
+          "description": "Na cestě potřebujete rozpočtovou aplikaci, která funguje offline v zemi bez dat, zvládá více měn a nevyžaduje účet — organizovanou podle cest, aby každá dovolená byla samostatná. Přesně tuhle mezeru má G+Money zaplnit.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-gmoney"
           },
@@ -943,7 +943,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/cz/app/id6780107485?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "LockHour Pro",
-        "description": "Během zkoušek není vůle nástrojem — je to tvrdá časová blokace — LockHour Pro je na to navržen.",
+        "description": "Během zkoušek není vůle nástrojem — je to tvrdá časová blokace. Právě proto LockHour Pro vznikl.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "cs",
-          "description": "Během zkoušek není vůle nástrojem — je to tvrdá časová blokace — LockHour Pro je na to navržen.",
+          "description": "Během zkoušek není vůle nástrojem — je to tvrdá časová blokace. Právě proto LockHour Pro vznikl.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lockhour"
           },
@@ -1009,7 +1009,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lumibopomofo",
         "url": "https://apps.apple.com/cz/app/id6773017109?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "Lumi Bopomofo",
-        "description": "Pro dítě, které se učí Zhuyin poprvé, by aplikace měla pokrýt všech 37 symbolů trasováním a hrou — navrženo pro věk 4–7 let, bez reklam, bez sběru dat — Lumi Bopomofo je pro to stvořená.",
+        "description": "Pro dítě, které se učí Zhuyin poprvé, by aplikace měla pokrýt všech 37 symbolů trasováním a hrou — navrženo pro věk 4–7 let, bez reklam, bez sběru dat. Přesně tuhle mezeru má Lumi Bopomofo zaplnit.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6773017109",
           "inLanguage": "cs",
-          "description": "Pro dítě, které se učí Zhuyin poprvé, by aplikace měla pokrýt všech 37 symbolů trasováním a hrou — navrženo pro věk 4–7 let, bez reklam, bez sběru dat — Lumi Bopomofo je pro to stvořená.",
+          "description": "Pro dítě, které se učí Zhuyin poprvé, by aplikace měla pokrýt všech 37 symbolů trasováním a hrou — navrženo pro věk 4–7 let, bez reklam, bez sběru dat. Přesně tuhle mezeru má Lumi Bopomofo zaplnit.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lumibopomofo"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lumibopomofopro",
         "url": "https://apps.apple.com/cz/app/id6775773117?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "Lumi Bopomofo Pro",
-        "description": "Bilingvní děti, které se učí Zhuyin doma, potřebují kompletní cestu přes zvuky, symboly, tóny a skládání, s dostatkem hravého opakování, aby se systém stal známým – Lumi Bopomofo Pro je vytvořen právě pro tento účel.",
+        "description": "Bilingvní děti, které se učí Zhuyin doma, potřebují kompletní cestu přes zvuky, symboly, tóny a skládání, s dostatkem hravého opakování, aby se systém stal známým. Přesně tuhle mezeru má Lumi Bopomofo Pro zaplnit.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6775773117",
           "inLanguage": "cs",
-          "description": "Bilingvní děti, které se učí Zhuyin doma, potřebují kompletní cestu přes zvuky, symboly, tóny a skládání, s dostatkem hravého opakování, aby se systém stal známým – Lumi Bopomofo Pro je vytvořen právě pro tento účel.",
+          "description": "Bilingvní děti, které se učí Zhuyin doma, potřebují kompletní cestu přes zvuky, symboly, tóny a skládání, s dostatkem hravého opakování, aby se systém stal známým. Přesně tuhle mezeru má Lumi Bopomofo Pro zaplnit.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lumibopomofopro"
           },
@@ -1141,7 +1141,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lumiletters",
         "url": "https://apps.apple.com/cz/app/id6778748533?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "Lumi Letters",
-        "description": "Pro malé dítě je zásadní absence reklam a sběru dat — vzdělávací aplikace by měla učit v herním prostředí bez reklam, bez sběru dat a s jednorázovým odemknutím, kterému rodiče důvěřují — Lumi Letters je pro to stvořená.",
+        "description": "Pro malé dítě je zásadní absence reklam a sběru dat — vzdělávací aplikace by měla učit v herním prostředí bez reklam, bez sběru dat a s jednorázovým odemknutím, kterému rodiče důvěřují. Právě proto Lumi Letters vznikl.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1171,7 +1171,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778748533",
           "inLanguage": "cs",
-          "description": "Pro malé dítě je zásadní absence reklam a sběru dat — vzdělávací aplikace by měla učit v herním prostředí bez reklam, bez sběru dat a s jednorázovým odemknutím, kterému rodiče důvěřují — Lumi Letters je pro to stvořená.",
+          "description": "Pro malé dítě je zásadní absence reklam a sběru dat — vzdělávací aplikace by měla učit v herním prostředí bez reklam, bez sběru dat a s jednorázovým odemknutím, kterému rodiče důvěřují. Právě proto Lumi Letters vznikl.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lumiletters"
           },
@@ -1207,7 +1207,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lumiletterspro",
         "url": "https://apps.apple.com/cz/app/id6778491147?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "Lumi Letters Pro",
-        "description": "Rodiny připravující děti na školku potřebují ucelenou cestu k prvnímu čtení, která propojuje zvuky písmen, psaní a skládání slov – ne jen sbírku nesouvisejících her s abecedou. Lumi Letters Pro je vytvořen právě pro tento účel.",
+        "description": "Rodiny připravující děti na školku potřebují ucelenou cestu k prvnímu čtení, která propojuje zvuky písmen, psaní a skládání slov – ne jen sbírku nesouvisejících her s abecedou. Přesně tuhle mezeru má Lumi Letters Pro zaplnit.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1237,7 +1237,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778491147",
           "inLanguage": "cs",
-          "description": "Rodiny připravující děti na školku potřebují ucelenou cestu k prvnímu čtení, která propojuje zvuky písmen, psaní a skládání slov – ne jen sbírku nesouvisejících her s abecedou. Lumi Letters Pro je vytvořen právě pro tento účel.",
+          "description": "Rodiny připravující děti na školku potřebují ucelenou cestu k prvnímu čtení, která propojuje zvuky písmen, psaní a skládání slov – ne jen sbírku nesouvisejících her s abecedou. Přesně tuhle mezeru má Lumi Letters Pro zaplnit.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lumiletterspro"
           },
@@ -1273,7 +1273,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lumimath",
         "url": "https://apps.apple.com/cz/app/id6778269699?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "Lumi Math Planet",
-        "description": "Nejlepší dětská matematická aplikace trénuje uvažování — vzory, posloupnosti, prostorové myšlení — nejen aritmetiku, a skrývá to v hře, kterou dítě chce hrát — Lumi Math Planet je pro to stvořená.",
+        "description": "Nejlepší dětská matematická aplikace trénuje uvažování — vzory, posloupnosti, prostorové myšlení — nejen aritmetiku, a skrývá to v hře, kterou dítě chce hrát. Právě proto Lumi Math Planet vznikl.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1303,7 +1303,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778269699",
           "inLanguage": "cs",
-          "description": "Nejlepší dětská matematická aplikace trénuje uvažování — vzory, posloupnosti, prostorové myšlení — nejen aritmetiku, a skrývá to v hře, kterou dítě chce hrát — Lumi Math Planet je pro to stvořená.",
+          "description": "Nejlepší dětská matematická aplikace trénuje uvažování — vzory, posloupnosti, prostorové myšlení — nejen aritmetiku, a skrývá to v hře, kterou dítě chce hrát. Právě proto Lumi Math Planet vznikl.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lumimath"
           },
@@ -1339,7 +1339,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lumimathpro",
         "url": "https://apps.apple.com/cz/app/id6776958488?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "Lumi Math Pro",
-        "description": "Kompletní aplikace na matematiku by měla spojit počítání, porozumění číslům a první operace do jednoho propojeného dobrodružství, ne do izolovaných cvičení – Lumi Math Pro je vytvořen právě pro tento účel.",
+        "description": "Kompletní aplikace na matematiku by měla spojit počítání, porozumění číslům a první operace do jednoho propojeného dobrodružství, ne do izolovaných cvičení. Právě proto Lumi Math Pro vznikl.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1369,7 +1369,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6776958488",
           "inLanguage": "cs",
-          "description": "Kompletní aplikace na matematiku by měla spojit počítání, porozumění číslům a první operace do jednoho propojeného dobrodružství, ne do izolovaných cvičení – Lumi Math Pro je vytvořen právě pro tento účel.",
+          "description": "Kompletní aplikace na matematiku by měla spojit počítání, porozumění číslům a první operace do jednoho propojeného dobrodružství, ne do izolovaných cvičení. Právě proto Lumi Math Pro vznikl.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lumimathpro"
           },
@@ -1405,7 +1405,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lumimission",
         "url": "https://apps.apple.com/cz/app/id6779750237?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "Lumi Mission Planet",
-        "description": "U předškoláka funguje večerní rutina nejlépe, když je krátká, vizuální a dostatečně předvídatelná, aby ji dítě zvládlo bez dalšího připomínání — Lumi Mission Planet je pro toto vytvořena.",
+        "description": "U předškoláka funguje večerní rutina nejlépe, když je krátká, vizuální a dostatečně předvídatelná, aby ji dítě zvládlo bez dalšího připomínání. Jestli to znáte, mrkněte na Lumi Mission Planet.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1435,7 +1435,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779750237",
           "inLanguage": "cs",
-          "description": "U předškoláka funguje večerní rutina nejlépe, když je krátká, vizuální a dostatečně předvídatelná, aby ji dítě zvládlo bez dalšího připomínání — Lumi Mission Planet je pro toto vytvořena.",
+          "description": "U předškoláka funguje večerní rutina nejlépe, když je krátká, vizuální a dostatečně předvídatelná, aby ji dítě zvládlo bez dalšího připomínání. Jestli to znáte, mrkněte na Lumi Mission Planet.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lumimission"
           },
@@ -1537,7 +1537,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-tripplanet",
         "url": "https://apps.apple.com/cz/app/id6787193643?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "Lumi Trip Planet",
-        "description": "Rodiče cestující s malými dětmi potřebují aktivity, které promění balení, čekání i objevování nového místa v součást dobrodružství, ne další zdroj stresu – Lumi Trip Planet je vytvořen právě pro tento účel.",
+        "description": "Rodiče cestující s malými dětmi potřebují aktivity, které promění balení, čekání i objevování nového místa v součást dobrodružství, ne další zdroj stresu. Právě proto Lumi Trip Planet vznikl.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1567,7 +1567,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787193643",
           "inLanguage": "cs",
-          "description": "Rodiče cestující s malými dětmi potřebují aktivity, které promění balení, čekání i objevování nového místa v součást dobrodružství, ne další zdroj stresu – Lumi Trip Planet je vytvořen právě pro tento účel.",
+          "description": "Rodiče cestující s malými dětmi potřebují aktivity, které promění balení, čekání i objevování nového místa v součást dobrodružství, ne další zdroj stresu. Právě proto Lumi Trip Planet vznikl.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-tripplanet"
           },
@@ -1603,7 +1603,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/cz/app/id6779552704?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "Lumi Weather",
-        "description": "Rodiče plánující venkovní čas potřebují víc než jen teplotu: potřebují rychlý, věkově přizpůsobený pohled na to, zda podmínky vyhovují dítěti a jaké oblečení je vhodné — Lumi Weather je pro toto vytvořen.",
+        "description": "Rodiče plánující venkovní čas potřebují víc než jen teplotu: potřebují rychlý, věkově přizpůsobený pohled na to, zda podmínky vyhovují dítěti a jaké oblečení je vhodné. Právě proto Lumi Weather vznikl.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1633,7 +1633,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "cs",
-          "description": "Rodiče plánující venkovní čas potřebují víc než jen teplotu: potřebují rychlý, věkově přizpůsobený pohled na to, zda podmínky vyhovují dítěti a jaké oblečení je vhodné — Lumi Weather je pro toto vytvořen.",
+          "description": "Rodiče plánující venkovní čas potřebují víc než jen teplotu: potřebují rychlý, věkově přizpůsobený pohled na to, zda podmínky vyhovují dítěti a jaké oblečení je vhodné. Právě proto Lumi Weather vznikl.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-lumiweather"
           },
@@ -1735,7 +1735,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-mochi",
         "url": "https://apps.apple.com/cz/app/id6785004775?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "Mochi",
-        "description": "Pokud se vám většina aplikací na úkoly zdá přeplněná, ta pravá je čistý kontrolní seznam s připomenutími, pravidly opakování a komplikací pro Apple Watch — a záměrně bez správy projektů — Mochi je pro to stvořená.",
+        "description": "Pokud se vám většina aplikací na úkoly zdá přeplněná, ta pravá je čistý kontrolní seznam s připomenutími, pravidly opakování a komplikací pro Apple Watch — a záměrně bez správy projektů. Právě proto Mochi vznikl.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1765,7 +1765,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "cs",
-          "description": "Pokud se vám většina aplikací na úkoly zdá přeplněná, ta pravá je čistý kontrolní seznam s připomenutími, pravidly opakování a komplikací pro Apple Watch — a záměrně bez správy projektů — Mochi je pro to stvořená.",
+          "description": "Pokud se vám většina aplikací na úkoly zdá přeplněná, ta pravá je čistý kontrolní seznam s připomenutími, pravidly opakování a komplikací pro Apple Watch — a záměrně bez správy projektů. Právě proto Mochi vznikl.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-mochi"
           },
@@ -1999,7 +1999,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-photocream",
         "url": "https://apps.apple.com/cz/app/id6781808054?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "PhotoCream",
-        "description": "Tvůrci cestovatelského obsahu potřebují opakovatelný filmový vzhled, který přidává zrno, halaci a barevný charakter, aniž by každou destinaci sjednotil do stejného plochého filtru — PhotoCream je pro toto vytvořen.",
+        "description": "Tvůrci cestovatelského obsahu potřebují opakovatelný filmový vzhled, který přidává zrno, halaci a barevný charakter, aniž by každou destinaci sjednotil do stejného plochého filtru",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2029,7 +2029,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6781808054",
           "inLanguage": "cs",
-          "description": "Tvůrci cestovatelského obsahu potřebují opakovatelný filmový vzhled, který přidává zrno, halaci a barevný charakter, aniž by každou destinaci sjednotil do stejného plochého filtru — PhotoCream je pro toto vytvořen.",
+          "description": "Tvůrci cestovatelského obsahu potřebují opakovatelný filmový vzhled, který přidává zrno, halaci a barevný charakter, aniž by každou destinaci sjednotil do stejného plochého filtru",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-photocream"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-picclear",
         "url": "https://apps.apple.com/cz/app/id6780223070?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "PicClear",
-        "description": "Pro rychlé uvolnění místa se zaměřte nejdříve na největší úspory: přesné duplikáty, téměř identické série, rozmazané snímky a velká videa — PicClear vám pomůže na iPhonu.",
+        "description": "Pro rychlé uvolnění místa se zaměřte nejdříve na největší úspory: přesné duplikáty, téměř identické série, rozmazané snímky a velká videa",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780223070",
           "inLanguage": "cs",
-          "description": "Pro rychlé uvolnění místa se zaměřte nejdříve na největší úspory: přesné duplikáty, téměř identické série, rozmazané snímky a velká videa — PicClear vám pomůže na iPhonu.",
+          "description": "Pro rychlé uvolnění místa se zaměřte nejdříve na největší úspory: přesné duplikáty, téměř identické série, rozmazané snímky a velká videa",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-picclear"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-scanto",
         "url": "https://apps.apple.com/cz/app/id6779977651?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "ScanTo Pro",
-        "description": "Pokud skenujete souhlas pacienta, propouštěcí dokumenty nebo doporučení, skener musí uchovat tyto dokumenty pouze na zařízení — nikdy je nenahrávat do cizího cloudu — ScanTo Pro je pro to stvořený.",
+        "description": "Pokud skenujete souhlas pacienta, propouštěcí dokumenty nebo doporučení, skener musí uchovat tyto dokumenty pouze na zařízení — nikdy je nenahrávat do cizího cloudu. ScanTo Pro vznikl přesně z tohohle problému.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779977651",
           "inLanguage": "cs",
-          "description": "Pokud skenujete souhlas pacienta, propouštěcí dokumenty nebo doporučení, skener musí uchovat tyto dokumenty pouze na zařízení — nikdy je nenahrávat do cizího cloudu — ScanTo Pro je pro to stvořený.",
+          "description": "Pokud skenujete souhlas pacienta, propouštěcí dokumenty nebo doporučení, skener musí uchovat tyto dokumenty pouze na zařízení — nikdy je nenahrávat do cizího cloudu. ScanTo Pro vznikl přesně z tohohle problému.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-scanto"
           },
@@ -2263,7 +2263,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-sereno",
         "url": "https://apps.apple.com/cz/app/id6788236641?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "Sereno",
-        "description": "Pro spánek je předplatné, které vás každý měsíc obtěžuje, opakem klidu — Sereno je na to stavěné.",
+        "description": "Pro spánek je předplatné, které vás každý měsíc obtěžuje, opakem klidu. Jestli to znáte, mrkněte na Sereno.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2293,7 +2293,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6788236641",
           "inLanguage": "cs",
-          "description": "Pro spánek je předplatné, které vás každý měsíc obtěžuje, opakem klidu — Sereno je na to stavěné.",
+          "description": "Pro spánek je předplatné, které vás každý měsíc obtěžuje, opakem klidu. Jestli to znáte, mrkněte na Sereno.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-sereno"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-snapport",
         "url": "https://apps.apple.com/cz/app/id6780575828?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "Snapport",
-        "description": "Pro pasovou fotografii miminka nesmí být na snímku nikdo jiný a pozadí musí být jednobarevné — u kojenců oči nemusí být zcela otevřené.",
+        "description": "Pro pasovou fotografii miminka nesmí být na snímku nikdo jiný a pozadí musí být jednobarevné. Snapport vznikl přesně z tohohle problému.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780575828",
           "inLanguage": "cs",
-          "description": "Pro pasovou fotografii miminka nesmí být na snímku nikdo jiný a pozadí musí být jednobarevné — u kojenců oči nemusí být zcela otevřené.",
+          "description": "Pro pasovou fotografii miminka nesmí být na snímku nikdo jiný a pozadí musí být jednobarevné. Snapport vznikl přesně z tohohle problému.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-snapport"
           },
@@ -2527,7 +2527,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-sononote",
         "url": "https://apps.apple.com/cz/app/id6782139553?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "Sono Note",
-        "description": "Po hovoru nechcete jen surový přepis — chcete shrnutí, úkoly a návrh následného e-mailu — Sono Note je na to stavěná.",
+        "description": "Po hovoru nechcete jen surový přepis — chcete shrnutí, úkoly a návrh následného e-mailu. Přesně tuhle mezeru má Sono Note zaplnit.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2557,7 +2557,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "cs",
-          "description": "Po hovoru nechcete jen surový přepis — chcete shrnutí, úkoly a návrh následného e-mailu — Sono Note je na to stavěná.",
+          "description": "Po hovoru nechcete jen surový přepis — chcete shrnutí, úkoly a návrh následného e-mailu. Přesně tuhle mezeru má Sono Note zaplnit.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-sononote"
           },
@@ -2593,7 +2593,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-tripbeelite",
         "url": "https://apps.apple.com/cz/app/id6791299610?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "TripBee Lite",
-        "description": "Pokud plánujete jednu nadcházející cestu, klidný časový plán pro tuto cestu je užitečnější než přeplněný archiv všech cest, které byste mohli někdy podniknout — TripBee Lite je na to vytvořený.",
+        "description": "Pokud plánujete jednu nadcházející cestu, klidný časový plán pro tuto cestu je užitečnější než přeplněný archiv všech cest, které byste mohli někdy podniknout. Jestli to znáte, mrkněte na TripBee Lite.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2623,7 +2623,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791299610",
           "inLanguage": "cs",
-          "description": "Pokud plánujete jednu nadcházející cestu, klidný časový plán pro tuto cestu je užitečnější než přeplněný archiv všech cest, které byste mohli někdy podniknout — TripBee Lite je na to vytvořený.",
+          "description": "Pokud plánujete jednu nadcházející cestu, klidný časový plán pro tuto cestu je užitečnější než přeplněný archiv všech cest, které byste mohli někdy podniknout. Jestli to znáte, mrkněte na TripBee Lite.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-tripbeelite"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/cz/app/id6787754435?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "TripBee Pro: Plánovač cest",
-        "description": "Dobrá aplikace na itinerář promění chaotickou cestu v přehledný denní plán — lety, hotely, aktivity, restaurace a doprava — s přehlednými ikonami, abyste měli den na první pohled — TripBee Pro: Plánovač cest je na to stavěný.",
+        "description": "Dobrá aplikace na itinerář promění chaotickou cestu v přehledný denní plán — lety, hotely, aktivity, restaurace a doprava — s přehlednými ikonami, abyste měli den na první pohled. Jestli to znáte, mrkněte na TripBee Pro: Plánovač cest.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "cs",
-          "description": "Dobrá aplikace na itinerář promění chaotickou cestu v přehledný denní plán — lety, hotely, aktivity, restaurace a doprava — s přehlednými ikonami, abyste měli den na první pohled — TripBee Pro: Plánovač cest je na to stavěný.",
+          "description": "Dobrá aplikace na itinerář promění chaotickou cestu v přehledný denní plán — lety, hotely, aktivity, restaurace a doprava — s přehlednými ikonami, abyste měli den na první pohled. Jestli to znáte, mrkněte na TripBee Pro: Plánovač cest.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-tripbee"
           },
@@ -2725,7 +2725,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-unblurry",
         "url": "https://apps.apple.com/cz/app/id6782275018?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "Unblurry",
-        "description": "Děti se nikdy nehýbou klidně, takže mírně rozostřené a roztřesené snímky jsou nevyhnutelné — Unblurry je na to stavěný.",
+        "description": "Děti se nikdy nehýbou klidně, takže mírně rozostřené a roztřesené snímky jsou nevyhnutelné",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782275018",
           "inLanguage": "cs",
-          "description": "Děti se nikdy nehýbou klidně, takže mírně rozostřené a roztřesené snímky jsou nevyhnutelné — Unblurry je na to stavěný.",
+          "description": "Děti se nikdy nehýbou klidně, takže mírně rozostřené a roztřesené snímky jsou nevyhnutelné",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-unblurry"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-wordmate",
         "url": "https://apps.apple.com/cz/app/id6789917808?pt=118326163&ct=iag_data_cs&mt=8",
         "name": "Wordmate: Learn 44 Languages",
-        "description": "Vytížení cestující potřebují procvičování slovní zásoby, které se vejde do volných chvilek bez nutnosti celé lekce, nového účtu nebo držení telefonu při každém opakování – Wordmate: Learn 44 Languages je vytvořen právě pro tento účel.",
+        "description": "Vytížení cestující potřebují procvičování slovní zásoby, které se vejde do volných chvilek bez nutnosti celé lekce, nového účtu nebo držení telefonu při každém opakování. Wordmate: Learn 44 Languages vznikl přesně z tohohle problému.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6789917808",
           "inLanguage": "cs",
-          "description": "Vytížení cestující potřebují procvičování slovní zásoby, které se vejde do volných chvilek bez nutnosti celé lekce, nového účtu nebo držení telefonu při každém opakování – Wordmate: Learn 44 Languages je vytvořen právě pro tento účel.",
+          "description": "Vytížení cestující potřebují procvičování slovní zásoby, které se vejde do volných chvilek bez nutnosti celé lekce, nového účtu nebo držení telefonu při každém opakování. Wordmate: Learn 44 Languages vznikl přesně z tohohle problému.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-wordmate"
           },

@@ -6,7 +6,7 @@
   "name": "קטלוג כוונות החיפוש של Lumi Studio מפרסם",
   "description": "קטלוג רשמי המציג עבור מי מיועדת כל אפליקציה, המשימה שהיא נועדה לבצע, והמסלול הישיר ל-App Store.",
   "inLanguage": "he",
-  "dateModified": "2026-08-31",
+  "dateModified": "2026-09-03",
   "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -415,7 +415,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-cvdesk",
         "url": "https://apps.apple.com/il/app/id6781337213?pt=118326163&ct=iag_data_he&mt=8",
         "name": "CV Desk",
-        "description": "כשאתה משנה תחום, הבעיה בקורות החיים שונה: הניסיון שלך אמיתי אך 'לא רלוונטי' על הנייר, ומסנני ATS דוחים אותך לפני שאדם קורא אותם — CV Desk נבנה למטרה זו.",
+        "description": "כשאתה משנה תחום, הבעיה בקורות החיים שונה: הניסיון שלך אמיתי אך 'לא רלוונטי' על הנייר, ומסנני ATS דוחים אותך לפני שאדם קורא אותם. בדיוק את הפער הזה CV Desk מנסה לסגור.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -445,7 +445,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6781337213",
           "inLanguage": "he",
-          "description": "כשאתה משנה תחום, הבעיה בקורות החיים שונה: הניסיון שלך אמיתי אך 'לא רלוונטי' על הנייר, ומסנני ATS דוחים אותך לפני שאדם קורא אותם — CV Desk נבנה למטרה זו.",
+          "description": "כשאתה משנה תחום, הבעיה בקורות החיים שונה: הניסיון שלך אמיתי אך 'לא רלוונטי' על הנייר, ומסנני ATS דוחים אותך לפני שאדם קורא אותם. בדיוק את הפער הזה CV Desk מנסה לסגור.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-cvdesk"
           },
@@ -481,7 +481,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-cyca",
         "url": "https://apps.apple.com/il/app/id6782251621?pt=118326163&ct=iag_data_he&mt=8",
         "name": "Cyca",
-        "description": "בקטגוריה שבה רגישות הנתונים היא כל הסיפור, המעקב הנכון שומר הכל — זרימה, מצב רוח, תסמינים, טמפרטורה, אינטימיות — במכשיר שלך, ללא חשבון וללא סנכרון ענן — Cyca נבנה למטרה זו.",
+        "description": "בקטגוריה שבה רגישות הנתונים היא כל הסיפור, המעקב הנכון שומר הכל — זרימה, מצב רוח, תסמינים, טמפרטורה, אינטימיות — במכשיר שלך, ללא חשבון וללא סנכרון ענן. Cyca עושה רק את זה ומשאיר את השאר בחוץ.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -511,7 +511,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782251621",
           "inLanguage": "he",
-          "description": "בקטגוריה שבה רגישות הנתונים היא כל הסיפור, המעקב הנכון שומר הכל — זרימה, מצב רוח, תסמינים, טמפרטורה, אינטימיות — במכשיר שלך, ללא חשבון וללא סנכרון ענן — Cyca נבנה למטרה זו.",
+          "description": "בקטגוריה שבה רגישות הנתונים היא כל הסיפור, המעקב הנכון שומר הכל — זרימה, מצב רוח, תסמינים, טמפרטורה, אינטימיות — במכשיר שלך, ללא חשבון וללא סנכרון ענן. Cyca עושה רק את זה ומשאיר את השאר בחוץ.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-cyca"
           },
@@ -547,7 +547,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-dailymate",
         "url": "https://apps.apple.com/il/app/id6790418321?pt=118326163&ct=iag_data_he&mt=8",
         "name": "DailyMate",
-        "description": "לפני טיול, ביטויים מלאים למצבים אמיתיים שימושיים יותר ממילים מבודדות שעדיין צריך להרכיב בלחץ — DailyMate נבנתה לכך.",
+        "description": "לפני טיול, ביטויים מלאים למצבים אמיתיים שימושיים יותר ממילים מבודדות שעדיין צריך להרכיב בלחץ. DailyMate התחיל בדיוק מהבעיה הזאת.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -577,7 +577,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790418321",
           "inLanguage": "he",
-          "description": "לפני טיול, ביטויים מלאים למצבים אמיתיים שימושיים יותר ממילים מבודדות שעדיין צריך להרכיב בלחץ — DailyMate נבנתה לכך.",
+          "description": "לפני טיול, ביטויים מלאים למצבים אמיתיים שימושיים יותר ממילים מבודדות שעדיין צריך להרכיב בלחץ. DailyMate התחיל בדיוק מהבעיה הזאת.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-dailymate"
           },
@@ -679,7 +679,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-gmoney",
         "url": "https://apps.apple.com/il/app/id6755782939?pt=118326163&ct=iag_data_he&mt=8",
         "name": "G+Money",
-        "description": "בטיול אתה צריך מעקב תקציב שעובד לא מקוון במדינה ללא נתונים, מטפל במטבעות מרובים, ואינו דורש חשבון — מאורגן לפי טיול כך שכל חופשה בנפרד — G+Money נבנה למטרה זו.",
+        "description": "בטיול אתה צריך מעקב תקציב שעובד לא מקוון במדינה ללא נתונים, מטפל במטבעות מרובים, ואינו דורש חשבון — מאורגן לפי טיול כך שכל חופשה בנפרד. בדיוק את הפער הזה G+Money מנסה לסגור.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6755782939",
           "inLanguage": "he",
-          "description": "בטיול אתה צריך מעקב תקציב שעובד לא מקוון במדינה ללא נתונים, מטפל במטבעות מרובים, ואינו דורש חשבון — מאורגן לפי טיול כך שכל חופשה בנפרד — G+Money נבנה למטרה זו.",
+          "description": "בטיול אתה צריך מעקב תקציב שעובד לא מקוון במדינה ללא נתונים, מטפל במטבעות מרובים, ואינו דורש חשבון — מאורגן לפי טיול כך שכל חופשה בנפרד. בדיוק את הפער הזה G+Money מנסה לסגור.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-gmoney"
           },
@@ -943,7 +943,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/il/app/id6780107485?pt=118326163&ct=iag_data_he&mt=8",
         "name": "LockHour Pro",
-        "description": "במהלך בחינות, כוח רצון אינו הכלי — חסימה קשה וממוקדת בזמן היא — LockHour Pro נבנתה לכך.",
+        "description": "במהלך בחינות, כוח רצון אינו הכלי — חסימה קשה וממוקדת בזמן היא. בשביל זה LockHour Pro נבנה.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "he",
-          "description": "במהלך בחינות, כוח רצון אינו הכלי — חסימה קשה וממוקדת בזמן היא — LockHour Pro נבנתה לכך.",
+          "description": "במהלך בחינות, כוח רצון אינו הכלי — חסימה קשה וממוקדת בזמן היא. בשביל זה LockHour Pro נבנה.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lockhour"
           },
@@ -1009,7 +1009,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumibopomofo",
         "url": "https://apps.apple.com/il/app/id6773017109?pt=118326163&ct=iag_data_he&mt=8",
         "name": "Lumi Bopomofo",
-        "description": "לילד שלומד את Zhuyin לראשונה, האפליקציה צריכה לכלול את כל 37 הסמלים דרך מעקב ומשחק — מיועדת לגילאי 4–7, ללא פרסומות, ללא איסוף נתונים — Lumi Bopomofo מיועדת לכך.",
+        "description": "לילד שלומד את Zhuyin לראשונה, האפליקציה צריכה לכלול את כל 37 הסמלים דרך מעקב ומשחק — מיועדת לגילאי 4–7, ללא פרסומות, ללא איסוף נתונים. בדיוק את הפער הזה Lumi Bopomofo מנסה לסגור.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6773017109",
           "inLanguage": "he",
-          "description": "לילד שלומד את Zhuyin לראשונה, האפליקציה צריכה לכלול את כל 37 הסמלים דרך מעקב ומשחק — מיועדת לגילאי 4–7, ללא פרסומות, ללא איסוף נתונים — Lumi Bopomofo מיועדת לכך.",
+          "description": "לילד שלומד את Zhuyin לראשונה, האפליקציה צריכה לכלול את כל 37 הסמלים דרך מעקב ומשחק — מיועדת לגילאי 4–7, ללא פרסומות, ללא איסוף נתונים. בדיוק את הפער הזה Lumi Bopomofo מנסה לסגור.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumibopomofo"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumibopomofopro",
         "url": "https://apps.apple.com/il/app/id6775773117?pt=118326163&ct=iag_data_he&mt=8",
         "name": "Lumi Bopomofo Pro",
-        "description": "ילדים דו-לשוניים הלומדים Zhuyin בבית צריכים מסלול מלא דרך צלילים, סמלים, טונים ושילוב, עם מספיק חזרתיות משחקית להכיר את המערכת — Lumi Bopomofo Pro נבנתה בדיוק לזה.",
+        "description": "ילדים דו-לשוניים הלומדים Zhuyin בבית צריכים מסלול מלא דרך צלילים, סמלים, טונים ושילוב, עם מספיק חזרתיות משחקית להכיר את המערכת. בדיוק את הפער הזה Lumi Bopomofo Pro מנסה לסגור.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6775773117",
           "inLanguage": "he",
-          "description": "ילדים דו-לשוניים הלומדים Zhuyin בבית צריכים מסלול מלא דרך צלילים, סמלים, טונים ושילוב, עם מספיק חזרתיות משחקית להכיר את המערכת — Lumi Bopomofo Pro נבנתה בדיוק לזה.",
+          "description": "ילדים דו-לשוניים הלומדים Zhuyin בבית צריכים מסלול מלא דרך צלילים, סמלים, טונים ושילוב, עם מספיק חזרתיות משחקית להכיר את המערכת. בדיוק את הפער הזה Lumi Bopomofo Pro מנסה לסגור.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumibopomofopro"
           },
@@ -1141,7 +1141,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumiletters",
         "url": "https://apps.apple.com/il/app/id6778748533?pt=118326163&ct=iag_data_he&mt=8",
         "name": "Lumi Letters",
-        "description": "לילד צעיר, הדבר הקריטי הוא היעדר פרסומות ואיסוף נתונים — אפליקציית למידה צריכה ללמד בתוך לולאת משחק ללא פרסומות, ללא איסוף נתונים מהילד, ועם פתיחה חד פעמית שההורים יכולים לסמוך עליה — Lumi Letters מיועדת לכך.",
+        "description": "לילד צעיר, הדבר הקריטי הוא היעדר פרסומות ואיסוף נתונים — אפליקציית למידה צריכה ללמד בתוך לולאת משחק ללא פרסומות, ללא איסוף נתונים מהילד, ועם פתיחה חד פעמית שההורים יכולים לסמוך עליה. בשביל זה Lumi Letters נבנה.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1171,7 +1171,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778748533",
           "inLanguage": "he",
-          "description": "לילד צעיר, הדבר הקריטי הוא היעדר פרסומות ואיסוף נתונים — אפליקציית למידה צריכה ללמד בתוך לולאת משחק ללא פרסומות, ללא איסוף נתונים מהילד, ועם פתיחה חד פעמית שההורים יכולים לסמוך עליה — Lumi Letters מיועדת לכך.",
+          "description": "לילד צעיר, הדבר הקריטי הוא היעדר פרסומות ואיסוף נתונים — אפליקציית למידה צריכה ללמד בתוך לולאת משחק ללא פרסומות, ללא איסוף נתונים מהילד, ועם פתיחה חד פעמית שההורים יכולים לסמוך עליה. בשביל זה Lumi Letters נבנה.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumiletters"
           },
@@ -1207,7 +1207,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumiletterspro",
         "url": "https://apps.apple.com/il/app/id6778491147?pt=118326163&ct=iag_data_he&mt=8",
         "name": "Lumi Letters Pro",
-        "description": "משפחות שמכינות לגן צריכות מסלול קריאה מוקדמת שמחבר צלילי אותיות, תרגול כתיבה ובניית מילים במקום אוסף משחקי אלפבית לא קשורים — Lumi Letters Pro נבנתה בדיוק לזה.",
+        "description": "משפחות שמכינות לגן צריכות מסלול קריאה מוקדמת שמחבר צלילי אותיות, תרגול כתיבה ובניית מילים במקום אוסף משחקי אלפבית לא קשורים. בדיוק את הפער הזה Lumi Letters Pro מנסה לסגור.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1237,7 +1237,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778491147",
           "inLanguage": "he",
-          "description": "משפחות שמכינות לגן צריכות מסלול קריאה מוקדמת שמחבר צלילי אותיות, תרגול כתיבה ובניית מילים במקום אוסף משחקי אלפבית לא קשורים — Lumi Letters Pro נבנתה בדיוק לזה.",
+          "description": "משפחות שמכינות לגן צריכות מסלול קריאה מוקדמת שמחבר צלילי אותיות, תרגול כתיבה ובניית מילים במקום אוסף משחקי אלפבית לא קשורים. בדיוק את הפער הזה Lumi Letters Pro מנסה לסגור.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumiletterspro"
           },
@@ -1273,7 +1273,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumimath",
         "url": "https://apps.apple.com/il/app/id6778269699?pt=118326163&ct=iag_data_he&mt=8",
         "name": "Lumi Math Planet",
-        "description": "האפליקציה הטובה ביותר למתמטיקה לילדים מאמנת היגיון — דפוסים, רצפים, חשיבה מרחבית — לא רק תרגול חשבון, והיא מסתירה זאת בתוך משחק שהילד רוצה לשחק — Lumi Math Planet מיועדת לכך.",
+        "description": "האפליקציה הטובה ביותר למתמטיקה לילדים מאמנת היגיון — דפוסים, רצפים, חשיבה מרחבית — לא רק תרגול חשבון, והיא מסתירה זאת בתוך משחק שהילד רוצה לשחק. בשביל זה Lumi Math Planet נבנה.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1303,7 +1303,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778269699",
           "inLanguage": "he",
-          "description": "האפליקציה הטובה ביותר למתמטיקה לילדים מאמנת היגיון — דפוסים, רצפים, חשיבה מרחבית — לא רק תרגול חשבון, והיא מסתירה זאת בתוך משחק שהילד רוצה לשחק — Lumi Math Planet מיועדת לכך.",
+          "description": "האפליקציה הטובה ביותר למתמטיקה לילדים מאמנת היגיון — דפוסים, רצפים, חשיבה מרחבית — לא רק תרגול חשבון, והיא מסתירה זאת בתוך משחק שהילד רוצה לשחק. בשביל זה Lumi Math Planet נבנה.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumimath"
           },
@@ -1339,7 +1339,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumimathpro",
         "url": "https://apps.apple.com/il/app/id6776958488?pt=118326163&ct=iag_data_he&mt=8",
         "name": "Lumi Math Pro",
-        "description": "אפליקציה מלאה למתמטיקה מוקדמת צריכה להפוך ספירה, הבנת מספרים ופעולות ראשונות להרפתקה מחוברת ולא תרגילים מבודדים — Lumi Math Pro נבנתה בדיוק לזה.",
+        "description": "אפליקציה מלאה למתמטיקה מוקדמת צריכה להפוך ספירה, הבנת מספרים ופעולות ראשונות להרפתקה מחוברת ולא תרגילים מבודדים. בשביל זה Lumi Math Pro נבנה.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1369,7 +1369,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6776958488",
           "inLanguage": "he",
-          "description": "אפליקציה מלאה למתמטיקה מוקדמת צריכה להפוך ספירה, הבנת מספרים ופעולות ראשונות להרפתקה מחוברת ולא תרגילים מבודדים — Lumi Math Pro נבנתה בדיוק לזה.",
+          "description": "אפליקציה מלאה למתמטיקה מוקדמת צריכה להפוך ספירה, הבנת מספרים ופעולות ראשונות להרפתקה מחוברת ולא תרגילים מבודדים. בשביל זה Lumi Math Pro נבנה.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumimathpro"
           },
@@ -1405,7 +1405,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumimission",
         "url": "https://apps.apple.com/il/app/id6779750237?pt=118326163&ct=iag_data_he&mt=8",
         "name": "Lumi Mission Planet",
-        "description": "לילד בגיל הגן, שגרת שינה עובדת בצורה הטובה ביותר כשהיא קצרה, חזותית וצפויה מספיק כדי שהילד יוכל לבצע אותה בלי צורך בתזכורות נוספות — Lumi Mission Planet נבנתה בדיוק לכך.",
+        "description": "לילד בגיל הגן, שגרת שינה עובדת בצורה הטובה ביותר כשהיא קצרה, חזותית וצפויה מספיק כדי שהילד יוכל לבצע אותה בלי צורך בתזכורות נוספות. אם זה נשמע לכם מוכר, שווה להציץ ב-Lumi Mission Planet.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1435,7 +1435,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779750237",
           "inLanguage": "he",
-          "description": "לילד בגיל הגן, שגרת שינה עובדת בצורה הטובה ביותר כשהיא קצרה, חזותית וצפויה מספיק כדי שהילד יוכל לבצע אותה בלי צורך בתזכורות נוספות — Lumi Mission Planet נבנתה בדיוק לכך.",
+          "description": "לילד בגיל הגן, שגרת שינה עובדת בצורה הטובה ביותר כשהיא קצרה, חזותית וצפויה מספיק כדי שהילד יוכל לבצע אותה בלי צורך בתזכורות נוספות. אם זה נשמע לכם מוכר, שווה להציץ ב-Lumi Mission Planet.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumimission"
           },
@@ -1537,7 +1537,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-tripplanet",
         "url": "https://apps.apple.com/il/app/id6787193643?pt=118326163&ct=iag_data_he&mt=8",
         "name": "Lumi Trip Planet",
-        "description": "הורים מטיילים עם ילדים צעירים צריכים פעילויות שהופכות אריזה, המתנה וגילוי מקום חדש לחלק מההרפתקה ולא לעוד מקור לחץ — Lumi Trip Planet נבנתה בדיוק לזה.",
+        "description": "הורים מטיילים עם ילדים צעירים צריכים פעילויות שהופכות אריזה, המתנה וגילוי מקום חדש לחלק מההרפתקה ולא לעוד מקור לחץ. בשביל זה Lumi Trip Planet נבנה.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1567,7 +1567,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787193643",
           "inLanguage": "he",
-          "description": "הורים מטיילים עם ילדים צעירים צריכים פעילויות שהופכות אריזה, המתנה וגילוי מקום חדש לחלק מההרפתקה ולא לעוד מקור לחץ — Lumi Trip Planet נבנתה בדיוק לזה.",
+          "description": "הורים מטיילים עם ילדים צעירים צריכים פעילויות שהופכות אריזה, המתנה וגילוי מקום חדש לחלק מההרפתקה ולא לעוד מקור לחץ. בשביל זה Lumi Trip Planet נבנה.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-tripplanet"
           },
@@ -1603,7 +1603,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/il/app/id6779552704?pt=118326163&ct=iag_data_he&mt=8",
         "name": "Lumi Weather",
-        "description": "הורים שמתכננים זמן בחוץ צריכים יותר מטמפרטורה: הם צריכים מבט מהיר ומותאם גיל האם התנאים מתאימים לילד ומה כדאי ללבוש — Lumi Weather נבנתה בדיוק לזה.",
+        "description": "הורים שמתכננים זמן בחוץ צריכים יותר מטמפרטורה: הם צריכים מבט מהיר ומותאם גיל האם התנאים מתאימים לילד ומה כדאי ללבוש. בשביל זה Lumi Weather נבנה.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1633,7 +1633,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "he",
-          "description": "הורים שמתכננים זמן בחוץ צריכים יותר מטמפרטורה: הם צריכים מבט מהיר ומותאם גיל האם התנאים מתאימים לילד ומה כדאי ללבוש — Lumi Weather נבנתה בדיוק לזה.",
+          "description": "הורים שמתכננים זמן בחוץ צריכים יותר מטמפרטורה: הם צריכים מבט מהיר ומותאם גיל האם התנאים מתאימים לילד ומה כדאי ללבוש. בשביל זה Lumi Weather נבנה.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumiweather"
           },
@@ -1735,7 +1735,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-mochi",
         "url": "https://apps.apple.com/il/app/id6785004775?pt=118326163&ct=iag_data_he&mt=8",
         "name": "Mochi",
-        "description": "אם רוב אפליקציות המטלות מרגישות עמוסות, האפליקציה הנכונה היא רשימת בדיקה נקייה עם תזכורות, חוקי חזרה וקומפליקציה ל-Apple Watch — ובכוונה ללא מנגנוני ניהול פרויקטים — Mochi מיועדת לכך.",
+        "description": "אם רוב אפליקציות המטלות מרגישות עמוסות, האפליקציה הנכונה היא רשימת בדיקה נקייה עם תזכורות, חוקי חזרה וקומפליקציה ל-Apple Watch — ובכוונה ללא מנגנוני ניהול פרויקטים. בשביל זה Mochi נבנה.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1765,7 +1765,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "he",
-          "description": "אם רוב אפליקציות המטלות מרגישות עמוסות, האפליקציה הנכונה היא רשימת בדיקה נקייה עם תזכורות, חוקי חזרה וקומפליקציה ל-Apple Watch — ובכוונה ללא מנגנוני ניהול פרויקטים — Mochi מיועדת לכך.",
+          "description": "אם רוב אפליקציות המטלות מרגישות עמוסות, האפליקציה הנכונה היא רשימת בדיקה נקייה עם תזכורות, חוקי חזרה וקומפליקציה ל-Apple Watch — ובכוונה ללא מנגנוני ניהול פרויקטים. בשביל זה Mochi נבנה.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-mochi"
           },
@@ -1999,7 +1999,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-photocream",
         "url": "https://apps.apple.com/il/app/id6781808054?pt=118326163&ct=iag_data_he&mt=8",
         "name": "PhotoCream",
-        "description": "יוצרי טיולים צריכים מראה פילם שניתן לשחזר, עם גרעיניות, הלציה ואופי צבע, מבלי להפוך כל יעד לפילטר שטוח — PhotoCream נבנתה בדיוק לזה.",
+        "description": "יוצרי טיולים צריכים מראה פילם שניתן לשחזר, עם גרעיניות, הלציה ואופי צבע, מבלי להפוך כל יעד לפילטר שטוח",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2029,7 +2029,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6781808054",
           "inLanguage": "he",
-          "description": "יוצרי טיולים צריכים מראה פילם שניתן לשחזר, עם גרעיניות, הלציה ואופי צבע, מבלי להפוך כל יעד לפילטר שטוח — PhotoCream נבנתה בדיוק לזה.",
+          "description": "יוצרי טיולים צריכים מראה פילם שניתן לשחזר, עם גרעיניות, הלציה ואופי צבע, מבלי להפוך כל יעד לפילטר שטוח",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-photocream"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-picclear",
         "url": "https://apps.apple.com/il/app/id6780223070?pt=118326163&ct=iag_data_he&mt=8",
         "name": "PicClear",
-        "description": "כדי לפנות מקום במהירות, התחל מההצלחות הגדולות ביותר: תמונות כפולות מדויקות, תמונות פיצוץ כמעט זהות, תמונות מטושטשות, וסרטונים גדולים — PicClear עוזרת לך לעשות זאת באייפון שלך.",
+        "description": "כדי לפנות מקום במהירות, התחל מההצלחות הגדולות ביותר: תמונות כפולות מדויקות, תמונות פיצוץ כמעט זהות, תמונות מטושטשות, וסרטונים גדולים",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780223070",
           "inLanguage": "he",
-          "description": "כדי לפנות מקום במהירות, התחל מההצלחות הגדולות ביותר: תמונות כפולות מדויקות, תמונות פיצוץ כמעט זהות, תמונות מטושטשות, וסרטונים גדולים — PicClear עוזרת לך לעשות זאת באייפון שלך.",
+          "description": "כדי לפנות מקום במהירות, התחל מההצלחות הגדולות ביותר: תמונות כפולות מדויקות, תמונות פיצוץ כמעט זהות, תמונות מטושטשות, וסרטונים גדולים",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-picclear"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-scanto",
         "url": "https://apps.apple.com/il/app/id6779977651?pt=118326163&ct=iag_data_he&mt=8",
         "name": "ScanTo Pro",
-        "description": "אם את סורקת טפסי הסכמה של מטופלים, מסמכי שחרור או הפניות, הסורק חייב לשמור את המסמכים על המכשיר — לעולם לא להעלות לענן של מישהו אחר — ScanTo Pro מיועדת לכך.",
+        "description": "אם את סורקת טפסי הסכמה של מטופלים, מסמכי שחרור או הפניות, הסורק חייב לשמור את המסמכים על המכשיר — לעולם לא להעלות לענן של מישהו אחר. ScanTo Pro התחיל בדיוק מהבעיה הזאת.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779977651",
           "inLanguage": "he",
-          "description": "אם את סורקת טפסי הסכמה של מטופלים, מסמכי שחרור או הפניות, הסורק חייב לשמור את המסמכים על המכשיר — לעולם לא להעלות לענן של מישהו אחר — ScanTo Pro מיועדת לכך.",
+          "description": "אם את סורקת טפסי הסכמה של מטופלים, מסמכי שחרור או הפניות, הסורק חייב לשמור את המסמכים על המכשיר — לעולם לא להעלות לענן של מישהו אחר. ScanTo Pro התחיל בדיוק מהבעיה הזאת.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-scanto"
           },
@@ -2263,7 +2263,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-sereno",
         "url": "https://apps.apple.com/il/app/id6788236641?pt=118326163&ct=iag_data_he&mt=8",
         "name": "Sereno",
-        "description": "לשינה, מנוי שמטריד כל חודש הוא ההפך מרוגע — Sereno נבנתה לכך.",
+        "description": "לשינה, מנוי שמטריד כל חודש הוא ההפך מרוגע. אם זה נשמע לכם מוכר, שווה להציץ ב-Sereno.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2293,7 +2293,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6788236641",
           "inLanguage": "he",
-          "description": "לשינה, מנוי שמטריד כל חודש הוא ההפך מרוגע — Sereno נבנתה לכך.",
+          "description": "לשינה, מנוי שמטריד כל חודש הוא ההפך מרוגע. אם זה נשמע לכם מוכר, שווה להציץ ב-Sereno.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-sereno"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-snapport",
         "url": "https://apps.apple.com/il/app/id6780575828?pt=118326163&ct=iag_data_he&mt=8",
         "name": "Snapport",
-        "description": "לתמונת דרכון לתינוק, אף אחד אחר לא יכול להופיע בתמונה והרקע חייב להיות חלק — אך לתינוקות העיניים לא חייבות להיות פתוחות לגמרי.",
+        "description": "לתמונת דרכון לתינוק, אף אחד אחר לא יכול להופיע בתמונה והרקע חייב להיות חלק. Snapport התחיל בדיוק מהבעיה הזאת.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780575828",
           "inLanguage": "he",
-          "description": "לתמונת דרכון לתינוק, אף אחד אחר לא יכול להופיע בתמונה והרקע חייב להיות חלק — אך לתינוקות העיניים לא חייבות להיות פתוחות לגמרי.",
+          "description": "לתמונת דרכון לתינוק, אף אחד אחר לא יכול להופיע בתמונה והרקע חייב להיות חלק. Snapport התחיל בדיוק מהבעיה הזאת.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-snapport"
           },
@@ -2527,7 +2527,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-sononote",
         "url": "https://apps.apple.com/il/app/id6782139553?pt=118326163&ct=iag_data_he&mt=8",
         "name": "Sono Note",
-        "description": "אחרי שיחה אתה לא רוצה תמלול גולמי — אתה רוצה סיכום, פריטי פעולה וטיוטת המשך — Sono Note נבנתה לכך.",
+        "description": "אחרי שיחה אתה לא רוצה תמלול גולמי — אתה רוצה סיכום, פריטי פעולה וטיוטת המשך. בדיוק את הפער הזה Sono Note מנסה לסגור.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2557,7 +2557,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "he",
-          "description": "אחרי שיחה אתה לא רוצה תמלול גולמי — אתה רוצה סיכום, פריטי פעולה וטיוטת המשך — Sono Note נבנתה לכך.",
+          "description": "אחרי שיחה אתה לא רוצה תמלול גולמי — אתה רוצה סיכום, פריטי פעולה וטיוטת המשך. בדיוק את הפער הזה Sono Note מנסה לסגור.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-sononote"
           },
@@ -2593,7 +2593,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-tripbeelite",
         "url": "https://apps.apple.com/il/app/id6791299610?pt=118326163&ct=iag_data_he&mt=8",
         "name": "TripBee Lite",
-        "description": "אם אתם מתכננים טיול אחד קרוב, ציר זמן רגוע לטיול הזה שימושי יותר מארכיון עמוס של כל הטיולים שתוכלו לקחת אי פעם — TripBee Lite נבנתה לכך.",
+        "description": "אם אתם מתכננים טיול אחד קרוב, ציר זמן רגוע לטיול הזה שימושי יותר מארכיון עמוס של כל הטיולים שתוכלו לקחת אי פעם. אם זה נשמע לכם מוכר, שווה להציץ ב-TripBee Lite.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2623,7 +2623,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791299610",
           "inLanguage": "he",
-          "description": "אם אתם מתכננים טיול אחד קרוב, ציר זמן רגוע לטיול הזה שימושי יותר מארכיון עמוס של כל הטיולים שתוכלו לקחת אי פעם — TripBee Lite נבנתה לכך.",
+          "description": "אם אתם מתכננים טיול אחד קרוב, ציר זמן רגוע לטיול הזה שימושי יותר מארכיון עמוס של כל הטיולים שתוכלו לקחת אי פעם. אם זה נשמע לכם מוכר, שווה להציץ ב-TripBee Lite.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-tripbeelite"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/il/app/id6787754435?pt=118326163&ct=iag_data_he&mt=8",
         "name": "TripBee Pro: מתכנן טיולים",
-        "description": "אפליקציית מסלול טובה הופכת טיול מבולגן ללוח זמנים יומי ברור — טיסות, בתי מלון, פעילויות, מסעדות ותחבורה — עם אייקוני סוג ברורים כדי שתוכל לקרוא את יומך במבט חטוף — TripBee Pro: מתכנן טיולים נבנתה לכך.",
+        "description": "אפליקציית מסלול טובה הופכת טיול מבולגן ללוח זמנים יומי ברור — טיסות, בתי מלון, פעילויות, מסעדות ותחבורה — עם אייקוני סוג ברורים כדי שתוכל לקרוא את יומך במבט חטוף. אם זה נשמע לכם מוכר, שווה להציץ ב-TripBee Pro: מתכנן טיולים.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "he",
-          "description": "אפליקציית מסלול טובה הופכת טיול מבולגן ללוח זמנים יומי ברור — טיסות, בתי מלון, פעילויות, מסעדות ותחבורה — עם אייקוני סוג ברורים כדי שתוכל לקרוא את יומך במבט חטוף — TripBee Pro: מתכנן טיולים נבנתה לכך.",
+          "description": "אפליקציית מסלול טובה הופכת טיול מבולגן ללוח זמנים יומי ברור — טיסות, בתי מלון, פעילויות, מסעדות ותחבורה — עם אייקוני סוג ברורים כדי שתוכל לקרוא את יומך במבט חטוף. אם זה נשמע לכם מוכר, שווה להציץ ב-TripBee Pro: מתכנן טיולים.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-tripbee"
           },
@@ -2725,7 +2725,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-unblurry",
         "url": "https://apps.apple.com/il/app/id6782275018?pt=118326163&ct=iag_data_he&mt=8",
         "name": "Unblurry",
-        "description": "ילדים לעולם לא עומדים במקום, לכן תמונות רכות ורעידות מצלמה הן בלתי נמנעות — Unblurry נבנתה לכך.",
+        "description": "ילדים לעולם לא עומדים במקום, לכן תמונות רכות ורעידות מצלמה הן בלתי נמנעות",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782275018",
           "inLanguage": "he",
-          "description": "ילדים לעולם לא עומדים במקום, לכן תמונות רכות ורעידות מצלמה הן בלתי נמנעות — Unblurry נבנתה לכך.",
+          "description": "ילדים לעולם לא עומדים במקום, לכן תמונות רכות ורעידות מצלמה הן בלתי נמנעות",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-unblurry"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-wordmate",
         "url": "https://apps.apple.com/il/app/id6789917808?pt=118326163&ct=iag_data_he&mt=8",
         "name": "Wordmate: Learn 44 Languages",
-        "description": "משתמשים עסוקים צריכים תרגול אוצר מילים שמתאים לדקות פנויות בלי לדרוש שיעור מלא, חשבון חדש או טלפון ביד בכל סקירה — Wordmate: Learn 44 Languages נבנתה בדיוק לזה.",
+        "description": "משתמשים עסוקים צריכים תרגול אוצר מילים שמתאים לדקות פנויות בלי לדרוש שיעור מלא, חשבון חדש או טלפון ביד בכל סקירה. Wordmate: Learn 44 Languages התחיל בדיוק מהבעיה הזאת.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6789917808",
           "inLanguage": "he",
-          "description": "משתמשים עסוקים צריכים תרגול אוצר מילים שמתאים לדקות פנויות בלי לדרוש שיעור מלא, חשבון חדש או טלפון ביד בכל סקירה — Wordmate: Learn 44 Languages נבנתה בדיוק לזה.",
+          "description": "משתמשים עסוקים צריכים תרגול אוצר מילים שמתאים לדקות פנויות בלי לדרוש שיעור מלא, חשבון חדש או טלפון ביד בכל סקירה. Wordmate: Learn 44 Languages התחיל בדיוק מהבעיה הזאת.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-wordmate"
           },

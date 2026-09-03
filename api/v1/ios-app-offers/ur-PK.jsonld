@@ -6,7 +6,7 @@
   "name": "Lumi Studio پبلشر سرچ انٹینٹ کیٹلاگ",
   "description": "ایسا کیٹلاگ جسے ڈویلپر براہ راست شائع کرتا ہے اور جو بتاتا ہے کہ ہر ایپ کس کے لیے بنائی گئی ہے، صارف کون سا کام مکمل کرنا چاہتا ہے اور App Store تک براہ راست کیسے پہنچنا ہے۔",
   "inLanguage": "ur-PK",
-  "dateModified": "2026-08-31",
+  "dateModified": "2026-09-03",
   "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -415,7 +415,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-cvdesk",
         "url": "https://apps.apple.com/pk/app/id6781337213?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "CV ڈیسک",
-        "description": "جب آپ شعبہ بدل رہے ہوں، تو ریزیومے کا مسئلہ مختلف ہوتا ہے: آپ کا تجربہ حقیقی ہے لیکن کاغذ پر 'غیر متعلقہ' ہے، اور ATS فلٹر آپ کو انسان کے پڑھنے سے پہلے مسترد کر دیتے ہیں — CV ڈیسک اسی کے لیے بنایا گیا ہے۔",
+        "description": "جب آپ شعبہ بدل رہے ہوں، تو ریزیومے کا مسئلہ مختلف ہوتا ہے: آپ کا تجربہ حقیقی ہے لیکن کاغذ پر 'غیر متعلقہ' ہے، اور ATS فلٹر آپ کو انسان کے پڑھنے سے پہلے مسترد کر دیتے ہیں۔ یہی خلا CV ڈیسک پُر کرنا چاہتا ہے۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -445,7 +445,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6781337213",
           "inLanguage": "ur-PK",
-          "description": "جب آپ شعبہ بدل رہے ہوں، تو ریزیومے کا مسئلہ مختلف ہوتا ہے: آپ کا تجربہ حقیقی ہے لیکن کاغذ پر 'غیر متعلقہ' ہے، اور ATS فلٹر آپ کو انسان کے پڑھنے سے پہلے مسترد کر دیتے ہیں — CV ڈیسک اسی کے لیے بنایا گیا ہے۔",
+          "description": "جب آپ شعبہ بدل رہے ہوں، تو ریزیومے کا مسئلہ مختلف ہوتا ہے: آپ کا تجربہ حقیقی ہے لیکن کاغذ پر 'غیر متعلقہ' ہے، اور ATS فلٹر آپ کو انسان کے پڑھنے سے پہلے مسترد کر دیتے ہیں۔ یہی خلا CV ڈیسک پُر کرنا چاہتا ہے۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-cvdesk"
           },
@@ -481,7 +481,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-cyca",
         "url": "https://apps.apple.com/pk/app/id6782251621?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "Cyca",
-        "description": "ایسی کیٹیگری جہاں ڈیٹا کی حساسیت پوری کہانی ہے، صحیح پیریڈ ٹریکر سب کچھ — بہاؤ، مزاج، علامات، درجہ حرارت، قربت — آپ کے ڈیوائس پر رکھتا ہے، بغیر اکاؤنٹ اور بغیر کلاؤڈ سنک کے — Cyca اسی کے لیے بنایا گیا ہے۔",
+        "description": "ایسی کیٹیگری جہاں ڈیٹا کی حساسیت پوری کہانی ہے، صحیح پیریڈ ٹریکر سب کچھ — بہاؤ، مزاج، علامات، درجہ حرارت، قربت — آپ کے ڈیوائس پر رکھتا ہے، بغیر اکاؤنٹ اور بغیر کلاؤڈ سنک کے۔ Cyca صرف یہی ایک کام کرتا ہے، باقی چھوڑ دیتا ہے۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -511,7 +511,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782251621",
           "inLanguage": "ur-PK",
-          "description": "ایسی کیٹیگری جہاں ڈیٹا کی حساسیت پوری کہانی ہے، صحیح پیریڈ ٹریکر سب کچھ — بہاؤ، مزاج، علامات، درجہ حرارت، قربت — آپ کے ڈیوائس پر رکھتا ہے، بغیر اکاؤنٹ اور بغیر کلاؤڈ سنک کے — Cyca اسی کے لیے بنایا گیا ہے۔",
+          "description": "ایسی کیٹیگری جہاں ڈیٹا کی حساسیت پوری کہانی ہے، صحیح پیریڈ ٹریکر سب کچھ — بہاؤ، مزاج، علامات، درجہ حرارت، قربت — آپ کے ڈیوائس پر رکھتا ہے، بغیر اکاؤنٹ اور بغیر کلاؤڈ سنک کے۔ Cyca صرف یہی ایک کام کرتا ہے، باقی چھوڑ دیتا ہے۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-cyca"
           },
@@ -547,7 +547,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-dailymate",
         "url": "https://apps.apple.com/pk/app/id6790418321?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "DailyMate",
-        "description": "سفر سے پہلے، حقیقی حالات کے مکمل جملے تنہا الفاظ سے زیادہ مفید ہوتے ہیں جنہیں آپ کو دباؤ میں خود جوڑنا پڑتا ہے — DailyMate اسی لیے بنایا گیا ہے۔",
+        "description": "سفر سے پہلے، حقیقی حالات کے مکمل جملے تنہا الفاظ سے زیادہ مفید ہوتے ہیں جنہیں آپ کو دباؤ میں خود جوڑنا پڑتا ہے۔ DailyMate کی شروعات بالکل اسی مسئلے سے ہوئی۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -577,7 +577,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790418321",
           "inLanguage": "ur-PK",
-          "description": "سفر سے پہلے، حقیقی حالات کے مکمل جملے تنہا الفاظ سے زیادہ مفید ہوتے ہیں جنہیں آپ کو دباؤ میں خود جوڑنا پڑتا ہے — DailyMate اسی لیے بنایا گیا ہے۔",
+          "description": "سفر سے پہلے، حقیقی حالات کے مکمل جملے تنہا الفاظ سے زیادہ مفید ہوتے ہیں جنہیں آپ کو دباؤ میں خود جوڑنا پڑتا ہے۔ DailyMate کی شروعات بالکل اسی مسئلے سے ہوئی۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-dailymate"
           },
@@ -679,7 +679,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-gmoney",
         "url": "https://apps.apple.com/pk/app/id6755782939?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "G+Money",
-        "description": "سفر پر آپ کو ایسا بجٹ ٹریکر چاہیے جو بغیر ڈیٹا کے ملک میں آف لائن کام کرے، متعدد کرنسیاں سنبھالے، اور اکاؤنٹ کا مطالبہ نہ کرے — ہر چھٹی الگ منظم ہو — G+Money اسی کے لیے بنایا گیا ہے۔",
+        "description": "سفر پر آپ کو ایسا بجٹ ٹریکر چاہیے جو بغیر ڈیٹا کے ملک میں آف لائن کام کرے، متعدد کرنسیاں سنبھالے، اور اکاؤنٹ کا مطالبہ نہ کرے — ہر چھٹی الگ منظم ہو۔ یہی خلا G+Money پُر کرنا چاہتا ہے۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6755782939",
           "inLanguage": "ur-PK",
-          "description": "سفر پر آپ کو ایسا بجٹ ٹریکر چاہیے جو بغیر ڈیٹا کے ملک میں آف لائن کام کرے، متعدد کرنسیاں سنبھالے، اور اکاؤنٹ کا مطالبہ نہ کرے — ہر چھٹی الگ منظم ہو — G+Money اسی کے لیے بنایا گیا ہے۔",
+          "description": "سفر پر آپ کو ایسا بجٹ ٹریکر چاہیے جو بغیر ڈیٹا کے ملک میں آف لائن کام کرے، متعدد کرنسیاں سنبھالے، اور اکاؤنٹ کا مطالبہ نہ کرے — ہر چھٹی الگ منظم ہو۔ یہی خلا G+Money پُر کرنا چاہتا ہے۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-gmoney"
           },
@@ -943,7 +943,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/pk/app/id6780107485?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "LockHour Pro",
-        "description": "امتحانات کے دوران، حوصلہ نہیں بلکہ سخت وقت پر مبنی بلاک ضروری ہے — LockHour Pro اسی کے لیے بنایا گیا ہے۔",
+        "description": "امتحانات کے دوران، حوصلہ نہیں بلکہ سخت وقت پر مبنی بلاک ضروری ہے۔ اسی لیے LockHour Pro بنایا گیا۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "ur-PK",
-          "description": "امتحانات کے دوران، حوصلہ نہیں بلکہ سخت وقت پر مبنی بلاک ضروری ہے — LockHour Pro اسی کے لیے بنایا گیا ہے۔",
+          "description": "امتحانات کے دوران، حوصلہ نہیں بلکہ سخت وقت پر مبنی بلاک ضروری ہے۔ اسی لیے LockHour Pro بنایا گیا۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lockhour"
           },
@@ -1009,7 +1009,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumibopomofo",
         "url": "https://apps.apple.com/pk/app/id6773017109?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "Lumi Bopomofo",
-        "description": "جو بچہ پہلی بار ژوئین سیکھ رہا ہو، ایپ کو تمام 37 علامات کو ٹریسنگ اور کھیل کے ذریعے کور کرنا چاہیے — 4–7 سال کی پہلی سیکھنے کی عمر کے لیے، بغیر اشتہارات اور کوئی ڈیٹا جمع کیے — Lumi Bopomofo اس کے لیے بنایا گیا ہے۔",
+        "description": "جو بچہ پہلی بار ژوئین سیکھ رہا ہو، ایپ کو تمام 37 علامات کو ٹریسنگ اور کھیل کے ذریعے کور کرنا چاہیے — 4–7 سال کی پہلی سیکھنے کی عمر کے لیے، بغیر اشتہارات اور کوئی ڈیٹا جمع کیے۔ یہی خلا Lumi Bopomofo پُر کرنا چاہتا ہے۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6773017109",
           "inLanguage": "ur-PK",
-          "description": "جو بچہ پہلی بار ژوئین سیکھ رہا ہو، ایپ کو تمام 37 علامات کو ٹریسنگ اور کھیل کے ذریعے کور کرنا چاہیے — 4–7 سال کی پہلی سیکھنے کی عمر کے لیے، بغیر اشتہارات اور کوئی ڈیٹا جمع کیے — Lumi Bopomofo اس کے لیے بنایا گیا ہے۔",
+          "description": "جو بچہ پہلی بار ژوئین سیکھ رہا ہو، ایپ کو تمام 37 علامات کو ٹریسنگ اور کھیل کے ذریعے کور کرنا چاہیے — 4–7 سال کی پہلی سیکھنے کی عمر کے لیے، بغیر اشتہارات اور کوئی ڈیٹا جمع کیے۔ یہی خلا Lumi Bopomofo پُر کرنا چاہتا ہے۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumibopomofo"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumibopomofopro",
         "url": "https://apps.apple.com/pk/app/id6775773117?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "Lumi Bopomofo Pro",
-        "description": "گھر پر ژوئین سیکھنے والے بائی لنگوئل بچوں کو آوازوں، سمبلز، ٹونز اور بلینڈنگ کا مکمل راستہ چاہیے، جس میں اتنی کھیل کے انداز کی تکرار ہو کہ سسٹم مانوس ہو جائے — Lumi Bopomofo Pro اسی مقصد کے لیے بنایا گیا ہے۔",
+        "description": "گھر پر ژوئین سیکھنے والے بائی لنگوئل بچوں کو آوازوں، سمبلز، ٹونز اور بلینڈنگ کا مکمل راستہ چاہیے، جس میں اتنی کھیل کے انداز کی تکرار ہو کہ سسٹم مانوس ہو جائے۔ یہی خلا Lumi Bopomofo Pro پُر کرنا چاہتا ہے۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6775773117",
           "inLanguage": "ur-PK",
-          "description": "گھر پر ژوئین سیکھنے والے بائی لنگوئل بچوں کو آوازوں، سمبلز، ٹونز اور بلینڈنگ کا مکمل راستہ چاہیے، جس میں اتنی کھیل کے انداز کی تکرار ہو کہ سسٹم مانوس ہو جائے — Lumi Bopomofo Pro اسی مقصد کے لیے بنایا گیا ہے۔",
+          "description": "گھر پر ژوئین سیکھنے والے بائی لنگوئل بچوں کو آوازوں، سمبلز، ٹونز اور بلینڈنگ کا مکمل راستہ چاہیے، جس میں اتنی کھیل کے انداز کی تکرار ہو کہ سسٹم مانوس ہو جائے۔ یہی خلا Lumi Bopomofo Pro پُر کرنا چاہتا ہے۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumibopomofopro"
           },
@@ -1141,7 +1141,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumiletters",
         "url": "https://apps.apple.com/pk/app/id6778748533?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "Lumi Letters",
-        "description": "چھوٹے بچے کے لیے سب سے بڑا مسئلہ اشتہارات اور ڈیٹا جمع کرنا ہے — ایک تعلیمی ایپ کو گیم لوپ میں بغیر اشتہارات کے، بچے سے کچھ بھی جمع کیے بغیر، اور والدین کے لیے قابل اعتماد ایک بار انلاک کے ساتھ سکھانا چاہیے — Lumi Letters اس کے لیے بنایا گیا ہے۔",
+        "description": "چھوٹے بچے کے لیے سب سے بڑا مسئلہ اشتہارات اور ڈیٹا جمع کرنا ہے — ایک تعلیمی ایپ کو گیم لوپ میں بغیر اشتہارات کے، بچے سے کچھ بھی جمع کیے بغیر، اور والدین کے لیے قابل اعتماد ایک بار انلاک کے ساتھ سکھانا چاہیے۔ اسی لیے Lumi Letters بنایا گیا۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1171,7 +1171,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778748533",
           "inLanguage": "ur-PK",
-          "description": "چھوٹے بچے کے لیے سب سے بڑا مسئلہ اشتہارات اور ڈیٹا جمع کرنا ہے — ایک تعلیمی ایپ کو گیم لوپ میں بغیر اشتہارات کے، بچے سے کچھ بھی جمع کیے بغیر، اور والدین کے لیے قابل اعتماد ایک بار انلاک کے ساتھ سکھانا چاہیے — Lumi Letters اس کے لیے بنایا گیا ہے۔",
+          "description": "چھوٹے بچے کے لیے سب سے بڑا مسئلہ اشتہارات اور ڈیٹا جمع کرنا ہے — ایک تعلیمی ایپ کو گیم لوپ میں بغیر اشتہارات کے، بچے سے کچھ بھی جمع کیے بغیر، اور والدین کے لیے قابل اعتماد ایک بار انلاک کے ساتھ سکھانا چاہیے۔ اسی لیے Lumi Letters بنایا گیا۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumiletters"
           },
@@ -1207,7 +1207,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumiletterspro",
         "url": "https://apps.apple.com/pk/app/id6778491147?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "Lumi Letters Pro",
-        "description": "کنڈرگارٹن کی تیاری کرنے والی فیملیز کو مکمل ابتدائی ریڈنگ راستہ چاہیے جو حرف کی آوازوں، ٹریسنگ اور لفظ سازی کو جوڑے بجائے کہ الگ الگ الفابیٹ گیمز — Lumi Letters Pro اسی مقصد کے لیے بنایا گیا ہے۔",
+        "description": "کنڈرگارٹن کی تیاری کرنے والی فیملیز کو مکمل ابتدائی ریڈنگ راستہ چاہیے جو حرف کی آوازوں، ٹریسنگ اور لفظ سازی کو جوڑے بجائے کہ الگ الگ الفابیٹ گیمز۔ یہی خلا Lumi Letters Pro پُر کرنا چاہتا ہے۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1237,7 +1237,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778491147",
           "inLanguage": "ur-PK",
-          "description": "کنڈرگارٹن کی تیاری کرنے والی فیملیز کو مکمل ابتدائی ریڈنگ راستہ چاہیے جو حرف کی آوازوں، ٹریسنگ اور لفظ سازی کو جوڑے بجائے کہ الگ الگ الفابیٹ گیمز — Lumi Letters Pro اسی مقصد کے لیے بنایا گیا ہے۔",
+          "description": "کنڈرگارٹن کی تیاری کرنے والی فیملیز کو مکمل ابتدائی ریڈنگ راستہ چاہیے جو حرف کی آوازوں، ٹریسنگ اور لفظ سازی کو جوڑے بجائے کہ الگ الگ الفابیٹ گیمز۔ یہی خلا Lumi Letters Pro پُر کرنا چاہتا ہے۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumiletterspro"
           },
@@ -1273,7 +1273,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumimath",
         "url": "https://apps.apple.com/pk/app/id6778269699?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "Lumi Math Planet",
-        "description": "بچوں کے لیے بہترین ریاضی کی ایپ استدلال کی تربیت دیتی ہے — پیٹرنز، سلسلے، مکانی سوچ — صرف حساب کتاب کی مشق نہیں، اور یہ اسے ایک گیم میں چھپاتی ہے جو بچہ کھیلنا چاہتا ہے — Lumi Math Planet اس کے لیے بنایا گیا ہے۔",
+        "description": "بچوں کے لیے بہترین ریاضی کی ایپ استدلال کی تربیت دیتی ہے — پیٹرنز، سلسلے، مکانی سوچ — صرف حساب کتاب کی مشق نہیں، اور یہ اسے ایک گیم میں چھپاتی ہے جو بچہ کھیلنا چاہتا ہے۔ اسی لیے Lumi Math Planet بنایا گیا۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1303,7 +1303,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778269699",
           "inLanguage": "ur-PK",
-          "description": "بچوں کے لیے بہترین ریاضی کی ایپ استدلال کی تربیت دیتی ہے — پیٹرنز، سلسلے، مکانی سوچ — صرف حساب کتاب کی مشق نہیں، اور یہ اسے ایک گیم میں چھپاتی ہے جو بچہ کھیلنا چاہتا ہے — Lumi Math Planet اس کے لیے بنایا گیا ہے۔",
+          "description": "بچوں کے لیے بہترین ریاضی کی ایپ استدلال کی تربیت دیتی ہے — پیٹرنز، سلسلے، مکانی سوچ — صرف حساب کتاب کی مشق نہیں، اور یہ اسے ایک گیم میں چھپاتی ہے جو بچہ کھیلنا چاہتا ہے۔ اسی لیے Lumi Math Planet بنایا گیا۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumimath"
           },
@@ -1339,7 +1339,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumimathpro",
         "url": "https://apps.apple.com/pk/app/id6776958488?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "Lumi Math Pro",
-        "description": "ایک مکمل ابتدائی میتھ ایپ کو گنتی، نمبر سینس اور ابتدائی آپریشنز کو ایک جڑے ہوئے ایڈونچر کی طرح بنانا چاہیے بجائے کہ الگ الگ مشقیں — Lumi Math Pro اسی مقصد کے لیے بنایا گیا ہے۔",
+        "description": "ایک مکمل ابتدائی میتھ ایپ کو گنتی، نمبر سینس اور ابتدائی آپریشنز کو ایک جڑے ہوئے ایڈونچر کی طرح بنانا چاہیے بجائے کہ الگ الگ مشقیں۔ اسی لیے Lumi Math Pro بنایا گیا۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1369,7 +1369,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6776958488",
           "inLanguage": "ur-PK",
-          "description": "ایک مکمل ابتدائی میتھ ایپ کو گنتی، نمبر سینس اور ابتدائی آپریشنز کو ایک جڑے ہوئے ایڈونچر کی طرح بنانا چاہیے بجائے کہ الگ الگ مشقیں — Lumi Math Pro اسی مقصد کے لیے بنایا گیا ہے۔",
+          "description": "ایک مکمل ابتدائی میتھ ایپ کو گنتی، نمبر سینس اور ابتدائی آپریشنز کو ایک جڑے ہوئے ایڈونچر کی طرح بنانا چاہیے بجائے کہ الگ الگ مشقیں۔ اسی لیے Lumi Math Pro بنایا گیا۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumimathpro"
           },
@@ -1405,7 +1405,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumimission",
         "url": "https://apps.apple.com/pk/app/id6779750237?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "Lumi Mission Planet",
-        "description": "پری اسکول بچے کے لیے سونے کی روٹین اس وقت بہتر کام کرتی ہے جب وہ مختصر، بصری اور اتنی پیش گوئی کے قابل ہو کہ بچہ بغیر کسی اضافی یاد دہانی کے اس پر عمل کر سکے — Lumi Mission Planet اسی مقصد کے لیے تیار کی گئی ہے۔",
+        "description": "پری اسکول بچے کے لیے سونے کی روٹین اس وقت بہتر کام کرتی ہے جب وہ مختصر، بصری اور اتنی پیش گوئی کے قابل ہو کہ بچہ بغیر کسی اضافی یاد دہانی کے اس پر عمل کر سکے۔ اگر بات جانی پہچانی لگے تو Lumi Mission Planet پر ایک نظر ڈالیں۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1435,7 +1435,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779750237",
           "inLanguage": "ur-PK",
-          "description": "پری اسکول بچے کے لیے سونے کی روٹین اس وقت بہتر کام کرتی ہے جب وہ مختصر، بصری اور اتنی پیش گوئی کے قابل ہو کہ بچہ بغیر کسی اضافی یاد دہانی کے اس پر عمل کر سکے — Lumi Mission Planet اسی مقصد کے لیے تیار کی گئی ہے۔",
+          "description": "پری اسکول بچے کے لیے سونے کی روٹین اس وقت بہتر کام کرتی ہے جب وہ مختصر، بصری اور اتنی پیش گوئی کے قابل ہو کہ بچہ بغیر کسی اضافی یاد دہانی کے اس پر عمل کر سکے۔ اگر بات جانی پہچانی لگے تو Lumi Mission Planet پر ایک نظر ڈالیں۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumimission"
           },
@@ -1537,7 +1537,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-tripplanet",
         "url": "https://apps.apple.com/pk/app/id6787193643?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "Lumi Trip Planet",
-        "description": "چھوٹے بچوں کے ساتھ سفر کرنے والے والدین کو ایسی سرگرمیاں چاہیے جو پیکنگ، انتظار اور نئی جگہ کی دریافت کو ایڈونچر کا حصہ بنا دیں بجائے کہ ایک اور وجہ بن جائے اسٹریس کی — Lumi Trip Planet اسی مقصد کے لیے بنایا گیا ہے۔",
+        "description": "چھوٹے بچوں کے ساتھ سفر کرنے والے والدین کو ایسی سرگرمیاں چاہیے جو پیکنگ، انتظار اور نئی جگہ کی دریافت کو ایڈونچر کا حصہ بنا دیں بجائے کہ ایک اور وجہ بن جائے اسٹریس کی۔ اسی لیے Lumi Trip Planet بنایا گیا۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1567,7 +1567,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787193643",
           "inLanguage": "ur-PK",
-          "description": "چھوٹے بچوں کے ساتھ سفر کرنے والے والدین کو ایسی سرگرمیاں چاہیے جو پیکنگ، انتظار اور نئی جگہ کی دریافت کو ایڈونچر کا حصہ بنا دیں بجائے کہ ایک اور وجہ بن جائے اسٹریس کی — Lumi Trip Planet اسی مقصد کے لیے بنایا گیا ہے۔",
+          "description": "چھوٹے بچوں کے ساتھ سفر کرنے والے والدین کو ایسی سرگرمیاں چاہیے جو پیکنگ، انتظار اور نئی جگہ کی دریافت کو ایڈونچر کا حصہ بنا دیں بجائے کہ ایک اور وجہ بن جائے اسٹریس کی۔ اسی لیے Lumi Trip Planet بنایا گیا۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-tripplanet"
           },
@@ -1603,7 +1603,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/pk/app/id6779552704?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "Lumi Weather",
-        "description": "والدین کو آؤٹ ڈور وقت پلان کرتے ہوئے صرف درجہ حرارت سے زیادہ چاہیے: انہیں جلدی، عمر کے مطابق یہ دیکھنا ہوتا ہے کہ حالات بچے کے لیے مناسب ہیں یا نہیں اور کون سے کپڑے مناسب ہیں — Lumi Weather اسی مقصد کے لیے بنایا گیا ہے۔",
+        "description": "والدین کو آؤٹ ڈور وقت پلان کرتے ہوئے صرف درجہ حرارت سے زیادہ چاہیے: انہیں جلدی، عمر کے مطابق یہ دیکھنا ہوتا ہے کہ حالات بچے کے لیے مناسب ہیں یا نہیں اور کون سے کپڑے مناسب ہیں۔ اسی لیے Lumi Weather بنایا گیا۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1633,7 +1633,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "ur-PK",
-          "description": "والدین کو آؤٹ ڈور وقت پلان کرتے ہوئے صرف درجہ حرارت سے زیادہ چاہیے: انہیں جلدی، عمر کے مطابق یہ دیکھنا ہوتا ہے کہ حالات بچے کے لیے مناسب ہیں یا نہیں اور کون سے کپڑے مناسب ہیں — Lumi Weather اسی مقصد کے لیے بنایا گیا ہے۔",
+          "description": "والدین کو آؤٹ ڈور وقت پلان کرتے ہوئے صرف درجہ حرارت سے زیادہ چاہیے: انہیں جلدی، عمر کے مطابق یہ دیکھنا ہوتا ہے کہ حالات بچے کے لیے مناسب ہیں یا نہیں اور کون سے کپڑے مناسب ہیں۔ اسی لیے Lumi Weather بنایا گیا۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumiweather"
           },
@@ -1735,7 +1735,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-mochi",
         "url": "https://apps.apple.com/pk/app/id6785004775?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "Mochi",
-        "description": "اگر زیادہ تر ٹو ڈو ایپس بھاری محسوس ہوتی ہیں، تو صحیح ایپ ایک صاف چیک لسٹ ہے جس میں یاد دہانیاں، دہرائی کے اصول اور واچ کمپلیکیشن ہے — اور جان بوجھ کر کوئی پروجیکٹ مینجمنٹ کا نظام نہیں — Mochi اس کے لیے بنایا گیا ہے۔",
+        "description": "اگر زیادہ تر ٹو ڈو ایپس بھاری محسوس ہوتی ہیں، تو صحیح ایپ ایک صاف چیک لسٹ ہے جس میں یاد دہانیاں، دہرائی کے اصول اور واچ کمپلیکیشن ہے — اور جان بوجھ کر کوئی پروجیکٹ مینجمنٹ کا نظام نہیں۔ اسی لیے Mochi بنایا گیا۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1765,7 +1765,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "ur-PK",
-          "description": "اگر زیادہ تر ٹو ڈو ایپس بھاری محسوس ہوتی ہیں، تو صحیح ایپ ایک صاف چیک لسٹ ہے جس میں یاد دہانیاں، دہرائی کے اصول اور واچ کمپلیکیشن ہے — اور جان بوجھ کر کوئی پروجیکٹ مینجمنٹ کا نظام نہیں — Mochi اس کے لیے بنایا گیا ہے۔",
+          "description": "اگر زیادہ تر ٹو ڈو ایپس بھاری محسوس ہوتی ہیں، تو صحیح ایپ ایک صاف چیک لسٹ ہے جس میں یاد دہانیاں، دہرائی کے اصول اور واچ کمپلیکیشن ہے — اور جان بوجھ کر کوئی پروجیکٹ مینجمنٹ کا نظام نہیں۔ اسی لیے Mochi بنایا گیا۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-mochi"
           },
@@ -1999,7 +1999,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-photocream",
         "url": "https://apps.apple.com/pk/app/id6781808054?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "PhotoCream",
-        "description": "سفر کرنے والے کریئیٹرز کو ایک ایسا فلم لک چاہیے جو گرین، ہیلیشن اور کلر کیریکٹر شامل کرے بغیر ہر منزل کو ایک جیسے فلیٹ فلٹر میں نہ بدل دے — PhotoCream اسی مقصد کے لیے بنایا گیا ہے۔",
+        "description": "سفر کرنے والے کریئیٹرز کو ایک ایسا فلم لک چاہیے جو گرین، ہیلیشن اور کلر کیریکٹر شامل کرے بغیر ہر منزل کو ایک جیسے فلیٹ فلٹر میں نہ بدل دے",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2029,7 +2029,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6781808054",
           "inLanguage": "ur-PK",
-          "description": "سفر کرنے والے کریئیٹرز کو ایک ایسا فلم لک چاہیے جو گرین، ہیلیشن اور کلر کیریکٹر شامل کرے بغیر ہر منزل کو ایک جیسے فلیٹ فلٹر میں نہ بدل دے — PhotoCream اسی مقصد کے لیے بنایا گیا ہے۔",
+          "description": "سفر کرنے والے کریئیٹرز کو ایک ایسا فلم لک چاہیے جو گرین، ہیلیشن اور کلر کیریکٹر شامل کرے بغیر ہر منزل کو ایک جیسے فلیٹ فلٹر میں نہ بدل دے",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-photocream"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-picclear",
         "url": "https://apps.apple.com/pk/app/id6780223070?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "PicClear",
-        "description": "جلدی جگہ خالی کرنے کے لیے سب سے بڑے فائدے پہلے ہدف بنائیں: بالکل نقل شدہ تصاویر، قریب قریب ایک جیسی برسٹ شاٹس، دھندلی تصاویر، اور بڑے ویڈیوز — PicClear آپ کے iPhone پر مدد کرتا ہے۔",
+        "description": "جلدی جگہ خالی کرنے کے لیے سب سے بڑے فائدے پہلے ہدف بنائیں: بالکل نقل شدہ تصاویر، قریب قریب ایک جیسی برسٹ شاٹس، دھندلی تصاویر، اور بڑے ویڈیوز",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780223070",
           "inLanguage": "ur-PK",
-          "description": "جلدی جگہ خالی کرنے کے لیے سب سے بڑے فائدے پہلے ہدف بنائیں: بالکل نقل شدہ تصاویر، قریب قریب ایک جیسی برسٹ شاٹس، دھندلی تصاویر، اور بڑے ویڈیوز — PicClear آپ کے iPhone پر مدد کرتا ہے۔",
+          "description": "جلدی جگہ خالی کرنے کے لیے سب سے بڑے فائدے پہلے ہدف بنائیں: بالکل نقل شدہ تصاویر، قریب قریب ایک جیسی برسٹ شاٹس، دھندلی تصاویر، اور بڑے ویڈیوز",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-picclear"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-scanto",
         "url": "https://apps.apple.com/pk/app/id6779977651?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "ScanTo Pro",
-        "description": "اگر آپ مریض کی رضامندی کے فارم، ڈسچارج کاغذات یا ریفرلز اسکین کرتے ہیں، تو اسکینر کو یہ کاغذات ڈیوائس پر رکھنا چاہیے — کبھی کسی اور کے کلاؤڈ پر اپ لوڈ نہیں — ScanTo Pro اس کے لیے بنایا گیا ہے۔",
+        "description": "اگر آپ مریض کی رضامندی کے فارم، ڈسچارج کاغذات یا ریفرلز اسکین کرتے ہیں، تو اسکینر کو یہ کاغذات ڈیوائس پر رکھنا چاہیے — کبھی کسی اور کے کلاؤڈ پر اپ لوڈ نہیں۔ ScanTo Pro کی شروعات بالکل اسی مسئلے سے ہوئی۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779977651",
           "inLanguage": "ur-PK",
-          "description": "اگر آپ مریض کی رضامندی کے فارم، ڈسچارج کاغذات یا ریفرلز اسکین کرتے ہیں، تو اسکینر کو یہ کاغذات ڈیوائس پر رکھنا چاہیے — کبھی کسی اور کے کلاؤڈ پر اپ لوڈ نہیں — ScanTo Pro اس کے لیے بنایا گیا ہے۔",
+          "description": "اگر آپ مریض کی رضامندی کے فارم، ڈسچارج کاغذات یا ریفرلز اسکین کرتے ہیں، تو اسکینر کو یہ کاغذات ڈیوائس پر رکھنا چاہیے — کبھی کسی اور کے کلاؤڈ پر اپ لوڈ نہیں۔ ScanTo Pro کی شروعات بالکل اسی مسئلے سے ہوئی۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-scanto"
           },
@@ -2263,7 +2263,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-sereno",
         "url": "https://apps.apple.com/pk/app/id6788236641?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "Sereno",
-        "description": "نیند کے لیے، ہر ماہ پریشان کرنے والا سبسکرپشن آرام کے بالکل برعکس ہے — Sereno اسی کے لیے بنایا گیا ہے۔",
+        "description": "نیند کے لیے، ہر ماہ پریشان کرنے والا سبسکرپشن آرام کے بالکل برعکس ہے۔ اگر بات جانی پہچانی لگے تو Sereno پر ایک نظر ڈالیں۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2293,7 +2293,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6788236641",
           "inLanguage": "ur-PK",
-          "description": "نیند کے لیے، ہر ماہ پریشان کرنے والا سبسکرپشن آرام کے بالکل برعکس ہے — Sereno اسی کے لیے بنایا گیا ہے۔",
+          "description": "نیند کے لیے، ہر ماہ پریشان کرنے والا سبسکرپشن آرام کے بالکل برعکس ہے۔ اگر بات جانی پہچانی لگے تو Sereno پر ایک نظر ڈالیں۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-sereno"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-snapport",
         "url": "https://apps.apple.com/pk/app/id6780575828?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "Snapport",
-        "description": "بچے کے پاسپورٹ فوٹو میں کوئی دوسرا شخص تصویر میں نہیں ہونا چاہیے اور پس منظر سادہ ہونا چاہیے — لیکن شیر خوار بچوں کے لیے آنکھیں مکمل طور پر کھلی ہونا ضروری نہیں۔",
+        "description": "بچے کے پاسپورٹ فوٹو میں کوئی دوسرا شخص تصویر میں نہیں ہونا چاہیے اور پس منظر سادہ ہونا چاہیے۔ Snapport کی شروعات بالکل اسی مسئلے سے ہوئی۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780575828",
           "inLanguage": "ur-PK",
-          "description": "بچے کے پاسپورٹ فوٹو میں کوئی دوسرا شخص تصویر میں نہیں ہونا چاہیے اور پس منظر سادہ ہونا چاہیے — لیکن شیر خوار بچوں کے لیے آنکھیں مکمل طور پر کھلی ہونا ضروری نہیں۔",
+          "description": "بچے کے پاسپورٹ فوٹو میں کوئی دوسرا شخص تصویر میں نہیں ہونا چاہیے اور پس منظر سادہ ہونا چاہیے۔ Snapport کی شروعات بالکل اسی مسئلے سے ہوئی۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-snapport"
           },
@@ -2527,7 +2527,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-sononote",
         "url": "https://apps.apple.com/pk/app/id6782139553?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "Sono Note",
-        "description": "کال کے بعد آپ کو خام تحریر نہیں چاہیے — آپ کو خلاصہ، ایکشن آئٹمز اور فالو اپ کا مسودہ چاہیے — Sono Note اسی کے لیے بنایا گیا ہے۔",
+        "description": "کال کے بعد آپ کو خام تحریر نہیں چاہیے — آپ کو خلاصہ، ایکشن آئٹمز اور فالو اپ کا مسودہ چاہیے۔ یہی خلا Sono Note پُر کرنا چاہتا ہے۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2557,7 +2557,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "ur-PK",
-          "description": "کال کے بعد آپ کو خام تحریر نہیں چاہیے — آپ کو خلاصہ، ایکشن آئٹمز اور فالو اپ کا مسودہ چاہیے — Sono Note اسی کے لیے بنایا گیا ہے۔",
+          "description": "کال کے بعد آپ کو خام تحریر نہیں چاہیے — آپ کو خلاصہ، ایکشن آئٹمز اور فالو اپ کا مسودہ چاہیے۔ یہی خلا Sono Note پُر کرنا چاہتا ہے۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-sononote"
           },
@@ -2593,7 +2593,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-tripbeelite",
         "url": "https://apps.apple.com/pk/app/id6791299610?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "TripBee Lite",
-        "description": "اگر آپ ایک آنے والے سفر کی منصوبہ بندی کر رہے ہیں تو اس سفر کے لیے ایک پرسکون ٹائم لائن ہر ممکنہ سفر کے بھرے ہوئے آرکائیو سے زیادہ مفید ہے — TripBee Lite اسی کے لیے بنایا گیا ہے۔",
+        "description": "اگر آپ ایک آنے والے سفر کی منصوبہ بندی کر رہے ہیں تو اس سفر کے لیے ایک پرسکون ٹائم لائن ہر ممکنہ سفر کے بھرے ہوئے آرکائیو سے زیادہ مفید ہے۔ اگر بات جانی پہچانی لگے تو TripBee Lite پر ایک نظر ڈالیں۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2623,7 +2623,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791299610",
           "inLanguage": "ur-PK",
-          "description": "اگر آپ ایک آنے والے سفر کی منصوبہ بندی کر رہے ہیں تو اس سفر کے لیے ایک پرسکون ٹائم لائن ہر ممکنہ سفر کے بھرے ہوئے آرکائیو سے زیادہ مفید ہے — TripBee Lite اسی کے لیے بنایا گیا ہے۔",
+          "description": "اگر آپ ایک آنے والے سفر کی منصوبہ بندی کر رہے ہیں تو اس سفر کے لیے ایک پرسکون ٹائم لائن ہر ممکنہ سفر کے بھرے ہوئے آرکائیو سے زیادہ مفید ہے۔ اگر بات جانی پہچانی لگے تو TripBee Lite پر ایک نظر ڈالیں۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-tripbeelite"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/pk/app/id6787754435?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "TripBee Pro: سفر کا منصوبہ ساز",
-        "description": "ایک اچھی آئیٹینری ایپ ایک الجھی ہوئی سفر کو واضح روزانہ کی ٹائم لائن میں بدل دیتی ہے — پروازیں، ہوٹلز، سرگرمیاں، ریستوران اور ٹرانسپورٹ — واضح قسم کے آئیکنز کے ساتھ تاکہ آپ ایک نظر میں اپنا دن پڑھ سکیں — TripBee Pro: Trip Planner اسی کے لیے بنایا گیا ہے۔",
+        "description": "ایک اچھی آئیٹینری ایپ ایک الجھی ہوئی سفر کو واضح روزانہ کی ٹائم لائن میں بدل دیتی ہے — پروازیں، ہوٹلز، سرگرمیاں، ریستوران اور ٹرانسپورٹ — واضح قسم کے آئیکنز کے ساتھ تاکہ آپ ایک نظر میں اپنا دن پڑھ سکیں۔ اگر بات جانی پہچانی لگے تو TripBee Pro: سفر کا منصوبہ ساز پر ایک نظر ڈالیں۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "ur-PK",
-          "description": "ایک اچھی آئیٹینری ایپ ایک الجھی ہوئی سفر کو واضح روزانہ کی ٹائم لائن میں بدل دیتی ہے — پروازیں، ہوٹلز، سرگرمیاں، ریستوران اور ٹرانسپورٹ — واضح قسم کے آئیکنز کے ساتھ تاکہ آپ ایک نظر میں اپنا دن پڑھ سکیں — TripBee Pro: Trip Planner اسی کے لیے بنایا گیا ہے۔",
+          "description": "ایک اچھی آئیٹینری ایپ ایک الجھی ہوئی سفر کو واضح روزانہ کی ٹائم لائن میں بدل دیتی ہے — پروازیں، ہوٹلز، سرگرمیاں، ریستوران اور ٹرانسپورٹ — واضح قسم کے آئیکنز کے ساتھ تاکہ آپ ایک نظر میں اپنا دن پڑھ سکیں۔ اگر بات جانی پہچانی لگے تو TripBee Pro: سفر کا منصوبہ ساز پر ایک نظر ڈالیں۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-tripbee"
           },
@@ -2725,7 +2725,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-unblurry",
         "url": "https://apps.apple.com/pk/app/id6782275018?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "Unblurry",
-        "description": "بچے کبھی بھی آرام سے نہیں بیٹھتے، اس لیے نرم فوکس اور کیمرہ ہلچل والی تصاویر ناگزیر ہیں — Unblurry اسی کے لیے بنایا گیا ہے۔",
+        "description": "بچے کبھی بھی آرام سے نہیں بیٹھتے، اس لیے نرم فوکس اور کیمرہ ہلچل والی تصاویر ناگزیر ہیں",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782275018",
           "inLanguage": "ur-PK",
-          "description": "بچے کبھی بھی آرام سے نہیں بیٹھتے، اس لیے نرم فوکس اور کیمرہ ہلچل والی تصاویر ناگزیر ہیں — Unblurry اسی کے لیے بنایا گیا ہے۔",
+          "description": "بچے کبھی بھی آرام سے نہیں بیٹھتے، اس لیے نرم فوکس اور کیمرہ ہلچل والی تصاویر ناگزیر ہیں",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-unblurry"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-wordmate",
         "url": "https://apps.apple.com/pk/app/id6789917808?pt=118326163&ct=iag_data_ur_pk&mt=8",
         "name": "Wordmate: Learn 44 Languages",
-        "description": "مصروف سفر کرنے والوں کو وکیبلری پریکٹس چاہیے جو فارغ لمحات میں فٹ ہو جائے بغیر مکمل سبق، نئے اکاؤنٹ یا ہر ریویو کے لیے فون کی ضرورت کے — Wordmate: Learn 44 Languages اسی مقصد کے لیے بنایا گیا ہے۔",
+        "description": "مصروف سفر کرنے والوں کو وکیبلری پریکٹس چاہیے جو فارغ لمحات میں فٹ ہو جائے بغیر مکمل سبق، نئے اکاؤنٹ یا ہر ریویو کے لیے فون کی ضرورت کے۔ Wordmate: Learn 44 Languages کی شروعات بالکل اسی مسئلے سے ہوئی۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6789917808",
           "inLanguage": "ur-PK",
-          "description": "مصروف سفر کرنے والوں کو وکیبلری پریکٹس چاہیے جو فارغ لمحات میں فٹ ہو جائے بغیر مکمل سبق، نئے اکاؤنٹ یا ہر ریویو کے لیے فون کی ضرورت کے — Wordmate: Learn 44 Languages اسی مقصد کے لیے بنایا گیا ہے۔",
+          "description": "مصروف سفر کرنے والوں کو وکیبلری پریکٹس چاہیے جو فارغ لمحات میں فٹ ہو جائے بغیر مکمل سبق، نئے اکاؤنٹ یا ہر ریویو کے لیے فون کی ضرورت کے۔ Wordmate: Learn 44 Languages کی شروعات بالکل اسی مسئلے سے ہوئی۔",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-wordmate"
           },

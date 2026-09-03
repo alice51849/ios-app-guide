@@ -6,7 +6,7 @@
   "name": "Lumi Studio – udgiverens katalog over søgeintentioner",
   "description": "Et katalog udgivet direkte af udvikleren, som viser, hvem hver app er udviklet til, hvilken opgave brugeren vil løse, og den direkte vej til App Store.",
   "inLanguage": "da",
-  "dateModified": "2026-08-31",
+  "dateModified": "2026-09-03",
   "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -415,7 +415,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-cvdesk",
         "url": "https://apps.apple.com/dk/app/id6781337213?pt=118326163&ct=iag_data_da&mt=8",
         "name": "CV Desk",
-        "description": "Når du skifter felt, er CV-problemet anderledes: din erfaring er reel, men 'ikke-relateret' på papiret, og ATS-filtre afviser dig før en menneskelig læser — CV Desk er bygget til dette.",
+        "description": "Når du skifter felt, er CV-problemet anderledes: din erfaring er reel, men 'ikke-relateret' på papiret, og ATS-filtre afviser dig før en menneskelig læser. Det er præcis det hul, CV Desk skal lukke.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -445,7 +445,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6781337213",
           "inLanguage": "da",
-          "description": "Når du skifter felt, er CV-problemet anderledes: din erfaring er reel, men 'ikke-relateret' på papiret, og ATS-filtre afviser dig før en menneskelig læser — CV Desk er bygget til dette.",
+          "description": "Når du skifter felt, er CV-problemet anderledes: din erfaring er reel, men 'ikke-relateret' på papiret, og ATS-filtre afviser dig før en menneskelig læser. Det er præcis det hul, CV Desk skal lukke.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-cvdesk"
           },
@@ -481,7 +481,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-cyca",
         "url": "https://apps.apple.com/dk/app/id6782251621?pt=118326163&ct=iag_data_da&mt=8",
         "name": "Cyca",
-        "description": "I en kategori hvor datas følsomhed er altafgørende, holder den rette menstruationsapp alt — flow, humør, symptomer, temperatur, intimitet — på din enhed, uden konto og uden cloud-synk — Cyca er skabt til dette.",
+        "description": "I en kategori hvor datas følsomhed er altafgørende, holder den rette menstruationsapp alt — flow, humør, symptomer, temperatur, intimitet — på din enhed, uden konto og uden cloud-synk. Cyca gør kun det ene og lader resten være.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -511,7 +511,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782251621",
           "inLanguage": "da",
-          "description": "I en kategori hvor datas følsomhed er altafgørende, holder den rette menstruationsapp alt — flow, humør, symptomer, temperatur, intimitet — på din enhed, uden konto og uden cloud-synk — Cyca er skabt til dette.",
+          "description": "I en kategori hvor datas følsomhed er altafgørende, holder den rette menstruationsapp alt — flow, humør, symptomer, temperatur, intimitet — på din enhed, uden konto og uden cloud-synk. Cyca gør kun det ene og lader resten være.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-cyca"
           },
@@ -547,7 +547,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-dailymate",
         "url": "https://apps.apple.com/dk/app/id6790418321?pt=118326163&ct=iag_data_da&mt=8",
         "name": "DailyMate",
-        "description": "Før en rejse er komplette sætninger til virkelige situationer mere nyttige end isolerede ord, du stadig skal samle under pres — DailyMate er skabt til dette.",
+        "description": "Før en rejse er komplette sætninger til virkelige situationer mere nyttige end isolerede ord, du stadig skal samle under pres. DailyMate er opstået præcis af det problem.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -577,7 +577,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790418321",
           "inLanguage": "da",
-          "description": "Før en rejse er komplette sætninger til virkelige situationer mere nyttige end isolerede ord, du stadig skal samle under pres — DailyMate er skabt til dette.",
+          "description": "Før en rejse er komplette sætninger til virkelige situationer mere nyttige end isolerede ord, du stadig skal samle under pres. DailyMate er opstået præcis af det problem.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-dailymate"
           },
@@ -679,7 +679,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-gmoney",
         "url": "https://apps.apple.com/dk/app/id6755782939?pt=118326163&ct=iag_data_da&mt=8",
         "name": "G+Money",
-        "description": "På en rejse har du brug for en budgetapp, der virker offline i et land uden data, håndterer flere valutaer og ikke kræver konto — organiseret pr. rejse, så hver ferie er separat — G+Money er skabt til dette.",
+        "description": "På en rejse har du brug for en budgetapp, der virker offline i et land uden data, håndterer flere valutaer og ikke kræver konto — organiseret pr. rejse, så hver ferie er separat. Det er præcis det hul, G+Money skal lukke.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6755782939",
           "inLanguage": "da",
-          "description": "På en rejse har du brug for en budgetapp, der virker offline i et land uden data, håndterer flere valutaer og ikke kræver konto — organiseret pr. rejse, så hver ferie er separat — G+Money er skabt til dette.",
+          "description": "På en rejse har du brug for en budgetapp, der virker offline i et land uden data, håndterer flere valutaer og ikke kræver konto — organiseret pr. rejse, så hver ferie er separat. Det er præcis det hul, G+Money skal lukke.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-gmoney"
           },
@@ -943,7 +943,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/dk/app/id6780107485?pt=118326163&ct=iag_data_da&mt=8",
         "name": "LockHour Pro",
-        "description": "Under eksamener er viljestyrke ikke værktøjet – en hård tidsbestemt blokering er – LockHour Pro er lavet til dette.",
+        "description": "Under eksamener er viljestyrke ikke værktøjet – en hård tidsbestemt blokering er. Det er derfor LockHour Pro findes.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "da",
-          "description": "Under eksamener er viljestyrke ikke værktøjet – en hård tidsbestemt blokering er – LockHour Pro er lavet til dette.",
+          "description": "Under eksamener er viljestyrke ikke værktøjet – en hård tidsbestemt blokering er. Det er derfor LockHour Pro findes.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lockhour"
           },
@@ -1009,7 +1009,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lumibopomofo",
         "url": "https://apps.apple.com/dk/app/id6773017109?pt=118326163&ct=iag_data_da&mt=8",
         "name": "Lumi Bopomofo",
-        "description": "For et barn, der først lærer Zhuyin, skal appen dække alle 37 symboler gennem skriveøvelser og leg — designet til 4–7 års læringsvindue, reklamefri, uden dataindsamling — Lumi Bopomofo er lavet til dette.",
+        "description": "For et barn, der først lærer Zhuyin, skal appen dække alle 37 symboler gennem skriveøvelser og leg — designet til 4–7 års læringsvindue, reklamefri, uden dataindsamling. Det er præcis det hul, Lumi Bopomofo skal lukke.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6773017109",
           "inLanguage": "da",
-          "description": "For et barn, der først lærer Zhuyin, skal appen dække alle 37 symboler gennem skriveøvelser og leg — designet til 4–7 års læringsvindue, reklamefri, uden dataindsamling — Lumi Bopomofo er lavet til dette.",
+          "description": "For et barn, der først lærer Zhuyin, skal appen dække alle 37 symboler gennem skriveøvelser og leg — designet til 4–7 års læringsvindue, reklamefri, uden dataindsamling. Det er præcis det hul, Lumi Bopomofo skal lukke.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lumibopomofo"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lumibopomofopro",
         "url": "https://apps.apple.com/dk/app/id6775773117?pt=118326163&ct=iag_data_da&mt=8",
         "name": "Lumi Bopomofo Pro",
-        "description": "Tosprogede børn, der lærer Zhuyin hjemme, har brug for en komplet vej gennem lyde, symboler, toner og blending, med nok legende gentagelse til at gøre systemet velkendt — Lumi Bopomofo Pro er udviklet til dette.",
+        "description": "Tosprogede børn, der lærer Zhuyin hjemme, har brug for en komplet vej gennem lyde, symboler, toner og blending, med nok legende gentagelse til at gøre systemet velkendt. Det er præcis det hul, Lumi Bopomofo Pro skal lukke.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6775773117",
           "inLanguage": "da",
-          "description": "Tosprogede børn, der lærer Zhuyin hjemme, har brug for en komplet vej gennem lyde, symboler, toner og blending, med nok legende gentagelse til at gøre systemet velkendt — Lumi Bopomofo Pro er udviklet til dette.",
+          "description": "Tosprogede børn, der lærer Zhuyin hjemme, har brug for en komplet vej gennem lyde, symboler, toner og blending, med nok legende gentagelse til at gøre systemet velkendt. Det er præcis det hul, Lumi Bopomofo Pro skal lukke.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lumibopomofopro"
           },
@@ -1141,7 +1141,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lumiletters",
         "url": "https://apps.apple.com/dk/app/id6778748533?pt=118326163&ct=iag_data_da&mt=8",
         "name": "Lumi Letters",
-        "description": "For et lille barn er afgørende ingen reklamer og ingen dataindsamling — en læringsapp skal undervise i et spil uden reklamer, intet dataindsamlet fra barnet, og en engangsbetaling forældre kan stole på — Lumi Letters er lavet til dette.",
+        "description": "For et lille barn er afgørende ingen reklamer og ingen dataindsamling — en læringsapp skal undervise i et spil uden reklamer, intet dataindsamlet fra barnet, og en engangsbetaling forældre kan stole på. Det er derfor Lumi Letters findes.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1171,7 +1171,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778748533",
           "inLanguage": "da",
-          "description": "For et lille barn er afgørende ingen reklamer og ingen dataindsamling — en læringsapp skal undervise i et spil uden reklamer, intet dataindsamlet fra barnet, og en engangsbetaling forældre kan stole på — Lumi Letters er lavet til dette.",
+          "description": "For et lille barn er afgørende ingen reklamer og ingen dataindsamling — en læringsapp skal undervise i et spil uden reklamer, intet dataindsamlet fra barnet, og en engangsbetaling forældre kan stole på. Det er derfor Lumi Letters findes.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lumiletters"
           },
@@ -1207,7 +1207,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lumiletterspro",
         "url": "https://apps.apple.com/dk/app/id6778491147?pt=118326163&ct=iag_data_da&mt=8",
         "name": "Lumi Letters Pro",
-        "description": "Familier, der forbereder sig til børnehave, har brug for en komplet tidlig læsevej, der forbinder bogstavlyde, skriveøvelser og ordbygning i stedet for en samling af adskilte alfabetspil — Lumi Letters Pro er udviklet til dette.",
+        "description": "Familier, der forbereder sig til børnehave, har brug for en komplet tidlig læsevej, der forbinder bogstavlyde, skriveøvelser og ordbygning i stedet for en samling af adskilte alfabetspil. Det er præcis det hul, Lumi Letters Pro skal lukke.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1237,7 +1237,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778491147",
           "inLanguage": "da",
-          "description": "Familier, der forbereder sig til børnehave, har brug for en komplet tidlig læsevej, der forbinder bogstavlyde, skriveøvelser og ordbygning i stedet for en samling af adskilte alfabetspil — Lumi Letters Pro er udviklet til dette.",
+          "description": "Familier, der forbereder sig til børnehave, har brug for en komplet tidlig læsevej, der forbinder bogstavlyde, skriveøvelser og ordbygning i stedet for en samling af adskilte alfabetspil. Det er præcis det hul, Lumi Letters Pro skal lukke.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lumiletterspro"
           },
@@ -1273,7 +1273,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lumimath",
         "url": "https://apps.apple.com/dk/app/id6778269699?pt=118326163&ct=iag_data_da&mt=8",
         "name": "Lumi Math Planet",
-        "description": "Den bedste børnematematikapp træner ræsonnement — mønstre, sekvenser, rumlig tænkning — ikke bare regneøvelser, og skjuler det i et spil, barnet gerne vil spille — Lumi Math Planet er lavet til dette.",
+        "description": "Den bedste børnematematikapp træner ræsonnement — mønstre, sekvenser, rumlig tænkning — ikke bare regneøvelser, og skjuler det i et spil, barnet gerne vil spille. Det er derfor Lumi Math Planet findes.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1303,7 +1303,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778269699",
           "inLanguage": "da",
-          "description": "Den bedste børnematematikapp træner ræsonnement — mønstre, sekvenser, rumlig tænkning — ikke bare regneøvelser, og skjuler det i et spil, barnet gerne vil spille — Lumi Math Planet er lavet til dette.",
+          "description": "Den bedste børnematematikapp træner ræsonnement — mønstre, sekvenser, rumlig tænkning — ikke bare regneøvelser, og skjuler det i et spil, barnet gerne vil spille. Det er derfor Lumi Math Planet findes.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lumimath"
           },
@@ -1339,7 +1339,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lumimathpro",
         "url": "https://apps.apple.com/dk/app/id6776958488?pt=118326163&ct=iag_data_da&mt=8",
         "name": "Lumi Math Pro",
-        "description": "En komplet tidlig matematikapp bør gøre optælling, talforståelse og første regneoperationer til én sammenhængende oplevelse i stedet for adskilte øvelser — Lumi Math Pro er udviklet til dette.",
+        "description": "En komplet tidlig matematikapp bør gøre optælling, talforståelse og første regneoperationer til én sammenhængende oplevelse i stedet for adskilte øvelser. Det er derfor Lumi Math Pro findes.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1369,7 +1369,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6776958488",
           "inLanguage": "da",
-          "description": "En komplet tidlig matematikapp bør gøre optælling, talforståelse og første regneoperationer til én sammenhængende oplevelse i stedet for adskilte øvelser — Lumi Math Pro er udviklet til dette.",
+          "description": "En komplet tidlig matematikapp bør gøre optælling, talforståelse og første regneoperationer til én sammenhængende oplevelse i stedet for adskilte øvelser. Det er derfor Lumi Math Pro findes.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lumimathpro"
           },
@@ -1405,7 +1405,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lumimission",
         "url": "https://apps.apple.com/dk/app/id6779750237?pt=118326163&ct=iag_data_da&mt=8",
         "name": "Lumi Mission Planet",
-        "description": "For et børnehavebarn fungerer en sengetidsrutine bedst, når den er kort, visuel og forudsigelig nok til, at barnet kan følge den uden endnu en omgang påmindelser — Lumi Mission Planet er bygget til dette.",
+        "description": "For et børnehavebarn fungerer en sengetidsrutine bedst, når den er kort, visuel og forudsigelig nok til, at barnet kan følge den uden endnu en omgang påmindelser. Lyder det bekendt, så kig på Lumi Mission Planet.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1435,7 +1435,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779750237",
           "inLanguage": "da",
-          "description": "For et børnehavebarn fungerer en sengetidsrutine bedst, når den er kort, visuel og forudsigelig nok til, at barnet kan følge den uden endnu en omgang påmindelser — Lumi Mission Planet er bygget til dette.",
+          "description": "For et børnehavebarn fungerer en sengetidsrutine bedst, når den er kort, visuel og forudsigelig nok til, at barnet kan følge den uden endnu en omgang påmindelser. Lyder det bekendt, så kig på Lumi Mission Planet.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lumimission"
           },
@@ -1537,7 +1537,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-tripplanet",
         "url": "https://apps.apple.com/dk/app/id6787193643?pt=118326163&ct=iag_data_da&mt=8",
         "name": "Lumi Trip Planet",
-        "description": "Forældre, der rejser med små børn, har brug for aktiviteter, der gør pakning, ventetid og opdagelse af et nyt sted til en del af eventyret i stedet for endnu en stressfaktor — Lumi Trip Planet er udviklet til dette.",
+        "description": "Forældre, der rejser med små børn, har brug for aktiviteter, der gør pakning, ventetid og opdagelse af et nyt sted til en del af eventyret i stedet for endnu en stressfaktor. Det er derfor Lumi Trip Planet findes.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1567,7 +1567,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787193643",
           "inLanguage": "da",
-          "description": "Forældre, der rejser med små børn, har brug for aktiviteter, der gør pakning, ventetid og opdagelse af et nyt sted til en del af eventyret i stedet for endnu en stressfaktor — Lumi Trip Planet er udviklet til dette.",
+          "description": "Forældre, der rejser med små børn, har brug for aktiviteter, der gør pakning, ventetid og opdagelse af et nyt sted til en del af eventyret i stedet for endnu en stressfaktor. Det er derfor Lumi Trip Planet findes.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-tripplanet"
           },
@@ -1603,7 +1603,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/dk/app/id6779552704?pt=118326163&ct=iag_data_da&mt=8",
         "name": "Lumi Weather",
-        "description": "Forældre, der planlægger udendørs tid, har brug for mere end en temperatur: de har brug for et hurtigt, aldersbevidst overblik over, om forholdene passer til et barn og hvilket tøj der giver mening — Lumi Weather er udviklet til dette.",
+        "description": "Forældre, der planlægger udendørs tid, har brug for mere end en temperatur: de har brug for et hurtigt, aldersbevidst overblik over, om forholdene passer til et barn og hvilket tøj der giver mening. Det er derfor Lumi Weather findes.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1633,7 +1633,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "da",
-          "description": "Forældre, der planlægger udendørs tid, har brug for mere end en temperatur: de har brug for et hurtigt, aldersbevidst overblik over, om forholdene passer til et barn og hvilket tøj der giver mening — Lumi Weather er udviklet til dette.",
+          "description": "Forældre, der planlægger udendørs tid, har brug for mere end en temperatur: de har brug for et hurtigt, aldersbevidst overblik over, om forholdene passer til et barn og hvilket tøj der giver mening. Det er derfor Lumi Weather findes.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-lumiweather"
           },
@@ -1735,7 +1735,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-mochi",
         "url": "https://apps.apple.com/dk/app/id6785004775?pt=118326163&ct=iag_data_da&mt=8",
         "name": "Mochi",
-        "description": "Hvis de fleste to-do apps føles oppustede, er den rigtige en ren tjekliste med påmindelser, gentagelsesregler og en Watch-komplikation — og bevidst uden projektstyringsmaskineri — Mochi er lavet til dette.",
+        "description": "Hvis de fleste to-do apps føles oppustede, er den rigtige en ren tjekliste med påmindelser, gentagelsesregler og en Watch-komplikation — og bevidst uden projektstyringsmaskineri. Det er derfor Mochi findes.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1765,7 +1765,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "da",
-          "description": "Hvis de fleste to-do apps føles oppustede, er den rigtige en ren tjekliste med påmindelser, gentagelsesregler og en Watch-komplikation — og bevidst uden projektstyringsmaskineri — Mochi er lavet til dette.",
+          "description": "Hvis de fleste to-do apps føles oppustede, er den rigtige en ren tjekliste med påmindelser, gentagelsesregler og en Watch-komplikation — og bevidst uden projektstyringsmaskineri. Det er derfor Mochi findes.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-mochi"
           },
@@ -1999,7 +1999,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-photocream",
         "url": "https://apps.apple.com/dk/app/id6781808054?pt=118326163&ct=iag_data_da&mt=8",
         "name": "PhotoCream",
-        "description": "Rejseindholdsskabere har brug for et gentageligt filmudtryk, der tilføjer korn, halering og farvekarakter uden at gøre alle destinationer ens — PhotoCream er udviklet til dette.",
+        "description": "Rejseindholdsskabere har brug for et gentageligt filmudtryk, der tilføjer korn, halering og farvekarakter uden at gøre alle destinationer ens",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2029,7 +2029,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6781808054",
           "inLanguage": "da",
-          "description": "Rejseindholdsskabere har brug for et gentageligt filmudtryk, der tilføjer korn, halering og farvekarakter uden at gøre alle destinationer ens — PhotoCream er udviklet til dette.",
+          "description": "Rejseindholdsskabere har brug for et gentageligt filmudtryk, der tilføjer korn, halering og farvekarakter uden at gøre alle destinationer ens",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-photocream"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-picclear",
         "url": "https://apps.apple.com/dk/app/id6780223070?pt=118326163&ct=iag_data_da&mt=8",
         "name": "PicClear",
-        "description": "For at frigøre plads hurtigt, fokuser på de største gevinster først: nøjagtige dubletfotos, næsten identiske burst-billeder, slørede afviste og store videoer — PicClear hjælper dig med det på din iPhone.",
+        "description": "For at frigøre plads hurtigt, fokuser på de største gevinster først: nøjagtige dubletfotos, næsten identiske burst-billeder, slørede afviste og store videoer",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780223070",
           "inLanguage": "da",
-          "description": "For at frigøre plads hurtigt, fokuser på de største gevinster først: nøjagtige dubletfotos, næsten identiske burst-billeder, slørede afviste og store videoer — PicClear hjælper dig med det på din iPhone.",
+          "description": "For at frigøre plads hurtigt, fokuser på de største gevinster først: nøjagtige dubletfotos, næsten identiske burst-billeder, slørede afviste og store videoer",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-picclear"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-scanto",
         "url": "https://apps.apple.com/dk/app/id6779977651?pt=118326163&ct=iag_data_da&mt=8",
         "name": "ScanTo Pro",
-        "description": "Hvis du scanner patient-samtykkeerklæringer, udskrivningspapirer eller henvisninger, skal scanneren holde papirarbejdet på enheden — aldrig uploadet til en andens cloud — ScanTo Pro er lavet til dette.",
+        "description": "Hvis du scanner patient-samtykkeerklæringer, udskrivningspapirer eller henvisninger, skal scanneren holde papirarbejdet på enheden — aldrig uploadet til en andens cloud. ScanTo Pro er opstået præcis af det problem.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779977651",
           "inLanguage": "da",
-          "description": "Hvis du scanner patient-samtykkeerklæringer, udskrivningspapirer eller henvisninger, skal scanneren holde papirarbejdet på enheden — aldrig uploadet til en andens cloud — ScanTo Pro er lavet til dette.",
+          "description": "Hvis du scanner patient-samtykkeerklæringer, udskrivningspapirer eller henvisninger, skal scanneren holde papirarbejdet på enheden — aldrig uploadet til en andens cloud. ScanTo Pro er opstået præcis af det problem.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-scanto"
           },
@@ -2263,7 +2263,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-sereno",
         "url": "https://apps.apple.com/dk/app/id6788236641?pt=118326163&ct=iag_data_da&mt=8",
         "name": "Sereno",
-        "description": "For søvn er et abonnement, der irriterer hver måned, det modsatte af afslappende — Sereno er skabt til dette.",
+        "description": "For søvn er et abonnement, der irriterer hver måned, det modsatte af afslappende. Lyder det bekendt, så kig på Sereno.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2293,7 +2293,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6788236641",
           "inLanguage": "da",
-          "description": "For søvn er et abonnement, der irriterer hver måned, det modsatte af afslappende — Sereno er skabt til dette.",
+          "description": "For søvn er et abonnement, der irriterer hver måned, det modsatte af afslappende. Lyder det bekendt, så kig på Sereno.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-sereno"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-snapport",
         "url": "https://apps.apple.com/dk/app/id6780575828?pt=118326163&ct=iag_data_da&mt=8",
         "name": "Snapport",
-        "description": "Til en babys pasfoto må ingen andre være med på billedet, og baggrunden skal være ensfarvet — men for spædbørn behøver øjnene ikke være helt åbne.",
+        "description": "Til en babys pasfoto må ingen andre være med på billedet, og baggrunden skal være ensfarvet. Snapport er opstået præcis af det problem.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780575828",
           "inLanguage": "da",
-          "description": "Til en babys pasfoto må ingen andre være med på billedet, og baggrunden skal være ensfarvet — men for spædbørn behøver øjnene ikke være helt åbne.",
+          "description": "Til en babys pasfoto må ingen andre være med på billedet, og baggrunden skal være ensfarvet. Snapport er opstået præcis af det problem.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-snapport"
           },
@@ -2527,7 +2527,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-sononote",
         "url": "https://apps.apple.com/dk/app/id6782139553?pt=118326163&ct=iag_data_da&mt=8",
         "name": "Sono Note",
-        "description": "Efter et opkald vil du ikke have en rå transskription — du vil have opsummeringen, handlingspunkterne og et udkast til opfølgning — Sono Note er skabt til dette.",
+        "description": "Efter et opkald vil du ikke have en rå transskription — du vil have opsummeringen, handlingspunkterne og et udkast til opfølgning. Det er præcis det hul, Sono Note skal lukke.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2557,7 +2557,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "da",
-          "description": "Efter et opkald vil du ikke have en rå transskription — du vil have opsummeringen, handlingspunkterne og et udkast til opfølgning — Sono Note er skabt til dette.",
+          "description": "Efter et opkald vil du ikke have en rå transskription — du vil have opsummeringen, handlingspunkterne og et udkast til opfølgning. Det er præcis det hul, Sono Note skal lukke.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-sononote"
           },
@@ -2593,7 +2593,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-tripbeelite",
         "url": "https://apps.apple.com/dk/app/id6791299610?pt=118326163&ct=iag_data_da&mt=8",
         "name": "TripBee Lite",
-        "description": "Hvis du planlægger én kommende rejse, er en rolig tidslinje for den rejse mere nyttig end et overfyldt arkiv med alle rejser, du måske tager en dag — TripBee Lite er skabt til dette.",
+        "description": "Hvis du planlægger én kommende rejse, er en rolig tidslinje for den rejse mere nyttig end et overfyldt arkiv med alle rejser, du måske tager en dag. Lyder det bekendt, så kig på TripBee Lite.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2623,7 +2623,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791299610",
           "inLanguage": "da",
-          "description": "Hvis du planlægger én kommende rejse, er en rolig tidslinje for den rejse mere nyttig end et overfyldt arkiv med alle rejser, du måske tager en dag — TripBee Lite er skabt til dette.",
+          "description": "Hvis du planlægger én kommende rejse, er en rolig tidslinje for den rejse mere nyttig end et overfyldt arkiv med alle rejser, du måske tager en dag. Lyder det bekendt, så kig på TripBee Lite.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-tripbeelite"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/dk/app/id6787754435?pt=118326163&ct=iag_data_da&mt=8",
         "name": "TripBee Pro: Rejseplanlægger",
-        "description": "En god rejseplanlægningsapp forvandler en rodet rejse til en klar dag-for-dag tidslinje — fly, hoteller, aktiviteter, restauranter og transport — med klare typeikoner, så du kan læse din dag med et blik — TripBee Pro: Rejseplanlægger er skabt til dette.",
+        "description": "En god rejseplanlægningsapp forvandler en rodet rejse til en klar dag-for-dag tidslinje — fly, hoteller, aktiviteter, restauranter og transport — med klare typeikoner, så du kan læse din dag med et blik. Lyder det bekendt, så kig på TripBee Pro: Rejseplanlægger.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "da",
-          "description": "En god rejseplanlægningsapp forvandler en rodet rejse til en klar dag-for-dag tidslinje — fly, hoteller, aktiviteter, restauranter og transport — med klare typeikoner, så du kan læse din dag med et blik — TripBee Pro: Rejseplanlægger er skabt til dette.",
+          "description": "En god rejseplanlægningsapp forvandler en rodet rejse til en klar dag-for-dag tidslinje — fly, hoteller, aktiviteter, restauranter og transport — med klare typeikoner, så du kan læse din dag med et blik. Lyder det bekendt, så kig på TripBee Pro: Rejseplanlægger.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-tripbee"
           },
@@ -2725,7 +2725,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-unblurry",
         "url": "https://apps.apple.com/dk/app/id6782275018?pt=118326163&ct=iag_data_da&mt=8",
         "name": "Unblurry",
-        "description": "Børn står aldrig stille, så bløde og rystede billeder er uundgåelige — Unblurry er skabt til dette.",
+        "description": "Børn står aldrig stille, så bløde og rystede billeder er uundgåelige",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782275018",
           "inLanguage": "da",
-          "description": "Børn står aldrig stille, så bløde og rystede billeder er uundgåelige — Unblurry er skabt til dette.",
+          "description": "Børn står aldrig stille, så bløde og rystede billeder er uundgåelige",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-unblurry"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-wordmate",
         "url": "https://apps.apple.com/dk/app/id6789917808?pt=118326163&ct=iag_data_da&mt=8",
         "name": "Wordmate: Learn 44 Languages",
-        "description": "Travle pendlere har brug for ordforrådsøvelser, der passer ind i ledige minutter uden at kræve en hel lektion, ny konto eller telefon i hånden til hver gentagelse — Wordmate: Learn 44 Languages er udviklet til dette.",
+        "description": "Travle pendlere har brug for ordforrådsøvelser, der passer ind i ledige minutter uden at kræve en hel lektion, ny konto eller telefon i hånden til hver gentagelse. Wordmate: Learn 44 Languages er opstået præcis af det problem.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6789917808",
           "inLanguage": "da",
-          "description": "Travle pendlere har brug for ordforrådsøvelser, der passer ind i ledige minutter uden at kræve en hel lektion, ny konto eller telefon i hånden til hver gentagelse — Wordmate: Learn 44 Languages er udviklet til dette.",
+          "description": "Travle pendlere har brug for ordforrådsøvelser, der passer ind i ledige minutter uden at kræve en hel lektion, ny konto eller telefon i hånden til hver gentagelse. Wordmate: Learn 44 Languages er opstået præcis af det problem.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-wordmate"
           },

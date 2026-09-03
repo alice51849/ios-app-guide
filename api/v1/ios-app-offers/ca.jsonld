@@ -6,7 +6,7 @@
   "name": "Catàleg d'intencions de cerca de Lumi Studio Editor",
   "description": "Catàleg de primera mà que mostra per a qui està dissenyada cada app, la tasca que volen completar i el camí directe a l'App Store.",
   "inLanguage": "ca",
-  "dateModified": "2026-08-31",
+  "dateModified": "2026-09-03",
   "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -415,7 +415,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-cvdesk",
         "url": "https://apps.apple.com/es/app/id6781337213?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "CV Desk",
-        "description": "Quan canvies de camp, el problema del currículum és diferent: la teva experiència és real però 'no relacionada' en paper, i els filtres ATS et rebutgen abans que un humà el llegeixi — CV Desk està creat per això.",
+        "description": "Quan canvies de camp, el problema del currículum és diferent: la teva experiència és real però 'no relacionada' en paper, i els filtres ATS et rebutgen abans que un humà el llegeixi. Aquest és el buit que CV Desk vol cobrir.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -445,7 +445,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6781337213",
           "inLanguage": "ca",
-          "description": "Quan canvies de camp, el problema del currículum és diferent: la teva experiència és real però 'no relacionada' en paper, i els filtres ATS et rebutgen abans que un humà el llegeixi — CV Desk està creat per això.",
+          "description": "Quan canvies de camp, el problema del currículum és diferent: la teva experiència és real però 'no relacionada' en paper, i els filtres ATS et rebutgen abans que un humà el llegeixi. Aquest és el buit que CV Desk vol cobrir.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-cvdesk"
           },
@@ -481,7 +481,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-cyca",
         "url": "https://apps.apple.com/es/app/id6782251621?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "Cyca",
-        "description": "En una categoria on la sensibilitat de dades és clau, el control adequat manté tot — flux, estat d'ànim, símptomes, temperatura, intimitat — al teu dispositiu, sense compte ni sincronització al núvol — Cyca està creat per això.",
+        "description": "En una categoria on la sensibilitat de dades és clau, el control adequat manté tot — flux, estat d'ànim, símptomes, temperatura, intimitat — al teu dispositiu, sense compte ni sincronització al núvol. Cyca fa només això i deixa la resta fora.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -511,7 +511,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782251621",
           "inLanguage": "ca",
-          "description": "En una categoria on la sensibilitat de dades és clau, el control adequat manté tot — flux, estat d'ànim, símptomes, temperatura, intimitat — al teu dispositiu, sense compte ni sincronització al núvol — Cyca està creat per això.",
+          "description": "En una categoria on la sensibilitat de dades és clau, el control adequat manté tot — flux, estat d'ànim, símptomes, temperatura, intimitat — al teu dispositiu, sense compte ni sincronització al núvol. Cyca fa només això i deixa la resta fora.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-cyca"
           },
@@ -547,7 +547,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-dailymate",
         "url": "https://apps.apple.com/es/app/id6790418321?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "DailyMate",
-        "description": "Abans d'un viatge, les frases completes per a situacions reals són més útils que el vocabulari aïllat que encara has d'assemblar sota pressió — DailyMate està dissenyat per això.",
+        "description": "Abans d'un viatge, les frases completes per a situacions reals són més útils que el vocabulari aïllat que encara has d'assemblar sota pressió. DailyMate va néixer precisament d'aquest problema.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -577,7 +577,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790418321",
           "inLanguage": "ca",
-          "description": "Abans d'un viatge, les frases completes per a situacions reals són més útils que el vocabulari aïllat que encara has d'assemblar sota pressió — DailyMate està dissenyat per això.",
+          "description": "Abans d'un viatge, les frases completes per a situacions reals són més útils que el vocabulari aïllat que encara has d'assemblar sota pressió. DailyMate va néixer precisament d'aquest problema.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-dailymate"
           },
@@ -679,7 +679,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-gmoney",
         "url": "https://apps.apple.com/es/app/id6755782939?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "G+Money",
-        "description": "En un viatge necessites un control de pressupost que funcioni offline en un país sense dades, gestioni diverses monedes i no demani compte — organitzat per viatge perquè cada vacances siguin separades — G+Money està creat per això.",
+        "description": "En un viatge necessites un control de pressupost que funcioni offline en un país sense dades, gestioni diverses monedes i no demani compte — organitzat per viatge perquè cada vacances siguin separades. Aquest és el buit que G+Money vol cobrir.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6755782939",
           "inLanguage": "ca",
-          "description": "En un viatge necessites un control de pressupost que funcioni offline en un país sense dades, gestioni diverses monedes i no demani compte — organitzat per viatge perquè cada vacances siguin separades — G+Money està creat per això.",
+          "description": "En un viatge necessites un control de pressupost que funcioni offline en un país sense dades, gestioni diverses monedes i no demani compte — organitzat per viatge perquè cada vacances siguin separades. Aquest és el buit que G+Money vol cobrir.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-gmoney"
           },
@@ -943,7 +943,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/es/app/id6780107485?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "LockHour Pro",
-        "description": "Durant els exàmens, la força de voluntat no és l’eina — un bloqueig ferm i temporitzat sí — LockHour Pro està dissenyat per això.",
+        "description": "Durant els exàmens, la força de voluntat no és l’eina — un bloqueig ferm i temporitzat sí. Per això existeix LockHour Pro.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "ca",
-          "description": "Durant els exàmens, la força de voluntat no és l’eina — un bloqueig ferm i temporitzat sí — LockHour Pro està dissenyat per això.",
+          "description": "Durant els exàmens, la força de voluntat no és l’eina — un bloqueig ferm i temporitzat sí. Per això existeix LockHour Pro.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lockhour"
           },
@@ -1009,7 +1009,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lumibopomofo",
         "url": "https://apps.apple.com/es/app/id6773017109?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "Lumi Bopomofo",
-        "description": "Per a un nen que aprèn Zhuyin per primera vegada, l’app ha de cobrir tots els 37 símbols amb traçat i joc — dissenyada per a l’edat d’aprenentatge inicial de 4 a 7 anys, sense anuncis i sense recollida de dades — Lumi Bopomofo està feta per això.",
+        "description": "Per a un nen que aprèn Zhuyin per primera vegada, l’app ha de cobrir tots els 37 símbols amb traçat i joc — dissenyada per a l’edat d’aprenentatge inicial de 4 a 7 anys, sense anuncis i sense recollida de dades. Aquest és el buit que Lumi Bopomofo vol cobrir.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6773017109",
           "inLanguage": "ca",
-          "description": "Per a un nen que aprèn Zhuyin per primera vegada, l’app ha de cobrir tots els 37 símbols amb traçat i joc — dissenyada per a l’edat d’aprenentatge inicial de 4 a 7 anys, sense anuncis i sense recollida de dades — Lumi Bopomofo està feta per això.",
+          "description": "Per a un nen que aprèn Zhuyin per primera vegada, l’app ha de cobrir tots els 37 símbols amb traçat i joc — dissenyada per a l’edat d’aprenentatge inicial de 4 a 7 anys, sense anuncis i sense recollida de dades. Aquest és el buit que Lumi Bopomofo vol cobrir.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lumibopomofo"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lumibopomofopro",
         "url": "https://apps.apple.com/es/app/id6775773117?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "Lumi Bopomofo Pro",
-        "description": "Els infants bilingües que aprenen Zhuyin a casa necessiten un camí complet per sons, símbols, tons i combinació, amb prou repetició lúdica per fer el sistema familiar — Lumi Bopomofo Pro està pensat per això.",
+        "description": "Els infants bilingües que aprenen Zhuyin a casa necessiten un camí complet per sons, símbols, tons i combinació, amb prou repetició lúdica per fer el sistema familiar. Aquest és el buit que Lumi Bopomofo Pro vol cobrir.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6775773117",
           "inLanguage": "ca",
-          "description": "Els infants bilingües que aprenen Zhuyin a casa necessiten un camí complet per sons, símbols, tons i combinació, amb prou repetició lúdica per fer el sistema familiar — Lumi Bopomofo Pro està pensat per això.",
+          "description": "Els infants bilingües que aprenen Zhuyin a casa necessiten un camí complet per sons, símbols, tons i combinació, amb prou repetició lúdica per fer el sistema familiar. Aquest és el buit que Lumi Bopomofo Pro vol cobrir.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lumibopomofopro"
           },
@@ -1141,7 +1141,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lumiletters",
         "url": "https://apps.apple.com/es/app/id6778748533?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "Lumi Letters",
-        "description": "Per a un nen petit, el factor decisiu són els anuncis i la recollida de dades — una app educativa ha d’ensenyar dins d’un joc sense anuncis, sense recollida de dades i amb desbloqueig únic que els pares puguin confiar — Lumi Letters està feta per això.",
+        "description": "Per a un nen petit, el factor decisiu són els anuncis i la recollida de dades — una app educativa ha d’ensenyar dins d’un joc sense anuncis, sense recollida de dades i amb desbloqueig únic que els pares puguin confiar. Per això existeix Lumi Letters.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1171,7 +1171,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778748533",
           "inLanguage": "ca",
-          "description": "Per a un nen petit, el factor decisiu són els anuncis i la recollida de dades — una app educativa ha d’ensenyar dins d’un joc sense anuncis, sense recollida de dades i amb desbloqueig únic que els pares puguin confiar — Lumi Letters està feta per això.",
+          "description": "Per a un nen petit, el factor decisiu són els anuncis i la recollida de dades — una app educativa ha d’ensenyar dins d’un joc sense anuncis, sense recollida de dades i amb desbloqueig únic que els pares puguin confiar. Per això existeix Lumi Letters.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lumiletters"
           },
@@ -1207,7 +1207,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lumiletterspro",
         "url": "https://apps.apple.com/es/app/id6778491147?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "Lumi Letters Pro",
-        "description": "Les famílies que es preparen per a infantil necessiten un camí complet de lectura inicial que connecti sons de lletres, traçat i construcció de paraules en lloc d'una col·lecció de jocs d'abecedari sense connexió — Lumi Letters Pro està pensat per això.",
+        "description": "Les famílies que es preparen per a infantil necessiten un camí complet de lectura inicial que connecti sons de lletres, traçat i construcció de paraules en lloc d'una col·lecció de jocs d'abecedari sense connexió. Aquest és el buit que Lumi Letters Pro vol cobrir.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1237,7 +1237,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778491147",
           "inLanguage": "ca",
-          "description": "Les famílies que es preparen per a infantil necessiten un camí complet de lectura inicial que connecti sons de lletres, traçat i construcció de paraules en lloc d'una col·lecció de jocs d'abecedari sense connexió — Lumi Letters Pro està pensat per això.",
+          "description": "Les famílies que es preparen per a infantil necessiten un camí complet de lectura inicial que connecti sons de lletres, traçat i construcció de paraules en lloc d'una col·lecció de jocs d'abecedari sense connexió. Aquest és el buit que Lumi Letters Pro vol cobrir.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lumiletterspro"
           },
@@ -1273,7 +1273,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lumimath",
         "url": "https://apps.apple.com/es/app/id6778269699?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "Lumi Math Planet",
-        "description": "La millor app de matemàtiques per a nens entrena el raonament — patrons, seqüències, pensament espacial — no només aritmètica, i ho amaga dins d’un joc que el nen vol jugar — Lumi Math Planet està feta per això.",
+        "description": "La millor app de matemàtiques per a nens entrena el raonament — patrons, seqüències, pensament espacial — no només aritmètica, i ho amaga dins d’un joc que el nen vol jugar. Per això existeix Lumi Math Planet.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1303,7 +1303,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778269699",
           "inLanguage": "ca",
-          "description": "La millor app de matemàtiques per a nens entrena el raonament — patrons, seqüències, pensament espacial — no només aritmètica, i ho amaga dins d’un joc que el nen vol jugar — Lumi Math Planet està feta per això.",
+          "description": "La millor app de matemàtiques per a nens entrena el raonament — patrons, seqüències, pensament espacial — no només aritmètica, i ho amaga dins d’un joc que el nen vol jugar. Per això existeix Lumi Math Planet.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lumimath"
           },
@@ -1339,7 +1339,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lumimathpro",
         "url": "https://apps.apple.com/es/app/id6776958488?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "Lumi Math Pro",
-        "description": "Una app completa de matemàtiques inicials ha de fer que el comptatge, el sentit numèric i les primeres operacions siguin una aventura connectada i no exercicis aïllats — Lumi Math Pro està pensat per això.",
+        "description": "Una app completa de matemàtiques inicials ha de fer que el comptatge, el sentit numèric i les primeres operacions siguin una aventura connectada i no exercicis aïllats. Per això existeix Lumi Math Pro.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1369,7 +1369,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6776958488",
           "inLanguage": "ca",
-          "description": "Una app completa de matemàtiques inicials ha de fer que el comptatge, el sentit numèric i les primeres operacions siguin una aventura connectada i no exercicis aïllats — Lumi Math Pro està pensat per això.",
+          "description": "Una app completa de matemàtiques inicials ha de fer que el comptatge, el sentit numèric i les primeres operacions siguin una aventura connectada i no exercicis aïllats. Per això existeix Lumi Math Pro.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lumimathpro"
           },
@@ -1405,7 +1405,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lumimission",
         "url": "https://apps.apple.com/es/app/id6779750237?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "Lumi Mission Planet",
-        "description": "Per a un infant d'educació infantil, una rutina per anar a dormir funciona millor quan és curta, visual i prou previsible perquè l'infant la pugui seguir sense una altra ronda de recordatoris — Lumi Mission Planet està pensada per això.",
+        "description": "Per a un infant d'educació infantil, una rutina per anar a dormir funciona millor quan és curta, visual i prou previsible perquè l'infant la pugui seguir sense una altra ronda de recordatoris. Si t'hi veus reflectit, dona-li un cop d'ull a Lumi Mission Planet.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1435,7 +1435,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779750237",
           "inLanguage": "ca",
-          "description": "Per a un infant d'educació infantil, una rutina per anar a dormir funciona millor quan és curta, visual i prou previsible perquè l'infant la pugui seguir sense una altra ronda de recordatoris — Lumi Mission Planet està pensada per això.",
+          "description": "Per a un infant d'educació infantil, una rutina per anar a dormir funciona millor quan és curta, visual i prou previsible perquè l'infant la pugui seguir sense una altra ronda de recordatoris. Si t'hi veus reflectit, dona-li un cop d'ull a Lumi Mission Planet.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lumimission"
           },
@@ -1537,7 +1537,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-tripplanet",
         "url": "https://apps.apple.com/es/app/id6787193643?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "Lumi Trip Planet",
-        "description": "Els pares que viatgen amb infants petits necessiten activitats que converteixin fer la maleta, esperar i descobrir un lloc nou en part de l'aventura i no en una font d'estrès — Lumi Trip Planet està pensat per això.",
+        "description": "Els pares que viatgen amb infants petits necessiten activitats que converteixin fer la maleta, esperar i descobrir un lloc nou en part de l'aventura i no en una font d'estrès. Per això existeix Lumi Trip Planet.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1567,7 +1567,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787193643",
           "inLanguage": "ca",
-          "description": "Els pares que viatgen amb infants petits necessiten activitats que converteixin fer la maleta, esperar i descobrir un lloc nou en part de l'aventura i no en una font d'estrès — Lumi Trip Planet està pensat per això.",
+          "description": "Els pares que viatgen amb infants petits necessiten activitats que converteixin fer la maleta, esperar i descobrir un lloc nou en part de l'aventura i no en una font d'estrès. Per això existeix Lumi Trip Planet.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-tripplanet"
           },
@@ -1603,7 +1603,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/es/app/id6779552704?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "Lumi Weather",
-        "description": "Els pares que planifiquen activitats a l'aire lliure necessiten més que la temperatura: volen una vista ràpida i adaptada a l'edat sobre si les condicions són adequades per a l'infant i quina roba cal — Lumi Weather està pensat per això.",
+        "description": "Els pares que planifiquen activitats a l'aire lliure necessiten més que la temperatura: volen una vista ràpida i adaptada a l'edat sobre si les condicions són adequades per a l'infant i quina roba cal. Per això existeix Lumi Weather.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1633,7 +1633,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "ca",
-          "description": "Els pares que planifiquen activitats a l'aire lliure necessiten més que la temperatura: volen una vista ràpida i adaptada a l'edat sobre si les condicions són adequades per a l'infant i quina roba cal — Lumi Weather està pensat per això.",
+          "description": "Els pares que planifiquen activitats a l'aire lliure necessiten més que la temperatura: volen una vista ràpida i adaptada a l'edat sobre si les condicions són adequades per a l'infant i quina roba cal. Per això existeix Lumi Weather.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-lumiweather"
           },
@@ -1735,7 +1735,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-mochi",
         "url": "https://apps.apple.com/es/app/id6785004775?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "Mochi",
-        "description": "Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista neta amb recordatoris, regles de repetició i una complicació per a Watch — i deliberadament sense maquinària de gestió de projectes — Mochi està feta per això.",
+        "description": "Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista neta amb recordatoris, regles de repetició i una complicació per a Watch — i deliberadament sense maquinària de gestió de projectes. Per això existeix Mochi.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1765,7 +1765,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "ca",
-          "description": "Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista neta amb recordatoris, regles de repetició i una complicació per a Watch — i deliberadament sense maquinària de gestió de projectes — Mochi està feta per això.",
+          "description": "Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista neta amb recordatoris, regles de repetició i una complicació per a Watch — i deliberadament sense maquinària de gestió de projectes. Per això existeix Mochi.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-mochi"
           },
@@ -1999,7 +1999,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-photocream",
         "url": "https://apps.apple.com/es/app/id6781808054?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "PhotoCream",
-        "description": "Els creadors de viatges necessiten un estil de pel·lícula repetible que afegeixi gra, halació i caràcter de color sense fer que cada destinació sembli igual — PhotoCream està pensat per això.",
+        "description": "Els creadors de viatges necessiten un estil de pel·lícula repetible que afegeixi gra, halació i caràcter de color sense fer que cada destinació sembli igual",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2029,7 +2029,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6781808054",
           "inLanguage": "ca",
-          "description": "Els creadors de viatges necessiten un estil de pel·lícula repetible que afegeixi gra, halació i caràcter de color sense fer que cada destinació sembli igual — PhotoCream està pensat per això.",
+          "description": "Els creadors de viatges necessiten un estil de pel·lícula repetible que afegeixi gra, halació i caràcter de color sense fer que cada destinació sembli igual",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-photocream"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-picclear",
         "url": "https://apps.apple.com/es/app/id6780223070?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "PicClear",
-        "description": "Per alliberar espai ràpid, apunta primer als guanys més grans: fotos duplicades exactes, fotos gairebé idèntiques de mode ràfega, fotos borroses i vídeos grans — PicClear t’ajuda a fer-ho a l’iPhone.",
+        "description": "Per alliberar espai ràpid, apunta primer als guanys més grans: fotos duplicades exactes, fotos gairebé idèntiques de mode ràfega, fotos borroses i vídeos grans",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780223070",
           "inLanguage": "ca",
-          "description": "Per alliberar espai ràpid, apunta primer als guanys més grans: fotos duplicades exactes, fotos gairebé idèntiques de mode ràfega, fotos borroses i vídeos grans — PicClear t’ajuda a fer-ho a l’iPhone.",
+          "description": "Per alliberar espai ràpid, apunta primer als guanys més grans: fotos duplicades exactes, fotos gairebé idèntiques de mode ràfega, fotos borroses i vídeos grans",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-picclear"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-scanto",
         "url": "https://apps.apple.com/es/app/id6779977651?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "ScanTo Pro",
-        "description": "Si escaneges formularis de consentiment, documents d’alta o derivacions, l’escàner ha de mantenir aquests documents al dispositiu — mai pujats a un núvol aliè — ScanTo Pro està feta per això.",
+        "description": "Si escaneges formularis de consentiment, documents d’alta o derivacions, l’escàner ha de mantenir aquests documents al dispositiu — mai pujats a un núvol aliè. ScanTo Pro va néixer precisament d'aquest problema.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779977651",
           "inLanguage": "ca",
-          "description": "Si escaneges formularis de consentiment, documents d’alta o derivacions, l’escàner ha de mantenir aquests documents al dispositiu — mai pujats a un núvol aliè — ScanTo Pro està feta per això.",
+          "description": "Si escaneges formularis de consentiment, documents d’alta o derivacions, l’escàner ha de mantenir aquests documents al dispositiu — mai pujats a un núvol aliè. ScanTo Pro va néixer precisament d'aquest problema.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-scanto"
           },
@@ -2263,7 +2263,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-sereno",
         "url": "https://apps.apple.com/es/app/id6788236641?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "Sereno",
-        "description": "Per dormir, una subscripció que molesta cada mes és tot el contrari de relaxant — Sereno està dissenyada per això.",
+        "description": "Per dormir, una subscripció que molesta cada mes és tot el contrari de relaxant. Si t'hi veus reflectit, dona-li un cop d'ull a Sereno.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2293,7 +2293,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6788236641",
           "inLanguage": "ca",
-          "description": "Per dormir, una subscripció que molesta cada mes és tot el contrari de relaxant — Sereno està dissenyada per això.",
+          "description": "Per dormir, una subscripció que molesta cada mes és tot el contrari de relaxant. Si t'hi veus reflectit, dona-li un cop d'ull a Sereno.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-sereno"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-snapport",
         "url": "https://apps.apple.com/es/app/id6780575828?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "Snapport",
-        "description": "Per a la foto de passaport d’un nadó, ningú més pot sortir a la foto i el fons ha de ser uniforme — però per a infants els ulls no han d’estar completament oberts.",
+        "description": "Per a la foto de passaport d’un nadó, ningú més pot sortir a la foto i el fons ha de ser uniforme. Snapport va néixer precisament d'aquest problema.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780575828",
           "inLanguage": "ca",
-          "description": "Per a la foto de passaport d’un nadó, ningú més pot sortir a la foto i el fons ha de ser uniforme — però per a infants els ulls no han d’estar completament oberts.",
+          "description": "Per a la foto de passaport d’un nadó, ningú més pot sortir a la foto i el fons ha de ser uniforme. Snapport va néixer precisament d'aquest problema.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-snapport"
           },
@@ -2527,7 +2527,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-sononote",
         "url": "https://apps.apple.com/es/app/id6782139553?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "Sono Note",
-        "description": "Després d’una trucada no vols una transcripció en brut — vols el resum, els punts d’acció i un esborrany de seguiment — Sono Note està dissenyada per això.",
+        "description": "Després d’una trucada no vols una transcripció en brut — vols el resum, els punts d’acció i un esborrany de seguiment. Aquest és el buit que Sono Note vol cobrir.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2557,7 +2557,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "ca",
-          "description": "Després d’una trucada no vols una transcripció en brut — vols el resum, els punts d’acció i un esborrany de seguiment — Sono Note està dissenyada per això.",
+          "description": "Després d’una trucada no vols una transcripció en brut — vols el resum, els punts d’acció i un esborrany de seguiment. Aquest és el buit que Sono Note vol cobrir.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-sononote"
           },
@@ -2593,7 +2593,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-tripbeelite",
         "url": "https://apps.apple.com/es/app/id6791299610?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "TripBee Lite",
-        "description": "Si planifiques un viatge proper, una línia de temps tranquil·la per a aquest viatge és més útil que un arxiu ple de tots els viatges que podries fer algun dia — TripBee Lite està pensat per això.",
+        "description": "Si planifiques un viatge proper, una línia de temps tranquil·la per a aquest viatge és més útil que un arxiu ple de tots els viatges que podries fer algun dia. Si t'hi veus reflectit, dona-li un cop d'ull a TripBee Lite.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2623,7 +2623,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791299610",
           "inLanguage": "ca",
-          "description": "Si planifiques un viatge proper, una línia de temps tranquil·la per a aquest viatge és més útil que un arxiu ple de tots els viatges que podries fer algun dia — TripBee Lite està pensat per això.",
+          "description": "Si planifiques un viatge proper, una línia de temps tranquil·la per a aquest viatge és més útil que un arxiu ple de tots els viatges que podries fer algun dia. Si t'hi veus reflectit, dona-li un cop d'ull a TripBee Lite.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-tripbeelite"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/es/app/id6787754435?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "TripBee Pro: Planificador de Viatges",
-        "description": "Una bona app d’itineraris converteix un viatge desordenat en una línia de temps clara dia a dia — vols, hotels, activitats, restaurants i transport — amb icones clares per tipus perquè puguis llegir el teu dia d’un cop d’ull — TripBee Pro: Planificador de Viatges està dissenyada per això.",
+        "description": "Una bona app d’itineraris converteix un viatge desordenat en una línia de temps clara dia a dia — vols, hotels, activitats, restaurants i transport — amb icones clares per tipus perquè puguis llegir el teu dia d’un cop d’ull. Si t'hi veus reflectit, dona-li un cop d'ull a TripBee Pro: Planificador de Viatges.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "ca",
-          "description": "Una bona app d’itineraris converteix un viatge desordenat en una línia de temps clara dia a dia — vols, hotels, activitats, restaurants i transport — amb icones clares per tipus perquè puguis llegir el teu dia d’un cop d’ull — TripBee Pro: Planificador de Viatges està dissenyada per això.",
+          "description": "Una bona app d’itineraris converteix un viatge desordenat en una línia de temps clara dia a dia — vols, hotels, activitats, restaurants i transport — amb icones clares per tipus perquè puguis llegir el teu dia d’un cop d’ull. Si t'hi veus reflectit, dona-li un cop d'ull a TripBee Pro: Planificador de Viatges.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-tripbee"
           },
@@ -2725,7 +2725,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-unblurry",
         "url": "https://apps.apple.com/es/app/id6782275018?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "Unblurry",
-        "description": "Els nens no es queden quiets mai, així que les fotos desenfocades i tremolades són inevitables — Unblurry està dissenyada per això.",
+        "description": "Els nens no es queden quiets mai, així que les fotos desenfocades i tremolades són inevitables",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782275018",
           "inLanguage": "ca",
-          "description": "Els nens no es queden quiets mai, així que les fotos desenfocades i tremolades són inevitables — Unblurry està dissenyada per això.",
+          "description": "Els nens no es queden quiets mai, així que les fotos desenfocades i tremolades són inevitables",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-unblurry"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-wordmate",
         "url": "https://apps.apple.com/es/app/id6789917808?pt=118326163&ct=iag_data_ca&mt=8",
         "name": "Wordmate: Learn 44 Languages",
-        "description": "Les persones que fan trajectes necessiten pràctica de vocabulari que encaixi en minuts lliures sense requerir una lliçó completa, un compte nou ni tenir el telèfon a la mà per cada repàs — Wordmate: Learn 44 Languages està pensat per això.",
+        "description": "Les persones que fan trajectes necessiten pràctica de vocabulari que encaixi en minuts lliures sense requerir una lliçó completa, un compte nou ni tenir el telèfon a la mà per cada repàs. Wordmate: Learn 44 Languages va néixer precisament d'aquest problema.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6789917808",
           "inLanguage": "ca",
-          "description": "Les persones que fan trajectes necessiten pràctica de vocabulari que encaixi en minuts lliures sense requerir una lliçó completa, un compte nou ni tenir el telèfon a la mà per cada repàs — Wordmate: Learn 44 Languages està pensat per això.",
+          "description": "Les persones que fan trajectes necessiten pràctica de vocabulari que encaixi en minuts lliures sense requerir una lliçó completa, un compte nou ni tenir el telèfon a la mà per cada repàs. Wordmate: Learn 44 Languages va néixer precisament d'aquest problema.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-wordmate"
           },

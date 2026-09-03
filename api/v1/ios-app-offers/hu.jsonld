@@ -6,7 +6,7 @@
   "name": "Lumi Studio Kiadói Keresési Szándék Katalógus",
   "description": "Egy első kézből származó katalógus arról, hogy az egyes alkalmazások kinek készültek, milyen feladatot próbálnak megoldani, és a közvetlen App Store útvonal.",
   "inLanguage": "hu",
-  "dateModified": "2026-08-31",
+  "dateModified": "2026-09-03",
   "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -415,7 +415,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-cvdesk",
         "url": "https://apps.apple.com/hu/app/id6781337213?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "CV Desk",
-        "description": "Amikor területet váltasz, az önéletrajz problémája más: a tapasztalat valós, de papíron 'nem kapcsolódó', és az ATS szűrők elutasítanak, mielőtt egy ember elolvasná — a CV Desk erre készült.",
+        "description": "Amikor területet váltasz, az önéletrajz problémája más: a tapasztalat valós, de papíron 'nem kapcsolódó', és az ATS szűrők elutasítanak, mielőtt egy ember elolvasná. Pontosan ezt a hiányt szeretné betölteni a CV Desk.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -445,7 +445,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6781337213",
           "inLanguage": "hu",
-          "description": "Amikor területet váltasz, az önéletrajz problémája más: a tapasztalat valós, de papíron 'nem kapcsolódó', és az ATS szűrők elutasítanak, mielőtt egy ember elolvasná — a CV Desk erre készült.",
+          "description": "Amikor területet váltasz, az önéletrajz problémája más: a tapasztalat valós, de papíron 'nem kapcsolódó', és az ATS szűrők elutasítanak, mielőtt egy ember elolvasná. Pontosan ezt a hiányt szeretné betölteni a CV Desk.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-cvdesk"
           },
@@ -481,7 +481,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-cyca",
         "url": "https://apps.apple.com/hu/app/id6782251621?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "Cyca",
-        "description": "Egy olyan kategóriában, ahol az adatérzékenység a lényeg, a megfelelő menstruációs naptár mindent — vérzés, hangulat, tünetek, hőmérséklet, intimitás — az eszközödön tart, fiók és felhőszinkron nélkül — a Cyca erre készült.",
+        "description": "Egy olyan kategóriában, ahol az adatérzékenység a lényeg, a megfelelő menstruációs naptár mindent — vérzés, hangulat, tünetek, hőmérséklet, intimitás — az eszközödön tart, fiók és felhőszinkron nélkül. A Cyca csak ezt az egyet csinálja, a többit kihagyja.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -511,7 +511,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782251621",
           "inLanguage": "hu",
-          "description": "Egy olyan kategóriában, ahol az adatérzékenység a lényeg, a megfelelő menstruációs naptár mindent — vérzés, hangulat, tünetek, hőmérséklet, intimitás — az eszközödön tart, fiók és felhőszinkron nélkül — a Cyca erre készült.",
+          "description": "Egy olyan kategóriában, ahol az adatérzékenység a lényeg, a megfelelő menstruációs naptár mindent — vérzés, hangulat, tünetek, hőmérséklet, intimitás — az eszközödön tart, fiók és felhőszinkron nélkül. A Cyca csak ezt az egyet csinálja, a többit kihagyja.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-cyca"
           },
@@ -547,7 +547,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-dailymate",
         "url": "https://apps.apple.com/hu/app/id6790418321?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "DailyMate",
-        "description": "Utazás előtt a valós helyzetekhez illő teljes kifejezések hasznosabbak, mint az elszigetelt szavak, amelyeket nyomás alatt kell összerakni — a DailyMate erre készült.",
+        "description": "Utazás előtt a valós helyzetekhez illő teljes kifejezések hasznosabbak, mint az elszigetelt szavak, amelyeket nyomás alatt kell összerakni. A DailyMate pontosan ebből a problémából indult.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -577,7 +577,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790418321",
           "inLanguage": "hu",
-          "description": "Utazás előtt a valós helyzetekhez illő teljes kifejezések hasznosabbak, mint az elszigetelt szavak, amelyeket nyomás alatt kell összerakni — a DailyMate erre készült.",
+          "description": "Utazás előtt a valós helyzetekhez illő teljes kifejezések hasznosabbak, mint az elszigetelt szavak, amelyeket nyomás alatt kell összerakni. A DailyMate pontosan ebből a problémából indult.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-dailymate"
           },
@@ -679,7 +679,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-gmoney",
         "url": "https://apps.apple.com/hu/app/id6755782939?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "G+Money",
-        "description": "Egy utazáson olyan költségvetés követőre van szükséged, ami offline működik adat nélküli országban, kezeli a több valutát, és nem kér fiókot — utazásonként szervezve, hogy minden nyaralás külön legyen — a G+Money erre készült.",
+        "description": "Egy utazáson olyan költségvetés követőre van szükséged, ami offline működik adat nélküli országban, kezeli a több valutát, és nem kér fiókot — utazásonként szervezve, hogy minden nyaralás külön legyen. Pontosan ezt a hiányt szeretné betölteni a G+Money.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6755782939",
           "inLanguage": "hu",
-          "description": "Egy utazáson olyan költségvetés követőre van szükséged, ami offline működik adat nélküli országban, kezeli a több valutát, és nem kér fiókot — utazásonként szervezve, hogy minden nyaralás külön legyen — a G+Money erre készült.",
+          "description": "Egy utazáson olyan költségvetés követőre van szükséged, ami offline működik adat nélküli országban, kezeli a több valutát, és nem kér fiókot — utazásonként szervezve, hogy minden nyaralás külön legyen. Pontosan ezt a hiányt szeretné betölteni a G+Money.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-gmoney"
           },
@@ -943,7 +943,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/hu/app/id6780107485?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "LockHour Pro",
-        "description": "Vizsgák alatt az akaraterő nem elég — kemény, időzített blokkolás kell — a LockHour Pro erre készült.",
+        "description": "Vizsgák alatt az akaraterő nem elég — kemény, időzített blokkolás kell. Ezért készült a LockHour Pro.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "hu",
-          "description": "Vizsgák alatt az akaraterő nem elég — kemény, időzített blokkolás kell — a LockHour Pro erre készült.",
+          "description": "Vizsgák alatt az akaraterő nem elég — kemény, időzített blokkolás kell. Ezért készült a LockHour Pro.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lockhour"
           },
@@ -1009,7 +1009,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lumibopomofo",
         "url": "https://apps.apple.com/hu/app/id6773017109?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "Lumi Bopomofo",
-        "description": "Zhuyin-t először tanuló gyermeknek az alkalmazásnak minden 37 szimbólumot le kell fednie vonalkövetéssel és játékkal — 4–7 éves korosztálynak tervezve, reklámmentesen, adatgyűjtés nélkül — a Lumi Bopomofo erre készült.",
+        "description": "Zhuyin-t először tanuló gyermeknek az alkalmazásnak minden 37 szimbólumot le kell fednie vonalkövetéssel és játékkal — 4–7 éves korosztálynak tervezve, reklámmentesen, adatgyűjtés nélkül. Pontosan ezt a hiányt szeretné betölteni a Lumi Bopomofo.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6773017109",
           "inLanguage": "hu",
-          "description": "Zhuyin-t először tanuló gyermeknek az alkalmazásnak minden 37 szimbólumot le kell fednie vonalkövetéssel és játékkal — 4–7 éves korosztálynak tervezve, reklámmentesen, adatgyűjtés nélkül — a Lumi Bopomofo erre készült.",
+          "description": "Zhuyin-t először tanuló gyermeknek az alkalmazásnak minden 37 szimbólumot le kell fednie vonalkövetéssel és játékkal — 4–7 éves korosztálynak tervezve, reklámmentesen, adatgyűjtés nélkül. Pontosan ezt a hiányt szeretné betölteni a Lumi Bopomofo.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lumibopomofo"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lumibopomofopro",
         "url": "https://apps.apple.com/hu/app/id6775773117?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "Lumi Bopomofo Pro",
-        "description": "A kétnyelvű gyerekeknek, akik otthon tanulják a Zhuyint, teljes út kell hangokon, szimbólumokon, tónusokon és összekeverésen keresztül, elég játékos ismétléssel, hogy a rendszer ismerős legyen — Lumi Bopomofo Pro erre készült.",
+        "description": "A kétnyelvű gyerekeknek, akik otthon tanulják a Zhuyint, teljes út kell hangokon, szimbólumokon, tónusokon és összekeverésen keresztül, elég játékos ismétléssel, hogy a rendszer ismerős legyen. Pontosan ezt a hiányt szeretné betölteni a Lumi Bopomofo Pro.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6775773117",
           "inLanguage": "hu",
-          "description": "A kétnyelvű gyerekeknek, akik otthon tanulják a Zhuyint, teljes út kell hangokon, szimbólumokon, tónusokon és összekeverésen keresztül, elég játékos ismétléssel, hogy a rendszer ismerős legyen — Lumi Bopomofo Pro erre készült.",
+          "description": "A kétnyelvű gyerekeknek, akik otthon tanulják a Zhuyint, teljes út kell hangokon, szimbólumokon, tónusokon és összekeverésen keresztül, elég játékos ismétléssel, hogy a rendszer ismerős legyen. Pontosan ezt a hiányt szeretné betölteni a Lumi Bopomofo Pro.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lumibopomofopro"
           },
@@ -1141,7 +1141,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lumiletters",
         "url": "https://apps.apple.com/hu/app/id6778748533?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "Lumi Letters",
-        "description": "Kisgyerekeknél a legfontosabb a reklámok és adatgyűjtés hiánya — a tanuló alkalmazásnak játék keretében kell tanítania reklámok nélkül, semmilyen adatgyűjtés nélkül, és egyszeri feloldással, amiben a szülők megbízhatnak — a Lumi Letters erre készült.",
+        "description": "Kisgyerekeknél a legfontosabb a reklámok és adatgyűjtés hiánya — a tanuló alkalmazásnak játék keretében kell tanítania reklámok nélkül, semmilyen adatgyűjtés nélkül, és egyszeri feloldással, amiben a szülők megbízhatnak. Ezért készült a Lumi Letters.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1171,7 +1171,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778748533",
           "inLanguage": "hu",
-          "description": "Kisgyerekeknél a legfontosabb a reklámok és adatgyűjtés hiánya — a tanuló alkalmazásnak játék keretében kell tanítania reklámok nélkül, semmilyen adatgyűjtés nélkül, és egyszeri feloldással, amiben a szülők megbízhatnak — a Lumi Letters erre készült.",
+          "description": "Kisgyerekeknél a legfontosabb a reklámok és adatgyűjtés hiánya — a tanuló alkalmazásnak játék keretében kell tanítania reklámok nélkül, semmilyen adatgyűjtés nélkül, és egyszeri feloldással, amiben a szülők megbízhatnak. Ezért készült a Lumi Letters.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lumiletters"
           },
@@ -1207,7 +1207,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lumiletterspro",
         "url": "https://apps.apple.com/hu/app/id6778491147?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "Lumi Letters Pro",
-        "description": "Az óvodára készülő családoknak teljes korai olvasási út kell, ami összekapcsolja a betűhangokat, rajzolást és szóalkotást, nem csak különálló betűjátékokat — Lumi Letters Pro erre készült.",
+        "description": "Az óvodára készülő családoknak teljes korai olvasási út kell, ami összekapcsolja a betűhangokat, rajzolást és szóalkotást, nem csak különálló betűjátékokat. Pontosan ezt a hiányt szeretné betölteni a Lumi Letters Pro.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1237,7 +1237,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778491147",
           "inLanguage": "hu",
-          "description": "Az óvodára készülő családoknak teljes korai olvasási út kell, ami összekapcsolja a betűhangokat, rajzolást és szóalkotást, nem csak különálló betűjátékokat — Lumi Letters Pro erre készült.",
+          "description": "Az óvodára készülő családoknak teljes korai olvasási út kell, ami összekapcsolja a betűhangokat, rajzolást és szóalkotást, nem csak különálló betűjátékokat. Pontosan ezt a hiányt szeretné betölteni a Lumi Letters Pro.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lumiletterspro"
           },
@@ -1273,7 +1273,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lumimath",
         "url": "https://apps.apple.com/hu/app/id6778269699?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "Lumi Math Planet",
-        "description": "A legjobb gyerek matek alkalmazás az érvelést fejleszti — minták, sorozatok, térbeli gondolkodás — nem csak számtani gyakorlat, és ezt egy játékba rejti, amit a gyerek szeret játszani — a Lumi Math Planet erre készült.",
+        "description": "A legjobb gyerek matek alkalmazás az érvelést fejleszti — minták, sorozatok, térbeli gondolkodás — nem csak számtani gyakorlat, és ezt egy játékba rejti, amit a gyerek szeret játszani. Ezért készült a Lumi Math Planet.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1303,7 +1303,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778269699",
           "inLanguage": "hu",
-          "description": "A legjobb gyerek matek alkalmazás az érvelést fejleszti — minták, sorozatok, térbeli gondolkodás — nem csak számtani gyakorlat, és ezt egy játékba rejti, amit a gyerek szeret játszani — a Lumi Math Planet erre készült.",
+          "description": "A legjobb gyerek matek alkalmazás az érvelést fejleszti — minták, sorozatok, térbeli gondolkodás — nem csak számtani gyakorlat, és ezt egy játékba rejti, amit a gyerek szeret játszani. Ezért készült a Lumi Math Planet.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lumimath"
           },
@@ -1339,7 +1339,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lumimathpro",
         "url": "https://apps.apple.com/hu/app/id6776958488?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "Lumi Math Pro",
-        "description": "A teljes korai matematika alkalmazásnak a számolást, számérzéket és első műveleteket egy összefüggő kalandként kell bemutatnia, nem elszigetelt gyakorlatsorokként — Lumi Math Pro erre készült.",
+        "description": "A teljes korai matematika alkalmazásnak a számolást, számérzéket és első műveleteket egy összefüggő kalandként kell bemutatnia, nem elszigetelt gyakorlatsorokként. Ezért készült a Lumi Math Pro.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1369,7 +1369,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6776958488",
           "inLanguage": "hu",
-          "description": "A teljes korai matematika alkalmazásnak a számolást, számérzéket és első műveleteket egy összefüggő kalandként kell bemutatnia, nem elszigetelt gyakorlatsorokként — Lumi Math Pro erre készült.",
+          "description": "A teljes korai matematika alkalmazásnak a számolást, számérzéket és első műveleteket egy összefüggő kalandként kell bemutatnia, nem elszigetelt gyakorlatsorokként. Ezért készült a Lumi Math Pro.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lumimathpro"
           },
@@ -1405,7 +1405,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lumimission",
         "url": "https://apps.apple.com/hu/app/id6779750237?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "Lumi Mission Planet",
-        "description": "Egy óvodás számára az esti rutin akkor működik a legjobban, ha rövid, vizuális és kiszámítható, így a gyermek önállóan követheti, emlékeztetők nélkül — a Lumi Mission Planet erre készült.",
+        "description": "Egy óvodás számára az esti rutin akkor működik a legjobban, ha rövid, vizuális és kiszámítható, így a gyermek önállóan követheti, emlékeztetők nélkül. Ha ismerős a helyzet, nézd meg a Lumi Mission Planet appot.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1435,7 +1435,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779750237",
           "inLanguage": "hu",
-          "description": "Egy óvodás számára az esti rutin akkor működik a legjobban, ha rövid, vizuális és kiszámítható, így a gyermek önállóan követheti, emlékeztetők nélkül — a Lumi Mission Planet erre készült.",
+          "description": "Egy óvodás számára az esti rutin akkor működik a legjobban, ha rövid, vizuális és kiszámítható, így a gyermek önállóan követheti, emlékeztetők nélkül. Ha ismerős a helyzet, nézd meg a Lumi Mission Planet appot.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lumimission"
           },
@@ -1537,7 +1537,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-tripplanet",
         "url": "https://apps.apple.com/hu/app/id6787193643?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "Lumi Trip Planet",
-        "description": "A fiatal gyerekekkel utazó szülőknek olyan tevékenységek kellenek, amelyek a csomagolást, várakozást és az új hely felfedezését az utazás részévé teszik, nem újabb stresszforrássá — Lumi Trip Planet erre készült.",
+        "description": "A fiatal gyerekekkel utazó szülőknek olyan tevékenységek kellenek, amelyek a csomagolást, várakozást és az új hely felfedezését az utazás részévé teszik, nem újabb stresszforrássá. Ezért készült a Lumi Trip Planet.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1567,7 +1567,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787193643",
           "inLanguage": "hu",
-          "description": "A fiatal gyerekekkel utazó szülőknek olyan tevékenységek kellenek, amelyek a csomagolást, várakozást és az új hely felfedezését az utazás részévé teszik, nem újabb stresszforrássá — Lumi Trip Planet erre készült.",
+          "description": "A fiatal gyerekekkel utazó szülőknek olyan tevékenységek kellenek, amelyek a csomagolást, várakozást és az új hely felfedezését az utazás részévé teszik, nem újabb stresszforrássá. Ezért készült a Lumi Trip Planet.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-tripplanet"
           },
@@ -1603,7 +1603,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/hu/app/id6779552704?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "Lumi Weather",
-        "description": "A szülőknek, akik kültéri programot terveznek, több kell egy hőmérsékletnél: gyors, életkorhoz igazított nézet arra, hogy az időjárás megfelel-e a gyereknek, és milyen ruházat indokolt — Lumi Weather erre készült.",
+        "description": "A szülőknek, akik kültéri programot terveznek, több kell egy hőmérsékletnél: gyors, életkorhoz igazított nézet arra, hogy az időjárás megfelel-e a gyereknek, és milyen ruházat indokolt. Ezért készült a Lumi Weather.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1633,7 +1633,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "hu",
-          "description": "A szülőknek, akik kültéri programot terveznek, több kell egy hőmérsékletnél: gyors, életkorhoz igazított nézet arra, hogy az időjárás megfelel-e a gyereknek, és milyen ruházat indokolt — Lumi Weather erre készült.",
+          "description": "A szülőknek, akik kültéri programot terveznek, több kell egy hőmérsékletnél: gyors, életkorhoz igazított nézet arra, hogy az időjárás megfelel-e a gyereknek, és milyen ruházat indokolt. Ezért készült a Lumi Weather.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-lumiweather"
           },
@@ -1735,7 +1735,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-mochi",
         "url": "https://apps.apple.com/hu/app/id6785004775?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "Mochi",
-        "description": "Ha a legtöbb teendőlista alkalmazás túlterheltnek tűnik, a megfelelő egy tiszta ellenőrzőlista emlékeztetőkkel, ismétlődési szabályokkal és Watch komplikációval — és szándékosan nincs projektmenedzsment funkció — a Mochi erre készült.",
+        "description": "Ha a legtöbb teendőlista alkalmazás túlterheltnek tűnik, a megfelelő egy tiszta ellenőrzőlista emlékeztetőkkel, ismétlődési szabályokkal és Watch komplikációval — és szándékosan nincs projektmenedzsment funkció. Ezért készült a Mochi.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1765,7 +1765,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "hu",
-          "description": "Ha a legtöbb teendőlista alkalmazás túlterheltnek tűnik, a megfelelő egy tiszta ellenőrzőlista emlékeztetőkkel, ismétlődési szabályokkal és Watch komplikációval — és szándékosan nincs projektmenedzsment funkció — a Mochi erre készült.",
+          "description": "Ha a legtöbb teendőlista alkalmazás túlterheltnek tűnik, a megfelelő egy tiszta ellenőrzőlista emlékeztetőkkel, ismétlődési szabályokkal és Watch komplikációval — és szándékosan nincs projektmenedzsment funkció. Ezért készült a Mochi.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-mochi"
           },
@@ -1999,7 +1999,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-photocream",
         "url": "https://apps.apple.com/hu/app/id6781808054?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "PhotoCream",
-        "description": "Az utazó alkotóknak ismételhető filmes hatásra van szükségük, ami szemcsézettséget, halációt és színkaraktert ad hozzá anélkül, hogy minden úti célt ugyanazzá a lapos szűrővé redukálna — PhotoCream erre készült.",
+        "description": "Az utazó alkotóknak ismételhető filmes hatásra van szükségük, ami szemcsézettséget, halációt és színkaraktert ad hozzá anélkül, hogy minden úti célt ugyanazzá a lapos szűrővé redukálna",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2029,7 +2029,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6781808054",
           "inLanguage": "hu",
-          "description": "Az utazó alkotóknak ismételhető filmes hatásra van szükségük, ami szemcsézettséget, halációt és színkaraktert ad hozzá anélkül, hogy minden úti célt ugyanazzá a lapos szűrővé redukálna — PhotoCream erre készült.",
+          "description": "Az utazó alkotóknak ismételhető filmes hatásra van szükségük, ami szemcsézettséget, halációt és színkaraktert ad hozzá anélkül, hogy minden úti célt ugyanazzá a lapos szűrővé redukálna",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-photocream"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-picclear",
         "url": "https://apps.apple.com/hu/app/id6780223070?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "PicClear",
-        "description": "A gyors helyfelszabadításhoz célozza meg először a legnagyobb nyereséget: pontosan duplikált képek, majdnem azonos sorozatkép, homályos képek és nagy videók — a PicClear segít ezt iPhone-on megtenni.",
+        "description": "A gyors helyfelszabadításhoz célozza meg először a legnagyobb nyereséget: pontosan duplikált képek, majdnem azonos sorozatkép, homályos képek és nagy videók",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780223070",
           "inLanguage": "hu",
-          "description": "A gyors helyfelszabadításhoz célozza meg először a legnagyobb nyereséget: pontosan duplikált képek, majdnem azonos sorozatkép, homályos képek és nagy videók — a PicClear segít ezt iPhone-on megtenni.",
+          "description": "A gyors helyfelszabadításhoz célozza meg először a legnagyobb nyereséget: pontosan duplikált képek, majdnem azonos sorozatkép, homályos képek és nagy videók",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-picclear"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-scanto",
         "url": "https://apps.apple.com/hu/app/id6779977651?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "ScanTo Pro",
-        "description": "Ha beteg beleegyező nyomtatványokat, elbocsátási papírokat vagy beutalókat szkennel, a szkennernek az eszközön kell tartania azokat — soha nem feltöltve más felhőbe — a ScanTo Pro erre készült.",
+        "description": "Ha beteg beleegyező nyomtatványokat, elbocsátási papírokat vagy beutalókat szkennel, a szkennernek az eszközön kell tartania azokat — soha nem feltöltve más felhőbe. A ScanTo Pro pontosan ebből a problémából indult.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779977651",
           "inLanguage": "hu",
-          "description": "Ha beteg beleegyező nyomtatványokat, elbocsátási papírokat vagy beutalókat szkennel, a szkennernek az eszközön kell tartania azokat — soha nem feltöltve más felhőbe — a ScanTo Pro erre készült.",
+          "description": "Ha beteg beleegyező nyomtatványokat, elbocsátási papírokat vagy beutalókat szkennel, a szkennernek az eszközön kell tartania azokat — soha nem feltöltve más felhőbe. A ScanTo Pro pontosan ebből a problémából indult.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-scanto"
           },
@@ -2263,7 +2263,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-sereno",
         "url": "https://apps.apple.com/hu/app/id6788236641?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "Sereno",
-        "description": "Alváshoz egy havi zaklató előfizetés pont az ellenkezője a nyugalomnak — a Sereno erre készült.",
+        "description": "Alváshoz egy havi zaklató előfizetés pont az ellenkezője a nyugalomnak. Ha ismerős a helyzet, nézd meg a Sereno appot.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2293,7 +2293,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6788236641",
           "inLanguage": "hu",
-          "description": "Alváshoz egy havi zaklató előfizetés pont az ellenkezője a nyugalomnak — a Sereno erre készült.",
+          "description": "Alváshoz egy havi zaklató előfizetés pont az ellenkezője a nyugalomnak. Ha ismerős a helyzet, nézd meg a Sereno appot.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-sereno"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-snapport",
         "url": "https://apps.apple.com/hu/app/id6780575828?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "Snapport",
-        "description": "Baba útlevélfotónál senki más nem lehet a képen, és az háttérnek egyszínűnek kell lennie — de csecsemőknél a szemek nem kell, hogy teljesen nyitva legyenek.",
+        "description": "Baba útlevélfotónál senki más nem lehet a képen, és az háttérnek egyszínűnek kell lennie. A Snapport pontosan ebből a problémából indult.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780575828",
           "inLanguage": "hu",
-          "description": "Baba útlevélfotónál senki más nem lehet a képen, és az háttérnek egyszínűnek kell lennie — de csecsemőknél a szemek nem kell, hogy teljesen nyitva legyenek.",
+          "description": "Baba útlevélfotónál senki más nem lehet a képen, és az háttérnek egyszínűnek kell lennie. A Snapport pontosan ebből a problémából indult.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-snapport"
           },
@@ -2527,7 +2527,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-sononote",
         "url": "https://apps.apple.com/hu/app/id6782139553?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "Sono Note",
-        "description": "Egy hívás után nem egy nyers átiratot akarsz — az összefoglalót, a teendőket és egy követő tervezetet — a Sono Note erre készült.",
+        "description": "Egy hívás után nem egy nyers átiratot akarsz — az összefoglalót, a teendőket és egy követő tervezetet. Pontosan ezt a hiányt szeretné betölteni a Sono Note.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2557,7 +2557,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "hu",
-          "description": "Egy hívás után nem egy nyers átiratot akarsz — az összefoglalót, a teendőket és egy követő tervezetet — a Sono Note erre készült.",
+          "description": "Egy hívás után nem egy nyers átiratot akarsz — az összefoglalót, a teendőket és egy követő tervezetet. Pontosan ezt a hiányt szeretné betölteni a Sono Note.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-sononote"
           },
@@ -2593,7 +2593,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-tripbeelite",
         "url": "https://apps.apple.com/hu/app/id6791299610?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "TripBee Lite",
-        "description": "Ha egy közelgő utazást tervezel, egy nyugodt idővonal az adott útra hasznosabb, mint egy zsúfolt archívum minden lehetséges utazásodról – a TripBee Lite erre készült.",
+        "description": "Ha egy közelgő utazást tervezel, egy nyugodt idővonal az adott útra hasznosabb, mint egy zsúfolt archívum minden lehetséges utazásodról. Ha ismerős a helyzet, nézd meg a TripBee Lite appot.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2623,7 +2623,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791299610",
           "inLanguage": "hu",
-          "description": "Ha egy közelgő utazást tervezel, egy nyugodt idővonal az adott útra hasznosabb, mint egy zsúfolt archívum minden lehetséges utazásodról – a TripBee Lite erre készült.",
+          "description": "Ha egy közelgő utazást tervezel, egy nyugodt idővonal az adott útra hasznosabb, mint egy zsúfolt archívum minden lehetséges utazásodról. Ha ismerős a helyzet, nézd meg a TripBee Lite appot.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-tripbeelite"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/hu/app/id6787754435?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "TripBee Pro: Utazástervező",
-        "description": "Egy jó útiterv alkalmazás a kusza utazást világos napi bontású idővonalra alakítja — repülőjegyek, szállások, programok, éttermek és közlekedés — egyértelmű típusikonokkal, hogy egy pillantással lásd a napodat — a TripBee Pro: Utazástervező erre készült.",
+        "description": "Egy jó útiterv alkalmazás a kusza utazást világos napi bontású idővonalra alakítja — repülőjegyek, szállások, programok, éttermek és közlekedés — egyértelmű típusikonokkal, hogy egy pillantással lásd a napodat. Ha ismerős a helyzet, nézd meg a TripBee Pro: Utazástervező appot.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "hu",
-          "description": "Egy jó útiterv alkalmazás a kusza utazást világos napi bontású idővonalra alakítja — repülőjegyek, szállások, programok, éttermek és közlekedés — egyértelmű típusikonokkal, hogy egy pillantással lásd a napodat — a TripBee Pro: Utazástervező erre készült.",
+          "description": "Egy jó útiterv alkalmazás a kusza utazást világos napi bontású idővonalra alakítja — repülőjegyek, szállások, programok, éttermek és közlekedés — egyértelmű típusikonokkal, hogy egy pillantással lásd a napodat. Ha ismerős a helyzet, nézd meg a TripBee Pro: Utazástervező appot.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-tripbee"
           },
@@ -2725,7 +2725,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-unblurry",
         "url": "https://apps.apple.com/hu/app/id6782275018?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "Unblurry",
-        "description": "A gyerekek sosem állnak nyugodtan, így az enyhe fókusz- és kamerarángásos képek elkerülhetetlenek — az Unblurry erre készült.",
+        "description": "A gyerekek sosem állnak nyugodtan, így az enyhe fókusz- és kamerarángásos képek elkerülhetetlenek",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782275018",
           "inLanguage": "hu",
-          "description": "A gyerekek sosem állnak nyugodtan, így az enyhe fókusz- és kamerarángásos képek elkerülhetetlenek — az Unblurry erre készült.",
+          "description": "A gyerekek sosem állnak nyugodtan, így az enyhe fókusz- és kamerarángásos képek elkerülhetetlenek",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-unblurry"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-wordmate",
         "url": "https://apps.apple.com/hu/app/id6789917808?pt=118326163&ct=iag_data_hu&mt=8",
         "name": "Wordmate: Learn 44 Languages",
-        "description": "Az elfoglalt ingázóknak olyan szókincs gyakorlás kell, ami belefér a szabad percekbe, nem igényel teljes leckét, új fiókot vagy telefont minden áttekintéshez — Wordmate: Learn 44 Languages erre készült.",
+        "description": "Az elfoglalt ingázóknak olyan szókincs gyakorlás kell, ami belefér a szabad percekbe, nem igényel teljes leckét, új fiókot vagy telefont minden áttekintéshez. A Wordmate: Learn 44 Languages pontosan ebből a problémából indult.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6789917808",
           "inLanguage": "hu",
-          "description": "Az elfoglalt ingázóknak olyan szókincs gyakorlás kell, ami belefér a szabad percekbe, nem igényel teljes leckét, új fiókot vagy telefont minden áttekintéshez — Wordmate: Learn 44 Languages erre készült.",
+          "description": "Az elfoglalt ingázóknak olyan szókincs gyakorlás kell, ami belefér a szabad percekbe, nem igényel teljes leckét, új fiókot vagy telefont minden áttekintéshez. A Wordmate: Learn 44 Languages pontosan ebből a problémából indult.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hu.jsonld#offer-wordmate"
           },

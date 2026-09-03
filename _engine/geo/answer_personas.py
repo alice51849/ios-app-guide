@@ -15,6 +15,8 @@ Consumed by answer_facts._persona_facts(); queries fed from queries.py.
 """
 from typing import Any
 
+import persona_closers
+
 # app_key -> list of persona entries.
 # Each entry:
 #   query    : canonical persona query (also added to queries.py)
@@ -3381,7 +3383,7 @@ def persona_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
     strengths = e["fits"]
     return {
         "meta_description": persona_meta_description(e["lead"], name),
-        "lead": e["lead"].split(". ")[0].rstrip(".") + f" — {name} is built for this.",
+        "lead": persona_closers.persona_lead(e["lead"], key, name),
         "short_answer_paragraphs": [p.replace("the app", name).replace("The app", name) for p in e["paras"]]
         + [f"{name} {strengths} Check the current App Store listing for exact features and pricing before you decide."],
         "what_to_look_for": e["look"],

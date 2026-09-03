@@ -6,7 +6,7 @@
   "name": "Katalog namjera pretraživanja izdavača Lumi Studio",
   "description": "Katalog iz prve ruke o tome za koga je svaka aplikacija namijenjena, koji zadatak žele izvršiti i izravnom putu do App Storea.",
   "inLanguage": "hr",
-  "dateModified": "2026-08-31",
+  "dateModified": "2026-09-03",
   "numberOfItems": 46,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -415,7 +415,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-cvdesk",
         "url": "https://apps.apple.com/hr/app/id6781337213?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "CV Desk",
-        "description": "Kada mijenjate područje rada, problem s životopisom je drugačiji: vaše iskustvo je stvarno, ali na papiru 'nepovezano', a ATS filteri vas odbacuju prije nego što ga čovjek pročita — CV Desk je napravljen za to.",
+        "description": "Kada mijenjate područje rada, problem s životopisom je drugačiji: vaše iskustvo je stvarno, ali na papiru 'nepovezano', a ATS filteri vas odbacuju prije nego što ga čovjek pročita. Upravo tu prazninu CV Desk želi popuniti.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -445,7 +445,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6781337213",
           "inLanguage": "hr",
-          "description": "Kada mijenjate područje rada, problem s životopisom je drugačiji: vaše iskustvo je stvarno, ali na papiru 'nepovezano', a ATS filteri vas odbacuju prije nego što ga čovjek pročita — CV Desk je napravljen za to.",
+          "description": "Kada mijenjate područje rada, problem s životopisom je drugačiji: vaše iskustvo je stvarno, ali na papiru 'nepovezano', a ATS filteri vas odbacuju prije nego što ga čovjek pročita. Upravo tu prazninu CV Desk želi popuniti.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-cvdesk"
           },
@@ -481,7 +481,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-cyca",
         "url": "https://apps.apple.com/hr/app/id6782251621?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "Cyca",
-        "description": "U kategoriji gdje je osjetljivost podataka najvažnija, prava aplikacija za praćenje menstruacije čuva sve — protok, raspoloženje, simptome, temperaturu, intimnost — na vašem uređaju, bez računa i sinkronizacije u oblaku — Cyca je stvorena za to.",
+        "description": "U kategoriji gdje je osjetljivost podataka najvažnija, prava aplikacija za praćenje menstruacije čuva sve — protok, raspoloženje, simptome, temperaturu, intimnost — na vašem uređaju, bez računa i sinkronizacije u oblaku. Cyca radi samo to jedno i ostalo izostavlja.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -511,7 +511,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782251621",
           "inLanguage": "hr",
-          "description": "U kategoriji gdje je osjetljivost podataka najvažnija, prava aplikacija za praćenje menstruacije čuva sve — protok, raspoloženje, simptome, temperaturu, intimnost — na vašem uređaju, bez računa i sinkronizacije u oblaku — Cyca je stvorena za to.",
+          "description": "U kategoriji gdje je osjetljivost podataka najvažnija, prava aplikacija za praćenje menstruacije čuva sve — protok, raspoloženje, simptome, temperaturu, intimnost — na vašem uređaju, bez računa i sinkronizacije u oblaku. Cyca radi samo to jedno i ostalo izostavlja.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-cyca"
           },
@@ -547,7 +547,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-dailymate",
         "url": "https://apps.apple.com/hr/app/id6790418321?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "DailyMate",
-        "description": "Prije putovanja, kompletne fraze za stvarne situacije korisnije su od izoliranih riječi koje još morate sastaviti pod pritiskom — DailyMate je stvoren za to.",
+        "description": "Prije putovanja, kompletne fraze za stvarne situacije korisnije su od izoliranih riječi koje još morate sastaviti pod pritiskom. DailyMate je nastao točno iz tog problema.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -577,7 +577,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790418321",
           "inLanguage": "hr",
-          "description": "Prije putovanja, kompletne fraze za stvarne situacije korisnije su od izoliranih riječi koje još morate sastaviti pod pritiskom — DailyMate je stvoren za to.",
+          "description": "Prije putovanja, kompletne fraze za stvarne situacije korisnije su od izoliranih riječi koje još morate sastaviti pod pritiskom. DailyMate je nastao točno iz tog problema.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-dailymate"
           },
@@ -679,7 +679,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-gmoney",
         "url": "https://apps.apple.com/hr/app/id6755782939?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "G+Money",
-        "description": "Na putovanju vam treba aplikacija za praćenje budžeta koja radi offline u zemlji bez podataka, podržava više valuta i ne traži račun — organizirana po putovanjima tako da je svaki odmor zaseban — G+Money je stvoren za to.",
+        "description": "Na putovanju vam treba aplikacija za praćenje budžeta koja radi offline u zemlji bez podataka, podržava više valuta i ne traži račun — organizirana po putovanjima tako da je svaki odmor zaseban. Upravo tu prazninu G+Money želi popuniti.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -709,7 +709,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6755782939",
           "inLanguage": "hr",
-          "description": "Na putovanju vam treba aplikacija za praćenje budžeta koja radi offline u zemlji bez podataka, podržava više valuta i ne traži račun — organizirana po putovanjima tako da je svaki odmor zaseban — G+Money je stvoren za to.",
+          "description": "Na putovanju vam treba aplikacija za praćenje budžeta koja radi offline u zemlji bez podataka, podržava više valuta i ne traži račun — organizirana po putovanjima tako da je svaki odmor zaseban. Upravo tu prazninu G+Money želi popuniti.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-gmoney"
           },
@@ -943,7 +943,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/hr/app/id6780107485?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "LockHour Pro",
-        "description": "Tijekom ispita, snaga volje nije alat — stroga vremenski ograničena blokada jest — LockHour Pro je stvoren za to.",
+        "description": "Tijekom ispita, snaga volje nije alat — stroga vremenski ograničena blokada jest. Upravo zato LockHour Pro postoji.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -973,7 +973,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "hr",
-          "description": "Tijekom ispita, snaga volje nije alat — stroga vremenski ograničena blokada jest — LockHour Pro je stvoren za to.",
+          "description": "Tijekom ispita, snaga volje nije alat — stroga vremenski ograničena blokada jest. Upravo zato LockHour Pro postoji.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lockhour"
           },
@@ -1009,7 +1009,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumibopomofo",
         "url": "https://apps.apple.com/hr/app/id6773017109?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "Lumi Bopomofo",
-        "description": "Za dijete koje prvi put uči Zhuyin, aplikacija treba pokrivati svih 37 simbola kroz praćenje poteza i igru — dizajnirana za dob od 4 do 7 godina, bez oglasa i bez prikupljanja podataka — Lumi Bopomofo je stvorena za to.",
+        "description": "Za dijete koje prvi put uči Zhuyin, aplikacija treba pokrivati svih 37 simbola kroz praćenje poteza i igru — dizajnirana za dob od 4 do 7 godina, bez oglasa i bez prikupljanja podataka. Upravo tu prazninu Lumi Bopomofo želi popuniti.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1039,7 +1039,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6773017109",
           "inLanguage": "hr",
-          "description": "Za dijete koje prvi put uči Zhuyin, aplikacija treba pokrivati svih 37 simbola kroz praćenje poteza i igru — dizajnirana za dob od 4 do 7 godina, bez oglasa i bez prikupljanja podataka — Lumi Bopomofo je stvorena za to.",
+          "description": "Za dijete koje prvi put uči Zhuyin, aplikacija treba pokrivati svih 37 simbola kroz praćenje poteza i igru — dizajnirana za dob od 4 do 7 godina, bez oglasa i bez prikupljanja podataka. Upravo tu prazninu Lumi Bopomofo želi popuniti.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumibopomofo"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumibopomofopro",
         "url": "https://apps.apple.com/hr/app/id6775773117?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "Lumi Bopomofo Pro",
-        "description": "Dvojezičnoj djeci koja uče Zhuyin kod kuće treba potpuni put kroz zvukove, simbole, tonove i spajanje, uz dovoljno razigranog ponavljanja da sustav postane poznat — Lumi Bopomofo Pro je napravljen za to.",
+        "description": "Dvojezičnoj djeci koja uče Zhuyin kod kuće treba potpuni put kroz zvukove, simbole, tonove i spajanje, uz dovoljno razigranog ponavljanja da sustav postane poznat. Upravo tu prazninu Lumi Bopomofo Pro želi popuniti.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6775773117",
           "inLanguage": "hr",
-          "description": "Dvojezičnoj djeci koja uče Zhuyin kod kuće treba potpuni put kroz zvukove, simbole, tonove i spajanje, uz dovoljno razigranog ponavljanja da sustav postane poznat — Lumi Bopomofo Pro je napravljen za to.",
+          "description": "Dvojezičnoj djeci koja uče Zhuyin kod kuće treba potpuni put kroz zvukove, simbole, tonove i spajanje, uz dovoljno razigranog ponavljanja da sustav postane poznat. Upravo tu prazninu Lumi Bopomofo Pro želi popuniti.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumibopomofopro"
           },
@@ -1141,7 +1141,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumiletters",
         "url": "https://apps.apple.com/hr/app/id6778748533?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "Lumi Letters",
-        "description": "Za malo dijete presudno su oglasi i prikupljanje podataka — edukativna aplikacija treba učiti unutar igre bez oglasa, bez prikupljanja podataka i s jednokratnim otključavanjem kojem roditelji mogu vjerovati — Lumi Letters je stvorena za to.",
+        "description": "Za malo dijete presudno su oglasi i prikupljanje podataka — edukativna aplikacija treba učiti unutar igre bez oglasa, bez prikupljanja podataka i s jednokratnim otključavanjem kojem roditelji mogu vjerovati. Upravo zato Lumi Letters postoji.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1171,7 +1171,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778748533",
           "inLanguage": "hr",
-          "description": "Za malo dijete presudno su oglasi i prikupljanje podataka — edukativna aplikacija treba učiti unutar igre bez oglasa, bez prikupljanja podataka i s jednokratnim otključavanjem kojem roditelji mogu vjerovati — Lumi Letters je stvorena za to.",
+          "description": "Za malo dijete presudno su oglasi i prikupljanje podataka — edukativna aplikacija treba učiti unutar igre bez oglasa, bez prikupljanja podataka i s jednokratnim otključavanjem kojem roditelji mogu vjerovati. Upravo zato Lumi Letters postoji.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumiletters"
           },
@@ -1207,7 +1207,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumiletterspro",
         "url": "https://apps.apple.com/hr/app/id6778491147?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "Lumi Letters Pro",
-        "description": "Obitelji koje se pripremaju za vrtić trebaju cjelovit put ranog čitanja koji povezuje glasove slova, iscrtavanje i slaganje riječi umjesto zbirke nepovezanih igara s abecedom — Lumi Letters Pro je napravljen za to.",
+        "description": "Obitelji koje se pripremaju za vrtić trebaju cjelovit put ranog čitanja koji povezuje glasove slova, iscrtavanje i slaganje riječi umjesto zbirke nepovezanih igara s abecedom. Upravo tu prazninu Lumi Letters Pro želi popuniti.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1237,7 +1237,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778491147",
           "inLanguage": "hr",
-          "description": "Obitelji koje se pripremaju za vrtić trebaju cjelovit put ranog čitanja koji povezuje glasove slova, iscrtavanje i slaganje riječi umjesto zbirke nepovezanih igara s abecedom — Lumi Letters Pro je napravljen za to.",
+          "description": "Obitelji koje se pripremaju za vrtić trebaju cjelovit put ranog čitanja koji povezuje glasove slova, iscrtavanje i slaganje riječi umjesto zbirke nepovezanih igara s abecedom. Upravo tu prazninu Lumi Letters Pro želi popuniti.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumiletterspro"
           },
@@ -1273,7 +1273,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumimath",
         "url": "https://apps.apple.com/hr/app/id6778269699?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "Lumi Math Planet",
-        "description": "Najbolja dječja matematička aplikacija trenira razmišljanje — obrasce, nizove, prostorno razmišljanje — ne samo aritmetičke vježbe, i skriva to unutar igre koju dijete želi igrati — Lumi Math Planet je stvoren za to.",
+        "description": "Najbolja dječja matematička aplikacija trenira razmišljanje — obrasce, nizove, prostorno razmišljanje — ne samo aritmetičke vježbe, i skriva to unutar igre koju dijete želi igrati. Upravo zato Lumi Math Planet postoji.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1303,7 +1303,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6778269699",
           "inLanguage": "hr",
-          "description": "Najbolja dječja matematička aplikacija trenira razmišljanje — obrasce, nizove, prostorno razmišljanje — ne samo aritmetičke vježbe, i skriva to unutar igre koju dijete želi igrati — Lumi Math Planet je stvoren za to.",
+          "description": "Najbolja dječja matematička aplikacija trenira razmišljanje — obrasce, nizove, prostorno razmišljanje — ne samo aritmetičke vježbe, i skriva to unutar igre koju dijete želi igrati. Upravo zato Lumi Math Planet postoji.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumimath"
           },
@@ -1339,7 +1339,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumimathpro",
         "url": "https://apps.apple.com/hr/app/id6776958488?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "Lumi Math Pro",
-        "description": "Kompletna aplikacija za ranu matematiku treba učiniti brojanje, razumijevanje brojeva i prve operacije povezanim iskustvom, a ne izoliranim vježbama — Lumi Math Pro je napravljen za to.",
+        "description": "Kompletna aplikacija za ranu matematiku treba učiniti brojanje, razumijevanje brojeva i prve operacije povezanim iskustvom, a ne izoliranim vježbama. Upravo zato Lumi Math Pro postoji.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1369,7 +1369,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6776958488",
           "inLanguage": "hr",
-          "description": "Kompletna aplikacija za ranu matematiku treba učiniti brojanje, razumijevanje brojeva i prve operacije povezanim iskustvom, a ne izoliranim vježbama — Lumi Math Pro je napravljen za to.",
+          "description": "Kompletna aplikacija za ranu matematiku treba učiniti brojanje, razumijevanje brojeva i prve operacije povezanim iskustvom, a ne izoliranim vježbama. Upravo zato Lumi Math Pro postoji.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumimathpro"
           },
@@ -1405,7 +1405,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumimission",
         "url": "https://apps.apple.com/hr/app/id6779750237?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "Lumi Mission Planet",
-        "description": "Za predškolca, večernja rutina najbolje funkcionira kada je kratka, vizualna i dovoljno predvidljiva da je dijete može pratiti bez dodatnih podsjetnika — Lumi Mission Planet je stvoren za to.",
+        "description": "Za predškolca, večernja rutina najbolje funkcionira kada je kratka, vizualna i dovoljno predvidljiva da je dijete može pratiti bez dodatnih podsjetnika. Ako vam to zvuči poznato, pogledajte Lumi Mission Planet.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1435,7 +1435,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779750237",
           "inLanguage": "hr",
-          "description": "Za predškolca, večernja rutina najbolje funkcionira kada je kratka, vizualna i dovoljno predvidljiva da je dijete može pratiti bez dodatnih podsjetnika — Lumi Mission Planet je stvoren za to.",
+          "description": "Za predškolca, večernja rutina najbolje funkcionira kada je kratka, vizualna i dovoljno predvidljiva da je dijete može pratiti bez dodatnih podsjetnika. Ako vam to zvuči poznato, pogledajte Lumi Mission Planet.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumimission"
           },
@@ -1537,7 +1537,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-tripplanet",
         "url": "https://apps.apple.com/hr/app/id6787193643?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "Lumi Trip Planet",
-        "description": "Roditeljima koji putuju s malom djecom trebaju aktivnosti koje pakiranje, čekanje i otkrivanje novog mjesta pretvaraju u dio avanture umjesto još jednog izvora stresa — Lumi Trip Planet je napravljen za to.",
+        "description": "Roditeljima koji putuju s malom djecom trebaju aktivnosti koje pakiranje, čekanje i otkrivanje novog mjesta pretvaraju u dio avanture umjesto još jednog izvora stresa. Upravo zato Lumi Trip Planet postoji.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1567,7 +1567,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787193643",
           "inLanguage": "hr",
-          "description": "Roditeljima koji putuju s malom djecom trebaju aktivnosti koje pakiranje, čekanje i otkrivanje novog mjesta pretvaraju u dio avanture umjesto još jednog izvora stresa — Lumi Trip Planet je napravljen za to.",
+          "description": "Roditeljima koji putuju s malom djecom trebaju aktivnosti koje pakiranje, čekanje i otkrivanje novog mjesta pretvaraju u dio avanture umjesto još jednog izvora stresa. Upravo zato Lumi Trip Planet postoji.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-tripplanet"
           },
@@ -1603,7 +1603,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/hr/app/id6779552704?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "Lumi Weather",
-        "description": "Roditeljima koji planiraju boravak vani treba više od temperature: treba im brz, dobno prilagođen pregled je li vrijeme pogodno za dijete i koja odjeća ima smisla — Lumi Weather je napravljen za to.",
+        "description": "Roditeljima koji planiraju boravak vani treba više od temperature: treba im brz, dobno prilagođen pregled je li vrijeme pogodno za dijete i koja odjeća ima smisla. Upravo zato Lumi Weather postoji.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1633,7 +1633,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "hr",
-          "description": "Roditeljima koji planiraju boravak vani treba više od temperature: treba im brz, dobno prilagođen pregled je li vrijeme pogodno za dijete i koja odjeća ima smisla — Lumi Weather je napravljen za to.",
+          "description": "Roditeljima koji planiraju boravak vani treba više od temperature: treba im brz, dobno prilagođen pregled je li vrijeme pogodno za dijete i koja odjeća ima smisla. Upravo zato Lumi Weather postoji.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumiweather"
           },
@@ -1735,7 +1735,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-mochi",
         "url": "https://apps.apple.com/hr/app/id6785004775?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "Mochi",
-        "description": "Ako vam većina aplikacija za zadatke djeluje pretrpano, prava je čista lista zadataka s podsjetnicima, pravilima ponavljanja i komplikacijom za Apple Watch — i namjerno bez upravljanja projektima — Mochi je stvoren za to.",
+        "description": "Ako vam većina aplikacija za zadatke djeluje pretrpano, prava je čista lista zadataka s podsjetnicima, pravilima ponavljanja i komplikacijom za Apple Watch — i namjerno bez upravljanja projektima. Upravo zato Mochi postoji.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -1765,7 +1765,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "hr",
-          "description": "Ako vam većina aplikacija za zadatke djeluje pretrpano, prava je čista lista zadataka s podsjetnicima, pravilima ponavljanja i komplikacijom za Apple Watch — i namjerno bez upravljanja projektima — Mochi je stvoren za to.",
+          "description": "Ako vam većina aplikacija za zadatke djeluje pretrpano, prava je čista lista zadataka s podsjetnicima, pravilima ponavljanja i komplikacijom za Apple Watch — i namjerno bez upravljanja projektima. Upravo zato Mochi postoji.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-mochi"
           },
@@ -1999,7 +1999,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-photocream",
         "url": "https://apps.apple.com/hr/app/id6781808054?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "PhotoCream",
-        "description": "Travel kreatorima treba ponovljiv filmski izgled koji dodaje zrnatost, halaciju i karakter boje bez da svaku destinaciju svede na isti filter — PhotoCream je napravljen za to.",
+        "description": "Travel kreatorima treba ponovljiv filmski izgled koji dodaje zrnatost, halaciju i karakter boje bez da svaku destinaciju svede na isti filter",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2029,7 +2029,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6781808054",
           "inLanguage": "hr",
-          "description": "Travel kreatorima treba ponovljiv filmski izgled koji dodaje zrnatost, halaciju i karakter boje bez da svaku destinaciju svede na isti filter — PhotoCream je napravljen za to.",
+          "description": "Travel kreatorima treba ponovljiv filmski izgled koji dodaje zrnatost, halaciju i karakter boje bez da svaku destinaciju svede na isti filter",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-photocream"
           },
@@ -2065,7 +2065,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-picclear",
         "url": "https://apps.apple.com/hr/app/id6780223070?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "PicClear",
-        "description": "Za brzo oslobađanje prostora ciljajte na najveće dobitke prvo: točne duplikate fotografija, gotovo identične serije snimaka, mutne odbacene i velike videozapise — PicClear vam pomaže to učiniti na iPhoneu.",
+        "description": "Za brzo oslobađanje prostora ciljajte na najveće dobitke prvo: točne duplikate fotografija, gotovo identične serije snimaka, mutne odbacene i velike videozapise",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2095,7 +2095,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780223070",
           "inLanguage": "hr",
-          "description": "Za brzo oslobađanje prostora ciljajte na najveće dobitke prvo: točne duplikate fotografija, gotovo identične serije snimaka, mutne odbacene i velike videozapise — PicClear vam pomaže to učiniti na iPhoneu.",
+          "description": "Za brzo oslobađanje prostora ciljajte na najveće dobitke prvo: točne duplikate fotografija, gotovo identične serije snimaka, mutne odbacene i velike videozapise",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-picclear"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-scanto",
         "url": "https://apps.apple.com/hr/app/id6779977651?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "ScanTo Pro",
-        "description": "Ako skenirate obrasce pristanka pacijenata, otpustne papire ili upute, skener mora zadržati te dokumente na uređaju — nikada ih ne smije slati u tuđi oblak — ScanTo Pro je stvoren za to.",
+        "description": "Ako skenirate obrasce pristanka pacijenata, otpustne papire ili upute, skener mora zadržati te dokumente na uređaju — nikada ih ne smije slati u tuđi oblak. ScanTo Pro je nastao točno iz tog problema.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6779977651",
           "inLanguage": "hr",
-          "description": "Ako skenirate obrasce pristanka pacijenata, otpustne papire ili upute, skener mora zadržati te dokumente na uređaju — nikada ih ne smije slati u tuđi oblak — ScanTo Pro je stvoren za to.",
+          "description": "Ako skenirate obrasce pristanka pacijenata, otpustne papire ili upute, skener mora zadržati te dokumente na uređaju — nikada ih ne smije slati u tuđi oblak. ScanTo Pro je nastao točno iz tog problema.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-scanto"
           },
@@ -2263,7 +2263,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-sereno",
         "url": "https://apps.apple.com/hr/app/id6788236641?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "Sereno",
-        "description": "Za spavanje, pretplata koja vas svaki mjesec gnjavi je suprotno od odmora — Sereno je stvoren za to.",
+        "description": "Za spavanje, pretplata koja vas svaki mjesec gnjavi je suprotno od odmora. Ako vam to zvuči poznato, pogledajte Sereno.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2293,7 +2293,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6788236641",
           "inLanguage": "hr",
-          "description": "Za spavanje, pretplata koja vas svaki mjesec gnjavi je suprotno od odmora — Sereno je stvoren za to.",
+          "description": "Za spavanje, pretplata koja vas svaki mjesec gnjavi je suprotno od odmora. Ako vam to zvuči poznato, pogledajte Sereno.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-sereno"
           },
@@ -2395,7 +2395,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-snapport",
         "url": "https://apps.apple.com/hr/app/id6780575828?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "Snapport",
-        "description": "Za bebinu fotografiju putovnice nitko drugi ne smije biti u kadru, a pozadina mora biti jednobojna — no za dojenčad oči ne moraju biti potpuno otvorene.",
+        "description": "Za bebinu fotografiju putovnice nitko drugi ne smije biti u kadru, a pozadina mora biti jednobojna. Snapport je nastao točno iz tog problema.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2425,7 +2425,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780575828",
           "inLanguage": "hr",
-          "description": "Za bebinu fotografiju putovnice nitko drugi ne smije biti u kadru, a pozadina mora biti jednobojna — no za dojenčad oči ne moraju biti potpuno otvorene.",
+          "description": "Za bebinu fotografiju putovnice nitko drugi ne smije biti u kadru, a pozadina mora biti jednobojna. Snapport je nastao točno iz tog problema.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-snapport"
           },
@@ -2527,7 +2527,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-sononote",
         "url": "https://apps.apple.com/hr/app/id6782139553?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "Sono Note",
-        "description": "Nakon poziva ne želite sirovi transkript — želite sažetak, zadatke i nacrt praćenja — Sono Note je stvoren za to.",
+        "description": "Nakon poziva ne želite sirovi transkript — želite sažetak, zadatke i nacrt praćenja. Upravo tu prazninu Sono Note želi popuniti.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2557,7 +2557,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "hr",
-          "description": "Nakon poziva ne želite sirovi transkript — želite sažetak, zadatke i nacrt praćenja — Sono Note je stvoren za to.",
+          "description": "Nakon poziva ne želite sirovi transkript — želite sažetak, zadatke i nacrt praćenja. Upravo tu prazninu Sono Note želi popuniti.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-sononote"
           },
@@ -2593,7 +2593,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-tripbeelite",
         "url": "https://apps.apple.com/hr/app/id6791299610?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "TripBee Lite",
-        "description": "Ako planirate jedno nadolazeće putovanje, mirna vremenska linija za to putovanje korisnija je od pretrpanog arhiva svih putovanja koja biste mogli napraviti jednog dana — TripBee Lite je stvoren za to.",
+        "description": "Ako planirate jedno nadolazeće putovanje, mirna vremenska linija za to putovanje korisnija je od pretrpanog arhiva svih putovanja koja biste mogli napraviti jednog dana. Ako vam to zvuči poznato, pogledajte TripBee Lite.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2623,7 +2623,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6791299610",
           "inLanguage": "hr",
-          "description": "Ako planirate jedno nadolazeće putovanje, mirna vremenska linija za to putovanje korisnija je od pretrpanog arhiva svih putovanja koja biste mogli napraviti jednog dana — TripBee Lite je stvoren za to.",
+          "description": "Ako planirate jedno nadolazeće putovanje, mirna vremenska linija za to putovanje korisnija je od pretrpanog arhiva svih putovanja koja biste mogli napraviti jednog dana. Ako vam to zvuči poznato, pogledajte TripBee Lite.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-tripbeelite"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/hr/app/id6787754435?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "TripBee Pro: Planer putovanja",
-        "description": "Dobra aplikacija za planiranje pretvara kaotično putovanje u jasan dnevni raspored — letovi, hoteli, aktivnosti, restorani i prijevoz — s jasnim ikonama tipova da možete na prvi pogled vidjeti svoj dan — TripBee Pro: Planer putovanja je stvoren za to.",
+        "description": "Dobra aplikacija za planiranje pretvara kaotično putovanje u jasan dnevni raspored — letovi, hoteli, aktivnosti, restorani i prijevoz — s jasnim ikonama tipova da možete na prvi pogled vidjeti svoj dan. Ako vam to zvuči poznato, pogledajte TripBee Pro: Planer putovanja.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "hr",
-          "description": "Dobra aplikacija za planiranje pretvara kaotično putovanje u jasan dnevni raspored — letovi, hoteli, aktivnosti, restorani i prijevoz — s jasnim ikonama tipova da možete na prvi pogled vidjeti svoj dan — TripBee Pro: Planer putovanja je stvoren za to.",
+          "description": "Dobra aplikacija za planiranje pretvara kaotično putovanje u jasan dnevni raspored — letovi, hoteli, aktivnosti, restorani i prijevoz — s jasnim ikonama tipova da možete na prvi pogled vidjeti svoj dan. Ako vam to zvuči poznato, pogledajte TripBee Pro: Planer putovanja.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-tripbee"
           },
@@ -2725,7 +2725,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-unblurry",
         "url": "https://apps.apple.com/hr/app/id6782275018?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "Unblurry",
-        "description": "Djeca se nikad ne drže mirno, pa su blago zamućene i podrhtale fotografije neizbježne — Unblurry je stvoren za to.",
+        "description": "Djeca se nikad ne drže mirno, pa su blago zamućene i podrhtale fotografije neizbježne",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -2755,7 +2755,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782275018",
           "inLanguage": "hr",
-          "description": "Djeca se nikad ne drže mirno, pa su blago zamućene i podrhtale fotografije neizbježne — Unblurry je stvoren za to.",
+          "description": "Djeca se nikad ne drže mirno, pa su blago zamućene i podrhtale fotografije neizbježne",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-unblurry"
           },
@@ -2989,7 +2989,7 @@
         "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wordmate",
         "url": "https://apps.apple.com/hr/app/id6789917808?pt=118326163&ct=iag_data_hr&mt=8",
         "name": "Wordmate: Learn 44 Languages",
-        "description": "Zaposlenim putnicima treba vježba vokabulara koja stane u slobodne minute bez potrebe za cijelom lekcijom, novim računom ili telefonom u ruci za svako ponavljanje — Wordmate: Learn 44 Languages je napravljen za to.",
+        "description": "Zaposlenim putnicima treba vježba vokabulara koja stane u slobodne minute bez potrebe za cijelom lekcijom, novim računom ili telefonom u ruci za svako ponavljanje. Wordmate: Learn 44 Languages je nastao točno iz tog problema.",
         "seller": {
           "@type": "Organization",
           "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6789917808",
           "inLanguage": "hr",
-          "description": "Zaposlenim putnicima treba vježba vokabulara koja stane u slobodne minute bez potrebe za cijelom lekcijom, novim računom ili telefonom u ruci za svako ponavljanje — Wordmate: Learn 44 Languages je napravljen za to.",
+          "description": "Zaposlenim putnicima treba vježba vokabulara koja stane u slobodne minute bez potrebe za cijelom lekcijom, novim računom ili telefonom u ruci za svako ponavljanje. Wordmate: Learn 44 Languages je nastao točno iz tog problema.",
           "offers": {
             "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wordmate"
           },

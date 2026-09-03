@@ -40,9 +40,30 @@ from videogen.registry import APPS, APPSTORE  # noqa: E402
 
 
 MANIFEST_VERSION = 1
-DEFAULT_SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
-).rstrip("/")
+def _default_public_site() -> str:
+    """The Guide's public host, shared with the GEO generators.
+
+    ``GEO_SITE`` still wins so the cloud workflows can pin a host; otherwise
+    the single source in geo/site_config decides, and the old Pages origin
+    is only the last-resort fallback for an isolated copy.
+    """
+    pinned = os.environ.get("GEO_SITE", "").strip()
+    if pinned:
+        return pinned.rstrip("/")
+    try:
+        import sys as _sys
+
+        _geo = Path(__file__).resolve().parents[1] / "geo"
+        if str(_geo) not in _sys.path:
+            _sys.path.insert(0, str(_geo))
+        from site_config import PUBLIC_SITE  # noqa: E402
+
+        return PUBLIC_SITE.rstrip("/")
+    except Exception:  # noqa: BLE001 - isolated copies have no geo/ beside them
+        return "https://alice51849.github.io/ios-app-guide"
+
+
+DEFAULT_SITE = _default_public_site()
 DEFAULT_PAGES = Path(os.environ.get("GEO_PAGES", GEO / "pages"))
 PRIVATE_DIR = Path(
     os.environ.get("GROWTH_PRIVATE_DIR", "~/.growth-private")

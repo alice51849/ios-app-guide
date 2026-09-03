@@ -47,7 +47,7 @@ import gen_standard_site as generator  # noqa: E402
 
 MIRROR_SHA256 = {
     "_engine/social/gen_standard_site.py": (
-        "56fa242fb822cc3683183c24e49c99d24fd9390eaa7d1833971e4ccfc08e3546"
+        "0d009d21787a55d35f3e5001a7c379e8df9835d31ff57d3c8d28db839cd2ef35"
     ),
     "_engine/social/standard_site_publish.py": (
         "de28ff305b368c0ce5bf8c07326639dbfbe015120a7e696101b7aea33bc25176"

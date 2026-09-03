@@ -1,7 +1,7 @@
 ---
 title: "BattAI: 電池健康分數 — 規則、來源與限制都說清楚 | iOS App"
 lang: "zh-Hant"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/zh-Hant/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/zh-Hant/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI 只使用公開 iOS API 提供的五項資料：電量、充電狀
 
 [在 App Store 取得 BattAI: 電池健康分數](https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
-[閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/battai.html)
+[閱讀完整指南](https://open.cait518.cc/ios-app-guide/zh-Hant/battai.html)
 
 > 這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。

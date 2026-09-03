@@ -1,7 +1,7 @@
 ---
 title: "bedste app til stemme-noter, der opsummerer møder på iPhone"
 lang: "da"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/da/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/da/index.html"
 modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
@@ -20,6 +20,6 @@ Efter et opkald vil du ikke have en rå transskription — du vil have opsummeri
 
 [Hent Sono Note i App Store →](https://apps.apple.com/dk/app/id6782139553?pt=118326163&ct=iag_data_da&mt=8)
 
-[Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
+[Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 
 > Guide skrevet af Lumi Studio, som har udviklet appen. Appnavne er varemærker tilhørende deres ejere og bruges udelukkende til identifikation. Når det gælder dokumenter, sundhed, skole og produktivitet, bør du tjekke de officielle krav, hvor det er relevant.

@@ -1,7 +1,7 @@
 ---
 title: "abonelik olmadan uykuya dalmak için en iyi beyaz gürültü uygulaması"
 lang: "tr"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/tr/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/tr/index.html"
 modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
@@ -21,6 +21,6 @@ Uyku için, her ay sizi rahatsız eden bir abonelik dinlendirici değildir. Tan�
 
 [Sereno’yu App Store’dan edinin →](https://apps.apple.com/tr/app/id6788236641?pt=118326163&ct=iag_data_tr&mt=8)
 
-[Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
+[Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 
 > Uygulamanın geliştiricisi Lumi Studio tarafından hazırlanan rehber. Uygulama adları ilgili sahiplerinin ticari markalarıdır ve yalnızca tanımlama amacıyla kullanılır. Belgeler, sağlık, okul ve verimlilikle ilgili kararlarda, geçerli olduğu yerlerde resmi gereklilikleri doğrulayın.

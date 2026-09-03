@@ -1,7 +1,7 @@
 ---
 title: "Aim990 Plus: Тест английского — Практика в режиме таймера | iOS App"
 lang: "ru"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/ru/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/ru/index.html"
 modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
@@ -19,6 +19,6 @@ Aim990 Plus — тренажёр для взрослых, которым важ�
 
 [Установить Aim990 Plus: Тест английского в App Store](https://apps.apple.com/ru/app/id6792483140?pt=118326163&ct=iag_data_ru&mt=8)
 
-[Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/aim990plus.html)
+[Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/aim990plus.html)
 
 > Это материал, созданный Lumi Studio, разработчиком всех перечисленных приложений.

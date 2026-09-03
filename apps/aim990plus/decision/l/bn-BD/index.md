@@ -1,7 +1,7 @@
 ---
 title: "Aim990 Plus: ইংরেজি মক টেস্ট — চাপেও দ্রুত ও নির্ভুল উত্তর | iOS App"
 lang: "bn-BD"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/bn-BD/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/bn-BD/index.html"
 modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
@@ -19,6 +19,6 @@ Aim990 Plus প্রাপ্তবয়স্ক শিক্ষার্থ�
 
 [App Store থেকে Aim990 Plus: ইংরেজি মক টেস্ট ডাউনলোড করুন](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
-[সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/aim990plus.html)
+[সম্পূর্ণ গাইড পড়ুন](https://open.cait518.cc/ios-app-guide/bn-BD/aim990plus.html)
 
 > এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।

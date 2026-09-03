@@ -1,7 +1,7 @@
 ---
 title: "Mochi DoneStamp：上次何时 — 生活事件、周期与完成记录 | iOS App"
 lang: "zh-Hans"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/zh-Hans/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/zh-Hans/index.html"
 modified: "2026-09-03"
 app_store_id: "6790800323"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [在 App Store 获取 Mochi DoneStamp：上次何时](https://apps.apple.com/cn/app/id6790800323?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
-[阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/mochidonestamp.html)
+[阅读完整指南](https://open.cait518.cc/ios-app-guide/zh-Hans/mochidonestamp.html)
 
 > 这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。

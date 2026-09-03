@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>旅遊預算計算機 — 兩種幣別、ECB 參考匯率、免註冊</title>
 <meta name="description" content="把當地花費（當地幣別）與機票保險（本國幣別）分開計算，最後才用有標日期的 ECB 參考匯率換算，並算出每人與每人每天的金額。">
-<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/travel-budget-calculator.html">
-<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/travel-budget-calculator.html">
-<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/travel-budget-calculator.html">
-<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/travel-budget-calculator.html">
-<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/travel-budget-calculator.html">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/travel-budget-calculator.html">
+<link rel="alternate" hreflang="en" href="https://open.cait518.cc/ios-app-guide/tools/travel-budget-calculator.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/travel-budget-calculator.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/travel-budget-calculator.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/tools/travel-budget-calculator.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="旅遊預算計算機">
 <meta property="og:description" content="把當地花費（當地幣別）與機票保險（本國幣別）分開計算，最後才用有標日期的 ECB 參考匯率換算，並算出每人與每人每天的金額。">
-<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/travel-budget-calculator.html">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/travel-budget-calculator.html">
 <meta name="twitter:card" content="summary">
 <style>
 :root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
@@ -65,12 +65,12 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 
 @media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"旅遊預算計算機","description":"把當地花費（當地幣別）與機票保險（本國幣別）分開計算，最後才用有標日期的 ECB 參考匯率換算，並算出每人與每人每天的金額。","url":"https://alice51849.github.io/ios-app-guide/zh-Hant/tools/travel-budget-calculator.html","inLanguage":"zh-Hant","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"TravelApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["當地花費以當地幣別輸入","固定支出以本國幣別輸入","可調整的預備金比例","每人與每人每天金額"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"旅遊預算計算機","description":"把當地花費（當地幣別）與機票保險（本國幣別）分開計算，最後才用有標日期的 ECB 參考匯率換算，並算出每人與每人每天的金額。","url":"https://open.cait518.cc/ios-app-guide/zh-Hant/tools/travel-budget-calculator.html","inLanguage":"zh-Hant","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"TravelApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["當地花費以當地幣別輸入","固定支出以本國幣別輸入","可調整的預備金比例","每人與每人每天金額"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hant","mainEntity":[{"@type":"Question","name":"是用哪種匯率換算？","acceptedAnswer":{"@type":"Answer","text":"歐洲央行（ECB）參考匯率，透過公開的 frankfurter.dev 取得，取不到時使用內建、標有日期的快照。實際使用的匯率、日期與來源都顯示在最後一格。"}},{"@type":"Question","name":"為什麼要把兩種幣別分開？","acceptedAnswer":{"@type":"Answer","text":"因為混在一起就是旅遊預算失準的主因。住宿與餐飲是當地幣別、會受匯率波動影響；已經在國內付掉的機票則不會。"}},{"@type":"Question","name":"預備金抓 10% 夠嗎？","acceptedAnswer":{"@type":"Answer","text":"那只是起點，可以在 0–30% 之間調整。天數長或第一次去的地方通常要抓更多。"}}]}</script>
 <link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
-<header class="top"><div class="wrap nav"><a href="index.html">← 免費工具</a><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/" >iOS App Guide</a></div></header>
+<header class="top"><div class="wrap nav"><a href="index.html">← 免費工具</a><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/" >iOS App Guide</a></div></header>
 <section class="hero wrap">
 <span class="eyebrow">兩種幣別 · 標明日期的 ECB 參考匯率</span>
 <h1>旅遊預算計算機</h1>
@@ -115,7 +115,7 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 <section class="grid">
 <article class="card"><h2>運作方式</h2><ol><li>住宿、餐飲、當地交通與活動以當地幣別輸入每日金額，加總後乘上天數。</li><li>預備金滑桿會在當地花費小計上加一個百分比，預設 10%，因為旅行幾乎都會超支。</li><li>只有當地花費小計會被換算，使用 ECB 參考匯率表的交叉匯率；機票與保險本來就是本國幣別，之後才相加。</li><li>頁面內建有日期的 ECB 匯率快照，並會嘗試向公開的 frankfurter.dev 更新；實際用到哪一份、日期是什麼都會顯示。</li></ol></article>
 <article class="card"><h2>這個工具不會做的事</h2><ul><li>這不是報價。銀行與信用卡通常另有 1–4% 的價差，ECB 匯率只是中間參考值。</li><li>沒有任何價格資料庫，所有數字都是你自己輸入的，不會替你猜某個城市的房價。</li><li>不儲存、不上傳，重新整理就沒了。</li></ul></article>
-<article class="card wide"><h2>其他免費工具</h2><ul><li><a href="voice-to-text.html">語音轉文字</a></li><li><a href="redact-to-pdf.html">文件遮蔽並輸出 PDF</a></li><li><a href="math-worksheet-generator.html">數學練習題產生器</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
+<article class="card wide"><h2>其他免費工具</h2><ul><li><a href="voice-to-text.html">語音轉文字</a></li><li><a href="redact-to-pdf.html">文件遮蔽並輸出 PDF</a></li><li><a href="math-worksheet-generator.html">數學練習題產生器</a></li><li><a href="https://open.cait518.cc/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
 </section>
 <section class="faq"><h2>常見問題</h2><details><summary>是用哪種匯率換算？</summary><p>歐洲央行（ECB）參考匯率，透過公開的 frankfurter.dev 取得，取不到時使用內建、標有日期的快照。實際使用的匯率、日期與來源都顯示在最後一格。</p></details><details><summary>為什麼要把兩種幣別分開？</summary><p>因為混在一起就是旅遊預算失準的主因。住宿與餐飲是當地幣別、會受匯率波動影響；已經在國內付掉的機票則不會。</p></details><details><summary>預備金抓 10% 夠嗎？</summary><p>那只是起點，可以在 0–30% 之間調整。天數長或第一次去的地方通常要抓更多。</p></details></section>
 <section class="app-card"><h2>想在旅途中記下實際花費嗎？</h2>

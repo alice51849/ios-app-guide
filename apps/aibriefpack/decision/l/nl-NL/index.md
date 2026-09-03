@@ -1,7 +1,7 @@
 ---
 title: "AI Brief: Bestand naar prompt — Bestanden naar heldere context | iOS App"
 lang: "nl-NL"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/nl-NL/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/nl-NL/index.html"
 modified: "2026-09-03"
 app_store_id: "6791658210"
 verified_live: true
@@ -20,6 +20,6 @@ Betere context. Betere antwoorden. Verander schermafbeeldingen, bestanden, notit
 
 [Download AI Brief: Bestand naar prompt in de App Store](https://apps.apple.com/nl/app/id6791658210?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
-[Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/aibriefpack.html)
+[Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/aibriefpack.html)
 
 > Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.

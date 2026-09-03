@@ -1,7 +1,7 @@
 ---
 title: "iPhone پر بچوں کے لیے بہترین بوموفو ایپ تاکہ وہ ژوئین سیکھ سکیں"
 lang: "ur-PK"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/ur-PK/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/ur-PK/index.html"
 modified: "2026-09-03"
 app_store_id: "6773017109"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [App Store سے Lumi Bopomofo حاصل کریں →](https://apps.apple.com/pk/app/id6773017109?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
-[مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
+[مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 
 > ایپ بنانے والے Lumi Studio کی لکھی ہوئی رہنمائی۔ ایپس کے نام اُن کے مالکان کے ٹریڈ مارک ہیں اور صرف شناخت کے لیے استعمال ہوئے ہیں۔ دستاویزات، صحت، تعلیم اور کام سے متعلق فیصلوں میں جہاں ضرورت ہو وہاں سرکاری یا ادارہ جاتی تقاضے ضرور دیکھ لیں۔

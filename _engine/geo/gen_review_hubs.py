@@ -11,8 +11,9 @@ REVIEW_HUBS.mkdir(parents=True, exist_ok=True)
 
 sys.path.insert(0, str(HERE / ".." / "social"))
 from videogen.registry import APPS, APPSTORE
+from site_config import PUBLIC_SITE  # noqa: E402
 
-GEO_SITE = os.getenv("GEO_SITE", "https://alice51849.github.io/ios-app-guide")
+GEO_SITE = os.getenv("GEO_SITE", PUBLIC_SITE)
 CSS = """body{font-family:system-ui,sans-serif;max-width:960px;margin:2rem auto;padding:0 1rem;color:#222}
 h1{font-size:1.6rem;line-height:1.3}h2{font-size:1.1rem;color:#555;margin-top:2rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.6rem;margin:1rem 0}

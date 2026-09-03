@@ -1,7 +1,7 @@
 ---
 title: "najbolja offline aplikacija za skeniranje dokumenata bez oblaka za medicinske sestre"
 lang: "hr"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/hr/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/hr/index.html"
 modified: "2026-09-03"
 app_store_id: "6779977651"
 verified_live: true
@@ -20,6 +20,6 @@ Ako skenirate obrasce pristanka pacijenata, otpustne papire ili upute, skener mo
 
 [Preuzmite ScanTo Pro u App Storeu →](https://apps.apple.com/hr/app/id6779977651?pt=118326163&ct=iag_data_hr&mt=8)
 
-[Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
+[Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 
 > Vodič je napisao Lumi Studio, razvojni tim aplikacije. Nazivi aplikacija zaštitni su znakovi svojih vlasnika i navode se samo radi identifikacije. Kod odluka vezanih uz dokumente, zdravlje, školu i produktivnost provjerite službene zahtjeve ondje gdje je to važno.

@@ -1,7 +1,7 @@
 ---
 title: "BattAI: Стан батареї — Чіткі правила, джерела й обмеження | iOS App"
 lang: "uk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/uk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/uk/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI використовує п’ять значень із публ�
 
 [Завантажте BattAI: Стан батареї з App Store](https://apps.apple.com/ua/app/id6802423998?pt=118326163&ct=iag_data_uk&mt=8)
 
-[Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/battai.html)
+[Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/battai.html)
 
 > Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.

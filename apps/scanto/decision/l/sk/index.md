@@ -1,7 +1,7 @@
 ---
 title: "najlepšia offline aplikácia na skenovanie dokumentov bez cloudu pre sestry"
 lang: "sk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/sk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/sk/index.html"
 modified: "2026-09-03"
 app_store_id: "6779977651"
 verified_live: true
@@ -20,6 +20,6 @@ Ak skenujete súhlas pacientov, prepúšťacie papiere alebo odporúčania, sken
 
 [Stiahnite si ScanTo Pro v App Store →](https://apps.apple.com/sk/app/id6779977651?pt=118326163&ct=iag_data_sk&mt=8)
 
-[Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
+[Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 
 > Sprievodcu napísal vývojár aplikácie, štúdio Lumi Studio. Názvy aplikácií sú ochrannými známkami svojich vlastníkov a používajú sa len na identifikáciu. Pri rozhodnutiach týkajúcich sa dokumentov, zdravia, školy a produktivity si tam, kde je to potrebné, overte oficiálne požiadavky.

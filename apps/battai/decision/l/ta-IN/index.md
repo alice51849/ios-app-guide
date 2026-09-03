@@ -1,7 +1,7 @@
 ---
 title: "BattAI: பேட்டரி நலம் — தெளிவான விதிகள், ஆதாரங்கள், வரம்புகள் | iOS App"
 lang: "ta-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ta-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ta-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI பொது iOS API-களிலிருந்து 5 மதி
 
 [App Store-இல் BattAI: பேட்டரி நலம்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_ta_in&mt=8)
 
-[முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/battai.html)
+[முழு வழிகாட்டியை படிக்கவும்](https://open.cait518.cc/ios-app-guide/ta-IN/battai.html)
 
 > இது Lumi Studio வெளியிட்ட முதல்-பார்ட்டி தரவு, இது பட்டியலிடப்பட்ட ஒவ்வொரு செயலியின் உருவாக்குநர்.

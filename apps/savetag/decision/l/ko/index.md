@@ -1,7 +1,7 @@
 ---
 title: "SaveTag: AI 링크 보관함 — 나중에 읽기, 자동 태그 정리 | iOS App"
 lang: "ko"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ko/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/ko/index.html"
 modified: "2026-09-03"
 app_store_id: "6802505528"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [App Store에서 SaveTag: AI 링크 보관함 받기](https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=iag_data_ko&mt=8)
 
-[전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/savetag.html)
+[전체 안내서 읽기](https://open.cait518.cc/ios-app-guide/ko/savetag.html)
 
 > 이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.

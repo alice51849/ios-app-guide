@@ -16,11 +16,12 @@ import subprocess
 from typing import Any
 from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
+from site_config import ORIGIN_HOST, PUBLIC_SITE  # noqa: E402
 
 
 HERE = Path(__file__).resolve().parent
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
-SITE = "https://alice51849.github.io/ios-app-guide"
+SITE = PUBLIC_SITE
 STATE_RELATIVE_PATH = Path("_engine/geo/sitemap_lastmod_state.json")
 SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 DATE_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
@@ -231,6 +232,14 @@ def _site_relative(url: str, site: str) -> str | None:
     ):
         raise ValueError(f"Invalid sitemap URL: {url}")
     if parsed.netloc != expected.netloc:
+        # The Pages origin serves the same bytes under a different name, and a
+        # few owned sitemaps still point at root-level resources there (the
+        # ResourceSync source description, for one). Those are ours but sit
+        # outside this site's path, so they are preserved untouched -- the same
+        # answer this function already gives for an in-host, out-of-path URL.
+        # Anything on a host we do not own is still a hard failure.
+        if parsed.netloc == ORIGIN_HOST:
+            return None
         raise ValueError(f"Sitemap URL uses an unowned host: {url}")
     base_path = expected.path.rstrip("/")
     if parsed.path == base_path or parsed.path == f"{base_path}/":

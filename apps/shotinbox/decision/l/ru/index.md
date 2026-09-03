@@ -1,7 +1,7 @@
 ---
 title: "ShotInbox AI: Sort Screenshots — Органайзер скриншотов | iOS App"
 lang: "ru"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/ru/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/ru/index.html"
 modified: "2026-09-03"
 app_store_id: "6802166527"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [Установить ShotInbox AI: Sort Screenshots в App Store](https://apps.apple.com/ru/app/id6802166527?pt=118326163&ct=iag_data_ru&mt=8)
 
-[Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/shotinbox.html)
+[Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/shotinbox.html)
 
 > Это материал, созданный Lumi Studio, разработчиком всех перечисленных приложений.

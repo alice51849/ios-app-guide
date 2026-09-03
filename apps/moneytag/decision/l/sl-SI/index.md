@@ -1,7 +1,7 @@
 ---
 title: "MoneyTag: Prihodki in stroški — Projekti · Oznake · Poročilo | iOS App"
 lang: "sl-SI"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/sl-SI/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/sl-SI/index.html"
 modified: "2026-09-03"
 app_store_id: "6801956402"
 verified_live: true
@@ -26,6 +26,6 @@ Prihodki in stroški Vsak projekt vodi svoje knjige: prihodki minus stroški daj
 
 [Prenesite MoneyTag: Prihodki in stroški iz trgovine App Store](https://apps.apple.com/si/app/id6801956402?pt=118326163&ct=iag_data_sl_si&mt=8)
 
-[Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/moneytag.html)
+[Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/moneytag.html)
 
 > To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.

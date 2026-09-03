@@ -1,7 +1,7 @@
 ---
 title: "Aim990 Plus: અંગ્રેજી ટેસ્ટ — દબાણમાં ઝડપી સચોટ જવાબ | iOS App"
 lang: "gu-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/gu-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/gu-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
@@ -19,6 +19,6 @@ Aim990 Plus પુખ્ત વયના શીખનારાઓ માટે �
 
 [App Store પરથી Aim990 Plus: અંગ્રેજી ટેસ્ટ મેળવો](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_gu_in&mt=8)
 
-[પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/aim990plus.html)
+[પૂર્ણ માર્ગદર્શિકા વાંચો](https://open.cait518.cc/ios-app-guide/gu-IN/aim990plus.html)
 
 > આ સામગ્રી Lumi Studio દ્વારા સીધી પ્રકાશિત કરવામાં આવી છે, જે સૂચિબદ્ધ તમામ એપ્સનો વિકાસકર્તા છે.

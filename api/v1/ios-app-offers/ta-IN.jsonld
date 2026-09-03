@@ -1,8 +1,8 @@
 {
   "@context": "https://schema.org",
   "@type": "OfferCatalog",
-  "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#catalog",
-  "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld",
+  "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#catalog",
+  "url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld",
   "name": "Lumi Studio வெளியீட்டாளர் தேடல் நோக்கக் குறியீட்டு அட்டவணை",
   "description": "ஒவ்வொரு செயலியும் யாருக்காக வடிவமைக்கப்பட்டுள்ளதோ, அவர்கள் நிறைவேற்ற முயற்சிக்கும் பணியோ, நேரடி App Store பாதையோ ஆகியவற்றின் முதல்-பார்ட்டி அட்டவணை.",
   "inLanguage": "ta-IN",
@@ -16,15 +16,15 @@
       "url": "https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-notesstudio100",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
         "description": "100 Notes Studio கையெழுத்து, வடிவமைக்கப்பட்ட உரை, PDF குறிப்புரை, பக்கத்துடன் இணைந்த ஒலிப்பதிவு, படிப்பு கருவிகள் ஆகியவற்றை இணையமின்றி இயங்கும் தனிப்பட்ட",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -45,13 +45,13 @@
             "target": "https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/notesstudio100.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/notesstudio100.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "ta-IN",
           "description": "100 Notes Studio கையெழுத்து, வடிவமைக்கப்பட்ட உரை, PDF குறிப்புரை, பக்கத்துடன் இணைந்த ஒலிப்பதிவு, படிப்பு கருவிகள் ஆகியவற்றை இணையமின்றி இயங்கும் தனிப்பட்ட",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-notesstudio100"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-notesstudio100"
           },
           "additionalProperty": [
             {
@@ -82,15 +82,15 @@
       "url": "https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-aibriefpack",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "AI Brief: கோப்பை ப்ராம்ட்டாக",
         "description": "சிறந்த சூழல், சிறந்த பதில்கள்.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -111,13 +111,13 @@
             "target": "https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/aibriefpack.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/aibriefpack.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6791658210",
           "inLanguage": "ta-IN",
           "description": "சிறந்த சூழல், சிறந்த பதில்கள்.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-aibriefpack"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-aibriefpack"
           },
           "additionalProperty": [
             {
@@ -148,15 +148,15 @@
       "url": "https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-aim990",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-aim990",
         "url": "https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Aim990",
         "description": "பகுதி 5 குறுகியதாக தோன்றினாலும், அந்த முழுமையற்ற வாக்கியக் கேள்விகள் இலக்கணம் மற்றும் சொற்பொருள் தானாக இல்லாவிட்டால் நேரத்தை இழக்கச் செய்யும்.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -177,13 +177,13 @@
             "target": "https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6784974530",
           "inLanguage": "ta-IN",
           "description": "பகுதி 5 குறுகியதாக தோன்றினாலும், அந்த முழுமையற்ற வாக்கியக் கேள்விகள் இலக்கணம் மற்றும் சொற்பொருள் தானாக இல்லாவிட்டால் நேரத்தை இழக்கச் செய்யும்.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-aim990"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-aim990"
           },
           "additionalProperty": [
             {
@@ -214,15 +214,15 @@
       "url": "https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-aim990plus",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-aim990plus",
         "url": "https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Aim990 Plus: ஆங்கிலத் தேர்வு",
         "description": "Aim990 Plus என்பது பெரியவர்கள் தங்கள் ஆங்கிலக் கேட்புத் திறன், வாசிப்புத் திறன், நேர மேலாண்மை ஆகியவற்றை ஒருமுகமாக வளர்க்க உருவாக்கப்பட்ட அழுத்தப் பயிற்சி",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -243,13 +243,13 @@
             "target": "https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/aim990plus.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/aim990plus.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6792483140",
           "inLanguage": "ta-IN",
           "description": "Aim990 Plus என்பது பெரியவர்கள் தங்கள் ஆங்கிலக் கேட்புத் திறன், வாசிப்புத் திறன், நேர மேலாண்மை ஆகியவற்றை ஒருமுகமாக வளர்க்க உருவாக்கப்பட்ட அழுத்தப் பயிற்சி",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-aim990plus"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-aim990plus"
           },
           "additionalProperty": [
             {
@@ -280,15 +280,15 @@
       "url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-battai",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-battai",
         "url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "BattAI: பேட்டரி நலம்",
         "description": "BattAI BattAI பொது iOS API-களிலிருந்து 5 மதிப்புகளைப் பயன்படுத்துகிறது: பேட்டரி நிலை, சார்ஜ் நிலை, Low Power Mode, முழுச் சாதன வெப்ப நிலை, நேரம். மற்ற முடிவுகள் இந்த அளவீடுகளிலிருந்து கணக்கிடப்படுகின்றன அல்லது நீங்கள் சேர்க்கிறீர்கள். ஒவ்வொரு விவரமும் அதன் ஆதாரத்தையும் வரம்பையும் காட்டுகிறது.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -309,13 +309,13 @@
             "target": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/battai.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/battai.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "ta-IN",
           "description": "BattAI BattAI பொது iOS API-களிலிருந்து 5 மதிப்புகளைப் பயன்படுத்துகிறது: பேட்டரி நிலை, சார்ஜ் நிலை, Low Power Mode, முழுச் சாதன வெப்ப நிலை, நேரம். மற்ற முடிவுகள் இந்த அளவீடுகளிலிருந்து கணக்கிடப்படுகின்றன அல்லது நீங்கள் சேர்க்கிறீர்கள். ஒவ்வொரு விவரமும் அதன் ஆதாரத்தையும் வரம்பையும் காட்டுகிறது.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-battai"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-battai"
           },
           "additionalProperty": [
             {
@@ -346,15 +346,15 @@
       "url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-caldaily",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "CalDaily: கால்குலேட்டர்",
         "description": "நீங்கள் உண்மையிலேயே தொடர்ந்து பயன்படுத்தும் கால்குலேட்டர், ஏனெனில் ஒவ்வொரு எண்ணுக்குப் பின்னால் இருந்த எண்ணத்தையும் அது நினைவில் வைக்கிறது.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -375,13 +375,13 @@
             "target": "https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/caldaily.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/caldaily.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "ta-IN",
           "description": "நீங்கள் உண்மையிலேயே தொடர்ந்து பயன்படுத்தும் கால்குலேட்டர், ஏனெனில் ஒவ்வொரு எண்ணுக்குப் பின்னால் இருந்த எண்ணத்தையும் அது நினைவில் வைக்கிறது.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-caldaily"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-caldaily"
           },
           "additionalProperty": [
             {
@@ -412,15 +412,15 @@
       "url": "https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-cvdesk",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-cvdesk",
         "url": "https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "CV டெஸ்க்",
         "description": "நீங்கள் துறைகளை மாற்றும்போது, ரெசுமே பிரச்சனை வேறுபடுகிறது: உங்கள் அனுபவம் உண்மையானது ஆனால் 'பொருந்தாதது' என்று காகிதத்தில் உள்ளது, மற்றும் ATS வடிகட்டி உங்களை மனிதர் படிப்பதற்கு முன் நிராகரிக்கிறது. இந்த இடைவெளியைத்தான் CV டெஸ்க் நிரப்ப முயல்கிறது.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -441,13 +441,13 @@
             "target": "https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-resume-builder-app-for-career-changers-2026.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-resume-builder-app-for-career-changers-2026.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6781337213",
           "inLanguage": "ta-IN",
           "description": "நீங்கள் துறைகளை மாற்றும்போது, ரெசுமே பிரச்சனை வேறுபடுகிறது: உங்கள் அனுபவம் உண்மையானது ஆனால் 'பொருந்தாதது' என்று காகிதத்தில் உள்ளது, மற்றும் ATS வடிகட்டி உங்களை மனிதர் படிப்பதற்கு முன் நிராகரிக்கிறது. இந்த இடைவெளியைத்தான் CV டெஸ்க் நிரப்ப முயல்கிறது.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-cvdesk"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-cvdesk"
           },
           "additionalProperty": [
             {
@@ -478,15 +478,15 @@
       "url": "https://apps.apple.com/in/app/id6782251621?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-cyca",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-cyca",
         "url": "https://apps.apple.com/in/app/id6782251621?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Cyca",
         "description": "தரவு நுணுக்கம் முழுமையாக முக்கியமான பிரிவில், சரியான மாதவிடாய் கண்காணிப்பாளர் அனைத்தையும் — ஓட்டம், மனநிலை, அறிகுறிகள், வெப்பநிலை, நெருக்கம் — உங்கள் சாதனத்தில் வைத்திருக்கும், கணக்கு இல்லாமல் மற்றும் மேக ஒத்திசைவு இல்லாமல். Cyca இந்த ஒரு வேலையை மட்டும் செய்கிறது, மற்றதை விட்டுவிடுகிறது.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -507,13 +507,13 @@
             "target": "https://apps.apple.com/in/app/id6782251621?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-period-tracker-app-no-account-required-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-period-tracker-app-no-account-required-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6782251621",
           "inLanguage": "ta-IN",
           "description": "தரவு நுணுக்கம் முழுமையாக முக்கியமான பிரிவில், சரியான மாதவிடாய் கண்காணிப்பாளர் அனைத்தையும் — ஓட்டம், மனநிலை, அறிகுறிகள், வெப்பநிலை, நெருக்கம் — உங்கள் சாதனத்தில் வைத்திருக்கும், கணக்கு இல்லாமல் மற்றும் மேக ஒத்திசைவு இல்லாமல். Cyca இந்த ஒரு வேலையை மட்டும் செய்கிறது, மற்றதை விட்டுவிடுகிறது.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-cyca"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-cyca"
           },
           "additionalProperty": [
             {
@@ -544,15 +544,15 @@
       "url": "https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-dailymate",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-dailymate",
         "url": "https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "DailyMate",
         "description": "ஒரு பயணத்திற்கு முன், தனித்த சொற்களை அழுத்தத்தில் சேர்க்க வேண்டியதைவிட நிஜ சூழல்களுக்கு முழுமையான வாக்கியங்கள் அதிக பயனுள்ளதாக இருக்கும். DailyMate தொடங்கியதே இந்தச் சிக்கலில் இருந்துதான்.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -573,13 +573,13 @@
             "target": "https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6790418321",
           "inLanguage": "ta-IN",
           "description": "ஒரு பயணத்திற்கு முன், தனித்த சொற்களை அழுத்தத்தில் சேர்க்க வேண்டியதைவிட நிஜ சூழல்களுக்கு முழுமையான வாக்கியங்கள் அதிக பயனுள்ளதாக இருக்கும். DailyMate தொடங்கியதே இந்தச் சிக்கலில் இருந்துதான்.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-dailymate"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-dailymate"
           },
           "additionalProperty": [
             {
@@ -610,15 +610,15 @@
       "url": "https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-dailymatelite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "DailyMate Lite",
         "description": "தேவையான தருணத்தில் சரியான வார்த்தைகளைப் பேசுங்கள். DailyMate Lite அன்றாடச் சூழல்களை 50 மொழிகளில் சிறிய உரையாடல் தொடக்கம்–பதில் பயிற்சியாக மாற்றுகிறது. எந்த",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -639,13 +639,13 @@
             "target": "https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/dailymatelite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/dailymatelite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "ta-IN",
           "description": "தேவையான தருணத்தில் சரியான வார்த்தைகளைப் பேசுங்கள். DailyMate Lite அன்றாடச் சூழல்களை 50 மொழிகளில் சிறிய உரையாடல் தொடக்கம்–பதில் பயிற்சியாக மாற்றுகிறது. எந்த",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-dailymatelite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-dailymatelite"
           },
           "additionalProperty": [
             {
@@ -676,15 +676,15 @@
       "url": "https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-gmoney",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-gmoney",
         "url": "https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "G+Money",
         "description": "ஒரு பயணத்தில், தரவு இல்லாத நாட்டில் ஆஃப்லைனில் வேலை செய்யும், பல நாணயங்களை கையாளும், கணக்கு கேட்காத பட்ஜெட் கண்காணிப்பாளர் தேவை — பயண வாரியாக ஒழுங்குபடுத்தப்பட்டு ஒவ்வொரு விடுமுறையும் தனித்தனியாக இருக்கும். இந்த இடைவெளியைத்தான் G+Money நிரப்ப முயல்கிறது.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -705,13 +705,13 @@
             "target": "https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6755782939",
           "inLanguage": "ta-IN",
           "description": "ஒரு பயணத்தில், தரவு இல்லாத நாட்டில் ஆஃப்லைனில் வேலை செய்யும், பல நாணயங்களை கையாளும், கணக்கு கேட்காத பட்ஜெட் கண்காணிப்பாளர் தேவை — பயண வாரியாக ஒழுங்குபடுத்தப்பட்டு ஒவ்வொரு விடுமுறையும் தனித்தனியாக இருக்கும். இந்த இடைவெளியைத்தான் G+Money நிரப்ப முயல்கிறது.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-gmoney"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-gmoney"
           },
           "additionalProperty": [
             {
@@ -742,15 +742,15 @@
       "url": "https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-gmoneylite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "G+Money Lite: பயணச் செலவு",
         "description": "G+Money Lite — சிறந்த பயண நாணய மற்றும் செலவுகளை கண்காணிப்பான்",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -771,13 +771,13 @@
             "target": "https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/gmoneylite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/gmoneylite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "ta-IN",
           "description": "G+Money Lite — சிறந்த பயண நாணய மற்றும் செலவுகளை கண்காணிப்பான்",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-gmoneylite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-gmoneylite"
           },
           "additionalProperty": [
             {
@@ -808,15 +808,15 @@
       "url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-hourstaglite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "HoursTag Lite: விலை மணிநேரமாக",
         "description": "HoursTag Lite - விஷயங்களின் உண்மையான விலையைப் பாருங்கள்",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -837,13 +837,13 @@
             "target": "https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/hourstaglite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/hourstaglite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794039979",
           "inLanguage": "ta-IN",
           "description": "HoursTag Lite - விஷயங்களின் உண்மையான விலையைப் பாருங்கள்",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-hourstaglite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-hourstaglite"
           },
           "additionalProperty": [
             {
@@ -874,15 +874,15 @@
       "url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-hourstag",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-hourstag",
         "url": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "HoursTag: நேரத்தை வாங்க",
         "description": "உண்மையில் எவ்வளவு செலவாகிறது? பணத்தில் அல்ல, உங்கள் வாழ்க்கையின் நேரத்தில்.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -903,13 +903,13 @@
             "target": "https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/hourstag.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/hourstag.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6754218117",
           "inLanguage": "ta-IN",
           "description": "உண்மையில் எவ்வளவு செலவாகிறது? பணத்தில் அல்ல, உங்கள் வாழ்க்கையின் நேரத்தில்.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-hourstag"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-hourstag"
           },
           "additionalProperty": [
             {
@@ -940,15 +940,15 @@
       "url": "https://apps.apple.com/in/app/id6780107485?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lockhour",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/in/app/id6780107485?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "LockHour Pro",
         "description": "பரீட்சைகளின் போது, மனச்சக்தி கருவி அல்ல — கடுமையான நேரமிடப்பட்ட தடுப்பு தான். அதற்காகவே LockHour Pro உருவானது.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -969,13 +969,13 @@
             "target": "https://apps.apple.com/in/app/id6780107485?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-app-to-block-social-media-while-studying-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-app-to-block-social-media-while-studying-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "ta-IN",
           "description": "பரீட்சைகளின் போது, மனச்சக்தி கருவி அல்ல — கடுமையான நேரமிடப்பட்ட தடுப்பு தான். அதற்காகவே LockHour Pro உருவானது.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lockhour"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lockhour"
           },
           "additionalProperty": [
             {
@@ -1006,15 +1006,15 @@
       "url": "https://apps.apple.com/in/app/id6773017109?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumibopomofo",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumibopomofo",
         "url": "https://apps.apple.com/in/app/id6773017109?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Lumi Bopomofo",
         "description": "ஜூயின் முதன்முதலில் கற்றுக்கொள்ளும் குழந்தைக்கு, 37 சின்னங்களையும் தடம் மற்றும் விளையாட்டின் மூலம் கற்றுக்கொள்ள வேண்டும் — 4–7 வயது முதன்மை கற்றல் காலத்திற்கு வடிவமைக்கப்பட்டது, விளம்பரமில்லாமல், தரவு சேகரிப்பு இல்லாமல். இந்த இடைவெளியைத்தான் Lumi Bopomofo நிரப்ப முயல்கிறது.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1035,13 +1035,13 @@
             "target": "https://apps.apple.com/in/app/id6773017109?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6773017109",
           "inLanguage": "ta-IN",
           "description": "ஜூயின் முதன்முதலில் கற்றுக்கொள்ளும் குழந்தைக்கு, 37 சின்னங்களையும் தடம் மற்றும் விளையாட்டின் மூலம் கற்றுக்கொள்ள வேண்டும் — 4–7 வயது முதன்மை கற்றல் காலத்திற்கு வடிவமைக்கப்பட்டது, விளம்பரமில்லாமல், தரவு சேகரிப்பு இல்லாமல். இந்த இடைவெளியைத்தான் Lumi Bopomofo நிரப்ப முயல்கிறது.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumibopomofo"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumibopomofo"
           },
           "additionalProperty": [
             {
@@ -1072,15 +1072,15 @@
       "url": "https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumibopomofopro",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumibopomofopro",
         "url": "https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Lumi Bopomofo Pro",
         "description": "வீட்டில் Zhuyin கற்கும் இருமொழிக் குழந்தைகளுக்கு ஒலிகள், குறியீடுகள், தொனிகள் மற்றும் ஒலிக்கலப்பு ஆகியவற்றை உள்ளடக்கிய முழுமையான கற்றல் பாதையும், இந்த முறையைப் பழகிக்கொள்ள போதுமான விளையாட்டுத்தனமான மீள்பயிற்சியும் தேவை. இந்த இடைவெளியைத்தான் Lumi Bopomofo Pro நிரப்ப முயல்கிறது.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1101,13 +1101,13 @@
             "target": "https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6775773117",
           "inLanguage": "ta-IN",
           "description": "வீட்டில் Zhuyin கற்கும் இருமொழிக் குழந்தைகளுக்கு ஒலிகள், குறியீடுகள், தொனிகள் மற்றும் ஒலிக்கலப்பு ஆகியவற்றை உள்ளடக்கிய முழுமையான கற்றல் பாதையும், இந்த முறையைப் பழகிக்கொள்ள போதுமான விளையாட்டுத்தனமான மீள்பயிற்சியும் தேவை. இந்த இடைவெளியைத்தான் Lumi Bopomofo Pro நிரப்ப முயல்கிறது.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumibopomofopro"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumibopomofopro"
           },
           "additionalProperty": [
             {
@@ -1138,15 +1138,15 @@
       "url": "https://apps.apple.com/in/app/id6778748533?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumiletters",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumiletters",
         "url": "https://apps.apple.com/in/app/id6778748533?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Lumi Letters",
         "description": "இளம் குழந்தைக்கு, முக்கியமானது விளம்பரங்கள் மற்றும் தரவு சேகரிப்பு — விளையாட்டு சுற்றுப்பாதையில் விளம்பரமில்லாமல், குழந்தையிடமிருந்து எதுவும் சேகரிக்காமல், பெற்றோர்கள் நம்பக்கூடிய ஒருமுறை திறப்பு. அதற்காகவே Lumi Letters உருவானது.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1167,13 +1167,13 @@
             "target": "https://apps.apple.com/in/app/id6778748533?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-educational-game-app-for-kids-no-ads-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-educational-game-app-for-kids-no-ads-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6778748533",
           "inLanguage": "ta-IN",
           "description": "இளம் குழந்தைக்கு, முக்கியமானது விளம்பரங்கள் மற்றும் தரவு சேகரிப்பு — விளையாட்டு சுற்றுப்பாதையில் விளம்பரமில்லாமல், குழந்தையிடமிருந்து எதுவும் சேகரிக்காமல், பெற்றோர்கள் நம்பக்கூடிய ஒருமுறை திறப்பு. அதற்காகவே Lumi Letters உருவானது.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumiletters"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumiletters"
           },
           "additionalProperty": [
             {
@@ -1204,15 +1204,15 @@
       "url": "https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumiletterspro",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumiletterspro",
         "url": "https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Lumi Letters Pro",
         "description": "முன்பள்ளிக்காக தயாராகும் குடும்பங்களுக்கு, எழுத்து ஒலிகள், வடிவமைப்பு மற்றும் சொல் கட்டுமானம் ஒன்றாக இணைக்கும் முழுமையான ஆரம்ப வாசிப்பு பாதை தேவை. இந்த இடைவெளியைத்தான் Lumi Letters Pro நிரப்ப முயல்கிறது.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1233,13 +1233,13 @@
             "target": "https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6778491147",
           "inLanguage": "ta-IN",
           "description": "முன்பள்ளிக்காக தயாராகும் குடும்பங்களுக்கு, எழுத்து ஒலிகள், வடிவமைப்பு மற்றும் சொல் கட்டுமானம் ஒன்றாக இணைக்கும் முழுமையான ஆரம்ப வாசிப்பு பாதை தேவை. இந்த இடைவெளியைத்தான் Lumi Letters Pro நிரப்ப முயல்கிறது.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumiletterspro"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumiletterspro"
           },
           "additionalProperty": [
             {
@@ -1270,15 +1270,15 @@
       "url": "https://apps.apple.com/in/app/id6778269699?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumimath",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumimath",
         "url": "https://apps.apple.com/in/app/id6778269699?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Lumi Math Planet",
         "description": "சிறந்த குழந்தைகள் கணித பயன்பாடு தர்க்கத்தை பயிற்றுவிக்கிறது — மாதிரிகள், தொடர்கள், இடைவெளி சிந்தனை — வெறும் கணக்குப் பயிற்சி அல்ல, மற்றும் குழந்தை விளையாட விரும்பும் விளையாட்டில் அதை மறைக்கிறது. அதற்காகவே Lumi Math Planet உருவானது.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1299,13 +1299,13 @@
             "target": "https://apps.apple.com/in/app/id6778269699?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6778269699",
           "inLanguage": "ta-IN",
           "description": "சிறந்த குழந்தைகள் கணித பயன்பாடு தர்க்கத்தை பயிற்றுவிக்கிறது — மாதிரிகள், தொடர்கள், இடைவெளி சிந்தனை — வெறும் கணக்குப் பயிற்சி அல்ல, மற்றும் குழந்தை விளையாட விரும்பும் விளையாட்டில் அதை மறைக்கிறது. அதற்காகவே Lumi Math Planet உருவானது.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumimath"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumimath"
           },
           "additionalProperty": [
             {
@@ -1336,15 +1336,15 @@
       "url": "https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumimathpro",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumimathpro",
         "url": "https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Lumi Math Pro",
         "description": "முழுமையான ஆரம்ப கணித செயலி, எண்ணுதல், எண் உணர்வு மற்றும் முதல் செயல்பாடுகளை தனித்தனி பயிற்சிகளாக இல்லாமல் ஒன்றாக இணைந்த சாகசமாக உணர செய்ய வேண்டும். அதற்காகவே Lumi Math Pro உருவானது.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1365,13 +1365,13 @@
             "target": "https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6776958488",
           "inLanguage": "ta-IN",
           "description": "முழுமையான ஆரம்ப கணித செயலி, எண்ணுதல், எண் உணர்வு மற்றும் முதல் செயல்பாடுகளை தனித்தனி பயிற்சிகளாக இல்லாமல் ஒன்றாக இணைந்த சாகசமாக உணர செய்ய வேண்டும். அதற்காகவே Lumi Math Pro உருவானது.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumimathpro"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumimathpro"
           },
           "additionalProperty": [
             {
@@ -1402,15 +1402,15 @@
       "url": "https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumimission",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumimission",
         "url": "https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Lumi Mission Planet",
         "description": "முன்பள்ளி குழந்தைக்கு உறங்கும் நேர ஒழுங்கு சுருக்கமாகவும், காட்சியாகவும், குழந்தை தனியாக பின்பற்றக்கூடிய அளவுக்கு எதிர்பார்க்கக்கூடியதாகவும் இருந்தால் சிறப்பாக செயல்படும். பரிச்சயமாகத் தோன்றினால் Lumi Mission Planet ஒரு முறை பாருங்கள்.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1431,13 +1431,13 @@
             "target": "https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779750237",
           "inLanguage": "ta-IN",
           "description": "முன்பள்ளி குழந்தைக்கு உறங்கும் நேர ஒழுங்கு சுருக்கமாகவும், காட்சியாகவும், குழந்தை தனியாக பின்பற்றக்கூடிய அளவுக்கு எதிர்பார்க்கக்கூடியதாகவும் இருந்தால் சிறப்பாக செயல்படும். பரிச்சயமாகத் தோன்றினால் Lumi Mission Planet ஒரு முறை பாருங்கள்.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumimission"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumimission"
           },
           "additionalProperty": [
             {
@@ -1468,15 +1468,15 @@
       "url": "https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumimissionpro",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumimissionpro",
         "url": "https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Lumi Mission Planet Pro",
         "description": "பல் துலக்கும் மற்றும் தூங்கும் செயல்பாடுகள் ஒவ்வொரு இரவும் ஒரே நேரத்தில் தோல்வியடைகின்றன: குழந்தை சோர்வாக இருக்கிறது, பெற்றோர் சோர்வாக இருக்கிறார், அடுத்த படி போதுமான அளவு தெளிவாக இல்லை.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1497,13 +1497,13 @@
             "target": "https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779745474",
           "inLanguage": "ta-IN",
           "description": "பல் துலக்கும் மற்றும் தூங்கும் செயல்பாடுகள் ஒவ்வொரு இரவும் ஒரே நேரத்தில் தோல்வியடைகின்றன: குழந்தை சோர்வாக இருக்கிறது, பெற்றோர் சோர்வாக இருக்கிறார், அடுத்த படி போதுமான அளவு தெளிவாக இல்லை.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumimissionpro"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumimissionpro"
           },
           "additionalProperty": [
             {
@@ -1534,15 +1534,15 @@
       "url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-tripplanet",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-tripplanet",
         "url": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Lumi Trip Planet",
         "description": "இளம் குழந்தைகளுடன் பயணம் செய்யும் பெற்றோருக்கு, பொருட்கள் தொகுப்பு, காத்திருப்பு மற்றும் புதிய இடம் கண்டறிதலை சாகசமாக மாற்றும் செயல்பாடுகள் தேவை. அதற்காகவே Lumi Trip Planet உருவானது.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1563,13 +1563,13 @@
             "target": "https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6787193643",
           "inLanguage": "ta-IN",
           "description": "இளம் குழந்தைகளுடன் பயணம் செய்யும் பெற்றோருக்கு, பொருட்கள் தொகுப்பு, காத்திருப்பு மற்றும் புதிய இடம் கண்டறிதலை சாகசமாக மாற்றும் செயல்பாடுகள் தேவை. அதற்காகவே Lumi Trip Planet உருவானது.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-tripplanet"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-tripplanet"
           },
           "additionalProperty": [
             {
@@ -1600,15 +1600,15 @@
       "url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumiweather",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Lumi Weather",
         "description": "வெளியில் செல்ல திட்டமிடும் பெற்றோர் வெப்பம் மட்டும் அல்ல; குழந்தைக்கு பொருந்தும் நிலை மற்றும் எந்த உடை பொருந்தும் என்பதை வயதுக்கு ஏற்ப விரைவாக பார்க்க வேண்டும். அதற்காகவே Lumi Weather உருவானது.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1629,13 +1629,13 @@
             "target": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "ta-IN",
           "description": "வெளியில் செல்ல திட்டமிடும் பெற்றோர் வெப்பம் மட்டும் அல்ல; குழந்தைக்கு பொருந்தும் நிலை மற்றும் எந்த உடை பொருந்தும் என்பதை வயதுக்கு ஏற்ப விரைவாக பார்க்க வேண்டும். அதற்காகவே Lumi Weather உருவானது.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumiweather"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumiweather"
           },
           "additionalProperty": [
             {
@@ -1666,15 +1666,15 @@
       "url": "https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-maskmyfile",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Mask My File: தகவலை நீக்கவும்",
         "description": "பயனுள்ள சூழலை இழக்காமல் பாதுகாப்பாகப் பகிருங்கள். Mask My File நீங்கள் கோப்பை அனுப்பும் முன் தனிப்பட்ட விவரங்களைக் கண்டறிந்து, நீங்கள் தேர்ந்தெடுத்த",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1695,13 +1695,13 @@
             "target": "https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/maskmyfile.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/maskmyfile.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "ta-IN",
           "description": "பயனுள்ள சூழலை இழக்காமல் பாதுகாப்பாகப் பகிருங்கள். Mask My File நீங்கள் கோப்பை அனுப்பும் முன் தனிப்பட்ட விவரங்களைக் கண்டறிந்து, நீங்கள் தேர்ந்தெடுத்த",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-maskmyfile"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-maskmyfile"
           },
           "additionalProperty": [
             {
@@ -1732,15 +1732,15 @@
       "url": "https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-mochi",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-mochi",
         "url": "https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Mochi",
         "description": "பெரும்பாலான To Do பயன்பாடுகள் பெரிதாக தோன்றினால், சரியானது நினைவூட்டல்கள், மீண்டும் செய்யும் விதிகள் மற்றும் Watch சிக்கலுடன் கூடிய சுத்தமான சரிபார்ப்பு பட்டியல் — மற்றும் திட்ட மேலாண்மை இயந்திரம் இல்லாமல். அதற்காகவே Mochi உருவானது.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1761,13 +1761,13 @@
             "target": "https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "ta-IN",
           "description": "பெரும்பாலான To Do பயன்பாடுகள் பெரிதாக தோன்றினால், சரியானது நினைவூட்டல்கள், மீண்டும் செய்யும் விதிகள் மற்றும் Watch சிக்கலுடன் கூடிய சுத்தமான சரிபார்ப்பு பட்டியல் — மற்றும் திட்ட மேலாண்மை இயந்திரம் இல்லாமல். அதற்காகவே Mochi உருவானது.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-mochi"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-mochi"
           },
           "additionalProperty": [
             {
@@ -1798,15 +1798,15 @@
       "url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-mochidonestamp",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Mochi DoneStamp: கடைசி முறை",
         "description": "கடைசியாக படுக்கை விரிப்பை மாற்றியது, செடிக்கு நீர் ஊற்றியது, குடும்பத்தை அழைத்தது, படங்களை காப்பு எடுத்தது அல்லது வடிகட்டியை மாற்றியது எப்போது?",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1827,13 +1827,13 @@
             "target": "https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/mochidonestamp.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/mochidonestamp.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "ta-IN",
           "description": "கடைசியாக படுக்கை விரிப்பை மாற்றியது, செடிக்கு நீர் ஊற்றியது, குடும்பத்தை அழைத்தது, படங்களை காப்பு எடுத்தது அல்லது வடிகட்டியை மாற்றியது எப்போது?",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-mochidonestamp"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-mochidonestamp"
           },
           "additionalProperty": [
             {
@@ -1864,15 +1864,15 @@
       "url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-moneytag",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-moneytag",
         "url": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "MoneyTag: வரவு & செலவு",
         "description": "வரவு & செலவு ஒவ்வொரு திட்டமும் தனது சொந்தக் கணக்கை வைத்திருக்கிறது: வரவில் இருந்து செலவைக் கழித்தால் கிடைப்பதுதான் அதன் நிகரத் தொகை. அதிகம் கேட்கப்படும் கேள்விகள் இங்கே. உங்கள் கேள்விக்கு விடை இல்லையெனில் எழுதுங்கள் — ஒவ்வொரு செய்தியையும் ஒரு நிஜ மனிதர் படிக்கிறார்.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1893,13 +1893,13 @@
             "target": "https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/moneytag.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/moneytag.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6801956402",
           "inLanguage": "ta-IN",
           "description": "வரவு & செலவு ஒவ்வொரு திட்டமும் தனது சொந்தக் கணக்கை வைத்திருக்கிறது: வரவில் இருந்து செலவைக் கழித்தால் கிடைப்பதுதான் அதன் நிகரத் தொகை. அதிகம் கேட்கப்படும் கேள்விகள் இங்கே. உங்கள் கேள்விக்கு விடை இல்லையெனில் எழுதுங்கள் — ஒவ்வொரு செய்தியையும் ஒரு நிஜ மனிதர் படிக்கிறார்.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-moneytag"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-moneytag"
           },
           "additionalProperty": [
             {
@@ -1930,15 +1930,15 @@
       "url": "https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-onepageppt",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-onepageppt",
         "url": "https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "OnePage PPT: ஸ்லைடு மேக்கர்",
         "description": "பக்கம் நிறைந்த உரையை மக்கள் படிக்கும் ஒரே ஸ்லைடாக மாற்றுங்கள்.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1959,13 +1959,13 @@
             "target": "https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/onepageppt.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/onepageppt.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6798814385",
           "inLanguage": "ta-IN",
           "description": "பக்கம் நிறைந்த உரையை மக்கள் படிக்கும் ஒரே ஸ்லைடாக மாற்றுங்கள்.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-onepageppt"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-onepageppt"
           },
           "additionalProperty": [
             {
@@ -1996,15 +1996,15 @@
       "url": "https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-photocream",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-photocream",
         "url": "https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "PhotoCream",
         "description": "பயண உருவாக்குநர்கள் ஒவ்வொரு இடத்தையும் ஒரே வடிகட்டியாக மாற்றாமல், தானிய, ஹலேஷன் மற்றும் நிற தன்மையை சேர்க்கும் தொடர்ச்சியான திரைப்பட தோற்றம் தேவை",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2025,13 +2025,13 @@
             "target": "https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6781808054",
           "inLanguage": "ta-IN",
           "description": "பயண உருவாக்குநர்கள் ஒவ்வொரு இடத்தையும் ஒரே வடிகட்டியாக மாற்றாமல், தானிய, ஹலேஷன் மற்றும் நிற தன்மையை சேர்க்கும் தொடர்ச்சியான திரைப்பட தோற்றம் தேவை",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-photocream"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-photocream"
           },
           "additionalProperty": [
             {
@@ -2062,15 +2062,15 @@
       "url": "https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-picclear",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-picclear",
         "url": "https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "PicClear",
         "description": "இடத்தை விரைவாக விடுவிக்க, மிகப்பெரிய வெற்றிகளை முதலில் குறிக்கவும்: துல்லிய நகல் புகைப்படங்கள், ஒத்த பறக்கல் படங்கள், மங்கலானவை, மற்றும் பெரிய வீடியோக்கள்",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2091,13 +2091,13 @@
             "target": "https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6780223070",
           "inLanguage": "ta-IN",
           "description": "இடத்தை விரைவாக விடுவிக்க, மிகப்பெரிய வெற்றிகளை முதலில் குறிக்கவும்: துல்லிய நகல் புகைப்படங்கள், ஒத்த பறக்கல் படங்கள், மங்கலானவை, மற்றும் பெரிய வீடியோக்கள்",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-picclear"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-picclear"
           },
           "additionalProperty": [
             {
@@ -2128,15 +2128,15 @@
       "url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-savetag",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-savetag",
         "url": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "SaveTag: AI புக்மார்க்",
         "description": "இப்போதே சேமியுங்கள். இந்த முறை உண்மையிலேயே படியுங்கள்.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2157,13 +2157,13 @@
             "target": "https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/savetag.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/savetag.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "ta-IN",
           "description": "இப்போதே சேமியுங்கள். இந்த முறை உண்மையிலேயே படியுங்கள்.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-savetag"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-savetag"
           },
           "additionalProperty": [
             {
@@ -2194,15 +2194,15 @@
       "url": "https://apps.apple.com/in/app/id6779977651?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-scanto",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-scanto",
         "url": "https://apps.apple.com/in/app/id6779977651?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "ScanTo Pro",
         "description": "நீங்கள் நோயாளி ஒப்புதல் படிவங்கள், வெளியேற்ற ஆவணங்கள் அல்லது பரிந்துரைகளை ஸ்கேன் செய்தால், அந்த ஆவணங்கள் சாதனத்தில் மட்டுமே இருக்க வேண்டும் — வேறு யாருடைய கிளவுட்-க்கு ஒருபோதும் பதிவேற்றப்படக்கூடாது. ScanTo Pro தொடங்கியதே இந்தச் சிக்கலில் இருந்துதான்.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2223,13 +2223,13 @@
             "target": "https://apps.apple.com/in/app/id6779977651?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779977651",
           "inLanguage": "ta-IN",
           "description": "நீங்கள் நோயாளி ஒப்புதல் படிவங்கள், வெளியேற்ற ஆவணங்கள் அல்லது பரிந்துரைகளை ஸ்கேன் செய்தால், அந்த ஆவணங்கள் சாதனத்தில் மட்டுமே இருக்க வேண்டும் — வேறு யாருடைய கிளவுட்-க்கு ஒருபோதும் பதிவேற்றப்படக்கூடாது. ScanTo Pro தொடங்கியதே இந்தச் சிக்கலில் இருந்துதான்.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-scanto"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-scanto"
           },
           "additionalProperty": [
             {
@@ -2260,15 +2260,15 @@
       "url": "https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-sereno",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-sereno",
         "url": "https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Sereno",
         "description": "தூக்கத்திற்கு, மாதம் மாதம் தொந்தரவு தரும் சந்தா அமைதி தருவதை எதிர்க்கிறது. பரிச்சயமாகத் தோன்றினால் Sereno ஒரு முறை பாருங்கள்.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2289,13 +2289,13 @@
             "target": "https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6788236641",
           "inLanguage": "ta-IN",
           "description": "தூக்கத்திற்கு, மாதம் மாதம் தொந்தரவு தரும் சந்தா அமைதி தருவதை எதிர்க்கிறது. பரிச்சயமாகத் தோன்றினால் Sereno ஒரு முறை பாருங்கள்.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-sereno"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-sereno"
           },
           "additionalProperty": [
             {
@@ -2326,15 +2326,15 @@
       "url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-shotinbox",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
         "description": "உங்கள் திரைப்பிடிப்புகள், ஒழுங்காக",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2355,13 +2355,13 @@
             "target": "https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/shotinbox.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/shotinbox.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "ta-IN",
           "description": "உங்கள் திரைப்பிடிப்புகள், ஒழுங்காக",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-shotinbox"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-shotinbox"
           },
           "additionalProperty": [
             {
@@ -2392,15 +2392,15 @@
       "url": "https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-snapport",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-snapport",
         "url": "https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Snapport",
         "description": "குழந்தையின் பாஸ்போர்ட் புகைப்படத்திற்கு, வேறு யாரும் படத்தில் இருக்கக்கூடாது மற்றும் பின்னணி சுத்தமாக இருக்க வேண்டும். Snapport தொடங்கியதே இந்தச் சிக்கலில் இருந்துதான்.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2421,13 +2421,13 @@
             "target": "https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6780575828",
           "inLanguage": "ta-IN",
           "description": "குழந்தையின் பாஸ்போர்ட் புகைப்படத்திற்கு, வேறு யாரும் படத்தில் இருக்கக்கூடாது மற்றும் பின்னணி சுத்தமாக இருக்க வேண்டும். Snapport தொடங்கியதே இந்தச் சிக்கலில் இருந்துதான்.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-snapport"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-snapport"
           },
           "additionalProperty": [
             {
@@ -2458,15 +2458,15 @@
       "url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-snapportlite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Snapport Lite: ஐடி புகைப்படம்",
         "description": "Snapport Lite - வழிகாட்டிய அளவீடுகள், பின்னணி கருவிகள் மற்றும் அச்சிட தயாரான ஏற்றுமதியுடன் பாஸ்போர்ட், விசா மற்றும் ஆவண புகைப்படங்களை உருவாக்கவும்.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2487,13 +2487,13 @@
             "target": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/snapportlite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/snapportlite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "ta-IN",
           "description": "Snapport Lite - வழிகாட்டிய அளவீடுகள், பின்னணி கருவிகள் மற்றும் அச்சிட தயாரான ஏற்றுமதியுடன் பாஸ்போர்ட், விசா மற்றும் ஆவண புகைப்படங்களை உருவாக்கவும்.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-snapportlite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-snapportlite"
           },
           "additionalProperty": [
             {
@@ -2524,15 +2524,15 @@
       "url": "https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-sononote",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-sononote",
         "url": "https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Sono Note",
         "description": "ஒரு அழைப்புக்குப் பிறகு நீங்கள் ஒரு மூல உரை வேண்டாம் — சுருக்கம், செயல் பொருட்கள் மற்றும் தொடர்ச்சி வரைவு வேண்டும். இந்த இடைவெளியைத்தான் Sono Note நிரப்ப முயல்கிறது.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2553,13 +2553,13 @@
             "target": "https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "ta-IN",
           "description": "ஒரு அழைப்புக்குப் பிறகு நீங்கள் ஒரு மூல உரை வேண்டாம் — சுருக்கம், செயல் பொருட்கள் மற்றும் தொடர்ச்சி வரைவு வேண்டும். இந்த இடைவெளியைத்தான் Sono Note நிரப்ப முயல்கிறது.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-sononote"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-sononote"
           },
           "additionalProperty": [
             {
@@ -2590,15 +2590,15 @@
       "url": "https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-tripbeelite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-tripbeelite",
         "url": "https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "TripBee Lite",
         "description": "நீங்கள் ஒரு வரவிருக்கும் பயணத்தை திட்டமிடுகிறீர்கள் என்றால், அந்த பயணத்திற்கான அமைதியான காலவரிசை, நீங்கள் ஒருநாள் செல்லக்கூடிய அனைத்து பயணங்களின் கூட்டமான காப்பகத்தைவிட பயனுள்ளதாக இருக்கும். பரிச்சயமாகத் தோன்றினால் TripBee Lite ஒரு முறை பாருங்கள்.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2619,13 +2619,13 @@
             "target": "https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6791299610",
           "inLanguage": "ta-IN",
           "description": "நீங்கள் ஒரு வரவிருக்கும் பயணத்தை திட்டமிடுகிறீர்கள் என்றால், அந்த பயணத்திற்கான அமைதியான காலவரிசை, நீங்கள் ஒருநாள் செல்லக்கூடிய அனைத்து பயணங்களின் கூட்டமான காப்பகத்தைவிட பயனுள்ளதாக இருக்கும். பரிச்சயமாகத் தோன்றினால் TripBee Lite ஒரு முறை பாருங்கள்.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-tripbeelite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-tripbeelite"
           },
           "additionalProperty": [
             {
@@ -2656,15 +2656,15 @@
       "url": "https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-tripbee",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "TripBee Pro: பயண திட்டமிடுபவர்",
         "description": "ஒரு நல்ல பயண திட்ட செயலி குழப்பமான பயணத்தை தெளிவான நாள் தோறும் காலவரிசையாக மாற்றுகிறது — விமானங்கள், ஹோட்டல்கள், செயல்பாடுகள், உணவகங்கள் மற்றும் போக்குவரத்து — தெளிவான வகை ஐகான்களுடன் உங்கள் நாளை ஒரே பார்வையில் வாசிக்க. பரிச்சயமாகத் தோன்றினால் TripBee Pro: பயண திட்டமிடுபவர் ஒரு முறை பாருங்கள்.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2685,13 +2685,13 @@
             "target": "https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-trip-itinerary-planner-app-for-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-trip-itinerary-planner-app-for-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "ta-IN",
           "description": "ஒரு நல்ல பயண திட்ட செயலி குழப்பமான பயணத்தை தெளிவான நாள் தோறும் காலவரிசையாக மாற்றுகிறது — விமானங்கள், ஹோட்டல்கள், செயல்பாடுகள், உணவகங்கள் மற்றும் போக்குவரத்து — தெளிவான வகை ஐகான்களுடன் உங்கள் நாளை ஒரே பார்வையில் வாசிக்க. பரிச்சயமாகத் தோன்றினால் TripBee Pro: பயண திட்டமிடுபவர் ஒரு முறை பாருங்கள்.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-tripbee"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-tripbee"
           },
           "additionalProperty": [
             {
@@ -2722,15 +2722,15 @@
       "url": "https://apps.apple.com/in/app/id6782275018?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-unblurry",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-unblurry",
         "url": "https://apps.apple.com/in/app/id6782275018?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Unblurry",
         "description": "குழந்தைகள் ஒருபோதும் நிலைத்திருக்க மாட்டார்கள், எனவே மென்மையான கவனம் மற்றும் கேமரா அசைவான படங்கள் தவிர்க்க முடியாது",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2751,13 +2751,13 @@
             "target": "https://apps.apple.com/in/app/id6782275018?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6782275018",
           "inLanguage": "ta-IN",
           "description": "குழந்தைகள் ஒருபோதும் நிலைத்திருக்க மாட்டார்கள், எனவே மென்மையான கவனம் மற்றும் கேமரா அசைவான படங்கள் தவிர்க்க முடியாது",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-unblurry"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-unblurry"
           },
           "additionalProperty": [
             {
@@ -2788,15 +2788,15 @@
       "url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-wifiaidlite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "WiFi Aid Lite",
         "description": "உண்மையான சிக்கலைக் கண்டறிக. ஒவ்வொரு கருவியிலும் ஒரு முறை இலவச முழுப் பயன்பாடு அடங்கும். வரம்பற்ற பயன்பாட்டுக்கு விருப்பத் தேர்வான ஒரு-முறை வாழ்நாள் அன்லாக்",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2817,13 +2817,13 @@
             "target": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/wifiaidlite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/wifiaidlite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "ta-IN",
           "description": "உண்மையான சிக்கலைக் கண்டறிக. ஒவ்வொரு கருவியிலும் ஒரு முறை இலவச முழுப் பயன்பாடு அடங்கும். வரம்பற்ற பயன்பாட்டுக்கு விருப்பத் தேர்வான ஒரு-முறை வாழ்நாள் அன்லாக்",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-wifiaidlite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-wifiaidlite"
           },
           "additionalProperty": [
             {
@@ -2854,15 +2854,15 @@
       "url": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-wifiaid",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-wifiaid",
         "url": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "WiFi Aid: நெட்வொர்க் சிக்கல்",
         "description": "தனி DNS, TCP, TLS மற்றும் நிலைத்தன்மை சோதனைகள் மூலம் இணைப்புப் பிரச்சனை கண்டறியுங்கள். ஒரு முறை மட்டும் கட்டணம்—சந்தா, விளம்பரம், கண்காணிப்பு இல்லை.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2883,13 +2883,13 @@
             "target": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/wifiaid.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/wifiaid.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "ta-IN",
           "description": "தனி DNS, TCP, TLS மற்றும் நிலைத்தன்மை சோதனைகள் மூலம் இணைப்புப் பிரச்சனை கண்டறியுங்கள். ஒரு முறை மட்டும் கட்டணம்—சந்தா, விளம்பரம், கண்காணிப்பு இல்லை.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-wifiaid"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-wifiaid"
           },
           "additionalProperty": [
             {
@@ -2920,15 +2920,15 @@
       "url": "https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-wordmatelite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Wordmate Lite: ஆங்கிலம் கற்க",
         "description": "நாளொன்றுக்கு நூறு சொல் கற்கும் திட்டம் மூன்றாம் நாளிலேயே நின்றுவிடும். முதல் நாளே நூறு அட்டைகள் முன்னால் வந்தால் பழக்கம் தொடராது. Wordmate Lite அதைச்",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2949,13 +2949,13 @@
             "target": "https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/wordmatelite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/wordmatelite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "ta-IN",
           "description": "நாளொன்றுக்கு நூறு சொல் கற்கும் திட்டம் மூன்றாம் நாளிலேயே நின்றுவிடும். முதல் நாளே நூறு அட்டைகள் முன்னால் வந்தால் பழக்கம் தொடராது. Wordmate Lite அதைச்",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-wordmatelite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-wordmatelite"
           },
           "additionalProperty": [
             {
@@ -2986,15 +2986,15 @@
       "url": "https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=iag_data_ta_in&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-wordmate",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-wordmate",
         "url": "https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=iag_data_ta_in&mt=8",
         "name": "Wordmate: Learn 44 Languages",
         "description": "நேரமில்லா பயணிகளுக்கு முழு பாடம், புதிய கணக்கு அல்லது ஒவ்வொரு மீள்பார்வைக்கும் கைபேசி தேவையில்லாமல் சொற்பொருள் பயிற்சி தேவை. Wordmate: Learn 44 Languages தொடங்கியதே இந்தச் சிக்கலில் இருந்துதான்.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -3015,13 +3015,13 @@
             "target": "https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=iag_data_ta_in&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6789917808",
           "inLanguage": "ta-IN",
           "description": "நேரமில்லா பயணிகளுக்கு முழு பாடம், புதிய கணக்கு அல்லது ஒவ்வொரு மீள்பார்வைக்கும் கைபேசி தேவையில்லாமல் சொற்பொருள் பயிற்சி தேவை. Wordmate: Learn 44 Languages தொடங்கியதே இந்தச் சிக்கலில் இருந்துதான்.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-wordmate"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-wordmate"
           },
           "additionalProperty": [
             {

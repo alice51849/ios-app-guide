@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.schema.json",
+  "$id": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.schema.json",
   "title": "Bopomofo Symbols API index",
   "type": "object",
   "additionalProperties": false,
@@ -18,7 +18,7 @@
   ],
   "properties": {
     "$schema": {
-      "const": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.schema.json"
+      "const": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.schema.json"
     },
     "apiVersion": {
       "const": "1.0.0"
@@ -27,7 +27,7 @@
       "const": "1.0.0"
     },
     "generatedFrom": {
-      "const": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld"
+      "const": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld"
     },
     "license": {
       "const": "https://creativecommons.org/licenses/by/4.0/"
@@ -57,15 +57,15 @@
       ],
       "properties": {
         "en": {
-          "const": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/"
+          "const": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/"
         },
         "zh-Hant": {
-          "const": "https://alice51849.github.io/ios-app-guide/zh-Hant/api/v1/bopomofo-symbols/"
+          "const": "https://open.cait518.cc/ios-app-guide/zh-Hant/api/v1/bopomofo-symbols/"
         }
       }
     },
     "openapi": {
-      "const": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json"
+      "const": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json"
     },
     "symbols": {
       "type": "array",
@@ -155,7 +155,7 @@
         "url": {
           "type": "string",
           "format": "uri",
-          "pattern": "^https://alice51849\\.github\\.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u31(?:0[5-9A-F]|1[0-9A-F]|2[0-9])\\.json$"
+          "pattern": "^https://open\\.cait518\\.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u31(?:0[5-9A-F]|1[0-9A-F]|2[0-9])\\.json$"
         }
       }
     }

@@ -8,10 +8,11 @@ existing related-answers section). Reuses each page's CTA App Store id for group
 and each sibling's <h1> for the link text.
 """
 import os, re, glob, html, sys
+from site_config import PUBLIC_SITE  # noqa: E402
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pages")
 ANS = os.path.join(ROOT, "answers")
-SITE = "https://alice51849.github.io/ios-app-guide"
+SITE = PUBLIC_SITE
 MAXN = 4
 STOP = set("a an the and or of to in for on at by as it this that these those you your with how do i my is are can app apps for iphone ios free best what when should choose vs".split())
 SEC_RE = re.compile(r'<section class="wrap related-answers">.*?</section>', re.S)

@@ -1,7 +1,7 @@
 ---
 title: "WiFi Aid: Diagnoză de rețea — Diagnoză de rețea cu dovezi | iOS App"
 lang: "ro"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/ro/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/ro/index.html"
 modified: "2026-09-03"
 app_store_id: "6790467886"
 verified_live: true
@@ -19,6 +19,6 @@ Găsește cauza cea mai probabilă prin teste independente de traseu, DNS, TCP, 
 
 [Descarcă WiFi Aid: Diagnoză de rețea din App Store](https://apps.apple.com/ro/app/id6790467886?pt=118326163&ct=iag_data_ro&mt=8)
 
-[Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/wifiaid.html)
+[Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/wifiaid.html)
 
 > Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.

@@ -1,7 +1,7 @@
 ---
 title: "SaveTag: закладки з ШІ — Зберігай посилання, читай | iOS App"
 lang: "uk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/uk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/uk/index.html"
 modified: "2026-09-03"
 app_store_id: "6802505528"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [Завантажте SaveTag: закладки з ШІ з App Store](https://apps.apple.com/ua/app/id6802505528?pt=118326163&ct=iag_data_uk&mt=8)
 
-[Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/savetag.html)
+[Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/savetag.html)
 
 > Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.

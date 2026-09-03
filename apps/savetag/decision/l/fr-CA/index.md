@@ -1,7 +1,7 @@
 ---
 title: "SaveTag : signets par IA — Gardez vos liens, lisez-les | iOS App"
 lang: "fr-CA"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/fr-CA/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/fr-CA/index.html"
 modified: "2026-09-03"
 app_store_id: "6802505528"
 verified_live: true
@@ -19,6 +19,6 @@ Gardez-le maintenant. Lisez-le pour vrai plus tard. Toute la journée, vous vous
 
 [Obtenir SaveTag : signets par IA sur l'App Store](https://apps.apple.com/ca/app/id6802505528?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
-[Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/savetag.html)
+[Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/savetag.html)
 
 > Ce contenu est publié directement par Lumi Studio, le développeur de chaque app listée.

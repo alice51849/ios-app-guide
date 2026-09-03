@@ -1,7 +1,7 @@
 ---
 title: "AI Brief: Файли в промпт ШІ — Файли в чіткий контекст | iOS App"
 lang: "uk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/uk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/uk/index.html"
 modified: "2026-09-03"
 app_store_id: "6791658210"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [Завантажте AI Brief: Файли в промпт ШІ з App Store](https://apps.apple.com/ua/app/id6791658210?pt=118326163&ct=iag_data_uk&mt=8)
 
-[Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/aibriefpack.html)
+[Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/aibriefpack.html)
 
 > Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.

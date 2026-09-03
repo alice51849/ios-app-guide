@@ -1,7 +1,7 @@
 ---
 title: "SaveTag: dấu trang bằng AI — Lưu liên kết, đọc sau | iOS App"
 lang: "vi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/vi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/vi/index.html"
 modified: "2026-09-03"
 app_store_id: "6802505528"
 verified_live: true
@@ -19,6 +19,6 @@ Lưu ngay bây giờ. Và lần này đọc thật. Cả ngày bạn gửi liên
 
 [Tải SaveTag: dấu trang bằng AI trên App Store](https://apps.apple.com/vn/app/id6802505528?pt=118326163&ct=iag_data_vi&mt=8)
 
-[Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/savetag.html)
+[Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/savetag.html)
 
 > Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.

@@ -1,7 +1,7 @@
 ---
 title: "WiFi Aid: نیٹ ورک مسائل تلاش — نیٹ ورک تشخیص اور ثبوت | iOS App"
 lang: "ur-PK"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/ur-PK/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/ur-PK/index.html"
 modified: "2026-09-03"
 app_store_id: "6790467886"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [App Store سے WiFi Aid: نیٹ ورک مسائل تلاش حاصل کریں](https://apps.apple.com/pk/app/id6790467886?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
-[مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/wifiaid.html)
+[مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/wifiaid.html)
 
 > یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔

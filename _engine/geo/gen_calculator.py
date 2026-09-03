@@ -13,7 +13,8 @@ from pathlib import Path
 
 HERE = Path(os.path.dirname(os.path.abspath(__file__)))
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
-SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
+from site_config import PUBLIC_SITE  # noqa: E402
+SITE = os.environ.get("GEO_SITE", PUBLIC_SITE).rstrip("/")
 sys.path.insert(0, str(HERE.parent / "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from aeo_pages import has_one_time_access  # noqa: E402

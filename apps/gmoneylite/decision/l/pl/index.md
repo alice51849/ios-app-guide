@@ -1,7 +1,7 @@
 ---
 title: "G+Money Lite: Koszty podróży — Wydatki, budżet i waluty | iOS App"
 lang: "pl"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/pl/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/pl/index.html"
 modified: "2026-09-03"
 app_store_id: "6793436548"
 verified_live: true
@@ -25,6 +25,6 @@ G+Money Lite — Sprytny przelicznik walut i wydatków podróżnych Pieniądze w
 
 [Pobierz G+Money Lite: Koszty podróży z App Store](https://apps.apple.com/pl/app/id6793436548?pt=118326163&ct=iag_data_pl&mt=8)
 
-[Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/gmoneylite.html)
+[Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/gmoneylite.html)
 
 > Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.

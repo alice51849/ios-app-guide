@@ -1,7 +1,7 @@
 ---
 title: "குழந்தைகளுக்கான சிறந்த கணித விளையாட்டு பயன்பாடு iPhone-க்கு, தர்க்க திறன்களை வளர்க்க"
 lang: "ta-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimath/decision/l/ta-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/ta-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6778269699"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [App Store-இல் Lumi Math Planet பெறவும் →](https://apps.apple.com/in/app/id6778269699?pt=118326163&ct=iag_data_ta_in&mt=8)
 
-[முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
+[முழு வழிகாட்டியை படிக்கவும்](https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
 
 > செயலியை உருவாக்கிய Lumi Studio எழுதிய வழிகாட்டி. செயலிகளின் பெயர்கள் அவற்றின் உரிமையாளர்களின் வர்த்தக முத்திரைகள்; அடையாளம் காட்டுவதற்காக மட்டுமே பயன்படுத்தப்படுகின்றன. ஆவணங்கள், உடல்நலம், பள்ளி, வேலைத் திறன் தொடர்பான முடிவுகளுக்கு, தேவைப்படும் இடங்களில் அதிகாரப்பூர்வ விதிமுறைகளைச் சரிபார்க்கவும்.

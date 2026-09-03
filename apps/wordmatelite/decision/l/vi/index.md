@@ -1,7 +1,7 @@
 ---
 title: "Wordmate Lite 5 từ mỗi ngày — Học 44 ngôn ngữ trong 1 phút | iOS App"
 lang: "vi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/vi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/vi/index.html"
 modified: "2026-09-03"
 app_store_id: "6797601720"
 verified_live: true
@@ -20,6 +20,6 @@ Nhiều người dừng việc học ngoại ngữ đúng ở chỗ bộ thẻ t
 
 [Tải Wordmate Lite 5 từ mỗi ngày trên App Store](https://apps.apple.com/vn/app/id6797601720?pt=118326163&ct=iag_data_vi&mt=8)
 
-[Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/wordmatelite.html)
+[Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/wordmatelite.html)
 
 > Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.

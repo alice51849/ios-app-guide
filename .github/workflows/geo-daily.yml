@@ -28,7 +28,7 @@ jobs:
     # scheduled run; fail loudly instead so the next schedule can retry.
     timeout-minutes: 180
     env:
-      GEO_SITE: https://alice51849.github.io/ios-app-guide
+      GEO_SITE: https://open.cait518.cc/ios-app-guide
       # Apple campaign-link provider token. Not a secret: it is published
       # verbatim inside every ?pt= App Store link on this site. Without it
       # gen_store_attribution.py is a silent no-op and the daily rebuild

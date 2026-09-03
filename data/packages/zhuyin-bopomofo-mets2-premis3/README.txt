@@ -5,8 +5,8 @@ This static transfer package describes the complete 37-symbol Bopomofo dataset
 with a METS 2.0 file inventory and structure map plus PREMIS 3.0 preservation
 Objects, fixity, Events, Agents and Rights.
 
-Guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/
-Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-mets2-premis3/
+Guide: https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/
+Traditional Chinese guide: https://open.cait518.cc/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-mets2-premis3/
 METS schema: https://www.loc.gov/standards/mets/mets2.xsd
 PREMIS schema: https://www.loc.gov/standards/premis/v3/premis-v3-0.xsd
 

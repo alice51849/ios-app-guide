@@ -25,7 +25,7 @@ from social_post_common import (
 
 BASE_DATE = dt.date(2026, 7, 12)
 COOLDOWN_DAYS = 21
-SITE = "https://alice51849.github.io/ios-app-guide"
+SITE = "https://open.cait518.cc/ios-app-guide"
 CAPTURE_API = "https://arquivo.pt/save/now/record/"
 CDX_API = "https://arquivo.pt/wayback/cdx"
 USER_AGENT = (

@@ -1,7 +1,7 @@
 ---
 title: "Mask My File: Borra tus datos — Tacha datos antes de enviar | iOS App"
 lang: "es-MX"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/es-MX/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/es-MX/index.html"
 modified: "2026-09-03"
 app_store_id: "6792850916"
 verified_live: true
@@ -20,6 +20,6 @@ Comparte de forma segura sin sacrificar el contexto que sí importa. Mask My Fil
 
 [Consigue Mask My File: Borra tus datos en el App Store](https://apps.apple.com/mx/app/id6792850916?pt=118326163&ct=iag_data_es_mx&mt=8)
 
-[Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/maskmyfile.html)
+[Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/maskmyfile.html)
 
 > Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.

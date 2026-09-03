@@ -1,7 +1,7 @@
 ---
 title: "Beste Sprachmemos-App, die Meetings auf dem iPhone zusammenfasst"
 lang: "de-DE"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/de-DE/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/de-DE/index.html"
 modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
@@ -20,6 +20,6 @@ Nach einem Anruf wollen Sie kein rohes Transkript, sondern die Zusammenfassung, 
 
 [Sono Note im App Store herunterladen →](https://apps.apple.com/de/app/id6782139553?pt=118326163&ct=iag_data_de_de&mt=8)
 
-[Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
+[Lesen Sie den vollständigen Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 
 > Ein vom App-Entwickler Lumi Studio selbst verfasster Ratgeber. App-Namen sind Marken ihrer jeweiligen Eigentümer und werden nur zur Identifikation verwendet. Bei Entscheidungen zu Dokumenten, Gesundheit, Schule und Produktivität prüfen Sie bitte gegebenenfalls die offiziellen Vorgaben.

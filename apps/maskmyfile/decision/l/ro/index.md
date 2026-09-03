@@ -1,7 +1,7 @@
 ---
 title: "Mask My File: Șterge datele — Ascunde datele private | iOS App"
 lang: "ro"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/ro/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/ro/index.html"
 modified: "2026-09-03"
 app_store_id: "6792850916"
 verified_live: true
@@ -20,6 +20,6 @@ Distribuie în siguranță fără să pierzi contextul util. Mask My File găse�
 
 [Descarcă Mask My File: Șterge datele din App Store](https://apps.apple.com/ro/app/id6792850916?pt=118326163&ct=iag_data_ro&mt=8)
 
-[Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/maskmyfile.html)
+[Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/maskmyfile.html)
 
 > Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.

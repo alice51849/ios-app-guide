@@ -1,7 +1,7 @@
 ---
 title: "best simple trip planner app for one upcoming trip iphone"
 lang: "en-GB"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/en-GB/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/en-GB/index.html"
 modified: "2026-09-03"
 app_store_id: "6791299610"
 verified_live: true
@@ -19,6 +19,6 @@ If you are planning one upcoming journey, a calm timeline for that trip is more 
 
 [Get TripBee Lite on the App Store →](https://apps.apple.com/gb/app/id6791299610?pt=118326163&ct=iag_data_en_gb&mt=8)
 
-[Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
+[Read the full guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 
 > Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

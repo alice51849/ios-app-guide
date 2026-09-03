@@ -1,7 +1,7 @@
 ---
 title: "MoneyTag: รายรับและรายจ่าย — โปรเจกต์ · แท็ก · รายงาน | iOS App"
 lang: "th"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/th/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/th/index.html"
 modified: "2026-09-03"
 app_store_id: "6801956402"
 verified_live: true
@@ -26,6 +26,6 @@ publisher: "Lumi Studio"
 
 [ดาวน์โหลด MoneyTag: รายรับและรายจ่าย บน App Store](https://apps.apple.com/th/app/id6801956402?pt=118326163&ct=iag_data_th&mt=8)
 
-[อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/moneytag.html)
+[อ่านคู่มือฉบับเต็ม](https://open.cait518.cc/ios-app-guide/th/moneytag.html)
 
 > เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้

@@ -1,7 +1,7 @@
 ---
 title: "DailyMate Lite: Nauka mówienia — 50 języków, prawdziwe dialogi | iOS App"
 lang: "pl"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/pl/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/pl/index.html"
 modified: "2026-09-03"
 app_store_id: "6794725568"
 verified_live: true
@@ -19,6 +19,6 @@ Mów pewnie wtedy, gdy naprawdę tego potrzebujesz. DailyMate Lite zmienia codzi
 
 [Pobierz DailyMate Lite: Nauka mówienia z App Store](https://apps.apple.com/pl/app/id6794725568?pt=118326163&ct=iag_data_pl&mt=8)
 
-[Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/dailymatelite.html)
+[Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/dailymatelite.html)
 
 > Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.

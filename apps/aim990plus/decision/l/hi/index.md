@@ -1,7 +1,7 @@
 ---
 title: "Aim990 Plus: अंग्रेजी टेस्ट — दबाव में तेज़ और सटीक जवाब | iOS App"
 lang: "hi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/hi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/hi/index.html"
 modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
@@ -19,6 +19,6 @@ Aim990 Plus वयस्क शिक्षार्थियों के ल�
 
 [App Store पर Aim990 Plus: अंग्रेजी टेस्ट पाएँ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_hi&mt=8)
 
-[पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/aim990plus.html)
+[पूरा मार्गदर्शक पढ़ें](https://open.cait518.cc/ios-app-guide/hi/aim990plus.html)
 
 > यह सामग्री सीधे Lumi Studio ने प्रकाशित की है, जो सूचीबद्ध सभी ऐप का डेवलपर है।

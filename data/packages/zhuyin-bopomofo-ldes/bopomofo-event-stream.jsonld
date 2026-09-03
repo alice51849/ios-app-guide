@@ -11,11 +11,11 @@
     "dcat": "http://www.w3.org/ns/dcat#",
     "ldes": "https://w3id.org/ldes#",
     "tree": "https://w3id.org/tree#",
-    "zhuyin": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#"
+    "zhuyin": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#"
   },
   "@graph": [
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#publisher",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#publisher",
       "@type": [
         "http://www.w3.org/ns/prov#Organization"
       ],
@@ -26,7 +26,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld",
       "@type": [
         "https://w3id.org/ldes#EventStream",
         "https://w3id.org/tree#Node"
@@ -51,12 +51,12 @@
       ],
       "http://purl.org/dc/terms/hasFormat": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl"
         }
       ],
       "http://purl.org/dc/terms/isPartOf": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "http://purl.org/dc/terms/issued": [
@@ -78,7 +78,7 @@
       ],
       "http://purl.org/dc/terms/publisher": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#publisher"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#publisher"
         }
       ],
       "http://purl.org/dc/terms/title": [
@@ -93,7 +93,7 @@
       ],
       "https://w3id.org/ldes#retentionPolicy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#retention"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#retention"
         }
       ],
       "https://w3id.org/ldes#timestampPath": [
@@ -103,7 +103,7 @@
       ],
       "https://w3id.org/ldes#versionCreateObject": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
         }
       ],
       "https://w3id.org/ldes#versionCreatePath": [
@@ -118,37 +118,37 @@
       ],
       "https://w3id.org/tree#relation": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-001-lower"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-001-lower"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-001-upper"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-001-upper"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-002-lower"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-002-lower"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-002-upper"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-002-upper"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-003-lower"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-003-lower"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-003-upper"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-003-upper"
         }
       ],
       "https://w3id.org/tree#shape": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-member.shacl.ttl"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-member.shacl.ttl"
         }
       ],
       "https://w3id.org/tree#view": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld"
         }
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#retention",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#retention",
       "@type": [
         "https://w3id.org/ldes#RetentionPolicy"
       ],
@@ -160,13 +160,13 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-001-lower",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-001-lower",
       "@type": [
         "https://w3id.org/tree#GreaterThanOrEqualToRelation"
       ],
       "https://w3id.org/tree#node": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-001.jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-001.jsonld"
         }
       ],
       "https://w3id.org/tree#path": [
@@ -188,13 +188,13 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-001-upper",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-001-upper",
       "@type": [
         "https://w3id.org/tree#LessThanRelation"
       ],
       "https://w3id.org/tree#node": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-001.jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-001.jsonld"
         }
       ],
       "https://w3id.org/tree#path": [
@@ -216,13 +216,13 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-002-lower",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-002-lower",
       "@type": [
         "https://w3id.org/tree#GreaterThanOrEqualToRelation"
       ],
       "https://w3id.org/tree#node": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld"
         }
       ],
       "https://w3id.org/tree#path": [
@@ -244,13 +244,13 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-002-upper",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-002-upper",
       "@type": [
         "https://w3id.org/tree#LessThanRelation"
       ],
       "https://w3id.org/tree#node": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld"
         }
       ],
       "https://w3id.org/tree#path": [
@@ -272,13 +272,13 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-003-lower",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-003-lower",
       "@type": [
         "https://w3id.org/tree#GreaterThanOrEqualToRelation"
       ],
       "https://w3id.org/tree#node": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-003.jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-003.jsonld"
         }
       ],
       "https://w3id.org/tree#path": [
@@ -300,13 +300,13 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-003-upper",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#to-page-003-upper",
       "@type": [
         "https://w3id.org/tree#LessThanRelation"
       ],
       "https://w3id.org/tree#node": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-003.jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-003.jsonld"
         }
       ],
       "https://w3id.org/tree#path": [

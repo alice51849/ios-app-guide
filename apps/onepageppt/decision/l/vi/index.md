@@ -1,7 +1,7 @@
 ---
 title: "OnePage PPT: Slide AI — Biến ghi chú thành một trang | iOS App"
 lang: "vi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/vi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/vi/index.html"
 modified: "2026-09-03"
 app_store_id: "6798814385"
 verified_live: true
@@ -19,6 +19,6 @@ Biến một bức tường chữ thành đúng một trang mà người ta ch�
 
 [Tải OnePage PPT: Slide AI trên App Store](https://apps.apple.com/vn/app/id6798814385?pt=118326163&ct=iag_data_vi&mt=8)
 
-[Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/onepageppt.html)
+[Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/onepageppt.html)
 
 > Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.

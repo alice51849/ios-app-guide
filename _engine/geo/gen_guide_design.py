@@ -19,11 +19,12 @@ sys.path.insert(0, str(HERE))
 from appstore_live import live_app_keys  # noqa: E402
 import gen_smart_app_banners  # noqa: E402
 from videogen.registry import APPSTORE  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 
 PAGES = HERE / "pages"
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 ASSET_NAME = "guide-premium-v1.css"
 ASSET_RELATIVE = Path("assets") / ASSET_NAME

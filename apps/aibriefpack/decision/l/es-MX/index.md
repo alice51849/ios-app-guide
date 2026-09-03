@@ -1,7 +1,7 @@
 ---
 title: "AI Brief: Archivos a prompt IA — Archivos a contexto claro | iOS App"
 lang: "es-MX"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/es-MX/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/es-MX/index.html"
 modified: "2026-09-03"
 app_store_id: "6791658210"
 verified_live: true
@@ -20,6 +20,6 @@ Mejor contexto. Mejores respuestas. Convierte capturas de pantalla, archivos, no
 
 [Consigue AI Brief: Archivos a prompt IA en el App Store](https://apps.apple.com/mx/app/id6791658210?pt=118326163&ct=iag_data_es_mx&mt=8)
 
-[Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/aibriefpack.html)
+[Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/aibriefpack.html)
 
 > Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.

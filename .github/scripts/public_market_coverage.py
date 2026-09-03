@@ -17,7 +17,7 @@ import urllib.parse
 import urllib.request
 
 
-DEFAULT_SITE = "https://alice51849.github.io/ios-app-guide"
+DEFAULT_SITE = "https://open.cait518.cc/ios-app-guide"
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_APPS_MANIFEST = REPO_ROOT / "apps.json"
 GEO_ENGINE = REPO_ROOT / "_engine" / "geo"
@@ -94,7 +94,7 @@ def _site_identity(site: str) -> tuple[str, str]:
     parsed = urllib.parse.urlsplit(site.rstrip("/"))
     if (
         parsed.scheme != "https"
-        or parsed.hostname != "alice51849.github.io"
+        or parsed.hostname != "open.cait518.cc"
         or parsed.port is not None
         or parsed.username is not None
         or parsed.password is not None

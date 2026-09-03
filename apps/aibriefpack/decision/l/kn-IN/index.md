@@ -1,7 +1,7 @@
 ---
 title: "AI Brief: ಕಡತದಿಂದ AI ಪ್ರಾಂಪ್ಟ್ — ಫೈಲ್‌ನಿಂದ ಸ್ಪಷ್ಟ ಸಂದರ್ಭ | iOS App"
 lang: "kn-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/kn-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/kn-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6791658210"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [App Store ನಲ್ಲಿ AI Brief: ಕಡತದಿಂದ AI ಪ್ರಾಂಪ್ಟ್ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=iag_data_kn_in&mt=8)
 
-[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/aibriefpack.html)
+[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://open.cait518.cc/ios-app-guide/kn-IN/aibriefpack.html)
 
 > ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.

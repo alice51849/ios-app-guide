@@ -1,7 +1,7 @@
 ---
 title: "mejor app de clima para ayudar a padres a planear tiempo al aire libre con niños"
 lang: "es-MX"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/es-MX/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/es-MX/index.html"
 modified: "2026-09-03"
 app_store_id: "6779552704"
 verified_live: true
@@ -21,6 +21,6 @@ Los padres que planean tiempo al aire libre necesitan más que la temperatura: n
 
 [Consigue Lumi Weather en App Store →](https://apps.apple.com/mx/app/id6779552704?pt=118326163&ct=iag_data_es_mx&mt=8)
 
-[Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
+[Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 
 > Guía escrita por Lumi Studio, el desarrollador de la app. Los nombres de las apps son marcas de sus dueños y se usan solo para identificarlas. Para decisiones sobre documentos, salud, escuela y productividad, revisa los requisitos oficiales cuando aplique.

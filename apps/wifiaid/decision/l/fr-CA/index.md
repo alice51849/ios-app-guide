@@ -1,7 +1,7 @@
 ---
 title: "WiFi Aid: Diagnostic réseau — Diagnostic réseau précis | iOS App"
 lang: "fr-CA"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/fr-CA/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/fr-CA/index.html"
 modified: "2026-09-03"
 app_store_id: "6790467886"
 verified_live: true
@@ -19,6 +19,6 @@ Repérez la cause probable grâce aux vérifications indépendantes des chemins,
 
 [Obtenir WiFi Aid: Diagnostic réseau sur l'App Store](https://apps.apple.com/ca/app/id6790467886?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
-[Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/wifiaid.html)
+[Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/wifiaid.html)
 
 > Ce contenu est publié directement par Lumi Studio, le développeur de chaque app listée.

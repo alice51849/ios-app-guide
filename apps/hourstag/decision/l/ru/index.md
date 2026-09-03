@@ -1,7 +1,7 @@
 ---
 title: "HoursTag: Часы для покупки — Бюджет, расходы и экономия | iOS App"
 lang: "ru"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/ru/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ru/index.html"
 modified: "2026-09-03"
 app_store_id: "6754218117"
 verified_live: true
@@ -21,6 +21,6 @@ publisher: "Lumi Studio"
 
 [Установить HoursTag: Часы для покупки в App Store](https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=iag_data_ru&mt=8)
 
-[Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/hourstag.html)
+[Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/hourstag.html)
 
 > Это материал, созданный Lumi Studio, разработчиком всех перечисленных приложений.

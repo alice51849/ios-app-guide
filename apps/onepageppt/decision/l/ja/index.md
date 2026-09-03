@@ -1,7 +1,7 @@
 ---
 title: "OnePage PPT: AI資料作成 — メモやPDFが伝わる16:9スライドに | iOS App"
 lang: "ja"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/ja/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/ja/index.html"
 modified: "2026-09-03"
 app_store_id: "6798814385"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [App Store で OnePage PPT: AI資料作成 を入手](https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=iag_data_ja&mt=8)
 
-[完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/onepageppt.html)
+[完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/onepageppt.html)
 
 > これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。

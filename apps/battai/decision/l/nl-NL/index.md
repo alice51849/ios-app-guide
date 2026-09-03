@@ -1,7 +1,7 @@
 ---
 title: "BattAI: Batterijconditiescore — Heldere regels, bronnen en grenzen | iOS App"
 lang: "nl-NL"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/nl-NL/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/nl-NL/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI gebruikt vijf waarden uit openbare iOS-API’s: batterijniveau, la
 
 [Download BattAI: Batterijconditiescore in de App Store](https://apps.apple.com/nl/app/id6802423998?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
-[Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/battai.html)
+[Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/battai.html)
 
 > Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.

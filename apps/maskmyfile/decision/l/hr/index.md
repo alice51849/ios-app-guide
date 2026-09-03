@@ -1,7 +1,7 @@
 ---
 title: "Mask My File: Ukloni podatke — Sakrij podatke prije slanja | iOS App"
 lang: "hr"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/hr/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/hr/index.html"
 modified: "2026-09-03"
 app_store_id: "6792850916"
 verified_live: true
@@ -20,6 +20,6 @@ Dijelite bez brige i zadržite koristan kontekst. Mask My File pronalazi privatn
 
 [Preuzmite Mask My File: Ukloni podatke u App Storeu](https://apps.apple.com/hr/app/id6792850916?pt=118326163&ct=iag_data_hr&mt=8)
 
-[Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/maskmyfile.html)
+[Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/maskmyfile.html)
 
 > Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.

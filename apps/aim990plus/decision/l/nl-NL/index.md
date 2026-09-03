@@ -1,7 +1,7 @@
 ---
 title: "Aim990 Plus: Oefentoets Engels — Engels examen onder druk | iOS App"
 lang: "nl-NL"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/nl-NL/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/nl-NL/index.html"
 modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
@@ -19,6 +19,6 @@ Aim990 Plus is een complete trainingsomgeving voor volwassenen die Engelse luist
 
 [Download Aim990 Plus: Oefentoets Engels in de App Store](https://apps.apple.com/nl/app/id6792483140?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
-[Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/aim990plus.html)
+[Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/aim990plus.html)
 
 > Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.

@@ -1,7 +1,7 @@
 ---
 title: "OnePage PPT: AI 一頁簡報 — 筆記、螢幕截圖、PDF秒變投影片 | iOS App"
 lang: "zh-Hant"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/zh-Hant/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/zh-Hant/index.html"
 modified: "2026-09-03"
 app_store_id: "6798814385"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [在 App Store 取得 OnePage PPT: AI 一頁簡報](https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
-[閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/onepageppt.html)
+[閱讀完整指南](https://open.cait518.cc/ios-app-guide/zh-Hant/onepageppt.html)
 
 > 這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。

@@ -14,8 +14,11 @@ import urllib.request
 from official_locales import OFFICIAL_LOCALES
 from websub_config import WEBSUB_HUBS
 
+# pages.yml copies this file alone into RUNNER_TEMP, without its siblings,
+# so it cannot import site_config. The workflow pins GEO_SITE to the same
+# host site_config.PUBLIC_SITE declares; this literal is only the fallback.
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", "https://open.cait518.cc/ios-app-guide"
 ).rstrip("/")
 FEED_FILES = (
     "feed.xml",

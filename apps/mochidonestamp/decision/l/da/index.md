@@ -1,7 +1,7 @@
 ---
 title: "Mochi DoneStamp: Sidst — Husk hvornår du gjorde det | iOS App"
 lang: "da"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/da/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/da/index.html"
 modified: "2026-09-03"
 app_store_id: "6790800323"
 verified_live: true
@@ -19,6 +19,6 @@ Hvornår skiftede du sidst sengetøj, vandede en plante, ringede til familien, s
 
 [Hent Mochi DoneStamp: Sidst i App Store](https://apps.apple.com/dk/app/id6790800323?pt=118326163&ct=iag_data_da&mt=8)
 
-[Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/mochidonestamp.html)
+[Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/mochidonestamp.html)
 
 > Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.

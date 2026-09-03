@@ -26,11 +26,12 @@ ROOT = HERE.parent
 sys.path.insert(0, str(ROOT / "social"))
 
 from videogen.registry import APPSTORE  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 IMAGE_NS = "http://www.google.com/schemas/sitemap-image/1.1"

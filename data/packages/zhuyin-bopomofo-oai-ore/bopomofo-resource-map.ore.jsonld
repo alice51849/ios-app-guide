@@ -10,7 +10,7 @@
   },
   "@graph": [
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json",
+      "@id": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json",
       "dcterms:format": [
         "application/json"
       ],
@@ -22,12 +22,12 @@
       ],
       "spdx:checksum": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json#sha256"
+          "@id": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json#sha256"
         }
       ],
       "ore:isAggregatedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "dcat:byteSize": [
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json#sha256",
+      "@id": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json#sha256",
       "spdx:algorithm": [
         {
           "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json",
+      "@id": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json",
       "dcterms:format": [
         "application/vnd.oai.openapi+json;version=3.1"
       ],
@@ -67,12 +67,12 @@
       ],
       "spdx:checksum": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json#sha256"
+          "@id": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json#sha256"
         }
       ],
       "ore:isAggregatedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "dcat:byteSize": [
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json#sha256",
+      "@id": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json#sha256",
       "spdx:algorithm": [
         {
           "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
@@ -100,7 +100,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld",
       "dcterms:format": [
         "application/ld+json"
       ],
@@ -112,12 +112,12 @@
       ],
       "spdx:checksum": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#sha256"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#sha256"
         }
       ],
       "ore:isAggregatedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "dcat:byteSize": [
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#sha256",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#sha256",
       "spdx:algorithm": [
         {
           "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
@@ -145,7 +145,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl",
       "dcterms:format": [
         "text/turtle"
       ],
@@ -157,12 +157,12 @@
       ],
       "spdx:checksum": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl#sha256"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl#sha256"
         }
       ],
       "ore:isAggregatedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "dcat:byteSize": [
@@ -173,7 +173,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl#sha256",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl#sha256",
       "spdx:algorithm": [
         {
           "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
@@ -190,7 +190,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher",
       "@type": [
         "http://purl.org/dc/terms/Agent",
         "http://xmlns.com/foaf/0.1/Organization"
@@ -200,7 +200,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.jsonld",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.jsonld",
       "dcterms:created": [
         {
           "@value": "2026-07-11T00:00:00Z",
@@ -209,7 +209,7 @@
       ],
       "dcterms:creator": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher"
         }
       ],
       "dcterms:modified": [
@@ -225,7 +225,7 @@
       ],
       "ore:describes": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "@type": [
@@ -233,7 +233,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation",
       "dcterms:conformsTo": [
         {
           "@id": "https://www.openarchives.org/ore/1.0/datamodel"
@@ -244,7 +244,7 @@
       ],
       "dcterms:creator": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher"
         }
       ],
       "dcterms:description": [
@@ -274,63 +274,63 @@
       ],
       "ore:aggregates": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.json"
+          "@id": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json"
+          "@id": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json"
         }
       ],
       "ore:isDescribedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.jsonld"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl"
         }
       ],
       "@type": [
@@ -338,7 +338,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json",
       "dcterms:format": [
         "application/json"
       ],
@@ -350,12 +350,12 @@
       ],
       "spdx:checksum": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json#sha256"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json#sha256"
         }
       ],
       "ore:isAggregatedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "dcat:byteSize": [
@@ -366,7 +366,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json#sha256",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json#sha256",
       "spdx:algorithm": [
         {
           "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
@@ -383,7 +383,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv",
       "dcterms:format": [
         "text/csv"
       ],
@@ -395,12 +395,12 @@
       ],
       "spdx:checksum": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv#sha256"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv#sha256"
         }
       ],
       "ore:isAggregatedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "dcat:byteSize": [
@@ -411,7 +411,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv#sha256",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv#sha256",
       "spdx:algorithm": [
         {
           "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
@@ -428,7 +428,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json",
       "dcterms:format": [
         "application/json"
       ],
@@ -440,12 +440,12 @@
       ],
       "spdx:checksum": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json#sha256"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json#sha256"
         }
       ],
       "ore:isAggregatedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "dcat:byteSize": [
@@ -456,7 +456,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json#sha256",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json#sha256",
       "spdx:algorithm": [
         {
           "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
@@ -473,7 +473,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
       "dcterms:format": [
         "application/ld+json"
       ],
@@ -485,12 +485,12 @@
       ],
       "spdx:checksum": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld#sha256"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld#sha256"
         }
       ],
       "ore:isAggregatedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "dcat:byteSize": [
@@ -501,7 +501,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld#sha256",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld#sha256",
       "spdx:algorithm": [
         {
           "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
@@ -518,7 +518,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv",
       "dcterms:format": [
         "text/csv"
       ],
@@ -530,12 +530,12 @@
       ],
       "spdx:checksum": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv#sha256"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv#sha256"
         }
       ],
       "ore:isAggregatedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "dcat:byteSize": [
@@ -546,7 +546,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv#sha256",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv#sha256",
       "spdx:algorithm": [
         {
           "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
@@ -563,7 +563,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
       "dcterms:format": [
         "application/csvm+json"
       ],
@@ -575,12 +575,12 @@
       ],
       "spdx:checksum": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json#sha256"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json#sha256"
         }
       ],
       "ore:isAggregatedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "dcat:byteSize": [
@@ -591,7 +591,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json#sha256",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json#sha256",
       "spdx:algorithm": [
         {
           "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
@@ -608,7 +608,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl",
       "dcterms:format": [
         "text/plain"
       ],
@@ -620,12 +620,12 @@
       ],
       "spdx:checksum": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl#sha256"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl#sha256"
         }
       ],
       "ore:isAggregatedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "dcat:byteSize": [
@@ -636,7 +636,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl#sha256",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl#sha256",
       "spdx:algorithm": [
         {
           "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
@@ -653,7 +653,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld",
       "dcterms:format": [
         "application/ld+json"
       ],
@@ -665,12 +665,12 @@
       ],
       "spdx:checksum": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld#sha256"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld#sha256"
         }
       ],
       "ore:isAggregatedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "dcat:byteSize": [
@@ -681,7 +681,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld#sha256",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld#sha256",
       "spdx:algorithm": [
         {
           "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
@@ -698,7 +698,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt",
       "dcterms:format": [
         "application/n-triples"
       ],
@@ -710,12 +710,12 @@
       ],
       "spdx:checksum": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt#sha256"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt#sha256"
         }
       ],
       "ore:isAggregatedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "dcat:byteSize": [
@@ -726,7 +726,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt#sha256",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt#sha256",
       "spdx:algorithm": [
         {
           "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
@@ -743,7 +743,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl",
       "dcterms:format": [
         "text/turtle"
       ],
@@ -755,12 +755,12 @@
       ],
       "spdx:checksum": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl#sha256"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl#sha256"
         }
       ],
       "ore:isAggregatedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "dcat:byteSize": [
@@ -771,7 +771,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl#sha256",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl#sha256",
       "spdx:algorithm": [
         {
           "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
@@ -788,7 +788,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl",
       "dcterms:format": [
         "text/turtle"
       ],
@@ -800,12 +800,12 @@
       ],
       "spdx:checksum": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl#sha256"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl#sha256"
         }
       ],
       "ore:isAggregatedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "dcat:byteSize": [
@@ -816,7 +816,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl#sha256",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl#sha256",
       "spdx:algorithm": [
         {
           "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"
@@ -833,7 +833,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json",
       "dcterms:format": [
         "application/json"
       ],
@@ -845,12 +845,12 @@
       ],
       "spdx:checksum": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json#sha256"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json#sha256"
         }
       ],
       "ore:isAggregatedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation"
         }
       ],
       "dcat:byteSize": [
@@ -861,7 +861,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json#sha256",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json#sha256",
       "spdx:algorithm": [
         {
           "@id": "http://spdx.org/rdf/terms#checksumAlgorithm_sha256"

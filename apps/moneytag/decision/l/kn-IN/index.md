@@ -1,7 +1,7 @@
 ---
 title: "MoneyTag: ಆದಾಯ ಮತ್ತು ವೆಚ್ಚ — ಯೋಜನೆಗಳು · ಟ್ಯಾಗ್ · ವರದಿ | iOS App"
 lang: "kn-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/kn-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/kn-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6801956402"
 verified_live: true
@@ -26,6 +26,6 @@ publisher: "Lumi Studio"
 
 [App Store ನಲ್ಲಿ MoneyTag: ಆದಾಯ ಮತ್ತು ವೆಚ್ಚ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=iag_data_kn_in&mt=8)
 
-[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/moneytag.html)
+[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://open.cait518.cc/ios-app-guide/kn-IN/moneytag.html)
 
 > ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.

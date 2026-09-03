@@ -1,7 +1,7 @@
 ---
 title: "Wordmate Lite: besedišče — Pet novih besed vsak dan | iOS App"
 lang: "sl-SI"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/sl-SI/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/sl-SI/index.html"
 modified: "2026-09-03"
 app_store_id: "6797601720"
 verified_live: true
@@ -20,6 +20,6 @@ Tuji jezik bi rad končno premaknil naprej, a večer spet mine brez ene same nov
 
 [Prenesite Wordmate Lite: besedišče iz trgovine App Store](https://apps.apple.com/si/app/id6797601720?pt=118326163&ct=iag_data_sl_si&mt=8)
 
-[Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/wordmatelite.html)
+[Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/wordmatelite.html)
 
 > To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.

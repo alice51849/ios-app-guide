@@ -26,13 +26,14 @@ from gen_feed import feed_discovery_links, render_feed_discovery
 from official_locales import OFFICIAL_LOCALES
 import publisher_intent_catalog as catalog
 import sync_standard_site
+from site_config import PUBLIC_SITE  # noqa: E402
 
 
 HERE = Path(__file__).resolve().parent
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get(
     "GEO_SITE",
-    "https://alice51849.github.io/ios-app-guide",
+    PUBLIC_SITE,
 ).rstrip("/")
 SLUG = "lumi-studio-publisher-intent-visuals"
 MANIFEST_NAME = f"{SLUG}.json"

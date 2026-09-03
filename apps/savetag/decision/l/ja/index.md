@@ -1,7 +1,7 @@
 ---
 title: "SaveTag: AIであとで読む — リンクを保存して自動でタグ | iOS App"
 lang: "ja"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ja/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/ja/index.html"
 modified: "2026-09-03"
 app_store_id: "6802505528"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [App Store で SaveTag: AIであとで読む を入手](https://apps.apple.com/jp/app/id6802505528?pt=118326163&ct=iag_data_ja&mt=8)
 
-[完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/savetag.html)
+[完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/savetag.html)
 
 > これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。

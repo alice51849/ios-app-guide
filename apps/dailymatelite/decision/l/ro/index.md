@@ -1,7 +1,7 @@
 ---
 title: "DailyMate Lite: Vorbește azi — 50 de limbi, dialoguri reale | iOS App"
 lang: "ro"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/ro/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/ro/index.html"
 modified: "2026-09-03"
 app_store_id: "6794725568"
 verified_live: true
@@ -19,6 +19,6 @@ Vorbește când contează. DailyMate Lite transformă situațiile reale în exer
 
 [Descarcă DailyMate Lite: Vorbește azi din App Store](https://apps.apple.com/ro/app/id6794725568?pt=118326163&ct=iag_data_ro&mt=8)
 
-[Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/dailymatelite.html)
+[Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/dailymatelite.html)
 
 > Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.

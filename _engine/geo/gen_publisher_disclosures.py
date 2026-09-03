@@ -14,6 +14,7 @@ import subprocess
 from typing import Iterable
 
 from official_locales import OFFICIAL_LOCALES
+from site_config import PUBLIC_SITE  # noqa: E402
 
 
 HERE = Path(__file__).resolve().parent
@@ -130,7 +131,7 @@ AUTHOR_CARD = (
     '<data class="p-author h-card vcard" value="Lumi Studio">'
     '<data class="p-name p-org fn org" value="Lumi Studio"></data>'
     '<data class="u-url url" '
-    'value="https://alice51849.github.io/ios-app-guide/about.html"></data>'
+    f'value="{PUBLIC_SITE}/about.html"></data>'
     "</data>"
 )
 SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?।。؟۔])\s+")

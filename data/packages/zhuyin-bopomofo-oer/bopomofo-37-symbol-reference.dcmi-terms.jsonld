@@ -6,7 +6,7 @@
   },
   "@graph": [
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/#organization",
+      "@id": "https://open.cait518.cc/ios-app-guide/#organization",
       "@type": "dcterms:Agent",
       "dcterms:title": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-learners",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-learners",
       "@type": "dcterms:AgentClass",
       "dcterms:title": [
         {
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-supporters",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-supporters",
       "@type": "dcterms:AgentClass",
       "dcterms:title": [
         {
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#level-beginner",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#level-beginner",
       "@type": "dcterms:AgentClass",
       "dcterms:title": [
         {
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#method-reference",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#method-reference",
       "@type": "dcterms:MethodOfInstruction",
       "dcterms:title": [
         {
@@ -86,7 +86,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld",
       "@type": "dcmiType:Dataset",
       "dcterms:title": [
         {
@@ -109,10 +109,10 @@
         }
       ],
       "dcterms:creator": {
-        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+        "@id": "https://open.cait518.cc/ios-app-guide/#organization"
       },
       "dcterms:publisher": {
-        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+        "@id": "https://open.cait518.cc/ios-app-guide/#organization"
       },
       "dcterms:issued": {
         "@value": "2026-07-11",
@@ -123,16 +123,16 @@
         "@type": "xsd:dateTime"
       },
       "dcterms:format": "application/ld+json",
-      "dcterms:identifier": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld",
+      "dcterms:identifier": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld",
       "dcterms:source": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld"
       },
       "dcterms:references": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub"
         }
       ],
       "dcterms:conformsTo": {
@@ -142,11 +142,11 @@
         "@id": "https://creativecommons.org/licenses/by/4.0/"
       },
       "dcterms:isPartOf": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#metadata-package"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#metadata-package"
       }
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub",
       "@type": [
         "dcterms:BibliographicResource",
         "dcmiType:Text"
@@ -160,10 +160,10 @@
         "@language": "zh-Hant"
       },
       "dcterms:creator": {
-        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+        "@id": "https://open.cait518.cc/ios-app-guide/#organization"
       },
       "dcterms:publisher": {
-        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+        "@id": "https://open.cait518.cc/ios-app-guide/#organization"
       },
       "dcterms:subject": [
         {
@@ -207,13 +207,13 @@
       "dcterms:format": "application/epub+zip",
       "dcterms:extent": "9564 bytes",
       "dcterms:identifier": [
-        "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub",
+        "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub",
         "LUMI-ZHUYIN-EPUB-EN-2026",
         "urn:sha256:be0b7cdcc34875930343c41c230fc105f00944e1736d658d9d8de0b67b54cff9"
       ],
       "dcterms:language": "en",
       "dcterms:relation": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub"
       },
       "dcterms:rights": {
         "@value": "Creative Commons Attribution 4.0 International; open access with no account required.",
@@ -228,17 +228,17 @@
       },
       "dcterms:audience": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-learners"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-learners"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-supporters"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-supporters"
         }
       ],
       "dcterms:educationLevel": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#level-beginner"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#level-beginner"
       },
       "dcterms:instructionalMethod": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#method-reference"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#method-reference"
       },
       "dcterms:conformsTo": [
         {
@@ -250,18 +250,18 @@
       ],
       "dcterms:isReferencedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld"
         }
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub",
       "@type": [
         "dcterms:BibliographicResource",
         "dcmiType:Text"
@@ -275,10 +275,10 @@
         "@language": "en"
       },
       "dcterms:creator": {
-        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+        "@id": "https://open.cait518.cc/ios-app-guide/#organization"
       },
       "dcterms:publisher": {
-        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+        "@id": "https://open.cait518.cc/ios-app-guide/#organization"
       },
       "dcterms:subject": [
         {
@@ -322,13 +322,13 @@
       "dcterms:format": "application/epub+zip",
       "dcterms:extent": "10287 bytes",
       "dcterms:identifier": [
-        "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub",
+        "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub",
         "LUMI-ZHUYIN-EPUB-ZH-HANT-2026",
         "urn:sha256:0e1f335c5b92aa0f2002a7bf130591005df5e36f76335717925f60a206b8e64b"
       ],
       "dcterms:language": "zh-Hant",
       "dcterms:relation": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub"
       },
       "dcterms:rights": {
         "@value": "採 Creative Commons 姓名標示 4.0 國際授權；開放存取且不需帳號。",
@@ -343,17 +343,17 @@
       },
       "dcterms:audience": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-learners"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-learners"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-supporters"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#audience-supporters"
         }
       ],
       "dcterms:educationLevel": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#level-beginner"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#level-beginner"
       },
       "dcterms:instructionalMethod": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#method-reference"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html#method-reference"
       },
       "dcterms:conformsTo": [
         {
@@ -365,13 +365,13 @@
       ],
       "dcterms:isReferencedBy": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/metadata.jsonld"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oer/bopomofo-37-symbol-reference.dcmi-terms.jsonld"
         }
       ]
     }

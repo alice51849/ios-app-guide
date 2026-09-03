@@ -10,7 +10,7 @@
     "dcat": "http://www.w3.org/ns/dcat#",
     "void": "http://rdfs.org/ns/void#",
     "sh": "http://www.w3.org/ns/shacl#",
-    "zhuyin": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#"
+    "zhuyin": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#"
   },
   "@graph": [
     {
@@ -51,7 +51,7 @@
       ],
       "dcterms:creator": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+          "@id": "https://open.cait518.cc/ios-app-guide/#organization"
         }
       ],
       "dcterms:license": [
@@ -61,7 +61,7 @@
       ],
       "dcterms:source": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json"
         },
         {
           "@id": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
@@ -106,7 +106,7 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/#organization",
+      "@id": "https://open.cait518.cc/ios-app-guide/#organization",
       "@type": [
         "schema:Organization"
       ],

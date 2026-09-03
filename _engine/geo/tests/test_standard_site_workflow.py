@@ -350,7 +350,7 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             self.assertEqual(
                 1,
                 sitemap.count(
-                    f"https://alice51849.github.io/ios-app-guide{path}"
+                    f"https://open.cait518.cc/ios-app-guide{path}"
                 ),
             )
             self.assertIn(
@@ -359,7 +359,7 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             )
             self.assertIn(
                 f'<link rel="canonical" href="'
-                f'https://alice51849.github.io/ios-app-guide{path}">',
+                f'https://open.cait518.cc/ios-app-guide{path}">',
                 html,
             )
             # These three documents belong to app_key "wifiaid" and their copy

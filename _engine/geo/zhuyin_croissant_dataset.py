@@ -34,11 +34,12 @@ from zhuyin_skos_vocabulary import (  # noqa: E402
     category_uri,
     concept_uri,
 )
+from site_config import PUBLIC_SITE  # noqa: E402
 
 
 PAGES = HERE / "pages"
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 SLUG = "zhuyin-bopomofo-ml-dataset"
 INITIAL_DATE = "2026-07-11"

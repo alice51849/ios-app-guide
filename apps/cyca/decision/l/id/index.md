@@ -1,7 +1,7 @@
 ---
 title: "aplikasi pelacak siklus terbaik tanpa perlu akun untuk iPhone"
 lang: "id"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/id/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/id/index.html"
 modified: "2026-09-03"
 app_store_id: "6782251621"
 verified_live: true
@@ -20,6 +20,6 @@ Dalam kategori di mana sensitivitas data adalah segalanya, pelacak siklus yang t
 
 [Dapatkan Cyca di App Store →](https://apps.apple.com/id/app/id6782251621?pt=118326163&ct=iag_data_id&mt=8)
 
-[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-period-tracker-app-no-account-required-iphone.html)
+[Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/answers/best-period-tracker-app-no-account-required-iphone.html)
 
 > Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.

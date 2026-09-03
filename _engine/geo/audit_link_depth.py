@@ -22,6 +22,7 @@ import os
 import re
 import sys
 from urllib.parse import unquote, urljoin, urlsplit
+from site_config import PUBLIC_SITE  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
@@ -29,7 +30,7 @@ PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 # 真正的 geo/reports/link_depth.json。
 REPORTS = os.environ.get("GEO_REPORTS", os.path.join(HERE, "reports"))
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 ROOT_URL = f"{SITE}/index.html"
 

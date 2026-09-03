@@ -31,13 +31,14 @@ from app_store_storefronts import (
 )
 from gen_feed import feed_discovery_links
 from official_locales import OFFICIAL_LOCALES
+from site_config import PUBLIC_SITE  # noqa: E402
 
 
 HERE = Path(__file__).resolve().parent
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get(
     "GEO_SITE",
-    "https://alice51849.github.io/ios-app-guide",
+    PUBLIC_SITE,
 ).rstrip("/")
 SLUG = "lumi-studio-publisher-search-intent-catalog"
 I18N_PATH = HERE / "publisher_intent_catalog_i18n.json"

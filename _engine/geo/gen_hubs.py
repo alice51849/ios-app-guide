@@ -29,10 +29,11 @@ from portfolio_app_finder import RTL_LOCALES, UI  # noqa: E402
 import gen_mobile_app_identity  # noqa: E402
 import gen_store_attribution  # noqa: E402
 import queries  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 HUBS = os.path.join(PAGES, "hubs")
-SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
+SITE = os.environ.get("GEO_SITE", PUBLIC_SITE).rstrip("/")
 APP_STORE_ID_RE = re.compile(
     r"https://apps\.apple\.com/(?:[a-z]{2}/)?app/id(?P<id>[0-9]{9,12})",
     re.IGNORECASE,

@@ -1,7 +1,7 @@
 ---
 title: "BattAI: Salut de la bateria — Regles, fonts i límits clars | iOS App"
 lang: "ca"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ca/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ca/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI utilitza cinc dades de les API públiques d’iOS: nivell de bater
 
 [Descarrega BattAI: Salut de la bateria a l’App Store](https://apps.apple.com/es/app/id6802423998?pt=118326163&ct=iag_data_ca&mt=8)
 
-[Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/battai.html)
+[Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/battai.html)
 
 > Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.

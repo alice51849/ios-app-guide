@@ -1,7 +1,7 @@
 ---
 title: "best offline English listening and reading exam trainer for iPhone"
 lang: "zh-Hant"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/zh-Hant/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/zh-Hant/index.html"
 modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
@@ -19,6 +19,6 @@ Aim990 Plus — Build calm, accurate decisions under time with 630 original ques
 
 [前往 App Store 取得 Aim990 Plus →](https://apps.apple.com/tw/app/id6792483140?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
-[閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html)
+[閱讀完整指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html)
 
 > 由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。

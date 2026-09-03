@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>黒塗りして PDF で書き出す — 無料・ピクセルごと消える・アップロードなし</title>
 <meta name="description" content="スキャンやスクリーンショットの上をドラッグして黒塗り／モザイクをかけ、統合済みの PDF または PNG で書き出します。隠した部分は書き出し前に本当に消えます。">
-<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ja/tools/redact-to-pdf.html">
-<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/redact-to-pdf.html">
-<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/redact-to-pdf.html">
-<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/redact-to-pdf.html">
-<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/redact-to-pdf.html">
-<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/redact-to-pdf.html">
-<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/redact-to-pdf.html">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/ja/tools/redact-to-pdf.html">
+<link rel="alternate" hreflang="en" href="https://open.cait518.cc/ios-app-guide/tools/redact-to-pdf.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/redact-to-pdf.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/redact-to-pdf.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/redact-to-pdf.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/redact-to-pdf.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/tools/redact-to-pdf.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="書類を黒塗りして PDF にする">
 <meta property="og:description" content="スキャンやスクリーンショットの上をドラッグして黒塗り／モザイクをかけ、統合済みの PDF または PNG で書き出します。隠した部分は書き出し前に本当に消えます。">
-<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ja/tools/redact-to-pdf.html">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/ja/tools/redact-to-pdf.html">
 <meta name="twitter:card" content="summary">
 <style>
 :root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
@@ -67,12 +67,12 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 
 @media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"書類を黒塗りして PDF にする","description":"スキャンやスクリーンショットの上をドラッグして黒塗り／モザイクをかけ、統合済みの PDF または PNG で書き出します。隠した部分は書き出し前に本当に消えます。","url":"https://alice51849.github.io/ios-app-guide/ja/tools/redact-to-pdf.html","inLanguage":"ja","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["ドラッグで範囲を指定","べた塗りとモザイクの2方式","1ページの統合済み PDF を書き出し","元に戻す・全消去、すべてブラウザ内"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"書類を黒塗りして PDF にする","description":"スキャンやスクリーンショットの上をドラッグして黒塗り／モザイクをかけ、統合済みの PDF または PNG で書き出します。隠した部分は書き出し前に本当に消えます。","url":"https://open.cait518.cc/ios-app-guide/ja/tools/redact-to-pdf.html","inLanguage":"ja","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["ドラッグで範囲を指定","べた塗りとモザイクの2方式","1ページの統合済み PDF を書き出し","元に戻す・全消去、すべてブラウザ内"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"PDF 編集ソフトで黒い四角を描くのはなぜ危険ですか？","acceptedAnswer":{"@type":"Answer","text":"多くのソフトは四角を「上に置くオブジェクト」として追加するだけで、元の文字はファイル内に残り、選択・コピー・抽出できてしまうからです。このページのように画像へ統合すれば本当に消えます。"}},{"@type":"Question","name":"べた塗りとモザイクはどちらが安全ですか？","acceptedAnswer":{"@type":"Answer","text":"べた塗りです。ブロックが小さいモザイクは、隠した内容が短い数字などで推測しやすい場合に復元されることがあります。機密情報にはべた塗りを使ってください。"}},{"@type":"Question","name":"複数ページをまとめて処理できますか？","acceptedAnswer":{"@type":"Answer","text":"1回につき1枚、1ページの PDF として書き出します。複数ページの場合は各ページを処理してから、下に挙げた JPG→PDF ツールで結合してください。"}}]}</script>
 <link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
-<header class="top"><div class="wrap nav"><a href="index.html">← 無料ツール一覧</a><a href="https://alice51849.github.io/ios-app-guide/ja/" >iOS App Guide</a></div></header>
+<header class="top"><div class="wrap nav"><a href="index.html">← 無料ツール一覧</a><a href="https://open.cait518.cc/ios-app-guide/ja/" >iOS App Guide</a></div></header>
 <section class="hero wrap">
 <span class="eyebrow">覆うのではなく消す · 統合して書き出し</span>
 <h1>書類を黒塗りして PDF にする</h1>
@@ -105,7 +105,7 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 <section class="grid">
 <article class="card"><h2>しくみ</h2><ol><li>画像を canvas に描き（長辺 2000 px まで）、黒塗りはそのピクセルに直接描き込みます。別レイヤーとしては保持しません。</li><li>べた塗りは範囲を黒で塗りつぶし、モザイクはブロックごとに平均色を計算して書き戻すため、範囲内に元の値は残りません。</li><li>書き出しでは完成した canvas を JPEG に再エンコードし、このページが生成する最小限の1ページ PDF に埋め込みます。PDF の中身は統合済みの画像だけです。</li><li>「元に戻す」は最後の範囲を取り消して元画像から描き直すので、やり直しは無料です。</li></ol></article>
 <article class="card"><h2>このツールがしないこと</h2><ul><li>PDF を直接開くことはできません。ブラウザは外部ライブラリなしに PDF を描画できず、このページは外部コードを一切読み込みません。先に画像として書き出すかスクリーンショットを撮ってください（それ自体が安全な黒塗りの条件でもあります）。</li><li>元ファイルのメタデータは削除しません。そもそも読み取っておらず、書き出しは canvas からの新規レンダリングです。</li><li>アップロードしません。タブを閉じれば何も残りません。</li></ul></article>
-<article class="card wide"><h2>ほかの無料ツール</h2><ul><li><a href="duplicate-photo-finder.html">重複写真を見つける</a></li><li><a href="flashcard-maker.html">単語カードを作る</a></li><li><a href="image-compressor.html">画像を圧縮する</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
+<article class="card wide"><h2>ほかの無料ツール</h2><ul><li><a href="duplicate-photo-finder.html">重複写真を見つける</a></li><li><a href="flashcard-maker.html">単語カードを作る</a></li><li><a href="image-compressor.html">画像を圧縮する</a></li><li><a href="https://open.cait518.cc/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
 </section>
 <section class="faq"><h2>よくある質問</h2><details><summary>PDF 編集ソフトで黒い四角を描くのはなぜ危険ですか？</summary><p>多くのソフトは四角を「上に置くオブジェクト」として追加するだけで、元の文字はファイル内に残り、選択・コピー・抽出できてしまうからです。このページのように画像へ統合すれば本当に消えます。</p></details><details><summary>べた塗りとモザイクはどちらが安全ですか？</summary><p>べた塗りです。ブロックが小さいモザイクは、隠した内容が短い数字などで推測しやすい場合に復元されることがあります。機密情報にはべた塗りを使ってください。</p></details><details><summary>複数ページをまとめて処理できますか？</summary><p>1回につき1枚、1ページの PDF として書き出します。複数ページの場合は各ページを処理してから、下に挙げた JPG→PDF ツールで結合してください。</p></details></section>
 <section class="app-card"><h2>iPhone でよく黒塗りしますか？</h2>

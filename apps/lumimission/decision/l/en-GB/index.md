@@ -1,7 +1,7 @@
 ---
 title: "best bedtime routine app for preschoolers with no ads"
 lang: "en-GB"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/en-GB/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/en-GB/index.html"
 modified: "2026-09-03"
 app_store_id: "6779750237"
 verified_live: true
@@ -20,6 +20,6 @@ For a preschooler, a bedtime routine works best when it is short, visual and pre
 
 [Get Lumi Mission Planet on the App Store →](https://apps.apple.com/gb/app/id6779750237?pt=118326163&ct=iag_data_en_gb&mt=8)
 
-[Read the full guide](https://alice51849.github.io/ios-app-guide/en-GB/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
+[Read the full guide](https://open.cait518.cc/ios-app-guide/en-GB/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 
 > Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

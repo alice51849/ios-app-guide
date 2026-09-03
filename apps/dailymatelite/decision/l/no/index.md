@@ -1,7 +1,7 @@
 ---
 title: "DailyMate Lite: Snakk i dag — 50 språk, ekte dialoger | iOS App"
 lang: "no"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/no/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/no/index.html"
 modified: "2026-09-03"
 app_store_id: "6794725568"
 verified_live: true
@@ -19,6 +19,6 @@ Snakk når det teller. Med DailyMate Lite øver du på komplette replikkveksling
 
 [Last ned DailyMate Lite: Snakk i dag fra App Store](https://apps.apple.com/no/app/id6794725568?pt=118326163&ct=iag_data_no&mt=8)
 
-[Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/dailymatelite.html)
+[Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/dailymatelite.html)
 
 > Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.

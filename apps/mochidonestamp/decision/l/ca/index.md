@@ -1,7 +1,7 @@
 ---
 title: "Mochi DoneStamp: Última vegada — Recorda quan ho vas fer | iOS App"
 lang: "ca"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ca/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/ca/index.html"
 modified: "2026-09-03"
 app_store_id: "6790800323"
 verified_live: true
@@ -19,6 +19,6 @@ Quan va ser l’última vegada que vas canviar els llençols, regar una planta, 
 
 [Descarrega Mochi DoneStamp: Última vegada a l’App Store](https://apps.apple.com/es/app/id6790800323?pt=118326163&ct=iag_data_ca&mt=8)
 
-[Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/mochidonestamp.html)
+[Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/mochidonestamp.html)
 
 > Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.

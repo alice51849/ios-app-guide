@@ -1,7 +1,7 @@
 ---
 title: "Mochi DoneStamp: Última vez — Recuerda cuándo lo hiciste | iOS App"
 lang: "es-MX"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/es-MX/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/es-MX/index.html"
 modified: "2026-09-03"
 app_store_id: "6790800323"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [Consigue Mochi DoneStamp: Última vez en el App Store](https://apps.apple.com/mx/app/id6790800323?pt=118326163&ct=iag_data_es_mx&mt=8)
 
-[Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/mochidonestamp.html)
+[Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/mochidonestamp.html)
 
 > Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.

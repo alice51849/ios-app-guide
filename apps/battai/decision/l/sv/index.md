@@ -1,7 +1,7 @@
 ---
 title: "BattAI: Batteriets hälsopoäng — Tydliga regler, källor och gränser | iOS App"
 lang: "sv"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/sv/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/sv/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI använder fem värden från offentliga iOS-API:er: batterinivå, l
 
 [Hämta BattAI: Batteriets hälsopoäng i App Store](https://apps.apple.com/se/app/id6802423998?pt=118326163&ct=iag_data_sv&mt=8)
 
-[Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/battai.html)
+[Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/battai.html)
 
 > Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.

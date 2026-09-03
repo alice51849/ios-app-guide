@@ -1,7 +1,7 @@
 ---
 title: "najboljša celovita aplikacija za jutranjo in večerno rutino za otroke"
 lang: "sl-SI"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/sl-SI/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/sl-SI/index.html"
 modified: "2026-09-03"
 app_store_id: "6779745474"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [Pridobite Lumi Mission Planet Pro v trgovini App Store →](https://apps.apple.com/si/app/id6779745474?pt=118326163&ct=iag_data_sl_si&mt=8)
 
-[Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
+[Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 
 > Vodnik je napisal razvijalec aplikacije Lumi Studio. Imena aplikacij so blagovne znamke svojih lastnikov in so navedena zgolj za identifikacijo. Pri odločitvah glede dokumentov, zdravja, šole in produktivnosti tam, kjer je to pomembno, preverite uradne zahteve.

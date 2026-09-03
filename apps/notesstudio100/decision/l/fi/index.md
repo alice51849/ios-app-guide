@@ -1,7 +1,7 @@
 ---
 title: "100 Notes Studio: Pen & Paper — Muistikirja, käsiala ja PDF | iOS App"
 lang: "fi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/fi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/notesstudio100/decision/l/fi/index.html"
 modified: "2026-09-03"
 app_store_id: "6798813048"
 verified_live: true
@@ -22,6 +22,6 @@ publisher: "Lumi Studio"
 
 [Lataa 100 Notes Studio: Pen & Paper App Storesta](https://apps.apple.com/fi/app/id6798813048?pt=118326163&ct=iag_data_fi&mt=8)
 
-[Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/notesstudio100.html)
+[Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/notesstudio100.html)
 
 > Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.

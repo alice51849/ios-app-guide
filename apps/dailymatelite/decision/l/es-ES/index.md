@@ -1,7 +1,7 @@
 ---
 title: "DailyMate Lite: Habla hoy — 50 idiomas, diálogos reales | iOS App"
 lang: "es-ES"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/es-ES/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/es-ES/index.html"
 modified: "2026-09-03"
 app_store_id: "6794725568"
 verified_live: true
@@ -19,6 +19,6 @@ Habla con confianza cuando llegue el momento. DailyMate Lite convierte situacion
 
 [Consigue DailyMate Lite: Habla hoy en el App Store](https://apps.apple.com/es/app/id6794725568?pt=118326163&ct=iag_data_es_es&mt=8)
 
-[Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-ES/dailymatelite.html)
+[Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-ES/dailymatelite.html)
 
 > Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.

@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>重複写真の検出 — 無料・ブラウザ内・「ほぼ同じ」写真も見つかります</title>
 <meta name="description" content="写真を選ぶだけで、知覚ハッシュを使って重複・ほぼ重複をグループ化し、どれを残すべきか、残りが何バイト占めているかを表示します。アップロードはありません。">
-<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ja/tools/duplicate-photo-finder.html">
-<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/duplicate-photo-finder.html">
-<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/duplicate-photo-finder.html">
-<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/duplicate-photo-finder.html">
-<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/duplicate-photo-finder.html">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/ja/tools/duplicate-photo-finder.html">
+<link rel="alternate" hreflang="en" href="https://open.cait518.cc/ios-app-guide/tools/duplicate-photo-finder.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/duplicate-photo-finder.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/duplicate-photo-finder.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/tools/duplicate-photo-finder.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="重複写真を見つける">
 <meta property="og:description" content="写真を選ぶだけで、知覚ハッシュを使って重複・ほぼ重複をグループ化し、どれを残すべきか、残りが何バイト占めているかを表示します。アップロードはありません。">
-<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ja/tools/duplicate-photo-finder.html">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/ja/tools/duplicate-photo-finder.html">
 <meta name="twitter:card" content="summary">
 <style>
 :root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
@@ -65,12 +65,12 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 
 @media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"重複写真を見つける","description":"写真を選ぶだけで、知覚ハッシュを使って重複・ほぼ重複をグループ化し、どれを残すべきか、残りが何バイト占めているかを表示します。アップロードはありません。","url":"https://alice51849.github.io/ios-app-guide/ja/tools/duplicate-photo-finder.html","inLanguage":"ja","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["1枚ごとに 8×8 の平均ハッシュを計算","ハミング距離のしきい値を調整可能","各グループで最大のファイルを先頭に表示","削除で空く容量の合計"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"重複写真を見つける","description":"写真を選ぶだけで、知覚ハッシュを使って重複・ほぼ重複をグループ化し、どれを残すべきか、残りが何バイト占めているかを表示します。アップロードはありません。","url":"https://open.cait518.cc/ios-app-guide/ja/tools/duplicate-photo-finder.html","inLanguage":"ja","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["1枚ごとに 8×8 の平均ハッシュを計算","ハミング距離のしきい値を調整可能","各グループで最大のファイルを先頭に表示","削除で空く容量の合計"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"完全一致の重複検出と何が違いますか？","acceptedAnswer":{"@type":"Answer","text":"完全一致はバイト単位の比較なので、再保存・リサイズ・書き出し設定の違いで見つからなくなります。知覚ハッシュは見た目を比較するため、連写やほぼ同じ撮り直しも拾えます。"}},{"@type":"Question","name":"しきい値はいくつが良いですか？","acceptedAnswer":{"@type":"Answer","text":"完全〜ほぼ完全な複製なら 0〜1、連写や軽い編集を含めるなら 6 前後が目安です。10 を超えると、同じアプリのスクリーンショットのような平坦な画像で誤検出が出はじめます。"}},{"@type":"Question","name":"iPhone の写真を直接消せますか？","acceptedAnswer":{"@type":"Answer","text":"できません。ブラウザのページは写真ライブラリに触れられません。そう主張するページがあれば、それは正しくありません。ここで対象を特定し、削除はご自身で行ってください。"}}]}</script>
 <link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
-<header class="top"><div class="wrap nav"><a href="index.html">← 無料ツール一覧</a><a href="https://alice51849.github.io/ios-app-guide/ja/" >iOS App Guide</a></div></header>
+<header class="top"><div class="wrap nav"><a href="index.html">← 無料ツール一覧</a><a href="https://open.cait518.cc/ios-app-guide/ja/" >iOS App Guide</a></div></header>
 <section class="hero wrap">
 <span class="eyebrow">知覚ハッシュ · ブラウザ内で処理</span>
 <h1>重複写真を見つける</h1>
@@ -99,7 +99,7 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 <section class="grid">
 <article class="card"><h2>しくみ</h2><ol><li>各画像を 8×8 の canvas に描いて輝度に変換し、平均より明るいセルを 1 とする 64 ビットの平均ハッシュにします。</li><li>2枚のハッシュの違いが指定ビット数以内なら重複とみなします。0 は見た目が同一、6 くらいで軽いトリミング・露出差・再保存も拾えます。</li><li>各グループ内ではファイルサイズが最大のものを先頭に置き「これを残す」と示します。カウンタが足しているのは残りのサイズです。</li><li>しきい値を変えるとファイルを読み直さずにその場で再グループ化します。</li></ol></article>
 <article class="card"><h2>このツールがしないこと</h2><ul><li>ファイルを削除することはできません。ウェブページは写真ライブラリにアクセスできないので、どれを処理すべきかを示すところまでです。</li><li>EXIF・撮影日時・位置情報は読みません。判定は見た目だけです。</li><li>アップロードしません。ハッシュ計算はすべて端末内です。</li></ul></article>
-<article class="card wide"><h2>ほかの無料ツール</h2><ul><li><a href="flashcard-maker.html">単語カードを作る</a></li><li><a href="image-compressor.html">画像を圧縮する</a></li><li><a href="white-noise-generator.html">ホワイトノイズを再生する</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
+<article class="card wide"><h2>ほかの無料ツール</h2><ul><li><a href="flashcard-maker.html">単語カードを作る</a></li><li><a href="image-compressor.html">画像を圧縮する</a></li><li><a href="white-noise-generator.html">ホワイトノイズを再生する</a></li><li><a href="https://open.cait518.cc/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
 </section>
 <section class="faq"><h2>よくある質問</h2><details><summary>完全一致の重複検出と何が違いますか？</summary><p>完全一致はバイト単位の比較なので、再保存・リサイズ・書き出し設定の違いで見つからなくなります。知覚ハッシュは見た目を比較するため、連写やほぼ同じ撮り直しも拾えます。</p></details><details><summary>しきい値はいくつが良いですか？</summary><p>完全〜ほぼ完全な複製なら 0〜1、連写や軽い編集を含めるなら 6 前後が目安です。10 を超えると、同じアプリのスクリーンショットのような平坦な画像で誤検出が出はじめます。</p></details><details><summary>iPhone の写真を直接消せますか？</summary><p>できません。ブラウザのページは写真ライブラリに触れられません。そう主張するページがあれば、それは正しくありません。ここで対象を特定し、削除はご自身で行ってください。</p></details></section>
 <section class="app-card"><h2>カメラロール全体に対して実行したいですか？</h2>

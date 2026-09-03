@@ -77,7 +77,7 @@
         "required": true,
         "unique": true
       },
-      "example": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3105",
+      "example": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3105",
       "format": "uri"
     },
     {
@@ -188,12 +188,12 @@
       "constraints": {
         "required": true,
         "enum": [
-          "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#finals",
-          "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials",
-          "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#medials"
+          "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#finals",
+          "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials",
+          "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#medials"
         ]
       },
-      "example": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials",
+      "example": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials",
       "format": "uri"
     },
     {

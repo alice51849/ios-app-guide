@@ -1,7 +1,7 @@
 ---
 title: "SaveTag: záložky s AI — Ulož odkazy, čti je později | iOS App"
 lang: "cs"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/cs/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/cs/index.html"
 modified: "2026-09-03"
 app_store_id: "6802505528"
 verified_live: true
@@ -19,6 +19,6 @@ Ulož teď. A tentokrát to opravdu přečti. Celý den si posíláš odkazy. Re
 
 [Stáhněte si SaveTag: záložky s AI v App Storu](https://apps.apple.com/cz/app/id6802505528?pt=118326163&ct=iag_data_cs&mt=8)
 
-[Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/savetag.html)
+[Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/savetag.html)
 
 > Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.

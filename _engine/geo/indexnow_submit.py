@@ -22,10 +22,11 @@ import urllib.request
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from official_locales import OFFICIAL_LOCALES
+from site_config import PUBLIC_SITE  # noqa: E402
 
 
 DEFAULT_SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 ENDPOINTS = (
     "https://api.indexnow.org/indexnow",
@@ -540,13 +541,45 @@ def read_key(path: Path) -> str:
     return key
 
 
-def payload_for(urls: list[str], key: str, site: str) -> bytes:
+def key_location_for(site: str, key: str, key_location: str | None = None) -> str:
+    """Where IndexNow fetches the key file.
+
+    IndexNow accepts a keyLocation anywhere under the submitted host, so the
+    default keeps the key beside the site root that is being submitted. An
+    explicit ``key_location`` is required to live on that same host, otherwise
+    every endpoint would reject the batch.
+    """
+    site = site.rstrip("/")
+    if key_location is None:
+        return f"{site}/{key}.txt"
+    parsed = urllib.parse.urlsplit(key_location)
+    expected = urllib.parse.urlsplit(site)
+    if (
+        parsed.scheme != expected.scheme
+        or parsed.netloc != expected.netloc
+        or not parsed.path.endswith(".txt")
+        or parsed.query
+        or parsed.fragment
+    ):
+        raise ValueError(
+            f"IndexNow key location must be a .txt URL on {expected.netloc}: "
+            f"{key_location}"
+        )
+    return key_location
+
+
+def payload_for(
+    urls: list[str],
+    key: str,
+    site: str,
+    key_location: str | None = None,
+) -> bytes:
     host = urllib.parse.urlsplit(site).netloc
     return json.dumps(
         {
             "host": host,
             "key": key,
-            "keyLocation": f"{site}/{key}.txt",
+            "keyLocation": key_location_for(site, key, key_location),
             "urlList": urls,
         },
         separators=(",", ":"),
@@ -606,9 +639,10 @@ def submit(
     *,
     endpoints: tuple[str, ...] = ENDPOINTS,
     sender=submit_endpoint,
+    key_location: str | None = None,
 ) -> bool:
     """Compatibility helper that reports failure after trying every endpoint."""
-    payload = payload_for(urls, key, site)
+    payload = payload_for(urls, key, site, key_location)
     accepted = True
     for endpoint in endpoints:
         try:
@@ -628,6 +662,7 @@ def submit_all(
     endpoints: tuple[str, ...] = ENDPOINTS,
     sender=submit_endpoint,
     acceptance_recorder=None,
+    key_location: str | None = None,
 ) -> int:
     if not 1 <= batch_size <= 10_000:
         raise ValueError("IndexNow batch size must be between 1 and 10000")
@@ -638,7 +673,7 @@ def submit_all(
             f"batch {offset // batch_size + 1}: "
             f"{len(chunk)} URLs"
         )
-        payload = payload_for(chunk, key, site)
+        payload = payload_for(chunk, key, site, key_location)
         for endpoint in endpoints:
             status = sender(endpoint, payload)
             if acceptance_recorder is not None:
@@ -662,6 +697,7 @@ def run(
     state_file: Path | None = None,
     receipt_file: Path | None = None,
     limit: int | None = None,
+    key_location: str | None = None,
     runner=subprocess.run,
     sender=submit_endpoint,
     clock=lambda: datetime.now(timezone.utc),
@@ -732,9 +768,11 @@ def run(
         print("No changed public URLs; nothing to submit")
         return 0
     key = read_key(key_file)
+    resolved_key_location = key_location_for(site, key, key_location)
     print(
         f"host={urllib.parse.urlsplit(site).netloc} "
-        f"key={key[:8]}... urls={len(urls)}"
+        f"key={key[:8]}... keyLocation={resolved_key_location} "
+        f"urls={len(urls)}"
     )
     endpoint_batches: dict[str, list[dict]] = {
         endpoint: [] for endpoint in ENDPOINTS
@@ -761,6 +799,7 @@ def run(
         batch_size=batch_size,
         sender=sender,
         acceptance_recorder=record_acceptance,
+        key_location=resolved_key_location,
     )
     print(f"Accepted {accepted}/{len(urls)} URLs by every IndexNow endpoint")
     if accepted != len(urls):
@@ -826,6 +865,13 @@ def main() -> None:
         ),
     )
     parser.add_argument("--limit", type=int)
+    parser.add_argument(
+        "--key-location",
+        help=(
+            "Absolute URL of the key file on the submitted host; defaults to "
+            "<site>/<key>.txt"
+        ),
+    )
     args = parser.parse_args()
 
     run(
@@ -837,6 +883,7 @@ def main() -> None:
         state_file=args.state_file,
         receipt_file=args.receipt_file,
         limit=args.limit,
+        key_location=args.key_location,
     )
 
 

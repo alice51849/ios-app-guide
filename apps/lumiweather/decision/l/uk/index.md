@@ -1,7 +1,7 @@
 ---
 title: "найкращий додаток погоди для планування часу на вулиці з дітьми"
 lang: "uk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/uk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/uk/index.html"
 modified: "2026-09-03"
 app_store_id: "6779552704"
 verified_live: true
@@ -21,6 +21,6 @@ publisher: "Lumi Studio"
 
 [Отримати Lumi Weather в App Store →](https://apps.apple.com/ua/app/id6779552704?pt=118326163&ct=iag_data_uk&mt=8)
 
-[Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
+[Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 
 > Посібник підготовлено видавцем Lumi Studio, розробником застосунку. Назви застосунків є торговими марками їхніх власників і використовуються лише для ідентифікації. Ухвалюючи рішення щодо документів, здоров'я, навчання та роботи, звіряйтеся з офіційними вимогами там, де це важливо.

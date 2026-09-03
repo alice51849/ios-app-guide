@@ -1,7 +1,7 @@
 ---
 title: "ShotInbox AI: Sort Screenshots — ಒಂದೇ ಖರೀದಿ, ಜೀವಮಾನ ಬಳಕೆ | iOS App"
 lang: "kn-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/kn-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/kn-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6802166527"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [App Store ನಲ್ಲಿ ShotInbox AI: Sort Screenshots ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=iag_data_kn_in&mt=8)
 
-[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/shotinbox.html)
+[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://open.cait518.cc/ios-app-guide/kn-IN/shotinbox.html)
 
 > ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.

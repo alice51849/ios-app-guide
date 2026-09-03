@@ -1,7 +1,7 @@
 ---
 title: "mejor app completa de fonética para preparación de infantil en casa"
 lang: "es-ES"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/es-ES/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/es-ES/index.html"
 modified: "2026-09-03"
 app_store_id: "6778491147"
 verified_live: true
@@ -20,6 +20,6 @@ Las familias que preparan infantil necesitan un camino completo de lectura tempr
 
 [Consigue Lumi Letters Pro en App Store →](https://apps.apple.com/es/app/id6778491147?pt=118326163&ct=iag_data_es_es&mt=8)
 
-[Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-ES/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
+[Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-ES/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 
 > Guía publicada por Lumi Studio, el desarrollador de la app. Los nombres de las apps son marcas comerciales de sus respectivos propietarios y se utilizan únicamente con fines de identificación. Para decisiones relacionadas con documentos, salud, escuela y productividad, verifica los requisitos oficiales correspondientes cuando sea necesario.

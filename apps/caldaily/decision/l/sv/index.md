@@ -1,7 +1,7 @@
 ---
 title: "CalDaily: kalkylator och teman — Widget, verktyg, historik | iOS App"
 lang: "sv"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/sv/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/sv/index.html"
 modified: "2026-09-03"
 app_store_id: "6794178671"
 verified_live: true
@@ -20,6 +20,6 @@ En kalkylator du behåller, eftersom den minns vad varje tal handlade om. De fle
 
 [Hämta CalDaily: kalkylator och teman i App Store](https://apps.apple.com/se/app/id6794178671?pt=118326163&ct=iag_data_sv&mt=8)
 
-[Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/caldaily.html)
+[Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/caldaily.html)
 
 > Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.

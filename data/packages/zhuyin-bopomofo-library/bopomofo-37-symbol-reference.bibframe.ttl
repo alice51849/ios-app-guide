@@ -2,115 +2,115 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://alice51849.github.io/ios-app-guide/#organization> a bf:Organization ;
+<https://open.cait518.cc/ios-app-guide/#organization> a bf:Organization ;
   rdfs:label "Lumi Apps - iOS App Guide" .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#genre-reference> a bf:GenreForm ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#genre-reference> a bf:GenreForm ;
   rdfs:label "Reference works"@en,
     "參考工具書"@zh-Hant .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-bopomofo> a bf:Topic ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-bopomofo> a bf:Topic ;
   rdfs:label "Bopomofo"@en,
     "注音符號"@zh-Hant .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-phonetics> a bf:Topic ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-phonetics> a bf:Topic ;
   rdfs:label "Chinese language--Phonetics"@en,
     "漢語語音"@zh-Hant .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-language-teaching> a bf:Topic ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-language-teaching> a bf:Topic ;
   rdfs:label "Chinese language--Study and teaching"@en,
     "漢語教學"@zh-Hant .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#work-en> a bf:Work ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#work-en> a bf:Work ;
   rdfs:label "Bopomofo: A 37-Symbol Reference"@en ;
-  bf:title <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-en> ;
+  bf:title <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-en> ;
   bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
   bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
-  bf:contribution <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#contribution-en> ;
-  bf:subject <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-bopomofo>, <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-phonetics>, <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-language-teaching> ;
-  bf:genreForm <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#genre-reference> ;
-  bf:hasInstance <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#instance-en> .
+  bf:contribution <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#contribution-en> ;
+  bf:subject <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-bopomofo>, <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-phonetics>, <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-language-teaching> ;
+  bf:genreForm <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#genre-reference> ;
+  bf:hasInstance <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#instance-en> .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#instance-en> a bf:Instance ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#instance-en> a bf:Instance ;
   rdfs:label "Bopomofo: A 37-Symbol Reference"@en ;
-  bf:title <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-en> ;
-  bf:instanceOf <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#work-en> ;
+  bf:title <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-en> ;
+  bf:instanceOf <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#work-en> ;
   bf:media <http://id.loc.gov/vocabulary/mediaTypes/c> ;
   bf:carrier <http://id.loc.gov/vocabulary/carriers/cr> ;
-  bf:identifiedBy <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#identifier-en> ;
-  bf:provisionActivity <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#publication-en> ;
-  bf:electronicLocator <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub> ;
-  bf:usageAndAccessPolicy <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#use-policy-en> ;
-  bf:extent <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#extent-en> ;
-  bf:note <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#fixity-note-en> .
+  bf:identifiedBy <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#identifier-en> ;
+  bf:provisionActivity <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#publication-en> ;
+  bf:electronicLocator <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub> ;
+  bf:usageAndAccessPolicy <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#use-policy-en> ;
+  bf:extent <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#extent-en> ;
+  bf:note <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#fixity-note-en> .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-en> a bf:Title ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-en> a bf:Title ;
   bf:mainTitle "Bopomofo: A 37-Symbol Reference"@en .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#contribution-en> a bf:PrimaryContribution ;
-  bf:agent <https://alice51849.github.io/ios-app-guide/#organization> ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#contribution-en> a bf:PrimaryContribution ;
+  bf:agent <https://open.cait518.cc/ios-app-guide/#organization> ;
   bf:role <http://id.loc.gov/vocabulary/relators/aut> .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#identifier-en> a bf:Local ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#identifier-en> a bf:Local ;
   rdf:value "LUMI-ZHUYIN-EPUB-EN-2026" .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#publication-en> a bf:Publication ;
-  bf:agent <https://alice51849.github.io/ios-app-guide/#organization> ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#publication-en> a bf:Publication ;
+  bf:agent <https://open.cait518.cc/ios-app-guide/#organization> ;
   bf:date "2026" .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#use-policy-en> a bf:UsePolicy ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#use-policy-en> a bf:UsePolicy ;
   rdfs:label "CC BY 4.0" ;
   rdf:value <https://creativecommons.org/licenses/by/4.0/> .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#extent-en> a bf:Extent ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#extent-en> a bf:Extent ;
   rdfs:label "1 online resource (1 EPUB file)"@en .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#fixity-note-en> a bf:Note ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#fixity-note-en> a bf:Note ;
   rdfs:label "EPUB SHA-256: be0b7cdcc34875930343c41c230fc105f00944e1736d658d9d8de0b67b54cff9"@en .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#work-zh-hant> a bf:Work ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#work-zh-hant> a bf:Work ;
   rdfs:label "注音符號：37 符號完整參考手冊"@zh-Hant ;
-  bf:title <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-zh-hant> ;
+  bf:title <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-zh-hant> ;
   bf:language <http://id.loc.gov/vocabulary/languages/chi> ;
   bf:content <http://id.loc.gov/vocabulary/contentTypes/txt> ;
-  bf:contribution <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#contribution-zh-hant> ;
-  bf:subject <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-bopomofo>, <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-phonetics>, <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-language-teaching> ;
-  bf:genreForm <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#genre-reference> ;
-  bf:hasInstance <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#instance-zh-hant> .
+  bf:contribution <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#contribution-zh-hant> ;
+  bf:subject <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-bopomofo>, <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-phonetics>, <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#topic-chinese-language-teaching> ;
+  bf:genreForm <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#genre-reference> ;
+  bf:hasInstance <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#instance-zh-hant> .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#instance-zh-hant> a bf:Instance ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#instance-zh-hant> a bf:Instance ;
   rdfs:label "注音符號：37 符號完整參考手冊"@zh-Hant ;
-  bf:title <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-zh-hant> ;
-  bf:instanceOf <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#work-zh-hant> ;
+  bf:title <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-zh-hant> ;
+  bf:instanceOf <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#work-zh-hant> ;
   bf:media <http://id.loc.gov/vocabulary/mediaTypes/c> ;
   bf:carrier <http://id.loc.gov/vocabulary/carriers/cr> ;
-  bf:identifiedBy <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#identifier-zh-hant> ;
-  bf:provisionActivity <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#publication-zh-hant> ;
-  bf:electronicLocator <https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub> ;
-  bf:usageAndAccessPolicy <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#use-policy-zh-hant> ;
-  bf:extent <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#extent-zh-hant> ;
-  bf:note <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#fixity-note-zh-hant> .
+  bf:identifiedBy <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#identifier-zh-hant> ;
+  bf:provisionActivity <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#publication-zh-hant> ;
+  bf:electronicLocator <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub> ;
+  bf:usageAndAccessPolicy <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#use-policy-zh-hant> ;
+  bf:extent <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#extent-zh-hant> ;
+  bf:note <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#fixity-note-zh-hant> .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-zh-hant> a bf:Title ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#title-zh-hant> a bf:Title ;
   bf:mainTitle "注音符號：37 符號完整參考手冊"@zh-Hant .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#contribution-zh-hant> a bf:PrimaryContribution ;
-  bf:agent <https://alice51849.github.io/ios-app-guide/#organization> ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#contribution-zh-hant> a bf:PrimaryContribution ;
+  bf:agent <https://open.cait518.cc/ios-app-guide/#organization> ;
   bf:role <http://id.loc.gov/vocabulary/relators/aut> .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#identifier-zh-hant> a bf:Local ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#identifier-zh-hant> a bf:Local ;
   rdf:value "LUMI-ZHUYIN-EPUB-ZH-HANT-2026" .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#publication-zh-hant> a bf:Publication ;
-  bf:agent <https://alice51849.github.io/ios-app-guide/#organization> ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#publication-zh-hant> a bf:Publication ;
+  bf:agent <https://open.cait518.cc/ios-app-guide/#organization> ;
   bf:date "2026" .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#use-policy-zh-hant> a bf:UsePolicy ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#use-policy-zh-hant> a bf:UsePolicy ;
   rdfs:label "CC BY 4.0" ;
   rdf:value <https://creativecommons.org/licenses/by/4.0/> .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#extent-zh-hant> a bf:Extent ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#extent-zh-hant> a bf:Extent ;
   rdfs:label "1 個線上資源（1 個 EPUB 檔案）"@zh-Hant .
 
-<https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#fixity-note-zh-hant> a bf:Note ;
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#fixity-note-zh-hant> a bf:Note ;
   rdfs:label "EPUB SHA-256: 0e1f335c5b92aa0f2002a7bf130591005df5e36f76335717925f60a206b8e64b"@zh-Hant .

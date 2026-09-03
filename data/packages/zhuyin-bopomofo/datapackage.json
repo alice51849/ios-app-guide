@@ -1,10 +1,10 @@
 {
   "$schema": "https://datapackage.org/profiles/2.0/datapackage.json",
   "name": "zhuyin-bopomofo-symbols",
-  "id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json",
+  "id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json",
   "title": "Complete 37-symbol Zhuyin (Bopomofo) inventory",
   "description": "A portable Data Package 2.0 with all 21 initials, 3 medials and 13 finals, including Unicode, Pinyin, IPA and examples.",
-  "homepage": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/",
+  "homepage": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/",
   "version": "1.0.0",
   "created": "2026-07-11T00:00:00Z",
   "keywords": [
@@ -27,7 +27,7 @@
   "contributors": [
     {
       "title": "Lumi Apps",
-      "path": "https://alice51849.github.io/ios-app-guide/",
+      "path": "https://open.cait518.cc/ios-app-guide/",
       "roles": [
         "creator",
         "dataCurator"
@@ -38,7 +38,7 @@
   "sources": [
     {
       "title": "Bopomofo Croissant 1.1 dataset",
-      "path": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+      "path": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
       "version": "1.0.0"
     },
     {

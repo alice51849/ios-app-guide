@@ -1,7 +1,7 @@
 ---
 title: "Aim990 Plus: Test angleščine — Zbranost proti uri | iOS App"
 lang: "sl-SI"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/sl-SI/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/sl-SI/index.html"
 modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
@@ -19,6 +19,6 @@ Razumevanje angleščine je le del izziva. Drugi del je ohraniti natančnost, ko
 
 [Prenesite Aim990 Plus: Test angleščine iz trgovine App Store](https://apps.apple.com/si/app/id6792483140?pt=118326163&ct=iag_data_sl_si&mt=8)
 
-[Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/aim990plus.html)
+[Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/aim990plus.html)
 
 > To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.

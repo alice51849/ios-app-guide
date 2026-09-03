@@ -1,8 +1,8 @@
 {
-  "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/index.schema.json",
+  "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/index.schema.json",
   "apiVersion": "1.0.0",
   "datasetVersion": "1.0.0",
-  "generatedFrom": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.json",
+  "generatedFrom": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.json",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "languages": [
     "en",
@@ -32,10 +32,10 @@
     ]
   },
   "documentation": {
-    "en": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/",
-    "zh-Hant": "https://alice51849.github.io/ios-app-guide/zh-Hant/api/v1/family-travel-missions/"
+    "en": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/",
+    "zh-Hant": "https://open.cait518.cc/ios-app-guide/zh-Hant/api/v1/family-travel-missions/"
   },
-  "openapi": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/openapi.json",
+  "openapi": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/openapi.json",
   "scenarios": [
     {
       "scenarioId": "pre-trip",
@@ -43,7 +43,7 @@
         "en": "Before leaving",
         "zh-Hant": "出發前"
       },
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenarios/pre-trip.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/scenarios/pre-trip.json"
     },
     {
       "scenarioId": "airport",
@@ -51,7 +51,7 @@
         "en": "Airport",
         "zh-Hant": "機場"
       },
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenarios/airport.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/scenarios/airport.json"
     },
     {
       "scenarioId": "flight",
@@ -59,7 +59,7 @@
         "en": "Flight",
         "zh-Hant": "飛行途中"
       },
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenarios/flight.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/scenarios/flight.json"
     },
     {
       "scenarioId": "road-trip",
@@ -67,7 +67,7 @@
         "en": "Road trip",
         "zh-Hant": "公路旅行"
       },
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenarios/road-trip.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/scenarios/road-trip.json"
     },
     {
       "scenarioId": "train-ferry",
@@ -75,7 +75,7 @@
         "en": "Train or ferry",
         "zh-Hant": "火車或渡輪"
       },
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenarios/train-ferry.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/scenarios/train-ferry.json"
     },
     {
       "scenarioId": "city-walk",
@@ -83,7 +83,7 @@
         "en": "City walk",
         "zh-Hant": "城市散步"
       },
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenarios/city-walk.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/scenarios/city-walk.json"
     },
     {
       "scenarioId": "museum",
@@ -91,7 +91,7 @@
         "en": "Museum",
         "zh-Hant": "博物館"
       },
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenarios/museum.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/scenarios/museum.json"
     },
     {
       "scenarioId": "theme-park",
@@ -99,7 +99,7 @@
         "en": "Theme park",
         "zh-Hant": "主題樂園"
       },
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenarios/theme-park.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/scenarios/theme-park.json"
     },
     {
       "scenarioId": "nature-beach",
@@ -107,7 +107,7 @@
         "en": "Nature or beach",
         "zh-Hant": "自然景點或海邊"
       },
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenarios/nature-beach.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/scenarios/nature-beach.json"
     },
     {
       "scenarioId": "hotel",
@@ -115,7 +115,7 @@
         "en": "Hotel",
         "zh-Hant": "飯店"
       },
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenarios/hotel.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/scenarios/hotel.json"
     },
     {
       "scenarioId": "restaurant",
@@ -123,7 +123,7 @@
         "en": "Restaurant",
         "zh-Hant": "餐廳"
       },
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenarios/restaurant.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/scenarios/restaurant.json"
     },
     {
       "scenarioId": "quiet-waiting",
@@ -131,7 +131,7 @@
         "en": "Quiet waiting",
         "zh-Hant": "安靜等待"
       },
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenarios/quiet-waiting.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/scenarios/quiet-waiting.json"
     }
   ]
 }

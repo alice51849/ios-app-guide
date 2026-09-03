@@ -1,7 +1,7 @@
 ---
 title: "mejor app completa de matemáticas para preescolar y primeros grados"
 lang: "es-MX"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/es-MX/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/es-MX/index.html"
 modified: "2026-09-03"
 app_store_id: "6776958488"
 verified_live: true
@@ -20,6 +20,6 @@ Una app completa de matemáticas tempranas debe hacer que el conteo, el sentido 
 
 [Consigue Lumi Math Pro en App Store →](https://apps.apple.com/mx/app/id6776958488?pt=118326163&ct=iag_data_es_mx&mt=8)
 
-[Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
+[Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 
 > Guía escrita por Lumi Studio, el desarrollador de la app. Los nombres de las apps son marcas de sus dueños y se usan solo para identificarlas. Para decisiones sobre documentos, salud, escuela y productividad, revisa los requisitos oficiales cuando aplique.

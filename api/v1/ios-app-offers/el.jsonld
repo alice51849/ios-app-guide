@@ -1,8 +1,8 @@
 {
   "@context": "https://schema.org",
   "@type": "OfferCatalog",
-  "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#catalog",
-  "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld",
+  "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#catalog",
+  "url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld",
   "name": "Κατάλογος Προθέσεων Αναζήτησης Εκδότη Lumi Studio",
   "description": "Ένας πρωτογενής κατάλογος που δείχνει για ποιον προορίζεται κάθε εφαρμογή, το έργο που προσπαθεί να ολοκληρώσει και την άμεση διαδρομή στο App Store.",
   "inLanguage": "el",
@@ -16,15 +16,15 @@
       "url": "https://apps.apple.com/gr/app/id6798813048?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-notesstudio100",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/gr/app/id6798813048?pt=118326163&ct=iag_data_el&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
         "description": "Μία εφαρμογή αντί για πέντε. Το 100 Notes Studio είναι ένα ιδιωτικό και εντελώς offline στούντιο μολυβιού και χαρτιού για tablet και τηλέφωνο, με",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -45,13 +45,13 @@
             "target": "https://apps.apple.com/gr/app/id6798813048?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/notesstudio100.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/notesstudio100.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "el",
           "description": "Μία εφαρμογή αντί για πέντε. Το 100 Notes Studio είναι ένα ιδιωτικό και εντελώς offline στούντιο μολυβιού και χαρτιού για tablet και τηλέφωνο, με",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-notesstudio100"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-notesstudio100"
           },
           "additionalProperty": [
             {
@@ -82,15 +82,15 @@
       "url": "https://apps.apple.com/gr/app/id6791658210?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-aibriefpack",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/gr/app/id6791658210?pt=118326163&ct=iag_data_el&mt=8",
         "name": "AI Brief: Αρχεία σε AI prompt",
         "description": "Καλύτερο πλαίσιο. Καλύτερες απαντήσεις.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -111,13 +111,13 @@
             "target": "https://apps.apple.com/gr/app/id6791658210?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/aibriefpack.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/aibriefpack.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6791658210",
           "inLanguage": "el",
           "description": "Καλύτερο πλαίσιο. Καλύτερες απαντήσεις.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-aibriefpack"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-aibriefpack"
           },
           "additionalProperty": [
             {
@@ -148,15 +148,15 @@
       "url": "https://apps.apple.com/gr/app/id6784974530?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-aim990",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-aim990",
         "url": "https://apps.apple.com/gr/app/id6784974530?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Aim990",
         "description": "Το Μέρος 5 φαίνεται σύντομο, αλλά οι ερωτήσεις με ελλιπείς προτάσεις μπορούν να καταναλώσουν χρόνο αν η γραμματική και το λεξιλόγιο δεν είναι αυτόματα.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -177,13 +177,13 @@
             "target": "https://apps.apple.com/gr/app/id6784974530?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6784974530",
           "inLanguage": "el",
           "description": "Το Μέρος 5 φαίνεται σύντομο, αλλά οι ερωτήσεις με ελλιπείς προτάσεις μπορούν να καταναλώσουν χρόνο αν η γραμματική και το λεξιλόγιο δεν είναι αυτόματα.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-aim990"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-aim990"
           },
           "additionalProperty": [
             {
@@ -214,15 +214,15 @@
       "url": "https://apps.apple.com/gr/app/id6792483140?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-aim990plus",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-aim990plus",
         "url": "https://apps.apple.com/gr/app/id6792483140?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Aim990 Plus: Τεστ αγγλικών",
         "description": "Το Aim990 Plus είναι ένα εργαλείο εξάσκησης για ενήλικες που θέλουν να κατανοούν με σιγουριά τον προφορικό και γραπτό αγγλικό λόγο όταν ο χρόνος είναι",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -243,13 +243,13 @@
             "target": "https://apps.apple.com/gr/app/id6792483140?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/aim990plus.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/aim990plus.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6792483140",
           "inLanguage": "el",
           "description": "Το Aim990 Plus είναι ένα εργαλείο εξάσκησης για ενήλικες που θέλουν να κατανοούν με σιγουριά τον προφορικό και γραπτό αγγλικό λόγο όταν ο χρόνος είναι",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-aim990plus"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-aim990plus"
           },
           "additionalProperty": [
             {
@@ -280,15 +280,15 @@
       "url": "https://apps.apple.com/gr/app/id6802423998?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-battai",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-battai",
         "url": "https://apps.apple.com/gr/app/id6802423998?pt=118326163&ct=iag_data_el&mt=8",
         "name": "BattAI: Υγεία μπαταρίας",
         "description": "BattAI Το BattAI χρησιμοποιεί πέντε τιμές από τα δημόσια API του iOS: επίπεδο μπαταρίας, κατάσταση φόρτισης, Λειτουργία χαμηλής ισχύος, θερμική κατάσταση όλης της συσκευής και χρόνο. Τα άλλα αποτελέσματα υπολογίζονται από αυτές τις μετρήσεις ή προστίθενται από εσάς. Κάθε στοιχείο δείχνει την πηγή και τα όριά του.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -309,13 +309,13 @@
             "target": "https://apps.apple.com/gr/app/id6802423998?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/battai.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/battai.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "el",
           "description": "BattAI Το BattAI χρησιμοποιεί πέντε τιμές από τα δημόσια API του iOS: επίπεδο μπαταρίας, κατάσταση φόρτισης, Λειτουργία χαμηλής ισχύος, θερμική κατάσταση όλης της συσκευής και χρόνο. Τα άλλα αποτελέσματα υπολογίζονται από αυτές τις μετρήσεις ή προστίθενται από εσάς. Κάθε στοιχείο δείχνει την πηγή και τα όριά του.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-battai"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-battai"
           },
           "additionalProperty": [
             {
@@ -346,15 +346,15 @@
       "url": "https://apps.apple.com/gr/app/id6794178671?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-caldaily",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/gr/app/id6794178671?pt=118326163&ct=iag_data_el&mt=8",
         "name": "CalDaily αριθμομηχανή",
         "description": "Μια αριθμομηχανή που θα συνεχίσετε πραγματικά να χρησιμοποιείτε, επειδή θυμάται τι κρύβεται πίσω από κάθε αριθμό.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -375,13 +375,13 @@
             "target": "https://apps.apple.com/gr/app/id6794178671?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/caldaily.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/caldaily.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "el",
           "description": "Μια αριθμομηχανή που θα συνεχίσετε πραγματικά να χρησιμοποιείτε, επειδή θυμάται τι κρύβεται πίσω από κάθε αριθμό.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-caldaily"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-caldaily"
           },
           "additionalProperty": [
             {
@@ -412,15 +412,15 @@
       "url": "https://apps.apple.com/gr/app/id6781337213?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-cvdesk",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-cvdesk",
         "url": "https://apps.apple.com/gr/app/id6781337213?pt=118326163&ct=iag_data_el&mt=8",
         "name": "CV Desk",
         "description": "Όταν αλλάζετε πεδίο, το πρόβλημα με το βιογραφικό είναι διαφορετικό: η εμπειρία σας είναι πραγματική αλλά «άσχετη» στο χαρτί, και τα φίλτρα ATS σας απορρίπτουν πριν το διαβάσει άνθρωπος. Αυτό ακριβώς το κενό θέλει να καλύψει το CV Desk.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -441,13 +441,13 @@
             "target": "https://apps.apple.com/gr/app/id6781337213?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-resume-builder-app-for-career-changers-2026.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-resume-builder-app-for-career-changers-2026.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6781337213",
           "inLanguage": "el",
           "description": "Όταν αλλάζετε πεδίο, το πρόβλημα με το βιογραφικό είναι διαφορετικό: η εμπειρία σας είναι πραγματική αλλά «άσχετη» στο χαρτί, και τα φίλτρα ATS σας απορρίπτουν πριν το διαβάσει άνθρωπος. Αυτό ακριβώς το κενό θέλει να καλύψει το CV Desk.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-cvdesk"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-cvdesk"
           },
           "additionalProperty": [
             {
@@ -478,15 +478,15 @@
       "url": "https://apps.apple.com/gr/app/id6782251621?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-cyca",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-cyca",
         "url": "https://apps.apple.com/gr/app/id6782251621?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Cyca",
         "description": "Σε μια κατηγορία όπου η ευαισθησία των δεδομένων είναι το παν, η σωστή εφαρμογή παρακολούθησης περιόδου κρατά όλα — ροή, διάθεση, συμπτώματα, θερμοκρασία, οικειότητα — στη συσκευή σας, χωρίς λογαριασμό και χωρίς συγχρονισμό στο cloud. Το Cyca κάνει μόνο αυτό και αφήνει τα υπόλοιπα έξω.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -507,13 +507,13 @@
             "target": "https://apps.apple.com/gr/app/id6782251621?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-period-tracker-app-no-account-required-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-period-tracker-app-no-account-required-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6782251621",
           "inLanguage": "el",
           "description": "Σε μια κατηγορία όπου η ευαισθησία των δεδομένων είναι το παν, η σωστή εφαρμογή παρακολούθησης περιόδου κρατά όλα — ροή, διάθεση, συμπτώματα, θερμοκρασία, οικειότητα — στη συσκευή σας, χωρίς λογαριασμό και χωρίς συγχρονισμό στο cloud. Το Cyca κάνει μόνο αυτό και αφήνει τα υπόλοιπα έξω.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-cyca"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-cyca"
           },
           "additionalProperty": [
             {
@@ -544,15 +544,15 @@
       "url": "https://apps.apple.com/gr/app/id6790418321?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-dailymate",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-dailymate",
         "url": "https://apps.apple.com/gr/app/id6790418321?pt=118326163&ct=iag_data_el&mt=8",
         "name": "DailyMate",
         "description": "Πριν από ένα ταξίδι, οι πλήρεις φράσεις για πραγματικές καταστάσεις είναι πιο χρήσιμες από απομονωμένο λεξιλόγιο που πρέπει ακόμα να συνθέσετε υπό πίεση. Το DailyMate ξεκίνησε ακριβώς από αυτό το πρόβλημα.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -573,13 +573,13 @@
             "target": "https://apps.apple.com/gr/app/id6790418321?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6790418321",
           "inLanguage": "el",
           "description": "Πριν από ένα ταξίδι, οι πλήρεις φράσεις για πραγματικές καταστάσεις είναι πιο χρήσιμες από απομονωμένο λεξιλόγιο που πρέπει ακόμα να συνθέσετε υπό πίεση. Το DailyMate ξεκίνησε ακριβώς από αυτό το πρόβλημα.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-dailymate"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-dailymate"
           },
           "additionalProperty": [
             {
@@ -610,15 +610,15 @@
       "url": "https://apps.apple.com/gr/app/id6794725568?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-dailymatelite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/gr/app/id6794725568?pt=118326163&ct=iag_data_el&mt=8",
         "name": "DailyMate Lite: Μίλα σήμερα",
         "description": "Μιλήστε φυσικά όταν έρθει η στιγμή. Το DailyMate Lite μετατρέπει καθημερινές καταστάσεις σε σύντομη εξάσκηση με ατάκες και απαντήσεις σε 50 γλώσσες",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -639,13 +639,13 @@
             "target": "https://apps.apple.com/gr/app/id6794725568?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/dailymatelite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/dailymatelite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "el",
           "description": "Μιλήστε φυσικά όταν έρθει η στιγμή. Το DailyMate Lite μετατρέπει καθημερινές καταστάσεις σε σύντομη εξάσκηση με ατάκες και απαντήσεις σε 50 γλώσσες",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-dailymatelite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-dailymatelite"
           },
           "additionalProperty": [
             {
@@ -676,15 +676,15 @@
       "url": "https://apps.apple.com/gr/app/id6755782939?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-gmoney",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-gmoney",
         "url": "https://apps.apple.com/gr/app/id6755782939?pt=118326163&ct=iag_data_el&mt=8",
         "name": "G+Money",
         "description": "Σε ένα ταξίδι χρειάζεστε έναν προϋπολογισμό που λειτουργεί εκτός σύνδεσης σε χώρα χωρίς δεδομένα, διαχειρίζεται πολλαπλά νομίσματα και δεν απαιτεί λογαριασμό — οργανωμένο ανά ταξίδι ώστε κάθε διακοπές να είναι ξεχωριστές. Αυτό ακριβώς το κενό θέλει να καλύψει το G+Money.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -705,13 +705,13 @@
             "target": "https://apps.apple.com/gr/app/id6755782939?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-travel-budget-tracker-app-no-subscription-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-travel-budget-tracker-app-no-subscription-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6755782939",
           "inLanguage": "el",
           "description": "Σε ένα ταξίδι χρειάζεστε έναν προϋπολογισμό που λειτουργεί εκτός σύνδεσης σε χώρα χωρίς δεδομένα, διαχειρίζεται πολλαπλά νομίσματα και δεν απαιτεί λογαριασμό — οργανωμένο ανά ταξίδι ώστε κάθε διακοπές να είναι ξεχωριστές. Αυτό ακριβώς το κενό θέλει να καλύψει το G+Money.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-gmoney"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-gmoney"
           },
           "additionalProperty": [
             {
@@ -742,15 +742,15 @@
       "url": "https://apps.apple.com/gr/app/id6793436548?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-gmoneylite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/gr/app/id6793436548?pt=118326163&ct=iag_data_el&mt=8",
         "name": "G+Money Lite: Έξοδα ταξιδιού",
         "description": "G+Money Lite — Έξυπνος μετατροπέας νομισμάτων & παρακολούθησης εξόδων",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -771,13 +771,13 @@
             "target": "https://apps.apple.com/gr/app/id6793436548?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/gmoneylite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/gmoneylite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "el",
           "description": "G+Money Lite — Έξυπνος μετατροπέας νομισμάτων & παρακολούθησης εξόδων",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-gmoneylite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-gmoneylite"
           },
           "additionalProperty": [
             {
@@ -808,15 +808,15 @@
       "url": "https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-hourstaglite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=iag_data_el&mt=8",
         "name": "HoursTag Lite: Τιμή σε ώρες",
         "description": "HoursTag Lite - Δείτε την πραγματική τιμή των πραγμάτων",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -837,13 +837,13 @@
             "target": "https://apps.apple.com/gr/app/id6794039979?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/hourstaglite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/hourstaglite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794039979",
           "inLanguage": "el",
           "description": "HoursTag Lite - Δείτε την πραγματική τιμή των πραγμάτων",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-hourstaglite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-hourstaglite"
           },
           "additionalProperty": [
             {
@@ -874,15 +874,15 @@
       "url": "https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-hourstag",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-hourstag",
         "url": "https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=iag_data_el&mt=8",
         "name": "HoursTag: Ώρες αγοράς",
         "description": "Πόσο κοστίζει πραγματικά; Όχι σε ευρώ, αλλά σε ώρες από τη ζωή σου.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -903,13 +903,13 @@
             "target": "https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/hourstag.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/hourstag.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6754218117",
           "inLanguage": "el",
           "description": "Πόσο κοστίζει πραγματικά; Όχι σε ευρώ, αλλά σε ώρες από τη ζωή σου.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-hourstag"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-hourstag"
           },
           "additionalProperty": [
             {
@@ -940,15 +940,15 @@
       "url": "https://apps.apple.com/gr/app/id6780107485?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lockhour",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/gr/app/id6780107485?pt=118326163&ct=iag_data_el&mt=8",
         "name": "LockHour Pro",
         "description": "Κατά τη διάρκεια εξετάσεων, η θέληση δεν αρκεί — χρειάζεται αυστηρό χρονικό μπλοκάρισμα. Γι' αυτό υπάρχει το LockHour Pro.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -969,13 +969,13 @@
             "target": "https://apps.apple.com/gr/app/id6780107485?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-app-to-block-social-media-while-studying-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-app-to-block-social-media-while-studying-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "el",
           "description": "Κατά τη διάρκεια εξετάσεων, η θέληση δεν αρκεί — χρειάζεται αυστηρό χρονικό μπλοκάρισμα. Γι' αυτό υπάρχει το LockHour Pro.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lockhour"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lockhour"
           },
           "additionalProperty": [
             {
@@ -1006,15 +1006,15 @@
       "url": "https://apps.apple.com/gr/app/id6773017109?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumibopomofo",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumibopomofo",
         "url": "https://apps.apple.com/gr/app/id6773017109?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Bopomofo",
         "description": "Για παιδί που μαθαίνει Zhuyin για πρώτη φορά, η εφαρμογή πρέπει να καλύπτει όλα τα 37 σύμβολα μέσω σχεδίασης και παιχνιδιού — σχεδιασμένη για την ηλικία 4–7, χωρίς διαφημίσεις, χωρίς συλλογή δεδομένων. Αυτό ακριβώς το κενό θέλει να καλύψει το Lumi Bopomofo.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1035,13 +1035,13 @@
             "target": "https://apps.apple.com/gr/app/id6773017109?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6773017109",
           "inLanguage": "el",
           "description": "Για παιδί που μαθαίνει Zhuyin για πρώτη φορά, η εφαρμογή πρέπει να καλύπτει όλα τα 37 σύμβολα μέσω σχεδίασης και παιχνιδιού — σχεδιασμένη για την ηλικία 4–7, χωρίς διαφημίσεις, χωρίς συλλογή δεδομένων. Αυτό ακριβώς το κενό θέλει να καλύψει το Lumi Bopomofo.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumibopomofo"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumibopomofo"
           },
           "additionalProperty": [
             {
@@ -1072,15 +1072,15 @@
       "url": "https://apps.apple.com/gr/app/id6775773117?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumibopomofopro",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumibopomofopro",
         "url": "https://apps.apple.com/gr/app/id6775773117?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Bopomofo Pro",
         "description": "Δίγλωσσα παιδιά που μαθαίνουν Zhuyin στο σπίτι χρειάζονται πλήρη διαδρομή μέσα από ήχους, σύμβολα, τόνους και συνδυασμό, με αρκετή παιχνιδιάρικη επανάληψη ώστε το σύστημα να γίνει οικείο. Αυτό ακριβώς το κενό θέλει να καλύψει το Lumi Bopomofo Pro.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1101,13 +1101,13 @@
             "target": "https://apps.apple.com/gr/app/id6775773117?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6775773117",
           "inLanguage": "el",
           "description": "Δίγλωσσα παιδιά που μαθαίνουν Zhuyin στο σπίτι χρειάζονται πλήρη διαδρομή μέσα από ήχους, σύμβολα, τόνους και συνδυασμό, με αρκετή παιχνιδιάρικη επανάληψη ώστε το σύστημα να γίνει οικείο. Αυτό ακριβώς το κενό θέλει να καλύψει το Lumi Bopomofo Pro.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumibopomofopro"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumibopomofopro"
           },
           "additionalProperty": [
             {
@@ -1138,15 +1138,15 @@
       "url": "https://apps.apple.com/gr/app/id6778748533?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumiletters",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumiletters",
         "url": "https://apps.apple.com/gr/app/id6778748533?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Letters",
         "description": "Για μικρό παιδί, το κρίσιμο είναι οι διαφημίσεις και η συλλογή δεδομένων — μια εκπαιδευτική εφαρμογή πρέπει να διδάσκει μέσα σε παιχνίδι χωρίς διαφημίσεις, χωρίς συλλογή δεδομένων από το παιδί και με μία πληρωμή που εμπιστεύονται οι γονείς. Γι' αυτό υπάρχει το Lumi Letters.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1167,13 +1167,13 @@
             "target": "https://apps.apple.com/gr/app/id6778748533?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-educational-game-app-for-kids-no-ads-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-educational-game-app-for-kids-no-ads-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6778748533",
           "inLanguage": "el",
           "description": "Για μικρό παιδί, το κρίσιμο είναι οι διαφημίσεις και η συλλογή δεδομένων — μια εκπαιδευτική εφαρμογή πρέπει να διδάσκει μέσα σε παιχνίδι χωρίς διαφημίσεις, χωρίς συλλογή δεδομένων από το παιδί και με μία πληρωμή που εμπιστεύονται οι γονείς. Γι' αυτό υπάρχει το Lumi Letters.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumiletters"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumiletters"
           },
           "additionalProperty": [
             {
@@ -1204,15 +1204,15 @@
       "url": "https://apps.apple.com/gr/app/id6778491147?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumiletterspro",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumiletterspro",
         "url": "https://apps.apple.com/gr/app/id6778491147?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Letters Pro",
         "description": "Οι οικογένειες που προετοιμάζουν για νηπιαγωγείο χρειάζονται πλήρη διαδρομή πρώιμης ανάγνωσης που συνδέει ήχους γραμμάτων, ιχνογράφηση και δημιουργία λέξεων αντί για συλλογή ασύνδετων παιχνιδιών αλφαβήτου. Αυτό ακριβώς το κενό θέλει να καλύψει το Lumi Letters Pro.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1233,13 +1233,13 @@
             "target": "https://apps.apple.com/gr/app/id6778491147?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6778491147",
           "inLanguage": "el",
           "description": "Οι οικογένειες που προετοιμάζουν για νηπιαγωγείο χρειάζονται πλήρη διαδρομή πρώιμης ανάγνωσης που συνδέει ήχους γραμμάτων, ιχνογράφηση και δημιουργία λέξεων αντί για συλλογή ασύνδετων παιχνιδιών αλφαβήτου. Αυτό ακριβώς το κενό θέλει να καλύψει το Lumi Letters Pro.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumiletterspro"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumiletterspro"
           },
           "additionalProperty": [
             {
@@ -1270,15 +1270,15 @@
       "url": "https://apps.apple.com/gr/app/id6778269699?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimath",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimath",
         "url": "https://apps.apple.com/gr/app/id6778269699?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Math Planet",
         "description": "Η καλύτερη μαθηματική εφαρμογή για παιδιά εκπαιδεύει τη λογική — μοτίβα, ακολουθίες, χωρική σκέψη — όχι απλή αριθμητική, και το κρύβει μέσα σε παιχνίδι που το παιδί θέλει να παίξει. Γι' αυτό υπάρχει το Lumi Math Planet.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1299,13 +1299,13 @@
             "target": "https://apps.apple.com/gr/app/id6778269699?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6778269699",
           "inLanguage": "el",
           "description": "Η καλύτερη μαθηματική εφαρμογή για παιδιά εκπαιδεύει τη λογική — μοτίβα, ακολουθίες, χωρική σκέψη — όχι απλή αριθμητική, και το κρύβει μέσα σε παιχνίδι που το παιδί θέλει να παίξει. Γι' αυτό υπάρχει το Lumi Math Planet.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimath"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimath"
           },
           "additionalProperty": [
             {
@@ -1336,15 +1336,15 @@
       "url": "https://apps.apple.com/gr/app/id6776958488?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimathpro",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimathpro",
         "url": "https://apps.apple.com/gr/app/id6776958488?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Math Pro",
         "description": "Μια πλήρης εφαρμογή πρώιμων μαθηματικών πρέπει να κάνει το μέτρημα, την αίσθηση αριθμών και τις πρώτες πράξεις να μοιάζουν με μία συνδεδεμένη περιπέτεια αντί για μεμονωμένες ασκήσεις. Γι' αυτό υπάρχει το Lumi Math Pro.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1365,13 +1365,13 @@
             "target": "https://apps.apple.com/gr/app/id6776958488?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6776958488",
           "inLanguage": "el",
           "description": "Μια πλήρης εφαρμογή πρώιμων μαθηματικών πρέπει να κάνει το μέτρημα, την αίσθηση αριθμών και τις πρώτες πράξεις να μοιάζουν με μία συνδεδεμένη περιπέτεια αντί για μεμονωμένες ασκήσεις. Γι' αυτό υπάρχει το Lumi Math Pro.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimathpro"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimathpro"
           },
           "additionalProperty": [
             {
@@ -1402,15 +1402,15 @@
       "url": "https://apps.apple.com/gr/app/id6779750237?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimission",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimission",
         "url": "https://apps.apple.com/gr/app/id6779750237?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Mission Planet",
         "description": "Για ένα παιδί προσχολικής ηλικίας, η βραδινή ρουτίνα λειτουργεί καλύτερα όταν είναι σύντομη, οπτική και αρκετά προβλέψιμη ώστε το παιδί να την ακολουθεί χωρίς άλλη υπενθύμιση. Αν σου θυμίζει κάτι, ρίξε μια ματιά στο Lumi Mission Planet.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1431,13 +1431,13 @@
             "target": "https://apps.apple.com/gr/app/id6779750237?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779750237",
           "inLanguage": "el",
           "description": "Για ένα παιδί προσχολικής ηλικίας, η βραδινή ρουτίνα λειτουργεί καλύτερα όταν είναι σύντομη, οπτική και αρκετά προβλέψιμη ώστε το παιδί να την ακολουθεί χωρίς άλλη υπενθύμιση. Αν σου θυμίζει κάτι, ρίξε μια ματιά στο Lumi Mission Planet.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimission"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimission"
           },
           "additionalProperty": [
             {
@@ -1468,15 +1468,15 @@
       "url": "https://apps.apple.com/gr/app/id6779745474?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimissionpro",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimissionpro",
         "url": "https://apps.apple.com/gr/app/id6779745474?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Mission Planet Pro",
         "description": "Το βούρτσισμα δοντιών και η ώρα ύπνου συχνά αποτυγχάνουν την ίδια στιγμή κάθε βράδυ: το παιδί είναι κουρασμένο, ο γονέας είναι κουρασμένος και το επόμενο βήμα δεν είναι αρκετά ορατό.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1497,13 +1497,13 @@
             "target": "https://apps.apple.com/gr/app/id6779745474?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779745474",
           "inLanguage": "el",
           "description": "Το βούρτσισμα δοντιών και η ώρα ύπνου συχνά αποτυγχάνουν την ίδια στιγμή κάθε βράδυ: το παιδί είναι κουρασμένο, ο γονέας είναι κουρασμένος και το επόμενο βήμα δεν είναι αρκετά ορατό.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimissionpro"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumimissionpro"
           },
           "additionalProperty": [
             {
@@ -1534,15 +1534,15 @@
       "url": "https://apps.apple.com/gr/app/id6787193643?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-tripplanet",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-tripplanet",
         "url": "https://apps.apple.com/gr/app/id6787193643?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Trip Planet",
         "description": "Οι γονείς που ταξιδεύουν με μικρά παιδιά χρειάζονται δραστηριότητες που μετατρέπουν το πακετάρισμα, την αναμονή και την ανακάλυψη νέου τόπου σε μέρος της περιπέτειας αντί για άλλη πηγή άγχους. Γι' αυτό υπάρχει το Lumi Trip Planet.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1563,13 +1563,13 @@
             "target": "https://apps.apple.com/gr/app/id6787193643?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6787193643",
           "inLanguage": "el",
           "description": "Οι γονείς που ταξιδεύουν με μικρά παιδιά χρειάζονται δραστηριότητες που μετατρέπουν το πακετάρισμα, την αναμονή και την ανακάλυψη νέου τόπου σε μέρος της περιπέτειας αντί για άλλη πηγή άγχους. Γι' αυτό υπάρχει το Lumi Trip Planet.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-tripplanet"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-tripplanet"
           },
           "additionalProperty": [
             {
@@ -1600,15 +1600,15 @@
       "url": "https://apps.apple.com/gr/app/id6779552704?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumiweather",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/gr/app/id6779552704?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Lumi Weather",
         "description": "Οι γονείς που σχεδιάζουν εξωτερικές δραστηριότητες χρειάζονται κάτι περισσότερο από θερμοκρασία: χρειάζονται γρήγορη, προσαρμοσμένη στην ηλικία εικόνα αν οι συνθήκες ταιριάζουν σε παιδί και τι ρούχα χρειάζονται. Γι' αυτό υπάρχει το Lumi Weather.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1629,13 +1629,13 @@
             "target": "https://apps.apple.com/gr/app/id6779552704?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "el",
           "description": "Οι γονείς που σχεδιάζουν εξωτερικές δραστηριότητες χρειάζονται κάτι περισσότερο από θερμοκρασία: χρειάζονται γρήγορη, προσαρμοσμένη στην ηλικία εικόνα αν οι συνθήκες ταιριάζουν σε παιδί και τι ρούχα χρειάζονται. Γι' αυτό υπάρχει το Lumi Weather.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumiweather"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumiweather"
           },
           "additionalProperty": [
             {
@@ -1666,15 +1666,15 @@
       "url": "https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-maskmyfile",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Mask My File: Σβήστε δεδομένα",
         "description": "Μοιραστείτε με ασφάλεια χωρίς να χάσετε το χρήσιμο πλαίσιο. Το Mask My File εντοπίζει ιδιωτικά στοιχεία προτού στείλετε ένα αρχείο, αποκρύπτει μόνιμα",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1695,13 +1695,13 @@
             "target": "https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/maskmyfile.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/maskmyfile.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "el",
           "description": "Μοιραστείτε με ασφάλεια χωρίς να χάσετε το χρήσιμο πλαίσιο. Το Mask My File εντοπίζει ιδιωτικά στοιχεία προτού στείλετε ένα αρχείο, αποκρύπτει μόνιμα",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-maskmyfile"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-maskmyfile"
           },
           "additionalProperty": [
             {
@@ -1732,15 +1732,15 @@
       "url": "https://apps.apple.com/gr/app/id6785004775?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-mochi",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-mochi",
         "url": "https://apps.apple.com/gr/app/id6785004775?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Mochi",
         "description": "Αν οι περισσότερες εφαρμογές λίστας εργασιών σας φαίνονται φορτωμένες, η σωστή είναι μια καθαρή λίστα με υπενθυμίσεις, κανόνες επανάληψης και υποστήριξη Watch — και σκόπιμα χωρίς μηχανισμούς διαχείρισης έργων. Γι' αυτό υπάρχει το Mochi.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1761,13 +1761,13 @@
             "target": "https://apps.apple.com/gr/app/id6785004775?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-simple-to-do-list-app-iphone-no-subscription.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-simple-to-do-list-app-iphone-no-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "el",
           "description": "Αν οι περισσότερες εφαρμογές λίστας εργασιών σας φαίνονται φορτωμένες, η σωστή είναι μια καθαρή λίστα με υπενθυμίσεις, κανόνες επανάληψης και υποστήριξη Watch — και σκόπιμα χωρίς μηχανισμούς διαχείρισης έργων. Γι' αυτό υπάρχει το Mochi.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-mochi"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-mochi"
           },
           "additionalProperty": [
             {
@@ -1798,15 +1798,15 @@
       "url": "https://apps.apple.com/gr/app/id6790800323?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-mochidonestamp",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/gr/app/id6790800323?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Mochi DoneStamp: Τελευταία",
         "description": "Πότε άλλαξες τελευταία τα σεντόνια, πότισες ένα φυτό, τηλεφώνησες στην οικογένεια, αποθήκευσες φωτογραφίες ή άλλαξες φίλτρο;",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1827,13 +1827,13 @@
             "target": "https://apps.apple.com/gr/app/id6790800323?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/mochidonestamp.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/mochidonestamp.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "el",
           "description": "Πότε άλλαξες τελευταία τα σεντόνια, πότισες ένα φυτό, τηλεφώνησες στην οικογένεια, αποθήκευσες φωτογραφίες ή άλλαξες φίλτρο;",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-mochidonestamp"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-mochidonestamp"
           },
           "additionalProperty": [
             {
@@ -1864,15 +1864,15 @@
       "url": "https://apps.apple.com/gr/app/id6801956402?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-moneytag",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-moneytag",
         "url": "https://apps.apple.com/gr/app/id6801956402?pt=118326163&ct=iag_data_el&mt=8",
         "name": "MoneyTag: Έσοδα και έξοδα",
         "description": "Έσοδα και έξοδα Κάθε έργο κρατά δικά του βιβλία: έσοδα μείον έξοδα δίνουν το καθαρό του αποτέλεσμα. Εδώ είναι οι ερωτήσεις που ακούμε πιο συχνά. Αν λείπει η δική σας, γράψτε μας — κάθε μήνυμα το διαβάζει άνθρωπος.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1893,13 +1893,13 @@
             "target": "https://apps.apple.com/gr/app/id6801956402?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/moneytag.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/moneytag.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6801956402",
           "inLanguage": "el",
           "description": "Έσοδα και έξοδα Κάθε έργο κρατά δικά του βιβλία: έσοδα μείον έξοδα δίνουν το καθαρό του αποτέλεσμα. Εδώ είναι οι ερωτήσεις που ακούμε πιο συχνά. Αν λείπει η δική σας, γράψτε μας — κάθε μήνυμα το διαβάζει άνθρωπος.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-moneytag"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-moneytag"
           },
           "additionalProperty": [
             {
@@ -1930,15 +1930,15 @@
       "url": "https://apps.apple.com/gr/app/id6798814385?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-onepageppt",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-onepageppt",
         "url": "https://apps.apple.com/gr/app/id6798814385?pt=118326163&ct=iag_data_el&mt=8",
         "name": "OnePage PPT: Παρουσίαση AI",
         "description": "Μετατρέψτε έναν τοίχο κειμένου σε ΜΙΑ σελίδα που όντως διαβάζεται.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1959,13 +1959,13 @@
             "target": "https://apps.apple.com/gr/app/id6798814385?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/onepageppt.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/onepageppt.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6798814385",
           "inLanguage": "el",
           "description": "Μετατρέψτε έναν τοίχο κειμένου σε ΜΙΑ σελίδα που όντως διαβάζεται.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-onepageppt"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-onepageppt"
           },
           "additionalProperty": [
             {
@@ -1996,15 +1996,15 @@
       "url": "https://apps.apple.com/gr/app/id6781808054?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-photocream",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-photocream",
         "url": "https://apps.apple.com/gr/app/id6781808054?pt=118326163&ct=iag_data_el&mt=8",
         "name": "PhotoCream",
         "description": "Οι ταξιδιωτικοί δημιουργοί χρειάζονται επαναλαμβανόμενο φιλμ εφέ που προσθέτει κόκκο, αλογονοποίηση και χρωματικό χαρακτήρα χωρίς να κάνει κάθε προορισμό ίδιο φίλτρο",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2025,13 +2025,13 @@
             "target": "https://apps.apple.com/gr/app/id6781808054?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6781808054",
           "inLanguage": "el",
           "description": "Οι ταξιδιωτικοί δημιουργοί χρειάζονται επαναλαμβανόμενο φιλμ εφέ που προσθέτει κόκκο, αλογονοποίηση και χρωματικό χαρακτήρα χωρίς να κάνει κάθε προορισμό ίδιο φίλτρο",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-photocream"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-photocream"
           },
           "additionalProperty": [
             {
@@ -2062,15 +2062,15 @@
       "url": "https://apps.apple.com/gr/app/id6780223070?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-picclear",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-picclear",
         "url": "https://apps.apple.com/gr/app/id6780223070?pt=118326163&ct=iag_data_el&mt=8",
         "name": "PicClear",
         "description": "Για να ελευθερώσετε χώρο γρήγορα, στοχεύστε πρώτα τα μεγαλύτερα κέρδη: ακριβή διπλότυπα, σχεδόν ίδια στιγμιότυπα burst, θολές απορρίψεις και μεγάλα βίντεο",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2091,13 +2091,13 @@
             "target": "https://apps.apple.com/gr/app/id6780223070?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6780223070",
           "inLanguage": "el",
           "description": "Για να ελευθερώσετε χώρο γρήγορα, στοχεύστε πρώτα τα μεγαλύτερα κέρδη: ακριβή διπλότυπα, σχεδόν ίδια στιγμιότυπα burst, θολές απορρίψεις και μεγάλα βίντεο",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-picclear"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-picclear"
           },
           "additionalProperty": [
             {
@@ -2128,15 +2128,15 @@
       "url": "https://apps.apple.com/gr/app/id6802505528?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-savetag",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-savetag",
         "url": "https://apps.apple.com/gr/app/id6802505528?pt=118326163&ct=iag_data_el&mt=8",
         "name": "SaveTag: σελιδοδείκτες AI",
         "description": "Αποθήκευσέ το τώρα. Και αυτή τη φορά διάβασέ το στ' αλήθεια.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2157,13 +2157,13 @@
             "target": "https://apps.apple.com/gr/app/id6802505528?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/savetag.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/savetag.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "el",
           "description": "Αποθήκευσέ το τώρα. Και αυτή τη φορά διάβασέ το στ' αλήθεια.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-savetag"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-savetag"
           },
           "additionalProperty": [
             {
@@ -2194,15 +2194,15 @@
       "url": "https://apps.apple.com/gr/app/id6779977651?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-scanto",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-scanto",
         "url": "https://apps.apple.com/gr/app/id6779977651?pt=118326163&ct=iag_data_el&mt=8",
         "name": "ScanTo Pro",
         "description": "Αν σαρώσετε φόρμες συγκατάθεσης ασθενών, έγγραφα εξιτηρίου ή παραπομπές, ο σαρωτής πρέπει να κρατά αυτά τα έγγραφα στη συσκευή — ποτέ ανεβασμένα σε cloud άλλου. Το ScanTo Pro ξεκίνησε ακριβώς από αυτό το πρόβλημα.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2223,13 +2223,13 @@
             "target": "https://apps.apple.com/gr/app/id6779977651?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779977651",
           "inLanguage": "el",
           "description": "Αν σαρώσετε φόρμες συγκατάθεσης ασθενών, έγγραφα εξιτηρίου ή παραπομπές, ο σαρωτής πρέπει να κρατά αυτά τα έγγραφα στη συσκευή — ποτέ ανεβασμένα σε cloud άλλου. Το ScanTo Pro ξεκίνησε ακριβώς από αυτό το πρόβλημα.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-scanto"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-scanto"
           },
           "additionalProperty": [
             {
@@ -2260,15 +2260,15 @@
       "url": "https://apps.apple.com/gr/app/id6788236641?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-sereno",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-sereno",
         "url": "https://apps.apple.com/gr/app/id6788236641?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Sereno",
         "description": "Για τον ύπνο, μια συνδρομή που ενοχλεί κάθε μήνα είναι το αντίθετο της ηρεμίας. Αν σου θυμίζει κάτι, ρίξε μια ματιά στο Sereno.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2289,13 +2289,13 @@
             "target": "https://apps.apple.com/gr/app/id6788236641?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-white-noise-app-for-falling-asleep-no-subscription.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-white-noise-app-for-falling-asleep-no-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6788236641",
           "inLanguage": "el",
           "description": "Για τον ύπνο, μια συνδρομή που ενοχλεί κάθε μήνα είναι το αντίθετο της ηρεμίας. Αν σου θυμίζει κάτι, ρίξε μια ματιά στο Sereno.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-sereno"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-sereno"
           },
           "additionalProperty": [
             {
@@ -2326,15 +2326,15 @@
       "url": "https://apps.apple.com/gr/app/id6802166527?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-shotinbox",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/gr/app/id6802166527?pt=118326163&ct=iag_data_el&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
         "description": "Τα στιγμιότυπά σας, τακτοποιημένα",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2355,13 +2355,13 @@
             "target": "https://apps.apple.com/gr/app/id6802166527?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/shotinbox.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/shotinbox.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "el",
           "description": "Τα στιγμιότυπά σας, τακτοποιημένα",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-shotinbox"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-shotinbox"
           },
           "additionalProperty": [
             {
@@ -2392,15 +2392,15 @@
       "url": "https://apps.apple.com/gr/app/id6780575828?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-snapport",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-snapport",
         "url": "https://apps.apple.com/gr/app/id6780575828?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Snapport",
         "description": "Για φωτογραφία διαβατηρίου μωρού, κανείς άλλος δεν πρέπει να φαίνεται και το φόντο πρέπει να είναι απλό. Το Snapport ξεκίνησε ακριβώς από αυτό το πρόβλημα.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2421,13 +2421,13 @@
             "target": "https://apps.apple.com/gr/app/id6780575828?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6780575828",
           "inLanguage": "el",
           "description": "Για φωτογραφία διαβατηρίου μωρού, κανείς άλλος δεν πρέπει να φαίνεται και το φόντο πρέπει να είναι απλό. Το Snapport ξεκίνησε ακριβώς από αυτό το πρόβλημα.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-snapport"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-snapport"
           },
           "additionalProperty": [
             {
@@ -2458,15 +2458,15 @@
       "url": "https://apps.apple.com/gr/app/id6792856304?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-snapportlite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/gr/app/id6792856304?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Snapport Lite: Φωτό ταυτότητας",
         "description": "Snapport Lite - Φτιάξτε φωτογραφίες διαβατηρίου, βίζας και εγγράφων με καθοδηγούμενες διαστάσεις, εργαλεία φόντου και εξαγωγή έτοιμη προς εκτύπωση.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2487,13 +2487,13 @@
             "target": "https://apps.apple.com/gr/app/id6792856304?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/snapportlite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/snapportlite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "el",
           "description": "Snapport Lite - Φτιάξτε φωτογραφίες διαβατηρίου, βίζας και εγγράφων με καθοδηγούμενες διαστάσεις, εργαλεία φόντου και εξαγωγή έτοιμη προς εκτύπωση.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-snapportlite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-snapportlite"
           },
           "additionalProperty": [
             {
@@ -2524,15 +2524,15 @@
       "url": "https://apps.apple.com/gr/app/id6782139553?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-sononote",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-sononote",
         "url": "https://apps.apple.com/gr/app/id6782139553?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Sono Note",
         "description": "Μετά από μια κλήση δεν θέλετε μια ακατέργαστη μεταγραφή — θέλετε τη σύνοψη, τις ενέργειες και ένα προσχέδιο παρακολούθησης. Αυτό ακριβώς το κενό θέλει να καλύψει το Sono Note.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2553,13 +2553,13 @@
             "target": "https://apps.apple.com/gr/app/id6782139553?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "el",
           "description": "Μετά από μια κλήση δεν θέλετε μια ακατέργαστη μεταγραφή — θέλετε τη σύνοψη, τις ενέργειες και ένα προσχέδιο παρακολούθησης. Αυτό ακριβώς το κενό θέλει να καλύψει το Sono Note.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-sononote"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-sononote"
           },
           "additionalProperty": [
             {
@@ -2590,15 +2590,15 @@
       "url": "https://apps.apple.com/gr/app/id6791299610?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-tripbeelite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-tripbeelite",
         "url": "https://apps.apple.com/gr/app/id6791299610?pt=118326163&ct=iag_data_el&mt=8",
         "name": "TripBee Lite",
         "description": "Αν προγραμματίζετε ένα επερχόμενο ταξίδι, ένα ήρεμο χρονοδιάγραμμα για αυτό το ταξίδι είναι πιο χρήσιμο από ένα γεμάτο αρχείο με κάθε ταξίδι που μπορεί να κάνετε κάποια μέρα. Αν σου θυμίζει κάτι, ρίξε μια ματιά στο TripBee Lite.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2619,13 +2619,13 @@
             "target": "https://apps.apple.com/gr/app/id6791299610?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6791299610",
           "inLanguage": "el",
           "description": "Αν προγραμματίζετε ένα επερχόμενο ταξίδι, ένα ήρεμο χρονοδιάγραμμα για αυτό το ταξίδι είναι πιο χρήσιμο από ένα γεμάτο αρχείο με κάθε ταξίδι που μπορεί να κάνετε κάποια μέρα. Αν σου θυμίζει κάτι, ρίξε μια ματιά στο TripBee Lite.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-tripbeelite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-tripbeelite"
           },
           "additionalProperty": [
             {
@@ -2656,15 +2656,15 @@
       "url": "https://apps.apple.com/gr/app/id6787754435?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-tripbee",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/gr/app/id6787754435?pt=118326163&ct=iag_data_el&mt=8",
         "name": "TripBee Pro: Σχεδιασμός Ταξιδιού",
         "description": "Μια καλή εφαρμογή προγράμματος μετατρέπει ένα ακατάστατο ταξίδι σε καθαρό χρονοδιάγραμμα ημέρας — πτήσεις, ξενοδοχεία, δραστηριότητες, εστιατόρια και μεταφορές — με καθαρά εικονίδια τύπου ώστε να διαβάζετε τη μέρα σας με μια ματιά. Αν σου θυμίζει κάτι, ρίξε μια ματιά στο TripBee Pro: Σχεδιασμός Ταξιδιού.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2685,13 +2685,13 @@
             "target": "https://apps.apple.com/gr/app/id6787754435?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-trip-itinerary-planner-app-for-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-trip-itinerary-planner-app-for-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "el",
           "description": "Μια καλή εφαρμογή προγράμματος μετατρέπει ένα ακατάστατο ταξίδι σε καθαρό χρονοδιάγραμμα ημέρας — πτήσεις, ξενοδοχεία, δραστηριότητες, εστιατόρια και μεταφορές — με καθαρά εικονίδια τύπου ώστε να διαβάζετε τη μέρα σας με μια ματιά. Αν σου θυμίζει κάτι, ρίξε μια ματιά στο TripBee Pro: Σχεδιασμός Ταξιδιού.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-tripbee"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-tripbee"
           },
           "additionalProperty": [
             {
@@ -2722,15 +2722,15 @@
       "url": "https://apps.apple.com/gr/app/id6782275018?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-unblurry",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-unblurry",
         "url": "https://apps.apple.com/gr/app/id6782275018?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Unblurry",
         "description": "Τα παιδιά δεν μένουν ποτέ ακίνητα, οπότε οι μαλακές εστιασμένες και κουνημένες λήψεις είναι αναπόφευκτες",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2751,13 +2751,13 @@
             "target": "https://apps.apple.com/gr/app/id6782275018?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6782275018",
           "inLanguage": "el",
           "description": "Τα παιδιά δεν μένουν ποτέ ακίνητα, οπότε οι μαλακές εστιασμένες και κουνημένες λήψεις είναι αναπόφευκτες",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-unblurry"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-unblurry"
           },
           "additionalProperty": [
             {
@@ -2788,15 +2788,15 @@
       "url": "https://apps.apple.com/gr/app/id6793414462?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wifiaidlite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/gr/app/id6793414462?pt=118326163&ct=iag_data_el&mt=8",
         "name": "WiFi Aid Lite",
         "description": "Βρείτε το πραγματικό πρόβλημα. Κάθε εργαλείο περιλαμβάνει μία δωρεάν πλήρη χρήση. Προαιρετικό εφάπαξ ξεκλείδωμα εφ' όρου ζωής για απεριόριστη χρήση—χωρίς",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2817,13 +2817,13 @@
             "target": "https://apps.apple.com/gr/app/id6793414462?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/wifiaidlite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/wifiaidlite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "el",
           "description": "Βρείτε το πραγματικό πρόβλημα. Κάθε εργαλείο περιλαμβάνει μία δωρεάν πλήρη χρήση. Προαιρετικό εφάπαξ ξεκλείδωμα εφ' όρου ζωής για απεριόριστη χρήση—χωρίς",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wifiaidlite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wifiaidlite"
           },
           "additionalProperty": [
             {
@@ -2854,15 +2854,15 @@
       "url": "https://apps.apple.com/gr/app/id6790467886?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wifiaid",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wifiaid",
         "url": "https://apps.apple.com/gr/app/id6790467886?pt=118326163&ct=iag_data_el&mt=8",
         "name": "WiFi Aid: Εντοπισμός βλαβών",
         "description": "Βρείτε την πιθανότερη αιτία με ανεξάρτητους ελέγχους διαδρομών, DNS, TCP, TLS, χρόνων και σταθερότητας. Μία αρχική πληρωμή, χωρίς συνδρομή, διαφημίσεις ή",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2883,13 +2883,13 @@
             "target": "https://apps.apple.com/gr/app/id6790467886?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/wifiaid.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/wifiaid.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "el",
           "description": "Βρείτε την πιθανότερη αιτία με ανεξάρτητους ελέγχους διαδρομών, DNS, TCP, TLS, χρόνων και σταθερότητας. Μία αρχική πληρωμή, χωρίς συνδρομή, διαφημίσεις ή",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wifiaid"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wifiaid"
           },
           "additionalProperty": [
             {
@@ -2920,15 +2920,15 @@
       "url": "https://apps.apple.com/gr/app/id6797601720?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wordmatelite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/gr/app/id6797601720?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Wordmate Lite: λεξιλόγιο",
         "description": "Θέλεις επιτέλους να προχωρήσεις σε μια ξένη γλώσσα, αλλά το βράδυ περνάει ξανά χωρίς ούτε μία καινούργια λέξη. Το Wordmate Lite περιορίζει τη μελέτη σε ένα",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2949,13 +2949,13 @@
             "target": "https://apps.apple.com/gr/app/id6797601720?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/wordmatelite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/wordmatelite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "el",
           "description": "Θέλεις επιτέλους να προχωρήσεις σε μια ξένη γλώσσα, αλλά το βράδυ περνάει ξανά χωρίς ούτε μία καινούργια λέξη. Το Wordmate Lite περιορίζει τη μελέτη σε ένα",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wordmatelite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wordmatelite"
           },
           "additionalProperty": [
             {
@@ -2986,15 +2986,15 @@
       "url": "https://apps.apple.com/gr/app/id6789917808?pt=118326163&ct=iag_data_el&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wordmate",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wordmate",
         "url": "https://apps.apple.com/gr/app/id6789917808?pt=118326163&ct=iag_data_el&mt=8",
         "name": "Wordmate: Learn 44 Languages",
         "description": "Οι πολυάσχολοι μετακινούμενοι χρειάζονται εξάσκηση λεξιλογίου που ταιριάζει σε ελεύθερα λεπτά χωρίς να απαιτεί πλήρες μάθημα, νέο λογαριασμό ή τηλέφωνο στο χέρι για κάθε επανάληψη. Το Wordmate: Learn 44 Languages ξεκίνησε ακριβώς από αυτό το πρόβλημα.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -3015,13 +3015,13 @@
             "target": "https://apps.apple.com/gr/app/id6789917808?pt=118326163&ct=iag_data_el&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/el/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6789917808",
           "inLanguage": "el",
           "description": "Οι πολυάσχολοι μετακινούμενοι χρειάζονται εξάσκηση λεξιλογίου που ταιριάζει σε ελεύθερα λεπτά χωρίς να απαιτεί πλήρες μάθημα, νέο λογαριασμό ή τηλέφωνο στο χέρι για κάθε επανάληψη. Το Wordmate: Learn 44 Languages ξεκίνησε ακριβώς από αυτό το πρόβλημα.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wordmate"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-wordmate"
           },
           "additionalProperty": [
             {

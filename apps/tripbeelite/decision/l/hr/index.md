@@ -1,7 +1,7 @@
 ---
 title: "najbolja jednostavna aplikacija za planiranje putovanja za jedan nadolazeći put iPhone"
 lang: "hr"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/hr/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/hr/index.html"
 modified: "2026-09-03"
 app_store_id: "6791299610"
 verified_live: true
@@ -19,6 +19,6 @@ Ako planirate jedno nadolazeće putovanje, mirna vremenska linija za to putovanj
 
 [Preuzmite TripBee Lite na App Store →](https://apps.apple.com/hr/app/id6791299610?pt=118326163&ct=iag_data_hr&mt=8)
 
-[Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
+[Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 
 > Vodič je napisao Lumi Studio, razvojni tim aplikacije. Nazivi aplikacija zaštitni su znakovi svojih vlasnika i navode se samo radi identifikacije. Kod odluka vezanih uz dokumente, zdravlje, školu i produktivnost provjerite službene zahtjeve ondje gdje je to važno.

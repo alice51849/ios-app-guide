@@ -1,7 +1,7 @@
 ---
 title: "bedste ordforrådsapp til travle pendlere med Apple Watch"
 lang: "da"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/da/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/da/index.html"
 modified: "2026-09-03"
 app_store_id: "6789917808"
 verified_live: true
@@ -24,6 +24,6 @@ Travle pendlere har brug for ordforrådsøvelser, der passer ind i ledige minutt
 
 [Hent Wordmate: Learn 44 Languages i App Store →](https://apps.apple.com/dk/app/id6789917808?pt=118326163&ct=iag_data_da&mt=8)
 
-[Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
+[Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 
 > Guide skrevet af Lumi Studio, som har udviklet appen. Appnavne er varemærker tilhørende deres ejere og bruges udelukkende til identifikation. Når det gælder dokumenter, sundhed, skole og produktivitet, bør du tjekke de officielle krav, hvor det er relevant.

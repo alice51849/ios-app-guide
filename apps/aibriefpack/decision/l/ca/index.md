@@ -1,7 +1,7 @@
 ---
 title: "AI Brief: Fitxers a prompt IA — Fitxers a context clar | iOS App"
 lang: "ca"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/ca/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/ca/index.html"
 modified: "2026-09-03"
 app_store_id: "6791658210"
 verified_live: true
@@ -20,6 +20,6 @@ Millor context. Millors respostes. Converteix captures de pantalla, fitxers, not
 
 [Descarrega AI Brief: Fitxers a prompt IA a l’App Store](https://apps.apple.com/es/app/id6791658210?pt=118326163&ct=iag_data_ca&mt=8)
 
-[Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/aibriefpack.html)
+[Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/aibriefpack.html)
 
 > Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.

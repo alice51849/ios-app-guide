@@ -1,7 +1,7 @@
 ---
 title: "WiFi Aid：找出网络问题·诊断 — 网络诊断与连接证据 | iOS App"
 lang: "zh-Hans"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/zh-Hans/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/zh-Hans/index.html"
 modified: "2026-09-03"
 app_store_id: "6790467886"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [在 App Store 获取 WiFi Aid：找出网络问题·诊断](https://apps.apple.com/cn/app/id6790467886?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
-[阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/wifiaid.html)
+[阅读完整指南](https://open.cait518.cc/ios-app-guide/zh-Hans/wifiaid.html)
 
 > 这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。

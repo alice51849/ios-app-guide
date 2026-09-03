@@ -1,7 +1,7 @@
 ---
 title: "Snapport Lite: Buat pasfoto — Buat pasfoto di rumah | iOS App"
 lang: "id"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/id/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/id/index.html"
 modified: "2026-09-03"
 app_store_id: "6792856304"
 verified_live: true
@@ -20,6 +20,6 @@ Snapport Lite - Buat foto paspor, visa, dan kartu identitas dengan panduan ukura
 
 [Dapatkan Snapport Lite: Buat pasfoto di App Store](https://apps.apple.com/id/app/id6792856304?pt=118326163&ct=iag_data_id&mt=8)
 
-[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/snapportlite.html)
+[Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/snapportlite.html)
 
 > Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.

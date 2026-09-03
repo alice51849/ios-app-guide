@@ -1,7 +1,7 @@
 ---
 title: "beste cv-bouwer app voor carrièreswitchers 2026"
 lang: "nl-NL"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/nl-NL/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/nl-NL/index.html"
 modified: "2026-09-03"
 app_store_id: "6781337213"
 verified_live: true
@@ -19,6 +19,6 @@ Bij het wisselen van vakgebied is het cv-probleem anders: je ervaring is echt ma
 
 [Download CV Desk in de App Store →](https://apps.apple.com/nl/app/id6781337213?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
-[Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-resume-builder-app-for-career-changers-2026.html)
+[Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-resume-builder-app-for-career-changers-2026.html)
 
 > Gids geschreven door Lumi Studio, de ontwikkelaar van de app. App-namen zijn handelsmerken van hun eigenaren en worden alleen ter identificatie gebruikt. Controleer bij beslissingen over documenten, gezondheid, school en productiviteit waar nodig de officiële eisen.

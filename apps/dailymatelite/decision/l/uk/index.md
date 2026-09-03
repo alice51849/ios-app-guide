@@ -1,7 +1,7 @@
 ---
 title: "DailyMate Lite: Живі фрази — 50 мов для впевнених розмов | iOS App"
 lang: "uk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/uk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/uk/index.html"
 modified: "2026-09-03"
 app_store_id: "6794725568"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [Завантажте DailyMate Lite: Живі фрази з App Store](https://apps.apple.com/ua/app/id6794725568?pt=118326163&ct=iag_data_uk&mt=8)
 
-[Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/dailymatelite.html)
+[Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/dailymatelite.html)
 
 > Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.

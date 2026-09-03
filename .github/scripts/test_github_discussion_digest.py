@@ -112,7 +112,7 @@ class FeedSelectionTests(unittest.TestCase):
                 self.assertEqual([f"{digest.SITE_ORIGIN}{path}"], [r.url for r in resources])
 
         rejected = (
-            "http://alice51849.github.io/ios-app-guide/tools/tool.html",
+            "http://open.cait518.cc/ios-app-guide/tools/tool.html",
             "https://example.com/ios-app-guide/tools/tool.html",
             f"{digest.SITE_ORIGIN}/ios-app-guide/answers/answer.html",
             f"{digest.SITE_ORIGIN}/ios-app-guide/tools/not-html.json",

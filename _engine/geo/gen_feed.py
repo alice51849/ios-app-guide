@@ -29,10 +29,11 @@ from rsscloud_config import (
     RSSCLOUD_WEBSUB_HUB,
 )
 from websub_config import WEBSUB_HUBS
+from site_config import PUBLIC_SITE  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
-SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
+SITE = os.environ.get("GEO_SITE", PUBLIC_SITE).rstrip("/")
 MEDIA_NS = "http://search.yahoo.com/mrss/"
 PREVIEW_SIZE = gen_social_previews.CARD_SIZE
 PREVIEW_MIME = "image/jpeg"

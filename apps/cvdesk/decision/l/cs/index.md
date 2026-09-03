@@ -1,7 +1,7 @@
 ---
 title: "nejlepší aplikace na tvorbu životopisu pro změnu kariéry 2026"
 lang: "cs"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/cs/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/cs/index.html"
 modified: "2026-09-03"
 app_store_id: "6781337213"
 verified_live: true
@@ -19,6 +19,6 @@ Při změně oboru je problém s životopisem jiný: vaše zkušenosti jsou skut
 
 [Získejte CV Desk v App Store →](https://apps.apple.com/cz/app/id6781337213?pt=118326163&ct=iag_data_cs&mt=8)
 
-[Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/answers/best-resume-builder-app-for-career-changers-2026.html)
+[Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-resume-builder-app-for-career-changers-2026.html)
 
 > Průvodce od vývojáře aplikace, studia Lumi Studio. Názvy aplikací jsou ochrannými známkami svých vlastníků a slouží pouze k identifikaci. U rozhodnutí týkajících se dokumentů, zdraví, školy a produktivity si tam, kde je to na místě, ověřte oficiální požadavky.

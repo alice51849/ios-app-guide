@@ -1,7 +1,7 @@
 ---
 title: "HoursTag Lite: Preu en hores — Prisma de valor | iOS App"
 lang: "ca"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ca/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/ca/index.html"
 modified: "2026-09-03"
 app_store_id: "6794039979"
 verified_live: true
@@ -24,6 +24,6 @@ HoursTag Lite - Veure el preu real de les coses Cada compra costa hores de la te
 
 [Descarrega HoursTag Lite: Preu en hores a l’App Store](https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=iag_data_ca&mt=8)
 
-[Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/hourstaglite.html)
+[Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/hourstaglite.html)
 
 > Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.

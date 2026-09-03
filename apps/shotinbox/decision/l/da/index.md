@@ -1,7 +1,7 @@
 ---
 title: "ShotInbox AI: Sort Screenshots — Søg og sorter skærmbilleder | iOS App"
 lang: "da"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/da/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/da/index.html"
 modified: "2026-09-03"
 app_store_id: "6802166527"
 verified_live: true
@@ -19,6 +19,6 @@ Dine skærmbilleder, sorteret Find, håndter og ryd hvert skærmbillede. De nyes
 
 [Hent ShotInbox AI: Sort Screenshots i App Store](https://apps.apple.com/dk/app/id6802166527?pt=118326163&ct=iag_data_da&mt=8)
 
-[Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/shotinbox.html)
+[Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/shotinbox.html)
 
 > Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.

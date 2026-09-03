@@ -1,7 +1,7 @@
 ---
 title: "BattAI: Ocena stanja baterije — Jasna pravila, viri in omejitve | iOS App"
 lang: "sl-SI"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/sl-SI/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/sl-SI/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI uporablja pet vrednosti iz javnih API-jev iOS: raven baterije, sta
 
 [Prenesite BattAI: Ocena stanja baterije iz trgovine App Store](https://apps.apple.com/si/app/id6802423998?pt=118326163&ct=iag_data_sl_si&mt=8)
 
-[Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/battai.html)
+[Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/battai.html)
 
 > To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.

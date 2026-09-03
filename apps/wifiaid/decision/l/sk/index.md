@@ -1,7 +1,7 @@
 ---
 title: "WiFi Aid: Nájdite chyby siete — Diagnostika siete s dôkazmi | iOS App"
 lang: "sk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/sk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/sk/index.html"
 modified: "2026-09-03"
 app_store_id: "6790467886"
 verified_live: true
@@ -19,6 +19,6 @@ Nájdite najpravdepodobnejšiu príčinu pomocou nezávislých testov trás, DNS
 
 [Stiahnuť WiFi Aid: Nájdite chyby siete v App Store](https://apps.apple.com/sk/app/id6790467886?pt=118326163&ct=iag_data_sk&mt=8)
 
-[Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/wifiaid.html)
+[Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/wifiaid.html)
 
 > Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.

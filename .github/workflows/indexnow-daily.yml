@@ -78,8 +78,9 @@ jobs:
           fi
           python3 _engine/geo/indexnow_submit.py \
             --pages-dir . \
-            --site https://alice51849.github.io/ios-app-guide \
+            --site https://open.cait518.cc/ios-app-guide \
             --key-file "$keyfile" \
+            --key-location "https://open.cait518.cc/ios-app-guide/$(basename "$keyfile")" \
             --batch-size 10000 \
             --state-file "$state_file" \
             --receipt-file "$receipt_file" \

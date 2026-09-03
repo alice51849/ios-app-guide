@@ -1,7 +1,7 @@
 ---
 title: "BattAI: Salud de la batería — Reglas, fuentes y límites claros | iOS App"
 lang: "es-ES"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/es-ES/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/es-ES/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI usa cinco valores de las API públicas de iOS: nivel de batería, 
 
 [Consigue BattAI: Salud de la batería en el App Store](https://apps.apple.com/es/app/id6802423998?pt=118326163&ct=iag_data_es_es&mt=8)
 
-[Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-ES/battai.html)
+[Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-ES/battai.html)
 
 > Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.

@@ -1,7 +1,7 @@
 ---
 title: "WiFi Aid: નેટવર્ક સમસ્યા શોધો — નેટવર્ક ડાયગ્નોસિસ અને પુરાવા | iOS App"
 lang: "gu-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/gu-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/gu-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6790467886"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [App Store પરથી WiFi Aid: નેટવર્ક સમસ્યા શોધો મેળવો](https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=iag_data_gu_in&mt=8)
 
-[પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/wifiaid.html)
+[પૂર્ણ માર્ગદર્શિકા વાંચો](https://open.cait518.cc/ios-app-guide/gu-IN/wifiaid.html)
 
 > આ સામગ્રી Lumi Studio દ્વારા સીધી પ્રકાશિત કરવામાં આવી છે, જે સૂચિબદ્ધ તમામ એપ્સનો વિકાસકર્તા છે.

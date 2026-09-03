@@ -1,7 +1,7 @@
 ---
 title: "SaveTag: marcadors amb IA — Desa enllaços, llegeix-los | iOS App"
 lang: "ca"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ca/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/ca/index.html"
 modified: "2026-09-03"
 app_store_id: "6802505528"
 verified_live: true
@@ -19,6 +19,6 @@ Desa-ho ara. I aquesta vegada llegeix-ho de debò. Et passes el dia enviant-te e
 
 [Descarrega SaveTag: marcadors amb IA a l’App Store](https://apps.apple.com/es/app/id6802505528?pt=118326163&ct=iag_data_ca&mt=8)
 
-[Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/savetag.html)
+[Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/savetag.html)
 
 > Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.

@@ -1,7 +1,7 @@
 ---
 title: "meilleure application vocabulaire pour navetteurs avec Apple Watch"
 lang: "fr-FR"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/fr-FR/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/fr-FR/index.html"
 modified: "2026-09-03"
 app_store_id: "6789917808"
 verified_live: true
@@ -24,6 +24,6 @@ Les navetteurs ont besoin d’une pratique du vocabulaire qui s’intègre dans 
 
 [Obtenir Wordmate : Apprendre 44 langues sur l’App Store →](https://apps.apple.com/fr/app/id6789917808?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
-[Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
+[Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-FR/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 
 > Guide rédigé et publié par Lumi Studio, le développeur de l'app. Les noms d'apps sont des marques déposées de leurs propriétaires respectifs et sont utilisés uniquement à des fins d'identification. Pour les décisions relatives aux documents, à la santé, à l'école et à la productivité, veuillez vérifier les exigences officielles applicables.

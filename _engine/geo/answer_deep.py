@@ -15,6 +15,8 @@ ad-free, no data collected. Consumed by answer_facts._deep_facts().
 import json
 from typing import Any
 
+from site_config import PUBLIC_SITE  # noqa: E402
+
 DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
 [
  {
@@ -208,7 +210,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "lead": "Start with a free bilingual, print-ready 14-day calendar: choose a gentle starting lane, sample listening, shape, stroke, tone, blending and reading activities, and stop each day within eight to ten minutes.",
   "detail": "The free 14-day Grade 1 Zhuyin summer warm-up offers three flexible lanes: completely new, recognises some symbols, or ready to combine familiar sounds. Each day follows the same short choose, model, play, connect and close rhythm, with a gentle route plus an optional stretch only when the child is comfortable. It has no child-name field, date field, completion tracker, account, upload, score, diagnosis or saved profile. Taiwan Ministry of Education references establish standard Zhuyin forms, notation and stroke order; they do not prescribe or endorse this calendar. This original 14-day sequence has not been evaluated in a study, does not teach or assess all 37 symbols, and cannot show school readiness, faster learning or future results. Schools differ, so families should ask the child's school about its actual teaching plan. Lumi Bopomofo is optional inside a chosen day for guided listening, tracing, tone or blending practice; the complete calendar works without an app.",
   "follow_up": "Open or print the free calendar first. If Zhuyin is completely new, choose only two or three symbols from the official chart and let listening count. If the child has prior exposure, use the free three-minute observation guide once to choose a lane rather than assign a score. Repeat, pause or ask the school whenever that is the gentler next step.",
-  "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-grade1-14-day-summer-calendar.html",
+  "primary_resource_url": "{GUIDE}/tools/zhuyin-grade1-14-day-summer-calendar.html",
   "primary_resource_label": "Open the free 14-day summer calendar",
   "bullets": [
    "English and Traditional Chinese 14-day printable calendar",
@@ -244,7 +246,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "sources": [
    {
     "title": "Free bilingual 14-day Grade 1 Zhuyin summer calendar",
-    "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-grade1-14-day-summer-calendar.html"
+    "url": "{GUIDE}/tools/zhuyin-grade1-14-day-summer-calendar.html"
    },
    {
     "title": "Taiwan Ministry of Education Bopomofo Handbook",
@@ -2517,7 +2519,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "lead": "Start with a free bilingual, print-ready 30-minute program: confirm the book and planned use under current local rules, read for meaning, offer a three-symbol hunt and send one gentle prompt home.",
   "detail": "The free library storytime kit provides an original six-part facilitator routine, a blank three-symbol hunt card, a family take-home prompt and an optional no-name aggregate program note. It contains no story and grants no right to perform, display, record, stream, photograph, scan or distribute a book; staff must approve the selected title and every planned use under current local law, licenses, publisher terms and library policy. The page has no registration, child-name field, attendance form, camera, microphone, upload or saved profile. A 2020 systematic review and meta-analysis covered 19 randomized trials and 2,594 children; parent/caregiver book-sharing interventions showed small average effects on expressive language (d = 0.41) and receptive language (d = 0.26), plus a larger effect on caregiver book-sharing competence (d = 1.01). Those studies did not test group library storytime, Zhuyin, a 30-minute format, the symbol hunt or this kit, so they cannot support a promise about language gains, reading scores or attendance. Lumi Bopomofo is optional after the program for families who want structured listening, tracing, tone and blending practice.",
   "follow_up": "Open or print the free kit first. Ask the library's designated staff member to approve one Traditional Chinese title and the exact in-person, display, recording or transmission plan. Run the six low-pressure phases, keep any aggregate paper note anonymous and use the optional app only after the complete no-app program.",
-  "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-library-storytime-kit.html",
+  "primary_resource_url": "{GUIDE}/tools/zhuyin-library-storytime-kit.html",
   "primary_resource_label": "Open the free library storytime kit",
   "bullets": [
    "English and Traditional Chinese 30-minute facilitator routine",
@@ -2553,7 +2555,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "sources": [
    {
     "title": "Free bilingual Zhuyin library storytime kit",
-    "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-library-storytime-kit.html"
+    "url": "{GUIDE}/tools/zhuyin-library-storytime-kit.html"
    },
    {
     "title": "Shared picture-book reading systematic review and meta-analysis",
@@ -2603,7 +2605,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "lead": "Start with a free bilingual handoff kit: the teacher selects one tiny weekly Zhuyin focus, the family follows a ten-minute no-score routine, and a private paper slip carries one observation back.",
   "detail": "The free parent-teacher handoff kit gives both sides the same one-page structure: one to three teacher-selected symbols, tones, blends or annotated words; a five-step family routine; and a return slip that records participation rather than correctness. It asks for no child name, class, diagnosis, contact detail or online submission. This original template has not been evaluated in a trial and cannot diagnose a child, prove Zhuyin gains or promise that ten minutes improves learning. Taiwan Ministry of Education and OCAC links are official references for notation, stroke order and longer-form materials, not endorsements of this kit. Lumi Bopomofo is optional after the handoff: its free download covers all 37 symbols with listening, tracing, tone and blending activities, plus an optional one-time unlock, no ads and no account.",
   "follow_up": "Print the teacher cue card and family routine. The teacher writes only one to three items already taught; the family circles what happened without grading, then returns one neutral next step. Use Lumi Bopomofo only if the teacher-selected focus needs extra structured practice.",
-  "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-parent-teacher-handoff-kit.html",
+  "primary_resource_url": "{GUIDE}/tools/zhuyin-parent-teacher-handoff-kit.html",
   "primary_resource_label": "Open the free parent-teacher handoff kit",
   "bullets": [
    "English and Traditional Chinese teacher and family copies",
@@ -2639,7 +2641,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "sources": [
    {
     "title": "Free bilingual Zhuyin parent-teacher handoff kit",
-    "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-parent-teacher-handoff-kit.html"
+    "url": "{GUIDE}/tools/zhuyin-parent-teacher-handoff-kit.html"
    },
    {
     "title": "Taiwan Ministry of Education Bopomofo Handbook",
@@ -2685,7 +2687,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "lead": "Use a free bilingual four-week family plan with any legally owned or borrowed Traditional Chinese picture book that includes Zhuyin annotations. Each ten-minute routine uses child choice, pictures, one familiar word and low-pressure conversation—without uploading or reproducing the book.",
   "detail": "The free family picture-book club kit linked above provides original before-during-after prompts and a printable, non-scored reading log. It never asks for a book title, text, image or child profile, and it does not host or link to unauthorized book copies. A 2020 systematic review and meta-analysis of 19 randomized trials involving 2,594 children found small average effects on expressive language (d = 0.41) and receptive language (d = 0.26), and a larger effect on caregiver book-sharing competence (d = 1.01). The review did not test Zhuyin, this exact four-week or ten-minute routine, independent reading, or this tool, so the page makes no score or learning-speed promise. Families can use Taiwan's Ministry of Education Mini Dictionary to check one unfamiliar character together. Lumi Bopomofo is optional between reading days: the free download covers all 37 symbols, listening, tracing, tones and blending with an optional one-time unlock, no ads and no recurring subscription.",
   "follow_up": "Start with the free club kit and a legal family or library book. If the child later wants structured symbol, tone or blending practice between reading days, then consider Lumi Bopomofo or the linked free tools.",
-  "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-family-picture-book-club-kit.html",
+  "primary_resource_url": "{GUIDE}/tools/zhuyin-family-picture-book-club-kit.html",
   "primary_resource_label": "Open the free family picture-book club kit",
   "bullets": [
    "Four reusable weekly routines with before, during and after-reading prompts",
@@ -2722,7 +2724,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "sources": [
    {
     "title": "Free bilingual family Zhuyin picture-book club kit",
-    "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-family-picture-book-club-kit.html"
+    "url": "{GUIDE}/tools/zhuyin-family-picture-book-club-kit.html"
    },
    {
     "title": "Shared picture-book reading systematic review and meta-analysis",
@@ -2768,7 +2770,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   ],
   "page_title": "Free Zhuyin Video-Call Kit for Grandparents and Kids",
   "meta_description": "Free bilingual 10-minute Zhuyin video-call kit: family words, camera games, tone gestures and gentle prompts for grandparents and children.",
-  "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-grandparent-video-call-kit.html",
+  "primary_resource_url": "{GUIDE}/tools/zhuyin-grandparent-video-call-kit.html",
   "primary_resource_label": "Open the free grandparent video-call kit",
   "lead": "Use a free bilingual ten-minute call routine that gives grandparents three familiar family words, a camera treasure hunt, tone gestures and low-pressure prompts—without turning the call into a test.",
   "detail": "The free grandparent video-call kit linked above works on screen or as a printout and requires no login. A nearby parent helps both sides look at the same real object while the grandparent models one sound, waits for any response and naturally repeats the correct word without grading the child. A 48-family longitudinal study found that grandparent sensitivity predicted infants' positive affect during both video and in-person interactions; the paper also summarizes the value of real-time social contingency and nearby-adult scaffolding. That study did not test Zhuyin or this kit, so the page states the limitation instead of promising faster learning. {name} is optional practice between calls: the free download covers all 37 symbols, listening, tracing, tones and blending with an optional one-time unlock, no ads and no recurring subscription.",
@@ -2808,7 +2810,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "sources": [
    {
     "title": "Free bilingual grandparent Zhuyin video-call kit",
-    "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-grandparent-video-call-kit.html"
+    "url": "{GUIDE}/tools/zhuyin-grandparent-video-call-kit.html"
    },
    {
     "title": "Presence at a distance: intergenerational video-chat study",
@@ -5349,7 +5351,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   ]
  }
 ]
-''')
+'''.replace("{GUIDE}", PUBLIC_SITE))
 
 # Extra deep items from deep_items/*.json (one file per app/worker) so parallel
 # workers can each add content without editing this shared file (no git conflicts).

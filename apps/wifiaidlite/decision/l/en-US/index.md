@@ -1,7 +1,7 @@
 ---
 title: "WiFi Aid Lite: Network Check — Network Diagnosis & Evidence | iOS App"
 lang: "en-US"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/en-US/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/en-US/index.html"
 modified: "2026-09-03"
 app_store_id: "6793414462"
 verified_live: true
@@ -20,6 +20,6 @@ Find the real problem. Each tool includes one free complete use. Optional one-ti
 
 [Get WiFi Aid Lite: Network Check on the App Store](https://apps.apple.com/us/app/id6793414462?pt=118326163&ct=iag_data_en_us&mt=8)
 
-[Read the full guide](https://alice51849.github.io/ios-app-guide/en-US/wifiaidlite.html)
+[Read the full guide](https://open.cait518.cc/ios-app-guide/en-US/wifiaidlite.html)
 
 > This is first-party material published by Lumi Studio, the developer of every listed app.

@@ -61,7 +61,7 @@
     "unArchive": "cr:unArchive",
     "value": "cr:value"
   },
-  "@id": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html",
+  "@id": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html",
   "@type": "sc:Dataset",
   "conformsTo": "http://mlcommons.org/croissant/1.1",
   "name": {
@@ -169,15 +169,15 @@
     "zh-Hant": "第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "url": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html",
+  "url": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html",
   "creator": {
-    "@id": "https://alice51849.github.io/ios-app-guide/#organization",
+    "@id": "https://open.cait518.cc/ios-app-guide/#organization",
     "@type": "sc:Organization",
     "name": "Lumi Studio",
-    "url": "https://alice51849.github.io/ios-app-guide"
+    "url": "https://open.cait518.cc/ios-app-guide"
   },
   "publisher": {
-    "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+    "@id": "https://open.cait518.cc/ios-app-guide/#organization"
   },
   "datePublished": "2026-07-19",
   "dateModified": "2026-09-03",
@@ -245,45 +245,45 @@
     "mobile application recommendations",
     "MLCommons Croissant"
   ],
-  "identifier": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "includedInDataCatalog": "https://alice51849.github.io/ios-app-guide/data/",
+  "identifier": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
+  "includedInDataCatalog": "https://open.cait518.cc/ios-app-guide/data/",
   "isBasedOn": [
-    "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-    "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.schema.json"
+    "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
+    "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.schema.json"
   ],
   "conditionsOfAccess": "Open access; no account or API key required.",
   "measurementTechnique": "One primary buyer persona was selected for each verified live app. Each query and decision context was editorially localized for the target locale and linked to the matching full guide.",
-  "citeAs": "@misc{lumi_publisher_intent_catalog_2026, title={Lumi Studio Publisher Search Intent Catalog}, author={Lumi Studio}, year={2026}, url={https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html}}",
+  "citeAs": "@misc{lumi_publisher_intent_catalog_2026, title={Lumi Studio Publisher Search Intent Catalog}, author={Lumi Studio}, year={2026}, url={https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.html}}",
   "distribution": [
     {
       "@type": "cr:FileObject",
       "@id": "lumi-studio-publisher-search-intent-catalog.csv",
       "name": "lumi-studio-publisher-search-intent-catalog.csv",
       "description": "Canonical UTF-8 table loaded by the publisher_intents RecordSet.",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv",
-      "contentSize": "2556491 B",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv",
+      "contentSize": "2544991 B",
       "encodingFormat": "text/csv",
-      "sha256": "9a20ed4b8ce68f65d606a3bb835446726eb1ae2e0d17240e10ec31dd469fea28"
+      "sha256": "6bfaecbb7a1f3f39a28b208e39fb4aeda56df554fd5e0def18dced5d1ddd627a"
     },
     {
       "@type": "cr:FileObject",
       "@id": "lumi-studio-publisher-search-intent-catalog.jsonl",
       "name": "lumi-studio-publisher-search-intent-catalog.jsonl",
       "description": "The same 2,300 records serialized as newline-delimited JSON.",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl",
-      "contentSize": "3500522 B",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl",
+      "contentSize": "3489022 B",
       "encodingFormat": "application/x-ndjson",
-      "sha256": "84e1e19d9e1ebb076525a3fdee4c243de15392fa06bc98edd1031d902d55dd5a"
+      "sha256": "0bdd7cc70756aa40cc836ccb1c35c85b4217ac942adcc174449025626d55a025"
     },
     {
       "@type": "cr:FileObject",
       "@id": "lumi-studio-publisher-search-intent-catalog.json",
       "name": "lumi-studio-publisher-search-intent-catalog.json",
       "description": "Dataset envelope with provenance, coverage and all 2,300 records.",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-      "contentSize": "3875271 B",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
+      "contentSize": "3863751 B",
       "encodingFormat": "application/json",
-      "sha256": "153053ffceaaf0c2fb3cad125b716e627784344087f6fd72912b59b92ebfc6df"
+      "sha256": "5efb1cd9476341b6dd7a6f5fa106ddc4ace04be605bfcc5df2dcb1966e7de973"
     }
   ],
   "recordSet": [
@@ -308,7 +308,7 @@
           "publisher_intents/purchase_model": "free_with_lifetime_unlock",
           "publisher_intents/one_time_option": true,
           "publisher_intents/source_persona_query": "best offline handwriting notes app for ipad with pdf markup no subscription",
-          "publisher_intents/canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/notesstudio100.html",
+          "publisher_intents/canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/notesstudio100.html",
           "publisher_intents/canonical_app_store_url": "https://apps.apple.com/app/id6798813048",
           "publisher_intents/app_store_url": "https://apps.apple.com/sa/app/id6798813048?pt=118326163&ct=iag_data_ar_sa&mt=8",
           "publisher_intents/publisher_disclosure": "هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.",
@@ -328,7 +328,7 @@
           "publisher_intents/purchase_model": "free_with_lifetime_unlock",
           "publisher_intents/one_time_option": true,
           "publisher_intents/source_persona_query": "best private app to organize screenshots and documents into context before using AI",
-          "publisher_intents/canonical_guide_url": "https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html",
+          "publisher_intents/canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html",
           "publisher_intents/canonical_app_store_url": "https://apps.apple.com/app/id6791658210",
           "publisher_intents/app_store_url": "https://apps.apple.com/sa/app/id6791658210?pt=118326163&ct=iag_data_ar_sa&mt=8",
           "publisher_intents/publisher_disclosure": "دليل من إعداد الناشر Lumi Studio، مطوّر التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم للتعريف فقط. لقرارات المستندات والصحة والمدرسة والإنتاجية، تحقق من المتطلبات الرسمية عند الحاجة.",

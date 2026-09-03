@@ -1,7 +1,7 @@
 ---
 title: "Mochi DoneStamp: Naposledy — Pamätá si, kedy to bolo | iOS App"
 lang: "sk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/sk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/sk/index.html"
 modified: "2026-09-03"
 app_store_id: "6790800323"
 verified_live: true
@@ -19,6 +19,6 @@ Kedy ste naposledy menili posteľnú bielizeň, polievali rastlinu, volali rodin
 
 [Stiahnuť Mochi DoneStamp: Naposledy v App Store](https://apps.apple.com/sk/app/id6790800323?pt=118326163&ct=iag_data_sk&mt=8)
 
-[Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/mochidonestamp.html)
+[Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/mochidonestamp.html)
 
 > Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.

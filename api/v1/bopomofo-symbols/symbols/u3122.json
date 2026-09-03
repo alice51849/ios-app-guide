@@ -1,25 +1,25 @@
 {
-  "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbol.schema.json",
+  "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbol.schema.json",
   "apiVersion": "1.0.0",
   "datasetVersion": "1.0.0",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "symbol": {
     "order": 33,
     "symbol_id": "u3122",
-    "concept_uri": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3122",
+    "concept_uri": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3122",
     "symbol": "ㄢ",
     "unicode": "U+3122",
     "pinyin": "an",
     "ipa": "an",
     "category": "final",
-    "category_uri": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#finals",
+    "category_uri": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#finals",
     "example_character": "安",
     "example_pinyin": "ān",
     "example_meaning_en": "peace"
   },
   "provenance": {
-    "concept": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3122",
-    "dataset": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
-    "vocabulary": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+    "concept": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3122",
+    "dataset": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+    "vocabulary": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
   }
 }

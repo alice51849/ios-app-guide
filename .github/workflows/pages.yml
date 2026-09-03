@@ -39,6 +39,10 @@ jobs:
         run: python3 _engine/geo/live_app_guard.py --site-root .
       - name: Prepare externally bound high-intent deployment
         env:
+          # The route pages, manifest and deployment record this step writes are
+          # public identifiers, so they must name the owned host, not the Pages
+          # origin the deploy is later verified against.
+          GEO_SITE: https://open.cait518.cc/ios-app-guide
           APP_STORE_PROVIDER_TOKEN: "118326163"
           GITHUB_TOKEN: ${{ github.token }}
           GROWTH_ENGINE_DEPLOY_KEY: ${{ secrets.GROWTH_ENGINE_DEPLOY_KEY }}
@@ -159,7 +163,7 @@ jobs:
         continue-on-error: true
         timeout-minutes: 6
         env:
-          GEO_SITE: https://alice51849.github.io/ios-app-guide
+          GEO_SITE: https://open.cait518.cc/ios-app-guide
         run: >-
           python3 "$RUNNER_TEMP/notify_websub.py"
           --feed-dir "$GITHUB_WORKSPACE"
@@ -173,7 +177,7 @@ jobs:
         continue-on-error: true
         timeout-minutes: 6
         env:
-          GEO_SITE: https://alice51849.github.io/ios-app-guide
+          GEO_SITE: https://open.cait518.cc/ios-app-guide
         run: >-
           python3 "$RUNNER_TEMP/notify_rsscloud.py"
           --feed-dir "$GITHUB_WORKSPACE"

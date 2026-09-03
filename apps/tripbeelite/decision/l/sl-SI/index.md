@@ -1,7 +1,7 @@
 ---
 title: "najboljša preprosta aplikacija za načrtovanje enega prihajajočega potovanja za iPhone"
 lang: "sl-SI"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/sl-SI/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/sl-SI/index.html"
 modified: "2026-09-03"
 app_store_id: "6791299610"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [Prenesite TripBee Lite v App Store →](https://apps.apple.com/si/app/id6791299610?pt=118326163&ct=iag_data_sl_si&mt=8)
 
-[Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
+[Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 
 > Vodnik je napisal razvijalec aplikacije Lumi Studio. Imena aplikacij so blagovne znamke svojih lastnikov in so navedena zgolj za identifikacijo. Pri odločitvah glede dokumentov, zdravja, šole in produktivnosti tam, kjer je to pomembno, preverite uradne zahteve.

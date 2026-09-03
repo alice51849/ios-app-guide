@@ -1,7 +1,7 @@
 ---
 title: "ứng dụng học đánh vần đầy đủ tốt nhất cho chuẩn bị mẫu giáo tại nhà"
 lang: "vi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/vi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/vi/index.html"
 modified: "2026-09-03"
 app_store_id: "6778491147"
 verified_live: true
@@ -20,6 +20,6 @@ Gia đình chuẩn bị cho mẫu giáo cần lộ trình đọc sớm đầy đ
 
 [Tải Lumi Letters Pro trên App Store →](https://apps.apple.com/vn/app/id6778491147?pt=118326163&ct=iag_data_vi&mt=8)
 
-[Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
+[Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 
 > Hướng dẫn do Lumi Studio, nhà phát triển ứng dụng, biên soạn. Tên các ứng dụng là thương hiệu của chủ sở hữu tương ứng và chỉ được dùng để nhận diện. Với những quyết định liên quan đến giấy tờ, sức khỏe, học tập và công việc, hãy kiểm tra các yêu cầu chính thức tương ứng khi cần.

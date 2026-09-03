@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/index.schema.json",
+  "$id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/index.schema.json",
   "title": "Verified iOS App Catalog API index",
   "type": "object",
   "additionalProperties": false,
@@ -25,7 +25,7 @@
   ],
   "properties": {
     "$schema": {
-      "const": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/index.schema.json"
+      "const": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/index.schema.json"
     },
     "api_version": {
       "const": "1.2.0"
@@ -108,13 +108,13 @@
       }
     },
     "openapi": {
-      "const": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/openapi.json"
+      "const": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/openapi.json"
     },
     "catalog_schema": {
-      "const": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json"
+      "const": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json"
     },
     "feed_schema": {
-      "const": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-catalog/feed.schema.json"
+      "const": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/feed.schema.json"
     },
     "locales": {
       "type": "array",

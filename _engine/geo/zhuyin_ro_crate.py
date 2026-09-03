@@ -32,6 +32,7 @@ from zhuyin_croissant_dataset import (  # noqa: E402
     LICENSE,
     SITE,
 )
+from site_config import PUBLIC_SITE  # noqa: E402
 
 
 PAGES = HERE / "pages"
@@ -159,8 +160,8 @@ README_TEXT = """Bopomofo 37-Symbol RO-Crate 1.3
 This attached RO-Crate packages the complete 37-symbol Bopomofo reference table
 with JSON Lines, Croissant 1.1, W3C CSVW and SKOS JSON-LD metadata.
 
-Open guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/
-Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ro-crate/
+Open guide: {GUIDE}/data/packages/zhuyin-bopomofo-ro-crate/
+Traditional Chinese guide: {GUIDE}/zh-Hant/data/packages/zhuyin-bopomofo-ro-crate/
 Specification: https://w3id.org/ro/crate/1.3
 
 Validation
@@ -184,7 +185,7 @@ an external service.
 再檢查 ro-crate-metadata.json、所有 hasPart 路徑、byte 長度與 SHA-256。
 本套件不含音訊、學習者紀錄、帳號、分析或追蹤；發布不代表取得 DOI、已登錄
 典藏庫、獲得 RO-Crate 認證，或已被外部服務匯入。
-"""
+""".replace("{GUIDE}", PUBLIC_SITE)
 
 LICENSE_TEXT = """Creative Commons Attribution 4.0 International (CC BY 4.0)
 
@@ -193,11 +194,11 @@ https://creativecommons.org/licenses/by/4.0/
 
 Attribution:
 Bopomofo 37-Symbol Open Reference Data, iOS App Guide Open Resources.
-https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/
+{GUIDE}/data/packages/zhuyin-bopomofo-ro-crate/
 
 The pinned RO-Crate JSON-LD context is distributed by the RO-Crate contributors
 under CC0 1.0 and is used for offline validation; it is not included in the crate.
-"""
+""".replace("{GUIDE}", PUBLIC_SITE)
 
 
 COPY = {

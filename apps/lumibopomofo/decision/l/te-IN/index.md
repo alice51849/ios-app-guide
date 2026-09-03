@@ -1,7 +1,7 @@
 ---
 title: "iPhoneలో పిల్లలు Zhuyin నేర్చుకోవడానికి ఉత్తమ Bopomofo యాప్"
 lang: "te-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/te-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/te-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6773017109"
 verified_live: true
@@ -20,6 +20,6 @@ Zhuyin మొదటిసారిగా నేర్చుకునే పి�
 
 [App Storeలో Lumi Bopomofo పొందండి →](https://apps.apple.com/in/app/id6773017109?pt=118326163&ct=iag_data_te_in&mt=8)
 
-[పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
+[పూర్తి మార్గదర్శకాన్ని చదవండి](https://open.cait518.cc/ios-app-guide/te-IN/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 
 > యాప్ డెవలపర్ Lumi Studio రాసిన గైడ్. యాప్‌ల పేర్లు వాటి యజమానుల ట్రేడ్‌మార్కులు; గుర్తింపు కోసం మాత్రమే వాడాం. పత్రాలు, ఆరోగ్యం, చదువు, ఉత్పాదకతకు సంబంధించిన నిర్ణయాల్లో అవసరమైన చోట అధికారిక నిబంధనలను సరిచూసుకోండి.

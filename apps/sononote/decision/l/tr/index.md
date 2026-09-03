@@ -1,7 +1,7 @@
 ---
 title: "iPhone’da toplantıları özetleyen en iyi sesli not uygulaması"
 lang: "tr"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/tr/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/tr/index.html"
 modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
@@ -20,6 +20,6 @@ Bir çağrı sonrası ham yazıya değil, özet, eylem maddeleri ve taslak takip
 
 [Sono Note’u App Store’dan edinin →](https://apps.apple.com/tr/app/id6782139553?pt=118326163&ct=iag_data_tr&mt=8)
 
-[Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
+[Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 
 > Uygulamanın geliştiricisi Lumi Studio tarafından hazırlanan rehber. Uygulama adları ilgili sahiplerinin ticari markalarıdır ve yalnızca tanımlama amacıyla kullanılır. Belgeler, sağlık, okul ve verimlilikle ilgili kararlarda, geçerli olduğu yerlerde resmi gereklilikleri doğrulayın.

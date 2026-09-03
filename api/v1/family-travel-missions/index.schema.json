@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/index.schema.json",
+  "$id": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/index.schema.json",
   "title": "Family Travel Missions API index",
   "type": "object",
   "additionalProperties": false,
@@ -19,7 +19,7 @@
   ],
   "properties": {
     "$schema": {
-      "const": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/index.schema.json"
+      "const": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/index.schema.json"
     },
     "apiVersion": {
       "const": "1.0.0"
@@ -28,7 +28,7 @@
       "const": "1.0.0"
     },
     "generatedFrom": {
-      "const": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.json"
+      "const": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.json"
     },
     "license": {
       "const": "https://creativecommons.org/licenses/by/4.0/"
@@ -114,15 +114,15 @@
       ],
       "properties": {
         "en": {
-          "const": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/"
+          "const": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/"
         },
         "zh-Hant": {
-          "const": "https://alice51849.github.io/ios-app-guide/zh-Hant/api/v1/family-travel-missions/"
+          "const": "https://open.cait518.cc/ios-app-guide/zh-Hant/api/v1/family-travel-missions/"
         }
       }
     },
     "openapi": {
-      "const": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/openapi.json"
+      "const": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/openapi.json"
     },
     "scenarios": {
       "type": "array",
@@ -171,7 +171,7 @@
         "url": {
           "type": "string",
           "format": "uri",
-          "pattern": "^https://alice51849\\.github\\.io/ios-app-guide/api/v1/family-travel-missions/scenarios/"
+          "pattern": "^https://open\\.cait518\\.cc/ios-app-guide/api/v1/family-travel-missions/scenarios/"
         }
       }
     }

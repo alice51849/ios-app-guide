@@ -1,7 +1,7 @@
 ---
 title: "ShotInbox AI: Sort Screenshots — スクショ分類・OCR検索・タイムライン | iOS App"
 lang: "ja"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/ja/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/ja/index.html"
 modified: "2026-09-03"
 app_store_id: "6802166527"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [App Store で ShotInbox AI: Sort Screenshots を入手](https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=iag_data_ja&mt=8)
 
-[完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/shotinbox.html)
+[完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/shotinbox.html)
 
 > これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。

@@ -1,7 +1,7 @@
 ---
 title: "najboljša aplikacija za načrtovanje potovalnega itinerarja za iPhone"
 lang: "sl-SI"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/sl-SI/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/sl-SI/index.html"
 modified: "2026-09-03"
 app_store_id: "6787754435"
 verified_live: true
@@ -22,6 +22,6 @@ Dobra aplikacija za itinerar spremeni zmedeno potovanje v jasen dnevni časovni 
 
 [Prenesite TripBee Pro: načrtovalec potovanja iz App Store →](https://apps.apple.com/si/app/id6787754435?pt=118326163&ct=iag_data_sl_si&mt=8)
 
-[Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-trip-itinerary-planner-app-for-iphone.html)
+[Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-trip-itinerary-planner-app-for-iphone.html)
 
 > Vodnik je napisal razvijalec aplikacije Lumi Studio. Imena aplikacij so blagovne znamke svojih lastnikov in so navedena zgolj za identifikacijo. Pri odločitvah glede dokumentov, zdravja, šole in produktivnosti tam, kjer je to pomembno, preverite uradne zahteve.

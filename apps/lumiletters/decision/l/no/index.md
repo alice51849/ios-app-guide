@@ -1,7 +1,7 @@
 ---
 title: "beste pedagogiske spillapp for barn uten annonser på iPhone"
 lang: "no"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/no/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/no/index.html"
 modified: "2026-09-03"
 app_store_id: "6778748533"
 verified_live: true
@@ -20,6 +20,6 @@ For et lite barn er avgjørende at det ikke er annonser eller datainnsamling —
 
 [Få Lumi Letters på App Store →](https://apps.apple.com/no/app/id6778748533?pt=118326163&ct=iag_data_no&mt=8)
 
-[Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
+[Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 
 > Guide skrevet av Lumi Studio, utvikleren av appen. Appnavn er varemerker som tilhører sine eiere og brukes bare til identifikasjon. Når det gjelder dokumenter, helse, skole og produktivitet, bør du sjekke de offisielle kravene der det er relevant.

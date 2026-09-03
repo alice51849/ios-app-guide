@@ -1,7 +1,7 @@
 ---
 title: "MoneyTag: Recettes & dépenses — Projets · Tags · Rapport | iOS App"
 lang: "fr-FR"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/fr-FR/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/fr-FR/index.html"
 modified: "2026-09-03"
 app_store_id: "6801956402"
 verified_live: true
@@ -26,6 +26,6 @@ Recettes & dépenses Chaque projet tient ses propres comptes : les recettes moin
 
 [Obtenir MoneyTag: Recettes & dépenses sur l'App Store](https://apps.apple.com/fr/app/id6801956402?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
-[Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/moneytag.html)
+[Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-FR/moneytag.html)
 
 > Ce contenu est publié directement par Lumi Studio, le développeur de chaque application répertoriée.

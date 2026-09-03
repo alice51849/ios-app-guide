@@ -1,7 +1,7 @@
 ---
 title: "OnePage PPT: AI-bildspel — Anteckningar till en slide | iOS App"
 lang: "sv"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/sv/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/sv/index.html"
 modified: "2026-09-03"
 app_store_id: "6798814385"
 verified_live: true
@@ -19,6 +19,6 @@ Gör en vägg av text till EN bild som folk faktiskt läser. OnePage PPT läser 
 
 [Hämta OnePage PPT: AI-bildspel i App Store](https://apps.apple.com/se/app/id6798814385?pt=118326163&ct=iag_data_sv&mt=8)
 
-[Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/onepageppt.html)
+[Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/onepageppt.html)
 
 > Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.

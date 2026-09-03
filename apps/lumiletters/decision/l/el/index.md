@@ -1,7 +1,7 @@
 ---
 title: "η καλύτερη εκπαιδευτική παιχνιδιού εφαρμογή για παιδιά χωρίς διαφημίσεις στο iPhone"
 lang: "el"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletters/decision/l/el/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletters/decision/l/el/index.html"
 modified: "2026-09-03"
 app_store_id: "6778748533"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [Κατεβάστε το Lumi Letters από το App Store →](https://apps.apple.com/gr/app/id6778748533?pt=118326163&ct=iag_data_el&mt=8)
 
-[Διαβάστε τον πλήρη οδηγό](https://alice51849.github.io/ios-app-guide/el/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
+[Διαβάστε τον πλήρη οδηγό](https://open.cait518.cc/ios-app-guide/el/answers/best-educational-game-app-for-kids-no-ads-iphone.html)
 
 > Οδηγός γραμμένος από τη Lumi Studio, τον προγραμματιστή της εφαρμογής. Τα ονόματα των εφαρμογών είναι εμπορικά σήματα των κατόχων τους και χρησιμοποιούνται μόνο για αναγνώριση. Για αποφάσεις που αφορούν έγγραφα, υγεία, σχολείο και παραγωγικότητα, ελέγξτε τις επίσημες απαιτήσεις όπου χρειάζεται.

@@ -1,7 +1,7 @@
 ---
 title: "Wordmate Lite: Ordforråd — Fem nye ord hver dag | iOS App"
 lang: "no"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/no/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/no/index.html"
 modified: "2026-09-03"
 app_store_id: "6797601720"
 verified_live: true
@@ -20,6 +20,6 @@ Fem ord. Ett minutt. En sti du faktisk ser. De fleste gloseprogrammer ber deg f�
 
 [Last ned Wordmate Lite: Ordforråd fra App Store](https://apps.apple.com/no/app/id6797601720?pt=118326163&ct=iag_data_no&mt=8)
 
-[Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/wordmatelite.html)
+[Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/wordmatelite.html)
 
 > Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.

@@ -1,7 +1,7 @@
 ---
 title: "DailyMate Lite: Tal i dag — 50 sprog, ægte dialoger | iOS App"
 lang: "da"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/da/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/da/index.html"
 modified: "2026-09-03"
 app_store_id: "6794725568"
 verified_live: true
@@ -19,6 +19,6 @@ Tal, når det gælder. Med DailyMate Lite øver du komplette replikskift i hverd
 
 [Hent DailyMate Lite: Tal i dag i App Store](https://apps.apple.com/dk/app/id6794725568?pt=118326163&ct=iag_data_da&mt=8)
 
-[Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/dailymatelite.html)
+[Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/dailymatelite.html)
 
 > Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.

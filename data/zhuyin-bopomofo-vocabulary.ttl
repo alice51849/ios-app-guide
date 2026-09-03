@@ -7,23 +7,23 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix zhuyin: <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#> .
+@prefix zhuyin: <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#> .
 
 zhuyin:scheme
     a skos:ConceptScheme, schema:DefinedTermSet ;
     skos:prefLabel "Bopomofo (Zhuyin) 37-Symbol Vocabulary"@en, "注音符號 37 符號詞彙"@zh-Hant ;
     dcterms:title "Bopomofo (Zhuyin) 37-Symbol Vocabulary"@en, "注音符號 37 符號詞彙"@zh-Hant ;
     dcterms:description "A bilingual SKOS concept scheme for all 37 Bopomofo symbols, including Pinyin, broad IPA, Unicode notation and example words."@en, "完整涵蓋 37 個注音符號的雙語 SKOS concept scheme，包含漢語拼音、寬式 IPA、Unicode notation 與例字。"@zh-Hant ;
-    dcterms:creator <https://alice51849.github.io/ios-app-guide/#organization> ;
+    dcterms:creator <https://open.cait518.cc/ios-app-guide/#organization> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:source <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json>, <https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html>, <https://www.unicode.org/charts/PDF/U3100.pdf> ;
+    dcterms:source <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json>, <https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html>, <https://www.unicode.org/charts/PDF/U3100.pdf> ;
     dcterms:conformsTo <https://www.w3.org/TR/skos-reference/> ;
     dcterms:created "2026-07-11"^^xsd:date ;
     dcterms:modified "2026-07-11"^^xsd:date ;
     schema:numberOfItems "37"^^xsd:integer ;
     skos:hasTopConcept zhuyin:initials, zhuyin:medials, zhuyin:finals .
 
-<https://alice51849.github.io/ios-app-guide/#organization>
+<https://open.cait518.cc/ios-app-guide/#organization>
     a schema:Organization ;
     schema:name "Lumi Apps - iOS App Guide" .
 

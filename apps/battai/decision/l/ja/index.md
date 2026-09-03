@@ -1,7 +1,7 @@
 ---
 title: "BattAI: バッテリー状態スコア — ルール、情報源、限界を明確に | iOS App"
 lang: "ja"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ja/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ja/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAIが公開iOS APIから使うのは、電池残量、充電状態、
 
 [App Store で BattAI: バッテリー状態スコア を入手](https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=iag_data_ja&mt=8)
 
-[完全ガイドを読む](https://alice51849.github.io/ios-app-guide/ja/battai.html)
+[完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/battai.html)
 
 > これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。

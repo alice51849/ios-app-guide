@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>重複照片偵測 — 免費、瀏覽器內執行、連「幾乎相同」的也找得到</title>
 <meta name="description" content="選好照片，用感知雜湊把重複與近似重複分組，標出該留哪一張、其餘佔了多少空間。全程不上傳。">
-<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/duplicate-photo-finder.html">
-<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/duplicate-photo-finder.html">
-<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/duplicate-photo-finder.html">
-<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/duplicate-photo-finder.html">
-<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/duplicate-photo-finder.html">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/duplicate-photo-finder.html">
+<link rel="alternate" hreflang="en" href="https://open.cait518.cc/ios-app-guide/tools/duplicate-photo-finder.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/duplicate-photo-finder.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/duplicate-photo-finder.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/tools/duplicate-photo-finder.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="重複照片偵測">
 <meta property="og:description" content="選好照片，用感知雜湊把重複與近似重複分組，標出該留哪一張、其餘佔了多少空間。全程不上傳。">
-<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/duplicate-photo-finder.html">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/duplicate-photo-finder.html">
 <meta name="twitter:card" content="summary">
 <style>
 :root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
@@ -65,12 +65,12 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 
 @media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"重複照片偵測","description":"選好照片，用感知雜湊把重複與近似重複分組，標出該留哪一張、其餘佔了多少空間。全程不上傳。","url":"https://alice51849.github.io/ios-app-guide/zh-Hant/tools/duplicate-photo-finder.html","inLanguage":"zh-Hant","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["每張圖計算 8×8 平均感知雜湊","可調整的漢明距離門檻","每組把最大的檔案排在最前面","可回收位元組總計"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"重複照片偵測","description":"選好照片，用感知雜湊把重複與近似重複分組，標出該留哪一張、其餘佔了多少空間。全程不上傳。","url":"https://open.cait518.cc/ios-app-guide/zh-Hant/tools/duplicate-photo-finder.html","inLanguage":"zh-Hant","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["每張圖計算 8×8 平均感知雜湊","可調整的漢明距離門檻","每組把最大的檔案排在最前面","可回收位元組總計"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hant","mainEntity":[{"@type":"Question","name":"和「完全相同」的重複偵測差在哪？","acceptedAnswer":{"@type":"Answer","text":"完全相同是比位元組，只要重新存檔、縮圖或換個匯出設定就抓不到了。感知雜湊比的是外觀，所以連拍與幾乎一樣的重拍也能歸在一起。"}},{"@type":"Question","name":"門檻要設多少？","acceptedAnswer":{"@type":"Answer","text":"完全或幾乎完全相同設 0–1；連拍與輕微編輯大約設 6。超過 10 之後，像同一個 App 的截圖那種大片單色的圖會開始誤判。"}},{"@type":"Question","name":"可以直接清理我的手機嗎？","acceptedAnswer":{"@type":"Answer","text":"不行。瀏覽器頁面碰不到照片圖庫，任何宣稱做得到的頁面都不誠實。請用這裡找出檔案，再自己刪除。"}}]}</script>
 <link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
-<header class="top"><div class="wrap nav"><a href="index.html">← 免費工具</a><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/" >iOS App Guide</a></div></header>
+<header class="top"><div class="wrap nav"><a href="index.html">← 免費工具</a><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/" >iOS App Guide</a></div></header>
 <section class="hero wrap">
 <span class="eyebrow">感知雜湊 · 在瀏覽器內執行</span>
 <h1>重複照片偵測</h1>
@@ -99,7 +99,7 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 <section class="grid">
 <article class="card"><h2>運作方式</h2><ol><li>每張圖畫到 8×8 的 canvas 上轉成亮度，再產生 64 位元的平均雜湊：比平均亮的格子記為 1。</li><li>兩張圖的雜湊差異在你設定的位元數以內就算重複。0 代表看起來完全相同，6 左右可以抓到輕微裁切、曝光差異與重新存檔。</li><li>每一組裡把檔案最大的排第一並標示「留這張」，計數器加總的是其餘那些的大小。</li><li>調整門檻會立刻重新分組，不需要重讀檔案。</li></ol></article>
 <article class="card"><h2>這個工具不會做的事</h2><ul><li>無法刪除任何檔案。網頁碰不到你的照片圖庫，這裡只能告訴你該處理哪些，刪除要你自己來。</li><li>不讀取 EXIF、日期或位置，分組完全依據外觀。</li><li>不上傳，雜湊計算全部在你的裝置上完成。</li></ul></article>
-<article class="card wide"><h2>其他免費工具</h2><ul><li><a href="flashcard-maker.html">單字卡製作</a></li><li><a href="image-compressor.html">壓縮圖片</a></li><li><a href="white-noise-generator.html">白噪音產生器</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
+<article class="card wide"><h2>其他免費工具</h2><ul><li><a href="flashcard-maker.html">單字卡製作</a></li><li><a href="image-compressor.html">壓縮圖片</a></li><li><a href="white-noise-generator.html">白噪音產生器</a></li><li><a href="https://open.cait518.cc/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
 </section>
 <section class="faq"><h2>常見問題</h2><details><summary>和「完全相同」的重複偵測差在哪？</summary><p>完全相同是比位元組，只要重新存檔、縮圖或換個匯出設定就抓不到了。感知雜湊比的是外觀，所以連拍與幾乎一樣的重拍也能歸在一起。</p></details><details><summary>門檻要設多少？</summary><p>完全或幾乎完全相同設 0–1；連拍與輕微編輯大約設 6。超過 10 之後，像同一個 App 的截圖那種大片單色的圖會開始誤判。</p></details><details><summary>可以直接清理我的手機嗎？</summary><p>不行。瀏覽器頁面碰不到照片圖庫，任何宣稱做得到的頁面都不誠實。請用這裡找出檔案，再自己刪除。</p></details></section>
 <section class="app-card"><h2>想對整個相簿跑一次嗎？</h2>

@@ -1,7 +1,7 @@
 ---
 title: "Aim990 Plus: Test z angličtiny — Jistota pod časovým tlakem | iOS App"
 lang: "cs"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/cs/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/cs/index.html"
 modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
@@ -19,6 +19,6 @@ Když běží čas, nestačí angličtině jen rozumět. Je potřeba udržet poz
 
 [Stáhněte si Aim990 Plus: Test z angličtiny v App Storu](https://apps.apple.com/cz/app/id6792483140?pt=118326163&ct=iag_data_cs&mt=8)
 
-[Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/aim990plus.html)
+[Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/aim990plus.html)
 
 > Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.

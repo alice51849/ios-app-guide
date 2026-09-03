@@ -1,7 +1,7 @@
 ---
 title: "Snapport Lite: Ảnh thẻ tại nhà — Tạo ảnh thẻ tại nhà | iOS App"
 lang: "vi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/vi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/vi/index.html"
 modified: "2026-09-03"
 app_store_id: "6792856304"
 verified_live: true
@@ -20,6 +20,6 @@ Snapport Lite - Tạo ảnh hộ chiếu, visa và giấy tờ với hướng d�
 
 [Tải Snapport Lite: Ảnh thẻ tại nhà trên App Store](https://apps.apple.com/vn/app/id6792856304?pt=118326163&ct=iag_data_vi&mt=8)
 
-[Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/snapportlite.html)
+[Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/snapportlite.html)
 
 > Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.

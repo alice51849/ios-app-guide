@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "@id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/metadata.jsonld#dataset",
+  "@id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/metadata.jsonld#dataset",
   "@type": "Dataset",
   "name": "Complete Bopomofo IIIF Presentation API 3 resource",
   "alternateName": "完整注音 IIIF Presentation API 3 資源",
@@ -8,8 +8,8 @@
   "datePublished": "2026-07-12",
   "dateModified": "2026-07-11T17:50:00Z",
   "version": "3.0.0",
-  "identifier": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/manifest.json",
-  "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html",
+  "identifier": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/manifest.json",
+  "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html",
   "conformsTo": "https://iiif.io/api/presentation/3.0/",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "isAccessibleForFree": true,
@@ -22,19 +22,19 @@
   "creator": {
     "@type": "Organization",
     "name": "Lumi Apps – iOS App Guide",
-    "url": "https://alice51849.github.io/ios-app-guide"
+    "url": "https://open.cait518.cc/ios-app-guide"
   },
   "citation": [
-    "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv",
-    "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
-    "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+    "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv",
+    "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+    "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
   ],
   "measurementTechnique": "IIIF Presentation API 3.0 with one static SVG painting body per Canvas; no IIIF Image API service",
   "distribution": [
     {
       "@type": "DataDownload",
       "contentSize": "1526 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/collection.json",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/collection.json",
       "encodingFormat": "application/json",
       "name": "IIIF Presentation API 3 Collection",
       "sha256": "ee825f28ea05055f08b4be1ae22e03cdb0c4adc55699e590af3ab6b4c8b5e863"
@@ -42,7 +42,7 @@
     {
       "@type": "DataDownload",
       "contentSize": "120940 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/manifest.json",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/manifest.json",
       "encodingFormat": "application/json",
       "name": "IIIF Presentation API 3.0 Manifest",
       "sha256": "dea96363d882f1b7d04979092b884e2e7b223c7387d6f07360048bce533b082b"
@@ -50,7 +50,7 @@
     {
       "@type": "DataDownload",
       "contentSize": "222009 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/bopomofo-37-symbols-iiif-presentation-3.zip",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/bopomofo-37-symbols-iiif-presentation-3.zip",
       "encodingFormat": "application/zip",
       "name": "Deterministic complete IIIF resource ZIP",
       "sha256": "9df20d6ebcf4b9fada38fb67ab7874a76f14ead2ab69049a98e18409e7b979f8"
@@ -58,7 +58,7 @@
     {
       "@type": "DataDownload",
       "contentSize": "3343 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/checksums-sha256.txt",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/checksums-sha256.txt",
       "encodingFormat": "text/plain",
       "name": "SHA-256 checksums for non-recursive IIIF payload files",
       "sha256": "0bb7f88b06d39fc985d8aff1f1cf52eea4261cfb85c2ca97a3e18f645b57d8f8"
@@ -68,7 +68,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2706 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3105.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3105.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3105",
       "name": "Bopomofo ㄅ static SVG card",
@@ -79,7 +79,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2717 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3106.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3106.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3106",
       "name": "Bopomofo ㄆ static SVG card",
@@ -90,7 +90,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "1463 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3107.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3107.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3107",
       "name": "Bopomofo ㄇ static SVG card",
@@ -101,7 +101,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2260 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3108.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3108.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3108",
       "name": "Bopomofo ㄈ static SVG card",
@@ -112,7 +112,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "3021 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3109.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3109.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3109",
       "name": "Bopomofo ㄉ static SVG card",
@@ -123,7 +123,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2530 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310A.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u310A.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u310A",
       "name": "Bopomofo ㄊ static SVG card",
@@ -134,7 +134,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2773 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310B.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u310B.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u310B",
       "name": "Bopomofo ㄋ static SVG card",
@@ -145,7 +145,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "3115 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310C.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u310C.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u310C",
       "name": "Bopomofo ㄌ static SVG card",
@@ -156,7 +156,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2484 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310D.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u310D.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u310D",
       "name": "Bopomofo ㄍ static SVG card",
@@ -167,7 +167,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2713 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310E.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u310E.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u310E",
       "name": "Bopomofo ㄎ static SVG card",
@@ -178,7 +178,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "1799 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310F.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u310F.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u310F",
       "name": "Bopomofo ㄏ static SVG card",
@@ -189,7 +189,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2071 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3110.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3110.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3110",
       "name": "Bopomofo ㄐ static SVG card",
@@ -200,7 +200,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "1949 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3111.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3111.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3111",
       "name": "Bopomofo ㄑ static SVG card",
@@ -211,7 +211,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "1478 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3112.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3112.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3112",
       "name": "Bopomofo ㄒ static SVG card",
@@ -222,7 +222,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "1559 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3113.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3113.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3113",
       "name": "Bopomofo ㄓ static SVG card",
@@ -233,7 +233,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2151 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3114.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3114.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3114",
       "name": "Bopomofo ㄔ static SVG card",
@@ -244,7 +244,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "1844 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3115.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3115.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3115",
       "name": "Bopomofo ㄕ static SVG card",
@@ -255,7 +255,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2220 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3116.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3116.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3116",
       "name": "Bopomofo ㄖ static SVG card",
@@ -266,7 +266,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2126 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3117.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3117.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3117",
       "name": "Bopomofo ㄗ static SVG card",
@@ -277,7 +277,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2480 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3118.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3118.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3118",
       "name": "Bopomofo ㄘ static SVG card",
@@ -288,7 +288,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2520 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3119.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3119.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3119",
       "name": "Bopomofo ㄙ static SVG card",
@@ -299,7 +299,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "1442 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3127.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3127.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3127",
       "name": "Bopomofo ㄧ static SVG card",
@@ -310,7 +310,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2080 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3128.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3128.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3128",
       "name": "Bopomofo ㄨ static SVG card",
@@ -321,7 +321,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2001 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3129.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3129.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3129",
       "name": "Bopomofo ㄩ static SVG card",
@@ -332,7 +332,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2005 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311A.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u311A.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u311A",
       "name": "Bopomofo ㄚ static SVG card",
@@ -343,7 +343,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "1998 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311B.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u311B.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u311B",
       "name": "Bopomofo ㄛ static SVG card",
@@ -354,7 +354,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "1996 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311C.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u311C.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u311C",
       "name": "Bopomofo ㄜ static SVG card",
@@ -365,7 +365,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2435 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311D.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u311D.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u311D",
       "name": "Bopomofo ㄝ static SVG card",
@@ -376,7 +376,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2747 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311E.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u311E.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u311E",
       "name": "Bopomofo ㄞ static SVG card",
@@ -387,7 +387,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "1991 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311F.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u311F.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u311F",
       "name": "Bopomofo ㄟ static SVG card",
@@ -398,7 +398,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "3326 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3120.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3120.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3120",
       "name": "Bopomofo ㄠ static SVG card",
@@ -409,7 +409,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2122 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3121.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3121.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3121",
       "name": "Bopomofo ㄡ static SVG card",
@@ -420,7 +420,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2726 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3122.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3122.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3122",
       "name": "Bopomofo ㄢ static SVG card",
@@ -431,7 +431,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2453 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3123.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3123.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3123",
       "name": "Bopomofo ㄣ static SVG card",
@@ -442,7 +442,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2537 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3124.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3124.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3124",
       "name": "Bopomofo ㄤ static SVG card",
@@ -453,7 +453,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2290 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3125.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3125.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3125",
       "name": "Bopomofo ㄥ static SVG card",
@@ -464,7 +464,7 @@
     {
       "@type": "ImageObject",
       "contentSize": "2402 B",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3126.svg",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3126.svg",
       "encodingFormat": "image/svg+xml",
       "identifier": "u3126",
       "name": "Bopomofo ㄦ static SVG card",

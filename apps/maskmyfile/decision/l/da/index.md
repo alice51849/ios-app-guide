@@ -1,7 +1,7 @@
 ---
 title: "Mask My File: Fjern dine data — Skjul data før du deler | iOS App"
 lang: "da"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/da/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/da/index.html"
 modified: "2026-09-03"
 app_store_id: "6792850916"
 verified_live: true
@@ -20,6 +20,6 @@ Del trygt uden at miste den nyttige sammenhæng. Mask My File finder private opl
 
 [Hent Mask My File: Fjern dine data i App Store](https://apps.apple.com/dk/app/id6792850916?pt=118326163&ct=iag_data_da&mt=8)
 
-[Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/maskmyfile.html)
+[Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/maskmyfile.html)
 
 > Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.

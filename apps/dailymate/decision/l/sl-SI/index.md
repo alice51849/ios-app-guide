@@ -1,7 +1,7 @@
 ---
 title: "najboljša praktična aplikacija za jezikovne fraze za popotnike z Apple Watch"
 lang: "sl-SI"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/sl-SI/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/sl-SI/index.html"
 modified: "2026-09-03"
 app_store_id: "6790418321"
 verified_live: true
@@ -20,6 +20,6 @@ Pred potovanjem so celovite fraze za resnične situacije bolj uporabne kot posam
 
 [Prenesite DailyMate v App Store →](https://apps.apple.com/si/app/id6790418321?pt=118326163&ct=iag_data_sl_si&mt=8)
 
-[Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
+[Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 
 > Vodnik je napisal razvijalec aplikacije Lumi Studio. Imena aplikacij so blagovne znamke svojih lastnikov in so navedena zgolj za identifikacijo. Pri odločitvah glede dokumentov, zdravja, šole in produktivnosti tam, kjer je to pomembno, preverite uradne zahteve.

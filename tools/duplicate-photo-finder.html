@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Duplicate Photo Finder — Free, In-Browser, Finds Near-Duplicates Too</title>
 <meta name="description" content="Select photos and this groups visual duplicates and near-duplicates using a perceptual hash, showing which copy is largest and how many bytes the rest are costing. Nothing is uploaded.">
-<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/tools/duplicate-photo-finder.html">
-<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/duplicate-photo-finder.html">
-<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/duplicate-photo-finder.html">
-<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/duplicate-photo-finder.html">
-<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/duplicate-photo-finder.html">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/tools/duplicate-photo-finder.html">
+<link rel="alternate" hreflang="en" href="https://open.cait518.cc/ios-app-guide/tools/duplicate-photo-finder.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/duplicate-photo-finder.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/duplicate-photo-finder.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/tools/duplicate-photo-finder.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Duplicate photo finder">
 <meta property="og:description" content="Select photos and this groups visual duplicates and near-duplicates using a perceptual hash, showing which copy is largest and how many bytes the rest are costing. Nothing is uploaded.">
-<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/tools/duplicate-photo-finder.html">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/tools/duplicate-photo-finder.html">
 <meta name="twitter:card" content="summary">
 <style>
 :root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
@@ -65,15 +65,15 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 
 @media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Duplicate photo finder","description":"Select photos and this groups visual duplicates and near-duplicates using a perceptual hash, showing which copy is largest and how many bytes the rest are costing. Nothing is uploaded.","url":"https://alice51849.github.io/ios-app-guide/tools/duplicate-photo-finder.html","inLanguage":"en","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["8×8 average perceptual hash per image","Adjustable Hamming-distance tolerance","Groups sorted with the largest copy first","Reclaimable byte total"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Duplicate photo finder","description":"Select photos and this groups visual duplicates and near-duplicates using a perceptual hash, showing which copy is largest and how many bytes the rest are costing. Nothing is uploaded.","url":"https://open.cait518.cc/ios-app-guide/tools/duplicate-photo-finder.html","inLanguage":"en","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["8×8 average perceptual hash per image","Adjustable Hamming-distance tolerance","Groups sorted with the largest copy first","Reclaimable byte total"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"How is this different from an exact duplicate finder?","acceptedAnswer":{"@type":"Answer","text":"An exact finder compares bytes, so re-saving, resizing or a different export setting hides the duplicate. A perceptual hash compares what the image looks like, which is why it also catches burst shots and near-identical retakes."}},{"@type":"Question","name":"What tolerance should I use?","acceptedAnswer":{"@type":"Answer","text":"Zero or one for exact and near-exact copies. Around six is a good default for burst shots and slight edits. Above ten you will start seeing false matches on flat images like screenshots of the same app."}},{"@type":"Question","name":"Can it clean my phone directly?","acceptedAnswer":{"@type":"Answer","text":"No. A browser page cannot touch your photo library, and any page claiming otherwise is not telling the truth. Use this to identify the files, then delete them yourself."}}]}</script>
 <link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
-<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://alice51849.github.io/ios-app-guide/feed.xml">
-<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://alice51849.github.io/ios-app-guide/rss.xml">
-<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://alice51849.github.io/ios-app-guide/feed.json">
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
 </head>
 <body>
-<header class="top"><div class="wrap nav"><a href="index.html">← Free tools</a><a href="https://alice51849.github.io/ios-app-guide/" >iOS App Guide</a></div></header>
+<header class="top"><div class="wrap nav"><a href="index.html">← Free tools</a><a href="https://open.cait518.cc/ios-app-guide/" >iOS App Guide</a></div></header>
 <section class="hero wrap">
 <span class="eyebrow">Perceptual hashing · runs in your browser</span>
 <h1>Duplicate photo finder</h1>

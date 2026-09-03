@@ -1,7 +1,7 @@
 ---
 title: "meilleure application de suivi de budget de voyage sans abonnement iPhone"
 lang: "fr-CA"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/fr-CA/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/fr-CA/index.html"
 modified: "2026-09-03"
 app_store_id: "6755782939"
 verified_live: true
@@ -21,6 +21,6 @@ En voyage, vous avez besoin d’un suivi de budget qui fonctionne hors ligne dan
 
 [Obtenez G+Money sur l’App Store →](https://apps.apple.com/ca/app/id6755782939?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
-[Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
+[Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 
 > Guide rédigé par Lumi Studio, le développeur de l'app. Les noms d'apps sont des marques de commerce de leurs propriétaires et servent uniquement à les identifier. Pour les décisions concernant les documents, la santé, l'école et la productivité, vérifiez les exigences officielles applicables.

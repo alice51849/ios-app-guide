@@ -1,7 +1,7 @@
 ---
 title: "100 Notes Studio: Pen & Paper — 手寫筆記本、PDF標註、錄音與複習 | iOS App"
 lang: "zh-Hant"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/zh-Hant/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/notesstudio100/decision/l/zh-Hant/index.html"
 modified: "2026-09-03"
 app_store_id: "6798813048"
 verified_live: true
@@ -22,6 +22,6 @@ publisher: "Lumi Studio"
 
 [在 App Store 取得 100 Notes Studio: Pen & Paper](https://apps.apple.com/tw/app/id6798813048?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
-[閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/notesstudio100.html)
+[閱讀完整指南](https://open.cait518.cc/ios-app-guide/zh-Hant/notesstudio100.html)
 
 > 這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。

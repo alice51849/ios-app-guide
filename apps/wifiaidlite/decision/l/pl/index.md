@@ -1,7 +1,7 @@
 ---
 title: "WiFi Aid Lite — Rzetelna diagnostyka sieci | iOS App"
 lang: "pl"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/pl/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/pl/index.html"
 modified: "2026-09-03"
 app_store_id: "6793414462"
 verified_live: true
@@ -20,6 +20,6 @@ Znajdź prawdziwy problem. Każde narzędzie obejmuje jedno bezpłatne pełne u�
 
 [Pobierz WiFi Aid Lite z App Store](https://apps.apple.com/pl/app/id6793414462?pt=118326163&ct=iag_data_pl&mt=8)
 
-[Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/wifiaidlite.html)
+[Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/wifiaidlite.html)
 
 > Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.

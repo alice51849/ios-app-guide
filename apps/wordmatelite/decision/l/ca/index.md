@@ -1,7 +1,7 @@
 ---
 title: "Wordmate Lite: vocabulari — Cinc paraules al dia, offline | iOS App"
 lang: "ca"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/ca/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/ca/index.html"
 modified: "2026-09-03"
 app_store_id: "6797601720"
 verified_live: true
@@ -20,6 +20,6 @@ Cinc paraules, un minut, un pas visible en el teu camí. El Wordmate Lite agafa 
 
 [Descarrega Wordmate Lite: vocabulari a l’App Store](https://apps.apple.com/es/app/id6797601720?pt=118326163&ct=iag_data_ca&mt=8)
 
-[Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/wordmatelite.html)
+[Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/wordmatelite.html)
 
 > Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.

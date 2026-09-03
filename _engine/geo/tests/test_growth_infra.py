@@ -1668,7 +1668,7 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertIn(
                 f"{site}/oembed/ja/lumibopomofo.json?"
-                "url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide"
+                "url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide"
                 "%2Fja%2Flumibopomofo.html&amp;format=json",
                 localized_source,
             )
@@ -1725,7 +1725,7 @@ class GeneratorTests(unittest.TestCase):
                 source,
             )
             self.assertIn(
-                'src="https://alice51849.github.io/ios-app-guide/social/img/'
+                'src="https://open.cait518.cc/ios-app-guide/social/img/'
                 'lumibopomofo-share.jpg"',
                 source,
             )
@@ -1782,7 +1782,7 @@ class GeneratorTests(unittest.TestCase):
                 len(Graph().parse(data=json.dumps(schema), format="json-ld")), 0
             )
             self.assertIn(
-                "url=https%3A%2F%2Falice51849.github.io%2Fios-app-guide"
+                "url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide"
                 "%2Fguides%2Flumibopomofo.html&amp;format=json",
                 source,
             )
@@ -4915,7 +4915,7 @@ class GeneratorTests(unittest.TestCase):
             )
             api_page = (
                 '<link rel="canonical" href="'
-                'https://alice51849.github.io/ios-app-guide/api/">'
+                'https://open.cait518.cc/ios-app-guide/api/">'
             )
             self.assertEqual(
                 api_page,
@@ -5038,7 +5038,7 @@ class GeneratorTests(unittest.TestCase):
         ]["pattern"]
         self.assertNotIn(r"\-", endpoint_pattern)
         self.assertTrue(endpoint_pattern.startswith(
-            r"^https://alice51849\.github\.io/ios-app-guide/"
+            r"^https://open\.cait518\.cc/ios-app-guide/"
         ))
         self.assertEqual(
             {"symbolCount": 37, "initialCount": 21, "medialCount": 3,
@@ -10076,7 +10076,7 @@ class GeneratorTests(unittest.TestCase):
             self.assertIn('<h1 class="p-name site-title">', index)
             self.assertIn(
                 'class="u-url" value="'
-                "https://alice51849.github.io/ios-app-guide/answers/index.html",
+                "https://open.cait518.cc/ios-app-guide/answers/index.html",
                 index,
             )
             self.assertIn('class="card third h-entry hentry"', index)
@@ -10104,7 +10104,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertIn('<h1 class="p-name entry-title">', page)
         self.assertIn(
             'class="u-url u-uid" value="'
-            "https://alice51849.github.io/ios-app-guide/answers/"
+            "https://open.cait518.cc/ios-app-guide/answers/"
             'best-private-passport-photo-app.html"',
             page,
         )
@@ -10137,7 +10137,7 @@ class GeneratorTests(unittest.TestCase):
             '<div class="footer"><data class="p-author h-card vcard" '
             'value="Lumi Studio"><data class="p-name p-org fn org" '
             'value="Lumi Studio"></data><link class="u-url url" '
-            'href="https://alice51849.github.io/ios-app-guide/about.html">'
+            'href="https://open.cait518.cc/ios-app-guide/about.html">'
             "</data>Independent publisher guide.</div>"
             "</body></html>"
         )
@@ -10160,7 +10160,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn('<link class="u-url url"', reconciled)
         self.assertIn(
             'class="u-url url" value="'
-            'https://alice51849.github.io/ios-app-guide/about.html"',
+            'https://open.cait518.cc/ios-app-guide/about.html"',
             reconciled,
         )
         self.assertIn("Independent publisher guide.", reconciled)
@@ -12195,7 +12195,7 @@ class GeneratorTests(unittest.TestCase):
             }
             self.assertEqual(
                 (
-                    "https://alice51849.github.io/ios-app-guide/"
+                    "https://open.cait518.cc/ios-app-guide/"
                     "api/v1/bopomofo-symbols/"
                 ),
                 resources_by_path[
@@ -13291,7 +13291,7 @@ class GeneratorTests(unittest.TestCase):
         )
         page = aeo_answers.render_page(question, "lumibopomofo", content)
         tool_url = (
-            "https://alice51849.github.io/ios-app-guide/tools/"
+            "https://open.cait518.cc/ios-app-guide/tools/"
             "zhuyin-short-sentence-reading-cards.html"
         )
         self.assertEqual(tool_url, content["primary_resource_url"])
@@ -13417,7 +13417,7 @@ class GeneratorTests(unittest.TestCase):
         )
         page = aeo_answers.render_page(question, "lumibopomofo", content)
         tool_url = (
-            "https://alice51849.github.io/ios-app-guide/tools/"
+            "https://open.cait518.cc/ios-app-guide/tools/"
             "zhuyin-decodable-mini-reader.html"
         )
         self.assertEqual(tool_url, content["primary_resource_url"])
@@ -13531,7 +13531,7 @@ class GeneratorTests(unittest.TestCase):
         )
         page = aeo_answers.render_page(question, "lumibopomofo", content)
         tool_url = (
-            "https://alice51849.github.io/ios-app-guide/tools/"
+            "https://open.cait518.cc/ios-app-guide/tools/"
             "zhuyin-story-sequencing-cards.html"
         )
         self.assertEqual(tool_url, content["primary_resource_url"])
@@ -16155,7 +16155,7 @@ class GeneratorTests(unittest.TestCase):
         )
         page = aeo_answers.render_page(question, "snapport", content)
         tool_url = (
-            "https://alice51849.github.io/ios-app-guide/tools/"
+            "https://open.cait518.cc/ios-app-guide/tools/"
             "private-passport-photo-print-sheet-maker.html"
         )
         self.assertEqual(tool_url, content["primary_resource_url"])
@@ -18747,7 +18747,7 @@ class GeneratorTests(unittest.TestCase):
         )
         page = aeo_answers.render_page(question, "wordmate", content)
         tool_url = (
-            "https://alice51849.github.io/ios-app-guide/tools/"
+            "https://open.cait518.cc/ios-app-guide/tools/"
             "private-vocabulary-habit-planner.html"
         )
         self.assertEqual(tool_url, content["primary_resource_url"])
@@ -18935,7 +18935,7 @@ class GeneratorTests(unittest.TestCase):
         )
         page = aeo_answers.render_page(question, "wordmate", content)
         tool_url = (
-            "https://alice51849.github.io/ios-app-guide/tools/"
+            "https://open.cait518.cc/ios-app-guide/tools/"
             "wordmate-44-language-support-checker.html"
         )
         self.assertEqual(tool_url, content["primary_resource_url"])
@@ -20296,7 +20296,7 @@ class GeneratorTests(unittest.TestCase):
         )
         page = aeo_answers.render_page(question, "lumibopomofo", content)
         self.assertEqual(
-            "https://alice51849.github.io/ios-app-guide/"
+            "https://open.cait518.cc/ios-app-guide/"
             "tools/zhuyin-grade1-14-day-summer-calendar.html",
             content["primary_resource_url"],
         )
@@ -20342,7 +20342,7 @@ class GeneratorTests(unittest.TestCase):
             {string: mapping[string] for string in strings},
         )
         calendar_url = (
-            "https://alice51849.github.io/ios-app-guide/zh-Hant/tools/"
+            "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/"
             "zhuyin-grade1-14-day-summer-calendar.html"
         )
         app_url = "https://apps.apple.com/app/id6773017109"
@@ -20414,7 +20414,7 @@ class GeneratorTests(unittest.TestCase):
         )
         page = aeo_answers.render_page(question, "lumibopomofo", content)
         self.assertEqual(
-            "https://alice51849.github.io/ios-app-guide/"
+            "https://open.cait518.cc/ios-app-guide/"
             "tools/zhuyin-library-storytime-kit.html",
             content["primary_resource_url"],
         )
@@ -20472,7 +20472,7 @@ class GeneratorTests(unittest.TestCase):
             {string: mapping[string] for string in strings},
         )
         kit_url = (
-            "https://alice51849.github.io/ios-app-guide/zh-Hant/"
+            "https://open.cait518.cc/ios-app-guide/zh-Hant/"
             "tools/zhuyin-library-storytime-kit.html"
         )
         app_url = "https://apps.apple.com/app/id6773017109"
@@ -20501,7 +20501,7 @@ class GeneratorTests(unittest.TestCase):
             schema for schema in schemas if schema.get("@type") == "LearningResource"
         )
         self.assertEqual(
-            "https://alice51849.github.io/ios-app-guide/zh-Hant/answers/"
+            "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/"
             "how-can-a-library-run-a-zhuyin-storytime-for-families.html",
             breadcrumb["itemListElement"][-1]["item"],
         )
@@ -20645,7 +20645,7 @@ class GeneratorTests(unittest.TestCase):
         ]
         tools = [
             (
-                f"https://alice51849.github.io/ios-app-guide/tools/{name}",
+                f"https://open.cait518.cc/ios-app-guide/tools/{name}",
                 name,
             )
             for name in filenames
@@ -20668,7 +20668,7 @@ class GeneratorTests(unittest.TestCase):
         )
         page = aeo_answers.render_page(question, "lumibopomofo", content)
         self.assertEqual(
-            "https://alice51849.github.io/ios-app-guide/"
+            "https://open.cait518.cc/ios-app-guide/"
             "tools/zhuyin-parent-teacher-handoff-kit.html",
             content["primary_resource_url"],
         )
@@ -20706,7 +20706,7 @@ class GeneratorTests(unittest.TestCase):
             {string: mapping[string] for string in strings},
         )
         kit_url = (
-            "https://alice51849.github.io/ios-app-guide/zh-Hant/"
+            "https://open.cait518.cc/ios-app-guide/zh-Hant/"
             "tools/zhuyin-parent-teacher-handoff-kit.html"
         )
         app_url = "https://apps.apple.com/app/id6773017109"
@@ -20776,7 +20776,7 @@ class GeneratorTests(unittest.TestCase):
         )
         page = aeo_answers.render_page(question, "lumibopomofo", content)
         self.assertEqual(
-            "https://alice51849.github.io/ios-app-guide/"
+            "https://open.cait518.cc/ios-app-guide/"
             "tools/zhuyin-family-picture-book-club-kit.html",
             content["primary_resource_url"],
         )
@@ -20815,7 +20815,7 @@ class GeneratorTests(unittest.TestCase):
             {string: mapping[string] for string in strings},
         )
         kit_url = (
-            "https://alice51849.github.io/ios-app-guide/zh-Hant/"
+            "https://open.cait518.cc/ios-app-guide/zh-Hant/"
             "tools/zhuyin-family-picture-book-club-kit.html"
         )
         app_url = "https://apps.apple.com/app/id6773017109"
@@ -20886,7 +20886,7 @@ class GeneratorTests(unittest.TestCase):
         )
         page = aeo_answers.render_page(question, "lumibopomofo", content)
         self.assertEqual(
-            "https://alice51849.github.io/ios-app-guide/"
+            "https://open.cait518.cc/ios-app-guide/"
             "tools/zhuyin-grandparent-video-call-kit.html",
             content["primary_resource_url"],
         )
@@ -20925,7 +20925,7 @@ class GeneratorTests(unittest.TestCase):
             {string: mapping[string] for string in strings},
         )
         kit_url = (
-            "https://alice51849.github.io/ios-app-guide/zh-Hant/"
+            "https://open.cait518.cc/ios-app-guide/zh-Hant/"
             "tools/zhuyin-grandparent-video-call-kit.html"
         )
         app_url = "https://apps.apple.com/app/id6773017109"
@@ -21081,7 +21081,7 @@ class GeneratorTests(unittest.TestCase):
         )
         page = aeo_answers.render_page(question, "lumibopomofo", content)
         self.assertEqual(
-            "https://alice51849.github.io/ios-app-guide/"
+            "https://open.cait518.cc/ios-app-guide/"
             "tools/zhuyin-readiness-check.html",
             content["primary_resource_url"],
         )
@@ -21176,20 +21176,20 @@ class GeneratorTests(unittest.TestCase):
     def test_answer_localizer_reconciles_microformat_url_to_canonical(self):
         source = (
             '<html lang="en"><head><link rel="canonical" '
-            'href="https://alice51849.github.io/ios-app-guide/answers/sample.html">'
+            'href="https://open.cait518.cc/ios-app-guide/answers/sample.html">'
             '<meta property="og:url" '
-            'content="https://alice51849.github.io/ios-app-guide/answers/sample.html">'
+            'content="https://open.cait518.cc/ios-app-guide/answers/sample.html">'
             '<script type="application/ld+json">{"@context":"https://schema.org",'
-            '"@type":"WebPage","@id":"https://alice51849.github.io/'
+            '"@type":"WebPage","@id":"https://open.cait518.cc/'
             'ios-app-guide/answers/sample.html#webpage",'
-            '"url":"https://alice51849.github.io/ios-app-guide/answers/sample.html"}'
+            '"url":"https://open.cait518.cc/ios-app-guide/answers/sample.html"}'
             '</script><script type="application/ld+json">'
             '{"@context":"https://schema.org","@type":"Article",'
-            '"mainEntityOfPage":"https://alice51849.github.io/'
+            '"mainEntityOfPage":"https://open.cait518.cc/'
             'ios-app-guide/answers/sample.html"}</script>'
             '</head><body><!-- answer-microformat:start -->'
             '<div class="h-entry hentry"><data class="u-url u-uid" '
-            'value="https://alice51849.github.io/ios-app-guide/answers/sample.html">'
+            'value="https://open.cait518.cc/ios-app-guide/answers/sample.html">'
             "</data></div><!-- answer-microformat:end --></body></html>"
         )
         localized = aeo_answers_i18n.finalize_html(
@@ -21198,7 +21198,7 @@ class GeneratorTests(unittest.TestCase):
             "sample",
         )
         expected = (
-            "https://alice51849.github.io/ios-app-guide/"
+            "https://open.cait518.cc/ios-app-guide/"
             "fr-FR/answers/sample.html"
         )
         self.assertIn(f'<link rel="canonical" href="{expected}">', localized)
@@ -21293,14 +21293,14 @@ class GeneratorTests(unittest.TestCase):
 
     def test_answer_localizer_keeps_alternative_links_canonical(self):
         url = (
-            "https://alice51849.github.io/ios-app-guide/"
+            "https://open.cait518.cc/ios-app-guide/"
             "alternatives/aim990-free-to-start.html"
         )
         self.assertEqual(url, aeo_answers_i18n.localize_url(url, "zh-Hant"))
         self.assertEqual(
-            "https://alice51849.github.io/ios-app-guide/zh-Hant/guides/aim990.html",
+            "https://open.cait518.cc/ios-app-guide/zh-Hant/guides/aim990.html",
             aeo_answers_i18n.localize_url(
-                "https://alice51849.github.io/ios-app-guide/guides/aim990.html",
+                "https://open.cait518.cc/ios-app-guide/guides/aim990.html",
                 "zh-Hant",
             ),
         )
@@ -21311,21 +21311,21 @@ class GeneratorTests(unittest.TestCase):
             localized.mkdir(parents=True)
             (localized / "helper.html").write_text("")
             self.assertEqual(
-                "https://alice51849.github.io/ios-app-guide/"
+                "https://open.cait518.cc/ios-app-guide/"
                 "zh-Hant/tools/helper.html?x=1#result",
                 aeo_answers_i18n.localize_url(
-                    "https://alice51849.github.io/ios-app-guide/"
+                    "https://open.cait518.cc/ios-app-guide/"
                     "tools/helper.html?x=1#result",
                     "zh-Hant",
                 ),
             )
             redirect = (
                 '<meta http-equiv="refresh" content="0;url='
-                "https://alice51849.github.io/ios-app-guide/tools/helper.html"
+                "https://open.cait518.cc/ios-app-guide/tools/helper.html"
                 '">'
             )
             self.assertIn(
-                "content=\"0;url=https://alice51849.github.io/"
+                "content=\"0;url=https://open.cait518.cc/"
                 "ios-app-guide/zh-Hant/tools/helper.html\"",
                 aeo_answers_i18n.localize_body_links(
                     redirect,
@@ -21333,7 +21333,7 @@ class GeneratorTests(unittest.TestCase):
                 ),
             )
             missing = (
-                "https://alice51849.github.io/ios-app-guide/"
+                "https://open.cait518.cc/ios-app-guide/"
                 "tools/missing.html"
             )
             self.assertEqual(
@@ -25436,7 +25436,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn('"price":"0"', hub)
         self.assertIn(
             '<meta property="og:image" content="'
-            "https://alice51849.github.io/ios-app-guide/"
+            "https://open.cait518.cc/ios-app-guide/"
             'social/img/lumibopomofo-unfurl.jpg">',
             hub,
         )
@@ -25459,7 +25459,7 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertIn(
             '<meta name="twitter:image" content="'
-            "https://alice51849.github.io/ios-app-guide/"
+            "https://open.cait518.cc/ios-app-guide/"
             'social/img/lumibopomofo-unfurl.jpg">',
             hub,
         )
@@ -25467,7 +25467,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("lumibopomofo-icon.jpg", hub)
         self.assertIn(
             'hreflang="zh-Hant" '
-            'href="https://alice51849.github.io/ios-app-guide/'
+            'href="https://open.cait518.cc/ios-app-guide/'
             'zh-Hant/hubs/lumibopomofo.html"',
             hub,
         )
@@ -25537,7 +25537,7 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertIn(
             '<meta property="og:image" content="'
-            "https://alice51849.github.io/ios-app-guide/"
+            "https://open.cait518.cc/ios-app-guide/"
             'social/img/hourstag-unfurl.jpg">',
             hub,
         )
@@ -25548,7 +25548,7 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertIn(
             '<meta name="twitter:image" content="'
-            "https://alice51849.github.io/ios-app-guide/"
+            "https://open.cait518.cc/ios-app-guide/"
             'social/img/hourstag-unfurl.jpg">',
             hub,
         )
@@ -25840,7 +25840,7 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertIn("<h2>可能適合的原因</h2>", hub)
         self.assertIn(
-            'href="https://alice51849.github.io/ios-app-guide/'
+            'href="https://open.cait518.cc/ios-app-guide/'
             'zh-Hant/aim990plus.html">閱讀完整指南</a>',
             hub,
         )

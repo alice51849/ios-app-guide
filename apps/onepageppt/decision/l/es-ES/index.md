@@ -1,7 +1,7 @@
 ---
 title: "OnePage PPT: diapositiva IA — Tus notas en una diapo | iOS App"
 lang: "es-ES"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/es-ES/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/es-ES/index.html"
 modified: "2026-09-03"
 app_store_id: "6798814385"
 verified_live: true
@@ -19,6 +19,6 @@ Convierte un muro de texto en UNA diapositiva que sí se lee. OnePage PPT analiz
 
 [Consigue OnePage PPT: diapositiva IA en el App Store](https://apps.apple.com/es/app/id6798814385?pt=118326163&ct=iag_data_es_es&mt=8)
 
-[Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-ES/onepageppt.html)
+[Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-ES/onepageppt.html)
 
 > Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.

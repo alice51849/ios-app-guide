@@ -26,11 +26,12 @@ from family_travel_dataset import (  # noqa: E402
 )
 from gen_data_hub import ZHUYIN, ZHUYIN_IPA  # noqa: E402
 from videogen.registry import APPSTORE, appstore_url  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 
 PAGES = HERE / "pages"
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 SLUG = "zhuyin-bopomofo-vocabulary"
 INITIAL_DATE = "2026-07-11"

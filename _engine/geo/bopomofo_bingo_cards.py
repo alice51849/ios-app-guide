@@ -26,10 +26,11 @@ from bopomofo_matching_pair_cards import (  # noqa: E402
 from gen_calculator import write_tools_sitemap  # noqa: E402
 from gen_feed import feed_discovery_links  # noqa: E402
 from videogen.registry import APPSTORE, appstore_url  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = HERE / "pages"
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 SLUG = "zhuyin-bingo"
 APP_KEY = "lumibopomofo"

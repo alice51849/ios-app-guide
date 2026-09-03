@@ -1,7 +1,7 @@
 ---
 title: "Mask My File: जानकारी हटाएँ — भेजने से पहले विवरण छिपाएँ | iOS App"
 lang: "hi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/hi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/hi/index.html"
 modified: "2026-09-03"
 app_store_id: "6792850916"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [App Store पर Mask My File: जानकारी हटाएँ पाएँ](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_data_hi&mt=8)
 
-[पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/maskmyfile.html)
+[पूरा मार्गदर्शक पढ़ें](https://open.cait518.cc/ios-app-guide/hi/maskmyfile.html)
 
 > यह सामग्री सीधे Lumi Studio ने प्रकाशित की है, जो सूचीबद्ध सभी ऐप का डेवलपर है।

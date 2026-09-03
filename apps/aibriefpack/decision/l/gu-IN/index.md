@@ -1,7 +1,7 @@
 ---
 title: "AI Brief: ફાઇલથી AI પ્રોમ્પ્ટ — ફાઇલથી સ્પષ્ટ સંદર્ભ | iOS App"
 lang: "gu-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/gu-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/gu-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6791658210"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [App Store પરથી AI Brief: ફાઇલથી AI પ્રોમ્પ્ટ મેળવો](https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=iag_data_gu_in&mt=8)
 
-[પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/aibriefpack.html)
+[પૂર્ણ માર્ગદર્શિકા વાંચો](https://open.cait518.cc/ios-app-guide/gu-IN/aibriefpack.html)
 
 > આ સામગ્રી Lumi Studio દ્વારા સીધી પ્રકાશિત કરવામાં આવી છે, જે સૂચિબદ્ધ તમામ એપ્સનો વિકાસકર્તા છે.

@@ -21,11 +21,12 @@ from official_locales import OFFICIAL_LOCALES  # noqa: E402
 import portfolio_app_finder as finder  # noqa: E402
 import publisher_intent_catalog  # noqa: E402
 from videogen.registry import APPSTORE  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 SLUG = "subscription-cost-calculator"
 I18N_PATH = HERE / "portfolio_cost_calculator_i18n.json"

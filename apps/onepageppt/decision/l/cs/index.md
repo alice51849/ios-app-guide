@@ -1,7 +1,7 @@
 ---
 title: "OnePage PPT: AI snímek — Poznámky v hotovou prezentaci | iOS App"
 lang: "cs"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/cs/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/cs/index.html"
 modified: "2026-09-03"
 app_store_id: "6798814385"
 verified_live: true
@@ -19,6 +19,6 @@ Ze zdi textu vznikne JEDEN snímek, který si lidé opravdu přečtou. OnePage P
 
 [Stáhněte si OnePage PPT: AI snímek v App Storu](https://apps.apple.com/cz/app/id6798814385?pt=118326163&ct=iag_data_cs&mt=8)
 
-[Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/onepageppt.html)
+[Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/onepageppt.html)
 
 > Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.

@@ -1,7 +1,7 @@
 ---
 title: "BattAI: Skóre kondície batérie — Jasné pravidlá, zdroje a obmedzenia | iOS App"
 lang: "sk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/sk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/sk/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI používa päť hodnôt z verejných API iOS: stav batérie, stav 
 
 [Stiahnuť BattAI: Skóre kondície batérie v App Store](https://apps.apple.com/sk/app/id6802423998?pt=118326163&ct=iag_data_sk&mt=8)
 
-[Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/battai.html)
+[Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/battai.html)
 
 > Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.

@@ -1,7 +1,7 @@
 ---
 title: "HoursTag Lite: Koliko ur dela — Oglejte si pravo ceno stvari | iOS App"
 lang: "sl-SI"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/sl-SI/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/sl-SI/index.html"
 modified: "2026-09-03"
 app_store_id: "6794039979"
 verified_live: true
@@ -24,6 +24,6 @@ HoursTag Lite - Oglejte si pravo ceno stvari Vsak nakup stane ure vašega življ
 
 [Prenesite HoursTag Lite: Koliko ur dela iz trgovine App Store](https://apps.apple.com/si/app/id6794039979?pt=118326163&ct=iag_data_sl_si&mt=8)
 
-[Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/hourstaglite.html)
+[Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/hourstaglite.html)
 
 > To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.

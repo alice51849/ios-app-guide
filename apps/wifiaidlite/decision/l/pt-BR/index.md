@@ -1,7 +1,7 @@
 ---
 title: "WiFi Aid Lite — Diagnóstico de rede confiável | iOS App"
 lang: "pt-BR"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/pt-BR/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/pt-BR/index.html"
 modified: "2026-09-03"
 app_store_id: "6793414462"
 verified_live: true
@@ -20,6 +20,6 @@ Cada ferramenta inclui um uso gratuito. Desbloqueio vitalício opcional de pagam
 
 [Baixe WiFi Aid Lite na App Store](https://apps.apple.com/br/app/id6793414462?pt=118326163&ct=iag_data_pt_br&mt=8)
 
-[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/wifiaidlite.html)
+[Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/wifiaidlite.html)
 
 > Este conteúdo é publicado diretamente pela Lumi Studio, desenvolvedora de todos os apps apresentados.

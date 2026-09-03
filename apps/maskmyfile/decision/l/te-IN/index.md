@@ -1,7 +1,7 @@
 ---
 title: "Mask My File: వివరాలు తొలగించు — పంచుకునే ముందు వివరాలు దాచండి | iOS App"
 lang: "te-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/te-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/te-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6792850916"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [App Store నుంచి Mask My File: వివరాలు తొలగించు పొందండి](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_data_te_in&mt=8)
 
-[పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/maskmyfile.html)
+[పూర్తి మార్గదర్శకాన్ని చదవండి](https://open.cait518.cc/ios-app-guide/te-IN/maskmyfile.html)
 
 > ఇది Lumi Studio ద్వారా ప్రచురించబడిన స్వంత సంస్థ పదార్థం, ప్రతి జాబితా చేయబడిన యాప్ యొక్క అభివృద్ధికర్త.

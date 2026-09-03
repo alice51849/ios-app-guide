@@ -1,7 +1,7 @@
 ---
 title: "CalDaily: laskin ja teemat — Widget, työkalut ja historia | iOS App"
 lang: "fi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/fi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/fi/index.html"
 modified: "2026-09-03"
 app_store_id: "6794178671"
 verified_live: true
@@ -20,6 +20,6 @@ Laskin, jonka käyttöä todella jatkat, koska se muistaa jokaisen luvun taustan
 
 [Lataa CalDaily: laskin ja teemat App Storesta](https://apps.apple.com/fi/app/id6794178671?pt=118326163&ct=iag_data_fi&mt=8)
 
-[Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/caldaily.html)
+[Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/caldaily.html)
 
 > Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.

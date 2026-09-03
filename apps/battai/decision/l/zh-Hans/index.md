@@ -1,7 +1,7 @@
 ---
 title: "BattAI: 电池健康评分 — 规则、来源和限制都说清楚 | iOS App"
 lang: "zh-Hans"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/zh-Hans/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/zh-Hans/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状
 
 [在 App Store 获取 BattAI: 电池健康评分](https://apps.apple.com/cn/app/id6802423998?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
-[阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/battai.html)
+[阅读完整指南](https://open.cait518.cc/ios-app-guide/zh-Hans/battai.html)
 
 > 这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。

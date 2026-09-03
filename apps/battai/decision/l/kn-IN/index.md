@@ -1,7 +1,7 @@
 ---
 title: "BattAI: ಬ್ಯಾಟರಿ ಆರೋಗ್ಯ ಅಂಕ — ಸ್ಪಷ್ಟ ನಿಯಮಗಳು, ಮೂಲಗಳು ಮತ್ತು ಮಿತಿಗಳು | iOS App"
 lang: "kn-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/kn-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/kn-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI ಸಾರ್ವಜನಿಕ iOS APIಗಳಿಂದ 5 ಮೌಲ್�
 
 [App Store ನಲ್ಲಿ BattAI: ಬ್ಯಾಟರಿ ಆರೋಗ್ಯ ಅಂಕ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_kn_in&mt=8)
 
-[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/battai.html)
+[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://open.cait518.cc/ios-app-guide/kn-IN/battai.html)
 
 > ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.

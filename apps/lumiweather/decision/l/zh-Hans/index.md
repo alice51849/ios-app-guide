@@ -1,7 +1,7 @@
 ---
 title: "帮助家长规划亲子户外时间的最佳天气应用"
 lang: "zh-Hans"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiweather/decision/l/zh-Hans/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/zh-Hans/index.html"
 modified: "2026-09-03"
 app_store_id: "6779552704"
 verified_live: true
@@ -21,6 +21,6 @@ publisher: "Lumi Studio"
 
 [在App Store获取Lumi Weather →](https://apps.apple.com/cn/app/id6779552704?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
-[阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
+[阅读完整指南](https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
 
 > 由 App 开发团队 Lumi Studio 亲自撰写的指南。App 名称为其各自所有权人的商标，仅供识别使用。若涉及文档、健康、学校及生产力相关的决定，请视情况核对相关单位的正式规定。

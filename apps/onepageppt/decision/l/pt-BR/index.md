@@ -1,7 +1,7 @@
 ---
 title: "OnePage PPT: slide com IA — Suas anotações em um slide | iOS App"
 lang: "pt-BR"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/pt-BR/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/pt-BR/index.html"
 modified: "2026-09-03"
 app_store_id: "6798814385"
 verified_live: true
@@ -19,6 +19,6 @@ Transforme aquele paredão de texto em UM slide que as pessoas realmente leem. O
 
 [Baixe OnePage PPT: slide com IA na App Store](https://apps.apple.com/br/app/id6798814385?pt=118326163&ct=iag_data_pt_br&mt=8)
 
-[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/onepageppt.html)
+[Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/onepageppt.html)
 
 > Este conteúdo é publicado diretamente pela Lumi Studio, desenvolvedora de todos os apps apresentados.

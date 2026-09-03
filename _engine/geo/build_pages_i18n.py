@@ -47,11 +47,12 @@ from official_locales import (  # noqa: E402
     OFFICIAL_LOCALES,
     require_official_locale_coverage,
 )
+from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 DATA = os.path.join(ROOT, "data")
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 
 

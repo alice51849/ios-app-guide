@@ -1,7 +1,7 @@
 ---
 title: "WiFi Aid Lite — วินิจฉัยเครือข่ายด้วยหลักฐาน | iOS App"
 lang: "th"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/th/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/th/index.html"
 modified: "2026-09-03"
 app_store_id: "6793414462"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [ดาวน์โหลด WiFi Aid Lite บน App Store](https://apps.apple.com/th/app/id6793414462?pt=118326163&ct=iag_data_th&mt=8)
 
-[อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/wifiaidlite.html)
+[อ่านคู่มือฉบับเต็ม](https://open.cait518.cc/ios-app-guide/th/wifiaidlite.html)
 
 > เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้

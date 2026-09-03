@@ -1,7 +1,7 @@
 ---
 title: "meilleure application de phrases utiles en voyage avec Apple Watch"
 lang: "fr-CA"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/fr-CA/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/fr-CA/index.html"
 modified: "2026-09-03"
 app_store_id: "6790418321"
 verified_live: true
@@ -20,6 +20,6 @@ Avant un voyage, des phrases complètes pour des situations réelles sont plus u
 
 [Obtenez DailyMate sur l’App Store →](https://apps.apple.com/ca/app/id6790418321?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
-[Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
+[Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 
 > Guide rédigé par Lumi Studio, le développeur de l'app. Les noms d'apps sont des marques de commerce de leurs propriétaires et servent uniquement à les identifier. Pour les décisions concernant les documents, la santé, l'école et la productivité, vérifiez les exigences officielles applicables.

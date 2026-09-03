@@ -3,7 +3,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix zhuyin: <https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#> .
+@prefix zhuyin: <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#> .
 
 zhuyin:SchemeShape a sh:NodeShape ;
     sh:targetNode zhuyin:scheme ;

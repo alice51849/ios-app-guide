@@ -1,7 +1,7 @@
 ---
 title: "лучшее приложение для детей для изучения чжуинь (bopomofo) на iPhone"
 lang: "ru"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofo/decision/l/ru/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/ru/index.html"
 modified: "2026-09-03"
 app_store_id: "6773017109"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [Скачайте Lumi Bopomofo в App Store →](https://apps.apple.com/ru/app/id6773017109?pt=118326163&ct=iag_data_ru&mt=8)
 
-[Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
+[Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html)
 
 > Руководство подготовлено издателем Lumi Studio, разработчиком приложения. Названия приложений являются товарными знаками их владельцев и используются только для идентификации. Принимая решения, связанные с документами, здоровьем, учёбой и работой, сверяйтесь с официальными требованиями там, где это важно.

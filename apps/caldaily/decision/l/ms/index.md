@@ -1,7 +1,7 @@
 ---
 title: "CalDaily: kalkulator & tema — Widget, alatan, sejarah kemas | iOS App"
 lang: "ms"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ms/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/ms/index.html"
 modified: "2026-09-03"
 app_store_id: "6794178671"
 verified_live: true
@@ -20,6 +20,6 @@ Kalkulator yang anda akan terus guna, kerana ia mengingati apa yang ada di sebal
 
 [Dapatkan CalDaily: kalkulator & tema di App Store](https://apps.apple.com/my/app/id6794178671?pt=118326163&ct=iag_data_ms&mt=8)
 
-[Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/caldaily.html)
+[Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/caldaily.html)
 
 > Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.

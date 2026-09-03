@@ -1,7 +1,7 @@
 ---
 title: "G+Money Lite: પ્રવાસ ખર્ચ — પ્રવાસ ખર્ચ અને ચલણ | iOS App"
 lang: "gu-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/gu-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/gu-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6793436548"
 verified_live: true
@@ -25,6 +25,6 @@ G+Money Lite — સ્માર્ટ મુસાફરી ચલણ અને
 
 [App Store પરથી G+Money Lite: પ્રવાસ ખર્ચ મેળવો](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=iag_data_gu_in&mt=8)
 
-[પૂર્ણ માર્ગદર્શિકા વાંચો](https://alice51849.github.io/ios-app-guide/gu-IN/gmoneylite.html)
+[પૂર્ણ માર્ગદર્શિકા વાંચો](https://open.cait518.cc/ios-app-guide/gu-IN/gmoneylite.html)
 
 > આ સામગ્રી Lumi Studio દ્વારા સીધી પ્રકાશિત કરવામાં આવી છે, જે સૂચિબદ્ધ તમામ એપ્સનો વિકાસકર્તા છે.

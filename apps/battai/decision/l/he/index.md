@@ -1,7 +1,7 @@
 ---
 title: "BattAI: ציון בריאות הסוללה — כללים, מקורות ומגבלות ברורים | iOS App"
 lang: "he"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/he/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/he/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI ⁦BattAI⁩ משתמש בחמישה ערכים מממשקי ⁦iOS API�
 
 [הורידו את BattAI: ציון בריאות הסוללה מה-App Store](https://apps.apple.com/il/app/id6802423998?pt=118326163&ct=iag_data_he&mt=8)
 
-[קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/battai.html)
+[קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/battai.html)
 
 > זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.

@@ -47,7 +47,7 @@
     "query": "Where can a repository harvest an OAI-ORE Resource Map for Bopomofo data?",
     "page_title": "Harvest an OAI-ORE Resource Map for Bopomofo Data",
     "meta_description": "Download RDF/XML, Turtle and JSON-LD OAI-ORE Resource Maps for sixteen verified resources covering all 37 Bopomofo symbols.",
-    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/",
     "primary_resource_label": "Open the Bopomofo OAI-ORE Resource Map guide",
     "lead": "Use the app-independent OAI-ORE aggregation to expose sixteen Bopomofo data, vocabulary, schema, API and event-stream resources as one finite compound digital object.",
     "detail": "The package publishes three Resource Maps with distinct protocol-based URI-R identifiers: an authoritative RDF/XML map, a Turtle map and a JSON-LD map. Each describes the same URI-A and the same sixteen-member Aggregation Graph. The URI-A appends #aggregation to the RDF/XML URI, following OAI-ORE's no-server hash-URI implementation: a client dereferencing the Aggregation removes the fragment and retrieves its Resource Map without requiring 303 redirects or content negotiation. Every map has exactly one ore:describes statement, identifies the publishing Agent and modification timestamp, exposes all three maps through ore:isDescribedBy, and enumerates the same ore:aggregates boundary. Members cover canonical JSON, CSV, JSON Lines, Croissant, CSVW, SKOS JSON-LD/Turtle/N-Triples, SHACL, Frictionless Data Package and Table Schema files, the static API index and OpenAPI description, plus the LDES JSON-LD entry point and Turtle discovery overview. Each resource records its media type, byte size, inverse ore:isAggregatedBy relation and named SPDX SHA-256 checksum. All serializations are parsed independently as RDF, checked for connectedness and ORE structural constraints, and compared against the exact published source bytes. The six-member deterministic ZIP contains the three maps, bilingual README, CC BY 4.0 notice and checksum list. JSON-LD is provided as an additional RDF serialization; the resource does not claim it was an original 2008 OAI-ORE serialization profile. It also does not claim OAI endorsement, external repository ingest, DOI assignment, third-party certification, content negotiation or Atom conformance.",
@@ -87,7 +87,7 @@
     "sources": [
       {
         "title": "Bopomofo OAI-ORE 1.0 Resource Map",
-        "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/"
+        "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/"
       },
       {
         "title": "OAI-ORE 1.0 Abstract Data Model",
@@ -133,7 +133,7 @@
     "query": "Where can I download a RO-Crate 1.3 research object for all 37 Bopomofo symbols?",
     "page_title": "Download a RO-Crate 1.3 Research Object for All 37 Bopomofo Symbols",
     "meta_description": "Download an attached RO-Crate 1.3 package for all 37 Bopomofo symbols with CSV, JSON Lines, Croissant, CSVW, SKOS and SHA-256.",
-    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
     "primary_resource_label": "Open the Bopomofo RO-Crate 1.3 guide",
     "lead": "Use the attached, app-independent RO-Crate to transfer the complete 37-symbol Bopomofo reference table and its standards metadata as one reproducible research object.",
     "detail": "The deterministic ZIP contains ten members at its crate root: ro-crate-metadata.json, a script-free ro-crate-preview.html, bilingual README and CC BY 4.0 attribution files, five data entities and checksums-sha256.txt. The payload covers the canonical 37-row UTF-8 CSV, equivalent JSON Lines, MLCommons Croissant 1.1 metadata, W3C CSVW metadata and the SKOS JSON-LD vocabulary. The metadata descriptor uses the required ro-crate-metadata.json identifier, points to one absolute root Dataset and declares conformance to RO-Crate 1.3. Every root hasPart File has a relative URI, name, description, media type, exact byte size and SHA-256. Validation uses the official 1.3 context pinned to an immutable public source commit, expands the graph offline and checks every path, byte, digest, checksum and deterministic ZIP property. Available third-party validator profiles currently stop at RO-Crate 1.2, so the resource does not claim third-party 1.3 certification. It also assigns no DOI, registers no repository deposit and makes no claim of external ingest or RO-Crate community endorsement.",
@@ -173,7 +173,7 @@
     "sources": [
       {
         "title": "Bopomofo RO-Crate 1.3 research object",
-        "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/"
+        "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/"
       },
       {
         "title": "RO-Crate Metadata Specification 1.3.0",
@@ -215,7 +215,7 @@
     "query": "Where can a digital repository download a METS 2.0 and PREMIS 3.0 package for Bopomofo data?",
     "page_title": "Download a METS 2.0 and PREMIS 3.0 Package for Bopomofo Data",
     "meta_description": "Download a schema-valid METS 2.0 and PREMIS 3.0 preservation package for all 37 Bopomofo symbols with per-file SHA-256 fixity.",
-    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/",
     "primary_resource_label": "Open the Bopomofo METS and PREMIS package guide",
     "lead": "Use the app-independent transfer package to stage all 37 Bopomofo symbols in a digital repository with a METS 2.0 inventory and structure map plus PREMIS 3.0 preservation metadata.",
     "detail": "The deterministic ZIP contains ten members: mets.xml, premis.xml, a bilingual README, a CC BY 4.0 attribution file, five reusable data files and checksums-sha256.txt. METS fileSec inventories seven preserved files by relative path, IANA media type, byte size and SHA-256, while its logical structMap groups data and documentation and points to every file exactly once. A METS 2.0 mdRef links the complete external PREMIS record without using XLink, which METS 2 removed. PREMIS records seven File Objects with matching original names, formats, sizes and fixity; one successful metadata-creation Event; publisher and generator Agents; and one CC BY 4.0 Rights statement linking every Object. Both XML records validate offline against byte-pinned official XSD snapshots from immutable public source commits. The bundle also checks all paths, digests, 37 CSV rows, 37 JSON Lines records, ZIP order, fixed timestamps and file modes. The ZIP is a deterministic transfer wrapper, not a METS-defined archive format. The package has no DOI and does not claim repository registration, external ingest, third-party certification, institutional endorsement or a digital signature.",
@@ -255,7 +255,7 @@
     "sources": [
       {
         "title": "Bopomofo METS 2.0 and PREMIS 3.0 preservation package",
-        "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/"
+        "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/"
       },
       {
         "title": "Official METS 2.0 schema",
@@ -297,7 +297,7 @@
     "query": "Where can a digital repository download an OCFL 1.1 object for Bopomofo data?",
     "page_title": "Download an OCFL 1.1 Object for Bopomofo Data",
     "meta_description": "Download a validated OCFL 1.1 object for all 37 Bopomofo symbols, with root and version inventories, SHA-512 content addressing and SHA-256 fixity.",
-    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/",
     "primary_resource_label": "Download the Bopomofo OCFL preservation object",
     "lead": "Use the open OCFL 1.1 object for a transparent, version-aware preservation copy of the complete 37-symbol Bopomofo dataset and its standards metadata.",
     "detail": "The deterministic ZIP extracts to one OCFL Object root. Its exact 0=ocfl_object_1.1 Namaste file declares OCFL 1.1, while the object-root inventory.json and inventory.json.sha512 files are byte-identical to those in the head-version directory. The inventory identifies the object with a stable URI, uses SHA-512 for content addressing, maps physical version content paths in its manifest, and maps content digests to ten portable logical paths in the head state. A complete SHA-256 fixity block independently covers every stored content file. The logical state preserves the canonical 37-row UTF-8 CSV, equivalent JSON Lines, W3C CSVW metadata, MLCommons Croissant 1.1 metadata, the SKOS vocabulary in JSON-LD, Turtle and N-Triples, SHACL shapes, a validation guide and the CC BY 4.0 notice. The extracted object validates with ocfl-py 2.1.0. OCFL specifies an object-at-rest filesystem layout, not a ZIP transfer serialization or OCFL-specific media type, so the download uses generic application/zip with a separate outer SHA-256. This is one OCFL Object, not an OCFL Storage Root, repository service, institutional endorsement or proof of ingest.",
@@ -337,7 +337,7 @@
     "sources": [
       {
         "title": "Bopomofo OCFL 1.1 preservation object",
-        "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/"
+        "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/"
       },
       {
         "title": "Oxford Common File Layout Specification 1.1",
@@ -383,7 +383,7 @@
     "query": "Where can a library load a IIIF Presentation 3 manifest for all 37 Bopomofo symbols?",
     "page_title": "Load a IIIF Presentation 3 Manifest for All 37 Bopomofo Symbols",
     "meta_description": "Load a validated IIIF Presentation API 3.0.0 Manifest with 37 ordered Bopomofo canvases, bilingual metadata and safe static SVG images.",
-    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html",
     "primary_resource_label": "Open the Bopomofo IIIF Presentation 3 guide",
     "lead": "Use the open IIIF Presentation API 3.0.0 resource to display every Bopomofo symbol as an ordered, bilingual compound object in compatible library and digital-humanities viewers.",
     "detail": "The static Manifest contains exactly 37 ordered 1200-by-1200 Canvases. Each Canvas has one AnnotationPage and one painting Annotation whose target is that Canvas and whose body is a stable image/svg+xml resource. The SVG cards contain deterministic embedded glyph outlines derived from a hash-pinned Noto Sans TC source under the SIL Open Font License; they contain no script, foreignObject, event handlers, external font or app promotion. Bilingual language maps expose the symbol, Unicode notation, Hanyu Pinyin, broad IPA, category and example metadata. A separate IIIF Collection references the Manifest, while seeAlso links expose the canonical CSV, Croissant and SKOS machine data and rendering points to a deterministic ZIP. The resource publishes CC BY 4.0 rights, required attribution, exact SHA-256 checksums and app-independent package metadata. It validates with the IIIF Presentation Validator pinned to a public source commit. No service block is present: this static resource does not claim a IIIF Image API, deep zoom, Content Search API, external collection membership, IIIF certification or institutional ingest.",
@@ -423,7 +423,7 @@
     "sources": [
       {
         "title": "Bopomofo IIIF Presentation 3 resource",
-        "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html"
+        "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html"
       },
       {
         "title": "IIIF Presentation API 3.0.0",
@@ -469,7 +469,7 @@
     "query": "Where can a digital repository download an RFC 8493 BagIt package for Bopomofo data?",
     "page_title": "Download an RFC 8493 BagIt Package for Bopomofo Data",
     "meta_description": "Download a validated BagIt 1.0 preservation ZIP for all 37 Bopomofo symbols, with exact Payload-Oxum and SHA-256 and SHA-512 manifests.",
-    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/",
     "primary_resource_label": "Download the Bopomofo BagIt preservation package",
     "lead": "Use the open RFC 8493 BagIt package for a self-checking preservation copy of the complete 37-symbol Bopomofo dataset and its standards metadata.",
     "detail": "The deterministic ZIP extracts to one BagIt 1.0 base directory. Its ten payload files preserve the canonical 37-row UTF-8 CSV, equivalent JSON Lines, W3C CSVW metadata, MLCommons Croissant 1.1 metadata, the SKOS vocabulary in JSON-LD, Turtle and N-Triples, SHACL shapes, a reuse guide and the CC BY 4.0 notice. bagit.txt declares version 1.0 and UTF-8 without a BOM. bag-info.txt records the exact Payload-Oxum. Every payload appears exactly once in both SHA-256 and SHA-512 manifests, and matching tag manifests cover the declaration, bag metadata and both payload manifests without listing themselves. ZIP members use stable ordering, fixed timestamps and stored bytes, while a separate SHA-256 file protects the serialized download. The extracted package validates with LibraryOfCongress bagit-python 1.9.0. RFC 8493 is an Informational filesystem-layout specification and does not define a ZIP serialization or imply institutional endorsement, repository ingest or protection against active attacks.",
@@ -509,7 +509,7 @@
     "sources": [
       {
         "title": "Bopomofo RFC 8493 BagIt preservation package",
-        "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/"
+        "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/"
       },
       {
         "title": "RFC 8493 - The BagIt File Packaging Format (V1.0)",
@@ -551,7 +551,7 @@
     "query": "Where can data tools download CSVW metadata for all 37 Bopomofo symbols?",
     "page_title": "Download CSVW Metadata for All 37 Bopomofo Symbols",
     "meta_description": "Download a validated 37-row Bopomofo CSV with W3C CSVW metadata, 12 typed required columns, a unique primary key, URI templates and SHA-256.",
-    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/",
     "primary_resource_label": "Download the Bopomofo CSVW package",
     "lead": "Use the open Bopomofo CSVW package. It pairs one canonical UTF-8 CSV containing all 37 standard symbols with metadata that follows W3C's tabular-data Recommendations and the default CSVW discovery filename.",
     "detail": "The CSV contains 37 data rows and 12 columns for order, stable symbol ID, concept IRI, symbol, Unicode notation, Hanyu Pinyin, broad IPA, category, category IRI and example fields. Its adjacent zhuyin-bopomofo-ml-dataset.csv-metadata.json document uses the official CSVW context first, declares a UTF-8 comma dialect with one header row, marks every column required, assigns symbol_id as the unique primary key, and provides datatypes, facets, BCP 47 language tags, a row-subject URI template and RDF property or value mappings. A deterministic ZIP includes the CSV, metadata, README, CC BY 4.0 notice and SHA-256 list. Pinned unmodified official JSON-LD context and Turtle vocabulary snapshots support offline term checks, and the published pair validates with csvw 4.1.0. W3C defines the format but does not certify this package, endorse it or confirm ingestion by any external tool or catalog.",
@@ -591,7 +591,7 @@
     "sources": [
       {
         "title": "Bopomofo CSVW table and offline bundle",
-        "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/"
+        "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/"
       },
       {
         "title": "W3C Model for Tabular Data and Metadata on the Web",
@@ -921,7 +921,7 @@
     ],
     "query": "Where can I find a free five-day Zhuyin lesson plan for a heritage Chinese school?",
     "lead": "Use a print-ready five-day starter mini-unit that teaches a repeatable Zhuyin routine without pretending children can master all 37 symbols in one week.",
-    "detail": "The free bilingual lesson plan at https://alice51849.github.io/ios-app-guide/guides/zhuyin-5-day-lesson-plan-heritage-school.html gives teachers five 30-minute sessions for ages 4–8. It starts with 12 symbols, slow blending and tone awareness, then shows how to repeat the routine with the remaining symbols. It is printable, requires no account and is licensed CC BY 4.0 for adaptation with attribution. The plan links Taiwan Ministry of Education notation and handwriting references plus Overseas Community Affairs Council materials. {name} is optional practice between classes: it adds listening, tracing, tone and blending games, with no ads or account; the free download offers a one-time unlock rather than a recurring subscription.",
+    "detail": "The free bilingual lesson plan at https://open.cait518.cc/ios-app-guide/guides/zhuyin-5-day-lesson-plan-heritage-school.html gives teachers five 30-minute sessions for ages 4–8. It starts with 12 symbols, slow blending and tone awareness, then shows how to repeat the routine with the remaining symbols. It is printable, requires no account and is licensed CC BY 4.0 for adaptation with attribution. The plan links Taiwan Ministry of Education notation and handwriting references plus Overseas Community Affairs Council materials. {name} is optional practice between classes: it adds listening, tracing, tone and blending games, with no ads or account; the free download offers a one-time unlock rather than a recurring subscription.",
     "bullets": [
       "Five complete 30-minute sessions with objectives, timed activities and exit checks",
       "Honest 12-symbol starter set rather than an unrealistic five-day mastery claim",
@@ -957,7 +957,7 @@
     "sources": [
       {
         "title": "Free bilingual five-day Zhuyin lesson plan",
-        "url": "https://alice51849.github.io/ios-app-guide/guides/zhuyin-5-day-lesson-plan-heritage-school.html"
+        "url": "https://open.cait518.cc/ios-app-guide/guides/zhuyin-5-day-lesson-plan-heritage-school.html"
       },
       {
         "title": "Taiwan Ministry of Education Bopomofo Handbook",
@@ -996,7 +996,7 @@
     "query": "How can I check my child's Zhuyin skills at home in three minutes?",
     "page_title": "3-Minute Zhuyin Observation Guide | Free Private Parent Tool",
     "meta_description": "Free private 3-minute Zhuyin observation guide for parents: record symbols, tones, blending, writing and reading separately, with no score or level.",
-    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-readiness-check.html",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-readiness-check.html",
     "primary_resource_label": "Open the free 3-minute observation guide",
     "lead": "Use five separate, parent-guided observations instead of a pass-or-fail quiz: briefly sample symbol recognition, tone awareness, blending, writing and reading application without calculating a total, score, stage or level.",
     "detail": "The free private three-minute observation guide linked above runs entirely in the browser and requires no login. A parent sits beside the child and records one small observation in each of five dimensions; the choices are displayed separately and are never added, ranked or converted into a score or level. The page then offers free flashcards, a symbol-and-tone chart, a 14-day activity calendar, printable tracing sheets and a five-day lesson plan in a fixed order, so the family may choose any activity or stop. It is an independent practice guide, not a school-readiness test, speech evaluation, developmental screening or professional diagnosis. {name} appears only after the free resources as an optional guided activity for listening, tracing, tones or blending.",
@@ -1036,11 +1036,11 @@
     "sources": [
       {
         "title": "Free private three-minute Zhuyin observation guide",
-        "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-readiness-check.html"
+        "url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-readiness-check.html"
       },
       {
         "title": "Traditional Chinese version of the observation guide",
-        "url": "https://alice51849.github.io/ios-app-guide/zh-Hant/tools/zhuyin-readiness-check.html"
+        "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/zhuyin-readiness-check.html"
       },
       {
         "title": "Taiwan Ministry of Education Bopomofo Handbook",
@@ -1079,7 +1079,7 @@
     "query": "Where can I download a free Bopomofo QTI question bank for Canvas or Moodle?",
     "page_title": "Free Bopomofo QTI 2.1 and Moodle XML Question Bank",
     "meta_description": "Download 37 editable Bopomofo questions as English or Traditional Chinese QTI 2.1 and Moodle XML, with a CSV answer key and SHA-256 metadata.",
-    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html",
     "primary_resource_label": "Download the free Bopomofo LMS question bank",
     "lead": "Use the free bilingual LMS question bank linked above: it contains one editable symbol-to-Pinyin item for each of the 37 Bopomofo symbols, with separate QTI 2.1 and Moodle XML downloads.",
     "detail": "The open CC BY 4.0 bank provides English and Traditional Chinese QTI 2.1 ZIP packages, English and Traditional Chinese Moodle XML files, a CSV answer key and JSON-LD metadata with byte lengths and SHA-256 hashes. Each QTI archive contains imsmanifest.xml plus 37 self-contained single-response assessmentItem files. It uses no images, external media, account, tracking or child data. Import behavior varies by LMS version, so the resource explicitly recommends a staging course rather than claiming guaranteed compatibility.",
@@ -1119,7 +1119,7 @@
     "sources": [
       {
         "title": "Free Bopomofo QTI 2.1 and Moodle XML question bank",
-        "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html"
+        "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html"
       },
       {
         "title": "1EdTech QTI 2.1 implementation guide",
@@ -1162,7 +1162,7 @@
     "query": "Where can I download a free Bopomofo EPUB for e-readers?",
     "page_title": "Free Accessible Bopomofo EPUB 3.3 and OPDS Catalog",
     "meta_description": "Download a free English or Traditional Chinese EPUB 3.3 reference for all 37 Bopomofo symbols, plus open OPDS catalog files for compatible tools.",
-    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html",
     "primary_resource_label": "Download the free Bopomofo EPUB",
     "lead": "Use the free bilingual EPUB resource on this page: it provides separate English and Traditional Chinese editions covering all 37 Bopomofo symbols, plus web-reading and OPDS catalog options.",
     "detail": "Each CC BY 4.0 EPUB 3.3 edition contains a table of contents, text-first chapters for 21 initials, 3 medials and 13 finals, Hanyu Pinyin and broad IPA correspondences, example characters and a short non-diagnostic practice guide. The package has no scripts, images, tracking, account, learner profile or child-data collection. Downloadable Readium manifest JSON and OPDS 2.0/1.2 catalog files describe the same English and Traditional Chinese acquisitions. Because static hosting may return generic JSON or XML HTTP Content-Types, URL-based ingestion by strict catalog clients is not claimed. EPUB support also varies by reading system, so the page provides SHA-256 metadata and recommends checking the target reader rather than promising universal rendering.",
@@ -1202,7 +1202,7 @@
     "sources": [
       {
         "title": "Free Bopomofo EPUB 3.3 reference and OPDS catalog",
-        "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html"
+        "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html"
       },
       {
         "title": "W3C EPUB 3.3 specification",
@@ -1247,10 +1247,10 @@
     "query": "Where can a school library download catalog records for a Bopomofo EPUB?",
     "page_title": "Download MARCXML, MODS and BIBFRAME Records for a Bopomofo EPUB",
     "meta_description": "Download two review-ready Bopomofo EPUB catalog records as MARCXML, MODS 3.8, BIBFRAME 2.0 JSON-LD and Turtle, with SHA-256.",
-    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html",
     "primary_resource_label": "Download the Bopomofo library catalog package",
     "lead": "Use the open Bopomofo library catalog package. It provides two review-ready edition records—English and Traditional Chinese—as MARCXML, MODS 3.8, BIBFRAME 2.0 JSON-LD and Turtle, plus one ZIP bundle.",
-    "detail": "The records describe the exact open EPUB files rather than an app. Each edition includes a stable local identifier, language, title, corporate creator, publication data, format, rights, subjects, direct download URL, byte size and SHA-256. MARCXML and MODS are validated against pinned official schemas; the two BIBFRAME serializations must parse to the same RDF graph and use terms declared by the official vocabulary. Download from the bilingual guide at https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html. These are candidate records, so a cataloger should still review local 040, subject, classification, access and holdings policy before import; they do not assign an ISBN, LCCN or OCLC number.",
+    "detail": "The records describe the exact open EPUB files rather than an app. Each edition includes a stable local identifier, language, title, corporate creator, publication data, format, rights, subjects, direct download URL, byte size and SHA-256. MARCXML and MODS are validated against pinned official schemas; the two BIBFRAME serializations must parse to the same RDF graph and use terms declared by the official vocabulary. Download from the bilingual guide at https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html. These are candidate records, so a cataloger should still review local 040, subject, classification, access and holdings policy before import; they do not assign an ISBN, LCCN or OCLC number.",
     "follow_up": "Import into a test collection first. Confirm title display, script handling, subjects, links and local control fields before exposing the record in a public catalog. A static host may return generic XML or JSON Content-Types, so download-first import is the documented fallback for strict systems.",
     "bullets": [
       "One deterministic ZIP contains the MARCXML, MODS 3.8, BIBFRAME JSON-LD, BIBFRAME Turtle, README and SHA-256 checksum list.",
@@ -1285,7 +1285,7 @@
     "sources": [
       {
         "title": "Bopomofo EPUB library catalog records",
-        "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html"
+        "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html"
       },
       {
         "title": "Library of Congress MARCXML schema",
@@ -1326,10 +1326,10 @@
     "query": "Where can an OER repository download metadata for a Bopomofo learning resource?",
     "page_title": "Download DCMI and LRMI Metadata for an Open Bopomofo Learning Resource",
     "meta_description": "Download schema-valid OAI-DC plus offline-parsable DCMI Terms and LRMI JSON-LD for two open Bopomofo EPUB editions.",
-    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html",
     "primary_resource_label": "Download the Bopomofo OER metadata package",
     "lead": "Use the open Bopomofo OER metadata package. It describes the exact English and Traditional Chinese editions of a 37-symbol EPUB as standalone OAI-DC XML, DCMI Terms JSON-LD and LRMI JSON-LD, with one deterministic ZIP.",
-    "detail": "Each record describes a learning resource rather than an app. Source URLs, languages, byte lengths, modification timestamps and SHA-256 values come from the published EPUB manifest. The OAI-DC files validate against pinned official OAI and DCMI schemas. Both JSON-LD graphs use inline contexts and parse without network access; their DCMI and LRMI terms are checked against pinned official RDF vocabularies, including the LRMI supportingDocument resource type and instruction educational use. Download from https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html. These are metadata candidates, not an OAI-PMH service, DOI assignment, institution-approved record or universal-ingest guarantee.",
+    "detail": "Each record describes a learning resource rather than an app. Source URLs, languages, byte lengths, modification timestamps and SHA-256 values come from the published EPUB manifest. The OAI-DC files validate against pinned official OAI and DCMI schemas. Both JSON-LD graphs use inline contexts and parse without network access; their DCMI and LRMI terms are checked against pinned official RDF vocabularies, including the LRMI supportingDocument resource type and instruction educational use. Download from https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html. These are metadata candidates, not an OAI-PMH service, DOI assignment, institution-approved record or universal-ingest guarantee.",
     "follow_up": "Ingest into a staging collection first. Map local subjects, audience fields and identifiers, verify links and hashes, and inspect English, Traditional Chinese and Bopomofo display before publishing. Strict URL importers may need local file upload because static hosting can return generic XML or JSON Content-Types.",
     "bullets": [
       "Two standalone OAI-DC records, one for each exact EPUB language edition",
@@ -1366,7 +1366,7 @@
     "sources": [
       {
         "title": "Bopomofo OER repository metadata package",
-        "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html"
+        "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html"
       },
       {
         "title": "Open Archives Initiative OAI-DC XML schema",
@@ -1411,10 +1411,10 @@
     "query": "Where can an open-data catalog harvest a Bopomofo dataset in DCAT 3?",
     "page_title": "Harvest Sixteen Open Bopomofo Datasets from a Static DCAT 3 Catalog",
     "meta_description": "Download a W3C DCAT 3 JSON-LD or Turtle catalog for sixteen Bopomofo datasets and 80 exact distributions with SPDX SHA-256.",
-    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
     "primary_resource_label": "Download the Bopomofo DCAT 3 catalog",
     "lead": "Use the static Bopomofo DCAT 3 open-data catalog. It lists sixteen related datasets and 80 exact distributions in equivalent JSON-LD and Turtle graphs, with one deterministic ZIP bundle.",
-    "detail": "The catalog covers the 37-symbol reference data, static JSON API, SKOS and SHACL vocabulary, Croissant, CSVW and Data Package tables, RFC 8493 BagIt, OCFL 1.1, RO-Crate 1.3, METS 2.0 with PREMIS 3.0, OAI-ORE 1.0 and the LDES 1.0 with TREE event stream across preservation, research-object, compound-object and synchronization packages, IIIF Presentation 3 visual resources, Anki imports, LMS packages, EPUB and OPDS publication files, library records, and OER repository metadata. Every direct distribution records an IANA media-type IRI, byte size, CC BY 4.0 license, language IRIs and an SPDX SHA-256 checksum calculated from the published bytes. Each dcat:CatalogRecord has exactly one foaf:primaryTopic, and the static API is represented separately as a dcat:DataService. Download from https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html. This is a static DCAT description, not portal registration, W3C certification, institutional endorsement or proof that an external catalog has harvested it.",
+    "detail": "The catalog covers the 37-symbol reference data, static JSON API, SKOS and SHACL vocabulary, Croissant, CSVW and Data Package tables, RFC 8493 BagIt, OCFL 1.1, RO-Crate 1.3, METS 2.0 with PREMIS 3.0, OAI-ORE 1.0 and the LDES 1.0 with TREE event stream across preservation, research-object, compound-object and synchronization packages, IIIF Presentation 3 visual resources, Anki imports, LMS packages, EPUB and OPDS publication files, library records, and OER repository metadata. Every direct distribution records an IANA media-type IRI, byte size, CC BY 4.0 license, language IRIs and an SPDX SHA-256 checksum calculated from the published bytes. Each dcat:CatalogRecord has exactly one foaf:primaryTopic, and the static API is represented separately as a dcat:DataService. Download from https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html. This is a static DCAT description, not portal registration, W3C certification, institutional endorsement or proof that an external catalog has harvested it.",
     "follow_up": "Parse the JSON-LD or Turtle in a staging catalog, read dcat:dataset and dcat:record, verify distribution hashes and byte sizes, and map themes, language policies and local identifiers before publication. Use dcat:downloadURL for files and dcat:endpointURL for the read-only API.",
     "bullets": [
       "Sixteen catalogued Bopomofo datasets with bilingual titles and descriptions",
@@ -1451,7 +1451,7 @@
     "sources": [
       {
         "title": "Bopomofo DCAT 3 open-data catalog",
-        "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html"
+        "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html"
       },
       {
         "title": "W3C Data Catalog Vocabulary (DCAT) Version 3",
@@ -1493,7 +1493,7 @@
     "query": "Where can a Linked Data client replicate Bopomofo as an LDES 1.0 and TREE event stream?",
     "page_title": "Replicate All 37 Bopomofo Symbols through a Static LDES 1.0 and TREE Event Stream",
     "meta_description": "Consume 37 immutable Bopomofo version members from three bounded JSON-LD TREE nodes with a stable LDES 1.0 entry point and SHACL shape.",
-    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/",
     "primary_resource_label": "Open the Bopomofo LDES and TREE event-stream guide",
     "lead": "Start from the stable app-independent JSON-LD EventStream IRI, then traverse three immutable TREE nodes to replicate one first-version event for every canonical Bopomofo symbol.",
     "detail": "The package follows the official LDES 1.0 consumer specification, vocabulary and server primer together with the TREE hypermedia specification. The canonical JSON-LD entry point is both an ldes:EventStream and the mutable root tree:Node; it has exactly one tree:view pointing to itself. It publishes ldes:timestampPath as dcterms:created, ldes:versionOfPath as dcterms:isVersionOf, a version-create class, an inline SHACL member shape, and a retention policy whose ldes:startingFrom equals the first retained event. Six typed TREE relations form paired inclusive-lower and exclusive-upper dcterms:created bounds for three JSON-LD nodes. Each node states ldes:immutable true and embeds its own tree:member descriptions. The 37 unique member IRIs contain timezone-qualified timestamps, link stable SKOS concept IRIs, and reproduce the canonical CSV fields for U+3105 through U+3129. The Turtle file is a discovery overview linking to the canonical JSON-LD root rather than a claim of server-side content negotiation. A deterministic nine-member ZIP, SHA-256 list, bilingual reuse guide and CC BY 4.0 notice support offline validation. Every JSON-LD document uses an inline context, and all RDF graphs, relation bounds, source concepts, checksums and ZIP properties are tested. This publisher-authored static snapshot does not claim a live write API, custom Cache-Control headers, registry listing, external replication, certification or LDES/TREE community endorsement.",
@@ -1533,7 +1533,7 @@
     "sources": [
       {
         "title": "Bopomofo LDES 1.0 and TREE event stream",
-        "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/"
+        "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/"
       },
       {
         "title": "Linked Data Event Streams 1.0 specification",
@@ -1577,7 +1577,7 @@
     "query": "How can I help a child who can blend Zhuyin syllables but cannot read a whole sentence?",
     "page_title": "Free Zhuyin Short Sentence Reading Practice | Printable Cards",
     "meta_description": "Free Zhuyin sentence cards bridge blending to short reading: show annotations, hide them, then reread. No login, score, upload or saved profile.",
-    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-short-sentence-reading-cards.html",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-short-sentence-reading-cards.html",
     "primary_resource_label": "Open the free Zhuyin sentence reading cards",
     "lead": "Move from syllable blending to sentence reading with one small change at a time: read a short fully annotated line, hide its Zhuyin, then reread exactly the same words without a timer or score.",
     "detail": "The free bilingual tool linked above provides 24 original Traditional Chinese sentences in three steps: three-character lines, six- or seven-character everyday sentences, and two-clause sentences. Every character has a checked standard Zhuyin reading; phrase gaps and punctuation create natural pause points. A learner first decodes with the annotations visible, then taps once to hide them and rereads the same sentence. Nothing is typed, uploaded, scored or saved, and the set can be printed. Taiwan's official first-stage Mandarin outcomes include using Zhuyin material to learn reading (3-I-4) and reading text accurately at an appropriate rate (5-I-1). Those outcomes support the scope, but the Ministry of Education did not design, test or endorse this independent activity.",
@@ -1617,7 +1617,7 @@
     "sources": [
       {
         "title": "Free Zhuyin short sentence reading cards",
-        "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-short-sentence-reading-cards.html"
+        "url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-short-sentence-reading-cards.html"
       },
       {
         "title": "CIRN Mandarin learning outcomes for the first learning stage",
@@ -1657,7 +1657,7 @@
     "query": "How can I help a child move from Zhuyin sentences to a short story?",
     "page_title": "Free Printable Zhuyin Mini-Readers | 3 Original Stories",
     "meta_description": "Read or print three original six-page Zhuyin mini-readers. Show all annotations, hide alternate pages, then reread without Zhuyin. No login or score.",
-    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-decodable-mini-reader.html",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-decodable-mini-reader.html",
     "primary_resource_label": "Open the free Zhuyin mini-reader generator",
     "lead": "Move from isolated sentences to connected text with one small six-page story at a time: read with full Zhuyin, hide the annotations on alternate pages, then reread the same story without visible Zhuyin.",
     "detail": "The free bilingual tool linked above contains three original six-page mini-readers and 18 checked Traditional Chinese sentences. Each page keeps one short line on screen, every character has a standard Zhuyin annotation, and the same story supports three passes: all annotations visible, annotations hidden on pages 2, 4 and 6, then all annotations hidden. Nothing is typed, uploaded, timed, scored or saved, and the selected reader can be printed. Taiwan's official first-stage Mandarin outcomes include using Zhuyin material to learn reading (3-I-4) and reading text accurately at an appropriate rate (5-I-1). Those outcomes support the scope, but the Ministry of Education did not write, test or endorse these independent stories.",
@@ -1697,7 +1697,7 @@
     "sources": [
       {
         "title": "Free Zhuyin mini-reader generator",
-        "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-decodable-mini-reader.html"
+        "url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-decodable-mini-reader.html"
       },
       {
         "title": "CIRN Mandarin learning outcomes for the first learning stage",
@@ -1737,7 +1737,7 @@
     "query": "How can I help a child understand and retell a Zhuyin story?",
     "page_title": "Free Zhuyin Story Sequencing Cards | Read, Order and Retell",
     "meta_description": "Free Zhuyin story cards: reorder six events, reveal the sequence, discuss two prompts and print privately. No login, score or child data.",
-    "primary_resource_url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-story-sequencing-cards.html",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-story-sequencing-cards.html",
     "primary_resource_label": "Open the free Zhuyin story sequencing cards",
     "date_modified": "2026-07-14",
     "lead": "Keep the words familiar and change the task: after reading one original six-page story, mix its six annotated event cards, rebuild what happened first, next and last, then retell the story together.",
@@ -1778,7 +1778,7 @@
     "sources": [
       {
         "title": "Free Zhuyin story sequencing cards",
-        "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-story-sequencing-cards.html"
+        "url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-story-sequencing-cards.html"
       },
       {
         "title": "CIRN Mandarin learning outcomes for the first learning stage",
@@ -1786,7 +1786,7 @@
       },
       {
         "title": "Free original Zhuyin mini-reader generator",
-        "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-decodable-mini-reader.html"
+        "url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-decodable-mini-reader.html"
       }
     ],
     "faq": [

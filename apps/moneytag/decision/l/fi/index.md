@@ -1,7 +1,7 @@
 ---
 title: "MoneyTag: Tulot ja menot — Projektit · Tunnisteet | iOS App"
 lang: "fi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/fi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/fi/index.html"
 modified: "2026-09-03"
 app_store_id: "6801956402"
 verified_live: true
@@ -26,6 +26,6 @@ Tulot ja menot Jokainen projekti pitää omaa kirjanpitoaan: tulot miinus menot 
 
 [Lataa MoneyTag: Tulot ja menot App Storesta](https://apps.apple.com/fi/app/id6801956402?pt=118326163&ct=iag_data_fi&mt=8)
 
-[Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/moneytag.html)
+[Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/moneytag.html)
 
 > Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.

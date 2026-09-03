@@ -1,7 +1,7 @@
 ---
 title: "HoursTag Lite: Cena v hodinách — Uvidíte skutečnou cenu věcí | iOS App"
 lang: "cs"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/cs/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/cs/index.html"
 modified: "2026-09-03"
 app_store_id: "6794039979"
 verified_live: true
@@ -24,6 +24,6 @@ HoursTag Lite - Uvidíte skutečnou cenu věcí Každý nákup stojí hodiny va�
 
 [Stáhněte si HoursTag Lite: Cena v hodinách v App Storu](https://apps.apple.com/cz/app/id6794039979?pt=118326163&ct=iag_data_cs&mt=8)
 
-[Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/hourstaglite.html)
+[Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/hourstaglite.html)
 
 > Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.

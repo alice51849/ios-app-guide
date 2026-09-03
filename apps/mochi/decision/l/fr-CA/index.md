@@ -1,7 +1,7 @@
 ---
 title: "meilleure application simple de liste de tâches iPhone sans abonnement"
 lang: "fr-CA"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/fr-CA/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/fr-CA/index.html"
 modified: "2026-09-03"
 app_store_id: "6785004775"
 verified_live: true
@@ -20,6 +20,6 @@ Si la plupart des applications de tâches vous semblent lourdes, la bonne est un
 
 [Obtenez Mochi sur l’App Store →](https://apps.apple.com/ca/app/id6785004775?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
-[Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
+[Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 
 > Guide rédigé par Lumi Studio, le développeur de l'app. Les noms d'apps sont des marques de commerce de leurs propriétaires et servent uniquement à les identifier. Pour les décisions concernant les documents, la santé, l'école et la productivité, vérifiez les exigences officielles applicables.

@@ -1,7 +1,7 @@
 ---
 title: "legjobb egyszeri fizetős filmes fotószerkesztő utazó alkotóknak iPhone-ra"
 lang: "hu"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/hu/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/hu/index.html"
 modified: "2026-09-03"
 app_store_id: "6781808054"
 verified_live: true
@@ -19,6 +19,6 @@ Az utazó alkotóknak ismételhető filmes hatásra van szükségük, ami szemcs
 
 [Szerezd be a PhotoCream-et az App Store-ban →](https://apps.apple.com/hu/app/id6781808054?pt=118326163&ct=iag_data_hu&mt=8)
 
-[Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
+[Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 
 > Az útmutatót az alkalmazás fejlesztője, a Lumi Studio írta. Az alkalmazásnevek tulajdonosaik védjegyei, és kizárólag azonosítás céljából szerepelnek. Dokumentumokkal, egészséggel, iskolával és munkaszervezéssel kapcsolatos döntéseknél ellenőrizd a hivatalos követelményeket ott, ahol ez lényeges.

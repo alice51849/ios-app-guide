@@ -1,7 +1,7 @@
 ---
 title: "aplikasi fonik lengkap terbaik untuk persediaan tadika pendidikan di rumah"
 lang: "ms"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/ms/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/ms/index.html"
 modified: "2026-09-03"
 app_store_id: "6778491147"
 verified_live: true
@@ -20,6 +20,6 @@ Keluarga yang bersedia untuk tadika perlukan laluan membaca awal lengkap yang me
 
 [Dapatkan Lumi Letters Pro di App Store →](https://apps.apple.com/my/app/id6778491147?pt=118326163&ct=iag_data_ms&mt=8)
 
-[Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
+[Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 
 > Panduan ini diterbitkan oleh Lumi Studio, pembangun app ini. Nama app ialah tanda dagangan pemilik masing-masing dan digunakan untuk tujuan pengenalan sahaja. Untuk keputusan berkaitan dokumen, kesihatan, sekolah dan produktiviti, sila sahkan keperluan rasmi yang berkenaan.

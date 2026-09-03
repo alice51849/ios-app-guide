@@ -1,7 +1,7 @@
 ---
 title: "HoursTag: Години до покупки — Бюджет, витрати й економія | iOS App"
 lang: "uk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/uk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/uk/index.html"
 modified: "2026-09-03"
 app_store_id: "6754218117"
 verified_live: true
@@ -21,6 +21,6 @@ publisher: "Lumi Studio"
 
 [Завантажте HoursTag: Години до покупки з App Store](https://apps.apple.com/ua/app/id6754218117?pt=118326163&ct=iag_data_uk&mt=8)
 
-[Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/hourstag.html)
+[Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/hourstag.html)
 
 > Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.

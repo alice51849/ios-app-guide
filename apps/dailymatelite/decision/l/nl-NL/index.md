@@ -1,7 +1,7 @@
 ---
 title: "DailyMate Lite: Spreek nu — 50 talen, echte gesprekken | iOS App"
 lang: "nl-NL"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/nl-NL/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/nl-NL/index.html"
 modified: "2026-09-03"
 app_store_id: "6794725568"
 verified_live: true
@@ -19,6 +19,6 @@ Spreek met meer vertrouwen wanneer het ertoe doet. DailyMate Lite zet situaties 
 
 [Download DailyMate Lite: Spreek nu in de App Store](https://apps.apple.com/nl/app/id6794725568?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
-[Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/dailymatelite.html)
+[Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/dailymatelite.html)
 
 > Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.

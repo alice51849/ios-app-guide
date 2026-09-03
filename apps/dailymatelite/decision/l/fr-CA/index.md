@@ -1,7 +1,7 @@
 ---
 title: "DailyMate Lite — 50 langues, échanges naturels | iOS App"
 lang: "fr-CA"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/fr-CA/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/fr-CA/index.html"
 modified: "2026-09-03"
 app_store_id: "6794725568"
 verified_live: true
@@ -19,6 +19,6 @@ Parlez avec assurance quand ça compte. DailyMate Lite transforme des situations
 
 [Obtenir DailyMate Lite sur l'App Store](https://apps.apple.com/ca/app/id6794725568?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
-[Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/dailymatelite.html)
+[Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/dailymatelite.html)
 
 > Ce contenu est publié directement par Lumi Studio, le développeur de chaque app listée.

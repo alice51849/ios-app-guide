@@ -213,7 +213,7 @@ class GitHubDiscoveryContractTests(unittest.TestCase):
     def test_guide_url_accepts_answer_and_matching_product_fallback(self) -> None:
         discovery._validate_guide_url(
             (
-                "https://alice51849.github.io/ios-app-guide/"
+                "https://open.cait518.cc/ios-app-guide/"
                 "ar-SA/answers/offline-exam-practice.html"
             ),
             "ar-SA",
@@ -221,7 +221,7 @@ class GitHubDiscoveryContractTests(unittest.TestCase):
         )
         discovery._validate_guide_url(
             (
-                "https://alice51849.github.io/ios-app-guide/"
+                "https://open.cait518.cc/ios-app-guide/"
                 "ar-SA/aim990plus.html"
             ),
             "ar-SA",
@@ -232,7 +232,7 @@ class GitHubDiscoveryContractTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             discovery._validate_guide_url(
                 (
-                    "https://alice51849.github.io/ios-app-guide/"
+                    "https://open.cait518.cc/ios-app-guide/"
                     "ar-SA/scanto.html"
                 ),
                 "ar-SA",

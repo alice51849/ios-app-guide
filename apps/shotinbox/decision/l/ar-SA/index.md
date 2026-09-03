@@ -1,7 +1,7 @@
 ---
 title: "ShotInbox AI: Sort Screenshots — شراء واحد، بلا اشتراك | iOS App"
 lang: "ar-SA"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/ar-SA/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/ar-SA/index.html"
 modified: "2026-09-03"
 app_store_id: "6802166527"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [احصل على ShotInbox AI: Sort Screenshots من App Store](https://apps.apple.com/sa/app/id6802166527?pt=118326163&ct=iag_data_ar_sa&mt=8)
 
-[اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/shotinbox.html)
+[اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/shotinbox.html)
 
 > هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.

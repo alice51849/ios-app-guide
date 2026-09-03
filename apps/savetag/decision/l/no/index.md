@@ -1,7 +1,7 @@
 ---
 title: "SaveTag: AI-bokmerker — Lagre lenker, les dem senere | iOS App"
 lang: "no"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/no/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/no/index.html"
 modified: "2026-09-03"
 app_store_id: "6802505528"
 verified_live: true
@@ -19,6 +19,6 @@ Lagre nå. Og les det faktisk senere. Du sender lenker til deg selv hele dagen. 
 
 [Last ned SaveTag: AI-bokmerker fra App Store](https://apps.apple.com/no/app/id6802505528?pt=118326163&ct=iag_data_no&mt=8)
 
-[Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/savetag.html)
+[Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/savetag.html)
 
 > Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.

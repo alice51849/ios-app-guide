@@ -3,7 +3,7 @@ Bopomofo LDES 1.0 + TREE event stream
 
 Canonical entry point
 ---------------------
-https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld
+https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld
 
 The entry point is both the ldes:EventStream and the mutable TREE root node.
 It has exactly one tree:view pointing to itself and six typed relations: paired
@@ -16,7 +16,7 @@ Member model
 - ldes:timestampPath = dcterms:created
 - ldes:versionOfPath = dcterms:isVersionOf
 - ldes:versionCreatePath = rdf:type
-- ldes:versionCreateObject = https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion
+- ldes:versionCreateObject = https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion
 - each event links one stable SKOS concept and carries the canonical CSV fields
 
 Consumption

@@ -1,7 +1,7 @@
 ---
 title: "aplikasi frasa bahasa praktikal terbaik untuk pelancong dengan Apple Watch"
 lang: "ms"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/ms/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/ms/index.html"
 modified: "2026-09-03"
 app_store_id: "6790418321"
 verified_live: true
@@ -20,6 +20,6 @@ Sebelum perjalanan, frasa lengkap untuk situasi sebenar lebih berguna daripada k
 
 [Dapatkan DailyMate di App Store →](https://apps.apple.com/my/app/id6790418321?pt=118326163&ct=iag_data_ms&mt=8)
 
-[Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
+[Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 
 > Panduan ini diterbitkan oleh Lumi Studio, pembangun app ini. Nama app ialah tanda dagangan pemilik masing-masing dan digunakan untuk tujuan pengenalan sahaja. Untuk keputusan berkaitan dokumen, kesihatan, sekolah dan produktiviti, sila sahkan keperluan rasmi yang berkenaan.

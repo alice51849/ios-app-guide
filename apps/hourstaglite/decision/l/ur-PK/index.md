@@ -1,7 +1,7 @@
 ---
 title: "HoursTag Lite: قیمت گھنٹوں میں — چیزوں کی اصل قیمت دیکھیں | iOS App"
 lang: "ur-PK"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ur-PK/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/ur-PK/index.html"
 modified: "2026-09-03"
 app_store_id: "6794039979"
 verified_live: true
@@ -24,6 +24,6 @@ HoursTag Lite - چیزوں کی اصل قیمت دیکھیں ہر خریداری
 
 [App Store سے HoursTag Lite: قیمت گھنٹوں میں حاصل کریں](https://apps.apple.com/pk/app/id6794039979?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
-[مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/hourstaglite.html)
+[مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/hourstaglite.html)
 
 > یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔

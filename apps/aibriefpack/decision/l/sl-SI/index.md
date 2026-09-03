@@ -1,7 +1,7 @@
 ---
 title: "AI Brief: Datoteke v AI poziv — Datoteke v jasen kontekst | iOS App"
 lang: "sl-SI"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/sl-SI/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/sl-SI/index.html"
 modified: "2026-09-03"
 app_store_id: "6791658210"
 verified_live: true
@@ -20,6 +20,6 @@ Boljši kontekst. Boljši odgovori. Spremenite posnetke zaslona, datoteke, bele�
 
 [Prenesite AI Brief: Datoteke v AI poziv iz trgovine App Store](https://apps.apple.com/si/app/id6791658210?pt=118326163&ct=iag_data_sl_si&mt=8)
 
-[Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/aibriefpack.html)
+[Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/aibriefpack.html)
 
 > To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.

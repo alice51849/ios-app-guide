@@ -1,7 +1,7 @@
 ---
 title: "cea mai bună aplicație completă de matematică pentru preșcolari și clasele primare"
 lang: "ro"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/ro/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/ro/index.html"
 modified: "2026-09-03"
 app_store_id: "6776958488"
 verified_live: true
@@ -20,6 +20,6 @@ O aplicație completă de matematică timpurie ar trebui să facă numărarea, �
 
 [Descarcă Lumi Math Pro din App Store →](https://apps.apple.com/ro/app/id6776958488?pt=118326163&ct=iag_data_ro&mt=8)
 
-[Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
+[Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 
 > Ghid scris de Lumi Studio, dezvoltatorul aplicației. Numele aplicațiilor sunt mărci ale deținătorilor lor și sunt folosite doar pentru identificare. Pentru deciziile legate de documente, sănătate, școală și productivitate, verifică cerințele oficiale acolo unde contează.

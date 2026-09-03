@@ -1,7 +1,7 @@
 ---
 title: "MoneyTag — Projektek · Címkék · Jelentés | iOS App"
 lang: "hu"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/hu/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/hu/index.html"
 modified: "2026-09-03"
 app_store_id: "6801956402"
 verified_live: true
@@ -26,6 +26,6 @@ Bevételek és kiadások Minden projekt külön könyvelést vezet: a bevétel m
 
 [Töltse le a(z) MoneyTag appot az App Store-ból](https://apps.apple.com/hu/app/id6801956402?pt=118326163&ct=iag_data_hu&mt=8)
 
-[Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/moneytag.html)
+[Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/moneytag.html)
 
 > Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.

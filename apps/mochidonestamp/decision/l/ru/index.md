@@ -1,7 +1,7 @@
 ---
 title: "Mochi DoneStamp: Когда было — Помнит, когда вы это сделали | iOS App"
 lang: "ru"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/ru/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/ru/index.html"
 modified: "2026-09-03"
 app_store_id: "6790800323"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [Установить Mochi DoneStamp: Когда было в App Store](https://apps.apple.com/ru/app/id6790800323?pt=118326163&ct=iag_data_ru&mt=8)
 
-[Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/mochidonestamp.html)
+[Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/mochidonestamp.html)
 
 > Это материал, созданный Lumi Studio, разработчиком всех перечисленных приложений.

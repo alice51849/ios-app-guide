@@ -37,7 +37,7 @@ INTENT_I18N_PATH = (
     REPO_ROOT / "_engine" / "geo" / "publisher_intent_catalog_i18n.json"
 )
 SOCIAL_IMAGE_DIR = REPO_ROOT / "social" / "img"
-SITE_URL = "https://alice51849.github.io/ios-app-guide"
+SITE_URL = "https://open.cait518.cc/ios-app-guide"
 PUBLISHER_LABEL = "First-party publisher catalog"
 
 # 依 3 個排程時段(01/09/15 UTC)發對應時區的在地語言,讓各國看到自己語言的貼文。

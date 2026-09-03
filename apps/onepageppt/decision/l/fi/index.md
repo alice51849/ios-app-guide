@@ -1,7 +1,7 @@
 ---
 title: "OnePage PPT: tekoälyesitys — Muistiinpanoista yksi dia | iOS App"
 lang: "fi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/fi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/fi/index.html"
 modified: "2026-09-03"
 app_store_id: "6798814385"
 verified_live: true
@@ -19,6 +19,6 @@ Muuta tekstiseinä YHDEKSI diaksi, jonka joku oikeasti lukee. OnePage PPT lukee 
 
 [Lataa OnePage PPT: tekoälyesitys App Storesta](https://apps.apple.com/fi/app/id6798814385?pt=118326163&ct=iag_data_fi&mt=8)
 
-[Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/onepageppt.html)
+[Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/onepageppt.html)
 
 > Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.

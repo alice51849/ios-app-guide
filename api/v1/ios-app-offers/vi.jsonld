@@ -1,8 +1,8 @@
 {
   "@context": "https://schema.org",
   "@type": "OfferCatalog",
-  "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#catalog",
-  "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld",
+  "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#catalog",
+  "url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld",
   "name": "Danh mục ý định tìm kiếm của nhà phát hành Lumi Studio",
   "description": "Danh mục do chính nhà phát triển công bố, cho biết từng ứng dụng dành cho ai, nhiệm vụ họ muốn hoàn thành và lối truy cập trực tiếp đến App Store.",
   "inLanguage": "vi",
@@ -16,15 +16,15 @@
       "url": "https://apps.apple.com/vn/app/id6798813048?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-notesstudio100",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/vn/app/id6798813048?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
         "description": "100 Notes Studio kết hợp viết tay, gõ chữ, đánh dấu PDF, âm thanh gắn với trang và công cụ ôn tập trong một quy trình ngoại tuyến. Sắp xếp nội dung theo sổ",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -45,13 +45,13 @@
             "target": "https://apps.apple.com/vn/app/id6798813048?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/notesstudio100.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/notesstudio100.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "vi",
           "description": "100 Notes Studio kết hợp viết tay, gõ chữ, đánh dấu PDF, âm thanh gắn với trang và công cụ ôn tập trong một quy trình ngoại tuyến. Sắp xếp nội dung theo sổ",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-notesstudio100"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-notesstudio100"
           },
           "additionalProperty": [
             {
@@ -82,15 +82,15 @@
       "url": "https://apps.apple.com/vn/app/id6791658210?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-aibriefpack",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/vn/app/id6791658210?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "AI Brief",
         "description": "AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceable brief before sharing with any AI. Free to start · One-time unlock · No subscription.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -111,13 +111,13 @@
             "target": "https://apps.apple.com/vn/app/id6791658210?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6791658210",
           "inLanguage": "vi",
           "description": "AI Brief — Organize screenshots, PDFs, files, notes, and links into a traceable brief before sharing with any AI. Free to start · One-time unlock · No subscription.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-aibriefpack"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-aibriefpack"
           },
           "additionalProperty": [
             {
@@ -148,15 +148,15 @@
       "url": "https://apps.apple.com/vn/app/id6784974530?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-aim990",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-aim990",
         "url": "https://apps.apple.com/vn/app/id6784974530?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Aim990",
         "description": "Phần 5 có vẻ ngắn, nhưng các câu hỏi câu chưa hoàn chỉnh có thể tốn thời gian nếu ngữ pháp và từ vựng không thành thạo.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -177,13 +177,13 @@
             "target": "https://apps.apple.com/vn/app/id6784974530?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6784974530",
           "inLanguage": "vi",
           "description": "Phần 5 có vẻ ngắn, nhưng các câu hỏi câu chưa hoàn chỉnh có thể tốn thời gian nếu ngữ pháp và từ vựng không thành thạo.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-aim990"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-aim990"
           },
           "additionalProperty": [
             {
@@ -214,15 +214,15 @@
       "url": "https://apps.apple.com/vn/app/id6792483140?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-aim990plus",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-aim990plus",
         "url": "https://apps.apple.com/vn/app/id6792483140?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Aim990 Plus",
         "description": "Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -243,13 +243,13 @@
             "target": "https://apps.apple.com/vn/app/id6792483140?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-offline-english-listening-and-reading-exam-trainer-for-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6792483140",
           "inLanguage": "vi",
           "description": "Aim990 Plus — Build calm, accurate decisions under time with 630 original questions, focused pressure sets, mistake replay, mocks, dictation, and offline progress. Paid download · Pay once · No subscription.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-aim990plus"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-aim990plus"
           },
           "additionalProperty": [
             {
@@ -280,15 +280,15 @@
       "url": "https://apps.apple.com/vn/app/id6802423998?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-battai",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-battai",
         "url": "https://apps.apple.com/vn/app/id6802423998?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "BattAI: Điểm tình trạng pin",
         "description": "BattAI BattAI dùng 5 giá trị từ API công khai của iOS: mức pin, trạng thái sạc, Chế độ nguồn điện thấp, trạng thái nhiệt của toàn thiết bị và thời gian. Các kết quả khác được tính từ dữ liệu này hoặc do bạn thêm. Mỗi mục đều nêu nguồn và giới hạn",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -309,13 +309,13 @@
             "target": "https://apps.apple.com/vn/app/id6802423998?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/battai.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/battai.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "vi",
           "description": "BattAI BattAI dùng 5 giá trị từ API công khai của iOS: mức pin, trạng thái sạc, Chế độ nguồn điện thấp, trạng thái nhiệt của toàn thiết bị và thời gian. Các kết quả khác được tính từ dữ liệu này hoặc do bạn thêm. Mỗi mục đều nêu nguồn và giới hạn",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-battai"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-battai"
           },
           "additionalProperty": [
             {
@@ -346,15 +346,15 @@
       "url": "https://apps.apple.com/vn/app/id6794178671?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-caldaily",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/vn/app/id6794178671?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "CalDaily: máy tính và chủ đề",
         "description": "Một máy tính bạn sẽ thật sự dùng lâu dài, vì nó nhớ cả suy nghĩ đằng sau từng con số.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -375,13 +375,13 @@
             "target": "https://apps.apple.com/vn/app/id6794178671?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/caldaily.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/caldaily.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "vi",
           "description": "Một máy tính bạn sẽ thật sự dùng lâu dài, vì nó nhớ cả suy nghĩ đằng sau từng con số.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-caldaily"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-caldaily"
           },
           "additionalProperty": [
             {
@@ -412,15 +412,15 @@
       "url": "https://apps.apple.com/vn/app/id6781337213?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-cvdesk",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-cvdesk",
         "url": "https://apps.apple.com/vn/app/id6781337213?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "CV Desk",
         "description": "Khi bạn chuyển ngành, vấn đề hồ sơ khác: kinh nghiệm thật nhưng trên giấy tờ là 'không liên quan', và bộ lọc ATS loại bạn trước khi người đọc thấy. Đúng khoảng trống đó là thứ CV Desk muốn lấp.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -441,13 +441,13 @@
             "target": "https://apps.apple.com/vn/app/id6781337213?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-resume-builder-app-for-career-changers-2026.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-resume-builder-app-for-career-changers-2026.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6781337213",
           "inLanguage": "vi",
           "description": "Khi bạn chuyển ngành, vấn đề hồ sơ khác: kinh nghiệm thật nhưng trên giấy tờ là 'không liên quan', và bộ lọc ATS loại bạn trước khi người đọc thấy. Đúng khoảng trống đó là thứ CV Desk muốn lấp.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-cvdesk"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-cvdesk"
           },
           "additionalProperty": [
             {
@@ -478,15 +478,15 @@
       "url": "https://apps.apple.com/vn/app/id6782251621?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-cyca",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-cyca",
         "url": "https://apps.apple.com/vn/app/id6782251621?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Cyca",
         "description": "Trong lĩnh vực nhạy cảm về dữ liệu, ứng dụng theo dõi chu kỳ đúng đắn giữ mọi thứ — lưu lượng, tâm trạng, triệu chứng, nhiệt độ, quan hệ — trên thiết bị của bạn, không cần tài khoản và không đồng bộ đám mây. Cyca chỉ làm đúng việc đó và bỏ qua phần còn lại.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -507,13 +507,13 @@
             "target": "https://apps.apple.com/vn/app/id6782251621?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-period-tracker-app-no-account-required-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-period-tracker-app-no-account-required-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6782251621",
           "inLanguage": "vi",
           "description": "Trong lĩnh vực nhạy cảm về dữ liệu, ứng dụng theo dõi chu kỳ đúng đắn giữ mọi thứ — lưu lượng, tâm trạng, triệu chứng, nhiệt độ, quan hệ — trên thiết bị của bạn, không cần tài khoản và không đồng bộ đám mây. Cyca chỉ làm đúng việc đó và bỏ qua phần còn lại.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-cyca"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-cyca"
           },
           "additionalProperty": [
             {
@@ -544,15 +544,15 @@
       "url": "https://apps.apple.com/vn/app/id6790418321?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-dailymate",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-dailymate",
         "url": "https://apps.apple.com/vn/app/id6790418321?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "DailyMate",
         "description": "Trước chuyến đi, các cụm từ hoàn chỉnh cho tình huống thực tế hữu ích hơn từ vựng rời rạc mà bạn vẫn phải ghép lại khi áp lực. DailyMate khởi đi đúng từ vấn đề này.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -573,13 +573,13 @@
             "target": "https://apps.apple.com/vn/app/id6790418321?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6790418321",
           "inLanguage": "vi",
           "description": "Trước chuyến đi, các cụm từ hoàn chỉnh cho tình huống thực tế hữu ích hơn từ vựng rời rạc mà bạn vẫn phải ghép lại khi áp lực. DailyMate khởi đi đúng từ vấn đề này.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-dailymate"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-dailymate"
           },
           "additionalProperty": [
             {
@@ -610,15 +610,15 @@
       "url": "https://apps.apple.com/vn/app/id6794725568?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-dailymatelite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/vn/app/id6794725568?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "DailyMate Lite: Luyện nói",
         "description": "Đến lúc cần nói mà vẫn chưa tìm được câu phù hợp? DailyMate Lite biến những tình huống như du lịch, công việc, ăn uống và sức khỏe thành các cặp gợi ý –",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -639,13 +639,13 @@
             "target": "https://apps.apple.com/vn/app/id6794725568?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/dailymatelite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/dailymatelite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "vi",
           "description": "Đến lúc cần nói mà vẫn chưa tìm được câu phù hợp? DailyMate Lite biến những tình huống như du lịch, công việc, ăn uống và sức khỏe thành các cặp gợi ý –",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-dailymatelite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-dailymatelite"
           },
           "additionalProperty": [
             {
@@ -676,15 +676,15 @@
       "url": "https://apps.apple.com/vn/app/id6755782939?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-gmoney",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-gmoney",
         "url": "https://apps.apple.com/vn/app/id6755782939?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "G+Money",
         "description": "Khi đi du lịch, bạn cần ứng dụng theo dõi ngân sách hoạt động ngoại tuyến ở nước không có dữ liệu, xử lý đa tiền tệ, không yêu cầu tài khoản — tổ chức theo chuyến để mỗi kỳ nghỉ riêng biệt. Đúng khoảng trống đó là thứ G+Money muốn lấp.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -705,13 +705,13 @@
             "target": "https://apps.apple.com/vn/app/id6755782939?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-travel-budget-tracker-app-no-subscription-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-travel-budget-tracker-app-no-subscription-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6755782939",
           "inLanguage": "vi",
           "description": "Khi đi du lịch, bạn cần ứng dụng theo dõi ngân sách hoạt động ngoại tuyến ở nước không có dữ liệu, xử lý đa tiền tệ, không yêu cầu tài khoản — tổ chức theo chuyến để mỗi kỳ nghỉ riêng biệt. Đúng khoảng trống đó là thứ G+Money muốn lấp.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-gmoney"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-gmoney"
           },
           "additionalProperty": [
             {
@@ -742,15 +742,15 @@
       "url": "https://apps.apple.com/vn/app/id6793436548?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-gmoneylite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/vn/app/id6793436548?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "G+Money Lite",
         "description": "A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -771,13 +771,13 @@
             "target": "https://apps.apple.com/vn/app/id6793436548?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "vi",
           "description": "A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-gmoneylite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-gmoneylite"
           },
           "additionalProperty": [
             {
@@ -808,15 +808,15 @@
       "url": "https://apps.apple.com/vn/app/id6754218117?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-hourstag",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-hourstag",
         "url": "https://apps.apple.com/vn/app/id6754218117?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "HoursTag",
         "description": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -837,13 +837,13 @@
             "target": "https://apps.apple.com/vn/app/id6754218117?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-app-to-track-where-my-money-goes-and-save-more.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-app-to-track-where-my-money-goes-and-save-more.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6754218117",
           "inLanguage": "vi",
           "description": "If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-hourstag"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-hourstag"
           },
           "additionalProperty": [
             {
@@ -874,15 +874,15 @@
       "url": "https://apps.apple.com/vn/app/id6794039979?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-hourstaglite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/vn/app/id6794039979?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "HoursTag Lite",
         "description": "HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -903,13 +903,13 @@
             "target": "https://apps.apple.com/vn/app/id6794039979?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-app-to-convert-prices-into-work-hours-before-buying.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-app-to-convert-prices-into-work-hours-before-buying.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794039979",
           "inLanguage": "vi",
           "description": "HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-hourstaglite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-hourstaglite"
           },
           "additionalProperty": [
             {
@@ -940,15 +940,15 @@
       "url": "https://apps.apple.com/vn/app/id6780107485?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lockhour",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/vn/app/id6780107485?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "LockHour Pro",
         "description": "Trong kỳ thi, ý chí không phải là công cụ — mà là chặn nghiêm ngặt theo thời gian. LockHour Pro ra đời chính vì thế.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -969,13 +969,13 @@
             "target": "https://apps.apple.com/vn/app/id6780107485?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-app-to-block-social-media-while-studying-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-app-to-block-social-media-while-studying-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "vi",
           "description": "Trong kỳ thi, ý chí không phải là công cụ — mà là chặn nghiêm ngặt theo thời gian. LockHour Pro ra đời chính vì thế.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lockhour"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lockhour"
           },
           "additionalProperty": [
             {
@@ -1006,15 +1006,15 @@
       "url": "https://apps.apple.com/vn/app/id6773017109?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumibopomofo",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumibopomofo",
         "url": "https://apps.apple.com/vn/app/id6773017109?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Lumi Bopomofo",
         "description": "Đối với trẻ mới học Zhuyin, ứng dụng nên bao phủ tất cả 37 ký hiệu qua tô nét chữ và chơi — thiết kế cho độ tuổi học đầu 4–7, không quảng cáo, không thu thập dữ liệu. Đúng khoảng trống đó là thứ Lumi Bopomofo muốn lấp.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1035,13 +1035,13 @@
             "target": "https://apps.apple.com/vn/app/id6773017109?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6773017109",
           "inLanguage": "vi",
           "description": "Đối với trẻ mới học Zhuyin, ứng dụng nên bao phủ tất cả 37 ký hiệu qua tô nét chữ và chơi — thiết kế cho độ tuổi học đầu 4–7, không quảng cáo, không thu thập dữ liệu. Đúng khoảng trống đó là thứ Lumi Bopomofo muốn lấp.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumibopomofo"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumibopomofo"
           },
           "additionalProperty": [
             {
@@ -1072,15 +1072,15 @@
       "url": "https://apps.apple.com/vn/app/id6775773117?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumibopomofopro",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumibopomofopro",
         "url": "https://apps.apple.com/vn/app/id6775773117?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Lumi Bopomofo Pro",
         "description": "Trẻ song ngữ học Zhuyin tại nhà cần lộ trình đầy đủ qua âm, ký hiệu, thanh điệu và ghép âm, đủ lặp lại vui nhộn để làm quen hệ thống. Đúng khoảng trống đó là thứ Lumi Bopomofo Pro muốn lấp.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1101,13 +1101,13 @@
             "target": "https://apps.apple.com/vn/app/id6775773117?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6775773117",
           "inLanguage": "vi",
           "description": "Trẻ song ngữ học Zhuyin tại nhà cần lộ trình đầy đủ qua âm, ký hiệu, thanh điệu và ghép âm, đủ lặp lại vui nhộn để làm quen hệ thống. Đúng khoảng trống đó là thứ Lumi Bopomofo Pro muốn lấp.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumibopomofopro"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumibopomofopro"
           },
           "additionalProperty": [
             {
@@ -1138,15 +1138,15 @@
       "url": "https://apps.apple.com/vn/app/id6778748533?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumiletters",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumiletters",
         "url": "https://apps.apple.com/vn/app/id6778748533?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Lumi Letters",
         "description": "Với trẻ nhỏ, điều quan trọng là không quảng cáo và không thu thập dữ liệu — ứng dụng học nên dạy trong vòng lặp trò chơi không quảng cáo, không thu thập gì từ trẻ, và mở khóa một lần mà phụ huynh tin tưởng. Lumi Letters ra đời chính vì thế.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1167,13 +1167,13 @@
             "target": "https://apps.apple.com/vn/app/id6778748533?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-educational-game-app-for-kids-no-ads-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-educational-game-app-for-kids-no-ads-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6778748533",
           "inLanguage": "vi",
           "description": "Với trẻ nhỏ, điều quan trọng là không quảng cáo và không thu thập dữ liệu — ứng dụng học nên dạy trong vòng lặp trò chơi không quảng cáo, không thu thập gì từ trẻ, và mở khóa một lần mà phụ huynh tin tưởng. Lumi Letters ra đời chính vì thế.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumiletters"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumiletters"
           },
           "additionalProperty": [
             {
@@ -1204,15 +1204,15 @@
       "url": "https://apps.apple.com/vn/app/id6778491147?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumiletterspro",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumiletterspro",
         "url": "https://apps.apple.com/vn/app/id6778491147?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Lumi Letters Pro",
         "description": "Gia đình chuẩn bị cho mẫu giáo cần lộ trình đọc sớm đầy đủ, kết nối âm chữ cái, viết nét và xây dựng từ thay vì các trò chơi bảng chữ cái rời rạc. Đúng khoảng trống đó là thứ Lumi Letters Pro muốn lấp.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1233,13 +1233,13 @@
             "target": "https://apps.apple.com/vn/app/id6778491147?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6778491147",
           "inLanguage": "vi",
           "description": "Gia đình chuẩn bị cho mẫu giáo cần lộ trình đọc sớm đầy đủ, kết nối âm chữ cái, viết nét và xây dựng từ thay vì các trò chơi bảng chữ cái rời rạc. Đúng khoảng trống đó là thứ Lumi Letters Pro muốn lấp.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumiletterspro"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumiletterspro"
           },
           "additionalProperty": [
             {
@@ -1270,15 +1270,15 @@
       "url": "https://apps.apple.com/vn/app/id6778269699?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumimath",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumimath",
         "url": "https://apps.apple.com/vn/app/id6778269699?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Lumi Math Planet",
         "description": "Ứng dụng toán học tốt nhất cho trẻ rèn luyện suy luận — mẫu, chuỗi, tư duy không gian — không chỉ luyện tính toán, và được giấu trong trò chơi trẻ muốn chơi. Lumi Math Planet ra đời chính vì thế.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1299,13 +1299,13 @@
             "target": "https://apps.apple.com/vn/app/id6778269699?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6778269699",
           "inLanguage": "vi",
           "description": "Ứng dụng toán học tốt nhất cho trẻ rèn luyện suy luận — mẫu, chuỗi, tư duy không gian — không chỉ luyện tính toán, và được giấu trong trò chơi trẻ muốn chơi. Lumi Math Planet ra đời chính vì thế.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumimath"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumimath"
           },
           "additionalProperty": [
             {
@@ -1336,15 +1336,15 @@
       "url": "https://apps.apple.com/vn/app/id6776958488?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumimathpro",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumimathpro",
         "url": "https://apps.apple.com/vn/app/id6776958488?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Lumi Math Pro",
         "description": "Ứng dụng toán sớm đầy đủ nên giúp việc đếm, cảm nhận số và phép toán đầu tiên thành một cuộc phiêu lưu liên kết thay vì các bài tập rời rạc. Lumi Math Pro ra đời chính vì thế.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1365,13 +1365,13 @@
             "target": "https://apps.apple.com/vn/app/id6776958488?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6776958488",
           "inLanguage": "vi",
           "description": "Ứng dụng toán sớm đầy đủ nên giúp việc đếm, cảm nhận số và phép toán đầu tiên thành một cuộc phiêu lưu liên kết thay vì các bài tập rời rạc. Lumi Math Pro ra đời chính vì thế.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumimathpro"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumimathpro"
           },
           "additionalProperty": [
             {
@@ -1402,15 +1402,15 @@
       "url": "https://apps.apple.com/vn/app/id6779750237?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumimission",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumimission",
         "url": "https://apps.apple.com/vn/app/id6779750237?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Lumi Mission Planet",
         "description": "Với trẻ mẫu giáo, thói quen đi ngủ hiệu quả nhất khi ngắn gọn, trực quan và đủ dễ đoán để trẻ tự làm theo mà không cần nhắc nhở thêm. Nếu thấy quen, bạn thử xem Lumi Mission Planet.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1431,13 +1431,13 @@
             "target": "https://apps.apple.com/vn/app/id6779750237?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779750237",
           "inLanguage": "vi",
           "description": "Với trẻ mẫu giáo, thói quen đi ngủ hiệu quả nhất khi ngắn gọn, trực quan và đủ dễ đoán để trẻ tự làm theo mà không cần nhắc nhở thêm. Nếu thấy quen, bạn thử xem Lumi Mission Planet.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumimission"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumimission"
           },
           "additionalProperty": [
             {
@@ -1468,15 +1468,15 @@
       "url": "https://apps.apple.com/vn/app/id6779745474?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumimissionpro",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumimissionpro",
         "url": "https://apps.apple.com/vn/app/id6779745474?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Lumi Mission Planet Pro",
         "description": "Đánh răng và đi ngủ thường thất bại cùng lúc mỗi tối: trẻ mệt, phụ huynh mệt và bước tiếp theo chưa đủ rõ ràng.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1497,13 +1497,13 @@
             "target": "https://apps.apple.com/vn/app/id6779745474?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779745474",
           "inLanguage": "vi",
           "description": "Đánh răng và đi ngủ thường thất bại cùng lúc mỗi tối: trẻ mệt, phụ huynh mệt và bước tiếp theo chưa đủ rõ ràng.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumimissionpro"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumimissionpro"
           },
           "additionalProperty": [
             {
@@ -1534,15 +1534,15 @@
       "url": "https://apps.apple.com/vn/app/id6787193643?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-tripplanet",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-tripplanet",
         "url": "https://apps.apple.com/vn/app/id6787193643?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Lumi Trip Planet",
         "description": "Phụ huynh đi du lịch cùng trẻ nhỏ cần hoạt động biến việc chuẩn bị hành lý, chờ đợi và khám phá nơi mới thành một phần của chuyến đi thay vì thêm căng thẳng. Lumi Trip Planet ra đời chính vì thế.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1563,13 +1563,13 @@
             "target": "https://apps.apple.com/vn/app/id6787193643?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6787193643",
           "inLanguage": "vi",
           "description": "Phụ huynh đi du lịch cùng trẻ nhỏ cần hoạt động biến việc chuẩn bị hành lý, chờ đợi và khám phá nơi mới thành một phần của chuyến đi thay vì thêm căng thẳng. Lumi Trip Planet ra đời chính vì thế.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-tripplanet"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-tripplanet"
           },
           "additionalProperty": [
             {
@@ -1600,15 +1600,15 @@
       "url": "https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumiweather",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Lumi Weather",
         "description": "Phụ huynh lên kế hoạch cho trẻ ra ngoài cần nhiều hơn nhiệt độ: cần cái nhìn nhanh, phù hợp độ tuổi về điều kiện có phù hợp cho trẻ và trang phục nào hợp lý. Lumi Weather ra đời chính vì thế.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1629,13 +1629,13 @@
             "target": "https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "vi",
           "description": "Phụ huynh lên kế hoạch cho trẻ ra ngoài cần nhiều hơn nhiệt độ: cần cái nhìn nhanh, phù hợp độ tuổi về điều kiện có phù hợp cho trẻ và trang phục nào hợp lý. Lumi Weather ra đời chính vì thế.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumiweather"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumiweather"
           },
           "additionalProperty": [
             {
@@ -1666,15 +1666,15 @@
       "url": "https://apps.apple.com/vn/app/id6792850916?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-maskmyfile",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/vn/app/id6792850916?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Mask My File",
         "description": "Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context. Mask My File sticks to that one job and leaves the rest out.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1695,13 +1695,13 @@
             "target": "https://apps.apple.com/vn/app/id6792850916?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "vi",
           "description": "Before a client document leaves your phone, the safest workflow is to hide only the private details the recipient does not need while preserving the useful context. Mask My File sticks to that one job and leaves the rest out.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-maskmyfile"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-maskmyfile"
           },
           "additionalProperty": [
             {
@@ -1732,15 +1732,15 @@
       "url": "https://apps.apple.com/vn/app/id6785004775?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-mochi",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-mochi",
         "url": "https://apps.apple.com/vn/app/id6785004775?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Mochi",
         "description": "Nếu hầu hết ứng dụng việc cần làm cảm thấy cồng kềnh, ứng dụng phù hợp là danh sách kiểm tra sạch sẽ với nhắc nhở, quy tắc lặp lại và hỗ trợ Watch — và không có công cụ quản lý dự án. Mochi ra đời chính vì thế.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1761,13 +1761,13 @@
             "target": "https://apps.apple.com/vn/app/id6785004775?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-simple-to-do-list-app-iphone-no-subscription.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-simple-to-do-list-app-iphone-no-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "vi",
           "description": "Nếu hầu hết ứng dụng việc cần làm cảm thấy cồng kềnh, ứng dụng phù hợp là danh sách kiểm tra sạch sẽ với nhắc nhở, quy tắc lặp lại và hỗ trợ Watch — và không có công cụ quản lý dự án. Mochi ra đời chính vì thế.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-mochi"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-mochi"
           },
           "additionalProperty": [
             {
@@ -1798,15 +1798,15 @@
       "url": "https://apps.apple.com/vn/app/id6790800323?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-mochidonestamp",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/vn/app/id6790800323?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Mochi DoneStamp",
         "description": "For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1827,13 +1827,13 @@
             "target": "https://apps.apple.com/vn/app/id6790800323?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "vi",
           "description": "For chores and upkeep that do not belong on a rigid calendar, a useful tracker remembers when you actually finished and measures the next interval from that moment",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-mochidonestamp"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-mochidonestamp"
           },
           "additionalProperty": [
             {
@@ -1864,15 +1864,15 @@
       "url": "https://apps.apple.com/vn/app/id6801956402?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-moneytag",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-moneytag",
         "url": "https://apps.apple.com/vn/app/id6801956402?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "MoneyTag: Thu và chi",
         "description": "Thu và chi Mỗi dự án có sổ sách riêng: thu trừ chi chính là kết quả ròng của dự án đó. Dưới đây là những câu hỏi được hỏi nhiều nhất. Nếu chưa có câu trả lời bạn cần, hãy viết thư — mọi tin nhắn đều có người thật đọc.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1893,13 +1893,13 @@
             "target": "https://apps.apple.com/vn/app/id6801956402?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/moneytag.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/moneytag.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6801956402",
           "inLanguage": "vi",
           "description": "Thu và chi Mỗi dự án có sổ sách riêng: thu trừ chi chính là kết quả ròng của dự án đó. Dưới đây là những câu hỏi được hỏi nhiều nhất. Nếu chưa có câu trả lời bạn cần, hãy viết thư — mọi tin nhắn đều có người thật đọc.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-moneytag"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-moneytag"
           },
           "additionalProperty": [
             {
@@ -1930,15 +1930,15 @@
       "url": "https://apps.apple.com/vn/app/id6798814385?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-onepageppt",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-onepageppt",
         "url": "https://apps.apple.com/vn/app/id6798814385?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "OnePage PPT: Slide AI",
         "description": "Biến một bức tường chữ thành đúng một trang mà người ta chịu đọc.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1959,13 +1959,13 @@
             "target": "https://apps.apple.com/vn/app/id6798814385?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/onepageppt.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/onepageppt.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6798814385",
           "inLanguage": "vi",
           "description": "Biến một bức tường chữ thành đúng một trang mà người ta chịu đọc.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-onepageppt"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-onepageppt"
           },
           "additionalProperty": [
             {
@@ -1996,15 +1996,15 @@
       "url": "https://apps.apple.com/vn/app/id6781808054?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-photocream",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-photocream",
         "url": "https://apps.apple.com/vn/app/id6781808054?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "PhotoCream",
         "description": "Nhà sáng tạo du lịch cần hiệu ứng phim lặp lại, thêm hạt ảnh, hiệu ứng hào quang và màu sắc mà không làm mọi điểm đến trở nên nhạt nhòa",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2025,13 +2025,13 @@
             "target": "https://apps.apple.com/vn/app/id6781808054?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6781808054",
           "inLanguage": "vi",
           "description": "Nhà sáng tạo du lịch cần hiệu ứng phim lặp lại, thêm hạt ảnh, hiệu ứng hào quang và màu sắc mà không làm mọi điểm đến trở nên nhạt nhòa",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-photocream"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-photocream"
           },
           "additionalProperty": [
             {
@@ -2062,15 +2062,15 @@
       "url": "https://apps.apple.com/vn/app/id6780223070?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-picclear",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-picclear",
         "url": "https://apps.apple.com/vn/app/id6780223070?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "PicClear",
         "description": "Để giải phóng nhanh, tập trung vào những thứ lớn nhất trước: ảnh trùng chính xác, ảnh chụp liên tiếp gần giống, ảnh mờ và video lớn",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2091,13 +2091,13 @@
             "target": "https://apps.apple.com/vn/app/id6780223070?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6780223070",
           "inLanguage": "vi",
           "description": "Để giải phóng nhanh, tập trung vào những thứ lớn nhất trước: ảnh trùng chính xác, ảnh chụp liên tiếp gần giống, ảnh mờ và video lớn",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-picclear"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-picclear"
           },
           "additionalProperty": [
             {
@@ -2128,15 +2128,15 @@
       "url": "https://apps.apple.com/vn/app/id6802505528?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-savetag",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-savetag",
         "url": "https://apps.apple.com/vn/app/id6802505528?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "SaveTag: dấu trang bằng AI",
         "description": "Lưu ngay bây giờ. Và lần này đọc thật.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2157,13 +2157,13 @@
             "target": "https://apps.apple.com/vn/app/id6802505528?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/savetag.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/savetag.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "vi",
           "description": "Lưu ngay bây giờ. Và lần này đọc thật.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-savetag"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-savetag"
           },
           "additionalProperty": [
             {
@@ -2194,15 +2194,15 @@
       "url": "https://apps.apple.com/vn/app/id6779977651?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-scanto",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-scanto",
         "url": "https://apps.apple.com/vn/app/id6779977651?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "ScanTo Pro",
         "description": "Nếu bạn quét mẫu đồng ý bệnh nhân, giấy tờ xuất viện hoặc giấy giới thiệu, máy quét phải giữ giấy tờ trên thiết bị — không bao giờ tải lên đám mây người khác. ScanTo Pro khởi đi đúng từ vấn đề này.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2223,13 +2223,13 @@
             "target": "https://apps.apple.com/vn/app/id6779977651?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779977651",
           "inLanguage": "vi",
           "description": "Nếu bạn quét mẫu đồng ý bệnh nhân, giấy tờ xuất viện hoặc giấy giới thiệu, máy quét phải giữ giấy tờ trên thiết bị — không bao giờ tải lên đám mây người khác. ScanTo Pro khởi đi đúng từ vấn đề này.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-scanto"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-scanto"
           },
           "additionalProperty": [
             {
@@ -2260,15 +2260,15 @@
       "url": "https://apps.apple.com/vn/app/id6788236641?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-sereno",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-sereno",
         "url": "https://apps.apple.com/vn/app/id6788236641?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Sereno",
         "description": "Đối với giấc ngủ, đăng ký hàng tháng gây phiền toái là điều ngược lại với sự thư giãn. Nếu thấy quen, bạn thử xem Sereno.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2289,13 +2289,13 @@
             "target": "https://apps.apple.com/vn/app/id6788236641?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-white-noise-app-for-falling-asleep-no-subscription.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-white-noise-app-for-falling-asleep-no-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6788236641",
           "inLanguage": "vi",
           "description": "Đối với giấc ngủ, đăng ký hàng tháng gây phiền toái là điều ngược lại với sự thư giãn. Nếu thấy quen, bạn thử xem Sereno.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-sereno"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-sereno"
           },
           "additionalProperty": [
             {
@@ -2326,15 +2326,15 @@
       "url": "https://apps.apple.com/vn/app/id6802166527?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-shotinbox",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/vn/app/id6802166527?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
         "description": "Ảnh chụp của bạn, thật gọn gàng",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2355,13 +2355,13 @@
             "target": "https://apps.apple.com/vn/app/id6802166527?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/shotinbox.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/shotinbox.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "vi",
           "description": "Ảnh chụp của bạn, thật gọn gàng",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-shotinbox"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-shotinbox"
           },
           "additionalProperty": [
             {
@@ -2392,15 +2392,15 @@
       "url": "https://apps.apple.com/vn/app/id6780575828?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-snapport",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-snapport",
         "url": "https://apps.apple.com/vn/app/id6780575828?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Snapport",
         "description": "Ảnh hộ chiếu bé không được có người khác trong ảnh và nền phải trơn. Snapport khởi đi đúng từ vấn đề này.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2421,13 +2421,13 @@
             "target": "https://apps.apple.com/vn/app/id6780575828?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6780575828",
           "inLanguage": "vi",
           "description": "Ảnh hộ chiếu bé không được có người khác trong ảnh và nền phải trơn. Snapport khởi đi đúng từ vấn đề này.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-snapport"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-snapport"
           },
           "additionalProperty": [
             {
@@ -2458,15 +2458,15 @@
       "url": "https://apps.apple.com/vn/app/id6792856304?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-snapportlite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/vn/app/id6792856304?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Snapport Lite: Ảnh thẻ tại nhà",
         "description": "Snapport Lite - Tạo ảnh hộ chiếu, visa và giấy tờ với hướng dẫn kích thước, nền và in.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2487,13 +2487,13 @@
             "target": "https://apps.apple.com/vn/app/id6792856304?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/snapportlite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/snapportlite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "vi",
           "description": "Snapport Lite - Tạo ảnh hộ chiếu, visa và giấy tờ với hướng dẫn kích thước, nền và in.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-snapportlite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-snapportlite"
           },
           "additionalProperty": [
             {
@@ -2524,15 +2524,15 @@
       "url": "https://apps.apple.com/vn/app/id6782139553?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-sononote",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-sononote",
         "url": "https://apps.apple.com/vn/app/id6782139553?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Sono Note",
         "description": "Sau cuộc gọi bạn không muốn bản ghi thô — bạn muốn bản tóm tắt, các mục hành động và bản nháp theo dõi. Đúng khoảng trống đó là thứ Sono Note muốn lấp.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2553,13 +2553,13 @@
             "target": "https://apps.apple.com/vn/app/id6782139553?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "vi",
           "description": "Sau cuộc gọi bạn không muốn bản ghi thô — bạn muốn bản tóm tắt, các mục hành động và bản nháp theo dõi. Đúng khoảng trống đó là thứ Sono Note muốn lấp.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-sononote"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-sononote"
           },
           "additionalProperty": [
             {
@@ -2590,15 +2590,15 @@
       "url": "https://apps.apple.com/vn/app/id6791299610?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-tripbeelite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-tripbeelite",
         "url": "https://apps.apple.com/vn/app/id6791299610?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "TripBee Lite",
         "description": "Nếu bạn đang lên kế hoạch cho một hành trình sắp tới, một dòng thời gian yên tĩnh cho chuyến đi đó hữu ích hơn một kho lưu trữ đông đúc của mọi chuyến đi bạn có thể thực hiện một ngày nào đó. Nếu thấy quen, bạn thử xem TripBee Lite.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2619,13 +2619,13 @@
             "target": "https://apps.apple.com/vn/app/id6791299610?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6791299610",
           "inLanguage": "vi",
           "description": "Nếu bạn đang lên kế hoạch cho một hành trình sắp tới, một dòng thời gian yên tĩnh cho chuyến đi đó hữu ích hơn một kho lưu trữ đông đúc của mọi chuyến đi bạn có thể thực hiện một ngày nào đó. Nếu thấy quen, bạn thử xem TripBee Lite.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-tripbeelite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-tripbeelite"
           },
           "additionalProperty": [
             {
@@ -2656,15 +2656,15 @@
       "url": "https://apps.apple.com/vn/app/id6787754435?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-tripbee",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/vn/app/id6787754435?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "TripBee Pro: Trình lập kế hoạch chuyến đi",
         "description": "Một ứng dụng lịch trình tốt biến chuyến đi lộn xộn thành dòng thời gian ngày rõ ràng — chuyến bay, khách sạn, hoạt động, nhà hàng và phương tiện — với biểu tượng loại rõ ràng để bạn có thể xem ngày của mình ngay lập tức. Nếu thấy quen, bạn thử xem TripBee Pro: Trình lập kế hoạch chuyến đi.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2685,13 +2685,13 @@
             "target": "https://apps.apple.com/vn/app/id6787754435?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-trip-itinerary-planner-app-for-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-trip-itinerary-planner-app-for-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "vi",
           "description": "Một ứng dụng lịch trình tốt biến chuyến đi lộn xộn thành dòng thời gian ngày rõ ràng — chuyến bay, khách sạn, hoạt động, nhà hàng và phương tiện — với biểu tượng loại rõ ràng để bạn có thể xem ngày của mình ngay lập tức. Nếu thấy quen, bạn thử xem TripBee Pro: Trình lập kế hoạch chuyến đi.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-tripbee"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-tripbee"
           },
           "additionalProperty": [
             {
@@ -2722,15 +2722,15 @@
       "url": "https://apps.apple.com/vn/app/id6782275018?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-unblurry",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-unblurry",
         "url": "https://apps.apple.com/vn/app/id6782275018?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Unblurry",
         "description": "Trẻ con không bao giờ đứng yên, nên ảnh lấy nét mềm và rung máy là điều không tránh khỏi",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2751,13 +2751,13 @@
             "target": "https://apps.apple.com/vn/app/id6782275018?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6782275018",
           "inLanguage": "vi",
           "description": "Trẻ con không bao giờ đứng yên, nên ảnh lấy nét mềm và rung máy là điều không tránh khỏi",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-unblurry"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-unblurry"
           },
           "additionalProperty": [
             {
@@ -2788,15 +2788,15 @@
       "url": "https://apps.apple.com/vn/app/id6790467886?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wifiaid",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wifiaid",
         "url": "https://apps.apple.com/vn/app/id6790467886?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "WiFi Aid",
         "description": "When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing. WiFi Aid sticks to that one job and leaves the rest out.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2817,13 +2817,13 @@
             "target": "https://apps.apple.com/vn/app/id6790467886?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "vi",
           "description": "When Wi-Fi says connected but work still cannot get online, the useful first step is to identify whether the failure is DNS, the wider internet, instability or one destination instead of guessing. WiFi Aid sticks to that one job and leaves the rest out.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wifiaid"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wifiaid"
           },
           "additionalProperty": [
             {
@@ -2854,15 +2854,15 @@
       "url": "https://apps.apple.com/vn/app/id6793414462?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wifiaidlite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/vn/app/id6793414462?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "WiFi Aid Lite",
         "description": "Tìm ra sự cố thực sự. Mỗi công cụ bao gồm một lần dùng đầy đủ miễn phí. Mở khóa trọn đời một lần tùy chọn để dùng không giới hạn—không thuê bao, quảng",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2883,13 +2883,13 @@
             "target": "https://apps.apple.com/vn/app/id6793414462?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/wifiaidlite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/wifiaidlite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "vi",
           "description": "Tìm ra sự cố thực sự. Mỗi công cụ bao gồm một lần dùng đầy đủ miễn phí. Mở khóa trọn đời một lần tùy chọn để dùng không giới hạn—không thuê bao, quảng",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wifiaidlite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wifiaidlite"
           },
           "additionalProperty": [
             {
@@ -2920,15 +2920,15 @@
       "url": "https://apps.apple.com/vn/app/id6797601720?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wordmatelite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/vn/app/id6797601720?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Wordmate Lite 5 từ mỗi ngày",
         "description": "Nhiều người dừng việc học ngoại ngữ đúng ở chỗ bộ thẻ từ vẫn chưa soạn xong. Wordmate Lite bỏ hẳn bước đó đi.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2949,13 +2949,13 @@
             "target": "https://apps.apple.com/vn/app/id6797601720?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/wordmatelite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/wordmatelite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "vi",
           "description": "Nhiều người dừng việc học ngoại ngữ đúng ở chỗ bộ thẻ từ vẫn chưa soạn xong. Wordmate Lite bỏ hẳn bước đó đi.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wordmatelite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wordmatelite"
           },
           "additionalProperty": [
             {
@@ -2986,15 +2986,15 @@
       "url": "https://apps.apple.com/vn/app/id6789917808?pt=118326163&ct=iag_data_vi&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wordmate",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wordmate",
         "url": "https://apps.apple.com/vn/app/id6789917808?pt=118326163&ct=iag_data_vi&mt=8",
         "name": "Wordmate: Learn 44 Languages",
         "description": "Người đi làm bận rộn cần luyện tập từ vựng phù hợp thời gian rảnh mà không cần bài học đầy đủ, tài khoản mới hoặc cầm điện thoại cho mỗi lần ôn tập. Wordmate: Learn 44 Languages khởi đi đúng từ vấn đề này.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -3015,13 +3015,13 @@
             "target": "https://apps.apple.com/vn/app/id6789917808?pt=118326163&ct=iag_data_vi&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/vi/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6789917808",
           "inLanguage": "vi",
           "description": "Người đi làm bận rộn cần luyện tập từ vựng phù hợp thời gian rảnh mà không cần bài học đầy đủ, tài khoản mới hoặc cầm điện thoại cho mỗi lần ôn tập. Wordmate: Learn 44 Languages khởi đi đúng từ vấn đề này.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wordmate"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wordmate"
           },
           "additionalProperty": [
             {

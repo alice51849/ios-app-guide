@@ -1,7 +1,7 @@
 ---
 title: "SaveTag: penanda buku AI — Simpan pautan, baca kemudian | iOS App"
 lang: "ms"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ms/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/ms/index.html"
 modified: "2026-09-03"
 app_store_id: "6802505528"
 verified_live: true
@@ -19,6 +19,6 @@ Simpan sekarang. Dan kali ini betul-betul dibaca. Sepanjang hari anda menghantar
 
 [Dapatkan SaveTag: penanda buku AI di App Store](https://apps.apple.com/my/app/id6802505528?pt=118326163&ct=iag_data_ms&mt=8)
 
-[Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/savetag.html)
+[Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/savetag.html)
 
 > Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.

@@ -1,7 +1,7 @@
 ---
 title: "Mochi DoneStamp: Ostatni raz — Pamięta, kiedy to zrobiono | iOS App"
 lang: "pl"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/pl/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/pl/index.html"
 modified: "2026-09-03"
 app_store_id: "6790800323"
 verified_live: true
@@ -19,6 +19,6 @@ Kiedy ostatnio zmieniono pościel, podlano roślinę, zadzwoniono do bliskich, z
 
 [Pobierz Mochi DoneStamp: Ostatni raz z App Store](https://apps.apple.com/pl/app/id6790800323?pt=118326163&ct=iag_data_pl&mt=8)
 
-[Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/mochidonestamp.html)
+[Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/mochidonestamp.html)
 
 > Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.

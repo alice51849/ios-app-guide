@@ -5,7 +5,7 @@
     "schema": "https://schema.org/",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html#dataset",
+  "@id": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.html#dataset",
   "@type": "dcat:Dataset",
   "dct:title": [
     {
@@ -27,7 +27,7 @@
       "@language": "zh-Hant"
     }
   ],
-  "dct:identifier": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.json",
+  "dct:identifier": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.json",
   "dct:publisher": {
     "@type": "schema:Organization",
     "schema:name": "Lumi Apps"
@@ -57,19 +57,19 @@
     "Traditional Chinese"
   ],
   "dcat:landingPage": {
-    "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+    "@id": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.html"
   },
   "dct:conformsTo": [
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.schema.json"
+      "@id": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.schema.json"
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.csv-metadata.json"
+      "@id": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.csv-metadata.json"
     }
   ],
   "dct:relation": [
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/tools/family-travel-mission-card-generator.html"
+      "@id": "https://open.cait518.cc/ios-app-guide/tools/family-travel-mission-card-generator.html"
     },
     {
       "@id": "https://alice51849.github.io/awesome-family-travel-missions/"
@@ -77,7 +77,7 @@
   ],
   "dcat:distribution": [
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.json",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.json",
       "@type": "dcat:Distribution",
       "dct:title": "Nested bilingual JSON distribution",
       "dct:format": "JSON",
@@ -85,14 +85,14 @@
         "@id": "https://www.iana.org/assignments/media-types/application/json"
       },
       "dcat:downloadURL": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.json"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.json"
       },
       "dcat:accessURL": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.html"
       }
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.csv",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.csv",
       "@type": "dcat:Distribution",
       "dct:title": "Flat UTF-8 CSV distribution",
       "dct:format": "CSV",
@@ -100,10 +100,10 @@
         "@id": "https://www.iana.org/assignments/media-types/text/csv"
       },
       "dcat:downloadURL": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.csv"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.csv"
       },
       "dcat:accessURL": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.html"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.html"
       }
     }
   ]

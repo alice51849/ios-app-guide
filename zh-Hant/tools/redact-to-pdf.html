@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>遮蔽後輸出 PDF — 免費、像素真的被清掉、不上傳</title>
 <meta name="description" content="在掃描檔或截圖上拖曳出要遮的區域，塗黑或打馬賽克後輸出已壓平的 PDF 或 PNG。被遮住的像素在輸出前就已經真的消失。">
-<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/redact-to-pdf.html">
-<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/redact-to-pdf.html">
-<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/redact-to-pdf.html">
-<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/ios-app-guide/ko/tools/redact-to-pdf.html">
-<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/redact-to-pdf.html">
-<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/redact-to-pdf.html">
-<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/redact-to-pdf.html">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/redact-to-pdf.html">
+<link rel="alternate" hreflang="en" href="https://open.cait518.cc/ios-app-guide/tools/redact-to-pdf.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/redact-to-pdf.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/redact-to-pdf.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/redact-to-pdf.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/redact-to-pdf.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/tools/redact-to-pdf.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="文件遮蔽並輸出 PDF">
 <meta property="og:description" content="在掃描檔或截圖上拖曳出要遮的區域，塗黑或打馬賽克後輸出已壓平的 PDF 或 PNG。被遮住的像素在輸出前就已經真的消失。">
-<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/redact-to-pdf.html">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/redact-to-pdf.html">
 <meta name="twitter:card" content="summary">
 <style>
 :root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
@@ -67,12 +67,12 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 
 @media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"文件遮蔽並輸出 PDF","description":"在掃描檔或截圖上拖曳出要遮的區域，塗黑或打馬賽克後輸出已壓平的 PDF 或 PNG。被遮住的像素在輸出前就已經真的消失。","url":"https://alice51849.github.io/ios-app-guide/zh-Hant/tools/redact-to-pdf.html","inLanguage":"zh-Hant","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["拖曳選取遮蔽區域","純黑與馬賽克兩種方式","輸出單頁壓平 PDF","可復原與重設，全在瀏覽器"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"文件遮蔽並輸出 PDF","description":"在掃描檔或截圖上拖曳出要遮的區域，塗黑或打馬賽克後輸出已壓平的 PDF 或 PNG。被遮住的像素在輸出前就已經真的消失。","url":"https://open.cait518.cc/ios-app-guide/zh-Hant/tools/redact-to-pdf.html","inLanguage":"zh-Hant","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["拖曳選取遮蔽區域","純黑與馬賽克兩種方式","輸出單頁壓平 PDF","可復原與重設，全在瀏覽器"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hant","mainEntity":[{"@type":"Question","name":"為什麼在 PDF 編輯器畫黑框不安全？","acceptedAnswer":{"@type":"Answer","text":"因為多數編輯器只是把黑框當成疊在上面的物件加進去，原本的文字仍在檔案裡，可以被選取、複製或抽取出來。像本頁這樣壓平成影像才是真的刪掉。"}},{"@type":"Question","name":"塗黑和馬賽克哪個安全？","acceptedAnswer":{"@type":"Answer","text":"純黑。格子太小的馬賽克，在被遮內容可預測（例如一組短數字）時有機會被還原。敏感資料請用純黑。"}},{"@type":"Question","name":"可以一次處理多頁嗎？","acceptedAnswer":{"@type":"Answer","text":"一次一張，輸出單頁 PDF。多頁文件請逐頁處理，再用下面的 JPG 轉 PDF 工具合併。"}}]}</script>
 <link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
-<header class="top"><div class="wrap nav"><a href="index.html">← 免費工具</a><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/" >iOS App Guide</a></div></header>
+<header class="top"><div class="wrap nav"><a href="index.html">← 免費工具</a><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/" >iOS App Guide</a></div></header>
 <section class="hero wrap">
 <span class="eyebrow">是清掉不是蓋住 · 壓平輸出</span>
 <h1>文件遮蔽並輸出 PDF</h1>
@@ -105,7 +105,7 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 <section class="grid">
 <article class="card"><h2>運作方式</h2><ol><li>影像會畫在 canvas 上（長邊最多 2000 px），每個遮蔽都直接畫進那些像素，不會另存成圖層。</li><li>純黑模式把區域整個填黑；馬賽克模式逐格計算平均色再寫回去，區域內不會留下任何原始數值。</li><li>輸出時把完成的 canvas 重新編碼成 JPEG，再包進本頁自行產生的最小單頁 PDF，PDF 裡只有那張壓平的影像。</li><li>「復原」會移除最後一個區域並從原圖重畫，畫錯不用重來。</li></ol></article>
 <article class="card"><h2>這個工具不會做的事</h2><ul><li>無法直接開啟 PDF。瀏覽器沒有外部函式庫就無法繪製 PDF 頁面，而本頁完全不載入外部程式。請先把檔案輸出成影像或截圖——這件事本身也正是遮蔽能安全的前提。</li><li>不會移除來源檔的中繼資料，因為根本沒有讀它；輸出的是重新繪製的 canvas。</li><li>不上傳，關掉分頁後不留任何副本。</li></ul></article>
-<article class="card wide"><h2>其他免費工具</h2><ul><li><a href="math-worksheet-generator.html">數學練習題產生器</a></li><li><a href="duplicate-photo-finder.html">重複照片偵測</a></li><li><a href="flashcard-maker.html">單字卡製作</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
+<article class="card wide"><h2>其他免費工具</h2><ul><li><a href="math-worksheet-generator.html">數學練習題產生器</a></li><li><a href="duplicate-photo-finder.html">重複照片偵測</a></li><li><a href="flashcard-maker.html">單字卡製作</a></li><li><a href="https://open.cait518.cc/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
 </section>
 <section class="faq"><h2>常見問題</h2><details><summary>為什麼在 PDF 編輯器畫黑框不安全？</summary><p>因為多數編輯器只是把黑框當成疊在上面的物件加進去，原本的文字仍在檔案裡，可以被選取、複製或抽取出來。像本頁這樣壓平成影像才是真的刪掉。</p></details><details><summary>塗黑和馬賽克哪個安全？</summary><p>純黑。格子太小的馬賽克，在被遮內容可預測（例如一組短數字）時有機會被還原。敏感資料請用純黑。</p></details><details><summary>可以一次處理多頁嗎？</summary><p>一次一張，輸出單頁 PDF。多頁文件請逐頁處理，再用下面的 JPG 轉 PDF 工具合併。</p></details></section>
 <section class="app-card"><h2>常常需要在 iPhone 上遮蔽檔案嗎？</h2>

@@ -1,7 +1,7 @@
 ---
 title: "SaveTag: tekoälykirjanmerkit — Tallenna linkit, lue myöhemmin | iOS App"
 lang: "fi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/fi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/fi/index.html"
 modified: "2026-09-03"
 app_store_id: "6802505528"
 verified_live: true
@@ -19,6 +19,6 @@ Tallenna nyt. Lue oikeasti myöhemmin. Lähetät itsellesi linkkejä pitkin päi
 
 [Lataa SaveTag: tekoälykirjanmerkit App Storesta](https://apps.apple.com/fi/app/id6802505528?pt=118326163&ct=iag_data_fi&mt=8)
 
-[Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/savetag.html)
+[Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/savetag.html)
 
 > Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.

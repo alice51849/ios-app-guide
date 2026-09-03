@@ -1,7 +1,7 @@
 ---
 title: "SaveTag:AI 链接收藏 — 稍后阅读,自动打标签 | iOS App"
 lang: "zh-Hans"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/zh-Hans/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/zh-Hans/index.html"
 modified: "2026-09-03"
 app_store_id: "6802505528"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [在 App Store 获取 SaveTag:AI 链接收藏](https://apps.apple.com/cn/app/id6802505528?pt=118326163&ct=iag_data_zh_hans&mt=8)
 
-[阅读完整指南](https://alice51849.github.io/ios-app-guide/zh-Hans/savetag.html)
+[阅读完整指南](https://open.cait518.cc/ios-app-guide/zh-Hans/savetag.html)
 
 > 这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。

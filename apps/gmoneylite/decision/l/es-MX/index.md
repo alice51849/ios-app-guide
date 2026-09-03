@@ -1,7 +1,7 @@
 ---
 title: "G+Money Lite: Gastos de viaje — Gastos, presupuesto y divisas | iOS App"
 lang: "es-MX"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/es-MX/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/es-MX/index.html"
 modified: "2026-09-03"
 app_store_id: "6793436548"
 verified_live: true
@@ -25,6 +25,6 @@ G+Money Lite — Conversor de divisas y gastos de viaje El dinero del viaje, fá
 
 [Consigue G+Money Lite: Gastos de viaje en el App Store](https://apps.apple.com/mx/app/id6793436548?pt=118326163&ct=iag_data_es_mx&mt=8)
 
-[Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/gmoneylite.html)
+[Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/gmoneylite.html)
 
 > Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.

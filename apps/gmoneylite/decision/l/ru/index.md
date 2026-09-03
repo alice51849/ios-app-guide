@@ -1,7 +1,7 @@
 ---
 title: "G+Money Lite: Траты в поездке — Расходы, бюджет и валюта | iOS App"
 lang: "ru"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ru/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/ru/index.html"
 modified: "2026-09-03"
 app_store_id: "6793436548"
 verified_live: true
@@ -25,6 +25,6 @@ G+Money Lite — Умный трекер валюты и расходов для
 
 [Установить G+Money Lite: Траты в поездке в App Store](https://apps.apple.com/ru/app/id6793436548?pt=118326163&ct=iag_data_ru&mt=8)
 
-[Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/gmoneylite.html)
+[Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/gmoneylite.html)
 
 > Это материал, созданный Lumi Studio, разработчиком всех перечисленных приложений.

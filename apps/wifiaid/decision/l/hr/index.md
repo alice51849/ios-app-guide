@@ -1,7 +1,7 @@
 ---
 title: "WiFi Aid: Dijagnostika mreže — Dijagnostika mreže s dokazima | iOS App"
 lang: "hr"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/hr/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/hr/index.html"
 modified: "2026-09-03"
 app_store_id: "6790467886"
 verified_live: true
@@ -19,6 +19,6 @@ Pronađite najvjerojatniji uzrok neovisnim provjerama putanja, DNS-a, TCP-a, TLS
 
 [Preuzmite WiFi Aid: Dijagnostika mreže u App Storeu](https://apps.apple.com/hr/app/id6790467886?pt=118326163&ct=iag_data_hr&mt=8)
 
-[Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/wifiaid.html)
+[Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/wifiaid.html)
 
 > Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.

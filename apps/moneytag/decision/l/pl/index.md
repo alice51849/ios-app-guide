@@ -1,7 +1,7 @@
 ---
 title: "MoneyTag: Przychody i wydatki — Projekty · Tagi · Raport | iOS App"
 lang: "pl"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/pl/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/pl/index.html"
 modified: "2026-09-03"
 app_store_id: "6801956402"
 verified_live: true
@@ -26,6 +26,6 @@ Przychody i wydatki Każdy projekt prowadzi własną księgę: przychody minus w
 
 [Pobierz MoneyTag: Przychody i wydatki z App Store](https://apps.apple.com/pl/app/id6801956402?pt=118326163&ct=iag_data_pl&mt=8)
 
-[Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/moneytag.html)
+[Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/moneytag.html)
 
 > Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.

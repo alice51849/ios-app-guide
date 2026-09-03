@@ -1,7 +1,7 @@
 ---
 title: "ನರ್ಸುಗಳಿಗೆ ಕ್ಲೌಡ್ ಇಲ್ಲದ ಉತ್ತಮ ಆಫ್‌ಲೈನ್ ಡಾಕ್ಯುಮೆಂಟ್ ಸ್ಕ್ಯಾನರ್ ಆಪ್"
 lang: "kn-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/kn-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/kn-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6779977651"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [App Store ನಲ್ಲಿ ScanTo Pro ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6779977651?pt=118326163&ct=iag_data_kn_in&mt=8)
 
-[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
+[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 
 > ಆ್ಯಪ್ ಡೆವಲಪರ್ Lumi Studio ಬರೆದ ಮಾರ್ಗದರ್ಶಿ. ಆ್ಯಪ್‌ಗಳ ಹೆಸರುಗಳು ಅವುಗಳ ಮಾಲೀಕರ ವ್ಯಾಪಾರ ಚಿಹ್ನೆಗಳು; ಗುರುತಿಸಲು ಮಾತ್ರ ಬಳಸಲಾಗಿದೆ. ದಾಖಲೆ, ಆರೋಗ್ಯ, ಶಾಲೆ ಮತ್ತು ಉತ್ಪಾದಕತೆಗೆ ಸಂಬಂಧಿಸಿದ ನಿರ್ಧಾರಗಳಲ್ಲಿ ಅಗತ್ಯವಿರುವ ಕಡೆ ಅಧಿಕೃತ ನಿಯಮಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.

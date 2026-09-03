@@ -20,6 +20,7 @@ from pathlib import Path
 from typing import Any
 
 from official_locales import OFFICIAL_LOCALES
+from site_config import PUBLIC_SITE  # noqa: E402
 
 
 ROOT = Path(
@@ -29,7 +30,7 @@ ROOT = Path(
     )
 ).resolve()
 ANSWERS = ROOT / "answers"
-BASE_URL = "https://alice51849.github.io/ios-app-guide"
+BASE_URL = PUBLIC_SITE
 OLLAMA_ENDPOINT = os.environ.get(
     "OLLAMA_ENDPOINT", "http://127.0.0.1:11434/api/chat"
 )
@@ -1974,13 +1975,13 @@ def localize_body_links(source: str, lang: str) -> str:
 
     source = re.sub(
         r'(<a\b[^>]*\bhref=")'
-        r'(https://alice51849\.github\.io/ios-app-guide/[^"]+)(")',
+        rf'({re.escape(BASE_URL)}/[^"]+)(")',
         repl,
         source,
     )
     return re.sub(
         r'(<meta\b[^>]*\bhttp-equiv="refresh"[^>]*\bcontent="\d+;url=)'
-        r'(https://alice51849\.github\.io/ios-app-guide/[^"]+)(")',
+        rf'({re.escape(BASE_URL)}/[^"]+)(")',
         repl,
         source,
         flags=re.I,

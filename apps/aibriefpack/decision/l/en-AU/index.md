@@ -1,7 +1,7 @@
 ---
 title: "best private app to organize screenshots and documents into context before using AI"
 lang: "en-AU"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/en-AU/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/en-AU/index.html"
 modified: "2026-09-03"
 app_store_id: "6791658210"
 verified_live: true
@@ -20,6 +20,6 @@ A private AI-context workflow should let you assemble the complete source set, i
 
 [Get AI Brief on the App Store →](https://apps.apple.com/au/app/id6791658210?pt=118326163&ct=iag_data_en_au&mt=8)
 
-[Read the full guide](https://alice51849.github.io/ios-app-guide/en-AU/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html)
+[Read the full guide](https://open.cait518.cc/ios-app-guide/en-AU/answers/best-private-app-to-organize-screenshots-and-documents-into-context-before-using-ai.html)
 
 > Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

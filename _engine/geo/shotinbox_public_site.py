@@ -15,13 +15,14 @@ from official_locales import (
     require_official_locale_coverage,
 )
 import live_app_guard
+from site_config import PUBLIC_SITE  # noqa: E402
 
 
 APP_NAME = "ShotInbox"
 APP_STORE_ID = "6802166527"
 APP_SLUG = "shotinbox"
 BASE_URL = (
-    "https://alice51849.github.io/ios-app-guide/apps/shotinbox/"
+    f"{PUBLIC_SITE}/apps/shotinbox/"
 )
 SUPPORT_EMAIL = "hourstag.app@gmail.com"
 POLICY_VERSION = "2026-08-17"

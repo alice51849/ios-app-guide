@@ -1,7 +1,7 @@
 ---
 title: "OnePage PPT : diapo IA — Vos notes en une diapo | iOS App"
 lang: "fr-FR"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/fr-FR/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/fr-FR/index.html"
 modified: "2026-09-03"
 app_store_id: "6798814385"
 verified_live: true
@@ -19,6 +19,6 @@ Transformez un mur de texte en UNE diapo réellement lue. OnePage PPT analyse to
 
 [Obtenir OnePage PPT : diapo IA sur l'App Store](https://apps.apple.com/fr/app/id6798814385?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
-[Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/onepageppt.html)
+[Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-FR/onepageppt.html)
 
 > Ce contenu est publié directement par Lumi Studio, le développeur de chaque application répertoriée.

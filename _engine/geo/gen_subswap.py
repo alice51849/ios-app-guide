@@ -24,10 +24,11 @@ import subprocess
 import urllib.request
 
 from app_store_storefronts import campaign_app_store_url
+from site_config import PUBLIC_SITE  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.path.join(HERE, "pages")
-SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
+SITE = os.environ.get("GEO_SITE", PUBLIC_SITE).rstrip("/")
 TODAY = _dt.date.today().isoformat()
 PRICE_ASOF = "2026-07"
 

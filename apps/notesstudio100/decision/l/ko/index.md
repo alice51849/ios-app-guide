@@ -1,7 +1,7 @@
 ---
 title: "100 Notes Studio: Pen & Paper — 필기 노트·PDF 주석 | iOS App"
 lang: "ko"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/ko/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/notesstudio100/decision/l/ko/index.html"
 modified: "2026-09-03"
 app_store_id: "6798813048"
 verified_live: true
@@ -22,6 +22,6 @@ publisher: "Lumi Studio"
 
 [App Store에서 100 Notes Studio: Pen & Paper 받기](https://apps.apple.com/kr/app/id6798813048?pt=118326163&ct=iag_data_ko&mt=8)
 
-[전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/notesstudio100.html)
+[전체 안내서 읽기](https://open.cait518.cc/ios-app-guide/ko/notesstudio100.html)
 
 > 이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.

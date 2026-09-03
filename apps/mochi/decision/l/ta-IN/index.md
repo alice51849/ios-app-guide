@@ -1,7 +1,7 @@
 ---
 title: "சந்தா இல்லாத சிறந்த எளிய To Do பட்டியல் பயன்பாடு iPhone-க்கு"
 lang: "ta-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/ta-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/ta-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6785004775"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [App Store-இல் Mochi பெறவும் →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=iag_data_ta_in&mt=8)
 
-[முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
+[முழு வழிகாட்டியை படிக்கவும்](https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 
 > செயலியை உருவாக்கிய Lumi Studio எழுதிய வழிகாட்டி. செயலிகளின் பெயர்கள் அவற்றின் உரிமையாளர்களின் வர்த்தக முத்திரைகள்; அடையாளம் காட்டுவதற்காக மட்டுமே பயன்படுத்தப்படுகின்றன. ஆவணங்கள், உடல்நலம், பள்ளி, வேலைத் திறன் தொடர்பான முடிவுகளுக்கு, தேவைப்படும் இடங்களில் அதிகாரப்பூர்வ விதிமுறைகளைச் சரிபார்க்கவும்.

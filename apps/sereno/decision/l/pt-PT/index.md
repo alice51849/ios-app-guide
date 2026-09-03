@@ -1,7 +1,7 @@
 ---
 title: "melhor app de ruído branco para adormecer sem subscrição"
 lang: "pt-PT"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/pt-PT/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/pt-PT/index.html"
 modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
@@ -21,6 +21,6 @@ Para dormir, uma subscrição que incomoda todos os meses é o oposto de repousa
 
 [Obtenha o Sereno na App Store →](https://apps.apple.com/pt/app/id6788236641?pt=118326163&ct=iag_data_pt_pt&mt=8)
 
-[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
+[Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 
 > Guia da autoria do editor Lumi Studio, o programador da app. Os nomes das apps são marcas dos seus proprietários e são usados apenas para identificação. Para decisões sobre documentos, saúde, escola e produtividade, verifique os requisitos oficiais quando relevante.

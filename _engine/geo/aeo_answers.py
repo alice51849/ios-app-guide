@@ -27,7 +27,8 @@ PAGES_ROOT = Path(
     os.environ.get("GEO_PAGES", ROOT / "pages")
 ).resolve()
 ANSWERS_DIR = PAGES_ROOT / "answers"
-SITE = "https://alice51849.github.io/ios-app-guide"
+from site_config import PUBLIC_SITE  # noqa: E402
+SITE = PUBLIC_SITE
 MODEL = "gpt-4o-mini"
 OPENAI_ENDPOINT = "https://api.openai.com/v1/chat/completions"
 

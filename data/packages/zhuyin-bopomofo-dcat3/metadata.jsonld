@@ -19,11 +19,11 @@
     }
   },
   "@type": "DataCatalog",
-  "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#catalog",
+  "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#catalog",
   "name": "Bopomofo DCAT 3 open-data catalog",
   "alternateName": "注音 DCAT 3 開放資料目錄",
   "description": "Download a static W3C DCAT 3 catalog covering sixteen verified Bopomofo datasets and 80 exact distributions.",
-  "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
+  "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
   "identifier": "LUMI-ZHUYIN-DCAT3-2026",
   "version": "1.5.0",
   "datePublished": "2026-07-11",
@@ -36,123 +36,123 @@
   "isAccessibleForFree": true,
   "creator": {
     "@type": "Organization",
-    "@id": "https://alice51849.github.io/ios-app-guide/#organization",
+    "@id": "https://open.cait518.cc/ios-app-guide/#organization",
     "name": "Lumi Apps - iOS App Guide",
-    "url": "https://alice51849.github.io/ios-app-guide"
+    "url": "https://open.cait518.cc/ios-app-guide"
   },
   "conformsTo": "https://www.w3.org/TR/vocab-dcat-3/",
   "numberOfItems": 16,
   "dataset": [
     {
       "@type": "Dataset",
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-symbols",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-symbols",
       "name": "Complete 37-symbol Bopomofo reference data",
-      "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.html",
+      "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.html",
       "dateModified": "2026-07-11"
     },
     {
       "@type": "Dataset",
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-skos",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-skos",
       "name": "Bopomofo SKOS linked-open-data vocabulary",
-      "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html",
+      "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html",
       "dateModified": "2026-07-11"
     },
     {
       "@type": "Dataset",
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-croissant",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-croissant",
       "name": "Bopomofo table with Croissant 1.1 and CSVW metadata",
-      "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html",
+      "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html",
       "dateModified": "2026-07-11"
     },
     {
       "@type": "Dataset",
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-data-package",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-data-package",
       "name": "Bopomofo Frictionless Data Package 2.0",
-      "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo/",
+      "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/",
       "dateModified": "2026-07-11T00:00:00Z"
     },
     {
       "@type": "Dataset",
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-bagit",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-bagit",
       "name": "Bopomofo RFC 8493 BagIt preservation package",
-      "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/",
+      "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/",
       "dateModified": "2026-07-11"
     },
     {
       "@type": "Dataset",
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ocfl",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ocfl",
       "name": "Bopomofo OCFL 1.1 preservation object",
-      "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/",
+      "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/",
       "dateModified": "2026-07-11T17:19:58Z"
     },
     {
       "@type": "Dataset",
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-iiif",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-iiif",
       "name": "Complete Bopomofo IIIF Presentation API 3 resource",
-      "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html",
+      "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html",
       "dateModified": "2026-07-11T17:50:00Z"
     },
     {
       "@type": "Dataset",
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ro-crate",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ro-crate",
       "name": "Bopomofo RO-Crate 1.3 research object",
-      "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
+      "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
       "dateModified": "2026-09-03"
     },
     {
       "@type": "Dataset",
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-mets-premis",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-mets-premis",
       "name": "Bopomofo METS 2.0 and PREMIS 3.0 preservation package",
-      "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/",
+      "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/",
       "dateModified": "2026-07-11T20:08:50Z"
     },
     {
       "@type": "Dataset",
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-oai-ore",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-oai-ore",
       "name": "Bopomofo OAI-ORE 1.0 Resource Map",
-      "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/",
+      "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/",
       "dateModified": "2026-07-11T21:45:19Z"
     },
     {
       "@type": "Dataset",
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ldes",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-ldes",
       "name": "Bopomofo LDES 1.0 and TREE event stream",
-      "url": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/",
+      "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/",
       "dateModified": "2026-07-11T21:36:15Z"
     },
     {
       "@type": "Dataset",
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-anki",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-anki",
       "name": "Bopomofo Anki import decks",
-      "url": "https://alice51849.github.io/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.html",
+      "url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-bopomofo-anki-deck.html",
       "dateModified": "2026-07-11"
     },
     {
       "@type": "Dataset",
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-lms",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-lms",
       "name": "Bopomofo LMS assessment bank",
-      "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html",
+      "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html",
       "dateModified": "2026-07-11"
     },
     {
       "@type": "Dataset",
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-epub",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-epub",
       "name": "Bopomofo EPUB 3.3 publication and OPDS catalogs",
-      "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html",
+      "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html",
       "dateModified": "2026-07-11T10:45:50Z"
     },
     {
       "@type": "Dataset",
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-library",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-library",
       "name": "Bopomofo EPUB library catalog records",
-      "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html",
+      "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html",
       "dateModified": "2026-07-11T10:45:50Z"
     },
     {
       "@type": "Dataset",
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-oer-metadata",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html#dataset-oer-metadata",
       "name": "Bopomofo OER repository metadata",
-      "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html",
+      "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html",
       "dateModified": "2026-07-11T13:00:48Z"
     }
   ],
@@ -161,7 +161,7 @@
       "@type": "DataDownload",
       "name": "Complete ZIP bundle",
       "encodingFormat": "application/zip",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog-dcat3-bundle.zip",
       "contentSize": "28822 bytes",
       "sha256": "aa45bf410ee69234d12f51e1efcc1323b1bd26f894539030149e6abd83e3d730"
     },
@@ -169,7 +169,7 @@
       "@type": "DataDownload",
       "name": "DCAT 3 JSON-LD",
       "encodingFormat": "application/ld+json",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.jsonld",
       "contentSize": "218434 bytes",
       "sha256": "67141f65651e0d606051edf1f85ae26dea2e3d4e5635b63c75e1ff448bcbeb68"
     },
@@ -177,7 +177,7 @@
       "@type": "DataDownload",
       "name": "DCAT 3 Turtle",
       "encodingFormat": "text/turtle",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-dcat3/bopomofo-open-data-catalog.dcat.ttl",
       "contentSize": "148253 bytes",
       "sha256": "91c2b7fd656f610576d08511d661715fecfa77cd40af361cb539d9dd881825fa"
     }

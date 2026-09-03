@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.schema.json",
+  "$id": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.schema.json",
   "title": "Privacy-first family travel mission taxonomy",
   "description": "Schema for the bilingual family travel mission taxonomy.",
   "type": "object",
@@ -30,7 +30,7 @@
   ],
   "properties": {
     "$schema": {
-      "const": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.schema.json"
+      "const": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.schema.json"
     },
     "name": {
       "type": "string",
@@ -47,7 +47,7 @@
       "$ref": "#/$defs/localizedString"
     },
     "identifier": {
-      "const": "https://alice51849.github.io/ios-app-guide/data/family-travel-missions.json"
+      "const": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.json"
     },
     "license": {
       "const": "https://creativecommons.org/licenses/by/4.0/"

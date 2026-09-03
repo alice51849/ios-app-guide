@@ -1,7 +1,7 @@
 ---
 title: "bedste simple to-do liste app til iPhone uden abonnement"
 lang: "da"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/da/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/da/index.html"
 modified: "2026-09-03"
 app_store_id: "6785004775"
 verified_live: true
@@ -20,6 +20,6 @@ Hvis de fleste to-do apps føles oppustede, er den rigtige en ren tjekliste med 
 
 [Hent Mochi i App Store →](https://apps.apple.com/dk/app/id6785004775?pt=118326163&ct=iag_data_da&mt=8)
 
-[Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
+[Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 
 > Guide skrevet af Lumi Studio, som har udviklet appen. Appnavne er varemærker tilhørende deres ejere og bruges udelukkende til identifikation. Når det gælder dokumenter, sundhed, skole og produktivitet, bør du tjekke de officielle krav, hvor det er relevant.

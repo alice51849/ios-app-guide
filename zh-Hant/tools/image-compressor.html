@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>圖片壓縮 — 免費線上壓縮，壓縮前後檔案大小直接顯示</title>
 <meta name="description" content="選長邊、選畫質，下載前就看得到壓縮前與壓縮後的實際檔案大小。全程在瀏覽器完成，不上傳、不加浮水印、免註冊。">
-<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/image-compressor.html">
-<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/image-compressor.html">
-<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/image-compressor.html">
-<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/image-compressor.html">
-<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/image-compressor.html">
-<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/image-compressor.html">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/image-compressor.html">
+<link rel="alternate" hreflang="en" href="https://open.cait518.cc/ios-app-guide/tools/image-compressor.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/image-compressor.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/image-compressor.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/image-compressor.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/tools/image-compressor.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="壓縮圖片">
 <meta property="og:description" content="選長邊、選畫質，下載前就看得到壓縮前與壓縮後的實際檔案大小。全程在瀏覽器完成，不上傳、不加浮水印、免註冊。">
-<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/image-compressor.html">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/image-compressor.html">
 <meta name="twitter:card" content="summary">
 <style>
 :root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
@@ -66,12 +66,12 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 
 @media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"壓縮圖片","description":"選長邊、選畫質，下載前就看得到壓縮前與壓縮後的實際檔案大小。全程在瀏覽器完成，不上傳、不加浮水印、免註冊。","url":"https://alice51849.github.io/ios-app-guide/zh-Hant/tools/image-compressor.html","inLanguage":"zh-Hant","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["依長邊縮放","JPEG、WebP 輸出與畫質滑桿","顯示前後位元組數與最終像素尺寸","完全在瀏覽器內執行"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"壓縮圖片","description":"選長邊、選畫質，下載前就看得到壓縮前與壓縮後的實際檔案大小。全程在瀏覽器完成，不上傳、不加浮水印、免註冊。","url":"https://open.cait518.cc/ios-app-guide/zh-Hant/tools/image-compressor.html","inLanguage":"zh-Hant","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["依長邊縮放","JPEG、WebP 輸出與畫質滑桿","顯示前後位元組數與最終像素尺寸","完全在瀏覽器內執行"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hant","mainEntity":[{"@type":"Question","name":"照片會被上傳嗎？","acceptedAnswer":{"@type":"Answer","text":"不會。解碼、縮放、重新編碼都由你自己的瀏覽器完成。頁面載入後開飛航模式也照樣能用。"}},{"@type":"Question","name":"JPEG 和 WebP 該選哪個？","acceptedAnswer":{"@type":"Answer","text":"同樣觀感下 WebP 通常小 20–35%，現行瀏覽器與 iOS 都支援。只有在表單明確要求 .jpg 時才選 JPEG。"}},{"@type":"Question","name":"為什麼 PNG 壓完反而變大？","acceptedAnswer":{"@type":"Answer","text":"截圖、線稿這類大片單色的圖，PNG 本來就比 JPEG 小。這時頁面會顯示「+」，請直接留用原檔。"}},{"@type":"Question","name":"會移除定位資訊嗎？","acceptedAnswer":{"@type":"Answer","text":"經過 canvas 重新編碼後 EXIF（含 GPS）會消失。但這是副作用、不是隱私保證；重要照片請自行檢查輸出的副本。"}}]}</script>
 <link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
-<header class="top"><div class="wrap nav"><a href="index.html">← 免費工具</a><a href="https://alice51849.github.io/ios-app-guide/zh-Hant/" >iOS App Guide</a></div></header>
+<header class="top"><div class="wrap nav"><a href="index.html">← 免費工具</a><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/" >iOS App Guide</a></div></header>
 <section class="hero wrap">
 <span class="eyebrow">瀏覽器內完成 · 顯示實際前後大小</span>
 <h1>壓縮圖片</h1>
@@ -106,7 +106,7 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 <section class="grid">
 <article class="card"><h2>運作方式</h2><ol><li>檔案在本機讀取並由瀏覽器解碼，不會送到任何伺服器。</li><li>依照你選的長邊在 canvas 上重繪，底色填白，所以透明 PNG 仍然看得清楚。</li><li>用你選的畫質重新編碼成 JPEG 或 WebP，並實際量測產生的位元組數。</li><li>下載連結指向這份資料；改任何設定都會立刻重新編碼。</li></ol></article>
 <article class="card"><h2>這個工具不會做的事</h2><ul><li>不會宣稱固定的「縮小 90%」——壓縮率完全取決於圖片，所以只顯示實測值。</li><li>無法把失去的細節補回來。輸出的副本縮小後不可逆，但你的原始檔完全不受影響。</li><li>沒有上傳、沒有排隊、不用帳號、沒有浮水印。</li></ul></article>
-<article class="card wide"><h2>其他免費工具</h2><ul><li><a href="white-noise-generator.html">白噪音產生器</a></li><li><a href="sleep-cycle-calculator.html">幾點睡才好？</a></li><li><a href="packing-list-generator.html">行李清單產生器</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
+<article class="card wide"><h2>其他免費工具</h2><ul><li><a href="white-noise-generator.html">白噪音產生器</a></li><li><a href="sleep-cycle-calculator.html">幾點睡才好？</a></li><li><a href="packing-list-generator.html">行李清單產生器</a></li><li><a href="https://open.cait518.cc/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
 </section>
 <section class="faq"><h2>常見問題</h2><details><summary>照片會被上傳嗎？</summary><p>不會。解碼、縮放、重新編碼都由你自己的瀏覽器完成。頁面載入後開飛航模式也照樣能用。</p></details><details><summary>JPEG 和 WebP 該選哪個？</summary><p>同樣觀感下 WebP 通常小 20–35%，現行瀏覽器與 iOS 都支援。只有在表單明確要求 .jpg 時才選 JPEG。</p></details><details><summary>為什麼 PNG 壓完反而變大？</summary><p>截圖、線稿這類大片單色的圖，PNG 本來就比 JPEG 小。這時頁面會顯示「+」，請直接留用原檔。</p></details><details><summary>會移除定位資訊嗎？</summary><p>經過 canvas 重新編碼後 EXIF（含 GPS）會消失。但這是副作用、不是隱私保證；重要照片請自行檢查輸出的副本。</p></details></section>
 <section class="app-card"><h2>常常用 iPhone 掃描或傳送文件嗎？</h2>

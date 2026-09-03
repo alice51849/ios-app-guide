@@ -1,7 +1,7 @@
 ---
 title: "najbolja aplikacija za glasovne bilješke koja sažima sastanke na iPhoneu"
 lang: "hr"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/hr/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/hr/index.html"
 modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
@@ -20,6 +20,6 @@ Nakon poziva ne želite sirovi transkript — želite sažetak, zadatke i nacrt 
 
 [Preuzmite Sono Note u App Storeu →](https://apps.apple.com/hr/app/id6782139553?pt=118326163&ct=iag_data_hr&mt=8)
 
-[Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
+[Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 
 > Vodič je napisao Lumi Studio, razvojni tim aplikacije. Nazivi aplikacija zaštitni su znakovi svojih vlasnika i navode se samo radi identifikacije. Kod odluka vezanih uz dokumente, zdravlje, školu i produktivnost provjerite službene zahtjeve ondje gdje je to važno.

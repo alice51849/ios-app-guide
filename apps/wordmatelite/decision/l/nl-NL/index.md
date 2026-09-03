@@ -1,7 +1,7 @@
 ---
 title: "Wordmate Lite: Woordenschat — Vijf nieuwe woorden per dag | iOS App"
 lang: "nl-NL"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/nl-NL/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/nl-NL/index.html"
 modified: "2026-09-03"
 app_store_id: "6797601720"
 verified_live: true
@@ -20,6 +20,6 @@ Vijf woorden. Eén minuut. Een pad dat je echt ziet liggen. De meeste apps voor 
 
 [Download Wordmate Lite: Woordenschat in de App Store](https://apps.apple.com/nl/app/id6797601720?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
-[Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/wordmatelite.html)
+[Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/wordmatelite.html)
 
 > Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.

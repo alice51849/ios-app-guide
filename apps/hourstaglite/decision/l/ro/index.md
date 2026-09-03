@@ -1,7 +1,7 @@
 ---
 title: "HoursTag Lite: Preț în ore — Descoperă prisma valorii | iOS App"
 lang: "ro"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ro/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/ro/index.html"
 modified: "2026-09-03"
 app_store_id: "6794039979"
 verified_live: true
@@ -24,6 +24,6 @@ HoursTag Lite - Vezi adevărata valoare a lucrurilor Fiecare achiziție costă o
 
 [Descarcă HoursTag Lite: Preț în ore din App Store](https://apps.apple.com/ro/app/id6794039979?pt=118326163&ct=iag_data_ro&mt=8)
 
-[Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/hourstaglite.html)
+[Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/hourstaglite.html)
 
 > Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.

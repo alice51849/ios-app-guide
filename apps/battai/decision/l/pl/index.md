@@ -1,7 +1,7 @@
 ---
 title: "BattAI: Wynik kondycji baterii — Jasne zasady, źródła i granice | iOS App"
 lang: "pl"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/pl/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/pl/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI korzysta z pięciu wartości dostępnych w publicznych API iOS: po
 
 [Pobierz BattAI: Wynik kondycji baterii z App Store](https://apps.apple.com/pl/app/id6802423998?pt=118326163&ct=iag_data_pl&mt=8)
 
-[Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/battai.html)
+[Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/battai.html)
 
 > Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.

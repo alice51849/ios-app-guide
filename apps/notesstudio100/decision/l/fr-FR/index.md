@@ -1,7 +1,7 @@
 ---
 title: "100 Notes Studio: Pen & Paper — Cahier manuscrit et PDF | iOS App"
 lang: "fr-FR"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/fr-FR/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/notesstudio100/decision/l/fr-FR/index.html"
 modified: "2026-09-03"
 app_store_id: "6798813048"
 verified_live: true
@@ -22,6 +22,6 @@ Une seule app au lieu d'en jongler avec cinq. 100 Notes Studio est un atelier pa
 
 [Obtenir 100 Notes Studio: Pen & Paper sur l'App Store](https://apps.apple.com/fr/app/id6798813048?pt=118326163&ct=iag_data_fr_fr&mt=8)
 
-[Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-FR/notesstudio100.html)
+[Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-FR/notesstudio100.html)
 
 > Ce contenu est publié directement par Lumi Studio, le développeur de chaque application répertoriée.

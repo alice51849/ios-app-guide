@@ -39,9 +39,10 @@ from app_pairs import (  # noqa: E402
     free_to_paid, paid_name_re, paid_slug_re, paid_to_free,
     strip_paid_nav_anchors,
 )
+from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
-SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
+SITE = os.environ.get("GEO_SITE", PUBLIC_SITE).rstrip("/")
 LABELS_CACHE = HERE / "reports" / "store_reach_labels.json"
 
 BLOCK_START = "<!-- store-reach:start -->"

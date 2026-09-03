@@ -1,7 +1,7 @@
 ---
 title: "Snapport Lite：在家製作證件照 — 在家製作證件照 | iOS App"
 lang: "zh-Hant"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/zh-Hant/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/zh-Hant/index.html"
 modified: "2026-09-03"
 app_store_id: "6792856304"
 verified_live: true
@@ -20,6 +20,6 @@ Snapport Lite - 透過尺寸引導、背景工具與可列印輸出，製作護�
 
 [在 App Store 取得 Snapport Lite：在家製作證件照](https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
-[閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/snapportlite.html)
+[閱讀完整指南](https://open.cait518.cc/ios-app-guide/zh-Hant/snapportlite.html)
 
 > 這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。

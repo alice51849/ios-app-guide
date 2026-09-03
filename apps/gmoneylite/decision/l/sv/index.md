@@ -1,7 +1,7 @@
 ---
 title: "G+Money Lite: Reseutgifter — Budget, utgifter & valuta | iOS App"
 lang: "sv"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/sv/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/sv/index.html"
 modified: "2026-09-03"
 app_store_id: "6793436548"
 verified_live: true
@@ -25,6 +25,6 @@ G+Money Lite — Smart resevaluta- & utgiftsspårare Reskassan, enkelt Registrer
 
 [Hämta G+Money Lite: Reseutgifter i App Store](https://apps.apple.com/se/app/id6793436548?pt=118326163&ct=iag_data_sv&mt=8)
 
-[Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/gmoneylite.html)
+[Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/gmoneylite.html)
 
 > Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.

@@ -12,12 +12,13 @@ from urllib.parse import urlsplit
 from xml.sax.saxutils import escape as xml_escape
 
 from family_travel_dataset import write_text_if_changed
+from site_config import PUBLIC_SITE  # noqa: E402
 
 
 HERE = Path(__file__).resolve().parent
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 ROOT_API_CATALOG = os.environ.get(
     "GEO_ROOT_API_CATALOG",

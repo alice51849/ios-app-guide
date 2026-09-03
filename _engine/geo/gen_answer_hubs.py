@@ -11,10 +11,11 @@ AI 爬蟲與搜尋引擎難以整批發現。此工具為每個有答案頁的�
 """
 import os, re, sys, html, json, argparse
 from pathlib import Path
+from site_config import PUBLIC_SITE  # noqa: E402
 
 HERE = Path(os.path.dirname(os.path.abspath(__file__)))
 PAGES = HERE / "pages"
-SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
+SITE = os.environ.get("GEO_SITE", PUBLIC_SITE).rstrip("/")
 
 # 各語言 hub 的在地化文案(agent 母語自產;繁中用台灣用語)。
 L10N = {

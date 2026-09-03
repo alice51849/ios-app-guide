@@ -1,7 +1,7 @@
 ---
 title: "Mask My File: Usuń swoje dane — Ukryj dane przed wysłaniem | iOS App"
 lang: "pl"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/pl/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/pl/index.html"
 modified: "2026-09-03"
 app_store_id: "6792850916"
 verified_live: true
@@ -20,6 +20,6 @@ Udostępniaj bezpiecznie, nie tracąc potrzebnego kontekstu. Mask My File znajdu
 
 [Pobierz Mask My File: Usuń swoje dane z App Store](https://apps.apple.com/pl/app/id6792850916?pt=118326163&ct=iag_data_pl&mt=8)
 
-[Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/maskmyfile.html)
+[Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/maskmyfile.html)
 
 > Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.

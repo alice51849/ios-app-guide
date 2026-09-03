@@ -1,7 +1,7 @@
 ---
 title: "AI Brief: Pliki na prompt AI — Pliki w jasny kontekst | iOS App"
 lang: "pl"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/pl/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/pl/index.html"
 modified: "2026-09-03"
 app_store_id: "6791658210"
 verified_live: true
@@ -20,6 +20,6 @@ Lepszy kontekst. Lepsze odpowiedzi. Przekształć zrzuty ekranu, pliki, notatki 
 
 [Pobierz AI Brief: Pliki na prompt AI z App Store](https://apps.apple.com/pl/app/id6791658210?pt=118326163&ct=iag_data_pl&mt=8)
 
-[Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/aibriefpack.html)
+[Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/aibriefpack.html)
 
 > Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.

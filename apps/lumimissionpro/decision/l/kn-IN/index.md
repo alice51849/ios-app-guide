@@ -1,7 +1,7 @@
 ---
 title: "ಮಕ್ಕಳಿಗೆ ಪೂರ್ಣ ಬೆಳಗಿನ ಮತ್ತು ಮಲಗುವ ಸಮಯದ ರೂಟೀನ್ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimissionpro/decision/l/kn-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimissionpro/decision/l/kn-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6779745474"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [Lumi Mission Planet Pro ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=iag_data_kn_in&mt=8)
 
-[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
+[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html)
 
 > ಆ್ಯಪ್ ಡೆವಲಪರ್ Lumi Studio ಬರೆದ ಮಾರ್ಗದರ್ಶಿ. ಆ್ಯಪ್‌ಗಳ ಹೆಸರುಗಳು ಅವುಗಳ ಮಾಲೀಕರ ವ್ಯಾಪಾರ ಚಿಹ್ನೆಗಳು; ಗುರುತಿಸಲು ಮಾತ್ರ ಬಳಸಲಾಗಿದೆ. ದಾಖಲೆ, ಆರೋಗ್ಯ, ಶಾಲೆ ಮತ್ತು ಉತ್ಪಾದಕತೆಗೆ ಸಂಬಂಧಿಸಿದ ನಿರ್ಧಾರಗಳಲ್ಲಿ ಅಗತ್ಯವಿರುವ ಕಡೆ ಅಧಿಕೃತ ನಿಯಮಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.

@@ -1,7 +1,7 @@
 ---
 title: "ShotInbox AI: Sort Screenshots — Busca texto y ordena tus fotos | iOS App"
 lang: "es-MX"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/es-MX/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/es-MX/index.html"
 modified: "2026-09-03"
 app_store_id: "6802166527"
 verified_live: true
@@ -19,6 +19,6 @@ Tus capturas, bien organizadas Encuentra, resuelve y limpia cada captura. Las 50
 
 [Consigue ShotInbox AI: Sort Screenshots en el App Store](https://apps.apple.com/mx/app/id6802166527?pt=118326163&ct=iag_data_es_mx&mt=8)
 
-[Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/shotinbox.html)
+[Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/shotinbox.html)
 
 > Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.

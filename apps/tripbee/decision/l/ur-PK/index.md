@@ -1,7 +1,7 @@
 ---
 title: "iPhone کے لیے بہترین ٹرپ آئیٹینری پلانر ایپ"
 lang: "ur-PK"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/ur-PK/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/ur-PK/index.html"
 modified: "2026-09-03"
 app_store_id: "6787754435"
 verified_live: true
@@ -22,6 +22,6 @@ publisher: "Lumi Studio"
 
 [App Store سے TripBee Pro: Trip Planner حاصل کریں →](https://apps.apple.com/pk/app/id6787754435?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
-[مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/answers/best-trip-itinerary-planner-app-for-iphone.html)
+[مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-trip-itinerary-planner-app-for-iphone.html)
 
 > ایپ بنانے والے Lumi Studio کی لکھی ہوئی رہنمائی۔ ایپس کے نام اُن کے مالکان کے ٹریڈ مارک ہیں اور صرف شناخت کے لیے استعمال ہوئے ہیں۔ دستاویزات، صحت، تعلیم اور کام سے متعلق فیصلوں میں جہاں ضرورت ہو وہاں سرکاری یا ادارہ جاتی تقاضے ضرور دیکھ لیں۔

@@ -1,7 +1,7 @@
 ---
 title: "MoneyTag — Proyek · Tag · Laporan | iOS App"
 lang: "id"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/id/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/id/index.html"
 modified: "2026-09-03"
 app_store_id: "6801956402"
 verified_live: true
@@ -26,6 +26,6 @@ Pemasukan & Pengeluaran Setiap proyek punya pembukuannya sendiri: pemasukan diku
 
 [Dapatkan MoneyTag di App Store](https://apps.apple.com/id/app/id6801956402?pt=118326163&ct=iag_data_id&mt=8)
 
-[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/moneytag.html)
+[Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/moneytag.html)
 
 > Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.

@@ -1,7 +1,7 @@
 ---
 title: "100 Notes Studio: Pen & Paper — হাতে লেখা নোট ও PDF পড়া | iOS App"
 lang: "bn-BD"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/bn-BD/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/notesstudio100/decision/l/bn-BD/index.html"
 modified: "2026-09-03"
 app_store_id: "6798813048"
 verified_live: true
@@ -22,6 +22,6 @@ publisher: "Lumi Studio"
 
 [App Store থেকে 100 Notes Studio: Pen & Paper ডাউনলোড করুন](https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_bn_bd&mt=8)
 
-[সম্পূর্ণ গাইড পড়ুন](https://alice51849.github.io/ios-app-guide/bn-BD/notesstudio100.html)
+[সম্পূর্ণ গাইড পড়ুন](https://open.cait518.cc/ios-app-guide/bn-BD/notesstudio100.html)
 
 > এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।

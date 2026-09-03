@@ -1,7 +1,7 @@
 ---
 title: "100 Notes Studio: Pen & Paper — Catatan tulis tangan & PDF | iOS App"
 lang: "id"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/id/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/notesstudio100/decision/l/id/index.html"
 modified: "2026-09-03"
 app_store_id: "6798813048"
 verified_live: true
@@ -22,6 +22,6 @@ Satukan tulisan tangan, teks ketik, anotasi dokumen, rekaman, dan bahan belajar 
 
 [Dapatkan 100 Notes Studio: Pen & Paper di App Store](https://apps.apple.com/id/app/id6798813048?pt=118326163&ct=iag_data_id&mt=8)
 
-[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/notesstudio100.html)
+[Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/notesstudio100.html)
 
 > Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.

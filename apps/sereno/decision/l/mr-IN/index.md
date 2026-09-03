@@ -1,7 +1,7 @@
 ---
 title: "झोप येण्यासाठी सर्वोत्तम व्हाईट नॉईज अॅप, कोणतीही सदस्यता नाही"
 lang: "mr-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/sereno/decision/l/mr-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/mr-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6788236641"
 verified_live: true
@@ -21,6 +21,6 @@ publisher: "Lumi Studio"
 
 [App Store वरून Sereno मिळवा →](https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=iag_data_mr_in&mt=8)
 
-[संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
+[संपूर्ण मार्गदर्शक वाचा](https://open.cait518.cc/ios-app-guide/mr-IN/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
 
 > ॲप बनवणाऱ्या Lumi Studio ने लिहिलेले मार्गदर्शक. ॲपची नावे त्यांच्या मालकांची ट्रेडमार्क आहेत आणि ती केवळ ओळखीसाठी वापरली आहेत. कागदपत्रे, आरोग्य, शाळा आणि कामाच्या निर्णयांबाबत जिथे आवश्यक असेल तिथे अधिकृत नियम तपासून घ्या.

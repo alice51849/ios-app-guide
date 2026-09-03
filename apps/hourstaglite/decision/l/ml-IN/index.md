@@ -1,7 +1,7 @@
 ---
 title: "HoursTag Lite: വില മണിക്കൂറിൽ — വസ്തുക്കളുടെ യഥാർത്ഥ വില കാണുക | iOS App"
 lang: "ml-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/ml-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/ml-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6794039979"
 verified_live: true
@@ -24,6 +24,6 @@ HoursTag Lite - വസ്തുക്കളുടെ യഥാർത്ഥ വ�
 
 [App Store-ൽ നിന്ന് HoursTag Lite: വില മണിക്കൂറിൽ നേടൂ](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=iag_data_ml_in&mt=8)
 
-[പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/hourstaglite.html)
+[പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://open.cait518.cc/ios-app-guide/ml-IN/hourstaglite.html)
 
 > ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.

@@ -1,7 +1,7 @@
 ---
 title: "Aim990 Plus: מבחן תרגול אנגלית — אימון שמיעה וקריאה בלחץ | iOS App"
 lang: "he"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/he/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/he/index.html"
 modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [הורידו את Aim990 Plus: מבחן תרגול אנגלית מה-App Store](https://apps.apple.com/il/app/id6792483140?pt=118326163&ct=iag_data_he&mt=8)
 
-[קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/aim990plus.html)
+[קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/aim990plus.html)
 
 > זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.

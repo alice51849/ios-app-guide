@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>画像圧縮ツール — 圧縮前後のファイルサイズがそのまま見える（無料・ブラウザ完結）</title>
 <meta name="description" content="写真の長辺と画質を選ぶだけで、圧縮前と圧縮後の実サイズを表示してからダウンロードできます。アップロードなし、ウォーターマークなし、登録なし。">
-<link rel="canonical" href="https://alice51849.github.io/ios-app-guide/ja/tools/image-compressor.html">
-<link rel="alternate" hreflang="en" href="https://alice51849.github.io/ios-app-guide/tools/image-compressor.html">
-<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/ios-app-guide/ja/tools/image-compressor.html">
-<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/ios-app-guide/de-DE/tools/image-compressor.html">
-<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/image-compressor.html">
-<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/ios-app-guide/tools/image-compressor.html">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/ja/tools/image-compressor.html">
+<link rel="alternate" hreflang="en" href="https://open.cait518.cc/ios-app-guide/tools/image-compressor.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/image-compressor.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/image-compressor.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/image-compressor.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/tools/image-compressor.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="画像を圧縮する">
 <meta property="og:description" content="写真の長辺と画質を選ぶだけで、圧縮前と圧縮後の実サイズを表示してからダウンロードできます。アップロードなし、ウォーターマークなし、登録なし。">
-<meta property="og:url" content="https://alice51849.github.io/ios-app-guide/ja/tools/image-compressor.html">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/ja/tools/image-compressor.html">
 <meta name="twitter:card" content="summary">
 <style>
 :root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
@@ -66,12 +66,12 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 
 @media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"画像を圧縮する","description":"写真の長辺と画質を選ぶだけで、圧縮前と圧縮後の実サイズを表示してからダウンロードできます。アップロードなし、ウォーターマークなし、登録なし。","url":"https://alice51849.github.io/ios-app-guide/ja/tools/image-compressor.html","inLanguage":"ja","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["長辺を指定してリサイズ","JPEG・WebP と画質スライダー","圧縮前後のバイト数と最終ピクセル数を表示","すべてブラウザ内で処理"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"画像を圧縮する","description":"写真の長辺と画質を選ぶだけで、圧縮前と圧縮後の実サイズを表示してからダウンロードできます。アップロードなし、ウォーターマークなし、登録なし。","url":"https://open.cait518.cc/ios-app-guide/ja/tools/image-compressor.html","inLanguage":"ja","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["長辺を指定してリサイズ","JPEG・WebP と画質スライダー","圧縮前後のバイト数と最終ピクセル数を表示","すべてブラウザ内で処理"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"写真はサーバーに送られますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。デコード・リサイズ・再エンコードはすべてご自身のブラウザ内で行われます。ページを開いた後は機内モードでも動作します。"}},{"@type":"Question","name":"JPEG と WebP はどちらを選べばよいですか？","acceptedAnswer":{"@type":"Answer","text":"同じ見た目なら WebP のほうが 20〜35% ほど小さくなり、現行のブラウザと iOS で表示できます。提出フォームなどが .jpg を要求する場合だけ JPEG を選んでください。"}},{"@type":"Question","name":"PNG を圧縮したら逆に大きくなりました","acceptedAnswer":{"@type":"Answer","text":"スクリーンショットや線画のような平坦な画像は PNG のほうが小さいことがあります。その場合は結果が「+」で表示されるので、元のファイルを使ってください。"}},{"@type":"Question","name":"位置情報は消えますか？","acceptedAnswer":{"@type":"Answer","text":"canvas を通して再エンコードすると EXIF（GPS を含む）は失われます。ただしこれは副作用であってプライバシー保証ではありません。重要な写真は書き出した側を必ず確認してください。"}}]}</script>
 <link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
 </head>
 <body>
-<header class="top"><div class="wrap nav"><a href="index.html">← 無料ツール一覧</a><a href="https://alice51849.github.io/ios-app-guide/ja/" >iOS App Guide</a></div></header>
+<header class="top"><div class="wrap nav"><a href="index.html">← 無料ツール一覧</a><a href="https://open.cait518.cc/ios-app-guide/ja/" >iOS App Guide</a></div></header>
 <section class="hero wrap">
 <span class="eyebrow">ブラウザ内で処理 · 圧縮前後のサイズを表示</span>
 <h1>画像を圧縮する</h1>
@@ -106,7 +106,7 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 <section class="grid">
 <article class="card"><h2>しくみ</h2><ol><li>選んだファイルはブラウザ内で読み込まれ、どこにも送信されません。</li><li>指定した長辺に合わせて canvas に描き直します。背景は白で塗るため、透過 PNG も読めるまま残ります。</li><li>選んだ画質で JPEG または WebP に再エンコードし、できたデータのバイト数を実測します。</li><li>ダウンロードリンクはそのデータを指します。設定を変えるとその場で再エンコードします。</li></ol></article>
 <article class="card"><h2>このツールがしないこと</h2><ul><li>「90% 削減」のような固定の宣伝文句は出しません。削減率は画像次第なので、実測値だけを表示します。</li><li>失われた解像度は戻せません。書き出したコピーの縮小は元に戻せませんが、元ファイルはそのまま残ります。</li><li>アップロード・順番待ち・アカウント・ウォーターマークはありません。</li></ul></article>
-<article class="card wide"><h2>ほかの無料ツール</h2><ul><li><a href="white-noise-generator.html">ホワイトノイズを再生する</a></li><li><a href="packing-list-generator.html">持ち物リストを作る</a></li><li><a href="voice-to-text.html">音声をテキストにする</a></li><li><a href="https://alice51849.github.io/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
+<article class="card wide"><h2>ほかの無料ツール</h2><ul><li><a href="white-noise-generator.html">ホワイトノイズを再生する</a></li><li><a href="packing-list-generator.html">持ち物リストを作る</a></li><li><a href="voice-to-text.html">音声をテキストにする</a></li><li><a href="https://open.cait518.cc/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
 </section>
 <section class="faq"><h2>よくある質問</h2><details><summary>写真はサーバーに送られますか？</summary><p>いいえ。デコード・リサイズ・再エンコードはすべてご自身のブラウザ内で行われます。ページを開いた後は機内モードでも動作します。</p></details><details><summary>JPEG と WebP はどちらを選べばよいですか？</summary><p>同じ見た目なら WebP のほうが 20〜35% ほど小さくなり、現行のブラウザと iOS で表示できます。提出フォームなどが .jpg を要求する場合だけ JPEG を選んでください。</p></details><details><summary>PNG を圧縮したら逆に大きくなりました</summary><p>スクリーンショットや線画のような平坦な画像は PNG のほうが小さいことがあります。その場合は結果が「+」で表示されるので、元のファイルを使ってください。</p></details><details><summary>位置情報は消えますか？</summary><p>canvas を通して再エンコードすると EXIF（GPS を含む）は失われます。ただしこれは副作用であってプライバシー保証ではありません。重要な写真は書き出した側を必ず確認してください。</p></details></section>
 <section class="app-card"><h2>iPhone で書類をよくスキャン・送信しますか？</h2>

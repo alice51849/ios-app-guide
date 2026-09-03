@@ -30,9 +30,10 @@ sys.path.insert(0, HERE)
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from aeo_guide import en_desc, competitors, gaps, SCHEMA_CAT, OPENAI_MODEL  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
-SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
+SITE = os.environ.get("GEO_SITE", PUBLIC_SITE).rstrip("/")
 STATE = os.path.join(HERE, "reports", ".guide_i18n_state.json")
 try:
     OPENAI_KEY = open(os.path.expanduser("~/.openai_key")).read().strip()

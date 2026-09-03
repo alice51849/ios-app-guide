@@ -1,7 +1,7 @@
 ---
 title: "Aim990 Plus: इंग्रजी मॉक टेस्ट — दडपणात जलद अचूक उत्तरे | iOS App"
 lang: "mr-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/mr-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/mr-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
@@ -19,6 +19,6 @@ Aim990 Plus हे प्रौढ शिकणाऱ्यांसाठी �
 
 [App Store वरून Aim990 Plus: इंग्रजी मॉक टेस्ट मिळवा](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_mr_in&mt=8)
 
-[संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/aim990plus.html)
+[संपूर्ण मार्गदर्शक वाचा](https://open.cait518.cc/ios-app-guide/mr-IN/aim990plus.html)
 
 > हे Lumi Studio कडून प्रकाशित केलेले प्रथम पक्ष साहित्य आहे, जे प्रत्येक सूचीबद्ध अॅपचे विकसक आहे.

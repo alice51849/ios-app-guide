@@ -1,7 +1,7 @@
 ---
 title: "2026 年最佳職涯轉換者履歷建立應用程式"
 lang: "zh-Hant"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/zh-Hant/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/zh-Hant/index.html"
 modified: "2026-09-03"
 app_store_id: "6781337213"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [在 App Store 取得 CV Desk →](https://apps.apple.com/tw/app/id6781337213?pt=118326163&ct=iag_data_zh_hant&mt=8)
 
-[閱讀完整指南](https://alice51849.github.io/ios-app-guide/zh-Hant/answers/best-resume-builder-app-for-career-changers-2026.html)
+[閱讀完整指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-resume-builder-app-for-career-changers-2026.html)
 
 > 由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。

@@ -1,7 +1,7 @@
 ---
 title: "DailyMate Lite: آج ہی بولیں — 50 زبانیں، حقیقی گفتگو | iOS App"
 lang: "ur-PK"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/ur-PK/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/ur-PK/index.html"
 modified: "2026-09-03"
 app_store_id: "6794725568"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [App Store سے DailyMate Lite: آج ہی بولیں حاصل کریں](https://apps.apple.com/pk/app/id6794725568?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
-[مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/dailymatelite.html)
+[مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/dailymatelite.html)
 
 > یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔

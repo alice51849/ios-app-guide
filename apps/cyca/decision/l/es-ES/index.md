@@ -1,7 +1,7 @@
 ---
 title: "mejor app para seguimiento del ciclo sin cuenta requerida para iPhone"
 lang: "es-ES"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/cyca/decision/l/es-ES/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/es-ES/index.html"
 modified: "2026-09-03"
 app_store_id: "6782251621"
 verified_live: true
@@ -20,6 +20,6 @@ En una categoría donde la sensibilidad de los datos es lo principal, el rastrea
 
 [Consigue Cyca en la App Store →](https://apps.apple.com/es/app/id6782251621?pt=118326163&ct=iag_data_es_es&mt=8)
 
-[Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-ES/answers/best-period-tracker-app-no-account-required-iphone.html)
+[Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-ES/answers/best-period-tracker-app-no-account-required-iphone.html)
 
 > Guía publicada por Lumi Studio, el desarrollador de la app. Los nombres de las apps son marcas comerciales de sus respectivos propietarios y se utilizan únicamente con fines de identificación. Para decisiones relacionadas con documentos, salud, escuela y productividad, verifica los requisitos oficiales correspondientes cuando sea necesario.

@@ -1,7 +1,7 @@
 ---
 title: "OnePage PPT: slide-uri AI — Din notițe într-o pagină | iOS App"
 lang: "ro"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/ro/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/ro/index.html"
 modified: "2026-09-03"
 app_store_id: "6798814385"
 verified_live: true
@@ -19,6 +19,6 @@ Transformă un zid de text într-UN slide pe care oamenii chiar îl citesc. OneP
 
 [Descarcă OnePage PPT: slide-uri AI din App Store](https://apps.apple.com/ro/app/id6798814385?pt=118326163&ct=iag_data_ro&mt=8)
 
-[Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/onepageppt.html)
+[Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/onepageppt.html)
 
 > Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.

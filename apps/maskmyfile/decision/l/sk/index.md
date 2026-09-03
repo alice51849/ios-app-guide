@@ -1,7 +1,7 @@
 ---
 title: "Mask My File: Odstráňte údaje — Skryte údaje pred zdieľaním | iOS App"
 lang: "sk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/sk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/sk/index.html"
 modified: "2026-09-03"
 app_store_id: "6792850916"
 verified_live: true
@@ -20,6 +20,6 @@ Zdieľajte bezpečne bez straty užitočného kontextu. Mask My File nájde osob
 
 [Stiahnuť Mask My File: Odstráňte údaje v App Store](https://apps.apple.com/sk/app/id6792850916?pt=118326163&ct=iag_data_sk&mt=8)
 
-[Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/maskmyfile.html)
+[Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/maskmyfile.html)
 
 > Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.

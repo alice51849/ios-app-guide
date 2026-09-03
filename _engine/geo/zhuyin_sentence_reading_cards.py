@@ -16,10 +16,11 @@ sys.path.insert(0, str(ROOT / "social"))
 
 from gen_calculator import write_tools_sitemap  # noqa: E402
 from videogen.registry import appstore_url  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = HERE / "pages"
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 SLUG = "zhuyin-short-sentence-reading-cards"
 CONTENT_DATE = "2026-07-14"

@@ -1,68 +1,68 @@
 <?xml version='1.0' encoding='utf-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/terms/" xmlns:integrity="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.metadata.json#">
-  <id>https://alice51849.github.io/ios-app-guide/opds/family-travel-observation-passport.xml</id>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/terms/" xmlns:integrity="https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport.metadata.json#">
+  <id>https://open.cait518.cc/ios-app-guide/opds/family-travel-observation-passport.xml</id>
   <title>Family Travel Observation Passport OER Catalog</title>
   <updated>2026-08-19T00:00:00Z</updated>
   <author>
     <name>Lumi Apps - iOS App Guide</name>
-    <uri>https://alice51849.github.io/ios-app-guide</uri>
+    <uri>https://open.cait518.cc/ios-app-guide</uri>
   </author>
-  <link rel="self" href="https://alice51849.github.io/ios-app-guide/opds/family-travel-observation-passport.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition" title="OPDS 1.2 catalog" />
-  <link rel="start" href="https://alice51849.github.io/ios-app-guide/opds/family-travel-observation-passport.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition" title="Catalog root" />
-  <link rel="alternate" href="https://alice51849.github.io/ios-app-guide/opds/family-travel-observation-passport.json" type="application/opds+json" title="OPDS 2.0 catalog" />
-  <link rel="alternate" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html" type="text/html" title="Free Family Travel Observation Passport" />
+  <link rel="self" href="https://open.cait518.cc/ios-app-guide/opds/family-travel-observation-passport.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition" title="OPDS 1.2 catalog" />
+  <link rel="start" href="https://open.cait518.cc/ios-app-guide/opds/family-travel-observation-passport.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition" title="Catalog root" />
+  <link rel="alternate" href="https://open.cait518.cc/ios-app-guide/opds/family-travel-observation-passport.json" type="application/opds+json" title="OPDS 2.0 catalog" />
+  <link rel="alternate" href="https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport.html" type="text/html" title="Free Family Travel Observation Passport" />
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" type="text/html" title="CC BY 4.0" />
   <entry>
-    <id>https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html#resource</id>
+    <id>https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport.html#resource</id>
     <title xml:lang="en">Free Family Travel Observation Passport</title>
     <updated>2026-08-19T00:00:00Z</updated>
     <published>2026-07-11T00:00:00Z</published>
     <author>
       <name>Lumi Apps - iOS App Guide</name>
-      <uri>https://alice51849.github.io/ios-app-guide</uri>
+      <uri>https://open.cait518.cc/ios-app-guide</uri>
     </author>
     <summary type="text" xml:lang="en">Download a privacy-first, print-ready 14-page family travel observation passport for 12 settings, with A4 and US Letter PDFs.</summary>
     <rights>Creative Commons Attribution 4.0 International (CC BY 4.0)</rights>
-    <dc:identifier>https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html#resource</dc:identifier>
+    <dc:identifier>https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport.html#resource</dc:identifier>
     <dc:language>en</dc:language>
     <dc:issued>2026-07-11</dc:issued>
     <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
     <dc:hasVersion>1.0.0</dc:hasVersion>
     <category term="OER" label="Open educational resource" />
-    <link rel="alternate" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.html" type="text/html" title="Free Family Travel Observation Passport" />
-    <link rel="describedby" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.metadata.json" type="application/ld+json" title="Schema.org LearningResource metadata" />
+    <link rel="alternate" href="https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport.html" type="text/html" title="Free Family Travel Observation Passport" />
+    <link rel="describedby" href="https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport.metadata.json" type="application/ld+json" title="Schema.org LearningResource metadata" />
     <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" type="text/html" title="CC BY 4.0" />
-    <link rel="http://opds-spec.org/acquisition/open-access" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-en-a4.pdf" type="application/pdf" title="A4 PDF" length="27869">
+    <link rel="http://opds-spec.org/acquisition/open-access" href="https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport-en-a4.pdf" type="application/pdf" title="A4 PDF" length="27869">
       <integrity:checksum algorithm="sha-256" encoding="hex">185193cee7dc165c9e5162bca6b6cd9500130b91853527af862e661f296e38fb</integrity:checksum>
     </link>
-    <link rel="http://opds-spec.org/acquisition/open-access" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-en-letter.pdf" type="application/pdf" title="US Letter PDF" length="27900">
+    <link rel="http://opds-spec.org/acquisition/open-access" href="https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport-en-letter.pdf" type="application/pdf" title="US Letter PDF" length="27900">
       <integrity:checksum algorithm="sha-256" encoding="hex">e9cca24d577fb7a71be5a14ac33711c225ac2886224d8c2877992688ba185c2f</integrity:checksum>
     </link>
   </entry>
   <entry>
-    <id>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/family-travel-observation-passport.html#resource</id>
+    <id>https://open.cait518.cc/ios-app-guide/zh-Hant/tools/family-travel-observation-passport.html#resource</id>
     <title xml:lang="zh-Hant">免費親子旅行觀察護照</title>
     <updated>2026-08-19T00:00:00Z</updated>
     <published>2026-07-11T00:00:00Z</published>
     <author>
       <name>Lumi Apps - iOS App Guide</name>
-      <uri>https://alice51849.github.io/ios-app-guide</uri>
+      <uri>https://open.cait518.cc/ios-app-guide</uri>
     </author>
     <summary type="text" xml:lang="zh-Hant">下載隱私優先、可直接列印的 14 頁親子旅行觀察護照，涵蓋 12 種情境，提供 A4 與 US Letter PDF。</summary>
     <rights>Creative Commons Attribution 4.0 International (CC BY 4.0)</rights>
-    <dc:identifier>https://alice51849.github.io/ios-app-guide/zh-Hant/tools/family-travel-observation-passport.html#resource</dc:identifier>
+    <dc:identifier>https://open.cait518.cc/ios-app-guide/zh-Hant/tools/family-travel-observation-passport.html#resource</dc:identifier>
     <dc:language>zh-Hant</dc:language>
     <dc:issued>2026-07-11</dc:issued>
     <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
     <dc:hasVersion>1.0.0</dc:hasVersion>
     <category term="OER" label="Open educational resource" />
-    <link rel="alternate" href="https://alice51849.github.io/ios-app-guide/zh-Hant/tools/family-travel-observation-passport.html" type="text/html" title="免費親子旅行觀察護照" />
-    <link rel="describedby" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport.metadata.json" type="application/ld+json" title="Schema.org LearningResource metadata" />
+    <link rel="alternate" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/family-travel-observation-passport.html" type="text/html" title="免費親子旅行觀察護照" />
+    <link rel="describedby" href="https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport.metadata.json" type="application/ld+json" title="Schema.org LearningResource metadata" />
     <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" type="text/html" title="CC BY 4.0" />
-    <link rel="http://opds-spec.org/acquisition/open-access" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-zh-hant-a4.pdf" type="application/pdf" title="A4 PDF" length="32697">
+    <link rel="http://opds-spec.org/acquisition/open-access" href="https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport-zh-hant-a4.pdf" type="application/pdf" title="A4 PDF" length="32697">
       <integrity:checksum algorithm="sha-256" encoding="hex">23f05aaa5869ab2894397b452955922e22d2568d806f1ad4bf61a14c19f7fa59</integrity:checksum>
     </link>
-    <link rel="http://opds-spec.org/acquisition/open-access" href="https://alice51849.github.io/ios-app-guide/tools/family-travel-observation-passport-zh-hant-letter.pdf" type="application/pdf" title="US Letter PDF" length="32692">
+    <link rel="http://opds-spec.org/acquisition/open-access" href="https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport-zh-hant-letter.pdf" type="application/pdf" title="US Letter PDF" length="32692">
       <integrity:checksum algorithm="sha-256" encoding="hex">1a670e48f08a2d4af25fac7978eb46617a72b3de4b7aff62d5903621ab6fd74b</integrity:checksum>
     </link>
   </entry>

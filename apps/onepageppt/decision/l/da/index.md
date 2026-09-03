@@ -1,7 +1,7 @@
 ---
 title: "OnePage PPT: AI-slides — Fra noter til ét færdigt dias | iOS App"
 lang: "da"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/da/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/da/index.html"
 modified: "2026-09-03"
 app_store_id: "6798814385"
 verified_live: true
@@ -19,6 +19,6 @@ Lav en mur af tekst om til ÉT dias, folk rent faktisk læser. OnePage PPT læse
 
 [Hent OnePage PPT: AI-slides i App Store](https://apps.apple.com/dk/app/id6798814385?pt=118326163&ct=iag_data_da&mt=8)
 
-[Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/onepageppt.html)
+[Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/onepageppt.html)
 
 > Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.

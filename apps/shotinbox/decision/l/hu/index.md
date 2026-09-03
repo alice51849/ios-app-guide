@@ -1,7 +1,7 @@
 ---
 title: "ShotInbox AI: Sort Screenshots — Képernyőképek rendszerezése | iOS App"
 lang: "hu"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/hu/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/hu/index.html"
 modified: "2026-09-03"
 app_store_id: "6802166527"
 verified_live: true
@@ -19,6 +19,6 @@ Képernyőképek rendben Találja meg, intézze el és tisztítsa meg minden ké
 
 [Töltse le a(z) ShotInbox AI: Sort Screenshots appot az App Store-ból](https://apps.apple.com/hu/app/id6802166527?pt=118326163&ct=iag_data_hu&mt=8)
 
-[Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/shotinbox.html)
+[Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/shotinbox.html)
 
 > Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.

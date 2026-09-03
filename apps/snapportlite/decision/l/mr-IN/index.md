@@ -1,7 +1,7 @@
 ---
 title: "Snapport Lite: घरीच ID फोटो — घरच्या घरी ID फोटो तयार करा | iOS App"
 lang: "mr-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/mr-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/mr-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6792856304"
 verified_live: true
@@ -20,6 +20,6 @@ Snapport Lite - मार्गदर्शित आकार, पार्श�
 
 [App Store वरून Snapport Lite: घरीच ID फोटो मिळवा](https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=iag_data_mr_in&mt=8)
 
-[संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/snapportlite.html)
+[संपूर्ण मार्गदर्शक वाचा](https://open.cait518.cc/ios-app-guide/mr-IN/snapportlite.html)
 
 > हे Lumi Studio कडून प्रकाशित केलेले प्रथम पक्ष साहित्य आहे, जे प्रत्येक सूचीबद्ध अॅपचे विकसक आहे.

@@ -1,7 +1,7 @@
 ---
 title: "MoneyTag — Proiecte · Etichete · Raport | iOS App"
 lang: "ro"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ro/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/ro/index.html"
 modified: "2026-09-03"
 app_store_id: "6801956402"
 verified_live: true
@@ -26,6 +26,6 @@ Venituri și cheltuieli Fiecare proiect își ține propriile socoteli: venituri
 
 [Descarcă MoneyTag din App Store](https://apps.apple.com/ro/app/id6801956402?pt=118326163&ct=iag_data_ro&mt=8)
 
-[Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/moneytag.html)
+[Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/moneytag.html)
 
 > Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.

@@ -1,7 +1,7 @@
 ---
 title: "best on-device file redaction app for freelancers sharing client documents"
 lang: "id"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/id/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/id/index.html"
 modified: "2026-09-03"
 app_store_id: "6792850916"
 verified_live: true
@@ -20,6 +20,6 @@ Before a client document leaves your phone, the safest workflow is to hide only 
 
 [Dapatkan Mask My File di App Store →](https://apps.apple.com/id/app/id6792850916?pt=118326163&ct=iag_data_id&mt=8)
 
-[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html)
+[Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html)
 
 > Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.

@@ -1,7 +1,7 @@
 ---
 title: "iPhone साठवणूक मोकळी करण्यासाठी डुप्लिकेट फोटो हटवणारे सर्वोत्तम अॅप"
 lang: "mr-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/picclear/decision/l/mr-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/picclear/decision/l/mr-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6780223070"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [App Store वरून PicClear मिळवा →](https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=iag_data_mr_in&mt=8)
 
-[संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
+[संपूर्ण मार्गदर्शक वाचा](https://open.cait518.cc/ios-app-guide/mr-IN/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html)
 
 > ॲप बनवणाऱ्या Lumi Studio ने लिहिलेले मार्गदर्शक. ॲपची नावे त्यांच्या मालकांची ट्रेडमार्क आहेत आणि ती केवळ ओळखीसाठी वापरली आहेत. कागदपत्रे, आरोग्य, शाळा आणि कामाच्या निर्णयांबाबत जिथे आवश्यक असेल तिथे अधिकृत नियम तपासून घ्या.

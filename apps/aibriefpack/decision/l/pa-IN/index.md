@@ -1,7 +1,7 @@
 ---
 title: "AI Brief: ਫਾਈਲ ਤੋਂ AI ਪ੍ਰੌਂਪਟ — ਫਾਈਲਾਂ ਤੋਂ ਸਪਸ਼ਟ ਸੰਦਰਭ | iOS App"
 lang: "pa-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/pa-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/pa-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6791658210"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [App Store ਤੋਂ AI Brief: ਫਾਈਲ ਤੋਂ AI ਪ੍ਰੌਂਪਟ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=iag_data_pa_in&mt=8)
 
-[ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/aibriefpack.html)
+[ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://open.cait518.cc/ios-app-guide/pa-IN/aibriefpack.html)
 
 > ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।

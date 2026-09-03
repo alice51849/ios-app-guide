@@ -3,7 +3,7 @@ Bopomofo OAI-ORE 1.0 Resource Map
 
 Aggregation URI
 ---------------
-https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation
+https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation
 
 This URI follows the OAI-ORE no-server hash-URI pattern. Dereferencing it
 removes #aggregation and retrieves the authoritative RDF/XML Resource Map.

@@ -1,7 +1,7 @@
 ---
 title: "millor app d’escàner de documents offline sense núvol per a infermeres"
 lang: "ca"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/scanto/decision/l/ca/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/scanto/decision/l/ca/index.html"
 modified: "2026-09-03"
 app_store_id: "6779977651"
 verified_live: true
@@ -20,6 +20,6 @@ Si escaneges formularis de consentiment, documents d’alta o derivacions, l’e
 
 [Descarrega ScanTo Pro a l’App Store →](https://apps.apple.com/es/app/id6779977651?pt=118326163&ct=iag_data_ca&mt=8)
 
-[Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
+[Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html)
 
 > Guia escrita per Lumi Studio, el desenvolupador de l'aplicació. Els noms de les aplicacions són marques dels seus propietaris i s'utilitzen només per identificar-les. Per a decisions sobre documents, salut, escola i productivitat, comprova els requisits oficials quan sigui rellevant.

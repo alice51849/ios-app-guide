@@ -1,7 +1,7 @@
 ---
 title: "aplikasi pembelajaran kosa kata terbaik untuk komuter sibuk dengan Apple Watch"
 lang: "ms"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/ms/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/ms/index.html"
 modified: "2026-09-03"
 app_store_id: "6789917808"
 verified_live: true
@@ -24,6 +24,6 @@ Komuter sibuk perlukan latihan kosa kata yang sesuai untuk masa terluang tanpa p
 
 [Dapatkan Wordmate: Learn 44 Languages di App Store →](https://apps.apple.com/my/app/id6789917808?pt=118326163&ct=iag_data_ms&mt=8)
 
-[Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
+[Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 
 > Panduan ini diterbitkan oleh Lumi Studio, pembangun app ini. Nama app ialah tanda dagangan pemilik masing-masing dan digunakan untuk tujuan pengenalan sahaja. Untuk keputusan berkaitan dokumen, kesihatan, sekolah dan produktiviti, sila sahkan keperluan rasmi yang berkenaan.

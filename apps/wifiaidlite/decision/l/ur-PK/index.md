@@ -1,7 +1,7 @@
 ---
 title: "WiFi Aid Lite — نیٹ مسئلہ تلاش کر کے حل کریں | iOS App"
 lang: "ur-PK"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/ur-PK/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/ur-PK/index.html"
 modified: "2026-09-03"
 app_store_id: "6793414462"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [App Store سے WiFi Aid Lite حاصل کریں](https://apps.apple.com/pk/app/id6793414462?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
-[مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/wifiaidlite.html)
+[مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/wifiaidlite.html)
 
 > یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔

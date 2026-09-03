@@ -1,7 +1,7 @@
 ---
 title: "CalDaily: máy tính và chủ đề — Widget, công cụ, lịch sử | iOS App"
 lang: "vi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/vi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/vi/index.html"
 modified: "2026-09-03"
 app_store_id: "6794178671"
 verified_live: true
@@ -20,6 +20,6 @@ Một máy tính bạn sẽ thật sự dùng lâu dài, vì nó nhớ cả suy 
 
 [Tải CalDaily: máy tính và chủ đề trên App Store](https://apps.apple.com/vn/app/id6794178671?pt=118326163&ct=iag_data_vi&mt=8)
 
-[Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/caldaily.html)
+[Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/caldaily.html)
 
 > Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.

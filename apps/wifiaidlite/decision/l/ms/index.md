@@ -1,7 +1,7 @@
 ---
 title: "WiFi Aid Lite — Diagnosis rangkaian tepat | iOS App"
 lang: "ms"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/ms/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/ms/index.html"
 modified: "2026-09-03"
 app_store_id: "6793414462"
 verified_live: true
@@ -20,6 +20,6 @@ Cari punca sebenar. Setiap alat termasuk satu penggunaan penuh percuma. Buka kun
 
 [Dapatkan WiFi Aid Lite di App Store](https://apps.apple.com/my/app/id6793414462?pt=118326163&ct=iag_data_ms&mt=8)
 
-[Baca panduan penuh](https://alice51849.github.io/ios-app-guide/ms/wifiaidlite.html)
+[Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/wifiaidlite.html)
 
 > Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.

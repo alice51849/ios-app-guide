@@ -622,7 +622,7 @@ class RetryTests(unittest.TestCase):
 
     def test_threads_image_post_uses_public_jpeg(self):
         image_url = (
-            "https://alice51849.github.io/ios-app-guide/"
+            "https://open.cait518.cc/ios-app-guide/"
             "social/img/aim990-share.jpg"
         )
         with mock.patch.object(
@@ -645,7 +645,7 @@ class RetryTests(unittest.TestCase):
 
     def test_telegram_photo_uses_public_jpeg_and_caption(self):
         image_url = (
-            "https://alice51849.github.io/ios-app-guide/"
+            "https://open.cait518.cc/ios-app-guide/"
             "social/img/aim990-share.jpg"
         )
         with mock.patch.object(

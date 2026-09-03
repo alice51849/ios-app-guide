@@ -1,7 +1,7 @@
 ---
 title: "CalDaily: calculadora i temes — Widget, eines i historial | iOS App"
 lang: "ca"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ca/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/ca/index.html"
 modified: "2026-09-03"
 app_store_id: "6794178671"
 verified_live: true
@@ -20,6 +20,6 @@ Una calculadora que continuaràs fent servir, perquè recorda el raonament que h
 
 [Descarrega CalDaily: calculadora i temes a l’App Store](https://apps.apple.com/es/app/id6794178671?pt=118326163&ct=iag_data_ca&mt=8)
 
-[Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/caldaily.html)
+[Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/caldaily.html)
 
 > Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.

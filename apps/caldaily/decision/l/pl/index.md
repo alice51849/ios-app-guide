@@ -1,7 +1,7 @@
 ---
 title: "CalDaily: kalkulator i motywy — Widżet, narzędzia, historia | iOS App"
 lang: "pl"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/pl/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/pl/index.html"
 modified: "2026-09-03"
 app_store_id: "6794178671"
 verified_live: true
@@ -20,6 +20,6 @@ Kalkulator, którego naprawdę będziesz używać, bo pamięta myśl stojącą z
 
 [Pobierz CalDaily: kalkulator i motywy z App Store](https://apps.apple.com/pl/app/id6794178671?pt=118326163&ct=iag_data_pl&mt=8)
 
-[Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/caldaily.html)
+[Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/caldaily.html)
 
 > Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.

@@ -1,7 +1,7 @@
 ---
 title: "HoursTag Lite: Cena to godziny — Prawdziwa cena rzeczy | iOS App"
 lang: "pl"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/pl/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/pl/index.html"
 modified: "2026-09-03"
 app_store_id: "6794039979"
 verified_live: true
@@ -24,6 +24,6 @@ HoursTag Lite - Prawdziwa cena rzeczy Każdy zakup kosztuje godziny Twojego życ
 
 [Pobierz HoursTag Lite: Cena to godziny z App Store](https://apps.apple.com/pl/app/id6794039979?pt=118326163&ct=iag_data_pl&mt=8)
 
-[Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/hourstaglite.html)
+[Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/hourstaglite.html)
 
 > Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.

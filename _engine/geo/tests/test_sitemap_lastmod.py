@@ -22,7 +22,7 @@ import gen_sitemap_lastmod  # noqa: E402
 from official_locales import OFFICIAL_LOCALES  # noqa: E402
 
 
-SITE = "https://alice51849.github.io/ios-app-guide"
+SITE = "https://open.cait518.cc/ios-app-guide"
 
 
 def urlset(*entries: str) -> str:

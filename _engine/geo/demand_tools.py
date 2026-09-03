@@ -29,8 +29,9 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 PAGES = HERE / "pages"
 TOOLS = PAGES / "tools"
+from site_config import PUBLIC_SITE  # noqa: E402
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 RATES_CACHE = HERE / "_demand" / "ecb_usd_rates.json"
 DATE = "2026-08-09"

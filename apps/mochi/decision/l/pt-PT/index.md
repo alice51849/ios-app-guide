@@ -1,7 +1,7 @@
 ---
 title: "melhor app simples de lista de tarefas no iPhone sem subscrição"
 lang: "pt-PT"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/mochi/decision/l/pt-PT/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/pt-PT/index.html"
 modified: "2026-09-03"
 app_store_id: "6785004775"
 verified_live: true
@@ -20,6 +20,6 @@ Se a maioria das apps de tarefas parecerem pesadas, a certa é uma lista limpa c
 
 [Obtenha o Mochi na App Store →](https://apps.apple.com/pt/app/id6785004775?pt=118326163&ct=iag_data_pt_pt&mt=8)
 
-[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
+[Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
 
 > Guia da autoria do editor Lumi Studio, o programador da app. Os nomes das apps são marcas dos seus proprietários e são usados apenas para identificação. Para decisões sobre documentos, saúde, escola e produtividade, verifique os requisitos oficiais quando relevante.

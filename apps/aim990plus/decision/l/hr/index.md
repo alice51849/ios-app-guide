@@ -1,7 +1,7 @@
 ---
 title: "Aim990 Plus: Test iz engleskog — Sigurnost pod štopericom | iOS App"
 lang: "hr"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/hr/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/hr/index.html"
 modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
@@ -19,6 +19,6 @@ Razumjeti engleski nije isto što i ostati precizan dok vrijeme istječe. Aim990
 
 [Preuzmite Aim990 Plus: Test iz engleskog u App Storeu](https://apps.apple.com/hr/app/id6792483140?pt=118326163&ct=iag_data_hr&mt=8)
 
-[Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/aim990plus.html)
+[Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/aim990plus.html)
 
 > Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.

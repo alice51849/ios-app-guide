@@ -26,11 +26,12 @@ sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 from gen_mobile_app_identity import mobile_app_schema  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 STORIES = os.path.join(PAGES, "stories")
 IMG = os.path.join(STORIES, "img")
-SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
+SITE = os.environ.get("GEO_SITE", PUBLIC_SITE).rstrip("/")
 PUBLISHER = "iOS App Guide"
 
 PALETTES = [((91, 95, 242), (139, 92, 246)), ((15, 143, 95), (5, 150, 105)),

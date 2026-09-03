@@ -1,7 +1,7 @@
 ---
 title: "SaveTag: guarda links con IA — Guárdalo y léelo después | iOS App"
 lang: "es-MX"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/es-MX/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/es-MX/index.html"
 modified: "2026-09-03"
 app_store_id: "6802505528"
 verified_live: true
@@ -19,6 +19,6 @@ Guárdalo ahora. Y esta vez sí, léelo después. Todo el día te mandas links a
 
 [Consigue SaveTag: guarda links con IA en el App Store](https://apps.apple.com/mx/app/id6802505528?pt=118326163&ct=iag_data_es_mx&mt=8)
 
-[Lee la guía completa](https://alice51849.github.io/ios-app-guide/es-MX/savetag.html)
+[Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/savetag.html)
 
 > Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.

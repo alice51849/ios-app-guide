@@ -1,7 +1,7 @@
 ---
 title: "G+Money Lite: ଯାତ୍ରା ଖର୍ଚ୍ଚ — ଯାତ୍ରା ଖର୍ଚ୍ଚ ଓ ମୁଦ୍ରା | iOS App"
 lang: "or-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/or-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/or-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6793436548"
 verified_live: true
@@ -25,6 +25,6 @@ G+Money Lite — ସମ୍ପ୍ରତି ଯାତ୍ରା ମୁଦ୍ରା 
 
 [App Store ରୁ G+Money Lite: ଯାତ୍ରା ଖର୍ଚ୍ଚ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=iag_data_or_in&mt=8)
 
-[ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/gmoneylite.html)
+[ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://open.cait518.cc/ios-app-guide/or-IN/gmoneylite.html)
 
 > ଏହା Lumi Studio ଦ୍ୱାରା ପ୍ରକାଶିତ ପ୍ରଥମ-ପକ୍ଷ ସାମଗ୍ରୀ, ଯାହାରେ ସମସ୍ତ ତାଲିକାଭୁକ୍ତ ଆପ୍ସର ବିକାଶକ ଅଛନ୍ତି।

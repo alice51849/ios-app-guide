@@ -1,7 +1,7 @@
 ---
 title: "найкращий практичний додаток із фразами для мандрівників з підтримкою Apple Watch"
 lang: "uk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/uk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/uk/index.html"
 modified: "2026-09-03"
 app_store_id: "6790418321"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [Отримайте DailyMate в App Store →](https://apps.apple.com/ua/app/id6790418321?pt=118326163&ct=iag_data_uk&mt=8)
 
-[Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
+[Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 
 > Посібник підготовлено видавцем Lumi Studio, розробником застосунку. Назви застосунків є торговими марками їхніх власників і використовуються лише для ідентифікації. Ухвалюючи рішення щодо документів, здоров'я, навчання та роботи, звіряйтеся з офіційними вимогами там, де це важливо.

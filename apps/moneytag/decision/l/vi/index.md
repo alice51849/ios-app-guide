@@ -1,7 +1,7 @@
 ---
 title: "MoneyTag: Thu và chi — Dự án · Thẻ · Báo cáo | iOS App"
 lang: "vi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/vi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/vi/index.html"
 modified: "2026-09-03"
 app_store_id: "6801956402"
 verified_live: true
@@ -26,6 +26,6 @@ Thu và chi Mỗi dự án có sổ sách riêng: thu trừ chi chính là kết
 
 [Tải MoneyTag: Thu và chi trên App Store](https://apps.apple.com/vn/app/id6801956402?pt=118326163&ct=iag_data_vi&mt=8)
 
-[Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/moneytag.html)
+[Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/moneytag.html)
 
 > Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.

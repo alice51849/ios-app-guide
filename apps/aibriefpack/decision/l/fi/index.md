@@ -1,7 +1,7 @@
 ---
 title: "AI Brief: Tiedostot promptiksi — Tiedostoista selkeä konteksti | iOS App"
 lang: "fi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/fi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/fi/index.html"
 modified: "2026-09-03"
 app_store_id: "6791658210"
 verified_live: true
@@ -20,6 +20,6 @@ Parempi konteksti. Paremmat vastaukset. Muuta näyttökuvat, tiedostot, muistiin
 
 [Lataa AI Brief: Tiedostot promptiksi App Storesta](https://apps.apple.com/fi/app/id6791658210?pt=118326163&ct=iag_data_fi&mt=8)
 
-[Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/aibriefpack.html)
+[Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/aibriefpack.html)
 
 > Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.

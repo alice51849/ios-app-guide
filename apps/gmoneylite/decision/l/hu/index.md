@@ -1,7 +1,7 @@
 ---
 title: "G+Money Lite: Utazási kiadások — Kiadások, költségvetés & FX | iOS App"
 lang: "hu"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/hu/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/hu/index.html"
 modified: "2026-09-03"
 app_store_id: "6793436548"
 verified_live: true
@@ -25,6 +25,6 @@ G+Money Lite — Okos utazási pénznem- és költségkövető Utazási pénz, e
 
 [Töltse le a(z) G+Money Lite: Utazási kiadások appot az App Store-ból](https://apps.apple.com/hu/app/id6793436548?pt=118326163&ct=iag_data_hu&mt=8)
 
-[Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/gmoneylite.html)
+[Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/gmoneylite.html)
 
 > Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.

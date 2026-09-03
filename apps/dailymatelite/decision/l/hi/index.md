@@ -1,7 +1,7 @@
 ---
 title: "DailyMate Lite: रोज़ बोलें — 50 भाषाओं में सहज बातचीत | iOS App"
 lang: "hi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/hi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/hi/index.html"
 modified: "2026-09-03"
 app_store_id: "6794725568"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [App Store पर DailyMate Lite: रोज़ बोलें पाएँ](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=iag_data_hi&mt=8)
 
-[पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/dailymatelite.html)
+[पूरा मार्गदर्शक पढ़ें](https://open.cait518.cc/ios-app-guide/hi/dailymatelite.html)
 
 > यह सामग्री सीधे Lumi Studio ने प्रकाशित की है, जो सूचीबद्ध सभी ऐप का डेवलपर है।

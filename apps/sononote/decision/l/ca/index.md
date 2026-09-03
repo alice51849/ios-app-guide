@@ -1,7 +1,7 @@
 ---
 title: "Millor app de notes de veu que resumeix reunions a l’iPhone"
 lang: "ca"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/ca/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/ca/index.html"
 modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
@@ -20,6 +20,6 @@ Després d’una trucada no vols una transcripció en brut — vols el resum, el
 
 [Descarrega Sono Note a l’App Store →](https://apps.apple.com/es/app/id6782139553?pt=118326163&ct=iag_data_ca&mt=8)
 
-[Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
+[Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 
 > Guia escrita per Lumi Studio, el desenvolupador de l'aplicació. Els noms de les aplicacions són marques dels seus propietaris i s'utilitzen només per identificar-les. Per a decisions sobre documents, salut, escola i productivitat, comprova els requisits oficials quan sigui rellevant.

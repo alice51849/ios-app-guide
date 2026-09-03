@@ -1,7 +1,7 @@
 ---
 title: "WiFi Aid Lite — Diagnoză de rețea cu dovezi | iOS App"
 lang: "ro"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/ro/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/ro/index.html"
 modified: "2026-09-03"
 app_store_id: "6793414462"
 verified_live: true
@@ -20,6 +20,6 @@ Găsește problema reală. Fiecare instrument include o utilizare completă grat
 
 [Descarcă WiFi Aid Lite din App Store](https://apps.apple.com/ro/app/id6793414462?pt=118326163&ct=iag_data_ro&mt=8)
 
-[Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/wifiaidlite.html)
+[Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/wifiaidlite.html)
 
 > Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.

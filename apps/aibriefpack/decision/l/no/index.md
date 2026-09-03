@@ -1,7 +1,7 @@
 ---
 title: "AI Brief: Filer til AI-prompt — Filer til tydelig kontekst | iOS App"
 lang: "no"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/no/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/no/index.html"
 modified: "2026-09-03"
 app_store_id: "6791658210"
 verified_live: true
@@ -20,6 +20,6 @@ Bedre kontekst. Bedre svar. Gjør skjermbilder, filer, notater og dokumenter om 
 
 [Last ned AI Brief: Filer til AI-prompt fra App Store](https://apps.apple.com/no/app/id6791658210?pt=118326163&ct=iag_data_no&mt=8)
 
-[Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/aibriefpack.html)
+[Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/aibriefpack.html)
 
 > Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.

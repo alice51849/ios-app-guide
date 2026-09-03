@@ -1,7 +1,7 @@
 ---
 title: "WiFi Aid Lite — ନେଟ୍ ସମସ୍ୟା ଖୋଜି ଠିକ୍ କରନ୍ତୁ | iOS App"
 lang: "or-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/or-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/or-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6793414462"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [App Store ରୁ WiFi Aid Lite ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=iag_data_or_in&mt=8)
 
-[ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/wifiaidlite.html)
+[ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://open.cait518.cc/ios-app-guide/or-IN/wifiaidlite.html)
 
 > ଏହା Lumi Studio ଦ୍ୱାରା ପ୍ରକାଶିତ ପ୍ରଥମ-ପକ୍ଷ ସାମଗ୍ରୀ, ଯାହାରେ ସମସ୍ତ ତାଲିକାଭୁକ୍ତ ଆପ୍ସର ବିକାଶକ ଅଛନ୍ତି।

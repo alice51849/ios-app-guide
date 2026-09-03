@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/collection.json",
+  "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/collection.json",
   "type": "Collection",
   "label": {
     "en": [
@@ -39,7 +39,7 @@
   "rights": "http://creativecommons.org/licenses/by/4.0/",
   "items": [
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/manifest.json",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/manifest.json",
       "type": "Manifest",
       "label": {
         "en": [
@@ -51,7 +51,7 @@
       },
       "thumbnail": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3105.svg",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3105.svg",
           "type": "Image",
           "format": "image/svg+xml",
           "height": 1200,

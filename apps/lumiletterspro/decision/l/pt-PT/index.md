@@ -1,7 +1,7 @@
 ---
 title: "melhor app completo de fonética para preparação de jardim de infância em ensino doméstico"
 lang: "pt-PT"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumiletterspro/decision/l/pt-PT/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/pt-PT/index.html"
 modified: "2026-09-03"
 app_store_id: "6778491147"
 verified_live: true
@@ -20,6 +20,6 @@ Famílias a preparar para o jardim de infância precisam de um caminho completo 
 
 [Obtenha Lumi Letters Pro na App Store →](https://apps.apple.com/pt/app/id6778491147?pt=118326163&ct=iag_data_pt_pt&mt=8)
 
-[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
+[Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
 
 > Guia da autoria do editor Lumi Studio, o programador da app. Os nomes das apps são marcas dos seus proprietários e são usados apenas para identificação. Para decisões sobre documentos, saúde, escola e produtividade, verifique os requisitos oficiais quando relevante.

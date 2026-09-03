@@ -5,7 +5,7 @@
       "@language": "en"
     }
   ],
-  "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+  "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
   "url": "zhuyin-bopomofo-ml-dataset.csv",
   "dc:title": {
     "en": "Complete 37-symbol Bopomofo table",
@@ -15,12 +15,12 @@
     "en": "A deterministic UTF-8 CSV table of all 37 standard Bopomofo symbols with Unicode, Pinyin, IPA, category and example fields.",
     "zh-Hant": "涵蓋全部 37 個標準注音符號的確定性 UTF-8 CSV 表格，包含 Unicode、拼音、IPA、分類與例字欄位。"
   },
-  "dc:identifier": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+  "dc:identifier": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
   "dc:creator": {
-    "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+    "@id": "https://open.cait518.cc/ios-app-guide/#organization"
   },
   "dc:publisher": {
-    "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+    "@id": "https://open.cait518.cc/ios-app-guide/#organization"
   },
   "dc:license": {
     "@id": "https://creativecommons.org/licenses/by/4.0/"
@@ -51,7 +51,7 @@
   ],
   "dc:source": [
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json"
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json"
     },
     {
       "@id": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
@@ -62,13 +62,13 @@
   ],
   "dc:relation": [
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/"
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/"
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html"
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html"
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
     }
   ],
   "dcat:keyword": [
@@ -95,7 +95,7 @@
   },
   "tableDirection": "auto",
   "tableSchema": {
-    "aboutUrl": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#{symbol_id}",
+    "aboutUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#{symbol_id}",
     "primaryKey": "symbol_id",
     "columns": [
       {
@@ -177,7 +177,7 @@
         "datatype": "string",
         "required": true,
         "lang": "zh-Latn-pinyin",
-        "propertyUrl": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin"
+        "propertyUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin"
       },
       {
         "name": "ipa",
@@ -188,7 +188,7 @@
         "dc:description": "Broad IPA transcription without brackets.",
         "datatype": "string",
         "required": true,
-        "propertyUrl": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa"
+        "propertyUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa"
       },
       {
         "name": "category",
@@ -229,7 +229,7 @@
         },
         "required": true,
         "lang": "zh-Hant",
-        "propertyUrl": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter"
+        "propertyUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter"
       },
       {
         "name": "example_pinyin",
@@ -241,7 +241,7 @@
         "datatype": "string",
         "required": true,
         "lang": "zh-Latn-pinyin",
-        "propertyUrl": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin"
+        "propertyUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin"
       },
       {
         "name": "example_meaning_en",
@@ -253,7 +253,7 @@
         "datatype": "string",
         "required": true,
         "lang": "en",
-        "propertyUrl": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning"
+        "propertyUrl": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning"
       }
     ]
   }

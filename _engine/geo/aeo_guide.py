@@ -39,11 +39,12 @@ import gen_store_attribution  # noqa: E402
 # uses, so take the final token from the same function the rewrite uses.
 GUIDE_CAMPAIGN = gen_store_attribution.campaign_token("guides/page.html")
 from answer_personas import PERSONAS  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 GUIDES = os.path.join(PAGES, "guides")
 DATA = os.path.join(ROOT, "data")
-SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
+SITE = os.environ.get("GEO_SITE", PUBLIC_SITE).rstrip("/")
 SOV = os.path.join(HERE, "reports", "aeo_sov.json")
 try:
     OPENAI_KEY = open(os.path.expanduser("~/.openai_key")).read().strip()

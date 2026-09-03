@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenario.schema.json",
+  "$id": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/scenario.schema.json",
   "title": "Family Travel Mission API scenario response",
   "type": "object",
   "additionalProperties": false,
@@ -15,7 +15,7 @@
   ],
   "properties": {
     "$schema": {
-      "const": "https://alice51849.github.io/ios-app-guide/api/v1/family-travel-missions/scenario.schema.json"
+      "const": "https://open.cait518.cc/ios-app-guide/api/v1/family-travel-missions/scenario.schema.json"
     },
     "apiVersion": {
       "const": "1.0.0"

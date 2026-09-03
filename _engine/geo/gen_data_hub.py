@@ -35,11 +35,12 @@ from publisher_intent_catalog import (
     EXPECTED_RECORD_COUNT as PUBLISHER_INTENT_RECORD_COUNT,
     build as build_publisher_intent_catalog,
 )
+from site_config import PUBLIC_SITE  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 DATA = os.path.join(PAGES, "data")
-SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
+SITE = os.environ.get("GEO_SITE", PUBLIC_SITE).rstrip("/")
 TODAY = _dt.date.today().isoformat()
 CONTENT_MODIFIED_RE = re.compile(
     r'<meta name="content-modified" content="([0-9]{4}-[0-9]{2}-[0-9]{2})">'

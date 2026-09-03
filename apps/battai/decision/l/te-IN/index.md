@@ -1,7 +1,7 @@
 ---
 title: "BattAI: బ్యాటరీ ఆరోగ్య స్కోర్ — స్పష్టమైన నియమాలు, మూలాలు, పరిమితులు | iOS App"
 lang: "te-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/te-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/te-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI పబ్లిక్ iOS APIల నుంచి 5 విలువ
 
 [App Store నుంచి BattAI: బ్యాటరీ ఆరోగ్య స్కోర్ పొందండి](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_te_in&mt=8)
 
-[పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/battai.html)
+[పూర్తి మార్గదర్శకాన్ని చదవండి](https://open.cait518.cc/ios-app-guide/te-IN/battai.html)
 
 > ఇది Lumi Studio ద్వారా ప్రచురించబడిన స్వంత సంస్థ పదార్థం, ప్రతి జాబితా చేయబడిన యాప్ యొక్క అభివృద్ధికర్త.

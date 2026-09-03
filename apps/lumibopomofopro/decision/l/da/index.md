@@ -1,7 +1,7 @@
 ---
 title: "bedste komplette zhuyin-app til tosprogede børn"
 lang: "da"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/da/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/da/index.html"
 modified: "2026-09-03"
 app_store_id: "6775773117"
 verified_live: true
@@ -20,6 +20,6 @@ Tosprogede børn, der lærer Zhuyin hjemme, har brug for en komplet vej gennem l
 
 [Hent Lumi Bopomofo Pro i App Store →](https://apps.apple.com/dk/app/id6775773117?pt=118326163&ct=iag_data_da&mt=8)
 
-[Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/answers/best-complete-zhuyin-app-for-bilingual-children.html)
+[Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/answers/best-complete-zhuyin-app-for-bilingual-children.html)
 
 > Guide skrevet af Lumi Studio, som har udviklet appen. Appnavne er varemærker tilhørende deres ejere og bruges udelukkende til identifikation. Når det gælder dokumenter, sundhed, skole og produktivitet, bør du tjekke de officielle krav, hvor det er relevant.

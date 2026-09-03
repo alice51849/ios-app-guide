@@ -1,7 +1,7 @@
 ---
 title: "BattAI: ബാറ്ററി ആരോഗ്യ സ്കോർ — വ്യക്തമായ നിയമങ്ങൾ, ഉറവിടങ്ങൾ, പരിധികൾ | iOS App"
 lang: "ml-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ml-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ml-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI പൊതു iOS API-കളിൽ നിന്ന് 5 മൂല�
 
 [App Store-ൽ നിന്ന് BattAI: ബാറ്ററി ആരോഗ്യ സ്കോർ നേടൂ](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_ml_in&mt=8)
 
-[പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/battai.html)
+[പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://open.cait518.cc/ios-app-guide/ml-IN/battai.html)
 
 > ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.

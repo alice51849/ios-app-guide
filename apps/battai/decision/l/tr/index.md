@@ -1,7 +1,7 @@
 ---
 title: "BattAI: Pil sağlığı puanı — Açık kurallar, kaynaklar ve sınırlar | iOS App"
 lang: "tr"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/tr/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/tr/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI herkese açık iOS API’lerinden beş değer kullanır: pil düze
 
 [BattAI: Pil sağlığı puanı uygulamasını App Store'dan al](https://apps.apple.com/tr/app/id6802423998?pt=118326163&ct=iag_data_tr&mt=8)
 
-[Kılavuzun tamamını oku](https://alice51849.github.io/ios-app-guide/tr/battai.html)
+[Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/battai.html)
 
 > Bu, listelenen her uygulamanın geliştiricisi Lumi Studio tarafından yayımlanan birinci taraf materyaldir.

@@ -207,7 +207,7 @@ class PublisherIntentVisualOutputTests(unittest.TestCase):
     def _local_path(self, url: str) -> Path:
         parsed = urlparse(url)
         self.assertEqual("https", parsed.scheme)
-        self.assertEqual("alice51849.github.io", parsed.netloc)
+        self.assertEqual("open.cait518.cc", parsed.netloc)
         prefix = "/ios-app-guide/"
         self.assertTrue(parsed.path.startswith(prefix), parsed.path)
         return self.pages / parsed.path.removeprefix(prefix)

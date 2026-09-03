@@ -1,7 +1,7 @@
 ---
 title: "Snapport Lite: Tee passikuvat — Luo ID-valokuvia kotona | iOS App"
 lang: "fi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/fi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/fi/index.html"
 modified: "2026-09-03"
 app_store_id: "6792856304"
 verified_live: true
@@ -20,6 +20,6 @@ Snapport Lite - Ota passin, viisumin ja asiakirjojen valokuvia ohjatulla koon s�
 
 [Lataa Snapport Lite: Tee passikuvat App Storesta](https://apps.apple.com/fi/app/id6792856304?pt=118326163&ct=iag_data_fi&mt=8)
 
-[Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/snapportlite.html)
+[Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/snapportlite.html)
 
 > Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.

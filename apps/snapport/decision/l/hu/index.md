@@ -1,7 +1,7 @@
 ---
 title: "legjobb útlevélfotó alkalmazás babáknak és kisgyermekeknek otthon"
 lang: "hu"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/snapport/decision/l/hu/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/hu/index.html"
 modified: "2026-09-03"
 app_store_id: "6780575828"
 verified_live: true
@@ -20,6 +20,6 @@ Baba útlevélfotónál senki más nem lehet a képen, és az háttérnek egysz�
 
 [Szerezd be a Snapportot az App Store-ból →](https://apps.apple.com/hu/app/id6780575828?pt=118326163&ct=iag_data_hu&mt=8)
 
-[Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
+[Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
 
 > Az útmutatót az alkalmazás fejlesztője, a Lumi Studio írta. Az alkalmazásnevek tulajdonosaik védjegyei, és kizárólag azonosítás céljából szerepelnek. Dokumentumokkal, egészséggel, iskolával és munkaszervezéssel kapcsolatos döntéseknél ellenőrizd a hivatalos követelményeket ott, ahol ez lényeges.

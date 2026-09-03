@@ -1,7 +1,7 @@
 ---
 title: "OnePage PPT: ଏକ ସ୍ଲାଇଡ୍ — ନୋଟରୁ ସୁନ୍ଦର ଉପସ୍ଥାପନା | iOS App"
 lang: "or-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/or-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/or-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6798814385"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [App Store ରୁ OnePage PPT: ଏକ ସ୍ଲାଇଡ୍ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=iag_data_or_in&mt=8)
 
-[ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://alice51849.github.io/ios-app-guide/or-IN/onepageppt.html)
+[ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶ ପଠନ୍ତୁ](https://open.cait518.cc/ios-app-guide/or-IN/onepageppt.html)
 
 > ଏହା Lumi Studio ଦ୍ୱାରା ପ୍ରକାଶିତ ପ୍ରଥମ-ପକ୍ଷ ସାମଗ୍ରୀ, ଯାହାରେ ସମସ୍ତ ତାଲିକାଭୁକ୍ତ ଆପ୍ସର ବିକାଶକ ଅଛନ୍ତି।

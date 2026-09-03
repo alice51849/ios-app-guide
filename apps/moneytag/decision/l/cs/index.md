@@ -1,7 +1,7 @@
 ---
 title: "MoneyTag: Příjmy a výdaje — Projekty · Štítky · Přehled | iOS App"
 lang: "cs"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/cs/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/cs/index.html"
 modified: "2026-09-03"
 app_store_id: "6801956402"
 verified_live: true
@@ -26,6 +26,6 @@ Příjmy a výdaje Každý projekt si vede vlastní účetnictví: příjmy minu
 
 [Stáhněte si MoneyTag: Příjmy a výdaje v App Storu](https://apps.apple.com/cz/app/id6801956402?pt=118326163&ct=iag_data_cs&mt=8)
 
-[Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/moneytag.html)
+[Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/moneytag.html)
 
 > Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.

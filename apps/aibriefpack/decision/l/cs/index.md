@@ -1,7 +1,7 @@
 ---
 title: "AI Brief: Ze souborů AI prompt — Soubory v jasném kontextu | iOS App"
 lang: "cs"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/cs/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/cs/index.html"
 modified: "2026-09-03"
 app_store_id: "6791658210"
 verified_live: true
@@ -20,6 +20,6 @@ Lepší kontext. Lepší odpovědi. Proměňte snímky obrazovky, soubory, pozn�
 
 [Stáhněte si AI Brief: Ze souborů AI prompt v App Storu](https://apps.apple.com/cz/app/id6791658210?pt=118326163&ct=iag_data_cs&mt=8)
 
-[Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/aibriefpack.html)
+[Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/aibriefpack.html)
 
 > Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.

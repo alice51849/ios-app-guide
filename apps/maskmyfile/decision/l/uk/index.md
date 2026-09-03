@@ -1,7 +1,7 @@
 ---
 title: "Mask My File: Видаліть дані — Сховайте дані перед поширенням | iOS App"
 lang: "uk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/uk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/uk/index.html"
 modified: "2026-09-03"
 app_store_id: "6792850916"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [Завантажте Mask My File: Видаліть дані з App Store](https://apps.apple.com/ua/app/id6792850916?pt=118326163&ct=iag_data_uk&mt=8)
 
-[Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/maskmyfile.html)
+[Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/maskmyfile.html)
 
 > Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.

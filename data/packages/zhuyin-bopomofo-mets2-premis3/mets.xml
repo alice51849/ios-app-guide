@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<mets:mets xmlns:mets="http://www.loc.gov/METS/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OBJID="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/" LABEL="Bopomofo 37-Symbol Open Reference Preservation Package" TYPE="Dataset" xsi:schemaLocation="http://www.loc.gov/METS/v2 https://www.loc.gov/standards/mets/mets2.xsd">
+<mets:mets xmlns:mets="http://www.loc.gov/METS/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OBJID="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/" LABEL="Bopomofo 37-Symbol Open Reference Preservation Package" TYPE="Dataset" xsi:schemaLocation="http://www.loc.gov/METS/v2 https://www.loc.gov/standards/mets/mets2.xsd">
   <mets:metsHdr CREATEDATE="2026-07-11T20:08:50Z" LASTMODDATE="2026-07-11T20:08:50Z" RECORDSTATUS="complete">
     <mets:agent ROLE="CREATOR" TYPE="ORGANIZATION">
       <mets:name>iOS App Guide Open Resources</mets:name>
@@ -7,7 +7,7 @@
     <mets:agent ROLE="CREATOR" TYPE="SOFTWARE">
       <mets:name>zhuyin_mets_premis_package.py</mets:name>
     </mets:agent>
-    <mets:metsDocumentID TYPE="URI">https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/mets.xml</mets:metsDocumentID>
+    <mets:metsDocumentID TYPE="URI">https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/mets.xml</mets:metsDocumentID>
   </mets:metsHdr>
   <mets:mdSec>
     <mets:md ID="md-premis" USE="TECHNICAL PROVENANCE RIGHTS" CREATED="2026-07-11T20:08:50Z" STATUS="current">
@@ -16,34 +16,34 @@
   </mets:mdSec>
   <mets:fileSec ID="files">
     <mets:fileGrp ID="group-data" USE="DATA" MDID="md-premis">
-      <mets:file ID="file-001" SEQ="1" MIMETYPE="text/csv" SIZE="8350" CHECKSUM="6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422" CHECKSUMTYPE="SHA-256" OWNERID="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv" MDID="md-premis" USE="DATA">
+      <mets:file ID="file-001" SEQ="1" MIMETYPE="text/csv" SIZE="8350" CHECKSUM="6d9235a013dd1856130841bdf6866f22173903bec726690b9b4c3e555b223422" CHECKSUMTYPE="SHA-256" OWNERID="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv" MDID="md-premis" USE="DATA">
         <mets:FLocat LOCTYPE="URL" LOCREF="data/zhuyin-bopomofo-ml-dataset.csv" USE="PRESERVATION"/>
       </mets:file>
-      <mets:file ID="file-002" SEQ="2" MIMETYPE="text/plain" SIZE="14734" CHECKSUM="68729f91871ca6603929c2a28ffb567513bf0a4f233f55164c236bd36b31b131" CHECKSUMTYPE="SHA-256" OWNERID="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.jsonl" MDID="md-premis" USE="DATA">
+      <mets:file ID="file-002" SEQ="2" MIMETYPE="text/plain" SIZE="14734" CHECKSUM="68729f91871ca6603929c2a28ffb567513bf0a4f233f55164c236bd36b31b131" CHECKSUMTYPE="SHA-256" OWNERID="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.jsonl" MDID="md-premis" USE="DATA">
         <mets:FLocat LOCTYPE="URL" LOCREF="data/zhuyin-bopomofo-ml-dataset.jsonl" USE="PRESERVATION"/>
       </mets:file>
-      <mets:file ID="file-003" SEQ="3" MIMETYPE="application/ld+json" SIZE="13777" CHECKSUM="d96d4b5a8d50247ace01825cc267a657e0f9ac9785e6f9283b4f7312337e30e7" CHECKSUMTYPE="SHA-256" OWNERID="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld" MDID="md-premis" USE="DATA">
+      <mets:file ID="file-003" SEQ="3" MIMETYPE="application/ld+json" SIZE="13777" CHECKSUM="d96d4b5a8d50247ace01825cc267a657e0f9ac9785e6f9283b4f7312337e30e7" CHECKSUMTYPE="SHA-256" OWNERID="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld" MDID="md-premis" USE="DATA">
         <mets:FLocat LOCTYPE="URL" LOCREF="data/zhuyin-bopomofo-ml-dataset.croissant.jsonld" USE="PRESERVATION"/>
       </mets:file>
-      <mets:file ID="file-004" SEQ="4" MIMETYPE="application/csvm+json" SIZE="7701" CHECKSUM="eb8dcf8e39f65a5d3747a527c58537ad13f8c5a7ae56b55b34189c4ca9a98771" CHECKSUMTYPE="SHA-256" OWNERID="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json" MDID="md-premis" USE="DATA">
+      <mets:file ID="file-004" SEQ="4" MIMETYPE="application/csvm+json" SIZE="7701" CHECKSUM="eb8dcf8e39f65a5d3747a527c58537ad13f8c5a7ae56b55b34189c4ca9a98771" CHECKSUMTYPE="SHA-256" OWNERID="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json" MDID="md-premis" USE="DATA">
         <mets:FLocat LOCTYPE="URL" LOCREF="data/zhuyin-bopomofo-ml-dataset.csv-metadata.json" USE="PRESERVATION"/>
       </mets:file>
-      <mets:file ID="file-005" SEQ="5" MIMETYPE="application/ld+json" SIZE="79017" CHECKSUM="e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a" CHECKSUMTYPE="SHA-256" OWNERID="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-vocabulary.jsonld" MDID="md-premis" USE="DATA">
+      <mets:file ID="file-005" SEQ="5" MIMETYPE="application/ld+json" SIZE="79017" CHECKSUM="e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a" CHECKSUMTYPE="SHA-256" OWNERID="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-vocabulary.jsonld" MDID="md-premis" USE="DATA">
         <mets:FLocat LOCTYPE="URL" LOCREF="data/zhuyin-bopomofo-vocabulary.jsonld" USE="PRESERVATION"/>
       </mets:file>
     </mets:fileGrp>
     <mets:fileGrp ID="group-documentation" USE="DOCUMENTATION" MDID="md-premis">
-      <mets:file ID="file-006" SEQ="6" MIMETYPE="text/plain" SIZE="1874" CHECKSUM="de8ad97486b677bab2f388f9d11666aac17445d820120e323439bd73f6e47bb7" CHECKSUMTYPE="SHA-256" OWNERID="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/README.txt" MDID="md-premis" USE="DOCUMENTATION">
+      <mets:file ID="file-006" SEQ="6" MIMETYPE="text/plain" SIZE="1874" CHECKSUM="de8ad97486b677bab2f388f9d11666aac17445d820120e323439bd73f6e47bb7" CHECKSUMTYPE="SHA-256" OWNERID="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/README.txt" MDID="md-premis" USE="DOCUMENTATION">
         <mets:FLocat LOCTYPE="URL" LOCREF="README.txt" USE="PRESERVATION"/>
       </mets:file>
-      <mets:file ID="file-007" SEQ="7" MIMETYPE="text/plain" SIZE="1052" CHECKSUM="50e0e179d421314dbd3a7317459dddcfed2e4c2103f9e70ed0417e9748e78f25" CHECKSUMTYPE="SHA-256" OWNERID="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/LICENSE.txt" MDID="md-premis" USE="DOCUMENTATION">
+      <mets:file ID="file-007" SEQ="7" MIMETYPE="text/plain" SIZE="1052" CHECKSUM="50e0e179d421314dbd3a7317459dddcfed2e4c2103f9e70ed0417e9748e78f25" CHECKSUMTYPE="SHA-256" OWNERID="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/LICENSE.txt" MDID="md-premis" USE="DOCUMENTATION">
         <mets:FLocat LOCTYPE="URL" LOCREF="LICENSE.txt" USE="PRESERVATION"/>
       </mets:file>
     </mets:fileGrp>
   </mets:fileSec>
   <mets:structSec ID="structures">
     <mets:structMap ID="struct-logical" TYPE="LOGICAL" LABEL="Bopomofo preservation package structure">
-      <mets:div ID="div-package" TYPE="DATASET" LABEL="Bopomofo 37-Symbol Open Reference Data" MDID="md-premis" CONTENTIDS="https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/">
+      <mets:div ID="div-package" TYPE="DATASET" LABEL="Bopomofo 37-Symbol Open Reference Data" MDID="md-premis" CONTENTIDS="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/">
         <mets:div ID="div-data" TYPE="DATA" LABEL="Reusable data and standards metadata" MDID="md-premis">
           <mets:fptr FILEID="file-001"/>
           <mets:fptr FILEID="file-002"/>

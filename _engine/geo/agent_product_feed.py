@@ -56,13 +56,14 @@ from app_store_storefronts import (
 from family_travel_dataset import write_text_if_changed
 from official_locales import OFFICIAL_LOCALES
 import publisher_intent_catalog
+from site_config import PUBLIC_SITE  # noqa: E402
 
 
 HERE = Path(__file__).resolve().parent
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get(
     "GEO_SITE",
-    "https://alice51849.github.io/ios-app-guide",
+    PUBLIC_SITE,
 ).rstrip("/")
 SLUG = "ios-app-agent-feed"
 FEED_DIR = Path("api") / "v1" / SLUG

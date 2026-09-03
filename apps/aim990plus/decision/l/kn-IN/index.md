@@ -1,7 +1,7 @@
 ---
 title: "Aim990 Plus: ಇಂಗ್ಲಿಷ್ ಪರೀಕ್ಷೆ — ಇಂಗ್ಲಿಷ್ ಒತ್ತಡ ಅಭ್ಯಾಸ | iOS App"
 lang: "kn-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/kn-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/kn-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
@@ -19,6 +19,6 @@ Aim990 Plus ವಯಸ್ಕರು ತಮ್ಮ ಇಂಗ್ಲಿಷ್ ಕೇ�
 
 [App Store ನಲ್ಲಿ Aim990 Plus: ಇಂಗ್ಲಿಷ್ ಪರೀಕ್ಷೆ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_kn_in&mt=8)
 
-[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/aim990plus.html)
+[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://open.cait518.cc/ios-app-guide/kn-IN/aim990plus.html)
 
 > ಇದು ಪಟ್ಟಿಯಲ್ಲಿ ಇರುವ ಪ್ರತಿಯೊಂದು ಆ್ಯಪ್‌ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ Lumi Studio ಅವರಿಂದ ಪ್ರಕಟಿಸಲಾದ ಮೊದಲ-ಪಕ್ಷದ ವಸ್ತು.

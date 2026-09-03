@@ -1,7 +1,7 @@
 ---
 title: "Snapport Lite: Passfoto hemma — Skapa ID-foton hemma | iOS App"
 lang: "sv"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/sv/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/sv/index.html"
 modified: "2026-09-03"
 app_store_id: "6792856304"
 verified_live: true
@@ -20,6 +20,6 @@ Snapport Lite - Ta pass-, visum- och dokumentfoton med vägledd storlek, bakgrun
 
 [Hämta Snapport Lite: Passfoto hemma i App Store](https://apps.apple.com/se/app/id6792856304?pt=118326163&ct=iag_data_sv&mt=8)
 
-[Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/snapportlite.html)
+[Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/snapportlite.html)
 
 > Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.

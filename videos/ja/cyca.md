@@ -1,7 +1,7 @@
 ---
 title: "アカウント不要の最高の生理周期トラッカーアプリiPhone向け"
 lang: "ja"
-canonical: "https://alice51849.github.io/ios-app-guide/videos/ja/cyca.html"
+canonical: "https://open.cait518.cc/ios-app-guide/videos/ja/cyca.html"
 modified: "2026-09-03"
 video_url: "https://files.catbox.moe/vew5n7.mp4"
 duration: "PT16S"
@@ -18,6 +18,6 @@ publisher: "Lumi Studio"
 
 [App StoreでCycaを入手 →](https://apps.apple.com/jp/app/id6782251621?pt=118326163&ct=iag_video_ja&mt=8)
 
-[アプリガイドを開く](https://alice51849.github.io/ios-app-guide/ja/answers/best-period-tracker-app-no-account-required-iphone.html)
+[アプリガイドを開く](https://open.cait518.cc/ios-app-guide/ja/answers/best-period-tracker-app-no-account-required-iphone.html)
 
 > アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。

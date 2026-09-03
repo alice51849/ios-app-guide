@@ -1,7 +1,7 @@
 ---
 title: "אפליקציית Zhuyin מלאה לילדים דו-לשוניים"
 lang: "he"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumibopomofopro/decision/l/he/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofopro/decision/l/he/index.html"
 modified: "2026-09-03"
 app_store_id: "6775773117"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [קבל את Lumi Bopomofo Pro ב-App Store →](https://apps.apple.com/il/app/id6775773117?pt=118326163&ct=iag_data_he&mt=8)
 
-[קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/answers/best-complete-zhuyin-app-for-bilingual-children.html)
+[קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/answers/best-complete-zhuyin-app-for-bilingual-children.html)
 
 > מדריך שנכתב על ידי Lumi Studio, מפתחת האפליקציה. שמות האפליקציות הם סימני מסחר של בעליהם ומופיעים לצורכי זיהוי בלבד. בהחלטות שנוגעות למסמכים, בריאות, לימודים ופרודוקטיביות כדאי לבדוק את הדרישות הרשמיות היכן שזה רלוונטי.

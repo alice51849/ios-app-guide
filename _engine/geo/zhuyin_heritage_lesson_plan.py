@@ -14,10 +14,11 @@ ROOT = HERE.parent
 sys.path.insert(0, str(ROOT / "social"))
 
 from videogen.registry import appstore_url  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = HERE / "pages"
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 SLUG = "zhuyin-5-day-lesson-plan-heritage-school"
 LICENSE = "https://creativecommons.org/licenses/by/4.0/"

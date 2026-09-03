@@ -1,7 +1,7 @@
 ---
 title: "ShotInbox AI: Sort Screenshots — Urejanje posnetkov zaslona | iOS App"
 lang: "sl-SI"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/sl-SI/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/sl-SI/index.html"
 modified: "2026-09-03"
 app_store_id: "6802166527"
 verified_live: true
@@ -19,6 +19,6 @@ Vaši posnetki, urejeni Poiščite, uredite in počistite vsak posnetek. Najnove
 
 [Prenesite ShotInbox AI: Sort Screenshots iz trgovine App Store](https://apps.apple.com/si/app/id6802166527?pt=118326163&ct=iag_data_sl_si&mt=8)
 
-[Preberite celoten vodnik](https://alice51849.github.io/ios-app-guide/sl-SI/shotinbox.html)
+[Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/shotinbox.html)
 
 > To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.

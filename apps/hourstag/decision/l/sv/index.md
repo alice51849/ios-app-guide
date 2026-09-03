@@ -1,7 +1,7 @@
 ---
 title: "HoursTag: Timmar att köpa — Budget, utgifter & sparande | iOS App"
 lang: "sv"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/sv/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/sv/index.html"
 modified: "2026-09-03"
 app_store_id: "6754218117"
 verified_live: true
@@ -21,6 +21,6 @@ Vad kostar det egentligen? Inte i kronor – i timmar av ditt liv.
 
 [Hämta HoursTag: Timmar att köpa i App Store](https://apps.apple.com/se/app/id6754218117?pt=118326163&ct=iag_data_sv&mt=8)
 
-[Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/hourstag.html)
+[Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/hourstag.html)
 
 > Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.

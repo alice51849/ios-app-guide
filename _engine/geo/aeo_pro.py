@@ -31,6 +31,7 @@ sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from queries import ALL as QUERIES  # noqa: E402
 from aeo_sov import aliases, is_ours, normalize  # noqa: E402  (重用 v1 比對邏輯)
+from site_config import PUBLIC_HOST, ORIGIN_HOST  # noqa: E402
 
 REPORTS = os.path.join(HERE, "reports")
 os.makedirs(REPORTS, exist_ok=True)
@@ -39,7 +40,7 @@ OPENAI_KEY = open(os.path.expanduser("~/.openai_key")).read().strip()
 SEARCH_MODEL = os.environ.get("AEO_SEARCH_MODEL", "gpt-4o-search-preview")
 EXTRACT_MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 
-OWN_DOMAINS = {"apps.apple.com", "alice51849.github.io"}
+OWN_DOMAINS = {"apps.apple.com", PUBLIC_HOST, ORIGIN_HOST}
 
 
 def _post(body, timeout=90, retries=3):

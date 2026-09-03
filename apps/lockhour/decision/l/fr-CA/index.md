@@ -1,7 +1,7 @@
 ---
 title: "meilleure application pour bloquer les réseaux sociaux pendant les études iPhone"
 lang: "fr-CA"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/fr-CA/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/fr-CA/index.html"
 modified: "2026-09-03"
 app_store_id: "6780107485"
 verified_live: true
@@ -21,6 +21,6 @@ Pendant les examens, la volonté ne suffit pas — un blocage strict et chronom�
 
 [Obtenez LockHour Pro sur l’App Store →](https://apps.apple.com/ca/app/id6780107485?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
-[Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-app-to-block-social-media-while-studying-iphone.html)
+[Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-app-to-block-social-media-while-studying-iphone.html)
 
 > Guide rédigé par Lumi Studio, le développeur de l'app. Les noms d'apps sont des marques de commerce de leurs propriétaires et servent uniquement à les identifier. Pour les décisions concernant les documents, la santé, l'école et la productivité, vérifiez les exigences officielles applicables.

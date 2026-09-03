@@ -1,7 +1,7 @@
 ---
 title: "AI Brief: Datoteke u AI upit — Datoteke u jasnom kontekstu | iOS App"
 lang: "hr"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/hr/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/hr/index.html"
 modified: "2026-09-03"
 app_store_id: "6791658210"
 verified_live: true
@@ -20,6 +20,6 @@ Bolji kontekst. Bolji odgovori. Pretvorite snimke zaslona, datoteke, bilješke i
 
 [Preuzmite AI Brief: Datoteke u AI upit u App Storeu](https://apps.apple.com/hr/app/id6791658210?pt=118326163&ct=iag_data_hr&mt=8)
 
-[Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/aibriefpack.html)
+[Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/aibriefpack.html)
 
 > Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.

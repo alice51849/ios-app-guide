@@ -1,7 +1,7 @@
 ---
 title: "Mochi DoneStamp: Viimeksi — Muista, milloin teit sen | iOS App"
 lang: "fi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/fi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/fi/index.html"
 modified: "2026-09-03"
 app_store_id: "6790800323"
 verified_live: true
@@ -19,6 +19,6 @@ Milloin viimeksi vaihdoit lakanat, kastelit kasvin, soitit läheisille, varmuusk
 
 [Lataa Mochi DoneStamp: Viimeksi App Storesta](https://apps.apple.com/fi/app/id6790800323?pt=118326163&ct=iag_data_fi&mt=8)
 
-[Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/mochidonestamp.html)
+[Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/mochidonestamp.html)
 
 > Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.

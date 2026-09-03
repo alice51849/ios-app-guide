@@ -1,7 +1,7 @@
 ---
 title: "Mask My File: Wis je gegevens — Verberg gegevens vóór delen | iOS App"
 lang: "nl-NL"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/nl-NL/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/nl-NL/index.html"
 modified: "2026-09-03"
 app_store_id: "6792850916"
 verified_live: true
@@ -20,6 +20,6 @@ Deel veilig zonder de nuttige context te verliezen. Mask My File vindt privégeg
 
 [Download Mask My File: Wis je gegevens in de App Store](https://apps.apple.com/nl/app/id6792850916?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
-[Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/maskmyfile.html)
+[Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/maskmyfile.html)
 
 > Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.

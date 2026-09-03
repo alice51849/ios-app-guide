@@ -1,7 +1,7 @@
 ---
 title: "DailyMate Lite: Hovorte smelo — 50 jazykov, skutočné dialógy | iOS App"
 lang: "sk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/sk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/sk/index.html"
 modified: "2026-09-03"
 app_store_id: "6794725568"
 verified_live: true
@@ -19,6 +19,6 @@ Hovorte s istotou práve vtedy, keď to potrebujete. DailyMate Lite mení situá
 
 [Stiahnuť DailyMate Lite: Hovorte smelo v App Store](https://apps.apple.com/sk/app/id6794725568?pt=118326163&ct=iag_data_sk&mt=8)
 
-[Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/dailymatelite.html)
+[Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/dailymatelite.html)
 
 > Toto je materiál prvej strany publikovaný Lumi Studio, vývojárom každej uvedenej aplikácie.

@@ -5,11 +5,12 @@ Designed to run from LaunchAgent without Claude. Picks next 5 uncovered langs an
 import json, os, subprocess, sys, logging, time
 from pathlib import Path
 from datetime import datetime
+from site_config import PUBLIC_SITE  # noqa: E402
 
 HERE = Path(__file__).parent
 PAGES = HERE / "pages"
 LOG = HERE.parent / "agent" / "reports" / "geo_autobatch.log"
-GEO_SITE = os.getenv("GEO_SITE", "https://alice51849.github.io/ios-app-guide")
+GEO_SITE = os.getenv("GEO_SITE", PUBLIC_SITE)
 PYTHON = sys.executable
 
 logging.basicConfig(

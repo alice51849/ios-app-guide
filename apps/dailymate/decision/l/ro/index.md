@@ -1,7 +1,7 @@
 ---
 title: "cea mai bună aplicație cu fraze utile pentru călătorii și Apple Watch"
 lang: "ro"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymate/decision/l/ro/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymate/decision/l/ro/index.html"
 modified: "2026-09-03"
 app_store_id: "6790418321"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [Obține DailyMate din App Store →](https://apps.apple.com/ro/app/id6790418321?pt=118326163&ct=iag_data_ro&mt=8)
 
-[Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
+[Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html)
 
 > Ghid scris de Lumi Studio, dezvoltatorul aplicației. Numele aplicațiilor sunt mărci ale deținătorilor lor și sunt folosite doar pentru identificare. Pentru deciziile legate de documente, sănătate, școală și productivitate, verifică cerințele oficiale acolo unde contează.

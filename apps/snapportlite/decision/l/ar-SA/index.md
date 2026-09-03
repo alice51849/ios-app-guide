@@ -1,7 +1,7 @@
 ---
 title: "Snapport Lite: إنشاء صور وثائق — أنشئ صور الوثائق في المنزل | iOS App"
 lang: "ar-SA"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/ar-SA/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/ar-SA/index.html"
 modified: "2026-09-03"
 app_store_id: "6792856304"
 verified_live: true
@@ -20,6 +20,6 @@ Snapport Lite - أنشئ صور جواز السفر والتأشيرة واله�
 
 [احصل على Snapport Lite: إنشاء صور وثائق من App Store](https://apps.apple.com/sa/app/id6792856304?pt=118326163&ct=iag_data_ar_sa&mt=8)
 
-[اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/snapportlite.html)
+[اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/snapportlite.html)
 
 > هذه مادة ينشرها Lumi Studio مباشرةً بصفته مطور جميع التطبيقات المدرجة.

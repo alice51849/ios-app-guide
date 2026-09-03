@@ -1,7 +1,7 @@
 ---
 title: "aplikasi kosakata terbaik untuk komuter sibuk dengan Apple Watch"
 lang: "id"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmate/decision/l/id/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/id/index.html"
 modified: "2026-09-03"
 app_store_id: "6789917808"
 verified_live: true
@@ -24,6 +24,6 @@ Komuter sibuk butuh latihan kosakata yang bisa masuk di waktu luang tanpa perlu 
 
 [Dapatkan Wordmate: Learn 44 Languages di App Store →](https://apps.apple.com/id/app/id6789917808?pt=118326163&ct=iag_data_id&mt=8)
 
-[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
+[Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html)
 
 > Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.

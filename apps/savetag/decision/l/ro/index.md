@@ -1,7 +1,7 @@
 ---
 title: "SaveTag: marcaje cu IA — Salvează linkuri, citește-le | iOS App"
 lang: "ro"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/ro/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/ro/index.html"
 modified: "2026-09-03"
 app_store_id: "6802505528"
 verified_live: true
@@ -19,6 +19,6 @@ Salvează acum. Și de data asta chiar citește. Toată ziua îți trimiți link
 
 [Descarcă SaveTag: marcaje cu IA din App Store](https://apps.apple.com/ro/app/id6802505528?pt=118326163&ct=iag_data_ro&mt=8)
 
-[Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/savetag.html)
+[Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/savetag.html)
 
 > Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.

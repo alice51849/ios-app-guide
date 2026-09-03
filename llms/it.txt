@@ -4,17 +4,17 @@
 
 locale: it
 apps: 46
-- Elenco app: https://alice51849.github.io/ios-app-guide/it/tools/private-pay-once-iphone-app-finder.html
-- Elenco app · PWA: https://alice51849.github.io/ios-app-guide/it/tools/private-pay-once-iphone-app-finder.webmanifest
-- Schema.org OfferCatalog: https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/it.jsonld
-- Install decision routes JSON: https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes/locales/it.json
-- Elenco app · SVG: https://alice51849.github.io/ios-app-guide/it/visuals/
+- Elenco app: https://open.cait518.cc/ios-app-guide/it/tools/private-pay-once-iphone-app-finder.html
+- Elenco app · PWA: https://open.cait518.cc/ios-app-guide/it/tools/private-pay-once-iphone-app-finder.webmanifest
+- Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld
+- Install decision routes JSON: https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/it.json
+- Elenco app · SVG: https://open.cait518.cc/ios-app-guide/it/visuals/
 - Elenco app · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
 - Elenco app · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
 - Elenco app · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
 - Elenco app · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
 - Elenco app · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
-- Elenco app · MCP client config: https://alice51849.github.io/ios-app-guide/data/lumi-app-finder.mcp.json
+- Elenco app · MCP client config: https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json
 - Elenco app · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
 - Elenco app · Agent Skill · it: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/it.json
 - Elenco app · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
@@ -27,187 +27,187 @@ apps: 46
 - Elenco app · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 - Elenco app · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
-- [100 Notes Studio: Pen & Paper](https://alice51849.github.io/ios-app-guide/it/notesstudio100.html) — Quaderno a mano, PDF e studio
+- [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/it/notesstudio100.html) — Quaderno a mano, PDF e studio
   - Uno spazio privato e offline con 29 strumenti di scrittura, 100 stili di quaderno, annotazione PDF, audio legato alla pagina e schede per il ripasso programmato.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6798813048
-- [AI Brief: Da file a prompt IA](https://alice51849.github.io/ios-app-guide/it/aibriefpack.html) — Dai file a un contesto chiaro
+- [AI Brief: Da file a prompt IA](https://open.cait518.cc/ios-app-guide/it/aibriefpack.html) — Dai file a un contesto chiaro
   - Riunisci schermate, documenti e note. Mantieni i fatti. Rivedi i dettagli privati. Copia un riepilogo chiaro.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6791658210
-- [Aim990 - Preparazione TOEIC](https://alice51849.github.io/ios-app-guide/it/aim990.html) — Il tuo coach personale
+- [Aim990 - Preparazione TOEIC](https://open.cait518.cc/ios-app-guide/it/aim990.html) — Il tuo coach personale
   - Migliora il tuo punteggio TOEIC con Aim990! Un coach di studio di 30 giorni per ascolto e lettura, senza abbonamenti e senza pubblicità.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6784974530
-- [Aim990 Plus: Test di inglese](https://alice51849.github.io/ios-app-guide/it/aim990plus.html) — Inglese sotto pressione
+- [Aim990 Plus: Test di inglese](https://open.cait518.cc/ios-app-guide/it/aim990plus.html) — Inglese sotto pressione
   - Passa dal riscaldamento alla prova a tempo, poi rivedi gli errori con un percorso completo, privato e sempre disponibile offline.
   - Prezzo: Download a pagamento con prezzo unico e senza abbonamento.
   - App Store: https://apps.apple.com/it/app/id6792483140
-- [BattAI: Salute della batteria](https://alice51849.github.io/ios-app-guide/it/battai.html) — Regole, fonti e limiti chiari
+- [BattAI: Salute della batteria](https://open.cait518.cc/ios-app-guide/it/battai.html) — Regole, fonti e limiti chiari
   - Comprendi la batteria nel tempo Regole, fonti e limiti chiari Sblocca più cronologia, pianificazione e report. Un pagamento. Nessun abbonamento.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6802423998
-- [CalDaily: calcolatrice e temi](https://alice51849.github.io/ios-app-guide/it/caldaily.html) — Widget, strumenti, cronologia
+- [CalDaily: calcolatrice e temi](https://open.cait518.cc/ios-app-guide/it/caldaily.html) — Widget, strumenti, cronologia
   - Ogni risultato può avere un nome, un tipo e tornare a farsi trovare. Otto strumenti, un widget nella schermata Home e cento temi, tutto sul tuo dispositivo.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6794178671
-- [CV Desk: curriculum ATS](https://alice51849.github.io/ios-app-guide/it/cvdesk.html) — Curriculum ATS e modelli
+- [CV Desk: curriculum ATS](https://open.cait518.cc/ios-app-guide/it/cvdesk.html) — Curriculum ATS e modelli
   - Batti i robot di selezione. Punteggio ATS sul dispositivo, perfeziona il CV ed esportalo in PDF compatibile o Word. Privato, senza filigrana, acquisto unico.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6781337213
-- [Cyca: Ciclo Mestruale](https://alice51849.github.io/ios-app-guide/it/cyca.html) — Ovulazione, ciclo e SPM
+- [Cyca: Ciclo Mestruale](https://open.cait518.cc/ios-app-guide/it/cyca.html) — Ovulazione, ciclo e SPM
   - Capisci il tuo corpo, con calma. Segui ciclo, ovulazione, giorni fertili e SPM in un calendario che ti coccola. Tutto sul dispositivo, senza pubblicità, acquisto unico.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6782251621
-- [DailyMate Lite: Parla ora](https://alice51849.github.io/ios-app-guide/it/dailymatelite.html) — 50 lingue, dialoghi reali
+- [DailyMate Lite: Parla ora](https://open.cait518.cc/ios-app-guide/it/dailymatelite.html) — 50 lingue, dialoghi reali
   - Allenati con 8.400 scambi in 50 lingue. Il tema Viaggi per principianti è gratis; accedi a tutti gli argomenti e a tutti i livelli con un unico acquisto.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6794725568
-- [DailyMate: lingue in contesto](https://alice51849.github.io/ios-app-guide/it/dailymate.html) — Frasi complete, non parole
+- [DailyMate: lingue in contesto](https://open.cait518.cc/ios-app-guide/it/dailymate.html) — Frasi complete, non parole
   - Basta parole isolate. Impara 8.400 frasi complete in 47 lingue, ascolta le voci di sistema e usa il widget interattivo e Apple Watch. Un acquisto, nessun abbonamento.
   - Prezzo: Download a pagamento con prezzo unico e senza abbonamento.
   - App Store: https://apps.apple.com/it/app/id6790418321
-- [G+Money Lite: Spese di viaggio](https://alice51849.github.io/ios-app-guide/it/gmoneylite.html) — Spese, budget e valuta
+- [G+Money Lite: Spese di viaggio](https://open.cait518.cc/ios-app-guide/it/gmoneylite.html) — Spese, budget e valuta
   - I soldi in viaggio, semplici · Gratis: cambi, budget e riepilogo · 1 viaggio · 3 spese · Un solo pagamento · Accesso a vita · Nessun abbonamento
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6793436548
-- [G+Money: Spese e budget](https://alice51849.github.io/ios-app-guide/it/gmoney.html) — Spese, budget e valuta
+- [G+Money: Spese e budget](https://open.cait518.cc/ios-app-guide/it/gmoney.html) — Spese, budget e valuta
   - Due strumenti in uno: registra le spese, imposta un budget e converti oltre 50 valute, a casa o in viaggio. Tutto offline, privato, senza pubblicità, acquisto unico.
   - Prezzo: Download a pagamento con prezzo unico e senza abbonamento.
   - App Store: https://apps.apple.com/it/app/id6755782939
-- [HoursTag Lite: Prezzo in ore](https://alice51849.github.io/ios-app-guide/it/hourstaglite.html) — Il vero prezzo delle cose
+- [HoursTag Lite: Prezzo in ore](https://open.cait518.cc/ios-app-guide/it/hourstaglite.html) — Il vero prezzo delle cose
   - Il vero prezzo delle cose - Scopri il tuo prisma del valore - Costo in tempo - Tutto resta sul tuo dispositivo. Nessun account, nessun tracciamento
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6794039979
-- [HoursTag: Ore per comprare](https://alice51849.github.io/ios-app-guide/it/hourstag.html) — Risparmio, spese e budget
+- [HoursTag: Ore per comprare](https://open.cait518.cc/ios-app-guide/it/hourstag.html) — Risparmio, spese e budget
   - Trasforma ogni prezzo in ore di lavoro. Inserisci il reddito, scopri il costo reale in tempo e ferma gli acquisti impulsivi. Senza pubblicità, una volta.
   - Prezzo: Download a pagamento con prezzo unico e senza abbonamento.
   - App Store: https://apps.apple.com/it/app/id6754218117
-- [LockHour Pro: Blocco app](https://alice51849.github.io/ios-app-guide/it/lockhour.html) — Blocco App e Timer Focus
+- [LockHour Pro: Blocco app](https://open.cait518.cc/ios-app-guide/it/lockhour.html) — Blocco App e Timer Focus
   - Blocca le app che ti distraggono. Avvia il focus, blocca le app, accumula serie e riprenditi il tempo. Privato, senza pubblicità, acquisto unico.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6780107485
-- [Lumi Bopomofo](https://alice51849.github.io/ios-app-guide/it/lumibopomofo.html) — Zhuyin: fonetica cinese
+- [Lumi Bopomofo](https://open.cait518.cc/ios-app-guide/it/lumibopomofo.html) — Zhuyin: fonetica cinese
   - Lo zhuyin diventa un pianeta di suoni, toni e tracciati! Il bambino ascolta, scrive e ricorda. Per 3-7 anni. Senza pubblicità, privato, acquisto unico.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6773017109
-- [Lumi Bopomofo Pro: Zhuyin](https://alice51849.github.io/ios-app-guide/it/lumibopomofopro.html) — Gioco fonetica cinese
+- [Lumi Bopomofo Pro: Zhuyin](https://open.cait518.cc/ios-app-guide/it/lumibopomofopro.html) — Gioco fonetica cinese
   - Impara tutti i 37 suoni zhuyin: toni, fusione, tracciato e giochi. L'edizione completa di fonetica cinese. 3-7 anni, senza pubblicità, offline, una volta.
   - Prezzo: Download a pagamento con prezzo unico e senza abbonamento.
   - App Store: https://apps.apple.com/it/app/id6775773117
-- [Lumi Letters Lite: ABC Kids](https://alice51849.github.io/ios-app-guide/it/lumiletters.html) — Traccia l'ABC e fonetica
+- [Lumi Letters Lite: ABC Kids](https://open.cait518.cc/ios-app-guide/it/lumiletters.html) — Traccia l'ABC e fonetica
   - La prima avventura dell'ABC! Traccia le lettere, ascolta i suoni, gioca e prendi sicurezza. Per 3-7 anni, senza pubblicità e privato.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6778748533
-- [Lumi Letters Pro: ABC Phonics](https://alice51849.github.io/ios-app-guide/it/lumiletterspro.html) — Fonetica ABC: leggi e scrivi
+- [Lumi Letters Pro: ABC Phonics](https://open.cait518.cc/ios-app-guide/it/lumiletterspro.html) — Fonetica ABC: leggi e scrivi
   - Il percorso ABC completo: lettere, suoni, tracciamento, giochi di lettura e schede da stampare. Per 3-7 anni. Senza pubblicità, privato, acquisto unico.
   - Prezzo: Download a pagamento con prezzo unico e senza abbonamento.
   - App Store: https://apps.apple.com/it/app/id6778491147
-- [Lumi Math Planet: Explorer](https://alice51849.github.io/ios-app-guide/it/lumimath.html) — Matematica per bambini 3-6
+- [Lumi Math Planet: Explorer](https://open.cait518.cc/ios-app-guide/it/lumimath.html) — Matematica per bambini 3-6
   - Fai amare la matematica! Contare, addizioni, forme e logica giocando, per 3-6 anni. Ispirato a Montessori, senza pubblicità, privato, acquisto unico.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6778269699
-- [Lumi Math Pro: Kids Numbers](https://alice51849.github.io/ios-app-guide/it/lumimathpro.html) — Matematica: calcolo mentale
+- [Lumi Math Pro: Kids Numbers](https://open.cait518.cc/ios-app-guide/it/lumimathpro.html) — Matematica: calcolo mentale
   - La matematica diventa un'avventura spaziale! Calcolo mentale, tabelline, logica e sfide per 5-8 anni e oltre. Senza pubblicità, niente abbonamenti, privato.
   - Prezzo: Download a pagamento con prezzo unico e senza abbonamento.
   - App Store: https://apps.apple.com/it/app/id6776958488
-- [Lumi Meteo: Previsioni](https://alice51849.github.io/ios-app-guide/it/lumiweather.html) — Meteo, pioggia e raggi UV
+- [Lumi Meteo: Previsioni](https://open.cait518.cc/ios-app-guide/it/lumiweather.html) — Meteo, pioggia e raggi UV
   - Capisci a colpo d'occhio se è il giorno per uscire con i bambini. Meteo preciso ora per ora e 7 giorni, pioggia, UV e come vestirli. Senza pubblicità, acquisto unico.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6779552704
-- [Lumi Mission Planet Pro](https://alice51849.github.io/ios-app-guide/it/lumimissionpro.html) — Routine e abitudini bambini
+- [Lumi Mission Planet Pro](https://open.cait518.cc/ios-app-guide/it/lumimissionpro.html) — Routine e abitudini bambini
   - Lavarsi i denti, mangiare, riordinare e dormire diventano missioni felici, non lotte. Buone abitudini per 3-7 anni. Senza pubblicità, acquisto unico, in famiglia.
   - Prezzo: Download a pagamento con prezzo unico e senza abbonamento.
   - App Store: https://apps.apple.com/it/app/id6779745474
-- [Lumi Mission Planet: Routine](https://alice51849.github.io/ios-app-guide/it/lumimission.html) — Ricompense e routine bambini
+- [Lumi Mission Planet: Routine](https://open.cait518.cc/ios-app-guide/it/lumimission.html) — Ricompense e routine bambini
   - Trasforma lavarsi i denti, riordinare e la nanna in missioni gioiose! Una tabella ricompense che i bambini adorano. Senza pubblicità, acquisto unico, niente abbonamento.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6779750237
-- [Lumi Trip Planet: Viaggi](https://alice51849.github.io/ios-app-guide/it/tripplanet.html) — Avventura di viaggio in famigl
+- [Lumi Trip Planet: Viaggi](https://open.cait518.cc/ios-app-guide/it/tripplanet.html) — Avventura di viaggio in famigl
   - Gira "siamo già arrivati?" nel divertimento. Missioni di viaggio offline, aiuto per preparare le valigie e premi che fanno sorridere tutta la famiglia per l'intero viaggi
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6787193643
-- [Mask My File: Rimuovi i dati](https://alice51849.github.io/ios-app-guide/it/maskmyfile.html) — Nascondi i dati sensibili
+- [Mask My File: Rimuovi i dati](https://open.cait518.cc/ios-app-guide/it/maskmyfile.html) — Nascondi i dati sensibili
   - Oscura per sempre i dati personali sul dispositivo prima di condividere. Ogni file viene riaperto e verificato, fino a 100 alla volta. Acquisto unico, nessun abbonamento.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6792850916
-- [Mochi DoneStamp: Ultima volta](https://alice51849.github.io/ios-app-guide/it/mochidonestamp.html) — Ricorda quando l’hai fatto
+- [Mochi DoneStamp: Ultima volta](https://open.cait518.cc/ios-app-guide/it/mochidonestamp.html) — Ricorda quando l’hai fatto
   - Fallo, tocca e ricorderemo quando. Registra ogni evento occasionale o ricorrente in privato e offline. Un solo acquisto, mai un abbonamento.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6790800323
-- [Mochi: Lista carina](https://alice51849.github.io/ios-app-guide/it/mochi.html) — Organizza il giorno con calma
+- [Mochi: Lista carina](https://open.cait518.cc/ios-app-guide/it/mochi.html) — Organizza il giorno con calma
   - La lista di cose da fare che ti piace davvero. Accogliente, carina e così soddisfacente da spuntare: gratis, senza pubblicità. Fai tutto con calma.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6785004775
-- [MoneyTag: Entrate e uscite](https://alice51849.github.io/ios-app-guide/it/moneytag.html) — Progetti · Tag · Report
+- [MoneyTag: Entrate e uscite](https://open.cait518.cc/ios-app-guide/it/moneytag.html) — Progetti · Tag · Report
   - Lavori da freelance, banco al mercato, casa in affitto, cassa di classe: ognuno il suo registro, e un tag somma quanto ha reso e speso ovunque.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6801956402
-- [OnePage PPT: slide con IA](https://alice51849.github.io/ios-app-guide/it/onepageppt.html) — I tuoi appunti in una slide
+- [OnePage PPT: slide con IA](https://open.cait518.cc/ios-app-guide/it/onepageppt.html) — I tuoi appunti in una slide
   - Incolla appunti, screenshot o un PDF: ottieni una slide 16:9 curata con grafici veri. Presentala o esportala in PowerPoint. Funziona offline.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6798814385
-- [PhotoCream Pro: Filtri retrò](https://alice51849.github.io/ios-app-guide/it/photocream.html) — Fotocamera retro e filtri
+- [PhotoCream Pro: Filtri retrò](https://open.cait518.cc/ios-app-guide/it/photocream.html) — Fotocamera retro e filtri
   - Dona un'anima analogica a ogni foto: grana reale, light leak, 100+ stili vintage e ritocco beauty pro. Tutto sul dispositivo, senza pubblicità, acquisto unico.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6781808054
-- [PicClear Pro: Pulizia foto](https://alice51849.github.io/ios-app-guide/it/picclear.html) — Pulizia foto, spazio libero
+- [PicClear Pro: Pulizia foto](https://open.cait518.cc/ios-app-guide/it/picclear.html) — Pulizia foto, spazio libero
   - Trova duplicati, screenshot, foto sfocate e video enormi che occupano memoria. Controlla tutto sul dispositivo prima di eliminare. Niente pubblicità né abbonamento.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6780223070
-- [SaveTag: segnalibri con IA](https://alice51849.github.io/ios-app-guide/it/savetag.html) — Salva i link, leggili dopo
+- [SaveTag: segnalibri con IA](https://open.cait518.cc/ios-app-guide/it/savetag.html) — Salva i link, leggili dopo
   - Tutto ciò che volevi recuperare, finalmente in un posto solo. Un tocco per salvarlo, ordine automatico sul telefono e un rito quotidiano. Nessun account né abbonamento.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6802505528
-- [ScanTo Pro: Scanner PDF e OCR](https://alice51849.github.io/ios-app-guide/it/scanto.html) — Scanner PDF privato e offline
+- [ScanTo Pro: Scanner PDF e OCR](https://open.cait518.cc/ios-app-guide/it/scanto.html) — Scanner PDF privato e offline
   - Scansiona tutto, ritrovalo per sempre. PDF nitidi, testo OCR ricercabile e blocco Face ID: totalmente offline. Pagamento unico, senza abbonamento.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6779977651
-- [Sereno: Suoni per Dormire](https://alice51849.github.io/ios-app-guide/it/sereno.html) — Rumore bianco per relax totale
+- [Sereno: Suoni per Dormire](https://open.cait518.cc/ios-app-guide/it/sereno.html) — Rumore bianco per relax totale
   - Acquista una volta, dormi per sempre. Mescola decine di suoni viventi in oltre 1000 paesaggi sonori unici — in tempo reale, mai un loop, mai un abbonamento, 100% offline.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6788236641
-- [ShotInbox AI: Sort Screenshots](https://alice51849.github.io/ios-app-guide/it/shotinbox.html) — Cerca testo e pulisci le foto
+- [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/it/shotinbox.html) — Cerca testo e pulisci le foto
   - Le 50 schermate più recenti includono gratis l’intero flusso essenziale. Un solo acquisto • Accesso a vita • Nessun abbonamento.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6802166527
-- [Snapport Lite: Fai fototessere](https://alice51849.github.io/ios-app-guide/it/snapportlite.html) — Crea foto tessera a casa
+- [Snapport Lite: Fai fototessere](https://open.cait518.cc/ios-app-guide/it/snapportlite.html) — Crea foto tessera a casa
   - Realizza foto per passaporto, visto e documenti con guide di dimensione, sfondo e stampa. | Versione gratuita · Supporta 1 esportazione
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6792856304
-- [Snapport: Foto Tessera](https://alice51849.github.io/ios-app-guide/it/snapport.html) — Fototessera passaporto
+- [Snapport: Foto Tessera](https://open.cait518.cc/ios-app-guide/it/snapport.html) — Fototessera passaporto
   - Crea fototessere per passaporto, visto e documenti a casa: formati guidati, sfondi puliti e fogli pronti per la stampa. Privato, senza pubblicità, acquisto unico.
   - Prezzo: Download a pagamento con prezzo unico e senza abbonamento.
   - App Store: https://apps.apple.com/it/app/id6780575828
-- [Sono Note](https://alice51849.github.io/ios-app-guide/it/sononote.html) — Da voce a testo · Note vocali
+- [Sono Note](https://open.cait518.cc/ios-app-guide/it/sononote.html) — Da voce a testo · Note vocali
   - Parla un minuto: nota curata, riassunto chiaro, attività e un'email pronta. Tutto sul dispositivo, 100% privato. Niente account o pubblicità. Acquisto unico.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6782139553
-- [TripBee Lite: Piano viaggio](https://alice51849.github.io/ios-app-guide/it/tripbeelite.html) — Un viaggio, tutto in ordine
+- [TripBee Lite: Piano viaggio](https://open.cait518.cc/ios-app-guide/it/tripbeelite.html) — Un viaggio, tutto in ordine
   - Dedica tutta l’attenzione al prossimo viaggio. TripBee Lite è un planner essenziale e curato, costruito attorno a un solo viaggio attivo.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6791299610
-- [TripBee: Pianifica Viaggi](https://alice51849.github.io/ios-app-guide/it/tripbee.html) — Itinerario e valigia
+- [TripBee: Pianifica Viaggi](https://open.cait518.cc/ios-app-guide/it/tripbee.html) — Itinerario e valigia
   - Pianifica meglio, viaggia leggero, parti felice. Acquisto unico, senza abbonamento né pubblicità — i tuoi viaggi privati e offline.
   - Prezzo: Download a pagamento con prezzo unico e senza abbonamento.
   - App Store: https://apps.apple.com/it/app/id6787754435
-- [Unblurry Pro: foto nitide](https://alice51849.github.io/ios-app-guide/it/unblurry.html) — Foto sfocate nitide in HD
+- [Unblurry Pro: foto nitide](https://open.cait518.cc/ios-app-guide/it/unblurry.html) — Foto sfocate nitide in HD
   - Recupera foto sfocate o mosse in pochi secondi. Nitidezza, HD, 4K e restauro di vecchi scatti sul tuo iPhone. Niente pubblicità o abbonamenti.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6782275018
-- [WiFi Aid Lite](https://alice51849.github.io/ios-app-guide/it/wifiaidlite.html) — Diagnosi di rete affidabile
+- [WiFi Aid Lite](https://open.cait518.cc/ios-app-guide/it/wifiaidlite.html) — Diagnosi di rete affidabile
   - Trova il vero problema. Ogni strumento include un uso gratuito. Sblocco a vita opzionale una tantum per uso illimitato: nessun abbonamento, pubblicità o tracciamento.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6793414462
-- [WiFi Aid: Trova guasti di rete](https://alice51849.github.io/ios-app-guide/it/wifiaid.html) — Diagnosi di rete affidabile
+- [WiFi Aid: Trova guasti di rete](https://open.cait518.cc/ios-app-guide/it/wifiaid.html) — Diagnosi di rete affidabile
   - Trova la causa probabile con verifiche indipendenti di percorsi, DNS, TCP, TLS, tempi e stabilità. Un acquisto iniziale, senza abbonamenti, pubblicità o tracciamento.
   - Prezzo: Download a pagamento con prezzo unico e senza abbonamento.
   - App Store: https://apps.apple.com/it/app/id6790467886
-- [Wordmate Lite: vocabolario](https://alice51849.github.io/ios-app-guide/it/wordmatelite.html) — Cinque parole al giorno
+- [Wordmate Lite: vocabolario](https://open.cait518.cc/ios-app-guide/it/wordmatelite.html) — Cinque parole al giorno
   - Un minuto, cinque parole, un passo che si vede. 44 lingue, 14 temi di vita quotidiana, senza account e senza rete. L'abitudine che regge anche nei giorni pieni.
   - Prezzo: Download gratuito, con un acquisto singolo sblocchi tutto. Niente abbonamenti.
   - App Store: https://apps.apple.com/it/app/id6797601720
-- [Wordmate: Vocabolario](https://alice51849.github.io/ios-app-guide/it/wordmate.html) — 44 lingue e widget vocaboli
+- [Wordmate: Vocabolario](https://open.cait518.cc/ios-app-guide/it/wordmate.html) — 44 lingue e widget vocaboli
   - Acquista Wordmate una volta: 44 lingue, tutti i livelli, widget interattivo e app per Apple Watch inclusi. Nessun abbonamento, acquisto in-app o upgrade a pagamento.
   - Prezzo: Download a pagamento con prezzo unico e senza abbonamento.
   - App Store: https://apps.apple.com/it/app/id6789917808

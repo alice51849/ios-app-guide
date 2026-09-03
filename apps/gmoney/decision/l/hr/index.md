@@ -1,7 +1,7 @@
 ---
 title: "najbolja aplikacija za praćenje putnog budžeta bez pretplate za iPhone"
 lang: "hr"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoney/decision/l/hr/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoney/decision/l/hr/index.html"
 modified: "2026-09-03"
 app_store_id: "6755782939"
 verified_live: true
@@ -21,6 +21,6 @@ Na putovanju vam treba aplikacija za praćenje budžeta koja radi offline u zeml
 
 [Preuzmite G+Money u App Storeu →](https://apps.apple.com/hr/app/id6755782939?pt=118326163&ct=iag_data_hr&mt=8)
 
-[Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
+[Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-travel-budget-tracker-app-no-subscription-iphone.html)
 
 > Vodič je napisao Lumi Studio, razvojni tim aplikacije. Nazivi aplikacija zaštitni su znakovi svojih vlasnika i navode se samo radi identifikacije. Kod odluka vezanih uz dokumente, zdravlje, školu i produktivnost provjerite službene zahtjeve ondje gdje je to važno.

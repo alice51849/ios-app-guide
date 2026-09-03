@@ -4,8 +4,8 @@ Bopomofo 37-Symbol RO-Crate 1.3
 This attached RO-Crate packages the complete 37-symbol Bopomofo reference table
 with JSON Lines, Croissant 1.1, W3C CSVW and SKOS JSON-LD metadata.
 
-Open guide: https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/
-Traditional Chinese guide: https://alice51849.github.io/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ro-crate/
+Open guide: https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/
+Traditional Chinese guide: https://open.cait518.cc/ios-app-guide/zh-Hant/data/packages/zhuyin-bopomofo-ro-crate/
 Specification: https://w3id.org/ro/crate/1.3
 
 Validation

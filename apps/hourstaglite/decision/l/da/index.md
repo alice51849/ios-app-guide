@@ -1,7 +1,7 @@
 ---
 title: "HoursTag Lite: Pris i timer — Den sande pris på ting | iOS App"
 lang: "da"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/da/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/da/index.html"
 modified: "2026-09-03"
 app_store_id: "6794039979"
 verified_live: true
@@ -24,6 +24,6 @@ HoursTag Lite - Den sande pris på ting Hvert køb koster timer af dit liv. Hour
 
 [Hent HoursTag Lite: Pris i timer i App Store](https://apps.apple.com/dk/app/id6794039979?pt=118326163&ct=iag_data_da&mt=8)
 
-[Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/hourstaglite.html)
+[Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/hourstaglite.html)
 
 > Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.

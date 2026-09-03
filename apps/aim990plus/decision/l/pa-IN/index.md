@@ -1,7 +1,7 @@
 ---
 title: "Aim990 Plus: ਅੰਗਰੇਜ਼ੀ ਟੈਸਟ — ਦਬਾਅ ਵਿੱਚ ਤੇਜ਼ ਸਹੀ ਜਵਾਬ | iOS App"
 lang: "pa-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/pa-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/pa-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
@@ -19,6 +19,6 @@ Aim990 Plus ਬਾਲਗ ਸਿੱਖਿਆਰਥੀਆਂ ਲਈ ਅੰਗਰ�
 
 [App Store ਤੋਂ Aim990 Plus: ਅੰਗਰੇਜ਼ੀ ਟੈਸਟ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_pa_in&mt=8)
 
-[ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/aim990plus.html)
+[ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://open.cait518.cc/ios-app-guide/pa-IN/aim990plus.html)
 
 > ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।

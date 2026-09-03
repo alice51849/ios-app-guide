@@ -1,7 +1,7 @@
 ---
 title: "WiFi Aid Lite — Chẩn đoán mạng có bằng chứng | iOS App"
 lang: "vi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaidlite/decision/l/vi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/vi/index.html"
 modified: "2026-09-03"
 app_store_id: "6793414462"
 verified_live: true
@@ -20,6 +20,6 @@ Tìm ra sự cố thực sự. Mỗi công cụ bao gồm một lần dùng đ�
 
 [Tải WiFi Aid Lite trên App Store](https://apps.apple.com/vn/app/id6793414462?pt=118326163&ct=iag_data_vi&mt=8)
 
-[Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/wifiaidlite.html)
+[Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/wifiaidlite.html)
 
 > Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.

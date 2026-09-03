@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/manifest.json",
+  "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/manifest.json",
   "type": "Manifest",
   "label": {
     "en": [
@@ -95,7 +95,7 @@
   },
   "provider": [
     {
-      "id": "https://alice51849.github.io/ios-app-guide/#organization",
+      "id": "https://open.cait518.cc/ios-app-guide/#organization",
       "type": "Agent",
       "label": {
         "en": [
@@ -107,7 +107,7 @@
       },
       "homepage": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide",
+          "id": "https://open.cait518.cc/ios-app-guide",
           "type": "Text",
           "label": {
             "en": [
@@ -124,7 +124,7 @@
   ],
   "homepage": [
     {
-      "id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html",
+      "id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html",
       "type": "Text",
       "label": {
         "en": [
@@ -140,7 +140,7 @@
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-iiif-presentation-3.html",
+      "id": "https://open.cait518.cc/ios-app-guide/zh-Hant/data/zhuyin-bopomofo-iiif-presentation-3.html",
       "type": "Text",
       "label": {
         "en": [
@@ -158,7 +158,7 @@
   ],
   "seeAlso": [
     {
-      "id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv",
+      "id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv",
       "type": "Dataset",
       "label": {
         "en": [
@@ -171,7 +171,7 @@
       "format": "text/csv"
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+      "id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
       "type": "Dataset",
       "label": {
         "en": [
@@ -184,7 +184,7 @@
       "format": "application/ld+json"
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld",
+      "id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld",
       "type": "Dataset",
       "label": {
         "en": [
@@ -199,7 +199,7 @@
   ],
   "rendering": [
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/bopomofo-37-symbols-iiif-presentation-3.zip",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/bopomofo-37-symbols-iiif-presentation-3.zip",
       "type": "Dataset",
       "label": {
         "en": [
@@ -214,7 +214,7 @@
   ],
   "thumbnail": [
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3105.svg",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3105.svg",
       "type": "Image",
       "format": "image/svg+xml",
       "height": 1200,
@@ -224,7 +224,7 @@
   "navDate": "2026-07-11T17:50:00Z",
   "items": [
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3105",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3105",
       "type": "Canvas",
       "label": {
         "en": [
@@ -348,28 +348,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3105/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3105/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3105/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3105/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3105.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3105.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3105"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3105"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3106",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3106",
       "type": "Canvas",
       "label": {
         "en": [
@@ -493,28 +493,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3106/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3106/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3106/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3106/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3106.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3106.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3106"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3106"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3107",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3107",
       "type": "Canvas",
       "label": {
         "en": [
@@ -638,28 +638,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3107/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3107/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3107/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3107/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3107.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3107.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3107"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3107"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3108",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3108",
       "type": "Canvas",
       "label": {
         "en": [
@@ -783,28 +783,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3108/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3108/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3108/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3108/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3108.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3108.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3108"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3108"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3109",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3109",
       "type": "Canvas",
       "label": {
         "en": [
@@ -928,28 +928,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3109/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3109/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3109/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3109/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3109.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3109.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3109"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3109"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310A",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310A",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1073,28 +1073,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310A/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310A/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310A/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310A/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310A.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u310A.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310A"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310A"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310B",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310B",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1218,28 +1218,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310B/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310B/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310B/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310B/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310B.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u310B.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310B"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310B"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310C",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310C",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1363,28 +1363,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310C/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310C/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310C/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310C/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310C.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u310C.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310C"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310C"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310D",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310D",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1508,28 +1508,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310D/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310D/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310D/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310D/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310D.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u310D.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310D"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310D"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310E",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310E",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1653,28 +1653,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310E/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310E/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310E/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310E/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310E.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u310E.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310E"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310E"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310F",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310F",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1798,28 +1798,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310F/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310F/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310F/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310F/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u310F.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u310F.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u310F"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u310F"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3110",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3110",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1943,28 +1943,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3110/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3110/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3110/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3110/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3110.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3110.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3110"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3110"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3111",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3111",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2088,28 +2088,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3111/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3111/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3111/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3111/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3111.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3111.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3111"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3111"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3112",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3112",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2233,28 +2233,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3112/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3112/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3112/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3112/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3112.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3112.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3112"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3112"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3113",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3113",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2378,28 +2378,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3113/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3113/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3113/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3113/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3113.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3113.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3113"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3113"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3114",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3114",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2523,28 +2523,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3114/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3114/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3114/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3114/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3114.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3114.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3114"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3114"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3115",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3115",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2668,28 +2668,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3115/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3115/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3115/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3115/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3115.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3115.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3115"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3115"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3116",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3116",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2813,28 +2813,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3116/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3116/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3116/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3116/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3116.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3116.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3116"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3116"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3117",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3117",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2958,28 +2958,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3117/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3117/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3117/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3117/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3117.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3117.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3117"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3117"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3118",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3118",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3103,28 +3103,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3118/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3118/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3118/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3118/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3118.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3118.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3118"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3118"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3119",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3119",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3248,28 +3248,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3119/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3119/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3119/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3119/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3119.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3119.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3119"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3119"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3127",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3127",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3393,28 +3393,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3127/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3127/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3127/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3127/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3127.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3127.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3127"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3127"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3128",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3128",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3538,28 +3538,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3128/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3128/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3128/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3128/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3128.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3128.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3128"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3128"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3129",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3129",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3683,28 +3683,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3129/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3129/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3129/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3129/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3129.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3129.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3129"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3129"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311A",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311A",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3828,28 +3828,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311A/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311A/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311A/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311A/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311A.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u311A.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311A"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311A"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311B",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311B",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3973,28 +3973,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311B/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311B/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311B/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311B/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311B.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u311B.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311B"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311B"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311C",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311C",
       "type": "Canvas",
       "label": {
         "en": [
@@ -4118,28 +4118,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311C/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311C/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311C/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311C/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311C.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u311C.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311C"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311C"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311D",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311D",
       "type": "Canvas",
       "label": {
         "en": [
@@ -4263,28 +4263,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311D/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311D/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311D/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311D/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311D.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u311D.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311D"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311D"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311E",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311E",
       "type": "Canvas",
       "label": {
         "en": [
@@ -4408,28 +4408,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311E/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311E/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311E/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311E/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311E.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u311E.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311E"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311E"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311F",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311F",
       "type": "Canvas",
       "label": {
         "en": [
@@ -4553,28 +4553,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311F/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311F/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311F/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311F/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u311F.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u311F.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u311F"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u311F"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3120",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3120",
       "type": "Canvas",
       "label": {
         "en": [
@@ -4698,28 +4698,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3120/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3120/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3120/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3120/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3120.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3120.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3120"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3120"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3121",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3121",
       "type": "Canvas",
       "label": {
         "en": [
@@ -4843,28 +4843,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3121/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3121/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3121/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3121/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3121.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3121.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3121"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3121"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3122",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3122",
       "type": "Canvas",
       "label": {
         "en": [
@@ -4988,28 +4988,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3122/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3122/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3122/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3122/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3122.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3122.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3122"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3122"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3123",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3123",
       "type": "Canvas",
       "label": {
         "en": [
@@ -5133,28 +5133,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3123/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3123/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3123/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3123/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3123.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3123.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3123"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3123"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3124",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3124",
       "type": "Canvas",
       "label": {
         "en": [
@@ -5278,28 +5278,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3124/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3124/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3124/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3124/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3124.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3124.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3124"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3124"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3125",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3125",
       "type": "Canvas",
       "label": {
         "en": [
@@ -5423,28 +5423,28 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3125/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3125/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3125/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3125/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3125.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3125.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3125"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3125"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3126",
+      "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3126",
       "type": "Canvas",
       "label": {
         "en": [
@@ -5568,21 +5568,21 @@
       "width": 1200,
       "items": [
         {
-          "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3126/page",
+          "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3126/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3126/annotation",
+              "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3126/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/images/u3126.svg",
+                "id": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/images/u3126.svg",
                 "type": "Image",
                 "format": "image/svg+xml",
                 "height": 1200,
                 "width": 1200
               },
-              "target": "https://alice51849.github.io/ios-app-guide/iiif/3/bopomofo/canvas/u3126"
+              "target": "https://open.cait518.cc/ios-app-guide/iiif/3/bopomofo/canvas/u3126"
             }
           ]
         }

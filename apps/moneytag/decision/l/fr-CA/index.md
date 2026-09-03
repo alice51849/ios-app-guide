@@ -1,7 +1,7 @@
 ---
 title: "MoneyTag: Revenus et dépenses — Projets, étiquettes, résultat | iOS App"
 lang: "fr-CA"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/fr-CA/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/fr-CA/index.html"
 modified: "2026-09-03"
 app_store_id: "6801956402"
 verified_live: true
@@ -26,6 +26,6 @@ Revenus et dépenses Chaque projet tient ses propres livres : les revenus moins 
 
 [Obtenir MoneyTag: Revenus et dépenses sur l'App Store](https://apps.apple.com/ca/app/id6801956402?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
-[Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/moneytag.html)
+[Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/moneytag.html)
 
 > Ce contenu est publié directement par Lumi Studio, le développeur de chaque app listée.

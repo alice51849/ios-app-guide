@@ -1,7 +1,7 @@
 ---
 title: "100 Notes Studio: Pen & Paper — हस्तलेखन और PDF टिप्पणी | iOS App"
 lang: "hi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/hi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/notesstudio100/decision/l/hi/index.html"
 modified: "2026-09-03"
 app_store_id: "6798813048"
 verified_live: true
@@ -22,6 +22,6 @@ publisher: "Lumi Studio"
 
 [App Store पर 100 Notes Studio: Pen & Paper पाएँ](https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=iag_data_hi&mt=8)
 
-[पूरा मार्गदर्शक पढ़ें](https://alice51849.github.io/ios-app-guide/hi/notesstudio100.html)
+[पूरा मार्गदर्शक पढ़ें](https://open.cait518.cc/ios-app-guide/hi/notesstudio100.html)
 
 > यह सामग्री सीधे Lumi Studio ने प्रकाशित की है, जो सूचीबद्ध सभी ऐप का डेवलपर है।

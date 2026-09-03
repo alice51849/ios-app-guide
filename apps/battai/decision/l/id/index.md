@@ -1,7 +1,7 @@
 ---
 title: "BattAI: Skor kesehatan baterai — Aturan, sumber, dan batas yang jelas | iOS App"
 lang: "id"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/id/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/id/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI memakai 5 nilai dari API publik iOS: tingkat baterai, status pengi
 
 [Dapatkan BattAI: Skor kesehatan baterai di App Store](https://apps.apple.com/id/app/id6802423998?pt=118326163&ct=iag_data_id&mt=8)
 
-[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/battai.html)
+[Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/battai.html)
 
 > Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.

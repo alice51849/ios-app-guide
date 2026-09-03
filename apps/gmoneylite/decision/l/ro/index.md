@@ -1,7 +1,7 @@
 ---
 title: "G+Money Lite: Bani de vacanță — Cheltuieli, buget & valută | iOS App"
 lang: "ro"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ro/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/ro/index.html"
 modified: "2026-09-03"
 app_store_id: "6793436548"
 verified_live: true
@@ -25,6 +25,6 @@ G+Money Lite — Converter de valută și tracker de cheltuieli inteligent pentr
 
 [Descarcă G+Money Lite: Bani de vacanță din App Store](https://apps.apple.com/ro/app/id6793436548?pt=118326163&ct=iag_data_ro&mt=8)
 
-[Citește ghidul complet](https://alice51849.github.io/ios-app-guide/ro/gmoneylite.html)
+[Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/gmoneylite.html)
 
 > Acesta este material de primă parte publicat de Lumi Studio, dezvoltatorul fiecărei aplicații listate.

@@ -24,7 +24,9 @@ from typing import Any
 OWNER = "alice51849"
 REPOSITORY = "ios-app-guide"
 NAME_WITH_OWNER = f"{OWNER}/{REPOSITORY}"
-SITE_ORIGIN = "https://alice51849.github.io"
+# The Guide's public host. The GitHub Pages origin still serves the same
+# bytes, but every URL these scripts hand out or accept is the owned host.
+SITE_ORIGIN = "https://open.cait518.cc"
 SITE_HOME = f"{SITE_ORIGIN}/ios-app-guide/"
 SITE_FEED = f"{SITE_HOME}feed.json"
 ALLOWED_PATH_PREFIXES = (
@@ -232,8 +234,8 @@ def _valid_resource_url(value: object) -> str | None:
         return None
     if (
         parsed.scheme != "https"
-        or parsed.hostname != "alice51849.github.io"
-        or parsed.netloc != "alice51849.github.io"
+        or parsed.hostname != "open.cait518.cc"
+        or parsed.netloc != "open.cait518.cc"
         or parsed.username is not None
         or parsed.password is not None
         or port is not None

@@ -1,7 +1,7 @@
 ---
 title: "AI Brief: מקבצים לפרומפט AI — מקבצים להקשר ברור | iOS App"
 lang: "he"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/he/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/he/index.html"
 modified: "2026-09-03"
 app_store_id: "6791658210"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [הורידו את AI Brief: מקבצים לפרומפט AI מה-App Store](https://apps.apple.com/il/app/id6791658210?pt=118326163&ct=iag_data_he&mt=8)
 
-[קרא את המדריך המלא](https://alice51849.github.io/ios-app-guide/he/aibriefpack.html)
+[קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/aibriefpack.html)
 
 > זהו חומר רשמי שפורסם על ידי Lumi Studio, המפתח של כל אפליקציה ברשימה.

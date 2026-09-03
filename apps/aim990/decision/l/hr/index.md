@@ -1,7 +1,7 @@
 ---
 title: "najbolja TOEIC pripremna aplikacija za iPhone s offline planom učenja"
 lang: "hr"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990/decision/l/hr/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/hr/index.html"
 modified: "2026-09-03"
 app_store_id: "6784974530"
 verified_live: true
@@ -19,6 +19,6 @@ Dio 5 izgleda kratak, ali pitanja s nepotpunim rečenicama mogu oduzeti vrijeme 
 
 [Preuzmite Aim990 u App Storeu →](https://apps.apple.com/hr/app/id6784974530?pt=118326163&ct=iag_data_hr&mt=8)
 
-[Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
+[Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html)
 
 > Vodič je napisao Lumi Studio, razvojni tim aplikacije. Nazivi aplikacija zaštitni su znakovi svojih vlasnika i navode se samo radi identifikacije. Kod odluka vezanih uz dokumente, zdravlje, školu i produktivnost provjerite službene zahtjeve ondje gdje je to važno.

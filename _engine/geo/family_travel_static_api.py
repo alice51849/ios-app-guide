@@ -256,7 +256,7 @@ def index_schema(dataset: dict, canonical_schema: dict) -> dict:
                         "type": "string",
                         "format": "uri",
                         "pattern": (
-                            "^https://alice51849\\.github\\.io/ios-app-guide/api/v1/"
+                            "^https://open\\.cait518\\.cc/ios-app-guide/api/v1/"
                             "family-travel-missions/scenarios/"
                         ),
                     },

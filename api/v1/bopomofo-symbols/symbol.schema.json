@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbol.schema.json",
+  "$id": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbol.schema.json",
   "title": "Bopomofo Symbols API response",
   "type": "object",
   "additionalProperties": false,
@@ -14,7 +14,7 @@
   ],
   "properties": {
     "$schema": {
-      "const": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbol.schema.json"
+      "const": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbol.schema.json"
     },
     "apiVersion": {
       "const": "1.0.0"
@@ -43,10 +43,10 @@
           "pattern": "#u31"
         },
         "dataset": {
-          "const": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld"
+          "const": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld"
         },
         "vocabulary": {
-          "const": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+          "const": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
         }
       }
     }
@@ -112,9 +112,9 @@
         "category_uri": {
           "type": "string",
           "enum": [
-            "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#finals",
-            "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials",
-            "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#medials"
+            "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#finals",
+            "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials",
+            "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#medials"
           ]
         },
         "example_character": {

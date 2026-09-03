@@ -16,10 +16,11 @@ import re
 import subprocess
 import urllib.request
 from pathlib import Path
+from site_config import PUBLIC_SITE  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.path.join(HERE, "pages")
-SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
+SITE = os.environ.get("GEO_SITE", PUBLIC_SITE).rstrip("/")
 SLUG = "zhuyin-grade-1-preparation"
 REPO = "https://github.com/alice51849/awesome-zhuyin-bopomofo-apps"
 CALENDAR_URL = f"{SITE}/zh-Hant/tools/zhuyin-grade1-14-day-summer-calendar.html"

@@ -1,7 +1,7 @@
 ---
 title: "G+Money Lite: سفری اخراجات — سفری خرچ اور کرنسی | iOS App"
 lang: "ur-PK"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ur-PK/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/ur-PK/index.html"
 modified: "2026-09-03"
 app_store_id: "6793436548"
 verified_live: true
@@ -25,6 +25,6 @@ G+Money Lite — سمارٹ سفر کرنسی اور خرچ ٹریکر سفر ک
 
 [App Store سے G+Money Lite: سفری اخراجات حاصل کریں](https://apps.apple.com/pk/app/id6793436548?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
-[مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/gmoneylite.html)
+[مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/gmoneylite.html)
 
 > یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔

@@ -1,7 +1,7 @@
 ---
 title: "ShotInbox AI: Sort Screenshots — Tangkapan layar mudah dicari | iOS App"
 lang: "id"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/shotinbox/decision/l/id/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/shotinbox/decision/l/id/index.html"
 modified: "2026-09-03"
 app_store_id: "6802166527"
 verified_live: true
@@ -19,6 +19,6 @@ Tangkapan layar Anda, rapi Temukan, tangani, dan rapikan setiap tangkapan layar.
 
 [Dapatkan ShotInbox AI: Sort Screenshots di App Store](https://apps.apple.com/id/app/id6802166527?pt=118326163&ct=iag_data_id&mt=8)
 
-[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/shotinbox.html)
+[Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/shotinbox.html)
 
 > Materi ini diterbitkan langsung oleh Lumi Studio, pengembang semua aplikasi yang tercantum.

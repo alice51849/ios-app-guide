@@ -23,10 +23,11 @@ from aeo_pages import pricing_profile  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 from build_pages_i18n import pricing_text_for  # noqa: E402
 from gen_roundups import TOPICS, legacy_slug, redirect_page  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = HERE / "pages"
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 LOCALE_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$")
 RESERVED_TOP_LEVEL_DIRS = {"api"}

@@ -1,7 +1,7 @@
 ---
 title: "أفضل تطبيق لحظر وسائل التواصل الاجتماعي أثناء الدراسة للآيفون"
 lang: "ar-SA"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lockhour/decision/l/ar-SA/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/ar-SA/index.html"
 modified: "2026-09-03"
 app_store_id: "6780107485"
 verified_live: true
@@ -21,6 +21,6 @@ publisher: "Lumi Studio"
 
 [احصل على LockHour Pro من متجر التطبيقات →](https://apps.apple.com/sa/app/id6780107485?pt=118326163&ct=iag_data_ar_sa&mt=8)
 
-[اقرأ الدليل الكامل](https://alice51849.github.io/ios-app-guide/ar-SA/answers/best-app-to-block-social-media-while-studying-iphone.html)
+[اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-app-to-block-social-media-while-studying-iphone.html)
 
 > دليل من إعداد الناشر Lumi Studio، مطوّر التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم للتعريف فقط. لقرارات المستندات والصحة والمدرسة والإنتاجية، تحقق من المتطلبات الرسمية عند الحاجة.

@@ -1,7 +1,7 @@
 ---
 title: "iPhone ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਵੌਇਸ ਨੋਟਸ ਐਪ ਜੋ ਮੀਟਿੰਗਾਂ ਦਾ ਸਾਰ ਸੰਖੇਪ ਕਰਦਾ ਹੈ"
 lang: "pa-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/sononote/decision/l/pa-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/pa-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6782139553"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [App Store 'ਤੇ Sono Note ਪ੍ਰਾਪਤ ਕਰੋ →](https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=iag_data_pa_in&mt=8)
 
-[ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
+[ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://open.cait518.cc/ios-app-guide/pa-IN/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
 
 > ਐਪ ਬਣਾਉਣ ਵਾਲੇ Lumi Studio ਵੱਲੋਂ ਲਿਖੀ ਗਾਈਡ। ਐਪਾਂ ਦੇ ਨਾਂ ਉਹਨਾਂ ਦੇ ਮਾਲਕਾਂ ਦੇ ਟ੍ਰੇਡਮਾਰਕ ਹਨ ਅਤੇ ਸਿਰਫ਼ ਪਛਾਣ ਲਈ ਵਰਤੇ ਗਏ ਹਨ। ਦਸਤਾਵੇਜ਼, ਸਿਹਤ, ਸਕੂਲ ਅਤੇ ਕੰਮਕਾਜ ਨਾਲ ਜੁੜੇ ਫ਼ੈਸਲਿਆਂ ਵਿੱਚ ਜਿੱਥੇ ਲੋੜ ਹੋਵੇ ਉੱਥੇ ਸਰਕਾਰੀ ਜਾਂ ਅਧਿਕਾਰਤ ਸ਼ਰਤਾਂ ਦੇਖ ਲਵੋ।

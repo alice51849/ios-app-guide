@@ -1,7 +1,7 @@
 ---
 title: "MoneyTag: ਆਮਦਨ ਤੇ ਖਰਚ — ਪ੍ਰੋਜੈਕਟ · ਟੈਗ · ਰਿਪੋਰਟ | iOS App"
 lang: "pa-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/pa-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/pa-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6801956402"
 verified_live: true
@@ -26,6 +26,6 @@ publisher: "Lumi Studio"
 
 [App Store ਤੋਂ MoneyTag: ਆਮਦਨ ਤੇ ਖਰਚ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=iag_data_pa_in&mt=8)
 
-[ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/moneytag.html)
+[ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://open.cait518.cc/ios-app-guide/pa-IN/moneytag.html)
 
 > ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।

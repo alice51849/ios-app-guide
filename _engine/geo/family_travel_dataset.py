@@ -20,10 +20,11 @@ sys.path.insert(0, str(ROOT / "social"))
 
 from appstore_live import live_app_keys  # noqa: E402
 from videogen.registry import APPSTORE, appstore_url  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 PAGES = HERE / "pages"
 SOURCE_DIR = HERE / "reference_datasets"

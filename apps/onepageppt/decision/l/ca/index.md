@@ -1,7 +1,7 @@
 ---
 title: "OnePage PPT: diapositives IA — Els apunts, en una pàgina | iOS App"
 lang: "ca"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/onepageppt/decision/l/ca/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/ca/index.html"
 modified: "2026-09-03"
 app_store_id: "6798814385"
 verified_live: true
@@ -19,6 +19,6 @@ Converteix un mur de text en UNA diapositiva que la gent llegeix. OnePage PPT ll
 
 [Descarrega OnePage PPT: diapositives IA a l’App Store](https://apps.apple.com/es/app/id6798814385?pt=118326163&ct=iag_data_ca&mt=8)
 
-[Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/onepageppt.html)
+[Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/onepageppt.html)
 
 > Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.

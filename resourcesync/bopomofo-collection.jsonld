@@ -1,11 +1,11 @@
 {
   "@context": "https://schema.org",
   "@type": "Dataset",
-  "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html#collection",
+  "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html#collection",
   "name": "Bopomofo open-resource synchronization collection",
   "alternateName": "注音開放資源同步集合",
   "description": "A standards-based synchronization feed for the complete Bopomofo open-data, linked-data, API and teaching-resource collection.",
-  "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html",
+  "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-resourcesync.html",
   "inLanguage": [
     "en",
     "zh-Hant",
@@ -29,18 +29,18 @@
       "@type": "DataDownload",
       "name": "ResourceSync Capability List",
       "encodingFormat": "application/xml",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/resourcesync/capabilitylist.xml"
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/resourcesync/capabilitylist.xml"
     },
     {
       "@type": "DataDownload",
       "name": "ResourceSync Resource List",
       "encodingFormat": "application/xml",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/resourcesync/resourcelist.xml"
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/resourcesync/resourcelist.xml"
     }
   ],
   "creator": {
     "@type": "Organization",
     "name": "Lumi Apps",
-    "url": "https://alice51849.github.io/ios-app-guide"
+    "url": "https://open.cait518.cc/ios-app-guide"
   }
 }

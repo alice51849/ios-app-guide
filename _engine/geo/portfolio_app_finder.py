@@ -36,10 +36,11 @@ from videogen.registry import (  # noqa: E402
     VALID_PURCHASE_MODELS,
     appstore_url,
 )
+from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 SLUG = "private-pay-once-iphone-app-finder"
 DATA_SLUG = "verified-ios-app-finder-catalog"

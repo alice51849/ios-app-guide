@@ -17,10 +17,11 @@ sys.path.insert(0, os.path.join(ROOT, "social"))
 
 from videogen.registry import APPS, APPSTORE  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 OWNER = "alice51849"
 PAGES = os.path.join(HERE, "pages")
-SITE = "https://alice51849.github.io/ios-app-guide"
+SITE = PUBLIC_SITE
 TOPIC_LIMIT = 15
 TOPIC_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 BASE_TOPICS = ("ios", "iphone", "ios-app", "app-support", "privacy")
@@ -58,7 +59,7 @@ GUIDE_METADATA = {
         "Independent iOS app guides, comparisons, practical tools and open "
         "datasets for kids learning, productivity, photo, travel and privacy."
     ),
-    "homepage": "https://alice51849.github.io/ios-app-guide/",
+    "homepage": f"{PUBLIC_SITE}/",
     "topics": (
         "ios",
         "iphone",

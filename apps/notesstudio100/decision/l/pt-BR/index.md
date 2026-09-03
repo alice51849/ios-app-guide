@@ -1,7 +1,7 @@
 ---
 title: "100 Notes Studio: Pen & Paper — Caderno à mão, PDF e revisão | iOS App"
 lang: "pt-BR"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/notesstudio100/decision/l/pt-BR/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/notesstudio100/decision/l/pt-BR/index.html"
 modified: "2026-09-03"
 app_store_id: "6798813048"
 verified_live: true
@@ -22,6 +22,6 @@ O 100 Notes Studio reúne escrita à mão, digitação, marcação de PDF e ferr
 
 [Baixe 100 Notes Studio: Pen & Paper na App Store](https://apps.apple.com/br/app/id6798813048?pt=118326163&ct=iag_data_pt_br&mt=8)
 
-[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/notesstudio100.html)
+[Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/notesstudio100.html)
 
 > Este conteúdo é publicado diretamente pela Lumi Studio, desenvolvedora de todos os apps apresentados.

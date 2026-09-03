@@ -1,7 +1,7 @@
 ---
 title: "G+Money Lite: ప్రయాణ ఖర్చులు — ప్రయాణ ఖర్చులు, కరెన్సీ | iOS App"
 lang: "te-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/te-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/te-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6793436548"
 verified_live: true
@@ -25,6 +25,6 @@ G+Money Lite — స్మార్ట్ ట్రావెల్ కరెన�
 
 [App Store నుంచి G+Money Lite: ప్రయాణ ఖర్చులు పొందండి](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=iag_data_te_in&mt=8)
 
-[పూర్తి మార్గదర్శకాన్ని చదవండి](https://alice51849.github.io/ios-app-guide/te-IN/gmoneylite.html)
+[పూర్తి మార్గదర్శకాన్ని చదవండి](https://open.cait518.cc/ios-app-guide/te-IN/gmoneylite.html)
 
 > ఇది Lumi Studio ద్వారా ప్రచురించబడిన స్వంత సంస్థ పదార్థం, ప్రతి జాబితా చేయబడిన యాప్ యొక్క అభివృద్ధికర్త.

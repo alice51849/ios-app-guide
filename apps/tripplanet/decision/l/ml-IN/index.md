@@ -1,7 +1,7 @@
 ---
 title: "കുടുംബ യാത്രകളിൽ കുട്ടികൾക്കായി മികച്ച യാത്രാ പ്രവർത്തന ആപ്പ്"
 lang: "ml-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/ml-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/ml-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6787193643"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [Lumi Trip Planet App Store-ൽ ലഭ്യമാക്കുക →](https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=iag_data_ml_in&mt=8)
 
-[പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html)
+[പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://open.cait518.cc/ios-app-guide/ml-IN/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 
 > ആപ്പ് ഡെവലപ്പറായ Lumi Studio എഴുതിയ ഗൈഡ്. ആപ്പുകളുടെ പേരുകൾ അവയുടെ ഉടമകളുടെ വ്യാപാരമുദ്രകളാണ്; തിരിച്ചറിയാൻ മാത്രമാണ് ഉപയോഗിച്ചിരിക്കുന്നത്. രേഖകൾ, ആരോഗ്യം, പഠനം, ജോലിക്കാര്യങ്ങൾ എന്നിവയുമായി ബന്ധപ്പെട്ട തീരുമാനങ്ങളിൽ ആവശ്യമുള്ളിടത്ത് ഔദ്യോഗിക നിബന്ധനകൾ പരിശോധിക്കുക.

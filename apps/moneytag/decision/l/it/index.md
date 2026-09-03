@@ -1,7 +1,7 @@
 ---
 title: "MoneyTag: Entrate e uscite — Progetti · Tag · Report | iOS App"
 lang: "it"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/it/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/it/index.html"
 modified: "2026-09-03"
 app_store_id: "6801956402"
 verified_live: true
@@ -26,6 +26,6 @@ Entrate e uscite Ogni progetto tiene la propria contabilità: entrate meno uscit
 
 [Scarica MoneyTag: Entrate e uscite sull'App Store](https://apps.apple.com/it/app/id6801956402?pt=118326163&ct=iag_data_it&mt=8)
 
-[Leggi la guida completa](https://alice51849.github.io/ios-app-guide/it/moneytag.html)
+[Leggi la guida completa](https://open.cait518.cc/ios-app-guide/it/moneytag.html)
 
 > Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.

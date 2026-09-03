@@ -4,11 +4,11 @@
     "Dataset",
     "LearningResource"
   ],
-  "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html#question-bank",
+  "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html#question-bank",
   "name": "Bopomofo 37-symbol LMS question bank",
   "alternateName": "注音符號 LMS 37 題題庫",
   "description": "Download 37 bilingual-ready Bopomofo symbol-recognition questions as QTI 2.1 packages or native Moodle XML, with a CSV answer key.",
-  "url": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html",
+  "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html",
   "version": "1.0.0",
   "datePublished": "2026-07-11",
   "dateModified": "2026-07-11",
@@ -38,23 +38,23 @@
     "https://www.imsglobal.org/question/qtiv2p1/imsqti_implv2p1.html",
     "https://docs.moodle.org/en/Import_questions"
   ],
-  "isBasedOn": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html",
+  "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.html",
   "creator": {
     "@type": "Organization",
     "name": "Lumi Apps",
-    "url": "https://alice51849.github.io/ios-app-guide"
+    "url": "https://open.cait518.cc/ios-app-guide"
   },
   "includedInDataCatalog": {
     "@type": "DataCatalog",
     "name": "Lumi Apps Open Data",
-    "url": "https://alice51849.github.io/ios-app-guide/data/"
+    "url": "https://open.cait518.cc/ios-app-guide/data/"
   },
   "distribution": [
     {
       "@type": "DataDownload",
       "name": "QTI 2.1 - English",
       "encodingFormat": "application/zip",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-qti-2.1-en.zip",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-qti-2.1-en.zip",
       "contentSize": "25533 bytes",
       "sha256": "af18ae415e3fe5c0eb2b94ccfe5a2f7ef990889b5e5d50d48a661c7104c5c659",
       "inLanguage": "en"
@@ -63,7 +63,7 @@
       "@type": "DataDownload",
       "name": "QTI 2.1 - Traditional Chinese",
       "encodingFormat": "application/zip",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-qti-2.1-zh-hant.zip",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-qti-2.1-zh-hant.zip",
       "contentSize": "27472 bytes",
       "sha256": "3791a820195a73a8350460a57ee73fc84fc7a59d4194fa72fb758fafbd39b974",
       "inLanguage": "zh-Hant"
@@ -72,7 +72,7 @@
       "@type": "DataDownload",
       "name": "Moodle XML - English",
       "encodingFormat": "application/xml",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-moodle-en.xml",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-moodle-en.xml",
       "contentSize": "39403 bytes",
       "sha256": "a460e3435033d10de87e351a466b04db8f2894cb1962af8c4d189b746d5498f0",
       "inLanguage": "en"
@@ -81,7 +81,7 @@
       "@type": "DataDownload",
       "name": "Moodle XML - Traditional Chinese",
       "encodingFormat": "application/xml",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-moodle-zh-hant.xml",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-lms/bopomofo-moodle-zh-hant.xml",
       "contentSize": "39269 bytes",
       "sha256": "d53f057d468cb8d182074892b74b378c8220671b5590c107c72722c3476f9f33",
       "inLanguage": "zh-Hant"
@@ -90,7 +90,7 @@
       "@type": "DataDownload",
       "name": "Answer key",
       "encodingFormat": "text/csv",
-      "contentUrl": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-lms/answer-key.csv",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-lms/answer-key.csv",
       "contentSize": "1844 bytes",
       "sha256": "af520995babf661aaef468dca42add9d5e3f02d1ee293432fc6c88638868273b",
       "inLanguage": "en"

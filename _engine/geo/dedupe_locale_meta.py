@@ -33,10 +33,11 @@ import os
 import re
 import sys
 from pathlib import Path
+from site_config import PUBLIC_SITE  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages")).resolve()
-SITE = "https://alice51849.github.io/ios-app-guide"
+SITE = PUBLIC_SITE
 
 TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)
 DESC_RE = re.compile(r'<meta\s+name="description"\s+content="(.*?)"\s*/?>', re.S)

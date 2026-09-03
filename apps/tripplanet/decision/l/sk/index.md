@@ -1,7 +1,7 @@
 ---
 title: "najlepšia aplikácia na cestovateľské aktivity pre deti na rodinných výletoch"
 lang: "sk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/sk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/sk/index.html"
 modified: "2026-09-03"
 app_store_id: "6787193643"
 verified_live: true
@@ -20,6 +20,6 @@ Rodičia cestujúci s malými deťmi potrebujú aktivity, ktoré premenia baleni
 
 [Získajte Lumi Trip Planet v App Store →](https://apps.apple.com/sk/app/id6787193643?pt=118326163&ct=iag_data_sk&mt=8)
 
-[Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-travel-activity-app-for-kids-on-family-trips.html)
+[Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 
 > Sprievodcu napísal vývojár aplikácie, štúdio Lumi Studio. Názvy aplikácií sú ochrannými známkami svojich vlastníkov a používajú sa len na identifikáciu. Pri rozhodnutiach týkajúcich sa dokumentov, zdravia, školy a produktivity si tam, kde je to potrebné, overte oficiálne požiadavky.

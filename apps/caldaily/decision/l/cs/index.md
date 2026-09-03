@@ -1,7 +1,7 @@
 ---
 title: "CalDaily: kalkulačka a motivy — Widget, nástroje a historie | iOS App"
 lang: "cs"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/cs/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/cs/index.html"
 modified: "2026-09-03"
 app_store_id: "6794178671"
 verified_live: true
@@ -20,6 +20,6 @@ Kalkulačka, kterou budete opravdu používat dál, protože si pamatuje, co za 
 
 [Stáhněte si CalDaily: kalkulačka a motivy v App Storu](https://apps.apple.com/cz/app/id6794178671?pt=118326163&ct=iag_data_cs&mt=8)
 
-[Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/caldaily.html)
+[Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/caldaily.html)
 
 > Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.

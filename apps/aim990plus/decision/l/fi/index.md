@@ -1,7 +1,7 @@
 ---
 title: "Aim990 Plus: Englannin testi — Englantia paineen alla | iOS App"
 lang: "fi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/fi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/fi/index.html"
 modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
@@ -19,6 +19,6 @@ Aim990 Plus on aikuisille suunniteltu englannin kuuntelu- ja lukuharjoittelun ko
 
 [Lataa Aim990 Plus: Englannin testi App Storesta](https://apps.apple.com/fi/app/id6792483140?pt=118326163&ct=iag_data_fi&mt=8)
 
-[Lue koko opas](https://alice51849.github.io/ios-app-guide/fi/aim990plus.html)
+[Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/aim990plus.html)
 
 > Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.

@@ -1,7 +1,7 @@
 ---
 title: "SaveTag: KI Lesezeichen — Links sichern, später lesen | iOS App"
 lang: "de-DE"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/de-DE/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/de-DE/index.html"
 modified: "2026-09-03"
 app_store_id: "6802505528"
 verified_live: true
@@ -19,6 +19,6 @@ Jetzt sichern. Und diesmal wirklich lesen. Den ganzen Tag schickst du dir selbst
 
 [SaveTag: KI Lesezeichen im App Store laden](https://apps.apple.com/de/app/id6802505528?pt=118326163&ct=iag_data_de_de&mt=8)
 
-[Lesen Sie den vollständigen Leitfaden](https://alice51849.github.io/ios-app-guide/de-DE/savetag.html)
+[Lesen Sie den vollständigen Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/savetag.html)
 
 > Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.

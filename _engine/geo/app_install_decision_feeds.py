@@ -18,11 +18,12 @@ import xml.etree.ElementTree as ET
 from family_travel_dataset import write_text_if_changed
 import gen_feed
 from official_locales import OFFICIAL_LOCALES
+from site_config import PUBLIC_SITE  # noqa: E402
 
 
 SITE = os.environ.get(
     "GEO_SITE",
-    "https://alice51849.github.io/ios-app-guide",
+    PUBLIC_SITE,
 ).rstrip("/")
 FEED_DIR = Path("data") / "app-install-decision-routes" / "feeds"
 FORMATS = ("atom", "rss", "json_feed")

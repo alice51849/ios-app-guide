@@ -11,58 +11,58 @@
     "dcat": "http://www.w3.org/ns/dcat#",
     "ldes": "https://w3id.org/ldes#",
     "tree": "https://w3id.org/tree#",
-    "zhuyin": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#"
+    "zhuyin": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#"
   },
   "@graph": [
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld",
       "https://w3id.org/tree#member": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3112-v1"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3112-v1"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3113-v1"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3113-v1"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3114-v1"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3114-v1"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3115-v1"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3115-v1"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3116-v1"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3116-v1"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3117-v1"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3117-v1"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3118-v1"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3118-v1"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3119-v1"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3119-v1"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u311a-v1"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u311a-v1"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3127-v1"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3127-v1"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3128-v1"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3128-v1"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3129-v1"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3129-v1"
         }
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld",
       "@type": [
         "https://w3id.org/tree#Node"
       ],
       "http://purl.org/dc/terms/isPartOf": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld"
         }
       ],
       "https://w3id.org/ldes#immutable": [
@@ -73,10 +73,10 @@
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3112-v1",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3112-v1",
       "@type": [
         "http://www.w3.org/ns/prov#Entity",
-        "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
+        "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
       ],
       "http://purl.org/dc/terms/created": [
         {
@@ -91,17 +91,17 @@
       ],
       "http://purl.org/dc/terms/isVersionOf": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3112"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3112"
         }
       ],
       "http://purl.org/dc/terms/source": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#broader": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#notation": [
@@ -116,39 +116,39 @@
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
         {
           "@value": "小",
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
         {
           "@value": "small",
           "@language": "en"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
         {
           "@value": "xiǎo"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
         {
           "@value": "ɕ"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
         {
           "@value": "x"
         }
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3113-v1",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3113-v1",
       "@type": [
         "http://www.w3.org/ns/prov#Entity",
-        "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
+        "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
       ],
       "http://purl.org/dc/terms/created": [
         {
@@ -163,17 +163,17 @@
       ],
       "http://purl.org/dc/terms/isVersionOf": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3113"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3113"
         }
       ],
       "http://purl.org/dc/terms/source": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#broader": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#notation": [
@@ -188,39 +188,39 @@
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
         {
           "@value": "中",
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
         {
           "@value": "middle",
           "@language": "en"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
         {
           "@value": "zhōng"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
         {
           "@value": "ʈʂ"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
         {
           "@value": "zh"
         }
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3114-v1",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3114-v1",
       "@type": [
         "http://www.w3.org/ns/prov#Entity",
-        "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
+        "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
       ],
       "http://purl.org/dc/terms/created": [
         {
@@ -235,17 +235,17 @@
       ],
       "http://purl.org/dc/terms/isVersionOf": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3114"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3114"
         }
       ],
       "http://purl.org/dc/terms/source": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#broader": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#notation": [
@@ -260,39 +260,39 @@
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
         {
           "@value": "吃",
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
         {
           "@value": "to eat",
           "@language": "en"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
         {
           "@value": "chī"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
         {
           "@value": "ʈʂʰ"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
         {
           "@value": "ch"
         }
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3115-v1",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3115-v1",
       "@type": [
         "http://www.w3.org/ns/prov#Entity",
-        "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
+        "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
       ],
       "http://purl.org/dc/terms/created": [
         {
@@ -307,17 +307,17 @@
       ],
       "http://purl.org/dc/terms/isVersionOf": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3115"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3115"
         }
       ],
       "http://purl.org/dc/terms/source": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#broader": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#notation": [
@@ -332,39 +332,39 @@
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
         {
           "@value": "是",
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
         {
           "@value": "to be",
           "@language": "en"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
         {
           "@value": "shì"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
         {
           "@value": "ʂ"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
         {
           "@value": "sh"
         }
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3116-v1",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3116-v1",
       "@type": [
         "http://www.w3.org/ns/prov#Entity",
-        "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
+        "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
       ],
       "http://purl.org/dc/terms/created": [
         {
@@ -379,17 +379,17 @@
       ],
       "http://purl.org/dc/terms/isVersionOf": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3116"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3116"
         }
       ],
       "http://purl.org/dc/terms/source": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#broader": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#notation": [
@@ -404,39 +404,39 @@
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
         {
           "@value": "人",
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
         {
           "@value": "person",
           "@language": "en"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
         {
           "@value": "rén"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
         {
           "@value": "ʐ"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
         {
           "@value": "r"
         }
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3117-v1",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3117-v1",
       "@type": [
         "http://www.w3.org/ns/prov#Entity",
-        "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
+        "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
       ],
       "http://purl.org/dc/terms/created": [
         {
@@ -451,17 +451,17 @@
       ],
       "http://purl.org/dc/terms/isVersionOf": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3117"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3117"
         }
       ],
       "http://purl.org/dc/terms/source": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#broader": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#notation": [
@@ -476,39 +476,39 @@
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
         {
           "@value": "早",
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
         {
           "@value": "early",
           "@language": "en"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
         {
           "@value": "zǎo"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
         {
           "@value": "ts"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
         {
           "@value": "z"
         }
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3118-v1",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3118-v1",
       "@type": [
         "http://www.w3.org/ns/prov#Entity",
-        "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
+        "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
       ],
       "http://purl.org/dc/terms/created": [
         {
@@ -523,17 +523,17 @@
       ],
       "http://purl.org/dc/terms/isVersionOf": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3118"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3118"
         }
       ],
       "http://purl.org/dc/terms/source": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#broader": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#notation": [
@@ -548,39 +548,39 @@
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
         {
           "@value": "菜",
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
         {
           "@value": "vegetable",
           "@language": "en"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
         {
           "@value": "cài"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
         {
           "@value": "tsʰ"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
         {
           "@value": "c"
         }
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3119-v1",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3119-v1",
       "@type": [
         "http://www.w3.org/ns/prov#Entity",
-        "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
+        "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
       ],
       "http://purl.org/dc/terms/created": [
         {
@@ -595,17 +595,17 @@
       ],
       "http://purl.org/dc/terms/isVersionOf": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3119"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3119"
         }
       ],
       "http://purl.org/dc/terms/source": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#broader": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#initials"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#notation": [
@@ -620,39 +620,39 @@
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
         {
           "@value": "三",
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
         {
           "@value": "three",
           "@language": "en"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
         {
           "@value": "sān"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
         {
           "@value": "s"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
         {
           "@value": "s"
         }
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u311a-v1",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u311a-v1",
       "@type": [
         "http://www.w3.org/ns/prov#Entity",
-        "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
+        "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
       ],
       "http://purl.org/dc/terms/created": [
         {
@@ -667,17 +667,17 @@
       ],
       "http://purl.org/dc/terms/isVersionOf": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u311A"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u311A"
         }
       ],
       "http://purl.org/dc/terms/source": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#broader": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#finals"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#finals"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#notation": [
@@ -692,39 +692,39 @@
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
         {
           "@value": "大",
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
         {
           "@value": "big",
           "@language": "en"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
         {
           "@value": "dà"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
         {
           "@value": "a"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
         {
           "@value": "a"
         }
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3127-v1",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3127-v1",
       "@type": [
         "http://www.w3.org/ns/prov#Entity",
-        "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
+        "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
       ],
       "http://purl.org/dc/terms/created": [
         {
@@ -739,17 +739,17 @@
       ],
       "http://purl.org/dc/terms/isVersionOf": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3127"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3127"
         }
       ],
       "http://purl.org/dc/terms/source": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#broader": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#medials"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#medials"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#notation": [
@@ -764,39 +764,39 @@
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
         {
           "@value": "一",
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
         {
           "@value": "one",
           "@language": "en"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
         {
           "@value": "yī"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
         {
           "@value": "i"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
         {
           "@value": "i / yi"
         }
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3128-v1",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3128-v1",
       "@type": [
         "http://www.w3.org/ns/prov#Entity",
-        "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
+        "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
       ],
       "http://purl.org/dc/terms/created": [
         {
@@ -811,17 +811,17 @@
       ],
       "http://purl.org/dc/terms/isVersionOf": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3128"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3128"
         }
       ],
       "http://purl.org/dc/terms/source": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#broader": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#medials"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#medials"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#notation": [
@@ -836,39 +836,39 @@
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
         {
           "@value": "五",
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
         {
           "@value": "five",
           "@language": "en"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
         {
           "@value": "wǔ"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
         {
           "@value": "u"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
         {
           "@value": "u / wu"
         }
       ]
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3129-v1",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/nodes/page-002.jsonld#event-u3129-v1",
       "@type": [
         "http://www.w3.org/ns/prov#Entity",
-        "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
+        "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/#BopomofoSymbolVersion"
       ],
       "http://purl.org/dc/terms/created": [
         {
@@ -883,17 +883,17 @@
       ],
       "http://purl.org/dc/terms/isVersionOf": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3129"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3129"
         }
       ],
       "http://purl.org/dc/terms/source": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#broader": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#medials"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#medials"
         }
       ],
       "http://www.w3.org/2004/02/skos/core#notation": [
@@ -908,29 +908,29 @@
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleCharacter": [
         {
           "@value": "魚",
           "@language": "zh-Hant"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#exampleMeaning": [
         {
           "@value": "fish",
           "@language": "en"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#examplePinyin": [
         {
           "@value": "yú"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#ipa": [
         {
           "@value": "y"
         }
       ],
-      "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
+      "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#pinyin": [
         {
           "@value": "ü / yu"
         }

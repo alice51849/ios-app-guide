@@ -1,7 +1,7 @@
 ---
 title: "best last time tracker app for household maintenance without a subscription"
 lang: "id"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/id/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/id/index.html"
 modified: "2026-09-03"
 app_store_id: "6790800323"
 verified_live: true
@@ -19,6 +19,6 @@ For chores and upkeep that do not belong on a rigid calendar, a useful tracker r
 
 [Dapatkan Mochi DoneStamp di App Store →](https://apps.apple.com/id/app/id6790800323?pt=118326163&ct=iag_data_id&mt=8)
 
-[Baca panduan lengkap](https://alice51849.github.io/ios-app-guide/id/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html)
+[Baca panduan lengkap](https://open.cait518.cc/ios-app-guide/id/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html)
 
 > Panduan yang ditulis penerbit dari Lumi Studio, pengembang aplikasi. Nama aplikasi adalah merek dagang pemiliknya dan digunakan hanya untuk identifikasi. Untuk keputusan dokumen, kesehatan, sekolah, dan produktivitas, verifikasi persyaratan resmi bila relevan.

@@ -1,7 +1,7 @@
 ---
 title: "G+Money Lite: Витрати в дорозі — Витрати, бюджет і валюта | iOS App"
 lang: "uk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/uk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/uk/index.html"
 modified: "2026-09-03"
 app_store_id: "6793436548"
 verified_live: true
@@ -25,6 +25,6 @@ G+Money Lite — Розумний конвертер валют для подо�
 
 [Завантажте G+Money Lite: Витрати в дорозі з App Store](https://apps.apple.com/ua/app/id6793436548?pt=118326163&ct=iag_data_uk&mt=8)
 
-[Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/gmoneylite.html)
+[Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/gmoneylite.html)
 
 > Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.

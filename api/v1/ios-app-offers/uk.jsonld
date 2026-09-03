@@ -1,8 +1,8 @@
 {
   "@context": "https://schema.org",
   "@type": "OfferCatalog",
-  "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#catalog",
-  "url": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld",
+  "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#catalog",
+  "url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld",
   "name": "Каталог намірів пошуку видавця Lumi Studio",
   "description": "Каталог першої сторони, що описує, для кого призначений кожен додаток, яке завдання він допомагає виконати, і прямий шлях до App Store.",
   "inLanguage": "uk",
@@ -16,15 +16,15 @@
       "url": "https://apps.apple.com/ua/app/id6798813048?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-notesstudio100",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/ua/app/id6798813048?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "100 Notes Studio: Pen & Paper",
         "description": "100 Notes Studio поєднує рукописне введення, набір тексту, розмітку PDF, аудіо на сторінці та інструменти для навчання в офлайн-просторі. Упорядковуйте",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -45,13 +45,13 @@
             "target": "https://apps.apple.com/ua/app/id6798813048?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/notesstudio100.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/notesstudio100.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "uk",
           "description": "100 Notes Studio поєднує рукописне введення, набір тексту, розмітку PDF, аудіо на сторінці та інструменти для навчання в офлайн-просторі. Упорядковуйте",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-notesstudio100"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-notesstudio100"
           },
           "additionalProperty": [
             {
@@ -82,15 +82,15 @@
       "url": "https://apps.apple.com/ua/app/id6791658210?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-aibriefpack",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-aibriefpack",
         "url": "https://apps.apple.com/ua/app/id6791658210?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "AI Brief: Файли в промпт ШІ",
         "description": "Кращий контекст. Кращі відповіді.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -111,13 +111,13 @@
             "target": "https://apps.apple.com/ua/app/id6791658210?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/aibriefpack.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/aibriefpack.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6791658210",
           "inLanguage": "uk",
           "description": "Кращий контекст. Кращі відповіді.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-aibriefpack"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-aibriefpack"
           },
           "additionalProperty": [
             {
@@ -148,15 +148,15 @@
       "url": "https://apps.apple.com/ua/app/id6784974530?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-aim990",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-aim990",
         "url": "https://apps.apple.com/ua/app/id6784974530?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Aim990",
         "description": "Частина 5 здається короткою, але питання з неповними реченнями можуть забирати час, якщо граматика та словниковий запас не автоматичні.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -177,13 +177,13 @@
             "target": "https://apps.apple.com/ua/app/id6784974530?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6784974530",
           "inLanguage": "uk",
           "description": "Частина 5 здається короткою, але питання з неповними реченнями можуть забирати час, якщо граматика та словниковий запас не автоматичні.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-aim990"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-aim990"
           },
           "additionalProperty": [
             {
@@ -214,15 +214,15 @@
       "url": "https://apps.apple.com/ua/app/id6792483140?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-aim990plus",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-aim990plus",
         "url": "https://apps.apple.com/ua/app/id6792483140?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Aim990 Plus: Тест англійської",
         "description": "Aim990 Plus — тренажер для дорослих, яким важливо впевнено розуміти англійське мовлення й тексти в умовах обмеженого часу. Застосунок допомагає не просто",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -243,13 +243,13 @@
             "target": "https://apps.apple.com/ua/app/id6792483140?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/aim990plus.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/aim990plus.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6792483140",
           "inLanguage": "uk",
           "description": "Aim990 Plus — тренажер для дорослих, яким важливо впевнено розуміти англійське мовлення й тексти в умовах обмеженого часу. Застосунок допомагає не просто",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-aim990plus"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-aim990plus"
           },
           "additionalProperty": [
             {
@@ -280,15 +280,15 @@
       "url": "https://apps.apple.com/ua/app/id6802423998?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-battai",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-battai",
         "url": "https://apps.apple.com/ua/app/id6802423998?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "BattAI: Стан батареї",
         "description": "BattAI BattAI використовує п’ять значень із публічних API iOS: рівень заряду, стан заряджання, режим низького енергоспоживання, тепловий стан усього пристрою й час. Інші результати обчислюються з цих показань або додаються вами. Кожен показник має джерело й обмеження.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -309,13 +309,13 @@
             "target": "https://apps.apple.com/ua/app/id6802423998?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/battai.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/battai.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "uk",
           "description": "BattAI BattAI використовує п’ять значень із публічних API iOS: рівень заряду, стан заряджання, режим низького енергоспоживання, тепловий стан усього пристрою й час. Інші результати обчислюються з цих показань або додаються вами. Кожен показник має джерело й обмеження.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-battai"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-battai"
           },
           "additionalProperty": [
             {
@@ -346,15 +346,15 @@
       "url": "https://apps.apple.com/ua/app/id6794178671?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-caldaily",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/ua/app/id6794178671?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "CalDaily: калькулятор і теми",
         "description": "Калькулятор, яким ви справді користуватиметеся, бо він пам'ятає думку за кожним числом.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -375,13 +375,13 @@
             "target": "https://apps.apple.com/ua/app/id6794178671?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/caldaily.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/caldaily.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "uk",
           "description": "Калькулятор, яким ви справді користуватиметеся, бо він пам'ятає думку за кожним числом.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-caldaily"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-caldaily"
           },
           "additionalProperty": [
             {
@@ -412,15 +412,15 @@
       "url": "https://apps.apple.com/ua/app/id6781337213?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-cvdesk",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-cvdesk",
         "url": "https://apps.apple.com/ua/app/id6781337213?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "CV Desk",
         "description": "Коли ви змінюєте сферу, проблема резюме інша: ваш досвід реальний, але на папері «нерелевантний», і фільтри ATS відкидають вас раніше, ніж це побачить людина. Саме цю прогалину й закриває CV Desk.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -441,13 +441,13 @@
             "target": "https://apps.apple.com/ua/app/id6781337213?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-resume-builder-app-for-career-changers-2026.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-resume-builder-app-for-career-changers-2026.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6781337213",
           "inLanguage": "uk",
           "description": "Коли ви змінюєте сферу, проблема резюме інша: ваш досвід реальний, але на папері «нерелевантний», і фільтри ATS відкидають вас раніше, ніж це побачить людина. Саме цю прогалину й закриває CV Desk.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-cvdesk"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-cvdesk"
           },
           "additionalProperty": [
             {
@@ -478,15 +478,15 @@
       "url": "https://apps.apple.com/ua/app/id6782251621?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-cyca",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-cyca",
         "url": "https://apps.apple.com/ua/app/id6782251621?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Cyca",
         "description": "У категорії, де конфіденційність даних — це все, правильний трекер циклу зберігає все — потік, настрій, симптоми, температуру, інтимність — на вашому пристрої, без облікового запису і синхронізації в хмару. Cyca робить лише це й не береться за решту.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -507,13 +507,13 @@
             "target": "https://apps.apple.com/ua/app/id6782251621?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-period-tracker-app-no-account-required-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-period-tracker-app-no-account-required-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6782251621",
           "inLanguage": "uk",
           "description": "У категорії, де конфіденційність даних — це все, правильний трекер циклу зберігає все — потік, настрій, симптоми, температуру, інтимність — на вашому пристрої, без облікового запису і синхронізації в хмару. Cyca робить лише це й не береться за решту.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-cyca"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-cyca"
           },
           "additionalProperty": [
             {
@@ -544,15 +544,15 @@
       "url": "https://apps.apple.com/ua/app/id6790418321?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-dailymate",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-dailymate",
         "url": "https://apps.apple.com/ua/app/id6790418321?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "DailyMate",
         "description": "Перед поїздкою повні фрази для реальних ситуацій корисніші за окремі слова, які доводиться складати під тиском. DailyMate виріс саме з цієї проблеми.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -573,13 +573,13 @@
             "target": "https://apps.apple.com/ua/app/id6790418321?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6790418321",
           "inLanguage": "uk",
           "description": "Перед поїздкою повні фрази для реальних ситуацій корисніші за окремі слова, які доводиться складати під тиском. DailyMate виріс саме з цієї проблеми.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-dailymate"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-dailymate"
           },
           "additionalProperty": [
             {
@@ -610,15 +610,15 @@
       "url": "https://apps.apple.com/ua/app/id6794725568?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-dailymatelite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-dailymatelite",
         "url": "https://apps.apple.com/ua/app/id6794725568?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "DailyMate Lite: Живі фрази",
         "description": "Говоріть упевнено саме тоді, коли це потрібно. DailyMate Lite перетворює життєві ситуації на короткі тренування: ви бачите початкову репліку й учитеся",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -639,13 +639,13 @@
             "target": "https://apps.apple.com/ua/app/id6794725568?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/dailymatelite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/dailymatelite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794725568",
           "inLanguage": "uk",
           "description": "Говоріть упевнено саме тоді, коли це потрібно. DailyMate Lite перетворює життєві ситуації на короткі тренування: ви бачите початкову репліку й учитеся",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-dailymatelite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-dailymatelite"
           },
           "additionalProperty": [
             {
@@ -676,15 +676,15 @@
       "url": "https://apps.apple.com/ua/app/id6755782939?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-gmoney",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-gmoney",
         "url": "https://apps.apple.com/ua/app/id6755782939?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "G+Money",
         "description": "У поїздці потрібен бюджетний трекер, що працює офлайн в країні без даних, підтримує кілька валют і не вимагає облікового запису — організований за поїздками, щоб кожна відпустка була окремою. Саме цю прогалину й закриває G+Money.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -705,13 +705,13 @@
             "target": "https://apps.apple.com/ua/app/id6755782939?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-travel-budget-tracker-app-no-subscription-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-travel-budget-tracker-app-no-subscription-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6755782939",
           "inLanguage": "uk",
           "description": "У поїздці потрібен бюджетний трекер, що працює офлайн в країні без даних, підтримує кілька валют і не вимагає облікового запису — організований за поїздками, щоб кожна відпустка була окремою. Саме цю прогалину й закриває G+Money.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-gmoney"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-gmoney"
           },
           "additionalProperty": [
             {
@@ -742,15 +742,15 @@
       "url": "https://apps.apple.com/ua/app/id6793436548?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-gmoneylite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/ua/app/id6793436548?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "G+Money Lite: Витрати в дорозі",
         "description": "G+Money Lite — Розумний конвертер валют для подорожей та трекер витрат",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -771,13 +771,13 @@
             "target": "https://apps.apple.com/ua/app/id6793436548?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/gmoneylite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/gmoneylite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "uk",
           "description": "G+Money Lite — Розумний конвертер валют для подорожей та трекер витрат",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-gmoneylite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-gmoneylite"
           },
           "additionalProperty": [
             {
@@ -808,15 +808,15 @@
       "url": "https://apps.apple.com/ua/app/id6794039979?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-hourstaglite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-hourstaglite",
         "url": "https://apps.apple.com/ua/app/id6794039979?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "HoursTag Lite: Ціна в годинах",
         "description": "HoursTag Lite - Побачте справжню ціну речей",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -837,13 +837,13 @@
             "target": "https://apps.apple.com/ua/app/id6794039979?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/hourstaglite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/hourstaglite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794039979",
           "inLanguage": "uk",
           "description": "HoursTag Lite - Побачте справжню ціну речей",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-hourstaglite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-hourstaglite"
           },
           "additionalProperty": [
             {
@@ -874,15 +874,15 @@
       "url": "https://apps.apple.com/ua/app/id6754218117?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-hourstag",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-hourstag",
         "url": "https://apps.apple.com/ua/app/id6754218117?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "HoursTag: Години до покупки",
         "description": "Скільки це коштує насправді? Не в гривнях, а в годинах вашого життя.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -903,13 +903,13 @@
             "target": "https://apps.apple.com/ua/app/id6754218117?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/hourstag.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/hourstag.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6754218117",
           "inLanguage": "uk",
           "description": "Скільки це коштує насправді? Не в гривнях, а в годинах вашого життя.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-hourstag"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-hourstag"
           },
           "additionalProperty": [
             {
@@ -940,15 +940,15 @@
       "url": "https://apps.apple.com/ua/app/id6780107485?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lockhour",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/ua/app/id6780107485?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "LockHour Pro",
         "description": "Під час іспитів сила волі — не інструмент, потрібне жорстке блокування за часом. Заради цього LockHour Pro і зроблено.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -969,13 +969,13 @@
             "target": "https://apps.apple.com/ua/app/id6780107485?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-app-to-block-social-media-while-studying-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-app-to-block-social-media-while-studying-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "uk",
           "description": "Під час іспитів сила волі — не інструмент, потрібне жорстке блокування за часом. Заради цього LockHour Pro і зроблено.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lockhour"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lockhour"
           },
           "additionalProperty": [
             {
@@ -1006,15 +1006,15 @@
       "url": "https://apps.apple.com/ua/app/id6773017109?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumibopomofo",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumibopomofo",
         "url": "https://apps.apple.com/ua/app/id6773017109?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Lumi Bopomofo",
         "description": "Для дитини, яка вперше вивчає чжуїнь, додаток має охоплювати всі 37 символів через обведення та гру — розроблено для віку 4–7 років, без реклами, без збору даних. Саме цю прогалину й закриває Lumi Bopomofo.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1035,13 +1035,13 @@
             "target": "https://apps.apple.com/ua/app/id6773017109?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6773017109",
           "inLanguage": "uk",
           "description": "Для дитини, яка вперше вивчає чжуїнь, додаток має охоплювати всі 37 символів через обведення та гру — розроблено для віку 4–7 років, без реклами, без збору даних. Саме цю прогалину й закриває Lumi Bopomofo.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumibopomofo"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumibopomofo"
           },
           "additionalProperty": [
             {
@@ -1072,15 +1072,15 @@
       "url": "https://apps.apple.com/ua/app/id6775773117?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumibopomofopro",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumibopomofopro",
         "url": "https://apps.apple.com/ua/app/id6775773117?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Lumi Bopomofo Pro",
         "description": "Білінгвальні діти, які вивчають Zhuyin вдома, потребують повного шляху через звуки, символи, тони та змішування, з достатньою ігровою повторюваністю для знайомства з системою. Саме цю прогалину й закриває Lumi Bopomofo Pro.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1101,13 +1101,13 @@
             "target": "https://apps.apple.com/ua/app/id6775773117?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6775773117",
           "inLanguage": "uk",
           "description": "Білінгвальні діти, які вивчають Zhuyin вдома, потребують повного шляху через звуки, символи, тони та змішування, з достатньою ігровою повторюваністю для знайомства з системою. Саме цю прогалину й закриває Lumi Bopomofo Pro.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumibopomofopro"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumibopomofopro"
           },
           "additionalProperty": [
             {
@@ -1138,15 +1138,15 @@
       "url": "https://apps.apple.com/ua/app/id6778748533?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumiletters",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumiletters",
         "url": "https://apps.apple.com/ua/app/id6778748533?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Lumi Letters",
         "description": "Для маленької дитини важливо відсутність реклами та збору даних — навчальний додаток має навчати в ігровому циклі без реклами, без збору даних і з одноразовим розблокуванням, якому батьки можуть довіряти. Заради цього Lumi Letters і зроблено.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1167,13 +1167,13 @@
             "target": "https://apps.apple.com/ua/app/id6778748533?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-educational-game-app-for-kids-no-ads-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-educational-game-app-for-kids-no-ads-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6778748533",
           "inLanguage": "uk",
           "description": "Для маленької дитини важливо відсутність реклами та збору даних — навчальний додаток має навчати в ігровому циклі без реклами, без збору даних і з одноразовим розблокуванням, якому батьки можуть довіряти. Заради цього Lumi Letters і зроблено.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumiletters"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumiletters"
           },
           "additionalProperty": [
             {
@@ -1204,15 +1204,15 @@
       "url": "https://apps.apple.com/ua/app/id6778491147?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumiletterspro",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumiletterspro",
         "url": "https://apps.apple.com/ua/app/id6778491147?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Lumi Letters Pro",
         "description": "Сім’ям, які готуються до дитсадка, потрібен повний шлях раннього читання, що поєднує звуки літер, обведення та складання слів замість набору розрізнених алфавітних ігор. Саме цю прогалину й закриває Lumi Letters Pro.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1233,13 +1233,13 @@
             "target": "https://apps.apple.com/ua/app/id6778491147?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6778491147",
           "inLanguage": "uk",
           "description": "Сім’ям, які готуються до дитсадка, потрібен повний шлях раннього читання, що поєднує звуки літер, обведення та складання слів замість набору розрізнених алфавітних ігор. Саме цю прогалину й закриває Lumi Letters Pro.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumiletterspro"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumiletterspro"
           },
           "additionalProperty": [
             {
@@ -1270,15 +1270,15 @@
       "url": "https://apps.apple.com/ua/app/id6778269699?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumimath",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumimath",
         "url": "https://apps.apple.com/ua/app/id6778269699?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Lumi Math Planet",
         "description": "Найкращий дитячий математичний додаток тренує логіку — візерунки, послідовності, просторове мислення — а не просто арифметичні вправи, і ховає це в грі, яку дитина хоче грати. Заради цього Lumi Math Planet і зроблено.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1299,13 +1299,13 @@
             "target": "https://apps.apple.com/ua/app/id6778269699?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6778269699",
           "inLanguage": "uk",
           "description": "Найкращий дитячий математичний додаток тренує логіку — візерунки, послідовності, просторове мислення — а не просто арифметичні вправи, і ховає це в грі, яку дитина хоче грати. Заради цього Lumi Math Planet і зроблено.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumimath"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumimath"
           },
           "additionalProperty": [
             {
@@ -1336,15 +1336,15 @@
       "url": "https://apps.apple.com/ua/app/id6776958488?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumimathpro",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumimathpro",
         "url": "https://apps.apple.com/ua/app/id6776958488?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Lumi Math Pro",
         "description": "Повний додаток ранньої математики має зробити рахунок, числовий сенс і перші операції єдиною пригодою, а не окремими вправами. Заради цього Lumi Math Pro і зроблено.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1365,13 +1365,13 @@
             "target": "https://apps.apple.com/ua/app/id6776958488?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6776958488",
           "inLanguage": "uk",
           "description": "Повний додаток ранньої математики має зробити рахунок, числовий сенс і перші операції єдиною пригодою, а не окремими вправами. Заради цього Lumi Math Pro і зроблено.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumimathpro"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumimathpro"
           },
           "additionalProperty": [
             {
@@ -1402,15 +1402,15 @@
       "url": "https://apps.apple.com/ua/app/id6779750237?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumimission",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumimission",
         "url": "https://apps.apple.com/ua/app/id6779750237?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Lumi Mission Planet",
         "description": "Для дошкільнят вечірній ритуал найкраще працює, коли він короткий, візуальний і достатньо передбачуваний, щоб дитина могла виконувати його без додаткових нагадувань. Якщо це про вас, погляньте на Lumi Mission Planet.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1431,13 +1431,13 @@
             "target": "https://apps.apple.com/ua/app/id6779750237?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779750237",
           "inLanguage": "uk",
           "description": "Для дошкільнят вечірній ритуал найкраще працює, коли він короткий, візуальний і достатньо передбачуваний, щоб дитина могла виконувати його без додаткових нагадувань. Якщо це про вас, погляньте на Lumi Mission Planet.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumimission"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumimission"
           },
           "additionalProperty": [
             {
@@ -1468,15 +1468,15 @@
       "url": "https://apps.apple.com/ua/app/id6779745474?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumimissionpro",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumimissionpro",
         "url": "https://apps.apple.com/ua/app/id6779745474?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Lumi Mission Planet Pro",
         "description": "Чистка зубів і вечірня рутина часто не вдаються одночасно щовечора: дитина втомлена, батьки втомлені, а наступний крок недостатньо помітний.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1497,13 +1497,13 @@
             "target": "https://apps.apple.com/ua/app/id6779745474?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779745474",
           "inLanguage": "uk",
           "description": "Чистка зубів і вечірня рутина часто не вдаються одночасно щовечора: дитина втомлена, батьки втомлені, а наступний крок недостатньо помітний.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumimissionpro"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumimissionpro"
           },
           "additionalProperty": [
             {
@@ -1534,15 +1534,15 @@
       "url": "https://apps.apple.com/ua/app/id6787193643?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-tripplanet",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-tripplanet",
         "url": "https://apps.apple.com/ua/app/id6787193643?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Lumi Trip Planet",
         "description": "Батькам, які подорожують з маленькими дітьми, потрібні активності, що перетворюють пакування, очікування та відкриття нового місця на частину пригоди, а не ще одне джерело стресу. Заради цього Lumi Trip Planet і зроблено.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1563,13 +1563,13 @@
             "target": "https://apps.apple.com/ua/app/id6787193643?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6787193643",
           "inLanguage": "uk",
           "description": "Батькам, які подорожують з маленькими дітьми, потрібні активності, що перетворюють пакування, очікування та відкриття нового місця на частину пригоди, а не ще одне джерело стресу. Заради цього Lumi Trip Planet і зроблено.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-tripplanet"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-tripplanet"
           },
           "additionalProperty": [
             {
@@ -1600,15 +1600,15 @@
       "url": "https://apps.apple.com/ua/app/id6779552704?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumiweather",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/ua/app/id6779552704?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Lumi Weather",
         "description": "Батькам, які планують час на вулиці, потрібно більше, ніж температура: потрібен швидкий, віковий огляд, чи підходять умови для дитини і який одяг доречний. Заради цього Lumi Weather і зроблено.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1629,13 +1629,13 @@
             "target": "https://apps.apple.com/ua/app/id6779552704?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "uk",
           "description": "Батькам, які планують час на вулиці, потрібно більше, ніж температура: потрібен швидкий, віковий огляд, чи підходять умови для дитини і який одяг доречний. Заради цього Lumi Weather і зроблено.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumiweather"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumiweather"
           },
           "additionalProperty": [
             {
@@ -1666,15 +1666,15 @@
       "url": "https://apps.apple.com/ua/app/id6792850916?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-maskmyfile",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-maskmyfile",
         "url": "https://apps.apple.com/ua/app/id6792850916?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Mask My File: Видаліть дані",
         "description": "Діліться безпечно, не втрачаючи потрібного контексту. Mask My File знаходить приватні дані, перш ніж ви надішлете файл, назавжди приховує лише те, що ви",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1695,13 +1695,13 @@
             "target": "https://apps.apple.com/ua/app/id6792850916?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/maskmyfile.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/maskmyfile.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6792850916",
           "inLanguage": "uk",
           "description": "Діліться безпечно, не втрачаючи потрібного контексту. Mask My File знаходить приватні дані, перш ніж ви надішлете файл, назавжди приховує лише те, що ви",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-maskmyfile"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-maskmyfile"
           },
           "additionalProperty": [
             {
@@ -1732,15 +1732,15 @@
       "url": "https://apps.apple.com/ua/app/id6785004775?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-mochi",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-mochi",
         "url": "https://apps.apple.com/ua/app/id6785004775?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Mochi",
         "description": "Якщо більшість додатків для справ здаються перевантаженими, правильний — це чистий чеклист з нагадуваннями, правилами повторення і підтримкою Apple Watch — і навмисно без функцій управління проєктами. Заради цього Mochi і зроблено.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1761,13 +1761,13 @@
             "target": "https://apps.apple.com/ua/app/id6785004775?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-simple-to-do-list-app-iphone-no-subscription.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-simple-to-do-list-app-iphone-no-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "uk",
           "description": "Якщо більшість додатків для справ здаються перевантаженими, правильний — це чистий чеклист з нагадуваннями, правилами повторення і підтримкою Apple Watch — і навмисно без функцій управління проєктами. Заради цього Mochi і зроблено.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-mochi"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-mochi"
           },
           "additionalProperty": [
             {
@@ -1798,15 +1798,15 @@
       "url": "https://apps.apple.com/ua/app/id6790800323?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-mochidonestamp",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-mochidonestamp",
         "url": "https://apps.apple.com/ua/app/id6790800323?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Mochi DoneStamp: Коли востаннє",
         "description": "Коли ви востаннє міняли постіль, поливали рослину, телефонували рідним, зберігали фото чи замінювали фільтр?",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1827,13 +1827,13 @@
             "target": "https://apps.apple.com/ua/app/id6790800323?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/mochidonestamp.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/mochidonestamp.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6790800323",
           "inLanguage": "uk",
           "description": "Коли ви востаннє міняли постіль, поливали рослину, телефонували рідним, зберігали фото чи замінювали фільтр?",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-mochidonestamp"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-mochidonestamp"
           },
           "additionalProperty": [
             {
@@ -1864,15 +1864,15 @@
       "url": "https://apps.apple.com/ua/app/id6801956402?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-moneytag",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-moneytag",
         "url": "https://apps.apple.com/ua/app/id6801956402?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "MoneyTag: Доходи та витрати",
         "description": "Доходи та витрати Кожен проєкт веде власну книгу обліку: доходи мінус витрати — це його чистий підсумок. Тут зібрано найчастіші запитання. Якщо вашого немає, напишіть нам — кожен лист читає жива людина.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1893,13 +1893,13 @@
             "target": "https://apps.apple.com/ua/app/id6801956402?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/moneytag.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/moneytag.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6801956402",
           "inLanguage": "uk",
           "description": "Доходи та витрати Кожен проєкт веде власну книгу обліку: доходи мінус витрати — це його чистий підсумок. Тут зібрано найчастіші запитання. Якщо вашого немає, напишіть нам — кожен лист читає жива людина.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-moneytag"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-moneytag"
           },
           "additionalProperty": [
             {
@@ -1930,15 +1930,15 @@
       "url": "https://apps.apple.com/ua/app/id6798814385?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-onepageppt",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-onepageppt",
         "url": "https://apps.apple.com/ua/app/id6798814385?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "OnePage PPT: ШІ-слайди",
         "description": "Стіна тексту перетворюється на ОДИН слайд, який справді прочитають.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -1959,13 +1959,13 @@
             "target": "https://apps.apple.com/ua/app/id6798814385?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/onepageppt.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/onepageppt.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6798814385",
           "inLanguage": "uk",
           "description": "Стіна тексту перетворюється на ОДИН слайд, який справді прочитають.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-onepageppt"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-onepageppt"
           },
           "additionalProperty": [
             {
@@ -1996,15 +1996,15 @@
       "url": "https://apps.apple.com/ua/app/id6781808054?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-photocream",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-photocream",
         "url": "https://apps.apple.com/ua/app/id6781808054?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "PhotoCream",
         "description": "Тревел-креаторам потрібен повторюваний фільм-стиль, який додає зерно, галацію та кольоровий характер, не зводячи кожну локацію до одного плоского фільтра",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2025,13 +2025,13 @@
             "target": "https://apps.apple.com/ua/app/id6781808054?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6781808054",
           "inLanguage": "uk",
           "description": "Тревел-креаторам потрібен повторюваний фільм-стиль, який додає зерно, галацію та кольоровий характер, не зводячи кожну локацію до одного плоского фільтра",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-photocream"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-photocream"
           },
           "additionalProperty": [
             {
@@ -2062,15 +2062,15 @@
       "url": "https://apps.apple.com/ua/app/id6780223070?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-picclear",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-picclear",
         "url": "https://apps.apple.com/ua/app/id6780223070?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "PicClear",
         "description": "Щоб швидко звільнити місце, спочатку видаляйте найбільші файли: точні дублікати фото, майже ідентичні серії, розмиті кадри та великі відео",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2091,13 +2091,13 @@
             "target": "https://apps.apple.com/ua/app/id6780223070?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6780223070",
           "inLanguage": "uk",
           "description": "Щоб швидко звільнити місце, спочатку видаляйте найбільші файли: точні дублікати фото, майже ідентичні серії, розмиті кадри та великі відео",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-picclear"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-picclear"
           },
           "additionalProperty": [
             {
@@ -2128,15 +2128,15 @@
       "url": "https://apps.apple.com/ua/app/id6802505528?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-savetag",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-savetag",
         "url": "https://apps.apple.com/ua/app/id6802505528?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "SaveTag: закладки з ШІ",
         "description": "Збережіть зараз. І цього разу справді прочитайте.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2157,13 +2157,13 @@
             "target": "https://apps.apple.com/ua/app/id6802505528?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/savetag.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/savetag.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "uk",
           "description": "Збережіть зараз. І цього разу справді прочитайте.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-savetag"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-savetag"
           },
           "additionalProperty": [
             {
@@ -2194,15 +2194,15 @@
       "url": "https://apps.apple.com/ua/app/id6779977651?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-scanto",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-scanto",
         "url": "https://apps.apple.com/ua/app/id6779977651?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "ScanTo Pro",
         "description": "Якщо ви скануєте форми згоди пацієнтів, виписку або направлення, сканер має зберігати документи на пристрої — ніколи не завантажувати в чужу хмару. ScanTo Pro виріс саме з цієї проблеми.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2223,13 +2223,13 @@
             "target": "https://apps.apple.com/ua/app/id6779977651?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779977651",
           "inLanguage": "uk",
           "description": "Якщо ви скануєте форми згоди пацієнтів, виписку або направлення, сканер має зберігати документи на пристрої — ніколи не завантажувати в чужу хмару. ScanTo Pro виріс саме з цієї проблеми.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-scanto"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-scanto"
           },
           "additionalProperty": [
             {
@@ -2260,15 +2260,15 @@
       "url": "https://apps.apple.com/ua/app/id6788236641?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-sereno",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-sereno",
         "url": "https://apps.apple.com/ua/app/id6788236641?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Sereno",
         "description": "Для сну підписка, що нагадує щомісяця, — це протилежність спокою. Якщо це про вас, погляньте на Sereno.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2289,13 +2289,13 @@
             "target": "https://apps.apple.com/ua/app/id6788236641?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-white-noise-app-for-falling-asleep-no-subscription.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-white-noise-app-for-falling-asleep-no-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6788236641",
           "inLanguage": "uk",
           "description": "Для сну підписка, що нагадує щомісяця, — це протилежність спокою. Якщо це про вас, погляньте на Sereno.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-sereno"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-sereno"
           },
           "additionalProperty": [
             {
@@ -2326,15 +2326,15 @@
       "url": "https://apps.apple.com/ua/app/id6802166527?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-shotinbox",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/ua/app/id6802166527?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "ShotInbox AI: Sort Screenshots",
         "description": "Усі знімки впорядковано",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2355,13 +2355,13 @@
             "target": "https://apps.apple.com/ua/app/id6802166527?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/shotinbox.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/shotinbox.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "uk",
           "description": "Усі знімки впорядковано",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-shotinbox"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-shotinbox"
           },
           "additionalProperty": [
             {
@@ -2392,15 +2392,15 @@
       "url": "https://apps.apple.com/ua/app/id6780575828?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-snapport",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-snapport",
         "url": "https://apps.apple.com/ua/app/id6780575828?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Snapport",
         "description": "Для фото на паспорт дитини ніхто інший не повинен бути в кадрі, а фон має бути однотонним. Snapport виріс саме з цієї проблеми.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2421,13 +2421,13 @@
             "target": "https://apps.apple.com/ua/app/id6780575828?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6780575828",
           "inLanguage": "uk",
           "description": "Для фото на паспорт дитини ніхто інший не повинен бути в кадрі, а фон має бути однотонним. Snapport виріс саме з цієї проблеми.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-snapport"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-snapport"
           },
           "additionalProperty": [
             {
@@ -2458,15 +2458,15 @@
       "url": "https://apps.apple.com/ua/app/id6792856304?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-snapportlite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/ua/app/id6792856304?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Snapport Lite: ID-фото вдома",
         "description": "Snapport Lite - Створюйте фотографії для паспорта, візи та документів з керівництвом по розмірам, інструментами для фону та експортом, готовим до друку.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2487,13 +2487,13 @@
             "target": "https://apps.apple.com/ua/app/id6792856304?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/snapportlite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/snapportlite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6792856304",
           "inLanguage": "uk",
           "description": "Snapport Lite - Створюйте фотографії для паспорта, візи та документів з керівництвом по розмірам, інструментами для фону та експортом, готовим до друку.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-snapportlite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-snapportlite"
           },
           "additionalProperty": [
             {
@@ -2524,15 +2524,15 @@
       "url": "https://apps.apple.com/ua/app/id6782139553?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-sononote",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-sononote",
         "url": "https://apps.apple.com/ua/app/id6782139553?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Sono Note",
         "description": "Після дзвінка вам не потрібен сирий транскрипт — вам потрібен підсумок, завдання і чернетка листа. Саме цю прогалину й закриває Sono Note.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2553,13 +2553,13 @@
             "target": "https://apps.apple.com/ua/app/id6782139553?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "uk",
           "description": "Після дзвінка вам не потрібен сирий транскрипт — вам потрібен підсумок, завдання і чернетка листа. Саме цю прогалину й закриває Sono Note.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-sononote"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-sononote"
           },
           "additionalProperty": [
             {
@@ -2590,15 +2590,15 @@
       "url": "https://apps.apple.com/ua/app/id6791299610?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-tripbeelite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-tripbeelite",
         "url": "https://apps.apple.com/ua/app/id6791299610?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "TripBee Lite",
         "description": "Якщо ви плануєте одну майбутню подорож, спокійна хронологія для неї корисніша за переповнений архів усіх поїздок, які ви могли б колись здійснити. Якщо це про вас, погляньте на TripBee Lite.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2619,13 +2619,13 @@
             "target": "https://apps.apple.com/ua/app/id6791299610?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6791299610",
           "inLanguage": "uk",
           "description": "Якщо ви плануєте одну майбутню подорож, спокійна хронологія для неї корисніша за переповнений архів усіх поїздок, які ви могли б колись здійснити. Якщо це про вас, погляньте на TripBee Lite.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-tripbeelite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-tripbeelite"
           },
           "additionalProperty": [
             {
@@ -2656,15 +2656,15 @@
       "url": "https://apps.apple.com/ua/app/id6787754435?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-tripbee",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/ua/app/id6787754435?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "TripBee Pro: планувальник подорожей",
         "description": "Хороший додаток для маршруту перетворює хаотичну подорож на чіткий розклад по днях — рейси, готелі, активності, ресторани та транспорт — із чіткими іконками типів, щоб ви могли швидко переглянути свій день. Якщо це про вас, погляньте на TripBee Pro: планувальник подорожей.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2685,13 +2685,13 @@
             "target": "https://apps.apple.com/ua/app/id6787754435?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-trip-itinerary-planner-app-for-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-trip-itinerary-planner-app-for-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "uk",
           "description": "Хороший додаток для маршруту перетворює хаотичну подорож на чіткий розклад по днях — рейси, готелі, активності, ресторани та транспорт — із чіткими іконками типів, щоб ви могли швидко переглянути свій день. Якщо це про вас, погляньте на TripBee Pro: планувальник подорожей.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-tripbee"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-tripbee"
           },
           "additionalProperty": [
             {
@@ -2722,15 +2722,15 @@
       "url": "https://apps.apple.com/ua/app/id6782275018?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-unblurry",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-unblurry",
         "url": "https://apps.apple.com/ua/app/id6782275018?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Unblurry",
         "description": "Діти ніколи не сидять спокійно, тому м’який фокус і тремтіння камери неминучі",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2751,13 +2751,13 @@
             "target": "https://apps.apple.com/ua/app/id6782275018?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6782275018",
           "inLanguage": "uk",
           "description": "Діти ніколи не сидять спокійно, тому м’який фокус і тремтіння камери неминучі",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-unblurry"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-unblurry"
           },
           "additionalProperty": [
             {
@@ -2788,15 +2788,15 @@
       "url": "https://apps.apple.com/ua/app/id6793414462?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wifiaidlite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/ua/app/id6793414462?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "WiFi Aid Lite",
         "description": "Знайдіть реальну проблему. Кожен інструмент містить одне безкоштовне повне використання. Необов'язкове одноразове довічне розблокування для необмеженого",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2817,13 +2817,13 @@
             "target": "https://apps.apple.com/ua/app/id6793414462?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/wifiaidlite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/wifiaidlite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "uk",
           "description": "Знайдіть реальну проблему. Кожен інструмент містить одне безкоштовне повне використання. Необов'язкове одноразове довічне розблокування для необмеженого",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wifiaidlite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wifiaidlite"
           },
           "additionalProperty": [
             {
@@ -2854,15 +2854,15 @@
       "url": "https://apps.apple.com/ua/app/id6790467886?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wifiaid",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wifiaid",
         "url": "https://apps.apple.com/ua/app/id6790467886?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "WiFi Aid: Пошук проблем мережі",
         "description": "Знайдіть найімовірнішу причину за допомогою незалежних перевірок маршрутів, DNS, TCP, TLS, часу відгуку та стабільності. Разова оплата, без підписки",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2883,13 +2883,13 @@
             "target": "https://apps.apple.com/ua/app/id6790467886?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/wifiaid.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/wifiaid.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "uk",
           "description": "Знайдіть найімовірнішу причину за допомогою незалежних перевірок маршрутів, DNS, TCP, TLS, часу відгуку та стабільності. Разова оплата, без підписки",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wifiaid"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wifiaid"
           },
           "additionalProperty": [
             {
@@ -2920,15 +2920,15 @@
       "url": "https://apps.apple.com/ua/app/id6797601720?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wordmatelite",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/ua/app/id6797601720?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Wordmate Lite: вивчення мов",
         "description": "Хочеться нарешті зрушити іноземну мову з місця, але вечір знову минає без жодного нового слова. Wordmate Lite скорочує навчання до однієї хвилини на",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -2949,13 +2949,13 @@
             "target": "https://apps.apple.com/ua/app/id6797601720?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/wordmatelite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/wordmatelite.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "uk",
           "description": "Хочеться нарешті зрушити іноземну мову з місця, але вечір знову минає без жодного нового слова. Wordmate Lite скорочує навчання до однієї хвилини на",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wordmatelite"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wordmatelite"
           },
           "additionalProperty": [
             {
@@ -2986,15 +2986,15 @@
       "url": "https://apps.apple.com/ua/app/id6789917808?pt=118326163&ct=iag_data_uk&mt=8",
       "item": {
         "@type": "Offer",
-        "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wordmate",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wordmate",
         "url": "https://apps.apple.com/ua/app/id6789917808?pt=118326163&ct=iag_data_uk&mt=8",
         "name": "Wordmate: Learn 44 Languages",
         "description": "Зайнятим ком’ютерам потрібна практика слів, що вписується у вільні хвилини без повного уроку, нового акаунта чи телефону в руках для кожного повтору. Wordmate: Learn 44 Languages виріс саме з цієї проблеми.",
         "seller": {
           "@type": "Organization",
-          "@id": "https://alice51849.github.io/ios-app-guide/about.html#organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
           "name": "Lumi Studio",
-          "url": "https://alice51849.github.io/ios-app-guide/about.html"
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
         },
         "itemOffered": {
           "@type": "MobileApplication",
@@ -3015,13 +3015,13 @@
             "target": "https://apps.apple.com/ua/app/id6789917808?pt=118326163&ct=iag_data_uk&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://alice51849.github.io/ios-app-guide/uk/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6789917808",
           "inLanguage": "uk",
           "description": "Зайнятим ком’ютерам потрібна практика слів, що вписується у вільні хвилини без повного уроку, нового акаунта чи телефону в руках для кожного повтору. Wordmate: Learn 44 Languages виріс саме з цієї проблеми.",
           "offers": {
-            "@id": "https://alice51849.github.io/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wordmate"
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wordmate"
           },
           "additionalProperty": [
             {

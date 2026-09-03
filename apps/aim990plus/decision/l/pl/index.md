@@ -1,7 +1,7 @@
 ---
 title: "Aim990 Plus: Test angielskiego — Pewność pod presją czasu | iOS App"
 lang: "pl"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/pl/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/pl/index.html"
 modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
@@ -19,6 +19,6 @@ Zachowaj jasność myślenia, gdy liczy się każda sekunda. Aim990 Plus to inte
 
 [Pobierz Aim990 Plus: Test angielskiego z App Store](https://apps.apple.com/pl/app/id6792483140?pt=118326163&ct=iag_data_pl&mt=8)
 
-[Przeczytaj pełny przewodnik](https://alice51849.github.io/ios-app-guide/pl/aim990plus.html)
+[Przeczytaj pełny przewodnik](https://open.cait518.cc/ios-app-guide/pl/aim990plus.html)
 
 > Materiał pierwszorzędny opublikowany przez Lumi Studio, twórcę każdej wymienionej aplikacji.

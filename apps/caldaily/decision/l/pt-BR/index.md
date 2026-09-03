@@ -1,7 +1,7 @@
 ---
 title: "CalDaily: calculadora e temas — Widget, ferramentas, histórico | iOS App"
 lang: "pt-BR"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/pt-BR/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/pt-BR/index.html"
 modified: "2026-09-03"
 app_store_id: "6794178671"
 verified_live: true
@@ -20,6 +20,6 @@ Uma calculadora que você mantém, porque ela lembra o contexto de cada número.
 
 [Baixe CalDaily: calculadora e temas na App Store](https://apps.apple.com/br/app/id6794178671?pt=118326163&ct=iag_data_pt_br&mt=8)
 
-[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/caldaily.html)
+[Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/caldaily.html)
 
 > Este conteúdo é publicado diretamente pela Lumi Studio, desenvolvedora de todos os apps apresentados.

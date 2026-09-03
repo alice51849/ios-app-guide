@@ -1,7 +1,7 @@
 ---
 title: "HoursTag Lite: Cijena u satima — Pogledaj pravu cijenu stvari | iOS App"
 lang: "hr"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstaglite/decision/l/hr/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/hr/index.html"
 modified: "2026-09-03"
 app_store_id: "6794039979"
 verified_live: true
@@ -24,6 +24,6 @@ HoursTag Lite - Pogledaj pravu cijenu stvari Svaka kupovina košta sate tvog ži
 
 [Preuzmite HoursTag Lite: Cijena u satima u App Storeu](https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=iag_data_hr&mt=8)
 
-[Pročitajte cijeli vodič](https://alice51849.github.io/ios-app-guide/hr/hourstaglite.html)
+[Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/hourstaglite.html)
 
 > Ovo je materijal iz prve ruke koji je objavio Lumi Studio, razvojni tim svake navedene aplikacije.

@@ -1,7 +1,7 @@
 ---
 title: "MoneyTag: آمدنی اور اخراجات — پروجیکٹ · ٹیگز · رپورٹ | iOS App"
 lang: "ur-PK"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/ur-PK/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/ur-PK/index.html"
 modified: "2026-09-03"
 app_store_id: "6801956402"
 verified_live: true
@@ -26,6 +26,6 @@ publisher: "Lumi Studio"
 
 [App Store سے MoneyTag: آمدنی اور اخراجات حاصل کریں](https://apps.apple.com/pk/app/id6801956402?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
-[مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/moneytag.html)
+[مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/moneytag.html)
 
 > یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔

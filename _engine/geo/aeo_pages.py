@@ -35,12 +35,13 @@ sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 import gen_store_attribution  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 ALT = os.path.join(PAGES, "alternatives")
 REPORTS = os.path.join(HERE, "reports")
 SOV = os.path.join(REPORTS, "aeo_sov.json")
-SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
+SITE = os.environ.get("GEO_SITE", PUBLIC_SITE).rstrip("/")
 LOCALE_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$")
 CURATED_FALLBACK = {
     # BattAI can read only the public device-level signals exposed by iOS.

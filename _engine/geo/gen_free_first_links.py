@@ -80,10 +80,11 @@ from app_pairs import (  # noqa: E402
     paid_to_free,
 )
 from gen_smart_app_banners import MOBILE_APP_IDENTITY_BLOCK_RE  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 REPORT = os.path.join(HERE, "reports", "free_first_rewrite.json")
 SKIP_DIRS = {"_engine", "assets", ".git"}

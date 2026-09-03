@@ -1,7 +1,7 @@
 ---
 title: "BattAI: Điểm tình trạng pin — Quy tắc, nguồn và giới hạn rõ ràng | iOS App"
 lang: "vi"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/vi/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/vi/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI dùng 5 giá trị từ API công khai của iOS: mức pin, trạ
 
 [Tải BattAI: Điểm tình trạng pin trên App Store](https://apps.apple.com/vn/app/id6802423998?pt=118326163&ct=iag_data_vi&mt=8)
 
-[Đọc toàn bộ hướng dẫn](https://alice51849.github.io/ios-app-guide/vi/battai.html)
+[Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/battai.html)
 
 > Tài liệu này do Lumi Studio trực tiếp công bố; Lumi Studio là nhà phát triển của tất cả ứng dụng được liệt kê.

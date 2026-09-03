@@ -1,7 +1,7 @@
 ---
 title: "CalDaily: கால்குலேட்டர் — விட்ஜெட், கருவிகள், வரலாறு | iOS App"
 lang: "ta-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ta-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/ta-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6794178671"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [App Store-இல் CalDaily: கால்குலேட்டர்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=iag_data_ta_in&mt=8)
 
-[முழு வழிகாட்டியை படிக்கவும்](https://alice51849.github.io/ios-app-guide/ta-IN/caldaily.html)
+[முழு வழிகாட்டியை படிக்கவும்](https://open.cait518.cc/ios-app-guide/ta-IN/caldaily.html)
 
 > இது Lumi Studio வெளியிட்ட முதல்-பார்ட்டி தரவு, இது பட்டியலிடப்பட்ட ஒவ்வொரு செயலியின் உருவாக்குநர்.

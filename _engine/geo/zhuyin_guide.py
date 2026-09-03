@@ -26,11 +26,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import appstore_url  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = os.path.join(HERE, "pages")
 GUIDES = os.path.join(PAGES, "guides")
 DATA = os.path.join(ROOT, "data")
-SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
+SITE = os.environ.get("GEO_SITE", PUBLIC_SITE).rstrip("/")
 SLUG = "zhuyin-app-recommendation"
 e = html.escape
 

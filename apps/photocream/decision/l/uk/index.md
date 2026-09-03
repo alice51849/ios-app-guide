@@ -1,7 +1,7 @@
 ---
 title: "найкращий одноразово оплачуваний фільм-фото редактор для тревел-креаторів на iPhone"
 lang: "uk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/uk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/uk/index.html"
 modified: "2026-09-03"
 app_store_id: "6781808054"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [Отримати PhotoCream в App Store →](https://apps.apple.com/ua/app/id6781808054?pt=118326163&ct=iag_data_uk&mt=8)
 
-[Прочитати повний довідник](https://alice51849.github.io/ios-app-guide/uk/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
+[Прочитати повний довідник](https://open.cait518.cc/ios-app-guide/uk/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 
 > Посібник підготовлено видавцем Lumi Studio, розробником застосунку. Назви застосунків є торговими марками їхніх власників і використовуються лише для ідентифікації. Ухвалюючи рішення щодо документів, здоров'я, навчання та роботи, звіряйтеся з офіційними вимогами там, де це важливо.

@@ -1,7 +1,7 @@
 ---
 title: "CalDaily 계산기 및 테마 — 위젯, 도구, 기록 정리 | iOS App"
 lang: "ko"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/caldaily/decision/l/ko/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/ko/index.html"
 modified: "2026-09-03"
 app_store_id: "6794178671"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [App Store에서 CalDaily 계산기 및 테마 받기](https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=iag_data_ko&mt=8)
 
-[전체 안내서 읽기](https://alice51849.github.io/ios-app-guide/ko/caldaily.html)
+[전체 안내서 읽기](https://open.cait518.cc/ios-app-guide/ko/caldaily.html)
 
 > 이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.

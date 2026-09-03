@@ -1,7 +1,7 @@
 ---
 title: "meilleure application de planification d’itinéraire de voyage pour iPhone"
 lang: "fr-CA"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbee/decision/l/fr-CA/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/fr-CA/index.html"
 modified: "2026-09-03"
 app_store_id: "6787754435"
 verified_live: true
@@ -22,6 +22,6 @@ Une bonne application d’itinéraire transforme un voyage désordonné en une c
 
 [Obtenez TripBee Pro : Planificateur de voyage sur l’App Store →](https://apps.apple.com/ca/app/id6787754435?pt=118326163&ct=iag_data_fr_ca&mt=8)
 
-[Lire le guide complet](https://alice51849.github.io/ios-app-guide/fr-CA/answers/best-trip-itinerary-planner-app-for-iphone.html)
+[Lire le guide complet](https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-trip-itinerary-planner-app-for-iphone.html)
 
 > Guide rédigé par Lumi Studio, le développeur de l'app. Les noms d'apps sont des marques de commerce de leurs propriétaires et servent uniquement à les identifier. Pour les décisions concernant les documents, la santé, l'école et la productivité, vérifiez les exigences officielles applicables.

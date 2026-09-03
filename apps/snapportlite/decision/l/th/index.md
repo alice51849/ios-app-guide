@@ -1,7 +1,7 @@
 ---
 title: "Snapport Lite: ทำรูปติดบัตร — ถ่ายรูปติดบัตรที่บ้าน | iOS App"
 lang: "th"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/snapportlite/decision/l/th/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/snapportlite/decision/l/th/index.html"
 modified: "2026-09-03"
 app_store_id: "6792856304"
 verified_live: true
@@ -20,6 +20,6 @@ Snapport Lite - สร้างรูปพาสปอร์ต วีซ่า
 
 [ดาวน์โหลด Snapport Lite: ทำรูปติดบัตร บน App Store](https://apps.apple.com/th/app/id6792856304?pt=118326163&ct=iag_data_th&mt=8)
 
-[อ่านคู่มือฉบับเต็ม](https://alice51849.github.io/ios-app-guide/th/snapportlite.html)
+[อ่านคู่มือฉบับเต็ม](https://open.cait518.cc/ios-app-guide/th/snapportlite.html)
 
 > เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้

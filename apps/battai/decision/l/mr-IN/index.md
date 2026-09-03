@@ -1,7 +1,7 @@
 ---
 title: "BattAI: बॅटरी आरोग्य गुण — स्पष्ट नियम, स्रोत आणि मर्यादा | iOS App"
 lang: "mr-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/mr-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/mr-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI BattAI सार्वजनिक iOS API मधून 5 मूल्य
 
 [App Store वरून BattAI: बॅटरी आरोग्य गुण मिळवा](https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=iag_data_mr_in&mt=8)
 
-[संपूर्ण मार्गदर्शक वाचा](https://alice51849.github.io/ios-app-guide/mr-IN/battai.html)
+[संपूर्ण मार्गदर्शक वाचा](https://open.cait518.cc/ios-app-guide/mr-IN/battai.html)
 
 > हे Lumi Studio कडून प्रकाशित केलेले प्रथम पक्ष साहित्य आहे, जे प्रत्येक सूचीबद्ध अॅपचे विकसक आहे.

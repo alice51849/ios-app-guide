@@ -1,7 +1,7 @@
 ---
 title: "HoursTag: Hodiny na nákup — Rozpočet, výdaje a úspory | iOS App"
 lang: "cs"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/hourstag/decision/l/cs/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/cs/index.html"
 modified: "2026-09-03"
 app_store_id: "6754218117"
 verified_live: true
@@ -21,6 +21,6 @@ Kolik to opravdu stojí? Ne v korunách, ale v hodinách vašeho života.
 
 [Stáhněte si HoursTag: Hodiny na nákup v App Storu](https://apps.apple.com/cz/app/id6754218117?pt=118326163&ct=iag_data_cs&mt=8)
 
-[Přečtěte si celý průvodce](https://alice51849.github.io/ios-app-guide/cs/hourstag.html)
+[Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/hourstag.html)
 
 > Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.

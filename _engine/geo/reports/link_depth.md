@@ -1,6 +1,6 @@
 # 站內連結深度稽核
 
-站台:https://alice51849.github.io/ios-app-guide
+站台:https://open.cait518.cc/ios-app-guide
 
 ## 主要指標(母體=**可索引頁**)
 
@@ -93,24 +93,24 @@ noindex 頁永遠不會排名,算進分母只是充數;下表只看能排名的�
 ## 孤兒頁樣本
 
 ```
-https://alice51849.github.io/ios-app-guide/ace-ID/best-for/iphone-best-app-document-mask-ace-id.html
-https://alice51849.github.io/ios-app-guide/ace-ID/best-for/iphone-best-app-passport-photo-ace-id.html
-https://alice51849.github.io/ios-app-guide/ace-ID/best-for/iphone-best-app-photo-hide-ace-id.html
-https://alice51849.github.io/ios-app-guide/ace-ID/best-for/iphone-best-app-scan-offline-ace-id.html
-https://alice51849.github.io/ios-app-guide/ace-ID/best-for/iphone-best-app-social-block-ace-id.html
-https://alice51849.github.io/ios-app-guide/ace-ID/reviews/maskmyfile-review-2026-ace-id.html
-https://alice51849.github.io/ios-app-guide/ace-ID/reviews/scanto-review-2026-ace-id.html
-https://alice51849.github.io/ios-app-guide/ace-ID/reviews/snapport-review-2026-ace-id.html
-https://alice51849.github.io/ios-app-guide/ace-ID/reviews/zafe-review-2026-ace-id.html
-https://alice51849.github.io/ios-app-guide/ace-ID/seasonal/iphone-apps-school-ace-id.html
-https://alice51849.github.io/ios-app-guide/ace-ID/seasonal/iphone-apps-summer-ace-id.html
-https://alice51849.github.io/ios-app-guide/ace-ID/seasonal/iphone-apps-year-end-ace-id.html
-https://alice51849.github.io/ios-app-guide/ace-ID/vs/scanto-vs-apple-notes-ace-id.html
-https://alice51849.github.io/ios-app-guide/ace-ID/vs/snapport-vs-photographer-ace-id.html
-https://alice51849.github.io/ios-app-guide/ace-ID/vs/zafe-vs-hidden-album-ace-id.html
-https://alice51849.github.io/ios-app-guide/ace-ID/workflow/iphone-privacy-ace-id.html
-https://alice51849.github.io/ios-app-guide/ace-ID/workflow/iphone-workflow-freelancer-ace-id.html
-https://alice51849.github.io/ios-app-guide/ace-ID/workflow/iphone-workflow-student-ace-id.html
-https://alice51849.github.io/ios-app-guide/ach-UG/best-for/iphone-best-app-document-mask-ach-ug.html
-https://alice51849.github.io/ios-app-guide/ach-UG/best-for/iphone-best-app-passport-photo-ach-ug.html
+https://open.cait518.cc/ios-app-guide/ace-ID/best-for/iphone-best-app-document-mask-ace-id.html
+https://open.cait518.cc/ios-app-guide/ace-ID/best-for/iphone-best-app-passport-photo-ace-id.html
+https://open.cait518.cc/ios-app-guide/ace-ID/best-for/iphone-best-app-photo-hide-ace-id.html
+https://open.cait518.cc/ios-app-guide/ace-ID/best-for/iphone-best-app-scan-offline-ace-id.html
+https://open.cait518.cc/ios-app-guide/ace-ID/best-for/iphone-best-app-social-block-ace-id.html
+https://open.cait518.cc/ios-app-guide/ace-ID/reviews/maskmyfile-review-2026-ace-id.html
+https://open.cait518.cc/ios-app-guide/ace-ID/reviews/scanto-review-2026-ace-id.html
+https://open.cait518.cc/ios-app-guide/ace-ID/reviews/snapport-review-2026-ace-id.html
+https://open.cait518.cc/ios-app-guide/ace-ID/reviews/zafe-review-2026-ace-id.html
+https://open.cait518.cc/ios-app-guide/ace-ID/seasonal/iphone-apps-school-ace-id.html
+https://open.cait518.cc/ios-app-guide/ace-ID/seasonal/iphone-apps-summer-ace-id.html
+https://open.cait518.cc/ios-app-guide/ace-ID/seasonal/iphone-apps-year-end-ace-id.html
+https://open.cait518.cc/ios-app-guide/ace-ID/vs/scanto-vs-apple-notes-ace-id.html
+https://open.cait518.cc/ios-app-guide/ace-ID/vs/snapport-vs-photographer-ace-id.html
+https://open.cait518.cc/ios-app-guide/ace-ID/vs/zafe-vs-hidden-album-ace-id.html
+https://open.cait518.cc/ios-app-guide/ace-ID/workflow/iphone-privacy-ace-id.html
+https://open.cait518.cc/ios-app-guide/ace-ID/workflow/iphone-workflow-freelancer-ace-id.html
+https://open.cait518.cc/ios-app-guide/ace-ID/workflow/iphone-workflow-student-ace-id.html
+https://open.cait518.cc/ios-app-guide/ach-UG/best-for/iphone-best-app-document-mask-ach-ug.html
+https://open.cait518.cc/ios-app-guide/ach-UG/best-for/iphone-best-app-passport-photo-ach-ug.html
 ```

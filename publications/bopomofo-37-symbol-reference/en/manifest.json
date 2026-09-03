@@ -2,7 +2,7 @@
   "@context": "https://readium.org/webpub-manifest/context.jsonld",
   "metadata": {
     "@type": "https://schema.org/LearningResource",
-    "identifier": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/title.xhtml",
+    "identifier": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/title.xhtml",
     "title": "Bopomofo: A 37-Symbol Reference",
     "description": "A free, text-first EPUB 3.3 reference for all 37 Bopomofo symbols, with Pinyin, broad IPA, examples and open OPDS catalogs.",
     "language": "en",
@@ -11,13 +11,13 @@
     "author": [
       {
         "name": "Lumi Apps - iOS App Guide",
-        "identifier": "https://alice51849.github.io/ios-app-guide"
+        "identifier": "https://open.cait518.cc/ios-app-guide"
       }
     ],
     "publisher": [
       {
         "name": "Lumi Apps - iOS App Guide",
-        "identifier": "https://alice51849.github.io/ios-app-guide"
+        "identifier": "https://open.cait518.cc/ios-app-guide"
       }
     ],
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -45,12 +45,12 @@
   "links": [
     {
       "rel": "self",
-      "href": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/manifest.json",
+      "href": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/manifest.json",
       "type": "application/webpub+json"
     },
     {
       "rel": "alternate",
-      "href": "https://alice51849.github.io/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub",
+      "href": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub",
       "type": "application/epub+zip",
       "size": 9564,
       "properties": {
@@ -69,79 +69,79 @@
   ],
   "readingOrder": [
     {
-      "href": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/title.xhtml",
+      "href": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/title.xhtml",
       "type": "application/xhtml+xml",
       "title": "Bopomofo: A 37-Symbol Reference"
     },
     {
-      "href": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/intro.xhtml",
+      "href": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/intro.xhtml",
       "type": "application/xhtml+xml",
       "title": "How to use this reference"
     },
     {
-      "href": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/initials.xhtml",
+      "href": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/initials.xhtml",
       "type": "application/xhtml+xml",
       "title": "Initials"
     },
     {
-      "href": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/medials.xhtml",
+      "href": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/medials.xhtml",
       "type": "application/xhtml+xml",
       "title": "Medials"
     },
     {
-      "href": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/finals.xhtml",
+      "href": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/finals.xhtml",
       "type": "application/xhtml+xml",
       "title": "Finals"
     },
     {
-      "href": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/practice.xhtml",
+      "href": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/practice.xhtml",
       "type": "application/xhtml+xml",
       "title": "A low-pressure five-minute routine"
     },
     {
-      "href": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/about.xhtml",
+      "href": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/about.xhtml",
       "type": "application/xhtml+xml",
       "title": "Sources, license and accessibility"
     }
   ],
   "resources": [
     {
-      "href": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/nav.xhtml",
+      "href": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/nav.xhtml",
       "type": "application/xhtml+xml",
       "rel": "contents"
     },
     {
-      "href": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/styles.css",
+      "href": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/styles.css",
       "type": "text/css"
     }
   ],
   "toc": [
     {
-      "href": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/title.xhtml",
+      "href": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/title.xhtml",
       "title": "Bopomofo: A 37-Symbol Reference"
     },
     {
-      "href": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/intro.xhtml",
+      "href": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/intro.xhtml",
       "title": "How to use this reference"
     },
     {
-      "href": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/initials.xhtml",
+      "href": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/initials.xhtml",
       "title": "Initials"
     },
     {
-      "href": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/medials.xhtml",
+      "href": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/medials.xhtml",
       "title": "Medials"
     },
     {
-      "href": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/finals.xhtml",
+      "href": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/finals.xhtml",
       "title": "Finals"
     },
     {
-      "href": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/practice.xhtml",
+      "href": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/practice.xhtml",
       "title": "A low-pressure five-minute routine"
     },
     {
-      "href": "https://alice51849.github.io/ios-app-guide/publications/bopomofo-37-symbol-reference/en/about.xhtml",
+      "href": "https://open.cait518.cc/ios-app-guide/publications/bopomofo-37-symbol-reference/en/about.xhtml",
       "title": "Sources, license and accessibility"
     }
   ]

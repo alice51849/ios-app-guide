@@ -1,7 +1,7 @@
 ---
 title: "MoneyTag: Receitas e despesas — Cada projeto, o seu resultado | iOS App"
 lang: "pt-PT"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/pt-PT/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/pt-PT/index.html"
 modified: "2026-09-03"
 app_store_id: "6801956402"
 verified_live: true
@@ -26,6 +26,6 @@ Receitas e despesas Cada projeto tem as suas próprias contas: receitas menos de
 
 [Baixe MoneyTag: Receitas e despesas na App Store](https://apps.apple.com/pt/app/id6801956402?pt=118326163&ct=iag_data_pt_pt&mt=8)
 
-[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/moneytag.html)
+[Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/moneytag.html)
 
 > Este conteúdo é publicado diretamente pela Lumi Studio, que desenvolve todas as apps apresentadas.

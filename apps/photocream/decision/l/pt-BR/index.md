@@ -1,7 +1,7 @@
 ---
 title: "melhor editor de fotos com efeito filme para criadores de viagem no iPhone com pagamento único"
 lang: "pt-BR"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/photocream/decision/l/pt-BR/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/pt-BR/index.html"
 modified: "2026-09-03"
 app_store_id: "6781808054"
 verified_live: true
@@ -19,6 +19,6 @@ Criadores de viagem precisam de um visual de filme repetível que adicione granu
 
 [Baixe PhotoCream na App Store →](https://apps.apple.com/br/app/id6781808054?pt=118326163&ct=iag_data_pt_br&mt=8)
 
-[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-BR/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
+[Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
 
 > Guia publicado pela Lumi Studio, desenvolvedora do app. Os nomes dos apps são marcas registradas de seus respectivos proprietários e são usados apenas para fins de identificação. Para decisões sobre documentos, saúde, escola e produtividade, verifique os requisitos oficiais correspondentes quando aplicável.

@@ -36,7 +36,7 @@ import telegram_post  # noqa: E402
 import threads_post  # noqa: E402
 
 DEVELOPER_URL = "https://apps.apple.com/developer/id1136144960"
-SITE_URL = "https://alice51849.github.io/ios-app-guide"
+SITE_URL = "https://open.cait518.cc/ios-app-guide"
 LINKSET_PATH = REPO_ROOT / "linkset.json"
 TELEGRAM_LIMIT = 3900
 THREADS_LIMIT = threads_post.MAX_POST_CHARS
@@ -122,7 +122,7 @@ def _guide_slug(href):
     if (
         not parsed
         or parsed.scheme != "https"
-        or parsed.netloc != "alice51849.github.io"
+        or parsed.netloc != "open.cait518.cc"
         or not parsed.path.startswith(prefix)
         or parsed.query
         or parsed.fragment

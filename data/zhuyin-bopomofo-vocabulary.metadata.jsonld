@@ -8,7 +8,7 @@
   },
   "@graph": [
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset",
       "@type": [
         "dcat:Dataset",
         "void:Dataset",
@@ -37,14 +37,14 @@
       "dcterms:created": "2026-07-11",
       "dcterms:modified": "2026-07-11",
       "dcterms:creator": {
-        "@id": "https://alice51849.github.io/ios-app-guide/#organization"
+        "@id": "https://open.cait518.cc/ios-app-guide/#organization"
       },
       "dcterms:license": {
         "@id": "https://creativecommons.org/licenses/by/4.0/"
       },
       "dcterms:source": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo.json"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json"
         },
         {
           "@id": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
@@ -76,20 +76,20 @@
         "zh-Latn-pinyin"
       ],
       "dcat:landingPage": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
       },
       "dcat:distribution": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-jsonld"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-turtle"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-turtle"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-ntriples"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-ntriples"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-shacl"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-shacl"
         }
       ],
       "dcat:keyword": [
@@ -100,10 +100,10 @@
         "linked open data",
         "Mandarin phonetics"
       ],
-      "void:uriSpace": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#",
+      "void:uriSpace": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#",
       "void:triples": 740,
       "void:entities": 46,
-      "void:uriRegexPattern": "^https://alice51849\\.github\\.io/ios\\-app\\-guide/data/zhuyin\\-bopomofo\\-vocabulary\\.html\\#",
+      "void:uriRegexPattern": "^https://open\\.cait518\\.cc/ios\\-app\\-guide/data/zhuyin\\-bopomofo\\-vocabulary\\.html\\#",
       "void:classPartition": {
         "@type": "void:Dataset",
         "void:class": {
@@ -125,84 +125,84 @@
         }
       ],
       "void:exampleResource": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3105"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#u3105"
       },
       "void:dataDump": [
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl"
         },
         {
-          "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt"
+          "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt"
         }
       ],
       "schema:numberOfItems": 37
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-jsonld",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-jsonld",
       "@type": "dcat:Distribution",
       "dcterms:title": "JSON-LD 1.1",
       "dcterms:format": {
         "@id": "http://www.w3.org/ns/formats/JSON-LD"
       },
       "dcat:accessURL": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
       },
       "dcat:downloadURL": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
       },
       "dcat:mediaType": "application/ld+json",
       "dcat:byteSize": 79017,
       "schema:sha256": "e8a4f56690766420f00a3762e08de8d86bfbeb09b00093dfbc4c619508dc855a"
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-turtle",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-turtle",
       "@type": "dcat:Distribution",
       "dcterms:title": "Turtle",
       "dcterms:format": {
         "@id": "http://www.w3.org/ns/formats/Turtle"
       },
       "dcat:accessURL": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
       },
       "dcat:downloadURL": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl"
       },
       "dcat:mediaType": "text/turtle",
       "dcat:byteSize": 32239,
       "schema:sha256": "0173df5ad1c3fcad5bc85e0ba738f05617cbd95bd664f81260344eb5337d2411"
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-ntriples",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-ntriples",
       "@type": "dcat:Distribution",
       "dcterms:title": "N-Triples",
       "dcterms:format": {
         "@id": "http://www.w3.org/ns/formats/N-Triples"
       },
       "dcat:accessURL": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
       },
       "dcat:downloadURL": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt"
       },
       "dcat:mediaType": "application/n-triples",
       "dcat:byteSize": 141016,
       "schema:sha256": "3ebe082c284c4b2c8af816ff08731ca9bd694f2f5985e4b459874f4a3ec216ef"
     },
     {
-      "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-shacl",
+      "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html#dataset-shacl",
       "@type": "dcat:Distribution",
       "dcterms:title": "SHACL",
       "dcterms:format": {
         "@id": "http://www.w3.org/ns/formats/Turtle"
       },
       "dcat:accessURL": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.html"
       },
       "dcat:downloadURL": {
-        "@id": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl"
+        "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl"
       },
       "dcat:mediaType": "text/turtle",
       "dcat:byteSize": 4070,

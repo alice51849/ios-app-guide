@@ -1,7 +1,7 @@
 ---
 title: "beste reisactiviteiten-app voor kinderen op gezinsreizen"
 lang: "nl-NL"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/tripplanet/decision/l/nl-NL/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/nl-NL/index.html"
 modified: "2026-09-03"
 app_store_id: "6787193643"
 verified_live: true
@@ -20,6 +20,6 @@ Ouders die met jonge kinderen reizen hebben activiteiten nodig die inpakken, wac
 
 [Lumi Trip Planet downloaden in de App Store →](https://apps.apple.com/nl/app/id6787193643?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
-[Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/answers/best-travel-activity-app-for-kids-on-family-trips.html)
+[Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 
 > Gids geschreven door Lumi Studio, de ontwikkelaar van de app. App-namen zijn handelsmerken van hun eigenaren en worden alleen ter identificatie gebruikt. Controleer bij beslissingen over documenten, gezondheid, school en productiviteit waar nodig de officiële eisen.

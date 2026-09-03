@@ -46,7 +46,7 @@ class AppVideoLessonSourceTests(unittest.TestCase):
             self.assertEqual("https", parsed.scheme)
             self.assertIn(
                 parsed.netloc,
-                {"files.catbox.moe", "alice51849.github.io"},
+                {"files.catbox.moe", "open.cait518.cc"},
             )
             self.assertTrue(parsed.path.endswith(".mp4"))
             self.assertGreater(record["duration_seconds"], 0)
@@ -61,25 +61,25 @@ class AppVideoLessonSourceTests(unittest.TestCase):
             mochi["sha256"],
         )
         self.assertEqual(
-            "https://alice51849.github.io/ios-app-guide/media/app-videos/"
+            "https://open.cait518.cc/ios-app-guide/media/app-videos/"
             "mochi-en-us.mp4",
             mochi["video_url"],
         )
 
     def test_video_urls_reject_unapproved_or_nested_first_party_paths(self) -> None:
         self.assertEqual(
-            "https://alice51849.github.io/ios-app-guide/media/app-videos/"
+            "https://open.cait518.cc/ios-app-guide/media/app-videos/"
             "mochi-en-us.mp4",
             lessons._video_url(
-                "https://alice51849.github.io/ios-app-guide/media/"
+                "https://open.cait518.cc/ios-app-guide/media/"
                 "app-videos/mochi-en-us.mp4"
             ),
         )
         for url in (
             "https://example.com/mochi.mp4",
-            "https://alice51849.github.io/ios-app-guide/media/app-videos/"
+            "https://open.cait518.cc/ios-app-guide/media/app-videos/"
             "nested/mochi.mp4",
-            "https://alice51849.github.io/other/media/app-videos/mochi.mp4",
+            "https://open.cait518.cc/other/media/app-videos/mochi.mp4",
         ):
             with self.subTest(url=url), self.assertRaisesRegex(
                 ValueError,

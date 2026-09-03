@@ -60,6 +60,7 @@ from rsscloud_config import (  # noqa: E402
 )
 from static_api_catalog import API_DESCRIPTORS  # noqa: E402
 from websub_config import WEBSUB_HUBS  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 ALT = os.path.join(PAGES, "alternatives")
@@ -68,7 +69,7 @@ DATA_DIR = os.path.join(PAGES, "data")
 API_DIR = os.path.join(PAGES, "api")
 TOOLS = os.path.join(PAGES, "tools")
 STORIES = os.path.join(PAGES, "stories")
-SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide").rstrip("/")
+SITE = os.environ.get("GEO_SITE", PUBLIC_SITE).rstrip("/")
 SOV = os.path.join(HERE, "reports", "aeo_sov.json")
 FAMILY_TRAVEL_OER = "family-travel-observation-passport"
 FAMILY_TRAVEL_RO_CRATE = "family-travel-missions-ro-crate-metadata.json"

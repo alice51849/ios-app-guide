@@ -1,7 +1,7 @@
 ---
 title: "BattAI: بیٹری کی صحت کا اسکور — واضح اصول، ماخذ اور حدود | iOS App"
 lang: "ur-PK"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/battai/decision/l/ur-PK/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ur-PK/index.html"
 modified: "2026-09-03"
 app_store_id: "6802423998"
 verified_live: true
@@ -19,6 +19,6 @@ BattAI ⁦BattAI⁩ عوامی ⁦iOS API⁩ سے پانچ قدریں لیتا �
 
 [App Store سے BattAI: بیٹری کی صحت کا اسکور حاصل کریں](https://apps.apple.com/pk/app/id6802423998?pt=118326163&ct=iag_data_ur_pk&mt=8)
 
-[مکمل رہنمائی پڑھیں](https://alice51849.github.io/ios-app-guide/ur-PK/battai.html)
+[مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/battai.html)
 
 > یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔

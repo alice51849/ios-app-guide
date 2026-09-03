@@ -1,7 +1,7 @@
 ---
 title: "najlepšia kompletná aplikácia na matematiku pre predškolákov a mladšie ročníky"
 lang: "sk"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimathpro/decision/l/sk/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/sk/index.html"
 modified: "2026-09-03"
 app_store_id: "6776958488"
 verified_live: true
@@ -20,6 +20,6 @@ Kompletná aplikácia na ranú matematiku by mala spájať počítanie, číseln
 
 [Získajte Lumi Math Pro v App Store →](https://apps.apple.com/sk/app/id6776958488?pt=118326163&ct=iag_data_sk&mt=8)
 
-[Prečítať celý sprievodca](https://alice51849.github.io/ios-app-guide/sk/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
+[Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
 
 > Sprievodcu napísal vývojár aplikácie, štúdio Lumi Studio. Názvy aplikácií sú ochrannými známkami svojich vlastníkov a používajú sa len na identifikáciu. Pri rozhodnutiach týkajúcich sa dokumentov, zdravia, školy a produktivity si tam, kde je to potrebné, overte oficiálne požiadavky.

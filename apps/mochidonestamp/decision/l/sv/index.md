@@ -1,7 +1,7 @@
 ---
 title: "Mochi DoneStamp: Senast — Minns när du gjorde det | iOS App"
 lang: "sv"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/mochidonestamp/decision/l/sv/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/sv/index.html"
 modified: "2026-09-03"
 app_store_id: "6790800323"
 verified_live: true
@@ -19,6 +19,6 @@ När bytte du senast lakan, vattnade en växt, ringde familjen, säkerhetskopier
 
 [Hämta Mochi DoneStamp: Senast i App Store](https://apps.apple.com/se/app/id6790800323?pt=118326163&ct=iag_data_sv&mt=8)
 
-[Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/mochidonestamp.html)
+[Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/mochidonestamp.html)
 
 > Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.

@@ -1,7 +1,7 @@
 ---
 title: "SaveTag: AI-bladwijzers — Links bewaren, later lezen | iOS App"
 lang: "nl-NL"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/savetag/decision/l/nl-NL/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/savetag/decision/l/nl-NL/index.html"
 modified: "2026-09-03"
 app_store_id: "6802505528"
 verified_live: true
@@ -19,6 +19,6 @@ Nu bewaren. En deze keer ook echt lezen. De hele dag stuur je jezelf links. Het 
 
 [Download SaveTag: AI-bladwijzers in de App Store](https://apps.apple.com/nl/app/id6802505528?pt=118326163&ct=iag_data_nl_nl&mt=8)
 
-[Lees de volledige gids](https://alice51849.github.io/ios-app-guide/nl-NL/savetag.html)
+[Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/savetag.html)
 
 > Dit is materiaal van de eerste partij, gepubliceerd door Lumi Studio, de ontwikkelaar van elke vermelde app.

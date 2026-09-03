@@ -8,10 +8,11 @@ import html
 import os
 import re
 import sys
+from site_config import PUBLIC_SITE  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.path.join(HERE, "pages")
-SITE = os.environ.get("GEO_SITE", "https://alice51849.github.io/ios-app-guide")
+SITE = os.environ.get("GEO_SITE", PUBLIC_SITE)
 
 UI = {
     "vi": ("Công cụ web tương tác miễn phí", "Các công cụ riêng tư chạy ngay trong trình duyệt — không tài khoản, không tải lên.", "Công cụ miễn phí", "Mở công cụ →"),

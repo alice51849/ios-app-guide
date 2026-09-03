@@ -1,7 +1,7 @@
 ---
 title: "Mask My File: ਜਾਣਕਾਰੀ ਹਟਾਓ — ਭੇਜਣ ਤੋਂ ਪਹਿਲਾਂ ਵੇਰਵੇ ਲੁਕਾਓ | iOS App"
 lang: "pa-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/pa-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/pa-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6792850916"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [App Store ਤੋਂ Mask My File: ਜਾਣਕਾਰੀ ਹਟਾਓ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=iag_data_pa_in&mt=8)
 
-[ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://alice51849.github.io/ios-app-guide/pa-IN/maskmyfile.html)
+[ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://open.cait518.cc/ios-app-guide/pa-IN/maskmyfile.html)
 
 > ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।

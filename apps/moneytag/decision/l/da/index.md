@@ -1,7 +1,7 @@
 ---
 title: "MoneyTag — Projekter · Tags · Rapport | iOS App"
 lang: "da"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/moneytag/decision/l/da/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/da/index.html"
 modified: "2026-09-03"
 app_store_id: "6801956402"
 verified_live: true
@@ -26,6 +26,6 @@ Indtægter og udgifter Hvert projekt fører sit eget regnskab: indtægter minus 
 
 [Hent MoneyTag i App Store](https://apps.apple.com/dk/app/id6801956402?pt=118326163&ct=iag_data_da&mt=8)
 
-[Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/moneytag.html)
+[Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/moneytag.html)
 
 > Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.

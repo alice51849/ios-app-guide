@@ -1,7 +1,7 @@
 ---
 title: "WiFi Aid: Hitta nätverksfel — Nätverksdiagnos med bevis | iOS App"
 lang: "sv"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wifiaid/decision/l/sv/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/sv/index.html"
 modified: "2026-09-03"
 app_store_id: "6790467886"
 verified_live: true
@@ -19,6 +19,6 @@ Hitta den troligaste orsaken med oberoende tester av vägar, DNS, TCP, TLS, svar
 
 [Hämta WiFi Aid: Hitta nätverksfel i App Store](https://apps.apple.com/se/app/id6790467886?pt=118326163&ct=iag_data_sv&mt=8)
 
-[Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/wifiaid.html)
+[Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/wifiaid.html)
 
 > Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.

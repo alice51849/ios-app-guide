@@ -1,7 +1,7 @@
 ---
 title: "лучшее приложение для вечернего ритуала для дошкольников без рекламы"
 lang: "ru"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/lumimission/decision/l/ru/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/ru/index.html"
 modified: "2026-09-03"
 app_store_id: "6779750237"
 verified_live: true
@@ -20,6 +20,6 @@ publisher: "Lumi Studio"
 
 [Получить Lumi Mission Planet в App Store →](https://apps.apple.com/ru/app/id6779750237?pt=118326163&ct=iag_data_ru&mt=8)
 
-[Прочитать полное руководство](https://alice51849.github.io/ios-app-guide/ru/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
+[Прочитать полное руководство](https://open.cait518.cc/ios-app-guide/ru/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
 
 > Руководство подготовлено издателем Lumi Studio, разработчиком приложения. Названия приложений являются товарными знаками их владельцев и используются только для идентификации. Принимая решения, связанные с документами, здоровьем, учёбой и работой, сверяйтесь с официальными требованиями там, где это важно.

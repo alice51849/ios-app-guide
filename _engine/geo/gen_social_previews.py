@@ -43,11 +43,12 @@ from official_locales import (  # noqa: E402
     open_graph_locale as _open_graph_locale,
 )
 from videogen.registry import APPSTORE  # noqa: E402
+from site_config import PUBLIC_SITE  # noqa: E402
 
 
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get(
-    "GEO_SITE", "https://alice51849.github.io/ios-app-guide"
+    "GEO_SITE", PUBLIC_SITE
 ).rstrip("/")
 CARD_SIZE = (1200, 675)
 POSTER_SIZE = (450, 600)

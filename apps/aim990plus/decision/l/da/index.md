@@ -1,7 +1,7 @@
 ---
 title: "Aim990 Plus: Engelsk prøvetest — Engelsk træning under pres | iOS App"
 lang: "da"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/da/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/da/index.html"
 modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
@@ -19,6 +19,6 @@ Aim990 Plus er et samlet træningsværktøj til voksne, der vil læse og forstå
 
 [Hent Aim990 Plus: Engelsk prøvetest i App Store](https://apps.apple.com/dk/app/id6792483140?pt=118326163&ct=iag_data_da&mt=8)
 
-[Læs hele vejledningen](https://alice51849.github.io/ios-app-guide/da/aim990plus.html)
+[Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/aim990plus.html)
 
 > Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.

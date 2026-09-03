@@ -1,7 +1,7 @@
 ---
 title: "G+Money Lite: Diners de viatge — Despeses, pressupost i canvi | iOS App"
 lang: "ca"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/gmoneylite/decision/l/ca/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/ca/index.html"
 modified: "2026-09-03"
 app_store_id: "6793436548"
 verified_live: true
@@ -25,6 +25,6 @@ G+Money Lite — Conversor de moneda de viatge intel·ligent i rastrejador de de
 
 [Descarrega G+Money Lite: Diners de viatge a l’App Store](https://apps.apple.com/es/app/id6793436548?pt=118326163&ct=iag_data_ca&mt=8)
 
-[Llegeix la guia completa](https://alice51849.github.io/ios-app-guide/ca/gmoneylite.html)
+[Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/gmoneylite.html)
 
 > Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.

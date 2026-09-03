@@ -1,7 +1,7 @@
 ---
 title: "Wordmate Lite: vocabulário — Cinco palavras, um minuto | iOS App"
 lang: "pt-PT"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/wordmatelite/decision/l/pt-PT/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmatelite/decision/l/pt-PT/index.html"
 modified: "2026-09-03"
 app_store_id: "6797601720"
 verified_live: true
@@ -20,6 +20,6 @@ Cinco palavras, um minuto, um passo que se vê no teu percurso. O Wordmate Lite 
 
 [Baixe Wordmate Lite: vocabulário na App Store](https://apps.apple.com/pt/app/id6797601720?pt=118326163&ct=iag_data_pt_pt&mt=8)
 
-[Leia o guia completo](https://alice51849.github.io/ios-app-guide/pt-PT/wordmatelite.html)
+[Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/wordmatelite.html)
 
 > Este conteúdo é publicado diretamente pela Lumi Studio, que desenvolve todas as apps apresentadas.

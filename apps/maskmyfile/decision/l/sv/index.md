@@ -1,7 +1,7 @@
 ---
 title: "Mask My File: Radera dina data — Dölj privata data före delning | iOS App"
 lang: "sv"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/maskmyfile/decision/l/sv/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/sv/index.html"
 modified: "2026-09-03"
 app_store_id: "6792850916"
 verified_live: true
@@ -20,6 +20,6 @@ Dela säkert utan att förlora det nyttiga sammanhanget. Mask My File hittar per
 
 [Hämta Mask My File: Radera dina data i App Store](https://apps.apple.com/se/app/id6792850916?pt=118326163&ct=iag_data_sv&mt=8)
 
-[Läs hela guiden](https://alice51849.github.io/ios-app-guide/sv/maskmyfile.html)
+[Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/maskmyfile.html)
 
 > Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.

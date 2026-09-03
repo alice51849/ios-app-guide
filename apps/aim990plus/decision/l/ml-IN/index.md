@@ -1,7 +1,7 @@
 ---
 title: "Aim990 Plus: ഇംഗ്ലീഷ് പരീക്ഷ — ഇംഗ്ലീഷ് സമ്മർദ പരിശീലനം | iOS App"
 lang: "ml-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aim990plus/decision/l/ml-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990plus/decision/l/ml-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6792483140"
 verified_live: true
@@ -19,6 +19,6 @@ Aim990 Plus മുതിർന്നവർക്ക് ഇംഗ്ലീഷ് 
 
 [App Store-ൽ നിന്ന് Aim990 Plus: ഇംഗ്ലീഷ് പരീക്ഷ നേടൂ](https://apps.apple.com/in/app/id6792483140?pt=118326163&ct=iag_data_ml_in&mt=8)
 
-[പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://alice51849.github.io/ios-app-guide/ml-IN/aim990plus.html)
+[പൂർണ്ണ ഗൈഡ് വായിക്കുക](https://open.cait518.cc/ios-app-guide/ml-IN/aim990plus.html)
 
 > ഇത് Lumi Studio പ്രസിദ്ധീകരിച്ച ആദ്യകക്ഷി വസ്തുവാണ്, എല്ലാ ലിസ്റ്റുചെയ്ത ആപ്പുകളുടെയും വികസകനാണ്.

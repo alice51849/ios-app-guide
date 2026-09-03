@@ -1,7 +1,7 @@
 ---
 title: "best free travel phrasebook app with real dialogues for iphone"
 lang: "en-US"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/dailymatelite/decision/l/en-US/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/en-US/index.html"
 modified: "2026-09-03"
 app_store_id: "6794725568"
 verified_live: true
@@ -19,6 +19,6 @@ DailyMate Lite — Be ready when it is your turn to speak. Free to start · One-
 
 [Get DailyMate Lite on the App Store →](https://apps.apple.com/us/app/id6794725568?pt=118326163&ct=iag_data_en_us&mt=8)
 
-[Read the full guide](https://alice51849.github.io/ios-app-guide/en-US/answers/best-free-travel-phrasebook-app-with-real-dialogues-for-iphone.html)
+[Read the full guide](https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-travel-phrasebook-app-with-real-dialogues-for-iphone.html)
 
 > Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.

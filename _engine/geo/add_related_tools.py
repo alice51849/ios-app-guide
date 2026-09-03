@@ -11,12 +11,13 @@ import os, re, glob, html, sys
 from pathlib import Path
 
 from official_locales import OFFICIAL_LOCALES, require_official_locale_coverage
+from site_config import PUBLIC_SITE  # noqa: E402
 
 ROOT = os.environ.get(
     "GEO_PAGES",
     os.path.join(os.path.dirname(os.path.abspath(__file__)), "pages"),
 )
-SITE = "https://alice51849.github.io/ios-app-guide"
+SITE = PUBLIC_SITE
 SEC_RE = re.compile(r'<section class="wrap related-tools">.*?</section>', re.S)
 APP_ID_RE = re.compile(
     r'apps\.apple\.com/(?:[^/"\s]+/)?app/(?:[^/"\s]+/)?id(\d+)'

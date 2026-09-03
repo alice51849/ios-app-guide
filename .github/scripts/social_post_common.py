@@ -341,7 +341,7 @@ def canonical_social_image_url(value):
     parsed = urllib.parse.urlsplit(value.strip())
     if (
         parsed.scheme != "https"
-        or parsed.netloc != "alice51849.github.io"
+        or parsed.netloc != "open.cait518.cc"
         or SOCIAL_IMAGE_PATH_RE.fullmatch(parsed.path) is None
         or parsed.query
         or parsed.fragment

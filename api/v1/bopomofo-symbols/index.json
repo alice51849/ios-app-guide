@@ -1,8 +1,8 @@
 {
-  "$schema": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/index.schema.json",
+  "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.schema.json",
   "apiVersion": "1.0.0",
   "datasetVersion": "1.0.0",
-  "generatedFrom": "https://alice51849.github.io/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+  "generatedFrom": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "languages": [
     "zh-Bopo",
@@ -17,10 +17,10 @@
     "unicodeRange": "U+3105-U+3129"
   },
   "documentation": {
-    "en": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/",
-    "zh-Hant": "https://alice51849.github.io/ios-app-guide/zh-Hant/api/v1/bopomofo-symbols/"
+    "en": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/",
+    "zh-Hant": "https://open.cait518.cc/ios-app-guide/zh-Hant/api/v1/bopomofo-symbols/"
   },
-  "openapi": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/openapi.json",
+  "openapi": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json",
   "symbols": [
     {
       "symbolId": "u3105",
@@ -28,7 +28,7 @@
       "unicode": "U+3105",
       "pinyin": "b",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3105.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3105.json"
     },
     {
       "symbolId": "u3106",
@@ -36,7 +36,7 @@
       "unicode": "U+3106",
       "pinyin": "p",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3106.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3106.json"
     },
     {
       "symbolId": "u3107",
@@ -44,7 +44,7 @@
       "unicode": "U+3107",
       "pinyin": "m",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3107.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3107.json"
     },
     {
       "symbolId": "u3108",
@@ -52,7 +52,7 @@
       "unicode": "U+3108",
       "pinyin": "f",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3108.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3108.json"
     },
     {
       "symbolId": "u3109",
@@ -60,7 +60,7 @@
       "unicode": "U+3109",
       "pinyin": "d",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3109.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3109.json"
     },
     {
       "symbolId": "u310A",
@@ -68,7 +68,7 @@
       "unicode": "U+310A",
       "pinyin": "t",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u310A.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u310A.json"
     },
     {
       "symbolId": "u310B",
@@ -76,7 +76,7 @@
       "unicode": "U+310B",
       "pinyin": "n",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u310B.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u310B.json"
     },
     {
       "symbolId": "u310C",
@@ -84,7 +84,7 @@
       "unicode": "U+310C",
       "pinyin": "l",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u310C.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u310C.json"
     },
     {
       "symbolId": "u310D",
@@ -92,7 +92,7 @@
       "unicode": "U+310D",
       "pinyin": "g",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u310D.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u310D.json"
     },
     {
       "symbolId": "u310E",
@@ -100,7 +100,7 @@
       "unicode": "U+310E",
       "pinyin": "k",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u310E.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u310E.json"
     },
     {
       "symbolId": "u310F",
@@ -108,7 +108,7 @@
       "unicode": "U+310F",
       "pinyin": "h",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u310F.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u310F.json"
     },
     {
       "symbolId": "u3110",
@@ -116,7 +116,7 @@
       "unicode": "U+3110",
       "pinyin": "j",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3110.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3110.json"
     },
     {
       "symbolId": "u3111",
@@ -124,7 +124,7 @@
       "unicode": "U+3111",
       "pinyin": "q",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3111.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3111.json"
     },
     {
       "symbolId": "u3112",
@@ -132,7 +132,7 @@
       "unicode": "U+3112",
       "pinyin": "x",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3112.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3112.json"
     },
     {
       "symbolId": "u3113",
@@ -140,7 +140,7 @@
       "unicode": "U+3113",
       "pinyin": "zh",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3113.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3113.json"
     },
     {
       "symbolId": "u3114",
@@ -148,7 +148,7 @@
       "unicode": "U+3114",
       "pinyin": "ch",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3114.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3114.json"
     },
     {
       "symbolId": "u3115",
@@ -156,7 +156,7 @@
       "unicode": "U+3115",
       "pinyin": "sh",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3115.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3115.json"
     },
     {
       "symbolId": "u3116",
@@ -164,7 +164,7 @@
       "unicode": "U+3116",
       "pinyin": "r",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3116.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3116.json"
     },
     {
       "symbolId": "u3117",
@@ -172,7 +172,7 @@
       "unicode": "U+3117",
       "pinyin": "z",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3117.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3117.json"
     },
     {
       "symbolId": "u3118",
@@ -180,7 +180,7 @@
       "unicode": "U+3118",
       "pinyin": "c",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3118.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3118.json"
     },
     {
       "symbolId": "u3119",
@@ -188,7 +188,7 @@
       "unicode": "U+3119",
       "pinyin": "s",
       "category": "initial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3119.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3119.json"
     },
     {
       "symbolId": "u3127",
@@ -196,7 +196,7 @@
       "unicode": "U+3127",
       "pinyin": "i / yi",
       "category": "medial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3127.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3127.json"
     },
     {
       "symbolId": "u3128",
@@ -204,7 +204,7 @@
       "unicode": "U+3128",
       "pinyin": "u / wu",
       "category": "medial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3128.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3128.json"
     },
     {
       "symbolId": "u3129",
@@ -212,7 +212,7 @@
       "unicode": "U+3129",
       "pinyin": "ü / yu",
       "category": "medial",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3129.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3129.json"
     },
     {
       "symbolId": "u311A",
@@ -220,7 +220,7 @@
       "unicode": "U+311A",
       "pinyin": "a",
       "category": "final",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u311A.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u311A.json"
     },
     {
       "symbolId": "u311B",
@@ -228,7 +228,7 @@
       "unicode": "U+311B",
       "pinyin": "o",
       "category": "final",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u311B.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u311B.json"
     },
     {
       "symbolId": "u311C",
@@ -236,7 +236,7 @@
       "unicode": "U+311C",
       "pinyin": "e",
       "category": "final",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u311C.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u311C.json"
     },
     {
       "symbolId": "u311D",
@@ -244,7 +244,7 @@
       "unicode": "U+311D",
       "pinyin": "ê",
       "category": "final",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u311D.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u311D.json"
     },
     {
       "symbolId": "u311E",
@@ -252,7 +252,7 @@
       "unicode": "U+311E",
       "pinyin": "ai",
       "category": "final",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u311E.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u311E.json"
     },
     {
       "symbolId": "u311F",
@@ -260,7 +260,7 @@
       "unicode": "U+311F",
       "pinyin": "ei",
       "category": "final",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u311F.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u311F.json"
     },
     {
       "symbolId": "u3120",
@@ -268,7 +268,7 @@
       "unicode": "U+3120",
       "pinyin": "ao",
       "category": "final",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3120.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3120.json"
     },
     {
       "symbolId": "u3121",
@@ -276,7 +276,7 @@
       "unicode": "U+3121",
       "pinyin": "ou",
       "category": "final",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3121.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3121.json"
     },
     {
       "symbolId": "u3122",
@@ -284,7 +284,7 @@
       "unicode": "U+3122",
       "pinyin": "an",
       "category": "final",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3122.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3122.json"
     },
     {
       "symbolId": "u3123",
@@ -292,7 +292,7 @@
       "unicode": "U+3123",
       "pinyin": "en",
       "category": "final",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3123.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3123.json"
     },
     {
       "symbolId": "u3124",
@@ -300,7 +300,7 @@
       "unicode": "U+3124",
       "pinyin": "ang",
       "category": "final",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3124.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3124.json"
     },
     {
       "symbolId": "u3125",
@@ -308,7 +308,7 @@
       "unicode": "U+3125",
       "pinyin": "eng",
       "category": "final",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3125.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3125.json"
     },
     {
       "symbolId": "u3126",
@@ -316,7 +316,7 @@
       "unicode": "U+3126",
       "pinyin": "er",
       "category": "final",
-      "url": "https://alice51849.github.io/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3126.json"
+      "url": "https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/symbols/u3126.json"
     }
   ]
 }

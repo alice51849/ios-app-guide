@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.schema.json",
+  "$id": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes.schema.json",
   "title": "Lumi Studio App Install Decision Routes",
   "type": "object",
   "additionalProperties": false,
@@ -25,7 +25,7 @@
   ],
   "properties": {
     "$schema": {
-      "const": "https://alice51849.github.io/ios-app-guide/data/app-install-decision-routes.schema.json"
+      "const": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes.schema.json"
     },
     "schema_version": {
       "const": 1

@@ -1,7 +1,7 @@
 ---
 title: "beste enkle reiseplanlegger-app for én kommende tur til iPhone"
 lang: "no"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/tripbeelite/decision/l/no/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/no/index.html"
 modified: "2026-09-03"
 app_store_id: "6791299610"
 verified_live: true
@@ -19,6 +19,6 @@ Hvis du planlegger én kommende reise, er en rolig tidslinje for den turen mer n
 
 [Få TripBee Lite i App Store →](https://apps.apple.com/no/app/id6791299610?pt=118326163&ct=iag_data_no&mt=8)
 
-[Les hele veiledningen](https://alice51849.github.io/ios-app-guide/no/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
+[Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
 
 > Guide skrevet av Lumi Studio, utvikleren av appen. Appnavn er varemerker som tilhører sine eiere og brukes bare til identifikasjon. Når det gjelder dokumenter, helse, skole og produktivitet, bør du sjekke de offisielle kravene der det er relevant.

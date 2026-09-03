@@ -1,7 +1,7 @@
 ---
 title: "ವೃತ್ತಿ ಬದಲಾವಣೆಗಾರರಿಗಾಗಿ ಅತ್ಯುತ್ತಮ ರೆಸ್ಯೂಮ್ ನಿರ್ಮಾಪಕ ಅಪ್ಲಿಕೇಶನ್ 2026"
 lang: "kn-IN"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/cvdesk/decision/l/kn-IN/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/kn-IN/index.html"
 modified: "2026-09-03"
 app_store_id: "6781337213"
 verified_live: true
@@ -19,6 +19,6 @@ publisher: "Lumi Studio"
 
 [App Store ನಲ್ಲಿ CV ಡೆಸ್ಕ್ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=iag_data_kn_in&mt=8)
 
-[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://alice51849.github.io/ios-app-guide/kn-IN/answers/best-resume-builder-app-for-career-changers-2026.html)
+[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-resume-builder-app-for-career-changers-2026.html)
 
 > ಆ್ಯಪ್ ಡೆವಲಪರ್ Lumi Studio ಬರೆದ ಮಾರ್ಗದರ್ಶಿ. ಆ್ಯಪ್‌ಗಳ ಹೆಸರುಗಳು ಅವುಗಳ ಮಾಲೀಕರ ವ್ಯಾಪಾರ ಚಿಹ್ನೆಗಳು; ಗುರುತಿಸಲು ಮಾತ್ರ ಬಳಸಲಾಗಿದೆ. ದಾಖಲೆ, ಆರೋಗ್ಯ, ಶಾಲೆ ಮತ್ತು ಉತ್ಪಾದಕತೆಗೆ ಸಂಬಂಧಿಸಿದ ನಿರ್ಧಾರಗಳಲ್ಲಿ ಅಗತ್ಯವಿರುವ ಕಡೆ ಅಧಿಕೃತ ನಿಯಮಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.

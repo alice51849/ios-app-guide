@@ -1,7 +1,7 @@
 ---
 title: "AI Brief: Fájlokból AI-prompt — Fájlokból tiszta kontextus | iOS App"
 lang: "hu"
-canonical: "https://alice51849.github.io/ios-app-guide/apps/aibriefpack/decision/l/hu/index.html"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/hu/index.html"
 modified: "2026-09-03"
 app_store_id: "6791658210"
 verified_live: true
@@ -20,6 +20,6 @@ Jobb kontextus. Jobb válaszok. Alakíts képernyőfotókat, fájlokat, jegyzete
 
 [Töltse le a(z) AI Brief: Fájlokból AI-prompt appot az App Store-ból](https://apps.apple.com/hu/app/id6791658210?pt=118326163&ct=iag_data_hu&mt=8)
 
-[Olvasd el a teljes útmutatót](https://alice51849.github.io/ios-app-guide/hu/aibriefpack.html)
+[Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/aibriefpack.html)
 
 > Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.

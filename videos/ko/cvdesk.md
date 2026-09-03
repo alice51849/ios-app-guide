@@ -1,7 +1,7 @@
 ---
 title: "2026년 경력 전환자를 위한 최고의 이력서 작성 앱"
 lang: "ko"
-canonical: "https://alice51849.github.io/ios-app-guide/videos/ko/cvdesk.html"
+canonical: "https://open.cait518.cc/ios-app-guide/videos/ko/cvdesk.html"
 modified: "2026-09-03"
 video_url: "https://files.catbox.moe/fdknhv.mp4"
 duration: "PT16S"
@@ -18,6 +18,6 @@ publisher: "Lumi Studio"
 
 [앱 스토어에서 CV Desk 받기 →](https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=iag_video_ko&mt=8)
 
-[앱 가이드 열기](https://alice51849.github.io/ios-app-guide/ko/answers/best-resume-builder-app-for-career-changers-2026.html)
+[앱 가이드 열기](https://open.cait518.cc/ios-app-guide/ko/answers/best-resume-builder-app-for-career-changers-2026.html)
 
 > 앱 개발자인 Lumi Studio에서 직접 작성한 가이드입니다. 앱 이름은 해당 소유자의 상표이며 식별 목적으로만 사용됩니다. 문서, 건강, 학교 및 생산성과 관련된 결정을 내릴 때는 필요에 따라 관련 기관의 공식 요건을 확인하시기 바랍니다.
